@@ -223,6 +223,14 @@ SPECTACULAR_SETTINGS = {
 }
 
 # ---------------------------------------------------------------------------
+# Payment providers (read from .env; used by payments.services)
+# ---------------------------------------------------------------------------
+PAYSTACK_SECRET_KEY = env("PAYSTACK_SECRET_KEY", default="")
+PAYSTACK_PUBLIC_KEY = env("PAYSTACK_PUBLIC_KEY", default="")
+HUBTEL_CLIENT_ID = env("HUBTEL_CLIENT_ID", default="")
+HUBTEL_CLIENT_SECRET = env("HUBTEL_CLIENT_SECRET", default="")
+
+# ---------------------------------------------------------------------------
 # Security hardening (activated only when DEBUG=False)
 # ---------------------------------------------------------------------------
 if not DEBUG:
