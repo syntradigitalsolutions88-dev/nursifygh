@@ -17,7 +17,7 @@ class CourseListSerializer(serializers.ModelSerializer):
     semester_display = serializers.CharField(
         source="get_semester_display", read_only=True
     )
-    question_count = serializers.IntegerField(read_only=True)
+    question_count = serializers.IntegerField(source="_question_count", read_only=True)
 
     class Meta:
         model = Course

@@ -34,7 +34,7 @@ class CourseListView(generics.ListAPIView):
             Course.objects.filter(
                 is_published=True, level=self.request.user.level
             )
-            .annotate(question_count=Count("questions", distinct=True))
+            .annotate(_question_count=Count("questions", distinct=True))
             .order_by("semester", "code")
         )
         category = self.request.query_params.get("category")
