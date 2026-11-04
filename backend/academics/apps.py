@@ -1,6 +1,9 @@
+"""App configuration for the academics app."""
+
 from django.apps import AppConfig
 
 
 class AcademicsConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'academics'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "academics"
+    verbose_name = "Academics & Quizzes"
