@@ -152,9 +152,13 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # ---------------------------------------------------------------------------
-# CORS
+# CORS — allow both localhost and 127.0.0.1 during local dev
 # ---------------------------------------------------------------------------
-CORS_ALLOWED_ORIGINS = [env("FRONTEND_ORIGIN")]
+CORS_ALLOWED_ORIGINS = [
+    env("FRONTEND_ORIGIN", default="http://localhost:5173"),
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
     "accept",
