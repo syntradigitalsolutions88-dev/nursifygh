@@ -134,6 +134,7 @@ class QuizAnswerResultSerializer(serializers.ModelSerializer):
 class QuizAttemptResultSerializer(serializers.ModelSerializer):
     """The complete graded attempt returned to the frontend."""
 
+    course_id = serializers.UUIDField(source="course.id", read_only=True)
     course_code = serializers.CharField(source="course.code", read_only=True)
     course_title = serializers.CharField(source="course.title", read_only=True)
     answers = QuizAnswerResultSerializer(many=True, read_only=True)
@@ -141,7 +142,7 @@ class QuizAttemptResultSerializer(serializers.ModelSerializer):
     class Meta:
         model = QuizAttempt
         fields = (
-            "id", "course_code", "course_title",
+            "id", "course_id", "course_code", "course_title",
             "total_questions", "correct_answers",
             "score_percentage", "started_at", "completed_at",
             "answers",

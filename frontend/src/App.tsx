@@ -1,8 +1,11 @@
 import { Link, Route, Routes } from "react-router-dom"
 
 import ProtectedRoute from "./components/ProtectedRoute"
+import CoursesPage from "./pages/CoursesPage"
 import DashboardPage from "./pages/DashboardPage"
 import LoginPage from "./pages/LoginPage"
+import QuizPage from "./pages/QuizPage"
+import QuizResultsPage from "./pages/QuizResultsPage"
 import RegisterPage from "./pages/RegisterPage"
 
 function Home() {
@@ -37,6 +40,30 @@ export default function App() {
         element={
           <ProtectedRoute>
             <DashboardPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/courses"
+        element={
+          <ProtectedRoute>
+            <CoursesPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/quizzes/:courseId"
+        element={
+          <ProtectedRoute>
+            <QuizPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/quizzes/results/:attemptId"
+        element={
+          <ProtectedRoute>
+            <QuizResultsPage />
           </ProtectedRoute>
         }
       />

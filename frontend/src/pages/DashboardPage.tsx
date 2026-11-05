@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom"
+import { useQuery } from "@tanstack/react-query"
 
+import { getQuizHistory } from "../api/courses"
 import { useAuth } from "../contexts/AuthContext"
 
 export default function DashboardPage() {
     const { user, logout } = useAuth()
+
+    const { data: history } = useQuery({
+        queryKey: ["quiz-history"],
+        queryFn: getQuizHistory,
+        enabled: !!user?.has_active_subscription,
+    })
 
     if (!user) return null
 
@@ -62,15 +70,17 @@ export default function DashboardPage() {
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-                    <Link to="/courses" className="card hover:ring-brand-200 transition">
-                        <h2 className="text-lg font-semibold text-gray-900">Courses &amp; Quizzes</h2>
+                    <Link to="/courses" className="card hover:ring-brand-200 transition block">
+                        <h2 className="text-lg font-semibold text-gray-900">
+                            Courses &amp; Quizzes
+                        </h2>
                         <p className="mt-1 text-sm text-gray-500">
                             Practice past questions and timed mock exams.
                         </p>
-                        <p className="mt-4 text-xs text-brand-600">Coming in Message 3 →</p>
+                        <p className="mt-4 text-xs text-brand-600">Browse courses →</p>
                     </Link>
 
-                    <Link to="/careplans" className="card hover:ring-brand-200 transition">
+                    <Link to="/careplans" className="card hover:ring-brand-200 transition block">
                         <h2 className="text-lg font-semibold text-gray-900">Care Plans</h2>
                         <p className="mt-1 text-sm text-gray-500">
                             Build NANDA diagnoses, SMART goals, and interventions.
@@ -79,9 +89,44 @@ export default function DashboardPage() {
                     </Link>
                 </div>
 
+                {history && history.length > 0 && (
+                    <div className="card">
+                        <h2 className="text-lg font-semibold text-gray-900">
+                            Recent quiz attempts
+                        </h2>
+                        <ul className="mt-4 divide-y divide-gray-100">
+                            {history.slice(0, 5).map((attempt) => (
+                                <li
+                                    key={attempt.id}
+                                    className="py-3 flex items-center justify-between"
+                                >
+                                    <div>
+                                        <p className="text-sm font-medium text-gray-900">
+                                            {attempt.course_code} — {attempt.course_title}
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            {new Date(attempt.started_at).toLocaleString()}
+                                        </p>
+                                    </div>
+                                    <div className="text-right">
+                                        <p className="text-sm font-semibold text-brand-700">
+                                            {attempt.score_percentage}%
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            {attempt.correct_answers}/{attempt.total_questions}
+                                        </p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
                 {!user.has_active_subscription && (
                     <div className="card bg-amber-50 ring-amber-100">
-                        <h2 className="text-lg font-semibold text-amber-900">Unlock everything</h2>
+                        <h2 className="text-lg font-semibold text-amber-900">
+                            Unlock everything
+                        </h2>
                         <p className="mt-1 text-sm text-amber-800">
                             Subscribe to access all courses, quizzes, and care plan templates.
                         </p>
