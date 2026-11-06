@@ -1,15 +1,53 @@
+import { useState } from "react"
 import { Link, useParams } from "react-router-dom"
-import { useQuery } from "@tanstack/react-query"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 
-import { getCarePlan } from "../api/careplans"
+import {
+    createGoal,
+    createIntervention,
+    getCarePlan,
+} from "../api/careplans"
+import InterventionForm from "../components/InterventionForm"
+import SmartGoalForm from "../components/SmartGoalForm"
+import type {
+    CreateInterventionRequest,
+    CreateSmartGoalRequest,
+} from "../types/api"
 
 export default function CarePlanDetailPage() {
     const { planId } = useParams<{ planId: string }>()
+    const queryClient = useQueryClient()
 
     const { data: plan, isLoading, error } = useQuery({
         queryKey: ["care-plan", planId],
         queryFn: () => getCarePlan(planId!),
         enabled: !!planId,
+    })
+
+    const [showGoalForm, setShowGoalForm] = useState(false)
+    const [showInterventionForm, setShowInterventionForm] = useState(false)
+
+    const invalidate = () => {
+        queryClient.invalidateQueries({ queryKey: ["care-plan", planId] })
+        queryClient.invalidateQueries({ queryKey: ["care-plans"] })
+    }
+
+    const addGoalMutation = useMutation({
+        mutationFn: (payload: CreateSmartGoalRequest) =>
+            createGoal(planId!, payload),
+        onSuccess: () => {
+            setShowGoalForm(false)
+            invalidate()
+        },
+    })
+
+    const addInterventionMutation = useMutation({
+        mutationFn: (payload: CreateInterventionRequest) =>
+            createIntervention(planId!, payload),
+        onSuccess: () => {
+            setShowInterventionForm(false)
+            invalidate()
+        },
     })
 
     if (isLoading) {
@@ -73,57 +111,142 @@ export default function CarePlanDetailPage() {
                 </div>
 
                 <div className="card">
-                    <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
-                        SMART goals
-                    </h2>
-                    {plan.goals.length === 0 ? (
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
+                            SMART goals
+                        </h2>
+                        {!showGoalForm && (
+                            <button
+                                onClick={() => setShowGoalForm(true)}
+                                className="btn-secondary text-xs"
+                            >
+                                + Add goal
+                            </button>
+                        )}
+                    </div>
+
+                    {plan.goals.length === 0 && !showGoalForm && (
                         <p className="mt-2 text-sm text-gray-500 italic">
-                            No goals yet — coming in the next edit round.
+                            No goals yet. Add your first SMART goal above.
                         </p>
-                    ) : (
-                        <ul className="mt-3 space-y-3">
+                    )}
+
+                    {plan.goals.length > 0 && (
+                        <ul className="mt-3 space-y-4">
                             {plan.goals.map((goal, idx) => (
-                                <li key={goal.id} className="border-l-2 border-brand-200 pl-3">
-                                    <p className="text-xs font-medium text-gray-500">Goal {idx + 1}</p>
-                                    <p className="text-sm text-gray-800">{goal.specific}</p>
+                                <li key={goal.id} className="border-l-2 border-brand-300 pl-3">
+                                    <p className="text-xs font-medium text-gray-500">
+                                        Goal {idx + 1}
+                                    </p>
+                                    <dl className="mt-2 grid grid-cols-1 gap-1 text-sm">
+                                        <div>
+                                            <dt className="inline font-medium text-gray-700">S: </dt>
+                                            <dd className="inline text-gray-800">{goal.specific}</dd>
+                                        </div>
+                                        <div>
+                                            <dt className="inline font-medium text-gray-700">M: </dt>
+                                            <dd className="inline text-gray-800">{goal.measurable}</dd>
+                                        </div>
+                                        <div>
+                                            <dt className="inline font-medium text-gray-700">A: </dt>
+                                            <dd className="inline text-gray-800">{goal.achievable}</dd>
+                                        </div>
+                                        <div>
+                                            <dt className="inline font-medium text-gray-700">R: </dt>
+                                            <dd className="inline text-gray-800">{goal.relevant}</dd>
+                                        </div>
+                                        <div>
+                                            <dt className="inline font-medium text-gray-700">T: </dt>
+                                            <dd className="inline text-gray-800">{goal.time_bound}</dd>
+                                        </div>
+                                    </dl>
                                 </li>
                             ))}
                         </ul>
+                    )}
+
+                    {showGoalForm && (
+                        <div className="mt-4">
+                            <SmartGoalForm
+                                submitting={addGoalMutation.isPending}
+                                onCancel={() => setShowGoalForm(false)}
+                                onSubmit={async (payload) => {
+                                    await addGoalMutation.mutateAsync(payload)
+                                }}
+                            />
+                        </div>
+                    )}
+
+                    {addGoalMutation.isError && (
+                        <div className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-xs text-red-700">
+                            Failed to save goal. Please try again.
+                        </div>
                     )}
                 </div>
 
                 <div className="card">
-                    <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
-                        Nursing interventions
-                    </h2>
-                    {plan.interventions.length === 0 ? (
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
+                            Nursing interventions
+                        </h2>
+                        {!showInterventionForm && (
+                            <button
+                                onClick={() => setShowInterventionForm(true)}
+                                className="btn-secondary text-xs"
+                            >
+                                + Add intervention
+                            </button>
+                        )}
+                    </div>
+
+                    {plan.interventions.length === 0 && !showInterventionForm && (
                         <p className="mt-2 text-sm text-gray-500 italic">
-                            No interventions yet — coming in the next edit round.
+                            No interventions yet. Add your first above.
                         </p>
-                    ) : (
-                        <ul className="mt-3 space-y-3">
+                    )}
+
+                    {plan.interventions.length > 0 && (
+                        <ul className="mt-3 space-y-4">
                             {plan.interventions.map((iv, idx) => (
-                                <li key={iv.id} className="border-l-2 border-brand-200 pl-3">
+                                <li key={iv.id} className="border-l-2 border-brand-300 pl-3">
                                     <p className="text-xs font-medium text-gray-500">
                                         Intervention {idx + 1}
                                     </p>
-                                    <p className="text-sm text-gray-800">{iv.action}</p>
-                                    <p className="mt-1 text-xs text-gray-600">
-                                        <span className="font-medium">Rationale: </span>
-                                        {iv.rationale}
-                                    </p>
+                                    <p className="mt-1 text-sm text-gray-800">{iv.action}</p>
+                                    <div className="mt-2 rounded bg-brand-50 p-2">
+                                        <p className="text-xs font-medium text-brand-700">Rationale</p>
+                                        <p className="mt-1 text-xs text-brand-800">{iv.rationale}</p>
+                                    </div>
                                 </li>
                             ))}
                         </ul>
                     )}
+
+                    {showInterventionForm && (
+                        <div className="mt-4">
+                            <InterventionForm
+                                submitting={addInterventionMutation.isPending}
+                                onCancel={() => setShowInterventionForm(false)}
+                                onSubmit={async (payload) => {
+                                    await addInterventionMutation.mutateAsync(payload)
+                                }}
+                            />
+                        </div>
+                    )}
+
+                    {addInterventionMutation.isError && (
+                        <div className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-xs text-red-700">
+                            Failed to save intervention. Please try again.
+                        </div>
+                    )}
                 </div>
 
-                <div className="flex justify-between">
+                <div className="flex justify-between pt-4">
                     <Link to="/careplans" className="btn-secondary">
                         Back to list
                     </Link>
                     <span className="text-xs text-gray-500 self-center">
-                        Goals & interventions editing coming in Round 2
+                        Plan editing · Round 2 · Goals & interventions
                     </span>
                 </div>
             </main>

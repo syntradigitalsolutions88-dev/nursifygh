@@ -205,3 +205,15 @@ export interface CreateCarePlanRequest {
     primary_diagnosis: string
     is_public: boolean
 }
+export interface CreateSmartGoalRequest {
+    specific: string
+    measurable: string
+    achievable: string
+    relevant: string
+    time_bound: string
+}
+
+export interface CreateInterventionRequest {
+    action: string
+    rationale: string
+}

@@ -4,19 +4,32 @@ import type {
     CarePlanSummary,
     CarePlanTemplateSummary,
     CreateCarePlanRequest,
+    CreateInterventionRequest,
+    CreateSmartGoalRequest,
+    Intervention,
     NandaDiagnosis,
+    SmartGoal,
 } from "../types/api"
 
-export async function listNanda(params?: { domain?: string }): Promise<NandaDiagnosis[]> {
-    const { data } = await api.get<NandaDiagnosis[]>("/careplans/nanda/", { params })
+// ---------------------------------------------------------------------------
+// NANDA catalog
+// ---------------------------------------------------------------------------
+export async function listNanda(params?: {
+    domain?: string
+}): Promise<NandaDiagnosis[]> {
+    const { data } = await api.get<NandaDiagnosis[]>("/careplans/nanda/", {
+        params,
+    })
     return data
 }
 
+// ---------------------------------------------------------------------------
+// Templates
+// ---------------------------------------------------------------------------
 export async function listTemplates(params?: {
     course?: string
     diagnosis?: string
 }): Promise<CarePlanTemplateSummary[]> {
-    // Templates are paginated on the backend
     const { data } = await api.get<{
         count: number
         results: CarePlanTemplateSummary[]
@@ -24,6 +37,9 @@ export async function listTemplates(params?: {
     return data.results
 }
 
+// ---------------------------------------------------------------------------
+// Care plans
+// ---------------------------------------------------------------------------
 export async function listCarePlans(): Promise<CarePlanSummary[]> {
     const { data } = await api.get<{
         count: number
@@ -43,6 +59,45 @@ export async function createCarePlan(
     const { data } = await api.post<CarePlanDetail>(
         "/careplans/plans/create/",
         payload,
+    )
+    return data
+}
+
+// ---------------------------------------------------------------------------
+// Goals
+// ---------------------------------------------------------------------------
+export async function createGoal(
+    planId: string,
+    payload: CreateSmartGoalRequest,
+): Promise<SmartGoal> {
+    const { data } = await api.post<SmartGoal>(
+        `/careplans/plans/${planId}/goals/`,
+        payload,
+    )
+    return data
+}
+
+// ---------------------------------------------------------------------------
+// Interventions
+// ---------------------------------------------------------------------------
+export async function createIntervention(
+    planId: string,
+    payload: CreateInterventionRequest,
+): Promise<Intervention> {
+    const { data } = await api.post<Intervention>(
+        `/careplans/plans/${planId}/interventions/`,
+        payload,
+    )
+    return data
+}
+
+// ---------------------------------------------------------------------------
+// Submit for grading
+// ---------------------------------------------------------------------------
+export async function submitCarePlan(planId: string): Promise<CarePlanDetail> {
+    const { data } = await api.post<CarePlanDetail>(
+        `/careplans/plans/${planId}/submit/`,
+        {},
     )
     return data
 }
