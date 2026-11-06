@@ -3,6 +3,7 @@ import { Link, Route, Routes } from "react-router-dom"
 import ProtectedRoute from "./components/ProtectedRoute"
 import CarePlanDetailPage from "./pages/CarePlanDetailPage"
 import CarePlansPage from "./pages/CarePlansPage"
+import CheckoutCallbackPage from "./pages/CheckoutCallbackPage"
 import CoursesPage from "./pages/CoursesPage"
 import DashboardPage from "./pages/DashboardPage"
 import LoginPage from "./pages/LoginPage"
@@ -12,6 +13,7 @@ import QuizPage from "./pages/QuizPage"
 import QuizResultsPage from "./pages/QuizResultsPage"
 import RegisterPage from "./pages/RegisterPage"
 import SharedPlanPage from "./pages/SharedPlanPage"
+import SubscribePage from "./pages/SubscribePage"
 
 function Home() {
   return (
@@ -41,14 +43,22 @@ export default function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
 
-      {/* Public route — no auth required (share links for instructors) */}
       <Route path="/shared/:token" element={<SharedPlanPage />} />
+      <Route path="/checkout/callback" element={<CheckoutCallbackPage />} />
 
       <Route
         path="/dashboard"
         element={
           <ProtectedRoute>
             <DashboardPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/subscribe"
+        element={
+          <ProtectedRoute>
+            <SubscribePage />
           </ProtectedRoute>
         }
       />

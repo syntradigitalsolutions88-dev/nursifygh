@@ -193,3 +193,139 @@ class HubtelWebhookView(APIView):
             )
 
         return Response({"detail": "processed"})
+        # ---------------------------------------------------------------------------
+# DEV-ONLY: Simulate a successful Paystack webhook for local testing
+# ---------------------------------------------------------------------------
+class DevSimulatePaystackPaymentView(APIView):
+    """
+    POST /api/payments/dev/simulate-paystack/
+
+    DEV MODE ONLY. Requires DEBUG=True to be enabled.
+    Simulates the effect of a successful Paystack charge for a given
+    transaction reference — marks the transaction SUCCESS and activates
+    the subscription. Bypasses HMAC (which is fragile to do from a browser).
+
+    Body: {"reference": "NSGH-xxx"}
+    """
+
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request, *args, **kwargs):
+        from django.conf import settings
+        from django.utils import timezone
+
+        if not settings.DEBUG:
+            return Response(
+                {"detail": "Dev-only endpoint is disabled."},
+                status=status.HTTP_403_FORBIDDEN,
+            )
+
+        reference = request.data.get("reference")
+        if not reference:
+            return Response(
+                {"detail": "reference is required."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        txn = PaymentTransaction.objects.filter(
+            reference=reference, student=request.user
+        ).first()
+        if not txn:
+            return Response(
+                {"detail": "Transaction not found for this user."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+
+        if txn.status == PaymentStatus.SUCCESS:
+            return Response(
+                {"detail": "Transaction already marked SUCCESS."},
+                status=status.HTTP_200_OK,
+            )
+
+        # Same logic the real webhook would perform
+        txn.mark_success(provider_reference=reference)
+        txn.student.activate_subscription(
+            days=txn.duration_days, reference=txn.reference
+        )
+
+        # Record a synthetic webhook event for audit
+        record_webhook_event(
+            provider=PaymentProvider.PAYSTACK,
+            event_id=f"dev_sim_{reference}_{int(timezone.now().timestamp())}",
+            event_type="charge.success",
+            payload={
+                "event": "charge.success",
+                "data": {"reference": reference, "status": "success", "amount": 3000},
+                "_dev_simulated": True,
+            },
+        )
+
+        return Response({"detail": "processed (dev simulation)"})
+    # ---------------------------------------------------------------------------
+# DEV-ONLY: Simulate a successful Paystack webhook for local testing
+# ---------------------------------------------------------------------------
+class DevSimulatePaystackPaymentView(APIView):
+    """
+    POST /api/payments/dev/simulate-paystack/
+
+    DEV MODE ONLY. Requires DEBUG=True to be enabled.
+    Simulates the effect of a successful Paystack charge for a given
+    transaction reference — marks the transaction SUCCESS and activates
+    the subscription. Bypasses HMAC (which is fragile to do from a browser).
+
+    Body: {"reference": "NSGH-xxx"}
+    """
+
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request, *args, **kwargs):
+        from django.conf import settings
+        from django.utils import timezone
+
+        if not settings.DEBUG:
+            return Response(
+                {"detail": "Dev-only endpoint is disabled."},
+                status=status.HTTP_403_FORBIDDEN,
+            )
+
+        reference = request.data.get("reference")
+        if not reference:
+            return Response(
+                {"detail": "reference is required."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        txn = PaymentTransaction.objects.filter(
+            reference=reference, student=request.user
+        ).first()
+        if not txn:
+            return Response(
+                {"detail": "Transaction not found for this user."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+
+        if txn.status == PaymentStatus.SUCCESS:
+            return Response(
+                {"detail": "Transaction already marked SUCCESS."},
+                status=status.HTTP_200_OK,
+            )
+
+        # Same logic the real webhook would perform
+        txn.mark_success(provider_reference=reference)
+        txn.student.activate_subscription(
+            days=txn.duration_days, reference=txn.reference
+        )
+
+        # Record a synthetic webhook event for audit
+        record_webhook_event(
+            provider=PaymentProvider.PAYSTACK,
+            event_id=f"dev_sim_{reference}_{int(timezone.now().timestamp())}",
+            event_type="charge.success",
+            payload={
+                "event": "charge.success",
+                "data": {"reference": reference, "status": "success", "amount": 3000},
+                "_dev_simulated": True,
+            },
+        )
+
+        return Response({"detail": "processed (dev simulation)"})

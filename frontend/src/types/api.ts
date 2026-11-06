@@ -252,3 +252,27 @@ export interface CarePlanRating {
     created_at: string
     updated_at: string
 }
+// ---------------------------------------------------------------------------
+// Payments
+// ---------------------------------------------------------------------------
+export interface PaymentTransaction {
+    id: string
+    provider: "PAYSTACK" | "HUBTEL"
+    provider_display: string
+    reference: string
+    provider_reference: string
+    amount_ghs: string
+    status: "PENDING" | "SUCCESS" | "FAILED" | "ABANDONED"
+    status_display: string
+    duration_days: number
+    authorization_url: string
+    initiated_at: string
+    completed_at: string | null
+}
+
+export interface InitiateCheckoutRequest {
+    provider?: "PAYSTACK" | "HUBTEL"
+    amount_ghs?: string
+    duration_days?: number
+    reference?: string
+}

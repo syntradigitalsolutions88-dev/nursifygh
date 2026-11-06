@@ -128,11 +128,12 @@ export default function DashboardPage() {
                             Unlock everything
                         </h2>
                         <p className="mt-1 text-sm text-amber-800">
-                            Subscribe to access all courses, quizzes, and care plan templates.
+                            Subscribe for GHS 30 to access all courses, quizzes, and care plan
+                            templates for 120 days.
                         </p>
-                        <button className="btn-primary mt-4" disabled>
-                            Subscribe (coming in Message 5)
-                        </button>
+                        <Link to="/subscribe" className="btn-primary mt-4 inline-block">
+                            Subscribe now →
+                        </Link>
                     </div>
                 )}
             </main>
