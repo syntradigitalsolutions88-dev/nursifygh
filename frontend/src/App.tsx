@@ -1,9 +1,12 @@
 import { Link, Route, Routes } from "react-router-dom"
 
 import ProtectedRoute from "./components/ProtectedRoute"
+import CarePlanDetailPage from "./pages/CarePlanDetailPage"
+import CarePlansPage from "./pages/CarePlansPage"
 import CoursesPage from "./pages/CoursesPage"
 import DashboardPage from "./pages/DashboardPage"
 import LoginPage from "./pages/LoginPage"
+import NcpBuilderPage from "./pages/NcpBuilderPage"
 import QuizPage from "./pages/QuizPage"
 import QuizResultsPage from "./pages/QuizResultsPage"
 import RegisterPage from "./pages/RegisterPage"
@@ -64,6 +67,30 @@ export default function App() {
         element={
           <ProtectedRoute>
             <QuizResultsPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/careplans"
+        element={
+          <ProtectedRoute>
+            <CarePlansPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/careplans/new"
+        element={
+          <ProtectedRoute>
+            <NcpBuilderPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/careplans/:planId"
+        element={
+          <ProtectedRoute>
+            <CarePlanDetailPage />
           </ProtectedRoute>
         }
       />

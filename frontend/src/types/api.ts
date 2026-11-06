@@ -126,3 +126,82 @@ export interface QuizAttemptResult {
     completed_at: string | null
     answers: QuizAnswerResult[]
 }
+
+// ---------------------------------------------------------------------------
+// Care plans — NANDA, templates, plans, goals, interventions
+// ---------------------------------------------------------------------------
+export interface NandaDiagnosis {
+    id: string
+    code: string
+    label: string
+    domain: string
+    domain_display: string
+    definition: string
+    defining_characteristics: string
+    related_factors: string
+    edition_year: number
+}
+
+export interface CarePlanTemplateSummary {
+    id: string
+    title: string
+    description: string
+    primary_diagnosis: string
+    primary_diagnosis_label: string
+    primary_diagnosis_domain: string
+    course: string | null
+    is_published: boolean
+}
+
+export interface SmartGoal {
+    id: string
+    specific: string
+    measurable: string
+    achievable: string
+    relevant: string
+    time_bound: string
+    position: number
+}
+
+export interface Intervention {
+    id: string
+    action: string
+    rationale: string
+    position: number
+}
+
+export interface CarePlanSummary {
+    id: string
+    title: string
+    primary_diagnosis: string
+    primary_diagnosis_label: string
+    is_public: boolean
+    is_submitted: boolean
+    submitted_at: string | null
+    goal_count: number
+    intervention_count: number
+    created_at: string
+    updated_at: string
+}
+
+export interface CarePlanDetail {
+    id: string
+    title: string
+    patient_scenario: string
+    primary_diagnosis: NandaDiagnosis
+    source_template: string | null
+    is_public: boolean
+    is_submitted: boolean
+    submitted_at: string | null
+    goals: SmartGoal[]
+    interventions: Intervention[]
+    created_at: string
+    updated_at: string
+}
+
+export interface CreateCarePlanRequest {
+    title: string
+    patient_scenario: string
+    primary_diagnosis: string
+    is_public: boolean
+}

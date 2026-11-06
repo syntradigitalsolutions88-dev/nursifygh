@@ -85,7 +85,7 @@ export default function DashboardPage() {
                         <p className="mt-1 text-sm text-gray-500">
                             Build NANDA diagnoses, SMART goals, and interventions.
                         </p>
-                        <p className="mt-4 text-xs text-brand-600">Coming in Message 4 →</p>
+                        <p className="mt-4 text-xs text-brand-600">Open care plans →</p>
                     </Link>
                 </div>
 
