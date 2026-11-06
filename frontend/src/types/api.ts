@@ -217,3 +217,38 @@ export interface CreateInterventionRequest {
     action: string
     rationale: string
 }
+export interface CarePlanShareLink {
+    id: string
+    token: string
+    expires_at: string
+    revoked: boolean
+    created_at: string
+}
+
+export interface PublicCarePlan {
+    id: string
+    title: string
+    patient_scenario: string
+    student_name: string
+    primary_diagnosis: NandaDiagnosis
+    goals: SmartGoal[]
+    interventions: Intervention[]
+    average_rating: number | null
+    rating_count: number
+    created_at: string
+    updated_at: string
+}
+
+export interface CreateRatingRequest {
+    score: number
+    comment?: string
+}
+
+export interface CarePlanRating {
+    id: string
+    rater_email: string
+    score: number
+    comment: string
+    created_at: string
+    updated_at: string
+}

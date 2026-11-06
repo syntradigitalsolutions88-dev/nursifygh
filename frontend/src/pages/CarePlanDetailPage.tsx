@@ -5,6 +5,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import {
     createGoal,
     createIntervention,
+    createShareLink,
     getCarePlan,
 } from "../api/careplans"
 import InterventionForm from "../components/InterventionForm"
@@ -78,10 +79,15 @@ export default function CarePlanDetailPage() {
                     <Link to="/careplans" className="text-sm text-brand-600 hover:underline">
                         ← Back to care plans
                     </Link>
-                    <h1 className="mt-2 text-xl font-bold text-gray-900">{plan.title}</h1>
-                    <p className="mt-1 text-sm text-gray-500">
-                        {plan.primary_diagnosis.code} — {plan.primary_diagnosis.label}
-                    </p>
+                    <div className="mt-2 flex items-start justify-between gap-3">
+                        <div>
+                            <h1 className="text-xl font-bold text-gray-900">{plan.title}</h1>
+                            <p className="mt-1 text-sm text-gray-500">
+                                {plan.primary_diagnosis.code} — {plan.primary_diagnosis.label}
+                            </p>
+                        </div>
+                        <ShareButton planId={plan.id} />
+                    </div>
                 </div>
             </header>
 
@@ -250,6 +256,58 @@ export default function CarePlanDetailPage() {
                     </span>
                 </div>
             </main>
+        </div>
+    )
+}
+
+function ShareButton({ planId }: { planId: string }) {
+    const [state, setState] = useState<"idle" | "loading" | "ready" | "error">("idle")
+    const [url, setUrl] = useState<string>("")
+
+    async function handleShare() {
+        setState("loading")
+        try {
+            const link = await createShareLink(planId, 30)
+            const shareUrl = `${window.location.origin}/shared/${link.token}`
+            setUrl(shareUrl)
+            setState("ready")
+            try {
+                await navigator.clipboard.writeText(shareUrl)
+            } catch {
+                /* clipboard may be unavailable — user can still copy manually */
+            }
+        } catch {
+            setState("error")
+        }
+    }
+
+    if (state === "ready") {
+        return (
+            <div className="text-right max-w-xs shrink-0">
+                <p className="text-xs font-medium text-brand-700">Share link ready</p>
+                <input
+                    readOnly
+                    value={url}
+                    onClick={(e) => (e.target as HTMLInputElement).select()}
+                    className="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-xs"
+                />
+                <p className="mt-1 text-xs text-gray-500">
+                    Copied to clipboard · valid 30 days
+                </p>
+            </div>
+        )
+    }
+
+    return (
+        <div className="shrink-0">
+            <button
+                onClick={handleShare}
+                disabled={state === "loading"}
+                className="btn-secondary text-xs"
+            >
+                {state === "loading" ? "Generating…" : "Share"}
+            </button>
+            {state === "error" && <p className="mt-1 text-xs text-red-600">Failed</p>}
         </div>
     )
 }

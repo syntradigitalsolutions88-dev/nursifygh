@@ -1,13 +1,17 @@
 import api from "./client"
 import type {
     CarePlanDetail,
+    CarePlanRating,
+    CarePlanShareLink,
     CarePlanSummary,
     CarePlanTemplateSummary,
     CreateCarePlanRequest,
     CreateInterventionRequest,
+    CreateRatingRequest,
     CreateSmartGoalRequest,
     Intervention,
     NandaDiagnosis,
+    PublicCarePlan,
     SmartGoal,
 } from "../types/api"
 
@@ -38,7 +42,7 @@ export async function listTemplates(params?: {
 }
 
 // ---------------------------------------------------------------------------
-// Care plans
+// Care plans (owner-scoped)
 // ---------------------------------------------------------------------------
 export async function listCarePlans(): Promise<CarePlanSummary[]> {
     const { data } = await api.get<{
@@ -98,6 +102,53 @@ export async function submitCarePlan(planId: string): Promise<CarePlanDetail> {
     const { data } = await api.post<CarePlanDetail>(
         `/careplans/plans/${planId}/submit/`,
         {},
+    )
+    return data
+}
+
+// ---------------------------------------------------------------------------
+// Share links
+// ---------------------------------------------------------------------------
+export async function createShareLink(
+    planId: string,
+    daysValid = 30,
+): Promise<CarePlanShareLink> {
+    const { data } = await api.post<CarePlanShareLink>(
+        `/careplans/plans/${planId}/share/`,
+        { days_valid: daysValid },
+    )
+    return data
+}
+
+export async function getSharedPlan(token: string): Promise<PublicCarePlan> {
+    // PUBLIC endpoint — no auth header needed but our interceptor is harmless
+    const { data } = await api.get<PublicCarePlan>(
+        `/careplans/shared/${token}/`,
+    )
+    return data
+}
+
+// ---------------------------------------------------------------------------
+// Public library
+// ---------------------------------------------------------------------------
+export async function listPublicPlans(): Promise<PublicCarePlan[]> {
+    const { data } = await api.get<{
+        count: number
+        results: PublicCarePlan[]
+    }>("/careplans/public/")
+    return data.results
+}
+
+// ---------------------------------------------------------------------------
+// Ratings
+// ---------------------------------------------------------------------------
+export async function rateCarePlan(
+    planId: string,
+    payload: CreateRatingRequest,
+): Promise<CarePlanRating> {
+    const { data } = await api.post<CarePlanRating>(
+        `/careplans/plans/${planId}/ratings/`,
+        payload,
     )
     return data
 }

@@ -7,9 +7,11 @@ import CoursesPage from "./pages/CoursesPage"
 import DashboardPage from "./pages/DashboardPage"
 import LoginPage from "./pages/LoginPage"
 import NcpBuilderPage from "./pages/NcpBuilderPage"
+import PublicLibraryPage from "./pages/PublicLibraryPage"
 import QuizPage from "./pages/QuizPage"
 import QuizResultsPage from "./pages/QuizResultsPage"
 import RegisterPage from "./pages/RegisterPage"
+import SharedPlanPage from "./pages/SharedPlanPage"
 
 function Home() {
   return (
@@ -38,6 +40,10 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+
+      {/* Public route — no auth required (share links for instructors) */}
+      <Route path="/shared/:token" element={<SharedPlanPage />} />
+
       <Route
         path="/dashboard"
         element={
@@ -91,6 +97,14 @@ export default function App() {
         element={
           <ProtectedRoute>
             <CarePlanDetailPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/library"
+        element={
+          <ProtectedRoute>
+            <PublicLibraryPage />
           </ProtectedRoute>
         }
       />
