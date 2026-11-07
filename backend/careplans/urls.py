@@ -14,6 +14,7 @@ from .views import (
     InterventionListCreateView,
     NandaDiagnosisDetailView,
     NandaDiagnosisListView,
+    PublicCarePlanDetailView,
     PublicCarePlanListView,
     SharedCarePlanView,
     SmartGoalListCreateView,
@@ -42,7 +43,7 @@ urlpatterns = [
     path("plans/fork-from-template/", CarePlanForkFromTemplateView.as_view(), name="plan-fork-template"),
     path("plans/fork-from-plan/", CarePlanForkFromPlanView.as_view(), name="plan-fork-plan"),
 
-    # Nested goals and interventions
+    # Goals + interventions
     path("plans/<uuid:plan_id>/goals/", SmartGoalListCreateView.as_view(), name="plan-goals"),
     path("plans/<uuid:plan_id>/interventions/", InterventionListCreateView.as_view(), name="plan-interventions"),
 
@@ -52,5 +53,6 @@ urlpatterns = [
 
     # Public library + ratings
     path("public/", PublicCarePlanListView.as_view(), name="public-plans"),
+    path("public/<uuid:plan_id>/", PublicCarePlanDetailView.as_view(), name="public-plan-detail"),
     path("plans/<uuid:plan_id>/ratings/", CarePlanRateView.as_view(), name="plan-rate"),
 ]

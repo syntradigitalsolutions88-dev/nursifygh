@@ -1,64 +1,98 @@
-"""Admin configuration for the payments app."""
+"""Django admin configuration for the payments app."""
 
-from django.contrib import admin
+from django.contrib import admin, messages
+from django.utils import timezone
 
-from .models import PaymentTransaction, PaymentWebhookEvent
+from .models import (
+    PaymentProvider,
+    PaymentStatus,
+    PaymentTransaction,
+    PaymentWebhookEvent,
+)
 
 
 @admin.register(PaymentTransaction)
 class PaymentTransactionAdmin(admin.ModelAdmin):
-    """
-    Read-heavy admin. Only `status`, `provider_reference`, and `completed_at`
-    are ever mutated, and those go through `mark_success` / `mark_failed`.
-    Admin edits should be rare and purposeful.
-    """
-
     list_display = (
-        "reference", "student", "provider", "amount_ghs", "status",
-        "initiated_at", "completed_at",
+        "reference",
+        "student_email",
+        "provider",
+        "amount_ghs",
+        "status",
+        "manual_reference",
+        "initiated_at",
+        "completed_at",
     )
-    list_filter = ("provider", "status")
-    search_fields = ("reference", "provider_reference", "student__email")
+    list_filter = ("provider", "status", "initiated_at")
+    search_fields = (
+        "reference",
+        "student__email",
+        "manual_reference",
+        "provider_reference",
+    )
     readonly_fields = (
-        "id", "reference", "student", "provider", "amount_ghs",
-        "duration_days", "initiated_at", "authorization_url",
+        "id",
+        "reference",
+        "provider",
+        "amount_ghs",
+        "duration_days",
+        "initiated_at",
+        "completed_at",
+        "reviewed_at",
+        "reviewed_by",
     )
-    date_hierarchy = "initiated_at"
-    ordering = ("-initiated_at",)
+    actions = ["approve_selected_payments", "reject_selected_payments"]
 
-    fieldsets = (
-        ("Identity", {"fields": ("id", "reference", "student", "provider")}),
-        ("Amount & duration", {"fields": ("amount_ghs", "duration_days")}),
-        ("Provider info", {"fields": ("provider_reference", "authorization_url")}),
-        ("Status", {"fields": ("status", "initiated_at", "completed_at")}),
-    )
+    def student_email(self, obj):
+        return obj.student.email
+    student_email.short_description = "Student"
+
+    @admin.action(description="✅ Approve selected manual payments")
+    def approve_selected_payments(self, request, queryset):
+        approved = 0
+        for txn in queryset:
+            if txn.provider != PaymentProvider.MANUAL:
+                continue
+            if txn.status == PaymentStatus.SUCCESS:
+                continue
+
+            txn.mark_success(provider_reference=txn.manual_reference or txn.reference)
+            txn.reviewed_by = request.user
+            txn.reviewed_at = timezone.now()
+            txn.save(update_fields=["reviewed_by", "reviewed_at"])
+            txn.student.activate_subscription(
+                days=txn.duration_days, reference=txn.reference
+            )
+            approved += 1
+
+        self.message_user(
+            request,
+            f"✅ Approved {approved} payment(s). Subscriptions activated.",
+            messages.SUCCESS,
+        )
+
+    @admin.action(description="❌ Reject selected manual payments")
+    def reject_selected_payments(self, request, queryset):
+        rejected = 0
+        for txn in queryset:
+            if txn.status == PaymentStatus.SUCCESS:
+                continue
+            txn.mark_failed()
+            txn.reviewed_by = request.user
+            txn.reviewed_at = timezone.now()
+            txn.save(update_fields=["reviewed_by", "reviewed_at"])
+            rejected += 1
+
+        self.message_user(
+            request,
+            f"Rejected {rejected} payment(s).",
+            messages.WARNING,
+        )
 
 
 @admin.register(PaymentWebhookEvent)
 class PaymentWebhookEventAdmin(admin.ModelAdmin):
-    """
-    Strictly read-only. Webhook events are the audit trail of what providers
-    sent. Never allow editing.
-    """
-
-    list_display = (
-        "event_id", "provider", "event_type", "received_at", "processed",
-    )
-    list_filter = ("provider", "processed", "event_type")
-    search_fields = ("event_id", "transaction__reference", "student_email")
-    readonly_fields = (
-        "id", "provider", "event_id", "event_type", "payload",
-        "transaction", "received_at", "processed", "processing_error",
-    )
-    date_hierarchy = "received_at"
-    ordering = ("-received_at",)
-
-    def student_email(self, obj: PaymentWebhookEvent) -> str:
-        return obj.transaction.student.email if obj.transaction else "—"
-    student_email.short_description = "Student"
-
-    def has_add_permission(self, request) -> bool:
-        return False
-
-    def has_change_permission(self, request, obj=None) -> bool:
-        return False
+    list_display = ("provider", "event_type", "event_id", "processed", "received_at")
+    list_filter = ("provider", "processed", "received_at")
+    search_fields = ("event_id", "event_type")
+    readonly_fields = ("id", "payload", "received_at")

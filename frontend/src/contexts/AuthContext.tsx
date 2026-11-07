@@ -7,14 +7,11 @@ import {
     useState,
     type ReactNode,
 } from "react"
+import { useQueryClient } from "@tanstack/react-query"
 
 import * as authApi from "../api/auth"
 import { tokenStore } from "../api/client"
-import type {
-    LoginRequest,
-    RegisterRequest,
-    User,
-} from "../types/api"
+import type { LoginRequest, RegisterRequest, User } from "../types/api"
 
 interface AuthContextValue {
     user: User | null
@@ -30,6 +27,7 @@ const AuthContext = createContext<AuthContextValue | undefined>(undefined)
 export function AuthProvider({ children }: { children: ReactNode }) {
     const [user, setUser] = useState<User | null>(null)
     const [isLoading, setIsLoading] = useState<boolean>(true)
+    const queryClient = useQueryClient()
 
     // On mount: if we have a token, try to fetch the user
     useEffect(() => {
@@ -54,22 +52,34 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         }
     }, [])
 
-    const login = useCallback(async (payload: LoginRequest) => {
-        const me = await authApi.login(payload)
-        setUser(me)
-        return me
-    }, [])
+    const login = useCallback(
+        async (payload: LoginRequest) => {
+            const me = await authApi.login(payload)
+            // Clear stale cache from a previous session before hydrating new data
+            queryClient.clear()
+            setUser(me)
+            return me
+        },
+        [queryClient],
+    )
 
-    const register = useCallback(async (payload: RegisterRequest) => {
-        const me = await authApi.register(payload)
-        setUser(me)
-        return me
-    }, [])
+    const register = useCallback(
+        async (payload: RegisterRequest) => {
+            const me = await authApi.register(payload)
+            queryClient.clear()
+            setUser(me)
+            return me
+        },
+        [queryClient],
+    )
 
     const logout = useCallback(() => {
         authApi.logout()
         setUser(null)
-    }, [])
+        // Wipe all TanStack Query cache so the next user never sees the
+        // previous user's courses, quiz history, care plans, or profile data.
+        queryClient.clear()
+    }, [queryClient])
 
     const refreshUser = useCallback(async () => {
         if (!tokenStore.access) {

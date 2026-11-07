@@ -1,42 +1,44 @@
 import api from "./client"
-import type {
-    InitiateCheckoutRequest,
-    PaymentTransaction,
-} from "../types/api"
 
-// ---------------------------------------------------------------------------
-// Checkout initiation
-// ---------------------------------------------------------------------------
-export async function initiateCheckout(
-    payload: InitiateCheckoutRequest = {},
-): Promise<PaymentTransaction> {
-    const { data } = await api.post<PaymentTransaction>(
-        "/payments/checkout/",
-        {
-            provider: "PAYSTACK",
-            ...payload,
-        },
+export interface ManualPaymentInfo {
+    momo_number: string
+    momo_name: string
+    amount_ghs: string
+    duration_days: number
+    pending: null | {
+        id: string
+        reference: string
+        manual_reference: string
+        manual_note: string
+        amount_ghs: string
+        submitted_at: string
+    }
+}
+
+export interface ManualPaymentTransaction {
+    id: string
+    reference: string
+    amount_ghs: string
+    status: string
+}
+
+export async function getManualPaymentInfo(): Promise<ManualPaymentInfo> {
+    const { data } = await api.get<ManualPaymentInfo>("/payments/manual/info/")
+    return data
+}
+
+export async function initiateManualPayment(): Promise<ManualPaymentTransaction> {
+    const { data } = await api.post<ManualPaymentTransaction>(
+        "/payments/manual/initiate/"
     )
     return data
 }
 
-// ---------------------------------------------------------------------------
-// Transaction history
-// ---------------------------------------------------------------------------
-export async function listTransactions(): Promise<PaymentTransaction[]> {
-    const { data } = await api.get<{
-        count: number
-        results: PaymentTransaction[]
-    }>("/payments/transactions/")
-    return data.results
-}
-
-// ---------------------------------------------------------------------------
-// DEV MODE ONLY — simulate a successful Paystack payment
-// ---------------------------------------------------------------------------
-// Calls a dev-only backend endpoint that activates the subscription directly.
-// Bypasses HMAC (which is fragile to compute in a browser) — the backend
-// endpoint itself refuses to run when DEBUG=False.
-export async function simulatePaystackWebhook(reference: string): Promise<void> {
-    await api.post("/payments/dev/simulate-paystack/", { reference })
+export async function submitManualPayment(payload: {
+    reference: string
+    manual_reference: string
+    manual_note?: string
+}): Promise<{ detail: string; transaction: ManualPaymentTransaction }> {
+    const { data } = await api.post("/payments/manual/submit/", payload)
+    return data
 }

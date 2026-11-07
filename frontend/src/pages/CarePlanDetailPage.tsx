@@ -8,6 +8,10 @@ import {
     createShareLink,
     getCarePlan,
 } from "../api/careplans"
+import AppShell from "../components/shell/AppShell"
+import Alert from "../components/ui/Alert"
+import Badge from "../components/ui/Badge"
+import Button from "../components/ui/Button"
 import InterventionForm from "../components/InterventionForm"
 import SmartGoalForm from "../components/SmartGoalForm"
 import type {
@@ -34,8 +38,7 @@ export default function CarePlanDetailPage() {
     }
 
     const addGoalMutation = useMutation({
-        mutationFn: (payload: CreateSmartGoalRequest) =>
-            createGoal(planId!, payload),
+        mutationFn: (payload: CreateSmartGoalRequest) => createGoal(planId!, payload),
         onSuccess: () => {
             setShowGoalForm(false)
             invalidate()
@@ -53,118 +56,91 @@ export default function CarePlanDetailPage() {
 
     if (isLoading) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <p className="text-gray-500">Loading care plan…</p>
-            </div>
+            <AppShell>
+                <div className="text-center py-12">
+                    <p className="text-on-surface-muted">Loading care plan…</p>
+                </div>
+            </AppShell>
         )
     }
 
     if (error || !plan) {
         return (
-            <div className="min-h-screen flex items-center justify-center px-4">
-                <div className="card max-w-md w-full text-center">
-                    <h1 className="text-xl font-bold text-red-700">Care plan not found</h1>
-                    <Link to="/careplans" className="btn-secondary mt-4 inline-block">
-                        Back to care plans
-                    </Link>
+            <AppShell>
+                <div className="rounded-xl border border-border bg-white p-8 text-center">
+                    <h1 className="text-h3 text-danger-700">Care plan not found</h1>
                 </div>
-            </div>
+            </AppShell>
         )
     }
 
     return (
-        <div className="min-h-screen bg-gray-50">
-            <header className="bg-white border-b border-gray-100">
-                <div className="max-w-3xl mx-auto px-4 py-4">
-                    <Link to="/careplans" className="text-sm text-brand-600 hover:underline">
-                        ← Back to care plans
-                    </Link>
-                    <div className="mt-2 flex items-start justify-between gap-3">
-                        <div>
-                            <h1 className="text-xl font-bold text-gray-900">{plan.title}</h1>
-                            <p className="mt-1 text-sm text-gray-500">
-                                {plan.primary_diagnosis.code} — {plan.primary_diagnosis.label}
-                            </p>
-                        </div>
+        <AppShell>
+            <div className="max-w-3xl space-y-6">
+                {/* Header */}
+                <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div>
+                        <p className="text-caption text-brand-600">{plan.primary_diagnosis.code} — {plan.primary_diagnosis.label}</p>
+                        <h1 className="mt-2 text-h1">{plan.title}</h1>
+                    </div>
+                    <div className="flex flex-wrap items-start gap-2">
+                        <Link to={`/careplans/${plan.id}/transcription`}>
+                            <Button size="sm" variant="secondary">📋 Transcription View</Button>
+                        </Link>
                         <ShareButton planId={plan.id} />
                     </div>
                 </div>
-            </header>
 
-            <main className="max-w-3xl mx-auto px-4 py-8 space-y-6">
-                <div className="card">
-                    <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
-                        Patient scenario
-                    </h2>
-                    <p className="mt-2 text-sm text-gray-800 whitespace-pre-line">
+                {/* Patient scenario */}
+                <section className="rounded-xl border border-border bg-white p-6">
+                    <h2 className="text-caption">Patient scenario</h2>
+                    <p className="mt-3 text-body-sm text-on-surface whitespace-pre-line">
                         {plan.patient_scenario}
                     </p>
-                </div>
+                </section>
 
-                <div className="card">
-                    <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
-                        NANDA diagnosis
-                    </h2>
-                    <p className="mt-2 text-lg font-semibold text-gray-900">
+                {/* NANDA diagnosis */}
+                <section className="rounded-xl border border-border bg-white p-6">
+                    <h2 className="text-caption">NANDA diagnosis</h2>
+                    <p className="mt-3 text-h3">
                         {plan.primary_diagnosis.code} — {plan.primary_diagnosis.label}
                     </p>
-                    <p className="mt-1 text-xs text-brand-600">
+                    <Badge variant="brand" className="mt-2">
                         {plan.primary_diagnosis.domain_display}
-                    </p>
-                    <p className="mt-3 text-sm text-gray-700">
+                    </Badge>
+                    <p className="mt-3 text-body-sm text-on-surface-muted">
                         {plan.primary_diagnosis.definition}
                     </p>
-                </div>
+                </section>
 
-                <div className="card">
-                    <div className="flex items-center justify-between">
-                        <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
-                            SMART goals
-                        </h2>
+                {/* SMART goals */}
+                <section className="rounded-xl border border-border bg-white p-6">
+                    <div className="flex items-center justify-between mb-4">
+                        <h2 className="text-h4">SMART goals</h2>
                         {!showGoalForm && (
-                            <button
-                                onClick={() => setShowGoalForm(true)}
-                                className="btn-secondary text-xs"
-                            >
+                            <Button size="sm" variant="secondary" onClick={() => setShowGoalForm(true)}>
                                 + Add goal
-                            </button>
+                            </Button>
                         )}
                     </div>
 
                     {plan.goals.length === 0 && !showGoalForm && (
-                        <p className="mt-2 text-sm text-gray-500 italic">
-                            No goals yet. Add your first SMART goal above.
+                        <p className="text-body-sm text-on-surface-muted italic">
+                            No goals yet. Add your first SMART goal.
                         </p>
                     )}
 
                     {plan.goals.length > 0 && (
-                        <ul className="mt-3 space-y-4">
+                        <ul className="space-y-4">
                             {plan.goals.map((goal, idx) => (
-                                <li key={goal.id} className="border-l-2 border-brand-300 pl-3">
-                                    <p className="text-xs font-medium text-gray-500">
-                                        Goal {idx + 1}
-                                    </p>
-                                    <dl className="mt-2 grid grid-cols-1 gap-1 text-sm">
-                                        <div>
-                                            <dt className="inline font-medium text-gray-700">S: </dt>
-                                            <dd className="inline text-gray-800">{goal.specific}</dd>
-                                        </div>
-                                        <div>
-                                            <dt className="inline font-medium text-gray-700">M: </dt>
-                                            <dd className="inline text-gray-800">{goal.measurable}</dd>
-                                        </div>
-                                        <div>
-                                            <dt className="inline font-medium text-gray-700">A: </dt>
-                                            <dd className="inline text-gray-800">{goal.achievable}</dd>
-                                        </div>
-                                        <div>
-                                            <dt className="inline font-medium text-gray-700">R: </dt>
-                                            <dd className="inline text-gray-800">{goal.relevant}</dd>
-                                        </div>
-                                        <div>
-                                            <dt className="inline font-medium text-gray-700">T: </dt>
-                                            <dd className="inline text-gray-800">{goal.time_bound}</dd>
-                                        </div>
+                                <li key={goal.id} className="border-l-2 border-brand-300 pl-4">
+                                    <p className="text-xs font-medium text-on-surface-muted">Goal {idx + 1}</p>
+                                    <dl className="mt-2 space-y-1 text-body-sm">
+                                        <div><dt className="inline font-semibold text-on-surface">S: </dt><dd className="inline text-on-surface">{goal.specific}</dd></div>
+                                        <div><dt className="inline font-semibold text-on-surface">M: </dt><dd className="inline text-on-surface">{goal.measurable}</dd></div>
+                                        <div><dt className="inline font-semibold text-on-surface">A: </dt><dd className="inline text-on-surface">{goal.achievable}</dd></div>
+                                        <div><dt className="inline font-semibold text-on-surface">R: </dt><dd className="inline text-on-surface">{goal.relevant}</dd></div>
+                                        <div><dt className="inline font-semibold text-on-surface">T: </dt><dd className="inline text-on-surface">{goal.time_bound}</dd></div>
                                     </dl>
                                 </li>
                             ))}
@@ -184,43 +160,39 @@ export default function CarePlanDetailPage() {
                     )}
 
                     {addGoalMutation.isError && (
-                        <div className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-xs text-red-700">
+                        <Alert variant="danger" className="mt-3">
                             Failed to save goal. Please try again.
-                        </div>
+                        </Alert>
                     )}
-                </div>
+                </section>
 
-                <div className="card">
-                    <div className="flex items-center justify-between">
-                        <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wide">
-                            Nursing interventions
-                        </h2>
+                {/* Interventions */}
+                <section className="rounded-xl border border-border bg-white p-6">
+                    <div className="flex items-center justify-between mb-4">
+                        <h2 className="text-h4">Nursing interventions</h2>
                         {!showInterventionForm && (
-                            <button
-                                onClick={() => setShowInterventionForm(true)}
-                                className="btn-secondary text-xs"
-                            >
+                            <Button size="sm" variant="secondary" onClick={() => setShowInterventionForm(true)}>
                                 + Add intervention
-                            </button>
+                            </Button>
                         )}
                     </div>
 
                     {plan.interventions.length === 0 && !showInterventionForm && (
-                        <p className="mt-2 text-sm text-gray-500 italic">
-                            No interventions yet. Add your first above.
+                        <p className="text-body-sm text-on-surface-muted italic">
+                            No interventions yet.
                         </p>
                     )}
 
                     {plan.interventions.length > 0 && (
-                        <ul className="mt-3 space-y-4">
+                        <ul className="space-y-4">
                             {plan.interventions.map((iv, idx) => (
-                                <li key={iv.id} className="border-l-2 border-brand-300 pl-3">
-                                    <p className="text-xs font-medium text-gray-500">
+                                <li key={iv.id} className="border-l-2 border-brand-300 pl-4">
+                                    <p className="text-xs font-medium text-on-surface-muted">
                                         Intervention {idx + 1}
                                     </p>
-                                    <p className="mt-1 text-sm text-gray-800">{iv.action}</p>
-                                    <div className="mt-2 rounded bg-brand-50 p-2">
-                                        <p className="text-xs font-medium text-brand-700">Rationale</p>
+                                    <p className="mt-1 text-body-sm text-on-surface">{iv.action}</p>
+                                    <div className="mt-2 rounded-lg bg-brand-50 p-3">
+                                        <p className="text-xs font-semibold text-brand-700">Rationale</p>
                                         <p className="mt-1 text-xs text-brand-800">{iv.rationale}</p>
                                     </div>
                                 </li>
@@ -241,28 +213,19 @@ export default function CarePlanDetailPage() {
                     )}
 
                     {addInterventionMutation.isError && (
-                        <div className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-xs text-red-700">
+                        <Alert variant="danger" className="mt-3">
                             Failed to save intervention. Please try again.
-                        </div>
+                        </Alert>
                     )}
-                </div>
-
-                <div className="flex justify-between pt-4">
-                    <Link to="/careplans" className="btn-secondary">
-                        Back to list
-                    </Link>
-                    <span className="text-xs text-gray-500 self-center">
-                        Plan editing · Round 2 · Goals & interventions
-                    </span>
-                </div>
-            </main>
-        </div>
+                </section>
+            </div>
+        </AppShell>
     )
 }
 
 function ShareButton({ planId }: { planId: string }) {
     const [state, setState] = useState<"idle" | "loading" | "ready" | "error">("idle")
-    const [url, setUrl] = useState<string>("")
+    const [url, setUrl] = useState("")
 
     async function handleShare() {
         setState("loading")
@@ -274,7 +237,7 @@ function ShareButton({ planId }: { planId: string }) {
             try {
                 await navigator.clipboard.writeText(shareUrl)
             } catch {
-                /* clipboard may be unavailable — user can still copy manually */
+                /* clipboard may be unavailable */
             }
         } catch {
             setState("error")
@@ -283,31 +246,24 @@ function ShareButton({ planId }: { planId: string }) {
 
     if (state === "ready") {
         return (
-            <div className="text-right max-w-xs shrink-0">
-                <p className="text-xs font-medium text-brand-700">Share link ready</p>
+            <div className="max-w-xs">
+                <p className="text-xs font-medium text-brand-700">Share link ready · copied</p>
                 <input
                     readOnly
                     value={url}
                     onClick={(e) => (e.target as HTMLInputElement).select()}
-                    className="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-xs"
+                    className="mt-1 w-full rounded-md border border-border bg-surface-subtle px-2 py-1 text-xs"
                 />
-                <p className="mt-1 text-xs text-gray-500">
-                    Copied to clipboard · valid 30 days
-                </p>
             </div>
         )
     }
 
     return (
-        <div className="shrink-0">
-            <button
-                onClick={handleShare}
-                disabled={state === "loading"}
-                className="btn-secondary text-xs"
-            >
+        <div>
+            <Button size="sm" variant="secondary" onClick={handleShare} loading={state === "loading"}>
                 {state === "loading" ? "Generating…" : "Share"}
-            </button>
-            {state === "error" && <p className="mt-1 text-xs text-red-600">Failed</p>}
+            </Button>
+            {state === "error" && <p className="mt-1 text-xs text-danger-700">Failed</p>}
         </div>
     )
 }

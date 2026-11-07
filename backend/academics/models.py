@@ -57,6 +57,22 @@ class Course(models.Model):
     level = models.PositiveSmallIntegerField(
         _("level"), choices=StudentLevel.choices, db_index=True
     )
+    program = models.CharField(
+        _("program"),
+        max_length=20,
+        choices=[
+            ("GENERAL", "General (all students)"),
+            ("MIDWIFERY", "Midwifery"),
+            ("PSYCHIATRIC", "Psychiatric"),
+            ("COMMUNITY", "Community Health"),
+        ],
+        default="GENERAL",
+        db_index=True,
+        help_text=_(
+            "Which nursing program this course is for. "
+            "GENERAL means all students take it."
+        ),
+    )
     semester = models.CharField(
         _("semester"), max_length=2, choices=Semester.choices, db_index=True
     )
@@ -72,6 +88,10 @@ class Course(models.Model):
         indexes = [
             models.Index(fields=["level", "is_published"], name="idx_course_level_pub"),
             models.Index(fields=["category", "level"], name="idx_course_cat_level"),
+            models.Index(
+                fields=["program", "level", "is_published"],
+                name="idx_course_program_level",
+            ),
         ]
         constraints = [
             models.UniqueConstraint(

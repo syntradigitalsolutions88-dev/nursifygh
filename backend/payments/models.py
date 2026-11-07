@@ -38,12 +38,14 @@ class PaymentProvider(models.TextChoices):
 
     PAYSTACK = "PAYSTACK", _("Paystack")
     HUBTEL = "HUBTEL", _("Hubtel")
+    MANUAL = "MANUAL", _("Manual MoMo")
 
 
 class PaymentStatus(models.TextChoices):
     """Lifecycle of a payment attempt."""
 
     PENDING = "PENDING", _("Pending")
+    AWAITING_REVIEW = "AWAITING_REVIEW", _("Awaiting review")
     SUCCESS = "SUCCESS", _("Success")
     FAILED = "FAILED", _("Failed")
     ABANDONED = "ABANDONED", _("Abandoned")
@@ -127,6 +129,28 @@ class PaymentTransaction(models.Model):
         help_text=_("Provider-hosted checkout URL for the student."),
     )
 
+    # Manual MoMo flow: student-supplied transaction reference + optional note
+    manual_reference = models.CharField(
+        _("manual transaction reference"),
+        max_length=100,
+        blank=True,
+        help_text=_("Transaction ID from the MoMo SMS (manual payments only)."),
+    )
+    manual_note = models.TextField(
+        _("manual payment note"),
+        blank=True,
+        help_text=_("Optional note from the student about their manual payment."),
+    )
+    reviewed_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="reviewed_payments",
+        help_text=_("Staff user who approved or rejected this manual payment."),
+    )
+    reviewed_at = models.DateTimeField(_("reviewed at"), null=True, blank=True)
+
     class Meta:
         verbose_name = _("payment transaction")
         verbose_name_plural = _("payment transactions")
@@ -155,6 +179,13 @@ class PaymentTransaction(models.Model):
         if provider_reference:
             self.provider_reference = provider_reference
         self.save(update_fields=["status", "completed_at", "provider_reference"])
+
+    def mark_awaiting_review(self, *, manual_reference: str, manual_note: str = "") -> None:
+        """Mark a manual payment as submitted and awaiting admin review."""
+        self.status = PaymentStatus.AWAITING_REVIEW
+        self.manual_reference = manual_reference
+        self.manual_note = manual_note
+        self.save(update_fields=["status", "manual_reference", "manual_note"])
 
 
 class PaymentWebhookEvent(models.Model):

@@ -28,6 +28,15 @@ class StudentLevel(models.IntegerChoices):
     LEVEL_300 = 300, _("Level 300")
 
 
+class NursingProgram(models.TextChoices):
+    """The four nursing education programs in Ghana."""
+
+    GENERAL = "GENERAL", _("General Nursing (RGN)")
+    MIDWIFERY = "MIDWIFERY", _("Midwifery (RM)")
+    PSYCHIATRIC = "PSYCHIATRIC", _("Psychiatric Nursing (RPN)")
+    COMMUNITY = "COMMUNITY", _("Community Health Nursing (CHN)")
+
+
 GHANA_PHONE_REGEX = RegexValidator(
     regex=r"^(?:\+233|233|0)\d{9}$",
     message=_("Enter a valid Ghanaian phone number (e.g. 0244123456)."),
@@ -66,6 +75,14 @@ class User(AbstractBaseUser, PermissionsMixin):
         default=StudentLevel.LEVEL_100,
         db_index=True,
     )
+    program = models.CharField(
+        _("nursing program"),
+        max_length=20,
+        choices=NursingProgram.choices,
+        default=NursingProgram.GENERAL,
+        db_index=True,
+        help_text=_("The nursing track the student is enrolled in."),
+    )
     institution = models.CharField(
         _("institution"),
         max_length=200,
@@ -100,6 +117,7 @@ class User(AbstractBaseUser, PermissionsMixin):
                 fields=["is_subscribed", "subscription_expires_at"],
                 name="idx_user_sub_expiry",
             ),
+            models.Index(fields=["program", "level"], name="idx_user_program_level"),
         ]
 
     def __str__(self) -> str:

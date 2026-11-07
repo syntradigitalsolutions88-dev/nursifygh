@@ -14,6 +14,9 @@ class CourseListSerializer(serializers.ModelSerializer):
         source="get_category_display", read_only=True
     )
     level_display = serializers.CharField(source="get_level_display", read_only=True)
+    program_display = serializers.CharField(
+        source="get_program_display", read_only=True
+    )
     semester_display = serializers.CharField(
         source="get_semester_display", read_only=True
     )
@@ -23,7 +26,9 @@ class CourseListSerializer(serializers.ModelSerializer):
         model = Course
         fields = (
             "id", "code", "title", "category", "category_display",
-            "level", "level_display", "semester", "semester_display",
+            "level", "level_display",
+            "program", "program_display",
+            "semester", "semester_display",
             "question_count",
         )
 
@@ -69,6 +74,9 @@ class CourseDetailSerializer(serializers.ModelSerializer):
         source="get_category_display", read_only=True
     )
     level_display = serializers.CharField(source="get_level_display", read_only=True)
+    program_display = serializers.CharField(
+        source="get_program_display", read_only=True
+    )
     semester_display = serializers.CharField(
         source="get_semester_display", read_only=True
     )
@@ -79,6 +87,7 @@ class CourseDetailSerializer(serializers.ModelSerializer):
             "id", "code", "title", "description",
             "category", "category_display",
             "level", "level_display",
+            "program", "program_display",
             "semester", "semester_display",
             "questions",
         )

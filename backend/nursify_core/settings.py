@@ -1,21 +1,15 @@
 """
 Django settings for the NursifyGH backend.
-
-Environment-driven via django-environ. All secrets and environment-specific
-values are read from backend/.env (which is git-ignored). See .env.example
-for the full list of supported keys.
 """
 
 from __future__ import annotations
 
 from datetime import timedelta
+import environ
+import os
 from pathlib import Path
 
-import environ
-
-# ---------------------------------------------------------------------------
-# Paths & environment
-# ---------------------------------------------------------------------------
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
@@ -30,9 +24,18 @@ env = environ.Env(
     PAYSTACK_PUBLIC_KEY=(str, ""),
     HUBTEL_CLIENT_ID=(str, ""),
     HUBTEL_CLIENT_SECRET=(str, ""),
+    EMAIL_BACKEND=(str, "django.core.mail.backends.console.EmailBackend"),
+    EMAIL_HOST=(str, ""),
+    EMAIL_PORT=(int, 587),
+    EMAIL_USE_TLS=(bool, True),
+    EMAIL_HOST_USER=(str, ""),
+    EMAIL_HOST_PASSWORD=(str, ""),
+    DEFAULT_FROM_EMAIL=(str, "NursifyGH <noreply@nursifygh.com>"),
+    GEMINI_API_KEY=(str, ""),
+    GROQ_API_KEY=(str, ""), # <--- ADDED THIS
 )
 
-# Load .env if it exists (production deployments may rely on real env vars).
+# Load .env if it exists
 ENV_FILE = BASE_DIR / ".env"
 if ENV_FILE.exists():
     env.read_env(str(ENV_FILE))
@@ -110,10 +113,10 @@ WSGI_APPLICATION = "nursify_core.wsgi.application"
 ASGI_APPLICATION = "nursify_core.asgi.application"
 
 # ---------------------------------------------------------------------------
-# Database (driven by DATABASE_URL — swap SQLite→Postgres by editing .env)
+# Database
 # ---------------------------------------------------------------------------
 DATABASES = {"default": env.db("DATABASE_URL")}
-DATABASES["default"]["CONN_MAX_AGE"] = 60  # persistent connections
+DATABASES["default"]["CONN_MAX_AGE"] = 60
 
 # ---------------------------------------------------------------------------
 # Auth
@@ -127,6 +130,17 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
+
+# ---------------------------------------------------------------------------
+# Email
+# ---------------------------------------------------------------------------
+EMAIL_BACKEND = env("EMAIL_BACKEND")
+EMAIL_HOST = env("EMAIL_HOST")
+EMAIL_PORT = env("EMAIL_PORT")
+EMAIL_USE_TLS = env("EMAIL_USE_TLS")
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
 
 # ---------------------------------------------------------------------------
 # Internationalization
@@ -152,13 +166,22 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # ---------------------------------------------------------------------------
-# CORS — allow both localhost and 127.0.0.1 during local dev
+# CORS
 # ---------------------------------------------------------------------------
+FRONTEND_ORIGIN = env("FRONTEND_ORIGIN")
+
 CORS_ALLOWED_ORIGINS = [
-    env("FRONTEND_ORIGIN", default="http://localhost:5173"),
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "http://localhost:5184",
+    "http://127.0.0.1:5184",
 ]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^http://localhost:\d+$",
+    r"^http://127\.0\.0\.1:\d+$",
+]
+
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
     "accept",
@@ -216,7 +239,7 @@ SIMPLE_JWT = {
 }
 
 # ---------------------------------------------------------------------------
-# drf-spectacular (OpenAPI)
+# drf-spectacular
 # ---------------------------------------------------------------------------
 SPECTACULAR_SETTINGS = {
     "TITLE": "NursifyGH API",
@@ -227,7 +250,7 @@ SPECTACULAR_SETTINGS = {
 }
 
 # ---------------------------------------------------------------------------
-# Payment providers (read from .env; used by payments.services)
+# Payment providers
 # ---------------------------------------------------------------------------
 PAYSTACK_SECRET_KEY = env("PAYSTACK_SECRET_KEY", default="")
 PAYSTACK_PUBLIC_KEY = env("PAYSTACK_PUBLIC_KEY", default="")
@@ -235,7 +258,13 @@ HUBTEL_CLIENT_ID = env("HUBTEL_CLIENT_ID", default="")
 HUBTEL_CLIENT_SECRET = env("HUBTEL_CLIENT_SECRET", default="")
 
 # ---------------------------------------------------------------------------
-# Security hardening (activated only when DEBUG=False)
+# AI Configuration
+# ---------------------------------------------------------------------------
+GEMINI_API_KEY = env("GEMINI_API_KEY")
+GROQ_API_KEY = env("GROQ_API_KEY")
+
+# ---------------------------------------------------------------------------
+# Security hardening
 # ---------------------------------------------------------------------------
 if not DEBUG:
     SECURE_SSL_REDIRECT = True

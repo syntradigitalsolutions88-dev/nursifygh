@@ -1,46 +1,78 @@
 @import "tailwindcss";
+@import "./design-system.css";
 
-@theme {
-  --font-sans: "Inter", system-ui, sans-serif;
-
-  --color-brand-50: #eef7f2;
-  --color-brand-100: #d5ecdf;
-  --color-brand-200: #aed9c2;
-  --color-brand-300: #7dbf9d;
-  --color-brand-400: #4da078;
-  --color-brand-500: #2c845c;
-  --color-brand-600: #1f6849;
-  --color-brand-700: #1a523a;
-  --color-brand-800: #15402e;
-  --color-brand-900: #0f2e21;
+/* ---- Legacy component classes (plain CSS, no @layer wrapping) ---- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: #1f6849;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: background-color 150ms;
 }
 
-@layer base {
-  html {
-    font-family: var(--font-sans);
-  }
-
-  body {
-    background-color: var(--color-gray-50);
-    color: var(--color-gray-900);
-    -webkit-font-smoothing: antialiased;
-  }
+.btn-primary:hover:not(:disabled) {
+  background-color: #15402e;
 }
 
-@layer components {
-  .btn-primary {
-    @apply inline-flex items-center justify-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-gray-300;
-  }
+.btn-primary:disabled {
+  cursor: not-allowed;
+  background-color: #d1d5db;
+}
 
-  .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50;
-  }
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: background-color 150ms;
+}
 
-  .input {
-    @apply block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm placeholder-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200;
-  }
+.btn-secondary:hover:not(:disabled) {
+  background-color: #f9fafb;
+}
 
-  .card {
-    @apply rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-100;
-  }
+.btn-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  background-color: white;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  border-color: #1f6849;
+  outline: none;
+  box-shadow: 0 0 0 2px #aed9c2;
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid #f3f4f6;
 }

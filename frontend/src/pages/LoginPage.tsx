@@ -2,6 +2,10 @@ import { useState, type FormEvent } from "react"
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { AxiosError } from "axios"
 
+import AuthLayout from "../components/shell/AuthLayout"
+import Alert from "../components/ui/Alert"
+import Button from "../components/ui/Button"
+import Input from "../components/ui/Input"
 import { useAuth } from "../contexts/AuthContext"
 
 export default function LoginPage() {
@@ -40,62 +44,55 @@ export default function LoginPage() {
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center px-4">
-            <div className="card max-w-md w-full">
-                <h1 className="text-2xl font-bold text-brand-700">Welcome back</h1>
-                <p className="mt-1 text-sm text-gray-500">Log in to continue studying.</p>
+        <AuthLayout>
+            <div className="rounded-xl border border-border bg-white p-6 sm:p-8 shadow-sm">
+                <h1 className="text-h2 text-brand-700">Welcome back</h1>
+                <p className="mt-1.5 text-body-sm text-on-surface-muted">
+                    Log in to continue studying.
+                </p>
 
-                <form onSubmit={onSubmit} className="mt-6 space-y-4">
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                            Email
-                        </label>
-                        <input
-                            id="email"
-                            type="email"
-                            required
-                            autoComplete="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="input mt-1"
-                            placeholder="you@example.com"
-                        />
+                <form onSubmit={onSubmit} className="mt-8 space-y-4">
+                    <Input
+                        label="Email"
+                        type="email"
+                        required
+                        autoComplete="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="you@example.com"
+                    />
+                    <Input
+                        label="Password"
+                        type="password"
+                        required
+                        autoComplete="current-password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="••••••••"
+                    />
+                    <div className="flex justify-end -mt-2">
+                        <Link
+                            to="/forgot-password"
+                            className="text-xs font-medium text-brand-600 hover:underline"
+                        >
+                            Forgot password?
+                        </Link>
                     </div>
 
-                    <div>
-                        <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                            Password
-                        </label>
-                        <input
-                            id="password"
-                            type="password"
-                            required
-                            autoComplete="current-password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            className="input mt-1"
-                            placeholder="••••••••"
-                        />
-                    </div>
+                    {error && <Alert variant="danger">{error}</Alert>}
 
-                    {error && (
-                        <div className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">
-                            {error}
-                        </div>
-                    )}
-
-                    <button type="submit" disabled={submitting} className="btn-primary w-full">
+                    <Button type="submit" fullWidth loading={submitting} size="lg">
                         {submitting ? "Logging in…" : "Log in"}
-                    </button>
+                    </Button>
                 </form>
 
-                <p className="mt-6 text-center text-sm text-gray-600">
-                    Don't have an account?{" "}
-                    <Link to="/register" className="text-brand-600 hover:underline">
+                <p className="mt-6 text-center text-sm text-on-surface-muted">
+                    Don&apos;t have an account?{" "}
+                    <Link to="/register" className="font-medium text-brand-700 hover:underline">
                         Create one
                     </Link>
                 </p>
             </div>
-        </div>
+        </AuthLayout>
     )
 }

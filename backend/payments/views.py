@@ -3,7 +3,11 @@
 from __future__ import annotations
 
 import logging
+import uuid as _uuid
 
+from django.conf import settings
+from django.core.mail import send_mail
+from django.utils import timezone
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -11,6 +15,7 @@ from rest_framework.views import APIView
 from .models import PaymentProvider, PaymentStatus, PaymentTransaction
 from .serializers import (
     InitiateCheckoutSerializer,
+    ManualPaymentSubmitSerializer,
     PaymentTransactionSerializer,
 )
 from .services import (
@@ -23,6 +28,55 @@ from .services import (
 )
 
 logger = logging.getLogger(__name__)
+
+# Manual MoMo configuration — change here if it ever moves
+MANUAL_MOMO_NUMBER = "0556025785"
+MANUAL_MOMO_NAME = "ABRAHAM DIVINE DIAME"
+MANUAL_PRICE_GHS = 30
+
+# Where to send payment notifications
+ADMIN_NOTIFICATION_EMAIL = "syntradigitalsolutions88@gmail.com"
+
+
+def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") -> None:
+    """
+    Send an email to the admin when a student submits a manual payment.
+    Never raises — a failed email must NOT fail the API request.
+    """
+    try:
+        admin_url = f"{settings.FRONTEND_ORIGIN.replace(':5173', ':8000')}/admin/payments/paymenttransaction/"
+
+        subject = f"🔔 New payment: GHS {txn.amount_ghs} from {txn.student.full_name}"
+        body = (
+            f"NEW MANUAL PAYMENT SUBMITTED\n"
+            f"{'=' * 50}\n\n"
+            f"Student:       {txn.student.full_name}\n"
+            f"Email:         {txn.student.email}\n"
+            f"Amount:        GHS {txn.amount_ghs}\n"
+            f"MoMo Ref:      {manual_reference}\n"
+            f"System Ref:    {txn.reference}\n"
+            f"Note:          {manual_note or '(none)'}\n\n"
+            f"{'=' * 50}\n\n"
+            f"ACTION REQUIRED:\n"
+            f"1. Check your MoMo app for GHS {txn.amount_ghs} from {txn.student.full_name}\n"
+            f"2. If the payment arrived, approve here:\n"
+            f"   {admin_url}\n\n"
+            f"Only approve AFTER you've confirmed the money landed in your MoMo.\n"
+        )
+
+        send_mail(
+            subject=subject,
+            message=body,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[ADMIN_NOTIFICATION_EMAIL],
+            fail_silently=False,
+        )
+
+        logger.info("Admin notification email sent to %s", ADMIN_NOTIFICATION_EMAIL)
+
+    except Exception as exc:
+        # Log but don't fail the request
+        logger.error("Failed to send admin notification email: %s", exc)
 
 
 class InitiateCheckoutView(APIView):
@@ -193,27 +247,17 @@ class HubtelWebhookView(APIView):
             )
 
         return Response({"detail": "processed"})
-        # ---------------------------------------------------------------------------
-# DEV-ONLY: Simulate a successful Paystack webhook for local testing
-# ---------------------------------------------------------------------------
+
+
 class DevSimulatePaystackPaymentView(APIView):
     """
     POST /api/payments/dev/simulate-paystack/
-
     DEV MODE ONLY. Requires DEBUG=True to be enabled.
-    Simulates the effect of a successful Paystack charge for a given
-    transaction reference — marks the transaction SUCCESS and activates
-    the subscription. Bypasses HMAC (which is fragile to do from a browser).
-
-    Body: {"reference": "NSGH-xxx"}
     """
 
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
-        from django.conf import settings
-        from django.utils import timezone
-
         if not settings.DEBUG:
             return Response(
                 {"detail": "Dev-only endpoint is disabled."},
@@ -242,13 +286,11 @@ class DevSimulatePaystackPaymentView(APIView):
                 status=status.HTTP_200_OK,
             )
 
-        # Same logic the real webhook would perform
         txn.mark_success(provider_reference=reference)
         txn.student.activate_subscription(
             days=txn.duration_days, reference=txn.reference
         )
 
-        # Record a synthetic webhook event for audit
         record_webhook_event(
             provider=PaymentProvider.PAYSTACK,
             event_id=f"dev_sim_{reference}_{int(timezone.now().timestamp())}",
@@ -261,71 +303,140 @@ class DevSimulatePaystackPaymentView(APIView):
         )
 
         return Response({"detail": "processed (dev simulation)"})
-    # ---------------------------------------------------------------------------
-# DEV-ONLY: Simulate a successful Paystack webhook for local testing
+
+
 # ---------------------------------------------------------------------------
-class DevSimulatePaystackPaymentView(APIView):
+# MANUAL MOBILE MONEY FLOW
+# ---------------------------------------------------------------------------
+class ManualPaymentInfoView(APIView):
     """
-    POST /api/payments/dev/simulate-paystack/
+    GET /api/payments/manual/info/
+    Returns the manual MoMo instructions + the current pending transaction.
+    """
 
-    DEV MODE ONLY. Requires DEBUG=True to be enabled.
-    Simulates the effect of a successful Paystack charge for a given
-    transaction reference — marks the transaction SUCCESS and activates
-    the subscription. Bypasses HMAC (which is fragile to do from a browser).
+    permission_classes = (permissions.IsAuthenticated,)
 
-    Body: {"reference": "NSGH-xxx"}
+    def get(self, request, *args, **kwargs):
+        pending = (
+            PaymentTransaction.objects.filter(
+                student=request.user,
+                provider=PaymentProvider.MANUAL,
+                status=PaymentStatus.AWAITING_REVIEW,
+            )
+            .order_by("-initiated_at")
+            .first()
+        )
+
+        pending_data = None
+        if pending:
+            pending_data = {
+                "id": str(pending.id),
+                "reference": pending.reference,
+                "manual_reference": pending.manual_reference,
+                "manual_note": pending.manual_note,
+                "amount_ghs": str(pending.amount_ghs),
+                "submitted_at": pending.initiated_at.isoformat(),
+            }
+
+        return Response({
+            "momo_number": MANUAL_MOMO_NUMBER,
+            "momo_name": MANUAL_MOMO_NAME,
+            "amount_ghs": str(MANUAL_PRICE_GHS),
+            "duration_days": 120,
+            "pending": pending_data,
+        })
+
+
+class ManualPaymentInitiateView(APIView):
+    """
+    POST /api/payments/manual/initiate/
+    Creates a PENDING transaction for the manual flow.
     """
 
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
-        from django.conf import settings
-        from django.utils import timezone
+        existing = PaymentTransaction.objects.filter(
+            student=request.user,
+            provider=PaymentProvider.MANUAL,
+            status__in=[PaymentStatus.PENDING, PaymentStatus.AWAITING_REVIEW],
+        ).first()
 
-        if not settings.DEBUG:
-            return Response(
-                {"detail": "Dev-only endpoint is disabled."},
-                status=status.HTTP_403_FORBIDDEN,
-            )
+        if existing:
+            return Response(PaymentTransactionSerializer(existing).data)
 
-        reference = request.data.get("reference")
-        if not reference:
-            return Response(
-                {"detail": "reference is required."},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
+        ref = f"NSGH-MAN-{_uuid.uuid4().hex[:10].upper()}"
+        txn = PaymentTransaction.objects.create(
+            student=request.user,
+            provider=PaymentProvider.MANUAL,
+            reference=ref,
+            amount_ghs=MANUAL_PRICE_GHS,
+            duration_days=120,
+            status=PaymentStatus.PENDING,
+        )
+        return Response(
+            PaymentTransactionSerializer(txn).data,
+            status=status.HTTP_201_CREATED,
+        )
+
+
+class ManualPaymentSubmitView(APIView):
+    """
+    POST /api/payments/manual/submit/
+    Student submits their MoMo transaction reference after sending the money.
+    Triggers an email notification to the admin.
+    """
+
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request, *args, **kwargs):
+        serializer = ManualPaymentSubmitSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        reference = serializer.validated_data["reference"]
+        manual_reference = serializer.validated_data["manual_reference"]
+        manual_note = serializer.validated_data.get("manual_note", "")
 
         txn = PaymentTransaction.objects.filter(
             reference=reference, student=request.user
         ).first()
         if not txn:
             return Response(
-                {"detail": "Transaction not found for this user."},
+                {"detail": "Transaction not found. Please refresh and try again."},
                 status=status.HTTP_404_NOT_FOUND,
             )
 
         if txn.status == PaymentStatus.SUCCESS:
             return Response(
-                {"detail": "Transaction already marked SUCCESS."},
+                {"detail": "This payment is already approved."},
                 status=status.HTTP_200_OK,
             )
 
-        # Same logic the real webhook would perform
-        txn.mark_success(provider_reference=reference)
-        txn.student.activate_subscription(
-            days=txn.duration_days, reference=txn.reference
+        if txn.status == PaymentStatus.AWAITING_REVIEW:
+            return Response(
+                {"detail": "This payment is already awaiting review."},
+                status=status.HTTP_200_OK,
+            )
+
+        txn.mark_awaiting_review(
+            manual_reference=manual_reference, manual_note=manual_note
         )
 
-        # Record a synthetic webhook event for audit
-        record_webhook_event(
-            provider=PaymentProvider.PAYSTACK,
-            event_id=f"dev_sim_{reference}_{int(timezone.now().timestamp())}",
-            event_type="charge.success",
-            payload={
-                "event": "charge.success",
-                "data": {"reference": reference, "status": "success", "amount": 3000},
-                "_dev_simulated": True,
-            },
-        )
+        # Log to console
+        logger.info("=" * 60)
+        logger.info("🔔 NEW MANUAL PAYMENT SUBMITTED")
+        logger.info("  Student:    %s", request.user.email)
+        logger.info("  Name:       %s", request.user.full_name)
+        logger.info("  Amount:     GHS %s", txn.amount_ghs)
+        logger.info("  MoMo Ref:   %s", manual_reference)
+        logger.info("  System Ref: %s", txn.reference)
+        logger.info("  → Approve at /admin/payments/paymenttransaction/")
+        logger.info("=" * 60)
 
-        return Response({"detail": "processed (dev simulation)"})
+        # Send email notification to admin
+        notify_admin_new_payment(txn, manual_reference, manual_note)
+
+        return Response({
+            "detail": "Payment submitted. We'll verify and activate your subscription within 24 hours.",
+            "transaction": PaymentTransactionSerializer(txn).data,
+        })

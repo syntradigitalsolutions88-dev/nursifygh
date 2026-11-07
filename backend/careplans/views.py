@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 from django.core.exceptions import PermissionDenied
-from django.db.models import Count, Prefetch
-from django.utils import timezone
+from django.db.models import Count, F, Prefetch
 from rest_framework import generics, permissions, status
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -44,15 +44,7 @@ from .services import (
 )
 
 
-# ---------------------------------------------------------------------------
-# NANDA catalog (read-only, for all subscribed students)
-# ---------------------------------------------------------------------------
 class NandaDiagnosisListView(generics.ListAPIView):
-    """
-    GET /api/careplans/nanda/
-    Lists all active NANDA diagnoses. Query params: ?domain=SAFETY_PROTECTION
-    """
-
     serializer_class = NandaDiagnosisSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
     pagination_class = None
@@ -66,23 +58,13 @@ class NandaDiagnosisListView(generics.ListAPIView):
 
 
 class NandaDiagnosisDetailView(generics.RetrieveAPIView):
-    """GET /api/careplans/nanda/<uuid>/"""
-
     serializer_class = NandaDiagnosisSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
     queryset = NandaDiagnosis.objects.filter(is_active=True)
     lookup_field = "id"
 
 
-# ---------------------------------------------------------------------------
-# Care plan templates
-# ---------------------------------------------------------------------------
 class TemplateListView(generics.ListAPIView):
-    """
-    GET /api/careplans/templates/
-    Lists published templates. Query params: ?course=<uuid>&diagnosis=<uuid>
-    """
-
     serializer_class = CarePlanTemplateListSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
@@ -90,7 +72,6 @@ class TemplateListView(generics.ListAPIView):
         qs = CarePlanTemplate.objects.filter(
             is_published=True
         ).select_related("primary_diagnosis", "course").order_by("-created_at")
-
         course = self.request.query_params.get("course")
         diagnosis = self.request.query_params.get("diagnosis")
         if course:
@@ -101,8 +82,6 @@ class TemplateListView(generics.ListAPIView):
 
 
 class TemplateDetailView(generics.RetrieveAPIView):
-    """GET /api/careplans/templates/<uuid>/"""
-
     serializer_class = CarePlanTemplateDetailSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
     queryset = CarePlanTemplate.objects.filter(
@@ -111,15 +90,7 @@ class TemplateDetailView(generics.RetrieveAPIView):
     lookup_field = "id"
 
 
-# ---------------------------------------------------------------------------
-# Care plan CRUD (owner-scoped)
-# ---------------------------------------------------------------------------
 class CarePlanListView(generics.ListAPIView):
-    """
-    GET /api/careplans/plans/
-    Lists the authenticated student's plans.
-    """
-
     serializer_class = CarePlanListSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
@@ -136,8 +107,6 @@ class CarePlanListView(generics.ListAPIView):
 
 
 class CarePlanCreateView(generics.CreateAPIView):
-    """POST /api/careplans/plans/ — create a plan from scratch."""
-
     serializer_class = CarePlanCreateSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
@@ -146,11 +115,6 @@ class CarePlanCreateView(generics.CreateAPIView):
 
 
 class CarePlanDetailView(generics.RetrieveUpdateAPIView):
-    """
-    GET/PATCH /api/careplans/plans/<uuid>/
-    Owner-only. PATCH rejected after the plan is submitted.
-    """
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
     lookup_field = "id"
 
@@ -171,108 +135,64 @@ class CarePlanDetailView(generics.RetrieveUpdateAPIView):
 
 
 class CarePlanForkFromTemplateView(APIView):
-    """POST /api/careplans/plans/fork-from-template/"""
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request, *args, **kwargs):
         serializer = ForkFromTemplateSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-
         try:
             template = CarePlanTemplate.objects.get(
-                pk=serializer.validated_data["template_id"],
-                is_published=True,
+                pk=serializer.validated_data["template_id"], is_published=True,
             )
         except CarePlanTemplate.DoesNotExist:
-            return Response(
-                {"detail": "Template not found or unpublished."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-
+            return Response({"detail": "Template not found or unpublished."}, status=404)
         try:
             plan = fork_from_template(
-                student=request.user,
-                template=template,
+                student=request.user, template=template,
                 title=serializer.validated_data.get("title") or None,
             )
         except CarePlanForkError as exc:
-            return Response({"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST)
-
-        return Response(
-            CarePlanDetailSerializer(plan).data,
-            status=status.HTTP_201_CREATED,
-        )
+            return Response({"detail": str(exc)}, status=400)
+        return Response(CarePlanDetailSerializer(plan).data, status=201)
 
 
 class CarePlanForkFromPlanView(APIView):
-    """POST /api/careplans/plans/fork-from-plan/"""
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request, *args, **kwargs):
         serializer = ForkFromPlanSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-
         try:
             source = CarePlan.objects.get(
-                pk=serializer.validated_data["source_plan_id"],
-                is_public=True,
+                pk=serializer.validated_data["source_plan_id"], is_public=True,
             )
         except CarePlan.DoesNotExist:
-            return Response(
-                {"detail": "Source plan not found or not public."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-
+            return Response({"detail": "Source plan not found or not public."}, status=404)
         try:
             plan = fork_from_plan(
-                student=request.user,
-                source=source,
+                student=request.user, source=source,
                 title=serializer.validated_data.get("title") or None,
             )
         except CarePlanForkError as exc:
-            return Response({"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST)
-
-        return Response(
-            CarePlanDetailSerializer(plan).data,
-            status=status.HTTP_201_CREATED,
-        )
+            return Response({"detail": str(exc)}, status=400)
+        return Response(CarePlanDetailSerializer(plan).data, status=201)
 
 
 class CarePlanSubmitView(APIView):
-    """POST /api/careplans/plans/<uuid>/submit/ — lock the plan for grading."""
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request, pk, *args, **kwargs):
         try:
             plan = CarePlan.objects.get(pk=pk, student=request.user)
         except CarePlan.DoesNotExist:
-            return Response(
-                {"detail": "Plan not found."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-
+            return Response({"detail": "Plan not found."}, status=404)
         if plan.is_submitted:
-            return Response(
-                {"detail": "This plan has already been submitted."},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-
+            return Response({"detail": "This plan has already been submitted."}, status=400)
         plan.mark_submitted()
-        return Response(
-            CarePlanDetailSerializer(plan).data,
-            status=status.HTTP_200_OK,
-        )
+        return Response(CarePlanDetailSerializer(plan).data, status=200)
 
 
-# ---------------------------------------------------------------------------
-# Goals and interventions (nested CRUD on an owned plan)
-# ---------------------------------------------------------------------------
 class _PlanOwnedObjectMixin:
-    """Mixin: fetch the plan by UUID, scoped to the current user."""
-
     def get_plan(self, request, plan_id) -> CarePlan:
         try:
             return CarePlan.objects.get(pk=plan_id, student=request.user)
@@ -281,10 +201,6 @@ class _PlanOwnedObjectMixin:
 
 
 class SmartGoalListCreateView(_PlanOwnedObjectMixin, APIView):
-    """
-    GET/POST /api/careplans/plans/<plan_id>/goals/
-    """
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def get(self, request, plan_id, *args, **kwargs):
@@ -295,26 +211,17 @@ class SmartGoalListCreateView(_PlanOwnedObjectMixin, APIView):
     def post(self, request, plan_id, *args, **kwargs):
         plan = self.get_plan(request, plan_id)
         if plan.is_submitted:
-            return Response(
-                {"detail": "Cannot add goals to a submitted plan."},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-
+            return Response({"detail": "Cannot add goals to a submitted plan."}, status=400)
         next_pos = plan.goals.count()
         data = request.data.copy()
         data["position"] = next_pos
-
         serializer = SmartGoalSerializer(data=data)
         serializer.is_valid(raise_exception=True)
         goal = serializer.save(care_plan=plan)
-        return Response(SmartGoalSerializer(goal).data, status=status.HTTP_201_CREATED)
+        return Response(SmartGoalSerializer(goal).data, status=201)
 
 
 class InterventionListCreateView(_PlanOwnedObjectMixin, APIView):
-    """
-    GET/POST /api/careplans/plans/<plan_id>/interventions/
-    """
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def get(self, request, plan_id, *args, **kwargs):
@@ -325,67 +232,38 @@ class InterventionListCreateView(_PlanOwnedObjectMixin, APIView):
     def post(self, request, plan_id, *args, **kwargs):
         plan = self.get_plan(request, plan_id)
         if plan.is_submitted:
-            return Response(
-                {"detail": "Cannot add interventions to a submitted plan."},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-
+            return Response({"detail": "Cannot add interventions to a submitted plan."}, status=400)
         next_pos = plan.interventions.count()
         data = request.data.copy()
         data["position"] = next_pos
-
         serializer = InterventionSerializer(data=data)
         serializer.is_valid(raise_exception=True)
         intervention = serializer.save(care_plan=plan)
-        return Response(
-            InterventionSerializer(intervention).data,
-            status=status.HTTP_201_CREATED,
-        )
+        return Response(InterventionSerializer(intervention).data, status=201)
 
 
-# ---------------------------------------------------------------------------
-# Share links
-# ---------------------------------------------------------------------------
 class CarePlanShareLinkCreateView(APIView):
-    """POST /api/careplans/plans/<plan_id>/share/"""
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request, plan_id, *args, **kwargs):
         serializer = CreateShareLinkSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-
         try:
             plan = CarePlan.objects.get(pk=plan_id, student=request.user)
         except CarePlan.DoesNotExist:
-            return Response(
-                {"detail": "Plan not found."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-
+            return Response({"detail": "Plan not found."}, status=404)
         try:
             link = create_share_link(
-                plan=plan,
-                requesting_user=request.user,
+                plan=plan, requesting_user=request.user,
                 days_valid=serializer.validated_data["days_valid"],
             )
         except PermissionDenied as exc:
-            return Response({"detail": str(exc)}, status=status.HTTP_403_FORBIDDEN)
-
-        return Response(
-            CarePlanShareLinkSerializer(link).data,
-            status=status.HTTP_201_CREATED,
-        )
+            return Response({"detail": str(exc)}, status=403)
+        return Response(CarePlanShareLinkSerializer(link).data, status=201)
 
 
 class SharedCarePlanView(APIView):
-    """
-    GET /api/careplans/shared/<token>/
-    PUBLIC — no authentication required. Returns the plan if the token
-    is valid (not revoked, not expired).
-    """
-
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (AllowAny,)
     authentication_classes = ()
 
     def get(self, request, token, *args, **kwargs):
@@ -394,30 +272,13 @@ class SharedCarePlanView(APIView):
                 "care_plan__primary_diagnosis", "care_plan__student"
             ).get(token=token)
         except CarePlanShareLink.DoesNotExist:
-            return Response(
-                {"detail": "Invalid share link."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-
+            return Response({"detail": "Invalid share link."}, status=404)
         if not link.is_valid():
-            return Response(
-                {"detail": "This share link has expired or been revoked."},
-                status=status.HTTP_410_GONE,
-            )
-
-        plan = link.care_plan
-        return Response(CarePlanPublicSerializer(plan).data)
+            return Response({"detail": "This share link has expired or been revoked."}, status=410)
+        return Response(CarePlanPublicSerializer(link.care_plan).data)
 
 
-# ---------------------------------------------------------------------------
-# Public library + ratings
-# ---------------------------------------------------------------------------
 class PublicCarePlanListView(generics.ListAPIView):
-    """
-    GET /api/careplans/public/
-    Lists public care plans (community library).
-    """
-
     serializer_class = CarePlanPublicSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
@@ -434,42 +295,56 @@ class PublicCarePlanListView(generics.ListAPIView):
         )
 
 
-class CarePlanRateView(APIView):
+class PublicCarePlanDetailView(APIView):
     """
-    POST /api/careplans/plans/<plan_id>/ratings/
-    Create or update the current user's rating of a public plan.
+    GET /api/careplans/public/<uuid>/
+    PUBLIC — no auth required. Returns a single public care plan
+    and increments the view count.
     """
+    permission_classes = (AllowAny,)
+    authentication_classes = ()
 
+    def get(self, request, plan_id, *args, **kwargs):
+        plan = (
+            CarePlan.objects.filter(id=plan_id, is_public=True)
+            .select_related("primary_diagnosis", "student")
+            .prefetch_related(
+                Prefetch("goals", queryset=SmartGoal.objects.order_by("position")),
+                Prefetch("interventions", queryset=Intervention.objects.order_by("position")),
+                "ratings",
+            )
+            .first()
+        )
+        if not plan:
+            return Response({"detail": "Not found."}, status=404)
+
+        # Increment view count (fire-and-forget)
+        CarePlan.objects.filter(id=plan.id).update(view_count=F("view_count") + 1)
+        plan.refresh_from_db(fields=["view_count"])
+
+        return Response(CarePlanPublicSerializer(plan).data)
+
+
+class CarePlanRateView(APIView):
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request, plan_id, *args, **kwargs):
         try:
             plan = CarePlan.objects.get(pk=plan_id, is_public=True)
         except CarePlan.DoesNotExist:
-            return Response(
-                {"detail": "Public plan not found."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-
+            return Response({"detail": "Public plan not found."}, status=404)
         if plan.student_id == request.user.id:
-            return Response(
-                {"detail": "You cannot rate your own plan."},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-
+            return Response({"detail": "You cannot rate your own plan."}, status=400)
         serializer = CarePlanRatingSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-
         rating, created = CarePlanRating.objects.update_or_create(
-            care_plan=plan,
-            rater=request.user,
+            care_plan=plan, rater=request.user,
             defaults={
                 "score": serializer.validated_data["score"],
                 "comment": serializer.validated_data.get("comment", ""),
             },
         )
-
         return Response(
             CarePlanRatingSerializer(rating).data,
-            status=status.HTTP_201_CREATED if created else status.HTTP_200_OK,
+            status=201 if created else 200,
         )

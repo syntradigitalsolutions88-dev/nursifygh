@@ -6,6 +6,9 @@ from .views import (
     DevSimulatePaystackPaymentView,
     HubtelWebhookView,
     InitiateCheckoutView,
+    ManualPaymentInfoView,
+    ManualPaymentInitiateView,
+    ManualPaymentSubmitView,
     PaystackWebhookView,
     TransactionDetailView,
     TransactionListView,
@@ -28,4 +31,8 @@ urlpatterns = [
         DevSimulatePaystackPaymentView.as_view(),
         name="dev-simulate-paystack",
     ),
+    # Manual MoMo flow
+    path("manual/info/", ManualPaymentInfoView.as_view(), name="manual-info"),
+    path("manual/initiate/", ManualPaymentInitiateView.as_view(), name="manual-initiate"),
+    path("manual/submit/", ManualPaymentSubmitView.as_view(), name="manual-submit"),
 ]

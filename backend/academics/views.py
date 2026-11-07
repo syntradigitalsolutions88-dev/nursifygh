@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from django.db.models import Count, Prefetch
+from django.db.models import Count, Prefetch, Q
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -21,7 +21,7 @@ from .services import QuizGradingError, grade_and_persist_attempt
 class CourseListView(generics.ListAPIView):
     """
     GET /api/academics/courses/
-    Lists published courses for the authenticated student's level.
+    Lists published courses for the authenticated student's level and program.
     Optional query params: ?category=FUNDAMENTALS&semester=S1
     """
 
@@ -30,12 +30,17 @@ class CourseListView(generics.ListAPIView):
     pagination_class = None
 
     def get_queryset(self):
+        user = self.request.user
         qs = (
             Course.objects.filter(
-                is_published=True, level=self.request.user.level
+                is_published=True, level=user.level
+            )
+            .filter(
+                # Program-specific OR general-purpose courses
+                Q(program=user.program) | Q(program="GENERAL")
             )
             .annotate(_question_count=Count("questions", distinct=True))
-            .order_by("semester", "code")
+            .order_by("program", "semester", "code")
         )
         category = self.request.query_params.get("category")
         semester = self.request.query_params.get("semester")
@@ -57,10 +62,12 @@ class CourseDetailView(generics.RetrieveAPIView):
     lookup_field = "id"
 
     def get_queryset(self):
+        user = self.request.user
         return (
             Course.objects.filter(
-                is_published=True, level=self.request.user.level
+                is_published=True, level=user.level
             )
+            .filter(Q(program=user.program) | Q(program="GENERAL"))
             .prefetch_related(
                 Prefetch(
                     "questions",

@@ -3,6 +3,7 @@
  */
 
 export type StudentLevel = 100 | 200 | 300
+export type NursingProgram = "GENERAL" | "MIDWIFERY" | "PSYCHIATRIC" | "COMMUNITY"
 
 export interface User {
     id: string
@@ -11,6 +12,8 @@ export interface User {
     phone_number: string
     level: StudentLevel
     level_display: string
+    program: NursingProgram
+    program_display: string
     institution: string
     is_subscribed: boolean
     subscription_expires_at: string | null
@@ -33,6 +36,7 @@ export interface RegisterRequest {
     full_name: string
     phone_number: string
     level: StudentLevel
+    program: NursingProgram
     institution: string
     password: string
     password_confirm: string
@@ -53,6 +57,8 @@ export interface Course {
     category_display: string
     level: StudentLevel
     level_display: string
+    program: NursingProgram
+    program_display: string
     semester: string
     semester_display: string
     question_count: number
@@ -79,6 +85,8 @@ export interface CourseDetail {
     category_display: string
     level: StudentLevel
     level_display: string
+    program: NursingProgram
+    program_display: string
     semester: string
     semester_display: string
     questions: Question[]
@@ -128,7 +136,7 @@ export interface QuizAttemptResult {
 }
 
 // ---------------------------------------------------------------------------
-// Care plans — NANDA, templates, plans, goals, interventions
+// Care plans
 // ---------------------------------------------------------------------------
 export interface NandaDiagnosis {
     id: string
@@ -205,6 +213,7 @@ export interface CreateCarePlanRequest {
     primary_diagnosis: string
     is_public: boolean
 }
+
 export interface CreateSmartGoalRequest {
     specific: string
     measurable: string
@@ -217,6 +226,7 @@ export interface CreateInterventionRequest {
     action: string
     rationale: string
 }
+
 export interface CarePlanShareLink {
     id: string
     token: string
@@ -230,9 +240,13 @@ export interface PublicCarePlan {
     title: string
     patient_scenario: string
     student_name: string
+    student_level_display?: string
+    student_program_display?: string
+    student_institution?: string
     primary_diagnosis: NandaDiagnosis
     goals: SmartGoal[]
     interventions: Intervention[]
+    view_count: number
     average_rating: number | null
     rating_count: number
     created_at: string
@@ -252,6 +266,7 @@ export interface CarePlanRating {
     created_at: string
     updated_at: string
 }
+
 // ---------------------------------------------------------------------------
 // Payments
 // ---------------------------------------------------------------------------

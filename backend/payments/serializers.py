@@ -50,3 +50,20 @@ class InitiateCheckoutSerializer(serializers.Serializer):
     reference = serializers.CharField(
         max_length=100, required=False, allow_blank=True,
     )
+    # ---------------------------------------------------------------------------
+# Manual payment flow
+# ---------------------------------------------------------------------------
+class ManualPaymentSubmitSerializer(serializers.Serializer):
+    """
+    POST body for submitting a manual MoMo payment.
+    Body: {"reference": "NSGH-xxx", "manual_reference": "MP2401A12345", "manual_note": "Optional"}
+    """
+
+    reference = serializers.CharField(max_length=100)
+    manual_reference = serializers.CharField(
+        max_length=100,
+        help_text="The transaction ID from your MoMo SMS.",
+    )
+    manual_note = serializers.CharField(
+        required=False, allow_blank=True, max_length=500
+    )

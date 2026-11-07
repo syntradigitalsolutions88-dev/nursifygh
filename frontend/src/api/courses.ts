@@ -44,3 +44,10 @@ export async function getQuizAttempt(id: string): Promise<QuizAttemptResult> {
     }
     return found
 }
+// Extracts questions from a course detail response.
+// The backend includes questions in the course detail payload.
+export async function getQuizQuestions(courseId: string): Promise<any[]> {
+    const course = await getCourse(courseId)
+    // Try common field names — the backend should return `questions` on the course
+    return (course as any).questions ?? []
+}

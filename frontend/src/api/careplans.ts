@@ -138,6 +138,10 @@ export async function listPublicPlans(): Promise<PublicCarePlan[]> {
     }>("/careplans/public/")
     return data.results
 }
+export async function getPublicPlan(id: string): Promise<PublicCarePlan> {
+    const { data } = await api.get<PublicCarePlan>(`/careplans/public/${id}/`)
+    return data
+}
 
 // ---------------------------------------------------------------------------
 // Ratings
