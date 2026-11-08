@@ -14,8 +14,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
     DJANGO_DEBUG=(bool, False),
-    DJANGO_ALLOWED_HOSTS=(list, ["127.0.0.1", "localhost"]),
-    DJANGO_CSRF_TRUSTED_ORIGINS=(list, []),
+    DJANGO_ALLOWED_HOSTS=(list, ["127.0.0.1", "localhost", "nursifygh-api.onrender.com"]),
+    DJANGO_CSRF_TRUSTED_ORIGINS=(list, [
+        "http://127.0.0.1:5173",
+        "http://localhost:5173",
+        "https://nursifygh.vercel.app",
+    ]),
     DATABASE_URL=(str, f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
     JWT_ACCESS_LIFETIME_MINUTES=(int, 60),
     JWT_REFRESH_LIFETIME_DAYS=(int, 14),
@@ -32,7 +36,7 @@ env = environ.Env(
     EMAIL_HOST_PASSWORD=(str, ""),
     DEFAULT_FROM_EMAIL=(str, "NursifyGH <noreply@nursifygh.com>"),
     GEMINI_API_KEY=(str, ""),
-    GROQ_API_KEY=(str, ""), # <--- ADDED THIS
+    GROQ_API_KEY=(str, ""),
 )
 
 # Load .env ONLY in development (local machine).
@@ -178,11 +182,13 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:5184",
     "http://127.0.0.1:5184",
+    "https://nursifygh.vercel.app",
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
     r"^http://127\.0\.0\.1:\d+$",
+    r"^https://.*\.vercel\.app$",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
