@@ -3,6 +3,8 @@ import ReactMarkdown from "react-markdown"
 
 import { useAuth } from "../../contexts/AuthContext"
 
+const API_BASE = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000/api"
+
 interface Message {
     role: "user" | "ai"
     text: string
@@ -43,7 +45,7 @@ export default function ChatWidget() {
         setIsLoading(true)
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/api/accounts/ai-chat/", {
+            const response = await fetch(`${API_BASE}/accounts/ai-chat/`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -68,7 +70,6 @@ export default function ChatWidget() {
 
     return (
         <>
-            {/* Floating Button */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="fixed bottom-20 right-4 lg:bottom-6 lg:right-6 z-50 h-14 w-14 rounded-full bg-brand-700 text-white shadow-lg hover:bg-brand-800 flex items-center justify-center transition-transform hover:scale-105"
@@ -85,13 +86,11 @@ export default function ChatWidget() {
                 )}
             </button>
 
-            {/* Chat Window */}
             {isOpen && (
                 <div
                     className="fixed bottom-36 right-4 lg:bottom-24 lg:right-6 z-50 w-[calc(100vw-2rem)] max-w-sm rounded-2xl border border-border bg-white shadow-2xl flex flex-col overflow-hidden"
                     style={{ height: "min(520px, calc(100vh - 10rem))" }}
                 >
-                    {/* Header — clean, no emoji, professional */}
                     <div className="shrink-0 bg-brand-700 px-4 py-3 text-white flex items-center gap-3 z-10">
                         <div className="h-9 w-9 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold tracking-wide">
                             AI
@@ -105,7 +104,6 @@ export default function ChatWidget() {
                         </div>
                     </div>
 
-                    {/* Messages — only this scrolls */}
                     <div className="flex-1 min-h-0 p-4 overflow-y-auto bg-surface-subtle space-y-4">
                         {messages.map((msg, i) => (
                             <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
@@ -135,7 +133,6 @@ export default function ChatWidget() {
                         <div ref={messagesEndRef} />
                     </div>
 
-                    {/* Input */}
                     <form onSubmit={handleSend} className="shrink-0 border-t border-border p-3 bg-white flex gap-2">
                         <input
                             type="text"
