@@ -36,8 +36,7 @@ env = environ.Env(
 )
 
 # Load .env ONLY in development (local machine).
-# In production (Render, etc.), env vars are set directly in the dashboard
-# and must NOT be overridden by a local .env file.
+# On Render, RENDER=true is set automatically → this block is skipped.
 import os as _os
 if _os.environ.get("RENDER") is None:
     ENV_FILE = BASE_DIR / ".env"
