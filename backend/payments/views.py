@@ -365,4 +365,4 @@ class ManualPaymentSubmitView(APIView):
         return Response({
             "detail": "Payment submitted. We'll verify and activate your subscription within 24 hours.",
             "transaction": PaymentTransactionSerializer(txn).data,
-        })
+        })# Cache bust 1794132941
