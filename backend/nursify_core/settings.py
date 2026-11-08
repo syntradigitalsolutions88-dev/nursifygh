@@ -35,10 +35,14 @@ env = environ.Env(
     GROQ_API_KEY=(str, ""), # <--- ADDED THIS
 )
 
-# Load .env if it exists
-ENV_FILE = BASE_DIR / ".env"
-if ENV_FILE.exists():
-    env.read_env(str(ENV_FILE))
+# Load .env ONLY in development (local machine).
+# In production (Render, etc.), env vars are set directly in the dashboard
+# and must NOT be overridden by a local .env file.
+import os as _os
+if _os.environ.get("RENDER") is None:
+    ENV_FILE = BASE_DIR / ".env"
+    if ENV_FILE.exists():
+        env.read_env(str(ENV_FILE))
 
 # ---------------------------------------------------------------------------
 # Core
