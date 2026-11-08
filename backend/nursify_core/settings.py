@@ -48,8 +48,8 @@ if os.environ.get("RENDER") is None:
 # Core
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env("DJANGO_DEBUG")
-ALLOWED_HOSTS = env("DJANGO_ALLOWED_HOSTS")
-CSRF_TRUSTED_ORIGINS = env("DJANGO_CSRF_TRUSTED_ORIGINS")
+ALLOWED_HOSTS = ["nursifygh-api.onrender.com", "127.0.0.1", "localhost"]
+CSRF_TRUSTED_ORIGINS = ["https://nursifygh.vercel.app", "http://127.0.0.1:5173", "http://localhost:5173"]
 
 # Applications
 DJANGO_APPS = [
