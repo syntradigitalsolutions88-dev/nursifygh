@@ -112,9 +112,9 @@ class QuizSubmissionSerializer(serializers.Serializer):
             course = Course.objects.get(pk=value, is_published=True)
         except Course.DoesNotExist:
             raise serializers.ValidationError("Course not found or unpublished.")
-        if course.level != request.user.level:
+        if course.level != request.user.level or course.program != request.user.program:
             raise serializers.ValidationError(
-                "This course is not available for your academic level."
+                "This course is not available for your level and program."
             )
         return course
 

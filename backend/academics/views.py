@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from django.db.models import Count, Prefetch, Q
+from django.db.models import Count, Prefetch
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -33,14 +33,12 @@ class CourseListView(generics.ListAPIView):
         user = self.request.user
         qs = (
             Course.objects.filter(
-                is_published=True, level=user.level
-            )
-            .filter(
-                # Program-specific OR general-purpose courses
-                Q(program=user.program) | Q(program="GENERAL")
+                is_published=True,
+                level=user.level,
+                program=user.program,
             )
             .annotate(_question_count=Count("questions", distinct=True))
-            .order_by("program", "semester", "code")
+            .order_by("semester", "code")
         )
         category = self.request.query_params.get("category")
         semester = self.request.query_params.get("semester")
@@ -65,9 +63,10 @@ class CourseDetailView(generics.RetrieveAPIView):
         user = self.request.user
         return (
             Course.objects.filter(
-                is_published=True, level=user.level
+                is_published=True,
+                level=user.level,
+                program=user.program,
             )
-            .filter(Q(program=user.program) | Q(program="GENERAL"))
             .prefetch_related(
                 Prefetch(
                     "questions",
