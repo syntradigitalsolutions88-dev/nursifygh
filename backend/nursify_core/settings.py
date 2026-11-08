@@ -252,27 +252,3 @@ LOGGING = {
     "handlers": {"console": {"class": "logging.StreamHandler", "formatter": "verbose"}},
     "root": {"handlers": ["console"], "level": "INFO"},
 }
-# ---------------------------------------------------------------------------
-# TEMPORARY: Create admin user on production deploy
-# ---------------------------------------------------------------------------
-if os.environ.get("RENDER") is not None:
-    try:
-        from django.db.models.signals import post_migrate
-        from django.dispatch import receiver
-        from django.contrib.auth import get_user_model
-        from django.apps import apps
-
-        @receiver(post_migrate)
-        def create_admin_user(sender, **kwargs):
-            if sender.name != "accounts":
-                return
-            User = get_user_model()
-            if not User.objects.filter(email="syntradigitalsolutions88@gmail.com").exists():
-                User.objects.create_superuser(
-                    email="syntradigitalsolutions88@gmail.com",
-                    password="AdminPass2026!",
-                    full_name="Syntra Admin",
-                )
-                print("✅ Admin user created on production")
-    except Exception as e:
-        print(f"Admin creation setup error: {e}")
