@@ -8,7 +8,7 @@ from django import forms
 
 from .models import User
 
-# 1. Create a custom login form that forces Email instead of Username
+# 1. Force Django Admin to use Email instead of Username for the login page
 class EmailAuthenticationForm(AdminAuthenticationForm):
     username = forms.EmailField(
         label="Email address",
@@ -18,8 +18,8 @@ class EmailAuthenticationForm(AdminAuthenticationForm):
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
     """Custom admin surfaced around email login and subscription state."""
-
-    # 2. Tell the admin to use our custom form
+    
+    # 2. Tell the Admin to use our custom form
     login_form = EmailAuthenticationForm
 
     ordering = ("-date_joined",)
