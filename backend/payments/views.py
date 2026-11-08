@@ -60,7 +60,7 @@ def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") 
             f"ACTION REQUIRED:\n"
             f"1. Check your MoMo app for GHS {txn.amount_ghs} from {txn.student.full_name}\n"
             f"2. If the payment arrived, approve here:\n"
-            f"   {admin_url}\n\n"
+            f"   https://nursifygh-api.onrender.com/admin/payments/paymenttransaction/\n\n"
             f"Only approve AFTER you've confirmed the money landed in your MoMo.\n"
         )
 
@@ -75,17 +75,10 @@ def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") 
         logger.info("Admin notification email sent to %s", ADMIN_NOTIFICATION_EMAIL)
 
     except Exception as exc:
-        # Log but don't fail the request
         logger.error("Failed to send admin notification email: %s", exc)
 
 
 class InitiateCheckoutView(APIView):
-    """
-    POST /api/payments/checkout/
-    Initiate a mobile-money checkout. Requires authentication but NOT an
-    active subscription (unsubscribed students must be able to pay).
-    """
-
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
@@ -116,11 +109,6 @@ class InitiateCheckoutView(APIView):
 
 
 class TransactionListView(generics.ListAPIView):
-    """
-    GET /api/payments/transactions/
-    Lists the authenticated student's payment history.
-    """
-
     serializer_class = PaymentTransactionSerializer
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -131,8 +119,6 @@ class TransactionListView(generics.ListAPIView):
 
 
 class TransactionDetailView(generics.RetrieveAPIView):
-    """GET /api/payments/transactions/<uuid>/"""
-
     serializer_class = PaymentTransactionSerializer
     permission_classes = (permissions.IsAuthenticated,)
     lookup_field = "id"
@@ -142,11 +128,6 @@ class TransactionDetailView(generics.RetrieveAPIView):
 
 
 class PaystackWebhookView(APIView):
-    """
-    POST /api/payments/webhooks/paystack/
-    Unauthenticated. Signature verified via x-paystack-signature header.
-    """
-
     permission_classes = (permissions.AllowAny,)
     authentication_classes = ()
 
@@ -156,10 +137,7 @@ class PaystackWebhookView(APIView):
 
         if not verify_paystack_signature(raw_body, signature):
             logger.warning("Paystack webhook rejected: bad signature.")
-            return Response(
-                {"detail": "Invalid signature."},
-                status=status.HTTP_401_UNAUTHORIZED,
-            )
+            return Response({"detail": "Invalid signature."}, status=401)
 
         payload = request.data
         event_id = (
@@ -187,20 +165,12 @@ class PaystackWebhookView(APIView):
             logger.exception("Paystack webhook processing failed: %s", exc)
             event.processing_error = str(exc)
             event.save(update_fields=["processing_error"])
-            return Response(
-                {"detail": "processing_error"},
-                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            )
+            return Response({"detail": "processing_error"}, status=500)
 
         return Response({"detail": "processed"})
 
 
 class HubtelWebhookView(APIView):
-    """
-    POST /api/payments/webhooks/hubtel/
-    Unauthenticated. Signature verified via x-hubtel-signature header.
-    """
-
     permission_classes = (permissions.AllowAny,)
     authentication_classes = ()
 
@@ -210,10 +180,7 @@ class HubtelWebhookView(APIView):
 
         if not verify_hubtel_signature(raw_body, signature):
             logger.warning("Hubtel webhook rejected: bad signature.")
-            return Response(
-                {"detail": "Invalid signature."},
-                status=status.HTTP_401_UNAUTHORIZED,
-            )
+            return Response({"detail": "Invalid signature."}, status=401)
 
         payload = request.data
         data = payload.get("Data", {}) or {}
@@ -241,50 +208,30 @@ class HubtelWebhookView(APIView):
             logger.exception("Hubtel webhook processing failed: %s", exc)
             event.processing_error = str(exc)
             event.save(update_fields=["processing_error"])
-            return Response(
-                {"detail": "processing_error"},
-                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            )
+            return Response({"detail": "processing_error"}, status=500)
 
         return Response({"detail": "processed"})
 
 
 class DevSimulatePaystackPaymentView(APIView):
-    """
-    POST /api/payments/dev/simulate-paystack/
-    DEV MODE ONLY. Requires DEBUG=True to be enabled.
-    """
-
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
         if not settings.DEBUG:
-            return Response(
-                {"detail": "Dev-only endpoint is disabled."},
-                status=status.HTTP_403_FORBIDDEN,
-            )
+            return Response({"detail": "Dev-only endpoint is disabled."}, status=403)
 
         reference = request.data.get("reference")
         if not reference:
-            return Response(
-                {"detail": "reference is required."},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
+            return Response({"detail": "reference is required."}, status=400)
 
         txn = PaymentTransaction.objects.filter(
             reference=reference, student=request.user
         ).first()
         if not txn:
-            return Response(
-                {"detail": "Transaction not found for this user."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
+            return Response({"detail": "Transaction not found."}, status=404)
 
         if txn.status == PaymentStatus.SUCCESS:
-            return Response(
-                {"detail": "Transaction already marked SUCCESS."},
-                status=status.HTTP_200_OK,
-            )
+            return Response({"detail": "Already marked SUCCESS."}, status=200)
 
         txn.mark_success(provider_reference=reference)
         txn.student.activate_subscription(
@@ -295,11 +242,7 @@ class DevSimulatePaystackPaymentView(APIView):
             provider=PaymentProvider.PAYSTACK,
             event_id=f"dev_sim_{reference}_{int(timezone.now().timestamp())}",
             event_type="charge.success",
-            payload={
-                "event": "charge.success",
-                "data": {"reference": reference, "status": "success", "amount": 3000},
-                "_dev_simulated": True,
-            },
+            payload={"_dev_simulated": True},
         )
 
         return Response({"detail": "processed (dev simulation)"})
@@ -309,11 +252,6 @@ class DevSimulatePaystackPaymentView(APIView):
 # MANUAL MOBILE MONEY FLOW
 # ---------------------------------------------------------------------------
 class ManualPaymentInfoView(APIView):
-    """
-    GET /api/payments/manual/info/
-    Returns the manual MoMo instructions + the current pending transaction.
-    """
-
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request, *args, **kwargs):
@@ -348,11 +286,6 @@ class ManualPaymentInfoView(APIView):
 
 
 class ManualPaymentInitiateView(APIView):
-    """
-    POST /api/payments/manual/initiate/
-    Creates a PENDING transaction for the manual flow.
-    """
-
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
@@ -381,12 +314,6 @@ class ManualPaymentInitiateView(APIView):
 
 
 class ManualPaymentSubmitView(APIView):
-    """
-    POST /api/payments/manual/submit/
-    Student submits their MoMo transaction reference after sending the money.
-    Triggers an email notification to the admin.
-    """
-
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
@@ -402,7 +329,7 @@ class ManualPaymentSubmitView(APIView):
         ).first()
         if not txn:
             return Response(
-                {"detail": "Transaction not found. Please refresh and try again."},
+                {"detail": "Transaction not found."},
                 status=status.HTTP_404_NOT_FOUND,
             )
 
@@ -430,7 +357,6 @@ class ManualPaymentSubmitView(APIView):
         logger.info("  Amount:     GHS %s", txn.amount_ghs)
         logger.info("  MoMo Ref:   %s", manual_reference)
         logger.info("  System Ref: %s", txn.reference)
-        logger.info("  → Approve at /admin/payments/paymenttransaction/")
         logger.info("=" * 60)
 
         # Send email notification to admin
