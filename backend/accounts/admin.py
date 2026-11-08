@@ -2,14 +2,25 @@
 
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.contrib.admin.forms import AdminAuthenticationForm
 from django.utils.translation import gettext_lazy as _
+from django import forms
 
 from .models import User
 
+# 1. Create a custom login form that forces Email instead of Username
+class EmailAuthenticationForm(AdminAuthenticationForm):
+    username = forms.EmailField(
+        label="Email address",
+        widget=forms.EmailInput(attrs={"autofocus": True}),
+    )
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
     """Custom admin surfaced around email login and subscription state."""
+
+    # 2. Tell the admin to use our custom form
+    login_form = EmailAuthenticationForm
 
     ordering = ("-date_joined",)
     list_display = (
