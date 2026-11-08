@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import threading
 import uuid as _uuid
 
 from django.conf import settings
@@ -29,23 +30,33 @@ from .services import (
 
 logger = logging.getLogger(__name__)
 
-# Manual MoMo configuration — change here if it ever moves
 MANUAL_MOMO_NUMBER = "0556025785"
 MANUAL_MOMO_NAME = "ABRAHAM DIVINE DIAME"
 MANUAL_PRICE_GHS = 30
-
-# Where to send payment notifications
 ADMIN_NOTIFICATION_EMAIL = "syntradigitalsolutions88@gmail.com"
+
+
+def _send_email_in_background(subject: str, body: str, recipient: str) -> None:
+    """Helper that runs in a background thread — avoids blocking / OOM."""
+    try:
+        send_mail(
+            subject=subject,
+            message=body,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[recipient],
+            fail_silently=False,
+        )
+        logger.info("Admin notification email sent to %s", recipient)
+    except Exception as exc:
+        logger.error("Failed to send admin notification email: %s", exc)
 
 
 def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") -> None:
     """
-    Send an email to the admin when a student submits a manual payment.
+    Queue an email to the admin in a background thread.
     Never raises — a failed email must NOT fail the API request.
     """
     try:
-        admin_url = f"{settings.FRONTEND_ORIGIN.replace(':5173', ':8000')}/admin/payments/paymenttransaction/"
-
         subject = f"🔔 New payment: GHS {txn.amount_ghs} from {txn.student.full_name}"
         body = (
             f"NEW MANUAL PAYMENT SUBMITTED\n"
@@ -64,18 +75,14 @@ def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") 
             f"Only approve AFTER you've confirmed the money landed in your MoMo.\n"
         )
 
-        send_mail(
-            subject=subject,
-            message=body,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[ADMIN_NOTIFICATION_EMAIL],
-            fail_silently=False,
-        )
-
-        logger.info("Admin notification email sent to %s", ADMIN_NOTIFICATION_EMAIL)
-
+        # Fire-and-forget: email sends on a background thread
+        threading.Thread(
+            target=_send_email_in_background,
+            args=(subject, body, ADMIN_NOTIFICATION_EMAIL),
+            daemon=True,
+        ).start()
     except Exception as exc:
-        logger.error("Failed to send admin notification email: %s", exc)
+        logger.error("Failed to queue admin notification email: %s", exc)
 
 
 class InitiateCheckoutView(APIView):
@@ -248,9 +255,6 @@ class DevSimulatePaystackPaymentView(APIView):
         return Response({"detail": "processed (dev simulation)"})
 
 
-# ---------------------------------------------------------------------------
-# MANUAL MOBILE MONEY FLOW
-# ---------------------------------------------------------------------------
 class ManualPaymentInfoView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -349,7 +353,6 @@ class ManualPaymentSubmitView(APIView):
             manual_reference=manual_reference, manual_note=manual_note
         )
 
-        # Log to console
         logger.info("=" * 60)
         logger.info("🔔 NEW MANUAL PAYMENT SUBMITTED")
         logger.info("  Student:    %s", request.user.email)
@@ -359,10 +362,10 @@ class ManualPaymentSubmitView(APIView):
         logger.info("  System Ref: %s", txn.reference)
         logger.info("=" * 60)
 
-        # Send email notification to admin
+        # Fire background email (returns instantly, no OOM)
         notify_admin_new_payment(txn, manual_reference, manual_note)
 
         return Response({
             "detail": "Payment submitted. We'll verify and activate your subscription within 24 hours.",
             "transaction": PaymentTransactionSerializer(txn).data,
-        })# Cache bust 1794132941
+        })
