@@ -5,25 +5,24 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# Create a script to force-add a username column and create the admin
+# Create the user and force the Admin to use Email authentication
 python manage.py shell -c "
-from django.db import connection
-from accounts.models import User
+from django.contrib.auth import get_user_model
+from django.contrib.auth.backends import ModelBackend
+from django.contrib.auth import login
 
-# 1. Force-add the username column to the database if it's missing
-with connection.cursor() as cursor:
-    try:
-        cursor.execute('ALTER TABLE accounts_user ADD COLUMN username VARCHAR(150) UNIQUE;')
-    except Exception:
-        pass # It might already exist
+User = get_user_model()
 
-# 2. Create the admin user with the username 'admin'
-u, created = User.objects.get_or_create(email='admin@admin.com')
-u.username = 'admin'
+# 1. Create the perfect user
+u, _ = User.objects.get_or_create(email='syntradigitalsolutions88@gmail.com')
 u.set_password('admin')
 u.is_staff = True
 u.is_superuser = True
 u.save()
+print('✅ User created: syntradigitalsolutions88@gmail.com / admin')
 
-print('✅ Backdoor admin created: username=admin, password=admin')
+# 2. Patch the Admin form to use Email instead of Username
+from django.contrib.admin.forms import AdminAuthenticationForm
+AdminAuthenticationForm.username_field = u._meta.get_field('email')
+print('✅ Admin form patched to use email!')
 "
