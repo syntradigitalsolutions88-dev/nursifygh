@@ -5,6 +5,23 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# Force superuser creation and password reset
-python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); u = User.objects.filter(email='admin@nursifygh.com').first(); u.set_password('Password123!') if u else User.objects.create_superuser(email='admin@nursifygh.com', password='Password123!'); u.save() if u else None"
-
+# Create the live superuser
+python manage.py shell -c "
+from accounts.models import User
+u = User.objects.filter(email='syntradigitalsolutions88@gmail.com').first()
+if u:
+    u.set_password('Password123!')
+    u.is_staff = True
+    u.is_superuser = True
+    u.save()
+    print('✅ Live password reset!')
+else:
+    User.objects.create_superuser(
+        email='syntradigitalsolutions88@gmail.com',
+        password='Password123!',
+        full_name='Admin User',
+        level=100,
+        program='GENERAL'
+    )
+    print('✅ Live user created!')
+"
