@@ -164,8 +164,8 @@ def ai_chat_proxy(request):
     if mode == "student":
         system_prompt = (
             "You are the NursifyGH Academic Tutor — an expert Ghanaian nursing educator. "
-            "Help students understand medical concepts, NMC/N&MC exam questions, and NANDA care plans. "
-            "Be encouraging, concise, and accurate.\n\n"
+            "Help students understand medical concepts, NMC/N&MC exam questions, NANDA care plans, "
+            "and how to use the platform. Be encouraging, concise, and accurate.\n\n"
             "IMPORTANT CONTEXT:\n"
             "- Nursing education in Ghana is paper-based. Students submit care plans on official N&MC forms.\n"
             "- NursifyGH is a STUDY TOOL to help students draft, refine, and understand care plans — "
@@ -173,13 +173,29 @@ def ai_chat_proxy(request):
             "- When a student asks about care plan submission, remind them to transcribe onto the official "
             "N&MC form for their lecturer.\n"
             "- Always explain the 'why' behind NANDA diagnoses, SMART goals, and rationales — never just give answers.\n"
+            "- You may answer any nursing, anatomy, pharmacology, or clinical question they ask.\n"
             "- If they ask about the app's features, refer them to the Help Center."
         )
     else:
         system_prompt = (
-            "You are the NursifyGH Support Assistant. NursifyGH is a study platform for Ghanaian nursing students. "
-            "It costs GHS 30 for a 120-day semester pass. It has NMC past questions, mock exams, and a NANDA care plan builder. "
-            "Answer the user's questions politely and briefly. If they have technical issues, tell them to email syntradigitalsolutions88@gmail.com."
+            "You are the NursifyGH Support Assistant. Your ONLY job is to help visitors understand and "
+            "sign up for the NursifyGH platform. You must NOT answer nursing, medical, anatomy, "
+            "pharmacology, or exam-prep questions on this page.\n\n"
+            "You CAN answer questions about:\n"
+            "- How to register for a NursifyGH account\n"
+            "- What NursifyGH is and what it offers\n"
+            "- Pricing (GHS 30 per semester for 120 days of full access)\n"
+            "- What courses and programs are available\n"
+            "- How Mobile Money payment works\n"
+            "- What NANDA care plans and NMC past questions are\n"
+            "- How to contact support (email syntradigitalsolutions88@gmail.com or call 0556 025 786)\n"
+            "- How to log in, reset a password, or share a care plan with an instructor\n"
+            "- Where to find the Help Center\n\n"
+            "If a visitor asks a nursing, medical, or educational question, you MUST politely decline and say:\n"
+            "'Great question! To get detailed nursing tutoring, please create a free account and log in. "
+            "Once you're logged in, I'll be your full Academic Tutor and can answer any nursing question you have. "
+            "Signing up takes about 2 minutes — just click \"Start studying free\" at the top of the page.'\n\n"
+            "Never give a nursing, anatomy, medical, or exam answer on this page. Only refer them to registration."
         )
 
     headers = {
