@@ -49,7 +49,12 @@ if os.environ.get("RENDER") is None:
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env("DJANGO_DEBUG")
 ALLOWED_HOSTS = ["nursifygh-api.onrender.com", "127.0.0.1", "localhost"]
-CSRF_TRUSTED_ORIGINS = ["https://nursifygh.vercel.app", "http://127.0.0.1:5173", "http://localhost:5173"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://nursifygh.vercel.app",
+    "https://nursifygh-frontend.vercel.app",
+    "http://127.0.0.1:5173",
+    "http://localhost:5173",
+]
 
 # Applications
 DJANGO_APPS = [
@@ -161,6 +166,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5184",
     "http://127.0.0.1:5184",
     "https://nursifygh.vercel.app",
+    "https://nursifygh-frontend.vercel.app",
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
