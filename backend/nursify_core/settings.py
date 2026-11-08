@@ -9,7 +9,6 @@ import os
 from pathlib import Path
 import environ
 
-# Build paths
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
@@ -19,6 +18,7 @@ env = environ.Env(
         "http://127.0.0.1:5173",
         "http://localhost:5173",
         "https://nursifygh.vercel.app",
+        "https://nursifygh-frontend.vercel.app",
     ]),
     DATABASE_URL=(str, f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
     JWT_ACCESS_LIFETIME_MINUTES=(int, 60),
@@ -37,6 +37,7 @@ env = environ.Env(
     DEFAULT_FROM_EMAIL=(str, "NursifyGH <noreply@nursifygh.com>"),
     GEMINI_API_KEY=(str, ""),
     GROQ_API_KEY=(str, ""),
+    RESEND_API_KEY=(str, ""),
 )
 
 # Load .env ONLY in development
@@ -228,9 +229,10 @@ PAYSTACK_PUBLIC_KEY = env("PAYSTACK_PUBLIC_KEY", default="")
 HUBTEL_CLIENT_ID = env("HUBTEL_CLIENT_ID", default="")
 HUBTEL_CLIENT_SECRET = env("HUBTEL_CLIENT_SECRET", default="")
 
-# AI
+# AI + Email
 GEMINI_API_KEY = env("GEMINI_API_KEY")
 GROQ_API_KEY = env("GROQ_API_KEY")
+RESEND_API_KEY = env("RESEND_API_KEY")
 
 # Security hardening (only in production)
 if not DEBUG:

@@ -6,8 +6,8 @@ import logging
 import threading
 import uuid as _uuid
 
+import requests
 from django.conf import settings
-from django.core.mail import send_mail
 from django.utils import timezone
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
@@ -37,25 +37,46 @@ ADMIN_NOTIFICATION_EMAIL = "syntradigitalsolutions88@gmail.com"
 
 
 def _send_email_in_background(subject: str, body: str, recipient: str) -> None:
-    """Helper that runs in a background thread — avoids blocking / OOM."""
+    """
+    Send an email via Resend's HTTPS API (free, no SMTP).
+    Runs in a background thread — no OOM, no SIGKILL.
+    """
     try:
-        send_mail(
-            subject=subject,
-            message=body,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[recipient],
-            fail_silently=False,
+        api_key = getattr(settings, "RESEND_API_KEY", None)
+        if not api_key:
+            logger.error("RESEND_API_KEY is missing from settings")
+            return
+
+        response = requests.post(
+            "https://api.resend.com/emails",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "from": "NursifyGH <onboarding@resend.dev>",
+                "to": [recipient],
+                "subject": subject,
+                "text": body,
+            },
+            timeout=10,
         )
-        logger.info("Admin notification email sent to %s", recipient)
+
+        if response.status_code in (200, 201):
+            logger.info("Admin notification email sent via Resend to %s", recipient)
+        else:
+            logger.error(
+                "Resend API error: %s - %s",
+                response.status_code,
+                response.text[:500],
+            )
+
     except Exception as exc:
-        logger.error("Failed to send admin notification email: %s", exc)
+        logger.error("Failed to send admin notification email via Resend: %s", exc)
 
 
 def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") -> None:
-    """
-    Queue an email to the admin in a background thread.
-    Never raises — a failed email must NOT fail the API request.
-    """
+    """Queue an email to the admin in a background thread."""
     try:
         subject = f"🔔 New payment: GHS {txn.amount_ghs} from {txn.student.full_name}"
         body = (
@@ -75,7 +96,6 @@ def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") 
             f"Only approve AFTER you've confirmed the money landed in your MoMo.\n"
         )
 
-        # Fire-and-forget: email sends on a background thread
         threading.Thread(
             target=_send_email_in_background,
             args=(subject, body, ADMIN_NOTIFICATION_EMAIL),
@@ -362,7 +382,6 @@ class ManualPaymentSubmitView(APIView):
         logger.info("  System Ref: %s", txn.reference)
         logger.info("=" * 60)
 
-        # Fire background email (returns instantly, no OOM)
         notify_admin_new_payment(txn, manual_reference, manual_note)
 
         return Response({
