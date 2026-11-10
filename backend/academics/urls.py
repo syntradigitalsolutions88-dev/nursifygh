@@ -17,3 +17,15 @@ urlpatterns = [
     path("quizzes/submit/", QuizSubmitView.as_view(), name="quiz-submit"),
     path("quizzes/history/", QuizHistoryView.as_view(), name="quiz-history"),
 ]
+from .views import MockExamView
+from django.urls import path
+
+urlpatterns += [
+    path("quizzes/mock-exam/", MockExamView.as_view(), name="mock-exam"),
+]
+
+from .views import MockExamSubmitView
+
+urlpatterns += [
+    path("quizzes/mock-exam/submit/", MockExamSubmitView.as_view(), name="mock-exam-submit"),
+]

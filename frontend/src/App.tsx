@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 
 import ProtectedRoute from "./components/ProtectedRoute"
+import PaywallGate from "./components/PaywallGate"
 import AboutPage from "./pages/AboutPage"
 import AppContactPage from "./pages/AppContactPage"
 import AppHelpPage from "./pages/AppHelpPage"
@@ -8,6 +9,7 @@ import CarePlanDetailPage from "./pages/CarePlanDetailPage"
 import CarePlanTranscriptionPage from "./pages/CarePlanTranscriptionPage"
 import CarePlansPage from "./pages/CarePlansPage"
 import CheckoutCallbackPage from "./pages/CheckoutCallbackPage"
+import ClinicalsPage from "./pages/ClinicalsPage"
 import ContactPage from "./pages/ContactPage"
 import CoursesPage from "./pages/CoursesPage"
 import DashboardPage from "./pages/DashboardPage"
@@ -16,6 +18,7 @@ import HelpArticlePage from "./pages/HelpArticlePage"
 import HelpCenterPage from "./pages/HelpCenterPage"
 import LandingPage from "./pages/LandingPage"
 import LoginPage from "./pages/LoginPage"
+import MockExamPage from "./pages/MockExamPage"
 import NcpBuilderPage from "./pages/NcpBuilderPage"
 import PrivacyPage from "./pages/PrivacyPage"
 import ProfilePage from "./pages/ProfilePage"
@@ -47,25 +50,142 @@ export default function App() {
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />
 
-      {/* Public share links (no auth required) */}
+      {/* Public share links */}
       <Route path="/shared/:token" element={<SharedPlanPage />} />
       <Route path="/checkout/callback" element={<CheckoutCallbackPage />} />
 
-      {/* Authenticated app */}
+      {/* Dashboard — accessible but shows a subscribe CTA if unpaid */}
       <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
-      <Route path="/courses" element={<ProtectedRoute><CoursesPage /></ProtectedRoute>} />
-      <Route path="/quizzes/:courseId" element={<ProtectedRoute><QuizPage /></ProtectedRoute>} />
-      <Route path="/quizzes/results/:attemptId" element={<ProtectedRoute><QuizResultsPage /></ProtectedRoute>} />
-      <Route path="/careplans" element={<ProtectedRoute><CarePlansPage /></ProtectedRoute>} />
-      <Route path="/careplans/new" element={<ProtectedRoute><NcpBuilderPage /></ProtectedRoute>} />
-      <Route path="/careplans/:planId" element={<ProtectedRoute><CarePlanDetailPage /></ProtectedRoute>} />
-      <Route path="/careplans/:planId/transcription" element={<ProtectedRoute><CarePlanTranscriptionPage /></ProtectedRoute>} />
-      <Route path="/library" element={<ProtectedRoute><PublicLibraryPage /></ProtectedRoute>} />
-      <Route path="/library/:planId" element={<ProtectedRoute><PublicPlanDetailPage /></ProtectedRoute>} />
       <Route path="/subscribe" element={<ProtectedRoute><SubscribePage /></ProtectedRoute>} />
       <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
       <Route path="/support" element={<ProtectedRoute><AppHelpPage /></ProtectedRoute>} />
       <Route path="/support/contact" element={<ProtectedRoute><AppContactPage /></ProtectedRoute>} />
+
+      {/* Paywalled — Courses & Quizzes */}
+      <Route path="/courses" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Courses & Quizzes"
+            description="148 NMC courses with 1,000+ practice questions across all 4 departments."
+          >
+            <CoursesPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/quizzes/:courseId" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Practice Quiz"
+            description="Answer real NMC past questions with instant grading and rationales."
+          >
+            <QuizPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/quizzes/results/:attemptId" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Quiz Results"
+            description="Review your answers with clinical rationales for every question."
+          >
+            <QuizResultsPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      {/* Paywalled — Mock Exam */}
+      <Route path="/mock-exam" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Mock Exam Simulator"
+            description="Take 60-minute, 50-question exams with auto-grading and timer."
+          >
+            <MockExamPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      {/* Paywalled — Clinicals */}
+      <Route path="/clinicals" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Clinical Tracker"
+            description="Log procedures with hospital, ward, and supervisor — ready for your N&MC booklet."
+          >
+            <ClinicalsPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      {/* Paywalled — Care Plans */}
+      <Route path="/careplans" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Care Plans"
+            description="Build NANDA-based care plans with AI assistance and SMART goals."
+          >
+            <CarePlansPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/careplans/new" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Create Care Plan"
+            description="Use AI Autofill to draft a complete NCP in seconds."
+          >
+            <NcpBuilderPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/careplans/:planId" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Care Plan Detail"
+            description="View, edit, and share your NANDA care plans."
+          >
+            <CarePlanDetailPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/careplans/:planId/transcription" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="N&MC Transcription View"
+            description="Print-ready N&MC licensure format for your clinical booklet."
+          >
+            <CarePlanTranscriptionPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      {/* Paywalled — Library */}
+      <Route path="/library" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Community Library"
+            description="Browse and copy care plans shared by other nursing students."
+          >
+            <PublicLibraryPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/library/:planId" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Shared Care Plan"
+            description="View detailed NCPs from the community library."
+          >
+            <PublicPlanDetailPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
     </Routes>
   )
 }

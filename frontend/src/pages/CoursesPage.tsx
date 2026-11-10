@@ -1,247 +1,126 @@
-import { useState } from "react"
 import { Link } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
-import { AxiosError } from "axios"
 
-import { listCourses } from "../api/courses"
+import { listCarePlans } from "../api/careplans"
 import { useAuth } from "../contexts/AuthContext"
 import AppShell from "../components/shell/AppShell"
+import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import EmptyState from "../components/ui/EmptyState"
-import type { Course } from "../types/api"
 
-interface SemesterGroup {
-    label: string
-    semester: string
-    courses: Course[]
-}
-
-function groupBySemester(courses: Course[]): SemesterGroup[] {
-    const map = new Map<string, SemesterGroup>()
-    for (const course of courses) {
-        const key = course.semester
-        if (!map.has(key)) {
-            map.set(key, {
-                label: course.semester_display,
-                semester: course.semester,
-                courses: [],
-            })
-        }
-        map.get(key)!.courses.push(course)
-    }
-    return Array.from(map.values()).sort((a, b) =>
-        a.semester.localeCompare(b.semester),
-    )
-}
-
-export default function CoursesPage() {
+export default function CarePlansPage() {
     const { user } = useAuth()
 
-    const { data: courses, isLoading, error } = useQuery({
-        queryKey: ["courses"],
-        queryFn: listCourses,
-        enabled: !!user?.has_active_subscription,
+    const { data: plans, isLoading, error } = useQuery({
+        queryKey: ["care-plans"],
+        queryFn: listCarePlans,
+        enabled: !!user,
     })
-
-    // Track which semester is selected — default to first available
-    const [selectedSemester, setSelectedSemester] = useState<string | null>(null)
 
     if (!user) return null
 
-    // Paywall branch
-    if (!user.has_active_subscription) {
-        return (
-            <AppShell>
-                <div className="rounded-xl border border-brand-200 bg-brand-50 p-8 text-center">
-                    <h1 className="text-h2 text-brand-900">Subscription required</h1>
-                    <p className="mt-2 text-body-sm text-brand-800">
-                        You need an active semester pass to access courses and quizzes.
-                    </p>
-                    <Link to="/subscribe" className="mt-6 inline-block">
-                        <Button size="lg">Subscribe for GHS 30 →</Button>
-                    </Link>
-                </div>
-            </AppShell>
-        )
-    }
-
-    const groups = courses ? groupBySemester(courses) : []
-    const activeGroup = selectedSemester
-        ? groups.find((g) => g.semester === selectedSemester)
-        : groups[0]
-
-    const totalQuestions = courses
-        ? courses.reduce((sum, c) => sum + c.question_count, 0)
-        : 0
-    const courseCount = courses?.length ?? 0
-    const readyCourses = courses
-        ? courses.filter((c) => c.question_count > 0).length
-        : 0
-
     return (
         <AppShell>
-            <div className="space-y-8">
-                {/* Header */}
-                <div>
-                    <p className="text-caption text-brand-700 font-medium">Your Curriculum</p>
-                    <h1 className="mt-1 text-h2">{user.level_display} Courses</h1>
-                    <p className="mt-1 text-body text-on-surface-muted">
-                        {user.program_display}
-                    </p>
-                </div>
-
-                {/* Stats bar */}
-                {!isLoading && courses && (
-                    <div className="grid gap-3 sm:grid-cols-3">
-                        <div className="rounded-xl border border-border bg-white p-4">
-                            <p className="text-caption">Total courses</p>
-                            <p className="mt-1 text-h3 text-on-surface">{courseCount}</p>
-                            <p className="text-xs text-on-surface-muted">
-                                {readyCourses} ready · {courseCount - readyCourses} coming soon
-                            </p>
-                        </div>
-                        <div className="rounded-xl border border-border bg-white p-4">
-                            <p className="text-caption">Total questions</p>
-                            <p className="mt-1 text-h3 text-brand-700">{totalQuestions}</p>
-                            <p className="text-xs text-on-surface-muted">
-                                More added every week
-                            </p>
-                        </div>
-                        <div className="rounded-xl border border-border bg-white p-4">
-                            <p className="text-caption">Your level</p>
-                            <p className="mt-1 text-h3 text-on-surface">{user.level_display}</p>
-                            <p className="text-xs text-on-surface-muted">
-                                All courses for your semester
-                            </p>
-                        </div>
-                    </div>
-                )}
-
-                {/* Loading */}
-                {isLoading && (
-                    <div className="rounded-xl border border-border bg-white p-8 text-center">
-                        <p className="text-on-surface-muted">Loading courses…</p>
-                    </div>
-                )}
-
-                {/* Error */}
-                {error && (
-                    <div className="rounded-xl border border-red-200 bg-danger-50 p-4">
-                        <p className="text-sm text-danger-700">
-                            {error instanceof AxiosError
-                                ? `Failed to load courses: ${error.message}`
-                                : "Failed to load courses."}
+            <div className="space-y-6">
+                <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                    <div>
+                        <h1 className="text-h1">My Care Plans</h1>
+                        <p className="mt-1 text-body-sm text-on-surface-muted">
+                            Build, refine, and understand NANDA care plans with SMART goals and rationales.
                         </p>
                     </div>
+                    <Link to="/careplans/new" className="hidden sm:block">
+                        <Button>+ New plan</Button>
+                    </Link>
+                </header>
+
+                <div className="rounded-xl border border-brand-200 bg-brand-50 p-4">
+                    <div className="flex items-start gap-3">
+                        <svg className="h-5 w-5 shrink-0 mt-0.5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <p className="text-sm font-medium text-brand-900">This is your personal study companion</p>
+                            <p className="mt-1 text-xs text-brand-800 leading-relaxed">
+                                Use NursifyGH to <strong>draft, refine, and understand</strong> your care plans.
+                                When you're ready to submit, <strong>transcribe onto the official N&amp;MC form</strong>.
+                                We help you learn; you still submit on paper.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {isLoading && (
+                    <div className="rounded-xl border border-border bg-white p-8 text-center">
+                        <p className="text-on-surface-muted">Loading care plans…</p>
+                    </div>
                 )}
 
-                {/* Empty state */}
-                {!isLoading && courses && courses.length === 0 && (
+                {error && (
+                    <div className="rounded-xl border border-red-200 bg-danger-50 p-4">
+                        <p className="text-sm text-danger-700">Failed to load care plans. Please try again.</p>
+                    </div>
+                )}
+
+                {plans && plans.length === 0 && (
                     <EmptyState
-                        title="No courses yet"
-                        description={`No courses available for ${user.level_display} ${user.program_display} yet. Check back soon.`}
+                        title="No care plans yet"
+                        description="Create your first NCP with NANDA diagnoses, SMART goals, and evidence-based rationales."
+                        action={
+                            <Link to="/careplans/new">
+                                <Button>Create your first plan</Button>
+                            </Link>
+                        }
                     />
                 )}
 
-                {/* Semester tabs + courses */}
-                {!isLoading && groups.length > 0 && activeGroup && (
-                    <div className="space-y-6">
-                        {/* Tab switcher */}
-                        <div className="border-b border-border">
-                            <div className="flex gap-1 overflow-x-auto">
-                                {groups.map((group) => {
-                                    const isActive = activeGroup.semester === group.semester
-                                    return (
-                                        <button
-                                            key={group.semester}
-                                            onClick={() => setSelectedSemester(group.semester)}
-                                            className={`relative px-4 py-3 rounded-t-lg text-sm font-medium whitespace-nowrap transition-colors ${isActive
-                                                ? "text-brand-700"
-                                                : "text-on-surface-muted hover:text-on-surface hover:bg-surface-subtle"
-                                                }`}
-                                        >
-                                            {group.label}
-                                            <span className={`ml-2 rounded-full px-2 py-0.5 text-xs ${isActive
-                                                ? "bg-brand-100 text-brand-700"
-                                                : "bg-surface-subtle text-on-surface-muted"
-                                                }`}>
-                                                {group.courses.length}
-                                            </span>
-                                            {isActive && (
-                                                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-700" />
-                                            )}
-                                        </button>
-                                    )
-                                })}
-                            </div>
-                        </div>
-
-                        {/* Active semester courses */}
-                        <div className="grid gap-4 sm:grid-cols-2">
-                            {activeGroup.courses.map((course) => (
-                                <CourseCard key={course.id} course={course} />
-                            ))}
-                        </div>
+                {plans && plans.length > 0 && (
+                    <div className="space-y-3">
+                        {plans.map((plan) => (
+                            <PlanRow key={plan.id} plan={plan} />
+                        ))}
                     </div>
                 )}
             </div>
+
+            <Link
+                to="/careplans/new"
+                className="sm:hidden fixed bottom-24 right-4 z-30 inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-700 text-white shadow-lg hover:bg-brand-800"
+                aria-label="New care plan"
+            >
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+            </Link>
         </AppShell>
     )
 }
 
-function CourseCard({ course }: { course: Course }) {
-    const hasContent = course.question_count > 0
-    const Wrapper = hasContent ? Link : "div"
-    const wrapperProps = hasContent
-        ? { to: `/quizzes/${course.id}` }
-        : { className: "block" }
-
+function PlanRow({ plan }: { plan: any }) {
     return (
-        <Wrapper
-            {...(wrapperProps as any)}
-            className={`group rounded-xl border p-5 transition-all ${hasContent
-                ? "border-border bg-white hover:border-brand-300 hover:shadow-sm cursor-pointer"
-                : "border-dashed border-border bg-surface-subtle cursor-default"
-                }`}
+        <Link
+            to={`/careplans/${plan.id}`}
+            className="block rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all"
         >
             <div className="flex items-start justify-between gap-3">
                 <div className="flex-1 min-w-0">
-                    <p
-                        className={`text-xs font-medium tracking-wide ${hasContent ? "text-brand-600" : "text-on-surface-muted"
-                            }`}
-                    >
-                        {course.code}
-                    </p>
-                    <h3 className="mt-1 text-h4 truncate">{course.title}</h3>
-                    <p className="mt-1 text-xs text-on-surface-muted">
-                        {course.category_display}
-                    </p>
+                    <h2 className="text-h4 truncate">{plan.title}</h2>
+                    <p className="mt-1 text-body-sm text-on-surface-muted truncate">{plan.primary_diagnosis_label}</p>
                 </div>
                 <div className="text-right shrink-0">
-                    {hasContent ? (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">
-                            {course.question_count} q
-                        </span>
-                    ) : (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-warning-50 px-2.5 py-1 text-xs font-medium text-warning-700">
-                            Soon
-                        </span>
-                    )}
+                    <p className="text-xs text-on-surface-muted">
+                        {plan.goal_count} goal{plan.goal_count === 1 ? "" : "s"} ·{" "}
+                        {plan.intervention_count} intervention{plan.intervention_count === 1 ? "" : "s"}
+                    </p>
+                    <p className="mt-1 text-xs text-on-surface-subtle">
+                        {new Date(plan.updated_at).toLocaleDateString("en-GB", { day: "numeric", month: "short" })}
+                    </p>
                 </div>
             </div>
-
-            {hasContent ? (
-                <p className="mt-4 text-xs text-on-surface-muted group-hover:text-brand-600 transition-colors">
-                    Practice now →
-                </p>
-            ) : (
-                <div className="mt-4 flex items-center gap-1.5 text-xs font-medium text-on-surface-muted">
-                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>Content arriving this semester</span>
-                </div>
-            )}
-        </Wrapper>
+            <div className="mt-3 flex items-center gap-2">
+                {plan.is_submitted && <Badge variant="success">✓ Submitted</Badge>}
+                {plan.is_public && !plan.is_submitted && <Badge variant="brand">🌍 Public</Badge>}
+            </div>
+        </Link>
     )
 }

@@ -4,6 +4,9 @@ from django.urls import path
 from rest_framework_simplejwt.views import TokenRefreshView
 
 from .views import (
+    ClinicalLogDetailView,
+    ClinicalLogsDetailView,
+    ClinicalSkillsView,
     LoginView,
     PasswordChangeView,
     PasswordResetConfirmView,
@@ -11,6 +14,7 @@ from .views import (
     ProfileView,
     RegisterView,
     ai_chat_proxy,
+    ai_ncp_autofill,
 )
 
 app_name = "accounts"
@@ -24,4 +28,8 @@ urlpatterns = [
     path("password/reset/request/", PasswordResetRequestView.as_view(), name="password-reset-request"),
     path("password/reset/confirm/", PasswordResetConfirmView.as_view(), name="password-reset-confirm"),
     path("ai-chat/", ai_chat_proxy, name="ai-chat"),
+    path("ai-ncp-autofill/", ai_ncp_autofill, name="ai-ncp-autofill"),
+    path("clinical-skills/", ClinicalSkillsView.as_view(), name="clinical-skills"),
+    path("clinical-skills/<int:skill_id>/logs/", ClinicalLogsDetailView.as_view(), name="clinical-logs"),
+    path("clinical-logs/<int:log_id>/", ClinicalLogDetailView.as_view(), name="clinical-log-detail"),
 ]

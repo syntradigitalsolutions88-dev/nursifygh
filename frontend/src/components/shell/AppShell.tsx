@@ -6,6 +6,7 @@ import Avatar from "../ui/Avatar"
 import Badge from "../ui/Badge"
 import Logo from "../ui/Logo"
 import ChatWidget from "../support/ChatWidget"
+import OnboardingTour from "../OnboardingTour"
 
 interface NavItem {
     label: string
@@ -26,6 +27,14 @@ function CoursesIcon() {
     return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+        </svg>
+    )
+}
+
+function ClinicalsIcon() {
+    return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
         </svg>
     )
 }
@@ -73,6 +82,7 @@ function SubscribeIcon() {
 const navItems: NavItem[] = [
     { label: "Dashboard", to: "/dashboard", icon: <DashboardIcon />, end: true },
     { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
+    { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
     { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
     { label: "Library", to: "/library", icon: <LibraryIcon /> },
     { label: "Profile", to: "/profile", icon: <ProfileIcon /> },
@@ -82,9 +92,9 @@ const navItems: NavItem[] = [
 const mobileNavItems: NavItem[] = [
     { label: "Home", to: "/dashboard", icon: <DashboardIcon />, end: true },
     { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
+    { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
     { label: "Plans", to: "/careplans", icon: <CarePlansIcon /> },
     { label: "Library", to: "/library", icon: <LibraryIcon /> },
-    { label: "Profile", to: "/profile", icon: <ProfileIcon /> },
 ]
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
@@ -193,7 +203,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
             {/* ---- Main content ---- */}
             <div className="lg:pl-60">
-                {/* Header — sticky, always visible */}
                 <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur-sm border-b border-border">
                     <div className="flex items-center justify-between px-4 py-3 lg:px-8 lg:py-4">
                         <div className="lg:hidden">
@@ -279,7 +288,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                     </div>
                 </header>
 
-                {/* Page content */}
                 <main className="pb-20 lg:pb-0">
                     <div className="max-w-5xl mx-auto px-4 py-6 lg:px-8 lg:py-8">
                         {children}
@@ -287,7 +295,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </main>
             </div>
 
-            {/* ---- Mobile bottom tab bar ---- */}
             <nav className="lg:hidden fixed bottom-0 inset-x-0 z-30 border-t border-border bg-white">
                 <div className="flex">
                     {mobileNavItems.map((item) => (
@@ -309,8 +316,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </div>
             </nav>
 
-            {/* AI Chatbot — floats on every page in the app */}
             <ChatWidget />
+            <OnboardingTour />
         </div>
     )
 }

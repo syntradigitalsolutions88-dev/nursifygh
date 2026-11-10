@@ -138,3 +138,86 @@ class QuizHistoryView(generics.ListAPIView):
             )
             .order_by("-started_at")
         )
+import random
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import permissions
+from accounts.permissions import IsSubscribed
+from .models import Course, Question
+from .serializers import QuestionPublicSerializer
+
+class MockExamView(APIView):
+    permission_classes = (permissions.IsAuthenticated, IsSubscribed)
+
+    def get(self, request):
+        user = request.user
+        # 1. Get all courses for this student's level and program
+        courses = Course.objects.filter(is_published=True, level=user.level, program=user.program)
+        
+        # 2. Get all questions from those courses
+        all_questions = list(Question.objects.filter(course__in=courses, is_published=True))
+        
+        # 3. Shuffle and pick 50 (or fewer if they don't have that many yet)
+        random.shuffle(all_questions)
+        selected_questions = all_questions[:50]
+        
+        # 4. Serialize and return
+        serializer = QuestionPublicSerializer(selected_questions, many=True)
+        return Response({
+            "title": f"Level {user.level} Mock Exam",
+            "total_questions": len(selected_questions),
+            "duration_minutes": 60,
+            "questions": serializer.data
+        })
+
+from .models import Choice
+from django.utils import timezone
+from .serializers import QuizAttemptResultSerializer
+
+class MockExamSubmitView(APIView):
+    permission_classes = (permissions.IsAuthenticated, IsSubscribed)
+
+    def post(self, request):
+        answers = request.data.get("answers", {})
+        # answers looks like: {"question_uuid": "choice_uuid", ...}
+        
+        if not answers:
+            return Response({"detail": "No answers provided"}, status=400)
+            
+        question_ids = list(answers.keys())
+        questions = Question.objects.filter(id__in=question_ids)
+        
+        if not questions:
+            return Response({"detail": "Questions not found"}, status=400)
+            
+        # Get the courses from the first question (assuming single-level exam)
+        first_course = questions.first().course
+        
+        correct_count = 0
+        total = len(questions)
+        
+        for q in questions:
+            chosen_choice_id = answers.get(str(q.id))
+            if not chosen_choice_id:
+                continue
+            is_correct = Choice.objects.filter(id=chosen_choice_id, question=q, is_correct=True).exists()
+            if is_correct:
+                correct_count += 1
+
+        score = round((correct_count / total) * 100, 2) if total > 0 else 0
+        
+        attempt = QuizAttempt.objects.create(
+            student=request.user,
+            course=first_course,
+            total_questions=total,
+            correct_answers=correct_count,
+            score_percentage=score,
+            completed_at=timezone.now()
+        )
+        
+        return Response({
+            "attempt_id": attempt.id,
+            "score_percentage": score,
+            "correct_answers": correct_count,
+            "total_questions": total
+        })

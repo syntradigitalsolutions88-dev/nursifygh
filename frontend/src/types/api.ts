@@ -15,6 +15,7 @@ export interface User {
     program: NursingProgram
     program_display: string
     institution: string
+    has_seen_tour: boolean
     is_subscribed: boolean
     subscription_expires_at: string | null
     has_active_subscription: boolean

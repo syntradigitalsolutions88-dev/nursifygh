@@ -35,6 +35,9 @@ export default function QuizResultsPage() {
         )
     }
 
+    // 🔍 The Magic Rule: If it has 35+ questions, it was a Mock Exam
+    const isMockExam = attempt.total_questions >= 35
+
     const scoreNum = parseFloat(attempt.score_percentage)
     const scoreBg =
         scoreNum >= 70
@@ -49,12 +52,15 @@ export default function QuizResultsPage() {
                 ? "text-warning-700"
                 : "text-danger-700"
 
+    const pageTitle = isMockExam ? "Level Mock Exam Results" : attempt.course_title
+    const pageSubtitle = isMockExam ? "Simulated Exam" : attempt.course_code
+
     return (
         <AppShell>
             <div className="max-w-3xl space-y-6">
                 <div>
-                    <p className="text-caption text-brand-600">{attempt.course_code}</p>
-                    <h1 className="mt-2 text-h1">{attempt.course_title}</h1>
+                    <p className="text-caption text-brand-600">{pageSubtitle}</p>
+                    <h1 className="mt-2 text-h1">{pageTitle}</h1>
                 </div>
 
                 <div className={`rounded-xl border-2 ${scoreBg} p-8 text-center`}>
@@ -94,10 +100,10 @@ export default function QuizResultsPage() {
                                                 <div
                                                     key={choice.id}
                                                     className={`rounded-lg border p-3 text-body-sm ${isCorrect
-                                                            ? "border-green-300 bg-success-50"
-                                                            : isSelected
-                                                                ? "border-red-300 bg-danger-50"
-                                                                : "border-border"
+                                                        ? "border-green-300 bg-success-50"
+                                                        : isSelected
+                                                            ? "border-red-300 bg-danger-50"
+                                                            : "border-border"
                                                         }`}
                                                 >
                                                     <div className="flex items-start gap-3">
@@ -129,11 +135,13 @@ export default function QuizResultsPage() {
                 </div>
 
                 <div className="flex justify-between">
-                    <Link to="/courses">
-                        <Button variant="secondary">Back to courses</Button>
+                    <Link to={isMockExam ? "/dashboard" : "/courses"}>
+                        <Button variant="secondary">
+                            {isMockExam ? "Back to Dashboard" : "Back to courses"}
+                        </Button>
                     </Link>
-                    <Link to={`/quizzes/${attempt.course_id}`}>
-                        <Button>Try again</Button>
+                    <Link to={isMockExam ? "/mock-exam" : `/quizzes/${attempt.course_id}`}>
+                        <Button>{isMockExam ? "Take another Mock Exam" : "Try again"}</Button>
                     </Link>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import { Navigate, useLocation } from "react-router-dom"
-
 import { useAuth } from "../contexts/AuthContext"
 
 export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -8,16 +7,15 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
 
     if (isLoading) {
         return (
-            <div className= "min-h-screen flex items-center justify-center" >
-            <p className="text-gray-500" > Loading…</p>
-                </div>
-    )
+            <div className="min-h-screen flex items-center justify-center">
+                <p className="text-on-surface-muted">Loading…</p>
+            </div>
+        )
     }
 
     if (!user) {
-        return <Navigate to="/login" replace state = {{ from: location.pathname }
-    } />
-}
+        return <Navigate to="/login" replace state={{ from: location.pathname }} />
+    }
 
-return <>{ children } </>
+    return <>{children}</>
 }

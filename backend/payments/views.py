@@ -36,11 +36,11 @@ MANUAL_PRICE_GHS = 30
 ADMIN_NOTIFICATION_EMAIL = "syntradigitalsolutions88@gmail.com"
 
 
+# ─── Email helpers ────────────────────────────────────────────────────────────
+
+
 def _send_email_in_background(subject: str, body: str, recipient: str) -> None:
-    """
-    Send an email via Resend's HTTPS API (free, no SMTP).
-    Runs in a background thread — no OOM, no SIGKILL.
-    """
+    """Send an email via Resend's HTTPS API in a background thread."""
     try:
         api_key = getattr(settings, "RESEND_API_KEY", None)
         if not api_key:
@@ -63,16 +63,15 @@ def _send_email_in_background(subject: str, body: str, recipient: str) -> None:
         )
 
         if response.status_code in (200, 201):
-            logger.info("Admin notification email sent via Resend to %s", recipient)
+            logger.info("Email sent via Resend to %s", recipient)
         else:
             logger.error(
                 "Resend API error: %s - %s",
                 response.status_code,
                 response.text[:500],
             )
-
     except Exception as exc:
-        logger.error("Failed to send admin notification email via Resend: %s", exc)
+        logger.error("Failed to send email via Resend: %s", exc)
 
 
 def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") -> None:
@@ -92,8 +91,7 @@ def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") 
             f"ACTION REQUIRED:\n"
             f"1. Check your MoMo app for GHS {txn.amount_ghs} from {txn.student.full_name}\n"
             f"2. If the payment arrived, approve here:\n"
-            f"   https://nursifygh-api.onrender.com/admin/payments/paymenttransaction/\n\n"
-            f"Only approve AFTER you've confirmed the money landed in your MoMo.\n"
+            f"   https://nursifygh-api.onrender.com/admin/payments/paymenttransaction/\n"
         )
 
         threading.Thread(
@@ -103,6 +101,27 @@ def notify_admin_new_payment(txn, manual_reference: str, manual_note: str = "") 
         ).start()
     except Exception as exc:
         logger.error("Failed to queue admin notification email: %s", exc)
+
+
+def _notify_student_subscription_active(txn: PaymentTransaction) -> None:
+    """Send the 'subscription active' email to the student."""
+    try:
+        from accounts.email_service import send_subscription_activated
+
+        txn.student.refresh_from_db()
+        send_subscription_activated(
+            to=txn.student.email,
+            full_name=txn.student.full_name,
+            expires_at=txn.student.subscription_expires_at,
+        )
+    except Exception:
+        logger.exception(
+            "Failed to send subscription activated email to %s",
+            txn.student.email,
+        )
+
+
+# ─── Checkout & history ───────────────────────────────────────────────────────
 
 
 class InitiateCheckoutView(APIView):
@@ -152,6 +171,9 @@ class TransactionDetailView(generics.RetrieveAPIView):
 
     def get_queryset(self):
         return PaymentTransaction.objects.filter(student=self.request.user)
+
+
+# ─── Webhooks ─────────────────────────────────────────────────────────────────
 
 
 class PaystackWebhookView(APIView):
@@ -240,6 +262,9 @@ class HubtelWebhookView(APIView):
         return Response({"detail": "processed"})
 
 
+# ─── Dev simulation ────────────────────────────────────────────────────────────
+
+
 class DevSimulatePaystackPaymentView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -265,6 +290,9 @@ class DevSimulatePaystackPaymentView(APIView):
             days=txn.duration_days, reference=txn.reference
         )
 
+        # NEW: Send the subscription activated email
+        _notify_student_subscription_active(txn)
+
         record_webhook_event(
             provider=PaymentProvider.PAYSTACK,
             event_id=f"dev_sim_{reference}_{int(timezone.now().timestamp())}",
@@ -273,6 +301,9 @@ class DevSimulatePaystackPaymentView(APIView):
         )
 
         return Response({"detail": "processed (dev simulation)"})
+
+
+# ─── Manual MoMo payment flow ─────────────────────────────────────────────────
 
 
 class ManualPaymentInfoView(APIView):

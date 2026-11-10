@@ -10,7 +10,6 @@ import {
 } from "../api/careplans"
 import AppShell from "../components/shell/AppShell"
 import Alert from "../components/ui/Alert"
-import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import InterventionForm from "../components/InterventionForm"
 import SmartGoalForm from "../components/SmartGoalForm"
@@ -22,15 +21,14 @@ import type {
 export default function CarePlanDetailPage() {
     const { planId } = useParams<{ planId: string }>()
     const queryClient = useQueryClient()
+    const [showGoalForm, setShowGoalForm] = useState(false)
+    const [showInterventionForm, setShowInterventionForm] = useState(false)
 
     const { data: plan, isLoading, error } = useQuery({
         queryKey: ["care-plan", planId],
         queryFn: () => getCarePlan(planId!),
         enabled: !!planId,
     })
-
-    const [showGoalForm, setShowGoalForm] = useState(false)
-    const [showInterventionForm, setShowInterventionForm] = useState(false)
 
     const invalidate = () => {
         queryClient.invalidateQueries({ queryKey: ["care-plan", planId] })
@@ -46,8 +44,7 @@ export default function CarePlanDetailPage() {
     })
 
     const addInterventionMutation = useMutation({
-        mutationFn: (payload: CreateInterventionRequest) =>
-            createIntervention(planId!, payload),
+        mutationFn: (payload: CreateInterventionRequest) => createIntervention(planId!, payload),
         onSuccess: () => {
             setShowInterventionForm(false)
             invalidate()
@@ -74,153 +71,242 @@ export default function CarePlanDetailPage() {
         )
     }
 
+    const completion = [
+        !!plan.patient_scenario,
+        plan.goals.length > 0,
+        plan.interventions.length > 0,
+    ]
+    const completedSteps = completion.filter(Boolean).length
+
     return (
         <AppShell>
-            <div className="max-w-3xl space-y-6">
-                {/* Header */}
-                <div className="flex flex-wrap items-start justify-between gap-3">
-                    <div>
-                        <p className="text-caption text-brand-600">{plan.primary_diagnosis.code} — {plan.primary_diagnosis.label}</p>
-                        <h1 className="mt-2 text-h1">{plan.title}</h1>
+            <div className="max-w-3xl mx-auto pb-20">
+                <Breadcrumb title={plan.title} />
+
+                <header className="border-b border-border pb-6">
+                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                        <span className="rounded bg-brand-700 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
+                            NCP Case Study
+                        </span>
+                        <span className="text-xs text-on-surface-muted font-medium">
+                            {formatLongDate(plan.created_at)}
+                        </span>
+                        <CompletionIndicator completed={completedSteps} total={3} />
                     </div>
-                    <div className="flex flex-wrap items-start gap-2">
+                    <h1 className="text-3xl lg:text-4xl font-serif font-bold text-on-surface leading-tight">
+                        {plan.title}
+                    </h1>
+                    <div className="mt-4 flex flex-wrap gap-2">
                         <Link to={`/careplans/${plan.id}/transcription`}>
-                            <Button size="sm" variant="secondary">📋 Transcription View</Button>
+                            <Button size="sm" variant="secondary">📋 Transcription view</Button>
                         </Link>
                         <ShareButton planId={plan.id} />
                     </div>
-                </div>
+                </header>
 
-                {/* Patient scenario */}
-                <section className="rounded-xl border border-border bg-white p-6">
-                    <h2 className="text-caption">Patient scenario</h2>
-                    <p className="mt-3 text-body-sm text-on-surface whitespace-pre-line">
+                <Section number="01" title="Presenting Scenario">
+                    <p className="text-base text-on-surface leading-relaxed whitespace-pre-line">
                         {plan.patient_scenario}
                     </p>
-                </section>
+                </Section>
 
-                {/* NANDA diagnosis */}
-                <section className="rounded-xl border border-border bg-white p-6">
-                    <h2 className="text-caption">NANDA diagnosis</h2>
-                    <p className="mt-3 text-h3">
-                        {plan.primary_diagnosis.code} — {plan.primary_diagnosis.label}
-                    </p>
-                    <Badge variant="brand" className="mt-2">
-                        {plan.primary_diagnosis.domain_display}
-                    </Badge>
-                    <p className="mt-3 text-body-sm text-on-surface-muted">
-                        {plan.primary_diagnosis.definition}
-                    </p>
-                </section>
-
-                {/* SMART goals */}
-                <section className="rounded-xl border border-border bg-white p-6">
-                    <div className="flex items-center justify-between mb-4">
-                        <h2 className="text-h4">SMART goals</h2>
-                        {!showGoalForm && (
-                            <Button size="sm" variant="secondary" onClick={() => setShowGoalForm(true)}>
-                                + Add goal
-                            </Button>
-                        )}
+                <Section
+                    number="02"
+                    title="Nursing Diagnosis"
+                    right={
+                        <span className="font-mono text-xs text-on-surface-muted bg-surface-subtle px-2 py-1 rounded border border-border">
+                            {plan.primary_diagnosis.code}
+                        </span>
+                    }
+                >
+                    <div className="flex flex-wrap items-baseline gap-3 mb-2">
+                        <h3 className="text-xl font-bold text-brand-900">{plan.primary_diagnosis.label}</h3>
+                        <span className="text-xs font-medium text-on-surface-muted bg-brand-50 border border-brand-200 px-2 py-0.5 rounded">
+                            {plan.primary_diagnosis.domain_display}
+                        </span>
                     </div>
+                    <p className="text-sm text-on-surface-muted italic leading-relaxed">
+                        "{plan.primary_diagnosis.definition}"
+                    </p>
+                    <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                        <Labeled label="Defining Characteristics">
+                            {plan.primary_diagnosis.defining_characteristics}
+                        </Labeled>
+                        <Labeled label="Related Factors">
+                            {plan.primary_diagnosis.related_factors}
+                        </Labeled>
+                    </div>
+                </Section>
 
-                    {plan.goals.length === 0 && !showGoalForm && (
-                        <p className="text-body-sm text-on-surface-muted italic">
-                            No goals yet. Add your first SMART goal.
-                        </p>
-                    )}
-
-                    {plan.goals.length > 0 && (
-                        <ul className="space-y-4">
+                <Section
+                    number="03"
+                    title="Planning — SMART Goals"
+                    right={
+                        <>
+                            <span className="text-xs text-on-surface-muted">
+                                {plan.goals.length} goal{plan.goals.length !== 1 ? "s" : ""}
+                            </span>
+                            {!showGoalForm && (
+                                <button onClick={() => setShowGoalForm(true)} className="text-xs font-semibold text-brand-600 hover:text-brand-800">
+                                    + Add
+                                </button>
+                            )}
+                        </>
+                    }
+                >
+                    {plan.goals.length === 0 && !showGoalForm ? (
+                        <EmptyHint>No SMART goals yet.</EmptyHint>
+                    ) : (
+                        <div className="space-y-5">
                             {plan.goals.map((goal, idx) => (
-                                <li key={goal.id} className="border-l-2 border-brand-300 pl-4">
-                                    <p className="text-xs font-medium text-on-surface-muted">Goal {idx + 1}</p>
-                                    <dl className="mt-2 space-y-1 text-body-sm">
-                                        <div><dt className="inline font-semibold text-on-surface">S: </dt><dd className="inline text-on-surface">{goal.specific}</dd></div>
-                                        <div><dt className="inline font-semibold text-on-surface">M: </dt><dd className="inline text-on-surface">{goal.measurable}</dd></div>
-                                        <div><dt className="inline font-semibold text-on-surface">A: </dt><dd className="inline text-on-surface">{goal.achievable}</dd></div>
-                                        <div><dt className="inline font-semibold text-on-surface">R: </dt><dd className="inline text-on-surface">{goal.relevant}</dd></div>
-                                        <div><dt className="inline font-semibold text-on-surface">T: </dt><dd className="inline text-on-surface">{goal.time_bound}</dd></div>
-                                    </dl>
-                                </li>
+                                <GoalCard key={goal.id} index={idx + 1} goal={goal} />
                             ))}
-                        </ul>
+                        </div>
                     )}
 
                     {showGoalForm && (
-                        <div className="mt-4">
+                        <div className="mt-4 rounded-xl border border-brand-200 bg-brand-50/30 p-4">
                             <SmartGoalForm
                                 submitting={addGoalMutation.isPending}
                                 onCancel={() => setShowGoalForm(false)}
-                                onSubmit={async (payload) => {
-                                    await addGoalMutation.mutateAsync(payload)
-                                }}
+                                onSubmit={async (payload) => { await addGoalMutation.mutateAsync(payload) }}
                             />
                         </div>
                     )}
-
                     {addGoalMutation.isError && (
-                        <Alert variant="danger" className="mt-3">
-                            Failed to save goal. Please try again.
-                        </Alert>
+                        <Alert variant="danger">Failed to save goal. Please try again.</Alert>
                     )}
-                </section>
+                </Section>
 
-                {/* Interventions */}
-                <section className="rounded-xl border border-border bg-white p-6">
-                    <div className="flex items-center justify-between mb-4">
-                        <h2 className="text-h4">Nursing interventions</h2>
-                        {!showInterventionForm && (
-                            <Button size="sm" variant="secondary" onClick={() => setShowInterventionForm(true)}>
-                                + Add intervention
-                            </Button>
-                        )}
-                    </div>
-
-                    {plan.interventions.length === 0 && !showInterventionForm && (
-                        <p className="text-body-sm text-on-surface-muted italic">
-                            No interventions yet.
-                        </p>
-                    )}
-
-                    {plan.interventions.length > 0 && (
-                        <ul className="space-y-4">
+                <Section
+                    number="04"
+                    title="Implementation — Interventions"
+                    right={
+                        <>
+                            <span className="text-xs text-on-surface-muted">
+                                {plan.interventions.length} intervention{plan.interventions.length !== 1 ? "s" : ""}
+                            </span>
+                            {!showInterventionForm && (
+                                <button onClick={() => setShowInterventionForm(true)} className="text-xs font-semibold text-brand-600 hover:text-brand-800">
+                                    + Add
+                                </button>
+                            )}
+                        </>
+                    }
+                >
+                    {plan.interventions.length === 0 && !showInterventionForm ? (
+                        <EmptyHint>No interventions yet.</EmptyHint>
+                    ) : (
+                        <div className="space-y-5">
                             {plan.interventions.map((iv, idx) => (
-                                <li key={iv.id} className="border-l-2 border-brand-300 pl-4">
-                                    <p className="text-xs font-medium text-on-surface-muted">
-                                        Intervention {idx + 1}
-                                    </p>
-                                    <p className="mt-1 text-body-sm text-on-surface">{iv.action}</p>
-                                    <div className="mt-2 rounded-lg bg-brand-50 p-3">
-                                        <p className="text-xs font-semibold text-brand-700">Rationale</p>
-                                        <p className="mt-1 text-xs text-brand-800">{iv.rationale}</p>
-                                    </div>
-                                </li>
+                                <InterventionCard key={iv.id} index={idx + 1} intervention={iv} />
                             ))}
-                        </ul>
+                        </div>
                     )}
 
                     {showInterventionForm && (
-                        <div className="mt-4">
+                        <div className="mt-4 rounded-xl border border-brand-200 bg-brand-50/30 p-4">
                             <InterventionForm
                                 submitting={addInterventionMutation.isPending}
                                 onCancel={() => setShowInterventionForm(false)}
-                                onSubmit={async (payload) => {
-                                    await addInterventionMutation.mutateAsync(payload)
-                                }}
+                                onSubmit={async (payload) => { await addInterventionMutation.mutateAsync(payload) }}
                             />
                         </div>
                     )}
-
                     {addInterventionMutation.isError && (
-                        <Alert variant="danger" className="mt-3">
-                            Failed to save intervention. Please try again.
-                        </Alert>
+                        <Alert variant="danger">Failed to save intervention. Please try again.</Alert>
                     )}
-                </section>
+                </Section>
+
+                <footer className="mt-8 flex items-center justify-between text-[11px] text-on-surface-muted">
+                    <span>NursifyGH · Nursing Care Plan Study Tool</span>
+                    <span>Drafted {formatLongDate(plan.created_at)}</span>
+                </footer>
             </div>
         </AppShell>
     )
+}
+
+// ─── Sub-components ────────────────────────────────────────────────────────────
+
+function Breadcrumb({ title }: { title: string }) {
+    return (
+        <div className="flex items-center gap-2 text-xs text-on-surface-muted mb-6">
+            <Link to="/careplans" className="hover:text-brand-700 transition-colors">Care Plans</Link>
+            <span>/</span>
+            <span className="text-on-surface font-medium truncate">{title}</span>
+        </div>
+    )
+}
+
+function CompletionIndicator({ completed, total }: { completed: number; total: number }) {
+    return (
+        <span className="ml-auto flex items-center gap-1">
+            {Array.from({ length: total }).map((_, i) => (
+                <div key={i} className={`h-1 w-6 rounded-full ${i < completed ? "bg-brand-600" : "bg-gray-200"}`} />
+            ))}
+            <span className="ml-2 text-[11px] font-semibold text-on-surface-muted uppercase tracking-wide">
+                {completed}/{total}
+            </span>
+        </span>
+    )
+}
+
+function Section({ number, title, right, children }: {
+    number: string
+    title: string
+    right?: React.ReactNode
+    children: React.ReactNode
+}) {
+    return (
+        <section className="py-6 border-b border-border">
+            <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-[10px] font-mono font-bold text-brand-700 tracking-widest">{number}</span>
+                <h2 className="text-sm font-bold text-on-surface uppercase tracking-wider">{title}</h2>
+                {right && <span className="ml-auto flex items-center gap-2">{right}</span>}
+            </div>
+            <div className="pl-7">{children}</div>
+        </section>
+    )
+}
+
+function Labeled({ label, children }: { label: string; children: React.ReactNode }) {
+    return (
+        <div>
+            <p className="text-[10px] font-bold text-on-surface-muted uppercase tracking-wider mb-1.5">{label}</p>
+            <p className="text-sm text-on-surface leading-relaxed">{children}</p>
+        </div>
+    )
+}
+
+function GoalCard({ index, goal }: { index: number; goal: any }) {
+    return (
+        <div className="relative pl-6 border-l-2 border-brand-200">
+            <div className="absolute -left-[7px] top-0 h-3 w-3 rounded-full bg-brand-500 ring-4 ring-white" />
+            <p className="text-[10px] font-bold text-brand-700 uppercase tracking-wider mb-2">Goal {index}</p>
+            <p className="text-sm text-on-surface leading-relaxed">{goal.specific}</p>
+        </div>
+    )
+}
+
+function InterventionCard({ index, intervention }: { index: number; intervention: any }) {
+    return (
+        <div className="relative pl-6 border-l-2 border-border">
+            <div className="absolute -left-[7px] top-1 h-3 w-3 rounded-full bg-gray-400 ring-4 ring-white" />
+            <p className="text-[10px] font-bold text-on-surface-muted uppercase tracking-wider mb-2">
+                Intervention {index}
+            </p>
+            <p className="text-sm font-medium text-on-surface leading-relaxed">{intervention.action}</p>
+            <div className="mt-2 pl-4 border-l border-amber-300">
+                <p className="text-[10px] font-bold text-amber-800 uppercase tracking-wider">Rationale</p>
+                <p className="mt-0.5 text-xs text-amber-900 leading-relaxed">{intervention.rationale}</p>
+            </div>
+        </div>
+    )
+}
+
+function EmptyHint({ children }: { children: React.ReactNode }) {
+    return <p className="text-sm text-on-surface-muted italic py-4">{children}</p>
 }
 
 function ShareButton({ planId }: { planId: string }) {
@@ -234,11 +320,7 @@ function ShareButton({ planId }: { planId: string }) {
             const shareUrl = `${window.location.origin}/shared/${link.token}`
             setUrl(shareUrl)
             setState("ready")
-            try {
-                await navigator.clipboard.writeText(shareUrl)
-            } catch {
-                /* clipboard may be unavailable */
-            }
+            navigator.clipboard.writeText(shareUrl).catch(() => { })
         } catch {
             setState("error")
         }
@@ -246,14 +328,11 @@ function ShareButton({ planId }: { planId: string }) {
 
     if (state === "ready") {
         return (
-            <div className="max-w-xs">
-                <p className="text-xs font-medium text-brand-700">Share link ready · copied</p>
-                <input
-                    readOnly
-                    value={url}
-                    onClick={(e) => (e.target as HTMLInputElement).select()}
-                    className="mt-1 w-full rounded-md border border-border bg-surface-subtle px-2 py-1 text-xs"
-                />
+            <div className="flex items-center gap-2 rounded-lg border border-green-300 bg-green-50 px-3 py-1.5">
+                <span className="text-xs font-semibold text-green-800">✓ Copied</span>
+                <button onClick={() => navigator.clipboard.writeText(url)} className="text-xs text-green-700 hover:underline">
+                    Copy again
+                </button>
             </div>
         )
     }
@@ -266,4 +345,8 @@ function ShareButton({ planId }: { planId: string }) {
             {state === "error" && <p className="mt-1 text-xs text-danger-700">Failed</p>}
         </div>
     )
+}
+
+function formatLongDate(date: string) {
+    return new Date(date).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })
 }

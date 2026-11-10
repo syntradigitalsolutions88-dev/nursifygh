@@ -6,15 +6,13 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
 from rest_framework import serializers
 
+from .models import ClinicalLog, ClinicalSkill
+
 User = get_user_model()
 
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
-    """Handles signup; validates and hashes the password."""
-
-    password = serializers.CharField(
-        write_only=True, min_length=8, validators=[validate_password]
-    )
+    password = serializers.CharField(write_only=True, min_length=8, validators=[validate_password])
     password_confirm = serializers.CharField(write_only=True)
 
     class Meta:
@@ -28,9 +26,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs: dict) -> dict:
         if attrs["password"] != attrs.pop("password_confirm"):
-            raise serializers.ValidationError(
-                {"password_confirm": "Passwords do not match."}
-            )
+            raise serializers.ValidationError({"password_confirm": "Passwords do not match."})
         return attrs
 
     def create(self, validated_data: dict) -> User:
@@ -39,12 +35,8 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
-    """Read/update serializer for the authenticated user's profile."""
-
     level_display = serializers.CharField(source="get_level_display", read_only=True)
-    program_display = serializers.CharField(
-        source="get_program_display", read_only=True
-    )
+    program_display = serializers.CharField(source="get_program_display", read_only=True)
 
     class Meta:
         model = User
@@ -52,23 +44,19 @@ class UserProfileSerializer(serializers.ModelSerializer):
             "id", "email", "full_name", "phone_number",
             "level", "level_display",
             "program", "program_display",
-            "institution",
+            "institution", "has_seen_tour",
             "is_subscribed", "subscription_expires_at",
             "has_active_subscription", "date_joined",
         )
         read_only_fields = (
-            "id", "email", "is_subscribed",
-            "subscription_expires_at", "has_active_subscription", "date_joined",
+            "id", "email", "is_subscribed", "subscription_expires_at",
+            "has_active_subscription", "date_joined",
         )
 
 
 class PasswordChangeSerializer(serializers.Serializer):
-    """Allows an authenticated user to rotate their password."""
-
     current_password = serializers.CharField(write_only=True)
-    new_password = serializers.CharField(
-        write_only=True, min_length=8, validators=[validate_password]
-    )
+    new_password = serializers.CharField(write_only=True, min_length=8, validators=[validate_password])
 
     def validate_current_password(self, value: str) -> str:
         user = self.context["request"].user
@@ -83,23 +71,22 @@ class PasswordChangeSerializer(serializers.Serializer):
 
 
 class PasswordResetRequestSerializer(serializers.Serializer):
-    """
-    POST body: {"email": "..."}
-    Always responds 200 even if the email doesn't exist — prevents account
-    enumeration attacks. The frontend shows a generic confirmation message.
-    """
-
     email = serializers.EmailField()
 
 
 class PasswordResetConfirmSerializer(serializers.Serializer):
-    """
-    POST body: {"uid": "...", "token": "...", "new_password": "..."}
-    Validates the reset token and sets a new password.
-    """
-
     uid = serializers.CharField()
     token = serializers.CharField()
-    new_password = serializers.CharField(
-        write_only=True, min_length=8, validators=[validate_password]
-    )
+    new_password = serializers.CharField(write_only=True, min_length=8, validators=[validate_password])
+
+
+class ClinicalSkillSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ClinicalSkill
+        fields = ("id", "procedure_name", "category", "completed_count", "required_count")
+
+
+class ClinicalLogSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ClinicalLog
+        fields = ("id", "date_performed", "hospital", "ward", "supervisor_name", "notes", "created_at")
