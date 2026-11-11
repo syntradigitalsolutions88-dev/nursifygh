@@ -102,7 +102,8 @@ export default function PastPaperUploadPage() {
                     rationale: q.rationale.trim(),
                 })),
             })
-            navigate(`/quizzes/${courseId}`)
+            // Questions are now PENDING — go to submissions page to track them
+            navigate("/my-submissions")
         } catch (err: any) {
             setError(err?.response?.data?.error || "Failed to save. Try again.")
         } finally {
@@ -120,7 +121,7 @@ export default function PastPaperUploadPage() {
                     </p>
                     <p className="text-sm text-on-surface-muted mt-2">
                         Upload a photo of any N&MC past paper. AI extracts the questions,
-                        then you review and save them to this course.
+                        then you review and submit them for approval.
                     </p>
                 </div>
 
@@ -176,6 +177,11 @@ export default function PastPaperUploadPage() {
                             </Button>
                         </div>
 
+                        <div className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-900">
+                            <strong>⚠️ Heads up:</strong> Submitted questions go through a review process
+                            before appearing in the quiz. Our team verifies accuracy within 24 hours.
+                        </div>
+
                         {questions.map((q, idx) => (
                             <div key={q.id} className="rounded-xl border border-border bg-white overflow-hidden">
                                 <div className="flex items-center justify-between border-b border-border bg-surface-subtle px-4 py-2">
@@ -221,9 +227,9 @@ export default function PastPaperUploadPage() {
                         ))}
 
                         <div className="flex gap-2 justify-end">
-                            <Button variant="secondary" onClick={() => navigate(`/quizzes/${courseId}`)}>Cancel</Button>
+                            <Button variant="secondary" onClick={() => navigate(`/courses`)}>Cancel</Button>
                             <Button onClick={handleSave} loading={saving}>
-                                {saving ? "Saving…" : `Save ${questions.length} question${questions.length !== 1 ? "s" : ""}`}
+                                {saving ? "Submitting…" : `Submit ${questions.length} question${questions.length !== 1 ? "s" : ""} for review`}
                             </Button>
                         </div>
                     </div>

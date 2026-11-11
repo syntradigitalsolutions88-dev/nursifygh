@@ -9,7 +9,7 @@ import random
 
 import requests
 from django.conf import settings
-from django.db.models import Count, Prefetch
+from django.db.models import Count, Prefetch, Q
 from django.utils import timezone
 from rest_framework import generics, permissions, status
 from rest_framework.parsers import FormParser, MultiPartParser
@@ -42,7 +42,13 @@ class CourseListView(generics.ListAPIView):
         user = self.request.user
         qs = (
             Course.objects.filter(is_published=True, level=user.level, program=user.program)
-            .annotate(_question_count=Count("questions", distinct=True))
+            .annotate(
+                _question_count=Count(
+                    "questions",
+                    filter=Q(questions__review_status="APPROVED", questions__is_published=True),
+                    distinct=True,
+                )
+            )
             .order_by("semester", "code")
         )
         category = self.request.query_params.get("category")
@@ -64,7 +70,12 @@ class CourseDetailView(generics.RetrieveAPIView):
         return (
             Course.objects.filter(is_published=True, level=user.level, program=user.program)
             .prefetch_related(
-                Prefetch("questions", queryset=Question.objects.filter(is_published=True).prefetch_related("choices"))
+                Prefetch(
+                    "questions",
+                    queryset=Question.objects.filter(
+                        is_published=True, review_status="APPROVED"
+                    ).prefetch_related("choices"),
+                )
             )
         )
 
@@ -119,7 +130,11 @@ class MockExamView(APIView):
     def get(self, request):
         user = request.user
         courses = Course.objects.filter(is_published=True, level=user.level, program=user.program)
-        all_questions = list(Question.objects.filter(course__in=courses, is_published=True))
+        all_questions = list(
+            Question.objects.filter(
+                course__in=courses, is_published=True, review_status="APPROVED"
+            )
+        )
         random.shuffle(all_questions)
         selected_questions = all_questions[:50]
 
@@ -227,15 +242,13 @@ class PastPaperExtractView(APIView):
                 "https://api.groq.com/openai/v1/chat/completions",
                 json={
                     "model": "qwen/qwen3.8-27b",
-                    "messages": [
-                        {
-                            "role": "user",
-                            "content": [
-                                {"type": "text", "text": PAST_PAPER_PROMPT},
-                                {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{image_b64}"}},
-                            ],
-                        }
-                    ],
+                    "messages": [{
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": PAST_PAPER_PROMPT},
+                            {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{image_b64}"}},
+                        ],
+                    }],
                     "temperature": 0.1,
                     "max_tokens": 4000,
                     "response_format": {"type": "json_object"},
@@ -259,7 +272,7 @@ class PastPaperExtractView(APIView):
 
 
 class PastPaperSaveView(APIView):
-    """Save extracted questions to a specific course."""
+    """Save extracted questions to a specific course, pending review."""
 
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
@@ -283,7 +296,12 @@ class PastPaperSaveView(APIView):
                 continue
 
             question = Question.objects.create(
-                course=course, text=text, rationale=q.get("rationale", ""), is_published=True
+                course=course,
+                text=text,
+                rationale=q.get("rationale", ""),
+                is_published=False,           # not visible until approved
+                review_status="PENDING",      # goes into review queue
+                uploaded_by=request.user,
             )
             for pos, choice in enumerate(choices):
                 Choice.objects.create(
@@ -294,4 +312,30 @@ class PastPaperSaveView(APIView):
                 )
             created += 1
 
-        return Response({"created": created})
+        return Response({
+            "created": created,
+            "message": f"{created} question(s) submitted for review. They'll appear in the quiz once approved.",
+        })
+
+
+class MySubmissionsView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        questions = (
+            Question.objects.filter(uploaded_by=request.user)
+            .select_related("course")
+            .order_by("-created_at")
+        )
+        return Response([
+            {
+                "id": str(q.id),
+                "text": q.text,
+                "course_code": q.course.code,
+                "course_title": q.course.title,
+                "review_status": q.review_status,
+                "review_note": q.review_note,
+                "created_at": q.created_at.isoformat(),
+            }
+            for q in questions
+        ])

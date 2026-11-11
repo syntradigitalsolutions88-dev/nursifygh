@@ -7,6 +7,7 @@ from .views import (
     CourseListView,
     MockExamSubmitView,
     MockExamView,
+    MySubmissionsView,
     PastPaperExtractView,
     PastPaperSaveView,
     QuizHistoryView,
@@ -24,4 +25,5 @@ urlpatterns = [
     path("quizzes/mock-exam/submit/", MockExamSubmitView.as_view(), name="mock-exam-submit"),
     path("past-paper/extract/", PastPaperExtractView.as_view(), name="past-paper-extract"),
     path("past-paper/save/", PastPaperSaveView.as_view(), name="past-paper-save"),
+    path("my-submissions/", MySubmissionsView.as_view(), name="my-submissions"),
 ]

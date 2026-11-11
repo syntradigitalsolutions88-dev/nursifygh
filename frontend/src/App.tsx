@@ -19,6 +19,7 @@ import HelpCenterPage from "./pages/HelpCenterPage"
 import LandingPage from "./pages/LandingPage"
 import LoginPage from "./pages/LoginPage"
 import MockExamPage from "./pages/MockExamPage"
+import MySubmissionsPage from "./pages/MySubmissionsPage"
 import NcpBuilderPage from "./pages/NcpBuilderPage"
 import PastPaperUploadPage from "./pages/PastPaperUploadPage"
 import PrivacyPage from "./pages/PrivacyPage"
@@ -55,20 +56,18 @@ export default function App() {
       <Route path="/shared/:token" element={<SharedPlanPage />} />
       <Route path="/checkout/callback" element={<CheckoutCallbackPage />} />
 
-      {/* Dashboard — accessible but shows a subscribe CTA if unpaid */}
+      {/* Dashboard */}
       <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
       <Route path="/subscribe" element={<ProtectedRoute><SubscribePage /></ProtectedRoute>} />
       <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
       <Route path="/support" element={<ProtectedRoute><AppHelpPage /></ProtectedRoute>} />
       <Route path="/support/contact" element={<ProtectedRoute><AppContactPage /></ProtectedRoute>} />
+      <Route path="/my-submissions" element={<ProtectedRoute><MySubmissionsPage /></ProtectedRoute>} />
 
-      {/* Paywalled — Courses & Quizzes */}
+      {/* Courses & Quizzes */}
       <Route path="/courses" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Courses & Quizzes"
-            description="148 NMC courses with 1,000+ practice questions across all 4 departments."
-          >
+          <PaywallGate feature="Courses & Quizzes" description="148 NMC courses with 1,000+ practice questions across all 4 departments.">
             <CoursesPage />
           </PaywallGate>
         </ProtectedRoute>
@@ -76,22 +75,15 @@ export default function App() {
 
       <Route path="/quizzes/:courseId" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Practice Quiz"
-            description="Answer real NMC past questions with instant grading and rationales."
-          >
+          <PaywallGate feature="Practice Quiz" description="Answer real NMC past questions with instant grading and rationales.">
             <QuizPage />
           </PaywallGate>
         </ProtectedRoute>
       } />
 
-      {/* NEW — Past Paper OCR Upload */}
       <Route path="/courses/:courseId/upload" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Upload Past Paper"
-            description="Upload a photo of any N&MC past paper and turn it into practice questions."
-          >
+          <PaywallGate feature="Upload Past Paper" description="Upload a photo of any N&MC past paper and turn it into practice questions.">
             <PastPaperUploadPage />
           </PaywallGate>
         </ProtectedRoute>
@@ -99,46 +91,34 @@ export default function App() {
 
       <Route path="/quizzes/results/:attemptId" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Quiz Results"
-            description="Review your answers with clinical rationales for every question."
-          >
+          <PaywallGate feature="Quiz Results" description="Review your answers with clinical rationales for every question.">
             <QuizResultsPage />
           </PaywallGate>
         </ProtectedRoute>
       } />
 
-      {/* Paywalled — Mock Exam */}
+      {/* Mock Exam */}
       <Route path="/mock-exam" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Mock Exam Simulator"
-            description="Take 60-minute, 50-question exams with auto-grading and timer."
-          >
+          <PaywallGate feature="Mock Exam Simulator" description="Take 60-minute, 50-question exams with auto-grading and timer.">
             <MockExamPage />
           </PaywallGate>
         </ProtectedRoute>
       } />
 
-      {/* Paywalled — Clinicals */}
+      {/* Clinicals */}
       <Route path="/clinicals" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Clinical Tracker"
-            description="Log procedures with hospital, ward, and supervisor — ready for your N&MC booklet."
-          >
+          <PaywallGate feature="Clinical Tracker" description="Log procedures with hospital, ward, and supervisor — ready for your N&MC booklet.">
             <ClinicalsPage />
           </PaywallGate>
         </ProtectedRoute>
       } />
 
-      {/* Paywalled — Care Plans */}
+      {/* Care Plans */}
       <Route path="/careplans" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Care Plans"
-            description="Build NANDA-based care plans with AI assistance and SMART goals."
-          >
+          <PaywallGate feature="Care Plans" description="Build NANDA-based care plans with AI assistance and SMART goals.">
             <CarePlansPage />
           </PaywallGate>
         </ProtectedRoute>
@@ -146,10 +126,7 @@ export default function App() {
 
       <Route path="/careplans/new" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Create Care Plan"
-            description="Use AI Autofill to draft a complete NCP in seconds."
-          >
+          <PaywallGate feature="Create Care Plan" description="Use AI Autofill to draft a complete NCP in seconds.">
             <NcpBuilderPage />
           </PaywallGate>
         </ProtectedRoute>
@@ -157,10 +134,7 @@ export default function App() {
 
       <Route path="/careplans/:planId" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Care Plan Detail"
-            description="View, edit, and share your NANDA care plans."
-          >
+          <PaywallGate feature="Care Plan Detail" description="View, edit, and share your NANDA care plans.">
             <CarePlanDetailPage />
           </PaywallGate>
         </ProtectedRoute>
@@ -168,22 +142,16 @@ export default function App() {
 
       <Route path="/careplans/:planId/transcription" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="N&MC Transcription View"
-            description="Print-ready N&MC licensure format for your clinical booklet."
-          >
+          <PaywallGate feature="N&MC Transcription View" description="Print-ready N&MC licensure format for your clinical booklet.">
             <CarePlanTranscriptionPage />
           </PaywallGate>
         </ProtectedRoute>
       } />
 
-      {/* Paywalled — Library */}
+      {/* Library */}
       <Route path="/library" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Community Library"
-            description="Browse and copy care plans shared by other nursing students."
-          >
+          <PaywallGate feature="Community Library" description="Browse and copy care plans shared by other nursing students.">
             <PublicLibraryPage />
           </PaywallGate>
         </ProtectedRoute>
@@ -191,10 +159,7 @@ export default function App() {
 
       <Route path="/library/:planId" element={
         <ProtectedRoute>
-          <PaywallGate
-            feature="Shared Care Plan"
-            description="View detailed NCPs from the community library."
-          >
+          <PaywallGate feature="Shared Care Plan" description="View detailed NCPs from the community library.">
             <PublicPlanDetailPage />
           </PaywallGate>
         </ProtectedRoute>

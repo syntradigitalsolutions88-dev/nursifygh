@@ -55,6 +55,14 @@ function LibraryIcon() {
     )
 }
 
+function SubmissionsIcon() {
+    return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+        </svg>
+    )
+}
+
 function ProfileIcon() {
     return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
@@ -85,6 +93,7 @@ const navItems: NavItem[] = [
     { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
     { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
     { label: "Library", to: "/library", icon: <LibraryIcon /> },
+    { label: "My Submissions", to: "/my-submissions", icon: <SubmissionsIcon /> },
     { label: "Profile", to: "/profile", icon: <ProfileIcon /> },
     { label: "Help & Support", to: "/support", icon: <HelpIcon /> },
 ]
@@ -118,7 +127,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
     return (
         <div className="min-h-screen bg-surface">
-            {/* ---- Desktop sidebar ---- */}
             <aside className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 lg:left-0 lg:w-60 border-r border-border bg-surface-subtle z-20">
                 <div className="px-5 py-5 border-b border-border">
                     <Link to="/dashboard" aria-label="Dashboard">
@@ -145,7 +153,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                     ))}
                 </nav>
 
-                {/* Subscription card */}
                 <div className="px-3 pb-3">
                     {user.has_active_subscription ? (
                         <div className="rounded-lg border border-border bg-white p-3">
@@ -160,39 +167,22 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             </p>
                         </div>
                     ) : (
-                        <Link
-                            to="/subscribe"
-                            className="block rounded-lg border border-brand-200 bg-brand-50 p-3 hover:bg-brand-100 transition-colors"
-                        >
-                            <p className="text-xs font-semibold text-brand-800">
-                                Unlock everything
-                            </p>
+                        <Link to="/subscribe" className="block rounded-lg border border-brand-200 bg-brand-50 p-3 hover:bg-brand-100 transition-colors">
+                            <p className="text-xs font-semibold text-brand-800">Unlock everything</p>
                             <p className="mt-1 text-xs text-brand-700">GHS 30 / semester</p>
-                            <p className="mt-2 text-xs font-medium text-brand-600">
-                                Subscribe →
-                            </p>
+                            <p className="mt-2 text-xs font-medium text-brand-600">Subscribe →</p>
                         </Link>
                     )}
                 </div>
 
-                {/* User + logout */}
                 <div className="border-t border-border px-3 py-3">
                     <div className="flex items-center gap-2">
                         <Avatar name={user.full_name} size="sm" />
                         <div className="min-w-0 flex-1">
-                            <p className="truncate text-xs font-medium text-on-surface">
-                                {user.full_name}
-                            </p>
-                            <p className="truncate text-xs text-on-surface-muted">
-                                {user.level_display}
-                            </p>
+                            <p className="truncate text-xs font-medium text-on-surface">{user.full_name}</p>
+                            <p className="truncate text-xs text-on-surface-muted">{user.level_display}</p>
                         </div>
-                        <button
-                            onClick={handleLogout}
-                            className="rounded p-1 text-on-surface-muted hover:bg-surface-inset hover:text-on-surface"
-                            aria-label="Log out"
-                            title="Log out"
-                        >
+                        <button onClick={handleLogout} className="rounded p-1 text-on-surface-muted hover:bg-surface-inset hover:text-on-surface" aria-label="Log out" title="Log out">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-4 w-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                             </svg>
@@ -201,7 +191,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </div>
             </aside>
 
-            {/* ---- Main content ---- */}
             <div className="lg:pl-60">
                 <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur-sm border-b border-border">
                     <div className="flex items-center justify-between px-4 py-3 lg:px-8 lg:py-4">
@@ -214,9 +203,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             {currentNav ? (
                                 <>
                                     <span className="text-brand-600">{currentNav.icon}</span>
-                                    <p className="text-caption text-on-surface-muted">
-                                        {currentNav.label}
-                                    </p>
+                                    <p className="text-caption text-on-surface-muted">{currentNav.label}</p>
                                 </>
                             ) : (
                                 <p className="text-caption text-on-surface-muted">NursifyGH</p>
@@ -231,56 +218,24 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                     </Badge>
                                 </Link>
                             )}
-                            <Link
-                                to="/support"
-                                className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface"
-                                aria-label="Help & Support"
-                                title="Help & Support"
-                            >
+                            <Link to="/support" className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface" aria-label="Help & Support" title="Help & Support">
                                 <HelpIcon />
                             </Link>
-                            <button
-                                onClick={() => setProfileOpen(!profileOpen)}
-                                className="relative"
-                                aria-label="User menu"
-                            >
+                            <button onClick={() => setProfileOpen(!profileOpen)} className="relative" aria-label="User menu">
                                 <Avatar name={user.full_name} size="sm" />
                             </button>
                             {profileOpen && (
                                 <>
-                                    <div
-                                        className="fixed inset-0 z-40"
-                                        onClick={() => setProfileOpen(false)}
-                                    />
+                                    <div className="fixed inset-0 z-40" onClick={() => setProfileOpen(false)} />
                                     <div className="absolute right-0 top-12 z-50 w-56 rounded-lg border border-border bg-white shadow-lg py-1">
                                         <div className="px-4 py-3 border-b border-border">
-                                            <p className="text-sm font-medium text-on-surface truncate">
-                                                {user.full_name}
-                                            </p>
-                                            <p className="text-xs text-on-surface-muted truncate">
-                                                {user.email}
-                                            </p>
+                                            <p className="text-sm font-medium text-on-surface truncate">{user.full_name}</p>
+                                            <p className="text-xs text-on-surface-muted truncate">{user.email}</p>
                                         </div>
-                                        <Link
-                                            to="/profile"
-                                            className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle"
-                                            onClick={() => setProfileOpen(false)}
-                                        >
-                                            Profile
-                                        </Link>
-                                        <Link
-                                            to="/support"
-                                            className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle"
-                                            onClick={() => setProfileOpen(false)}
-                                        >
-                                            Help &amp; Support
-                                        </Link>
-                                        <button
-                                            onClick={handleLogout}
-                                            className="w-full text-left flex items-center gap-2 px-4 py-2 text-sm text-danger-700 hover:bg-surface-subtle"
-                                        >
-                                            Log out
-                                        </button>
+                                        <Link to="/profile" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Profile</Link>
+                                        <Link to="/my-submissions" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>My Submissions</Link>
+                                        <Link to="/support" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Help &amp; Support</Link>
+                                        <button onClick={handleLogout} className="w-full text-left flex items-center gap-2 px-4 py-2 text-sm text-danger-700 hover:bg-surface-subtle">Log out</button>
                                     </div>
                                 </>
                             )}
@@ -289,9 +244,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </header>
 
                 <main className="pb-20 lg:pb-0">
-                    <div className="max-w-5xl mx-auto px-4 py-6 lg:px-8 lg:py-8">
-                        {children}
-                    </div>
+                    <div className="max-w-5xl mx-auto px-4 py-6 lg:px-8 lg:py-8">{children}</div>
                 </main>
             </div>
 
@@ -303,10 +256,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             to={item.to}
                             end={item.end}
                             className={({ isActive }) =>
-                                `flex-1 flex flex-col items-center justify-center gap-1 py-2 text-xs font-medium transition-colors ${isActive
-                                    ? "text-brand-700"
-                                    : "text-on-surface-muted hover:text-on-surface"
-                                }`
+                                `flex-1 flex flex-col items-center justify-center gap-1 py-2 text-xs font-medium transition-colors ${isActive ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`
                             }
                         >
                             {item.icon}
