@@ -38,6 +38,7 @@ env = environ.Env(
     GEMINI_API_KEY=(str, ""),
     GROQ_API_KEY=(str, ""),
     RESEND_API_KEY=(str, ""),
+    BREVO_API_KEY=(str, ""),
 )
 
 # Load .env ONLY in development
@@ -233,6 +234,7 @@ HUBTEL_CLIENT_SECRET = env("HUBTEL_CLIENT_SECRET", default="")
 GEMINI_API_KEY = env("GEMINI_API_KEY")
 GROQ_API_KEY = env("GROQ_API_KEY")
 RESEND_API_KEY = env("RESEND_API_KEY")
+BREVO_API_KEY = env("BREVO_API_KEY")
 
 # Security hardening (only in production)
 if not DEBUG:
