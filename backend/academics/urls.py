@@ -5,6 +5,10 @@ from django.urls import path
 from .views import (
     CourseDetailView,
     CourseListView,
+    MockExamSubmitView,
+    MockExamView,
+    PastPaperExtractView,
+    PastPaperSaveView,
     QuizHistoryView,
     QuizSubmitView,
 )
@@ -16,16 +20,8 @@ urlpatterns = [
     path("courses/<uuid:id>/", CourseDetailView.as_view(), name="course-detail"),
     path("quizzes/submit/", QuizSubmitView.as_view(), name="quiz-submit"),
     path("quizzes/history/", QuizHistoryView.as_view(), name="quiz-history"),
-]
-from .views import MockExamView
-from django.urls import path
-
-urlpatterns += [
     path("quizzes/mock-exam/", MockExamView.as_view(), name="mock-exam"),
-]
-
-from .views import MockExamSubmitView
-
-urlpatterns += [
     path("quizzes/mock-exam/submit/", MockExamSubmitView.as_view(), name="mock-exam-submit"),
+    path("past-paper/extract/", PastPaperExtractView.as_view(), name="past-paper-extract"),
+    path("past-paper/save/", PastPaperSaveView.as_view(), name="past-paper-save"),
 ]

@@ -2,29 +2,38 @@
 
 from __future__ import annotations
 
+import base64
+import json
+import logging
+import random
+
+import requests
+from django.conf import settings
 from django.db.models import Count, Prefetch
+from django.utils import timezone
 from rest_framework import generics, permissions, status
+from rest_framework.parsers import FormParser, MultiPartParser
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from accounts.permissions import IsSubscribed
-from .models import Course, Question, QuizAttempt
+from .models import Choice, Course, Question, QuizAttempt
 from .serializers import (
     CourseDetailSerializer,
     CourseListSerializer,
+    QuestionPublicSerializer,
     QuizAttemptResultSerializer,
     QuizSubmissionSerializer,
 )
 from .services import QuizGradingError, grade_and_persist_attempt
 
+logger = logging.getLogger(__name__)
+
+
+# ─── Course listing / detail ──────────────────────────────────────────────────
+
 
 class CourseListView(generics.ListAPIView):
-    """
-    GET /api/academics/courses/
-    Lists published courses for the authenticated student's level and program.
-    Optional query params: ?category=FUNDAMENTALS&semester=S1
-    """
-
     serializer_class = CourseListSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
     pagination_class = None
@@ -32,11 +41,7 @@ class CourseListView(generics.ListAPIView):
     def get_queryset(self):
         user = self.request.user
         qs = (
-            Course.objects.filter(
-                is_published=True,
-                level=user.level,
-                program=user.program,
-            )
+            Course.objects.filter(is_published=True, level=user.level, program=user.program)
             .annotate(_question_count=Count("questions", distinct=True))
             .order_by("semester", "code")
         )
@@ -50,11 +55,6 @@ class CourseListView(generics.ListAPIView):
 
 
 class CourseDetailView(generics.RetrieveAPIView):
-    """
-    GET /api/academics/courses/<uuid>/
-    Returns the course plus its full question set (no answer keys).
-    """
-
     serializer_class = CourseDetailSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
     lookup_field = "id"
@@ -62,35 +62,21 @@ class CourseDetailView(generics.RetrieveAPIView):
     def get_queryset(self):
         user = self.request.user
         return (
-            Course.objects.filter(
-                is_published=True,
-                level=user.level,
-                program=user.program,
-            )
+            Course.objects.filter(is_published=True, level=user.level, program=user.program)
             .prefetch_related(
-                Prefetch(
-                    "questions",
-                    queryset=Question.objects.filter(
-                        is_published=True
-                    ).prefetch_related("choices"),
-                )
+                Prefetch("questions", queryset=Question.objects.filter(is_published=True).prefetch_related("choices"))
             )
         )
+
+
+# ─── Quiz submit / history ────────────────────────────────────────────────────
 
 
 class QuizSubmitView(APIView):
-    """
-    POST /api/academics/quizzes/submit/
-    Body: {"course_id": "<uuid>", "answers": [{"question_id": "...", "choice_id": "..."}]}
-    Returns the graded attempt with per-question rationale for review.
-    """
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request, *args, **kwargs):
-        serializer = QuizSubmissionSerializer(
-            data=request.data, context={"request": request}
-        )
+        serializer = QuizSubmissionSerializer(data=request.data, context={"request": request})
         serializer.is_valid(raise_exception=True)
 
         course = serializer.validated_data["course_id"]
@@ -101,30 +87,17 @@ class QuizSubmitView(APIView):
                 student=request.user, course=course, submitted_answers=answers
             )
         except QuizGradingError as exc:
-            return Response(
-                {"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST
-            )
+            return Response({"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST)
 
         attempt = (
             QuizAttempt.objects.select_related("course")
-            .prefetch_related(
-                "answers__question__choices",
-                "answers__selected_choice",
-            )
+            .prefetch_related("answers__question__choices", "answers__selected_choice")
             .get(pk=attempt.pk)
         )
-        return Response(
-            QuizAttemptResultSerializer(attempt).data,
-            status=status.HTTP_201_CREATED,
-        )
+        return Response(QuizAttemptResultSerializer(attempt).data, status=status.HTTP_201_CREATED)
 
 
 class QuizHistoryView(generics.ListAPIView):
-    """
-    GET /api/academics/quizzes/history/
-    Returns the authenticated student's attempt history (most recent first).
-    """
-
     serializer_class = QuizAttemptResultSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
@@ -132,70 +105,50 @@ class QuizHistoryView(generics.ListAPIView):
         return (
             QuizAttempt.objects.filter(student=self.request.user)
             .select_related("course")
-            .prefetch_related(
-                "answers__question__choices",
-                "answers__selected_choice",
-            )
+            .prefetch_related("answers__question__choices", "answers__selected_choice")
             .order_by("-started_at")
         )
-import random
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import permissions
-from accounts.permissions import IsSubscribed
-from .models import Course, Question
-from .serializers import QuestionPublicSerializer
+
+
+# ─── Mock exam ────────────────────────────────────────────────────────────────
+
 
 class MockExamView(APIView):
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def get(self, request):
         user = request.user
-        # 1. Get all courses for this student's level and program
         courses = Course.objects.filter(is_published=True, level=user.level, program=user.program)
-        
-        # 2. Get all questions from those courses
         all_questions = list(Question.objects.filter(course__in=courses, is_published=True))
-        
-        # 3. Shuffle and pick 50 (or fewer if they don't have that many yet)
         random.shuffle(all_questions)
         selected_questions = all_questions[:50]
-        
-        # 4. Serialize and return
+
         serializer = QuestionPublicSerializer(selected_questions, many=True)
         return Response({
             "title": f"Level {user.level} Mock Exam",
             "total_questions": len(selected_questions),
             "duration_minutes": 60,
-            "questions": serializer.data
+            "questions": serializer.data,
         })
 
-from .models import Choice
-from django.utils import timezone
-from .serializers import QuizAttemptResultSerializer
 
 class MockExamSubmitView(APIView):
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request):
         answers = request.data.get("answers", {})
-        # answers looks like: {"question_uuid": "choice_uuid", ...}
-        
         if not answers:
             return Response({"detail": "No answers provided"}, status=400)
-            
+
         question_ids = list(answers.keys())
         questions = Question.objects.filter(id__in=question_ids)
-        
         if not questions:
             return Response({"detail": "Questions not found"}, status=400)
-            
-        # Get the courses from the first question (assuming single-level exam)
+
         first_course = questions.first().course
-        
         correct_count = 0
         total = len(questions)
-        
+
         for q in questions:
             chosen_choice_id = answers.get(str(q.id))
             if not chosen_choice_id:
@@ -205,19 +158,140 @@ class MockExamSubmitView(APIView):
                 correct_count += 1
 
         score = round((correct_count / total) * 100, 2) if total > 0 else 0
-        
+
         attempt = QuizAttempt.objects.create(
             student=request.user,
             course=first_course,
             total_questions=total,
             correct_answers=correct_count,
             score_percentage=score,
-            completed_at=timezone.now()
+            completed_at=timezone.now(),
         )
-        
+
         return Response({
             "attempt_id": attempt.id,
             "score_percentage": score,
             "correct_answers": correct_count,
-            "total_questions": total
+            "total_questions": total,
         })
+
+
+# ─── Past Paper OCR ───────────────────────────────────────────────────────────
+
+PAST_PAPER_PROMPT = (
+    "You are an OCR and nursing exam extraction assistant for Ghanaian N&MC past papers. "
+    "The image is a photo of a nursing exam question page. Extract EVERY question you can see.\n\n"
+    "Return ONLY a valid JSON object with this exact shape (no markdown, no explanation):\n"
+    "{\n"
+    '  "questions": [\n'
+    "    {\n"
+    '      "question_text": "Full question text",\n'
+    '      "options": ["A. option text", "B. option text", "C. option text", "D. option text"],\n'
+    '      "correct_answer": "A",\n'
+    '      "rationale": ""\n'
+    "    }\n"
+    "  ]\n"
+    "}\n\n"
+    "RULES:\n"
+    "1. Extract the question text EXACTLY as written — do not paraphrase.\n"
+    "2. If the correct answer is marked, set 'correct_answer' to the letter (A, B, C, or D).\n"
+    "3. If the correct answer is NOT visible, set 'correct_answer' to null.\n"
+    "4. Keep 'rationale' as an empty string.\n"
+    "5. If a question has fewer than 4 options, include only visible options.\n"
+    "6. If no questions are visible, return {\"questions\": []}."
+)
+
+
+class PastPaperExtractView(APIView):
+    permission_classes = (permissions.IsAuthenticated, IsSubscribed)
+    parser_classes = (MultiPartParser, FormParser)
+
+    def post(self, request):
+        image_file = request.FILES.get("image")
+        if not image_file:
+            return Response({"error": "No image uploaded."}, status=400)
+
+        if image_file.size > 20 * 1024 * 1024:
+            return Response({"error": "Image is too large. Max 20MB."}, status=400)
+
+        api_key = getattr(settings, "GROQ_API_KEY", None)
+        if not api_key:
+            return Response({"error": "AI is not configured."}, status=500)
+
+        image_bytes = image_file.read()
+        image_b64 = base64.b64encode(image_bytes).decode("utf-8")
+        mime = image_file.content_type or "image/jpeg"
+
+        try:
+            r = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                json={
+                    "model": "qwen/qwen3.8-27b",
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": [
+                                {"type": "text", "text": PAST_PAPER_PROMPT},
+                                {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{image_b64}"}},
+                            ],
+                        }
+                    ],
+                    "temperature": 0.1,
+                    "max_tokens": 4000,
+                    "response_format": {"type": "json_object"},
+                },
+                headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+                timeout=90,
+            )
+
+            if r.status_code != 200:
+                logger.error("Groq vision error: %s - %s", r.status_code, r.text[:500])
+                return Response({"error": "AI could not read this image."}, status=500)
+
+            content = r.json()["choices"][0]["message"]["content"]
+            data = json.loads(content)
+            return Response(data)
+        except json.JSONDecodeError:
+            return Response({"error": "AI returned invalid data. Please try again."}, status=500)
+        except Exception:
+            logger.exception("Past paper extraction failed")
+            return Response({"error": "AI is currently unavailable."}, status=500)
+
+
+class PastPaperSaveView(APIView):
+    """Save extracted questions to a specific course."""
+
+    permission_classes = (permissions.IsAuthenticated, IsSubscribed)
+
+    def post(self, request):
+        course_id = request.data.get("course_id")
+        questions = request.data.get("questions", [])
+
+        if not course_id or not questions:
+            return Response({"error": "course_id and questions are required."}, status=400)
+
+        try:
+            course = Course.objects.get(id=course_id, level=request.user.level, program=request.user.program)
+        except Course.DoesNotExist:
+            return Response({"error": "Course not found."}, status=404)
+
+        created = 0
+        for q in questions:
+            text = q.get("question_text", "").strip()
+            choices = q.get("choices", [])
+            if not text or len(choices) < 2:
+                continue
+
+            question = Question.objects.create(
+                course=course, text=text, rationale=q.get("rationale", ""), is_published=True
+            )
+            for pos, choice in enumerate(choices):
+                Choice.objects.create(
+                    question=question,
+                    text=choice.get("text", "").strip(),
+                    is_correct=bool(choice.get("is_correct")),
+                    position=pos,
+                )
+            created += 1
+
+        return Response({"created": created})

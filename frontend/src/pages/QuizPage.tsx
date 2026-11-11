@@ -42,9 +42,14 @@ export default function QuizPage() {
                     <p className="mt-1 text-xs text-on-surface-muted">
                         This course's questions are coming soon.
                     </p>
-                    <Link to="/courses" className="mt-4 inline-block">
-                        <Button variant="secondary" size="sm">← Back to courses</Button>
-                    </Link>
+                    <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                        <Link to="/courses">
+                            <Button variant="secondary" size="sm">← Back to courses</Button>
+                        </Link>
+                        <Link to={`/courses/${courseId}/upload`}>
+                            <Button size="sm">📸 Upload past paper</Button>
+                        </Link>
+                    </div>
                 </div>
             </AppShell>
         )
@@ -81,6 +86,21 @@ export default function QuizPage() {
                     <p className="mt-2 text-body-sm text-on-surface-muted">
                         Choose how many questions you want to practice. Questions will be randomly selected.
                     </p>
+                </div>
+
+                {/* Past Paper Upload Card */}
+                <div className="rounded-xl border border-dashed border-border bg-surface-subtle p-4">
+                    <div className="flex items-center justify-between gap-3">
+                        <div>
+                            <p className="text-sm font-medium text-on-surface">Have a past paper photo?</p>
+                            <p className="text-xs text-on-surface-muted mt-0.5">
+                                Upload it and AI will extract the questions for this course.
+                            </p>
+                        </div>
+                        <Link to={`/courses/${courseId}/upload`}>
+                            <Button variant="secondary" size="sm">📸 Upload</Button>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="rounded-xl border border-border bg-white p-6 space-y-5">
@@ -162,7 +182,6 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
         onError: (err: any) => {
             const detail = err?.response?.data
             if (detail && typeof detail === "object") {
-                // Flatten DRF field errors into a readable message
                 const messages = Object.entries(detail).map(
                     ([key, val]) => `${key}: ${Array.isArray(val) ? val.join(", ") : val}`
                 )
@@ -196,7 +215,6 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
     function handleSubmit() {
         setSubmitError(null)
 
-        // Match the exact QuizSubmitRequest shape
         const payload: QuizSubmitRequest = {
             course_id: courseId,
             answers: questions.map((q) => ({
