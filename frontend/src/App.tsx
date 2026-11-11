@@ -20,6 +20,7 @@ import LandingPage from "./pages/LandingPage"
 import LoginPage from "./pages/LoginPage"
 import MockExamPage from "./pages/MockExamPage"
 import NcpBuilderPage from "./pages/NcpBuilderPage"
+import PastPaperUploadPage from "./pages/PastPaperUploadPage"
 import PrivacyPage from "./pages/PrivacyPage"
 import ProfilePage from "./pages/ProfilePage"
 import PublicLibraryPage from "./pages/PublicLibraryPage"
@@ -80,6 +81,18 @@ export default function App() {
             description="Answer real NMC past questions with instant grading and rationales."
           >
             <QuizPage />
+          </PaywallGate>
+        </ProtectedRoute>
+      } />
+
+      {/* NEW — Past Paper OCR Upload */}
+      <Route path="/courses/:courseId/upload" element={
+        <ProtectedRoute>
+          <PaywallGate
+            feature="Upload Past Paper"
+            description="Upload a photo of any N&MC past paper and turn it into practice questions."
+          >
+            <PastPaperUploadPage />
           </PaywallGate>
         </ProtectedRoute>
       } />
