@@ -288,9 +288,13 @@ class PastPaperSaveView(APIView):
         except Course.DoesNotExist:
             return Response({"error": "Course not found."}, status=404)
 
+        import re
+
         created = 0
         for q in questions:
+            # Strip leading numbers like "41. " or "28)" from OCR'd questions
             text = q.get("question_text", "").strip()
+            text = re.sub(r"^\d+[\.\)]\s*", "", text)
             choices = q.get("choices", [])
             if not text or len(choices) < 2:
                 continue
