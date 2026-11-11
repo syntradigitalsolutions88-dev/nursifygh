@@ -7,9 +7,9 @@ import ChatWidget from "../components/support/ChatWidget"
 
 const features = [
     {
-        title: "Past questions, decoded",
+        title: "Practice questions with rationales",
         description:
-            "Real NMC-style questions with detailed clinical rationales — so you understand the reasoning, not just the answer.",
+            "Real NMC-style questions with explanations for every answer. You'll see why each option is correct — not just the answer.",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-6 w-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -19,7 +19,7 @@ const features = [
     {
         title: "Timed mock exams",
         description:
-            "Practice under real exam conditions. See your score, identify weak areas, and track your readiness across the semester.",
+            "50 questions, 60 minutes. Same format as the actual NMC paper. See your score immediately after you submit.",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-6 w-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -27,9 +27,9 @@ const features = [
         ),
     },
     {
-        title: "NANDA care plans",
+        title: "Care plan drafting",
         description:
-            "Draft NCPs with AI-assisted NANDA diagnosis selection, SMART goals, and physiological rationales. Transcribe onto your N&MC booklet.",
+            "Build a NANDA care plan with AI assistance. Then transcribe it onto your official N&MC booklet. We help you draft; you submit on paper.",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-6 w-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
@@ -41,11 +41,11 @@ const features = [
 const faqs = [
     {
         q: "Who is NursifyGH for?",
-        a: "Nursing and midwifery students in Ghana at Levels 100, 200, and 300 — including those preparing for NMC/N&MC licensing exams.",
+        a: "Nursing and midwifery students in Ghana at Levels 100, 200, and 300 — including those preparing for NMC licensing exams.",
     },
     {
         q: "What courses are available?",
-        a: "Courses covering Fundamentals, Anatomy, Pharmacology, Medical-Surgical Nursing, Maternal & Child Health, Community Health, Mental Health, Midwifery, and more.",
+        a: "Fundamentals, Anatomy, Pharmacology, Medical-Surgical Nursing, Maternal & Child Health, Community Health, Mental Health, Midwifery, and more.",
     },
     {
         q: "How much does it cost?",
@@ -53,11 +53,11 @@ const faqs = [
     },
     {
         q: "Can I pay with Mobile Money?",
-        a: "Yes — we accept MTN MoMo, Telecel Cash, and AT Money. Payments are verified manually within 24 hours.",
+        a: "Yes — MTN MoMo, Telecel Cash, or AT Money. Send the payment to our MoMo number, submit the transaction ID, and we activate your account within 24 hours.",
     },
     {
         q: "Is NursifyGH an official NMC platform?",
-        a: "No. NursifyGH is an independent study platform built by and for nursing students. It is not affiliated with, endorsed by, or connected to the Nursing and Midwifery Council (NMC) of Ghana. All content is designed to supplement — not replace — your official curriculum.",
+        a: "No. NursifyGH is an independent study platform. It is not affiliated with, endorsed by, or connected to the Nursing and Midwifery Council (NMC) of Ghana. We are a study tool built by nursing students for nursing students.",
     },
 ]
 
@@ -97,18 +97,19 @@ export default function LandingPage() {
             <section className="container-page pt-16 pb-20 sm:pt-20 sm:pb-24 text-center">
                 <Badge variant="brand" className="mx-auto mb-6">
                     <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-                    Built for Ghanaian nursing students
+                    Free to register · GHS 30 per semester
                 </Badge>
 
                 <h1 className="text-display text-on-surface max-w-4xl mx-auto">
-                    Study for the NMC exams
+                    Practice NMC exam questions,
                     <br />
-                    <span className="text-brand-700 italic">with confidence.</span>
+                    <span className="text-brand-700 italic">with the answers explained.</span>
                 </h1>
 
                 <p className="mt-6 max-w-2xl mx-auto text-body text-on-surface-muted">
-                    Past questions, timed mock exams, and NANDA care plan drafting —
-                    purpose-built for Ghanaian nursing and midwifery students.
+                    Practice questions across all NMC subjects. Take timed mock exams.
+                    Draft NANDA care plans. Built for Level 100–300 nursing and midwifery
+                    students in Ghana.
                 </p>
 
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -124,7 +125,7 @@ export default function LandingPage() {
                 </div>
 
                 <p className="mt-6 text-caption">
-                    GHS 30 per semester · No card required to start
+                    Free to browse · GHS 30 unlocks the full semester
                 </p>
 
                 {/* Mock screenshot */}
@@ -169,10 +170,7 @@ export default function LandingPage() {
                 <div className="container-page py-20 sm:py-24">
                     <div className="text-center max-w-2xl mx-auto">
                         <p className="text-caption mb-3">What you get</p>
-                        <h2 className="text-h1">Everything you need to graduate.</h2>
-                        <p className="mt-3 text-body text-on-surface-muted">
-                            Purpose-built for the Ghanaian nursing curriculum — not a generic quiz app.
-                        </p>
+                        <h2 className="text-h1">Three tools for studying.</h2>
                     </div>
 
                     <div className="mt-14 grid gap-6 sm:grid-cols-3">
@@ -198,35 +196,32 @@ export default function LandingPage() {
             <section id="pricing" className="border-t border-border bg-white">
                 <div className="container-page py-20 sm:py-24">
                     <div className="text-center max-w-2xl mx-auto">
-                        <p className="text-caption mb-3">Simple pricing</p>
-                        <h2 className="text-h1">One payment. Full semester.</h2>
+                        <p className="text-caption mb-3">Pricing</p>
+                        <h2 className="text-h1">GHS 30 per semester.</h2>
                         <p className="mt-3 text-body text-on-surface-muted">
-                            No subscriptions, no monthly charges. Pay once, use it for the whole semester.
+                            Pay once. Use it for 120 days. No monthly charges, no auto-renewal.
                         </p>
                     </div>
 
                     <div className="mt-14 max-w-md mx-auto">
-                        <div className="rounded-2xl border-2 border-brand-700 bg-surface p-8 shadow-lg relative">
-                            <Badge variant="brand" className="absolute -top-3 left-1/2 -translate-x-1/2">
-                                Most students choose this
-                            </Badge>
-
+                        <div className="rounded-2xl border-2 border-brand-700 bg-surface p-8 shadow-lg">
                             <div className="text-center">
                                 <p className="text-h4 text-on-surface-muted">Semester Pass</p>
                                 <div className="mt-6 flex items-baseline justify-center gap-1.5">
                                     <span className="text-sm font-medium text-on-surface-muted mb-1">GHS</span>
                                     <span className="text-display font-bold text-on-surface leading-none tracking-tight">30</span>
                                 </div>
+                                <p className="mt-2 text-sm text-on-surface-muted">120 days of full access</p>
                             </div>
 
                             <ul className="mt-8 space-y-3">
                                 {[
-                                    "All courses across Levels 100, 200, 300",
-                                    "Past questions with clinical rationales",
-                                    "Timed mock exams and instant scoring",
+                                    "All courses: Levels 100, 200, 300",
+                                    "All practice questions with rationales",
+                                    "Unlimited 60-minute mock exams",
                                     "AI-assisted NANDA care plan drafting",
-                                    "N&MC transcription view for your booklet",
-                                    "Community library of peer care plans",
+                                    "N&MC-format transcription view",
+                                    "Community care plan library",
                                 ].map((item) => (
                                     <li key={item} className="flex items-start gap-2.5 text-sm">
                                         <svg
@@ -251,7 +246,7 @@ export default function LandingPage() {
                                 </Button>
                             </Link>
                             <p className="mt-4 text-center text-xs text-on-surface-muted">
-                                Register free · Pay only when you're ready
+                                Free to register · Pay when you're ready
                             </p>
                         </div>
                     </div>
@@ -263,7 +258,7 @@ export default function LandingPage() {
                 <div className="container-page py-20 sm:py-24 max-w-3xl">
                     <div className="text-center mb-12">
                         <p className="text-caption mb-3">Questions</p>
-                        <h2 className="text-h1">Everything you need to know.</h2>
+                        <h2 className="text-h1">Common questions.</h2>
                     </div>
 
                     <div className="space-y-3">
@@ -297,10 +292,10 @@ export default function LandingPage() {
             <section className="border-t border-border bg-brand-900 text-white">
                 <div className="container-page py-20 text-center">
                     <h2 className="text-display max-w-2xl mx-auto">
-                        Study smarter for your NMC exams.
+                        Ready to start practising?
                     </h2>
                     <p className="mt-4 text-brand-100 text-body max-w-xl mx-auto">
-                        Join Ghanaian nursing students who use NursifyGH to prepare with confidence.
+                        Create an account in under 2 minutes. Free to register. GHS 30 unlocks the full semester.
                     </p>
                     <Link to="/register" className="mt-8 inline-block">
                         <Button size="lg" className="bg-white !text-brand-900 hover:bg-brand-50">
