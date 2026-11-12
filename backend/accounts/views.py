@@ -335,14 +335,14 @@ class ClinicalLogDetailView(APIView):
 
 
 class ClinicalLogbookExportView(APIView):
-    """Generate a PDF of the student's clinical logbook."""
+    """Generate an official N&MC PDF of the student's clinical logbook."""
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request):
+        # Fetch ALL skills (even those with 0 logs) so the transcript is complete
         skills = ClinicalSkill.objects.filter(
             student=request.user,
-            completed_count__gt=0,
-        ).prefetch_related("logs")
+        ).prefetch_related("logs").order_by("category", "procedure_name")
 
         buffer = io.BytesIO()
         doc = SimpleDocTemplate(
@@ -357,78 +357,113 @@ class ClinicalLogbookExportView(APIView):
         styles = getSampleStyleSheet()
 
         title_style = ParagraphStyle(
-            "CustomTitle",
-            parent=styles["Heading1"],
-            fontSize=24,
-            textColor=colors.HexColor("#047857"),
-            spaceAfter=20,
-            alignment=1,
+            "CustomTitle", parent=styles["Heading1"], fontSize=22,
+            textColor=colors.HexColor("#047857"), spaceAfter=6, alignment=1,
         )
         subtitle_style = ParagraphStyle(
-            "CustomSubtitle",
-            parent=styles["Normal"],
-            fontSize=12,
-            textColor=colors.gray,
-            spaceAfter=10,
-            alignment=1,
+            "CustomSubtitle", parent=styles["Normal"], fontSize=10,
+            textColor=colors.gray, spaceAfter=4, alignment=1,
         )
         category_style = ParagraphStyle(
-            "CategoryStyle",
-            parent=styles["Heading2"],
-            fontSize=16,
-            textColor=colors.HexColor("#065f46"),
-            spaceBefore=20,
-            spaceAfter=10,
+            "CategoryStyle", parent=styles["Heading2"], fontSize=14,
+            textColor=colors.HexColor("#065f46"), spaceBefore=20, spaceAfter=10,
         )
-
+        
         elements = []
-        elements.append(Paragraph("N&amp;MC Logbook Tracker", title_style))
+
+        # --- Header / Cover Page Info ---
+        elements.append(Paragraph("N&amp;MC Clinical Logbook Transcript", title_style))
         elements.append(Paragraph(
-            f"Student: {request.user.full_name} &nbsp;|&nbsp; Program: {request.user.get_program_display()} &nbsp;|&nbsp; Level: {request.user.get_level_display()}",
+            f"Student: <b>{request.user.full_name}</b> &nbsp;|&nbsp; Program: {request.user.get_program_display()} &nbsp;|&nbsp; Level: {request.user.get_level_display()}",
             subtitle_style,
         ))
         if request.user.institution:
             elements.append(Paragraph(f"Institution: {request.user.institution}", subtitle_style))
-        elements.append(Spacer(1, 10))
+        
+        # Add generation timestamp
+        now_str = timezone.now().strftime("%d %B %Y, %I:%M %p")
+        elements.append(Paragraph(f"Generated on: {now_str}", subtitle_style))
+        elements.append(Spacer(1, 15))
 
-        if not skills:
-            elements.append(Paragraph("No clinical logs recorded yet.", styles["Normal"]))
-        else:
-            grouped_skills = defaultdict(list)
-            for skill in skills:
-                grouped_skills[skill.category].append(skill)
+        # --- Summary Table ---
+        total_required = sum(s.required_count for s in skills)
+        total_completed = sum(s.completed_count for s in skills)
+        percent = round((total_completed / total_required) * 100) if total_required > 0 else 0
+        
+        summary_data = [
+            ["Total Required Procedures", "Completed Procedures", "Overall Progress"],
+            [str(total_required), str(total_completed), f"{percent}%"]
+        ]
+        summary_table = Table(summary_data, colWidths=[160, 160, 160])
+        summary_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#047857")),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTSIZE', (0, 0), (-1, 0), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+            ('TOPPADDING', (0, 0), (-1, 0), 8),
+            ('BACKGROUND', (0, 1), (-1, -1), colors.HexColor("#f3f4f6")),
+            ('TEXTCOLOR', (0, 1), (-1, -1), colors.HexColor("#111827")),
+            ('FONTSIZE', (0, 1), (-1, -1), 12),
+            ('FONTNAME', (0, 1), (-1, -1), 'Helvetica-Bold'),
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor("#e5e7eb")),
+        ]))
+        elements.append(summary_table)
+        elements.append(Spacer(1, 20))
 
-            for category, cat_skills in grouped_skills.items():
-                elements.append(Paragraph(category, category_style))
+        # --- Detailed Logs Grouped by Category ---
+        grouped_skills = defaultdict(list)
+        for skill in skills:
+            grouped_skills[skill.category].append(skill)
 
-                data = [["Procedure", "Date", "Hospital / Ward", "Supervisor"]]
-                for skill in cat_skills:
-                    for log in skill.logs.all().order_by("date_performed"):
+        for category, cat_skills in grouped_skills.items():
+            elements.append(Paragraph(category, category_style))
+
+            # Table header
+            data = [["Procedure", "Date", "Hospital / Ward", "Supervisor"]]
+            
+            for skill in cat_skills:
+                logs = skill.logs.all().order_by("-date_performed")
+                
+                if logs.exists():
+                    # If they have logs, show every log entry
+                    for log in logs:
                         hospital_ward = log.hospital
                         if log.ward:
                             hospital_ward = f"{hospital_ward}\n{log.ward}" if hospital_ward else log.ward
+                        
                         data.append([
                             Paragraph(skill.procedure_name, styles["Normal"]),
                             Paragraph(log.date_performed.strftime("%d %b %Y"), styles["Normal"]),
                             Paragraph(hospital_ward or "-", styles["Normal"]),
                             Paragraph(log.supervisor_name or "-", styles["Normal"]),
                         ])
+                else:
+                    # If no logs yet, show it as Pending
+                    data.append([
+                        Paragraph(skill.procedure_name, styles["Normal"]),
+                        Paragraph("—", styles["Normal"]),
+                        Paragraph("—", styles["Normal"]),
+                        Paragraph("Pending", styles["Normal"]),
+                    ])
 
-                table = Table(data, colWidths=[140, 80, 160, 120], repeatRows=1)
-                table.setStyle(TableStyle([
-                    ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#f3f4f6")),
-                    ("TEXTCOLOR", (0, 0), (-1, 0), colors.HexColor("#374151")),
-                    ("ALIGN", (0, 0), (-1, -1), "LEFT"),
-                    ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                    ("FONTSIZE", (0, 0), (-1, 0), 10),
-                    ("BOTTOMPADDING", (0, 0), (-1, 0), 12),
-                    ("BACKGROUND", (0, 1), (-1, -1), colors.white),
-                    ("TEXTCOLOR", (0, 1), (-1, -1), colors.HexColor("#111827")),
-                    ("FONTSIZE", (0, 1), (-1, -1), 9),
-                    ("GRID", (0, 0), (-1, -1), 0.5, colors.HexColor("#e5e7eb")),
-                    ("VALIGN", (0, 0), (-1, -1), "TOP"),
-                ]))
-                elements.append(table)
+            table = Table(data, colWidths=[140, 80, 160, 120], repeatRows=1)
+            table.setStyle(TableStyle([
+                ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#f3f4f6")),
+                ("TEXTCOLOR", (0, 0), (-1, 0), colors.HexColor("#374151")),
+                ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("FONTSIZE", (0, 0), (-1, 0), 10),
+                ("BOTTOMPADDING", (0, 0), (-1, 0), 12),
+                ("BACKGROUND", (0, 1), (-1, -1), colors.white),
+                ("TEXTCOLOR", (0, 1), (-1, -1), colors.HexColor("#111827")),
+                ("FONTSIZE", (0, 1), (-1, -1), 9),
+                ("GRID", (0, 0), (-1, -1), 0.5, colors.HexColor("#e5e7eb")),
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ]))
+            elements.append(table)
+            elements.append(Spacer(1, 10))
 
         doc.build(elements)
         buffer.seek(0)

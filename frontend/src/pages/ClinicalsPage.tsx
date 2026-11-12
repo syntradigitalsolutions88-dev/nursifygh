@@ -114,6 +114,7 @@ export default function ClinicalsPage() {
 
     async function downloadPdf() {
         setDownloading(true)
+        showToast("Generating your PDF transcript...", "success")
         try {
             const res = await api.get("/accounts/clinical-skills/export/", {
                 responseType: "blob",
@@ -129,7 +130,7 @@ export default function ClinicalsPage() {
             link.click()
             link.parentNode?.removeChild(link)
             window.URL.revokeObjectURL(url)
-            showToast("Logbook downloaded")
+            showToast("Logbook downloaded successfully!")
         } catch {
             showToast("Failed to download PDF. Please try again.", "error")
         } finally {
