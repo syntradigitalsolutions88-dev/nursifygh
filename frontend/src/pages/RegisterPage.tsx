@@ -79,24 +79,17 @@ export default function RegisterPage() {
 
     return (
         <AuthLayout>
-            <div className="rounded-xl border border-border bg-white p-6 sm:p-8 shadow-sm">
-                <h1 className="text-h2 text-brand-700">Create your account</h1>
-                <p className="mt-1.5 text-body-sm text-on-surface-muted">
-                    For nursing &amp; midwifery students in Ghana.
+            <div className="mb-8">
+                <h1 className="text-2xl font-bold text-on-surface tracking-tight">Create your account</h1>
+                <p className="mt-2 text-sm text-on-surface-muted">
+                    Join thousands of nursing students in Ghana.
                 </p>
+            </div>
 
-                <form onSubmit={onSubmit} className="mt-8 space-y-4">
-                    <Input
-                        label="Email"
-                        type="email"
-                        required
-                        autoComplete="email"
-                        value={form.email}
-                        onChange={(e) => set("email", e.target.value)}
-                        placeholder="you@example.com"
-                        error={fieldError("email")}
-                        disabled={submitting}
-                    />
+            <form onSubmit={onSubmit} className="space-y-6">
+                {/* Section 1: Identity */}
+                <div className="space-y-4">
+                    <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">Personal Information</h3>
                     <Input
                         label="Full name"
                         type="text"
@@ -106,6 +99,17 @@ export default function RegisterPage() {
                         onChange={(e) => set("full_name", e.target.value)}
                         placeholder="Ama Mensah"
                         error={fieldError("full_name")}
+                        disabled={submitting}
+                    />
+                    <Input
+                        label="Email address"
+                        type="email"
+                        required
+                        autoComplete="email"
+                        value={form.email}
+                        onChange={(e) => set("email", e.target.value)}
+                        placeholder="you@example.com"
+                        error={fieldError("email")}
                         disabled={submitting}
                     />
                     <Input
@@ -120,58 +124,42 @@ export default function RegisterPage() {
                         error={fieldError("phone_number")}
                         disabled={submitting}
                     />
+                </div>
 
-                    <div>
-                        <label
-                            htmlFor="program"
-                            className="block text-sm font-medium text-on-surface mb-1.5"
-                        >
-                            Nursing program
-                        </label>
-                        <select
-                            id="program"
-                            value={form.program}
-                            onChange={(e) => set("program", e.target.value as NursingProgram)}
-                            disabled={submitting}
-                            className="block w-full h-11 rounded-lg border border-border bg-white px-3.5 text-sm text-on-surface focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:opacity-60"
-                        >
-                            <option value="GENERAL">General Nursing (RGN)</option>
-                            <option value="MIDWIFERY">Midwifery (RM)</option>
-                            <option value="PSYCHIATRIC">Psychiatric Nursing (RPN)</option>
-                            <option value="COMMUNITY">Community Health Nursing (CHN)</option>
-                        </select>
-                        {fieldError("program") && (
-                            <p className="mt-1.5 text-sm text-danger-700">
-                                {fieldError("program")}
-                            </p>
-                        )}
+                {/* Section 2: Academic Info */}
+                <div className="space-y-4 pt-4 border-t border-border">
+                    <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">Academic Details</h3>
+                    <div className="grid grid-cols-2 gap-4">
+                        <div>
+                            <label className="block text-sm font-medium text-on-surface mb-1.5">Program</label>
+                            <select
+                                value={form.program}
+                                onChange={(e) => set("program", e.target.value as NursingProgram)}
+                                disabled={submitting}
+                                className="block w-full h-11 rounded-lg border border-border bg-white px-3.5 text-sm text-on-surface focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:opacity-60"
+                            >
+                                <option value="GENERAL">RGN (General)</option>
+                                <option value="MIDWIFERY">RM (Midwifery)</option>
+                                <option value="PSYCHIATRIC">RPN (Psychiatric)</option>
+                                <option value="COMMUNITY">CHN (Community)</option>
+                            </select>
+                            {fieldError("program") && <p className="mt-1.5 text-sm text-danger-700">{fieldError("program")}</p>}
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-on-surface mb-1.5">Level</label>
+                            <select
+                                value={form.level}
+                                onChange={(e) => set("level", e.target.value as "100" | "200" | "300")}
+                                disabled={submitting}
+                                className="block w-full h-11 rounded-lg border border-border bg-white px-3.5 text-sm text-on-surface focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:opacity-60"
+                            >
+                                <option value="100">Level 100</option>
+                                <option value="200">Level 200</option>
+                                <option value="300">Level 300</option>
+                            </select>
+                            {fieldError("level") && <p className="mt-1.5 text-sm text-danger-700">{fieldError("level")}</p>}
+                        </div>
                     </div>
-
-                    <div>
-                        <label
-                            htmlFor="level"
-                            className="block text-sm font-medium text-on-surface mb-1.5"
-                        >
-                            Academic level
-                        </label>
-                        <select
-                            id="level"
-                            value={form.level}
-                            onChange={(e) => set("level", e.target.value as "100" | "200" | "300")}
-                            disabled={submitting}
-                            className="block w-full h-11 rounded-lg border border-border bg-white px-3.5 text-sm text-on-surface focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:opacity-60"
-                        >
-                            <option value="100">Level 100</option>
-                            <option value="200">Level 200</option>
-                            <option value="300">Level 300</option>
-                        </select>
-                        {fieldError("level") && (
-                            <p className="mt-1.5 text-sm text-danger-700">
-                                {fieldError("level")}
-                            </p>
-                        )}
-                    </div>
-
                     <Input
                         label="Institution"
                         type="text"
@@ -181,7 +169,11 @@ export default function RegisterPage() {
                         error={fieldError("institution")}
                         disabled={submitting}
                     />
+                </div>
 
+                {/* Section 3: Security */}
+                <div className="space-y-4 pt-4 border-t border-border">
+                    <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">Security</h3>
                     <Input
                         label="Password"
                         type="password"
@@ -206,20 +198,20 @@ export default function RegisterPage() {
                         error={fieldError("password_confirm")}
                         disabled={submitting}
                     />
+                </div>
 
-                    {error && <Alert variant="danger">{error}</Alert>}
+                {error && <Alert variant="danger">{error}</Alert>}
 
-                    <Button type="submit" fullWidth loading={submitting} size="lg" disabled={submitting}>
-                        {submitting ? "Creating account…" : "Create account"}
-                    </Button>
-                </form>
+                <Button type="submit" fullWidth loading={submitting} size="lg" disabled={submitting} className="mt-2">
+                    {submitting ? "Creating account…" : "Create free account"}
+                </Button>
+            </form>
 
-                <p className="mt-6 text-center text-sm text-on-surface-muted">
-                    Already have an account?{" "}
-                    <Link to="/login" className="font-medium text-brand-700 hover:underline">
-                        Log in
-                    </Link>
-                </p>
+            <div className="mt-8 text-center text-sm text-on-surface-muted">
+                Already have an account?{" "}
+                <Link to="/login" className="font-semibold text-brand-700 hover:text-brand-800 hover:underline">
+                    Log in
+                </Link>
             </div>
         </AuthLayout>
     )
