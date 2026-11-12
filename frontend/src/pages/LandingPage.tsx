@@ -107,7 +107,7 @@ export default function LandingPage() {
                     </Badge>
 
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight max-w-4xl mx-auto leading-[1.1]">
-                        Ace your N&MC exams with <span className="text-brand-400">confidence.</span>
+                        Pass your N&MC exams with <span className="text-brand-400">confidence.</span>
                     </h1>
 
                     <p className="mt-6 max-w-2xl mx-auto text-lg text-brand-100/80 leading-relaxed">
