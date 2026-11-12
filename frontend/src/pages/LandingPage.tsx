@@ -8,7 +8,7 @@ import ChatWidget from "../components/support/ChatWidget"
 const features = [
     {
         title: "NMC-Style Questions",
-        description: "Practice real exam questions with detailed rationales for every option. You'll understand why an answer is correct.",
+        description: "Practice real exam questions with detailed rationales for every option. You'll understand exactly why an answer is correct.",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-6 w-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -17,7 +17,7 @@ const features = [
     },
     {
         title: "Timed Mock Exams",
-        description: "Simulate the real N&MC paper. 50 questions, 60 minutes, instant scoring, and a breakdown of your weakest areas.",
+        description: "Simulate the real N&MC paper. 50 questions, 60 minutes, instant scoring, and a deep breakdown of your weakest areas.",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-6 w-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,6 +61,7 @@ const faqs = [
 export default function LandingPage() {
     return (
         <div className="min-h-screen bg-white">
+            {/* ---- Disclaimer banner ---- */}
             <div className="bg-brand-950 border-b border-brand-900">
                 <div className="container-page py-2 text-center">
                     <p className="text-[11px] font-medium text-brand-200 uppercase tracking-wide">
@@ -69,6 +70,7 @@ export default function LandingPage() {
                 </div>
             </div>
 
+            {/* ---- Nav ---- */}
             <header className="border-b border-border bg-white/80 backdrop-blur-md sticky top-0 z-40">
                 <div className="container-page flex items-center justify-between py-4">
                     <Link to="/" aria-label="NursifyGH home">
@@ -88,7 +90,11 @@ export default function LandingPage() {
                 </div>
             </header>
 
+            {/* ---- Hero ---- */}
             <section className="relative overflow-hidden bg-brand-950 pt-24 pb-32">
+                {/* Background grid pattern - adds a "technical" feel */}
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#047857_1px,transparent_1px),linear-gradient(to_bottom,#047857_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" />
+
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-brand-800/30 blur-3xl" />
                     <div className="absolute top-40 -left-40 w-[600px] h-[600px] rounded-full bg-brand-600/20 blur-3xl" />
@@ -122,10 +128,13 @@ export default function LandingPage() {
                         </a>
                     </div>
 
+                    {/* Floating Dashboard Mockup */}
                     <div className="mt-20 relative mx-auto max-w-5xl">
                         <div className="absolute inset-x-12 top-12 -bottom-12 rounded-3xl bg-brand-500/20 blur-3xl" />
+
                         <div className="relative rounded-2xl border border-white/10 bg-white/5 p-2 backdrop-blur-sm shadow-2xl">
                             <div className="rounded-xl overflow-hidden bg-white ring-1 ring-white/10">
+                                {/* Fake Browser Header */}
                                 <div className="flex items-center gap-2 border-b border-border bg-surface-subtle px-4 py-3">
                                     <div className="h-3 w-3 rounded-full bg-red-400" />
                                     <div className="h-3 w-3 rounded-full bg-amber-400" />
@@ -134,6 +143,7 @@ export default function LandingPage() {
                                         app.nursifygh.com/dashboard
                                     </span>
                                 </div>
+                                {/* Dashboard Content Preview */}
                                 <div className="p-6 sm:p-10 text-left bg-white">
                                     <div className="flex items-center justify-between mb-8">
                                         <div>
@@ -162,11 +172,39 @@ export default function LandingPage() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Floating overlapping card - this makes it feel like a real design, not a template */}
+                        <div className="hidden md:block absolute -bottom-8 -right-8 w-64 bg-white rounded-xl shadow-2xl border border-border p-4 text-left transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                            <div className="flex items-center gap-3 mb-2">
+                                <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                                </div>
+                                <p className="text-sm font-bold text-gray-900">Mock Exam Passed!</p>
+                            </div>
+                            <p className="text-xs text-gray-500">You scored 82% on Medical-Surgical Nursing. Great job!</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-24 bg-gray-50">
+            {/* ---- Trust Bar ---- */}
+            <div className="border-b border-border bg-gray-50 py-8">
+                <div className="container-page">
+                    <p className="text-center text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">
+                        Used by students from top institutions
+                    </p>
+                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale">
+                        {/* Replace these text placeholders with real logos if you have them */}
+                        <span className="text-lg font-bold text-gray-800">Korle Bu NTC</span>
+                        <span className="text-lg font-bold text-gray-800">Komfo Anokye NTC</span>
+                        <span className="text-lg font-bold text-gray-800">37 Military NTC</span>
+                        <span className="text-lg font-bold text-gray-800">Narh-Bita College</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* ---- Features ---- */}
+            <section className="py-24 bg-white">
                 <div className="container-page">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Everything you need to pass.</h2>
@@ -189,7 +227,8 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section id="pricing" className="py-24 bg-white relative">
+            {/* ---- Pricing ---- */}
+            <section id="pricing" className="py-24 bg-gray-50 relative">
                 <div className="container-page">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Simple, student-friendly pricing.</h2>
@@ -241,7 +280,8 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="py-24 bg-gray-50 border-t border-gray-100">
+            {/* ---- FAQ ---- */}
+            <section className="py-24 bg-white border-t border-gray-100">
                 <div className="container-page max-w-3xl">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Frequently asked questions</h2>
@@ -266,17 +306,36 @@ export default function LandingPage() {
                 </div>
             </section>
 
+            {/* ---- Footer ---- */}
             <footer className="bg-brand-950 pt-16 pb-8">
                 <div className="container-page">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-12 border-b border-brand-900">
-                        <Logo size="md" showWordmark={true} className="brightness-0 invert" />
-                        <div className="flex gap-6 text-sm font-medium text-brand-200">
-                            <Link to="/login" className="hover:text-white transition-colors">Log in</Link>
-                            <Link to="/register" className="hover:text-white transition-colors">Sign up</Link>
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-brand-900">
+                        <div className="md:col-span-2">
+                            <Logo size="md" showWordmark={true} className="brightness-0 invert" />
+                            <p className="mt-4 text-sm text-brand-200 max-w-xs leading-relaxed">
+                                The smartest way for Ghanaian nursing and midwifery students to prepare for their N&MC licensing exams.
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-sm font-bold text-white uppercase tracking-wider mb-4">Product</p>
+                            <ul className="space-y-3 text-sm text-brand-200">
+                                <li><Link to="/register" className="hover:text-white transition-colors">Practice Questions</Link></li>
+                                <li><Link to="/register" className="hover:text-white transition-colors">Mock Exams</Link></li>
+                                <li><Link to="/register" className="hover:text-white transition-colors">Clinical Tracker</Link></li>
+                                <li><Link to="/register" className="hover:text-white transition-colors">Pricing</Link></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p className="text-sm font-bold text-white uppercase tracking-wider mb-4">Account</p>
+                            <ul className="space-y-3 text-sm text-brand-200">
+                                <li><Link to="/login" className="hover:text-white transition-colors">Log in</Link></li>
+                                <li><Link to="/register" className="hover:text-white transition-colors">Sign up</Link></li>
+                                <li><Link to="/forgot-password" className="hover:text-white transition-colors">Reset Password</Link></li>
+                            </ul>
                         </div>
                     </div>
                     <div className="pt-8 text-center md:text-left">
-                        <p className="text-xs text-brand-400 max-w-4xl leading-relaxed">
+                        <p className="text-xs text-brand-400 max-w-5xl leading-relaxed">
                             <strong className="text-brand-200">Legal notice:</strong> NursifyGH is an independent educational tool.
                             It is not affiliated with, endorsed by, or connected to the Nursing and
                             Midwifery Council (NMC) of Ghana, any nursing training college, or any
@@ -286,9 +345,15 @@ export default function LandingPage() {
                             clinical content against their official curriculum before using it in
                             patient care.
                         </p>
-                        <p className="mt-4 text-xs text-brand-500">
-                            © 2026 NursifyGH. Built for Ghanaian nursing students.
-                        </p>
+                        <div className="mt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                            <p className="text-xs text-brand-500">
+                                © 2026 NursifyGH. Built for Ghanaian nursing students.
+                            </p>
+                            <div className="flex gap-4 text-xs text-brand-500">
+                                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                                <a href="#" className="hover:text-brand-200 transition-colors">Terms of Service</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
