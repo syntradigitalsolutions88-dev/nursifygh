@@ -63,8 +63,8 @@ export default function WeakAreasCard() {
                                 <div className="h-1.5 w-full max-w-[200px] bg-gray-100 rounded-full overflow-hidden">
                                     <div
                                         className={`h-full rounded-full ${area.accuracy < 40 ? 'bg-red-400' :
-                                                area.accuracy < 60 ? 'bg-amber-400' :
-                                                    'bg-brand-500'
+                                            area.accuracy < 60 ? 'bg-amber-400' :
+                                                'bg-brand-500'
                                             }`}
                                         style={{ width: `${area.accuracy}%` }}
                                     />
@@ -78,8 +78,8 @@ export default function WeakAreasCard() {
                         <div className="shrink-0 flex items-center gap-4">
                             <div className="text-right">
                                 <p className={`text-lg font-black ${area.accuracy < 40 ? 'text-red-500' :
-                                        area.accuracy < 60 ? 'text-amber-500' :
-                                            'text-brand-600'
+                                    area.accuracy < 60 ? 'text-amber-500' :
+                                        'text-brand-600'
                                     }`}>
                                     {area.accuracy}%
                                 </p>

@@ -63,7 +63,7 @@ export default function LoginPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="you@example.com"
                 />
-
+                
                 <div>
                     <div className="flex items-center justify-between mb-1.5">
                         <label className="block text-sm font-medium text-on-surface">

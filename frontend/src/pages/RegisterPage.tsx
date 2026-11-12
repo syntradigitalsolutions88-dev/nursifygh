@@ -87,7 +87,6 @@ export default function RegisterPage() {
             </div>
 
             <form onSubmit={onSubmit} className="space-y-6">
-                {/* Section 1: Identity */}
                 <div className="space-y-4">
                     <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">Personal Information</h3>
                     <Input
@@ -126,7 +125,6 @@ export default function RegisterPage() {
                     />
                 </div>
 
-                {/* Section 2: Academic Info */}
                 <div className="space-y-4 pt-4 border-t border-border">
                     <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">Academic Details</h3>
                     <div className="grid grid-cols-2 gap-4">
@@ -171,7 +169,6 @@ export default function RegisterPage() {
                     />
                 </div>
 
-                {/* Section 3: Security */}
                 <div className="space-y-4 pt-4 border-t border-border">
                     <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">Security</h3>
                     <Input
