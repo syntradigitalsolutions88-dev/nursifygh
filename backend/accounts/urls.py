@@ -6,6 +6,7 @@ from rest_framework_simplejwt.views import TokenRefreshView
 from .views import (
     ClinicalLogDetailView,
     ClinicalLogsDetailView,
+    ClinicalLogbookExportView,
     ClinicalSkillsView,
     LoginView,
     PasswordChangeView,
@@ -30,6 +31,7 @@ urlpatterns = [
     path("ai-chat/", ai_chat_proxy, name="ai-chat"),
     path("ai-ncp-autofill/", ai_ncp_autofill, name="ai-ncp-autofill"),
     path("clinical-skills/", ClinicalSkillsView.as_view(), name="clinical-skills"),
+    path("clinical-skills/export/", ClinicalLogbookExportView.as_view(), name="clinical-skills-export"),
     path("clinical-skills/<int:skill_id>/logs/", ClinicalLogsDetailView.as_view(), name="clinical-logs"),
     path("clinical-logs/<int:log_id>/", ClinicalLogDetailView.as_view(), name="clinical-log-detail"),
 ]

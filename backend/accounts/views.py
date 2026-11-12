@@ -2,17 +2,24 @@
 
 from __future__ import annotations
 
+import io
 import json
 import logging
+from collections import defaultdict
 
 import requests
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
+from django.http import FileResponse
 from django.utils import timezone
 from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 from rest_framework import generics, permissions, status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
@@ -38,7 +45,6 @@ logger = logging.getLogger(__name__)
 
 # ─── Clinical Tracker ──────────────────────────────────────────────────────────
 
-# 1. Universal skills for ALL programs
 UNIVERSAL_SKILLS = [
     ("Vital Signs", "Universal Core", 5),
     ("Infection Prevention & Control", "Universal Core", 5),
@@ -47,7 +53,6 @@ UNIVERSAL_SKILLS = [
     ("Documentation & Record Keeping", "Universal Core", 5),
 ]
 
-# 2. Program-specific skills
 PROGRAM_SKILLS = {
     "GENERAL": [
         ("NG Tube Insertion", "Medical-Surgical", 3),
@@ -241,8 +246,6 @@ class ClinicalSkillsView(APIView):
 
     def get(self, request):
         user_program = request.user.program
-        
-        # Combine Universal + Specific to this user's program
         skills_to_seed = UNIVERSAL_SKILLS + PROGRAM_SKILLS.get(user_program, [])
 
         for name, category, required in skills_to_seed:
@@ -329,6 +332,114 @@ class ClinicalLogDetailView(APIView):
         skill.completed_count = max(0, skill.completed_count - 1)
         skill.save()
         return Response({"status": "deleted", "completed_count": skill.completed_count})
+
+
+class ClinicalLogbookExportView(APIView):
+    """Generate a PDF of the student's clinical logbook."""
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        skills = ClinicalSkill.objects.filter(
+            student=request.user,
+            completed_count__gt=0,
+        ).prefetch_related("logs")
+
+        buffer = io.BytesIO()
+        doc = SimpleDocTemplate(
+            buffer,
+            pagesize=A4,
+            rightMargin=40,
+            leftMargin=40,
+            topMargin=40,
+            bottomMargin=40,
+        )
+
+        styles = getSampleStyleSheet()
+
+        title_style = ParagraphStyle(
+            "CustomTitle",
+            parent=styles["Heading1"],
+            fontSize=24,
+            textColor=colors.HexColor("#047857"),
+            spaceAfter=20,
+            alignment=1,
+        )
+        subtitle_style = ParagraphStyle(
+            "CustomSubtitle",
+            parent=styles["Normal"],
+            fontSize=12,
+            textColor=colors.gray,
+            spaceAfter=10,
+            alignment=1,
+        )
+        category_style = ParagraphStyle(
+            "CategoryStyle",
+            parent=styles["Heading2"],
+            fontSize=16,
+            textColor=colors.HexColor("#065f46"),
+            spaceBefore=20,
+            spaceAfter=10,
+        )
+
+        elements = []
+        elements.append(Paragraph("N&amp;MC Logbook Tracker", title_style))
+        elements.append(Paragraph(
+            f"Student: {request.user.full_name} &nbsp;|&nbsp; Program: {request.user.get_program_display()} &nbsp;|&nbsp; Level: {request.user.get_level_display()}",
+            subtitle_style,
+        ))
+        if request.user.institution:
+            elements.append(Paragraph(f"Institution: {request.user.institution}", subtitle_style))
+        elements.append(Spacer(1, 10))
+
+        if not skills:
+            elements.append(Paragraph("No clinical logs recorded yet.", styles["Normal"]))
+        else:
+            grouped_skills = defaultdict(list)
+            for skill in skills:
+                grouped_skills[skill.category].append(skill)
+
+            for category, cat_skills in grouped_skills.items():
+                elements.append(Paragraph(category, category_style))
+
+                data = [["Procedure", "Date", "Hospital / Ward", "Supervisor"]]
+                for skill in cat_skills:
+                    for log in skill.logs.all().order_by("date_performed"):
+                        hospital_ward = log.hospital
+                        if log.ward:
+                            hospital_ward = f"{hospital_ward}\n{log.ward}" if hospital_ward else log.ward
+                        data.append([
+                            Paragraph(skill.procedure_name, styles["Normal"]),
+                            Paragraph(log.date_performed.strftime("%d %b %Y"), styles["Normal"]),
+                            Paragraph(hospital_ward or "-", styles["Normal"]),
+                            Paragraph(log.supervisor_name or "-", styles["Normal"]),
+                        ])
+
+                table = Table(data, colWidths=[140, 80, 160, 120], repeatRows=1)
+                table.setStyle(TableStyle([
+                    ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#f3f4f6")),
+                    ("TEXTCOLOR", (0, 0), (-1, 0), colors.HexColor("#374151")),
+                    ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+                    ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                    ("FONTSIZE", (0, 0), (-1, 0), 10),
+                    ("BOTTOMPADDING", (0, 0), (-1, 0), 12),
+                    ("BACKGROUND", (0, 1), (-1, -1), colors.white),
+                    ("TEXTCOLOR", (0, 1), (-1, -1), colors.HexColor("#111827")),
+                    ("FONTSIZE", (0, 1), (-1, -1), 9),
+                    ("GRID", (0, 0), (-1, -1), 0.5, colors.HexColor("#e5e7eb")),
+                    ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ]))
+                elements.append(table)
+
+        doc.build(elements)
+        buffer.seek(0)
+
+        safe_name = request.user.full_name.replace(" ", "_")
+        return FileResponse(
+            buffer,
+            as_attachment=True,
+            filename=f"NMC_Logbook_{safe_name}.pdf",
+            content_type="application/pdf",
+        )
 
 
 # ─── AI ────────────────────────────────────────────────────────────────────────

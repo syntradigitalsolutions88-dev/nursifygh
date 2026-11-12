@@ -40,6 +40,7 @@ export default function ClinicalsPage() {
     const [confirmDelete, setConfirmDelete] = useState<{ log: ClinicalLog; skill: ClinicalSkill } | null>(null)
     const [toast, setToast] = useState<{ message: string; type: "success" | "error" } | null>(null)
     const [form, setForm] = useState(EMPTY_FORM)
+    const [downloading, setDownloading] = useState(false)
 
     const { data: skills, isLoading } = useQuery({
         queryKey: ["clinical-skills"],
@@ -111,6 +112,31 @@ export default function ClinicalsPage() {
         onError: () => showToast("Failed to delete log.", "error"),
     })
 
+    async function downloadPdf() {
+        setDownloading(true)
+        try {
+            const res = await api.get("/accounts/clinical-skills/export/", {
+                responseType: "blob",
+            })
+            const url = window.URL.createObjectURL(new Blob([res.data]))
+            const link = document.createElement("a")
+            link.href = url
+            link.setAttribute(
+                "download",
+                `NMC_Logbook_${(user?.full_name ?? "student").replace(/\s+/g, "_")}.pdf`
+            )
+            document.body.appendChild(link)
+            link.click()
+            link.parentNode?.removeChild(link)
+            window.URL.revokeObjectURL(url)
+            showToast("Logbook downloaded")
+        } catch {
+            showToast("Failed to download PDF. Please try again.", "error")
+        } finally {
+            setDownloading(false)
+        }
+    }
+
     function openAddModal(skill: ClinicalSkill) {
         setForm(EMPTY_FORM)
         setAddSkill(skill)
@@ -144,13 +170,31 @@ export default function ClinicalsPage() {
     return (
         <AppShell>
             <div className="max-w-3xl mx-auto space-y-8 pb-10">
-                <div>
-                    <h1 className="text-2xl font-bold text-on-surface">Clinical Tracker</h1>
-                    <p className="text-sm text-on-surface-muted mt-1.5 leading-relaxed">
-                        Log every procedure you perform during clinical rotations.
-                        Your logbook is tailored for the <strong className="text-brand-700">{user?.program_display || 'Nursing'}</strong> program.
-                        Each entry records the date, hospital, ward, and supervisor — ready for your N&amp;MC logbook.
-                    </p>
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                    <div>
+                        <h1 className="text-2xl font-bold text-on-surface">Clinical Tracker</h1>
+                        <p className="text-sm text-on-surface-muted mt-1.5 leading-relaxed max-w-2xl">
+                            Log every procedure you perform during clinical rotations.
+                            Your logbook is tailored for the{" "}
+                            <strong className="text-brand-700">
+                                {user?.program_display || "Nursing"}
+                            </strong>{" "}
+                            program. Each entry records the date, hospital, ward, and supervisor — ready for your N&amp;MC logbook.
+                        </p>
+                    </div>
+                    <div className="shrink-0 mt-2 sm:mt-0">
+                        <Button
+                            variant="secondary"
+                            onClick={downloadPdf}
+                            disabled={downloading || totalCompleted === 0}
+                            className="flex items-center gap-2 border-brand-200 text-brand-700 hover:bg-brand-50"
+                        >
+                            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                            {downloading ? "Generating…" : "Download PDF"}
+                        </Button>
+                    </div>
                 </div>
 
                 {/* Progress */}
