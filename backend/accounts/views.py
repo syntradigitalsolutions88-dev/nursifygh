@@ -36,16 +36,54 @@ from .serializers import (
 User = get_user_model()
 logger = logging.getLogger(__name__)
 
-DEFAULT_CLINICAL_SKILLS = [
-    ("Vital Signs", "Core Procedures", 5),
-    ("Wound Dressing", "Core Procedures", 5),
-    ("IM Injection", "Medication", 10),
-    ("IV Cannulation", "Medication", 10),
-    ("Urinary Catheterization", "Core Procedures", 3),
-    ("NG Tube Insertion", "Core Procedures", 3),
-    ("Bed Bathing", "Patient Care", 10),
-    ("Blood Transfusion", "Medication", 2),
+# ─── Clinical Tracker ──────────────────────────────────────────────────────────
+
+# 1. Universal skills for ALL programs
+UNIVERSAL_SKILLS = [
+    ("Vital Signs", "Universal Core", 5),
+    ("Infection Prevention & Control", "Universal Core", 5),
+    ("Patient Assessment", "Universal Core", 5),
+    ("Medication Administration (Oral/IM)", "Universal Core", 10),
+    ("Documentation & Record Keeping", "Universal Core", 5),
 ]
+
+# 2. Program-specific skills
+PROGRAM_SKILLS = {
+    "GENERAL": [
+        ("NG Tube Insertion", "Medical-Surgical", 3),
+        ("Urinary Catheterization", "Medical-Surgical", 3),
+        ("Wound Dressing", "Medical-Surgical", 5),
+        ("IV Cannulation & Fluids", "Medical-Surgical", 10),
+        ("Blood Transfusion", "Medical-Surgical", 2),
+        ("Oxygen Therapy", "Medical-Surgical", 5),
+        ("Pre/Post-Operative Care", "Medical-Surgical", 5),
+    ],
+    "MIDWIFERY": [
+        ("Antenatal Care", "Maternal Health", 10),
+        ("Vaginal Examination", "Maternal Health", 5),
+        ("Conduct of Normal Delivery", "Maternal Health", 10),
+        ("Episiotomy & Perineal Repair", "Maternal Health", 3),
+        ("Immediate Newborn Care", "Neonatal", 10),
+        ("Neonatal Resuscitation", "Neonatal", 2),
+        ("Postnatal Monitoring", "Maternal Health", 10),
+    ],
+    "PSYCHIATRIC": [
+        ("Mental State Examination (MSE)", "Mental Health", 10),
+        ("Risk Assessment (Suicide/Violence)", "Mental Health", 5),
+        ("Therapeutic Communication", "Mental Health", 10),
+        ("Management of Aggression", "Mental Health", 3),
+        ("ECT Preparation & Recovery", "Mental Health", 2),
+        ("Psychotropic Medication Monitoring", "Mental Health", 5),
+    ],
+    "COMMUNITY": [
+        ("Immunization (EPI)", "Public Health", 10),
+        ("Growth Monitoring", "Public Health", 10),
+        ("Home Visits", "Public Health", 10),
+        ("Health Education", "Public Health", 10),
+        ("Contact Tracing", "Public Health", 5),
+        ("Family Planning Counseling", "Public Health", 5),
+    ]
+}
 
 NCP_SYSTEM_PROMPT = (
     "You are a Registered Nurse (RGN) and clinical instructor in Ghana, writing a formal "
@@ -202,14 +240,19 @@ class ClinicalSkillsView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request):
-        for name, category, required in DEFAULT_CLINICAL_SKILLS:
+        user_program = request.user.program
+        
+        # Combine Universal + Specific to this user's program
+        skills_to_seed = UNIVERSAL_SKILLS + PROGRAM_SKILLS.get(user_program, [])
+
+        for name, category, required in skills_to_seed:
             ClinicalSkill.objects.get_or_create(
                 student=request.user,
                 procedure_name=name,
                 defaults={"category": category, "required_count": required},
             )
 
-        skills = ClinicalSkill.objects.filter(student=request.user)
+        skills = ClinicalSkill.objects.filter(student=request.user).order_by("category", "procedure_name")
         return Response(ClinicalSkillSerializer(skills, many=True).data)
 
     def post(self, request):

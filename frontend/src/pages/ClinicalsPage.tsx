@@ -3,6 +3,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import api from "../api/client"
 import AppShell from "../components/shell/AppShell"
 import Button from "../components/ui/Button"
+import { useAuth } from "../contexts/AuthContext"
 
 interface ClinicalSkill {
     id: number
@@ -31,6 +32,7 @@ const EMPTY_FORM = {
 }
 
 export default function ClinicalsPage() {
+    const { user } = useAuth()
     const queryClient = useQueryClient()
     const [addSkill, setAddSkill] = useState<ClinicalSkill | null>(null)
     const [editLog, setEditLog] = useState<{ log: ClinicalLog; skill: ClinicalSkill } | null>(null)
@@ -145,8 +147,9 @@ export default function ClinicalsPage() {
                 <div>
                     <h1 className="text-2xl font-bold text-on-surface">Clinical Tracker</h1>
                     <p className="text-sm text-on-surface-muted mt-1.5 leading-relaxed">
-                        Log every procedure you perform during clinical rotations. Each entry records the
-                        date, hospital, ward, and supervisor — ready for your N&amp;MC logbook.
+                        Log every procedure you perform during clinical rotations.
+                        Your logbook is tailored for the <strong className="text-brand-700">{user?.program_display || 'Nursing'}</strong> program.
+                        Each entry records the date, hospital, ward, and supervisor — ready for your N&amp;MC logbook.
                     </p>
                 </div>
 
@@ -168,7 +171,7 @@ export default function ClinicalsPage() {
                 {/* Categories */}
                 {Object.entries(categories || {}).map(([category, catSkills]) => (
                     <div key={category} className="space-y-2">
-                        <h2 className="text-sm font-semibold text-on-surface px-1">{category}</h2>
+                        <h2 className="text-xs font-bold text-brand-800 uppercase tracking-wider px-1 mt-6">{category}</h2>
                         <div className="rounded-xl border border-border bg-white divide-y divide-border overflow-hidden">
                             {catSkills.map((skill) => (
                                 <SkillRow
