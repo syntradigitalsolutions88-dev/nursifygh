@@ -6,6 +6,8 @@ import { useAuth } from "../contexts/AuthContext"
 import AppShell from "../components/shell/AppShell"
 import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
+import ExamCountdown from "../components/ExamCountdown"
+import WeakAreasCard from "../components/WeakAreasCard"
 
 function getGreeting(): string {
     const hour = new Date().getHours()
@@ -96,7 +98,7 @@ export default function DashboardPage() {
                 )}
 
                 {/* 2. Stats Grid: Readiness Score */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
                     <div className="col-span-1 md:col-span-1 rounded-xl border border-border bg-white p-5 shadow-sm flex items-center justify-between">
                         <div>
@@ -141,7 +143,13 @@ export default function DashboardPage() {
                             <Button fullWidth size="sm">Start Mock Exam →</Button>
                         </Link>
                     </div>
+
+                    {/* Exam Countdown Card */}
+                    <ExamCountdown />
                 </div>
+
+                {/* Weak Areas Card */}
+                <WeakAreasCard />
 
                 {/* 3. Main Grid: Continue Learning & Recent Activity */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

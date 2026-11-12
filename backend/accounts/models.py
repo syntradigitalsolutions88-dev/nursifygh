@@ -56,6 +56,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     )
     institution = models.CharField(_("institution"), max_length=200, blank=True)
 
+    exam_date = models.DateField(
+        _("target exam date"),
+        null=True,
+        blank=True,
+        help_text=_("Student's target NMC licensing exam date."),
+    )
+
     has_seen_tour = models.BooleanField(_("has seen onboarding tour"), default=False)
 
     is_subscribed = models.BooleanField(_("is subscribed"), default=False, db_index=True)

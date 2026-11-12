@@ -12,6 +12,7 @@ from .views import (
     PastPaperSaveView,
     QuizHistoryView,
     QuizSubmitView,
+    WeakAreasView,
 )
 
 app_name = "academics"
@@ -26,4 +27,5 @@ urlpatterns = [
     path("past-paper/extract/", PastPaperExtractView.as_view(), name="past-paper-extract"),
     path("past-paper/save/", PastPaperSaveView.as_view(), name="past-paper-save"),
     path("my-submissions/", MySubmissionsView.as_view(), name="my-submissions"),
+    path("weak-areas/", WeakAreasView.as_view(), name="weak-areas"),
 ]

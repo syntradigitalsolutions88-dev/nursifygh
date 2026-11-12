@@ -17,7 +17,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from accounts.permissions import IsSubscribed
-from .models import Choice, Course, Question, QuizAttempt
+from .models import Choice, Course, Question, QuizAnswer, QuizAttempt
 from .serializers import (
     CourseDetailSerializer,
     CourseListSerializer,
@@ -292,7 +292,6 @@ class PastPaperSaveView(APIView):
 
         created = 0
         for q in questions:
-            # Strip leading numbers like "41. " or "28)" from OCR'd questions
             text = q.get("question_text", "").strip()
             text = re.sub(r"^\d+[\.\)]\s*", "", text)
             choices = q.get("choices", [])
@@ -303,8 +302,8 @@ class PastPaperSaveView(APIView):
                 course=course,
                 text=text,
                 rationale=q.get("rationale", ""),
-                is_published=False,           # not visible until approved
-                review_status="PENDING",      # goes into review queue
+                is_published=False,
+                review_status="PENDING",
                 uploaded_by=request.user,
             )
             for pos, choice in enumerate(choices):
@@ -343,3 +342,52 @@ class MySubmissionsView(APIView):
             }
             for q in questions
         ])
+
+
+# ─── Weak Areas ──────────────────────────────────────────────────────────────
+
+
+class WeakAreasView(APIView):
+    """Return the student's weakest courses based on quiz accuracy."""
+
+    permission_classes = (permissions.IsAuthenticated, IsSubscribed)
+
+    def get(self, request):
+        from collections import defaultdict
+
+        answers = (
+            QuizAnswer.objects.filter(
+                attempt__student=request.user,
+                attempt__completed_at__isnull=False,
+            )
+            .select_related("question__course")
+        )
+
+        stats = defaultdict(lambda: {"total": 0, "correct": 0, "course": None})
+
+        for ans in answers:
+            course = ans.question.course
+            key = course.id
+            stats[key]["course"] = course
+            stats[key]["total"] += 1
+            if ans.is_correct:
+                stats[key]["correct"] += 1
+
+        result = []
+        for data in stats.values():
+            if data["total"] < 3:
+                continue
+            accuracy = round((data["correct"] / data["total"]) * 100)
+            if accuracy < 60:
+                course = data["course"]
+                result.append({
+                    "course_id": str(course.id),
+                    "course_code": course.code,
+                    "course_title": course.title,
+                    "accuracy": accuracy,
+                    "correct": data["correct"],
+                    "total": data["total"],
+                })
+
+        result.sort(key=lambda x: x["accuracy"])
+        return Response(result[:5])

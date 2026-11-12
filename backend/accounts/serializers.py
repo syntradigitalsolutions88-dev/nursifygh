@@ -44,7 +44,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
             "id", "email", "full_name", "phone_number",
             "level", "level_display",
             "program", "program_display",
-            "institution", "has_seen_tour",
+            "institution", "exam_date", "has_seen_tour",
             "is_subscribed", "subscription_expires_at",
             "has_active_subscription", "date_joined",
         )
