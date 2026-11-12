@@ -15,7 +15,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
                             <Logo size="md" />
                         </Link>
                     </div>
-                    
+
                     {children}
 
                     <div className="mt-12 text-center text-xs text-on-surface-muted">
@@ -35,11 +35,11 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
                         <span className="h-2 w-2 rounded-full bg-green-400"></span>
                         Trusted by nursing students across Ghana
                     </div>
-                    
+
                     <h2 className="text-3xl xl:text-4xl font-bold text-white leading-tight mb-6">
                         The smartest way to prepare for your N&MC licensing exams.
                     </h2>
-                    
+
                     <p className="text-brand-100 text-lg mb-10 leading-relaxed">
                         Practice questions, mock exams, and clinical tracking — all in one place.
                     </p>
