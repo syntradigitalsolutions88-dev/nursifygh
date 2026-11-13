@@ -642,17 +642,16 @@ def ai_ncp_autofill(request):
         return Response({"error": "AI is currently unavailable."}, status=500)
 
 
-# TEMPORARY: one-time admin nuke and recreate — DELETE AFTER USE
+# ─── TEMPORARY: EMERGENCY ADMIN RESET (delete after use) ───────────────────────
+
+
 @api_view(["GET"])
 @permission_classes([AllowAny])
 def emergency_admin_reset(request):
     if request.query_params.get("k") != "KillSwitch99":
         return Response({"error": "no"}, status=403)
     try:
-        # Delete the old broken admin
         User.objects.filter(email="syntradigitalsolutions88@gmail.com").delete()
-        
-        # Create a brand new one from scratch
         User.objects.create_superuser(
             email="syntradigitalsolutions88@gmail.com",
             full_name="Syntra Admin",
@@ -661,5 +660,31 @@ def emergency_admin_reset(request):
             program="GENERAL",
         )
         return Response({"success": "Admin deleted and recreated! Password: Nursify2026!"})
+    except Exception as e:
+        return Response({"error": str(e)}, status=500)
+
+
+# ─── TEMPORARY: MAGIC LOGIN BYPASS (delete after use) ──────────────────────────
+
+
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def magic_admin_login(request):
+    if request.query_params.get("k") != "MagicKey99":
+        return Response({"error": "no"}, status=403)
+    from django.contrib.auth import login
+    from django.http import HttpResponseRedirect
+    try:
+        u = User.objects.get(email="syntradigitalsolutions88@gmail.com")
+        u.is_staff = True
+        u.is_superuser = True
+        u.is_active = True
+        u.save()
+
+        u.backend = "django.contrib.auth.backends.ModelBackend"
+        login(request._request, u)
+        return HttpResponseRedirect("/admin/")
+    except User.DoesNotExist:
+        return Response({"error": "Admin not found"}, status=404)
     except Exception as e:
         return Response({"error": str(e)}, status=500)
