@@ -28,8 +28,8 @@ export default function ChatWidget() {
                 {
                     role: "ai",
                     text: user
-                        ? "Hi! I'm your **NursifyGH academic tutor**. Ask me any nursing question, or how to use the app!"
-                        : "Hi there! Welcome to **NursifyGH**. Ask me anything about how our platform works or how to sign up!"
+                        ? "Hello. I am your **NursifyGH Academic Tutor**. I can help you with clinical concepts, NMC exam questions, NANDA care plans, or how to use the platform. How may I assist you today?"
+                        : "Welcome to **NursifyGH**. I am here to help you understand our platform, pricing, or how to sign up. Ask me anything."
                 }
             ])
         }
@@ -62,7 +62,7 @@ export default function ChatWidget() {
                 throw new Error("No reply")
             }
         } catch (error) {
-            setMessages((prev) => [...prev, { role: "ai", text: "Sorry, I'm having trouble connecting right now. Please try again later." }])
+            setMessages((prev) => [...prev, { role: "ai", text: "I apologise, but I am having trouble connecting right now. Please try again shortly." }])
         } finally {
             setIsLoading(false)
         }
@@ -108,15 +108,26 @@ export default function ChatWidget() {
                         {messages.map((msg, i) => (
                             <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
                                 <div
-                                    className={`max-w-[85%] rounded-2xl px-4 py-2 text-base leading-relaxed break-words ${msg.role === "user"
-                                        ? "bg-brand-700 text-white rounded-br-sm whitespace-pre-wrap"
-                                        : "bg-white border border-border text-on-surface rounded-bl-sm shadow-sm prose prose-sm max-w-none prose-p:my-1 prose-headings:mt-2 prose-headings:mb-1 prose-ul:my-1 prose-ol:my-1 prose-li:my-0"
-                                        }`}
+                                    className={`max-w-[85%] rounded-2xl px-4 py-2 text-base leading-relaxed break-words ${
+                                        msg.role === "user"
+                                            ? "bg-brand-700 text-white rounded-br-sm whitespace-pre-wrap"
+                                            : "bg-white border border-border text-on-surface rounded-bl-sm shadow-sm"
+                                    }`}
                                 >
                                     {msg.role === "user" ? (
                                         msg.text
                                     ) : (
-                                        <ReactMarkdown>{msg.text}</ReactMarkdown>
+                                        <div className="
+                                            [&_p]:mb-2 [&_p:last-child]:mb-0 
+                                            [&_strong]:font-semibold [&_strong]:text-gray-900
+                                            [&_ul]:list-disc [&_ul]:ml-4 [&_ul]:mb-2
+                                            [&_ol]:list-decimal [&_ol]:ml-4 [&_ol]:mb-2
+                                            [&_li]:mb-1 [&_li]:pl-1
+                                            [&_h1]:text-lg [&_h2]:text-md [&_h3]:text-sm [&_h1]:font-bold [&_h2]:font-bold [&_h3]:font-bold [&_h1]:mb-2 [&_h2]:mb-1 [&_h3]:mb-1 [&_h1]:mt-3 [&_h2]:mt-2 [&_h3]:mt-2
+                                            [&_code]:bg-gray-100 [&_code]:px-1 [&_code]:rounded [&_code]:text-xs [&_code]:font-mono
+                                        ">
+                                            <ReactMarkdown>{msg.text}</ReactMarkdown>
+                                        </div>
                                     )}
                                 </div>
                             </div>
