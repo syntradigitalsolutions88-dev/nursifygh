@@ -24,6 +24,7 @@ export default function RegisterPage() {
         institution: "",
         password: "",
         password_confirm: "",
+        referred_by: "",
     })
     const [error, setError] = useState<string | null>(null)
     const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})
@@ -50,6 +51,7 @@ export default function RegisterPage() {
                 institution: form.institution,
                 password: form.password,
                 password_confirm: form.password_confirm,
+                referred_by: form.referred_by.trim() || undefined,
             })
             navigate("/dashboard", { replace: true })
         } catch (err) {
@@ -165,6 +167,16 @@ export default function RegisterPage() {
                         onChange={(e) => set("institution", e.target.value)}
                         placeholder="Korle Bu Nursing Training College"
                         error={fieldError("institution")}
+                        disabled={submitting}
+                    />
+                    <Input
+                        label="Referral code (optional)"
+                        type="text"
+                        value={form.referred_by}
+                        onChange={(e) => set("referred_by", e.target.value.toUpperCase())}
+                        placeholder="e.g. SYNTRA-20"
+                        helper="If a friend invited you, enter their code so they get credit"
+                        error={fieldError("referred_by")}
                         disabled={submitting}
                     />
                 </div>
