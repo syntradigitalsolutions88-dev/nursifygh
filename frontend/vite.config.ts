@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
     react(),
+    tailwindcss(),
     VitePWA({
-      // We removed selfDestroying. We are fixing the actual CSS now.
       registerType: 'autoUpdate',
       manifest: {
         name: 'NursifyGH',
@@ -31,7 +32,7 @@ export default defineConfig({
     })
   ],
   build: {
-    // THIS IS THE FIX: Stop Vite from stripping your Tailwind classes
+    // Forces Vite to use PostCSS/Tailwind instead of its broken native minifier
     cssMinify: false, 
     minify: false,
   }
