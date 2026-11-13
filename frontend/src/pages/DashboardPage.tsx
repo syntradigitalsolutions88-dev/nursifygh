@@ -77,7 +77,42 @@ export default function DashboardPage() {
                     </div>
                 </div>
 
-                {/* Subscription Banner */}
+                {/* ⏳ Trial Countdown Banner — shows during the 3-day trial */}
+                {user.has_active_subscription && user.subscription_expires_at && (() => {
+                    const expiry = new Date(user.subscription_expires_at)
+                    const daysLeft = Math.ceil((expiry.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
+                    if (daysLeft <= 7 && daysLeft > 0) {
+                        return (
+                            <div className="rounded-xl border-2 border-amber-400 bg-gradient-to-r from-amber-50 to-orange-50 p-5">
+                                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                    <div className="flex items-start gap-3">
+                                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
+                                            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p className="text-sm font-bold text-amber-900">
+                                                ⏳ Your 3-day free trial ends in {daysLeft} day{daysLeft !== 1 ? "s" : ""}!
+                                            </p>
+                                            <p className="text-xs text-amber-800 mt-1">
+                                                Subscribe now to keep practicing after <strong>{expiry.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</strong>. One payment of GHS 30 gives you 120 days of full access.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <Link to="/subscribe" className="shrink-0">
+                                        <Button size="md" className="!bg-amber-600 hover:!bg-amber-700 !text-white shadow-md shadow-amber-500/30">
+                                            Subscribe — GHS 30 →
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        )
+                    }
+                    return null
+                })()}
+
+                {/* Subscription Banner — shows only when trial fully expired */}
                 {!user.has_active_subscription && (
                     <div className="rounded-xl border border-brand-200 bg-brand-50 p-5">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
