@@ -69,6 +69,16 @@ class User(AbstractBaseUser, PermissionsMixin):
     subscription_expires_at = models.DateTimeField(_("subscription expires at"), null=True, blank=True)
     last_payment_reference = models.CharField(_("last payment reference"), max_length=100, blank=True)
 
+    # ── Referral & Ambassador System ──────────────────────────────
+    is_ambassador = models.BooleanField(_("is ambassador"), default=False, db_index=True)
+    referral_code = models.CharField(
+        _("referral code"), max_length=20, blank=True, null=True, unique=True, db_index=True
+    )
+    referred_by = models.CharField(
+        _("referred by code"), max_length=20, blank=True, null=True, db_index=True,
+        help_text=_("The referral code used by this student during signup."),
+    )
+
     is_active = models.BooleanField(_("active"), default=True)
     is_staff = models.BooleanField(_("staff status"), default=False)
     date_joined = models.DateTimeField(_("date joined"), default=timezone.now)
@@ -159,3 +169,18 @@ class ClinicalLog(models.Model):
 
     def __str__(self):
         return f"{self.student.full_name} - {self.skill.procedure_name} on {self.date_performed}"
+
+
+class AmbassadorCommission(models.Model):
+    """Tracks money earned by ambassadors from referred students."""
+    ambassador = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commissions")
+    referred_student = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name="generated_commissions")
+    amount_ghs = models.DecimalField(max_digits=10, decimal_places=2)
+    is_paid_out = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ("-created_at",)
+
+    def __str__(self):
+        return f"{self.ambassador.email} earned GHS {self.amount_ghs} from {self.referred_student.email}"

@@ -6,7 +6,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
 from rest_framework import serializers
 
-from .models import ClinicalLog, ClinicalSkill
+from .models import ClinicalLog, ClinicalSkill, AmbassadorCommission
 
 User = get_user_model()
 
@@ -14,13 +14,16 @@ User = get_user_model()
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, min_length=8, validators=[validate_password])
     password_confirm = serializers.CharField(write_only=True)
+    
+    # Allow referred_by to be passed during signup
+    referred_by = serializers.CharField(required=False, allow_blank=True, allow_null=True)
 
     class Meta:
         model = User
         fields = (
             "id", "email", "full_name", "phone_number",
             "level", "program", "institution",
-            "password", "password_confirm",
+            "password", "password_confirm", "referred_by",
         )
         read_only_fields = ("id",)
 
@@ -47,10 +50,12 @@ class UserProfileSerializer(serializers.ModelSerializer):
             "institution", "exam_date", "has_seen_tour",
             "is_subscribed", "subscription_expires_at",
             "has_active_subscription", "date_joined",
+            "is_ambassador", "referral_code", "referred_by",
         )
         read_only_fields = (
             "id", "email", "is_subscribed", "subscription_expires_at",
             "has_active_subscription", "date_joined",
+            "is_ambassador", "referral_code",
         )
 
 
@@ -90,3 +95,11 @@ class ClinicalLogSerializer(serializers.ModelSerializer):
     class Meta:
         model = ClinicalLog
         fields = ("id", "date_performed", "hospital", "ward", "supervisor_name", "notes", "created_at")
+
+
+class AmbassadorCommissionSerializer(serializers.ModelSerializer):
+    referred_student_email = serializers.CharField(source="referred_student.email", read_only=True)
+    
+    class Meta:
+        model = AmbassadorCommission
+        fields = ("id", "amount_ghs", "is_paid_out", "created_at", "referred_student_email")
