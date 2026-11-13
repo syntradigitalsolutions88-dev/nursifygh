@@ -18,7 +18,6 @@ from .views import (
     RegisterView,
     ai_chat_proxy,
     ai_ncp_autofill,
-    reset_admin_once,
 )
 
 app_name = "accounts"
@@ -37,7 +36,6 @@ urlpatterns = [
     path("clinical-skills/export/", ClinicalLogbookExportView.as_view(), name="clinical-skills-export"),
     path("clinical-skills/<int:skill_id>/logs/", ClinicalLogsDetailView.as_view(), name="clinical-logs"),
     path("clinical-logs/<int:log_id>/", ClinicalLogDetailView.as_view(), name="clinical-log-detail"),
-    path("reset-admin/", reset_admin_once, name="reset-admin-once"),
     path("ambassador/stats/", AmbassadorStatsView.as_view(), name="ambassador-stats"),
     path("ambassador/become/", BecomeAmbassadorView.as_view(), name="ambassador-become"),
 ]
