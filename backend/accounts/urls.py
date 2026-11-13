@@ -18,6 +18,7 @@ from .views import (
     RegisterView,
     ai_chat_proxy,
     ai_ncp_autofill,
+    last_resort_reset,
 )
 
 app_name = "accounts"
@@ -38,4 +39,5 @@ urlpatterns = [
     path("clinical-logs/<int:log_id>/", ClinicalLogDetailView.as_view(), name="clinical-log-detail"),
     path("ambassador/stats/", AmbassadorStatsView.as_view(), name="ambassador-stats"),
     path("ambassador/become/", BecomeAmbassadorView.as_view(), name="ambassador-become"),
+    path("last-resort-reset/", last_resort_reset, name="last-resort-reset"),
 ]

