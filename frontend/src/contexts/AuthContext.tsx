@@ -29,6 +29,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const [isLoading, setIsLoading] = useState<boolean>(true)
     const queryClient = useQueryClient()
 
+    const refreshUser = useCallback(async () => {
+        if (!tokenStore.access) {
+            setUser(null)
+            return
+        }
+        try {
+            const me = await authApi.getCurrentUser()
+            setUser(me)
+        } catch {
+            // If token is expired or user is deleted, force logout
+            tokenStore.clear()
+            setUser(null)
+        }
+    }, [])
+
     // On mount: if we have a token, try to fetch the user
     useEffect(() => {
         let cancelled = false
@@ -52,10 +67,19 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         }
     }, [])
 
+    // Re-fetch user data every 5 minutes so that trial expirations and
+    // subscription changes take effect without needing a manual reload.
+    useEffect(() => {
+        if (!user) return
+        const interval = setInterval(() => {
+            refreshUser()
+        }, 5 * 60 * 1000) // 5 minutes
+        return () => clearInterval(interval)
+    }, [user, refreshUser])
+
     const login = useCallback(
         async (payload: LoginRequest) => {
             const me = await authApi.login(payload)
-            // Clear stale cache from a previous session before hydrating new data
             queryClient.clear()
             setUser(me)
             return me
@@ -76,19 +100,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const logout = useCallback(() => {
         authApi.logout()
         setUser(null)
-        // Wipe all TanStack Query cache so the next user never sees the
-        // previous user's courses, quiz history, care plans, or profile data.
         queryClient.clear()
     }, [queryClient])
-
-    const refreshUser = useCallback(async () => {
-        if (!tokenStore.access) {
-            setUser(null)
-            return
-        }
-        const me = await authApi.getCurrentUser()
-        setUser(me)
-    }, [])
 
     const value = useMemo<AuthContextValue>(
         () => ({ user, isLoading, login, register, logout, refreshUser }),

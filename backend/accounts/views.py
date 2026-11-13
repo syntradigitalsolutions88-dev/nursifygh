@@ -174,6 +174,8 @@ class ProfileView(generics.RetrieveUpdateAPIView):
 
     def get_object(self):
         user = self.request.user
+        # Every time the frontend requests /me/, check if the subscription is expired
+        # and flip is_subscribed to False if it is.
         user.deactivate_expired_subscription()
         return user
 
@@ -371,7 +373,7 @@ class ClinicalLogbookExportView(APIView):
             "CategoryStyle", parent=styles["Heading2"], fontSize=14,
             textColor=colors.HexColor("#065f46"), spaceBefore=20, spaceAfter=10,
         )
-        
+
         elements = []
 
         elements.append(Paragraph("N&amp;MC Clinical Logbook Transcript", title_style))
@@ -381,7 +383,7 @@ class ClinicalLogbookExportView(APIView):
         ))
         if request.user.institution:
             elements.append(Paragraph(f"Institution: {request.user.institution}", subtitle_style))
-        
+
         now_str = timezone.now().strftime("%d %B %Y, %I:%M %p")
         elements.append(Paragraph(f"Generated on: {now_str}", subtitle_style))
         elements.append(Spacer(1, 15))
@@ -389,7 +391,7 @@ class ClinicalLogbookExportView(APIView):
         total_required = sum(s.required_count for s in ClinicalSkill.objects.filter(student=request.user))
         total_completed = sum(s.completed_count for s in ClinicalSkill.objects.filter(student=request.user))
         percent = round((total_completed / total_required) * 100) if total_required > 0 else 0
-        
+
         summary_data = [
             ["Total Required Procedures", "Completed Procedures", "Overall Progress"],
             [str(total_required), str(total_completed), f"{percent}%"]
@@ -423,13 +425,13 @@ class ClinicalLogbookExportView(APIView):
                 elements.append(Paragraph(category, category_style))
 
                 data = [["Procedure", "Date", "Hospital / Ward", "Supervisor", "Notes"]]
-                
+
                 for skill in cat_skills:
                     for log in skill.logs.all().order_by("-date_performed"):
                         hospital_ward = log.hospital
                         if log.ward:
                             hospital_ward = f"{hospital_ward}\n{log.ward}" if hospital_ward else log.ward
-                        
+
                         data.append([
                             Paragraph(skill.procedure_name, styles["Normal"]),
                             Paragraph(log.date_performed.strftime("%d %b %Y"), styles["Normal"]),
