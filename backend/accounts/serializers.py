@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+from datetime import timedelta
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
+from django.utils import timezone
 from rest_framework import serializers
 
-from .models import ClinicalLog, ClinicalSkill, AmbassadorCommission
+from .models import AmbassadorCommission, ClinicalLog, ClinicalSkill
 
 User = get_user_model()
 
@@ -14,7 +17,7 @@ User = get_user_model()
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, min_length=8, validators=[validate_password])
     password_confirm = serializers.CharField(write_only=True)
-    
+
     # Allow referred_by to be passed during signup
     referred_by = serializers.CharField(required=False, allow_blank=True, allow_null=True)
 
@@ -34,7 +37,14 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data: dict) -> User:
         password = validated_data.pop("password")
-        return User.objects.create_user(password=password, **validated_data)
+        user = User.objects.create_user(password=password, **validated_data)
+
+        # Give new users a 3-day free trial (auto-grants access to everything)
+        user.is_subscribed = True
+        user.subscription_expires_at = timezone.now() + timedelta(days=3)
+        user.save(update_fields=["is_subscribed", "subscription_expires_at"])
+
+        return user
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -99,7 +109,7 @@ class ClinicalLogSerializer(serializers.ModelSerializer):
 
 class AmbassadorCommissionSerializer(serializers.ModelSerializer):
     referred_student_email = serializers.CharField(source="referred_student.email", read_only=True)
-    
+
     class Meta:
         model = AmbassadorCommission
         fields = ("id", "amount_ghs", "is_paid_out", "created_at", "referred_student_email")

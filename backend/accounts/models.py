@@ -178,9 +178,14 @@ class AmbassadorCommission(models.Model):
     amount_ghs = models.DecimalField(max_digits=10, decimal_places=2)
     is_paid_out = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    
+
     class Meta:
         ordering = ("-created_at",)
 
     def __str__(self):
         return f"{self.ambassador.email} earned GHS {self.amount_ghs} from {self.referred_student.email}"
+
+    @property
+    def payout_due_date(self):
+        """The date by which this commission should be paid out (14 days after earned)."""
+        return self.created_at + timedelta(days=14)

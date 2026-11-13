@@ -21,7 +21,6 @@ class EmailAuthenticationForm(AdminAuthenticationForm):
 class UserAdmin(BaseUserAdmin):
     """Custom admin surfaced around email login and subscription state."""
 
-    # Tell the Admin to use our custom form
     login_form = EmailAuthenticationForm
 
     ordering = ("-date_joined",)
@@ -90,16 +89,17 @@ class AmbassadorCommissionAdmin(admin.ModelAdmin):
         "amount_ghs",
         "is_paid_out",
         "created_at",
+        "payout_due_date",
     )
     list_filter = ("is_paid_out", "created_at")
     search_fields = ("ambassador__email", "referred_student__email", "ambassador__referral_code")
     list_editable = ("is_paid_out",)
-    readonly_fields = ("ambassador", "referred_student", "amount_ghs", "created_at")
+    readonly_fields = ("ambassador", "referred_student", "amount_ghs", "created_at", "payout_due_date")
     date_hierarchy = "created_at"
 
     fieldsets = (
         (_("Commission Details"), {
-            "fields": ("ambassador", "referred_student", "amount_ghs", "created_at")
+            "fields": ("ambassador", "referred_student", "amount_ghs", "created_at", "payout_due_date")
         }),
         (_("Payout"), {
             "fields": ("is_paid_out",),
@@ -116,3 +116,8 @@ class AmbassadorCommissionAdmin(admin.ModelAdmin):
         return obj.referred_student.email if obj.referred_student else "—"
     referred_student_email.short_description = "Referred Student"
     referred_student_email.admin_order_field = "referred_student__email"
+
+    def payout_due_date(self, obj):
+        return obj.payout_due_date.strftime("%d %b %Y")
+    payout_due_date.short_description = "Payout Due"
+    payout_due_date.admin_order_field = "created_at"

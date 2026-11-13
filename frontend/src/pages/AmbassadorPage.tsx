@@ -229,11 +229,11 @@ export default function AmbassadorPage() {
                         </li>
                         <li className="flex gap-2">
                             <span className="text-brand-600 font-bold">2.</span>
-                            Commissions remain "pending" until the end of the month.
+                            Commissions remain "pending" for <strong>14 days</strong> to handle any refunds or payment disputes.
                         </li>
                         <li className="flex gap-2">
                             <span className="text-brand-600 font-bold">3.</span>
-                            On the 1st of each month, we send your pending balance to your registered MoMo number.
+                            After 14 days, we send your pending balance directly to your registered MoMo number.
                         </li>
                         <li className="flex gap-2">
                             <span className="text-brand-600 font-bold">4.</span>
