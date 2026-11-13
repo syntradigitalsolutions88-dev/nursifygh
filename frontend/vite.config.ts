@@ -6,11 +6,9 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      // THIS IS THE KILL SWITCH
+      selfDestroying: true, 
       registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
-        navigateFallback: null, // Let Vercel handle routing, don't cache HTML blindly
-      },
       manifest: {
         name: 'NursifyGH',
         short_name: 'NursifyGH',
