@@ -17,10 +17,12 @@ export default function SubscribePage() {
     const navigate = useNavigate()
     const queryClient = useQueryClient()
 
+    // Fetch payment info even if user is on trial (has_active_subscription = true),
+    // as long as they haven't paid yet.
     const { data: info } = useQuery({
         queryKey: ["manual-payment-info"],
         queryFn: getManualPaymentInfo,
-        enabled: !!user && !user.has_active_subscription,
+        enabled: !!user && !user.has_paid,
     })
 
     const [step, setStep] = useState<"instructions" | "submit">("instructions")
@@ -53,20 +55,27 @@ export default function SubscribePage() {
 
     if (!user) return null
 
-    if (user.has_active_subscription) {
+    // Only block if the user has ALREADY PAID and is currently active.
+    // Trial users (has_paid=false) must be allowed to pay early.
+    if (user.has_active_subscription && user.has_paid) {
         return (
             <AppShell>
                 <div className="max-w-md mx-auto rounded-xl border border-success-200 bg-success-50 p-8 text-center">
-                    <h1 className="text-h2 text-success-800">You're subscribed</h1>
+                    <h1 className="text-h2 text-success-800">You're fully subscribed</h1>
                     <p className="mt-2 text-body-sm text-success-700">
-                        Your subscription is active until{" "}
-                        {user.subscription_expires_at
-                            ? new Date(user.subscription_expires_at).toLocaleDateString(
-                                "en-GB",
-                                { day: "numeric", month: "short", year: "numeric" }
-                            )
-                            : "—"}
+                        Your Semester Pass is active until{" "}
+                        <strong>
+                            {user.subscription_expires_at
+                                ? new Date(user.subscription_expires_at).toLocaleDateString(
+                                    "en-GB",
+                                    { day: "numeric", month: "short", year: "numeric" }
+                                )
+                                : "—"}
+                        </strong>
                         .
+                    </p>
+                    <p className="mt-3 text-xs text-success-600">
+                        If you pay again, we'll add another 120 days to your account.
                     </p>
                     <Link to="/dashboard" className="mt-6 inline-block">
                         <Button>Go to dashboard</Button>
@@ -80,11 +89,43 @@ export default function SubscribePage() {
         <AppShell>
             <div className="max-w-2xl mx-auto space-y-6">
                 <div>
-                    <h1 className="text-h1">Subscribe</h1>
+                    <h1 className="text-h1">
+                        {user.is_on_trial ? "Unlock your full access" : "Subscribe"}
+                    </h1>
                     <p className="mt-1 text-body-sm text-on-surface-muted">
-                        One payment. Full access for a semester.
+                        {user.is_on_trial
+                            ? "You're on a 3-day free trial. Pay now to add 120 full days on top of your trial."
+                            : "One payment. Full access for a semester."}
                     </p>
                 </div>
+
+                {/* Trial status banner */}
+                {user.is_on_trial && user.subscription_expires_at && (
+                    <div className="rounded-xl border-2 border-amber-400 bg-amber-50 p-4">
+                        <p className="text-sm font-bold text-amber-900">
+                            ⏳ Your trial ends on{" "}
+                            {new Date(user.subscription_expires_at).toLocaleDateString("en-GB", {
+                                day: "numeric",
+                                month: "long",
+                                year: "numeric",
+                            })}
+                        </p>
+                        <p className="text-xs text-amber-800 mt-1">
+                            Subscribing today will give you access until{" "}
+                            <strong>
+                                {new Date(
+                                    new Date(user.subscription_expires_at).getTime() +
+                                    120 * 24 * 60 * 60 * 1000
+                                ).toLocaleDateString("en-GB", {
+                                    day: "numeric",
+                                    month: "long",
+                                    year: "numeric",
+                                })}
+                            </strong>
+                            .
+                        </p>
+                    </div>
+                )}
 
                 <div className="rounded-xl border border-border bg-white p-6">
                     <div className="flex items-start justify-between">
