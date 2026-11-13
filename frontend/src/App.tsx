@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import ProtectedRoute from "./components/ProtectedRoute"
 import PaywallGate from "./components/PaywallGate"
 import AboutPage from "./pages/AboutPage"
+import AmbassadorPage from "./pages/AmbassadorPage"
 import AppContactPage from "./pages/AppContactPage"
 import AppHelpPage from "./pages/AppHelpPage"
 import CarePlanDetailPage from "./pages/CarePlanDetailPage"
@@ -63,6 +64,9 @@ export default function App() {
       <Route path="/support" element={<ProtectedRoute><AppHelpPage /></ProtectedRoute>} />
       <Route path="/support/contact" element={<ProtectedRoute><AppContactPage /></ProtectedRoute>} />
       <Route path="/my-submissions" element={<ProtectedRoute><MySubmissionsPage /></ProtectedRoute>} />
+
+      {/* Ambassador Program */}
+      <Route path="/ambassador" element={<ProtectedRoute><AmbassadorPage /></ProtectedRoute>} />
 
       {/* Courses & Quizzes */}
       <Route path="/courses" element={

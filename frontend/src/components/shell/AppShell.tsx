@@ -71,6 +71,14 @@ function ProfileIcon() {
     )
 }
 
+function AmbassadorIcon() {
+    return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+    )
+}
+
 function HelpIcon() {
     return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
@@ -94,6 +102,7 @@ const navItems: NavItem[] = [
     { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
     { label: "Library", to: "/library", icon: <LibraryIcon /> },
     { label: "My Submissions", to: "/my-submissions", icon: <SubmissionsIcon /> },
+    { label: "Ambassador", to: "/ambassador", icon: <AmbassadorIcon /> },
     { label: "Profile", to: "/profile", icon: <ProfileIcon /> },
     { label: "Help & Support", to: "/support", icon: <HelpIcon /> },
 ]
@@ -233,6 +242,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                             <p className="text-xs text-on-surface-muted truncate">{user.email}</p>
                                         </div>
                                         <Link to="/profile" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Profile</Link>
+                                        <Link to="/ambassador" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Ambassador</Link>
                                         <Link to="/my-submissions" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>My Submissions</Link>
                                         <Link to="/support" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Help &amp; Support</Link>
                                         <button onClick={handleLogout} className="w-full text-left flex items-center gap-2 px-4 py-2 text-sm text-danger-700 hover:bg-surface-subtle">Log out</button>
