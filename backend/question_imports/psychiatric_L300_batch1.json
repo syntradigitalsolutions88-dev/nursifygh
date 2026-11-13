@@ -1,0 +1,1677 @@
+{
+"program": "PSYCHIATRIC",
+"level": 300,
+"courses": [
+{
+"course_code": "NPN-311-P",
+"course_title": "Nursing Process",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Nursing Process",
+"Care Planning",
+"Critical Thinking in Mental Health"
+],
+"questions": [
+{
+"topic": "Nursing Process",
+"question_text": "Which sequence correctly represents the five stages of the nursing process?",
+"choices": [
+{"text": "Assessment, diagnosis, planning, implementation and evaluation", "is_correct": true},
+{"text": "Diagnosis, assessment, implementation, planning and evaluation", "is_correct": false},
+{"text": "Planning, assessment, diagnosis, evaluation and implementation", "is_correct": false},
+{"text": "Assessment, planning, implementation, diagnosis and evaluation", "is_correct": false}
+],
+"rationale": "The nursing process follows the systematic sequence of assessment, diagnosis, planning, implementation and evaluation (ADPIE). This framework ensures that psychiatric nursing care is individualised, evidence-based and directed towards achieving measurable patient outcomes.",
+"distractor_rationales": {
+"B": "Diagnosis cannot appropriately precede the collection and analysis of assessment data.",
+"C": "Planning cannot be properly undertaken before assessment and nursing diagnosis.",
+"D": "Nursing diagnosis must precede the development and implementation of the care plan."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Process",
+"question_text": "A 27-year-old patient is admitted to a psychiatric unit in Ghana because of persistent auditory hallucinations. During assessment, the patient reports hearing voices commanding him to jump from a building. What should the nurse assess FIRST?",
+"choices": [
+{"text": "The patient's educational background", "is_correct": false},
+{"text": "The patient's employment history", "is_correct": false},
+{"text": "The content of the voices, suicidal intent, access to means and immediate safety", "is_correct": true},
+{"text": "The patient's preferred recreational activities", "is_correct": false}
+],
+"rationale": "Command hallucinations involving potentially fatal actions indicate an immediate risk of self-harm. The nurse must assess the content, frequency, perceived authority of the voices, intention to obey them and access to means while implementing appropriate safety precautions.",
+"distractor_rationales": {
+"A": "Educational history is relevant to comprehensive assessment but does not address the immediate safety threat.",
+"B": "Employment history does not establish the patient's immediate suicide risk.",
+"D": "Recreational preferences are not the priority when the patient reports potentially life-threatening command hallucinations."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "Which of the following is the BEST example of a measurable expected outcome in a psychiatric nursing care plan?",
+"choices": [
+{"text": "The patient will become completely normal", "is_correct": false},
+{"text": "The patient will understand everything about mental illness", "is_correct": false},
+{"text": "The patient will improve emotionally", "is_correct": false},
+{"text": "The patient will identify three coping strategies before discharge", "is_correct": true}
+],
+"rationale": "A good expected outcome should be specific, measurable, achievable, relevant and time-bound. Identifying three coping strategies provides an observable indicator that can be evaluated during psychiatric nursing care.",
+"distractor_rationales": {
+"A": "Becoming completely normal is vague and does not provide a measurable clinical outcome.",
+"B": "Understanding everything is unrealistic and cannot be objectively evaluated.",
+"C": "Improving emotionally does not specify an observable measure of progress."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Process",
+"question_text": "A psychiatric nurse assesses a patient who avoids social interaction, expresses feelings of worthlessness and refuses to participate in group activities. Which nursing diagnosis is MOST appropriate based on these findings?",
+"choices": [
+{"text": "Impaired social interaction", "is_correct": true},
+{"text": "Impaired physical mobility", "is_correct": false},
+{"text": "Risk for impaired skin integrity", "is_correct": false},
+{"text": "Deficient fluid volume", "is_correct": false}
+],
+"rationale": "The patient's withdrawal from social activities and avoidance of interpersonal relationships support the nursing diagnosis of impaired social interaction. Further assessment should establish contributing factors, including depressive symptoms, anxiety and low self-esteem.",
+"distractor_rationales": {
+"B": "The findings do not indicate limitations in physical movement.",
+"C": "There is no evidence of an increased risk of skin breakdown in the scenario.",
+"D": "The patient has no reported findings suggesting dehydration or fluid loss."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking in Mental Health",
+"question_text": "What is the primary purpose of critical thinking in psychiatric nursing?",
+"choices": [
+{"text": "To follow every instruction without questioning its appropriateness", "is_correct": false},
+{"text": "To make evidence-based clinical decisions using assessment findings and professional judgement", "is_correct": true},
+{"text": "To replace clinical guidelines with personal opinions", "is_correct": false},
+{"text": "To avoid involving patients in treatment decisions", "is_correct": false}
+],
+"rationale": "Critical thinking involves analysing clinical information, evaluating evidence and making appropriate nursing decisions. In psychiatric practice, it supports accurate risk assessment, therapeutic interventions and individualised patient care.",
+"distractor_rationales": {
+"A": "Blindly following instructions without professional judgement can compromise patient safety.",
+"C": "Personal opinions should not replace evidence-based clinical guidelines.",
+"D": "Critical thinking supports patient participation rather than excluding patients from decisions."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care Planning",
+"question_text": "A patient diagnosed with schizophrenia frequently refuses prescribed antipsychotic medication because of unpleasant side effects. Which nursing intervention is MOST appropriate?",
+"choices": [
+{"text": "Threaten the patient with discharge if medication is refused", "is_correct": false},
+{"text": "Hide the medication inside the patient's food", "is_correct": false},
+{"text": "Explore the patient's concerns, assess side effects and collaborate on an appropriate treatment plan", "is_correct": true},
+{"text": "Discontinue all treatment without consulting the prescriber", "is_correct": false}
+],
+"rationale": "Exploring medication concerns helps identify adverse effects, misconceptions and barriers to treatment adherence. The nurse should communicate findings to the prescriber and support shared decision-making while respecting the patient's rights and applicable mental health legislation.",
+"distractor_rationales": {
+"A": "Threatening the patient damages the therapeutic relationship and does not address the reason for refusal.",
+"B": "Concealing medication without lawful authority and appropriate safeguards violates patient autonomy and medication safety.",
+"D": "The nurse should not independently discontinue prescribed psychiatric treatment."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Process",
+"question_text": "During the evaluation stage of the nursing process, a psychiatric nurse discovers that a patient's anxiety has not reduced despite several interventions. What should the nurse do?",
+"choices": [
+{"text": "Continue the same interventions indefinitely", "is_correct": false},
+{"text": "Discharge the patient immediately", "is_correct": false},
+{"text": "Ignore the patient's reported anxiety", "is_correct": false},
+{"text": "Reassess the patient and modify the nursing care plan according to the findings", "is_correct": true}
+],
+"rationale": "Evaluation determines whether planned nursing interventions have achieved their expected outcomes. When outcomes are not achieved, the nurse must reassess the patient, identify barriers and revise the care plan appropriately.",
+"distractor_rationales": {
+"A": "Continuing ineffective interventions without reassessment may delay recovery.",
+"B": "Failure to achieve an outcome does not automatically justify discharge.",
+"C": "Ignoring persistent anxiety violates the principles of patient-centred nursing care."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking in Mental Health",
+"question_text": "A patient admitted with depression tells the nurse, 'My family would be better off without me.' Which response demonstrates appropriate clinical reasoning?",
+"choices": [
+{"text": "You should stop thinking negatively", "is_correct": false},
+{"text": "Are you thinking about killing yourself or ending your life?", "is_correct": true},
+{"text": "Your family will be disappointed if you do anything harmful", "is_correct": false},
+{"text": "Let us discuss your childhood experiences instead", "is_correct": false}
+],
+"rationale": "The statement may indicate suicidal ideation and requires direct, non-judgemental suicide risk assessment. Asking explicitly about suicidal thoughts, plans, intentions and access to means helps identify immediate danger and guide appropriate safety interventions.",
+"distractor_rationales": {
+"A": "Telling the patient to stop thinking negatively dismisses the emotional distress and does not assess suicide risk.",
+"C": "Using guilt may increase emotional distress and discourage honest disclosure.",
+"D": "Exploring childhood experiences does not address the immediate possibility of suicide."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Process",
+"question_text": "A psychiatric nurse is caring for four patients. Which patient should the nurse assess FIRST?",
+"choices": [
+{"text": "A patient with anxiety requesting relaxation exercises", "is_correct": false},
+{"text": "A patient with schizophrenia who refuses to attend group therapy", "is_correct": false},
+{"text": "A patient with depression who has concealed a sharp object and expresses an intention to die", "is_correct": true},
+{"text": "A patient requesting assistance with personal hygiene", "is_correct": false}
+],
+"rationale": "The patient has expressed suicidal intent and possesses a potential means of self-harm, indicating an immediate life-threatening risk. The nurse must initiate appropriate safety precautions, maintain observation and obtain urgent psychiatric assessment.",
+"distractor_rationales": {
+"A": "Anxiety requires attention but does not present the same immediate danger as an active suicide threat.",
+"B": "Refusal to participate in group therapy is not automatically an emergency.",
+"D": "Personal hygiene assistance is important but can wait until the immediate safety threat is addressed."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking in Mental Health",
+"question_text": "A patient reports hearing voices, but the nurse cannot observe the voices directly. What is the MOST appropriate nursing approach?",
+"choices": [
+{"text": "Document the patient's report and assess the characteristics and effect of the hallucinations", "is_correct": true},
+{"text": "Tell the patient that the voices do not exist", "is_correct": false},
+{"text": "Ignore the report because hallucinations cannot be physically observed", "is_correct": false},
+{"text": "Immediately assume that the patient is violent", "is_correct": false}
+],
+"rationale": "Hallucinations are subjective perceptual experiences and must be assessed through the patient's description and observed behaviour. The nurse should document the sensory modality, content, frequency, emotional response and associated safety risks without reinforcing the hallucination.",
+"distractor_rationales": {
+"B": "Directly arguing about the patient's perception may damage therapeutic communication.",
+"C": "Hallucinations are clinically significant even when they cannot be directly observed.",
+"D": "Hallucinations do not automatically mean that a patient is violent."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "A patient with alcohol use disorder has been admitted following repeated withdrawal episodes. Which nursing outcome is MOST appropriate for the immediate care plan?",
+"choices": [
+{"text": "The patient will never consume alcohol again", "is_correct": false},
+{"text": "The patient will independently manage every aspect of recovery within one day", "is_correct": false},
+{"text": "The patient will remain free from withdrawal complications during the immediate observation period", "is_correct": true},
+{"text": "The patient will immediately resume normal occupational activities", "is_correct": false}
+],
+"rationale": "Preventing acute withdrawal complications is an appropriate immediate outcome because alcohol withdrawal can cause seizures and delirium tremens. The nurse should monitor vital signs, consciousness and withdrawal symptoms while administering prescribed treatment.",
+"distractor_rationales": {
+"A": "Permanent abstinence is a long-term recovery goal rather than an immediate measurable outcome.",
+"B": "Complete independent recovery within one day is unrealistic.",
+"D": "Returning to occupational activities is not the immediate priority during acute withdrawal."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Process",
+"question_text": "A psychiatric nurse is reviewing the care plan of a patient with schizophrenia. Which finding BEST demonstrates that the nursing intervention aimed at improving medication adherence has been successful?",
+"choices": [
+{"text": "The patient can explain the prescribed medication regimen and its important adverse effects", "is_correct": true},
+{"text": "The patient refuses to discuss medication", "is_correct": false},
+{"text": "The patient's family administers all medication without involving the patient", "is_correct": false},
+{"text": "The patient reports stopping medication because symptoms have improved", "is_correct": false}
+],
+"rationale": "The ability to explain the medication regimen and important adverse effects demonstrates improved treatment knowledge and informed participation. Actual adherence should also be assessed rather than assuming that knowledge alone guarantees medication use.",
+"distractor_rationales": {
+"B": "Refusal to discuss medication does not demonstrate improved treatment understanding.",
+"C": "Excluding the patient from medication education does not establish individual understanding or participation.",
+"D": "Stopping medication without clinical advice indicates a potential adherence problem."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Thinking in Mental Health",
+"question_text": "A patient with a history of suicide attempts becomes unusually cheerful after several days of severe depression and tells the nurse that everything is finally settled. What should the nurse do?",
+"choices": [
+{"text": "Assume that the patient has completely recovered", "is_correct": false},
+{"text": "Discontinue suicide precautions immediately", "is_correct": false},
+{"text": "Encourage immediate discharge", "is_correct": false},
+{"text": "Reassess suicide risk, including current thoughts, plans, intentions and access to means", "is_correct": true}
+],
+"rationale": "A sudden change in mood does not necessarily indicate recovery, particularly in a patient with a history of suicide attempts. Comprehensive reassessment is necessary because suicide risk may persist or increase despite apparent improvement in mood.",
+"distractor_rationales": {
+"A": "Sudden cheerfulness alone is insufficient evidence of complete recovery.",
+"B": "Safety precautions should only be modified following an appropriate clinical risk assessment.",
+"C": "Discharge without reassessment may expose the patient to serious harm."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care Planning",
+"question_text": "A patient with severe anxiety is unable to participate in group activities and reports difficulty sleeping. Which intervention should the nurse include in the care plan?",
+"choices": [
+{"text": "Force the patient to participate in every group activity", "is_correct": false},
+{"text": "Establish a supportive relationship and introduce appropriate relaxation and sleep-promoting strategies", "is_correct": true},
+{"text": "Avoid all communication with the patient", "is_correct": false},
+{"text": "Encourage the patient to consume alcohol before sleeping", "is_correct": false}
+],
+"rationale": "A supportive therapeutic relationship provides psychological safety and encourages the patient to express anxiety. Relaxation techniques, structured activities and appropriate sleep hygiene can improve coping and sleep without unnecessarily overwhelming the patient.",
+"distractor_rationales": {
+"A": "Forcing participation may increase anxiety and resistance to treatment.",
+"C": "Avoiding communication prevents the development of a therapeutic relationship.",
+"D": "Alcohol can worsen sleep quality and create additional health and dependence problems."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking in Mental Health",
+"question_text": "A nurse in a psychiatric facility in Ghana receives information that a patient believes traditional spiritual forces are responsible for their illness. Which approach demonstrates culturally sensitive critical thinking?",
+"choices": [
+{"text": "Ridicule the patient's traditional beliefs", "is_correct": false},
+{"text": "Automatically conclude that spiritual beliefs prove the patient has psychosis", "is_correct": false},
+{"text": "Explore the patient's cultural understanding while assessing symptoms and applying evidence-based care", "is_correct": true},
+{"text": "Discontinue psychiatric treatment and recommend only traditional healing", "is_correct": false}
+],
+"rationale": "Culturally sensitive psychiatric assessment requires understanding the patient's explanatory model of illness without automatically interpreting culturally shared beliefs as psychopathology. The nurse should assess functional impairment, associated symptoms and safety while providing respectful, evidence-based care.",
+"distractor_rationales": {
+"A": "Ridiculing cultural beliefs damages trust and the therapeutic relationship.",
+"B": "Culturally accepted spiritual beliefs alone are insufficient to establish a psychiatric diagnosis.",
+"D": "Replacing evidence-based psychiatric treatment with unassessed traditional remedies may compromise patient safety."
+},
+"difficulty": "APPLICATION"
+}
+]
+},
+{
+"course_code": "OBN-311-P",
+"course_title": "Obstetric Nursing",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Antenatal Care",
+"Stages of Labour",
+"Postpartum Haemorrhage",
+"Pre-eclampsia and Eclampsia",
+"Obstetric Emergencies",
+"Perinatal Mental Health"
+],
+"questions": [
+{
+"topic": "Antenatal Care",
+"question_text": "What is the primary purpose of routine antenatal care?",
+"choices": [
+{"text": "To identify and manage maternal and fetal complications while promoting a healthy pregnancy", "is_correct": true},
+{"text": "To guarantee that every pregnancy will end without complications", "is_correct": false},
+{"text": "To determine only the sex of the fetus", "is_correct": false},
+{"text": "To provide treatment only when labour begins", "is_correct": false}
+],
+"rationale": "Antenatal care promotes maternal and fetal health through screening, prevention, health education and early identification of complications. In Ghana, routine antenatal services also provide opportunities to screen for hypertension, anaemia, infections and psychosocial concerns.",
+"distractor_rationales": {
+"B": "Antenatal care reduces risks but cannot guarantee a complication-free pregnancy.",
+"C": "Determining fetal sex is not the primary purpose of antenatal care.",
+"D": "Antenatal care begins during pregnancy and continues before the onset of labour."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stages of Labour",
+"question_text": "The first stage of labour is defined as the period between:",
+"choices": [
+{"text": "Delivery of the baby and delivery of the placenta", "is_correct": false},
+{"text": "The onset of established labour and full cervical dilatation", "is_correct": true},
+{"text": "Full cervical dilatation and delivery of the baby", "is_correct": false},
+{"text": "Delivery of the placenta and the first 24 hours postpartum", "is_correct": false}
+],
+"rationale": "The first stage of labour extends from the onset of established labour until full cervical dilatation, usually 10 cm. It involves progressive cervical effacement and dilatation under the influence of uterine contractions.",
+"distractor_rationales": {
+"A": "This describes the interval between the second and third stages of labour.",
+"C": "This describes the second stage of labour.",
+"D": "This describes the period following placental delivery rather than the first stage of labour."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops heavy vaginal bleeding immediately after delivery. Her uterus feels soft and poorly contracted. What is the MOST likely cause?",
+"choices": [
+{"text": "Uterine atony", "is_correct": true},
+{"text": "Cervical ectropion", "is_correct": false},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Physiological lactation", "is_correct": false}
+],
+"rationale": "Uterine atony occurs when the uterus fails to contract effectively following childbirth, allowing continued bleeding from the placental implantation site. It is a leading cause of postpartum haemorrhage and requires immediate management using the facility's postpartum haemorrhage protocol.",
+"distractor_rationales": {
+"B": "Cervical ectropion does not explain a poorly contracted uterus with immediate postpartum heavy bleeding.",
+"C": "Normal uterine involution involves uterine contraction and does not cause uncontrolled haemorrhage.",
+"D": "Lactation is not the cause of severe immediate postpartum bleeding."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Which clinical feature distinguishes eclampsia from pre-eclampsia?",
+"choices": [
+{"text": "Mild ankle oedema", "is_correct": false},
+{"text": "Proteinuria alone", "is_correct": false},
+{"text": "New-onset generalised seizures associated with pre-eclampsia, not explained by another cause", "is_correct": true},
+{"text": "Nausea during early pregnancy", "is_correct": false}
+],
+"rationale": "Eclampsia is characterised by new-onset seizures in a woman with pre-eclampsia, when another cause does not explain the convulsions. It is an obstetric emergency requiring maternal stabilisation, seizure management and appropriate delivery planning.",
+"distractor_rationales": {
+"A": "Oedema may occur during pregnancy and does not independently distinguish eclampsia.",
+"B": "Proteinuria may occur in pre-eclampsia but does not establish eclampsia.",
+"D": "Nausea is a nonspecific symptom and does not distinguish eclampsia."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A woman develops severe confusion, bizarre beliefs and auditory hallucinations five days after giving birth. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Normal postpartum adjustment", "is_correct": false},
+{"text": "Postpartum psychosis", "is_correct": true},
+{"text": "Ordinary pregnancy-related fatigue", "is_correct": false},
+{"text": "Mild postpartum blues", "is_correct": false}
+],
+"rationale": "Postpartum psychosis is a severe psychiatric emergency characterised by symptoms such as hallucinations, delusions, confusion and disorganised behaviour, commonly developing in the early postpartum period. Immediate psychiatric and obstetric assessment is necessary because the mother and infant may be at risk of serious harm.",
+"distractor_rationales": {
+"A": "Confusion, hallucinations and bizarre beliefs are not normal postpartum adjustment symptoms.",
+"C": "Ordinary fatigue does not explain psychotic symptoms.",
+"D": "Postpartum blues typically involve transient emotional changes without frank psychosis."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "Which investigation is particularly important during antenatal care for identifying anaemia in a pregnant woman?",
+"choices": [
+{"text": "Haemoglobin estimation", "is_correct": true},
+{"text": "Visual acuity testing alone", "is_correct": false},
+{"text": "Electrocardiography alone", "is_correct": false},
+{"text": "Hearing assessment", "is_correct": false}
+],
+"rationale": "Haemoglobin estimation helps identify anaemia, a significant maternal health concern in Ghana. Early detection allows appropriate investigation and management, including iron and folic acid supplementation and treatment of underlying causes.",
+"distractor_rationales": {
+"B": "Visual acuity testing does not directly determine haemoglobin concentration.",
+"C": "Electrocardiography assesses cardiac electrical activity rather than diagnosing anaemia.",
+"D": "Hearing assessment is not a routine diagnostic investigation for maternal anaemia."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stages of Labour",
+"question_text": "A woman in active labour is admitted to a maternity unit. The nurse observes regular uterine contractions and progressive cervical dilatation. Which assessment is particularly important for monitoring fetal wellbeing?",
+"choices": [
+{"text": "Maternal hair condition", "is_correct": false},
+{"text": "Maternal food preferences", "is_correct": false},
+{"text": "Fetal heart rate according to the applicable intrapartum monitoring protocol", "is_correct": true},
+{"text": "Maternal educational qualification", "is_correct": false}
+],
+"rationale": "Fetal heart rate monitoring helps identify possible fetal compromise during labour. Intrapartum assessment should follow the appropriate clinical protocol and consider contraction frequency, maternal condition and other findings.",
+"distractor_rationales": {
+"A": "Hair condition does not provide information about fetal oxygenation or wellbeing.",
+"B": "Food preferences do not assess fetal wellbeing.",
+"D": "Educational qualification is relevant to health communication but not direct fetal monitoring."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops postpartum haemorrhage following vaginal delivery. The uterus is boggy on palpation. Which intervention should the nurse initiate as part of immediate first-line management?",
+"choices": [
+{"text": "Encourage the woman to walk around", "is_correct": false},
+{"text": "Perform uterine massage while activating the postpartum haemorrhage response", "is_correct": true},
+{"text": "Give oral fluids and wait for the bleeding to stop", "is_correct": false},
+{"text": "Apply a warm compress to the forehead", "is_correct": false}
+],
+"rationale": "A boggy uterus suggests uterine atony, and uterine massage helps stimulate uterine contraction as part of immediate management. The nurse must simultaneously call for help, assess blood loss and circulation, establish appropriate intravenous access and support administration of prescribed uterotonics and other indicated interventions.",
+"distractor_rationales": {
+"A": "Walking during active postpartum haemorrhage increases risk and delays emergency management.",
+"C": "Oral fluids are insufficient for managing significant acute blood loss.",
+"D": "A forehead compress does not address uterine atony or haemorrhage."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A pregnant woman at 34 weeks presents with blood pressure of 170/115 mmHg, severe headache and visual disturbances. Which condition is MOST likely?",
+"choices": [
+{"text": "Normal physiological changes of pregnancy", "is_correct": false},
+{"text": "Gestational diabetes", "is_correct": false},
+{"text": "Severe pre-eclampsia", "is_correct": true},
+{"text": "Uncomplicated urinary tract infection", "is_correct": false}
+],
+"rationale": "Severe-range hypertension accompanied by neurological symptoms is strongly suggestive of severe pre-eclampsia. The woman requires urgent obstetric assessment, maternal stabilisation, seizure prophylaxis when indicated and appropriate planning for delivery.",
+"distractor_rationales": {
+"A": "Severe hypertension and visual disturbances are not normal physiological changes of pregnancy.",
+"B": "Gestational diabetes is characterised by glucose intolerance and does not explain these findings.",
+"D": "A urinary tract infection does not adequately explain severe hypertension with neurological symptoms."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "Which statement BEST distinguishes postpartum depression from postpartum blues?",
+"choices": [
+{"text": "Postpartum depression involves more persistent and clinically significant depressive symptoms that impair functioning", "is_correct": true},
+{"text": "Postpartum blues always involve hallucinations and delusions", "is_correct": false},
+{"text": "Postpartum depression occurs only during pregnancy", "is_correct": false},
+{"text": "Postpartum blues always require compulsory psychiatric admission", "is_correct": false}
+],
+"rationale": "Postpartum depression involves persistent depressive symptoms, such as low mood, loss of interest, hopelessness and impaired functioning. Postpartum blues are generally milder and transient, whereas depression requires clinical assessment and appropriate treatment.",
+"distractor_rationales": {
+"B": "Hallucinations and delusions suggest postpartum psychosis rather than ordinary postpartum blues.",
+"C": "Postpartum depression develops after childbirth, although depressive episodes can also begin during pregnancy.",
+"D": "Postpartum blues do not routinely require psychiatric admission."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A pregnant woman experiencing an eclamptic seizure is brought to the emergency maternity unit. Which action should the nurse take FIRST?",
+"choices": [
+{"text": "Insert a spoon into the patient's mouth", "is_correct": false},
+{"text": "Attempt to restrain all limb movements forcefully", "is_correct": false},
+{"text": "Protect the patient from injury, position laterally when feasible and maintain airway and breathing", "is_correct": true},
+{"text": "Administer oral antihypertensive medication during the seizure", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, immediate maternal priorities are injury prevention, airway protection and adequate oxygenation. The nurse should summon emergency assistance and prepare for prescribed magnesium sulphate treatment and subsequent obstetric management.",
+"distractor_rationales": {
+"A": "Inserting objects into the mouth may cause dental injury and airway obstruction.",
+"B": "Forceful restraint may cause musculoskeletal injuries and does not stop the seizure.",
+"D": "Oral medication is unsafe during an active seizure because of aspiration risk."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman in labour suddenly develops severe abdominal pain, vaginal bleeding and signs of maternal shock. What serious obstetric complication should the nurse suspect?",
+"choices": [
+{"text": "Placental abruption", "is_correct": true},
+{"text": "Normal cervical dilatation", "is_correct": false},
+{"text": "Physiological Braxton Hicks contractions", "is_correct": false},
+{"text": "Normal fetal movement", "is_correct": false}
+],
+"rationale": "Placental abruption involves premature separation of the normally implanted placenta and may cause painful vaginal bleeding, uterine tenderness and maternal haemodynamic instability. It requires urgent obstetric intervention and continuous assessment of maternal and fetal wellbeing.",
+"distractor_rationales": {
+"B": "Normal cervical dilatation does not explain maternal shock and severe abdominal pain.",
+"C": "Braxton Hicks contractions are generally irregular and do not cause haemorrhagic shock.",
+"D": "Normal fetal movement does not explain the maternal signs of acute blood loss."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A nurse is attending to four postpartum women. Which patient should be assessed FIRST?",
+"choices": [
+{"text": "A woman with mild perineal discomfort after an uncomplicated delivery", "is_correct": false},
+{"text": "A woman breastfeeding comfortably with stable vital signs", "is_correct": false},
+{"text": "A woman with a boggy uterus, heavy vaginal bleeding and increasing pulse rate", "is_correct": true},
+{"text": "A woman requesting assistance with newborn bathing", "is_correct": false}
+],
+"rationale": "A boggy uterus, heavy bleeding and tachycardia suggest postpartum haemorrhage with possible developing hypovolaemic shock. Immediate emergency assessment and management are required to prevent maternal death.",
+"distractor_rationales": {
+"A": "Mild perineal discomfort requires care but is not immediately life-threatening.",
+"B": "A woman with stable vital signs and comfortable breastfeeding does not present an immediate emergency.",
+"D": "Newborn bathing assistance is routine care and can be delayed."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A woman with a history of bipolar disorder gives birth and subsequently develops severe insomnia, grandiose beliefs and disorganised behaviour. Which nursing action is MOST appropriate?",
+"choices": [
+{"text": "Reassure her that these behaviours are normal after childbirth", "is_correct": false},
+{"text": "Arrange urgent psychiatric assessment and ensure the safety of both mother and infant", "is_correct": true},
+{"text": "Leave her alone with the newborn to promote bonding", "is_correct": false},
+{"text": "Discharge her because postpartum mood changes are expected", "is_correct": false}
+],
+"rationale": "The symptoms suggest possible postpartum psychosis, and a history of bipolar disorder increases the risk. Immediate specialist assessment, appropriate observation and a safety plan for mother and infant are essential.",
+"distractor_rationales": {
+"A": "Grandiose delusions and disorganised behaviour are not normal postpartum adjustments.",
+"C": "Leaving a potentially psychotic mother unsupervised with the infant may expose both to harm.",
+"D": "Discharging the patient without urgent assessment would be unsafe."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A nurse in a Ghanaian maternity unit is caring for four women. Which patient requires immediate attention?",
+"choices": [
+{"text": "A woman at 38 weeks with mild irregular contractions", "is_correct": false},
+{"text": "A woman with severe pre-eclampsia who develops sudden convulsions", "is_correct": true},
+{"text": "A woman requesting information about breastfeeding", "is_correct": false},
+{"text": "A woman with mild nausea during the first stage of labour", "is_correct": false}
+],
+"rationale": "Convulsions in a woman with severe pre-eclampsia indicate eclampsia, a life-threatening obstetric emergency. Immediate airway protection, emergency assistance, seizure management and maternal stabilisation take priority.",
+"distractor_rationales": {
+"A": "Mild irregular contractions require assessment but do not represent the same immediate danger.",
+"C": "Breastfeeding education is important but can wait.",
+"D": "Mild nausea during labour is less urgent than an active eclamptic seizure."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PAD-311-P",
+"course_title": "Paediatric Nursing I",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Growth and Development",
+"Immunisation",
+"Dehydration and ORS",
+"Neonatal Care",
+"Common Paediatric Illnesses",
+"Child Mental Health and Behavioural Disorders"
+],
+"questions": [
+{
+"topic": "Growth and Development",
+"question_text": "Which statement correctly distinguishes growth from development?",
+"choices": [
+{"text": "Growth refers to quantitative physical changes, while development refers to progressive acquisition of functional abilities", "is_correct": true},
+{"text": "Growth refers only to emotional changes, while development refers only to body weight", "is_correct": false},
+{"text": "Growth and development have exactly the same meaning", "is_correct": false},
+{"text": "Development stops completely after infancy", "is_correct": false}
+],
+"rationale": "Growth involves measurable increases in physical dimensions, such as height, weight and head circumference. Development refers to progressive changes in motor, cognitive, language, social and emotional functioning.",
+"distractor_rationales": {
+"B": "The definitions of growth and development are incorrectly reversed and restricted.",
+"C": "Growth and development are related but distinct processes.",
+"D": "Development continues throughout childhood and into adulthood."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A mother brings her 18-month-old child to a child welfare clinic in Ghana. Which developmental ability would generally be expected at this age?",
+"choices": [
+{"text": "Walking independently and attempting simple words", "is_correct": true},
+{"text": "Writing complete sentences", "is_correct": false},
+{"text": "Solving complex mathematical problems", "is_correct": false},
+{"text": "Reading paragraphs independently", "is_correct": false}
+],
+"rationale": "By approximately 18 months, many children can walk independently and use several meaningful words, although individual developmental variation occurs. Developmental surveillance should assess gross motor, fine motor, language, cognitive and social milestones.",
+"distractor_rationales": {
+"B": "Writing complete sentences is an advanced skill that is not expected at 18 months.",
+"C": "Complex mathematical reasoning is not an expected toddler developmental ability.",
+"D": "Independent paragraph reading is not an expected milestone at this age."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Immunisation",
+"question_text": "What is the primary purpose of childhood immunisation?",
+"choices": [
+{"text": "To expose children to dangerous infections", "is_correct": false},
+{"text": "To stimulate protective immune responses against specific infectious diseases", "is_correct": true},
+{"text": "To eliminate the need for all future medical care", "is_correct": false},
+{"text": "To treat established bacterial infections immediately", "is_correct": false}
+],
+"rationale": "Immunisation stimulates the immune system to develop protection against specific infectious diseases. Ghana's Expanded Programme on Immunisation helps prevent childhood morbidity and mortality from vaccine-preventable diseases.",
+"distractor_rationales": {
+"A": "Vaccines are designed to stimulate immunity safely rather than deliberately expose children to dangerous infections.",
+"C": "Immunisation does not eliminate the need for other preventive and curative healthcare.",
+"D": "Vaccines primarily prevent disease and are not substitutes for treatment of established infections."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Dehydration and ORS",
+"question_text": "A 2-year-old child presents to a clinic with diarrhoea, sunken eyes, dry mouth and reduced urine output. The child is alert and able to drink. Which intervention is MOST appropriate for managing dehydration when severe dehydration is absent?",
+"choices": [
+{"text": "Withhold all oral fluids", "is_correct": false},
+{"text": "Administer antidiarrhoeal drugs without assessment", "is_correct": false},
+{"text": "Give appropriate oral rehydration solution and continue feeding and breastfeeding", "is_correct": true},
+{"text": "Restrict breastfeeding until diarrhoea stops", "is_correct": false}
+],
+"rationale": "Oral rehydration solution replaces water and electrolytes lost through diarrhoea and is appropriate for children who can drink and do not have severe dehydration. Continued breastfeeding, appropriate feeding and zinc supplementation according to national guidelines support recovery.",
+"distractor_rationales": {
+"A": "Withholding fluids worsens dehydration.",
+"B": "Routine antidiarrhoeal drugs are generally not recommended for young children and may cause harm.",
+"D": "Breastfeeding should continue during diarrhoeal illness."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "Which intervention is most effective in preventing hypothermia in a healthy newborn immediately after birth?",
+"choices": [
+{"text": "Bathing the newborn immediately", "is_correct": false},
+{"text": "Placing the newborn near an open window", "is_correct": false},
+{"text": "Leaving the newborn uncovered for routine observation", "is_correct": false},
+{"text": "Drying the newborn thoroughly and initiating skin-to-skin contact with the mother", "is_correct": true}
+],
+"rationale": "Immediate drying removes evaporative heat loss, while skin-to-skin contact helps maintain the newborn's temperature. Delayed bathing, appropriate clothing and early breastfeeding are additional essential components of newborn thermal care.",
+"distractor_rationales": {
+"A": "Immediate bathing increases heat loss and should be delayed.",
+"B": "An open window may expose the newborn to cold air and increase heat loss.",
+"C": "Leaving a newborn uncovered increases the risk of hypothermia."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 3-year-old child attending a child welfare clinic speaks very few words, rarely makes eye contact and does not respond consistently when called by name. What should the nurse do?",
+"choices": [
+{"text": "Assume the child is deliberately refusing to communicate", "is_correct": false},
+{"text": "Recommend immediate punishment for poor communication", "is_correct": false},
+{"text": "Conduct developmental screening and arrange further assessment for possible developmental disorders", "is_correct": true},
+{"text": "Tell the parents that all children develop at exactly the same rate", "is_correct": false}
+],
+"rationale": "Limited language, reduced social interaction and inconsistent response to name may indicate developmental delay or autism spectrum disorder. The nurse should assess developmental history, conduct appropriate screening and facilitate referral for comprehensive evaluation and early intervention.",
+"distractor_rationales": {
+"A": "The behaviours may reflect developmental difficulties rather than deliberate refusal.",
+"B": "Punishment does not address possible underlying developmental conditions.",
+"D": "Developmental milestones vary, and significant concerns require assessment rather than dismissal."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunisation",
+"question_text": "A mother brings her infant for routine immunisation but reports that the child has a mild common cold without fever and is feeding normally. What should the nurse generally do?",
+"choices": [
+{"text": "Automatically postpone every vaccine for one month", "is_correct": false},
+{"text": "Assess the child and proceed with indicated immunisation if there is no valid contraindication", "is_correct": true},
+{"text": "Give double doses of all vaccines", "is_correct": false},
+{"text": "Permanently discontinue the child's immunisation schedule", "is_correct": false}
+],
+"rationale": "A mild respiratory illness without significant systemic symptoms is generally not a contraindication to routine vaccination. The nurse should assess the child and follow Ghana's current immunisation schedule and vaccine-specific contraindications.",
+"distractor_rationales": {
+"A": "Mild illness alone does not normally justify postponing routine immunisation.",
+"C": "Vaccine doses must follow the recommended schedule and should never be doubled to compensate for mild illness.",
+"D": "A mild cold is not a reason to discontinue childhood immunisation."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Dehydration and ORS",
+"question_text": "A child with acute diarrhoea becomes lethargic, is unable to drink and has very sunken eyes. Which classification is MOST appropriate?",
+"choices": [
+{"text": "No dehydration", "is_correct": false},
+{"text": "Mild dehydration only", "is_correct": false},
+{"text": "Severe dehydration", "is_correct": true},
+{"text": "Fluid overload", "is_correct": false}
+],
+"rationale": "Lethargy, inability to drink and very sunken eyes are danger signs consistent with severe dehydration under the WHO Integrated Management of Childhood Illness approach. The child requires urgent facility-based rehydration and close monitoring, with intravenous treatment when indicated by the applicable protocol.",
+"distractor_rationales": {
+"A": "The child demonstrates multiple serious signs of fluid depletion.",
+"B": "The presence of lethargy and inability to drink indicates a more severe condition.",
+"D": "Fluid overload produces fluid accumulation rather than the described signs of dehydration."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A newborn develops yellow discolouration of the skin within the first 18 hours after birth. What is the MOST appropriate nursing action?",
+"choices": [
+{"text": "Reassure the mother that early jaundice is always normal", "is_correct": false},
+{"text": "Initiate urgent clinical assessment and arrange bilirubin evaluation", "is_correct": true},
+{"text": "Stop breastfeeding permanently", "is_correct": false},
+{"text": "Discharge the newborn without further examination", "is_correct": false}
+],
+"rationale": "Jaundice appearing within the first 24 hours of life is pathological until proven otherwise and requires urgent assessment. Bilirubin measurement and investigation of the underlying cause are necessary because severe neonatal hyperbilirubinaemia can lead to bilirubin encephalopathy.",
+"distractor_rationales": {
+"A": "Jaundice in the first 24 hours is not considered routine physiological jaundice.",
+"C": "Breastfeeding should not be permanently discontinued without a specific clinical indication.",
+"D": "Discharging the newborn without assessment risks missing potentially serious neonatal disease."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Mental Health and Behavioural Disorders",
+"question_text": "Which of the following is a characteristic feature of attention-deficit/hyperactivity disorder (ADHD)?",
+"choices": [
+{"text": "Persistent inattention and/or hyperactivity-impulsivity that causes functional impairment", "is_correct": true},
+{"text": "Temporary sadness after losing a toy", "is_correct": false},
+{"text": "A single episode of fever and vomiting", "is_correct": false},
+{"text": "Normal age-appropriate curiosity without functional impairment", "is_correct": false}
+],
+"rationale": "ADHD is a neurodevelopmental disorder characterised by persistent patterns of inattention and/or hyperactivity-impulsivity that interfere with functioning. Symptoms should be developmentally inappropriate, occur across more than one setting and have an appropriate history before diagnosis.",
+"distractor_rationales": {
+"B": "Temporary sadness is a normal emotional response and does not establish ADHD.",
+"C": "Fever and vomiting are physical symptoms unrelated to the diagnostic features of ADHD.",
+"D": "Normal curiosity without functional impairment is not sufficient to diagnose ADHD."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A 4-year-old child presents to a district hospital with fever, cough, fast breathing and chest indrawing. What should the nurse suspect?",
+"choices": [
+{"text": "Uncomplicated constipation", "is_correct": false},
+{"text": "Pneumonia with possible severe respiratory involvement", "is_correct": true},
+{"text": "Normal respiratory adaptation", "is_correct": false},
+{"text": "Simple skin allergy", "is_correct": false}
+],
+"rationale": "Fever, cough, fast breathing and chest indrawing are important clinical indicators of pneumonia in a child. Chest indrawing suggests significant respiratory involvement and requires prompt assessment, appropriate treatment and monitoring for hypoxaemia.",
+"distractor_rationales": {
+"A": "Constipation does not explain the respiratory symptoms.",
+"C": "Chest indrawing and fast breathing are abnormal findings requiring clinical assessment.",
+"D": "A skin allergy does not explain the child's respiratory presentation."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Mental Health and Behavioural Disorders",
+"question_text": "A mother reports that her 9-year-old child frequently has difficulty maintaining attention, interrupts conversations and struggles to remain seated both at home and school. What is the MOST appropriate nursing action?",
+"choices": [
+{"text": "Immediately label the child as disobedient", "is_correct": false},
+{"text": "Recommend physical punishment", "is_correct": false},
+{"text": "Obtain developmental and behavioural history and facilitate appropriate assessment for ADHD", "is_correct": true},
+{"text": "Advise the mother to withdraw the child from school", "is_correct": false}
+],
+"rationale": "Persistent inattention and hyperactivity across home and school settings may indicate ADHD. Assessment should establish symptom duration, developmental appropriateness, functional impairment and possible alternative explanations before diagnosis.",
+"distractor_rationales": {
+"A": "Labelling the child as disobedient ignores the possibility of an underlying neurodevelopmental disorder.",
+"B": "Physical punishment is not an evidence-based treatment for ADHD.",
+"D": "School withdrawal may worsen educational and social outcomes rather than address the underlying difficulties."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A nurse is caring for four children in a paediatric ward. Which child should be assessed FIRST?",
+"choices": [
+{"text": "A child with uncomplicated malaria who is alert and drinking", "is_correct": false},
+{"text": "A child with mild eczema and itching", "is_correct": false},
+{"text": "A child with diarrhoea who is playful and feeding normally", "is_correct": false},
+{"text": "A child with severe pneumonia who has central cyanosis and marked respiratory distress", "is_correct": true}
+],
+"rationale": "Central cyanosis and severe respiratory distress indicate potentially life-threatening hypoxaemia. The nurse must prioritise airway and breathing assessment, emergency oxygenation support according to protocol and urgent escalation.",
+"distractor_rationales": {
+"A": "An alert child with uncomplicated malaria requires treatment but does not have the same immediate respiratory threat.",
+"B": "Mild eczema is not an immediate life-threatening condition.",
+"C": "A playful child who is feeding normally is less urgent than a child with severe respiratory compromise."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A newborn is delivered in a Ghanaian health facility and is not breathing adequately after initial drying and stimulation. What should the nurse do?",
+"choices": [
+{"text": "Wait for five minutes to see whether spontaneous breathing develops", "is_correct": false},
+{"text": "Initiate appropriate neonatal resuscitation, including effective positive-pressure ventilation when indicated", "is_correct": true},
+{"text": "Give oral glucose immediately", "is_correct": false},
+{"text": "Place the newborn in a cold bath", "is_correct": false}
+],
+"rationale": "A newborn who remains apnoeic or gasping after initial steps requires prompt neonatal resuscitation, with effective positive-pressure ventilation as the critical intervention. Delaying ventilation increases the risk of hypoxic injury and neonatal death.",
+"distractor_rationales": {
+"A": "Waiting unnecessarily delays life-saving ventilation.",
+"C": "Oral glucose does not correct neonatal respiratory failure and may cause aspiration.",
+"D": "Cold bathing causes heat loss and is dangerous for a compromised newborn."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Dehydration and ORS",
+"question_text": "A nurse is attending to four children in a Ghanaian paediatric emergency unit. Which child requires immediate attention?",
+"choices": [
+{"text": "A child with mild diarrhoea who is drinking normally", "is_correct": false},
+{"text": "A child with a mild cough and normal respiratory rate", "is_correct": false},
+{"text": "A child with severe dehydration who is lethargic, unable to drink and has signs of circulatory compromise", "is_correct": true},
+{"text": "A child with mild skin itching", "is_correct": false}
+],
+"rationale": "Lethargy, inability to drink and circulatory compromise indicate severe dehydration with a risk of hypovolaemic shock. The child requires immediate emergency assessment, appropriate intravenous rehydration when indicated and continuous monitoring.",
+"distractor_rationales": {
+"A": "Mild diarrhoea without danger signs can generally be managed using appropriate oral rehydration and monitoring.",
+"B": "A child with normal respiratory function and a mild cough is not the immediate priority.",
+"D": "Mild itching is not an immediate life-threatening emergency."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PFC-311-P",
+"course_title": "Patient/Family-Centred Care Study",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Family-Centred Care in Psychiatric Nursing",
+"Therapeutic Communication",
+"Patient Advocacy",
+"Cultural Sensitivity in Mental Health",
+"Stigma Reduction"
+],
+"questions": [
+{
+"topic": "Therapeutic Communication",
+"question_text": "Which of the following best describes therapeutic communication in psychiatric nursing?",
+"choices": [
+{"text": "Purposeful communication that promotes understanding, trust and positive patient outcomes", "is_correct": true},
+{"text": "Communication intended to impose the nurse's personal beliefs", "is_correct": false},
+{"text": "Casual conversation that avoids the patient's emotional concerns", "is_correct": false},
+{"text": "Communication that prevents patients from expressing their feelings", "is_correct": false}
+],
+"rationale": "Therapeutic communication is a purposeful professional interaction used to establish trust, facilitate emotional expression and support recovery. It is central to psychiatric nursing because patients may experience fear, stigma, altered perception and difficulties expressing their needs.",
+"distractor_rationales": {
+"B": "Imposing personal beliefs violates professional boundaries and patient autonomy.",
+"C": "Avoiding emotional concerns prevents meaningful therapeutic engagement.",
+"D": "Patients should be encouraged to express their feelings in a safe and supportive environment."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient with depression tells the nurse, 'Nobody cares about me, and I feel completely alone.' Which response is MOST therapeutic?",
+"choices": [
+{"text": "You should stop thinking that way", "is_correct": false},
+{"text": "Many people have worse problems than you", "is_correct": false},
+{"text": "Can you tell me more about what makes you feel alone?", "is_correct": true},
+{"text": "You are wrong because your family visits you", "is_correct": false}
+],
+"rationale": "An open-ended response encourages the patient to explore and express emotional experiences. It demonstrates empathy and provides an opportunity to identify contributing factors, including possible depressive symptoms and suicide risk.",
+"distractor_rationales": {
+"A": "This response dismisses the patient's feelings.",
+"B": "Comparing suffering minimises the patient's emotional experience.",
+"D": "Arguing with the patient may discourage further communication."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care in Psychiatric Nursing",
+"question_text": "What is the main purpose of involving family members in psychiatric care when the patient consents and involvement is appropriate?",
+"choices": [
+{"text": "To transfer all treatment responsibilities from healthcare professionals to relatives", "is_correct": false},
+{"text": "To strengthen support, improve understanding and promote continuity of care", "is_correct": true},
+{"text": "To allow relatives to make every decision regardless of the patient's capacity", "is_correct": false},
+{"text": "To prevent the patient from participating in treatment decisions", "is_correct": false}
+],
+"rationale": "Family involvement can improve treatment understanding, medication support, relapse prevention and community reintegration. In Ghana, supportive family participation is particularly valuable in community psychiatric care, provided confidentiality, patient rights and consent are respected.",
+"distractor_rationales": {
+"A": "Healthcare professionals retain their clinical responsibilities even when families participate in care.",
+"C": "Family involvement does not automatically remove a patient's decision-making rights.",
+"D": "Family-centred care promotes patient participation rather than excluding the patient."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A patient with schizophrenia is being denied information about a proposed treatment because the healthcare team assumes the patient cannot understand. What should the psychiatric nurse do?",
+"choices": [
+{"text": "Support the patient's right to receive understandable information and participate in decisions", "is_correct": true},
+{"text": "Agree that psychiatric patients should never receive treatment information", "is_correct": false},
+{"text": "Allow relatives to make every decision without assessing the patient's capacity", "is_correct": false},
+{"text": "Avoid discussing the treatment to prevent disagreement", "is_correct": false}
+],
+"rationale": "Patient advocacy requires protecting the patient's rights, dignity and access to appropriate information. A psychiatric diagnosis alone does not establish incapacity; decision-making capacity must be assessed in relation to the particular decision.",
+"distractor_rationales": {
+"B": "Psychiatric patients retain the right to receive appropriate treatment information.",
+"C": "Family members do not automatically replace the patient's decision-making authority.",
+"D": "Avoiding discussion prevents informed participation and violates patient-centred care."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A patient from a Ghanaian community believes that mental illness may be caused by spiritual influences. What is the MOST appropriate response by the psychiatric nurse?",
+"choices": [
+{"text": "Mock the patient's beliefs and insist that they are irrational", "is_correct": false},
+{"text": "Immediately discharge the patient to seek traditional treatment", "is_correct": false},
+{"text": "Explore the patient's beliefs respectfully while providing evidence-based psychiatric care", "is_correct": true},
+{"text": "Assume that the patient has a delusional disorder solely because of the belief", "is_correct": false}
+],
+"rationale": "Culturally sensitive care recognises that individuals may have different explanations for mental illness. The nurse should explore the patient's beliefs respectfully while assessing whether they are culturally shared or represent psychopathological symptoms and ensuring appropriate clinical treatment.",
+"distractor_rationales": {
+"A": "Mocking cultural beliefs damages trust and discourages treatment engagement.",
+"B": "Discharging a patient without appropriate clinical assessment may expose the patient to harm.",
+"D": "A culturally shared spiritual belief alone is insufficient to establish a psychiatric diagnosis."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction",
+"question_text": "Which statement BEST represents mental health stigma?",
+"choices": [
+{"text": "The negative attitudes, stereotypes and discriminatory behaviours directed towards people with mental health conditions", "is_correct": true},
+{"text": "The provision of equal healthcare services to all patients", "is_correct": false},
+{"text": "The protection of patient confidentiality", "is_correct": false},
+{"text": "The process of promoting community reintegration", "is_correct": false}
+],
+"rationale": "Mental health stigma involves negative stereotypes, prejudice and discrimination against people with mental health conditions. It can discourage treatment seeking, reduce social participation and worsen health inequalities in Ghanaian communities.",
+"distractor_rationales": {
+"B": "Equal healthcare provision is an example of reducing discrimination rather than stigma.",
+"C": "Confidentiality protects patient rights and is not an example of stigma.",
+"D": "Community reintegration promotes inclusion and helps reduce stigma."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient experiencing auditory hallucinations tells the nurse, 'The voices are telling me that I am evil.' Which response is MOST appropriate?",
+"choices": [
+{"text": "Yes, the voices are telling you the truth", "is_correct": false},
+{"text": "I do not hear the voices, but I can see that they are frightening you", "is_correct": true},
+{"text": "Stop imagining things because they are not real", "is_correct": false},
+{"text": "You should listen carefully to everything the voices say", "is_correct": false}
+],
+"rationale": "The nurse should acknowledge the patient's emotional experience without confirming the hallucination. This response maintains reality orientation while demonstrating empathy and encouraging further discussion about the patient's distress and safety.",
+"distractor_rationales": {
+"A": "Agreeing with the hallucination reinforces the patient's altered perception.",
+"C": "Dismissing the experience may damage the therapeutic relationship.",
+"D": "Encouraging obedience to hallucinations may expose the patient to harm."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care in Psychiatric Nursing",
+"question_text": "A family in a rural Ghanaian community refuses to bring their relative with schizophrenia to a psychiatric facility because they believe the illness is caused by spiritual forces. What should the community psychiatric nurse do?",
+"choices": [
+{"text": "Threaten the family with legal action immediately", "is_correct": false},
+{"text": "Ignore the patient because the family has refused treatment", "is_correct": false},
+{"text": "Explore the family's concerns, provide mental health education and facilitate appropriate referral", "is_correct": true},
+{"text": "Encourage the family to use unverified remedies instead of professional care", "is_correct": false}
+],
+"rationale": "Respectful engagement and culturally appropriate mental health education can reduce misconceptions and encourage treatment seeking. The nurse should facilitate access to psychiatric services through available community structures, including CHPS and community mental health services.",
+"distractor_rationales": {
+"A": "Threatening the family may increase resistance and undermine community engagement.",
+"B": "Ignoring the patient neglects the nurse's professional responsibility to facilitate access to care.",
+"D": "Unverified remedies should not replace appropriate psychiatric assessment and treatment."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A patient receiving psychiatric treatment informs the nurse that another healthcare worker has disclosed the patient's diagnosis to unrelated community members. What should the nurse do?",
+"choices": [
+{"text": "Ignore the complaint because mental illness is a public issue", "is_correct": false},
+{"text": "Discuss the patient's diagnosis publicly to correct the information", "is_correct": false},
+{"text": "Tell the patient that confidentiality does not apply in psychiatric care", "is_correct": false},
+{"text": "Listen to the complaint, protect confidentiality and report the suspected breach through appropriate channels", "is_correct": true}
+],
+"rationale": "Confidentiality is a fundamental professional and ethical obligation in psychiatric nursing. The nurse should respond appropriately to the complaint, safeguard the patient's information and follow facility procedures for reporting and addressing confidentiality breaches.",
+"distractor_rationales": {
+"A": "Mental illness does not remove the patient's right to confidentiality.",
+"B": "Further public disclosure would worsen the original breach.",
+"C": "Confidentiality applies to psychiatric patients, subject to lawful and justified exceptions."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient becomes silent and begins crying during a discussion about the death of a parent. Which nursing response is MOST therapeutic?",
+"choices": [
+{"text": "Remain present and allow the patient time to express emotions", "is_correct": true},
+{"text": "Immediately change the subject", "is_correct": false},
+{"text": "Tell the patient that crying is a sign of weakness", "is_correct": false},
+{"text": "Leave without explaining why", "is_correct": false}
+],
+"rationale": "Therapeutic silence allows the patient time to process emotions and communicate when ready. Remaining present demonstrates acceptance, empathy and emotional support.",
+"distractor_rationales": {
+"B": "Changing the subject may communicate discomfort with the patient's feelings.",
+"C": "Crying is a normal emotional response and should not be stigmatised.",
+"D": "Leaving without explanation may make the patient feel abandoned."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction",
+"question_text": "Which community intervention is MOST effective in reducing stigma associated with mental illness in Ghana?",
+"choices": [
+{"text": "Keeping people with mental illness permanently isolated", "is_correct": false},
+{"text": "Conducting community mental health education and promoting social inclusion", "is_correct": true},
+{"text": "Discouraging families from seeking psychiatric services", "is_correct": false},
+{"text": "Using insulting labels to describe psychiatric patients", "is_correct": false}
+],
+"rationale": "Community education and social inclusion help correct misconceptions, reduce discrimination and encourage early treatment seeking. Collaboration with community leaders, families, CHPS compounds and mental health professionals can strengthen these interventions.",
+"distractor_rationales": {
+"A": "Permanent isolation reinforces discrimination and violates principles of community integration.",
+"C": "Discouraging treatment seeking can delay appropriate care and worsen outcomes.",
+"D": "Insulting labels increase stigma and undermine patient dignity."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Care in Psychiatric Nursing",
+"question_text": "A psychiatric patient is preparing for discharge after improvement in symptoms of schizophrenia. Which intervention BEST supports continuity of care?",
+"choices": [
+{"text": "Discharge the patient without discussing follow-up arrangements", "is_correct": false},
+{"text": "Tell the family to manage all psychiatric treatment independently", "is_correct": false},
+{"text": "Develop a discharge plan involving the patient, consenting family members and appropriate community mental health services", "is_correct": true},
+{"text": "Advise the patient to discontinue medication after returning home", "is_correct": false}
+],
+"rationale": "A collaborative discharge plan supports medication continuity, follow-up appointments, relapse prevention and community reintegration. In Ghana, appropriate coordination with community psychiatric nurses and available primary healthcare services can improve continuity of care.",
+"distractor_rationales": {
+"A": "Discharge without follow-up planning increases the risk of interrupted treatment and relapse.",
+"B": "Families provide support but should not independently replace professional psychiatric care.",
+"D": "Stopping prescribed medication without clinical review may increase the risk of relapse."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A patient with depression refuses a proposed treatment after receiving adequate information and demonstrating decision-making capacity. What should the nurse do?",
+"choices": [
+{"text": "Force treatment because the patient has a psychiatric diagnosis", "is_correct": false},
+{"text": "Respect the informed refusal, explore the patient's concerns and communicate with the treating team", "is_correct": true},
+{"text": "Threaten to withhold all future nursing care", "is_correct": false},
+{"text": "Ask another patient to persuade the individual through intimidation", "is_correct": false}
+],
+"rationale": "A patient with decision-making capacity has the right to make informed decisions, including refusing proposed treatment, subject to applicable legal provisions and emergency exceptions. The nurse should document the discussion, explore concerns and communicate with the treating team.",
+"distractor_rationales": {
+"A": "A psychiatric diagnosis alone does not remove a patient's right to make treatment decisions.",
+"C": "Withholding nursing care as punishment is unethical and violates professional responsibilities.",
+"D": "Intimidation is not an appropriate approach to informed treatment refusal."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A psychiatric nurse is caring for four patients. Which patient requires the nurse's FIRST attention?",
+"choices": [
+{"text": "A patient requesting assistance with writing a letter", "is_correct": false},
+{"text": "A patient who is quietly participating in an occupational therapy activity", "is_correct": false},
+{"text": "A patient expressing sadness about missing family members", "is_correct": false},
+{"text": "A patient who suddenly becomes aggressive, threatens others and begins picking up objects to throw", "is_correct": true}
+],
+"rationale": "The patient demonstrates escalating aggression and an immediate potential threat to other people. The nurse should prioritise safety, summon assistance and initiate appropriate de-escalation measures.",
+"distractor_rationales": {
+"A": "Assistance with letter writing is a routine request and can wait.",
+"B": "The patient is participating appropriately in therapeutic activity.",
+"C": "Sadness requires therapeutic support but does not indicate immediate danger in this scenario."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A nurse discovers that a patient's family has taken the patient to a traditional healer before seeking psychiatric treatment. Which action is MOST appropriate?",
+"choices": [
+{"text": "Condemn the family and refuse further communication", "is_correct": false},
+{"text": "Assume that the patient has no psychiatric condition", "is_correct": false},
+{"text": "Respectfully explore the family's experiences and encourage safe, evidence-based treatment", "is_correct": true},
+{"text": "Advise the family to abandon all hospital treatment permanently", "is_correct": false}
+],
+"rationale": "Respectful engagement helps establish trust and provides an opportunity to address misconceptions about mental illness. The nurse should promote safe treatment, discourage harmful practices and facilitate appropriate psychiatric care without unnecessary cultural judgement.",
+"distractor_rationales": {
+"A": "Condemning the family may discourage future engagement with mental health services.",
+"B": "Consultation with a traditional healer does not establish whether a psychiatric condition is present or absent.",
+"D": "Abandoning hospital treatment may delay necessary clinical interventions."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care in Psychiatric Nursing",
+"question_text": "A psychiatric nurse is attending to four patients. Which situation requires immediate intervention?",
+"choices": [
+{"text": "A family asking for information about schizophrenia", "is_correct": false},
+{"text": "A patient expressing an intention to kill a family member and identifying a specific plan", "is_correct": true},
+{"text": "A patient requesting a visit from a relative", "is_correct": false},
+{"text": "A patient asking about community rehabilitation services", "is_correct": false}
+],
+"rationale": "A specific threat and plan to kill another person indicate a potentially imminent risk of serious violence. The nurse must immediately implement appropriate safety measures, notify the treating team and follow relevant legal and institutional procedures.",
+"distractor_rationales": {
+"A": "Family education is important but is not an immediate emergency.",
+"C": "A visitation request is a routine patient need.",
+"D": "Community rehabilitation information can be provided after immediate safety concerns are addressed."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "MMN-311-P",
+"course_title": "Medicine and Medical Nursing III",
+"category": "MED_SURG",
+"semester": "S1",
+"topics": [
+"Medical Conditions in Psychiatric Patients",
+"Psychotropic Medication Side Effects",
+"Metabolic Syndrome",
+"Physical Health Assessment",
+"Medical Comorbidities"
+],
+"questions": [
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "Which of the following is a common extrapyramidal adverse effect associated with first-generation antipsychotic medications?",
+"choices": [
+{"text": "Acute dystonia", "is_correct": true},
+{"text": "Hyperglycaemia in every patient", "is_correct": false},
+{"text": "Improved muscle coordination", "is_correct": false},
+{"text": "Increased visual acuity", "is_correct": false}
+],
+"rationale": "First-generation antipsychotics, particularly high-potency agents, can cause extrapyramidal symptoms such as acute dystonia, parkinsonism, akathisia and tardive dyskinesia. These adverse effects result primarily from dopamine D2 receptor blockade in the nigrostriatal pathway.",
+"distractor_rationales": {
+"B": "Hyperglycaemia is a possible metabolic adverse effect of some antipsychotics but is not an extrapyramidal symptom.",
+"C": "Antipsychotic-induced extrapyramidal symptoms impair rather than improve movement.",
+"D": "Increased visual acuity is not a recognised extrapyramidal adverse effect."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "A patient receiving haloperidol develops sudden painful neck twisting, upward deviation of the eyes and difficulty swallowing. Which adverse effect should the nurse suspect?",
+"choices": [
+{"text": "Tardive dyskinesia", "is_correct": false},
+{"text": "Acute dystonia", "is_correct": true},
+{"text": "Hypoglycaemia", "is_correct": false},
+{"text": "Serotonin withdrawal syndrome", "is_correct": false}
+],
+"rationale": "Sudden involuntary muscle contractions involving the neck and eyes are characteristic of acute dystonia associated with antipsychotic treatment. Difficulty swallowing raises concern about possible airway involvement, requiring immediate assessment, withholding further doses pending urgent review and prescribed treatment such as an anticholinergic.",
+"distractor_rationales": {
+"A": "Tardive dyskinesia usually involves persistent repetitive movements, commonly affecting the face and tongue, after prolonged exposure.",
+"C": "Hypoglycaemia does not typically cause sustained involuntary neck twisting and oculogyric crisis.",
+"D": "Serotonin withdrawal syndrome is not the characteristic explanation for acute dystonic reactions."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolic Syndrome",
+"question_text": "Which combination of findings is most consistent with metabolic syndrome?",
+"choices": [
+{"text": "Central obesity, elevated blood pressure, raised blood glucose and dyslipidaemia", "is_correct": true},
+{"text": "Low blood glucose, low blood pressure and reduced waist circumference", "is_correct": false},
+{"text": "Anaemia, fever and dehydration", "is_correct": false},
+{"text": "Bradycardia, low body temperature and weight loss", "is_correct": false}
+],
+"rationale": "Metabolic syndrome is a cluster of cardiometabolic risk factors that includes central obesity, hypertension, elevated glucose and abnormal lipid levels. Some psychiatric medications, particularly certain second-generation antipsychotics, increase the risk of metabolic abnormalities.",
+"distractor_rationales": {
+"B": "These findings do not represent the characteristic cluster of metabolic syndrome.",
+"C": "Anaemia, fever and dehydration are not diagnostic components of metabolic syndrome.",
+"D": "Bradycardia and weight loss are not the defining metabolic syndrome features."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "A patient taking lithium for bipolar disorder develops coarse tremors, vomiting, diarrhoea, unsteady gait and confusion. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Lithium toxicity", "is_correct": true},
+{"text": "Normal therapeutic response", "is_correct": false},
+{"text": "Iron deficiency anaemia", "is_correct": false},
+{"text": "Uncomplicated allergic rhinitis", "is_correct": false}
+],
+"rationale": "Coarse tremors, gastrointestinal symptoms, ataxia and confusion are concerning manifestations of lithium toxicity. The nurse should withhold further lithium pending urgent medical review, assess hydration and neurological status, and arrange serum lithium and renal function testing.",
+"distractor_rationales": {
+"B": "Coarse tremors, ataxia and confusion are warning signs of toxicity rather than an acceptable therapeutic response.",
+"C": "Iron deficiency anaemia does not adequately explain the characteristic neurological and gastrointestinal findings.",
+"D": "Allergic rhinitis causes nasal symptoms and does not explain lithium-associated neurological deterioration."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Psychiatric Patients",
+"question_text": "Which physical health assessment is particularly important for a patient receiving long-term second-generation antipsychotic medication?",
+"choices": [
+{"text": "Routine assessment of weight, waist circumference, blood pressure, blood glucose and lipid profile", "is_correct": true},
+{"text": "Assessment of hair length only", "is_correct": false},
+{"text": "Routine hearing assessment only", "is_correct": false},
+{"text": "Assessment of handwriting style only", "is_correct": false}
+],
+"rationale": "Second-generation antipsychotics can contribute to weight gain, dyslipidaemia and hyperglycaemia, increasing cardiovascular risk. Baseline and periodic metabolic monitoring allows early detection and management of these complications.",
+"distractor_rationales": {
+"B": "Hair length does not assess the metabolic complications associated with antipsychotic medication.",
+"C": "Hearing assessment alone cannot identify metabolic syndrome.",
+"D": "Handwriting assessment is not a substitute for routine metabolic monitoring."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "A patient receiving clozapine develops fever, sore throat and general weakness. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Agranulocytosis or severe neutropenia", "is_correct": true},
+{"text": "Improved immune function", "is_correct": false},
+{"text": "Simple medication tolerance", "is_correct": false},
+{"text": "Uncomplicated constipation", "is_correct": false}
+],
+"rationale": "Clozapine can cause severe neutropenia or agranulocytosis, reducing the patient's ability to fight infections. Fever and sore throat require urgent clinical assessment and a full blood count with absolute neutrophil count according to the monitoring protocol.",
+"distractor_rationales": {
+"B": "Clozapine-associated neutropenia reduces rather than improves immune defence.",
+"C": "Fever and sore throat may indicate a serious adverse drug reaction and must not be dismissed as tolerance.",
+"D": "Constipation is another important clozapine adverse effect but does not explain the infection-related warning signs."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Psychiatric Patients",
+"question_text": "A patient with schizophrenia has a history of type 2 diabetes mellitus and hypertension. Which nursing intervention is MOST appropriate?",
+"choices": [
+{"text": "Concentrate exclusively on psychiatric symptoms", "is_correct": false},
+{"text": "Stop all physical health monitoring because the patient is receiving psychiatric treatment", "is_correct": false},
+{"text": "Integrate physical health monitoring, medication review and lifestyle education into psychiatric care", "is_correct": true},
+{"text": "Assume that diabetes and hypertension are caused entirely by schizophrenia", "is_correct": false}
+],
+"rationale": "People with severe mental illness experience significant physical health inequalities and may have multiple chronic medical conditions. Integrated care should include blood pressure and glucose monitoring, cardiovascular risk assessment, medication review and appropriate health education.",
+"distractor_rationales": {
+"A": "Psychiatric care must not exclude the assessment and management of physical illnesses.",
+"B": "Psychiatric treatment does not eliminate the need for physical health monitoring.",
+"D": "Diabetes and hypertension have multifactorial causes and should not be attributed entirely to schizophrenia."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "A patient taking an antipsychotic develops a temperature of 40°C, severe muscle rigidity, confusion and autonomic instability. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Neuroleptic malignant syndrome", "is_correct": true},
+{"text": "Mild anxiety disorder", "is_correct": false},
+{"text": "Uncomplicated insomnia", "is_correct": false},
+{"text": "Seasonal allergic rhinitis", "is_correct": false}
+],
+"rationale": "Neuroleptic malignant syndrome is a potentially fatal reaction associated with dopamine-blocking medications and is characterised by hyperthermia, severe rigidity, altered mental status and autonomic instability. It requires immediate discontinuation of the suspected causative medication under emergency medical management and urgent supportive treatment.",
+"distractor_rationales": {
+"B": "Mild anxiety does not explain severe hyperthermia and muscle rigidity.",
+"C": "Insomnia does not cause the characteristic systemic and neurological features of neuroleptic malignant syndrome.",
+"D": "Allergic rhinitis does not explain severe rigidity and autonomic instability."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolic Syndrome",
+"question_text": "A psychiatric patient taking olanzapine has gained 12 kg over six months. The patient's fasting blood glucose and triglyceride levels have also increased. Which nursing intervention is MOST appropriate?",
+"choices": [
+{"text": "Ignore the changes because weight gain is expected in all psychiatric patients", "is_correct": false},
+{"text": "Encourage dietary and physical activity interventions and arrange clinical review of metabolic risk and medication", "is_correct": true},
+{"text": "Tell the patient to stop olanzapine immediately without medical review", "is_correct": false},
+{"text": "Recommend increasing intake of sugary beverages", "is_correct": false}
+],
+"rationale": "Olanzapine is associated with clinically significant weight gain and metabolic abnormalities. The nurse should promote healthy dietary habits, physical activity and regular metabolic monitoring while discussing possible treatment adjustments with the prescriber.",
+"distractor_rationales": {
+"A": "Significant weight and metabolic changes require clinical attention rather than being dismissed.",
+"C": "Abruptly stopping antipsychotic medication without clinical review may cause relapse.",
+"D": "Sugary beverages can worsen weight gain and hyperglycaemia."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Psychiatric Patients",
+"question_text": "A psychiatric patient presents with sudden confusion, sweating, tremors and palpitations. The patient has diabetes and uses insulin. What should the nurse do FIRST?",
+"choices": [
+{"text": "Assume that the patient is experiencing a psychiatric relapse", "is_correct": false},
+{"text": "Administer the next scheduled insulin dose", "is_correct": false},
+{"text": "Assess airway and consciousness and immediately check blood glucose", "is_correct": true},
+{"text": "Refer the patient for routine psychotherapy", "is_correct": false}
+],
+"rationale": "The symptoms may indicate hypoglycaemia, which can cause acute behavioural changes and altered consciousness. The nurse must promptly check blood glucose and provide appropriate treatment according to the patient's consciousness and ability to swallow safely.",
+"distractor_rationales": {
+"A": "Acute confusion and autonomic symptoms require physical health assessment before being attributed to psychiatric relapse.",
+"B": "Administering insulin during possible hypoglycaemia may worsen the condition.",
+"D": "Routine psychotherapy does not address a potentially life-threatening metabolic emergency."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "A patient taking an antidepressant develops agitation, sweating, diarrhoea, tremor, hyperreflexia and clonus after another serotonergic medication is introduced. What is the MOST likely condition?",
+"choices": [
+{"text": "Neuroleptic malignant syndrome", "is_correct": false},
+{"text": "Serotonin syndrome", "is_correct": true},
+{"text": "Lithium-induced hypothyroidism", "is_correct": false},
+{"text": "Tardive dyskinesia", "is_correct": false}
+],
+"rationale": "Serotonin syndrome results from excessive serotonergic activity and may cause agitation, autonomic instability, hyperreflexia and clonus. It requires urgent recognition, withdrawal of causative serotonergic agents under medical direction and supportive emergency treatment.",
+"distractor_rationales": {
+"A": "Neuroleptic malignant syndrome is more strongly associated with dopamine blockade and typically features severe rigidity and reduced reflexes rather than clonus and hyperreflexia.",
+"C": "Lithium-induced hypothyroidism does not explain the acute neuromuscular and autonomic findings.",
+"D": "Tardive dyskinesia generally produces persistent involuntary movements rather than an acute serotonergic toxidrome."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Psychiatric Patients",
+"question_text": "A patient with schizophrenia is admitted with excessive thirst, frequent urination, blurred vision and unexplained weight loss. Which medical condition should the nurse investigate?",
+"choices": [
+{"text": "Type 2 diabetes mellitus", "is_correct": true},
+{"text": "Acute otitis media", "is_correct": false},
+{"text": "Iron deficiency anaemia alone", "is_correct": false},
+{"text": "Uncomplicated dermatitis", "is_correct": false}
+],
+"rationale": "Polyuria, polydipsia, blurred vision and unexplained weight loss are characteristic symptoms of hyperglycaemia and possible diabetes mellitus. Blood glucose testing and appropriate clinical assessment are required, particularly because some antipsychotic medications increase metabolic risk.",
+"distractor_rationales": {
+"B": "Otitis media causes ear-related symptoms and does not explain the classical hyperglycaemic presentation.",
+"C": "Iron deficiency anaemia may cause fatigue and pallor but does not adequately explain polyuria and polydipsia.",
+"D": "Dermatitis does not cause the characteristic symptoms described."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "A psychiatric patient taking an antipsychotic suddenly develops severe difficulty swallowing, noisy breathing and involuntary neck contractions. Which action should the nurse take FIRST?",
+"choices": [
+{"text": "Encourage the patient to drink water", "is_correct": false},
+{"text": "Document the findings and wait until the next ward round", "is_correct": false},
+{"text": "Arrange routine outpatient follow-up", "is_correct": false},
+{"text": "Activate emergency assistance and assess airway and breathing", "is_correct": true}
+],
+"rationale": "The findings suggest severe acute dystonia with possible laryngeal involvement, which can cause life-threatening airway obstruction. Immediate airway assessment, emergency assistance and prescribed treatment are essential.",
+"distractor_rationales": {
+"A": "Giving oral fluids to a patient with severe swallowing difficulty increases aspiration risk.",
+"B": "Waiting for a routine ward round delays treatment of a potential airway emergency.",
+"C": "Outpatient follow-up is inappropriate for an acute respiratory threat."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medical Conditions in Psychiatric Patients",
+"question_text": "A patient with bipolar disorder taking lithium develops excessive thirst and frequent urination over several weeks. Which investigation is particularly important?",
+"choices": [
+{"text": "Renal function tests and serum electrolyte assessment", "is_correct": true},
+{"text": "Routine visual acuity assessment only", "is_correct": false},
+{"text": "Hearing assessment only", "is_correct": false},
+{"text": "Skin allergy testing only", "is_correct": false}
+],
+"rationale": "Lithium can impair renal concentrating ability and cause nephrogenic diabetes insipidus, resulting in polyuria and polydipsia. Renal function and electrolyte assessment, particularly sodium, are important, alongside evaluation of hydration and serum lithium concentration.",
+"distractor_rationales": {
+"B": "Visual acuity testing does not evaluate lithium-associated renal complications.",
+"C": "Hearing assessment does not identify impaired renal concentrating ability.",
+"D": "Skin allergy testing is unrelated to the patient's urinary symptoms."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Psychiatric Patients",
+"question_text": "A psychiatric nurse is attending to four patients. Which patient requires FIRST assessment?",
+"choices": [
+{"text": "A patient with mild constipation after starting an antipsychotic", "is_correct": false},
+{"text": "A patient with stable schizophrenia requesting a family meeting", "is_correct": false},
+{"text": "A patient taking clozapine who develops fever, sore throat and profound weakness", "is_correct": true},
+{"text": "A patient requesting information about healthy eating", "is_correct": false}
+],
+"rationale": "Fever, sore throat and profound weakness in a patient receiving clozapine may indicate severe neutropenia or agranulocytosis. Immediate assessment and urgent blood investigations are necessary because severe infection can develop rapidly.",
+"distractor_rationales": {
+"A": "Constipation requires assessment because severe complications can occur with clozapine, but the described symptoms in option C raise an immediate concern for serious infection.",
+"B": "A family meeting is a routine therapeutic intervention and is not an immediate emergency.",
+"D": "Dietary education is important but can be postponed."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychotropic Medication Side Effects",
+"question_text": "A patient receiving long-term antipsychotic medication develops repetitive tongue movements, lip smacking and involuntary facial grimacing. Which condition is MOST likely?",
+"choices": [
+{"text": "Acute dystonia", "is_correct": false},
+{"text": "Tardive dyskinesia", "is_correct": true},
+{"text": "Neuroleptic malignant syndrome", "is_correct": false},
+{"text": "Lithium toxicity", "is_correct": false}
+],
+"rationale": "Tardive dyskinesia is characterised by repetitive involuntary movements, particularly involving the tongue, lips, jaw and face, and is associated with prolonged exposure to dopamine receptor-blocking medications. Early recognition and clinical review are important because the condition may persist even after medication changes.",
+"distractor_rationales": {
+"A": "Acute dystonia generally presents with sudden sustained muscle contractions rather than persistent repetitive orofacial movements.",
+"C": "Neuroleptic malignant syndrome is characterised by hyperthermia, rigidity and autonomic instability.",
+"D": "Lithium toxicity typically produces tremors, gastrointestinal symptoms and neurological impairment rather than classic tardive orofacial movements."
+},
+"difficulty": "APPLICATION"
+}
+]
+},
+{
+"course_code": "AND-311-P",
+"course_title": "Advanced Nursing III",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Nursing Assessment",
+"Mental State Examination",
+"Risk Assessment",
+"De-escalation",
+"Restraint Protocols"
+],
+"questions": [
+{
+"topic": "Mental State Examination",
+"question_text": "Which of the following is NOT a standard component of the mental state examination?",
+"choices": [
+{"text": "Appearance and behaviour", "is_correct": false},
+{"text": "Speech and mood", "is_correct": false},
+{"text": "Thought content and perception", "is_correct": false},
+{"text": "Blood group and Rh factor", "is_correct": true}
+],
+"rationale": "The mental state examination systematically assesses current psychological functioning through domains such as appearance, behaviour, speech, mood, affect, thought, perception, cognition, insight and judgement. Blood group and Rh factor are laboratory-related medical information rather than components of the MSE.",
+"distractor_rationales": {
+"A": "Appearance and behaviour are standard MSE domains.",
+"B": "Speech and mood are essential areas of mental state assessment.",
+"C": "Thought content and perception are central components of the MSE."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental State Examination",
+"question_text": "A psychiatric nurse observes that a patient speaks rapidly, moves continuously, changes topics frequently and appears unusually cheerful and overconfident. Which mood-related condition should the nurse investigate?",
+"choices": [
+{"text": "Mania", "is_correct": true},
+{"text": "Apathy", "is_correct": false},
+{"text": "Catatonia", "is_correct": false},
+{"text": "Dementia only", "is_correct": false}
+],
+"rationale": "Elevated or irritable mood, increased activity, pressured speech and flight of ideas are characteristic features of mania. The nurse should further assess sleep, judgement, impulsivity, psychotic symptoms and potential risks to the patient and others.",
+"distractor_rationales": {
+"B": "Apathy involves reduced motivation and emotional engagement rather than excessive activity and elevated mood.",
+"C": "Catatonia involves marked psychomotor abnormalities and does not describe the typical manic presentation.",
+"D": "Dementia involves cognitive decline and does not adequately explain this cluster of manic symptoms."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "Which of the following is an important element of a comprehensive suicide risk assessment?",
+"choices": [
+{"text": "The patient's favourite television programme", "is_correct": false},
+{"text": "Previous suicide attempts, current ideation, plan, intent and access to means", "is_correct": true},
+{"text": "The patient's preferred clothing style", "is_correct": false},
+{"text": "The number of books owned by the patient", "is_correct": false}
+],
+"rationale": "Suicide risk assessment should examine current suicidal thoughts, intent, plans, access to means and previous attempts. Additional factors such as substance use, psychiatric symptoms, protective factors and recent stressful events should also be considered.",
+"distractor_rationales": {
+"A": "Television preferences do not directly establish suicide risk.",
+"C": "Clothing preferences are not a core element of suicide risk assessment.",
+"D": "Book ownership does not provide clinically meaningful information about suicide intent."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "De-escalation",
+"question_text": "A patient in a psychiatric ward begins shouting, pacing and clenching fists after being informed that a family visit has been delayed. What should the nurse do FIRST?",
+"choices": [
+{"text": "Approach calmly, maintain a safe distance and use a non-threatening tone", "is_correct": true},
+{"text": "Shout louder to demonstrate authority", "is_correct": false},
+{"text": "Immediately surround the patient with several staff members", "is_correct": false},
+{"text": "Challenge the patient to fight if necessary", "is_correct": false}
+],
+"rationale": "Calm communication, appropriate personal space and a non-threatening approach are fundamental de-escalation strategies. The nurse should assess the patient's triggers, communicate clear limits and maintain an environment that promotes safety.",
+"distractor_rationales": {
+"B": "Shouting may increase agitation and escalate aggression.",
+"C": "Surrounding the patient unnecessarily may create a threatening environment.",
+"D": "Provoking confrontation is dangerous and violates professional standards."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Restraint Protocols",
+"question_text": "Which statement BEST describes the appropriate use of physical restraint in psychiatric nursing?",
+"choices": [
+{"text": "It should be used routinely for patients who refuse medication", "is_correct": false},
+{"text": "It should be used as punishment for aggressive behaviour", "is_correct": false},
+{"text": "It should be considered only when necessary to prevent imminent harm after less restrictive measures have failed or are inappropriate", "is_correct": true},
+{"text": "It should be applied whenever a patient refuses to participate in group activities", "is_correct": false}
+],
+"rationale": "Physical restraint is a restrictive intervention that should only be considered when necessary to prevent imminent harm and when less restrictive alternatives are ineffective or inappropriate. It must comply with applicable Ghanaian law, professional standards and institutional protocols, with appropriate authorisation, monitoring and documentation.",
+"distractor_rationales": {
+"A": "Medication refusal alone does not justify physical restraint.",
+"B": "Restraint must never be used as punishment.",
+"D": "Refusal to participate in therapeutic activities does not justify restraint."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A psychiatric patient reports hearing voices commenting on every action. Which additional assessment is MOST important?",
+"choices": [
+{"text": "The patient's preferred meal", "is_correct": false},
+{"text": "The frequency, content, distress and possible harmful commands associated with the voices", "is_correct": true},
+{"text": "The patient's shoe size", "is_correct": false},
+{"text": "The patient's favourite sport", "is_correct": false}
+],
+"rationale": "A detailed hallucination assessment helps establish the nature and clinical significance of the perceptual disturbance. Particular attention must be given to command hallucinations, threats, suicidal instructions and the patient's perceived ability or intention to obey them.",
+"distractor_rationales": {
+"A": "Meal preference does not establish the characteristics or safety implications of hallucinations.",
+"C": "Shoe size has no relevant relationship to hallucination assessment.",
+"D": "Sport preferences are not a priority when assessing potentially harmful hallucinations."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient with a history of violent behaviour begins pacing, shouting and threatening another patient. Which action should the nurse take FIRST?",
+"choices": [
+{"text": "Ignore the behaviour until physical violence occurs", "is_correct": false},
+{"text": "Move closer and argue with the patient", "is_correct": false},
+{"text": "Recognise the escalating risk, summon assistance and initiate appropriate de-escalation", "is_correct": true},
+{"text": "Leave the ward without informing colleagues", "is_correct": false}
+],
+"rationale": "Pacing, shouting and threats are warning signs of escalating aggression and require early intervention. The nurse should seek assistance, maintain safe positioning, protect other patients and use appropriate de-escalation techniques.",
+"distractor_rationales": {
+"A": "Waiting for physical violence increases the risk of injury.",
+"B": "Arguing and approaching aggressively may escalate the situation.",
+"D": "Leaving without informing colleagues abandons the responsibility to maintain ward safety."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental State Examination",
+"question_text": "During an MSE, a patient repeatedly states that the government has implanted a tracking device in the patient's brain despite the absence of supporting evidence. How should this thought content be documented?",
+"choices": [
+{"text": "Delusion of persecution", "is_correct": true},
+{"text": "Auditory hallucination", "is_correct": false},
+{"text": "Flight of ideas", "is_correct": false},
+{"text": "Thought blocking", "is_correct": false}
+],
+"rationale": "A fixed false belief involving perceived surveillance or deliberate harm may represent a persecutory delusion. The nurse should document the patient's exact description and assess conviction, cultural context, associated distress and possible risk-related behaviours.",
+"distractor_rationales": {
+"B": "An auditory hallucination is a perception of sound without an external stimulus, not a fixed false belief.",
+"C": "Flight of ideas involves rapid shifting between connected thoughts and is commonly associated with mania.",
+"D": "Thought blocking involves an abrupt interruption in the flow of thought."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "De-escalation",
+"question_text": "A patient experiencing acute agitation refuses to sit down and repeatedly demands to leave the psychiatric ward. Which nursing communication approach is MOST appropriate?",
+"choices": [
+{"text": "Use threats to force the patient to obey", "is_correct": false},
+{"text": "Use active listening, acknowledge the patient's concerns and offer realistic choices", "is_correct": true},
+{"text": "Laugh at the patient's demands", "is_correct": false},
+{"text": "Ignore the patient completely", "is_correct": false}
+],
+"rationale": "Active listening and offering realistic choices help reduce feelings of frustration and loss of control. A respectful, calm and clear communication style supports de-escalation while maintaining appropriate safety boundaries.",
+"distractor_rationales": {
+"A": "Threats may increase fear, anger and aggression.",
+"C": "Laughing at the patient is disrespectful and may worsen agitation.",
+"D": "Ignoring an increasingly agitated patient prevents early intervention."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Restraint Protocols",
+"question_text": "A patient has been placed under physical restraint following an immediate threat of serious harm. Which nursing responsibility is ESSENTIAL during the restraint period?",
+"choices": [
+{"text": "Leave the patient unattended until the restraint is removed", "is_correct": false},
+{"text": "Tighten the restraints whenever the patient complains", "is_correct": false},
+{"text": "Avoid documenting the restraint to protect the facility", "is_correct": false},
+{"text": "Monitor respiratory status, circulation, consciousness, physical comfort and ongoing need for restraint", "is_correct": true}
+],
+"rationale": "Continuous or appropriately frequent monitoring is essential to detect respiratory compromise, circulatory impairment, injury and psychological distress. Restraint must be reviewed regularly and discontinued at the earliest safe opportunity in accordance with applicable protocols.",
+"distractor_rationales": {
+"A": "Leaving a restrained patient unattended exposes the patient to serious physical harm.",
+"B": "Restraints should never be tightened simply because the patient complains.",
+"C": "Accurate documentation is essential for accountability, continuity of care and legal compliance."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient with depression tells the nurse that a specific date has been selected for suicide and that medication has already been collected for the attempt. What is the MOST appropriate nursing action?",
+"choices": [
+{"text": "Maintain routine observation because the patient has not attempted suicide yet", "is_correct": false},
+{"text": "Promise to keep the information secret", "is_correct": false},
+{"text": "Treat the situation as an imminent suicide risk, initiate immediate safety precautions and obtain urgent psychiatric intervention", "is_correct": true},
+{"text": "Encourage the patient to wait until the next clinic appointment", "is_correct": false}
+],
+"rationale": "A specific suicide plan, intended date and access to means indicate a high and potentially imminent risk of suicide. Immediate protective action, appropriate observation, removal or restriction of access to means and urgent specialist assessment are required.",
+"distractor_rationales": {
+"A": "A patient does not need to have attempted suicide before urgent protective intervention is necessary.",
+"B": "Absolute confidentiality cannot be promised when disclosure is necessary to prevent serious harm.",
+"D": "Delaying intervention until a routine appointment creates an unacceptable safety risk."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "During a mental state examination, a patient answers questions with unrelated words and sentences that have no logical connection. Which abnormality should the nurse suspect?",
+"choices": [
+{"text": "Circumstantiality", "is_correct": false},
+{"text": "Loose associations or disorganised thinking", "is_correct": true},
+{"text": "Normal thought progression", "is_correct": false},
+{"text": "Intact abstract reasoning", "is_correct": false}
+],
+"rationale": "Loose associations involve impaired logical connections between ideas and may produce disorganised speech. This finding can occur in psychotic disorders and requires assessment alongside other thought and cognitive abnormalities.",
+"distractor_rationales": {
+"A": "Circumstantiality involves excessive detail but eventually returns to the original point.",
+"C": "Normal thought progression maintains understandable and logical connections.",
+"D": "The described speech pattern does not demonstrate intact abstract reasoning."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A psychiatric nurse is caring for four patients. Which patient should receive immediate assessment?",
+"choices": [
+{"text": "A patient requesting assistance with bathing", "is_correct": false},
+{"text": "A patient who is quietly reading in the ward", "is_correct": false},
+{"text": "A patient with stable anxiety requesting relaxation exercises", "is_correct": false},
+{"text": "A patient who reports command hallucinations instructing them to stab another patient and states an intention to obey", "is_correct": true}
+],
+"rationale": "The patient presents an immediate risk of serious violence because of harmful command hallucinations and stated intention to obey. The nurse must initiate urgent safety precautions, protect potential victims and obtain immediate clinical assistance.",
+"distractor_rationales": {
+"A": "Assistance with bathing is routine care and can be delayed.",
+"B": "A patient reading quietly without signs of distress does not present an immediate emergency.",
+"C": "Stable anxiety requires support but is less urgent than an imminent threat of violence."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "De-escalation",
+"question_text": "Which environmental intervention is appropriate when caring for an increasingly agitated psychiatric patient?",
+"choices": [
+{"text": "Reduce unnecessary noise, crowding and environmental stimulation", "is_correct": true},
+{"text": "Increase the number of people surrounding the patient without clinical need", "is_correct": false},
+{"text": "Play loud music to distract the patient", "is_correct": false},
+{"text": "Remove all access to a quiet and safe space", "is_correct": false}
+],
+"rationale": "Reducing environmental stimulation can decrease sensory overload and support emotional regulation. The nurse should provide a calm environment, maintain safe access to exits and use appropriate observation and communication strategies.",
+"distractor_rationales": {
+"B": "Unnecessary crowding may increase the patient's perception of threat.",
+"C": "Loud music may worsen agitation and sensory overload.",
+"D": "Removing access to a quiet area eliminates an important de-escalation resource."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Restraint Protocols",
+"question_text": "A psychiatric patient becomes verbally aggressive but responds positively when the nurse offers a quiet room and supportive conversation. What should the nurse do?",
+"choices": [
+{"text": "Apply physical restraint because the patient was initially aggressive", "is_correct": false},
+{"text": "Continue using the least restrictive effective intervention and monitor the patient's behaviour", "is_correct": true},
+{"text": "Administer sedative medication without a valid prescription or lawful authority", "is_correct": false},
+{"text": "Punish the patient for shouting", "is_correct": false}
+],
+"rationale": "When verbal de-escalation and environmental modification are effective, more restrictive interventions are unnecessary. Psychiatric nursing practice requires the use of the least restrictive effective approach while continuously evaluating patient and staff safety.",
+"distractor_rationales": {
+"A": "Restraint is not justified when the immediate risk has been managed through less restrictive measures.",
+"C": "Medication administration must comply with prescribing requirements and applicable legal provisions.",
+"D": "Punishment is not a therapeutic intervention and violates professional standards."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A psychiatric nurse is assessing a patient who reports severe depression and recent social withdrawal. Which additional finding would MOST strongly increase concern about immediate suicide risk?",
+"choices": [
+{"text": "The patient enjoys listening to music", "is_correct": false},
+{"text": "The patient attends scheduled occupational therapy", "is_correct": false},
+{"text": "The patient has a specific suicide plan, access to means and current intention to act", "is_correct": true},
+{"text": "The patient prefers eating meals alone", "is_correct": false}
+],
+"rationale": "A specific suicide plan combined with access to means and current intention indicates a potentially imminent risk of suicide. The nurse must initiate immediate safety measures and arrange urgent psychiatric assessment.",
+"distractor_rationales": {
+"A": "Enjoying music does not independently indicate imminent suicide risk.",
+"B": "Participation in occupational therapy does not establish an immediate suicide threat.",
+"D": "Social withdrawal may be clinically relevant but is less specific than an active plan and intention."
+},
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}

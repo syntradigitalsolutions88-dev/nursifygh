@@ -5,6 +5,8 @@ from __future__ import annotations
 import io
 import json
 import logging
+import random
+import string
 from collections import defaultdict
 
 import requests
@@ -29,8 +31,9 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.views import TokenObtainPairView
 
 from .email_service import send_welcome_email
-from .models import ClinicalLog, ClinicalSkill
+from .models import AmbassadorCommission, ClinicalLog, ClinicalSkill
 from .serializers import (
+    AmbassadorCommissionSerializer,
     ClinicalLogSerializer,
     ClinicalSkillSerializer,
     PasswordChangeSerializer,
@@ -339,7 +342,6 @@ class ClinicalLogbookExportView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request):
-        # Fetch ONLY skills that have at least one completed log
         skills = ClinicalSkill.objects.filter(
             student=request.user,
             completed_count__gt=0,
@@ -372,7 +374,6 @@ class ClinicalLogbookExportView(APIView):
         
         elements = []
 
-        # --- Header / Cover Page Info ---
         elements.append(Paragraph("N&amp;MC Clinical Logbook Transcript", title_style))
         elements.append(Paragraph(
             f"Student: <b>{request.user.full_name}</b> &nbsp;|&nbsp; Program: {request.user.get_program_display()} &nbsp;|&nbsp; Level: {request.user.get_level_display()}",
@@ -385,7 +386,6 @@ class ClinicalLogbookExportView(APIView):
         elements.append(Paragraph(f"Generated on: {now_str}", subtitle_style))
         elements.append(Spacer(1, 15))
 
-        # --- Summary Table ---
         total_required = sum(s.required_count for s in ClinicalSkill.objects.filter(student=request.user))
         total_completed = sum(s.completed_count for s in ClinicalSkill.objects.filter(student=request.user))
         percent = round((total_completed / total_required) * 100) if total_required > 0 else 0
@@ -412,7 +412,6 @@ class ClinicalLogbookExportView(APIView):
         elements.append(summary_table)
         elements.append(Spacer(1, 20))
 
-        # --- Detailed Logs Grouped by Category ---
         if not skills:
             elements.append(Paragraph("No clinical logs recorded yet.", styles["Normal"]))
         else:
@@ -423,7 +422,6 @@ class ClinicalLogbookExportView(APIView):
             for category, cat_skills in grouped_skills.items():
                 elements.append(Paragraph(category, category_style))
 
-                # Table header - Added Notes column
                 data = [["Procedure", "Date", "Hospital / Ward", "Supervisor", "Notes"]]
                 
                 for skill in cat_skills:
@@ -440,7 +438,6 @@ class ClinicalLogbookExportView(APIView):
                             Paragraph(log.notes or "-", styles["Normal"]),
                         ])
 
-                # Adjusted column widths to fit Notes
                 table = Table(data, colWidths=[110, 70, 120, 90, 130], repeatRows=1)
                 table.setStyle(TableStyle([
                     ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#f3f4f6")),
@@ -468,6 +465,72 @@ class ClinicalLogbookExportView(APIView):
             filename=f"NMC_Logbook_{safe_name}.pdf",
             content_type="application/pdf",
         )
+
+
+# ─── Ambassador Dashboard ──────────────────────────────────────────────────────
+
+
+class AmbassadorStatsView(APIView):
+    """Return the ambassador's earnings, referred students, and payout status."""
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        user = request.user
+        if not user.is_ambassador:
+            return Response({"error": "Not an ambassador"}, status=403)
+
+        commissions = AmbassadorCommission.objects.filter(
+            ambassador=user
+        ).select_related("referred_student").order_by("-created_at")
+
+        total_earned = sum(c.amount_ghs for c in commissions)
+        pending_payout = sum(c.amount_ghs for c in commissions if not c.is_paid_out)
+        paid_out = total_earned - pending_payout
+        referral_count = commissions.count()
+
+        return Response({
+            "referral_code": user.referral_code,
+            "total_earned": str(total_earned),
+            "pending_payout": str(pending_payout),
+            "paid_out": str(paid_out),
+            "referral_count": referral_count,
+            "recent": [
+                {
+                    "amount": str(c.amount_ghs),
+                    "referred_email": c.referred_student.email if c.referred_student else "(deleted)",
+                    "is_paid_out": c.is_paid_out,
+                    "date": c.created_at.isoformat(),
+                }
+                for c in commissions[:20]
+            ],
+        })
+
+
+class BecomeAmbassadorView(APIView):
+    """Allow a user to self-enroll as an ambassador and get a referral code."""
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+        user = request.user
+        if user.is_ambassador:
+            return Response({"detail": "You are already an ambassador.", "code": user.referral_code})
+
+        first = (user.full_name.split(" ")[0] or "AMB").upper()[:5]
+        suffix = "".join(random.choices(string.ascii_uppercase + string.digits, k=4))
+        code = f"{first}-{suffix}"
+
+        while User.objects.filter(referral_code=code).exists():
+            suffix = "".join(random.choices(string.ascii_uppercase + string.digits, k=4))
+            code = f"{first}-{suffix}"
+
+        user.is_ambassador = True
+        user.referral_code = code
+        user.save(update_fields=["is_ambassador", "referral_code"])
+
+        return Response({
+            "detail": "You are now an ambassador!",
+            "code": code,
+        })
 
 
 # ─── AI ────────────────────────────────────────────────────────────────────────

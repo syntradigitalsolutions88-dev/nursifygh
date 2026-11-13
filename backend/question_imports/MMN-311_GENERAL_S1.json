@@ -1,0 +1,593 @@
+{
+  "program": "GENERAL",
+  "level": 300,
+  "semester": "S1",
+  "course_code": "MMN-311",
+  "course_title": "Medicine and Medical Nursing III",
+  "category": "MED_SURG",
+  "topics": [
+    "Severe Malaria",
+    "Tuberculosis",
+    "Hypertension",
+    "Diabetes Mellitus",
+    "Post-Operative Care"
+  ],
+  "questions": [
+    {
+      "topic": "Severe Malaria",
+      "question_text": "Which of the following clinical manifestations is a major danger sign indicating severe malaria in an adult patient?",
+      "choices": [
+        {
+          "text": "Mild headache and reduced appetite",
+          "is_correct": false
+        },
+        {
+          "text": "Impaired consciousness and repeated convulsions",
+          "is_correct": true
+        },
+        {
+          "text": "Intermittent fever and sweating",
+          "is_correct": false
+        },
+        {
+          "text": "Mild abdominal discomfort",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Impaired consciousness and repeated convulsions are recognized manifestations of severe malaria and may indicate cerebral involvement. In Ghana, patients presenting with these danger signs require immediate hospital assessment and prompt management to prevent death.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Severe Malaria",
+      "question_text": "A 4-year-old child is admitted to a district hospital in Ghana with confirmed severe falciparum malaria. Which antimalarial medication is recommended as the preferred initial treatment?",
+      "choices": [
+        {
+          "text": "Oral chloroquine",
+          "is_correct": false
+        },
+        {
+          "text": "Intravenous artesunate",
+          "is_correct": true
+        },
+        {
+          "text": "Oral artemether-lumefantrine",
+          "is_correct": false
+        },
+        {
+          "text": "Oral sulfadoxine-pyrimethamine",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Intravenous artesunate is the preferred treatment for severe malaria in both children and adults. Ghanaian malaria case-management guidelines recommend prompt parenteral treatment, followed by a complete course of an appropriate oral artemisinin-based combination therapy when the patient can tolerate oral medication.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Severe Malaria",
+      "question_text": "A 28-year-old patient is admitted with severe malaria, repeated vomiting and altered consciousness. The patient is unable to swallow medications safely. Which nursing intervention is most appropriate regarding the prescribed antimalarial treatment?",
+      "choices": [
+        {
+          "text": "Administer oral artemether-lumefantrine with water",
+          "is_correct": false
+        },
+        {
+          "text": "Withhold all antimalarial medication until consciousness returns",
+          "is_correct": false
+        },
+        {
+          "text": "Prepare and administer prescribed intravenous artesunate promptly",
+          "is_correct": true
+        },
+        {
+          "text": "Give oral chloroquine through a drinking straw",
+          "is_correct": false
+        }
+      ],
+      "rationale": "A patient with severe malaria and impaired consciousness cannot safely swallow oral medication and requires prompt parenteral antimalarial treatment. Intravenous artesunate is the preferred treatment in Ghana, and supportive nursing care must continue alongside prescribed therapy.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Severe Malaria",
+      "question_text": "A nurse is caring for an unconscious patient receiving treatment for severe malaria. Which investigation is particularly important to perform regularly because the patient is at risk of developing a life-threatening complication?",
+      "choices": [
+        {
+          "text": "Blood glucose monitoring",
+          "is_correct": true
+        },
+        {
+          "text": "Visual acuity assessment",
+          "is_correct": false
+        },
+        {
+          "text": "Hearing assessment",
+          "is_correct": false
+        },
+        {
+          "text": "Skin allergy testing",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Severe malaria can cause hypoglycaemia due to increased glucose consumption, impaired glucose production and sometimes antimalarial treatment. Regular blood glucose monitoring, particularly in unconscious patients, helps detect and treat hypoglycaemia early.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Tuberculosis",
+      "question_text": "Tuberculosis is primarily transmitted from an infectious patient to another person through which route?",
+      "choices": [
+        {
+          "text": "Contaminated food and water",
+          "is_correct": false
+        },
+        {
+          "text": "Direct contact with infected blood",
+          "is_correct": false
+        },
+        {
+          "text": "Inhalation of infectious airborne particles",
+          "is_correct": true
+        },
+        {
+          "text": "Bites from infected mosquitoes",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Pulmonary tuberculosis is transmitted mainly through the inhalation of airborne particles containing Mycobacterium tuberculosis released when an infectious person coughs, sneezes, speaks or sings. This is particularly important in Ghanaian healthcare facilities where early identification and airborne infection prevention measures are essential.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Tuberculosis",
+      "question_text": "Which diagnostic investigation is commonly used in Ghana to rapidly detect pulmonary tuberculosis and identify rifampicin resistance?",
+      "choices": [
+        {
+          "text": "Widal test",
+          "is_correct": false
+        },
+        {
+          "text": "GeneXpert MTB/RIF assay",
+          "is_correct": true
+        },
+        {
+          "text": "Random blood glucose test",
+          "is_correct": false
+        },
+        {
+          "text": "Mantoux test alone",
+          "is_correct": false
+        }
+      ],
+      "rationale": "The GeneXpert MTB/RIF assay is a molecular diagnostic test that detects Mycobacterium tuberculosis genetic material and assesses rifampicin resistance. It is an important diagnostic tool within Ghana's National Tuberculosis Control Programme and supports timely treatment decisions.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Tuberculosis",
+      "question_text": "A 35-year-old man attending a hospital in Kumasi reports coughing for five weeks, night sweats, weight loss and occasional blood-stained sputum. What is the most appropriate nursing action?",
+      "choices": [
+        {
+          "text": "Reassure him that the symptoms indicate a common cold",
+          "is_correct": false
+        },
+        {
+          "text": "Provide cough medicine and discharge him immediately",
+          "is_correct": false
+        },
+        {
+          "text": "Arrange appropriate sputum testing for tuberculosis and initiate infection prevention measures",
+          "is_correct": true
+        },
+        {
+          "text": "Start antihypertensive medication",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Persistent cough, night sweats, weight loss and haemoptysis are suggestive of pulmonary tuberculosis and require prompt investigation. The nurse should arrange sputum testing, such as GeneXpert, and implement airborne infection prevention measures to reduce transmission within the facility.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Tuberculosis",
+      "question_text": "A nurse is assigned to care for a patient with infectious pulmonary tuberculosis in a hospital. Which infection prevention measure provides appropriate respiratory protection for the nurse?",
+      "choices": [
+        {
+          "text": "Wearing a fit-tested N95 or equivalent respirator",
+          "is_correct": true
+        },
+        {
+          "text": "Wearing sterile gloves only",
+          "is_correct": false
+        },
+        {
+          "text": "Wearing a surgical cap only",
+          "is_correct": false
+        },
+        {
+          "text": "Wearing an ordinary apron without respiratory protection",
+          "is_correct": false
+        }
+      ],
+      "rationale": "A fit-tested N95 or equivalent respirator provides respiratory protection against airborne particles containing Mycobacterium tuberculosis. In Ghanaian healthcare facilities, this measure should complement appropriate ventilation, patient separation and administrative infection prevention controls.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Hypertension",
+      "question_text": "Hypertension is best defined as:",
+      "choices": [
+        {
+          "text": "A temporary increase in body temperature",
+          "is_correct": false
+        },
+        {
+          "text": "A persistent elevation of arterial blood pressure above accepted diagnostic thresholds",
+          "is_correct": true
+        },
+        {
+          "text": "A reduction in the amount of blood circulating in the body",
+          "is_correct": false
+        },
+        {
+          "text": "An abnormal increase in blood glucose concentration",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Hypertension is a chronic condition characterised by persistently elevated arterial blood pressure. In clinical practice in Ghana, accurate blood pressure measurement and appropriate confirmation are important before establishing a diagnosis and initiating long-term management.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Hypertension",
+      "question_text": "Which of the following is a major long-term complication of poorly controlled hypertension?",
+      "choices": [
+        {
+          "text": "Cerebrovascular accident",
+          "is_correct": true
+        },
+        {
+          "text": "Acute appendicitis",
+          "is_correct": false
+        },
+        {
+          "text": "Otitis externa",
+          "is_correct": false
+        },
+        {
+          "text": "Peptic ulcer disease in every affected patient",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Persistent uncontrolled hypertension damages blood vessels and increases the risk of cerebrovascular accidents, heart failure and chronic kidney disease. Stroke prevention is an important objective of hypertension management in Ghana, where hypertension is a significant cardiovascular risk factor.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Hypertension",
+      "question_text": "A 56-year-old man attending a medical outpatient department in Accra has repeated blood pressure readings of 168/102 mmHg. He reports frequently eating salted fish and processed foods and rarely exercising. Which health education message is most appropriate?",
+      "choices": [
+        {
+          "text": "Increase salt consumption to improve circulation",
+          "is_correct": false
+        },
+        {
+          "text": "Stop all physical activity to prevent an increase in blood pressure",
+          "is_correct": false
+        },
+        {
+          "text": "Reduce dietary sodium, engage in regular physical activity and maintain a healthy weight",
+          "is_correct": true
+        },
+        {
+          "text": "Discontinue prescribed antihypertensive medication whenever symptoms disappear",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Reducing dietary sodium, undertaking regular physical activity and maintaining a healthy body weight are important lifestyle interventions for controlling hypertension. The patient should also understand that antihypertensive medication must be taken as prescribed, even when he feels well.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Hypertension",
+      "question_text": "A patient with known hypertension arrives at the emergency department with a blood pressure of 210/130 mmHg, severe headache, new confusion and blurred vision. What is the most appropriate interpretation of this condition?",
+      "choices": [
+        {
+          "text": "Controlled hypertension",
+          "is_correct": false
+        },
+        {
+          "text": "Hypertensive emergency with suspected acute target-organ involvement",
+          "is_correct": true
+        },
+        {
+          "text": "Normal physiological response to exercise",
+          "is_correct": false
+        },
+        {
+          "text": "Mild postural hypotension",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Severely elevated blood pressure accompanied by new neurological symptoms raises concern for hypertensive emergency and acute target-organ damage. The patient requires immediate medical assessment, close monitoring and appropriately supervised blood pressure management to reduce the risk of complications such as stroke.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Diabetes Mellitus",
+      "question_text": "Diabetes mellitus is primarily characterised by which metabolic abnormality?",
+      "choices": [
+        {
+          "text": "Persistent hyperglycaemia resulting from defects in insulin secretion, insulin action or both",
+          "is_correct": true
+        },
+        {
+          "text": "Persistent reduction in blood calcium concentration",
+          "is_correct": false
+        },
+        {
+          "text": "Excessive production of red blood cells",
+          "is_correct": false
+        },
+        {
+          "text": "Complete failure of the kidneys to produce urine",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Diabetes mellitus is a metabolic disorder characterised by chronic hyperglycaemia resulting from inadequate insulin secretion, impaired insulin action or a combination of both. In Ghana, appropriate diagnosis, treatment and patient education are essential to prevent complications affecting the cardiovascular, renal, nervous and visual systems.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Diabetes Mellitus",
+      "question_text": "Which of the following clinical manifestations is most characteristic of uncontrolled diabetes mellitus?",
+      "choices": [
+        {
+          "text": "Polyuria, polydipsia and polyphagia",
+          "is_correct": true
+        },
+        {
+          "text": "Bradycardia, constipation and weight gain in every patient",
+          "is_correct": false
+        },
+        {
+          "text": "Reduced thirst and decreased urine production",
+          "is_correct": false
+        },
+        {
+          "text": "Persistent hypothermia and hearing loss",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Polyuria, polydipsia and polyphagia are the classical symptoms of diabetes mellitus. Hyperglycaemia causes glucose to enter the urine, producing osmotic diuresis, fluid loss and increased thirst, which are important symptoms for nurses to recognise during clinical assessment.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Diabetes Mellitus",
+      "question_text": "A 42-year-old patient with type 2 diabetes mellitus is receiving insulin treatment in a medical ward. The patient suddenly develops sweating, tremors, palpitations and intense hunger. What condition should the nurse suspect?",
+      "choices": [
+        {
+          "text": "Hyperglycaemia",
+          "is_correct": false
+        },
+        {
+          "text": "Hypoglycaemia",
+          "is_correct": true
+        },
+        {
+          "text": "Diabetic nephropathy",
+          "is_correct": false
+        },
+        {
+          "text": "Diabetic retinopathy",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Sweating, tremors, palpitations and intense hunger are common adrenergic manifestations of hypoglycaemia. Insulin-treated patients are at increased risk, particularly when meals are delayed or missed, so the nurse should promptly check the patient's blood glucose and initiate appropriate treatment.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Diabetes Mellitus",
+      "question_text": "A conscious adult patient with diabetes mellitus presents with sweating and tremors. A bedside blood glucose test shows 3.0 mmol/L, and the patient is able to swallow safely. Which intervention should the nurse perform first?",
+      "choices": [
+        {
+          "text": "Administer the scheduled insulin dose",
+          "is_correct": false
+        },
+        {
+          "text": "Give approximately 15-20 g of fast-acting oral glucose or carbohydrate",
+          "is_correct": true
+        },
+        {
+          "text": "Restrict all oral food and fluids",
+          "is_correct": false
+        },
+        {
+          "text": "Encourage the patient to undertake physical exercise",
+          "is_correct": false
+        }
+      ],
+      "rationale": "A blood glucose concentration of 3.0 mmol/L indicates hypoglycaemia requiring immediate treatment. Because the patient is conscious and can swallow safely, fast-acting oral glucose or carbohydrate should be given, followed by repeat blood glucose assessment after approximately 15 minutes.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Post-Operative Care",
+      "question_text": "What is the primary purpose of postoperative nursing assessment during the immediate recovery period?",
+      "choices": [
+        {
+          "text": "To identify early complications and evaluate the patient's recovery from anaesthesia and surgery",
+          "is_correct": true
+        },
+        {
+          "text": "To allow the patient to sleep without interruption for the entire recovery period",
+          "is_correct": false
+        },
+        {
+          "text": "To discontinue all prescribed medications",
+          "is_correct": false
+        },
+        {
+          "text": "To prevent the patient from moving for several days",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Postoperative nursing assessment aims to identify complications such as airway obstruction, respiratory depression, haemorrhage and cardiovascular instability. Regular monitoring of vital signs, consciousness, pain, wound condition and fluid balance is essential in Ghanaian hospital surgical wards.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Post-Operative Care",
+      "question_text": "Which of the following complications is associated with prolonged postoperative immobility?",
+      "choices": [
+        {
+          "text": "Deep vein thrombosis",
+          "is_correct": true
+        },
+        {
+          "text": "Improved pulmonary ventilation",
+          "is_correct": false
+        },
+        {
+          "text": "Increased muscle strength",
+          "is_correct": false
+        },
+        {
+          "text": "Reduced risk of pressure injuries",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Prolonged immobility causes venous stasis, particularly in the lower limbs, increasing the risk of deep vein thrombosis. Early mobilisation, appropriate leg exercises and prescribed thromboprophylaxis help reduce this risk in postoperative patients.",
+      "difficulty": "KNOWLEDGE"
+    },
+    {
+      "topic": "Post-Operative Care",
+      "question_text": "A patient returns to the surgical ward following an abdominal operation under general anaesthesia. Which nursing intervention is most appropriate immediately upon arrival?",
+      "choices": [
+        {
+          "text": "Offer a full meal to restore energy",
+          "is_correct": false
+        },
+        {
+          "text": "Assess airway patency, breathing and circulation",
+          "is_correct": true
+        },
+        {
+          "text": "Encourage the patient to walk independently",
+          "is_correct": false
+        },
+        {
+          "text": "Remove the surgical dressing immediately",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Assessment of airway, breathing and circulation is the immediate priority following general anaesthesia because residual anaesthetic effects may cause airway obstruction and respiratory or cardiovascular depression. The nurse should also assess consciousness, oxygen saturation and vital signs before proceeding with other postoperative interventions.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Post-Operative Care",
+      "question_text": "A patient who underwent abdominal surgery 24 hours ago complains of pain when coughing and taking deep breaths. Which nursing intervention is most appropriate?",
+      "choices": [
+        {
+          "text": "Discourage coughing and deep breathing until the wound heals",
+          "is_correct": false
+        },
+        {
+          "text": "Encourage supported coughing and deep breathing exercises after providing appropriate pain relief",
+          "is_correct": true
+        },
+        {
+          "text": "Maintain strict bed rest for one week",
+          "is_correct": false
+        },
+        {
+          "text": "Restrict all prescribed analgesics",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Supported coughing and deep breathing promote lung expansion and help prevent postoperative atelectasis and respiratory infections. Administering prescribed analgesia and teaching the patient to support the abdominal incision with a pillow can make these exercises more comfortable and effective.",
+      "difficulty": "APPLICATION"
+    },
+    {
+      "topic": "Severe Malaria",
+      "question_text": "A nurse in a Ghanaian district hospital is attending to four patients. Which patient should the nurse assess FIRST?",
+      "choices": [
+        {
+          "text": "A 25-year-old patient with uncomplicated malaria complaining of headache",
+          "is_correct": false
+        },
+        {
+          "text": "A 40-year-old patient with hypertension requesting information about dietary changes",
+          "is_correct": false
+        },
+        {
+          "text": "A 6-year-old child with severe malaria who has developed repeated convulsions and is unresponsive",
+          "is_correct": true
+        },
+        {
+          "text": "A 32-year-old patient with tuberculosis reporting mild night sweats",
+          "is_correct": false
+        }
+      ],
+      "rationale": "The child with repeated convulsions and unresponsiveness has a life-threatening neurological emergency associated with severe malaria. Immediate assessment and management of airway, breathing and circulation are necessary to prevent aspiration, hypoxia and death.",
+      "difficulty": "ANALYSIS"
+    },
+    {
+      "topic": "Tuberculosis",
+      "question_text": "Four patients are waiting for assessment in a medical ward. Which patient should the nurse attend to FIRST?",
+      "choices": [
+        {
+          "text": "A patient with pulmonary tuberculosis who is coughing occasionally but breathing comfortably",
+          "is_correct": false
+        },
+        {
+          "text": "A patient with tuberculosis who suddenly develops severe respiratory distress and oxygen saturation of 82%",
+          "is_correct": true
+        },
+        {
+          "text": "A patient with hypertension requesting a repeat blood pressure measurement",
+          "is_correct": false
+        },
+        {
+          "text": "A patient with diabetes requesting assistance with dietary planning",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Severe respiratory distress and oxygen saturation of 82% indicate significant hypoxaemia requiring immediate intervention. The nurse should prioritise airway and breathing assessment, provide emergency respiratory support according to protocol and urgently escalate the patient's condition.",
+      "difficulty": "ANALYSIS"
+    },
+    {
+      "topic": "Hypertension",
+      "question_text": "A nurse is caring for four patients in a medical ward. Which patient requires the MOST immediate nursing attention?",
+      "choices": [
+        {
+          "text": "A patient with hypertension whose blood pressure is 150/94 mmHg and has no symptoms",
+          "is_correct": false
+        },
+        {
+          "text": "A patient with hypertension who suddenly develops facial deviation, weakness of one arm and difficulty speaking",
+          "is_correct": true
+        },
+        {
+          "text": "A patient with diabetes requesting assistance with blood glucose monitoring",
+          "is_correct": false
+        },
+        {
+          "text": "A patient recovering from uncomplicated malaria who reports mild fatigue",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Sudden facial deviation, unilateral arm weakness and difficulty speaking are warning signs of an acute stroke, which is a medical emergency. The nurse must activate the emergency response, assess the patient's condition and ensure urgent stroke evaluation because timely treatment can reduce disability and mortality.",
+      "difficulty": "ANALYSIS"
+    },
+    {
+      "topic": "Post-Operative Care",
+      "question_text": "A nurse receives four patients from the operating theatre. Which patient should be assessed FIRST?",
+      "choices": [
+        {
+          "text": "A patient reporting pain rated 6 out of 10 but with stable vital signs",
+          "is_correct": false
+        },
+        {
+          "text": "A patient whose surgical dressing has a small, unchanged area of blood staining",
+          "is_correct": false
+        },
+        {
+          "text": "A patient who is restless, has a rapidly increasing pulse rate and has a dressing becoming rapidly soaked with blood",
+          "is_correct": true
+        },
+        {
+          "text": "A patient requesting assistance with changing position in bed",
+          "is_correct": false
+        }
+      ],
+      "rationale": "Restlessness, tachycardia and rapidly increasing blood loss from the surgical wound suggest possible postoperative haemorrhage and developing circulatory instability. The nurse must immediately assess circulation, call for urgent medical assistance, monitor vital signs and prepare for emergency management.",
+      "difficulty": "ANALYSIS"
+    }
+  ]
+}

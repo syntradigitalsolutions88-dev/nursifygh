@@ -1,0 +1,2848 @@
+{
+"program": "MIDWIFERY",
+"level": 300,
+"courses": [
+{
+"course_code": "NPN-311-M",
+"course_title": "Nursing Process",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Nursing Process",
+"care planning",
+"critical thinking in midwifery",
+"midwifery care studies"
+],
+"questions": [
+{
+"topic": "Nursing Process",
+"question_text": "During an antenatal booking visit at a CHPS compound in the Bono Region, a midwife systematically collects subjective and objective data from a primigravida at 12 weeks gestation. Which phase of the nursing process is being executed?",
+"choices": [
+{
+"text": "Diagnosis",
+"is_correct": false
+},
+{
+"text": "Assessment",
+"is_correct": true
+},
+{
+"text": "Planning",
+"is_correct": false
+},
+{
+"text": "Implementation",
+"is_correct": false
+}
+],
+"rationale": "Assessment is the systematic collection, verification, and analysis of client data, which forms the baseline database for individualized midwifery care planning.",
+"distractor_rationales": {
+"A": "Diagnosis involves analyzing the collected data to identify actual or potential client responses.",
+"C": "Planning involves establishing priorities and measurable outcomes based on identified diagnoses.",
+"D": "Implementation is the execution of planned midwifery interventions."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "critical thinking in midwifery",
+"question_text": "A midwife receives handover for four postnatal mothers on the ward. Which client should the midwife assess FIRST?",
+"choices": [
+{
+"text": "A primipara 4 hours post-normal vaginal delivery requesting assistance with breastfeeding initiation.",
+"is_correct": false
+},
+{
+"text": "A multipara 2 hours post-delivery with a firm uterus, moderate lochia rubra, and stable vital signs.",
+"is_correct": false
+},
+{
+"text": "A postpartum mother 3 hours after delivery who reports sudden dizziness, pallor, and a soaked perineal pad with a boggy uterus.",
+"is_correct": true
+},
+{
+"text": "A mother 6 hours post-delivery asking for mild analgesia for perineal discomfort following an intact episiotomy repair.",
+"is_correct": false
+}
+],
+"rationale": "Sudden dizziness, pallor, a soaked pad, and a boggy uterus are classic signs of acute postpartum hemorrhage (PPH) due to uterine atony, which is a life-threatening obstetric emergency requiring immediate intervention.",
+"distractor_rationales": {
+"A": "Breastfeeding support is important but routine and non-urgent compared to acute hemorrhage.",
+"B": "A firm uterus with moderate lochia indicates normal physiological recovery.",
+"D": "Perineal discomfort requires pain management but is stable and non-emergency."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "care planning",
+"question_text": "When formulating a NANDA-I nursing diagnosis for a pregnant client admitted with severe hyperemesis gravidarum and electrolyte imbalance, what is the correct format for an actual diagnosis?",
+"choices": [
+{
+"text": "Fluid Volume Deficit related to excessive vomiting as evidenced by dry mucous membranes and concentrated urine.",
+"is_correct": true
+},
+{
+"text": "Administering intravenous Ringer's lactate and prescribed antiemetics every 8 hours.",
+"is_correct": false
+},
+{
+"text": "Severe persistent morning sickness and metabolic alkalosis.",
+"is_correct": false
+},
+{
+"text": "Hypertension secondary to gestational trophoblastic disease.",
+"is_correct": false
+}
+],
+"rationale": "An actual nursing diagnosis consists of the problem label, related etiology, and defining characteristics (signs and symptoms) as evidenced by clinical findings.",
+"distractor_rationales": {
+"B": "Medical treatments and prescriptions represent midwifery and medical interventions, not diagnostic statements.",
+"C": "Medical conditions do not form the standard NANDA-I nursing diagnosis label.",
+"D": "Gestational trophoblastic disease is a medical diagnosis, not a midwifery diagnostic formulation."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "critical thinking in midwifery",
+"question_text": "During labour ward triage, a midwife evaluates four clients. Which client requires immediate medical review and prioritization?",
+"choices": [
+{
+"text": "A 24-week gestation client with mild lower backache after standing for long hours.",
+"is_correct": false
+},
+{
+"text": "A 36-week gestation client reporting sudden painless bright red vaginal bleeding.",
+"is_correct": true
+},
+{
+"text": "A term client in early latent phase of labour with mild irregular contractions.",
+"is_correct": false
+},
+{
+"text": "A postpartum mother needing routine postnatal health education before discharge.",
+"is_correct": false
+}
+],
+"rationale": "Painless bright red vaginal bleeding in the third trimester strongly suggests placenta previa, a critical obstetric emergency that threatens maternal and fetal survival.",
+"distractor_rationales": {
+"A": "Mild backache in pregnancy is a common musculoskeletal discomfort.",
+"C": "Early latent labour requires ongoing monitoring but is not an acute emergency.",
+"D": "Postnatal education is routine and stable."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "care planning",
+"question_text": "Which of the following client-centered goals adheres to SMART goal criteria for a pregnant woman diagnosed with pregnancy-induced hypertension?",
+"choices": [
+{
+"text": "Midwife will check maternal blood pressure every four hours diligently.",
+"is_correct": false
+},
+{
+"text": "Client's blood pressure will remain below 140/90 mmHg without symptoms of pre-eclampsia by gestational week 38.",
+"is_correct": true
+},
+{
+"text": "Client will understand how to manage high blood pressure before leaving the clinic.",
+"is_correct": false
+},
+{
+"text": "Client's blood pressure will normalize instantly within 15 minutes of hospital admission.",
+"is_correct": false
+}
+],
+"rationale": "A SMART goal is Specific, Measurable, Attainable, Relevant, and Time-bound. Option B outlines exact parameters and a clear timeframe.",
+"distractor_rationales": {
+"A": "This statement describes a midwifery intervention rather than a client-centered outcome goal.",
+"C": "This goal is vague and lacks measurable criteria for understanding.",
+"D": "Instant normalization of severe hypertension in 15 minutes is clinically unrealistic."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Process",
+"question_text": "What is the primary purpose of documenting midwifery care using the SOAP (Subjective, Objective, Assessment, Plan) format?",
+"choices": [
+{
+"text": "To replace verbal shift handover discussions entirely.",
+"is_correct": false
+},
+{
+"text": "To ensure systematic clinical reasoning, continuity of care, and a legally defensible audit trail.",
+"is_correct": true
+},
+{
+"text": "To restrict student midwives from participating in clinical documentation.",
+"is_correct": false
+},
+{
+"text": "To fulfill hospital administrative archiving quotas without clinical utility.",
+"is_correct": false
+}
+],
+"rationale": "SOAP charting provides a structured, logical framework for clinical documentation, supporting critical thinking, safe continuity of care, and legal accountability.",
+"distractor_rationales": {
+"A": "SOAP notes complement rather than replace verbal handovers.",
+"C": "Documentation structures guide clinical reasoning rather than restrict students.",
+"D": "Documentation is driven by clinical quality and legal safety, not administrative quotas."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "midwifery care studies",
+"question_text": "A student midwife is conducting a comprehensive midwifery care study on a multiparous mother with severe pre-eclampsia. What is the main value of a care study in midwifery education?",
+"choices": [
+{
+"text": "It serves as a randomized clinical trial for pharmaceutical drug testing.",
+"is_correct": false
+},
+{
+"text": "It provides holistic analysis of maternal health needs, linking theoretical midwifery principles to individualized clinical practice.",
+"is_correct": true
+},
+{
+"text": "It replaces the standard labour ward partograph documentation.",
+"is_correct": false
+},
+{
+"text": "It allows the student to independently perform major obstetric surgeries.",
+"is_correct": false
+}
+],
+"rationale": "Midwifery care studies enable deep, holistic examination of maternal-neonatal health conditions, fostering critical thinking and evidence-based practice.",
+"distractor_rationales": {
+"A": "Care studies are educational clinical analyses, not pharmaceutical drug trials.",
+"C": "Partographs remain mandatory legal intrapartum documents, not replaced by care studies.",
+"D": "Surgical procedures require qualified medical doctors and specialists."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "critical thinking in midwifery",
+"question_text": "During antenatal clinic, a midwife evaluates four clients. Which client requires IMMEDIATE intervention?",
+"choices": [
+{
+"text": "A primigravida at 28 weeks gestation with mild pedal edema after sitting at work.",
+"is_correct": false
+},
+{
+"text": "A multigravida at 34 weeks gestation reporting severe continuous frontal headache and blurred vision.",
+"is_correct": true
+},
+{
+"text": "A pregnant client at 16 weeks gestation reporting mild morning nausea.",
+"is_correct": false
+},
+{
+"text": "A client at 32 weeks gestation requesting routine dietary counseling.",
+"is_correct": false
+}
+],
+"rationale": "Severe frontal headache and blurred vision in the third trimester are classic cerebral symptoms of severe pre-eclampsia, demanding immediate blood pressure check and urgent management.",
+"distractor_rationales": {
+"A": "Mild dependent pedal edema is common in late pregnancy due to venous stasis.",
+"C": "Morning nausea is a normal physiological symptom of early pregnancy.",
+"D": "Dietary counseling is routine and non-urgent."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Process",
+"question_text": "Which of the following findings collected during a prenatal assessment represents subjective data?",
+"choices": [
+{
+"text": "Blood pressure reading of 140/95 mmHg.",
+"is_correct": false
+},
+{
+"text": "Client statement: 'I feel fluttering movements of the baby in my lower abdomen.'",
+"is_correct": true
+},
+{
+"text": "Urinary protein test showing 2+ positive results.",
+"is_correct": false
+},
+{
+"text": "Fetal heart rate of 144 beats per minute on Doppler auscultation.",
+"is_correct": false
+}
+],
+"rationale": "Subjective data are symptoms reported directly by the client (what the client feels and expresses), whereas objective data are measured or observed by the clinician.",
+"distractor_rationales": {
+"A": "Blood pressure is an objective measurement obtained with a sphygmomanometer.",
+"C": "Urinary protein is an objective laboratory finding.",
+"D": "Fetal heart rate is an objective clinical finding measured by the midwife."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "care planning",
+"question_text": "A midwife is planning care for a postnatal mother with mastitis in her left breast. Which intervention represents an independent midwifery action?",
+"choices": [
+{
+"text": "Prescribing therapeutic oral cloxacillin antibiotics.",
+"is_correct": false
+},
+{
+"text": "Instructing the mother on proper latch-on technique, warm compresses, and continued breastfeeding.",
+"is_correct": true
+},
+{
+"text": "Ordering a complete blood count and pus culture from the hospital laboratory.",
+"is_correct": false
+},
+{
+"text": "Performing surgical incision and drainage of the breast abscess.",
+"is_correct": false
+}
+],
+"rationale": "Providing breastfeeding counselling, advice on warm compresses, and positioning are independent midwifery interventions.",
+"distractor_rationales": {
+"A": "Prescribing antibiotics requires physician or authorized prescriber collaboration.",
+"C": "Ordering diagnostic lab panels requires medical authorization.",
+"D": "Surgical incision and drainage are performed by physicians or surgeons."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "critical thinking in midwifery",
+"question_text": "What is the primary rationale for validating assessment data before formulating midwifery diagnoses?",
+"choices": [
+{
+"text": "To ensure data accuracy, eliminate subjective bias, and prevent incorrect clinical conclusions.",
+"is_correct": true
+},
+{
+"text": "To delay client care until administrative paperwork is completed.",
+"is_correct": false
+},
+{
+"text": "To transfer total accountability to hospital medical directors.",
+"is_correct": false
+},
+{
+"text": "To eliminate the need for physical examinations during antenatal visits.",
+"is_correct": false
+}
+],
+"rationale": "Data validation ensures that gathered information is complete, factual, and accurate, preventing misdiagnosis and unsafe clinical decisions.",
+"distractor_rationales": {
+"B": "Validation ensures safety, not unnecessary delays.",
+"C": "Midwives retain professional accountability for their assessments.",
+"D": "Validation complements physical examination rather than replaces it."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Process",
+"question_text": "During the evaluation phase of the midwifery process, a midwife notes that a postpartum client's lochia remains bright red and heavy (saturation of 2 pads per hour) 4 hours after oxytocin administration. What is the appropriate next step?",
+"choices": [
+{
+"text": "Discharge the client home since 4 hours have elapsed.",
+"is_correct": false
+},
+{
+"text": "Reassess the client, re-evaluate uterine tone, notify the physician, and prepare for secondary postpartum hemorrhage management.",
+"is_correct": true
+},
+{
+"text": "Assume the bleeding is normal lochia serosa and document accordingly.",
+"is_correct": false
+},
+{
+"text": "Instruct the client to walk around the ward to encourage blood flow cessation.",
+"is_correct": false
+}
+],
+"rationale": "Unresolved heavy lochia rubra indicates ineffective involution or retained products, requiring immediate reassessment, medical collaboration, and intervention.",
+"distractor_rationales": {
+"A": "Discharging a bleeding postpartum client is dangerous and negligent.",
+"C": "Heavy bright red bleeding is abnormal and never normal lochia serosa.",
+"D": "Ambulation without stabilizing hemorrhage risks worsening hypovolemic shock."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "care planning",
+"question_text": "Which nursing/midwifery action exemplifies the implementation step of the midwifery process?",
+"choices": [
+{
+"text": "Analyzing whether a client achieved targeted postpartum blood pressure goals.",
+"is_correct": false
+},
+{
+"text": "Executing the planned interventions, such as administering intramuscular oxytocin for AMTSL.",
+"is_correct": true
+},
+{
+"text": "Formulating NANDA-I diagnoses based on abnormal laboratory results.",
+"is_correct": false
+},
+{
+"text": "Gathering obstetric history during the booking interview.",
+"is_correct": false
+}
+],
+"rationale": "Implementation is the active phase where planned midwifery interventions are carried out to achieve client health outcomes.",
+"distractor_rationales": {
+"A": "Evaluating goals represents the evaluation phase.",
+"C": "Formulating diagnoses represents the diagnosis phase.",
+"D": "Gathering obstetric history represents the assessment phase."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "midwifery care studies",
+"question_text": "In a midwifery care study report, which section contains the detailed evaluation of the effectiveness of midwifery interventions implemented for the mother and newborn?",
+"choices": [
+{
+"text": "Introduction and biographical data",
+"is_correct": false
+},
+{
+"text": "Evaluation phase of the midwifery process",
+"is_correct": true
+},
+{
+"text": "Literature review of obstetrical pathology",
+"is_correct": false
+},
+{
+"text": "Hospital billing and tariff ledger",
+"is_correct": false
+}
+],
+"rationale": "The evaluation section measures client progress against expected outcomes, determining the success or failure of midwifery care interventions.",
+"distractor_rationales": {
+"A": "Introduction provides background and demographic context.",
+"C": "Literature review explores disease pathology and theoretical concepts.",
+"D": "Billing ledgers pertain to hospital finance, not clinical care study evaluation."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "critical thinking in midwifery",
+"question_text": "A midwife is prioritizing care for four antenatal clients at a rural clinic. Using triage principles, which client should be seen FIRST?",
+"choices": [
+{
+"text": "A 36-week client with gestational age verification and routine iron supplementation refill.",
+"is_correct": false
+},
+{
+"text": "A 30-week client presenting with sudden visual disturbances, epigastric pain, and BP 170/110 mmHg.",
+"is_correct": true
+},
+{
+"text": "A 12-week client wanting routine counseling on first trimester nutrition.",
+"is_correct": false
+},
+{
+"text": "A 38-week client asking routine questions about signs of true labour onset.",
+"is_correct": false
+}
+],
+"rationale": "Severe pre-eclampsia with extremely high BP (170/110 mmHg), visual disturbances, and epigastric pain indicates imminent eclampsia or stroke risk, requiring immediate emergency intervention.",
+"distractor_rationales": {
+"A": "Routine iron refill is stable and non-urgent.",
+"C": "First trimester nutrition counseling is important but routine.",
+"D": "Routine labor signs discussion is non-emergency care."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "OBN-311-M",
+"course_title": "Obstetric Nursing",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Antenatal care",
+"labour stages",
+"postpartum haemorrhage",
+"pre-eclampsia/eclampsia",
+"obstetric emergencies"
+],
+"questions": [
+{
+"topic": "Antenatal care",
+"question_text": "During routine antenatal care at a district hospital in Ghana, what is the recommended minimum number of focused antenatal care (FANC) contacts recommended by the WHO and Ghana Health Service for an uncomplicated pregnancy?",
+"choices": [
+{
+"text": "Four visits scheduled in the third trimester",
+"is_correct": false
+},
+{
+"text": "A minimum of eight contacts",
+"is_correct": true
+},
+{
+"text": "Monthly visits only during the first trimester",
+"is_correct": false
+},
+{
+"text": "Visits only when experiencing labour pains",
+"is_correct": false
+}
+],
+"rationale": "The WHO and Ghana Health Service recommend a minimum of eight contacts for FANC to optimize maternal and fetal health outcomes.",
+"distractor_rationales": {
+"A": "Four visits reflect older schedules; the updated model recommends eight contacts.",
+"C": "Limiting visits to the first trimester misses critical second and third-trimester screenings.",
+"D": "Antenatal care is preventive routine care, not restricted to labor."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "labour stages",
+"question_text": "A primiparous woman is in the active phase of labour. When does the second stage of labour officially begin and end?",
+"choices": [
+{
+"text": "From onset of true labour pains to 10 cm cervical dilation",
+"is_correct": false
+},
+{
+"text": "From full cervical dilation (10 cm) to complete delivery of the baby",
+"is_correct": true
+},
+{
+"text": "From delivery of the baby to expulsion of the placenta",
+"is_correct": false
+},
+{
+"text": "From placental expulsion until two hours postpartum",
+"is_correct": false
+}
+],
+"rationale": "The second stage of labour spans from full cervical dilation (10 cm) to the birth of the newborn.",
+"distractor_rationales": {
+"A": "Onset of labor to 10 cm dilation defines the first stage of labor.",
+"C": "Delivery of baby to placental expulsion defines the third stage of labor.",
+"D": "The immediate two hours postpartum defines the fourth stage monitoring period."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "postpartum haemorrhage",
+"question_text": "A multiparous client 20 minutes post-normal vaginal delivery at a maternity clinic develops sudden heavy vaginal bleeding. The uterus is boggy, relaxed, and above the umbilicus. What is the IMMEDIATE midwifery action?",
+"choices": [
+{
+"text": "Prepare immediately for emergency surgical hysterectomy",
+"is_correct": false
+},
+{
+"text": "Perform immediate bimanual uterine massage and administer oxytocin 10 IU IM/IV as prescribed",
+"is_correct": true
+},
+{
+"text": "Insert an indwelling urinary catheter and force oral fluids",
+"is_correct": false
+},
+{
+"text": "Administer prophylactic broad-spectrum oral antibiotics",
+"is_correct": false
+}
+],
+"rationale": "A boggy uterus with heavy bleeding indicates uterine atony (the leading cause of PPH). Immediate bimanual uterine massage and uterotonics stimulate myometrial contractions to arrest hemorrhage.",
+"distractor_rationales": {
+"A": "Surgical hysterectomy is reserved for refractory cases failing medical management.",
+"C": "Catheterization helps if a full bladder causes atony, but immediate massage and uterotonics are primary.",
+"D": "Antibiotics treat infection, not acute postpartum hemorrhage."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "pre-eclampsia/eclampsia",
+"question_text": "A 28-year-old primigravida at 34 weeks gestation presents with BP 160/110 mmHg, 3+ proteinuria, severe frontal headache, and hyperreflexia. What is the immediate priority medical/midwifery management?",
+"choices": [
+{
+"text": "Discharge home with advice to reduce salt intake and rest",
+"is_correct": false
+},
+{
+"text": "Administer intravenous/intramuscular magnesium sulfate per protocol to prevent eclamptic seizures",
+"is_correct": true
+},
+{
+"text": "Encourage immediate ambulation to reduce dependent edema",
+"is_correct": false
+},
+{
+"text": "Administer oral diuretic tablets to rapidly reduce blood pressure",
+"is_correct": false
+}
+],
+"rationale": "Severe pre-eclampsia with hyperreflexia and cerebral symptoms poses an imminent risk of eclamptic seizures. Magnesium sulfate is the drug of choice for seizure prophylaxis.",
+"distractor_rationales": {
+"A": "Discharging a client with severe pre-eclampsia is life-threatening and negligent.",
+"C": "Ambulation is unsafe; strict bed rest is mandatory.",
+"D": "Diuretics are avoided due to contracted intravascular volume in pre-eclampsia."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "obstetric emergencies",
+"question_text": "During vertex delivery, the baby's head delivers but retracts tightly against the perineum ('turtle sign'), and gentle maternal pushing fails to deliver the shoulders. What obstetric emergency is occurring?",
+"choices": [
+{
+"text": "Breech presentation",
+"is_correct": false
+},
+{
+"text": "Shoulder dystocia",
+"is_correct": true
+},
+{
+"text": "Umbilical cord prolapse",
+"is_correct": false
+},
+{
+"text": "Placental abruption",
+"is_correct": false
+}
+],
+"rationale": "Shoulder dystocia is an emergency where the anterior fetal shoulder impacts against the maternal pubic symphysis, recognized clinically by the turtle sign.",
+"distractor_rationales": {
+"A": "Breech presentation involves buttocks or lower extremities presenting first.",
+"C": "Cord prolapse involves the umbilical cord descending ahead of the presenting part.",
+"D": "Placental abruption involves premature separation of the placenta causing bleeding and pain."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal care",
+"question_text": "During antenatal care in Ghana, why is Intermittent Preventive Treatment in pregnancy using sulfadoxine-pyrimethamine (IPTp-SP) routinely administered?",
+"choices": [
+{
+"text": "To prevent gestational diabetes mellitus and high blood sugar",
+"is_correct": false
+},
+{
+"text": "To prevent Plasmodium falciparum malaria parasitemia, maternal anemia, and low birth weight",
+"is_correct": true
+},
+{
+"text": "To cure congenital syphilis and gonococcal infections",
+"is_correct": false
+},
+{
+"text": "To prevent pregnancy-induced hypertension and eclampsia",
+"is_correct": false
+}
+],
+"rationale": "Malaria in pregnancy causes severe anemia, placental infection, and low birth weight. IPTp-SP is administered at designated intervals to clear asymptomatic parasitemia.",
+"distractor_rationales": {
+"A": "IPTp-SP is an antimalarial, not a hypoglycemic agent.",
+"C": "Syphilis is screened using RPR/VDRL and treated with penicillin.",
+"D": "Hypertension is managed via calcium supplements and blood pressure monitoring."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "labour stages",
+"question_text": "During active labour, how frequently should the midwife assess and record the fetal heart rate and maternal contractions using the partograph?",
+"choices": [
+{
+"text": "Fetal heart rate every 30 minutes; contractions every 30 minutes",
+"is_correct": true
+},
+{
+"text": "Fetal heart rate every 4 hours; contractions every 2 hours",
+"is_correct": false
+},
+{
+"text": "Fetal heart rate once per shift; contractions every hour",
+"is_correct": false
+},
+{
+"text": "Fetal heart rate continuously without checking contractions",
+"is_correct": false
+}
+],
+"rationale": "According to WHO partograph standards, fetal heart rate and uterine contractions during active labour must be assessed and recorded every 30 minutes.",
+"distractor_rationales": {
+"B": "Intervals of 2 to 4 hours are inadequate for active labor fetal surveillance.",
+"C": "Checking once per shift misses vital intrapartum fetal distress indicators.",
+"D": "Contractions must be monitored alongside fetal heart rate to assess labor progress."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "postpartum haemorrhage",
+"question_text": "What is the recommended Active Management of the Third Stage of Labour (AMTSL) to prevent postpartum hemorrhage?",
+"choices": [
+{
+"text": "Immediate cord clamping, delayed oxytocin administration, and gentle massage",
+"is_correct": false
+},
+{
+"text": "Administration of uterotonic (oxytocin 10 IU IM), controlled cord traction (CCT), and uterine massage",
+"is_correct": true
+},
+{
+"text": "Waiting for spontaneous placental expulsion without medications",
+"is_correct": false
+},
+{
+"text": "Immediate manual removal of the placenta before giving any oxytocin",
+"is_correct": false
+}
+],
+"rationale": "AMTSL consists of three core steps: administration of a uterotonic within one minute of birth, controlled cord traction, and uterine massage after placental delivery.",
+"distractor_rationales": {
+"A": "Delayed oxytocin administration reduces prophylactic efficacy against atony.",
+"C": "Waiting for spontaneous delivery is passive management, increasing PPH risk.",
+"D": "Manual removal is an invasive surgical procedure reserved for retained placenta, not routine AMTSL."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "pre-eclampsia/eclampsia",
+"question_text": "A client with severe pre-eclampsia is receiving magnesium sulfate infusion. Which clinical finding indicates impending magnesium toxicity requiring immediate cessation of the infusion?",
+"choices": [
+{
+"text": "Presence of normal deep tendon reflexes (patellar reflexes 2+)",
+"is_correct": false
+},
+{
+"text": "Absent patellar reflexes and respiratory rate of 10 breaths per minute",
+"is_correct": true
+},
+{
+"text": "Maternal urine output of 50 mL/hour with clear amber color",
+"is_correct": false
+},
+{
+"text": "Stabilized blood pressure reading of 130/85 mmHg",
+"is_correct": false
+}
+],
+"rationale": "Loss of deep tendon reflexes is the earliest sign of magnesium toxicity, followed closely by respiratory depression (<12 breaths/min). Calcium gluconate is the antidote.",
+"distractor_rationales": {
+"A": "Normal deep tendon reflexes indicate therapeutic and safe serum magnesium levels.",
+"C": "Urine output of 50 mL/hr indicates adequate renal clearance of magnesium.",
+"D": "Stabilized blood pressure reflects a positive therapeutic response."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "obstetric emergencies",
+"question_text": "A woman at 32 weeks gestation arrives at the labour ward following a motor vehicle accident, complaining of constant severe dark abdominal pain and a rigid, board-like uterus. Fetal heart tones are absent. What condition is suspected?",
+"choices": [
+{
+"text": "Placenta previa",
+"is_correct": false
+},
+{
+"text": "Placental abruption (abruptio placentae)",
+"is_correct": true
+},
+{
+"text": "Uterine rupture",
+"is_correct": false
+},
+{
+"text": "Normal Braxton Hicks contractions",
+"is_correct": false
+}
+],
+"rationale": "Placental abruption is characterized by painful vaginal bleeding (or concealed hemorrhage), uterine tenderness, board-like rigidity, and fetal compromise following trauma.",
+"distractor_rationales": {
+"A": "Placenta previa presents with painless bright red bleeding, not a rigid, painful uterus.",
+"C": "Uterine rupture usually occurs during labor with abnormal contours and loss of fetal parts.",
+"D": "Braxton Hicks contractions are painless, irregular, and do not cause uterine rigidity or hemorrhage."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal care",
+"question_text": "A midwife is assessing four pregnant clients attending antenatal clinic. Which client requires IMMEDIATE evaluation and medical referral?",
+"choices": [
+{
+"text": "A client at 16 weeks gestation reporting mild morning nausea and fatigue",
+"is_correct": false
+},
+{
+"text": "A client at 28 weeks gestation reporting painless bright red vaginal bleeding",
+"is_correct": true
+},
+{
+"text": "A client at 20 weeks gestation reporting mild lower backache after standing",
+"is_correct": false
+},
+{
+"text": "A client at 32 weeks gestation reporting mild dependent ankle edema at night",
+"is_correct": false
+}
+],
+"rationale": "Painless bright red vaginal bleeding in the second or third trimester is classic for placenta previa, requiring immediate hospital admission without digital vaginal examination.",
+"distractor_rationales": {
+"A": "Morning nausea and fatigue are common normal physiological symptoms of early pregnancy.",
+"C": "Mild backache is common due to changing center of gravity and ligament relaxation.",
+"D": "Mild dependent ankle edema at the end of the day is a common physiological finding."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "labour stages",
+"question_text": "A multiparous client in the labour ward feels an involuntary urge to push during contractions, and inspection reveals perineal bulging with visible crowning of the fetal head. What stage of labour is this?",
+"choices": [
+{
+"text": "First stage (latent phase)",
+"is_correct": false
+},
+{
+"text": "First stage (transition phase)",
+"is_correct": false
+},
+{
+"text": "Second stage of labour",
+"is_correct": true
+},
+{
+"text": "Third stage of labour",
+"is_correct": false
+}
+],
+"rationale": "Crowning and the urge to push are hallmark clinical signs indicating the commencement of the second stage of labour.",
+"distractor_rationales": {
+"A": "Latent phase occurs early in the first stage with 0-3 cm dilation.",
+"B": "Transition phase involves 8-10 cm dilation before crowning and pushing begin.",
+"D": "Third stage occurs after the baby has been successfully delivered."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "postpartum haemorrhage",
+"question_text": "Which of the following assessments is most critical in preventing delayed postpartum hemorrhage during the first 2 hours following placental delivery?",
+"choices": [
+{
+"text": "Assessing fundal height, uterine consistency, and lochia amount every 15 minutes",
+"is_correct": true
+},
+{
+"text": "Checking blood pressure and pulse rate only once at the end of the 2-hour observation",
+"is_correct": false
+},
+{
+"text": "Encouraging strict bed rest without palpating the abdomen",
+"is_correct": false
+},
+{
+"text": "Delaying breastfeeding initiation until 24 hours postpartum",
+"is_correct": false
+}
+],
+"rationale": "The fourth stage of labour (immediate 2-hour postpartum period) requires frequent monitoring (every 15 minutes) of uterine involution and lochia to detect early atony and hemorrhage.",
+"distractor_rationales": {
+"B": "Checking vital signs only once is unsafe; postpartum hemorrhage can cause rapid shock.",
+"C": "Palpating the uterus is mandatory to ensure it remains contracted.",
+"D": "Early breastfeeding stimulates endogenous oxytocin release, aiding uterine contraction."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "pre-eclampsia/eclampsia",
+"question_text": "A postpartum client who had severe pre-eclampsia experiences a sudden generalized tonic-clonic seizure on the postnatal ward. What is the immediate midwifery priority?",
+"choices": [
+{
+"text": "Place a padded tongue depressor firmly between the client's teeth to prevent biting",
+"is_correct": false
+},
+{
+"text": "Ensure a patent airway, turn the client onto her side (recovery position), and administer oxygen",
+"is_correct": true
+},
+{
+"text": "Immediately restrain all four limbs to prevent physical injury from thrashing",
+"is_correct": false
+},
+{
+"text": "Leave the room immediately to call the attending physician",
+"is_correct": false
+}
+],
+"rationale": "During an eclamptic seizure, airway management and preventing aspiration by placing the client in the lateral recovery position are paramount. Never force objects into the mouth.",
+"distractor_rationales": {
+"A": "Placing objects in the mouth during a seizure causes dental damage and airway obstruction.",
+"C": "Restraining limbs can cause fractures and trauma during muscle contractions.",
+"D": "The midwife must stay with the client and call for emergency assistance rather than abandon her."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "obstetric emergencies",
+"question_text": "A pregnant woman at 38 weeks gestation presents with sudden, severe umbilical cord protruding from the vagina following spontaneous rupture of membranes. Fetal heart rate drops to 80 beats per minute. What is the immediate life-saving midwifery action?",
+"choices": [
+{
+"text": "Walk the client immediately to the operating theatre on foot",
+"is_correct": false
+},
+{
+"text": "Gently push presenting fetal parts upward off the cord using sterile gloved fingers, place client in knee-chest position, and prepare for emergency Caesarean section",
+"is_correct": true
+},
+{
+"text": "Attempt to push the protruding umbilical cord back inside the amniotic cavity",
+"is_correct": false
+},
+{
+"text": "Apply warm abdominal compresses and wait for spontaneous delivery",
+"is_correct": false
+}
+],
+"rationale": "Umbilical cord prolapse causes acute fetal hypoxia due to cord compression. Relieving pressure manually and positioning the client in knee-chest position is critical while rushing to emergency C-section.",
+"distractor_rationales": {
+"A": "Walking the client worsens cord compression and fetal hypoxia.",
+"C": "Manipulating or pushing the cord itself causes vasospasm and trauma.",
+"D": "Waiting leads to fetal death from anoxia."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Antenatal care",
+"question_text": "A primigravida at 16 weeks gestation attends antenatal clinic and inquires about routine iron and folic acid supplementation. What is the standard Ghana Health Service recommendation?",
+"choices": [
+{
+"text": "Take iron and folic acid daily throughout pregnancy to prevent maternal anemia and neural tube defects",
+"is_correct": true
+},
+{
+"text": "Take iron tablets only during the first week of pregnancy and stop",
+"is_correct": false
+},
+{
+"text": "Avoid iron supplements completely because they cause high blood pressure",
+"is_correct": false
+},
+{
+"text": "Take iron supplements only after delivery during the postnatal period",
+"is_correct": false
+}
+],
+"rationale": "Daily iron and folic acid supplementation is routine antenatal practice in Ghana to prevent iron-deficiency anemia and support fetal growth.",
+"distractor_rationales": {
+"B": "Stopping supplementation after one week leaves the mother vulnerable to anemia.",
+"C": "Iron supplements do not cause hypertension.",
+"D": "Starting supplementation only postnatally misses crucial antenatal requirements."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "labour stages",
+"question_text": "During the third stage of labour, signs of placental separation include lengthening of the umbilical cord, a sudden gush of dark blood, and the uterus becoming globular and firmer. What should the midwife do upon observing these signs?",
+"choices": [
+{
+"text": "Pull the umbilical cord violently as hard as possible to expel the placenta instantly",
+"is_correct": false
+},
+{
+"text": "Deliver the placenta using controlled cord traction combined with counter-pressure on the lower uterine segment",
+"is_correct": true
+},
+{
+"text": "Wait for 3 hours without any intervention",
+"is_correct": false
+},
+{
+"text": "Perform immediate internal manual exploration of the uterine cavity",
+"is_correct": false
+}
+],
+"rationale": "Once signs of placental separation appear, controlled cord traction (CCT) combined with suprapubic counter-pressure safely delivers the placenta.",
+"distractor_rationales": {
+"A": "Violent pulling causes umbilical cord snap or uterine inversion.",
+"C": "Waiting hours unnecessarily increases PPH and retention risks.",
+"D": "Manual exploration is invasive and reserved for retained placenta failing CCT."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "postpartum haemorrhage",
+"question_text": "A midwife is evaluating four postpartum mothers on the ward. Which client should be assessed FIRST for potential secondary postpartum hemorrhage?",
+"choices": [
+{
+"text": "A mother 2 days post-delivery with moderate lochia rubra and a well-contracted uterus",
+"is_correct": false
+},
+{
+"text": "A mother 10 days post-delivery presenting with sudden foul-smelling, heavy vaginal bleeding, lower abdominal tenderness, and low-grade fever",
+"is_correct": true
+},
+{
+"text": "A mother 3 days post-delivery complaining of mild breast engorgement",
+"is_correct": false
+},
+{
+"text": "A mother 5 days post-delivery asking about postnatal immunization schedules",
+"is_correct": false
+}
+],
+"rationale": "Foul-smelling heavy bleeding, fever, and abdominal tenderness 10 days postpartum strongly suggest endometritis and retained products of conception leading to secondary PPH and sepsis.",
+"distractor_rationales": {
+"A": "Moderate lochia and contracted uterus indicate normal involution.",
+"C": "Breast engorgement is normal during milk production.",
+"D": "Inquiring about immunizations is routine and non-urgent."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "pre-eclampsia/eclampsia",
+"question_text": "What is the definitive curative treatment for severe pre-eclampsia and eclampsia regardless of gestational age?",
+"choices": [
+{
+"text": "Prolonged bed rest at home for 3 months",
+"is_correct": false
+},
+{
+"text": "Delivery of the fetus and placenta",
+"is_correct": true
+},
+{
+"text": "High-dose oral vitamin C supplementation",
+"is_correct": false
+},
+{
+"text": "Consuming large amounts of herbal diuretic teas",
+"is_correct": false
+}
+],
+"rationale": "Pre-eclampsia is a placenta-mediated disease; definitive cure requires delivery of the placenta and termination of pregnancy.",
+"distractor_rationales": {
+"A": "Bed rest alone does not cure severe pre-eclampsia.",
+"C": "Vitamin C does not reverse pre-eclampsia pathology.",
+"D": "Herbal teas are unverified and dangerous."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "obstetric emergencies",
+"question_text": "During labour, a midwife notes sudden loss of uterine contractions, maternal shock, and easily palpable fetal parts directly beneath the abdominal wall. What catastrophic obstetric emergency has occurred?",
+"choices": [
+{
+"text": "Normal transition phase of labour",
+"is_correct": false
+},
+{
+"text": "Uterine rupture",
+"is_correct": true
+},
+{
+"text": "Mild placenta previa",
+"is_correct": false
+},
+{
+"text": "External cephalic version success",
+"is_correct": false
+}
+],
+"rationale": "Sudden cessation of contractions, maternal shock, and fetal parts palpable abdominally are pathognomonic signs of complete uterine rupture, demanding emergency laparotomy.",
+"distractor_rationales": {
+"A": "Transition phase involves intense regular contractions, not sudden loss of contractions and shock.",
+"C": "Placenta previa presents with bleeding, not loss of uterine tone and palpable fetal parts.",
+"D": "External cephalic version is an antepartum procedure, not intrapartum rupture."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PAD-311-M",
+"course_title": "Paediatric Nursing I",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Growth & development",
+"immunisation",
+"dehydration & ORS",
+"neonatal care",
+"common paediatric illnesses"
+],
+"questions": [
+{
+"topic": "neonatal care",
+"question_text": "Immediately following delivery at a health facility in Ghana, a newborn infant is dried, assessed, and placed skin-to-skin on the mother's chest. What is the primary benefit of Kangaroo Mother Care (KMC) / skin-to-skin contact?",
+"choices": [
+{
+"text": "To prevent infant hypothermia, promote bonding, and stabilize neonatal temperature and blood glucose",
+"is_correct": true
+},
+{
+"text": "To eliminate the need for any subsequent newborn physical examinations",
+"is_correct": false
+},
+{
+"text": "To delay umbilical cord clamping indefinitely for 24 hours",
+"is_correct": false
+},
+{
+"text": "To prevent physiological jaundice permanently",
+"is_correct": false
+}
+],
+"rationale": "Skin-to-skin contact maintains thermal regulation (preventing hypothermia), encourages early breastfeeding initiation, and stabilizes newborn physiological parameters.",
+"distractor_rationales": {
+"B": "Newborn physical exams remain mandatory regardless of skin-to-skin contact.",
+"C": "Delayed cord clamping is typically 1 to 3 minutes, not 24 hours.",
+"D": "Skin-to-skin does not prevent physiological jaundice."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "immunisation",
+"question_text": "According to the Ghana Expanded Programme on Immunization (EPI) schedule, which vaccines are administered at birth (or first contact)?",
+"choices": [
+{
+"text": "Measles and Yellow Fever vaccines",
+"is_correct": false
+},
+{
+"text": "BCG and Oral Polio Vaccine (OPV 0)",
+"is_correct": true
+},
+{
+"text": "Pentavalent vaccine and Pneumococcal conjugate vaccine",
+"is_correct": false
+},
+{
+"text": "Human Papillomavirus (HPV) vaccine",
+"is_correct": false
+}
+],
+"rationale": "At birth, infants receive BCG intradermally to prevent tuberculosis and OPV 0 orally to protect against poliomyelitis.",
+"distractor_rationales": {
+"A": "Measles and Yellow Fever are administered at 9 and 18 months.",
+"C": "Pentavalent and PCV are administered at 6, 10, and 14 weeks.",
+"D": "HPV vaccine is administered to adolescent girls aged 9-14 years."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "dehydration & ORS",
+"question_text": "A 12-month-old infant is brought to the clinic with acute watery diarrhea, lethargy, sunken eyes, and skin pinch going back very slowly (>2 seconds). Under IMCI guidelines, how should this child be classified?",
+"choices": [
+{
+"text": "No Dehydration",
+"is_correct": false
+},
+{
+"text": "Some Dehydration",
+"is_correct": false
+},
+{
+"text": "Severe Dehydration",
+"is_correct": true
+},
+{
+"text": "Persistent Diarrhea without dehydration",
+"is_correct": false
+}
+],
+"rationale": "Lethargy, sunken eyes, and a very slow skin pinch (>2 seconds) are IMCI classification signs for Severe Dehydration requiring emergency IV fluid resuscitation.",
+"distractor_rationales": {
+"A": "No dehydration presents with normal alertness, normal eyes, and prompt skin recoil.",
+"B": "Some dehydration presents with restlessness, sunken eyes, and skin pinch going back slowly (1-2 seconds).",
+"D": "Persistent diarrhea refers to diarrhea lasting 14 days or longer."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "neonatal care",
+"question_text": "A newborn infant born at 38 weeks gestation is evaluated using the APGAR scoring system at 1 minute of life. Heart rate is 130 bpm, respiratory effort is good with crying, muscle action shows active flexion, reflex irritability is coughing/sneezing, and body is pink with blue extremities (acrocyanosis). Calculate the APGAR score.",
+"choices": [
+{
+"text": "APGAR score of 6 out of 10",
+"is_correct": false
+},
+{
+"text": "APGAR score of 8 out of 10",
+"is_correct": false
+},
+{
+"text": "APGAR score of 9 out of 10",
+"is_correct": true
+},
+{
+"text": "APGAR score of 4 out of 10",
+"is_correct": false
+}
+],
+"rationale": "HR >100 (+2), Respiration good/crying (+2), Muscle tone active (+2), Reflex irritable (+2), Color acrocyanotic (+1 for pink body, blue extremities). Total = 9/10.",
+"distractor_rationales": {
+"A": "A score of 6 indicates moderate depression, inconsistent with these findings.",
+"B": "A score of 8 undervalues the excellent heart rate, tone, and reflexes.",
+"D": "A score of 4 indicates severe newborn asphyxia and depression."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "common paediatric illnesses",
+"question_text": "A mother brings her 2-year-old child to the clinic with cough, fast breathing (54 breaths/min), and chest indrawing. According to IMCI guidelines, what is the appropriate classification and treatment?",
+"choices": [
+{
+"text": "No Pneumonia: Cough or Cold; give soothing home remedies",
+"is_correct": false
+},
+{
+"text": "Pneumonia; prescribe oral amoxicillin and counsel mother on danger signs",
+"is_correct": true
+},
+{
+"text": "Severe Pneumonia; refer urgently to hospital for oxygen therapy",
+"is_correct": false
+},
+{
+"text": "Acute Asthma; administer nebulized salbutamol only",
+"is_correct": false
+}
+],
+"rationale": "Chest indrawing combined with fast breathing (54 breaths/min in a 1-to-5-year-old) classifies as Pneumonia under IMCI, treated with oral amoxicillin.",
+"distractor_rationales": {
+"A": "No pneumonia presents with cough/cold without fast breathing or chest indrawing.",
+"C": "Severe pneumonia presents with central cyanosis, inability to drink, or stridor in calm child.",
+"D": "Asthma presents with wheezing and prolonged expiration."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "neonatal care",
+"question_text": "A midwife is evaluating four newborn infants in the postnatal ward. Which newborn requires IMMEDIATE emergency assessment and referral?",
+"choices": [
+{
+"text": "A term newborn passing meconium stool within 12 hours of life",
+"is_correct": false
+},
+{
+"text": "A newborn with respiratory rate of 78 breaths/min, nasal flaring, and central cyanosis",
+"is_correct": true
+},
+{
+"text": "A newborn with mild physiological jaundice on day 3 feeding well",
+"is_correct": false
+},
+{
+"text": "A newborn sleeping quietly between feeding sessions",
+"is_correct": false
+}
+],
+"rationale": "Central cyanosis, tachypnea (78 breaths/min), and nasal flaring indicate severe respiratory distress and neonatal hypoxia, demanding immediate emergency resuscitation.",
+"distractor_rationales": {
+"A": "Passing meconium within 24 hours is a normal physiological finding.",
+"C": "Mild physiological jaundice feeding well is stable.",
+"D": "Quiet sleep between feeds is normal newborn behavior."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Growth & development",
+"question_text": "According to standard developmental milestones, at what age should an infant typically be able to sit unsupported without assistance?",
+"choices": [
+{
+"text": "2 months of age",
+"is_correct": false
+},
+{
+"text": "6 to 8 months of age",
+"is_correct": true
+},
+{
+"text": "12 to 15 months of age",
+"is_correct": false
+},
+{
+"text": "18 to 24 months of age",
+"is_correct": false
+}
+],
+"rationale": "Gross motor development dictates that infants achieve unsupported sitting typically between 6 and 8 months of age.",
+"distractor_rationales": {
+"A": "At 2 months, infants hold their head up briefly when prone.",
+"C": "By 12-15 months, toddlers are walking independently.",
+"D": "Running and climbing occur around 18-24 months."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "immunisation",
+"question_text": "A mother brings her 10-month-old infant to the clinic who missed her measles vaccination scheduled at 9 months. What should the midwife do?",
+"choices": [
+{
+"text": "Refuse vaccination and tell the mother she missed the opportunity forever",
+"is_correct": false
+},
+{
+"text": "Administer the measles vaccine immediately now, and schedule the second dose for 18 months",
+"is_correct": true
+},
+{
+"text": "Wait until the child turns 5 years old before giving any catch-up doses",
+"is_correct": false
+},
+{
+"text": "Give two doses of measles vaccine on the same day",
+"is_correct": false
+}
+],
+"rationale": "Under EPI catch-up guidelines, missed vaccines should be administered at the earliest opportunity. The first dose is given now, and the second dose follows at the scheduled interval.",
+"distractor_rationales": {
+"A": "Refusing vaccination leaves the child vulnerable to preventable lethal epidemics.",
+"C": "Waiting years leaves the infant unprotected during peak measles susceptibility.",
+"D": "Double-dosing on the same day is unnecessary and violates dosage protocols."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "dehydration & ORS",
+"question_text": "What is the primary physiological mechanism of action of Oral Rehydration Salts (ORS) solution in treating acute dehydrating diarrhea in children?",
+"choices": [
+{
+"text": "Sodium-glucose cotransport in the small intestine enhances rapid water and electrolyte absorption",
+"is_correct": true
+},
+{
+"text": "Paralyzing intestinal peristalsis to stop bowel movements completely",
+"is_correct": false
+},
+{
+"text": "Directly killing bacterial pathogens in the stomach lumen",
+"is_correct": false
+},
+{
+"text": "Coating the gastric mucosa to prevent acid erosion",
+"is_correct": false
+}
+],
+"rationale": "ORS utilizes sodium-glucose cotransport mechanisms in the small intestinal mucosa, where glucose molecules facilitate active absorption of sodium and water.",
+"distractor_rationales": {
+"B": "ORS does not paralyze peristalsis; antidiarrheal drugs do that but are dangerous in children.",
+"C": "ORS does not possess bactericidal properties.",
+"D": "ORS does not act as a gastric mucosal coating agent."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "neonatal care",
+"question_text": "What is the primary clinical rationale for applying Tetracycline eye ointment to a newborn's eyes immediately after birth?",
+"choices": [
+{
+"text": "To prevent ophthalmia neonatorum caused by gonococcal or chlamydial infection",
+"is_correct": true
+},
+{
+"text": "To improve visual acuity and prevent congenital myopia",
+"is_correct": false
+},
+{
+"text": "To prevent physiological jaundice and hyperbilirubinemia",
+"is_correct": false
+},
+{
+"text": "To stimulate tear duct development in preterm infants",
+"is_correct": false
+}
+],
+"rationale": "Prophylactic application of eye ointment protects newborn eyes from ophthalmia neonatorum acquired during passage through an infected birth canal.",
+"distractor_rationales": {
+"B": "Eye ointment has no impact on refractive visual error development.",
+"C": "Hyperbilirubinemia is related to liver metabolism and hemolysis.",
+"D": "Tear duct patency is unrelated to antibiotic eye ointment."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "common paediatric illnesses",
+"question_text": "A 3-year-old child is admitted with severe Plasmodium falciparum malaria. The child is unconscious and has experienced two generalized seizures. What classification does this represent?",
+"choices": [
+{
+"text": "Uncomplicated Malaria",
+"is_correct": false
+},
+{
+"text": "Severe Malaria (Cerebral Malaria)",
+"is_correct": true
+},
+{
+"text": "Mild viral upper respiratory infection",
+"is_correct": false
+},
+{
+"text": "Simple febrile seizure without infection",
+"is_correct": false
+}
+],
+"rationale": "Impaired consciousness (coma) and repeated seizures in the presence of malaria parasites classify the condition as severe (cerebral) malaria, a medical emergency.",
+"distractor_rationales": {
+"A": "Uncomplicated malaria presents with fever and chills without organ dysfunction.",
+"C": "Viral infections do not present with malaria parasitemia and severe neurological impairment.",
+"D": "Cerebral malaria involves specific parasite sequestration in cerebral capillaries."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth & development",
+"question_text": "A mother expresses concern that her 18-month-old toddler says only single words and points when wanting objects. How should the midwife advise the mother?",
+"choices": [
+{
+"text": "Inform her this is abnormal and refer the child immediately for psychiatric evaluation",
+"is_correct": false
+},
+{
+"text": "Reassure her that single-word vocabulary and pointing are normal developmental milestones for an 18-month-old",
+"is_correct": true
+},
+{
+"text": "Advise her to enroll the child in intensive speech therapy immediately",
+"is_correct": false
+},
+{
+"text": "Tell her that children should speak full sentences by 12 months",
+"is_correct": false
+}
+],
+"rationale": "By 18 months, toddlers typically have a vocabulary of single words and use pointing to communicate desires, which is completely normal.",
+"distractor_rationales": {
+"A": "Psychiatric referral for normal milestones causes unnecessary parental anxiety.",
+"C": "Speech therapy is unwarranted for normal language acquisition.",
+"D": "Full sentences are not expected at 12 months of age."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "immunisation",
+"question_text": "Which cold chain equipment is essential for storing and maintaining vaccine potency at health centers and CHPS compounds?",
+"choices": [
+{
+"text": "Standard household food refrigerator without temperature logs",
+"is_correct": false
+},
+{
+"text": "Ice-lined vaccine refrigerators and vaccine carriers with ice packs",
+"is_correct": true
+},
+{
+"text": "Deep freezers set to minus 20 degrees Celsius for all vaccines",
+"is_correct": false
+},
+{
+"text": "Open cardboard boxes stored at room temperature",
+"is_correct": false
+}
+],
+"rationale": "Vaccines are biological products sensitive to heat and freezing. Ice-lined refrigerators and validated vaccine carriers maintain required temperatures (+2°C to +8°C).",
+"distractor_rationales": {
+"A": "Household refrigerators experience wide temperature fluctuations.",
+"C": "Freezing destroys vaccines like DTP, Hepatitis B, and tetanus toxoid.",
+"D": "Room temperature storage destroys vaccine potency instantly."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "dehydration & ORS",
+"question_text": "When instructing a mother on preparing home-made sugar-salt solution (SSS) when packaged ORS is unavailable, what is the correct standard WHO ratio?",
+"choices": [
+{
+"text": "One flat teaspoon of salt and eight level teaspoons of sugar in one litre of clean drinking water",
+"is_correct": true
+},
+{
+"text": "One tablespoon of salt and one tablespoon of sugar in a half cup of water",
+"is_correct": false
+},
+{
+"text": "Equal parts salt and sugar dissolved in boiling hot milk",
+"is_correct": false
+},
+{
+"text": "Ten spoons of salt and one spoon of sugar in two litres of water",
+"is_correct": false
+}
+],
+"rationale": "The standard WHO formula for home fluid preparation is one level teaspoon of salt and eight level teaspoons of sugar dissolved in one litre of clean drinking water.",
+"distractor_rationales": {
+"B": "Incorrect proportions lead to dangerous hypernatremia or ineffective rehydration.",
+"C": "Milk is not used for initial emergency oral rehydration solutions.",
+"D": "Excessive salt causes severe hypernatremic dehydration in infants."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "neonatal care",
+"question_text": "A midwife is triaging four pediatric/neonatal clients. Which client requires IMMEDIATE physician referral for urgent medical care?",
+"choices": [
+{
+"text": "An infant with mild diaper dermatitis responding to zinc oxide ointment",
+"is_correct": false
+},
+{
+"text": "A newborn presenting with severe omphalitis (purulent discharge and periumbilical redness extending to the abdominal wall)",
+"is_correct": true
+},
+{
+"text": "A child with a healing insect bite on the forearm",
+"is_correct": false
+},
+{
+"text": "A child receiving routine vitamin A supplementation at 12 months",
+"is_correct": false
+}
+],
+"rationale": "Omphalitis with spreading cellulitis in a newborn can rapidly progress to neonatal sepsis and septic shock, demanding immediate parenteral antibiotic therapy and referral.",
+"distractor_rationales": {
+"A": "Mild diaper dermatitis is managed with barrier ointments and hygiene education.",
+"C": "A healing insect bite requires basic hygiene monitoring.",
+"D": "Vitamin A supplementation is routine preventive care."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PFC-311-M",
+"course_title": "Patient/Family-Centred Care Study",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Family-centred care in midwifery",
+"communication",
+"patient advocacy",
+"cultural sensitivity in maternal care"
+],
+"questions": [
+{
+"topic": "Family-centred care in midwifery",
+"question_text": "What is the core philosophical foundation of Patient- and Family-Centred Care (PFCC) in maternal and midwifery practice?",
+"choices": [
+{
+"text": "The physician makes all clinical decisions without consulting family members.",
+"is_correct": false
+},
+{
+"text": "Mutually beneficial partnerships are established among healthcare providers, pregnant women, and their families.",
+"is_correct": true
+},
+{
+"text": "Visiting hours are strictly restricted to 10 minutes per week.",
+"is_correct": false
+},
+{
+"text": "Family members are treated strictly as visitors with no role in labor support.",
+"is_correct": false
+}
+],
+"rationale": "PFCC is founded on dignity, respect, information sharing, participation, and collaboration between healthcare teams, women, and families.",
+"distractor_rationales": {
+"A": "Paternalistic physician-led models contradict patient- and family-centred care.",
+"C": "Restricted visiting hours impede family collaboration and support.",
+"D": "Treating families merely as visitors ignores their vital labor support role."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "communication",
+"question_text": "A midwife is communicating with a grieving Ghanaian mother who experienced a stillbirth. Which therapeutic communication technique is most appropriate?",
+"choices": [
+{
+"text": "Offering false reassurance by saying, 'Do not worry, you can easily get another baby next year.'",
+"is_correct": false
+},
+{
+"text": "Using active listening, open-ended questions, and allowing silent presence to express empathy",
+"is_correct": true
+},
+{
+"text": "Changing the topic quickly to avoid emotional distress and crying",
+"is_correct": false
+},
+{
+"text": "Telling the mother she should remain strong for her husband",
+"is_correct": false
+}
+],
+"rationale": "Active listening, presence, and open communication validate the mother's grief and foster a trusting therapeutic midwife-client relationship.",
+"distractor_rationales": {
+"A": "False reassurance invalidates genuine client emotional pain.",
+"C": "Changing the topic cuts off therapeutic communication and displays discomfort.",
+"D": "Telling someone to remain strong suppresses natural grief responses."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "patient advocacy",
+"question_text": "A parturient woman expresses reluctance to undergo an artificial rupture of membranes (ARM), but an attending doctor insists the woman consent immediately to speed up labour. What is the midwife's advocacy role?",
+"choices": [
+{
+"text": "Force the woman to consent to prevent delaying the labour ward schedule",
+"is_correct": false
+},
+{
+"text": "Act as client advocate by ensuring her right to autonomy is respected and facilitating further respectful discussion between the doctor and the client",
+"is_correct": true
+},
+{
+"text": "Perform the ARM procedure secretly without the client's consent",
+"is_correct": false
+},
+{
+"text": "Ignore the interaction since informed consent is solely the doctor's duty",
+"is_correct": false
+}
+],
+"rationale": "Patient advocacy requires the midwife to protect client autonomy and ensure informed consent is voluntary and respected.",
+"distractor_rationales": {
+"A": "Coercing a client violates informed consent ethics and patient autonomy.",
+"C": "Performing procedures without consent constitutes battery and professional misconduct.",
+"D": "Ignoring lack of informed consent breaches the midwife's professional advocacy duty."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "cultural sensitivity in maternal care",
+"question_text": "A pregnant woman admitted to a maternity ward insists on using traditional herbal concoctions alongside prescribed antenatal hematics. How should the culturally sensitive midwife respond?",
+"choices": [
+{
+"text": "Scold the woman and threaten immediate discharge from the hospital",
+"is_correct": false
+},
+{
+"text": "Explore her beliefs respectfully, educate on potential herb-drug interactions, and collaborate on a safe care plan",
+"is_correct": true
+},
+{
+"text": "Quietly confiscate and destroy all herbal preparations found in her bag",
+"is_correct": false
+},
+{
+"text": "Ignore the herbal practice completely without documenting or assessing risks",
+"is_correct": false
+}
+],
+"rationale": "Cultural sensitivity involves respecting traditional health beliefs while providing non-judgmental education regarding clinical safety and potential pharmacological interactions.",
+"distractor_rationales": {
+"A": "Scolding damages trust and drives clients away from healthcare facilities.",
+"C": "Confiscating personal property without discussion violates patient rights.",
+"D": "Ignoring herb-drug interactions risks maternal and fetal safety."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-centred care in midwifery",
+"question_text": "What is the primary objective of conducting a family-centred midwifery care study?",
+"choices": [
+{
+"text": "To publish a randomized pharmaceutical trial",
+"is_correct": false
+},
+{
+"text": "To analyze holistic maternal-neonatal health needs, apply the midwifery process in depth, and evaluate comprehensive family care",
+"is_correct": true
+},
+{
+"text": "To replace standard labour ward shift handovers",
+"is_correct": false
+},
+{
+"text": "To diagnose complex obstetrical surgical pathologies independently",
+"is_correct": false
+}
+],
+"rationale": "Midwifery care studies provide comprehensive, holistic examinations of maternal and family health experiences, linking theory to clinical practice.",
+"distractor_rationales": {
+"A": "Care studies are educational clinical analyses, not pharmaceutical trials.",
+"C": "Care studies serve academic reflection purposes, not shift reports.",
+"D": "Surgical diagnoses remain outside the scope of midwifery care study methodology."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-centred care in midwifery",
+"question_text": "A midwife encourages a labouring woman to have her partner or a chosen female relative present throughout labour and delivery. Which principle of midwifery care is demonstrated?",
+"choices": [
+{
+"text": "Family-centred maternity care and continuous emotional labor support",
+"is_correct": true
+},
+{
+"text": "Medical paternalism and strict institutional isolation",
+"is_correct": false
+},
+{
+"text": "Delegation of professional midwifery duties to untrained relatives",
+"is_correct": false
+},
+{
+"text": "Reduction of labor ward hygiene standards",
+"is_correct": false
+}
+],
+"rationale": "Continuous companion support during labor improves maternal satisfaction, reduces cesarean rates, and embodies family-centred care principles.",
+"distractor_rationales": {
+"B": "Institutional isolation contradicts family-centred care.",
+"C": "Professional duties remain midwife-accountable, not delegated to relatives.",
+"D": "Companion support does not compromise labor ward hygiene."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "communication",
+"question_text": "Which barrier represents a significant obstacle to effective communication between midwives and clients in multi-ethnic clinical settings in Ghana?",
+"choices": [
+{
+"text": "Speaking the local dialect fluently understood by the client",
+"is_correct": false
+},
+{
+"text": "Language discordance and use of complex medical jargon without explanation",
+"is_correct": true
+},
+{
+"text": "Maintaining appropriate eye contact and active listening posture",
+"is_correct": false
+},
+{
+"text": "Allowing adequate time for the client to ask questions",
+"is_correct": false
+}
+],
+"rationale": "Language barriers and medical jargon prevent clients from understanding health information, undermining informed consent and therapeutic communication.",
+"distractor_rationales": {
+"A": "Speaking the local dialect actually enhances communication.",
+"C": "Appropriate eye contact and listening facilitate trust.",
+"D": "Allowing adequate time encourages expression rather than creating barriers."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "patient advocacy",
+"question_text": "A midwife notices that a colleague is consistently falsifying partograph entries for women in active labour. What is the midwife's professional advocacy and ethical obligation?",
+"choices": [
+{
+"text": "Ignore the practice to maintain friendly peer relationships",
+"is_correct": false
+},
+{
+"text": "Report the falsification of records through proper professional channels to protect maternal and fetal safety",
+"is_correct": true
+},
+{
+"text": "Falsify records as well to appear consistent with the ward routine",
+"is_correct": false
+},
+{
+"text": "Confront the colleague publicly on social media",
+"is_correct": false
+}
+],
+"rationale": "Falsifying clinical and partograph records endangers maternal-fetal safety and violates professional ethics. The midwife has a duty to report unsafe practices.",
+"distractor_rationales": {
+"A": "Ignoring unsafe practice makes the midwife complicit in professional misconduct.",
+"C": "Falsifying records compounds illegal and unethical behavior.",
+"D": "Public social media posting breaches client confidentiality and professional conduct codes."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "cultural sensitivity in maternal care",
+"question_text": "During postnatal home visits in a rural Ghanaian community, a mother expresses intent to discard colostrum believing it is 'spoiled milk'. What is the midwife's best intervention?",
+"choices": [
+{
+"text": "Support her decision and recommend sweetened water instead",
+"is_correct": false
+},
+{
+"text": "Provide respectful health education explaining that colostrum is 'liquid gold' rich in antibodies and essential nutrients",
+"is_correct": true
+},
+{
+"text": "Report her to local police for child abuse immediately",
+"is_correct": false
+},
+{
+"text": "Confiscate the infant until colostrum production ceases",
+"is_correct": false
+}
+],
+"rationale": "Cultural health beliefs regarding colostrum require respectful education explaining its immunological and nutritional value rather than condemnation.",
+"distractor_rationales": {
+"A": "Supporting discard of colostrum deprives the infant of vital immunological protection.",
+"C": "Reporting for cultural misunderstandings without education is punitive and unhelpful.",
+"D": "Separating mother and infant is extreme and unjustified."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-centred care in midwifery",
+"question_text": "Which midwifery action best demonstrates empowerment of a family expecting their first child?",
+"choices": [
+{
+"text": "Excluding the partner from antenatal education classes entirely",
+"is_correct": false
+},
+{
+"text": "Involving the partner in antenatal classes, birth planning, and newborn care preparation",
+"is_correct": true
+},
+{
+"text": "Telling parents they have no role in infant rearing decisions",
+"is_correct": false
+},
+{
+"text": "Discouraging parents from asking questions during clinic visits",
+"is_correct": false
+}
+],
+"rationale": "Family empowerment involves knowledge transfer and partner involvement so families can manage pregnancy and newborn care confidently.",
+"distractor_rationales": {
+"A": "Excluding partners undermines family-centred care.",
+"C": "Telling parents they have no role undermines parental confidence.",
+"D": "Discouraging questions violates communication and collaborative principles."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "communication",
+"question_text": "A midwife uses the SBAR (Situation, Background, Assessment, Recommendation) tool when calling an obstetrician about a bleeding postpartum client. What is the primary benefit?",
+"choices": [
+{
+"text": "Ensures concise, standardized, and accurate transmission of critical clinical information, enhancing client safety",
+"is_correct": true
+},
+{
+"text": "Eliminates the need for any written partograph or clinical notes",
+"is_correct": false
+},
+{
+"text": "Allows midwives to independently perform major surgeries",
+"is_correct": false
+},
+{
+"text": "Prolonged telephone conversations to discuss social gossip",
+"is_correct": false
+}
+],
+"rationale": "SBAR provides a standardized framework that streamlines clinical communication, reducing misunderstandings and errors during urgent obstetric handovers.",
+"distractor_rationales": {
+"B": "SBAR verbal handovers complement written records, not replace them.",
+"C": "Midwives do not perform major surgeries; SBAR facilitates reporting to prescribers.",
+"D": "SBAR is designed for conciseness and efficiency."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "patient advocacy",
+"question_text": "A parturient in active labour states she does not want an episiotomy, but an intern midwife attempts to perform one without medical indication or consent. What is the senior midwife's priority action?",
+"choices": [
+{
+"text": "Encourage the intern to cut quickly before the woman protests further",
+"is_correct": false
+},
+{
+"text": "Intervene immediately to halt the unauthorized procedure, uphold client bodily autonomy, and ensure evidence-based restrictive episiotomy guidelines are followed",
+"is_correct": true
+},
+{
+"text": "Ignore the intern's action and leave the delivery room",
+"is_correct": false
+},
+{
+"text": "Scold the parturient for refusing routine ward procedures",
+"is_correct": false
+}
+],
+"rationale": "Episiotomy is not routine and requires clinical indication and informed consent. Protecting the woman's bodily autonomy is a core midwifery advocacy duty.",
+"distractor_rationales": {
+"A": "Encouraging unauthorized cutting violates consent and professional standards.",
+"C": "Leaving the room abandons client advocacy and supervision duties.",
+"D": "Scolding the client blames her for asserting her rights."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "cultural sensitivity in maternal care",
+"question_text": "In certain communities in Ghana, women are discouraged from expressing pain openly during childbirth, leading some to suffer silently with abnormal labour progress. How should the culturally sensitive midwife approach this?",
+"choices": [
+{
+"text": "Assume the woman is having zero pain and ignore her labour progress",
+"is_correct": false
+},
+{
+"text": "Provide empathetic, non-judgmental support, reassuring her that expressing pain or asking for help is safe and encouraged in the facility",
+"is_correct": true
+},
+{
+"text": "Mock her cultural beliefs in front of junior staff members",
+"is_correct": false
+},
+{
+"text": "Discharge her from the labour ward immediately",
+"is_correct": false
+}
+],
+"rationale": "Empathetic communication bridges cultural stoicism, ensuring midwives perform regular objective assessments (partograph) regardless of vocal pain expression.",
+"distractor_rationales": {
+"A": "Assuming zero pain ignores physiological labor assessment.",
+"C": "Mocking cultural beliefs is unprofessional and unethical.",
+"D": "Discharging a laboring woman abandons clinical care."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-centred care in midwifery",
+"question_text": "Which intervention best reflects family-centred postnatal care following a Caesarean section?",
+"choices": [
+{
+"text": "Separating mother and newborn in separate nurseries for 7 days",
+"is_correct": false
+},
+{
+"text": "Assisting the mother with early postpartum mobilization, pain relief, and supporting partner involvement in newborn care",
+"is_correct": true
+},
+{
+"text": "Forbidding family members from visiting the postnatal ward",
+"is_correct": false
+},
+{
+"text": "Restricting maternal fluid intake for 48 hours post-op",
+"is_correct": false
+}
+],
+"rationale": "Early mobilization, pain control, and family participation facilitate recovery and bonding following surgical birth.",
+"distractor_rationales": {
+"A": "Separation hinders maternal-neonatal bonding.",
+"C": "Forbidding visitors contradicts family-centred care.",
+"D": "Fluid restriction is medically outdated; early feeding and hydration are encouraged."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "patient advocacy",
+"question_text": "A pregnant adolescent visits an antenatal clinic unaccompanied and expresses intense fear of stigma from her family and school. What is the midwife's advocacy and supportive response?",
+"choices": [
+{
+"text": "Publicly announce her pregnancy status to her school headmaster without consent",
+"is_correct": false
+},
+{
+"text": "Provide confidential, non-judgmental antenatal care, emotional support, adolescent-friendly counseling, and privacy protection",
+"is_correct": true
+},
+{
+"text": "Refuse to provide antenatal care until her parents arrive at the clinic",
+"is_correct": false
+},
+{
+"text": "Scold her for becoming pregnant at an early age",
+"is_correct": false
+}
+],
+"rationale": "Adolescent-friendly health services emphasize confidentiality, non-judgmental care, and emotional support to ensure pregnant teens continue receiving vital antenatal care.",
+"distractor_rationales": {
+"A": "Breaching confidentiality without legal mandates violates ethical codes.",
+"C": "Refusing care endangers maternal and fetal health.",
+"D": "Scolding adolescents drives them away from professional healthcare."
+},
+"difficulty": "APPLICATION"
+}
+]
+},
+{
+"course_code": "MMN-311-M",
+"course_title": "Medicine and Medical Nursing III",
+"category": "MED_SURG",
+"semester": "S1",
+"topics": [
+"Medical conditions in pregnancy (anaemia",
+"malaria",
+"hypertension",
+"diabetes)",
+"management of medical disorders during pregnancy"
+],
+"questions": [
+{
+"topic": "Medical conditions in pregnancy (anaemia",
+"question_text": "A pregnant woman at 28 weeks gestation presents with severe fatigue, pallor, and a hemoglobin level of 7.0 g/dL. How is this level of anemia classified according to WHO and clinical standards?",
+"choices": [
+{
+"text": "Mild anemia",
+"is_correct": false
+},
+{
+"text": "Moderate anemia",
+"is_correct": false
+},
+{
+"text": "Severe anemia",
+"is_correct": true
+},
+{
+"text": "Normal physiological pregnancy dilution",
+"is_correct": false
+}
+],
+"rationale": "Hemoglobin below 7.0 g/dL in pregnancy is classified as severe anemia, requiring urgent investigation, hematinic therapy, or blood transfusion consideration.",
+"distractor_rationales": {
+"A": "Mild anemia corresponds to Hb 10.0-10.9 g/dL.",
+"B": "Moderate anemia corresponds to Hb 7.0-9.9 g/dL.",
+"D": "Physiological hemodilution rarely drops Hb below 10.0 g/dL."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "malaria",
+"question_text": "A primigravida at 24 weeks gestation is diagnosed with uncomplicated malaria. According to Ghana Health Service guidelines, what is the first-line treatment during the second and third trimesters?",
+"choices": [
+{
+"text": "Artemether-Lumefantrine (AL)",
+"is_correct": true
+},
+{
+"text": "Quinine monotherapy in high doses during first trimester",
+"is_correct": false
+},
+{
+"text": "Sulfadoxine-Pyrimethamine single dose curative treatment",
+"is_correct": false
+},
+{
+"text": "No treatment; malaria resolves spontaneously in pregnancy",
+"is_correct": false
+}
+],
+"rationale": "Artemether-Lumefantrine (AL) is the recommended first-line treatment for uncomplicated malaria during the second and third trimesters of pregnancy in Ghana.",
+"distractor_rationales": {
+"B": "Quinine is reserved for severe malaria or first trimester when AL is contraindicated.",
+"C": "SP is used for intermittent preventive treatment (IPTp), not acute curative treatment doses.",
+"D": "Untreated malaria in pregnancy causes severe maternal anemia, miscarriage, and stillbirth."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "hypertension",
+"question_text": "A pregnant client at 30 weeks gestation has chronic hypertension and is prescribed oral methyldopa. What is the primary rationale for choosing methyldopa in pregnancy?",
+"choices": [
+{
+"text": "It is an established, safe antihypertensive agent with proven fetal safety profiles",
+"is_correct": true
+},
+{
+"text": "It cures chronic hypertension permanently within 48 hours",
+"is_correct": false
+},
+{
+"text": "It acts as a potent antibiotic against urinary tract infections",
+"is_correct": false
+},
+{
+"text": "It induces immediate labour onset",
+"is_correct": false
+}
+],
+"rationale": "Methyldopa is a centrally acting alpha-agonist with a long-standing safety record for managing chronic hypertension during pregnancy without adverse fetal hemodynamic effects.",
+"distractor_rationales": {
+"B": "Methyldopa controls blood pressure; it does not cure chronic hypertension.",
+"C": "Methyldopa has no antibacterial properties.",
+"D": "Methyldopa is an antihypertensive, not an oxytocic induction agent."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "diabetes",
+"question_text": "A pregnant woman is diagnosed with gestational diabetes mellitus (GDM) at 28 weeks. What is the primary maternal and fetal risk if GDM is poorly controlled?",
+"choices": [
+{
+"text": "Macrosomia (large for gestational age), birth trauma, neonatal hypoglycemia, and congenital anomalies",
+"is_correct": true
+},
+{
+"text": "Extreme fetal growth restriction and skeletal dwarfing",
+"is_correct": false
+},
+{
+"text": "Permanent infant blindness from cataracts",
+"is_correct": false
+},
+{
+"text": "Complete absence of amniotic fluid (anhydramnios)",
+"is_correct": false
+}
+],
+"rationale": "Maternal hyperglycemia leads to fetal hyperinsulinemia, causing macrosomia, shoulder dystocia, birth injuries, and neonatal hypoglycemia following delivery.",
+"distractor_rationales": {
+"B": "Gestational diabetes causes excessive fetal growth (macrosomia), not growth restriction.",
+"C": "Congenital cataracts are associated with intrauterine infections like rubella, not GDM.",
+"D": "GDM typically associates with polyhydramnios due to fetal osmotic diuresis."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical conditions in pregnancy (anaemia",
+"question_text": "A midwife is evaluating four pregnant clients. Which client requires IMMEDIATE evaluation and medical intervention?",
+"choices": [
+{
+"text": "A client at 16 weeks gestation with Hb 11.5 g/dL",
+"is_correct": false
+},
+{
+"text": "A client at 32 weeks gestation with Hb 6.5 g/dL, tachycardia, and dyspnea at rest",
+"is_correct": true
+},
+{
+"text": "A client at 20 weeks gestation taking routine daily iron and folic acid",
+"is_correct": false
+},
+{
+"text": "A client at 24 weeks gestation with normal blood glucose levels",
+"is_correct": false
+}
+],
+"rationale": "Severe anemia (Hb 6.5 g/dL) combined with cardiac compensation signs (tachycardia, dyspnea at rest) is a medical emergency requiring urgent blood transfusion evaluation.",
+"distractor_rationales": {
+"A": "Hb 11.5 g/dL is normal during pregnancy.",
+"C": "Taking routine iron and folic acid is normal preventive care.",
+"D": "Normal blood glucose levels indicate stable metabolic status."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "malaria",
+"question_text": "Why are pregnant women particularly vulnerable to severe malaria compared to non-pregnant women in endemic areas like Ghana?",
+"choices": [
+{
+"text": "Pregnancy-induced maternal immunosuppression reduces acquired immunity to malaria parasites",
+"is_correct": true
+},
+{
+"text": "Pregnant women have higher red blood cell counts preventing parasite entry",
+"is_correct": false
+},
+{
+"text": "Malaria parasites cannot cross the placental barrier",
+"is_correct": false
+},
+{
+"text": "Anopheles mosquitoes are exclusively attracted to non-pregnant individuals",
+"is_correct": false
+}
+],
+"rationale": "Cell-mediated immunity is naturally suppressed during pregnancy, reducing resistance to malaria and increasing susceptibility to severe placental parasitemia.",
+"distractor_rationales": {
+"B": "Pregnancy involves hemodilution and lower effective RBC concentration.",
+"C": "Malaria parasites readily infect placental tissue (placental malaria).",
+"D": "Mosquito vectors are attracted to pregnant women due to higher body temperature and CO2 output."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "hypertension",
+"question_text": "A pregnant woman at 34 weeks gestation with gestational hypertension develops sudden right upper quadrant abdominal pain, nausea, and elevated liver enzymes. What condition is suspected?",
+"choices": [
+{
+"text": "Normal physiological heartburn",
+"is_correct": false
+},
+{
+"text": "HELLP syndrome (Hemolysis, Elevated Liver enzymes, Low Platelet count)",
+"is_correct": true
+},
+{
+"text": "Acute appendicitis",
+"is_correct": false
+},
+{
+"text": "Postpartum depression",
+"is_correct": false
+}
+],
+"rationale": "HELLP syndrome is a severe complication of pre-eclampsia characterized by hemolysis, elevated liver enzymes, and low platelets, presenting with RUQ pain and nausea.",
+"distractor_rationales": {
+"A": "Heartburn (pyrosis) is a mild burning sensation, not severe RUQ pain with liver enzyme elevation.",
+"C": "Appendicitis presents with McBurney's point tenderness and right lower quadrant pain.",
+"D": "Postpartum depression is a psychological mood disorder occurring after childbirth."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "diabetes",
+"question_text": "What is the primary screening test performed between 24 and 28 weeks gestation in Ghana to diagnose gestational diabetes mellitus?",
+"choices": [
+{
+"text": "Fast random urine dipstick for protein only",
+"is_correct": false
+},
+{
+"text": "Oral Glucose Tolerance Test (OGTT) or Fasting Blood Glucose screening",
+"is_correct": true
+},
+{
+"text": "Complete blood count and hemoglobin electrophoresis",
+"is_correct": false
+},
+{
+"text": "Sputum smear microscopy for acid-fast bacilli",
+"is_correct": false
+}
+],
+"rationale": "The Oral Glucose Tolerance Test (OGTT) or fasting blood glucose screening is standard between 24-28 weeks to detect gestational diabetes.",
+"distractor_rationales": {
+"A": "Urine dipstick tests protein and glucose, but OGTT is definitive diagnostic screening.",
+"C": "CBC and electrophoresis screen for anemia and hemoglobinopathies.",
+"D": "Sputum smear screens for pulmonary tuberculosis."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "management of medical disorders during pregnancy",
+"question_text": "A midwife is monitoring a pregnant client with sickle cell disease (HbSS) at 32 weeks gestation. Which complication must the midwife monitor for most vigilantly?",
+"choices": [
+{
+"text": "Vaso-occlusive painful crises, acute chest syndrome, and urinary tract infections",
+"is_correct": true
+},
+{
+"text": "Rapid spontaneous bone lengthening and excessive height gain",
+"is_correct": false
+},
+{
+"text": "Permanent high-frequency hearing loss",
+"is_correct": false
+},
+{
+"text": "Gestational hyperthyroidism and Graves' disease",
+"is_correct": false
+}
+],
+"rationale": "Sickle cell disease in pregnancy increases risks of painful vaso-occlusive crises, acute chest syndrome, infection, and maternal anemia.",
+"distractor_rationales": {
+"B": "Adult bone lengthening does not occur in pregnancy.",
+"C": "Hearing loss is not a direct complication of sickle cell crisis.",
+"D": "Hyperthyroidism is an independent endocrine disorder, not sickle cell related."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical conditions in pregnancy (anaemia",
+"question_text": "A pregnant woman with severe iron-deficiency anemia is prescribed oral ferrous sulfate. What counseling should the midwife provide to enhance absorption and manage side effects?",
+"choices": [
+{
+"text": "Take iron tablets with milk or calcium supplements to maximize absorption",
+"is_correct": false
+},
+{
+"text": "Take iron tablets with Vitamin C (orange juice) between meals, and inform her that stools may turn dark black",
+"is_correct": true
+},
+{
+"text": "Crush the iron tablets into powder and mix with tea",
+"is_correct": false
+},
+{
+"text": "Stop taking iron immediately if mild dark stools appear",
+"is_correct": false
+}
+],
+"rationale": "Iron absorption is enhanced by Vitamin C (ascorbic acid) and impaired by calcium/dairy/tea. Dark black stools are a harmless expected side effect of oral iron.",
+"distractor_rationales": {
+"A": "Calcium and dairy inhibit iron absorption.",
+"C": "Tea contains tannins that inhibit iron absorption.",
+"D": "Dark stools are normal and harmless, so iron should not be stopped."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "hypertension",
+"question_text": "A midwife is evaluating four pregnant clients attending antenatal clinic. Which client requires IMMEDIATE medical referral for elevated blood pressure?",
+"choices": [
+{
+"text": "A client at 12 weeks gestation with BP 110/70 mmHg",
+"is_correct": false
+},
+{
+"text": "A client at 36 weeks gestation with BP 155/105 mmHg and 2+ proteinuria",
+"is_correct": true
+},
+{
+"text": "A client at 20 weeks gestation with BP 120/80 mmHg",
+"is_correct": false
+},
+{
+"text": "A client at 28 weeks gestation with BP 118/76 mmHg",
+"is_correct": false
+}
+],
+"rationale": "A blood pressure of 155/105 mmHg with proteinuria at 36 weeks indicates severe gestational hypertension or pre-eclampsia, requiring urgent medical evaluation.",
+"distractor_rationales": {
+"A": "BP 110/70 mmHg is normal.",
+"C": "BP 120/80 mmHg is normal.",
+"D": "BP 118/76 mmHg is normal."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "diabetes",
+"question_text": "What is the primary goal of medical and midwifery management for a pregnant woman with pre-existing Type 1 Diabetes Mellitus?",
+"choices": [
+{
+"text": "Maintaining strict euglycemia (normal blood glucose levels) throughout pregnancy to prevent congenital malformations and macrosomia",
+"is_correct": true
+},
+{
+"text": "Eliminating insulin injections entirely during the first trimester",
+"is_correct": false
+},
+{
+"text": "Encouraging a high-sugar diet to support fetal brain development",
+"is_correct": false
+},
+{
+"text": "Inducing labour routinely at 28 weeks gestation for all diabetic mothers",
+"is_correct": false
+}
+],
+"rationale": "Strict glycemic control before conception and throughout pregnancy is critical to minimize risks of congenital anomalies, miscarriage, and macrosomia.",
+"distractor_rationales": {
+"B": "Stopping insulin in Type 1 diabetes causes fatal diabetic ketoacidosis.",
+"C": "High-sugar diets cause dangerous maternal hyperglycemia.",
+"D": "Delivery is managed carefully, usually aiming for 37-39 weeks unless complications arise."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "management of medical disorders during pregnancy",
+"question_text": "A pregnant woman presents with acute bronchial asthma exacerbation during her third trimester. What is the immediate midwifery and medical priority?",
+"choices": [
+{
+"text": "Administer rapid-acting bronchodilator inhalers (salbutamol) and ensure adequate oxygenation",
+"is_correct": true
+},
+{
+"text": "Instruct her to hold her breath and avoid all medications",
+"is_correct": false
+},
+{
+"text": "Perform immediate emergency tracheostomy",
+"is_correct": false
+},
+{
+"text": "Restrict fluid intake to zero",
+"is_correct": false
+}
+],
+"rationale": "Maintaining maternal oxygenation and relieving bronchospasm with inhaled bronchodilators is crucial to prevent fetal hypoxia during an asthma attack.",
+"distractor_rationales": {
+"B": "Withholding medication during an asthma attack causes severe maternal and fetal hypoxia.",
+"C": "Tracheostomy is extremely invasive and reserved for upper airway obstruction.",
+"D": "Fluid restriction does not treat bronchospasm."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "malaria",
+"question_text": "Which of the following interventions represents the primary strategy for preventing malaria and its devastating consequences during pregnancy in Ghana?",
+"choices": [
+{
+"text": "Routine sleeping under Insecticide-Treated Nets (ITNs) and intermittent preventive treatment with sulfadoxine-pyrimethamine (IPTp-SP)",
+"is_correct": true
+},
+{
+"text": "Consuming raw garlic cloves daily as sole protection",
+"is_correct": false
+},
+{
+"text": "Avoiding all outdoor travel throughout the entire 9 months",
+"is_correct": false
+},
+{
+"text": "Taking daily curative chloroquine tablets without prescription",
+"is_correct": false
+}
+],
+"rationale": "The Ghana Health Service malaria in pregnancy prevention package centers on ITNs, IPTp-SP doses, and prompt case management.",
+"distractor_rationales": {
+"B": "Garlic has no proven preventive efficacy against malaria parasitemia.",
+"C": "Avoiding outdoor travel is impractical and ineffective.",
+"D": "Chloroquine is obsolete due to widespread parasite resistance."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical conditions in pregnancy (anaemia",
+"question_text": "A midwife is evaluating four pregnant clients. Which client requires prioritization for immediate intravenous iron or blood transfusion assessment?",
+"choices": [
+{
+"text": "A client at 20 weeks gestation with mild fatigue and Hb 10.5 g/dL",
+"is_correct": false
+},
+{
+"text": "A term pregnant client at 38 weeks gestation scheduled for elective repeat C-section with Hb 6.8 g/dL and generalized pallor",
+"is_correct": true
+},
+{
+"text": "A client at 14 weeks gestation with normal booking investigations",
+"is_correct": false
+},
+{
+"text": "A client at 28 weeks gestation taking prophylactic multivitamins",
+"is_correct": false
+}
+],
+"rationale": "An Hb of 6.8 g/dL near term in a client scheduled for surgery poses severe hemorrhage and surgical risk, demanding urgent hematology review and transfusion planning.",
+"distractor_rationales": {
+"A": "Hb 10.5 g/dL represents mild anemia manageable with oral hematinics.",
+"C": "Normal investigations require routine ongoing care.",
+"D": "Prophylactic multivitamins are standard stable care."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "AND-311-M",
+"course_title": "Advanced Nursing III",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced nursing assessment in midwifery",
+"fluid balance in pregnancy",
+"wound care (episiotomy)",
+"advanced clinical procedures"
+],
+"questions": [
+{
+"topic": "Advanced nursing assessment in midwifery",
+"question_text": "When performing a systematic physical assessment on a pregnant woman admitted with severe dehydration from hyperemesis, which clinical finding best indicates extracellular fluid volume deficit?",
+"choices": [
+{
+"text": "Bounding peripheral pulses and moist mucous membranes",
+"is_correct": false
+},
+{
+"text": "Flat neck veins when supine and orthostatic hypotension",
+"is_correct": true
+},
+{
+"text": "Normal heart rate with clear lung fields bilaterally",
+"is_correct": false
+},
+{
+"text": "Pitting pedal edema and elevated blood pressure",
+"is_correct": false
+}
+],
+"rationale": "Fluid volume deficit causes hypovolemia, resulting in decreased venous return leading to flat neck veins and orthostatic hypotension when moving from lying to standing.",
+"distractor_rationales": {
+"A": "Bounding pulses and moist mucous membranes characterize fluid volume excess.",
+"C": "Normal heart rate is unlikely; tachycardia typically develops to compensate for lost volume.",
+"D": "Pitting edema and elevated blood pressure indicate fluid overload."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "fluid balance in pregnancy",
+"question_text": "An adult pregnant patient weighing 60 kg is prescribed IV fluid infusion to run at 125 mL/hr using a standard infusion set with a drop factor of 20 drops/mL. Calculate the correct flow rate in drops per minute.",
+"choices": [
+{
+"text": "32 drops/min",
+"is_correct": false
+},
+{
+"text": "42 drops/min",
+"is_correct": true
+},
+{
+"text": "63 drops/min",
+"is_correct": false
+},
+{
+"text": "125 drops/min",
+"is_correct": false
+}
+],
+"rationale": "Drops/min formula: (Volume in mL / Time in minutes) x Drop factor. (125 mL / 60 mins) x 20 drops/mL = 2.083 x 20 = 41.66, rounding to 42 drops per minute.",
+"distractor_rationales": {
+"A": "32 drops/min is an incorrect calculation error.",
+"C": "63 drops/min is an overestimate resulting from incorrect time division.",
+"D": "125 drops/min fails to apply the drop factor and time conversion."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "wound care (episiotomy)",
+"question_text": "A midwife is repairing a mediolateral episiotomy following a normal vaginal delivery. Which principle is essential for ensuring optimal wound healing and preventing postpartum complications?",
+"choices": [
+{
+"text": "Using non-sterile suture materials and skipping local anesthesia to save time",
+"is_correct": false
+},
+{
+"text": "Ensuring meticulous hemostasis, anatomical layer-by-layer approximation, and strict aseptic technique",
+"is_correct": true
+},
+{
+"text": "Tying suture knots extremely tight to cause tissue ischemia",
+"is_correct": false
+},
+{
+"text": "Leaving the skin edges open without suturing",
+"is_correct": false
+}
+],
+"rationale": "Anatomical layer-by-layer approximation, strict asepsis, and hemostasis prevent hematoma formation, infection, and dehiscence during episiotomy repair.",
+"distractor_rationales": {
+"A": "Non-sterile sutures and skipping anesthesia violate clinical safety and ethics.",
+"C": "Tight knots cause tissue necrosis and ischemia.",
+"D": "Leaving episiotomies unsutured causes severe bleeding and poor healing."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "advanced clinical procedures",
+"question_text": "A pregnant client at 36 weeks gestation requires an indwelling urinary catheter prior to emergency Caesarean section. When inserting the catheter, the midwife encounters firm resistance. What is the correct action?",
+"choices": [
+{
+"text": "Apply firm physical force to advance the catheter past the obstruction",
+"is_correct": false
+},
+{
+"text": "Stop immediately, relax, and gently re-attempt while asking the client to take deep breaths",
+"is_correct": true
+},
+{
+"text": "Inflate the catheter balloon immediately inside the urethra",
+"is_correct": false
+},
+{
+"text": "Abandon catheterization and proceed to surgery without a catheter",
+"is_correct": false
+}
+],
+"rationale": "Encountering resistance requires stopping immediately to prevent urethral trauma or false passages. Deep breaths help relax the sphincter.",
+"distractor_rationales": {
+"A": "Forcing a catheter against resistance causes severe urethral trauma and bleeding.",
+"C": "Inflating the balloon in the urethra causes excruciating pain and rupture.",
+"D": "Catheterization is required for C-section bladder decompression."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced nursing assessment in midwifery",
+"question_text": "A midwife receives handover for four antenatal/postnatal clients. Which client should be assessed FIRST?",
+"choices": [
+{
+"text": "A postnatal client requesting assistance with infant latching",
+"is_correct": false
+},
+{
+"text": "A post-op Caesarean section client 2 hours post-surgery reporting sudden shortness of breath and chest pain",
+"is_correct": true
+},
+{
+"text": "An antenatal client requesting routine hematinic supplements",
+"is_correct": false
+},
+{
+"text": "A postpartum mother asking for routine dietary advice",
+"is_correct": false
+}
+],
+"rationale": "Sudden shortness of breath and chest pain post-C-section suggest pulmonary embolism, an immediate life-threatening emergency requiring first priority.",
+"distractor_rationales": {
+"A": "Infant latching assistance is important but non-urgent.",
+"C": "Routine hematinic supplements are stable care.",
+"D": "Dietary advice is non-emergency."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "fluid balance in pregnancy",
+"question_text": "A postpartum mother with severe postpartum hemorrhage is receiving rapid IV crystalloid resuscitation. Which assessment finding best indicates adequate restoration of intravascular volume?",
+"choices": [
+{
+"text": "Persistent maternal tachycardia (>120 bpm) and cold, clammy skin",
+"is_correct": false
+},
+{
+"text": "Urine output greater than 30 mL/hour, warm extremities, and stable blood pressure",
+"is_correct": true
+},
+{
+"text": "Unresponsive altered mental status and absent radial pulses",
+"is_correct": false
+},
+{
+"text": "Total absence of urine output for 4 consecutive hours",
+"is_correct": false
+}
+],
+"rationale": "Adequate urine output (>30 mL/hr), warm peripheral perfusion, and stable vital signs confirm successful resuscitation from hypovolemic shock.",
+"distractor_rationales": {
+"A": "Persistent tachycardia and cold skin indicate ongoing uncorrected shock.",
+"C": "Unresponsiveness and absent pulses indicate profound worsening shock.",
+"D": "Zero urine output for 4 hours indicates acute kidney injury from hypovolemia."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "wound care (episiotomy)",
+"question_text": "A postnatal mother 3 days post-episiotomy repair complains of severe, throbbing perineal pain and swelling. Upon inspection, the midwife notes a tense, tender, bluish hematoma over the suture line. What is the appropriate midwifery action?",
+"choices": [
+{
+"text": "Reassure her that this is completely normal and requires no action",
+"is_correct": false
+},
+{
+"text": "Notify the physician immediately; small hematomas may be managed conservatively with ice packs and analgesics, while large expanding hematomas require surgical evacuation",
+"is_correct": true
+},
+{
+"text": "Remove all episiotomy sutures immediately without medical consultation",
+"is_correct": false
+},
+{
+"text": "Apply boiling hot water compresses directly to the hematoma",
+"is_correct": false
+}
+],
+"rationale": "Perineal hematomas cause severe pain. Small ones resolve with ice and analgesia, but large expanding hematomas require surgical drainage and hemostasis.",
+"distractor_rationales": {
+"A": "Severe throbbing pain and tense hematoma are abnormal pathological complications.",
+"C": "Removing sutures independently without surgical assessment worsens bleeding.",
+"D": "Hot compresses worsen bleeding and swelling."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "advanced clinical procedures",
+"question_text": "When performing sterile catheterization or episiotomy care, which technique violates sterile principle guidelines?",
+"choices": [
+{
+"text": "Opening sterile packages by pulling wrapper flaps away from the center first",
+"is_correct": false
+},
+{
+"text": "Reaching across the sterile field to grab equipment placed on the far side",
+"is_correct": true
+},
+{
+"text": "Holding sterile items above waist level at all times",
+"is_correct": false
+},
+{
+"text": "Treating the outer 1-inch border of a sterile drape as contaminated",
+"is_correct": false
+}
+],
+"rationale": "Reaching across a sterile field violates sterile technique because unsterile clothing or arms may inadvertently contaminate the sterile zone.",
+"distractor_rationales": {
+"A": "Pulling flaps away prevents arms from contaminating sterile contents.",
+"C": "Holding items above the waist keeps them in view and sterile.",
+"D": "The outer 1-inch border is universally considered contaminated."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced nursing assessment in midwifery",
+"question_text": "Which of the following clinical documentation entries demonstrates the most accurate, objective, and legally defensible midwifery assessment note?",
+"choices": [
+{
+"text": "Client is lazy and uncooperative; refused to take morning antenatal medication.",
+"is_correct": false
+},
+{
+"text": "At 0800, client stated 'my lower belly cramps badly,' uterine contractions present every 4 minutes lasting 45 seconds, FHR 144 bpm.",
+"is_correct": true
+},
+{
+"text": "Client seems fine and is resting comfortably without problems.",
+"is_correct": false
+},
+{
+"text": "Client appears to be exaggerating her labour pain unnecessarily.",
+"is_correct": false
+}
+],
+"rationale": "Objective documentation must include direct quotes, measurable vital signs, and observable clinical data without emotional bias or subjective value judgments.",
+"distractor_rationales": {
+"A": "Using judgmental terms like 'lazy' is unprofessional and legally indefensible.",
+"C": "Phrases like 'seems fine' are vague and lack objective evidence.",
+"D": "Accusing a client of exaggerating pain violates professional empathy and objectivity."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "fluid balance in pregnancy",
+"question_text": "What is the primary physiological reason why pregnant women are more susceptible to peripheral edema in the lower extremities during the third trimester?",
+"choices": [
+{
+"text": "Increased plasma oncotic pressure and hypervolemia",
+"is_correct": false
+},
+{
+"text": "Increased venous pressure in the lower limbs caused by gravid uterus compression of the inferior vena cava and pelvic veins",
+"is_correct": true
+},
+{
+"text": "Complete cessation of renal filtration function",
+"is_correct": false
+},
+{
+"text": "Severe chronic dehydration",
+"is_correct": false
+}
+],
+"rationale": "The enlarging gravid uterus compresses the inferior vena cava and pelvic veins, elevating venous hydrostatic pressure and causing dependent lower extremity edema.",
+"distractor_rationales": {
+"A": "Plasma oncotic pressure actually decreases slightly in normal pregnancy due to hemodilution.",
+"C": "Renal filtration rates increase during pregnancy.",
+"D": "Dehydration reduces fluid retention rather than causes peripheral edema."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "wound care (episiotomy)",
+"question_text": "A postnatal mother 5 days post-normal delivery with an episiotomy returns to the clinic complaining of worsening perineal pain, foul-smelling vaginal discharge, and low-grade fever. Upon inspection, the midwife observes wound dehiscence with purulent exudate. What is the appropriate management?",
+"choices": [
+{
+"text": "Apply tight adhesive bandages over the infected wound",
+"is_correct": false
+},
+{
+"text": "Notify the physician, take wound swab for culture, initiate prescribed antibiotics, perform Sitz baths, and plan secondary closure if indicated",
+"is_correct": true
+},
+{
+"text": "Ignore the infection as episiotomy wounds always heal spontaneously",
+"is_correct": false
+},
+{
+"text": "Instruct the mother to apply herbal sap directly into the open wound",
+"is_correct": false
+}
+],
+"rationale": "An infected dehisced episiotomy requires medical notification, wound cultures, antibiotic therapy, local hygiene (Sitz baths), and potential secondary repair.",
+"distractor_rationales": {
+"A": "Adhesive bandages trap infection and worsen abscess formation.",
+"C": "Ignoring wound infection leads to necrotizing fasciitis or sepsis.",
+"D": "Unverified herbal sap causes chemical burns and worsens wound necrosis."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "advanced clinical procedures",
+"question_text": "A midwife is preparing to collect a midstream urine (MSU) specimen for culture and sensitivity from a pregnant woman with suspected urinary tract infection. Which instruction is critical?",
+"choices": [
+{
+"text": "Collect the very first stream of morning urine directly into the container",
+"is_correct": false
+},
+{
+"text": "Clean perineal area from front to back, pass initial urine stream into toilet, then collect midstream urine in sterile container",
+"is_correct": true
+},
+{
+"text": "Wipe from back to front using standard soap",
+"is_correct": false
+},
+{
+"text": "Refrigerate urine specimen for 48 hours before laboratory submission",
+"is_correct": false
+}
+],
+"rationale": "Cleaning front-to-back prevents introducing fecal bacteria, and discarding initial urine flushes out urethral contaminants for accurate culture results.",
+"distractor_rationales": {
+"A": "Collecting the initial stream captures skin and urethral contaminants.",
+"C": "Wiping back-to-front transfers E. coli into the urinary meatus.",
+"D": "Refrigerating for 48 hours alters bacterial growth, invalidating culture results."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced nursing assessment in midwifery",
+"question_text": "A midwife is assessing four postpartum mothers. Which client requires prioritization for immediate clinical evaluation?",
+"choices": [
+{
+"text": "A mother 1 day post-delivery breastfeeding successfully with mild afterpains",
+"is_correct": false
+},
+{
+"text": "A mother 2 days post-delivery reporting sudden unilateral calf pain, swelling, and warmth in the left leg",
+"is_correct": true
+},
+{
+"text": "A mother 3 days post-delivery asking about postpartum lochia changes",
+"is_correct": false
+},
+{
+"text": "A mother 4 days post-delivery with normal breast engorgement",
+"is_correct": false
+}
+],
+"rationale": "Unilateral calf pain, swelling, and warmth are classic signs of deep vein thrombosis (DVT), a serious postpartum thromboembolic complication requiring immediate anticoagulation evaluation.",
+"distractor_rationales": {
+"A": "Mild afterpains and successful breastfeeding are normal postpartum findings.",
+"C": "Inquiring about lochia changes is routine educational inquiry.",
+"D": "Normal breast engorgement is expected during lactation onset."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "fluid balance in pregnancy",
+"question_text": "What physiological cardiovascular change occurs in normal pregnancy that impacts fluid and hemodynamic assessment?",
+"choices": [
+{
+"text": "Maternal blood volume increases by 30-50% to accommodate placental and fetal perfusion",
+"is_correct": true
+},
+{
+"text": "Maternal cardiac output decreases by 80% throughout gestation",
+"is_correct": false
+},
+{
+"text": "Blood pressure rises significantly to hypertensive levels in all healthy pregnant women",
+"is_correct": false
+},
+{
+"text": "Total red blood cell volume decreases drastically while plasma volume remains zero",
+"is_correct": false
+}
+],
+"rationale": "Pregnancy induces marked hypervolemia (30-50% increase in plasma and blood volume) to meet metabolic and placental perfusion demands.",
+"distractor_rationales": {
+"B": "Cardiac output increases, not decreases, during normal pregnancy.",
+"C": "Blood pressure normally dips slightly in mid-pregnancy rather than rising to hypertensive levels.",
+"D": "Plasma volume increases more than red blood cell volume, causing physiological hemodilution."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "wound care (episiotomy)",
+"question_text": "What is the primary post-repair instruction a midwife should give to a postnatal mother regarding episiotomy wound care at home?",
+"choices": [
+{
+"text": "Keep the perineum strictly moist by applying occlusive plastic wraps",
+"is_correct": false
+},
+{
+"text": "Keep the perineal area clean and dry, perform regular hand hygiene, practice proper front-to-back wiping, and take prescribed Sitz baths",
+"is_correct": true
+},
+{
+"text": "Avoid all personal hygiene and bathing for 6 weeks",
+"is_correct": false
+},
+{
+"text": "Apply harsh chemical bleaching agents to sterilize the scar",
+"is_correct": false
+}
+],
+"rationale": "Maintaining perineal cleanliness, proper front-to-back wiping, and Sitz baths promote comfort and prevent wound infection.",
+"distractor_rationales": {
+"A": "Moist plastic wraps promote bacterial growth and wound infection.",
+"C": "Avoiding personal hygiene increases infection risks.",
+"D": "Harsh chemical bleaches cause severe chemical burns and tissue necrosis."
+},
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}

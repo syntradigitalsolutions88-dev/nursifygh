@@ -1,31 +1,31 @@
 """
-Bulk import questions from a CSV file.
+Import NMC-style MCQ questions from JSON files.
+
+Supports TWO file shapes:
+
+SHAPE A — Single course:
+{
+  "program": "GENERAL", "level": 300, "semester": "S1",
+  "course_code": "MMN-311", "course_title": "...", "category": "MED_SURG",
+  "topics": [...], "questions": [...]
+}
+
+SHAPE B — Multiple courses:
+{
+  "program": "GENERAL", "level": 300, "semester": "S1",
+  "courses": [
+    {"course_code": "NPN-311", "course_title": "...", "category": "...", "semester": "S1", "topics": [...], "questions": [...]},
+    {"course_code": "OBN-311", ...}
+  ]
+}
 
 Usage:
-    python manage.py import_questions path/to/questions.csv
-
-CSV format (header row required):
-    course_code,question_text,choice_a,choice_b,choice_c,choice_d,
-    correct_choice,rationale,choice_a_rationale,choice_b_rationale,
-    choice_c_rationale,choice_d_rationale
-
-- course_code:         e.g. NUR-201
-- question_text:       the question itself
-- choice_a..choice_d:  four answer options
-- correct_choice:      A, B, C, or D
-- rationale:           general explanation shown after grading
-- choice_X_rationale:  optional per-choice explanation (can be empty)
-
-Validation:
-- Rejects rows where correct_choice is not A/B/C/D
-- Rejects rows where course_code doesn't exist
-- Detects duplicates by (course, question_text) and skips them
-- Reports success/failure counts at the end
+    python manage.py import_questions path/to/file.json
+    python manage.py import_questions path/to/folder/ --all
+    python manage.py import_questions path/to/file.json --dry-run
+    python manage.py import_questions path/to/file.json --approve
 """
-
-from __future__ import annotations
-
-import csv
+import json
 from pathlib import Path
 
 from django.core.management.base import BaseCommand, CommandError
@@ -34,141 +34,146 @@ from django.db import transaction
 from academics.models import Choice, Course, Question
 
 
-REQUIRED_COLUMNS = {
-    "course_code",
-    "question_text",
-    "choice_a",
-    "choice_b",
-    "choice_c",
-    "choice_d",
-    "correct_choice",
-    "rationale",
-}
-
-OPTIONAL_COLUMNS = {
-    "choice_a_rationale",
-    "choice_b_rationale",
-    "choice_c_rationale",
-    "choice_d_rationale",
-}
-
-
 class Command(BaseCommand):
-    help = "Import questions from a CSV file"
+    help = "Import NMC-style MCQ questions from JSON files (single-course or multi-course)."
 
     def add_arguments(self, parser):
-        parser.add_argument(
-            "csv_path",
-            type=str,
-            help="Path to the CSV file",
-        )
-        parser.add_argument(
-            "--dry-run",
-            action="store_true",
-            help="Validate without saving",
-        )
+        parser.add_argument("path", type=str, help="JSON file or folder of JSON files.")
+        parser.add_argument("--all", action="store_true", help="If path is a folder, import all .json inside.")
+        parser.add_argument("--approve", action="store_true", help="Import as APPROVED instead of PENDING.")
+        parser.add_argument("--dry-run", action="store_true", help="Validate only, no DB writes.")
 
     def handle(self, *args, **options):
-        csv_path = Path(options["csv_path"])
+        path = Path(options["path"])
+        if not path.exists():
+            raise CommandError(f"Path not found: {path}")
+
+        if path.is_dir():
+            if not options["all"]:
+                raise CommandError("Path is a folder — pass --all to import every .json inside.")
+            json_files = sorted(path.glob("*.json"))
+            if not json_files:
+                raise CommandError(f"No .json files found in {path}")
+        else:
+            json_files = [path]
+
+        review_status = "APPROVED" if options["approve"] else "PENDING"
         dry_run = options["dry_run"]
+        mode_label = review_status + (" (DRY RUN)" if dry_run else "")
+        self.stdout.write(self.style.MIGRATE_HEADING(f"Import mode: {mode_label}"))
+        self.stdout.write("")
 
-        if not csv_path.exists():
-            raise CommandError(f"File not found: {csv_path}")
+        grand_created = 0
+        grand_skipped = 0
+        grand_errors = 0
 
-        self.stdout.write(f"Reading {csv_path}")
-        if dry_run:
-            self.stdout.write(self.style.WARNING("DRY RUN — no data will be saved"))
+        for jf in json_files:
+            self.stdout.write(self.style.MIGRATE_HEADING(f"── {jf.name}"))
+            with jf.open("r", encoding="utf-8") as f:
+                try:
+                    payload = json.load(f)
+                except json.JSONDecodeError as e:
+                    self.stdout.write(self.style.ERROR(f"  ✗ JSON parse error: {e}"))
+                    grand_errors += 1
+                    continue
 
-        with csv_path.open(encoding="utf-8-sig") as f:
-            reader = csv.DictReader(f)
-            if not reader.fieldnames:
-                raise CommandError("CSV has no header row")
+            # Support both single-course and multi-course shapes
+            if "courses" in payload:
+                courses_payload = payload["courses"]
+            else:
+                courses_payload = [payload]
 
-            header = set(reader.fieldnames)
-            missing = REQUIRED_COLUMNS - header
-            if missing:
-                raise CommandError(
-                    f"Missing required columns: {', '.join(sorted(missing))}"
+            if not isinstance(courses_payload, list) or not courses_payload:
+                self.stdout.write(self.style.ERROR("  ✗ No courses found in file"))
+                grand_errors += 1
+                continue
+
+            for course_data in courses_payload:
+                created, skipped, errors = self._import_one_course(
+                    course_data, review_status, dry_run
                 )
+                grand_created += created
+                grand_skipped += skipped
+                grand_errors += len(errors)
 
-            rows = list(reader)
+                self.stdout.write(
+                    f"  {course_data.get('course_code', '?')}: "
+                    f"created={created}, skipped={skipped}, errors={len(errors)}"
+                )
+                for e in errors:
+                    self.stdout.write(self.style.WARNING(f"    ✗ {e}"))
 
-        self.stdout.write(f"Found {len(rows)} row(s)\n")
+        self.stdout.write("")
+        self.stdout.write(self.style.SUCCESS(
+            f"TOTAL: created={grand_created}, skipped={grand_skipped}, errors={grand_errors}"
+        ))
 
+        if review_status == "PENDING" and not dry_run and grand_created > 0:
+            self.stdout.write(self.style.NOTICE(
+                "New questions imported as PENDING. Approve them in admin or run "
+                "python manage.py approve_questions <course_code>"
+            ))
+
+    def _import_one_course(self, data, review_status, dry_run):
         created = 0
         skipped = 0
-        failed = 0
-        errors: list[str] = []
+        errors = []
 
-        for idx, row in enumerate(rows, start=2):  # row 1 is header
-            try:
-                with transaction.atomic():
-                    if self._import_row(row, dry_run=dry_run):
-                        created += 1
-                    else:
-                        skipped += 1
-            except Exception as exc:
-                failed += 1
-                errors.append(f"Row {idx}: {exc}")
-
-        # Summary
-        self.stdout.write("")
-        self.stdout.write(self.style.SUCCESS(f"✅ Created: {created}"))
-        if skipped:
-            self.stdout.write(self.style.WARNING(f"⏭  Skipped (duplicates): {skipped}"))
-        if failed:
-            self.stdout.write(self.style.ERROR(f"❌ Failed: {failed}"))
-            for err in errors[:20]:
-                self.stdout.write(self.style.ERROR(f"   {err}"))
-            if len(errors) > 20:
-                self.stdout.write(self.style.ERROR(f"   … and {len(errors) - 20} more"))
-
-    def _import_row(self, row: dict, *, dry_run: bool) -> bool:
-        """Return True if created, False if skipped (duplicate)."""
-        course_code = row["course_code"].strip()
-        question_text = row["question_text"].strip()
-        correct = row["correct_choice"].strip().upper()
-
-        if correct not in ("A", "B", "C", "D"):
-            raise ValueError(f"correct_choice must be A/B/C/D, got '{correct}'")
-
-        if not question_text:
-            raise ValueError("question_text is empty")
+        code = data.get("course_code")
+        if not code:
+            return 0, 0, ["Missing course_code"]
 
         try:
-            course = Course.objects.get(code=course_code)
+            course = Course.objects.get(code=code)
         except Course.DoesNotExist:
-            raise ValueError(f"Course not found: {course_code}")
+            return 0, 0, [f"Course not found: {code}"]
 
-        # Duplicate check
-        if Question.objects.filter(course=course, text=question_text).exists():
-            return False
+        questions = data.get("questions") or []
+        if not questions:
+            return 0, 0, [f"{code}: no questions"]
 
-        if dry_run:
-            return True
+        with transaction.atomic():
+            for i, q in enumerate(questions, start=1):
+                try:
+                    qtext = (q.get("question_text") or "").strip()
+                    choices = q.get("choices") or []
+                    rationale = (q.get("rationale") or "").strip()
 
-        question = Question.objects.create(
-            course=course,
-            text=question_text,
-            rationale=row.get("rationale", "").strip(),
-        )
+                    if not qtext:
+                        raise ValueError(f"Q{i}: empty question_text")
+                    if len(choices) < 2:
+                        raise ValueError(f"Q{i}: fewer than 2 choices")
+                    correct = sum(1 for c in choices if c.get("is_correct"))
+                    if correct != 1:
+                        raise ValueError(f"Q{i}: expected 1 correct, got {correct}")
+                    if not rationale:
+                        raise ValueError(f"Q{i}: empty rationale")
 
-        choices = [
-            ("A", row["choice_a"].strip(), row.get("choice_a_rationale", "").strip(), 0),
-            ("B", row["choice_b"].strip(), row.get("choice_b_rationale", "").strip(), 1),
-            ("C", row["choice_c"].strip(), row.get("choice_c_rationale", "").strip(), 2),
-            ("D", row["choice_d"].strip(), row.get("choice_d_rationale", "").strip(), 3),
-        ]
+                    if Question.objects.filter(course=course, text=qtext).exists():
+                        skipped += 1
+                        continue
 
-        for letter, text, rationale, position in choices:
-            if not text:
-                raise ValueError(f"choice_{letter.lower()} is empty")
-            Choice.objects.create(
-                question=question,
-                text=text,
-                is_correct=(letter == correct),
-                rationale=rationale,
-                position=position,
-            )
+                    if dry_run:
+                        created += 1
+                        continue
 
-        return True
+                    question = Question.objects.create(
+                        course=course,
+                        text=qtext,
+                        rationale=rationale,
+                        is_published=(review_status == "APPROVED"),
+                        review_status=review_status,
+                    )
+                    for pos, c in enumerate(choices):
+                        Choice.objects.create(
+                            question=question,
+                            text=(c.get("text") or "").strip(),
+                            is_correct=bool(c.get("is_correct")),
+                            position=pos,
+                        )
+                    created += 1
+
+                except Exception as e:
+                    errors.append(str(e))
+
+        return created, skipped, errors

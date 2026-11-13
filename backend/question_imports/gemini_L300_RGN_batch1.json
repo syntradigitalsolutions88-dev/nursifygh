@@ -1,0 +1,2118 @@
+{
+"program": "GENERAL",
+"level": 300,
+"courses": [
+{
+"course_code": "NPN-311",
+"course_title": "Nursing Process",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": ["Nursing Process steps", "assessment", "diagnosis", "planning", "implementation", "evaluation", "critical thinking", "care planning"],
+"questions": [
+{
+"topic": "Nursing Process steps",
+"question_text": "During the admission assessment at a CHPS compound in rural Bono Region, a nurse gathers subjective and objective data from a patient with malaria. Which phase of the nursing process is being executed?",
+"choices": [
+{"text": "Diagnosis", "is_correct": false},
+{"text": "Assessment", "is_correct": true},
+{"text": "Planning", "is_correct": false},
+{"text": "Implementation", "is_correct": false}
+],
+"rationale": "Assessment is the systematic collection, verification, and communication of data about a patient, forming the foundational database.",
+"distractor_rationales": {
+"A": "Diagnosis involves analyzing the gathered data to identify actual or potential health problems.",
+"C": "Planning involves setting priorities and measurable client goals based on the diagnosis.",
+"D": "Implementation is the execution of nursing interventions planned for the client."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "critical thinking",
+"question_text": "A nurse receives handover for four patients in the medical ward. Which client should the nurse assess FIRST?",
+"choices": [
+{"text": "A patient with uncomplicated malaria complaining of mild headache", "is_correct": false},
+{"text": "A post-op laparotomy patient reporting sudden shortness of breath and pleuritic chest pain", "is_correct": true},
+{"text": "A known hypertensive client with a routine BP of 140/90 mmHg", "is_correct": false},
+{"text": "A diabetic client requesting assistance with morning hygiene", "is_correct": false}
+],
+"rationale": "Sudden shortness of breath and chest pain suggest a life-threatening pulmonary embolism, requiring immediate emergency assessment and intervention.",
+"distractor_rationales": {
+"A": "Mild headache from malaria is stable and non-urgent.",
+"C": "Stage 1 hypertension requires monitoring but is not an acute emergency.",
+"D": "Assisting with hygiene is routine and non-urgent."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "diagnosis",
+"question_text": "When formulating a NANDA-I nursing diagnosis for a patient with severe dehydration from acute gastroenteritis, what is the correct format for an actual nursing diagnosis?",
+"choices": [
+{"text": "Acute Pain related to abdominal cramping as evidenced by grimacing", "is_correct": true},
+{"text": "Prescribed IV fluids and oral rehydration therapy", "is_correct": false},
+{"text": "Severe gastroenteritis and electrolyte imbalance", "is_correct": false},
+{"text": "Dehydration secondary to bacterial infection", "is_correct": false}
+],
+"rationale": "An actual nursing diagnosis consists of the problem (diagnostic label), related to (etiology), and as evidenced by (signs and symptoms).",
+"distractor_rationales": {
+"B": "Prescribed treatments represent medical orders, not nursing diagnoses.",
+"C": "Medical diagnoses like gastroenteritis do not form the nursing diagnostic label.",
+"D": "Medical etiology phrases do not correctly reflect the NANDA-I diagnostic structure."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "planning",
+"question_text": "Which of the following client-centered goals adheres to SMART goal criteria for a patient admitted with severe hypertension?",
+"choices": [
+{"text": "Nurse will administer antihypertensive medications every morning at 0800 hours.", "is_correct": false},
+{"text": "Client's blood pressure will decrease to less than 140/90 mmHg by discharge on Friday.", "is_correct": true},
+{"text": "Client will understand how to manage hypertension properly before leaving the ward.", "is_correct": false},
+{"text": "Client's blood pressure will normalize completely within two hours of admission.", "is_correct": false}
+],
+"rationale": "A SMART goal is Specific, Measurable, Attainable, Relevant, and Time-bound. Option B clearly specifies the parameter, target, and timeframe.",
+"distractor_rationales": {
+"A": "This statement describes a nursing intervention, not a client-centered goal.",
+"C": "This goal is vague and lacks measurable criteria for 'understand'.",
+"D": "Rapid normalization of severe hypertension within two hours is clinically unrealistic and unsafe."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "implementation",
+"question_text": "A nurse is executing a care plan for a bedridden stroke client. Which action best exemplifies independent nursing implementation?",
+"choices": [
+{"text": "Administering prescribed intravenous antibiotics as charted by the physician", "is_correct": false},
+{"text": "Repositioning the client every two hours to prevent pressure injury development", "is_correct": true},
+{"text": "Ordering a complete blood count and electrolyte panel from the laboratory", "is_correct": false},
+{"text": "Inserting an indwelling urinary catheter following medical protocol", "is_correct": false}
+],
+"rationale": "Repositioning clients is an independent nursing intervention that does not require a physician's direct order.",
+"distractor_rationales": {
+"A": "Administering prescribed medications is a dependent nursing intervention.",
+"C": "Ordering diagnostic lab panels requires medical authorization.",
+"D": "Inserting catheters is typically an interdependent procedure requiring specific clinical orders or protocols."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "evaluation",
+"question_text": "A nurse reviews a client's care plan after administering prescribed analgesics for post-operative pain. The client reports pain decreased from 8/10 to 2/10. What is the next essential step in the evaluation phase?",
+"choices": [
+{"text": "Discontinue the nursing care plan entirely and discharge the client", "is_correct": false},
+{"text": "Document the outcome, determine goal attainment, and modify or terminate the plan accordingly", "is_correct": true},
+{"text": "Repeat the initial nursing assessment from admission", "is_correct": false},
+{"text": "Increase the analgesic dosage without consulting the prescriber", "is_correct": false}
+],
+"rationale": "Evaluation involves comparing client responses to expected outcomes, documenting results, and deciding whether to continue, modify, or terminate the plan.",
+"distractor_rationales": {
+"A": "Discharging the client prematurely ignores ongoing post-operative care needs.",
+"C": "Repeating the entire admission assessment is unnecessary when evaluating a specific intervention outcome.",
+"D": "Adjusting medication dosages independently without medical orders is unsafe and illegal."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "critical thinking",
+"question_text": "During triage at a busy regional hospital in Sunyani, a nurse assesses four clients. Which client should be evaluated FIRST?",
+"choices": [
+{"text": "A 25-year-old presenting with acute asthma exacerbation, wheezing, and cyanosis around lips", "is_correct": true},
+{"text": "A 40-year-old complaining of a mild sprained ankle sustained during a football match", "is_correct": false},
+{"text": "A 30-year-old with a low-grade fever and cough for two weeks", "is_correct": false},
+{"text": "A 50-year-old requesting routine refill of chronic diabetes medication", "is_correct": false}
+],
+"rationale": "Airway compromise and cyanosis indicate an immediate life-threatening respiratory emergency, demanding first priority under emergency triage principles.",
+"distractor_rationales": {
+"B": "A sprained ankle is painful but non-life-threatening.",
+"C": "A two-week cough requires evaluation for TB but is stable and non-acute.",
+"D": "Medication refills are routine and non-urgent."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Process steps",
+"question_text": "What is the primary purpose of establishing a standardized nursing care plan in clinical practice?",
+"choices": [
+{"text": "To replace verbal communication between shifts during ward handovers", "is_correct": false},
+{"text": "To ensure continuity of care, individualize client needs, and provide a legal record of nursing actions", "is_correct": true},
+{"text": "To restrict independent clinical decision-making by junior student nurses", "is_correct": false},
+{"text": "To fulfill hospital administrative documentation quotas without clinical relevance", "is_correct": false}
+],
+"rationale": "Care plans facilitate continuity of care across shifts, tailor interventions to unique client responses, and serve as legal documentation of the nursing process.",
+"distractor_rationales": {
+"A": "Care plans complement rather than replace verbal handover communication.",
+"C": "Care plans actually guide and support clinical reasoning rather than restrict decisions.",
+"D": "Documentation is driven by clinical quality and legal accountability, not administrative quotas."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "assessment",
+"question_text": "A nurse collects objective data during a physical examination of a patient. Which finding is categorized as objective data?",
+"choices": [
+{"text": "Client statement: 'I feel dizzy when I stand up quickly.'", "is_correct": false},
+{"text": "Client report of throbbing abdominal pain rated 7 out of 10", "is_correct": false},
+{"text": "Blood pressure reading of 150/95 mmHg and axillary temperature of 38.5°C", "is_correct": true},
+{"text": "Client expression of anxiety regarding upcoming surgery", "is_correct": false}
+],
+"rationale": "Objective data are measurable and observable findings obtained through physical examination, diagnostic tests, and vital sign measurement.",
+"distractor_rationales": {
+"A": "Dizziness described by the patient is subjective data (symptom).",
+"B": "Pain reported by the patient is subjective data.",
+"D": "Expressed anxiety is subjective psychological data."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "care planning",
+"question_text": "A nurse is prioritizing nursing diagnoses for a client admitted with advanced tuberculosis and severe malnutrition. Using Maslow's hierarchy of needs, which diagnosis takes highest priority?",
+"choices": [
+{"text": "Ineffective Airway Clearance related to excessive bronchial secretions", "is_correct": true},
+{"text": "Imbalanced Nutrition: Less than Body Requirements related to inadequate intake", "is_correct": false},
+{"text": "Risk for Infection Transmission related to airborne mycobacterium droplets", "is_correct": false},
+{"text": "Powerlessness related to prolonged hospitalization and chronic illness", "is_correct": false}
+],
+"rationale": "Maslow's hierarchy prioritizes physiological survival needs, placing airway clearance and breathing above nutrition, infection control, and psychosocial needs.",
+"distractor_rationales": {
+"B": "Nutrition is a physiological need but ranks below immediate airway patency.",
+"C": "Infection control is critical but secondary to maintaining a patent airway during acute distress.",
+"D": "Psychosocial needs like powerlessness are addressed after physiological stability is achieved."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "diagnosis",
+"question_text": "Which of the following represents a collaborative problem rather than an independent nursing diagnosis?",
+"choices": [
+{"text": "Risk for Falls related to generalized muscle weakness and unsteady gait", "is_correct": false},
+{"text": "Potential Complication of Blood Transfusion: Acute Hemolytic Reaction", "is_correct": true},
+{"text": "Constipation related to decreased physical activity and low fiber intake", "is_correct": false},
+{"text": "Ineffective Coping related to situational crisis of chronic diagnosis", "is_correct": false}
+],
+"rationale": "Collaborative problems (Potential Complications) are monitored by nurses, but interventions require both medical and nursing orders (e.g., managing transfusion reactions).",
+"distractor_rationales": {
+"A": "Risk for falls is managed primarily through independent nursing preventive interventions.",
+"C": "Constipation is managed independently through dietary and activity nursing measures.",
+"D": "Ineffective coping is addressed through independent psychosocial nursing interventions."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "planning",
+"question_text": "When establishing priorities for a client with multiple nursing diagnoses, which principle should guide the nurse?",
+"choices": [
+{"text": "Always address chronic comfort issues before acute physiological threats", "is_correct": false},
+{"text": "Prioritize life-threatening conditions using ABC (Airway, Breathing, Circulation) frameworks", "is_correct": true},
+{"text": "Address client preferences and comfort before clinical urgency", "is_correct": false},
+{"text": "Treat the easiest nursing diagnosis first regardless of clinical severity", "is_correct": false}
+],
+"rationale": "Clinical priority must always be given to life-threatening issues, utilizing ABC frameworks to ensure client survival.",
+"distractor_rationales": {
+"A": "Chronic comfort issues take lower priority than acute life-threatening threats.",
+"C": "Client preferences are important but never supersede life-threatening clinical emergencies.",
+"D": "Treating based on ease rather than clinical urgency is unsafe practice."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "implementation",
+"question_text": "A staff nurse delegates vital sign measurement to a trained healthcare assistant in a busy district hospital ward. What responsibility does the registered nurse retain?",
+"choices": [
+{"text": "Complete legal liability for any measurement errors made by the assistant", "is_correct": false},
+{"text": "Responsibility for overall nursing care, interpreting the data, and assessing client status", "is_correct": true},
+{"text": "No further responsibility once the task is assigned to the assistant", "is_correct": false},
+{"text": "Mandatory obligation to repeat every measurement personally to verify accuracy", "is_correct": false}
+],
+"rationale": "Delegation permits task execution, but the registered nurse retains ultimate accountability for patient assessment, data interpretation, and overall care quality.",
+"distractor_rationales": {
+"A": "Liability is shared based on appropriate delegation and supervision principles.",
+"C": "The nurse never relinquishes accountability for client outcomes when delegating.",
+"D": "Repeating every measurement defeats the purpose of delegation and efficient task distribution."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "evaluation",
+"question_text": "A nurse evaluates that a client's wound healing goal was not met after 7 days of treatment. What should the nurse do next in the nursing process?",
+"choices": [
+{"text": "Discard the care plan and document that the client is non-compliant", "is_correct": false},
+{"text": "Reassess the client, identify barriers, modify interventions, and revise the care plan", "is_correct": true},
+{"text": "Continue the exact same interventions indefinitely until healing occurs spontaneously", "is_correct": false},
+{"text": "Discharge the client from the hospital to free up ward space", "is_correct": false}
+],
+"rationale": "Unmet goals require re-evaluation of the entire nursing process: reassessing data, examining barriers, and modifying the care plan accordingly.",
+"distractor_rationales": {
+"A": "Blaming client non-compliance without investigating clinical barriers is unprofessional.",
+"C": "Continuing ineffective interventions without modification violates clinical standards.",
+"D": "Discharging an unstable client with unhealed wounds is unsafe and unethical."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "critical thinking",
+"question_text": "Which characteristic best defines clinical reasoning within the nursing process?",
+"choices": [
+{"text": "Relying strictly on rigid hospital policy manuals without individualized assessment", "is_correct": false},
+{"text": "Applying cognitive processes to analyze client data, weigh evidence, and make sound clinical judgements", "is_correct": true},
+{"text": "Executing physician orders as quickly as possible without questioning", "is_correct": false},
+{"text": "Memorizing standard disease pathology textbooks for examinations", "is_correct": false}
+],
+"rationale": "Clinical reasoning involves critical thinking to interpret patient data, recognize clinical changes, and determine appropriate evidence-based interventions.",
+"distractor_rationales": {
+"A": "Rigid adherence without individualization ignores holistic client assessment.",
+"C": "Blindly obeying orders without critical evaluation compromises patient safety.",
+"D": "Memorization is academic recall rather than active clinical reasoning at the bedside."
+},
+"difficulty": "KNOWLEDGE"
+}
+]
+},
+{
+"course_code": "OBN-311",
+"course_title": "Obstetric Nursing",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": ["Antenatal care", "labour stages", "postpartum haemorrhage", "pre-eclampsia/eclampsia", "obstetric emergencies"],
+"questions": [
+{
+"topic": "Antenatal care",
+"question_text": "During routine antenatal clinic in rural Ghana, a primigravida at 24 weeks gestation asks about the schedule of focused antenatal care (FANC) visits recommended by the WHO and Ghana Health Service. What is the correct response?",
+"choices": [
+{"text": "Monthly visits throughout the entire pregnancy until week 40", "is_correct": false},
+{"text": "A minimum of eight contacts (focused antenatal care model)", "is_correct": true},
+{"text": "Exactly four visits scheduled strictly during the third trimester", "is_correct": false},
+{"text": "Visits only when experiencing abnormal symptoms such as bleeding", "is_correct": false}
+],
+"rationale": "The WHO and Ghana Health Service recommend a minimum of eight contacts (visits) for positive pregnancy experiences and optimal maternal-fetal outcomes.",
+"distractor_rationales": {
+"A": "Monthly visits reflect older traditional schedules rather than the updated 8-contact model.",
+"C": "Limiting visits to the third trimester misses critical early screening and preventive interventions.",
+"D": "Antenatal care is preventive and routine, not restricted only to emergency symptoms."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "labour stages",
+"question_text": "A primiparous woman is in active labor at the maternity ward. When does the second stage of labour officially begin and end?",
+"choices": [
+{"text": "From the onset of true labour pains to full cervical dilation (10 cm)", "is_correct": false},
+{"text": "From full cervical dilation (10 cm) to the complete delivery of the baby", "is_correct": true},
+{"text": "From the delivery of the baby to the expulsion of the placenta", "is_correct": false},
+{"text": "From the expulsion of the placenta until two hours post-delivery", "is_correct": false}
+],
+"rationale": "The second stage of labour spans from full cervical dilation (10 cm) to the birth of the newborn.",
+"distractor_rationales": {
+"A": "Onset of labour to full dilation defines the first stage of labour.",
+"C": "Delivery of the baby to placental expulsion defines the third stage of labour.",
+"D": "The period following placental expulsion defines the fourth stage (puerperium monitoring)."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "postpartum haemorrhage",
+"question_text": "A multiparous client 30 minutes post-normal vaginal delivery at a district hospital develops sudden, heavy vaginal bleeding. Estimated blood loss is 600 mL, and the uterus is boggy and relaxed. What is the INITIAL nursing intervention?",
+"choices": [
+{"text": "Immediately prepare the client for emergency surgical hysterectomy", "is_correct": false},
+{"text": "Perform immediate bimanual uterine massage and administer oxytocin as prescribed", "is_correct": true},
+{"text": "Insert an indwelling urinary catheter and force oral fluids", "is_correct": false},
+{"text": "Administer IV broad-spectrum antibiotics to prevent postpartum sepsis", "is_correct": false}
+],
+"rationale": "A boggy uterus with heavy bleeding indicates uterine atony, the leading cause of PPH. Immediate uterine massage stimulates contractions, combined with uterotonic administration.",
+"distractor_rationales": {
+"A": "Surgical intervention is reserved for refractory cases failing medical management.",
+"C": "Catheterization may be indicated if a full bladder prevents involution, but massage and uterotonics are immediate first-line steps.",
+"D": "Antibiotics address infection, not acute postpartum hemorrhage from atony."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "pre-eclampsia/eclampsia",
+"question_text": "A 28-year-old primigravida at 34 weeks gestation presents with a blood pressure of 160/110 mmHg, 3+ proteinuria, severe frontal headache, and hyperreflexia. What is the immediate priority nursing management?",
+"choices": [
+{"text": "Discharge home with instructions to rest and reduce salt intake", "is_correct": false},
+{"text": "Administer intravenous magnesium sulfate per protocol to prevent eclamptic seizures", "is_correct": true},
+{"text": "Encourage ambulation to reduce dependent edema in lower extremities", "is_correct": false},
+{"text": "Administer oral diuretics to rapidly lower blood pressure", "is_correct": false}
+],
+"rationale": "Severe pre-eclampsia with hyperreflexia and headache poses imminent risk of eclamptic seizures. Magnesium sulfate is the anticonvulsant of choice for seizure prophylaxis.",
+"distractor_rationales": {
+"A": "Discharging a client with severe pre-eclampsia is life-threatening and negligent.",
+"C": "Ambulation is inappropriate for severe pre-eclampsia requiring strict bed rest and monitoring.",
+"D": "Diuretics are generally avoided in pre-eclampsia due to contracted intravascular volume."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "obstetric emergencies",
+"question_text": "During a vertex delivery, the baby's head delivers but retracts tightly against the perineum (turtle sign), and gentle traction fails to deliver the shoulders. What obstetric emergency is occurring?",
+"choices": [
+{"text": "Breech presentation", "is_correct": false},
+{"text": "Shoulder dystocia", "is_correct": true},
+{"text": "Umbilical cord prolapse", "is_correct": false},
+{"text": "Placental abruption", "is_correct": false}
+],
+"rationale": "Shoulder dystocia occurs when the anterior shoulder impacts against the maternal pubic symphysis, recognized clinically by the turtle sign (retraction of the fetal head).",
+"distractor_rationales": {
+"A": "Breech presentation involves buttocks or feet presenting first.",
+"C": "Cord prolapse involves the umbilical cord descending ahead of the presenting part.",
+"D": "Placental abruption involves premature separation of a normally implanted placenta causing bleeding and pain."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal care",
+"question_text": "A nurse is assessing four pregnant clients attending antenatal clinic. Which client requires IMMEDIATE evaluation and medical referral?",
+"choices": [
+{"text": "A client at 16 weeks gestation reporting mild morning nausea and fatigue", "is_correct": false},
+{"text": "A client at 28 weeks gestation reporting painless bright red vaginal bleeding", "is_correct": true},
+{"text": "A client at 20 weeks gestation reporting mild lower backache after standing", "is_correct": false},
+{"text": "A client at 32 weeks gestation reporting mild dependent ankle edema at night", "is_correct": false}
+],
+"rationale": "Painless bright red vaginal bleeding in the second or third trimester is classic for placenta previa, a life-threatening obstetric emergency requiring immediate hospital admission without digital vaginal examination.",
+"distractor_rationales": {
+"A": "Morning nausea and fatigue are common normal physiological symptoms of early pregnancy.",
+"C": "Mild backache is common due to changing center of gravity and ligament relaxation.",
+"D": "Mild dependent ankle edema at the end of the day is a common physiological finding."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "labour stages",
+"question_text": "During the active phase of the first stage of labour, how frequently should the nurse assess and plot the fetal heart rate and maternal contractions using the partograph?",
+"choices": [
+{"text": "Fetal heart rate every 30 minutes; contractions every 30 minutes", "is_correct": true},
+{"text": "Fetal heart rate every 4 hours; contractions every 2 hours", "is_correct": false},
+{"text": "Fetal heart rate once every shift; contractions every hour", "is_correct": false},
+{"text": "Fetal heart rate continuously without checking contractions", "is_correct": false}
+],
+"rationale": "According to WHO partograph standards, fetal heart rate and uterine contractions during active labour must be assessed and recorded every 30 minutes.",
+"distractor_rationales": {
+"B": "Intervals of 2 to 4 hours are inadequate for active labor fetal surveillance.",
+"C": "Checking once per shift misses vital intrapartum fetal distress indicators.",
+"D": "Contractions must be monitored alongside fetal heart rate to assess labor progress."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "postpartum haemorrhage",
+"question_text": "What is the recommended active management of the third stage of labour (AMTSL) to prevent postpartum hemorrhage?",
+"choices": [
+{"text": "Immediate cord clamping, delayed oxytocin administration, and gentle uterine massage", "is_correct": false},
+{"text": "Administration of uterotonic (oxytocin 10 IU IM), controlled cord traction, and uterine massage", "is_correct": true},
+{"text": "Waiting for spontaneous placental expulsion without medications or cord traction", "is_correct": false},
+{"text": "Immediate manual removal of the placenta before giving any oxytocin", "is_correct": false}
+],
+"rationale": "AMTSL consists of three core steps: administration of a uterotonic within one minute of birth, controlled cord traction (CCT), and uterine massage after placental delivery.",
+"distractor_rationales": {
+"A": "Delayed oxytocin administration reduces the prophylactic efficacy against atony.",
+"C": "Waiting for spontaneous delivery is passive management, increasing PPH risk.",
+"D": "Manual removal is an invasive surgical procedure reserved for retained placenta, not routine AMTSL."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "pre-eclampsia/eclampsia",
+"question_text": "A client with severe pre-eclampsia is receiving an intravenous infusion of magnesium sulfate. Which clinical finding indicates impending magnesium toxicity requiring immediate cessation of the infusion?",
+"choices": [
+{"text": "Presence of deep tendon reflexes (patellar reflexes 2+)", "is_correct": false},
+{"text": "Absent patellar reflexes and respiratory rate of 10 breaths per minute", "is_correct": true},
+{"text": "Maternal urine output of 50 mL/hour with clear amber color", "is_correct": false},
+{"text": "Blood pressure reading of 130/85 mmHg", "is_correct": false}
+],
+"rationale": "Loss of deep tendon reflexes is the earliest sign of magnesium toxicity, followed closely by respiratory depression (<12 breaths/min). Calcium gluconate must be readily available as an antidote.",
+"distractor_rationales": {
+"A": "Normal deep tendon reflexes (2+) indicate therapeutic and safe serum magnesium levels.",
+"C": "Urine output of 50 mL/hr indicates adequate renal clearance of magnesium.",
+"D": "A stabilized blood pressure reflects therapeutic response."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "obstetric emergencies",
+"question_text": "A woman at 32 weeks gestation arrives at the labour ward following a severe motor vehicle accident, complaining of constant, severe dark abdominal pain and a rigid, board-like uterus. Fetal heart tones are absent. What condition is suspected?",
+"choices": [
+{"text": "Placenta previa", "is_correct": false},
+{"text": "Placental abruption (abruptio placentae)", "is_correct": true},
+{"text": "Uterine rupture", "is_correct": false},
+{"text": "Normal Braxton Hicks contractions", "is_correct": false}
+],
+"rationale": "Placental abruption is characterized by painful vaginal bleeding (or concealed hemorrhage), uterine tenderness, board-like rigidity, and fetal compromise following trauma or hypertension.",
+"distractor_rationales": {
+"A": "Placenta previa presents with painless bright red bleeding, not a rigid, painful uterus.",
+"C": "Uterine rupture usually occurs during labor with abnormal contours and loss of fetal parts, though severe trauma can cause it.",
+"D": "Braxton Hicks contractions are painless, irregular, and do not cause uterine rigidity or hemorrhage."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal care",
+"question_text": "During antenatal health education in Ghana, why is routine screening for sulfur-containing intermittent preventive treatment (IPTp-SP) for malaria emphasized for pregnant women?",
+"choices": [
+{"text": "To prevent gestational diabetes mellitus and high blood sugar", "is_correct": false},
+{"text": "To prevent malaria parasitemia, maternal anemia, and low birth weight", "is_correct": true},
+{"text": "To cure congenital syphilis and sexually transmitted infections", "is_correct": false},
+{"text": "To prevent pregnancy-induced hypertension and eclampsia", "is_correct": false}
+],
+"rationale": "Malaria in pregnancy causes severe maternal anemia, placental parasitemia, and low birth weight. IPTp-SP is administered at designated gestational intervals to clear asymptomatic parasitemia.",
+"distractor_rationales": {
+"A": "IPTp-SP is an antimalarial regimen, not a hypoglycemic agent.",
+"C": "Syphilis is screened using RPR/VDRL tests and treated with penicillin, not sulfadoxine-pyrimethamine.",
+"D": "Preventing hypertension involves calcium supplementation and blood pressure monitoring, not antimalarials."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "labour stages",
+"question_text": "A multiparous client in the labour ward feels an involuntary urge to push during contractions, and inspection reveals perineal bulging with visible crowning of the fetal head. What stage of labour is this?",
+"choices": [
+{"text": "First stage (latent phase)", "is_correct": false},
+{"text": "First stage (transition phase)", "is_correct": false},
+{"text": "Second stage of labour", "is_correct": true},
+{"text": "Third stage of labour", "is_correct": false}
+],
+"rationale": "Crowning and the urge to push are hallmark clinical signs indicating the commencement of the second stage of labour.",
+"distractor_rationales": {
+"A": "Latent phase occurs early in the first stage with 0-3 cm dilation.",
+"B": "Transition phase involves 8-10 cm dilation before crowning and pushing begin.",
+"D": "Third stage occurs after the baby has been successfully delivered."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "postpartum haemorrhage",
+"question_text": "Which of the following assessments is most critical in preventing delayed postpartum hemorrhage during the first 2 hours following placental delivery?",
+"choices": [
+{"text": "Assessing fundal height, uterine consistency, and lochia amount every 15 minutes", "is_correct": true},
+{"text": "Checking blood pressure and pulse rate only once at the end of the 2-hour observation", "is_correct": false},
+{"text": "Encouraging strict bed rest without palpating the abdomen", "is_correct": false},
+{"text": "Delaying breastfeeding initiation until 24 hours postpartum", "is_correct": false}
+],
+"rationale": "The fourth stage of labour (immediate 2-hour postpartum period) requires frequent monitoring (every 15 minutes) of uterine involution and lochia to detect early atony and hemorrhage.",
+"distractor_rationales": {
+"B": "Checking vital signs only once is unsafe; postpartum hemorrhage can cause rapid shock.",
+"C": "Palpating the uterus is mandatory to ensure it remains contracted.",
+"D": "Early breastfeeding stimulates endogenous oxytocin release, aiding uterine contraction."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "pre-eclampsia/eclampsia",
+"question_text": "A postpartum client who had severe pre-eclampsia experiences a sudden generalized tonic-clonic seizure on the postnatal ward. What is the immediate nursing priority?",
+"choices": [
+{"text": "Place a padded tongue depressor firmly between the client's teeth to prevent biting", "is_correct": false},
+{"text": "Ensure a patent airway, turn the client onto her side (recovery position), and administer oxygen", "is_correct": true},
+{"text": "Immediately restrain all four limbs to prevent physical injury from thrashing", "is_correct": false},
+{"text": "Leave the room immediately to call the attending physician", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, airway management and preventing aspiration by placing the client in the lateral recovery position are paramount. Never force objects into the mouth.",
+"distractor_rationales": {
+"A": "Placing objects in the mouth during a seizure causes dental damage and airway obstruction.",
+"C": "Restraining limbs can cause fractures and trauma during muscle contractions.",
+"D": "The nurse must stay with the client and call for emergency assistance rather than abandon her."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "obstetric emergencies",
+"question_text": "A pregnant woman at 38 weeks gestation presents with sudden, severe umbilical cord protruding from the vagina following spontaneous rupture of membranes. Fetal heart rate drops to 80 beats per minute. What is the immediate life-saving nursing action?",
+"choices": [
+{"text": "Walk the client immediately to the operating theatre on foot", "is_correct": false},
+{"text": "Gently push presenting fetal parts upward off the cord using sterile gloved fingers, place client in knee-chest position, and prepare for emergency Caesarean section", "is_correct": true},
+{"text": "Attempt to push the protruding umbilical cord back inside the amniotic cavity", "is_correct": false},
+{"text": "Apply warm abdominal compresses and wait for spontaneous delivery", "is_correct": false}
+],
+"rationale": "Umbilical cord prolapse causes acute fetal hypoxia due to cord compression. Relieving pressure manually and positioning the client in knee-chest or Trendelenburg position is critical while rushing to emergency C-section.",
+"distractor_rationales": {
+"A": "Walking the client worsens cord compression and fetal hypoxia.",
+"C": "Manipulating or pushing the cord itself causes vasospasm and trauma; relieve pressure on the presenting part instead.",
+"D": "Waiting leads to fetal death from anoxia."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PAD-311",
+"course_title": "Paediatric Nursing I",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": ["Growth & development", "immunisation (EPI)", "dehydration & ORS", "neonatal care", "common paediatric illnesses"],
+"questions": [
+{
+"topic": "Growth & development",
+"question_text": "During a routine child welfare clinic (CWC) in Ghana, a mother brings her 12-month-old infant. According to standard developmental milestones, what physical milestone should the nurse expect?",
+"choices": [
+{"text": "Birth weight has tripled and the child is pulling up to stand or taking first steps", "is_correct": true},
+{"text": "Birth weight has doubled and the child can ride a small tricycle", "is_correct": false},
+{"text": "The infant can run, jump, and climb stairs independently", "is_correct": false},
+{"text": "The infant can speak in full grammatical sentences of four to five words", "is_correct": false}
+],
+"rationale": "By 12 months (1 year), an infant's birth weight typically triples, head and chest circumferences are equal, and they pull to stand or take independent steps.",
+"distractor_rationales": {
+"B": "Birth weight doubling occurs around 5 months; tricycle riding is a preschool milestone.",
+"C": "Running and jumping are toddler milestones achieved around 2 years of age.",
+"D": "Full sentences are achieved in early childhood (3 to 4 years old)."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "immunisation (EPI)",
+"question_text": "According to the Ghana Expanded Programme on Immunization (EPI) schedule, which vaccine is administered intradermally at birth (or at first contact) leaving a characteristic scar?",
+"choices": [
+{"text": "Pentavalent vaccine (DTP-HepB-Hib)", "is_correct": false},
+{"text": "Bacillus Calmette-Guérin (BCG) vaccine", "is_correct": true},
+{"text": "Measles-Yellow Fever vaccine", "is_correct": false},
+{"text": "Inactivated Polio Vaccine (IPV)", "is_correct": false}
+],
+"rationale": "BCG is given intradermally at birth to protect against severe forms of tuberculosis (such as tubercular meningitis) and typically leaves a small scar.",
+"distractor_rationales": {
+"A": "Pentavalent vaccine is administered intramuscularly at 6, 10, and 14 weeks.",
+"C": "Measles-Yellow Fever vaccine is given subcutaneously at 9 and 18 months of age.",
+"D": "IPV is given intramuscularly or intradermally at 6 and 14 weeks."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "dehydration & ORS",
+"question_text": "A 14-month-old toddler is brought to the pediatric emergency unit with acute watery diarrhea, sunken eyes, lethargy, and skin pinch going back very slowly (>2 seconds). According to IMCI guidelines, how should this child be classified and managed?",
+"choices": [
+{"text": "No Dehydration; manage at home with increased fluids and continued feeding", "is_correct": false},
+{"text": "Some Dehydration; administer oral rehydration salts (ORS) in clinic over 4 hours", "is_correct": false},
+{"text": "Severe Dehydration; initiate urgent IV fluid resuscitation with Ringer's Lactate immediately", "is_correct": true},
+{"text": "Severe Dehydration; give immediate antidiarrheal syrup and discharge home", "is_correct": false}
+],
+"rationale": "Lethargy, sunken eyes, and very slow skin pinch (>2 seconds) are IMCI signs of Severe Dehydration, requiring emergency IV fluid resuscitation (Plan C).",
+"distractor_rationales": {
+"A": "No dehydration presents with normal alertness, eyes, and skin pinch.",
+"B": "Some dehydration presents with restlessness, sunken eyes, and skin pinch going back slowly (1-2 seconds).",
+"D": "Antidiarrheal syrups are strictly contraindicated in young children due to toxicity risks."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "neonatal care",
+"question_text": "A newborn infant delivered at 38 weeks gestation develops yellowish discoloration of the face and trunk on the third day of life. Serum bilirubin is normal for physiological jaundice. What is the essential nursing care management?",
+"choices": [
+{"text": "Immediately administer broad-spectrum intravenous antibiotics", "is_correct": false},
+{"text": "Encourage frequent and exclusive breastfeeding to promote regular bowel movements and bilirubin excretion", "is_correct": true},
+{"text": "Immediately perform an exchange blood transfusion", "is_correct": false},
+{"text": "Stop breastfeeding and switch permanently to infant formula", "is_correct": false}
+],
+"rationale": "Physiological jaundice in a healthy term newborn is managed by encouraging frequent exclusive breastfeeding to enhance gut motility and pass meconium, clearing bilirubin.",
+"distractor_rationales": {
+"A": "Antibiotics are indicated for sepsis, not benign physiological jaundice.",
+"C": "Exchange transfusion is reserved for severe pathological hyperbilirubinemia approaching kernicterus levels.",
+"D": "Stopping breastfeeding is unnecessary unless breast-milk jaundice is severe and prolonged, and even then, temporary cessation is rarely required."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "common paediatric illnesses",
+"question_text": "A mother brings her 2-year-old child to the clinic with cough, fast breathing (52 breaths/min), and chest indrawing. According to IMCI guidelines, what is the appropriate classification and treatment?",
+"choices": [
+{"text": "No Pneumonia: Cough or Cold; give soothing home remedies", "is_correct": false},
+{"text": "Pneumonia; prescribe oral amoxicillin and counsel mother on danger signs", "is_correct": true},
+{"text": "Severe Pneumonia or Very Severe Disease; refer urgently to hospital for oxygen", "is_correct": false},
+{"text": "Acute Asthma; administer nebulized salbutamol only", "is_correct": false}
+],
+"rationale": "Chest indrawing combined with fast breathing (52 breaths/min in a 1-to-5-year-old) classifies as Pneumonia under IMCI, treated with oral amoxicillin.",
+"distractor_rationales": {
+"A": "No pneumonia presents with cough/cold without fast breathing or chest indrawing.",
+"C": "Severe pneumonia presents with central cyanosis, inability to drink, or stridor in calm child.",
+"D": "Asthma presents with wheezing and prolonged expiration, whereas chest indrawing points to pneumonia."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "common paediatric illnesses",
+"question_text": "A nurse is triaging four pediatric clients at a district hospital in Ghana. Which child should be assessed FIRST?",
+"choices": [
+{"text": "A 3-year-old child with acute watery diarrhea, alert, and drinking fluids eagerly", "is_correct": false},
+{"text": "A 6-month-old infant with high fever, lethargy, a bulging fontanelle, and neck stiffness", "is_correct": true},
+{"text": "A 2-year-old child with a mild runny nose and cough, active and playing", "is_correct": false},
+{"text": "A 4-year-old child with a small superficial abrasion on the knee", "is_correct": false}
+],
+"rationale": "Lethargy, bulging fontanelle, and neck stiffness in an infant indicate acute bacterial meningitis, a life-threatening pediatric emergency requiring immediate lumbar puncture and IV antibiotics.",
+"distractor_rationales": {
+"A": "An alert child drinking fluids eagerly has mild or no dehydration and is stable.",
+"C": "A child with a runny nose and active play behavior has a mild upper respiratory infection.",
+"D": "A superficial abrasion requires basic wound cleaning and is non-urgent."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Growth & development",
+"question_text": "At what typical age should an infant be able to sit unsupported without assistance?",
+"choices": [
+{"text": "2 months", "is_correct": false},
+{"text": "4 months", "is_correct": false},
+{"text": "6 to 8 months", "is_correct": true},
+{"text": "12 to 15 months", "is_correct": false}
+],
+"rationale": "Gross motor development dictates that infants achieve unsupported sitting typically between 6 and 8 months of age.",
+"distractor_rationales": {
+"A": "At 2 months, infants can hold their head up briefly when prone.",
+"B": "At 4 months, infants have good head control and roll from front to back.",
+"D": "By 12-15 months, toddlers are walking independently."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "immunisation (EPI)",
+"question_text": "A mother brings her 10-month-old infant to the clinic who missed her measles vaccination scheduled at 9 months. What should the nurse do?",
+"choices": [
+{"text": "Refuse vaccination and tell the mother she has missed the opportunity forever", "is_correct": false},
+{"text": "Administer the measles vaccine immediately now, and schedule the second dose for 18 months", "is_correct": true},
+{"text": "Wait until the child turns 5 years old before giving any catch-up doses", "is_correct": false},
+{"text": "Give two doses of measles vaccine on the same day", "is_correct": false}
+],
+"rationale": "Under EPI catch-up guidelines, missed vaccines should be administered at the earliest opportunity. The first dose is given now, and the second dose follows at the scheduled interval.",
+"distractor_rationales": {
+"A": "Refusing vaccination leaves the child vulnerable to preventable lethal epidemics.",
+"C": "Waiting years leaves the infant unprotected during peak measles susceptibility.",
+"D": "Double-dosing on the same day is unnecessary and violates dosage protocols."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "dehydration & ORS",
+"question_text": "What is the primary mechanism of action of Oral Rehydration Salts (ORS) solution in treating acute dehydrating diarrhea?",
+"choices": [
+{"text": "Sodium-glucose cotransport in the small intestine enhances rapid water and electrolyte absorption", "is_correct": true},
+{"text": "Paralyzing intestinal peristalsis to stop bowel movements completely", "is_correct": false},
+{"text": "Killing bacterial pathogens directly within the stomach lumen", "is_correct": false},
+{"text": "Coating the gastric mucosa to prevent acid erosion", "is_correct": false}
+],
+"rationale": "ORS utilizes sodium-glucose cotransport mechanisms in the mucosal cells of the small intestine, where glucose molecules facilitate the active absorption of sodium and water.",
+"distractor_rationales": {
+"B": "ORS does not paralyze peristalsis; antidiarrheals do that but are dangerous in children.",
+"C": "ORS does not possess antibacterial bactericidal properties.",
+"D": "ORS does not act as a gastric mucosal coating agent."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "neonatal care",
+"question_text": "What is the primary purpose of applying Tetracycline eye ointment to a newborn's eyes immediately after birth?",
+"choices": [
+{"text": "To prevent neonatal ophthalmia neonatorum caused by gonococcal or chlamydial infection", "is_correct": true},
+{"text": "To improve visual acuity and prevent congenital myopia", "is_correct": false},
+{"text": "To prevent physiological jaundice and hyperbilirubinemia", "is_correct": false},
+{"text": "To stimulate tear duct development in premature infants", "is_correct": false}
+],
+"rationale": "Prophylactic application of eye ointment (Credé's method) protects newborn eyes from ophthalmia neonatorum acquired during passage through an infected birth canal.",
+"distractor_rationales": {
+"B": "Eye ointment has no impact on refractive visual error development.",
+"C": "Hyperbilirubinemia is related to liver metabolism and hemolysis, not eye prophylaxis.",
+"D": "Tear duct patency is unrelated to antibiotic eye ointment."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "common paediatric illnesses",
+"question_text": "A 3-year-old child is admitted with severe Plasmodium falciparum malaria. The child is unconscious and has experienced two generalized seizures today. What clinical classification does this represent?",
+"choices": [
+{"text": "Uncomplicated Malaria", "is_correct": false},
+{"text": "Severe Malaria (Cerebral Malaria)", "is_correct": true},
+{"text": "Mild viral upper respiratory infection", "is_correct": false},
+{"text": "Simple febrile seizure without infection", "is_correct": false}
+],
+"rationale": "Impaired consciousness (coma) and repeated seizures in the presence of malaria parasites classify the condition as severe (cerebral) malaria, a medical emergency.",
+"distractor_rationales": {
+"A": "Uncomplicated malaria presents with fever and chills without signs of organ dysfunction or coma.",
+"C": "Viral infections do not present with malaria parasitemia and severe neurological impairment.",
+"D": "Febrile seizures occur with fever but cerebral malaria involves specific parasite sequestration in cerebral capillaries."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth & development",
+"question_text": "A mother expresses concern that her 18-month-old toddler says only single words and points when wanting objects. How should the nurse advise the mother?",
+"choices": [
+{"text": "Inform her this is abnormal and refer the child immediately for psychiatric evaluation", "is_correct": false},
+{"text": "Reassure her that single-word vocabulary and pointing are normal developmental milestones for an 18-month-old", "is_correct": true},
+{"text": "Advise her to enroll the child in intensive speech therapy immediately", "is_correct": false},
+{"text": "Tell her that children should speak full sentences by 12 months", "is_correct": false}
+],
+"rationale": "By 18 months, toddlers typically have a vocabulary of 10-25 single words and use pointing to communicate desires, which is completely normal.",
+"distractor_rationales": {
+"A": "Psychiatric referral for normal milestones causes unnecessary parental anxiety.",
+"C": "Speech therapy is unwarranted for normal language acquisition.",
+"D": "Full sentences are not expected at 12 months of age."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "immunisation (EPI)",
+"question_text": "Which cold chain equipment is essential for storing and maintaining vaccine potency at health centers and CHPS compounds?",
+"choices": [
+{"text": "Standard household food refrigerator without temperature logs", "is_correct": false},
+{"text": "Ice-lined vaccine refrigerators and vaccine carriers with ice packs", "is_correct": true},
+{"text": "Deep freezers set to minus 20 degrees Celsius for all vaccines", "is_correct": false},
+{"text": "Open cardboard boxes stored at room temperature in the consulting room", "is_correct": false}
+],
+"rationale": "Vaccines are biological products sensitive to heat and freezing. Ice-lined refrigerators and validated vaccine carriers maintain required temperatures (+2°C to +8°C).",
+"distractor_rationales": {
+"A": "Household refrigerators experience wide temperature fluctuations, risking vaccine spoilage.",
+"C": "Freezing destroys vaccines like DTP, Hepatitis B, and tetanus toxoid.",
+"D": "Room temperature storage destroys vaccine potency instantly."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "dehydration & ORS",
+"question_text": "When instructing a mother on preparing home-made ORS or sugar-salt solution (SSS) when packaged ORS is unavailable, what is the correct standard ratio?",
+"choices": [
+{"text": "One flat teaspoon of salt and eight level teaspoons of sugar in one litre of clean drinking water", "is_correct": true},
+{"text": "One tablespoon of salt and one tablespoon of sugar in a half cup of water", "is_correct": false},
+{"text": "Equal parts salt and sugar dissolved in boiling hot milk", "is_correct": false},
+{"text": "Ten spoons of salt and one spoon of sugar in two litres of water", "is_correct": false}
+],
+"rationale": "The standard WHO formula for home fluid preparation is one level teaspoon of salt and eight level teaspoons of sugar dissolved in one litre of clean drinking water ('one kerosene tin' or measured jugs).",
+"distractor_rationales": {
+"B": "Incorrect proportions lead to dangerous hypernatremia or ineffective rehydration.",
+"C": "Milk is not used for initial emergency oral rehydration solutions.",
+"D": "Excessive salt causes severe hypernatremic dehydration and brain damage in infants."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "common paediatric illnesses",
+"question_text": "A nurse is assessing four pediatric clients in a community clinic. Which client requires immediate physician referral for urgent medical care?",
+"choices": [
+{"text": "An infant with mild diaper dermatitis responding to zinc oxide ointment", "is_correct": false},
+{"text": "A toddler with acute measles presenting with severe corneal ulceration and mouth sores", "is_correct": true},
+{"text": "A child with a healing insect bite on the forearm", "is_correct": false},
+{"text": "A child receiving routine vitamin A supplementation at 12 months", "is_correct": false}
+],
+"rationale": "Corneal ulceration in measles indicates severe vitamin A deficiency and risks permanent blindness, requiring immediate ophthalmological and medical intervention.",
+"distractor_rationales": {
+"A": "Mild diaper dermatitis is managed with barrier ointments and hygiene education.",
+"C": "A healing insect bite requires basic hygiene monitoring.",
+"D": "Vitamin A supplementation is routine preventive care."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PFC-311",
+"course_title": "Patient/Family-Centred Care Study",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": ["Family-centred care principles", "communication", "patient advocacy", "cultural sensitivity", "care study methodology"],
+"questions": [
+{
+"topic": "Family-centred care principles",
+"question_text": "What is the core philosophical foundation of Patient- and Family-Centred Care (PFCC) in nursing practice?",
+"choices": [
+{"text": "The physician makes all clinical decisions without consulting family members.", "is_correct": false},
+{"text": "Mutually beneficial partnerships are established among healthcare providers, patients, and families.", "is_correct": true},
+{"text": "Visiting hours are strictly restricted to one hour per week to maintain ward silence.", "is_correct": false},
+{"text": "Family members are treated strictly as visitors with no role in care planning.", "is_correct": false}
+],
+"rationale": "PFCC is founded on dignity, respect, information sharing, participation, and collaboration between healthcare teams, patients, and families.",
+"distractor_rationales": {
+"A": "Paternalistic physician-led models contradict patient- and family-centred care.",
+"C": "Restricted visiting hours impede family collaboration and support.",
+"D": "Treating families merely as visitors ignores their vital caregiving role."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "communication",
+"question_text": "A nurse is communicating with a grieving Ghanaian mother whose child has a terminal diagnosis. Which therapeutic communication technique is most appropriate?",
+"choices": [
+{"text": "Offering false reassurance by saying, 'Everything will be fine tomorrow.'", "is_correct": false},
+{"text": "Using active listening, open-ended questions, and allowing silent presence to express empathy", "is_correct": true},
+{"text": "Changing the topic quickly to avoid emotional distress and crying", "is_correct": false},
+{"text": "Telling the mother she should remain strong for her other children", "is_correct": false}
+],
+"rationale": "Active listening, presence, and open communication validate the mother's grief and foster a trusting therapeutic nurse-client relationship.",
+"distractor_rationales": {
+"A": "False reassurance invalidates genuine client emotional pain.",
+"C": "Changing the topic cuts off therapeutic communication and displays discomfort.",
+"D": "Telling someone to remain strong suppresses natural grief responses."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "patient advocacy",
+"question_text": "A client expresses reluctance to undergo a prescribed surgical procedure because they do not fully understand the risks, but the attending surgeon insists the client sign the consent form immediately. What is the nurse's advocacy role?",
+"choices": [
+{"text": "Force the client to sign the form to prevent delaying the operating theatre schedule", "is_correct": false},
+{"text": "Act as a client advocate by halting the signing process and requesting the surgeon provide further clarification", "is_correct": true},
+{"text": "Sign the consent form as a witness on behalf of the hesitant client", "is_correct": false},
+{"text": "Ignore the interaction since surgical consent is solely the doctor's responsibility", "is_correct": false}
+],
+"rationale": "Patient advocacy requires the nurse to ensure the client's rights to informed decision-making and autonomy are respected, halting consent if understanding is lacking.",
+"distractor_rationales": {
+"A": "Coercing a client violates informed consent ethics and patient autonomy.",
+"C": "Witnessing consent requires verifying voluntary and informed agreement, not overriding hesitation.",
+"D": "Ignoring lack of understanding breaches the nurse's advocacy and professional duty."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "cultural sensitivity",
+"question_text": "A patient admitted to a regional hospital insists on using traditional herbal enemas alongside prescribed hospital medications. How should the culturally sensitive nurse respond?",
+"choices": [
+{"text": "Scold the patient and threaten immediate discharge from the hospital ward", "is_correct": false},
+{"text": "Explore the patient's beliefs respectfully, educate on potential herb-drug interactions, and collaborate on a safe care plan", "is_correct": true},
+{"text": "Quietly confiscate and throw away all herbal preparations found in the patient's bedside locker", "is_correct": false},
+{"text": "Ignore the herbal practice completely without documenting or assessing risks", "is_correct": false}
+],
+"rationale": "Cultural sensitivity involves respecting traditional health beliefs while providing non-judgmental education regarding clinical safety and potential pharmacological interactions.",
+"distractor_rationales": {
+"A": "Scolding damages trust and drives clients away from healthcare facilities.",
+"C": "Confiscating personal property without discussion violates patient rights and trust.",
+"D": "Ignoring herb-drug interactions risks patient safety and adverse clinical outcomes."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "care study methodology",
+"question_text": "What is the primary objective of conducting a nursing care study on a single patient family unit?",
+"choices": [
+{"text": "To publish a randomized controlled clinical trial for international pharmaceutical companies", "is_correct": false},
+{"text": "To analyze holistic health needs, apply the nursing process in depth, and evaluate comprehensive family care", "is_correct": true},
+{"text": "To replace standard hospital shift handover documentation", "is_correct": false},
+{"text": "To diagnose complex medical pathologies independently without physicians", "is_correct": false}
+],
+"rationale": "Nursing care studies provide comprehensive, holistic examinations of individual and family health experiences, linking theory to clinical practice.",
+"distractor_rationales": {
+"A": "Care studies are educational clinical analyses, not large pharmaceutical trials.",
+"C": "Care studies serve academic and reflective clinical evaluation purposes, not shift reports.",
+"D": "Medical diagnosis remains outside the scope of nursing care study methodology."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "family-centred care principles",
+"question_text": "A nurse is caring for an elderly client with dementia in a medical ward. The family wishes to participate actively in feeding and personal care. What is the nurse's best approach?",
+"choices": [
+{"text": "Ban family members from entering the ward during mealtimes to maintain efficiency", "is_correct": false},
+{"text": "Incorporate family members into the daily care plan, providing guidance and recognizing their valuable support role", "is_correct": true},
+{"text": "Insist that hospital nursing staff handle 100% of care without family interference", "is_correct": false},
+{"text": "Delegate all professional nursing duties entirely to the visiting family members", "is_correct": false}
+],
+"rationale": "Family participation reduces anxiety for clients with dementia and aligns with family-centred care principles by recognizing families as partners in care.",
+"distractor_rationales": {
+"A": "Banning family creates distress for both client and family.",
+"C": "Excluding willing families misses opportunities for holistic support.",
+"D": "Family members assist with supportive care but professional nursing duties remain nurse-accountable."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "communication",
+"question_text": "Which barrier represents a significant obstacle to effective nurse-client communication in a multi-ethnic clinical setting like Ghana?",
+"choices": [
+{"text": "Speaking the local dialect or language understood fluently by the client", "is_correct": false},
+{"text": "Language discordance and the use of complex medical jargon without explanation", "is_correct": true},
+{"text": "Maintaining appropriate eye contact and active listening posture", "is_correct": false},
+{"text": "Allowing adequate time for the client to formulate responses", "is_correct": false}
+],
+"rationale": "Language barriers and medical jargon prevent clients from understanding health information, undermining informed consent and therapeutic communication.",
+"distractor_rationales": {
+"A": "Speaking the local dialect actually enhances communication.",
+"C": "Appropriate eye contact and listening facilitate trust.",
+"D": "Allowing adequate time encourages expression rather than creating barriers."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "patient advocacy",
+"question_text": "A nurse notices that a colleague is consistently documenting vital signs that were never actually measured. What is the nurse's professional advocacy and ethical obligation?",
+"choices": [
+{"text": "Ignore the practice to maintain friendly peer relationships on the ward", "is_correct": false},
+{"text": "Report the falsification of records through proper professional channels to protect client safety", "is_correct": true},
+{"text": "Falsify records as well so that the ward documentation appears consistent", "is_correct": false},
+{"text": "Publicly confront the colleague on social media platforms", "is_correct": false}
+],
+"rationale": "Falsifying clinical records endangers patient safety and violates professional ethics. The nurse has a duty to report unsafe practices through proper institutional channels.",
+"distractor_rationales": {
+"A": "Ignoring unsafe practice makes the nurse complicit in professional misconduct.",
+"C": "Falsifying records compounds illegal and unethical behavior.",
+"D": "Public social media posting breaches patient confidentiality and professional conduct codes."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "cultural sensitivity",
+"question_text": "In certain Ghanaian communities, mental health illness is frequently attributed strictly to supernatural curses or witchcraft. How should the psychiatric nurse integrate cultural sensitivity with evidence-based care?",
+"choices": [
+{"text": "Ridicule the family's beliefs and insist that traditional explanations are completely worthless", "is_correct": false},
+{"text": "Acknowledge the family's perspective respectfully while introducing psychiatric education and evidence-based medical treatment", "is_correct": true},
+{"text": "Discharge the client immediately so they can seek traditional spiritual healing exclusively", "is_correct": false},
+{"text": "Refuse to allow family members to visit the psychiatric unit", "is_correct": false}
+],
+"rationale": "Respectful listening combined with empathetic health education bridges cultural beliefs with evidence-based psychiatric care, fostering treatment adherence.",
+"distractor_rationales": {
+"A": "Ridicule alienates families and destroys therapeutic alliance.",
+"C": "Discharging clients abandon vulnerable individuals needing psychiatric care.",
+"D": "Restricting visitation harms family support networks in mental health recovery."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "care study methodology",
+"question_text": "When conducting a family care study, what is the significance of constructing a genogram?",
+"choices": [
+{"text": "It maps out architectural building designs of the family home.", "is_correct": false},
+{"text": "It illustrates family structure, intergenerational relationships, and hereditary health patterns over multiple generations.", "is_correct": true},
+{"text": "It serves as a financial ledger for hospital bill payments.", "is_correct": false},
+{"text": "It records exact daily meal menus consumed by the patient.", "is_correct": false}
+],
+"rationale": "A genogram is a pictorial display of a family's relationships and medical history across generations, aiding genetic and psychosocial risk identification.",
+"distractor_rationales": {
+"A": "Genograms map family lineages, not architectural blueprints.",
+"C": "Financial tracking is handled by billing departments, not clinical genograms.",
+"D": "Nutritional intakes are recorded in diet logs, not genograms."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "family-centred care principles",
+"question_text": "Which nursing action best demonstrates empowerment of a family caring for a child with chronic asthma?",
+"choices": [
+{"text": "Performing all treatments secretly so the family remains dependent on hospital staff", "is_correct": false},
+{"text": "Teaching parents how to recognize asthma triggers, use metered-dose inhalers correctly, and execute an action plan", "is_correct": true},
+{"text": "Telling parents they have no role in managing chronic childhood conditions", "is_correct": false},
+{"text": "Discouraging parents from asking questions during ward rounds", "is_correct": false}
+],
+"rationale": "Family empowerment involves knowledge transfer and skills training so families can manage chronic conditions confidently at home.",
+"distractor_rationales": {
+"A": "Creating dependency undermines family self-efficacy.",
+"C": "Excluding parents contradicts family-centred care.",
+"D": "Discouraging questions violates communication and collaborative principles."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "communication",
+"question_text": "A nurse uses the SBAR (Situation, Background, Assessment, Recommendation) tool during a telephone handover to a physician. What is the primary benefit of this communication structure?",
+"choices": [
+{"text": "It ensures concise, standardized, and accurate transmission of critical clinical information, enhancing patient safety.", "is_correct": true},
+{"text": "It eliminates the need for any written nursing notes in the patient chart.", "is_correct": false},
+{"text": "It allows nurses to prescribe medications independently over the phone.", "is_correct": false},
+{"text": "It prolongs telephone conversations to ensure all social gossip is discussed.", "is_correct": false}
+],
+"rationale": "SBAR provides a standardized framework that standardizes clinical communication, reducing misunderstandings and errors during urgent handovers.",
+"distractor_rationales": {
+"B": "SBAR verbal handovers complement written records, not replace them.",
+"C": "Nurses do not prescribe medications; SBAR facilitates reporting to prescribers.",
+"D": "SBAR is designed for conciseness and efficiency, not lengthy discussions."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "patient advocacy",
+"question_text": "A client is scheduled for a bilateral mastectomy. On the morning of surgery, the nurse notices the client is crying and stating, 'I really do not want this surgery, but my husband forced me to agree.' What is the nurse's priority action?",
+"choices": [
+{"text": "Tell the client her husband knows best and wheel her to theatre immediately", "is_correct": false},
+{"text": "Halt the preparation, provide a supportive listening ear, inform the surgical team, and uphold the client's right to withdraw consent", "is_correct": true},
+{"text": "Call the husband to the ward to argue with the client", "is_correct": false},
+{"text": "Document nothing and pretend the conversation never happened", "is_correct": false}
+],
+"rationale": "Informed consent must be entirely voluntary and free from coercion. Acting as an advocate, the nurse must halt procedures when consent is proven to be coerced.",
+"distractor_rationales": {
+"A": "Coercing a client into unwanted surgery violates ethical principles and assault laws.",
+"C": "Calling family members to pressure a hesitant client violates autonomy.",
+"D": "Failing to act on coerced consent is a severe breach of professional duty."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "cultural sensitivity",
+"question_text": "During postnatal home visits in a rural Ghanaian community, a mother expresses intent to discard colostrum (the first yellowish breast milk) believing it is 'spoiled' or 'bad' for the newborn. What is the nurse's best intervention?",
+"choices": [
+{"text": "Support her decision and encourage feeding only sweetened water for the first week", "is_correct": false},
+{"text": "Provide gentle, respectful health education explaining that colostrum is 'liquid gold' rich in protective antibodies and essential nutrients", "is_correct": true},
+{"text": "Report her to local authorities for child abuse and neglect", "is_correct": false},
+{"text": "Confiscate the baby immediately until colostrum production ceases", "is_correct": false}
+],
+"rationale": "Cultural health beliefs regarding colostrum require respectful education explaining its immunological and nutritional value rather than condemnation.",
+"distractor_rationales": {
+"A": "Supporting discard of colostrum deprives the infant of vital immunological protection.",
+"C": "Reporting for cultural misunderstandings without education is punitive and unhelpful.",
+"D": "Separating mother and infant is extreme and unjustified."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "care study methodology",
+"question_text": "In a nursing care study report, which section evaluates the effectiveness of nursing interventions implemented for the client?",
+"choices": [
+{"text": "Introduction and background demographics", "is_correct": false},
+{"text": "Evaluation phase of the nursing process", "is_correct": true},
+{"text": "Literature review of disease pathology", "is_correct": false},
+{"text": "Hospital billing summary sheet", "is_correct": false}
+],
+"rationale": "The evaluation section assesses whether patient goals were met, analyzing the impact of nursing interventions.",
+"distractor_rationales": {
+"A": "Introduction provides context and biographical data.",
+"C": "Literature review explores disease pathophysiology and theory.",
+"D": "Billing summaries pertain to hospital administration, not care study clinical evaluation."
+},
+"difficulty": "KNOWLEDGE"
+}
+]
+},
+{
+"course_code": "CBR-322",
+"course_title": "Community-Based Rehabilitation",
+"category": "COMMUNITY",
+"semester": "S2",
+"topics": ["Disability concepts", "CBR principles", "mobility aids", "community reintegration", "assistive devices"],
+"questions": [
+{
+"topic": "Disability concepts",
+"question_text": "According to the World Health Organization (WHO) International Classification of Functioning, Disability and Health (ICF), what is the definition of 'disability'?",
+"choices": [
+{"text": "A purely medical pathology that can be cured entirely through surgical intervention", "is_correct": false},
+{"text": "An umbrella term for impairments, activity limitations, and participation restrictions resulting from interaction with environmental barriers", "is_correct": true},
+{"text": "Personal laziness and lack of individual willpower", "is_correct": false},
+{"text": "Permanent institutionalization in specialized residential care facilities", "is_correct": false}
+],
+"rationale": "The ICF defines disability as a multidimensional dynamic interaction between health conditions and contextual environmental and personal factors.",
+"distractor_rationales": {
+"A": "The pure medical model views disability solely as a biological defect, which ICF expands.",
+"C": "Attributing disability to laziness reflects stigmatizing social misconceptions.",
+"D": "Institutionalization contradicts modern community-based rehabilitation goals."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "CBR principles",
+"question_text": "What is the primary philosophy underpinning Community-Based Rehabilitation (CBR) programs in developing countries like Ghana?",
+"choices": [
+{"text": "Isolating persons with disabilities in centralized urban rehabilitation centers", "is_correct": false},
+{"text": "Empowering individuals with disabilities, promoting equal opportunities, and utilizing local community resources", "is_correct": true},
+{"text": "Relying exclusively on foreign medical missions for funding and care", "is_correct": false},
+{"text": "Providing lifelong financial welfare grants without promoting independence", "is_correct": false}
+],
+"rationale": "CBR focuses on equalization of opportunities, poverty reduction, and inclusion by mobilizing local community structures and empowering persons with disabilities.",
+"distractor_rationales": {
+"A": "Isolation in urban centers contradicts community-based principles.",
+"C": "Relying solely on foreign missions undermines local sustainability.",
+"D": "Lifelong dependency without empowerment opposes CBR philosophy."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "mobility aids",
+"question_text": "A community health nurse is fitting a stroke survivor with right-sided hemiparesis for a walking cane. Which instruction is correct for proper cane use?",
+"choices": [
+{"text": "Hold the cane on the affected (weak) side and move it simultaneously with the affected leg", "is_correct": false},
+{"text": "Hold the cane on the unaffected (strong) side and move it forward along with the affected leg", "is_correct": true},
+{"text": "Hold the cane in both hands and hop forward across door thresholds", "is_correct": false},
+{"text": "Place all body weight directly onto the cane while dragging both legs behind", "is_correct": false}
+],
+"rationale": "The cane is held on the unaffected (strong) side to provide support opposite the weak leg, moving the cane and affected leg together for balanced weight distribution.",
+"distractor_rationales": {
+"A": "Holding the cane on the weak side fails to provide proper contralateral support.",
+"C": "Using a cane in both hands is incorrect for single-point or quad canes.",
+"D": "Placing all weight on the cane without leg support causes instability and falls."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "community reintegration",
+"question_text": "A young adult client who suffered a traumatic spinal cord injury resulting in paraplegia is preparing for discharge back to his rural community in Ghana. Which intervention best supports successful community reintegration?",
+"choices": [
+{"text": "Advise him to remain indoors permanently to avoid community stigma and staring", "is_correct": false},
+{"text": "Assess home accessibility, educate family on barrier-free living, and link him with local disabled people's organizations (DPOs)", "is_correct": true},
+{"text": "Arrange immediate permanent institutional admission in a city nursing home", "is_correct": false},
+{"text": "Discourage vocational retraining since employment is impossible with paraplegia", "is_correct": false}
+],
+"rationale": "Successful reintegration requires environmental modifications, family education, and connecting individuals with peer support organizations like DPOs.",
+"distractor_rationales": {
+"A": "Remaining indoors promotes social isolation and depression.",
+"C": "Institutionalization conflicts with community-based rehabilitation goals.",
+"D": "Vocational rehabilitation is a core pillar of CBR empowering economic independence."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "assistive devices",
+"question_text": "A community nurse is assessing a visually impaired client in a Ghanaian village. Which low-cost assistive device or strategy is most beneficial for independent indoor navigation?",
+"choices": [
+{"text": "A white cane and tactile orientation training", "is_correct": true},
+{"text": "A motorized wheelchair with GPS tracking", "is_correct": false},
+{"text": "Prescription bifocal reading glasses", "is_correct": false},
+{"text": "Complete visual deprivation blindfolds", "is_correct": false}
+],
+"rationale": "The white cane is the standard, effective, low-cost mobility tool facilitating safe independent navigation for individuals with visual impairments.",
+"distractor_rationales": {
+"B": "Motorized wheelchairs are designed for mobility impairments, not visual impairment.",
+"C": "Bifocal glasses do not assist clients with total or severe visual impairment.",
+"D": "Blindfolds induce darkness and worsen functional independence."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disability concepts",
+"question_text": "A community health nurse encounters a community member who believes a child's cerebral palsy is a curse from river deities. What is the nurse's priority action?",
+"choices": [
+{"text": "Agree with the spiritual curse theory to maintain rapport", "is_correct": false},
+{"text": "Provide respectful health education explaining the medical etiology of cerebral palsy while addressing stigma sensitively", "is_correct": true},
+{"text": "Insult the family's traditional beliefs publicly", "is_correct": false},
+{"text": "Ignore the child's condition and offer no assistance", "is_correct": false}
+],
+"rationale": "Addressing stigma requires patient, respectful education clarifying biological causes of disability while maintaining cultural empathy.",
+"distractor_rationales": {
+"A": "Validating harmful superstitions reinforces discrimination against children with disabilities.",
+"C": "Insulting beliefs alienates families from healthcare.",
+"D": "Ignoring the child constitutes professional neglect."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "CBR principles",
+"question_text": "What are the five core pillars of the Community-Based Rehabilitation (CBR) matrix as outlined by the WHO?",
+"choices": [
+{"text": "Health, Education, Livelihood, Social, and Empowerment", "is_correct": true},
+{"text": "Surgery, Pharmacy, Radiology, Laboratory, and Administration", "is_correct": false},
+{"text": "Primary, Secondary, Tertiary, Quaternary, and Palliative", "is_correct": false},
+{"text": "Nutrition, Sanitation, Immunization, Malaria, and Tuberculosis", "is_correct": false}
+],
+"rationale": "The WHO CBR matrix comprises five key developmental pillars: Health, Education, Livelihood, Social inclusion, and Empowerment.",
+"distractor_rationales": {
+"B": "These represent hospital departments rather than CBR developmental pillars.",
+"C": "These denote levels of healthcare delivery, not CBR matrices.",
+"D": "These are public health disease control priorities."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "mobility aids",
+"question_text": "A nurse is teaching an elderly client with bilateral osteoarthritis of the knees how to use a Zimmer frame (walker). What is the correct technique?",
+"choices": [
+{"text": "Lift or push the walker forward 1 step, step forward into the frame with the weaker leg first, then follow with the stronger leg", "is_correct": true},
+{"text": "Run rapidly across the room while leaning all body weight on the top crossbar", "is_correct": false},
+{"text": "Slide the walker backward while hopping forward on one foot", "is_correct": false},
+{"text": "Use the walker like a skateboard by pushing it rapidly ahead without stepping", "is_correct": false}
+],
+"rationale": "Walker technique involves moving the frame forward, stepping into it with the weaker leg first, and following with the stronger leg for stability.",
+"distractor_rationales": {
+"B": "Running with a walker creates severe fall risks.",
+"C": "Sliding backward or hopping compromises balance.",
+"D": "Using a walker as a skateboard causes the frame to slide out from under the client."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "community reintegration",
+"question_text": "Which community stakeholder group is most crucial to engage when advocating for inclusive education and accessibility ramps for disabled children in a local district?",
+"choices": [
+{"text": "Local traditional rulers, Assembly members, school headmasters, and parent-teacher associations (PTAs)", "is_correct": true},
+{"text": "International tourists visiting wildlife reserves", "is_correct": false},
+{"text": "Commercial transport union drivers exclusively", "is_correct": false},
+{"text": "Foreign embassy personnel residing in the capital city", "is_correct": false}
+],
+"rationale": "Local leaders, PTAs, and municipal authorities hold community influence and decision-making power to build accessible infrastructure and promote inclusive education.",
+"distractor_rationales": {
+"B": "Tourists have no jurisdiction over local school infrastructure.",
+"C": "Transport drivers manage vehicles, not school building construction.",
+"D": "Foreign embassies do not manage local community school development."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "assistive devices",
+"question_text": "What is the primary purpose of providing an adapted seating chair or postural support device for a child with severe cerebral palsy?",
+"choices": [
+{"text": "To permanently immobilize the child so they never move again", "is_correct": false},
+{"text": "To promote proper spinal alignment, prevent contractures, and facilitate participation in daily activities", "is_correct": true},
+{"text": "To cure the underlying neurological brain lesion completely", "is_correct": false},
+{"text": "To replace the need for parental affection and social interaction", "is_correct": false}
+],
+"rationale": "Postural support devices stabilize seating alignment, prevent musculoskeletal deformities, and encourage engagement in social and educational activities.",
+"distractor_rationales": {
+"A": "Devices aim to support function, not cause rigid immobilization.",
+"C": "Assistive devices manage physical symptoms, not cure brain lesions.",
+"D": "Devices complement, never replace, human interaction and care."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Disability concepts",
+"question_text": "What distinguishes the 'social model of disability' from the traditional 'medical model'?",
+"choices": [
+{"text": "The social model views disability as a personal tragedy requiring medical cure.", "is_correct": false},
+{"text": "The social model attributes disability to societal barriers and attitudinal discrimination rather than individual physiological impairment.", "is_correct": true},
+{"text": "The social model focuses exclusively on surgical correction in hospitals.", "is_correct": false},
+{"text": "The medical model emphasizes community empowerment and human rights.", "is_correct": false}
+],
+"rationale": "The social model shifts focus from fixing the individual's body (medical model) to removing environmental and societal barriers that disable people.",
+"distractor_rationales": {
+"A": "Viewing disability as personal tragedy describes the traditional medical/charity model.",
+"C": "Surgical correction is a medical model approach.",
+"D": "Empowerment and human rights are hallmarks of the social/rights-based model."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "CBR principles",
+"question_text": "A community health nurse is designing a CBR livelihood program for young adults with physical disabilities in Berekum. Which initiative aligns best with CBR principles?",
+"choices": [
+{"text": "Organizing street begging rings in commercial market centres", "is_correct": false},
+{"text": "Establishing vocational training in soap-making, batik tie-dye, and mobile phone repair with micro-finance support", "is_correct": true},
+{"text": "Constructing a locked residential compound to keep them away from society", "is_correct": false},
+{"text": "Providing free imported luxury goods without skills training", "is_correct": false}
+],
+"rationale": "Vocational skills training and micro-finance support foster economic self-reliance and sustainable community inclusion.",
+"distractor_rationales": {
+"A": "Street begging perpetuates poverty and violates human dignity.",
+"C": "Locked residential compounds promote segregation.",
+"D": "Handouts without skills training do not foster long-term financial independence."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "mobility aids",
+"question_text": "A client with a below-knee amputation is fitted with a lower limb prosthesis. What is an essential component of nursing care during the stump conditioning phase?",
+"choices": [
+{"text": "Applying aggressive heat packs continuously to induce tissue necrosis", "is_correct": false},
+{"text": "Instructing the client on proper stump wrapping (figure-of-eight bandage) to shape the residual limb for prosthetic fitting", "is_correct": true},
+{"text": "Leaving the residual limb dangling unsupported off the bed edge", "is_correct": false},
+{"text": "Avoiding all physical movement of the residual joint", "is_correct": false}
+],
+"rationale": "Proper stump wrapping with elastic bandages in a figure-of-eight pattern reduces edema and shapes the residual limb for successful prosthetic socket fitting.",
+"distractor_rationales": {
+"A": "Aggressive heat packs cause burns and dangerous tissue swelling.",
+"C": "Danglings without support causes edema and joint flexion contractures.",
+"D": "Avoiding movement leads to severe joint contractures and muscle atrophy."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "community reintegration",
+"question_text": "Which of the following barriers most severely hinders children with disabilities from attending local schools in rural areas?",
+"choices": [
+{"text": "Physical architectural stairs, lack of ramps, untrained teachers, and negative cultural attitudes", "is_correct": true},
+{"text": "An excess of accessible school buses and ramps in every village", "is_correct": false},
+{"text": "Mandatory government scholarships covering all school expenses", "is_correct": false},
+{"text": "High enthusiasm and preparedness among all educators", "is_correct": false}
+],
+"rationale": "Inaccessible infrastructure, lack of inclusive pedagogy, and stigma are primary environmental barriers preventing disabled children from schooling.",
+"distractor_rationales": {
+"B": "An excess of ramps and buses would facilitate, not hinder, education.",
+"C": "Mandatory scholarships promote attendance rather than hinder it.",
+"D": "High educator preparedness supports inclusion."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "assistive devices",
+"question_text": "When assessing a community member requiring a wheelchair, what factor must the nurse evaluate first to ensure proper device selection?",
+"choices": [
+{"text": "The color and brand name of the wheelchair manufacturer", "is_correct": false},
+{"text": "The client's postural support needs, sitting balance, body measurements, and environmental terrain", "is_correct": true},
+{"text": "Whether the wheelchair can be used as a racing vehicle on highways", "is_correct": false},
+{"text": "Selecting the smallest child-size wheelchair available regardless of adult client size", "is_correct": false}
+],
+"rationale": "Wheelchair prescription requires assessing posture, physical dimensions, stability, and environmental conditions to prevent pressure ulcers and ensure mobility.",
+"distractor_rationales": {
+"A": "Aesthetic color and brand are secondary to functional postural fit.",
+"C": "Wheelchairs are mobility assistive devices, not highway racing vehicles.",
+"D": "Using incorrect sizing causes severe pressure injuries and postural deformities."
+},
+"difficulty": "APPLICATION"
+}
+]
+},
+{
+"course_code": "CTM-322",
+"course_title": "Complementary & Traditional Medicine",
+"category": "COMMUNITY",
+"semester": "S2",
+"topics": ["Herbal medicine", "traditional birth attendants", "integrating traditional & modern medicine", "safety", "evidence"],
+"questions": [
+{
+"topic": "Herbal medicine",
+"question_text": "A client in a Ghanaian clinic reports taking an unlabelled herbal concoction bought from a roadside vendor to treat hypertension. What is the primary nursing safety concern regarding unregulated herbal preparations?",
+"choices": [
+{"text": "Herbal products are guaranteed to have zero chemical constituents.", "is_correct": false},
+{"text": "Unstandardized dosages, potential heavy metal contamination, and adverse herb-drug interactions", "is_correct": true},
+{"text": "Herbal medicines are strictly regulated by international pharmaceutical boards.", "is_correct": false},
+{"text": "Herbal remedies are universally more expensive than hospital prescriptions.", "is_correct": false}
+],
+"rationale": "Unregulated herbal concoctions lack standardized active ingredients, risk heavy metal toxicity, and can cause severe herb-drug interactions with conventional medications.",
+"distractor_rationales": {
+"A": "Herbal products contain active chemical constituents that exert physiological effects.",
+"C": "Unregulated roadside preparations lack strict pharmaceutical oversight.",
+"D": "Herbal preparations are often marketed as cheaper alternatives, but cost is not the primary safety concern."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "traditional birth attendants",
+"question_text": "In many rural districts of Ghana, Traditional Birth Attendants (TBAs) have historically assisted with deliveries. What is the current Ghana Health Service policy regarding TBAs in maternity care?",
+"choices": [
+{"text": "TBAs are designated to manage complicated postpartum hemorrhage independently in major hospitals.", "is_correct": false},
+{"text": "TBAs are recognized as community referral partners trained to identify pregnancy danger signs and encourage prompt facility-based delivery", "is_correct": true},
+{"text": "TBAs are legally authorized to perform Caesarean sections in village homes.", "is_correct": false},
+{"text": "TBAs are completely banned from interacting with pregnant women under any circumstances.", "is_correct": false}
+],
+"rationale": "Ghana Health Service policy integrates TBAs into referral networks, training them to recognize obstetric danger signs and escort women to health facilities for skilled delivery.",
+"distractor_rationales": {
+"A": "TBAs do not manage complex surgical obstetric emergencies.",
+"C": "Surgical procedures like C-sections require specialized medical doctors in sterile theatres.",
+"D": "Banning TBAs entirely ignores their cultural influence; training and linkage are preferred."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "integrating traditional & modern medicine",
+"question_text": "What is the primary objective of establishing integrated traditional and herbal medicine units within selected government hospitals in Ghana?",
+"choices": [
+{"text": "To replace all orthodox doctors with traditional priests", "is_correct": false},
+{"text": "To promote collaborative healthcare, safety, evidence-based herbal research, and patient-centred options", "is_correct": true},
+{"text": "To eliminate the use of antibiotics and modern vaccines completely", "is_correct": false},
+{"text": "To increase hospital revenue through expensive unregistered tonics", "is_correct": false}
+],
+"rationale": "Integration aims to foster collaboration, regulate herbal safety, conduct scientific research, and provide safe, culturally acceptable choices for patients.",
+"distractor_rationales": {
+"A": "Integration involves collaboration, not replacing orthodox medicine.",
+"C": "Modern antibiotics and vaccines remain essential pillars of healthcare.",
+"D": "Revenue generation is secondary to safety and evidence-based clinical integration."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "safety",
+"question_text": "A patient taking warfarin for deep vein thrombosis admits to concurrently drinking large quantities of garlic and ginger herbal infusions for arthritis pain. What is the nurse's priority assessment?",
+"choices": [
+{"text": "Assess for signs of abnormal bleeding or bruising due to herb-drug potentiation of anticoagulation", "is_correct": true},
+{"text": "Check for signs of severe dehydration and constipation", "is_correct": false},
+{"text": "Assess for acute visual loss and glaucoma", "is_correct": false},
+{"text": "Monitor for rapid weight gain and dependent edema", "is_correct": false}
+],
+"rationale": "Garlic, ginger, and many traditional herbs possess antiplatelet and anticoagulant properties, which potentiate warfarin and drastically increase bleeding risks.",
+"distractor_rationales": {
+"B": "Dehydration is not the primary interaction risk between warfarin and ginger/garlic.",
+"C": "Visual loss is unrelated to warfarin-herb interactions.",
+"D": "Weight gain and edema relate to fluid balance, not anticoagulant potentiation."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "evidence",
+"question_text": "How should a professional nurse evaluate claims made by a commercial herbal medicine advertisement on Ghanaian television promising a 'miracle permanent cure for all chronic diseases within 3 days'?",
+"choices": [
+{"text": "Accept the claims immediately because they were broadcast publicly on media channels", "is_correct": false},
+{"text": "Apply critical thinking and demand rigorous scientific evidence, clinical trials, and FDA registration before endorsing", "is_correct": true},
+{"text": "Prescribe the herbal product to all ward patients immediately", "is_correct": false},
+{"text": "Assume all traditional herbal products are completely fraudulent without exception", "is_correct": false}
+],
+"rationale": "Evidence-based practice requires nurses to evaluate therapeutic claims critically, looking for clinical trials, safety data, and regulatory body (FDA Ghana) approval.",
+"distractor_rationales": {
+"A": "Media broadcasts do not guarantee scientific validity.",
+"C": "Prescribing unverified products violates nursing ethics and safety.",
+"D": "Dismissing all herbal products ignores legitimate research on plant-derived medicines (e.g., artemisinin)."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Herbal medicine",
+"question_text": "Which plant species indigenous to Ghana and tropical Africa is globally recognized as the foundational source for modern antimalarial artemisinin combination therapy (ACT)?",
+"choices": [
+{"text": "Azadirachta indica (Neem tree)", "is_correct": false},
+{"text": "Artemisia annua (Sweet wormwood) / Cryptolepis sanguinolenta (Ghanaian Nibima)", "is_correct": true},
+{"text": "Carica papaya (Pawpaw leaf)", "is_correct": false},
+{"text": "Aloe vera", "is_correct": false}
+],
+"rationale": "Cryptolepis sanguinolenta (Nibima) is a well-documented Ghanaian traditional medicinal plant researched for anti-malarial properties, alongside Artemisia species.",
+"distractor_rationales": {
+"A": "Neem is used for antibacterial and antipyretic properties, not primary artemisinin source.",
+"C": "Pawpaw leaf is traditionally used for dengue or platelet support, not artemisinin.",
+"D": "Aloe vera is used for topical wound healing and burns."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "traditional birth attendants",
+"question_text": "A pregnant woman in labor arrives at a health center accompanied by a TBA who administered an unknown herbal concoction to 'speed up delivery'. The client is exhibiting uterine hyperstimulation and fetal distress. What is the nurse's priority action?",
+"choices": [
+{"text": "Praise the TBA for a job well done", "is_correct": false},
+{"text": "Stop any further herbal ingestion, administer oxygen, position client on left side, and notify the physician for emergency evaluation", "is_correct": true},
+{"text": "Administer additional herbal oxytocics to hasten delivery", "is_correct": false},
+{"text": "Leave the client unattended until delivery occurs naturally", "is_correct": false}
+],
+"rationale": "Unregulated herbal oxytocics can cause uterine rupture and fetal asphyxia. Immediate resuscitation, left lateral positioning, and medical notification are mandatory.",
+"distractor_rationales": {
+"A": "Praising dangerous unmonitored herbal administration violates safe practice.",
+"C": "Giving more oxytocics worsens hyperstimulation and uterine rupture risk.",
+"D": "Leaving the client unattended constitutes severe medical negligence."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "integrating traditional & modern medicine",
+"question_text": "What regulatory body in Ghana is officially mandated to register, regulate, and monitor herbal medicines, food, and dietary supplements to ensure public safety?",
+"choices": [
+{"text": "Ghana Education Service (GES)", "is_correct": false},
+{"text": "Food and Drugs Authority (FDA Ghana) and Traditional Medicine Practice Council (TMPC)", "is_correct": true},
+{"text": "Ministry of Roads and Highways", "is_correct": false},
+{"text": "Driver and Vehicle Licensing Authority (DVLA)", "is_correct": false}
+],
+"rationale": "The FDA Ghana and the Traditional Medicine Practice Council (TMPC) regulate herbal medicine manufacturing, marketing, and practitioner licensing.",
+"distractor_rationales": {
+"A": "GES manages basic and secondary education.",
+"C": "Roads and Highways oversees transport infrastructure.",
+"D": "DVLA handles vehicle registration and driver licensing."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "safety",
+"question_text": "A patient with chronic renal failure asks the nurse if they can take local herbal preparations containing heavy minerals and high potassium roots to 'cleanse the kidneys'. What is the nurse's best response?",
+"choices": [
+{"text": "Encourage them to double the dose for faster kidney cleansing", "is_correct": false},
+{"text": "Explain clearly that impaired kidneys cannot excrete herbal toxins and heavy minerals, risking fatal hyperkalemia and renal toxicity", "is_correct": true},
+{"text": "Advise them that all herbal remedies are completely harmless to kidney tissues", "is_correct": false},
+{"text": "Ignore the question as kidney function is unrelated to herbal intake", "is_correct": false}
+],
+"rationale": "Compromised kidneys cannot filter metabolic wastes and herbal toxins, leading to severe accumulation, hyperkalemia, and accelerated renal failure.",
+"distractor_rationales": {
+"A": "Doubling doses of herbal minerals in renal failure is lethal.",
+"C": "Herbal preparations can be highly nephrotoxic.",
+"D": "Ignoring medication and herbal queries compromises patient safety."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "evidence",
+"question_text": "Why are randomized controlled trials (RCTs) considered the gold standard when evaluating traditional herbal medicines?",
+"choices": [
+{"text": "They rely purely on unverified testimonies from television advertisers.", "is_correct": false},
+{"text": "They minimize bias, control confounding variables, and provide rigorous scientific proof of efficacy and safety compared to placebos.", "is_correct": true},
+{"text": "They guarantee that herbs will be distributed free of charge globally.", "is_correct": false},
+{"text": "They eliminate the need for chemical laboratory analysis entirely.", "is_correct": false}
+],
+"rationale": "RCTs provide high-level scientific evidence by eliminating bias and measuring true pharmacological outcomes against control groups.",
+"distractor_rationales": {
+"A": "RCTs replace anecdotal testimonies with empirical data.",
+"C": "RCTs assess scientific efficacy, not commercial pricing or distribution.",
+"D": "Laboratory analysis remains necessary alongside clinical trials."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Herbal medicine",
+"question_text": "A herbalist recommends topical application of fresh caustic plant sap directly onto an open diabetic foot ulcer. What is the nurse's priority action?",
+"choices": [
+{"text": "Encourage the practice because plant saps are natural and infection-proof", "is_correct": false},
+{"text": "Educate the patient on the risk of chemical burns, severe wound irritation, and secondary bacterial infection, advising sterile medical wound care", "is_correct": true},
+{"text": "Apply pressure bandages soaked in palm oil over the sap", "is_correct": false},
+{"text": "Document nothing and discharge the patient immediately", "is_correct": false}
+],
+"rationale": "Unverified caustic plant saps damage fragile granulation tissue in diabetic ulcers, causing chemical burns, necrosis, and severe infection.",
+"distractor_rationales": {
+"A": "Natural plant saps can be highly toxic and caustic to open wounds.",
+"C": "Palm oil application introduces contaminants to open diabetic ulcers.",
+"D": "Discharging an unmanaged diabetic ulcer risks osteomyelitis and amputation."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "traditional birth attendants",
+"question_text": "What collaborative training program has proven most effective in reducing maternal and neonatal mortality in rural areas utilizing TBAs?",
+"choices": [
+{"text": "Training TBAs to perform unassisted surgical Caesarean sections in mud huts", "is_correct": false},
+{"text": "Training TBAs to recognize pregnancy danger signs early, avoid harmful practices, and accompany women to health facilities for skilled delivery", "is_correct": true},
+{"text": "Instructing TBAs to discourage all hospital attendance", "is_correct": false},
+{"text": "Equipping TBAs with prescription-only antibiotics and intravenous anesthetics", "is_correct": false}
+],
+"rationale": "Safe motherhood programs train TBAs as community liaisons focused on early recognition of complications and prompt referral to skilled birth attendants.",
+"distractor_rationales": {
+"A": "Surgical procedures are outside TBA scope and training.",
+"C": "Discouraging hospital attendance increases maternal mortality.",
+"D": "Prescription antibiotics and anesthetics require licensed clinical prescribers."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "integrating traditional & modern medicine",
+"question_text": "A patient admitted to a medical ward expresses a strong desire to see a traditional herbal practitioner while on admission. How should the nurse facilitate patient-centred care safely?",
+"choices": [
+{"text": "Lock all hospital doors to prevent traditional practitioners from entering", "is_correct": false},
+{"text": "Discuss the request with the multidisciplinary healthcare team, ensuring transparent communication and safety regarding concurrent treatments", "is_correct": true},
+{"text": "Discharge the patient against medical advice immediately", "is_correct": false},
+{"text": "Ignore the request and forbid the patient from speaking about traditional medicine", "is_correct": false}
+],
+"rationale": "Respecting patient autonomy while ensuring clinical safety requires multidisciplinary dialogue and transparent coordination of care.",
+"distractor_rationales": {
+"A": "Locking doors breaches human rights and damages therapeutic trust.",
+"C": "Immediate discharge abandons the patient without addressing clinical needs.",
+"D": "Forbidding discussion fosters mistrust and concealment of herbal use."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "safety",
+"question_text": "Which adverse effect is frequently associated with the unsupervised consumption of herbal preparations containing heavy metals like lead or mercury sold in uncertified markets?",
+"choices": [
+{"text": "Immediate improvement in bone density and muscle mass", "is_correct": false},
+{"text": "Chronic systemic toxicity affecting the kidneys, liver, and central nervous system", "is_correct": true},
+{"text": "Complete immunity to all infectious diseases", "is_correct": false},
+{"text": "Enhanced visual acuity in dark environments", "is_correct": false}
+],
+"rationale": "Heavy metal contamination in uncertified herbal products causes severe cumulative poisoning, damaging renal, hepatic, and neurological systems.",
+"distractor_rationales": {
+"A": "Heavy metals are toxic, not muscle-building agents.",
+"C": "Heavy metals do not confer immunity.",
+"D": "Heavy metal toxicity causes neurological deficits, not enhanced vision."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "evidence",
+"question_text": "A nurse is conducting community health education on traditional medicine. Which statement represents scientifically sound evidence regarding herbal therapy?",
+"choices": [
+{"text": "'All natural plants are completely safe and devoid of side effects.'", "is_correct": false},
+{"text": "'Natural origin does not guarantee safety; herbs contain active pharmacological chemicals that require rigorous safety and dosage evaluation.'", "is_correct": true},
+{"text": "'Traditional herbs are entirely useless and have never contributed to modern pharmacology.'", "is_correct": false},
+{"text": "'A patient should never inform their doctor about herbal teas they are drinking.'", "is_correct": false}
+],
+"rationale": "Natural origin does not imply safety; many potent plant toxins exist, and active constituents require scientific evaluation and dosage control.",
+"distractor_rationales": {
+"A": "Many natural plants (e.g., poisonous herbs) are lethal.",
+"C": "Many modern drugs (aspirin, quinine, artemisinin) derive from plants.",
+"D": "Concealing herbal use from physicians risks dangerous herb-drug interactions."
+},
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PAD-322",
+"course_title": "Paediatric Nursing II",
+"category": "MATERNAL",
+"semester": "S2",
+"topics": ["Paediatric emergencies", "congenital anomalies", "paediatric pharmacology", "child abuse", "neonatal jaundice"],
+"questions": [
+{
+"topic": "Paediatric emergencies",
+"question_text": "A 2-year-old child is rushed to the pediatric emergency department with sudden onset inspiratory stridor, drooling, agitation, and sitting forward in a 'tripod' position. What is the most critical nursing action?",
+"choices": [
+{"text": "Immediately attempt to examine the throat using a tongue depressor to inspect the pharynx", "is_correct": false},
+{"text": "Keep the child calm, avoid examining the throat or forcing them to lie flat, administer emergency oxygen, and notify the anesthetist/physician immediately for suspected epiglottitis", "is_correct": true},
+{"text": "Force the child to lie flat on their back immediately for a detailed physical exam", "is_correct": false},
+{"text": "Administer oral cough syrup and send the child home to sleep", "is_correct": false}
+],
+"rationale": "Acute epiglottitis causes life-threatening airway obstruction. Manipulating the airway or tongue depressor can trigger complete laryngospasm and asphyxiation; keep the child calm and prepare for artificial airway management.",
+"distractor_rationales": {
+"A": "Inspecting the throat with a tongue depressor in suspected epiglottitis can cause fatal airway obstruction.",
+"C": "Forcing the child to lie flat precipitates immediate airway collapse.",
+"D": "Cough syrup is ineffective and dangerous in acute epiglottitis emergencies."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "congenital anomalies",
+"question_text": "An infant is born with a neural tube defect characterized by a sac-like protrusion containing meninges and spinal cord elements over the lumbar spine (myelomeningocele). What is the priority preoperative nursing intervention?",
+"choices": [
+{"text": "Place the infant flat on their back directly on the sacral lesion", "is_correct": false},
+{"text": "Place the infant prone or in side-lying position, cover the sterile defect with moist sterile saline dressings, and prevent rupture/infection", "is_correct": true},
+{"text": "Apply tight adhesive bandages directly over the exposed neural sac", "is_correct": false},
+{"text": "Bathe the infant daily in antiseptic soap solutions", "is_correct": false}
+],
+"rationale": "Preoperative care for myelomeningocele requires protecting the delicate sac from rupture and infection using sterile moist saline dressings and positioning the infant prone or sideways.",
+"distractor_rationales": {
+"A": "Placing the infant supine puts direct pressure on the sac, risking rupture and CSF leakage.",
+"C": "Tight adhesive bandages damage neural tissue and cause trauma.",
+"D": "Daily immersion baths risk contaminating the open neural tube defect."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "paediatric pharmacology",
+"question_text": "Why must pediatric medication dosages, particularly for neonates and infants, be calculated with extreme precision based on weight (mg/kg) or body surface area rather than adult approximation?",
+"choices": [
+{"text": "Infants have fully mature renal and hepatic enzyme systems identical to adults.", "is_correct": false},
+{"text": "Pediatric organ immaturity, differing body water composition, and immature metabolic clearance increase toxicity risks.", "is_correct": true},
+{"text": "Children require higher doses per kilogram of body weight for all medications without exception.", "is_correct": false},
+{"text": "Pediatric medication calculations are completely arbitrary and unnecessary.", "is_correct": false}
+],
+"rationale": "Immature renal filtration, hepatic metabolism, and differing total body water percentages in children alter pharmacokinetics, making precise weight-based dosing critical to avoid toxicity.",
+"distractor_rationales": {
+"A": "Neonatal renal and hepatic systems are developmentally immature.",
+"C": "Dosages vary widely by drug class; some require lower or scaled pediatric dosing.",
+"D": "Arbitrary dosing is dangerous and leads to severe pediatric drug overdoses."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "child abuse",
+"question_text": "A 4-year-old child is brought to the emergency clinic with symmetrical cigarette burn marks on the soles of both feet and bruises in various stages of healing across the back and buttocks. What is the nurse's legal and professional responsibility?",
+"choices": [
+{"text": "Ignore the findings as private family disciplinary matters", "is_correct": false},
+{"text": "Document observations objectively, report suspected child abuse immediately to hospital social services and child protection authorities, and ensure child safety", "is_correct": true},
+{"text": "Confront the parents aggressively and accuse them of criminality in front of other patients", "is_correct": false},
+{"text": "Discharge the child home immediately without notifying anyone", "is_correct": false}
+],
+"rationale": "Nurses are mandatory reporters of suspected child abuse. Objective documentation, safeguarding the child, and involving social welfare/law enforcement are mandatory legal duties.",
+"distractor_rationales": {
+"A": "Ignoring suspected abuse places the child in ongoing mortal danger.",
+"C": "Aggressive confrontation can endanger the child further and compromises investigation.",
+"D": "Discharging an abused child back into an unsafe environment violates duty of care."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "neonatal jaundice",
+"question_text": "A term newborn develops severe pathological jaundice within the first 18 hours of life, with serum bilirubin levels rising rapidly. What is the primary medical and nursing treatment indicated to prevent kernicterus?",
+"choices": [
+{"text": "Immediate phototherapy using specialized blue-light spectrum lamps", "is_correct": true},
+{"text": "Placing the infant in a dark, unlit room for 24 hours", "is_correct": false},
+{"text": "Administering oral doses of concentrated lemon juice", "is_correct": false},
+{"text": "Stopping all fluids and feeds entirely", "is_correct": false}
+],
+"rationale": "Phototherapy converts unconjugated bilirubin in skin capillaries into water-soluble photoisomers that can be excreted in bile and urine, preventing neurotoxic kernicterus.",
+"distractor_rationales": {
+"B": "Dark rooms prevent light exposure required for phototherapy breakdown.",
+"C": "Lemon juice is unscientific and dangerous for newborns.",
+"D": "Stopping feeds impairs hydration and meconium excretion, worsening jaundice."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric emergencies",
+"question_text": "During triage, a nurse assesses four pediatric clients. Which child requires IMMEDIATE emergency resuscitation?",
+"choices": [
+{"text": "A 5-year-old child with a mild pharyngitis and temperature of 37.8°C", "is_correct": false},
+{"text": "An 8-month-in-old infant with severe dehydration, lethargy, capillary refill time of 5 seconds, and cold extremities", "is_correct": true},
+{"text": "A 3-year-old child with a small healing scratch on the knee", "is_correct": false},
+{"text": "A 4-year-old child with a mild runny nose and clear breath sounds", "is_correct": false}
+],
+"rationale": "Lethargy, prolonged capillary refill (>3 seconds), and cold extremities indicate hypovolemic shock, a life-threatening pediatric emergency requiring immediate IV fluid boluses.",
+"distractor_rationales": {
+"A": "Mild pharyngitis with low-grade fever is stable.",
+"C": "A healing scratch requires basic wound cleansing.",
+"D": "A runny nose with clear sounds indicates a stable upper respiratory infection."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "congenital anomalies",
+"question_text": "An infant is born with complete failure of the palate to fuse, presenting with an open cleft involving the hard and soft palate. What is the primary immediate nursing challenge during feeding?",
+"choices": [
+{"text": "Preventing nasal regurgitation and aspiration pneumonia due to open communication between oral and nasal cavities", "is_correct": true},
+{"text": "Ensuring the infant swallows solid adult table foods immediately", "is_correct": false},
+{"text": "Preventing dental caries in primary teeth", "is_correct": false},
+{"text": "Restricting all fluid intake to intravenous routes permanently", "is_correct": false}
+],
+"rationale": "Cleft palate creates an opening between mouth and nose, impairing suction and risking nasal regurgitation and aspiration pneumonia during feeds.",
+"distractor_rationales": {
+"B": "Infants with cleft palate require specialized bottles/nipples and soft feeds, not adult solid foods.",
+"C": "Dental caries prevention is important later, but immediate feeding safety is paramount.",
+"D": "Permanent IV nutrition is unnecessary; specialized haberman feeders or squeeze bottles allow successful oral feeding."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "paediatric pharmacology",
+"question_text": "When administering oral liquid medications to an uncooperative toddler, what is the safest and most effective nursing technique?",
+"choices": [
+{"text": "Pinch the child's nose shut and force the entire syringe volume down the throat rapidly", "is_correct": false},
+{"text": "Use an oral dosing syringe to administer small amounts slowly into the side of the child's mouth while sitting upright", "is_correct": true},
+{"text": "Mix the medication into the child's entire daily meal bottle of milk", "is_correct": false},
+{"text": "Threaten the child with punishment if they refuse to swallow the medicine", "is_correct": false}
+],
+"rationale": "Administering small amounts via oral syringe into the buccal pouch (side of mouth) prevents aspiration and choking while ensuring accurate dosing.",
+"distractor_rationales": {
+"A": "Pinching the nose and forcing liquid causes severe aspiration and choking.",
+"C": "Mixing meds in the entire milk bottle risks incomplete dosing if the child refuses to finish the milk.",
+"D": "Threatening children creates trauma and fear of healthcare providers."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "child abuse",
+"question_text": "Which radiological finding in an infant strongly suggests non-accidental injury (child abuse)?",
+"choices": [
+{"text": "A clean transverse fracture of the mid-shaft femur in a 10-year-old playing football", "is_correct": false},
+{"text": "Multiple healing fractures of ribs in various stages of posteromedial calcification in a 3-month-old infant", "is_correct": true},
+{"text": "A simple greenstick wrist fracture from a minor playground fall", "is_correct": false},
+{"text": "Normal symmetrical ossification centers in epiphyseal plates", "is_correct": false}
+],
+"rationale": "Posteromedial rib fractures and multiple fractures in different healing stages in a non-ambulatory infant are highly specific for child abuse (shaken baby syndrome or trauma).",
+"distractor_rationales": {
+"A": "A transverse fracture in an older child playing sports is consistent with accidental sports trauma.",
+"C": "Greenstick fractures are common accidental playground injuries.",
+"D": "Normal ossification centers represent healthy skeletal development."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "neonatal jaundice",
+"question_text": "During phototherapy for neonatal jaundice, what is an essential nursing intervention to protect the newborn?",
+"choices": [
+{"text": "Cover the infant's eyes with opaque eye patches to prevent retinal damage", "is_correct": true},
+{"text": "Dress the infant in thick woolen sweaters to prevent hypothermia", "is_correct": false},
+{"text": "Keep the infant completely naked without eye shields under direct sunlight outdoors", "is_correct": false},
+{"text": "Restrict fluid intake to prevent diaper rashes", "is_correct": false}
+],
+"rationale": "Intense phototherapy light can damage the developing retina; opaque eye patches must be applied securely while ensuring they do not block nares.",
+"distractor_rationales": {
+"B": "Thick sweaters block light exposure to skin surface required for bilirubin breakdown.",
+"C": "Uncontrolled outdoor sunlight risks severe sunburn and hyperthermia, not regulated phototherapy.",
+"D": "Fluid restriction causes dehydration during phototherapy; increased fluids are required."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric emergencies",
+"question_text": "What is the primary initial sign of respiratory distress in infants that nurses must monitor closely?",
+"choices": [
+{"text": "Slow, irregular breathing of 10 breaths per minute", "is_correct": false},
+{"text": "Tachypnea, nasal flaring, sternal/intercostal retractions, and grunting", "is_correct": true},
+{"text": "Deep, peaceful sleep with regular breathing patterns", "is_correct": false},
+{"text": "Loud snoring without chest indrawing", "is_correct": false}
+],
+"rationale": "Infants compensate for respiratory compromise with tachypnea, nasal flaring, retractions, and grunting (early signs of increased work of breathing).",
+"distractor_rationales": {
+"A": "Slow breathing of 10 breaths/min indicates respiratory depression/failure.",
+"C": "Peaceful sleep with regular breathing is normal.",
+"D": "Simple snoring requires assessment for adenoids but is not acute distress."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "congenital anomalies",
+"question_text": "An infant is diagnosed with congenital heart disease presenting with cyanosis ('blue baby syndrome'), such as Tetralogy of Fallot. During a hypercyanotic spell ('tet spell'), what immediate nursing action should be taken?",
+"choices": [
+{"text": "Place the infant flat on their back and encourage vigorous crying", "is_correct": false},
+{"text": "Place the infant in a knee-chest position, administer calm reassurance, and give 100% oxygen", "is_correct": true},
+{"text": "Encourage the infant to run around the ward to improve circulation", "is_correct": false},
+{"text": "Immediately administer oral diuretics", "is_correct": false}
+],
+"rationale": "The knee-chest position increases systemic vascular resistance, decreasing right-to-left shunting and improving pulmonary blood flow during a tet spell.",
+"distractor_rationales": {
+"A": "Placing supine and crying worsens hypoxia and increases right-to-left shunting.",
+"C": "Running increases oxygen demand and worsens cyanosis.",
+"D": "Diuretics do not resolve acute hypoxic tet spells."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "paediatric pharmacology",
+"question_text": "When calculating pediatric drug dosage using Clark's Rule based on weight, which formula is correct?",
+"choices": [
+{"text": "(Child's weight in pounds / 150 lbs) x Adult dose", "is_correct": true},
+{"text": "(Child's age in years / (Child's age + 12)) x Adult dose", "is_correct": false},
+{"text": "(Child's surface area in m2 / 1.73 m2) x Adult dose", "is_correct": false},
+{"text": "(Adult weight / Child's weight) x 100", "is_correct": false}
+],
+"rationale": "Clark's Rule calculates pediatric doses based on weight: (Weight in lbs / 150 lbs) x Adult Dose (or Weight in kg / 68 kg x Adult Dose).",
+"distractor_rationales": {
+"B": "This formula represents Young's Rule based on age.",
+"C": "This formula calculates dose based on Body Surface Area (BSA).",
+"D": "This ratio formula is incorrect for pediatric dosage calculation."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "child abuse",
+"question_text": "Which behavioral indicator in a school-aged child is most commonly associated with chronic emotional or physical abuse?",
+"choices": [
+{"text": "Appropriate social interaction, academic curiosity, and playfulness", "is_correct": false},
+{"text": "Extreme withdrawal, hypervigilance, developmental regression, or unprovoked aggression", "is_correct": true},
+{"text": "Normal growth velocity on pediatric growth charts", "is_correct": false},
+{"text": "Active participation in school sports teams", "is_correct": false}
+],
+"rationale": "Abused children frequently exhibit behavioral changes such as extreme withdrawal, hypervigilance, regression, or aggressive outbursts.",
+"distractor_rationales": {
+"A": "Social interaction and playfulness reflect healthy psychosocial development.",
+"C": "Normal growth charts reflect adequate nutrition and care.",
+"D": "Sports participation indicates normal social engagement."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "neonatal jaundice",
+"question_text": "What pathological complication can arise if severe neonatal hyperbilirubinemia is left untreated, leading to bilirubin deposition in the basal ganglia of the brain?",
+"choices": [
+{"text": "Kernicterus (bilirubin encephalopathy)", "is_correct": true},
+{"text": "Acute glomerulonephritis", "is_correct": false},
+{"text": "Congenital hypothyroidism", "is_correct": false},
+{"text": "Iron deficiency anemia", "is_correct": false}
+],
+"rationale": "Unconjugated lipid-soluble bilirubin crosses the blood-brain barrier, depositing in brain tissue and causing irreversible neurological damage known as kernicterus.",
+"distractor_rationales": {
+"B": "Glomerulonephritis is an immune-mediated renal disorder following streptococcal infection.",
+"C": "Hypothyroidism results from thyroid hormone deficiency, not bilirubin toxicity.",
+"D": "Anemia involves low hemoglobin, not bilirubin brain deposition."
+},
+"difficulty": "KNOWLEDGE"
+}
+]
+},
+{
+"course_code": "PHN-322",
+"course_title": "Public Health Nursing",
+"category": "COMMUNITY",
+"semester": "S2",
+"topics": ["Epidemiology", "immunisation programmes", "disease surveillance", "community diagnosis", "health education"],
+"questions": [
+{
+"topic": "Epidemiology",
+"question_text": "During an investigation of a cholera outbreak in a coastal Ghanaian community, epidemiologists calculate the number of new cases occurring within a specific two-week period relative to the population at risk. What epidemiological measure does this represent?",
+"choices": [
+{"text": "Prevalence rate", "is_correct": false},
+{"text": "Incidence rate", "is_correct": true},
+{"text": "Case fatality rate", "is_correct": false},
+{"text": "Crude birth rate", "is_correct": false}
+],
+"rationale": "Incidence rate measures the frequency of new cases of a disease arising in a population at risk during a specified time interval.",
+"distractor_rationales": {
+"A": "Prevalence measures total existing cases (new and old) at a specific point in time.",
+"C": "Case fatality rate measures the proportion of diagnosed individuals who die from the disease.",
+"D": "Crude birth rate measures live births relative to total population size."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "immunisation programmes",
+"question_text": "What is the primary public health goal of achieving high herd immunity (community immunity) through national immunization programmes in Ghana?",
+"choices": [
+{"text": "To completely eliminate personal hygiene practices", "is_correct": false},
+{"text": "To protect vulnerable, unvaccinated, or immunodeficient individuals by interrupting disease transmission chains across the population", "is_correct": true},
+{"text": "To replace curative hospital medicine entirely", "is_correct": false},
+{"text": "To guarantee lifelong immunity without ever requiring vaccine cold chains", "is_correct": false}
+],
+"rationale": "Herd immunity occurs when a high percentage of the population is vaccinated, indirectly protecting vulnerable individuals who cannot be immunized.",
+"distractor_rationales": {
+"A": "Hygiene remains essential alongside vaccination.",
+"C": "Immunization complements curative care, not replaces it.",
+"D": "Cold chains remain mandatory for maintaining vaccine potency regardless of herd immunity levels."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "disease surveillance",
+"question_text": "A community health nurse at a CHPS compound identifies a cluster of cases presenting with acute watery diarrhea and vomiting. Under Ghana Integrated Disease Surveillance and Response (IDSR) guidelines, what is the nurse's immediate action?",
+"choices": [
+{"text": "Keep the information private and wait until the end of the year to report", "is_correct": false},
+{"text": "Immediately notify the district health directorate (IMMEDIATE reportable disease)", "is_correct": true},
+{"text": "Treat clients with herbal teas and advise them to stay home", "is_correct": false},
+{"text": "Close the clinic permanently and quarantine the village", "is_correct": false}
+],
+"rationale": "Cholera is an epidemic-prone disease subject to immediate Integrated Disease Surveillance and Response (IDSR) reporting to trigger rapid outbreak containment.",
+"distractor_rationales": {
+"A": "Delayed reporting risks widespread epidemic escalation.",
+"C": "Inadequate treatment without notification violates public health protocols.",
+"D": "Quarantining entire villages without district health coordination is inappropriate and unlawful."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "community diagnosis",
+"question_text": "What is the first fundamental step a public health nurse must undertake when conducting a community diagnosis in a newly assigned rural sub-district?",
+"choices": [
+{"text": "Build a multi-story modern hospital immediately", "is_correct": false},
+{"text": "Conduct a comprehensive community entry, stakeholder engagement, and participatory health needs assessment", "is_correct": true},
+{"text": "Impose top-down health policies without consulting community leaders", "is_correct": false},
+{"text": "Assume all community health problems are identical to urban centers", "is_correct": false}
+],
+"rationale": "Community diagnosis begins with community entry, engaging local leadership, and participatory data collection to identify authentic local health needs.",
+"distractor_rationales": {
+"A": "Building hospitals requires extensive resource planning following needs assessment.",
+"C": "Imposing top-down policies without consultation leads to poor community participation.",
+"D": "Assuming health problems are identical ignores unique local epidemiological profiles."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "health education",
+"question_text": "When planning a community health education campaign on malaria prevention in a rural Ghanaian village, which educational approach ensures the highest community engagement and behavior change?",
+"choices": [
+{"text": "Reading a dense medical textbook in English to a silent crowd of farmers", "is_correct": false},
+{"text": "Utilizing interactive drama, local dialects, participatory discussions, and distributing insecticide-treated nets (ITNs)", "is_correct": true},
+{"text": "Handing out technical research journals written for epidemiologists", "is_correct": false},
+{"text": "Posting written notices on bulletin boards where literacy rates are low", "is_correct": false}
+],
+"rationale": "Adult education principles dictate that interactive discussions, local languages, and participatory drama foster high engagement and sustainable health behavior change.",
+"distractor_rationales": {
+"A": "Reading complex English texts alienates non-literate community members.",
+"C": "Research journals are inappropriate for general public health education.",
+"D": "Bulletin board notices fail in communities with low literacy rates."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Epidemiology",
+"question_text": "What does the epidemiological triad consist of in communicable disease transmission?",
+"choices": [
+{"text": "Hospital, Doctor, and Patient", "is_correct": false},
+{"text": "Agent, Host, and Environment", "is_correct": true},
+{"text": "Vaccine, Syringe, and Cold Chain", "is_correct": false},
+{"text": "Assessment, Planning, and Evaluation", "is_correct": false}
+],
+"rationale": "The epidemiological triad models disease occurrence through the interaction of an infectious Agent, susceptible Host, and environmental factors.",
+"distractor_rationales": {
+"A": "Hospital and personnel represent care settings, not epidemiological triad elements.",
+"C": "Vaccines and syringes are intervention tools.",
+"D": "Assessment and planning form steps of the nursing process."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "immunisation programmes",
+"question_text": "Which disease has been successfully eradicated globally through concerted international public health immunization campaigns led by the WHO?",
+"choices": [
+{"text": "Poliomyelitis in all countries", "is_correct": false},
+{"text": "Smallpox", "is_correct": true},
+{"text": "Malaria", "is_correct": false},
+{"text": "Human Immunodeficiency Virus (HIV)", "is_correct": false}
+],
+"rationale": "Smallpox is the first and only human infectious disease successfully eradicated globally through mass vaccination campaigns.",
+"distractor_rationales": {
+"A": "Polio is near eradication but remaining endemic pockets persist.",
+"C": "Malaria eradication efforts remain ongoing using ITNs, chemoprevention, and vaccines.",
+"D": "HIV remains a major global public health pandemic without total eradication."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "disease surveillance",
+"question_text": "A public health nurse analyzes weekly clinic data and notes a sudden sharp spike in measles cases exceeding the baseline endemic threshold. What public health event is occurring?",
+"choices": [
+{"text": "An endemic baseline equilibrium", "is_correct": false},
+{"text": "A disease outbreak or epidemic", "is_correct": true},
+{"text": "A sporadic isolated medical anomaly", "is_correct": false},
+{"text": "A permanent global eradication milestone", "is_correct": false}
+],
+"rationale": "An epidemic (outbreak) occurs when the observed incidence of a disease clearly exceeds the expected baseline frequency (endemic threshold) in a given community.",
+"distractor_rationales": {
+"A": "Endemic baseline represents normal expected disease levels.",
+"C": "Sporadic cases occur infrequently and irregularly without clustering spikes.",
+"D": "Eradication implies worldwide elimination of the pathogen."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "community diagnosis",
+"question_text": "After completing a community health survey in a rural sub-district, the public health nurse identifies high rates of guinea worm or water-borne schistosomiasis linked to drinking untreated river water. What is the priority community nursing intervention?",
+"choices": [
+{"text": "Advise villagers to continue drinking untreated river water without changes", "is_correct": false},
+{"text": "Collaborate with local water sanitation agencies to sink boreholes, provide potable water, and educate on water boiling", "is_correct": true},
+{"text": "Close all schools and restrict all community farming activities permanently", "is_correct": false},
+{"text": "Prescribe broad-spectrum antibiotics to the entire district livestock population", "is_correct": false}
+],
+"rationale": "Addressing environmental determinants of health (potable water access, sanitation, and hygiene) is the cornerstone of public health nursing interventions.",
+"distractor_rationales": {
+"A": "Allowing untreated water consumption perpetuates water-borne parasitic transmission.",
+"C": "Closing schools and farming halts community economic life unnecessarily.",
+"D": "Antibiotics treat bacterial infections, whereas water-borne parasites require sanitation and filtration."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "health education",
+"question_text": "According to the Health Belief Model, what factor is most critical in motivating an individual in a community to adopt preventive health measures such as sleeping under insecticide-treated bed nets?",
+"choices": [
+{"text": "Believing that malaria is harmless and trivial", "is_correct": false},
+{"text": "Perceiving personal susceptibility to severe malaria and believing that net usage effectively prevents illness with manageable barriers", "is_correct": true},
+{"text": "Believing that mosquito bites are beneficial for blood circulation", "is_correct": false},
+{"text": "Ignoring health education campaigns completely", "is_correct": false}
+],
+"rationale": "The Health Belief Model posits that behavior change is driven by perceived susceptibility, perceived severity, perceived benefits of action, and perceived barriers.",
+"distractor_rationales": {
+"A": "Perceiving illness as trivial reduces motivation to prevent it.",
+"C": "Believing bites are beneficial prevents preventive action.",
+"D": "Ignoring education halts health promotion."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Epidemiology",
+"question_text": "What is the primary purpose of calculating the 'secondary attack rate' during a measles outbreak in a school dormitory?",
+"choices": [
+{"text": "To measure the speed and contagiousness of disease spread among susceptible contacts within a defined closed group", "is_correct": true},
+{"text": "To calculate total hospital electricity consumption bills", "is_correct": false},
+{"text": "To determine the architectural stability of dormitory buildings", "is_correct": false},
+{"text": "To measure the birth rate of the community", "is_correct": false}
+],
+"rationale": "Secondary attack rate measures how efficiently a pathogen spreads among susceptible household or institutional contacts exposed to a primary case.",
+"distractor_rationales": {
+"B": "Electricity bills are unrelated to epidemiological infection rates.",
+"C": "Architectural stability is evaluated by engineers, not epidemiologists.",
+"D": "Birth rates measure natality, not infectious disease transmission."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "immunisation programmes",
+"question_text": "A mother expresses fear that her infant experienced mild low-grade fever and localized soreness following a pentavalent vaccination yesterday. What should the nurse advise?",
+"choices": [
+{"text": "Report the nurse to police for poisoning the infant", "is_correct": false},
+{"text": "Reassure her that mild fever and soreness are common, expected minor adverse events following immunization (AEFI), and advise soothing care or paracetamol syrup", "is_correct": true},
+{"text": "Refuse to administer any future vaccinations to the child ever again", "is_correct": false},
+{"text": "Admit the infant immediately to the intensive care unit for major surgery", "is_correct": false}
+],
+"rationale": "Mild fever, pain, and swelling are common minor adverse events following immunization (AEFI) indicating normal immune system response, easily managed with reassurance and antipyretics.",
+"distractor_rationales": {
+"A": "Reporting for normal vaccine side effects creates unwarranted panic.",
+"C": "Withholding future vaccines leaves the child vulnerable to lethal childhood infections.",
+"D": "ICU admission is grossly unnecessary for minor expected vaccine soreness."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "disease surveillance",
+"question_text": "What distinguishes 'active disease surveillance' from 'passive disease surveillance'?",
+"choices": [
+{"text": "Active surveillance relies entirely on waiting for patients to show up at clinics.", "is_correct": false},
+{"text": "Active surveillance involves public health staff proactively visiting health facilities and communities to actively search for and report cases.", "is_correct": true},
+{"text": "Passive surveillance requires nurses to travel door-to-door daily.", "is_correct": false},
+{"text": "Passive surveillance is more expensive and labor-intensive than active surveillance.", "is_correct": false}
+],
+"rationale": "Active surveillance involves public health officers actively seeking out cases through facility visits and community outreach, whereas passive surveillance relies on routine clinic reporting.",
+"distractor_rationales": {
+"A": "Waiting for patients defines passive surveillance.",
+"C": "Door-to-door daily travel characterizes active outreach, not passive surveillance.",
+"D": "Active surveillance is more labor-intensive and costly than passive surveillance."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "community diagnosis",
+"question_text": "When prioritizing identified health problems during a community diagnosis workshop with village leaders in Ghana, which criteria should guide final decision-making?",
+"choices": [
+{"text": "Selecting problems that are easiest for the nurse to ignore", "is_correct": false},
+{"text": "Assessing magnitude, severity, feasibility of intervention, and community concern", "is_correct": true},
+{"text": "Choosing health issues that have no available solutions", "is_correct": false},
+{"text": "Focusing exclusively on rare medical anomalies affecting only one person", "is_correct": false}
+],
+"rationale": "Priority setting in community nursing evaluates disease magnitude, severity, community concern, and resource feasibility.",
+"distractor_rationales": {
+"A": "Ignoring problems violates public health nursing responsibilities.",
+"C": "Unsolvable problems waste scarce community health resources.",
+"D": "Prioritizing rare anomalies ignores major population health burdens like malaria."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "health education",
+"question_text": "What is the ultimate goal of public health nursing health education programs in community empowerment?",
+"choices": [
+{"text": "To foster self-reliance, health literacy, and community ownership over health determinants", "is_correct": true},
+{"text": "To create permanent dependence on foreign medical aid agencies", "is_correct": false},
+{"text": "To force compliance through authoritarian threats and penalties", "is_correct": false},
+{"text": "To restrict health information exclusively to medical doctors", "is_correct": false}
+],
+"rationale": "Community empowerment aims to build local health literacy and self-reliance so communities take active ownership of their health outcomes.",
+"distractor_rationales": {
+"B": "Permanent dependence undermines sustainable local development.",
+"C": "Authoritarian threats violate nursing ethics and client autonomy.",
+"D": "Health education is multidisciplinary and shared with the entire community."
+},
+"difficulty": "KNOWLEDGE"
+}
+]
+}
+]
+}

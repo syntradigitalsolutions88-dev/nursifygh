@@ -21,6 +21,9 @@ export interface User {
     subscription_expires_at: string | null
     has_active_subscription: boolean
     date_joined: string
+    is_ambassador: boolean
+    referral_code: string | null
+    referred_by: string | null
 }
 
 export interface LoginRequest {
@@ -42,6 +45,7 @@ export interface RegisterRequest {
     institution: string
     password: string
     password_confirm: string
+    referred_by?: string
 }
 
 export interface RefreshResponse {
@@ -292,4 +296,21 @@ export interface InitiateCheckoutRequest {
     amount_ghs?: string
     duration_days?: number
     reference?: string
+}
+
+// ---------------------------------------------------------------------------
+// Ambassador
+// ---------------------------------------------------------------------------
+export interface AmbassadorStats {
+    referral_code: string
+    total_earned: string
+    pending_payout: string
+    paid_out: string
+    referral_count: number
+    recent: {
+        amount: string
+        referred_email: string
+        is_paid_out: boolean
+        date: string
+    }[]
 }

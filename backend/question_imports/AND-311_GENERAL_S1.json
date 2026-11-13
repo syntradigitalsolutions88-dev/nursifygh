@@ -1,0 +1,742 @@
+{
+"program": "GENERAL",
+"level": 300,
+"semester": "S1",
+"course_code": "AND-311",
+"course_title": "Advanced Nursing III",
+"category": "FUNDAMENTALS",
+"topics": [
+"Advanced Nursing Assessment",
+"Fluid and Electrolyte Balance",
+"Nutritional Support",
+"Wound Care and Healing",
+"Advanced Clinical Procedures"
+],
+"questions": [
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "During a morning shift handover at Holy Family Hospital in Berekum, the nurse receives report on four patients. Which patient should the nurse assess FIRST?",
+"choices": [
+{
+"text": "A 45-year-old patient with uncomplicated malaria complaining of mild frontal headache and fever.",
+"is_correct": false
+},
+{
+"text": "A 60-year-old post-op laparotomy patient who reports sudden onset shortness of breath and pleuritic chest pain.",
+"is_correct": true
+},
+{
+"text": "A 30-year-old known hypertensive patient whose routine blood pressure reading is 142/90 mmHg.",
+"is_correct": false
+},
+{
+"text": "A 50-year-old patient with type 2 diabetes requesting assistance with morning personal hygiene.",
+"is_correct": false
+}
+],
+"rationale": "Sudden onset shortness of breath and pleuritic chest pain in a post-operative patient strongly suggest a pulmonary embolism, which is a life-threatening emergency requiring immediate intervention. Prioritization follows the ABCDE or urgent-over-non-urgent framework, making this patient the highest priority.",
+"distractor_rationales": {
+"A": "Mild headache and fever from malaria are expected findings that are stable and do not pose an immediate threat to life.",
+"C": "Stage 1 hypertension (142/90 mmHg) requires ongoing monitoring and provider notification, but it is not an acute emergency demanding immediate first attention.",
+"D": "Assisting with personal hygiene is an important nursing duty, but it is routine and non-urgent compared to a potential respiratory or cardiovascular crisis."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "When performing a systematic head-to-toe physical assessment on a patient admitted to the medical ward, what is the correct sequence of examination techniques for the abdomen?",
+"choices": [
+{
+"text": "Inspection, Palpation, Percussion, Auscultation",
+"is_correct": false
+},
+{
+"text": "Inspection, Auscultation, Percussion, Palpation",
+"is_correct": true
+},
+{
+"text": "Auscultation, Inspection, Palpation, Percussion",
+"is_correct": false
+},
+{
+"text": "Palpation, Percussion, Auscultation, Inspection",
+"is_correct": false
+}
+],
+"rationale": "The abdomen must be auscultated before percussion and palpation because manipulating the abdomen can alter bowel motility and false-up or false-down bowel sounds. Therefore, the standardized sequence is inspection first, followed immediately by auscultation, percussion, and finally palpation.",
+"distractor_rationales": {
+"A": "Palpating or percussing before auscultation stimulates bowel motility and distorts true baseline bowel sounds.",
+"C": "Inspection must always precede auscultation to visually assess skin integrity, contours, and pulsations before listening.",
+"D": "Starting with palpation is incorrect as it can alter bowel sounds and cause unnecessary pain before gentle examination."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A nurse is assessing a 28-year-old pregnant woman presenting to the district hospital with severe vomiting over three days. Which clinical finding best indicates severe extracellular fluid volume deficit?",
+"choices": [
+{
+"text": "Bounding peripheral pulses and moist mucous membranes",
+"is_correct": false
+},
+{
+"text": "Flat neck veins when supine and orthostatic hypotension",
+"is_correct": true
+},
+{
+"text": "A normal heart rate with clear lung fields bilaterally",
+"is_correct": false
+},
+{
+"text": "Pitting pedal edema and a slightly elevated blood pressure",
+"is_correct": false
+}
+],
+"rationale": "Fluid volume deficit causes hypovolemia, resulting in decreased venous return leading to flat neck veins and orthostatic hypotension when moving from lying to standing. These are classic signs of significant intravascular fluid depletion.",
+"distractor_rationales": {
+"A": "Bounding pulses and moist mucous membranes are characteristic of fluid volume excess, not deficit.",
+"C": "A normal heart rate in the face of severe vomiting is unlikely; tachycardia typically develops early to compensate for lost volume.",
+"D": "Pitting edema and elevated blood pressure indicate fluid overload or hypervolemia."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "Which of the following clinical documentation entries demonstrates the most accurate, objective, and legally defensible nursing assessment note?",
+"choices": [
+{
+"text": "Patient is uncooperative and lazy; refused to take morning medications and slept all day.",
+"is_correct": false
+},
+{
+"text": "Patient appears to be in severe pain, crying out loudly and refusing all nursing care.",
+"is_correct": false
+},
+{
+"text": "At 0800, patient stated 'my chest hurts,' heart rate 108 bpm, BP 138/84 mmHg, grimacing when moving.",
+"is_correct": true
+},
+{
+"text": "Patient seems fine, vital signs stable within normal limits, resting comfortably in bed.",
+"is_correct": false
+}
+],
+"rationale": "Objective documentation must include specific quotes, measurable vital signs, and observable behaviors without subjective value judgments or emotional labels. Option C provides concrete data points, direct quotes, and precise clinical observations.",
+"distractor_rationales": {
+"A": "Using judgmental terms like 'lazy' and 'uncooperative' is subjective, unprofessional, and legally indefensible.",
+"B": "Saying 'patient appears to be in severe pain' is somewhat subjective without pairing it with a validated pain scale score or specific physical indicators.",
+"D": "Phrases like 'seems fine' and 'stable within normal limits' are vague and lack objective numerical or descriptive evidence."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A nurse is triaging four patients arriving at the emergency department during a busy morning shift in Kumasi. Which patient requires immediate secondary assessment and medical intervention?",
+"choices": [
+{
+"text": "A 10-year-old child with a 2-day history of mild watery diarrhea and active skin turgor.",
+"is_correct": false
+},
+{
+"text": "A 35-year-old teacher with a throbbing migraine headache and nausea for 4 hours.",
+"is_correct": false
+},
+{
+"text": "A 55-year-old man with acute sickle cell vaso-occlusive crisis complaining of 9/10 bone pain.",
+"is_correct": true
+},
+{
+"text": "A 22-year-old student with a superficial abrasion on the forearm from a minor bicycle fall.",
+"is_correct": false
+}
+],
+"rationale": "Severe vaso-occlusive crisis in sickle cell disease causes excruciating ischemic pain and can rapidly precipitate acute chest syndrome or multi-organ failure. Prompt pain management, hydration, and assessment are critical.",
+"distractor_rationales": {
+"A": "Mild diarrhea with active skin turgor indicates stable hydration status and lower acuity.",
+"B": "A migraine headache is painful and distressing, but it is non-life-threatening compared to acute sickle cell crisis.",
+"D": "A superficial forearm abrasion requires basic first aid and wound cleansing but represents low-acuity care."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A 25-year-old male is admitted to the cholera treatment center with severe watery diarrhea (rice-water stools) and profound lethargy. Which intravenous fluid is the gold standard for initial rapid resuscitation?",
+"choices": [
+{
+"text": "5% Dextrose in Water (D5W)",
+"is_correct": false
+},
+{
+"text": "Ringer's Lactate (Normal Saline is also acceptable, but Ringer's replaces lost bicarbonate/electrolytes)",
+"is_correct": true
+},
+{
+"text": "0.45% Sodium Chloride (Half-Normal Saline)",
+"is_correct": false
+},
+{
+"text": "10% Dextrose in Normal Saline",
+"is_correct": false
+}
+],
+"rationale": "Ringer's Lactate is the preferred isotonic crystalloid solution for treating severe dehydration caused by cholera because its electrolyte composition closely mirrors extracellular fluid and helps correct metabolic acidosis.",
+"distractor_rationales": {
+"A": "D5W is hypotonic once dextrose is metabolized and will worsen intravascular depletion and hyponatremia.",
+"C": "Half-normal saline is hypotonic and shifts fluid into cells, failing to adequately restore intravascular volume in acute shock.",
+"D": "Hypertonic dextrose solutions pull intracellular fluid into the vascular space inappropriately and are not indicated for cholera resuscitation."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A nurse is supervising four student nurses managing patients on IV fluid therapy. Which patient should the nurse evaluate FIRST regarding potential fluid overload?",
+"choices": [
+{
+"text": "A 20-year-old student receiving maintenance IV Normal Saline at 84 mL/hr with clear breath sounds.",
+"is_correct": false
+},
+{
+"text": "A 68-year-old patient with chronic kidney disease receiving IV fluids who develops bilateral crackles in lung bases and dyspnea.",
+"is_correct": true
+},
+{
+"text": "A 40-year-old post-op patient drinking oral fluids well whose IV infusion is running slightly behind schedule.",
+"is_correct": false
+},
+{
+"text": "A 30-year-old patient with mild gastroenteritis receiving Ringer's Lactate whose intake and output are balanced.",
+"is_correct": false
+}
+],
+"rationale": "Patients with impaired renal function (chronic kidney disease) have compromised ability to excrete excess fluids, putting them at immediate risk for fluid overload and pulmonary edema when given IV fluids, manifested by crackles and dyspnea.",
+"distractor_rationales": {
+"A": "An infusion rate of 84 mL/hr in a healthy 20-year-old with clear breath sounds represents stable baseline maintenance therapy.",
+"C": "A lagging IV infusion when a patient is already tolerating oral fluids is a routine management issue, not an acute emergency.",
+"D": "Balanced intake and output with Ringer's Lactate indicates normal therapeutic response without signs of overload."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which clinical manifestation is most characteristic of severe hypokalemia in a patient taking loop diuretics?",
+"choices": [
+{
+"text": "Muscle weakness, lethargy, and cardiac arrhythmias",
+"is_correct": true
+},
+{
+"text": "Peaked T waves and ventricular fibrillation on ECG",
+"is_correct": false
+},
+{
+"text": "Hyperactive bowel sounds and abdominal cramping",
+"is_correct": false
+},
+{
+"text": "Paresthesia and muscle twitching progressing to tetany",
+"is_correct": false
+}
+],
+"rationale": "Potassium plays a vital role in skeletal and cardiac muscle function. Hypokalemia leads to generalized skeletal muscle weakness, fatigue, diminished reflexes, and dangerous cardiac conduction abnormalities (arrhythmias).",
+"distractor_rationales": {
+"B": "Peaked T waves and ventricular fibrillation are hallmark signs of hyperkalemia, not hypokalemia.",
+"C": "Hypokalemia typically causes decreased GI motility and paralytic ileus rather than hyperactive bowel sounds.",
+"D": "Paresthesias and tetany are classic signs of hypocalcemia or hypomagnesemia."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "An adult patient weighing 60 kg is prescribed IV infusion to run at 125 mL/hr using a standard infusion set with a drop factor of 20 drops/mL. Calculate the correct flow rate in drops per minute.",
+"choices": [
+{
+"text": "32 drops/min",
+"is_correct": false
+},
+{
+"text": "42 drops/min",
+"is_correct": true
+},
+{
+"text": "63 drops/min",
+"is_correct": false
+},
+{
+"text": "125 drops/min",
+"is_correct": false
+}
+],
+"rationale": "The formula for calculating drops per minute is: (Volume in mL / Time in minutes) x Drop factor. (125 mL / 60 mins) x 20 drops/mL = 2.083 x 20 = 41.66, which rounds to 42 drops per minute.",
+"distractor_rationales": {
+"A": "32 drops/min is an incorrect calculation resulting from improper formula application or wrong drop factor usage.",
+"C": "63 drops/min is an overestimate resulting from dividing by 30 instead of 60 minutes.",
+"D": "125 drops/min fails to account for the drop factor conversion and time divisor."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient admitted with prolonged vomiting and overuse of herbal alkaline concoctions exhibits shallow respirations, irritability, and muscle tetany. Laboratory results show an elevated pH and bicarbonate level. How should the nurse interpret these findings?",
+"choices": [
+{
+"text": "Respiratory acidosis due to carbon dioxide retention",
+"is_correct": false
+},
+{
+"text": "Metabolic acidosis due to bicarbonate loss",
+"is_correct": false
+},
+{
+"text": "Metabolic alkalosis due to loss of gastric acid and base ingestion",
+"is_correct": true
+},
+{
+"text": "Respiratory alkalosis due to hyperventilation from anxiety",
+"is_correct": false
+}
+],
+"rationale": "Prolonged vomiting causes loss of hydrochloric acid (gastric acid), and ingestion of alkaline traditional preparations increases systemic base, resulting in metabolic alkalosis characterized by elevated pH and elevated HCO3.",
+"distractor_rationales": {
+"A": "Respiratory acidosis is caused by hypoventilation leading to CO2 retention, not vomiting.",
+"B": "Metabolic acidosis involves low pH and low bicarbonate, typical of severe diarrhea or renal failure.",
+"D": "Respiratory alkalosis is primarily caused by hyperventilation lowering arterial CO2 levels."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutritional Support",
+"question_text": "A 52-year-old stroke patient at Korle-Bu Teaching Hospital requires nasogastric tube (NGT) feedings. What is the most reliable clinical method to confirm initial correct placement before administering the first feed?",
+"choices": [
+{
+"text": "Auscultating over the epigastric region while injecting 20 mL of air through the tube",
+"is_correct": false
+},
+{
+"text": "Checking the pH of aspirated fluid and obtaining an abdominal X-ray confirmation",
+"is_correct": true
+},
+{
+"text": "Immersing the proximal end of the tube in a glass of water to check for bubbling",
+"is_correct": false
+},
+{
+"text": "Inspecting the oral cavity to ensure the tube is not coiled in the back of the throat",
+"is_correct": false
+}
+],
+"rationale": "Abdominal X-ray is the gold standard for verifying NGT placement. Additionally, testing the pH of gastric aspirate (acidic pH < 5.5) provides reliable bedside confirmation before initiating feeds.",
+"distractor_rationales": {
+"A": "Auscultation with an air bolus is unreliable because air sound can be heard even if the tip is in the esophagus or upper airway.",
+"C": "Immersing the tube in water is unsafe and unreliable; air bubbling can occur with saliva or if the tube is misplaced in the trachea.",
+"D": "Inspecting the mouth only rules out obvious coiling in the pharynx but does not confirm whether the tube entered the stomach or lungs."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Support",
+"question_text": "When is total parenteral nutrition (TPN) primarily indicated over enteral nutrition in a hospitalized patient?",
+"choices": [
+{
+"text": "When the patient is mildly lethargic and refuses to eat hospital meals",
+"is_correct": false
+},
+{
+"text": "When the gastrointestinal tract is completely non-functional, obstructed, or inaccessible",
+"is_correct": true
+},
+{
+"text": "When the patient has mild dysphagia following a cerebrovascular accident",
+"is_correct": false
+},
+{
+"text": "When nutritional requirements can easily be met by oral soft diet supplements",
+"is_correct": false
+}
+],
+"rationale": "TPN delivers hypertonic nutrient solutions directly into the vascular system (central vein) and is reserved for patients with non-functional, obstructed, or severely diseased GI tracts where enteral feeding is impossible.",
+"distractor_rationales": {
+"A": "Mild lethargy and refusal to eat are indications for assisted feeding or oral supplements, not invasive TPN.",
+"C": "Mild dysphagia is safely managed via enteral access such as an NGT or PEG tube rather than central TPN.",
+"D": "If oral intake is sufficient or enteral tubes can be used, enteral nutrition is always preferred over parenteral nutrition to preserve gut integrity."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutritional Support",
+"question_text": "A nurse is preparing to administer intermittent bolus tube feeding to a patient via NGT. What is the essential first step the nurse must perform immediately before pouring the formula into the syringe?",
+"choices": [
+{
+"text": "Flush the tube with 100 mL of sterile cold water to lubricate the lumen",
+"is_correct": false
+},
+{
+"text": "Check gastric residual volume and verify tube placement",
+"is_correct": true
+},
+{
+"text": "Position the patient flat on their back to facilitate gravity flow",
+"is_correct": false
+},
+{
+"text": "Warm the feeding formula in a microwave oven to body temperature",
+"is_correct": false
+}
+],
+"rationale": "Checking gastric residual volume helps assess digestion tolerance and absorption, while verifying placement prevents aspiration pneumonia. Both must be done prior to every intermittent feed.",
+"distractor_rationales": {
+"A": "Flushing with large amounts of cold water before checking residuals is unnecessary and can cause cramping or excessive volume load.",
+"C": "Positioning the patient flat is dangerous and dramatically increases the risk of aspiration; the head of the bed must be elevated at least 30 to 45 degrees.",
+"D": "Microwaving formula creates hot spots that can burn the gastric mucosa; formula should always be fed at room temperature."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Support",
+"question_text": "During nutritional screening at a rural health clinic in Ghana, an 18-month-old toddler presents with bilateral pitting pedal edema, sparse discolored hair, and a distended abdomen. What nutritional disorder does this represent?",
+"choices": [
+{
+"text": "Marasmus",
+"is_correct": false
+},
+{
+"text": "Kwashiorkor",
+"is_correct": true
+},
+{
+"text": "Iron deficiency anemia",
+"is_correct": false
+},
+{
+"text": "Scurvy",
+"is_correct": false
+}
+],
+"rationale": "Kwashiorkor is a form of severe protein malnutrition characterized by edema (fluid retention due to low plasma oncotic pressure), dry brittle hair with pigment changes, and hepatomegaly, commonly seen when children are weaned onto starchy, low-protein diets.",
+"distractor_rationales": {
+"A": "Marasmus is characterized by severe emaciation and muscle wasting without prominent edema, resulting from total energy deficiency.",
+"C": "Iron deficiency anemia causes pallor, fatigue, and low hemoglobin, but not bilateral pitting pedal edema.",
+"D": "Scurvy is caused by vitamin C deficiency and presents with bleeding gums, petechiae, and joint pain."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutritional Support",
+"question_text": "A nurse is caring for four patients receiving nutritional support. Which patient should the nurse assess and prioritize FIRST?",
+"choices": [
+{
+"text": "A patient on intermittent NGT feeding who reports mild fullness after finishing a meal formula.",
+"is_correct": false
+},
+{
+"text": "A patient receiving TPN who suddenly develops chills, high fever, tachycardia, and a red central line insertion site.",
+"is_correct": true
+},
+{
+"text": "A patient requiring dietary counseling for mild gestational hypertension and low sodium intake.",
+"is_correct": false
+},
+{
+"text": "A patient with a PEG tube whose skin around the insertion site is intact with minimal dry serous crusting.",
+"is_correct": false
+}
+],
+"rationale": "Fever, chills, and tachycardia in a patient receiving total parenteral nutrition via a central line strongly suggest catheter-related bloodstream infection (CRBSI), a medical emergency requiring blood cultures and line evaluation.",
+"distractor_rationales": {
+"A": "Mild fullness after a bolus feed is a normal subjective sensation and not an acute emergency.",
+"C": "Dietary counseling for gestational hypertension is important and educational, but non-acute.",
+"D": "Minimal dry serous crusting around a mature PEG site is a normal finding requiring routine cleaning, not urgent intervention."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care and Healing",
+"question_text": "A 65-year-old bedridden patient in the surgical ward has a pressure injury on the sacrum where subcutaneous tissue is visible, but bone, tendon, and muscle are not exposed. How should the nurse stage this pressure injury?",
+"choices": [
+{
+"text": "Stage 1 Pressure Injury",
+"is_correct": false
+},
+{
+"text": "Stage 2 Pressure Injury",
+"is_correct": false
+},
+{
+"text": "Stage 3 Pressure Injury",
+"is_correct": true
+},
+{
+"text": "Stage 4 Pressure Injury",
+"is_correct": false
+}
+],
+"rationale": "A Stage 3 pressure injury involves full-thickness skin loss where adipose (subcutaneous) fat is visible in the ulcer, but bone, tendon, or muscle are not exposed. Slough or eschar may be present but does not obscure the depth of tissue loss.",
+"distractor_rationales": {
+"A": "Stage 1 is characterized by intact skin with non-blanchable erythema over a localized area.",
+"B": "Stage 2 involves partial-thickness skin loss with exposed dermis, presenting as a pink/red shallow open ulcer or intact/ruptured serum-filled blister.",
+"D": "Stage 4 involves full-thickness skin and tissue loss with exposed or directly palpable bone, tendon, or muscle."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care and Healing",
+"question_text": "A nurse is caring for a patient on the 5th day post-laparotomy. During a cough, the patient reports a sudden 'popping' sensation in the abdomen. Upon inspection, the nurse notes wound dehiscence with protruding loops of bowel. What is the IMMEDIATE nursing action?",
+"choices": [
+{
+"text": "Gently push the protruding bowel loops back into the abdominal cavity and apply a dry cotton bandage.",
+"is_correct": false
+},
+{
+"text": "Cover the wound and exposed organs with sterile saline-soaked gauze, place the patient in low Fowler's position with knees flexed, and notify the surgeon immediately.",
+"is_correct": true
+},
+{
+"text": "Administer an immediate oral painkiller and instruct the patient to perform deep breathing exercises.",
+"is_correct": false
+},
+{
+"text": "Leave the wound uncovered to dry out and prevent bacterial growth while waiting for the doctor.",
+"is_correct": false
+}
+],
+"rationale": "Evisceration is a surgical emergency. The nurse must immediately cover exposed organs with sterile, saline-moistened dressings to prevent drying and necrosis, position the patient in low Fowler's with flexed knees to reduce tension, and notify the surgical team.",
+"distractor_rationales": {
+"A": "Never attempt to push protruding viscera back into the abdominal cavity as this increases infection and trauma risks.",
+"C": "Oral painkillers are inappropriate because the patient must remain strictly nil per os (NPO) in preparation for emergency surgery.",
+"D": "Leaving organs uncovered causes rapid desiccation and necrosis of the bowel tissue."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care and Healing",
+"question_text": "Which of the following describes the proliferation phase of wound healing?",
+"choices": [
+{
+"text": "Vasoconstriction and platelet aggregation to achieve hemostasis",
+"is_correct": false
+},
+{
+"text": "Migration of leukocytes and macrophages to phagocytize debris and bacteria",
+"is_correct": false
+},
+{
+"text": "Granulation tissue formation, angiogenesis, and collagen deposition to fill the wound defect",
+"is_correct": true
+},
+{
+"text": "Remodeling of collagen fibers and scar tissue maturation over several months",
+"is_correct": false
+}
+],
+"rationale": "The proliferation phase focuses on rebuilding the defect with new tissue. Key activities include fibroblast proliferation, production of granulation tissue, angiogenesis (new blood vessels), and wound contraction.",
+"distractor_rationales": {
+"A": "Hemostasis is the immediate initial phase involving vasoconstriction and platelet plug formation.",
+"B": "Leukocyte migration and phagocytosis occur primarily during the inflammatory phase.",
+"D": "Collagen remodeling and scar maturation define the final remodeling (maturation) phase."
+},
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care and Healing",
+"question_text": "A nurse is evaluating four surgical patients with wound dressings. Which patient requires immediate clinical attention?",
+"choices": [
+{
+"text": "A patient with a clean surgical incision showing a 1 cm strip of dry, pinkish serosanguineous drainage.",
+"is_correct": false
+},
+{
+"text": "A patient whose surgical dressing is saturated with bright red blood, accompanied by a sudden drop in blood pressure and tachycardia.",
+"is_correct": true
+},
+{
+"text": "A patient 2 days post-op reporting mild, dull incisional pain managed effectively with prescribed oral analgesics.",
+"is_correct": false
+},
+{
+"text": "A patient whose abdominal wound has closed edges with slight surrounding warmth and mild pink erythema.",
+"is_correct": false
+}
+],
+"rationale": "Saturated bright red bleeding accompanied by hemodynamic instability (hypotension and tachycardia) indicates active postoperative hemorrhage, which is a surgical emergency requiring immediate pressure, intervention, and reporting.",
+"distractor_rationales": {
+"A": "Dry serosanguineous drainage in small amounts is a normal expected finding post-operatively.",
+"C": "Mild incisional pain managed well with analgesics is expected during recovery.",
+"D": "Slight warmth and mild pink erythema immediately surrounding an incision can be part of normal early inflammatory healing."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care and Healing",
+"question_text": "When performing sterile dressing changes on a deep surgical wound, which technique violates sterile principle guidelines?",
+"choices": [
+{
+"text": "Opening sterile packages by pulling the wrapper flaps away from the center first",
+"is_correct": false
+},
+{
+"text": "Reaching across the sterile field to grab a pair of sterile forceps placed on the far side",
+"is_correct": true
+},
+{
+"text": "Holding sterile items above waist level at all times during the procedure",
+"is_correct": false
+},
+{
+"text": "Keeping the outer 1-inch border of the sterile drape as contaminated",
+"is_correct": false
+}
+],
+"rationale": "Reaching across a sterile field is a direct violation of sterile technique because unsterile clothing or unmonitored parts of the arm may inadvertently brush over or contaminate the sterile area.",
+"distractor_rationales": {
+"A": "Pulling wrapper flaps away first prevents arms from contaminating the sterile contents inside.",
+"C": "Holding sterile items above waist level ensures they remain in the nurse's line of sight and within the sterile zone.",
+"D": "The outer 1-inch border of a sterile field is universally considered contaminated by touch."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Procedures",
+"question_text": "An elderly male patient with benign prostatic hyperplasia (BPH) is admitted with acute urinary retention. The doctor orders an indwelling urinary catheterization. When attempting catheter insertion, the nurse encounters firm resistance at the sphincter or prostate. What is the appropriate nursing action?",
+"choices": [
+{
+"text": "Apply firm, steady physical force to advance the catheter past the obstruction into the bladder.",
+"is_correct": false
+},
+{
+"text": "Stop immediately, ask the patient to take deep breaths, relax, and gently re-attempt while asking him to bear down as if voiding.",
+"is_correct": true
+},
+{
+"text": "Remove the catheter and insert a smaller gauge catheter without notifying anyone.",
+"is_correct": false
+},
+{
+"text": "Inflate the catheter balloon immediately to dilate the urethra.",
+"is_correct": false
+}
+],
+"rationale": "Encountering resistance requires stopping immediately to prevent urethral trauma, false passages, or bleeding. Asking the patient to relax, take deep breaths, and bear down helps relax the external urinary sphincter, facilitating smooth advancement.",
+"distractor_rationales": {
+"A": "Forcing a catheter against resistance causes severe urethral trauma, bleeding, and false passage creation.",
+"C": "While trying a smaller catheter or coudé catheter may be necessary, the physician or urology team should be consulted if BPH obstruction is severe.",
+"D": "Inflating the balloon in the urethra rather than the bladder causes excruciating pain and catastrophic urethral rupture."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Procedures",
+"question_text": "A nurse is collecting a midstream urine (MSU) specimen for culture and sensitivity from a female patient in the medical ward. Which instruction is most critical for ensuring an uncontaminated sample?",
+"choices": [
+{
+"text": "Collect the very first stream of morning urine directly into the sterile container.",
+"is_correct": false
+},
+{
+"text": "Clean the labia thoroughly from front to back using antiseptic wipes, let the initial urine stream pass into the toilet, then collect urine midstream.",
+"is_correct": true
+},
+{
+"text": "Wash the perineal area from back to front using regular bath soap and water.",
+"is_correct": false
+},
+{
+"text": "Refrigerate the urine specimen for 24 hours before sending it to the hospital laboratory.",
+"is_correct": false
+}
+],
+"rationale": "The midstream clean-catch technique requires cleansing from front to back to prevent introducing colonic bacteria, discarding the initial void to flush out urethral contaminants, and capturing the middle portion in a sterile container.",
+"distractor_rationales": {
+"A": "Collecting the initial stream captures normal urethral flora and skin contaminants, ruining the culture accuracy.",
+"C": "Wiping from back to front transfers E. coli and fecal bacteria into the urinary meatus, increasing contamination risk.",
+"D": "Refrigerating for 24 hours without immediate processing or preservative alters bacterial counts and invalidates culture results."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Procedures",
+"question_text": "A nurse is supervising four student nurses performing various clinical procedures. Which student action requires immediate intervention by the supervising nurse?",
+"choices": [
+{
+"text": "A student performing hand hygiene before and after donning sterile gloves for a dressing change.",
+"is_correct": false
+},
+{
+"text": "A student disconnecting a closed indwelling urinary catheter drainage system at the junction to obtain a quick routine urine sample.",
+"is_correct": true
+},
+{
+"text": "A student checking two patient identifiers before administering intravenous medications.",
+"is_correct": false
+},
+{
+"text": "A student maintaining the sterile field within the line of sight above waist level.",
+"is_correct": false
+}
+],
+"rationale": "Disconnecting an indwelling catheter from its drainage tubing breaks the closed urinary system, introducing bacteria and significantly increasing the risk of catheter-associated urinary tract infection (CAUTI). Urine samples must be aspirated via the port using a sterile syringe.",
+"distractor_rationales": {
+"A": "Performing hand hygiene before and after gloving is standard infection control practice.",
+"C": "Checking two patient identifiers is a core patient safety requirement before any medication administration.",
+"D": "Keeping sterile items in view and above the waist is essential to maintain sterility."
+},
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Clinical Procedures",
+"question_text": "A post-operative patient with an indwelling urinary catheter complains of sudden, intense lower abdominal discomfort, bladder spasms, and urgency. Upon checking the drainage tubing, the nurse observes zero urine output over the past 2 hours despite a patent bag. What should the nurse do FIRST?",
+"choices": [
+{
+"text": "Immediately remove the urinary catheter and insert a new one.",
+"is_correct": false
+},
+{
+"text": "Administer a potent diuretic such as intravenous furosemide.",
+"is_correct": false
+},
+{
+"text": "Check the tubing for kinks, twists, or external compression, and assess for bladder distension.",
+"is_correct": true
+},
+{
+"text": "Document normal findings and reassure the patient that bladder spasms are completely harmless.",
+"is_correct": false
+}
+],
+"rationale": "Sudden pain and zero urine output with bladder spasms typically indicate catheter obstruction (e.g., kinking, blood clots, or sediment). The nurse must first inspect the tubing for mechanical obstruction before considering irrigation or removal.",
+"distractor_rationales": {
+"A": "Removing the catheter prematurely without checking for simple kinks or clots is unnecessary and traumatic.",
+"B": "Giving a diuretic when urine flow is blocked by a kinked catheter will cause acute bladder overdistension and rupture.",
+"D": "Dismissing pain and zero output is negligent; obstruction causes bladder injury and autonomic dysreflexia or infection risks."
+},
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Procedures",
+"question_text": "What is the primary rationale for maintaining a closed urinary drainage system during catheterization?",
+"choices": [
+{
+"text": "To prevent the backflow of urine into the bladder and reduce the incidence of urinary tract infections",
+"is_correct": true
+},
+{
+"text": "To make it easier for nurses to empty the collection bag during morning shifts",
+"is_correct": false
+},
+{
+"text": "To ensure that urine output can be measured exactly once every 24 hours",
+"is_correct": false
+},
+{
+"text": "To eliminate the need for perineal hygiene in catheterized patients",
+"is_correct": false
+}
+],
+"rationale": "A closed urinary drainage system prevents bacteria from ascending into the bladder via the tubing and collection bag, which is the single most effective intervention for preventing catheter-associated urinary tract infections (CAUTI).",
+"distractor_rationales": {
+"B": "Ease of emptying is a secondary ergonomic design feature, not the primary clinical infection-control rationale.",
+"C": "Urine output is typically monitored hourly or every 4-8 hours in acute care, not just once every 24 hours.",
+"D": "Routine perineal hygiene remains mandatory for all catheterized patients regardless of a closed drainage system."
+},
+"difficulty": "KNOWLEDGE"
+}
+]
+}
