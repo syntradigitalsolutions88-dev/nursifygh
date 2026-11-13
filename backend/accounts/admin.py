@@ -4,12 +4,13 @@ from django import forms
 from django.contrib import admin
 from django.contrib.admin.forms import AdminAuthenticationForm
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.utils import timezone
+from django.utils.html import format_html
 from django.utils.translation import gettext_lazy as _
 
 from .models import AmbassadorCommission, User
 
 
-# Force Django Admin to use Email instead of Username for the login page
 class EmailAuthenticationForm(AdminAuthenticationForm):
     username = forms.EmailField(
         label="Email address",
@@ -19,25 +20,26 @@ class EmailAuthenticationForm(AdminAuthenticationForm):
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
-    """Custom admin surfaced around email login and subscription state."""
-
     login_form = EmailAuthenticationForm
-
     ordering = ("-date_joined",)
+
     list_display = (
         "email",
         "full_name",
         "level",
+        "access_status",
+        "has_paid",
+        "subscription_expires_at",
         "is_ambassador",
-        "referral_code",
-        "is_subscribed",
         "is_active",
         "is_staff",
     )
     list_filter = (
-        "level",
+        "has_paid",
         "is_subscribed",
         "is_ambassador",
+        "level",
+        "program",
         "is_active",
         "is_staff",
     )
@@ -47,17 +49,21 @@ class UserAdmin(BaseUserAdmin):
     fieldsets = (
         (None, {"fields": ("id", "email", "password")}),
         (_("Personal info"), {"fields": ("full_name", "phone_number", "institution")}),
-        (_("Academic"), {"fields": ("level",)}),
+        (_("Academic"), {"fields": ("level", "program")}),
         (_("Subscription"), {
             "fields": (
                 "is_subscribed",
+                "has_paid",
                 "subscription_expires_at",
                 "last_payment_reference",
-            )
+            ),
+            "description": (
+                "Students auto-start with a 3-day trial (has_paid=False). "
+                "When they pay via MoMo, tick has_paid=True and click 'Extend by 120 days' below."
+            ),
         }),
         (_("Ambassador Program"), {
             "fields": ("is_ambassador", "referral_code", "referred_by"),
-            "description": "Mark a user as an ambassador to enable the referral program. Referral codes are auto-generated on the frontend.",
         }),
         (_("Permissions"), {
             "fields": ("is_active", "is_staff", "is_superuser", "groups", "user_permissions"),
@@ -68,21 +74,56 @@ class UserAdmin(BaseUserAdmin):
     add_fieldsets = (
         (None, {
             "classes": ("wide",),
-            "fields": (
-                "email",
-                "full_name",
-                "level",
-                "password1",
-                "password2",
-            ),
+            "fields": ("email", "full_name", "level", "password1", "password2"),
         }),
     )
+
+    # ─── Colored "Access Status" badge ───────────────────────────────
+    @admin.display(description="Access Status")
+    def access_status(self, obj):
+        if not obj.is_subscribed or not obj.subscription_expires_at:
+            return format_html('<span style="color: #6b7280; font-weight: bold;">None</span>')
+
+        now = timezone.now()
+        if obj.subscription_expires_at < now:
+            return format_html('<span style="background: #dc2626; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">EXPIRED</span>')
+
+        delta = obj.subscription_expires_at - now
+        days = delta.days
+        hours = int(delta.total_seconds() / 3600) % 24
+
+        if obj.has_paid:
+            return format_html(
+                '<span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">PAID · {}d left</span>',
+                days,
+            )
+        return format_html(
+            '<span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">TRIAL · {}d {}h</span>',
+            days, hours,
+        )
+
+    # ─── Bulk actions ────────────────────────────────────────────────
+    actions = ["mark_as_paid_extend_120", "reset_to_trial"]
+
+    @admin.action(description="✅ Mark as PAID and extend by 120 days")
+    def mark_as_paid_extend_120(self, request, queryset):
+        count = 0
+        for user in queryset:
+            user.activate_subscription(days=120)
+            count += 1
+        self.message_user(request, f"{count} student(s) marked as PAID and extended by 120 days.")
+
+    @admin.action(description="⏳ Reset to 3-day trial")
+    def reset_to_trial(self, request, queryset):
+        count = 0
+        for user in queryset:
+            user.start_trial(days=3)
+            count += 1
+        self.message_user(request, f"{count} student(s) reset to 3-day trial.")
 
 
 @admin.register(AmbassadorCommission)
 class AmbassadorCommissionAdmin(admin.ModelAdmin):
-    """Admin view for tracking and paying out ambassador commissions."""
-
     list_display = (
         "ambassador_email",
         "referred_student_email",
@@ -103,21 +144,18 @@ class AmbassadorCommissionAdmin(admin.ModelAdmin):
         }),
         (_("Payout"), {
             "fields": ("is_paid_out",),
-            "description": "Tick 'is paid out' after you have sent the MoMo payment. This updates the ambassador's dashboard immediately.",
+            "description": "Tick 'is paid out' after you have sent the MoMo payment.",
         }),
     )
 
     def ambassador_email(self, obj):
         return obj.ambassador.email
     ambassador_email.short_description = "Ambassador"
-    ambassador_email.admin_order_field = "ambassador__email"
 
     def referred_student_email(self, obj):
         return obj.referred_student.email if obj.referred_student else "—"
     referred_student_email.short_description = "Referred Student"
-    referred_student_email.admin_order_field = "referred_student__email"
 
     def payout_due_date(self, obj):
         return obj.payout_due_date.strftime("%d %b %Y")
     payout_due_date.short_description = "Payout Due"
-    payout_due_date.admin_order_field = "created_at"

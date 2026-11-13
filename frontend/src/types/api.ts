@@ -18,6 +18,8 @@ export interface User {
     exam_date: string | null
     has_seen_tour: boolean
     is_subscribed: boolean
+    has_paid: boolean
+    is_on_trial: boolean
     subscription_expires_at: string | null
     has_active_subscription: boolean
     date_joined: string

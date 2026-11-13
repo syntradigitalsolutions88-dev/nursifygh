@@ -2,11 +2,8 @@
 
 from __future__ import annotations
 
-from datetime import timedelta
-
 from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
-from django.utils import timezone
 from rest_framework import serializers
 
 from .models import AmbassadorCommission, ClinicalLog, ClinicalSkill
@@ -17,8 +14,6 @@ User = get_user_model()
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, min_length=8, validators=[validate_password])
     password_confirm = serializers.CharField(write_only=True)
-
-    # Allow referred_by to be passed during signup
     referred_by = serializers.CharField(required=False, allow_blank=True, allow_null=True)
 
     class Meta:
@@ -38,18 +33,15 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     def create(self, validated_data: dict) -> User:
         password = validated_data.pop("password")
         user = User.objects.create_user(password=password, **validated_data)
-
-        # Give new users a 3-day free trial (auto-grants access to everything)
-        user.is_subscribed = True
-        user.subscription_expires_at = timezone.now() + timedelta(days=3)
-        user.save(update_fields=["is_subscribed", "subscription_expires_at"])
-
+        # Grant a 3-day free trial
+        user.start_trial(days=3)
         return user
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
     level_display = serializers.CharField(source="get_level_display", read_only=True)
     program_display = serializers.CharField(source="get_program_display", read_only=True)
+    is_on_trial = serializers.BooleanField(read_only=True)
 
     class Meta:
         model = User
@@ -58,13 +50,13 @@ class UserProfileSerializer(serializers.ModelSerializer):
             "level", "level_display",
             "program", "program_display",
             "institution", "exam_date", "has_seen_tour",
-            "is_subscribed", "subscription_expires_at",
+            "is_subscribed", "has_paid", "is_on_trial", "subscription_expires_at",
             "has_active_subscription", "date_joined",
             "is_ambassador", "referral_code", "referred_by",
         )
         read_only_fields = (
-            "id", "email", "is_subscribed", "subscription_expires_at",
-            "has_active_subscription", "date_joined",
+            "id", "email", "is_subscribed", "has_paid", "is_on_trial",
+            "subscription_expires_at", "has_active_subscription", "date_joined",
             "is_ambassador", "referral_code",
         )
 

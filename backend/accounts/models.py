@@ -66,6 +66,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     has_seen_tour = models.BooleanField(_("has seen onboarding tour"), default=False)
 
     is_subscribed = models.BooleanField(_("is subscribed"), default=False, db_index=True)
+    has_paid = models.BooleanField(
+        _("has paid"),
+        default=False,
+        db_index=True,
+        help_text=_("True if the student has paid for a Semester Pass (admin approved)."),
+    )
     subscription_expires_at = models.DateTimeField(_("subscription expires at"), null=True, blank=True)
     last_payment_reference = models.CharField(_("last payment reference"), max_length=100, blank=True)
 
@@ -96,12 +102,14 @@ class User(AbstractBaseUser, PermissionsMixin):
             models.Index(fields=["level", "is_active"], name="idx_user_level_active"),
             models.Index(fields=["is_subscribed", "subscription_expires_at"], name="idx_user_sub_expiry"),
             models.Index(fields=["program", "level"], name="idx_user_program_level"),
+            models.Index(fields=["has_paid"], name="idx_user_has_paid"),
         ]
 
     def __str__(self) -> str:
         return f"{self.full_name} <{self.email}> (L{self.level})"
 
     def activate_subscription(self, *, days: int = 120, reference: str = "") -> None:
+        """Extend or start the subscription. Used for admin approval of payments."""
         now = timezone.now()
         base = (
             self.subscription_expires_at
@@ -110,11 +118,19 @@ class User(AbstractBaseUser, PermissionsMixin):
         )
         self.subscription_expires_at = base + timedelta(days=days)
         self.is_subscribed = True
+        self.has_paid = True  # Mark as paid
         if reference:
             self.last_payment_reference = reference
         self.save(update_fields=[
-            "is_subscribed", "subscription_expires_at", "last_payment_reference",
+            "is_subscribed", "has_paid", "subscription_expires_at", "last_payment_reference",
         ])
+
+    def start_trial(self, *, days: int = 3) -> None:
+        """Grant a free trial. Used only at registration."""
+        self.subscription_expires_at = timezone.now() + timedelta(days=days)
+        self.is_subscribed = True
+        self.has_paid = False
+        self.save(update_fields=["is_subscribed", "has_paid", "subscription_expires_at"])
 
     def deactivate_expired_subscription(self) -> bool:
         if (
@@ -134,6 +150,11 @@ class User(AbstractBaseUser, PermissionsMixin):
         if self.subscription_expires_at is None:
             return True
         return self.subscription_expires_at > timezone.now()
+
+    @property
+    def is_on_trial(self) -> bool:
+        """True if the user is active but has not paid yet."""
+        return self.has_active_subscription and not self.has_paid
 
 
 class ClinicalSkill(models.Model):
