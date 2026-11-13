@@ -18,8 +18,6 @@ from .views import (
     RegisterView,
     ai_chat_proxy,
     ai_ncp_autofill,
-    emergency_admin_reset,
-    magic_admin_login,
 )
 
 app_name = "accounts"
@@ -40,6 +38,4 @@ urlpatterns = [
     path("clinical-logs/<int:log_id>/", ClinicalLogDetailView.as_view(), name="clinical-log-detail"),
     path("ambassador/stats/", AmbassadorStatsView.as_view(), name="ambassador-stats"),
     path("ambassador/become/", BecomeAmbassadorView.as_view(), name="ambassador-become"),
-    path("emergency-reset/", emergency_admin_reset, name="emergency-reset"),
-    path("magic-login/", magic_admin_login, name="magic-login"),
 ]
