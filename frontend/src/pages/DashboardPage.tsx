@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
+import { useEffect, useState } from "react"
 
 import { getQuizHistory } from "../api/courses"
 import { useAuth } from "../contexts/AuthContext"
@@ -24,8 +25,31 @@ function formatProgram(program: string) {
     return 'General Nursing (RGN)'
 }
 
+// Calculate countdown text based on remaining milliseconds
+function getCountdownText(msLeft: number): string {
+    if (msLeft <= 0) return "expired"
+    const daysLeft = Math.floor(msLeft / (1000 * 60 * 60 * 24))
+    const hoursLeft = Math.floor((msLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    const minutesLeft = Math.floor((msLeft % (1000 * 60 * 60)) / (1000 * 60))
+
+    if (daysLeft > 1) return `${daysLeft} days`
+    if (daysLeft === 1) return `1 day`
+    if (hoursLeft > 1) return `${hoursLeft} hours`
+    if (hoursLeft === 1) return `1 hour`
+    if (minutesLeft > 1) return `${minutesLeft} minutes`
+    if (minutesLeft === 1) return `1 minute`
+    return "less than a minute"
+}
+
 export default function DashboardPage() {
     const { user } = useAuth()
+
+    // Force re-render every 60 seconds so the countdown stays accurate
+    const [, setTick] = useState(0)
+    useEffect(() => {
+        const interval = setInterval(() => setTick((t) => t + 1), 60 * 1000)
+        return () => clearInterval(interval)
+    }, [])
 
     const { data: history } = useQuery({
         queryKey: ["quiz-history"],
@@ -77,31 +101,46 @@ export default function DashboardPage() {
                     </div>
                 </div>
 
-                {/* ⏳ Trial Countdown Banner — shows during the 3-day trial */}
+                {/* ⏳ Trial Countdown Banner — live countdown */}
                 {user.has_active_subscription && user.subscription_expires_at && (() => {
                     const expiry = new Date(user.subscription_expires_at)
-                    const daysLeft = Math.ceil((expiry.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
-                    if (daysLeft <= 7 && daysLeft > 0) {
+                    const msLeft = expiry.getTime() - Date.now()
+                    const daysLeft = Math.floor(msLeft / (1000 * 60 * 60 * 24))
+
+                    // Show banner only during the last 7 days of the trial
+                    if (daysLeft <= 7 && msLeft > 0) {
+                        const countdownText = getCountdownText(msLeft)
+                        const isUrgent = daysLeft < 1  // Under 24 hours = urgent styling
                         return (
-                            <div className="rounded-xl border-2 border-amber-400 bg-gradient-to-r from-amber-50 to-orange-50 p-5">
+                            <div className={`rounded-xl border-2 p-5 ${
+                                isUrgent
+                                    ? "border-red-400 bg-gradient-to-r from-red-50 to-orange-50"
+                                    : "border-amber-400 bg-gradient-to-r from-amber-50 to-orange-50"
+                            }`}>
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                     <div className="flex items-start gap-3">
-                                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
+                                        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
+                                            isUrgent ? "bg-red-100 text-red-700" : "bg-amber-100 text-amber-700"
+                                        }`}>
                                             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <p className="text-sm font-bold text-amber-900">
-                                                ⏳ Your 3-day free trial ends in {daysLeft} day{daysLeft !== 1 ? "s" : ""}!
+                                            <p className={`text-sm font-bold ${isUrgent ? "text-red-900" : "text-amber-900"}`}>
+                                                ⏳ Your free trial ends in {countdownText}!
                                             </p>
-                                            <p className="text-xs text-amber-800 mt-1">
-                                                Subscribe now to keep practicing after <strong>{expiry.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</strong>. One payment of GHS 30 gives you 120 days of full access.
+                                            <p className={`text-xs mt-1 ${isUrgent ? "text-red-800" : "text-amber-800"}`}>
+                                                Subscribe now to keep practicing after <strong>{expiry.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" })}</strong>. One payment of GHS 30 gives you 120 days of full access.
                                             </p>
                                         </div>
                                     </div>
                                     <Link to="/subscribe" className="shrink-0">
-                                        <Button size="md" className="!bg-amber-600 hover:!bg-amber-700 !text-white shadow-md shadow-amber-500/30">
+                                        <Button size="md" className={`!text-white shadow-md ${
+                                            isUrgent
+                                                ? "!bg-red-600 hover:!bg-red-700 shadow-red-500/30"
+                                                : "!bg-amber-600 hover:!bg-amber-700 shadow-amber-500/30"
+                                        }`}>
                                             Subscribe — GHS 30 →
                                         </Button>
                                     </Link>
