@@ -6,8 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      // THIS IS THE KILL SWITCH
-      selfDestroying: true, 
+      // We removed selfDestroying. We are fixing the actual CSS now.
       registerType: 'autoUpdate',
       manifest: {
         name: 'NursifyGH',
@@ -31,4 +30,9 @@ export default defineConfig({
       }
     })
   ],
+  build: {
+    // THIS IS THE FIX: Stop Vite from stripping your Tailwind classes
+    cssMinify: false, 
+    minify: false,
+  }
 })
