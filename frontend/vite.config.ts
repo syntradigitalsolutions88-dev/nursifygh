@@ -7,7 +7,10 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+        navigateFallback: null, // Let Vercel handle routing, don't cache HTML blindly
+      },
       manifest: {
         name: 'NursifyGH',
         short_name: 'NursifyGH',
