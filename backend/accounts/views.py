@@ -642,19 +642,24 @@ def ai_ncp_autofill(request):
         return Response({"error": "AI is currently unavailable."}, status=500)
 
 
-# TEMPORARY: one-time admin reset — DELETE AFTER USE
+# TEMPORARY: one-time admin nuke and recreate — DELETE AFTER USE
 @api_view(["GET"])
 @permission_classes([AllowAny])
 def emergency_admin_reset(request):
     if request.query_params.get("k") != "KillSwitch99":
         return Response({"error": "no"}, status=403)
     try:
-        u = User.objects.get(email="syntradigitalsolutions88@gmail.com")
-        u.set_password("Nursify2026!")
-        u.is_staff = True
-        u.is_superuser = True
-        u.is_active = True
-        u.save()
-        return Response({"success": "Password is Nursify2026!"})
-    except User.DoesNotExist:
-        return Response({"error": "Admin user not found"}, status=404)
+        # Delete the old broken admin
+        User.objects.filter(email="syntradigitalsolutions88@gmail.com").delete()
+        
+        # Create a brand new one from scratch
+        User.objects.create_superuser(
+            email="syntradigitalsolutions88@gmail.com",
+            full_name="Syntra Admin",
+            password="Nursify2026!",
+            level=300,
+            program="GENERAL",
+        )
+        return Response({"success": "Admin deleted and recreated! Password: Nursify2026!"})
+    except Exception as e:
+        return Response({"error": str(e)}, status=500)
