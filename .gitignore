@@ -36,3 +36,8 @@ Thumbs.db
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+# ---- Local backups (do not commit) ----
+*.bak
+*.buggy.bak
+backups/
+question_imports/*.BACKUP.json
