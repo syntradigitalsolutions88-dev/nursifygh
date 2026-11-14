@@ -54,42 +54,47 @@ export default function AmbassadorPage() {
     if (user && !user.is_ambassador) {
         return (
             <AppShell>
-                <div className="max-w-2xl mx-auto py-12 px-4">
-                    <div className="rounded-2xl bg-gradient-to-br from-brand-900 via-brand-800 to-brand-900 p-8 sm:p-12 text-white text-center shadow-2xl">
-                        <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-brand-500/20 text-brand-300 mb-6">
-                            <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </div>
-                        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Become a NursifyGH Ambassador</h1>
-                        <p className="text-brand-100 text-lg mb-8 max-w-lg mx-auto leading-relaxed">
-                            Share NursifyGH with your classmates and earn <strong className="text-white">GHS 4.50</strong> (15%)
-                            for every student who subscribes using your unique referral code.
-                        </p>
+                <div className="max-w-2xl mx-auto py-6 px-4">
+                    <div className="rounded-2xl bg-gradient-to-br from-brand-900 via-brand-800 to-brand-900 p-6 sm:p-10 text-white shadow-2xl">
+                        <div className="text-center">
+                            <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-500/20 text-brand-300 mb-4">
+                                <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <h1 className="text-2xl sm:text-3xl font-bold mb-2">Earn GHS 4.50 per Referral</h1>
+                            <p className="text-brand-100 text-sm sm:text-base mb-6 max-w-md mx-auto leading-relaxed">
+                                Share NursifyGH with your classmates. You earn 15% commission for every student who subscribes with your code.
+                            </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                            <Button
+                                size="lg"
+                                onClick={() => becomeMutation.mutate()}
+                                disabled={becomeMutation.isPending}
+                                className="!bg-brand-500 hover:!bg-brand-400 !text-brand-950 font-bold px-10 h-14 text-base shadow-lg shadow-brand-500/30 w-full sm:w-auto"
+                            >
+                                {becomeMutation.isPending ? "Activating…" : "Activate my referral code →"}
+                            </Button>
+
+                            <p className="mt-3 text-xs text-brand-300">
+                                Free to activate. Takes 1 second.
+                            </p>
+                        </div>
+
+                        <div className="mt-8 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-3">
                             {[
                                 { label: "Get your code", value: "Instantly" },
                                 { label: "Per referral", value: "GHS 4.50" },
                                 { label: "Payout", value: "3 days" },
                             ].map((item) => (
-                                <div key={item.label} className="rounded-xl bg-white/10 border border-white/20 p-4 backdrop-blur-sm">
-                                    <p className="text-xs font-semibold text-brand-200 uppercase tracking-wider">{item.label}</p>
-                                    <p className="mt-2 text-xl font-bold text-white">{item.value}</p>
+                                <div key={item.label} className="rounded-xl bg-white/10 border border-white/20 p-4 text-center">
+                                    <p className="text-[10px] font-semibold text-brand-200 uppercase tracking-wider">{item.label}</p>
+                                    <p className="mt-1 text-lg font-bold text-white">{item.value}</p>
                                 </div>
                             ))}
                         </div>
 
-                        <Button
-                            size="lg"
-                            onClick={() => becomeMutation.mutate()}
-                            disabled={becomeMutation.isPending}
-                            className="!bg-brand-500 hover:!bg-brand-400 !text-brand-950 font-bold px-10 h-14 text-base shadow-lg shadow-brand-500/30"
-                        >
-                            {becomeMutation.isPending ? "Activating…" : "Activate my referral code →"}
-                        </Button>
-
-                        <p className="mt-6 text-xs text-brand-300 max-w-md mx-auto">
+                        <p className="mt-6 text-xs text-brand-300 text-center max-w-md mx-auto">
                             You must be a subscribed student to earn commissions. Codes are unique and tied to your account.
                         </p>
                     </div>
@@ -119,7 +124,6 @@ export default function AmbassadorPage() {
     return (
         <AppShell>
             <div className="max-w-5xl mx-auto space-y-6 pb-12 px-4">
-
                 <div>
                     <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Ambassador Program</p>
                     <h1 className="text-3xl font-bold text-on-surface mt-1">Your Dashboard</h1>
