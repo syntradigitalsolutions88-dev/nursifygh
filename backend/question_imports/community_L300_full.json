@@ -1,0 +1,3529 @@
+{
+  "courses": [
+    {
+      "course_code": "NPN-311-C",
+      "course_title": "Nursing Process",
+      "category": "FUNDAMENTALS",
+      "semester": "S1",
+      "topics": [
+        "Assessment",
+        "Nursing Diagnosis",
+        "Planning",
+        "Implementation",
+        "Evaluation"
+      ],
+      "questions": [
+        {
+          "topic": "Assessment",
+          "question_text": "During a community home visit in a rural CHPS zone, a community health nurse assesses a postpartum mother. Which finding represents subjective data?",
+          "choices": [
+            {
+              "text": "Temperature of 38.2°C measured with a digital thermometer",
+              "is_correct": false
+            },
+            {
+              "text": "Complaints of lower abdominal cramping and lochia rubra",
+              "is_correct": true
+            },
+            {
+              "text": "Purulent foul-smelling discharge on the perineal pad",
+              "is_correct": false
+            },
+            {
+              "text": "Uterine fundus tender and boggy upon palpation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because subjective data consists of symptoms verbally reported by the patient, such as complaints of cramping. Temperature is objective data measured by the nurse. Purulent discharge is an objective visual finding. A boggy fundus is an objective palpation finding.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Nursing Diagnosis",
+          "question_text": "A nurse formulates a PES nursing diagnosis for a patient with severe malaria in a district hospital. Which component represents the 'E' (Etiology)?",
+          "choices": [
+            {
+              "text": "Risk for fluid volume deficit",
+              "is_correct": false
+            },
+            {
+              "text": "Plasmodium falciparum infection and persistent vomiting",
+              "is_correct": true
+            },
+            {
+              "text": "Inability to maintain oral rehydration therapy",
+              "is_correct": false
+            },
+            {
+              "text": "Dehydration and electrolyte imbalance",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the etiology ('E') identifies the physiological or situational cause or risk factors related to the problem. The diagnostic label is the problem statement. The signs and symptoms form the defining characteristics ('S'). Dehydration is a consequence rather than the root etiology.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A community health nurse arrives at a CHPS compound and receives handover for four clients. Which client should the nurse assess first?",
+          "choices": [
+            {
+              "text": "A 2-year-old child with mild dehydration due to acute watery diarrhea",
+              "is_correct": false
+            },
+            {
+              "text": "A 30-year-old antenatal client at 34 weeks gestation complaining of severe headache and blurred vision",
+              "is_correct": true
+            },
+            {
+              "text": "A 65-year-old known hypertensive client with a BP of 130/85 mmHg",
+              "is_correct": false
+            },
+            {
+              "text": "An 8-month-old infant brought for routine measles immunization",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because severe headache and blurred vision at 34 weeks gestation are classic warning signs of impending eclampsia, requiring immediate life-saving intervention. Mild dehydration requires attention but is stable compared to pre-eclampsia. A BP of 130/85 is within acceptable controlled limits. Routine immunization is non-emergent.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "In an outreach clinic at a sub-district health center, which patient must the nurse prioritize for immediate medical referral?",
+          "choices": [
+            {
+              "text": "A 4-year-old with a mid-upper arm circumference (MUAC) of 10.5 cm and bilateral pitting edema",
+              "is_correct": true
+            },
+            {
+              "text": "A 5-year-old with a healed superficial skin abrasion on the right knee",
+              "is_correct": false
+            },
+            {
+              "text": "A 3-year-old due for vitamin A supplementation",
+              "is_correct": false
+            },
+            {
+              "text": "A 2-year-old with a mild upper respiratory tract infection and no respiratory distress",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a MUAC under 11.5 cm with bilateral pitting edema indicates Severe Acute Malnutrition (SAM) with kwashiorkor, an emergency requiring inpatient therapeutic care. A skin abrasion is minor and self-limiting. Vitamin A supplementation is routine preventive care. Mild URTI without distress can be managed outpatient.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Planning",
+          "question_text": "Which of the following client goals is written in correct, measurable SMART format for a diabetic patient attending a health center clinic?",
+          "choices": [
+            {
+              "text": "Client will understand how to manage diabetes mellitus by next week",
+              "is_correct": false
+            },
+            {
+              "text": "Client will demonstrate correct self-monitoring of blood glucose using a glucometer before discharge",
+              "is_correct": true
+            },
+            {
+              "text": "Nurse will teach the client proper foot care techniques during the clinic session",
+              "is_correct": false
+            },
+            {
+              "text": "Client will never experience high blood sugar levels again",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because it is specific, measurable, behavioral, and time-bound by specifying the exact action prior to discharge. Understanding is vague and difficult to measure objectively. Focusing on nurse actions rather than client outcomes violates goal-writing principles. Achieving zero high blood sugar ever is unrealistic.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Implementation",
+          "question_text": "When executing a nursing care plan during a home visit, what is the primary rationale for involving the family in the intervention?",
+          "choices": [
+            {
+              "text": "To reduce the legal liability of the community health nurse",
+              "is_correct": false
+            },
+            {
+              "text": "To ensure cultural acceptability and adherence to the care plan in the home setting",
+              "is_correct": true
+            },
+            {
+              "text": "To replace the need for professional health worker follow-up visits",
+              "is_correct": false
+            },
+            {
+              "text": "To shift all nursing responsibilities onto household members",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because family involvement fosters cultural alignment, increases health literacy, and significantly improves health outcome adherence at home. Legal liability is not the primary clinical driver. Family members support but do not replace professional nursing oversight. Responsibilities are shared, not shifted entirely.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Evaluation",
+          "question_text": "A community health nurse evaluates a community health education program on clean water storage. Which finding indicates the intervention was successful?",
+          "choices": [
+            {
+              "text": "Community members verbally state they enjoyed the nursing lecture",
+              "is_correct": false
+            },
+            {
+              "text": "One hundred percent of households covered their drinking water containers during a follow-up inspection",
+              "is_correct": true
+            },
+            {
+              "text": "The local assemblyman donated funds for community water pumps",
+              "is_correct": false
+            },
+            {
+              "text": "The nurse distributed fifty flyers during the durbar",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because evaluation measures behavioral change and outcome achievement, shown here by proper water covering. Enjoying a lecture only measures satisfaction, not behavior change. Financial donation reflects resource mobilization rather than direct educational impact. Distributing flyers measures output, not outcome.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Assessment",
+          "question_text": "During an initial community assessment in a farming village, the nurse gathers demographic data. This phase of the nursing process is primarily aimed at:",
+          "choices": [
+            {
+              "text": "Identifying actual or potential community health needs and problems",
+              "is_correct": true
+            },
+            {
+              "text": "Treating diagnosed illnesses of individual residents",
+              "is_correct": false
+            },
+            {
+              "text": "Evaluating the financial status of the district health directorate",
+              "is_correct": false
+            },
+            {
+              "text": "Administering mass vaccinations without prior consent",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because community assessment is designed to systematically gather data to identify health needs, assets, and gaps. Treating individual illnesses occurs during implementation. Evaluating financial status pertains to administrative audits. Administering mass vaccinations violates ethical consent protocols.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Nursing Diagnosis",
+          "question_text": "Which nursing diagnosis is most appropriate for a pregnant teenager in a rural community exhibiting signs of social withdrawal and inadequate antenatal attendance?",
+          "choices": [
+            {
+              "text": "Ineffective health maintenance related to lack of social support and adolescent pregnancy",
+              "is_correct": true
+            },
+            {
+              "text": "Deficient fluid volume related to excessive vomiting",
+              "is_correct": false
+            },
+            {
+              "text": "Impaired gas exchange related to lower respiratory tract infection",
+              "is_correct": false
+            },
+            {
+              "text": "Activity intolerance related to generalized muscle weakness",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because poor ANC attendance and withdrawal reflect ineffective health maintenance linked to her psychosocial context. Deficient fluid volume pertains to dehydration. Impaired gas exchange relates to respiratory pathology. Activity intolerance is unrelated to social withdrawal.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Planning",
+          "question_text": "When prioritizing nursing diagnoses for a patient presenting with multiple health challenges at a CHPS zone, the nurse should use which principle?",
+          "choices": [
+            {
+              "text": "Addressing chronic aesthetic concerns before acute physiological stability",
+              "is_correct": false
+            },
+            {
+              "text": "Applying Maslow's hierarchy of human needs, prioritizing life-threatening physiological needs first",
+              "is_correct": true
+            },
+            {
+              "text": "Addressing whatever problem the patient finds easiest to talk about",
+              "is_correct": false
+            },
+            {
+              "text": "Tackling psychosocial issues before securing airway, breathing, and circulation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Maslow's hierarchy dictates that physiological survival needs (airway, breathing, circulation, nutrition) take precedence over higher-level needs. Addressing aesthetic issues first violates clinical safety. Ease of discussion does not determine clinical urgency. Psychosocial issues are secondary to acute physiological stability.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Implementation",
+          "question_text": "A community health nurse is teaching mothers how to prepare Oral Rehydration Salts (ORS) at home. Which action demonstrates the correct implementation technique?",
+          "choices": [
+            {
+              "text": "Instructing mothers to dissolve one sachet in exactly one liter of safe, clean drinking water",
+              "is_correct": true
+            },
+            {
+              "text": "Directing mothers to mix the sachet powder in a half cup of concentrated palm wine",
+              "is_correct": false
+            },
+            {
+              "text": "Telling mothers to boil the prepared ORS solution for twenty minutes before administration",
+              "is_correct": false
+            },
+            {
+              "text": "Advising mothers to store the prepared ORS solution for up to one week at room temperature",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Ghana Health Service and WHO guidelines specify dissolving one ORS sachet in one liter of clean water. Palm wine contains alcohol and inappropriate solutes. Boiling destroys electrolyte balance and is unnecessary. Prepared ORS must be discarded after 24 hours.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Evaluation",
+          "question_text": "A nurse reviews the nursing care plan for a patient with a chronic leg ulcer after two weeks of home dressing changes. What is the appropriate next step if wound size has increased?",
+          "choices": [
+            {
+              "text": "Discontinue the care plan and document that the patient is non-compliant",
+              "is_correct": false
+            },
+            {
+              "text": "Reassess the wound, modify the nursing diagnosis and interventions, and consult the medical officer",
+              "is_correct": true
+            },
+            {
+              "text": "Keep the exact same care plan for another month without changes",
+              "is_correct": false
+            },
+            {
+              "text": "Blame the family members for failing to perform the dressings",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because evaluation requires modifying the nursing care plan when goals are not met, followed by re-assessment and clinical consultation. Discarding without reassessment is unprofessional. Maintaining a failing plan delays healing. Blaming family members lacks therapeutic professionalism.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Assessment",
+          "question_text": "During a community entry process, the community health nurse uses observational skills to assess environmental sanitation. Which observation is most indicative of poor sanitation?",
+          "choices": [
+            {
+              "text": "Houses constructed with cement blocks and corrugated iron roofing sheets",
+              "is_correct": false
+            },
+            {
+              "text": "Open drains choked with solid waste and stagnant pools of water near residential areas",
+              "is_correct": true
+            },
+            {
+              "text": "Children playing football on an open village school compound",
+              "is_correct": false
+            },
+            {
+              "text": "Women walking to the community borehole with plastic buckets",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because choked drains and stagnant water breed mosquitoes and vectors, representing severe environmental health risks. Cement houses reflect structural permanence. Children playing is a normal childhood activity. Fetching water from a borehole is a standard rural activity.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Nursing Diagnosis",
+          "question_text": "A community health nurse identifies that multiple children in a farming community suffer from protein-energy malnutrition. Which nursing diagnosis is most accurate?",
+          "choices": [
+            {
+              "text": "Imbalanced nutrition: less than body requirements related to inadequate dietary intake and poverty",
+              "is_correct": true
+            },
+            {
+              "text": "Excess fluid volume related to excessive sodium intake",
+              "is_correct": false
+            },
+            {
+              "text": "Ineffective airway clearance related to bronchial secretions",
+              "is_correct": false
+            },
+            {
+              "text": "Urinary retention related to benign prostatic hyperplasia",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because malnutrition directly aligns with imbalanced nutrition less than body requirements due to intake and socioeconomic factors. Excess fluid volume applies to edema of cardiac or renal origin. Airway clearance is a respiratory diagnosis. Urinary retention is a urological diagnosis.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Planning",
+          "question_text": "When planning a community-wide immunization campaign in collaboration with Ghana Health Service, what is the primary purpose of stakeholder consultation?",
+          "choices": [
+            {
+              "text": "To secure community ownership, participation, and high vaccine acceptance rates",
+              "is_correct": true
+            },
+            {
+              "text": "To collect financial levies from community chiefs to fund nurse salaries",
+              "is_correct": false
+            },
+            {
+              "text": "To delegate all clinical cold chain management tasks to traditional priests",
+              "is_correct": false
+            },
+            {
+              "text": "To bypass district health management team approval protocols",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because engaging chiefs and local leaders builds community trust and ownership, boosting immunization coverage. Stakeholder consultation is not for collecting nurse salaries. Cold chain management requires trained health professionals. District health protocols must always be respected.",
+          "difficulty": "APPLICATION"
+        }
+      ]
+    },
+    {
+      "course_code": "OBN-311-C",
+      "course_title": "Obstetric Nursing",
+      "category": "MATERNAL",
+      "semester": "S1",
+      "topics": [
+        "Antenatal Care",
+        "Obstetric Emergencies",
+        "Labour & Delivery",
+        "Postnatal Care",
+        "Partograph"
+      ],
+      "questions": [
+        {
+          "topic": "Antenatal Care",
+          "question_text": "During an Antenatal Care (ANC) clinic at a district hospital in Ghana, a pregnant woman at 28 weeks gestation presents with pedal edema and a blood pressure of 140/90 mmHg. What is the nurse's immediate priority action?",
+          "choices": [
+            {
+              "text": "Reassure her that mild swelling is normal in pregnancy and send her home",
+              "is_correct": false
+            },
+            {
+              "text": "Test her urine for protein using a dipstick and notify the midwife/medical officer",
+              "is_correct": true
+            },
+            {
+              "text": "Administer intramuscular oxytocin immediately to induce labour",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to stop drinking water immediately to reduce swelling",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a BP of 140/90 mmHg at 28 weeks warrants immediate proteinuria assessment to rule out pre-eclampsia. Reassuring her without investigation misses gestational hypertension or pre-eclampsia. Oxytocin induction is premature without obstetric indication. Restricting water is clinically contraindicated.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Obstetric Emergencies",
+          "question_text": "A multiparous woman delivers a healthy baby at a CHPS compound, but 15 minutes later experiences sudden, heavy vaginal bleeding with a boggy uterus. What is the nurse's priority nursing intervention?",
+          "choices": [
+            {
+              "text": "Perform immediate bimanual uterine compression and massage the fundus",
+              "is_correct": true
+            },
+            {
+              "text": "Prepare the client for immediate discharge home to rest",
+              "is_correct": false
+            },
+            {
+              "text": "Encourage the client to ambulate around the room to stimulate circulation",
+              "is_correct": false
+            },
+            {
+              "text": "Insert an indwelling urinary catheter without assessing bladder distension",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a boggy uterus with heavy bleeding indicates postpartum hemorrhage (PPH) due to uterine atony, requiring immediate fundal massage and bimanual compression. Discharging her would be fatal. Ambulation worsens bleeding. Catheterization may be needed if bladder is full, but immediate massage is the primary life-saving response.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Partograph",
+          "question_text": "When plotting cervical dilatation on the WHO modified partograph during the active phase of labour, what does crossing the alert line signify?",
+          "choices": [
+            {
+              "text": "Labour is progressing normally and rapidly",
+              "is_correct": false
+            },
+            {
+              "text": "The patient must be transferred from a health center to a comprehensive emergency obstetric care facility",
+              "is_correct": true
+            },
+            {
+              "text": "Immediate normal spontaneous vaginal delivery is imminent within five minutes",
+              "is_correct": false
+            },
+            {
+              "text": "No action is required until the action line is reached",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because crossing the alert line indicates prolonged labour, serving as a warning to evaluate progress and prepare for potential transfer to a higher-level facility. Rapid normal progress is shown by steep curves staying left of the alert line. Immediate delivery is not guaranteed. Action is required at the alert line, not just the action line.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Antenatal Care",
+          "question_text": "According to Ghana Health Service focused antenatal care (FANC) guidelines, at what gestational age is the recommended first ANC contact ideally scheduled?",
+          "choices": [
+            {
+              "text": "Before 12 weeks gestation (First trimester)",
+              "is_correct": true
+            },
+            {
+              "text": "At 36 weeks gestation",
+              "is_correct": false
+            },
+            {
+              "text": "Only when labor contractions begin",
+              "is_correct": false
+            },
+            {
+              "text": "At 28 weeks gestation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because early booking (before 12 weeks) allows baseline investigations, dating ultrasound, and early risk stratification. Booking at 36 weeks is too late for preventive interventions. Waiting for labor bypasses ANC entirely. 28 weeks misses crucial first-trimester screening.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Postnatal Care",
+          "question_text": "During a postnatal home visit on day 3 postpartum, a mother expresses extreme sadness, crying easily, and feeling overwhelmed, though she loves her baby. This presentation is most consistent with:",
+          "choices": [
+            {
+              "text": "Postpartum psychosis requiring immediate psychiatric institutionalization",
+              "is_correct": false
+            },
+            {
+              "text": "Postpartum blues (maternity blues), which is common and self-limiting",
+              "is_correct": true
+            },
+            {
+              "text": "Chronic schizophrenia",
+              "is_correct": false
+            },
+            {
+              "text": "Severe eclamptic encephalopathy",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because postpartum blues occurs in many women within the first week postpartum, characterized by emotional lability and tearfulness, resolving spontaneously with support. Postpartum psychosis involves delusions and hallucinations. Schizophrenia is a chronic psychiatric disorder. Eclampsia involves seizures and hypertension.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "An obstetric nurse in a busy labour ward receives four reports. Which client requires immediate bedside evaluation?",
+          "choices": [
+            {
+              "text": "A primigravida in latent phase of labour with mild irregular contractions",
+              "is_correct": false
+            },
+            {
+              "text": "A postpartum mother 2 hours post-delivery with normal lochia rubra and stable vitals",
+              "is_correct": false
+            },
+            {
+              "text": "A woman in active labour who reports feeling an urgent urge to push and noticing blood-stained mucous discharge with fetal bradycardia on monitoring",
+              "is_correct": true
+            },
+            {
+              "text": "An antenatal client at 20 weeks gestation coming for routine iron supplementation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because fetal bradycardia combined with second-stage pushing signals acute fetal distress, demanding immediate delivery or emergency intervention. Latent phase is stable. Postpartum mother is stable. Routine supplementation is non-urgent.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Obstetric Nursing",
+          "question_text": "Which routine prophylactic medication is recommended by Ghana Health Service for all pregnant women during antenatal visits to prevent neural tube defects and anemia?",
+          "choices": [
+            {
+              "text": "Folic acid and ferrous sulfate (Iron)",
+              "is_correct": true
+            },
+            {
+              "text": "Aspirin and warfarin",
+              "is_correct": false
+            },
+            {
+              "text": "Magnesium sulfate and diazepam",
+              "is_correct": false
+            },
+            {
+              "text": "Paracetamol and ibuprofen",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because routine iron and folic acid supplementation prevents maternal iron-deficiency anemia and reduces neural tube defects in the fetus. Aspirin and warfarin are anticoagulants. Magnesium sulfate is for eclampsia. Paracetamol and ibuprofen are analgesics.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Labour & Delivery",
+          "question_text": "What is the primary purpose of administering active management of the third stage of labour (AMTSL)?",
+          "choices": [
+            {
+              "text": "To prolong the duration of labour and delay placental delivery",
+              "is_correct": false
+            },
+            {
+              "text": "To prevent postpartum hemorrhage by promoting rapid uterine contraction",
+              "is_correct": true
+            },
+            {
+              "text": "To induce uterine rupture in grand multiparous women",
+              "is_correct": false
+            },
+            {
+              "text": "To eliminate the need for newborn resuscitation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because AMTSL (oxytocin, controlled cord traction, and uterine massage) actively contracts the uterus to minimize blood loss and prevent PPH. It shortens, not prolongs, the third stage. Uterine rupture is a catastrophic complication to avoid. Newborn resuscitation is independent of third-stage management.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A midwife is managing a pre-eclamptic client receiving intravenous magnesium sulfate therapy. Which finding indicates immediate cessation of the infusion and administration of calcium gluconate?",
+          "choices": [
+            {
+              "text": "Patellar reflexes absent and respiratory rate of 10 breaths per minute",
+              "is_correct": true
+            },
+            {
+              "text": "Blood pressure of 135/85 mmHg and clear breath sounds",
+              "is_correct": false
+            },
+            {
+              "text": "Urine output of 50 mL/hour over the last two hours",
+              "is_correct": false
+            },
+            {
+              "text": "Mild feeling of warmth during the infusion",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because absent patellar reflexes and respiratory depression (<12 breaths/min) are signs of magnesium toxicity, requiring immediate cessation and calcium gluconate antidote. BP of 135/85 is stable. Urine output of 50 mL/hr is adequate. Mild warmth is a normal side effect of magnesium infusion.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Antenatal Care",
+          "question_text": "During routine ANC health education in Ghana, why is Intermittent Preventive Treatment in pregnancy (IPTp) using Sulfadoxine-Pyrimethamine (SP) administered?",
+          "choices": [
+            {
+              "text": "To prevent malaria parasitemia and associated maternal anemia and low birth weight",
+              "is_correct": true
+            },
+            {
+              "text": "To cure gestational diabetes mellitus",
+              "is_correct": false
+            },
+            {
+              "text": "To prevent maternal hypertension and eclampsia",
+              "is_correct": false
+            },
+            {
+              "text": "To stimulate surfactant production in fetal lungs",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because IPTp-SP prevents malaria infection in pregnancy, protecting against severe maternal anemia and low birth weight per GHS policy. SP is an antimalarial, not an antidiabetic. Antihypertensive drugs manage BP. Corticosteroids stimulate surfactant.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Obstetric Nursing",
+          "question_text": "A pregnant woman at 32 weeks gestation presents with painless, bright red vaginal bleeding. What is the most critical nursing precaution?",
+          "choices": [
+            {
+              "text": "Perform an immediate digital vaginal examination to assess cervical dilatation",
+              "is_correct": false
+            },
+            {
+              "text": "Avoid all digital vaginal examinations and prepare for ultrasound evaluation of placental location",
+              "is_correct": true
+            },
+            {
+              "text": "Administer oxytocin infusion to accelerate delivery",
+              "is_correct": false
+            },
+            {
+              "text": "Encourage vigorous pelvic exercises to stop bleeding",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because painless bright red bleeding suggests placenta previa; digital vaginal examination can precipitate catastrophic hemorrhage. Ultrasound is safe and diagnostic. Oxytocin can cause uterine rupture. Pelvic exercises would worsen bleeding.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Postnatal Care",
+          "question_text": "What is the recommended schedule for postnatal care (PNC) home visits and clinic reviews in Ghana to ensure maternal and neonatal wellbeing?",
+          "choices": [
+            {
+              "text": "Day 1, Day 3, 6th week, and optionally week 2",
+              "is_correct": true
+            },
+            {
+              "text": "Only at 6 months postpartum",
+              "is_correct": false
+            },
+            {
+              "text": "Once a year during national immunization days",
+              "is_correct": false
+            },
+            {
+              "text": "Only when the infant develops a fever",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because standard GHS PNC protocol mandates visits within 24 hours (Day 1), Day 3, Day 7-14 (Week 2), and 6 weeks postpartum. Waiting 6 months misses critical neonatal window periods. Annual visits are insufficient. Waiting for fever delays early detection of sepsis or PPH.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Labour & Delivery",
+          "question_text": "During the second stage of labour, a nurse observes umbilical cord prolapse after spontaneous rupture of membranes. What is the immediate life-saving nursing action?",
+          "choices": [
+            {
+              "text": "Push the cord gently back into the uterine cavity with bare fingers",
+              "is_correct": false
+            },
+            {
+              "text": "Position the client in knee-chest or exaggerated Sims position and use sterile gloved fingers to relieve pressure on the cord",
+              "is_correct": true
+            },
+            {
+              "text": "Instruct the mother to bear down forcefully with every contraction",
+              "is_correct": false
+            },
+            {
+              "text": "Wait for 30 minutes to see if the cord descends further on its own",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because relieving presenting part pressure off the cord via knee-chest position and sterile digital elevation prevents fetal anoxia while preparing for emergency Caesarean section. Pushing the cord back causes spasm and damage. Bearing down compresses the cord further. Waiting causes fetal demise.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Antenatal Care",
+          "question_text": "Which immunization is routinely given during antenatal care visits in Ghana to protect both mother and newborn against neonatal tetanus?",
+          "choices": [
+            {
+              "text": "Tetanus Toxoid (TT) or Td vaccine",
+              "is_correct": true
+            },
+            {
+              "text": "Bacille Calmette-Guérin (BCG) vaccine",
+              "is_correct": false
+            },
+            {
+              "text": "Oral Polio Vaccine (OPV)",
+              "is_correct": false
+            },
+            {
+              "text": "Measles-Yellow Fever vaccine",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Tetanus Toxoid / Td vaccination during pregnancy protects against maternal and neonatal tetanus. BCG is given to newborns at birth. OPV is given to infants. Measles-Yellow Fever is given from 9 months onwards.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Partograph",
+          "question_text": "When evaluating fetal condition on the partograph, how often must fetal heart rate (FHR) be auscultated and recorded during the active phase of labour?",
+          "choices": [
+            {
+              "text": "Every 30 minutes",
+              "is_correct": true
+            },
+            {
+              "text": "Once every 4 hours",
+              "is_correct": false
+            },
+            {
+              "text": "Once every 24 hours",
+              "is_correct": false
+            },
+            {
+              "text": "Only at the time of admission and delivery",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because WHO and GHS guidelines mandate FHR auscultation every 30 minutes during active labour to detect fetal distress early. Every 4 hours is inadequate for active labour monitoring. 24 hours exceeds total labour duration. Admission/delivery checks miss intrapartum hypoxia.",
+          "difficulty": "KNOWLEDGE"
+        }
+      ]
+    },
+    {
+      "course_code": "PAD-311-C",
+      "course_title": "Paediatric Nursing I",
+      "category": "MATERNAL",
+      "semester": "S1",
+      "topics": [
+        "EPI Immunisation",
+        "IMCI",
+        "Malnutrition",
+        "Neonatal Health",
+        "Growth Monitoring"
+      ],
+      "questions": [
+        {
+          "topic": "EPI Immunisation",
+          "question_text": "According to the Expanded Programme on Immunization (EPI) schedule in Ghana, which vaccine is administered intradermally at birth or at first contact?",
+          "choices": [
+            {
+              "text": "Measles-Yellow Fever vaccine",
+              "is_correct": false
+            },
+            {
+              "text": "Bacille Calmette-Guérin (BCG) vaccine",
+              "is_correct": true
+            },
+            {
+              "text": "Pneumococcal Conjugate Vaccine (PCV-13)",
+              "is_correct": false
+            },
+            {
+              "text": "Rotavirus vaccine",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because BCG is administered intradermally at birth or first contact to protect against severe forms of tuberculosis like TB meningitis. Measles-Yellow Fever is given at 9 and 18 months. PCV-13 is given intramuscularly at 6, 10, and 14 weeks. Rotavirus is oral.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "IMCI",
+          "question_text": "A 10-month-old infant is brought to a CHPS health post with cough and fast breathing. According to Integrated Management of Childhood Illness (IMCI) guidelines, what respiratory rate threshold indicates fast breathing for this age group?",
+          "choices": [
+            {
+              "text": "50 breaths per minute or more",
+              "is_correct": true
+            },
+            {
+              "text": "30 breaths per minute or more",
+              "is_correct": false
+            },
+            {
+              "text": "70 breaths per minute or more",
+              "is_correct": false
+            },
+            {
+              "text": "20 breaths per minute or more",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because IMCI guidelines define fast breathing for infants aged 2 to 12 months as 50 breaths per minute or more. 30 breaths is normal for an older child or adult. 70 breaths is abnormally high and indicates severe distress. 20 breaths is abnormally low for an infant.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Malnutrition",
+          "question_text": "A child is admitted to a stabilization center with Severe Acute Malnutrition (SAM). What is the primary therapeutic milk formula used during Phase 1 of inpatient management?",
+          "choices": [
+            {
+              "text": "F-75 therapeutic milk",
+              "is_correct": true
+            },
+            {
+              "text": "Full-cream condensed cow's milk",
+              "is_correct": false
+            },
+            {
+              "text": "Unmodified undiluted goat milk",
+              "is_correct": false
+            },
+            {
+              "text": "F-100 therapeutic milk",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because F-75 (providing 75 kcal/100ml) is specifically formulated with low protein and low sodium for stabilizing children with SAM during Phase 1. Condensed milk is high in sugar and inappropriate. Unmodified goat milk lacks balanced micronutrients. F-100 is used later in the rehabilitation phase, not Phase 1.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A pediatric nurse receives four children at an emergency clinic. Which child must be evaluated and resuscitated first?",
+          "choices": [
+            {
+              "text": "A 3-year-old with mild cough, clear breath sounds, and normal appetite",
+              "is_correct": false
+            },
+            {
+              "text": "A 6-month-old infant presenting with lethargy, sunken eyes, skin pinch going back very slowly, and inability to drink",
+              "is_correct": true
+            },
+            {
+              "text": "A 2-year-old with a small healed graze on the elbow",
+              "is_correct": false
+            },
+            {
+              "text": "A 4-year-old brought for routine growth monitoring and weighing",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because lethargy and inability to drink indicate severe dehydration and shock, requiring immediate emergency fluid resuscitation. Mild cough is stable. Healed graze is minor. Growth monitoring is routine preventative care.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Growth Monitoring",
+          "question_text": "During a community child welfare clinic (weighing clinic) in Ghana, what does crossing a growth curve downward toward the lower percentile line on the child health record booklet indicate?",
+          "choices": [
+            {
+              "text": "Normal accelerated physical growth spurt",
+              "is_correct": false
+            },
+            {
+              "text": "Growth faltering, signaling potential malnutrition, chronic illness, or recurrent infection",
+              "is_correct": true
+            },
+            {
+              "text": "Normal adolescent pubertal development",
+              "is_correct": false
+            },
+            {
+              "text": "Successful weight gain trajectory requiring no intervention",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a downward crossing of weight-for-age percentiles indicates growth faltering, demanding prompt nutritional and medical investigation. Accelerated growth is shown by upward crossing. Pubertal development occurs in adolescence, not infancy. Downward trajectory signifies failure to thrive, not success.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "EPI Immunisation",
+          "question_text": "What is the correct storage temperature range for vaccines stored in the cold room or vaccine refrigerator at a district health facility to maintain potency?",
+          "choices": [
+            {
+              "text": "+2°C to +8°C",
+              "is_correct": true
+            },
+            {
+              "text": "-20°C to -10°C",
+              "is_correct": false
+            },
+            {
+              "text": "+15°C to +25°C",
+              "is_correct": false
+            },
+            {
+              "text": "+30°C to +40°C",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because most routine EPI vaccines (like DPT, PCV, TT) must be stored between +2°C and +8°C to prevent freeze or heat damage. -20°C is for oral polio or freezer storage of specific vaccines, but standard vaccines freeze and lose potency. Higher temperatures destroy vaccine viability.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Neonatal Health",
+          "question_text": "What is the recommended immediate newborn care practice advocated by Ghana Health Service regarding cord care in a clean home delivery?",
+          "choices": [
+            {
+              "text": "Apply dry cord care, keeping the umbilical stump clean and dry without applying herbal concoctions or toothpaste",
+              "is_correct": true
+            },
+            {
+              "text": "Apply cow dung and palm oil daily to speed up cord separation",
+              "is_correct": false
+            },
+            {
+              "text": "Tie a dirty contaminated string tightly around the base of the cord",
+              "is_correct": false
+            },
+            {
+              "text": "Wash the cord with salt water and hot pepper daily",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because dry cord care prevents neonatal omphalitis and tetanus by avoiding harmful traditional substances. Cow dung and palm oil introduce pathogenic bacteria causing tetanus and sepsis. Dirty strings risk infection. Salt water and hot pepper cause chemical burns and infection.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "In a rural health center, a nurse assesses four children under five years. Which child has signs requiring urgent IMCI pre-referral treatment?",
+          "choices": [
+            {
+              "text": "A 2-year-old with chest indrawing and stridor in a calm child",
+              "is_correct": true
+            },
+            {
+              "text": "A 3-year-old with runny nose and sneezing for two days",
+              "is_correct": false
+            },
+            {
+              "text": "A 1-year-old with a small localized insect bite on the forearm",
+              "is_correct": false
+            },
+            {
+              "text": "A 4-year-old with a healed superficial bruise",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because chest indrawing and stridor in a calm child indicate severe pneumonia or upper airway obstruction requiring urgent referral and pre-referral antibiotics. Runny nose is a common cold. Insect bite is minor. Bruise is superficial.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "IMCI",
+          "question_text": "According to IMCI guidelines, how is dehydration classified in a child presenting with diarrhea who is restless, irritable, with sunken eyes and drinks eagerly with thirst?",
+          "choices": [
+            {
+              "text": "Some Dehydration",
+              "is_correct": true
+            },
+            {
+              "text": "No Dehydration",
+              "is_correct": false
+            },
+            {
+              "text": "Severe Dehydration",
+              "is_correct": false
+            },
+            {
+              "text": "Chronic Dehydration",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because restlessness, sunken eyes, and drinking eagerly are hallmark IMCI classification signs for 'Some Dehydration' (Plan B). No dehydration lacks these specific signs. Severe dehydration involves lethargy and inability to drink. Chronic dehydration is not an IMCI classification.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Malnutrition",
+          "question_text": "Which clinical manifestation differentiates Kwashiorkor from Marasmus in severe acute malnutrition?",
+          "choices": [
+            {
+              "text": "Presence of bilateral pitting pedal edema and moon face",
+              "is_correct": true
+            },
+            {
+              "text": "Extreme muscle wasting with prominent ribs and 'old man' face with no edema",
+              "is_correct": false
+            },
+            {
+              "text": "Rapid weight gain and obesity",
+              "is_correct": false
+            },
+            {
+              "text": "Elevated blood pressure and flushed skin",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Kwashiorkor is characterized by bilateral pitting edema and moon face due to protein deficiency, whereas marasmus features severe wasting without edema. Extreme muscle wasting describes marasmus. Rapid weight gain and obesity do not define SAM. Elevated BP is not a primary SAM sign.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "EPI Immunisation",
+          "question_text": "At what age in months does the Ghana EPI schedule recommend administering the second dose of Measles-Yellow Fever vaccine?",
+          "choices": [
+            {
+              "text": "18 months",
+              "is_correct": true
+            },
+            {
+              "text": "6 months",
+              "is_correct": false
+            },
+            {
+              "text": "12 months",
+              "is_correct": false
+            },
+            {
+              "text": "5 years",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the first dose is given at 9 months and the second dose at 18 months per GHS policy to ensure full seroconversion. 6 months is too early due to maternal antibodies. 12 months is not the scheduled second dose timing. 5 years is school entry age.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Neonatal Health",
+          "question_text": "What is the primary objective of initiating immediate skin-to-skin contact (Kangaroo Mother Care principles) immediately after birth for a stable newborn?",
+          "choices": [
+            {
+              "text": "To stabilize newborn body temperature, promote bonding, and encourage early breastfeeding initiation",
+              "is_correct": true
+            },
+            {
+              "text": "To induce immediate deep sleep and prevent infant crying for 24 hours",
+              "is_correct": false
+            },
+            {
+              "text": "To replace the need for vitamin K administration",
+              "is_correct": false
+            },
+            {
+              "text": "To cool the newborn down in a tropical climate",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because skin-to-skin contact maintains thermal regulation, enhances maternal-infant bonding, and promotes early breastfeeding. It does not induce unnatural sleep. Vitamin K injection is still required. It prevents hypothermia, not overheating.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Growth Monitoring",
+          "question_text": "When counseling a mother during a growth promotion session whose child has experienced two consecutive months of weight stagnation, what is the nurse's best approach?",
+          "choices": [
+            {
+              "text": "Scold the mother for starving her child and threaten reporting to authorities",
+              "is_correct": false
+            },
+            {
+              "text": "Conduct a detailed dietary and illness history, assess breastfeeding/complementary feeding, and provide supportive counseling",
+              "is_correct": true
+            },
+            {
+              "text": "Advise the mother to stop feeding solid foods entirely and give only bottled soda",
+              "is_correct": false
+            },
+            {
+              "text": "Ignore the trend because children naturally fluctuate in weight",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because supportive assessment of diet and illness uncovers root causes of growth faltering without blame. Scolding deters clinic attendance. Soda lacks nutrition and harms health. Ignoring growth faltering misses malnutrition.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "IMCI",
+          "question_text": "According to IMCI management of fever in a malaria-endemic country like Ghana, how is a child with fever classified if there is no generalized rash or stiff neck?",
+          "choices": [
+            {
+              "text": "Malaria or fever of other origin, requiring a Rapid Diagnostic Test (RDT) for malaria",
+              "is_correct": true
+            },
+            {
+              "text": "Severe complicated meningitis requiring immediate neurosurgery",
+              "is_correct": false
+            },
+            {
+              "text": "Normal afebrile state requiring no action",
+              "is_correct": false
+            },
+            {
+              "text": "Measles complicated by pneumonia",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because fever in endemic areas requires malaria RDT evaluation. Meningitis requires stiff neck. Afebrile is incorrect since the child has fever. Measles requires a generalized rash, which is absent.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "EPI Immunisation",
+          "question_text": "Which vaccine is administered orally drops to infants at birth, 6 weeks, 10 weeks, and 14 weeks under the Ghana EPI schedule?",
+          "choices": [
+            {
+              "text": "Oral Polio Vaccine (OPV)",
+              "is_correct": true
+            },
+            {
+              "text": "Measles vaccine",
+              "is_correct": false
+            },
+            {
+              "text": "Tetanus Toxoid vaccine",
+              "is_correct": false
+            },
+            {
+              "text": "Yellow Fever vaccine",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because OPV is given orally at birth and during routine immunization contacts at 6, 10, and 14 weeks. Measles is injected subcutaneously. Tetanus Toxoid is injected intramuscularly. Yellow Fever is injected subcutaneously.",
+          "difficulty": "KNOWLEDGE"
+        }
+      ]
+    },
+    {
+      "course_code": "PFC-311-C",
+      "course_title": "Patient/Family-Centred Care Study",
+      "category": "FUNDAMENTALS",
+      "semester": "S1",
+      "topics": [
+        "Family Assessment",
+        "Therapeutic Communication",
+        "Genograms & Ecomaps",
+        "Patient Advocacy",
+        "Home Visiting"
+      ],
+      "questions": [
+        {
+          "topic": "Genograms & Ecomaps",
+          "question_text": "When conducting a family nursing assessment in a rural Ghanaian community, what is the primary purpose of constructing a genogram?",
+          "choices": [
+            {
+              "text": "To map out family structure, intergenerational health patterns, and hereditary illnesses across at least three generations",
+              "is_correct": true
+            },
+            {
+              "text": "To calculate the exact financial income and expenditure of household members",
+              "is_correct": false
+            },
+            {
+              "text": "To design architectural floor plans for the family's mud-brick compound house",
+              "is_correct": false
+            },
+            {
+              "text": "To audit the local political affiliations of community elders",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a genogram is a pictorial display of family relationships and medical history across generations. Financial income is assessed via socioeconomic tools. Architectural plans are for engineering. Political affiliations are outside clinical nursing assessment.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Genograms & Ecomaps",
+          "question_text": "What information does an ecomap provide during a comprehensive family assessment?",
+          "choices": [
+            {
+              "text": "The family's interactions and relationships with external systems such as church, school, work, and healthcare providers",
+              "is_correct": true
+            },
+            {
+              "text": "Genetic mutation sequences causing sickle cell disease",
+              "is_correct": false
+            },
+            {
+              "text": "Internal physiological organ function of the index patient",
+              "is_correct": false
+            },
+            {
+              "text": "Microbiological bacterial load of household drinking water",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because an ecomap illustrates the family's connections and energy flows with external community systems. Genetic mutations are laboratory analyses. Organ function is clinical diagnostics. Water load is environmental testing.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Therapeutic Communication",
+          "question_text": "A community health nurse uses active listening and open-ended questions during a home visit. Which statement exemplifies an open-ended question?",
+          "choices": [
+            {
+              "text": "“Do you take your blood pressure medication every morning?”",
+              "is_correct": false
+            },
+            {
+              "text": "“How do you feel about managing your father's diabetes mellitus at home?”",
+              "is_correct": true
+            },
+            {
+              "text": "“Are you experiencing chest pain right now?”",
+              "is_correct": false
+            },
+            {
+              "text": "“Did you sleep well last night?”",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because asking how someone feels invites expansive narrative and expression rather than a simple yes/no response. The other three options are closed-ended questions yielding single-word answers.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A community health nurse is planning home visits for four families. Which family should be prioritized for a visit today?",
+          "choices": [
+            {
+              "text": "A family where an elderly hypertensive client ran out of antihypertensive medications three days ago and reports dizziness",
+              "is_correct": true
+            },
+            {
+              "text": "A family requesting routine advice on vegetable garden farming techniques",
+              "is_correct": false
+            },
+            {
+              "text": "A family whose child received routine immunization last week and is currently well",
+              "is_correct": false
+            },
+            {
+              "text": "A newly married couple wanting general nutritional counseling",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because running out of medication with symptoms of dizziness risks hypertensive crisis or stroke, demanding urgent home evaluation. Garden advice is non-urgent. Immunized child is well. Nutritional counseling is routine.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Home Visiting",
+          "question_text": "What is the first critical step a community health nurse must take before initiating a home visit in a rural community?",
+          "choices": [
+            {
+              "text": "Initiating contact, scheduling an appointment, and establishing the purpose of the visit with the family",
+              "is_correct": true
+            },
+            {
+              "text": "Entering the home unannounced to catch the family unprepared",
+              "is_correct": false
+            },
+            {
+              "text": "Demanding financial compensation from the household head before entry",
+              "is_correct": false
+            },
+            {
+              "text": "Relying entirely on neighborhood gossip without preparation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because pre-planning and scheduling respect family privacy and build cooperative therapeutic rapport. Unannounced entry violates trust. Demanding money is unethical. Relying on gossip lacks professionalism.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Patient Advocacy",
+          "question_text": "How does a community health nurse demonstrate patient advocacy within a district hospital setting?",
+          "choices": [
+            {
+              "text": "By supporting the patient's right to informed consent and ensuring their healthcare preferences are respected by the medical team",
+              "is_correct": true
+            },
+            {
+              "text": "By ignoring patient complaints to reduce hospital workload",
+              "is_correct": false
+            },
+            {
+              "text": "By making all healthcare decisions for the patient without their input",
+              "is_correct": false
+            },
+            {
+              "text": "By sharing patient confidential medical records with the local media",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because advocacy safeguards patient rights, autonomy, and informed consent. Ignoring complaints violates ethics. Making unilateral decisions undermines autonomy. Sharing records breaches confidentiality.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "During a family care study interview, a family presents multiple conflicting issues. Which issue should the nurse address first in the care plan?",
+          "choices": [
+            {
+              "text": "A newborn infant showing signs of neonatal jaundice and refusal to feed",
+              "is_correct": true
+            },
+            {
+              "text": "A leaking roof during the rainy season",
+              "is_correct": false
+            },
+            {
+              "text": "Disagreement over family land inheritance rights",
+              "is_correct": false
+            },
+            {
+              "text": "Lack of electricity in the household kitchen",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because neonatal jaundice and feeding refusal threaten infant survival, requiring immediate clinical prioritization. A leaking roof, land dispute, and lack of electricity are important social issues but secondary to acute infant survival.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Family Assessment",
+          "question_text": "Which framework is most helpful when evaluating how a family manages stress and crisis events, such as the death of a breadwinner?",
+          "choices": [
+            {
+              "text": "Family Coping and Resiliency Framework",
+              "is_correct": true
+            },
+            {
+              "text": "Newton's Laws of Motion",
+              "is_correct": false
+            },
+            {
+              "text": "Aseptic Technique Protocol",
+              "is_correct": false
+            },
+            {
+              "text": "Cold Chain Vaccine Storage Guidelines",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because resiliency frameworks evaluate how families adapt to stressors and crises. Newton's laws apply to physics. Aseptic technique relates to infection control. Cold chain relates to immunization logistics.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Therapeutic Communication",
+          "question_text": "A client expresses fear about an upcoming surgical procedure at the district hospital. Which response by the nurse demonstrates therapeutic empathy?",
+          "choices": [
+            {
+              "text": "“You have nothing to worry about; thousands of people undergo this surgery daily.”",
+              "is_correct": false
+            },
+            {
+              "text": "“It sounds like you are feeling very anxious about the surgery. Would you like to talk about what specifically concerns you?”",
+              "is_correct": true
+            },
+            {
+              "text": "“Don't cry; crying won't help solve anything.”",
+              "is_correct": false
+            },
+            {
+              "text": "“Why are you acting so scared over a minor operation?”",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because validating feelings and inviting discussion fosters trust and emotional support. Minimizing fears, discouraging tears, and questioning with 'why' are non-therapeutic barriers.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Home Visiting",
+          "question_text": "During a home visit, the nurse observes unsafe traditional scarification marks on an infant's abdomen being dressed with herbal ash. What is the nurse's best initial nursing action?",
+          "choices": [
+            {
+              "text": "Confiscate the herbal ash angrily and scold the mother publicly in front of neighbors",
+              "is_correct": false
+            },
+            {
+              "text": "Provide respectful, non-judgmental health education regarding infection risks and teach safe wound cleansing",
+              "is_correct": true
+            },
+            {
+              "text": "Ignore the observation to avoid offending cultural practices",
+              "is_correct": false
+            },
+            {
+              "text": "Refuse to visit the household ever again",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because respectful, non-judgmental health education bridges cultural gaps and promotes safe infection prevention practices. Public scolding alienates clients. Ignoring infection risks fails professional duty. Refusing visits abandons the client.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Patient Advocacy",
+          "question_text": "A patient with terminal illness expresses a desire to be discharged home to spend final days with family, but hospital staff resist. How does the nurse act as an advocate?",
+          "choices": [
+            {
+              "text": "Facilitate a multidisciplinary conference to coordinate palliative home care support respecting the patient's wishes",
+              "is_correct": true
+            },
+            {
+              "text": "Instruct the patient to sneak out of the ward secretly",
+              "is_correct": false
+            },
+            {
+              "text": "Side strictly with the hospital administration without consulting the patient",
+              "is_correct": false
+            },
+            {
+              "text": "Sedate the patient to prevent further requests for discharge",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because coordinating palliative home care respects patient autonomy and dignity. Sneaking out is unsafe. Siding blindly ignores patient rights. Chemical sedation without indication is unethical malpractice.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Genograms & Ecomaps",
+          "question_text": "When analyzing a family genogram, what symbol is universally used to represent a male family member?",
+          "choices": [
+            {
+              "text": "A square",
+              "is_correct": true
+            },
+            {
+              "text": "A circle",
+              "is_correct": false
+            },
+            {
+              "text": "A triangle",
+              "is_correct": false
+            },
+            {
+              "text": "A diamond",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because standard genogram notation dictates that squares represent males and circles represent females. Triangles and diamonds represent other specific family or pregnancy states.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Therapeutic Communication",
+          "question_text": "What is the primary barrier to effective communication when a community health nurse uses heavy medical jargon with rural villagers during health education?",
+          "choices": [
+            {
+              "text": "It creates a power imbalance and hinders client comprehension",
+              "is_correct": true
+            },
+            {
+              "text": "It guarantees 100% compliance with treatment regimens",
+              "is_correct": false
+            },
+            {
+              "text": "It makes the nurse sound friendly and approachable",
+              "is_correct": false
+            },
+            {
+              "text": "It speeds up community mobilization processes",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because complex jargon impairs understanding and alienates clients. It does not improve compliance, friendliness, or mobilization speed.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Home Visiting",
+          "question_text": "What is the purpose of the evaluation phase at the conclusion of a series of home visits?",
+          "choices": [
+            {
+              "text": "To determine whether the family health goals were achieved and whether further nursing intervention is required",
+              "is_correct": true
+            },
+            {
+              "text": "To close the health center permanently",
+              "is_correct": false
+            },
+            {
+              "text": "To collect reimbursement fees for transportation",
+              "is_correct": false
+            },
+            {
+              "text": "To blame the family for slow progress",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because evaluation measures goal attainment and guides future nursing actions. Closing the health center is absurd. Reimbursement is administrative. Blaming families is unprofessional.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Patient Advocacy",
+          "question_text": "An illiterate patient is asked to sign a surgical consent form without explanation. What is the nurse's ethical responsibility?",
+          "choices": [
+            {
+              "text": "Ensure the procedure is fully explained in the patient's local dialect before thumbprinting or signing consent",
+              "is_correct": true
+            },
+            {
+              "text": "Force the patient to thumbprint immediately without understanding",
+              "is_correct": false
+            },
+            {
+              "text": "Sign the form on behalf of the patient without their knowledge",
+              "is_correct": false
+            },
+            {
+              "text": "Throw away the consent form and cancel all hospital services",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because informed consent requires comprehension in a language the patient understands, with thumbprinting or signing done voluntarily. Forcing thumbprinting violates autonomy. Forging signatures is illegal. Throwing away forms abandons care.",
+          "difficulty": "APPLICATION"
+        }
+      ]
+    },
+    {
+      "course_code": "MMN-311-C",
+      "course_title": "Medicine and Medical Nursing III",
+      "category": "MED_SURG",
+      "semester": "S1",
+      "topics": [
+        "Hypertension",
+        "Diabetes Mellitus",
+        "Malaria Management",
+        "Chronic Kidney Disease",
+        "Stroke Care"
+      ],
+      "questions": [
+        {
+          "topic": "Hypertension",
+          "question_text": "A 55-year-old known hypertensive client visits the CHPS clinic with a blood pressure of 160/100 mmHg complaining of throbbing occipital headache. According to Ghana Standard Treatment Guidelines, how is this blood pressure classified?",
+          "choices": [
+            {
+              "text": "Stage 2 Hypertension",
+              "is_correct": true
+            },
+            {
+              "text": "Normal Blood Pressure",
+              "is_correct": false
+            },
+            {
+              "text": "Elevated Blood Pressure",
+              "is_correct": false
+            },
+            {
+              "text": "Stage 1 Hypertension",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a systolic reading of 160 mmHg or diastolic of 100 mmHg classifies as Stage 2 Hypertension. Normal is under 120/80. Stage 1 is 130-139/80-89. Elevated is 120-129/<80.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Diabetes Mellitus",
+          "question_text": "A diabetic patient presents to the clinic with confusion, sweating, tremors, and a blood glucose reading of 2.8 mmol/L. What is the nurse's immediate priority intervention?",
+          "choices": [
+            {
+              "text": "Administer oral fast-acting glucose or fruit juice if conscious, or IV 50% dextrose if unconscious",
+              "is_correct": true
+            },
+            {
+              "text": "Administer a double dose of subcutaneous insulin immediately",
+              "is_correct": false
+            },
+            {
+              "text": "Instruct the client to exercise vigorously to burn off sugar",
+              "is_correct": false
+            },
+            {
+              "text": "Withhold all food and fluids for 12 hours",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a blood glucose of 2.8 mmol/L indicates hypoglycemia, requiring immediate administration of fast-acting glucose or IV dextrose. Giving more insulin would worsen hypoglycemia. Exercise drops glucose further. Withholding food is fatal.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Malaria Management",
+          "question_text": "According to Ghana Health Service treatment guidelines, what is the first-line artemisinin-based combination therapy (ACT) for treating uncomplicated malaria in adults?",
+          "choices": [
+            {
+              "text": "Artemether-Lumefantrine (AL)",
+              "is_correct": true
+            },
+            {
+              "text": "Chloroquine monotherapy",
+              "is_correct": false
+            },
+            {
+              "text": "Quinine tablets alone without combination",
+              "is_correct": false
+            },
+            {
+              "text": "Penicillin injection",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Artemether-Lumefantrine is the recommended first-line oral ACT for uncomplicated malaria in Ghana. Chloroquine is obsolete due to resistance. Quinine monotherapy is second-line or for complicated cases. Penicillin is an antibiotic.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A medical nurse is caring for four patients on a medical ward. Which patient requires immediate assessment and intervention?",
+          "choices": [
+            {
+              "text": "A diabetic patient with fasting blood glucose of 6.5 mmol/L",
+              "is_correct": false
+            },
+            {
+              "text": "A known hypertensive client presenting with sudden onset right-sided hemiplegia and slurred speech",
+              "is_correct": true
+            },
+            {
+              "text": "A patient with stable chronic kidney disease awaiting routine blood urea results",
+              "is_correct": false
+            },
+            {
+              "text": "A patient with uncomplicated malaria receiving Artemether-Lumefantrine",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because sudden hemiplegia and slurred speech indicate an acute cerebrovascular accident (stroke), a medical emergency requiring time-sensitive stroke protocol management. Glucose of 6.5 is well-controlled. Stable CKD is non-acute. Uncomplicated malaria is stable.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Chronic Kidney Disease",
+          "question_text": "Which dietary modification is most critical for a patient with advanced Chronic Kidney Disease (CKD) to prevent hyperkalemia?",
+          "choices": [
+            {
+              "text": "Restricting intake of potassium-rich foods such as bananas, oranges, and tomatoes",
+              "is_correct": true
+            },
+            {
+              "text": "Increasing salt intake to maximum levels",
+              "is_correct": false
+            },
+            {
+              "text": "Eating unlimited red meat and protein daily",
+              "is_correct": false
+            },
+            {
+              "text": "Drinking 5 liters of fluid per hour",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because failing kidneys cannot excrete potassium effectively, leading to life-threatening hyperkalemia if potassium-rich foods are not restricted. High salt worsens hypertension and fluid retention. Excessive protein accelerates renal decline. Excessive fluid causes pulmonary edema.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Stroke Care",
+          "question_text": "During acute nursing care for a stroke patient with dysphagia, what is the most important intervention to prevent aspiration pneumonia?",
+          "choices": [
+            {
+              "text": "Conduct a formal swallowing screening before offering any oral food or fluids",
+              "is_correct": true
+            },
+            {
+              "text": "Force feed thick porridge rapidly while the patient lies flat on the back",
+              "is_correct": false
+            },
+            {
+              "text": "Administer all medications via carbonated beverages",
+              "is_correct": false
+            },
+            {
+              "text": "Encourage the patient to swallow large chunks of solid yam",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because screening swallowing prevents aspiration of food into the lungs, which causes aspiration pneumonia. Feeding while flat increases aspiration risk. Carbonated drinks cause choking. Solid yam is unsafe for dysphagia.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A triage nurse at a district hospital emergency room receives four medical cases. Who should be attended to first?",
+          "choices": [
+            {
+              "text": "A patient with severe respiratory distress, intercostal recession, and oxygen saturation of 82% on room air",
+              "is_correct": true
+            },
+            {
+              "text": "A patient with a mild headache for two hours",
+              "is_correct": false
+            },
+            {
+              "text": "A patient requesting a medical certificate for employment",
+              "is_correct": false
+            },
+            {
+              "text": "A patient with a healed surgical scar checking for suture removal",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because an oxygen saturation of 82% with respiratory distress indicates critical hypoxia, requiring immediate airway and oxygen intervention. Mild headache is non-urgent. Medical certificate is administrative. Suture check is routine.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Diabetes Mellitus",
+          "question_text": "Which long-term microvascular complication of diabetes mellitus affects the kidneys, leading to proteinuria and eventual renal failure?",
+          "choices": [
+            {
+              "text": "Diabetic nephropathy",
+              "is_correct": true
+            },
+            {
+              "text": "Diabetic retinopathy",
+              "is_correct": false
+            },
+            {
+              "text": "Diabetic neuropathy",
+              "is_correct": false
+            },
+            {
+              "text": "Coronary artery disease",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because diabetic nephropathy specifically damages the renal microvasculature. Retinopathy affects the eyes. Neuropathy affects nerves. Coronary artery disease is macrovascular.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Hypertension",
+          "question_text": "What lifestyle modification is foundational in the management of essential hypertension?",
+          "choices": [
+            {
+              "text": "Reducing dietary sodium intake and engaging in regular aerobic exercise",
+              "is_correct": true
+            },
+            {
+              "text": "Increasing daily cigarette smoking to dilate blood vessels",
+              "is_correct": false
+            },
+            {
+              "text": "Consuming excessive alcohol daily to lower blood pressure",
+              "is_correct": false
+            },
+            {
+              "text": "Avoiding all physical activity and maintaining bed rest",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because sodium restriction and aerobic exercise lower blood pressure naturally. Smoking damages vessels and raises BP. Excessive alcohol raises BP. Bed rest promotes cardiovascular deconditioning.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Malaria Management",
+          "question_text": "A patient with severe malaria presents with prostration, jaundice, and severe anemia. What is the recommended parenteral antimalarial drug of choice in Ghana?",
+          "choices": [
+            {
+              "text": "Intravenous or intramuscular Artesunate",
+              "is_correct": true
+            },
+            {
+              "text": "Paracetamol syrup",
+              "is_correct": false
+            },
+            {
+              "text": "Oral Chloroquine tablets",
+              "is_correct": false
+            },
+            {
+              "text": "Amoxicillin suspension",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because severe malaria requires parenteral Artesunate as the first-line treatment per GHS guidelines. Paracetamol is an antipyretic. Chloroquine is ineffective. Amoxicillin is an antibiotic.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Chronic Kidney Disease",
+          "question_text": "What clinical sign is most commonly observed in patients with chronic kidney disease due to fluid overload and hypoalbuminemia?",
+          "choices": [
+            {
+              "text": "Generalized peripheral edema and facial puffiness",
+              "is_correct": true
+            },
+            {
+              "text": "Extreme rapid weight loss of 20kg in one week",
+              "is_correct": false
+            },
+            {
+              "text": "Flushed, sweating skin with warm extremities",
+              "is_correct": false
+            },
+            {
+              "text": "Persistent dryness of all body mucous membranes",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because renal failure and low albumin lead to fluid retention manifesting as peripheral edema and facial puffiness. Weight loss is inconsistent with fluid retention. Flushed warm skin is not specific to CKD. Mucous membrane dryness occurs in dehydration.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Stroke Care",
+          "question_text": "During the rehabilitation phase for a stroke patient with left-sided hemiparesis, how should the nurse position objects in the patient's room?",
+          "choices": [
+            {
+              "text": "On the affected (left) side initially to encourage the patient to turn toward and engage that side",
+              "is_correct": true
+            },
+            {
+              "text": "Exclusively on the unaffected side so the patient never has to look left",
+              "is_correct": false
+            },
+            {
+              "text": "Outside the room in the corridor",
+              "is_correct": false
+            },
+            {
+              "text": "Directly overhead suspended from the ceiling",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because encouraging engagement on the affected side promotes neural rehabilitation and combats neglect. Placing everything on the unaffected side worsens neglect. Corridor placement is inaccessible. Overhead placement is unsafe.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Diabetes Mellitus",
+          "question_text": "What is the primary mechanism of action of oral Metformin in treating Type 2 Diabetes Mellitus?",
+          "choices": [
+            {
+              "text": "Reducing hepatic glucose production and improving insulin sensitivity",
+              "is_correct": true
+            },
+            {
+              "text": "Destroying pancreatic beta cells completely",
+              "is_correct": false
+            },
+            {
+              "text": "Stimulating excessive insulin secretion until exhaustion",
+              "is_correct": false
+            },
+            {
+              "text": "Converting all dietary protein into pure fat",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Metformin decreases hepatic gluconeogenesis and enhances peripheral insulin sensitivity. It does not destroy beta cells, exhaust insulin, or convert protein to fat.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Hypertension",
+          "question_text": "Which complication of chronic uncontrolled hypertension affects retinal blood vessels, potentially leading to visual impairment?",
+          "choices": [
+            {
+              "text": "Hypertensive retinopathy",
+              "is_correct": true
+            },
+            {
+              "text": "Cataract formation",
+              "is_correct": false
+            },
+            {
+              "text": "Acute conjunctivitis",
+              "is_correct": false
+            },
+            {
+              "text": "Simple myopia",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because hypertension damages retinal blood vessels, causing hypertensive retinopathy. Cataracts involve lens opacification. Conjunctivitis is infection. Myopia is refractive error.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Malaria Management",
+          "question_text": "Why is pre-referral rectal artesunate recommended for a child with suspected severe malaria at a remote CHPS compound before transfer?",
+          "choices": [
+            {
+              "text": "To rapidly initiate parasite clearance and prevent mortality during transport",
+              "is_correct": true
+            },
+            {
+              "text": "To cure the child completely so hospital transfer is unnecessary",
+              "is_correct": false
+            },
+            {
+              "text": "To act as a general painkiller for broken bones",
+              "is_correct": false
+            },
+            {
+              "text": "To prevent future chickenpox infection",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because pre-referral rectal artesunate buys crucial time and suppresses parasitemia during emergency transport. It does not replace comprehensive hospital care. It is an antimalarial, not an analgesic or viral vaccine.",
+          "difficulty": "APPLICATION"
+        }
+      ]
+    },
+    {
+      "course_code": "AND-311-C",
+      "course_title": "Advanced Nursing III",
+      "category": "FUNDAMENTALS",
+      "semester": "S1",
+      "topics": [
+        "Advanced Wound Care",
+        "Fluid & Electrolytes",
+        "Acid-Base Balance",
+        "Perioperative Care",
+        "Emergency Triage"
+      ],
+      "questions": [
+        {
+          "topic": "Advanced Wound Care",
+          "question_text": "When performing moist wound healing for a chronic pressure ulcer with moderate exudate, which dressing type is most appropriate?",
+          "choices": [
+            {
+              "text": "Hydrocolloid or foam dressing",
+              "is_correct": true
+            },
+            {
+              "text": "Dry sterile gauze left uncovered for air drying",
+              "is_correct": false
+            },
+            {
+              "text": "Occlusive impermeable plastic wrap secured with adhesive tape",
+              "is_correct": false
+            },
+            {
+              "text": "Pure table salt crystals packed directly into the wound bed",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because hydrocolloid or foam dressings maintain optimal moisture balance and absorb moderate exudate. Dry gauze adheres to wounds and delays healing. Plastic wrap lacks absorptive capacity. Salt causes severe pain and tissue necrosis.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Fluid & Electrolytes",
+          "question_text": "A patient receiving rapid intravenous normal saline infusion develops dyspnea, engorged neck veins, and bilateral basal crackles. What complication has occurred?",
+          "choices": [
+            {
+              "text": "Circulatory overload (Fluid overload)",
+              "is_correct": true
+            },
+            {
+              "text": "Severe hypovolemic shock",
+              "is_correct": false
+            },
+            {
+              "text": "Acute hypoglycemia",
+              "is_correct": false
+            },
+            {
+              "text": "Anaphylactic shock from saline",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because dyspnea, engorged neck veins, and crackles are classic signs of hypervolemia due to rapid IV fluid infusion. Hypovolemia causes low BP and tachycardia. Hypoglycemia affects glucose. Saline allergy is extremely rare.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "Arterial Blood Gas (ABG) results for a patient with severe diarrhea show pH 7.28, PaCO2 38 mmHg, and HCO3 18 mmol/L. How is this acid-base imbalance interpreted?",
+          "choices": [
+            {
+              "text": "Metabolic acidosis",
+              "is_correct": true
+            },
+            {
+              "text": "Respiratory alkalosis",
+              "is_correct": false
+            },
+            {
+              "text": "Metabolic alkalosis",
+              "is_correct": false
+            },
+            {
+              "text": "Respiratory acidosis",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because low pH (<7.35) combined with low bicarbonate (<22 mmol/L) indicates metabolic acidosis, commonly caused by bicarbonate loss in severe diarrhea. PaCO2 is normal. Respiratory imbalances involve CO2 changes.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "An emergency room nurse receives four surgical patients. Which patient requires immediate post-operative evaluation?",
+          "choices": [
+            {
+              "text": "A patient 2 hours post-appendectomy with bright red bleeding soaking through the abdominal dressing",
+              "is_correct": true
+            },
+            {
+              "text": "A patient requesting a glass of drinking water 6 hours post-hernia repair",
+              "is_correct": false
+            },
+            {
+              "text": "A patient complaining of mild incisional pain rating 3 out of 10",
+              "is_correct": false
+            },
+            {
+              "text": "A patient asking when they can be discharged home next week",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because bleeding soaking through dressings indicates active post-operative hemorrhage, demanding immediate surgical intervention. Water request is routine. Mild pain is expected. Discharge inquiry is non-urgent.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "What is the primary purpose of conducting a pre-operative surgical safety checklist (such as the WHO Surgical Safety Checklist) in the operating theater?",
+          "choices": [
+            {
+              "text": "To prevent surgical errors, wrong-site surgery, and adverse perioperative events",
+              "is_correct": true
+            },
+            {
+              "text": "To delay surgical procedures indefinitely",
+              "is_correct": false
+            },
+            {
+              "text": "To replace the need for anesthesia monitoring",
+              "is_correct": false
+            },
+            {
+              "text": "To audit hospital electricity consumption",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the WHO checklist significantly reduces surgical complications and wrong-site errors. It enhances, not delays, safety. It complements anesthesia monitoring, not replaces it. Electricity auditing is unrelated.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Emergency Triage",
+          "question_text": "Using the Emergency Triage Assessment and Treatment (ETAT) system, how is a patient categorized who presents with obstructed breathing or central cyanosis?",
+          "choices": [
+            {
+              "text": "Emergency (Priority 1 / Red)",
+              "is_correct": true
+            },
+            {
+              "text": "Priority (Yellow)",
+              "is_correct": false
+            },
+            {
+              "text": "Non-urgent (Green)",
+              "is_correct": false
+            },
+            {
+              "text": "Discharged immediately (Black)",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because airway obstruction and cyanosis are immediate life-threatening emergency conditions requiring instant resuscitation. Priority is for non-immediate severe conditions. Non-urgent is for stable clients. Black is for deceased.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Advanced Wound Care",
+          "question_text": "When assessing a wound for infection, which finding is most clinically definitive of localized wound infection?",
+          "choices": [
+            {
+              "text": "Purulent exudate, localized erythema, warmth, and increasing pain",
+              "is_correct": true
+            },
+            {
+              "text": "Pale pink granulation tissue with no odor",
+              "is_correct": false
+            },
+            {
+              "text": "Complete closure of the wound margins within 24 hours",
+              "is_correct": false
+            },
+            {
+              "text": "Absence of any drainage or tenderness",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because purulence, warmth, erythema, and pain are cardinal signs of infection. Pink granulation tissue indicates healthy healing. Wound closure is normal healing. Absence of drainage/tenderness is normal.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Fluid & Electrolytes",
+          "question_text": "What electrolyte imbalance is most commonly associated with severe muscle cramps, cardiac arrhythmias, and flattened T-waves on an ECG?",
+          "choices": [
+            {
+              "text": "Hypokalemia (Low serum potassium)",
+              "is_correct": true
+            },
+            {
+              "text": "Hypernatremia (High serum sodium)",
+              "is_correct": false
+            },
+            {
+              "text": "Hypercalcemia (High serum calcium)",
+              "is_correct": false
+            },
+            {
+              "text": "Hypermagnesemia",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because potassium depletion (hypokalemia) causes muscular weakness, cramps, and characteristic ECG changes like flattened T-waves. Hypernatremia affects neurological status. Hypercalcemia affects GI and renal function.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "What compensatory mechanism does the respiratory system initiate in response to severe metabolic acidosis?",
+          "choices": [
+            {
+              "text": "Hyperventilation (Kussmaul breathing) to blow off carbon dioxide and raise pH",
+              "is_correct": true
+            },
+            {
+              "text": "Hypoventilation to retain carbon dioxide and lower pH further",
+              "is_correct": false
+            },
+            {
+              "text": "Complete cessation of breathing",
+              "is_correct": false
+            },
+            {
+              "text": "No change in respiratory rate or depth",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the lungs compensate for metabolic acidosis by increasing ventilation (Kussmaul breathing) to eliminate carbonic acid as CO2. Hypoventilation would worsen acidosis. Cessation of breathing is fatal. Lungs always compensate.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A surgical nurse is caring for four post-operative patients. Which patient should the nurse assess first?",
+          "choices": [
+            {
+              "text": "A patient reporting sudden onset chest pain and acute shortness of breath 3 days post-operatively",
+              "is_correct": true
+            },
+            {
+              "text": "A patient requesting assistance walking to the bathroom",
+              "is_correct": false
+            },
+            {
+              "text": "A patient scheduled for routine oral medication administration in 1 hour",
+              "is_correct": false
+            },
+            {
+              "text": "A patient whose wound dressing is intact and dry",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because sudden chest pain and shortness of breath strongly suggest a pulmonary embolism, a life-threatening emergency requiring immediate intervention. Walking assistance, routine medication, and dry dressings are stable.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "What is the primary objective of nursing care during the immediate post-anesthetic recovery period (PACU)?",
+          "choices": [
+            {
+              "text": "Monitoring patent airway, respiratory function, and hemodynamic stability until the patient recovers consciousness",
+              "is_correct": true
+            },
+            {
+              "text": "Discharging the patient home immediately without vital signs",
+              "is_correct": false
+            },
+            {
+              "text": "Serving a heavy fatty meal immediately upon waking",
+              "is_correct": false
+            },
+            {
+              "text": "Removing all IV lines and surgical sutures immediately",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because PACU monitoring focuses on airway, breathing, and circulation during emergence from anesthesia. Immediate discharge is unsafe. Heavy meals cause aspiration. Removing lines and sutures prematurely causes hemorrhage and complications.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Emergency Triage",
+          "question_text": "In mass casualty triage (START method), what category is assigned to a victim who is breathing spontaneously after their airway is manually opened, but has a respiratory rate over 30 breaths per minute?",
+          "choices": [
+            {
+              "text": "Immediate (Red)",
+              "is_correct": true
+            },
+            {
+              "text": "Minor (Green)",
+              "is_correct": false
+            },
+            {
+              "text": "Delayed (Yellow)",
+              "is_correct": false
+            },
+            {
+              "text": "Expectant / Deceased (Black)",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because under START triage, a respiratory rate above 30 breaths per minute categorizes the patient as Immediate (Red). Minor is for walking wounded. Delayed is for stable injuries. Black is for non-breathing deceased.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Advanced Wound Care",
+          "question_text": "What is the primary purpose of surgical debridement in managing a necrotic, slough-covered wound?",
+          "choices": [
+            {
+              "text": "To remove dead, necrotic tissue that hinders granulation and harbors bacterial infection",
+              "is_correct": true
+            },
+            {
+              "text": "To increase bacterial proliferation within the wound bed",
+              "is_correct": false
+            },
+            {
+              "text": "To cause intentional hemorrhage and pain",
+              "is_correct": false
+            },
+            {
+              "text": "To close the wound without sutures",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because removing necrotic tissue (debridement) removes infection sources and enables healthy granulation tissue growth. It does not increase bacteria. Causing pain/hemorrhage is not the goal. It does not replace sutures.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Fluid & Electrolytes",
+          "question_text": "Which intravenous fluid is classified as an isotonic crystalloid solution commonly used for initial fluid resuscitation?",
+          "choices": [
+            {
+              "text": "0.9% Sodium Chloride (Normal Saline)",
+              "is_correct": true
+            },
+            {
+              "text": "50% Dextrose in Water",
+              "is_correct": false
+            },
+            {
+              "text": "Packed Red Blood Cells",
+              "is_correct": false
+            },
+            {
+              "text": "Pure sterile distilled water",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because 0.9% Normal Saline is an isotonic crystalloid solution that expands extracellular fluid volume without fluid shifting. 50% Dextrose is hypertonic. Blood is a blood product. Distilled water is hypotonic and causes hemolysis.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "What acid-base disturbance is caused by prolonged vomiting or nasogastric suctioning resulting in loss of gastric hydrochloric acid?",
+          "choices": [
+            {
+              "text": "Metabolic alkalosis",
+              "is_correct": true
+            },
+            {
+              "text": "Metabolic acidosis",
+              "is_correct": false
+            },
+            {
+              "text": "Respiratory acidosis",
+              "is_correct": false
+            },
+            {
+              "text": "Respiratory alkalosis",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because losing gastric acid (HCl) via vomiting or suctioning leaves excess bicarbonate, resulting in metabolic alkalosis. Acid loss causes alkalosis, not acidosis. Respiratory disorders involve CO2.",
+          "difficulty": "APPLICATION"
+        }
+      ]
+    },
+    {
+      "course_code": "CBR-322-C",
+      "course_title": "Community-Based Rehabilitation",
+      "category": "COMMUNITY",
+      "semester": "S2",
+      "topics": [
+        "CBR Principles",
+        "Disability Identification",
+        "Assistive Devices",
+        "Stigma Reduction",
+        "Referral Pathways"
+      ],
+      "questions": [
+        {
+          "topic": "CBR Principles",
+          "question_text": "What is the primary objective of Community-Based Rehabilitation (CBR) programs implemented in rural Ghanaian communities?",
+          "choices": [
+            {
+              "text": "To equalize opportunities, promote social inclusion, and empower persons with disabilities within their local communities",
+              "is_correct": true
+            },
+            {
+              "text": "To isolate persons with disabilities in permanent urban custodial institutions",
+              "is_correct": false
+            },
+            {
+              "text": "To eliminate the need for any community health nursing involvement",
+              "is_correct": false
+            },
+            {
+              "text": "To provide exclusive cosmetic surgery for physical deformities",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because CBR focuses on community-based inclusion, equalization of opportunities, and empowerment. Isolation contradicts CBR principles. Nursing involvement is vital. Cosmetic surgery is not its core mandate.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Disability Identification",
+          "question_text": "A community health nurse conducts a household survey and identifies a 6-year-old child who cannot walk or crawl. What is the nurse's best initial action?",
+          "choices": [
+            {
+              "text": "Perform a comprehensive developmental screening and initiate referral to the district rehabilitation center",
+              "is_correct": true
+            },
+            {
+              "text": "Inform the parents that the child has no hope of improvement and advise keeping them indoors",
+              "is_correct": false
+            },
+            {
+              "text": "Blame the mother for witchcraft and cultural taboos",
+              "is_correct": false
+            },
+            {
+              "text": "Ignore the finding as a normal developmental variation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because early screening and referral link the child to appropriate rehabilitation services. Advising isolation is unethical. Blaming witchcraft perpetuates harmful stigma. Ignoring delays harms the child.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Assistive Devices",
+          "question_text": "When assisting a person with lower limb physical disability to be fitted with an assistive device like crutches, what is the nurse's primary role?",
+          "choices": [
+            {
+              "text": "Ensure proper sizing, client safety, and educate the client and family on correct usage techniques",
+              "is_correct": true
+            },
+            {
+              "text": "Carve wooden crutches from forest tree branches without measurements",
+              "is_correct": false
+            },
+            {
+              "text": "Discourage device usage to prevent muscle strengthening",
+              "is_correct": false
+            },
+            {
+              "text": "Lock the assistive device in a clinic cupboard",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because proper sizing, safety, and training ensure effective mobility and prevent injury. Unmeasured wooden carving is unsafe. Discouraging usage impedes independence. Locking devices away denies care.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "During a community disability screening outreach, a nurse encounters four individuals. Which client requires immediate urgent referral?",
+          "choices": [
+            {
+              "text": "A child with progressive spinal deformity and new-onset lower limb weakness and sensory loss",
+              "is_correct": true
+            },
+            {
+              "text": "An adult with a stable, long-standing congenital hearing impairment using sign language",
+              "is_correct": false
+            },
+            {
+              "text": "An elderly person with mild age-related presbyopia needing reading glasses",
+              "is_correct": false
+            },
+            {
+              "text": "A teenager with a well-adjusted prosthetic limb participating in school sports",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because new-onset lower limb weakness and sensory loss with spinal deformity indicate potential spinal cord compression requiring urgent specialist evaluation. Stable hearing impairment is non-acute. Presbyopia is routine. Well-adjusted prosthesis is stable.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Stigma Reduction",
+          "question_text": "What is the most effective nursing strategy to combat stigma and discrimination against persons with disabilities in rural Ghanaian communities?",
+          "choices": [
+            {
+              "text": "Conducting community durbars and educational forums to dispel myths and promote disability rights",
+              "is_correct": true
+            },
+            {
+              "text": "Encouraging families to hide children with disabilities behind closed doors",
+              "is_correct": false
+            },
+            {
+              "text": "Agreeing with community beliefs that disability is a curse from river gods",
+              "is_correct": false
+            },
+            {
+              "text": "Banning persons with disabilities from attending public community gatherings",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because community education durbars dispel myths and foster inclusion. Hiding children reinforces stigma. Agreeing with curses validates harmful discrimination. Banning public attendance violates human rights.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Referral Pathways",
+          "question_text": "What is the purpose of establishing a functional referral pathway between a CHPS compound and regional rehabilitation centers?",
+          "choices": [
+            {
+              "text": "To ensure seamless transfer of clients for specialized therapy, vocational training, and orthopedic support",
+              "is_correct": true
+            },
+            {
+              "text": "To create bureaucratic paperwork delays for patients",
+              "is_correct": false
+            },
+            {
+              "text": "To restrict healthcare access exclusively to wealthy elites",
+              "is_correct": false
+            },
+            {
+              "text": "To eliminate community participation entirely",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because functional referral pathways connect grassroots care with specialized regional rehabilitation services. Bureaucratic delays are flaws to avoid. Healthcare access must be equitable. Community participation is essential to CBR.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "CBR Principles",
+          "question_text": "Which pillar of Community-Based Rehabilitation focuses on ensuring children with disabilities have access to formal and informal education?",
+          "choices": [
+            {
+              "text": "Education component",
+              "is_correct": true
+            },
+            {
+              "text": "Lethal injection protocol",
+              "is_correct": false
+            },
+            {
+              "text": "Heavy industrial manufacturing",
+              "is_correct": false
+            },
+            {
+              "text": "Military combat training",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the education pillar in CBR promotes inclusive schooling and learning opportunities. Lethal injection is unethical. Industrial manufacturing and military combat are unrelated to CBR education.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A community health nurse is reviewing rehabilitation care plans for four families. Which family should be visited first?",
+          "choices": [
+            {
+              "text": "A family caring for a bedridden stroke survivor who has developed a Stage 3 pressure ulcer on the sacrum",
+              "is_correct": true
+            },
+            {
+              "text": "A family whose child with mild speech delay is already enrolled in speech therapy",
+              "is_correct": false
+            },
+            {
+              "text": "An adult with controlled visual impairment attending vocational school",
+              "is_correct": false
+            },
+            {
+              "text": "A family requesting information on local disability grants",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a Stage 3 pressure ulcer in a bedridden client represents an active tissue injury requiring immediate wound care and repositioning. Enrolled speech therapy is stable. Controlled visual impairment is stable. Grant info is non-urgent.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Disability Identification",
+          "question_text": "What screening tool is commonly utilized by community health workers in Ghana to identify childhood developmental delays during home visits?",
+          "choices": [
+            {
+              "text": "Under-Five Child Health Record Booklet developmental milestones checklist",
+              "is_correct": true
+            },
+            {
+              "text": "Advanced magnetic resonance imaging (MRI) scan",
+              "is_correct": false
+            },
+            {
+              "text": "Full-scale adult intelligence quotient (IQ) test",
+              "is_correct": false
+            },
+            {
+              "text": "Coronary angiogram procedure",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the Child Health Record Booklet contains practical milestone checklists for community screening. MRI is hospital-based. Adult IQ tests and coronary angiograms are specialized clinical procedures.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Assistive Devices",
+          "question_text": "Why is peer support and counseling important for a newly disabled adult receiving a wheelchair through a CBR program?",
+          "choices": [
+            {
+              "text": "To assist with psychological adjustment, self-acceptance, and sharing practical coping strategies for daily living",
+              "is_correct": true
+            },
+            {
+              "text": "To encourage social isolation and dependency on others",
+              "is_correct": false
+            },
+            {
+              "text": "To discourage independence and wheelchair mobility skills",
+              "is_correct": false
+            },
+            {
+              "text": "To replace all physical therapy interventions permanently",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because peer support fosters psychological adjustment and shares practical coping strategies for community living. Isolation and dependency are counterproductive. Independence is encouraged. Peer support complements, not replaces, physical therapy.",
+          "difficulty": "APPLICATION"
+        }
+      ]
+    },
+    {
+      "course_code": "CTM-322-C",
+      "course_title": "Complementary & Traditional Medicine",
+      "category": "COMMUNITY",
+      "semester": "S2",
+      "topics": [
+        "Traditional Medicine Regulation",
+        "Herbal Safety",
+        "Orthodox Integration",
+        "Medicinal Plants",
+        "Client Counseling"
+      ],
+      "questions": [
+        {
+          "topic": "Traditional Medicine Regulation",
+          "question_text": "In Ghana, which statutory body under the Ministry of Health is mandated to regulate practice, herbal medicines, and practitioners of traditional and alternative medicine?",
+          "choices": [
+            {
+              "text": "Traditional Medicine Practice Council (TMPC)",
+              "is_correct": true
+            },
+            {
+              "text": "National Basketball Association",
+              "is_correct": false
+            },
+            {
+              "text": "National Petroleum Authority",
+              "is_correct": false
+            },
+            {
+              "text": "Civil Aviation Authority",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the TMPC regulates traditional medicine practice and products in Ghana. Basketball, petroleum, and aviation authorities have no mandate over traditional medicine.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Herbal Safety",
+          "question_text": "A patient visiting a health center mentions taking an unregistered local herbal concoction alongside prescribed antihypertensive medication. What is the nurse's primary concern?",
+          "choices": [
+            {
+              "text": "Potential herb-drug interactions, unpredictable potency, and risk of adverse renal or hepatic toxicity",
+              "is_correct": true
+            },
+            {
+              "text": "Guaranteed enhancement of antihypertensive efficacy with zero side effects",
+              "is_correct": false
+            },
+            {
+              "text": "Immediate legal prosecution of the patient by the nurse",
+              "is_correct": false
+            },
+            {
+              "text": "Complete elimination of all disease states within two hours",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because unregistered herbal preparations can cause severe herb-drug interactions, toxicity, and unpredictable dosing. Efficacy is not guaranteed. Legal prosecution is outside nursing scope. Disease elimination is unrealistic.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Orthodox Integration",
+          "question_text": "What is the primary goal of integrating traditional medicine practitioners into the mainstream healthcare delivery system in Ghana?",
+          "choices": [
+            {
+              "text": "To promote safe, collaborative healthcare delivery, mutual referrals, and holistic patient-centered care",
+              "is_correct": true
+            },
+            {
+              "text": "To ban all orthodox hospitals and replace them entirely with herbal shrines",
+              "is_correct": false
+            },
+            {
+              "text": "To eliminate the use of scientific evidence in clinical nursing practice",
+              "is_correct": false
+            },
+            {
+              "text": "To increase maternal and child mortality rates",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because integration fosters collaboration, safety, and holistic care. Banning orthodox hospitals is absurd. Eliminating evidence violates nursing standards. Increasing mortality contradicts health goals.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A community health nurse assesses four clients using traditional remedies. Which client requires immediate medical intervention?",
+          "choices": [
+            {
+              "text": "A client who ingested an unverified herbal concoction and presents with jaundice, right upper quadrant pain, and elevated liver enzymes",
+              "is_correct": true
+            },
+            {
+              "text": "A client drinking locally brewed lemon grass tea for mild common cold symptoms",
+              "is_correct": false
+            },
+            {
+              "text": "An elderly client using shea butter for dry skin moisturization",
+              "is_correct": false
+            },
+            {
+              "text": "A client eating local ginger and garlic as part of daily dietary meals",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because jaundice and RUQ pain following unverified herbal ingestion indicate acute herb-induced liver injury, demanding emergency care. Lemon grass tea for a cold is benign. Shea butter is topical. Ginger/garlic in meals is normal dietary intake.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Medicinal Plants",
+          "question_text": "Which Ghanaian medicinal plant is widely recognized and researched for its anti-malarial properties and active constituent artemisinin?",
+          "choices": [
+            {
+              "text": "Artemisia annua (Sweet Wormwood)",
+              "is_correct": true
+            },
+            {
+              "text": "Theobroma cacao (Cocoa tree)",
+              "is_correct": false
+            },
+            {
+              "text": "Manihot esculenta (Cassava)",
+              "is_correct": false
+            },
+            {
+              "text": "Zea mays (Maize)",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Artemisia annua is the botanical source of artemisinin used in anti-malarial therapies. Cocoa produces cocoa butter/chocolate. Cassava is a staple root crop. Maize is grain.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Client Counseling",
+          "question_text": "How should a community health nurse counsel a client who insists on using traditional herbal enemas for chronic constipation?",
+          "choices": [
+            {
+              "text": "Educate respectfully on the risks of rectal mucosal injury, electrolyte imbalance, and toxic megacolon, offering safe alternatives",
+              "is_correct": true
+            },
+            {
+              "text": "Encourage the client to increase the frequency of herbal enemas to twice daily",
+              "is_correct": false
+            },
+            {
+              "text": "Ridicule the client's cultural beliefs and mock their intelligence",
+              "is_correct": false
+            },
+            {
+              "text": "Administer the enema personally to speed up the process",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because respectful education on mucosal injury and electrolyte imbalance protects client safety without cultural disrespect. Increasing enemas is harmful. Ridicule destroys rapport. Administering unverified enemas violates safety standards.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A nurse receives four reports regarding patients mixing traditional and orthodox medicines. Who should be prioritized for counseling?",
+          "choices": [
+            {
+              "text": "A patient on warfarin therapy for deep vein thrombosis who started drinking large quantities of herbal concoctions known to alter clotting times",
+              "is_correct": true
+            },
+            {
+              "text": "A patient using a eucalyptus steam inhalation for nasal congestion",
+              "is_correct": false
+            },
+            {
+              "text": "A patient applying coconut oil to dry elbows",
+              "is_correct": false
+            },
+            {
+              "text": "A patient drinking hibiscus tea (sobolo) as a refreshing beverage",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because mixing warfarin with interacting herbs can cause fatal hemorrhage or clotting, requiring urgent education. Eucalyptus steam is safe for congestion. Coconut oil is topical. Hibiscus tea is safe dietary intake.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Traditional Medicine Regulation",
+          "question_text": "What is a major safety advantage of herbal medicines certified and registered by the Food and Drugs Authority (FDA) in Ghana?",
+          "choices": [
+            {
+              "text": "They have undergone microbiological and heavy metal testing and carry standardized labeling and dosage instructions",
+              "is_correct": true
+            },
+            {
+              "text": "They are guaranteed to cure all known human diseases instantly",
+              "is_correct": false
+            },
+            {
+              "text": "They require no expiry dates or batch numbers",
+              "is_correct": false
+            },
+            {
+              "text": "They are manufactured exclusively in secret underground caves",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because FDA registration ensures quality control, heavy metal testing, and standardized labeling. No medicine cures all diseases. Expiry dates and batch numbers are mandatory. Secret underground production violates regulations.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Orthodox Integration",
+          "question_text": "When taking a client's admission history in a clinic, why is it essential for the nurse to specifically inquire about concurrent use of traditional herbal remedies?",
+          "choices": [
+            {
+              "text": "To prevent adverse herb-drug interactions and ensure comprehensive clinical safety",
+              "is_correct": true
+            },
+            {
+              "text": "To judge the client's socioeconomic background",
+              "is_correct": false
+            },
+            {
+              "text": "To confiscate all herbal products and fine the client",
+              "is_correct": false
+            },
+            {
+              "text": "To fulfill a mandatory tax auditing requirement",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because inquiring about herbal use prevents harmful herb-drug interactions and ensures safety. Judging background is unethical. Confiscating and fining is beyond nursing scope. Tax auditing is unrelated.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Herbal Safety",
+          "question_text": "Which heavy metal contaminant is sometimes found in uncertified, poorly processed traditional herbal preparations, posing severe toxicity risks?",
+          "choices": [
+            {
+              "text": "Lead, mercury, or arsenic",
+              "is_correct": true
+            },
+            {
+              "text": "Pure Vitamin C",
+              "is_correct": false
+            },
+            {
+              "text": "Calcium carbonate",
+              "is_correct": false
+            },
+            {
+              "text": "Sodium chloride",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because uncertified herbal preparations have occasionally been found contaminated with toxic heavy metals like lead, mercury, or arsenic. Vitamin C, calcium carbonate, and sodium chloride are not toxic heavy metal contaminants.",
+          "difficulty": "KNOWLEDGE"
+        }
+      ]
+    },
+    {
+      "course_code": "PAD-322-C",
+      "course_title": "Paediatric Nursing II",
+      "category": "MATERNAL",
+      "semester": "S2",
+      "topics": [
+        "Adolescent Health",
+        "Sickle Cell Disease",
+        "Rheumatic Fever",
+        "Pediatric Oncology",
+        "Adolescent Reproductive Health"
+      ],
+      "questions": [
+        {
+          "topic": "Sickle Cell Disease",
+          "question_text": "A 7-year-old child with Sickle Cell Disease presents to the health center in a painful vaso-occlusive crisis. What is the nurse's priority management?",
+          "choices": [
+            {
+              "text": "Administer prescribed analgesics, adequate intravenous or oral hydration, and oxygen therapy if hypoxic",
+              "is_correct": true
+            },
+            {
+              "text": "Immerse the child in ice-cold water to freeze the sickled cells",
+              "is_correct": false
+            },
+            {
+              "text": "Restrict all fluids completely to dehydrate the blood",
+              "is_correct": false
+            },
+            {
+              "text": "Encourage strenuous marathon running to increase circulation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because vaso-occlusive crises require pain management, rehydration, and oxygenation to reverse sickling. Ice water worsens vasoconstriction. Fluid restriction worsens crisis. Strenuous exercise induces hypoxia and sickling.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Adolescent Health",
+          "question_text": "When providing adolescent reproductive health counseling at a youth-friendly health corner in Ghana, which principle is most vital?",
+          "choices": [
+            {
+              "text": "Maintaining strict confidentiality and providing non-judgmental, adolescent-friendly care",
+              "is_correct": true
+            },
+            {
+              "text": "Reporting every conversation immediately to the adolescent's school headmaster and parents without consent",
+              "is_correct": false
+            },
+            {
+              "text": "Scolding teenagers for experiencing normal pubertal changes",
+              "is_correct": false
+            },
+            {
+              "text": "Refusing to answer questions regarding contraception or sexually transmitted infections",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because confidentiality and non-judgmental attitude build trust, encouraging teens to seek vital reproductive health services. Reporting without consent destroys trust. Scolding deters clinic visits. Refusing answers leaves teens vulnerable to STIs.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Rheumatic Fever",
+          "question_text": "What is the primary antecedent infection that precedes Acute Rheumatic Fever in children?",
+          "choices": [
+            {
+              "text": "Group A beta-hemolytic streptococcal pharyngitis (Strep throat)",
+              "is_correct": true
+            },
+            {
+              "text": "Plasmodium falciparum malaria infection",
+              "is_correct": false
+            },
+            {
+              "text": "Rotavirus acute gastroenteritis",
+              "is_correct": false
+            },
+            {
+              "text": "Staphylococcus aureus skin boil",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because acute rheumatic fever is an autoimmune inflammatory reaction following untreated Group A streptococcal throat infection. Malaria, rotavirus, and staph boils do not cause rheumatic fever.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A pediatric nurse receives four adolescent and child clients. Which client requires immediate emergency resuscitation?",
+          "choices": [
+            {
+              "text": "A child with sickle cell disease presenting with acute splenic sequestration crisis (sudden pallor, tachycardia, massive splenomegaly, and shock)",
+              "is_correct": true
+            },
+            {
+              "text": "An adolescent coming for routine tetanus vaccination booster",
+              "is_correct": false
+            },
+            {
+              "text": "A child with mild dandruff and healthy scalp",
+              "is_correct": false
+            },
+            {
+              "text": "An adolescent requesting nutritional counseling for healthy weight management",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because splenic sequestration crisis causes rapid hypovolemic shock and death if not resuscitated immediately with blood transfusion and fluids. Routine vaccination, dandruff, and nutritional counseling are stable.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Pediatric Oncology",
+          "question_text": "What is a common childhood renal tumor characterized by an asymptomatic abdominal mass discovered during bathing or routine examination?",
+          "choices": [
+            {
+              "text": "Wilms' tumor (Nephroblastoma)",
+              "is_correct": true
+            },
+            {
+              "text": "Retinoblastoma",
+              "is_correct": false
+            },
+            {
+              "text": "Acute lymphoblastic leukemia",
+              "is_correct": false
+            },
+            {
+              "text": "Burkitt lymphoma",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Wilms' tumor is the most common renal malignancy in children, presenting as an abdominal mass. Retinoblastoma affects the eye. Leukemia affects blood/bone marrow. Burkitt lymphoma affects jaw/abdomen.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Sickle Cell Disease",
+          "question_text": "Why is prophylactic penicillin prescribed daily to young children diagnosed with Sickle Cell Disease in Ghana?",
+          "choices": [
+            {
+              "text": "To prevent life-threatening pneumococcal infections due to functional asplenia",
+              "is_correct": true
+            },
+            {
+              "text": "To cure the genetic mutation permanently",
+              "is_correct": false
+            },
+            {
+              "text": "To act as a strong contraceptive agent",
+              "is_correct": false
+            },
+            {
+              "text": "To prevent bone fractures during play",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because asplenia in sickle cell disease increases susceptibility to encapsulated organisms like Streptococcus pneumoniae; penicillin prophylaxis prevents sepsis. Penicillin does not cure genetics, act as contraception, or prevent fractures.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A nurse in a pediatric ward is managing four children. Which patient must be prioritized for immediate medical review?",
+          "choices": [
+            {
+              "text": "A child with acute asthma exacerbation experiencing intercostal retractions, wheezing, and oxygen saturation of 88%",
+              "is_correct": true
+            },
+            {
+              "text": "An adolescent with well-controlled asthma sleeping peacefully",
+              "is_correct": false
+            },
+            {
+              "text": "A child with a healed surgical scar awaiting suture removal tomorrow",
+              "is_correct": false
+            },
+            {
+              "text": "A child receiving routine oral multivitamins",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because an oxygen saturation of 88% with retractions indicates acute respiratory distress, demanding immediate bronchodilator and oxygen therapy. Controlled asthma, suture removal, and multivitamins are stable.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Adolescent Health",
+          "question_text": "What is a key physiological hallmark of puberty in adolescent females marking the onset of reproductive maturity?",
+          "choices": [
+            {
+              "text": "Menarche (onset of first menstruation)",
+              "is_correct": true
+            },
+            {
+              "text": "Echocardiogram abnormalities",
+              "is_correct": false
+            },
+            {
+              "text": "Bilateral cataract formation",
+              "is_correct": false
+            },
+            {
+              "text": "Complete cessation of growth",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because menarche is the physiological milestone marking female puberty. Echocardiograms, cataracts, and growth cessation are not markers of female puberty.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Rheumatic Fever",
+          "question_text": "What is the primary long-term cardiac complication of repeated acute rheumatic fever attacks if prophylactic antibiotic therapy is neglected?",
+          "choices": [
+            {
+              "text": "Rheumatic heart disease (valvular heart damage, especially mitral stenosis/regurgitation)",
+              "is_correct": true
+            },
+            {
+              "text": "Acute appendicitis",
+              "is_correct": false
+            },
+            {
+              "text": "Chronic kidney failure",
+              "is_correct": false
+            },
+            {
+              "text": "Idiopathic epilepsy",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because repeated rheumatic fever damages heart valves, leading to rheumatic heart disease. Appendicitis is intestinal. Kidney failure relates to renal pathology. Epilepsy is neurological.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Pediatric Oncology",
+          "question_text": "What classic clinical sign is frequently observed in the early stages of retinoblastoma in a young child?",
+          "choices": [
+            {
+              "text": "Leukocoria (white pupillary reflex or 'cat's eye' reflex)",
+              "is_correct": true
+            },
+            {
+              "text": "Yellow discoloration of the skin (jaundice)",
+              "is_correct": false
+            },
+            {
+              "text": "Severe swelling of the lower extremities",
+              "is_correct": false
+            },
+            {
+              "text": "Profuse watery diarrhea",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because leukocoria (white pupillary reflex) is the hallmark early sign of retinoblastoma. Jaundice indicates liver/blood issues. Leg swelling indicates cardiac/renal issues. Diarrhea indicates gastrointestinal infection.",
+          "difficulty": "KNOWLEDGE"
+        }
+      ]
+    },
+    {
+      "course_code": "PHN-322-C",
+      "course_title": "Public Health Nursing",
+      "category": "COMMUNITY",
+      "semester": "S2",
+      "topics": [
+        "Community Diagnosis",
+        "Outbreak Investigation",
+        "Vector Control",
+        "School Health",
+        "Epidemiology"
+      ],
+      "questions": [
+        {
+          "topic": "Community Diagnosis",
+          "question_text": "What is the first formal step in conducting a comprehensive community diagnosis by public health nurses in a sub-district?",
+          "choices": [
+            {
+              "text": "Community entry, stakeholder engagement, and mobilization",
+              "is_correct": true
+            },
+            {
+              "text": "Imposing mandatory fines on all village residents immediately",
+              "is_correct": false
+            },
+            {
+              "text": "Closing down all local markets and schools permanently",
+              "is_correct": false
+            },
+            {
+              "text": "Writing final research papers before visiting the community",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because community entry and stakeholder mobilization build trust and cooperation for assessment. Imposing fines, closing markets, and writing papers without assessment violate public health principles.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Outbreak Investigation",
+          "question_text": "During a sudden cholera outbreak in a coastal Ghanaian community, what is the nurse's immediate priority public health action?",
+          "choices": [
+            {
+              "text": "Establish a cholera treatment center, ensure safe rehydration (ORS/IV fluids), trace contacts, and promote safe water/sanitation",
+              "is_correct": true
+            },
+            {
+              "text": "Tell residents to drink untreated river water and ignore the outbreak",
+              "is_correct": false
+            },
+            {
+              "text": "Quarantine the entire region indefinitely without providing medical care",
+              "is_correct": false
+            },
+            {
+              "text": "Hide outbreak statistics from the district health directorate",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because managing cholera requires case management, rehydration, contact tracing, and WASH interventions. Telling residents to drink untreated water worsens the outbreak. Quarantining without care is unethical. Hiding stats violates public health reporting laws.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Vector Control",
+          "question_text": "What is the primary public health intervention promoted in Ghana to prevent malaria transmission by mosquito vectors at the household level?",
+          "choices": [
+            {
+              "text": "Consistent and correct use of Insecticide-Treated Nets (ITNs)",
+              "is_correct": true
+            },
+            {
+              "text": "Consuming raw garlic cloves daily",
+              "is_correct": false
+            },
+            {
+              "text": "Wearing heavy winter woolen coats in tropical weather",
+              "is_correct": false
+            },
+            {
+              "text": "Painting house walls with bright pink oil paint",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because ITNs provide a physical and chemical barrier against mosquito bites, effectively reducing malaria transmission. Garlic, winter coats, and pink wall paint do not prevent mosquito bites.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A public health nurse receives reports of four public health issues in a sub-district. Which issue requires immediate emergency intervention?",
+          "choices": [
+            {
+              "text": "A sudden cluster of suspected cerebrospinal meningitis (CSM) cases with high fever and neck stiffness",
+              "is_correct": true
+            },
+            {
+              "text": "A request for a routine school health inspection next month",
+              "is_correct": false
+            },
+            {
+              "text": "A community meeting planned for next quarter on sanitation",
+              "is_correct": false
+            },
+            {
+              "text": "An administrative request to update office filing cabinets",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because CSM is a highly contagious, rapidly fatal epidemic disease requiring immediate isolation, treatment, and outbreak notification. Routine inspection, future meetings, and filing cabinets are non-urgent.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "School Health",
+          "question_text": "What is a primary objective of the School Health Education Programme (SHEP) in Ghanaian basic schools?",
+          "choices": [
+            {
+              "text": "To promote healthy lifestyles, personal hygiene, nutritional awareness, and disease prevention among school children",
+              "is_correct": true
+            },
+            {
+              "text": "To train school children in heavy industrial machinery operation",
+              "is_correct": false
+            },
+            {
+              "text": "To replace standard academic curricula with military combat training",
+              "is_correct": false
+            },
+            {
+              "text": "To collect taxes from school pupils",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because SHEP focuses on health promotion, hygiene, nutrition, and disease prevention in schools. Industrial machinery, military training, and pupil taxation are outside SHEP scope.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Epidemiology",
+          "question_text": "In epidemiological terms, what does 'incidence rate' measure in a community?",
+          "choices": [
+            {
+              "text": "The number of new cases of a specific disease occurring in a population at risk during a specified time period",
+              "is_correct": true
+            },
+            {
+              "text": "The total cumulative number of living and deceased cases over a century",
+              "is_correct": false
+            },
+            {
+              "text": "The financial cost of running a district hospital",
+              "is_correct": false
+            },
+            {
+              "text": "The total number of nurses employed in the region",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because incidence measures new cases occurring over a specific time. Cumulative cases measure prevalence. Hospital financial cost and nurse staffing are administrative, not epidemiological incidence.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A public health nurse is reviewing four community health projects. Which project should be prioritized during the rainy season in Ghana?",
+          "choices": [
+            {
+              "text": "Larvicidal spraying, clearing choked gutters, and distributing ITNs to prevent malaria and cholera outbreaks",
+              "is_correct": true
+            },
+            {
+              "text": "Organizing an indoor Christmas carol concert",
+              "is_correct": false
+            },
+            {
+              "text": "Conducting a dry-season desert drought awareness seminar",
+              "is_correct": false
+            },
+            {
+              "text": "Painting community park benches",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the rainy season increases mosquito breeding and waterborne contamination, making vector and WASH control top priorities. Christmas concerts, desert seminars, and painting benches are secondary.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Community Diagnosis",
+          "question_text": "After gathering data for a community diagnosis, what is the next logical step the public health nurse must take?",
+          "choices": [
+            {
+              "text": "Analyze the data, prioritize community health problems, and plan interventions with community stakeholders",
+              "is_correct": true
+            },
+            {
+              "text": "Shred all collected data immediately without reading it",
+              "is_correct": false
+            },
+            {
+              "text": "Publish individual patient medical records in national newspapers",
+              "is_correct": false
+            },
+            {
+              "text": "Assume all health problems have solved themselves",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because data analysis leads to problem prioritization and collaborative action planning. Shredding data, publishing confidential records, and assuming self-resolution violate professional standards.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Outbreak Investigation",
+          "question_text": "What is an 'index case' during an epidemiological investigation of a communicable disease outbreak?",
+          "choices": [
+            {
+              "text": "The first documented or identified case of a disease in an epidemic investigation",
+              "is_correct": true
+            },
+            {
+              "text": "The final person who recovers from the disease",
+              "is_correct": false
+            },
+            {
+              "text": "The laboratory technician who processes blood samples",
+              "is_correct": false
+            },
+            {
+              "text": "The government minister of health",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because the index case is the first identified case in an outbreak investigation. It is not the final person, lab technician, or health minister.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Vector Control",
+          "question_text": "Which environmental sanitation measure effectively prevents the breeding of mosquitoes that transmit dengue fever and yellow fever (Aedes mosquitoes)?",
+          "choices": [
+            {
+              "text": "Covering water storage containers and disposing of empty cans, old tyres, and stagnant water around homes",
+              "is_correct": true
+            },
+            {
+              "text": "Digging open sewage trenches directly beside living rooms",
+              "is_correct": false
+            },
+            {
+              "text": "Leaving broken calabashes and water-collecting pots uncovered in the open yard",
+              "is_correct": false
+            },
+            {
+              "text": "Storing uncovered drinking water indefinitely in outdoor drums",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because Aedes mosquitoes breed in clean, stagnant water found in discarded containers and uncovered storage. Open trenches, uncovered calabashes, and outdoor drums promote vector breeding.",
+          "difficulty": "APPLICATION"
+        }
+      ]
+    },
+    {
+      "course_code": "RMS-322-C",
+      "course_title": "Relationship Marketing & Entrepreneurship",
+      "category": "ETHICS",
+      "semester": "S2",
+      "topics": [
+        "Health Entrepreneurship",
+        "Relationship Marketing",
+        "Financial Budgeting",
+        "Customer Care",
+        "Leadership"
+      ],
+      "questions": [
+        {
+          "topic": "Health Entrepreneurship",
+          "question_text": "What is the primary role of nurse entrepreneurship in community health nursing practice in Ghana?",
+          "choices": [
+            {
+              "text": "Identifying community health needs and developing innovative, sustainable health ventures or services (e.g., home care agencies, health screening services)",
+              "is_correct": true
+            },
+            {
+              "text": "Charging exorbitant illegal fees for basic government-insured immunizations",
+              "is_correct": false
+            },
+            {
+              "text": "Abandoning clinical nursing ethics entirely for financial profit",
+              "is_correct": false
+            },
+            {
+              "text": "Operating unregistered illegal drug stores in unauthorized locations",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because health entrepreneurship combines nursing expertise with innovative, ethical business models to improve health access. Charging illegal fees, abandoning ethics, and running illegal drug stores are corrupt and illegal.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Relationship Marketing",
+          "question_text": "In the context of healthcare services, what is the core focus of relationship marketing compared to traditional transactional marketing?",
+          "choices": [
+            {
+              "text": "Building long-term, trust-based relationships and loyalty with clients and community stakeholders",
+              "is_correct": true
+            },
+            {
+              "text": "Focusing solely on a single one-off clinical interaction without follow-up",
+              "is_correct": false
+            },
+            {
+              "text": "Tricking clients into purchasing unnecessary surgical procedures",
+              "is_correct": false
+            },
+            {
+              "text": "Deceiving the public with false health claims",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because relationship marketing prioritizes long-term trust and client loyalty over one-off transactions. Transactional marketing focuses on single interactions. Tricking or deceiving clients violates nursing ethics.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Financial Budgeting",
+          "question_text": "When managing a CHPS zone health budget, what does 'variance analysis' involve?",
+          "choices": [
+            {
+              "text": "Comparing actual financial expenditures and revenues against projected budgetary allocations to identify discrepancies",
+              "is_correct": true
+            },
+            {
+              "text": "Spending all available funds on personal luxury vehicles within 24 hours",
+              "is_correct": false
+            },
+            {
+              "text": "Ignoring financial records and never tracking expenses",
+              "is_correct": false
+            },
+            {
+              "text": "Falsifying accounting ledgers to hide missing funds",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because variance analysis compares actual versus budgeted figures to control finances. Spending on luxury, ignoring records, and falsifying ledgers constitute financial misconduct.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A nurse manager of a private community clinic reviews four operational tasks. Which task should be prioritized first?",
+          "choices": [
+            {
+              "text": "Resolving a critical client complaint regarding unprofessional staff behavior to protect institutional reputation and client trust",
+              "is_correct": true
+            },
+            {
+              "text": "Ordering decorative wall paintings for the staff breakroom",
+              "is_correct": false
+            },
+            {
+              "text": "Designing a new logo font for clinic letterheads",
+              "is_correct": false
+            },
+            {
+              "text": "Organizing a recreational staff football tournament for next month",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because resolving client complaints protects trust and reputation, representing an urgent management priority. Wall paintings, logo design, and football tournaments are secondary administrative tasks.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Customer Care",
+          "question_text": "Which attribute represents excellent customer care in a community health nursing practice setting?",
+          "choices": [
+            {
+              "text": "Treating every client with empathy, respect, prompt attention, and clear communication",
+              "is_correct": true
+            },
+            {
+              "text": "Shouting at clients who arrive late for their clinic appointments",
+              "is_correct": false
+            },
+            {
+              "text": "Ignoring client inquiries and pretending not to hear them",
+              "is_correct": false
+            },
+            {
+              "text": "Making clients wait for six hours without explanation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because excellent customer care centers on empathy, respect, and prompt service. Shouting, ignoring, and unexplained delays reflect poor customer service.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Leadership",
+          "question_text": "What leadership style empowers staff nurses and community health workers by involving them in collaborative decision-making and problem-solving?",
+          "choices": [
+            {
+              "text": "Democratic (Participative) leadership",
+              "is_correct": true
+            },
+            {
+              "text": "Autocratic (Dictatorial) leadership with zero feedback allowed",
+              "is_correct": false
+            },
+            {
+              "text": "Laissez-faire leadership with complete organizational abandonment",
+              "is_correct": false
+            },
+            {
+              "text": "Coercive punitive leadership based on fear",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because democratic leadership encourages participation and collaboration. Autocratic, laissez-faire (without structure), and coercive leadership styles do not foster collaborative empowerment.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Prioritization",
+          "question_text": "A nurse entrepreneur starting a community health outreach project must prioritize four startup steps. What should be done first?",
+          "choices": [
+            {
+              "text": "Conduct a comprehensive community health needs assessment and market feasibility study",
+              "is_correct": true
+            },
+            {
+              "text": "Purchase expensive luxury office furniture before identifying client needs",
+              "is_correct": false
+            },
+            {
+              "text": "Print billboard advertisements for services the community does not need",
+              "is_correct": false
+            },
+            {
+              "text": "Apply for bank loans without any financial repayment plan",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because a needs assessment and feasibility study ensure the health venture addresses genuine community demands successfully. Buying furniture, printing ads, and uncalculated loans lead to business failure.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Health Entrepreneurship",
+          "question_text": "What is a key ethical boundary nurse entrepreneurs must maintain when marketing health services to the public?",
+          "choices": [
+            {
+              "text": "Ensuring truthful, evidence-based advertising without making false medical cure claims",
+              "is_correct": true
+            },
+            {
+              "text": "Promoting unverified miracle cures that promise instant immortality",
+              "is_correct": false
+            },
+            {
+              "text": "Exaggerating disease risks to frighten people into buying products",
+              "is_correct": false
+            },
+            {
+              "text": "Plagiarizing competitor business plans illegally",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because ethical health marketing requires truthfulness and evidence, avoiding false cure claims. Miracle cures, fear-mongering, and plagiarism violate professional ethics.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Relationship Marketing",
+          "question_text": "How does post-service follow-up contribute to relationship marketing in a community health clinic?",
+          "choices": [
+            {
+              "text": "It demonstrates ongoing care, builds lasting loyalty, and encourages clients to return for future health needs",
+              "is_correct": true
+            },
+            {
+              "text": "It ensures clients never return to the clinic again",
+              "is_correct": false
+            },
+            {
+              "text": "It serves no purpose and wastes valuable nursing time",
+              "is_correct": false
+            },
+            {
+              "text": "It is used exclusively to collect hidden financial penalties",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because follow-up shows genuine care, fostering long-term loyalty and repeat engagement. Ensuring clients never return is counterproductive. Follow-up is valuable, not a waste. It is not for hidden penalties.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Financial Budgeting",
+          "question_text": "Why is prudent financial inventory management crucial for a community health clinic pharmacy?",
+          "choices": [
+            {
+              "text": "To prevent drug stockouts, minimize wastage of expired pharmaceuticals, and ensure optimal resource utilization",
+              "is_correct": true
+            },
+            {
+              "text": "To allow medications to expire intentionally on shelves",
+              "is_correct": false
+            },
+            {
+              "text": "To encourage theft and pilferage of medical supplies",
+              "is_correct": false
+            },
+            {
+              "text": "To maintain zero records of incoming or outgoing drugs",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Correct because inventory control prevents stockouts and expired waste while optimizing resources. Intentional expiration, theft, and zero records reflect poor financial and administrative governance.",
+          "difficulty": "KNOWLEDGE"
+        }
+      ]
+    }
+  ]
+}
