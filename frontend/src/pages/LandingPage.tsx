@@ -285,7 +285,9 @@ export default function LandingPage() {
             <footer className="bg-brand-950 pt-16 pb-8">
                 <div className="container-page">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-12 border-b border-brand-900">
-                        <Logo size="md" showWordmark={true} className="brightness-0 invert" />
+                        <div className="bg-white rounded-xl px-4 py-2.5">
+                            <Logo size="md" showWordmark={true} />
+                        </div>
                         <div className="flex gap-6 text-sm font-medium text-brand-200">
                             <Link to="/login" className="hover:text-white transition-colors">Log in</Link>
                             <Link to="/register" className="hover:text-white transition-colors">Sign up</Link>
