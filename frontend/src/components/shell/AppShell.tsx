@@ -230,22 +230,54 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             <Link to="/support" className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface" aria-label="Help & Support" title="Help & Support">
                                 <HelpIcon />
                             </Link>
-                            <button onClick={() => setProfileOpen(!profileOpen)} className="relative" aria-label="User menu">
+
+                            {/* NEW: Prominent user profile button */}
+                            <button
+                                onClick={() => setProfileOpen(!profileOpen)}
+                                className="flex items-center gap-2 rounded-full border border-border bg-white pl-1.5 pr-3 py-1.5 hover:bg-surface-subtle hover:border-brand-300 transition-all shadow-sm"
+                                aria-label="User menu"
+                            >
                                 <Avatar name={user.full_name} size="sm" />
+                                <span className="hidden sm:block text-sm font-semibold text-on-surface max-w-[100px] truncate">
+                                    {user.full_name.split(" ")[0]}
+                                </span>
+                                <svg className={`h-4 w-4 text-on-surface-muted transition-transform ${profileOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
                             </button>
+
                             {profileOpen && (
                                 <>
                                     <div className="fixed inset-0 z-40" onClick={() => setProfileOpen(false)} />
-                                    <div className="absolute right-0 top-12 z-50 w-56 rounded-lg border border-border bg-white shadow-lg py-1">
-                                        <div className="px-4 py-3 border-b border-border">
-                                            <p className="text-sm font-medium text-on-surface truncate">{user.full_name}</p>
+                                    <div className="absolute right-0 top-14 z-50 w-60 rounded-xl border border-border bg-white shadow-xl py-1 overflow-hidden">
+                                        <div className="px-4 py-3 border-b border-border bg-surface-subtle/50">
+                                            <p className="text-sm font-bold text-on-surface truncate">{user.full_name}</p>
                                             <p className="text-xs text-on-surface-muted truncate">{user.email}</p>
                                         </div>
-                                        <Link to="/profile" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Profile</Link>
-                                        <Link to="/ambassador" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Ambassador</Link>
-                                        <Link to="/my-submissions" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>My Submissions</Link>
-                                        <Link to="/support" className="flex items-center gap-2 px-4 py-2 text-sm text-on-surface hover:bg-surface-subtle" onClick={() => setProfileOpen(false)}>Help &amp; Support</Link>
-                                        <button onClick={handleLogout} className="w-full text-left flex items-center gap-2 px-4 py-2 text-sm text-danger-700 hover:bg-surface-subtle">Log out</button>
+                                        <div className="py-1">
+                                            <Link to="/profile" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                <svg className="h-4 w-4 text-on-surface-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                                                My Profile
+                                            </Link>
+                                            <Link to="/ambassador" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                <svg className="h-4 w-4 text-on-surface-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                                                Ambassador Program
+                                            </Link>
+                                            <Link to="/my-submissions" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                <svg className="h-4 w-4 text-on-surface-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                                                My Submissions
+                                            </Link>
+                                            <Link to="/support" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                <svg className="h-4 w-4 text-on-surface-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                                Help &amp; Support
+                                            </Link>
+                                        </div>
+                                        <div className="border-t border-border py-1">
+                                            <button onClick={handleLogout} className="w-full text-left flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-danger-600 hover:bg-danger-50 transition-colors">
+                                                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" /></svg>
+                                                Log Out
+                                            </button>
+                                        </div>
                                     </div>
                                 </>
                             )}
