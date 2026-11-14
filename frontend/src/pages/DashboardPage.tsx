@@ -67,7 +67,7 @@ export default function DashboardPage() {
     return (
         <AppShell>
             <div className="space-y-6 max-w-6xl mx-auto pb-10">
-                {/* Hero */}
+                {/* Hero with Edit Profile button */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 p-6 lg:p-8 text-white shadow-xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white/5 blur-3xl"></div>
                     <div className="relative z-10">
@@ -77,6 +77,15 @@ export default function DashboardPage() {
                             <span className="inline-block h-2 w-2 rounded-full bg-green-400"></span>
                             {formatProgram(user.program)} • {user.level_display}
                         </p>
+                        <Link
+                            to="/profile"
+                            className="mt-4 inline-flex items-center gap-2 rounded-lg bg-white/15 hover:bg-white/25 border border-white/20 px-4 py-2 text-sm font-semibold text-white transition-colors"
+                        >
+                            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            Edit Profile
+                        </Link>
                     </div>
                     <div className="relative z-10 flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-xl px-5 py-4 border border-white/20 shadow-inner">
                         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500/20 text-orange-400">
@@ -89,7 +98,7 @@ export default function DashboardPage() {
                     </div>
                 </div>
 
-                {/* ⏳ Trial / Active Banner */}
+                {/* Trial / Active Banner */}
                 {user.has_active_subscription && user.subscription_expires_at && (() => {
                     const expiry = new Date(user.subscription_expires_at)
                     const msLeft = expiry.getTime() - Date.now()
@@ -210,7 +219,6 @@ export default function DashboardPage() {
 
                 <WeakAreasCard />
 
-                {/* Main Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <div className="lg:col-span-2 space-y-6">
                         {lastAttempt ? (

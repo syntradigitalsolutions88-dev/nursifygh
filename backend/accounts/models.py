@@ -118,7 +118,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         )
         self.subscription_expires_at = base + timedelta(days=days)
         self.is_subscribed = True
-        self.has_paid = True  # Mark as paid
+        self.has_paid = True
         if reference:
             self.last_payment_reference = reference
         self.save(update_fields=[
@@ -208,5 +208,5 @@ class AmbassadorCommission(models.Model):
 
     @property
     def payout_due_date(self):
-        """The date by which this commission should be paid out (14 days after earned)."""
-        return self.created_at + timedelta(days=14)
+        """Commission is paid out 3 days after it is earned."""
+        return self.created_at + timedelta(days=3)

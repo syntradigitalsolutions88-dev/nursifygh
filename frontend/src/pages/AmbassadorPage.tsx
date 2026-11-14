@@ -51,7 +51,6 @@ export default function AmbassadorPage() {
         }
     }
 
-    // ── Not yet an ambassador
     if (user && !user.is_ambassador) {
         return (
             <AppShell>
@@ -72,7 +71,7 @@ export default function AmbassadorPage() {
                             {[
                                 { label: "Get your code", value: "Instantly" },
                                 { label: "Per referral", value: "GHS 4.50" },
-                                { label: "Payout", value: "MoMo" },
+                                { label: "Payout", value: "3 days" },
                             ].map((item) => (
                                 <div key={item.label} className="rounded-xl bg-white/10 border border-white/20 p-4 backdrop-blur-sm">
                                     <p className="text-xs font-semibold text-brand-200 uppercase tracking-wider">{item.label}</p>
@@ -105,7 +104,6 @@ export default function AmbassadorPage() {
         )
     }
 
-    // ── Loading
     if (isLoading || !stats) {
         return (
             <AppShell>
@@ -114,7 +112,6 @@ export default function AmbassadorPage() {
         )
     }
 
-    // ── Ambassador dashboard
     const totalEarned = parseFloat(stats.total_earned)
     const pending = parseFloat(stats.pending_payout)
     const paidOut = parseFloat(stats.paid_out)
@@ -123,7 +120,6 @@ export default function AmbassadorPage() {
         <AppShell>
             <div className="max-w-5xl mx-auto space-y-6 pb-12 px-4">
 
-                {/* Header */}
                 <div>
                     <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Ambassador Program</p>
                     <h1 className="text-3xl font-bold text-on-surface mt-1">Your Dashboard</h1>
@@ -132,7 +128,6 @@ export default function AmbassadorPage() {
                     </p>
                 </div>
 
-                {/* Code Card */}
                 <div className="rounded-2xl bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
                     <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-brand-500/10 blur-3xl" />
                     <div className="relative z-10">
@@ -161,7 +156,6 @@ export default function AmbassadorPage() {
                     </div>
                 </div>
 
-                {/* Stats Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <StatCard label="Total Earned" value={`GHS ${totalEarned.toFixed(2)}`} accent="brand" />
                     <StatCard label="Paid Out" value={`GHS ${paidOut.toFixed(2)}`} accent="green" />
@@ -169,7 +163,6 @@ export default function AmbassadorPage() {
                     <StatCard label="Referred Students" value={String(stats.referral_count)} accent="slate" />
                 </div>
 
-                {/* Recent Referrals */}
                 <div className="rounded-2xl border border-border bg-white shadow-sm overflow-hidden">
                     <div className="border-b border-border px-6 py-4">
                         <h2 className="text-base font-bold text-on-surface">Recent Referrals</h2>
@@ -219,25 +212,24 @@ export default function AmbassadorPage() {
                     )}
                 </div>
 
-                {/* How it works */}
                 <div className="rounded-2xl border border-border bg-surface-subtle/40 p-6">
                     <h3 className="text-sm font-bold text-on-surface mb-3">How payouts work</h3>
-                    <ul className="space-y-2 text-sm text-on-surface-muted">
-                        <li className="flex gap-2">
-                            <span className="text-brand-600 font-bold">1.</span>
-                            Each student who subscribes with your code earns you GHS 4.50.
+                    <ul className="space-y-3 text-sm text-on-surface-muted">
+                        <li className="flex gap-3">
+                            <span className="text-brand-600 font-bold shrink-0">1.</span>
+                            <span>Each student who subscribes with your code earns you <strong className="text-on-surface">GHS 4.50</strong>.</span>
                         </li>
-                        <li className="flex gap-2">
-                            <span className="text-brand-600 font-bold">2.</span>
-                            Commissions remain "pending" for <strong>14 days</strong> to handle any refunds or payment disputes.
+                        <li className="flex gap-3">
+                            <span className="text-brand-600 font-bold shrink-0">2.</span>
+                            <span>Commissions remain "pending" for <strong className="text-on-surface">3 days</strong> to handle any refunds or payment disputes.</span>
                         </li>
-                        <li className="flex gap-2">
-                            <span className="text-brand-600 font-bold">3.</span>
-                            After 14 days, we send your pending balance directly to your registered MoMo number.
+                        <li className="flex gap-3">
+                            <span className="text-brand-600 font-bold shrink-0">3.</span>
+                            <span>After 3 days, we send your pending balance directly to your registered <strong className="text-on-surface">MoMo number</strong>.</span>
                         </li>
-                        <li className="flex gap-2">
-                            <span className="text-brand-600 font-bold">4.</span>
-                            Minimum payout threshold: <strong>GHS 10.00</strong>.
+                        <li className="flex gap-3">
+                            <span className="text-brand-600 font-bold shrink-0">4.</span>
+                            <span>Minimum payout threshold: <strong className="text-on-surface">GHS 10.00</strong>.</span>
                         </li>
                     </ul>
                 </div>
