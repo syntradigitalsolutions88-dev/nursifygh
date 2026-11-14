@@ -156,20 +156,29 @@ class MockExamSubmitView(APIView):
             return Response({"detail": "No answers provided"}, status=400)
 
         question_ids = list(answers.keys())
-        questions = Question.objects.filter(id__in=question_ids)
-        if not questions:
-            return Response({"detail": "Questions not found"}, status=400)
+
+        # SECURITY: only score questions from this user's program + level,
+        # approved and published — prevents cross-program answer-padding.
+        questions = Question.objects.filter(
+            id__in=question_ids,
+            course__level=request.user.level,
+            course__program=request.user.program,
+            course__is_published=True,
+            is_published=True,
+            review_status="APPROVED",
+        )
+        if not questions.exists():
+            return Response({"detail": "No valid questions submitted"}, status=400)
 
         first_course = questions.first().course
         correct_count = 0
-        total = len(questions)
+        total = questions.count()
 
         for q in questions:
             chosen_choice_id = answers.get(str(q.id))
             if not chosen_choice_id:
                 continue
-            is_correct = Choice.objects.filter(id=chosen_choice_id, question=q, is_correct=True).exists()
-            if is_correct:
+            if Choice.objects.filter(id=chosen_choice_id, question=q, is_correct=True).exists():
                 correct_count += 1
 
         score = round((correct_count / total) * 100, 2) if total > 0 else 0
