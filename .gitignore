@@ -41,3 +41,6 @@ Thumbs.db
 *.buggy.bak
 backups/
 question_imports/*.BACKUP.json
+
+# Backup import files (nested under backend/)
+backend/question_imports/*.BACKUP.json
