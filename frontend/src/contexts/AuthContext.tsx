@@ -15,6 +15,7 @@ import type { LoginRequest, RegisterRequest, User } from "../types/api"
 
 interface AuthContextValue {
     user: User | null
+    setUser: (user: User | null) => void
     isLoading: boolean
     login: (payload: LoginRequest) => Promise<User>
     register: (payload: RegisterRequest) => Promise<User>
@@ -104,7 +105,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }, [queryClient])
 
     const value = useMemo<AuthContextValue>(
-        () => ({ user, isLoading, login, register, logout, refreshUser }),
+        () => ({ user, setUser, isLoading, login, register, logout, refreshUser }),
         [user, isLoading, login, register, logout, refreshUser],
     )
 

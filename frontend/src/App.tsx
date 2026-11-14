@@ -19,6 +19,7 @@ import ForgotPasswordPage from "./pages/ForgotPasswordPage"
 import HelpArticlePage from "./pages/HelpArticlePage"
 import HelpCenterPage from "./pages/HelpCenterPage"
 import LandingPage from "./pages/LandingPage"
+import LeaderboardPage from "./pages/LeaderboardPage"
 import LoginPage from "./pages/LoginPage"
 import MockExamPage from "./pages/MockExamPage"
 import MySubmissionsPage from "./pages/MySubmissionsPage"
@@ -108,6 +109,15 @@ export default function App() {
           <ProtectedRoute>
             <PaywallGate feature="Mock Exam Simulator" description="Take 60-minute, 50-question exams with auto-grading and timer.">
               <MockExamPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
+
+        {/* Leaderboard */}
+        <Route path="/leaderboard" element={
+          <ProtectedRoute>
+            <PaywallGate feature="Leaderboard" description="See how you rank against other students in your level.">
+              <LeaderboardPage />
             </PaywallGate>
           </ProtectedRoute>
         } />

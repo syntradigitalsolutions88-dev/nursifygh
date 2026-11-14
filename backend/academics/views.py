@@ -9,8 +9,9 @@ import random
 
 import requests
 from django.conf import settings
-from django.db.models import Count, Prefetch, Q
+from django.db.models import Count, Prefetch, Q, Avg
 from django.utils import timezone
+from django.contrib.auth import get_user_model
 from rest_framework import generics, permissions, status
 from rest_framework.parsers import FormParser, MultiPartParser
 from rest_framework.response import Response
@@ -40,17 +41,23 @@ class CourseListView(generics.ListAPIView):
 
     def get_queryset(self):
         user = self.request.user
+        
+        if user.is_superuser:
+            qs = Course.objects.filter(is_published=True)
+        else:
+            qs = Course.objects.filter(is_published=True, level=user.level, program=user.program)
+            
         qs = (
-            Course.objects.filter(is_published=True, level=user.level, program=user.program)
-            .annotate(
+            qs.annotate(
                 _question_count=Count(
                     "questions",
                     filter=Q(questions__review_status="APPROVED", questions__is_published=True),
                     distinct=True,
                 )
             )
-            .order_by("semester", "code")
+            .order_by("program", "level", "semester", "code")
         )
+        
         category = self.request.query_params.get("category")
         semester = self.request.query_params.get("semester")
         if category:
@@ -67,15 +74,18 @@ class CourseDetailView(generics.RetrieveAPIView):
 
     def get_queryset(self):
         user = self.request.user
-        return (
-            Course.objects.filter(is_published=True, level=user.level, program=user.program)
-            .prefetch_related(
-                Prefetch(
-                    "questions",
-                    queryset=Question.objects.filter(
-                        is_published=True, review_status="APPROVED"
-                    ).prefetch_related("choices"),
-                )
+        
+        if user.is_superuser:
+            qs = Course.objects.filter(is_published=True)
+        else:
+            qs = Course.objects.filter(is_published=True, level=user.level, program=user.program)
+            
+        return qs.prefetch_related(
+            Prefetch(
+                "questions",
+                queryset=Question.objects.filter(
+                    is_published=True, review_status="APPROVED"
+                ).prefetch_related("choices"),
             )
         )
 
@@ -129,7 +139,12 @@ class MockExamView(APIView):
 
     def get(self, request):
         user = request.user
-        courses = Course.objects.filter(is_published=True, level=user.level, program=user.program)
+        
+        if user.is_superuser:
+            courses = Course.objects.filter(is_published=True)
+        else:
+            courses = Course.objects.filter(is_published=True, level=user.level, program=user.program)
+            
         all_questions = list(
             Question.objects.filter(
                 course__in=courses, is_published=True, review_status="APPROVED"
@@ -157,16 +172,22 @@ class MockExamSubmitView(APIView):
 
         question_ids = list(answers.keys())
 
-        # SECURITY: only score questions from this user's program + level,
-        # approved and published — prevents cross-program answer-padding.
-        questions = Question.objects.filter(
-            id__in=question_ids,
-            course__level=request.user.level,
-            course__program=request.user.program,
-            course__is_published=True,
-            is_published=True,
-            review_status="APPROVED",
-        )
+        if request.user.is_superuser:
+            questions = Question.objects.filter(
+                id__in=question_ids,
+                is_published=True,
+                review_status="APPROVED",
+            )
+        else:
+            questions = Question.objects.filter(
+                id__in=question_ids,
+                course__level=request.user.level,
+                course__program=request.user.program,
+                course__is_published=True,
+                is_published=True,
+                review_status="APPROVED",
+            )
+            
         if not questions.exists():
             return Response({"detail": "No valid questions submitted"}, status=400)
 
@@ -400,3 +421,67 @@ class WeakAreasView(APIView):
 
         result.sort(key=lambda x: x["accuracy"])
         return Response(result[:5])
+
+
+# ─── Leaderboard ─────────────────────────────────────────────────────────────
+
+class LeaderboardView(APIView):
+    """Return the top 20 students in the user's program and level."""
+    permission_classes = (permissions.IsAuthenticated, IsSubscribed)
+
+    def get(self, request):
+        User = get_user_model()
+
+        # Aggregate scores per student
+        leaderboard = (
+            User.objects.filter(
+                program=request.user.program,
+                level=request.user.level,
+                quiz_attempts__completed_at__isnull=False
+            )
+            .annotate(
+                total_quizzes=Count('quiz_attempts'),
+                average_score=Avg('quiz_attempts__score_percentage')
+            )
+            .filter(total_quizzes__gte=3)
+            .order_by('-average_score')[:20]
+        )
+
+        # Find current user's rank
+        user_rank = None
+        all_students = list(
+            User.objects.filter(
+                program=request.user.program,
+                level=request.user.level,
+                quiz_attempts__completed_at__isnull=False
+            )
+            .annotate(
+                total_quizzes=Count('quiz_attempts'),
+                average_score=Avg('quiz_attempts__score_percentage')
+            )
+            .filter(total_quizzes__gte=3)
+            .order_by('-average_score')
+            .values_list('id', flat=True)
+        )
+        
+        if request.user.id in all_students:
+            user_rank = all_students.index(request.user.id) + 1
+
+        data = [
+            {
+                "rank": index + 1,
+                "name": f"{u.first_name} {u.last_name}",
+                "average_score": round(u.average_score, 1),
+                "total_quizzes": u.total_quizzes,
+                "is_current_user": u.id == request.user.id
+            }
+            for index, u in enumerate(leaderboard)
+        ]
+
+        user_score = request.user.quiz_attempts.aggregate(Avg('score_percentage'))['score_percentage__avg'] or 0
+
+        return Response({
+            "leaderboard": data,
+            "my_rank": user_rank,
+            "my_score": round(user_score, 1)
+        })

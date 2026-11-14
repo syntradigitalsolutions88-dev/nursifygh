@@ -309,6 +309,9 @@ export interface AmbassadorStats {
     pending_payout: string
     paid_out: string
     referral_count: number
+    can_cash_out: boolean              // NEW
+    cleared_amount: string             // NEW
+    next_payout_date: string | null    // NEW
     recent: {
         amount: string
         referred_email: string

@@ -1,5 +1,3 @@
-"""URL configuration for the academics app."""
-
 from django.urls import path
 
 from .views import (
@@ -13,6 +11,7 @@ from .views import (
     QuizHistoryView,
     QuizSubmitView,
     WeakAreasView,
+    LeaderboardView, # <-- ADD THIS
 )
 
 app_name = "academics"
@@ -28,4 +27,5 @@ urlpatterns = [
     path("past-paper/save/", PastPaperSaveView.as_view(), name="past-paper-save"),
     path("my-submissions/", MySubmissionsView.as_view(), name="my-submissions"),
     path("weak-areas/", WeakAreasView.as_view(), name="weak-areas"),
+    path("leaderboard/", LeaderboardView.as_view(), name="leaderboard"), # <-- ADD THIS
 ]

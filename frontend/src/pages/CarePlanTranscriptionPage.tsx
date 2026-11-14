@@ -27,7 +27,7 @@ export default function CarePlanTranscriptionPage() {
     if (error || !plan) {
         return (
             <AppShell>
-                <div className="border border-black bg-white p-8 text-center">
+                <div className="border border-black bg-white p-8 text-center max-w-2xl mx-auto">
                     <h1 className="text-lg font-bold text-danger-700">Care plan not found</h1>
                     <Link to="/careplans" className="mt-4 inline-block">
                         <Button variant="secondary" size="sm">← Back to care plans</Button>
@@ -40,24 +40,24 @@ export default function CarePlanTranscriptionPage() {
     return (
         <AppShell>
             {/* Action bar (hidden on print) */}
-            <div className="print:hidden mb-6 space-y-4">
+            <div className="print:hidden mb-6 max-w-5xl mx-auto space-y-4">
                 <Link
                     to={`/careplans/${plan.id}`}
-                    className="inline-flex items-center gap-1 text-xs text-on-surface-muted hover:text-brand-700"
+                    className="inline-flex items-center gap-1 text-xs text-on-surface-muted hover:text-brand-700 font-medium"
                 >
                     ← Back to plan
                 </Link>
 
                 <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
                     <div>
-                        <p className="text-xs font-semibold text-brand-700 uppercase tracking-wider">
-                            Transcription view · N&amp;MC licensure format
+                        <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">
+                            Transcription View · N&amp;MC Format
                         </p>
                         <h1 className="mt-1 text-2xl font-bold text-on-surface">
-                            Copy into your official booklet
+                            {plan.title}
                         </h1>
                         <p className="mt-1 text-sm text-on-surface-muted">
-                            Read this clean version and transcribe by hand into your N&amp;MC booklet.
+                            Clean, print-ready view. Transcribe by hand into your official N&amp;MC booklet.
                         </p>
                     </div>
                     <div className="flex gap-2 shrink-0">
@@ -71,110 +71,99 @@ export default function CarePlanTranscriptionPage() {
                                 alert("Care plan copied as plain text — paste into any editor.")
                             }}
                         >
-                            📋 Copy as text
+                            📋 Copy as Text
                         </Button>
                     </div>
                 </div>
 
-                <div className="border border-black bg-white p-3 text-sm text-on-surface">
-                    <strong>Reminder:</strong> Remove the patient's name, ID, and bed number before
-                    transcribing. Only initials should appear on the official N&amp;MC form.
+                <div className="rounded-lg border-l-4 border-amber-500 bg-amber-50 p-4">
+                    <p className="text-sm text-amber-900">
+                        <strong>⚠️ Privacy Reminder:</strong> Remove the patient's name, ID, and bed number before transcribing. Only initials should appear on the official N&amp;MC form.
+                    </p>
                 </div>
             </div>
 
-            {/* The document (N&MC licensure authentic format) */}
-            <div className="bg-white border border-black print:border-0">
-                <div className="p-8 print:p-6">
-                    {/* Official header */}
-                    <div className="text-center pb-4 mb-4 border-b-2 border-black">
-                        <p className="text-[10px] uppercase tracking-widest text-black font-semibold">
+            {/* Document Canvas */}
+            <div className="max-w-5xl mx-auto bg-white border-2 border-black print:border-0 print:max-w-none">
+                <div className="p-8 print:p-4">
+
+                    {/* Official Header */}
+                    <div className="text-center pb-6 mb-6 border-b-2 border-black">
+                        <p className="text-[11px] uppercase tracking-[0.2em] text-black font-bold">
                             Nurses and Midwives Council of Ghana
                         </p>
-                        <h1 className="text-xl font-bold uppercase tracking-wide mt-1 text-black">
+                        <h1 className="text-2xl font-black uppercase tracking-wide mt-2 text-black">
                             Nursing Care Plan
                         </h1>
-                        <p className="text-xs text-black mt-1">
+                        <p className="text-xs text-black mt-1 font-medium">
                             Licensure Examination Format
                         </p>
                     </div>
 
-                    {/* Patient info bar */}
-                    <table className="w-full text-xs mb-4 border border-black">
+                    {/* Patient Info Bar */}
+                    <table className="w-full text-xs mb-6 border-2 border-black">
                         <tbody>
                             <tr>
-                                <td className="border-r border-black px-2 py-1.5 font-semibold w-1/4">
-                                    Patient Initials:
-                                </td>
-                                <td className="border-r border-black px-2 py-1.5 w-1/4">&nbsp;</td>
-                                <td className="border-r border-black px-2 py-1.5 font-semibold w-1/4">
-                                    Age / Sex:
-                                </td>
-                                <td className="px-2 py-1.5 w-1/4">&nbsp;</td>
+                                <td className="border-r-2 border-black px-3 py-2 font-bold w-1/4 bg-gray-50">Patient Initials:</td>
+                                <td className="border-r-2 border-black px-3 py-2 w-1/4">&nbsp;</td>
+                                <td className="border-r-2 border-black px-3 py-2 font-bold w-1/4 bg-gray-50">Age / Sex:</td>
+                                <td className="px-3 py-2 w-1/4">&nbsp;</td>
                             </tr>
-                            <tr className="border-t border-black">
-                                <td className="border-r border-black px-2 py-1.5 font-semibold">
-                                    Ward:
-                                </td>
-                                <td className="border-r border-black px-2 py-1.5">&nbsp;</td>
-                                <td className="border-r border-black px-2 py-1.5 font-semibold">
-                                    Date:
-                                </td>
-                                <td className="px-2 py-1.5">
-                                    {new Date(plan.created_at).toLocaleDateString("en-GB")}
-                                </td>
+                            <tr className="border-t-2 border-black">
+                                <td className="border-r-2 border-black px-3 py-2 font-bold bg-gray-50">Ward:</td>
+                                <td className="border-r-2 border-black px-3 py-2">&nbsp;</td>
+                                <td className="border-r-2 border-black px-3 py-2 font-bold bg-gray-50">Date:</td>
+                                <td className="px-3 py-2">{new Date(plan.created_at).toLocaleDateString("en-GB")}</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    {/* The 3-column N&MC table */}
+                    {/* The 3-column N&MC Table */}
                     <div className="overflow-x-auto print:overflow-visible">
-                        <table
-                            className="w-full text-xs border-collapse print:text-[9px]"
-                            style={{ minWidth: "800px" }}
-                        >
+                        <table className="w-full text-xs border-collapse print:text-[10px]" style={{ minWidth: "800px" }}>
                             <colgroup>
-                                <col style={{ width: "28%" }} />
-                                <col style={{ width: "32%" }} />
+                                <col style={{ width: "25%" }} />
+                                <col style={{ width: "35%" }} />
                                 <col style={{ width: "40%" }} />
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th className="border border-black px-2 py-2 text-left font-bold uppercase tracking-wide bg-gray-100">
+                                    <th className="border-2 border-black px-3 py-3 text-left font-black uppercase tracking-wide bg-gray-100">
                                         Nursing Diagnosis
                                     </th>
-                                    <th className="border border-black px-2 py-2 text-left font-bold uppercase tracking-wide bg-gray-100">
+                                    <th className="border-2 border-black px-3 py-3 text-left font-black uppercase tracking-wide bg-gray-100">
                                         Objective / Outcome Criteria
                                     </th>
-                                    <th className="border border-black px-2 py-2 text-left font-bold uppercase tracking-wide bg-gray-100">
+                                    <th className="border-2 border-black px-3 py-3 text-left font-black uppercase tracking-wide bg-gray-100">
                                         Nursing Orders
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr className="align-top">
-                                    {/* 1: Nursing Diagnosis (PES format) */}
-                                    <td className="border border-black px-2 py-2 leading-snug">
-                                        <p className="font-bold">{plan.primary_diagnosis.label}</p>
+                                    {/* Column 1: Diagnosis */}
+                                    <td className="border-2 border-black px-3 py-3 leading-relaxed">
+                                        <p className="font-bold text-black">{plan.primary_diagnosis.label}</p>
                                         {plan.primary_diagnosis.related_factors && (
-                                            <p className="mt-1">
-                                                <span className="font-bold">related to</span>{" "}
+                                            <p className="mt-2">
+                                                <span className="font-black">related to</span>{" "}
                                                 {plan.primary_diagnosis.related_factors}
                                             </p>
                                         )}
                                         {plan.primary_diagnosis.defining_characteristics && (
-                                            <p className="mt-1">
-                                                <span className="font-bold">as evidenced by</span>{" "}
+                                            <p className="mt-2">
+                                                <span className="font-black">as evidenced by</span>{" "}
                                                 {plan.primary_diagnosis.defining_characteristics}
                                             </p>
                                         )}
                                     </td>
 
-                                    {/* 2: Objective / Outcome Criteria (SMART) */}
-                                    <td className="border border-black px-2 py-2 leading-snug">
+                                    {/* Column 2: Goals */}
+                                    <td className="border-2 border-black px-3 py-3 leading-relaxed">
                                         {plan.goals.length === 0 ? (
                                             <p className="text-gray-500 italic">No objective recorded</p>
                                         ) : (
-                                            <ol className="space-y-2 list-decimal list-inside">
+                                            <ol className="space-y-2 list-decimal list-inside marker:font-bold">
                                                 {plan.goals.map((goal) => (
                                                     <li key={goal.id}>{goal.specific}</li>
                                                 ))}
@@ -182,19 +171,21 @@ export default function CarePlanTranscriptionPage() {
                                         )}
                                     </td>
 
-                                    {/* 3: Nursing Orders (with inline Rationale) */}
-                                    <td className="border border-black px-2 py-2 leading-snug">
+                                    {/* Column 3: Interventions */}
+                                    <td className="border-2 border-black px-3 py-3 leading-relaxed">
                                         {plan.interventions.length === 0 ? (
                                             <p className="text-gray-500 italic">No nursing orders recorded</p>
                                         ) : (
-                                            <ol className="space-y-3 list-decimal list-inside">
+                                            <ol className="space-y-4 list-decimal list-inside marker:font-bold">
                                                 {plan.interventions.map((iv) => (
                                                     <li key={iv.id}>
-                                                        <p className="font-medium">{iv.action}</p>
-                                                        <p className="mt-1">
-                                                            <span className="font-bold underline">Rationale:</span>{" "}
-                                                            {iv.rationale}
-                                                        </p>
+                                                        <p className="font-semibold text-black">{iv.action}</p>
+                                                        <div className="mt-1 pl-4 border-l-2 border-black">
+                                                            <p>
+                                                                <span className="font-black underline">Rationale:</span>{" "}
+                                                                {iv.rationale}
+                                                            </p>
+                                                        </div>
                                                     </li>
                                                 ))}
                                             </ol>
@@ -205,34 +196,29 @@ export default function CarePlanTranscriptionPage() {
                         </table>
                     </div>
 
-                    {/* Signature block */}
-                    <table className="w-full text-xs mt-4 border border-black">
+                    {/* Signature Block */}
+                    <table className="w-full text-xs mt-6 border-2 border-black">
                         <tbody>
                             <tr>
-                                <td className="border-r border-black px-2 py-2 font-semibold w-1/3">
-                                    Student Name:
-                                </td>
-                                <td className="border-r border-black px-2 py-2 w-1/3">&nbsp;</td>
-                                <td className="px-2 py-2 font-semibold w-1/3">Signature:</td>
+                                <td className="border-r-2 border-black px-3 py-3 font-bold w-1/3 bg-gray-50">Student Name:</td>
+                                <td className="border-r-2 border-black px-3 py-3 w-1/3">&nbsp;</td>
+                                <td className="px-3 py-3 font-bold w-1/3 bg-gray-50">Signature:</td>
                             </tr>
-                            <tr className="border-t border-black">
-                                <td className="border-r border-black px-2 py-2 font-semibold">
-                                    Supervisor:
-                                </td>
-                                <td className="border-r border-black px-2 py-2">&nbsp;</td>
-                                <td className="px-2 py-2 font-semibold">Date Reviewed:</td>
+                            <tr className="border-t-2 border-black">
+                                <td className="border-r-2 border-black px-3 py-3 font-bold bg-gray-50">Supervisor:</td>
+                                <td className="border-r-2 border-black px-3 py-3">&nbsp;</td>
+                                <td className="px-3 py-3 font-bold bg-gray-50">Date Reviewed:</td>
                             </tr>
                         </tbody>
                     </table>
 
                     {/* Footer */}
-                    <div className="mt-4 pt-3 border-t border-black text-[10px] text-gray-600 text-center leading-relaxed">
-                        <p>
-                            <strong>NursifyGH is a study tool.</strong> This care plan must be verified by a licensed
-                            clinical instructor before use in patient care. Transcribe onto the official N&amp;MC form.
+                    <div className="mt-6 pt-4 border-t-2 border-black text-[10px] text-gray-800 text-center leading-relaxed">
+                        <p className="font-bold">
+                            NursifyGH is an independent study tool and is NOT affiliated with the N&amp;MC of Ghana.
                         </p>
                         <p className="mt-1">
-                            Format reference: N&amp;MC Licensure Examination · Nursing Care Plan
+                            This care plan must be verified by a licensed clinical instructor before use in patient care. Transcribe onto the official N&amp;MC form.
                         </p>
                     </div>
                 </div>

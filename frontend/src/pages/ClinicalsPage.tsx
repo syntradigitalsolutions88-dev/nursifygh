@@ -41,6 +41,7 @@ export default function ClinicalsPage() {
     const [toast, setToast] = useState<{ message: string; type: "success" | "error" } | null>(null)
     const [form, setForm] = useState(EMPTY_FORM)
     const [downloading, setDownloading] = useState(false)
+    const [activeCategory, setActiveCategory] = useState<string | null>(null)
 
     const { data: skills, isLoading } = useQuery({
         queryKey: ["clinical-skills"],
@@ -82,7 +83,7 @@ export default function ClinicalsPage() {
             invalidateAll()
             setAddSkill(null)
             setForm(EMPTY_FORM)
-            showToast("Log saved")
+            showToast("Log saved ✓")
         },
         onError: () => showToast("Failed to save log.", "error"),
     })
@@ -95,7 +96,7 @@ export default function ClinicalsPage() {
             invalidateAll()
             setEditLog(null)
             setForm(EMPTY_FORM)
-            showToast("Log updated")
+            showToast("Log updated ✓")
         },
         onError: () => showToast("Failed to update log.", "error"),
     })
@@ -154,8 +155,22 @@ export default function ClinicalsPage() {
         setEditLog({ log, skill })
     }
 
+    // Loading state
     if (isLoading) {
-        return <div className="p-10 text-center text-on-surface-muted">Loading…</div>
+        return (
+            <AppShell>
+                <div className="max-w-4xl mx-auto space-y-6 pb-10 animate-pulse">
+                    <div className="h-8 bg-surface-subtle rounded w-1/3" />
+                    <div className="h-4 bg-surface-subtle rounded w-2/3" />
+                    <div className="grid grid-cols-3 gap-3">
+                        <div className="h-24 bg-surface-subtle rounded-xl" />
+                        <div className="h-24 bg-surface-subtle rounded-xl" />
+                        <div className="h-24 bg-surface-subtle rounded-xl" />
+                    </div>
+                    <div className="h-64 bg-surface-subtle rounded-xl" />
+                </div>
+            </AppShell>
+        )
     }
 
     const categories = skills?.reduce((acc, skill) => {
@@ -167,23 +182,24 @@ export default function ClinicalsPage() {
     const totalCompleted = skills?.reduce((sum, s) => sum + s.completed_count, 0) ?? 0
     const totalRequired = skills?.reduce((sum, s) => sum + s.required_count, 0) ?? 0
     const overallPercent = totalRequired > 0 ? Math.round((totalCompleted / totalRequired) * 100) : 0
+    const completeSkills = skills?.filter(s => s.completed_count >= s.required_count).length ?? 0
+    const totalSkills = skills?.length ?? 0
 
     return (
         <AppShell>
-            <div className="max-w-3xl mx-auto space-y-8 pb-10">
+            <div className="max-w-4xl mx-auto space-y-6 pb-10">
+
+                {/* Header */}
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                     <div>
-                        <h1 className="text-2xl font-bold text-on-surface">Clinical Tracker</h1>
-                        <p className="text-sm text-on-surface-muted mt-1.5 leading-relaxed max-w-2xl">
-                            Log every procedure you perform during clinical rotations.
-                            Your logbook is tailored for the{" "}
-                            <strong className="text-brand-700">
-                                {user?.program_display || "Nursing"}
-                            </strong>{" "}
-                            program. Each entry records the date, hospital, ward, and supervisor — ready for your N&amp;MC logbook.
+                        <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Clinical Tracker</p>
+                        <h1 className="mt-1 text-h1">Your N&MC Logbook</h1>
+                        <p className="text-sm text-on-surface-muted mt-2 leading-relaxed max-w-2xl">
+                            Log every procedure you perform during clinical rotations. Your logbook is tailored for the{" "}
+                            <strong className="text-brand-700">{user?.program_display || "Nursing"}</strong> program.
                         </p>
                     </div>
-                    <div className="shrink-0 mt-2 sm:mt-0">
+                    <div className="shrink-0">
                         <Button
                             variant="secondary"
                             onClick={downloadPdf}
@@ -193,58 +209,116 @@ export default function ClinicalsPage() {
                             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                             </svg>
-                            {downloading ? "Generating…" : "Download PDF"}
+                            {downloading ? "Generating PDF…" : "Download PDF"}
                         </Button>
                     </div>
                 </div>
 
-                {/* Progress */}
+                {/* Stat Cards */}
                 {skills && totalRequired > 0 && (
-                    <div className="rounded-xl border border-border bg-white p-5">
-                        <div className="flex items-center justify-between mb-2">
-                            <p className="text-sm text-on-surface-muted">Overall progress</p>
-                            <p className="text-sm font-semibold text-on-surface">
-                                {totalCompleted} of {totalRequired} · {overallPercent}%
-                            </p>
+                    <>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <div className="rounded-xl border border-border bg-white p-4">
+                                <p className="text-[10px] font-bold text-on-surface-muted uppercase tracking-wider">Procedures</p>
+                                <p className="mt-1 text-2xl font-black text-on-surface">{totalCompleted} <span className="text-base font-medium text-on-surface-muted">/ {totalRequired}</span></p>
+                                <p className="text-xs text-on-surface-muted mt-0.5">{totalSkills} total skills</p>
+                            </div>
+                            <div className="rounded-xl border border-border bg-white p-4">
+                                <p className="text-[10px] font-bold text-on-surface-muted uppercase tracking-wider">Completed</p>
+                                <p className="mt-1 text-2xl font-black text-green-700">{completeSkills}</p>
+                                <p className="text-xs text-on-surface-muted mt-0.5">Fully logged</p>
+                            </div>
+                            <div className="rounded-xl border-2 border-brand-300 bg-gradient-to-br from-brand-50 to-white p-4 col-span-2 sm:col-span-1">
+                                <p className="text-[10px] font-bold text-brand-700 uppercase tracking-wider">Progress</p>
+                                <p className="mt-1 text-2xl font-black text-brand-700">{overallPercent}%</p>
+                                <div className="mt-2 h-1.5 bg-brand-100 rounded-full overflow-hidden">
+                                    <div className="h-full bg-brand-600 rounded-full transition-all" style={{ width: `${overallPercent}%` }} />
+                                </div>
+                            </div>
                         </div>
-                        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                            <div className="h-full bg-brand-600 rounded-full transition-all" style={{ width: `${overallPercent}%` }} />
+
+                        {/* Category Tabs */}
+                        <div className="border-b border-border overflow-x-auto">
+                            <div className="flex gap-1 min-w-max">
+                                <button
+                                    onClick={() => setActiveCategory(null)}
+                                    className={`relative px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === null
+                                            ? "text-brand-700"
+                                            : "text-on-surface-muted hover:text-on-surface"
+                                        }`}
+                                >
+                                    All Categories
+                                    {activeCategory === null && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-700" />}
+                                </button>
+                                {Object.entries(categories || {}).map(([category, catSkills]) => {
+                                    const completed = catSkills.reduce((s, sk) => s + sk.completed_count, 0)
+                                    const required = catSkills.reduce((s, sk) => s + sk.required_count, 0)
+                                    return (
+                                        <button
+                                            key={category}
+                                            onClick={() => setActiveCategory(category)}
+                                            className={`relative px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === category
+                                                    ? "text-brand-700"
+                                                    : "text-on-surface-muted hover:text-on-surface"
+                                                }`}
+                                        >
+                                            {category}
+                                            <span className={`ml-2 rounded-full px-2 py-0.5 text-xs font-bold ${activeCategory === category ? "bg-brand-100 text-brand-700" : "bg-surface-subtle text-on-surface-muted"
+                                                }`}>
+                                                {completed}/{required}
+                                            </span>
+                                            {activeCategory === category && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-700" />}
+                                        </button>
+                                    )
+                                })}
+                            </div>
                         </div>
-                    </div>
+                    </>
                 )}
 
                 {/* Categories */}
-                {Object.entries(categories || {}).map(([category, catSkills]) => (
-                    <div key={category} className="space-y-2">
-                        <h2 className="text-xs font-bold text-brand-800 uppercase tracking-wider px-1 mt-6">{category}</h2>
-                        <div className="rounded-xl border border-border bg-white divide-y divide-border overflow-hidden">
-                            {catSkills.map((skill) => (
-                                <SkillRow
-                                    key={skill.id}
-                                    skill={skill}
-                                    onAdd={() => openAddModal(skill)}
-                                    onHistory={() => setHistorySkill(skill)}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                ))}
+                {Object.entries(categories || {})
+                    .filter(([category]) => !activeCategory || activeCategory === category)
+                    .map(([category, catSkills]) => {
+                        const catCompleted = catSkills.reduce((s, sk) => s + sk.completed_count, 0)
+                        const catRequired = catSkills.reduce((s, sk) => s + sk.required_count, 0)
+                        return (
+                            <div key={category} className="space-y-3">
+                                <div className="flex items-end justify-between">
+                                    <div>
+                                        <h2 className="text-base font-bold text-on-surface">{category}</h2>
+                                        <p className="text-xs text-on-surface-muted">{catCompleted} of {catRequired} procedures completed</p>
+                                    </div>
+                                </div>
+                                <div className="rounded-xl border border-border bg-white divide-y divide-border overflow-hidden shadow-sm">
+                                    {catSkills.map((skill) => (
+                                        <SkillRow
+                                            key={skill.id}
+                                            skill={skill}
+                                            onAdd={() => openAddModal(skill)}
+                                            onHistory={() => setHistorySkill(skill)}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        )
+                    })}
             </div>
 
             {/* Add / Edit Modal */}
             {(addSkill || editLog) && (
                 <Modal
-                    title={addSkill ? "Log procedure" : "Edit log"}
+                    title={addSkill ? "Log Procedure" : "Edit Log Entry"}
                     subtitle={addSkill?.procedure_name || editLog?.skill.procedure_name}
                     onClose={() => { setAddSkill(null); setEditLog(null) }}
                 >
                     <div className="space-y-4">
-                        <Field label="Date performed" required>
+                        <Field label="Date Performed" required>
                             <input
                                 type="date"
                                 value={form.date_performed}
                                 onChange={(e) => setForm({ ...form, date_performed: e.target.value })}
-                                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                                className="w-full rounded-lg border border-border px-3 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
                             />
                         </Field>
 
@@ -254,7 +328,7 @@ export default function ClinicalsPage() {
                                 placeholder="e.g. Korle Bu Teaching Hospital"
                                 value={form.hospital}
                                 onChange={(e) => setForm({ ...form, hospital: e.target.value })}
-                                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                                className="w-full rounded-lg border border-border px-3 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
                             />
                         </Field>
 
@@ -264,17 +338,17 @@ export default function ClinicalsPage() {
                                 placeholder="e.g. Medical Ward A"
                                 value={form.ward}
                                 onChange={(e) => setForm({ ...form, ward: e.target.value })}
-                                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                                className="w-full rounded-lg border border-border px-3 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
                             />
                         </Field>
 
-                        <Field label="Supervisor's name" required>
+                        <Field label="Supervisor's Name" required>
                             <input
                                 type="text"
                                 placeholder="e.g. Sister Akosua Mensah"
                                 value={form.supervisor_name}
                                 onChange={(e) => setForm({ ...form, supervisor_name: e.target.value })}
-                                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                                className="w-full rounded-lg border border-border px-3 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
                             />
                         </Field>
 
@@ -284,7 +358,7 @@ export default function ClinicalsPage() {
                                 value={form.notes}
                                 onChange={(e) => setForm({ ...form, notes: e.target.value })}
                                 rows={3}
-                                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 resize-none"
+                                className="w-full rounded-lg border border-border px-3 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 resize-none"
                             />
                         </Field>
                     </div>
@@ -313,7 +387,7 @@ export default function ClinicalsPage() {
                                 !form.supervisor_name.trim()
                             }
                         >
-                            {createLog.isPending || updateLog.isPending ? "Saving…" : "Save"}
+                            {createLog.isPending || updateLog.isPending ? "Saving…" : "Save Log"}
                         </Button>
                     </div>
                 </Modal>
@@ -322,7 +396,7 @@ export default function ClinicalsPage() {
             {/* History Modal */}
             {historySkill && (
                 <Modal
-                    title="Procedure history"
+                    title="Procedure History"
                     subtitle={historySkill.procedure_name}
                     onClose={() => setHistorySkill(null)}
                     maxWidth="lg"
@@ -330,22 +404,24 @@ export default function ClinicalsPage() {
                     {historyLogs && historyLogs.length > 0 ? (
                         <div className="space-y-2">
                             {historyLogs.map((log) => (
-                                <div key={log.id} className="rounded-lg border border-border bg-white p-4">
+                                <div key={log.id} className="rounded-lg border border-border bg-white p-4 hover:border-brand-300 transition-colors">
                                     <div className="flex items-start justify-between gap-3">
                                         <div className="flex-1 min-w-0">
-                                            <p className="text-sm font-semibold text-on-surface">
-                                                {formatDate(log.date_performed)}
-                                            </p>
-                                            <p className="text-sm text-on-surface-muted mt-0.5">
+                                            <div className="flex items-center gap-2 mb-1">
+                                                <span className="text-xs font-bold text-brand-700 bg-brand-50 px-2 py-0.5 rounded">
+                                                    {formatDate(log.date_performed)}
+                                                </span>
+                                            </div>
+                                            <p className="text-sm font-medium text-on-surface mt-1">
                                                 {log.hospital}{log.ward ? ` · ${log.ward}` : ""}
                                             </p>
                                             {log.supervisor_name && (
                                                 <p className="text-xs text-on-surface-muted mt-1">
-                                                    Supervisor: {log.supervisor_name}
+                                                    Supervisor: <strong className="text-on-surface">{log.supervisor_name}</strong>
                                                 </p>
                                             )}
                                             {log.notes && (
-                                                <p className="text-xs text-on-surface-muted mt-1 italic">
+                                                <p className="text-xs text-on-surface-muted mt-1.5 italic border-l-2 border-amber-300 pl-2">
                                                     "{log.notes}"
                                                 </p>
                                             )}
@@ -353,13 +429,13 @@ export default function ClinicalsPage() {
                                         <div className="flex items-center gap-1 shrink-0">
                                             <button
                                                 onClick={() => openEditModal(log, historySkill)}
-                                                className="rounded-md px-2 py-1 text-xs font-medium text-brand-700 hover:bg-brand-50"
+                                                className="rounded-md px-2.5 py-1 text-xs font-bold text-brand-700 hover:bg-brand-50 transition-colors"
                                             >
                                                 Edit
                                             </button>
                                             <button
                                                 onClick={() => setConfirmDelete({ log, skill: historySkill })}
-                                                className="rounded-md px-2 py-1 text-xs font-medium text-danger-700 hover:bg-danger-50"
+                                                className="rounded-md px-2.5 py-1 text-xs font-bold text-danger-700 hover:bg-danger-50 transition-colors"
                                             >
                                                 Delete
                                             </button>
@@ -369,9 +445,15 @@ export default function ClinicalsPage() {
                             ))}
                         </div>
                     ) : (
-                        <p className="text-sm text-on-surface-muted text-center py-6">
-                            No logs recorded yet.
-                        </p>
+                        <div className="text-center py-12">
+                            <p className="text-sm text-on-surface-muted">No logs recorded yet for this procedure.</p>
+                            <button
+                                onClick={() => { setHistorySkill(null); openAddModal(historySkill) }}
+                                className="mt-3 text-xs font-bold text-brand-600 hover:underline"
+                            >
+                                + Add your first log
+                            </button>
+                        </div>
                     )}
                 </Modal>
             )}
@@ -379,11 +461,12 @@ export default function ClinicalsPage() {
             {/* Delete Confirmation */}
             {confirmDelete && (
                 <Modal title="Delete this log?" onClose={() => setConfirmDelete(null)} maxWidth="sm">
-                    <p className="text-sm text-on-surface-muted leading-relaxed">
-                        This will permanently remove the log from <strong>{formatDate(confirmDelete.log.date_performed)}</strong>.
-                        This action can't be undone.
-                    </p>
-                    <div className="mt-5 flex gap-2">
+                    <div className="rounded-lg bg-red-50 border border-red-200 p-3 mb-4">
+                        <p className="text-sm text-red-900 leading-relaxed">
+                            This will permanently remove the log from <strong>{formatDate(confirmDelete.log.date_performed)}</strong>. This action cannot be undone.
+                        </p>
+                    </div>
+                    <div className="flex gap-2">
                         <Button variant="secondary" fullWidth onClick={() => setConfirmDelete(null)}>
                             Cancel
                         </Button>
@@ -393,7 +476,7 @@ export default function ClinicalsPage() {
                             disabled={deleteLog.isPending}
                             className="!bg-danger-600 hover:!bg-danger-700"
                         >
-                            {deleteLog.isPending ? "Deleting…" : "Delete"}
+                            {deleteLog.isPending ? "Deleting…" : "Delete Log"}
                         </Button>
                     </div>
                 </Modal>
@@ -401,7 +484,8 @@ export default function ClinicalsPage() {
 
             {/* Toast */}
             {toast && (
-                <div className={`fixed top-6 right-6 z-[60] rounded-lg px-4 py-3 shadow-xl text-sm font-medium text-white ${toast.type === "success" ? "bg-brand-700" : "bg-danger-600"}`}>
+                <div className={`fixed top-6 right-6 z-[60] rounded-lg px-4 py-3 shadow-xl text-sm font-medium text-white animate-in slide-in-from-top-4 duration-300 ${toast.type === "success" ? "bg-brand-700" : "bg-danger-600"
+                    }`}>
                     {toast.message}
                 </div>
             )}
@@ -420,24 +504,24 @@ function SkillRow({ skill, onAdd, onHistory }: {
     const percent = Math.min((skill.completed_count / skill.required_count) * 100, 100)
 
     return (
-        <div className={`flex items-center justify-between gap-4 px-4 py-3 ${isComplete ? "bg-green-50/40" : ""}`}>
+        <div className={`flex items-center justify-between gap-4 px-4 py-3.5 ${isComplete ? "bg-green-50/40" : ""}`}>
             <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2">
-                    <p className="text-sm font-medium text-on-surface">{skill.procedure_name}</p>
+                <div className="flex items-center gap-2 flex-wrap">
+                    <p className="text-sm font-semibold text-on-surface">{skill.procedure_name}</p>
                     {isComplete && (
-                        <span className="inline-flex items-center rounded-full bg-green-500 px-1.5 py-0.5 text-[10px] font-bold text-white">
-                            Complete
+                        <span className="inline-flex items-center rounded-full bg-green-500 px-2 py-0.5 text-[10px] font-bold text-white">
+                            ✓ Complete
                         </span>
                     )}
                 </div>
-                <div className="flex items-center gap-2 mt-1.5">
+                <div className="flex items-center gap-2 mt-2">
                     <div className="w-32 h-1.5 bg-gray-100 rounded-full overflow-hidden">
                         <div
                             className={`h-full rounded-full transition-all ${isComplete ? "bg-green-500" : "bg-brand-500"}`}
                             style={{ width: `${percent}%` }}
                         />
                     </div>
-                    <span className="text-xs text-on-surface-muted">
+                    <span className={`text-xs font-bold ${isComplete ? "text-green-700" : "text-on-surface-muted"}`}>
                         {skill.completed_count} / {skill.required_count}
                     </span>
                 </div>
@@ -447,13 +531,14 @@ function SkillRow({ skill, onAdd, onHistory }: {
                 <button
                     onClick={onHistory}
                     disabled={skill.completed_count === 0}
-                    className="text-xs font-medium text-brand-700 hover:underline disabled:opacity-40 disabled:no-underline"
+                    className="text-xs font-bold text-brand-700 hover:underline disabled:opacity-40 disabled:no-underline"
                 >
                     History
                 </button>
                 <button
                     onClick={onAdd}
-                    className="h-8 w-8 rounded-lg bg-brand-700 text-white hover:bg-brand-800 flex items-center justify-center text-lg font-bold"
+                    className="h-9 w-9 rounded-lg bg-brand-700 text-white hover:bg-brand-800 flex items-center justify-center text-lg font-bold transition-colors shadow-sm active:scale-95"
+                    aria-label={`Add ${skill.procedure_name}`}
                 >
                     +
                 </button>
@@ -479,9 +564,11 @@ function Modal({ title, subtitle, onClose, children, maxWidth = "md" }: {
                 <div className="flex items-start justify-between gap-3 mb-5">
                     <div>
                         <h2 className="text-lg font-bold text-on-surface">{title}</h2>
-                        {subtitle && <p className="text-sm text-brand-700 mt-0.5">{subtitle}</p>}
+                        {subtitle && <p className="text-sm text-brand-700 mt-0.5 font-medium">{subtitle}</p>}
                     </div>
-                    <button onClick={onClose} className="text-on-surface-muted hover:text-on-surface text-2xl leading-none -mt-1">×</button>
+                    <button onClick={onClose} className="text-on-surface-muted hover:text-on-surface text-2xl leading-none -mt-1" aria-label="Close">
+                        ×
+                    </button>
                 </div>
                 {children}
             </div>
@@ -497,7 +584,7 @@ function Field({ label, hint, required, children }: {
 }) {
     return (
         <div>
-            <label className="block text-sm font-medium text-on-surface mb-1.5">
+            <label className="block text-sm font-bold text-on-surface mb-1.5">
                 {label}
                 {required && <span className="text-danger-600 ml-0.5">*</span>}
                 {hint && <span className="text-xs font-normal text-on-surface-muted ml-1">({hint})</span>}

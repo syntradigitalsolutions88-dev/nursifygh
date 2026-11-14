@@ -112,10 +112,13 @@ class QuizSubmissionSerializer(serializers.Serializer):
             course = Course.objects.get(pk=value, is_published=True)
         except Course.DoesNotExist:
             raise serializers.ValidationError("Course not found or unpublished.")
-        if course.level != request.user.level or course.program != request.user.program:
-            raise serializers.ValidationError(
-                "This course is not available for your level and program."
-            )
+            
+        # Admin bypass: Admins can submit quizzes for any course
+        if not request.user.is_superuser:
+            if course.level != request.user.level or course.program != request.user.program:
+                raise serializers.ValidationError(
+                    "This course is not available for your level and program."
+                )
         return course
 
     def validate_answers(self, value):

@@ -31,6 +31,14 @@ function CoursesIcon() {
     )
 }
 
+function TrophyIcon() {
+    return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+    )
+}
+
 function ClinicalsIcon() {
     return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
@@ -98,6 +106,7 @@ function SubscribeIcon() {
 const navItems: NavItem[] = [
     { label: "Dashboard", to: "/dashboard", icon: <DashboardIcon />, end: true },
     { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
+    { label: "Leaderboard", to: "/leaderboard", icon: <TrophyIcon /> },
     { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
     { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
     { label: "Library", to: "/library", icon: <LibraryIcon /> },
@@ -110,9 +119,9 @@ const navItems: NavItem[] = [
 const mobileNavItems: NavItem[] = [
     { label: "Home", to: "/dashboard", icon: <DashboardIcon />, end: true },
     { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
+    { label: "Leaderboard", to: "/leaderboard", icon: <TrophyIcon /> },
     { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
     { label: "Plans", to: "/careplans", icon: <CarePlansIcon /> },
-    { label: "Library", to: "/library", icon: <LibraryIcon /> },
 ]
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
@@ -231,7 +240,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                 <HelpIcon />
                             </Link>
 
-                            {/* NEW: Prominent user profile button */}
                             <button
                                 onClick={() => setProfileOpen(!profileOpen)}
                                 className="flex items-center gap-2 rounded-full border border-border bg-white pl-1.5 pr-3 py-1.5 hover:bg-surface-subtle hover:border-brand-300 transition-all shadow-sm"
