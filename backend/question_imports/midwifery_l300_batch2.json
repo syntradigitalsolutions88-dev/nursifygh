@@ -1,0 +1,2247 @@
+{
+  "courses": [
+    {
+      "course_code": "CBR-322-M",
+      "course_title": "Community-Based Rehabilitation",
+      "category": "COMMUNITY",
+      "semester": "S2",
+      "topics": [
+        "Maternal Rehabilitation",
+        "Perinatal Disability",
+        "Family-Centred Care",
+        "Community Reintegration",
+        "Assistive Devices and Accessibility",
+        "Disability Inclusion and Stigma Reduction"
+      ],
+      "questions": [
+        {
+          "topic": "Maternal Rehabilitation",
+          "question_text": "A woman develops an obstetric fistula following prolonged obstructed labour and experiences continuous leakage of urine. Which rehabilitation intervention should form part of her long-term care after appropriate surgical assessment?",
+          "choices": [
+            {
+              "text": "Restricting her contact with family members until the leakage stops",
+              "is_correct": false
+            },
+            {
+              "text": "Providing psychosocial support, continence care, and assistance with community reintegration",
+              "is_correct": true
+            },
+            {
+              "text": "Advising her to discontinue all physical activities permanently",
+              "is_correct": false
+            },
+            {
+              "text": "Managing the condition exclusively with traditional herbal preparations",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Rehabilitation after obstetric fistula should address physical functioning, psychological wellbeing, social relationships, and reintegration alongside appropriate clinical treatment. Isolation, unnecessary inactivity, and unverified herbal treatment do not correct the fistula or address the woman's rehabilitation needs.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Perinatal Disability",
+          "question_text": "A newborn who experienced severe birth asphyxia is later diagnosed with cerebral palsy. Which intervention is most appropriate for supporting the child's development?",
+          "choices": [
+            {
+              "text": "Delaying intervention until the child reaches school age",
+              "is_correct": false
+            },
+            {
+              "text": "Restricting movement to prevent further neurological damage",
+              "is_correct": false
+            },
+            {
+              "text": "Initiating early multidisciplinary assessment and developmentally appropriate rehabilitation",
+              "is_correct": true
+            },
+            {
+              "text": "Advising the family that rehabilitation cannot improve functional ability",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Early intervention can support motor development, communication, feeding, positioning, and functional independence in children with cerebral palsy. Delaying assessment, restricting movement without clinical indication, and denying rehabilitation opportunities can worsen functional limitations.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Family-Centred Care",
+          "question_text": "A mother whose infant has a congenital limb difference feels distressed and believes she caused the condition. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Tell her that she should accept the condition without discussing it",
+              "is_correct": false
+            },
+            {
+              "text": "Reassure her that she is not automatically responsible and assess her emotional needs",
+              "is_correct": true
+            },
+            {
+              "text": "Discourage her from holding the infant",
+              "is_correct": false
+            },
+            {
+              "text": "Refer the infant for rehabilitation without involving the mother",
+              "is_correct": false
+            }
+          ],
+          "rationale": "The midwife should first address maternal distress, correct misconceptions without assigning blame, and assess the mother's psychosocial needs. Excluding the mother, discouraging bonding, or dismissing her concerns undermines family-centred care.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Community Reintegration",
+          "question_text": "A woman recovering from an obstetric complication has completed hospital treatment but is reluctant to return to her community because of stigma. Which action best promotes successful reintegration?",
+          "choices": [
+            {
+              "text": "Encouraging permanent residence in the hospital",
+              "is_correct": false
+            },
+            {
+              "text": "Arranging community support with her consent and addressing discriminatory attitudes",
+              "is_correct": true
+            },
+            {
+              "text": "Informing community members about her diagnosis without permission",
+              "is_correct": false
+            },
+            {
+              "text": "Advising her to avoid all community activities",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Community reintegration requires the woman's participation, respect for confidentiality, and coordinated support to reduce discrimination and promote inclusion. Permanent institutionalisation, involuntary disclosure, and social withdrawal undermine rehabilitation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Assistive Devices and Accessibility",
+          "question_text": "A postpartum woman develops lower-limb weakness following a neurological injury and requires support when walking. What should guide the selection of an assistive device?",
+          "choices": [
+            {
+              "text": "The cheapest device available, regardless of its suitability",
+              "is_correct": false
+            },
+            {
+              "text": "The preference of the device supplier alone",
+              "is_correct": false
+            },
+            {
+              "text": "A functional assessment by an appropriate rehabilitation professional",
+              "is_correct": true
+            },
+            {
+              "text": "The assumption that every woman with weakness requires a wheelchair",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Assistive-device selection should follow an assessment of mobility, balance, strength, safety, environment, and individual needs. Cost alone, supplier preference, and assumptions about disability do not establish whether a device is clinically appropriate.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Maternal Rehabilitation",
+          "question_text": "A woman reports persistent urinary leakage and difficulty controlling her pelvic floor muscles after a complicated vaginal birth. Which rehabilitation service is most appropriate after clinical assessment?",
+          "choices": [
+            {
+              "text": "Pelvic floor rehabilitation supervised by a trained professional",
+              "is_correct": true
+            },
+            {
+              "text": "Routine restriction of all fluid intake",
+              "is_correct": false
+            },
+            {
+              "text": "Permanent avoidance of walking and exercise",
+              "is_correct": false
+            },
+            {
+              "text": "Use of antibiotics without evidence of infection",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Pelvic floor rehabilitation can improve muscle function and support recovery from pelvic floor dysfunction when appropriately assessed and supervised. Fluid restriction, unnecessary inactivity, and antibiotics without evidence of infection do not treat the underlying muscular problem.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Family-Centred Care",
+          "question_text": "A mother with a physical disability is admitted for postnatal care. Which approach best reflects family-centred rehabilitation?",
+          "choices": [
+            {
+              "text": "Making all care decisions without consulting her",
+              "is_correct": false
+            },
+            {
+              "text": "Focusing exclusively on the infant's needs",
+              "is_correct": false
+            },
+            {
+              "text": "Involving the mother in care planning and identifying support needed for infant care",
+              "is_correct": true
+            },
+            {
+              "text": "Assuming that she cannot breastfeed or care for her infant",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Family-centred rehabilitation recognises the mother as an active decision-maker and considers her abilities, preferences, infant-care needs, and family support. Excluding her from decisions or assuming incapacity because of disability violates individualised care.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Disability Inclusion and Stigma Reduction",
+          "question_text": "During a community health session, a midwife notices that women with disabilities are rarely invited to maternal health activities. Which response is most appropriate?",
+          "choices": [
+            {
+              "text": "Organising accessible sessions and involving women with disabilities in planning",
+              "is_correct": true
+            },
+            {
+              "text": "Creating separate activities without consulting the women concerned",
+              "is_correct": false
+            },
+            {
+              "text": "Limiting participation to women without mobility difficulties",
+              "is_correct": false
+            },
+            {
+              "text": "Assuming that women with disabilities do not require maternal health education",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Inclusive community health programmes should remove physical, communication, and attitudinal barriers while involving affected women in decisions. Exclusion and decisions made without consultation reinforce discrimination and restrict access to care.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Community Reintegration",
+          "question_text": "A woman with an obstetric fistula has completed treatment and is preparing to return home. Which community-level intervention is most likely to sustain her recovery?",
+          "choices": [
+            {
+              "text": "A coordinated follow-up plan involving the health facility and community support services",
+              "is_correct": true
+            },
+            {
+              "text": "Ending all contact with the health facility after discharge",
+              "is_correct": false
+            },
+            {
+              "text": "Keeping her diagnosis secret from every healthcare professional involved in follow-up",
+              "is_correct": false
+            },
+            {
+              "text": "Discouraging her from attending future reproductive health services",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Continuity of care links facility-based treatment with follow-up, psychosocial support, and community rehabilitation. Ending follow-up or discouraging reproductive healthcare increases the risk of unmet physical and social needs.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Maternal Rehabilitation",
+          "question_text": "A postpartum woman with a spinal cord injury is unable to transfer independently from her bed to a chair and develops redness over her sacral area. What should the midwife prioritise?",
+          "choices": [
+            {
+              "text": "Encouraging her to remain in the same position to avoid discomfort",
+              "is_correct": false
+            },
+            {
+              "text": "Assessing the skin, relieving pressure, and arranging appropriate rehabilitation support",
+              "is_correct": true
+            },
+            {
+              "text": "Applying vigorous massage over the reddened area",
+              "is_correct": false
+            },
+            {
+              "text": "Withholding food until she becomes independently mobile",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Persistent redness may indicate early pressure injury, requiring prompt skin assessment, pressure relief, repositioning, and an appropriate care plan. Prolonged pressure and vigorous massage over vulnerable skin can worsen tissue damage, while food restriction is inappropriate.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Perinatal Disability",
+          "question_text": "A mother attending a child welfare clinic reports that her infant is not responding to sounds and is not developing age-appropriate communication skills. What is the most appropriate action?",
+          "choices": [
+            {
+              "text": "Reassure her that hearing difficulties always resolve without intervention",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to wait until the child starts school",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange prompt hearing assessment and referral for early intervention",
+              "is_correct": true
+            },
+            {
+              "text": "Recommend stopping all immunisations until hearing improves",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Suspected hearing impairment requires prompt assessment because early identification and intervention support language and communication development. Delayed referral and discontinuation of immunisation do not address the suspected impairment.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Family-Centred Care",
+          "question_text": "A mother with visual impairment is preparing to breastfeed her newborn. Which nursing intervention best promotes safe and independent breastfeeding?",
+          "choices": [
+            {
+              "text": "Assisting with positioning when needed and providing verbal guidance based on her preferences",
+              "is_correct": true
+            },
+            {
+              "text": "Prohibiting breastfeeding because she cannot see the infant",
+              "is_correct": false
+            },
+            {
+              "text": "Requiring a relative to perform every feeding",
+              "is_correct": false
+            },
+            {
+              "text": "Separating the infant from the mother during all feeding sessions",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Individualised positioning support and clear verbal guidance can help a mother with visual impairment breastfeed safely and independently. Disability alone is not a reason to prohibit breastfeeding or unnecessarily separate the mother and infant.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Disability Inclusion and Stigma Reduction",
+          "question_text": "A community midwife discovers that a woman with a disability has missed antenatal appointments because the clinic entrance has stairs and no accessible alternative. Which action should take priority?",
+          "choices": [
+            {
+              "text": "Classifying the woman as non-compliant and closing her antenatal record",
+              "is_correct": false
+            },
+            {
+              "text": "Arranging accessible care and escalating the environmental barrier to facility management",
+              "is_correct": true
+            },
+            {
+              "text": "Advising her to attend only when a relative can carry her",
+              "is_correct": false
+            },
+            {
+              "text": "Removing her from the maternal health programme",
+              "is_correct": false
+            }
+          ],
+          "rationale": "The missed appointments are associated with an environmental access barrier, so the midwife should facilitate accessible care and advocate for corrective action. Labelling the woman non-compliant or excluding her transfers responsibility for the system's failure to the client.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Maternal Rehabilitation",
+          "question_text": "A woman develops severe postpartum weakness on one side of her body, facial asymmetry, and difficulty speaking. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Refer her for routine physiotherapy at her next postnatal appointment",
+              "is_correct": false
+            },
+            {
+              "text": "Administer oral fluids and observe her for several hours",
+              "is_correct": false
+            },
+            {
+              "text": "Activate emergency assessment and arrange urgent transfer for suspected stroke",
+              "is_correct": true
+            },
+            {
+              "text": "Begin home-based exercises before obtaining medical assessment",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Sudden unilateral weakness, facial asymmetry, and speech difficulty suggest an acute stroke requiring emergency assessment and time-sensitive treatment. Routine rehabilitation, oral fluids, and unsupervised exercises would dangerously delay emergency care.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Assistive Devices and Accessibility",
+          "question_text": "A mother with limited mobility is discharged with a wheelchair, but her home has a narrow doorway and an uneven entrance. What should the community rehabilitation team prioritise?",
+          "choices": [
+            {
+              "text": "Advising her to abandon wheelchair use",
+              "is_correct": false
+            },
+            {
+              "text": "Assessing the home environment and planning appropriate accessibility modifications",
+              "is_correct": true
+            },
+            {
+              "text": "Recommending that she remain indoors permanently",
+              "is_correct": false
+            },
+            {
+              "text": "Replacing the wheelchair without assessing the home",
+              "is_correct": false
+            }
+          ],
+          "rationale": "The effectiveness of an assistive device depends partly on whether the environment permits its safe use. Assessing access barriers and planning suitable modifications addresses the actual problem, whereas abandoning mobility support or restricting participation reduces independence.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Perinatal Disability",
+          "question_text": "A mother of a child with developmental delay reports that relatives have advised her to conceal the child's condition because of community stigma. Which response should the midwife prioritise?",
+          "choices": [
+            {
+              "text": "Supporting the family with accurate information, confidential counselling, and referral for developmental assessment",
+              "is_correct": true
+            },
+            {
+              "text": "Agreeing that the child should not attend community activities",
+              "is_correct": false
+            },
+            {
+              "text": "Publicly announcing the child's diagnosis to correct community attitudes",
+              "is_correct": false
+            },
+            {
+              "text": "Advising the mother to discontinue developmental follow-up",
+              "is_correct": false
+            }
+          ],
+          "rationale": "The midwife should support the family, protect confidentiality, encourage early assessment, and promote the child's inclusion. Social exclusion, public disclosure without consent, and discontinuing follow-up can harm the child's development and dignity.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Family-Centred Care",
+          "question_text": "Which statement best describes the role of the family in community-based rehabilitation of a mother recovering from an obstetric complication?",
+          "choices": [
+            {
+              "text": "The family should replace all professional rehabilitation services",
+              "is_correct": false
+            },
+            {
+              "text": "The family should participate in agreed care activities while respecting the woman's autonomy",
+              "is_correct": true
+            },
+            {
+              "text": "Only the husband should make rehabilitation decisions",
+              "is_correct": false
+            },
+            {
+              "text": "Family involvement should be avoided in every rehabilitation programme",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Family members can support daily activities, emotional recovery, and continuity of rehabilitation while the woman remains central to decisions. Replacing professional care, limiting decision-making to one relative, or excluding supportive family involvement undermines effective rehabilitation.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Community Reintegration",
+          "question_text": "A woman recovering from a severe obstetric injury wishes to return to her income-generating activities but experiences fatigue and reduced mobility. Which approach is most appropriate?",
+          "choices": [
+            {
+              "text": "Recommending immediate return to her previous workload without assessment",
+              "is_correct": false
+            },
+            {
+              "text": "Supporting a gradual return based on functional assessment and her rehabilitation goals",
+              "is_correct": true
+            },
+            {
+              "text": "Advising her to abandon employment permanently",
+              "is_correct": false
+            },
+            {
+              "text": "Withholding rehabilitation until she resumes work",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A graded return to work should reflect the woman's functional capacity, safety, and personal goals. Immediate unrestricted work may worsen symptoms, while permanent exclusion from employment is unnecessary and delays rehabilitation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Maternal Rehabilitation",
+          "question_text": "A postpartum woman with a disability develops breathlessness, chest pain, and sudden swelling of one leg during a community follow-up visit. What is the priority action?",
+          "choices": [
+            {
+              "text": "Arrange routine rehabilitation review within one month",
+              "is_correct": false
+            },
+            {
+              "text": "Massage the swollen leg to improve circulation",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange emergency medical assessment for suspected venous thromboembolism",
+              "is_correct": true
+            },
+            {
+              "text": "Advise prolonged bed rest at home without assessment",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Sudden breathlessness and chest pain with unilateral leg swelling may indicate venous thromboembolism with pulmonary embolism, which is life-threatening. Massage and delayed routine follow-up are unsafe, and emergency assessment is required.",
+          "difficulty": "ANALYSIS"
+        }
+      ]
+    },
+    {
+      "course_code": "CTM-322-M",
+      "course_title": "Complementary and Traditional Medicine",
+      "category": "COMMUNITY",
+      "semester": "S2",
+      "topics": [
+        "Traditional Postpartum Practices",
+        "Herbal Medicine in Pregnancy and Lactation",
+        "Herb-Drug Interactions",
+        "Culturally Safe Maternity Care",
+        "Traditional Birth Attendants and Referral",
+        "Informed Consent and Patient Safety"
+      ],
+      "questions": [
+        {
+          "topic": "Herbal Medicine in Pregnancy and Lactation",
+          "question_text": "A pregnant woman attending an antenatal clinic reports taking an herbal preparation supplied by a traditional healer to prevent miscarriage. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Immediately dismiss her beliefs and terminate the consultation",
+              "is_correct": false
+            },
+            {
+              "text": "Ask about the preparation, its ingredients, dosage, and frequency of use, then assess potential risks",
+              "is_correct": true
+            },
+            {
+              "text": "Advise her to double the dose if she experiences abdominal discomfort",
+              "is_correct": false
+            },
+            {
+              "text": "Assure her that all natural preparations are safe during pregnancy",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A detailed, non-judgemental medication history helps identify possible toxicity, interactions, and pregnancy-related risks before counselling and appropriate clinical assessment. Natural products are not automatically safe, and increasing an unknown preparation's dose may expose the mother and fetus to harm.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Traditional Birth Attendants and Referral",
+          "question_text": "A traditional birth attendant assisting a woman in labour notices that the umbilical cord is visible at the vaginal opening. What should be the immediate priority?",
+          "choices": [
+            {
+              "text": "Encouraging the woman to push forcefully",
+              "is_correct": false
+            },
+            {
+              "text": "Attempting to push the cord back into the uterus",
+              "is_correct": false
+            },
+            {
+              "text": "Activating emergency referral for suspected cord prolapse while relieving cord compression using appropriate measures",
+              "is_correct": true
+            },
+            {
+              "text": "Waiting until the next contraction before contacting a health facility",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Visible cord during labour suggests cord prolapse, which can rapidly compromise fetal oxygenation and requires emergency obstetric management. Pushing, manipulating the cord into the uterus, or delaying referral can worsen compression and endanger the fetus.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Traditional Postpartum Practices",
+          "question_text": "A postpartum woman tells the midwife that her family intends to apply a hot herbal mixture directly to her perineal wound. What is the most appropriate response?",
+          "choices": [
+            {
+              "text": "Explain the risk of burns, contamination, and delayed healing, and discuss safer perineal care",
+              "is_correct": true
+            },
+            {
+              "text": "Encourage the practice because heat always prevents infection",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to stop washing the perineum completely",
+              "is_correct": false
+            },
+            {
+              "text": "Recommend applying the mixture more frequently to accelerate healing",
+              "is_correct": false
+            }
+          ],
+          "rationale": "An unsterile hot mixture may cause burns, introduce infection, and interfere with wound healing, so the midwife should explain the risks and provide safe care guidance. Heat does not guarantee infection prevention, and avoiding perineal hygiene or increasing exposure is unsafe.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Herb-Drug Interactions",
+          "question_text": "A woman receiving prescribed medication for hypertension during pregnancy reports taking an herbal product at the same time. Why is this information clinically important?",
+          "choices": [
+            {
+              "text": "Herbal products can interact with prescribed medicines and alter their effects or toxicity",
+              "is_correct": true
+            },
+            {
+              "text": "Herbal products always strengthen antihypertensive medicines safely",
+              "is_correct": false
+            },
+            {
+              "text": "Herbal products cannot contain pharmacologically active substances",
+              "is_correct": false
+            },
+            {
+              "text": "Interactions occur only when medicines are given intravenously",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Herbal preparations may contain active substances that alter drug absorption, metabolism, blood pressure effects, or toxicity. They cannot be assumed to strengthen treatment safely, and interactions are not limited to intravenous medicines.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Culturally Safe Maternity Care",
+          "question_text": "A pregnant woman declines a recommended maternity intervention because her cultural beliefs differ from the proposed treatment. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Threaten to withdraw all maternity services",
+              "is_correct": false
+            },
+            {
+              "text": "Respectfully explore her concerns, explain the benefits and risks, and support informed decision-making",
+              "is_correct": true
+            },
+            {
+              "text": "Proceed with the intervention without consent",
+              "is_correct": false
+            },
+            {
+              "text": "Tell her that cultural beliefs have no place in maternity care",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Culturally safe care requires respectful communication, accurate information, and informed consent while protecting maternal and fetal wellbeing. Coercion, treatment without consent, and dismissive communication undermine autonomy and trust.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Traditional Birth Attendants and Referral",
+          "question_text": "A traditional birth attendant in a rural Ghanaian community wants to contribute to safer maternity care. Which role is most appropriate within a collaborative referral system?",
+          "choices": [
+            {
+              "text": "Managing all complicated deliveries independently",
+              "is_correct": false
+            },
+            {
+              "text": "Encouraging early antenatal attendance, recognising danger signs, and facilitating timely referral",
+              "is_correct": true
+            },
+            {
+              "text": "Replacing skilled birth attendants in emergency obstetric care",
+              "is_correct": false
+            },
+            {
+              "text": "Administering prescription medicines without clinical authorisation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Traditional birth attendants can support health education, early recognition of danger signs, and timely referral when integrated appropriately with the health system. They should not independently manage complications or undertake interventions beyond their training and authority.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Herbal Medicine in Pregnancy and Lactation",
+          "question_text": "A breastfeeding mother asks whether she can take an unidentified herbal mixture to increase breast milk production. What should the midwife advise?",
+          "choices": [
+            {
+              "text": "Use twice the recommended amount because lactation requires extra fluid",
+              "is_correct": false
+            },
+            {
+              "text": "Avoid assessment because herbal products do not enter breast milk",
+              "is_correct": false
+            },
+            {
+              "text": "Do not use the unidentified product until its safety has been assessed, and assess breastfeeding technique and milk transfer",
+              "is_correct": true
+            },
+            {
+              "text": "Stop breastfeeding immediately and substitute water for breast milk",
+              "is_correct": false
+            }
+          ],
+          "rationale": "The safety of an unidentified herbal product during lactation cannot be established, and active substances may pass into breast milk or affect maternal health. Assessing attachment, positioning, feeding frequency, and milk transfer addresses common breastfeeding difficulties without unnecessary exposure.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Traditional Postpartum Practices",
+          "question_text": "A woman on the second day after delivery has heavy vaginal bleeding and dizziness. Her relatives want to give her a traditional drink before seeking medical attention. What should the midwife prioritise?",
+          "choices": [
+            {
+              "text": "Allowing the family to administer the drink before reassessment",
+              "is_correct": false
+            },
+            {
+              "text": "Arranging immediate emergency assessment and management for suspected postpartum haemorrhage",
+              "is_correct": true
+            },
+            {
+              "text": "Advising the woman to sleep and reassess the bleeding the next morning",
+              "is_correct": false
+            },
+            {
+              "text": "Recommending abdominal massage by an untrained relative",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Heavy postpartum bleeding with dizziness may indicate postpartum haemorrhage and circulatory compromise, requiring immediate emergency management. Traditional drinks, delayed reassessment, and untrained abdominal manipulation must not postpone life-saving care.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Informed Consent and Patient Safety",
+          "question_text": "A traditional healer offers a pregnant woman a treatment but cannot identify its ingredients. Which concern should guide the midwife's counselling?",
+          "choices": [
+            {
+              "text": "The preparation may have unknown pharmacological effects, contamination, or toxicity",
+              "is_correct": true
+            },
+            {
+              "text": "Unknown ingredients guarantee that the product is ineffective",
+              "is_correct": false
+            },
+            {
+              "text": "The preparation is safe because it has been used for generations",
+              "is_correct": false
+            },
+            {
+              "text": "The preparation cannot affect pregnancy unless it is injected",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Unidentified preparations create uncertainty about dose, active ingredients, contamination, and potential maternal or fetal toxicity. Traditional use does not establish safety, and substances taken orally can still have clinically significant effects.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Herb-Drug Interactions",
+          "question_text": "A woman receiving oxytocin for active management of the third stage of labour asks whether she should also take an herbal preparation intended to increase uterine contractions. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Approve the combination because two uterotonic substances are always more effective",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to take the herbal preparation after every contraction",
+              "is_correct": false
+            },
+            {
+              "text": "Avoid the unverified preparation and explain that its effects and interaction with prescribed uterotonics are unknown",
+              "is_correct": true
+            },
+            {
+              "text": "Stop oxytocin and replace it with the herbal preparation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "An unverified uterotonic preparation may have unpredictable effects and could increase the risk of excessive uterine activity or other adverse reactions. Prescribed oxytocin should not be replaced or combined with an unknown product without appropriate clinical evidence and authorisation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Culturally Safe Maternity Care",
+          "question_text": "A woman requests the presence of a female family elder during labour because this is important to her cultural beliefs. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Refuse the request without discussion",
+              "is_correct": false
+            },
+            {
+              "text": "Accommodate the request where feasible, while maintaining privacy, safety, and the woman's consent",
+              "is_correct": true
+            },
+            {
+              "text": "Allow the elder to make all clinical decisions",
+              "is_correct": false
+            },
+            {
+              "text": "Permit the elder to perform clinical procedures without assessment of competence",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Respectful maternity care accommodates cultural preferences when they are compatible with safety, privacy, and the woman's wishes. A support person does not replace the woman's decision-making authority or the professional responsibilities of the midwife.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Traditional Birth Attendants and Referral",
+          "question_text": "A pregnant woman receiving care from a traditional birth attendant develops severe headache, blurred vision, and epigastric pain. What should happen first?",
+          "choices": [
+            {
+              "text": "She should receive an herbal drink and remain at home",
+              "is_correct": false
+            },
+            {
+              "text": "She should be referred urgently to a health facility for assessment of possible severe preeclampsia",
+              "is_correct": true
+            },
+            {
+              "text": "She should wait until labour begins before seeking care",
+              "is_correct": false
+            },
+            {
+              "text": "The attendant should encourage vigorous walking to reduce blood pressure",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Severe headache, visual disturbance, and epigastric pain are danger signs that may indicate severe preeclampsia and require urgent facility assessment. Home remedies, waiting for labour, and physical exertion do not treat the underlying hypertensive emergency.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Herbal Medicine in Pregnancy and Lactation",
+          "question_text": "A pregnant woman reports taking an herbal preparation and subsequently develops abdominal pain and vaginal bleeding. What is the midwife's priority?",
+          "choices": [
+            {
+              "text": "Reassure her that bleeding is an expected effect of herbal treatment",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange urgent obstetric assessment, establish the history of the preparation, and assess maternal stability",
+              "is_correct": true
+            },
+            {
+              "text": "Recommend another herbal preparation to stop the bleeding",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to wait at home until the bleeding becomes heavier",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Abdominal pain and vaginal bleeding in pregnancy require urgent assessment for potentially serious obstetric complications, while the herbal exposure should be documented and evaluated. Reassurance, additional unverified remedies, and waiting for deterioration may delay necessary treatment.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Traditional Postpartum Practices",
+          "question_text": "A postpartum woman is being denied food and water by relatives because they believe fasting will cleanse her body after delivery. She is weak and breastfeeding. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Assess her hydration and nutritional status, then counsel the family on safe postpartum nutrition",
+              "is_correct": true
+            },
+            {
+              "text": "Support continued fasting until breastfeeding is established",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to stop breastfeeding to reduce nutritional requirements",
+              "is_correct": false
+            },
+            {
+              "text": "Ignore the practice because family traditions cannot affect recovery",
+              "is_correct": false
+            }
+          ],
+          "rationale": "The midwife should assess the woman's immediate condition and explain the importance of adequate fluids and nutrition for postpartum recovery and lactation. Prolonged food and fluid restriction may worsen dehydration, weakness, and nutritional deficiency.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Informed Consent and Patient Safety",
+          "question_text": "A midwife learns that a pregnant client has been given an herbal preparation by a relative without her knowledge. Which ethical principle is most directly involved?",
+          "choices": [
+            {
+              "text": "Autonomy and informed consent",
+              "is_correct": true
+            },
+            {
+              "text": "Distributive justice alone",
+              "is_correct": false
+            },
+            {
+              "text": "Professional delegation",
+              "is_correct": false
+            },
+            {
+              "text": "Resource allocation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Autonomy requires respect for the woman's right to make informed decisions about substances and interventions used in her care. Administering an unidentified preparation without her knowledge bypasses consent and may expose her to preventable harm.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Herb-Drug Interactions",
+          "question_text": "A woman with postpartum hypertension is taking prescribed antihypertensive medication but also uses an herbal product. Her blood pressure becomes markedly elevated. What is the best clinical response?",
+          "choices": [
+            {
+              "text": "Assume the herbal product is harmless and continue the same care",
+              "is_correct": false
+            },
+            {
+              "text": "Stop all prescribed medication without medical review",
+              "is_correct": false
+            },
+            {
+              "text": "Assess her urgently, document all products used, and arrange clinical review of treatment and possible interactions",
+              "is_correct": true
+            },
+            {
+              "text": "Advise her to take additional doses of the herbal product",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Markedly elevated postpartum blood pressure requires prompt assessment because of the risk of serious complications, including stroke and eclampsia. Medication and herbal-product histories should be reviewed by the treating team rather than stopping prescribed treatment or increasing an unverified product independently.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Traditional Birth Attendants and Referral",
+          "question_text": "A traditional birth attendant has supported a woman through an uncomplicated pregnancy but the woman plans to deliver at home without a skilled birth attendant. Which message should the midwife emphasise?",
+          "choices": [
+            {
+              "text": "Antenatal attendance alone eliminates the need for skilled care during birth",
+              "is_correct": false
+            },
+            {
+              "text": "Skilled birth attendance supports early recognition and management of maternal and newborn complications",
+              "is_correct": true
+            },
+            {
+              "text": "A traditional birth attendant can provide emergency surgery if required",
+              "is_correct": false
+            },
+            {
+              "text": "Emergency referral is necessary only when the mother loses consciousness",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Skilled birth attendance supports safe intrapartum monitoring and timely intervention when complications arise, even in pregnancies previously considered low risk. Antenatal attendance does not eliminate intrapartum risks, and referral should occur before a woman becomes critically ill.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Culturally Safe Maternity Care",
+          "question_text": "A midwife working in a rural community disagrees with a harmless cultural practice preferred by a pregnant woman. Which approach best demonstrates cultural competence?",
+          "choices": [
+            {
+              "text": "Prohibiting the practice because it differs from the midwife's personal beliefs",
+              "is_correct": false
+            },
+            {
+              "text": "Assessing whether the practice creates clinical risk and respecting the woman's preference when it is safe",
+              "is_correct": true
+            },
+            {
+              "text": "Reporting the woman for refusing modern healthcare",
+              "is_correct": false
+            },
+            {
+              "text": "Ignoring the woman's explanation and continuing the consultation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Cultural competence involves understanding the woman's beliefs and distinguishing harmless practices from practices that create clinical risk. Personal disagreement alone is not a reason to prohibit a safe practice or undermine respectful communication.",
+          "difficulty": "ANALYSIS"
+        }
+      ]
+    },
+    {
+      "course_code": "PAD-322-M",
+      "course_title": "Paediatric Nursing II",
+      "category": "MATERNAL",
+      "semester": "S2",
+      "topics": [
+        "Newborn Resuscitation",
+        "Neonatal Jaundice",
+        "Preterm and Low-Birth-Weight Care",
+        "Neonatal Sepsis",
+        "Newborn Feeding and Hypoglycaemia",
+        "Immunisation and Well-Baby Care",
+        "Child Development and Early Intervention"
+      ],
+      "questions": [
+        {
+          "topic": "Newborn Resuscitation",
+          "question_text": "A newborn is delivered at a health facility, is apnoeic, and has a heart rate of 80 beats per minute after initial steps of newborn resuscitation. What should the midwife do next?",
+          "choices": [
+            {
+              "text": "Begin effective positive-pressure ventilation",
+              "is_correct": true
+            },
+            {
+              "text": "Start chest compressions immediately without ventilation",
+              "is_correct": false
+            },
+            {
+              "text": "Observe for five minutes before intervening",
+              "is_correct": false
+            },
+            {
+              "text": "Administer oral glucose",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Apnoea with a heart rate below 100 beats per minute after initial steps indicates the need for effective positive-pressure ventilation. Chest compressions are considered only when the heart rate remains below 60 beats per minute after at least 30 seconds of effective ventilation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Neonatal Jaundice",
+          "question_text": "A newborn develops visible jaundice eight hours after birth. What is the most appropriate action?",
+          "choices": [
+            {
+              "text": "Reassure the mother that all newborn jaundice is physiological",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange urgent clinical assessment and bilirubin measurement",
+              "is_correct": true
+            },
+            {
+              "text": "Recommend exposing the newborn to direct sunlight as the only treatment",
+              "is_correct": false
+            },
+            {
+              "text": "Stop breastfeeding immediately without assessment",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Jaundice appearing within the first 24 hours is potentially pathological and requires urgent evaluation to identify the cause and assess bilirubin levels. Routine reassurance, sunlight as a substitute for treatment, and unnecessary interruption of breastfeeding can delay appropriate management.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Preterm and Low-Birth-Weight Care",
+          "question_text": "A clinically stable preterm infant is admitted to the neonatal unit and weighs 1.7 kg. Which intervention is particularly beneficial for maintaining warmth and supporting breastfeeding?",
+          "choices": [
+            {
+              "text": "Routine separation from the mother",
+              "is_correct": false
+            },
+            {
+              "text": "Kangaroo mother care with appropriate monitoring",
+              "is_correct": true
+            },
+            {
+              "text": "Bathing the infant immediately after admission",
+              "is_correct": false
+            },
+            {
+              "text": "Giving water between breastfeeds",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Kangaroo mother care provides sustained skin-to-skin contact, supports thermal regulation, and promotes breastfeeding in eligible low-birth-weight infants. Unnecessary separation, early bathing, and water supplementation increase risks without providing the benefits of kangaroo mother care.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Neonatal Sepsis",
+          "question_text": "A three-day-old newborn develops poor feeding, lethargy, temperature instability, and respiratory distress. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Arrange urgent neonatal assessment and initiate the facility's sepsis management pathway",
+              "is_correct": true
+            },
+            {
+              "text": "Advise the mother to increase feeding and return after two days",
+              "is_correct": false
+            },
+            {
+              "text": "Administer an unprescribed herbal preparation",
+              "is_correct": false
+            },
+            {
+              "text": "Discharge the newborn because temperature instability is normal",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Poor feeding, lethargy, temperature instability, and respiratory distress are danger signs of possible neonatal sepsis requiring urgent assessment and treatment. Delayed review, unprescribed remedies, and discharge can lead to rapid deterioration.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Newborn Feeding and Hypoglycaemia",
+          "question_text": "A newborn of a mother with diabetes becomes jittery and feeds poorly two hours after birth. Which condition should the midwife suspect first?",
+          "choices": [
+            {
+              "text": "Neonatal hypoglycaemia",
+              "is_correct": true
+            },
+            {
+              "text": "Physiological weight loss only",
+              "is_correct": false
+            },
+            {
+              "text": "Normal neonatal sleep behaviour",
+              "is_correct": false
+            },
+            {
+              "text": "Uncomplicated neonatal jaundice",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Infants of mothers with diabetes are at increased risk of neonatal hypoglycaemia, which may present with jitteriness and poor feeding. These findings require prompt blood glucose assessment and appropriate management rather than reassurance or attribution to unrelated conditions.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Immunisation and Well-Baby Care",
+          "question_text": "A mother brings her six-week-old infant to a child welfare clinic in Ghana. Which activity is an important part of the visit?",
+          "choices": [
+            {
+              "text": "Assessing growth and development, reviewing immunisation status, and providing caregiver education",
+              "is_correct": true
+            },
+            {
+              "text": "Giving antibiotics routinely to prevent childhood infections",
+              "is_correct": false
+            },
+            {
+              "text": "Withholding all vaccines until the child starts school",
+              "is_correct": false
+            },
+            {
+              "text": "Assessing weight only and omitting feeding history",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Well-baby care includes growth monitoring, developmental surveillance, immunisation according to the national schedule, and caregiver education. Routine antibiotics, unnecessary vaccine delays, and assessment limited to weight do not provide comprehensive preventive care.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Child Development and Early Intervention",
+          "question_text": "A mother reports that her nine-month-old infant cannot sit without support and has poor head control. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Dismiss the concern because all children develop at the same rate",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange developmental assessment and appropriate referral",
+              "is_correct": true
+            },
+            {
+              "text": "Advise the mother to stop interacting with the infant",
+              "is_correct": false
+            },
+            {
+              "text": "Wait until the child is three years old before assessing development",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Poor head control and inability to sit independently at this age warrant developmental assessment to identify possible neurological or developmental problems. Dismissing the concern or delaying assessment can prevent timely intervention.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Newborn Resuscitation",
+          "question_text": "During newborn resuscitation, the heart rate remains at 50 beats per minute after 30 seconds of effective positive-pressure ventilation that visibly moves the chest. What should the resuscitation team do next?",
+          "choices": [
+            {
+              "text": "Stop ventilation and observe for spontaneous recovery",
+              "is_correct": false
+            },
+            {
+              "text": "Initiate chest compressions coordinated with ventilation",
+              "is_correct": true
+            },
+            {
+              "text": "Give oral feeds immediately",
+              "is_correct": false
+            },
+            {
+              "text": "Discontinue resuscitation because the newborn has a heartbeat",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A heart rate below 60 beats per minute despite at least 30 seconds of effective ventilation indicates the need for chest compressions coordinated with ventilation under the neonatal resuscitation algorithm. Stopping ventilation or giving oral feeds would interrupt life-saving resuscitation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Preterm and Low-Birth-Weight Care",
+          "question_text": "A preterm infant is placed in an open cot after delivery and begins to develop cold extremities and a low body temperature. Which action should the midwife prioritise?",
+          "choices": [
+            {
+              "text": "Remove the infant's clothing to improve ventilation",
+              "is_correct": false
+            },
+            {
+              "text": "Provide appropriate thermal support and monitor the infant's temperature",
+              "is_correct": true
+            },
+            {
+              "text": "Delay intervention until the next feeding",
+              "is_correct": false
+            },
+            {
+              "text": "Bathe the infant to stimulate circulation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Preterm infants have limited thermal regulation and are at high risk of hypothermia, so immediate warming and temperature monitoring are essential. Removing clothing, delaying care, or bathing the infant increases heat loss.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Neonatal Jaundice",
+          "question_text": "A newborn receiving phototherapy for significant hyperbilirubinaemia is being monitored. Which nursing action is essential?",
+          "choices": [
+            {
+              "text": "Ensure appropriate eye protection and monitor temperature, hydration, and bilirubin response",
+              "is_correct": true
+            },
+            {
+              "text": "Cover the entire body with thick clothing during treatment",
+              "is_correct": false
+            },
+            {
+              "text": "Stop all feeding throughout phototherapy",
+              "is_correct": false
+            },
+            {
+              "text": "Apply herbal oil to the skin before each treatment session",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Phototherapy requires appropriate eye protection according to equipment guidance, adequate skin exposure, temperature and hydration monitoring, and assessment of bilirubin response. Thick clothing reduces treatment exposure, while stopping feeds and applying unverified products can compromise care.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Neonatal Sepsis",
+          "question_text": "A newborn develops grunting, chest indrawing, and central cyanosis in the postnatal ward. What should the midwife prioritise?",
+          "choices": [
+            {
+              "text": "Immediate assessment and emergency support for respiratory compromise",
+              "is_correct": true
+            },
+            {
+              "text": "Routine weighing before clinical assessment",
+              "is_correct": false
+            },
+            {
+              "text": "Oral feeding to improve energy levels",
+              "is_correct": false
+            },
+            {
+              "text": "Waiting for the paediatric ward round",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Grunting, chest indrawing, and central cyanosis indicate severe respiratory compromise requiring immediate assessment and emergency intervention. Feeding, routine weighing, and waiting for a later review delay treatment of a potentially life-threatening condition.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Newborn Feeding and Hypoglycaemia",
+          "question_text": "A newborn at risk of hypoglycaemia is being assessed after delivery. Which approach is most appropriate?",
+          "choices": [
+            {
+              "text": "Initiate early feeding when clinically appropriate and monitor blood glucose according to protocol",
+              "is_correct": true
+            },
+            {
+              "text": "Give plain water before the first breastfeed",
+              "is_correct": false
+            },
+            {
+              "text": "Delay feeding until the infant cries persistently",
+              "is_correct": false
+            },
+            {
+              "text": "Avoid glucose monitoring in infants who appear well",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Early feeding and protocol-based glucose monitoring help prevent and detect hypoglycaemia in at-risk newborns. Water and delayed feeding provide no appropriate preventive benefit, and an apparently well infant may still have low blood glucose.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Immunisation and Well-Baby Care",
+          "question_text": "A mother presents her infant for immunisation and reports that the child developed a mild fever after the previous vaccine dose. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Assess the child's current condition and explain expected minor reactions and danger signs",
+              "is_correct": true
+            },
+            {
+              "text": "Declare that all future vaccines are permanently contraindicated",
+              "is_correct": false
+            },
+            {
+              "text": "Recommend antibiotics before every vaccine dose",
+              "is_correct": false
+            },
+            {
+              "text": "Advise the mother to conceal future reactions",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Mild fever can occur after immunisation and should be assessed alongside the child's current condition and any history suggesting a serious adverse event. A mild reaction alone does not establish a permanent contraindication or justify routine antibiotic use.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Newborn Resuscitation",
+          "question_text": "A vigorous term newborn is delivered with a strong cry and good muscle tone. Which immediate approach is most appropriate?",
+          "choices": [
+            {
+              "text": "Routine separation for suctioning of the airway",
+              "is_correct": false
+            },
+            {
+              "text": "Provide routine care, maintain warmth, and support early skin-to-skin contact",
+              "is_correct": true
+            },
+            {
+              "text": "Begin positive-pressure ventilation",
+              "is_correct": false
+            },
+            {
+              "text": "Perform routine deep suctioning before assessing breathing",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A vigorous newborn who is breathing or crying and has good tone generally requires routine care, thermal protection, and early skin-to-skin contact. Routine ventilation or suctioning is unnecessary and may interfere with normal transition and bonding.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Neonatal Jaundice",
+          "question_text": "A newborn has jaundice, poor feeding, and increasing lethargy. The mother asks to take the infant home because the yellow colour is becoming less noticeable. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Discharge the infant because skin colour appears improved",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange urgent assessment of bilirubin and the infant's clinical condition",
+              "is_correct": true
+            },
+            {
+              "text": "Recommend direct sunlight and review after one week",
+              "is_correct": false
+            },
+            {
+              "text": "Advise the mother to stop breastfeeding permanently",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Poor feeding and lethargy in a jaundiced newborn may indicate significant hyperbilirubinaemia or another serious illness and require urgent assessment. Apparent improvement in skin colour does not reliably establish safety, and delayed review or unnecessary breastfeeding cessation is inappropriate.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Preterm and Low-Birth-Weight Care",
+          "question_text": "A preterm newborn is breathing spontaneously but has poor feeding and recurrent episodes of apnoea. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Transfer the infant to a routine postnatal cot without monitoring",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange urgent neonatal review and appropriate respiratory and feeding support",
+              "is_correct": true
+            },
+            {
+              "text": "Give large volumes of oral milk to prevent apnoea",
+              "is_correct": false
+            },
+            {
+              "text": "Discontinue temperature monitoring",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Recurrent apnoea and poor feeding in a preterm infant may indicate significant respiratory or systemic illness requiring urgent neonatal assessment and monitoring. Unmonitored routine care and large oral feeds may increase risk, particularly if coordination of sucking and swallowing is impaired.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Child Development and Early Intervention",
+          "question_text": "A mother attending a child welfare clinic reports that her 18-month-old child has lost previously acquired words and no longer responds consistently to her name. What is the best response?",
+          "choices": [
+            {
+              "text": "Explain that loss of acquired skills is a reason for prompt developmental assessment and referral",
+              "is_correct": true
+            },
+            {
+              "text": "Reassure her that regression is always a normal stage of development",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to stop speaking to the child",
+              "is_correct": false
+            },
+            {
+              "text": "Wait until the child reaches primary school before seeking assessment",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Loss of previously acquired developmental skills is a significant concern requiring prompt assessment and referral. Dismissing regression or delaying evaluation can postpone identification of neurological, developmental, or hearing-related conditions.",
+          "difficulty": "ANALYSIS"
+        }
+      ]
+    },
+    {
+      "course_code": "PHN-322-M",
+      "course_title": "Public Health Nursing",
+      "category": "COMMUNITY",
+      "semester": "S2",
+      "topics": [
+        "Maternal and Newborn Health Promotion",
+        "Antenatal Education",
+        "Safe Motherhood and Skilled Birth Attendance",
+        "Community-Based Maternal Surveillance",
+        "Postpartum Care and Family Planning",
+        "CHPS and Referral Systems",
+        "Health Promotion and Equity"
+      ],
+      "questions": [
+        {
+          "topic": "Antenatal Education",
+          "question_text": "During an antenatal education session at a CHPS compound, a pregnant woman asks why she should attend antenatal care when she feels healthy. Which explanation is most appropriate?",
+          "choices": [
+            {
+              "text": "Antenatal care identifies potential complications, supports preventive interventions, and promotes maternal and fetal wellbeing",
+              "is_correct": true
+            },
+            {
+              "text": "Antenatal care is required only when labour begins",
+              "is_correct": false
+            },
+            {
+              "text": "Antenatal care guarantees that complications cannot occur",
+              "is_correct": false
+            },
+            {
+              "text": "Antenatal care replaces the need for skilled birth attendance",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Antenatal care provides screening, preventive interventions, health education, and opportunities for early identification of maternal and fetal risks. It does not guarantee a complication-free pregnancy or replace skilled care during childbirth.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Safe Motherhood and Skilled Birth Attendance",
+          "question_text": "A pregnant woman with a history of severe preeclampsia in a previous pregnancy is planning to deliver at home. What should the community midwife prioritise?",
+          "choices": [
+            {
+              "text": "Encouraging home delivery because the previous pregnancy has ended",
+              "is_correct": false
+            },
+            {
+              "text": "Developing an individualised birth and referral plan that includes skilled facility-based care",
+              "is_correct": true
+            },
+            {
+              "text": "Advising her to avoid antenatal care until labour starts",
+              "is_correct": false
+            },
+            {
+              "text": "Recommending traditional treatment as a substitute for emergency obstetric care",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A history of severe preeclampsia identifies a woman who requires appropriate risk assessment, monitoring, and a clear plan for skilled childbirth and emergency referral. Home delivery without appropriate skilled support may delay recognition and treatment of recurrent complications.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Maternal and Newborn Health Promotion",
+          "question_text": "A community midwife conducts a postnatal home visit and finds that a mother has fever, lower abdominal pain, and foul-smelling vaginal discharge. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Advise the mother to take herbal preparations and rest",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange urgent clinical assessment for possible puerperal infection",
+              "is_correct": true
+            },
+            {
+              "text": "Reassure her that fever is always normal after childbirth",
+              "is_correct": false
+            },
+            {
+              "text": "Delay review until the routine six-week postnatal visit",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Fever, lower abdominal pain, and foul-smelling lochia suggest possible postpartum infection and require prompt assessment and treatment. Herbal remedies and delayed review may allow infection to progress to severe sepsis.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Postpartum Care and Family Planning",
+          "question_text": "A woman attending her postnatal visit says she wants to delay another pregnancy for at least three years. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Provide balanced counselling on suitable postpartum contraceptive methods and support informed choice",
+              "is_correct": true
+            },
+            {
+              "text": "Select a method without explaining alternatives",
+              "is_correct": false
+            },
+            {
+              "text": "Tell her that contraception is unnecessary while breastfeeding",
+              "is_correct": false
+            },
+            {
+              "text": "Advise her to wait until menstruation returns before discussing contraception",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Postpartum family planning counselling should address the woman's reproductive intentions, medical eligibility, breastfeeding status, and preferences. Breastfeeding does not automatically prevent pregnancy, and counselling should not be delayed until menstruation resumes.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "CHPS and Referral Systems",
+          "question_text": "A CHPS nurse identifies a pregnant woman with severe headache, visual disturbance, and markedly elevated blood pressure. What is the priority action?",
+          "choices": [
+            {
+              "text": "Arrange urgent referral for assessment and management of possible severe preeclampsia",
+              "is_correct": true
+            },
+            {
+              "text": "Schedule another blood pressure check in one month",
+              "is_correct": false
+            },
+            {
+              "text": "Recommend increased physical activity",
+              "is_correct": false
+            },
+            {
+              "text": "Advise the woman to reduce water intake and remain at home",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Severe hypertension with neurological symptoms may indicate severe preeclampsia and requires urgent facility-based assessment and management. Routine follow-up and home advice alone risk delaying treatment of a potentially life-threatening complication.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Community-Based Maternal Surveillance",
+          "question_text": "A community health nurse learns that a pregnant woman has not attended antenatal care because her family cannot afford transport to the health facility. Which public health response is most appropriate?",
+          "choices": [
+            {
+              "text": "Label the woman as irresponsible and discontinue follow-up",
+              "is_correct": false
+            },
+            {
+              "text": "Assess the access barrier and coordinate community support and referral arrangements",
+              "is_correct": true
+            },
+            {
+              "text": "Wait until the woman presents in labour",
+              "is_correct": false
+            },
+            {
+              "text": "Advise the family to use unverified medicines instead of antenatal care",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Public health nursing addresses barriers to healthcare access through community engagement, referral coordination, and appropriate support arrangements. Blaming the woman or waiting until labour does not address the transport barrier or protect maternal health.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Maternal and Newborn Health Promotion",
+          "question_text": "Which intervention is a central component of promoting exclusive breastfeeding during the first six months of an infant's life?",
+          "choices": [
+            {
+              "text": "Giving water between breastfeeds in hot weather",
+              "is_correct": false
+            },
+            {
+              "text": "Providing breastfeeding support, including correct attachment and positioning",
+              "is_correct": true
+            },
+            {
+              "text": "Introducing cereal at two months",
+              "is_correct": false
+            },
+            {
+              "text": "Replacing night feeds with sweetened water",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Exclusive breastfeeding for the first six months means providing breast milk without other foods or drinks, except prescribed medicines, vitamins, minerals, or oral rehydration solution when indicated. Water, early cereal, and sweetened drinks undermine exclusive breastfeeding and may increase infection risk.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Safe Motherhood and Skilled Birth Attendance",
+          "question_text": "A pregnant woman in a remote community develops heavy vaginal bleeding before delivery. Which action should the community midwife prioritise?",
+          "choices": [
+            {
+              "text": "Arrange emergency referral while initiating appropriate stabilisation within available capacity",
+              "is_correct": true
+            },
+            {
+              "text": "Wait for the bleeding to stop spontaneously",
+              "is_correct": false
+            },
+            {
+              "text": "Encourage the woman to walk to the health facility",
+              "is_correct": false
+            },
+            {
+              "text": "Administer an unprescribed herbal preparation",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Antepartum haemorrhage is an obstetric emergency requiring urgent assessment, referral, and appropriate stabilisation. Waiting, encouraging unnecessary exertion, or using unverified remedies can worsen maternal and fetal outcomes.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Postpartum Care and Family Planning",
+          "question_text": "A woman who delivered two weeks ago reports persistent sadness, loss of interest, and difficulty caring for herself and her infant. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Dismiss the symptoms as ordinary maternal tiredness",
+              "is_correct": false
+            },
+            {
+              "text": "Assess her mental health and safety, including thoughts of self-harm, and arrange appropriate support",
+              "is_correct": true
+            },
+            {
+              "text": "Advise her to stop breastfeeding immediately",
+              "is_correct": false
+            },
+            {
+              "text": "Tell her that mental health concerns should not be discussed during postnatal care",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Persistent depressive symptoms may indicate a postpartum mental health disorder and require assessment of severity, functioning, and immediate safety. Dismissing symptoms or avoiding mental health assessment may leave the mother and infant at risk.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Community-Based Maternal Surveillance",
+          "question_text": "A community midwife receives information that a woman who delivered at home died following severe bleeding. Which public health action is most appropriate?",
+          "choices": [
+            {
+              "text": "Ignore the report because the delivery did not occur in a facility",
+              "is_correct": false
+            },
+            {
+              "text": "Ensure the death is reported through the appropriate channels and support the maternal death review process",
+              "is_correct": true
+            },
+            {
+              "text": "Discuss the woman's identity publicly to discourage home delivery",
+              "is_correct": false
+            },
+            {
+              "text": "Alter the cause of death to avoid criticism of the community",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Maternal deaths require appropriate notification, documentation, and review to identify preventable factors and improve the health system. Ignoring the death, breaching confidentiality, or falsifying records undermines surveillance and accountability.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "CHPS and Referral Systems",
+          "question_text": "A pregnant adolescent at a CHPS compound reports that she has been denied antenatal care by relatives because of her age. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Provide respectful, confidential, age-appropriate care and facilitate access to antenatal services",
+              "is_correct": true
+            },
+            {
+              "text": "Refuse care until her relatives approve",
+              "is_correct": false
+            },
+            {
+              "text": "Refer her away without assessment because she is an adolescent",
+              "is_correct": false
+            },
+            {
+              "text": "Disclose her pregnancy to community members without consent",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Adolescents require respectful, non-discriminatory maternity care, with confidentiality and safeguarding handled according to applicable law and professional standards. Refusal of care and unnecessary disclosure can increase barriers and expose the young woman to harm.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Antenatal Education",
+          "question_text": "During a group antenatal session, a woman asks which symptoms should prompt immediate assessment during pregnancy. Which response is most appropriate?",
+          "choices": [
+            {
+              "text": "Severe headache, visual disturbance, vaginal bleeding, convulsions, or reduced fetal movement",
+              "is_correct": true
+            },
+            {
+              "text": "Mild hunger before meals and occasional fetal hiccups",
+              "is_correct": false
+            },
+            {
+              "text": "Normal breast enlargement and gradual abdominal growth",
+              "is_correct": false
+            },
+            {
+              "text": "Increased appetite and mild fatigue after activity",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Severe headache, visual disturbance, bleeding, convulsions, and reduced fetal movement are important danger signs requiring prompt assessment. Normal physiological changes and mild symptoms without warning features do not carry the same immediate concern.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Safe Motherhood and Skilled Birth Attendance",
+          "question_text": "A woman in labour at a peripheral health facility develops signs of obstructed labour, and the facility lacks the capacity for operative delivery. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Continue augmentation without reassessing the cause of obstruction",
+              "is_correct": false
+            },
+            {
+              "text": "Arrange urgent referral to a facility with comprehensive emergency obstetric care while providing appropriate stabilisation",
+              "is_correct": true
+            },
+            {
+              "text": "Encourage forceful pushing regardless of cervical dilatation",
+              "is_correct": false
+            },
+            {
+              "text": "Discharge the woman to deliver at home",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Suspected obstructed labour requires urgent assessment and referral to a facility capable of providing the necessary emergency obstetric intervention. Unsupervised augmentation, forceful pushing, and discharge may cause uterine rupture, fetal compromise, and maternal injury.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Postpartum Care and Family Planning",
+          "question_text": "A woman on the fifth postpartum day suddenly develops breathlessness, chest pain, and collapse. What should the community midwife do first?",
+          "choices": [
+            {
+              "text": "Arrange emergency medical response for suspected pulmonary embolism",
+              "is_correct": true
+            },
+            {
+              "text": "Recommend oral fluids and routine review the following week",
+              "is_correct": false
+            },
+            {
+              "text": "Encourage walking to relieve the chest pain",
+              "is_correct": false
+            },
+            {
+              "text": "Assume the symptoms are caused by normal postpartum fatigue",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Sudden breathlessness, chest pain, and collapse in the postpartum period may indicate pulmonary embolism, a life-threatening emergency. Routine review, oral fluids alone, and encouraging exertion would dangerously delay emergency care.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Health Promotion and Equity",
+          "question_text": "A district health team notices that maternal health education sessions are attended mainly by women from nearby communities, while remote communities have low participation. Which strategy is most appropriate?",
+          "choices": [
+            {
+              "text": "Concentrating all sessions at the district hospital",
+              "is_correct": false
+            },
+            {
+              "text": "Using community outreach, local engagement, and CHPS structures to improve access",
+              "is_correct": true
+            },
+            {
+              "text": "Stopping education sessions in communities with low attendance",
+              "is_correct": false
+            },
+            {
+              "text": "Restricting education to women who have already delivered in a facility",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Outreach and CHPS-based engagement can reduce geographical and access barriers and improve participation in maternal health education. Centralising services or excluding underserved communities increases inequity rather than addressing the reasons for low attendance.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Community-Based Maternal Surveillance",
+          "question_text": "A community midwife identifies several pregnant women who have missed scheduled antenatal appointments. What is the most appropriate first step in planning follow-up?",
+          "choices": [
+            {
+              "text": "Determine the reasons for missed visits and assess whether any woman has an urgent health concern",
+              "is_correct": true
+            },
+            {
+              "text": "Remove all the women from the antenatal register",
+              "is_correct": false
+            },
+            {
+              "text": "Assume that all the women have relocated",
+              "is_correct": false
+            },
+            {
+              "text": "Wait until the women independently return to the clinic",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Follow-up should establish why appointments were missed and identify women who may require urgent assessment or assistance accessing care. Removing records or making assumptions can result in missed opportunities for early intervention.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Maternal and Newborn Health Promotion",
+          "question_text": "A mother attending a postnatal clinic asks when complementary foods should generally be introduced to a healthy infant who is exclusively breastfed. What should the midwife explain?",
+          "choices": [
+            {
+              "text": "At two months",
+              "is_correct": false
+            },
+            {
+              "text": "At four months",
+              "is_correct": false
+            },
+            {
+              "text": "At six months, while breastfeeding continues",
+              "is_correct": true
+            },
+            {
+              "text": "At twelve months, with no other food before then",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Complementary feeding should generally begin at six months while breastfeeding continues, with age-appropriate, nutritionally adequate foods. Introducing foods too early may increase infection and feeding risks, while delaying beyond six months can compromise nutritional adequacy.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Safe Motherhood and Skilled Birth Attendance",
+          "question_text": "A pregnant woman with a known high-risk condition is booked at a CHPS compound but has no documented plan for emergency transport or referral. What should the midwife prioritise?",
+          "choices": [
+            {
+              "text": "Developing a birth preparedness and complication readiness plan with clear referral arrangements",
+              "is_correct": true
+            },
+            {
+              "text": "Assuming that the condition will resolve during labour",
+              "is_correct": false
+            },
+            {
+              "text": "Advising the woman to avoid discussing the condition with family members",
+              "is_correct": false
+            },
+            {
+              "text": "Waiting until an emergency develops before identifying a referral facility",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Birth preparedness and complication readiness include identifying a suitable delivery facility, transport, emergency contacts, and financial arrangements where relevant. Waiting for an emergency to develop can delay access to life-saving obstetric care.",
+          "difficulty": "ANALYSIS"
+        }
+      ]
+    },
+    {
+      "course_code": "RMS-322-M",
+      "course_title": "Relationship Marketing and Entrepreneurship",
+      "category": "ETHICS",
+      "semester": "S2",
+      "topics": [
+        "Ethical Marketing of Midwifery Services",
+        "Trust and Client Relationships",
+        "Community Engagement",
+        "Entrepreneurship and Service Planning",
+        "Confidentiality and Digital Communication",
+        "Quality Improvement and Client Feedback",
+        "Equity and Professional Accountability"
+      ],
+      "questions": [
+        {
+          "topic": "Ethical Marketing of Midwifery Services",
+          "question_text": "A midwife who owns a private maternity clinic wants to advertise her services on social media. Which statement is most ethically appropriate?",
+          "choices": [
+            {
+              "text": "Our clinic guarantees normal delivery for every pregnant woman",
+              "is_correct": false
+            },
+            {
+              "text": "Our maternity services include antenatal assessment, skilled birth care, and appropriate referral when complications arise",
+              "is_correct": true
+            },
+            {
+              "text": "Choose our clinic because complications never occur under our care",
+              "is_correct": false
+            },
+            {
+              "text": "Women who attend other clinics are more likely to experience poor outcomes",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Ethical marketing provides accurate information about available services without promising outcomes that cannot be guaranteed. Claims that complications never occur or that competitors cause poor outcomes are misleading and may undermine informed choice.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Trust and Client Relationships",
+          "question_text": "A pregnant woman tells a midwife that she is considering changing facilities because she feels her concerns are ignored. What should the midwife do first?",
+          "choices": [
+            {
+              "text": "Listen actively, acknowledge her concerns, and discuss how her care can be improved",
+              "is_correct": true
+            },
+            {
+              "text": "Tell her that she must remain with the facility",
+              "is_correct": false
+            },
+            {
+              "text": "Threaten to discontinue her antenatal services",
+              "is_correct": false
+            },
+            {
+              "text": "Ignore the complaint because she has already registered",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Active listening and respectful communication help identify service failures and rebuild trust in the client relationship. Coercion, threats, and ignoring complaints damage trust and violate respectful maternity care principles.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Confidentiality and Digital Communication",
+          "question_text": "A midwife wants to post a photograph of a newborn and the mother's delivery experience on the clinic's social media page. What must happen before publication?",
+          "choices": [
+            {
+              "text": "The midwife should publish the photograph because the delivery occurred at her clinic",
+              "is_correct": false
+            },
+            {
+              "text": "The mother and any other relevant rights-holder should provide valid informed consent, with privacy safeguards observed",
+              "is_correct": true
+            },
+            {
+              "text": "The photograph may be posted if the mother's face is partly covered",
+              "is_correct": false
+            },
+            {
+              "text": "The midwife should ask another staff member to publish it instead",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Identifiable patient images and personal health information require appropriate consent and confidentiality safeguards before publication. Clinic ownership of the service or partial concealment of a face does not automatically authorise disclosure.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Entrepreneurship and Service Planning",
+          "question_text": "A midwife plans to establish a private antenatal clinic in a district where several facilities already operate. What should she do before investing substantial funds?",
+          "choices": [
+            {
+              "text": "Conduct a market assessment to identify community needs, demand, competition, and required resources",
+              "is_correct": true
+            },
+            {
+              "text": "Rent the largest available building without assessing demand",
+              "is_correct": false
+            },
+            {
+              "text": "Set service fees without considering operating costs",
+              "is_correct": false
+            },
+            {
+              "text": "Assume that every pregnant woman in the district will attend the new clinic",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A market assessment helps determine whether the proposed service addresses a genuine need and can operate sustainably within the local healthcare environment. Investing without assessing demand, costs, and competition increases financial and operational risk.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Community Engagement",
+          "question_text": "A private maternity clinic has low antenatal attendance among women in nearby rural communities. Which strategy is most appropriate for improving community engagement?",
+          "choices": [
+            {
+              "text": "Working with community leaders and CHPS personnel to identify access barriers and provide appropriate health education",
+              "is_correct": true
+            },
+            {
+              "text": "Blaming rural women for failing to value maternal health",
+              "is_correct": false
+            },
+            {
+              "text": "Stopping services for women who live outside the town",
+              "is_correct": false
+            },
+            {
+              "text": "Using frightening messages to pressure women into registering",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Community engagement should identify local needs and barriers through collaboration with trusted community structures and health personnel. Blame, exclusion, and fear-based promotion undermine trust and may discourage timely maternity care.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Quality Improvement and Client Feedback",
+          "question_text": "A maternity clinic receives repeated complaints about long waiting times during antenatal visits. What should the manager do first?",
+          "choices": [
+            {
+              "text": "Collect and analyse waiting-time information to identify causes before selecting corrective measures",
+              "is_correct": true
+            },
+            {
+              "text": "Delete all complaints from the feedback register",
+              "is_correct": false
+            },
+            {
+              "text": "Increase consultation fees without reviewing the service process",
+              "is_correct": false
+            },
+            {
+              "text": "Blame clients for arriving at the facility",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Quality improvement begins with identifying and analysing the problem using reliable service information and client feedback. Deleting complaints, increasing fees without justification, or blaming clients does not address the underlying causes of delays.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Equity and Professional Accountability",
+          "question_text": "A private maternity clinic receives a pregnant woman who cannot immediately pay for an emergency assessment. What should the midwife prioritise?",
+          "choices": [
+            {
+              "text": "Refuse all assessment until payment is completed",
+              "is_correct": false
+            },
+            {
+              "text": "Assess and respond to the emergency according to professional standards, while addressing payment arrangements appropriately",
+              "is_correct": true
+            },
+            {
+              "text": "Send the woman home without assessing her condition",
+              "is_correct": false
+            },
+            {
+              "text": "Publicly disclose her financial situation to other clients",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Emergency clinical needs must be assessed and managed according to professional obligations and applicable policies, without allowing payment discussions to cause dangerous delays. Refusal of assessment and public disclosure of financial information compromise safety and dignity.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Ethical Marketing of Midwifery Services",
+          "question_text": "A clinic advertises a maternity package as including antenatal care, delivery services, and postnatal review. Which additional information best supports informed client choice?",
+          "choices": [
+            {
+              "text": "Clear information about included services, exclusions, fees, and referral arrangements",
+              "is_correct": true
+            },
+            {
+              "text": "A statement that the clinic's services are superior to every public hospital",
+              "is_correct": false
+            },
+            {
+              "text": "A promise that clients will never need referral to another facility",
+              "is_correct": false
+            },
+            {
+              "text": "An instruction that clients should not ask questions about costs",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Transparent information about services, costs, limitations, and referral arrangements enables clients to make informed decisions. Unsupported superiority claims, guarantees against referral, and concealment of costs are misleading and unethical.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Trust and Client Relationships",
+          "question_text": "A woman complains that a midwife discussed her HIV status within hearing of other clients. What should the facility manager do first?",
+          "choices": [
+            {
+              "text": "Dismiss the complaint because the information was shared by a healthcare worker",
+              "is_correct": false
+            },
+            {
+              "text": "Address the immediate confidentiality concern, listen to the woman, and initiate the appropriate reporting and review process",
+              "is_correct": true
+            },
+            {
+              "text": "Ask the woman to apologise to the midwife",
+              "is_correct": false
+            },
+            {
+              "text": "Discuss the woman's complaint during a public staff meeting using her full name",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Disclosure of HIV status without appropriate justification may constitute a serious confidentiality breach and requires a respectful response, protection of the woman's privacy, and appropriate review. Dismissing the complaint or repeating identifiable information compounds the breach.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Entrepreneurship and Service Planning",
+          "question_text": "A midwife plans to introduce an ultrasound service in her private maternity clinic. What should be considered before implementation?",
+          "choices": [
+            {
+              "text": "Staff competence, equipment quality, regulatory requirements, clinical governance, and referral arrangements",
+              "is_correct": true
+            },
+            {
+              "text": "The ability to advertise ultrasound as a replacement for all antenatal assessments",
+              "is_correct": false
+            },
+            {
+              "text": "The number of social media followers alone",
+              "is_correct": false
+            },
+            {
+              "text": "Whether the service can operate without trained personnel",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A new diagnostic service requires appropriate competence, equipment, governance, regulatory compliance, and pathways for clinical follow-up. Marketing reach alone does not establish safety or clinical quality, and ultrasound cannot replace comprehensive antenatal assessment.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Community Engagement",
+          "question_text": "A maternity clinic wants to increase attendance among pregnant adolescents who report fear of judgement by healthcare workers. Which intervention is most appropriate?",
+          "choices": [
+            {
+              "text": "Providing adolescent-responsive services with respectful communication and appropriate confidentiality",
+              "is_correct": true
+            },
+            {
+              "text": "Displaying posters that shame adolescents who become pregnant",
+              "is_correct": false
+            },
+            {
+              "text": "Requiring all adolescents to attend with a public community representative",
+              "is_correct": false
+            },
+            {
+              "text": "Refusing antenatal registration to unmarried adolescents",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Adolescent-responsive maternity services reduce stigma through respectful communication, privacy, and appropriate access to care. Shaming, unnecessary disclosure, and discrimination discourage attendance and may increase maternal and newborn risks.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Quality Improvement and Client Feedback",
+          "question_text": "A maternity clinic records an increase in clients returning for postnatal review after introducing appointment reminders. Which interpretation is most appropriate?",
+          "choices": [
+            {
+              "text": "The increase suggests the reminders may be improving follow-up, but further monitoring is needed",
+              "is_correct": true
+            },
+            {
+              "text": "The increase proves that maternal mortality has been eliminated",
+              "is_correct": false
+            },
+            {
+              "text": "The increase means the clinic no longer needs to assess postnatal clients",
+              "is_correct": false
+            },
+            {
+              "text": "The increase proves that every client prefers digital communication",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Improved attendance is a useful service indicator and may suggest that reminders are supporting continuity of care. It does not prove that mortality has been eliminated or that every client has the same communication preferences.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Ethical Marketing of Midwifery Services",
+          "question_text": "A clinic manager asks a midwife to exaggerate the risks of public hospital delivery so that more pregnant women will register at the private clinic. What should the midwife do?",
+          "choices": [
+            {
+              "text": "Comply because increasing clinic revenue is the main business objective",
+              "is_correct": false
+            },
+            {
+              "text": "Refuse misleading promotion and provide balanced, evidence-based information about available maternity services",
+              "is_correct": true
+            },
+            {
+              "text": "Publish anonymous negative stories about public hospitals",
+              "is_correct": false
+            },
+            {
+              "text": "Promise that private care eliminates all obstetric complications",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Ethical marketing requires truthful, balanced communication and respect for the public's ability to make informed healthcare choices. Exaggerating risks, spreading unverified claims, and guaranteeing outcomes are misleading and inconsistent with professional accountability.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Confidentiality and Digital Communication",
+          "question_text": "A clinic employee sends a photograph of a client's antenatal record to a personal WhatsApp group to ask for informal advice. What should the midwife in charge do first?",
+          "choices": [
+            {
+              "text": "Ignore the incident because the group contains healthcare workers",
+              "is_correct": false
+            },
+            {
+              "text": "Address the disclosure, protect the client's information, and follow the facility's confidentiality and incident-reporting procedures",
+              "is_correct": true
+            },
+            {
+              "text": "Forward the record to a larger group for additional opinions",
+              "is_correct": false
+            },
+            {
+              "text": "Delete the client's entire medical record",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Sharing identifiable clinical records through an unauthorised personal group may breach confidentiality and requires immediate attention, appropriate reporting, and protection of the client's information. Expanding the disclosure or deleting the official record would create further ethical and documentation problems.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Equity and Professional Accountability",
+          "question_text": "A clinic introduces a premium maternity package with additional amenities. A staff member begins giving clients in the premium package faster emergency assessment than clients using the standard package. What should the manager do?",
+          "choices": [
+            {
+              "text": "Maintain the arrangement because premium clients pay higher fees",
+              "is_correct": false
+            },
+            {
+              "text": "Ensure clinical urgency, not package type, determines assessment and treatment priority",
+              "is_correct": true
+            },
+            {
+              "text": "Restrict emergency care to clients with private insurance",
+              "is_correct": false
+            },
+            {
+              "text": "Allow staff to decide priority according to personal preference",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Clinical prioritisation must be based on urgency and patient safety rather than ability to pay or service package. Giving premium clients preferential emergency assessment can delay care for critically ill women and violates equitable professional practice.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Entrepreneurship and Service Planning",
+          "question_text": "A midwife operating a private clinic discovers that monthly expenses consistently exceed income. Which action should she take first?",
+          "choices": [
+            {
+              "text": "Review financial records, service utilisation, operating costs, and pricing before making changes",
+              "is_correct": true
+            },
+            {
+              "text": "Immediately stop providing essential emergency maternity care",
+              "is_correct": false
+            },
+            {
+              "text": "Increase all fees without assessing affordability or demand",
+              "is_correct": false
+            },
+            {
+              "text": "Destroy financial records to avoid identifying losses",
+              "is_correct": false
+            }
+          ],
+          "rationale": "A financial review identifies the sources of operating losses and supports evidence-based decisions about efficiency, service mix, and pricing. Arbitrary fee increases, stopping essential care, or destroying records undermine sustainability and accountability.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Trust and Client Relationships",
+          "question_text": "A woman experiences disrespectful treatment during labour at a private maternity clinic and submits a formal complaint. Which response best supports relationship management?",
+          "choices": [
+            {
+              "text": "Acknowledging the complaint, listening without retaliation, investigating appropriately, and communicating corrective action",
+              "is_correct": true
+            },
+            {
+              "text": "Threatening the woman with legal action for damaging the clinic's reputation",
+              "is_correct": false
+            },
+            {
+              "text": "Deleting the complaint and refusing further communication",
+              "is_correct": false
+            },
+            {
+              "text": "Publishing the woman's name and complaint on social media",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Effective relationship management requires respectful complaint handling, fair investigation, accountability, and appropriate communication about improvements. Retaliation, concealment, and public disclosure of the complainant's identity undermine trust and may breach confidentiality.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Ethical Marketing of Midwifery Services",
+          "question_text": "A private maternity clinic wants to advertise that it accepts clients registered under the NHIS and clients using the free maternal health care policy. What should the clinic do before publishing the advertisement?",
+          "choices": [
+            {
+              "text": "Verify the applicable provider arrangements, covered services, eligibility conditions, and any legitimate charges",
+              "is_correct": true
+            },
+            {
+              "text": "Advertise that every service is free regardless of eligibility or coverage",
+              "is_correct": false
+            },
+            {
+              "text": "Promise reimbursement for every expense without checking policy requirements",
+              "is_correct": false
+            },
+            {
+              "text": "Avoid explaining payment arrangements to clients",
+              "is_correct": false
+            }
+          ],
+          "rationale": "Accurate advertising requires the clinic to verify its participation arrangements and explain applicable coverage, eligibility, and charges transparently. Claiming that every service is free or guaranteeing reimbursement without verification may mislead clients and create financial disputes.",
+          "difficulty": "KNOWLEDGE"
+        }
+      ]
+    }
+  ]
+}
