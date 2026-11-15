@@ -128,7 +128,7 @@ export default function AmbassadorPage() {
     if (stats.referral_count >= 3) badge = { title: "Rising Star", color: "text-purple-700 bg-purple-50 border-purple-200" }
     if (stats.referral_count >= 10) badge = { title: "Campus Legend", color: "text-orange-700 bg-orange-50 border-orange-200" }
 
-    const shareMessage = `Hey! Are you writing NMC exams soon? 🩺\n\nUse my code *${stats.referral_code}* on NursifyGH to get 2,000+ NMC practice questions, 60-minute mock exams, and an AI clinical logbook.\n\nLet's pass together! 🚀\nhttps://nursifygh.com`
+    const shareMessage = `Hey! Are you writing NMC exams soon? 🩺\n\nUse my code *${stats.referral_code}* on NursifyGH to get 2,000+ NMC practice questions, 60-minute mock exams, and an AI clinical logbook.\n\nLet's pass together! 🚀\nhttps://nursifygh-frontend.vercel.app`
 
     return (
         <AppShell>

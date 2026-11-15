@@ -136,7 +136,7 @@ export default function QuizResultsPage() {
 
                 <button
                     onClick={() => {
-                        const text = `I just scored ${attempt.score_percentage}% on ${attempt.course_title || 'a quiz'} on NursifyGH! 📚 Try beating my score: https://nursifygh.com`
+                        const text = `I just scored ${attempt.score_percentage}% on ${attempt.course_title || 'a quiz'} on NursifyGH! 📚 Try beating my score: https://nursifygh-frontend.vercel.app`
                         window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank')
                     }}
                     className="mt-8 mb-4 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 font-bold text-white hover:bg-[#20bd5a] transition-colors"
