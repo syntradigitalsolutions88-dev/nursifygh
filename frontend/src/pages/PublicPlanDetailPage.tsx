@@ -4,7 +4,6 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 
 import api from "../api/client"
 import AppShell from "../components/shell/AppShell"
-import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 
 export default function PublicPlanDetailPage() {
@@ -268,8 +267,8 @@ export default function PublicPlanDetailPage() {
                                             type="button"
                                             onClick={() => setRatingScore(n)}
                                             className={`h-10 w-10 rounded-full border-2 transition-all text-lg ${n <= ratingScore
-                                                    ? "border-amber-400 bg-amber-400 text-white scale-105"
-                                                    : "border-border bg-white text-on-surface-muted hover:border-amber-300"
+                                                ? "border-amber-400 bg-amber-400 text-white scale-105"
+                                                : "border-border bg-white text-on-surface-muted hover:border-amber-300"
                                                 }`}
                                         >
                                             ★

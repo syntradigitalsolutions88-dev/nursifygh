@@ -235,10 +235,10 @@ function PlanRow({ plan }: { plan: any }) {
                 {/* Left: Icon + Title */}
                 <div className="flex items-start gap-4 flex-1 min-w-0">
                     <div className={`shrink-0 h-11 w-11 rounded-xl flex items-center justify-center transition-colors ${plan.is_submitted
-                            ? "bg-green-100 text-green-700"
-                            : plan.is_public
-                                ? "bg-blue-100 text-blue-700"
-                                : "bg-brand-100 text-brand-700"
+                        ? "bg-green-100 text-green-700"
+                        : plan.is_public
+                            ? "bg-blue-100 text-blue-700"
+                            : "bg-brand-100 text-brand-700"
                         }`}>
                         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -258,7 +258,7 @@ function PlanRow({ plan }: { plan: any }) {
                             ) : plan.is_public ? (
                                 <Badge variant="brand">🌍 Public</Badge>
                             ) : (
-                                <Badge variant="default">📝 Draft</Badge>
+                                <Badge variant="brand">📝 Draft</Badge>
                             )}
                             <span className="text-xs text-on-surface-muted">
                                 {plan.goal_count} goal{plan.goal_count === 1 ? "" : "s"} · {plan.intervention_count} intervention{plan.intervention_count === 1 ? "" : "s"}

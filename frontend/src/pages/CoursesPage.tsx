@@ -136,7 +136,7 @@ export default function CoursesPage() {
                         ) : (
                             <div className="grid gap-4 sm:grid-cols-2">
                                 {filteredActiveCourses.map((course) => (
-                                    <CourseCard key={course.id} course={course} isAdmin={user.is_superuser} />
+                                    <CourseCard key={course.id} course={course} isAdmin={(user as any).is_superuser} />
                                 ))}
                             </div>
                         )}
@@ -196,8 +196,8 @@ function SemesterTabs({ groups, activeSemester, onSelect }: {
 function CourseCard({ course, isAdmin }: { course: Course, isAdmin?: boolean }) {
     const hasContent = course.question_count > 0
     const className = `group block rounded-xl border p-5 transition-all ${hasContent
-            ? "border-border bg-white hover:border-brand-400 hover:shadow-md cursor-pointer"
-            : "border-dashed border-border bg-surface-subtle/50 cursor-default"
+        ? "border-border bg-white hover:border-brand-400 hover:shadow-md cursor-pointer"
+        : "border-dashed border-border bg-surface-subtle/50 cursor-default"
         }`
 
     const inner = (

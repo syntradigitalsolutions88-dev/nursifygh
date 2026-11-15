@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 
 import AppShell from "../components/shell/AppShell"
@@ -14,7 +14,6 @@ import {
 
 export default function SubscribePage() {
     const { user } = useAuth()
-    const navigate = useNavigate()
     const queryClient = useQueryClient()
 
     // Fetch payment info even if user is on trial (has_active_subscription = true),

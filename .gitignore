@@ -46,3 +46,5 @@ question_imports/*.BACKUP.json
 backend/question_imports/*.BACKUP.json
 /frontend/.env
 /frontend/.env.*
+
+.vercel
