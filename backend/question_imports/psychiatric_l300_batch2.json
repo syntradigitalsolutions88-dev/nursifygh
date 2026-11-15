@@ -1,0 +1,1128 @@
+{
+"courses": [
+{
+"course_code": "CBR-322-P",
+"course_title": "Community-Based Rehabilitation",
+"category": "COMMUNITY",
+"semester": "S2",
+"topics": [
+"Psychiatric Rehabilitation",
+"Community Reintegration",
+"Stigma Reduction",
+"Family Psychoeducation",
+"Recovery-Oriented Mental Healthcare",
+"Community-Based Mental Health Services"
+],
+"questions": [
+{
+"topic": "Psychiatric Rehabilitation",
+"question_text": "A client with schizophrenia has completed treatment at Pantang Hospital and is preparing to return to his community. Which intervention best demonstrates psychiatric rehabilitation?",
+"choices": [
+{"text": "Keeping the client permanently in an institutional psychiatric facility", "is_correct": false},
+{"text": "Supporting the client to develop daily living skills, obtain employment and participate in community activities", "is_correct": true},
+{"text": "Restricting the client's contact with community members", "is_correct": false},
+{"text": "Concentrating exclusively on the administration of antipsychotic medication", "is_correct": false}
+],
+"rationale": "Psychiatric rehabilitation aims to improve functioning, independence, social participation and quality of life through recovery-oriented interventions. Permanent institutionalisation, social restriction and medication-only management fail to address the client's broader rehabilitation needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A man recovering from a severe depressive episode wishes to return to his previous occupation but fears discrimination from colleagues. What should the community mental health nurse prioritise?",
+"choices": [
+{"text": "Advise him to abandon his employment plans", "is_correct": false},
+{"text": "Arrange supported employment and engage relevant stakeholders in reducing workplace stigma with the client's consent", "is_correct": true},
+{"text": "Recommend permanent withdrawal from social activities", "is_correct": false},
+{"text": "Advise him to conceal all his difficulties and avoid follow-up care", "is_correct": false}
+],
+"rationale": "Supported employment promotes independence, recovery and social inclusion while addressing discrimination through appropriate advocacy. Abandoning employment, social withdrawal and avoiding follow-up reinforce exclusion and undermine recovery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction",
+"question_text": "Which statement accurately describes public stigma associated with mental illness?",
+"choices": [
+{"text": "The internalisation of negative beliefs about oneself because of mental illness", "is_correct": false},
+{"text": "Negative stereotypes, prejudice and discriminatory behaviour directed towards people with mental disorders", "is_correct": true},
+{"text": "The acceptance of individuals with psychiatric conditions into society", "is_correct": false},
+{"text": "The development of coping skills by psychiatric clients", "is_correct": false}
+],
+"rationale": "Public stigma occurs when members of society hold negative stereotypes, develop prejudicial attitudes and discriminate against people with mental disorders. Internalised stigma refers to the person's adoption of negative societal beliefs, while the other options describe acceptance and recovery-related processes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "The family of a client with schizophrenia believes that the illness results entirely from witchcraft and refuses to support prescribed treatment. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Criticise the family's cultural beliefs and terminate the discussion", "is_correct": false},
+{"text": "Provide culturally sensitive psychoeducation about schizophrenia, treatment adherence and relapse prevention", "is_correct": true},
+{"text": "Encourage the family to discontinue psychiatric treatment", "is_correct": false},
+{"text": "Exclude the family from all rehabilitation activities", "is_correct": false}
+],
+"rationale": "Family psychoeducation improves understanding of mental illness, treatment adherence, early recognition of relapse and supportive caregiving. Criticism, withdrawal of treatment and unnecessary family exclusion can increase stigma and weaken the client's support system.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Recovery-Oriented Mental Healthcare",
+"question_text": "Which principle is central to recovery-oriented psychiatric rehabilitation?",
+"choices": [
+{"text": "The complete elimination of every psychiatric symptom before community participation", "is_correct": false},
+{"text": "The individual's involvement in directing personal recovery goals and decisions", "is_correct": true},
+{"text": "The permanent transfer of decision-making authority to healthcare professionals", "is_correct": false},
+{"text": "The restriction of clients to hospital-based activities", "is_correct": false}
+],
+"rationale": "Recovery-oriented care recognises the client's autonomy, strengths, preferences and ability to pursue meaningful life goals even when some symptoms persist. The other options promote dependency, unnecessary institutionalisation and unrealistic expectations of complete symptom elimination.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community-Based Mental Health Services",
+"question_text": "A community mental health nurse visits a client with bipolar disorder who has stopped attending follow-up appointments and discontinued prescribed medication. What should the nurse do first?",
+"choices": [
+{"text": "Discharge the client from community mental health services", "is_correct": false},
+{"text": "Assess the client's current mental state, medication-related concerns, safety and barriers to follow-up", "is_correct": true},
+{"text": "Immediately report the client to the police", "is_correct": false},
+{"text": "Assume that the client no longer requires psychiatric care", "is_correct": false}
+],
+"rationale": "A comprehensive assessment identifies possible relapse, adverse effects, treatment concerns and barriers to accessing care. Discharge, unnecessary police involvement and assumptions about recovery may expose the client to preventable deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A client recovering from schizophrenia is unable to prepare meals, manage personal hygiene or organise daily activities independently. Which rehabilitation intervention is most appropriate?",
+"choices": [
+{"text": "Structured activities of daily living training", "is_correct": true},
+{"text": "Permanent restriction of independent activities", "is_correct": false},
+{"text": "Exclusive use of pharmacological treatment", "is_correct": false},
+{"text": "Complete withdrawal of family involvement", "is_correct": false}
+],
+"rationale": "Activities of daily living training develops practical skills required for independent living and community functioning. Permanent restrictions, medication-only care and withdrawal of appropriate family support do not adequately address functional limitations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Rehabilitation",
+"question_text": "Which organisation is primarily responsible for providing the national framework for mental health governance and protecting the rights of persons with mental disorders under Ghana's Mental Health Act, 2012 (Act 846)?",
+"choices": [
+{"text": "Mental Health Authority", "is_correct": true},
+{"text": "Ghana Education Service", "is_correct": false},
+{"text": "National Road Safety Authority", "is_correct": false},
+{"text": "Ghana Tourism Authority", "is_correct": false}
+],
+"rationale": "The Mental Health Authority is established under Act 846 to oversee and coordinate mental health services and promote the rights of persons with mental disorders. The other institutions have mandates unrelated to national mental healthcare governance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community-Based Mental Health Services",
+"question_text": "A community mental health nurse identifies a client with schizophrenia who is becoming increasingly withdrawn, sleeping poorly and expressing suspicious beliefs about neighbours. What is the most appropriate priority intervention?",
+"choices": [
+{"text": "Wait until the client develops severe psychotic symptoms before intervening", "is_correct": false},
+{"text": "Conduct an urgent mental state and risk assessment and arrange appropriate clinical review", "is_correct": true},
+{"text": "Encourage the client to stop all prescribed medication", "is_correct": false},
+{"text": "Recommend that the family conceal the behavioural changes", "is_correct": false}
+],
+"rationale": "Increasing withdrawal, sleep disturbance and suspiciousness may indicate an emerging psychiatric relapse requiring prompt assessment and clinical review. Delaying intervention, discontinuing medication and concealing symptoms may increase the risk of deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction",
+"question_text": "A community leader publicly describes people discharged from Accra Psychiatric Hospital as dangerous and unsuitable for employment. Which community intervention would most effectively address this attitude?",
+"choices": [
+{"text": "Exclude people with mental disorders from community gatherings", "is_correct": false},
+{"text": "Organise evidence-based mental health education and recovery-focused contact involving people with lived experience", "is_correct": true},
+{"text": "Encourage community members to avoid discharged psychiatric clients", "is_correct": false},
+{"text": "Restrict mental health information to healthcare professionals", "is_correct": false}
+],
+"rationale": "Evidence-based education and meaningful contact with people who have lived experience can challenge stereotypes and reduce discriminatory attitudes. Exclusion, avoidance and restricted access to information reinforce stigma rather than promote inclusion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A caregiver reports that a relative with schizophrenia becomes increasingly sleepless, suspicious and socially withdrawn before previous relapses. What should the nurse teach the caregiver to do?",
+"choices": [
+{"text": "Wait until the client becomes aggressive before seeking assistance", "is_correct": false},
+{"text": "Recognise these changes as possible early warning signs and promptly contact the mental health team", "is_correct": true},
+{"text": "Double the client's antipsychotic dose without consultation", "is_correct": false},
+{"text": "Prevent the client from participating in all household activities", "is_correct": false}
+],
+"rationale": "Recognising individual early warning signs enables timely assessment and intervention, potentially preventing severe relapse. Waiting for aggression, independently changing medication doses and imposing unnecessary restrictions are unsafe responses.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A client with a history of bipolar disorder has been discharged into a rural Ghanaian community. The family reports that the client has stopped sleeping, is spending excessively and is speaking continuously. Which action should receive the highest priority?",
+"choices": [
+{"text": "Arrange an urgent psychiatric assessment because the findings suggest an emerging manic relapse", "is_correct": true},
+{"text": "Encourage the client to undertake additional business activities", "is_correct": false},
+{"text": "Advise the family to ignore the behavioural changes", "is_correct": false},
+{"text": "Postpone clinical review until the next routine appointment", "is_correct": false}
+],
+"rationale": "Reduced need for sleep, excessive spending and pressured speech are characteristic warning signs of mania and require urgent psychiatric assessment. Additional stimulating activities, ignoring symptoms and delaying review may increase the risk of financial harm and clinical deterioration.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychiatric Rehabilitation",
+"question_text": "Which intervention best illustrates the role of a community-based rehabilitation team in supporting a person with a long-term psychiatric disability?",
+"choices": [
+{"text": "Providing medication without assessing social functioning", "is_correct": false},
+{"text": "Coordinating healthcare, vocational training, family support and community participation", "is_correct": true},
+{"text": "Maintaining the individual in residential isolation", "is_correct": false},
+{"text": "Restricting rehabilitation to occasional hospital visits", "is_correct": false}
+],
+"rationale": "Community-based rehabilitation uses coordinated, multisectoral interventions to address health, education, livelihood, social participation and empowerment. Medication-only care, isolation and hospital-centred services do not adequately support comprehensive community rehabilitation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community-Based Mental Health Services",
+"question_text": "A community health officer at a CHPS compound identifies an adult with persistent low mood, loss of interest and hopelessness. The individual also reports thoughts of suicide. What should the officer do first?",
+"choices": [
+{"text": "Arrange a routine health education session for the following month", "is_correct": false},
+{"text": "Assess immediate suicide risk, establish safety and arrange urgent referral to an appropriate mental health service", "is_correct": true},
+{"text": "Advise the individual to remain at home without follow-up", "is_correct": false},
+{"text": "Recommend traditional treatment as the only intervention", "is_correct": false}
+],
+"rationale": "Suicidal thoughts require immediate assessment of intent, plan, means and protective factors, followed by appropriate safety measures and urgent clinical referral. Routine education, unmonitored home care and exclusive traditional treatment do not adequately address potential suicide risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Recovery-Oriented Mental Healthcare",
+"question_text": "A client with schizophrenia states that although occasional auditory hallucinations remain, he wishes to resume education and develop friendships. Which response best reflects recovery-oriented nursing?",
+"choices": [
+{"text": "Inform him that education is impossible until all hallucinations disappear", "is_correct": false},
+{"text": "Collaboratively develop achievable educational and social participation goals while maintaining appropriate clinical care", "is_correct": true},
+{"text": "Advise him to avoid relationships because of his diagnosis", "is_correct": false},
+{"text": "Replace his personal goals with goals selected exclusively by the nurse", "is_correct": false}
+],
+"rationale": "Recovery-oriented care supports meaningful personal goals, autonomy and social participation while addressing ongoing symptoms through appropriate treatment. Requiring complete symptom elimination, discouraging relationships and disregarding client preferences undermine recovery principles.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A client with severe depression is discharged from Ankaful Psychiatric Hospital. During the first community visit, the nurse discovers that the client has access to pesticides, has written a suicide note and is refusing to discuss safety. What is the priority action?",
+"choices": [
+{"text": "Leave the client with relatives and arrange a review in one month", "is_correct": false},
+{"text": "Initiate emergency suicide risk management, ensure continuous appropriate supervision and arrange urgent psychiatric intervention", "is_correct": true},
+{"text": "Encourage the client to attend a community recreational activity", "is_correct": false},
+{"text": "Concentrate on vocational rehabilitation before addressing suicide risk", "is_correct": false}
+],
+"rationale": "Access to a potentially lethal substance and a suicide note indicate an acute, high-risk situation requiring immediate safety intervention and emergency psychiatric assessment. Routine follow-up and rehabilitation activities cannot take precedence over preventing imminent self-harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "Which outcome provides the strongest evidence that family psychoeducation has been effective for a household caring for a person with schizophrenia?",
+"choices": [
+{"text": "Family members prevent the client from making personal decisions", "is_correct": false},
+{"text": "Family members recognise relapse indicators, support treatment adherence and communicate without hostility", "is_correct": true},
+{"text": "Family members permanently withdraw from the client's care", "is_correct": false},
+{"text": "Family members conceal the psychiatric diagnosis from all healthcare professionals", "is_correct": false}
+],
+"rationale": "Effective family psychoeducation improves illness understanding, relapse recognition, treatment support and constructive communication. Excessive control, abandonment and concealment of clinically relevant information undermine collaborative psychiatric care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Stigma Reduction",
+"question_text": "A person with a psychiatric history is denied participation in a community development committee solely because of a previous hospital admission. Which concept best describes this action?",
+"choices": [
+{"text": "Social inclusion", "is_correct": false},
+{"text": "Discrimination", "is_correct": true},
+{"text": "Psychiatric rehabilitation", "is_correct": false},
+{"text": "Family psychoeducation", "is_correct": false}
+],
+"rationale": "Discrimination occurs when an individual experiences unfair treatment or exclusion because of a characteristic such as a mental health history. Social inclusion and rehabilitation promote participation, while psychoeducation concerns improving understanding of mental illness.",
+"difficulty": "KNOWLEDGE"
+}
+]
+},
+{
+"course_code": "CTM-322-P",
+"course_title": "Complementary and Traditional Medicine",
+"category": "COMMUNITY",
+"semester": "S2",
+"topics": [
+"Traditional Healing Practices and Mental Illness in Ghana",
+"Prayer Camps and Mental Healthcare",
+"Herbal Medicine and Psychotropic Drug Interactions",
+"Culturally Sensitive Psychiatric Nursing",
+"Patient Rights and Mental Health Legislation",
+"Evidence-Based Complementary Mental Health Interventions"
+],
+"questions": [
+{
+"topic": "Traditional Healing Practices and Mental Illness in Ghana",
+"question_text": "A client with schizophrenia informs a psychiatric nurse that he visits a traditional healer because his family believes his hallucinations have a spiritual origin. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Dismiss the client's cultural beliefs as irrational", "is_correct": false},
+{"text": "Explore the client's beliefs respectfully while explaining the importance of evidence-based psychiatric treatment", "is_correct": true},
+{"text": "Advise the client to discontinue prescribed antipsychotics", "is_correct": false},
+{"text": "Prohibit all discussions about traditional healing", "is_correct": false}
+],
+"rationale": "Culturally sensitive nursing recognises the influence of spiritual beliefs while promoting safe, evidence-based treatment and therapeutic collaboration. Dismissal, discontinuation of medication and refusal to discuss cultural practices can damage trust and increase treatment disengagement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Prayer Camps and Mental Healthcare",
+"question_text": "A psychiatric nurse visiting a prayer camp in Ghana discovers that a person with severe psychosis is chained to a tree and denied adequate food and water. What should be the nurse's immediate priority?",
+"choices": [
+{"text": "Accept the practice because it is culturally established", "is_correct": false},
+{"text": "Assess the person's immediate medical and psychiatric condition, address life-threatening needs and activate appropriate safeguarding and referral procedures", "is_correct": true},
+{"text": "Recommend longer periods of confinement", "is_correct": false},
+{"text": "Leave without documenting the findings", "is_correct": false}
+],
+"rationale": "Chaining, dehydration and food deprivation expose the individual to serious physical and psychological harm and require immediate safeguarding, clinical assessment and appropriate referral. Cultural acceptance does not justify abuse or neglect, and continued confinement may worsen the person's condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine and Psychotropic Drug Interactions",
+"question_text": "Which statement best describes a potential risk of combining herbal preparations with prescribed psychotropic medications?",
+"choices": [
+{"text": "Herbal preparations always improve the effectiveness of psychotropic medication", "is_correct": false},
+{"text": "Herbal constituents may alter drug metabolism, increase adverse effects or reduce therapeutic drug concentrations", "is_correct": true},
+{"text": "Herbal medicines cannot affect the central nervous system", "is_correct": false},
+{"text": "Combining herbal and psychiatric medications eliminates medication toxicity", "is_correct": false}
+],
+"rationale": "Herbal products may alter drug-metabolising enzymes and transporters or produce additive pharmacological effects, potentially causing toxicity or treatment failure. Their natural origin does not guarantee safety, and they do not automatically improve psychotropic treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Culturally Sensitive Psychiatric Nursing",
+"question_text": "A client with depression explains that she believes her illness is connected to ancestral displeasure. Which response demonstrates cultural competence?",
+"choices": [
+{"text": "Your beliefs are wrong because depression has no cultural interpretation.", "is_correct": false},
+{"text": "Can you explain what this belief means to you and how it influences your decisions about treatment?", "is_correct": true},
+{"text": "You should abandon your beliefs before receiving psychiatric care.", "is_correct": false},
+{"text": "Your family should decide your treatment without consulting you.", "is_correct": false}
+],
+"rationale": "Exploring the client's explanatory model helps the nurse understand cultural influences on illness perception and treatment decisions without reinforcing harmful beliefs. Dismissal, coercive cultural rejection and unnecessary removal of autonomy undermine culturally competent care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Mental Health Legislation",
+"question_text": "Which Ghanaian legislation provides legal protections concerning the treatment, dignity and rights of persons with mental disorders?",
+"choices": [
+{"text": "Mental Health Act, 2012 (Act 846)", "is_correct": true},
+{"text": "Road Traffic Act, 2004 (Act 683)", "is_correct": false},
+{"text": "Companies Act, 2019 (Act 992)", "is_correct": false},
+{"text": "Education Act, 2008 (Act 778)", "is_correct": false}
+],
+"rationale": "The Mental Health Act, 2012 (Act 846) provides the legal framework for mental healthcare and protection of the rights of persons with mental disorders in Ghana. The other legislation addresses road traffic, company regulation and education rather than mental health governance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Prayer Camps and Mental Healthcare",
+"question_text": "A client with schizophrenia is brought from a prayer camp to a psychiatric facility with severe dehydration, multiple pressure injuries and persistent hallucinations. Which nursing intervention takes priority?",
+"choices": [
+{"text": "Begin spiritual counselling before assessing the physical condition", "is_correct": false},
+{"text": "Assess and stabilise the client's physical condition, address dehydration and pressure injuries, and arrange psychiatric evaluation", "is_correct": true},
+{"text": "Return the client immediately to the prayer camp", "is_correct": false},
+{"text": "Restrict fluids because the client has hallucinations", "is_correct": false}
+],
+"rationale": "Severe dehydration and pressure injuries require immediate physical assessment and treatment alongside psychiatric evaluation. Delaying medical treatment for spiritual counselling or returning the client to an unsafe environment may worsen preventable complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Healing Practices and Mental Illness in Ghana",
+"question_text": "A psychiatric nurse is discussing traditional healing with a family whose relative has depression. Which approach best supports collaborative mental healthcare?",
+"choices": [
+{"text": "Encourage the family to replace prescribed antidepressants with unverified herbal mixtures", "is_correct": false},
+{"text": "Discuss the family's treatment preferences, assess possible risks and encourage coordinated care that does not delay necessary psychiatric treatment", "is_correct": true},
+{"text": "Refuse to involve the family in treatment discussions", "is_correct": false},
+{"text": "Assume all traditional healing practices are harmless", "is_correct": false}
+],
+"rationale": "Collaborative care respects cultural preferences while evaluating safety, potential interactions and the need for evidence-based treatment. Replacing prescribed medication, excluding supportive relatives and assuming that every traditional preparation is harmless may expose the client to avoidable risks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine and Psychotropic Drug Interactions",
+"question_text": "A client taking an antidepressant reports starting St John's wort without informing the psychiatric team. What is the most important concern?",
+"choices": [
+{"text": "The herbal preparation may interact with the antidepressant and increase the risk of serotonin toxicity or altered drug effectiveness", "is_correct": true},
+{"text": "St John's wort always prevents antidepressant adverse effects", "is_correct": false},
+{"text": "The herbal preparation has no pharmacological activity", "is_correct": false},
+{"text": "The combination guarantees complete recovery from depression", "is_correct": false}
+],
+"rationale": "St John's wort has serotonergic activity and can interact with antidepressants, potentially causing serotonin toxicity; it also induces drug-metabolising enzymes that may reduce the effectiveness of other medicines. It should not be assumed to be harmless or universally beneficial.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Culturally Sensitive Psychiatric Nursing",
+"question_text": "A client admitted with a psychotic disorder states that evil spirits are speaking to him and instructing him to harm his brother. What should the psychiatric nurse assess first?",
+"choices": [
+{"text": "Whether the client has attended a religious service recently", "is_correct": false},
+{"text": "The content of the voices, the client's intention to obey, access to weapons and immediate risk to others", "is_correct": true},
+{"text": "Whether the client's relatives support traditional healing", "is_correct": false},
+{"text": "The client's preferred type of religious music", "is_correct": false}
+],
+"rationale": "Command hallucinations involving harm to another person require immediate assessment of intent, capability, means and risk, followed by appropriate safety measures. Religious attendance, family preferences and music preferences may be explored later but do not establish the immediate level of danger.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evidence-Based Complementary Mental Health Interventions",
+"question_text": "Which complementary intervention has evidence supporting its use as an adjunct to standard treatment for selected clients experiencing anxiety?",
+"choices": [
+{"text": "Structured mindfulness-based relaxation exercises", "is_correct": true},
+{"text": "Replacing prescribed medication with unregulated herbal mixtures", "is_correct": false},
+{"text": "Prolonged social isolation", "is_correct": false},
+{"text": "Sleep deprivation as a treatment for anxiety", "is_correct": false}
+],
+"rationale": "Structured mindfulness and relaxation interventions may reduce anxiety symptoms when used alongside appropriate clinical treatment. Unregulated medication substitution, isolation and sleep deprivation are not evidence-based anxiety treatments and may worsen mental health.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Prayer Camps and Mental Healthcare",
+"question_text": "A nurse receives a report that a prayer camp is withholding prescribed antipsychotic medication from residents and administering unidentified herbal mixtures. What is the most appropriate action?",
+"choices": [
+{"text": "Ignore the report because the camp is privately managed", "is_correct": false},
+{"text": "Arrange appropriate assessment of affected residents, investigate medication-related risks through authorised channels and facilitate safe psychiatric care", "is_correct": true},
+{"text": "Encourage residents to consume larger quantities of the herbal preparations", "is_correct": false},
+{"text": "Recommend that residents conceal their symptoms from healthcare workers", "is_correct": false}
+],
+"rationale": "Withholding prescribed medication and administering unidentified substances may result in relapse, toxicity and other serious complications, requiring clinical assessment and appropriate regulatory or safeguarding action. Private ownership does not remove responsibilities concerning patient safety and rights.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine and Psychotropic Drug Interactions",
+"question_text": "A client taking clozapine begins using an unidentified herbal preparation and subsequently develops marked sedation, dizziness and confusion. What should the nurse do first?",
+"choices": [
+{"text": "Reassure the client that herbal products cannot cause adverse reactions", "is_correct": false},
+{"text": "Arrange urgent clinical assessment, review all substances taken and assess for clozapine toxicity", "is_correct": true},
+{"text": "Recommend doubling the clozapine dose", "is_correct": false},
+{"text": "Advise the client to stop attending psychiatric appointments", "is_correct": false}
+],
+"rationale": "New confusion and marked sedation in a client taking clozapine may indicate a serious adverse reaction or interaction and require urgent assessment. Unidentified herbal products can alter drug effects, making reassurance, dose escalation and discontinuation of follow-up unsafe.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Traditional Healing Practices and Mental Illness in Ghana",
+"question_text": "A family takes a relative experiencing severe mania to a traditional healer before seeking hospital treatment. The client has not slept for four nights, is severely agitated and has become physically aggressive. What should the nurse recommend?",
+"choices": [
+{"text": "Continue traditional treatment until the client becomes exhausted", "is_correct": false},
+{"text": "Arrange urgent psychiatric assessment and emergency management because the presentation indicates severe mania with immediate safety concerns", "is_correct": true},
+{"text": "Allow the client to remain unsupervised until the symptoms disappear", "is_correct": false},
+{"text": "Discontinue all medical assessments because the family has selected traditional care", "is_correct": false}
+],
+"rationale": "Severe sleep deprivation, escalating agitation and physical aggression indicate a potentially dangerous manic episode requiring urgent psychiatric intervention and safety management. Delaying assessment or leaving the client unsupervised increases the risk of harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Mental Health Legislation",
+"question_text": "A person with a mental disorder is brought to a psychiatric facility after being physically restrained at a prayer camp. Which principle should guide the nurse's response under Ghana's mental health rights framework?",
+"choices": [
+{"text": "The person's rights may be ignored because of the psychiatric diagnosis", "is_correct": false},
+{"text": "The person retains dignity and legal rights and must receive care consistent with applicable safeguards and lawful procedures", "is_correct": true},
+{"text": "Religious authorities automatically have unlimited authority over psychiatric treatment", "is_correct": false},
+{"text": "Physical restraint should be used routinely whenever a client disagrees with treatment", "is_correct": false}
+],
+"rationale": "Act 846 provides a framework for protecting the dignity and rights of persons with mental disorders, including safeguards relating to treatment and care. Psychiatric diagnosis does not remove fundamental rights, and religious authority or disagreement with treatment does not justify unrestricted restraint.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Culturally Sensitive Psychiatric Nursing",
+"question_text": "During an assessment, a client states that prayer provides emotional comfort while attending psychiatric treatment. What should the nurse's response be?",
+"choices": [
+{"text": "Discourage prayer because it cannot contribute to emotional well-being", "is_correct": false},
+{"text": "Respect the client's spiritual preference while ensuring that prayer complements rather than replaces necessary clinical treatment", "is_correct": true},
+{"text": "Require the client to abandon all religious practices", "is_correct": false},
+{"text": "Replace prescribed medication with religious activities", "is_correct": false}
+],
+"rationale": "Respecting a client's spiritual preferences supports holistic and culturally sensitive care when these practices do not compromise safety or evidence-based treatment. Rejecting religion or replacing necessary psychiatric interventions with prayer alone is inappropriate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Herbal Medicine and Psychotropic Drug Interactions",
+"question_text": "A client taking an antipsychotic reports using a traditional herbal mixture that causes additional drowsiness. Which pharmacological effect should the nurse consider?",
+"choices": [
+{"text": "Possible additive central nervous system depressant effects", "is_correct": true},
+{"text": "Guaranteed elimination of antipsychotic side effects", "is_correct": false},
+{"text": "Complete prevention of drug absorption", "is_correct": false},
+{"text": "Automatic development of antidepressant resistance", "is_correct": false}
+],
+"rationale": "Certain herbal substances may produce additive sedative effects when combined with antipsychotic medications, increasing the risk of excessive sedation and impaired functioning. The other options describe effects that cannot be assumed from the reported combination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Prayer Camps and Mental Healthcare",
+"question_text": "A psychiatric nurse assesses four individuals attending a traditional healing centre. Which individual requires the most urgent intervention?",
+"choices": [
+{"text": "A person with mild anxiety who reports feeling spiritually unsettled", "is_correct": false},
+{"text": "A person with depression who requests information about counselling", "is_correct": false},
+{"text": "A person with schizophrenia who is chained, severely dehydrated and intermittently unconscious", "is_correct": true},
+{"text": "A person recovering from depression who wishes to attend religious services", "is_correct": false}
+],
+"rationale": "Chaining, severe dehydration and intermittent unconsciousness indicate immediate threats to life and require emergency medical stabilisation and safeguarding. The other individuals require appropriate mental health support but do not demonstrate the same immediate medical emergency.",
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PAD-322-P",
+"course_title": "Paediatric Nursing II",
+"category": "MATERNAL",
+"semester": "S2",
+"topics": [
+"Child and Adolescent Mental Health",
+"Autism Spectrum Disorder",
+"Attention-Deficit/Hyperactivity Disorder",
+"Child Psychiatric Assessment",
+"Developmental Delays and Intellectual Disability",
+"Child Protection and Psychiatric Nursing"
+],
+"questions": [
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "Which characteristic is a core diagnostic feature of autism spectrum disorder?",
+"choices": [
+{"text": "Persistent deficits in social communication and social interaction, together with restricted or repetitive patterns of behaviour", "is_correct": true},
+{"text": "Episodes of elevated mood occurring only during adolescence", "is_correct": false},
+{"text": "Sudden loss of consciousness during stressful situations", "is_correct": false},
+{"text": "Persistent hallucinations and persecutory delusions", "is_correct": false}
+],
+"rationale": "Autism spectrum disorder is characterised by persistent differences or deficits in social communication and interaction alongside restricted or repetitive behaviours, interests or activities. Mania, episodes of unconsciousness and psychotic symptoms are not defining diagnostic criteria for autism.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "A seven-year-old pupil in a Ghanaian primary school frequently leaves his seat, interrupts classmates, loses learning materials and struggles to complete classroom tasks. The behaviour has persisted for several months and occurs at home as well. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Autism spectrum disorder", "is_correct": false},
+{"text": "Attention-deficit/hyperactivity disorder", "is_correct": true},
+{"text": "Conduct disorder", "is_correct": false},
+{"text": "Specific learning disorder", "is_correct": false}
+],
+"rationale": "Persistent inattention and hyperactive-impulsive behaviours occurring across multiple settings and impairing functioning suggest ADHD. Autism primarily involves social communication differences and restricted behaviours, while conduct disorder involves persistent violation of others' rights or social rules.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Psychiatric Assessment",
+"question_text": "Which approach is most appropriate when assessing the mental health of a six-year-old child?",
+"choices": [
+{"text": "Interview the child without considering developmental level or family information", "is_correct": false},
+{"text": "Use age-appropriate communication, observe behaviour and obtain relevant information from caregivers and other sources", "is_correct": true},
+{"text": "Assume that all behavioural difficulties indicate a psychiatric disorder", "is_correct": false},
+{"text": "Base the assessment exclusively on the child's academic performance", "is_correct": false}
+],
+"rationale": "Child psychiatric assessment requires developmentally appropriate communication, behavioural observation and information from caregivers and relevant settings. Ignoring developmental level, automatically diagnosing behavioural problems or relying solely on academic performance produces incomplete assessments.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Delays and Intellectual Disability",
+"question_text": "A child aged four years has significant limitations in intellectual functioning and difficulty acquiring age-appropriate adaptive skills such as communication, self-care and social participation. Which condition should be investigated?",
+"choices": [
+{"text": "Intellectual disability", "is_correct": true},
+{"text": "Specific phobia", "is_correct": false},
+{"text": "Bipolar disorder", "is_correct": false},
+{"text": "Obsessive-compulsive disorder", "is_correct": false}
+],
+"rationale": "Intellectual disability involves significant limitations in intellectual functioning and adaptive behaviour with onset during the developmental period. Anxiety disorders, bipolar disorder and obsessive-compulsive disorder do not define this combination of developmental impairments.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "A child with autism becomes distressed whenever the classroom routine changes unexpectedly. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Introduce frequent unpredictable changes to increase tolerance", "is_correct": false},
+{"text": "Use visual schedules, structured routines and advance preparation for transitions", "is_correct": true},
+{"text": "Punish the child whenever distress occurs", "is_correct": false},
+{"text": "Remove all communication aids from the classroom", "is_correct": false}
+],
+"rationale": "Predictable routines and visual supports can improve communication, reduce uncertainty and facilitate transitions for children with autism. Unpredictable changes, punishment and removing communication aids may increase distress and interfere with functioning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Protection and Psychiatric Nursing",
+"question_text": "A ten-year-old child attending a paediatric clinic reports persistent sadness, social withdrawal and repeated statements that life is not worth living. What should the nurse prioritise?",
+"choices": [
+{"text": "Assess suicide risk immediately using developmentally appropriate communication and establish safety", "is_correct": true},
+{"text": "Advise the child to concentrate on schoolwork", "is_correct": false},
+{"text": "Ignore the statements because children cannot experience suicidal thoughts", "is_correct": false},
+{"text": "Arrange routine immunisation without further mental health assessment", "is_correct": false}
+],
+"rationale": "Children can experience suicidal thoughts, and statements indicating hopelessness require immediate developmentally appropriate risk assessment and safety planning. Dismissing the statements or concentrating on unrelated routine care may result in a preventable adverse outcome.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "Which intervention is commonly incorporated into the management of a school-aged child with ADHD?",
+"choices": [
+{"text": "Structured behavioural interventions, consistent routines and appropriate educational support", "is_correct": true},
+{"text": "Permanent exclusion from classroom activities", "is_correct": false},
+{"text": "Deliberate sleep restriction", "is_correct": false},
+{"text": "Punishment as the sole treatment approach", "is_correct": false}
+],
+"rationale": "ADHD management commonly includes behavioural interventions, parent training, educational accommodations and medication when clinically indicated. Exclusion, sleep restriction and punishment alone do not address the neurodevelopmental condition and may worsen functioning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child Psychiatric Assessment",
+"question_text": "A nurse assesses an adolescent who reports hearing voices commenting on his activities. What is the most important additional assessment?",
+"choices": [
+{"text": "The adolescent's favourite recreational activity", "is_correct": false},
+{"text": "The voices' content, frequency, associated distress, command features and risk of self-harm or harm to others", "is_correct": true},
+{"text": "The adolescent's preferred school subject", "is_correct": false},
+{"text": "The number of friends the adolescent has without further exploration", "is_correct": false}
+],
+"rationale": "Auditory hallucinations require detailed assessment of their characteristics and potential safety implications, particularly command content and associated intentions. Recreational preferences and school interests may contribute to the psychosocial history but do not establish the immediate clinical risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Delays and Intellectual Disability",
+"question_text": "A child with intellectual disability experiences a seizure lasting six minutes in a paediatric ward. What should the nurse do first?",
+"choices": [
+{"text": "Protect the child from injury, maintain airway positioning, time the seizure and activate emergency management", "is_correct": true},
+{"text": "Force an object into the child's mouth", "is_correct": false},
+{"text": "Restrain all four limbs firmly", "is_correct": false},
+{"text": "Offer oral medication while the child is convulsing", "is_correct": false}
+],
+"rationale": "A prolonged seizure requires immediate seizure first aid, airway protection and emergency management according to protocol. Placing objects in the mouth, forceful restraint and administering oral medication during convulsions can cause serious injury or aspiration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "Which finding would most strongly support a diagnosis of autism spectrum disorder rather than ADHD alone?",
+"choices": [
+{"text": "Persistent deficits in reciprocal social communication accompanied by restricted and repetitive behaviours", "is_correct": true},
+{"text": "Occasional difficulty completing homework", "is_correct": false},
+{"text": "Increased physical activity during outdoor play", "is_correct": false},
+{"text": "Difficulty sitting still during a single classroom lesson", "is_correct": false}
+],
+"rationale": "Persistent social communication difficulties combined with restricted or repetitive behaviours are central features of autism spectrum disorder. Inattention, excessive activity and isolated classroom difficulties are not sufficient to distinguish autism from ADHD or other developmental concerns.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child and Adolescent Mental Health",
+"question_text": "A fifteen-year-old adolescent presents with persistent low mood, loss of interest, poor concentration, feelings of worthlessness and declining school performance for six weeks. Which condition is most likely?",
+"choices": [
+{"text": "Major depressive disorder", "is_correct": true},
+{"text": "Autism spectrum disorder", "is_correct": false},
+{"text": "Specific phobia", "is_correct": false},
+{"text": "Acute delirium", "is_correct": false}
+],
+"rationale": "Persistent depressed mood, anhedonia, worthlessness, impaired concentration and functional decline over several weeks suggest a depressive episode requiring comprehensive assessment. Autism, specific phobia and delirium have different defining clinical features and do not adequately explain the complete presentation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child Protection and Psychiatric Nursing",
+"question_text": "A nurse observes bruises on a child admitted with anxiety and behavioural difficulties. During a private interview, the child discloses repeated physical abuse by a caregiver. What should the nurse do first?",
+"choices": [
+{"text": "Confront the caregiver aggressively before assessing the child", "is_correct": false},
+{"text": "Ensure the child's immediate safety, document findings objectively and activate appropriate child protection procedures", "is_correct": true},
+{"text": "Tell the child to resolve the conflict independently", "is_correct": false},
+{"text": "Ignore the disclosure because the caregiver is the legal guardian", "is_correct": false}
+],
+"rationale": "Suspected child abuse requires immediate safeguarding, objective documentation, appropriate reporting and referral in accordance with child protection procedures. Aggressive confrontation, placing responsibility on the child or ignoring the disclosure may expose the child to further harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Psychiatric Assessment",
+"question_text": "A twelve-year-old child develops sudden confusion, fluctuating attention and visual hallucinations after several days of high fever. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Delirium associated with an acute medical condition", "is_correct": true},
+{"text": "Attention-deficit/hyperactivity disorder", "is_correct": false},
+{"text": "Autism spectrum disorder", "is_correct": false},
+{"text": "Specific learning disorder", "is_correct": false}
+],
+"rationale": "Acute confusion, fluctuating attention and hallucinations following fever suggest delirium secondary to an underlying medical condition. ADHD, autism and specific learning disorder are not characterised by an acute fluctuating disturbance of consciousness and attention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child and Adolescent Mental Health",
+"question_text": "An adolescent with major depression tells the nurse that he has swallowed several tablets with the intention of dying. He is becoming drowsy. What is the immediate nursing priority?",
+"choices": [
+{"text": "Conduct a detailed family assessment before providing care", "is_correct": false},
+{"text": "Initiate emergency overdose management, assess airway, breathing and circulation, and arrange urgent medical intervention", "is_correct": true},
+{"text": "Begin group counselling immediately", "is_correct": false},
+{"text": "Allow the adolescent to sleep without observation", "is_correct": false}
+],
+"rationale": "An intentional overdose with increasing drowsiness represents a life-threatening emergency requiring immediate medical stabilisation and overdose management. Psychosocial assessment and counselling are necessary after the adolescent's physical condition has been stabilised.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "A child taking prescribed methylphenidate for ADHD develops reduced appetite, difficulty sleeping and weight loss. What should the nurse recommend?",
+"choices": [
+{"text": "Increase the medication dose without medical review", "is_correct": false},
+{"text": "Arrange clinical review to assess adverse effects, growth and the medication regimen", "is_correct": true},
+{"text": "Discontinue all follow-up appointments", "is_correct": false},
+{"text": "Assure the parents that weight loss requires no monitoring", "is_correct": false}
+],
+"rationale": "Methylphenidate can cause appetite suppression, insomnia and reduced weight gain, making monitoring of growth and clinical review essential. Unauthorised dose escalation, abandonment of follow-up and failure to monitor growth are inappropriate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Delays and Intellectual Disability",
+"question_text": "A community nurse identifies a three-year-old child who has not developed expected language skills and has limited social interaction. What is the most appropriate next step?",
+"choices": [
+{"text": "Wait until the child starts primary school before investigating", "is_correct": false},
+{"text": "Arrange comprehensive developmental assessment and early intervention referral", "is_correct": true},
+{"text": "Assume the child has a psychiatric disorder without assessment", "is_correct": false},
+{"text": "Advise the parents to stop communicating with the child until speech develops", "is_correct": false}
+],
+"rationale": "Developmental delays require early identification, comprehensive assessment and timely intervention to improve communication and functional outcomes. Delaying assessment, making unsupported diagnoses and restricting communication may worsen developmental difficulties.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child and Adolescent Mental Health",
+"question_text": "A paediatric nurse assesses four children. Which child requires the most immediate intervention?",
+"choices": [
+{"text": "A child with autism who becomes distressed by loud classroom noise", "is_correct": false},
+{"text": "A child with ADHD who frequently interrupts classroom activities", "is_correct": false},
+{"text": "An adolescent with depression who has a specific suicide plan and access to the intended means", "is_correct": true},
+{"text": "A child with developmental delay who requires assistance with dressing", "is_correct": false}
+],
+"rationale": "An adolescent with a specific suicide plan and access to the intended means presents an immediate threat to life and requires emergency risk management. Sensory distress, ADHD-related behavioural difficulties and adaptive functioning limitations require care but are not equivalent immediate threats.",
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "PHN-322-P",
+"course_title": "Public Health Nursing",
+"category": "COMMUNITY",
+"semester": "S2",
+"topics": [
+"Community Mental Health Nursing",
+"Mental Health Promotion and Prevention",
+"Community Screening for Depression",
+"Suicide Prevention and Crisis Response",
+"Mental Health Policy and Legislation",
+"Primary Healthcare Integration"
+],
+"questions": [
+{
+"topic": "Community Mental Health Nursing",
+"question_text": "What is the main objective of integrating mental health services into primary healthcare in Ghana?",
+"choices": [
+{"text": "To restrict psychiatric services to specialised hospitals", "is_correct": false},
+{"text": "To improve accessible, early and continuous mental healthcare within community-based health services", "is_correct": true},
+{"text": "To eliminate the need for psychiatric specialists", "is_correct": false},
+{"text": "To transfer all psychiatric responsibilities to traditional healers", "is_correct": false}
+],
+"rationale": "Integration of mental health into primary healthcare improves accessibility, early identification, treatment continuity and community participation. It does not eliminate specialist services or transfer clinical responsibilities to unregulated providers.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Screening for Depression",
+"question_text": "A community health nurse at a CHPS compound identifies an adult who reports persistent sadness, loss of interest and poor sleep. Which screening approach is most appropriate?",
+"choices": [
+{"text": "Use an appropriate validated depression screening instrument and arrange clinical assessment when indicated", "is_correct": true},
+{"text": "Diagnose schizophrenia based exclusively on the reported sadness", "is_correct": false},
+{"text": "Prescribe antidepressants without further assessment", "is_correct": false},
+{"text": "Ignore the symptoms unless the individual develops hallucinations", "is_correct": false}
+],
+"rationale": "Validated screening tools can identify individuals who may have depression and require further clinical assessment. Screening does not independently establish a diagnosis or authorise treatment, and hallucinations are not a prerequisite for depression assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Promotion and Prevention",
+"question_text": "Which activity represents primary prevention in community mental healthcare?",
+"choices": [
+{"text": "Providing mental health education and resilience-building programmes before psychiatric disorders develop", "is_correct": true},
+{"text": "Rehabilitating clients after prolonged psychiatric hospitalisation", "is_correct": false},
+{"text": "Providing treatment to individuals experiencing an acute psychotic episode", "is_correct": false},
+{"text": "Managing established complications of chronic schizophrenia", "is_correct": false}
+],
+"rationale": "Primary prevention aims to reduce the incidence of mental disorders by addressing risk factors and strengthening protective factors before illness develops. Acute treatment is an intervention for established illness, while rehabilitation and management of complications are secondary or tertiary interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Suicide Prevention and Crisis Response",
+"question_text": "During a home visit, a community nurse discovers that a client with depression has written a suicide note and purchased a pesticide. What should the nurse do first?",
+"choices": [
+{"text": "Arrange a routine appointment for the following month", "is_correct": false},
+{"text": "Conduct an immediate suicide risk assessment, ensure safety and arrange emergency mental health intervention", "is_correct": true},
+{"text": "Advise the client to remain alone until the feelings disappear", "is_correct": false},
+{"text": "Recommend exercise as the only intervention", "is_correct": false}
+],
+"rationale": "A suicide note and acquisition of a potentially lethal substance indicate an acute and serious suicide risk requiring immediate safety measures and emergency assessment. Routine follow-up, isolation and exercise alone are inadequate responses to imminent suicide risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Policy and Legislation",
+"question_text": "Which institution is responsible for overseeing the implementation and coordination of mental health services under Ghana's Mental Health Act, 2012 (Act 846)?",
+"choices": [
+{"text": "Mental Health Authority", "is_correct": true},
+{"text": "Ghana Immigration Service", "is_correct": false},
+{"text": "National Commission for Civic Education", "is_correct": false},
+{"text": "Ghana Revenue Authority", "is_correct": false}
+],
+"rationale": "The Mental Health Authority provides leadership and oversight for mental health service delivery under Act 846. The other institutions perform functions related to immigration, civic education and revenue administration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Primary Healthcare Integration",
+"question_text": "A nurse working at a rural CHPS compound identifies a person with suspected psychosis. The nearest psychiatric specialist is located several kilometres away. What is the most appropriate approach?",
+"choices": [
+{"text": "Provide an initial assessment, address immediate safety concerns and coordinate referral to an appropriate mental health service", "is_correct": true},
+{"text": "Keep the person at home without clinical follow-up", "is_correct": false},
+{"text": "Attempt to manage severe psychosis independently without appropriate support", "is_correct": false},
+{"text": "Refer the person exclusively to an informal religious institution", "is_correct": false}
+],
+"rationale": "Primary healthcare integration involves early identification, appropriate initial management, safety assessment and coordinated referral within the mental health system. Abandoning care, practising beyond competence or relying exclusively on informal services may delay necessary specialist intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Mental Health Nursing",
+"question_text": "Which activity best demonstrates secondary prevention in community mental healthcare?",
+"choices": [
+{"text": "Early screening and identification of depressive symptoms among community members", "is_correct": true},
+{"text": "Long-term vocational rehabilitation following psychiatric illness", "is_correct": false},
+{"text": "Public education before any mental health symptoms develop", "is_correct": false},
+{"text": "Long-term residential support for individuals with chronic psychiatric disabilities", "is_correct": false}
+],
+"rationale": "Secondary prevention focuses on early detection and prompt intervention to reduce disease progression and complications. Public education before illness develops represents primary prevention, while vocational rehabilitation and long-term disability support are tertiary prevention activities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Suicide Prevention and Crisis Response",
+"question_text": "A community nurse receives a report that an adolescent has posted a message indicating an intention to die that night. What is the most appropriate initial response?",
+"choices": [
+{"text": "Assume the message is intended to attract attention", "is_correct": false},
+{"text": "Establish immediate contact, assess suicide risk, determine the adolescent's location and arrange urgent safety intervention", "is_correct": true},
+{"text": "Wait until the adolescent attends the next scheduled clinic appointment", "is_correct": false},
+{"text": "Share the message publicly to discourage similar behaviour", "is_correct": false}
+],
+"rationale": "An expressed intention to die at a specific time must be treated as a potential emergency requiring immediate contact, risk assessment and safety intervention. Dismissal, delayed review and public disclosure may increase the danger and violate confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Promotion and Prevention",
+"question_text": "A district public health team plans a programme to reduce stigma towards people with mental disorders. Which intervention is most appropriate?",
+"choices": [
+{"text": "Promoting community education, contact with people with lived experience and accurate information about mental illness", "is_correct": true},
+{"text": "Discouraging people with psychiatric histories from participating in community activities", "is_correct": false},
+{"text": "Presenting mental illness exclusively as a permanent condition of dangerousness", "is_correct": false},
+{"text": "Preventing discharged clients from returning to employment", "is_correct": false}
+],
+"rationale": "Community education combined with meaningful contact can challenge stereotypes and improve acceptance of people with mental disorders. Exclusion, fear-based messaging and employment discrimination reinforce stigma and undermine social inclusion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Primary Healthcare Integration",
+"question_text": "A client with schizophrenia repeatedly misses follow-up appointments because transport costs are high. Which public health nursing intervention is most appropriate?",
+"choices": [
+{"text": "Discharge the client for failure to attend appointments", "is_correct": false},
+{"text": "Coordinate accessible community follow-up, assess available NHIS benefits and link the client with appropriate support services", "is_correct": true},
+{"text": "Require the client to attend only Accra Psychiatric Hospital", "is_correct": false},
+{"text": "Advise the client to discontinue psychiatric treatment", "is_correct": false}
+],
+"rationale": "Community-based follow-up and assessment of available financial and transport support can reduce barriers to continuity of care. Discharge, unnecessary distant referrals and treatment discontinuation increase the likelihood of relapse and poor outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Screening for Depression",
+"question_text": "A community nurse screens four individuals during a health outreach programme. Which individual requires the most urgent intervention?",
+"choices": [
+{"text": "An adult who reports occasional worry about employment", "is_correct": false},
+{"text": "An adult who reports difficulty sleeping during examination periods", "is_correct": false},
+{"text": "An individual with depression who reports a specific suicide plan and immediate access to the intended means", "is_correct": true},
+{"text": "An adult who requests information about stress management", "is_correct": false}
+],
+"rationale": "A specific suicide plan and immediate access to the intended means indicate a potentially imminent threat to life and require emergency intervention. General worry, situational sleep difficulties and requests for health education require assessment but do not represent the same immediate danger.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Policy and Legislation",
+"question_text": "Which of the following best describes the purpose of community mental health services?",
+"choices": [
+{"text": "To provide accessible mental health promotion, prevention, treatment, rehabilitation and follow-up within communities", "is_correct": true},
+{"text": "To eliminate all psychiatric hospitals and specialist services", "is_correct": false},
+{"text": "To restrict psychiatric care to individuals with severe psychotic disorders", "is_correct": false},
+{"text": "To transfer mental healthcare responsibilities exclusively to families", "is_correct": false}
+],
+"rationale": "Community mental health services provide a continuum of care, including prevention, treatment, rehabilitation and continuity of support close to where people live. They complement specialist services rather than eliminate them or transfer clinical responsibilities to families.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Mental Health Nursing",
+"question_text": "A community nurse discovers that a client with schizophrenia has developed severe rigidity, fever and altered consciousness after starting an antipsychotic medication. What is the priority action?",
+"choices": [
+{"text": "Arrange urgent medical assessment for suspected neuroleptic malignant syndrome", "is_correct": true},
+{"text": "Recommend additional exercise to reduce rigidity", "is_correct": false},
+{"text": "Wait for the next routine home visit", "is_correct": false},
+{"text": "Encourage the client to take additional antipsychotic medication", "is_correct": false}
+],
+"rationale": "Fever, severe rigidity and altered consciousness in a person taking antipsychotic medication suggest neuroleptic malignant syndrome, a life-threatening medical emergency. Delayed assessment, exercise and additional antipsychotic medication may worsen the condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Suicide Prevention and Crisis Response",
+"question_text": "A public health nurse identifies increasing suicide attempts among adolescents in a district. Which intervention best represents a comprehensive community-level prevention strategy?",
+"choices": [
+{"text": "Combining mental health education, early identification, accessible referral pathways, crisis response and responsible media engagement", "is_correct": true},
+{"text": "Restricting all mental health information from schools", "is_correct": false},
+{"text": "Relying exclusively on hospital admission after suicide attempts", "is_correct": false},
+{"text": "Publicly identifying adolescents who have previously attempted suicide", "is_correct": false}
+],
+"rationale": "Comprehensive suicide prevention combines population-level promotion, early detection, accessible services, crisis intervention and responsible communication. Restricting education, relying only on post-attempt hospital care and publicly identifying individuals increase missed prevention opportunities and stigma.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Promotion and Prevention",
+"question_text": "A district health director is planning mental health promotion activities for secondary schools. Which intervention is most appropriate?",
+"choices": [
+{"text": "Providing age-appropriate mental health literacy, emotional regulation skills and pathways for confidential help-seeking", "is_correct": true},
+{"text": "Punishing students who disclose emotional difficulties", "is_correct": false},
+{"text": "Discouraging teachers from referring students with behavioural changes", "is_correct": false},
+{"text": "Discussing individual students' psychiatric histories during public assemblies", "is_correct": false}
+],
+"rationale": "School-based mental health promotion improves knowledge, coping skills, early identification and access to support while respecting confidentiality. Punishment, discouraging referrals and public disclosure may increase stigma and prevent students from seeking care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Screening for Depression",
+"question_text": "A nurse screens a pregnant woman at a community antenatal outreach programme and identifies persistent low mood, anhedonia and hopelessness. The woman also reports thoughts of self-harm. What should the nurse do?",
+"choices": [
+{"text": "Treat the findings as normal pregnancy-related emotional changes", "is_correct": false},
+{"text": "Conduct an immediate safety assessment and arrange urgent maternal mental health evaluation", "is_correct": true},
+{"text": "Advise the woman to stop attending antenatal services", "is_correct": false},
+{"text": "Recommend herbal preparations without assessing the woman's condition", "is_correct": false}
+],
+"rationale": "Depressive symptoms accompanied by self-harm thoughts during pregnancy require immediate risk assessment and appropriate maternal mental health intervention. Normalising the symptoms, discontinuing antenatal care and recommending unassessed herbal preparations may delay essential treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Primary Healthcare Integration",
+"question_text": "A district mental health coordinator reviews four community cases. Which case should be escalated immediately to emergency services?",
+"choices": [
+{"text": "A client with stable schizophrenia requesting vocational rehabilitation", "is_correct": false},
+{"text": "A client with mild anxiety requesting counselling", "is_correct": false},
+{"text": "A client with acute confusion, high fever and severe dehydration", "is_correct": true},
+{"text": "A client with depression who wishes to join a support group", "is_correct": false}
+],
+"rationale": "Acute confusion, fever and severe dehydration may indicate delirium associated with a serious medical condition and require emergency medical assessment. Stable rehabilitation needs, mild anxiety and support-group requests can be managed through appropriate routine community services.",
+"difficulty": "ANALYSIS"
+}
+]
+},
+{
+"course_code": "RMS-322-P",
+"course_title": "Relationship Marketing and Entrepreneurship",
+"category": "ETHICS",
+"semester": "S2",
+"topics": [
+"Marketing of Mental Health Services",
+"Ethical Marketing and Professional Accountability",
+"Stigma Reduction Through Health Communication",
+"Entrepreneurship in Mental Healthcare",
+"Patient Confidentiality and Relationship Management",
+"Community Engagement and Service Quality"
+],
+"questions": [
+{
+"topic": "Marketing of Mental Health Services",
+"question_text": "A private mental health clinic in Accra wants to attract individuals experiencing depression and anxiety. Which marketing strategy is most appropriate?",
+"choices": [
+{"text": "Advertising guaranteed cures for every psychiatric condition", "is_correct": false},
+{"text": "Providing accurate information about available services, qualified professionals, referral pathways and treatment approaches", "is_correct": true},
+{"text": "Using frightening images of people experiencing psychosis to attract attention", "is_correct": false},
+{"text": "Promising that clients will recover within three days", "is_correct": false}
+],
+"rationale": "Ethical mental health marketing communicates accurate service information and realistic expectations while supporting informed decision-making. Guaranteed cures, fear-based images and unrealistic recovery promises are misleading and may reinforce stigma.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Marketing and Professional Accountability",
+"question_text": "Which principle should guide the marketing of psychiatric services?",
+"choices": [
+{"text": "Truthfulness and transparency in communicating service benefits and limitations", "is_correct": true},
+{"text": "Exaggerating treatment outcomes to increase client numbers", "is_correct": false},
+{"text": "Concealing service costs until treatment has started", "is_correct": false},
+{"text": "Using client information without permission to attract customers", "is_correct": false}
+],
+"rationale": "Ethical marketing requires truthful information, transparency and respect for patient autonomy. Exaggerated claims, concealed costs and unauthorised disclosure violate professional and ethical responsibilities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stigma Reduction Through Health Communication",
+"question_text": "A mental health entrepreneur plans a social media campaign to encourage young Ghanaians to seek help for depression. Which message is most appropriate?",
+"choices": [
+{"text": "Depression is a sign of weakness that should be hidden from society.", "is_correct": false},
+{"text": "Depression is a treatable mental health condition, and seeking professional support is an important step towards recovery.", "is_correct": true},
+{"text": "People with depression should avoid professional healthcare.", "is_correct": false},
+{"text": "Only individuals with severe psychosis require mental health services.", "is_correct": false}
+],
+"rationale": "Accurate, recovery-oriented communication normalises help-seeking and challenges misconceptions about depression. The other messages promote stigma, discourage treatment and incorrectly restrict mental healthcare to psychotic disorders.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Entrepreneurship in Mental Healthcare",
+"question_text": "An entrepreneur intends to establish a mental health support centre in a rural Ghanaian district. Which consideration should receive priority during business planning?",
+"choices": [
+{"text": "Assessing community needs, service gaps, regulatory requirements, qualified staffing and financial sustainability", "is_correct": true},
+{"text": "Selecting a location based exclusively on the availability of entertainment facilities", "is_correct": false},
+{"text": "Employing untrained individuals to provide psychiatric diagnoses", "is_correct": false},
+{"text": "Advertising services before establishing appropriate clinical governance", "is_correct": false}
+],
+"rationale": "Sustainable mental healthcare entrepreneurship requires needs assessment, regulatory compliance, competent personnel, appropriate governance and financial planning. Entertainment facilities, unqualified clinical practice and premature advertising do not establish a safe or viable service.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Confidentiality and Relationship Management",
+"question_text": "A mental health clinic wants to publish a testimonial from a former client who received treatment for schizophrenia. What should management do before publication?",
+"choices": [
+{"text": "Publish the testimonial immediately because the client's treatment has ended", "is_correct": false},
+{"text": "Obtain informed, voluntary and appropriately documented consent and protect the client's privacy and dignity", "is_correct": true},
+{"text": "Include the client's full medical records to increase credibility", "is_correct": false},
+{"text": "Ask another client to provide consent on the individual's behalf without legal authority", "is_correct": false}
+],
+"rationale": "Patient testimonials require informed and voluntary consent, appropriate privacy safeguards and protection against exploitation or coercion. Ending treatment does not remove confidentiality obligations, and disclosure of medical records or unauthorised third-party consent is inappropriate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Engagement and Service Quality",
+"question_text": "A mental health clinic receives repeated complaints about long waiting times and poor communication. Which management response is most appropriate?",
+"choices": [
+{"text": "Ignore complaints because psychiatric clients are unlikely to change providers", "is_correct": false},
+{"text": "Analyse feedback, identify service deficiencies and implement measurable quality improvement measures", "is_correct": true},
+{"text": "Remove all complaint channels from the clinic", "is_correct": false},
+{"text": "Blame clients for failing to understand the service system", "is_correct": false}
+],
+"rationale": "Service quality improvement uses client feedback to identify operational problems and strengthen patient experience and continuity of care. Ignoring complaints, removing feedback channels and blaming clients undermine trust and relationship management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Marketing of Mental Health Services",
+"question_text": "Which marketing concept focuses on developing long-term, mutually beneficial relationships between a healthcare organisation and its clients?",
+"choices": [
+{"text": "Relationship marketing", "is_correct": true},
+{"text": "Product elimination", "is_correct": false},
+{"text": "Price discrimination", "is_correct": false},
+{"text": "Market withdrawal", "is_correct": false}
+],
+"rationale": "Relationship marketing focuses on maintaining long-term client relationships through trust, satisfaction, communication and service quality. Product elimination, price discrimination and market withdrawal do not describe the development of sustainable client relationships.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Marketing and Professional Accountability",
+"question_text": "A private psychiatric clinic advertises that its treatment guarantees permanent recovery from schizophrenia. What is the most appropriate professional response?",
+"choices": [
+{"text": "Support the advertisement because it attracts more clients", "is_correct": false},
+{"text": "Withdraw or correct the misleading claim and replace it with accurate, evidence-based information", "is_correct": true},
+{"text": "Increase the advertisement's visibility through paid promotions", "is_correct": false},
+{"text": "Encourage clients to discontinue prescribed treatment after one visit", "is_correct": false}
+],
+"rationale": "Psychiatric treatment outcomes vary, and a guarantee of permanent recovery is scientifically misleading and ethically unacceptable. Correcting the claim protects the public from misinformation, whereas increasing its reach or encouraging treatment discontinuation creates additional risks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Through Health Communication",
+"question_text": "A marketing team is designing a poster for a community mental health programme. Which image and message combination is most appropriate?",
+"choices": [
+{"text": "An image portraying psychiatric clients as violent, accompanied by a warning to avoid them", "is_correct": false},
+{"text": "An image of people participating in ordinary community activities, accompanied by a message encouraging early mental health support", "is_correct": true},
+{"text": "An image showing psychiatric treatment as punishment", "is_correct": false},
+{"text": "An image suggesting that mental illness results exclusively from spiritual weakness", "is_correct": false}
+],
+"rationale": "Inclusive imagery and accurate help-seeking messages challenge stereotypes and promote social acceptance. Fear-based, punitive and spiritually discriminatory representations reinforce stigma and discourage access to evidence-based services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Entrepreneurship in Mental Healthcare",
+"question_text": "An entrepreneur plans to introduce a digital platform that connects people experiencing psychological distress with qualified mental health professionals in Ghana. Which feature is most important?",
+"choices": [
+{"text": "Secure communication, confidentiality safeguards, appropriate professional verification and emergency referral pathways", "is_correct": true},
+{"text": "Public display of every user's psychiatric diagnosis", "is_correct": false},
+{"text": "Unrestricted access to clinical records by advertisers", "is_correct": false},
+{"text": "Automatic psychiatric diagnosis without clinical oversight", "is_correct": false}
+],
+"rationale": "A digital mental health platform must protect sensitive information, verify professional qualifications and provide safe pathways for emergencies. Public disclosure, advertising access to clinical records and unsupported automated diagnosis compromise confidentiality and patient safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Confidentiality and Relationship Management",
+"question_text": "A clinic receptionist receives a telephone call from a journalist requesting the name of a prominent individual receiving psychiatric treatment. What should the receptionist do?",
+"choices": [
+{"text": "Disclose the information because the caller works for the media", "is_correct": false},
+{"text": "Refuse unauthorised disclosure and direct the request through the clinic's authorised confidentiality procedures", "is_correct": true},
+{"text": "Confirm the diagnosis but withhold the treatment details", "is_correct": false},
+{"text": "Send the client's prescription through social media", "is_correct": false}
+],
+"rationale": "A person's attendance at a psychiatric clinic and associated health information are confidential and cannot be disclosed without appropriate legal authority or valid consent. Media employment does not create permission to access patient information, and partial disclosure remains a confidentiality breach.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Engagement and Service Quality",
+"question_text": "A mental health entrepreneur discovers that residents of a rural community avoid psychiatric services because they fear being labelled as mentally ill. Which marketing strategy is most appropriate?",
+"choices": [
+{"text": "Organise confidential community education, engage trusted stakeholders and communicate the availability of accessible mental health services", "is_correct": true},
+{"text": "Publicly identify individuals who have attended psychiatric clinics", "is_correct": false},
+{"text": "Use threatening advertisements about untreated mental illness", "is_correct": false},
+{"text": "Restrict information about services to urban communities", "is_correct": false}
+],
+"rationale": "Confidential education and engagement with trusted community stakeholders can reduce stigma and improve awareness of accessible care. Public identification, threatening messages and geographical exclusion reinforce discrimination and reduce service uptake.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Marketing of Mental Health Services",
+"question_text": "A private mental health facility wants to measure whether its marketing campaign has improved access to psychiatric services. Which indicator is most appropriate?",
+"choices": [
+{"text": "The number of relevant enquiries, completed referrals and clients accessing appropriate services", "is_correct": true},
+{"text": "The number of advertisements printed without considering audience response", "is_correct": false},
+{"text": "The number of staff members who view the campaign internally", "is_correct": false},
+{"text": "The number of unrelated social media comments received", "is_correct": false}
+],
+"rationale": "Relevant enquiries, completed referrals and service utilisation provide measurable indicators of whether marketing improves access to mental healthcare. Advertising volume, internal staff views and unrelated comments do not independently demonstrate improved service uptake.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Marketing and Professional Accountability",
+"question_text": "A mental health entrepreneur plans to use a former client's photograph and psychiatric diagnosis in an online advertisement. The client previously agreed verbally during a treatment session but has not signed a marketing consent document. What should the entrepreneur do?",
+"choices": [
+{"text": "Publish the advertisement because verbal agreement during treatment is always sufficient", "is_correct": false},
+{"text": "Obtain separate, informed and voluntary marketing consent, ensure privacy safeguards and comply with applicable professional and data protection requirements", "is_correct": true},
+{"text": "Publish the photograph but remove the client's name", "is_correct": false},
+{"text": "Ask clinic employees to decide whether the client should be identified", "is_correct": false}
+],
+"rationale": "Using identifiable health information for marketing requires appropriate consent and safeguards separate from routine clinical care, particularly because of the sensitivity of psychiatric information. Removing a name may not prevent identification, and employees cannot replace the client's consent.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Entrepreneurship in Mental Healthcare",
+"question_text": "A mental health startup has limited financial resources but wants to expand access to counselling in underserved Ghanaian communities. Which business model is most appropriate?",
+"choices": [
+{"text": "Developing partnerships with existing health facilities, qualified professionals and community organisations while using sustainable service financing", "is_correct": true},
+{"text": "Offering psychiatric diagnosis through untrained sales representatives", "is_correct": false},
+{"text": "Charging clients for services that the organisation cannot provide", "is_correct": false},
+{"text": "Avoiding partnerships to prevent professional accountability", "is_correct": false}
+],
+"rationale": "Strategic partnerships can extend service reach, improve access to qualified personnel and support financial sustainability. Untrained diagnosis, misleading charges and avoidance of accountability undermine safe and viable mental health entrepreneurship.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Confidentiality and Relationship Management",
+"question_text": "A psychiatric clinic discovers that an employee has shared a client's depression diagnosis in a public WhatsApp group. What should management do first?",
+"choices": [
+{"text": "Ignore the incident because the information has already been shared", "is_correct": false},
+{"text": "Contain the disclosure, assess its impact, protect the affected client and initiate appropriate incident reporting and investigation procedures", "is_correct": true},
+{"text": "Share additional clinical details to explain the diagnosis", "is_correct": false},
+{"text": "Publish the employee's personal information to punish the individual", "is_correct": false}
+],
+"rationale": "A confidentiality breach requires immediate containment, assessment of potential harm, protection of the affected client and appropriate investigation and reporting under applicable policies and law. Ignoring the breach, expanding disclosure or retaliatory publication creates further ethical and privacy violations.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Engagement and Service Quality",
+"question_text": "A mental health clinic receives a complaint from a client who believes that staff members treated him disrespectfully because of his history of schizophrenia. Which response is most appropriate?",
+"choices": [
+{"text": "Dismiss the complaint because psychiatric clients may misinterpret staff behaviour", "is_correct": false},
+{"text": "Listen respectfully, investigate the complaint fairly, address any discriminatory conduct and communicate the outcome through appropriate channels", "is_correct": true},
+{"text": "Remove the client from the clinic's service register", "is_correct": false},
+{"text": "Publicly discuss the client's complaint to discourage future complaints", "is_correct": false}
+],
+"rationale": "Respectful complaint management supports accountability, patient dignity, trust and continuous service improvement. Dismissing complaints based on diagnosis, excluding the client or disclosing the complaint publicly constitutes inappropriate and potentially discriminatory practice.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Marketing of Mental Health Services",
+"question_text": "A psychiatric facility advertises a new service claiming that clients can obtain immediate treatment without assessment, even when experiencing severe suicidal thoughts or acute psychosis. What is the most appropriate corrective action?",
+"choices": [
+{"text": "Maintain the advertisement because rapid access increases customer satisfaction", "is_correct": false},
+{"text": "Correct the advertisement to explain appropriate service eligibility, clinical assessment requirements and emergency referral arrangements", "is_correct": true},
+{"text": "Promise that every client will receive identical treatment regardless of clinical condition", "is_correct": false},
+{"text": "Remove all information about emergency psychiatric services", "is_correct": false}
+],
+"rationale": "Mental health marketing must communicate accurate service capabilities and appropriate pathways for urgent psychiatric emergencies. Promising treatment without assessment or identical interventions for all clients creates unsafe expectations, while concealing emergency information may delay lifesaving care.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
