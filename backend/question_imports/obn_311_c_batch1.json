@@ -1,0 +1,851 @@
+{
+"courses": [
+{
+"course_code": "OBN-311-C",
+"course_title": "Obstetric Nursing",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Antenatal Care in the Community",
+"Labour and Delivery at CHPS/Home",
+"Postpartum Care and Family Planning",
+"Pre-eclampsia and Eclampsia",
+"Postpartum Haemorrhage",
+"Obstetric Emergencies and Referral",
+"Perinatal Mental Health",
+"Traditional Birth Attendants (TBAs)",
+"Community Midwifery Practice"
+],
+"questions": [
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "What is the primary purpose of antenatal care?",
+"choices": [
+{"text": "To provide care only when the pregnant woman develops complications", "is_correct": false},
+{"text": "To monitor maternal and fetal health, prevent complications, and prepare for childbirth", "is_correct": true},
+{"text": "To determine the sex of the unborn baby", "is_correct": false},
+{"text": "To ensure that every pregnant woman delivers by caesarean section", "is_correct": false}
+],
+"rationale": "Antenatal care promotes the health of the pregnant woman and fetus through screening, preventive interventions, health education, and timely management of complications. It also prepares the woman and her family for childbirth and the postnatal period.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "A pregnant woman attends her first antenatal clinic at 10 weeks of gestation. Which action is most appropriate during this initial contact?",
+"choices": [
+{"text": "Advise her to return only when she feels fetal movement", "is_correct": false},
+{"text": "Conduct a comprehensive booking assessment, including medical, obstetric, and psychosocial history", "is_correct": true},
+{"text": "Schedule her for delivery immediately", "is_correct": false},
+{"text": "Restrict the visit to measuring her weight", "is_correct": false}
+],
+"rationale": "The first antenatal contact should establish the woman's baseline health status and identify existing or potential pregnancy risks. Assessment includes history-taking, physical examination, relevant investigations, preventive interventions, and counselling.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "Which supplement is routinely recommended during pregnancy to reduce the risk of maternal anaemia and support fetal development?",
+"choices": [
+{"text": "Iron and folic acid", "is_correct": true},
+{"text": "Vitamin K alone", "is_correct": false},
+{"text": "High-dose vitamin A", "is_correct": false},
+{"text": "Calcium carbonate only", "is_correct": false}
+],
+"rationale": "Iron supports haemoglobin production and helps prevent iron-deficiency anaemia, while folic acid supports fetal neural tube development. Pregnant women should receive supplementation according to applicable national antenatal guidelines.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "During a home visit, a pregnant woman at 32 weeks reports severe headache, blurred vision, and swelling of her face. What should the community health nurse do?",
+"choices": [
+{"text": "Advise her to reduce water intake and rest at home", "is_correct": false},
+{"text": "Reassure her that these are normal features of late pregnancy", "is_correct": false},
+{"text": "Arrange urgent assessment at a health facility because of suspected pre-eclampsia", "is_correct": true},
+{"text": "Advise her to wait until her next scheduled antenatal appointment", "is_correct": false}
+],
+"rationale": "Severe headache and visual disturbance in pregnancy are warning signs of possible severe pre-eclampsia. The woman requires urgent clinical assessment, including blood pressure measurement and evaluation for maternal and fetal complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "Which investigation is particularly important for identifying anaemia during antenatal care?",
+"choices": [
+{"text": "Haemoglobin estimation", "is_correct": true},
+{"text": "Electrocardiography", "is_correct": false},
+{"text": "Visual acuity testing", "is_correct": false},
+{"text": "Sputum microscopy in every pregnant woman", "is_correct": false}
+],
+"rationale": "Haemoglobin estimation helps identify anaemia, which can increase the risk of maternal and perinatal complications. Identified anaemia should be assessed and managed according to its severity and underlying cause.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "A pregnant woman living in a rural community says she cannot afford transport to the district hospital when labour begins. Which antenatal intervention is most appropriate?",
+"choices": [
+{"text": "Tell her to wait until labour becomes advanced before seeking transport", "is_correct": false},
+{"text": "Develop a birth preparedness and complication readiness plan with her family", "is_correct": true},
+{"text": "Recommend that she deliver alone at home", "is_correct": false},
+{"text": "Advise her to stop attending antenatal care", "is_correct": false}
+],
+"rationale": "Birth preparedness includes identifying a skilled birth attendant, an appropriate delivery facility, transport, funds, and a companion. Planning before labour reduces delays in reaching emergency obstetric care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "A pregnant woman at 28 weeks reports that she has not felt her baby move as much as usual. What is the most appropriate advice?",
+"choices": [
+{"text": "Wait for three days to see whether movements return", "is_correct": false},
+{"text": "Drink a sugary beverage and ignore the change if movement occurs once", "is_correct": false},
+{"text": "Seek prompt assessment at a health facility for possible fetal compromise", "is_correct": true},
+{"text": "Assume that reduced fetal movement is normal in all pregnancies", "is_correct": false}
+],
+"rationale": "A noticeable reduction or change in fetal movement may indicate fetal compromise and requires prompt assessment. The woman should not delay seeking care or rely on home remedies to determine fetal wellbeing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "Which vaccine is routinely important during pregnancy to protect the mother and newborn against maternal and neonatal tetanus?",
+"choices": [
+{"text": "Tetanus-containing vaccine", "is_correct": true},
+{"text": "Measles vaccine", "is_correct": false},
+{"text": "Oral polio vaccine as the sole maternal immunisation", "is_correct": false},
+{"text": "BCG vaccine", "is_correct": false}
+],
+"rationale": "Tetanus-containing vaccination during pregnancy helps protect the mother and provides transplacental antibodies that protect the newborn. The number and timing of doses depend on the woman's previous immunisation history and national guidance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "A community health nurse discovers that a pregnant woman has never been tested for HIV. Which action is most appropriate?",
+"choices": [
+{"text": "Disclose the woman's presumed HIV status to community members", "is_correct": false},
+{"text": "Offer confidential HIV testing and counselling according to national guidelines", "is_correct": true},
+{"text": "Advise her that HIV testing is unnecessary during pregnancy", "is_correct": false},
+{"text": "Test her without explaining the procedure or obtaining consent", "is_correct": false}
+],
+"rationale": "HIV testing during antenatal care supports early diagnosis and access to interventions that reduce mother-to-child transmission. Testing must follow national protocols, informed consent, confidentiality, and appropriate counselling procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care in the Community",
+"question_text": "A pregnant woman with a history of previous caesarean section plans to deliver at home with a traditional birth attendant. What is the nurse's best response?",
+"choices": [
+{"text": "Support the plan because previous caesarean section does not affect future labour", "is_correct": false},
+{"text": "Advise her to avoid all antenatal appointments", "is_correct": false},
+{"text": "Explain the need for facility-based assessment and a delivery plan with access to emergency obstetric care", "is_correct": true},
+{"text": "Recommend that she remain at home until the baby is delivered", "is_correct": false}
+],
+"rationale": "A previous caesarean section may increase the risk of complications during a subsequent pregnancy and labour, including uterine rupture. Delivery planning should involve skilled maternity professionals and a facility capable of providing timely emergency intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "Which finding is the most reliable clinical indication that a woman is in established labour?",
+"choices": [
+{"text": "Irregular abdominal discomfort without cervical change", "is_correct": false},
+{"text": "Regular uterine contractions associated with progressive cervical dilatation", "is_correct": true},
+{"text": "A single episode of vomiting", "is_correct": false},
+{"text": "Increased appetite during pregnancy", "is_correct": false}
+],
+"rationale": "Established labour is characterised by regular uterine contractions that produce progressive cervical dilatation and effacement. Irregular contractions without progressive cervical change may represent false labour.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "A woman in labour arrives at a CHPS compound with strong contractions and an urge to push. The presenting part is visible at the vaginal opening. What should the nurse do first?",
+"choices": [
+{"text": "Arrange immediate assessment and activate the appropriate skilled delivery and referral support", "is_correct": true},
+{"text": "Send the woman home to wait for stronger contractions", "is_correct": false},
+{"text": "Delay care until the woman's relatives arrive", "is_correct": false},
+{"text": "Attempt to stop the contractions using an unprescribed medicine", "is_correct": false}
+],
+"rationale": "A visible presenting part and an urge to push suggest that birth may be imminent. The nurse should rapidly assess the situation, mobilise skilled assistance, prepare for safe birth within the limits of competence, and arrange emergency support if complications arise.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "Which instrument is commonly used to monitor the progress of labour and maternal and fetal observations?",
+"choices": [
+{"text": "Partograph or an approved labour care monitoring chart", "is_correct": true},
+{"text": "Growth chart", "is_correct": false},
+{"text": "Glasgow Coma Scale chart", "is_correct": false},
+{"text": "Fluid balance chart alone", "is_correct": false}
+],
+"rationale": "A partograph or approved labour care chart helps monitor labour progress and relevant maternal and fetal parameters. Abnormal findings can alert skilled birth attendants to the need for reassessment, intervention, or referral.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "A woman in labour has a sudden gush of fluid followed by the passage of thick meconium-stained liquor. What is the most appropriate action?",
+"choices": [
+{"text": "Reassure her that meconium always indicates a healthy fetus", "is_correct": false},
+{"text": "Encourage her to remain at home until the next morning", "is_correct": false},
+{"text": "Arrange urgent skilled assessment and referral to a facility with appropriate newborn care", "is_correct": true},
+{"text": "Attempt routine vaginal cleansing with antiseptic solution", "is_correct": false}
+],
+"rationale": "Meconium-stained liquor may be associated with fetal compromise and creates a risk of neonatal respiratory complications. Prompt assessment of fetal wellbeing and delivery in a facility with appropriate newborn resuscitation capacity are important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "Which practice is most appropriate for preventing infection during childbirth?",
+"choices": [
+{"text": "Using clean hands, sterile instruments, and appropriate infection prevention procedures", "is_correct": true},
+{"text": "Reusing delivery instruments without cleaning or sterilisation", "is_correct": false},
+{"text": "Applying unsterilised substances to the umbilical cord", "is_correct": false},
+{"text": "Avoiding hand hygiene when gloves are available", "is_correct": false}
+],
+"rationale": "Hand hygiene, appropriate personal protective equipment, clean delivery practices, and sterile instruments reduce the risk of maternal and neonatal infection. Gloves do not replace hand hygiene.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "During labour at a CHPS compound, a woman develops severe vaginal bleeding before the baby is delivered. What is the priority action?",
+"choices": [
+{"text": "Encourage her to walk around to reduce the bleeding", "is_correct": false},
+{"text": "Recognise an obstetric emergency, initiate immediate stabilisation within scope, and arrange urgent referral", "is_correct": true},
+{"text": "Wait until the placenta is delivered before taking action", "is_correct": false},
+{"text": "Give oral fluids and discharge her home", "is_correct": false}
+],
+"rationale": "Severe bleeding during labour may indicate a life-threatening condition such as placenta praevia or placental abruption. Immediate emergency response, maternal stabilisation, and urgent transfer to a facility with comprehensive obstetric care are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "A woman gives birth at home before the referral vehicle arrives. The newborn is not breathing normally. What should the trained birth attendant prioritise?",
+"choices": [
+{"text": "Delay intervention until the placenta is delivered", "is_correct": false},
+{"text": "Begin immediate newborn assessment and resuscitation according to training and protocol", "is_correct": true},
+{"text": "Place the newborn in a bath of cold water", "is_correct": false},
+{"text": "Feed the newborn glucose water immediately", "is_correct": false}
+],
+"rationale": "A newborn who is not breathing normally requires immediate assessment and prompt resuscitation by a trained provider using appropriate equipment and protocol. Effective ventilation is a critical component of newborn resuscitation when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery at CHPS/Home",
+"question_text": "A woman at term presents with labour, and examination by a skilled provider identifies an abnormal lie of the fetus. What is the most appropriate management?",
+"choices": [
+{"text": "Encourage home delivery because abnormal lie usually corrects itself during birth", "is_correct": false},
+{"text": "Arrange urgent referral to a facility capable of providing comprehensive obstetric care", "is_correct": true},
+{"text": "Ask the family to apply abdominal pressure to turn the fetus", "is_correct": false},
+{"text": "Allow labour to continue without monitoring", "is_correct": false}
+],
+"rationale": "An abnormal fetal lie, such as a transverse lie, can obstruct vaginal delivery and endanger both mother and fetus. The woman requires skilled assessment and delivery planning in a facility with appropriate emergency obstetric capacity.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "What is the recommended minimum duration for exclusive breastfeeding?",
+"choices": [
+{"text": "Two months", "is_correct": false},
+{"text": "Four months", "is_correct": false},
+{"text": "Six months", "is_correct": true},
+{"text": "Twelve months without complementary feeding", "is_correct": false}
+],
+"rationale": "Exclusive breastfeeding is recommended for the first six months of life. At six months, appropriate complementary foods should be introduced while breastfeeding continues.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "A mother who delivered 24 hours ago has a boggy uterus and heavy vaginal bleeding. What should the nurse do first?",
+"choices": [
+{"text": "Recognise possible uterine atony, call for help, and initiate immediate postpartum haemorrhage management", "is_correct": true},
+{"text": "Advise the mother to sleep and reassess the next day", "is_correct": false},
+{"text": "Encourage the mother to walk around", "is_correct": false},
+{"text": "Discharge the mother because bleeding is expected after delivery", "is_correct": false}
+],
+"rationale": "A boggy uterus with heavy bleeding strongly suggests uterine atony, a major cause of postpartum haemorrhage. Immediate action includes calling for assistance, uterine massage by a trained provider, appropriate uterotonic treatment, assessment of blood loss, and escalation of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "Which of the following is a danger sign during the postnatal period?",
+"choices": [
+{"text": "Mild afterpains during breastfeeding", "is_correct": false},
+{"text": "Heavy vaginal bleeding accompanied by dizziness", "is_correct": true},
+{"text": "Gradual establishment of breast milk production", "is_correct": false},
+{"text": "Mild tiredness after childbirth", "is_correct": false}
+],
+"rationale": "Heavy bleeding with dizziness may indicate significant blood loss and maternal circulatory compromise. The mother requires urgent medical assessment rather than routine postnatal reassurance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "A breastfeeding mother asks when she can begin using family planning. What is the best response?",
+"choices": [
+{"text": "Family planning should only begin after breastfeeding has completely stopped", "is_correct": false},
+{"text": "She can discuss suitable postpartum contraceptive options with a trained provider before resuming sexual activity", "is_correct": true},
+{"text": "All contraceptive methods are unsuitable during breastfeeding", "is_correct": false},
+{"text": "She cannot become pregnant before her first menstrual period", "is_correct": false}
+],
+"rationale": "Postpartum family planning counselling should begin during pregnancy or soon after delivery so that women can make informed choices. Suitable methods depend on timing after birth, breastfeeding status, medical eligibility, and the woman's preferences.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "Which condition must be present for the lactational amenorrhoea method (LAM) to be used as a contraceptive method?",
+"choices": [
+{"text": "The baby is younger than six months, the mother remains amenorrhoeic, and breastfeeding is exclusive or nearly exclusive", "is_correct": true},
+{"text": "The baby is older than one year and receives complementary foods", "is_correct": false},
+{"text": "The mother has resumed regular menstruation", "is_correct": false},
+{"text": "The mother breastfeeds only once daily", "is_correct": false}
+],
+"rationale": "LAM is effective only when all three criteria are met: the infant is under six months, the mother has not resumed menstruation, and breastfeeding is exclusive or nearly exclusive and frequent. If any criterion changes, another contraceptive method should be considered promptly.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "During a postnatal home visit, a mother reports fever, lower abdominal pain, and foul-smelling vaginal discharge five days after delivery. What should the community health nurse suspect?",
+"choices": [
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Postpartum infection or puerperal sepsis", "is_correct": true},
+{"text": "Normal breast engorgement", "is_correct": false},
+{"text": "Physiological postpartum amenorrhoea", "is_correct": false}
+],
+"rationale": "Fever, lower abdominal pain, and foul-smelling lochia are concerning features of postpartum genital tract infection. Prompt referral for clinical assessment and treatment is necessary to prevent progression to sepsis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "A mother reports painful breast engorgement and difficulty attaching her newborn to the breast. What is the most appropriate initial intervention?",
+"choices": [
+{"text": "Advise her to stop breastfeeding permanently", "is_correct": false},
+{"text": "Assess positioning and attachment, encourage frequent feeding, and support effective milk removal", "is_correct": true},
+{"text": "Restrict breastfeeding to once every 24 hours", "is_correct": false},
+{"text": "Apply excessive pressure to the breast during feeding", "is_correct": false}
+],
+"rationale": "Poor attachment and ineffective milk removal can contribute to breast engorgement and nipple pain. Skilled breastfeeding support, frequent feeding, and gentle expression when necessary can improve comfort and milk transfer.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "A woman who delivered two weeks ago says she has persistent sadness, guilt, loss of interest, and difficulty caring for herself and her baby. What is the most appropriate response?",
+"choices": [
+{"text": "Tell her that all mothers experience these symptoms and no assessment is needed", "is_correct": false},
+{"text": "Assess her mental health and arrange appropriate professional support", "is_correct": true},
+{"text": "Advise her to avoid all contact with family members", "is_correct": false},
+{"text": "Recommend that she stop breastfeeding immediately", "is_correct": false}
+],
+"rationale": "Persistent depressive symptoms that interfere with functioning may indicate postpartum depression and require assessment. Early identification, psychosocial support, and appropriate mental health referral can improve outcomes for both mother and infant.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "A mother who delivered three days ago develops sudden breathlessness, chest pain, and collapse. What is the priority nursing action?",
+"choices": [
+{"text": "Arrange an urgent emergency response and assess airway, breathing, and circulation", "is_correct": true},
+{"text": "Advise her to take a warm bath", "is_correct": false},
+{"text": "Reassure her that breathlessness is always normal after childbirth", "is_correct": false},
+{"text": "Encourage her to walk to improve circulation", "is_correct": false}
+],
+"rationale": "Sudden breathlessness and chest pain in the postpartum period may indicate pulmonary embolism or another life-threatening cardiopulmonary emergency. Immediate emergency assessment and stabilisation are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Care and Family Planning",
+"question_text": "Which statement about postpartum family planning counselling is correct?",
+"choices": [
+{"text": "The provider should select a contraceptive method without involving the woman", "is_correct": false},
+{"text": "Counselling should provide accurate information and support voluntary informed choice", "is_correct": true},
+{"text": "Family planning should be discussed only with the woman's husband", "is_correct": false},
+{"text": "A woman should be denied contraception if she has not previously used it", "is_correct": false}
+],
+"rationale": "Family planning counselling should be voluntary, confidential, respectful, and based on informed choice. The woman should receive information about available methods, benefits, risks, and follow-up requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Pre-eclampsia is best described as:",
+"choices": [
+{"text": "Hypertension that develops before 12 weeks of pregnancy in every case", "is_correct": false},
+{"text": "New-onset hypertension after 20 weeks of pregnancy associated with proteinuria and/or evidence of maternal organ dysfunction", "is_correct": true},
+{"text": "Low blood pressure occurring during labour", "is_correct": false},
+{"text": "A condition characterised only by excessive fetal movement", "is_correct": false}
+],
+"rationale": "Pre-eclampsia is a pregnancy-specific hypertensive disorder that usually develops after 20 weeks of gestation. It involves new-onset hypertension with proteinuria and/or other evidence of maternal organ dysfunction.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A pregnant woman at 34 weeks has a blood pressure of 170/115 mmHg and severe headache. What should the community health nurse do?",
+"choices": [
+{"text": "Arrange immediate emergency referral while initiating appropriate care within scope", "is_correct": true},
+{"text": "Advise her to reduce salt intake and return in one month", "is_correct": false},
+{"text": "Allow her to continue normal activities without assessment", "is_correct": false},
+{"text": "Recommend herbal treatment and home observation", "is_correct": false}
+],
+"rationale": "Severe-range hypertension with headache suggests severe pre-eclampsia and carries a risk of stroke, eclampsia, and other complications. Urgent treatment and assessment at an appropriate obstetric facility are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Which medication is commonly used to prevent and control seizures in women with severe pre-eclampsia and eclampsia?",
+"choices": [
+{"text": "Magnesium sulphate", "is_correct": true},
+{"text": "Paracetamol", "is_correct": false},
+{"text": "Ferrous sulphate", "is_correct": false},
+{"text": "Amoxicillin", "is_correct": false}
+],
+"rationale": "Magnesium sulphate is the recommended anticonvulsant for prevention and treatment of eclamptic seizures in appropriate clinical settings. It must be administered by trained personnel with monitoring for toxicity according to protocol.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A woman with eclampsia begins convulsing at a health facility. Which action should be prioritised?",
+"choices": [
+{"text": "Restrain her limbs forcefully to stop the convulsion", "is_correct": false},
+{"text": "Protect her from injury, maintain airway safety, summon emergency assistance, and prepare for protocol-based treatment", "is_correct": true},
+{"text": "Place a spoon in her mouth to prevent tongue biting", "is_correct": false},
+{"text": "Give oral medication while she is convulsing", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, maternal safety and airway protection are immediate priorities. The team should provide emergency stabilisation, administer magnesium sulphate according to protocol, control severe hypertension, and plan appropriate obstetric management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Which combination of findings is most suggestive of severe pre-eclampsia?",
+"choices": [
+{"text": "Mild nausea and normal blood pressure", "is_correct": false},
+{"text": "Severe hypertension, persistent headache, and visual disturbances", "is_correct": true},
+{"text": "Increased appetite and mild ankle swelling alone", "is_correct": false},
+{"text": "Occasional fetal hiccups and normal maternal observations", "is_correct": false}
+],
+"rationale": "Severe hypertension with neurological symptoms such as persistent headache and visual disturbance indicates a high risk of serious maternal complications. The woman requires urgent assessment and management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A woman with severe pre-eclampsia is receiving magnesium sulphate. She becomes drowsy, her respiratory rate falls markedly, and her deep tendon reflexes are absent. What complication should the nurse suspect?",
+"choices": [
+{"text": "Magnesium sulphate toxicity", "is_correct": true},
+{"text": "Normal physiological response to pregnancy", "is_correct": false},
+{"text": "Iron-deficiency anaemia", "is_correct": false},
+{"text": "Gestational diabetes", "is_correct": false}
+],
+"rationale": "Loss of deep tendon reflexes, respiratory depression, and reduced consciousness are warning signs of magnesium sulphate toxicity. The infusion should be stopped and urgent clinical assistance obtained, with further management including the appropriate antidote according to protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Why is regular blood pressure monitoring important during antenatal care?",
+"choices": [
+{"text": "It helps identify hypertensive disorders of pregnancy before serious complications develop", "is_correct": true},
+{"text": "It determines the exact date of conception", "is_correct": false},
+{"text": "It replaces all other antenatal investigations", "is_correct": false},
+{"text": "It confirms the position of the placenta", "is_correct": false}
+],
+"rationale": "Regular blood pressure assessment supports early detection of gestational hypertension and pre-eclampsia. Early recognition allows timely investigation, management, and referral to reduce maternal and fetal risks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A pregnant woman with known hypertension reports severe epigastric pain, vomiting, and malaise. What is the most appropriate interpretation?",
+"choices": [
+{"text": "These are harmless symptoms that always occur in late pregnancy", "is_correct": false},
+{"text": "She may have severe pre-eclampsia or HELLP syndrome and needs urgent assessment", "is_correct": true},
+{"text": "She is definitely experiencing normal labour", "is_correct": false},
+{"text": "The symptoms confirm that the fetus is in a breech position", "is_correct": false}
+],
+"rationale": "Epigastric or right upper quadrant pain, vomiting, and malaise may indicate severe pre-eclampsia or HELLP syndrome. These conditions can deteriorate rapidly and require urgent obstetric assessment and management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "Postpartum haemorrhage is commonly defined as blood loss of at least how much following vaginal birth under the traditional definition?",
+"choices": [
+{"text": "100 mL", "is_correct": false},
+{"text": "250 mL", "is_correct": false},
+{"text": "500 mL", "is_correct": true},
+{"text": "2,000 mL", "is_correct": false}
+],
+"rationale": "The traditional definition of primary postpartum haemorrhage is blood loss of 500 mL or more within 24 hours after birth. Clinical guidelines also emphasise early recognition of abnormal bleeding and signs of haemodynamic compromise rather than relying solely on a measured volume.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "Which of the following is the most common cause of primary postpartum haemorrhage?",
+"choices": [
+{"text": "Uterine atony", "is_correct": true},
+{"text": "Maternal constipation", "is_correct": false},
+{"text": "Neonatal hypothermia", "is_correct": false},
+{"text": "Maternal urinary tract infection", "is_correct": false}
+],
+"rationale": "Uterine atony occurs when the uterus fails to contract effectively after delivery, allowing continued bleeding from the placental site. It is the leading cause of primary postpartum haemorrhage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops heavy bleeding immediately after delivery. Her uterus is soft and enlarged. What is the most likely cause?",
+"choices": [
+{"text": "Uterine atony", "is_correct": true},
+{"text": "Cervical cancer", "is_correct": false},
+{"text": "Normal lochia", "is_correct": false},
+{"text": "Urinary retention alone", "is_correct": false}
+],
+"rationale": "A soft, enlarged or boggy uterus with excessive bleeding is characteristic of uterine atony. Immediate management should follow the postpartum haemorrhage protocol while the team assesses for additional causes of bleeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "Which group correctly identifies the traditional four major causes of postpartum haemorrhage?",
+"choices": [
+{"text": "Tone, trauma, tissue, and thrombin", "is_correct": true},
+{"text": "Temperature, tension, tissue, and thirst", "is_correct": false},
+{"text": "Trauma, tachycardia, temperature, and thyroid disease", "is_correct": false},
+{"text": "Tone, respiration, tissue, and renal failure", "is_correct": false}
+],
+"rationale": "The four Ts are tone (uterine atony), trauma (genital tract injury), tissue (retained placental tissue), and thrombin (coagulation disorders). This framework helps clinicians systematically identify the cause of postpartum bleeding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman has persistent heavy bleeding after delivery despite initial uterine massage. What should the nurse do next?",
+"choices": [
+{"text": "Continue observation without informing anyone", "is_correct": false},
+{"text": "Activate the postpartum haemorrhage response, obtain urgent assistance, and support protocol-based treatment and referral", "is_correct": true},
+{"text": "Give the woman food and discharge her", "is_correct": false},
+{"text": "Wait until the bleeding stops spontaneously", "is_correct": false}
+],
+"rationale": "Persistent bleeding after initial measures indicates an ongoing obstetric emergency. A coordinated response should include rapid assessment, appropriate uterotonics and other indicated interventions, intravenous access and fluid or blood replacement as clinically indicated, and escalation to comprehensive emergency obstetric care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman has severe postpartum bleeding, a firm contracted uterus, and a visible deep vaginal tear. Which cause of haemorrhage is most likely?",
+"choices": [
+{"text": "Genital tract trauma", "is_correct": true},
+{"text": "Uterine atony", "is_correct": false},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Breast engorgement", "is_correct": false}
+],
+"rationale": "A firm uterus with continuing heavy bleeding suggests that uterine atony is less likely and that trauma should be considered. Genital tract tears require prompt examination and repair by an appropriately skilled provider.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "Which of the following is a major purpose of an obstetric referral system?",
+"choices": [
+{"text": "To delay treatment until the patient reaches a tertiary hospital", "is_correct": false},
+{"text": "To ensure that women with complications receive timely care at a facility with the required level of expertise", "is_correct": true},
+{"text": "To prevent communication between health facilities", "is_correct": false},
+{"text": "To replace emergency stabilisation at the referring facility", "is_correct": false}
+],
+"rationale": "An effective referral system links community-level services with facilities capable of providing higher levels of obstetric and neonatal care. Timely referral, communication, transport, and stabilisation help reduce preventable maternal and newborn deaths.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "A pregnant woman at 36 weeks experiences sudden severe abdominal pain, vaginal bleeding, and a tense tender uterus. What condition should the nurse suspect?",
+"choices": [
+{"text": "Placental abruption", "is_correct": true},
+{"text": "Normal Braxton Hicks contractions", "is_correct": false},
+{"text": "Uncomplicated urinary frequency", "is_correct": false},
+{"text": "Physiological breast changes", "is_correct": false}
+],
+"rationale": "Placental abruption is the premature separation of the placenta from the uterine wall and may cause abdominal pain, uterine tenderness, and vaginal bleeding. It is an obstetric emergency requiring urgent assessment and management, even when visible bleeding is limited.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "During a home visit, a pregnant woman suddenly collapses and is unresponsive. What should the community health nurse prioritise?",
+"choices": [
+{"text": "Assess responsiveness, activate emergency assistance, and assess airway, breathing, and circulation", "is_correct": true},
+{"text": "Give her oral fluids immediately", "is_correct": false},
+{"text": "Leave her alone while searching for her antenatal card", "is_correct": false},
+{"text": "Wait for spontaneous recovery before calling for help", "is_correct": false}
+],
+"rationale": "An unresponsive pregnant woman requires immediate emergency assessment using the basic life support approach. Emergency services should be activated promptly, and resuscitation should be provided according to current training and protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "A woman in labour has a prolapsed umbilical cord. Which action is most appropriate while urgent transfer or emergency delivery is arranged?",
+"choices": [
+{"text": "Allow the presenting part to compress the cord while waiting", "is_correct": false},
+{"text": "Relieve pressure on the cord using an appropriate trained-provider manoeuvre, position the woman to reduce compression, and arrange immediate emergency obstetric care", "is_correct": true},
+{"text": "Attempt to push the cord back into the uterus repeatedly", "is_correct": false},
+{"text": "Ask the woman to walk to the nearest facility", "is_correct": false}
+],
+"rationale": "Umbilical cord prolapse can cause acute fetal hypoxia because the cord may be compressed by the presenting part. Immediate action to relieve compression and expedite emergency obstetric management is essential; unnecessary handling of the exposed cord should be avoided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "A pregnant woman with severe bleeding is being referred from a CHPS compound. Which information is most important to communicate to the receiving facility?",
+"choices": [
+{"text": "Only the woman's residential community", "is_correct": false},
+{"text": "The woman's clinical condition, gestational age, estimated bleeding, vital signs, interventions given, and response to treatment", "is_correct": true},
+{"text": "The names of all people who accompanied her", "is_correct": false},
+{"text": "Only the time she first registered for antenatal care", "is_correct": false}
+],
+"rationale": "A structured referral handover ensures continuity of care and allows the receiving team to prepare for the woman's immediate needs. Relevant clinical findings, treatment provided, and the woman's response should be documented and communicated clearly.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "A pregnant woman at 30 weeks develops painless, bright-red vaginal bleeding. What is the most likely condition?",
+"choices": [
+{"text": "Placenta praevia", "is_correct": true},
+{"text": "Placental abruption in every case", "is_correct": false},
+{"text": "Normal cervical dilatation", "is_correct": false},
+{"text": "Postpartum haemorrhage", "is_correct": false}
+],
+"rationale": "Placenta praevia commonly presents with painless vaginal bleeding in the second half of pregnancy. The woman needs urgent hospital assessment, and digital vaginal examination should be avoided until placenta praevia has been excluded by appropriate clinical assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "A woman with suspected ruptured ectopic pregnancy presents with severe abdominal pain, pallor, dizziness, and a weak rapid pulse. What is the priority?",
+"choices": [
+{"text": "Arrange immediate emergency referral and support resuscitation", "is_correct": true},
+{"text": "Advise her to take oral analgesics and return in one week", "is_correct": false},
+{"text": "Encourage her to walk to relieve abdominal discomfort", "is_correct": false},
+{"text": "Provide routine antenatal counselling only", "is_correct": false}
+],
+"rationale": "A ruptured ectopic pregnancy can cause life-threatening internal haemorrhage and hypovolaemic shock. Immediate emergency referral and resuscitative support are essential to prevent maternal death.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies and Referral",
+"question_text": "A woman with obstructed labour has been in labour for many hours, with no descent of the presenting part and increasing maternal exhaustion. What is the most appropriate action?",
+"choices": [
+{"text": "Continue labour at home without reassessment", "is_correct": false},
+{"text": "Recognise possible obstructed labour and arrange urgent transfer for comprehensive obstetric management", "is_correct": true},
+{"text": "Apply strong fundal pressure to force delivery", "is_correct": false},
+{"text": "Give food and encourage prolonged walking", "is_correct": false}
+],
+"rationale": "Failure of labour to progress with no descent and maternal exhaustion may indicate obstructed labour. Continued delay can result in uterine rupture, haemorrhage, infection, and fetal compromise, so urgent skilled intervention is required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "Which statement best describes postpartum depression?",
+"choices": [
+{"text": "A persistent depressive condition occurring after childbirth that may impair maternal functioning", "is_correct": true},
+{"text": "A brief period of happiness immediately after delivery", "is_correct": false},
+{"text": "A normal physical process involving uterine contraction", "is_correct": false},
+{"text": "A condition that affects only women who have had caesarean sections", "is_correct": false}
+],
+"rationale": "Postpartum depression involves persistent depressive symptoms that may include low mood, loss of interest, guilt, sleep disturbance, and difficulty functioning. It can affect mothers after any type of birth and requires appropriate assessment and support.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A mother tells a community health nurse that she feels overwhelmed and cries frequently since giving birth. What is the most appropriate initial response?",
+"choices": [
+{"text": "Listen without judgement, assess her symptoms and safety, and identify appropriate support", "is_correct": true},
+{"text": "Tell her that motherhood should always make women happy", "is_correct": false},
+{"text": "Ignore her concerns because emotional changes are never clinically important", "is_correct": false},
+{"text": "Inform the entire community about her emotional difficulties", "is_correct": false}
+],
+"rationale": "Empathetic listening and respectful assessment help identify the severity and nature of postpartum emotional difficulties. The nurse should assess functioning, available support, and possible risks, including thoughts of self-harm or harm to the baby.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "Which feature most strongly suggests postpartum psychosis rather than ordinary postpartum emotional adjustment?",
+"choices": [
+{"text": "Mild tiredness after night feeding", "is_correct": false},
+{"text": "Hallucinations, delusions, or severe confusion following childbirth", "is_correct": true},
+{"text": "Temporary concern about caring for a newborn", "is_correct": false},
+{"text": "Mild breast discomfort during breastfeeding", "is_correct": false}
+],
+"rationale": "Postpartum psychosis may involve hallucinations, delusions, disorganised behaviour, and severe confusion. It is a psychiatric emergency requiring immediate specialist assessment to protect both the mother and infant.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "During a postnatal home visit, a mother says she has thoughts of killing herself and has planned how to do it. What is the nurse's priority?",
+"choices": [
+{"text": "Maintain her safety, do not leave her unsupported, and arrange immediate emergency mental health assessment", "is_correct": true},
+{"text": "Advise her to keep the thoughts secret", "is_correct": false},
+{"text": "Tell her to wait until the next routine postnatal appointment", "is_correct": false},
+{"text": "Discharge her from follow-up because she has expressed her feelings", "is_correct": false}
+],
+"rationale": "Suicidal thoughts accompanied by a plan indicate an immediate risk of self-harm. The nurse must ensure the mother is not left unsupported, involve appropriate emergency services and trusted support where safe, and arrange urgent professional assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A mother with postpartum depression has limited family support and difficulty attending clinic appointments. Which community intervention is most appropriate?",
+"choices": [
+{"text": "Provide supportive follow-up, link her with appropriate mental health services, and explore practical sources of support", "is_correct": true},
+{"text": "Stop all contact with the mother to encourage independence", "is_correct": false},
+{"text": "Tell her that mental health care is unnecessary after childbirth", "is_correct": false},
+{"text": "Share her diagnosis publicly to obtain community attention", "is_correct": false}
+],
+"rationale": "Community-based follow-up can improve access to care for mothers who face social or transport barriers. Support should be confidential and coordinated with appropriate mental health and maternal health services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Birth Attendants (TBAs)",
+"question_text": "What is the most appropriate role of a traditional birth attendant within a coordinated maternal healthcare system?",
+"choices": [
+{"text": "To independently manage all complicated deliveries", "is_correct": false},
+{"text": "To support maternal health education, encourage skilled facility delivery, and facilitate timely referral", "is_correct": true},
+{"text": "To replace trained midwives in managing obstetric emergencies", "is_correct": false},
+{"text": "To prescribe emergency obstetric medicines without authorisation", "is_correct": false}
+],
+"rationale": "TBAs can contribute to community engagement, birth preparedness, recognition of danger signs, and early referral. They should not be considered substitutes for skilled birth attendants or emergency obstetric services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Traditional Birth Attendants (TBAs)",
+"question_text": "A TBA notices that a pregnant woman has severe vaginal bleeding during labour. What should the TBA do?",
+"choices": [
+{"text": "Attempt to manage the bleeding with herbal preparations", "is_correct": false},
+{"text": "Arrange immediate referral to an appropriate health facility and communicate the emergency", "is_correct": true},
+{"text": "Wait until the bleeding stops before seeking help", "is_correct": false},
+{"text": "Encourage the woman to deliver without skilled assistance", "is_correct": false}
+],
+"rationale": "Severe bleeding during labour is a life-threatening obstetric emergency that requires urgent skilled care. A TBA should activate the referral pathway immediately and avoid interventions that may delay definitive treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Birth Attendants (TBAs)",
+"question_text": "A community health nurse is working with TBAs in a rural community. Which activity best promotes safe motherhood?",
+"choices": [
+{"text": "Training TBAs to recognise maternal danger signs and promptly refer women to skilled care", "is_correct": true},
+{"text": "Encouraging TBAs to perform all emergency obstetric procedures", "is_correct": false},
+{"text": "Discouraging pregnant women from attending antenatal clinics", "is_correct": false},
+{"text": "Allowing TBAs to keep obstetric emergencies within the community", "is_correct": false}
+],
+"rationale": "Collaboration with TBAs can strengthen early recognition of complications and improve referral from underserved communities. Such collaboration should support, rather than replace, skilled maternity care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Birth Attendants (TBAs)",
+"question_text": "A TBA refuses to refer a woman with prolonged labour because the family prefers traditional delivery practices. What should the community health nurse do?",
+"choices": [
+{"text": "Respect the decision without explaining the risks", "is_correct": false},
+{"text": "Use respectful communication to explain the danger of prolonged labour, involve the woman and family, and facilitate urgent referral", "is_correct": true},
+{"text": "Threaten the family and end all communication", "is_correct": false},
+{"text": "Encourage the TBA to continue the delivery regardless of the woman's condition", "is_correct": false}
+],
+"rationale": "Prolonged labour may indicate obstruction and can lead to severe maternal and fetal complications. Respectful communication, clear explanation of risks, and prompt referral are essential while maintaining the woman's dignity and autonomy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "Which activity is a core responsibility of a community health nurse involved in maternal health services?",
+"choices": [
+{"text": "Conducting health education, identifying pregnancy risks, supporting follow-up, and facilitating referral", "is_correct": true},
+{"text": "Performing major obstetric surgery at a CHPS compound", "is_correct": false},
+{"text": "Prescribing all specialist obstetric treatments independently", "is_correct": false},
+{"text": "Replacing all hospital-based maternity services", "is_correct": false}
+],
+"rationale": "Community maternal health practice focuses on prevention, early identification of risks, health promotion, continuity of care, and referral. Clinical activities must remain within the provider's competence, professional scope, and applicable GHS protocols.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "During a community outreach session, several pregnant women report using untreated river water for drinking. What should the community health nurse prioritise in health education?",
+"choices": [
+{"text": "Explain safe water treatment, storage, hand hygiene, and sanitation practices", "is_correct": true},
+{"text": "Advise them to stop drinking water during pregnancy", "is_correct": false},
+{"text": "Recommend using river water without treatment if it looks clear", "is_correct": false},
+{"text": "Focus only on the colour of the water", "is_correct": false}
+],
+"rationale": "Safe water, sanitation, and hygiene reduce the risk of diarrhoeal and other infectious diseases that can affect pregnant women and their families. Community education should include appropriate water treatment, safe storage, handwashing, and environmental sanitation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "A pregnant woman who is registered with the NHIS asks whether she should still attend antenatal care if she feels healthy. What is the best response?",
+"choices": [
+{"text": "Antenatal care is necessary only when symptoms develop", "is_correct": false},
+{"text": "Regular antenatal care remains important because some pregnancy complications develop without obvious early symptoms", "is_correct": true},
+{"text": "NHIS registration removes the need for clinical assessment", "is_correct": false},
+{"text": "She should attend only during the final week of pregnancy", "is_correct": false}
+],
+"rationale": "Many pregnancy complications may initially be asymptomatic and can only be identified through appropriate assessment and screening. NHIS membership may support access to covered services, but it does not replace the need for regular antenatal care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "A community health nurse identifies that many pregnant adolescents in a community do not attend antenatal care because of stigma. Which intervention is most appropriate?",
+"choices": [
+{"text": "Provide confidential, non-judgemental adolescent-friendly maternal health services and community education", "is_correct": true},
+{"text": "Publicly identify adolescents who are pregnant", "is_correct": false},
+{"text": "Refuse antenatal services to unmarried pregnant adolescents", "is_correct": false},
+{"text": "Advise adolescents to avoid all health facilities", "is_correct": false}
+],
+"rationale": "Stigma can prevent adolescents from accessing essential maternal health services and increase the risk of preventable complications. Confidential, respectful, adolescent-friendly care helps improve service uptake and continuity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "A community health nurse reviews maternal health records and finds that several women who experienced obstetric complications did not complete their referrals. What should the nurse do first?",
+"choices": [
+{"text": "Ignore the records because referral completion is the hospital's responsibility", "is_correct": false},
+{"text": "Identify barriers to referral completion and coordinate follow-up with the women and relevant health facilities", "is_correct": true},
+{"text": "Remove the women's names from the maternal health register", "is_correct": false},
+{"text": "Stop referring women from the community", "is_correct": false}
+],
+"rationale": "Reviewing referral outcomes helps identify barriers such as transport costs, poor communication, and family decision-making delays. Coordinated follow-up strengthens continuity of care and helps prevent complications from being missed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "Which approach best supports respectful maternity care in a community health setting?",
+"choices": [
+{"text": "Obtaining informed consent, protecting privacy, and treating every woman with dignity", "is_correct": true},
+{"text": "Making decisions without explaining procedures to the woman", "is_correct": false},
+{"text": "Allowing discriminatory treatment based on age or marital status", "is_correct": false},
+{"text": "Discussing confidential maternal health information openly in public", "is_correct": false}
+],
+"rationale": "Respectful maternity care protects the woman's dignity, autonomy, privacy, and right to informed decision-making. It also promotes trust and encourages women to use skilled maternal health services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "A community health nurse visits a woman who delivered at home two days ago. The mother appears pale and weak, has a rapid pulse, and reports soaking several pads with blood. What is the most appropriate action?",
+"choices": [
+{"text": "Treat the bleeding as normal lochia and arrange a visit in one week", "is_correct": false},
+{"text": "Suspect postpartum haemorrhage, initiate emergency referral, and support immediate stabilisation", "is_correct": true},
+{"text": "Advise her to reduce breastfeeding until the bleeding stops", "is_correct": false},
+{"text": "Recommend traditional abdominal massage and home observation", "is_correct": false}
+],
+"rationale": "Heavy postpartum bleeding with pallor, weakness, and tachycardia suggests significant blood loss and possible haemodynamic compromise. The woman requires immediate emergency assessment and treatment at an appropriate health facility.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "A community health nurse is preparing a maternal health education session for women of reproductive age. Which topic is most appropriate for preventing maternal complications?",
+"choices": [
+{"text": "Recognition of pregnancy danger signs and the importance of early care-seeking", "is_correct": true},
+{"text": "Avoiding all contact with health professionals during pregnancy", "is_correct": false},
+{"text": "Using unverified medicines to manage pregnancy complications at home", "is_correct": false},
+{"text": "Delaying referral until a woman becomes unconscious", "is_correct": false}
+],
+"rationale": "Education on danger signs helps women and families recognise complications such as bleeding, severe headache, convulsions, fever, and reduced fetal movement. Early care-seeking and timely referral are important strategies for reducing maternal and perinatal mortality.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "A woman in a rural community has missed several antenatal appointments because her family believes pregnancy is a normal condition that does not require medical attention. Which intervention is most appropriate?",
+"choices": [
+{"text": "Conduct respectful family-centred health education while maintaining the woman's autonomy and encouraging antenatal attendance", "is_correct": true},
+{"text": "Criticise the family publicly during a community meeting", "is_correct": false},
+{"text": "Advise the woman to attend only if she develops severe pain", "is_correct": false},
+{"text": "Discontinue the woman's antenatal registration", "is_correct": false}
+],
+"rationale": "Family-centred health education can address misconceptions and encourage support for timely antenatal care. The nurse should communicate respectfully while ensuring that the woman's informed choices and confidentiality are protected.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Midwifery Practice",
+"question_text": "A woman at 39 weeks arrives at a CHPS compound with severe abdominal pain, vaginal bleeding, and no detectable fetal heart rate on initial assessment. Her blood pressure is falling and pulse is rapid. What should the nurse prioritise?",
+"choices": [
+{"text": "Provide routine antenatal education and schedule a follow-up visit", "is_correct": false},
+{"text": "Recognise a life-threatening obstetric emergency, activate emergency referral, and initiate maternal stabilisation", "is_correct": true},
+{"text": "Wait for spontaneous delivery before arranging transport", "is_correct": false},
+{"text": "Allow the woman to return home with her relatives", "is_correct": false}
+],
+"rationale": "Severe abdominal pain, bleeding, absent fetal heart activity, and signs of shock may indicate major obstetric complications such as severe placental abruption with fetal death and maternal haemorrhage. Maternal resuscitation and immediate transfer for comprehensive emergency obstetric care are the priorities.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
