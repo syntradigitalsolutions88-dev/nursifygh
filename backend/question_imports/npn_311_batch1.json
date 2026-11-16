@@ -1,0 +1,862 @@
+{
+"courses": [
+{
+"course_code": "NPN-311",
+"course_title": "Nursing Process",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Assessment",
+"NANDA Diagnosis",
+"Planning",
+"Implementation",
+"Evaluation",
+"Documentation",
+"Critical Thinking",
+"Evidence-Based Practice"
+],
+"questions": [
+{
+"topic": "Assessment",
+"question_text": "Which statement best describes the nursing process?",
+"choices": [
+{"text": "A. A systematic, patient-centred method of providing nursing care", "is_correct": true},
+{"text": "B. A medical procedure used exclusively to establish disease diagnoses", "is_correct": false},
+{"text": "C. A routine checklist used only during patient admission", "is_correct": false},
+{"text": "D. A method of carrying out doctors' instructions without independent judgement", "is_correct": false}
+],
+"rationale": "The nursing process is a systematic, dynamic and patient-centred framework for delivering individualised nursing care. It involves assessment, nursing diagnosis, planning, implementation and evaluation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment",
+"question_text": "Which of the following is an example of subjective assessment data?",
+"choices": [
+{"text": "A. Blood pressure of 150/90 mmHg", "is_correct": false},
+{"text": "B. Respiratory rate of 28 breaths per minute", "is_correct": false},
+{"text": "C. Patient reports experiencing severe abdominal pain", "is_correct": true},
+{"text": "D. Temperature of 38.5°C", "is_correct": false}
+],
+"rationale": "Subjective data consist of information reported by the patient or another reliable source about personal experiences and symptoms. Pain is subjective because it cannot be directly measured by the nurse.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment",
+"question_text": "Which of the following is an example of objective data?",
+"choices": [
+{"text": "A. Patient reports feeling dizzy", "is_correct": false},
+{"text": "B. Patient complains of nausea", "is_correct": false},
+{"text": "C. Patient states that breathing is difficult", "is_correct": false},
+{"text": "D. Nurse observes swelling of both lower limbs", "is_correct": true}
+],
+"rationale": "Objective data are observable or measurable findings obtained through physical examination, observation and diagnostic investigations. Bilateral lower-limb swelling can be directly observed by the nurse.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment",
+"question_text": "What is the primary purpose of a comprehensive nursing assessment?",
+"choices": [
+{"text": "A. To determine the patient's ability to pay for treatment", "is_correct": false},
+{"text": "B. To collect relevant information about the patient's health status", "is_correct": true},
+{"text": "C. To establish the medical diagnosis without laboratory investigations", "is_correct": false},
+{"text": "D. To determine the duration of hospital admission", "is_correct": false}
+],
+"rationale": "A comprehensive nursing assessment establishes a baseline of the patient's physical, psychological, social and spiritual health status. The information guides the identification of nursing problems and individualised care planning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment",
+"question_text": "Which assessment technique involves listening to sounds produced within the body?",
+"choices": [
+{"text": "A. Inspection", "is_correct": false},
+{"text": "B. Palpation", "is_correct": false},
+{"text": "C. Auscultation", "is_correct": true},
+{"text": "D. Percussion", "is_correct": false}
+],
+"rationale": "Auscultation involves listening to internal body sounds, commonly with a stethoscope. It is used to assess findings such as heart sounds, breath sounds and bowel sounds.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "What is a nursing diagnosis?",
+"choices": [
+{"text": "A. A clinical judgement about a person's responses to actual or potential health conditions", "is_correct": true},
+{"text": "B. A medical statement identifying the pathological cause of a disease", "is_correct": false},
+{"text": "C. A laboratory report confirming the presence of infection", "is_correct": false},
+{"text": "D. A prescription indicating the medication required by a patient", "is_correct": false}
+],
+"rationale": "A nursing diagnosis is a clinical judgement concerning human responses to health conditions or life processes. It provides the basis for selecting nursing interventions and expected outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "Which organisation develops and maintains the recognised NANDA International nursing diagnosis terminology?",
+"choices": [
+{"text": "A. World Health Organization", "is_correct": false},
+{"text": "B. International Council of Nurses", "is_correct": false},
+{"text": "C. Ghana Health Service", "is_correct": false},
+{"text": "D. NANDA International", "is_correct": true}
+],
+"rationale": "NANDA International develops and maintains standardised nursing diagnoses and related terminology. Its classification supports consistent communication and documentation of nursing judgements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "In a problem-focused nursing diagnosis, what does the term 'related factors' describe?",
+"choices": [
+{"text": "A. The observable signs and symptoms of the condition", "is_correct": false},
+{"text": "B. Factors contributing to or associated with the nursing problem", "is_correct": true},
+{"text": "C. The patient's medical diagnosis only", "is_correct": false},
+{"text": "D. The expected outcome following nursing intervention", "is_correct": false}
+],
+"rationale": "Related factors identify circumstances, conditions or contributing causes associated with a nursing diagnosis. They help the nurse select interventions that address the underlying contributors to the problem.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Planning",
+"question_text": "Which phase of the nursing process involves establishing measurable patient outcomes and selecting appropriate nursing interventions?",
+"choices": [
+{"text": "A. Assessment", "is_correct": false},
+{"text": "B. Nursing diagnosis", "is_correct": false},
+{"text": "C. Planning", "is_correct": true},
+{"text": "D. Evaluation", "is_correct": false}
+],
+"rationale": "Planning involves prioritising nursing diagnoses, establishing expected outcomes and selecting appropriate interventions. The plan should be individualised and based on assessment findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Planning",
+"question_text": "Which characteristic is essential for a well-written expected patient outcome?",
+"choices": [
+{"text": "A. It should be measurable and time-bound", "is_correct": true},
+{"text": "B. It should describe only the nurse's activities", "is_correct": false},
+{"text": "C. It should contain medical terminology without a measurable target", "is_correct": false},
+{"text": "D. It should remain unchanged regardless of the patient's condition", "is_correct": false}
+],
+"rationale": "Expected outcomes should describe observable or measurable changes in the patient's condition within a specified period. This allows the nurse to determine whether the planned care has achieved its intended purpose.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Implementation",
+"question_text": "Which statement best defines the implementation phase of the nursing process?",
+"choices": [
+{"text": "A. Collecting information about the patient's health", "is_correct": false},
+{"text": "B. Identifying actual and potential nursing problems", "is_correct": false},
+{"text": "C. Comparing patient outcomes with established goals", "is_correct": false},
+{"text": "D. Carrying out planned nursing interventions", "is_correct": true}
+],
+"rationale": "Implementation is the phase in which planned nursing interventions are performed to achieve expected patient outcomes. It includes direct care, patient education, coordination and appropriate delegation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Evaluation",
+"question_text": "What is the main purpose of evaluation in the nursing process?",
+"choices": [
+{"text": "A. To establish the patient's initial health status", "is_correct": false},
+{"text": "B. To determine whether expected patient outcomes have been achieved", "is_correct": true},
+{"text": "C. To identify the medical cause of every symptom", "is_correct": false},
+{"text": "D. To replace the need for nursing documentation", "is_correct": false}
+],
+"rationale": "Evaluation determines the extent to which planned patient outcomes have been achieved. The findings guide decisions to continue, modify or discontinue nursing interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Documentation",
+"question_text": "Which principle should guide nursing documentation?",
+"choices": [
+{"text": "A. Record information at the end of the week", "is_correct": false},
+{"text": "B. Document personal opinions about the patient's behaviour", "is_correct": false},
+{"text": "C. Make entries accurate, factual, timely and complete", "is_correct": true},
+{"text": "D. Record only abnormal findings and omit relevant normal findings", "is_correct": false}
+],
+"rationale": "Nursing documentation should be accurate, objective, timely, complete and legible. Proper records support continuity of care, communication, accountability and legal protection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "Which statement best describes critical thinking in nursing practice?",
+"choices": [
+{"text": "A. Making decisions based solely on personal experience", "is_correct": false},
+{"text": "B. Following established routines without questioning their relevance", "is_correct": false},
+{"text": "C. Accepting all information provided by colleagues without verification", "is_correct": false},
+{"text": "D. Analysing information objectively before making clinical decisions", "is_correct": true}
+],
+"rationale": "Critical thinking involves purposeful analysis, interpretation and evaluation of information before reaching a clinical judgement. It helps nurses make safe, logical and evidence-informed decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Evidence-Based Practice",
+"question_text": "Which combination represents the three central components of evidence-based practice?",
+"choices": [
+{"text": "A. Best available research evidence, clinical expertise and patient values and preferences", "is_correct": true},
+{"text": "B. Hospital policies, personal opinions and traditional practices", "is_correct": false},
+{"text": "C. Medical prescriptions, nursing routines and administrative instructions", "is_correct": false},
+{"text": "D. Laboratory results, patient age and hospital financial resources", "is_correct": false}
+],
+"rationale": "Evidence-based practice integrates the best available research evidence with professional clinical expertise and the patient's values and preferences. These components support informed and individualised clinical decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment",
+"question_text": "A nurse is preparing to conduct an initial nursing assessment. Which source should generally provide the primary information when the patient is conscious and able to communicate?",
+"choices": [
+{"text": "A. The patient's neighbour", "is_correct": false},
+{"text": "B. The patient's family member", "is_correct": false},
+{"text": "C. The patient", "is_correct": true},
+{"text": "D. The hospital security officer", "is_correct": false}
+],
+"rationale": "The patient is usually the primary source of subjective information about personal symptoms, experiences and health history. Secondary sources, such as relatives and previous records, may be used to supplement or verify information.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment",
+"question_text": "A patient is admitted to a district hospital in Ghana with fever, headache and general body weakness. Which nursing action should be performed first during the initial assessment?",
+"choices": [
+{"text": "A. Obtain a complete set of vital signs and assess the patient's immediate clinical condition", "is_correct": true},
+{"text": "B. Explain the hospital discharge procedure", "is_correct": false},
+{"text": "C. Begin health education about malaria prevention", "is_correct": false},
+{"text": "D. Complete the nursing care plan before examining the patient", "is_correct": false}
+],
+"rationale": "The nurse should first assess the patient's immediate condition, including vital signs and signs of clinical deterioration. This helps identify urgent threats and determines the need for immediate intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment",
+"question_text": "During an assessment, a patient reports severe chest pain and difficulty breathing. What should the nurse do first?",
+"choices": [
+{"text": "A. Continue collecting the patient's dietary history", "is_correct": false},
+{"text": "B. Ask the patient to wait until the routine ward round", "is_correct": false},
+{"text": "C. Complete the admission documentation before taking action", "is_correct": false},
+{"text": "D. Initiate an urgent assessment of airway, breathing and circulation and activate emergency assistance", "is_correct": true}
+],
+"rationale": "Severe chest pain accompanied by breathing difficulty may indicate a life-threatening emergency. The nurse should prioritise airway, breathing and circulation, summon appropriate assistance and follow emergency protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment",
+"question_text": "A nurse records a patient's temperature as 39.2°C using a clinical thermometer. How should this information be classified?",
+"choices": [
+{"text": "A. Subjective information", "is_correct": false},
+{"text": "B. Objective information", "is_correct": true},
+{"text": "C. Historical information only", "is_correct": false},
+{"text": "D. Inferred information", "is_correct": false}
+],
+"rationale": "A temperature measured using a clinical thermometer is an objective finding because it is directly measurable. It provides evidence of an elevated body temperature that may require further assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment",
+"question_text": "A patient who speaks a language unfamiliar to the nurse is admitted to a hospital. What is the most appropriate action to obtain an accurate health history?",
+"choices": [
+{"text": "A. Assume the patient understands simple English", "is_correct": false},
+{"text": "B. Ask another patient to interpret all medical information", "is_correct": false},
+{"text": "C. Arrange an appropriate interpreter and communicate directly with the patient", "is_correct": true},
+{"text": "D. Obtain information exclusively from the patient's relatives without involving the patient", "is_correct": false}
+],
+"rationale": "An appropriate interpreter helps the nurse obtain accurate information while reducing communication errors. The nurse should continue addressing the patient directly and protect confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient admitted with pneumonia has a respiratory rate of 32 breaths per minute, audible wheezing and difficulty breathing. Which nursing diagnosis is most appropriate?",
+"choices": [
+{"text": "A. Impaired gas exchange related to altered alveolar-capillary oxygen transfer, if supported by further assessment findings", "is_correct": false},
+{"text": "B. Ineffective breathing pattern related to altered respiratory mechanics, as evidenced by tachypnoea and breathing difficulty", "is_correct": true},
+{"text": "C. Risk for infection related to hospital admission", "is_correct": false},
+{"text": "D. Deficient knowledge related to medication administration", "is_correct": false}
+],
+"rationale": "Tachypnoea and difficulty breathing support a problem involving the patient's breathing pattern. A diagnosis of impaired gas exchange would require additional evidence, such as abnormal oxygen saturation or blood gas findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient recovering from surgery has an open surgical wound and reports pain when moving. Which nursing diagnosis is most appropriate for the reported pain?",
+"choices": [
+{"text": "A. Acute pain related to tissue injury from the surgical procedure, as evidenced by the patient's verbal report", "is_correct": true},
+{"text": "B. Risk for infection related to hospital admission", "is_correct": false},
+{"text": "C. Impaired skin integrity related to inadequate knowledge", "is_correct": false},
+{"text": "D. Chronic pain related to long-term tissue damage", "is_correct": false}
+],
+"rationale": "Acute pain is appropriate when pain is associated with a recent surgical procedure and is supported by the patient's report. The nurse should further assess pain intensity, location, characteristics and factors that worsen or relieve it.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient has reduced mobility following a stroke and requires assistance when walking. Which nursing diagnosis best addresses this problem?",
+"choices": [
+{"text": "A. Risk for infection", "is_correct": false},
+{"text": "B. Deficient fluid volume", "is_correct": false},
+{"text": "C. Impaired physical mobility", "is_correct": true},
+{"text": "D. Ineffective health maintenance", "is_correct": false}
+],
+"rationale": "Impaired physical mobility describes a limitation in independent, purposeful movement of the body or extremities. The diagnosis is supported by the patient's reduced ability to walk and need for assistance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient with repeated vomiting has dry mucous membranes and reduced urine output. Which nursing diagnosis should the nurse consider?",
+"choices": [
+{"text": "A. Impaired verbal communication", "is_correct": false},
+{"text": "B. Risk for impaired skin integrity", "is_correct": false},
+{"text": "C. Disturbed sleep pattern", "is_correct": false},
+{"text": "D. Deficient fluid volume related to excessive fluid loss", "is_correct": true}
+],
+"rationale": "Repeated vomiting can cause significant fluid loss, while dry mucous membranes and reduced urine output suggest dehydration. Deficient fluid volume is therefore an appropriate problem-focused nursing diagnosis requiring further assessment and management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A nurse identifies that an older adult has no current pressure injury but cannot reposition independently. Which nursing diagnosis is most appropriate?",
+"choices": [
+{"text": "A. Impaired skin integrity", "is_correct": false},
+{"text": "B. Risk for pressure injury", "is_correct": true},
+{"text": "C. Acute pain", "is_correct": false},
+{"text": "D. Impaired tissue integrity", "is_correct": false}
+],
+"rationale": "The patient has risk factors for pressure injury because of limited mobility and inability to reposition independently. A risk diagnosis is appropriate when the problem has not yet occurred, so it should not be documented as an existing pressure injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Planning",
+"question_text": "A patient with fever has a nursing diagnosis of hyperthermia. Which expected outcome is most appropriate?",
+"choices": [
+{"text": "A. The nurse will administer prescribed antipyretics", "is_correct": false},
+{"text": "B. The patient will receive health education about fever", "is_correct": false},
+{"text": "C. The patient's temperature will reduce to the prescribed target range within four hours", "is_correct": true},
+{"text": "D. The patient will be monitored throughout the admission", "is_correct": false}
+],
+"rationale": "An expected outcome should describe a measurable change in the patient's condition within a specified period. The reduction in temperature is a patient-centred outcome, whereas administering medication is a nursing intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Planning",
+"question_text": "A nurse is planning care for four patients. Which patient should receive the highest priority?",
+"choices": [
+{"text": "A. A patient requesting assistance with bathing", "is_correct": false},
+{"text": "B. A patient awaiting routine discharge education", "is_correct": false},
+{"text": "C. A patient reporting mild constipation for two days", "is_correct": false},
+{"text": "D. A patient with sudden difficulty breathing and oxygen saturation of 84%", "is_correct": true}
+],
+"rationale": "The patient with severe hypoxaemia and breathing difficulty has an immediate threat to life. Airway and breathing problems take priority over routine hygiene, discharge education and mild constipation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Planning",
+"question_text": "A patient with impaired physical mobility is being discharged after a stroke. Which goal is most appropriate for the nursing care plan?",
+"choices": [
+{"text": "A. The patient will transfer from bed to chair with the prescribed level of assistance before discharge", "is_correct": true},
+{"text": "B. The nurse will teach the patient about mobility aids", "is_correct": false},
+{"text": "C. The patient's relatives will visit every afternoon", "is_correct": false},
+{"text": "D. The patient will never experience another mobility problem", "is_correct": false}
+],
+"rationale": "The goal is patient-centred, realistic and measurable within the discharge period. It also reflects a functional outcome that can be evaluated by observing the patient's ability to transfer safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Planning",
+"question_text": "A nurse is developing a care plan for a patient with deficient fluid volume. Which intervention is most appropriate?",
+"choices": [
+{"text": "A. Restrict all oral fluids regardless of clinical findings", "is_correct": false},
+{"text": "B. Monitor intake and output, assess hydration status and administer prescribed fluid replacement", "is_correct": true},
+{"text": "C. Encourage the patient to avoid reporting thirst", "is_correct": false},
+{"text": "D. Discontinue all fluid monitoring once intravenous fluids are commenced", "is_correct": false}
+],
+"rationale": "Monitoring fluid balance and hydration status helps determine the extent of fluid deficit and response to treatment. Prescribed fluid replacement should be administered and monitored according to the patient's clinical condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation",
+"question_text": "A nurse is about to administer a prescribed medication. Which action best demonstrates safe implementation of the nursing care plan?",
+"choices": [
+{"text": "A. Administering the medication based on the patient's bed number", "is_correct": false},
+{"text": "B. Asking another patient to confirm the medication", "is_correct": false},
+{"text": "C. Verifying the patient's identity, medication, dose, route and prescribed time before administration", "is_correct": true},
+{"text": "D. Administering the medication before checking the prescription", "is_correct": false}
+],
+"rationale": "Safe medication administration requires verification of the prescription and the relevant medication administration rights. Correct patient identification and checking the medication, dose, route and timing help prevent medication errors.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation",
+"question_text": "A patient has been prescribed intravenous fluids for dehydration. During administration, the nurse notices swelling and pain around the cannula site. What should the nurse do first?",
+"choices": [
+{"text": "A. Increase the infusion rate to complete the prescribed volume", "is_correct": false},
+{"text": "B. Cover the site with a dry dressing and continue the infusion", "is_correct": false},
+{"text": "C. Massage the swollen area while the infusion continues", "is_correct": false},
+{"text": "D. Stop the infusion and assess the cannula site for infiltration or extravasation", "is_correct": true}
+],
+"rationale": "Swelling and pain around an intravenous cannula may indicate infiltration or extravasation. The infusion should be stopped immediately and the site assessed, with further management guided by the type of fluid or medication and local protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation",
+"question_text": "A nurse is caring for a patient who has been prescribed wound dressing. Which action best supports infection prevention during the procedure?",
+"choices": [
+{"text": "A. Perform hand hygiene and use the appropriate aseptic technique", "is_correct": true},
+{"text": "B. Reuse sterile dressing materials if they appear clean", "is_correct": false},
+{"text": "C. Touch the wound with ungloved hands after handwashing", "is_correct": false},
+{"text": "D. Place used dressing materials on the clean procedure trolley", "is_correct": false}
+],
+"rationale": "Hand hygiene and appropriate aseptic technique reduce the risk of introducing microorganisms into the wound. Sterile materials must be handled correctly, and contaminated materials should be disposed of safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation",
+"question_text": "A patient newly diagnosed with hypertension is preparing for discharge. Which nursing intervention is most appropriate to support self-management?",
+"choices": [
+{"text": "A. Advise the patient to stop medication when symptoms disappear", "is_correct": false},
+{"text": "B. Explain medication adherence, blood pressure monitoring, lifestyle modification and follow-up care", "is_correct": true},
+{"text": "C. Tell the patient that hypertension does not require follow-up when there is no headache", "is_correct": false},
+{"text": "D. Recommend avoiding all physical activity permanently", "is_correct": false}
+],
+"rationale": "Hypertension often requires long-term management even when symptoms are absent. Education about medication adherence, healthy lifestyle practices and regular follow-up helps reduce complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation",
+"question_text": "A nurse is caring for an unconscious patient who is unable to protect the airway effectively. Which nursing action should be prioritised while appropriate emergency assistance is arranged?",
+"choices": [
+{"text": "A. Offer oral fluids to prevent dehydration", "is_correct": false},
+{"text": "B. Begin discharge planning", "is_correct": false},
+{"text": "C. Maintain airway patency using an appropriate positioning and airway-management approach", "is_correct": true},
+{"text": "D. Delay intervention until the patient's relatives arrive", "is_correct": false}
+],
+"rationale": "An unconscious patient who cannot protect the airway is at risk of airway obstruction and aspiration. Maintaining airway patency and obtaining urgent assistance take priority over non-emergency care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation",
+"question_text": "A patient with diabetes mellitus is receiving insulin. Before administering the prescribed dose, what should the nurse do?",
+"choices": [
+{"text": "A. Administer insulin without checking the patient's blood glucose", "is_correct": false},
+{"text": "B. Confirm the insulin prescription, check the relevant blood glucose result and assess factors affecting administration", "is_correct": true},
+{"text": "C. Give the same dose to every patient with diabetes", "is_correct": false},
+{"text": "D. Withhold all insulin whenever the patient reports hunger", "is_correct": false}
+],
+"rationale": "Insulin is a high-alert medication, so the nurse must verify the prescription and assess relevant clinical information, including blood glucose and nutritional status. Any concern about the prescribed dose or the patient's condition should be clarified before administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation",
+"question_text": "A patient with a nursing diagnosis of acute pain reports a reduction in pain from 8/10 to 2/10 after prescribed analgesia. What should the nurse do?",
+"choices": [
+{"text": "A. Document the patient's response and evaluate whether the pain goal has been achieved", "is_correct": true},
+{"text": "B. Record that the patient has no pain without asking further questions", "is_correct": false},
+{"text": "C. Discontinue all nursing assessments permanently", "is_correct": false},
+{"text": "D. Repeat the same analgesic dose immediately without checking the prescription", "is_correct": false}
+],
+"rationale": "The reduction in pain indicates improvement, but the nurse must compare the response with the established outcome and document the findings. Further assessment determines whether additional interventions are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation",
+"question_text": "A patient with dehydration has a planned outcome of maintaining adequate urine output. Which finding provides the best evidence that the outcome is being achieved?",
+"choices": [
+{"text": "A. The patient reports feeling hungry", "is_correct": false},
+{"text": "B. The patient sleeps for six hours", "is_correct": false},
+{"text": "C. The patient has a normal appetite", "is_correct": false},
+{"text": "D. The patient's urine output improves to an appropriate level for the clinical condition", "is_correct": true}
+],
+"rationale": "Urine output is an important indicator of renal perfusion and fluid balance. An improvement towards an appropriate output, considered alongside other clinical findings, provides evidence of progress towards the planned outcome.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation",
+"question_text": "A nurse evaluates a patient whose goal was to walk independently to the bathroom within 48 hours. After 48 hours, the patient still requires assistance. What is the most appropriate nursing action?",
+"choices": [
+{"text": "A. Document that the goal was achieved", "is_correct": false},
+{"text": "B. Remove the diagnosis without further assessment", "is_correct": false},
+{"text": "C. Reassess the patient, identify barriers and revise the care plan as necessary", "is_correct": true},
+{"text": "D. Blame the patient for failing to cooperate", "is_correct": false}
+],
+"rationale": "The expected outcome has not been achieved, so the nurse should reassess the patient's condition and identify factors limiting progress. The care plan may then be modified to establish realistic interventions and outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation",
+"question_text": "A nurse administers an analgesic to a patient at 10:00 hours. When should the nurse document the administration?",
+"choices": [
+{"text": "A. At the end of the following shift", "is_correct": false},
+{"text": "B. Promptly after administration, according to documentation policy", "is_correct": true},
+{"text": "C. Before administering the medication", "is_correct": false},
+{"text": "D. Only when the patient reports an adverse reaction", "is_correct": false}
+],
+"rationale": "Medication administration should be documented promptly after it has occurred, in accordance with institutional policy. This supports accurate records and reduces the risk of duplicate administration or omissions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation",
+"question_text": "A nurse discovers that an incorrect entry has been made in a patient's paper nursing record. What is the appropriate action?",
+"choices": [
+{"text": "A. Erase the incorrect entry completely", "is_correct": false},
+{"text": "B. Use correction fluid to cover the entry", "is_correct": false},
+{"text": "C. Remove the entire page from the patient's record", "is_correct": false},
+{"text": "D. Correct the entry according to institutional policy while preserving the original information and audit trail", "is_correct": true}
+],
+"rationale": "Corrections to paper records should preserve the original entry and make the amendment traceable, usually through a single line, date, time and authentication according to policy. Erasing or concealing information compromises record integrity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation",
+"question_text": "A nurse observes that a patient refuses a prescribed medication. Which documentation entry is most appropriate?",
+"choices": [
+{"text": "A. Patient refused the prescribed medication at 08:00 hours; reason explored, relevant information provided and prescriber informed as appropriate", "is_correct": true},
+{"text": "B. Patient is difficult and does not cooperate with treatment", "is_correct": false},
+{"text": "C. Medication not given because the patient is troublesome", "is_correct": false},
+{"text": "D. Patient refused medication, but the entry should be omitted to avoid conflict", "is_correct": false}
+],
+"rationale": "Documentation should be factual, objective and sufficiently detailed to explain the event and the nursing response. The nurse should record the refusal, explore the reason, provide appropriate education and communicate concerns to the relevant clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "A nurse receives conflicting information about a patient's medication dose from the medication chart and a verbal instruction. What should the nurse do?",
+"choices": [
+{"text": "A. Choose the higher dose because it may be more effective", "is_correct": false},
+{"text": "B. Ask another patient what dose is usually given", "is_correct": false},
+{"text": "C. Withhold administration until the discrepancy is clarified with the authorised prescriber", "is_correct": true},
+{"text": "D. Administer both doses to avoid undertreatment", "is_correct": false}
+],
+"rationale": "Conflicting medication instructions create a risk of medication error and patient harm. The nurse must clarify the discrepancy with the authorised prescriber before administering the medication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "A nurse notices that a patient's blood pressure has fallen significantly compared with the previous reading. The patient also appears pale and sweaty. Which action demonstrates appropriate clinical reasoning?",
+"choices": [
+{"text": "A. Assume the blood pressure machine is faulty and ignore the result", "is_correct": false},
+{"text": "B. Reassess the patient, verify the reading and urgently evaluate for signs of deterioration", "is_correct": true},
+{"text": "C. Wait until the next routine observation time", "is_correct": false},
+{"text": "D. Record the reading without taking any further action", "is_correct": false}
+],
+"rationale": "A significant fall in blood pressure accompanied by pallor and diaphoresis may indicate circulatory compromise. The nurse should verify the finding while promptly assessing the patient and escalating care when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "A patient complains of dizziness shortly after receiving an antihypertensive medication. Which nursing action is most appropriate?",
+"choices": [
+{"text": "A. Tell the patient that dizziness is always harmless", "is_correct": false},
+{"text": "B. Encourage the patient to walk around to improve circulation", "is_correct": false},
+{"text": "C. Administer another antihypertensive medication", "is_correct": false},
+{"text": "D. Assess vital signs, ensure patient safety and investigate a possible medication-related effect", "is_correct": true}
+],
+"rationale": "Dizziness following antihypertensive administration may be associated with hypotension or another adverse medication effect. The nurse should prevent falls, assess the patient's condition and report significant findings for further management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evidence-Based Practice",
+"question_text": "A nurse wants to improve hand hygiene compliance on a medical ward. Which approach best demonstrates evidence-based practice?",
+"choices": [
+{"text": "A. Review current evidence and relevant infection-prevention guidance, assess local practice and implement an appropriate improvement strategy", "is_correct": true},
+{"text": "B. Introduce a handwashing method based only on personal preference", "is_correct": false},
+{"text": "C. Stop monitoring hand hygiene because staff have received training", "is_correct": false},
+{"text": "D. Adopt an unverified practice because it is used in another hospital", "is_correct": false}
+],
+"rationale": "Evidence-based practice requires the integration of reliable research, clinical expertise and the needs of the care setting. Monitoring implementation and outcomes helps determine whether the intervention improves practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evidence-Based Practice",
+"question_text": "A nurse is searching for reliable evidence about preventing pressure injuries in hospitalised patients. Which source should receive the greatest preference?",
+"choices": [
+{"text": "A. An anonymous social media post", "is_correct": false},
+{"text": "B. An outdated personal blog", "is_correct": false},
+{"text": "C. A current, relevant clinical practice guideline supported by systematically reviewed evidence", "is_correct": true},
+{"text": "D. An informal discussion among people without relevant clinical expertise", "is_correct": false}
+],
+"rationale": "A current, relevant clinical practice guideline based on systematically reviewed evidence provides a strong foundation for clinical decisions. The nurse should still consider the patient's circumstances and the applicability of the recommendations to the local setting.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Planning",
+"question_text": "A patient with a high risk of falls is admitted to a medical ward. Which intervention should be included in the nursing care plan?",
+"choices": [
+{"text": "A. Encourage the patient to walk without assistance to build confidence", "is_correct": false},
+{"text": "B. Keep the call bell within reach, maintain a safe environment and assist with mobilisation", "is_correct": true},
+{"text": "C. Leave the patient unattended in the bathroom", "is_correct": false},
+{"text": "D. Restrict all movement without assessing the patient's needs", "is_correct": false}
+],
+"rationale": "A patient at risk of falling requires an individualised falls-prevention plan. Keeping essential items accessible, reducing environmental hazards and providing appropriate assistance support patient safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient with a stroke has difficulty swallowing and coughs when drinking water. Which nursing diagnosis is the priority concern?",
+"choices": [
+{"text": "A. Disturbed body image", "is_correct": false},
+{"text": "B. Impaired social interaction", "is_correct": false},
+{"text": "C. Deficient knowledge about exercise", "is_correct": false},
+{"text": "D. Risk for aspiration related to impaired swallowing ability", "is_correct": true}
+],
+"rationale": "Difficulty swallowing and coughing during oral intake suggest an increased risk of aspiration. The nurse should withhold oral intake pending appropriate swallowing assessment and follow the prescribed aspiration-prevention plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation",
+"question_text": "A nurse is caring for a patient who suddenly becomes unresponsive and is not breathing normally. What should the nurse do first?",
+"choices": [
+{"text": "A. Activate the emergency response system, assess for cardiac arrest and initiate cardiopulmonary resuscitation according to current guidelines", "is_correct": true},
+{"text": "B. Complete the patient's nursing notes", "is_correct": false},
+{"text": "C. Offer the patient oral fluids", "is_correct": false},
+{"text": "D. Wait for the next scheduled vital-sign assessment", "is_correct": false}
+],
+"rationale": "Unresponsiveness with absent or abnormal breathing may indicate cardiac arrest. The nurse should activate emergency assistance and promptly initiate resuscitation in accordance with current basic life support guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment",
+"question_text": "A nurse is assessing a patient who reports abdominal pain. Which approach provides the most complete pain assessment?",
+"choices": [
+{"text": "A. Ask only whether the patient has pain", "is_correct": false},
+{"text": "B. Assume the pain is severe because the patient is admitted", "is_correct": false},
+{"text": "C. Assess the location, onset, character, intensity, duration, aggravating and relieving factors, and associated symptoms", "is_correct": true},
+{"text": "D. Assess the patient's pain only after administering analgesia", "is_correct": false}
+],
+"rationale": "A comprehensive pain assessment explores the characteristics and impact of the pain, including associated symptoms. This information supports clinical judgement, appropriate intervention and subsequent evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "A nurse delegates routine vital-sign measurement to an appropriate trained healthcare worker. Which responsibility remains with the nurse?",
+"choices": [
+{"text": "A. Avoid reviewing the recorded observations", "is_correct": false},
+{"text": "B. Assume that all delegated tasks are completed correctly", "is_correct": false},
+{"text": "C. Transfer all accountability for the patient's care to the worker", "is_correct": false},
+{"text": "D. Ensure the delegation is appropriate, provide necessary instructions and evaluate the reported findings", "is_correct": true}
+],
+"rationale": "Delegation does not remove the nurse's responsibility to ensure that the task is appropriate and that the patient receives safe care. The nurse must provide clear instructions and review findings requiring clinical action.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation",
+"question_text": "A patient with a pressure injury has been receiving a repositioning schedule and prescribed wound care. Which finding most directly indicates improvement in the wound?",
+"choices": [
+{"text": "A. The patient has received all scheduled meals", "is_correct": false},
+{"text": "B. The wound shows reduced dimensions and healthy granulation tissue without new signs of infection", "is_correct": true},
+{"text": "C. The patient has slept for eight hours", "is_correct": false},
+{"text": "D. The patient reports that the dressing looks attractive", "is_correct": false}
+],
+"rationale": "Wound dimensions, tissue characteristics and signs of infection are relevant clinical indicators of wound healing. These findings provide more direct evidence of improvement than unrelated aspects of the patient's care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation",
+"question_text": "A nurse receives a telephone instruction from an authorised prescriber regarding a patient's treatment. What should the nurse do?",
+"choices": [
+{"text": "A. Follow the instruction without confirming the patient's identity", "is_correct": false},
+{"text": "B. Ask another nurse to remember the instruction without documenting it", "is_correct": false},
+{"text": "C. Follow institutional policy for telephone orders, read back the instruction for confirmation and ensure it is properly authenticated", "is_correct": true},
+{"text": "D. Record the instruction under another patient's file if the current file is unavailable", "is_correct": false}
+],
+"rationale": "Telephone orders carry a risk of communication errors and should be handled according to institutional policy. Read-back confirmation and proper documentation and authentication help ensure accuracy and accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "A nurse caring for a patient with suspected sepsis observes confusion, fever and a rapid respiratory rate. Which action should be prioritised?",
+"choices": [
+{"text": "A. Initiate urgent clinical escalation and assessment for sepsis while supporting airway, breathing and circulation", "is_correct": true},
+{"text": "B. Wait for the patient's next routine appointment", "is_correct": false},
+{"text": "C. Provide only oral health education", "is_correct": false},
+{"text": "D. Delay reporting until all laboratory results are available", "is_correct": false}
+],
+"rationale": "Confusion, fever and tachypnoea may indicate serious infection and possible sepsis-related organ dysfunction. Prompt escalation and assessment are essential because treatment delays can increase morbidity and mortality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient with persistent diarrhoea has frequent loose stools and reports urgency when attempting to reach the toilet. Which nursing diagnosis is most directly supported by these findings?",
+"choices": [
+{"text": "A. Impaired memory", "is_correct": false},
+{"text": "B. Ineffective airway clearance", "is_correct": false},
+{"text": "C. Impaired verbal communication", "is_correct": false},
+{"text": "D. Diarrhoea", "is_correct": true}
+],
+"rationale": "The patient has frequent loose stools, which directly support the nursing diagnosis of diarrhoea. The nurse should also assess for associated problems such as deficient fluid volume and electrolyte imbalance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment",
+"question_text": "A patient admitted with severe weakness has a blood pressure of 80/50 mmHg, a pulse rate of 126 beats per minute and cold extremities. Which assessment finding should most urgently guide the nurse's next action?",
+"choices": [
+{"text": "A. The patient's preferred meal", "is_correct": false},
+{"text": "B. The patient's ability to sleep", "is_correct": false},
+{"text": "C. The patient's level of consciousness, perfusion and other signs of circulatory compromise", "is_correct": true},
+{"text": "D. The patient's preferred time for visitors", "is_correct": false}
+],
+"rationale": "Hypotension, tachycardia and cold extremities suggest possible shock or severe circulatory compromise. Assessment of consciousness and tissue perfusion helps determine the severity of the condition and supports urgent escalation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient with a suspected urinary tract infection has fever, dysuria and suprapubic discomfort. Which nursing diagnosis is most appropriate based on the available findings?",
+"choices": [
+{"text": "A. Risk for infection related to urinary catheterisation", "is_correct": false},
+{"text": "B. Acute pain related to urinary tract irritation, as evidenced by dysuria and suprapubic discomfort", "is_correct": true},
+{"text": "C. Chronic confusion related to ageing", "is_correct": false},
+{"text": "D. Impaired skin integrity related to immobility", "is_correct": false}
+],
+"rationale": "The patient already has symptoms of discomfort, so an actual pain diagnosis is more appropriate than a risk diagnosis for infection. The nurse should continue assessing the patient and collaborate with the healthcare team regarding the suspected infection.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Planning",
+"question_text": "A nurse is planning care for a patient with severe hypoxaemia, acute pain and difficulty sleeping. Which problem should receive the highest priority?",
+"choices": [
+{"text": "A. Difficulty sleeping", "is_correct": false},
+{"text": "B. Acute pain", "is_correct": false},
+{"text": "C. Severe hypoxaemia", "is_correct": true},
+{"text": "D. Anxiety about hospital admission", "is_correct": false}
+],
+"rationale": "Severe hypoxaemia threatens oxygen delivery to vital organs and may rapidly become life-threatening. It takes priority over pain, sleep disturbance and anxiety under the principles of physiological prioritisation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Implementation",
+"question_text": "A nurse is caring for a patient receiving oxygen therapy. The patient's oxygen saturation suddenly falls from 96% to 82%, and the patient becomes restless. Which action should the nurse take first?",
+"choices": [
+{"text": "A. Document the reading and wait for the next observation", "is_correct": false},
+{"text": "B. Remove the oxygen device to allow the patient to breathe independently", "is_correct": false},
+{"text": "C. Increase oxygen flow without assessing the prescription or clinical situation", "is_correct": false},
+{"text": "D. Immediately assess airway and breathing, check the oxygen delivery system and summon urgent assistance", "is_correct": true}
+],
+"rationale": "A sudden fall in oxygen saturation with restlessness suggests acute deterioration and possible inadequate oxygenation. The nurse should assess the patient and oxygen delivery system immediately while obtaining urgent assistance and following the prescribed oxygen protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evaluation",
+"question_text": "A patient with a nursing diagnosis of deficient fluid volume has received prescribed intravenous fluids. The patient's blood pressure has improved, but urine output remains low and the patient is still confused. How should the nurse interpret these findings?",
+"choices": [
+{"text": "A. The fluid deficit has been completely corrected because blood pressure improved", "is_correct": false},
+{"text": "B. The patient has demonstrated only partial improvement and requires further assessment and escalation", "is_correct": true},
+{"text": "C. The nursing diagnosis should be discontinued immediately", "is_correct": false},
+{"text": "D. The patient should receive no further monitoring because the intervention was successful", "is_correct": false}
+],
+"rationale": "Improved blood pressure is encouraging, but persistent oliguria and confusion may indicate ongoing inadequate perfusion or another complication. The nurse should evaluate the overall clinical picture rather than relying on one improved parameter.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Documentation",
+"question_text": "A nurse documents that a patient was 'aggressive and troublesome' during the night shift. Which revision best demonstrates professional documentation?",
+"choices": [
+{"text": "A. Patient was very bad and refused to behave", "is_correct": false},
+{"text": "B. Patient was difficult throughout the night and disturbed everyone", "is_correct": false},
+{"text": "C. Patient shouted at staff, attempted to leave the ward and refused the prescribed medication at 22:00 hours", "is_correct": true},
+{"text": "D. Patient was impossible to manage and should be discharged", "is_correct": false}
+],
+"rationale": "Professional documentation describes observable behaviour rather than using judgemental or subjective labels. The revised entry records specific events and relevant actions in an objective manner.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "A patient with diabetes mellitus becomes sweaty, tremulous and confused. The nurse suspects hypoglycaemia, but the patient's blood glucose result is not yet available. What is the most appropriate approach?",
+"choices": [
+{"text": "A. Ignore the symptoms until the laboratory confirms the diagnosis", "is_correct": false},
+{"text": "B. Administer the patient's usual insulin dose immediately", "is_correct": false},
+{"text": "C. Assume the symptoms are caused by anxiety and allow the patient to sleep", "is_correct": false},
+{"text": "D. Treat the situation as a possible hypoglycaemic emergency, check blood glucose promptly and initiate appropriate protocol-based management", "is_correct": true}
+],
+"rationale": "Sweating, tremor and confusion are compatible with hypoglycaemia, which can progress to seizures or loss of consciousness. The nurse should promptly check blood glucose and initiate appropriate treatment without allowing avoidable delays in an unstable patient.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evidence-Based Practice",
+"question_text": "A ward has a high rate of catheter-associated urinary tract infections. A senior nurse suggests routinely giving prophylactic antibiotics to every patient with a urinary catheter, while current evidence recommends avoiding routine prophylaxis. What should the nurse leading quality improvement do?",
+"choices": [
+{"text": "A. Adopt the senior nurse's suggestion because seniority is more important than evidence", "is_correct": false},
+{"text": "B. Review current evidence and guidelines, assess local infection data and implement evidence-based catheter-care interventions", "is_correct": true},
+{"text": "C. Give antibiotics to all patients without consulting the prescriber", "is_correct": false},
+{"text": "D. Ignore the infection rate because catheter-associated infections are unavoidable", "is_correct": false}
+],
+"rationale": "Routine antibiotic prophylaxis for all catheterised patients is not an appropriate general strategy and may contribute to antimicrobial resistance. Evidence-based catheter care should focus on appropriate catheter use, aseptic insertion, maintenance, timely removal and monitoring of infection rates.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Planning",
+"question_text": "A nurse has four patients requiring attention: one has severe respiratory distress, another has a blood glucose level of 2.4 mmol/L with sweating, a third reports pain rated 6/10, and the fourth requests assistance with feeding. Which patient should the nurse assess first?",
+"choices": [
+{"text": "A. The patient requesting assistance with feeding", "is_correct": false},
+{"text": "B. The patient reporting pain rated 6/10", "is_correct": false},
+{"text": "C. The patient with severe respiratory distress", "is_correct": true},
+{"text": "D. The patient with a blood glucose level of 2.4 mmol/L and sweating", "is_correct": false}
+],
+"rationale": "Severe respiratory distress represents an immediate threat to airway and breathing and requires the highest priority. The patient with hypoglycaemia also requires urgent treatment and should be attended to immediately after emergency breathing support has been initiated, with assistance mobilised for both patients.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "NANDA Diagnosis",
+"question_text": "A patient with chronic obstructive pulmonary disease has increased respiratory effort, reduced oxygen saturation and difficulty clearing thick respiratory secretions. Which nursing diagnosis most directly addresses the problem of retained secretions?",
+"choices": [
+{"text": "A. Ineffective airway clearance related to retained secretions, as evidenced by difficulty expectorating", "is_correct": true},
+{"text": "B. Disturbed body image related to chronic illness", "is_correct": false},
+{"text": "C. Deficient knowledge related to hospital admission", "is_correct": false},
+{"text": "D. Impaired urinary elimination related to reduced mobility", "is_correct": false}
+],
+"rationale": "Ineffective airway clearance is appropriate when the patient cannot effectively clear secretions or obstructions from the respiratory tract. Reduced oxygen saturation may indicate an additional gas-exchange problem that requires separate assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Assessment",
+"question_text": "A patient reports severe abdominal pain, but the physical examination initially reveals few abnormal findings. A relative tells the nurse that the patient is exaggerating. What is the most appropriate nursing judgement?",
+"choices": [
+{"text": "A. Disregard the patient's report because the relative knows the patient better", "is_correct": false},
+{"text": "B. Record that the patient is exaggerating and discontinue assessment", "is_correct": false},
+{"text": "C. Administer a sedative before conducting any further assessment", "is_correct": false},
+{"text": "D. Take the patient's report seriously, conduct a systematic assessment and investigate possible causes of the pain", "is_correct": true}
+],
+"rationale": "Pain is a subjective experience and should not be dismissed because initial physical findings are limited or another person questions the report. A systematic assessment is necessary to identify potentially serious causes and guide appropriate care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking",
+"question_text": "A nurse observes that a patient has a new onset of facial drooping, slurred speech and weakness of one arm. Which action demonstrates the most appropriate clinical reasoning?",
+"choices": [
+{"text": "A. Assume the patient is tired and allow the patient to rest", "is_correct": false},
+{"text": "B. Recognise possible acute stroke, establish the time the patient was last known well and activate the emergency stroke pathway", "is_correct": true},
+{"text": "C. Give the patient oral fluids to improve circulation", "is_correct": false},
+{"text": "D. Wait for the next ward round before reporting the findings", "is_correct": false}
+],
+"rationale": "Sudden facial drooping, speech disturbance and unilateral weakness are warning signs of acute stroke. Rapid escalation and documentation of the last-known-well time are essential because timely assessment may determine eligibility for time-sensitive treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evaluation",
+"question_text": "A patient with a nursing diagnosis of ineffective breathing pattern has received prescribed respiratory interventions. The respiratory rate has decreased from 34 to 22 breaths per minute, oxygen saturation has improved from 88% to 95%, and the patient reports less breathlessness. What is the best evaluation?",
+"choices": [
+{"text": "A. The patient has deteriorated because the respiratory rate is no longer 34 breaths per minute", "is_correct": false},
+{"text": "B. The nursing interventions have failed because the patient still has a respiratory rate above 20", "is_correct": false},
+{"text": "C. The patient has demonstrated improvement, and the nurse should compare the findings with the planned outcomes and continue appropriate monitoring", "is_correct": true},
+{"text": "D. All respiratory monitoring should be discontinued immediately", "is_correct": false}
+],
+"rationale": "The improved respiratory rate, oxygen saturation and subjective breathing comfort indicate a positive response to interventions. The nurse should evaluate these findings against the established outcomes and continue monitoring for sustained improvement or deterioration.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Planning",
+"question_text": "A nurse is planning care for a patient with severe pain, risk of falls and deficient knowledge about medication use. Which sequence best reflects appropriate prioritisation?",
+"choices": [
+{"text": "A. Address the risk of falls and immediate safety threats, manage severe pain promptly, then provide medication education when the patient is stable", "is_correct": true},
+{"text": "B. Provide medication education first, then assess safety and pain", "is_correct": false},
+{"text": "C. Address medication education and postpone all other care until discharge", "is_correct": false},
+{"text": "D. Ignore the risk of falls because the patient has not yet fallen", "is_correct": false}
+],
+"rationale": "Immediate safety risks and urgent physiological needs should be addressed before non-urgent educational needs. Severe pain also requires timely management, while medication education can be provided when the patient's condition allows effective participation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evidence-Based Practice",
+"question_text": "A nurse reads a research article recommending a new wound-care intervention. The study involved a small number of patients in a specialised facility, while the nurse works in a resource-limited district hospital. What should the nurse do before adopting the intervention?",
+"choices": [
+{"text": "A. Introduce the intervention immediately because all published research applies to every setting", "is_correct": false},
+{"text": "B. Reject the research because it was not conducted in Ghana", "is_correct": false},
+{"text": "C. Adopt the intervention without considering cost, staff training or patient preferences", "is_correct": false},
+{"text": "D. Appraise the quality and relevance of the evidence, consider local resources and patient needs, and consult appropriate clinical guidance before implementation", "is_correct": true}
+],
+"rationale": "Evidence-based practice requires critical appraisal and consideration of whether research findings are applicable to the local clinical context. Resource availability, staff competence, patient preferences and relevant guidelines should inform implementation decisions.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
