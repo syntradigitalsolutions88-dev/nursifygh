@@ -1,0 +1,760 @@
+{
+"courses": [
+{
+"course_code": "NPN-311-P",
+"course_title": "Nursing Process",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Psychiatric Nursing Assessment",
+"Mental State Examination",
+"Psychiatric History Taking",
+"Risk Assessment",
+"NANDA-I Psychiatric Nursing Diagnoses",
+"Care Planning in Mental Health",
+"Recovery Model",
+"Trauma-Informed Care",
+"Implementation of Psychiatric Interventions",
+"Milieu Therapy",
+"Therapeutic Relationship",
+"Evaluation of Mental Health Outcomes",
+"Documentation in Psychiatry",
+"Critical Thinking in Mental Health Nursing"
+],
+"questions": [
+{
+"topic": "Psychiatric Nursing Assessment",
+"question_text": "Which statement best describes the primary purpose of psychiatric nursing assessment?",
+"choices": [
+{"text": "To establish a patient's mental health needs, strengths, risks and appropriate nursing interventions", "is_correct": true},
+{"text": "To determine the patient's eligibility for discharge without further investigation", "is_correct": false},
+{"text": "To identify the patient's diagnosis without considering physical health", "is_correct": false},
+{"text": "To determine whether the patient should receive medication only", "is_correct": false}
+],
+"rationale": "Psychiatric nursing assessment is a systematic process of collecting and analysing information about a person's mental, physical, social and psychological functioning. It guides individualised nursing diagnoses, care planning, interventions and evaluation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental State Examination",
+"question_text": "Which component of the Mental State Examination assesses a patient's emotional state as described by the patient?",
+"choices": [
+{"text": "Affect", "is_correct": false},
+{"text": "Mood", "is_correct": true},
+{"text": "Insight", "is_correct": false},
+{"text": "Judgement", "is_correct": false}
+],
+"rationale": "Mood refers to the patient's subjective emotional experience, usually reported in their own words. Affect refers to the objectively observed emotional expression during the interview.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental State Examination",
+"question_text": "Which component of the Mental State Examination evaluates orientation to time, place and person?",
+"choices": [
+{"text": "Thought content", "is_correct": false},
+{"text": "Perception", "is_correct": false},
+{"text": "Cognition", "is_correct": true},
+{"text": "Insight", "is_correct": false}
+],
+"rationale": "Cognition includes functions such as orientation, attention, memory and concentration. Assessing these functions helps identify cognitive impairment and possible organic causes of altered mental functioning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychiatric History Taking",
+"question_text": "Which information is most appropriately included in a patient's psychiatric history?",
+"choices": [
+{"text": "Only the patient's current medication", "is_correct": false},
+{"text": "Only the patient's family income", "is_correct": false},
+{"text": "Only the patient's previous hospital admissions", "is_correct": false},
+{"text": "Presenting complaints, history of current illness, past psychiatric history, medical history and psychosocial background", "is_correct": true}
+],
+"rationale": "A comprehensive psychiatric history includes the presenting problem, symptom development, previous psychiatric and medical conditions, medication history, substance use and psychosocial circumstances. This information supports an accurate formulation and individualised care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "Which of the following is an important component of suicide risk assessment?",
+"choices": [
+{"text": "The patient's favourite recreational activity only", "is_correct": false},
+{"text": "The patient's educational qualification only", "is_correct": false},
+{"text": "Suicidal thoughts, intent, plan, access to means and previous attempts", "is_correct": true},
+{"text": "The patient's preferred meal", "is_correct": false}
+],
+"rationale": "Suicide risk assessment explores current thoughts, intent, planning, access to means, preparatory behaviour and previous attempts. Protective factors and immediate safety concerns should also be assessed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "NANDA-I Psychiatric Nursing Diagnoses",
+"question_text": "What is a nursing diagnosis according to the nursing process?",
+"choices": [
+{"text": "A medical label identifying the disease responsible for all symptoms", "is_correct": false},
+{"text": "A clinical judgement about an individual's response to actual or potential health conditions or life processes", "is_correct": true},
+{"text": "A prescription written by a medical officer", "is_correct": false},
+{"text": "A list of symptoms copied directly from the patient's history", "is_correct": false}
+],
+"rationale": "A nursing diagnosis represents a clinical judgement about human responses to health conditions or life processes. It guides nursing interventions that address the patient's needs rather than replacing a medical diagnosis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "NANDA-I Psychiatric Nursing Diagnoses",
+"question_text": "Which of the following is an example of a recognised psychiatric nursing diagnosis?",
+"choices": [
+{"text": "Schizophrenia", "is_correct": false},
+{"text": "Malaria", "is_correct": false},
+{"text": "Bipolar I disorder", "is_correct": false},
+{"text": "Disturbed thought processes", "is_correct": true}
+],
+"rationale": "Disturbed thought processes describes an alteration in cognitive functioning and is a nursing diagnosis concept. Schizophrenia, malaria and bipolar I disorder are medical diagnoses.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care Planning in Mental Health",
+"question_text": "Which statement best describes an individualised psychiatric nursing care plan?",
+"choices": [
+{"text": "A written guide containing patient-specific nursing problems, goals, interventions and evaluation criteria", "is_correct": true},
+{"text": "A standard list of medications used for every psychiatric patient", "is_correct": false},
+{"text": "A document prepared only after the patient has been discharged", "is_correct": false},
+{"text": "A list of hospital rules that does not consider individual needs", "is_correct": false}
+],
+"rationale": "An individualised care plan translates assessment findings and nursing diagnoses into measurable patient-centred goals and appropriate interventions. It should be reviewed and updated as the patient's needs and responses change.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Recovery Model",
+"question_text": "What is the central principle of the recovery model in mental health nursing?",
+"choices": [
+{"text": "Complete elimination of every psychiatric symptom before community participation", "is_correct": false},
+{"text": "Dependence on healthcare professionals for all life decisions", "is_correct": false},
+{"text": "Supporting hope, personal choice, empowerment and meaningful participation in life", "is_correct": true},
+{"text": "Keeping all people with mental illness in hospital permanently", "is_correct": false}
+],
+"rationale": "The recovery model emphasises that people can pursue meaningful and satisfying lives even when some symptoms remain. It promotes hope, autonomy, empowerment, connectedness and individual responsibility in recovery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Trauma-Informed Care",
+"question_text": "Which principle is fundamental to trauma-informed mental health care?",
+"choices": [
+{"text": "Using confrontation to make patients disclose traumatic experiences", "is_correct": false},
+{"text": "Promoting safety, trust, collaboration, choice and empowerment", "is_correct": true},
+{"text": "Avoiding all communication with patients who have experienced trauma", "is_correct": false},
+{"text": "Assuming that all patients respond to trauma in the same way", "is_correct": false}
+],
+"rationale": "Trauma-informed care recognises the possible effects of trauma and seeks to prevent retraumatisation. It emphasises physical and emotional safety, trustworthiness, collaboration, choice and empowerment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Relationship",
+"question_text": "Which characteristic is essential to the development of a therapeutic nurse-patient relationship?",
+"choices": [
+{"text": "Making personal demands on the patient", "is_correct": false},
+{"text": "Encouraging emotional dependence on the nurse", "is_correct": false},
+{"text": "Sharing confidential patient information with unrelated people", "is_correct": false},
+{"text": "Empathy, trust, professional boundaries and respect", "is_correct": true}
+],
+"rationale": "A therapeutic relationship is a professional relationship built on trust, empathy, respect and clear boundaries. It provides a safe environment for communication and therapeutic change.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Milieu Therapy",
+"question_text": "What is the main purpose of milieu therapy in psychiatric nursing?",
+"choices": [
+{"text": "To use the therapeutic environment and structured activities to promote recovery and adaptive behaviour", "is_correct": true},
+{"text": "To isolate patients from all social interaction", "is_correct": false},
+{"text": "To replace all prescribed psychiatric treatment", "is_correct": false},
+{"text": "To prevent patients from participating in decisions about their care", "is_correct": false}
+],
+"rationale": "Milieu therapy uses the physical and social environment as part of treatment. Structured routines, therapeutic activities, social interaction and supportive relationships can promote coping and recovery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Evaluation of Mental Health Outcomes",
+"question_text": "At which stage of the nursing process does the nurse determine whether planned patient outcomes have been achieved?",
+"choices": [
+{"text": "Assessment", "is_correct": false},
+{"text": "Diagnosis", "is_correct": false},
+{"text": "Evaluation", "is_correct": true},
+{"text": "Implementation", "is_correct": false}
+],
+"rationale": "Evaluation involves comparing the patient's actual responses with the expected outcomes established in the care plan. The nurse uses the findings to continue, modify or discontinue appropriate interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Documentation in Psychiatry",
+"question_text": "Which characteristic is essential for accurate psychiatric nursing documentation?",
+"choices": [
+{"text": "Recording personal opinions as established facts", "is_correct": false},
+{"text": "Using objective, accurate, timely and relevant information", "is_correct": true},
+{"text": "Documenting only when the patient behaves aggressively", "is_correct": false},
+{"text": "Changing previous entries without identifying the correction", "is_correct": false}
+],
+"rationale": "Psychiatric nursing records should be accurate, objective, timely, relevant and clear. Proper documentation supports continuity of care, communication, accountability and legal protection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Thinking in Mental Health Nursing",
+"question_text": "What is the main purpose of critical thinking in psychiatric nursing?",
+"choices": [
+{"text": "To follow routines without considering patient responses", "is_correct": false},
+{"text": "To make decisions based only on personal beliefs", "is_correct": false},
+{"text": "To avoid consulting other members of the healthcare team", "is_correct": false},
+{"text": "To analyse information, consider evidence and make safe clinical decisions", "is_correct": true}
+],
+"rationale": "Critical thinking involves interpreting information, identifying problems, evaluating evidence and selecting appropriate actions. It helps nurses respond safely to complex and changing psychiatric presentations.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental State Examination",
+"question_text": "Which component of the Mental State Examination assesses a patient's awareness and understanding of their mental health condition?",
+"choices": [
+{"text": "Insight", "is_correct": true},
+{"text": "Appearance", "is_correct": false},
+{"text": "Speech", "is_correct": false},
+{"text": "Psychomotor activity", "is_correct": false}
+],
+"rationale": "Insight refers to the patient's awareness and understanding of their condition, symptoms and need for treatment. It is assessed alongside other mental state domains and should not be used alone to determine decision-making capacity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychiatric Nursing Assessment",
+"question_text": "A patient is brought to a psychiatric unit at Accra Psychiatric Hospital speaking rapidly, changing topics frequently and expressing grandiose ideas. Which Mental State Examination findings should the nurse document?",
+"choices": [
+{"text": "Normal speech and normal thought process", "is_correct": false},
+{"text": "Reduced speech and poverty of thought", "is_correct": false},
+{"text": "Pressured speech, flight of ideas and grandiose thought content", "is_correct": true},
+{"text": "Mutism and impaired orientation only", "is_correct": false}
+],
+"rationale": "Rapid, difficult-to-interrupt speech suggests pressured speech, while rapid shifts between related topics may indicate flight of ideas. Grandiose ideas should be documented under thought content and explored further during assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental State Examination",
+"question_text": "During an interview, a patient states, 'I feel completely empty and hopeless,' but smiles and laughs throughout the conversation. Which finding should the nurse record?",
+"choices": [
+{"text": "Mood is elevated and affect is absent", "is_correct": false},
+{"text": "Mood is depressed by report, while observed affect appears incongruent", "is_correct": true},
+{"text": "Mood and affect are both necessarily normal", "is_correct": false},
+{"text": "The patient has no emotional experience", "is_correct": false}
+],
+"rationale": "Mood is the patient's subjective emotional state, while affect is the nurse's observation of emotional expression. A smiling presentation that does not correspond with reported hopelessness may be documented as incongruent affect.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric History Taking",
+"question_text": "A patient attending a community mental health clinic in Ghana reports hearing voices that began three weeks ago. Which question would best help establish the history of the presenting complaint?",
+"choices": [
+{"text": "Why do you refuse to behave normally?", "is_correct": false},
+{"text": "Do you believe the voices are caused by evil spirits?", "is_correct": false},
+{"text": "Can you describe when the voices started, how often they occur and how they affect you?", "is_correct": true},
+{"text": "Are you certain that you are not imagining everything?", "is_correct": false}
+],
+"rationale": "Open-ended, non-judgemental questions encourage the patient to describe the onset, frequency, characteristics and impact of symptoms. This supports a comprehensive assessment without imposing the nurse's assumptions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient tells a psychiatric nurse, 'I have decided to end my life tonight, and I have already obtained the means.' What should the nurse do first?",
+"choices": [
+{"text": "Ask the patient to return for an appointment next week", "is_correct": false},
+{"text": "Leave the patient alone to allow time for reflection", "is_correct": false},
+{"text": "Tell the patient that suicide is morally wrong", "is_correct": false},
+{"text": "Initiate immediate safety measures, maintain appropriate observation and urgently alert the clinical team", "is_correct": true}
+],
+"rationale": "The patient has expressed immediate suicidal intent and access to means, indicating an acute safety emergency. The nurse must maintain safety, prevent access to means and obtain urgent multidisciplinary intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient admitted to a psychiatric ward becomes increasingly agitated, threatens another patient and begins clenching both fists. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Approach calmly, maintain a safe distance, use verbal de-escalation and summon assistance when necessary", "is_correct": true},
+{"text": "Shout at the patient to demonstrate authority", "is_correct": false},
+{"text": "Move close to the patient and block the exit", "is_correct": false},
+{"text": "Ignore the behaviour until physical violence occurs", "is_correct": false}
+],
+"rationale": "Threats, increasing agitation and clenched fists are warning signs of possible violence. A calm approach, appropriate personal space, reduced stimulation and timely assistance can reduce the risk of harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Nursing Assessment",
+"question_text": "A patient with a history of schizophrenia is brought to the clinic with sudden confusion, fever and fluctuating attention. What should the nurse do first?",
+"choices": [
+{"text": "Assume the patient is experiencing a routine psychotic relapse", "is_correct": false},
+{"text": "Conduct urgent physical assessment, check vital signs and arrange medical evaluation for possible delirium", "is_correct": true},
+{"text": "Increase the patient's antipsychotic medication without further assessment", "is_correct": false},
+{"text": "Ask the family to take the patient home for observation", "is_correct": false}
+],
+"rationale": "Acute confusion, fluctuating attention and fever suggest possible delirium due to an underlying medical condition. Physical assessment and urgent medical evaluation take priority over assuming that the symptoms are caused by schizophrenia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA-I Psychiatric Nursing Diagnoses",
+"question_text": "A patient with severe depression reports persistent hopelessness, worthlessness and loss of interest in previously enjoyable activities. Which nursing diagnosis is most appropriate to consider?",
+"choices": [
+{"text": "Impaired physical mobility", "is_correct": false},
+{"text": "Risk for infection", "is_correct": false},
+{"text": "Hopelessness", "is_correct": true},
+{"text": "Impaired urinary elimination", "is_correct": false}
+],
+"rationale": "Hopelessness describes a state in which a person perceives limited or no alternatives and cannot see positive outcomes. The nurse should validate the assessment findings and also assess directly for suicidal thoughts and intent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA-I Psychiatric Nursing Diagnoses",
+"question_text": "A patient with schizophrenia states that neighbours are monitoring the patient's thoughts and refuses to eat food because it may be poisoned. Which nursing diagnosis is most relevant to the patient's disturbed beliefs?",
+"choices": [
+{"text": "Impaired skin integrity", "is_correct": false},
+{"text": "Deficient fluid volume", "is_correct": false},
+{"text": "Impaired walking", "is_correct": false},
+{"text": "Disturbed thought processes", "is_correct": true}
+],
+"rationale": "The patient's persecutory and poisoning beliefs indicate disturbed thought content. The nurse should also assess nutritional and hydration risks because the delusion is affecting food intake.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA-I Psychiatric Nursing Diagnoses",
+"question_text": "A patient with severe anxiety repeatedly reports being unable to concentrate, feeling restless and experiencing muscle tension. Which nursing diagnosis is most appropriate?",
+"choices": [
+{"text": "Anxiety", "is_correct": true},
+{"text": "Impaired gas exchange", "is_correct": false},
+{"text": "Chronic confusion", "is_correct": false},
+{"text": "Impaired physical mobility", "is_correct": false}
+],
+"rationale": "The reported restlessness, concentration difficulty and muscle tension are consistent with anxiety. The nurse should assess severity, triggers, physical manifestations and the effect on daily functioning before planning interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "NANDA-I Psychiatric Nursing Diagnoses",
+"question_text": "A patient experiencing auditory hallucinations is seen responding to voices and becomes distracted during conversations. Which nursing diagnosis should the nurse consider?",
+"choices": [
+{"text": "Impaired oral mucous membrane", "is_correct": false},
+{"text": "Disturbed sensory perception", "is_correct": true},
+{"text": "Risk for impaired skin integrity", "is_correct": false},
+{"text": "Ineffective peripheral tissue perfusion", "is_correct": false}
+],
+"rationale": "Auditory hallucinations represent a perceptual disturbance involving hearing without an external stimulus. The nurse should assess the content of the voices, including whether they issue commands that may create a safety risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning in Mental Health",
+"question_text": "A patient with anxiety agrees to learn relaxation techniques. Which goal is the most appropriate for the nursing care plan?",
+"choices": [
+{"text": "The patient will never experience anxiety again", "is_correct": false},
+{"text": "The patient will become completely dependent on the nurse", "is_correct": false},
+{"text": "The patient will identify and demonstrate two relaxation techniques before discharge", "is_correct": true},
+{"text": "The patient will avoid all stressful situations permanently", "is_correct": false}
+],
+"rationale": "A suitable nursing goal should be specific, measurable, achievable, relevant and time-bound. Demonstrating two relaxation techniques provides an observable outcome that can be evaluated before discharge.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning in Mental Health",
+"question_text": "A patient with schizophrenia identifies returning to school as an important personal goal. Which intervention best reflects the recovery model?",
+"choices": [
+{"text": "Develop a care plan that includes the patient's educational goal and identifies appropriate support services", "is_correct": true},
+{"text": "Tell the patient that education is impossible with a psychiatric diagnosis", "is_correct": false},
+{"text": "Ignore the patient's preference and focus only on medication administration", "is_correct": false},
+{"text": "Postpone all rehabilitation activities until the patient has no symptoms", "is_correct": false}
+],
+"rationale": "The recovery model supports personally meaningful goals, social inclusion and participation in everyday life. Incorporating the patient's educational aspirations promotes autonomy, hope and individualised recovery planning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Trauma-Informed Care",
+"question_text": "A patient becomes visibly distressed when a nurse attempts to close the consultation-room door. The patient later explains that being confined in a room reminds them of a traumatic experience. What should the nurse do?",
+"choices": [
+{"text": "Insist that the door must remain closed regardless of the patient's distress", "is_correct": false},
+{"text": "Tell the patient that the experience should be forgotten", "is_correct": false},
+{"text": "End the therapeutic relationship because the patient is difficult", "is_correct": false},
+{"text": "Acknowledge the distress, discuss the patient's preferences and agree on a safe arrangement that supports choice", "is_correct": true}
+],
+"rationale": "Trauma-informed care recognises that environmental conditions can trigger distress and retraumatisation. The nurse should respond with empathy, explain safety considerations and collaborate with the patient on an acceptable arrangement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Relationship",
+"question_text": "A patient tells a psychiatric nurse, 'Nobody understands what I am going through.' Which response demonstrates therapeutic communication?",
+"choices": [
+{"text": "You should stop thinking negatively", "is_correct": false},
+{"text": "Can you tell me more about what has been difficult for you?", "is_correct": true},
+{"text": "Other people have worse problems than yours", "is_correct": false},
+{"text": "I know exactly how you feel", "is_correct": false}
+],
+"rationale": "An open-ended response encourages the patient to express feelings and provides an opportunity for further assessment. It demonstrates empathy without minimising the patient's experience or making assumptions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Relationship",
+"question_text": "A patient with persecutory delusions tells the nurse, 'The staff are planning to poison me.' Which response is most appropriate?",
+"choices": [
+{"text": "Yes, the staff are probably planning something against you", "is_correct": false},
+{"text": "That is ridiculous, and you should stop saying it", "is_correct": false},
+{"text": "I understand that you feel frightened, but I do not have evidence that staff are poisoning you", "is_correct": true},
+{"text": "I will leave you alone because there is nothing I can do", "is_correct": false}
+],
+"rationale": "The nurse should acknowledge the patient's feelings without reinforcing or arguing aggressively against the delusion. A calm, reality-based response helps maintain trust and supports further assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Milieu Therapy",
+"question_text": "A psychiatric nurse plans a daily activity programme for patients on an inpatient ward. Which approach best supports therapeutic milieu?",
+"choices": [
+{"text": "Providing structured activities, predictable routines and opportunities for safe social interaction", "is_correct": true},
+{"text": "Allowing unrestricted conflict between patients to encourage independence", "is_correct": false},
+{"text": "Preventing patients from participating in ward activities", "is_correct": false},
+{"text": "Using activities only as rewards for patients who obey every instruction", "is_correct": false}
+],
+"rationale": "A therapeutic milieu provides a structured, safe and supportive environment in which patients can practise social skills and adaptive behaviours. Activities should be appropriate to individual needs and should promote participation rather than punishment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Psychiatric Interventions",
+"question_text": "A patient experiencing severe anxiety is breathing rapidly and reports feeling unable to control their thoughts. Which nursing intervention is most appropriate initially?",
+"choices": [
+{"text": "Provide lengthy explanations about the causes of anxiety", "is_correct": false},
+{"text": "Leave the patient alone until the anxiety disappears", "is_correct": false},
+{"text": "Challenge the patient to complete a difficult task immediately", "is_correct": false},
+{"text": "Remain with the patient, use a calm voice and guide simple, slow breathing while assessing physical safety", "is_correct": true}
+],
+"rationale": "During severe anxiety, the patient's ability to process complex information may be reduced. A calm presence, simple communication and supportive breathing guidance can help reduce distress while the nurse assesses for medical causes of breathing difficulty.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Psychiatric Interventions",
+"question_text": "A patient with depression spends most of the day in bed and refuses group activities. Which intervention is most appropriate?",
+"choices": [
+{"text": "Force the patient to attend every group activity", "is_correct": false},
+{"text": "Develop a gradual activity plan with the patient, beginning with achievable tasks", "is_correct": true},
+{"text": "Allow complete inactivity throughout the admission", "is_correct": false},
+{"text": "Tell the patient that refusal demonstrates laziness", "is_correct": false}
+],
+"rationale": "Gradual activity scheduling can reduce inactivity and support behavioural activation in depression. Collaborative, achievable goals are more likely to encourage participation than coercion or criticism.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "During assessment, a patient reports hearing a voice commanding them to jump from a moving vehicle. What should the nurse do first?",
+"choices": [
+{"text": "Tell the patient to ignore the voice and continue normal activities", "is_correct": false},
+{"text": "Ask the patient to write down the voice's words and review them next week", "is_correct": false},
+{"text": "Assess immediate danger, command compliance and intent, and implement urgent safety measures", "is_correct": true},
+{"text": "Assume that all auditory hallucinations are harmless", "is_correct": false}
+],
+"rationale": "Command hallucinations involving potentially fatal actions require immediate risk assessment. The nurse should determine whether the patient feels compelled to obey, assess access to danger and implement appropriate protective measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation in Psychiatry",
+"question_text": "A patient becomes verbally aggressive during a ward interaction. Which documentation is most appropriate?",
+"choices": [
+{"text": "Patient was bad and behaved like a difficult person", "is_correct": false},
+{"text": "Patient was crazy and refused to cooperate", "is_correct": false},
+{"text": "Patient was intentionally causing trouble", "is_correct": false},
+{"text": "At 14:00, patient shouted, 'Leave me alone,' struck the table twice and declined the offered interview", "is_correct": true}
+],
+"rationale": "The fourth option records observable behaviour, a direct quotation and the patient's response in an objective manner. Objective documentation avoids judgemental labels and provides useful information for continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation in Psychiatry",
+"question_text": "A nurse discovers that an entry in a patient's paper record contains an incorrect medication administration time. What is the appropriate action?",
+"choices": [
+{"text": "Follow the facility's correction procedure, preserve the original entry and clearly identify the correction", "is_correct": true},
+{"text": "Erase the incorrect entry completely so that no one can see it", "is_correct": false},
+{"text": "Ask another nurse to rewrite the entire record under their name", "is_correct": false},
+{"text": "Leave the error uncorrected because the medication has already been given", "is_correct": false}
+],
+"rationale": "Clinical record corrections must preserve the integrity and traceability of the original entry. The nurse should follow institutional documentation policy, identify the correction and authenticate it appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation of Mental Health Outcomes",
+"question_text": "A care plan states that a patient with anxiety will identify two coping strategies within one week. At evaluation, the patient identifies and demonstrates both strategies. What should the nurse conclude?",
+"choices": [
+{"text": "The intervention has failed because the patient still experiences some anxiety", "is_correct": false},
+{"text": "The expected outcome has been achieved, and the care plan should be reviewed for further needs", "is_correct": true},
+{"text": "The patient no longer requires any mental health care", "is_correct": false},
+{"text": "The nursing diagnosis must automatically be changed to psychosis", "is_correct": false}
+],
+"rationale": "The patient has met the specific measurable outcome established in the care plan. The nurse should document achievement and determine whether further goals or interventions are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation of Mental Health Outcomes",
+"question_text": "A patient with schizophrenia continues to experience auditory hallucinations despite participating in prescribed nursing interventions. What should the nurse do?",
+"choices": [
+{"text": "Document that the patient has failed treatment and stop all interventions", "is_correct": false},
+{"text": "Assume that the patient is deliberately refusing to recover", "is_correct": false},
+{"text": "Reassess the patient, review progress and barriers, and collaborate with the team to modify the care plan where necessary", "is_correct": true},
+{"text": "Discharge the patient immediately because symptoms remain present", "is_correct": false}
+],
+"rationale": "Evaluation is a continuous process that identifies whether interventions are effective and whether goals remain appropriate. Persistent symptoms require reassessment and possible modification of the care plan rather than blame or automatic discontinuation of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Mental Health Nursing",
+"question_text": "A community psychiatric nurse visits a patient in a rural Ghanaian community and finds that the patient has missed several clinic appointments. The family reports difficulty travelling to the hospital. Which intervention is most appropriate?",
+"choices": [
+{"text": "Coordinate follow-up through available community mental health services and appropriate CHPS linkages while assessing the patient's clinical needs", "is_correct": true},
+{"text": "Discharge the patient permanently for missing appointments", "is_correct": false},
+{"text": "Tell the family that treatment is only available at a psychiatric hospital", "is_correct": false},
+{"text": "Advise the family to stop all prescribed treatment", "is_correct": false}
+],
+"rationale": "Community-based follow-up can improve access and continuity of psychiatric care, especially where transport is a barrier. Appropriate coordination with CHPS and community mental health services should maintain clinical oversight and referral pathways.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Relationship and Stigma Reduction",
+"question_text": "A patient attending a psychiatric clinic says, 'People in my community call me mad, so I do not want anyone to know I come here.' Which response is most appropriate?",
+"choices": [
+{"text": "Tell the patient that the community is right to use that description", "is_correct": false},
+{"text": "Advise the patient to stop attending the clinic to avoid embarrassment", "is_correct": false},
+{"text": "Explain that mental health conditions are health conditions, acknowledge the patient's concerns and discuss confidentiality and support", "is_correct": true},
+{"text": "Share the patient's diagnosis with community members to correct their beliefs", "is_correct": false}
+],
+"rationale": "Stigma can discourage people from seeking and continuing mental health care. Respectful communication, confidentiality and accurate education help promote dignity, treatment engagement and social inclusion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Trauma-Informed Care",
+"question_text": "A patient becomes distressed when staff members approach suddenly from behind. Which intervention best reflects trauma-informed practice?",
+"choices": [
+{"text": "Approach the patient unexpectedly to help them overcome the fear", "is_correct": false},
+{"text": "Explain that the patient is being unreasonable", "is_correct": false},
+{"text": "Avoid all future communication with the patient", "is_correct": false},
+{"text": "Approach within the patient's field of vision, explain actions before proceeding and seek consent where appropriate", "is_correct": true}
+],
+"rationale": "Predictability, transparency and patient choice can reduce distress associated with trauma reminders. Explaining actions and respecting personal space helps establish safety and trust.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Process and Care Planning",
+"question_text": "A nurse assesses a patient with depression, identifies social isolation as a nursing problem and plans structured social activities. Which stage of the nursing process is represented by carrying out the planned activities?",
+"choices": [
+{"text": "Assessment", "is_correct": false},
+{"text": "Implementation", "is_correct": true},
+{"text": "Diagnosis", "is_correct": false},
+{"text": "Evaluation", "is_correct": false}
+],
+"rationale": "Implementation involves carrying out the interventions selected in the nursing care plan. The nurse should document the actions performed and the patient's response.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Nursing Assessment",
+"question_text": "A patient admitted to a psychiatric ward reports taking an unknown quantity of tablets before arrival. The patient is drowsy and difficult to keep awake. What should the nurse prioritise?",
+"choices": [
+{"text": "Completing a detailed family genogram", "is_correct": false},
+{"text": "Exploring the patient's childhood experiences", "is_correct": false},
+{"text": "Assessing airway, breathing and circulation and arranging emergency medical evaluation", "is_correct": true},
+{"text": "Beginning a group therapy session", "is_correct": false}
+],
+"rationale": "A possible overdose with reduced consciousness is a medical emergency. Immediate physiological stabilisation and urgent medical assessment take priority over routine psychiatric history taking.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient with a history of aggression tells the nurse that a particular patient on the ward deserves to be punished and begins searching for an object to use as a weapon. Which action is the priority?",
+"choices": [
+{"text": "Protect potential victims, summon trained assistance and initiate the facility's emergency safety procedures", "is_correct": true},
+{"text": "Ask the threatened patient to confront the aggressor", "is_correct": false},
+{"text": "Wait until the patient actually uses the object", "is_correct": false},
+{"text": "Leave both patients together to resolve the disagreement", "is_correct": false}
+],
+"rationale": "The patient's threat, identified target and search for a weapon indicate an imminent risk of violence. The nurse should protect others, obtain trained assistance and follow the facility's safety and de-escalation procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Nursing Assessment",
+"question_text": "A patient is brought to Pantang Psychiatric Hospital after several days of little sleep, excessive talking, increased activity and impulsive spending. Which additional assessment is most important when developing the initial nursing formulation?",
+"choices": [
+{"text": "The patient's preferred clothing colour", "is_correct": false},
+{"text": "The patient's favourite television programme", "is_correct": false},
+{"text": "The patient's handwriting style", "is_correct": false},
+{"text": "History of previous mood episodes, substance use, medication, physical illness and current safety risks", "is_correct": true}
+],
+"rationale": "The symptoms suggest a possible manic episode, but assessment must consider previous mood episodes, substance use, medications and medical causes. Risk assessment should include impulsivity, financial vulnerability, aggression and possible self-harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation in Psychiatry",
+"question_text": "During a ward round, a patient reports hearing voices telling them to harm another patient. Which documentation entry is most appropriate?",
+"choices": [
+{"text": "Patient is dangerous and should not be trusted", "is_correct": false},
+{"text": "Patient reports voices instructing them to harm another patient; content, intent, access to means and immediate safety were assessed, and the clinical team was informed", "is_correct": true},
+{"text": "Patient is behaving strangely as usual", "is_correct": false},
+{"text": "Patient has bad thoughts and should be isolated", "is_correct": false}
+],
+"rationale": "The entry records the patient's report, relevant risk assessment and actions taken without using judgemental language. Clear documentation of command hallucinations and the response is essential for patient and staff safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning in Mental Health",
+"question_text": "A patient with schizophrenia wants to improve independent living skills but has difficulty managing personal finances and daily routines. Which care-planning approach is most appropriate?",
+"choices": [
+{"text": "Set goals without involving the patient to avoid disagreement", "is_correct": false},
+{"text": "Focus exclusively on symptom reduction and ignore daily functioning", "is_correct": false},
+{"text": "Collaboratively identify practical goals, strengths, support needs and measurable steps towards independent living", "is_correct": true},
+{"text": "Assume that independent living is unsuitable for every person with schizophrenia", "is_correct": false}
+],
+"rationale": "Recovery-oriented care recognises functional goals and personal strengths as important outcomes alongside symptom management. Collaborative planning helps the patient develop skills and access appropriate support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking in Mental Health Nursing",
+"question_text": "A patient with a psychiatric diagnosis reports severe abdominal pain and vomiting. The nurse notices that the patient has not opened their bowels for several days. What is the most appropriate clinical decision?",
+"choices": [
+{"text": "Assume the symptoms are attention-seeking behaviour", "is_correct": false},
+{"text": "Ignore the complaint because the patient has a mental health condition", "is_correct": false},
+{"text": "Offer reassurance without conducting an assessment", "is_correct": false},
+{"text": "Assess the physical symptoms promptly and arrange urgent medical review for possible gastrointestinal complications", "is_correct": true}
+],
+"rationale": "Psychiatric patients can develop serious physical illnesses, and abdominal pain with vomiting and constipation may indicate bowel obstruction or another complication. Critical thinking requires consideration of physical causes rather than diagnostic overshadowing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Nursing Assessment",
+"question_text": "A patient with a history of depression reports feeling hopeless but denies suicidal thoughts. The patient's relative reports that the patient recently gave away valuable belongings and wrote a farewell message. Which action is most appropriate?",
+"choices": [
+{"text": "Reassess suicide risk directly, explore the reported preparatory behaviours and implement appropriate safety measures", "is_correct": true},
+{"text": "Accept the patient's denial as conclusive evidence of no suicide risk", "is_correct": false},
+{"text": "Ignore the relative's information because it was not provided by the patient", "is_correct": false},
+{"text": "Discharge the patient because no suicidal thoughts were admitted", "is_correct": false}
+],
+"rationale": "Giving away possessions and writing a farewell message may represent preparatory behaviour associated with suicide risk. Risk assessment should integrate patient statements, collateral information and observed behaviour rather than relying on denial alone.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "NANDA-I Psychiatric Nursing Diagnoses",
+"question_text": "A patient with severe depression has withdrawn from social activities, reports persistent hopelessness and states, 'There is no point in living.' Which nursing diagnosis should receive the highest priority?",
+"choices": [
+{"text": "Social isolation", "is_correct": false},
+{"text": "Disturbed sleep pattern", "is_correct": false},
+{"text": "Risk for suicide", "is_correct": true},
+{"text": "Self-care deficit", "is_correct": false}
+],
+"rationale": "The statement suggests possible suicidal thinking, making immediate safety assessment the priority. Social isolation, sleep disturbance and self-care problems may also require intervention, but potential life-threatening risk takes precedence.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care Planning in Mental Health",
+"question_text": "A patient with recurrent psychosis has identified medication adherence, returning to work and rebuilding family relationships as personal recovery goals. Which care plan best reflects recovery-oriented practice?",
+"choices": [
+{"text": "A plan focused only on eliminating hallucinations, with no patient involvement", "is_correct": false},
+{"text": "A plan based entirely on the family's preferences", "is_correct": false},
+{"text": "A plan requiring the patient to remain in hospital until every symptom disappears", "is_correct": false},
+{"text": "A collaborative plan that addresses symptom management, meaningful employment, family relationships and the patient's own choices", "is_correct": true}
+],
+"rationale": "Recovery-oriented care recognises that personal goals, relationships and participation in society are important alongside clinical symptom management. The patient should be actively involved in setting goals and deciding which supports are meaningful.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient admitted with acute psychosis becomes increasingly restless and reports that a voice is commanding them to attack a fellow patient. The patient says they may obey the voice. Which nursing action has the highest priority?",
+"choices": [
+{"text": "Arrange an immediate safety response, separate potential victims where appropriate, maintain observation and urgently alert the clinical team", "is_correct": true},
+{"text": "Begin a routine discussion about the patient's childhood", "is_correct": false},
+{"text": "Tell the patient that the voice is imaginary and end the conversation", "is_correct": false},
+{"text": "Wait until the next scheduled ward round before taking action", "is_correct": false}
+],
+"rationale": "The patient has described a command hallucination with possible intent to comply, creating an immediate risk to others. The nurse must prioritise safety, use appropriate observation and obtain urgent multidisciplinary support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Trauma-Informed Care",
+"question_text": "A patient with a history of sexual trauma becomes distressed during a physical examination and asks the nurse to stop. There is no immediate life-threatening emergency. What is the most appropriate action?",
+"choices": [
+{"text": "Continue the examination because the nurse has already started", "is_correct": false},
+{"text": "Stop the examination, acknowledge the patient's distress, explain the purpose of the procedure and discuss consent and alternatives", "is_correct": true},
+{"text": "Tell the patient that refusing the examination proves non-compliance", "is_correct": false},
+{"text": "Ask several staff members to hold the patient down for convenience", "is_correct": false}
+],
+"rationale": "Trauma-informed care requires attention to consent, safety, choice and the possibility of retraumatisation. When there is no immediate emergency, the nurse should stop, discuss the patient's concerns and agree on an appropriate way forward.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evaluation of Mental Health Outcomes",
+"question_text": "A patient with depression has a care-plan goal of attending one group activity daily. After five days, the patient attends activities but reports increasing anxiety and says the group environment feels overwhelming. What should the nurse do?",
+"choices": [
+{"text": "Record the goal as achieved and continue the same intervention without review", "is_correct": false},
+{"text": "Conclude that the patient is deliberately resisting treatment", "is_correct": false},
+{"text": "Reassess the patient's response, explore the cause of anxiety and modify the activity plan collaboratively", "is_correct": true},
+{"text": "Stop all therapeutic activities permanently", "is_correct": false}
+],
+"rationale": "Evaluation considers both whether an outcome has been achieved and how the intervention affects the patient. The plan should be adjusted to remain therapeutic, realistic and consistent with the patient's needs and preferences.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Documentation in Psychiatry",
+"question_text": "A nurse documents that a patient was 'aggressive throughout the night'. During the handover, the incoming nurse discovers that the patient actually shouted once but did not threaten or physically harm anyone. What is the main documentation problem?",
+"choices": [
+{"text": "The entry contains an objective description of behaviour", "is_correct": false},
+{"text": "The entry includes an appropriate direct quotation", "is_correct": false},
+{"text": "The entry provides sufficient detail about the time and context", "is_correct": false},
+{"text": "The entry uses a broad judgemental description that may misrepresent the observed behaviour", "is_correct": true}
+],
+"rationale": "The term 'aggressive throughout the night' is vague and may exaggerate what occurred. Psychiatric documentation should describe specific observable actions, relevant context, duration and interventions rather than relying on unsupported labels.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking in Mental Health Nursing",
+"question_text": "A patient with a known psychiatric disorder develops sudden confusion, fever and reduced attention. A staff member suggests increasing the antipsychotic dose because the patient is becoming difficult to manage. Which response demonstrates the best clinical reasoning?",
+"choices": [
+{"text": "Agree immediately because confusion is always caused by psychosis", "is_correct": false},
+{"text": "Prioritise assessment for delirium and possible physical causes, including infection and medication complications, before changing psychiatric treatment", "is_correct": true},
+{"text": "Ignore the symptoms because they are common in psychiatric hospitals", "is_correct": false},
+{"text": "Discharge the patient to prevent further disturbance on the ward", "is_correct": false}
+],
+"rationale": "Acute confusion and fluctuating attention may indicate delirium, which can result from infection, metabolic abnormalities or medication effects. Increasing antipsychotic medication without investigating the cause may delay treatment of a serious medical condition.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Act 2012 and Patient Rights",
+"question_text": "A patient receiving care at Pantang Psychiatric Hospital complains that staff members discuss the patient's diagnosis in front of unrelated visitors. Which response best reflects professional and legal responsibilities?",
+"choices": [
+{"text": "Explain that confidentiality does not apply in psychiatric facilities", "is_correct": false},
+{"text": "Tell the patient that staff may share any information they wish", "is_correct": false},
+{"text": "Acknowledge the concern, protect the patient's confidentiality and report the incident through appropriate facility procedures", "is_correct": true},
+{"text": "Advise the patient to stop attending the hospital", "is_correct": false}
+],
+"rationale": "Confidentiality and respect for service users' dignity are fundamental professional responsibilities and are consistent with the rights-based framework of Ghana's Mental Health Act, 2012 (Act 846). Disclosure should be limited to appropriate purposes and lawful circumstances, and concerns should be addressed through proper procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Mental Health and Stigma Reduction",
+"question_text": "A community psychiatric nurse visits a patient who has stopped attending treatment because a traditional healer has advised the family that psychiatric medication is harmful. The family is willing to discuss the situation. Which approach is most appropriate?",
+"choices": [
+{"text": "Insult the traditional healer and refuse to communicate with the family", "is_correct": false},
+{"text": "Tell the family to abandon all cultural beliefs before receiving care", "is_correct": false},
+{"text": "Ignore the treatment interruption and wait for the patient to return", "is_correct": false},
+{"text": "Explore the family's concerns respectfully, provide accurate information about treatment risks and benefits, and support safe collaboration and follow-up where appropriate", "is_correct": true}
+],
+"rationale": "Culturally respectful engagement can help address concerns that contribute to treatment interruption and stigma. Collaboration should support evidence-based care and patient safety without endorsing harmful practices or allowing essential treatment to be abandoned.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking and Nursing Prioritisation",
+"question_text": "Four patients are being assessed on a psychiatric ward. Which patient requires the nurse's immediate attention?",
+"choices": [
+{"text": "A patient with schizophrenia who reports hearing a familiar voice but denies commands or distress", "is_correct": false},
+{"text": "A patient with depression who reports poor appetite over the past week but is medically stable", "is_correct": false},
+{"text": "A patient who is drowsy, has shallow breathing and is difficult to rouse after taking an unknown quantity of tablets", "is_correct": true},
+{"text": "A patient with anxiety who requests assistance with a relaxation exercise", "is_correct": false}
+],
+"rationale": "The patient with reduced consciousness and shallow breathing may be experiencing a life-threatening overdose with respiratory compromise. Airway and breathing emergencies take priority over non-emergency psychiatric symptoms.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care Planning and Risk Assessment",
+"question_text": "A patient with a history of repeated self-harm is preparing for discharge. The patient reports improved mood, but the family says the patient has recently searched online for methods of suicide. What should the nurse recommend?",
+"choices": [
+{"text": "Complete a renewed suicide risk assessment, review access to means and develop a collaborative safety and follow-up plan before discharge", "is_correct": true},
+{"text": "Proceed with discharge because improved mood always means suicide risk has ended", "is_correct": false},
+{"text": "Ignore the family's information because the patient has not reported suicidal thoughts", "is_correct": false},
+{"text": "Tell the family to supervise the patient without involving the clinical team", "is_correct": false}
+],
+"rationale": "Searching for suicide methods may indicate planning or preparatory behaviour and must be considered during discharge assessment. Improved mood alone does not establish that risk has resolved, so safety planning, means-safety discussion and appropriate follow-up are essential.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
