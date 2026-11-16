@@ -1,0 +1,940 @@
+{
+"courses": [
+{
+"course_code": "MMN-311-P",
+"course_title": "Medicine and Medical Nursing III",
+"category": "MEDICAL",
+"semester": "S1",
+"topics": [
+"Psychotropic Medications",
+"Antipsychotics",
+"Antidepressants",
+"Mood Stabilizers",
+"Anxiolytics",
+"Extrapyramidal Symptoms",
+"Neuroleptic Malignant Syndrome",
+"Lithium Toxicity",
+"Physical Health Monitoring in Mental Illness",
+"Substance Use Disorders",
+"Dual Diagnosis",
+"Medical Comorbidities in Psychiatric Patients",
+"Metabolic Syndrome",
+"Medication Adherence"
+],
+"questions": [
+{
+"topic": "Antipsychotic Medications",
+"question_text": "Which of the following is classified as a first-generation (typical) antipsychotic medication?",
+"choices": [
+{"text": "Risperidone", "is_correct": false},
+{"text": "Haloperidol", "is_correct": true},
+{"text": "Olanzapine", "is_correct": false},
+{"text": "Quetiapine", "is_correct": false}
+],
+"rationale": "Haloperidol is a first-generation antipsychotic that primarily blocks dopamine D2 receptors. Risperidone, olanzapine and quetiapine are second-generation antipsychotics.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antipsychotic Medications",
+"question_text": "Which receptor action is primarily responsible for the antipsychotic effect of many conventional antipsychotic medications?",
+"choices": [
+{"text": "Dopamine D2 receptor antagonism", "is_correct": true},
+{"text": "Acetylcholine receptor stimulation", "is_correct": false},
+{"text": "Histamine receptor stimulation", "is_correct": false},
+{"text": "GABA receptor inhibition", "is_correct": false}
+],
+"rationale": "Many conventional antipsychotics reduce dopaminergic activity through blockade of dopamine D2 receptors. This helps control positive symptoms such as hallucinations and delusions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antidepressants",
+"question_text": "Which class of antidepressants works mainly by inhibiting the reuptake of serotonin and noradrenaline?",
+"choices": [
+{"text": "Monoamine oxidase inhibitors", "is_correct": false},
+{"text": "Tricyclic antidepressants only", "is_correct": false},
+{"text": "Selective serotonin reuptake inhibitors", "is_correct": false},
+{"text": "Serotonin-noradrenaline reuptake inhibitors", "is_correct": true}
+],
+"rationale": "Serotonin-noradrenaline reuptake inhibitors (SNRIs) inhibit the reuptake of both serotonin and noradrenaline. This increases the availability of these neurotransmitters in the synaptic cleft.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mood Stabilizers",
+"question_text": "Which medication is commonly used as a mood stabilizer in the long-term management of bipolar disorder?",
+"choices": [
+{"text": "Diazepam", "is_correct": false},
+{"text": "Lithium", "is_correct": true},
+{"text": "Haloperidol", "is_correct": false},
+{"text": "Chlorpromazine", "is_correct": false}
+],
+"rationale": "Lithium is an established mood stabilizer used in the management of bipolar disorder, particularly for preventing manic and depressive relapses. Its use requires regular monitoring because the therapeutic range is narrow.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Anxiolytics",
+"question_text": "Which of the following is a benzodiazepine commonly prescribed for short-term relief of severe anxiety?",
+"choices": [
+{"text": "Fluoxetine", "is_correct": false},
+{"text": "Lithium", "is_correct": false},
+{"text": "Diazepam", "is_correct": true},
+{"text": "Clozapine", "is_correct": false}
+],
+"rationale": "Diazepam is a benzodiazepine that enhances the inhibitory effect of gamma-aminobutyric acid (GABA). It may be used for short-term management of severe anxiety, but prolonged use can cause dependence and tolerance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Extrapyramidal Symptoms",
+"question_text": "Which of the following is an example of an extrapyramidal side effect associated with antipsychotic medication?",
+"choices": [
+{"text": "Drug-induced parkinsonism", "is_correct": true},
+{"text": "Hyperglycaemia", "is_correct": false},
+{"text": "Neutropenia", "is_correct": false},
+{"text": "Hypothyroidism", "is_correct": false}
+],
+"rationale": "Drug-induced parkinsonism is an extrapyramidal symptom caused by dopamine blockade in the nigrostriatal pathway. It may present with tremor, muscular rigidity and bradykinesia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neuroleptic Malignant Syndrome",
+"question_text": "Which combination of findings is most characteristic of neuroleptic malignant syndrome (NMS)?",
+"choices": [
+{"text": "Diarrhoea, excessive salivation and pinpoint pupils", "is_correct": false},
+{"text": "Weight gain, increased appetite and constipation", "is_correct": false},
+{"text": "Tremor, increased thirst and polyuria without fever", "is_correct": false},
+{"text": "Hyperthermia, severe muscle rigidity and altered mental status", "is_correct": true}
+],
+"rationale": "NMS is a potentially life-threatening reaction associated with dopamine-blocking medications. Its characteristic features include high fever, severe rigidity, altered mental status and autonomic instability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Lithium Toxicity",
+"question_text": "Which of the following is an early clinical feature of lithium toxicity?",
+"choices": [
+{"text": "Improved concentration", "is_correct": false},
+{"text": "Fine tremor becoming coarse, with gastrointestinal disturbances", "is_correct": true},
+{"text": "Increased visual acuity", "is_correct": false},
+{"text": "Reduced urine output as the only symptom", "is_correct": false}
+],
+"rationale": "Lithium toxicity may initially present with worsening tremor, nausea, vomiting and diarrhoea. More severe toxicity can cause ataxia, confusion, seizures and impaired consciousness.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physical Health Monitoring",
+"question_text": "Which physical health measurement is particularly important when monitoring a patient receiving long-term antipsychotic treatment?",
+"choices": [
+{"text": "Hair length", "is_correct": false},
+{"text": "Visual acuity alone", "is_correct": false},
+{"text": "Body weight and body mass index", "is_correct": true},
+{"text": "Handwriting style", "is_correct": false}
+],
+"rationale": "Many antipsychotics can cause weight gain and metabolic abnormalities. Regular weight and body mass index monitoring helps identify early changes and supports prevention of cardiometabolic complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Metabolic Syndrome",
+"question_text": "Which combination best describes the major components of metabolic syndrome?",
+"choices": [
+{"text": "Abdominal obesity, raised blood pressure, dyslipidaemia and impaired glucose regulation", "is_correct": true},
+{"text": "Low body weight, hypotension, anaemia and hypoglycaemia", "is_correct": false},
+{"text": "Fever, joint pain, skin rash and diarrhoea", "is_correct": false},
+{"text": "Tremor, muscle rigidity, hallucinations and insomnia", "is_correct": false}
+],
+"rationale": "Metabolic syndrome is a cluster of cardiometabolic risk factors that includes central obesity, hypertension, abnormal lipid levels and elevated blood glucose. It increases the risk of type 2 diabetes and cardiovascular disease.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Substance Use Disorders",
+"question_text": "Which psychoactive substance is the main intoxicating component of cannabis?",
+"choices": [
+{"text": "Nicotine", "is_correct": false},
+{"text": "Caffeine", "is_correct": false},
+{"text": "Tetrahydrocannabinol", "is_correct": true},
+{"text": "Ethanol", "is_correct": false}
+],
+"rationale": "Tetrahydrocannabinol (THC) is the principal psychoactive component of cannabis. It can impair memory and judgement and may cause anxiety, altered perception or psychotic symptoms in susceptible individuals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Substance Use Disorders",
+"question_text": "Which clinical condition can develop following prolonged heavy alcohol use when alcohol consumption is suddenly stopped?",
+"choices": [
+{"text": "Parkinson's disease", "is_correct": false},
+{"text": "Alcohol withdrawal syndrome", "is_correct": true},
+{"text": "Myasthenia gravis", "is_correct": false},
+{"text": "Hypothyroidism", "is_correct": false}
+],
+"rationale": "Alcohol withdrawal occurs when a person with physiological dependence reduces or stops alcohol intake. Symptoms range from tremor and sweating to seizures and delirium tremens.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Substance Use Disorders",
+"question_text": "Which of the following is a recognised risk associated with the non-medical use of tramadol?",
+"choices": [
+{"text": "Permanent immunity to pain", "is_correct": false},
+{"text": "Reduced risk of dependence", "is_correct": false},
+{"text": "Improved respiratory function", "is_correct": false},
+{"text": "Dependence and seizures", "is_correct": true}
+],
+"rationale": "Tramadol is an opioid analgesic with additional effects on serotonin and noradrenaline pathways. Misuse can cause dependence, seizures and potentially life-threatening respiratory depression, particularly when combined with other sedatives.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Dual Diagnosis",
+"question_text": "What is meant by the term dual diagnosis in mental health care?",
+"choices": [
+{"text": "The coexistence of a mental health disorder and a substance use disorder", "is_correct": true},
+{"text": "The presence of two physical injuries", "is_correct": false},
+{"text": "The diagnosis of two unrelated infectious diseases", "is_correct": false},
+{"text": "The use of two psychiatric medications in one patient", "is_correct": false}
+],
+"rationale": "Dual diagnosis commonly refers to the co-occurrence of a mental health disorder and a substance use disorder. Both conditions require coordinated assessment and treatment because each can worsen the other.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medication Adherence",
+"question_text": "What does medication adherence mean in the management of a person with a mental health disorder?",
+"choices": [
+{"text": "Taking medication only when symptoms become severe", "is_correct": false},
+{"text": "Taking medication according to the agreed treatment plan", "is_correct": true},
+{"text": "Increasing the dose whenever the patient feels unwell", "is_correct": false},
+{"text": "Stopping medication once the patient feels better", "is_correct": false}
+],
+"rationale": "Medication adherence means taking medicines in accordance with the agreed treatment plan, including the prescribed dose and schedule. Poor adherence can contribute to relapse, hospital readmission and treatment failure.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "Which investigation is particularly important before and during treatment with clozapine?",
+"choices": [
+{"text": "Routine hearing assessment only", "is_correct": false},
+{"text": "Daily stool examination", "is_correct": false},
+{"text": "Full blood count with absolute neutrophil count monitoring", "is_correct": true},
+{"text": "Routine malaria microscopy every week for all patients", "is_correct": false}
+],
+"rationale": "Clozapine can cause severe neutropenia and agranulocytosis, increasing the risk of serious infection. Full blood count and absolute neutrophil count monitoring are therefore essential according to the applicable monitoring protocol.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antipsychotic Medication Administration",
+"question_text": "A patient admitted to a psychiatric unit in Accra is prescribed haloperidol for acute psychotic symptoms. The patient develops marked muscular stiffness and a shuffling gait after treatment begins. What should the nurse suspect?",
+"choices": [
+{"text": "Drug-induced parkinsonism", "is_correct": true},
+{"text": "Lithium toxicity", "is_correct": false},
+{"text": "Alcohol withdrawal", "is_correct": false},
+{"text": "Serotonin deficiency", "is_correct": false}
+],
+"rationale": "Muscular rigidity and a shuffling gait following haloperidol treatment are consistent with drug-induced parkinsonism. The nurse should report the symptoms for clinical review and assessment of the antipsychotic regimen.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Acute Dystonia",
+"question_text": "A 24-year-old patient develops painful neck twisting and upward deviation of the eyes shortly after receiving an antipsychotic injection. Which intervention should the nurse anticipate?",
+"choices": [
+{"text": "Administering another dose of the same antipsychotic", "is_correct": false},
+{"text": "Encouraging the patient to walk around", "is_correct": false},
+{"text": "Restricting oral fluids for 24 hours", "is_correct": false},
+{"text": "Obtaining urgent clinical review and administering a prescribed anticholinergic treatment", "is_correct": true}
+],
+"rationale": "The presentation suggests acute dystonia, an extrapyramidal reaction that can occur soon after antipsychotic administration. Urgent assessment is necessary, particularly if the airway or swallowing is affected, and prescribed anticholinergic treatment such as benztropine or an appropriate alternative may be required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neuroleptic Malignant Syndrome",
+"question_text": "A patient receiving haloperidol develops a temperature of 40°C, severe generalised rigidity, confusion and unstable blood pressure. What is the nurse's priority action?",
+"choices": [
+{"text": "Give the next scheduled dose of haloperidol", "is_correct": false},
+{"text": "Encourage the patient to sleep and reassess tomorrow", "is_correct": false},
+{"text": "Withhold the suspected antipsychotic, initiate emergency assessment and arrange urgent medical treatment", "is_correct": true},
+{"text": "Provide reassurance without notifying the prescriber", "is_correct": false}
+],
+"rationale": "These findings strongly suggest neuroleptic malignant syndrome, a life-threatening medical emergency. The suspected causative medication should be stopped and urgent supportive medical management initiated, including assessment of airway, circulation, temperature and complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Lithium Toxicity",
+"question_text": "A patient taking lithium for bipolar disorder reports vomiting, diarrhoea and worsening tremor. What should the nurse do first?",
+"choices": [
+{"text": "Advise the patient to double the next dose", "is_correct": false},
+{"text": "Withhold further lithium pending urgent clinical assessment and arrange a serum lithium level and relevant investigations", "is_correct": true},
+{"text": "Reassure the patient that these symptoms are always harmless", "is_correct": false},
+{"text": "Encourage strenuous physical exercise", "is_correct": false}
+],
+"rationale": "Vomiting, diarrhoea and worsening tremor may indicate lithium toxicity, which can progress to neurological impairment and seizures. The nurse should withhold further doses pending urgent medical review and arrange serum lithium, renal function and electrolyte assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Lithium Monitoring",
+"question_text": "A patient receiving lithium has been prescribed a diuretic for hypertension. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Tell the patient to stop all prescribed medicines permanently", "is_correct": false},
+{"text": "Ignore the interaction because lithium is not affected by other medicines", "is_correct": false},
+{"text": "Increase the lithium dose to compensate for the diuretic", "is_correct": false},
+{"text": "Inform the prescriber because some diuretics can increase lithium concentrations and toxicity risk", "is_correct": true}
+],
+"rationale": "Some diuretics, particularly thiazide diuretics, can reduce renal lithium clearance and increase serum lithium concentrations. The prescriber should review the combination and arrange appropriate lithium and renal monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Lithium Monitoring",
+"question_text": "A patient taking lithium asks why regular blood tests are necessary even though the medication is controlling the manic episodes. Which response is most appropriate?",
+"choices": [
+{"text": "The tests confirm whether the patient has recovered permanently", "is_correct": false},
+{"text": "The tests are only required to identify infectious diseases", "is_correct": false},
+{"text": "Lithium has a narrow therapeutic range, so blood levels and renal and thyroid function need monitoring", "is_correct": true},
+{"text": "The tests are unnecessary once the patient is symptom-free", "is_correct": false}
+],
+"rationale": "Lithium concentrations must remain within a safe therapeutic range because the difference between therapeutic and toxic levels is relatively small. Regular monitoring also helps detect renal and thyroid complications associated with long-term treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antidepressants",
+"question_text": "A patient who recently started fluoxetine reports nausea, mild headache and difficulty sleeping. What is the nurse's most appropriate response?",
+"choices": [
+{"text": "Explain that these may be early adverse effects, assess severity and advise the patient not to stop treatment without clinical advice", "is_correct": true},
+{"text": "Tell the patient to double the dose to overcome the symptoms", "is_correct": false},
+{"text": "Instruct the patient to discontinue all antidepressants permanently", "is_correct": false},
+{"text": "Explain that fluoxetine must produce immediate improvement within one hour", "is_correct": false}
+],
+"rationale": "Nausea, headache and sleep disturbance can occur during the early stages of SSRI treatment. The nurse should assess the symptoms, provide education and encourage follow-up rather than recommending unsupervised dose changes or abrupt discontinuation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antidepressant Safety",
+"question_text": "A patient taking sertraline develops agitation, sweating, diarrhoea, fever and muscle twitching after starting another serotonergic medicine. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Lithium-induced hypothyroidism", "is_correct": false},
+{"text": "Neuroleptic-induced parkinsonism", "is_correct": false},
+{"text": "Serotonin syndrome", "is_correct": true},
+{"text": "Simple medication non-adherence", "is_correct": false}
+],
+"rationale": "The combination of agitation, autonomic symptoms, gastrointestinal disturbance and neuromuscular hyperactivity suggests serotonin syndrome. It can become life-threatening and requires urgent medical assessment and discontinuation of causative serotonergic agents as clinically directed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antidepressant Safety",
+"question_text": "A patient with depression begins an antidepressant and reports increased energy but continues to experience suicidal thoughts. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Assume the patient is no longer at risk because energy has improved", "is_correct": false},
+{"text": "Assess suicide risk directly, increase appropriate observation and urgently communicate the findings to the clinical team", "is_correct": true},
+{"text": "Discharge the patient because antidepressants have started working", "is_correct": false},
+{"text": "Avoid asking about suicide because the question may cause suicidal behaviour", "is_correct": false}
+],
+"rationale": "Some patients may experience changes in energy before depressive symptoms and suicidal thinking have resolved. Direct suicide assessment, appropriate safety measures and prompt communication with the clinical team are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antidepressant Adverse Effects",
+"question_text": "A patient taking amitriptyline complains of dry mouth, blurred vision and constipation. Which explanation should the nurse provide?",
+"choices": [
+{"text": "These are typical signs of lithium toxicity", "is_correct": false},
+{"text": "The patient has developed an acute bacterial infection", "is_correct": false},
+{"text": "The symptoms prove that the antidepressant is ineffective", "is_correct": false},
+{"text": "These symptoms are consistent with the anticholinergic effects of tricyclic antidepressants", "is_correct": true}
+],
+"rationale": "Amitriptyline is a tricyclic antidepressant with anticholinergic properties. These can cause dry mouth, blurred vision, constipation and urinary retention, particularly in susceptible patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Anxiolytic Medication Safety",
+"question_text": "A patient receiving diazepam for severe anxiety becomes unusually drowsy and has a respiratory rate of 8 breaths per minute. What should the nurse do first?",
+"choices": [
+{"text": "Withhold further diazepam, assess airway and breathing, and activate urgent medical assistance", "is_correct": true},
+{"text": "Administer another dose to prevent rebound anxiety", "is_correct": false},
+{"text": "Allow the patient to sleep without observation", "is_correct": false},
+{"text": "Encourage the patient to walk independently", "is_correct": false}
+],
+"rationale": "Marked sedation with respiratory depression may indicate benzodiazepine toxicity or an interaction with other central nervous system depressants. Airway and breathing assessment and urgent medical intervention take priority.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Benzodiazepine Dependence",
+"question_text": "A patient who has taken diazepam daily for several months decides to stop it suddenly. Which complication should the nurse explain may occur?",
+"choices": [
+{"text": "Permanent immunity to anxiety", "is_correct": false},
+{"text": "Improved sleep without any withdrawal symptoms", "is_correct": false},
+{"text": "Withdrawal symptoms, including anxiety, tremors and potentially seizures", "is_correct": true},
+{"text": "Immediate development of metabolic syndrome", "is_correct": false}
+],
+"rationale": "Long-term benzodiazepine use can produce physiological dependence. Abrupt cessation may cause withdrawal symptoms, and severe withdrawal can lead to seizures; discontinuation should therefore be medically supervised and usually gradual.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physical Health Monitoring",
+"question_text": "A patient starting olanzapine attends a mental health clinic at Pantang. Which baseline assessment is most appropriate before or at the start of treatment?",
+"choices": [
+{"text": "Assessment of handwriting and reading speed only", "is_correct": false},
+{"text": "Weight or BMI, waist circumference, blood pressure, glucose or HbA1c, and lipid profile", "is_correct": true},
+{"text": "Assessment of hair growth and nail length", "is_correct": false},
+{"text": "Routine chest radiography for every patient", "is_correct": false}
+],
+"rationale": "Olanzapine is associated with significant metabolic adverse effects, including weight gain, dyslipidaemia and hyperglycaemia. Baseline cardiometabolic assessment provides a reference for monitoring changes during treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolic Syndrome",
+"question_text": "A patient receiving long-term olanzapine has gained substantial weight and has an increased waist circumference. What should the nurse do?",
+"choices": [
+{"text": "Assume the weight gain is unrelated to treatment", "is_correct": false},
+{"text": "Advise the patient to stop olanzapine immediately without consultation", "is_correct": false},
+{"text": "Recommend avoiding all physical activity", "is_correct": false},
+{"text": "Arrange metabolic assessment and provide appropriate lifestyle counselling while informing the prescriber", "is_correct": true}
+],
+"rationale": "Olanzapine can contribute to weight gain and metabolic syndrome. The nurse should arrange assessment of blood pressure, glucose and lipids, support healthy diet and physical activity, and communicate the findings for treatment review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physical Health Monitoring",
+"question_text": "A patient with schizophrenia attending a community mental health clinic in Ghana reports persistent thirst, frequent urination and unexplained weight loss. What is the most appropriate nursing action?",
+"choices": [
+{"text": "Assume these symptoms are part of schizophrenia", "is_correct": false},
+{"text": "Advise the patient to reduce water intake without assessment", "is_correct": false},
+{"text": "Arrange prompt blood glucose assessment and medical evaluation for possible diabetes mellitus", "is_correct": true},
+{"text": "Increase the antipsychotic dose without further investigation", "is_correct": false}
+],
+"rationale": "Polydipsia, polyuria and unexplained weight loss are possible symptoms of hyperglycaemia and diabetes mellitus. Physical complaints in people with psychiatric disorders must be assessed rather than automatically attributed to mental illness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Substance Use Disorders: Alcohol",
+"question_text": "A patient admitted to a psychiatric unit in Accra has a history of heavy daily alcohol consumption. Twelve hours after admission, the patient develops tremors, sweating, anxiety and tachycardia. What is the most likely explanation?",
+"choices": [
+{"text": "Alcohol withdrawal syndrome", "is_correct": true},
+{"text": "Clozapine-induced agranulocytosis", "is_correct": false},
+{"text": "Lithium-induced hypothyroidism", "is_correct": false},
+{"text": "Opioid intoxication", "is_correct": false}
+],
+"rationale": "Tremor, sweating, anxiety and tachycardia occurring after cessation of prolonged heavy alcohol use are consistent with alcohol withdrawal. The patient requires clinical assessment, monitoring and treatment according to the severity of withdrawal.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Alcohol Withdrawal",
+"question_text": "A patient with a history of alcohol dependence develops a generalised seizure during withdrawal in a psychiatric ward. What is the nurse's priority action?",
+"choices": [
+{"text": "Place an object in the patient's mouth to prevent tongue biting", "is_correct": false},
+{"text": "Restrain the patient's limbs firmly during the seizure", "is_correct": false},
+{"text": "Give oral medication while the patient is convulsing", "is_correct": false},
+{"text": "Protect the patient from injury, maintain airway safety and summon emergency medical assistance", "is_correct": true}
+],
+"rationale": "An alcohol withdrawal seizure is a medical emergency. The nurse should protect the patient from injury, maintain airway safety, time the seizure and obtain urgent medical assistance without placing objects in the mouth or restraining the limbs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Alcohol Withdrawal",
+"question_text": "A patient with severe alcohol dependence becomes confused, agitated and experiences visual hallucinations two days after stopping alcohol. The patient is febrile and has marked autonomic instability. Which condition is most likely?",
+"choices": [
+{"text": "Cannabis intoxication", "is_correct": false},
+{"text": "Delirium tremens", "is_correct": true},
+{"text": "Simple social anxiety", "is_correct": false},
+{"text": "Medication-induced dry mouth", "is_correct": false}
+],
+"rationale": "Delirium tremens is a severe form of alcohol withdrawal characterised by delirium, agitation, hallucinations and autonomic instability. It requires urgent hospital-based medical treatment and close monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Substance Use Disorders: Cannabis",
+"question_text": "A 20-year-old student is brought to a psychiatric clinic after using cannabis and develops intense fear, suspiciousness and auditory hallucinations. What is the most appropriate initial nursing response?",
+"choices": [
+{"text": "Argue with the patient to prove that the hallucinations are false", "is_correct": false},
+{"text": "Leave the patient alone in an unlocked public area", "is_correct": false},
+{"text": "Provide a calm, low-stimulation environment and assess mental state, physical condition and immediate safety", "is_correct": true},
+{"text": "Assume that the patient has a permanent schizophrenia diagnosis", "is_correct": false}
+],
+"rationale": "Cannabis intoxication can cause anxiety, paranoia and transient psychotic symptoms. The nurse should reduce stimulation, assess immediate risks and physical status, and ensure appropriate clinical evaluation before establishing a long-term diagnosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Substance Use Disorders: Tramadol",
+"question_text": "A young adult is brought to the emergency department after taking a large quantity of tramadol obtained without a prescription. The patient is drowsy and develops a seizure. What should the nurse prioritise?",
+"choices": [
+{"text": "Airway, breathing and circulation assessment with immediate emergency management", "is_correct": true},
+{"text": "A detailed discussion about employment history", "is_correct": false},
+{"text": "Discharge because tramadol is a commonly prescribed analgesic", "is_correct": false},
+{"text": "Encouraging the patient to drink alcohol to reduce anxiety", "is_correct": false}
+],
+"rationale": "Tramadol overdose can cause seizures, respiratory depression and reduced consciousness. Immediate emergency management should prioritise airway, breathing and circulation, with further toxicological assessment and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Substance Use Disorders: Tramadol",
+"question_text": "A patient who has been misusing tramadol reports increasing the dose because the original amount no longer produces the desired effect. Which phenomenon does this suggest?",
+"choices": [
+{"text": "Medication allergy", "is_correct": false},
+{"text": "Therapeutic remission", "is_correct": false},
+{"text": "Psychological recovery", "is_correct": false},
+{"text": "Tolerance", "is_correct": true}
+],
+"rationale": "Tolerance occurs when repeated exposure to a substance reduces its effect, leading the person to require increasing amounts to achieve a similar response. It is a recognised feature of problematic opioid use and increases the risk of overdose.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Dual Diagnosis",
+"question_text": "A patient with schizophrenia who frequently uses cannabis is admitted to a psychiatric unit. Which approach is most appropriate for managing the patient's dual diagnosis?",
+"choices": [
+{"text": "Treat the psychotic disorder and ignore cannabis use", "is_correct": false},
+{"text": "Provide integrated care that addresses both psychotic symptoms and substance use", "is_correct": true},
+{"text": "Refuse psychiatric treatment until the patient stops cannabis use independently", "is_correct": false},
+{"text": "Focus only on punishment for substance use", "is_correct": false}
+],
+"rationale": "Dual diagnosis requires coordinated management of both the mental health disorder and the substance use disorder. Integrated treatment improves continuity of care and reduces the risk of relapse associated with untreated substance use.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Comorbidities",
+"question_text": "A patient with a long-standing psychiatric disorder presents with fever, headache, vomiting and altered consciousness after returning from a malaria-endemic community in Ghana. What should the nurse do?",
+"choices": [
+{"text": "Assume the symptoms are caused by the psychiatric disorder", "is_correct": false},
+{"text": "Administer the patient's usual antipsychotic and wait for improvement", "is_correct": false},
+{"text": "Arrange urgent medical assessment, including investigation for malaria and other causes of acute altered consciousness", "is_correct": true},
+{"text": "Advise the patient to return home and rest", "is_correct": false}
+],
+"rationale": "Fever, headache, vomiting and altered consciousness may indicate severe malaria or another acute medical condition. Psychiatric history must not delay urgent medical assessment and appropriate investigation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Comorbidities",
+"question_text": "A patient with depression and a history of hypertension complains of chest pain and difficulty breathing while attending a community mental health clinic. What is the nurse's best action?",
+"choices": [
+{"text": "Treat the complaint as an emotional reaction without assessment", "is_correct": false},
+{"text": "Ask the patient to return at the next psychiatric appointment", "is_correct": false},
+{"text": "Give reassurance and continue the scheduled counselling session", "is_correct": false},
+{"text": "Initiate urgent medical assessment and referral because the symptoms may indicate a cardiovascular emergency", "is_correct": true}
+],
+"rationale": "Chest pain and difficulty breathing may indicate an acute cardiovascular or respiratory emergency. The nurse must prioritise immediate medical assessment rather than assuming that the symptoms are psychological.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physical Health Monitoring",
+"question_text": "A patient receiving long-term antipsychotic medication reports persistent constipation and abdominal discomfort. What should the nurse do?",
+"choices": [
+{"text": "Assess bowel function and urgently evaluate severe or worsening symptoms for possible gastrointestinal complications", "is_correct": true},
+{"text": "Ignore the complaint because constipation is not a medical concern in psychiatric patients", "is_correct": false},
+{"text": "Advise the patient to stop eating all solid foods", "is_correct": false},
+{"text": "Increase the antipsychotic dose without consulting the prescriber", "is_correct": false}
+],
+"rationale": "Antipsychotics, particularly clozapine, can cause significant gastrointestinal hypomotility and constipation. Severe constipation may progress to ileus or bowel obstruction, so early assessment and escalation are important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Adherence",
+"question_text": "A patient with bipolar disorder stops taking prescribed medication because the patient feels completely well. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Tell the patient that medication is no longer needed when symptoms disappear", "is_correct": false},
+{"text": "Explore the patient's reasons for stopping, explain relapse prevention and involve the patient in an agreed treatment plan", "is_correct": true},
+{"text": "Threaten the patient with compulsory admission", "is_correct": false},
+{"text": "Advise the patient to take medication only during manic episodes", "is_correct": false}
+],
+"rationale": "Bipolar disorder can relapse even when symptoms are controlled. Shared decision-making, education about maintenance treatment and exploration of barriers can improve adherence and reduce relapse risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Adherence",
+"question_text": "A patient attending a community mental health clinic in Ghana frequently misses appointments because transport costs are high. Which intervention is most appropriate?",
+"choices": [
+{"text": "Discharge the patient for failing to attend regularly", "is_correct": false},
+{"text": "Label the patient as uncooperative and stop treatment", "is_correct": false},
+{"text": "Explore feasible follow-up arrangements, including community mental health support and appropriate CHPS linkage", "is_correct": true},
+{"text": "Advise the patient to obtain medication from unregulated sources", "is_correct": false}
+],
+"rationale": "Transport costs can create practical barriers to treatment adherence. Coordinating community mental health services with appropriate CHPS-level support can improve access, follow-up and continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Adherence",
+"question_text": "A patient with schizophrenia refuses oral medication because of unpleasant adverse effects. What should the nurse do?",
+"choices": [
+{"text": "Explore the adverse effects, assess the patient's concerns and discuss treatment options with the prescriber", "is_correct": true},
+{"text": "Hide the medication in the patient's food without consent", "is_correct": false},
+{"text": "Physically force the patient to swallow the medication in every situation", "is_correct": false},
+{"text": "Discontinue all treatment without informing the clinical team", "is_correct": false}
+],
+"rationale": "Unpleasant adverse effects are a common reason for medication non-adherence. Respectful discussion, assessment of the specific problem and collaborative review of treatment can support informed decisions and safer medication use.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient receiving clozapine reports fever, sore throat and general weakness. What should the nurse do?",
+"choices": [
+{"text": "Advise the patient to continue treatment without further assessment", "is_correct": false},
+{"text": "Recommend traditional herbal medication as the only treatment", "is_correct": false},
+{"text": "Arrange urgent medical review and a full blood count with neutrophil assessment", "is_correct": true},
+{"text": "Assume that the symptoms are caused by poor sleep", "is_correct": false}
+],
+"rationale": "Fever and sore throat in a patient taking clozapine may indicate neutropenia or agranulocytosis. Urgent clinical assessment and blood testing are required to identify potentially serious infection-related complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antipsychotic Adverse Effects",
+"question_text": "A patient taking risperidone reports breast enlargement and abnormal milk discharge. Which adverse effect should the nurse suspect?",
+"choices": [
+{"text": "Hypoglycaemia", "is_correct": false},
+{"text": "Hyperprolactinaemia", "is_correct": true},
+{"text": "Lithium toxicity", "is_correct": false},
+{"text": "Acute alcohol withdrawal", "is_correct": false}
+],
+"rationale": "Risperidone can block dopamine activity in the tuberoinfundibular pathway, increasing prolactin secretion. Hyperprolactinaemia may cause galactorrhoea, gynaecomastia, menstrual disturbances and sexual dysfunction.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient taking an antipsychotic reports dizziness when standing from a sitting position. The blood pressure falls significantly on standing. Which adverse effect is most likely?",
+"choices": [
+{"text": "Hyperprolactinaemia", "is_correct": false},
+{"text": "Tardive dyskinesia", "is_correct": false},
+{"text": "Neutropenia", "is_correct": false},
+{"text": "Orthostatic hypotension", "is_correct": true}
+],
+"rationale": "Orthostatic hypotension is a fall in blood pressure when moving to an upright position and can occur with some antipsychotics. The nurse should assess falls risk, monitor blood pressure and advise the patient to change position slowly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Extrapyramidal Symptoms",
+"question_text": "A patient who has taken an antipsychotic for several years develops repetitive lip-smacking, tongue protrusion and involuntary chewing movements. Which condition is most likely?",
+"choices": [
+{"text": "Tardive dyskinesia", "is_correct": true},
+{"text": "Acute alcohol intoxication", "is_correct": false},
+{"text": "Lithium-induced hypothyroidism", "is_correct": false},
+{"text": "Neuroleptic malignant syndrome", "is_correct": false}
+],
+"rationale": "Tardive dyskinesia is a movement disorder associated with prolonged exposure to dopamine receptor-blocking medications. It commonly involves involuntary movements of the mouth, tongue and face and requires clinical review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physical Health Monitoring",
+"question_text": "A patient receiving lithium attends a clinic with excessive thirst and frequent urination. Which adverse effect should the nurse consider?",
+"choices": [
+{"text": "Agranulocytosis", "is_correct": false},
+{"text": "Acute dystonia", "is_correct": false},
+{"text": "Nephrogenic diabetes insipidus", "is_correct": true},
+{"text": "Tardive dyskinesia", "is_correct": false}
+],
+"rationale": "Lithium can impair the kidney's ability to concentrate urine, resulting in nephrogenic diabetes insipidus. The nurse should report the symptoms and arrange assessment of fluid balance, renal function and electrolytes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Substance Use Disorders",
+"question_text": "A patient with a history of alcohol dependence is admitted with confusion, unsteady gait and abnormal eye movements. Which nutritional deficiency should the nurse suspect?",
+"choices": [
+{"text": "Vitamin C deficiency", "is_correct": false},
+{"text": "Vitamin B12 excess", "is_correct": false},
+{"text": "Vitamin D deficiency", "is_correct": false},
+{"text": "Thiamine deficiency causing possible Wernicke encephalopathy", "is_correct": true}
+],
+"rationale": "Confusion, ataxia and ocular abnormalities in a person with chronic alcohol misuse suggest Wernicke encephalopathy due to thiamine deficiency. This is a medical emergency, and parenteral thiamine should be administered promptly according to protocol, particularly before or alongside carbohydrate administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Comorbidities",
+"question_text": "A patient with a psychiatric disorder develops a sudden change in attention, fluctuating consciousness and disorientation during admission. What should the nurse suspect?",
+"choices": [
+{"text": "A stable personality trait", "is_correct": false},
+{"text": "Delirium due to a possible underlying medical cause", "is_correct": true},
+{"text": "An expected effect of all antipsychotic medications", "is_correct": false},
+{"text": "A normal feature of ageing that requires no assessment", "is_correct": false}
+],
+"rationale": "Acute onset, fluctuating attention and altered consciousness are characteristic features of delirium. The nurse should urgently investigate possible causes such as infection, metabolic disturbance, medication effects or withdrawal.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolic Syndrome",
+"question_text": "A patient receiving an antipsychotic has a fasting glucose level above the normal range and an abnormal lipid profile. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Document the findings, communicate them to the prescriber and support further metabolic assessment and intervention", "is_correct": true},
+{"text": "Ignore the results because psychiatric medication does not affect physical health", "is_correct": false},
+{"text": "Stop all prescribed medication without clinical review", "is_correct": false},
+{"text": "Advise the patient to avoid all carbohydrates and fats completely", "is_correct": false}
+],
+"rationale": "Abnormal glucose and lipid results may indicate emerging metabolic complications associated with antipsychotic treatment. The nurse should ensure appropriate clinical review and support evidence-based lifestyle and medical interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Adherence",
+"question_text": "A patient with schizophrenia says that medication is unnecessary because voices have stopped. Which response best supports long-term adherence?",
+"choices": [
+{"text": "Tell the patient that stopping medication will always result in immediate relapse", "is_correct": false},
+{"text": "Explain that medication is only necessary when voices are present", "is_correct": false},
+{"text": "Discuss maintenance treatment, relapse warning signs and the importance of consulting the prescriber before changing medication", "is_correct": true},
+{"text": "Tell the patient to share medication with relatives who have similar symptoms", "is_correct": false}
+],
+"rationale": "Psychotic symptoms may improve while the underlying condition remains vulnerable to relapse. Education about maintenance treatment and early warning signs supports shared decisions and safer long-term management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Dual Diagnosis and Community Mental Health",
+"question_text": "A community psychiatric nurse visits a patient in a Ghanaian community and discovers that the patient has stopped antipsychotic medication and is using cannabis daily. Which action best promotes continuity of care?",
+"choices": [
+{"text": "Blame the family for the patient's condition", "is_correct": false},
+{"text": "Refer the patient for punishment by community authorities", "is_correct": false},
+{"text": "Ignore the cannabis use and focus only on medication collection", "is_correct": false},
+{"text": "Assess the patient's mental state and safety, explore substance use, and coordinate an integrated follow-up plan with relevant services", "is_correct": true}
+],
+"rationale": "The patient requires assessment of relapse, substance use and immediate safety, followed by coordinated mental health and substance-use care. Community mental health services and appropriate CHPS linkages can support follow-up and reduce barriers to treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient taking an antipsychotic collapses and is found to have a markedly prolonged QT interval on an ECG. Which complication is the nurse most concerned about?",
+"choices": [
+{"text": "Tardive dyskinesia", "is_correct": false},
+{"text": "Life-threatening ventricular arrhythmia", "is_correct": true},
+{"text": "Hyperprolactinaemia", "is_correct": false},
+{"text": "Mild anticholinergic dry mouth", "is_correct": false}
+],
+"rationale": "Some antipsychotics can prolong the QT interval and increase the risk of serious ventricular arrhythmias, including torsades de pointes. Collapse requires urgent cardiac assessment and review of medications and other risk factors.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient receiving a high-potency antipsychotic develops painful muscle spasms and difficulty swallowing. What is the nurse's priority?",
+"choices": [
+{"text": "Assess airway and swallowing immediately and obtain urgent medical assistance", "is_correct": true},
+{"text": "Encourage the patient to eat solid food", "is_correct": false},
+{"text": "Wait until the next routine medication round", "is_correct": false},
+{"text": "Encourage the patient to lie flat and sleep", "is_correct": false}
+],
+"rationale": "Acute dystonia can affect the muscles of the neck, jaw and larynx, potentially compromising the airway. Immediate airway assessment and urgent treatment are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Substance Use Disorders: Alcohol",
+"question_text": "A patient with alcohol dependence is admitted to a medical ward and has a history of withdrawal seizures. Which nursing intervention is most appropriate during the initial assessment?",
+"choices": [
+{"text": "Assume withdrawal will not occur because the patient is currently calm", "is_correct": false},
+{"text": "Encourage the patient to obtain alcohol to prevent symptoms", "is_correct": false},
+{"text": "Assess withdrawal risk, last alcohol intake, previous complications and current physical status, and inform the clinical team", "is_correct": true},
+{"text": "Restrict all observations to once daily", "is_correct": false}
+],
+"rationale": "A history of withdrawal seizures places the patient at increased risk of complicated alcohol withdrawal. Early risk assessment and appropriate monitoring allow timely treatment and prevention of serious complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient receiving an antipsychotic develops a high fever, muscle rigidity and dark urine. Which laboratory abnormality would support suspected neuroleptic malignant syndrome?",
+"choices": [
+{"text": "Low serum cholesterol only", "is_correct": false},
+{"text": "Reduced haemoglobin as the only abnormality", "is_correct": false},
+{"text": "Low serum sodium as the defining finding", "is_correct": false},
+{"text": "Markedly elevated creatine kinase", "is_correct": true}
+],
+"rationale": "Severe muscle rigidity in NMS can cause muscle breakdown and markedly increase serum creatine kinase. Dark urine may indicate myoglobinuria, which can contribute to acute kidney injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Comorbidities",
+"question_text": "A patient with depression and diabetes mellitus frequently misses diabetes clinic appointments because of low motivation and poor concentration. What is the most appropriate nursing approach?",
+"choices": [
+{"text": "Coordinate mental health and diabetes care while assessing barriers to self-management", "is_correct": true},
+{"text": "Discontinue diabetes treatment until the depression resolves", "is_correct": false},
+{"text": "Assume that the patient is deliberately refusing all care", "is_correct": false},
+{"text": "Treat the depression without considering the patient's physical health", "is_correct": false}
+],
+"rationale": "Depression can impair motivation, concentration and the ability to manage chronic physical illness. Coordinated care addresses both conditions and supports practical strategies for medication use, appointments and self-management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient taking an antipsychotic develops involuntary movements of the tongue and face. The nurse uses a structured movement assessment to document the severity. Which tool is most appropriate?",
+"choices": [
+{"text": "Glasgow Coma Scale", "is_correct": false},
+{"text": "AIMS (Abnormal Involuntary Movement Scale)", "is_correct": true},
+{"text": "APGAR score", "is_correct": false},
+{"text": "Braden Scale", "is_correct": false}
+],
+"rationale": "The Abnormal Involuntary Movement Scale is used to assess and document involuntary movements associated with conditions such as tardive dyskinesia. It supports monitoring over time and communication with the treating team.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Lithium Toxicity",
+"question_text": "A patient taking lithium develops diarrhoea and vomiting after a febrile illness and has been unable to maintain normal fluid intake. Which factor most increases the risk of lithium toxicity?",
+"choices": [
+{"text": "Increased dietary fibre intake", "is_correct": false},
+{"text": "Taking medication at the same time each day", "is_correct": false},
+{"text": "Dehydration and sodium depletion", "is_correct": true},
+{"text": "Adequate fluid intake", "is_correct": false}
+],
+"rationale": "Dehydration and sodium depletion can increase renal reabsorption of lithium and raise serum lithium concentrations. The patient requires prompt clinical assessment, review of lithium treatment and appropriate laboratory monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Substance Use Disorders: Alcohol",
+"question_text": "A patient with chronic alcohol dependence is admitted with confusion and suspected Wernicke encephalopathy. The patient is also hypoglycaemic. Which management principle is most appropriate?",
+"choices": [
+{"text": "Delay all treatment until the patient is fully oriented", "is_correct": false},
+{"text": "Give oral alcohol to prevent withdrawal", "is_correct": false},
+{"text": "Avoid assessing blood glucose because confusion is psychiatric", "is_correct": false},
+{"text": "Treat hypoglycaemia urgently and administer thiamine promptly, without delaying emergency glucose treatment when it is needed", "is_correct": true}
+],
+"rationale": "Wernicke encephalopathy is a medical emergency requiring prompt thiamine replacement. Although thiamine should be given before or alongside carbohydrate when feasible, treatment of clinically significant hypoglycaemia must not be delayed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient taking clozapine develops severe abdominal pain, abdominal distension and vomiting, with no bowel movement for several days. What should the nurse do?",
+"choices": [
+{"text": "Arrange urgent medical assessment for possible ileus or bowel obstruction", "is_correct": true},
+{"text": "Reassure the patient that constipation is never dangerous", "is_correct": false},
+{"text": "Advise the patient to take additional clozapine", "is_correct": false},
+{"text": "Encourage the patient to ignore the symptoms until the next appointment", "is_correct": false}
+],
+"rationale": "Clozapine-associated gastrointestinal hypomotility can progress to ileus, bowel obstruction or other life-threatening complications. Severe abdominal pain, distension and vomiting require urgent medical assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Adherence and Patient Rights",
+"question_text": "A patient with a mental health disorder who has decision-making capacity refuses a prescribed psychotropic medication after discussing the risks and benefits. What should the nurse do?",
+"choices": [
+{"text": "Administer the medication secretly in food", "is_correct": false},
+{"text": "Respect the informed decision, document the discussion and communicate with the treating team", "is_correct": true},
+{"text": "Assume that the psychiatric diagnosis automatically removes the patient's capacity", "is_correct": false},
+{"text": "Threaten the patient with discharge from all services", "is_correct": false}
+],
+"rationale": "A psychiatric diagnosis does not automatically remove a person's decision-making capacity. A patient with capacity has the right to make an informed treatment decision, and the nurse should document the discussion and follow applicable legal and clinical procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient taking an antipsychotic is found to have a prolonged QT interval, low potassium and low magnesium. Which action is most appropriate?",
+"choices": [
+{"text": "Continue the medication without reporting the findings", "is_correct": false},
+{"text": "Encourage strenuous exercise to correct the ECG changes", "is_correct": false},
+{"text": "Arrange urgent clinical review, report the electrolyte abnormalities and support correction and medication reassessment", "is_correct": true},
+{"text": "Give an additional antipsychotic dose to stabilise the heart rhythm", "is_correct": false}
+],
+"rationale": "QT prolongation combined with hypokalaemia and hypomagnesaemia increases the risk of potentially fatal ventricular arrhythmias. The nurse should escalate promptly for cardiac assessment, electrolyte correction and review of medicines that may prolong the QT interval.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Lithium Toxicity",
+"question_text": "A patient taking lithium has a serum lithium concentration above the laboratory's therapeutic range, worsening confusion, coarse tremor and ataxia. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The patient is experiencing a normal therapeutic response", "is_correct": false},
+{"text": "The symptoms are evidence of improved mood stability", "is_correct": false},
+{"text": "The patient is experiencing an uncomplicated anxiety episode", "is_correct": false},
+{"text": "The patient has probable lithium toxicity requiring urgent medical management", "is_correct": true}
+],
+"rationale": "An elevated serum lithium concentration accompanied by confusion, coarse tremor and ataxia strongly indicates lithium toxicity. The patient requires urgent medical management, including assessment of renal function, electrolytes and the need for specialist toxicology advice.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neuroleptic Malignant Syndrome",
+"question_text": "A patient receiving haloperidol has fever, rigidity, altered consciousness and elevated creatine kinase. The nurse is also informed that the patient recently had a respiratory infection. Which finding most strongly supports neuroleptic malignant syndrome rather than an uncomplicated infection?",
+"choices": [
+{"text": "The presence of a cough alone", "is_correct": false},
+{"text": "The combination of severe rigidity, altered mental status and marked creatine kinase elevation following dopamine-blocking treatment", "is_correct": true},
+{"text": "A history of attending a psychiatric clinic", "is_correct": false},
+{"text": "The patient's preference for remaining in bed", "is_correct": false}
+],
+"rationale": "Infection may cause fever and confusion, but severe rigidity and marked creatine kinase elevation after antipsychotic exposure strongly support NMS. The nurse must recognise that infection and NMS can also coexist, so urgent medical evaluation is essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Substance Use Disorders: Alcohol",
+"question_text": "A patient admitted to a medical ward in Ghana has a history of heavy alcohol use. The patient is confused, febrile and agitated, with tremors and visual hallucinations. Blood glucose is low. Which nursing priority is most appropriate?",
+"choices": [
+{"text": "Treat the presentation as a routine psychiatric relapse and postpone physical assessment", "is_correct": false},
+{"text": "Administer an antipsychotic as the only intervention", "is_correct": false},
+{"text": "Initiate emergency medical assessment, address hypoglycaemia and assess for severe alcohol withdrawal and other causes of delirium", "is_correct": true},
+{"text": "Allow the patient to leave the ward to obtain alcohol", "is_correct": false}
+],
+"rationale": "The presentation may represent complicated alcohol withdrawal, hypoglycaemia, infection or another acute medical condition. Immediate medical stabilisation and systematic assessment are more important than assuming that the symptoms are solely psychiatric.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Dual Diagnosis",
+"question_text": "A patient with a previous diagnosis of schizophrenia has repeated admissions associated with cannabis use. During the current admission, psychotic symptoms persist after the immediate effects of cannabis intoxication have resolved. Which approach is most appropriate?",
+"choices": [
+{"text": "Conclude that cannabis is the only cause and stop assessing the established mental disorder", "is_correct": false},
+{"text": "Ignore the substance use because schizophrenia has already been diagnosed", "is_correct": false},
+{"text": "Discharge the patient as soon as intoxication resolves", "is_correct": false},
+{"text": "Assess the course of psychotic symptoms, substance use pattern and treatment history, and develop an integrated management plan", "is_correct": true}
+],
+"rationale": "Persistent symptoms may reflect an underlying psychotic disorder, substance-related effects or both. A careful longitudinal assessment and integrated treatment plan are necessary to address the dual diagnosis and reduce further relapse.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Metabolic Syndrome",
+"question_text": "A patient taking olanzapine for several months has gained 12 kg, has central obesity, elevated blood pressure and raised fasting glucose. Which interpretation should guide the nurse's care?",
+"choices": [
+{"text": "The patient has several cardiometabolic risk factors consistent with possible metabolic syndrome and requires further assessment", "is_correct": true},
+{"text": "The findings indicate that the antipsychotic is producing the desired therapeutic effect", "is_correct": false},
+{"text": "The findings are expected in all psychiatric patients and need no intervention", "is_correct": false},
+{"text": "The patient should immediately stop all medication without medical review", "is_correct": false}
+],
+"rationale": "Central obesity, raised blood pressure and hyperglycaemia indicate significant cardiometabolic risk and may meet criteria for metabolic syndrome when assessed using accepted definitions. The nurse should escalate for full metabolic evaluation and collaborative management of both psychiatric and physical health.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medical Comorbidities",
+"question_text": "A patient with schizophrenia is brought to a psychiatric facility with fever, headache, confusion and a recent history of living in a malaria-endemic area. The family believes the patient is experiencing spiritual illness. What should the nurse do?",
+"choices": [
+{"text": "Accept the family's explanation and postpone medical assessment", "is_correct": false},
+{"text": "Arrange urgent medical assessment and investigation for malaria and other causes while communicating respectfully with the family", "is_correct": true},
+{"text": "Treat the patient only with an increased antipsychotic dose", "is_correct": false},
+{"text": "Discharge the patient because the family has provided an explanation", "is_correct": false}
+],
+"rationale": "Fever and acute confusion may indicate malaria, meningitis or another serious medical condition and must not be attributed automatically to psychiatric illness or spiritual causes. Respectful family engagement can occur alongside timely evidence-based medical assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medication Adherence",
+"question_text": "A patient with bipolar disorder has had three manic relapses within one year. The patient reports stopping lithium whenever feeling well, while family members report that the patient also uses herbal preparations. Which intervention best addresses the likely causes of relapse?",
+"choices": [
+{"text": "Increase the lithium dose without checking adherence or serum concentration", "is_correct": false},
+{"text": "Discharge the patient because repeated relapse indicates treatment failure", "is_correct": false},
+{"text": "Assess adherence, explore beliefs and possible herbal interactions, review lithium levels and renal function, and agree on a sustainable treatment plan", "is_correct": true},
+{"text": "Advise the family to hide lithium in the patient's meals", "is_correct": false}
+],
+"rationale": "Repeated relapse may be associated with medication non-adherence, inadequate treatment exposure or other contributing factors. A comprehensive review should include adherence barriers, possible interactions, serum lithium levels, renal function and shared treatment planning.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Substance Use Disorders: Tramadol",
+"question_text": "A patient who regularly misuses tramadol is brought to the emergency department after taking it with alcohol. The patient is difficult to rouse and has slow, shallow breathing. Which action has the highest priority?",
+"choices": [
+{"text": "Obtain a detailed history of the patient's social relationships", "is_correct": false},
+{"text": "Assess and support airway and ventilation, activate emergency assistance and arrange urgent toxicological management", "is_correct": true},
+{"text": "Provide counselling about future employment opportunities", "is_correct": false},
+{"text": "Encourage the patient to walk to improve alertness", "is_correct": false}
+],
+"rationale": "Tramadol and alcohol can produce additive central nervous system depression, causing life-threatening respiratory compromise. Immediate airway and breathing management takes priority over psychosocial assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychotropic Medication Safety",
+"question_text": "A patient taking fluoxetine is prescribed another serotonergic medicine. Shortly afterwards, the patient develops agitation, hyperthermia, diarrhoea, inducible clonus and hyperreflexia. Which diagnosis best explains the findings?",
+"choices": [
+{"text": "Serotonin syndrome", "is_correct": true},
+{"text": "Neuroleptic malignant syndrome", "is_correct": false},
+{"text": "Lithium-induced nephrogenic diabetes insipidus", "is_correct": false},
+{"text": "Tardive dyskinesia", "is_correct": false}
+],
+"rationale": "Clonus and hyperreflexia with agitation, hyperthermia and autonomic or gastrointestinal symptoms are strongly suggestive of serotonin syndrome. This differs from NMS, which more commonly presents with severe lead-pipe rigidity and reduced reflexes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Physical Health Monitoring",
+"question_text": "A psychiatric patient presents with sudden confusion, fever and reduced consciousness. The patient has been taking antipsychotic medication and has a history of diabetes. Which nursing decision best reflects safe clinical reasoning?",
+"choices": [
+{"text": "Assume that the patient is experiencing a recurrence of psychosis", "is_correct": false},
+{"text": "Wait for the next psychiatric review before checking vital signs", "is_correct": false},
+{"text": "Administer a sedative before assessing the patient's physical condition", "is_correct": false},
+{"text": "Prioritise ABC assessment, vital signs and bedside glucose, while arranging urgent medical evaluation for possible metabolic, infectious or medication-related causes", "is_correct": true}
+],
+"rationale": "Acute confusion and reduced consciousness may result from hypoglycaemia, hyperglycaemia, infection, medication complications or other medical emergencies. Immediate physiological assessment and stabilisation are essential before attributing the presentation to psychiatric illness.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medication Adherence and Mental Health Act 2012",
+"question_text": "A patient receiving psychiatric care at Accra Psychiatric Hospital refuses medication and asks for an explanation of the proposed treatment. The patient is calm and appears able to understand and weigh the information. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Explain the proposed treatment, benefits, risks and alternatives, assess decision-making capacity and respect the patient's rights in accordance with applicable law and clinical procedures", "is_correct": true},
+{"text": "Assume that admission under psychiatric care automatically removes the patient's right to participate in treatment decisions", "is_correct": false},
+{"text": "Threaten the patient with punishment for asking questions", "is_correct": false},
+{"text": "Administer medication secretly because psychiatric patients cannot refuse treatment", "is_correct": false}
+],
+"rationale": "Ghana's Mental Health Act, 2012 (Act 846) provides a legal framework for mental health care and protection of service users' rights. Nurses should support informed participation, assess capacity appropriately and follow lawful procedures rather than assuming that a psychiatric diagnosis or admission automatically removes decision-making rights.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
