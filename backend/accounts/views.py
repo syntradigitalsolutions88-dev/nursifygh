@@ -472,7 +472,20 @@ class ClinicalLogbookExportView(APIView):
 
 
 class AmbassadorStatsView(APIView):
-    """Return the ambassador's earnings, referred students, and payout status."""
+    """Return the ambassador's earnings, referred students, and payout status.
+
+    FIX: Two separate referral counters so the referrer sees activity
+    immediately, not just after 3 days:
+
+      • pending_referrals   = users who used this ambassador's code but
+                              have NOT paid yet (trial / lapsed)
+      • confirmed_referrals = users who used this ambassador's code AND
+                              have paid (commission earned)
+
+    `recent` now shows BOTH pending and confirmed in one timeline,
+    ordered by signup date. This solves the "referrer sees nothing during
+    the referred student's trial" confusion.
+    """
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request):
@@ -480,62 +493,99 @@ class AmbassadorStatsView(APIView):
         if not user.is_ambassador:
             return Response({"error": "Not an ambassador"}, status=403)
 
-        commissions = AmbassadorCommission.objects.filter(
-            ambassador=user
-        ).select_related("referred_student").order_by("-created_at")
+        # ── Confirmed side: commissions actually earned ──
+        commissions = (
+            AmbassadorCommission.objects
+            .filter(ambassador=user)
+            .select_related("referred_student")
+            .order_by("-created_at")
+        )
 
         total_earned = sum(c.amount_ghs for c in commissions)
         pending_payout = sum(c.amount_ghs for c in commissions if not c.is_paid_out)
         paid_out = total_earned - pending_payout
-        referral_count = commissions.count()
 
-        # ─── NEW PAYOUT LOGIC ───────────────────────────────────────────────
-        # 1. Calculate cleared commissions (older than 3 days and not paid)
-        three_days_ago = timezone.now() - timedelta(days=3)
-        cleared_commissions = commissions.filter(is_paid_out=False, created_at__lte=three_days_ago)
-        cleared_amount = sum(c.amount_ghs for c in cleared_commissions)
+        # FIX: pending side — everyone who used this ambassador's code.
+        # NOTE: `referred_by` is a CharField on User, not a FK — hence the
+        # string comparison against user.referral_code.
+        if user.referral_code:
+            referred_users = (
+                User.objects
+                .filter(referred_by=user.referral_code)
+                .exclude(id=user.id)
+            )
+        else:
+            referred_users = User.objects.none()
 
-        # 2. Calculate the estimated payout date
-        payout_date = None
-        can_cash_out = False
+        pending_referrals = referred_users.filter(has_paid=False).count()
+        confirmed_referrals = referred_users.filter(has_paid=True).count()
+
+        # ── Payout timing (3-day fraud buffer, minimum GHS 10) ──
         min_payout = 10.00
+        three_days_ago = timezone.now() - timedelta(days=3)
+        cleared_commissions = commissions.filter(
+            is_paid_out=False,
+            created_at__lte=three_days_ago,
+        )
+        cleared_amount = sum(c.amount_ghs for c in cleared_commissions)
+        can_cash_out = cleared_amount >= min_payout
 
-        if total_earned >= min_payout:
-            can_cash_out = True
-            
-            # If there is money currently pending, the next payout unlocks 3 days after the most recent referral
-            if pending_payout > 0:
-                newest_commission = commissions.filter(is_paid_out=False).first()
-                if newest_commission:
-                    next_payout = newest_commission.created_at + timedelta(days=3)
-                    payout_date = next_payout.isoformat()
-            else:
-                payout_date = timezone.now().isoformat() # Ready now
-        # ────────────────────────────────────────────────────────────────────
+        payout_date = None
+        if can_cash_out:
+            payout_date = timezone.now().isoformat()
+        elif pending_payout > 0:
+            newest_unpaid = commissions.filter(is_paid_out=False).first()
+            if newest_unpaid:
+                next_unlock = newest_unpaid.created_at + timedelta(days=3)
+                payout_date = next_unlock.isoformat()
+
+        # ── Unified timeline (pending + confirmed) ──
+        # Map student_id → commission for O(1) lookups in the loop below.
+        commission_by_student = {
+            c.referred_student_id: c
+            for c in commissions
+            if c.referred_student_id
+        }
+
+        recent = []
+        for r in referred_users.order_by("-date_joined")[:20]:
+            comm = commission_by_student.get(r.id)
+            recent.append({
+                # FIX: new keys are `email`, `full_name`, `status`, `joined`.
+                # Old frontend may still read `referred_email` — kept as a
+                # duplicate alias for backward compatibility.
+                "email": r.email,
+                "referred_email": r.email,      # alias for older frontend builds
+                "full_name": r.full_name,
+                "joined": r.date_joined.isoformat(),
+                "date": (comm.created_at.isoformat() if comm else r.date_joined.isoformat()),
+                "status": "CONFIRMED" if r.has_paid else "PENDING",
+                "amount": str(comm.amount_ghs) if comm else "0.00",
+                "is_paid_out": comm.is_paid_out if comm else False,
+                "commission_created": comm.created_at.isoformat() if comm else None,
+            })
 
         return Response({
             "referral_code": user.referral_code,
             "total_earned": str(total_earned),
             "pending_payout": str(pending_payout),
             "paid_out": str(paid_out),
-            "referral_count": referral_count,
-            "can_cash_out": can_cash_out,         # NEW
-            "cleared_amount": str(cleared_amount),# NEW
-            "next_payout_date": payout_date,      # NEW
-            "recent": [
-                {
-                    "amount": str(c.amount_ghs),
-                    "referred_email": c.referred_student.email if c.referred_student else "(deleted)",
-                    "is_paid_out": c.is_paid_out,
-                    "date": c.created_at.isoformat(),
-                }
-                for c in commissions[:20]
-            ],
+            # FIX: new counters
+            "pending_referrals": pending_referrals,
+            "confirmed_referrals": confirmed_referrals,
+            "total_referrals": pending_referrals + confirmed_referrals,
+            # Kept for backward compatibility with older frontend builds.
+            # NOTE: this now equals confirmed_referrals (paid referrals only).
+            "referral_count": confirmed_referrals,
+            "can_cash_out": can_cash_out,
+            "cleared_amount": str(cleared_amount),
+            "next_payout_date": payout_date,
+            "recent": recent,
         })
 
 
 class BecomeAmbassadorView(APIView):
-    """Allow a user to self-enroll as an ambassador and get a referral code."""
+    """Allow a user to self-enroll as an an ambassador and get a referral code."""
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request):
@@ -543,13 +593,22 @@ class BecomeAmbassadorView(APIView):
         if user.is_ambassador:
             return Response({"detail": "You are already an ambassador.", "code": user.referral_code})
 
-        first = (user.full_name.split(" ")[0] or "AMB").upper()[:5]
-        suffix = "".join(random.choices(string.ascii_uppercase + string.digits, k=4))
-        code = f"{first}-{suffix}"
+        # FIX: build a stable prefix from the user's first name, capped at 5 chars.
+        # Ensure at least 1 char even if full_name is empty / whitespace.
+        prefix = (user.full_name.split(" ")[0] or "AMB").upper()[:5] or "AMB"
 
-        while User.objects.filter(referral_code=code).exists():
+        # FIX: try up to 5 times to find a non-colliding code.
+        for _ in range(5):
             suffix = "".join(random.choices(string.ascii_uppercase + string.digits, k=4))
-            code = f"{first}-{suffix}"
+            code = f"{prefix}-{suffix}"
+            if not User.objects.filter(referral_code=code).exists():
+                break
+        else:
+            # All 5 attempts collided — extremely unlikely, but be safe.
+            return Response(
+                {"error": "Could not generate a unique referral code. Please try again."},
+                status=500,
+            )
 
         user.is_ambassador = True
         user.referral_code = code
@@ -582,7 +641,7 @@ def ai_chat_proxy(request):
             "You are the NursifyGH Chief Clinical Examiner and Academic Tutor — a world-class Ghanaian nursing educator, "
             "advanced practice clinician, and NMC exam coach. You hold a PhD in Nursing Science and a Master of Science in Nursing Education, "
             "with 20+ years of experience teaching at Ghanaian Nursing and Midwifery Training Colleges and serving on NMC examination boards.\n\n"
-            
+
             "═══ CLINICAL EXPERTISE & KNOWLEDGE BASE ═══\n"
             "You are an encyclopedia of nursing knowledge. You must provide clinically flawless, evidence-based answers drawn from:\n"
             "1. Ghana Health Service (GHS) Standard Treatment Guidelines (STG).\n"

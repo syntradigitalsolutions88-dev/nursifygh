@@ -30,8 +30,26 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({"password_confirm": "Passwords do not match."})
         return attrs
 
+    # FIX: validate the referral code at signup. Only accept codes that belong
+    # to an actual ambassador. Blank / missing is fine (optional field).
+    # Normalise to upper-case so the DB lookup is deterministic.
+    def validate_referred_by(self, value):
+        if not value or not str(value).strip():
+            return ""
+        value = str(value).strip().upper()
+        if not User.objects.filter(referral_code=value, is_ambassador=True).exists():
+            raise serializers.ValidationError(
+                "Invalid referral code. Please confirm the code with the person who referred you."
+            )
+        return value
+
     def create(self, validated_data: dict) -> User:
         password = validated_data.pop("password")
+        # FIX: ensure a blank referred_by is stored as empty string, not None,
+        # so downstream code only needs to check `if self.referred_by:`.
+        if not validated_data.get("referred_by"):
+            validated_data["referred_by"] = ""
+
         user = User.objects.create_user(password=password, **validated_data)
         # Grant a 3-day free trial
         user.start_trial(days=3)

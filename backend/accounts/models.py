@@ -15,6 +15,10 @@ from django.utils.translation import gettext_lazy as _
 
 from .managers import UserManager
 
+# FIX: Commission amount in one place. If the Semester Pass price changes,
+# adjust this constant (or pull from settings.SEMESTER_PASS_COMMISSION_AMOUNT).
+COMMISSION_AMOUNT_GHS = "4.50"
+
 
 class StudentLevel(models.IntegerChoices):
     LEVEL_100 = 100, _("Level 100")
@@ -109,7 +113,25 @@ class User(AbstractBaseUser, PermissionsMixin):
         return f"{self.full_name} <{self.email}> (L{self.level})"
 
     def activate_subscription(self, *, days: int = 120, reference: str = "") -> None:
-        """Extend or start the subscription. Used for admin approval of payments."""
+        """Extend or start the subscription. Used for admin approval of payments.
+
+        FIX: When a referred student makes their FIRST successful payment
+        (trial → paid transition), an AmbassadorCommission is created for
+        the referring ambassador IF the referral code is valid. This is
+        idempotent — a second payment does NOT create a second commission.
+
+        This single method covers every activation path in the codebase:
+          • accounts/admin.py  (manual admin approval)
+          • payments/admin.py  (payment txn approval)
+          • payments/services.py  (Paystack webhook + Hubtel webhook)
+          • payments/views.py  (verify/manual views)
+        """
+        from decimal import Decimal  # local import — avoids any circular-import risk
+
+        # FIX: capture the PREVIOUS state BEFORE we flip it, so we know
+        # whether this is a first-time payment or an extension.
+        was_already_paid = self.has_paid
+
         now = timezone.now()
         base = (
             self.subscription_expires_at
@@ -124,6 +146,31 @@ class User(AbstractBaseUser, PermissionsMixin):
         self.save(update_fields=[
             "is_subscribed", "has_paid", "subscription_expires_at", "last_payment_reference",
         ])
+
+        # ── FIX: create the ambassador commission on the first paid activation ──
+        if was_already_paid:
+            return  # already paid before → no new commission
+
+        if not self.referred_by:
+            return  # not a referred user → nothing to do
+
+        try:
+            ambassador = User.objects.get(
+                referral_code=self.referred_by,
+                is_ambassador=True,
+            )
+        except User.DoesNotExist:
+            # Invalid / typo'd / expired code → silently skip.
+            # We do NOT want a bad referral code to break the payment activation.
+            return
+
+        # FIX: use get_or_create for idempotency — if the commission row already
+        # exists (e.g. manually backfilled), don't create a duplicate.
+        AmbassadorCommission.objects.get_or_create(
+            ambassador=ambassador,
+            referred_student=self,
+            defaults={"amount_ghs": Decimal(COMMISSION_AMOUNT_GHS)},
+        )
 
     def start_trial(self, *, days: int = 3) -> None:
         """Grant a free trial. Used only at registration."""
@@ -195,16 +242,29 @@ class ClinicalLog(models.Model):
 class AmbassadorCommission(models.Model):
     """Tracks money earned by ambassadors from referred students."""
     ambassador = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commissions")
-    referred_student = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name="generated_commissions")
+    referred_student = models.ForeignKey(
+        User, on_delete=models.SET_NULL, null=True, blank=True,
+        related_name="generated_commissions",
+    )
     amount_ghs = models.DecimalField(max_digits=10, decimal_places=2)
     is_paid_out = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ("-created_at",)
+        # FIX: prevent duplicate commissions for the same (ambassador, student) pair.
+        # This is a belt-and-braces guard on top of get_or_create().
+        constraints = [
+            models.UniqueConstraint(
+                fields=["ambassador", "referred_student"],
+                condition=models.Q(referred_student__isnull=False),
+                name="uniq_ambassador_referred_student",
+            ),
+        ]
 
     def __str__(self):
-        return f"{self.ambassador.email} earned GHS {self.amount_ghs} from {self.referred_student.email}"
+        student_email = self.referred_student.email if self.referred_student else "(deleted)"
+        return f"{self.ambassador.email} earned GHS {self.amount_ghs} from {student_email}"
 
     @property
     def payout_due_date(self):
