@@ -1,0 +1,800 @@
+{
+"courses": [
+{
+"course_code": "PFC-311",
+"course_title": "Patient/Family-Centred Care Study",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Family Assessment",
+"Therapeutic Communication",
+"Genograms & Ecomaps",
+"Patient Advocacy",
+"Home Visiting",
+"Family-Centred Care Principles"
+],
+"questions": [
+{
+"topic": "Family Assessment",
+"question_text": "Which statement best defines a family in the context of family-centred nursing care?",
+"choices": [
+{"text": "A. People who are biologically related and live in the same household", "is_correct": false},
+{"text": "B. A group of individuals connected through biological, legal or emotional relationships who identify themselves as a family", "is_correct": true},
+{"text": "C. Individuals who share the same occupation", "is_correct": false},
+{"text": "D. People who belong to the same ethnic group", "is_correct": false}
+],
+"rationale": "A family may be formed through biological relationships, marriage, adoption or emotional bonds. Family-centred care recognises the family's own definition rather than assuming that all families have the same structure.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment",
+"question_text": "Which of the following is an example of an extended family structure commonly found in Ghana?",
+"choices": [
+{"text": "A. A couple and their biological children only", "is_correct": false},
+{"text": "B. A single adult living alone", "is_correct": false},
+{"text": "C. Parents, children, grandparents, uncles, aunts and cousins connected through family relationships", "is_correct": true},
+{"text": "D. Two unrelated individuals sharing accommodation", "is_correct": false}
+],
+"rationale": "An extended family includes relatives beyond the nuclear family, such as grandparents, aunts, uncles and cousins. In Ghana, extended family members may contribute to childcare, financial support and healthcare decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment",
+"question_text": "What is the primary purpose of conducting a family assessment in nursing practice?",
+"choices": [
+{"text": "A. To identify family strengths, health needs, relationships and available resources", "is_correct": true},
+{"text": "B. To determine which family member should control all healthcare decisions", "is_correct": false},
+{"text": "C. To identify the wealthiest member of the household", "is_correct": false},
+{"text": "D. To replace individual patient assessment", "is_correct": false}
+],
+"rationale": "Family assessment helps nurses understand the family's structure, functioning, health practices, strengths and challenges. The findings guide appropriate interventions that consider both individual and family needs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment",
+"question_text": "Which of the following is an example of a family developmental task?",
+"choices": [
+{"text": "A. Avoiding communication during stressful situations", "is_correct": false},
+{"text": "B. Adapting to the arrival of a newborn and assuming new parenting responsibilities", "is_correct": true},
+{"text": "C. Preventing children from developing independence", "is_correct": false},
+{"text": "D. Avoiding changes in family roles throughout life", "is_correct": false}
+],
+"rationale": "Family developmental tasks are responsibilities and adjustments associated with different stages of the family life cycle. The arrival of a newborn requires adjustment to parenting roles, childcare responsibilities and family relationships.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment",
+"question_text": "Which of the following best describes family functioning?",
+"choices": [
+{"text": "A. The number of people living in a household", "is_correct": false},
+{"text": "B. The ability of family members to interact, communicate, perform roles and meet their needs", "is_correct": true},
+{"text": "C. The financial income of the household alone", "is_correct": false},
+{"text": "D. The biological relationship between parents and children only", "is_correct": false}
+],
+"rationale": "Family functioning refers to how family members interact, communicate, make decisions and fulfil their responsibilities. Effective family functioning supports emotional wellbeing, health maintenance and adaptation to challenges.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "What is the primary purpose of therapeutic communication in nursing?",
+"choices": [
+{"text": "A. To persuade patients to accept every nursing decision", "is_correct": false},
+{"text": "B. To establish a professional helping relationship that promotes understanding and positive health outcomes", "is_correct": true},
+{"text": "C. To prevent patients from expressing their emotions", "is_correct": false},
+{"text": "D. To obtain information without considering the patient's feelings", "is_correct": false}
+],
+"rationale": "Therapeutic communication is a purposeful, patient-focused interaction used to build trust, gather information and support patients emotionally. It promotes participation in care and strengthens the nurse-patient relationship.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "Which communication technique involves allowing a patient to express feelings without interruption or unnecessary judgement?",
+"choices": [
+{"text": "A. Active listening", "is_correct": true},
+{"text": "B. False reassurance", "is_correct": false},
+{"text": "C. Changing the subject", "is_correct": false},
+{"text": "D. Giving unsolicited advice", "is_correct": false}
+],
+"rationale": "Active listening involves giving the patient full attention, observing verbal and non-verbal cues and responding appropriately. It helps patients feel respected and encourages accurate communication of their concerns.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "Which of the following is an example of an open-ended question?",
+"choices": [
+{"text": "A. Are you feeling pain?", "is_correct": false},
+{"text": "B. Did you take your medication?", "is_correct": false},
+{"text": "C. Can you describe how your illness has affected your daily activities?", "is_correct": true},
+{"text": "D. Is your temperature normal?", "is_correct": false}
+],
+"rationale": "Open-ended questions encourage patients to provide detailed information in their own words. They are useful for exploring experiences, concerns, feelings and health-related behaviours.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "Which of the following is a non-verbal communication behaviour?",
+"choices": [
+{"text": "A. Asking a patient about pain intensity", "is_correct": false},
+{"text": "B. Explaining a medication schedule", "is_correct": false},
+{"text": "C. Maintaining appropriate eye contact and using facial expressions", "is_correct": true},
+{"text": "D. Giving verbal instructions about wound care", "is_correct": false}
+],
+"rationale": "Non-verbal communication includes facial expressions, posture, gestures, eye contact and physical distance. These behaviours can communicate interest, empathy, discomfort or other emotions even without spoken words.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "What is the primary purpose of a genogram in family assessment?",
+"choices": [
+{"text": "A. To illustrate family relationships and patterns across generations", "is_correct": true},
+{"text": "B. To record the daily income of each family member", "is_correct": false},
+{"text": "C. To identify the geographical location of health facilities", "is_correct": false},
+{"text": "D. To measure the nutritional status of family members", "is_correct": false}
+],
+"rationale": "A genogram is a graphical representation of family structure and relationships across multiple generations. It can also show relevant health conditions, hereditary patterns and relationship dynamics.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "Which symbol is conventionally used to represent a female individual in a genogram?",
+"choices": [
+{"text": "A. Triangle", "is_correct": false},
+{"text": "B. Square", "is_correct": false},
+{"text": "C. Circle", "is_correct": true},
+{"text": "D. Diamond", "is_correct": false}
+],
+"rationale": "In conventional genogram notation, a circle represents a female and a square represents a male. Standardised symbols help nurses communicate family structure consistently.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "What is the main purpose of an ecomap in family nursing?",
+"choices": [
+{"text": "A. To show only the biological relationships between family members", "is_correct": false},
+{"text": "B. To illustrate the family's relationships with external systems and community resources", "is_correct": true},
+{"text": "C. To record the medical history of one patient only", "is_correct": false},
+{"text": "D. To calculate the family's monthly expenditure", "is_correct": false}
+],
+"rationale": "An ecomap illustrates how a family interacts with external systems such as schools, workplaces, religious organisations, healthcare facilities and community groups. It helps identify sources of support, stress and resource needs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "What is patient advocacy in nursing?",
+"choices": [
+{"text": "A. Making all healthcare decisions on behalf of patients", "is_correct": false},
+{"text": "B. Supporting and protecting patients' rights, preferences, dignity and access to appropriate care", "is_correct": true},
+{"text": "C. Preventing patients from questioning healthcare professionals", "is_correct": false},
+{"text": "D. Prioritising institutional convenience over patient welfare", "is_correct": false}
+],
+"rationale": "Patient advocacy involves protecting patients' rights, promoting informed decision-making and ensuring that their concerns are considered. Nurses act as advocates while respecting patient autonomy and professional ethical standards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "Which ethical principle is most directly associated with respecting a patient's right to make informed healthcare decisions?",
+"choices": [
+{"text": "A. Autonomy", "is_correct": true},
+{"text": "B. Non-maleficence", "is_correct": false},
+{"text": "C. Justice", "is_correct": false},
+{"text": "D. Fidelity", "is_correct": false}
+],
+"rationale": "Autonomy recognises the patient's right to make informed decisions about their own healthcare. Nurses support autonomy by providing understandable information, checking comprehension and respecting competent decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Visiting",
+"question_text": "What is the main purpose of a nursing home visit?",
+"choices": [
+{"text": "A. To inspect household possessions", "is_correct": false},
+{"text": "B. To assess health needs within the home environment and provide appropriate care and health education", "is_correct": true},
+{"text": "C. To replace all services provided at health facilities", "is_correct": false},
+{"text": "D. To determine which family member has the highest income", "is_correct": false}
+],
+"rationale": "A home visit enables nurses to assess the patient within their usual living environment and identify factors affecting health. It also provides opportunities for health education, follow-up, referral and family support.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Visiting",
+"question_text": "Which activity should a nurse undertake before conducting a planned home visit?",
+"choices": [
+{"text": "A. Prepare the objectives, review relevant patient information and organise necessary equipment", "is_correct": true},
+{"text": "B. Visit without identifying the purpose of the visit", "is_correct": false},
+{"text": "C. Inform neighbours about the patient's health condition", "is_correct": false},
+{"text": "D. Assume that all household members will be available", "is_correct": false}
+],
+"rationale": "Preparation helps the nurse use time effectively and provide safe, relevant care. The nurse should clarify the purpose, review available information, plan activities and carry the required equipment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "Which statement best describes family-centred care?",
+"choices": [
+{"text": "A. Healthcare professionals make decisions without consulting patients or families", "is_correct": false},
+{"text": "B. Care recognises patients and families as partners in planning, delivering and evaluating healthcare", "is_correct": true},
+{"text": "C. Families are responsible for all clinical procedures", "is_correct": false},
+{"text": "D. The family has authority to override every competent patient's decision", "is_correct": false}
+],
+"rationale": "Family-centred care is based on partnership, respect, information sharing and collaboration. It recognises the knowledge and contributions of patients and families while preserving the patient's rights and clinical safety.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "Which principle of family-centred care involves recognising and respecting differences in family beliefs, values and cultural practices?",
+"choices": [
+{"text": "A. Cultural sensitivity and respect", "is_correct": true},
+{"text": "B. Professional dominance", "is_correct": false},
+{"text": "C. Social exclusion", "is_correct": false},
+{"text": "D. Institutional convenience", "is_correct": false}
+],
+"rationale": "Cultural sensitivity involves recognising and respecting the beliefs, values and practices that influence healthcare decisions. Nurses should provide culturally appropriate care without compromising patient safety or professional standards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A nurse visits a family in a rural Ghanaian community and discovers that the grandmother is the main caregiver for three young children. What should the nurse do first?",
+"choices": [
+{"text": "A. Assume that the parents have abandoned their responsibilities", "is_correct": false},
+{"text": "B. Explore the family's caregiving arrangements, available support and health needs without making assumptions", "is_correct": true},
+{"text": "C. Instruct the grandmother to stop caring for the children", "is_correct": false},
+{"text": "D. Report the family immediately without conducting an assessment", "is_correct": false}
+],
+"rationale": "Family structures and caregiving arrangements vary, particularly within extended family systems. The nurse should assess the family's circumstances, strengths and support needs before planning appropriate interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "During a family assessment, a nurse learns that a patient with hypertension frequently misses clinic appointments because the family cannot afford transport. Which intervention is most appropriate?",
+"choices": [
+{"text": "A. Describe the patient as irresponsible", "is_correct": false},
+{"text": "B. Explore available community support, discuss feasible follow-up arrangements and provide appropriate health education", "is_correct": true},
+{"text": "C. Advise the patient to discontinue antihypertensive medication", "is_correct": false},
+{"text": "D. Ignore the transport problem because it is not a clinical issue", "is_correct": false}
+],
+"rationale": "Transport costs are a social determinant that can interfere with continuity of care. The nurse should explore realistic solutions, including community resources and appropriate follow-up arrangements, while reinforcing medication adherence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A nurse is assessing a household in which a child has recurrent diarrhoea. Which environmental factor should receive particular attention?",
+"choices": [
+{"text": "A. The family's preferred television programmes", "is_correct": false},
+{"text": "B. The availability of safe drinking water, sanitation and handwashing facilities", "is_correct": true},
+{"text": "C. The number of mobile phones in the household", "is_correct": false},
+{"text": "D. The family's preferred clothing style", "is_correct": false}
+],
+"rationale": "Unsafe water, inadequate sanitation and poor hand hygiene are important risk factors for diarrhoeal diseases. Assessing these environmental conditions helps the nurse identify preventable causes and provide relevant health education.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A nurse is assessing a family whose father has recently been diagnosed with a chronic illness. The mother reports feeling overwhelmed by the additional caregiving responsibilities. What should the nurse assess?",
+"choices": [
+{"text": "A. Only the father's laboratory results", "is_correct": false},
+{"text": "B. The family's coping abilities, role changes, emotional needs and available support systems", "is_correct": true},
+{"text": "C. The family's political preferences", "is_correct": false},
+{"text": "D. Only the father's occupational history", "is_correct": false}
+],
+"rationale": "Chronic illness can affect family roles, relationships, finances and emotional wellbeing. Assessing coping mechanisms and support systems helps the nurse identify caregiver strain and plan appropriate interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "During an assessment, a nurse discovers that a family relies heavily on traditional herbal preparations for treating childhood fever. What is the most appropriate response?",
+"choices": [
+{"text": "A. Condemn the family's cultural beliefs and end the discussion", "is_correct": false},
+{"text": "B. Explore the family's practices respectfully and explain the importance of timely clinical assessment for potentially serious childhood illness", "is_correct": true},
+{"text": "C. Encourage the family to use herbal preparations instead of prescribed treatment", "is_correct": false},
+{"text": "D. Avoid discussing treatment practices because they are private", "is_correct": false}
+],
+"rationale": "Cultural beliefs influence health-seeking behaviour and should be explored respectfully. The nurse should explain the risks of delaying treatment, particularly when a child has danger signs, while maintaining a non-judgemental approach.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient tells a nurse, 'I am afraid because I do not understand what the doctor said about my diagnosis.' Which response demonstrates therapeutic communication?",
+"choices": [
+{"text": "A. 'You should not worry about things you do not understand.'", "is_correct": false},
+{"text": "B. 'Can you tell me which part of the explanation is worrying or unclear to you?'", "is_correct": true},
+{"text": "C. 'The doctor knows what is best, so just follow the instructions.'", "is_correct": false},
+{"text": "D. 'Other patients have more serious problems than yours.'", "is_correct": false}
+],
+"rationale": "The response encourages the patient to express concerns and identify areas requiring clarification. It demonstrates empathy and supports shared understanding rather than dismissing the patient's feelings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient becomes tearful while discussing the recent death of a family member. What should the nurse do?",
+"choices": [
+{"text": "A. Immediately change the subject", "is_correct": false},
+{"text": "B. Tell the patient to stop crying", "is_correct": false},
+{"text": "C. Remain present, allow the patient time to express feelings and offer supportive listening", "is_correct": true},
+{"text": "D. Explain that crying is a sign of weakness", "is_correct": false}
+],
+"rationale": "Allowing a patient to express grief is an important aspect of therapeutic communication. The nurse should provide a supportive presence and avoid judgement or false reassurance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A nurse is explaining a medication schedule to an older patient who has difficulty understanding medical terminology. Which approach is most appropriate?",
+"choices": [
+{"text": "A. Use more technical terminology to demonstrate professional knowledge", "is_correct": false},
+{"text": "B. Use simple language, explain one instruction at a time and ask the patient to repeat the information in their own words", "is_correct": true},
+{"text": "C. Speak rapidly to reduce the time spent explaining", "is_correct": false},
+{"text": "D. Direct all explanations to the patient's relative without involving the patient", "is_correct": false}
+],
+"rationale": "Simple language and the teach-back method help establish whether the patient understands the instructions. The patient should remain involved in communication, with additional support provided when needed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient who speaks only Twi is admitted to a hospital where the nurse does not understand the language. What should the nurse do to obtain an accurate health history?",
+"choices": [
+{"text": "A. Guess the patient's answers from gestures", "is_correct": false},
+{"text": "B. Use an appropriate trained interpreter and speak directly to the patient", "is_correct": true},
+{"text": "C. Ask any available visitor to interpret sensitive information without considering confidentiality", "is_correct": false},
+{"text": "D. Avoid obtaining the health history", "is_correct": false}
+],
+"rationale": "A trained interpreter helps reduce communication errors and supports accurate assessment. The nurse should maintain eye contact with and address the patient directly while protecting confidentiality and dignity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient says, 'Nobody in this hospital cares about me.' Which response is most therapeutic?",
+"choices": [
+{"text": "A. 'That is not true; everyone here is working hard.'", "is_correct": false},
+{"text": "B. 'Why are you always complaining?'", "is_correct": false},
+{"text": "C. 'It sounds as though you feel neglected. Can you tell me what has happened?'", "is_correct": true},
+{"text": "D. 'You should be grateful that you are receiving treatment.'", "is_correct": false}
+],
+"rationale": "Reflecting the patient's feelings and inviting further explanation demonstrates empathy and active listening. It allows the nurse to identify the source of dissatisfaction and take appropriate action.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A nurse is caring for a patient who is reluctant to discuss a possible domestic violence experience. Which approach is most appropriate?",
+"choices": [
+{"text": "A. Ask sensitive questions in front of the suspected perpetrator", "is_correct": false},
+{"text": "B. Provide privacy, explain confidentiality and ask non-judgemental questions when it is safe to do so", "is_correct": true},
+{"text": "C. Force the patient to disclose details immediately", "is_correct": false},
+{"text": "D. Tell the patient that domestic violence is a private family matter", "is_correct": false}
+],
+"rationale": "Sensitive disclosures require privacy, trust and a non-judgemental approach. The nurse should assess immediate safety, explain the limits of confidentiality and follow relevant safeguarding and reporting procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient is angry because a scheduled procedure has been delayed. Which response should the nurse make?",
+"choices": [
+{"text": "A. 'You have no right to be angry because delays happen.'", "is_correct": false},
+{"text": "B. 'Calm down or I will stop talking to you.'", "is_correct": false},
+{"text": "C. 'I can see that the delay has upset you. Let me find out what is happening and update you.'", "is_correct": true},
+{"text": "D. 'You should complain to another department.'", "is_correct": false}
+],
+"rationale": "Acknowledging the patient's feelings and offering to obtain accurate information can reduce anxiety and build trust. The nurse should communicate honestly and avoid making promises that cannot be guaranteed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A nurse is counselling a mother whose child has been diagnosed with a chronic condition. The mother repeatedly asks whether the child will recover. Which response is most appropriate?",
+"choices": [
+{"text": "A. 'Your child will definitely recover completely.'", "is_correct": false},
+{"text": "B. 'There is no need to ask questions about the future.'", "is_correct": false},
+{"text": "C. 'I understand your concern. Let us discuss what the healthcare team knows about the condition and the care your child will need.'", "is_correct": true},
+{"text": "D. 'You should accept the diagnosis and stop worrying.'", "is_correct": false}
+],
+"rationale": "The nurse should acknowledge the mother's anxiety and provide accurate information within the limits of their professional role. False reassurance should be avoided because it may create unrealistic expectations and undermine trust.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient with limited literacy is being taught how to care for a surgical wound at home. Which method best evaluates whether the patient understands the instructions?",
+"choices": [
+{"text": "A. Asking whether the patient understands and accepting a yes-or-no answer", "is_correct": false},
+{"text": "B. Asking the patient to demonstrate the wound-care procedure and explain the steps in their own words", "is_correct": true},
+{"text": "C. Giving the patient a lengthy written leaflet without explanation", "is_correct": false},
+{"text": "D. Asking a relative to sign the discharge form", "is_correct": false}
+],
+"rationale": "Demonstration and teach-back provide practical evidence of the patient's understanding and ability to perform the procedure. The nurse can identify misunderstandings and repeat or adapt the teaching before discharge.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "A nurse is preparing a genogram for a patient with a strong family history of hypertension. Which information should be included?",
+"choices": [
+{"text": "A. Only the patient's current blood pressure reading", "is_correct": false},
+{"text": "B. Relevant family members, relationships and history of hypertension across generations", "is_correct": true},
+{"text": "C. The names of all patients admitted to the hospital", "is_correct": false},
+{"text": "D. Only the patient's occupation and monthly income", "is_correct": false}
+],
+"rationale": "A genogram can help identify patterns of disease and health conditions across generations. Recording relevant relatives and relationships provides information that may support risk assessment and preventive health education.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "A nurse is constructing an ecomap for a family in a Ghanaian community. Which of the following should be represented?",
+"choices": [
+{"text": "A. The family's connections with the CHPS compound, school, church, workplace and community support groups", "is_correct": true},
+{"text": "B. Only the biological relationships between parents and children", "is_correct": false},
+{"text": "C. Only the family's inherited medical conditions", "is_correct": false},
+{"text": "D. Only the ages and birth dates of household members", "is_correct": false}
+],
+"rationale": "An ecomap shows the family's connections with external systems and community resources. These may include healthcare facilities, educational institutions, religious groups, workplaces and social support networks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "A genogram shows that several members of a patient's family have diabetes mellitus. What should the nurse do with this information?",
+"choices": [
+{"text": "A. Diagnose diabetes in the patient without testing", "is_correct": false},
+{"text": "B. Use the family history to support risk assessment and appropriate preventive health education", "is_correct": true},
+{"text": "C. Tell the patient that diabetes is unavoidable", "is_correct": false},
+{"text": "D. Remove the family history because it cannot influence health", "is_correct": false}
+],
+"rationale": "A family history of diabetes may indicate increased risk, although it does not establish a diagnosis. The nurse can use this information to encourage appropriate screening, healthy lifestyle practices and follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "While reviewing an ecomap, a nurse observes that a family has strong connections with a community health nurse and a local support group but limited financial assistance. How should the nurse interpret this information?",
+"choices": [
+{"text": "A. The family has no support because it lacks financial assistance", "is_correct": false},
+{"text": "B. The family has useful social and healthcare support, but may require additional financial or material resources", "is_correct": true},
+{"text": "C. The family should discontinue contact with the support group", "is_correct": false},
+{"text": "D. The ecomap is invalid because every family must have financial support", "is_correct": false}
+],
+"rationale": "An ecomap helps identify both supportive and stressful relationships within a family's environment. The nurse can build on existing support while identifying gaps that require additional community or social services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A competent adult patient refuses a recommended surgical procedure after receiving adequate information. What should the nurse do?",
+"choices": [
+{"text": "A. Force the patient to undergo the procedure", "is_correct": false},
+{"text": "B. Respect the patient's decision, ensure that the refusal is informed and document it appropriately", "is_correct": true},
+{"text": "C. Ask the patient's relatives to override the decision automatically", "is_correct": false},
+{"text": "D. Discharge the patient without explaining the possible consequences", "is_correct": false}
+],
+"rationale": "A competent adult has the right to refuse treatment after receiving relevant information. The nurse should confirm understanding, communicate concerns to the healthcare team and document the decision in accordance with professional and institutional procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A nurse notices that a patient has been prescribed a medication to which the patient has a documented severe allergy. What should the nurse do?",
+"choices": [
+{"text": "A. Administer the medication because it was prescribed by a doctor", "is_correct": false},
+{"text": "B. Withhold the medication, verify the allergy information and promptly contact the prescriber", "is_correct": true},
+{"text": "C. Ask the patient to take half the prescribed dose", "is_correct": false},
+{"text": "D. Ignore the allergy record if the patient has no current symptoms", "is_correct": false}
+],
+"rationale": "Administering a medication associated with a documented severe allergy may cause serious harm. The nurse must prioritise patient safety, clarify the prescription and ensure that an appropriate alternative is considered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A patient tells a nurse that a healthcare worker disclosed the patient's HIV status to neighbours without permission. What should the nurse do?",
+"choices": [
+{"text": "A. Dismiss the complaint because HIV is a public health condition", "is_correct": false},
+{"text": "B. Listen to the patient, protect confidentiality and explain the appropriate complaint and support procedures", "is_correct": true},
+{"text": "C. Share the patient's complaint with other patients", "is_correct": false},
+{"text": "D. Advise the patient to stop attending the health facility", "is_correct": false}
+],
+"rationale": "Patients have a right to privacy and confidentiality regarding their health information, subject to lawful exceptions. The nurse should take the concern seriously, protect the patient's dignity and guide them through appropriate reporting channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A nurse observes that a patient with limited financial resources is being ignored during a busy outpatient consultation. Which action best demonstrates patient advocacy?",
+"choices": [
+{"text": "A. Ignore the situation because the patient cannot afford additional services", "is_correct": false},
+{"text": "B. Ensure that the patient's clinical needs are assessed fairly and help identify available support or referral options", "is_correct": true},
+{"text": "C. Advise the patient to leave the facility", "is_correct": false},
+{"text": "D. Give the patient preferential treatment without considering clinical urgency", "is_correct": false}
+],
+"rationale": "Patient advocacy includes promoting equitable access to appropriate healthcare regardless of socioeconomic status. The nurse should help ensure that clinical needs are addressed and explore available support systems without compromising fair triage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A patient's relatives request that the nurse conceal a serious diagnosis from the competent patient because they believe disclosure will cause distress. What should the nurse do?",
+"choices": [
+{"text": "A. Automatically follow the family's request", "is_correct": false},
+{"text": "B. Respect the family's concern while upholding the patient's right to appropriate information and involving the clinical team", "is_correct": true},
+{"text": "C. Disclose the diagnosis to other patients", "is_correct": false},
+{"text": "D. Refuse to communicate with the family again", "is_correct": false}
+],
+"rationale": "A competent patient generally has the right to receive information about their health and participate in decisions. The nurse should explore the family's concerns and work with the clinical team to communicate sensitively while respecting the patient's preferences and applicable ethical standards.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A patient who has limited mobility is unable to reach the toilet independently. The ward has not provided the assistance requested. What should the nurse do first?",
+"choices": [
+{"text": "A. Tell the patient to wait until the next shift", "is_correct": false},
+{"text": "B. Assess the patient's immediate needs and provide or arrange safe assistance while protecting dignity", "is_correct": true},
+{"text": "C. Advise the patient to attempt walking without assistance", "is_correct": false},
+{"text": "D. Ignore the request because toileting is not part of nursing care", "is_correct": false}
+],
+"rationale": "The nurse has a responsibility to protect patient dignity, comfort and safety. Prompt assistance reduces the risk of falls, injury and avoidable distress.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "A CHPS nurse is planning a home visit to a patient recently discharged after a stroke. Which activity should be included in the visit?",
+"choices": [
+{"text": "A. Assess the patient's mobility, medication use, home safety and caregiver support", "is_correct": true},
+{"text": "B. Focus only on the appearance of the house", "is_correct": false},
+{"text": "C. Discuss the patient's condition with neighbours without permission", "is_correct": false},
+{"text": "D. Advise the family to discontinue rehabilitation exercises", "is_correct": false}
+],
+"rationale": "A post-discharge home visit should assess functional ability, medication adherence, safety risks and caregiver capacity. The nurse can identify problems early and coordinate appropriate rehabilitation or referral services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "During a home visit, a nurse discovers that a patient with diabetes stores insulin in a place exposed to direct sunlight and excessive heat. What should the nurse do?",
+"choices": [
+{"text": "A. Ignore the storage condition because insulin is not affected by temperature", "is_correct": false},
+{"text": "B. Explain the correct storage requirements for the specific insulin product and help the patient identify a suitable storage location", "is_correct": true},
+{"text": "C. Advise the patient to freeze all insulin before use", "is_correct": false},
+{"text": "D. Tell the patient to discontinue insulin treatment", "is_correct": false}
+],
+"rationale": "Insulin potency can be affected by inappropriate temperature exposure, including excessive heat and freezing. The nurse should provide product-specific storage education and advise the patient to seek guidance if the insulin may have been compromised.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "A nurse visits a household and finds that an older adult with poor vision has several loose electrical cables across the walking path. Which intervention is most appropriate?",
+"choices": [
+{"text": "A. Advise the family to remove or secure the cables and improve lighting to reduce fall risk", "is_correct": true},
+{"text": "B. Tell the patient to walk more quickly to avoid the cables", "is_correct": false},
+{"text": "C. Recommend that the patient remain in bed permanently", "is_correct": false},
+{"text": "D. Ignore the hazard because it is not inside a hospital", "is_correct": false}
+],
+"rationale": "Loose cables and poor lighting increase the risk of falls, particularly in older adults with visual impairment. Home safety interventions should reduce environmental hazards while supporting the patient's independence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "During a home visit, a nurse finds that a mother has stopped giving her child prescribed antibiotics because the fever has subsided. What should the nurse do?",
+"choices": [
+{"text": "A. Praise the mother for stopping treatment early", "is_correct": false},
+{"text": "B. Explain the importance of following the prescribed treatment plan and contact the appropriate clinician if treatment needs reassessment", "is_correct": true},
+{"text": "C. Advise the mother to double the next dose", "is_correct": false},
+{"text": "D. Recommend sharing the remaining antibiotics with another child", "is_correct": false}
+],
+"rationale": "Caregivers should follow the prescribed antibiotic regimen and should not independently stop, restart or change doses. The nurse should assess the reason for non-adherence, provide education and seek clinical advice where necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "A nurse arrives for a scheduled home visit and discovers that the patient is not at home. What should the nurse do?",
+"choices": [
+{"text": "A. Leave confidential medical information with a neighbour", "is_correct": false},
+{"text": "B. Record the unsuccessful visit and arrange another appointment using an appropriate communication method", "is_correct": true},
+{"text": "C. Enter the home without permission", "is_correct": false},
+{"text": "D. Publicly announce the patient's diagnosis to nearby residents", "is_correct": false}
+],
+"rationale": "An unsuccessful visit should be documented accurately and followed by an appropriate plan for contact or rescheduling. Patient confidentiality and respect for privacy must be maintained throughout the process.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "During a home visit, a nurse observes that a patient with tuberculosis is coughing frequently in a poorly ventilated room where several children sleep. Which advice is most appropriate?",
+"choices": [
+{"text": "A. Keep all windows closed to prevent the disease from escaping", "is_correct": false},
+{"text": "B. Improve ventilation, reinforce cough hygiene and support adherence to prescribed tuberculosis treatment", "is_correct": true},
+{"text": "C. Stop tuberculosis medication when the cough reduces", "is_correct": false},
+{"text": "D. Separate the patient from all family contact permanently", "is_correct": false}
+],
+"rationale": "Tuberculosis spreads through airborne particles, and good ventilation and cough hygiene can reduce transmission risk. The nurse should also reinforce adherence to the prescribed treatment regimen and arrange appropriate contact screening.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A mother is caring for a child admitted with a chronic condition. Which nursing action best demonstrates partnership with the family?",
+"choices": [
+{"text": "A. Excluding the mother from discussions about the child's daily care", "is_correct": false},
+{"text": "B. Involving the mother in care planning and considering her knowledge of the child's usual behaviour and needs", "is_correct": true},
+{"text": "C. Allowing the mother to perform clinical procedures without appropriate instruction", "is_correct": false},
+{"text": "D. Making all decisions without explaining them to the family", "is_correct": false}
+],
+"rationale": "Families often have valuable knowledge about a patient's preferences, routines and responses to illness. Involving them appropriately improves communication, continuity and the individualisation of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A patient with a chronic illness wants his wife to participate in discharge education. Which action should the nurse take?",
+"choices": [
+{"text": "A. Refuse because family members should never participate in discharge planning", "is_correct": false},
+{"text": "B. Obtain the patient's agreement and involve his wife in relevant education while maintaining confidentiality", "is_correct": true},
+{"text": "C. Provide all confidential information to the wife without considering the patient's wishes", "is_correct": false},
+{"text": "D. Allow the wife to make every healthcare decision automatically", "is_correct": false}
+],
+"rationale": "Family involvement should reflect the patient's preferences and consent. The nurse can include the wife in discharge education while respecting confidentiality and the patient's decision-making rights.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A family in a rural Ghanaian community prefers that an elderly relative's healthcare decisions be discussed with the family head. The patient is competent and wishes to participate personally. What should the nurse do?",
+"choices": [
+{"text": "A. Allow the family head to make decisions without involving the patient", "is_correct": false},
+{"text": "B. Respect the family's cultural preference while ensuring that the competent patient remains central to decisions and gives consent to family involvement", "is_correct": true},
+{"text": "C. Reject the family because its decision-making structure is culturally different", "is_correct": false},
+{"text": "D. Disclose the patient's information to the entire extended family", "is_correct": false}
+],
+"rationale": "Family involvement is important in many Ghanaian communities, but it must not remove a competent patient's autonomy. The nurse should negotiate culturally respectful participation while obtaining the patient's consent and protecting confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A child is admitted to a hospital, and the parents request to remain with the child during routine care. Which response best reflects family-centred care?",
+"choices": [
+{"text": "A. Exclude the parents from the ward because only healthcare workers understand the child's needs", "is_correct": false},
+{"text": "B. Facilitate appropriate parental involvement while observing infection prevention, safety and clinical requirements", "is_correct": true},
+{"text": "C. Allow unrestricted access to all clinical areas without considering safety", "is_correct": false},
+{"text": "D. Refuse to provide information about the child's condition", "is_correct": false}
+],
+"rationale": "Family-centred paediatric care recognises parents as important partners in a child's care. Their involvement should be encouraged within appropriate infection prevention, privacy and safety requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A patient is preparing for discharge after a stroke. The family reports that they do not know how to assist with feeding, mobility or personal hygiene. What should the nurse do?",
+"choices": [
+{"text": "A. Discharge the patient immediately because the family can learn independently", "is_correct": false},
+{"text": "B. Provide practical caregiver education, assess their ability to perform care and coordinate appropriate follow-up services", "is_correct": true},
+{"text": "C. Tell the family that these responsibilities belong only to hospital staff", "is_correct": false},
+{"text": "D. Advise the family to avoid participating in rehabilitation", "is_correct": false}
+],
+"rationale": "Family-centred discharge planning includes preparing caregivers for the responsibilities they may undertake at home. Demonstration, return demonstration and referral to appropriate rehabilitation or community services support safe continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A nurse is planning care for a patient whose family has strong religious beliefs that influence dietary choices. Which action is most appropriate?",
+"choices": [
+{"text": "A. Ignore the beliefs and provide a standard diet without discussion", "is_correct": false},
+{"text": "B. Explore the patient's dietary preferences and collaborate with the healthcare team to identify safe, acceptable alternatives", "is_correct": true},
+{"text": "C. Tell the patient that religious beliefs have no place in healthcare", "is_correct": false},
+{"text": "D. Allow the family to introduce any food regardless of the patient's clinical condition", "is_correct": false}
+],
+"rationale": "Culturally sensitive care considers patients' beliefs and preferences while maintaining clinical safety. Collaboration with the patient, family and relevant professionals can help identify acceptable dietary options.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A nurse assesses a family in which a child has recurrent asthma attacks. The genogram shows that the child's mother and maternal grandfather also have asthma, while the ecomap shows limited access to healthcare and frequent exposure to indoor smoke. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A. The child's asthma is caused only by hereditary factors", "is_correct": false},
+{"text": "B. Both family history and environmental factors may contribute to the child's health risk and should inform the care plan", "is_correct": true},
+{"text": "C. The ecomap is irrelevant because asthma is a hereditary condition", "is_correct": false},
+{"text": "D. The child should avoid all contact with family members who have asthma", "is_correct": false}
+],
+"rationale": "The genogram identifies a possible familial predisposition, while the ecomap highlights environmental and healthcare-access factors. Effective care should consider both inherited risk and modifiable exposures such as indoor smoke.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Assessment",
+"question_text": "During a family assessment, a nurse discovers that an elderly patient is cared for by several relatives. Each relative assumes that another person is responsible for administering the patient's medication, resulting in missed doses. What should the nurse prioritise?",
+"choices": [
+{"text": "A. Advise the family to continue sharing responsibility without further discussion", "is_correct": false},
+{"text": "B. Help the family establish clear caregiving responsibilities and a reliable medication-management plan", "is_correct": true},
+{"text": "C. Recommend that all relatives stop participating in care", "is_correct": false},
+{"text": "D. Blame the oldest family member for the missed doses", "is_correct": false}
+],
+"rationale": "Unclear family roles can lead to gaps in medication administration and compromise patient safety. The nurse should facilitate communication and help the family agree on clear responsibilities and a system for monitoring medication use.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient tells a nurse that he intends to stop taking his antihypertensive medication because he feels well. Which response is most appropriate?",
+"choices": [
+{"text": "A. 'You must take the medication because I said so.'", "is_correct": false},
+{"text": "B. 'Why would you do something so irresponsible?'", "is_correct": false},
+{"text": "C. 'Can you explain what makes you feel that you no longer need the medication?'", "is_correct": true},
+{"text": "D. 'If you stop the medication, you will certainly have a stroke tomorrow.'", "is_correct": false}
+],
+"rationale": "An open-ended question helps the nurse explore the patient's beliefs and reasons for non-adherence. The nurse can then provide appropriate education about hypertension and the importance of continuing prescribed treatment even when symptoms are absent.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A patient becomes silent and avoids eye contact when asked about possible financial difficulties affecting treatment. Which nursing response is most appropriate?",
+"choices": [
+{"text": "A. Continue asking increasingly personal questions without allowing time for a response", "is_correct": false},
+{"text": "B. Acknowledge the patient's discomfort, allow time and invite the patient to discuss the issue when ready", "is_correct": true},
+{"text": "C. Assume that the patient is refusing all treatment", "is_correct": false},
+{"text": "D. Discuss the patient's financial situation with other patients", "is_correct": false}
+],
+"rationale": "Silence and avoidance may indicate discomfort, fear or difficulty discussing a sensitive issue. A supportive approach allows the patient to retain control over disclosure while maintaining an opportunity for further assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Genograms & Ecomaps",
+"question_text": "A family ecomap shows strong connections with a church and neighbours but stressful relationships with the patient's workplace and limited access to the CHPS compound. What should the nurse conclude?",
+"choices": [
+{"text": "A. The family has no useful support systems", "is_correct": false},
+{"text": "B. The family has existing social support but also faces environmental and healthcare-access challenges that require intervention", "is_correct": true},
+{"text": "C. The family should discontinue all community relationships", "is_correct": false},
+{"text": "D. The workplace relationship is the only factor relevant to health", "is_correct": false}
+],
+"rationale": "An ecomap identifies both supportive and stressful external relationships. The nurse should strengthen useful social connections while exploring ways to improve access to healthcare and address relevant workplace stressors.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A competent patient refuses a blood transfusion because of personal religious beliefs. The patient's condition is serious, and relatives insist that the nurse should administer the transfusion. What should the nurse do?",
+"choices": [
+{"text": "A. Administer the transfusion because the relatives have requested it", "is_correct": false},
+{"text": "B. Respect the patient's informed decision, promptly inform the responsible clinician and explore acceptable alternatives", "is_correct": true},
+{"text": "C. Ask the relatives to sign consent on behalf of the competent patient", "is_correct": false},
+{"text": "D. Ignore the refusal because the patient's life is at risk", "is_correct": false}
+],
+"rationale": "A competent adult's informed refusal must be taken seriously, even when the decision creates clinical risk. The nurse should ensure that the patient understands the consequences, communicate promptly with the clinical team and explore clinically appropriate alternatives.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A nurse discovers that a patient who cannot afford a prescribed medication is being discharged without any discussion of alternative treatment or available support. What is the most appropriate action?",
+"choices": [
+{"text": "A. Accept the discharge plan because financial issues are outside nursing responsibilities", "is_correct": false},
+{"text": "B. Raise the concern with the healthcare team and explore affordable alternatives or available support before discharge", "is_correct": true},
+{"text": "C. Tell the patient to obtain the medication through any available source", "is_correct": false},
+{"text": "D. Advise the patient to stop treatment permanently", "is_correct": false}
+],
+"rationale": "Failure to address medication affordability may result in treatment interruption and poor health outcomes. Patient advocacy requires the nurse to communicate the concern and help identify safe, realistic options with the healthcare team.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home Visiting",
+"question_text": "During a home visit, a nurse finds that a recently discharged patient with heart failure has worsening breathlessness, swollen legs and difficulty lying flat. What should the nurse do first?",
+"choices": [
+{"text": "A. Continue routine health education and arrange a visit in two weeks", "is_correct": false},
+{"text": "B. Recognise possible acute deterioration, assess the patient's condition and arrange urgent medical evaluation", "is_correct": true},
+{"text": "C. Advise the patient to increase salt intake", "is_correct": false},
+{"text": "D. Encourage the patient to undertake strenuous exercise", "is_correct": false}
+],
+"rationale": "Worsening breathlessness, peripheral oedema and orthopnoea may indicate worsening heart failure and pulmonary congestion. The nurse should prioritise urgent clinical assessment and escalation rather than continuing a routine home visit.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home Visiting",
+"question_text": "A CHPS nurse visits a household and discovers that a child with fever has become unconscious. The caregiver wants the nurse to complete the planned health education session before arranging transport. What should the nurse do?",
+"choices": [
+{"text": "A. Complete the health education session because it was planned in advance", "is_correct": false},
+{"text": "B. Recognise an emergency, assess and support immediate life-threatening needs, and arrange urgent referral or emergency transport", "is_correct": true},
+{"text": "C. Advise the caregiver to wait until the next CHPS outreach session", "is_correct": false},
+{"text": "D. Give the child oral medication while unconscious", "is_correct": false}
+],
+"rationale": "Unconsciousness in a child is a general danger sign requiring immediate emergency management. The nurse must abandon routine activities, assess airway and breathing, provide appropriate initial care and arrange urgent transfer.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A competent patient asks that her diagnosis not be shared with her extended family, but the family insists that they must receive all medical information because they provide financial support. What should the nurse do?",
+"choices": [
+{"text": "A. Disclose the diagnosis because financial support gives the family automatic access to medical information", "is_correct": false},
+{"text": "B. Respect the patient's confidentiality and share information with family members only with the patient's consent or another lawful basis", "is_correct": true},
+{"text": "C. Refuse to communicate with the patient about the diagnosis", "is_correct": false},
+{"text": "D. Give the family a copy of the patient's entire medical record", "is_correct": false}
+],
+"rationale": "A competent patient has a right to confidentiality and control over disclosure of personal health information, subject to lawful exceptions. Family-centred care does not remove the patient's right to decide who may receive confidential information.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A family requests that a nurse use a traditional practice alongside a prescribed treatment for an elderly patient. The practice is not known to be harmful, but its ingredients and effects are unclear. What is the most appropriate nursing response?",
+"choices": [
+{"text": "A. Approve the practice immediately because it is culturally important", "is_correct": false},
+{"text": "B. Dismiss the family's beliefs without discussion", "is_correct": false},
+{"text": "C. Explore the practice respectfully, assess possible risks and interactions, and discuss it with the healthcare team before advising", "is_correct": true},
+{"text": "D. Tell the family to discontinue all prescribed treatment", "is_correct": false}
+],
+"rationale": "Culturally respectful care requires nurses to explore traditional practices without making assumptions. Unknown ingredients may interact with prescribed medicines or cause harm, so safety assessment and appropriate clinical consultation are necessary.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
