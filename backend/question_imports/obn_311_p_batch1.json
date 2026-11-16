@@ -1,0 +1,878 @@
+{
+"courses": [
+{
+"course_code": "OBN-311-P",
+"course_title": "Obstetric Nursing",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Perinatal Mental Health",
+"Antenatal Depression",
+"Postpartum Depression",
+"Postpartum Psychosis",
+"Anxiety Disorders in Pregnancy",
+"Screening Tools: EPDS and PHQ-9",
+"Risk Factors for Perinatal Mental Illness",
+"Management of Perinatal Psychiatric Disorders",
+"Psychotropic Medications in Pregnancy and Lactation",
+"Mother-Infant Bonding",
+"Safeguarding and Child Protection",
+"Community Perinatal Mental Health"
+],
+"questions": [
+{
+"topic": "Perinatal Mental Health",
+"question_text": "Which statement best describes perinatal mental health?",
+"choices": [
+{"text": "The psychological wellbeing of a woman only during labour", "is_correct": false},
+{"text": "The mental health of a woman during pregnancy and the period following childbirth", "is_correct": true},
+{"text": "The emotional development of an infant during the first year", "is_correct": false},
+{"text": "The mental health of women only after the first year following delivery", "is_correct": false}
+],
+"rationale": "Perinatal mental health concerns psychological wellbeing and mental disorders occurring during pregnancy and after childbirth. It includes conditions such as depression, anxiety disorders and postpartum psychosis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Depression",
+"question_text": "A pregnant woman at 24 weeks' gestation reports persistent sadness, loss of interest in usual activities, fatigue and feelings of worthlessness for three weeks. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Antenatal depression", "is_correct": true},
+{"text": "Postpartum psychosis", "is_correct": false},
+{"text": "Normal pregnancy-related emotional changes", "is_correct": false},
+{"text": "Postpartum blues", "is_correct": false}
+],
+"rationale": "Persistent low mood, anhedonia and worthlessness are characteristic features of depression. The duration, severity and effect on functioning help distinguish a depressive disorder from temporary emotional changes during pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Depression",
+"question_text": "Which clinical feature most strongly distinguishes postpartum depression from postpartum blues?",
+"choices": [
+{"text": "Mild tearfulness during the first two days after delivery", "is_correct": false},
+{"text": "Brief mood changes that resolve without significant impairment", "is_correct": false},
+{"text": "Persistent depressive symptoms with impaired daily functioning", "is_correct": true},
+{"text": "Temporary emotional sensitivity when visitors arrive", "is_correct": false}
+],
+"rationale": "Postpartum depression involves persistent depressive symptoms that may interfere with self-care, infant care and normal functioning. Postpartum blues are generally milder, begin shortly after delivery and resolve spontaneously within approximately two weeks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Psychosis",
+"question_text": "A woman five days after delivery reports hearing voices telling her that her baby is evil and must be harmed. What is the most appropriate interpretation?",
+"choices": [
+{"text": "A normal response to sleep deprivation", "is_correct": false},
+{"text": "Postpartum blues", "is_correct": false},
+{"text": "A typical manifestation of maternal anxiety", "is_correct": false},
+{"text": "Possible postpartum psychosis requiring emergency psychiatric assessment", "is_correct": true}
+],
+"rationale": "Hallucinations and delusions in the postpartum period are suggestive of postpartum psychosis, a psychiatric emergency. The mother and infant require immediate protection and urgent specialist assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Screening Tools: EPDS",
+"question_text": "What is the primary purpose of the Edinburgh Postnatal Depression Scale (EPDS)?",
+"choices": [
+{"text": "To diagnose schizophrenia in pregnant women", "is_correct": false},
+{"text": "To screen for depressive symptoms during pregnancy and the postnatal period", "is_correct": true},
+{"text": "To measure the physical development of newborns", "is_correct": false},
+{"text": "To determine the gestational age of a fetus", "is_correct": false}
+],
+"rationale": "The EPDS is a screening questionnaire designed to identify women who may be experiencing depressive symptoms during pregnancy or after childbirth. It does not independently establish a psychiatric diagnosis; a positive result requires further clinical assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Screening Tools: PHQ-9",
+"question_text": "Which of the following best describes the Patient Health Questionnaire-9 (PHQ-9)?",
+"choices": [
+{"text": "A nine-item screening and severity assessment tool for depressive symptoms", "is_correct": true},
+{"text": "A tool used exclusively to diagnose postpartum psychosis", "is_correct": false},
+{"text": "A questionnaire for assessing neonatal feeding difficulties", "is_correct": false},
+{"text": "A scale used to measure maternal blood pressure", "is_correct": false}
+],
+"rationale": "The PHQ-9 contains nine items corresponding to the diagnostic symptom criteria for major depression. It helps assess depressive symptom severity and monitor response to treatment but must be interpreted alongside clinical assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Screening Tools: EPDS and PHQ-9",
+"question_text": "A pregnant woman completes the EPDS and scores above the locally recommended screening threshold. What should the nurse do next?",
+"choices": [
+{"text": "Tell her that she definitely has major depressive disorder", "is_correct": false},
+{"text": "Repeat the questionnaire after delivery without further assessment", "is_correct": false},
+{"text": "Conduct or arrange a comprehensive mental health assessment", "is_correct": true},
+{"text": "Start an antidepressant without consulting a prescriber", "is_correct": false}
+],
+"rationale": "A positive EPDS result indicates the need for further assessment rather than confirming a diagnosis. The assessment should explore symptoms, duration, functional impairment, suicide risk and relevant psychosocial factors.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Screening Tools: EPDS",
+"question_text": "A woman scores positively on item 10 of the EPDS, which asks about thoughts of self-harm. What is the nurse's priority action?",
+"choices": [
+{"text": "Arrange a routine review at the next antenatal visit", "is_correct": false},
+{"text": "Assess immediate suicide risk and arrange urgent clinical evaluation", "is_correct": true},
+{"text": "Assume that the response is caused by pregnancy hormones", "is_correct": false},
+{"text": "Advise her to avoid discussing the thoughts with family members", "is_correct": false}
+],
+"rationale": "Any positive response to the EPDS self-harm item requires prompt, direct assessment of suicidal thoughts, intent, plans, means and protective factors. Immediate safety measures and urgent referral are necessary when risk is identified.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Factors for Perinatal Mental Illness",
+"question_text": "Which factor is one of the strongest predictors of perinatal depression?",
+"choices": [
+{"text": "Having attended antenatal education", "is_correct": false},
+{"text": "Having a supportive partner", "is_correct": false},
+{"text": "Having a previous history of depression", "is_correct": true},
+{"text": "Having access to routine antenatal care", "is_correct": false}
+],
+"rationale": "A personal history of depression or another significant mental disorder increases the risk of recurrence during pregnancy and after childbirth. Identifying this history allows early monitoring, preventive support and appropriate treatment planning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Factors for Perinatal Mental Illness",
+"question_text": "A pregnant woman in a rural Ghanaian community reports intimate partner violence, financial hardship and little family support. Which conclusion is most appropriate?",
+"choices": [
+{"text": "These circumstances have no relationship with perinatal mental health", "is_correct": false},
+{"text": "They are psychosocial risk factors that may increase vulnerability to mental illness", "is_correct": true},
+{"text": "They confirm that she has postpartum psychosis", "is_correct": false},
+{"text": "They indicate that psychiatric assessment is unnecessary", "is_correct": false}
+],
+"rationale": "Intimate partner violence, poverty, social isolation and inadequate support are important psychosocial risk factors for perinatal mental illness. They should be explored sensitively and addressed through appropriate clinical and social support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Factors for Perinatal Mental Illness",
+"question_text": "Which obstetric experience may increase a woman's risk of developing post-traumatic stress symptoms after childbirth?",
+"choices": [
+{"text": "A positive experience of routine antenatal education", "is_correct": false},
+{"text": "A normal delivery with adequate support", "is_correct": false},
+{"text": "A traumatic birth involving severe complications and perceived threat to life", "is_correct": true},
+{"text": "Receiving clear explanations from healthcare professionals", "is_correct": false}
+],
+"rationale": "A traumatic birth involving serious complications, emergency interventions or perceived threat to the mother or infant may contribute to post-traumatic stress symptoms. The woman's subjective experience of the event is also important.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Anxiety Disorders in Pregnancy",
+"question_text": "A pregnant woman repeatedly worries that her baby will die despite reassuring clinical findings. She experiences muscle tension, restlessness and difficulty sleeping. Which condition should be considered?",
+"choices": [
+{"text": "Generalised anxiety disorder", "is_correct": true},
+{"text": "Postpartum psychosis", "is_correct": false},
+{"text": "Delirium", "is_correct": false},
+{"text": "Postpartum blues", "is_correct": false}
+],
+"rationale": "Generalised anxiety disorder is characterised by excessive, difficult-to-control worry across situations, often accompanied by restlessness, tension and sleep disturbance. Assessment should determine the duration, severity and impact of the symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Anxiety Disorders in Pregnancy",
+"question_text": "Which finding is most suggestive of a panic attack in a pregnant woman?",
+"choices": [
+{"text": "Gradual improvement in mood after receiving family support", "is_correct": false},
+{"text": "Persistent sadness lasting several weeks", "is_correct": false},
+{"text": "A sudden episode of intense fear accompanied by palpitations and breathlessness", "is_correct": true},
+{"text": "A fixed false belief that the baby has supernatural powers", "is_correct": false}
+],
+"rationale": "A panic attack involves an abrupt surge of intense fear or discomfort accompanied by symptoms such as palpitations, sweating, trembling and breathlessness. Physical causes of these symptoms must also be considered during pregnancy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A pregnant woman with mild depressive symptoms asks whether she can receive psychological treatment without immediately starting medication. Which intervention may be appropriate?",
+"choices": [
+{"text": "Cognitive behavioural therapy", "is_correct": true},
+{"text": "Electroconvulsive therapy as the routine first intervention", "is_correct": false},
+{"text": "Long-term physical restraint", "is_correct": false},
+{"text": "Avoidance of all mental health follow-up", "is_correct": false}
+],
+"rationale": "Cognitive behavioural therapy is an evidence-based psychological intervention that may be appropriate for mild to moderate depression during pregnancy. Treatment selection should consider symptom severity, patient preference, clinical history and access to specialist care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A woman with severe depression during pregnancy expresses an intention to end her life. What should the nurse do first?",
+"choices": [
+{"text": "Encourage her to wait until after delivery before seeking help", "is_correct": false},
+{"text": "Ensure immediate safety and arrange urgent psychiatric assessment", "is_correct": true},
+{"text": "Advise her to manage the problem through prayer alone", "is_correct": false},
+{"text": "Provide a routine appointment several months later", "is_correct": false}
+],
+"rationale": "Suicidal intent represents an immediate safety concern requiring urgent assessment and intervention. The nurse should not leave the woman unsupported and should activate the appropriate emergency and referral pathway.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Psychosis",
+"question_text": "A woman develops severe insomnia, rapidly changing mood, confusion and delusions four days after childbirth. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Reassure the family that these are normal postpartum changes", "is_correct": false},
+{"text": "Recommend that she rest at home and return in one week", "is_correct": false},
+{"text": "Arrange urgent psychiatric assessment and ensure the safety of mother and infant", "is_correct": true},
+{"text": "Encourage her to remain alone until the symptoms disappear", "is_correct": false}
+],
+"rationale": "Acute confusion, delusions, severe insomnia and mood disturbance shortly after childbirth are warning signs of possible postpartum psychosis. This condition requires emergency specialist assessment, close observation and protection of both mother and infant.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Depression",
+"question_text": "A mother six weeks after delivery reports persistent sadness, loss of pleasure, guilt and difficulty caring for her baby. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Dismiss the symptoms as a normal consequence of motherhood", "is_correct": false},
+{"text": "Assess depressive symptoms, suicide risk and functioning, then facilitate appropriate treatment", "is_correct": true},
+{"text": "Advise her to stop breastfeeding immediately", "is_correct": false},
+{"text": "Separate her permanently from the infant", "is_correct": false}
+],
+"rationale": "The symptoms suggest possible postpartum depression and require a comprehensive assessment. Management should address maternal safety, functioning, treatment needs and the mother-infant relationship while avoiding unnecessary separation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "Which principle should guide decisions about psychotropic medication use during pregnancy?",
+"choices": [
+{"text": "All psychotropic medications must automatically be stopped once pregnancy is confirmed", "is_correct": false},
+{"text": "Medication should be selected without considering fetal development", "is_correct": false},
+{"text": "The risks of untreated maternal illness and medication exposure should be assessed together", "is_correct": true},
+{"text": "Pregnancy makes psychiatric medication treatment permanently contraindicated", "is_correct": false}
+],
+"rationale": "Medication decisions require an individualised assessment of maternal illness severity, relapse risk, fetal and neonatal considerations and available alternatives. Untreated severe mental illness can also harm maternal and infant wellbeing.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "A woman with a history of recurrent major depression discovers that she is pregnant and is taking an antidepressant. What is the most appropriate advice from the nurse?",
+"choices": [
+{"text": "Stop the medication immediately without further consultation", "is_correct": false},
+{"text": "Double the dose to prevent relapse", "is_correct": false},
+{"text": "Continue or change treatment only after an individualised review with the prescribing clinician", "is_correct": true},
+{"text": "Share the medication with another pregnant woman experiencing sadness", "is_correct": false}
+],
+"rationale": "Abrupt discontinuation of antidepressants may cause withdrawal symptoms or relapse of depression. The woman should receive a prompt review with the prescribing clinician to assess the safest treatment plan for her circumstances.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "Which statement about lithium use during pregnancy is most accurate?",
+"choices": [
+{"text": "Lithium has no potential risks during pregnancy", "is_correct": false},
+{"text": "Lithium is always prohibited in every pregnant woman", "is_correct": false},
+{"text": "Lithium requires specialist risk-benefit assessment and appropriate maternal and fetal monitoring", "is_correct": true},
+{"text": "Lithium can be taken at any dose without monitoring serum levels", "is_correct": false}
+],
+"rationale": "Lithium may be necessary for some women with bipolar disorder, but its use during pregnancy requires careful specialist assessment. Monitoring may include maternal serum lithium levels, renal and thyroid function, and appropriate fetal assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "A breastfeeding mother taking an antidepressant asks whether she must stop breastfeeding. What is the best response?",
+"choices": [
+{"text": "All antidepressants are completely incompatible with breastfeeding", "is_correct": false},
+{"text": "Breastfeeding decisions should consider the specific medication, infant factors and maternal treatment needs", "is_correct": true},
+{"text": "She should stop all psychiatric treatment while breastfeeding", "is_correct": false},
+{"text": "The infant does not require any observation when the mother takes medication", "is_correct": false}
+],
+"rationale": "Some antidepressants can be used during breastfeeding after an individualised assessment of medication transfer into breast milk and potential infant effects. The mother should not discontinue necessary treatment without professional advice, and the infant should be monitored appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mother-Infant Bonding",
+"question_text": "What is meant by mother-infant bonding?",
+"choices": [
+{"text": "The emotional connection that develops between a mother and her infant", "is_correct": true},
+{"text": "The physical attachment of the umbilical cord to the placenta", "is_correct": false},
+{"text": "The process of introducing solid foods to an infant", "is_correct": false},
+{"text": "The legal registration of a newborn child", "is_correct": false}
+],
+"rationale": "Mother-infant bonding refers to the emotional connection that develops between a mother and her baby. Responsive caregiving, affectionate interaction and appropriate support can promote this relationship.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mother-Infant Bonding",
+"question_text": "A mother with postpartum depression says she feels emotionally disconnected from her baby and is worried that she is a bad mother. Which response is most therapeutic?",
+"choices": [
+{"text": "You should be ashamed because every mother must immediately love her baby", "is_correct": false},
+{"text": "You are not the only mother who experiences difficulties; let us discuss how we can support you and your baby", "is_correct": true},
+{"text": "You should avoid holding the baby until your feelings change", "is_correct": false},
+{"text": "Your feelings mean that you will never develop a relationship with your baby", "is_correct": false}
+],
+"rationale": "A non-judgemental response reduces shame and encourages disclosure. The nurse should assess the mother's symptoms and caregiving capacity while supporting safe, gradual opportunities for positive interaction with the infant.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safeguarding and Child Protection",
+"question_text": "A mother experiencing severe postpartum psychosis expresses a fixed belief that her infant must be sacrificed. What is the nurse's priority?",
+"choices": [
+{"text": "Leave the mother alone with the infant to encourage bonding", "is_correct": false},
+{"text": "Wait for the next routine community health visit", "is_correct": false},
+{"text": "Protect the infant, maintain appropriate supervision and obtain emergency psychiatric intervention", "is_correct": true},
+{"text": "Tell the mother that her beliefs are correct to maintain rapport", "is_correct": false}
+],
+"rationale": "A delusion involving harm to an infant creates an immediate safeguarding concern. The nurse must ensure the infant is protected, maintain appropriate supervision and arrange urgent specialist assessment without delay.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Perinatal Mental Health",
+"question_text": "Which service can provide an important entry point for identifying perinatal mental health problems in rural Ghanaian communities?",
+"choices": [
+{"text": "Community-based Health Planning and Services (CHPS)", "is_correct": true},
+{"text": "A private laboratory without referral arrangements", "is_correct": false},
+{"text": "A commercial pharmacy operating without clinical referral links", "is_correct": false},
+{"text": "A non-health-related transport office", "is_correct": false}
+],
+"rationale": "CHPS provides community-level primary healthcare and can support maternal health education, early identification and referral of women with mental health concerns. Effective integration requires trained staff, confidentiality and clear referral pathways.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Perinatal Mental Health",
+"question_text": "A community health nurse identifies a pregnant woman with depressive symptoms during a home visit. Which action best supports continuity of care?",
+"choices": [
+{"text": "Keep the findings to herself and take no further action", "is_correct": false},
+{"text": "Provide initial support, assess safety and facilitate referral with appropriate follow-up", "is_correct": true},
+{"text": "Advise the woman to discontinue antenatal clinic attendance", "is_correct": false},
+{"text": "Refer her only if symptoms continue after childbirth", "is_correct": false}
+],
+"rationale": "Community-based care should promote early identification, initial support, risk assessment and timely referral. Follow-up helps ensure that the woman receives appropriate treatment throughout pregnancy and the postnatal period.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "Which statement best explains why perinatal mental health is important to maternal and child health?",
+"choices": [
+{"text": "Maternal mental health affects only the woman's emotional state", "is_correct": false},
+{"text": "Perinatal mental illness has no relationship with infant development", "is_correct": false},
+{"text": "Maternal mental health can influence maternal functioning, caregiving and infant wellbeing", "is_correct": true},
+{"text": "Mental health assessment is necessary only when a woman has a previous psychiatric admission", "is_correct": false}
+],
+"rationale": "Perinatal mental health can affect maternal self-care, treatment adherence, caregiving and the quality of mother-infant interaction. Early identification and appropriate treatment can improve outcomes for both mother and child.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Screening Tools: EPDS and PHQ-9",
+"question_text": "A nurse uses the PHQ-9 during an antenatal clinic assessment. Which symptom is specifically assessed by this tool?",
+"choices": [
+{"text": "Fetal heart rate abnormalities", "is_correct": false},
+{"text": "Loss of interest or pleasure in activities", "is_correct": true},
+{"text": "Cervical dilatation", "is_correct": false},
+{"text": "Placental position", "is_correct": false}
+],
+"rationale": "The PHQ-9 assesses depressive symptoms, including diminished interest or pleasure, depressed mood, sleep changes and thoughts of self-harm. It is a screening and monitoring instrument rather than a substitute for clinical diagnosis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Depression",
+"question_text": "A mother three weeks after delivery reports low mood, poor sleep even when the baby is sleeping, loss of appetite and feelings of inadequacy. What is the most appropriate nursing interpretation?",
+"choices": [
+{"text": "The symptoms are necessarily normal and require no assessment", "is_correct": false},
+{"text": "She may be experiencing postpartum depression and requires further assessment", "is_correct": true},
+{"text": "She has confirmed postpartum psychosis", "is_correct": false},
+{"text": "The symptoms establish a diagnosis of bipolar disorder", "is_correct": false}
+],
+"rationale": "Persistent low mood, appetite changes, sleep disturbance and feelings of inadequacy may indicate postpartum depression. A comprehensive assessment is needed to establish symptom severity, functional impact and safety risks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Anxiety Disorders in Pregnancy",
+"question_text": "A pregnant woman experiences recurrent intrusive thoughts that she may accidentally contaminate her baby after birth. She repeatedly washes her hands to reduce the anxiety. Which disorder should be considered?",
+"choices": [
+{"text": "Obsessive-compulsive disorder", "is_correct": true},
+{"text": "Postpartum blues", "is_correct": false},
+{"text": "Delirium", "is_correct": false},
+{"text": "Schizophrenia", "is_correct": false}
+],
+"rationale": "Obsessive-compulsive disorder involves intrusive, unwanted thoughts or images and repetitive behaviours or mental acts performed to reduce distress. Assessment should determine the degree of distress, time consumed and interference with functioning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A woman with postpartum depression reports that she has stopped attending postnatal clinic because she feels ashamed of her condition. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Criticise her for failing to attend clinic", "is_correct": false},
+{"text": "Provide non-stigmatising education and help her reconnect with appropriate maternal and mental health services", "is_correct": true},
+{"text": "Advise her to hide the symptoms from all healthcare professionals", "is_correct": false},
+{"text": "Discontinue her postnatal follow-up", "is_correct": false}
+],
+"rationale": "Stigma can prevent women from seeking or continuing mental healthcare. Respectful education, supportive communication and practical referral arrangements can improve engagement with treatment and follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Psychosis",
+"question_text": "A woman with suspected postpartum psychosis is brought to a health facility after several nights without sleep. She is confused and believes hospital staff are trying to poison her. Which action takes priority?",
+"choices": [
+{"text": "Begin routine breastfeeding education", "is_correct": false},
+{"text": "Arrange urgent medical and psychiatric assessment while maintaining safety", "is_correct": true},
+{"text": "Encourage her to leave the facility and rest at home", "is_correct": false},
+{"text": "Ask her to attend a routine appointment after one month", "is_correct": false}
+],
+"rationale": "Postpartum psychosis can deteriorate rapidly and may be associated with serious risks to the mother and infant. Urgent assessment is necessary to evaluate psychiatric symptoms, exclude medical causes and initiate appropriate treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "Which medication group is commonly used to treat acute manic episodes in bipolar disorder, although its use during pregnancy requires careful specialist consideration?",
+"choices": [
+{"text": "Mood stabilisers and selected antipsychotic medications", "is_correct": true},
+{"text": "Routine antibiotics", "is_correct": false},
+{"text": "Antimalarial medicines as the primary treatment", "is_correct": false},
+{"text": "Vitamin supplements as the sole treatment for acute mania", "is_correct": false}
+],
+"rationale": "Acute mania may require antipsychotic medication and, in selected cases, a mood stabiliser under specialist supervision. Pregnancy-related risks, maternal illness severity and monitoring requirements must guide treatment selection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mother-Infant Bonding",
+"question_text": "Which nursing intervention is most likely to promote a healthy mother-infant relationship when clinically appropriate?",
+"choices": [
+{"text": "Discouraging all physical contact between mother and infant", "is_correct": false},
+{"text": "Supporting responsive interaction, skin-to-skin contact and breastfeeding where appropriate", "is_correct": true},
+{"text": "Allowing the mother to remain isolated throughout the postnatal period", "is_correct": false},
+{"text": "Requiring the mother to demonstrate affection at all times", "is_correct": false}
+],
+"rationale": "Responsive interaction and safe opportunities for skin-to-skin contact can support emotional connection and infant regulation. Support should be individualised and should not pressure a mother who is unwell or unable to participate safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safeguarding and Child Protection",
+"question_text": "During a home visit, a community health nurse observes that a mother with severe depression is unable to feed or supervise her infant adequately. What is the most appropriate response?",
+"choices": [
+{"text": "Ignore the situation because the mother has a mental illness", "is_correct": false},
+{"text": "Assess the infant's immediate needs, arrange safe caregiving support and refer the mother for assessment", "is_correct": true},
+{"text": "Automatically accuse the mother of deliberate neglect", "is_correct": false},
+{"text": "Wait until the infant develops a medical complication", "is_correct": false}
+],
+"rationale": "The nurse must assess the infant's immediate safety and care needs while recognising that severe depression can impair maternal functioning. A coordinated response should provide practical caregiving support, clinical treatment and safeguarding measures where necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Perinatal Mental Health",
+"question_text": "A pregnant woman in a Ghanaian community prefers consulting a traditional healer and has not attended antenatal care because of fear of being labelled mentally ill. What is the best approach by the community mental health nurse?",
+"choices": [
+{"text": "Insult the traditional healer and refuse further communication", "is_correct": false},
+{"text": "Respectfully explore her concerns, provide accurate information and encourage appropriate clinical assessment", "is_correct": true},
+{"text": "Tell her that mental illness is always caused by supernatural forces", "is_correct": false},
+{"text": "Discontinue all attempts to engage her in healthcare", "is_correct": false}
+],
+"rationale": "Culturally sensitive engagement can reduce stigma and improve access to appropriate healthcare. The nurse should respect the woman's beliefs while explaining the importance of clinical assessment and safe, evidence-based treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A woman with a history of bipolar disorder is planning a pregnancy. Which intervention is most appropriate before conception?",
+"choices": [
+{"text": "Advise her to stop all medication without a clinical review", "is_correct": false},
+{"text": "Arrange preconception counselling and a specialist review of her treatment plan", "is_correct": true},
+{"text": "Wait until severe symptoms develop during pregnancy", "is_correct": false},
+{"text": "Tell her that pregnancy is impossible for women with bipolar disorder", "is_correct": false}
+],
+"rationale": "Preconception counselling allows the woman and her clinical team to review relapse risk, medication exposure, alternative treatments and monitoring needs. Planning before pregnancy can reduce avoidable risks and support informed decision-making.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "Which statement about postpartum blues is correct?",
+"choices": [
+{"text": "It is usually a mild and short-lived emotional disturbance after childbirth", "is_correct": true},
+{"text": "It always involves hallucinations and delusions", "is_correct": false},
+{"text": "It is a chronic psychotic disorder", "is_correct": false},
+{"text": "It always requires admission to a psychiatric hospital", "is_correct": false}
+],
+"rationale": "Postpartum blues commonly involve tearfulness, irritability and emotional sensitivity during the first days after childbirth. Symptoms are generally mild and resolve within about two weeks, but persistent or severe symptoms require assessment for a depressive or other mental disorder.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Factors for Perinatal Mental Illness",
+"question_text": "A woman with a previous episode of postpartum psychosis becomes pregnant again. Which statement best describes her clinical situation?",
+"choices": [
+{"text": "She has no increased risk of recurrence", "is_correct": false},
+{"text": "Her previous history indicates a significant risk that requires specialist planning and monitoring", "is_correct": true},
+{"text": "She will definitely develop postpartum psychosis again", "is_correct": false},
+{"text": "She should be excluded from routine antenatal care", "is_correct": false}
+],
+"rationale": "A previous episode of postpartum psychosis is an important risk factor for recurrence, particularly in subsequent pregnancies and postpartum periods. Specialist preconception or antenatal planning and close postnatal monitoring are therefore important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Screening Tools: EPDS and PHQ-9",
+"question_text": "Why should a nurse avoid using an EPDS score as the only basis for diagnosing postpartum depression?",
+"choices": [
+{"text": "The EPDS measures only blood pressure", "is_correct": false},
+{"text": "The EPDS is a screening tool and does not replace a comprehensive diagnostic assessment", "is_correct": true},
+{"text": "The EPDS can only be completed by psychiatrists", "is_correct": false},
+{"text": "The EPDS cannot identify depressive symptoms", "is_correct": false}
+],
+"rationale": "The EPDS identifies women who may need further assessment but does not independently establish a psychiatric diagnosis. Clinical evaluation should consider symptom duration, severity, impairment, differential diagnoses and safety concerns.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Depression",
+"question_text": "A mother with postpartum depression says, 'My family would be better off without me.' What should the nurse do first?",
+"choices": [
+{"text": "Change the subject to avoid upsetting her", "is_correct": false},
+{"text": "Ask directly about suicidal thoughts, intent and plans", "is_correct": true},
+{"text": "Tell her that mothers should never feel this way", "is_correct": false},
+{"text": "Assume she is making an ordinary complaint", "is_correct": false}
+],
+"rationale": "Statements suggesting that others would be better off without the person may indicate suicidal thinking. Direct, compassionate questioning helps determine the level of risk and guides immediate safety interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Anxiety Disorders in Pregnancy",
+"question_text": "A pregnant woman reports severe anxiety, palpitations and shortness of breath. What should the nurse consider before attributing these symptoms to an anxiety disorder?",
+"choices": [
+{"text": "That all physical symptoms in pregnancy are psychological", "is_correct": false},
+{"text": "Possible obstetric and medical causes that may require urgent assessment", "is_correct": true},
+{"text": "That psychiatric assessment is never necessary", "is_correct": false},
+{"text": "That anxiety automatically confirms a cardiac disorder", "is_correct": false}
+],
+"rationale": "Palpitations and breathlessness can occur with anxiety but may also indicate medical or obstetric conditions. The nurse should assess physical stability and relevant warning signs before concluding that the symptoms are psychiatric.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A woman with moderate postpartum depression has difficulty attending follow-up appointments because she has no reliable transport. Which intervention best supports treatment adherence?",
+"choices": [
+{"text": "Discharge her permanently from mental health services", "is_correct": false},
+{"text": "Coordinate follow-up through accessible community services and appropriate referral arrangements", "is_correct": true},
+{"text": "Tell her that treatment is effective only when delivered in a psychiatric hospital", "is_correct": false},
+{"text": "Advise her to wait until she can afford private care", "is_correct": false}
+],
+"rationale": "Accessible community follow-up can reduce transport and financial barriers to care. Coordination between maternal health services, CHPS and mental health professionals can improve continuity of treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "A woman taking an antipsychotic during pregnancy attends an antenatal clinic. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Stop the antipsychotic immediately because all antipsychotics cause fetal abnormalities", "is_correct": false},
+{"text": "Assess adherence, adverse effects and maternal wellbeing, and ensure appropriate specialist review", "is_correct": true},
+{"text": "Increase the dose without consulting the prescriber", "is_correct": false},
+{"text": "Ignore medication use because psychiatric treatment is unrelated to antenatal care", "is_correct": false}
+],
+"rationale": "Women taking antipsychotics during pregnancy require individualised monitoring of psychiatric stability, adverse effects and relevant obstetric risks. Medication changes should be made collaboratively with the prescribing clinician rather than through abrupt discontinuation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mother-Infant Bonding",
+"question_text": "A mother with severe depression avoids eye contact and rarely responds to her infant's cues. Which outcome is the nurse most concerned about?",
+"choices": [
+{"text": "Possible difficulty developing responsive mother-infant interaction", "is_correct": true},
+{"text": "Immediate development of congenital abnormalities", "is_correct": false},
+{"text": "Automatic development of intellectual disability in the infant", "is_correct": false},
+{"text": "Permanent inability of the infant to form relationships", "is_correct": false}
+],
+"rationale": "Severe maternal depression may reduce responsiveness to infant cues and interfere with early interaction. This does not mean that bonding problems are inevitable or permanent; timely treatment and practical support can improve the relationship.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safeguarding and Child Protection",
+"question_text": "A woman with postpartum depression tells the nurse that she sometimes has unwanted images of accidentally dropping her baby. She finds the thoughts frightening and has no intention of acting on them. What is the most appropriate response?",
+"choices": [
+{"text": "Immediately conclude that she intends to harm the infant", "is_correct": false},
+{"text": "Explore the thoughts, assess intent and risk, and arrange appropriate clinical support", "is_correct": true},
+{"text": "Ignore the disclosure because unwanted thoughts never require assessment", "is_correct": false},
+{"text": "Punish her for having the thoughts", "is_correct": false}
+],
+"rationale": "Unwanted, distressing intrusive thoughts can occur in perinatal anxiety and obsessive-compulsive presentations and do not automatically indicate intent to harm. The nurse should assess the nature of the thoughts, insight, intent, behaviour and safety before determining the appropriate care plan.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Perinatal Mental Health",
+"question_text": "A CHPS nurse identifies a woman with severe depressive symptoms and poor self-care during a home visit. The nearest psychiatric specialist service is several kilometres away. Which plan best demonstrates integrated community care?",
+"choices": [
+{"text": "Manage the condition independently without referral or supervision", "is_correct": false},
+{"text": "Coordinate urgent clinical assessment, referral, family support with consent and follow-up through community services", "is_correct": true},
+{"text": "Tell the family to take full responsibility without involving healthcare services", "is_correct": false},
+{"text": "Wait until the next national maternal health campaign", "is_correct": false}
+],
+"rationale": "Integrated community care links primary healthcare, maternal services and specialist mental health support. The CHPS nurse can facilitate referral, assess safety, support continuity and involve trusted family members with the woman's consent where appropriate.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Psychosis",
+"question_text": "A woman with suspected postpartum psychosis is brought to a district hospital. She is agitated, has not slept for several nights and is attempting to leave with her newborn despite expressing delusional beliefs about the infant. What is the priority nursing action?",
+"choices": [
+{"text": "Allow her to leave because she has the right to refuse all care without assessment", "is_correct": false},
+{"text": "Maintain immediate safety, ensure the infant is protected and obtain urgent medical and psychiatric assessment", "is_correct": true},
+{"text": "Focus first on teaching her about exclusive breastfeeding", "is_correct": false},
+{"text": "Ask the family to take her home without further assessment", "is_correct": false}
+],
+"rationale": "The combination of psychosis, agitation and delusional beliefs creates an urgent risk requiring immediate assessment and safeguarding. The team should use the least restrictive safe approach while following applicable legal and clinical procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A woman with severe depression during pregnancy has not improved with initial treatment and is becoming unable to maintain adequate nutrition. Which management approach is most appropriate?",
+"choices": [
+{"text": "Continue the same plan indefinitely without reviewing her condition", "is_correct": false},
+{"text": "Arrange specialist reassessment of severity, physical health, treatment response and need for more intensive intervention", "is_correct": true},
+{"text": "Stop all antenatal care until her mood improves", "is_correct": false},
+{"text": "Recommend that she manage the condition without professional support", "is_correct": false}
+],
+"rationale": "Failure to improve alongside impaired nutrition indicates potentially severe illness and requires prompt reassessment. Specialist management may include reviewing the diagnosis, treatment adherence, medical contributors and the need for more intensive psychological or pharmacological treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "A breastfeeding mother taking a prescribed psychotropic medication reports that her newborn has become unusually sleepy and feeds poorly. What should the nurse do first?",
+"choices": [
+{"text": "Reassure her that all newborns become excessively sleepy during breastfeeding", "is_correct": false},
+{"text": "Arrange prompt assessment of the infant and review the mother's medication with the prescribing clinician", "is_correct": true},
+{"text": "Tell her to double her medication dose", "is_correct": false},
+{"text": "Advise her to stop all medication permanently without consultation", "is_correct": false}
+],
+"rationale": "Excessive sleepiness and poor feeding may indicate a neonatal health problem or a possible medication-related effect and require prompt assessment. The mother's medication should be reviewed by the responsible clinician before any treatment changes are made.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safeguarding and Child Protection",
+"question_text": "A woman with a severe mental disorder refuses recommended treatment while expressing a clear intention to harm her newborn. Which principle should guide the healthcare team's response?",
+"choices": [
+{"text": "The mother's wishes must always override every immediate safety concern", "is_correct": false},
+{"text": "The team should assess decision-making capacity, immediate risk and applicable legal safeguards while protecting the infant", "is_correct": true},
+{"text": "The infant should remain with the mother without supervision in every circumstance", "is_correct": false},
+{"text": "The team should automatically use physical restraint without assessment", "is_correct": false}
+],
+"rationale": "The team must assess the woman's decision-making capacity in relation to the specific treatment decision and evaluate the immediate risk to the infant. Any intervention must follow applicable law, protect rights and dignity, and use the least restrictive safe measures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A pregnant woman with a history of bipolar disorder reports reduced need for sleep, increased energy, rapid speech and unusually high spending. Which interpretation is most appropriate?",
+"choices": [
+{"text": "Possible emerging manic or hypomanic symptoms requiring prompt psychiatric assessment", "is_correct": true},
+{"text": "Normal emotional changes that occur in every pregnancy", "is_correct": false},
+{"text": "A definite diagnosis of postpartum depression", "is_correct": false},
+{"text": "A typical symptom pattern of postpartum blues", "is_correct": false}
+],
+"rationale": "Reduced need for sleep, increased energy, pressured speech and excessive spending may indicate a manic or hypomanic episode. In a woman with bipolar disorder, these symptoms require prompt assessment to reduce the risk of deterioration.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Screening Tools: EPDS and PHQ-9",
+"question_text": "A woman scores highly on the EPDS but denies suicidal thoughts during the initial conversation. She also reports severe functional impairment and inability to care for herself. What should the nurse conclude?",
+"choices": [
+{"text": "The negative suicide response proves that she does not require urgent care", "is_correct": false},
+{"text": "The overall clinical picture requires prompt comprehensive assessment despite her denial of suicidal thoughts", "is_correct": true},
+{"text": "The EPDS score should be ignored because she denies suicidal thoughts", "is_correct": false},
+{"text": "She should receive no further assessment until after delivery", "is_correct": false}
+],
+"rationale": "Suicide risk is only one part of a comprehensive mental health assessment. Severe functional impairment and inability to maintain self-care may indicate serious illness requiring prompt clinical evaluation even when suicidal thoughts are denied.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Perinatal Mental Health",
+"question_text": "A woman attending an antenatal clinic reports that her family believes depression during pregnancy is caused by spiritual weakness. She is reluctant to accept a mental health referral. Which response is most appropriate?",
+"choices": [
+{"text": "Agree that depression is evidence of spiritual weakness", "is_correct": false},
+{"text": "Explain that perinatal depression is a health condition that can be assessed and treated, while addressing her concerns respectfully", "is_correct": true},
+{"text": "Tell her that her family's beliefs make treatment impossible", "is_correct": false},
+{"text": "Discontinue antenatal care because she has declined referral", "is_correct": false}
+],
+"rationale": "Stigma and misconceptions can discourage women from accessing mental healthcare. Respectful education and shared decision-making can help address concerns while maintaining engagement with antenatal and mental health services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A woman with postpartum depression is being discharged after inpatient treatment. Which discharge plan best supports safe continuity of care?",
+"choices": [
+{"text": "Discharge without medication instructions or follow-up arrangements", "is_correct": false},
+{"text": "Provide a documented treatment plan, medication guidance, safety assessment, follow-up arrangements and infant-care support", "is_correct": true},
+{"text": "Tell her to return only if she develops hallucinations", "is_correct": false},
+{"text": "Advise her to avoid all contact with community health services", "is_correct": false}
+],
+"rationale": "A safe discharge plan should include ongoing treatment, clear medication instructions, warning signs, follow-up and support for maternal and infant wellbeing. Coordination with community and maternal health services reduces the risk of missed care and relapse.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "A pregnant woman with a history of severe bipolar disorder is taking valproate. She asks whether she can continue it without review because it has controlled her symptoms. What is the most appropriate response?",
+"choices": [
+{"text": "Valproate is risk-free throughout pregnancy and requires no review", "is_correct": false},
+{"text": "Valproate is associated with significant fetal risks, so urgent specialist review is needed to plan safer treatment", "is_correct": true},
+{"text": "She should increase the dose to prevent any possibility of relapse", "is_correct": false},
+{"text": "She should stop all treatment immediately and avoid further clinical contact", "is_correct": false}
+],
+"rationale": "Valproate exposure during pregnancy is associated with significant risks, including congenital malformations and adverse neurodevelopmental outcomes. The woman needs urgent specialist review and an individualised treatment plan; abrupt changes without clinical supervision may also create serious risks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Factors for Perinatal Mental Illness",
+"question_text": "A woman has experienced a stillbirth and now reports intrusive memories, avoidance of reminders, guilt and persistent distress. Which condition should the nurse consider?",
+"choices": [
+{"text": "Post-traumatic stress disorder or another trauma-related condition", "is_correct": true},
+{"text": "Postpartum blues", "is_correct": false},
+{"text": "Normal infant separation anxiety", "is_correct": false},
+{"text": "A primary sleep disorder only", "is_correct": false}
+],
+"rationale": "Stillbirth can be a traumatic experience, and intrusive memories, avoidance and persistent distress may indicate a trauma-related disorder. The nurse should assess the woman's symptoms, functioning, safety and need for bereavement and specialist mental health support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mother-Infant Bonding",
+"question_text": "A mother recovering from postpartum psychosis asks when she can resume caring for her baby independently. What is the best nursing response?",
+"choices": [
+{"text": "She can resume all infant care immediately without assessment", "is_correct": false},
+{"text": "The care plan should be based on her recovery, current risk assessment and the infant's safety", "is_correct": true},
+{"text": "She must never have contact with the infant again", "is_correct": false},
+{"text": "The decision should be made only by relatives without clinical input", "is_correct": false}
+],
+"rationale": "Recovery and caregiving capacity should be assessed individually, with attention to symptoms, insight, treatment response and infant safety. Supervised interaction and gradual return to caregiving may support bonding when clinically appropriate.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Safeguarding and Child Protection",
+"question_text": "A nurse suspects that a pregnant adolescent is experiencing sexual abuse and is showing symptoms of depression. What is the most appropriate response?",
+"choices": [
+{"text": "Promise complete secrecy regardless of immediate safety concerns", "is_correct": false},
+{"text": "Provide a private, supportive assessment, address immediate safety and follow applicable safeguarding and reporting procedures", "is_correct": true},
+{"text": "Confront the suspected perpetrator in the adolescent's presence", "is_correct": false},
+{"text": "Ignore the disclosure because the adolescent is already receiving antenatal care", "is_correct": false}
+],
+"rationale": "Suspected sexual abuse requires a sensitive, private and trauma-informed response that prioritises the adolescent's safety and wellbeing. The nurse must explain confidentiality limits and follow applicable child protection and safeguarding procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "Which principle is consistent with Ghana's Mental Health Act, 2012 (Act 846), when caring for a pregnant woman with a mental disorder?",
+"choices": [
+{"text": "A mental disorder automatically removes all of the woman's legal rights", "is_correct": false},
+{"text": "The woman should receive care that respects her dignity, rights and applicable legal protections", "is_correct": true},
+{"text": "All women with mental illness must be admitted to psychiatric hospitals", "is_correct": false},
+{"text": "Healthcare workers may disclose her diagnosis publicly to discourage stigma", "is_correct": false}
+],
+"rationale": "Act 846 provides a legal framework for mental healthcare in Ghana that includes protections for the rights and dignity of persons with mental disorders. Nurses should provide respectful care and follow applicable legal procedures when assessing consent, treatment and admission.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "NHIS and Access to Perinatal Mental Health Services",
+"question_text": "A pregnant woman with depressive symptoms is concerned that she cannot afford mental health assessment. What is the most appropriate response by the nurse?",
+"choices": [
+{"text": "Assure her that every psychiatric service and medication is automatically free under NHIS", "is_correct": false},
+{"text": "Explain that she should confirm the applicable NHIS benefits and seek assistance through the facility's referral and social support pathways", "is_correct": true},
+{"text": "Tell her that NHIS never covers any mental health-related service", "is_correct": false},
+{"text": "Advise her to avoid assessment until she can pay privately", "is_correct": false}
+],
+"rationale": "NHIS benefits and payment arrangements should not be assumed to cover every psychiatric consultation, medicine or service. The nurse should help the woman verify her entitlements with the facility or NHIS and identify appropriate referral and social support options.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Psychosis",
+"question_text": "A woman with postpartum psychosis is admitted to a psychiatric unit. She is distressed and refuses to eat because she believes the food is poisoned. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Force-feed her immediately without assessment", "is_correct": false},
+{"text": "Assess hydration and nutritional status, communicate calmly and arrange appropriate medical and psychiatric management", "is_correct": true},
+{"text": "Agree that the food is poisoned to maintain the therapeutic relationship", "is_correct": false},
+{"text": "Leave her without food or fluids until she changes her belief", "is_correct": false}
+],
+"rationale": "Delusions may interfere with eating and drinking, creating risks of dehydration and malnutrition. The nurse should assess physical needs, use calm non-confrontational communication and collaborate with the clinical team to provide safe treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A woman with a previous history of severe depression attends her first antenatal appointment. She currently reports no symptoms. Which plan is most appropriate?",
+"choices": [
+{"text": "No further mental health enquiry is necessary because she is currently well", "is_correct": false},
+{"text": "Document her psychiatric history, assess current wellbeing and arrange ongoing monitoring throughout pregnancy and after delivery", "is_correct": true},
+{"text": "Start an antidepressant automatically without reviewing her history", "is_correct": false},
+{"text": "Refer her for psychiatric admission solely because of her previous diagnosis", "is_correct": false}
+],
+"rationale": "A history of severe depression increases the risk of recurrence, even when the woman is currently asymptomatic. Recording the history and arranging ongoing assessment supports early detection and timely intervention if symptoms return.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Management of Perinatal Psychiatric Disorders",
+"question_text": "A woman with postpartum depression reports that her partner dismisses her symptoms and prevents her from attending follow-up appointments. What should the nurse prioritise?",
+"choices": [
+{"text": "Assume that the partner's decisions should determine her treatment", "is_correct": false},
+{"text": "Assess for coercion or intimate partner violence, explore her safety and facilitate confidential access to care", "is_correct": true},
+{"text": "Discontinue treatment because family support is unavailable", "is_correct": false},
+{"text": "Discuss her confidential clinical information with the partner without her consent", "is_correct": false}
+],
+"rationale": "Controlling behaviour may indicate coercion or intimate partner violence and can obstruct access to healthcare. The nurse should assess safety privately, respect confidentiality and support the woman's access to appropriate services.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Perinatal Mental Health",
+"question_text": "A district hospital is developing a programme to improve identification of perinatal depression. Which strategy is most likely to improve early detection and continuity of care?",
+"choices": [
+{"text": "Restrict mental health assessment to women admitted to psychiatric hospitals", "is_correct": false},
+{"text": "Train maternal and community health staff, use appropriate screening and establish referral and follow-up pathways", "is_correct": true},
+{"text": "Screen only women who openly describe themselves as mentally ill", "is_correct": false},
+{"text": "Replace clinical assessment with community rumours about a woman's behaviour", "is_correct": false}
+],
+"rationale": "Integrating mental health identification into antenatal, postnatal and community services increases opportunities for early detection. Staff training, appropriate screening, referral systems and follow-up are essential for effective continuity of care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Depression",
+"question_text": "A woman who gave birth two months ago has persistent depressed mood, marked loss of interest, guilt and difficulty caring for herself. Her family says she is simply refusing to accept motherhood. Which response best reflects appropriate psychiatric nursing practice?",
+"choices": [
+{"text": "Accept the family's explanation and avoid further assessment", "is_correct": false},
+{"text": "Assess for postpartum depression, evaluate safety and functioning, and involve the family in support with her consent", "is_correct": true},
+{"text": "Tell the woman that she must overcome the symptoms without treatment", "is_correct": false},
+{"text": "Diagnose postpartum psychosis solely because she has difficulty caring for herself", "is_correct": false}
+],
+"rationale": "Persistent depressive symptoms and functional impairment require clinical assessment rather than moral judgement. Family education and support may be helpful when provided with the woman's consent and without compromising confidentiality.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A pregnant woman presents with agitation, fever, confusion and fluctuating consciousness. Her family reports that she has recently behaved unusually. What is the most appropriate initial clinical priority?",
+"choices": [
+{"text": "Assume that she has a primary depressive disorder", "is_correct": false},
+{"text": "Arrange urgent medical assessment for possible delirium or another acute medical condition", "is_correct": true},
+{"text": "Begin routine counselling without assessing her physical condition", "is_correct": false},
+{"text": "Delay assessment until the next antenatal appointment", "is_correct": false}
+],
+"rationale": "Fever, acute confusion and fluctuating consciousness suggest possible delirium or another medical emergency rather than an uncomplicated psychiatric disorder. The nurse should prioritise physical assessment and urgent medical management while considering psychiatric causes in the differential diagnosis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychotropic Medications in Pregnancy and Lactation",
+"question_text": "A woman with a severe mental disorder is taking prescribed medication and plans to breastfeed. Which information should guide the clinical team's decision?",
+"choices": [
+{"text": "The mother's diagnosis alone determines whether breastfeeding is permitted", "is_correct": false},
+{"text": "The specific medication, dose, infant age and health, maternal stability and available alternatives should be considered", "is_correct": true},
+{"text": "All medication enters breast milk in identical amounts", "is_correct": false},
+{"text": "Breastfeeding must always be stopped whenever a mother receives psychiatric treatment", "is_correct": false}
+],
+"rationale": "Medication exposure through breast milk varies according to the drug, dose and maternal and infant factors. Decisions should balance infant safety with the importance of maintaining effective maternal treatment and should involve appropriate specialist advice.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Safeguarding and Child Protection",
+"question_text": "A mother with a history of postpartum psychosis has recovered clinically and is preparing to return home. Her family is worried about caring for the infant. Which plan is most appropriate?",
+"choices": [
+{"text": "Discharge her without discussing the family's concerns", "is_correct": false},
+{"text": "Develop an individualised safety and relapse-prevention plan that includes follow-up, warning signs and agreed infant-care support", "is_correct": true},
+{"text": "Permanently prohibit her from seeing the infant regardless of her recovery", "is_correct": false},
+{"text": "Tell the family to monitor her without involving healthcare professionals", "is_correct": false}
+],
+"rationale": "A structured discharge plan should address relapse warning signs, treatment adherence, emergency contacts, follow-up and safe infant care. Family involvement can be valuable when appropriate and consistent with the woman's rights, consent and clinical needs.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "A pregnant woman with depression declines a proposed mental health referral but is alert, understands the information and can explain her decision. Which approach is most appropriate?",
+"choices": [
+{"text": "Assume that her psychiatric symptoms automatically remove her right to make decisions", "is_correct": false},
+{"text": "Explore her concerns, provide information and respect her decision while discussing follow-up and safety", "is_correct": true},
+{"text": "Threaten her with compulsory admission for refusing the referral", "is_correct": false},
+{"text": "Disclose her diagnosis to the entire community to persuade her to accept care", "is_correct": false}
+],
+"rationale": "A mental health diagnosis does not automatically mean that a person lacks decision-making capacity. The nurse should support informed decision-making, assess any relevant safety concerns and respect applicable rights and legal protections.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Perinatal Mental Health",
+"question_text": "A community health nurse identifies a woman with possible postpartum depression who is also living with intimate partner violence. Her partner insists on answering all questions for her. What is the most appropriate next step?",
+"choices": [
+{"text": "Accept the partner's account as a substitute for the woman's own history", "is_correct": false},
+{"text": "Arrange a private and safe opportunity to speak with the woman, assess immediate risk and facilitate appropriate support", "is_correct": true},
+{"text": "Confront the partner in front of the woman before assessing her safety", "is_correct": false},
+{"text": "Avoid further assessment because the situation is a family matter", "is_correct": false}
+],
+"rationale": "Private communication is important when intimate partner violence or coercive control is suspected. The nurse should assess the woman's safety, listen without judgement and connect her with appropriate maternal, mental health and safeguarding services.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
