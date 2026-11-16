@@ -1,0 +1,704 @@
+{
+"courses": [
+{
+"course_code": "MMN-311-M",
+"course_title": "Medicine and Medical Nursing III",
+"category": "MEDICAL",
+"semester": "S1",
+"topics": [
+"Medical Conditions in Pregnancy",
+"Infectious Diseases in Pregnancy",
+"Endocrine Disorders in Pregnancy",
+"Renal Disorders in Pregnancy",
+"Thromboembolic Disease in Pregnancy",
+"Medical Emergencies in Midwifery Practice"
+],
+"questions": [
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "Which of the following best defines chronic hypertension in pregnancy?",
+"choices": [
+{"text": "Hypertension diagnosed before pregnancy or before 20 weeks of gestation", "is_correct": true},
+{"text": "Hypertension that develops only during the second stage of labour", "is_correct": false},
+{"text": "Hypertension that occurs exclusively after delivery", "is_correct": false},
+{"text": "A temporary increase in blood pressure during fetal movement", "is_correct": false}
+],
+"rationale": "Chronic hypertension is hypertension that predates pregnancy or is identified before 20 weeks of gestation. It requires monitoring because it increases the risk of superimposed pre-eclampsia and adverse maternal and fetal outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A pregnant woman at 31 weeks presents with a blood pressure of 168/112 mmHg, severe headache and blurred vision. What is the most appropriate nursing action?",
+"choices": [
+{"text": "Advise her to rest at home and return after one week", "is_correct": false},
+{"text": "Arrange urgent obstetric assessment, initiate appropriate emergency care and monitor maternal and fetal wellbeing", "is_correct": true},
+{"text": "Encourage unrestricted salt intake", "is_correct": false},
+{"text": "Reassure her that elevated blood pressure is normal in late pregnancy", "is_correct": false}
+],
+"rationale": "Severe-range blood pressure with neurological symptoms suggests severe pre-eclampsia and a risk of eclampsia or stroke. Immediate assessment, treatment of severe hypertension, seizure prevention and fetal monitoring are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "Which medication is commonly used for seizure prevention in a woman with severe pre-eclampsia?",
+"choices": [
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Ferrous sulphate", "is_correct": false},
+{"text": "Magnesium sulphate", "is_correct": true},
+{"text": "Metformin", "is_correct": false}
+],
+"rationale": "Magnesium sulphate is the recommended first-line anticonvulsant for preventing and treating eclamptic seizures. The midwife must monitor respiratory rate, deep tendon reflexes and urine output during administration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A woman at 35 weeks' gestation with pre-eclampsia develops severe epigastric pain, nausea and a platelet count of 75,000/mm³. Which complication should the midwife suspect?",
+"choices": [
+{"text": "HELLP syndrome", "is_correct": true},
+{"text": "Gestational diabetes mellitus", "is_correct": false},
+{"text": "Uncomplicated iron-deficiency anaemia", "is_correct": false},
+{"text": "Physiological gastro-oesophageal reflux", "is_correct": false}
+],
+"rationale": "HELLP syndrome is characterised by haemolysis, elevated liver enzymes and low platelet count. Epigastric or right upper quadrant pain may indicate hepatic involvement and requires urgent obstetric management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A woman with severe pre-eclampsia suddenly develops a generalised seizure. What should the midwife prioritise?",
+"choices": [
+{"text": "Insert a spoon into her mouth to prevent tongue biting", "is_correct": false},
+{"text": "Restrain her limbs firmly", "is_correct": false},
+{"text": "Give oral fluids immediately", "is_correct": false},
+{"text": "Protect her from injury, maintain airway and breathing, and summon emergency assistance", "is_correct": true}
+],
+"rationale": "Eclampsia is an obstetric emergency requiring immediate protection from injury and support of airway and breathing. Magnesium sulphate and further maternal stabilisation should be provided according to the emergency protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "Which statement best describes gestational diabetes mellitus?",
+"choices": [
+{"text": "Diabetes that occurs only after the menopause", "is_correct": false},
+{"text": "Hyperglycaemia first recognised during pregnancy that does not clearly meet criteria for overt diabetes in pregnancy", "is_correct": true},
+{"text": "A condition caused exclusively by excessive sugar consumption during labour", "is_correct": false},
+{"text": "A form of diabetes that always disappears before delivery", "is_correct": false}
+],
+"rationale": "Gestational diabetes mellitus is hyperglycaemia first recognised during pregnancy that does not meet the diagnostic criteria for overt diabetes. It is associated with maternal and fetal complications and requires appropriate screening and management.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A pregnant woman diagnosed with gestational diabetes is attending antenatal clinic. Which advice is most appropriate?",
+"choices": [
+{"text": "Stop eating carbohydrates completely", "is_correct": false},
+{"text": "Avoid all physical activity until delivery", "is_correct": false},
+{"text": "Follow an individualised nutritional plan, undertake suitable physical activity and monitor blood glucose as advised", "is_correct": true},
+{"text": "Discontinue antenatal visits because the condition is temporary", "is_correct": false}
+],
+"rationale": "Initial management commonly includes individualised medical nutrition therapy, appropriate physical activity and blood glucose monitoring. Medication such as insulin may be required when glycaemic targets are not achieved through lifestyle measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A woman with gestational diabetes is admitted in labour. Her newborn is at increased risk of which immediate complication?",
+"choices": [
+{"text": "Neonatal hypoglycaemia", "is_correct": true},
+{"text": "Congenital absence of the kidneys in every case", "is_correct": false},
+{"text": "Neonatal hyperthyroidism in every case", "is_correct": false},
+{"text": "Permanent neonatal hypertension", "is_correct": false}
+],
+"rationale": "Maternal hyperglycaemia can stimulate fetal insulin production, which may persist after birth and cause neonatal hypoglycaemia. The newborn should receive appropriate early feeding and blood glucose monitoring according to the neonatal protocol.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A pregnant woman with diabetes becomes sweaty, tremulous and confused. Her capillary blood glucose is 2.4 mmol/L. What should the midwife do?",
+"choices": [
+{"text": "Administer her usual insulin dose immediately", "is_correct": false},
+{"text": "Encourage her to undertake physical exercise", "is_correct": false},
+{"text": "Withhold all treatment until the next meal", "is_correct": false},
+{"text": "Treat hypoglycaemia promptly according to protocol and reassess blood glucose", "is_correct": true}
+],
+"rationale": "A blood glucose level of 2.4 mmol/L with sweating and confusion indicates clinically significant hypoglycaemia. If the woman is conscious and able to swallow safely, fast-acting oral glucose should be given; if consciousness or swallowing is impaired, emergency treatment with appropriate intravenous glucose or glucagon should follow protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "Which type of anaemia is most commonly associated with nutritional deficiency during pregnancy?",
+"choices": [
+{"text": "Iron-deficiency anaemia", "is_correct": true},
+{"text": "Aplastic anaemia", "is_correct": false},
+{"text": "Haemolytic anaemia caused by autoimmune disease", "is_correct": false},
+{"text": "Pernicious anaemia in every pregnant woman", "is_correct": false}
+],
+"rationale": "Iron-deficiency anaemia is a common nutritional problem during pregnancy because maternal iron requirements increase. It can be prevented or treated through appropriate dietary measures, iron supplementation and investigation of the underlying cause.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A pregnant woman at 30 weeks presents with severe pallor, fatigue, breathlessness at rest and a haemoglobin level of 6.2 g/dL. What is the most appropriate action?",
+"choices": [
+{"text": "Advise her to increase fruit intake and return after one month", "is_correct": false},
+{"text": "Recognise severe anaemia, arrange urgent clinical assessment and initiate appropriate management", "is_correct": true},
+{"text": "Reassure her that low haemoglobin is expected in all pregnancies", "is_correct": false},
+{"text": "Stop all antenatal investigations", "is_correct": false}
+],
+"rationale": "A haemoglobin level of 6.2 g/dL with breathlessness at rest indicates severe anaemia and possible cardiovascular compromise. Urgent assessment is necessary to determine the cause and the need for specialist treatment, including transfusion when clinically indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "Which cardiac change normally occurs during pregnancy?",
+"choices": [
+{"text": "A complete cessation of maternal cardiac activity", "is_correct": false},
+{"text": "A reduction in circulating blood volume", "is_correct": false},
+{"text": "An increase in cardiac output", "is_correct": true},
+{"text": "A permanent reduction in heart rate below the normal range", "is_correct": false}
+],
+"rationale": "Cardiac output increases during pregnancy because of increased stroke volume and heart rate. These physiological adaptations support the increased metabolic and circulatory demands of the mother and fetus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A pregnant woman with known rheumatic heart disease presents with increasing breathlessness, orthopnoea and bilateral basal lung crepitations. What should the midwife suspect?",
+"choices": [
+{"text": "Normal physiological changes of pregnancy", "is_correct": false},
+{"text": "Uncomplicated iron-deficiency anaemia", "is_correct": false},
+{"text": "Normal fetal descent", "is_correct": false},
+{"text": "Cardiac decompensation with possible pulmonary oedema", "is_correct": true}
+],
+"rationale": "Orthopnoea and pulmonary crepitations suggest pulmonary congestion and possible heart failure. The woman requires urgent assessment, oxygenation and specialist management to prevent maternal and fetal deterioration.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "A woman with known cardiac disease is in labour and becomes acutely breathless with oxygen saturation of 86%. What is the priority action?",
+"choices": [
+{"text": "Position her appropriately, support oxygenation and urgently escalate for medical and obstetric review", "is_correct": true},
+{"text": "Encourage her to push forcefully", "is_correct": false},
+{"text": "Give unrestricted intravenous fluids", "is_correct": false},
+{"text": "Delay assessment until after delivery", "is_correct": false}
+],
+"rationale": "Acute hypoxaemia and breathlessness in a woman with cardiac disease may indicate life-threatening cardiac decompensation. Airway and breathing support, careful fluid management and urgent specialist intervention are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Conditions in Pregnancy",
+"question_text": "Which blood pressure reading meets the threshold for severe hypertension in pregnancy?",
+"choices": [
+{"text": "130/80 mmHg", "is_correct": false},
+{"text": "140/90 mmHg", "is_correct": false},
+{"text": "160/110 mmHg or higher in either systolic or diastolic component", "is_correct": true},
+{"text": "120/70 mmHg", "is_correct": false}
+],
+"rationale": "Severe hypertension in pregnancy is generally defined by systolic blood pressure of at least 160 mmHg or diastolic blood pressure of at least 110 mmHg. It requires prompt confirmation and urgent treatment because of the risk of stroke and other complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "Which parasite causes malaria in humans?",
+"choices": [
+{"text": "Trypanosoma brucei", "is_correct": false},
+{"text": "Plasmodium species", "is_correct": true},
+{"text": "Entamoeba histolytica", "is_correct": false},
+{"text": "Leishmania donovani", "is_correct": false}
+],
+"rationale": "Malaria is caused by protozoan parasites of the genus Plasmodium and transmitted through the bite of an infected female Anopheles mosquito. Plasmodium falciparum is the predominant cause of severe malaria in Ghana.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman at 26 weeks presents with fever, chills, headache and vomiting. Malaria is suspected. What should the midwife do?",
+"choices": [
+{"text": "Diagnose malaria based on symptoms alone and give any available antimalarial", "is_correct": false},
+{"text": "Advise her to use mosquito repellent and return in one week", "is_correct": false},
+{"text": "Assess severity, arrange prompt malaria testing and initiate appropriate treatment according to national guidelines", "is_correct": true},
+{"text": "Withhold all investigations until after delivery", "is_correct": false}
+],
+"rationale": "Malaria in pregnancy can cause maternal anaemia, severe illness and adverse fetal outcomes. Prompt parasitological testing and treatment based on disease severity and current national guidance are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "Which preventive intervention is recommended for eligible pregnant women in malaria-endemic areas of Ghana?",
+"choices": [
+{"text": "Intermittent preventive treatment in pregnancy with sulfadoxine-pyrimethamine, beginning in the second trimester according to national guidance", "is_correct": true},
+{"text": "Routine daily treatment with artemisinin-based combination therapy throughout pregnancy", "is_correct": false},
+{"text": "Avoidance of all insecticide-treated nets", "is_correct": false},
+{"text": "Administration of antibiotics to every pregnant woman", "is_correct": false}
+],
+"rationale": "Intermittent preventive treatment in pregnancy with sulfadoxine-pyrimethamine is recommended in eligible women in malaria-endemic settings, alongside insecticide-treated nets. It should begin in the second trimester and be administered at eligible antenatal contacts according to national policy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman with malaria develops altered consciousness, repeated vomiting and severe weakness. What should the midwife prioritise?",
+"choices": [
+{"text": "Arrange routine outpatient review", "is_correct": false},
+{"text": "Provide only oral fluids and discharge her", "is_correct": false},
+{"text": "Delay treatment until the next antenatal clinic", "is_correct": false},
+{"text": "Recognise possible severe malaria and arrange immediate emergency treatment and referral", "is_correct": true}
+],
+"rationale": "Altered consciousness and persistent vomiting are danger signs that may indicate severe malaria or another life-threatening condition. The woman requires urgent hospital management, parenteral antimalarial treatment when indicated and supportive care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "Which intervention is central to preventing mother-to-child transmission of HIV?",
+"choices": [
+{"text": "Avoiding all antenatal HIV testing", "is_correct": false},
+{"text": "Providing lifelong antiretroviral therapy to pregnant women living with HIV and supporting appropriate infant prophylaxis and follow-up", "is_correct": true},
+{"text": "Stopping antiretroviral treatment once pregnancy is confirmed", "is_correct": false},
+{"text": "Delaying all HIV-related care until after breastfeeding", "is_correct": false}
+],
+"rationale": "Effective antiretroviral therapy reduces maternal viral load and substantially lowers the risk of vertical HIV transmission. Appropriate infant prophylaxis, early infant diagnosis and adherence support are also important components of prevention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman newly diagnosed with HIV asks whether she should begin antiretroviral therapy. What is the best response?",
+"choices": [
+{"text": "Treatment should be delayed until the baby is delivered", "is_correct": false},
+{"text": "Antiretroviral therapy is required only when symptoms develop", "is_correct": false},
+{"text": "She should be linked promptly to HIV care and started on recommended lifelong antiretroviral therapy", "is_correct": true},
+{"text": "She should stop attending antenatal clinic to avoid disclosure", "is_correct": false}
+],
+"rationale": "All pregnant women living with HIV should be promptly linked to treatment services and receive recommended antiretroviral therapy. Early and sustained treatment protects maternal health and reduces the risk of transmission to the infant.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman living with HIV has a detectable viral load close to delivery despite reporting adherence to treatment. What should the midwife do?",
+"choices": [
+{"text": "Ignore the result because viral load does not affect transmission risk", "is_correct": false},
+{"text": "Stop all antiretroviral medicines immediately", "is_correct": false},
+{"text": "Recommend that the woman avoid all facility-based delivery care", "is_correct": false},
+{"text": "Escalate for specialist review, assess adherence and follow the prevention-of-vertical-transmission delivery and infant-care protocol", "is_correct": true}
+],
+"rationale": "A detectable viral load near delivery requires careful assessment because the risk of vertical transmission may be increased. The care team should review adherence and treatment history and plan delivery and infant prophylaxis according to current national guidance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "Which laboratory test is commonly used for initial screening of hepatitis B infection in pregnancy?",
+"choices": [
+{"text": "Hepatitis B surface antigen test", "is_correct": true},
+{"text": "Mantoux test", "is_correct": false},
+{"text": "Widal test", "is_correct": false},
+{"text": "Random blood glucose test", "is_correct": false}
+],
+"rationale": "Hepatitis B surface antigen testing is used to identify current hepatitis B infection. A positive result requires further assessment and planning to reduce the risk of transmission to the newborn.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman tests positive for hepatitis B surface antigen. Which intervention is essential to reduce transmission to her newborn?",
+"choices": [
+{"text": "Delay all newborn immunisation until six months of age", "is_correct": false},
+{"text": "Give the newborn hepatitis B vaccine and hepatitis B immunoglobulin promptly after birth when indicated and available under national guidance", "is_correct": true},
+{"text": "Administer maternal antibiotics during labour as the only preventive measure", "is_correct": false},
+{"text": "Avoid testing the newborn after delivery", "is_correct": false}
+],
+"rationale": "Timely hepatitis B vaccination, with hepatitis B immunoglobulin for infants of mothers who are hepatitis B surface antigen positive when indicated and available, reduces perinatal transmission. The newborn should complete the recommended immunisation schedule and receive appropriate follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "Which organism causes syphilis?",
+"choices": [
+{"text": "Neisseria gonorrhoeae", "is_correct": false},
+{"text": "Chlamydia trachomatis", "is_correct": false},
+{"text": "Treponema pallidum", "is_correct": true},
+{"text": "Mycobacterium tuberculosis", "is_correct": false}
+],
+"rationale": "Syphilis is a sexually transmitted infection caused by the spirochaete bacterium Treponema pallidum. Untreated maternal infection can cause miscarriage, stillbirth, congenital syphilis and other adverse pregnancy outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman tests positive for syphilis during antenatal screening. Which treatment is recommended for preventing congenital syphilis?",
+"choices": [
+{"text": "Oral metronidazole alone", "is_correct": false},
+{"text": "Oral amoxicillin for three days", "is_correct": false},
+{"text": "Topical antifungal cream", "is_correct": false},
+{"text": "Appropriate penicillin treatment according to the stage of syphilis and national guidelines", "is_correct": true}
+],
+"rationale": "Penicillin is the recommended treatment for syphilis in pregnancy and is effective in preventing congenital infection when administered appropriately. The stage of infection determines the regimen, and partner evaluation and follow-up are also important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman with untreated syphilis delivers a stillborn infant. Which complication is most strongly associated with untreated maternal syphilis?",
+"choices": [
+{"text": "Congenital syphilis", "is_correct": true},
+{"text": "Congenital malaria in every case", "is_correct": false},
+{"text": "Neonatal asthma", "is_correct": false},
+{"text": "Congenital appendicitis", "is_correct": false}
+],
+"rationale": "Untreated maternal syphilis can cross the placenta and cause fetal infection, stillbirth, neonatal death and congenital syphilis. Antenatal screening and timely penicillin treatment are important maternal mortality and perinatal mortality reduction strategies.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman presents with a persistent cough, night sweats, weight loss and haemoptysis. What condition should the midwife suspect?",
+"choices": [
+{"text": "Uncomplicated allergic rhinitis", "is_correct": false},
+{"text": "Pulmonary tuberculosis", "is_correct": true},
+{"text": "Gestational diabetes", "is_correct": false},
+{"text": "Iron-deficiency anaemia alone", "is_correct": false}
+],
+"rationale": "Persistent cough, night sweats, weight loss and haemoptysis are suggestive of pulmonary tuberculosis. Prompt investigation, infection prevention measures and linkage to TB services are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman is diagnosed with active pulmonary tuberculosis. Which management principle is most appropriate?",
+"choices": [
+{"text": "Withhold all TB treatment until after breastfeeding", "is_correct": false},
+{"text": "Discharge her without follow-up because pregnancy protects against TB", "is_correct": false},
+{"text": "Link her promptly to TB services for appropriate treatment and infection-control counselling", "is_correct": true},
+{"text": "Treat her only with antimalarial medication", "is_correct": false}
+],
+"rationale": "Active TB in pregnancy requires prompt treatment with an appropriate regimen under national TB guidance. Delaying treatment can harm both mother and fetus, while infection-control measures reduce transmission to household members and newborns.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Disorders in Pregnancy",
+"question_text": "Which hormone is primarily responsible for increasing insulin resistance during pregnancy?",
+"choices": [
+{"text": "Human placental lactogen", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Prolactin alone", "is_correct": false},
+{"text": "Melatonin", "is_correct": false}
+],
+"rationale": "Human placental lactogen contributes to maternal insulin resistance as pregnancy progresses. This adaptation helps make more glucose available to the fetus but can contribute to gestational diabetes in susceptible women.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Endocrine Disorders in Pregnancy",
+"question_text": "A woman with poorly controlled gestational diabetes is at increased risk of delivering an infant with which complication?",
+"choices": [
+{"text": "Low birth weight in every case", "is_correct": false},
+{"text": "Macrosomia", "is_correct": true},
+{"text": "Congenital absence of the placenta", "is_correct": false},
+{"text": "Neonatal dehydration in every case", "is_correct": false}
+],
+"rationale": "Maternal hyperglycaemia can cause fetal hyperinsulinaemia and excessive fetal growth, resulting in macrosomia. This increases the risk of birth trauma, shoulder dystocia and operative delivery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Endocrine Disorders in Pregnancy",
+"question_text": "A woman with gestational diabetes has repeated fasting blood glucose readings above her treatment targets despite dietary modification and physical activity. What should the midwife do?",
+"choices": [
+{"text": "Advise her to stop monitoring blood glucose", "is_correct": false},
+{"text": "Tell her that medication is never used during pregnancy", "is_correct": false},
+{"text": "Refer or escalate for review of glycaemic control and possible pharmacological treatment", "is_correct": true},
+{"text": "Recommend fasting throughout the day", "is_correct": false}
+],
+"rationale": "Persistent hyperglycaemia despite lifestyle intervention requires clinical review and possible pharmacological treatment, commonly insulin where indicated. Poor glycaemic control increases the risk of maternal and fetal complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Disorders in Pregnancy",
+"question_text": "Which finding is commonly associated with untreated maternal hyperthyroidism?",
+"choices": [
+{"text": "Persistent bradycardia and cold intolerance", "is_correct": false},
+{"text": "Reduced metabolic activity in all body systems", "is_correct": false},
+{"text": "Severe constipation as the only clinical feature", "is_correct": false},
+{"text": "Tachycardia, heat intolerance, tremor and weight loss", "is_correct": true}
+],
+"rationale": "Hyperthyroidism increases metabolic activity and may cause tachycardia, tremor, heat intolerance and weight loss. Uncontrolled disease during pregnancy can cause serious maternal and fetal complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Endocrine Disorders in Pregnancy",
+"question_text": "A pregnant woman with Graves' disease develops high fever, severe tachycardia, agitation and vomiting. Which emergency should the midwife suspect?",
+"choices": [
+{"text": "Thyroid storm", "is_correct": true},
+{"text": "Uncomplicated morning sickness", "is_correct": false},
+{"text": "Physiological anaemia", "is_correct": false},
+{"text": "Normal labour onset", "is_correct": false}
+],
+"rationale": "Thyroid storm is a life-threatening exacerbation of thyrotoxicosis characterised by severe systemic symptoms such as fever, tachycardia and altered mental status. Immediate emergency treatment and specialist management are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Disorders in Pregnancy",
+"question_text": "A pregnant woman with known hypothyroidism asks whether she should stop levothyroxine because she is pregnant. What is the best advice?",
+"choices": [
+{"text": "Stop levothyroxine immediately after a positive pregnancy test", "is_correct": false},
+{"text": "Continue treatment and arrange prompt thyroid function monitoring and dose review by the managing clinician", "is_correct": true},
+{"text": "Replace levothyroxine with iron tablets", "is_correct": false},
+{"text": "Take levothyroxine only when symptoms occur", "is_correct": false}
+],
+"rationale": "Levothyroxine is important for maintaining maternal thyroid hormone levels and supporting fetal development. Requirements may increase during pregnancy, so thyroid function should be monitored and the dose adjusted by the managing clinician when necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Disorders in Pregnancy",
+"question_text": "A woman with type 1 diabetes is admitted with vomiting, abdominal pain, deep rapid breathing and marked hyperglycaemia. What condition should the midwife suspect?",
+"choices": [
+{"text": "Hypothyroidism", "is_correct": false},
+{"text": "Uncomplicated gastro-oesophageal reflux", "is_correct": false},
+{"text": "Diabetic ketoacidosis", "is_correct": true},
+{"text": "Physiological nausea of pregnancy", "is_correct": false}
+],
+"rationale": "Vomiting, abdominal pain, deep rapid breathing and hyperglycaemia suggest diabetic ketoacidosis, which can develop at lower glucose levels in pregnancy than outside pregnancy. It is a medical emergency requiring urgent hospital treatment and close maternal and fetal monitoring.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Renal Disorders in Pregnancy",
+"question_text": "Which renal change normally occurs during pregnancy?",
+"choices": [
+{"text": "Increased renal blood flow and glomerular filtration rate", "is_correct": true},
+{"text": "Complete cessation of urine production", "is_correct": false},
+{"text": "Permanent obstruction of both ureters", "is_correct": false},
+{"text": "A universal reduction in renal blood flow", "is_correct": false}
+],
+"rationale": "Renal blood flow and glomerular filtration rate increase during normal pregnancy. These physiological changes influence the interpretation of renal function tests and fluid balance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Renal Disorders in Pregnancy",
+"question_text": "A pregnant woman at 24 weeks presents with fever, flank pain, vomiting and tenderness at the costovertebral angle. What condition should the midwife suspect?",
+"choices": [
+{"text": "Uncomplicated vaginal candidiasis", "is_correct": false},
+{"text": "Acute pyelonephritis", "is_correct": true},
+{"text": "Physiological urinary frequency", "is_correct": false},
+{"text": "Gestational diabetes without complications", "is_correct": false}
+],
+"rationale": "Fever, flank pain, vomiting and costovertebral angle tenderness are suggestive of acute pyelonephritis. Pregnancy-associated pyelonephritis can cause maternal sepsis and requires urgent clinical assessment and appropriate antibiotic treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Renal Disorders in Pregnancy",
+"question_text": "A pregnant woman with suspected pyelonephritis becomes hypotensive, confused and tachycardic. What is the priority action?",
+"choices": [
+{"text": "Arrange routine urine testing at the next antenatal visit", "is_correct": false},
+{"text": "Encourage oral fluids and send her home", "is_correct": false},
+{"text": "Recognise possible sepsis, initiate emergency assessment and arrange urgent hospital management", "is_correct": true},
+{"text": "Advise her to stop all prescribed medicines", "is_correct": false}
+],
+"rationale": "Hypotension, confusion and tachycardia suggest possible sepsis with organ dysfunction. Immediate escalation, resuscitation and prompt antimicrobial treatment are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Renal Disorders in Pregnancy",
+"question_text": "Which finding is most suggestive of significant renal impairment in a pregnant woman?",
+"choices": [
+{"text": "Mild urinary frequency without other symptoms", "is_correct": false},
+{"text": "Increased appetite during pregnancy", "is_correct": false},
+{"text": "Normal physiological ankle swelling alone", "is_correct": false},
+{"text": "Persistent oliguria with rising serum creatinine", "is_correct": true}
+],
+"rationale": "Persistent oliguria and rising serum creatinine suggest impaired renal function. These findings require prompt assessment because renal impairment during pregnancy may be associated with severe maternal complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Renal Disorders in Pregnancy",
+"question_text": "A pregnant woman with chronic kidney disease develops worsening hypertension, proteinuria and declining renal function. What should the midwife consider?",
+"choices": [
+{"text": "Possible progression of renal disease or superimposed pre-eclampsia requiring specialist assessment", "is_correct": true},
+{"text": "Normal changes that never require follow-up", "is_correct": false},
+{"text": "An indication to stop all antenatal care", "is_correct": false},
+{"text": "A definite diagnosis of gestational diabetes", "is_correct": false}
+],
+"rationale": "Worsening hypertension, proteinuria and renal function in a woman with chronic kidney disease may indicate disease progression or superimposed pre-eclampsia. Specialist assessment is needed to distinguish the causes and guide maternal and fetal management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Thromboembolic Disease in Pregnancy",
+"question_text": "Why is pregnancy associated with an increased risk of venous thromboembolism?",
+"choices": [
+{"text": "Pregnancy causes permanent destruction of all platelets", "is_correct": false},
+{"text": "Pregnancy produces a hypercoagulable state, venous stasis and changes in vascular function", "is_correct": true},
+{"text": "Pregnancy prevents blood clot formation", "is_correct": false},
+{"text": "Pregnancy causes complete absence of circulating clotting factors", "is_correct": false}
+],
+"rationale": "Pregnancy increases the risk of venous thromboembolism through hypercoagulability, venous stasis and vascular changes. The risk is particularly important in the postpartum period.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Thromboembolic Disease in Pregnancy",
+"question_text": "A woman at 29 weeks' gestation presents with unilateral calf swelling, warmth, redness and pain. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Bilateral physiological ankle oedema", "is_correct": false},
+{"text": "Normal pregnancy-related weight gain", "is_correct": false},
+{"text": "Deep vein thrombosis", "is_correct": true},
+{"text": "Uncomplicated varicose veins without symptoms", "is_correct": false}
+],
+"rationale": "Unilateral swelling, warmth, redness and pain are concerning features of deep vein thrombosis. Urgent diagnostic assessment is required because an untreated thrombus may lead to pulmonary embolism.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Thromboembolic Disease in Pregnancy",
+"question_text": "A pregnant woman with suspected deep vein thrombosis suddenly develops chest pain, severe breathlessness and oxygen desaturation. What should the midwife suspect?",
+"choices": [
+{"text": "Pulmonary embolism", "is_correct": true},
+{"text": "Uncomplicated gastro-oesophageal reflux", "is_correct": false},
+{"text": "Normal physiological breathlessness", "is_correct": false},
+{"text": "Iron-deficiency anaemia alone", "is_correct": false}
+],
+"rationale": "Sudden chest pain, dyspnoea and hypoxaemia in a woman with suspected DVT strongly suggest pulmonary embolism. This is a life-threatening emergency requiring immediate resuscitation and urgent specialist management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Thromboembolic Disease in Pregnancy",
+"question_text": "Which anticoagulant is commonly preferred for the treatment of venous thromboembolism during pregnancy?",
+"choices": [
+{"text": "Warfarin throughout pregnancy", "is_correct": false},
+{"text": "Aspirin as the sole treatment for acute DVT", "is_correct": false},
+{"text": "Oral vitamin K", "is_correct": false},
+{"text": "Low-molecular-weight heparin", "is_correct": true}
+],
+"rationale": "Low-molecular-weight heparin is commonly used for treating venous thromboembolism during pregnancy because it does not cross the placenta. Treatment and timing around delivery require specialist planning and monitoring.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Thromboembolic Disease in Pregnancy",
+"question_text": "A woman receiving anticoagulant therapy for DVT asks whether she should stop treatment because she is approaching delivery. What is the best response?",
+"choices": [
+{"text": "Stop anticoagulation without informing the clinical team", "is_correct": false},
+{"text": "Continue or adjust treatment according to an individualised specialist delivery and anticoagulation plan", "is_correct": true},
+{"text": "Replace anticoagulation with herbal preparations", "is_correct": false},
+{"text": "Double the dose during labour", "is_correct": false}
+],
+"rationale": "Anticoagulation around delivery requires individualised planning to balance thrombosis and bleeding risks. The woman should not stop or alter treatment independently but should follow the coordinated obstetric and haematology plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "Which of the following is the most appropriate initial approach to a pregnant woman who collapses and is unresponsive?",
+"choices": [
+{"text": "Assess responsiveness, summon emergency assistance and assess airway, breathing and circulation", "is_correct": true},
+{"text": "Begin routine antenatal history-taking", "is_correct": false},
+{"text": "Give oral fluids immediately", "is_correct": false},
+{"text": "Wait for a relative to arrive before assessing her", "is_correct": false}
+],
+"rationale": "An unresponsive pregnant woman requires immediate emergency assessment using a structured approach to airway, breathing and circulation. Resuscitation should begin promptly, with pregnancy-specific modifications and emergency support as appropriate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A woman at 36 weeks' gestation collapses from cardiac arrest. Which modification is essential during maternal cardiopulmonary resuscitation?",
+"choices": [
+{"text": "Avoid chest compressions because of the pregnancy", "is_correct": false},
+{"text": "Perform compressions only after delivery of the baby", "is_correct": false},
+{"text": "Use manual left uterine displacement when the uterus is large enough to cause aortocaval compression", "is_correct": true},
+{"text": "Place the woman in a fully upright sitting position for compressions", "is_correct": false}
+],
+"rationale": "Manual left uterine displacement helps relieve aortocaval compression and improve venous return during maternal resuscitation. High-quality chest compressions and standard advanced life support measures must not be delayed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A pregnant woman develops sudden severe breathlessness, hypotension and cyanosis shortly after delivery. What is the most appropriate response?",
+"choices": [
+{"text": "Treat the event as a possible life-threatening cardiopulmonary emergency and initiate immediate resuscitation and specialist escalation", "is_correct": true},
+{"text": "Assume it is normal postpartum fatigue", "is_correct": false},
+{"text": "Encourage her to walk to improve circulation", "is_correct": false},
+{"text": "Delay intervention until a routine chest X-ray is performed", "is_correct": false}
+],
+"rationale": "Sudden respiratory distress and cardiovascular collapse after delivery may indicate pulmonary embolism, amniotic fluid embolism or another critical condition. Immediate resuscitation and multidisciplinary emergency management are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A pregnant woman with severe vomiting is unable to retain fluids and has signs of dehydration and ketonuria. Which condition should the midwife consider?",
+"choices": [
+{"text": "Normal mild morning sickness", "is_correct": false},
+{"text": "Hyperemesis gravidarum", "is_correct": true},
+{"text": "Uncomplicated gestational hypertension", "is_correct": false},
+{"text": "Physiological urinary frequency", "is_correct": false}
+],
+"rationale": "Persistent severe vomiting with dehydration and ketonuria suggests hyperemesis gravidarum. The woman may require hospital assessment, fluid and electrolyte correction, antiemetic treatment and nutritional support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A woman with severe pre-eclampsia receiving magnesium sulphate has a respiratory rate of 8 breaths per minute and absent deep tendon reflexes. Which action should be prioritised?",
+"choices": [
+{"text": "Increase the infusion rate to prevent further seizures", "is_correct": false},
+{"text": "Encourage oral fluids and continue treatment", "is_correct": false},
+{"text": "Stop magnesium sulphate, call for urgent assistance and prepare calcium gluconate according to protocol", "is_correct": true},
+{"text": "Allow the woman to sleep and reassess in two hours", "is_correct": false}
+],
+"rationale": "Respiratory depression and absent reflexes are signs of magnesium sulphate toxicity. The infusion must be stopped, urgent support provided and calcium gluconate prepared as the antidote according to the clinical protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A woman with diabetes in pregnancy becomes unconscious, and her blood glucose is found to be severely low. What is the most appropriate immediate management?",
+"choices": [
+{"text": "Give oral glucose gel or sweetened water despite her unconscious state", "is_correct": false},
+{"text": "Administer her usual insulin dose", "is_correct": false},
+{"text": "Wait until she regains consciousness without intervention", "is_correct": false},
+{"text": "Protect her airway and administer appropriate emergency glucose treatment according to protocol", "is_correct": true}
+],
+"rationale": "Severe hypoglycaemia with unconsciousness is a medical emergency. Oral fluids must not be given because of aspiration risk; intravenous glucose or glucagon should be administered according to the emergency protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A pregnant woman with severe hypertension complains of sudden severe headache, develops weakness on one side of her body and has difficulty speaking. Which complication should the midwife suspect?",
+"choices": [
+{"text": "Stroke", "is_correct": true},
+{"text": "Uncomplicated tension headache", "is_correct": false},
+{"text": "Normal pregnancy-related fatigue", "is_correct": false},
+{"text": "Mild dehydration", "is_correct": false}
+],
+"rationale": "Sudden focal neurological deficits and severe headache may indicate stroke, a life-threatening complication of severe hypertension and pre-eclampsia. Immediate emergency assessment and referral for definitive management are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A pregnant woman presents at a district hospital with severe vaginal bleeding, pallor, cold clammy skin and a weak rapid pulse. Which action should the midwife take first?",
+"choices": [
+{"text": "Complete routine registration before initiating care", "is_correct": false},
+{"text": "Activate the emergency response, assess ABCs and initiate resuscitation while arranging urgent obstetric management", "is_correct": true},
+{"text": "Ask the woman to walk to the laboratory", "is_correct": false},
+{"text": "Give oral iron tablets and observe her overnight", "is_correct": false}
+],
+"rationale": "The findings indicate haemorrhagic shock and require immediate emergency management. Resuscitation, intravenous access, blood preparation and urgent identification and control of the bleeding source must proceed without delay.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A pregnant woman with suspected pulmonary embolism becomes unresponsive and has no normal breathing. What should the midwife do?",
+"choices": [
+{"text": "Wait for confirmation by imaging before starting treatment", "is_correct": false},
+{"text": "Place her in a sitting position and observe", "is_correct": false},
+{"text": "Start cardiopulmonary resuscitation, activate the emergency response and follow advanced life support procedures", "is_correct": true},
+{"text": "Administer oral anticoagulants immediately", "is_correct": false}
+],
+"rationale": "Cardiac arrest requires immediate high-quality cardiopulmonary resuscitation and activation of the emergency response. Diagnostic imaging must not delay resuscitation or time-critical advanced life support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A woman with chronic hypertension is attending antenatal clinic. Which finding should prompt urgent assessment for possible superimposed pre-eclampsia?",
+"choices": [
+{"text": "A mild increase in appetite", "is_correct": false},
+{"text": "Normal fetal movements", "is_correct": false},
+{"text": "Occasional painless fetal hiccups", "is_correct": false},
+{"text": "New severe headache, visual disturbance and worsening blood pressure", "is_correct": true}
+],
+"rationale": "New neurological symptoms and worsening hypertension in a woman with chronic hypertension raise concern for superimposed pre-eclampsia. Urgent maternal assessment, laboratory investigations and fetal evaluation are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medical Emergencies in Midwifery Practice",
+"question_text": "A woman at 28 weeks' gestation with severe malaria develops jaundice, respiratory distress and reduced urine output. Which interpretation is most appropriate?",
+"choices": [
+{"text": "She has uncomplicated malaria suitable for routine outpatient treatment", "is_correct": false},
+{"text": "She may have severe malaria with multi-organ involvement and requires urgent hospital management", "is_correct": true},
+{"text": "The symptoms are normal physiological changes of pregnancy", "is_correct": false},
+{"text": "She should discontinue all treatment until delivery", "is_correct": false}
+],
+"rationale": "Jaundice, respiratory distress and reduced urine output indicate possible severe malaria with organ dysfunction. Immediate emergency treatment, close monitoring and specialist care are necessary to reduce maternal and fetal mortality.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
