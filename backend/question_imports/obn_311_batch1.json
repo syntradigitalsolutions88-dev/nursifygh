@@ -1,0 +1,681 @@
+{
+"courses": [
+{
+"course_code": "OBN-311",
+"course_title": "Obstetric Nursing",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Antenatal Care",
+"Labour and Delivery",
+"Postpartum Care",
+"Pre-eclampsia and Eclampsia",
+"Postpartum Haemorrhage",
+"Obstetric Emergencies",
+"Perinatal Mental Health"
+],
+"questions": [
+{
+"topic": "Antenatal Care",
+"question_text": "What is the primary purpose of antenatal care?",
+"choices": [
+{"text": "A. To provide care only when pregnancy complications develop", "is_correct": false},
+{"text": "B. To promote the health of the pregnant woman and fetus through preventive, promotive and clinical interventions", "is_correct": true},
+{"text": "C. To determine the mode of delivery during the first antenatal visit", "is_correct": false},
+{"text": "D. To ensure that every pregnant woman undergoes caesarean section", "is_correct": false}
+],
+"rationale": "Antenatal care aims to promote maternal and fetal health through early identification of risks, preventive interventions, health education and appropriate management. It also prepares the woman and her family for childbirth and the postnatal period.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "Which hormone is primarily responsible for maintaining the endometrium during early pregnancy?",
+"choices": [
+{"text": "A. Oestrogen", "is_correct": false},
+{"text": "B. Oxytocin", "is_correct": false},
+{"text": "C. Progesterone", "is_correct": true},
+{"text": "D. Prolactin", "is_correct": false}
+],
+"rationale": "Progesterone maintains the endometrium and supports the uterine environment necessary for pregnancy. During early pregnancy, it is produced mainly by the corpus luteum before placental production becomes established.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "Which investigation is routinely important for identifying anaemia during pregnancy?",
+"choices": [
+{"text": "A. Haemoglobin estimation", "is_correct": true},
+{"text": "B. Electrocardiography", "is_correct": false},
+{"text": "C. Chest radiography", "is_correct": false},
+{"text": "D. Liver biopsy", "is_correct": false}
+],
+"rationale": "Haemoglobin estimation helps identify anaemia, which is associated with adverse maternal and fetal outcomes. Appropriate investigation and management are important components of antenatal care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "Which supplement is particularly important before conception and during early pregnancy to reduce the risk of neural tube defects?",
+"choices": [
+{"text": "A. Vitamin C", "is_correct": false},
+{"text": "B. Vitamin D", "is_correct": false},
+{"text": "C. Calcium", "is_correct": false},
+{"text": "D. Folic acid", "is_correct": true}
+],
+"rationale": "Folic acid is essential for normal neural tube development during early embryogenesis. Supplementation before conception and during early pregnancy reduces the risk of neural tube defects such as spina bifida.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "What is the main purpose of administering tetanus-containing vaccine during pregnancy according to the recommended immunisation schedule?",
+"choices": [
+{"text": "A. To prevent gestational diabetes", "is_correct": false},
+{"text": "B. To protect the mother and provide passive protection to the newborn against neonatal tetanus", "is_correct": true},
+{"text": "C. To prevent congenital abnormalities", "is_correct": false},
+{"text": "D. To induce labour at term", "is_correct": false}
+],
+"rationale": "Tetanus-containing vaccination helps protect the pregnant woman against tetanus and allows maternal antibodies to cross the placenta. These antibodies provide the newborn with temporary protection against neonatal tetanus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "Which of the following is the most accurate definition of true labour?",
+"choices": [
+{"text": "A. Irregular uterine contractions without cervical change", "is_correct": false},
+{"text": "B. Abdominal discomfort that disappears with rest", "is_correct": false},
+{"text": "C. Regular uterine contractions associated with progressive cervical effacement and dilatation", "is_correct": true},
+{"text": "D. Fetal movement accompanied by mild backache", "is_correct": false}
+],
+"rationale": "True labour is characterised by regular uterine contractions that produce progressive cervical effacement and dilatation. Braxton Hicks contractions generally do not result in progressive cervical change.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "Which stage of labour begins with full cervical dilatation and ends with the birth of the baby?",
+"choices": [
+{"text": "A. First stage", "is_correct": false},
+{"text": "B. Second stage", "is_correct": true},
+{"text": "C. Third stage", "is_correct": false},
+{"text": "D. Fourth stage", "is_correct": false}
+],
+"rationale": "The second stage of labour begins when the cervix is fully dilated and ends with the birth of the baby. It involves fetal descent, rotation and expulsion through the birth canal.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "Which structure connects the fetus to the placenta and contains two arteries and one vein?",
+"choices": [
+{"text": "A. Umbilical cord", "is_correct": true},
+{"text": "B. Amniotic membrane", "is_correct": false},
+{"text": "C. Cervical canal", "is_correct": false},
+{"text": "D. Fallopian tube", "is_correct": false}
+],
+"rationale": "The umbilical cord normally contains two umbilical arteries and one umbilical vein embedded in Wharton's jelly. The arteries carry deoxygenated blood from the fetus to the placenta, while the vein carries oxygenated blood towards the fetus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "What is the primary function of the partograph or labour care monitoring tool?",
+"choices": [
+{"text": "A. To determine the sex of the fetus", "is_correct": false},
+{"text": "B. To calculate the estimated date of delivery", "is_correct": false},
+{"text": "C. To assess maternal nutritional status", "is_correct": false},
+{"text": "D. To monitor labour progress and maternal and fetal wellbeing", "is_correct": true}
+],
+"rationale": "Labour monitoring tools support systematic assessment of cervical dilatation, fetal condition, uterine activity and maternal observations. They help identify abnormal progress or complications requiring timely intervention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "What is the term used to describe the period beginning immediately after childbirth and extending approximately six weeks?",
+"choices": [
+{"text": "A. Antenatal period", "is_correct": false},
+{"text": "B. Intrapartum period", "is_correct": false},
+{"text": "C. Puerperium", "is_correct": true},
+{"text": "D. Embryonic period", "is_correct": false}
+],
+"rationale": "The puerperium is the period following childbirth during which the mother's reproductive organs and physiological systems undergo changes towards the non-pregnant state. It is commonly considered to extend for approximately six weeks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "Which hormone is primarily responsible for milk production in the mammary glands?",
+"choices": [
+{"text": "A. Oxytocin", "is_correct": false},
+{"text": "B. Prolactin", "is_correct": true},
+{"text": "C. Progesterone", "is_correct": false},
+{"text": "D. Human chorionic gonadotrophin", "is_correct": false}
+],
+"rationale": "Prolactin stimulates milk synthesis in the mammary glands after childbirth. Oxytocin, in contrast, is responsible for milk ejection or the let-down reflex.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Which clinical feature is characteristic of pre-eclampsia?",
+"choices": [
+{"text": "A. Hypertension developing after 20 weeks of pregnancy with proteinuria or other evidence of maternal organ dysfunction", "is_correct": true},
+{"text": "B. Hypotension occurring during the first trimester", "is_correct": false},
+{"text": "C. Persistent hypoglycaemia without hypertension", "is_correct": false},
+{"text": "D. Fever and vaginal discharge during pregnancy", "is_correct": false}
+],
+"rationale": "Pre-eclampsia is a hypertensive disorder that develops after 20 weeks of pregnancy and is associated with proteinuria and/or evidence of maternal organ dysfunction. Proteinuria is not essential when other diagnostic features of organ dysfunction are present.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "What distinguishes eclampsia from pre-eclampsia?",
+"choices": [
+{"text": "A. Presence of mild ankle oedema", "is_correct": false},
+{"text": "B. Presence of proteinuria alone", "is_correct": false},
+{"text": "C. Development of seizures in a woman with pre-eclampsia, not explained by another cause", "is_correct": true},
+{"text": "D. Development of nausea during early pregnancy", "is_correct": false}
+],
+"rationale": "Eclampsia is characterised by new-onset generalised seizures in a woman with pre-eclampsia when another cause does not explain the seizures. It is a life-threatening obstetric emergency requiring immediate management.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "Which of the following is the most common cause of primary postpartum haemorrhage?",
+"choices": [
+{"text": "A. Retained urine", "is_correct": false},
+{"text": "B. Uterine atony", "is_correct": true},
+{"text": "C. Breast engorgement", "is_correct": false},
+{"text": "D. Postpartum depression", "is_correct": false}
+],
+"rationale": "Uterine atony occurs when the uterus fails to contract effectively after childbirth, allowing continued bleeding from the placental implantation site. It is the most common cause of primary postpartum haemorrhage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "A pregnant woman attending a CHPS compound at 30 weeks of gestation complains of severe headache and blurred vision. Her blood pressure is 170/115 mmHg. What is the nurse's priority action?",
+"choices": [
+{"text": "A. Advise her to rest at home and return in one week", "is_correct": false},
+{"text": "B. Give routine nutritional counselling and discharge her", "is_correct": false},
+{"text": "C. Encourage oral fluids and ask her to monitor the headache", "is_correct": false},
+{"text": "D. Arrange urgent referral to an appropriate facility for assessment and management of severe hypertension in pregnancy", "is_correct": true}
+],
+"rationale": "Severe hypertension accompanied by headache and visual disturbance suggests severe pre-eclampsia and possible imminent eclampsia. Urgent referral, stabilisation and appropriate management are essential to reduce maternal and fetal complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "A pregnant woman at 28 weeks' gestation attends antenatal clinic and reports reduced fetal movements compared with her usual pattern. What should the midwife do?",
+"choices": [
+{"text": "A. Reassure her that reduced fetal movement is always normal in late pregnancy", "is_correct": false},
+{"text": "B. Advise her to wait until her next scheduled appointment", "is_correct": false},
+{"text": "C. Arrange prompt assessment of fetal wellbeing according to the facility's protocol", "is_correct": true},
+{"text": "D. Recommend vigorous exercise to stimulate fetal movement", "is_correct": false}
+],
+"rationale": "A reduction in fetal movements may indicate fetal compromise and requires prompt assessment. The midwife should arrange appropriate fetal evaluation rather than dismissing the complaint or delaying review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "A pregnant woman at 24 weeks' gestation has a haemoglobin concentration of 8.5 g/dL. Which nursing action is most appropriate?",
+"choices": [
+{"text": "A. Assess for symptoms and possible causes of anaemia, report the result and support appropriate treatment and follow-up", "is_correct": true},
+{"text": "B. Reassure her that anaemia is expected and requires no intervention", "is_correct": false},
+{"text": "C. Advise her to stop all iron-containing foods", "is_correct": false},
+{"text": "D. Recommend that she discontinue antenatal care until delivery", "is_correct": false}
+],
+"rationale": "A haemoglobin concentration of 8.5 g/dL indicates significant anaemia in pregnancy and requires clinical assessment. The nurse should support investigation of the cause, appropriate treatment, nutritional counselling and follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "A pregnant woman attending a district hospital is found to have a positive malaria test and fever. What is the most appropriate nursing action?",
+"choices": [
+{"text": "A. Advise her to use leftover antimalarial medication at home", "is_correct": false},
+{"text": "B. Arrange assessment and treatment using the recommended pregnancy-appropriate malaria management protocol", "is_correct": true},
+{"text": "C. Delay treatment until after delivery", "is_correct": false},
+{"text": "D. Give any available antimalarial drug without checking gestational age or the treatment guideline", "is_correct": false}
+],
+"rationale": "Malaria during pregnancy can cause maternal anaemia, severe illness and adverse fetal outcomes. Treatment should follow current national guidance and take account of gestational age, disease severity and the recommended antimalarial regimen.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "A woman attending her first antenatal visit is uncertain of the date of her last menstrual period. Which investigation can help establish gestational age more accurately, particularly in early pregnancy?",
+"choices": [
+{"text": "A. Urine microscopy", "is_correct": false},
+{"text": "B. Random blood glucose", "is_correct": false},
+{"text": "C. Chest radiography", "is_correct": false},
+{"text": "D. Obstetric ultrasonography", "is_correct": true}
+],
+"rationale": "Ultrasonography, particularly in the first trimester, provides a reliable method of estimating gestational age. It is useful when the menstrual history is uncertain or unreliable.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in active labour is admitted to a district hospital. Her fetal heart rate is 100 beats per minute on repeated assessment. What should the midwife do first?",
+"choices": [
+{"text": "A. Document the finding and wait for the next routine assessment", "is_correct": false},
+{"text": "B. Encourage the woman to begin pushing immediately", "is_correct": false},
+{"text": "C. Urgently reassess the fetal heart rate, assess the maternal and labour condition, and initiate appropriate escalation", "is_correct": true},
+{"text": "D. Discharge the woman because the fetal heart rate is low", "is_correct": false}
+],
+"rationale": "A persistent fetal heart rate of 100 beats per minute is below the usual normal baseline range and may indicate fetal bradycardia. Immediate reassessment and escalation are required to identify and manage possible fetal compromise.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in labour has a fully dilated cervix and the fetal head is visible at the vaginal opening. Which action is most appropriate?",
+"choices": [
+{"text": "A. Prepare for birth, support effective maternal pushing and monitor fetal and maternal wellbeing", "is_correct": true},
+{"text": "B. Encourage the woman to walk around the ward", "is_correct": false},
+{"text": "C. Perform routine artificial rupture of membranes regardless of the clinical situation", "is_correct": false},
+{"text": "D. Ask the woman to suppress all contractions until the doctor arrives", "is_correct": false}
+],
+"rationale": "The findings indicate that birth is imminent during the second stage of labour. The midwife should prepare for safe delivery, support the woman and continue monitoring maternal and fetal condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "During labour, a woman's membranes rupture and the midwife observes thick meconium-stained amniotic fluid. What is the most appropriate action?",
+"choices": [
+{"text": "A. Ignore the finding because meconium is always normal", "is_correct": false},
+{"text": "B. Assess fetal wellbeing promptly and ensure appropriate skilled newborn resuscitation support is available", "is_correct": true},
+{"text": "C. Perform routine deep suctioning of the newborn before assessing breathing", "is_correct": false},
+{"text": "D. Immediately discharge the woman if contractions are regular", "is_correct": false}
+],
+"rationale": "Meconium-stained liquor, particularly when thick, requires assessment because it may be associated with fetal compromise and risk of meconium aspiration. The birth team should prepare for appropriate newborn assessment and resuscitation, without routine suctioning of a vigorous newborn.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in labour reports an intense urge to push, but vaginal examination shows that the cervix is only 6 cm dilated. What should the midwife advise?",
+"choices": [
+{"text": "A. Encourage immediate forceful pushing", "is_correct": false},
+{"text": "B. Perform fundal pressure to accelerate cervical dilatation", "is_correct": false},
+{"text": "C. Explain that the cervix is not fully dilated, provide support and use appropriate measures to avoid premature pushing", "is_correct": true},
+{"text": "D. Request that the woman stand continuously until the cervix is fully dilated", "is_correct": false}
+],
+"rationale": "The second stage of labour begins at full cervical dilatation, so active pushing before this point may contribute to cervical oedema and maternal exhaustion. The midwife should assess the cause of the urge to push, support the woman and monitor labour progress.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "Immediately after delivery, a newborn is not breathing and has poor muscle tone. What should the midwife do?",
+"choices": [
+{"text": "A. Delay all action until the placenta is delivered", "is_correct": false},
+{"text": "B. Give the newborn oral glucose solution", "is_correct": false},
+{"text": "C. Place the newborn on the mother's abdomen and wait for spontaneous breathing without assessment", "is_correct": false},
+{"text": "D. Initiate immediate newborn assessment and resuscitation according to neonatal resuscitation guidelines", "is_correct": true}
+],
+"rationale": "A newborn who is not breathing and has poor tone requires immediate resuscitation. Effective initial steps and prompt ventilation when indicated are critical to establishing breathing and preventing hypoxic injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman has delivered a healthy baby, and the placenta has not yet been delivered. Which intervention is part of active management of the third stage of labour?",
+"choices": [
+{"text": "A. Administration of a prophylactic uterotonic, usually oxytocin, according to protocol", "is_correct": true},
+{"text": "B. Routine manual removal of the placenta", "is_correct": false},
+{"text": "C. Immediate fundal pressure to force placental separation", "is_correct": false},
+{"text": "D. Withholding all uterotonic medication until heavy bleeding begins", "is_correct": false}
+],
+"rationale": "Administration of a prophylactic uterotonic, commonly oxytocin, is a key component of active management of the third stage of labour. It promotes uterine contraction and reduces the risk of postpartum haemorrhage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman undergoing labour has strong, frequent uterine contractions with inadequate relaxation between contractions. What complication should the midwife suspect?",
+"choices": [
+{"text": "A. Normal uterine activity in every stage of labour", "is_correct": false},
+{"text": "B. Uterine tachysystole", "is_correct": true},
+{"text": "C. Postpartum uterine involution", "is_correct": false},
+{"text": "D. Normal fetal descent", "is_correct": false}
+],
+"rationale": "Uterine tachysystole refers to excessive uterine contraction frequency and may compromise fetal oxygenation by reducing the time available for uteroplacental blood flow between contractions. The midwife should assess fetal wellbeing and review any uterotonic medication being administered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A woman who delivered two hours ago has a soft, enlarged uterus and heavy vaginal bleeding. What should the midwife do first?",
+"choices": [
+{"text": "A. Encourage the woman to sleep", "is_correct": false},
+{"text": "B. Wait until the next routine postpartum observation", "is_correct": false},
+{"text": "C. Initiate emergency postpartum haemorrhage management, including uterine massage and calling for assistance", "is_correct": true},
+{"text": "D. Give routine discharge education", "is_correct": false}
+],
+"rationale": "A boggy uterus with heavy bleeding strongly suggests uterine atony causing postpartum haemorrhage. Immediate action is required, including uterine massage, summoning help and activating the facility's haemorrhage response protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A mother who delivered vaginally six hours ago has a temperature of 38.5°C, uterine tenderness and offensive-smelling lochia. What should the midwife suspect?",
+"choices": [
+{"text": "A. Normal uterine involution", "is_correct": false},
+{"text": "B. Physiological breast engorgement", "is_correct": false},
+{"text": "C. Normal postpartum diuresis", "is_correct": false},
+{"text": "D. Puerperal infection, including possible endometritis", "is_correct": true}
+],
+"rationale": "Fever, uterine tenderness and offensive lochia are concerning features of postpartum genital tract infection, including endometritis. Prompt clinical assessment and appropriate antimicrobial management are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A mother complains that her nipples are painful during breastfeeding. On observation, the newborn is attached only to the nipple. What should the midwife do?",
+"choices": [
+{"text": "A. Assist the mother to reposition the baby and achieve a deep latch with adequate attachment", "is_correct": true},
+{"text": "B. Advise her to stop breastfeeding permanently", "is_correct": false},
+{"text": "C. Recommend giving water before every breastfeed", "is_correct": false},
+{"text": "D. Tell her that nipple pain is unavoidable and requires no attention", "is_correct": false}
+],
+"rationale": "Poor attachment can cause nipple trauma, pain and ineffective milk transfer. Correct positioning and a deep latch help improve breastfeeding effectiveness and maternal comfort.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A mother who delivered yesterday asks when breastfeeding should begin. Which advice is most appropriate?",
+"choices": [
+{"text": "A. Breastfeeding should begin only after the newborn is 24 hours old", "is_correct": false},
+{"text": "B. Initiate breastfeeding as soon as possible after birth, preferably within the first hour when mother and baby are stable", "is_correct": true},
+{"text": "C. Give glucose water before the first breastfeed", "is_correct": false},
+{"text": "D. Delay breastfeeding until the mother's breast milk becomes abundant", "is_correct": false}
+],
+"rationale": "Early initiation of breastfeeding, preferably within the first hour after birth, supports successful breastfeeding and provides colostrum. Colostrum contains protective immune factors and important nutrients for the newborn.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A postpartum woman reports calf pain and unilateral leg swelling three days after delivery. What should the midwife do?",
+"choices": [
+{"text": "A. Massage the affected leg to improve circulation", "is_correct": false},
+{"text": "B. Encourage vigorous walking without further assessment", "is_correct": false},
+{"text": "C. Suspect possible deep vein thrombosis and arrange urgent medical assessment", "is_correct": true},
+{"text": "D. Reassure her that unilateral swelling is always normal after childbirth", "is_correct": false}
+],
+"rationale": "Unilateral leg swelling and calf pain in the postpartum period may indicate deep vein thrombosis. The woman requires urgent assessment because thromboembolism can progress to a potentially fatal pulmonary embolism.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A mother asks how to care for her perineum after an uncomplicated vaginal birth. Which advice is most appropriate?",
+"choices": [
+{"text": "A. Avoid washing the perineal area until the stitches are removed", "is_correct": false},
+{"text": "B. Clean the area from back to front after passing urine or stool", "is_correct": false},
+{"text": "C. Apply unprescribed antiseptic chemicals directly to the wound", "is_correct": false},
+{"text": "D. Maintain perineal hygiene, change sanitary pads regularly and clean from front to back", "is_correct": true}
+],
+"rationale": "Good perineal hygiene reduces contamination and supports wound healing. Cleaning from front to back and changing sanitary pads regularly help reduce the transfer of microorganisms from the anal area.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A woman at 34 weeks' gestation is admitted with severe pre-eclampsia. Which medication is commonly used to prevent or treat eclamptic seizures?",
+"choices": [
+{"text": "A. Magnesium sulphate", "is_correct": true},
+{"text": "B. Oxytocin", "is_correct": false},
+{"text": "C. Ferrous sulphate", "is_correct": false},
+{"text": "D. Misoprostol", "is_correct": false}
+],
+"rationale": "Magnesium sulphate is the recommended anticonvulsant for preventing and treating eclamptic seizures in appropriate clinical circumstances. Its administration requires monitoring for toxicity, including respiratory depression and reduced deep tendon reflexes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A woman receiving magnesium sulphate for severe pre-eclampsia has a respiratory rate of 9 breaths per minute and absent patellar reflexes. What should the midwife do?",
+"choices": [
+{"text": "A. Increase the magnesium sulphate infusion rate", "is_correct": false},
+{"text": "B. Stop magnesium sulphate administration, call for urgent assistance and prepare to administer calcium gluconate according to protocol", "is_correct": true},
+{"text": "C. Encourage the woman to walk around the ward", "is_correct": false},
+{"text": "D. Administer an additional dose of magnesium sulphate", "is_correct": false}
+],
+"rationale": "Respiratory depression and absent deep tendon reflexes are important signs of magnesium sulphate toxicity. The infusion should be stopped, urgent assistance obtained and the antidote, calcium gluconate, administered according to the appropriate protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A pregnant woman with severe pre-eclampsia develops a generalised tonic-clonic seizure. Which action should the midwife take first?",
+"choices": [
+{"text": "A. Restrain the woman's limbs firmly to stop the movements", "is_correct": false},
+{"text": "B. Insert a hard object into her mouth to prevent tongue biting", "is_correct": false},
+{"text": "C. Protect her from injury, position her to support airway safety and summon emergency assistance", "is_correct": true},
+{"text": "D. Give oral antihypertensive medication during the seizure", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, the immediate priorities are maternal safety, airway protection and emergency assistance. The nurse should not restrain the woman or insert objects into her mouth, and definitive management should follow the eclampsia protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops heavy bleeding immediately after delivery. Her uterus is firm and well contracted, but blood continues to flow. Which cause should the midwife particularly suspect?",
+"choices": [
+{"text": "A. Uterine atony", "is_correct": false},
+{"text": "B. Breast engorgement", "is_correct": false},
+{"text": "C. Delayed uterine involution", "is_correct": false},
+{"text": "D. Genital tract trauma, such as a cervical or vaginal laceration", "is_correct": true}
+],
+"rationale": "Persistent bleeding despite a firm, contracted uterus suggests a cause other than uterine atony, particularly genital tract trauma. The woman requires urgent assessment, identification of the bleeding site and appropriate intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops postpartum haemorrhage due to uterine atony. Which action is an appropriate immediate component of management?",
+"choices": [
+{"text": "A. Call for assistance, assess the woman's condition, initiate uterine massage and administer appropriate uterotonics according to protocol", "is_correct": true},
+{"text": "B. Leave the woman alone while preparing routine discharge documents", "is_correct": false},
+{"text": "C. Encourage the woman to stand and walk", "is_correct": false},
+{"text": "D. Delay intervention until the haemoglobin result is available", "is_correct": false}
+],
+"rationale": "Uterine atony requires immediate coordinated management to control bleeding and prevent hypovolaemic shock. The response includes calling for help, uterine massage, appropriate uterotonics, resuscitation and investigation of other causes of bleeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "During labour, the umbilical cord is seen protruding through the vaginal opening before the birth of the baby. What is the most appropriate immediate action?",
+"choices": [
+{"text": "A. Push the cord back into the uterus", "is_correct": false},
+{"text": "B. Apply fundal pressure to accelerate delivery", "is_correct": false},
+{"text": "C. Call for urgent help, relieve pressure on the cord by elevating the presenting part and arrange emergency delivery", "is_correct": true},
+{"text": "D. Ask the woman to walk to the operating theatre", "is_correct": false}
+],
+"rationale": "A visible prolapsed umbilical cord is an obstetric emergency because compression can interrupt fetal blood flow and oxygen supply. The presenting part should be lifted off the cord, emergency assistance summoned and urgent delivery arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman in labour suddenly develops severe abdominal pain, vaginal bleeding and signs of maternal shock. The fetal heart rate is difficult to detect. Which complication should the midwife suspect?",
+"choices": [
+{"text": "A. Normal labour discomfort", "is_correct": false},
+{"text": "B. Placental abruption", "is_correct": true},
+{"text": "C. Physiological cervical dilatation", "is_correct": false},
+{"text": "D. Breast engorgement", "is_correct": false}
+],
+"rationale": "Placental abruption involves premature separation of the placenta from the uterine wall and may cause abdominal pain, vaginal bleeding and fetal compromise. Severe cases can produce concealed haemorrhage and maternal shock, requiring immediate emergency management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A woman two weeks after delivery reports persistent sadness, loss of interest, poor sleep even when the baby is sleeping and feelings of worthlessness. What should the midwife do?",
+"choices": [
+{"text": "A. Dismiss the symptoms as normal motherhood experiences", "is_correct": false},
+{"text": "B. Advise her to stop breastfeeding immediately", "is_correct": false},
+{"text": "C. Tell her that these feelings will always disappear without support", "is_correct": false},
+{"text": "D. Assess for postpartum depression and arrange appropriate mental health support and referral", "is_correct": true}
+],
+"rationale": "Persistent low mood, loss of interest and feelings of worthlessness may indicate postpartum depression rather than transient postpartum blues. Early assessment and appropriate support are important for the mother's wellbeing and the health of the infant.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A postpartum woman tells the midwife that she is hearing voices instructing her to harm her newborn. What is the most appropriate action?",
+"choices": [
+{"text": "A. Leave her alone with the newborn to encourage bonding", "is_correct": false},
+{"text": "B. Reassure her that hearing voices is a normal part of motherhood", "is_correct": false},
+{"text": "C. Ensure immediate safety of the mother and baby, obtain urgent psychiatric assessment and arrange emergency management", "is_correct": true},
+{"text": "D. Advise her to avoid discussing the voices with anyone", "is_correct": false}
+],
+"rationale": "Hallucinations involving harm to the infant may indicate postpartum psychosis, a psychiatric emergency associated with serious risk. The mother and newborn require immediate safety measures and urgent specialist assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "A pregnant woman at 32 weeks' gestation attends a district hospital with painless, bright-red vaginal bleeding. Her vital signs are currently stable. Which condition should be suspected?",
+"choices": [
+{"text": "A. Placenta praevia", "is_correct": true},
+{"text": "B. Placental abruption", "is_correct": false},
+{"text": "C. Uterine rupture", "is_correct": false},
+{"text": "D. Ectopic pregnancy", "is_correct": false}
+],
+"rationale": "Placenta praevia commonly presents with painless, bright-red vaginal bleeding in the second half of pregnancy. Digital vaginal examination should be avoided until placenta praevia has been excluded by appropriate assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A mother delivered a healthy newborn 30 minutes ago. The midwife observes that the uterus is firm and centrally located, and the vaginal bleeding is within expected limits. Which additional assessment is particularly important during the immediate postpartum period?",
+"choices": [
+{"text": "A. Assessment of the mother's hair growth", "is_correct": false},
+{"text": "B. Assessment of maternal vital signs, uterine tone, vaginal bleeding and bladder status", "is_correct": true},
+{"text": "C. Assessment of the mother's ability to return to work", "is_correct": false},
+{"text": "D. Assessment of the baby's future school performance", "is_correct": false}
+],
+"rationale": "The immediate postpartum period requires close monitoring for haemorrhage, haemodynamic instability and urinary retention. Assessment of vital signs, uterine tone, lochia and bladder status helps identify complications early.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in labour has a history of one previous caesarean section and is being considered for vaginal birth after caesarean. Which finding requires the most urgent attention?",
+"choices": [
+{"text": "A. Mild thirst during labour", "is_correct": false},
+{"text": "B. Desire for a different birthing position", "is_correct": false},
+{"text": "C. Mild nausea without other symptoms", "is_correct": false},
+{"text": "D. Sudden severe abdominal pain, maternal instability and abnormal fetal heart rate", "is_correct": true}
+],
+"rationale": "Sudden severe abdominal pain, maternal instability and fetal heart rate abnormalities in a woman with a previous uterine scar raise concern for uterine rupture. This is a life-threatening emergency requiring immediate escalation and urgent obstetric intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A woman at 35 weeks' gestation has blood pressure of 168/112 mmHg, severe headache and right upper quadrant pain. Her urine dipstick shows no proteinuria. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A. Pre-eclampsia is excluded because proteinuria is absent", "is_correct": false},
+{"text": "B. The woman has normal physiological changes of pregnancy", "is_correct": false},
+{"text": "C. Severe pre-eclampsia remains a major concern because severe hypertension and symptoms of organ involvement may establish the diagnosis without proteinuria", "is_correct": true},
+{"text": "D. The findings are diagnostic of gestational diabetes", "is_correct": false}
+],
+"rationale": "Proteinuria is not required for the diagnosis of pre-eclampsia when new hypertension is accompanied by other evidence of maternal organ dysfunction. Severe hypertension with headache and right upper quadrant pain requires urgent assessment and management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman has lost a large volume of blood after delivery. She is pale, restless, tachycardic and hypotensive. Her uterus is firm, and examination reveals a deep vaginal laceration. Which interpretation best explains the clinical condition?",
+"choices": [
+{"text": "A. Uterine atony is the only possible cause of the bleeding", "is_correct": false},
+{"text": "B. Genital tract trauma has caused haemorrhage and probable hypovolaemic shock", "is_correct": true},
+{"text": "C. The woman is experiencing normal postpartum physiological changes", "is_correct": false},
+{"text": "D. The symptoms are most consistent with postpartum depression", "is_correct": false}
+],
+"rationale": "A firm uterus with ongoing bleeding and a visible laceration indicates traumatic postpartum haemorrhage. Tachycardia, hypotension, pallor and restlessness suggest significant blood loss and hypovolaemic shock requiring urgent resuscitation and haemorrhage control.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "During delivery of the fetal head, the head retracts against the perineum and the shoulders fail to deliver with normal gentle traction. Which complication should the midwife suspect?",
+"choices": [
+{"text": "A. Shoulder dystocia", "is_correct": true},
+{"text": "B. Placenta praevia", "is_correct": false},
+{"text": "C. Uterine atony", "is_correct": false},
+{"text": "D. Cord prolapse", "is_correct": false}
+],
+"rationale": "Retraction of the delivered head against the perineum, commonly called the turtle sign, is characteristic of shoulder dystocia. This emergency requires immediate recognition and performance of appropriate manoeuvres, such as the McRoberts manoeuvre and suprapubic pressure, by trained personnel.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman with a history of previous caesarean section develops sudden severe abdominal pain during labour. Her contractions stop, the presenting part moves upwards and fetal bradycardia develops. What is the most likely diagnosis?",
+"choices": [
+{"text": "A. Normal transition phase of labour", "is_correct": false},
+{"text": "B. Uncomplicated uterine contractions", "is_correct": false},
+{"text": "C. Uterine rupture", "is_correct": true},
+{"text": "D. Physiological postpartum involution", "is_correct": false}
+],
+"rationale": "Sudden abdominal pain, cessation of contractions, loss of fetal station and fetal bradycardia are concerning features of uterine rupture. The woman requires immediate resuscitation and emergency obstetric intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in labour has a fetal heart rate of 170 beats per minute, maternal temperature of 39°C and foul-smelling amniotic fluid. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A. The findings are normal features of the second stage of labour", "is_correct": false},
+{"text": "B. The findings suggest possible intra-amniotic infection with maternal fever and fetal tachycardia", "is_correct": true},
+{"text": "C. The woman is experiencing uncomplicated postpartum recovery", "is_correct": false},
+{"text": "D. The findings confirm that the fetus has congenital heart disease", "is_correct": false}
+],
+"rationale": "Maternal fever, foul-smelling amniotic fluid and fetal tachycardia raise concern for intra-amniotic infection. Prompt clinical assessment, appropriate antimicrobial treatment and ongoing maternal and fetal monitoring are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A woman on the third day after delivery has heavy vaginal bleeding, fever and an enlarged, poorly contracted uterus. Which explanation is most likely?",
+"choices": [
+{"text": "A. Normal lochia rubra", "is_correct": false},
+{"text": "B. Normal uterine involution", "is_correct": false},
+{"text": "C. Physiological breast engorgement", "is_correct": false},
+{"text": "D. Secondary postpartum haemorrhage possibly associated with retained products of conception or uterine infection", "is_correct": true}
+],
+"rationale": "Heavy bleeding occurring after the first 24 hours and within the subsequent postpartum period may represent secondary postpartum haemorrhage. Fever and an enlarged, poorly contracted uterus raise concern for retained products of conception and/or infection.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A woman ten days after childbirth reports feeling overwhelmed and tearful at times but continues to enjoy her baby, sleeps when given the opportunity and denies hopelessness or thoughts of self-harm. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A. She definitely has postpartum psychosis", "is_correct": false},
+{"text": "B. She has severe postpartum depression requiring compulsory admission", "is_correct": false},
+{"text": "C. She may be experiencing postpartum blues, but should be supported and monitored for persistent or worsening symptoms", "is_correct": true},
+{"text": "D. Her symptoms prove that she is unable to care for her baby", "is_correct": false}
+],
+"rationale": "Postpartum blues commonly involve mild tearfulness and emotional changes during the first days after childbirth and usually resolve within approximately two weeks. The midwife should provide reassurance and support while assessing for symptoms that persist, worsen or suggest a more serious mental health condition.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Antenatal Care",
+"question_text": "A pregnant woman at 36 weeks' gestation presents with severe headache, visual disturbances, epigastric pain and blood pressure of 175/115 mmHg. While the midwife arranges emergency management, which potential complication is of greatest immediate concern?",
+"choices": [
+{"text": "A. Development of mild morning sickness", "is_correct": false},
+{"text": "B. Development of physiological breast changes", "is_correct": false},
+{"text": "C. Development of normal fetal movements", "is_correct": false},
+{"text": "D. Eclamptic seizure and other life-threatening maternal complications", "is_correct": true}
+],
+"rationale": "The findings indicate severe pre-eclampsia with features suggesting significant maternal organ involvement and risk of progression to eclampsia. The woman requires urgent stabilisation, seizure prophylaxis where indicated, blood pressure management and obstetric assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops postpartum haemorrhage after delivery. The uterus remains boggy despite initial uterine massage and appropriate uterotonic administration. What should the obstetric team do next?",
+"choices": [
+{"text": "A. Continue routine observation without reassessment", "is_correct": false},
+{"text": "B. Escalate the haemorrhage response, continue resuscitation and urgently assess for retained tissue, trauma and other causes while preparing further interventions", "is_correct": true},
+{"text": "C. Discharge the woman because uterotonics have already been administered", "is_correct": false},
+{"text": "D. Give oral fluids only and postpone further treatment", "is_correct": false}
+],
+"rationale": "Persistent uterine atony and bleeding despite initial measures indicate ongoing postpartum haemorrhage requiring escalation. The team should continue resuscitation, reassess the four major causes of haemorrhage and proceed with additional medical or procedural interventions as appropriate.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in established labour has cervical dilatation that is progressing very slowly, increasing caput formation and failure of the fetal head to descend despite adequate contractions. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A. The findings confirm normal labour progress", "is_correct": false},
+{"text": "B. The woman is necessarily in the third stage of labour", "is_correct": false},
+{"text": "C. The findings suggest possible obstructed labour or cephalopelvic disproportion and require urgent obstetric assessment", "is_correct": true},
+{"text": "D. The woman should be encouraged to push forcefully before full dilatation", "is_correct": false}
+],
+"rationale": "Poor cervical progress, increasing caput and failure of descent despite adequate contractions raise concern for mechanical obstruction or cephalopelvic disproportion. Continuing labour without appropriate assessment and intervention can result in serious maternal and fetal complications.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A woman who delivered 24 hours ago becomes suddenly breathless and complains of sharp chest pain. She is tachycardic and has a low oxygen saturation. What is the most likely life-threatening diagnosis?",
+"choices": [
+{"text": "A. Pulmonary embolism", "is_correct": true},
+{"text": "B. Normal postpartum uterine involution", "is_correct": false},
+{"text": "C. Physiological postpartum diuresis", "is_correct": false},
+{"text": "D. Uncomplicated breast engorgement", "is_correct": false}
+],
+"rationale": "Sudden breathlessness, pleuritic chest pain, tachycardia and hypoxaemia in the postpartum period are concerning for pulmonary embolism. This is a medical emergency requiring immediate escalation, oxygenation support as indicated and urgent diagnostic and therapeutic management.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
