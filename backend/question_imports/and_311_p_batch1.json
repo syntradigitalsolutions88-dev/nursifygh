@@ -1,0 +1,743 @@
+{
+"courses": [
+{
+"course_code": "AND-311-P",
+"course_title": "Advanced Nursing III",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Psychiatric Assessment",
+"Mental Status Examination",
+"Suicide, Violence and Self-Harm Risk Assessment",
+"Crisis Intervention",
+"De-escalation Techniques",
+"Restraint and Seclusion",
+"Emergency Psychiatry",
+"Psychiatric Intensive Care",
+"Mental Health Legislation in Ghana"
+],
+"questions": [
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "Which component of the mental status examination assesses a patient's emotional state as described by the patient?",
+"choices": [
+{"text": "Affect", "is_correct": false},
+{"text": "Mood", "is_correct": true},
+{"text": "Thought form", "is_correct": false},
+{"text": "Insight", "is_correct": false}
+],
+"rationale": "Mood refers to the patient's sustained subjective emotional state, usually described in their own words. Affect is the observable expression of emotion during the assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "A patient at Accra Psychiatric Hospital speaks rapidly, changes topics frequently and is difficult to interrupt. Which thought-process abnormality is most likely present?",
+"choices": [
+{"text": "Thought blocking", "is_correct": false},
+{"text": "Flight of ideas", "is_correct": true},
+{"text": "Poverty of thought", "is_correct": false},
+{"text": "Perseveration", "is_correct": false}
+],
+"rationale": "Flight of ideas involves rapid shifts between topics, often with understandable or superficial connections. It is commonly associated with manic episodes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "During an MSE, a patient reports hearing a voice speaking when nobody is present. How should the nurse document this finding?",
+"choices": [
+{"text": "Visual hallucination", "is_correct": false},
+{"text": "Auditory hallucination", "is_correct": true},
+{"text": "Illusion", "is_correct": false},
+{"text": "Delusion of reference", "is_correct": false}
+],
+"rationale": "An auditory hallucination is a perception of sound without an external auditory stimulus. The nurse should assess the voice's content, frequency, distress caused and whether it gives commands.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "Which finding best demonstrates impaired insight in a patient with schizophrenia?",
+"choices": [
+{"text": "The patient correctly identifies the date and location", "is_correct": false},
+{"text": "The patient recognises that the experiences may be symptoms of an illness", "is_correct": false},
+{"text": "The patient firmly denies having any illness despite clear evidence of psychotic symptoms", "is_correct": true},
+{"text": "The patient reports feeling anxious about hospital admission", "is_correct": false}
+],
+"rationale": "Insight refers to a person's awareness and understanding of their illness and its effects. A persistent inability to recognise illness despite significant symptoms may indicate impaired insight.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "Which aspect of the MSE assesses a patient's ability to maintain attention, perform calculations and recall information?",
+"choices": [
+{"text": "Cognition", "is_correct": true},
+{"text": "Affect", "is_correct": false},
+{"text": "Psychomotor activity", "is_correct": false},
+{"text": "Thought content", "is_correct": false}
+],
+"rationale": "Cognitive assessment examines functions such as attention, concentration, memory, orientation and aspects of executive functioning. Findings help identify possible cognitive impairment or altered mental status.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "A patient repeatedly states that television presenters are sending personal messages specifically to him. Which psychopathological symptom does this most strongly suggest?",
+"choices": [
+{"text": "Delusion of reference", "is_correct": true},
+{"text": "Somatic hallucination", "is_correct": false},
+{"text": "Thought withdrawal", "is_correct": false},
+{"text": "Depersonalisation", "is_correct": false}
+],
+"rationale": "A delusion of reference occurs when a person incorrectly believes that ordinary events, comments or media content refer specifically to them. The belief is held with delusional conviction rather than being a simple misunderstanding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "A patient who was previously alert becomes confused, disoriented and unable to sustain attention over a few hours. Which condition should the nurse suspect first?",
+"choices": [
+{"text": "Chronic personality disorder", "is_correct": false},
+{"text": "Delirium", "is_correct": true},
+{"text": "Stable residual schizophrenia", "is_correct": false},
+{"text": "Specific phobia", "is_correct": false}
+],
+"rationale": "Delirium is an acute disturbance in attention and awareness that commonly develops over hours or days. The nurse should urgently assess for medical causes such as infection, metabolic disturbance, medication effects or substance withdrawal.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Psychiatric Assessment",
+"question_text": "Which question is most appropriate when assessing the content of a patient's thought during an MSE?",
+"choices": [
+{"text": "Can you tell me whether you believe anyone is trying to harm you?", "is_correct": true},
+{"text": "What is your current blood pressure?", "is_correct": false},
+{"text": "How many hours did you sleep last night?", "is_correct": false},
+{"text": "Can you repeat the months of the year backwards?", "is_correct": false}
+],
+"rationale": "Thought content assessment explores beliefs, preoccupations, obsessions, delusions and thoughts of self-harm or harm to others. Direct but sensitive questions help identify clinically significant risks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "Which question is most appropriate when assessing a patient for suicide risk?",
+"choices": [
+{"text": "You are not thinking about doing anything harmful, are you?", "is_correct": false},
+{"text": "Have you been thinking about ending your life?", "is_correct": true},
+{"text": "Why would you want to create problems for your family?", "is_correct": false},
+{"text": "You know suicide is wrong, don't you?", "is_correct": false}
+],
+"rationale": "Direct, non-judgemental questioning about suicidal thoughts is an essential part of suicide risk assessment. Asking about suicide does not create suicidal thoughts and allows the nurse to explore intent, plans and access to means.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient tells the psychiatric nurse, 'I have decided to kill myself tonight, and I have already obtained the medication.' What is the nurse's priority action?",
+"choices": [
+{"text": "Encourage the patient to attend the next outpatient appointment", "is_correct": false},
+{"text": "Maintain immediate safety, ensure close observation and urgently alert the clinical team", "is_correct": true},
+{"text": "Ask the patient to promise not to attempt suicide and then leave the room", "is_correct": false},
+{"text": "Allow the patient to remain alone to reduce anxiety", "is_correct": false}
+],
+"rationale": "A specific suicide plan, stated intent and access to means indicate an immediate and potentially life-threatening risk. The nurse must maintain safety, prevent access to the identified means and arrange urgent psychiatric assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "Which factor is particularly important when assessing the immediate risk of violence in a psychiatric patient?",
+"choices": [
+{"text": "The patient's favourite recreational activity", "is_correct": false},
+{"text": "Current threats, escalating agitation, access to weapons and identified targets", "is_correct": true},
+{"text": "The patient's preferred meal", "is_correct": false},
+{"text": "The number of previous hospital visits alone", "is_correct": false}
+],
+"rationale": "Violence risk assessment should consider current behaviour, threats, access to potential weapons, identifiable targets and relevant history. Risk is dynamic and must be reassessed when the patient's condition changes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient with a history of self-harm is found with fresh cuts on the forearm. What should the nurse do first?",
+"choices": [
+{"text": "Complete a detailed psychiatric history before examining the injuries", "is_correct": false},
+{"text": "Assess and manage the physical injuries, including bleeding, while maintaining safety and arranging further risk assessment", "is_correct": true},
+{"text": "Assume the injuries are superficial because the patient has self-harmed before", "is_correct": false},
+{"text": "Discharge the patient if the patient denies suicidal intent", "is_correct": false}
+],
+"rationale": "Immediate physical assessment and treatment take priority because self-inflicted injuries may be medically serious. The nurse must also assess suicidal intent, access to means and ongoing risk rather than assuming that self-harm is non-suicidal.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "Which statement best distinguishes non-suicidal self-injury from a suicide attempt?",
+"choices": [
+{"text": "Non-suicidal self-injury always causes more severe physical injury", "is_correct": false},
+{"text": "Non-suicidal self-injury involves deliberate self-inflicted harm without an intention to die", "is_correct": true},
+{"text": "A suicide attempt occurs only when the person requires surgery", "is_correct": false},
+{"text": "Non-suicidal self-injury does not require clinical assessment", "is_correct": false}
+],
+"rationale": "Non-suicidal self-injury is deliberate self-inflicted injury without suicidal intent, whereas a suicide attempt involves at least some intention to die. Both require careful assessment because intent may be complex and can change over time.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient experiencing persecutory delusions becomes increasingly suspicious and says that a staff member must be attacked before the staff member attacks him. What should the nurse prioritise?",
+"choices": [
+{"text": "Argue with the patient to prove that the belief is false", "is_correct": false},
+{"text": "Assess the immediacy of the threat, protect potential victims and urgently involve the clinical team", "is_correct": true},
+{"text": "Ignore the statement because it is caused by a delusion", "is_correct": false},
+{"text": "Leave the patient alone with the staff member being threatened", "is_correct": false}
+],
+"rationale": "A specific threat linked to a persecutory belief may indicate an immediate risk of violence. The nurse should assess intent, means and target while taking proportionate steps to protect everyone and obtain urgent assistance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "A patient denies suicidal thoughts but recently attempted suicide, has become socially withdrawn and is giving away valued possessions. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The patient is definitely free from suicide risk because suicidal thoughts are denied", "is_correct": false},
+{"text": "The patient's risk remains concerning and requires further comprehensive assessment and safety planning", "is_correct": true},
+{"text": "The patient should be discharged because there is no current verbal threat", "is_correct": false},
+{"text": "Giving away possessions is never relevant to suicide assessment", "is_correct": false}
+],
+"rationale": "A recent suicide attempt and possible preparatory behaviours are significant warning signs even when current ideation is denied. Risk assessment should integrate behaviour, history, mental state, protective factors and available support rather than relying on one answer.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Crisis Intervention",
+"question_text": "What is the primary goal of psychiatric crisis intervention?",
+"choices": [
+{"text": "To provide long-term psychotherapy during the immediate crisis", "is_correct": false},
+{"text": "To reduce immediate distress, restore safety and help the person regain an effective level of functioning", "is_correct": true},
+{"text": "To punish the patient for inappropriate behaviour", "is_correct": false},
+{"text": "To avoid involving family or support systems under all circumstances", "is_correct": false}
+],
+"rationale": "Crisis intervention focuses on immediate stabilisation, safety and restoration of coping. It also identifies support systems and appropriate follow-up needs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Crisis Intervention",
+"question_text": "A patient receives news of a spouse's sudden death and begins hyperventilating, crying and expressing an inability to cope. What should the nurse do initially?",
+"choices": [
+{"text": "Provide a lengthy explanation of the stages of grief", "is_correct": false},
+{"text": "Remain with the patient, establish a calm environment and assess immediate safety and physical needs", "is_correct": true},
+{"text": "Tell the patient to stop crying and accept the situation", "is_correct": false},
+{"text": "Leave the patient alone until the emotional reaction stops", "is_correct": false}
+],
+"rationale": "The initial response to an acute emotional crisis is to provide safety, calm support and assessment of immediate needs. Detailed counselling can follow when the patient is sufficiently settled.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Crisis Intervention",
+"question_text": "A young adult is brought to a psychiatric unit after taking an unknown quantity of tablets following a family dispute. Which action has the highest priority?",
+"choices": [
+{"text": "Obtain a detailed account of the family dispute", "is_correct": false},
+{"text": "Arrange immediate medical assessment and stabilisation for possible poisoning", "is_correct": true},
+{"text": "Begin family counselling before physical assessment", "is_correct": false},
+{"text": "Ask the patient to write a statement explaining the incident", "is_correct": false}
+],
+"rationale": "An overdose is a medical emergency regardless of the apparent motivation or the patient's current symptoms. Airway, breathing and circulation assessment, identification of the substance where possible and urgent medical management take priority.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Crisis Intervention",
+"question_text": "Which intervention is most appropriate during the initial phase of a crisis involving severe emotional distress?",
+"choices": [
+{"text": "Encourage the person to discuss every childhood experience immediately", "is_correct": false},
+{"text": "Identify the immediate problem, assess safety and support practical short-term coping", "is_correct": true},
+{"text": "Make major life decisions on behalf of the person", "is_correct": false},
+{"text": "Avoid discussing the crisis because this may increase distress", "is_correct": false}
+],
+"rationale": "Early crisis intervention focuses on the immediate precipitating event, safety and practical coping strategies. Extensive exploration of unrelated past experiences is not the priority during acute stabilisation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Crisis Intervention",
+"question_text": "A patient at Pantang Psychiatric Hospital is extremely distressed after learning that a family member will not visit. The patient begins threatening self-harm. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Tell the patient that threats will not change the visiting arrangements", "is_correct": false},
+{"text": "Assess immediate self-harm risk, maintain safety and provide calm emotional support while involving the clinical team", "is_correct": true},
+{"text": "Promise that the family member will visit the following day", "is_correct": false},
+{"text": "Ignore the threat unless the patient actually causes an injury", "is_correct": false}
+],
+"rationale": "Threats of self-harm require prompt assessment and should never be dismissed as attention-seeking. The nurse should address immediate safety while providing support and communicating with the multidisciplinary team.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "De-escalation Techniques",
+"question_text": "Which nursing behaviour is most likely to promote successful verbal de-escalation?",
+"choices": [
+{"text": "Speaking loudly to demonstrate authority", "is_correct": false},
+{"text": "Using a calm tone, respectful language and non-threatening body posture", "is_correct": true},
+{"text": "Standing very close to the patient while maintaining intense eye contact", "is_correct": false},
+{"text": "Issuing several instructions at the same time", "is_correct": false}
+],
+"rationale": "A calm voice, non-threatening posture and respectful communication can reduce perceived threat and emotional arousal. The nurse should maintain appropriate personal space and avoid confrontational behaviour.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "De-escalation Techniques",
+"question_text": "A patient in the psychiatric ward begins shouting, pacing and clenching both fists. What should the nurse do first?",
+"choices": [
+{"text": "Approach rapidly and attempt to hold the patient's arms", "is_correct": false},
+{"text": "Maintain a safe distance, use calm communication and summon assistance according to the unit's safety procedure", "is_correct": true},
+{"text": "Challenge the patient to explain the behaviour in front of other patients", "is_correct": false},
+{"text": "Block the patient's exit and stand directly in front of the door", "is_correct": false}
+],
+"rationale": "Pacing, shouting and clenched fists may indicate escalating agitation and potential violence. The nurse should prioritise safety, use early de-escalation and ensure that trained assistance is available.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "De-escalation Techniques",
+"question_text": "A patient becomes angry because staff have refused an immediate request for discharge. Which response is most therapeutic?",
+"choices": [
+{"text": "You have no right to be angry because we know what is best for you", "is_correct": false},
+{"text": "I can see that you are upset. Let us discuss what is worrying you about staying here", "is_correct": true},
+{"text": "If you continue shouting, you will be punished", "is_correct": false},
+{"text": "Your anger is unreasonable, so I will not speak with you", "is_correct": false}
+],
+"rationale": "Acknowledging the patient's feelings without agreeing to inappropriate demands can reduce defensiveness. The response also invites discussion of the underlying concern and supports collaborative problem-solving.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "De-escalation Techniques",
+"question_text": "Which action should the nurse avoid when attempting to de-escalate an agitated patient?",
+"choices": [
+{"text": "Offering simple choices where clinically appropriate", "is_correct": false},
+{"text": "Reducing unnecessary noise and the number of people around the patient", "is_correct": false},
+{"text": "Arguing with the patient about delusional beliefs", "is_correct": true},
+{"text": "Allowing the patient time to respond to questions", "is_correct": false}
+],
+"rationale": "Arguing about delusions can increase distress and confrontation without changing the patient's conviction. The nurse should acknowledge the patient's feelings, avoid reinforcing the delusion and focus on immediate safety.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "De-escalation Techniques",
+"question_text": "A patient becomes increasingly agitated in a crowded ward and says that other patients are watching and laughing at him. What is the most appropriate initial intervention?",
+"choices": [
+{"text": "Move the patient to a quieter, safer area if this can be done without increasing risk", "is_correct": true},
+{"text": "Invite more patients to reassure him", "is_correct": false},
+{"text": "Tell the patient that everyone is laughing because of his behaviour", "is_correct": false},
+{"text": "Immediately use mechanical restraint without attempting less restrictive measures", "is_correct": false}
+],
+"rationale": "Reducing environmental stimulation may help lower anxiety and agitation. The nurse should maintain observation and use the least restrictive safe intervention appropriate to the patient's condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "De-escalation Techniques",
+"question_text": "A patient with paranoid delusions suddenly raises a chair and threatens another patient. Verbal de-escalation has failed, and the threat is immediate. What should the nurse prioritise?",
+"choices": [
+{"text": "Continue the discussion while allowing the threatened patient to remain nearby", "is_correct": false},
+{"text": "Activate the emergency response, protect others and follow the facility's approved safety procedures", "is_correct": true},
+{"text": "Attempt to take the chair without assistance", "is_correct": false},
+{"text": "Wait until the patient strikes someone before intervening", "is_correct": false}
+],
+"rationale": "An immediate threat involving a potential weapon requires urgent protective action and trained assistance. The nurse should protect patients and staff while using proportionate, authorised interventions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Restraint and Seclusion",
+"question_text": "Which statement best describes the ethical principle governing the use of physical restraint in psychiatric nursing?",
+"choices": [
+{"text": "Restraint may be used to punish patients who refuse treatment", "is_correct": false},
+{"text": "Restraint should be used only when necessary to prevent immediate harm and when less restrictive measures are insufficient", "is_correct": true},
+{"text": "Restraint is appropriate whenever a patient is verbally uncooperative", "is_correct": false},
+{"text": "Restraint can be continued until the patient agrees with staff decisions", "is_correct": false}
+],
+"rationale": "Restraint is a restrictive intervention that must be proportionate, necessary and used only as a last resort to manage serious immediate risk. It must never be used for punishment, convenience or retaliation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Restraint and Seclusion",
+"question_text": "A patient is placed in an approved physical restraint because of an immediate risk of serious injury. What is the nurse's priority responsibility during restraint?",
+"choices": [
+{"text": "Leave the patient alone until the restraint period ends", "is_correct": false},
+{"text": "Continuously ensure immediate safety and conduct monitoring at the required frequency, including respiratory status and circulation", "is_correct": true},
+{"text": "Tighten the restraint whenever the patient complains of discomfort", "is_correct": false},
+{"text": "Withhold fluids and basic care until the patient becomes cooperative", "is_correct": false}
+],
+"rationale": "A restrained patient requires close monitoring for respiratory compromise, circulatory impairment, injury and psychological distress. Monitoring, documentation and prompt release when the risk has reduced are essential safeguards.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Restraint and Seclusion",
+"question_text": "Which situation would justify considering seclusion in a psychiatric setting?",
+"choices": [
+{"text": "A patient refuses to attend a group therapy session", "is_correct": false},
+{"text": "A patient presents an immediate serious risk of harm that cannot be safely managed through less restrictive interventions", "is_correct": true},
+{"text": "A patient repeatedly requests to speak with the psychiatrist", "is_correct": false},
+{"text": "A patient refuses to eat a preferred meal", "is_correct": false}
+],
+"rationale": "Seclusion may be considered only under applicable legal and facility safeguards when necessary to manage serious immediate risk and less restrictive measures are inadequate. It must not be used as punishment or as a routine response to non-compliance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Restraint and Seclusion",
+"question_text": "A patient in mechanical restraint complains of severe chest discomfort and difficulty breathing. What should the nurse do immediately?",
+"choices": [
+{"text": "Tell the patient to remain calm until the scheduled observation", "is_correct": false},
+{"text": "Treat the complaint as an emergency, assess airway and breathing, obtain urgent assistance and relieve the restraint as clinically indicated", "is_correct": true},
+{"text": "Increase the restraint tension to prevent movement", "is_correct": false},
+{"text": "Document the complaint at the end of the shift without further action", "is_correct": false}
+],
+"rationale": "Chest discomfort and breathing difficulty during restraint may indicate a life-threatening complication. Immediate clinical assessment, emergency assistance and prompt action to remove the cause of compromise are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Restraint and Seclusion",
+"question_text": "Which documentation is essential after a restraint episode?",
+"choices": [
+{"text": "Only the name of the nurse who applied the restraint", "is_correct": false},
+{"text": "The behaviour and risk prompting restraint, alternatives attempted, authorisation, monitoring, duration and outcome", "is_correct": true},
+{"text": "Only the time the patient was released", "is_correct": false},
+{"text": "The personal opinions of staff about the patient's character", "is_correct": false}
+],
+"rationale": "Complete documentation supports accountability, continuity of care and review of whether the intervention was justified. It should record the reason, alternatives, relevant authorisation, monitoring and the patient's response.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Restraint and Seclusion",
+"question_text": "A patient has become calm after a period of restraint and no longer presents an immediate risk of harm. What should the nurse do?",
+"choices": [
+{"text": "Continue restraint until the end of the shift", "is_correct": false},
+{"text": "Review the patient's condition and discontinue restraint as soon as it is safe and authorised under applicable procedures", "is_correct": true},
+{"text": "Keep the patient restrained to prevent future non-compliance", "is_correct": false},
+{"text": "Transfer the patient to seclusion automatically", "is_correct": false}
+],
+"rationale": "Restrictive interventions should last only as long as the immediate risk requires. The nurse should reassess the patient frequently and end the intervention promptly when it is no longer necessary, following applicable procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Psychiatry",
+"question_text": "A patient arrives at the psychiatric emergency unit with severe agitation, fever, muscle rigidity and confusion after receiving antipsychotic medication. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Neuroleptic malignant syndrome", "is_correct": true},
+{"text": "Simple social anxiety disorder", "is_correct": false},
+{"text": "Specific phobia", "is_correct": false},
+{"text": "Uncomplicated insomnia", "is_correct": false}
+],
+"rationale": "Neuroleptic malignant syndrome is a potentially life-threatening reaction associated with dopamine-blocking medications. Features include hyperthermia, severe rigidity, altered mental status and autonomic instability, requiring urgent medical management.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Psychiatry",
+"question_text": "A patient with a history of alcohol dependence presents with tremors, sweating, agitation and visual hallucinations two days after stopping alcohol. What is the nurse's priority?",
+"choices": [
+{"text": "Assume the symptoms are ordinary anxiety and arrange routine follow-up", "is_correct": false},
+{"text": "Urgently assess for severe alcohol withdrawal and obtain medical treatment because of the risk of seizures and delirium", "is_correct": true},
+{"text": "Encourage the patient to resume drinking alcohol", "is_correct": false},
+{"text": "Place the patient in seclusion without medical assessment", "is_correct": false}
+],
+"rationale": "Alcohol withdrawal can progress to seizures and delirium tremens, which are medical emergencies. The patient requires urgent assessment, physiological monitoring and treatment according to clinical protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Psychiatry",
+"question_text": "A patient is brought to the emergency unit following suspected ingestion of an unknown substance and is unconscious. Which assessment takes priority?",
+"choices": [
+{"text": "Detailed family psychiatric history", "is_correct": false},
+{"text": "Airway, breathing and circulation", "is_correct": true},
+{"text": "Assessment of long-term occupational functioning", "is_correct": false},
+{"text": "Exploration of childhood relationships", "is_correct": false}
+],
+"rationale": "An unconscious patient requires immediate assessment and support of airway, breathing and circulation. Further toxicological and psychiatric assessment follows initial stabilisation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Psychiatry",
+"question_text": "A patient with severe depression suddenly becomes confused, febrile and develops marked muscle rigidity after a recent change in medication. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Continue the medication and reassess at the next routine ward round", "is_correct": false},
+{"text": "Recognise a possible serious medication-related emergency and obtain immediate medical review", "is_correct": true},
+{"text": "Assume the symptoms are caused by depression", "is_correct": false},
+{"text": "Encourage the patient to exercise to relieve muscle stiffness", "is_correct": false}
+],
+"rationale": "Fever, rigidity and altered mental status after medication changes may indicate neuroleptic malignant syndrome or another serious medical condition. The nurse should escalate immediately and follow the prescriber's emergency management instructions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Psychiatry",
+"question_text": "A patient with a known psychiatric disorder is brought to the emergency unit after suddenly developing slurred speech, facial asymmetry and weakness of one arm. What should the nurse do first?",
+"choices": [
+{"text": "Assume the symptoms are part of the psychiatric disorder", "is_correct": false},
+{"text": "Activate the appropriate emergency stroke assessment pathway immediately", "is_correct": true},
+{"text": "Administer a sedative before conducting any assessment", "is_correct": false},
+{"text": "Arrange a routine psychiatric outpatient appointment", "is_correct": false}
+],
+"rationale": "Sudden facial asymmetry, arm weakness and speech disturbance are possible signs of acute stroke. A psychiatric history must not distract the nurse from recognising a time-critical neurological emergency.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Psychiatry",
+"question_text": "A patient who has attempted suicide by hanging is brought to the emergency department. The patient is breathing but has reduced consciousness and neck injuries. What should the nurse prioritise?",
+"choices": [
+{"text": "Begin detailed suicide-prevention counselling immediately", "is_correct": false},
+{"text": "Maintain airway and breathing, protect the cervical spine as indicated and arrange urgent emergency management", "is_correct": true},
+{"text": "Ask the family to take the patient home for observation", "is_correct": false},
+{"text": "Wait for the patient to regain full consciousness before assessing injuries", "is_correct": false}
+],
+"rationale": "Hanging can cause airway injury, hypoxic brain injury and cervical spine trauma even when the patient is breathing. Immediate resuscitative assessment and urgent medical management take priority over the subsequent psychiatric evaluation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychiatric Intensive Care",
+"question_text": "What is the main purpose of a psychiatric intensive care unit?",
+"choices": [
+{"text": "To provide a secure, closely monitored environment for patients with severe acute psychiatric needs and significant risks", "is_correct": true},
+{"text": "To permanently isolate all patients with schizophrenia", "is_correct": false},
+{"text": "To replace all community mental health services", "is_correct": false},
+{"text": "To provide accommodation for patients who have no family members", "is_correct": false}
+],
+"rationale": "Psychiatric intensive care provides enhanced observation, multidisciplinary treatment and risk management for patients with severe acute mental health needs. The aim is stabilisation and safe progression to the least restrictive appropriate setting.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychiatric Intensive Care",
+"question_text": "A patient admitted to psychiatric intensive care repeatedly attempts to leave the unit, is severely disorganised and cannot maintain personal safety. What is the most appropriate nursing intervention?",
+"choices": [
+{"text": "Provide structured observation, a safe environment and individualised therapeutic engagement", "is_correct": true},
+{"text": "Ignore the patient until the behaviour stops", "is_correct": false},
+{"text": "Remove all communication with the patient", "is_correct": false},
+{"text": "Use restraint continuously without reassessment", "is_correct": false}
+],
+"rationale": "Structured observation and therapeutic engagement help manage risk while maintaining the patient's dignity. Interventions should be individualised, regularly reviewed and no more restrictive than necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Intensive Care",
+"question_text": "A patient in psychiatric intensive care becomes unusually drowsy after receiving prescribed sedating medication. The respiratory rate is markedly reduced. What should the nurse do first?",
+"choices": [
+{"text": "Allow the patient to sleep because sedation is expected", "is_correct": false},
+{"text": "Assess airway and breathing, summon urgent medical assistance and initiate emergency management within competence", "is_correct": true},
+{"text": "Administer another sedating medication to maintain calmness", "is_correct": false},
+{"text": "Wait until the next medication round to report the change", "is_correct": false}
+],
+"rationale": "Marked sedation with a reduced respiratory rate may indicate respiratory depression, a potentially life-threatening adverse effect. Immediate airway and breathing assessment and urgent escalation are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Intensive Care",
+"question_text": "Which observation is particularly important for a patient in psychiatric intensive care who is receiving antipsychotic medication?",
+"choices": [
+{"text": "Only the patient's preferred television programme", "is_correct": false},
+{"text": "Changes in consciousness, vital signs, movement symptoms and other possible adverse medication effects", "is_correct": true},
+{"text": "The patient's social media activity alone", "is_correct": false},
+{"text": "The number of visitors without considering clinical condition", "is_correct": false}
+],
+"rationale": "Patients receiving antipsychotics require monitoring for adverse effects, including extrapyramidal symptoms, excessive sedation and serious reactions. Vital signs and changes in mental state should also be monitored according to clinical needs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychiatric Intensive Care",
+"question_text": "A patient in psychiatric intensive care has stabilised, is no longer aggressive and can participate in treatment planning. What should the multidisciplinary team consider?",
+"choices": [
+{"text": "Maintaining the patient in intensive care indefinitely", "is_correct": false},
+{"text": "Reviewing the need for intensive care and planning transfer to a less restrictive suitable setting", "is_correct": true},
+{"text": "Discharging the patient immediately without follow-up", "is_correct": false},
+{"text": "Stopping all psychiatric treatment because the patient is calm", "is_correct": false}
+],
+"rationale": "The level of restriction and observation should be regularly reviewed against the patient's current clinical needs and risk. When intensive care is no longer necessary, safe transfer and continuity of treatment should be planned.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "Which legislation provides the principal statutory framework for mental healthcare and the protection of the rights of persons with mental disorders in Ghana?",
+"choices": [
+{"text": "Mental Health Act, 2012 (Act 846)", "is_correct": true},
+{"text": "Children's Act, 1998 (Act 560) only", "is_correct": false},
+{"text": "Road Traffic Act, 2004 (Act 683)", "is_correct": false},
+{"text": "Public Procurement Act, 2003 (Act 663)", "is_correct": false}
+],
+"rationale": "The Mental Health Act, 2012 (Act 846) establishes the legal framework for mental healthcare in Ghana. It addresses mental health governance, service delivery and the rights and protections of persons with mental disorders.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "Under the rights-based principles of Ghana's Mental Health Act, 2012 (Act 846), how should a person with a mental disorder be treated?",
+"choices": [
+{"text": "As a person who automatically loses all civil and human rights", "is_correct": false},
+{"text": "With dignity, respect, protection from discrimination and access to appropriate care", "is_correct": true},
+{"text": "As someone who may be punished for displaying psychiatric symptoms", "is_correct": false},
+{"text": "As a person whose relatives automatically control every treatment decision", "is_correct": false}
+],
+"rationale": "Act 846 promotes the protection of the rights and dignity of persons with mental disorders. Mental illness does not automatically remove a person's legal rights or justify degrading treatment and discrimination.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "A patient with a mental disorder is brought to a psychiatric facility by relatives who demand admission, but the patient appears calm and does not meet the applicable criteria for compulsory admission. What should the nurse recognise?",
+"choices": [
+{"text": "Relatives can automatically authorise compulsory admission whenever they request it", "is_correct": false},
+{"text": "Admission must follow the applicable legal criteria and procedures, and the patient's rights must be respected", "is_correct": true},
+{"text": "Every person brought by relatives must be detained indefinitely", "is_correct": false},
+{"text": "The nurse may ignore all legal requirements if the family is concerned", "is_correct": false}
+],
+"rationale": "Compulsory admission must be based on the applicable legal requirements and safeguards, not solely on a relative's demand. The nurse should ensure appropriate assessment, documentation and respect for the patient's rights.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "A patient receiving psychiatric treatment at Pantang Psychiatric Hospital complains that staff members have insulted and humiliated him. Which response is most consistent with the Mental Health Act, 2012 (Act 846)?",
+"choices": [
+{"text": "Dismiss the complaint because psychiatric patients are not entitled to respectful treatment", "is_correct": false},
+{"text": "Take the complaint seriously, protect the patient's dignity and follow appropriate reporting and complaints procedures", "is_correct": true},
+{"text": "Tell the patient that complaints may lead to punishment", "is_correct": false},
+{"text": "Advise the patient to accept the behaviour because staff are always correct", "is_correct": false}
+],
+"rationale": "Persons receiving mental healthcare retain the right to dignity and protection from degrading treatment. Complaints should be addressed through appropriate facility and legal mechanisms without retaliation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "Which statement best describes the role of the Mental Health Authority under Ghana's Mental Health Act, 2012 (Act 846)?",
+"choices": [
+{"text": "It is responsible for regulating and coordinating mental health services within the statutory framework", "is_correct": true},
+{"text": "It replaces all district and regional health directorates", "is_correct": false},
+{"text": "It provides legal authority for relatives to punish persons with mental disorders", "is_correct": false},
+{"text": "It functions only as a private psychiatric hospital", "is_correct": false}
+],
+"rationale": "The Mental Health Authority is a statutory body established under Act 846 to support the governance, regulation and development of mental health services in Ghana. Its role extends beyond the provision of care in individual psychiatric hospitals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "A patient who has decision-making capacity refuses a proposed psychiatric medication after receiving an explanation of its benefits and risks. What should the nurse do?",
+"choices": [
+{"text": "Administer the medication secretly in the patient's food", "is_correct": false},
+{"text": "Respect the informed refusal, communicate with the prescriber and document the discussion in accordance with applicable legal and clinical procedures", "is_correct": true},
+{"text": "Ask relatives to force the patient to swallow the medication", "is_correct": false},
+{"text": "Threaten the patient with discharge unless the medication is accepted", "is_correct": false}
+],
+"rationale": "A patient with decision-making capacity generally has the right to make informed decisions about treatment. The nurse should communicate the risks and concerns to the clinical team and follow the legal requirements governing any exceptional circumstances.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "A nurse discovers that a patient has been kept in seclusion for several hours without appropriate review or documentation. What is the most appropriate action?",
+"choices": [
+{"text": "Ignore the situation because seclusion is a routine psychiatric intervention", "is_correct": false},
+{"text": "Immediately raise the concern, ensure the patient's safety and request a review in accordance with legal and facility safeguards", "is_correct": true},
+{"text": "Extend seclusion until the patient apologises", "is_correct": false},
+{"text": "Remove the patient without assessing whether doing so is safe", "is_correct": false}
+],
+"rationale": "Seclusion must be justified, monitored, reviewed and documented according to applicable safeguards. Unreviewed or unjustified seclusion may expose the patient to harm and violate their rights.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "A patient at Accra Psychiatric Hospital reports that a staff member disclosed confidential psychiatric information to unrelated community members without a valid reason. Which professional obligation is most directly involved?",
+"choices": [
+{"text": "Confidentiality and protection of personal health information", "is_correct": true},
+{"text": "The patient's obligation to accept every treatment", "is_correct": false},
+{"text": "The family's right to access all clinical records", "is_correct": false},
+{"text": "The nurse's freedom to disclose information without restriction", "is_correct": false}
+],
+"rationale": "Confidentiality requires healthcare professionals to protect personal health information and disclose it only with appropriate authority or a valid legal or professional justification. Unnecessary disclosure can violate patient rights and damage trust in mental health services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "A patient with severe mental illness is clinically stable and wishes to return to the community. The family fears that the patient may relapse and demands indefinite hospitalisation. What is the most appropriate response?",
+"choices": [
+{"text": "Keep the patient admitted indefinitely because the family has requested it", "is_correct": false},
+{"text": "Review the patient's clinical condition, legal status, support needs and available community follow-up before making a discharge or continuing-care plan", "is_correct": true},
+{"text": "Discharge the patient immediately without assessing the home environment", "is_correct": false},
+{"text": "Transfer all responsibility for treatment to the family", "is_correct": false}
+],
+"rationale": "Decisions about continued admission should be based on clinical need and applicable legal requirements, not family preference alone. Discharge planning should include relapse prevention, medication follow-up, psychosocial support and appropriate community mental health services.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "Which approach best reflects the direction of mental healthcare promoted by Ghana's mental health policy and the Mental Health Act, 2012 (Act 846)?",
+"choices": [
+{"text": "Providing all mental healthcare exclusively in large psychiatric institutions", "is_correct": false},
+{"text": "Promoting accessible, rights-based mental healthcare, including appropriate community services and integration into general healthcare", "is_correct": true},
+{"text": "Restricting mental health services to people who can pay privately", "is_correct": false},
+{"text": "Replacing professional mental healthcare with compulsory traditional treatment", "is_correct": false}
+],
+"rationale": "Ghana's mental health framework supports more accessible and rights-based care, including community-oriented services. Integration with general health services can improve access, continuity of care and social inclusion.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Psychiatry",
+"question_text": "A patient with a history of bipolar disorder presents with extreme excitement, almost no sleep for several days, grandiose beliefs and risky spending. The patient is now attempting to leave the emergency unit while shouting at staff. What is the priority nursing response?",
+"choices": [
+{"text": "Allow the patient to leave because excitement is a normal feature of bipolar disorder", "is_correct": false},
+{"text": "Assess immediate risk, maintain a safe environment, use de-escalation and urgently obtain psychiatric review", "is_correct": true},
+{"text": "Challenge the patient's grandiose beliefs aggressively", "is_correct": false},
+{"text": "Begin long-term occupational therapy before addressing the immediate behaviour", "is_correct": false}
+],
+"rationale": "The presentation suggests a possible severe manic episode with impaired judgement and immediate safety concerns. Risk management, de-escalation and urgent clinical assessment are required before longer-term interventions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Risk Assessment",
+"question_text": "Which finding is a recognised protective factor that may reduce, but does not eliminate, suicide risk?",
+"choices": [
+{"text": "A specific suicide plan with access to lethal means", "is_correct": false},
+{"text": "Strong supportive relationships and willingness to seek help", "is_correct": true},
+{"text": "A recent medically serious suicide attempt", "is_correct": false},
+{"text": "Persistent hopelessness and social isolation", "is_correct": false}
+],
+"rationale": "Supportive relationships and willingness to seek help can provide emotional connection and access to assistance during periods of distress. Protective factors do not cancel significant risk indicators and must be considered alongside the full clinical assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Crisis Intervention",
+"question_text": "A patient experiencing a panic attack reports chest tightness, dizziness and a feeling of impending death. What should the nurse do first?",
+"choices": [
+{"text": "Assume that the symptoms are psychological and avoid physical assessment", "is_correct": false},
+{"text": "Assess for medical causes and immediate physiological instability while providing calm reassurance", "is_correct": true},
+{"text": "Tell the patient that the symptoms are imaginary", "is_correct": false},
+{"text": "Leave the patient alone to regain control", "is_correct": false}
+],
+"rationale": "Panic attacks can produce intense physical symptoms, but chest discomfort and dizziness must not automatically be attributed to anxiety. The nurse should assess for medical emergencies while using calm communication and appropriate supportive measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "De-escalation Techniques",
+"question_text": "A patient with acute psychosis says, 'The staff are poisoning my food.' Which response is most appropriate?",
+"choices": [
+{"text": "That is ridiculous; nobody would do that", "is_correct": false},
+{"text": "I understand that you feel unsafe. I do not see evidence that your food is poisoned, but I want to understand what is worrying you", "is_correct": true},
+{"text": "You are correct; the staff are probably trying to poison you", "is_correct": false},
+{"text": "If you continue saying that, you will lose your privileges", "is_correct": false}
+],
+"rationale": "The response acknowledges the patient's fear without reinforcing the delusional belief. It maintains a therapeutic relationship and creates an opportunity to explore concerns and support safe nutrition and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Intensive Care",
+"question_text": "A patient admitted to psychiatric intensive care has stopped eating and drinking, appears increasingly withdrawn and has reduced urine output. What should the nurse prioritise?",
+"choices": [
+{"text": "Wait until the patient requests food or water", "is_correct": false},
+{"text": "Assess hydration, nutrition and physical condition promptly, and escalate concerns to the clinical team", "is_correct": true},
+{"text": "Focus exclusively on the patient's social history", "is_correct": false},
+{"text": "Assume that refusal of food is a behavioural problem requiring punishment", "is_correct": false}
+],
+"rationale": "Reduced intake and urine output may indicate dehydration and other physical complications. Psychiatric intensive care must include active monitoring of physical health alongside mental health assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Restraint and Seclusion",
+"question_text": "A patient becomes verbally abusive but is not threatening physical harm, attempting self-injury or creating an immediate danger. Which intervention is most appropriate?",
+"choices": [
+{"text": "Apply mechanical restraint to prevent further verbal abuse", "is_correct": false},
+{"text": "Use verbal de-escalation, identify the cause of distress and maintain appropriate boundaries", "is_correct": true},
+{"text": "Place the patient in seclusion as punishment", "is_correct": false},
+{"text": "Withhold all therapeutic communication until the patient apologises", "is_correct": false}
+],
+"rationale": "Verbal aggression alone does not automatically justify restrictive interventions. The nurse should attempt less restrictive approaches, assess the underlying cause and maintain safety while respecting the patient's rights.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Legislation in Ghana",
+"question_text": "A family in a rural Ghanaian community takes a relative with psychosis to a traditional healer before seeking professional care. Which nursing approach best supports stigma reduction and continuity of care?",
+"choices": [
+{"text": "Insult the family for seeking traditional help and refuse further engagement", "is_correct": false},
+{"text": "Explore the family's beliefs respectfully, explain the benefits of evidence-based treatment and facilitate appropriate referral and follow-up", "is_correct": true},
+{"text": "Encourage the family to abandon all professional treatment", "is_correct": false},
+{"text": "Assume that traditional healers are always harmful and cannot be discussed", "is_correct": false}
+],
+"rationale": "Respectful engagement can reduce stigma and improve communication with families who may initially seek traditional care. The nurse should promote safe, evidence-based treatment and discourage harmful practices or delays in urgent medical care.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
