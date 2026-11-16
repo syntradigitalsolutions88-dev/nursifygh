@@ -1,0 +1,767 @@
+{
+"courses": [
+{
+"course_code": "PFC-311-C",
+"course_title": "Patient/Family-Centred Care Study",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Family Assessment in the Community",
+"Therapeutic Communication with Families",
+"Genograms and Ecomaps",
+"Patient Advocacy in Community Settings",
+"Home Visiting Principles and Practice",
+"Family-Centred Care Principles",
+"Cultural Sensitivity in Community Health",
+"Community Health Nursing Roles",
+"Family Support Systems in Ghana"
+],
+"questions": [
+{
+"topic": "Family Assessment in the Community",
+"question_text": "Which statement best defines family assessment in community health nursing?",
+"choices": [
+{"text": "The process of identifying the family's health needs, strengths, resources and problems", "is_correct": true},
+{"text": "The process of diagnosing diseases in the household without involving family members", "is_correct": false},
+{"text": "The process of determining the family's financial status only", "is_correct": false},
+{"text": "The process of assessing only the health condition of the household head", "is_correct": false}
+],
+"rationale": "Family assessment is a systematic process of gathering information about the family's health status, structure, functioning, strengths and available resources. It helps the community health nurse identify needs and plan appropriate interventions with the family.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment in the Community",
+"question_text": "A community health nurse is assessing a household in a rural Ghanaian community. Which information is most important for understanding the family's health situation?",
+"choices": [
+{"text": "The family's preferred television programmes", "is_correct": false},
+{"text": "The family structure, health history, living conditions and available support systems", "is_correct": true},
+{"text": "The number of expensive items owned by the household", "is_correct": false},
+{"text": "The political opinions of every household member", "is_correct": false}
+],
+"rationale": "Family health is influenced by household structure, medical history, environmental conditions and social support. Collecting these details helps the nurse identify health risks and appropriate interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in the Community",
+"question_text": "During a household assessment, a nurse discovers that an older woman is caring for three grandchildren while their parents work in another region. Which family arrangement is being demonstrated?",
+"choices": [
+{"text": "Nuclear family", "is_correct": false},
+{"text": "Single-parent family", "is_correct": false},
+{"text": "Kinship care arrangement", "is_correct": true},
+{"text": "Child-headed household", "is_correct": false}
+],
+"rationale": "Kinship care occurs when relatives other than a child's parents provide care and assume parental responsibilities. It is common in extended family systems and should be considered when assessing caregiving capacity and support needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in the Community",
+"question_text": "Which method is most appropriate for collecting detailed information about relationships and communication patterns within a family?",
+"choices": [
+{"text": "Reviewing the household's electricity bills", "is_correct": false},
+{"text": "Interviewing only the youngest child", "is_correct": false},
+{"text": "Observing the exterior of the house", "is_correct": false},
+{"text": "Conducting a structured family interview and observing family interactions", "is_correct": true}
+],
+"rationale": "Family interviews and observation provide information about communication, decision-making, roles and relationships. Using both methods gives a more complete understanding than relying on one source of information.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment in the Community",
+"question_text": "During a home visit, a nurse learns that a child has recurrent diarrhoea, the household uses an uncovered water-storage container and there is no functional household latrine. What should the nurse do first?",
+"choices": [
+{"text": "Assess the child's current condition and identify immediate dehydration or other danger signs", "is_correct": true},
+{"text": "Wait until the next scheduled community meeting before taking action", "is_correct": false},
+{"text": "Focus only on the family's financial circumstances", "is_correct": false},
+{"text": "Advise the family to stop giving the child food", "is_correct": false}
+],
+"rationale": "The child's immediate clinical condition must be assessed before addressing the wider environmental risks. The nurse should identify danger signs, arrange urgent referral when indicated and subsequently provide appropriate hygiene and sanitation education.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Assessment in the Community",
+"question_text": "A nurse is assessing a household where the father has hypertension and the mother has diabetes. Which additional information is most useful for planning family-centred care?",
+"choices": [
+{"text": "The family's favourite entertainment activities only", "is_correct": false},
+{"text": "The availability of medicines, follow-up attendance, diet, physical activity and family support", "is_correct": true},
+{"text": "The number of visitors received each month", "is_correct": false},
+{"text": "The family's preferred clothing styles", "is_correct": false}
+],
+"rationale": "Chronic disease management depends on treatment access, adherence, lifestyle practices and support from household members. Assessing these factors helps the nurse develop realistic care plans that the family can sustain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in the Community",
+"question_text": "Which of the following is an example of a family strength that a community health nurse should identify during assessment?",
+"choices": [
+{"text": "The absence of any health problem in the household", "is_correct": false},
+{"text": "The family's refusal to communicate with health workers", "is_correct": false},
+{"text": "The presence of supportive relatives who assist with childcare and clinic attendance", "is_correct": true},
+{"text": "The family's inability to identify its health needs", "is_correct": false}
+],
+"rationale": "Family strengths include supportive relationships, effective coping strategies and the ability to mobilise available resources. Identifying these strengths allows the nurse to build on existing capacities rather than focusing only on problems.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment in the Community",
+"question_text": "A nurse visits a household and finds that several family members share one sleeping room, the kitchen has poor ventilation and refuse is dumped near the house. Which assessment domain is most directly involved?",
+"choices": [
+{"text": "Family religious beliefs", "is_correct": false},
+{"text": "Family communication style", "is_correct": false},
+{"text": "Family recreational activities", "is_correct": false},
+{"text": "Physical and environmental health conditions", "is_correct": true}
+],
+"rationale": "Housing, ventilation, overcrowding and waste disposal are important environmental determinants of health. Their assessment helps identify risks such as respiratory infections, injuries and vector-borne diseases.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "Which communication technique involves restating the main idea expressed by a family member to confirm understanding?",
+"choices": [
+{"text": "Paraphrasing", "is_correct": true},
+{"text": "Changing the subject", "is_correct": false},
+{"text": "Giving false reassurance", "is_correct": false},
+{"text": "Confrontation", "is_correct": false}
+],
+"rationale": "Paraphrasing involves expressing the speaker's message in different words while retaining its meaning. It allows the nurse to check understanding and encourages further communication.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A mother tells a community health nurse, 'I am afraid my child will not recover from this illness.' Which response demonstrates therapeutic communication?",
+"choices": [
+{"text": "You should not think negatively about your child.", "is_correct": false},
+{"text": "Other children have worse illnesses than this.", "is_correct": false},
+{"text": "Can you tell me more about what worries you most?", "is_correct": true},
+{"text": "There is no reason for you to be afraid.", "is_correct": false}
+],
+"rationale": "An open-ended question encourages the mother to express her concerns and allows the nurse to understand her fears. Dismissing or minimising emotions can discourage honest communication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A father becomes angry when the nurse discusses his child's missed immunisation appointments. What is the nurse's most appropriate response?",
+"choices": [
+{"text": "Tell him that he is irresponsible as a parent", "is_correct": false},
+{"text": "Remain calm, listen without judgement and explore the reasons for the missed appointments", "is_correct": true},
+{"text": "End the discussion immediately and leave the household", "is_correct": false},
+{"text": "Threaten to report the family before asking any questions", "is_correct": false}
+],
+"rationale": "A calm, non-judgemental approach reduces defensiveness and helps identify barriers such as transport difficulties, misinformation or inconvenient clinic times. The nurse can then work with the family to develop a practical solution.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "Which action best demonstrates active listening during a family interview?",
+"choices": [
+{"text": "Interrupting frequently to correct the speaker", "is_correct": false},
+{"text": "Looking at the patient's records throughout the entire conversation", "is_correct": false},
+{"text": "Giving advice before the family has explained its concerns", "is_correct": false},
+{"text": "Maintaining appropriate eye contact, listening attentively and clarifying unclear statements", "is_correct": true}
+],
+"rationale": "Active listening requires attention to both verbal and non-verbal messages. Clarification and appropriate eye contact demonstrate interest and help prevent misunderstanding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "During counselling, a caregiver remains silent after receiving difficult news about a family member's diagnosis. What should the nurse do?",
+"choices": [
+{"text": "Allow appropriate silence and give the caregiver time to process the information", "is_correct": true},
+{"text": "Immediately ask several unrelated questions", "is_correct": false},
+{"text": "Assume that the caregiver has understood everything", "is_correct": false},
+{"text": "Tell the caregiver to stop being emotional", "is_correct": false}
+],
+"rationale": "Therapeutic silence gives individuals time to reflect and express emotions when they are ready. The nurse should remain available and later check the caregiver's understanding and support needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A nurse is discussing a child's treatment with a family whose members disagree about the recommended care. Which approach is most appropriate?",
+"choices": [
+{"text": "Allow the loudest family member to make every decision", "is_correct": false},
+{"text": "Avoid discussing the disagreement", "is_correct": false},
+{"text": "Facilitate respectful discussion while ensuring that the child's needs and appropriate consent are prioritised", "is_correct": true},
+{"text": "Ask the family to choose treatment without receiving clinical information", "is_correct": false}
+],
+"rationale": "The nurse should support respectful communication and provide accurate information about available care options. The child's best interests, applicable consent requirements and the views of the appropriate legal decision-maker must guide care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "Which statement by a nurse is an example of false reassurance?",
+"choices": [
+{"text": "I can see that this situation is difficult for your family.", "is_correct": false},
+{"text": "Your child will definitely recover by tomorrow, so do not worry.", "is_correct": true},
+{"text": "Let us discuss the treatment plan and what to expect.", "is_correct": false},
+{"text": "What questions would you like me to answer?", "is_correct": false}
+],
+"rationale": "False reassurance makes promises about outcomes that the nurse cannot guarantee. Therapeutic communication should provide realistic information, acknowledge emotions and avoid misleading statements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "What is the primary purpose of a genogram in family assessment?",
+"choices": [
+{"text": "To show the geographical location of nearby health facilities", "is_correct": false},
+{"text": "To record only the family's monthly income", "is_correct": false},
+{"text": "To illustrate family relationships, structure and relevant health history across generations", "is_correct": true},
+{"text": "To measure the physical growth of children", "is_correct": false}
+],
+"rationale": "A genogram is a diagram that represents family structure and relationships across several generations. It can also document relevant medical, social and hereditary information.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "A community health nurse wants to identify how a family interacts with external organisations such as a church, school, CHPS compound and social welfare services. Which tool should the nurse use?",
+"choices": [
+{"text": "Ecomap", "is_correct": true},
+{"text": "Growth chart", "is_correct": false},
+{"text": "Medication chart", "is_correct": false},
+{"text": "Partograph", "is_correct": false}
+],
+"rationale": "An ecomap illustrates the relationships between a family and its external social systems. It helps identify sources of support, stressful relationships and gaps in community resources.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "In a standard genogram, which symbol is commonly used to represent a female family member?",
+"choices": [
+{"text": "Triangle", "is_correct": false},
+{"text": "Square", "is_correct": false},
+{"text": "Circle", "is_correct": true},
+{"text": "Diamond", "is_correct": false}
+],
+"rationale": "A circle commonly represents a female, while a square represents a male in standard genogram conventions. A line connecting symbols is used to represent family relationships.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "A family genogram shows that hypertension has affected the father, his mother and two maternal uncles. How should the nurse interpret this information?",
+"choices": [
+{"text": "The family members definitely have the same disease because they live together", "is_correct": false},
+{"text": "The family history suggests a possible inherited or shared familial risk that requires appropriate assessment", "is_correct": true},
+{"text": "The condition cannot occur in other family members", "is_correct": false},
+{"text": "The genogram confirms that every family member needs medication", "is_correct": false}
+],
+"rationale": "A pattern of hypertension across relatives may indicate genetic susceptibility and shared lifestyle or environmental risk factors. A genogram identifies patterns but does not establish a diagnosis in unaffected relatives.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "Which information is most appropriately represented on an ecomap?",
+"choices": [
+{"text": "The exact dosage of every medicine taken by the family", "is_correct": false},
+{"text": "The weight and height of each child", "is_correct": false},
+{"text": "The blood group of every household member", "is_correct": false},
+{"text": "The strength and nature of the family's relationships with community support systems", "is_correct": true}
+],
+"rationale": "An ecomap focuses on the family's connections with external systems and resources. It can show supportive, weak or stressful relationships with institutions and individuals outside the household.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy in Community Settings",
+"question_text": "Which statement best describes patient advocacy in community health nursing?",
+"choices": [
+{"text": "Supporting and protecting patients' rights, preferences, dignity and access to appropriate care", "is_correct": true},
+{"text": "Making all healthcare decisions on behalf of patients", "is_correct": false},
+{"text": "Ensuring that patients always accept the nurse's personal beliefs", "is_correct": false},
+{"text": "Providing care only to patients who can afford private services", "is_correct": false}
+],
+"rationale": "Patient advocacy involves protecting patients' rights and helping them obtain appropriate healthcare services. It includes promoting informed decision-making, dignity, safety and equitable access to care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy in Community Settings",
+"question_text": "A pregnant woman tells a community health nurse that her family will not allow her to attend antenatal clinic because they prefer traditional treatment. What is the nurse's best initial action?",
+"choices": [
+{"text": "Insult the family for following traditional beliefs", "is_correct": false},
+{"text": "Ignore the woman's concerns and close the discussion", "is_correct": false},
+{"text": "Explore the woman's concerns, provide respectful health education and support her access to antenatal care", "is_correct": true},
+{"text": "Force the woman to attend the clinic without assessing her situation", "is_correct": false}
+],
+"rationale": "The nurse should respect the woman's dignity while providing accurate information about the benefits of antenatal care. Advocacy includes helping her access services and addressing barriers without using coercion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Community Settings",
+"question_text": "An older adult with limited mobility is repeatedly unable to attend follow-up appointments because transport is unavailable. Which action best demonstrates patient advocacy?",
+"choices": [
+{"text": "Document the missed appointments as deliberate non-compliance", "is_correct": false},
+{"text": "Discontinue follow-up because the patient cannot attend", "is_correct": false},
+{"text": "Advise the patient to stop treatment until transport becomes available", "is_correct": false},
+{"text": "Help explore appropriate transport, community support or alternative follow-up arrangements", "is_correct": true}
+],
+"rationale": "Advocacy requires identifying and addressing barriers that prevent patients from receiving necessary care. The nurse can coordinate with appropriate community resources and the health facility to support continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Community Settings",
+"question_text": "A family reports that a health worker disclosed a patient's HIV status to neighbours without permission. What should the community health nurse do first?",
+"choices": [
+{"text": "Discuss the patient's status with other community members to obtain their opinions", "is_correct": false},
+{"text": "Protect the patient's confidentiality, listen to the complaint and follow the appropriate facility reporting process", "is_correct": true},
+{"text": "Tell the patient that confidentiality does not apply in community settings", "is_correct": false},
+{"text": "Ignore the complaint because the information has already been disclosed", "is_correct": false}
+],
+"rationale": "Confidentiality is a fundamental professional and ethical responsibility. The nurse should protect the patient's privacy, respond appropriately to the complaint and follow established reporting procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy in Community Settings",
+"question_text": "A patient with a chronic illness cannot afford the prescribed medicines. What should the community health nurse do?",
+"choices": [
+{"text": "Assess the financial barrier and help the patient explore appropriate NHIS coverage and available social support", "is_correct": true},
+{"text": "Tell the patient to purchase medicines from any unregulated source", "is_correct": false},
+{"text": "Advise the patient to stop all treatment", "is_correct": false},
+{"text": "Blame the patient for failing to plan financially", "is_correct": false}
+],
+"rationale": "The nurse should identify the reason for the treatment barrier and help the patient access legitimate healthcare and social support options. NHIS coverage should be checked for the specific service or medicine because coverage is subject to scheme rules.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Community Settings",
+"question_text": "During a community meeting, a nurse notices that persons with disabilities cannot enter the venue because there is no accessible pathway. Which response best reflects advocacy?",
+"choices": [
+{"text": "Advise persons with disabilities to remain at home", "is_correct": false},
+{"text": "Proceed with the meeting because most residents can enter", "is_correct": false},
+{"text": "Raise the accessibility barrier with organisers and promote reasonable arrangements for participation", "is_correct": true},
+{"text": "Ask relatives to speak on behalf of all persons with disabilities without consulting them", "is_correct": false}
+],
+"rationale": "Advocacy promotes inclusion, accessibility and equal participation in community health activities. The nurse should involve affected individuals and support practical measures that reduce barriers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting Principles and Practice",
+"question_text": "What is the primary purpose of a planned home visit by a community health nurse?",
+"choices": [
+{"text": "To inspect the family's private activities without a health-related reason", "is_correct": false},
+{"text": "To replace all services provided at the health facility", "is_correct": false},
+{"text": "To identify family health needs, provide appropriate care and strengthen health practices in the home", "is_correct": true},
+{"text": "To collect household payments for every health service", "is_correct": false}
+],
+"rationale": "A home visit allows the nurse to assess health needs within the family's living environment and provide relevant interventions. It also supports health education, follow-up and continuity of care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Visiting Principles and Practice",
+"question_text": "Which activity should a community health nurse undertake before conducting a routine home visit?",
+"choices": [
+{"text": "Plan the purpose, review available information and prepare the necessary equipment", "is_correct": true},
+{"text": "Visit without knowing the reason for the visit", "is_correct": false},
+{"text": "Collect personal information from neighbours without considering confidentiality", "is_correct": false},
+{"text": "Assume that every household has the same health needs", "is_correct": false}
+],
+"rationale": "Preparation helps the nurse conduct an organised and purposeful visit. Reviewing relevant information and preparing equipment reduce delays and improve the quality of care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Visiting Principles and Practice",
+"question_text": "A nurse arrives at a household to conduct a routine visit, but the family is preparing for an important event and asks the nurse to return later. What is the most appropriate action?",
+"choices": [
+{"text": "Insist on entering because the visit was scheduled", "is_correct": false},
+{"text": "Respect the family's request and arrange another suitable time, unless an urgent safety concern requires immediate action", "is_correct": true},
+{"text": "Threaten to remove the family from community services", "is_correct": false},
+{"text": "Discuss the family's private health information with neighbours", "is_correct": false}
+],
+"rationale": "Respect for privacy, consent and family circumstances is essential during home visiting. The nurse should negotiate another time while ensuring that urgent health concerns are not neglected.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting Principles and Practice",
+"question_text": "During a home visit, a nurse notices that a newborn is poorly feeding, unusually lethargic and has an abnormally low body temperature. What should the nurse prioritise?",
+"choices": [
+{"text": "Schedule another routine visit in one week", "is_correct": false},
+{"text": "Provide only general breastfeeding education", "is_correct": false},
+{"text": "Ask the family to observe the newborn without further assessment", "is_correct": false},
+{"text": "Recognise neonatal danger signs, provide immediate care within scope and arrange urgent referral", "is_correct": true}
+],
+"rationale": "Poor feeding, lethargy and abnormal temperature are serious neonatal danger signs that may indicate severe infection or another life-threatening condition. The newborn requires urgent clinical assessment and referral rather than routine home follow-up.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home Visiting Principles and Practice",
+"question_text": "Which action is most appropriate when a nurse is preparing to leave a household after a health visit?",
+"choices": [
+{"text": "End the visit without informing the family about the findings", "is_correct": false},
+{"text": "Give the family unrelated medical instructions", "is_correct": false},
+{"text": "Summarise the visit, confirm understanding, agree on follow-up and document the findings", "is_correct": true},
+{"text": "Leave the family's records in an accessible place for neighbours", "is_correct": false}
+],
+"rationale": "A proper conclusion reinforces key health messages and ensures that the family understands agreed actions and follow-up arrangements. Documentation supports continuity of care and professional accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting Principles and Practice",
+"question_text": "A nurse conducting a home visit finds a caregiver administering an incorrect dose of a child's medicine. What is the priority action?",
+"choices": [
+{"text": "Assess the child for possible harm, establish what was administered and arrange urgent clinical review when indicated", "is_correct": true},
+{"text": "Wait until the next visit to discuss the mistake", "is_correct": false},
+{"text": "Tell the caregiver to double the next dose", "is_correct": false},
+{"text": "Dispose of the medicine without assessing the child", "is_correct": false}
+],
+"rationale": "An incorrect medication dose may cause harm, so the nurse must first assess the child's condition and establish the medicine, amount and time administered. Further management should follow clinical guidance and include prompt referral or escalation when necessary.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home Visiting Principles and Practice",
+"question_text": "Which of the following is a key principle of effective home visiting?",
+"choices": [
+{"text": "Conducting visits without a defined objective", "is_correct": false},
+{"text": "Respecting family privacy, maintaining confidentiality and involving family members appropriately", "is_correct": true},
+{"text": "Making decisions without considering the family's circumstances", "is_correct": false},
+{"text": "Using the same intervention for every household", "is_correct": false}
+],
+"rationale": "Effective home visiting is purposeful, respectful and responsive to the family's needs. Confidentiality and appropriate family involvement help establish trust and improve cooperation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "Which principle is central to family-centred care?",
+"choices": [
+{"text": "The healthcare worker makes every decision without consulting the patient", "is_correct": false},
+{"text": "The family must always follow the nurse's personal preferences", "is_correct": false},
+{"text": "Care is planned with respect for the patient's and family's values, needs and preferences", "is_correct": true},
+{"text": "Only the household head is allowed to receive health information", "is_correct": false}
+],
+"rationale": "Family-centred care recognises the patient and family as important partners in care planning and delivery. It promotes respect, participation, information sharing and collaboration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A child with asthma frequently develops symptoms at home. Which intervention best demonstrates family-centred care?",
+"choices": [
+{"text": "Develop an asthma management plan with the caregiver, explain trigger avoidance and agree on follow-up", "is_correct": true},
+{"text": "Blame the caregiver for every asthma attack", "is_correct": false},
+{"text": "Exclude the caregiver from discussions about the child's condition", "is_correct": false},
+{"text": "Advise the family to stop all prescribed treatment when symptoms improve", "is_correct": false}
+],
+"rationale": "Family-centred care involves caregivers in understanding the child's condition and managing it safely at home. A shared plan supports adherence, trigger reduction and timely recognition of worsening symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "Which action best promotes shared decision-making in family-centred care?",
+"choices": [
+{"text": "Providing information only after treatment has been completed", "is_correct": false},
+{"text": "Allowing relatives to make decisions without considering the patient's preferences or legal rights", "is_correct": false},
+{"text": "Withholding information to prevent the family from asking questions", "is_correct": false},
+{"text": "Discussing suitable options, explaining benefits and risks, and considering the patient's informed preferences", "is_correct": true}
+],
+"rationale": "Shared decision-making combines clinical evidence with the patient's values and preferences. The nurse should provide understandable information and respect the patient's right to participate in decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A family caring for a stroke survivor reports exhaustion because one daughter performs nearly all caregiving duties. What should the community health nurse do?",
+"choices": [
+{"text": "Tell the daughter that caregiving is solely her responsibility", "is_correct": false},
+{"text": "Assess caregiver burden and help the family explore shared responsibilities and available support", "is_correct": true},
+{"text": "Advise the family to stop caring for the patient at home immediately", "is_correct": false},
+{"text": "Ignore the caregiver's concerns because the patient is the main focus", "is_correct": false}
+],
+"rationale": "Family-centred care recognises that caregiver wellbeing affects the quality and sustainability of patient care. Assessing caregiver burden and mobilising support can reduce stress and improve care arrangements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A competent adult patient refuses to allow relatives to receive information about their diagnosis. What should the nurse do?",
+"choices": [
+{"text": "Inform the entire family because relatives are responsible for patient care", "is_correct": false},
+{"text": "Ask the community leader to obtain the information", "is_correct": false},
+{"text": "Respect the patient's confidentiality and share information only with authorised persons", "is_correct": true},
+{"text": "Discharge the patient from care for refusing family involvement", "is_correct": false}
+],
+"rationale": "A competent adult has the right to decide who may receive confidential health information. Family involvement should not override the patient's autonomy and privacy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "A community health nurse is planning care for an older patient whose family members disagree about the care arrangements. Which action is most appropriate?",
+"choices": [
+{"text": "Facilitate a discussion that considers the patient's wishes, safety and the family's available caregiving resources", "is_correct": true},
+{"text": "Allow the wealthiest relative to decide without discussion", "is_correct": false},
+{"text": "Ignore the patient's preferences and follow the family's loudest opinion", "is_correct": false},
+{"text": "Withdraw from the case because family disagreement is not a health concern", "is_correct": false}
+],
+"rationale": "Care planning should consider the patient's preferences, clinical needs and available support. Facilitating respectful discussion can help the family reach a safe and practical arrangement without removing the patient's right to participate.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Centred Care Principles",
+"question_text": "Which outcome best indicates that family-centred care has been implemented effectively?",
+"choices": [
+{"text": "The nurse makes all decisions and the family remains uninformed", "is_correct": false},
+{"text": "The family understands the care plan, participates appropriately and knows when to seek further help", "is_correct": true},
+{"text": "The patient avoids all contact with healthcare workers", "is_correct": false},
+{"text": "The family receives instructions that are unrelated to its circumstances", "is_correct": false}
+],
+"rationale": "Effective family-centred care improves understanding, participation and the ability to manage health needs. The family should also know how to recognise warning signs and access further care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Sensitivity in Community Health",
+"question_text": "What is meant by cultural sensitivity in community health nursing?",
+"choices": [
+{"text": "Providing identical care without considering individual differences", "is_correct": false},
+{"text": "Accepting every traditional practice even when it causes harm", "is_correct": false},
+{"text": "Avoiding communication with people whose beliefs differ from the nurse's beliefs", "is_correct": false},
+{"text": "Recognising and respecting cultural beliefs and practices while providing safe, evidence-based care", "is_correct": true}
+],
+"rationale": "Cultural sensitivity involves understanding and respecting cultural differences without compromising patient safety or professional standards. It helps nurses provide care that is acceptable, respectful and clinically appropriate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Sensitivity in Community Health",
+"question_text": "A family in a Ghanaian community believes that a child's illness is caused by spiritual forces and initially refuses hospital assessment. What should the nurse do?",
+"choices": [
+{"text": "Ridicule the family's belief to prove that it is incorrect", "is_correct": false},
+{"text": "Listen respectfully, explore the family's concerns and explain the importance of timely clinical assessment", "is_correct": true},
+{"text": "Agree that medical assessment is unnecessary", "is_correct": false},
+{"text": "End the relationship with the family immediately", "is_correct": false}
+],
+"rationale": "Respectful communication helps the nurse understand the family's beliefs and concerns. The nurse should explain the risks of delaying assessment and encourage appropriate healthcare without insulting the family's culture.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Community Health",
+"question_text": "During a home visit, a nurse discovers that a breastfeeding mother is taking a locally prepared herbal mixture of unknown ingredients. What is the most appropriate response?",
+"choices": [
+{"text": "Encourage her to increase the quantity because it is locally prepared", "is_correct": false},
+{"text": "Tell her that all traditional practices are dangerous", "is_correct": false},
+{"text": "Ask about the preparation and use, assess possible risks and advise her to seek qualified guidance before continuing it", "is_correct": true},
+{"text": "Ignore the practice because it is a family matter", "is_correct": false}
+],
+"rationale": "The nurse should obtain relevant information about the preparation and assess possible risks to the mother and infant. Unknown herbal products may have adverse effects or interact with medicines, so advice should be respectful and evidence-based.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Community Health",
+"question_text": "A nurse is providing health education to a family whose preferred language is different from the nurse's. What should the nurse do to improve understanding?",
+"choices": [
+{"text": "Use an appropriate trained interpreter or trusted language support while protecting confidentiality", "is_correct": true},
+{"text": "Speak more loudly in the nurse's preferred language", "is_correct": false},
+{"text": "Avoid providing health education", "is_correct": false},
+{"text": "Ask a young child to interpret sensitive clinical information whenever possible", "is_correct": false}
+],
+"rationale": "Appropriate language support improves understanding and informed participation. A trained interpreter is preferable for sensitive or complex health discussions, with confidentiality maintained.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Community Health",
+"question_text": "A pregnant woman says that a family elder expects her to follow a traditional practice that may delay emergency obstetric care. What should the nurse prioritise?",
+"choices": [
+{"text": "Accept the practice without assessing its consequences", "is_correct": false},
+{"text": "Tell the woman that her family should no longer be involved in her life", "is_correct": false},
+{"text": "Ignore the possible danger because the practice is culturally important", "is_correct": false},
+{"text": "Assess the risk, explain the need for timely emergency care and support a safe plan that respects the woman's choices", "is_correct": true}
+],
+"rationale": "Cultural respect does not require acceptance of practices that place a pregnant woman or her baby at risk. The nurse should explain the danger, support informed choices and help establish a timely referral plan.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Health Nursing Roles",
+"question_text": "Which of the following is a major role of a community health nurse?",
+"choices": [
+{"text": "Providing healthcare only to patients admitted to tertiary hospitals", "is_correct": false},
+{"text": "Promoting health, preventing disease, providing basic care and facilitating referral within the community", "is_correct": true},
+{"text": "Replacing all medical and specialist services in the district", "is_correct": false},
+{"text": "Providing services only to families who request private care", "is_correct": false}
+],
+"rationale": "Community health nursing focuses on health promotion, disease prevention, basic clinical care and continuity of care within communities. Referral and collaboration with other health professionals are important parts of the role.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Health Nursing Roles",
+"question_text": "A community health nurse observes an increase in diarrhoeal disease cases in a CHPS zone. Which action best reflects the nurse's public health role?",
+"choices": [
+{"text": "Wait until the end of the year to report the cases", "is_correct": false},
+{"text": "Treat only the first patient and ignore the other households", "is_correct": false},
+{"text": "Identify and report the pattern through appropriate surveillance channels while supporting prevention and control measures", "is_correct": true},
+{"text": "Tell residents that diarrhoea is unavoidable during the rainy season", "is_correct": false}
+],
+"rationale": "An increase in cases may indicate a public health problem that requires timely surveillance and response. The nurse should follow reporting procedures and support interventions such as safe water, sanitation, hygiene education and appropriate clinical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Nursing Roles",
+"question_text": "A nurse at a CHPS compound identifies a patient with severe breathing difficulty and reduced consciousness. What should be the immediate priority?",
+"choices": [
+{"text": "Arrange urgent emergency referral while providing appropriate immediate care within scope", "is_correct": true},
+{"text": "Ask the patient to return the following morning", "is_correct": false},
+{"text": "Provide only routine health education", "is_correct": false},
+{"text": "Wait for the patient's relatives to decide whether assessment is necessary", "is_correct": false}
+],
+"rationale": "Severe breathing difficulty and reduced consciousness are life-threatening warning signs. The nurse should initiate urgent assessment and stabilisation within scope and arrange prompt transfer to an appropriate facility.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Nursing Roles",
+"question_text": "Which activity best demonstrates the community health nurse's role as a health educator?",
+"choices": [
+{"text": "Making decisions about household finances", "is_correct": false},
+{"text": "Restricting health information to patients who can read", "is_correct": false},
+{"text": "Providing information without checking whether the audience understands it", "is_correct": false},
+{"text": "Teaching caregivers how to prepare oral rehydration solution correctly and when to seek care", "is_correct": true}
+],
+"rationale": "Health education equips individuals and families with knowledge and skills to prevent illness and respond appropriately to health problems. Demonstration and checking understanding improve the likelihood that caregivers can apply the information correctly.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Health Nursing Roles",
+"question_text": "A community health nurse wants to improve immunisation attendance in a settlement where many caregivers work during clinic hours. Which action is most appropriate?",
+"choices": [
+{"text": "Label the caregivers as careless and stop follow-up", "is_correct": false},
+{"text": "Work with community stakeholders and the health team to identify barriers and explore suitable outreach arrangements", "is_correct": true},
+{"text": "Remove the settlement from the immunisation programme", "is_correct": false},
+{"text": "Provide vaccination records without administering or arranging vaccination", "is_correct": false}
+],
+"rationale": "Low attendance may result from service-access barriers rather than lack of interest. Community engagement and appropriate outreach planning can improve access while following the national immunisation programme's procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Nursing Roles",
+"question_text": "A community health nurse notices that a household has a child with suspected severe acute malnutrition, but the caregiver wants to manage the condition using food supplements alone. What is the priority response?",
+"choices": [
+{"text": "Agree to the plan and review the child after one month", "is_correct": false},
+{"text": "Advise the caregiver to stop feeding the child", "is_correct": false},
+{"text": "Assess for danger signs and complications and arrange prompt assessment through the appropriate malnutrition management pathway", "is_correct": true},
+{"text": "Recommend that the child be isolated from all household members", "is_correct": false}
+],
+"rationale": "Severe acute malnutrition can be life-threatening and requires classification and management according to established protocols. Children with complications or danger signs need urgent clinical assessment rather than unsupervised dietary treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Health Nursing Roles",
+"question_text": "Which action best demonstrates collaboration by a community health nurse?",
+"choices": [
+{"text": "Working with health workers, community leaders, schools and relevant services to address identified health needs", "is_correct": true},
+{"text": "Avoiding communication with other professionals", "is_correct": false},
+{"text": "Making every community health decision independently", "is_correct": false},
+{"text": "Refusing to refer patients to other health facilities", "is_correct": false}
+],
+"rationale": "Collaboration brings together different skills and resources to address complex community health needs. It strengthens coordination, referral, health promotion and continuity of care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "Which of the following best describes an extended family system?",
+"choices": [
+{"text": "A household consisting only of a mother and her children", "is_correct": false},
+{"text": "A household in which no member has a relationship with another", "is_correct": false},
+{"text": "A family arrangement involving relatives beyond parents and their children, such as grandparents, aunts, uncles and cousins", "is_correct": true},
+{"text": "A household consisting only of unrelated individuals", "is_correct": false}
+],
+"rationale": "An extended family includes relatives beyond the immediate nuclear family. Such arrangements can provide childcare, financial assistance, emotional support and caregiving, although responsibilities may vary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "A child whose parents have migrated for work is being cared for by an aunt and grandmother. Which statement best describes the potential role of this arrangement?",
+"choices": [
+{"text": "It automatically means the child is neglected", "is_correct": false},
+{"text": "It is a kinship care arrangement that may provide important family support", "is_correct": true},
+{"text": "It means the child is no longer entitled to healthcare", "is_correct": false},
+{"text": "It prevents the child from having any relationship with the parents", "is_correct": false}
+],
+"rationale": "Kinship care involves relatives providing care for a child when the parents are absent or unable to provide day-to-day care. The nurse should assess the child's safety, wellbeing and the caregivers' capacity rather than making assumptions about the arrangement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "In a polygynous family, a community health nurse discovers that different wives have unequal access to household resources for healthcare. What should the nurse do?",
+"choices": [
+{"text": "Assume that the household head will distribute resources fairly", "is_correct": false},
+{"text": "Provide care only to the first wife", "is_correct": false},
+{"text": "Avoid assessing the health needs of individual family members", "is_correct": false},
+{"text": "Assess each person's health needs and barriers to care without discrimination", "is_correct": true}
+],
+"rationale": "Polygyny involves a man having more than one wife, and household resources may not be distributed equally. The nurse should assess individuals fairly and support equitable access to appropriate healthcare.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "A woman caring for her chronically ill husband says that relatives have stopped helping her and she feels overwhelmed. What should the nurse prioritise?",
+"choices": [
+{"text": "Assess caregiver strain, immediate safety and available support, then help develop a support plan", "is_correct": true},
+{"text": "Tell her that family caregiving should never be shared", "is_correct": false},
+{"text": "Advise her to abandon the patient", "is_correct": false},
+{"text": "Ignore her concerns and focus only on the patient's diagnosis", "is_correct": false}
+],
+"rationale": "Caregiver strain can affect both the caregiver's health and the patient's quality of care. The nurse should assess the situation and help mobilise appropriate family, community and professional support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "Which of the following is an example of an informal family support system?",
+"choices": [
+{"text": "A district hospital outpatient department", "is_correct": false},
+{"text": "A formal social welfare office", "is_correct": false},
+{"text": "A grandmother who provides childcare and emotional support to her daughter's family", "is_correct": true},
+{"text": "A government health insurance administrative office", "is_correct": false}
+],
+"rationale": "Informal support systems consist of assistance from relatives, friends, neighbours and other personal networks. Formal support systems include organised institutions and professional services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "A family caring for a child with a disability reports that the child is excluded from community activities. Which intervention is most appropriate?",
+"choices": [
+{"text": "Advise the family to keep the child indoors", "is_correct": false},
+{"text": "Support the family to identify inclusive community resources and appropriate rehabilitation or educational services", "is_correct": true},
+{"text": "Tell the family that exclusion is a normal part of disability", "is_correct": false},
+{"text": "Discourage the child from interacting with other children", "is_correct": false}
+],
+"rationale": "Children with disabilities should have opportunities for participation, development and social inclusion. The nurse can help families access rehabilitation, educational support and community resources.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "A family relies on an older relative for financial support, childcare and decision-making. The relative is suddenly admitted to hospital. What should the community health nurse assess first?",
+"choices": [
+{"text": "Whether the family can continue its usual recreational activities", "is_correct": false},
+{"text": "Whether the family should immediately change its cultural identity", "is_correct": false},
+{"text": "Whether the household can manage without any outside assistance", "is_correct": false},
+{"text": "Which essential caregiving, financial and health needs are now unmet and require immediate support", "is_correct": true}
+],
+"rationale": "The illness of a key support person can disrupt several essential family functions. The nurse should identify urgent gaps in care and help the family access appropriate alternative support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "Which statement about the use of the National Health Insurance Scheme (NHIS) in family-centred community care is most accurate?",
+"choices": [
+{"text": "It can help eligible members access covered healthcare services, subject to scheme rules and benefit limits", "is_correct": true},
+{"text": "It guarantees that every medicine and service is free in every health facility", "is_correct": false},
+{"text": "It replaces the need for clinical assessment and referral", "is_correct": false},
+{"text": "It covers only people living in urban communities", "is_correct": false}
+],
+"rationale": "NHIS is intended to improve access to healthcare for eligible members through covered services under the scheme's rules. Nurses should help families understand access arrangements without promising that every service or medicine is covered.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "During a family assessment, a nurse discovers that an adolescent is responsible for caring for younger siblings because both parents are frequently away. The adolescent is missing school and appears distressed. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Praise the adolescent for accepting adult responsibilities and take no further action", "is_correct": false},
+{"text": "Tell the adolescent to leave the household immediately", "is_correct": false},
+{"text": "Assess the adolescent's safety, wellbeing and educational needs, then work with appropriate caregivers and support services", "is_correct": true},
+{"text": "Discuss the situation publicly at the next community meeting without consent", "is_correct": false}
+],
+"rationale": "Excessive caregiving responsibilities may affect an adolescent's health, education and development. The nurse should assess for neglect or other safeguarding concerns and coordinate appropriate family and social support while protecting confidentiality.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Support Systems in Ghana",
+"question_text": "A community health nurse wants to identify available support for a family affected by unemployment and chronic illness. Which approach is most appropriate?",
+"choices": [
+{"text": "Assume that neighbours will provide all necessary assistance", "is_correct": false},
+{"text": "Assess the family's existing support network and link it with suitable community, health and social services", "is_correct": true},
+{"text": "Advise the family to avoid all contact with community organisations", "is_correct": false},
+{"text": "Focus only on the family's income and ignore health needs", "is_correct": false}
+],
+"rationale": "A comprehensive assessment identifies both informal and formal sources of support. Linking families with appropriate services can address health, social and practical needs more effectively.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
