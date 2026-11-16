@@ -1,0 +1,875 @@
+{
+"courses": [
+{
+"course_code": "PFC-311-M",
+"course_title": "Patient/Family-Centred Care Study",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Family Assessment",
+"Therapeutic Communication",
+"Genograms and Ecomaps",
+"Patient Advocacy",
+"Home Visiting",
+"Family-Centred Maternity Care",
+"Cultural Sensitivity",
+"Family Support Systems",
+"Partner Involvement in Antenatal Care"
+],
+"questions": [
+{
+"topic": "Family Assessment",
+"question_text": "Which statement best describes family assessment in midwifery practice?",
+"choices": [
+{"text": "A systematic collection of information about family structure, relationships, health needs and available resources", "is_correct": true},
+{"text": "An examination of the pregnant woman without considering her home environment", "is_correct": false},
+{"text": "A process of identifying only the family's financial difficulties", "is_correct": false},
+{"text": "A procedure used exclusively when a woman develops obstetric complications", "is_correct": false}
+],
+"rationale": "Family assessment is a systematic process of identifying the health needs, strengths, relationships and resources of a family. It helps the midwife plan care that considers the woman within her family and social environment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A midwife is assessing a pregnant woman who lives with her husband, children, mother-in-law and husband's younger siblings. Which family structure is being described?",
+"choices": [
+{"text": "Nuclear family", "is_correct": false},
+{"text": "Extended family", "is_correct": true},
+{"text": "Single-parent family", "is_correct": false},
+{"text": "Child-headed household", "is_correct": false}
+],
+"rationale": "An extended family includes relatives beyond the parents and their children, such as grandparents, aunts, uncles and siblings. This structure is common in Ghana and may influence decision-making and support during pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "During antenatal assessment, a woman reports that her husband's relatives make most decisions about her healthcare. What should the midwife do first?",
+"choices": [
+{"text": "Accept the relatives' decisions as final because they are senior family members", "is_correct": false},
+{"text": "Ask the woman privately about her preferences, safety and decision-making needs", "is_correct": true},
+{"text": "Instruct the woman to leave her husband's family immediately", "is_correct": false},
+{"text": "Refuse to provide further antenatal care until the family changes its behaviour", "is_correct": false}
+],
+"rationale": "The midwife should establish the woman's own wishes and assess whether she is experiencing coercion or restricted autonomy. Respectful, confidential communication helps protect her rights while allowing appropriate family involvement with her consent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "Which information is most important when assessing the support available to a pregnant woman?",
+"choices": [
+{"text": "The number of television sets in the household", "is_correct": false},
+{"text": "The occupations of all neighbours", "is_correct": false},
+{"text": "Who can provide transport, emotional support and assistance during emergencies", "is_correct": true},
+{"text": "The family's preferred type of entertainment", "is_correct": false}
+],
+"rationale": "Practical and emotional support can influence whether a woman attends antenatal care, follows a birth plan and reaches a health facility promptly. Identifying available support also helps the midwife address gaps before complications occur.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A woman attending antenatal clinic has a history of hypertension in her mother and sister. Why should the midwife document this information?",
+"choices": [
+{"text": "It establishes that the woman will definitely develop hypertension", "is_correct": false},
+{"text": "It provides relevant family history that may help identify health risks and guide assessment", "is_correct": true},
+{"text": "It removes the need to monitor the woman's blood pressure", "is_correct": false},
+{"text": "It confirms that her relatives must attend every antenatal appointment", "is_correct": false}
+],
+"rationale": "Family history can reveal inherited or shared risk factors that may be relevant to maternal health. It supports risk assessment but does not establish that the woman will necessarily develop the condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "Which of the following is a key purpose of assessing family strengths during pregnancy?",
+"choices": [
+{"text": "To identify resources that can support healthy maternal and newborn outcomes", "is_correct": true},
+{"text": "To determine which family member should control the woman's healthcare", "is_correct": false},
+{"text": "To replace clinical assessment with family opinions", "is_correct": false},
+{"text": "To identify reasons for excluding relatives from maternity care", "is_correct": false}
+],
+"rationale": "A strengths-based assessment identifies existing abilities, relationships and resources that can support the woman. It avoids focusing only on problems and helps the midwife develop realistic care plans with the family.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A pregnant adolescent lives with her aunt, who provides most of her daily care. Her biological parents live elsewhere. Which issue should the midwife particularly clarify during family assessment?",
+"choices": [
+{"text": "Whether the aunt has the same occupation as the adolescent's parents", "is_correct": false},
+{"text": "The adolescent's favourite household activities", "is_correct": false},
+{"text": "The adolescent's support system, safeguarding needs and appropriate consent arrangements", "is_correct": true},
+{"text": "Whether the aunt can independently change all clinical decisions", "is_correct": false}
+],
+"rationale": "Kinship care occurs when relatives such as aunts, grandparents or other family members provide care for a child. The midwife should assess the adolescent's safety, support and legal consent requirements while respecting her confidentiality and evolving capacity.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "Which communication technique involves allowing a client to express feelings without interruption or premature judgement?",
+"choices": [
+{"text": "Confrontation", "is_correct": false},
+{"text": "Active listening", "is_correct": true},
+{"text": "False reassurance", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false}
+],
+"rationale": "Active listening involves giving full attention to the speaker and responding in a way that demonstrates understanding. It helps establish trust and encourages the woman to share concerns relevant to her care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A pregnant woman tells the midwife, 'I am afraid I may die during childbirth.' Which response is most therapeutic?",
+"choices": [
+{"text": "Do not think about death; childbirth is always safe", "is_correct": false},
+{"text": "Other women have given birth, so you should not worry", "is_correct": false},
+{"text": "Can you tell me more about what makes you afraid?", "is_correct": true},
+{"text": "You should stop listening to frightening stories from people", "is_correct": false}
+],
+"rationale": "An open-ended question encourages the woman to explain the source of her fear. This allows the midwife to assess her concerns, provide accurate information and offer appropriate emotional support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "During counselling, a woman becomes tearful after discussing a previous stillbirth. What is the most appropriate initial response by the midwife?",
+"choices": [
+{"text": "Immediately change the topic to avoid upsetting her", "is_correct": false},
+{"text": "Allow her time, remain present and acknowledge her feelings", "is_correct": true},
+{"text": "Tell her that she must be strong for her current pregnancy", "is_correct": false},
+{"text": "Explain that previous pregnancy losses should be forgotten", "is_correct": false}
+],
+"rationale": "Remaining present and acknowledging the woman's feelings demonstrates empathy and emotional support. The midwife should allow her to express grief without minimising the experience or forcing her to discuss more than she wishes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "Which statement is an example of an open-ended question during antenatal counselling?",
+"choices": [
+{"text": "Have you attended antenatal clinic before?", "is_correct": false},
+{"text": "Are you taking your prescribed medication?", "is_correct": false},
+{"text": "Do you have a husband?", "is_correct": false},
+{"text": "How has your family responded to your pregnancy?", "is_correct": true}
+],
+"rationale": "Open-ended questions encourage detailed responses rather than simple yes-or-no answers. They help the midwife understand the woman's experiences, relationships and concerns.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A woman with limited formal education does not understand the midwife's explanation of danger signs in pregnancy. What should the midwife do?",
+"choices": [
+{"text": "Repeat the same technical explanation more loudly", "is_correct": false},
+{"text": "Use simple language, appropriate local-language communication and teach-back", "is_correct": true},
+{"text": "Ask her husband to explain everything without involving her", "is_correct": false},
+{"text": "Assume she understands because she remained silent", "is_correct": false}
+],
+"rationale": "Health information should be communicated in language and terms the woman can understand. Teach-back allows the midwife to check comprehension by asking the woman to explain the information in her own words.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A woman discloses during a private consultation that her partner physically assaults her. What is the midwife's priority response?",
+"choices": [
+{"text": "Confront the partner immediately without discussing safety with the woman", "is_correct": false},
+{"text": "Advise her to tolerate the violence to preserve the marriage", "is_correct": false},
+{"text": "Listen without judgement, assess immediate safety and explain available support and referral options", "is_correct": true},
+{"text": "Share the disclosure with other patients to obtain their opinions", "is_correct": false}
+],
+"rationale": "The midwife should respond confidentially and non-judgementally while assessing immediate danger and the woman's safety needs. Appropriate referral and safeguarding procedures should be followed, with disclosure limited to what is necessary and legally required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "Which action is most likely to interfere with therapeutic communication between a midwife and a pregnant woman?",
+"choices": [
+{"text": "Maintaining appropriate eye contact according to cultural preferences", "is_correct": false},
+{"text": "Using medical jargon that the woman does not understand", "is_correct": true},
+{"text": "Allowing the woman to ask questions", "is_correct": false},
+{"text": "Clarifying information before making assumptions", "is_correct": false}
+],
+"rationale": "Unexplained medical terminology can create confusion and prevent the woman from participating meaningfully in decisions. The midwife should use clear language and confirm understanding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "What is the primary purpose of a genogram in family assessment?",
+"choices": [
+{"text": "To illustrate family structure, relationships and relevant health history across generations", "is_correct": true},
+{"text": "To measure the distance between a home and a health facility", "is_correct": false},
+{"text": "To record only the family's monthly income", "is_correct": false},
+{"text": "To determine the exact date of delivery", "is_correct": false}
+],
+"rationale": "A genogram is a diagrammatic representation of family relationships and structure across generations. It can also document relevant health conditions and relationship patterns that may influence maternity care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "A midwife wants to identify a pregnant woman's connections with her church, workplace, health facility and extended family. Which assessment tool is most appropriate?",
+"choices": [
+{"text": "Partograph", "is_correct": false},
+{"text": "Ecomap", "is_correct": true},
+{"text": "Growth chart", "is_correct": false},
+{"text": "Medication chart", "is_correct": false}
+],
+"rationale": "An ecomap illustrates the relationships and connections between a family and external systems in its environment. It helps identify supportive relationships, stressful connections and gaps in social support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "In a genogram, why is it important to include information about a history of multiple births and inherited conditions where relevant?",
+"choices": [
+{"text": "To predict the exact outcome of every future pregnancy", "is_correct": false},
+{"text": "To replace antenatal investigations", "is_correct": false},
+{"text": "To identify family patterns that may require further clinical assessment or counselling", "is_correct": true},
+{"text": "To determine which relative should supervise the midwife", "is_correct": false}
+],
+"rationale": "A genogram can help identify patterns of inherited conditions and reproductive history across generations. Such findings may guide further assessment, counselling or referral but cannot independently establish a diagnosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "An ecomap shows that a pregnant woman has strong support from her mother and church but experiences conflict with her partner and has difficulty accessing transport. What should the midwife conclude?",
+"choices": [
+{"text": "The woman has no social support because her partner is not supportive", "is_correct": false},
+{"text": "The woman has both protective support systems and important barriers requiring intervention", "is_correct": true},
+{"text": "The church should take responsibility for all clinical decisions", "is_correct": false},
+{"text": "The transport problem is unrelated to maternity care", "is_correct": false}
+],
+"rationale": "An ecomap identifies both supportive and stressful relationships within a woman's social environment. The midwife can build on existing support while developing a realistic transport and safety plan.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "What is patient advocacy in midwifery?",
+"choices": [
+{"text": "Making every healthcare decision on behalf of the woman", "is_correct": false},
+{"text": "Supporting and protecting the woman's rights, preferences, dignity and access to appropriate care", "is_correct": true},
+{"text": "Allowing family members to override the woman's decisions", "is_correct": false},
+{"text": "Providing care only when the woman agrees with the midwife", "is_correct": false}
+],
+"rationale": "Patient advocacy involves protecting the woman's rights and supporting her informed participation in healthcare decisions. It includes promoting dignity, privacy, informed consent and access to appropriate services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A woman in labour refuses a vaginal examination after the midwife explains its purpose. What should the midwife do?",
+"choices": [
+{"text": "Proceed because the examination is part of routine maternity care", "is_correct": false},
+{"text": "Ask the woman's relatives to force her to accept the examination", "is_correct": false},
+{"text": "Respect her decision, explore her concerns and explain alternative ways of monitoring where appropriate", "is_correct": true},
+{"text": "Discharge her immediately for refusing care", "is_correct": false}
+],
+"rationale": "A competent woman has the right to accept or refuse an examination after receiving relevant information. The midwife should explore her concerns, explain the implications and continue appropriate care while documenting the discussion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A pregnant woman who is eligible for NHIS benefits is told that she cannot receive an essential maternity service until she pays an unofficial fee. What is the midwife's most appropriate action?",
+"choices": [
+{"text": "Ignore the matter because payment issues are not related to patient advocacy", "is_correct": false},
+{"text": "Advise her to abandon antenatal care", "is_correct": false},
+{"text": "Clarify her entitlement and help her access the appropriate facility channels for resolving the issue", "is_correct": true},
+{"text": "Pay the fee personally and make no report of the incident", "is_correct": false}
+],
+"rationale": "Advocacy includes helping women navigate barriers to accessing entitled healthcare services. The midwife should clarify applicable NHIS coverage and follow facility procedures to address inappropriate charges without making unsupported promises about coverage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A woman with severe vaginal bleeding after delivery is waiting because her relatives insist that a traditional healer should examine her first. What should the midwife do?",
+"choices": [
+{"text": "Wait until the family completes its preferred traditional treatment", "is_correct": false},
+{"text": "Prioritise emergency assessment and stabilisation, explain the danger and involve the family without delaying urgent care", "is_correct": true},
+{"text": "Discharge the woman because the family disagrees with the facility", "is_correct": false},
+{"text": "Allow the relatives to decide whether the bleeding is serious", "is_correct": false}
+],
+"rationale": "Severe postpartum bleeding is a life-threatening obstetric emergency requiring immediate assessment, resuscitation and escalation. Cultural concerns should be addressed respectfully, but urgent life-saving care must not be delayed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "Which action best demonstrates respect for informed consent during maternity care?",
+"choices": [
+{"text": "Explaining the proposed procedure, its benefits, material risks and alternatives before obtaining voluntary agreement", "is_correct": true},
+{"text": "Obtaining consent only from the woman's husband", "is_correct": false},
+{"text": "Asking the woman to sign a form without explaining the procedure", "is_correct": false},
+{"text": "Assuming consent because the woman attended the health facility", "is_correct": false}
+],
+"rationale": "Informed consent requires understandable information, voluntariness and agreement from the woman who has decision-making capacity. A signature alone does not replace meaningful explanation and an opportunity to ask questions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A woman requests privacy during labour, but several relatives insist on remaining in the delivery room. Which response by the midwife best supports the woman's rights?",
+"choices": [
+{"text": "Allow all relatives to remain because family involvement is always beneficial", "is_correct": false},
+{"text": "Ask the husband to make the final decision about who stays", "is_correct": false},
+{"text": "Explain that the woman's preference for privacy should guide who is present, subject to safety and facility requirements", "is_correct": true},
+{"text": "Refuse to provide care until the family leaves the facility", "is_correct": false}
+],
+"rationale": "The woman has a right to privacy and should be involved in decisions about who is present during her care. The midwife should communicate this respectfully while maintaining appropriate clinical and infection-prevention requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "What is a major purpose of a home visit by a midwife during pregnancy?",
+"choices": [
+{"text": "To replace all scheduled antenatal clinic visits", "is_correct": false},
+{"text": "To assess the woman's home circumstances, identify needs and provide appropriate support or referral", "is_correct": true},
+{"text": "To inspect the household for unrelated legal violations", "is_correct": false},
+{"text": "To allow relatives to make clinical decisions without the woman", "is_correct": false}
+],
+"rationale": "A home visit allows the midwife to understand the woman's living conditions, support systems and possible barriers to care. It complements, rather than replaces, facility-based antenatal assessment and other required clinical services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Visiting",
+"question_text": "Before conducting a routine home visit to a pregnant woman, which action should the midwife take?",
+"choices": [
+{"text": "Visit without identifying herself or explaining the purpose", "is_correct": false},
+{"text": "Obtain or confirm the woman's agreement, plan the visit and review relevant information", "is_correct": true},
+{"text": "Inform every neighbour about the woman's pregnancy", "is_correct": false},
+{"text": "Ask the family to conduct the clinical assessment before arrival", "is_correct": false}
+],
+"rationale": "Preparation includes confirming the visit, clarifying its purpose and reviewing relevant information to ensure that the visit is useful and safe. Respecting consent and confidentiality is essential when providing care in the home.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "During a home visit, a pregnant woman at 34 weeks reports severe headache and blurred vision. What is the midwife's priority action?",
+"choices": [
+{"text": "Advise her to rest and reassess her symptoms at the next scheduled visit", "is_correct": false},
+{"text": "Recommend herbal treatment for the headache", "is_correct": false},
+{"text": "Arrange urgent assessment at an appropriate health facility because of possible severe pre-eclampsia", "is_correct": true},
+{"text": "Ask her to increase her daily water intake and remain at home", "is_correct": false}
+],
+"rationale": "Severe headache and visual disturbance in pregnancy are danger signs that may indicate severe pre-eclampsia. The woman requires urgent clinical assessment and appropriate referral rather than routine follow-up at home.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "A midwife notices during a home visit that a pregnant woman has no reliable transport to the nearest health facility. Which intervention is most appropriate?",
+"choices": [
+{"text": "Document the barrier and work with the woman and available support systems to develop an emergency transport plan", "is_correct": true},
+{"text": "Tell her that transport arrangements are entirely her responsibility", "is_correct": false},
+{"text": "Advise her to deliver at home regardless of her risk status", "is_correct": false},
+{"text": "Wait until labour begins before discussing transport", "is_correct": false}
+],
+"rationale": "A birth preparedness and complication readiness plan should address transport and access to emergency obstetric care. Involving trusted relatives and community resources can reduce delays in reaching a facility.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "During a home visit, a midwife finds that a woman who recently delivered has heavy vaginal bleeding, dizziness and cold clammy skin. What should the midwife do first?",
+"choices": [
+{"text": "Complete the routine home-visit checklist before taking action", "is_correct": false},
+{"text": "Recognise a possible postpartum haemorrhage, activate emergency assistance and arrange urgent transfer while initiating appropriate immediate care", "is_correct": true},
+{"text": "Advise the woman to sleep and return the following day", "is_correct": false},
+{"text": "Ask the family to prepare a traditional herbal drink", "is_correct": false}
+],
+"rationale": "Heavy bleeding with signs of circulatory compromise suggests a potentially life-threatening postpartum haemorrhage. Emergency assistance, immediate management within the midwife's competence and urgent transfer are priorities.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home Visiting",
+"question_text": "Which observation during a home visit is most relevant to assessing the newborn's immediate home environment?",
+"choices": [
+{"text": "The family's preferred television programme", "is_correct": false},
+{"text": "The colour of the household furniture", "is_correct": false},
+{"text": "The availability of a clean sleeping area, warmth and safe newborn-care practices", "is_correct": true},
+{"text": "The number of visitors who attended the naming ceremony", "is_correct": false}
+],
+"rationale": "A safe newborn environment includes appropriate warmth, hygiene and safe sleeping arrangements. Assessing these factors allows the midwife to identify risks and provide practical health education.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Visiting",
+"question_text": "A midwife visits a pregnant woman whose family refuses to allow her to speak privately. The woman appears frightened and avoids answering questions. What is the best next step?",
+"choices": [
+{"text": "Continue asking sensitive questions in front of the family", "is_correct": false},
+{"text": "Respectfully seek an opportunity to speak with the woman privately and assess her safety", "is_correct": true},
+{"text": "Assume that the family is supportive because they are present", "is_correct": false},
+{"text": "End all contact with the woman permanently", "is_correct": false}
+],
+"rationale": "A private conversation may be necessary to assess the woman's autonomy, safety and possible exposure to coercion or abuse. The midwife should avoid actions that could increase risk and follow appropriate safeguarding and referral procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "Which principle is central to family-centred maternity care?",
+"choices": [
+{"text": "The family should make all decisions regardless of the woman's wishes", "is_correct": false},
+{"text": "Care should respect the woman's preferences while involving supportive family members with her consent", "is_correct": true},
+{"text": "All women should receive identical care without considering individual needs", "is_correct": false},
+{"text": "Family members should replace trained health professionals during childbirth", "is_correct": false}
+],
+"rationale": "Family-centred maternity care recognises the importance of the woman's relationships and support systems while maintaining her autonomy. Family participation should be guided by the woman's preferences and informed consent.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "A woman in labour requests that her sister provide emotional support during childbirth. The sister meets facility requirements and the woman continues to want her present. What should the midwife do?",
+"choices": [
+{"text": "Permit the sister's presence in accordance with the woman's preference and facility safety requirements", "is_correct": true},
+{"text": "Insist that only the husband can provide birth companionship", "is_correct": false},
+{"text": "Refuse because relatives have no role in maternity care", "is_correct": false},
+{"text": "Allow the sister to perform clinical procedures during labour", "is_correct": false}
+],
+"rationale": "A chosen birth companion can provide emotional reassurance and support during labour. The woman's preference should guide the choice, while clinical responsibilities remain with qualified healthcare professionals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "A couple attends antenatal education together. Which outcome best demonstrates effective family-centred education?",
+"choices": [
+{"text": "The partner makes all decisions about the woman's delivery", "is_correct": false},
+{"text": "The woman and her partner understand danger signs, birth preparedness and how to seek emergency care", "is_correct": true},
+{"text": "The partner receives information while the woman remains excluded", "is_correct": false},
+{"text": "The couple agrees to avoid facility care unless complications become severe", "is_correct": false}
+],
+"rationale": "Effective antenatal education equips the woman and her chosen support person with knowledge to recognise danger signs and respond appropriately. It strengthens preparedness without transferring the woman's decision-making authority to her partner.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "A woman has an uncomplicated vaginal birth and wishes to begin breastfeeding immediately. Her relatives request that the newborn be taken away for a traditional ceremony first. What should the midwife do?",
+"choices": [
+{"text": "Delay breastfeeding until the relatives complete the ceremony", "is_correct": false},
+{"text": "Explain the benefits of early skin-to-skin contact and breastfeeding, support the woman's choice and discuss safe ways to accommodate cultural practices", "is_correct": true},
+{"text": "Allow relatives to decide when breastfeeding should begin", "is_correct": false},
+{"text": "Separate the newborn from the mother for the remainder of the day", "is_correct": false}
+],
+"rationale": "Early skin-to-skin contact and breastfeeding support newborn thermal regulation, bonding and successful breastfeeding. The midwife should respectfully discuss cultural practices while protecting essential newborn care and the mother's preferences.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "Which action best promotes continuity of family-centred maternity care after childbirth?",
+"choices": [
+{"text": "Providing discharge information only to the relatives", "is_correct": false},
+{"text": "Ending communication with the family once the woman leaves the maternity unit", "is_correct": false},
+{"text": "Arranging appropriate postnatal follow-up and involving the woman and her chosen support person in newborn-care education", "is_correct": true},
+{"text": "Advising the family to seek professional care only when the newborn becomes seriously ill", "is_correct": false}
+],
+"rationale": "Continuity of care connects facility-based maternity services with postnatal follow-up and newborn health services. Education should involve the woman and any support person she chooses, while ensuring that the mother remains central to care decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "A woman with a high-risk pregnancy wishes to involve her mother in discussions about her birth plan. Which approach is most appropriate?",
+"choices": [
+{"text": "Exclude the mother because high-risk care must always be discussed with the woman alone", "is_correct": false},
+{"text": "Invite the mother to participate with the woman's consent while ensuring that clinical decisions remain informed and the woman's preferences are respected", "is_correct": true},
+{"text": "Allow the mother to consent to all procedures on behalf of the woman", "is_correct": false},
+{"text": "Ask the mother to choose the delivery method without consulting the woman", "is_correct": false}
+],
+"rationale": "Family involvement can strengthen support and shared understanding when the woman wants it. However, the woman remains the primary decision-maker when she has capacity to make her own healthcare decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "What is culturally sensitive maternity care?",
+"choices": [
+{"text": "Providing care that respects cultural beliefs and practices while maintaining safety, dignity and evidence-based standards", "is_correct": true},
+{"text": "Accepting every cultural practice even when it causes serious harm", "is_correct": false},
+{"text": "Providing maternity care only according to the midwife's personal beliefs", "is_correct": false},
+{"text": "Avoiding discussion of cultural beliefs during antenatal care", "is_correct": false}
+],
+"rationale": "Culturally sensitive care recognises that beliefs and traditions influence pregnancy and childbirth experiences. The midwife should respect cultural identity while explaining and addressing practices that may create health risks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "A pregnant woman explains that her family expects her to avoid eating certain nutritious foods during pregnancy because they believe these foods will make the baby too large. What should the midwife do?",
+"choices": [
+{"text": "Ridicule the belief and tell her that her family is ignorant", "is_correct": false},
+{"text": "Explore the belief respectfully and provide accurate nutrition information using culturally appropriate examples", "is_correct": true},
+{"text": "Tell her to follow the restriction without assessing its nutritional consequences", "is_correct": false},
+{"text": "Advise her to stop eating all foods prepared by relatives", "is_correct": false}
+],
+"rationale": "The midwife should understand the belief before providing appropriate nutrition counselling. Respectful education can correct misconceptions while helping the woman maintain an adequate and balanced diet.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "A woman requests that a trusted female relative be present during labour because of her cultural and personal preferences. What is the most appropriate response?",
+"choices": [
+{"text": "Dismiss the request because cultural preferences are not relevant to clinical care", "is_correct": false},
+{"text": "Assess the request and facilitate it where possible, with the woman's consent and in accordance with safety requirements", "is_correct": true},
+{"text": "Allow the relative to make all clinical decisions", "is_correct": false},
+{"text": "Tell the woman that she must accept whichever companion the facility chooses", "is_correct": false}
+],
+"rationale": "Respecting the woman's preferred support person can improve comfort and promote a positive childbirth experience. The midwife should facilitate the request when it is compatible with the woman's wishes and safe facility practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "A woman in labour requests to adopt an upright position, but a relative insists that she must lie flat because this is the family's tradition. What should the midwife do?",
+"choices": [
+{"text": "Follow the relative's instruction without consulting the woman", "is_correct": false},
+{"text": "Explain safe labour-position options and support the woman's informed preference when clinically appropriate", "is_correct": true},
+{"text": "Force the woman to remain in the supine position throughout labour", "is_correct": false},
+{"text": "Ask the relative to conduct the delivery", "is_correct": false}
+],
+"rationale": "Women should be supported to use comfortable and appropriate positions during labour when there is no clinical contraindication. The midwife should communicate respectfully with relatives while ensuring that the woman's preferences remain central.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "A family wishes to apply an unsterile substance to the umbilical stump of a newborn as part of a traditional practice. What should the midwife do?",
+"choices": [
+{"text": "Allow the practice because all traditional newborn-care practices are harmless", "is_correct": false},
+{"text": "Explain the risk of infection and recommend clean, dry cord care in accordance with newborn-care guidance", "is_correct": true},
+{"text": "Advise the family to cover the stump tightly with a dirty cloth", "is_correct": false},
+{"text": "Avoid discussing the practice because it may offend the family", "is_correct": false}
+],
+"rationale": "Applying unsterile substances to the umbilical stump can introduce infection and increase the risk of neonatal sepsis. The midwife should explain the risk respectfully and promote recommended clean, dry cord care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "During labour, a woman's relatives insist that she should not receive pain relief because childbirth pain is traditionally considered necessary. The woman privately requests information about available pain-relief options. What should the midwife do?",
+"choices": [
+{"text": "Follow the relatives' preference because they represent the family", "is_correct": false},
+{"text": "Provide balanced information privately and support the woman's informed decision about appropriate pain relief", "is_correct": true},
+{"text": "Tell the woman that pain relief is never appropriate during childbirth", "is_correct": false},
+{"text": "Ask the relatives to approve every clinical intervention", "is_correct": false}
+],
+"rationale": "The woman has the right to receive information and make informed decisions about her care. Cultural beliefs should be approached respectfully, but they should not override her autonomy or access to appropriate pain management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Support Systems",
+"question_text": "Which of the following is an example of a family support system for a pregnant woman in Ghana?",
+"choices": [
+{"text": "A relative who helps arrange transport for antenatal appointments", "is_correct": true},
+{"text": "A stranger who prevents her from attending antenatal clinic", "is_correct": false},
+{"text": "A neighbour who discourages her from reporting danger signs", "is_correct": false},
+{"text": "A family member who withholds essential pregnancy information", "is_correct": false}
+],
+"rationale": "Family support systems provide practical, emotional, financial or informational assistance. Arranging transport for antenatal care is a practical form of support that can improve access to maternal health services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Support Systems",
+"question_text": "A pregnant woman is cared for by her grandmother because her parents work in another region. Which term best describes this arrangement?",
+"choices": [
+{"text": "Nuclear family care", "is_correct": false},
+{"text": "Kinship care", "is_correct": true},
+{"text": "Institutional care", "is_correct": false},
+{"text": "Peer supervision", "is_correct": false}
+],
+"rationale": "Kinship care refers to care provided by relatives or members of the extended family. In Ghana, grandparents and other relatives may play important roles in supporting pregnant women and young mothers.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Support Systems",
+"question_text": "A woman in a polygynous household reports that she receives little support from her husband because his financial responsibilities are shared among several households. What should the midwife do?",
+"choices": [
+{"text": "Assume that all polygynous families provide inadequate support", "is_correct": false},
+{"text": "Assess her actual financial, emotional and practical support needs without making assumptions about the family structure", "is_correct": true},
+{"text": "Tell her that she must leave the household before receiving care", "is_correct": false},
+{"text": "Discuss her situation with other wives without her permission", "is_correct": false}
+],
+"rationale": "Polygyny is a family structure in which a man has more than one wife, but the level of support varies between households. Individual assessment helps the midwife identify the woman's actual needs without stereotyping her family.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Support Systems",
+"question_text": "A woman has no partner or close relatives living nearby but has supportive neighbours and a community health nurse. How should the midwife use this information?",
+"choices": [
+{"text": "Classify the woman as having no possible support system", "is_correct": false},
+{"text": "Develop a support plan that includes appropriate community resources and trusted contacts chosen by the woman", "is_correct": true},
+{"text": "Require her to identify a husband before receiving maternity care", "is_correct": false},
+{"text": "Exclude community health workers from her care plan", "is_correct": false}
+],
+"rationale": "Support systems can include trusted neighbours, community health workers and other community resources, not only biological relatives or partners. The midwife should identify safe and acceptable sources of support with the woman's involvement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Support Systems",
+"question_text": "A woman with limited family support is at risk of missing antenatal appointments because she cannot afford transport. Which intervention is most appropriate?",
+"choices": [
+{"text": "Label her as non-compliant and discontinue follow-up", "is_correct": false},
+{"text": "Explore available community resources, referral options and practical transport arrangements with her", "is_correct": true},
+{"text": "Advise her to attend only when she develops symptoms", "is_correct": false},
+{"text": "Ask her to borrow money without assessing other options", "is_correct": false}
+],
+"rationale": "Financial and transport barriers can prevent timely access to essential maternity services. The midwife should identify practical solutions and appropriate community support rather than blaming the woman.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Support Systems",
+"question_text": "During a family assessment, a midwife discovers that a woman's relatives are supportive but strongly discourage facility delivery because of a previous negative experience. What is the best approach?",
+"choices": [
+{"text": "Dismiss the family's concerns and end the discussion", "is_correct": false},
+{"text": "Listen to their experience, address specific concerns and explain available maternity services and emergency referral arrangements", "is_correct": true},
+{"text": "Promise that complications can never occur at the facility", "is_correct": false},
+{"text": "Tell the woman to hide her birth plan from her relatives", "is_correct": false}
+],
+"rationale": "Understanding the family's concerns can help the midwife address barriers to facility-based maternity care. Accurate information and respectful discussion can support informed birth planning without making unrealistic guarantees.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "Which is a potential benefit of appropriate partner involvement in antenatal care?",
+"choices": [
+{"text": "It transfers the woman's right to make healthcare decisions to her partner", "is_correct": false},
+{"text": "It can improve emotional support, birth preparedness and recognition of pregnancy danger signs", "is_correct": true},
+{"text": "It eliminates the need for professional antenatal assessment", "is_correct": false},
+{"text": "It guarantees an uncomplicated pregnancy and delivery", "is_correct": false}
+],
+"rationale": "Supportive partner involvement can strengthen emotional support and help couples prepare for childbirth and emergencies. It should complement professional care and preserve the woman's autonomy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "A pregnant woman attends antenatal clinic with her partner, who answers every question on her behalf. What should the midwife do?",
+"choices": [
+{"text": "Direct all questions to the partner because he accompanied her", "is_correct": false},
+{"text": "Address the woman directly and offer an opportunity for private discussion", "is_correct": true},
+{"text": "Assume that the partner's answers are always accurate", "is_correct": false},
+{"text": "Ask the partner to sign consent forms for all procedures", "is_correct": false}
+],
+"rationale": "The pregnant woman is the primary recipient of maternity care and should have the opportunity to communicate her own concerns. Private discussion also supports confidentiality and helps identify possible coercion or safety concerns.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "During antenatal education, a midwife teaches a woman's partner how to recognise danger signs such as vaginal bleeding, severe headache and convulsions. What is the main purpose of this education?",
+"choices": [
+{"text": "To make the partner responsible for diagnosing obstetric complications", "is_correct": false},
+{"text": "To enable the partner to recognise warning signs and support prompt access to emergency care", "is_correct": true},
+{"text": "To allow the partner to decide whether professional treatment is necessary", "is_correct": false},
+{"text": "To replace the woman's need for antenatal follow-up", "is_correct": false}
+],
+"rationale": "A knowledgeable partner may help identify danger signs and facilitate timely referral to a health facility. Recognition and support do not make the partner responsible for clinical diagnosis or treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "A woman tells the midwife that she does not want her partner involved in her antenatal consultations. What should the midwife do?",
+"choices": [
+{"text": "Refuse her request because partner involvement is compulsory", "is_correct": false},
+{"text": "Respect her preference and provide confidential care, while exploring any concerns she wishes to discuss", "is_correct": true},
+{"text": "Inform the partner that the woman has refused his involvement", "is_correct": false},
+{"text": "Delay her antenatal care until the partner attends", "is_correct": false}
+],
+"rationale": "Partner involvement should be voluntary and guided by the woman's wishes. Confidential maternity care must not be withheld because a woman chooses not to involve her partner.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "A pregnant woman and her partner are preparing for childbirth. Which action best demonstrates effective birth preparedness?",
+"choices": [
+{"text": "Waiting until labour begins before deciding where to deliver", "is_correct": false},
+{"text": "Identifying the intended delivery facility, transport arrangements, emergency contacts and available resources", "is_correct": true},
+{"text": "Relying entirely on neighbours to identify complications", "is_correct": false},
+{"text": "Avoiding discussion of possible emergencies to prevent anxiety", "is_correct": false}
+],
+"rationale": "Birth preparedness involves planning for normal delivery and possible complications before labour begins. Identifying a facility, transport and emergency contacts can reduce delays in accessing skilled care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "A woman's partner refuses permission for her to receive an urgent referral for suspected severe pre-eclampsia. The woman is conscious and agrees to the referral. What should the midwife do?",
+"choices": [
+{"text": "Cancel the referral because the partner has refused", "is_correct": false},
+{"text": "Respect the woman's informed decision, explain the urgency and arrange appropriate emergency referral", "is_correct": true},
+{"text": "Wait for a family meeting before taking any action", "is_correct": false},
+{"text": "Ask the partner to sign a refusal form on the woman's behalf", "is_correct": false}
+],
+"rationale": "A woman with decision-making capacity has the right to make decisions about her own healthcare. Suspected severe pre-eclampsia requires urgent assessment and management, and a partner's refusal does not override the woman's informed decision.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A midwife is assessing a family in which the pregnant woman is financially dependent on her husband, has limited contact with relatives and reports frequent arguments at home. Which assessment approach is most appropriate?",
+"choices": [
+{"text": "Focus only on the husband's income because financial status is the main determinant of family health", "is_correct": false},
+{"text": "Assess the woman's emotional wellbeing, safety, relationships, practical support and access to resources, including privately where appropriate", "is_correct": true},
+{"text": "Conclude that the family is dysfunctional without further assessment", "is_correct": false},
+{"text": "Ask the husband to complete the assessment without the woman's involvement", "is_correct": false}
+],
+"rationale": "A comprehensive family assessment considers physical, emotional, social and economic factors rather than focusing on one issue. Private assessment is important where relationship conflict or possible coercion may affect the woman's safety and autonomy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A woman who has experienced a previous traumatic birth becomes anxious when the midwife discusses her current birth plan. Which communication approach is most appropriate?",
+"choices": [
+{"text": "Tell her that the previous experience is irrelevant to the current pregnancy", "is_correct": false},
+{"text": "Use a trauma-informed approach, acknowledge her experience and ask what would help her feel safe during care", "is_correct": true},
+{"text": "Avoid discussing the birth plan until labour begins", "is_correct": false},
+{"text": "Tell her that all women experience childbirth in the same way", "is_correct": false}
+],
+"rationale": "Trauma-informed communication recognises the possible effects of previous distressing experiences and seeks to promote safety, trust and choice. It allows the woman to express concerns and participate in planning care that respects her preferences.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A woman is unable to read a consent form and appears uncertain about a proposed procedure. What should the midwife do before proceeding?",
+"choices": [
+{"text": "Ask her to make a mark on the form without further explanation", "is_correct": false},
+{"text": "Explain the procedure in an understandable way, check her understanding and ensure that her decision is voluntary", "is_correct": true},
+{"text": "Obtain consent from another patient who can read", "is_correct": false},
+{"text": "Assume that her attendance at the facility means she has consented", "is_correct": false}
+],
+"rationale": "Inability to read does not remove a woman's right to informed consent. The midwife should provide an accessible explanation, check understanding and follow appropriate procedures for documenting consent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "During a home visit, a woman at 30 weeks of pregnancy reports that she has not felt fetal movements as usual since the previous evening. What is the most appropriate action?",
+"choices": [
+{"text": "Reassure her that reduced fetal movement is normal in late pregnancy", "is_correct": false},
+{"text": "Arrange prompt assessment at a health facility for reduced fetal movements", "is_correct": true},
+{"text": "Advise her to wait until her next routine antenatal appointment", "is_correct": false},
+{"text": "Recommend that she drink a sugary beverage and ignore the symptoms if movement briefly returns", "is_correct": false}
+],
+"rationale": "A reduction or change in the usual pattern of fetal movements requires prompt assessment. The midwife should not delay referral by relying on home remedies or routine follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "A woman in the postnatal ward is having difficulty breastfeeding. Her mother-in-law repeatedly criticises her and insists on giving the newborn water. What should the midwife do first?",
+"choices": [
+{"text": "Allow the mother-in-law to decide because she has more childcare experience", "is_correct": false},
+{"text": "Assess the breastfeeding difficulty, support the mother and respectfully explain appropriate exclusive breastfeeding practices", "is_correct": true},
+{"text": "Tell the woman to stop breastfeeding until her family agrees", "is_correct": false},
+{"text": "Exclude the woman from all newborn-care discussions", "is_correct": false}
+],
+"rationale": "The midwife should assess the breastfeeding problem and provide practical support to the mother. Family education can address misconceptions while preserving the mother's role in decisions about newborn feeding.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "A woman requests that a cultural naming practice be performed after delivery. The practice can be safely accommodated without interfering with essential newborn care. What should the midwife do?",
+"choices": [
+{"text": "Automatically prohibit the practice because it is not a clinical procedure", "is_correct": false},
+{"text": "Support the practice where feasible while ensuring that essential maternal and newborn care is maintained", "is_correct": true},
+{"text": "Allow the practice to delay emergency treatment if a complication develops", "is_correct": false},
+{"text": "Require the woman to abandon all cultural practices during the postnatal period", "is_correct": false}
+],
+"rationale": "Safe cultural practices can be accommodated as part of respectful maternity care. The midwife must ensure that essential interventions, newborn protection and timely treatment of complications are not compromised.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Support Systems",
+"question_text": "A pregnant woman identifies her older sister as the person she trusts most to support her during labour. Her husband is not available because he works outside the region. What should the midwife do?",
+"choices": [
+{"text": "Reject the sister because only husbands can be birth companions", "is_correct": false},
+{"text": "Discuss the woman's preference and facilitate the sister's involvement where appropriate", "is_correct": true},
+{"text": "Require the woman to wait until her husband returns before making a birth plan", "is_correct": false},
+{"text": "Assume that the woman has no support because her husband is absent", "is_correct": false}
+],
+"rationale": "Support can come from any trusted person chosen by the woman, including a sister or other relative. The midwife should assess the woman's preferences and facilitate appropriate support without making assumptions about family roles.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "A partner attends antenatal clinic and asks to know the woman's HIV test result. The woman has not given permission to share it. What should the midwife do?",
+"choices": [
+{"text": "Disclose the result because the partner accompanied the woman", "is_correct": false},
+{"text": "Maintain confidentiality and discuss disclosure with the woman in accordance with applicable guidelines", "is_correct": true},
+{"text": "Give the partner a copy of the woman's entire clinical record", "is_correct": false},
+{"text": "Ask other patients to persuade the woman to disclose her result", "is_correct": false}
+],
+"rationale": "A partner's attendance does not automatically authorise access to confidential health information. The midwife must protect the woman's privacy and follow applicable HIV testing, counselling and disclosure guidelines.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Genograms and Ecomaps",
+"question_text": "A midwife uses a genogram to document that a woman's mother had twins and that two maternal aunts also had twin pregnancies. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The woman will certainly have twins", "is_correct": false},
+{"text": "The family history may be relevant to assessing the possibility of multiple pregnancy, but it does not confirm one", "is_correct": true},
+{"text": "The woman does not need an ultrasound assessment", "is_correct": false},
+{"text": "The genogram establishes the gestational age of the current pregnancy", "is_correct": false}
+],
+"rationale": "A family history of twinning may be relevant, particularly where there is a history of spontaneous fraternal twinning. However, a genogram cannot confirm multiple pregnancy, which requires appropriate clinical assessment and ultrasound where indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment",
+"question_text": "A pregnant woman lives in a crowded compound house with several relatives. She reports that she has no private place to sleep and is frequently exposed to cigarette smoke. Which response best demonstrates comprehensive family assessment?",
+"choices": [
+{"text": "Focus only on the number of people in the household", "is_correct": false},
+{"text": "Assess the effects of overcrowding and smoke exposure, explore feasible household changes and provide appropriate health education", "is_correct": true},
+{"text": "Tell her to leave the household immediately without assessing her circumstances", "is_correct": false},
+{"text": "Ignore the living environment because it is not part of antenatal care", "is_correct": false}
+],
+"rationale": "The home environment can affect maternal health, comfort and exposure to health risks. A comprehensive assessment identifies these concerns and works with the woman and family to develop realistic risk-reduction measures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy",
+"question_text": "A woman in labour requests an explanation before an emergency procedure, but her condition is deteriorating and immediate intervention may be necessary. What should the midwife do?",
+"choices": [
+{"text": "Ignore her completely because emergencies remove all patient rights", "is_correct": false},
+{"text": "Provide a brief, clear explanation and obtain consent where feasible without causing a dangerous delay, following emergency and legal protocols", "is_correct": true},
+{"text": "Wait indefinitely until every relative has arrived", "is_correct": false},
+{"text": "Allow a non-clinical relative to decide whether the procedure is necessary", "is_correct": false}
+],
+"rationale": "Emergency care should respect the woman's autonomy and provide understandable information whenever feasible. If she lacks capacity and urgent treatment is required, the team should follow applicable legal and professional emergency-care protocols while avoiding harmful delay.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication",
+"question_text": "A pregnant woman says, 'My partner does not support this pregnancy, and I feel alone.' Which response best demonstrates empathy?",
+"choices": [
+{"text": "You should have thought about that before becoming pregnant", "is_correct": false},
+{"text": "At least you have a baby to look forward to", "is_correct": false},
+{"text": "It sounds as though you are feeling unsupported. Would you like to tell me more about what has been happening?", "is_correct": true},
+{"text": "You must convince your partner to attend the next clinic visit", "is_correct": false}
+],
+"rationale": "The response acknowledges the woman's feelings and invites her to share more without judgement. Empathy helps establish trust and allows the midwife to assess emotional and practical support needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Visiting",
+"question_text": "A community midwife plans visits to several pregnant women in a rural area. Which woman should receive the earliest urgent assessment or referral?",
+"choices": [
+{"text": "A woman at 20 weeks with no complaints who attended her scheduled antenatal appointment", "is_correct": false},
+{"text": "A woman at 36 weeks with severe headache, visual disturbance and facial swelling", "is_correct": true},
+{"text": "A woman at 24 weeks requesting information about breastfeeding", "is_correct": false},
+{"text": "A woman at 18 weeks asking about suitable exercise during pregnancy", "is_correct": false}
+],
+"rationale": "Severe headache and visual disturbance in pregnancy may indicate severe pre-eclampsia, which can rapidly become life-threatening. This woman requires urgent assessment and referral ahead of routine health education or follow-up visits.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Centred Maternity Care",
+"question_text": "A woman with a newborn who requires specialised care is distressed because she believes that separation means she cannot participate in her baby's care. What should the midwife do?",
+"choices": [
+{"text": "Tell her that newborn care is exclusively the responsibility of neonatal staff", "is_correct": false},
+{"text": "Explain the newborn's care needs and identify safe opportunities for her involvement, including feeding, touch and communication where clinically appropriate", "is_correct": true},
+{"text": "Discourage her from asking questions about the newborn", "is_correct": false},
+{"text": "Promise that the newborn will be discharged immediately", "is_correct": false}
+],
+"rationale": "Family-centred care recognises parents as important participants in the care of their newborn, even when specialised treatment is required. Clear communication and safe involvement can reduce distress and support bonding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Childbirth",
+"question_text": "A woman explains that her family expects her to consume a traditional herbal preparation during pregnancy. She is unsure whether it is safe. What should the midwife do?",
+"choices": [
+{"text": "Assure her that all traditional preparations are safe because they are natural", "is_correct": false},
+{"text": "Ask about the preparation and its ingredients where known, assess possible risks and advise her to avoid unverified substances pending appropriate clinical guidance", "is_correct": true},
+{"text": "Tell her to conceal the preparation from other healthcare workers", "is_correct": false},
+{"text": "Recommend a different herbal preparation without assessing its safety", "is_correct": false}
+],
+"rationale": "Natural or traditional products are not automatically safe during pregnancy, and some may have harmful or unknown effects. A respectful discussion allows the midwife to assess exposure and provide evidence-informed advice without dismissing the woman's cultural background.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Partner Involvement in Antenatal Care",
+"question_text": "A midwife notices that a partner answers questions for the woman, controls her NHIS card and refuses to let her speak privately. The woman appears distressed. What is the most appropriate next action?",
+"choices": [
+{"text": "Continue the consultation with the partner because he controls the household documents", "is_correct": false},
+{"text": "Arrange a safe private conversation with the woman, assess possible coercion or abuse and follow appropriate safeguarding procedures", "is_correct": true},
+{"text": "Confront the partner publicly and accuse him of abuse", "is_correct": false},
+{"text": "Discharge the woman because the partner is interfering with care", "is_correct": false}
+],
+"rationale": "Controlling access to healthcare documents and preventing private communication may indicate coercive control or abuse. The midwife should assess the woman's safety confidentially and follow appropriate safeguarding and referral procedures without increasing her risk.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
