@@ -1,0 +1,710 @@
+{
+"courses": [
+{
+"course_code": "PAD-311-M",
+"course_title": "Paediatric Nursing I",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Neonatal Resuscitation",
+"Essential Newborn Care",
+"Neonatal Jaundice",
+"Prematurity and Low Birth Weight",
+"Kangaroo Mother Care",
+"EPI Immunization",
+"Integrated Management of Childhood Illness",
+"Malnutrition",
+"Common Paediatric Illnesses",
+"Growth Monitoring",
+"Newborn Screening"
+],
+"questions": [
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "What is the primary purpose of the Helping Babies Breathe (HBB) approach?",
+"choices": [
+{"text": "To provide routine immunisation immediately after birth", "is_correct": false},
+{"text": "To identify newborns who do not breathe normally and provide timely resuscitation", "is_correct": true},
+{"text": "To prevent all congenital abnormalities", "is_correct": false},
+{"text": "To manage maternal complications during the third stage of labour", "is_correct": false}
+],
+"rationale": "Helping Babies Breathe is a neonatal resuscitation approach designed to support newborns who fail to breathe effectively at birth. Early recognition and prompt ventilation when indicated are essential to prevent hypoxic injury and neonatal death.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "Which of the following is the most important intervention for a newborn who remains apnoeic or gasping after the initial steps of resuscitation?",
+"choices": [
+{"text": "Routine chest compressions before ventilation", "is_correct": false},
+{"text": "Prompt initiation of effective positive-pressure ventilation", "is_correct": true},
+{"text": "Immediate administration of oral glucose", "is_correct": false},
+{"text": "Prolonged suctioning of the airway", "is_correct": false}
+],
+"rationale": "Effective ventilation is the priority for a newborn who remains apnoeic or gasping after initial steps. Most newborns who require resuscitation respond to effective ventilation, making prompt establishment of chest movement essential.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Essential Newborn Care",
+"question_text": "Which intervention is recommended immediately after birth for a healthy newborn who is breathing normally?",
+"choices": [
+{"text": "Immediate bathing to remove vernix", "is_correct": false},
+{"text": "Thorough drying, warmth and skin-to-skin contact with the mother", "is_correct": true},
+{"text": "Routine separation from the mother for observation", "is_correct": false},
+{"text": "Administration of water before breastfeeding", "is_correct": false}
+],
+"rationale": "Drying and maintaining warmth help prevent neonatal hypothermia. Early skin-to-skin contact also supports thermoregulation, bonding and initiation of breastfeeding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Essential Newborn Care",
+"question_text": "When should breastfeeding ideally be initiated for a healthy newborn who is clinically stable?",
+"choices": [
+{"text": "Within the first hour after birth", "is_correct": true},
+{"text": "After 12 hours", "is_correct": false},
+{"text": "After the first routine immunisation visit", "is_correct": false},
+{"text": "Only when the mother develops breast engorgement", "is_correct": false}
+],
+"rationale": "Early initiation of breastfeeding within the first hour supports colostrum intake and establishes breastfeeding. It also promotes maternal-newborn bonding and provides important immune protection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Jaundice",
+"question_text": "What is the clinical term for yellow discolouration of the skin and sclera caused by elevated bilirubin in a newborn?",
+"choices": [
+{"text": "Cyanosis", "is_correct": false},
+{"text": "Neonatal jaundice", "is_correct": true},
+{"text": "Acrocyanosis", "is_correct": false},
+{"text": "Erythema neonatorum", "is_correct": false}
+],
+"rationale": "Neonatal jaundice is the yellow discolouration of the skin and sclera resulting from increased bilirubin levels. It may be physiological or pathological, and assessment is necessary to identify newborns at risk of bilirubin-related neurological injury.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Prematurity and Low Birth Weight",
+"question_text": "A preterm newborn is one who is born before which gestational age?",
+"choices": [
+{"text": "32 completed weeks", "is_correct": false},
+{"text": "37 completed weeks", "is_correct": true},
+{"text": "40 completed weeks", "is_correct": false},
+{"text": "42 completed weeks", "is_correct": false}
+],
+"rationale": "Preterm birth is defined as birth before 37 completed weeks of gestation. Preterm newborns have increased risks of respiratory problems, hypothermia, feeding difficulties and infection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Prematurity and Low Birth Weight",
+"question_text": "What is the accepted definition of low birth weight?",
+"choices": [
+{"text": "Birth weight below 1,500 g", "is_correct": false},
+{"text": "Birth weight below 2,000 g", "is_correct": false},
+{"text": "Birth weight below 2,500 g, irrespective of gestational age", "is_correct": true},
+{"text": "Birth weight below 3,000 g", "is_correct": false}
+],
+"rationale": "Low birth weight is defined as a birth weight below 2,500 g, regardless of gestational age. It includes newborns who are preterm, small for gestational age or both.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Kangaroo Mother Care",
+"question_text": "What is the central component of Kangaroo Mother Care (KMC)?",
+"choices": [
+{"text": "Prolonged separation of the newborn from the mother", "is_correct": false},
+{"text": "Sustained skin-to-skin contact between the newborn and caregiver", "is_correct": true},
+{"text": "Routine bathing of the newborn every two hours", "is_correct": false},
+{"text": "Feeding the newborn only with formula milk", "is_correct": false}
+],
+"rationale": "Kangaroo Mother Care involves sustained skin-to-skin contact, breast milk feeding and appropriate follow-up for preterm or low-birth-weight newborns. It helps maintain temperature, supports breastfeeding and improves survival.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "What does EPI stand for in child health services?",
+"choices": [
+{"text": "Emergency Paediatric Intervention", "is_correct": false},
+{"text": "Expanded Programme on Immunization", "is_correct": true},
+{"text": "Early Pregnancy Investigation", "is_correct": false},
+{"text": "Essential Paediatric Inspection", "is_correct": false}
+],
+"rationale": "The Expanded Programme on Immunization aims to protect children and other eligible groups against vaccine-preventable diseases. In Ghana, immunisation services are delivered through the Ghana Health Service and other approved health facilities and outreach programmes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "Which vaccine is routinely administered to newborns at birth under the national immunisation programme, subject to current schedule and eligibility?",
+"choices": [
+{"text": "BCG", "is_correct": true},
+{"text": "Measles-rubella vaccine", "is_correct": false},
+{"text": "Human papillomavirus vaccine", "is_correct": false},
+{"text": "Yellow fever vaccine", "is_correct": false}
+],
+"rationale": "BCG is administered early in life to protect against severe forms of childhood tuberculosis. The birth-dose vaccines and timing should be checked against the current Ghana EPI schedule.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Integrated Management of Childhood Illness",
+"question_text": "What is the main purpose of the Integrated Management of Childhood Illness (IMCI) strategy?",
+"choices": [
+{"text": "To manage only childhood surgical conditions", "is_correct": false},
+{"text": "To improve the assessment, classification and management of common childhood illnesses", "is_correct": true},
+{"text": "To replace all specialist paediatric services", "is_correct": false},
+{"text": "To provide immunisation without assessing sick children", "is_correct": false}
+],
+"rationale": "IMCI provides an integrated approach to assessing and managing common childhood illnesses, including pneumonia, diarrhoea, malaria and malnutrition. It also emphasises nutrition, immunisation, caregiver counselling and recognition of danger signs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition",
+"question_text": "Which anthropometric measurement is commonly used to screen children aged 6–59 months for acute malnutrition?",
+"choices": [
+{"text": "Mid-upper arm circumference", "is_correct": true},
+{"text": "Head circumference alone", "is_correct": false},
+{"text": "Chest circumference alone", "is_correct": false},
+{"text": "Maternal abdominal circumference", "is_correct": false}
+],
+"rationale": "Mid-upper arm circumference (MUAC) is a practical screening measure for acute malnutrition in children aged 6–59 months. It is used alongside assessment for bilateral pitting oedema and other clinical findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition",
+"question_text": "Which MUAC measurement indicates severe acute malnutrition in a child aged 6–59 months?",
+"choices": [
+{"text": "12.8 cm", "is_correct": false},
+{"text": "12.2 cm", "is_correct": false},
+{"text": "11.8 cm", "is_correct": false},
+{"text": "Below 11.5 cm", "is_correct": true}
+],
+"rationale": "A MUAC below 11.5 cm indicates severe acute malnutrition in children aged 6–59 months. Bilateral pitting oedema or a weight-for-length/height Z-score below -3 also indicates severe acute malnutrition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition",
+"question_text": "What does RUTF stand for in the management of severe acute malnutrition?",
+"choices": [
+{"text": "Ready-to-Use Therapeutic Food", "is_correct": true},
+{"text": "Routine Universal Feeding Treatment", "is_correct": false},
+{"text": "Rapid Urgent Treatment Formula", "is_correct": false},
+{"text": "Recommended Under-five Therapeutic Fluid", "is_correct": false}
+],
+"rationale": "Ready-to-Use Therapeutic Food is an energy-dense, nutrient-rich food used in the treatment of uncomplicated severe acute malnutrition. It is generally provided through outpatient therapeutic care when the child meets the relevant eligibility criteria.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Growth Monitoring",
+"question_text": "What is the main purpose of growth monitoring in children?",
+"choices": [
+{"text": "To identify growth problems early and guide appropriate interventions", "is_correct": true},
+{"text": "To determine a child's future occupation", "is_correct": false},
+{"text": "To replace all clinical examinations", "is_correct": false},
+{"text": "To assess only the child's immunisation status", "is_correct": false}
+],
+"rationale": "Growth monitoring involves measuring and interpreting a child's growth over time. It helps identify growth faltering and provides an opportunity for nutrition counselling, clinical assessment and referral.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Newborn Screening",
+"question_text": "What is the main purpose of newborn screening?",
+"choices": [
+{"text": "To identify selected conditions early so that timely intervention can prevent complications", "is_correct": true},
+{"text": "To determine the newborn's future intelligence with certainty", "is_correct": false},
+{"text": "To replace routine newborn physical examination", "is_correct": false},
+{"text": "To identify only infectious diseases acquired during labour", "is_correct": false}
+],
+"rationale": "Newborn screening aims to identify selected conditions before serious symptoms develop. Early diagnosis and treatment can reduce disability, complications and avoidable mortality.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn is delivered at a district hospital and does not cry. After drying and stimulation, the baby remains apnoeic. What should the midwife do next?",
+"choices": [
+{"text": "Begin effective positive-pressure ventilation promptly using an appropriately sized mask", "is_correct": true},
+{"text": "Continue stimulation for ten minutes before taking further action", "is_correct": false},
+{"text": "Administer oral glucose", "is_correct": false},
+{"text": "Place the baby in a warm cot and observe without intervention", "is_correct": false}
+],
+"rationale": "A newborn who remains apnoeic after initial steps requires prompt positive-pressure ventilation. Effective ventilation should begin within the first minute of life whenever possible to reduce the risk of hypoxic injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "During neonatal resuscitation, the midwife observes that the newborn's chest is not moving during positive-pressure ventilation. What should be done?",
+"choices": [
+{"text": "Check mask seal and head position, reposition the airway and correct ventilation technique", "is_correct": true},
+{"text": "Stop ventilation and wait for spontaneous breathing", "is_correct": false},
+{"text": "Immediately begin chest compressions without correcting ventilation", "is_correct": false},
+{"text": "Give the newborn oral fluids", "is_correct": false}
+],
+"rationale": "Chest movement indicates that ventilation is being delivered effectively. If the chest does not move, the midwife should correct mask positioning, airway alignment and ventilation technique before considering further steps.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn remains apnoeic despite effective ventilation that produces visible chest movement. The heart rate remains below 60 beats per minute. What should the resuscitation team consider next?",
+"choices": [
+{"text": "Continue ineffective stimulation alone", "is_correct": false},
+{"text": "Initiate coordinated chest compressions with ventilation according to the neonatal resuscitation algorithm", "is_correct": true},
+{"text": "Stop all resuscitation efforts immediately", "is_correct": false},
+{"text": "Administer breast milk through a feeding cup", "is_correct": false}
+],
+"rationale": "A heart rate below 60 beats per minute despite effective ventilation requires escalation according to the neonatal resuscitation algorithm. Coordinated chest compressions and ventilation should be provided by trained personnel while reassessing the heart rate and response.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Essential Newborn Care",
+"question_text": "A newborn is delivered during a rainy night at a rural health facility. Which intervention is most effective in preventing neonatal hypothermia immediately after birth?",
+"choices": [
+{"text": "Dry the newborn thoroughly, remove wet materials and maintain skin-to-skin contact", "is_correct": true},
+{"text": "Bathe the newborn immediately in cool water", "is_correct": false},
+{"text": "Leave the newborn uncovered for observation", "is_correct": false},
+{"text": "Place the newborn near an open window for ventilation", "is_correct": false}
+],
+"rationale": "Newborns lose heat rapidly, especially when wet or exposed to cold environments. Thorough drying, removal of wet materials, warm surroundings and skin-to-skin contact help prevent hypothermia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Essential Newborn Care",
+"question_text": "A mother asks why the midwife recommends colostrum for her newborn. Which explanation is correct?",
+"choices": [
+{"text": "Colostrum is the first milk and contains protective antibodies and nutrients", "is_correct": true},
+{"text": "Colostrum has no nutritional value and should be discarded", "is_correct": false},
+{"text": "Colostrum causes neonatal diarrhoea in all newborns", "is_correct": false},
+{"text": "Colostrum should be replaced with glucose water", "is_correct": false}
+],
+"rationale": "Colostrum is rich in immunological components, particularly secretory IgA, and provides concentrated nutrition. It helps protect the newborn against infection and should not be discarded.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Essential Newborn Care",
+"question_text": "A mother notices that her newborn's umbilical stump is becoming red, swollen and produces pus. What should the midwife advise?",
+"choices": [
+{"text": "Seek prompt assessment because these may be signs of umbilical infection", "is_correct": true},
+{"text": "Apply soil or herbal preparations to the stump", "is_correct": false},
+{"text": "Cover the stump tightly with an unclean cloth", "is_correct": false},
+{"text": "Ignore the findings because all umbilical stumps produce pus", "is_correct": false}
+],
+"rationale": "Redness, swelling and purulent discharge may indicate omphalitis, which can progress to serious neonatal infection. Prompt assessment and treatment are required, together with advice on clean, dry cord care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Jaundice",
+"question_text": "A newborn develops yellow discolouration of the skin within the first 12 hours after birth. What should the midwife do?",
+"choices": [
+{"text": "Recognise possible pathological jaundice and arrange urgent bilirubin assessment and clinical review", "is_correct": true},
+{"text": "Reassure the mother that all jaundice in the first day is physiological", "is_correct": false},
+{"text": "Recommend direct sunlight as the only treatment", "is_correct": false},
+{"text": "Delay assessment until the six-week postnatal visit", "is_correct": false}
+],
+"rationale": "Jaundice appearing within the first 24 hours is abnormal until proven otherwise and may indicate haemolysis, infection or another serious condition. Prompt bilirubin measurement and clinical assessment are necessary to determine the cause and need for treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Jaundice",
+"question_text": "A newborn receiving phototherapy for significant unconjugated hyperbilirubinaemia is being nursed in the neonatal unit. Which nursing intervention is appropriate?",
+"choices": [
+{"text": "Monitor temperature, hydration, feeding and bilirubin levels as prescribed", "is_correct": true},
+{"text": "Apply thick clothing over the entire body during phototherapy", "is_correct": false},
+{"text": "Stop all feeds until phototherapy is completed", "is_correct": false},
+{"text": "Discontinue monitoring once the lights are switched on", "is_correct": false}
+],
+"rationale": "Phototherapy requires monitoring of the newborn's temperature, hydration, feeding and bilirubin response. Eye protection should be used when required by the equipment and protocol, and the treatment should be adjusted according to clinical guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Prematurity and Low Birth Weight",
+"question_text": "A newborn weighing 1,800 g is admitted to a neonatal unit. Which complication requires particular attention because of the newborn's low birth weight and possible prematurity?",
+"choices": [
+{"text": "Hypothermia", "is_correct": true},
+{"text": "Adult-onset hypertension", "is_correct": false},
+{"text": "Osteoarthritis", "is_correct": false},
+{"text": "Cataract caused by ageing", "is_correct": false}
+],
+"rationale": "Low-birth-weight and preterm newborns have limited thermal reserves and a relatively large surface area compared with their body mass. They are therefore at increased risk of hypothermia and require careful thermal protection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Prematurity and Low Birth Weight",
+"question_text": "A preterm newborn has poor suck and swallow coordination but is clinically stable. Which feeding approach is most appropriate?",
+"choices": [
+{"text": "Provide expressed breast milk using an appropriate alternative feeding method, such as cup or feeding tube, according to the newborn's ability", "is_correct": true},
+{"text": "Force direct breastfeeding despite unsafe swallowing", "is_correct": false},
+{"text": "Withhold all feeds until the newborn reaches term", "is_correct": false},
+{"text": "Give plain water as the main source of nutrition", "is_correct": false}
+],
+"rationale": "Preterm newborns may not have mature suck-swallow-breathe coordination and may require alternative feeding methods. Expressed breast milk is preferred, with the method selected according to the newborn's gestational age, stability and feeding ability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Kangaroo Mother Care",
+"question_text": "A mother of a stable low-birth-weight newborn asks how Kangaroo Mother Care benefits her baby. Which response is most appropriate?",
+"choices": [
+{"text": "It helps maintain body temperature, supports breastfeeding and improves survival", "is_correct": true},
+{"text": "It prevents the need for all newborn examinations", "is_correct": false},
+{"text": "It replaces all treatment for neonatal infection", "is_correct": false},
+{"text": "It requires the baby to be separated from the mother during feeding", "is_correct": false}
+],
+"rationale": "Kangaroo Mother Care supports thermal regulation, breastfeeding, bonding and newborn survival. It should be combined with appropriate monitoring and treatment of any clinical complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Kangaroo Mother Care",
+"question_text": "A mother is providing Kangaroo Mother Care to her preterm newborn. Which position is most appropriate?",
+"choices": [
+{"text": "The newborn is held upright against the mother's bare chest, with the head turned to one side and the airway visible", "is_correct": true},
+{"text": "The newborn is placed face down across the mother's abdomen with the nose covered", "is_correct": false},
+{"text": "The newborn is held loosely with the head unsupported", "is_correct": false},
+{"text": "The newborn is wrapped separately and placed several metres from the mother", "is_correct": false}
+],
+"rationale": "The newborn should be positioned upright against the caregiver's bare chest with secure support. The head should be turned to one side with the neck slightly extended so that the airway remains open and visible.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A mother brings her infant to a child welfare clinic in Ghana and reports that the child missed a scheduled vaccine appointment. What should the midwife do?",
+"choices": [
+{"text": "Assess the child's immunisation record and provide appropriate catch-up vaccination according to the current EPI schedule", "is_correct": true},
+{"text": "Restart every vaccine series automatically", "is_correct": false},
+{"text": "Refuse immunisation because the child missed the appointment", "is_correct": false},
+{"text": "Advise the mother to wait until the child is five years old", "is_correct": false}
+],
+"rationale": "Missed vaccine appointments should be addressed through catch-up immunisation based on the child's documented vaccination history and current national guidance. Vaccine series generally do not need to be restarted solely because of a delay.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A child develops mild fever and pain at the injection site after routine immunisation. What should the midwife advise the caregiver?",
+"choices": [
+{"text": "Explain that these may be minor expected reactions and provide appropriate comfort measures and safety-net advice", "is_correct": true},
+{"text": "Tell the caregiver that the child has developed a vaccine-preventable disease", "is_correct": false},
+{"text": "Advise the caregiver never to allow the child to receive another vaccine", "is_correct": false},
+{"text": "Recommend applying unclean substances to the injection site", "is_correct": false}
+],
+"rationale": "Mild fever and local discomfort are common minor reactions following some vaccines. Caregivers should receive advice on comfort measures and the signs of serious adverse events that require prompt medical assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "During an outreach immunisation session, a midwife discovers that the vaccine refrigerator temperature has exceeded the recommended range. What should she do?",
+"choices": [
+{"text": "Quarantine or label the affected vaccines, maintain the cold chain and seek guidance before using them", "is_correct": true},
+{"text": "Use all vaccines immediately before they become warm", "is_correct": false},
+{"text": "Discard every vaccine without following facility procedures", "is_correct": false},
+{"text": "Place the vaccines in direct sunlight to restore their temperature", "is_correct": false}
+],
+"rationale": "Exposure to temperatures outside the recommended range may compromise vaccine potency. The affected vaccines should be separated from usable stock and managed according to cold-chain procedures and guidance from the immunisation supervisor.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integrated Management of Childhood Illness",
+"question_text": "A mother brings her two-year-old child to a health facility with cough and difficult breathing. Which finding is an important general danger sign under IMCI?",
+"choices": [
+{"text": "The child is unable to drink or breastfeed", "is_correct": true},
+{"text": "The child has a mild runny nose", "is_correct": false},
+{"text": "The child has a normal appetite", "is_correct": false},
+{"text": "The child is playing actively in the waiting area", "is_correct": false}
+],
+"rationale": "Inability to drink or breastfeed is a general danger sign in IMCI and may indicate severe illness. The child requires urgent assessment and appropriate referral or admission according to the classification.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integrated Management of Childhood Illness",
+"question_text": "A three-year-old child presents with cough and fast breathing. The respiratory rate is 48 breaths per minute. What is the most appropriate interpretation using IMCI principles?",
+"choices": [
+{"text": "The respiratory rate is normal for the child's age", "is_correct": false},
+{"text": "The child has fast breathing and requires assessment for pneumonia", "is_correct": true},
+{"text": "The child has severe dehydration", "is_correct": false},
+{"text": "The child has no respiratory problem because there is no fever", "is_correct": false}
+],
+"rationale": "For a child aged 12 months up to 5 years, a respiratory rate of 40 breaths per minute or more is classified as fast breathing in the standard IMCI assessment. The child should be assessed for chest indrawing, general danger signs and other features that determine pneumonia classification and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integrated Management of Childhood Illness",
+"question_text": "A mother brings her 18-month-old child with diarrhoea. The child is restless, has sunken eyes and drinks eagerly when offered fluids. Which dehydration classification is most likely?",
+"choices": [
+{"text": "No dehydration", "is_correct": false},
+{"text": "Some dehydration", "is_correct": true},
+{"text": "Severe dehydration", "is_correct": false},
+{"text": "Fluid overload", "is_correct": false}
+],
+"rationale": "Restlessness, sunken eyes and eager drinking are findings consistent with some dehydration under IMCI. The child should receive the recommended oral rehydration treatment and continued feeding, with reassessment and caregiver counselling.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integrated Management of Childhood Illness",
+"question_text": "A child with diarrhoea is classified as having some dehydration under IMCI. Which management is most appropriate?",
+"choices": [
+{"text": "Give oral rehydration solution according to Plan B, continue feeding and reassess", "is_correct": true},
+{"text": "Withhold all fluids for 24 hours", "is_correct": false},
+{"text": "Give antibiotics routinely to every child with diarrhoea", "is_correct": false},
+{"text": "Use intravenous fluids immediately in every case regardless of clinical condition", "is_correct": false}
+],
+"rationale": "Plan B uses oral rehydration solution to replace fluid losses in children with some dehydration. Continued feeding, appropriate zinc supplementation under national guidance and reassessment are important components of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A child aged 20 months has a MUAC of 11.2 cm but is alert, has a good appetite and no medical complications. Which classification is appropriate?",
+"choices": [
+{"text": "Severe acute malnutrition", "is_correct": true},
+{"text": "Moderate acute malnutrition", "is_correct": false},
+{"text": "Normal nutritional status", "is_correct": false},
+{"text": "Overnutrition", "is_correct": false}
+],
+"rationale": "A MUAC below 11.5 cm indicates severe acute malnutrition in children aged 6–59 months. A child without medical complications who has a good appetite may be eligible for outpatient therapeutic management after full assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A child aged 30 months is diagnosed with uncomplicated severe acute malnutrition and passes the appetite test. Which management approach is most appropriate?",
+"choices": [
+{"text": "Enrol the child in outpatient therapeutic care with RUTF and scheduled follow-up", "is_correct": true},
+{"text": "Admit every such child for prolonged inpatient treatment regardless of condition", "is_correct": false},
+{"text": "Give only plain water until the MUAC improves", "is_correct": false},
+{"text": "Discontinue all nutrition follow-up after the first visit", "is_correct": false}
+],
+"rationale": "Children with uncomplicated severe acute malnutrition who pass the appetite test can generally be managed through outpatient therapeutic care. RUTF, routine medical treatment where indicated, caregiver education and regular monitoring support recovery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A child with severe acute malnutrition presents with bilateral pitting oedema, lethargy and poor appetite. What is the most appropriate action?",
+"choices": [
+{"text": "Arrange urgent inpatient assessment and management for complicated severe acute malnutrition", "is_correct": true},
+{"text": "Manage the child at home with ordinary family meals only", "is_correct": false},
+{"text": "Discharge the child because oedema indicates adequate nutrition", "is_correct": false},
+{"text": "Give unrestricted high-protein feeds immediately without assessment", "is_correct": false}
+],
+"rationale": "Bilateral pitting oedema is a diagnostic feature of severe acute malnutrition, and lethargy and poor appetite suggest complications. The child requires urgent inpatient management using the recommended stabilisation approach.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth Monitoring",
+"question_text": "During a child welfare clinic, a midwife plots a child's weight on the growth chart and observes that the weight has remained unchanged over several visits. What should she do?",
+"choices": [
+{"text": "Assess feeding practices, recent illness and possible growth faltering, then counsel or refer as indicated", "is_correct": true},
+{"text": "Assume that the child is growing normally because the weight has not decreased", "is_correct": false},
+{"text": "Stop measuring the child's weight", "is_correct": false},
+{"text": "Advise the caregiver to give the child appetite stimulants without assessment", "is_correct": false}
+],
+"rationale": "Failure to gain weight over repeated visits may indicate growth faltering and requires further assessment. The midwife should explore dietary intake, feeding difficulties, illness and social factors before planning appropriate interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A four-year-old child presents with fever, vomiting and convulsions in a malaria-endemic area of Ghana. What is the most appropriate action?",
+"choices": [
+{"text": "Treat the child as a possible severe illness, stabilise immediately and arrange urgent assessment and management for severe malaria or other causes", "is_correct": true},
+{"text": "Give oral antimalarial medication at home and advise routine follow-up in one week", "is_correct": false},
+{"text": "Assume that all convulsions in children are caused by malaria", "is_correct": false},
+{"text": "Delay treatment until the child can eat a full meal", "is_correct": false}
+],
+"rationale": "Convulsions in a febrile child are a danger sign and may indicate severe malaria, meningitis or another serious illness. Immediate stabilisation, urgent clinical assessment and appropriate treatment or referral are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A child with diarrhoea has blood mixed with the stool. What should the midwife suspect?",
+"choices": [
+{"text": "Dysentery", "is_correct": true},
+{"text": "Uncomplicated constipation", "is_correct": false},
+{"text": "Physiological reflux", "is_correct": false},
+{"text": "Normal stool variation during teething", "is_correct": false}
+],
+"rationale": "Blood in the stool is a key feature of dysentery and requires clinical assessment and appropriate treatment. The midwife should also assess hydration and other danger signs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A six-month-old infant presents with cough, chest indrawing and difficulty feeding. What should the midwife do?",
+"choices": [
+{"text": "Recognise possible severe pneumonia, assess urgently and arrange appropriate emergency management or referral", "is_correct": true},
+{"text": "Advise the mother to give cough syrup and return after one week", "is_correct": false},
+{"text": "Reassure the mother that chest indrawing is normal in infancy", "is_correct": false},
+{"text": "Stop breastfeeding until the cough resolves", "is_correct": false}
+],
+"rationale": "Chest indrawing and difficulty feeding in an infant with cough are concerning signs that require urgent assessment for severe respiratory illness. The midwife should assess oxygenation and danger signs, initiate appropriate care within scope and arrange referral or admission as indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Newborn Screening",
+"question_text": "A newborn is scheduled for screening for sickle cell disease. Which statement best explains the purpose of the test to the mother?",
+"choices": [
+{"text": "It helps identify babies with sickle cell disease or relevant haemoglobin variants so that early care can be arranged", "is_correct": true},
+{"text": "It determines whether the baby will develop malaria", "is_correct": false},
+{"text": "It confirms the baby's future academic performance", "is_correct": false},
+{"text": "It replaces all future clinical examinations", "is_correct": false}
+],
+"rationale": "Newborn screening for haemoglobin disorders can identify infants with sickle cell disease before serious complications develop. Early linkage to appropriate care, immunisation, caregiver education and follow-up improves health outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn is delivered through meconium-stained amniotic fluid but is breathing well and has good muscle tone. What should the midwife do?",
+"choices": [
+{"text": "Provide routine newborn care and assess the baby's ongoing clinical condition", "is_correct": true},
+{"text": "Perform routine deep tracheal suctioning before any other care", "is_correct": false},
+{"text": "Withhold skin-to-skin contact until the newborn passes stool", "is_correct": false},
+{"text": "Begin chest compressions immediately", "is_correct": false}
+],
+"rationale": "Routine tracheal suctioning is not recommended for a vigorous newborn born through meconium-stained fluid. The midwife should provide standard care and initiate resuscitation only if the newborn fails to breathe effectively or develops other signs requiring intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neonatal Jaundice",
+"question_text": "A newborn develops jaundice at 18 hours of age. The mother is blood group O positive, and the newborn is A positive. Which explanation is most clinically relevant?",
+"choices": [
+{"text": "Possible ABO incompatibility causing haemolysis and early hyperbilirubinaemia", "is_correct": true},
+{"text": "Normal physiological jaundice that never requires investigation", "is_correct": false},
+{"text": "Breast milk jaundice caused by exclusive breastfeeding", "is_correct": false},
+{"text": "Jaundice caused by normal umbilical cord separation", "is_correct": false}
+],
+"rationale": "Maternal group O and newborn group A may be associated with ABO incompatibility and haemolysis. Jaundice within the first 24 hours requires urgent bilirubin assessment and investigation for pathological causes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Prematurity and Low Birth Weight",
+"question_text": "A preterm newborn develops grunting, nasal flaring, chest retractions and central cyanosis shortly after birth. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Respiratory distress syndrome", "is_correct": true},
+{"text": "Physiological jaundice", "is_correct": false},
+{"text": "Uncomplicated neonatal weight loss", "is_correct": false},
+{"text": "Normal transition to extrauterine life", "is_correct": false}
+],
+"rationale": "Grunting, nasal flaring, retractions and central cyanosis indicate respiratory distress. Preterm newborns are at increased risk of respiratory distress syndrome due to surfactant deficiency and require urgent respiratory assessment and support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Kangaroo Mother Care",
+"question_text": "A low-birth-weight newborn receiving Kangaroo Mother Care becomes lethargic, feeds poorly and has a temperature of 35.2°C. What should the midwife do?",
+"choices": [
+{"text": "Recognise possible hypothermia and serious illness, initiate appropriate warming and arrange urgent clinical assessment", "is_correct": true},
+{"text": "Continue routine KMC without reassessing the newborn", "is_correct": false},
+{"text": "Bathe the newborn to improve circulation", "is_correct": false},
+{"text": "Stop all feeding and discharge the newborn", "is_correct": false}
+],
+"rationale": "A temperature of 35.2°C indicates hypothermia, while lethargy and poor feeding may indicate infection or another serious complication. The newborn requires immediate thermal support, assessment of vital signs and urgent clinical management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Integrated Management of Childhood Illness",
+"question_text": "A two-year-old child presents with diarrhoea, lethargy, sunken eyes and inability to drink. Which IMCI classification and action are most appropriate?",
+"choices": [
+{"text": "Severe dehydration; initiate urgent rehydration and referral or facility management according to Plan C", "is_correct": true},
+{"text": "No dehydration; advise routine home care only", "is_correct": false},
+{"text": "Some dehydration; give only small amounts of water at home", "is_correct": false},
+{"text": "Dysentery; administer antibiotics without assessing hydration", "is_correct": false}
+],
+"rationale": "Lethargy, sunken eyes and inability to drink are findings consistent with severe dehydration when the required IMCI criteria are met. The child needs urgent rehydration, generally using Plan C with close monitoring and referral or admission as appropriate.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A child aged 18 months has bilateral pitting oedema of both feet, even though the measured MUAC is 12.0 cm. How should the child be classified?",
+"choices": [
+{"text": "Severe acute malnutrition because bilateral pitting oedema is present", "is_correct": true},
+{"text": "Normal nutritional status because MUAC is above 11.5 cm", "is_correct": false},
+{"text": "Moderate acute malnutrition only", "is_correct": false},
+{"text": "Overweight because oedema increases body weight", "is_correct": false}
+],
+"rationale": "Bilateral pitting nutritional oedema is independently sufficient to classify a child as having severe acute malnutrition. A MUAC value above 11.5 cm does not exclude severe acute malnutrition when oedema is present.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A child with severe acute malnutrition is admitted with hypothermia, lethargy and poor appetite. Which approach should guide the initial management?",
+"choices": [
+{"text": "Follow the stabilisation phase of severe acute malnutrition management, addressing hypoglycaemia, hypothermia, infection and fluid or electrolyte problems", "is_correct": true},
+{"text": "Begin unrestricted high-protein feeding immediately", "is_correct": false},
+{"text": "Give large volumes of intravenous fluid routinely without clinical assessment", "is_correct": false},
+{"text": "Discharge the child once RUTF has been prescribed", "is_correct": false}
+],
+"rationale": "Complicated severe acute malnutrition requires careful inpatient stabilisation because the child is at risk of metabolic and infectious complications. Initial management follows established protocols for hypoglycaemia, hypothermia, infection and fluid or electrolyte disturbances before rehabilitation feeding is advanced.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A child aged three years presents with fever, convulsions and neck stiffness at a district hospital. Which action should receive the highest priority?",
+"choices": [
+{"text": "Stabilise the child, protect the airway, assess for serious infection and arrange urgent treatment or referral", "is_correct": true},
+{"text": "Assume the child has uncomplicated malaria and discharge after oral medication", "is_correct": false},
+{"text": "Delay assessment until the convulsion occurs again", "is_correct": false},
+{"text": "Give oral fluids while the child is actively convulsing", "is_correct": false}
+],
+"rationale": "Fever, convulsions and neck stiffness raise concern for meningitis or another severe central nervous system infection. Airway protection, seizure management, urgent clinical assessment and prompt treatment are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Growth Monitoring",
+"question_text": "A child has a weight-for-age trajectory that has crossed downward through several major centile lines over successive child welfare visits. What is the most appropriate interpretation?",
+"choices": [
+{"text": "Possible growth faltering requiring assessment of nutrition, illness and feeding practices", "is_correct": true},
+{"text": "Normal growth because the child is still gaining some weight", "is_correct": false},
+{"text": "Evidence of obesity", "is_correct": false},
+{"text": "Proof that the growth chart was used incorrectly", "is_correct": false}
+],
+"rationale": "Downward crossing of growth centile lines may indicate growth faltering even when the child's weight has not decreased. The midwife should assess the child's feeding, dietary intake, health status and social circumstances and plan appropriate follow-up.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Newborn Screening",
+"question_text": "A newborn screening result indicates that the infant may have sickle cell disease. The baby appears healthy and has no symptoms. What should the midwife advise?",
+"choices": [
+{"text": "Arrange confirmatory testing and early linkage to appropriate sickle cell care", "is_correct": true},
+{"text": "Ignore the result because affected newborns are always visibly ill", "is_correct": false},
+{"text": "Start lifelong medication without confirming the diagnosis or obtaining clinical review", "is_correct": false},
+{"text": "Wait until the child develops a painful crisis before arranging follow-up", "is_correct": false}
+],
+"rationale": "Newborns with sickle cell disease are often asymptomatic at birth because fetal haemoglobin provides early protection. Confirmatory testing and early linkage to care allow preventive interventions, caregiver education and monitoring before complications develop."
+,
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn is apnoeic at birth. The midwife dries and stimulates the baby, positions the airway and begins positive-pressure ventilation. After effective ventilation, the heart rate rises from 50 to 110 beats per minute and spontaneous breathing begins. What should the midwife do next?",
+"choices": [
+{"text": "Stop ventilation when spontaneous breathing is adequate and continue close observation and supportive care", "is_correct": true},
+{"text": "Continue positive-pressure ventilation indefinitely", "is_correct": false},
+{"text": "Begin chest compressions because the newborn initially had bradycardia", "is_correct": false},
+{"text": "Immediately separate the newborn from the mother without clinical indication", "is_correct": false}
+],
+"rationale": "The rise in heart rate and establishment of spontaneous breathing indicate a successful response to ventilation. Once the newborn is breathing effectively, ventilation can be discontinued while ongoing assessment and thermal support continue.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Essential Newborn Care",
+"question_text": "A newborn becomes cold after being left uncovered during routine weighing. The temperature is 35.5°C. Which action is the most appropriate priority?",
+"choices": [
+{"text": "Provide immediate rewarming, preferably through skin-to-skin contact or an appropriate warming device, and monitor temperature", "is_correct": true},
+{"text": "Bathe the newborn in warm water and leave the baby uncovered", "is_correct": false},
+{"text": "Give oral water and repeat the temperature the following day", "is_correct": false},
+{"text": "Place the newborn near an open window", "is_correct": false}
+],
+"rationale": "A temperature of 35.5°C indicates neonatal hypothermia and requires prompt rewarming. The midwife should maintain a warm environment, assess for associated illness and monitor the temperature until it normalises.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A child with suspected malaria has repeated vomiting, altered consciousness and severe weakness. A caregiver requests oral antimalarial medication to take home. What should the midwife do?",
+"choices": [
+{"text": "Recognise possible severe malaria, arrange urgent hospital management and avoid relying on oral outpatient treatment", "is_correct": true},
+{"text": "Give oral medication and discharge the child immediately", "is_correct": false},
+{"text": "Advise the caregiver to use herbal preparations instead", "is_correct": false},
+{"text": "Delay treatment until the child can tolerate a full meal", "is_correct": false}
+],
+"rationale": "Altered consciousness, repeated vomiting and severe weakness are concerning for severe malaria or another life-threatening illness. The child requires urgent assessment and appropriate parenteral treatment under the national severe malaria protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "During a child welfare clinic, a caregiver reports that her child developed facial swelling, breathing difficulty and collapse shortly after a previous vaccine. What should the midwife do before administering another dose of that vaccine?",
+"choices": [
+{"text": "Treat the history as possible anaphylaxis, arrange clinical assessment and follow adverse-event and immunisation guidance before further vaccination", "is_correct": true},
+{"text": "Administer the same vaccine immediately without further assessment", "is_correct": false},
+{"text": "Advise the caregiver that all vaccines are permanently contraindicated", "is_correct": false},
+{"text": "Ignore the history because severe allergic reactions never occur after vaccination", "is_correct": false}
+],
+"rationale": "Breathing difficulty and collapse after vaccination may indicate anaphylaxis, a serious adverse event following immunisation. The event must be clinically reviewed and reported according to national guidance before decisions about further doses are made.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
