@@ -1,0 +1,680 @@
+{
+"courses": [
+{
+"course_code": "AND-311-M",
+"course_title": "Advanced Nursing III",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Midwifery Assessment",
+"Critical Care in Obstetrics",
+"Advanced Wound Management",
+"Emergency Nursing in Midwifery",
+"End-of-Life Care in Obstetrics",
+"Advanced Clinical Decision-Making"
+],
+"questions": [
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "Which of the following best describes advanced midwifery assessment?",
+"choices": [
+{"text": "A systematic evaluation of maternal and fetal health using clinical history, physical examination and appropriate investigations", "is_correct": true},
+{"text": "The routine recording of maternal weight without further examination", "is_correct": false},
+{"text": "The assessment of the fetus without considering maternal health", "is_correct": false},
+{"text": "The administration of medication before obtaining a clinical history", "is_correct": false}
+],
+"rationale": "Advanced midwifery assessment integrates history-taking, physical examination, maternal observations, fetal assessment and relevant investigations. It supports early identification of complications and appropriate clinical decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "A pregnant woman at 34 weeks' gestation attends a district hospital with severe headache, blurred vision and epigastric pain. What should the midwife suspect?",
+"choices": [
+{"text": "Normal discomforts of late pregnancy", "is_correct": false},
+{"text": "Hyperemesis gravidarum", "is_correct": false},
+{"text": "Severe pre-eclampsia with possible impending eclampsia", "is_correct": true},
+{"text": "Physiological anaemia of pregnancy", "is_correct": false}
+],
+"rationale": "Severe headache, visual disturbances and epigastric pain are warning features of severe pre-eclampsia. The woman requires urgent assessment, maternal and fetal monitoring and management according to the emergency obstetric protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "Which clinical measurement is most important for assessing the severity of hypertension in a pregnant woman?",
+"choices": [
+{"text": "Maternal height", "is_correct": false},
+{"text": "Blood pressure", "is_correct": true},
+{"text": "Abdominal circumference", "is_correct": false},
+{"text": "Mid-upper arm circumference", "is_correct": false}
+],
+"rationale": "Blood pressure measurement is essential in identifying and monitoring hypertensive disorders of pregnancy. Accurate technique and repeat measurements are important when assessing suspected hypertension.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "A woman at 32 weeks' gestation reports that fetal movements have reduced considerably since the previous day. What should the midwife do?",
+"choices": [
+{"text": "Reassure her that reduced fetal movement is expected in the third trimester", "is_correct": false},
+{"text": "Advise her to wait until the next antenatal appointment", "is_correct": false},
+{"text": "Recommend increased fluid intake and no further assessment", "is_correct": false},
+{"text": "Arrange prompt assessment of fetal wellbeing, including fetal heart rate evaluation", "is_correct": true}
+],
+"rationale": "Reduced fetal movement may indicate fetal compromise and requires prompt assessment. The midwife should not dismiss the complaint or delay evaluation until the next routine visit.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "Which investigation is commonly used to assess fetal growth and amniotic fluid volume when a pregnancy complication is suspected?",
+"choices": [
+{"text": "Obstetric ultrasound examination", "is_correct": true},
+{"text": "Maternal stool microscopy", "is_correct": false},
+{"text": "Electrocardiography of the mother alone", "is_correct": false},
+{"text": "Urine culture only", "is_correct": false}
+],
+"rationale": "Obstetric ultrasound can assess fetal biometry, estimated fetal weight, amniotic fluid volume and other aspects of fetal wellbeing. Findings must be interpreted alongside the clinical assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "A woman at 36 weeks' gestation presents with painless bright-red vaginal bleeding. What is the most appropriate initial clinical suspicion?",
+"choices": [
+{"text": "Uterine rupture", "is_correct": false},
+{"text": "Placenta praevia", "is_correct": true},
+{"text": "Normal bloody show", "is_correct": false},
+{"text": "Hyperemesis gravidarum", "is_correct": false}
+],
+"rationale": "Painless bright-red vaginal bleeding in late pregnancy is a classical presentation of placenta praevia. The midwife should assess maternal stability and fetal wellbeing and avoid digital vaginal examination until placenta praevia has been excluded.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "A pregnant woman presents with vaginal bleeding, severe abdominal pain and a rigid, tender uterus. Her blood pressure is falling. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Placenta praevia without complications", "is_correct": false},
+{"text": "Physiological uterine contractions", "is_correct": false},
+{"text": "Abruptio placentae with possible maternal haemorrhage", "is_correct": true},
+{"text": "Braxton Hicks contractions", "is_correct": false}
+],
+"rationale": "Painful bleeding, uterine tenderness and rigidity are characteristic features of placental abruption. Falling blood pressure suggests haemodynamic compromise, requiring urgent resuscitation and obstetric intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "Which maternal observation is particularly useful for detecting early deterioration in a woman with suspected obstetric sepsis?",
+"choices": [
+{"text": "Hair condition", "is_correct": false},
+{"text": "Nail length", "is_correct": false},
+{"text": "Maternal shoe size", "is_correct": false},
+{"text": "Respiratory rate", "is_correct": true}
+],
+"rationale": "Respiratory rate is an important indicator of physiological deterioration and may become abnormal early in severe infection. It should be assessed alongside temperature, pulse, blood pressure, oxygen saturation and mental status.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Midwifery Assessment",
+"question_text": "A woman in labour has a maternal temperature of 39°C, pulse rate of 124 beats per minute and uterine tenderness. What is the priority nursing action?",
+"choices": [
+{"text": "Suspect infection, initiate urgent assessment and escalate for prompt obstetric management", "is_correct": true},
+{"text": "Encourage her to sleep and reassess after delivery", "is_correct": false},
+{"text": "Document the findings as normal labour changes", "is_correct": false},
+{"text": "Administer an oral analgesic and discharge her", "is_correct": false}
+],
+"rationale": "Fever, tachycardia and uterine tenderness raise concern for intra-amniotic infection or another serious infection. Prompt clinical assessment, appropriate investigations and timely treatment are necessary to reduce maternal and fetal complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "Which condition is characterised by new-onset hypertension after 20 weeks of pregnancy accompanied by proteinuria or evidence of maternal organ dysfunction?",
+"choices": [
+{"text": "Gestational diabetes mellitus", "is_correct": false},
+{"text": "Pre-eclampsia", "is_correct": true},
+{"text": "Placenta praevia", "is_correct": false},
+{"text": "Hyperemesis gravidarum", "is_correct": false}
+],
+"rationale": "Pre-eclampsia is a hypertensive disorder that develops after 20 weeks of gestation and may involve proteinuria or maternal organ dysfunction. It can progress to life-threatening complications affecting the mother and fetus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "A woman with severe pre-eclampsia develops a generalised tonic-clonic seizure. What is the immediate priority?",
+"choices": [
+{"text": "Insert a tongue depressor between her teeth", "is_correct": false},
+{"text": "Restrain her limbs firmly to stop the movements", "is_correct": false},
+{"text": "Protect her from injury, maintain airway and breathing, and summon emergency assistance", "is_correct": true},
+{"text": "Give oral fluids immediately", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, the midwife should protect the woman from injury, position her to support airway protection when possible and summon emergency assistance. Nothing should be placed in her mouth, and urgent anticonvulsant and obstetric management must follow.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "Which medication is the first-line anticonvulsant for the prevention and treatment of eclamptic seizures in standard obstetric practice?",
+"choices": [
+{"text": "Magnesium sulphate", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Ferrous sulphate", "is_correct": false},
+{"text": "Misoprostol", "is_correct": false}
+],
+"rationale": "Magnesium sulphate is the recommended first-line anticonvulsant for eclampsia and prevention of seizures in severe pre-eclampsia. It requires careful administration and monitoring for toxicity, including respiratory depression and reduced reflexes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "A woman receiving magnesium sulphate for severe pre-eclampsia has absent patellar reflexes, a respiratory rate of 9 breaths per minute and reduced urine output. What should the midwife do first?",
+"choices": [
+{"text": "Increase the magnesium sulphate infusion rate", "is_correct": false},
+{"text": "Encourage the woman to walk around", "is_correct": false},
+{"text": "Continue treatment because these are expected therapeutic effects", "is_correct": false},
+{"text": "Stop magnesium sulphate administration, call for urgent assistance and prepare for toxicity management", "is_correct": true}
+],
+"rationale": "Absent deep tendon reflexes, respiratory depression and oliguria suggest magnesium sulphate toxicity. Administration should be stopped and urgent clinical management initiated, including preparation of the prescribed antidote, calcium gluconate, according to protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "Which clinical finding is most suggestive of hypovolaemic shock following obstetric haemorrhage?",
+"choices": [
+{"text": "Warm extremities and a slow pulse", "is_correct": false},
+{"text": "Tachycardia, hypotension and altered mental status", "is_correct": true},
+{"text": "Normal blood pressure with no symptoms", "is_correct": false},
+{"text": "Increased appetite and excessive salivation", "is_correct": false}
+],
+"rationale": "Hypovolaemic shock results from significant loss of circulating blood volume. Tachycardia, hypotension, altered consciousness and poor peripheral perfusion are important signs of deterioration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "A postpartum woman develops sudden breathlessness, chest pain, tachycardia and oxygen desaturation. Which serious complication should the midwife suspect?",
+"choices": [
+{"text": "Normal postpartum uterine involution", "is_correct": false},
+{"text": "Physiological breast engorgement", "is_correct": false},
+{"text": "Pulmonary embolism", "is_correct": true},
+{"text": "Uncomplicated afterpains", "is_correct": false}
+],
+"rationale": "Sudden dyspnoea, chest pain, tachycardia and hypoxaemia in the postpartum period are concerning for pulmonary embolism. This is a medical emergency requiring immediate escalation, supportive care and urgent definitive assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "A postpartum woman has heavy vaginal bleeding, a weak rapid pulse and a blood pressure of 80/50 mmHg. What should the midwife prioritise?",
+"choices": [
+{"text": "Initiate the postpartum haemorrhage emergency response, call for help and begin resuscitation", "is_correct": true},
+{"text": "Wait for laboratory results before intervening", "is_correct": false},
+{"text": "Encourage the woman to stand and walk", "is_correct": false},
+{"text": "Arrange routine discharge documentation", "is_correct": false}
+],
+"rationale": "Heavy bleeding with hypotension and tachycardia indicates severe haemorrhage with possible shock. Immediate coordinated emergency management, including haemorrhage control, resuscitation and escalation, is essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "Which parameter is particularly important when monitoring a critically ill obstetric patient for renal perfusion and fluid balance?",
+"choices": [
+{"text": "Hair growth", "is_correct": false},
+{"text": "Skin pigmentation", "is_correct": false},
+{"text": "Maternal height", "is_correct": false},
+{"text": "Hourly urine output", "is_correct": true}
+],
+"rationale": "Urine output provides useful information about renal perfusion and fluid status in critically ill patients. Persistent oliguria may indicate inadequate circulation, renal impairment or other serious complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care in Obstetrics",
+"question_text": "A pregnant woman with suspected sepsis is confused, hypotensive and tachypnoeic. Which action is most appropriate?",
+"choices": [
+{"text": "Delay treatment until the source of infection is confirmed by culture", "is_correct": false},
+{"text": "Initiate urgent sepsis management, escalate care and arrange prompt administration of prescribed treatment", "is_correct": true},
+{"text": "Give oral fluids only and review the following day", "is_correct": false},
+{"text": "Discharge the woman because confusion is unrelated to infection", "is_correct": false}
+],
+"rationale": "Confusion, hypotension and tachypnoea suggest severe infection with possible organ dysfunction. Sepsis management must begin urgently, with appropriate cultures and investigations obtained without delaying time-critical treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which statement best describes an episiotomy?",
+"choices": [
+{"text": "A surgical incision made in the perineum to enlarge the vaginal outlet during childbirth", "is_correct": true},
+{"text": "A spontaneous separation of the uterine wall", "is_correct": false},
+{"text": "A surgical incision made in the abdominal wall during caesarean section", "is_correct": false},
+{"text": "A tear involving the cervix during labour", "is_correct": false}
+],
+"rationale": "An episiotomy is a deliberate surgical incision of the perineum and vaginal wall performed when clinically indicated. It is not recommended as a routine procedure for every vaginal birth.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman develops severe perineal pain and increasing swelling several hours after an episiotomy. Her pulse rate is elevated. What complication should the midwife suspect?",
+"choices": [
+{"text": "Normal wound healing", "is_correct": false},
+{"text": "Uncomplicated lochia", "is_correct": false},
+{"text": "Perineal haematoma", "is_correct": true},
+{"text": "Physiological uterine involution", "is_correct": false}
+],
+"rationale": "Severe perineal pain, swelling and tachycardia after birth may indicate a concealed perineal haematoma. Urgent assessment is required because significant blood loss can occur without obvious external bleeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which classification describes a third-degree perineal tear?",
+"choices": [
+{"text": "Injury involving the vaginal mucosa and perineal skin only", "is_correct": false},
+{"text": "Injury involving the perineal muscles but not the anal sphincter", "is_correct": false},
+{"text": "Injury extending through the anal sphincter complex into the anorectal mucosa", "is_correct": false},
+{"text": "Injury involving the anal sphincter complex without extension into the anorectal mucosa", "is_correct": true}
+],
+"rationale": "A third-degree tear involves the anal sphincter complex and is subdivided according to the extent of external and internal sphincter involvement. Extension into the anorectal mucosa defines a fourth-degree tear.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman has a fourth-degree perineal tear following vaginal birth. Which management is most appropriate?",
+"choices": [
+{"text": "Allow the wound to heal without repair", "is_correct": false},
+{"text": "Arrange repair by an appropriately trained clinician in a suitable setting, followed by structured postoperative care", "is_correct": true},
+{"text": "Apply an external dressing only and discharge immediately", "is_correct": false},
+{"text": "Suture only the perineal skin without assessing the anal sphincter or anorectal mucosa", "is_correct": false}
+],
+"rationale": "A fourth-degree tear involves the anal sphincter complex and anorectal mucosa and requires specialist repair by a suitably trained clinician. Postoperative care includes appropriate analgesia, bowel management, wound review and follow-up for continence symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which finding is most suggestive of infection in a caesarean section wound?",
+"choices": [
+{"text": "Mild tenderness that is steadily improving", "is_correct": false},
+{"text": "A clean, dry incision with approximated edges", "is_correct": false},
+{"text": "Increasing redness, warmth, purulent discharge and worsening pain", "is_correct": true},
+{"text": "A small amount of bruising that is resolving", "is_correct": false}
+],
+"rationale": "Increasing redness, warmth, pain and purulent discharge are characteristic signs of surgical wound infection. The wound requires clinical assessment and appropriate treatment to prevent progression.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman on the second day after caesarean section reports increasing wound pain. The incision is red and has purulent discharge, and she has a fever. What should the midwife do?",
+"choices": [
+{"text": "Assess the wound and vital signs, escalate for clinical review and follow the prescribed infection management plan", "is_correct": true},
+{"text": "Cover the wound and ignore the fever", "is_correct": false},
+{"text": "Tell the woman to remove the sutures herself", "is_correct": false},
+{"text": "Apply an unprescribed herbal preparation to the incision", "is_correct": false}
+],
+"rationale": "Fever, purulent discharge and increasing wound pain suggest a postoperative surgical site infection. Prompt assessment and appropriate treatment are necessary to prevent wound breakdown and systemic infection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which practice is most appropriate when performing a dressing change on a caesarean section wound?",
+"choices": [
+{"text": "Reuse a contaminated dressing if it appears dry", "is_correct": false},
+{"text": "Touch the wound directly with unwashed hands", "is_correct": false},
+{"text": "Clean the wound using any household chemical available", "is_correct": false},
+{"text": "Perform hand hygiene, use appropriate aseptic technique and assess the wound before applying a suitable dressing", "is_correct": true}
+],
+"rationale": "Aseptic technique reduces the risk of introducing microorganisms into the surgical wound. Wound assessment should include the incision edges, surrounding skin, discharge, odour and signs of infection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman who sustained an episiotomy reports difficulty passing urine and increasing perineal discomfort. What should the midwife do?",
+"choices": [
+{"text": "Assume the symptoms are normal and provide no further care", "is_correct": false},
+{"text": "Assess bladder function, perineal condition and pain, and arrange further clinical review as indicated", "is_correct": true},
+{"text": "Restrict all oral fluids", "is_correct": false},
+{"text": "Advise her to avoid passing urine for the rest of the day", "is_correct": false}
+],
+"rationale": "Perineal trauma, pain and oedema may contribute to postpartum urinary retention. Early assessment and appropriate management help prevent bladder overdistension and further complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A postpartum woman has a rapidly expanding perineal swelling, severe pain, pallor and hypotension. What is the priority action?",
+"choices": [
+{"text": "Apply a routine perineal dressing and review after several hours", "is_correct": false},
+{"text": "Encourage oral fluids and ambulation", "is_correct": false},
+{"text": "Suspect a significant haematoma, activate emergency assistance and initiate resuscitation", "is_correct": true},
+{"text": "Reassure her that swelling is always expected after vaginal birth", "is_correct": false}
+],
+"rationale": "Rapidly expanding swelling with pallor and hypotension suggests significant concealed haemorrhage from a genital tract haematoma. Immediate escalation, resuscitation and urgent obstetric intervention are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "Which definition best describes primary postpartum haemorrhage?",
+"choices": [
+{"text": "Bleeding occurring only during the first stage of labour", "is_correct": false},
+{"text": "Any vaginal bleeding occurring after six weeks postpartum", "is_correct": false},
+{"text": "Bleeding occurring before the delivery of the placenta", "is_correct": false},
+{"text": "Excessive bleeding within the first 24 hours after birth", "is_correct": true}
+],
+"rationale": "Primary postpartum haemorrhage occurs within 24 hours after birth. It is a major obstetric emergency, and management should be initiated promptly when excessive bleeding or signs of haemodynamic compromise are identified.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman develops heavy bleeding immediately after vaginal birth. The uterus is enlarged, soft and poorly contracted. What is the most likely cause?",
+"choices": [
+{"text": "Uterine atony", "is_correct": true},
+{"text": "Cervical ectropion", "is_correct": false},
+{"text": "Normal lochia", "is_correct": false},
+{"text": "Urinary tract infection", "is_correct": false}
+],
+"rationale": "Uterine atony occurs when the uterus fails to contract effectively after birth, allowing continued bleeding from the placental bed. It is a leading cause of primary postpartum haemorrhage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman experiences postpartum haemorrhage and the uterus is boggy. Which action should the midwife take immediately while activating the haemorrhage response?",
+"choices": [
+{"text": "Ask the woman to walk to the toilet", "is_correct": false},
+{"text": "Perform uterine massage to encourage contraction and assess the response", "is_correct": true},
+{"text": "Delay intervention until the haemoglobin result is available", "is_correct": false},
+{"text": "Apply pressure to the woman's chest", "is_correct": false}
+],
+"rationale": "Uterine massage is an immediate intervention for a boggy uterus associated with postpartum haemorrhage. It should occur alongside urgent help, assessment of the cause, resuscitation and administration of prescribed uterotonic treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman in labour develops shoulder dystocia after delivery of the fetal head. Which manoeuvre is commonly used as an initial intervention?",
+"choices": [
+{"text": "Fundal pressure", "is_correct": false},
+{"text": "Kristeller manoeuvre", "is_correct": false},
+{"text": "McRoberts manoeuvre", "is_correct": true},
+{"text": "External cephalic version", "is_correct": false}
+],
+"rationale": "The McRoberts manoeuvre involves hyperflexion of the mother's hips to flatten the sacrum and facilitate release of the impacted shoulder. Fundal pressure should not be used because it can worsen shoulder impaction and cause injury.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "During shoulder dystocia, the midwife is assisting with the emergency response. Which action should be avoided?",
+"choices": [
+{"text": "Calling for additional skilled assistance", "is_correct": false},
+{"text": "Preparing for neonatal resuscitation", "is_correct": false},
+{"text": "Recording the time of delivery of the fetal head", "is_correct": false},
+{"text": "Applying fundal pressure to force delivery of the shoulders", "is_correct": true}
+],
+"rationale": "Fundal pressure can worsen shoulder impaction and increase the risk of maternal and neonatal injury. The team should use recognised shoulder dystocia manoeuvres in an organised sequence and document the events.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman in labour has a prolapsed umbilical cord following spontaneous rupture of membranes. The fetal heart rate is severely reduced. What is the immediate priority?",
+"choices": [
+{"text": "Arrange urgent assistance and relieve pressure on the cord by elevating the presenting part while preparing for emergency birth", "is_correct": true},
+{"text": "Push the cord back into the uterus", "is_correct": false},
+{"text": "Ask the woman to walk around to encourage descent", "is_correct": false},
+{"text": "Wait for the next routine fetal heart assessment", "is_correct": false}
+],
+"rationale": "Cord prolapse can cause acute fetal hypoxia through compression of the umbilical cord. The presenting part should be elevated to relieve compression, the cord should not be replaced into the uterus, and emergency delivery should be arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman with cord prolapse is awaiting emergency caesarean section. Which maternal position can help reduce pressure on the prolapsed cord?",
+"choices": [
+{"text": "Standing upright", "is_correct": false},
+{"text": "Knee-chest position or a left lateral position with the pelvis elevated", "is_correct": true},
+{"text": "Flat supine position without pelvic elevation", "is_correct": false},
+{"text": "Sitting upright with legs hanging down", "is_correct": false}
+],
+"rationale": "The knee-chest position or an appropriate lateral position with pelvic elevation can reduce compression of the prolapsed cord. These measures are temporary while urgent definitive delivery is arranged.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman with eclampsia is admitted to a district hospital after a seizure. She remains unconscious and has noisy breathing. What should the midwife prioritise?",
+"choices": [
+{"text": "Obtain the woman's antenatal card before providing care", "is_correct": false},
+{"text": "Administer oral antihypertensive medication", "is_correct": false},
+{"text": "Maintain airway patency, support breathing and summon emergency assistance", "is_correct": true},
+{"text": "Begin routine breastfeeding counselling", "is_correct": false}
+],
+"rationale": "An unconscious woman with noisy breathing is at risk of airway obstruction and aspiration. Airway and breathing management take priority while the team continues seizure control, maternal stabilisation and obstetric management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman develops postpartum haemorrhage after caesarean section. The uterus is firm, but bleeding continues. Which cause should the midwife consider?",
+"choices": [
+{"text": "Uterine atony as the only possible cause", "is_correct": false},
+{"text": "Normal postpartum uterine involution", "is_correct": false},
+{"text": "Breast engorgement", "is_correct": false},
+{"text": "Genital tract trauma, retained tissue or a coagulation disorder", "is_correct": true}
+],
+"rationale": "Persistent bleeding despite a firm uterus suggests that causes other than uterine atony must be considered. The midwife should support prompt assessment for trauma, retained placental tissue and coagulopathy while continuing haemorrhage management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman in labour suddenly develops severe abdominal pain, cessation of contractions and loss of the previously palpable fetal presenting part. Her pulse is rapid and blood pressure is falling. What complication should be suspected?",
+"choices": [
+{"text": "Uterine rupture", "is_correct": true},
+{"text": "Normal transition phase of labour", "is_correct": false},
+{"text": "Uncomplicated cervical dilatation", "is_correct": false},
+{"text": "Physiological fetal descent", "is_correct": false}
+],
+"rationale": "Sudden abdominal pain, maternal shock, altered uterine activity and loss of fetal station are concerning features of uterine rupture. This is a life-threatening emergency requiring immediate resuscitation and urgent operative management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing in Midwifery",
+"question_text": "A woman develops severe bleeding after birth and the placenta is not delivered. The uterus is not palpable in its normal abdominal position, and a mass is visible at the vaginal opening. What should the midwife suspect?",
+"choices": [
+{"text": "Uncomplicated retained placenta", "is_correct": false},
+{"text": "Uterine inversion", "is_correct": true},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Cervical insufficiency", "is_correct": false}
+],
+"rationale": "Uterine inversion may present with severe haemorrhage, shock and absence of the uterine fundus in its normal abdominal position. It requires immediate emergency assistance and prompt specialist management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "End-of-Life Care in Obstetrics",
+"question_text": "What is the primary goal of palliative care for a woman with a life-limiting obstetric or medical condition?",
+"choices": [
+{"text": "To withdraw all forms of communication with the family", "is_correct": false},
+{"text": "To provide comfort, relieve suffering and support quality of life", "is_correct": true},
+{"text": "To guarantee that the underlying disease will be cured", "is_correct": false},
+{"text": "To avoid discussing the patient's symptoms", "is_correct": false}
+],
+"rationale": "Palliative care aims to prevent and relieve suffering through early identification and management of physical, psychosocial and spiritual needs. It supports quality of life for the patient and family and is not limited to the final hours of life.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care in Obstetrics",
+"question_text": "A woman with advanced cancer complicating pregnancy has chosen comfort-focused care after informed discussions with her clinical team. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Ignore her symptoms because curative treatment is no longer the main goal", "is_correct": false},
+{"text": "Pressure her to accept every available intervention", "is_correct": false},
+{"text": "Provide symptom relief, emotional support and care consistent with her informed preferences", "is_correct": true},
+{"text": "Exclude her from all decisions about her care", "is_correct": false}
+],
+"rationale": "Comfort-focused care requires active management of pain, breathlessness, nausea, anxiety and other distressing symptoms. The care plan should respect the woman's informed preferences and involve appropriate multidisciplinary support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care in Obstetrics",
+"question_text": "A mother experiences stillbirth and begins crying uncontrollably. Which response by the midwife is most appropriate?",
+"choices": [
+{"text": "Allow her to express her grief, listen empathetically and offer appropriate bereavement support", "is_correct": true},
+{"text": "Tell her that she should stop crying because she can have another baby", "is_correct": false},
+{"text": "Avoid speaking to her until she becomes calm", "is_correct": false},
+{"text": "Tell her that grieving is a sign of weakness", "is_correct": false}
+],
+"rationale": "Bereavement care requires empathy, active listening and acknowledgement of the family's loss. The midwife should provide emotional support and explain available bereavement services without minimising the parents' grief.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care in Obstetrics",
+"question_text": "Which action is most important when providing end-of-life care to a woman who is conscious and able to make her own healthcare decisions?",
+"choices": [
+{"text": "Allow relatives to make every decision without consulting her", "is_correct": false},
+{"text": "Withhold information about her condition", "is_correct": false},
+{"text": "Make decisions based only on the healthcare team's preferences", "is_correct": false},
+{"text": "Respect her autonomy, explain care options and support informed decision-making", "is_correct": true}
+],
+"rationale": "A competent patient retains the right to receive information and participate in decisions about her care. Respecting autonomy includes discussing preferences, goals of care and appropriate treatment options.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care in Obstetrics",
+"question_text": "A woman receiving palliative care reports severe uncontrolled pain. What should the midwife do?",
+"choices": [
+{"text": "Tell her that pain is unavoidable in advanced illness", "is_correct": false},
+{"text": "Assess the pain, promptly report uncontrolled symptoms and implement the prescribed pain management plan", "is_correct": true},
+{"text": "Withhold analgesia to avoid possible dependence", "is_correct": false},
+{"text": "Ask the family to manage the pain without clinical guidance", "is_correct": false}
+],
+"rationale": "Pain relief is a central component of palliative care and should not be withheld solely because a patient has advanced illness. The midwife should assess pain systematically and support timely, appropriate analgesic management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care in Obstetrics",
+"question_text": "Following a maternal death, relatives become distressed and accuse the healthcare team of failing to provide adequate care. What should the midwife do?",
+"choices": [
+{"text": "Argue with the relatives to defend the hospital", "is_correct": false},
+{"text": "Leave the relatives without any explanation or support", "is_correct": false},
+{"text": "Respond with compassion, maintain confidentiality and facilitate appropriate communication with the responsible clinical team", "is_correct": true},
+{"text": "Disclose confidential information about other patients to justify the care provided", "is_correct": false}
+],
+"rationale": "Families affected by maternal death require compassionate communication and appropriate bereavement support. Questions about clinical care should be addressed through the responsible team using respectful, factual and confidential communication.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "What is clinical decision-making in midwifery?",
+"choices": [
+{"text": "Choosing interventions based only on personal experience", "is_correct": false},
+{"text": "Making decisions without assessing the patient", "is_correct": false},
+{"text": "Following routine instructions regardless of the woman's condition", "is_correct": false},
+{"text": "Using clinical assessment, evidence, professional judgement and the woman's preferences to guide care", "is_correct": true}
+],
+"rationale": "Clinical decision-making integrates assessment findings, current evidence, professional competence and patient preferences. It supports safe, individualised and timely midwifery care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A midwife in a CHPS compound assesses a pregnant woman with severe vaginal bleeding and signs of shock. The facility does not have the capacity for emergency surgery. What is the most appropriate decision?",
+"choices": [
+{"text": "Arrange urgent referral to an appropriate hospital while initiating stabilisation and communicating with the receiving facility", "is_correct": true},
+{"text": "Keep the woman at the CHPS compound until all investigations are completed", "is_correct": false},
+{"text": "Discharge her with advice to return if bleeding continues", "is_correct": false},
+{"text": "Wait for a routine review by the district health directorate", "is_correct": false}
+],
+"rationale": "Severe bleeding with shock requires emergency management beyond the capacity of a basic facility. Stabilisation, prompt referral, pre-referral communication and safe transfer are essential to reduce maternal mortality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A woman in labour has a persistent abnormal fetal heart rate pattern despite initial corrective measures. What should the midwife do?",
+"choices": [
+{"text": "Continue routine monitoring without informing the obstetric team", "is_correct": false},
+{"text": "Recognise possible fetal compromise, escalate immediately and prepare for expedited birth as clinically indicated", "is_correct": true},
+{"text": "Ask the woman to go home and return the following day", "is_correct": false},
+{"text": "Stop monitoring because the fetal heart rate has already been assessed", "is_correct": false}
+],
+"rationale": "A persistent abnormal fetal heart rate pattern may indicate fetal compromise requiring urgent assessment. The midwife should escalate promptly and support timely decisions about the safest mode and timing of birth.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A woman at a district hospital has prolonged labour, maternal exhaustion and no progress in cervical dilatation despite adequate contractions. What should the midwife suspect?",
+"choices": [
+{"text": "Normal progress in the active phase", "is_correct": false},
+{"text": "Uncomplicated latent labour", "is_correct": false},
+{"text": "Obstructed labour or another cause of labour dystocia requiring urgent assessment", "is_correct": true},
+{"text": "Normal postpartum involution", "is_correct": false}
+],
+"rationale": "Failure of labour to progress despite adequate contractions raises concern for labour dystocia, including possible obstruction. The midwife should assess maternal and fetal wellbeing and escalate for an appropriate obstetric management decision.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A woman with suspected ectopic pregnancy presents with severe lower abdominal pain, shoulder-tip pain, dizziness and hypotension. What is the priority decision?",
+"choices": [
+{"text": "Arrange routine outpatient review in one week", "is_correct": false},
+{"text": "Provide reassurance and advise rest at home", "is_correct": false},
+{"text": "Give oral iron and schedule antenatal registration", "is_correct": false},
+{"text": "Suspect ruptured ectopic pregnancy and arrange immediate emergency management and referral", "is_correct": true}
+],
+"rationale": "Severe abdominal pain, shoulder-tip pain and hypotension may indicate intraperitoneal bleeding from a ruptured ectopic pregnancy. This is a life-threatening emergency requiring immediate resuscitation and urgent surgical assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A midwife is uncertain whether a woman's postpartum bleeding is within normal limits. Which action best demonstrates safe clinical decision-making?",
+"choices": [
+{"text": "Assess the amount and pattern of bleeding, uterine tone and vital signs, then seek senior review if concerned", "is_correct": true},
+{"text": "Assume that all bleeding after birth is normal", "is_correct": false},
+{"text": "Wait until the woman becomes unconscious before taking action", "is_correct": false},
+{"text": "Discharge the woman without documenting the findings", "is_correct": false}
+],
+"rationale": "Postpartum bleeding must be assessed in relation to its amount, clinical pattern and the woman's physiological condition. Early recognition of abnormal bleeding and timely escalation can prevent progression to severe haemorrhage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A midwife is caring for a woman with suspected placenta praevia and vaginal bleeding. Which examination should be avoided until placenta praevia has been excluded?",
+"choices": [
+{"text": "Measurement of maternal blood pressure", "is_correct": false},
+{"text": "Digital vaginal examination", "is_correct": true},
+{"text": "Assessment of maternal pulse", "is_correct": false},
+{"text": "Fetal heart rate assessment", "is_correct": false}
+],
+"rationale": "Digital vaginal examination may disrupt a placenta lying over or near the cervical opening and precipitate severe haemorrhage. Maternal stabilisation and fetal assessment should proceed while the placental location is established using appropriate methods.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A woman with severe anaemia in late pregnancy presents with breathlessness at rest, chest discomfort and marked tachycardia. What should the midwife prioritise?",
+"choices": [
+{"text": "Advise her to increase dietary iron and return in one month", "is_correct": false},
+{"text": "Assume the symptoms are normal effects of pregnancy", "is_correct": false},
+{"text": "Assess airway, breathing and circulation, escalate urgently and arrange appropriate medical management", "is_correct": true},
+{"text": "Discharge her because anaemia is common in pregnancy", "is_correct": false}
+],
+"rationale": "Breathlessness at rest, chest discomfort and marked tachycardia may indicate severe physiological compromise in a woman with anaemia. Immediate assessment and escalation are required rather than relying on routine dietary advice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A woman with postpartum haemorrhage continues to bleed despite initial treatment. Her blood pressure is falling and she is becoming confused. Which decision is most appropriate?",
+"choices": [
+{"text": "Continue routine observation because confusion is expected after delivery", "is_correct": false},
+{"text": "Wait for the next scheduled ward round", "is_correct": false},
+{"text": "Stop monitoring once intravenous fluids have been commenced", "is_correct": false},
+{"text": "Escalate immediately for advanced haemorrhage management, blood products and definitive intervention as indicated", "is_correct": true}
+],
+"rationale": "Persistent bleeding with hypotension and confusion indicates worsening haemorrhagic shock. The woman requires urgent escalation, ongoing resuscitation and definitive control of the bleeding source.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "Which action is most important when transferring a critically ill obstetric patient from a district hospital to a regional hospital?",
+"choices": [
+{"text": "Stabilise the patient as far as possible, arrange appropriate transport and provide a structured clinical handover", "is_correct": true},
+{"text": "Send the patient without clinical information to save time", "is_correct": false},
+{"text": "Delay transfer until the patient is completely stable, regardless of available resources", "is_correct": false},
+{"text": "Allow the patient to travel alone without appropriate monitoring or support", "is_correct": false}
+],
+"rationale": "Safe referral requires prompt communication, appropriate pre-transfer stabilisation, suitable transport and a clear handover of clinical findings and interventions. Transfer should not be unnecessarily delayed while waiting for complete stabilisation when definitive care is unavailable.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Clinical Decision-Making",
+"question_text": "A woman in labour has a temperature of 38.8°C, maternal tachycardia and fetal tachycardia. Membranes ruptured several hours earlier. Which interpretation should guide the midwife's next action?",
+"choices": [
+{"text": "The findings are normal and require no further assessment", "is_correct": false},
+{"text": "The findings raise concern for intra-amniotic infection and require urgent clinical assessment and escalation", "is_correct": true},
+{"text": "Fetal tachycardia always indicates a normal response to labour", "is_correct": false},
+{"text": "The woman should be discharged because the membranes have ruptured", "is_correct": false}
+],
+"rationale": "Maternal fever and tachycardia with fetal tachycardia after rupture of membranes raise concern for intra-amniotic infection. Prompt assessment and appropriate treatment are necessary to reduce the risk of maternal and neonatal complications.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
