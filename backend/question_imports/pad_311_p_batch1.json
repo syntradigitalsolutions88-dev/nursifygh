@@ -1,0 +1,842 @@
+{
+"courses": [
+{
+"course_code": "PAD-311-P",
+"course_title": "Paediatric Nursing I",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Child and Adolescent Psychiatric Assessment",
+"Autism Spectrum Disorder",
+"Attention-Deficit/Hyperactivity Disorder",
+"Intellectual Disability",
+"Childhood Anxiety and Depression",
+"Trauma and Post-Traumatic Stress Disorder in Children",
+"Conduct Disorders",
+"Psychiatric Emergencies in Children",
+"Family-Based Interventions",
+"School Mental Health",
+"Safeguarding and Child Protection in Ghana",
+"Community Child and Adolescent Mental Health"
+],
+"questions": [
+{
+"topic": "Child and Adolescent Psychiatric Assessment",
+"question_text": "Which approach is most appropriate when conducting a psychiatric assessment of a child?",
+"choices": [
+{"text": "Interview only the child's parents and exclude the child", "is_correct": false},
+{"text": "Use developmentally appropriate communication and obtain information from the child, caregivers and other relevant sources", "is_correct": true},
+{"text": "Use the same assessment approach for every age group", "is_correct": false},
+{"text": "Avoid asking about the child's school and social functioning", "is_correct": false}
+],
+"rationale": "Child psychiatric assessment should consider developmental level, communication abilities and the child's environment. Information from the child, caregivers, school and relevant health professionals provides a more complete understanding of the presenting problem.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child and Adolescent Psychiatric Assessment",
+"question_text": "A 10-year-old child is referred because of frequent classroom disruption and declining academic performance. What should the psychiatric nurse assess first?",
+"choices": [
+{"text": "Only the child's intelligence level", "is_correct": false},
+{"text": "The child's behaviour, developmental history, emotional state, family circumstances and school functioning", "is_correct": true},
+{"text": "Whether the child should immediately be removed from school", "is_correct": false},
+{"text": "Only the parent's disciplinary methods", "is_correct": false}
+],
+"rationale": "Behavioural difficulties may arise from neurodevelopmental disorders, emotional problems, learning difficulties, family stress or environmental factors. A comprehensive assessment helps identify the underlying causes before planning interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child and Adolescent Psychiatric Assessment",
+"question_text": "Which information is particularly important when assessing a child's developmental history?",
+"choices": [
+{"text": "The child's favourite television programme only", "is_correct": false},
+{"text": "Pregnancy and birth history, developmental milestones and early social communication", "is_correct": true},
+{"text": "The parent's occupation without any other information", "is_correct": false},
+{"text": "The child's current height only", "is_correct": false}
+],
+"rationale": "Developmental history helps identify delays or atypical patterns in language, motor skills, cognition and social interaction. Pregnancy, birth and early childhood information may provide important clues about neurodevelopmental conditions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "Which feature is most characteristic of autism spectrum disorder?",
+"choices": [
+{"text": "Persistent difficulties in social communication and interaction, together with restricted or repetitive behaviours", "is_correct": true},
+{"text": "A sudden loss of consciousness after a head injury", "is_correct": false},
+{"text": "Excessive physical growth during adolescence", "is_correct": false},
+{"text": "Persistent fever and abdominal pain", "is_correct": false}
+],
+"rationale": "Autism spectrum disorder is a neurodevelopmental condition characterised by persistent social communication and interaction difficulties and restricted or repetitive patterns of behaviour or interests. The presentation and level of support required vary considerably between individuals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "A four-year-old child rarely responds to their name, avoids shared attention, uses limited gestures and repeatedly arranges toys in a fixed pattern. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Conduct disorder", "is_correct": false},
+{"text": "Autism spectrum disorder", "is_correct": true},
+{"text": "Separation anxiety disorder", "is_correct": false},
+{"text": "Oppositional defiant disorder", "is_correct": false}
+],
+"rationale": "Reduced social communication, limited joint attention and repetitive patterns of play are features associated with autism spectrum disorder. The child requires a comprehensive developmental assessment rather than diagnosis based on one behaviour alone.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "A child with autism becomes distressed by loud noises in the paediatric ward. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Increase the noise level to help the child become accustomed to it", "is_correct": false},
+{"text": "Provide a quieter environment, maintain predictable routines and explain procedures using appropriate communication", "is_correct": true},
+{"text": "Punish the child for covering their ears", "is_correct": false},
+{"text": "Prevent the caregiver from remaining with the child", "is_correct": false}
+],
+"rationale": "Some autistic children experience sensory hypersensitivity and may become distressed by loud or unpredictable environments. Reducing sensory triggers, maintaining routines and using clear communication can improve comfort and cooperation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "Which group of symptoms is associated with attention-deficit/hyperactivity disorder (ADHD)?",
+"choices": [
+{"text": "Hallucinations, delusions and disorganised speech", "is_correct": false},
+{"text": "Inattention, hyperactivity and impulsivity", "is_correct": true},
+{"text": "Persistent fever, seizures and muscle weakness", "is_correct": false},
+{"text": "Social withdrawal and loss of interest only", "is_correct": false}
+],
+"rationale": "ADHD is a neurodevelopmental disorder characterised by developmentally inappropriate and persistent patterns of inattention and/or hyperactivity-impulsivity. Symptoms must cause impairment and occur in more than one setting.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "A seven-year-old pupil frequently leaves their seat, interrupts classmates, loses school materials and struggles to complete tasks. The behaviour is reported at both home and school. Which condition should be considered?",
+"choices": [
+{"text": "ADHD", "is_correct": true},
+{"text": "Post-traumatic stress disorder", "is_correct": false},
+{"text": "Autism spectrum disorder", "is_correct": false},
+{"text": "Specific phobia", "is_correct": false}
+],
+"rationale": "Persistent inattention and hyperactive-impulsive behaviour across home and school settings may indicate ADHD. Assessment should establish developmental appropriateness, duration, functional impairment and possible alternative explanations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "A child diagnosed with ADHD is frequently distracted during classroom activities. Which school-based intervention is most appropriate?",
+"choices": [
+{"text": "Seat the child near distracting classroom activities", "is_correct": false},
+{"text": "Provide structured routines, clear instructions, shorter tasks and positive reinforcement", "is_correct": true},
+{"text": "Exclude the child from all classroom activities", "is_correct": false},
+{"text": "Use public humiliation whenever the child loses concentration", "is_correct": false}
+],
+"rationale": "Structured classroom arrangements and manageable tasks can improve attention and task completion. Positive reinforcement encourages desired behaviour and is generally more constructive than punishment or humiliation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Intellectual Disability",
+"question_text": "Which statement best describes intellectual disability?",
+"choices": [
+{"text": "A temporary reduction in school performance caused by poor motivation", "is_correct": false},
+{"text": "Significant limitations in intellectual functioning and adaptive behaviour with onset during the developmental period", "is_correct": true},
+{"text": "A psychiatric condition characterised exclusively by hallucinations", "is_correct": false},
+{"text": "A condition that develops only after retirement age", "is_correct": false}
+],
+"rationale": "Intellectual disability involves limitations in intellectual functioning, such as reasoning and problem-solving, together with limitations in adaptive functioning. It originates during the developmental period and affects conceptual, social or practical abilities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Intellectual Disability",
+"question_text": "A child with intellectual disability has difficulty dressing independently and following complex instructions. Which nursing approach is most appropriate?",
+"choices": [
+{"text": "Perform every activity for the child without allowing participation", "is_correct": false},
+{"text": "Break activities into simple steps and encourage independence according to the child's abilities", "is_correct": true},
+{"text": "Compare the child negatively with other children", "is_correct": false},
+{"text": "Avoid teaching self-care skills because improvement is impossible", "is_correct": false}
+],
+"rationale": "Task analysis and step-by-step teaching help children develop practical adaptive skills. The nurse should provide the level of assistance required while encouraging participation and independence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Childhood Anxiety and Depression",
+"question_text": "Which finding may indicate depression in a school-aged child?",
+"choices": [
+{"text": "Persistent irritability, loss of interest and declining school performance", "is_correct": true},
+{"text": "Occasional excitement before a birthday", "is_correct": false},
+{"text": "Brief frustration when a toy is unavailable", "is_correct": false},
+{"text": "Normal curiosity about new activities", "is_correct": false}
+],
+"rationale": "Childhood depression may present with persistent irritability rather than obvious sadness, alongside loss of interest, sleep or appetite changes and impaired functioning. Symptoms should be assessed in relation to the child's developmental stage and usual behaviour.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Childhood Anxiety and Depression",
+"question_text": "An eight-year-old child repeatedly complains of stomach pain before school, cries when separated from the mother and fears that something bad will happen to the parent. Which condition should the nurse consider?",
+"choices": [
+{"text": "Separation anxiety disorder", "is_correct": true},
+{"text": "Conduct disorder", "is_correct": false},
+{"text": "Autism spectrum disorder", "is_correct": false},
+{"text": "Intellectual disability", "is_correct": false}
+],
+"rationale": "Separation anxiety disorder involves excessive fear or distress concerning separation from attachment figures. Children may express anxiety through physical complaints, school refusal, crying and persistent fears about harm to caregivers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Childhood Anxiety and Depression",
+"question_text": "A 14-year-old adolescent tells the school nurse that life is meaningless and that they have been thinking about suicide. What is the nurse's priority action?",
+"choices": [
+{"text": "Promise not to tell anyone under any circumstances", "is_correct": false},
+{"text": "Assess immediate suicide risk, maintain safety and arrange urgent mental health evaluation", "is_correct": true},
+{"text": "Advise the adolescent to concentrate on schoolwork", "is_correct": false},
+{"text": "Wait until the next routine school health visit", "is_correct": false}
+],
+"rationale": "Suicidal thoughts in an adolescent require prompt and direct assessment of intent, plans, access to means and protective factors. The nurse should not leave the adolescent unsupported and must activate appropriate emergency and safeguarding procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Trauma and Post-Traumatic Stress Disorder in Children",
+"question_text": "Which group of symptoms is commonly associated with post-traumatic stress disorder (PTSD) in children?",
+"choices": [
+{"text": "Re-experiencing trauma, avoidance, negative changes in mood or cognition, and increased arousal", "is_correct": true},
+{"text": "Improved concentration and increased social confidence only", "is_correct": false},
+{"text": "Persistent high fever and joint swelling", "is_correct": false},
+{"text": "Increased appetite without emotional changes", "is_correct": false}
+],
+"rationale": "PTSD may develop after exposure to traumatic events and involves symptoms such as intrusive memories, avoidance, negative mood or beliefs and hyperarousal. Children may also express trauma through repetitive play, nightmares or behavioural changes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Trauma and Post-Traumatic Stress Disorder in Children",
+"question_text": "A nine-year-old child who witnessed a violent incident becomes frightened by loud noises, experiences nightmares and avoids the location where the incident occurred. What should the nurse suspect?",
+"choices": [
+{"text": "Attention-deficit/hyperactivity disorder", "is_correct": false},
+{"text": "Post-traumatic stress disorder", "is_correct": true},
+{"text": "Intellectual disability", "is_correct": false},
+{"text": "Conduct disorder", "is_correct": false}
+],
+"rationale": "Nightmares, avoidance and heightened responses to reminders of a traumatic event are consistent with possible PTSD. A trauma-informed assessment should explore the child's symptoms, safety and functional impairment without forcing the child to recount distressing details.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Trauma and Post-Traumatic Stress Disorder in Children",
+"question_text": "A child discloses that an adult has been physically abusing them. What should the psychiatric nurse do first?",
+"choices": [
+{"text": "Question the child repeatedly until every detail is obtained", "is_correct": false},
+{"text": "Ensure immediate safety, listen calmly and activate appropriate child protection procedures", "is_correct": true},
+{"text": "Tell the child to confront the alleged abuser", "is_correct": false},
+{"text": "Promise that the information will never be shared with anyone", "is_correct": false}
+],
+"rationale": "The nurse should respond calmly, believe and support the child's disclosure without conducting repeated or leading questioning. Immediate safety, appropriate documentation and referral through safeguarding procedures are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Conduct Disorders",
+"question_text": "Which behaviour is most consistent with conduct disorder?",
+"choices": [
+{"text": "Occasional fear of speaking in class", "is_correct": false},
+{"text": "A persistent pattern of aggression, destruction of property, deceitfulness or serious rule violations", "is_correct": true},
+{"text": "Difficulty concentrating during a single lesson", "is_correct": false},
+{"text": "Temporary sadness after losing a game", "is_correct": false}
+],
+"rationale": "Conduct disorder involves a repetitive and persistent pattern of behaviour that violates the rights of others or major age-appropriate social rules. The pattern must be clinically significant and should not be confused with occasional misbehaviour.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Conduct Disorders",
+"question_text": "A 13-year-old repeatedly bullies younger pupils, steals money and deliberately damages school property. Which condition should the nurse consider?",
+"choices": [
+{"text": "Conduct disorder", "is_correct": true},
+{"text": "Separation anxiety disorder", "is_correct": false},
+{"text": "Autism spectrum disorder", "is_correct": false},
+{"text": "Specific learning disorder", "is_correct": false}
+],
+"rationale": "Repeated bullying, theft and deliberate property destruction may indicate a persistent pattern of violating others' rights and social rules. A comprehensive assessment should also explore family circumstances, trauma exposure, substance use and other possible contributing conditions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Emergencies in Children",
+"question_text": "A child in the paediatric ward suddenly becomes severely agitated, attempts to strike staff and throws objects. What is the nurse's first priority?",
+"choices": [
+{"text": "Immediately administer a sedative without assessment or authorisation", "is_correct": false},
+{"text": "Protect the child and others, reduce environmental stimulation and assess for medical causes", "is_correct": true},
+{"text": "Shout at the child to demonstrate authority", "is_correct": false},
+{"text": "Leave the child alone in an unlocked room", "is_correct": false}
+],
+"rationale": "Immediate safety is the priority during severe agitation, but the nurse must also consider pain, delirium, intoxication and other medical causes. A calm approach, reduced stimulation and appropriate clinical escalation may prevent further escalation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Emergencies in Children",
+"question_text": "A 15-year-old is brought to the emergency department after intentionally ingesting an unknown number of tablets. What should the nurse prioritise?",
+"choices": [
+{"text": "Begin a detailed family interview before assessing the adolescent", "is_correct": false},
+{"text": "Initiate emergency medical assessment and stabilisation, including airway, breathing and circulation", "is_correct": true},
+{"text": "Allow the adolescent to sleep without observation", "is_correct": false},
+{"text": "Arrange a routine school counselling appointment", "is_correct": false}
+],
+"rationale": "Intentional overdose is a medical emergency, and physiological stabilisation takes priority over a detailed psychiatric interview. Once medically safe, the adolescent requires a comprehensive psychosocial and suicide risk assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Based Interventions",
+"question_text": "What is the main purpose of family-based interventions in child and adolescent mental health care?",
+"choices": [
+{"text": "To transfer all responsibility for treatment to the parents", "is_correct": false},
+{"text": "To strengthen family communication, support and problem-solving around the child's needs", "is_correct": true},
+{"text": "To exclude the child from decisions about their care", "is_correct": false},
+{"text": "To identify one family member to blame for the disorder", "is_correct": false}
+],
+"rationale": "Family-based interventions help caregivers understand the child's condition and develop supportive communication and problem-solving skills. The child's developmental level, preferences and rights should be considered throughout care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Based Interventions",
+"question_text": "Parents of a child with ADHD report that they frequently shout at the child because of unfinished homework and disruptive behaviour. Which intervention is most appropriate?",
+"choices": [
+{"text": "Teach caregivers positive reinforcement, consistent routines and clear behavioural expectations", "is_correct": true},
+{"text": "Advise parents to use physical punishment whenever the child is distracted", "is_correct": false},
+{"text": "Recommend that the child be isolated from the family", "is_correct": false},
+{"text": "Tell parents to ignore every behaviour, including dangerous behaviour", "is_correct": false}
+],
+"rationale": "Parent training can help caregivers establish consistent routines, reinforce appropriate behaviour and manage difficulties constructively. Harsh punishment may worsen family conflict and does not address the child's underlying neurodevelopmental needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "School Mental Health",
+"question_text": "Which activity is an important component of a school mental health programme?",
+"choices": [
+{"text": "Punishing every pupil who reports emotional distress", "is_correct": false},
+{"text": "Promoting mental health awareness, early identification and referral of pupils who need support", "is_correct": true},
+{"text": "Keeping all mental health concerns hidden from health professionals", "is_correct": false},
+{"text": "Excluding children with developmental disorders from school activities", "is_correct": false}
+],
+"rationale": "School mental health programmes promote awareness, reduce stigma and support early identification of emotional and behavioural difficulties. They should link schools with families and appropriate health and child protection services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "School Mental Health",
+"question_text": "A teacher reports that a pupil has become withdrawn, stopped playing with friends and frequently cries during lessons. What should the school health nurse do?",
+"choices": [
+{"text": "Label the pupil as lazy and recommend punishment", "is_correct": false},
+{"text": "Speak with the pupil sensitively, gather relevant information and arrange further assessment when indicated", "is_correct": true},
+{"text": "Ignore the behaviour because emotional problems are not relevant to school health", "is_correct": false},
+{"text": "Publicly announce the pupil's suspected diagnosis", "is_correct": false}
+],
+"rationale": "Withdrawal and persistent crying may indicate emotional distress, depression, bullying or another problem requiring assessment. Confidential, developmentally appropriate communication and collaboration with caregivers and relevant professionals support early intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safeguarding and Child Protection in Ghana",
+"question_text": "Which action best reflects the nurse's responsibility when child abuse is suspected in Ghana?",
+"choices": [
+{"text": "Ignore the concern unless the child has visible injuries", "is_correct": false},
+{"text": "Assess immediate safety, document objective findings and follow appropriate child protection referral procedures", "is_correct": true},
+{"text": "Confront the suspected perpetrator before ensuring the child's safety", "is_correct": false},
+{"text": "Share the child's identity and history publicly", "is_correct": false}
+],
+"rationale": "Child abuse may be physical, sexual, emotional or involve neglect, and it may occur without visible injuries. Nurses should prioritise safety, maintain appropriate confidentiality, document findings objectively and use established safeguarding pathways.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Child and Adolescent Mental Health",
+"question_text": "Which community-level service can support early identification and referral of children with mental health concerns in rural Ghana?",
+"choices": [
+{"text": "Community-based Health Planning and Services (CHPS)", "is_correct": true},
+{"text": "A transport terminal without health referral arrangements", "is_correct": false},
+{"text": "A commercial entertainment centre", "is_correct": false},
+{"text": "A private business association without health services", "is_correct": false}
+],
+"rationale": "CHPS provides a community-based platform for health education, early identification and referral. Linking CHPS with district health facilities, mental health professionals, schools and child protection services can improve access to care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "A caregiver says that a child with autism is deliberately refusing to speak and should be punished until the child communicates. Which response is most appropriate?",
+"choices": [
+{"text": "Agree that punishment is necessary to correct autism", "is_correct": false},
+{"text": "Explain that communication differences may be part of autism and discuss appropriate communication support", "is_correct": true},
+{"text": "Advise the caregiver to stop communicating with the child", "is_correct": false},
+{"text": "Tell the caregiver that the child cannot learn any new skills", "is_correct": false}
+],
+"rationale": "Autistic children may have differences in spoken language, non-verbal communication and social interaction. Support may include speech and language therapy, visual aids and alternative communication approaches rather than punishment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "A teacher reports that a child is inattentive only during lessons involving reading, while the child can concentrate during other activities. What should the nurse consider before suggesting ADHD?",
+"choices": [
+{"text": "That the child definitely has ADHD", "is_correct": false},
+{"text": "Possible learning difficulties, teaching-related factors or other causes of the task-specific problem", "is_correct": true},
+{"text": "That the child is intentionally disobedient", "is_correct": false},
+{"text": "That ADHD is diagnosed from one classroom observation", "is_correct": false}
+],
+"rationale": "ADHD requires a persistent pattern of symptoms and impairment across more than one setting, not simply difficulty with one subject. Specific learning difficulties, sensory problems and environmental factors should also be assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Intellectual Disability",
+"question_text": "A child with intellectual disability is admitted for treatment of pneumonia. Which nursing action best promotes effective communication?",
+"choices": [
+{"text": "Use complex medical language to test the child's understanding", "is_correct": false},
+{"text": "Use simple language, visual cues and adequate time for the child to respond", "is_correct": true},
+{"text": "Speak only to the caregiver even when the child can communicate", "is_correct": false},
+{"text": "Ignore the child's attempts to express discomfort", "is_correct": false}
+],
+"rationale": "Communication should be adapted to the child's cognitive and language abilities. Simple explanations, visual support and adequate response time encourage participation and help the nurse identify the child's needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Childhood Anxiety and Depression",
+"question_text": "A 16-year-old presents with persistent sadness, social withdrawal, declining grades and frequent thoughts of worthlessness. Which assessment is most important?",
+"choices": [
+{"text": "Assessment of depressive symptoms, suicide risk, functioning and possible contributing factors", "is_correct": true},
+{"text": "Assessment of height alone", "is_correct": false},
+{"text": "Assessment of preferred recreational activities only", "is_correct": false},
+{"text": "Assessment of academic performance without asking about emotional wellbeing", "is_correct": false}
+],
+"rationale": "The presentation suggests possible adolescent depression and requires assessment of symptom severity, duration and functional impairment. Direct evaluation of suicide risk is essential because adolescents with depression may experience suicidal thoughts or behaviour.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Trauma and Post-Traumatic Stress Disorder in Children",
+"question_text": "A child who experienced a road traffic accident becomes distressed whenever hearing vehicle brakes and refuses to travel in cars. Which nursing approach is most appropriate?",
+"choices": [
+{"text": "Force the child to travel repeatedly without preparation", "is_correct": false},
+{"text": "Use a trauma-informed approach, provide reassurance and arrange appropriate psychological assessment", "is_correct": true},
+{"text": "Tell the child that the accident was their fault", "is_correct": false},
+{"text": "Ignore the distress because the accident has already ended", "is_correct": false}
+],
+"rationale": "Avoidance and distress in response to reminders of an accident may indicate a trauma-related response. Trauma-informed care emphasises safety, trust, choice and appropriate psychological support rather than coercion or blame.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Conduct Disorders",
+"question_text": "A child with repeated aggressive behaviour is brought to the clinic. Which additional assessment is particularly important?",
+"choices": [
+{"text": "Family relationships, exposure to violence, school experiences and possible substance use", "is_correct": true},
+{"text": "The child's favourite colour only", "is_correct": false},
+{"text": "The number of toys in the child's bedroom only", "is_correct": false},
+{"text": "The parent's clothing preferences", "is_correct": false}
+],
+"rationale": "Aggressive and rule-breaking behaviour may be influenced by family conflict, abuse, trauma, peer relationships, school difficulties or substance use. Identifying contributing factors supports an appropriate individualised care plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychiatric Emergencies in Children",
+"question_text": "A 12-year-old with a history of depression tells the nurse that they have a specific suicide plan and access to the intended method. What should the nurse do first?",
+"choices": [
+{"text": "Leave the child alone to allow time for reflection", "is_correct": false},
+{"text": "Maintain continuous appropriate observation, reduce access to means and arrange emergency mental health assessment", "is_correct": true},
+{"text": "Ask the child to promise not to attempt suicide and end the assessment", "is_correct": false},
+{"text": "Inform the child that suicidal thoughts are a disciplinary matter", "is_correct": false}
+],
+"rationale": "A specific suicide plan and access to means indicate high and potentially immediate risk. The nurse must maintain safety, prevent access to the intended method and activate urgent clinical and safeguarding procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Based Interventions",
+"question_text": "Parents of an adolescent with depression frequently criticise the adolescent for poor academic performance. Which intervention may improve the home environment?",
+"choices": [
+{"text": "Family education and communication work that promotes understanding, emotional support and realistic expectations", "is_correct": true},
+{"text": "Encouraging parents to increase criticism until grades improve", "is_correct": false},
+{"text": "Advising the adolescent to avoid all family contact", "is_correct": false},
+{"text": "Removing the adolescent from every family decision", "is_correct": false}
+],
+"rationale": "Family education can help caregivers understand depression and respond supportively rather than interpreting symptoms as laziness or deliberate misconduct. Constructive communication and realistic expectations can support recovery and treatment engagement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "School Mental Health",
+"question_text": "A school nurse notices that a pupil with autism is frequently bullied because of unusual communication and behaviour. What should the nurse prioritise?",
+"choices": [
+{"text": "Tell the pupil to ignore all bullying without further intervention", "is_correct": false},
+{"text": "Address the bullying, protect the pupil and work with the school and caregivers to promote inclusion", "is_correct": true},
+{"text": "Recommend permanent exclusion of the pupil with autism", "is_correct": false},
+{"text": "Publicly disclose the pupil's diagnosis to all students", "is_correct": false}
+],
+"rationale": "Bullying can worsen anxiety, depression and social isolation in children with neurodevelopmental conditions. The school should respond through safeguarding, anti-bullying measures, inclusion and appropriate support while protecting the child's privacy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safeguarding and Child Protection in Ghana",
+"question_text": "A child tells a nurse that a caregiver has repeatedly locked the child in a room without food as punishment. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Treat the disclosure as a private family disagreement", "is_correct": false},
+{"text": "Assess immediate danger and basic needs, document the disclosure and initiate appropriate child protection referral", "is_correct": true},
+{"text": "Advise the child to run away without a safety plan", "is_correct": false},
+{"text": "Return the child to the caregiver without further assessment", "is_correct": false}
+],
+"rationale": "Locking a child away without food may constitute abuse or neglect and may place the child at immediate risk. The nurse should assess safety and needs, document objectively and follow appropriate child protection procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Child and Adolescent Mental Health",
+"question_text": "A caregiver in a rural Ghanaian community believes that a child's developmental difficulties are caused by a curse and seeks help only from a traditional healer. Which response is most appropriate for the community mental health nurse?",
+"choices": [
+{"text": "Ridicule the caregiver's beliefs and end the discussion", "is_correct": false},
+{"text": "Explore the caregiver's concerns respectfully, provide accurate information and encourage developmental assessment and appropriate services", "is_correct": true},
+{"text": "Confirm that the child is cursed", "is_correct": false},
+{"text": "Advise the caregiver to avoid all healthcare facilities", "is_correct": false}
+],
+"rationale": "Culturally sensitive communication can reduce stigma and improve willingness to seek healthcare. The nurse should respect the caregiver while explaining the importance of evidence-based developmental assessment and early intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child and Adolescent Psychiatric Assessment",
+"question_text": "During an interview, a 13-year-old refuses to speak while the caregiver answers every question. Which action is most appropriate?",
+"choices": [
+{"text": "End the assessment because the child is unwilling to cooperate", "is_correct": false},
+{"text": "Build rapport, explain confidentiality and its limits, and offer the adolescent an appropriate opportunity to speak privately", "is_correct": true},
+{"text": "Allow the caregiver to answer all questions without involving the adolescent", "is_correct": false},
+{"text": "Threaten the adolescent with punishment for not speaking", "is_correct": false}
+],
+"rationale": "Adolescents may disclose sensitive information more comfortably when given an appropriate private opportunity to speak. The nurse should explain confidentiality and its limits, especially where safety or safeguarding concerns arise.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "A child with autism has limited spoken language but communicates by pointing to pictures. Which intervention best supports the child's participation in care?",
+"choices": [
+{"text": "Ignore the picture communication system and insist on spoken responses", "is_correct": false},
+{"text": "Use the child's established picture-based communication system when explaining needs and procedures", "is_correct": true},
+{"text": "Assume that limited speech means the child cannot understand anything", "is_correct": false},
+{"text": "Prevent the caregiver from explaining the child's communication preferences", "is_correct": false}
+],
+"rationale": "Augmentative and alternative communication methods can help children with limited spoken language express needs and understand information. Using a familiar communication system promotes participation and reduces distress.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "A child taking prescribed stimulant medication for ADHD has reduced appetite and difficulty sleeping. What should the nurse do?",
+"choices": [
+{"text": "Advise the caregiver to double the medication dose", "is_correct": false},
+{"text": "Assess the timing and severity of symptoms, monitor growth and sleep, and report concerns to the prescriber", "is_correct": true},
+{"text": "Tell the caregiver to stop all treatment permanently without review", "is_correct": false},
+{"text": "Ignore the symptoms because stimulant medication has no adverse effects", "is_correct": false}
+],
+"rationale": "Reduced appetite and sleep disturbance are recognised adverse effects of stimulant medication. The nurse should monitor the child's growth and functioning and ensure that medication concerns are reviewed by the prescribing clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Intellectual Disability",
+"question_text": "A child with intellectual disability is scheduled for a procedure and appears frightened. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Provide an explanation using simple language and familiar visual aids, allowing time for questions", "is_correct": true},
+{"text": "Avoid explaining the procedure because the child has an intellectual disability", "is_correct": false},
+{"text": "Threaten the child with punishment if they become distressed", "is_correct": false},
+{"text": "Discuss the procedure only with other patients", "is_correct": false}
+],
+"rationale": "Children with intellectual disability should receive information adapted to their communication and cognitive abilities. Simple explanations and visual support can reduce fear and promote participation in care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Childhood Anxiety and Depression",
+"question_text": "A 15-year-old presents with persistent irritability, declining academic performance and social withdrawal. The caregiver reports that the adolescent has also stopped enjoying previously valued activities. Which assessment is most appropriate?",
+"choices": [
+{"text": "Assess for depression, suicide risk, substance use, bullying and other psychosocial stressors", "is_correct": true},
+{"text": "Conclude that the adolescent has conduct disorder without further assessment", "is_correct": false},
+{"text": "Focus exclusively on academic performance", "is_correct": false},
+{"text": "Assume that the symptoms are normal adolescent behaviour", "is_correct": false}
+],
+"rationale": "Irritability, anhedonia, withdrawal and declining performance may indicate adolescent depression. Assessment should also explore suicide risk and relevant factors such as bullying, trauma, substance use and family difficulties.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Trauma and Post-Traumatic Stress Disorder in Children",
+"question_text": "A child who experienced sexual abuse becomes silent whenever the alleged perpetrator is mentioned. The caregiver insists that the child should explain everything immediately. What should the nurse do?",
+"choices": [
+{"text": "Force the child to provide a detailed account during the first interview", "is_correct": false},
+{"text": "Prioritise safety, use a trauma-informed approach and arrange assessment by appropriately trained professionals", "is_correct": true},
+{"text": "Tell the caregiver to question the child repeatedly at home", "is_correct": false},
+{"text": "Assume that silence proves the disclosure is false", "is_correct": false}
+],
+"rationale": "Trauma may affect a child's ability or willingness to discuss an event, and silence does not invalidate a disclosure. The nurse should avoid repeated or leading questioning and follow appropriate safeguarding and specialist assessment procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Conduct Disorders",
+"question_text": "A 14-year-old with repeated aggression and theft has also disclosed witnessing domestic violence and being physically punished at home. Which care plan is most appropriate?",
+"choices": [
+{"text": "Focus only on punishment for the aggressive behaviour", "is_correct": false},
+{"text": "Assess safety and trauma exposure while developing a coordinated plan involving the child, caregivers and relevant services", "is_correct": true},
+{"text": "Ignore the history of domestic violence because it is unrelated to behaviour", "is_correct": false},
+{"text": "Exclude the child from school without assessment", "is_correct": false}
+],
+"rationale": "Aggressive behaviour may coexist with trauma exposure and unsafe family circumstances. Effective care requires assessment of safeguarding needs, underlying mental health problems and environmental contributors alongside behavioural interventions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychiatric Emergencies in Children",
+"question_text": "A 16-year-old presents with extreme agitation, confusion, fever and a recent history of taking unknown substances. Which action should the nurse prioritise?",
+"choices": [
+{"text": "Assume the behaviour is caused by a primary psychiatric disorder", "is_correct": false},
+{"text": "Arrange immediate medical assessment and stabilisation while ensuring safety", "is_correct": true},
+{"text": "Begin routine family counselling before checking vital signs", "is_correct": false},
+{"text": "Allow the adolescent to leave without assessment", "is_correct": false}
+],
+"rationale": "Fever, confusion and possible substance exposure may indicate intoxication, poisoning or another acute medical emergency. Medical stabilisation and assessment take priority while appropriate psychiatric evaluation follows when the adolescent is medically safe.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family-Based Interventions",
+"question_text": "The parents of a child with autism disagree about the child's needs. One parent supports developmental services, while the other believes the child should be hidden from the community because of stigma. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Support open family discussion, provide accurate education and facilitate access to appropriate developmental services", "is_correct": true},
+{"text": "Agree that the child should be isolated to protect the family reputation", "is_correct": false},
+{"text": "Blame one parent for the child's condition", "is_correct": false},
+{"text": "Avoid discussing the child's needs with the family", "is_correct": false}
+],
+"rationale": "Family education can address misconceptions and reduce stigma that may delay assessment and intervention. Collaborative discussion helps caregivers understand the child's needs and support participation in developmental and educational services.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "School Mental Health",
+"question_text": "A pupil with depression tells a teacher that they intend to kill themselves after school and identifies a method. The teacher informs the school nurse. What is the nurse's priority?",
+"choices": [
+{"text": "Arrange a routine appointment for the following month", "is_correct": false},
+{"text": "Ensure the pupil is supervised, assess immediate risk and arrange urgent emergency mental health evaluation with appropriate caregiver and safeguarding involvement", "is_correct": true},
+{"text": "Ask the pupil to return to class and continue lessons", "is_correct": false},
+{"text": "Promise to keep the information secret from everyone", "is_correct": false}
+],
+"rationale": "A stated intention, method and timeframe indicate an immediate suicide risk requiring urgent intervention. The pupil should not be left alone, and appropriate emergency, caregiver and safeguarding pathways must be activated.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Safeguarding and Child Protection in Ghana",
+"question_text": "A nurse suspects that a child with intellectual disability is being sexually abused by a relative who accompanies the child to clinic. The relative refuses to leave the consultation room. What should the nurse do?",
+"choices": [
+{"text": "Accept the relative's refusal and discontinue assessment", "is_correct": false},
+{"text": "Use appropriate procedures to obtain a safe private assessment, protect the child and activate safeguarding referral pathways", "is_correct": true},
+{"text": "Accuse the relative publicly without ensuring the child's safety", "is_correct": false},
+{"text": "Send the child home with the relative without further action", "is_correct": false}
+],
+"rationale": "Children with disabilities may face increased vulnerability to abuse and may require communication adjustments to disclose concerns. The nurse should arrange a safe assessment, avoid alerting a suspected perpetrator in a way that increases danger and follow child protection procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Child and Adolescent Mental Health",
+"question_text": "A district health team finds that children with developmental disorders are frequently taken to traditional healers and arrive at health facilities only after severe difficulties develop. Which community strategy is most appropriate?",
+"choices": [
+{"text": "Prohibit all community discussion of developmental disorders", "is_correct": false},
+{"text": "Develop culturally respectful education, strengthen CHPS and school identification, and establish clear referral pathways", "is_correct": true},
+{"text": "Wait until caregivers independently request specialist treatment", "is_correct": false},
+{"text": "Blame traditional beliefs without addressing service access barriers", "is_correct": false}
+],
+"rationale": "Delayed identification may be influenced by stigma, misconceptions and limited access to specialist services. Community education, CHPS involvement, school awareness and coordinated referrals can improve early access while engaging families respectfully.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Child and Adolescent Psychiatric Assessment",
+"question_text": "A 12-year-old is referred for behavioural problems. The caregiver reports severe misconduct, but the child describes being bullied and feeling unsafe at school. What should the nurse do?",
+"choices": [
+{"text": "Accept the caregiver's account as the only reliable source", "is_correct": false},
+{"text": "Explore both accounts, assess for bullying and safety concerns, and obtain relevant school information with appropriate consent", "is_correct": true},
+{"text": "Immediately diagnose conduct disorder", "is_correct": false},
+{"text": "Ignore the child's account because children cannot provide useful information", "is_correct": false}
+],
+"rationale": "Different informants may describe a child's behaviour differently because they observe the child in different settings. A balanced assessment should explore the child's perspective, caregiver concerns, school experiences and possible safeguarding issues before reaching a diagnosis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychiatric Emergencies in Children",
+"question_text": "A child admitted with severe agitation suddenly becomes drowsy and difficult to rouse after receiving medication. What should the nurse do first?",
+"choices": [
+{"text": "Assume the child is simply sleeping after becoming calm", "is_correct": false},
+{"text": "Assess airway, breathing, circulation and level of consciousness, and seek immediate medical assistance", "is_correct": true},
+{"text": "Leave the child unattended until the next observation round", "is_correct": false},
+{"text": "Give another dose of sedative medication", "is_correct": false}
+],
+"rationale": "Reduced responsiveness after medication may indicate oversedation or another serious adverse event. Immediate assessment of airway, breathing, circulation and consciousness is essential, followed by urgent clinical intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "Which principle should guide psychiatric nursing care for a child or adolescent with a mental disorder in Ghana?",
+"choices": [
+{"text": "The child should automatically lose all rights because of the diagnosis", "is_correct": false},
+{"text": "Care should respect dignity, applicable legal protections, safety and the child's developmental needs", "is_correct": true},
+{"text": "The diagnosis should be disclosed publicly to prevent further illness", "is_correct": false},
+{"text": "Every child with a mental disorder must be admitted to a psychiatric hospital", "is_correct": false}
+],
+"rationale": "Ghana's Mental Health Act, 2012 (Act 846) provides a legal framework for mental healthcare and protection of the rights of persons with mental disorders. Nurses should uphold dignity, confidentiality and appropriate legal safeguards while considering child protection requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "NHIS and Access to Child Mental Health Services",
+"question_text": "A caregiver is concerned about the cost of assessment for a child with suspected autism. What should the nurse advise?",
+"choices": [
+{"text": "Assure the caregiver that every developmental and psychiatric service is automatically free under NHIS", "is_correct": false},
+{"text": "Help the caregiver confirm applicable NHIS benefits and identify available public referral and social support services", "is_correct": true},
+{"text": "Tell the caregiver that NHIS never covers any health service for children with mental health conditions", "is_correct": false},
+{"text": "Advise the caregiver to delay assessment until the child reaches adolescence", "is_correct": false}
+],
+"rationale": "Coverage and payment arrangements may vary by service, facility and benefit package, so nurses should avoid making unsupported guarantees. Helping families verify entitlements and access available referral pathways can reduce financial barriers to assessment and care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Autism Spectrum Disorder",
+"question_text": "A child with autism is admitted for a procedure and begins screaming when unfamiliar staff approach. The caregiver explains that the child becomes distressed by unexpected touch. Which action should the nurse take?",
+"choices": [
+{"text": "Proceed without explanation because the procedure is necessary", "is_correct": false},
+{"text": "Explain each step in advance, use familiar communication strategies and minimise unexpected sensory stimulation", "is_correct": true},
+{"text": "Tell the caregiver to leave because their presence increases dependence", "is_correct": false},
+{"text": "Punish the child for resisting the procedure", "is_correct": false}
+],
+"rationale": "Predictability and preparation can reduce distress in autistic children who experience sensory sensitivities or difficulty with unexpected changes. Involving caregivers and adapting communication can improve cooperation while maintaining safe clinical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Intellectual Disability",
+"question_text": "A child with intellectual disability is repeatedly missing school because the family believes education is unnecessary for the child. What is the nurse's most appropriate response?",
+"choices": [
+{"text": "Agree that children with intellectual disability cannot benefit from education", "is_correct": false},
+{"text": "Educate the family about inclusive education, individual support needs and available developmental services", "is_correct": true},
+{"text": "Recommend that the child remain permanently at home", "is_correct": false},
+{"text": "Blame the family without discussing available support", "is_correct": false}
+],
+"rationale": "Children with intellectual disability can benefit from education adapted to their abilities and support needs. Family education and collaboration with schools can promote inclusion, skill development and participation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Childhood Anxiety and Depression",
+"question_text": "A 13-year-old with anxiety avoids school presentations and group activities. Which intervention is most consistent with cognitive behavioural therapy?",
+"choices": [
+{"text": "Help the adolescent identify anxious thoughts and gradually practise manageable feared situations", "is_correct": true},
+{"text": "Encourage permanent avoidance of all situations that cause anxiety", "is_correct": false},
+{"text": "Punish the adolescent for showing fear", "is_correct": false},
+{"text": "Tell the adolescent that anxiety cannot be managed", "is_correct": false}
+],
+"rationale": "Cognitive behavioural therapy helps individuals identify and modify unhelpful thinking patterns and develop coping skills. Gradual, planned exposure may reduce avoidance and anxiety when conducted appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Based Interventions",
+"question_text": "A family caring for a child with a chronic psychiatric disorder reports exhaustion, conflict and difficulty maintaining treatment routines. What should the nurse prioritise?",
+"choices": [
+{"text": "Assess caregiver strain and develop a realistic care plan that includes education, support and follow-up", "is_correct": true},
+{"text": "Tell the family that exhaustion proves they are unsuitable caregivers", "is_correct": false},
+{"text": "Remove the child from all family contact without assessment", "is_correct": false},
+{"text": "Advise the family to discontinue the child's treatment", "is_correct": false}
+],
+"rationale": "Caregiver strain can affect treatment adherence and family wellbeing. Assessing the family's needs and providing education, practical support and appropriate referrals can strengthen the child's care environment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safeguarding and Child Protection in Ghana",
+"question_text": "A child with a suspected mental disorder is being repeatedly beaten by caregivers because they believe the child is deliberately behaving badly. What should the nurse prioritise?",
+"choices": [
+{"text": "Recommend stricter physical punishment to control behaviour", "is_correct": false},
+{"text": "Assess the child's immediate safety, address suspected abuse and arrange appropriate mental health and child protection support", "is_correct": true},
+{"text": "Ignore the abuse because the caregivers are responsible for discipline", "is_correct": false},
+{"text": "Discharge the child without documenting the concern", "is_correct": false}
+],
+"rationale": "Physical punishment that causes harm or places a child at risk requires safeguarding attention. The nurse should protect the child, document objective findings and coordinate appropriate clinical and child protection interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "School Mental Health",
+"question_text": "A school has several pupils with suspected mental health problems but no school-based mental health professional. Which action is most appropriate for the school health coordinator?",
+"choices": [
+{"text": "Attempt to diagnose and prescribe medication for every pupil", "is_correct": false},
+{"text": "Strengthen links with parents, CHPS and district health services for assessment, referral and follow-up", "is_correct": true},
+{"text": "Keep all pupils with emotional difficulties away from school", "is_correct": false},
+{"text": "Rely on punishment instead of referral and support", "is_correct": false}
+],
+"rationale": "School health programmes can identify concerns and facilitate access to qualified health professionals without replacing specialist assessment. Collaboration with families, CHPS and district services supports continuity and appropriate intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Child and Adolescent Mental Health",
+"question_text": "A child with severe behavioural difficulties is receiving care at a district hospital but repeatedly misses follow-up appointments. Which community intervention is most appropriate?",
+"choices": [
+{"text": "Coordinate with the family and community health team to identify barriers and support follow-up", "is_correct": true},
+{"text": "Remove the child permanently from the treatment register", "is_correct": false},
+{"text": "Assume that the child has recovered because appointments were missed", "is_correct": false},
+{"text": "Disclose the child's diagnosis to community members to encourage attendance", "is_correct": false}
+],
+"rationale": "Missed appointments may reflect transport difficulties, stigma, financial barriers or caregiver challenges rather than recovery. A coordinated and confidential community follow-up approach can identify barriers and improve continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child and Adolescent Psychiatric Assessment",
+"question_text": "A 10-year-old presents with sudden behavioural changes, confusion and visual hallucinations following a febrile illness. What should the nurse prioritise?",
+"choices": [
+{"text": "Assume that the child has schizophrenia", "is_correct": false},
+{"text": "Arrange urgent medical assessment for possible delirium, infection or another neurological cause", "is_correct": true},
+{"text": "Begin long-term behavioural therapy without medical evaluation", "is_correct": false},
+{"text": "Discharge the child because hallucinations are always imaginary", "is_correct": false}
+],
+"rationale": "Acute confusion and hallucinations following a febrile illness may indicate delirium or an underlying medical or neurological condition. Medical assessment and stabilisation take priority before attributing the symptoms to a primary psychiatric disorder.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Attention-Deficit/Hyperactivity Disorder",
+"question_text": "A child is referred for suspected ADHD because of poor concentration and restlessness. The caregiver reports that the child sleeps only four hours each night and snores loudly. What should the nurse consider?",
+"choices": [
+{"text": "Sleep-disordered breathing or inadequate sleep as possible contributors to behavioural symptoms", "is_correct": true},
+{"text": "That ADHD is confirmed and no further assessment is required", "is_correct": false},
+{"text": "That sleep has no effect on attention or behaviour", "is_correct": false},
+{"text": "That the child should immediately be excluded from school", "is_correct": false}
+],
+"rationale": "Sleep problems can cause or worsen inattention, irritability and hyperactivity in children. Assessment for sleep-disordered breathing and other contributors is important before confirming ADHD and planning treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Childhood Anxiety and Depression",
+"question_text": "A 16-year-old with depression has stopped attending school and has recently started using alcohol. The adolescent denies suicidal thoughts but reports feeling hopeless. Which plan is most appropriate?",
+"choices": [
+{"text": "Treat the situation as a minor school attendance problem", "is_correct": false},
+{"text": "Arrange a comprehensive assessment of depression, substance use, suicide risk and safeguarding needs, followed by coordinated care", "is_correct": true},
+{"text": "Focus only on stopping alcohol use without assessing mental health", "is_correct": false},
+{"text": "Discharge the adolescent because suicidal thoughts were denied", "is_correct": false}
+],
+"rationale": "Depression, hopelessness, school disengagement and substance use may indicate significant clinical and psychosocial risk. A denial of suicidal thoughts does not remove the need for a comprehensive risk assessment and coordinated treatment plan.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychiatric Emergencies in Children",
+"question_text": "A child with a known psychiatric disorder develops sudden severe agitation after a recent change in medication. The child also has muscle stiffness and a high temperature. What should the nurse suspect?",
+"choices": [
+{"text": "A possible serious medication reaction such as neuroleptic malignant syndrome", "is_correct": true},
+{"text": "Normal excitement associated with childhood", "is_correct": false},
+{"text": "A simple behavioural problem requiring punishment", "is_correct": false},
+{"text": "An uncomplicated separation anxiety episode", "is_correct": false}
+],
+"rationale": "Fever, muscle rigidity and altered mental status following antipsychotic exposure raise concern for neuroleptic malignant syndrome, a potentially life-threatening reaction. The nurse should stop further administration pending urgent medical review and activate emergency management according to clinical protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Safeguarding and Child Protection in Ghana",
+"question_text": "A child with a mental health condition is being kept out of school because community members believe the child is dangerous. The caregiver reports increasing isolation and distress. Which intervention is most appropriate?",
+"choices": [
+{"text": "Support exclusion to protect the community from stigma", "is_correct": false},
+{"text": "Address misconceptions, assess the child's needs and safety, and coordinate inclusive education and appropriate mental health support", "is_correct": true},
+{"text": "Advise the caregiver to hide the child permanently", "is_correct": false},
+{"text": "Discontinue all community follow-up", "is_correct": false}
+],
+"rationale": "Stigma and exclusion can worsen psychological distress and limit access to education and care. The nurse should promote accurate information, protect the child's rights and coordinate appropriate health and educational support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Intellectual Disability",
+"question_text": "A child with intellectual disability is brought to the clinic with repeated unexplained injuries. The caregiver gives inconsistent explanations and becomes hostile when asked about the injuries. What should the nurse do?",
+"choices": [
+{"text": "Assume the injuries are accidental because the child has a disability", "is_correct": false},
+{"text": "Prioritise treatment and safety, document objective findings and initiate appropriate safeguarding assessment", "is_correct": true},
+{"text": "Send the child home without further assessment", "is_correct": false},
+{"text": "Accuse the caregiver publicly before obtaining clinical information", "is_correct": false}
+],
+"rationale": "Repeated unexplained injuries and inconsistent explanations may indicate abuse or neglect, and children with disabilities can be particularly vulnerable. The nurse should ensure medical care, document findings accurately and follow child protection procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Child and Adolescent Mental Health",
+"question_text": "A district is planning a child and adolescent mental health programme. Which approach is most likely to improve access, reduce stigma and support continuity of care?",
+"choices": [
+{"text": "Provide services only at specialist psychiatric hospitals", "is_correct": false},
+{"text": "Integrate mental health education and early identification into schools, CHPS and district health services, with clear specialist referral pathways", "is_correct": true},
+{"text": "Rely exclusively on families to identify and treat mental disorders", "is_correct": false},
+{"text": "Avoid involving teachers and community health workers", "is_correct": false}
+],
+"rationale": "An integrated approach brings identification and support closer to children and families while maintaining access to specialist care when needed. Collaboration between schools, CHPS, district facilities, caregivers and mental health professionals can improve early intervention and follow-up.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
