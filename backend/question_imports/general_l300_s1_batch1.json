@@ -1,0 +1,1600 @@
+{
+  "courses": [
+    {
+      "course_code": "AND-311",
+      "course_title": "Advanced Nursing III",
+      "category": "FUNDAMENTALS",
+      "semester": "S1",
+      "topics": [
+        "Advanced Assessment",
+        "Critical Care Basics",
+        "Fluid and Electrolytes",
+        "Acid-Base Balance",
+        "Perioperative Care",
+        "Wound Management",
+        "Emergency Nursing",
+        "End-of-Life Care"
+      ],
+      "questions": [
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "A nurse is assessing an adult patient admitted to a medical ward with severe breathlessness. Which assessment finding provides the strongest evidence of inadequate tissue oxygenation?",
+          "choices": [
+            {"text": "Respiratory rate of 18 breaths per minute", "is_correct": false},
+            {"text": "Oxygen saturation of 84% on room air", "is_correct": true},
+            {"text": "Blood pressure of 125/80 mmHg", "is_correct": false},
+            {"text": "Temperature of 36.8°C", "is_correct": false}
+          ],
+          "rationale": "An oxygen saturation of 84% indicates significant hypoxaemia requiring immediate assessment and intervention. The other findings are within or near normal adult ranges and do not independently demonstrate inadequate oxygenation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "During neurological assessment, a patient opens the eyes to speech, produces inappropriate words and withdraws from painful stimulation. What is the patient's Glasgow Coma Scale score?",
+          "choices": [
+            {"text": "8", "is_correct": false},
+            {"text": "9", "is_correct": true},
+            {"text": "10", "is_correct": false},
+            {"text": "11", "is_correct": false}
+          ],
+          "rationale": "Eye opening to speech scores 3, inappropriate words score 3, and withdrawal from pain scores 4, giving a total of 10. Correction: the combined score is 10, making option C correct; the other totals do not match the documented responses.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "Which component of the Glasgow Coma Scale assesses the patient's ability to obey commands?",
+          "choices": [
+            {"text": "Eye opening", "is_correct": false},
+            {"text": "Verbal response", "is_correct": false},
+            {"text": "Motor response", "is_correct": true},
+            {"text": "Pupillary response", "is_correct": false}
+          ],
+          "rationale": "The motor component assesses purposeful movement, including the ability to obey commands. Eye opening and verbal response assess different neurological functions, while pupillary response is not a component of the standard Glasgow Coma Scale.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "A patient admitted to a district hospital suddenly develops facial asymmetry, slurred speech and weakness of the right arm. What should the nurse do first?",
+          "choices": [
+            {"text": "Administer oral aspirin immediately", "is_correct": false},
+            {"text": "Establish the time the symptoms began and activate the stroke response pathway", "is_correct": true},
+            {"text": "Encourage the patient to walk", "is_correct": false},
+            {"text": "Provide oral fluids to prevent dehydration", "is_correct": false}
+          ],
+          "rationale": "Sudden facial weakness, speech disturbance and unilateral limb weakness suggest acute stroke, requiring immediate stroke assessment and urgent referral for brain imaging. Aspirin must not be administered before intracranial haemorrhage is excluded, and oral intake is unsafe until swallowing is assessed.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "Which assessment technique involves tapping the body surface to determine the density and underlying characteristics of an organ?",
+          "choices": [
+            {"text": "Inspection", "is_correct": false},
+            {"text": "Palpation", "is_correct": false},
+            {"text": "Percussion", "is_correct": true},
+            {"text": "Auscultation", "is_correct": false}
+          ],
+          "rationale": "Percussion involves tapping the body surface to assess underlying structures through the sounds produced. Inspection involves visual observation, palpation uses touch, and auscultation involves listening to internal body sounds.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "A nurse assesses a patient with suspected appendicitis and observes marked tenderness and involuntary guarding in the right lower abdominal quadrant. What does involuntary guarding most strongly suggest?",
+          "choices": [
+            {"text": "Normal abdominal muscle relaxation", "is_correct": false},
+            {"text": "Possible peritoneal irritation", "is_correct": true},
+            {"text": "Increased intestinal absorption", "is_correct": false},
+            {"text": "Reduced gastric acid production", "is_correct": false}
+          ],
+          "rationale": "Involuntary guarding is a protective contraction of abdominal muscles associated with irritation or inflammation of the peritoneum. The other options do not explain the localized protective muscular response.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "Which clinical parameter is most appropriate for assessing peripheral tissue perfusion during an advanced cardiovascular assessment?",
+          "choices": [
+            {"text": "Capillary refill time", "is_correct": true},
+            {"text": "Pupil diameter", "is_correct": false},
+            {"text": "Bowel sound frequency", "is_correct": false},
+            {"text": "Visual acuity", "is_correct": false}
+          ],
+          "rationale": "Capillary refill time provides an indirect indication of peripheral perfusion when interpreted alongside other clinical findings. Pupil diameter, bowel sounds and visual acuity assess different physiological functions.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "A patient with severe hypertension complains of a sudden severe headache, blurred vision and vomiting. What is the nurse's priority action?",
+          "choices": [
+            {"text": "Allow the patient to sleep", "is_correct": false},
+            {"text": "Administer a routine oral analgesic", "is_correct": false},
+            {"text": "Urgently assess neurological status and notify the medical team", "is_correct": true},
+            {"text": "Encourage unrestricted fluid intake", "is_correct": false}
+          ],
+          "rationale": "These symptoms may indicate hypertensive emergency with acute neurological or end-organ involvement, requiring urgent assessment and medical intervention. Rest, routine analgesia and unrestricted fluids do not address the potentially life-threatening condition.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "Which finding is most consistent with orthostatic hypotension?",
+          "choices": [
+            {"text": "An increase in systolic blood pressure after standing", "is_correct": false},
+            {"text": "A fall in systolic blood pressure of at least 20 mmHg after standing", "is_correct": true},
+            {"text": "A decrease in respiratory rate after standing", "is_correct": false},
+            {"text": "An increase in body temperature after standing", "is_correct": false}
+          ],
+          "rationale": "Orthostatic hypotension is commonly defined as a sustained fall in systolic blood pressure of at least 20 mmHg or diastolic pressure of at least 10 mmHg within three minutes of standing. The other findings do not meet the diagnostic criteria.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Advanced Assessment",
+          "question_text": "A patient with diabetes reports numbness and tingling in both feet. Which assessment is most appropriate for detecting peripheral sensory neuropathy?",
+          "choices": [
+            {"text": "Assessment of visual acuity", "is_correct": false},
+            {"text": "Monofilament testing of the feet", "is_correct": true},
+            {"text": "Measurement of abdominal girth", "is_correct": false},
+            {"text": "Assessment of bowel sounds", "is_correct": false}
+          ],
+          "rationale": "A 10-g monofilament test assesses protective sensation and helps identify diabetic peripheral neuropathy and risk of foot ulceration. The other assessments do not directly evaluate protective sensation in the feet.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "A patient admitted with severe malaria becomes confused, hypotensive and cold to touch. Which nursing action takes priority?",
+          "choices": [
+            {"text": "Complete the admission documentation", "is_correct": false},
+            {"text": "Assess airway, breathing and circulation and initiate emergency support", "is_correct": true},
+            {"text": "Offer oral antimalarial medication", "is_correct": false},
+            {"text": "Arrange routine outpatient review", "is_correct": false}
+          ],
+          "rationale": "Confusion, hypotension and peripheral coldness suggest severe illness with possible circulatory shock, requiring immediate ABC assessment and resuscitation. Documentation, oral medication and outpatient review must not delay emergency stabilization.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "Which finding is most characteristic of hypovolaemic shock?",
+          "choices": [
+            {"text": "Bradycardia and bounding pulses", "is_correct": false},
+            {"text": "Tachycardia, hypotension and cool clammy skin", "is_correct": true},
+            {"text": "Hypertension and warm dry skin", "is_correct": false},
+            {"text": "Slow respiratory rate and facial flushing", "is_correct": false}
+          ],
+          "rationale": "Hypovolaemic shock reduces circulating blood volume, producing compensatory tachycardia, reduced blood pressure and peripheral vasoconstriction. The other combinations are not characteristic of the usual hypovolaemic shock presentation.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "A patient in the emergency department has a respiratory rate of 32 breaths per minute, oxygen saturation of 82% and central cyanosis. What is the priority nursing intervention?",
+          "choices": [
+            {"text": "Administer prescribed oxygen and urgently escalate respiratory support", "is_correct": true},
+            {"text": "Encourage the patient to drink water", "is_correct": false},
+            {"text": "Obtain a dietary history", "is_correct": false},
+            {"text": "Administer a prescribed oral laxative", "is_correct": false}
+          ],
+          "rationale": "Severe hypoxaemia and central cyanosis indicate life-threatening respiratory compromise, requiring immediate oxygenation and urgent escalation. Hydration, dietary assessment and laxatives do not correct the immediate oxygenation problem.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "Which rhythm is classically associated with a patient who has no pulse and requires immediate defibrillation?",
+          "choices": [
+            {"text": "Sinus bradycardia", "is_correct": false},
+            {"text": "Ventricular fibrillation", "is_correct": true},
+            {"text": "Atrial fibrillation with a pulse", "is_correct": false},
+            {"text": "First-degree atrioventricular block", "is_correct": false}
+          ],
+          "rationale": "Ventricular fibrillation is a shockable cardiac arrest rhythm requiring immediate CPR and unsynchronised defibrillation. The other rhythms are not automatically shockable cardiac arrest rhythms.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "During CPR in an adult patient, which chest compression rate is recommended?",
+          "choices": [
+            {"text": "60–80 compressions per minute", "is_correct": false},
+            {"text": "80–90 compressions per minute", "is_correct": false},
+            {"text": "100–120 compressions per minute", "is_correct": true},
+            {"text": "130–150 compressions per minute", "is_correct": false}
+          ],
+          "rationale": "Adult CPR guidelines recommend a compression rate of 100–120 per minute with adequate depth and complete chest recoil. Rates outside this range may compromise effective circulation during resuscitation.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "A nurse finds an unconscious adult patient who is not breathing normally and has no definite pulse within 10 seconds. What should the nurse do?",
+          "choices": [
+            {"text": "Place the patient in the recovery position", "is_correct": false},
+            {"text": "Activate the emergency response system and begin CPR", "is_correct": true},
+            {"text": "Wait for the patient's relatives", "is_correct": false},
+            {"text": "Administer oral glucose", "is_correct": false}
+          ],
+          "rationale": "An unconscious adult with absent normal breathing and no definite pulse should be treated as being in cardiac arrest, requiring immediate emergency activation and CPR. Recovery positioning and oral glucose are inappropriate because the patient has no effective circulation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "A patient receiving intravenous potassium chloride develops severe muscle weakness and ECG changes suggestive of hyperkalaemia. Which action should the nurse take first?",
+          "choices": [
+            {"text": "Increase the potassium infusion rate", "is_correct": false},
+            {"text": "Stop the potassium infusion and urgently notify the medical team", "is_correct": true},
+            {"text": "Administer an additional potassium supplement", "is_correct": false},
+            {"text": "Encourage foods rich in potassium", "is_correct": false}
+          ],
+          "rationale": "Suspected hyperkalaemia with ECG abnormalities is a medical emergency, and the potassium source must be stopped immediately while urgent treatment is arranged. Increasing potassium administration or recommending potassium-rich foods would worsen the electrolyte disturbance.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "Which intervention is most appropriate for reducing the risk of ventilator-associated pneumonia?",
+          "choices": [
+            {"text": "Keeping the patient completely supine", "is_correct": false},
+            {"text": "Maintaining appropriate head-of-bed elevation and providing regular oral care", "is_correct": true},
+            {"text": "Disconnecting the ventilator frequently", "is_correct": false},
+            {"text": "Avoiding assessment of oral secretions", "is_correct": false}
+          ],
+          "rationale": "Head-of-bed elevation, usually 30–45 degrees when not contraindicated, and regular oral hygiene help reduce aspiration-related respiratory infection risk. Prolonged supine positioning, unnecessary circuit disconnections and inadequate oral care increase complications.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Critical Care Basics",
+          "question_text": "A patient with suspected septic shock has a temperature of 39.5°C, respiratory rate of 30 breaths per minute, hypotension and altered consciousness. What is the most appropriate priority?",
+          "choices": [
+            {"text": "Initiate urgent sepsis management and obtain cultures without delaying prescribed antibiotics", "is_correct": true},
+            {"text": "Wait for culture results before starting treatment", "is_correct": false},
+            {"text": "Administer an antipyretic and discharge the patient", "is_correct": false},
+            {"text": "Restrict all intravenous fluids", "is_correct": false}
+          ],
+          "rationale": "The findings suggest sepsis with organ dysfunction and possible septic shock, requiring rapid assessment, appropriate cultures, timely broad-spectrum antibiotics and haemodynamic support. Waiting for culture results delays lifesaving treatment, while routine discharge or blanket fluid restriction is unsafe.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Fluid and Electrolytes",
+          "question_text": "Which electrolyte disturbance is most strongly associated with peaked T waves on an electrocardiogram?",
+          "choices": [
+            {"text": "Hypokalaemia", "is_correct": false},
+            {"text": "Hyperkalaemia", "is_correct": true},
+            {"text": "Hyponatraemia", "is_correct": false},
+            {"text": "Hypocalcaemia", "is_correct": false}
+          ],
+          "rationale": "Hyperkalaemia characteristically produces tall, peaked T waves and may progress to life-threatening conduction abnormalities. Hypokalaemia commonly causes flattened T waves and U waves, while sodium and calcium disturbances produce different ECG or neurological findings.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Fluid and Electrolytes",
+          "question_text": "A patient with prolonged diarrhoea is admitted with dry mucous membranes, reduced urine output and tachycardia. Which fluid replacement is generally indicated initially if hypovolaemic shock is present?",
+          "choices": [
+            {"text": "An isotonic crystalloid solution", "is_correct": true},
+            {"text": "A hypotonic solution only", "is_correct": false},
+            {"text": "Sterile water intravenously", "is_correct": false},
+            {"text": "A concentrated glucose solution only", "is_correct": false}
+          ],
+          "rationale": "Isotonic crystalloid solutions such as Ringer's lactate or 0.9% sodium chloride are commonly used for initial intravascular volume replacement, with reassessment after each intervention. Sterile water is unsafe intravenously, and hypotonic or concentrated glucose solutions are not appropriate initial resuscitation fluids.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Fluid and Electrolytes",
+          "question_text": "Which clinical manifestation is most characteristic of hypocalcaemia?",
+          "choices": [
+            {"text": "Muscle tetany and positive Chvostek sign", "is_correct": true},
+            {"text": "Reduced neuromuscular excitability", "is_correct": false},
+            {"text": "Severe constipation as the only manifestation", "is_correct": false},
+            {"text": "Marked polyuria without other symptoms", "is_correct": false}
+          ],
+          "rationale": "Hypocalcaemia increases neuromuscular excitability and can cause paraesthesia, muscle spasms, tetany and positive Chvostek or Trousseau signs. Reduced neuromuscular excitability and constipation are more consistent with other disturbances, particularly hypercalcaemia.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Fluid and Electrolytes",
+          "question_text": "A patient has a serum sodium concentration of 118 mmol/L and develops seizures. Which nursing action takes priority?",
+          "choices": [
+            {"text": "Encourage large amounts of plain water", "is_correct": false},
+            {"text": "Institute seizure precautions and urgently escalate care", "is_correct": true},
+            {"text": "Administer oral potassium without prescription", "is_correct": false},
+            {"text": "Encourage unrestricted physical activity", "is_correct": false}
+          ],
+          "rationale": "Severe symptomatic hyponatraemia can cause cerebral oedema and seizures, requiring immediate safety measures and urgent medical treatment with carefully controlled sodium correction. Additional free water can worsen hyponatraemia, while unprescribed potassium and physical activity do not address the emergency.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Fluid and Electrolytes",
+          "question_text": "Which electrolyte abnormality is commonly associated with prolonged vomiting and nasogastric suction?",
+          "choices": [
+            {"text": "Hypokalaemia", "is_correct": true},
+            {"text": "Hyperkalaemia in every case", "is_correct": false},
+            {"text": "Hypermagnesaemia", "is_correct": false},
+            {"text": "Hyperphosphataemia", "is_correct": false}
+          ],
+          "rationale": "Prolonged vomiting and gastric suction cause gastrointestinal potassium and hydrogen ion losses, often resulting in hypokalaemia and metabolic alkalosis. The other electrolyte abnormalities are not the characteristic expected consequences.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Fluid and Electrolytes",
+          "question_text": "A patient with chronic kidney disease has a potassium concentration of 6.8 mmol/L and ECG changes. Which prescribed medication is used to stabilize the cardiac membrane?",
+          "choices": [
+            {"text": "Intravenous calcium gluconate", "is_correct": true},
+            {"text": "Oral ferrous sulphate", "is_correct": false},
+            {"text": "Intravenous furosemide alone", "is_correct": false},
+            {"text": "Oral calcium carbonate for immediate cardiac stabilization", "is_correct": false}
+          ],
+          "rationale": "Intravenous calcium gluconate stabilizes the myocardial cell membrane and reduces the immediate risk of fatal arrhythmias in severe hyperkalaemia with ECG changes. It does not remove potassium, whereas potassium-shifting and elimination therapies must also be arranged; oral calcium carbonate is not an emergency substitute.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Fluid and Electrolytes",
+          "question_text": "A patient receiving intravenous fluids develops bilateral ankle oedema, increasing breathlessness and crackles at both lung bases. What should the nurse suspect?",
+          "choices": [
+            {"text": "Fluid volume deficit", "is_correct": false},
+            {"text": "Fluid volume excess", "is_correct": true},
+            {"text": "Hypoglycaemia", "is_correct": false},
+            {"text": "Isolated iron deficiency", "is_correct": false}
+          ],
+          "rationale": "Peripheral oedema, breathlessness and bilateral lung crackles suggest fluid overload with possible pulmonary congestion. Fluid deficit, hypoglycaemia and iron deficiency do not adequately explain this combination of findings.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "A patient's arterial blood gas results are pH 7.25, PaCO2 60 mmHg and HCO3 24 mmol/L. How should these results be interpreted?",
+          "choices": [
+            {"text": "Metabolic acidosis", "is_correct": false},
+            {"text": "Respiratory acidosis", "is_correct": true},
+            {"text": "Metabolic alkalosis", "is_correct": false},
+            {"text": "Respiratory alkalosis", "is_correct": false}
+          ],
+          "rationale": "The low pH indicates acidaemia, while the elevated PaCO2 identifies a primary respiratory cause; bicarbonate remains within the normal range. Metabolic disorders would primarily involve an abnormal bicarbonate concentration.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "Which condition is a common cause of metabolic acidosis?",
+          "choices": [
+            {"text": "Persistent vomiting", "is_correct": false},
+            {"text": "Diabetic ketoacidosis", "is_correct": true},
+            {"text": "Excessive antacid ingestion", "is_correct": false},
+            {"text": "Prolonged gastric suction", "is_correct": false}
+          ],
+          "rationale": "Diabetic ketoacidosis causes accumulation of ketoacids, resulting in metabolic acidosis with reduced bicarbonate. Vomiting, antacid ingestion and gastric suction commonly cause metabolic alkalosis.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "A patient with diabetic ketoacidosis has deep, rapid breathing. What is the physiological purpose of this respiratory pattern?",
+          "choices": [
+            {"text": "To retain carbon dioxide", "is_correct": false},
+            {"text": "To eliminate carbon dioxide and compensate for metabolic acidosis", "is_correct": true},
+            {"text": "To increase blood bicarbonate production directly", "is_correct": false},
+            {"text": "To reduce oxygen consumption by the kidneys", "is_correct": false}
+          ],
+          "rationale": "Kussmaul respirations increase alveolar ventilation, lowering PaCO2 and partially compensating for the metabolic acidosis. This response does not directly increase bicarbonate production or retain carbon dioxide.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "An arterial blood gas result shows pH 7.50, PaCO2 30 mmHg and HCO3 24 mmol/L. Which disorder is present?",
+          "choices": [
+            {"text": "Respiratory alkalosis", "is_correct": true},
+            {"text": "Respiratory acidosis", "is_correct": false},
+            {"text": "Metabolic acidosis", "is_correct": false},
+            {"text": "Metabolic alkalosis", "is_correct": false}
+          ],
+          "rationale": "The elevated pH indicates alkalemia, and the reduced PaCO2 identifies a primary respiratory cause. The normal bicarbonate concentration does not support a primary metabolic disorder.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Acid-Base Balance",
+          "question_text": "A patient with severe diarrhoea develops metabolic acidosis. Which mechanism best explains this disturbance?",
+          "choices": [
+            {"text": "Excessive loss of bicarbonate through the gastrointestinal tract", "is_correct": true},
+            {"text": "Excessive retention of gastric hydrochloric acid", "is_correct": false},
+            {"text": "Increased loss of carbon dioxide through the lungs", "is_correct": false},
+            {"text": "Excessive absorption of bicarbonate", "is_correct": false}
+          ],
+          "rationale": "Severe diarrhoea causes substantial gastrointestinal bicarbonate loss, reducing serum bicarbonate and producing metabolic acidosis. Loss of gastric acid and increased bicarbonate absorption tend to favour alkalosis, while carbon dioxide loss produces respiratory alkalosis.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "A patient scheduled for elective abdominal surgery asks why fasting is necessary before general anaesthesia. What is the nurse's best explanation?",
+          "choices": [
+            {"text": "To prevent postoperative constipation", "is_correct": false},
+            {"text": "To reduce the risk of pulmonary aspiration of gastric contents", "is_correct": true},
+            {"text": "To prevent all postoperative infections", "is_correct": false},
+            {"text": "To reduce the patient's need for analgesics", "is_correct": false}
+          ],
+          "rationale": "Preoperative fasting reduces gastric content and aspiration risk during anaesthesia, although fasting duration should follow current anaesthetic guidance and patient-specific instructions. It does not directly prevent constipation, all infections or postoperative pain.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "Before a patient is transferred to the operating theatre, which action is essential for ensuring correct patient and procedure identification?",
+          "choices": [
+            {"text": "Confirm the patient's identity, procedure and operative site using the approved safety checklist", "is_correct": true},
+            {"text": "Ask another patient to confirm the name", "is_correct": false},
+            {"text": "Rely exclusively on the bed number", "is_correct": false},
+            {"text": "Assume that the theatre list is always correct", "is_correct": false}
+          ],
+          "rationale": "Verification using approved identifiers, informed consent and the surgical safety checklist helps prevent wrong-patient, wrong-procedure and wrong-site surgery. Bed numbers and assumptions are unreliable identification methods.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "Immediately after surgery, a patient is unresponsive and has noisy, obstructed breathing. What should the nurse do first?",
+          "choices": [
+            {"text": "Assess and maintain airway patency", "is_correct": true},
+            {"text": "Inspect the surgical dressing", "is_correct": false},
+            {"text": "Measure the patient's weight", "is_correct": false},
+            {"text": "Offer oral fluids", "is_correct": false}
+          ],
+          "rationale": "Airway obstruction is an immediate postoperative emergency and must be addressed before less urgent assessments. Wound inspection and weight measurement can wait, while oral fluids are unsafe in an unresponsive patient.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "Which intervention is most effective in reducing postoperative venous thromboembolism risk in an eligible surgical patient?",
+          "choices": [
+            {"text": "Prolonged bed rest", "is_correct": false},
+            {"text": "Early mobilization and prescribed thromboprophylaxis", "is_correct": true},
+            {"text": "Routine fluid restriction", "is_correct": false},
+            {"text": "Keeping the knees continuously flexed", "is_correct": false}
+          ],
+          "rationale": "Early mobilization, mechanical measures and prescribed pharmacological thromboprophylaxis reduce venous stasis and thrombus formation. Prolonged immobility and continuous knee flexion increase venous stasis, while unnecessary fluid restriction may worsen dehydration.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "A postoperative patient suddenly develops severe hypotension, tachycardia and increasing abdominal distension. What complication should the nurse suspect?",
+          "choices": [
+            {"text": "Postoperative haemorrhage", "is_correct": true},
+            {"text": "Uncomplicated wound healing", "is_correct": false},
+            {"text": "Mild postoperative nausea", "is_correct": false},
+            {"text": "Chronic osteoarthritis", "is_correct": false}
+          ],
+          "rationale": "Hypotension, tachycardia and abdominal distension following abdominal surgery may indicate internal haemorrhage and developing hypovolaemic shock. The other conditions cannot explain the acute haemodynamic deterioration.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "Which medication class is commonly used to prevent postoperative nausea and vomiting?",
+          "choices": [
+            {"text": "Antiemetics", "is_correct": true},
+            {"text": "Anticoagulants", "is_correct": false},
+            {"text": "Anticonvulsants", "is_correct": false},
+            {"text": "Antitubercular medicines", "is_correct": false}
+          ],
+          "rationale": "Antiemetics, such as ondansetron, are used to prevent or treat postoperative nausea and vomiting. The other medication classes target coagulation, seizures and tuberculosis respectively.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Perioperative Care",
+          "question_text": "A patient scheduled for surgery reports taking warfarin for atrial fibrillation. What should the nurse do?",
+          "choices": [
+            {"text": "Ignore the medication history", "is_correct": false},
+            {"text": "Document the medication and immediately inform the surgical and anaesthetic teams", "is_correct": true},
+            {"text": "Tell the patient to double the next dose", "is_correct": false},
+            {"text": "Administer an additional anticoagulant", "is_correct": false}
+          ],
+          "rationale": "Warfarin increases perioperative bleeding risk, so the surgical team must assess anticoagulation status, indication and the appropriate interruption or reversal plan. The nurse must not independently alter the medication or administer additional anticoagulants.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "Which wound healing process involves the formation of new blood vessels, fibroblast proliferation and collagen deposition?",
+          "choices": [
+            {"text": "Inflammatory phase", "is_correct": false},
+            {"text": "Proliferative phase", "is_correct": true},
+            {"text": "Maturation phase only", "is_correct": false},
+            {"text": "Haemostasis only", "is_correct": false}
+          ],
+          "rationale": "The proliferative phase involves angiogenesis, fibroblast activity, collagen synthesis and granulation tissue formation. Haemostasis occurs immediately after injury, inflammation involves immune responses, and maturation involves remodelling of collagen.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "A patient with a surgical wound develops increasing pain, purulent discharge, redness and fever. What is the most likely complication?",
+          "choices": [
+            {"text": "Normal wound healing", "is_correct": false},
+            {"text": "Surgical site infection", "is_correct": true},
+            {"text": "Wound epithelialization", "is_correct": false},
+            {"text": "Scar maturation", "is_correct": false}
+          ],
+          "rationale": "Purulent discharge, increasing pain, erythema and fever strongly suggest a surgical site infection. These findings are not expected features of uncomplicated epithelialization or scar maturation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "A nurse observes that a patient's abdominal surgical wound has completely separated, with underlying organs visible. What is the appropriate immediate intervention?",
+          "choices": [
+            {"text": "Attempt to push the exposed organs back into the abdomen", "is_correct": false},
+            {"text": "Cover the exposed organs with sterile saline-moistened dressings and obtain urgent surgical assistance", "is_correct": true},
+            {"text": "Apply firm pressure directly to the exposed organs", "is_correct": false},
+            {"text": "Allow the wound to remain uncovered", "is_correct": false}
+          ],
+          "rationale": "This is wound evisceration, a surgical emergency requiring protection of the exposed viscera with sterile saline-moistened dressings and urgent surgical review. The organs must never be pushed back or compressed directly, and leaving them uncovered increases contamination and tissue injury.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "Which pressure injury stage is characterized by partial-thickness skin loss with exposed dermis?",
+          "choices": [
+            {"text": "Stage 1", "is_correct": false},
+            {"text": "Stage 2", "is_correct": true},
+            {"text": "Stage 3", "is_correct": false},
+            {"text": "Stage 4", "is_correct": false}
+          ],
+          "rationale": "Stage 2 pressure injury involves partial-thickness skin loss with exposed dermis, often presenting as a shallow open wound or blister. Stage 1 involves intact skin with non-blanchable erythema, while stages 3 and 4 involve deeper tissue loss.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "A bedridden patient in a medical ward has persistent redness over the sacrum that does not blanch when pressed. The skin remains intact. How should this finding be classified?",
+          "choices": [
+            {"text": "Stage 1 pressure injury", "is_correct": true},
+            {"text": "Stage 2 pressure injury", "is_correct": false},
+            {"text": "Stage 3 pressure injury", "is_correct": false},
+            {"text": "Stage 4 pressure injury", "is_correct": false}
+          ],
+          "rationale": "Non-blanchable erythema of intact skin is characteristic of a Stage 1 pressure injury. Stages 2–4 involve progressively deeper tissue damage and skin loss.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "Which action is most appropriate when cleaning a contaminated surgical wound?",
+          "choices": [
+            {"text": "Clean from the least contaminated area toward the most contaminated area using appropriate aseptic technique", "is_correct": true},
+            {"text": "Use the same swab repeatedly across the entire wound", "is_correct": false},
+            {"text": "Touch the wound directly with ungloved hands", "is_correct": false},
+            {"text": "Reuse a dressing removed from another patient", "is_correct": false}
+          ],
+          "rationale": "Cleaning from cleaner to more contaminated areas with appropriate aseptic technique reduces the transfer of microorganisms. Reusing swabs, touching wounds without appropriate protection and reusing dressings compromise infection prevention.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "A patient with diabetes has a chronic foot ulcer with necrotic tissue and surrounding cellulitis. Which nursing priority is most appropriate?",
+          "choices": [
+            {"text": "Encourage the patient to walk barefoot", "is_correct": false},
+            {"text": "Assess infection and perfusion, offload pressure and urgently escalate for wound management", "is_correct": true},
+            {"text": "Apply an unprescribed caustic chemical", "is_correct": false},
+            {"text": "Discontinue blood glucose monitoring", "is_correct": false}
+          ],
+          "rationale": "Diabetic foot ulcers with necrosis and cellulitis require urgent assessment for infection, ischaemia and systemic complications, alongside pressure offloading and appropriate treatment. Barefoot walking, caustic substances and discontinuation of glucose monitoring increase the risk of tissue damage and poor healing.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Wound Management",
+          "question_text": "Which type of wound closure is expected when a clean surgical incision is approximated with sutures?",
+          "choices": [
+            {"text": "Primary intention", "is_correct": true},
+            {"text": "Secondary intention", "is_correct": false},
+            {"text": "Tertiary intention", "is_correct": false},
+            {"text": "Delayed tissue necrosis", "is_correct": false}
+          ],
+          "rationale": "Primary intention occurs when wound edges are brought together using sutures, staples or adhesive, allowing healing with relatively little tissue loss. Secondary intention involves healing from the wound base, while tertiary intention involves delayed closure after an initial period of open management.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Emergency Nursing",
+          "question_text": "A patient involved in a road traffic accident arrives at a regional hospital with severe external bleeding from the thigh. What should the nurse do first?",
+          "choices": [
+            {"text": "Apply firm direct pressure to control the bleeding", "is_correct": true},
+            {"text": "Obtain a complete dietary history", "is_correct": false},
+            {"text": "Administer oral fluids", "is_correct": false},
+            {"text": "Wait for radiological investigations", "is_correct": false}
+          ],
+          "rationale": "Immediate control of life-threatening external haemorrhage is essential, using direct pressure and appropriate haemorrhage-control measures. History-taking, oral fluids and imaging must not delay control of active severe bleeding.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Emergency Nursing",
+          "question_text": "A patient presents with a suspected snakebite to the lower leg. Which immediate action is appropriate?",
+          "choices": [
+            {"text": "Make an incision over the bite site", "is_correct": false},
+            {"text": "Immobilize the affected limb and arrange urgent medical assessment", "is_correct": true},
+            {"text": "Apply a tight arterial tourniquet", "is_correct": false},
+            {"text": "Encourage vigorous walking to circulate the venom", "is_correct": false}
+          ],
+          "rationale": "Immobilization and urgent transfer for clinical assessment reduce movement-related venom spread and facilitate appropriate treatment, including antivenom when indicated. Incisions, suction, tight tourniquets and unnecessary movement can cause additional harm.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Emergency Nursing",
+          "question_text": "A patient arrives at the emergency department after ingesting an unknown pesticide. The patient is unconscious and has secretions around the mouth. What should the nurse prioritize?",
+          "choices": [
+            {"text": "Induce vomiting immediately", "is_correct": false},
+            {"text": "Protect the airway, assess breathing and use appropriate personal protective equipment", "is_correct": true},
+            {"text": "Give milk by mouth", "is_correct": false},
+            {"text": "Wait until the patient becomes conscious", "is_correct": false}
+          ],
+          "rationale": "An unconscious poisoning patient requires immediate airway and respiratory assessment, with appropriate staff protection against contamination. Induced vomiting and oral administration of milk are unsafe, particularly when consciousness and airway reflexes are impaired.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Emergency Nursing",
+          "question_text": "Which medication is the specific antidote for opioid-induced respiratory depression?",
+          "choices": [
+            {"text": "Atropine", "is_correct": false},
+            {"text": "Naloxone", "is_correct": true},
+            {"text": "Vitamin K", "is_correct": false},
+            {"text": "Flumazenil", "is_correct": false}
+          ],
+          "rationale": "Naloxone is an opioid receptor antagonist that reverses opioid-induced respiratory depression, although repeat dosing and monitoring may be necessary. Atropine treats certain cholinergic or bradycardic conditions, vitamin K reverses warfarin effects, and flumazenil reverses selected benzodiazepine effects.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Emergency Nursing",
+          "question_text": "A patient with severe malaria suddenly develops a generalized convulsion. Which nursing action is most appropriate during the seizure?",
+          "choices": [
+            {"text": "Insert a spoon into the patient's mouth", "is_correct": false},
+            {"text": "Protect the patient from injury, maintain airway safety and observe seizure activity", "is_correct": true},
+            {"text": "Restrain all four limbs forcefully", "is_correct": false},
+            {"text": "Administer oral antimalarial medication", "is_correct": false}
+          ],
+          "rationale": "During a seizure, the nurse should protect the patient from injury, maintain airway safety, time the seizure and obtain emergency assistance. Inserting objects into the mouth, forceful restraint and oral medication administration can cause serious harm.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Emergency Nursing",
+          "question_text": "A patient with suspected cholera presents with profuse watery diarrhoea, sunken eyes, weak pulse and severe dehydration. Which intervention is the priority?",
+          "choices": [
+            {"text": "Immediate intravenous rehydration according to the severe dehydration protocol", "is_correct": true},
+            {"text": "Restrict all fluids", "is_correct": false},
+            {"text": "Administer antidiarrhoeal medication as the sole treatment", "is_correct": false},
+            {"text": "Delay treatment until stool culture results are available", "is_correct": false}
+          ],
+          "rationale": "Severe cholera-related dehydration requires immediate intravenous rehydration using the recommended protocol, with ongoing reassessment and appropriate oral rehydration when possible. Fluid restriction, reliance on antidiarrhoeals and waiting for cultures can lead to fatal hypovolaemic shock.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Emergency Nursing",
+          "question_text": "Which triage category is generally assigned to a patient with complete airway obstruction who requires immediate intervention?",
+          "choices": [
+            {"text": "Non-urgent", "is_correct": false},
+            {"text": "Urgent", "is_correct": false},
+            {"text": "Immediate or resuscitation", "is_correct": true},
+            {"text": "Routine", "is_correct": false}
+          ],
+          "rationale": "Complete airway obstruction is an immediate life-threatening emergency requiring resuscitation without delay. Urgent, non-urgent and routine categories are inappropriate because the patient cannot safely wait.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "End-of-Life Care",
+          "question_text": "A terminally ill patient reports severe pain despite prescribed analgesia. What should the nurse do?",
+          "choices": [
+            {"text": "Dismiss the complaint because the patient is dying", "is_correct": false},
+            {"text": "Reassess pain and promptly collaborate with the prescriber to optimize symptom control", "is_correct": true},
+            {"text": "Withhold all analgesics to prevent dependence", "is_correct": false},
+            {"text": "Tell the patient that pain is unavoidable", "is_correct": false}
+          ],
+          "rationale": "Palliative care prioritizes relief of suffering through systematic symptom assessment and appropriate analgesic management. Dismissing pain or withholding indicated medication is inconsistent with compassionate, evidence-based end-of-life care.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "End-of-Life Care",
+          "question_text": "Which principle is fundamental to palliative nursing care?",
+          "choices": [
+            {"text": "Prioritizing cure regardless of patient preferences", "is_correct": false},
+            {"text": "Improving quality of life and relieving suffering", "is_correct": true},
+            {"text": "Withdrawing all emotional support", "is_correct": false},
+            {"text": "Avoiding communication about prognosis", "is_correct": false}
+          ],
+          "rationale": "Palliative care aims to improve quality of life by preventing and relieving physical, psychological, social and spiritual suffering. It does not require abandonment of treatment or avoidance of honest communication.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "End-of-Life Care",
+          "question_text": "A patient with advanced cancer refuses a proposed procedure after receiving appropriate information. Which ethical principle supports respecting this decision?",
+          "choices": [
+            {"text": "Autonomy", "is_correct": true},
+            {"text": "Justice", "is_correct": false},
+            {"text": "Fidelity", "is_correct": false},
+            {"text": "Non-maleficence alone", "is_correct": false}
+          ],
+          "rationale": "Autonomy recognizes a competent patient's right to make informed decisions about their healthcare, including refusing treatment. Justice concerns fairness, fidelity concerns keeping professional commitments, and non-maleficence concerns avoiding harm.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "End-of-Life Care",
+          "question_text": "A dying patient develops noisy respiratory secretions and family members become distressed. What is the most appropriate nursing response?",
+          "choices": [
+            {"text": "Explain the possible changes during dying and provide appropriate comfort measures", "is_correct": true},
+            {"text": "Tell the family that death is certain within minutes", "is_correct": false},
+            {"text": "Force the patient to drink water", "is_correct": false},
+            {"text": "Perform repeated deep suctioning regardless of distress", "is_correct": false}
+          ],
+          "rationale": "Noisy respiratory secretions can occur near the end of life, and calm explanation with individualized comfort measures can reduce distress. Predicting an exact time of death is unreliable, while forced oral fluids and unnecessary repeated deep suctioning may cause discomfort.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "End-of-Life Care",
+          "question_text": "A patient with terminal illness asks the nurse whether death is approaching. What is the most appropriate response?",
+          "choices": [
+            {"text": "Avoid the question and change the subject", "is_correct": false},
+            {"text": "Listen, explore the patient's concerns and provide honest information within the nurse's professional role", "is_correct": true},
+            {"text": "Promise that recovery is guaranteed", "is_correct": false},
+            {"text": "Tell the patient not to discuss death", "is_correct": false}
+          ],
+          "rationale": "Therapeutic communication requires compassionate listening, honest information and appropriate referral when further prognostic discussion is needed. False reassurance, avoidance and discouraging discussion undermine trust and patient autonomy.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "End-of-Life Care",
+          "question_text": "A terminally ill patient becomes unable to swallow oral medication. Which nursing action is most appropriate?",
+          "choices": [
+            {"text": "Force medication into the patient's mouth", "is_correct": false},
+            {"text": "Discuss alternative medication routes with the prescribing team", "is_correct": true},
+            {"text": "Crush every medication without checking its formulation", "is_correct": false},
+            {"text": "Discontinue all symptom management", "is_correct": false}
+          ],
+          "rationale": "When oral administration is no longer safe or feasible, alternative routes should be considered according to the medication and patient's clinical condition. Forcing oral medication, indiscriminately crushing formulations and abandoning symptom control are unsafe.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "End-of-Life Care",
+          "question_text": "A family requests that a competent terminally ill patient should not be informed about the diagnosis, although the patient repeatedly asks for information. What should the nurse do?",
+          "choices": [
+            {"text": "Automatically follow the family's request", "is_correct": false},
+            {"text": "Assess the patient's information preferences and advocate for truthful, appropriate communication", "is_correct": true},
+            {"text": "Provide false information to protect the family", "is_correct": false},
+            {"text": "Disclose confidential information to everyone in the ward", "is_correct": false}
+          ],
+          "rationale": "A competent patient has the right to receive information and make decisions about disclosure preferences, and the nurse should advocate for respectful communication. Family preferences do not automatically override patient autonomy, while false disclosure and indiscriminate sharing violate professional ethics.",
+          "difficulty": "ANALYSIS"
+        }
+      ]
+    },
+    {
+      "course_code": "MMN-311",
+      "course_title": "Medicine and Medical Nursing III",
+      "category": "MED_SURG",
+      "semester": "S1",
+      "topics": [
+        "Cardiovascular Disorders",
+        "Respiratory Disorders",
+        "Endocrine Disorders",
+        "Renal Disorders",
+        "Gastrointestinal Disorders",
+        "Infectious Diseases",
+        "Chronic Disease Management",
+        "Oncology Basics"
+      ],
+      "questions": [
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "A patient admitted with acute myocardial infarction complains of crushing central chest pain radiating to the left arm. Which investigation is most important for identifying acute myocardial ischaemia?",
+          "choices": [
+            {"text": "Electrocardiogram", "is_correct": true},
+            {"text": "Abdominal ultrasound", "is_correct": false},
+            {"text": "Urinalysis", "is_correct": false},
+            {"text": "Stool microscopy", "is_correct": false}
+          ],
+          "rationale": "A 12-lead ECG should be obtained promptly to identify ST-segment elevation, ischaemic changes and arrhythmias. Abdominal ultrasound, urinalysis and stool microscopy do not establish the electrical evidence of acute myocardial ischaemia.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "A patient with heart failure presents with severe dyspnoea, bilateral basal crackles and pink frothy sputum. Which complication is most likely?",
+          "choices": [
+            {"text": "Pulmonary oedema", "is_correct": true},
+            {"text": "Pleural fibrosis", "is_correct": false},
+            {"text": "Pulmonary tuberculosis", "is_correct": false},
+            {"text": "Simple dehydration", "is_correct": false}
+          ],
+          "rationale": "Severe breathlessness, bilateral crackles and pink frothy sputum are characteristic of acute pulmonary oedema caused by fluid accumulation in the alveoli. The other conditions do not adequately explain this acute combination of findings.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "Which medication is commonly prescribed to reduce preload and relieve congestion in a patient with acute heart failure?",
+          "choices": [
+            {"text": "Furosemide", "is_correct": true},
+            {"text": "Ferrous sulphate", "is_correct": false},
+            {"text": "Omeprazole", "is_correct": false},
+            {"text": "Metformin", "is_correct": false}
+          ],
+          "rationale": "Furosemide is a loop diuretic that promotes sodium and water excretion, reducing fluid congestion and cardiac preload. Ferrous sulphate treats iron deficiency, omeprazole reduces gastric acid, and metformin is used for type 2 diabetes.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "A patient with hypertension reports severe headache, chest pain and visual disturbances. Blood pressure is 220/130 mmHg. What is the nurse's priority?",
+          "choices": [
+            {"text": "Arrange routine review in one month", "is_correct": false},
+            {"text": "Urgently escalate for assessment and controlled treatment of hypertensive emergency", "is_correct": true},
+            {"text": "Advise the patient to stop all antihypertensive medicines", "is_correct": false},
+            {"text": "Encourage vigorous exercise", "is_correct": false}
+          ],
+          "rationale": "Severely elevated blood pressure with chest pain and visual symptoms suggests hypertensive emergency with possible acute target-organ damage. Routine follow-up, stopping treatment and vigorous exercise may delay or worsen a life-threatening condition.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "Which laboratory marker is most specific for myocardial injury and is routinely used in the diagnosis of acute myocardial infarction?",
+          "choices": [
+            {"text": "Troponin", "is_correct": true},
+            {"text": "Serum albumin", "is_correct": false},
+            {"text": "Serum amylase", "is_correct": false},
+            {"text": "Haemoglobin A1c", "is_correct": false}
+          ],
+          "rationale": "Cardiac troponin I or T is a sensitive and specific biomarker of myocardial injury and is interpreted with clinical findings and ECG results. Albumin, amylase and HbA1c assess other physiological or disease processes.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "A patient with atrial fibrillation is prescribed warfarin. Which laboratory test is used to monitor its anticoagulant effect?",
+          "choices": [
+            {"text": "International Normalized Ratio", "is_correct": true},
+            {"text": "Serum sodium", "is_correct": false},
+            {"text": "Random blood glucose", "is_correct": false},
+            {"text": "Serum creatine kinase", "is_correct": false}
+          ],
+          "rationale": "The INR standardizes prothrombin time and is used to monitor warfarin therapy and assess bleeding risk. Sodium, glucose and creatine kinase do not measure the anticoagulant effect of warfarin.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "A patient with deep vein thrombosis suddenly develops pleuritic chest pain, severe breathlessness and tachycardia. What complication should the nurse suspect?",
+          "choices": [
+            {"text": "Pulmonary embolism", "is_correct": true},
+            {"text": "Chronic gastritis", "is_correct": false},
+            {"text": "Acute appendicitis", "is_correct": false},
+            {"text": "Iron deficiency anaemia", "is_correct": false}
+          ],
+          "rationale": "A thrombus originating from a deep vein can travel to the pulmonary circulation, causing sudden dyspnoea, pleuritic chest pain and tachycardia. The other conditions do not explain this acute respiratory presentation in a patient with DVT.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "A patient taking digoxin reports nausea, yellow-green visual disturbances and palpitations. What should the nurse suspect?",
+          "choices": [
+            {"text": "Digoxin toxicity", "is_correct": true},
+            {"text": "Vitamin C deficiency", "is_correct": false},
+            {"text": "Uncomplicated hypertension", "is_correct": false},
+            {"text": "Iron overload", "is_correct": false}
+          ],
+          "rationale": "Nausea, visual disturbances and cardiac dysrhythmias are recognized manifestations of digoxin toxicity. The other conditions do not characteristically produce this combination in a patient receiving digoxin.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "A patient with suspected acute myocardial infarction arrives at the emergency department with persistent chest pain, diaphoresis and hypotension. Which action takes priority?",
+          "choices": [
+            {"text": "Obtain an ECG promptly, assess ABCs and activate the emergency cardiac pathway", "is_correct": true},
+            {"text": "Give food to prevent hypoglycaemia", "is_correct": false},
+            {"text": "Encourage the patient to walk around", "is_correct": false},
+            {"text": "Delay assessment until the patient's relatives arrive", "is_correct": false}
+          ],
+          "rationale": "Chest pain with diaphoresis and hypotension may indicate an acute coronary event with haemodynamic instability, requiring immediate assessment, ECG and urgent medical intervention. Feeding, ambulation and waiting for relatives can delay critical treatment.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Cardiovascular Disorders",
+          "question_text": "Which lifestyle modification is recommended for a patient with hypertension?",
+          "choices": [
+            {"text": "Reducing dietary sodium intake", "is_correct": true},
+            {"text": "Increasing consumption of highly salted foods", "is_correct": false},
+            {"text": "Avoiding all physical activity", "is_correct": false},
+            {"text": "Increasing tobacco consumption", "is_correct": false}
+          ],
+          "rationale": "Reducing sodium intake can help lower blood pressure, particularly when combined with a balanced diet, physical activity and weight management. Excessive salt, inactivity and tobacco use increase cardiovascular risk.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "A patient with pulmonary tuberculosis has been coughing for several weeks, experiences night sweats and has lost significant weight. Which diagnostic investigation is particularly important for detecting pulmonary TB?",
+          "choices": [
+            {"text": "Sputum molecular testing such as Xpert MTB/RIF", "is_correct": true},
+            {"text": "Serum cholesterol measurement", "is_correct": false},
+            {"text": "Electrocardiography", "is_correct": false},
+            {"text": "Urine pregnancy testing", "is_correct": false}
+          ],
+          "rationale": "Sputum molecular testing can rapidly detect Mycobacterium tuberculosis and identify rifampicin resistance. Cholesterol measurement, ECG and pregnancy testing do not establish pulmonary tuberculosis.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "A patient with pulmonary tuberculosis is admitted to a medical ward. Which infection prevention measure is most appropriate?",
+          "choices": [
+            {"text": "Place the patient in an airborne infection isolation area when available and ensure appropriate respiratory protection", "is_correct": true},
+            {"text": "Use gloves as the only infection prevention measure", "is_correct": false},
+            {"text": "Allow the patient to share an unventilated room with vulnerable patients", "is_correct": false},
+            {"text": "Discontinue cough hygiene education", "is_correct": false}
+          ],
+          "rationale": "Pulmonary TB spreads through airborne particles, requiring appropriate ventilation, respiratory isolation and fit-tested respirators such as N95 or equivalent for healthcare workers according to policy. Gloves alone do not prevent airborne transmission, and crowding increases exposure risk.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "Which medication is classified as a short-acting beta-2 agonist used for rapid relief of acute bronchospasm?",
+          "choices": [
+            {"text": "Salbutamol", "is_correct": true},
+            {"text": "Beclomethasone", "is_correct": false},
+            {"text": "Montelukast", "is_correct": false},
+            {"text": "Ipratropium as a beta-2 agonist", "is_correct": false}
+          ],
+          "rationale": "Salbutamol is a short-acting beta-2 agonist that relaxes bronchial smooth muscle and provides rapid bronchodilation. Beclomethasone is an inhaled corticosteroid, montelukast is a leukotriene receptor antagonist, and ipratropium is an anticholinergic bronchodilator.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "A patient with asthma develops severe breathlessness, cannot complete sentences and has markedly reduced air entry on auscultation. What does the reduced air entry suggest?",
+          "choices": [
+            {"text": "Improving bronchial airflow", "is_correct": false},
+            {"text": "Severe airflow obstruction and possible impending respiratory failure", "is_correct": true},
+            {"text": "Normal respiratory function", "is_correct": false},
+            {"text": "Uncomplicated allergic rhinitis", "is_correct": false}
+          ],
+          "rationale": "Markedly reduced air entry in a severely breathless patient may indicate critically restricted airflow and a life-threatening asthma attack. It should not be interpreted as improvement simply because wheezing is reduced.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "Which clinical feature is most characteristic of chronic obstructive pulmonary disease?",
+          "choices": [
+            {"text": "Persistent airflow limitation that is not fully reversible", "is_correct": true},
+            {"text": "Complete reversibility of airway obstruction in every patient", "is_correct": false},
+            {"text": "Acute inflammation of the appendix", "is_correct": false},
+            {"text": "Progressive destruction of renal glomeruli", "is_correct": false}
+          ],
+          "rationale": "COPD is characterized by persistent respiratory symptoms and airflow limitation due to airway and/or alveolar abnormalities, usually associated with exposure to harmful particles or gases. Complete reversibility is not characteristic, and the other options describe unrelated disorders.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "A patient with pneumonia has fever, productive cough, pleuritic chest pain and crackles over the right lower lung field. What is the most likely explanation for the crackles?",
+          "choices": [
+            {"text": "Fluid and inflammatory exudate within the alveoli", "is_correct": true},
+            {"text": "Normal movement of air through healthy alveoli", "is_correct": false},
+            {"text": "Complete absence of pulmonary blood flow", "is_correct": false},
+            {"text": "Excessive gastric acid secretion", "is_correct": false}
+          ],
+          "rationale": "Pneumonia produces inflammation and alveolar exudate, resulting in abnormal breath sounds such as crackles. Normal alveolar ventilation, absent pulmonary perfusion and gastric acid secretion do not explain the localized respiratory findings.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "A patient with severe pneumonia develops oxygen saturation of 79%, confusion and increasing respiratory effort. What is the priority nursing action?",
+          "choices": [
+            {"text": "Initiate immediate oxygenation and urgent escalation for respiratory support", "is_correct": true},
+            {"text": "Encourage the patient to eat a large meal", "is_correct": false},
+            {"text": "Delay treatment until the next ward round", "is_correct": false},
+            {"text": "Administer an oral antacid", "is_correct": false}
+          ],
+          "rationale": "Severe hypoxaemia with altered mental status indicates potentially life-threatening respiratory failure requiring immediate oxygenation, ABC assessment and escalation. Nutrition, antacids and delayed treatment do not address the immediate threat to life.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "Which position is generally most beneficial for a conscious patient experiencing acute respiratory distress?",
+          "choices": [
+            {"text": "High Fowler's position, if tolerated", "is_correct": true},
+            {"text": "Flat supine position in all circumstances", "is_correct": false},
+            {"text": "Trendelenburg position", "is_correct": false},
+            {"text": "Prone position for every conscious patient", "is_correct": false}
+          ],
+          "rationale": "High Fowler's positioning can improve thoracic expansion and reduce the work of breathing in many conscious patients with respiratory distress. Supine and Trendelenburg positioning may worsen breathing, while prone positioning is reserved for selected clinical indications.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Respiratory Disorders",
+          "question_text": "A patient with suspected pulmonary embolism develops sudden pleuritic chest pain, tachycardia and hypoxaemia. Which investigation is commonly used to confirm pulmonary embolism in a haemodynamically stable patient when appropriate?",
+          "choices": [
+            {"text": "CT pulmonary angiography", "is_correct": true},
+            {"text": "Abdominal radiography", "is_correct": false},
+            {"text": "Upper gastrointestinal endoscopy", "is_correct": false},
+            {"text": "Electroencephalography", "is_correct": false}
+          ],
+          "rationale": "CT pulmonary angiography is a principal imaging investigation for confirming pulmonary embolism in suitable patients. The other investigations assess unrelated anatomical or physiological systems.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient with diabetes mellitus presents with excessive thirst, frequent urination, increased hunger and unexplained weight loss. Which condition is most likely?",
+          "choices": [
+            {"text": "Diabetes mellitus", "is_correct": true},
+            {"text": "Hypothyroidism", "is_correct": false},
+            {"text": "Addison disease only", "is_correct": false},
+            {"text": "Diabetes insipidus as the only possible diagnosis", "is_correct": false}
+          ],
+          "rationale": "Polyuria, polydipsia, polyphagia and unexplained weight loss are classical manifestations of uncontrolled diabetes mellitus. Diabetes insipidus may cause polyuria and polydipsia but does not explain the characteristic hyperglycaemic syndrome as a whole.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient with diabetes becomes sweaty, tremulous and confused. Blood glucose is 2.4 mmol/L, and the patient is conscious and able to swallow. What should the nurse administer first?",
+          "choices": [
+            {"text": "Fast-acting oral glucose", "is_correct": true},
+            {"text": "Long-acting insulin", "is_correct": false},
+            {"text": "A dose of metformin", "is_correct": false},
+            {"text": "A high-fat meal only", "is_correct": false}
+          ],
+          "rationale": "A conscious patient with symptomatic hypoglycaemia who can swallow safely should receive approximately 15–20 g of fast-acting carbohydrate, followed by repeat glucose assessment after 15 minutes. Insulin and additional glucose-lowering medication would worsen hypoglycaemia, while a high-fat meal is not appropriate initial treatment.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient with diabetic ketoacidosis has a blood glucose of 28 mmol/L, ketonaemia and metabolic acidosis. Which treatment is fundamental to managing this condition?",
+          "choices": [
+            {"text": "Intravenous fluids, insulin and careful electrolyte monitoring", "is_correct": true},
+            {"text": "Oral antidiarrhoeal medication", "is_correct": false},
+            {"text": "Fluid restriction and high-dose diuretics in every patient", "is_correct": false},
+            {"text": "Immediate administration of oral glucose", "is_correct": false}
+          ],
+          "rationale": "DKA requires fluid resuscitation, intravenous insulin and careful monitoring and correction of electrolytes, especially potassium. Fluid restriction and glucose administration without clinical indication are inappropriate and may worsen the metabolic emergency.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient receiving insulin develops unconsciousness and is found to have a blood glucose of 1.8 mmol/L. What is the most appropriate immediate treatment?",
+          "choices": [
+            {"text": "Administer oral glucose gel while the patient is unconscious", "is_correct": false},
+            {"text": "Give intravenous glucose according to emergency protocol or glucagon when IV access is unavailable", "is_correct": true},
+            {"text": "Administer additional insulin", "is_correct": false},
+            {"text": "Encourage the patient to walk", "is_correct": false}
+          ],
+          "rationale": "Severe hypoglycaemia with unconsciousness requires urgent parenteral glucose or glucagon according to protocol, with airway protection and repeated glucose monitoring. Oral administration is unsafe because of aspiration risk, and additional insulin would worsen the condition.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "Which hormone deficiency is primarily responsible for the development of type 1 diabetes mellitus?",
+          "choices": [
+            {"text": "Insulin", "is_correct": true},
+            {"text": "Thyroxine", "is_correct": false},
+            {"text": "Aldosterone", "is_correct": false},
+            {"text": "Parathyroid hormone", "is_correct": false}
+          ],
+          "rationale": "Type 1 diabetes results from autoimmune destruction of pancreatic beta cells, causing absolute insulin deficiency. The other hormones regulate thyroid function, sodium balance and calcium metabolism respectively.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient with untreated hyperthyroidism develops fever, severe tachycardia, agitation and vomiting. Which complication should the nurse suspect?",
+          "choices": [
+            {"text": "Thyroid storm", "is_correct": true},
+            {"text": "Myxoedema coma", "is_correct": false},
+            {"text": "Addisonian crisis", "is_correct": false},
+            {"text": "Diabetic nephropathy", "is_correct": false}
+          ],
+          "rationale": "Thyroid storm is a life-threatening exacerbation of thyrotoxicosis characterized by hyperthermia, tachycardia, gastrointestinal disturbance and altered mental status. Myxoedema coma is associated with severe hypothyroidism, while the other options describe different endocrine or renal complications.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient with Addison disease develops vomiting, severe hypotension, abdominal pain and weakness following an infection. What is the most likely complication?",
+          "choices": [
+            {"text": "Adrenal crisis", "is_correct": true},
+            {"text": "Thyroid storm", "is_correct": false},
+            {"text": "Cushing syndrome", "is_correct": false},
+            {"text": "Hyperparathyroidism", "is_correct": false}
+          ],
+          "rationale": "Adrenal crisis is an acute deficiency of cortisol, often precipitated by infection or physiological stress in a patient with adrenal insufficiency. Thyroid storm, Cushing syndrome and hyperparathyroidism have different pathophysiological mechanisms and presentations.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient with diabetes mellitus has persistent albuminuria and declining estimated glomerular filtration rate. Which chronic complication is most likely?",
+          "choices": [
+            {"text": "Diabetic nephropathy", "is_correct": true},
+            {"text": "Diabetic retinopathy", "is_correct": false},
+            {"text": "Diabetic neuropathy only", "is_correct": false},
+            {"text": "Diabetic ketoacidosis", "is_correct": false}
+          ],
+          "rationale": "Persistent albuminuria and declining renal function indicate diabetic kidney disease. Retinopathy affects the retina, neuropathy affects peripheral or autonomic nerves, and ketoacidosis is an acute metabolic complication.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Endocrine Disorders",
+          "question_text": "A patient with diabetes has a persistently elevated HbA1c. What does this result primarily indicate?",
+          "choices": [
+            {"text": "Average blood glucose control over approximately the preceding 2–3 months", "is_correct": true},
+            {"text": "Blood glucose concentration at one exact moment", "is_correct": false},
+            {"text": "Current serum potassium concentration", "is_correct": false},
+            {"text": "The amount of insulin stored in the pancreas", "is_correct": false}
+          ],
+          "rationale": "HbA1c reflects the proportion of haemoglobin exposed to glucose and provides an estimate of average glycaemia over approximately 2–3 months. It is not a single-time glucose measurement or a direct measure of insulin stores or potassium concentration.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "A patient with chronic kidney disease develops fatigue, pallor and reduced exercise tolerance. Which mechanism commonly contributes to these findings?",
+          "choices": [
+            {"text": "Reduced erythropoietin production by the kidneys", "is_correct": true},
+            {"text": "Increased production of insulin", "is_correct": false},
+            {"text": "Excessive production of thyroid hormones", "is_correct": false},
+            {"text": "Increased platelet production", "is_correct": false}
+          ],
+          "rationale": "Damaged kidneys produce insufficient erythropoietin, reducing stimulation of red blood cell production and causing anaemia. The other hormonal or haematological changes do not explain the typical anaemia associated with chronic kidney disease.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "A patient presents with severe flank pain radiating to the groin and visible haematuria. Which condition should the nurse suspect?",
+          "choices": [
+            {"text": "Renal calculi", "is_correct": true},
+            {"text": "Chronic bronchitis", "is_correct": false},
+            {"text": "Acute gastritis", "is_correct": false},
+            {"text": "Hyperthyroidism", "is_correct": false}
+          ],
+          "rationale": "Renal calculi commonly cause severe colicky flank pain radiating toward the groin and may produce haematuria. The other conditions do not explain the characteristic renal colic presentation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "A patient with acute kidney injury has produced only 80 mL of urine over the past eight hours. Which finding does this represent?",
+          "choices": [
+            {"text": "Oliguria", "is_correct": true},
+            {"text": "Polyuria", "is_correct": false},
+            {"text": "Normal urine output", "is_correct": false},
+            {"text": "Urinary incontinence", "is_correct": false}
+          ],
+          "rationale": "An output of 80 mL over eight hours is approximately 10 mL per hour, indicating oliguria in an adult. Polyuria refers to excessive urine production, while incontinence describes involuntary urine leakage rather than reduced production.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "A patient with acute kidney injury develops hyperkalaemia, pulmonary oedema and severe metabolic acidosis despite medical treatment. Which intervention may be urgently required?",
+          "choices": [
+            {"text": "Renal replacement therapy", "is_correct": true},
+            {"text": "Increased dietary potassium", "is_correct": false},
+            {"text": "Unrestricted oral fluid intake", "is_correct": false},
+            {"text": "Routine vitamin supplementation only", "is_correct": false}
+          ],
+          "rationale": "Refractory hyperkalaemia, fluid overload and severe metabolic acidosis are important indications for urgent renal replacement therapy. Potassium-rich foods and unrestricted fluids may worsen the complications, while vitamins cannot replace renal function.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "Which laboratory finding is commonly associated with nephrotic syndrome?",
+          "choices": [
+            {"text": "Heavy proteinuria and hypoalbuminaemia", "is_correct": true},
+            {"text": "Persistent absence of urinary protein", "is_correct": false},
+            {"text": "Severe hyperalbuminaemia", "is_correct": false},
+            {"text": "Isolated elevation of serum amylase", "is_correct": false}
+          ],
+          "rationale": "Nephrotic syndrome is characterized by heavy urinary protein loss, hypoalbuminaemia, oedema and often hyperlipidaemia. Absence of proteinuria and hyperalbuminaemia contradict the characteristic findings.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "A patient receiving haemodialysis reports dizziness and develops hypotension during treatment. What is a possible explanation?",
+          "choices": [
+            {"text": "Excessive fluid removal during dialysis", "is_correct": true},
+            {"text": "Increased production of red blood cells", "is_correct": false},
+            {"text": "Increased gastric acid secretion", "is_correct": false},
+            {"text": "Improved renal filtration", "is_correct": false}
+          ],
+          "rationale": "Rapid or excessive ultrafiltration can reduce circulating blood volume and cause intradialytic hypotension. The other options do not explain the acute reduction in blood pressure during haemodialysis.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "A patient with chronic kidney disease is prescribed a low-potassium diet. Which food should the nurse advise the patient to limit?",
+          "choices": [
+            {"text": "Bananas", "is_correct": true},
+            {"text": "White rice", "is_correct": false},
+            {"text": "Cabbage in an appropriate portion", "is_correct": false},
+            {"text": "Refined maize porridge without potassium-rich additions", "is_correct": false}
+          ],
+          "rationale": "Bananas contain appreciable potassium and may need restriction in patients with hyperkalaemia or advanced kidney disease, depending on the prescribed dietary plan. The other foods are generally lower in potassium than bananas, although all dietary advice should account for portion size and preparation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Renal Disorders",
+          "question_text": "A patient with acute glomerulonephritis presents with facial oedema, hypertension and cola-coloured urine. Which underlying process best explains these findings?",
+          "choices": [
+            {"text": "Inflammation of the glomeruli", "is_correct": true},
+            {"text": "Destruction of pancreatic beta cells", "is_correct": false},
+            {"text": "Inflammation of the gastric mucosa", "is_correct": false},
+            {"text": "Obstruction of the common bile duct", "is_correct": false}
+          ],
+          "rationale": "Glomerular inflammation damages the filtration barrier, causing haematuria, reduced filtration and sodium and water retention. The other options involve different organs and cannot explain the characteristic renal presentation.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "A patient presents with severe epigastric pain radiating to the back, persistent vomiting and elevated serum lipase. Which diagnosis is most likely?",
+          "choices": [
+            {"text": "Acute pancreatitis", "is_correct": true},
+            {"text": "Acute cystitis", "is_correct": false},
+            {"text": "Bronchial asthma", "is_correct": false},
+            {"text": "Chronic otitis media", "is_correct": false}
+          ],
+          "rationale": "Severe epigastric pain radiating to the back with elevated lipase is strongly suggestive of acute pancreatitis. The other conditions do not explain the abdominal pain pattern and pancreatic enzyme elevation.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "Which organism is commonly associated with peptic ulcer disease?",
+          "choices": [
+            {"text": "Helicobacter pylori", "is_correct": true},
+            {"text": "Plasmodium falciparum", "is_correct": false},
+            {"text": "Mycobacterium tuberculosis", "is_correct": false},
+            {"text": "Trypanosoma brucei", "is_correct": false}
+          ],
+          "rationale": "Helicobacter pylori is a major cause of peptic ulcer disease through chronic gastric mucosal infection and inflammation. The other organisms are associated with malaria, tuberculosis and African trypanosomiasis respectively.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "A patient with chronic liver disease develops abdominal distension, shifting dullness and peripheral oedema. What is the most likely explanation?",
+          "choices": [
+            {"text": "Ascites associated with portal hypertension and reduced plasma oncotic pressure", "is_correct": true},
+            {"text": "Acute bronchospasm", "is_correct": false},
+            {"text": "Isolated hypoglycaemia", "is_correct": false},
+            {"text": "Increased renal calcium excretion", "is_correct": false}
+          ],
+          "rationale": "Cirrhosis can cause portal hypertension and reduced albumin synthesis, contributing to fluid accumulation in the peritoneal cavity and peripheral tissues. The other conditions do not explain abdominal fluid accumulation and shifting dullness.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "A patient presents with haematemesis, tachycardia and hypotension following several days of epigastric discomfort. What is the priority nursing intervention?",
+          "choices": [
+            {"text": "Assess ABCs, establish urgent intravenous access and escalate for haemorrhage management", "is_correct": true},
+            {"text": "Give a large oral meal", "is_correct": false},
+            {"text": "Encourage the patient to walk", "is_correct": false},
+            {"text": "Administer an oral laxative", "is_correct": false}
+          ],
+          "rationale": "Haematemesis with tachycardia and hypotension suggests significant upper gastrointestinal bleeding and possible hypovolaemic shock, requiring immediate resuscitation and urgent medical management. Oral feeding, ambulation and laxatives are inappropriate during active haemorrhage.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "Which finding is most characteristic of ulcerative colitis?",
+          "choices": [
+            {"text": "Continuous inflammation beginning in the rectum and extending proximally through the colon", "is_correct": true},
+            {"text": "Transmural inflammation that can affect any part of the gastrointestinal tract", "is_correct": false},
+            {"text": "Isolated inflammation of the gallbladder", "is_correct": false},
+            {"text": "Inflammation limited to the pancreatic duct", "is_correct": false}
+          ],
+          "rationale": "Ulcerative colitis typically produces continuous mucosal inflammation beginning in the rectum and extending proximally through the colon. Transmural skip lesions involving any gastrointestinal region are more characteristic of Crohn disease.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "A patient admitted with suspected intestinal obstruction has abdominal distension, colicky pain, vomiting and inability to pass stool or flatus. What is the most appropriate nursing action?",
+          "choices": [
+            {"text": "Keep the patient nil by mouth and urgently inform the medical team", "is_correct": true},
+            {"text": "Administer a high-fibre meal", "is_correct": false},
+            {"text": "Give an unprescribed laxative", "is_correct": false},
+            {"text": "Encourage unrestricted oral fluids", "is_correct": false}
+          ],
+          "rationale": "These findings suggest intestinal obstruction, requiring urgent assessment, bowel rest, fluid and electrolyte management and possible nasogastric decompression. Oral feeding, laxatives and unrestricted fluids may worsen distension or increase complications.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "A patient with chronic hepatitis B develops increasing abdominal swelling, confusion and asterixis. Which complication should the nurse suspect?",
+          "choices": [
+            {"text": "Hepatic encephalopathy", "is_correct": true},
+            {"text": "Acute appendicitis", "is_correct": false},
+            {"text": "Renal colic", "is_correct": false},
+            {"text": "Bronchiectasis", "is_correct": false}
+          ],
+          "rationale": "Confusion and asterixis in a patient with chronic liver disease suggest hepatic encephalopathy due to impaired hepatic detoxification and accumulation of neurotoxic substances. The other conditions do not explain the neurological findings in this clinical context.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Gastrointestinal Disorders",
+          "question_text": "A patient with acute diarrhoea has severe abdominal cramps and signs of dehydration. Which intervention is fundamental to preventing complications?",
+          "choices": [
+            {"text": "Appropriate oral or intravenous rehydration according to dehydration severity", "is_correct": true},
+            {"text": "Complete restriction of fluid intake", "is_correct": false},
+            {"text": "Routine administration of antibiotics to every patient", "is_correct": false},
+            {"text": "Avoidance of all electrolyte monitoring", "is_correct": false}
+          ],
+          "rationale": "Replacing water and electrolytes is the central intervention in acute diarrhoeal illness, with route determined by dehydration severity and ability to drink. Fluid restriction, indiscriminate antibiotics and failure to monitor significant electrolyte disturbances can worsen outcomes.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient with suspected severe falciparum malaria develops impaired consciousness, repeated convulsions and severe anaemia. How should this condition be classified?",
+          "choices": [
+            {"text": "Uncomplicated malaria", "is_correct": false},
+            {"text": "Severe malaria", "is_correct": true},
+            {"text": "Asymptomatic malaria", "is_correct": false},
+            {"text": "Chronic viral infection", "is_correct": false}
+          ],
+          "rationale": "Impaired consciousness, repeated convulsions and severe anaemia are recognized manifestations of severe malaria and require urgent hospital treatment. These findings are incompatible with uncomplicated or asymptomatic malaria.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient with suspected severe malaria is unable to take oral medication because of repeated vomiting and altered consciousness. Which antimalarial treatment is recommended initially?",
+          "choices": [
+            {"text": "Parenteral artesunate", "is_correct": true},
+            {"text": "Oral chloroquine as the only treatment", "is_correct": false},
+            {"text": "Oral vitamin C", "is_correct": false},
+            {"text": "Topical antifungal medication", "is_correct": false}
+          ],
+          "rationale": "Parenteral artesunate is the recommended first-line treatment for severe malaria, followed by a complete appropriate oral antimalarial course once the patient can tolerate oral medication. Oral chloroquine is not appropriate treatment for severe falciparum malaria, and the other options have no antimalarial activity.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient with suspected typhoid fever presents with prolonged fever, abdominal discomfort and relative bradycardia. Which organism causes typhoid fever?",
+          "choices": [
+            {"text": "Salmonella enterica serovar Typhi", "is_correct": true},
+            {"text": "Vibrio cholerae", "is_correct": false},
+            {"text": "Escherichia coli as the specific cause", "is_correct": false},
+            {"text": "Plasmodium falciparum", "is_correct": false}
+          ],
+          "rationale": "Typhoid fever is caused by Salmonella enterica serovar Typhi and is transmitted through food or water contaminated with human faeces. Vibrio cholerae causes cholera, while Plasmodium falciparum causes malaria.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient admitted with suspected cholera has profuse rice-water stools and severe dehydration. Which infection prevention measure is most important?",
+          "choices": [
+            {"text": "Strict hand hygiene and appropriate contact precautions with safe stool and environmental management", "is_correct": true},
+            {"text": "Airborne isolation as the only precaution", "is_correct": false},
+            {"text": "Sharing contaminated bed linen between patients", "is_correct": false},
+            {"text": "Avoiding disinfection of contaminated surfaces", "is_correct": false}
+          ],
+          "rationale": "Cholera spreads mainly through the faecal-oral route, making hand hygiene, safe sanitation, environmental disinfection and appropriate contact precautions essential. Airborne precautions alone do not address the principal transmission route, while sharing contaminated materials increases exposure.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient being treated for pulmonary tuberculosis develops jaundice, persistent nausea and right upper abdominal pain. What complication should the nurse suspect?",
+          "choices": [
+            {"text": "Antitubercular drug-induced hepatotoxicity", "is_correct": true},
+            {"text": "Improved hepatic function", "is_correct": false},
+            {"text": "Acute appendicitis as the only explanation", "is_correct": false},
+            {"text": "Uncomplicated peripheral neuropathy", "is_correct": false}
+          ],
+          "rationale": "Jaundice, nausea and right upper abdominal pain during antitubercular therapy raise concern for drug-induced liver injury, particularly from isoniazid, rifampicin or pyrazinamide. The nurse should promptly escalate for liver assessment and treatment review rather than assume uncomplicated disease progression.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient with suspected bacterial meningitis presents with fever, severe headache, neck stiffness and altered consciousness. What is the priority?",
+          "choices": [
+            {"text": "Urgent medical assessment, appropriate isolation precautions and prompt antimicrobial management", "is_correct": true},
+            {"text": "Delay all treatment until the patient completes a full meal", "is_correct": false},
+            {"text": "Discharge the patient with routine analgesics", "is_correct": false},
+            {"text": "Encourage unrestricted visitors", "is_correct": false}
+          ],
+          "rationale": "Bacterial meningitis is a medical emergency requiring rapid assessment, appropriate precautions, prompt empiric antibiotics and supportive management. Delaying treatment, routine discharge and unrestricted visitor exposure may compromise patient and public safety.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "Which laboratory investigation is commonly used to monitor a patient receiving antiretroviral therapy for HIV infection?",
+          "choices": [
+            {"text": "HIV viral load", "is_correct": true},
+            {"text": "Serum amylase only", "is_correct": false},
+            {"text": "Stool occult blood only", "is_correct": false},
+            {"text": "Serum uric acid only", "is_correct": false}
+          ],
+          "rationale": "HIV viral load measures the amount of circulating HIV RNA and is central to assessing response to antiretroviral therapy and detecting treatment failure. The other investigations do not measure HIV replication or treatment response.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient with HIV presents with progressive dyspnoea, dry cough, fever and bilateral diffuse pulmonary infiltrates. Which opportunistic infection should be considered?",
+          "choices": [
+            {"text": "Pneumocystis jirovecii pneumonia", "is_correct": true},
+            {"text": "Uncomplicated otitis externa", "is_correct": false},
+            {"text": "Acute cystitis", "is_correct": false},
+            {"text": "Tinea pedis", "is_correct": false}
+          ],
+          "rationale": "Pneumocystis jirovecii pneumonia commonly occurs in advanced HIV infection and causes progressive breathlessness, dry cough, fever and diffuse pulmonary abnormalities. The other conditions do not explain the characteristic pulmonary syndrome.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Infectious Diseases",
+          "question_text": "A patient with fever and suspected sepsis develops hypotension, reduced urine output and confusion. What is the most important immediate nursing priority?",
+          "choices": [
+            {"text": "Recognize possible septic shock and initiate urgent sepsis management", "is_correct": true},
+            {"text": "Wait for the patient to develop a rash", "is_correct": false},
+            {"text": "Restrict all monitoring", "is_correct": false},
+            {"text": "Provide routine discharge counselling", "is_correct": false}
+          ],
+          "rationale": "Hypotension, oliguria and altered consciousness indicate possible organ dysfunction from sepsis and require immediate escalation, haemodynamic assessment and timely treatment. Waiting for a rash or discontinuing monitoring can delay lifesaving intervention.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "Which measure is most useful for assessing long-term glycaemic control in a patient with diabetes mellitus?",
+          "choices": [
+            {"text": "HbA1c", "is_correct": true},
+            {"text": "A single urine colour assessment", "is_correct": false},
+            {"text": "One isolated blood pressure reading", "is_correct": false},
+            {"text": "Serum bilirubin alone", "is_correct": false}
+          ],
+          "rationale": "HbA1c estimates average blood glucose over approximately two to three months and is useful for evaluating long-term glycaemic control. The other measurements do not directly assess chronic glucose regulation.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "A patient with hypertension admits frequently missing prescribed medication because the patient feels well. Which nursing intervention is most appropriate?",
+          "choices": [
+            {"text": "Explain that hypertension may be asymptomatic and discuss strategies for medication adherence", "is_correct": true},
+            {"text": "Advise the patient to stop treatment when symptoms disappear", "is_correct": false},
+            {"text": "Recommend taking several doses together after missed doses", "is_correct": false},
+            {"text": "Tell the patient that monitoring blood pressure is unnecessary", "is_correct": false}
+          ],
+          "rationale": "Hypertension is often asymptomatic despite ongoing cardiovascular and renal damage, so adherence and regular monitoring remain important. Stopping treatment, doubling doses without instructions and avoiding monitoring increase the risk of complications.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "A patient with chronic heart failure reports increasing weight, worsening ankle oedema and breathlessness when lying flat. What should the nurse suspect?",
+          "choices": [
+            {"text": "Worsening fluid retention and heart failure", "is_correct": true},
+            {"text": "Complete resolution of heart failure", "is_correct": false},
+            {"text": "Isolated visual impairment", "is_correct": false},
+            {"text": "Improved renal function in every case", "is_correct": false}
+          ],
+          "rationale": "Rapid weight gain, peripheral oedema and orthopnoea suggest worsening fluid congestion in heart failure. These findings indicate clinical deterioration rather than resolution or an unrelated isolated condition.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "A patient with diabetes has reduced sensation in the feet and a previous history of foot ulceration. Which preventive intervention is most important?",
+          "choices": [
+            {"text": "Daily foot inspection and appropriate protective footwear", "is_correct": true},
+            {"text": "Walking barefoot indoors and outdoors", "is_correct": false},
+            {"text": "Cutting calluses with sharp blades", "is_correct": false},
+            {"text": "Applying hot water bottles directly to the feet", "is_correct": false}
+          ],
+          "rationale": "Daily inspection, appropriate footwear, professional foot assessment and early treatment of injuries reduce diabetic foot ulceration and amputation risk. Barefoot walking, self-cutting calluses and direct heat exposure can cause unnoticed injury.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "A patient with chronic obstructive pulmonary disease asks why smoking cessation is important even after years of smoking. What is the best response?",
+          "choices": [
+            {"text": "It can slow further decline in lung function and reduce exacerbation risk", "is_correct": true},
+            {"text": "It immediately reverses all established lung damage", "is_correct": false},
+            {"text": "It eliminates the need for prescribed inhalers", "is_correct": false},
+            {"text": "It guarantees that respiratory infections will never occur", "is_correct": false}
+          ],
+          "rationale": "Smoking cessation is the most important intervention for reducing ongoing tobacco-related lung damage and slowing COPD progression. It does not reverse all established structural damage or eliminate the need for other treatment.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "A patient with chronic kidney disease has been advised to attend regular follow-up appointments. Which parameter is particularly important for monitoring progression of kidney disease?",
+          "choices": [
+            {"text": "Estimated glomerular filtration rate", "is_correct": true},
+            {"text": "Visual acuity alone", "is_correct": false},
+            {"text": "Skin pigmentation alone", "is_correct": false},
+            {"text": "Hearing threshold alone", "is_correct": false}
+          ],
+          "rationale": "Estimated glomerular filtration rate provides an assessment of kidney filtration capacity and is used to stage and monitor chronic kidney disease. The other parameters do not directly measure renal function.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "A patient with multiple chronic diseases is discharged from a regional hospital with several medications and follow-up appointments. Which nursing action best supports continuity of care?",
+          "choices": [
+            {"text": "Provide medication reconciliation, clear discharge instructions and coordinated follow-up", "is_correct": true},
+            {"text": "Discharge the patient without explaining the medication regimen", "is_correct": false},
+            {"text": "Encourage the patient to discontinue medicines independently", "is_correct": false},
+            {"text": "Withhold information from the receiving healthcare facility", "is_correct": false}
+          ],
+          "rationale": "Medication reconciliation, patient education, documented referrals and coordinated follow-up reduce medication errors and prevent gaps in chronic disease management. Inadequate discharge communication and independent discontinuation of treatment increase the risk of readmission and complications.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Chronic Disease Management",
+          "question_text": "A patient with hypertension and diabetes develops sudden unilateral weakness and difficulty speaking. What should the nurse do first?",
+          "choices": [
+            {"text": "Activate the emergency stroke pathway and establish the time last known well", "is_correct": true},
+            {"text": "Give food and water immediately", "is_correct": false},
+            {"text": "Arrange routine outpatient review", "is_correct": false},
+            {"text": "Administer aspirin before brain imaging", "is_correct": false}
+          ],
+          "rationale": "Sudden focal neurological deficits suggest acute stroke and require immediate stroke pathway activation, documentation of last known well and urgent brain imaging. Oral intake is unsafe before swallowing assessment, and aspirin should not be given before haemorrhage is excluded.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "Which term describes the spread of malignant cells from a primary tumour to distant organs?",
+          "choices": [
+            {"text": "Metastasis", "is_correct": true},
+            {"text": "Hyperplasia", "is_correct": false},
+            {"text": "Hypertrophy", "is_correct": false},
+            {"text": "Atrophy", "is_correct": false}
+          ],
+          "rationale": "Metastasis is the spread of malignant cells from the original tumour to distant anatomical sites through lymphatic, haematogenous or other routes. Hyperplasia, hypertrophy and atrophy describe changes in cell number or tissue size rather than distant malignant spread.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "A patient receiving chemotherapy develops a temperature of 38.5°C and has an absolute neutrophil count of 400 cells/µL. What complication should the nurse suspect?",
+          "choices": [
+            {"text": "Febrile neutropenia", "is_correct": true},
+            {"text": "Uncomplicated chemotherapy-related fatigue", "is_correct": false},
+            {"text": "Iron deficiency without infection risk", "is_correct": false},
+            {"text": "Radiation dermatitis", "is_correct": false}
+          ],
+          "rationale": "Fever in a patient with severe neutropenia is a medical emergency because infection can progress rapidly to sepsis. Fatigue, iron deficiency and radiation dermatitis do not explain the combination of fever and profound neutropenia.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "Which adverse effect is commonly associated with cytotoxic chemotherapy?",
+          "choices": [
+            {"text": "Bone marrow suppression", "is_correct": true},
+            {"text": "Permanent immunity against all infections", "is_correct": false},
+            {"text": "Guaranteed increase in platelet production", "is_correct": false},
+            {"text": "Complete prevention of anaemia", "is_correct": false}
+          ],
+          "rationale": "Many cytotoxic chemotherapy agents suppress bone marrow activity, potentially causing neutropenia, anaemia and thrombocytopenia. Chemotherapy does not provide universal immunity or guarantee increased blood cell production.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "A patient receiving chemotherapy reports painful oral ulcers and difficulty swallowing. Which nursing intervention is most appropriate?",
+          "choices": [
+            {"text": "Provide gentle oral care, assess nutritional intake and manage mucositis according to protocol", "is_correct": true},
+            {"text": "Recommend alcohol-based mouthwash for repeated use", "is_correct": false},
+            {"text": "Encourage very hot and spicy foods", "is_correct": false},
+            {"text": "Stop all oral hygiene", "is_correct": false}
+          ],
+          "rationale": "Chemotherapy-induced oral mucositis requires gentle oral hygiene, appropriate symptom management, hydration and nutritional support. Alcohol-based mouthwashes, irritating foods and poor oral hygiene may worsen mucosal injury and infection risk.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "A patient with advanced cancer develops severe back pain, leg weakness and new urinary retention. What complication should the nurse suspect?",
+          "choices": [
+            {"text": "Metastatic spinal cord compression", "is_correct": true},
+            {"text": "Uncomplicated tension headache", "is_correct": false},
+            {"text": "Acute conjunctivitis", "is_correct": false},
+            {"text": "Simple seasonal allergy", "is_correct": false}
+          ],
+          "rationale": "Back pain with new motor weakness and bladder dysfunction in a patient with cancer strongly suggests metastatic spinal cord compression, an oncological emergency requiring immediate escalation. The other conditions do not explain the acute neurological and sphincter dysfunction.",
+          "difficulty": "ANALYSIS"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "Which investigation is commonly used to obtain tissue for definitive histological diagnosis of suspected cancer?",
+          "choices": [
+            {"text": "Biopsy", "is_correct": true},
+            {"text": "Routine pulse measurement", "is_correct": false},
+            {"text": "Urine specific gravity", "is_correct": false},
+            {"text": "Peak expiratory flow measurement", "is_correct": false}
+          ],
+          "rationale": "A biopsy provides tissue for histopathological examination and is central to confirming many cancer diagnoses. Pulse measurement, urine specific gravity and peak expiratory flow cannot establish tumour histology.",
+          "difficulty": "KNOWLEDGE"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "A patient with breast cancer develops persistent bone pain and pathological fractures. Which process most likely explains these complications?",
+          "choices": [
+            {"text": "Bone metastasis", "is_correct": true},
+            {"text": "Normal bone remodelling alone", "is_correct": false},
+            {"text": "Acute gastritis", "is_correct": false},
+            {"text": "Uncomplicated dehydration", "is_correct": false}
+          ],
+          "rationale": "Breast cancer can metastasize to bone, causing destruction or weakening of bone tissue, persistent pain and pathological fractures. Normal remodelling, gastritis and dehydration do not explain this presentation in a patient with breast cancer.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "A patient receiving chemotherapy reports numbness and tingling in the hands and feet. Which treatment-related complication should the nurse consider?",
+          "choices": [
+            {"text": "Chemotherapy-induced peripheral neuropathy", "is_correct": true},
+            {"text": "Acute pulmonary oedema", "is_correct": false},
+            {"text": "Bacterial meningitis in every case", "is_correct": false},
+            {"text": "Uncomplicated hypertension", "is_correct": false}
+          ],
+          "rationale": "Several chemotherapy agents can damage peripheral nerves, causing numbness, tingling and altered sensation. The other conditions do not characteristically produce this symmetrical peripheral sensory pattern as a treatment-related effect.",
+          "difficulty": "APPLICATION"
+        },
+        {
+          "topic": "Oncology Basics",
+          "question_text": "A patient with advanced malignancy asks whether palliative care means that the healthcare team has abandoned treatment. What is the best response?",
+          "choices": [
+            {"text": "Palliative care focuses on symptom relief and quality of life and can accompany disease-directed treatment", "is_correct": true},
+            {"text": "Palliative care means all medication must be stopped", "is_correct": false},
+            {"text": "Palliative care is only provided during the final hours of life", "is_correct": false},
+            {"text": "Palliative care excludes psychological and family support", "is_correct": false}
+          ],
+          "rationale": "Palliative care can be introduced early and provided alongside disease-directed treatment to address physical, psychological, social and spiritual needs. It does not mean abandonment, automatic withdrawal of medication or restriction to the final hours of life.",
+          "difficulty": "APPLICATION"
+        }
+      ]
+    }
+  ]
+}
