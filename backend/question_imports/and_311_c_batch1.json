@@ -1,0 +1,633 @@
+{
+"courses": [
+{
+"course_code": "AND-311-C",
+"course_title": "Advanced Nursing III",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Community Nursing Assessment",
+"Home-Based Care",
+"Community Diagnosis",
+"Critical Care in Community Settings",
+"Wound Management in the Community",
+"Emergency Nursing at CHPS",
+"End-of-Life Care in the Home"
+],
+"questions": [
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "What is the primary purpose of an advanced community nursing assessment?",
+"choices": [
+{"text": "A. To identify only the illnesses of individuals attending a health facility", "is_correct": false},
+{"text": "B. To systematically assess individual, family and population health needs, risks, resources and determinants of health", "is_correct": true},
+{"text": "C. To determine the financial status of every household without assessing health needs", "is_correct": false},
+{"text": "D. To replace clinical assessment with community opinions", "is_correct": false}
+],
+"rationale": "An advanced community nursing assessment examines health at individual, family and population levels. It considers disease patterns, environmental conditions, social determinants, available resources and barriers to healthcare access.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "A community health nurse is assessing a settlement where many households depend on a shared borehole. Which additional information is most important when evaluating the community's risk of waterborne diseases?",
+"choices": [
+{"text": "A. The number of television sets in the settlement", "is_correct": false},
+{"text": "B. The colour of the borehole structure", "is_correct": false},
+{"text": "C. Water quality, storage practices, sanitation facilities and reported diarrhoeal cases", "is_correct": true},
+{"text": "D. The number of shops operating in the community", "is_correct": false}
+],
+"rationale": "Water quality and household handling practices influence exposure to waterborne pathogens. Assessing sanitation conditions and diarrhoeal disease patterns helps the nurse identify environmental risks and plan appropriate interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "Which of the following is an example of a primary source of data during a community health assessment?",
+"choices": [
+{"text": "A. Information obtained directly from household interviews and observations", "is_correct": true},
+{"text": "B. A previously published national health report", "is_correct": false},
+{"text": "C. A district health annual report from the previous year", "is_correct": false},
+{"text": "D. An archived research article on community malaria prevalence", "is_correct": false}
+],
+"rationale": "Primary data are collected directly by the assessor for the specific assessment. Interviews, observations, physical assessments and community surveys are examples of primary data collection methods.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "During a household assessment, a nurse finds that an older adult with hypertension has stopped taking prescribed medication because of cost and transport difficulties. What should the nurse do first?",
+"choices": [
+{"text": "A. Record the patient as non-compliant and end the assessment", "is_correct": false},
+{"text": "B. Assess the patient's current condition and explore the financial and access barriers affecting treatment", "is_correct": true},
+{"text": "C. Advise the patient to take another person's antihypertensive medication", "is_correct": false},
+{"text": "D. Tell the family to discontinue all follow-up visits", "is_correct": false}
+],
+"rationale": "The nurse should assess the patient's current clinical status and identify the reasons for interrupted treatment. Understanding cost and transport barriers allows appropriate counselling, referral and linkage to available services, including NHIS-related support where applicable.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "Which assessment finding is best classified as a social determinant of health?",
+"choices": [
+{"text": "A. The patient's respiratory rate", "is_correct": false},
+{"text": "B. The patient's blood glucose concentration", "is_correct": false},
+{"text": "C. Household income, educational opportunities and access to safe housing", "is_correct": true},
+{"text": "D. The patient's body temperature", "is_correct": false}
+],
+"rationale": "Social determinants of health are the conditions in which people are born, grow, live, work and age. Income, education, housing and access to services can significantly influence health outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "A community nurse identifies frequent malaria cases among children in a settlement. Household observations reveal uncovered water containers, blocked drains and poor waste disposal. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A. The cases are unrelated to the community environment", "is_correct": false},
+{"text": "B. Environmental conditions may be contributing to mosquito breeding and malaria transmission", "is_correct": true},
+{"text": "C. Malaria transmission can occur only through contaminated drinking water", "is_correct": false},
+{"text": "D. The community requires treatment of adults only", "is_correct": false}
+],
+"rationale": "Stagnant water and poorly managed containers can provide breeding sites for mosquitoes that transmit malaria. Environmental assessment should therefore inform vector-control activities alongside prompt diagnosis and appropriate treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "A nurse discovers that a community has a high number of people living with hypertension, but many are unaware of their blood pressure status. Which intervention should be prioritised?",
+"choices": [
+{"text": "A. Conduct targeted blood pressure screening and link individuals with abnormal readings to appropriate clinical assessment", "is_correct": true},
+{"text": "B. Give antihypertensive medication to every adult without assessment", "is_correct": false},
+{"text": "C. Advise residents to stop eating all sources of dietary fat", "is_correct": false},
+{"text": "D. Wait until residents develop complications before organising services", "is_correct": false}
+],
+"rationale": "Screening can identify people with elevated blood pressure who may otherwise remain undiagnosed. Abnormal findings require appropriate confirmation, clinical assessment, counselling and linkage to continuing care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Community Nursing Assessment",
+"question_text": "A community assessment identifies high maternal mortality, poor road access, limited emergency transport and delayed referral. Which conclusion should guide the community health team's planning?",
+"choices": [
+{"text": "A. Maternal deaths are caused only by individual women's health behaviours", "is_correct": false},
+{"text": "B. Improving health education alone will resolve all maternal health problems", "is_correct": false},
+{"text": "C. The problem involves interacting health-service and access barriers requiring coordinated interventions", "is_correct": true},
+{"text": "D. Emergency referral arrangements are unnecessary when antenatal clinics are available", "is_correct": false}
+],
+"rationale": "Maternal outcomes are influenced by clinical complications, delays in seeking care, reaching care and receiving appropriate treatment. Community planning should address transport, early recognition of danger signs, referral pathways and facility readiness.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home-Based Care",
+"question_text": "What is the main objective of home-based care?",
+"choices": [
+{"text": "A. To transfer all hospital responsibilities to family members", "is_correct": false},
+{"text": "B. To provide appropriate continuing care and support to individuals within their home environment", "is_correct": true},
+{"text": "C. To prevent patients from attending health facilities", "is_correct": false},
+{"text": "D. To provide treatment without clinical assessment or documentation", "is_correct": false}
+],
+"rationale": "Home-based care supports patients who require continuing assistance outside the hospital. It may include nursing care, symptom monitoring, rehabilitation, health education, psychosocial support and referral when necessary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home-Based Care",
+"question_text": "A patient recovering from a stroke is receiving home-based care. The patient has weakness on one side of the body and requires assistance with daily activities. Which intervention is most appropriate?",
+"choices": [
+{"text": "A. Encourage complete bed rest throughout the recovery period", "is_correct": false},
+{"text": "B. Develop an individualised care plan that promotes safe mobility, positioning and rehabilitation exercises as advised", "is_correct": true},
+{"text": "C. Allow the patient to walk independently despite repeated falls", "is_correct": false},
+{"text": "D. Restrict all communication with the patient to reduce fatigue", "is_correct": false}
+],
+"rationale": "Stroke rehabilitation aims to maximise function, independence and safety. Individualised positioning, mobility assistance and prescribed rehabilitation activities can reduce complications and support recovery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home-Based Care",
+"question_text": "Which practice is essential when providing medication support to a patient receiving home-based care?",
+"choices": [
+{"text": "A. Changing prescribed doses whenever symptoms improve", "is_correct": false},
+{"text": "B. Sharing medicines among household members with similar symptoms", "is_correct": false},
+{"text": "C. Checking medication instructions, supporting adherence and reporting suspected adverse effects", "is_correct": true},
+{"text": "D. Stopping all medication when the patient experiences a minor side effect without seeking advice", "is_correct": false}
+],
+"rationale": "Medication support should promote correct use according to the authorised treatment plan. Suspected adverse effects, missed doses and difficulties obtaining medicines should be reported to the appropriate healthcare professional for review.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home-Based Care",
+"question_text": "A bedridden patient receiving home-based care develops increasing breathlessness, cyanosis and confusion. What should the caregiver do?",
+"choices": [
+{"text": "A. Allow the patient to sleep and reassess the following morning", "is_correct": false},
+{"text": "B. Give food and fluids immediately", "is_correct": false},
+{"text": "C. Seek emergency medical assistance immediately and follow appropriate instructions while awaiting help", "is_correct": true},
+{"text": "D. Stop all prescribed medication permanently", "is_correct": false}
+],
+"rationale": "Breathlessness, cyanosis and confusion may indicate severe respiratory or cardiovascular compromise. These are emergency signs requiring immediate medical assessment and urgent transfer where indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home-Based Care",
+"question_text": "Which intervention is most effective in preventing pressure injuries in a patient with limited mobility receiving care at home?",
+"choices": [
+{"text": "A. Repositioning the patient according to an individualised plan and regularly inspecting pressure areas", "is_correct": true},
+{"text": "B. Massaging reddened bony areas vigorously", "is_correct": false},
+{"text": "C. Keeping the patient in one position to avoid discomfort", "is_correct": false},
+{"text": "D. Applying powder to all areas without assessing the skin", "is_correct": false}
+],
+"rationale": "Regular repositioning, pressure redistribution and skin inspection help prevent pressure-related tissue damage. The care plan should also address nutrition, hydration, moisture management and the patient's mobility.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home-Based Care",
+"question_text": "A caregiver reports that a patient with diabetes has become confused, sweaty and shaky after taking insulin without eating. What is the most appropriate immediate response?",
+"choices": [
+{"text": "A. Give another dose of insulin to control the symptoms", "is_correct": false},
+{"text": "B. Suspect hypoglycaemia, check blood glucose if possible and provide appropriate rapid-acting carbohydrate if the patient is conscious and able to swallow safely", "is_correct": true},
+{"text": "C. Give oral food or drink even if the patient is unconscious", "is_correct": false},
+{"text": "D. Wait until the next routine clinic appointment", "is_correct": false}
+],
+"rationale": "Sweating, shaking and confusion after insulin without food are suggestive of hypoglycaemia. If the patient is conscious and can swallow safely, fast-acting carbohydrate should be given according to the relevant protocol; an unconscious or unsafe-to-swallow patient requires emergency assistance and must not receive oral intake.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home-Based Care",
+"question_text": "Which action best supports infection prevention during home-based wound care?",
+"choices": [
+{"text": "A. Reusing contaminated dressing materials to reduce cost", "is_correct": false},
+{"text": "B. Performing hand hygiene and using appropriate clean or sterile technique according to the procedure and wound-care protocol", "is_correct": true},
+{"text": "C. Allowing several family members to handle the wound dressing", "is_correct": false},
+{"text": "D. Leaving used dressings uncovered in the patient's sleeping area", "is_correct": false}
+],
+"rationale": "Hand hygiene and appropriate wound-care technique reduce the risk of introducing microorganisms into the wound. Used dressings should be disposed of safely, and reusable equipment must be appropriately reprocessed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Diagnosis",
+"question_text": "What is community diagnosis?",
+"choices": [
+{"text": "A. The process of diagnosing only individuals who attend a hospital", "is_correct": false},
+{"text": "B. A systematic process of identifying and analysing the health problems, needs and resources of a defined population", "is_correct": true},
+{"text": "C. A method of determining the cause of every illness without laboratory investigation", "is_correct": false},
+{"text": "D. The process of selecting community leaders for administrative purposes", "is_correct": false}
+],
+"rationale": "Community diagnosis identifies the health status and priority problems of a defined population. It considers disease patterns, determinants, available resources and community perceptions to guide planning and action.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Diagnosis",
+"question_text": "Which of the following is a quantitative method of collecting data for community diagnosis?",
+"choices": [
+{"text": "A. Focus group discussion", "is_correct": false},
+{"text": "B. In-depth interview", "is_correct": false},
+{"text": "C. Household survey using structured questionnaires", "is_correct": true},
+{"text": "D. Informal storytelling by community members", "is_correct": false}
+],
+"rationale": "Structured household surveys generate data that can be counted, classified and analysed statistically. Interviews and focus group discussions are generally qualitative methods used to explore experiences and perceptions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Diagnosis",
+"question_text": "A nurse is conducting a community diagnosis in a settlement where residents report frequent flooding and an increase in diarrhoeal diseases. Which approach is most appropriate?",
+"choices": [
+{"text": "A. Use health records, household observations and community discussions to investigate the relationship between flooding and illness", "is_correct": true},
+{"text": "B. Assume that flooding is the only cause of all reported illnesses", "is_correct": false},
+{"text": "C. Select interventions before collecting any information", "is_correct": false},
+{"text": "D. Interview only the wealthiest households", "is_correct": false}
+],
+"rationale": "Combining health records, direct observation and community perspectives provides a more complete understanding of the problem. The nurse should assess possible environmental pathways and other contributing factors before deciding on interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Diagnosis",
+"question_text": "Which indicator is most appropriate for measuring the proportion of households in a community that have access to an improved drinking-water source?",
+"choices": [
+{"text": "A. Number of hospital beds in the district", "is_correct": false},
+{"text": "B. Percentage of households with access to an improved drinking-water source", "is_correct": true},
+{"text": "C. Number of nurses working in the regional hospital", "is_correct": false},
+{"text": "D. Number of outpatient consultations conducted each month", "is_correct": false}
+],
+"rationale": "The percentage of households with access to an improved drinking-water source directly measures an important environmental health condition. It can be used to monitor progress in water and sanitation interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Diagnosis",
+"question_text": "A community survey identifies the following problems: poor sanitation, increasing malaria cases, low immunisation coverage and limited access to emergency transport. Which factor should be considered when prioritising these problems?",
+"choices": [
+{"text": "A. The personal preference of the nurse alone", "is_correct": false},
+{"text": "B. The popularity of each problem on social media", "is_correct": false},
+{"text": "C. Magnitude, severity, preventability, community concern and available resources", "is_correct": true},
+{"text": "D. The order in which the problems were discovered", "is_correct": false}
+],
+"rationale": "Priority setting should consider how widespread and severe each problem is, whether effective interventions exist and what the community considers important. Resource availability and feasibility also influence implementation decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Diagnosis",
+"question_text": "A district health team records 120 new cases of a disease in a population of 20,000 people during one year. Which epidemiological measure is being described?",
+"choices": [
+{"text": "A. Prevalence", "is_correct": false},
+{"text": "B. Incidence", "is_correct": true},
+{"text": "C. Case fatality rate", "is_correct": false},
+{"text": "D. Proportional mortality ratio", "is_correct": false}
+],
+"rationale": "Incidence measures the occurrence of new cases in a population at risk during a specified period. Prevalence measures all existing cases, both new and previously diagnosed, at a specified time or over a period.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Diagnosis",
+"question_text": "A community diagnosis reveals that malaria cases are concentrated in a low-lying area with blocked drains, while other areas report relatively few cases. Which intervention is most appropriate?",
+"choices": [
+{"text": "A. Distribute the same number of interventions to every household without considering local risk", "is_correct": false},
+{"text": "B. Focus exclusively on treating residents who already have malaria", "is_correct": false},
+{"text": "C. Target environmental management and malaria prevention activities in the high-risk area while maintaining community-wide surveillance", "is_correct": true},
+{"text": "D. Stop collecting malaria data because the pattern has been identified", "is_correct": false}
+],
+"rationale": "The concentration of cases suggests a geographic risk pattern that should guide targeted prevention. Environmental management and vector-control activities should be combined with case detection, treatment and ongoing surveillance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care in Community Settings",
+"question_text": "Which principle should guide the initial management of a critically ill patient in a community setting?",
+"choices": [
+{"text": "A. Complete the patient's full social history before assessing vital functions", "is_correct": false},
+{"text": "B. Prioritise immediate assessment and management of airway, breathing and circulation", "is_correct": true},
+{"text": "C. Wait for laboratory results before initiating basic emergency care", "is_correct": false},
+{"text": "D. Provide oral medication before assessing consciousness", "is_correct": false}
+],
+"rationale": "The ABC approach prioritises life-threatening problems involving the airway, breathing and circulation. Early recognition and intervention can prevent deterioration while further assessment and referral are arranged.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care in Community Settings",
+"question_text": "A patient at a CHPS compound is found unconscious but is breathing normally and has no suspected spinal injury. What is the most appropriate immediate action while arranging urgent transfer?",
+"choices": [
+{"text": "A. Give the patient oral water", "is_correct": false},
+{"text": "B. Leave the patient flat on the back without monitoring", "is_correct": false},
+{"text": "C. Maintain airway patency, place the patient in the recovery position when appropriate and monitor breathing", "is_correct": true},
+{"text": "D. Ask the patient to stand to assess balance", "is_correct": false}
+],
+"rationale": "An unconscious patient who is breathing normally requires airway protection and close monitoring. The recovery position can help maintain airway patency and reduce aspiration risk when spinal injury is not suspected and positioning is clinically appropriate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care in Community Settings",
+"question_text": "A patient with severe bleeding from a deep leg wound arrives at a CHPS compound. What should the nurse do first?",
+"choices": [
+{"text": "A. Apply firm direct pressure to the bleeding site using an appropriate dressing and arrange urgent emergency care", "is_correct": true},
+{"text": "B. Wash the wound extensively before controlling the bleeding", "is_correct": false},
+{"text": "C. Apply a traditional herbal preparation to the wound", "is_correct": false},
+{"text": "D. Allow the patient to walk around to improve circulation", "is_correct": false}
+],
+"rationale": "Severe external haemorrhage can rapidly cause hypovolaemic shock and requires immediate bleeding control. Firm direct pressure is an appropriate first-line measure while emergency assistance and transfer are arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care in Community Settings",
+"question_text": "Which finding in a patient with suspected shock requires the most urgent attention?",
+"choices": [
+{"text": "A. Warm, dry skin and normal mental status", "is_correct": false},
+{"text": "B. Mild thirst after physical activity", "is_correct": false},
+{"text": "C. Cool clammy skin, weak rapid pulse and altered consciousness", "is_correct": true},
+{"text": "D. Normal respiratory rate and stable blood pressure", "is_correct": false}
+],
+"rationale": "Cool clammy skin, a weak rapid pulse and altered consciousness are signs of poor tissue perfusion and possible shock. The patient requires immediate emergency assessment, supportive management within scope and urgent transfer.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care in Community Settings",
+"question_text": "A patient develops sudden facial weakness, slurred speech and weakness of one arm while attending a community clinic. What is the nurse's priority action?",
+"choices": [
+{"text": "A. Give oral food and fluids to improve energy", "is_correct": false},
+{"text": "B. Arrange immediate emergency referral, establish the time symptoms began or the patient was last known well, and monitor the patient", "is_correct": true},
+{"text": "C. Ask the patient to sleep for two hours before reassessment", "is_correct": false},
+{"text": "D. Give aspirin immediately without assessing swallowing or contraindications", "is_correct": false}
+],
+"rationale": "Sudden facial weakness, speech disturbance and arm weakness suggest an acute stroke. Rapid transfer to an appropriate facility is essential because time-sensitive assessment and treatment may preserve brain function; the time last known well should be documented.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care in Community Settings",
+"question_text": "A patient at a community health facility suddenly collapses, is unresponsive and is not breathing normally. What should the nurse do?",
+"choices": [
+{"text": "A. Place the patient in the recovery position and leave to find the relatives", "is_correct": false},
+{"text": "B. Check for a pulse for several minutes before taking action", "is_correct": false},
+{"text": "C. Activate emergency response, begin CPR promptly and use an automated external defibrillator if available", "is_correct": true},
+{"text": "D. Give the patient water and wait for spontaneous recovery", "is_correct": false}
+],
+"rationale": "Unresponsiveness with absent or abnormal breathing suggests cardiac arrest. Immediate activation of emergency assistance, high-quality CPR and early defibrillation when available are essential to improve survival.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care in Community Settings",
+"question_text": "A patient with severe asthma at a CHPS compound is unable to complete sentences, has marked respiratory distress and develops reduced air entry. What is the priority?",
+"choices": [
+{"text": "A. Provide routine health education about avoiding dust before treatment", "is_correct": false},
+{"text": "B. Recognise a life-threatening exacerbation, provide emergency management within protocol and arrange urgent transfer", "is_correct": true},
+{"text": "C. Ask the patient to lie flat and wait for the symptoms to resolve", "is_correct": false},
+{"text": "D. Encourage the patient to drink large amounts of water", "is_correct": false}
+],
+"rationale": "Inability to speak normally, severe respiratory distress and markedly reduced air entry indicate potentially life-threatening asthma. Immediate treatment according to emergency protocols and urgent referral are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Management in the Community",
+"question_text": "What is the primary objective of wound management in community nursing?",
+"choices": [
+{"text": "A. To close every wound immediately regardless of its condition", "is_correct": false},
+{"text": "B. To promote healing, prevent infection, manage symptoms and preserve tissue function", "is_correct": true},
+{"text": "C. To apply antibiotics to every wound without assessment", "is_correct": false},
+{"text": "D. To avoid referral even when complications develop", "is_correct": false}
+],
+"rationale": "Wound management aims to create conditions that support tissue repair and prevent complications. Assessment, appropriate cleansing, dressing selection, infection prevention and timely referral are important components.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Management in the Community",
+"question_text": "During a wound assessment, which finding most strongly suggests a possible wound infection?",
+"choices": [
+{"text": "A. A clean wound with healthy granulation tissue", "is_correct": false},
+{"text": "B. Gradual reduction in wound size", "is_correct": false},
+{"text": "C. Increasing pain, spreading redness, warmth and purulent discharge", "is_correct": true},
+{"text": "D. A small amount of clear serous fluid during early healing", "is_correct": false}
+],
+"rationale": "Increasing pain, warmth, spreading erythema and purulent discharge are clinical features that may indicate wound infection. The nurse should assess the patient and wound, document findings and arrange appropriate clinical review.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Management in the Community",
+"question_text": "A patient with a diabetic foot ulcer attends a CHPS compound. The wound has blackened tissue, offensive discharge and surrounding redness. What should the nurse do?",
+"choices": [
+{"text": "A. Apply an ordinary household cream and review the patient after one month", "is_correct": false},
+{"text": "B. Advise the patient to walk more to improve circulation", "is_correct": false},
+{"text": "C. Arrange urgent clinical assessment and referral for possible severe infection and tissue necrosis", "is_correct": true},
+{"text": "D. Remove all blackened tissue without appropriate assessment or authorisation", "is_correct": false}
+],
+"rationale": "Blackened tissue, offensive discharge and surrounding redness in a patient with diabetes raise concern for tissue necrosis and serious infection. Urgent clinical assessment is necessary to determine the need for specialist wound care, antimicrobial treatment or surgical intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Management in the Community",
+"question_text": "Which factor is most likely to delay wound healing in a patient receiving community-based care?",
+"choices": [
+{"text": "A. Adequate nutritional intake", "is_correct": false},
+{"text": "B. Good blood supply to the affected tissue", "is_correct": false},
+{"text": "C. Poor glycaemic control in a patient with diabetes", "is_correct": true},
+{"text": "D. Appropriate wound protection", "is_correct": false}
+],
+"rationale": "Poor glycaemic control can impair immune function and tissue repair, increasing the risk of infection and delayed wound healing. Effective diabetes management is therefore an important part of wound care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Management in the Community",
+"question_text": "A patient has a shallow pressure injury over the sacral area. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "A. Reposition regularly, reduce pressure, manage moisture and assess nutritional needs", "is_correct": true},
+{"text": "B. Massage the injured area vigorously after every position change", "is_correct": false},
+{"text": "C. Keep the patient in a supine position throughout the day", "is_correct": false},
+{"text": "D. Apply a tight bandage directly over the injured area", "is_correct": false}
+],
+"rationale": "Pressure injury management requires pressure relief, skin protection and attention to nutrition and moisture. Vigorous massage over damaged tissue should be avoided because it can cause further tissue injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Management in the Community",
+"question_text": "A community nurse assesses a patient with a wound that has exposed bone and a foul-smelling discharge. The patient also has fever and chills. What is the priority action?",
+"choices": [
+{"text": "A. Continue routine dressing changes at home without further assessment", "is_correct": false},
+{"text": "B. Arrange urgent referral for possible deep infection and systemic involvement", "is_correct": true},
+{"text": "C. Apply a dry dressing and advise the patient to return in two weeks", "is_correct": false},
+{"text": "D. Advise the patient to use leftover antibiotics from a previous illness", "is_correct": false}
+],
+"rationale": "Exposed bone, foul discharge, fever and chills raise concern for deep wound infection and possible systemic infection. The patient needs urgent medical evaluation and appropriate treatment rather than routine community dressing care alone.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "Which of the following is the most appropriate first step when a patient arrives at a CHPS compound with a suspected life-threatening emergency?",
+"choices": [
+{"text": "A. Complete the registration process before assessing the patient", "is_correct": false},
+{"text": "B. Perform rapid triage and identify immediate threats to life", "is_correct": true},
+{"text": "C. Ask the patient to wait until the next routine consultation", "is_correct": false},
+{"text": "D. Collect payment before initiating emergency assessment", "is_correct": false}
+],
+"rationale": "Emergency triage identifies patients who require immediate intervention based on the severity of their condition. Life-saving assessment and stabilisation should not be delayed by routine administrative procedures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "A child arrives at a CHPS compound with high fever, lethargy, inability to drink and repeated vomiting. What should the nurse do?",
+"choices": [
+{"text": "A. Provide routine home-care advice and schedule a review in three days", "is_correct": false},
+{"text": "B. Give oral fluids even if the child cannot swallow safely", "is_correct": false},
+{"text": "C. Recognise the danger signs, provide appropriate immediate assessment and arrange urgent referral", "is_correct": true},
+{"text": "D. Delay referral until the fever responds to a home remedy", "is_correct": false}
+],
+"rationale": "Lethargy and inability to drink are general danger signs in a sick child and may indicate severe illness. The child requires urgent assessment and referral, with appropriate stabilisation according to the applicable paediatric emergency protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "Which equipment is essential for basic emergency preparedness at a CHPS compound?",
+"choices": [
+{"text": "A. A functional blood pressure apparatus, thermometer, basic airway supplies and emergency communication arrangements", "is_correct": true},
+{"text": "B. Decorative medical posters only", "is_correct": false},
+{"text": "C. Office furniture and filing cabinets only", "is_correct": false},
+{"text": "D. Specialist surgical equipment that staff are not trained to use", "is_correct": false}
+],
+"rationale": "Basic emergency preparedness requires functional assessment equipment, appropriate supplies and reliable communication and referral arrangements. Equipment must be maintained and staff should be trained to use it safely.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "A pregnant woman at a CHPS compound develops heavy vaginal bleeding and dizziness. What should the nurse prioritise?",
+"choices": [
+{"text": "A. Ask the woman to walk around to assess the amount of bleeding", "is_correct": false},
+{"text": "B. Provide urgent assessment, initiate appropriate emergency support and arrange immediate referral to a facility capable of managing obstetric emergencies", "is_correct": true},
+{"text": "C. Advise the woman to return the next morning", "is_correct": false},
+{"text": "D. Give oral food and discharge her if the dizziness improves", "is_correct": false}
+],
+"rationale": "Heavy vaginal bleeding with dizziness during pregnancy may indicate a life-threatening obstetric emergency and haemorrhagic shock. Immediate assessment, appropriate stabilisation and urgent referral are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "A patient presents with a suspected snakebite to the lower leg. Which action should the nurse take?",
+"choices": [
+{"text": "A. Incise the bite site to remove the venom", "is_correct": false},
+{"text": "B. Apply a tight tourniquet and encourage the patient to walk", "is_correct": false},
+{"text": "C. Reassure the patient, minimise movement, immobilise the affected limb and arrange urgent transfer for assessment", "is_correct": true},
+{"text": "D. Apply chemicals or herbal preparations to the bite site", "is_correct": false}
+],
+"rationale": "Movement can increase the spread of venom, so the patient should be kept calm and the affected limb immobilised. Cutting, sucking, applying chemicals and using tight tourniquets are harmful practices; urgent medical assessment is required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "A patient at a CHPS compound develops sudden severe chest pain, sweating and shortness of breath. Which action is most appropriate?",
+"choices": [
+{"text": "A. Advise the patient to walk outside for fresh air", "is_correct": false},
+{"text": "B. Treat the symptoms as potentially cardiac, assess immediately and activate urgent referral or emergency transfer", "is_correct": true},
+{"text": "C. Give a heavy meal and observe for one hour", "is_correct": false},
+{"text": "D. Reassure the patient that chest pain is usually caused by anxiety", "is_correct": false}
+],
+"rationale": "Severe chest pain with sweating and breathlessness may indicate acute coronary syndrome or another life-threatening condition. The patient requires prompt assessment, appropriate emergency management within scope and urgent transfer.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "A patient is brought to a CHPS compound following a road traffic accident. The patient is confused, has severe neck pain and is bleeding from the scalp. What is the nurse's priority?",
+"choices": [
+{"text": "A. Allow the patient to sit upright and turn the head freely", "is_correct": false},
+{"text": "B. Give oral analgesics before assessing the airway", "is_correct": false},
+{"text": "C. Assess airway, breathing and circulation while protecting the cervical spine and controlling external bleeding", "is_correct": true},
+{"text": "D. Ask the patient to walk to determine the severity of the injury", "is_correct": false}
+],
+"rationale": "Trauma management prioritises life-threatening problems while minimising the risk of further injury. The nurse should assess ABCs, maintain appropriate spinal precautions, control external bleeding and arrange urgent transfer.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Nursing at CHPS",
+"question_text": "Which information is most important to communicate when referring a critically ill patient from a CHPS compound to a district hospital?",
+"choices": [
+{"text": "A. Only the patient's name and residential area", "is_correct": false},
+{"text": "B. The nurse's personal opinion about the receiving facility", "is_correct": false},
+{"text": "C. The patient's clinical condition, vital signs, relevant history, interventions given and response to treatment", "is_correct": true},
+{"text": "D. Details of unrelated community activities", "is_correct": false}
+],
+"rationale": "A structured clinical handover helps the receiving team understand the patient's condition and continue care safely. Relevant findings, treatment, response and outstanding concerns should be communicated clearly and documented.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "What is the primary goal of palliative care for a person with a life-limiting illness?",
+"choices": [
+{"text": "A. To guarantee that the disease will be cured", "is_correct": false},
+{"text": "B. To improve quality of life through prevention and relief of suffering", "is_correct": true},
+{"text": "C. To discontinue all forms of supportive treatment", "is_correct": false},
+{"text": "D. To provide care only during the final hours of life", "is_correct": false}
+],
+"rationale": "Palliative care aims to improve quality of life by preventing and relieving physical, psychological, social and spiritual suffering. It can be provided alongside disease-directed treatment and is not limited to the final days of life.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "A patient receiving palliative care at home reports persistent pain despite using prescribed analgesics. What should the community nurse do?",
+"choices": [
+{"text": "A. Advise the patient to stop all analgesics", "is_correct": false},
+{"text": "B. Assess the pain, review how prescribed medicines are being used and contact the responsible clinician for reassessment", "is_correct": true},
+{"text": "C. Increase the medication dose independently without an authorised order", "is_correct": false},
+{"text": "D. Tell the patient that pain is unavoidable at the end of life", "is_correct": false}
+],
+"rationale": "Persistent pain requires reassessment of its severity, pattern, possible causes and response to treatment. The nurse should support safe medication use and communicate with the responsible clinician to review the pain-management plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "Which nursing action best supports the dignity of a patient receiving end-of-life care at home?",
+"choices": [
+{"text": "A. Discuss the patient's condition with neighbours without permission", "is_correct": false},
+{"text": "B. Ignore the patient's expressed preferences because the illness is terminal", "is_correct": false},
+{"text": "C. Respect privacy, provide personal care sensitively and involve the patient in decisions as much as possible", "is_correct": true},
+{"text": "D. Restrict all communication with the patient", "is_correct": false}
+],
+"rationale": "Dignity in end-of-life care requires respect for the patient's identity, preferences, privacy and autonomy. Personal care should be delivered sensitively, with opportunities for the patient to participate in decisions whenever possible.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "A family caring for a terminally ill patient at home reports exhaustion, anxiety and difficulty managing daily care. Which intervention is most appropriate?",
+"choices": [
+{"text": "A. Tell the family that caregiving is entirely their responsibility", "is_correct": false},
+{"text": "B. Assess caregiver burden, provide practical education and link the family with available respite and support services", "is_correct": true},
+{"text": "C. Advise the family to conceal their feelings from the patient", "is_correct": false},
+{"text": "D. Stop all home visits to allow the family privacy", "is_correct": false}
+],
+"rationale": "Caregiver burden can affect both family wellbeing and the quality of care provided to the patient. Assessment, practical training, emotional support and access to respite or community resources can reduce the burden.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "A dying patient develops noisy respiratory secretions. The family becomes distressed and asks the nurse to perform repeated deep suctioning. What is the most appropriate response?",
+"choices": [
+{"text": "A. Explain the possible causes, assess the patient's comfort and use appropriate non-invasive measures according to the care plan", "is_correct": true},
+{"text": "B. Perform deep suctioning repeatedly regardless of the patient's discomfort", "is_correct": false},
+{"text": "C. Tell the family that the symptom should be ignored", "is_correct": false},
+{"text": "D. Give the patient oral fluids even when swallowing is unsafe", "is_correct": false}
+],
+"rationale": "Noisy respiratory secretions can occur near the end of life and may be more distressing to relatives than to the patient. Care should focus on comfort, appropriate positioning and prescribed symptom management while avoiding unnecessary invasive procedures that may cause discomfort.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "A patient with advanced cancer becomes increasingly drowsy and has difficulty swallowing. The family asks the nurse to continue giving oral medicines and fluids. What should the nurse do?",
+"choices": [
+{"text": "A. Force oral fluids to prevent dehydration", "is_correct": false},
+{"text": "B. Assess swallowing safety, explain the risk of aspiration and contact the responsible clinician to review the medication and comfort-care plan", "is_correct": true},
+{"text": "C. Crush all medicines and mix them into food without checking whether this is safe", "is_correct": false},
+{"text": "D. Tell the family to discontinue all care immediately", "is_correct": false}
+],
+"rationale": "Reduced consciousness and impaired swallowing increase the risk of aspiration. The nurse should avoid unsafe oral administration and arrange review of medication routes and comfort measures in accordance with the patient's care plan.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "Which statement best describes bereavement support provided by a community health nurse?",
+"choices": [
+{"text": "A. It involves avoiding the bereaved family until they have recovered", "is_correct": false},
+{"text": "B. It involves providing compassionate support, listening to concerns and identifying those who may need additional help", "is_correct": true},
+{"text": "C. It requires the nurse to tell every family member how long grieving should last", "is_correct": false},
+{"text": "D. It involves sharing the family's private information with community members", "is_correct": false}
+],
+"rationale": "Bereavement support recognises that grief affects individuals and families differently. The nurse should provide compassionate listening, respect cultural practices and identify signs of complicated grief or other concerns requiring additional support.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care in the Home",
+"question_text": "A terminally ill patient at home suddenly develops severe breathlessness and appears frightened. The agreed care plan includes symptom management and emergency contact arrangements. What should the nurse do first?",
+"choices": [
+{"text": "A. Leave the patient alone while searching for the family care plan", "is_correct": false},
+{"text": "B. Assess the patient's breathing and comfort, implement authorised measures in the care plan and seek urgent clinical advice when indicated", "is_correct": true},
+{"text": "C. Give an unprescribed sedative to make the patient sleep", "is_correct": false},
+{"text": "D. Tell the patient that breathlessness is expected and requires no attention", "is_correct": false}
+],
+"rationale": "Severe breathlessness requires prompt assessment and symptom relief consistent with the patient's goals of care. The nurse should use authorised interventions, seek clinical support and escalate urgently if the situation is outside the agreed plan or suggests a reversible emergency.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
