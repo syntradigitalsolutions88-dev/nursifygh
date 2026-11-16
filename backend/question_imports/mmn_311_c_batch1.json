@@ -1,0 +1,801 @@
+{
+"courses": [
+{
+"course_code": "MMN-311-C",
+"course_title": "Medicine and Medical Nursing III",
+"category": "MEDICAL",
+"semester": "S1",
+"topics": [
+"Cardiovascular Nursing",
+"Respiratory Nursing",
+"Endocrine Nursing",
+"Renal Nursing",
+"Gastrointestinal Nursing",
+"Infectious Diseases",
+"Community Management of Chronic Diseases"
+],
+"questions": [
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "Which blood pressure measurement is generally classified as hypertension in an adult when confirmed by repeated properly performed measurements in a clinical setting?",
+"choices": [
+{"text": "A. 100/60 mmHg", "is_correct": false},
+{"text": "B. 110/70 mmHg", "is_correct": false},
+{"text": "C. 140/90 mmHg or higher", "is_correct": true},
+{"text": "D. 120/80 mmHg", "is_correct": false}
+],
+"rationale": "A repeatedly measured blood pressure of 140/90 mmHg or higher is a commonly used threshold for diagnosing hypertension in adults in clinical settings. Diagnosis should be based on appropriate measurement and confirmation rather than a single elevated reading.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "Which clinical finding is most characteristic of left-sided heart failure?",
+"choices": [
+{"text": "A. Pulmonary crackles and breathlessness", "is_correct": true},
+{"text": "B. Enlarged liver without respiratory symptoms", "is_correct": false},
+{"text": "C. Isolated swelling of one knee", "is_correct": false},
+{"text": "D. Increased bowel sounds", "is_correct": false}
+],
+"rationale": "Left-sided heart failure causes blood to accumulate in the pulmonary circulation, resulting in pulmonary congestion. Common manifestations include dyspnoea, orthopnoea, and crackles on lung auscultation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "Which lifestyle modification is recommended for an adult with hypertension?",
+"choices": [
+{"text": "A. Increasing salt intake", "is_correct": false},
+{"text": "B. Regular physical activity and reduced dietary salt", "is_correct": true},
+{"text": "C. Avoiding all fruits and vegetables", "is_correct": false},
+{"text": "D. Increasing alcohol consumption", "is_correct": false}
+],
+"rationale": "Regular physical activity and reducing excessive dietary sodium can help lower blood pressure. A balanced diet, healthy body weight, and avoidance of tobacco also contribute to cardiovascular risk reduction.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "What is the main purpose of measuring peripheral oedema in a patient with heart failure?",
+"choices": [
+{"text": "A. To diagnose pulmonary tuberculosis", "is_correct": false},
+{"text": "B. To determine the patient's blood group", "is_correct": false},
+{"text": "C. To assess possible fluid accumulation", "is_correct": true},
+{"text": "D. To establish the patient's visual acuity", "is_correct": false}
+],
+"rationale": "Peripheral oedema may occur when impaired cardiac function leads to fluid retention and increased venous pressure. Assessing the extent of oedema helps monitor the patient's fluid status and response to treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "Which of the following is a characteristic feature of bronchial asthma?",
+"choices": [
+{"text": "A. Irreversible obstruction of all airways", "is_correct": false},
+{"text": "B. Recurrent wheezing and variable airflow limitation", "is_correct": true},
+{"text": "C. Permanent destruction of the alveoli in every case", "is_correct": false},
+{"text": "D. Continuous production of blood-stained sputum", "is_correct": false}
+],
+"rationale": "Asthma is a chronic inflammatory airway disorder characterised by variable respiratory symptoms and variable expiratory airflow limitation. Wheezing, chest tightness, coughing, and breathlessness may occur episodically.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "Which microorganism causes pulmonary tuberculosis?",
+"choices": [
+{"text": "A. Plasmodium falciparum", "is_correct": false},
+{"text": "B. Salmonella Typhi", "is_correct": false},
+{"text": "C. Mycobacterium tuberculosis", "is_correct": true},
+{"text": "D. Hepatitis B virus", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is primarily caused by Mycobacterium tuberculosis. The organism is transmitted through the air when a person with infectious pulmonary or laryngeal TB releases infectious particles, particularly through coughing.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "Which infection-prevention measure is most important when caring for a patient with suspected infectious pulmonary tuberculosis?",
+"choices": [
+{"text": "A. Using airborne infection-control precautions", "is_correct": true},
+{"text": "B. Sharing the patient's eating utensils", "is_correct": false},
+{"text": "C. Keeping all windows permanently closed", "is_correct": false},
+{"text": "D. Using gloves as the only infection-control measure", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted through airborne particles, so appropriate airborne precautions are essential. These include adequate ventilation, respiratory protection for healthcare workers, and prompt evaluation and treatment of suspected cases.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "Which hormone is primarily responsible for facilitating the uptake of glucose from the bloodstream into many body cells?",
+"choices": [
+{"text": "A. Glucagon", "is_correct": false},
+{"text": "B. Insulin", "is_correct": true},
+{"text": "C. Thyroxine", "is_correct": false},
+{"text": "D. Cortisol", "is_correct": false}
+],
+"rationale": "Insulin is produced by the beta cells of the pancreatic islets and helps regulate blood glucose. It promotes glucose uptake in insulin-sensitive tissues and supports storage of glucose as glycogen.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "Which blood glucose value is generally consistent with hypoglycaemia in a person with diabetes?",
+"choices": [
+{"text": "A. Below 3.9 mmol/L", "is_correct": true},
+{"text": "B. 5.5 mmol/L", "is_correct": false},
+{"text": "C. 7.0 mmol/L", "is_correct": false},
+{"text": "D. 11.1 mmol/L", "is_correct": false}
+],
+"rationale": "A blood glucose level below 3.9 mmol/L is the standard alert threshold for hypoglycaemia. Prompt recognition and treatment are important because severe hypoglycaemia can cause seizures, unconsciousness, and neurological injury.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "Which of the following is a common long-term complication of poorly controlled diabetes mellitus?",
+"choices": [
+{"text": "A. Diabetic retinopathy", "is_correct": true},
+{"text": "B. Acute appendicitis", "is_correct": false},
+{"text": "C. Pulmonary embolism in every patient", "is_correct": false},
+{"text": "D. Infectious mononucleosis", "is_correct": false}
+],
+"rationale": "Persistent hyperglycaemia can damage the small blood vessels supplying the retina, resulting in diabetic retinopathy. Other important complications include nephropathy, neuropathy, and cardiovascular disease.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "Which laboratory measurement is commonly used to assess kidney filtration function?",
+"choices": [
+{"text": "A. Serum bilirubin", "is_correct": false},
+{"text": "B. Serum creatinine and estimated glomerular filtration rate", "is_correct": true},
+{"text": "C. Serum amylase alone", "is_correct": false},
+{"text": "D. Haemoglobin concentration alone", "is_correct": false}
+],
+"rationale": "Serum creatinine is used to estimate glomerular filtration rate, which provides an indication of kidney filtration function. Interpretation should consider the patient's clinical condition and other relevant findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "Which condition is a common risk factor for chronic kidney disease?",
+"choices": [
+{"text": "A. Controlled seasonal allergic rhinitis", "is_correct": false},
+{"text": "B. Hypertension and diabetes mellitus", "is_correct": true},
+{"text": "C. Near-sightedness", "is_correct": false},
+{"text": "D. Uncomplicated minor skin abrasion", "is_correct": false}
+],
+"rationale": "Hypertension and diabetes are major causes of chronic kidney disease because they can progressively damage renal blood vessels and filtering structures. Early detection and effective control of these conditions can reduce the risk of kidney damage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Gastrointestinal Nursing",
+"question_text": "Which clinical manifestation is most commonly associated with acute gastroenteritis?",
+"choices": [
+{"text": "A. Diarrhoea, vomiting, and abdominal cramps", "is_correct": true},
+{"text": "B. Persistent painless visual loss", "is_correct": false},
+{"text": "C. Isolated joint deformity", "is_correct": false},
+{"text": "D. Progressive hearing impairment", "is_correct": false}
+],
+"rationale": "Acute gastroenteritis commonly presents with diarrhoea, vomiting, and abdominal cramps. Depending on the cause and severity, the patient may develop dehydration and electrolyte disturbances.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Gastrointestinal Nursing",
+"question_text": "Which of the following is a common sign of upper gastrointestinal bleeding?",
+"choices": [
+{"text": "A. Haematemesis", "is_correct": true},
+{"text": "B. Haematuria", "is_correct": false},
+{"text": "C. Epistaxis", "is_correct": false},
+{"text": "D. Haemoptysis", "is_correct": false}
+],
+"rationale": "Haematemesis refers to vomiting blood and may indicate bleeding from the oesophagus, stomach, or proximal duodenum. It requires urgent assessment because significant blood loss can lead to hypovolaemic shock.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "Which Plasmodium species is responsible for most severe and potentially fatal malaria infections in Ghana?",
+"choices": [
+{"text": "A. Plasmodium malariae", "is_correct": false},
+{"text": "B. Plasmodium ovale", "is_correct": false},
+{"text": "C. Plasmodium falciparum", "is_correct": true},
+{"text": "D. Plasmodium vivax", "is_correct": false}
+],
+"rationale": "Plasmodium falciparum is the predominant malaria parasite responsible for severe malaria in Ghana. Severe disease may involve cerebral malaria, severe anaemia, respiratory distress, hypoglycaemia, and organ dysfunction.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "Which hepatitis virus is commonly transmitted through contaminated food and water?",
+"choices": [
+{"text": "A. Hepatitis B virus", "is_correct": false},
+{"text": "B. Hepatitis C virus", "is_correct": false},
+{"text": "C. Hepatitis D virus", "is_correct": false},
+{"text": "D. Hepatitis A virus", "is_correct": true}
+],
+"rationale": "Hepatitis A is mainly transmitted through the faecal-oral route, commonly through contaminated food or water. Safe water, proper sanitation, hand hygiene, and vaccination where indicated help prevent transmission.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "A community health nurse measures the blood pressure of a 52-year-old man at a CHPS compound and obtains 166/102 mmHg. He has no symptoms and says he feels well. What is the most appropriate action?",
+"choices": [
+{"text": "A. Reassure him that treatment is unnecessary because he has no symptoms", "is_correct": false},
+{"text": "B. Repeat the measurement after appropriate rest, assess him, and arrange clinical evaluation", "is_correct": true},
+{"text": "C. Advise him to take another person's antihypertensive medication", "is_correct": false},
+{"text": "D. Tell him to return only if he develops a severe headache", "is_correct": false}
+],
+"rationale": "Hypertension is frequently asymptomatic, so the absence of symptoms does not exclude clinically important elevated blood pressure. The nurse should confirm the reading using correct technique, assess for danger signs, and arrange appropriate evaluation and follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "A patient with known heart failure reports increasing breathlessness when lying flat and waking at night gasping for air. Which condition should the nurse suspect?",
+"choices": [
+{"text": "A. Worsening pulmonary congestion due to heart failure", "is_correct": true},
+{"text": "B. Acute uncomplicated dermatitis", "is_correct": false},
+{"text": "C. Isolated urinary tract infection", "is_correct": false},
+{"text": "D. Chronic constipation", "is_correct": false}
+],
+"rationale": "Orthopnoea and paroxysmal nocturnal dyspnoea are important symptoms of worsening heart failure and pulmonary congestion. The patient requires prompt clinical assessment to determine the severity of deterioration and the need for treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "A patient with hypertension says he has stopped taking his prescribed medication because his blood pressure readings have returned to normal. What is the nurse's best response?",
+"choices": [
+{"text": "A. Agree that medication is unnecessary once the reading improves", "is_correct": false},
+{"text": "B. Explain that normal readings may reflect effective treatment and advise him to continue as prescribed until reviewed", "is_correct": true},
+{"text": "C. Recommend doubling the dose when he remembers", "is_correct": false},
+{"text": "D. Advise him to take medication only when he develops a headache", "is_correct": false}
+],
+"rationale": "Controlled blood pressure may be the result of effective antihypertensive treatment rather than resolution of the underlying condition. The patient should not discontinue or alter prescribed medication without clinical review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "During a home visit, a patient with heart failure has gained 2.5 kg over three days and has increasing ankle swelling. What should the community health nurse do?",
+"choices": [
+{"text": "A. Ignore the weight change because it is expected in older adults", "is_correct": false},
+{"text": "B. Advise the patient to stop all prescribed medication", "is_correct": false},
+{"text": "C. Arrange prompt clinical assessment for possible fluid retention and worsening heart failure", "is_correct": true},
+{"text": "D. Recommend increasing salt intake to improve circulation", "is_correct": false}
+],
+"rationale": "Rapid weight gain accompanied by worsening peripheral oedema may indicate fluid retention in a patient with heart failure. Prompt clinical review is necessary because the patient may require reassessment of treatment and fluid status.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "A patient at a CHPS compound suddenly develops facial drooping, weakness of the right arm, and difficulty speaking. What is the nurse's priority action?",
+"choices": [
+{"text": "A. Give the patient oral food and water", "is_correct": false},
+{"text": "B. Recognise possible stroke, establish the time symptoms began, and arrange immediate emergency referral", "is_correct": true},
+{"text": "C. Allow the patient to sleep before reassessment", "is_correct": false},
+{"text": "D. Massage the affected arm and observe for one hour", "is_correct": false}
+],
+"rationale": "Sudden facial weakness, arm weakness, and speech difficulty are warning signs of acute stroke. The nurse should urgently activate the referral pathway, document the time of symptom onset, and avoid oral intake until swallowing safety is assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "A 19-year-old patient with asthma presents at a health facility with wheezing and breathlessness after exposure to dust. Which intervention is most appropriate initially?",
+"choices": [
+{"text": "A. Assist the patient to use the prescribed rapid-acting inhaled bronchodilator and assess the response", "is_correct": true},
+{"text": "B. Encourage the patient to lie flat", "is_correct": false},
+{"text": "C. Give an oral sedative to reduce anxiety", "is_correct": false},
+{"text": "D. Restrict access to all prescribed inhalers", "is_correct": false}
+],
+"rationale": "A rapid-acting inhaled bronchodilator is commonly used for relief of acute asthma symptoms according to the patient's prescribed action plan and applicable protocol. The nurse should assess respiratory status, oxygen saturation, and response to treatment while recognising signs requiring urgent escalation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "A patient with a persistent cough lasting three weeks, night sweats, weight loss, and occasional blood-stained sputum attends a CHPS compound. What should the nurse do?",
+"choices": [
+{"text": "A. Diagnose asthma and provide only an inhaler", "is_correct": false},
+{"text": "B. Suspect pulmonary tuberculosis and arrange appropriate testing and referral", "is_correct": true},
+{"text": "C. Reassure the patient that the symptoms are caused by dehydration", "is_correct": false},
+{"text": "D. Prescribe an antimalarial without further assessment", "is_correct": false}
+],
+"rationale": "A prolonged cough accompanied by night sweats, weight loss, and haemoptysis is suggestive of pulmonary tuberculosis. The patient should be evaluated using the recommended TB diagnostic pathway, with appropriate respiratory precautions and referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "A community health nurse is educating a household in which one member has infectious pulmonary tuberculosis. Which advice is most appropriate?",
+"choices": [
+{"text": "A. Keep the house poorly ventilated to prevent cold air from entering", "is_correct": false},
+{"text": "B. Stop treatment when the cough reduces", "is_correct": false},
+{"text": "C. Improve ventilation, practise cough hygiene, and ensure household contacts are assessed", "is_correct": true},
+{"text": "D. Share drinking cups to build immunity among household members", "is_correct": false}
+],
+"rationale": "Good ventilation and cough hygiene reduce exposure to infectious airborne particles, while contact assessment helps identify additional cases. The patient should complete the prescribed TB treatment and follow the TB programme's infection-control guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "A child with pneumonia is brought to a CHPS compound with chest indrawing, fast breathing, and inability to breastfeed. What should the nurse do?",
+"choices": [
+{"text": "A. Advise the mother to return after three days", "is_correct": false},
+{"text": "B. Give cough mixture and discharge the child", "is_correct": false},
+{"text": "C. Recognise severe illness and arrange urgent referral for emergency assessment and treatment", "is_correct": true},
+{"text": "D. Restrict the child's fluid intake without assessment", "is_correct": false}
+],
+"rationale": "Chest indrawing and inability to breastfeed are danger signs in a young child with respiratory illness. The child requires urgent assessment and referral because severe pneumonia or another serious illness may be present.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "A patient with asthma reports using a reliever inhaler several times every day. What should the nurse explain?",
+"choices": [
+{"text": "A. Frequent reliever use may indicate poor asthma control and the need for clinical review", "is_correct": true},
+{"text": "B. Frequent reliever use always means the asthma has been cured", "is_correct": false},
+{"text": "C. The patient should stop all asthma medicines immediately", "is_correct": false},
+{"text": "D. The patient should use another person's inhaler instead", "is_correct": false}
+],
+"rationale": "Frequent use of a reliever inhaler may indicate inadequate asthma control and an increased risk of exacerbations. The patient requires assessment of inhaler technique, adherence, triggers, and the need for an appropriate controller-based treatment plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "A conscious adult with diabetes presents with sweating, tremors, and a blood glucose level of 3.2 mmol/L. What should the nurse do first?",
+"choices": [
+{"text": "A. Give a rapid-acting source of oral glucose", "is_correct": true},
+{"text": "B. Administer the patient's usual insulin immediately", "is_correct": false},
+{"text": "C. Encourage the patient to undertake physical exercise", "is_correct": false},
+{"text": "D. Withhold all food and fluids", "is_correct": false}
+],
+"rationale": "The patient has symptomatic hypoglycaemia and is conscious, so a rapid-acting oral glucose source should be given promptly according to protocol. Blood glucose should be rechecked after treatment, and further food or treatment should be provided as appropriate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "A patient with diabetes is found unconscious at home and has a history of insulin use. What is the safest immediate action by the community health nurse?",
+"choices": [
+{"text": "A. Pour sweetened water into the patient's mouth", "is_correct": false},
+{"text": "B. Give solid food to stimulate swallowing", "is_correct": false},
+{"text": "C. Assess airway, breathing, and circulation, arrange emergency referral, and provide protocol-directed treatment", "is_correct": true},
+{"text": "D. Allow the patient to remain unattended until consciousness returns", "is_correct": false}
+],
+"rationale": "An unconscious patient may be unable to protect the airway, so oral food or fluids can cause aspiration. Immediate emergency assessment, airway protection, referral, and treatment of suspected severe hypoglycaemia within the nurse's scope are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "A patient newly diagnosed with type 2 diabetes asks why regular foot inspection is necessary. Which response is most appropriate?",
+"choices": [
+{"text": "A. It prevents all forms of cardiovascular disease", "is_correct": false},
+{"text": "B. It helps identify injuries, infection, and ulcers early, especially when sensation is reduced", "is_correct": true},
+{"text": "C. It eliminates the need for blood glucose monitoring", "is_correct": false},
+{"text": "D. It prevents the development of hypertension", "is_correct": false}
+],
+"rationale": "Diabetic peripheral neuropathy and impaired circulation can reduce protective sensation and delay wound healing. Daily foot inspection helps identify minor injuries and infection before they progress to serious ulcers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "During a home visit, a patient with diabetes says that he sometimes skips meals after taking insulin because he wants to lose weight. What should the nurse advise?",
+"choices": [
+{"text": "A. Continue skipping meals to reduce blood glucose", "is_correct": false},
+{"text": "B. Stop insulin without consulting the healthcare team", "is_correct": false},
+{"text": "C. Follow an individualised meal plan and discuss insulin timing and weight management with the healthcare team", "is_correct": true},
+{"text": "D. Take extra insulin whenever a meal is missed", "is_correct": false}
+],
+"rationale": "Skipping meals after insulin administration can cause hypoglycaemia, depending on the insulin type, dose, and timing. The patient needs individualised dietary and medication advice rather than independently changing meals or insulin doses.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "A patient with diabetes reports excessive thirst, frequent urination, fatigue, and blurred vision. Which condition should the nurse suspect?",
+"choices": [
+{"text": "A. Hypoglycaemia", "is_correct": false},
+{"text": "B. Hyperglycaemia", "is_correct": true},
+{"text": "C. Acute appendicitis", "is_correct": false},
+{"text": "D. Hypothermia", "is_correct": false}
+],
+"rationale": "Polyuria, polydipsia, fatigue, and blurred vision are common manifestations of hyperglycaemia. The patient's blood glucose should be assessed, and further clinical evaluation arranged to determine the cause and appropriate management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "A patient with chronic kidney disease develops increasing ankle oedema and breathlessness. What is the nurse's most appropriate action?",
+"choices": [
+{"text": "A. Encourage unrestricted fluid intake", "is_correct": false},
+{"text": "B. Arrange prompt clinical assessment for possible fluid overload", "is_correct": true},
+{"text": "C. Advise the patient to stop all prescribed medication", "is_correct": false},
+{"text": "D. Reassure the patient that oedema is unrelated to kidney function", "is_correct": false}
+],
+"rationale": "Reduced kidney function can impair fluid and sodium excretion, causing fluid overload, peripheral oedema, and pulmonary congestion. Breathlessness in this context requires prompt clinical assessment and appropriate management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "A patient with acute kidney injury has produced very little urine over the last eight hours. Which nursing assessment is most important?",
+"choices": [
+{"text": "A. Monitor urine output, vital signs, fluid balance, and signs of fluid overload", "is_correct": true},
+{"text": "B. Assess only the patient's hearing ability", "is_correct": false},
+{"text": "C. Encourage the patient to drink unlimited water", "is_correct": false},
+{"text": "D. Discontinue monitoring because reduced urine output is expected", "is_correct": false}
+],
+"rationale": "Oliguria may indicate worsening kidney function and can be associated with fluid overload and electrolyte disturbances. Accurate urine output measurement, fluid balance monitoring, and clinical review are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "A patient with chronic kidney disease asks why the healthcare team monitors serum potassium. Which explanation is correct?",
+"choices": [
+{"text": "A. Potassium has no effect on the heart", "is_correct": false},
+{"text": "B. Impaired kidney excretion can cause potassium accumulation and dangerous cardiac arrhythmias", "is_correct": true},
+{"text": "C. Potassium monitoring is used only to diagnose malaria", "is_correct": false},
+{"text": "D. High potassium levels always improve kidney function", "is_correct": false}
+],
+"rationale": "The kidneys play an important role in maintaining potassium balance. In kidney impairment, hyperkalaemia may develop and cause life-threatening cardiac conduction abnormalities and arrhythmias.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "A patient with chronic kidney disease frequently uses non-prescribed ibuprofen for body pains. What should the community health nurse advise?",
+"choices": [
+{"text": "A. Increase the dose whenever pain becomes severe", "is_correct": false},
+{"text": "B. Continue taking it because all pain medicines are safe for the kidneys", "is_correct": false},
+{"text": "C. Avoid unsupervised use and seek clinical advice because NSAIDs may worsen kidney function", "is_correct": true},
+{"text": "D. Combine it with another person's prescription medication", "is_correct": false}
+],
+"rationale": "Non-steroidal anti-inflammatory drugs can reduce renal blood flow and may worsen kidney function, particularly in people with existing CKD or dehydration. Patients with kidney disease should obtain professional advice before using these medicines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Gastrointestinal Nursing",
+"question_text": "A child in a rural community develops diarrhoea and vomiting. The child is alert and able to drink. Which intervention is most appropriate to prevent dehydration?",
+"choices": [
+{"text": "A. Give oral rehydration solution in frequent small amounts", "is_correct": true},
+{"text": "B. Stop all oral fluids until the diarrhoea resolves", "is_correct": false},
+{"text": "C. Give only carbonated soft drinks", "is_correct": false},
+{"text": "D. Withhold breastfeeding and food for three days", "is_correct": false}
+],
+"rationale": "Oral rehydration solution replaces water and electrolytes lost through diarrhoea and vomiting. Continued breastfeeding and appropriate feeding should be encouraged, while the child is monitored for danger signs and dehydration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Gastrointestinal Nursing",
+"question_text": "A patient presents with severe abdominal pain, repeated vomiting, abdominal distension, and inability to pass stool or flatus. What should the nurse suspect?",
+"choices": [
+{"text": "A. Uncomplicated allergic rhinitis", "is_correct": false},
+{"text": "B. Intestinal obstruction", "is_correct": true},
+{"text": "C. Simple conjunctivitis", "is_correct": false},
+{"text": "D. Mild tension headache", "is_correct": false}
+],
+"rationale": "Abdominal distension, vomiting, severe pain, and failure to pass stool or flatus are suggestive of intestinal obstruction. This is a potentially serious condition requiring urgent medical assessment and referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Gastrointestinal Nursing",
+"question_text": "A patient with suspected peptic ulcer disease reports passing black, tarry stools. What should the nurse do?",
+"choices": [
+{"text": "A. Explain that black stools are always harmless", "is_correct": false},
+{"text": "B. Recommend a high-fibre diet and routine review in one month", "is_correct": false},
+{"text": "C. Suspect gastrointestinal bleeding and arrange urgent medical assessment", "is_correct": true},
+{"text": "D. Advise the patient to take non-prescribed anti-inflammatory medication", "is_correct": false}
+],
+"rationale": "Black, tarry stools, known as melaena, may indicate bleeding from the upper gastrointestinal tract. The patient requires urgent assessment because significant blood loss and haemodynamic instability may occur.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Gastrointestinal Nursing",
+"question_text": "A community health nurse visits a household where several members have developed diarrhoea after drinking water from an unprotected source. What is the most appropriate public health intervention?",
+"choices": [
+{"text": "A. Advise the household to continue using the source if the water looks clear", "is_correct": false},
+{"text": "B. Promote safe water treatment and storage, handwashing, and appropriate sanitation", "is_correct": true},
+{"text": "C. Recommend that household members stop eating all vegetables", "is_correct": false},
+{"text": "D. Advise the household to use antibiotics without assessment", "is_correct": false}
+],
+"rationale": "Contaminated water can transmit enteric pathogens even when it appears visually clean. Water treatment, safe storage, hand hygiene, and improved sanitation are essential measures for preventing faecal-oral disease transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A child with fever, vomiting, convulsions, and impaired consciousness is brought to a CHPS compound in a malaria-endemic area. What is the nurse's priority action?",
+"choices": [
+{"text": "A. Give oral antimalarial tablets and send the child home", "is_correct": false},
+{"text": "B. Recognise possible severe malaria or another life-threatening illness and arrange immediate emergency referral", "is_correct": true},
+{"text": "C. Wait for the fever to reduce before assessing the child", "is_correct": false},
+{"text": "D. Give food and fluids by mouth while the child is unconscious", "is_correct": false}
+],
+"rationale": "Convulsions and impaired consciousness are danger signs that may indicate severe malaria or another serious condition. The child requires immediate emergency assessment, stabilisation within the nurse's scope, and urgent referral without giving oral medication to an unconscious patient.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A patient with suspected uncomplicated malaria attends a health facility with fever and headache. Which action is most appropriate before initiating antimalarial treatment?",
+"choices": [
+{"text": "A. Confirm malaria using an approved diagnostic test where available and assess the patient clinically", "is_correct": true},
+{"text": "B. Treat every fever as malaria without further assessment", "is_correct": false},
+{"text": "C. Give antibiotics to every patient with fever", "is_correct": false},
+{"text": "D. Wait until the patient develops convulsions before testing", "is_correct": false}
+],
+"rationale": "Fever may result from malaria or other infections, so parasitological confirmation using an appropriate rapid diagnostic test or microscopy is recommended before treatment when available. Clinical assessment is also necessary to identify severe disease and alternative diagnoses.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A patient receiving treatment for typhoid fever asks how to reduce the risk of transmitting the infection to family members. Which advice is most appropriate?",
+"choices": [
+{"text": "A. Prepare food for the household without washing hands", "is_correct": false},
+{"text": "B. Use safe drinking water, practise handwashing with soap, and maintain proper food hygiene", "is_correct": true},
+{"text": "C. Share unwashed eating utensils", "is_correct": false},
+{"text": "D. Stop prescribed treatment as soon as the fever decreases", "is_correct": false}
+],
+"rationale": "Typhoid fever is transmitted through the faecal-oral route, commonly through contaminated food and water. Handwashing, safe water, food hygiene, sanitation, and completion of prescribed treatment help reduce transmission and complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A patient newly diagnosed with HIV asks whether the diagnosis means that death is inevitable. What is the nurse's best response?",
+"choices": [
+{"text": "A. Explain that HIV can be effectively managed with lifelong antiretroviral therapy and regular follow-up", "is_correct": true},
+{"text": "B. Tell the patient that treatment is ineffective", "is_correct": false},
+{"text": "C. Advise the patient to avoid all social contact permanently", "is_correct": false},
+{"text": "D. Recommend stopping treatment once symptoms disappear", "is_correct": false}
+],
+"rationale": "HIV is a manageable chronic infection when a person receives and adheres to effective antiretroviral therapy. Regular clinical monitoring, adherence support, and prevention counselling help people maintain health and reduce transmission risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "During a community education session, a participant asks how hepatitis B can be prevented. Which response is correct?",
+"choices": [
+{"text": "A. By avoiding all cooked foods", "is_correct": false},
+{"text": "B. Through vaccination, safe injections, screened blood, and safer sexual practices", "is_correct": true},
+{"text": "C. By taking antimalarial medication every month", "is_correct": false},
+{"text": "D. By sharing personal razors with family members", "is_correct": false}
+],
+"rationale": "Hepatitis B is transmitted through infected blood and body fluids, including sexual and perinatal transmission. Vaccination, safe injection practices, screened blood products, and measures to prevent exposure to infected body fluids are important preventive strategies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A pregnant woman attending antenatal care tests positive for hepatitis B surface antigen. What is the most appropriate action?",
+"choices": [
+{"text": "A. Reassure her that hepatitis B cannot affect the newborn", "is_correct": false},
+{"text": "B. Advise her to stop attending antenatal care", "is_correct": false},
+{"text": "C. Arrange appropriate clinical assessment and ensure the newborn receives timely hepatitis B preventive interventions according to national protocol", "is_correct": true},
+{"text": "D. Recommend that the newborn should never receive any vaccine", "is_correct": false}
+],
+"rationale": "Maternal hepatitis B infection can be transmitted to the infant, particularly around delivery. Appropriate maternal assessment and timely newborn hepatitis B vaccination, with hepatitis B immunoglobulin where indicated and available under protocol, reduce the risk of transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "A community health nurse is planning a follow-up programme for patients with hypertension in a rural district. Which activity is most appropriate?",
+"choices": [
+{"text": "A. Conduct regular blood pressure monitoring, adherence counselling, and referral for uncontrolled readings", "is_correct": true},
+{"text": "B. Provide medication only to patients who complain of headaches", "is_correct": false},
+{"text": "C. Stop follow-up once a patient receives a diagnosis", "is_correct": false},
+{"text": "D. Encourage patients to share prescribed antihypertensive medicines", "is_correct": false}
+],
+"rationale": "Community-based hypertension management requires regular monitoring, health education, medication adherence support, and timely referral when blood pressure remains uncontrolled or complications are suspected. Continuity of care helps prevent stroke, heart failure, and kidney disease.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "A community health nurse is developing a health education session for adults at risk of type 2 diabetes. Which message is most appropriate?",
+"choices": [
+{"text": "A. Avoid all physical activity to prevent low blood glucose", "is_correct": false},
+{"text": "B. Maintain a healthy weight, participate in regular physical activity, and eat a balanced diet", "is_correct": true},
+{"text": "C. Consume sugary drinks daily to maintain energy", "is_correct": false},
+{"text": "D. Avoid screening unless symptoms develop", "is_correct": false}
+],
+"rationale": "Healthy eating, regular physical activity, and maintaining a healthy body weight reduce the risk of type 2 diabetes. Screening is important because diabetes may remain asymptomatic for a considerable period.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "A patient with hypertension and diabetes frequently misses clinic appointments because transport costs are high. What is the most appropriate community nursing intervention?",
+"choices": [
+{"text": "A. Discharge the patient from chronic disease follow-up", "is_correct": false},
+{"text": "B. Encourage the patient to obtain medication from unregulated sources", "is_correct": false},
+{"text": "C. Explore barriers with the patient and coordinate feasible follow-up through available community and facility services", "is_correct": true},
+{"text": "D. Advise the patient to attend only when symptoms become severe", "is_correct": false}
+],
+"rationale": "Transport costs are a practical barrier to continuity of care and may contribute to poor disease control. The nurse should identify feasible follow-up arrangements, provide adherence support, and coordinate care within available GHS services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "A patient with chronic obstructive respiratory symptoms continues to smoke despite repeated counselling. Which nursing approach is most appropriate?",
+"choices": [
+{"text": "A. Use non-judgemental counselling, assess readiness to quit, and support a structured smoking cessation plan", "is_correct": true},
+{"text": "B. Refuse to provide further healthcare", "is_correct": false},
+{"text": "C. Tell the patient that smoking has no effect on respiratory health", "is_correct": false},
+{"text": "D. Recommend switching to smoking more frequently but inhaling less deeply", "is_correct": false}
+],
+"rationale": "Smoking cessation is a major intervention for reducing respiratory disease progression and cardiovascular risk. A supportive, non-judgemental approach helps identify the patient's readiness to quit and allows appropriate behavioural and clinical support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "During a home visit, a patient with diabetes has a foot ulcer with foul-smelling discharge and surrounding redness. What should the nurse do?",
+"choices": [
+{"text": "A. Apply an unprescribed herbal preparation and leave the wound uncovered", "is_correct": false},
+{"text": "B. Arrange urgent clinical assessment for possible diabetic foot infection", "is_correct": true},
+{"text": "C. Advise the patient to walk barefoot to improve circulation", "is_correct": false},
+{"text": "D. Reassure the patient that all diabetic ulcers heal without treatment", "is_correct": false}
+],
+"rationale": "Foul-smelling discharge and surrounding redness suggest infection, which can progress rapidly in a patient with diabetes. Urgent assessment is necessary to determine the extent of infection and provide appropriate wound care and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "A 60-year-old patient with hypertension suddenly develops severe chest pain radiating to the left arm, sweating, and nausea. Which action should the nurse prioritise?",
+"choices": [
+{"text": "A. Encourage the patient to walk around to relieve the pain", "is_correct": false},
+{"text": "B. Give a large meal and reassess after one hour", "is_correct": false},
+{"text": "C. Suspect acute coronary syndrome, assess vital signs, and activate emergency referral", "is_correct": true},
+{"text": "D. Advise the patient to take a warm bath at home", "is_correct": false}
+],
+"rationale": "Severe chest pain radiating to the arm with sweating and nausea may indicate acute coronary syndrome. This is a medical emergency requiring prompt assessment, emergency referral, and treatment according to the relevant protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cardiovascular Nursing",
+"question_text": "A patient with heart failure is receiving follow-up at a district hospital. The nurse notes increasing breathlessness, oxygen saturation of 86%, widespread lung crackles, and inability to lie flat. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A. The patient has stable heart failure and can continue routine follow-up", "is_correct": false},
+{"text": "B. The patient may have acute decompensated heart failure with pulmonary oedema and requires emergency management", "is_correct": true},
+{"text": "C. The findings indicate uncomplicated allergic rhinitis", "is_correct": false},
+{"text": "D. The patient is showing signs of improved cardiac function", "is_correct": false}
+],
+"rationale": "Severe hypoxaemia, widespread crackles, and orthopnoea suggest acute pulmonary congestion due to decompensated heart failure. The patient requires urgent emergency management, respiratory support as indicated, and close monitoring.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "A patient with asthma arrives at a health facility with severe breathlessness, marked use of accessory muscles, and difficulty speaking in full sentences. The patient becomes increasingly drowsy. What is the best interpretation?",
+"choices": [
+{"text": "A. The asthma attack is resolving because the patient is becoming quiet", "is_correct": false},
+{"text": "B. The patient may be developing life-threatening respiratory failure and requires immediate emergency escalation", "is_correct": true},
+{"text": "C. The patient is experiencing only mild anxiety", "is_correct": false},
+{"text": "D. The patient should be discharged once wheezing decreases", "is_correct": false}
+],
+"rationale": "Drowsiness during a severe asthma exacerbation is a danger sign and may indicate hypoxaemia, exhaustion, or rising carbon dioxide levels. Immediate emergency escalation and management are required; reduced wheezing in a deteriorating patient does not necessarily indicate improvement.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Respiratory Nursing",
+"question_text": "A household contact of a patient with pulmonary tuberculosis develops a persistent cough and weight loss. The contact has not attended screening because there is no fever. What should the community health nurse conclude?",
+"choices": [
+{"text": "A. Tuberculosis is excluded because fever is absent", "is_correct": false},
+{"text": "B. The contact should be assessed for TB because persistent cough and weight loss are concerning even without fever", "is_correct": true},
+{"text": "C. The contact requires only malaria treatment", "is_correct": false},
+{"text": "D. Screening is unnecessary if the person is still able to work", "is_correct": false}
+],
+"rationale": "Tuberculosis does not always present with fever, and persistent cough and weight loss warrant investigation, especially in a household contact. Contact screening and appropriate diagnostic evaluation are important for early detection and interruption of transmission.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "A patient with type 1 diabetes presents with abdominal pain, vomiting, deep rapid breathing, and a fruity odour on the breath. The blood glucose is markedly elevated. Which condition is most likely?",
+"choices": [
+{"text": "A. Diabetic ketoacidosis", "is_correct": true},
+{"text": "B. Hypoglycaemia", "is_correct": false},
+{"text": "C. Uncomplicated hypertension", "is_correct": false},
+{"text": "D. Chronic constipation", "is_correct": false}
+],
+"rationale": "Diabetic ketoacidosis is characterised by insulin deficiency, hyperglycaemia, ketone production, and metabolic acidosis. Abdominal pain, vomiting, dehydration, and Kussmaul breathing are important clinical features requiring emergency hospital management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Endocrine Nursing",
+"question_text": "A patient with diabetes is brought to a clinic with confusion, profound dehydration, and very high blood glucose. There is no obvious history of vomiting or abdominal pain. Which acute complication should be considered?",
+"choices": [
+{"text": "A. Hyperosmolar hyperglycaemic state", "is_correct": true},
+{"text": "B. Mild hypoglycaemia", "is_correct": false},
+{"text": "C. Acute allergic rhinitis", "is_correct": false},
+{"text": "D. Uncomplicated iron-deficiency anaemia", "is_correct": false}
+],
+"rationale": "Hyperosmolar hyperglycaemic state commonly presents with severe hyperglycaemia, profound dehydration, and altered mental status, particularly in people with type 2 diabetes. It is a life-threatening emergency requiring urgent hospital assessment and carefully monitored treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "A patient with chronic kidney disease presents with muscle weakness and palpitations. Laboratory results show a markedly elevated serum potassium level. What is the nurse's priority concern?",
+"choices": [
+{"text": "A. Risk of life-threatening cardiac arrhythmias", "is_correct": true},
+{"text": "B. Development of uncomplicated skin allergy", "is_correct": false},
+{"text": "C. Increased risk of dental caries", "is_correct": false},
+{"text": "D. Reduced risk of cardiac complications", "is_correct": false}
+],
+"rationale": "Severe hyperkalaemia can disrupt cardiac electrical conduction and cause potentially fatal arrhythmias. The patient requires urgent medical assessment, cardiac monitoring, and emergency management according to protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Renal Nursing",
+"question_text": "A patient develops acute kidney injury following several days of severe diarrhoea and vomiting. The patient is hypotensive and has reduced urine output. Which mechanism most likely contributed to the kidney injury?",
+"choices": [
+{"text": "A. Reduced renal perfusion due to fluid volume depletion", "is_correct": true},
+{"text": "B. Increased oxygen delivery to the kidneys", "is_correct": false},
+{"text": "C. Excessive production of insulin by the pancreas", "is_correct": false},
+{"text": "D. Increased filtration caused by improved circulation", "is_correct": false}
+],
+"rationale": "Severe fluid loss can reduce circulating blood volume and renal perfusion, causing prerenal acute kidney injury. Prompt assessment and appropriate correction of the underlying fluid deficit are important, while avoiding inappropriate fluid administration in patients with contraindications.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Gastrointestinal Nursing",
+"question_text": "A patient presents with severe abdominal pain, fever, a rigid abdomen, and signs of shock. Which action should the nurse prioritise?",
+"choices": [
+{"text": "A. Give oral laxatives and discharge the patient", "is_correct": false},
+{"text": "B. Suspect an acute abdominal emergency, initiate urgent assessment and stabilisation, and arrange immediate referral", "is_correct": true},
+{"text": "C. Encourage the patient to eat a heavy meal", "is_correct": false},
+{"text": "D. Delay referral until the patient passes stool", "is_correct": false}
+],
+"rationale": "A rigid abdomen, fever, severe pain, and shock may indicate peritonitis or another life-threatening abdominal condition. Immediate emergency assessment, stabilisation, and referral are essential because delay may lead to serious complications or death.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A child treated for malaria returns to the CHPS compound with worsening weakness, deep breathing, pallor, and inability to drink. The caregiver reports that the child has been taking the prescribed medication. What is the most appropriate interpretation?",
+"choices": [
+{"text": "A. The child is recovering normally and requires no further assessment", "is_correct": false},
+{"text": "B. The child may have severe malaria or another serious complication and requires urgent referral", "is_correct": true},
+{"text": "C. The child should be given only a multivitamin supplement", "is_correct": false},
+{"text": "D. The caregiver should stop all treatment and wait at home", "is_correct": false}
+],
+"rationale": "Inability to drink, marked pallor, and deep breathing are danger signs that may indicate severe malaria, severe anaemia, metabolic acidosis, or another serious illness. The child requires immediate reassessment and emergency referral even if treatment has already been started.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A patient with suspected typhoid fever has persistent fever, severe abdominal pain, abdominal rigidity, and sudden deterioration. Which complication should the nurse suspect?",
+"choices": [
+{"text": "A. Intestinal perforation with possible peritonitis", "is_correct": true},
+{"text": "B. Uncomplicated allergic conjunctivitis", "is_correct": false},
+{"text": "C. Chronic migraine", "is_correct": false},
+{"text": "D. Simple muscular strain", "is_correct": false}
+],
+"rationale": "Severe abdominal pain, rigidity, and sudden deterioration in a patient with suspected typhoid fever may indicate intestinal perforation and peritonitis. This is a surgical emergency requiring immediate referral and hospital management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infectious Diseases",
+"question_text": "A patient living with HIV has stopped antiretroviral therapy for several months and now presents with persistent fever, weight loss, and a prolonged cough. What is the nurse's most appropriate interpretation and action?",
+"choices": [
+{"text": "A. The symptoms are expected and require no investigation", "is_correct": false},
+{"text": "B. The patient may have an opportunistic infection, including tuberculosis, and requires prompt clinical assessment", "is_correct": true},
+{"text": "C. The patient should restart medication at a doubled dose without review", "is_correct": false},
+{"text": "D. The patient should be excluded from all healthcare services", "is_correct": false}
+],
+"rationale": "Interrupting antiretroviral therapy can lead to viral rebound and declining immune function, increasing the risk of opportunistic infections. The patient requires prompt assessment for TB and other infections, alongside professional review of ART adherence and treatment re-engagement.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "A district community health nurse reviews data showing that many adults in a rural community have uncontrolled hypertension. Interviews reveal high salt consumption, low physical activity, poor clinic attendance, and limited awareness of complications. Which intervention would best address the problem?",
+"choices": [
+{"text": "A. Provide health education alone without follow-up or screening", "is_correct": false},
+{"text": "B. Develop a community-based programme combining screening, lifestyle education, follow-up, adherence support, and referral", "is_correct": true},
+{"text": "C. Focus exclusively on treating patients after they develop stroke", "is_correct": false},
+{"text": "D. Stop blood pressure monitoring and rely on self-reported symptoms", "is_correct": false}
+],
+"rationale": "The findings indicate multiple behavioural, service-access, and knowledge-related determinants of uncontrolled hypertension. A comprehensive community intervention should combine prevention, early detection, continuity of care, adherence support, and referral to address these factors.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "A community health nurse notices that several patients with diabetes in a farming community have foot ulcers. Many walk barefoot and delay seeking care because they believe small wounds will heal naturally. Which intervention should receive the greatest emphasis?",
+"choices": [
+{"text": "A. Encourage barefoot walking to strengthen the feet", "is_correct": false},
+{"text": "B. Provide foot-care education, promote protective footwear, encourage daily inspection, and establish early referral for wounds", "is_correct": true},
+{"text": "C. Advise patients to apply any available chemical to open wounds", "is_correct": false},
+{"text": "D. Recommend that patients avoid all follow-up appointments", "is_correct": false}
+],
+"rationale": "Barefoot walking and delayed wound assessment increase the risk of injury, infection, and diabetic foot complications. A community-based prevention programme should promote protective footwear, daily inspection, appropriate foot hygiene, and early clinical assessment of wounds.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Management of Chronic Diseases",
+"question_text": "A district health team finds that patients with hypertension frequently discontinue medication when they feel well, resulting in poor blood pressure control. Which strategy is most likely to improve long-term outcomes?",
+"choices": [
+{"text": "A. Provide repeated adherence counselling, monitor blood pressure, identify barriers, and strengthen follow-up systems", "is_correct": true},
+{"text": "B. Tell patients that hypertension is cured when symptoms disappear", "is_correct": false},
+{"text": "C. Encourage patients to use medication only when they experience dizziness", "is_correct": false},
+{"text": "D. Restrict health education to patients who develop complications", "is_correct": false}
+],
+"rationale": "Hypertension often has no symptoms, so patients may mistakenly believe that treatment is no longer necessary when they feel well. Ongoing counselling, blood pressure monitoring, identification of adherence barriers, and reliable follow-up support sustained disease control.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
