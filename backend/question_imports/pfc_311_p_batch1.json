@@ -1,0 +1,1068 @@
+{
+"courses": [
+{
+"course_code": "PFC-311-P",
+"course_title": "Patient/Family-Centred Care Study",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Family Assessment in Mental Health",
+"Therapeutic Communication with Families",
+"Genograms and Ecomaps in Psychiatric Care",
+"Patient Advocacy in Mental Health",
+"Family Psychoeducation",
+"Family-Centred Mental Health Care Principles",
+"Cultural Sensitivity in Mental Health",
+"Caregiver Burden and Support",
+"Community Reintegration",
+"Stigma Reduction Strategies in Ghana"
+],
+"questions": [
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "What is the primary purpose of conducting a family assessment in psychiatric nursing?",
+"choices": [
+{"text": "To identify family strengths, relationships, stressors and support systems that influence the patient's mental health", "is_correct": true},
+{"text": "To determine which family member is responsible for the patient's mental illness", "is_correct": false},
+{"text": "To establish whether the family can independently manage all psychiatric treatment", "is_correct": false},
+{"text": "To replace the patient's individual psychiatric assessment", "is_correct": false}
+],
+"rationale": "Family assessment identifies the relationships, resources, communication patterns and stressors that may influence mental health and recovery. It complements, rather than replaces, the individual assessment of the patient.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "Which information is most important when assessing the support available to a patient with schizophrenia in a Ghanaian extended family?",
+"choices": [
+{"text": "The number of relatives living in the same household only", "is_correct": false},
+{"text": "The relatives who are willing and able to provide practical, emotional and treatment-related support", "is_correct": true},
+{"text": "The occupation of the oldest family member", "is_correct": false},
+{"text": "The number of family members who have completed formal education", "is_correct": false}
+],
+"rationale": "The presence of many relatives does not automatically mean that effective support is available. The nurse should identify who is willing, capable and available to assist with treatment, daily activities and emotional support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "A patient with recurrent depressive episodes lives with an aunt who provides most of the daily care. What should the psychiatric nurse establish first during family assessment?",
+"choices": [
+{"text": "Whether the aunt has authority to make every treatment decision", "is_correct": false},
+{"text": "Whether the patient's extended family agrees with the diagnosis", "is_correct": false},
+{"text": "The patient's consent and the aunt's actual caregiving role and support needs", "is_correct": true},
+{"text": "Whether the aunt can prevent all future depressive episodes", "is_correct": false}
+],
+"rationale": "The nurse should clarify the patient's preferences, consent and the aunt's actual role in providing care. Kinship or caregiving relationships do not automatically give a relative unrestricted authority over a patient's healthcare decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "Which finding most strongly suggests that family functioning may be affecting a patient's psychiatric recovery?",
+"choices": [
+{"text": "Family members attend a scheduled psychoeducation session", "is_correct": false},
+{"text": "The patient has a regular follow-up appointment", "is_correct": false},
+{"text": "A relative asks the nurse for information about medication side effects", "is_correct": false},
+{"text": "Family members repeatedly threaten, blame and exclude the patient because of the illness", "is_correct": true}
+],
+"rationale": "Repeated blaming, threats and exclusion may increase psychological stress and undermine treatment engagement. The nurse should assess family relationships and address harmful interaction patterns without assuming that the family is the sole cause of the illness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "During assessment, a nurse discovers that a patient's relatives disagree about who should provide care after discharge. What is the most appropriate initial response?",
+"choices": [
+{"text": "Ask the oldest relative to make the decision without further discussion", "is_correct": false},
+{"text": "Explore the patient's preferences and facilitate a discussion about realistic caregiving responsibilities", "is_correct": true},
+{"text": "Discharge the patient immediately to the relative who lives closest", "is_correct": false},
+{"text": "Exclude the family from all discharge planning", "is_correct": false}
+],
+"rationale": "Discharge planning should consider the patient's preferences, safety and available support. A facilitated discussion can clarify responsibilities and prevent unrealistic expectations or conflict after discharge.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "Which communication technique involves encouraging a family member to explain feelings and experiences without interruption or premature judgement?",
+"choices": [
+{"text": "Giving advice", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false},
+{"text": "Active listening", "is_correct": true},
+{"text": "False reassurance", "is_correct": false}
+],
+"rationale": "Active listening involves attending carefully, allowing the person to speak and responding in a way that demonstrates understanding. It helps establish trust and provides the nurse with more accurate information about family concerns.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A mother says, 'I am afraid my son will never recover from his mental illness.' Which response by the psychiatric nurse is most therapeutic?",
+"choices": [
+{"text": "You should not think negatively because everything will be fine.", "is_correct": false},
+{"text": "Many people have worse problems than your son.", "is_correct": false},
+{"text": "You need to accept the illness and stop worrying.", "is_correct": false},
+{"text": "It sounds as though you are worried about his future. What concerns you most?", "is_correct": true}
+],
+"rationale": "The response acknowledges the mother's feelings and uses an open-ended question to explore her concerns. False reassurance and comparisons may discourage further communication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "During a family meeting, two relatives begin shouting at each other about the patient's treatment. What should the nurse do first?",
+"choices": [
+{"text": "Calmly interrupt, establish respectful communication and redirect attention to the patient's care needs", "is_correct": true},
+{"text": "Allow the argument to continue until one relative wins", "is_correct": false},
+{"text": "Immediately terminate all family involvement in treatment", "is_correct": false},
+{"text": "Support the relative who appears more knowledgeable", "is_correct": false}
+],
+"rationale": "The nurse should maintain a safe and respectful environment while preventing the discussion from becoming harmful. Redirecting the conversation towards the patient's needs supports constructive problem-solving.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A relative asks whether the patient has disclosed private information during an individual counselling session. The patient has not consented to disclosure. What is the nurse's best response?",
+"choices": [
+{"text": "Reveal the information because the relative provides financial support", "is_correct": false},
+{"text": "Explain that the patient's confidentiality must be respected and discuss what information may be shared with consent", "is_correct": true},
+{"text": "Tell the relative that the patient has no right to keep information private", "is_correct": false},
+{"text": "Provide the information if the relative promises not to disclose it", "is_correct": false}
+],
+"rationale": "Confidentiality remains important in psychiatric care, including when relatives are involved in caregiving. Information should be shared with appropriate consent, subject to applicable legal and safety exceptions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms and Ecomaps in Psychiatric Care",
+"question_text": "What is the main purpose of a genogram in psychiatric family assessment?",
+"choices": [
+{"text": "To record only the patient's current medication", "is_correct": false},
+{"text": "To measure the severity of psychiatric symptoms", "is_correct": false},
+{"text": "To illustrate family structure, relationships and relevant patterns across generations", "is_correct": true},
+{"text": "To determine the patient's legal eligibility for admission", "is_correct": false}
+],
+"rationale": "A genogram is a diagrammatic representation of family structure and relationships across generations. It may help identify patterns such as psychiatric illness, substance use, conflict and supportive relationships.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms and Ecomaps in Psychiatric Care",
+"question_text": "A psychiatric nurse wants to identify how a patient's family interacts with the church, school, workplace and community mental health team. Which assessment tool is most appropriate?",
+"choices": [
+{"text": "Mental Status Examination", "is_correct": false},
+{"text": "Ecomap", "is_correct": true},
+{"text": "Pain assessment chart", "is_correct": false},
+{"text": "Medication administration record", "is_correct": false}
+],
+"rationale": "An ecomap illustrates the relationships between an individual or family and external systems in their environment. It can identify supportive connections, stressful relationships and gaps in community resources.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms and Ecomaps in Psychiatric Care",
+"question_text": "A genogram shows several relatives across three generations with a history of alcohol dependence and recurrent depression. How should the nurse interpret this finding?",
+"choices": [
+{"text": "It proves that the patient will develop both conditions", "is_correct": false},
+{"text": "It confirms that the family caused the patient's illness", "is_correct": false},
+{"text": "It means that psychiatric treatment will not be effective", "is_correct": false},
+{"text": "It identifies a family history that may inform further assessment of risk and protective factors", "is_correct": true}
+],
+"rationale": "A family history may indicate genetic, environmental and shared psychosocial factors that warrant further assessment. It does not establish a diagnosis or determine that the patient will develop the same conditions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "What is patient advocacy in psychiatric nursing?",
+"choices": [
+{"text": "Supporting and protecting the patient's rights, dignity, preferences and access to appropriate care", "is_correct": true},
+{"text": "Making all treatment decisions on behalf of every psychiatric patient", "is_correct": false},
+{"text": "Ensuring that relatives have more rights than the patient", "is_correct": false},
+{"text": "Preventing patients from questioning healthcare decisions", "is_correct": false}
+],
+"rationale": "Patient advocacy involves protecting patients' rights and promoting informed participation in care. It includes supporting dignity, autonomy, safety and access to appropriate services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "A patient with a mental health condition tells the nurse that relatives are forcing the patient to accept a treatment without explanation. What is the nurse's priority action?",
+"choices": [
+{"text": "Tell the patient to obey the relatives to avoid family conflict", "is_correct": false},
+{"text": "Ask the relatives to sign a treatment consent form immediately", "is_correct": false},
+{"text": "Assess the patient's decision-making capacity for the specific decision, explain available information and support informed participation", "is_correct": true},
+{"text": "Assume that the patient lacks capacity because of the psychiatric diagnosis", "is_correct": false}
+],
+"rationale": "A psychiatric diagnosis does not automatically mean that a person lacks decision-making capacity. The nurse should support informed decision-making and ensure that consent and any applicable legal safeguards are respected.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "A patient reports being physically assaulted by a caregiver at home and says they are afraid to return there. What should the psychiatric nurse do first?",
+"choices": [
+{"text": "Arrange discharge because family care is generally preferable", "is_correct": false},
+{"text": "Prioritise immediate safety, assess the alleged harm and activate appropriate safeguarding and reporting procedures", "is_correct": true},
+{"text": "Ask the patient to forgive the caregiver before discharge", "is_correct": false},
+{"text": "Ignore the report unless another family member confirms it", "is_correct": false}
+],
+"rationale": "An allegation of physical abuse requires prompt assessment and protection from further harm. The nurse should follow applicable safeguarding, documentation and reporting procedures rather than dismissing the patient's account.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "Which statement best reflects the Mental Health Act, 2012 (Act 846) in relation to the rights of people receiving mental healthcare in Ghana?",
+"choices": [
+{"text": "People with mental illness automatically lose their civil rights during treatment", "is_correct": false},
+{"text": "Relatives have unrestricted authority to determine every aspect of psychiatric care", "is_correct": false},
+{"text": "Confidentiality and dignity apply only to patients receiving outpatient care", "is_correct": false},
+{"text": "People with mental health conditions are entitled to legal protections and respect for their rights and dignity", "is_correct": true}
+],
+"rationale": "Act 846 provides a legal framework for mental healthcare and safeguards the rights and dignity of people with mental disorders. Psychiatric treatment must be delivered in accordance with applicable legal requirements and professional standards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "What is the primary objective of family psychoeducation in mental health care?",
+"choices": [
+{"text": "To make relatives responsible for preventing every relapse", "is_correct": false},
+{"text": "To replace professional psychiatric treatment with family supervision", "is_correct": false},
+{"text": "To improve family understanding of mental illness, treatment, coping and relapse prevention", "is_correct": true},
+{"text": "To persuade families to conceal psychiatric diagnoses from the community", "is_correct": false}
+],
+"rationale": "Family psychoeducation provides understandable information about mental disorders, treatment options, early warning signs and coping strategies. It helps families support recovery while recognising that clinical responsibility remains with the healthcare team.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A family caring for a patient with bipolar disorder asks how they can recognise an approaching manic episode. Which information should the nurse emphasise?",
+"choices": [
+{"text": "Early changes such as reduced need for sleep, increased energy, rapid speech and unusual risk-taking", "is_correct": true},
+{"text": "The presence of a fever as the only reliable warning sign", "is_correct": false},
+{"text": "The patient's refusal to attend social events as the defining feature", "is_correct": false},
+{"text": "The absence of all emotional expression", "is_correct": false}
+],
+"rationale": "Reduced need for sleep, increased energy, pressured speech and risky behaviour may indicate emerging mania. Recognising changes early allows the family to seek clinical review before symptoms become more severe.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A father believes that his daughter's schizophrenia is caused entirely by witchcraft and plans to stop her prescribed medication. What is the nurse's most appropriate response?",
+"choices": [
+{"text": "Ridicule the father's belief and refuse further discussion", "is_correct": false},
+{"text": "Acknowledge his concerns respectfully, explore his understanding and explain the importance of evidence-based treatment", "is_correct": true},
+{"text": "Agree that medication is unnecessary if the family prays regularly", "is_correct": false},
+{"text": "Discharge the patient so the family can choose any treatment", "is_correct": false}
+],
+"rationale": "Respectful exploration of cultural beliefs helps maintain trust and creates an opportunity for accurate health education. The nurse should explain that prayer or other supportive practices should not replace clinically indicated treatment or lead to unsafe interruption of medication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A patient with schizophrenia has been readmitted several times after stopping medication. The family reports that they do not understand the treatment plan or early signs of relapse. Which intervention is most appropriate?",
+"choices": [
+{"text": "Blame the family for failing to control the patient", "is_correct": false},
+{"text": "Recommend permanent institutional care without further assessment", "is_correct": false},
+{"text": "Tell the family to increase the medication dose whenever symptoms appear", "is_correct": false},
+{"text": "Provide structured psychoeducation on the illness, medication adherence, adverse effects and relapse warning signs", "is_correct": true}
+],
+"rationale": "Structured psychoeducation can improve understanding of treatment and help families recognise early signs of relapse. Medication changes should be made by authorised clinicians following assessment, not independently by relatives.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "Which principle is central to family-centred mental healthcare?",
+"choices": [
+{"text": "Healthcare professionals should make all decisions without consulting the patient", "is_correct": false},
+{"text": "The family must always determine the patient's treatment preferences", "is_correct": false},
+{"text": "Care should respect the patient's preferences while involving appropriate family support with consent", "is_correct": true},
+{"text": "Family involvement should be avoided in all psychiatric conditions", "is_correct": false}
+],
+"rationale": "Family-centred care recognises the importance of family relationships and support while preserving the patient's rights and autonomy. Family participation should be appropriate to the patient's wishes, consent, safety and clinical circumstances.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A patient with severe depression wants their sister involved in discharge planning. What should the nurse do?",
+"choices": [
+{"text": "Exclude the sister because psychiatric information must never be shared", "is_correct": false},
+{"text": "Obtain the patient's consent and involve the sister in relevant discharge discussions", "is_correct": true},
+{"text": "Give the sister unrestricted access to the patient's entire medical record", "is_correct": false},
+{"text": "Allow the sister to decide whether the patient needs further treatment", "is_correct": false}
+],
+"rationale": "The patient's consent allows appropriate family involvement in discharge planning and support. Information should be shared on a need-to-know basis while maintaining confidentiality and professional boundaries.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A nurse is planning care for a patient whose family lives in a rural Ghanaian community. Which approach best demonstrates family-centred care?",
+"choices": [
+{"text": "Develop a plan that ignores transport costs and the family's availability", "is_correct": false},
+{"text": "Require the family to attend every hospital appointment regardless of distance", "is_correct": false},
+{"text": "Transfer all clinical responsibilities to the patient's relatives", "is_correct": false},
+{"text": "Collaborate with the patient and family to develop a realistic plan that considers local resources and access to care", "is_correct": true}
+],
+"rationale": "Family-centred care should be responsive to the patient's social circumstances and the resources available to the family. Collaboration with community-based services may improve continuity of care and reduce barriers such as transport costs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A patient with a history of self-harm is being discharged. The family wants to supervise the patient continuously, but the patient says this feels intrusive. Which approach is most appropriate?",
+"choices": [
+{"text": "Develop an individualised safety and follow-up plan that balances the patient's dignity, preferences and assessed level of risk", "is_correct": true},
+{"text": "Allow the family to impose unrestricted surveillance without discussing it with the patient", "is_correct": false},
+{"text": "Disregard the family's concerns because the patient has expressed disagreement", "is_correct": false},
+{"text": "Cancel discharge planning until the patient accepts every family demand", "is_correct": false}
+],
+"rationale": "A safe discharge plan should be based on an individual risk assessment and should respect the patient's dignity and rights. The nurse should work with the patient and appropriate supporters to agree on proportionate safety measures and follow-up.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "What does cultural sensitivity mean in psychiatric nursing?",
+"choices": [
+{"text": "Accepting every cultural practice regardless of its safety", "is_correct": false},
+{"text": "Assuming that all members of a cultural group hold identical beliefs", "is_correct": false},
+{"text": "Providing care that respectfully considers the patient's cultural beliefs, values and practices without compromising safety", "is_correct": true},
+{"text": "Avoiding discussions about culture during psychiatric assessment", "is_correct": false}
+],
+"rationale": "Cultural sensitivity requires nurses to understand how beliefs and practices may influence the experience of illness and help-seeking. Care should be respectful while remaining consistent with clinical safety, human rights and professional standards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A patient with psychosis says that a spiritual experience is part of their religious belief. What should the nurse do during assessment?",
+"choices": [
+{"text": "Immediately classify the experience as a delusion", "is_correct": false},
+{"text": "Explore the experience, its cultural context, associated distress, impact on functioning and other symptoms", "is_correct": true},
+{"text": "Tell the patient that religious beliefs are not permitted in psychiatric care", "is_correct": false},
+{"text": "Assume that the experience requires no assessment because it is religious", "is_correct": false}
+],
+"rationale": "A belief or spiritual experience should not be labelled pathological solely because it is unfamiliar to the nurse. Assessment should consider cultural context, the patient's level of distress, functional impairment and the presence of other symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A family takes a patient with severe depression to a traditional healer before seeking hospital care. Which response by the psychiatric nurse is most appropriate?",
+"choices": [
+{"text": "Refuse to assess the patient because traditional healing was previously used", "is_correct": false},
+{"text": "Tell the family that their cultural practices are backward", "is_correct": false},
+{"text": "Encourage the family to abandon all cultural practices before treatment can begin", "is_correct": false},
+{"text": "Explore the family's help-seeking experience respectfully and assess whether any practices have caused harm or delayed necessary care", "is_correct": true}
+],
+"rationale": "Respectful discussion helps the nurse understand the family's beliefs and previous treatment experiences. The nurse should identify harmful practices or delays while encouraging timely access to appropriate mental healthcare.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A patient is brought to a mental health facility after relatives report that the patient has been restrained at home for several days to remove evil spirits. The patient is dehydrated and has injuries. What is the nurse's priority?",
+"choices": [
+{"text": "Assess and manage immediate physical health risks, ensure safety and activate appropriate safeguarding procedures", "is_correct": true},
+{"text": "Ask the relatives to continue the practice until the patient becomes calm", "is_correct": false},
+{"text": "Focus only on the patient's spiritual beliefs", "is_correct": false},
+{"text": "Delay treatment until a traditional healer approves it", "is_correct": false}
+],
+"rationale": "Dehydration and injuries require prompt clinical assessment and treatment, while continued restraint may expose the patient to further harm. Cultural beliefs should be approached respectfully but cannot justify unsafe or abusive practices.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "What is caregiver burden in mental healthcare?",
+"choices": [
+{"text": "The financial cost of psychiatric medication only", "is_correct": false},
+{"text": "The patient's refusal to participate in treatment", "is_correct": false},
+{"text": "The physical, emotional, social and financial strain experienced by people providing care", "is_correct": true},
+{"text": "The number of relatives available to visit the patient", "is_correct": false}
+],
+"rationale": "Caregiver burden refers to the demands and strain associated with providing care to a person with illness or disability. It may affect the caregiver's physical health, psychological wellbeing, social life and finances.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "A woman caring for her adult son with chronic schizophrenia reports exhaustion, poor sleep and inability to continue her usual work. What should the nurse do?",
+"choices": [
+{"text": "Tell her that caregiving is a family duty and she must continue", "is_correct": false},
+{"text": "Assess her caregiving strain and explore respite, family support and available community resources", "is_correct": true},
+{"text": "Advise her to stop all contact with her son immediately", "is_correct": false},
+{"text": "Assume that her symptoms are unrelated to caregiving", "is_correct": false}
+],
+"rationale": "The caregiver's symptoms suggest significant physical, emotional and social strain. Assessment should identify practical support options, including shared caregiving responsibilities, respite where available and community services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "During a home visit, a caregiver says, 'I am so tired that sometimes I feel I cannot continue caring for him.' What should the psychiatric nurse assess first?",
+"choices": [
+{"text": "Whether the caregiver is willing to abandon the patient", "is_correct": false},
+{"text": "Whether the caregiver has enough money to employ a private nurse", "is_correct": false},
+{"text": "Whether the family agrees with the psychiatric diagnosis", "is_correct": false},
+{"text": "The caregiver's immediate safety, emotional distress and ability to continue providing safe care", "is_correct": true}
+],
+"rationale": "The statement may indicate severe caregiver distress and requires sensitive exploration rather than judgement. The nurse should assess immediate safety and caregiving capacity before developing a support plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "A caregiver reports increasing stress, financial difficulty and conflict with other relatives about caring for a patient with bipolar disorder. Which intervention is most appropriate?",
+"choices": [
+{"text": "Facilitate family problem-solving, assess financial and social needs, and connect the caregiver with appropriate support services", "is_correct": true},
+{"text": "Tell the caregiver to manage the problem without involving other relatives", "is_correct": false},
+{"text": "Recommend that the patient remain in hospital indefinitely", "is_correct": false},
+{"text": "Advise the caregiver to conceal the situation from all health professionals", "is_correct": false}
+],
+"rationale": "Caregiver strain often has several interacting causes, including financial pressure and unequal distribution of responsibilities. A coordinated support plan can address practical needs, strengthen family communication and improve continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "What is the main goal of community reintegration for a person recovering from a mental disorder?",
+"choices": [
+{"text": "To ensure that the person avoids all social contact", "is_correct": false},
+{"text": "To transfer all responsibility for treatment to relatives", "is_correct": false},
+{"text": "To support the person's participation in family, social, educational and occupational life", "is_correct": true},
+{"text": "To prevent the person from returning to previous community activities", "is_correct": false}
+],
+"rationale": "Community reintegration aims to promote social inclusion, independence and participation in meaningful daily activities. It also supports recovery by reducing isolation and improving access to community resources.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A patient recovering from a first episode of psychosis wants to return to vocational training. Which nursing action best supports reintegration?",
+"choices": [
+{"text": "Advise the patient to avoid all educational activities permanently", "is_correct": false},
+{"text": "Assess readiness and support a gradual return to training alongside appropriate clinical follow-up", "is_correct": true},
+{"text": "Require the patient to disclose the diagnosis publicly before returning", "is_correct": false},
+{"text": "Tell the training institution to exclude the patient until medication is stopped", "is_correct": false}
+],
+"rationale": "A gradual, individualised return to meaningful activities can support recovery and independence. Planning should consider the patient's preferences, current functioning, available support and need for ongoing treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A patient is discharged from a psychiatric unit to a rural community but has missed two follow-up appointments because transport is expensive. What should the nurse do?",
+"choices": [
+{"text": "Document the missed appointments and close the patient's case", "is_correct": false},
+{"text": "Assume that the patient is no longer interested in recovery", "is_correct": false},
+{"text": "Advise the family to discontinue medication until transport becomes available", "is_correct": false},
+{"text": "Explore barriers and coordinate feasible follow-up through available community mental health and primary healthcare services", "is_correct": true}
+],
+"rationale": "Transport costs are a practical barrier that can interrupt continuity of care. The nurse should explore feasible follow-up arrangements, including coordination with available district and community-based services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A community mental health nurse visits a patient with schizophrenia and discovers that neighbours refuse to interact with the patient because they believe the illness is contagious. Which intervention is most appropriate?",
+"choices": [
+{"text": "With the patient's agreement, provide accurate mental health education and promote safe community participation", "is_correct": true},
+{"text": "Tell the patient to move permanently to another community", "is_correct": false},
+{"text": "Encourage the neighbours to isolate the patient", "is_correct": false},
+{"text": "Avoid addressing the misconception because it is a community belief", "is_correct": false}
+],
+"rationale": "Schizophrenia is not transmitted through ordinary social contact, and community education can challenge this misconception. The nurse should protect confidentiality and involve the patient in decisions about any community engagement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "What is mental health stigma?",
+"choices": [
+{"text": "The process of diagnosing a mental disorder", "is_correct": false},
+{"text": "The provision of psychological support to families", "is_correct": false},
+{"text": "Negative attitudes, stereotypes and discriminatory behaviour directed towards people with mental health conditions", "is_correct": true},
+{"text": "The use of community services for psychiatric follow-up", "is_correct": false}
+],
+"rationale": "Mental health stigma involves negative beliefs, attitudes and discriminatory actions towards people with mental health conditions. It can discourage help-seeking, reduce social participation and interfere with recovery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A patient with depression refuses to attend a community mental health clinic because of fear that neighbours will identify the patient as mentally ill. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Tell the patient that community opinions should not matter", "is_correct": false},
+{"text": "Respect the patient's concern, discuss confidentiality and explore acceptable ways to access treatment", "is_correct": true},
+{"text": "Inform neighbours about the diagnosis to encourage understanding", "is_correct": false},
+{"text": "Discontinue follow-up because the patient is unwilling to attend", "is_correct": false}
+],
+"rationale": "Fear of stigma can prevent people from accessing essential mental healthcare. The nurse should address confidentiality concerns and collaborate with the patient to identify acceptable and accessible treatment options.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "Which community intervention is most likely to reduce misconceptions about mental illness in a Ghanaian district?",
+"choices": [
+{"text": "Keeping mental health information restricted to psychiatric hospitals", "is_correct": false},
+{"text": "Using frightening stories to discourage people from developing mental disorders", "is_correct": false},
+{"text": "Encouraging families to hide relatives with mental illness", "is_correct": false},
+{"text": "Conducting culturally appropriate mental health education through community leaders, schools and local health services", "is_correct": true}
+],
+"rationale": "Community education can correct misinformation and encourage early help-seeking when it is culturally appropriate and accessible. Collaboration with trusted community structures can strengthen participation and reduce discriminatory attitudes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A recovered patient with bipolar disorder wants to share a personal recovery story during a community mental health awareness programme. What should the nurse do?",
+"choices": [
+{"text": "Support voluntary participation after discussing informed consent, privacy and possible consequences of public disclosure", "is_correct": true},
+{"text": "Require the patient to share the story because it will benefit the community", "is_correct": false},
+{"text": "Disclose the patient's diagnosis without permission to make the presentation credible", "is_correct": false},
+{"text": "Prevent the patient from participating because people with bipolar disorder cannot speak about recovery", "is_correct": false}
+],
+"rationale": "Lived-experience accounts can challenge stereotypes and promote hope, but participation must be voluntary. The patient should understand the implications of sharing personal health information and retain control over what is disclosed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "A patient with alcohol use disorder is supported by a grandmother, an uncle and two adult siblings. The relatives disagree about whether the patient should return home. Which assessment approach provides the most complete understanding of the situation?",
+"choices": [
+{"text": "Interview only the oldest relative because age determines the family's position", "is_correct": false},
+{"text": "Assess only the patient's medication history and ignore family relationships", "is_correct": false},
+{"text": "Explore family roles, relationships, safety concerns, available resources and the patient's own preferences", "is_correct": true},
+{"text": "Ask the family to decide before assessing the patient's needs", "is_correct": false}
+],
+"rationale": "A comprehensive assessment should identify the roles and concerns of relevant family members while keeping the patient's needs and preferences central. This is particularly important in extended-family systems where caregiving responsibilities may be shared or contested.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "During a family meeting, a relative says, 'We have tried everything, and nothing is working.' The nurse responds, 'You sound discouraged after trying many approaches.' Which communication technique is demonstrated?",
+"choices": [
+{"text": "Confrontation", "is_correct": false},
+{"text": "Reflection of feeling", "is_correct": true},
+{"text": "Giving false reassurance", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false}
+],
+"rationale": "Reflection of feeling identifies and communicates the emotion expressed by another person. It helps family members feel understood and may encourage them to explore their concerns further.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A patient's relatives insist that the patient is lazy rather than depressed. The nurse wants to challenge this belief without damaging the therapeutic relationship. Which response is best?",
+"choices": [
+{"text": "Your family does not understand mental illness, so you should stop making comments.", "is_correct": false},
+{"text": "You are correct; depression is simply a lack of discipline.", "is_correct": false},
+{"text": "There is no need to discuss the patient's behaviour.", "is_correct": false},
+{"text": "What changes have you noticed in the patient's mood, energy and daily functioning since the illness began?", "is_correct": true}
+],
+"rationale": "The open-ended question encourages relatives to describe observable changes rather than rely on judgemental labels. The nurse can then provide education about depressive symptoms and their effect on functioning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genograms and Ecomaps in Psychiatric Care",
+"question_text": "When constructing a genogram, which information is particularly relevant to psychiatric assessment?",
+"choices": [
+{"text": "Family relationships and relevant histories of mental illness, substance use and major health conditions", "is_correct": true},
+{"text": "The exact income of every relative, regardless of relevance", "is_correct": false},
+{"text": "Only the names of family members who live in the same house", "is_correct": false},
+{"text": "The patient's current psychiatric symptoms without any family information", "is_correct": false}
+],
+"rationale": "A genogram can document family structure, significant relationships and patterns of health conditions across generations. This information can guide further assessment but should be collected respectfully and with attention to confidentiality.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genograms and Ecomaps in Psychiatric Care",
+"question_text": "An ecomap shows that a patient's family has strong support from a church group but experiences frequent conflict with neighbours and has little contact with health services. What should the nurse conclude?",
+"choices": [
+{"text": "The church group should take over all psychiatric treatment", "is_correct": false},
+{"text": "The family has no useful support because it experiences neighbour conflict", "is_correct": false},
+{"text": "The family has an existing support resource, but links with formal healthcare and other community systems may need strengthening", "is_correct": true},
+{"text": "The ecomap proves that the patient does not need professional treatment", "is_correct": false}
+],
+"rationale": "An ecomap identifies both supportive and stressful connections in the family's environment. The church may be a useful source of social support, while stronger links with appropriate health services may improve continuity of care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "A patient admitted for a mental disorder asks the nurse to explain the reason for a proposed treatment. What is the nurse's responsibility?",
+"choices": [
+{"text": "Tell the patient that treatment decisions are not open to discussion", "is_correct": false},
+{"text": "Provide understandable information and support the patient's participation in decision-making, subject to applicable clinical and legal requirements", "is_correct": true},
+{"text": "Ask the family to explain the treatment instead", "is_correct": false},
+{"text": "Withhold all information to prevent the patient from becoming anxious", "is_correct": false}
+],
+"rationale": "Patients should receive appropriate information about their care and be supported to participate in decisions. The nurse should communicate in a way the patient can understand and observe relevant consent and legal requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "A patient with a mental disorder is being mocked by staff members because of unusual behaviour. What is the nurse's priority responsibility?",
+"choices": [
+{"text": "Ignore the behaviour because the patient is receiving psychiatric treatment", "is_correct": false},
+{"text": "Ask the patient to tolerate the comments to avoid conflict", "is_correct": false},
+{"text": "Discuss the matter only with the patient's relatives", "is_correct": false},
+{"text": "Protect the patient's dignity, address the inappropriate conduct and follow relevant professional reporting procedures", "is_correct": true}
+],
+"rationale": "People receiving psychiatric care are entitled to respectful treatment and protection from degrading behaviour. The nurse should address the conduct and use appropriate reporting channels to promote accountability and patient safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "A patient with acute psychosis refuses food and fluids, appears confused and is becoming physically weak. What should the nurse do first?",
+"choices": [
+{"text": "Assess immediate physical risks, hydration and decision-making capacity, and urgently escalate for clinical review", "is_correct": true},
+{"text": "Accept the refusal without further assessment because all patients have the right to refuse", "is_correct": false},
+{"text": "Ask relatives to force the patient to eat and drink", "is_correct": false},
+{"text": "Wait until the next routine appointment before taking action", "is_correct": false}
+],
+"rationale": "The patient's confusion and physical deterioration may indicate an urgent medical and psychiatric problem. The nurse must assess immediate risks and obtain prompt clinical review while respecting applicable consent and legal safeguards.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "Which teaching method is most appropriate when providing psychoeducation to relatives with different levels of literacy?",
+"choices": [
+{"text": "Use complex medical terminology without explanation", "is_correct": false},
+{"text": "Provide only written materials and avoid discussion", "is_correct": false},
+{"text": "Use clear language, practical examples, discussion and teach-back to check understanding", "is_correct": true},
+{"text": "Ask the most educated relative to learn everything and teach the others without support", "is_correct": false}
+],
+"rationale": "Clear language and practical examples make information accessible to people with different educational backgrounds. Teach-back allows the nurse to check understanding and correct misunderstandings before the family applies the information.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A family caring for a patient with schizophrenia reports that the patient has become increasingly withdrawn, stopped sleeping regularly and is neglecting personal hygiene. What should the nurse advise?",
+"choices": [
+{"text": "Wait until the patient becomes aggressive before seeking help", "is_correct": false},
+{"text": "Recognise these changes as possible warning signs and arrange timely clinical assessment", "is_correct": true},
+{"text": "Double the prescribed antipsychotic dose without consulting the clinician", "is_correct": false},
+{"text": "Stop all family contact to prevent further symptoms", "is_correct": false}
+],
+"rationale": "Changes in sleep, social interaction and self-care may signal deterioration or relapse and should be assessed. Families should seek professional advice rather than independently changing prescribed medication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A patient with a mental health condition identifies a close friend, rather than a biological relative, as the preferred support person. What should the nurse do?",
+"choices": [
+{"text": "Reject the request because only biological relatives can support psychiatric patients", "is_correct": false},
+{"text": "Allow the friend to access all confidential information automatically", "is_correct": false},
+{"text": "Ask the patient's family to choose a different support person", "is_correct": false},
+{"text": "Respect the patient's choice and clarify the friend's role and the scope of information the patient consents to share", "is_correct": true}
+],
+"rationale": "Family-centred care should recognise the patient's own understanding of family and support relationships. A trusted friend may be involved when the patient wishes, while confidentiality and appropriate boundaries remain essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A family insists that a patient with depression should stop working because they believe employment will worsen the illness. The patient wishes to continue working and the clinical assessment identifies no immediate safety concern. What is the best nursing approach?",
+"choices": [
+{"text": "Explore the family's concerns, support the patient's informed preference and discuss reasonable workplace coping strategies", "is_correct": true},
+{"text": "Instruct the patient to stop working because relatives always know what is best", "is_correct": false},
+{"text": "Tell the family that their concerns are irrelevant", "is_correct": false},
+{"text": "Disclose the patient's diagnosis to the employer without consent", "is_correct": false}
+],
+"rationale": "The patient's preferences and functioning should guide collaborative care planning. The nurse can address family concerns and support practical strategies without unnecessarily restricting the patient's independence or disclosing confidential information.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A patient requests time for prayer during a psychiatric admission. There is no immediate clinical or safety reason preventing it. What should the nurse do?",
+"choices": [
+{"text": "Refuse because spiritual practices have no place in psychiatric care", "is_correct": false},
+{"text": "Require the patient to attend a religious service chosen by the nurse", "is_correct": false},
+{"text": "Respect the request and facilitate reasonable spiritual practice without interfering with essential care", "is_correct": true},
+{"text": "Assume that the patient no longer requires medication", "is_correct": false}
+],
+"rationale": "Respect for individual spiritual preferences can support dignity and person-centred care. Spiritual practices may be accommodated when safe and should not be treated as a replacement for clinically indicated treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A patient reports that family members believe mental illness brings shame to the household and want the condition kept secret. The patient is willing to receive treatment but fears rejection. What should the nurse do?",
+"choices": [
+{"text": "Tell the patient to disclose the diagnosis to the entire community", "is_correct": false},
+{"text": "Explore the patient's concerns, protect confidentiality and offer supportive education to selected relatives with the patient's consent", "is_correct": true},
+{"text": "Agree that treatment should be hidden from all healthcare workers", "is_correct": false},
+{"text": "Inform the family that they are not allowed to express cultural concerns", "is_correct": false}
+],
+"rationale": "The nurse should recognise the effect of stigma while protecting the patient's privacy and access to care. With consent, targeted family education may help reduce fear and improve support without forcing public disclosure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "A caregiver has become socially isolated because most of the time is spent supervising a relative with severe mental illness. Which outcome would best indicate that a caregiver support intervention has been effective?",
+"choices": [
+{"text": "The caregiver has stopped discussing personal difficulties", "is_correct": false},
+{"text": "The caregiver accepts responsibility for every aspect of treatment", "is_correct": false},
+{"text": "The caregiver avoids all social activities to remain available", "is_correct": false},
+{"text": "The caregiver reports improved coping, access to support and a more manageable distribution of responsibilities", "is_correct": true}
+],
+"rationale": "Effective caregiver support should reduce excessive strain and strengthen coping and access to practical assistance. It should not increase isolation or transfer all clinical responsibilities to the caregiver.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "A family caregiver tells the nurse that medication costs, transport expenses and lost income are making it difficult to support a relative with a chronic mental disorder. What should the nurse do first?",
+"choices": [
+{"text": "Assess the specific financial and access barriers and identify appropriate social, financial and health-service support options", "is_correct": true},
+{"text": "Tell the caregiver to borrow money without assessing other options", "is_correct": false},
+{"text": "Advise the patient to stop attending follow-up appointments", "is_correct": false},
+{"text": "Promise that all psychiatric services and medicines are fully covered by NHIS", "is_correct": false}
+],
+"rationale": "The nurse should identify the actual barriers and help the family explore available support and service options. NHIS benefits and coverage conditions should be verified rather than assuming that every psychiatric service or medicine is covered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A patient recovering from a prolonged psychiatric admission wants to return to the family home, but relatives fear that the patient may relapse. Which plan best supports safe community reintegration?",
+"choices": [
+{"text": "Discharge without discussing follow-up because the patient has improved", "is_correct": false},
+{"text": "Keep the patient away from the family indefinitely", "is_correct": false},
+{"text": "Develop a collaborative discharge plan covering medication, warning signs, crisis contacts, follow-up and family support", "is_correct": true},
+{"text": "Ask relatives to change prescribed treatment whenever they notice unusual behaviour", "is_correct": false}
+],
+"rationale": "A structured discharge plan supports continuity of care and prepares the patient and family to respond to changes in mental health. It should identify follow-up arrangements, early warning signs and appropriate routes for urgent assistance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A patient with a mental disorder has been stable for several months but is excluded from a local skills-training programme because organisers believe psychiatric patients are dangerous. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Agree with the organisers to prevent possible complaints", "is_correct": false},
+{"text": "Support the patient's rights, challenge discriminatory assumptions and facilitate safe inclusion with the patient's consent", "is_correct": true},
+{"text": "Advise the patient to conceal all personal information and attend without any support", "is_correct": false},
+{"text": "Recommend that the patient avoid all community programmes", "is_correct": false}
+],
+"rationale": "Unjustified exclusion can reinforce stigma and interfere with recovery and social participation. The nurse should advocate for fair inclusion while respecting privacy and considering any genuine individual support or safety needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A community leader asks a mental health nurse to explain whether a person with schizophrenia can live safely with relatives. Which response is most appropriate?",
+"choices": [
+{"text": "People with schizophrenia must always live in psychiatric hospitals", "is_correct": false},
+{"text": "Schizophrenia is contagious, so relatives should avoid close contact", "is_correct": false},
+{"text": "All people with schizophrenia have the same level of risk", "is_correct": false},
+{"text": "Many people with schizophrenia can live in the community with appropriate treatment, support and individualised assessment", "is_correct": true}
+],
+"rationale": "Many people with schizophrenia can participate in family and community life when they receive appropriate treatment and support. Care planning should be individualised rather than based on stereotypes about the diagnosis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A district mental health team plans a stigma-reduction programme in a community where some residents believe mental illness is caused by spiritual forces. Which strategy is most appropriate?",
+"choices": [
+{"text": "Engage community stakeholders respectfully, provide accurate information and promote early access to professional mental healthcare", "is_correct": true},
+{"text": "Publicly condemn all residents who hold spiritual explanations", "is_correct": false},
+{"text": "Avoid involving community leaders because they may influence local beliefs", "is_correct": false},
+{"text": "Encourage residents to use spiritual treatment instead of clinical assessment", "is_correct": false}
+],
+"rationale": "Respectful engagement can create opportunities to correct misinformation and improve trust in mental health services. Community leaders and other trusted stakeholders may support referral and inclusion when they understand the importance of safe, evidence-based care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "A patient with recurrent psychosis lives in a household where the main caregiver is elderly, another relative has alcohol dependence and the family has limited income. Which assessment finding should most strongly influence discharge planning?",
+"choices": [
+{"text": "The family has several members who share the same surname", "is_correct": false},
+{"text": "The patient has relatives who live in different towns", "is_correct": false},
+{"text": "The available caregiver may have limited capacity, while substance use and financial stress may affect the safety and reliability of home support", "is_correct": true},
+{"text": "The family has a strong preference for traditional meals", "is_correct": false}
+],
+"rationale": "The combination of limited caregiver capacity, substance-related difficulties and financial strain may affect the feasibility of the proposed discharge arrangement. The nurse should assess these risks and identify additional support before finalising the plan.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A family reports that a patient with schizophrenia has stopped medication because of severe muscle stiffness and tremors. What should the psychiatric nurse advise?",
+"choices": [
+{"text": "Tell the patient to restart the same dose without assessment", "is_correct": false},
+{"text": "Explain that these symptoms may be medication-related and arrange prompt clinical assessment rather than advising unsupervised medication changes", "is_correct": true},
+{"text": "Tell the family to reduce the dose by half without contacting the prescriber", "is_correct": false},
+{"text": "Assure the family that muscle stiffness and tremors are always harmless", "is_correct": false}
+],
+"rationale": "Muscle stiffness and tremors may represent extrapyramidal adverse effects or another clinically significant problem. Prompt assessment is needed so that an authorised clinician can determine the appropriate management and support safe adherence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A patient with severe depression has expressed suicidal thoughts. The family requests that the nurse keep this information secret because they fear community shame. What is the nurse's priority action?",
+"choices": [
+{"text": "Agree to secrecy because family reputation is important", "is_correct": false},
+{"text": "Discharge the patient to prevent the family from becoming embarrassed", "is_correct": false},
+{"text": "Ask the family to manage the risk without involving the clinical team", "is_correct": false},
+{"text": "Urgently assess suicide risk, maintain safety and share necessary information with appropriate members of the care team according to professional and legal requirements", "is_correct": true}
+],
+"rationale": "Suicidal thoughts require prompt risk assessment and appropriate safety measures. Confidentiality is important, but necessary disclosure may be justified to protect the patient from serious harm and must follow applicable professional and legal requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A patient with depression says that prayer is an important part of coping, while the family wants prayer to replace prescribed treatment. Which response best demonstrates culturally sensitive care?",
+"choices": [
+{"text": "Explore the patient's spiritual preferences and explain that prayer may provide support but should not replace clinically indicated treatment", "is_correct": true},
+{"text": "Tell the patient that prayer is evidence of poor treatment adherence", "is_correct": false},
+{"text": "Agree that medication should be stopped if the family has faith", "is_correct": false},
+{"text": "Prevent the family from discussing spiritual matters with the patient", "is_correct": false}
+],
+"rationale": "The nurse should respect the patient's spiritual coping practices while explaining the role of evidence-based treatment. Supportive religious practices should not result in unsafe discontinuation of prescribed care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "A caregiver of a patient with chronic mental illness says that other relatives promise to help but rarely attend appointments or share household responsibilities. Which intervention is most likely to improve the situation?",
+"choices": [
+{"text": "Tell the main caregiver to accept that no one else will help", "is_correct": false},
+{"text": "Transfer all caregiving responsibilities to the patient", "is_correct": false},
+{"text": "Facilitate a family discussion to identify specific, realistic tasks that willing relatives can undertake", "is_correct": true},
+{"text": "Ask the relatives to provide financial support without discussing other needs", "is_correct": false}
+],
+"rationale": "Clearly defined responsibilities can make family support more practical and reduce the burden on one caregiver. The plan should be realistic and should respect each person's willingness and capacity to contribute.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A patient with a history of substance use disorder is preparing for discharge. The patient's previous social group regularly used alcohol and other substances, and the patient wants to avoid relapse. Which intervention should receive priority in the reintegration plan?",
+"choices": [
+{"text": "Encourage the patient to return immediately to the same social group", "is_correct": false},
+{"text": "Develop a relapse-prevention plan that identifies triggers, strengthens supportive relationships and links the patient with appropriate follow-up services", "is_correct": true},
+{"text": "Advise the patient to avoid all human contact permanently", "is_correct": false},
+{"text": "Tell the family to monitor the patient without professional follow-up", "is_correct": false}
+],
+"rationale": "Identifying triggers and strengthening protective relationships are important components of relapse prevention. Community follow-up and appropriate support services can help the patient maintain recovery while rebuilding social connections.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A nurse notices that a patient with a mental disorder is repeatedly described as 'mad' during a ward handover. Which action best promotes stigma-free psychiatric care?",
+"choices": [
+{"text": "Ignore the language because it is commonly used in the community", "is_correct": false},
+{"text": "Use the same term to ensure that everyone understands the patient's condition", "is_correct": false},
+{"text": "Avoid discussing the patient's diagnosis during clinical handover", "is_correct": false},
+{"text": "Encourage respectful, person-first language that describes the patient's condition without reducing the person to a label", "is_correct": true}
+],
+"rationale": "Stigmatising language can reinforce negative attitudes and undermine patient dignity. Person-first language recognises the individual as a person rather than defining them by a diagnosis or derogatory label.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "A patient with bipolar disorder is being considered for discharge. The spouse is willing to provide care, but the patient reports previous emotional abuse and says they do not feel safe returning home. The spouse denies the allegation. What should the nurse do?",
+"choices": [
+{"text": "Discharge the patient to the spouse because the spouse has agreed to provide care", "is_correct": false},
+{"text": "Treat the allegation as unimportant unless the spouse confirms it", "is_correct": false},
+{"text": "Assess the patient's safety privately, explore the reported abuse and develop a discharge plan that does not expose the patient to avoidable harm", "is_correct": true},
+{"text": "Ask the patient to apologise to the spouse before considering alternative arrangements", "is_correct": false}
+],
+"rationale": "The patient's report of feeling unsafe requires private assessment and careful safeguarding consideration. Family willingness to provide care does not override the need for a safe discharge environment and respect for the patient's rights.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "A patient is brought to a psychiatric facility by relatives who demand admission, but the patient is calm and requests an explanation of the proposed assessment. What should the nurse do?",
+"choices": [
+{"text": "Explain the assessment process, evaluate the patient's condition and ensure that any admission decision follows applicable legal and clinical requirements", "is_correct": true},
+{"text": "Admit the patient automatically because relatives have requested it", "is_correct": false},
+{"text": "Refuse to speak to the patient because the relatives initiated the visit", "is_correct": false},
+{"text": "Allow the relatives to determine whether the patient has a mental disorder", "is_correct": false}
+],
+"rationale": "A relative's request does not by itself establish the clinical or legal basis for admission. The patient should receive an appropriate assessment and explanation, with any admission or compulsory care following applicable safeguards under Ghanaian law.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A family caring for a patient with recurrent depression asks whether they should encourage the patient to discuss suicidal thoughts. Which response is most appropriate?",
+"choices": [
+{"text": "They should avoid the topic because discussing suicide always causes suicidal behaviour", "is_correct": false},
+{"text": "They should ask calmly and directly about suicidal thoughts and seek urgent professional help if risk is identified", "is_correct": true},
+{"text": "They should wait until the patient attempts suicide before discussing it", "is_correct": false},
+{"text": "They should promise not to tell healthcare professionals about any suicidal thoughts", "is_correct": false}
+],
+"rationale": "Asking directly and calmly about suicidal thoughts does not create suicidal intent and may help identify risk. Any concern should be taken seriously and referred promptly for appropriate assessment and safety planning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A patient with a mental disorder has difficulty understanding a complex treatment explanation. The nurse notices that the family answers every question on the patient's behalf. Which approach best supports family-centred and person-centred care?",
+"choices": [
+{"text": "Direct all communication to the family because the patient has difficulty understanding", "is_correct": false},
+{"text": "Exclude the family and stop providing information to the patient", "is_correct": false},
+{"text": "Ask the family to make all decisions without assessing the patient's abilities", "is_correct": false},
+{"text": "Communicate directly with the patient using accessible language, assess understanding and involve supportive relatives appropriately with consent", "is_correct": true}
+],
+"rationale": "Communication should be adapted to the patient's needs rather than automatically transferring decision-making to relatives. The nurse should assess the patient's understanding and decision-making ability for the specific issue while facilitating appropriate support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity in Mental Health",
+"question_text": "A patient from a community where family elders traditionally make major household decisions wants to make an independent choice about psychiatric follow-up. The family objects. Which response best balances cultural respect and patient autonomy?",
+"choices": [
+{"text": "Respect the patient's right to participate in decisions while exploring family concerns and facilitating respectful discussion if the patient agrees", "is_correct": true},
+{"text": "Allow the elders to decide because cultural authority always takes precedence", "is_correct": false},
+{"text": "Exclude the family from all future discussions regardless of the patient's wishes", "is_correct": false},
+{"text": "Tell the patient that independent decisions are inappropriate in an extended family", "is_correct": false}
+],
+"rationale": "Cultural sensitivity does not require the nurse to disregard the patient's autonomy. The nurse can respect family structures while supporting the patient's informed choices and involving relatives according to the patient's preferences and applicable legal requirements.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "A caregiver reports severe exhaustion and says that they sometimes leave a dependent patient alone for long periods because they cannot cope. The patient has missed medication and meals. What is the nurse's priority?",
+"choices": [
+{"text": "Tell the caregiver to try harder because the patient depends on them", "is_correct": false},
+{"text": "Focus only on teaching the caregiver about medication administration", "is_correct": false},
+{"text": "Assess the patient's immediate safety and basic care needs, then arrange urgent support and a realistic caregiving plan", "is_correct": true},
+{"text": "Discharge the patient from follow-up because the family is not cooperating", "is_correct": false}
+],
+"rationale": "Missed meals and medication, together with prolonged periods without supervision, may place the patient at risk. Immediate safety and care needs must be assessed, while the caregiver requires support and a plan that does not depend on unsustainable responsibilities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A district mental health team is planning follow-up for a patient with a chronic mental disorder who lives far from the regional psychiatric facility. Which arrangement best supports continuity of care?",
+"choices": [
+{"text": "Require all follow-up to take place at the regional psychiatric facility regardless of access barriers", "is_correct": false},
+{"text": "Coordinate with available district and community mental health services, including appropriate primary healthcare links and specialist referral when needed", "is_correct": true},
+{"text": "Transfer the patient's treatment responsibilities entirely to the family", "is_correct": false},
+{"text": "Stop follow-up once the patient returns home", "is_correct": false}
+],
+"rationale": "Coordination across specialist, district and community services can improve access and continuity, particularly for people living far from specialist facilities. CHPS and other primary healthcare structures may support appropriate community linkage, while complex needs require referral to suitable services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A patient with a mental health condition is denied employment solely because the employer believes that anyone receiving psychiatric treatment is dangerous. Which response best reflects mental health advocacy?",
+"choices": [
+{"text": "Advise the patient to accept exclusion because employers are entitled to rely on stereotypes", "is_correct": false},
+{"text": "Disclose the patient's clinical history to the employer to prove that the patient is stable", "is_correct": false},
+{"text": "Recommend that the patient avoid future employment opportunities", "is_correct": false},
+{"text": "Support the patient's dignity and fair treatment, challenge discriminatory assumptions and protect confidential health information", "is_correct": true}
+],
+"rationale": "A psychiatric diagnosis alone does not establish that a person is unsafe or unable to work. Advocacy should challenge unjustified discrimination while protecting the patient's privacy and supporting appropriate participation in employment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "A patient with schizophrenia has stopped attending follow-up appointments. The mother says the patient is being influenced by a cousin who discourages medication, while the cousin says the medication causes severe side effects. The patient reports feeling better without treatment. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Blame the cousin and instruct the family to prevent further contact", "is_correct": false},
+{"text": "Accept the patient's decision without assessing the consequences", "is_correct": false},
+{"text": "Explore the patient's treatment experience, assess possible adverse effects and beliefs, and facilitate a collaborative review with the clinical team", "is_correct": true},
+{"text": "Tell the mother to administer medication secretly", "is_correct": false}
+],
+"rationale": "The disagreement may reflect concerns about adverse effects, differing beliefs and the patient's current perception of recovery. A collaborative assessment can clarify the reasons for non-adherence and support an informed treatment plan without coercive or deceptive practices.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A father becomes tearful during a family meeting and says he feels guilty because he did not recognise his daughter's depression earlier. What is the most therapeutic nursing response?",
+"choices": [
+{"text": "You should have noticed the symptoms earlier.", "is_correct": false},
+{"text": "You are not allowed to feel guilty because the treatment is now available.", "is_correct": false},
+{"text": "Let us stop discussing your feelings and focus only on medication.", "is_correct": false},
+{"text": "This has been difficult for you. Would you like to talk about what has been troubling you?", "is_correct": true}
+],
+"rationale": "The response acknowledges the father's distress and offers an opportunity to express his feelings. A non-judgemental approach can reduce guilt and strengthen the therapeutic relationship.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Advocacy in Mental Health",
+"question_text": "A patient with a mental disorder is unable to communicate a clear treatment preference at the time of an acute emergency. Relatives disagree about what should be done. What should guide the nurse's immediate actions?",
+"choices": [
+{"text": "The opinion of whichever relative speaks most confidently", "is_correct": false},
+{"text": "The patient's immediate clinical needs, applicable legal and ethical requirements, and appropriate authorised clinical decision-making", "is_correct": true},
+{"text": "The preference of the relative who pays for treatment", "is_correct": false},
+{"text": "A decision to delay all care until every relative agrees", "is_correct": false}
+],
+"rationale": "In an emergency, necessary assessment and care should not be delayed solely because relatives disagree. The team must act within applicable legal and professional requirements, taking account of the patient's rights, safety and decision-making circumstances.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family Psychoeducation",
+"question_text": "A family believes that a patient with bipolar disorder should stop medication as soon as mood symptoms improve. Which teaching point is most important?",
+"choices": [
+{"text": "Medication should be stopped whenever the patient feels normal", "is_correct": false},
+{"text": "Medication is needed only during hospital admission", "is_correct": false},
+{"text": "Maintenance treatment may be necessary to reduce relapse risk, and any change should be discussed with the treating clinician", "is_correct": true},
+{"text": "Relatives should independently adjust the dose according to the patient's mood", "is_correct": false}
+],
+"rationale": "Improvement in symptoms does not necessarily mean that the underlying condition no longer requires treatment. The patient and family should understand the agreed treatment plan and seek clinical advice before any medication change.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A patient with a mental disorder is preparing for discharge. The family wants the patient to return home immediately, but the patient has no stable accommodation and has not yet been linked to community follow-up. What should the nurse prioritise?",
+"choices": [
+{"text": "Complete a coordinated discharge assessment addressing accommodation, safety, support and continuity of care before finalising the plan", "is_correct": true},
+{"text": "Discharge immediately because family preference is the most important consideration", "is_correct": false},
+{"text": "Keep the patient in hospital indefinitely without reassessing needs", "is_correct": false},
+{"text": "Ask the patient to find accommodation independently after discharge", "is_correct": false}
+],
+"rationale": "A safe discharge requires realistic arrangements for accommodation, support and follow-up. Family preference is relevant but cannot replace assessment of the patient's actual needs and the availability of appropriate community resources.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A community mental health nurse discovers that families in a district frequently delay seeking care because they first consult spiritual or traditional healers. Some healers are willing to refer people with severe symptoms to health facilities. Which strategy is most appropriate?",
+"choices": [
+{"text": "Ban all contact between traditional healers and health professionals", "is_correct": false},
+{"text": "Encourage healers to manage severe psychiatric emergencies without clinical referral", "is_correct": false},
+{"text": "Avoid community engagement because traditional beliefs cannot change", "is_correct": false},
+{"text": "Build respectful referral relationships with willing community stakeholders while emphasising timely clinical assessment and patient safety", "is_correct": true}
+],
+"rationale": "Constructive engagement may improve early referral and reduce delays in accessing mental healthcare. Collaboration must not endorse harmful practices or replace evidence-based assessment and treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family Assessment in Mental Health",
+"question_text": "A nurse is assessing a patient whose relatives report that the patient has become withdrawn and stopped attending family gatherings. The patient says the relatives frequently criticise and threaten them. Which additional information is most important before planning family involvement?",
+"choices": [
+{"text": "Whether the relatives have enough space in their home", "is_correct": false},
+{"text": "Whether the patient feels safe with the relatives and freely agrees to their involvement", "is_correct": true},
+{"text": "Whether the relatives can attend every hospital appointment", "is_correct": false},
+{"text": "Whether the family has a history of attending religious services", "is_correct": false}
+],
+"rationale": "The patient's report raises concerns about possible emotional abuse and the safety of family involvement. The nurse should explore these concerns privately and obtain the patient's informed agreement before arranging family participation, unless a relevant safety or legal exception applies.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication with Families",
+"question_text": "A family member repeatedly interrupts the patient during a care-planning meeting and answers questions on the patient's behalf. What should the nurse do?",
+"choices": [
+{"text": "Politely establish that the patient should have an opportunity to speak and invite the relative to contribute at an appropriate time", "is_correct": true},
+{"text": "Allow the relative to answer every question because family members know the patient best", "is_correct": false},
+{"text": "End the meeting and refuse future family participation", "is_correct": false},
+{"text": "Ignore the patient and continue discussing care with the relative", "is_correct": false}
+],
+"rationale": "The nurse should ensure that the patient has a meaningful opportunity to express preferences and concerns. Family contributions may be valuable, but they should not silence or displace the patient.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Reintegration",
+"question_text": "A patient with a mental disorder has returned to the community but reports loneliness, unemployment and rejection by relatives. The patient is clinically stable and wishes to become more independent. Which plan is most appropriate?",
+"choices": [
+{"text": "Focus exclusively on medication and avoid discussing social needs", "is_correct": false},
+{"text": "Advise the patient to remain at home until all relatives accept the diagnosis", "is_correct": false},
+{"text": "Develop a recovery-oriented plan that links the patient with appropriate psychosocial, vocational and community support while maintaining clinical follow-up", "is_correct": true},
+{"text": "Encourage the patient to discontinue treatment to demonstrate independence", "is_correct": false}
+],
+"rationale": "Recovery involves more than symptom control and includes social participation, meaningful activity and personal independence. A coordinated plan should address psychosocial needs while maintaining appropriate clinical follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Caregiver Burden and Support",
+"question_text": "A caregiver tells the nurse that the patient has become increasingly aggressive at home and that the caregiver is afraid of being injured. The caregiver also says there are young children in the household. What is the priority nursing action?",
+"choices": [
+{"text": "Tell the caregiver that aggression is expected and should be tolerated", "is_correct": false},
+{"text": "Assess immediate risk to the patient and household members, arrange urgent clinical review and develop a safety plan", "is_correct": true},
+{"text": "Advise the caregiver to physically restrain the patient whenever aggression occurs", "is_correct": false},
+{"text": "Ask the caregiver to wait until the next routine appointment", "is_correct": false}
+],
+"rationale": "Increasing aggression and the presence of children create potential immediate safety concerns. The nurse should assess the level of risk, arrange appropriate urgent clinical intervention and plan for the safety of everyone involved.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction Strategies in Ghana",
+"question_text": "A patient with a history of mental illness asks whether the diagnosis must be announced during a community meeting organised by a local leader. Which response best protects the patient's rights?",
+"choices": [
+{"text": "The diagnosis must be announced because community education is more important than privacy", "is_correct": false},
+{"text": "The family should decide whether the diagnosis is disclosed", "is_correct": false},
+{"text": "The nurse should disclose the diagnosis only to prevent rumours", "is_correct": false},
+{"text": "The patient should control personal disclosure, and any community education should avoid identifying the patient without appropriate consent", "is_correct": true}
+],
+"rationale": "Mental health awareness should not come at the expense of an individual's confidentiality and dignity. The patient should decide whether personal health information is shared, subject to applicable legal and safety exceptions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family-Centred Mental Health Care Principles",
+"question_text": "A patient with recurrent psychosis is ready for discharge. The family wants to provide care at home, but the patient prefers to stay with an adult sibling who has offered support. The sibling's home is safe and the patient agrees to involve the sibling in care planning. What is the best decision-making approach?",
+"choices": [
+{"text": "Automatically discharge the patient to the parents because biological relatives have priority", "is_correct": false},
+{"text": "Allow the parents to decide because they are the oldest family members", "is_correct": false},
+{"text": "Assess the safety and suitability of the proposed arrangement and develop the plan with the patient and chosen support person", "is_correct": true},
+{"text": "Reject both options because patients with psychosis cannot choose where to live", "is_correct": false}
+],
+"rationale": "The patient's preferences should be considered alongside safety, support capacity and clinical needs. Family-centred care does not automatically give decision-making priority to biological or senior relatives.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
