@@ -1,0 +1,756 @@
+{
+"courses": [
+{
+"course_code": "CPA-122-M",
+"course_title": "Child Protection and Abuse",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Types of Child Abuse",
+"Signs and Symptoms of Abuse",
+"Risk Factors for Child Abuse",
+"Ghana Child Protection Laws and Policies",
+"Mandatory Reporting and Referral Pathways",
+"Midwife's Role in Child Protection",
+"Child Trafficking and Child Labour",
+"Cultural Practices Affecting Children",
+"Psychological Impact of Abuse",
+"Antenatal and Postnatal Safeguarding"
+],
+"questions": [
+{
+"topic": "Types of Child Abuse",
+"question_text": "According to the Children's Act, 1998 (Act 560), which of the following defines a child in Ghana?",
+"choices": [
+{"text": "A person below 16 years of age", "is_correct": false},
+{"text": "A person below 18 years of age", "is_correct": true},
+{"text": "A person below 21 years of age", "is_correct": false},
+{"text": "A person who has not completed basic education", "is_correct": false}
+],
+"rationale": "Section 1 of the Children's Act, 1998 (Act 560) defines a child as a person below 18 years. This definition is central to the application of child protection laws and safeguarding responsibilities in Ghana.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "Which statement best describes physical child abuse?",
+"choices": [
+{"text": "Failure to provide a child with adequate educational opportunities", "is_correct": false},
+{"text": "Deliberately causing physical injury or bodily harm to a child", "is_correct": true},
+{"text": "Allowing a child to participate in recreational activities", "is_correct": false},
+{"text": "Providing a child with appropriate discipline and guidance", "is_correct": false}
+],
+"rationale": "Physical abuse involves the intentional use of physical force that causes or may cause injury to a child. Examples include hitting, burning, shaking and other forms of assault.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "Which of the following is an example of emotional abuse?",
+"choices": [
+{"text": "Providing a child with balanced meals", "is_correct": false},
+{"text": "Consistently humiliating, threatening or rejecting a child", "is_correct": true},
+{"text": "Taking a child for routine immunisation", "is_correct": false},
+{"text": "Encouraging a child to attend school", "is_correct": false}
+],
+"rationale": "Emotional abuse involves persistent behaviour that harms a child's emotional development, self-worth or psychological wellbeing. It may include rejection, intimidation, threats, humiliation and persistent verbal hostility.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "What is child neglect?",
+"choices": [
+{"text": "Failure by a caregiver to provide essential care and protection when able to do so", "is_correct": true},
+{"text": "Allowing a child to express personal opinions", "is_correct": false},
+{"text": "Providing appropriate medical treatment", "is_correct": false},
+{"text": "Encouraging a child to participate in age-appropriate activities", "is_correct": false}
+],
+"rationale": "Child neglect occurs when a caregiver fails to meet a child's essential physical, emotional, educational or medical needs. It may expose the child to preventable illness, injury and developmental harm.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "Which of the following is an example of child sexual abuse?",
+"choices": [
+{"text": "Teaching a child about personal hygiene", "is_correct": false},
+{"text": "Involving a child in sexual activity or exploitation", "is_correct": true},
+{"text": "Providing age-appropriate reproductive health education", "is_correct": false},
+{"text": "Taking a child for a routine physical examination with appropriate consent and safeguards", "is_correct": false}
+],
+"rationale": "Child sexual abuse involves involving a child in sexual activity or exploitation, whether or not physical contact occurs. A child cannot legally provide valid consent to sexual activity with an adult.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Which principle is paramount in decisions concerning the welfare of a child under the Children's Act, 1998 (Act 560)?",
+"choices": [
+{"text": "The financial interests of the caregiver", "is_correct": false},
+{"text": "The best interests of the child", "is_correct": true},
+{"text": "The preference of community leaders in every circumstance", "is_correct": false},
+{"text": "The convenience of the institution providing care", "is_correct": false}
+],
+"rationale": "Section 2 of Act 560 establishes the best interests of the child as the paramount consideration in matters concerning children. Decisions should therefore prioritise the child's safety, welfare, development and rights.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Which section of Ghana's Children's Act, 1998 (Act 560), requires a person with information about child abuse or a child in need of care and protection to report the matter to the Department?",
+"choices": [
+{"text": "Section 5", "is_correct": false},
+{"text": "Section 17", "is_correct": true},
+{"text": "Section 45", "is_correct": false},
+{"text": "Section 90", "is_correct": false}
+],
+"rationale": "Section 17 of Act 560 provides that any person with information about child abuse or a child in need of care and protection shall report the matter to the Department. This establishes a broad reporting responsibility rather than limiting reporting to healthcare professionals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Which Ghanaian institution is primarily responsible for investigating child protection concerns under the Children's Act through its social welfare structures?",
+"choices": [
+{"text": "Department of Social Welfare", "is_correct": true},
+{"text": "Ghana Revenue Authority", "is_correct": false},
+{"text": "Electoral Commission", "is_correct": false},
+{"text": "National Road Safety Authority", "is_correct": false}
+],
+"rationale": "The Department of Social Welfare, operating through the relevant district structures, has responsibilities for investigating child protection concerns and coordinating care and protection. It works with healthcare facilities, the police and other relevant agencies.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Which Ghanaian legislation specifically addresses juvenile justice and the treatment of children in conflict with the law?",
+"choices": [
+{"text": "Juvenile Justice Act, 2003 (Act 653)", "is_correct": true},
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": false},
+{"text": "National Health Insurance Act", "is_correct": false},
+{"text": "Labour Act, 2003 (Act 651) only", "is_correct": false}
+],
+"rationale": "The Juvenile Justice Act, 2003 (Act 653), provides the legal framework for dealing with children in conflict with the law. It promotes procedures that recognise children's age, welfare and rehabilitation needs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "What is the primary role of the Domestic Violence and Victim Support Unit (DOVVSU) of the Ghana Police Service in child protection?",
+"choices": [
+{"text": "Providing financial loans to families", "is_correct": false},
+{"text": "Investigating abuse and supporting victims of violence", "is_correct": true},
+{"text": "Issuing birth certificates", "is_correct": false},
+{"text": "Conducting routine school examinations", "is_correct": false}
+],
+"rationale": "DOVVSU investigates cases involving domestic violence, child abuse and other offences against vulnerable persons. It also facilitates referrals for medical care, social welfare support and other specialised services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "Under the Children's Act, 1998 (Act 560), what is the minimum age for admission of a child to ordinary employment?",
+"choices": [
+{"text": "10 years", "is_correct": false},
+{"text": "13 years", "is_correct": false},
+{"text": "15 years", "is_correct": true},
+{"text": "18 years", "is_correct": false}
+],
+"rationale": "Section 89 of Act 560 sets 15 years as the minimum age for admission to employment. The Act separately permits certain forms of light work from age 13, subject to conditions that protect the child's health and education.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "At what minimum age may a child undertake light work under the Children's Act, 1998 (Act 560), provided the work does not harm the child's health or development or interfere with schooling?",
+"choices": [
+{"text": "10 years", "is_correct": false},
+{"text": "13 years", "is_correct": true},
+{"text": "15 years", "is_correct": false},
+{"text": "18 years", "is_correct": false}
+],
+"rationale": "Section 90 of Act 560 sets 13 years as the minimum age for light work. Such work must not be harmful to the child's health or development or interfere with school attendance and educational progress.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "What is the minimum legal age for marriage under the Children's Act, 1998 (Act 560)?",
+"choices": [
+{"text": "15 years", "is_correct": false},
+{"text": "16 years", "is_correct": false},
+{"text": "18 years", "is_correct": true},
+{"text": "21 years", "is_correct": false}
+],
+"rationale": "Section 14 of Act 560 sets 18 years as the minimum age for marriage of any kind. The Act also prohibits forcing a child to be betrothed or married.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "Which statement best describes female genital mutilation (FGM)?",
+"choices": [
+{"text": "A medically necessary procedure performed during every childbirth", "is_correct": false},
+{"text": "Non-medical partial or total removal or injury of external female genital organs", "is_correct": true},
+{"text": "A routine antenatal examination", "is_correct": false},
+{"text": "A procedure used to prevent postpartum haemorrhage", "is_correct": false}
+],
+"rationale": "FGM involves procedures that partially or totally remove or injure external female genital organs for non-medical reasons. It can cause severe immediate and long-term physical, sexual, reproductive and psychological complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwife's Role in Child Protection",
+"question_text": "Which professional principle should guide a midwife when caring for a child who may have experienced abuse?",
+"choices": [
+{"text": "Prioritising the child's safety, dignity and best interests", "is_correct": true},
+{"text": "Protecting the reputation of the suspected perpetrator", "is_correct": false},
+{"text": "Avoiding documentation of suspected abuse", "is_correct": false},
+{"text": "Allowing family pressure to determine whether the child receives care", "is_correct": false}
+],
+"rationale": "The midwife has a professional responsibility to protect children from harm and respect their rights and dignity. The child's safety and best interests should guide assessment, documentation, reporting and referral.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "Which psychological condition may develop in a child following exposure to severe or repeated traumatic experiences?",
+"choices": [
+{"text": "Post-traumatic stress disorder", "is_correct": true},
+{"text": "Myopia", "is_correct": false},
+{"text": "Appendicitis", "is_correct": false},
+{"text": "Iron-deficiency anaemia", "is_correct": false}
+],
+"rationale": "Post-traumatic stress disorder may develop after exposure to traumatic events and can involve intrusive memories, avoidance, negative changes in mood and heightened arousal. Children may also experience anxiety, depression, behavioural changes and difficulties with development.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A 7-year-old child is brought to a health facility with bruises in different stages of healing. The caregiver gives inconsistent explanations. What should the midwife suspect?",
+"choices": [
+{"text": "Possible physical abuse", "is_correct": true},
+{"text": "Normal childhood growth", "is_correct": false},
+{"text": "An uncomplicated viral infection", "is_correct": false},
+{"text": "A normal reaction to immunisation", "is_correct": false}
+],
+"rationale": "Bruises in different stages of healing combined with inconsistent explanations are concerning for possible non-accidental injury. The midwife should assess the child carefully, document objective findings and initiate appropriate safeguarding procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A 10-year-old girl attending a health facility becomes withdrawn and distressed whenever a particular adult relative approaches her. What is the most appropriate interpretation?",
+"choices": [
+{"text": "This behaviour confirms that the child has a psychiatric disorder", "is_correct": false},
+{"text": "The behaviour may indicate fear or a safeguarding concern requiring sensitive assessment", "is_correct": true},
+{"text": "The child is deliberately being disrespectful", "is_correct": false},
+{"text": "The behaviour should be ignored because children often become quiet", "is_correct": false}
+],
+"rationale": "Withdrawal and fear around a particular person may be associated with abuse, intimidation or another distressing experience, although they do not establish abuse by themselves. The midwife should provide a safe opportunity for the child to communicate and assess the concern without making assumptions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "A 12-year-old child is repeatedly denied food and essential medical treatment by a caregiver despite the caregiver having the means to provide them. Which form of abuse is most evident?",
+"choices": [
+{"text": "Physical neglect", "is_correct": true},
+{"text": "Normal parental discipline", "is_correct": false},
+{"text": "Positive reinforcement", "is_correct": false},
+{"text": "Socialisation", "is_correct": false}
+],
+"rationale": "Failure to provide adequate food and necessary healthcare constitutes neglect when a caregiver does not meet the child's essential needs. Such neglect can result in malnutrition, preventable illness and impaired development.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "A school-aged child reports that an adult has been sending sexually explicit messages and requesting nude photographs. Which form of abuse should the midwife recognise?",
+"choices": [
+{"text": "Emotional neglect only", "is_correct": false},
+{"text": "Online child sexual exploitation", "is_correct": true},
+{"text": "Normal adolescent communication", "is_correct": false},
+{"text": "Physical neglect", "is_correct": false}
+],
+"rationale": "Requesting sexual images from a child is a form of online sexual exploitation and abuse. The midwife should protect the child, preserve relevant information appropriately and refer the matter through child protection and law enforcement pathways.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A 9-year-old child presents with difficulty walking, genital pain and unexplained genital injuries. What should the midwife do?",
+"choices": [
+{"text": "Assume the symptoms are caused by poor personal hygiene", "is_correct": false},
+{"text": "Recognise possible sexual abuse and arrange urgent, sensitive clinical assessment", "is_correct": true},
+{"text": "Ask the child to return only if bleeding develops", "is_correct": false},
+{"text": "Discharge the child without documenting the findings", "is_correct": false}
+],
+"rationale": "Genital pain and unexplained injuries may indicate sexual abuse or another serious medical condition. The child requires prompt clinical assessment, appropriate safeguarding and referral without unnecessary or repeated examinations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Factors for Child Abuse",
+"question_text": "Which household circumstance may increase the risk of child neglect?",
+"choices": [
+{"text": "Consistent parental supervision and support", "is_correct": false},
+{"text": "Severe caregiver substance misuse combined with inadequate supervision", "is_correct": true},
+{"text": "Regular access to healthcare", "is_correct": false},
+{"text": "Supportive relationships with extended family", "is_correct": false}
+],
+"rationale": "Caregiver substance misuse may impair judgement, reduce supervision and interfere with the ability to meet a child's needs. It is a risk factor that should prompt assessment and support rather than an automatic conclusion that abuse has occurred.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Factors for Child Abuse",
+"question_text": "A midwife is conducting a postnatal assessment and learns that the mother is experiencing severe financial hardship and has little family support. What is the most appropriate response?",
+"choices": [
+{"text": "Automatically classify the mother as an abusive parent", "is_correct": false},
+{"text": "Assess the family's needs and link them with appropriate social and community support", "is_correct": true},
+{"text": "Report the mother to the police solely because she is poor", "is_correct": false},
+{"text": "Avoid discussing the family's circumstances", "is_correct": false}
+],
+"rationale": "Poverty and limited support can increase family stress and vulnerability but do not automatically establish abuse or neglect. The midwife should assess the family's needs and facilitate appropriate social welfare and community support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "A 16-year-old girl tells a midwife that her family intends to force her into marriage. Which legal principle under Act 560 is most relevant?",
+"choices": [
+{"text": "A child may be forced into marriage with parental approval", "is_correct": false},
+{"text": "A person below 18 years must not be forced to marry", "is_correct": true},
+{"text": "Marriage is permitted at any age if a traditional ceremony is performed", "is_correct": false},
+{"text": "Only boys are protected from forced marriage", "is_correct": false}
+],
+"rationale": "Section 14 of Act 560 prohibits forcing a child to be betrothed or married and establishes 18 years as the minimum age for marriage. The midwife should treat the disclosure as a safeguarding concern and facilitate appropriate protection and referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A child tells a midwife that a neighbour has been sexually abusing them. What should the midwife do?",
+"choices": [
+{"text": "Promise the child that nobody else will be told", "is_correct": false},
+{"text": "Listen calmly, ensure immediate safety, document the disclosure and report to the appropriate child protection authority", "is_correct": true},
+{"text": "Confront the suspected perpetrator before informing anyone", "is_correct": false},
+{"text": "Ask the child to repeat the account to several staff members", "is_correct": false}
+],
+"rationale": "The midwife should respond supportively, avoid leading questions and record the child's account accurately. Section 17 of Act 560 requires reporting information about child abuse to the Department, and urgent safety concerns should also be referred through appropriate police and clinical pathways.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A midwife suspects that a child has been physically abused by a caregiver. The caregiver asks the midwife not to report the matter because it is a family issue. What should the midwife do?",
+"choices": [
+{"text": "Respect the caregiver's request and take no further action", "is_correct": false},
+{"text": "Follow the reporting and referral requirements under Act 560 and the facility's safeguarding procedures", "is_correct": true},
+{"text": "Ask the caregiver to investigate the matter privately", "is_correct": false},
+{"text": "Discharge the child immediately to avoid conflict", "is_correct": false}
+],
+"rationale": "Child abuse is a protection concern and must not be dismissed as a private family matter. Section 17 of Act 560 requires a person with information about child abuse to report it to the Department.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A child with suspected sexual abuse requires medical care and protection. Which combination of agencies is most appropriate for coordinated referral in Ghana?",
+"choices": [
+{"text": "Department of Social Welfare, DOVVSU and an appropriate health facility", "is_correct": true},
+{"text": "Ghana Revenue Authority and Electoral Commission", "is_correct": false},
+{"text": "Only the child's school examination officer", "is_correct": false},
+{"text": "A private business association and a transport union", "is_correct": false}
+],
+"rationale": "The Department of Social Welfare coordinates child protection interventions, while DOVVSU investigates relevant offences and supports victims. A health facility provides clinical assessment, treatment, documentation and appropriate follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwife's Role in Child Protection",
+"question_text": "A child suspected of abuse is brought to a maternity and child health unit. Which approach should the midwife use when obtaining information?",
+"choices": [
+{"text": "Use calm, age-appropriate and non-leading questions in a safe environment", "is_correct": true},
+{"text": "Threaten the child until the full story is disclosed", "is_correct": false},
+{"text": "Ask questions that suggest the answer expected", "is_correct": false},
+{"text": "Conduct an interrogation in front of the suspected perpetrator", "is_correct": false}
+],
+"rationale": "A child-centred approach promotes trust and reduces additional psychological distress. Open, non-leading questions and a safe environment help the child communicate without influencing the account.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwife's Role in Child Protection",
+"question_text": "A midwife identifies injuries in a child that may be associated with physical abuse. Which documentation practice is most appropriate?",
+"choices": [
+{"text": "Record objective findings, including the location and description of injuries, and the child's exact words where relevant", "is_correct": true},
+{"text": "Write only that the caregiver is a criminal", "is_correct": false},
+{"text": "Record personal assumptions instead of clinical findings", "is_correct": false},
+{"text": "Avoid documentation until a court case begins", "is_correct": false}
+],
+"rationale": "Accurate, objective documentation supports continuity of care, safeguarding decisions and possible legal proceedings. The midwife should distinguish observed findings from reported information and avoid unsupported conclusions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwife's Role in Child Protection",
+"question_text": "A child who may have experienced sexual abuse requires a physical examination. Which action is most appropriate?",
+"choices": [
+{"text": "Arrange an examination by an appropriately trained clinician using child-sensitive procedures and appropriate consent or assent safeguards", "is_correct": true},
+{"text": "Allow any available person to conduct repeated examinations", "is_correct": false},
+{"text": "Examine the child in a crowded public area", "is_correct": false},
+{"text": "Delay all medical care until a criminal conviction is obtained", "is_correct": false}
+],
+"rationale": "A child requires timely, sensitive clinical assessment by appropriately trained personnel, with attention to consent, assent, privacy and safeguarding requirements. Medical care should not be delayed while waiting for a criminal investigation or court outcome.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A 14-year-old boy is found working long hours at a fishing site, missing school and performing dangerous tasks. What should the midwife recognise?",
+"choices": [
+{"text": "Possible exploitative and hazardous child labour", "is_correct": true},
+{"text": "Permissible light work under all circumstances", "is_correct": false},
+{"text": "A normal educational apprenticeship", "is_correct": false},
+{"text": "A form of recreational activity", "is_correct": false}
+],
+"rationale": "Work that harms a child's health, education or development may constitute exploitative child labour under Act 560. Hazardous employment is prohibited for persons below 18 years, and the child should be referred through appropriate protection channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A family in a coastal community reports that their child was taken to another region for work, but the child is being forced to work without pay and cannot leave. What should the midwife suspect?",
+"choices": [
+{"text": "Human trafficking and forced labour", "is_correct": true},
+{"text": "Ordinary family relocation", "is_correct": false},
+{"text": "Voluntary educational exchange", "is_correct": false},
+{"text": "Normal household responsibility", "is_correct": false}
+],
+"rationale": "Recruitment or transfer of a child for exploitation, including forced labour or servitude, may constitute human trafficking under the Human Trafficking Act, 2005 (Act 694). The child's consent or parental consent cannot be used as a defence to child trafficking under the Act.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A pregnant adolescent tells the midwife that her family plans to send her newborn daughter to a traditional shrine as a trokosi. What should the midwife do?",
+"choices": [
+{"text": "Support the practice because it is a traditional family decision", "is_correct": false},
+{"text": "Recognise the potential exploitation and harm, assess the child's safety and refer through child protection channels", "is_correct": true},
+{"text": "Ignore the disclosure because the newborn has not yet been born", "is_correct": false},
+{"text": "Advise the family to conceal the arrangement from health workers", "is_correct": false}
+],
+"rationale": "Trokosi-related practices involving the placement or exploitation of girls in shrine service can violate children's rights and expose them to abuse. The midwife should prioritise the child's protection and work with the Department of Social Welfare and other relevant authorities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A 15-year-old girl presents at a health facility with complications following female genital mutilation. What is the most appropriate response by the midwife?",
+"choices": [
+{"text": "Provide appropriate clinical care, assess complications and initiate safeguarding and referral procedures", "is_correct": true},
+{"text": "Refuse treatment because the procedure was performed for cultural reasons", "is_correct": false},
+{"text": "Recommend that the procedure be repeated", "is_correct": false},
+{"text": "Discharge her without assessment because the practice is traditional", "is_correct": false}
+],
+"rationale": "The midwife must provide non-judgemental, appropriate clinical care and assess complications such as bleeding, infection and urinary problems. FGM is harmful and requires appropriate safeguarding and referral where a child may be at risk of further harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child who has experienced repeated physical abuse becomes withdrawn, has nightmares and avoids contact with adults. Which response is most appropriate?",
+"choices": [
+{"text": "Recognise possible trauma-related symptoms and arrange appropriate psychosocial assessment and support", "is_correct": true},
+{"text": "Punish the child for refusing to interact", "is_correct": false},
+{"text": "Assume the child is deliberately seeking attention", "is_correct": false},
+{"text": "Ignore the symptoms because they are unrelated to abuse", "is_correct": false}
+],
+"rationale": "Withdrawal, nightmares and avoidance may occur following traumatic experiences and can indicate significant psychological distress. The child should receive a sensitive assessment and appropriate mental health or psychosocial support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal and Postnatal Safeguarding",
+"question_text": "During an antenatal visit, a 17-year-old pregnant girl says that she is afraid to return home because her partner has threatened to beat her. What should the midwife do?",
+"choices": [
+{"text": "Assess immediate safety, speak with her privately and initiate appropriate safeguarding and referral", "is_correct": true},
+{"text": "Tell her to return home because relationship problems are private", "is_correct": false},
+{"text": "Inform the partner immediately without assessing the risk", "is_correct": false},
+{"text": "Discontinue antenatal care until the family resolves the issue", "is_correct": false}
+],
+"rationale": "Threats of violence indicate a possible safeguarding concern and require a private, sensitive assessment of immediate risk. The midwife should facilitate appropriate protection, social welfare support and referral while maintaining access to antenatal care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal and Postnatal Safeguarding",
+"question_text": "A teenage mother attends a postnatal clinic with her newborn. She appears overwhelmed and says that she has no support at home. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Assess her wellbeing and the baby's safety, identify support needs and arrange appropriate follow-up", "is_correct": true},
+{"text": "Assume that she is unable to care for her baby because of her age", "is_correct": false},
+{"text": "Separate the baby from her without assessment", "is_correct": false},
+{"text": "Tell her that support is not part of postnatal care", "is_correct": false}
+],
+"rationale": "A teenage mother may require additional emotional, practical and social support, but her age alone does not establish that she is unable to care for her baby. Assessment should consider maternal wellbeing, infant safety, available support and any safeguarding concerns.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A midwife receives information that a child is being sexually exploited by an adult in the community. The child is not currently at the health facility. What should the midwife do?",
+"choices": [
+{"text": "Report the information to the Department of Social Welfare and use appropriate police referral channels", "is_correct": true},
+{"text": "Wait until the child personally attends the facility", "is_correct": false},
+{"text": "Discuss the allegation publicly with community members", "is_correct": false},
+{"text": "Ask the suspected perpetrator to investigate the allegation", "is_correct": false}
+],
+"rationale": "Section 17 of Act 560 requires any person with information about child abuse or a child in need of care and protection to report it to the Department. A child does not have to be physically present at the facility before a report can be made.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A child repeatedly arrives at school with untreated injuries, poor hygiene and inadequate clothing. The caregiver frequently fails to attend appointments. Which concern should the midwife investigate?",
+"choices": [
+{"text": "Possible neglect and failure to meet the child's basic needs", "is_correct": true},
+{"text": "Normal childhood independence", "is_correct": false},
+{"text": "A confirmed genetic disorder", "is_correct": false},
+{"text": "Normal adolescent development", "is_correct": false}
+],
+"rationale": "Repeated untreated injuries, poor hygiene and inadequate clothing may indicate neglect, particularly when essential care is consistently not provided. The midwife should assess the child's circumstances and report protection concerns appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "A caregiver argues that a child may be denied medical treatment because the family's religious beliefs prohibit it. What is the appropriate response?",
+"choices": [
+{"text": "Accept the decision without considering the child's health", "is_correct": false},
+{"text": "Explain that a child's right to healthcare and protection must be respected and escalate any serious risk of denial of treatment", "is_correct": true},
+{"text": "Refuse to discuss the child's medical needs", "is_correct": false},
+{"text": "Allow the caregiver's belief to override every clinical decision", "is_correct": false}
+],
+"rationale": "Act 560 protects children's rights, including access to medical treatment, and does not permit denial of treatment merely because of religious or other beliefs. The midwife should explain the child's health needs and take appropriate action where refusal places the child at risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwife's Role in Child Protection",
+"question_text": "A child suspected of abuse is accompanied by the person alleged to have caused the injuries. Which action should the midwife prioritise?",
+"choices": [
+{"text": "Arrange a safe opportunity to assess and speak with the child away from the suspected perpetrator, where appropriate", "is_correct": true},
+{"text": "Ask the suspected perpetrator to answer every question for the child", "is_correct": false},
+{"text": "Allow the suspected perpetrator to remain present during every confidential discussion", "is_correct": false},
+{"text": "Send the child home immediately without assessment", "is_correct": false}
+],
+"rationale": "A private and safe assessment may allow the child to disclose concerns without intimidation or interference. The midwife should follow safeguarding procedures and avoid actions that may increase the child's risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A 12-year-old child is engaged in light household work for a short period after school, without harm to health, development or education. How should this be interpreted under Act 560?",
+"choices": [
+{"text": "It may fall within permitted light work if the statutory conditions are met", "is_correct": true},
+{"text": "It is automatically human trafficking", "is_correct": false},
+{"text": "It is always hazardous employment", "is_correct": false},
+{"text": "It is necessarily a criminal offence regardless of the circumstances", "is_correct": false}
+],
+"rationale": "Act 560 permits light work from age 13, not age 12, provided the work does not harm health or development or interfere with schooling. Therefore, the described 12-year-old's work does not meet the statutory minimum age for light work.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A family insists that their 16-year-old daughter must undergo a harmful traditional procedure because it is required by their community. What should the midwife explain?",
+"choices": [
+{"text": "Cultural practices are exempt from child protection laws", "is_correct": false},
+{"text": "Practices that harm or degrade children may violate their rights and require protection", "is_correct": true},
+{"text": "A child's health rights end when the family makes a decision", "is_correct": false},
+{"text": "Only practices performed in hospitals are regulated", "is_correct": false}
+],
+"rationale": "Act 560 protects children against torture, cruel or degrading treatment and harmful cultural practices. The midwife should address the concern respectfully while prioritising the child's safety and using appropriate protection and referral pathways.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal and Postnatal Safeguarding",
+"question_text": "During a postnatal home visit, a midwife observes that a newborn is frequently left unattended, has inadequate feeding and appears lethargic. What should the midwife do first?",
+"choices": [
+{"text": "Assess the newborn urgently for illness and immediate safety risks", "is_correct": true},
+{"text": "Wait until the next routine visit", "is_correct": false},
+{"text": "Blame the mother without assessing the circumstances", "is_correct": false},
+{"text": "Leave the newborn in the same situation and document only the visit date", "is_correct": false}
+],
+"rationale": "Lethargy and inadequate feeding in a newborn may indicate serious illness requiring urgent clinical assessment. The midwife should also assess supervision and caregiving conditions and initiate safeguarding referral if neglect or immediate risk is suspected.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Factors for Child Abuse",
+"question_text": "A child lives in a household where domestic violence occurs frequently. Which statement best describes the child's situation?",
+"choices": [
+{"text": "Exposure to domestic violence may place the child at risk of emotional and psychological harm", "is_correct": true},
+{"text": "Only the adult who is physically assaulted can be affected", "is_correct": false},
+{"text": "The child is protected from harm if violence occurs outside the child's bedroom", "is_correct": false},
+{"text": "Exposure to domestic violence has no relationship with child wellbeing", "is_correct": false}
+],
+"rationale": "Children who witness or are exposed to domestic violence may experience fear, anxiety, depression and other trauma-related effects. Such exposure should be considered in safeguarding assessments even when the child has no visible physical injuries.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A 13-year-old survivor of sexual abuse reports persistent sadness, poor concentration and loss of interest in activities. Which response is most appropriate?",
+"choices": [
+{"text": "Assess for depression and trauma-related difficulties and arrange appropriate mental health support", "is_correct": true},
+{"text": "Tell the child to forget the experience", "is_correct": false},
+{"text": "Assume the symptoms are deliberate misconduct", "is_correct": false},
+{"text": "Avoid discussing emotional wellbeing because the abuse is over", "is_correct": false}
+],
+"rationale": "Sexual abuse may be followed by depression, anxiety, trauma symptoms and impaired functioning. A sensitive mental health assessment and appropriate psychosocial or specialist support are important for recovery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A midwife suspects that a child is being trafficked but the child's guardian insists that the arrangement was voluntary. What should guide the midwife's response?",
+"choices": [
+{"text": "The guardian's agreement automatically makes the arrangement lawful", "is_correct": false},
+{"text": "The child's safety and the legal protections against child trafficking must guide reporting and referral", "is_correct": true},
+{"text": "The midwife should ignore the concern unless the child has visible injuries", "is_correct": false},
+{"text": "The matter should be settled privately without involving protection agencies", "is_correct": false}
+],
+"rationale": "Under the Human Trafficking Act, 2005 (Act 694), consent of a child or the child's parent or guardian cannot be used as a defence in a child trafficking prosecution. Suspected trafficking should therefore be referred to appropriate child protection and law enforcement authorities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "A 17-year-old is being required to work in a dangerous mining environment. Which legal provision is most relevant?",
+"choices": [
+{"text": "The minimum age for hazardous employment is 18 years under Act 560", "is_correct": true},
+{"text": "Hazardous work is permitted for every child if the family agrees", "is_correct": false},
+{"text": "The minimum age for hazardous work is 13 years", "is_correct": false},
+{"text": "Hazardous employment is not addressed by Ghanaian law", "is_correct": false}
+],
+"rationale": "Section 91 of Act 560 sets 18 years as the minimum age for hazardous employment. Dangerous mining work therefore raises a serious child labour protection concern for a 17-year-old.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A child presents with repeated abdominal pain, sexually transmitted infection and a history of unexplained school absence. Which conclusion is most appropriate?",
+"choices": [
+{"text": "The findings require sensitive assessment for possible sexual abuse and other medical causes", "is_correct": true},
+{"text": "The child has definitely committed a crime", "is_correct": false},
+{"text": "The findings prove that the caregiver is responsible", "is_correct": false},
+{"text": "The symptoms are always normal during childhood", "is_correct": false}
+],
+"rationale": "A sexually transmitted infection and unexplained symptoms in a child may raise concern for sexual abuse, although a full clinical assessment is necessary to establish the circumstances. The midwife should ensure appropriate treatment, safeguarding and referral without making unsupported accusations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwife's Role in Child Protection",
+"question_text": "A child discloses abuse and asks the midwife not to tell anyone. Which response is most appropriate?",
+"choices": [
+{"text": "Promise complete secrecy regardless of the risk", "is_correct": false},
+{"text": "Explain that information will be shared only with people who need it to help keep the child safe", "is_correct": true},
+{"text": "Tell the child that nobody will believe them", "is_correct": false},
+{"text": "Immediately announce the disclosure to everyone in the ward", "is_correct": false}
+],
+"rationale": "The midwife should respect the child's privacy while explaining that confidentiality cannot be absolute when protection from harm is required. Information should be shared appropriately with relevant safeguarding professionals on a need-to-know basis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal and Postnatal Safeguarding",
+"question_text": "A pregnant 16-year-old reports that an adult partner controls her movements, takes her money and threatens her if she refuses sex. What should the midwife recognise?",
+"choices": [
+{"text": "Possible sexual exploitation, coercion and abuse requiring safeguarding assessment", "is_correct": true},
+{"text": "A normal relationship that does not require assessment", "is_correct": false},
+{"text": "A routine disagreement between partners", "is_correct": false},
+{"text": "A matter that must be resolved only by the adolescent's family", "is_correct": false}
+],
+"rationale": "Control, threats and sexual coercion involving a child are serious safeguarding concerns and may indicate exploitation or abuse. The midwife should assess immediate safety and facilitate appropriate clinical, social welfare and law enforcement referrals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "A child is repeatedly told that they are worthless, unwanted and responsible for the family's problems. The child develops low self-esteem and becomes socially withdrawn. Which form of abuse best explains this situation?",
+"choices": [
+{"text": "Emotional abuse", "is_correct": true},
+{"text": "Accidental injury", "is_correct": false},
+{"text": "Normal socialisation", "is_correct": false},
+{"text": "Physical neglect only", "is_correct": false}
+],
+"rationale": "Repeated rejection, humiliation and blame can cause emotional abuse and impair a child's psychological development. Low self-esteem and social withdrawal may be consequences of this experience.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A 6-year-old child presents with a patterned burn injury. The caregiver says the child accidentally touched a hot object, but the injury pattern does not match the explanation. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The inconsistent history and patterned injury raise suspicion of non-accidental injury", "is_correct": true},
+{"text": "The injury confirms that the child has a congenital skin condition", "is_correct": false},
+{"text": "The caregiver's explanation should always be accepted without assessment", "is_correct": false},
+{"text": "The injury can be ignored if the child is not crying", "is_correct": false}
+],
+"rationale": "A patterned injury that is inconsistent with the explanation provided may indicate deliberate harm. The midwife should arrange appropriate clinical assessment, document the findings objectively and initiate safeguarding procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Risk Factors for Child Abuse",
+"question_text": "A midwife is reviewing two families. Family A has financial difficulties but provides attentive care and seeks support. Family B has adequate income but repeatedly leaves a young child unsupervised and denies necessary medical care. Which conclusion is most accurate?",
+"choices": [
+{"text": "Poverty alone establishes neglect in Family A", "is_correct": false},
+{"text": "Family B demonstrates possible neglect despite having adequate financial resources", "is_correct": true},
+{"text": "Neither family can have child protection concerns because both have caregivers", "is_correct": false},
+{"text": "Financial resources are the only reliable measure of child safety", "is_correct": false}
+],
+"rationale": "Neglect is assessed by whether a child's essential needs are met and whether the child is exposed to harm, not simply by household income. Poverty may increase vulnerability, but attentive caregiving and access to support are important protective factors.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A child with suspected sexual abuse is brought to a district hospital. The caregiver demands that the case be handled privately and refuses referral to social welfare. What is the most appropriate action by the midwife?",
+"choices": [
+{"text": "Follow the statutory reporting and safeguarding pathway, prioritising the child's safety", "is_correct": true},
+{"text": "Close the case because the caregiver has refused cooperation", "is_correct": false},
+{"text": "Allow the caregiver to decide whether the law applies", "is_correct": false},
+{"text": "Discuss the case publicly to obtain community support", "is_correct": false}
+],
+"rationale": "The reporting responsibility under section 17 of Act 560 is not removed by a caregiver's request to keep abuse private. The midwife should report the concern to the Department and coordinate appropriate clinical and police referrals while protecting the child's confidentiality.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A 15-year-old girl is recruited from a rural community with promises of schooling in Accra. On arrival, she is confined, forced into domestic work and prevented from contacting her family. Which interpretation is most appropriate?",
+"choices": [
+{"text": "Possible child trafficking for forced labour", "is_correct": true},
+{"text": "A legitimate educational placement", "is_correct": false},
+{"text": "Permissible light work because she is above 13 years", "is_correct": false},
+{"text": "A normal arrangement between extended family members", "is_correct": false}
+],
+"rationale": "Recruitment and transfer of a child through deception for exploitation may constitute trafficking under Act 694. The child's age and the exploitative conditions mean that the arrangement cannot be treated as ordinary light work or a legitimate educational placement.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A community elder argues that a 14-year-old girl should be married because the practice has existed for generations. Which response best reflects Ghana's child protection framework?",
+"choices": [
+{"text": "The practice is lawful if the family and community agree", "is_correct": false},
+{"text": "The minimum marriage age is 18 years, and the child's best interests and protection must take priority", "is_correct": true},
+{"text": "The law applies only to marriages conducted in churches", "is_correct": false},
+{"text": "A traditional marriage automatically removes the child's legal protection", "is_correct": false}
+],
+"rationale": "Section 14 of Act 560 establishes 18 years as the minimum age for marriage and prohibits forcing a child to marry. Cultural acceptance does not override the child's legal rights or the principle of the child's best interests.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A 12-year-old survivor of prolonged abuse has nightmares, avoids reminders of the events, becomes easily startled and has difficulty concentrating at school. Which explanation best accounts for these symptoms?",
+"choices": [
+{"text": "Possible post-traumatic stress response", "is_correct": true},
+{"text": "Normal physical growth", "is_correct": false},
+{"text": "A definite intellectual disability", "is_correct": false},
+{"text": "A normal response to school examinations only", "is_correct": false}
+],
+"rationale": "Nightmares, avoidance, heightened arousal and concentration difficulties are symptoms that may occur in post-traumatic stress disorder. A qualified mental health professional should assess the child, while the midwife ensures ongoing safeguarding and support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Antenatal and Postnatal Safeguarding",
+"question_text": "During a postnatal visit, a midwife observes that a mother is severely depressed, expresses thoughts of harming herself and says she sometimes feels unable to care for her newborn. What is the priority action?",
+"choices": [
+{"text": "Arrange urgent mental health assessment, ensure immediate safety of mother and baby, and activate appropriate support", "is_correct": true},
+{"text": "Advise her to sleep more and review her after one month", "is_correct": false},
+{"text": "Leave her alone with the newborn to encourage independence", "is_correct": false},
+{"text": "Discharge her from postnatal follow-up because she has disclosed distress", "is_correct": false}
+],
+"rationale": "Thoughts of self-harm and difficulty maintaining infant safety indicate an urgent mental health and safeguarding concern. Immediate risk assessment, appropriate emergency referral and a safe plan for the mother and newborn are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Midwife's Role in Child Protection",
+"question_text": "A child presents with injuries, and the midwife suspects abuse. The caregiver gives a detailed explanation, but the child's account differs significantly. Which approach is most appropriate?",
+"choices": [
+{"text": "Record both accounts accurately, assess the injuries and refer the safeguarding concern for investigation", "is_correct": true},
+{"text": "Accept the caregiver's account automatically because the caregiver is an adult", "is_correct": false},
+{"text": "Accuse the caregiver publicly before completing an assessment", "is_correct": false},
+{"text": "Ignore the child's account because children cannot provide useful information", "is_correct": false}
+],
+"rationale": "Conflicting accounts should be documented objectively and assessed alongside the child's clinical findings and safety needs. The midwife should not determine guilt but must report and refer reasonable child protection concerns to the appropriate authorities.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A 17-year-old boy works overnight at a market from 9 p.m. to 5 a.m. to support his family. He has missed school and reports exhaustion. Which legal and safeguarding concern is most relevant?",
+"choices": [
+{"text": "Night work is prohibited for children under Act 560, and the working conditions may also be exploitative", "is_correct": true},
+{"text": "Night work is permitted for all children if the income supports the family", "is_correct": false},
+{"text": "The work is lawful because he is older than 15 years", "is_correct": false},
+{"text": "The midwife should ignore the situation because it occurs outside the hospital", "is_correct": false}
+],
+"rationale": "Section 88 of Act 560 prohibits child night work between 8 p.m. and 6 a.m. His missed schooling and exhaustion also raise concerns about exploitative labour and the need for child protection intervention.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
