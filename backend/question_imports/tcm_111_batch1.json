@@ -1,0 +1,791 @@
+{
+"courses": [
+{
+"course_code": "TCM-111",
+"course_title": "Therapeutic Communication",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Therapeutic Communication",
+"Types of Communication: Verbal and Non-Verbal",
+"Active Listening and Empathy",
+"Therapeutic Communication Techniques",
+"Barriers to Effective Communication",
+"Communicating with Special Populations",
+"Interprofessional Communication and SBAR",
+"Conflict Resolution",
+"Cultural Sensitivity and Diversity in Communication"
+],
+"questions": [
+{
+"topic": "Introduction to Therapeutic Communication",
+"question_text": "Which statement best defines therapeutic communication in nursing?",
+"choices": [
+{"text": "A purposeful interaction that helps patients express needs, understand health information and participate in care", "is_correct": true},
+{"text": "A casual conversation intended mainly to entertain patients", "is_correct": false},
+{"text": "A method of giving instructions without allowing patients to respond", "is_correct": false},
+{"text": "An interaction used exclusively to obtain information for hospital records", "is_correct": false}
+],
+"rationale": "Therapeutic communication is a purposeful, patient-centred process used to promote understanding, trust and positive health outcomes. It supports assessment, emotional support, health education and shared decision-making.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Therapeutic Communication",
+"question_text": "What is the primary purpose of therapeutic communication between a nurse and a patient?",
+"choices": [
+{"text": "To establish professional relationships and support the patient's health needs", "is_correct": true},
+{"text": "To persuade every patient to accept the nurse's personal beliefs", "is_correct": false},
+{"text": "To prevent patients from asking questions", "is_correct": false},
+{"text": "To replace clinical assessment with conversation", "is_correct": false}
+],
+"rationale": "Therapeutic communication helps nurses establish trust and understand patients' physical and emotional needs. It also encourages patients to participate actively in decisions about their care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Therapeutic Communication",
+"question_text": "A nurse introduces herself to a patient, explains her role and asks permission before beginning an assessment. Which principle of therapeutic communication is demonstrated?",
+"choices": [
+{"text": "Professional introduction and respect for patient autonomy", "is_correct": true},
+{"text": "False reassurance", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false},
+{"text": "Giving unsolicited advice", "is_correct": false}
+],
+"rationale": "Introducing oneself and explaining the purpose of an interaction promotes trust and reduces uncertainty. Seeking permission demonstrates respect for the patient's autonomy and dignity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Therapeutic Communication",
+"question_text": "A patient at a district hospital says, 'I am afraid because I do not know what will happen during the operation.' Which response is most therapeutic?",
+"choices": [
+{"text": "There is no reason to be afraid; everything will definitely be fine.", "is_correct": false},
+{"text": "You should not think about the operation.", "is_correct": false},
+{"text": "Can you tell me more about what worries you most about the operation?", "is_correct": true},
+{"text": "Other patients undergo operations without complaining.", "is_correct": false}
+],
+"rationale": "The open-ended response encourages the patient to express specific fears and concerns. It allows the nurse to identify the patient's information and emotional support needs without offering unrealistic reassurance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Therapeutic Communication",
+"question_text": "A nurse is caring for a patient who repeatedly asks whether the family will be informed about a diagnosis. What should the nurse do first?",
+"choices": [
+{"text": "Promise to disclose the diagnosis to every family member", "is_correct": false},
+{"text": "Explore the patient's concerns and preferences about sharing health information", "is_correct": true},
+{"text": "Ignore the question because confidentiality prevents all family involvement", "is_correct": false},
+{"text": "Tell the family about the diagnosis without consulting the patient", "is_correct": false}
+],
+"rationale": "The nurse should first understand the patient's wishes and concerns about disclosure. Confidentiality and patient autonomy must be respected while supporting family involvement when the patient consents or another lawful basis applies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Communication: Verbal and Non-Verbal",
+"question_text": "Which of the following is an example of verbal communication?",
+"choices": [
+{"text": "Nodding the head", "is_correct": false},
+{"text": "Maintaining eye contact", "is_correct": false},
+{"text": "Explaining wound care instructions using spoken words", "is_correct": true},
+{"text": "Smiling at a patient", "is_correct": false}
+],
+"rationale": "Verbal communication involves the use of spoken or written words to convey information. Nodding, eye contact and smiling are examples of non-verbal communication.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Communication: Verbal and Non-Verbal",
+"question_text": "Which of the following is a form of non-verbal communication?",
+"choices": [
+{"text": "Giving a patient written discharge instructions", "is_correct": false},
+{"text": "Explaining a medication schedule", "is_correct": false},
+{"text": "Using facial expressions and gestures to convey a message", "is_correct": true},
+{"text": "Asking a patient about pain intensity", "is_correct": false}
+],
+"rationale": "Non-verbal communication conveys meaning through body movements, facial expressions, gestures, posture and other behaviours. These signals may reinforce or contradict spoken messages.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Communication: Verbal and Non-Verbal",
+"question_text": "A nurse tells a patient that she is available to listen but repeatedly looks at her phone and turns away. What is the main communication problem?",
+"choices": [
+{"text": "The nurse's non-verbal behaviour contradicts her verbal message", "is_correct": true},
+{"text": "The nurse is using an appropriate therapeutic silence", "is_correct": false},
+{"text": "The nurse is demonstrating active listening", "is_correct": false},
+{"text": "The nurse is using reflection effectively", "is_correct": false}
+],
+"rationale": "The nurse's words communicate availability, but her body language suggests distraction and lack of interest. Effective communication requires consistency between verbal and non-verbal messages.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Communication: Verbal and Non-Verbal",
+"question_text": "A patient avoids eye contact while discussing a sensitive health concern. What should the nurse do?",
+"choices": [
+{"text": "Conclude immediately that the patient is being dishonest", "is_correct": false},
+{"text": "Demand that the patient maintain eye contact", "is_correct": false},
+{"text": "Consider cultural and personal factors and continue communicating respectfully", "is_correct": true},
+{"text": "Stop the interview because communication is impossible", "is_correct": false}
+],
+"rationale": "Eye contact has different meanings across individuals and cultures and should not be interpreted in isolation. The nurse should remain respectful and use other communication cues to understand the patient's feelings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Communication: Verbal and Non-Verbal",
+"question_text": "A nurse notices that a patient says, 'I am fine,' but is crying and trembling. What is the most appropriate response?",
+"choices": [
+{"text": "Accept the words and ignore the patient's behaviour", "is_correct": false},
+{"text": "Gently acknowledge the observed behaviour and invite the patient to explain how they are feeling", "is_correct": true},
+{"text": "Tell the patient to stop crying", "is_correct": false},
+{"text": "Assume that the patient is deliberately seeking attention", "is_correct": false}
+],
+"rationale": "Non-verbal cues may reveal distress that is not expressed verbally. The nurse should acknowledge the discrepancy sensitively and give the patient an opportunity to discuss their feelings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "What is active listening?",
+"choices": [
+{"text": "Concentrating on the speaker, interpreting the message and responding appropriately", "is_correct": true},
+{"text": "Listening only to information that agrees with the nurse's opinion", "is_correct": false},
+{"text": "Interrupting frequently to provide advice", "is_correct": false},
+{"text": "Remaining silent while mentally preparing another question", "is_correct": false}
+],
+"rationale": "Active listening requires focused attention, appropriate observation and responses that demonstrate understanding. It helps nurses identify patient concerns and obtain accurate information.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "Which statement best describes empathy in nursing communication?",
+"choices": [
+{"text": "Feeling exactly the same emotions as the patient", "is_correct": false},
+{"text": "Understanding the patient's feelings and communicating that understanding without losing professional boundaries", "is_correct": true},
+{"text": "Agreeing with everything the patient says", "is_correct": false},
+{"text": "Avoiding emotional topics during patient interactions", "is_correct": false}
+],
+"rationale": "Empathy involves understanding another person's experience from their perspective and communicating that understanding. Nurses can demonstrate empathy while maintaining professional boundaries and objective clinical judgement.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A patient says, 'Since my diagnosis, I feel that my whole life has changed.' Which response best demonstrates empathy?",
+"choices": [
+{"text": "You should be grateful that the disease was discovered.", "is_correct": false},
+{"text": "I can see that this has been a difficult change for you. Would you like to talk about it?", "is_correct": true},
+{"text": "Many people have worse illnesses than yours.", "is_correct": false},
+{"text": "You will forget about it after some time.", "is_correct": false}
+],
+"rationale": "The response acknowledges the patient's emotional experience and offers an opportunity to discuss it further. It avoids minimising the patient's concerns or making unsupported promises.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A nurse is interviewing a patient who becomes tearful while describing the recent death of a spouse. What should the nurse do?",
+"choices": [
+{"text": "Immediately change the subject to prevent emotional discomfort", "is_correct": false},
+{"text": "Allow the patient time to express grief and remain present in a supportive manner", "is_correct": true},
+{"text": "Tell the patient that crying is a sign of weakness", "is_correct": false},
+{"text": "End the interview without explaining why", "is_correct": false}
+],
+"rationale": "Allowing the patient time to express grief demonstrates empathy and respect for the grieving process. The nurse's supportive presence can help the patient feel heard and emotionally supported.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "During an interview, a nurse repeatedly interrupts a patient to finish the patient's sentences. What is the most likely effect?",
+"choices": [
+{"text": "It encourages complete and accurate disclosure", "is_correct": false},
+{"text": "It may make the patient feel unheard and reduce willingness to share information", "is_correct": true},
+{"text": "It demonstrates effective therapeutic silence", "is_correct": false},
+{"text": "It guarantees that the interview will be accurate", "is_correct": false}
+],
+"rationale": "Frequent interruptions can discourage patients from expressing their concerns fully. Active listening requires allowing patients adequate time to communicate before responding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A patient tells a nurse that the family believes the illness was caused by a spiritual problem. Which response best demonstrates active listening and cultural sensitivity?",
+"choices": [
+{"text": "Your family is ignorant and should not discuss such things.", "is_correct": false},
+{"text": "Tell me more about what you and your family believe about the illness.", "is_correct": true},
+{"text": "You must abandon those beliefs before receiving treatment.", "is_correct": false},
+{"text": "I agree that spiritual causes are the only explanation for illness.", "is_correct": false}
+],
+"rationale": "The response invites the patient to explain their beliefs without judgement or automatic agreement. Understanding these beliefs can help the nurse plan culturally respectful care while providing appropriate clinical information.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "Which therapeutic communication technique encourages a patient to provide a detailed description of an experience?",
+"choices": [
+{"text": "Open-ended questioning", "is_correct": true},
+{"text": "False reassurance", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false},
+{"text": "Giving personal advice", "is_correct": false}
+],
+"rationale": "Open-ended questions encourage patients to describe their experiences in their own words. They are useful for exploring feelings, symptoms and concerns that may not be revealed through yes-or-no questions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient says, 'I am worried that my children will not manage without me.' The nurse responds, 'You are concerned about how your children will cope while you are receiving treatment.' Which technique is being used?",
+"choices": [
+{"text": "Reflection", "is_correct": false},
+{"text": "Paraphrasing", "is_correct": true},
+{"text": "Giving advice", "is_correct": false},
+{"text": "False reassurance", "is_correct": false}
+],
+"rationale": "Paraphrasing involves restating the patient's message using different words while preserving its meaning. It helps confirm understanding and allows the patient to clarify or expand on the concern.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient says, 'I feel helpless.' The nurse replies, 'You feel helpless?' Which therapeutic technique is demonstrated?",
+"choices": [
+{"text": "Reflection", "is_correct": true},
+{"text": "Giving information", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false},
+{"text": "Disapproval", "is_correct": false}
+],
+"rationale": "Reflection directs the patient's feelings or ideas back to them for further exploration. It encourages the patient to examine and express emotions more fully.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient tells the nurse, 'I took two tablets yesterday,' but does not identify the medication or the strength. Which response is most appropriate?",
+"choices": [
+{"text": "You should know the name of your medication.", "is_correct": false},
+{"text": "Could you tell me the name and strength of the tablets you took?", "is_correct": true},
+{"text": "I assume they were your prescribed tablets.", "is_correct": false},
+{"text": "Let us discuss something else.", "is_correct": false}
+],
+"rationale": "Clarification is used when information is incomplete or unclear. Asking for the medication name and strength helps obtain accurate information and reduces the risk of medication-related errors.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient becomes silent after receiving news of a serious diagnosis. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Immediately ask several unrelated questions", "is_correct": false},
+{"text": "Allow therapeutic silence while remaining available and attentive", "is_correct": true},
+{"text": "Tell the patient to stop wasting time", "is_correct": false},
+{"text": "Assume the patient has understood everything", "is_correct": false}
+],
+"rationale": "Therapeutic silence gives patients time to process information and organise their thoughts. The nurse should remain attentive and observe whether the patient needs further explanation or emotional support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient says, 'I am not sure I can continue taking these medicines.' Which response is an example of exploring?",
+"choices": [
+{"text": "You must take all your medicines without questioning.", "is_correct": false},
+{"text": "What makes you feel uncertain about continuing the medicines?", "is_correct": true},
+{"text": "Many people take medicines without any problem.", "is_correct": false},
+{"text": "You should not worry about the medicines.", "is_correct": false}
+],
+"rationale": "Exploring encourages the patient to explain an issue in greater detail. It can reveal concerns such as side effects, cost, misunderstanding or difficulty following the treatment schedule.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient says, 'The pain becomes worse whenever I walk.' The nurse responds, 'You mean the pain increases during movement?' Which technique is demonstrated?",
+"choices": [
+{"text": "Restating", "is_correct": true},
+{"text": "Disapproval", "is_correct": false},
+{"text": "False reassurance", "is_correct": false},
+{"text": "Giving advice", "is_correct": false}
+],
+"rationale": "Restating repeats the main idea expressed by the patient to confirm that the nurse has understood correctly. It gives the patient an opportunity to confirm or correct the information.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient repeatedly discusses fears about an upcoming procedure. The nurse says, 'Let us focus on what you are most worried about right now.' Which technique is being used?",
+"choices": [
+{"text": "Focusing", "is_correct": true},
+{"text": "Rejecting", "is_correct": false},
+{"text": "Stereotyping", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false}
+],
+"rationale": "Focusing helps direct a conversation towards an important issue when several concerns are being discussed. It enables the nurse and patient to explore a particular concern in greater depth.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "Which of the following is a common barrier to effective communication in a healthcare setting?",
+"choices": [
+{"text": "Using understandable language", "is_correct": false},
+{"text": "Maintaining appropriate eye contact", "is_correct": false},
+{"text": "Excessive environmental noise", "is_correct": true},
+{"text": "Allowing patients time to respond", "is_correct": false}
+],
+"rationale": "Excessive noise can interfere with hearing, concentration and understanding. Nurses should reduce avoidable environmental distractions when communicating with patients.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A nurse explains a patient's diagnosis using several complex medical terms that the patient does not understand. Which communication barrier is present?",
+"choices": [
+{"text": "Language and terminology barrier", "is_correct": true},
+{"text": "Therapeutic silence", "is_correct": false},
+{"text": "Active listening", "is_correct": false},
+{"text": "Empathetic communication", "is_correct": false}
+],
+"rationale": "Complex medical terminology can prevent patients from understanding health information. Nurses should use plain language and confirm understanding through appropriate methods such as teach-back.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A patient who speaks only a local Ghanaian language is admitted to a hospital where the nurse does not understand that language. What should the nurse do?",
+"choices": [
+{"text": "Speak louder in English until the patient understands", "is_correct": false},
+{"text": "Use a qualified interpreter or an appropriate language support service where available", "is_correct": true},
+{"text": "Ask the patient to sign a form without explanation", "is_correct": false},
+{"text": "Avoid communicating with the patient", "is_correct": false}
+],
+"rationale": "A language barrier can result in inaccurate assessment and unsafe care. Appropriate interpretation helps the nurse obtain reliable information and communicate essential health instructions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A nurse is explaining discharge instructions to a patient who is experiencing severe pain and distress. The patient repeatedly asks the nurse to repeat the information. What should the nurse do?",
+"choices": [
+{"text": "Accuse the patient of not paying attention", "is_correct": false},
+{"text": "Address the patient's immediate discomfort and provide the information again when the patient can concentrate", "is_correct": true},
+{"text": "Stop providing all discharge information permanently", "is_correct": false},
+{"text": "Give the patient a lengthy written document without explanation", "is_correct": false}
+],
+"rationale": "Pain and emotional distress can reduce concentration and information retention. The nurse should address the immediate problem and communicate important instructions in manageable, understandable sections.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A patient tells a nurse that a traditional herbal preparation is being used alongside prescribed medication. The nurse immediately responds, 'Traditional remedies are useless.' What is the most significant communication problem?",
+"choices": [
+{"text": "The nurse is demonstrating cultural sensitivity", "is_correct": false},
+{"text": "The nurse is using judgemental language that may discourage honest disclosure", "is_correct": true},
+{"text": "The nurse is using clarification appropriately", "is_correct": false},
+{"text": "The nurse is encouraging shared decision-making", "is_correct": false}
+],
+"rationale": "Judgemental responses may damage trust and discourage patients from disclosing important health practices. The nurse should respectfully explore the preparation being used and assess possible safety concerns, including interactions with prescribed medicines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "Which communication approach is most appropriate when speaking with a young child?",
+"choices": [
+{"text": "Use complex medical terminology to improve understanding", "is_correct": false},
+{"text": "Use age-appropriate language, simple explanations and suitable play or visual aids", "is_correct": true},
+{"text": "Ignore the child and communicate only with the caregiver", "is_correct": false},
+{"text": "Threaten the child to obtain cooperation", "is_correct": false}
+],
+"rationale": "Children have different levels of cognitive and language development. Communication should be adapted to their age and understanding while involving caregivers appropriately.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "An older patient has difficulty hearing during a nursing interview. Which action should the nurse take?",
+"choices": [
+{"text": "Shout directly into the patient's ear", "is_correct": false},
+{"text": "Face the patient, speak clearly at a moderate pace and reduce background noise", "is_correct": true},
+{"text": "Speak rapidly to shorten the interview", "is_correct": false},
+{"text": "Assume the patient has cognitive impairment", "is_correct": false}
+],
+"rationale": "Facing the patient allows the use of visual cues and lip-reading where helpful. Clear speech and reduced background noise improve communication without treating hearing impairment as evidence of cognitive impairment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "A patient with hearing impairment communicates primarily through Ghanaian Sign Language. What should the nurse do when obtaining informed consent for a procedure?",
+"choices": [
+{"text": "Ask a family member to sign the consent form on the patient's behalf automatically", "is_correct": false},
+{"text": "Arrange appropriate sign-language interpretation and ensure the patient understands the information before consenting", "is_correct": true},
+{"text": "Proceed because written consent is always sufficient", "is_correct": false},
+{"text": "Assume the patient cannot make healthcare decisions", "is_correct": false}
+],
+"rationale": "Patients with hearing impairment have the right to accessible communication and informed participation in care. Appropriate sign-language interpretation helps ensure that consent is voluntary and based on adequate understanding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "A patient experiencing acute psychosis is speaking rapidly and expressing persecutory beliefs. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Argue with the patient until the patient accepts that the beliefs are false", "is_correct": false},
+{"text": "Use calm, simple and clear statements while acknowledging the patient's feelings without reinforcing the false belief", "is_correct": true},
+{"text": "Laugh at the patient's statements", "is_correct": false},
+{"text": "Encourage the patient to act on the persecutory beliefs", "is_correct": false}
+],
+"rationale": "Calm, clear communication can reduce stimulation and support safety when a patient is experiencing psychosis. The nurse should acknowledge the patient's feelings without confirming or arguing about delusional beliefs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "A patient with expressive aphasia following a stroke understands questions but struggles to produce spoken words. What is the best communication approach?",
+"choices": [
+{"text": "Finish every sentence without allowing the patient to respond", "is_correct": false},
+{"text": "Allow adequate response time and use communication aids, gestures or simple yes-or-no questions when appropriate", "is_correct": true},
+{"text": "Assume the patient cannot understand anything", "is_correct": false},
+{"text": "Speak loudly and rapidly", "is_correct": false}
+],
+"rationale": "Expressive aphasia affects the ability to produce language and does not necessarily indicate impaired comprehension. Allowing time and using suitable communication aids supports the patient's participation and autonomy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "A nurse is caring for a child who is crying and resisting a painful procedure. Which action should the nurse take first?",
+"choices": [
+{"text": "Threaten the child with punishment", "is_correct": false},
+{"text": "Assess the child's distress, explain the procedure in age-appropriate language and involve the caregiver where appropriate", "is_correct": true},
+{"text": "Ignore the child's fear and proceed without explanation", "is_correct": false},
+{"text": "Tell the caregiver to leave immediately in every circumstance", "is_correct": false}
+],
+"rationale": "The nurse should first recognise and address the child's fear while explaining what will happen in an understandable way. Appropriate caregiver involvement can provide reassurance and improve cooperation, subject to clinical and safeguarding considerations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "An elderly patient suddenly becomes confused and is unable to follow the nurse's instructions. What should the nurse do first?",
+"choices": [
+{"text": "Assume that confusion is a normal part of ageing", "is_correct": false},
+{"text": "Assess the patient's immediate safety and clinical condition, including possible acute causes of confusion", "is_correct": true},
+{"text": "Discontinue communication with the patient", "is_correct": false},
+{"text": "Leave the patient alone until the confusion resolves", "is_correct": false}
+],
+"rationale": "Sudden confusion may indicate delirium or an acute medical problem rather than normal ageing. Immediate assessment is necessary to identify potential causes and protect the patient from harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication and SBAR",
+"question_text": "What does the acronym SBAR represent in interprofessional communication?",
+"choices": [
+{"text": "Situation, Background, Assessment and Recommendation", "is_correct": true},
+{"text": "Symptoms, Behaviour, Action and Response", "is_correct": false},
+{"text": "Safety, Breathing, Airway and Referral", "is_correct": false},
+{"text": "Summary, Background, Action and Review", "is_correct": false}
+],
+"rationale": "SBAR is a structured communication tool that stands for Situation, Background, Assessment and Recommendation. It helps healthcare professionals communicate essential clinical information clearly and consistently.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Interprofessional Communication and SBAR",
+"question_text": "A nurse calls a medical officer to report that a patient's blood pressure has suddenly fallen to 80/50 mmHg. Which information belongs in the Situation section of SBAR?",
+"choices": [
+{"text": "The patient's previous admission history", "is_correct": false},
+{"text": "The patient's current hypotension and the immediate reason for the call", "is_correct": true},
+{"text": "The nurse's recommendation for further treatment only", "is_correct": false},
+{"text": "The patient's family and social background only", "is_correct": false}
+],
+"rationale": "The Situation section briefly identifies the immediate clinical problem and why communication is taking place. Relevant history belongs in Background, clinical interpretation in Assessment and the requested action in Recommendation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication and SBAR",
+"question_text": "A nurse is using SBAR to report a patient with increasing difficulty breathing. Which statement is an example of the Recommendation section?",
+"choices": [
+{"text": "The patient was admitted yesterday with pneumonia.", "is_correct": false},
+{"text": "The patient's respiratory rate is 34 breaths per minute and oxygen saturation is 86%.", "is_correct": false},
+{"text": "I am concerned that the patient's respiratory condition is deteriorating.", "is_correct": false},
+{"text": "Please review the patient immediately and advise on urgent management.", "is_correct": true}
+],
+"rationale": "The Recommendation section communicates the action or assistance being requested from the receiving professional. Asking for an immediate review clearly identifies the nurse's requested response.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication and SBAR",
+"question_text": "A nurse telephones a medical officer because a patient has suddenly developed severe chest pain, sweating and difficulty breathing. What should the nurse prioritise during the call?",
+"choices": [
+{"text": "Provide a lengthy account of the patient's unrelated social history", "is_correct": false},
+{"text": "Clearly communicate the acute deterioration, relevant observations and the need for immediate review", "is_correct": true},
+{"text": "Wait until all routine documentation is completed", "is_correct": false},
+{"text": "Ask another patient to explain the symptoms", "is_correct": false}
+],
+"rationale": "Severe chest pain with sweating and breathing difficulty may indicate a life-threatening emergency. The nurse should communicate the deterioration promptly, provide essential clinical information and activate the appropriate emergency response.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication and SBAR",
+"question_text": "During a handover, the outgoing nurse reports that a patient has received an analgesic but does not state the time or dose. What should the receiving nurse do?",
+"choices": [
+{"text": "Assume the medication was given at the usual time", "is_correct": false},
+{"text": "Clarify the medication, dose and administration time using the medication record before making further decisions", "is_correct": true},
+{"text": "Administer another dose immediately", "is_correct": false},
+{"text": "Ignore the information because the patient appears comfortable", "is_correct": false}
+],
+"rationale": "Incomplete medication handover can lead to duplicate or missed doses. The receiving nurse should verify the medication administration record and clarify any uncertainty before proceeding.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Conflict Resolution",
+"question_text": "Which approach is most appropriate for resolving a disagreement between two nurses about patient care?",
+"choices": [
+{"text": "Discuss the issue respectfully, focus on patient safety and seek an appropriate solution", "is_correct": true},
+{"text": "Use personal insults to establish authority", "is_correct": false},
+{"text": "Ignore the disagreement even when patient safety is affected", "is_correct": false},
+{"text": "Discuss the disagreement publicly in front of patients", "is_correct": false}
+],
+"rationale": "Constructive conflict resolution requires respectful communication and attention to the issue rather than personal differences. Patient safety should remain the central consideration when resolving disagreements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Conflict Resolution",
+"question_text": "A patient's relative becomes angry because the patient has waited several hours for attention at a busy outpatient department. What should the nurse do first?",
+"choices": [
+{"text": "Respond angrily to defend the facility", "is_correct": false},
+{"text": "Listen calmly, acknowledge the concern and assess whether the patient requires urgent attention", "is_correct": true},
+{"text": "Threaten to remove the patient from the facility", "is_correct": false},
+{"text": "Ignore the relative until the person becomes quiet", "is_correct": false}
+],
+"rationale": "Calm listening and acknowledgement can reduce tension and help identify the cause of the complaint. The nurse must also determine whether the patient's condition has deteriorated and requires immediate clinical attention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Conflict Resolution",
+"question_text": "Two healthcare professionals disagree about the priority of a patient's treatment. Which action should the nurse take?",
+"choices": [
+{"text": "Allow personal disagreement to delay necessary care", "is_correct": false},
+{"text": "Communicate the patient's clinical findings clearly and escalate unresolved safety concerns through the appropriate professional channels", "is_correct": true},
+{"text": "Discuss the disagreement with patients in the waiting area", "is_correct": false},
+{"text": "Automatically accept the opinion of the more senior professional without considering the patient's condition", "is_correct": false}
+],
+"rationale": "Clinical disagreements should be addressed through respectful communication, evidence and appropriate escalation. Patient safety must not be compromised by professional hierarchy or personal conflict.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Conflict Resolution",
+"question_text": "A patient's family insists that a traditional healer should be allowed to administer an unknown herbal preparation while the patient is receiving prescribed treatment. What should the nurse do first?",
+"choices": [
+{"text": "Immediately accuse the family of harming the patient", "is_correct": false},
+{"text": "Explore the family's concerns respectfully and assess the preparation's possible risks before discussing safe care options", "is_correct": true},
+{"text": "Allow the preparation without checking its contents or possible interactions", "is_correct": false},
+{"text": "Discharge the patient because the family disagrees with the nurse", "is_correct": false}
+],
+"rationale": "Respectful discussion helps the nurse understand the family's beliefs and concerns without compromising clinical safety. Unknown preparations should be assessed for possible toxicity, interactions and interference with prescribed treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "What is cultural sensitivity in nursing communication?",
+"choices": [
+{"text": "Recognising and respecting cultural differences while providing safe and individualised care", "is_correct": true},
+{"text": "Assuming that all members of a cultural group have identical beliefs", "is_correct": false},
+{"text": "Avoiding patients whose cultural practices differ from the nurse's beliefs", "is_correct": false},
+{"text": "Allowing cultural practices to replace all clinical safety requirements", "is_correct": false}
+],
+"rationale": "Cultural sensitivity involves recognising that beliefs, values and practices may influence health decisions and communication. Nurses should respect individual differences while maintaining professional and clinical standards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A Ghanaian patient requests that an elder in the family be involved in discussions about the treatment plan. What should the nurse do?",
+"choices": [
+{"text": "Automatically refuse because family members cannot participate in healthcare discussions", "is_correct": false},
+{"text": "Ask the patient about their preferences and involve the elder with the patient's consent", "is_correct": true},
+{"text": "Give the elder unrestricted access to the patient's confidential information", "is_correct": false},
+{"text": "Allow the elder to make every decision without considering the patient's wishes", "is_correct": false}
+],
+"rationale": "Family involvement may be important in many Ghanaian communities, but the patient's autonomy and confidentiality must be respected. The nurse should establish whom the patient wishes to involve and what information may be shared.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A patient refuses a blood transfusion because of personal religious beliefs. What is the most appropriate initial response by the nurse?",
+"choices": [
+{"text": "Threaten the patient with discharge", "is_correct": false},
+{"text": "Explore the patient's beliefs, assess understanding and communicate the refusal promptly to the appropriate clinical team", "is_correct": true},
+{"text": "Administer the transfusion without informing the patient", "is_correct": false},
+{"text": "Assume that the patient's family can override the patient's decision in every circumstance", "is_correct": false}
+],
+"rationale": "The nurse should respect the patient's beliefs and explore whether the refusal is informed and voluntary. The clinical team must be informed promptly so that the patient's decision, capacity, legal considerations and available alternatives can be addressed appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A nurse is caring for a female patient who requests a female healthcare professional to conduct an intimate examination because of cultural and personal preferences. What is the most appropriate response?",
+"choices": [
+{"text": "Dismiss the request as unreasonable", "is_correct": false},
+{"text": "Respect the request and arrange a female professional where reasonably available, while explaining any necessary clinical limitations", "is_correct": true},
+{"text": "Proceed without informing the patient", "is_correct": false},
+{"text": "Refuse to provide any further healthcare", "is_correct": false}
+],
+"rationale": "Respecting privacy, dignity and cultural preferences supports patient-centred care. Where possible, the nurse should accommodate the request while ensuring that urgent clinical needs are not unnecessarily delayed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A nurse at a rural CHPS compound notices that a patient is reluctant to discuss a reproductive health concern in front of accompanying relatives. What should the nurse do?",
+"choices": [
+{"text": "Continue questioning the patient in front of the relatives", "is_correct": false},
+{"text": "Offer the patient a private discussion and explain the importance of confidentiality", "is_correct": true},
+{"text": "Assume the patient has no reproductive health concerns", "is_correct": false},
+{"text": "Ask the relatives to answer all questions", "is_correct": false}
+],
+"rationale": "Sensitive health discussions should take place in a setting that protects the patient's privacy and encourages honest disclosure. Offering a private interview respects autonomy and supports accurate assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A nurse observes that a patient is hesitant to ask questions because the patient believes questioning healthcare professionals is disrespectful. Which response is most appropriate?",
+"choices": [
+{"text": "Tell the patient that questions are unnecessary", "is_correct": false},
+{"text": "Encourage the patient respectfully to ask questions and explain that participation helps ensure safe care", "is_correct": true},
+{"text": "Assume the patient has understood all information", "is_correct": false},
+{"text": "Stop providing explanations to avoid discomfort", "is_correct": false}
+],
+"rationale": "Patients should be encouraged to participate in decisions and seek clarification without feeling disrespectful. The nurse can create a supportive environment by inviting questions and checking understanding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A patient with limited English proficiency nods while the nurse explains how to take prescribed medication. The nurse is unsure whether the patient has understood. What should the nurse do next?",
+"choices": [
+{"text": "Assume that nodding proves complete understanding", "is_correct": false},
+{"text": "Use appropriate language support and ask the patient to explain the medication instructions in their own words", "is_correct": true},
+{"text": "Repeat the same complex explanation more quickly", "is_correct": false},
+{"text": "Ask the patient to sign a document confirming understanding without further discussion", "is_correct": false}
+],
+"rationale": "Nodding does not necessarily demonstrate comprehension, particularly when a language barrier exists. Appropriate interpretation and teach-back help the nurse confirm that the patient understands the medication instructions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A family insists on answering every question for a conscious adult patient, although the patient appears uncomfortable. Which action should the nurse take first?",
+"choices": [
+{"text": "Accept the family's answers without speaking to the patient", "is_correct": false},
+{"text": "Create an opportunity to speak privately with the patient and establish the patient's communication and decision-making preferences", "is_correct": true},
+{"text": "Tell the family that they are not allowed to visit", "is_correct": false},
+{"text": "Assume that the patient lacks decision-making capacity", "is_correct": false}
+],
+"rationale": "A conscious adult patient should have the opportunity to express personal preferences and participate in care decisions. A private conversation helps the nurse assess the patient's wishes and determine the appropriate role of family members.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A nurse is caring for a patient whose family believes that a mental health condition should be managed only through traditional spiritual practices. The patient is showing signs of severe self-harm risk. What should the nurse do first?",
+"choices": [
+{"text": "Avoid discussing the risk because it may offend the family", "is_correct": false},
+{"text": "Prioritise the patient's immediate safety, assess the risk and arrange urgent mental health intervention while communicating respectfully with the family", "is_correct": true},
+{"text": "Allow the family to take the patient away without assessing safety", "is_correct": false},
+{"text": "Argue with the family about their cultural beliefs before addressing the patient", "is_correct": false}
+],
+"rationale": "An immediate risk of self-harm requires urgent assessment and appropriate safety measures. The nurse should respect cultural beliefs while ensuring that they do not delay necessary mental healthcare and protection from harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Interprofessional Communication and SBAR",
+"question_text": "A nurse receives a telephone order from an authorised prescriber during an emergency. Which communication practice best reduces the risk of error?",
+"choices": [
+{"text": "Rely on memory and enter the order after the shift", "is_correct": false},
+{"text": "Write down the order, read it back for confirmation and follow facility policy for authentication and documentation", "is_correct": true},
+{"text": "Ask another patient to confirm the order", "is_correct": false},
+{"text": "Change the prescribed dose if it seems too high without contacting the prescriber", "is_correct": false}
+],
+"rationale": "Read-back communication helps identify errors in verbal or telephone orders. The nurse must document and authenticate the order according to facility policy and applicable professional requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A patient tells a nurse, 'I cannot bear this pain anymore,' while holding the abdomen and sweating. Another patient is waiting for routine health education. Which action should the nurse take first?",
+"choices": [
+{"text": "Continue the health education session before assessing the patient", "is_correct": false},
+{"text": "Immediately assess the patient with severe pain and sweating for possible acute deterioration", "is_correct": true},
+{"text": "Tell the patient to wait until the next medication round", "is_correct": false},
+{"text": "Assume the patient is exaggerating the pain", "is_correct": false}
+],
+"rationale": "Severe pain accompanied by sweating may indicate an acute clinical problem that requires prompt assessment. The nurse should prioritise the potentially deteriorating patient while arranging appropriate support for other patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A patient tells the nurse, 'Sometimes I feel that life is no longer worth living.' What is the nurse's priority response?",
+"choices": [
+{"text": "Tell the patient to stop thinking negatively", "is_correct": false},
+{"text": "Ask directly and sensitively about thoughts of suicide or self-harm and assess immediate safety", "is_correct": true},
+{"text": "Change the topic to avoid upsetting the patient", "is_correct": false},
+{"text": "Promise that everything will improve without further assessment", "is_correct": false}
+],
+"rationale": "Statements suggesting hopelessness may indicate suicidal thoughts and must be taken seriously. Direct, compassionate questioning helps assess risk and determine whether immediate protective measures and mental health support are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A nurse is communicating with a patient who is experiencing severe breathlessness and can speak only a few words at a time. Which action should the nurse prioritise?",
+"choices": [
+{"text": "Ask several lengthy questions to obtain a complete history immediately", "is_correct": false},
+{"text": "Prioritise emergency respiratory assessment and use brief, clear questions while providing appropriate support", "is_correct": true},
+{"text": "Ask the patient to explain the entire medical history before receiving care", "is_correct": false},
+{"text": "Assume that the patient is unwilling to communicate", "is_correct": false}
+],
+"rationale": "Severe breathlessness may limit the patient's ability to communicate and may indicate a life-threatening emergency. The nurse should prioritise respiratory assessment and use concise communication that does not delay necessary intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communicating with Special Populations",
+"question_text": "A nurse is caring for an older patient who has dementia and becomes distressed during personal care. Which action is most appropriate?",
+"choices": [
+{"text": "Use a calm voice, simple instructions and one step at a time while observing the patient's response", "is_correct": true},
+{"text": "Give several complicated instructions at once", "is_correct": false},
+{"text": "Argue with the patient about every incorrect statement", "is_correct": false},
+{"text": "Ignore signs of distress and complete the task quickly", "is_correct": false}
+],
+"rationale": "Simple, calm and stepwise communication can reduce confusion and distress in patients with dementia. The nurse should maintain dignity, allow adequate response time and adapt care to the patient's abilities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication and SBAR",
+"question_text": "A nurse notices that a patient who was previously alert has become drowsy and has an oxygen saturation of 84%. The nurse's colleague advises waiting until the next ward round. What should the nurse do?",
+"choices": [
+{"text": "Wait because the colleague has more experience", "is_correct": false},
+{"text": "Escalate the patient's deterioration immediately using clear clinical communication and the appropriate emergency pathway", "is_correct": true},
+{"text": "Ignore the oxygen saturation because the patient is still breathing", "is_correct": false},
+{"text": "Document the observation without informing anyone", "is_correct": false}
+],
+"rationale": "New drowsiness with significant oxygen desaturation suggests potentially serious respiratory deterioration. The nurse must act promptly and escalate the concern rather than allowing professional disagreement to delay emergency care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Conflict Resolution",
+"question_text": "A nurse and a patient's relative disagree about the patient's care because the relative believes the patient should not be told the diagnosis. The patient has asked the nurse directly for information. What should the nurse do?",
+"choices": [
+{"text": "Automatically follow the relative's request", "is_correct": false},
+{"text": "Explore the patient's preferences, respect the patient's right to information and communicate appropriately with the clinical team", "is_correct": true},
+{"text": "Give the relative all information and refuse to speak to the patient", "is_correct": false},
+{"text": "Avoid the patient and allow the disagreement to continue", "is_correct": false}
+],
+"rationale": "A competent adult patient should be supported in receiving information about their health according to their preferences and applicable professional standards. The nurse should manage family concerns respectfully without allowing them to override the patient's autonomy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity and Diversity in Communication",
+"question_text": "A patient from a community where elders are highly respected appears uncomfortable when the nurse asks personal questions in front of a family elder. Which response best demonstrates culturally safe communication?",
+"choices": [
+{"text": "Insist that the patient answer all questions publicly", "is_correct": false},
+{"text": "Ask the patient how they would prefer the discussion to be conducted and provide privacy where needed", "is_correct": true},
+{"text": "Assume that the elder must answer all questions", "is_correct": false},
+{"text": "Avoid asking any further questions about the patient's health", "is_correct": false}
+],
+"rationale": "Culturally safe communication recognises the influence of family relationships while maintaining the patient's right to privacy and participation. Asking about the patient's preferences avoids assumptions and supports respectful individualised care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A patient reports feeling frightened after witnessing another patient die in the ward. Which response is most appropriate?",
+"choices": [
+{"text": "You should not be frightened because death is part of life.", "is_correct": false},
+{"text": "That experience sounds frightening. Would you like to tell me what has been troubling you?", "is_correct": true},
+{"text": "You should forget what happened and concentrate on yourself.", "is_correct": false},
+{"text": "Other patients have experienced worse situations.", "is_correct": false}
+],
+"rationale": "The response acknowledges the patient's emotional experience and encourages further expression of feelings. It avoids minimising distress and allows the nurse to assess whether additional psychological support is needed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Communication: Verbal and Non-Verbal",
+"question_text": "A nurse is explaining a procedure to a patient who appears confused and repeatedly looks towards the door. Which action is most appropriate?",
+"choices": [
+{"text": "Continue speaking without checking the patient's response", "is_correct": false},
+{"text": "Pause, assess the patient's concerns and use clear language to establish whether the patient is ready to continue", "is_correct": true},
+{"text": "Assume the patient has agreed to the procedure", "is_correct": false},
+{"text": "Proceed immediately because the procedure has been scheduled", "is_correct": false}
+],
+"rationale": "Non-verbal behaviour may indicate anxiety, confusion or a need for clarification. The nurse should explore the patient's response and ensure understanding before proceeding with the explanation or seeking consent.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
