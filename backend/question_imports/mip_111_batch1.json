@@ -1,0 +1,731 @@
+{
+"courses": [
+{
+"course_code": "MIP-111",
+"course_title": "Microbiology & Infection Prevention",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Microbiology",
+"Classification of Microorganisms",
+"Infection Process and Chain of Infection",
+"Hand Hygiene and Personal Protective Equipment",
+"Sterilization and Disinfection",
+"Healthcare-Associated Infections",
+"Standard Precautions and Transmission-Based Precautions",
+"Immunization and Immunological Defense",
+"Common Infectious Diseases in Ghana"
+],
+"questions": [
+{
+"topic": "Introduction to Microbiology",
+"question_text": "Which statement best defines microbiology?",
+"choices": [
+{"text": "The study of the structure and function of human organs", "is_correct": false},
+{"text": "The scientific study of microorganisms", "is_correct": true},
+{"text": "The study of medicines used to treat infections", "is_correct": false},
+{"text": "The study of human behaviour and mental processes", "is_correct": false}
+],
+"rationale": "Microbiology is the scientific study of microorganisms, including bacteria, viruses, fungi and microscopic parasites. It examines their structure, growth, classification, activities and relationships with humans and the environment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which microorganism is classified as a prokaryote?",
+"choices": [
+{"text": "Bacterium", "is_correct": true},
+{"text": "Protozoan", "is_correct": false},
+{"text": "Fungus", "is_correct": false},
+{"text": "Human cell", "is_correct": false}
+],
+"rationale": "Bacteria are prokaryotic organisms because they lack a membrane-bound nucleus and other membrane-bound organelles. Protozoa and fungi are eukaryotic organisms with a membrane-bound nucleus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which characteristic distinguishes viruses from bacteria?",
+"choices": [
+{"text": "Viruses contain a membrane-bound nucleus", "is_correct": false},
+{"text": "Viruses can reproduce independently in nutrient broth", "is_correct": false},
+{"text": "Viruses require living host cells for replication", "is_correct": true},
+{"text": "Viruses are always larger than bacterial cells", "is_correct": false}
+],
+"rationale": "Viruses are acellular infectious agents that depend on living host cells to replicate. Bacteria are cellular organisms that can reproduce independently under suitable conditions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which group of microorganisms includes organisms such as Candida albicans?",
+"choices": [
+{"text": "Bacteria", "is_correct": false},
+{"text": "Fungi", "is_correct": true},
+{"text": "Viruses", "is_correct": false},
+{"text": "Helminths", "is_correct": false}
+],
+"rationale": "Candida albicans is a yeast belonging to the fungal kingdom. It can cause infections such as oral candidiasis and vulvovaginal candidiasis, particularly when normal microbial balance or host immunity is disrupted.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which of the following is a protozoan parasite responsible for malaria?",
+"choices": [
+{"text": "Mycobacterium tuberculosis", "is_correct": false},
+{"text": "Plasmodium falciparum", "is_correct": true},
+{"text": "Vibrio cholerae", "is_correct": false},
+{"text": "Candida albicans", "is_correct": false}
+],
+"rationale": "Plasmodium falciparum is a protozoan parasite responsible for the most severe form of malaria in many parts of sub-Saharan Africa. It is transmitted to humans through the bite of an infected female Anopheles mosquito.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which bacterial shape is described as spherical?",
+"choices": [
+{"text": "Bacillus", "is_correct": false},
+{"text": "Spirillum", "is_correct": false},
+{"text": "Coccus", "is_correct": true},
+{"text": "Vibrio", "is_correct": false}
+],
+"rationale": "Cocci are spherical or approximately round bacteria. Bacilli are rod-shaped, while spirilla are spiral-shaped and vibrios are curved or comma-shaped.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "Which of the following represents the correct sequence in the chain of infection?",
+"choices": [
+{"text": "Infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host", "is_correct": true},
+{"text": "Reservoir, susceptible host, infectious agent, portal of entry, portal of exit, transmission", "is_correct": false},
+{"text": "Portal of entry, infectious agent, reservoir, susceptible host, transmission, portal of exit", "is_correct": false},
+{"text": "Infectious agent, portal of entry, susceptible host, reservoir, portal of exit, transmission", "is_correct": false}
+],
+"rationale": "The six links are infectious agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host. Infection prevention aims to interrupt one or more of these links.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "What is meant by a reservoir in the chain of infection?",
+"choices": [
+{"text": "The route through which microorganisms enter the body", "is_correct": false},
+{"text": "The place where an infectious agent normally lives and multiplies", "is_correct": true},
+{"text": "The method used to destroy microorganisms", "is_correct": false},
+{"text": "The person who has received an immunization", "is_correct": false}
+],
+"rationale": "A reservoir is the natural habitat in which an infectious agent lives, grows or multiplies. Examples include humans, animals, water, soil and contaminated equipment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "What is the primary purpose of hand hygiene in healthcare settings?",
+"choices": [
+{"text": "To remove visible dirt only", "is_correct": false},
+{"text": "To prevent the transmission of microorganisms between people and surfaces", "is_correct": true},
+{"text": "To replace the need for environmental cleaning", "is_correct": false},
+{"text": "To eliminate the need for gloves during patient care", "is_correct": false}
+],
+"rationale": "Hand hygiene reduces the number of microorganisms on healthcare workers' hands and interrupts contact transmission. It is one of the most effective measures for preventing healthcare-associated infections.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "Which item of personal protective equipment primarily protects the eyes from splashes of potentially infectious body fluids?",
+"choices": [
+{"text": "Surgical cap", "is_correct": false},
+{"text": "Protective goggles", "is_correct": true},
+{"text": "Shoe covers", "is_correct": false},
+{"text": "Apron alone", "is_correct": false}
+],
+"rationale": "Protective goggles provide a barrier against splashes and sprays that may reach the eyes. A face shield may also be used when facial protection is required.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "Which statement correctly defines sterilization?",
+"choices": [
+{"text": "The removal of visible dirt from an object", "is_correct": false},
+{"text": "The reduction of microorganisms to a safe level", "is_correct": false},
+{"text": "The destruction or removal of all forms of microbial life, including bacterial spores", "is_correct": true},
+{"text": "The removal of microorganisms from the skin using ordinary soap", "is_correct": false}
+],
+"rationale": "Sterilization is a validated process that destroys or removes all forms of microbial life, including bacterial spores. It is required for critical medical instruments that enter sterile tissues or the vascular system.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "Which method commonly uses saturated steam under pressure to sterilize heat-resistant medical instruments?",
+"choices": [
+{"text": "Autoclaving", "is_correct": true},
+{"text": "Air drying", "is_correct": false},
+{"text": "Wiping with ordinary detergent", "is_correct": false},
+{"text": "Refrigeration", "is_correct": false}
+],
+"rationale": "Autoclaving uses saturated steam under pressure at a controlled temperature and exposure time to achieve sterilization. The selected cycle must be appropriate for the instrument and validated according to the manufacturer's instructions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "What is a healthcare-associated infection (HAI)?",
+"choices": [
+{"text": "An infection acquired only before admission to a hospital", "is_correct": false},
+{"text": "An infection acquired while receiving healthcare that was not present or incubating at the start of care", "is_correct": true},
+{"text": "An infection that affects healthcare workers only", "is_correct": false},
+{"text": "An infection caused exclusively by viruses", "is_correct": false}
+],
+"rationale": "A healthcare-associated infection is an infection acquired in the course of receiving healthcare that was not present or incubating at the beginning of care. It may occur in hospitals, clinics, CHPS compounds and other healthcare settings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Standard Precautions and Transmission-Based Precautions",
+"question_text": "Which statement best describes standard precautions?",
+"choices": [
+{"text": "They are used only for patients with confirmed HIV infection", "is_correct": false},
+{"text": "They are applied to all patients regardless of their suspected or confirmed infection status", "is_correct": true},
+{"text": "They are required only during surgical operations", "is_correct": false},
+{"text": "They are used only when a patient has visible bleeding", "is_correct": false}
+],
+"rationale": "Standard precautions are the minimum infection prevention practices applied during care of every patient. They include hand hygiene, appropriate PPE, safe injection practices, respiratory hygiene and environmental cleaning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Immunization and Immunological Defense",
+"question_text": "Which type of immunity develops when a person receives a vaccine and produces their own immune response?",
+"choices": [
+{"text": "Natural passive immunity", "is_correct": false},
+{"text": "Artificial active immunity", "is_correct": true},
+{"text": "Artificial passive immunity", "is_correct": false},
+{"text": "Innate immunity", "is_correct": false}
+],
+"rationale": "Vaccination produces artificial active immunity by stimulating the person's immune system to respond to an antigen. This response can generate memory cells that provide protection against future exposure.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "Which bacterium is the causative organism of tuberculosis?",
+"choices": [
+{"text": "Vibrio cholerae", "is_correct": false},
+{"text": "Salmonella Typhi", "is_correct": false},
+{"text": "Mycobacterium tuberculosis", "is_correct": true},
+{"text": "Streptococcus pyogenes", "is_correct": false}
+],
+"rationale": "Mycobacterium tuberculosis is the bacterium responsible for tuberculosis. Pulmonary TB is transmitted mainly through inhalation of infectious airborne particles released by a person with infectious pulmonary or laryngeal TB.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "Which organism causes cholera?",
+"choices": [
+{"text": "Plasmodium falciparum", "is_correct": false},
+{"text": "Vibrio cholerae", "is_correct": true},
+{"text": "Human immunodeficiency virus", "is_correct": false},
+{"text": "Mycobacterium leprae", "is_correct": false}
+],
+"rationale": "Cholera is an acute diarrhoeal disease caused by toxigenic strains of Vibrio cholerae, particularly serogroups O1 and O139. It is commonly transmitted through food or water contaminated with faeces.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "A laboratory report identifies Escherichia coli in a patient's urine. Which classification best describes this organism?",
+"choices": [
+{"text": "A bacterium", "is_correct": true},
+{"text": "A virus", "is_correct": false},
+{"text": "A fungus", "is_correct": false},
+{"text": "A helminth", "is_correct": false}
+],
+"rationale": "Escherichia coli is a Gram-negative, rod-shaped bacterium commonly found in the intestinal tract. Some strains can cause urinary tract infections when they enter and multiply in the urinary system.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "A patient develops an infection caused by a microorganism that has a chitin-containing cell wall and reproduces by budding. Which group is responsible?",
+"choices": [
+{"text": "Bacteria", "is_correct": false},
+{"text": "Viruses", "is_correct": false},
+{"text": "Fungi", "is_correct": true},
+{"text": "Protozoa", "is_correct": false}
+],
+"rationale": "Fungi possess cell walls containing chitin and may reproduce by budding, as seen in many yeasts. Candida species are examples of medically important yeasts.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "A patient presents with a ring-shaped, itchy skin lesion diagnosed as dermatophytosis. Which type of microorganism is the likely cause?",
+"choices": [
+{"text": "Dermatophyte fungus", "is_correct": true},
+{"text": "Virus", "is_correct": false},
+{"text": "Protozoan parasite", "is_correct": false},
+{"text": "Rickettsial bacterium", "is_correct": false}
+],
+"rationale": "Dermatophytosis is a superficial fungal infection caused by dermatophytes that use keratin as a nutrient source. These fungi affect keratinised tissues such as the skin, hair and nails.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "A nurse handles a patient's wound dressing without performing hand hygiene and then touches another patient's intravenous cannula site. Which link in the chain of infection is most directly involved in this situation?",
+"choices": [
+{"text": "Mode of transmission", "is_correct": true},
+{"text": "Infectious agent only", "is_correct": false},
+{"text": "Susceptible host only", "is_correct": false},
+{"text": "Portal of exit only", "is_correct": false}
+],
+"rationale": "The nurse's contaminated hands can transfer microorganisms from one patient or surface to another through contact transmission. Performing hand hygiene between patient contacts interrupts this route of transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "A patient with pulmonary tuberculosis coughs without covering the mouth, releasing infectious particles into the air. Which portal of exit is involved?",
+"choices": [
+{"text": "Urinary tract", "is_correct": false},
+{"text": "Respiratory tract", "is_correct": true},
+{"text": "Gastrointestinal tract", "is_correct": false},
+{"text": "Skin surface", "is_correct": false}
+],
+"rationale": "The respiratory tract is the portal through which Mycobacterium tuberculosis exits an infectious patient's body during coughing, speaking or singing. Appropriate respiratory hygiene and airborne infection control measures reduce transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "A CHPS compound stores drinking water in an uncovered container that is frequently contaminated by dirty hands. Which infection prevention measure would most directly reduce the risk of waterborne infection?",
+"choices": [
+{"text": "Keeping the container covered and using a safe method of water treatment", "is_correct": true},
+{"text": "Adding sugar to the water", "is_correct": false},
+{"text": "Storing the water near a refuse dump", "is_correct": false},
+{"text": "Allowing everyone to dip their hands into the container", "is_correct": false}
+],
+"rationale": "Safe water treatment and protected storage reduce contamination by pathogenic microorganisms. A covered container with a clean dispensing method also prevents repeated contamination during use.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A nurse has visibly soiled hands after cleaning a patient who has diarrhoea. Which hand hygiene method is most appropriate?",
+"choices": [
+{"text": "Wiping the hands on a clean uniform", "is_correct": false},
+{"text": "Washing with soap and running water", "is_correct": true},
+{"text": "Putting on gloves without cleaning the hands", "is_correct": false},
+{"text": "Rinsing briefly with water only", "is_correct": false}
+],
+"rationale": "Hands that are visibly dirty or contaminated with body fluids should be washed with soap and running water. Alcohol-based hand rub is useful when hands are not visibly soiled but does not replace washing when physical contamination is present.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "According to the WHO's Five Moments for Hand Hygiene, when should a healthcare worker clean their hands before touching a patient?",
+"choices": [
+{"text": "Only after leaving the hospital", "is_correct": false},
+{"text": "Before touching the patient", "is_correct": true},
+{"text": "Only after removing a surgical mask", "is_correct": false},
+{"text": "Only when the patient requests it", "is_correct": false}
+],
+"rationale": "Hand hygiene is required before touching a patient to protect the patient from microorganisms carried on the healthcare worker's hands. This is the first of the WHO Five Moments for Hand Hygiene.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A nurse is preparing to perform a procedure likely to produce splashes of blood and body fluids. Which PPE combination is most appropriate?",
+"choices": [
+{"text": "Gloves only", "is_correct": false},
+{"text": "Gloves, fluid-resistant gown or apron, mask and eye or face protection as indicated", "is_correct": true},
+{"text": "Surgical cap only", "is_correct": false},
+{"text": "Shoe covers and ordinary clothing only", "is_correct": false}
+],
+"rationale": "PPE should be selected according to the anticipated exposure risk. Gloves, protective clothing and facial protection provide barriers against blood and body fluid splashes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A healthcare worker removes contaminated gloves after dressing a wound. What should the worker do immediately afterwards?",
+"choices": [
+{"text": "Perform hand hygiene", "is_correct": true},
+{"text": "Put on another pair of gloves without cleaning the hands", "is_correct": false},
+{"text": "Touch the patient's clean dressing trolley", "is_correct": false},
+{"text": "Wipe the gloves and reuse them", "is_correct": false}
+],
+"rationale": "Gloves do not eliminate the need for hand hygiene because hands may become contaminated during glove removal or through unnoticed defects. Hand hygiene should be performed immediately after glove removal.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "A reusable surgical instrument has been used during an operation and must be prepared for another procedure involving sterile tissue. Which processing method is required?",
+"choices": [
+{"text": "Cleaning only", "is_correct": false},
+{"text": "High-level disinfection only in every circumstance", "is_correct": false},
+{"text": "Validated sterilization after appropriate cleaning", "is_correct": true},
+{"text": "Wiping with a dry cloth", "is_correct": false}
+],
+"rationale": "Surgical instruments that enter sterile tissue are classified as critical items and must be sterilized. Thorough cleaning before sterilization removes organic material that could interfere with the sterilization process.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "A nurse is preparing to disinfect a blood-spill area on a clinical floor. What should be done before applying the appropriate disinfectant?",
+"choices": [
+{"text": "Allow patients to walk through the spill", "is_correct": false},
+{"text": "Put on appropriate PPE and remove visible organic material safely", "is_correct": true},
+{"text": "Mix several cleaning chemicals together", "is_correct": false},
+{"text": "Cover the spill with ordinary paper and leave it untreated", "is_correct": false}
+],
+"rationale": "The area should be secured and the worker should wear PPE appropriate to the exposure risk. Visible blood and organic material should be safely removed before applying a suitable disinfectant at the correct concentration and contact time.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "A healthcare worker needs to process a heat-sensitive medical device that cannot undergo steam sterilization. What is the most appropriate approach?",
+"choices": [
+{"text": "Use any household cleaning liquid", "is_correct": false},
+{"text": "Select a validated compatible low-temperature sterilization method according to the manufacturer's instructions", "is_correct": true},
+{"text": "Boil the device regardless of its material", "is_correct": false},
+{"text": "Expose the device to sunlight for five minutes", "is_correct": false}
+],
+"rationale": "Heat-sensitive devices may require a validated low-temperature sterilization method compatible with their materials. The manufacturer's instructions and approved facility procedures must guide the selection and processing conditions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "A nurse is cleaning a reusable instrument after a procedure. Why is cleaning required before disinfection or sterilization?",
+"choices": [
+{"text": "It increases the number of microorganisms", "is_correct": false},
+{"text": "It removes organic matter and reduces microbial contamination that can interfere with subsequent processing", "is_correct": true},
+{"text": "It replaces all sterilization procedures", "is_correct": false},
+{"text": "It guarantees that bacterial spores have been destroyed", "is_correct": false}
+],
+"rationale": "Cleaning physically removes blood, tissue and other organic material from instruments. Residual soil can protect microorganisms and reduce the effectiveness of subsequent disinfection or sterilization.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A patient develops fever, dysuria and suprapubic discomfort three days after urinary catheter insertion. Which healthcare-associated infection should the nurse suspect?",
+"choices": [
+{"text": "Catheter-associated urinary tract infection", "is_correct": true},
+{"text": "Ventilator-associated pneumonia", "is_correct": false},
+{"text": "Surgical site infection", "is_correct": false},
+{"text": "Catheter-associated bloodstream infection", "is_correct": false}
+],
+"rationale": "Urinary catheterisation increases the risk of microorganisms entering the urinary tract and causing infection. Fever, dysuria and suprapubic discomfort in a catheterised patient require clinical assessment and appropriate investigation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A patient develops redness, warmth, pain and purulent discharge from a surgical incision several days after an operation. Which complication is most likely?",
+"choices": [
+{"text": "Surgical site infection", "is_correct": true},
+{"text": "Viral hepatitis", "is_correct": false},
+{"text": "Malaria", "is_correct": false},
+{"text": "Uncomplicated dehydration", "is_correct": false}
+],
+"rationale": "Redness, warmth, pain and purulent discharge around an operative wound are suggestive of a surgical site infection. The wound requires assessment, documentation and appropriate clinical management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A nurse notices that an intravenous cannula insertion site is painful, red and swollen. What should the nurse do?",
+"choices": [
+{"text": "Ignore the findings if the infusion is running", "is_correct": false},
+{"text": "Assess the site, stop using the affected cannula and escalate for appropriate management", "is_correct": true},
+{"text": "Massage the insertion site vigorously", "is_correct": false},
+{"text": "Cover the site with a tight bandage and continue the infusion", "is_correct": false}
+],
+"rationale": "Pain, redness and swelling may indicate phlebitis or a local infection associated with the intravenous device. The cannula should not continue to be used without assessment, and the findings should be reported and managed according to facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Standard Precautions and Transmission-Based Precautions",
+"question_text": "A patient is admitted with suspected pulmonary tuberculosis. Which transmission-based precaution is most appropriate?",
+"choices": [
+{"text": "Contact precautions only", "is_correct": false},
+{"text": "Airborne precautions", "is_correct": true},
+{"text": "Droplet precautions only", "is_correct": false},
+{"text": "No additional precautions are necessary", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted through infectious airborne particles that can remain suspended in the air. Airborne precautions include appropriate respiratory protection, suitable ventilation and isolation arrangements according to available facility resources and guidelines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Standard Precautions and Transmission-Based Precautions",
+"question_text": "A patient presents with profuse watery diarrhoea and suspected cholera. Which additional infection prevention measures are particularly important?",
+"choices": [
+{"text": "Contact precautions, careful hand hygiene and safe handling of faeces and contaminated materials", "is_correct": true},
+{"text": "Airborne precautions alone", "is_correct": false},
+{"text": "Avoiding all environmental cleaning", "is_correct": false},
+{"text": "Allowing shared use of unclean toilets", "is_correct": false}
+],
+"rationale": "Cholera spreads through the faecal-oral route, particularly through contaminated water and food. Contact precautions, hand hygiene, environmental disinfection, safe sanitation and appropriate waste disposal help prevent transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Standard Precautions and Transmission-Based Precautions",
+"question_text": "A patient with suspected measles is admitted to a healthcare facility. Which additional precaution is required to reduce transmission?",
+"choices": [
+{"text": "Airborne precautions", "is_correct": true},
+{"text": "Contact precautions alone", "is_correct": false},
+{"text": "No isolation because measles is not infectious", "is_correct": false},
+{"text": "Protective isolation for all other patients only", "is_correct": false}
+],
+"rationale": "Measles is highly contagious and spreads through airborne transmission. Airborne precautions, appropriate respiratory protection and suitable isolation are required to reduce exposure to susceptible individuals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization and Immunological Defense",
+"question_text": "A newborn receives antibodies through the placenta from the mother. Which type of immunity does this represent?",
+"choices": [
+{"text": "Artificial active immunity", "is_correct": false},
+{"text": "Natural passive immunity", "is_correct": true},
+{"text": "Artificial passive immunity", "is_correct": false},
+{"text": "Natural active immunity", "is_correct": false}
+],
+"rationale": "Maternal IgG antibodies cross the placenta and provide the newborn with natural passive immunity. The infant receives ready-made antibodies rather than producing them through their own immune response.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization and Immunological Defense",
+"question_text": "A healthcare worker sustains a needlestick injury from a used needle. Which action should be taken immediately?",
+"choices": [
+{"text": "Squeeze the wound aggressively and apply bleach", "is_correct": false},
+{"text": "Wash the area with soap and running water and promptly report the exposure for assessment", "is_correct": true},
+{"text": "Ignore the injury if the needle is small", "is_correct": false},
+{"text": "Apply a tight tourniquet above the injury", "is_correct": false}
+],
+"rationale": "The exposed area should be washed promptly with soap and running water without aggressive squeezing or application of caustic substances. The incident must be reported immediately for risk assessment, HIV post-exposure prophylaxis evaluation and hepatitis B prevention where indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization and Immunological Defense",
+"question_text": "A patient receives rabies immunoglobulin after a high-risk animal bite. Which type of immunity is provided by this treatment?",
+"choices": [
+{"text": "Artificial passive immunity", "is_correct": true},
+{"text": "Natural active immunity", "is_correct": false},
+{"text": "Artificial active immunity", "is_correct": false},
+{"text": "Innate immunity", "is_correct": false}
+],
+"rationale": "Rabies immunoglobulin provides ready-made antibodies and therefore produces artificial passive immunity. It provides immediate temporary protection and is used with rabies vaccination when indicated for post-exposure prophylaxis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient attending a CHPS compound presents with fever, chills, headache and body weakness. Malaria is suspected. Which organism should the nurse understand as the cause of the infection?",
+"choices": [
+{"text": "Plasmodium species", "is_correct": true},
+{"text": "Salmonella species", "is_correct": false},
+{"text": "Vibrio species", "is_correct": false},
+{"text": "Mycobacterium species", "is_correct": false}
+],
+"rationale": "Malaria is caused by Plasmodium parasites transmitted through the bite of infected female Anopheles mosquitoes. In Ghana, Plasmodium falciparum is the predominant species responsible for malaria infections.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient has a persistent cough lasting several weeks, night sweats, weight loss and occasional blood-stained sputum. Which infection should the nurse suspect?",
+"choices": [
+{"text": "Cholera", "is_correct": false},
+{"text": "Pulmonary tuberculosis", "is_correct": true},
+{"text": "Uncomplicated malaria", "is_correct": false},
+{"text": "Urinary tract infection", "is_correct": false}
+],
+"rationale": "Persistent cough, night sweats, weight loss and haemoptysis are important symptoms of pulmonary tuberculosis. The patient should be assessed and referred for appropriate TB testing while respiratory infection prevention measures are implemented.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A community experiences an outbreak of acute watery diarrhoea after residents consume contaminated water. Which public health intervention is most appropriate to prevent further cholera transmission?",
+"choices": [
+{"text": "Promote safe drinking water, sanitation, handwashing and rapid case reporting", "is_correct": true},
+{"text": "Encourage residents to share untreated water", "is_correct": false},
+{"text": "Stop all environmental sanitation activities", "is_correct": false},
+{"text": "Advise residents to take antibiotics without assessment", "is_correct": false}
+],
+"rationale": "Cholera prevention requires safe water, proper sanitation, food hygiene and effective handwashing. Early reporting and coordinated public health response help identify cases and limit further transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient is diagnosed with typhoid fever following clinical assessment and appropriate investigations. Which route of transmission is most commonly associated with this infection?",
+"choices": [
+{"text": "Inhalation of airborne fungal spores", "is_correct": false},
+{"text": "Faecal-oral transmission through contaminated food or water", "is_correct": true},
+{"text": "Bite of an infected Anopheles mosquito", "is_correct": false},
+{"text": "Direct exposure to ultraviolet radiation", "is_correct": false}
+],
+"rationale": "Typhoid fever is caused by Salmonella enterica serovar Typhi and is transmitted through food or water contaminated with faeces from an infected person or carrier. Safe water, sanitation and food hygiene are important preventive measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient asks how HIV is commonly transmitted. Which response by the nurse is most accurate?",
+"choices": [
+{"text": "Through sharing plates and eating utensils", "is_correct": false},
+{"text": "Through exposure to infected blood, sexual fluids and transmission from mother to child", "is_correct": true},
+{"text": "Through mosquito bites", "is_correct": false},
+{"text": "Through ordinary handshakes and hugging", "is_correct": false}
+],
+"rationale": "HIV can be transmitted through infected blood, sexual fluids and from mother to child during pregnancy, childbirth or breastfeeding. It is not transmitted through ordinary social contact, shared utensils or mosquito bites.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient with HIV is prescribed antiretroviral therapy. What is the principal purpose of this treatment?",
+"choices": [
+{"text": "To eliminate all HIV from the body immediately", "is_correct": false},
+{"text": "To suppress viral replication and preserve immune function", "is_correct": true},
+{"text": "To increase the rate of HIV replication", "is_correct": false},
+{"text": "To replace all white blood cells with red blood cells", "is_correct": false}
+],
+"rationale": "Antiretroviral therapy suppresses HIV replication and allows immune function to recover or remain preserved. Consistent adherence helps achieve viral suppression and reduces the risk of HIV-related illness and transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A nurse is caring for a patient with suspected infectious diarrhoea and must clean a heavily contaminated bed space. During preparation, the nurse notices that gloves are available but no handwashing facility is immediately accessible. What is the safest action?",
+"choices": [
+{"text": "Proceed without gloves because the patient is already isolated", "is_correct": false},
+{"text": "Obtain the necessary hand hygiene supplies and appropriate PPE before beginning the cleaning task", "is_correct": true},
+{"text": "Use the same gloves for cleaning several patients' beds", "is_correct": false},
+{"text": "Ask the patient to clean the bed space", "is_correct": false}
+],
+"rationale": "Safe environmental cleaning requires appropriate PPE and access to hand hygiene facilities. The nurse should ensure these are available before starting to avoid preventable exposure and cross-contamination.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "After an autoclave cycle, the chemical indicator on a pack shows that the required process conditions were not achieved. What should the nurse responsible for the sterile supplies do?",
+"choices": [
+{"text": "Release the pack because it appears dry", "is_correct": false},
+{"text": "Treat the pack as non-sterile, withhold it from use and arrange investigation and reprocessing", "is_correct": true},
+{"text": "Open the pack and use the instruments immediately", "is_correct": false},
+{"text": "Place the pack in a cupboard and assume it is sterile", "is_correct": false}
+],
+"rationale": "A failed chemical indicator means the pack cannot be assumed to have undergone the required sterilization conditions. It must be withheld from clinical use, and the sterilization failure should be investigated before appropriate reprocessing.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A ward reports several patients developing infections caused by the same antibiotic-resistant bacterium. Which action should the infection prevention team prioritise?",
+"choices": [
+{"text": "Ignore the cases because antibiotic resistance is unavoidable", "is_correct": false},
+{"text": "Notify the appropriate facility authorities, investigate the cluster and reinforce infection prevention measures", "is_correct": true},
+{"text": "Stop recording new infections", "is_correct": false},
+{"text": "Allow affected patients to share equipment without cleaning", "is_correct": false}
+],
+"rationale": "A cluster of infections caused by the same resistant organism may indicate an outbreak or ongoing transmission within the facility. Prompt notification, surveillance, investigation, appropriate isolation and reinforcement of infection prevention measures are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Standard Precautions and Transmission-Based Precautions",
+"question_text": "A patient with suspected pulmonary tuberculosis is placed in a poorly ventilated room. The facility has limited resources and no negative-pressure isolation room. Which measure is most appropriate to reduce transmission?",
+"choices": [
+{"text": "Keep the windows closed and allow unrestricted visitors", "is_correct": false},
+{"text": "Improve natural ventilation, separate the patient from others and ensure healthcare workers use appropriate respirators", "is_correct": true},
+{"text": "Use gloves as the only infection prevention measure", "is_correct": false},
+{"text": "Place the patient in a crowded waiting area", "is_correct": false}
+],
+"rationale": "When negative-pressure rooms are unavailable, effective natural ventilation, separation of infectious patients and appropriate respiratory protection remain important airborne infection control measures. These measures should be implemented alongside prompt diagnosis and treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Immunization and Immunological Defense",
+"question_text": "A child at a CHPS compound has missed several routine immunization appointments. The caregiver believes that vaccination is no longer useful because the child is older than the usual age for some doses. What is the nurse's best response?",
+"choices": [
+{"text": "Tell the caregiver that all missed vaccines must be abandoned", "is_correct": false},
+{"text": "Assess the child's immunization record and arrange catch-up vaccination according to the national schedule and current guidance", "is_correct": true},
+{"text": "Administer every available vaccine repeatedly without checking the record", "is_correct": false},
+{"text": "Advise the caregiver to wait until the child becomes ill", "is_correct": false}
+],
+"rationale": "Children who miss scheduled immunizations should be assessed and offered catch-up vaccination according to the applicable national immunization guidance. Reviewing the immunization record helps determine which doses are due and prevents unnecessary repetition.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient with suspected severe malaria develops confusion, repeated convulsions and difficulty maintaining the airway. Which nursing action has the highest priority?",
+"choices": [
+{"text": "Offer oral antimalarial medication while the patient is convulsing", "is_correct": false},
+{"text": "Protect the airway, summon emergency assistance and manage the convulsion according to protocol", "is_correct": true},
+{"text": "Encourage the patient to walk to improve circulation", "is_correct": false},
+{"text": "Delay intervention until the malaria test result is available", "is_correct": false}
+],
+"rationale": "Convulsions and altered consciousness in suspected severe malaria indicate a medical emergency with immediate risks to airway protection and oxygenation. Emergency stabilisation and prompt treatment should not be delayed while awaiting routine test results.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient with suspected cholera arrives at a facility with profuse watery diarrhoea, sunken eyes, weak pulse and lethargy. Which intervention should receive the highest priority?",
+"choices": [
+{"text": "Provide a routine health education session before treatment", "is_correct": false},
+{"text": "Begin urgent rehydration and assess circulation according to the severe dehydration protocol", "is_correct": true},
+{"text": "Restrict all fluids until diarrhoea stops", "is_correct": false},
+{"text": "Give an antidiarrhoeal medicine and discharge the patient", "is_correct": false}
+],
+"rationale": "Severe dehydration from cholera can rapidly cause hypovolaemic shock and death. Immediate rehydration, usually with intravenous fluids for severe dehydration, and close monitoring are priorities under the applicable treatment protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient with suspected infectious pulmonary tuberculosis is coughing continuously in a crowded outpatient waiting area. Which action should the nurse take first to reduce immediate exposure of other patients?",
+"choices": [
+{"text": "Move the patient to a well-ventilated separate area and provide a surgical mask for source control", "is_correct": true},
+{"text": "Allow the patient to remain in the crowded area until laboratory confirmation", "is_correct": false},
+{"text": "Give the patient a pair of gloves and leave the area", "is_correct": false},
+{"text": "Ask other patients to share the patient's drinking cup", "is_correct": false}
+],
+"rationale": "A patient with suspected infectious pulmonary TB should be separated promptly to reduce exposure in crowded clinical areas. A surgical mask on the patient provides source control, while healthcare workers should use appropriate respiratory protection.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Ghana",
+"question_text": "A patient with HIV develops oral candidiasis and recurrent bacterial infections. The findings suggest significant impairment of immune function. Which explanation best accounts for this increased susceptibility?",
+"choices": [
+{"text": "HIV destroys red blood cells exclusively", "is_correct": false},
+{"text": "HIV progressively damages CD4 T lymphocytes, weakening immune coordination", "is_correct": true},
+{"text": "HIV increases the production of all protective antibodies", "is_correct": false},
+{"text": "HIV prevents the kidneys from producing urine", "is_correct": false}
+],
+"rationale": "HIV targets CD4 T lymphocytes and progressively impairs the immune system when untreated or inadequately controlled. Reduced CD4 cell function increases susceptibility to opportunistic infections such as oral candidiasis and certain bacterial infections.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A nurse observes that a colleague is preparing injections for several patients using the same syringe after changing the needle. What is the most appropriate response?",
+"choices": [
+{"text": "Allow the practice because changing the needle makes the syringe safe", "is_correct": false},
+{"text": "Stop the unsafe practice immediately, ensure each patient receives a new sterile single-use syringe and report the incident", "is_correct": true},
+{"text": "Recommend reusing the syringe after wiping it with cotton wool", "is_correct": false},
+{"text": "Use the syringe only for patients with confirmed infections", "is_correct": false}
+],
+"rationale": "Changing the needle does not make a used syringe safe because the syringe itself may be contaminated with blood. A new sterile single-use syringe and needle must be used for every injection to prevent transmission of bloodborne infections.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "Several children in a community develop fever and diarrhoea after drinking from a contaminated stream. Which intervention most directly interrupts the chain of infection at the reservoir or source level?",
+"choices": [
+{"text": "Providing safe treated drinking water and preventing contamination of the water source", "is_correct": true},
+{"text": "Encouraging children to share drinking cups", "is_correct": false},
+{"text": "Allowing open defecation near the stream", "is_correct": false},
+{"text": "Stopping all handwashing activities", "is_correct": false}
+],
+"rationale": "Contaminated water can serve as a vehicle carrying infectious agents to susceptible individuals. Protecting the water source and providing safe treated water reduce exposure and interrupt faecal-oral transmission.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "During a procedure, a nurse's glove tears after contact with a patient's blood. What is the safest immediate response?",
+"choices": [
+{"text": "Continue the procedure because the tear is small", "is_correct": false},
+{"text": "Stop safely, remove the damaged glove, perform hand hygiene and replace it before continuing", "is_correct": true},
+{"text": "Cover the tear with adhesive tape and continue", "is_correct": false},
+{"text": "Wash the glove while it is still being worn", "is_correct": false}
+],
+"rationale": "A torn glove no longer provides an effective barrier against bloodborne pathogens. The nurse should stop safely, remove the damaged glove, perform hand hygiene and put on a new glove before resuming the procedure.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "A healthcare facility has limited sterilization equipment. Staff propose using high-level disinfection for surgical instruments that enter sterile body tissues. Which response is most appropriate?",
+"choices": [
+{"text": "Approve the proposal because high-level disinfection always destroys bacterial spores", "is_correct": false},
+{"text": "Reject the proposal and arrange access to a validated sterilization process for these critical instruments", "is_correct": true},
+{"text": "Use the instruments after rinsing them with ordinary water", "is_correct": false},
+{"text": "Store the instruments in an open tray until needed", "is_correct": false}
+],
+"rationale": "Critical instruments that enter sterile tissues or the vascular system require sterilization because high-level disinfection may not reliably destroy all bacterial spores. The facility must arrange appropriate validated sterilization before these instruments are reused.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
