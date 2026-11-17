@@ -1,0 +1,791 @@
+{
+"courses": [
+{
+"course_code": "MIP-111-M",
+"course_title": "Microbiology & Infection Prevention",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Microbiology",
+"Classification of Microorganisms",
+"Infection Process and Chain of Infection",
+"Hand Hygiene and Personal Protective Equipment",
+"Sterilization and Disinfection in Maternity",
+"Standard Precautions",
+"Healthcare-Associated Infections in Obstetrics",
+"Immunization in Pregnancy and for Newborns",
+"Common Infectious Diseases in Pregnancy"
+],
+"questions": [
+{
+"topic": "Introduction to Microbiology",
+"question_text": "Microbiology is the scientific study of which of the following?",
+"choices": [
+{"text": "The structure and function of human organs", "is_correct": false},
+{"text": "Microorganisms and their activities", "is_correct": true},
+{"text": "The development of the human embryo", "is_correct": false},
+{"text": "The chemical composition of medicines", "is_correct": false}
+],
+"rationale": "Microbiology is the branch of science concerned with microorganisms, including bacteria, viruses, fungi and microscopic parasites. It also examines their activities, interactions and effects on humans and the environment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Microbiology",
+"question_text": "Which statement best describes pathogenic microorganisms?",
+"choices": [
+{"text": "Microorganisms that are always beneficial to humans", "is_correct": false},
+{"text": "Microorganisms that can cause disease", "is_correct": true},
+{"text": "Microorganisms that cannot reproduce", "is_correct": false},
+{"text": "Microorganisms found only in soil", "is_correct": false}
+],
+"rationale": "Pathogenic microorganisms are capable of causing disease in a susceptible host. Their ability to cause illness depends on factors such as virulence, infectious dose and the host's immune status.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which characteristic distinguishes bacteria from viruses?",
+"choices": [
+{"text": "Bacteria are cellular organisms, whereas viruses are acellular", "is_correct": true},
+{"text": "Bacteria can reproduce only inside living host cells", "is_correct": false},
+{"text": "Viruses possess both a nucleus and cytoplasm", "is_correct": false},
+{"text": "Viruses are larger than all bacterial cells", "is_correct": false}
+],
+"rationale": "Bacteria are prokaryotic cellular organisms with structures that support independent cellular metabolism and reproduction. Viruses are acellular infectious agents that require living host cells to replicate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which microorganism is responsible for malaria?",
+"choices": [
+{"text": "Plasmodium species", "is_correct": true},
+{"text": "Staphylococcus aureus", "is_correct": false},
+{"text": "Candida albicans", "is_correct": false},
+{"text": "Human immunodeficiency virus", "is_correct": false}
+],
+"rationale": "Malaria is caused by protozoan parasites belonging to the genus Plasmodium. In Ghana, Plasmodium falciparum is the predominant species and can cause severe disease, particularly during pregnancy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which of the following is a fungal microorganism that commonly causes vulvovaginal candidiasis?",
+"choices": [
+{"text": "Candida albicans", "is_correct": true},
+{"text": "Escherichia coli", "is_correct": false},
+{"text": "Treponema pallidum", "is_correct": false},
+{"text": "Plasmodium falciparum", "is_correct": false}
+],
+"rationale": "Candida albicans is a yeast, which is a type of fungus, and is a common cause of vulvovaginal candidiasis. Pregnancy can increase susceptibility because hormonal changes affect the vaginal environment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "Which bacterium is commonly associated with puerperal wound infections and can cause serious invasive disease?",
+"choices": [
+{"text": "Staphylococcus aureus", "is_correct": true},
+{"text": "Plasmodium falciparum", "is_correct": false},
+{"text": "Candida albicans", "is_correct": false},
+{"text": "Hepatitis B virus", "is_correct": false}
+],
+"rationale": "Staphylococcus aureus is a bacterium that can cause wound infections, abscesses and invasive infections. It may be transmitted through contaminated hands or equipment during healthcare activities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "Which sequence correctly represents the chain of infection?",
+"choices": [
+{"text": "Infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host", "is_correct": true},
+{"text": "Reservoir, susceptible host, infectious agent, treatment, recovery, immunity", "is_correct": false},
+{"text": "Portal of entry, infectious agent, treatment, reservoir, immunity, recovery", "is_correct": false},
+{"text": "Infectious agent, treatment, portal of exit, recovery, reservoir, susceptible host", "is_correct": false}
+],
+"rationale": "The chain of infection consists of six linked elements: infectious agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host. Infection prevention measures aim to interrupt one or more links in this chain.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "What is the primary purpose of hand hygiene in a maternity unit?",
+"choices": [
+{"text": "To prevent the transmission of microorganisms between patients, staff and the environment", "is_correct": true},
+{"text": "To remove the need for wearing gloves", "is_correct": false},
+{"text": "To sterilize all medical instruments", "is_correct": false},
+{"text": "To prevent every type of infection completely", "is_correct": false}
+],
+"rationale": "Hand hygiene reduces the number and transmission of microorganisms on healthcare workers' hands. It is one of the most effective measures for preventing healthcare-associated infections in maternity care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "Which item of personal protective equipment provides a barrier against splashes of blood and other body fluids to the eyes?",
+"choices": [
+{"text": "Protective goggles or a face shield", "is_correct": true},
+{"text": "Surgical cap", "is_correct": false},
+{"text": "Disposable shoe cover", "is_correct": false},
+{"text": "Examination gloves", "is_correct": false}
+],
+"rationale": "Protective goggles or a face shield protect the mucous membranes of the eyes from potentially infectious splashes. The appropriate PPE should be selected according to the anticipated exposure risk.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Sterilization and Disinfection in Maternity",
+"question_text": "What is the most accurate definition of sterilization?",
+"choices": [
+{"text": "The removal of visible dirt from an instrument", "is_correct": false},
+{"text": "The destruction or removal of all forms of microbial life, including bacterial spores", "is_correct": true},
+{"text": "The reduction of microorganisms to a safe level without affecting spores", "is_correct": false},
+{"text": "The use of soap and water to clean the skin", "is_correct": false}
+],
+"rationale": "Sterilization destroys or removes all forms of microbial life, including bacterial spores. It is required for critical instruments that enter sterile tissues or the vascular system.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Sterilization and Disinfection in Maternity",
+"question_text": "Which method commonly uses saturated steam under pressure to sterilize heat-resistant medical instruments?",
+"choices": [
+{"text": "Autoclaving", "is_correct": true},
+{"text": "Wiping with ordinary detergent", "is_correct": false},
+{"text": "Air drying", "is_correct": false},
+{"text": "Routine surface cleaning", "is_correct": false}
+],
+"rationale": "An autoclave uses saturated steam under pressure at a controlled temperature and exposure time to achieve sterilization. Correct loading, cycle monitoring and instrument preparation are essential for effective processing.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Standard Precautions",
+"question_text": "Standard precautions should be applied to which patients in a maternity healthcare facility?",
+"choices": [
+{"text": "Only patients diagnosed with HIV infection", "is_correct": false},
+{"text": "Only patients with visible bleeding", "is_correct": false},
+{"text": "All patients, regardless of their suspected or confirmed infection status", "is_correct": true},
+{"text": "Only patients admitted to the isolation room", "is_correct": false}
+],
+"rationale": "Standard precautions are the minimum infection prevention practices applied to all patients in every healthcare setting. They are based on the principle that blood, body fluids, secretions, excretions, non-intact skin and mucous membranes may contain infectious agents.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "Puerperal sepsis refers to which condition?",
+"choices": [
+{"text": "A systemic or genital tract infection occurring in association with childbirth or the postpartum period", "is_correct": true},
+{"text": "A normal increase in vaginal discharge after delivery", "is_correct": false},
+{"text": "A fungal infection limited to the mother's skin", "is_correct": false},
+{"text": "A condition caused exclusively by retained breast milk", "is_correct": false}
+],
+"rationale": "Puerperal sepsis is an infection of the genital tract or related tissues occurring after childbirth and may progress to severe sepsis. Early recognition and prompt treatment are essential to prevent maternal complications and death.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Immunization in Pregnancy and for Newborns",
+"question_text": "Which vaccine is routinely used during pregnancy in Ghana to protect mothers and newborns against maternal and neonatal tetanus?",
+"choices": [
+{"text": "Tetanus-containing vaccine", "is_correct": true},
+{"text": "Measles-rubella vaccine", "is_correct": false},
+{"text": "Oral polio vaccine", "is_correct": false},
+{"text": "BCG vaccine", "is_correct": false}
+],
+"rationale": "Tetanus-containing vaccination during pregnancy helps protect the mother and provides transplacental antibodies that protect the newborn against tetanus. The number and timing of doses depend on the woman's previous vaccination history and the national immunization schedule.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "Which microorganism causes syphilis?",
+"choices": [
+{"text": "Treponema pallidum", "is_correct": true},
+{"text": "Neisseria gonorrhoeae", "is_correct": false},
+{"text": "Mycobacterium tuberculosis", "is_correct": false},
+{"text": "Hepatitis B virus", "is_correct": false}
+],
+"rationale": "Syphilis is a sexually transmitted infection caused by the spirochaete bacterium Treponema pallidum. Untreated maternal infection can cross the placenta and cause congenital syphilis, stillbirth or other adverse pregnancy outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "Which virus is responsible for hepatitis B infection?",
+"choices": [
+{"text": "Hepatitis B virus", "is_correct": true},
+{"text": "Human immunodeficiency virus", "is_correct": false},
+{"text": "Influenza virus", "is_correct": false},
+{"text": "Human papillomavirus", "is_correct": false}
+],
+"rationale": "Hepatitis B is caused by the hepatitis B virus, which primarily affects the liver. Maternal infection is important because transmission can occur from an infected mother to her infant, particularly around childbirth.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "Which bacterium causes tuberculosis?",
+"choices": [
+{"text": "Mycobacterium tuberculosis", "is_correct": true},
+{"text": "Streptococcus agalactiae", "is_correct": false},
+{"text": "Escherichia coli", "is_correct": false},
+{"text": "Clostridium tetani", "is_correct": false}
+],
+"rationale": "Tuberculosis is caused by Mycobacterium tuberculosis. It is transmitted mainly through airborne particles released by a person with infectious pulmonary or laryngeal TB.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A midwife is preparing to conduct a vaginal examination on a woman in labour. Which infection prevention practice is most appropriate?",
+"choices": [
+{"text": "Perform hand hygiene and use clean examination gloves", "is_correct": true},
+{"text": "Wear gloves without performing hand hygiene", "is_correct": false},
+{"text": "Use the same gloves for every woman if they appear clean", "is_correct": false},
+{"text": "Rely on hand hygiene after the examination only", "is_correct": false}
+],
+"rationale": "Hand hygiene should be performed before patient contact and before an aseptic procedure, and clean gloves should be used for a vaginal examination. Gloves do not replace hand hygiene and must be changed between patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A midwife removes a pair of gloves after assisting with the delivery of a baby. What should she do next before attending to another patient?",
+"choices": [
+{"text": "Perform hand hygiene", "is_correct": true},
+{"text": "Put on another pair of gloves immediately without hand hygiene", "is_correct": false},
+{"text": "Wipe her hands on a clean towel", "is_correct": false},
+{"text": "Rinse her hands with water only", "is_correct": false}
+],
+"rationale": "Hand hygiene is required immediately after glove removal because microorganisms may contaminate the hands during glove removal or through unnoticed glove defects. New gloves must be used for the next patient when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "During an assisted vaginal birth, a midwife anticipates splashing of blood and amniotic fluid. Which PPE combination is most appropriate?",
+"choices": [
+{"text": "Gloves, fluid-resistant gown or apron, mask and eye or face protection", "is_correct": true},
+{"text": "Gloves only", "is_correct": false},
+{"text": "Surgical cap and shoe covers only", "is_correct": false},
+{"text": "Mask only", "is_correct": false}
+],
+"rationale": "Delivery may expose healthcare workers to blood and other body fluids through skin contact and splashes to mucous membranes. Gloves, protective clothing, a mask and eye or face protection provide barriers against the anticipated exposure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "A midwife discovers that several women in a maternity ward developed infections after receiving care from a healthcare worker who did not perform hand hygiene between patients. Which link in the chain of infection was most directly involved?",
+"choices": [
+{"text": "Mode of transmission", "is_correct": true},
+{"text": "Portal of exit only", "is_correct": false},
+{"text": "Susceptible host only", "is_correct": false},
+{"text": "Infectious agent only", "is_correct": false}
+],
+"rationale": "Contaminated hands can transfer microorganisms from one patient or surface to another, making them a vehicle of transmission. Hand hygiene interrupts this link and reduces cross-infection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "A woman with pulmonary tuberculosis is admitted to a maternity ward. Which transmission-based precaution is most important to reduce the spread of infection?",
+"choices": [
+{"text": "Airborne precautions, including appropriate respiratory protection and suitable ventilation", "is_correct": true},
+{"text": "Contact precautions only, without respiratory protection", "is_correct": false},
+{"text": "Using sterile gloves whenever speaking to the woman", "is_correct": false},
+{"text": "Keeping all windows closed and avoiding ventilation", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted through airborne particles that may remain suspended in the air. Airborne precautions include appropriate respiratory protection, suitable ventilation and patient placement according to facility infection prevention protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection in Maternity",
+"question_text": "After a vaginal delivery, reusable instruments that will enter sterile tissue during a subsequent procedure must undergo which processing method?",
+"choices": [
+{"text": "Cleaning followed by validated sterilization", "is_correct": true},
+{"text": "Wiping with a dry cloth only", "is_correct": false},
+{"text": "Rinsing under running water only", "is_correct": false},
+{"text": "Low-level disinfection only", "is_correct": false}
+],
+"rationale": "Reusable critical instruments must be thoroughly cleaned before sterilization because organic material can interfere with the sterilization process. Validated sterilization destroys all forms of microbial life, including bacterial spores.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection in Maternity",
+"question_text": "A midwife notices blood on a delivery trolley after a birth. What is the appropriate action before the trolley is used for another patient?",
+"choices": [
+{"text": "Wear appropriate PPE, remove visible soil safely, then clean and disinfect the surface using an approved product", "is_correct": true},
+{"text": "Cover the blood with a clean sheet", "is_correct": false},
+{"text": "Wipe the blood with a dry cloth and reuse the trolley", "is_correct": false},
+{"text": "Spray perfume over the affected area", "is_correct": false}
+],
+"rationale": "Blood-contaminated environmental surfaces require safe cleaning followed by appropriate disinfection. Organic material should be removed because it can reduce the effectiveness of some disinfectants.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Standard Precautions",
+"question_text": "A midwife is caring for a woman whose HIV status is unknown. Which approach should guide her infection prevention practices?",
+"choices": [
+{"text": "Apply standard precautions during all relevant care procedures", "is_correct": true},
+{"text": "Assume that the woman has no infection and omit gloves", "is_correct": false},
+{"text": "Apply precautions only after an HIV test is positive", "is_correct": false},
+{"text": "Use the same instruments for all patients without reprocessing", "is_correct": false}
+],
+"rationale": "Standard precautions must be applied to every patient regardless of known infection status. A patient's HIV status should not determine whether basic infection prevention measures are followed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Standard Precautions",
+"question_text": "A midwife sustains a needlestick injury while disposing of a used injection needle. What should she do immediately?",
+"choices": [
+{"text": "Wash the affected area with soap and running water and report the exposure promptly", "is_correct": true},
+{"text": "Squeeze the wound forcefully and apply bleach", "is_correct": false},
+{"text": "Ignore the injury if the needle appears clean", "is_correct": false},
+{"text": "Cover the injury and wait until the end of the week to report it", "is_correct": false}
+],
+"rationale": "The exposed area should be washed promptly with soap and running water, and the incident should be reported immediately for risk assessment. Timely assessment is essential because HIV post-exposure prophylaxis, hepatitis B prevention and follow-up may be indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Standard Precautions",
+"question_text": "A midwife has completed a procedure involving blood-contaminated materials. Which action is the safest method of disposing of a used hypodermic needle?",
+"choices": [
+{"text": "Place it immediately into an approved puncture-resistant sharps container without recapping", "is_correct": true},
+{"text": "Recap it using both hands before disposal", "is_correct": false},
+{"text": "Leave it on the procedure trolley for the cleaner", "is_correct": false},
+{"text": "Break it manually before placing it in a waste bin", "is_correct": false}
+],
+"rationale": "Used needles should be discarded immediately into an approved puncture-resistant sharps container at the point of use. Recapping, bending or breaking needles increases the risk of needlestick injuries and blood-borne infection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A woman develops fever, lower abdominal pain and foul-smelling lochia two days after delivery. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Puerperal infection or puerperal sepsis", "is_correct": true},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Physiological breast engorgement", "is_correct": false},
+{"text": "Normal postpartum diuresis", "is_correct": false}
+],
+"rationale": "Fever, lower abdominal pain and offensive lochia are concerning features of postpartum genital tract infection. The woman requires prompt clinical assessment because puerperal infection can progress to sepsis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A newborn becomes lethargic, feeds poorly and develops an abnormal temperature on the third day of life. What condition should the midwife consider?",
+"choices": [
+{"text": "Neonatal sepsis", "is_correct": true},
+{"text": "Normal neonatal adaptation", "is_correct": false},
+{"text": "Physiological jaundice alone", "is_correct": false},
+{"text": "Normal sleep pattern", "is_correct": false}
+],
+"rationale": "Poor feeding, lethargy and temperature instability are important warning signs of neonatal sepsis. Newborns may deteriorate rapidly, so urgent assessment and treatment are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A midwife is assisting with the care of a woman who has a caesarean section wound. Which practice best reduces the risk of surgical site infection during dressing changes?",
+"choices": [
+{"text": "Perform hand hygiene and use an aseptic technique with appropriate sterile supplies", "is_correct": true},
+{"text": "Touch the wound directly with unwashed hands", "is_correct": false},
+{"text": "Reuse a dressing from the previous procedure", "is_correct": false},
+{"text": "Clean the wound using any available household chemical", "is_correct": false}
+],
+"rationale": "Aseptic technique reduces the introduction of microorganisms into the surgical wound. Hand hygiene, appropriate PPE, sterile dressing materials and correct wound-care procedures help prevent surgical site infections.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization in Pregnancy and for Newborns",
+"question_text": "A pregnant woman attending antenatal care has an incomplete history of tetanus-containing vaccination. What should the midwife do?",
+"choices": [
+{"text": "Review her immunization history and provide the appropriate doses according to the national schedule", "is_correct": true},
+{"text": "Assume that every pregnant woman has complete immunity", "is_correct": false},
+{"text": "Give BCG vaccine to protect her against tetanus", "is_correct": false},
+{"text": "Advise her that vaccination is never indicated during pregnancy", "is_correct": false}
+],
+"rationale": "The midwife should establish the woman's previous tetanus-containing vaccination history and arrange the appropriate doses under the national immunization schedule. This protects against maternal and neonatal tetanus.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization in Pregnancy and for Newborns",
+"question_text": "A healthy newborn is delivered at a health facility in Ghana. Which action is consistent with routine newborn immunization practice?",
+"choices": [
+{"text": "Ensure the newborn receives vaccines due at birth under the national immunization schedule", "is_correct": true},
+{"text": "Delay all immunization until the child starts school", "is_correct": false},
+{"text": "Administer every vaccine intended for older children immediately after birth", "is_correct": false},
+{"text": "Withhold all vaccines unless the newborn develops an infection", "is_correct": false}
+],
+"rationale": "Newborns should receive vaccines due at birth under Ghana's national Expanded Programme on Immunization schedule, subject to clinical assessment and applicable guidance. The immunization record should be completed and caregivers informed about subsequent appointments.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman attending a CHPS compound presents with fever, chills and headache in a malaria-endemic area. What should the midwife do?",
+"choices": [
+{"text": "Arrange prompt malaria testing and clinical assessment", "is_correct": true},
+{"text": "Assume that the fever is a normal feature of pregnancy", "is_correct": false},
+{"text": "Start antimalarial treatment without any clinical assessment in every case", "is_correct": false},
+{"text": "Advise her to return only if the fever lasts for two weeks", "is_correct": false}
+],
+"rationale": "Fever in pregnancy requires prompt assessment, and malaria should be considered in endemic areas such as Ghana. Testing helps guide appropriate treatment and reduces the risk of complications for both mother and fetus.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman is diagnosed with malaria. Why is prompt treatment particularly important?",
+"choices": [
+{"text": "Malaria can cause maternal anaemia, severe illness and adverse fetal outcomes", "is_correct": true},
+{"text": "Malaria always causes congenital abnormalities in every pregnancy", "is_correct": false},
+{"text": "Malaria affects only the mother's skin", "is_correct": false},
+{"text": "Malaria cannot affect the placenta", "is_correct": false}
+],
+"rationale": "Malaria during pregnancy can cause maternal anaemia, placental infection, fetal growth restriction, low birth weight and other adverse outcomes. Prompt diagnosis and treatment according to current national guidelines are therefore essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman is found to be HIV-positive during antenatal testing. Which intervention is most important for reducing mother-to-child transmission?",
+"choices": [
+{"text": "Link her promptly to appropriate antiretroviral treatment and prevention of mother-to-child transmission services", "is_correct": true},
+{"text": "Advise her to stop all antenatal visits", "is_correct": false},
+{"text": "Delay HIV care until after the baby is born", "is_correct": false},
+{"text": "Recommend that she avoids all contact with her newborn", "is_correct": false}
+],
+"rationale": "Prompt linkage to antiretroviral therapy and prevention of mother-to-child transmission services substantially reduces the risk of HIV transmission. Continued maternal care, appropriate infant prophylaxis and follow-up testing are also important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman has a positive syphilis screening result during her first antenatal visit. What is the appropriate next step?",
+"choices": [
+{"text": "Arrange prompt clinical evaluation and treatment according to national guidelines, including assessment of her partner", "is_correct": true},
+{"text": "Wait until delivery before considering treatment", "is_correct": false},
+{"text": "Ignore the result if she has no genital ulcer", "is_correct": false},
+{"text": "Treat only the newborn after birth", "is_correct": false}
+],
+"rationale": "Syphilis in pregnancy requires prompt evaluation and appropriate treatment, usually with penicillin according to the stage and applicable guidelines. Partner evaluation and treatment help prevent reinfection, while timely maternal treatment reduces the risk of congenital syphilis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman tests positive for hepatitis B surface antigen (HBsAg). Which action is most appropriate?",
+"choices": [
+{"text": "Arrange further assessment and plan appropriate prevention of transmission to the newborn", "is_correct": true},
+{"text": "Assume that the result confirms immunity against hepatitis B", "is_correct": false},
+{"text": "Tell her that hepatitis B cannot be transmitted during childbirth", "is_correct": false},
+{"text": "Discontinue all antenatal care because she is infectious", "is_correct": false}
+],
+"rationale": "A positive HBsAg result indicates current hepatitis B infection and requires further assessment and appropriate maternal care. Planning for timely newborn hepatitis B prevention according to national guidance is important to reduce perinatal transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman with a persistent cough, weight loss, night sweats and a history of contact with a person with tuberculosis attends antenatal care. What should the midwife do?",
+"choices": [
+{"text": "Arrange prompt evaluation for tuberculosis and apply appropriate respiratory infection precautions", "is_correct": true},
+{"text": "Assume that the symptoms are caused by normal pregnancy changes", "is_correct": false},
+{"text": "Give routine antibiotics without further assessment", "is_correct": false},
+{"text": "Advise her to avoid all antenatal services until delivery", "is_correct": false}
+],
+"rationale": "Persistent cough, weight loss and night sweats are suggestive of tuberculosis and require diagnostic evaluation. Appropriate respiratory precautions help protect other patients and healthcare workers while assessment and treatment are arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman is found to have a urinary tract infection caused by Escherichia coli. Why is treatment important?",
+"choices": [
+{"text": "Untreated infection may progress to pyelonephritis and increase pregnancy-related complications", "is_correct": true},
+{"text": "Escherichia coli is always a harmless organism in the urinary tract", "is_correct": false},
+{"text": "Urinary tract infections cannot affect pregnant women", "is_correct": false},
+{"text": "Treatment is necessary only when the woman develops a skin rash", "is_correct": false}
+],
+"rationale": "Escherichia coli is a common cause of urinary tract infection. During pregnancy, untreated infection can progress to pyelonephritis and is associated with complications such as preterm birth.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman reports that her sexual partner has been diagnosed with a sexually transmitted infection. What should the midwife recommend?",
+"choices": [
+{"text": "Arrange appropriate assessment, testing and treatment for the woman and advise partner management", "is_correct": true},
+{"text": "Reassure her that she cannot acquire an infection if she has no symptoms", "is_correct": false},
+{"text": "Wait until labour before arranging any investigation", "is_correct": false},
+{"text": "Prescribe medication without identifying the possible infection or assessing her", "is_correct": false}
+],
+"rationale": "Sexually transmitted infections may be asymptomatic, particularly in women, but can still cause maternal and fetal complications. Assessment, appropriate testing, treatment and partner management help prevent complications and reinfection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Classification of Microorganisms",
+"question_text": "A laboratory report identifies Group B Streptococcus in a pregnant woman's vaginal and rectal screening sample. Which statement best describes this organism?",
+"choices": [
+{"text": "It is a bacterium that can colonize the gastrointestinal and genital tracts", "is_correct": true},
+{"text": "It is a virus that causes malaria", "is_correct": false},
+{"text": "It is a fungus that causes tuberculosis", "is_correct": false},
+{"text": "It is a parasite transmitted by mosquitoes", "is_correct": false}
+],
+"rationale": "Group B Streptococcus, also known as Streptococcus agalactiae, is a bacterium that may colonize the gastrointestinal and genital tracts without causing symptoms. Maternal colonization can expose the newborn to infection during childbirth.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A woman develops a temperature of 39°C, rapid pulse and severe lower abdominal pain after delivery. What should the midwife do first?",
+"choices": [
+{"text": "Initiate urgent assessment for maternal sepsis, including vital signs and escalation for emergency care", "is_correct": true},
+{"text": "Reassure her that fever is a normal part of uterine involution", "is_correct": false},
+{"text": "Wait until the next routine ward round before reporting the findings", "is_correct": false},
+{"text": "Give her a warm drink and allow her to sleep", "is_correct": false}
+],
+"rationale": "High fever, tachycardia and severe abdominal pain after delivery may indicate serious infection and maternal sepsis. Early recognition, urgent escalation, appropriate investigations and timely antimicrobial treatment are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A newborn has a temperature instability, respiratory distress and poor feeding. What is the midwife's priority action?",
+"choices": [
+{"text": "Arrange immediate neonatal assessment and initiate urgent management for suspected sepsis", "is_correct": true},
+{"text": "Wait for the newborn to develop a skin rash", "is_correct": false},
+{"text": "Discharge the newborn because temperature instability is always normal", "is_correct": false},
+{"text": "Give oral fluids and observe for several days without referral", "is_correct": false}
+],
+"rationale": "Respiratory distress, poor feeding and temperature instability are danger signs that may indicate neonatal sepsis. Immediate assessment and treatment are required because neonatal infection can progress rapidly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A midwife's hands are visibly contaminated with blood after assisting with a delivery. Which hand hygiene method is most appropriate?",
+"choices": [
+{"text": "Wash with soap and water", "is_correct": true},
+{"text": "Use alcohol-based hand rub without removing visible contamination", "is_correct": false},
+{"text": "Wipe the hands on the uniform", "is_correct": false},
+{"text": "Put on another pair of gloves without cleaning the hands", "is_correct": false}
+],
+"rationale": "When hands are visibly soiled or contaminated with blood and body fluids, they should be washed with soap and water. Alcohol-based hand rub is appropriate in many other clinical situations when hands are not visibly soiled.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection in Maternity",
+"question_text": "A midwife is selecting a method to process a reusable vaginal speculum that contacts mucous membranes but does not normally enter sterile tissue. Which principle should guide the processing?",
+"choices": [
+{"text": "It requires at least high-level disinfection or sterilization according to its classification and manufacturer instructions", "is_correct": true},
+{"text": "It requires only wiping with a dry cloth", "is_correct": false},
+{"text": "It can be reused immediately after rinsing with water", "is_correct": false},
+{"text": "It never requires processing if gloves are worn", "is_correct": false}
+],
+"rationale": "A speculum is a semicritical device because it contacts mucous membranes. Semicritical devices require at least high-level disinfection, while sterilization may be used when compatible with the device and applicable processing guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Standard Precautions",
+"question_text": "A midwife is caring for a woman with a draining wound. Which action best protects other patients and healthcare workers?",
+"choices": [
+{"text": "Use appropriate gloves and protective clothing, contain wound drainage and perform hand hygiene", "is_correct": true},
+{"text": "Leave the wound uncovered so that it can drain onto the bed", "is_correct": false},
+{"text": "Use the same dressing materials for several patients", "is_correct": false},
+{"text": "Avoid cleaning the surrounding environment", "is_correct": false}
+],
+"rationale": "Standard precautions require appropriate PPE, safe handling of wound drainage, hand hygiene and environmental cleaning. These measures reduce the risk of transmitting microorganisms through contact with infectious material.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "A midwife identifies that an infected patient is contaminating shared equipment used for several women in the maternity ward. Which intervention most directly interrupts this route of transmission?",
+"choices": [
+{"text": "Clean and disinfect shared equipment between patients using an appropriate method", "is_correct": true},
+{"text": "Allow all patients to use the equipment without cleaning", "is_correct": false},
+{"text": "Store the equipment beside the patient's bed after use", "is_correct": false},
+{"text": "Use the equipment only when it appears visibly clean", "is_correct": false}
+],
+"rationale": "Shared equipment can act as a vehicle for indirect contact transmission when contaminated between patients. Appropriate cleaning and disinfection interrupt the transmission pathway.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman living in a malaria-endemic community asks how she can reduce her risk of malaria. Which advice is most appropriate?",
+"choices": [
+{"text": "Sleep under an insecticide-treated mosquito net and attend antenatal care for recommended malaria prevention", "is_correct": true},
+{"text": "Avoid drinking cold water because it attracts mosquitoes", "is_correct": false},
+{"text": "Take any available antimalarial medicine every day without clinical guidance", "is_correct": false},
+{"text": "Stop attending antenatal care once she obtains a mosquito net", "is_correct": false}
+],
+"rationale": "Insecticide-treated nets reduce exposure to malaria-transmitting mosquitoes. Pregnant women should also receive recommended malaria preventive interventions through antenatal care in accordance with national guidelines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization in Pregnancy and for Newborns",
+"question_text": "A midwife is explaining the purpose of the BCG vaccine to the mother of a newborn. Which statement is correct?",
+"choices": [
+{"text": "It helps protect children against severe forms of tuberculosis", "is_correct": true},
+{"text": "It prevents malaria throughout childhood", "is_correct": false},
+{"text": "It provides treatment for neonatal sepsis", "is_correct": false},
+{"text": "It prevents all forms of respiratory infection", "is_correct": false}
+],
+"rationale": "BCG vaccine protects against severe forms of childhood tuberculosis, including tuberculous meningitis and disseminated TB. It does not prevent all respiratory infections or treat an existing infection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A woman with HIV asks whether she can breastfeed her baby. What is the most appropriate response by the midwife?",
+"choices": [
+{"text": "Provide counselling and support on infant feeding in accordance with current national prevention of mother-to-child transmission guidance", "is_correct": true},
+{"text": "Tell her that breastfeeding is always prohibited for every woman with HIV", "is_correct": false},
+{"text": "Advise her to stop antiretroviral treatment while breastfeeding", "is_correct": false},
+{"text": "Tell her that HIV cannot be transmitted through breastfeeding", "is_correct": false}
+],
+"rationale": "HIV can be transmitted through breastfeeding, but infant feeding recommendations must follow current national guidance and consider the mother's treatment and clinical circumstances. Counselling should support informed decisions, adherence to antiretroviral therapy and appropriate infant follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A midwife observes that a woman who had prolonged rupture of membranes has developed fever during labour and the fetal heart rate is elevated. What is the most appropriate action?",
+"choices": [
+{"text": "Urgently assess for suspected intra-amniotic infection and escalate for appropriate obstetric management", "is_correct": true},
+{"text": "Ignore the findings because prolonged rupture of membranes is always harmless", "is_correct": false},
+{"text": "Discharge the woman to continue labour at home", "is_correct": false},
+{"text": "Delay assessment until the placenta has been delivered", "is_correct": false}
+],
+"rationale": "Maternal fever following prolonged rupture of membranes, particularly with fetal tachycardia, raises concern for intra-amniotic infection. Prompt obstetric assessment and appropriate management reduce the risk of maternal and neonatal complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A woman develops signs of sepsis following caesarean section. Her blood pressure is falling, pulse is rapid and she is confused. Which action should the midwife prioritize?",
+"choices": [
+{"text": "Activate the emergency response and initiate immediate sepsis management while arranging urgent senior review", "is_correct": true},
+{"text": "Wait for the blood culture result before escalating care", "is_correct": false},
+{"text": "Encourage her to walk to improve circulation", "is_correct": false},
+{"text": "Give oral fluids and reassess her the following day", "is_correct": false}
+],
+"rationale": "Hypotension, tachycardia and altered mental status suggest severe sepsis with possible septic shock. Emergency escalation, prompt resuscitation, investigations and timely antimicrobial treatment must not be delayed while waiting for culture results.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infection Process and Chain of Infection",
+"question_text": "Several newborns in a maternity unit develop infections caused by the same bacterial organism. An investigation finds that one reusable instrument was inadequately processed and used on each newborn. Which explanation best accounts for the outbreak?",
+"choices": [
+{"text": "The instrument acted as a contaminated vehicle transmitting the infectious agent between newborns", "is_correct": true},
+{"text": "The newborns developed infection because all bacteria are naturally harmless", "is_correct": false},
+{"text": "The infections were caused by airborne transmission only", "is_correct": false},
+{"text": "The outbreak occurred because sterilization destroys all microorganisms too effectively", "is_correct": false}
+],
+"rationale": "An inadequately processed reusable instrument can carry microorganisms from one patient to another through indirect contact transmission. This outbreak indicates a failure in instrument reprocessing and infection prevention procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sterilization and Disinfection in Maternity",
+"question_text": "A midwife receives a sterile instrument pack with a torn wrapper and a wet area. The pack is needed urgently for an obstetric procedure. What should she do?",
+"choices": [
+{"text": "Reject the pack and obtain a properly processed pack with intact packaging", "is_correct": true},
+{"text": "Use the pack if the instruments appear clean", "is_correct": false},
+{"text": "Dry the wrapper and proceed with the procedure", "is_correct": false},
+{"text": "Cover the damaged area with adhesive tape and use the pack", "is_correct": false}
+],
+"rationale": "A torn or wet sterile pack is considered compromised because microorganisms may have penetrated the packaging. The instruments must not be treated as sterile and should be replaced with a properly processed pack.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Hand Hygiene and Personal Protective Equipment",
+"question_text": "A midwife is caring for a woman with suspected infectious pulmonary tuberculosis and is required to enter the room for an assessment. Which PPE decision is most appropriate?",
+"choices": [
+{"text": "Use a fit-tested particulate respirator, such as an N95 or equivalent, according to facility airborne precautions", "is_correct": true},
+{"text": "Use examination gloves alone because TB is transmitted through blood", "is_correct": false},
+{"text": "Use a cloth apron without respiratory protection", "is_correct": false},
+{"text": "Wear a surgical cap only because it filters airborne particles", "is_correct": false}
+],
+"rationale": "Pulmonary TB is transmitted through airborne particles, so a fit-tested particulate respirator is required for healthcare workers entering an area where airborne precautions apply. Gloves and gowns may be needed for other anticipated exposures but do not replace respiratory protection.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman with untreated syphilis has no visible genital lesions but has a positive screening test. She asks whether her baby can still be affected. Which response is most accurate?",
+"choices": [
+{"text": "Yes, maternal syphilis can cross the placenta and infect the fetus even when the mother has no visible lesions", "is_correct": true},
+{"text": "No, fetal infection occurs only when the mother has visible genital ulcers during labour", "is_correct": false},
+{"text": "No, the placenta completely prevents transmission of Treponema pallidum", "is_correct": false},
+{"text": "Yes, but only through mosquito bites after birth", "is_correct": false}
+],
+"rationale": "Treponema pallidum can cross the placenta and cause congenital syphilis, including in women without obvious symptoms. Prompt maternal diagnosis and appropriate treatment are essential to prevent fetal infection and adverse pregnancy outcomes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman with HIV has stopped taking her antiretroviral medication because she feels healthy. Her viral load is subsequently found to be detectable. Which explanation best describes the increased risk to her infant?",
+"choices": [
+{"text": "Poor treatment adherence can allow viral replication and increase the risk of mother-to-child transmission", "is_correct": true},
+{"text": "A detectable viral load means the woman has developed immunity against HIV", "is_correct": false},
+{"text": "Stopping treatment prevents HIV from crossing the placenta", "is_correct": false},
+{"text": "Maternal viral load has no relationship to the risk of HIV transmission", "is_correct": false}
+],
+"rationale": "Antiretroviral therapy suppresses HIV replication and reduces the risk of transmission during pregnancy, childbirth and breastfeeding. Treatment interruption can lead to viral rebound and increase the risk of mother-to-child transmission.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman with fever and chills is diagnosed with severe malaria. She is pale, weak and has reduced fetal movements. Which interpretation is most appropriate?",
+"choices": [
+{"text": "Severe maternal malaria may cause anaemia and compromise fetal wellbeing, requiring urgent management", "is_correct": true},
+{"text": "Reduced fetal movements are an expected effect of all uncomplicated malaria infections", "is_correct": false},
+{"text": "Maternal anaemia protects the fetus by reducing blood viscosity", "is_correct": false},
+{"text": "Severe malaria affects only the maternal skin and has no obstetric implications", "is_correct": false}
+],
+"rationale": "Severe malaria can cause significant maternal anaemia and systemic illness, which may compromise oxygen delivery and fetal wellbeing. The woman requires urgent obstetric and medical management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A woman develops fever and uterine tenderness after delivery. The midwife suspects puerperal sepsis, but the blood culture result will take several days. Which management principle is most appropriate?",
+"choices": [
+{"text": "Escalate promptly, obtain appropriate specimens where feasible and initiate indicated treatment without waiting for culture results", "is_correct": true},
+{"text": "Withhold all treatment until the exact microorganism is identified", "is_correct": false},
+{"text": "Discharge the woman and ask her to return when the culture is ready", "is_correct": false},
+{"text": "Use an antiseptic vaginal wash as the only treatment", "is_correct": false}
+],
+"rationale": "Suspected maternal sepsis is a medical emergency and treatment should not be delayed while awaiting microbiological results. Appropriate specimens should be collected when feasible, followed by timely empirical antimicrobial therapy and supportive management according to clinical protocols.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A newborn receiving treatment for suspected sepsis becomes increasingly lethargic, develops grunting respirations and has poor peripheral perfusion. What should the midwife do first?",
+"choices": [
+{"text": "Escalate immediately for emergency neonatal assessment and support of airway, breathing and circulation", "is_correct": true},
+{"text": "Continue routine observations at the usual interval", "is_correct": false},
+{"text": "Stop all treatment because the newborn is becoming sleepy", "is_correct": false},
+{"text": "Feed the newborn orally and wait for improvement", "is_correct": false}
+],
+"rationale": "Grunting, lethargy and poor perfusion indicate possible deterioration and circulatory or respiratory compromise. Immediate escalation and assessment of airway, breathing and circulation are priorities while definitive neonatal sepsis management continues.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sterilization and Disinfection in Maternity",
+"question_text": "An instrument used during an obstetric procedure has visible blood and tissue remaining on its surface. A staff member proposes placing it directly into the autoclave. Which response is most appropriate?",
+"choices": [
+{"text": "The instrument must first undergo appropriate cleaning because organic material can interfere with effective sterilization", "is_correct": true},
+{"text": "Visible blood improves the effectiveness of steam sterilization", "is_correct": false},
+{"text": "The instrument should be stored until the next delivery", "is_correct": false},
+{"text": "The instrument can be considered sterile once it becomes dry", "is_correct": false}
+],
+"rationale": "Cleaning removes blood, tissue and other organic material that can protect microorganisms from the sterilization process. Instruments must be properly cleaned, inspected, packaged and processed using a validated sterilization cycle.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Standard Precautions",
+"question_text": "An infection prevention audit in a maternity unit reveals that staff frequently wear the same gloves while moving between patients and handling clean equipment. Which conclusion is most appropriate?",
+"choices": [
+{"text": "The practice creates a risk of cross-transmission and indicates failure to follow standard precautions", "is_correct": true},
+{"text": "The practice is acceptable if the gloves do not have visible holes", "is_correct": false},
+{"text": "Gloves become sterile after contact with room air", "is_correct": false},
+{"text": "The practice prevents infection because gloves replace hand hygiene", "is_correct": false}
+],
+"rationale": "Gloves can become contaminated during patient care and may transfer microorganisms to other patients or clean equipment. Gloves must be changed between patients and between contaminated and clean tasks, with hand hygiene performed at the appropriate moments.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Infectious Diseases in Pregnancy",
+"question_text": "A pregnant woman is HBsAg-positive and has a high hepatitis B viral load. Which factor is most important when planning care for her newborn?",
+"choices": [
+{"text": "Ensuring timely newborn hepatitis B prevention according to national guidance and specialist advice", "is_correct": true},
+{"text": "Assuming that maternal infection cannot be transmitted during childbirth", "is_correct": false},
+{"text": "Delaying all newborn immunization until the child is one year old", "is_correct": false},
+{"text": "Separating the newborn permanently from the mother without assessment", "is_correct": false}
+],
+"rationale": "A high maternal hepatitis B viral load increases the risk of perinatal transmission. Timely newborn prophylaxis and immunization, together with appropriate maternal assessment and specialist management, are important components of prevention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Healthcare-Associated Infections in Obstetrics",
+"question_text": "A maternity ward reports an increase in neonatal sepsis cases. Review findings show poor hand hygiene compliance, inadequate cleaning of shared equipment and inconsistent sterilization records. Which intervention is most likely to address the underlying problem?",
+"choices": [
+{"text": "Implement a comprehensive infection prevention improvement programme with staff training, monitoring and reprocessing audits", "is_correct": true},
+{"text": "Give antibiotics to every newborn regardless of clinical indication", "is_correct": false},
+{"text": "Stop all newborn examinations until the outbreak disappears", "is_correct": false},
+{"text": "Focus only on cleaning the floors and ignore equipment processing", "is_correct": false}
+],
+"rationale": "The findings indicate multiple failures in infection prevention rather than a single isolated problem. A coordinated programme addressing hand hygiene, equipment decontamination, sterilization, environmental cleaning and compliance monitoring is needed to reduce healthcare-associated neonatal infections.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
