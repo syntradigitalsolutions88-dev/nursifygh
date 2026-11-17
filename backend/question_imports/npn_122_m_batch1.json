@@ -1,0 +1,802 @@
+{
+"courses": [
+{
+"course_code": "NPN-122-M",
+"course_title": "Nursing Process",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to the Nursing Process in Midwifery",
+"Midwifery Assessment",
+"Nursing Diagnosis and Prioritization",
+"Care Planning",
+"Implementation of Midwifery Care",
+"Evaluation of Nursing Care",
+"Documentation and Reporting",
+"Critical Thinking and Clinical Reasoning"
+],
+"questions": [
+{
+"topic": "Introduction to the Nursing Process",
+"question_text": "Which statement best defines the nursing process in midwifery?",
+"choices": [
+{"text": "A routine checklist used only during antenatal visits", "is_correct": false},
+{"text": "A systematic, patient-centred approach to identifying and meeting the health needs of mothers and babies", "is_correct": true},
+{"text": "A medical procedure performed exclusively by obstetricians", "is_correct": false},
+{"text": "A method of recording hospital admissions and discharges", "is_correct": false}
+],
+"rationale": "The nursing process is a systematic and logical framework for providing individualized nursing care. In midwifery, it guides care for women, newborns and families across pregnancy, labour and the postnatal period.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to the Nursing Process",
+"question_text": "Which sequence correctly represents the five phases of the traditional nursing process?",
+"choices": [
+{"text": "Assessment, planning, diagnosis, evaluation, implementation", "is_correct": false},
+{"text": "Diagnosis, assessment, implementation, planning, evaluation", "is_correct": false},
+{"text": "Assessment, diagnosis, planning, implementation, evaluation", "is_correct": true},
+{"text": "Planning, assessment, diagnosis, evaluation, implementation", "is_correct": false}
+],
+"rationale": "The traditional nursing process follows the sequence assessment, diagnosis, planning, implementation and evaluation. Each phase builds on information and decisions made during the preceding phases.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to the Nursing Process",
+"question_text": "Which characteristic makes the nursing process appropriate for family-centred midwifery care?",
+"choices": [
+{"text": "It allows the midwife to make every decision without consultation", "is_correct": false},
+{"text": "It focuses only on the mother's physical condition", "is_correct": false},
+{"text": "It encourages individualized care and participation of the woman and her family where appropriate", "is_correct": true},
+{"text": "It requires every woman to receive an identical care plan", "is_correct": false}
+],
+"rationale": "Family-centred care recognizes the woman as an active participant in decisions about her health and her baby's wellbeing. The midwife should consider her preferences, needs, cultural context and appropriate family support.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "What is the primary purpose of the assessment phase of the nursing process?",
+"choices": [
+{"text": "To collect and validate information about the woman's health status", "is_correct": true},
+{"text": "To determine whether all planned interventions have succeeded", "is_correct": false},
+{"text": "To select nursing interventions before identifying health needs", "is_correct": false},
+{"text": "To discharge the woman from the maternity unit", "is_correct": false}
+],
+"rationale": "Assessment involves systematic collection, validation, organization and documentation of relevant health information. Accurate assessment provides the evidence needed for nursing diagnoses and care planning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "Which of the following is an example of subjective data collected during antenatal assessment?",
+"choices": [
+{"text": "Blood pressure of 110/70 mmHg", "is_correct": false},
+{"text": "The woman's report of persistent headache", "is_correct": true},
+{"text": "Haemoglobin concentration of 10 g/dL", "is_correct": false},
+{"text": "Observed bilateral ankle oedema", "is_correct": false}
+],
+"rationale": "Subjective data are symptoms or experiences reported by the woman and cannot usually be directly measured by the midwife. A headache described by the woman is subjective, whereas blood pressure and observed oedema are objective findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "Which method is most appropriate for obtaining a woman's obstetric history during her first antenatal visit?",
+"choices": [
+{"text": "Observing her walking into the clinic", "is_correct": false},
+{"text": "Reviewing only her blood pressure reading", "is_correct": false},
+{"text": "Conducting a structured interview using relevant open and closed questions", "is_correct": true},
+{"text": "Asking another patient to describe her previous pregnancies", "is_correct": false}
+],
+"rationale": "A structured interview enables the midwife to obtain relevant information about previous pregnancies, births, medical conditions and current concerns. Open questions encourage the woman to explain her experiences, while focused questions clarify important details.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "What is a nursing diagnosis?",
+"choices": [
+{"text": "A medical identification of the disease causing a patient's symptoms", "is_correct": false},
+{"text": "A clinical judgement about a person's response to actual or potential health conditions", "is_correct": true},
+{"text": "A prescription for medication issued by a midwife", "is_correct": false},
+{"text": "A laboratory report confirming a medical condition", "is_correct": false}
+],
+"rationale": "A nursing diagnosis describes a human response to health conditions or life processes that nursing care can address. It differs from a medical diagnosis, which identifies a disease or pathological condition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "Which component is essential in a correctly formulated problem-focused nursing diagnosis using the PES format?",
+"choices": [
+{"text": "Patient name, examination and treatment", "is_correct": false},
+{"text": "Problem, aetiology and signs or symptoms", "is_correct": true},
+{"text": "Procedure, evaluation and supervision", "is_correct": false},
+{"text": "Prognosis, emergency and solution", "is_correct": false}
+],
+"rationale": "The PES format represents the problem, related aetiology and defining signs or symptoms. It helps the midwife communicate the identified nursing problem and the evidence supporting it.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care Planning",
+"question_text": "Which statement best describes a measurable expected outcome in a midwifery care plan?",
+"choices": [
+{"text": "The woman will feel better soon", "is_correct": false},
+{"text": "The midwife will provide good care throughout admission", "is_correct": false},
+{"text": "The woman will report reduced pain from 8/10 to 3/10 within one hour after appropriate interventions", "is_correct": true},
+{"text": "The woman will be comfortable whenever possible", "is_correct": false}
+],
+"rationale": "An expected outcome should be specific, measurable, achievable, relevant and time-bound. A measurable pain score and defined time frame allow the midwife to evaluate whether the intervention has achieved its intended effect.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "Which activity is an example of an indirect nursing intervention?",
+"choices": [
+{"text": "Assisting a woman to change position during labour", "is_correct": false},
+{"text": "Providing breastfeeding education to a mother", "is_correct": false},
+{"text": "Coordinating a referral for a woman with suspected severe pre-eclampsia", "is_correct": true},
+{"text": "Measuring a newborn's temperature", "is_correct": false}
+],
+"rationale": "Indirect nursing interventions support patient care without involving direct physical contact with the patient at the time of the activity. Coordination of referrals and communication with other healthcare professionals are examples.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Evaluation of Nursing Care",
+"question_text": "What is the main purpose of the evaluation phase of the nursing process?",
+"choices": [
+{"text": "To determine whether the expected patient outcomes have been achieved", "is_correct": true},
+{"text": "To collect the woman's initial health history", "is_correct": false},
+{"text": "To identify a medical diagnosis without further assessment", "is_correct": false},
+{"text": "To prepare a list of medications before admission", "is_correct": false}
+],
+"rationale": "Evaluation compares the woman's current condition with the expected outcomes established during planning. The findings guide decisions to continue, modify or discontinue nursing interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "In the SOAP method of documentation, what does the letter A represent?",
+"choices": [
+{"text": "Admission", "is_correct": false},
+{"text": "Assessment", "is_correct": true},
+{"text": "Action", "is_correct": false},
+{"text": "Administration", "is_correct": false}
+],
+"rationale": "SOAP stands for Subjective, Objective, Assessment and Plan. The assessment section records the healthcare professional's clinical interpretation of the subjective and objective findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "What is the primary purpose of a partograph or labour care monitoring tool during labour?",
+"choices": [
+{"text": "To document only the medications administered during labour", "is_correct": false},
+{"text": "To monitor maternal and fetal wellbeing and the progress of labour", "is_correct": true},
+{"text": "To determine the baby's sex before delivery", "is_correct": false},
+{"text": "To replace the need for clinical assessment", "is_correct": false}
+],
+"rationale": "Labour monitoring tools support systematic observation of labour progress and maternal and fetal wellbeing. They help identify abnormalities early and prompt appropriate clinical action.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Thinking and Clinical Reasoning",
+"question_text": "Which statement best describes critical thinking in midwifery practice?",
+"choices": [
+{"text": "Following instructions without considering the woman's condition", "is_correct": false},
+{"text": "Making clinical decisions based only on personal experience", "is_correct": false},
+{"text": "Using evidence, clinical knowledge and logical judgement to make appropriate care decisions", "is_correct": true},
+{"text": "Avoiding consultation when a clinical situation is uncertain", "is_correct": false}
+],
+"rationale": "Critical thinking involves objective analysis, interpretation and evaluation of relevant information. It enables midwives to make reasoned decisions and recognize when further assessment or referral is necessary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "Which of the following is an example of objective data obtained during a postnatal assessment?",
+"choices": [
+{"text": "The mother reports feeling dizzy", "is_correct": false},
+{"text": "The mother states that breastfeeding is painful", "is_correct": false},
+{"text": "The midwife observes a boggy uterus on abdominal palpation", "is_correct": true},
+{"text": "The mother says she is worried about her newborn", "is_correct": false}
+],
+"rationale": "Objective data are findings observed, measured or verified by the healthcare professional. A boggy uterus identified during examination is an objective finding that may indicate inadequate uterine contraction.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care Planning",
+"question_text": "Which principle should guide the selection of nursing interventions in an individualized midwifery care plan?",
+"choices": [
+{"text": "Interventions should be based on identified needs, evidence and the woman's preferences", "is_correct": true},
+{"text": "Every woman should receive the same interventions regardless of assessment findings", "is_correct": false},
+{"text": "Interventions should be selected only according to the midwife's convenience", "is_correct": false},
+{"text": "The woman's preferences should always be excluded from clinical decisions", "is_correct": false}
+],
+"rationale": "Nursing interventions should address identified health needs and be supported by current evidence and professional standards. The woman should be involved in decisions wherever possible, while urgent clinical risks must be managed appropriately.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "Which statement correctly distinguishes direct nursing care from indirect nursing care?",
+"choices": [
+{"text": "Direct care involves patient contact, while indirect care supports the patient through activities such as coordination and documentation", "is_correct": true},
+{"text": "Direct care is performed only by doctors, while indirect care is performed only by midwives", "is_correct": false},
+{"text": "Direct care involves documentation, while indirect care involves all physical examinations", "is_correct": false},
+{"text": "There is no difference between direct and indirect nursing care", "is_correct": false}
+],
+"rationale": "Direct care involves activities performed with or for the woman or newborn, such as examination, education and physical assistance. Indirect care includes activities such as care coordination, documentation and arranging referrals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "A pregnant woman attends a CHPS compound for her first antenatal visit. She reports a previous stillbirth, but the available antenatal record contains no details of that pregnancy. What should the midwife do next?",
+"choices": [
+{"text": "Ignore the information because it is not recorded in the antenatal card", "is_correct": false},
+{"text": "Record the woman's account, ask relevant follow-up questions and seek available supporting records", "is_correct": true},
+{"text": "Immediately diagnose recurrent stillbirth", "is_correct": false},
+{"text": "Delay all antenatal assessment until the previous hospital sends a report", "is_correct": false}
+],
+"rationale": "The midwife should obtain a detailed obstetric history and document the information provided by the woman. Available records may help validate the history, but their absence should not prevent appropriate current assessment and risk evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "During antenatal assessment, a woman at 32 weeks of gestation reports a severe headache and blurred vision. Her blood pressure is 166/112 mmHg. What should the midwife do FIRST?",
+"choices": [
+{"text": "Advise her to rest at home and return the following week", "is_correct": false},
+{"text": "Arrange routine urine testing before taking further action", "is_correct": false},
+{"text": "Recognize suspected severe pre-eclampsia and initiate urgent assessment, stabilization and referral according to protocol", "is_correct": true},
+{"text": "Provide reassurance because headache is common in pregnancy", "is_correct": false}
+],
+"rationale": "Severe hypertension with headache and visual disturbance suggests pre-eclampsia with severe features and carries a risk of maternal and fetal complications. Immediate clinical assessment, appropriate stabilization and urgent escalation are required rather than routine follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "A midwife is interviewing a pregnant woman who speaks a local language that the midwife does not understand. Which action is most appropriate?",
+"choices": [
+{"text": "Proceed using gestures without checking whether the woman understands", "is_correct": false},
+{"text": "Use an appropriate trained interpreter and maintain the woman's privacy", "is_correct": true},
+{"text": "Ask another patient in the waiting area to interpret sensitive information", "is_correct": false},
+{"text": "Omit the interview and document that the woman refused to provide information", "is_correct": false}
+],
+"rationale": "Effective communication is necessary for accurate assessment and informed participation in care. A suitable interpreter should be used while protecting confidentiality and allowing the woman to express her concerns freely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "A woman at 28 weeks of gestation attends an antenatal clinic and reports that she has not felt fetal movements since the previous evening. What is the most appropriate response?",
+"choices": [
+{"text": "Reassure her that reduced fetal movement is normal in the third trimester", "is_correct": false},
+{"text": "Advise her to wait until the next antenatal appointment", "is_correct": false},
+{"text": "Arrange prompt clinical assessment of fetal wellbeing according to the facility's protocol", "is_correct": true},
+{"text": "Prescribe iron tablets without further assessment", "is_correct": false}
+],
+"rationale": "A significant reduction or absence of fetal movement requires prompt assessment because it may indicate fetal compromise. The midwife should not dismiss the complaint or delay assessment until the next routine visit.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "During an antenatal physical examination, which action should the midwife take before performing abdominal palpation?",
+"choices": [
+{"text": "Explain the procedure, obtain consent and ensure privacy", "is_correct": true},
+{"text": "Ask the woman to remove all her clothing without explanation", "is_correct": false},
+{"text": "Begin palpation immediately to save time", "is_correct": false},
+{"text": "Ask the woman's companion to perform the examination", "is_correct": false}
+],
+"rationale": "The midwife should explain the examination, obtain informed consent and maintain the woman's dignity and privacy. These actions support respectful maternity care and promote cooperation during assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Assessment",
+"question_text": "A pregnant woman attending a CHPS compound has a temperature of 39°C, chills and general body weakness. What should the midwife do FIRST?",
+"choices": [
+{"text": "Document the temperature and allow her to return home", "is_correct": false},
+{"text": "Assess her condition promptly, identify danger signs and arrange appropriate investigations and treatment or referral", "is_correct": true},
+{"text": "Assume she has malaria and provide treatment without assessment", "is_correct": false},
+{"text": "Advise her to drink water and return after one week", "is_correct": false}
+],
+"rationale": "Fever in pregnancy may result from malaria or other infections and can become serious for both mother and fetus. The midwife should assess severity, investigate according to protocol and initiate appropriate treatment or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A woman in labour reports severe abdominal pain and vaginal bleeding. Her blood pressure is falling and she appears pale and restless. Which nursing problem should receive priority attention?",
+"choices": [
+{"text": "Disturbed sleep pattern", "is_correct": false},
+{"text": "Risk for impaired skin integrity", "is_correct": false},
+{"text": "Deficient fluid volume associated with suspected obstetric haemorrhage", "is_correct": true},
+{"text": "Readiness for enhanced knowledge about breastfeeding", "is_correct": false}
+],
+"rationale": "The woman's pallor, bleeding and falling blood pressure suggest significant blood loss and possible haemodynamic instability. Circulatory compromise is an immediate threat to life and takes priority over non-urgent problems.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A midwife identifies acute pain related to uterine contractions in a woman in labour. Which finding would best support this nursing diagnosis?",
+"choices": [
+{"text": "The woman reports pain rated 8/10 during contractions", "is_correct": true},
+{"text": "The woman's blood group is O positive", "is_correct": false},
+{"text": "The woman has a history of childhood immunization", "is_correct": false},
+{"text": "The woman's antenatal booking date is recorded", "is_correct": false}
+],
+"rationale": "A woman's report of pain intensity is relevant subjective evidence supporting an acute pain diagnosis. The midwife should also assess the location, pattern, duration and associated findings to guide appropriate care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "Four women are being cared for in a maternity unit. Which woman should the midwife assess FIRST?",
+"choices": [
+{"text": "A woman requesting assistance with breastfeeding positioning", "is_correct": false},
+{"text": "A woman with severe vaginal bleeding and signs of shock", "is_correct": true},
+{"text": "A woman reporting mild lower back discomfort during pregnancy", "is_correct": false},
+{"text": "A woman requesting information about her discharge date", "is_correct": false}
+],
+"rationale": "Severe vaginal bleeding with signs of shock indicates a life-threatening emergency requiring immediate intervention. Using the principle of prioritizing physiological threats, the midwife should attend to this woman before the other patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A woman in labour is anxious because she does not understand what is happening. Her vital signs are stable, fetal heart rate is reassuring and labour is progressing normally. Which nursing diagnosis is most appropriate?",
+"choices": [
+{"text": "Impaired gas exchange", "is_correct": false},
+{"text": "Deficient fluid volume", "is_correct": false},
+{"text": "Anxiety related to uncertainty about the labour process", "is_correct": true},
+{"text": "Ineffective airway clearance", "is_correct": false}
+],
+"rationale": "The woman's expressed fear and uncertainty support an anxiety diagnosis. Therapeutic communication, reassurance and clear explanations can help reduce anxiety while continuing routine maternal and fetal monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A postpartum woman has a boggy uterus, heavy vaginal bleeding and a pulse rate of 124 beats per minute. Which action should the midwife take FIRST?",
+"choices": [
+{"text": "Provide routine breastfeeding education", "is_correct": false},
+{"text": "Initiate the postpartum haemorrhage response, including immediate uterine massage and calling for emergency assistance", "is_correct": true},
+{"text": "Complete the discharge summary", "is_correct": false},
+{"text": "Encourage the woman to walk around the ward", "is_correct": false}
+],
+"rationale": "A boggy uterus with heavy bleeding and tachycardia suggests postpartum haemorrhage, commonly associated with uterine atony. Immediate action, emergency assistance and management according to the facility's haemorrhage protocol are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A midwife is applying Maslow's hierarchy of needs when prioritizing care for a postpartum woman. Which need should generally receive priority when it is immediately threatened?",
+"choices": [
+{"text": "The woman's desire for social interaction", "is_correct": false},
+{"text": "The woman's need for recognition and achievement", "is_correct": false},
+{"text": "The woman's physiological need for adequate breathing and circulation", "is_correct": true},
+{"text": "The woman's desire for personal development", "is_correct": false}
+],
+"rationale": "Maslow's hierarchy places physiological needs, including breathing and circulation, at the foundational level. Immediate threats to these functions generally take priority over social, esteem and self-actualization needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "A woman in labour has a nursing diagnosis of acute pain related to uterine contractions. Which expected outcome is most appropriate?",
+"choices": [
+{"text": "The woman will never experience pain during labour", "is_correct": false},
+{"text": "The woman will demonstrate improved coping and report acceptable pain relief within the agreed period", "is_correct": true},
+{"text": "The midwife will complete all routine documentation", "is_correct": false},
+{"text": "The woman will deliver within thirty minutes", "is_correct": false}
+],
+"rationale": "An appropriate outcome should be realistic, measurable and relevant to the identified problem. Improved coping and an acceptable level of pain relief can be assessed without making unrealistic promises about eliminating labour pain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "A pregnant woman has been diagnosed with iron-deficiency anaemia. Which nursing intervention is most appropriate to include in her care plan?",
+"choices": [
+{"text": "Advise her to stop eating iron-rich foods", "is_correct": false},
+{"text": "Provide education on iron-rich foods, adherence to prescribed iron supplementation and follow-up assessment", "is_correct": true},
+{"text": "Recommend that she discontinue all antenatal visits", "is_correct": false},
+{"text": "Advise her to take iron tablets only when she feels tired", "is_correct": false}
+],
+"rationale": "Management of iron-deficiency anaemia includes appropriate supplementation, dietary education and monitoring of response to treatment. The midwife should reinforce adherence and arrange follow-up according to the woman's clinical condition and local protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "A midwife is planning care for a woman with gestational diabetes. Which outcome is most appropriate?",
+"choices": [
+{"text": "The woman will understand the agreed dietary and activity plan and demonstrate appropriate blood glucose monitoring", "is_correct": true},
+{"text": "The woman will avoid all carbohydrate-containing foods", "is_correct": false},
+{"text": "The woman will stop attending antenatal clinic when glucose improves", "is_correct": false},
+{"text": "The woman will deliver immediately after diagnosis", "is_correct": false}
+],
+"rationale": "Care planning for gestational diabetes should promote appropriate glycaemic control through individualized nutrition, physical activity where suitable and monitoring. Ongoing antenatal review is necessary to assess maternal and fetal wellbeing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "A woman at 36 weeks of gestation is at risk of developing complications because of hypertension. Which intervention should be included in her care plan?",
+"choices": [
+{"text": "Advise her to avoid all physical movement and remain at home without review", "is_correct": false},
+{"text": "Monitor blood pressure and assess for symptoms of severe disease, with timely escalation when indicated", "is_correct": true},
+{"text": "Discontinue all prescribed medication without consultation", "is_correct": false},
+{"text": "Delay assessment until after delivery", "is_correct": false}
+],
+"rationale": "Hypertension in pregnancy requires ongoing maternal assessment and appropriate fetal surveillance according to clinical findings and protocol. Monitoring for severe features allows timely treatment, referral or delivery planning when necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "A primiparous mother wishes to breastfeed but is unsure how to position her newborn. Which planned intervention best supports her expected outcome?",
+"choices": [
+{"text": "Discourage her from breastfeeding until the newborn is one month old", "is_correct": false},
+{"text": "Provide practical assistance with positioning and attachment, then assess the baby's latch", "is_correct": true},
+{"text": "Recommend routine water supplementation after every feed", "is_correct": false},
+{"text": "Ask her to learn breastfeeding techniques without assistance", "is_correct": false}
+],
+"rationale": "Practical breastfeeding support helps the mother establish effective positioning and attachment. Observing a feed enables the midwife to identify difficulties and provide individualized guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care Planning",
+"question_text": "A midwife is developing a postnatal care plan for a mother and newborn. Which approach best reflects family-centred care?",
+"choices": [
+{"text": "Exclude the mother from decisions because the midwife has professional training", "is_correct": false},
+{"text": "Involve the mother in decisions, address her concerns and support appropriate family participation with her consent", "is_correct": true},
+{"text": "Allow family members to make all decisions without consulting the mother", "is_correct": false},
+{"text": "Provide information only when the mother requests discharge", "is_correct": false}
+],
+"rationale": "Family-centred care respects the mother's autonomy and recognizes the importance of supportive family involvement. The midwife should communicate clearly and obtain the mother's consent before involving relatives in personal health discussions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "A woman in the first stage of labour is stable and requests assistance with coping with contractions. Which intervention is most appropriate?",
+"choices": [
+{"text": "Encourage appropriate breathing and relaxation techniques and provide continuous emotional support", "is_correct": true},
+{"text": "Leave the woman alone until the second stage of labour", "is_correct": false},
+{"text": "Restrict all communication with the woman", "is_correct": false},
+{"text": "Perform an unnecessary vaginal examination during every contraction", "is_correct": false}
+],
+"rationale": "Supportive care, breathing techniques and relaxation can help a woman cope with labour. The midwife should continue appropriate maternal and fetal monitoring and avoid unnecessary interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "During the immediate postnatal period, a stable mother delivers a healthy term newborn. Which action best supports early newborn care?",
+"choices": [
+{"text": "Separate the newborn from the mother routinely for observation", "is_correct": false},
+{"text": "Dry the newborn, assess breathing, maintain warmth and support immediate skin-to-skin contact when appropriate", "is_correct": true},
+{"text": "Bathe the newborn immediately before initiating breastfeeding", "is_correct": false},
+{"text": "Give water before the first breastfeed", "is_correct": false}
+],
+"rationale": "Immediate newborn care includes drying, assessment of breathing, thermal protection and early skin-to-skin contact when mother and baby are stable. These measures support newborn adaptation and early initiation of breastfeeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "A woman in labour develops an abnormal fetal heart rate pattern suggesting possible fetal compromise. What should the midwife do FIRST?",
+"choices": [
+{"text": "Continue routine monitoring without reassessment", "is_correct": false},
+{"text": "Promptly assess the situation, initiate appropriate immediate measures and escalate for urgent obstetric review", "is_correct": true},
+{"text": "Wait until the next scheduled antenatal appointment", "is_correct": false},
+{"text": "Record the finding only after delivery", "is_correct": false}
+],
+"rationale": "An abnormal fetal heart rate may indicate fetal compromise and requires prompt clinical assessment. The midwife should initiate appropriate measures, summon assistance and arrange timely intervention according to the clinical situation and facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "A woman who has just delivered is found to have a boggy uterus during routine postnatal assessment. Which immediate nursing action is appropriate?",
+"choices": [
+{"text": "Assess uterine tone and initiate uterine massage while evaluating bleeding and obtaining assistance as indicated", "is_correct": true},
+{"text": "Encourage the woman to sleep and reassess the following morning", "is_correct": false},
+{"text": "Discharge the woman immediately", "is_correct": false},
+{"text": "Withhold all assessment until the placenta is examined", "is_correct": false}
+],
+"rationale": "A boggy uterus may indicate uterine atony, a major cause of postpartum haemorrhage. The midwife should act promptly, assess blood loss and the woman's condition, and follow the facility's postpartum haemorrhage protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "A mother at a postnatal clinic reports that her newborn has difficulty feeding and is unusually sleepy. What should the midwife do?",
+"choices": [
+{"text": "Advise her to wait until the next immunization appointment", "is_correct": false},
+{"text": "Assess the newborn promptly for danger signs and arrange urgent referral if serious illness is suspected", "is_correct": true},
+{"text": "Recommend giving herbal preparations before breastfeeding", "is_correct": false},
+{"text": "Reassure her that all newborns are sleepy and feeding difficulties are normal", "is_correct": false}
+],
+"rationale": "Poor feeding and unusual lethargy may be signs of serious neonatal illness, including infection or other complications. Prompt assessment and referral are necessary rather than delaying care or recommending unverified remedies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "A midwife at a CHPS compound identifies a pregnant woman with suspected severe pre-eclampsia. The facility cannot provide definitive emergency obstetric care. Which action is most appropriate?",
+"choices": [
+{"text": "Keep the woman at the CHPS compound until the next routine clinic day", "is_correct": false},
+{"text": "Initiate appropriate emergency measures within the midwife's competence and arrange urgent referral to a facility capable of definitive management", "is_correct": true},
+{"text": "Advise the woman to seek treatment from a traditional healer", "is_correct": false},
+{"text": "Send the woman home to collect her antenatal card before making any referral arrangements", "is_correct": false}
+],
+"rationale": "Suspected severe pre-eclampsia requires urgent assessment and access to appropriate emergency obstetric care. The midwife should initiate indicated stabilization measures, communicate with the receiving facility and arrange safe referral without unnecessary delay.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation of Nursing Care",
+"question_text": "A woman received nursing interventions for pain during labour. Which finding best indicates that the planned outcome has been achieved?",
+"choices": [
+{"text": "The midwife has completed the care plan form", "is_correct": false},
+{"text": "The woman reports improved coping and a reduction in pain to her agreed acceptable level", "is_correct": true},
+{"text": "The woman has remained in the same position throughout labour", "is_correct": false},
+{"text": "The woman's relative reports that the midwife was helpful", "is_correct": false}
+],
+"rationale": "Evaluation should be based on evidence that relates directly to the expected outcome. The woman's reported pain level and ability to cope provide relevant information about the effectiveness of the interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation of Nursing Care",
+"question_text": "A postpartum woman was receiving care for ineffective breastfeeding. After assistance with positioning, the newborn still has difficulty attaching to the breast. What should the midwife do next?",
+"choices": [
+{"text": "Discontinue breastfeeding support because the first intervention failed", "is_correct": false},
+{"text": "Reassess the mother and newborn, identify contributing factors and modify the care plan", "is_correct": true},
+{"text": "Document that the outcome has been achieved", "is_correct": false},
+{"text": "Blame the mother for not following instructions", "is_correct": false}
+],
+"rationale": "Failure to achieve the expected outcome indicates the need for further assessment and modification of the care plan. The midwife should identify possible causes, provide appropriate additional support and reassess the effectiveness of revised interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evaluation of Nursing Care",
+"question_text": "A midwife plans to reduce a pregnant woman's risk of dehydration through oral fluid intake, provided there is no clinical contraindication. Which finding would best indicate improvement?",
+"choices": [
+{"text": "The woman reports improved thirst and has adequate urine output with stable clinical observations", "is_correct": true},
+{"text": "The woman refuses all oral fluids", "is_correct": false},
+{"text": "The woman's urine output decreases further", "is_correct": false},
+{"text": "The woman develops increasing dizziness and dry mucous membranes", "is_correct": false}
+],
+"rationale": "Improved hydration may be reflected in reduced thirst, adequate urine output and stable clinical findings. The midwife should interpret these findings alongside the woman's overall condition and any relevant fluid balance assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "A midwife records a woman's blood pressure as 170/115 mmHg but does not document any action taken. What is the most important improvement to the record?",
+"choices": [
+{"text": "Remove the blood pressure reading from the record", "is_correct": false},
+{"text": "Document the assessment, clinical response, interventions, escalation and subsequent findings with times", "is_correct": true},
+{"text": "Record only the name of the midwife on duty", "is_correct": false},
+{"text": "Wait until the end of the month to complete the documentation", "is_correct": false}
+],
+"rationale": "A complete clinical record should show the abnormal finding and the actions taken in response. Timely documentation supports continuity of care, clinical accountability and communication among healthcare professionals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "A midwife notices that she has entered an incorrect observation in a paper-based maternity record. What is the correct action?",
+"choices": [
+{"text": "Erase the incorrect entry completely so that no trace remains", "is_correct": false},
+{"text": "Use correction fluid to cover the incorrect information", "is_correct": false},
+{"text": "Correct the entry according to facility policy, preserving the original information and adding the required date, time and authentication", "is_correct": true},
+{"text": "Ask another midwife to rewrite the entire record without explanation", "is_correct": false}
+],
+"rationale": "Clinical records must remain accurate, transparent and traceable. Corrections should follow facility policy and must not conceal or destroy the original entry.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "A midwife is using the SOAP format to document a woman's complaint of severe headache during pregnancy. Which entry belongs in the Subjective section?",
+"choices": [
+{"text": "Blood pressure measured at 165/110 mmHg", "is_correct": false},
+{"text": "The woman states, 'I have had a severe headache since this morning'", "is_correct": true},
+{"text": "The midwife assesses the woman as having suspected severe pre-eclampsia", "is_correct": false},
+{"text": "Urgent referral is arranged", "is_correct": false}
+],
+"rationale": "The subjective section contains information reported by the woman, including symptoms and personal experiences. Measured blood pressure is objective data, while clinical interpretation and planned actions belong in the assessment and plan sections.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "During labour monitoring, a midwife identifies an abnormal finding on the labour monitoring chart. Which action is most appropriate?",
+"choices": [
+{"text": "Record the finding accurately and take appropriate clinical action without waiting for the next routine review", "is_correct": true},
+{"text": "Change the recorded value to make the chart appear normal", "is_correct": false},
+{"text": "Ignore the finding if the woman is not complaining of pain", "is_correct": false},
+{"text": "Complete the chart only after the woman has delivered", "is_correct": false}
+],
+"rationale": "Labour monitoring records are intended to support timely recognition and management of maternal or fetal abnormalities. Accurate documentation must be accompanied by appropriate assessment, escalation and intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "A midwife is handing over a woman with suspected postpartum haemorrhage to the receiving clinical team. Which information is most important to communicate?",
+"choices": [
+{"text": "Only the woman's name and date of admission", "is_correct": false},
+{"text": "The woman's condition, estimated blood loss, vital signs, interventions performed and response to treatment", "is_correct": true},
+{"text": "The names of all visitors who came to the ward", "is_correct": false},
+{"text": "The midwife's personal opinion about the woman's behaviour", "is_correct": false}
+],
+"rationale": "Effective handover requires relevant, accurate and concise clinical information. Communicating the woman's condition, observations, interventions and response supports continuity and safe ongoing management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking and Clinical Reasoning",
+"question_text": "A woman in labour has a temperature of 38.5°C, maternal tachycardia and uterine tenderness. What should the midwife do FIRST?",
+"choices": [
+{"text": "Assume the findings are normal during labour", "is_correct": false},
+{"text": "Assess for possible maternal infection, including intra-amniotic infection, and promptly escalate for appropriate management", "is_correct": true},
+{"text": "Wait until the woman develops vaginal bleeding", "is_correct": false},
+{"text": "Discontinue maternal observations for the remainder of labour", "is_correct": false}
+],
+"rationale": "Fever, tachycardia and uterine tenderness may indicate maternal infection and require prompt clinical assessment. Early recognition and escalation support timely investigation, treatment and monitoring of maternal and fetal wellbeing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Thinking and Clinical Reasoning",
+"question_text": "A midwife receives conflicting information about a pregnant woman's medication history. What is the most appropriate clinical reasoning approach?",
+"choices": [
+{"text": "Choose one account without further investigation", "is_correct": false},
+{"text": "Clarify the history with the woman, review available records and verify relevant information before making decisions", "is_correct": true},
+{"text": "Ignore the medication history because the woman is pregnant", "is_correct": false},
+{"text": "Assume that all medications previously prescribed are safe in pregnancy", "is_correct": false}
+],
+"rationale": "Clinical reasoning requires verification of relevant information before decisions are made. Clarifying the history and reviewing available records help reduce medication-related risks and support safe individualized care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A woman at 34 weeks of gestation presents with vaginal bleeding, severe abdominal pain and a rigid uterus. Her fetal heart rate is difficult to detect. Which problem should receive the highest priority?",
+"choices": [
+{"text": "Anxiety related to hospital admission", "is_correct": false},
+{"text": "Potential maternal and fetal compromise associated with suspected placental abruption", "is_correct": true},
+{"text": "Knowledge deficit about newborn bathing", "is_correct": false},
+{"text": "Disturbed sleep pattern related to discomfort", "is_correct": false}
+],
+"rationale": "The findings suggest possible placental abruption, which can cause severe maternal haemorrhage and fetal compromise. Immediate emergency assessment and obstetric intervention take priority over psychosocial and educational needs.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A woman in labour has the following findings: respiratory rate 30 breaths per minute, oxygen saturation 88%, severe breathlessness and difficulty speaking. She also reports anxiety about delivery. Which nursing problem should be prioritized?",
+"choices": [
+{"text": "Anxiety related to the expected birth", "is_correct": false},
+{"text": "Impaired gas exchange", "is_correct": true},
+{"text": "Deficient knowledge about breastfeeding", "is_correct": false},
+{"text": "Disturbed sleep pattern", "is_correct": false}
+],
+"rationale": "Low oxygen saturation, tachypnoea and severe breathlessness indicate impaired oxygenation and an immediate threat to life. According to physiological prioritization, respiratory compromise must be addressed before anxiety or educational needs.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Diagnosis and Prioritization",
+"question_text": "A postpartum woman has a temperature of 39°C, foul-smelling lochia, lower abdominal pain and a pulse rate of 120 beats per minute. Which nursing diagnosis is the most appropriate priority?",
+"choices": [
+{"text": "Risk for impaired parenting", "is_correct": false},
+{"text": "Suspected maternal infection with risk of progression to sepsis", "is_correct": true},
+{"text": "Readiness for enhanced breastfeeding", "is_correct": false},
+{"text": "Disturbed body image", "is_correct": false}
+],
+"rationale": "The combination of fever, foul-smelling lochia, abdominal pain and tachycardia suggests postpartum infection with possible systemic involvement. The midwife should urgently assess for sepsis and initiate escalation and management according to protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care Planning",
+"question_text": "A midwife develops a care plan for a woman with persistent vomiting and signs of dehydration. Which expected outcome provides the best basis for evaluating the plan?",
+"choices": [
+{"text": "The woman will be discharged as soon as possible", "is_correct": false},
+{"text": "The woman will demonstrate improved hydration through appropriate clinical observations and adequate urine output within the agreed period", "is_correct": true},
+{"text": "The woman will never experience nausea again", "is_correct": false},
+{"text": "The midwife will administer every available antiemetic medication", "is_correct": false}
+],
+"rationale": "An effective outcome should describe a measurable improvement in the woman's condition. Clinical observations, hydration status and urine output provide relevant indicators for evaluating the response to treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care Planning",
+"question_text": "A woman with pre-eclampsia has a care plan that includes blood pressure monitoring, assessment for warning signs and fetal surveillance. Her condition worsens despite these interventions. What is the best planning decision?",
+"choices": [
+{"text": "Continue the same plan without informing the obstetric team", "is_correct": false},
+{"text": "Reassess the woman, revise the plan and urgently escalate for further obstetric management", "is_correct": true},
+{"text": "Remove all monitoring interventions because they have not prevented deterioration", "is_correct": false},
+{"text": "Wait until the next routine antenatal appointment", "is_correct": false}
+],
+"rationale": "Deterioration indicates that the current care plan may no longer be sufficient to manage the woman's clinical risk. Reassessment and urgent escalation are necessary because severe pre-eclampsia may require additional treatment and timely delivery planning.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "A woman in labour suddenly develops convulsions and becomes unresponsive. Which action should the midwife prioritize?",
+"choices": [
+{"text": "Attempt to restrain her limbs and place an object in her mouth", "is_correct": false},
+{"text": "Call for emergency assistance, protect her from injury, maintain the airway and manage suspected eclampsia according to protocol", "is_correct": true},
+{"text": "Leave her unattended to obtain her antenatal card", "is_correct": false},
+{"text": "Offer oral fluids immediately", "is_correct": false}
+],
+"rationale": "Convulsions in a pregnant woman with possible hypertensive disease may indicate eclampsia, a life-threatening emergency. The midwife should protect the woman, support airway and breathing, summon help and initiate emergency management within professional competence and facility protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Implementation of Midwifery Care",
+"question_text": "A newborn delivered at a health facility is not breathing after drying and stimulation. What should the midwife do next?",
+"choices": [
+{"text": "Wait several minutes to see whether breathing starts spontaneously", "is_correct": false},
+{"text": "Initiate neonatal resuscitation according to the current newborn resuscitation protocol, including effective ventilation when indicated", "is_correct": true},
+{"text": "Begin routine breastfeeding immediately", "is_correct": false},
+{"text": "Bathe the newborn to stimulate breathing", "is_correct": false}
+],
+"rationale": "A newborn who remains apnoeic or gasping after initial steps requires prompt resuscitation. Effective ventilation is the key intervention for a newborn who is not breathing adequately, and delays can worsen outcomes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evaluation of Nursing Care",
+"question_text": "A woman with postpartum haemorrhage receives treatment, and her bleeding reduces. However, she remains pale, confused and hypotensive. How should the midwife interpret these findings?",
+"choices": [
+{"text": "The expected outcome has been fully achieved because visible bleeding has reduced", "is_correct": false},
+{"text": "The woman may remain in shock despite reduced visible bleeding and requires urgent reassessment and continued emergency management", "is_correct": true},
+{"text": "The woman should be encouraged to walk to improve circulation", "is_correct": false},
+{"text": "Further observations are unnecessary once bleeding reduces", "is_correct": false}
+],
+"rationale": "Reduced visible bleeding does not necessarily mean that circulatory stability has been restored. Persistent hypotension, pallor and confusion suggest ongoing or unresolved shock and require immediate reassessment and continued treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evaluation of Nursing Care",
+"question_text": "A newborn receiving care for suspected infection has worsening respiratory distress, poor feeding and reduced responsiveness. The original care plan focused mainly on maintaining warmth and feeding support. What is the most appropriate evaluation decision?",
+"choices": [
+{"text": "Continue the original plan because it was already documented", "is_correct": false},
+{"text": "Determine that the newborn's condition is deteriorating and urgently escalate for assessment and treatment of possible serious neonatal illness", "is_correct": true},
+{"text": "Discontinue observations to allow the newborn to rest", "is_correct": false},
+{"text": "Record that the newborn is improving because feeding support was provided", "is_correct": false}
+],
+"rationale": "Worsening respiratory distress, poor feeding and reduced responsiveness are danger signs requiring urgent clinical intervention. Evaluation must identify deterioration and lead to immediate modification of care and escalation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "A midwife documents that a woman has a blood pressure of 168/112 mmHg but records that she is stable and requires no further action. The woman also has severe headache and visual disturbance. What is the main problem with this documentation?",
+"choices": [
+{"text": "The blood pressure should not be recorded in a maternity record", "is_correct": false},
+{"text": "The clinical interpretation and documented plan do not appropriately reflect the danger signs and need for urgent escalation", "is_correct": true},
+{"text": "The midwife should record only the woman's subjective complaints", "is_correct": false},
+{"text": "The documentation is acceptable because the woman is still conscious", "is_correct": false}
+],
+"rationale": "Severe hypertension accompanied by headache and visual disturbance is concerning for pre-eclampsia with severe features. Documentation must accurately reflect the clinical risk and the urgent assessment, intervention and escalation required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Documentation and Reporting",
+"question_text": "A woman is referred from a CHPS compound to a district hospital because of suspected obstructed labour. The referral note contains only her name and gestational age. Which information is most important to add?",
+"choices": [
+{"text": "The midwife's personal comments about the woman's family", "is_correct": false},
+{"text": "Relevant clinical findings, labour history, maternal and fetal observations, interventions, time of referral and reason for escalation", "is_correct": true},
+{"text": "A list of unrelated patients seen at the CHPS compound", "is_correct": false},
+{"text": "Only the woman's preferred newborn name", "is_correct": false}
+],
+"rationale": "A referral note should provide sufficient clinical information for the receiving team to continue care safely. Relevant findings, interventions and the reason for referral help prevent delays and support continuity of emergency obstetric management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking and Clinical Reasoning",
+"question_text": "A woman in the third trimester reports reduced fetal movement. The fetal heart rate is initially detected at 140 beats per minute, but the woman continues to report that movement is significantly reduced. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The normal fetal heart rate completely excludes fetal compromise", "is_correct": false},
+{"text": "The woman's concern still requires appropriate assessment because a single normal fetal heart rate does not establish overall fetal wellbeing", "is_correct": true},
+{"text": "The midwife should dismiss the report because the fetal heart rate is within the usual range", "is_correct": false},
+{"text": "The woman should be advised to return only if she develops contractions", "is_correct": false}
+],
+"rationale": "A fetal heart rate within the expected range at one point does not rule out all causes of reduced fetal movement or guarantee continuing fetal wellbeing. The midwife should arrange appropriate further assessment and follow the relevant referral or monitoring pathway.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking and Clinical Reasoning",
+"question_text": "A midwife is caring for a woman in labour whose partograph shows slow cervical dilatation, but maternal observations and fetal heart rate remain reassuring. A colleague recommends immediate caesarean birth based only on the cervical dilatation rate. What is the best response?",
+"choices": [
+{"text": "Proceed immediately because slow cervical dilatation always requires caesarean birth", "is_correct": false},
+{"text": "Review the complete clinical picture, labour progress, maternal and fetal condition, and current labour management guidance before deciding on intervention", "is_correct": true},
+{"text": "Ignore the labour monitoring chart because maternal and fetal observations are reassuring", "is_correct": false},
+{"text": "Discontinue monitoring until cervical dilatation improves", "is_correct": false}
+],
+"rationale": "A single measure of cervical dilatation should not be used in isolation to determine the need for operative birth. Clinical decisions should consider the overall labour pattern, maternal and fetal wellbeing, and current evidence-based guidance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Thinking and Clinical Reasoning",
+"question_text": "A midwife at a resource-limited maternity facility identifies a woman with severe vaginal bleeding. The facility has limited blood supplies and no operating theatre. Which decision best demonstrates sound clinical reasoning?",
+"choices": [
+{"text": "Continue routine observation until the available blood supply is replenished", "is_correct": false},
+{"text": "Recognize the emergency, initiate available stabilization measures, summon assistance and coordinate urgent transfer to a facility with appropriate resources", "is_correct": true},
+{"text": "Discharge the woman because the facility lacks an operating theatre", "is_correct": false},
+{"text": "Delay referral until all routine documentation has been completed", "is_correct": false}
+],
+"rationale": "The midwife must recognize the limits of the facility while taking immediate steps to reduce risk and secure definitive care. Appropriate stabilization, communication and urgent referral are essential in resource-limited settings.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
