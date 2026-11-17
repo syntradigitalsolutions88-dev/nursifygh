@@ -63,10 +63,12 @@ api.interceptors.response.use(
         const url = original?.url ?? ""
 
         // Don't try to refresh on login/register/refresh endpoints
+        // FIX: Don't try to refresh on auth endpoints OR password reset
         const isAuthEndpoint =
             url.includes("/accounts/login/") ||
             url.includes("/accounts/register/") ||
-            url.includes("/accounts/token/refresh/")
+            url.includes("/accounts/token/refresh/") ||
+            url.includes("/accounts/password/reset/") // <-- ADD THIS LINE
 
         if (status === 401 && !original._retry && !isAuthEndpoint) {
             original._retry = true
