@@ -1,0 +1,730 @@
+{
+"courses": [
+{
+"course_code": "HAP-122-M",
+"course_title": "Human Anatomy & Physiology II",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"The Cardiovascular System",
+"The Respiratory System",
+"The Digestive System",
+"The Urinary System",
+"The Reproductive Systems",
+"The Lymphatic and Immune Systems",
+"Fluid, Electrolyte and Acid-Base Balance",
+"Metabolism and Body Temperature Regulation"
+],
+"questions": [
+{
+"topic": "The Cardiovascular System",
+"question_text": "Which chamber of the heart pumps oxygenated blood into the systemic circulation?",
+"choices": [
+{"text": "Right atrium", "is_correct": false},
+{"text": "Right ventricle", "is_correct": false},
+{"text": "Left atrium", "is_correct": false},
+{"text": "Left ventricle", "is_correct": true}
+],
+"rationale": "The left ventricle pumps oxygenated blood through the aortic valve into the aorta. Blood is then distributed to the organs and tissues of the body through the systemic circulation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "Which blood vessel carries deoxygenated blood from the right ventricle to the lungs?",
+"choices": [
+{"text": "Pulmonary artery", "is_correct": true},
+{"text": "Pulmonary vein", "is_correct": false},
+{"text": "Aorta", "is_correct": false},
+{"text": "Superior vena cava", "is_correct": false}
+],
+"rationale": "The pulmonary artery carries deoxygenated blood from the right ventricle to the lungs for oxygenation. It is an exception to the general pattern because most arteries carry oxygenated blood.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "Which component of blood is primarily responsible for transporting oxygen from the lungs to body tissues?",
+"choices": [
+{"text": "Platelets", "is_correct": false},
+{"text": "Red blood cells", "is_correct": true},
+{"text": "White blood cells", "is_correct": false},
+{"text": "Plasma proteins", "is_correct": false}
+],
+"rationale": "Red blood cells contain haemoglobin, which binds oxygen in the lungs and releases it in tissues. A reduction in red blood cells or haemoglobin concentration can impair oxygen delivery and cause anaemia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "A pregnant woman at 28 weeks' gestation has a mildly increased heart rate compared with her pre-pregnancy baseline. Which physiological change of pregnancy best explains this finding?",
+"choices": [
+{"text": "Reduced circulating blood volume", "is_correct": false},
+{"text": "Increased peripheral resistance throughout pregnancy", "is_correct": false},
+{"text": "Increased cardiac output and maternal metabolic demands", "is_correct": true},
+{"text": "Reduced venous return caused by decreased uterine size", "is_correct": false}
+],
+"rationale": "Pregnancy is associated with increased blood volume and cardiac output to support maternal tissues and the developing fetus. Maternal heart rate normally rises as part of the cardiovascular adaptation to pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "A pregnant woman with sickle cell disease develops severe pain in her limbs and chest during a vaso-occlusive crisis. Which mechanism is primarily responsible for this complication?",
+"choices": [
+{"text": "Excessive destruction of platelets in the spleen", "is_correct": false},
+{"text": "Obstruction of small blood vessels by sickled red blood cells", "is_correct": true},
+{"text": "Increased production of normal haemoglobin", "is_correct": false},
+{"text": "Excessive oxygen transport by red blood cells", "is_correct": false}
+],
+"rationale": "Deoxygenated haemoglobin S can polymerise, causing red blood cells to become rigid and sickle-shaped. These cells obstruct small blood vessels, producing tissue ischaemia, inflammation and severe pain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "A pregnant woman presents at a health facility with severe pallor, fatigue, dizziness and a haemoglobin concentration of 6.5 g/dL. Which physiological consequence is the greatest concern?",
+"choices": [
+{"text": "Increased oxygen-carrying capacity of the blood", "is_correct": false},
+{"text": "Reduced oxygen delivery to maternal and fetal tissues", "is_correct": true},
+{"text": "Increased blood clotting ability", "is_correct": false},
+{"text": "Increased production of plasma proteins", "is_correct": false}
+],
+"rationale": "Severe anaemia reduces the amount of haemoglobin available to transport oxygen. This can compromise maternal tissue oxygenation and increase the risk of adverse maternal and fetal outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "A woman develops heavy bleeding immediately after childbirth. Her pulse is 132 beats per minute, blood pressure is 80/50 mmHg and her skin is cold and clammy. What should the midwife do first?",
+"choices": [
+{"text": "Complete the routine postpartum documentation", "is_correct": false},
+{"text": "Encourage the woman to walk to improve circulation", "is_correct": false},
+{"text": "Activate the emergency response and initiate haemorrhage resuscitation", "is_correct": true},
+{"text": "Wait for laboratory results before starting treatment", "is_correct": false}
+],
+"rationale": "These findings indicate severe hypovolaemic shock due to postpartum haemorrhage. Immediate emergency escalation, resuscitation, control of bleeding and definitive management are essential to prevent maternal death.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "Which physiological change contributes to the increased risk of venous thromboembolism during pregnancy?",
+"choices": [
+{"text": "Reduced concentration of all clotting factors", "is_correct": false},
+{"text": "Increased coagulation tendency and venous stasis", "is_correct": true},
+{"text": "Increased fibrinolysis and reduced venous pressure", "is_correct": false},
+{"text": "Reduced blood volume and increased arterial flow", "is_correct": false}
+],
+"rationale": "Pregnancy is a hypercoagulable state, with changes in coagulation factors and reduced fibrinolytic activity. Venous stasis, particularly from compression of pelvic veins by the enlarging uterus, further increases thromboembolic risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "A pregnant woman at 34 weeks' gestation becomes dizzy and hypotensive while lying flat on her back. Her symptoms improve when she is turned onto her left side. Which mechanism best explains this finding?",
+"choices": [
+{"text": "Compression of the inferior vena cava by the gravid uterus", "is_correct": true},
+{"text": "Compression of the pulmonary artery by the diaphragm", "is_correct": false},
+{"text": "Increased blood return to the heart while supine", "is_correct": false},
+{"text": "Increased production of red blood cells", "is_correct": false}
+],
+"rationale": "In late pregnancy, the enlarged uterus may compress the inferior vena cava when the woman lies supine. This reduces venous return, cardiac output and blood pressure, producing supine hypotensive syndrome.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "A pregnant woman with malaria has fever, tachycardia and a low haemoglobin concentration. Which combination of mechanisms best explains the development of anaemia in malaria?",
+"choices": [
+{"text": "Increased red blood cell production and reduced plasma volume", "is_correct": false},
+{"text": "Destruction of infected and uninfected red blood cells and impaired red cell production", "is_correct": true},
+{"text": "Increased platelet production and excessive haemoglobin synthesis", "is_correct": false},
+{"text": "Increased absorption of iron and reduced red cell destruction", "is_correct": false}
+],
+"rationale": "Malaria causes destruction of parasitised red blood cells and can also increase the removal of uninfected red cells. Suppression of effective erythropoiesis may further contribute to anaemia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Cardiovascular System",
+"question_text": "A pregnant woman has sudden breathlessness, pleuritic chest pain, tachycardia and oxygen desaturation. She recently underwent prolonged immobilisation. Which condition should the midwife suspect, and what is the priority action?",
+"choices": [
+{"text": "Iron-deficiency anaemia; administer oral iron and review next week", "is_correct": false},
+{"text": "Pulmonary embolism; initiate emergency assessment and arrange urgent hospital management", "is_correct": true},
+{"text": "Physiological dyspnoea of pregnancy; reassure and discharge", "is_correct": false},
+{"text": "Gastro-oesophageal reflux; administer an antacid", "is_correct": false}
+],
+"rationale": "Sudden dyspnoea, pleuritic chest pain and hypoxaemia in a pregnant woman with thromboembolic risk factors suggest pulmonary embolism. This is a life-threatening emergency requiring immediate assessment, stabilisation and urgent definitive investigation and treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Respiratory System",
+"question_text": "Where does gaseous exchange between inspired air and pulmonary blood primarily occur?",
+"choices": [
+{"text": "Trachea", "is_correct": false},
+{"text": "Bronchi", "is_correct": false},
+{"text": "Alveoli", "is_correct": true},
+{"text": "Larynx", "is_correct": false}
+],
+"rationale": "The alveoli are microscopic air sacs surrounded by pulmonary capillaries. Their thin respiratory membrane allows oxygen to diffuse into the blood and carbon dioxide to diffuse into the alveolar air.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Respiratory System",
+"question_text": "Which muscle is the principal muscle of inspiration during normal quiet breathing?",
+"choices": [
+{"text": "Diaphragm", "is_correct": true},
+{"text": "Rectus abdominis", "is_correct": false},
+{"text": "Internal intercostal muscles", "is_correct": false},
+{"text": "Sternocleidomastoid", "is_correct": false}
+],
+"rationale": "The diaphragm contracts and moves inferiorly during inspiration, increasing the volume of the thoracic cavity. This reduces intrapulmonary pressure and allows air to enter the lungs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Respiratory System",
+"question_text": "A pregnant woman at 24 weeks' gestation reports that she breathes more deeply than before pregnancy. Which physiological change primarily accounts for this?",
+"choices": [
+{"text": "Increased progesterone stimulation of the respiratory centre", "is_correct": true},
+{"text": "Complete paralysis of the diaphragm", "is_correct": false},
+{"text": "Reduced maternal oxygen requirements", "is_correct": false},
+{"text": "Permanent narrowing of the bronchi", "is_correct": false}
+],
+"rationale": "Progesterone increases the sensitivity of the respiratory centre to carbon dioxide, resulting in increased tidal volume and minute ventilation. This supports the increased respiratory demands of pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Respiratory System",
+"question_text": "A pregnant woman with severe malaria develops rapid breathing and reduced oxygen saturation. Which respiratory function is most directly responsible for maintaining oxygen supply to the blood?",
+"choices": [
+{"text": "Ventilation and diffusion of oxygen across the alveolar-capillary membrane", "is_correct": true},
+{"text": "Production of bile by the liver", "is_correct": false},
+{"text": "Filtration of plasma by the kidneys", "is_correct": false},
+{"text": "Absorption of nutrients in the small intestine", "is_correct": false}
+],
+"rationale": "Oxygen enters the lungs through ventilation and diffuses across the alveolar-capillary membrane into pulmonary blood. Impairment of ventilation or diffusion can result in hypoxaemia and reduced tissue oxygen delivery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Respiratory System",
+"question_text": "A woman in labour suddenly develops severe breathlessness, cyanosis and a falling oxygen saturation. What should the midwife do first?",
+"choices": [
+{"text": "Continue routine labour observations without intervention", "is_correct": false},
+{"text": "Assess airway and breathing, call for emergency assistance and provide appropriate oxygen support", "is_correct": true},
+{"text": "Encourage oral fluid intake and reassess after one hour", "is_correct": false},
+{"text": "Ask the woman to walk around the ward", "is_correct": false}
+],
+"rationale": "Cyanosis and falling oxygen saturation indicate potentially life-threatening respiratory compromise. Immediate ABC assessment, emergency escalation and appropriate respiratory support are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Respiratory System",
+"question_text": "A pregnant woman with severe vomiting develops deep, rapid breathing. Laboratory results show a low blood pH and reduced bicarbonate concentration. Which physiological response explains her breathing pattern?",
+"choices": [
+{"text": "Respiratory compensation through increased carbon dioxide elimination", "is_correct": true},
+{"text": "Reduced ventilation to retain carbon dioxide", "is_correct": false},
+{"text": "Increased oxygen retention by the alveoli", "is_correct": false},
+{"text": "Complete suppression of the respiratory centre", "is_correct": false}
+],
+"rationale": "Metabolic acidosis stimulates increased ventilation, which lowers arterial carbon dioxide and partially compensates for the reduced pH. Deep, rapid breathing may occur as the body attempts to restore acid-base balance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Digestive System",
+"question_text": "Which organ produces bile, which assists in the digestion and absorption of dietary fats?",
+"choices": [
+{"text": "Pancreas", "is_correct": false},
+{"text": "Liver", "is_correct": true},
+{"text": "Stomach", "is_correct": false},
+{"text": "Spleen", "is_correct": false}
+],
+"rationale": "The liver produces bile, which is stored and concentrated in the gallbladder. Bile salts emulsify fats into smaller droplets, increasing the surface area available for pancreatic lipase.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Digestive System",
+"question_text": "Where does most absorption of digested nutrients occur?",
+"choices": [
+{"text": "Stomach", "is_correct": false},
+{"text": "Large intestine", "is_correct": false},
+{"text": "Small intestine", "is_correct": true},
+{"text": "Oesophagus", "is_correct": false}
+],
+"rationale": "The small intestine is the principal site of nutrient absorption. Its villi and microvilli provide a large surface area for the absorption of carbohydrates, amino acids, lipids, vitamins and minerals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Digestive System",
+"question_text": "A pregnant woman experiences frequent heartburn, particularly after meals. Which physiological change of pregnancy contributes to this symptom?",
+"choices": [
+{"text": "Increased lower oesophageal sphincter tone", "is_correct": false},
+{"text": "Reduced lower oesophageal sphincter tone and delayed gastric emptying", "is_correct": true},
+{"text": "Increased production of hydrochloric acid in every pregnant woman", "is_correct": false},
+{"text": "Complete absence of intestinal peristalsis", "is_correct": false}
+],
+"rationale": "Progesterone reduces smooth muscle tone, including that of the lower oesophageal sphincter. This, together with increased intra-abdominal pressure, makes gastro-oesophageal reflux more common during pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Digestive System",
+"question_text": "A pregnant woman has a poor diet with inadequate intake of iron and folate. Which complication is she at increased risk of developing?",
+"choices": [
+{"text": "Nutritional anaemia", "is_correct": true},
+{"text": "Hyperthyroidism", "is_correct": false},
+{"text": "Increased bone density", "is_correct": false},
+{"text": "Excessive production of insulin", "is_correct": false}
+],
+"rationale": "Iron is required for haemoglobin synthesis, while folate is essential for DNA synthesis and normal red blood cell development. Deficiency of either nutrient can contribute to anaemia during pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Digestive System",
+"question_text": "A pregnant woman has persistent vomiting, dry mucous membranes, reduced urine output and marked weight loss. Which action should the midwife prioritise?",
+"choices": [
+{"text": "Advise her to avoid all fluids", "is_correct": false},
+{"text": "Assess dehydration and electrolyte disturbance and arrange urgent clinical management", "is_correct": true},
+{"text": "Reassure her that all vomiting in pregnancy is harmless", "is_correct": false},
+{"text": "Encourage vigorous physical activity", "is_correct": false}
+],
+"rationale": "Persistent vomiting with weight loss and signs of dehydration suggests hyperemesis gravidarum or another significant illness. Fluid and electrolyte assessment, appropriate rehydration and clinical evaluation are necessary to prevent complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Urinary System",
+"question_text": "What is the functional unit of the kidney responsible for urine formation?",
+"choices": [
+{"text": "Neuron", "is_correct": false},
+{"text": "Nephron", "is_correct": true},
+{"text": "Alveolus", "is_correct": false},
+{"text": "Hepatocyte", "is_correct": false}
+],
+"rationale": "The nephron is the structural and functional unit of the kidney. It performs glomerular filtration, tubular reabsorption and tubular secretion to produce urine and regulate the composition of body fluids.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Urinary System",
+"question_text": "Which hormone increases water reabsorption in the collecting ducts of the kidneys?",
+"choices": [
+{"text": "Insulin", "is_correct": false},
+{"text": "Antidiuretic hormone", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Calcitonin", "is_correct": false}
+],
+"rationale": "Antidiuretic hormone increases the permeability of the collecting ducts to water by promoting the insertion of aquaporin channels. This conserves water and reduces urine volume.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Urinary System",
+"question_text": "A pregnant woman at 30 weeks' gestation has increased frequency of urination but no pain, fever or abnormal urine findings. Which physiological explanation is most likely?",
+"choices": [
+{"text": "Increased renal blood flow and pressure from the enlarging uterus on the bladder", "is_correct": true},
+{"text": "Complete failure of the kidneys to filter blood", "is_correct": false},
+{"text": "Permanent obstruction of both ureters", "is_correct": false},
+{"text": "Reduced blood supply to the kidneys", "is_correct": false}
+],
+"rationale": "Pregnancy increases renal blood flow and glomerular filtration rate, contributing to increased urine production. The enlarging uterus also places pressure on the bladder, increasing urinary frequency.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Urinary System",
+"question_text": "A pregnant woman presents with fever, flank pain, nausea and tenderness over the costovertebral angle. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Cystitis", "is_correct": false},
+{"text": "Pyelonephritis", "is_correct": true},
+{"text": "Urinary incontinence", "is_correct": false},
+{"text": "Nephrotic syndrome", "is_correct": false}
+],
+"rationale": "Pyelonephritis is an infection involving the kidney and renal pelvis, commonly presenting with fever, flank pain and systemic symptoms. It is a potentially serious infection in pregnancy and requires prompt medical assessment and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Urinary System",
+"question_text": "A pregnant woman has reduced urine output, rising serum creatinine and severe dehydration following prolonged vomiting. Which renal process is most likely contributing to the reduced urine output?",
+"choices": [
+{"text": "Reduced renal perfusion and reduced glomerular filtration", "is_correct": true},
+{"text": "Increased glomerular filtration due to excessive fluid intake", "is_correct": false},
+{"text": "Increased secretion of urine by the collecting ducts", "is_correct": false},
+{"text": "Increased blood flow through the renal arteries", "is_correct": false}
+],
+"rationale": "Severe dehydration reduces circulating blood volume and renal perfusion, potentially lowering the glomerular filtration rate. This can cause oliguria and, if prolonged, acute kidney injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Urinary System",
+"question_text": "A pregnant woman has hypertension, proteinuria and generalised oedema. Which physiological explanation best accounts for the presence of protein in her urine in pre-eclampsia?",
+"choices": [
+{"text": "Increased permeability and injury of the glomerular filtration barrier", "is_correct": true},
+{"text": "Increased production of insulin by the pancreas", "is_correct": false},
+{"text": "Complete obstruction of the urethra", "is_correct": false},
+{"text": "Increased reabsorption of protein by the renal tubules", "is_correct": false}
+],
+"rationale": "Pre-eclampsia is associated with endothelial dysfunction and glomerular injury, which can increase the permeability of the filtration barrier to proteins. Proteinuria is an important clinical finding in the assessment of pre-eclampsia, although its absence does not exclude the diagnosis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "Which structure transports the ovum from the ovary towards the uterus?",
+"choices": [
+{"text": "Cervix", "is_correct": false},
+{"text": "Fallopian tube", "is_correct": true},
+{"text": "Vagina", "is_correct": false},
+{"text": "Endometrium", "is_correct": false}
+],
+"rationale": "The uterine or fallopian tubes extend from the uterus towards the ovaries and transport the ovum through ciliary action and smooth muscle contractions. Fertilisation most commonly occurs in the ampulla of the uterine tube.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "Which layer of the uterus undergoes cyclical changes during the menstrual cycle and is shed during menstruation?",
+"choices": [
+{"text": "Myometrium", "is_correct": false},
+{"text": "Perimetrium", "is_correct": false},
+{"text": "Endometrium", "is_correct": true},
+{"text": "Parametrium", "is_correct": false}
+],
+"rationale": "The endometrium is the inner lining of the uterus and responds to changes in ovarian hormones. Its functional layer is shed during menstruation when pregnancy does not occur.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "Which structure of the male reproductive system is the principal site of sperm production?",
+"choices": [
+{"text": "Epididymis", "is_correct": false},
+{"text": "Seminiferous tubules", "is_correct": true},
+{"text": "Prostate gland", "is_correct": false},
+{"text": "Vas deferens", "is_correct": false}
+],
+"rationale": "Spermatogenesis occurs in the seminiferous tubules of the testes. The developing sperm cells are supported by Sertoli cells and are influenced by testosterone and follicle-stimulating hormone.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "Which male reproductive structure stores sperm and allows them to mature before ejaculation?",
+"choices": [
+{"text": "Urethra", "is_correct": false},
+{"text": "Epididymis", "is_correct": true},
+{"text": "Seminal vesicle", "is_correct": false},
+{"text": "Prostate gland", "is_correct": false}
+],
+"rationale": "The epididymis is a highly coiled duct located along the posterior surface of each testis. Sperm mature and are stored there before being transported through the vas deferens.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "A woman is assessed for infertility. The clinician explains that fertilisation normally occurs in the ampulla of the fallopian tube. Which process must occur before sperm can fertilise the ovum?",
+"choices": [
+{"text": "Capacitation of sperm within the female reproductive tract", "is_correct": true},
+{"text": "Implantation of the ovum in the cervix", "is_correct": false},
+{"text": "Menstruation of the endometrium", "is_correct": false},
+{"text": "Formation of the placenta before fertilisation", "is_correct": false}
+],
+"rationale": "Capacitation involves functional changes that sperm undergo within the female reproductive tract, enabling them to fertilise the ovum. It prepares sperm for the acrosome reaction and penetration of the zona pellucida.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "A woman presents with lower abdominal pain and vaginal bleeding at approximately seven weeks of pregnancy. She is dizzy and has a low blood pressure. Which condition should the midwife suspect as an immediate life-threatening possibility?",
+"choices": [
+{"text": "Uncomplicated intrauterine pregnancy", "is_correct": false},
+{"text": "Ruptured ectopic pregnancy", "is_correct": true},
+{"text": "Physiological implantation bleeding", "is_correct": false},
+{"text": "Normal cervical mucus production", "is_correct": false}
+],
+"rationale": "Abdominal pain, vaginal bleeding and signs of circulatory compromise in early pregnancy may indicate a ruptured ectopic pregnancy. This is a life-threatening emergency requiring immediate assessment, resuscitation and urgent surgical management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "During labour, the cervix becomes progressively thinner and shorter before and during dilatation. What is this process called?",
+"choices": [
+{"text": "Ovulation", "is_correct": false},
+{"text": "Effacement", "is_correct": true},
+{"text": "Implantation", "is_correct": false},
+{"text": "Lactogenesis", "is_correct": false}
+],
+"rationale": "Cervical effacement is the thinning and shortening of the cervix during labour. It commonly occurs alongside cervical dilatation as the presenting part descends.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "A woman has delivered her baby, but the placenta has not separated and heavy bleeding is occurring. Which physiological mechanism normally helps prevent excessive bleeding from the placental site after delivery?",
+"choices": [
+{"text": "Contraction and retraction of the uterine myometrium", "is_correct": true},
+{"text": "Relaxation of the uterine muscle", "is_correct": false},
+{"text": "Increased blood flow through the uterine arteries", "is_correct": false},
+{"text": "Dilatation of the cervical canal", "is_correct": false}
+],
+"rationale": "After placental delivery, contraction and retraction of the myometrium compress the blood vessels supplying the placental bed. Failure of effective uterine contraction can result in uterine atony and postpartum haemorrhage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Reproductive Systems",
+"question_text": "A woman presents with severe unilateral pelvic pain, shoulder-tip pain, vaginal bleeding and signs of shock in early pregnancy. Which explanation best accounts for the shoulder-tip pain?",
+"choices": [
+{"text": "Referred pain caused by diaphragmatic irritation from intraperitoneal blood", "is_correct": true},
+{"text": "Direct injury to the shoulder joint by the uterus", "is_correct": false},
+{"text": "Increased progesterone causing shoulder muscle contraction", "is_correct": false},
+{"text": "Compression of the brachial plexus by the fallopian tube", "is_correct": false}
+],
+"rationale": "A ruptured ectopic pregnancy may cause blood to collect in the peritoneal cavity and irritate the diaphragm. This can produce referred shoulder-tip pain through the phrenic nerve, which shares cervical spinal segments with the shoulder region.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Lymphatic and Immune Systems",
+"question_text": "Which organ is responsible for filtering blood and removing aged red blood cells?",
+"choices": [
+{"text": "Thymus", "is_correct": false},
+{"text": "Spleen", "is_correct": true},
+{"text": "Thyroid gland", "is_correct": false},
+{"text": "Pancreas", "is_correct": false}
+],
+"rationale": "The spleen filters blood, removes aged or damaged red blood cells and participates in immune responses. It also serves as a reservoir for certain blood components.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Lymphatic and Immune Systems",
+"question_text": "Which cells are primarily responsible for producing antibodies?",
+"choices": [
+{"text": "Plasma cells", "is_correct": true},
+{"text": "Red blood cells", "is_correct": false},
+{"text": "Platelets", "is_correct": false},
+{"text": "Neutrophils", "is_correct": false}
+],
+"rationale": "Plasma cells are differentiated B lymphocytes that produce and release antibodies. These antibodies recognise specific antigens and contribute to humoral immunity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Lymphatic and Immune Systems",
+"question_text": "A pregnant woman receives a vaccine that stimulates her immune system to produce antibodies against a specific pathogen. Which type of immunity does this represent?",
+"choices": [
+{"text": "Natural passive immunity", "is_correct": false},
+{"text": "Artificial active immunity", "is_correct": true},
+{"text": "Natural active immunity", "is_correct": false},
+{"text": "Artificial passive immunity", "is_correct": false}
+],
+"rationale": "Vaccination introduces an antigen or antigenic material that stimulates the recipient's own immune response. This produces active immunity and immunological memory without requiring the person to experience the full disease.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Lymphatic and Immune Systems",
+"question_text": "A newborn receives protective antibodies from the mother through the placenta before birth. Which type of immunity does this represent?",
+"choices": [
+{"text": "Natural active immunity", "is_correct": false},
+{"text": "Artificial active immunity", "is_correct": false},
+{"text": "Natural passive immunity", "is_correct": true},
+{"text": "Artificial passive immunity", "is_correct": false}
+],
+"rationale": "Maternal IgG antibodies cross the placenta and provide the fetus with temporary protection against selected infections. This is natural passive immunity because the newborn receives antibodies produced by another person rather than producing them independently.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Lymphatic and Immune Systems",
+"question_text": "A pregnant woman develops a bacterial infection and her white blood cell count is elevated, particularly the neutrophil count. What is the primary function of neutrophils?",
+"choices": [
+{"text": "Production of haemoglobin", "is_correct": false},
+{"text": "Phagocytosis and destruction of invading microorganisms", "is_correct": true},
+{"text": "Transport of oxygen to tissues", "is_correct": false},
+{"text": "Production of insulin", "is_correct": false}
+],
+"rationale": "Neutrophils are important innate immune cells that rapidly migrate to sites of infection. They engulf and destroy microorganisms through phagocytosis and other antimicrobial mechanisms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Lymphatic and Immune Systems",
+"question_text": "A pregnant woman with malaria develops severe systemic inflammation. Which immune mechanism is primarily responsible for the immediate, non-specific defence against invading pathogens?",
+"choices": [
+{"text": "Innate immunity", "is_correct": true},
+{"text": "Artificial passive immunity", "is_correct": false},
+{"text": "Immunological memory alone", "is_correct": false},
+{"text": "Maternal antibody transfer only", "is_correct": false}
+],
+"rationale": "Innate immunity provides rapid, non-specific protection through physical barriers, phagocytic cells, natural killer cells and inflammatory mediators. It acts before the slower, antigen-specific adaptive immune response becomes fully established.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "Which electrolyte is the major positively charged ion in extracellular fluid?",
+"choices": [
+{"text": "Potassium", "is_correct": false},
+{"text": "Sodium", "is_correct": true},
+{"text": "Magnesium", "is_correct": false},
+{"text": "Phosphate", "is_correct": false}
+],
+"rationale": "Sodium is the principal extracellular cation and plays a major role in regulating extracellular fluid volume and osmolality. Its concentration is closely controlled by the kidneys and hormonal mechanisms.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "Which electrolyte is the major intracellular cation and is essential for normal muscle and nerve function?",
+"choices": [
+{"text": "Sodium", "is_correct": false},
+{"text": "Chloride", "is_correct": false},
+{"text": "Potassium", "is_correct": true},
+{"text": "Bicarbonate", "is_correct": false}
+],
+"rationale": "Potassium is the major intracellular cation and is essential for maintaining resting membrane potential. Abnormal potassium concentrations can cause serious disturbances in skeletal muscle function and cardiac rhythm.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A pregnant woman develops severe diarrhoea and vomiting. She has dry mucous membranes, hypotension and reduced urine output. Which condition is most likely?",
+"choices": [
+{"text": "Fluid volume excess", "is_correct": false},
+{"text": "Dehydration with extracellular fluid volume depletion", "is_correct": true},
+{"text": "Hypervolaemia", "is_correct": false},
+{"text": "Isolated respiratory alkalosis", "is_correct": false}
+],
+"rationale": "Vomiting and diarrhoea cause loss of water and electrolytes, reducing extracellular fluid volume. Hypotension, dry mucous membranes and oliguria are common clinical signs of significant dehydration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A pregnant woman with persistent vomiting develops a serum potassium concentration of 2.8 mmol/L. Which clinical complication is she particularly at risk of developing?",
+"choices": [
+{"text": "Cardiac arrhythmias and muscle weakness", "is_correct": true},
+{"text": "Increased bone mineralisation", "is_correct": false},
+{"text": "Excessive red blood cell production", "is_correct": false},
+{"text": "Increased blood clotting from elevated potassium", "is_correct": false}
+],
+"rationale": "Hypokalaemia can impair normal electrical activity in cardiac and skeletal muscle cells. Severe potassium depletion may cause muscle weakness, abnormal cardiac rhythms and potentially life-threatening complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A woman with prolonged vomiting during pregnancy develops metabolic alkalosis. Which mechanism best explains this acid-base disturbance?",
+"choices": [
+{"text": "Loss of gastric hydrochloric acid", "is_correct": true},
+{"text": "Excessive retention of carbon dioxide", "is_correct": false},
+{"text": "Accumulation of lactic acid due to tissue hypoxia", "is_correct": false},
+{"text": "Excessive loss of bicarbonate in the stool", "is_correct": false}
+],
+"rationale": "Prolonged vomiting causes loss of hydrochloric acid from the stomach, which can increase blood bicarbonate relative to hydrogen ions. This produces metabolic alkalosis, particularly when associated with volume and chloride depletion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A pregnant woman has severe diarrhoea and develops a low blood pH with a reduced serum bicarbonate concentration. Which acid-base disorder is most likely?",
+"choices": [
+{"text": "Respiratory alkalosis", "is_correct": false},
+{"text": "Metabolic alkalosis", "is_correct": false},
+{"text": "Metabolic acidosis", "is_correct": true},
+{"text": "Respiratory acidosis", "is_correct": false}
+],
+"rationale": "Severe diarrhoea can cause substantial loss of bicarbonate-rich intestinal fluid. This reduces serum bicarbonate and may produce metabolic acidosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A pregnant woman has severe dehydration, hypotension and confusion after prolonged vomiting. Which action should the midwife prioritise?",
+"choices": [
+{"text": "Restrict all fluid intake until the vomiting stops", "is_correct": false},
+{"text": "Assess circulation, obtain urgent clinical assistance and initiate appropriate fluid replacement", "is_correct": true},
+{"text": "Encourage vigorous exercise to improve circulation", "is_correct": false},
+{"text": "Delay treatment until the next routine antenatal appointment", "is_correct": false}
+],
+"rationale": "Hypotension and confusion indicate potentially severe circulatory compromise due to fluid depletion. Immediate assessment, appropriate intravenous fluid replacement and monitoring of electrolytes and renal function are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A pregnant woman has severe pre-eclampsia and is receiving magnesium sulphate. She develops absent deep tendon reflexes, respiratory depression and reduced urine output. What should the midwife do first?",
+"choices": [
+{"text": "Continue the infusion and reassess after four hours", "is_correct": false},
+{"text": "Stop magnesium sulphate, support breathing and urgently escalate care", "is_correct": true},
+{"text": "Increase the magnesium sulphate infusion rate", "is_correct": false},
+{"text": "Encourage oral potassium intake", "is_correct": false}
+],
+"rationale": "Absent reflexes, respiratory depression and oliguria are warning signs of magnesium sulphate toxicity. The infusion should be stopped, urgent assistance obtained, respiratory support provided and calcium gluconate considered as the antidote according to protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "Which nutrient is the body's principal immediate source of energy?",
+"choices": [
+{"text": "Carbohydrate", "is_correct": true},
+{"text": "Vitamins", "is_correct": false},
+{"text": "Minerals", "is_correct": false},
+{"text": "Water", "is_correct": false}
+],
+"rationale": "Carbohydrates are broken down into simple sugars, particularly glucose, which can be used by cells to produce ATP. Glucose is an important energy source for maternal tissues and the developing fetus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "Which organ is primarily responsible for regulating metabolic rate through the secretion of thyroxine and triiodothyronine?",
+"choices": [
+{"text": "Adrenal gland", "is_correct": false},
+{"text": "Thyroid gland", "is_correct": true},
+{"text": "Pancreas", "is_correct": false},
+{"text": "Pituitary gland", "is_correct": false}
+],
+"rationale": "The thyroid gland produces thyroxine (T4) and triiodothyronine (T3), which regulate metabolic activity, growth and development. Their secretion is controlled primarily by thyroid-stimulating hormone from the anterior pituitary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A pregnant woman has inadequate dietary protein intake. Which physiological function may be impaired because protein is required for the synthesis of enzymes, hormones and structural tissues?",
+"choices": [
+{"text": "Tissue growth and repair", "is_correct": true},
+{"text": "Production of oxygen by the lungs", "is_correct": false},
+{"text": "Direct production of bile salts by red blood cells", "is_correct": false},
+{"text": "Elimination of carbon dioxide through the skin only", "is_correct": false}
+],
+"rationale": "Proteins provide amino acids required for the synthesis of enzymes, hormones, antibodies and structural components of tissues. Inadequate protein intake can impair maternal tissue maintenance, immune function and fetal growth.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A pregnant woman develops a fever due to malaria. Which mechanism normally helps the body lose excess heat when body temperature rises?",
+"choices": [
+{"text": "Vasoconstriction of skin blood vessels and shivering", "is_correct": false},
+{"text": "Sweating and vasodilation of skin blood vessels", "is_correct": true},
+{"text": "Reduced blood flow to the skin and increased muscle activity", "is_correct": false},
+{"text": "Increased insulation by subcutaneous fat", "is_correct": false}
+],
+"rationale": "Sweating promotes evaporative heat loss, while cutaneous vasodilation increases heat transfer from the blood to the skin. These mechanisms help reduce body temperature when it rises above the regulated range.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A pregnant woman has a body temperature of 39.5°C, confusion and hot skin after prolonged exposure to high environmental temperatures. What should the midwife prioritise?",
+"choices": [
+{"text": "Cover her with thick blankets to prevent further heat loss", "is_correct": false},
+{"text": "Move her to a cooler environment, initiate rapid cooling and arrange emergency medical care", "is_correct": true},
+{"text": "Encourage strenuous exercise to stimulate sweating", "is_correct": false},
+{"text": "Delay intervention until the temperature rises further", "is_correct": false}
+],
+"rationale": "Marked hyperthermia with confusion suggests heat stroke, a life-threatening emergency involving central nervous system dysfunction. Rapid cooling and urgent medical care are essential to reduce the risk of organ injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A pregnant woman with poorly controlled diabetes develops increased breakdown of fat, resulting in the production of ketone bodies and metabolic acidosis. Which condition is most likely?",
+"choices": [
+{"text": "Diabetic ketoacidosis", "is_correct": true},
+{"text": "Respiratory alkalosis", "is_correct": false},
+{"text": "Iron-deficiency anaemia", "is_correct": false},
+{"text": "Physiological ketosis without metabolic disturbance", "is_correct": false}
+],
+"rationale": "Insufficient effective insulin activity increases lipolysis and hepatic production of ketone bodies. Their accumulation causes metabolic acidosis, and diabetic ketoacidosis is a medical emergency that can occur during pregnancy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A pregnant woman has prolonged exposure to cold weather and begins shivering. Which physiological mechanism explains this response?",
+"choices": [
+{"text": "Involuntary skeletal muscle contractions increase heat production", "is_correct": true},
+{"text": "Reduced metabolic activity decreases heat production", "is_correct": false},
+{"text": "Sweat evaporation increases heat loss", "is_correct": false},
+{"text": "Vasodilation increases heat transfer to the environment", "is_correct": false}
+],
+"rationale": "Shivering consists of involuntary skeletal muscle contractions that generate heat through increased metabolic activity. It is an important thermoregulatory response to cold exposure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A pregnant woman with severe malaria develops hypoglycaemia, confusion and sweating. Which action should the midwife prioritise?",
+"choices": [
+{"text": "Assess blood glucose urgently and initiate immediate treatment according to the emergency protocol", "is_correct": true},
+{"text": "Wait until the next meal before checking blood glucose", "is_correct": false},
+{"text": "Restrict all carbohydrate intake", "is_correct": false},
+{"text": "Administer insulin without checking the glucose level", "is_correct": false}
+],
+"rationale": "Hypoglycaemia can cause neurological dysfunction, seizures and loss of consciousness, making prompt recognition and treatment essential. Severe malaria in pregnancy can be associated with hypoglycaemia, so urgent glucose assessment and appropriate correction are required.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
