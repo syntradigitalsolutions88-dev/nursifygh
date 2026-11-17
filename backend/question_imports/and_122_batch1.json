@@ -1,0 +1,742 @@
+{
+"courses": [
+{
+"course_code": "AND-122",
+"course_title": "Advanced Nursing I",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Nursing Assessment (History Taking and Physical Examination)",
+"Vital Signs and Monitoring",
+"Hygiene and Comfort Measures",
+"Mobility and Positioning",
+"Wound Care Basics",
+"Fluid and Electrolyte Balance",
+"Pre- and Post-Operative Care",
+"Common Medical-Surgical Conditions"
+],
+"questions": [
+{
+"topic": "Nursing Assessment",
+"question_text": "Which of the following best describes the primary purpose of a comprehensive nursing assessment?",
+"choices": [
+{"text": "To establish a medical diagnosis independently of other healthcare professionals", "is_correct": false},
+{"text": "To collect systematic information about the patient's health status and identify actual or potential health problems", "is_correct": true},
+{"text": "To determine the patient's financial ability to pay for treatment", "is_correct": false},
+{"text": "To prescribe medications for all identified health conditions", "is_correct": false}
+],
+"rationale": "A comprehensive nursing assessment involves systematic collection and analysis of subjective and objective patient information. It provides the foundation for identifying nursing diagnoses, planning interventions and evaluating patient outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "A nurse at a district hospital is admitting a patient with persistent abdominal pain. Which question is most appropriate when obtaining the history of the presenting complaint?",
+"choices": [
+{"text": "Do you have money to pay for your treatment?", "is_correct": false},
+{"text": "When did the abdominal pain begin, and what makes it better or worse?", "is_correct": true},
+{"text": "Why did you delay coming to the hospital?", "is_correct": false},
+{"text": "Do you think you need surgery?", "is_correct": false}
+],
+"rationale": "The nurse should explore the onset, duration, location, character, aggravating factors and relieving factors of the pain. These details help establish the clinical history and guide further assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "During history taking, a patient reports feeling dizzy and weak, although no abnormality is observed by the nurse. How should this information be classified?",
+"choices": [
+{"text": "Objective data", "is_correct": false},
+{"text": "Laboratory data", "is_correct": false},
+{"text": "Subjective data", "is_correct": true},
+{"text": "Diagnostic data", "is_correct": false}
+],
+"rationale": "Subjective data consist of information reported by the patient about personal experiences, symptoms and feelings. Dizziness and weakness are subjective symptoms because they cannot be directly measured or observed by the nurse.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "A nurse is assessing a patient with suspected pneumonia. Which assessment finding provides objective evidence of respiratory compromise?",
+"choices": [
+{"text": "The patient reports feeling tired.", "is_correct": false},
+{"text": "The patient complains of chest discomfort.", "is_correct": false},
+{"text": "The nurse observes intercostal retractions and an oxygen saturation of 88%.", "is_correct": true},
+{"text": "The patient states that breathing feels uncomfortable.", "is_correct": false}
+],
+"rationale": "Intercostal retractions and reduced oxygen saturation are measurable or observable clinical findings indicating impaired respiratory function. An oxygen saturation of 88% requires prompt assessment and intervention, taking the patient's baseline and clinical condition into account.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "A patient arrives at a regional hospital following a road traffic accident. The patient is unconscious and has difficulty breathing. Which assessment should the nurse prioritise?",
+"choices": [
+{"text": "Detailed family and social history", "is_correct": false},
+{"text": "Assessment of airway patency and breathing", "is_correct": true},
+{"text": "Assessment of nutritional status", "is_correct": false},
+{"text": "Collection of the patient's occupational history", "is_correct": false}
+],
+"rationale": "The airway and breathing components of the ABCDE approach must be assessed immediately because airway obstruction and respiratory failure can rapidly cause death. Detailed history taking should follow once immediate life-threatening problems have been addressed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "Which technique involves using the hands to feel body structures, including temperature, tenderness, texture and organ enlargement?",
+"choices": [
+{"text": "Inspection", "is_correct": false},
+{"text": "Auscultation", "is_correct": false},
+{"text": "Palpation", "is_correct": true},
+{"text": "Percussion", "is_correct": false}
+],
+"rationale": "Palpation is a physical examination technique performed using the hands and fingers to assess body structures. It helps identify tenderness, masses, temperature changes, moisture and tissue characteristics.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "A nurse is performing an abdominal examination on a patient with severe abdominal pain. Which sequence of physical examination techniques is most appropriate?",
+"choices": [
+{"text": "Palpation, percussion, inspection and auscultation", "is_correct": false},
+{"text": "Inspection, auscultation, percussion and palpation", "is_correct": true},
+{"text": "Auscultation, palpation, inspection and percussion", "is_correct": false},
+{"text": "Percussion, inspection, palpation and auscultation", "is_correct": false}
+],
+"rationale": "The correct sequence for abdominal examination is inspection, auscultation, percussion and palpation. Auscultation is performed before percussion and palpation because these techniques may alter bowel sounds.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "A patient attending a CHPS compound reports fever, headache, chills and general body weakness. The nurse suspects malaria. Which additional assessment is most appropriate?",
+"choices": [
+{"text": "Assess the patient's temperature, general condition and obtain appropriate malaria testing according to protocol.", "is_correct": true},
+{"text": "Begin antimalarial treatment without assessment or testing.", "is_correct": false},
+{"text": "Assume that the symptoms confirm malaria.", "is_correct": false},
+{"text": "Refer every patient with fever directly to a regional hospital.", "is_correct": false}
+],
+"rationale": "Fever, headache and chills may occur in malaria but are not specific to the disease. The nurse should assess the patient and facilitate parasitological confirmation using an approved rapid diagnostic test or microscopy, following Ghana's malaria management guidelines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment",
+"question_text": "A nurse obtains the following information from a patient: temperature 39.2°C, pulse 120 beats/minute, respiratory rate 30 cycles/minute and blood pressure 88/56 mmHg. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The findings indicate normal physiological adaptation.", "is_correct": false},
+{"text": "The patient has isolated hypertension.", "is_correct": false},
+{"text": "The findings suggest serious physiological deterioration requiring urgent assessment.", "is_correct": true},
+{"text": "The patient is experiencing normal sleep-related changes.", "is_correct": false}
+],
+"rationale": "The patient has fever, tachycardia, tachypnoea and hypotension, which may indicate sepsis, shock or another serious acute condition. Immediate escalation, further assessment and appropriate emergency management are necessary.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "Which of the following is the normal resting respiratory rate for a healthy adult?",
+"choices": [
+{"text": "6–10 breaths per minute", "is_correct": false},
+{"text": "12–20 breaths per minute", "is_correct": true},
+{"text": "22–30 breaths per minute", "is_correct": false},
+{"text": "30–40 breaths per minute", "is_correct": false}
+],
+"rationale": "The normal resting respiratory rate for a healthy adult is generally 12–20 breaths per minute. Rates outside this range may indicate respiratory or systemic abnormalities and should be interpreted in the clinical context.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A nurse counts a patient's radial pulse and records 112 beats per minute while the patient is resting. How should this finding be classified?",
+"choices": [
+{"text": "Bradycardia", "is_correct": false},
+{"text": "Normal pulse rate", "is_correct": false},
+{"text": "Tachycardia", "is_correct": true},
+{"text": "Apnoea", "is_correct": false}
+],
+"rationale": "Tachycardia refers to an adult resting heart rate greater than 100 beats per minute. It may occur with fever, pain, dehydration, blood loss, anxiety or cardiovascular disorders.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A nurse measures the blood pressure of an adult patient and obtains a reading of 160/100 mmHg. What is the most appropriate action?",
+"choices": [
+{"text": "Ignore the reading because it is not an emergency.", "is_correct": false},
+{"text": "Document the reading, assess the patient and repeat the measurement using the correct technique.", "is_correct": true},
+{"text": "Immediately administer antihypertensive medication without a prescription or protocol.", "is_correct": false},
+{"text": "Ask the patient to walk around the hospital.", "is_correct": false}
+],
+"rationale": "A blood pressure of 160/100 mmHg is elevated and requires further assessment and appropriate clinical follow-up. The nurse should confirm the measurement, assess symptoms and report the findings for appropriate management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A patient with severe pneumonia has an oxygen saturation of 84% on room air and is struggling to breathe. What should the nurse do first?",
+"choices": [
+{"text": "Wait 30 minutes before repeating the oxygen saturation.", "is_correct": false},
+{"text": "Immediately assess airway and breathing, initiate appropriate emergency oxygen support according to protocol and summon assistance.", "is_correct": true},
+{"text": "Encourage the patient to drink more water.", "is_correct": false},
+{"text": "Complete the patient's admission documentation before intervening.", "is_correct": false}
+],
+"rationale": "An oxygen saturation of 84% with respiratory distress indicates significant hypoxaemia requiring immediate intervention. Airway and breathing must be assessed, emergency assistance obtained and oxygen administered according to the patient's clinical needs and facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "Which instrument is primarily used to measure body temperature?",
+"choices": [
+{"text": "Sphygmomanometer", "is_correct": false},
+{"text": "Thermometer", "is_correct": true},
+{"text": "Stethoscope", "is_correct": false},
+{"text": "Pulse oximeter", "is_correct": false}
+],
+"rationale": "A thermometer is used to measure body temperature. Different types include digital, tympanic and infrared thermometers, with the appropriate method selected according to the patient's condition and facility guidelines.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A patient develops a temperature of 39.5°C following surgery. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Ignore the temperature because postoperative fever is always normal.", "is_correct": false},
+{"text": "Assess the patient for possible infection and other causes, monitor vital signs and report significant findings.", "is_correct": true},
+{"text": "Cover the patient with several heavy blankets.", "is_correct": false},
+{"text": "Stop all postoperative monitoring.", "is_correct": false}
+],
+"rationale": "A high postoperative temperature requires clinical assessment because it may indicate infection or another complication. The nurse should assess associated symptoms, monitor physiological parameters and escalate concerns for appropriate investigation and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A patient who has been vomiting and experiencing diarrhoea for two days becomes dizzy when standing. The blood pressure decreases from 118/76 mmHg while lying down to 90/60 mmHg when standing. What does this finding suggest?",
+"choices": [
+{"text": "Orthostatic hypotension", "is_correct": true},
+{"text": "Essential hypertension", "is_correct": false},
+{"text": "Normal physiological response", "is_correct": false},
+{"text": "Isolated bradycardia", "is_correct": false}
+],
+"rationale": "A significant reduction in blood pressure upon standing suggests orthostatic hypotension. In this patient, fluid loss from vomiting and diarrhoea may have caused hypovolaemia and reduced circulatory volume.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "What is the primary purpose of providing regular personal hygiene to hospitalised patients?",
+"choices": [
+{"text": "To make the nurse's work easier", "is_correct": false},
+{"text": "To promote cleanliness, comfort, dignity and prevention of infection", "is_correct": true},
+{"text": "To reduce the need for clinical assessment", "is_correct": false},
+{"text": "To prevent patients from participating in their own care", "is_correct": false}
+],
+"rationale": "Personal hygiene promotes physical comfort, skin integrity, dignity and psychological wellbeing. Appropriate hygiene practices also reduce microbial contamination and help prevent certain healthcare-associated infections.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A bedridden patient requires assistance with a complete bed bath. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Expose the patient's entire body throughout the procedure.", "is_correct": false},
+{"text": "Maintain privacy, ensure comfortable water temperature and expose only the area being washed.", "is_correct": true},
+{"text": "Use very hot water to remove microorganisms.", "is_correct": false},
+{"text": "Leave the patient unattended while bathing.", "is_correct": false}
+],
+"rationale": "A bed bath should preserve the patient's dignity, privacy, safety and comfort. Maintaining appropriate water temperature and covering unwashed areas also prevents unnecessary heat loss and discomfort.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A nurse is providing oral care to an unconscious patient. Which position is most appropriate to reduce the risk of aspiration?",
+"choices": [
+{"text": "Supine with the head flat", "is_correct": false},
+{"text": "Side-lying with the head turned appropriately", "is_correct": true},
+{"text": "Prone with the face pressed against the pillow", "is_correct": false},
+{"text": "Standing position", "is_correct": false}
+],
+"rationale": "A side-lying position facilitates drainage of oral secretions and reduces the risk of aspiration during oral care. Suction equipment should be available when indicated, and the patient's airway must be protected throughout the procedure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "Which action is most effective in preventing the transmission of microorganisms through the hands of healthcare workers?",
+"choices": [
+{"text": "Wearing gloves throughout the entire shift", "is_correct": false},
+{"text": "Performing hand hygiene at the appropriate moments during patient care", "is_correct": true},
+{"text": "Washing hands only when visibly dirty", "is_correct": false},
+{"text": "Using antibiotics after every patient contact", "is_correct": false}
+],
+"rationale": "Hand hygiene is one of the most effective measures for preventing healthcare-associated infections. It should be performed according to the WHO five moments for hand hygiene, using alcohol-based hand rub or soap and water as appropriate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A bedridden patient has developed redness over the sacral area that does not disappear when pressure is relieved. What should the nurse suspect?",
+"choices": [
+{"text": "Stage 1 pressure injury", "is_correct": true},
+{"text": "Stage 3 pressure injury", "is_correct": false},
+{"text": "A normal skin response", "is_correct": false},
+{"text": "A surgical wound infection", "is_correct": false}
+],
+"rationale": "Stage 1 pressure injury is characterised by intact skin with non-blanchable erythema over a pressure area. Immediate pressure redistribution, skin assessment and preventive interventions are necessary to prevent progression.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "Which position is commonly used to facilitate breathing in a patient experiencing respiratory distress?",
+"choices": [
+{"text": "Flat supine position", "is_correct": false},
+{"text": "High Fowler's position", "is_correct": true},
+{"text": "Trendelenburg position", "is_correct": false},
+{"text": "Lithotomy position", "is_correct": false}
+],
+"rationale": "High Fowler's position places the patient in a nearly upright position, generally between 60 and 90 degrees. It promotes lung expansion and may reduce the work of breathing in patients with respiratory difficulty.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A nurse is preparing to transfer a weak patient from a hospital bed to a wheelchair. Which action is most appropriate?",
+"choices": [
+{"text": "Pull the patient by the arms.", "is_correct": false},
+{"text": "Assess the patient's mobility, lock the wheelchair brakes and use appropriate transfer techniques.", "is_correct": true},
+{"text": "Ask the patient to stand without assistance.", "is_correct": false},
+{"text": "Position the wheelchair several metres away from the bed.", "is_correct": false}
+],
+"rationale": "Safe patient transfer requires assessment of mobility, balance and strength before movement. Locking wheelchair brakes and using appropriate assistance or transfer aids reduces the risk of patient falls and musculoskeletal injury to healthcare workers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A patient who has been confined to bed for several days is at increased risk of developing deep vein thrombosis. Which intervention helps reduce this risk?",
+"choices": [
+{"text": "Maintaining continuous immobility", "is_correct": false},
+{"text": "Encouraging early mobilisation and appropriate leg exercises when clinically safe", "is_correct": true},
+{"text": "Restricting all oral fluids", "is_correct": false},
+{"text": "Placing pillows directly behind both knees for prolonged periods", "is_correct": false}
+],
+"rationale": "Early mobilisation and appropriate lower-limb exercises improve venous circulation and reduce venous stasis. Other preventive measures, including prescribed pharmacological prophylaxis or mechanical devices, may be required according to the patient's individual risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A patient recovering from a stroke has weakness on the right side of the body. Which nursing action is most appropriate when repositioning the patient?",
+"choices": [
+{"text": "Pull the affected arm during movement.", "is_correct": false},
+{"text": "Support the affected arm and limb and maintain proper body alignment.", "is_correct": true},
+{"text": "Allow the affected arm to hang unsupported.", "is_correct": false},
+{"text": "Avoid repositioning the patient.", "is_correct": false}
+],
+"rationale": "Patients with hemiparesis require careful positioning to prevent shoulder injury, contractures and pressure injuries. Supporting the affected limbs and maintaining proper alignment promotes comfort and functional recovery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A patient suddenly becomes unconscious while walking with a nurse. What should the nurse do first?",
+"choices": [
+{"text": "Immediately assess responsiveness and breathing while ensuring the patient is protected from injury.", "is_correct": true},
+{"text": "Leave the patient to obtain the patient's medical records.", "is_correct": false},
+{"text": "Attempt to make the patient stand again.", "is_correct": false},
+{"text": "Give the patient oral fluids immediately.", "is_correct": false}
+],
+"rationale": "Sudden loss of consciousness requires immediate assessment of responsiveness and breathing. The nurse should summon assistance, activate the emergency response and initiate appropriate life-support measures if indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A nurse is caring for a patient with increased intracranial pressure. Which positioning intervention is generally appropriate when not contraindicated?",
+"choices": [
+{"text": "Elevate the head of the bed approximately 30 degrees and maintain neutral head alignment.", "is_correct": true},
+{"text": "Place the patient in a steep Trendelenburg position.", "is_correct": false},
+{"text": "Flex the neck sharply towards the chest.", "is_correct": false},
+{"text": "Keep the patient completely flat at all times.", "is_correct": false}
+],
+"rationale": "Elevating the head approximately 30 degrees while maintaining neutral neck alignment may promote cerebral venous drainage and help reduce intracranial pressure. Positioning should be individualised according to the patient's haemodynamic status and clinical orders.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care Basics",
+"question_text": "Which of the following best defines a surgical wound?",
+"choices": [
+{"text": "A break in skin integrity resulting from a planned surgical incision", "is_correct": true},
+{"text": "A skin condition caused exclusively by bacterial infection", "is_correct": false},
+{"text": "A wound that always contains dead tissue", "is_correct": false},
+{"text": "A skin injury caused only by pressure", "is_correct": false}
+],
+"rationale": "A surgical wound is an intentional incision made during a surgical procedure to gain access to body structures. Its healing depends on factors such as tissue perfusion, infection control, nutrition and appropriate wound management.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care Basics",
+"question_text": "A nurse is performing a dressing change on a patient with a surgical wound. Which practice is most appropriate to minimise infection risk?",
+"choices": [
+{"text": "Reuse dressing materials if they appear clean.", "is_correct": false},
+{"text": "Perform hand hygiene and use appropriate aseptic technique and sterile supplies as required.", "is_correct": true},
+{"text": "Touch the wound directly with unclean gloves.", "is_correct": false},
+{"text": "Place used dressing materials on the patient's bed.", "is_correct": false}
+],
+"rationale": "Aseptic technique reduces the introduction of microorganisms into wounds during dressing procedures. Hand hygiene, appropriate personal protective equipment and sterile supplies help minimise the risk of surgical site infection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics",
+"question_text": "Which wound exudate is typically thick, yellow or green and may indicate infection?",
+"choices": [
+{"text": "Serous exudate", "is_correct": false},
+{"text": "Serosanguineous exudate", "is_correct": false},
+{"text": "Purulent exudate", "is_correct": true},
+{"text": "Clear plasma filtrate", "is_correct": false}
+],
+"rationale": "Purulent exudate consists of thick drainage that may be yellow, green or brown and is commonly associated with infection. The nurse should assess for additional signs such as increasing pain, warmth, redness, swelling and fever.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care Basics",
+"question_text": "A patient recovering from abdominal surgery suddenly develops wound dehiscence, with abdominal organs visible through the incision. What is the nurse's priority action?",
+"choices": [
+{"text": "Attempt to push the exposed organs back into the abdomen.", "is_correct": false},
+{"text": "Cover the exposed organs with sterile gauze moistened with sterile normal saline and obtain urgent surgical assistance.", "is_correct": true},
+{"text": "Apply firm pressure directly over the exposed organs.", "is_correct": false},
+{"text": "Ask the patient to walk to the treatment room.", "is_correct": false}
+],
+"rationale": "Evisceration is a surgical emergency requiring immediate protection of the exposed organs and urgent surgical review. The nurse should not attempt to replace the organs and should maintain the patient's safety while preparing for emergency management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics",
+"question_text": "A patient with diabetes mellitus presents at a district hospital with a foot ulcer. Which factor is most likely to delay wound healing?",
+"choices": [
+{"text": "Adequate tissue perfusion", "is_correct": false},
+{"text": "Poor glycaemic control and peripheral vascular disease", "is_correct": true},
+{"text": "Adequate protein intake", "is_correct": false},
+{"text": "Appropriate wound protection", "is_correct": false}
+],
+"rationale": "Poor glycaemic control impairs immune function and normal tissue repair, while peripheral vascular disease reduces oxygen and nutrient delivery to the wound. These factors increase the risk of infection, delayed healing and possible amputation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care Basics",
+"question_text": "A nurse observes increasing redness, warmth, swelling and tenderness around a patient's surgical wound. What is the most appropriate nursing action?",
+"choices": [
+{"text": "Assume that these findings are normal throughout the healing process.", "is_correct": false},
+{"text": "Assess the wound, monitor the patient's vital signs and promptly report suspected infection.", "is_correct": true},
+{"text": "Remove all sutures immediately.", "is_correct": false},
+{"text": "Apply an unprescribed antibiotic cream.", "is_correct": false}
+],
+"rationale": "Increasing redness, warmth, swelling and tenderness may indicate a surgical site infection. Prompt assessment and escalation allow appropriate investigation and treatment before the infection progresses.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which of the following is the principal extracellular cation in the human body?",
+"choices": [
+{"text": "Potassium", "is_correct": false},
+{"text": "Calcium", "is_correct": false},
+{"text": "Sodium", "is_correct": true},
+{"text": "Magnesium", "is_correct": false}
+],
+"rationale": "Sodium is the principal cation in extracellular fluid and plays an important role in regulating fluid balance and osmotic pressure. Abnormal sodium levels can affect neurological function and cellular fluid distribution.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient presents with severe diarrhoea, dry mucous membranes, sunken eyes and reduced urine output. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Fluid volume excess", "is_correct": false},
+{"text": "Fluid volume deficit", "is_correct": true},
+{"text": "Hypervolaemia", "is_correct": false},
+{"text": "Pulmonary oedema", "is_correct": false}
+],
+"rationale": "Diarrhoea causes excessive fluid and electrolyte loss, which may lead to dehydration and hypovolaemia. Dry mucous membranes, sunken eyes and reduced urine output are common clinical indicators of fluid depletion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with prolonged vomiting develops muscle weakness and an irregular heartbeat. Laboratory investigations reveal a potassium level of 2.8 mmol/L. Which electrolyte disturbance is present?",
+"choices": [
+{"text": "Hyperkalaemia", "is_correct": false},
+{"text": "Hypokalaemia", "is_correct": true},
+{"text": "Hypernatraemia", "is_correct": false},
+{"text": "Hyponatraemia", "is_correct": false}
+],
+"rationale": "A serum potassium concentration below the normal adult range indicates hypokalaemia. Potassium depletion can cause muscle weakness, impaired gastrointestinal motility and potentially life-threatening cardiac arrhythmias.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with severe dehydration requires intravenous fluid replacement. Which fluid is commonly used initially for intravascular volume resuscitation in an adult with hypovolaemia?",
+"choices": [
+{"text": "5% dextrose in water alone", "is_correct": false},
+{"text": "0.9% sodium chloride solution", "is_correct": true},
+{"text": "Sterile distilled water", "is_correct": false},
+{"text": "Concentrated potassium chloride solution", "is_correct": false}
+],
+"rationale": "0.9% sodium chloride is an isotonic crystalloid commonly used for intravascular volume replacement in hypovolaemia. Fluid administration must be guided by clinical assessment, the cause of fluid loss and the patient's response to treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A nurse is monitoring a patient receiving intravenous fluids. The patient develops bilateral leg oedema, increasing breathlessness and crackles on lung auscultation. What is the priority nursing action?",
+"choices": [
+{"text": "Increase the infusion rate to improve circulation.", "is_correct": false},
+{"text": "Assess respiratory status, reduce or stop the infusion as clinically appropriate and urgently notify the responsible clinician.", "is_correct": true},
+{"text": "Encourage the patient to drink additional fluids.", "is_correct": false},
+{"text": "Place the patient in a flat supine position.", "is_correct": false}
+],
+"rationale": "The findings suggest fluid volume overload with possible pulmonary oedema, which can rapidly compromise breathing. The nurse should prioritise respiratory assessment, prevent further inappropriate fluid administration and obtain urgent clinical assistance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with chronic kidney disease has a serum potassium level of 6.7 mmol/L and develops peaked T waves on the electrocardiogram. Which complication is the greatest immediate concern?",
+"choices": [
+{"text": "Severe cardiac arrhythmia and cardiac arrest", "is_correct": true},
+{"text": "Increased bone density", "is_correct": false},
+{"text": "Iron-deficiency anaemia", "is_correct": false},
+{"text": "Increased intestinal motility", "is_correct": false}
+],
+"rationale": "Severe hyperkalaemia can alter cardiac electrical conduction and cause life-threatening arrhythmias. Peaked T waves are an important electrocardiographic manifestation, requiring immediate escalation and emergency treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A nurse is maintaining a fluid balance chart for a patient admitted with acute gastroenteritis. Which of the following should be recorded as fluid output?",
+"choices": [
+{"text": "Intravenous normal saline administered", "is_correct": false},
+{"text": "Oral rehydration solution consumed", "is_correct": false},
+{"text": "Measured urine and diarrhoeal stool losses", "is_correct": true},
+{"text": "Water consumed with meals", "is_correct": false}
+],
+"rationale": "Fluid output includes measurable losses such as urine, vomitus, diarrhoeal stool and drainage from appropriate medical devices. Accurate recording helps identify fluid deficits or excesses and guides treatment decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre- and Post-Operative Care",
+"question_text": "Which of the following is an essential component of preoperative nursing care?",
+"choices": [
+{"text": "Allowing the patient to eat immediately before general anaesthesia", "is_correct": false},
+{"text": "Verifying patient identity, procedure, consent status and relevant preoperative preparations", "is_correct": true},
+{"text": "Discontinuing all prescribed medications without consultation", "is_correct": false},
+{"text": "Avoiding assessment of the patient's allergies", "is_correct": false}
+],
+"rationale": "Preoperative nursing care focuses on patient safety and preparation before surgery. Verification of identity, procedure, consent, allergies, fasting status and relevant investigations helps prevent avoidable surgical complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre- and Post-Operative Care",
+"question_text": "A patient scheduled for surgery informs the nurse that they ate a full meal two hours earlier, despite instructions to fast. What should the nurse do?",
+"choices": [
+{"text": "Allow the surgery to proceed without informing the anaesthetist.", "is_correct": false},
+{"text": "Inform the surgical and anaesthetic teams and document the information accurately.", "is_correct": true},
+{"text": "Induce vomiting to empty the stomach.", "is_correct": false},
+{"text": "Ask the patient to drink more water.", "is_correct": false}
+],
+"rationale": "Recent food intake may increase the risk of pulmonary aspiration during anaesthesia. The nurse must communicate the information promptly so the surgical and anaesthetic teams can determine the safest course of action.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care",
+"question_text": "A nurse is preparing a patient for surgery. The patient states that nobody has explained the proposed procedure and refuses to sign the consent form. What is the most appropriate action?",
+"choices": [
+{"text": "Sign the consent form on behalf of the patient.", "is_correct": false},
+{"text": "Respect the patient's concern, withhold non-emergency preparation for the procedure and notify the responsible clinician.", "is_correct": true},
+{"text": "Ask the patient's relative to force the patient to sign.", "is_correct": false},
+{"text": "Proceed with surgery because the patient is already admitted.", "is_correct": false}
+],
+"rationale": "Informed consent requires adequate information and a voluntary decision by a person with appropriate decision-making capacity. The nurse should not coerce the patient or sign on their behalf and must facilitate further explanation by the responsible clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care",
+"question_text": "Immediately after surgery, a patient arrives in the recovery area with noisy breathing and reduced oxygen saturation. What should the nurse prioritise?",
+"choices": [
+{"text": "Assess and maintain airway patency.", "is_correct": true},
+{"text": "Assess the surgical wound dressing first.", "is_correct": false},
+{"text": "Offer oral fluids.", "is_correct": false},
+{"text": "Encourage the patient to walk.", "is_correct": false}
+],
+"rationale": "Airway obstruction is an immediate postoperative threat, particularly after anaesthesia when protective airway reflexes may be reduced. The nurse should assess airway patency, support breathing and summon assistance promptly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care",
+"question_text": "A postoperative patient complains of severe pain rated 9/10. The patient's blood pressure and respiratory rate are currently stable. What should the nurse do?",
+"choices": [
+{"text": "Ignore the pain because it is expected after surgery.", "is_correct": false},
+{"text": "Assess the pain, administer prescribed analgesia and evaluate the patient's response.", "is_correct": true},
+{"text": "Encourage the patient to tolerate the pain without medication.", "is_correct": false},
+{"text": "Immediately remove the surgical dressing.", "is_correct": false}
+],
+"rationale": "Postoperative pain requires systematic assessment and appropriate management. Prescribed analgesia should be administered safely, with subsequent evaluation of pain relief and monitoring for adverse effects.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care",
+"question_text": "A patient develops sudden unilateral calf swelling, tenderness and warmth on the third day after major surgery. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Deep vein thrombosis", "is_correct": true},
+{"text": "Hypoglycaemia", "is_correct": false},
+{"text": "Acute gastritis", "is_correct": false},
+{"text": "Wound dehiscence", "is_correct": false}
+],
+"rationale": "Unilateral calf swelling, tenderness and warmth are characteristic features that may suggest deep vein thrombosis. The nurse should urgently escalate the findings and avoid massaging the affected limb because of the risk of thrombus dislodgement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "Which microorganism causes malaria in humans?",
+"choices": [
+{"text": "Salmonella typhi", "is_correct": false},
+{"text": "Plasmodium species", "is_correct": true},
+{"text": "Vibrio cholerae", "is_correct": false},
+{"text": "Mycobacterium tuberculosis", "is_correct": false}
+],
+"rationale": "Malaria is caused by protozoan parasites of the genus Plasmodium. In Ghana, Plasmodium falciparum is the predominant species responsible for severe and potentially fatal malaria.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient presents at a CHPS compound with profuse watery diarrhoea, vomiting, sunken eyes and severe dehydration. Cholera is suspected. What is the most important immediate intervention?",
+"choices": [
+{"text": "Withhold fluids until laboratory confirmation is available.", "is_correct": false},
+{"text": "Begin urgent rehydration according to the patient's dehydration severity and arrange appropriate referral or management.", "is_correct": true},
+{"text": "Administer antidiarrhoeal medication routinely.", "is_correct": false},
+{"text": "Restrict oral fluids completely.", "is_correct": false}
+],
+"rationale": "Severe cholera can cause life-threatening dehydration and hypovolaemic shock through rapid fluid and electrolyte loss. Immediate rehydration with appropriate oral or intravenous fluids according to severity is the cornerstone of management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "Which of the following is a characteristic symptom of pulmonary tuberculosis?",
+"choices": [
+{"text": "Persistent cough lasting two weeks or more", "is_correct": true},
+{"text": "Sudden loss of hearing", "is_correct": false},
+{"text": "Acute abdominal distension only", "is_correct": false},
+{"text": "Painful urination without other symptoms", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis commonly presents with a persistent cough, which may be accompanied by haemoptysis, fever, night sweats, weight loss and fatigue. A patient with presumptive TB should undergo appropriate diagnostic evaluation and infection prevention measures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with diabetes mellitus becomes sweaty, confused and tremulous. A bedside blood glucose test shows 2.5 mmol/L. What should the nurse do if the patient is conscious and able to swallow safely?",
+"choices": [
+{"text": "Administer oral glucose or another fast-acting carbohydrate and recheck blood glucose after approximately 15 minutes.", "is_correct": true},
+{"text": "Administer insulin immediately.", "is_correct": false},
+{"text": "Restrict all food and fluids.", "is_correct": false},
+{"text": "Encourage vigorous physical exercise.", "is_correct": false}
+],
+"rationale": "A blood glucose level of 2.5 mmol/L indicates hypoglycaemia requiring immediate treatment. A conscious patient who can swallow safely should receive approximately 15–20 g of fast-acting carbohydrate, followed by repeat glucose assessment after 15 minutes and further treatment if necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with diabetes mellitus is found unconscious with a blood glucose level of 2.1 mmol/L. Which intervention is most appropriate?",
+"choices": [
+{"text": "Give the patient oral glucose solution immediately.", "is_correct": false},
+{"text": "Administer intravenous dextrose according to emergency protocol, or glucagon if IV access is unavailable and appropriate.", "is_correct": true},
+{"text": "Give the patient a large meal.", "is_correct": false},
+{"text": "Administer rapid-acting insulin.", "is_correct": false}
+],
+"rationale": "Severe hypoglycaemia with unconsciousness is a medical emergency. Oral intake is unsafe because of aspiration risk, so emergency treatment with intravenous glucose or appropriate glucagon should be provided while monitoring the patient's response.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with a history of hypertension suddenly develops facial asymmetry, weakness of the right arm and difficulty speaking. What is the nurse's priority action?",
+"choices": [
+{"text": "Allow the patient to sleep and reassess later.", "is_correct": false},
+{"text": "Activate the emergency stroke pathway, establish the time symptoms began and arrange urgent assessment.", "is_correct": true},
+{"text": "Give the patient oral fluids and food.", "is_correct": false},
+{"text": "Massage the affected arm to restore circulation.", "is_correct": false}
+],
+"rationale": "Sudden facial weakness, arm weakness and speech disturbance are warning signs of acute stroke. Rapid recognition, documentation of symptom onset and urgent hospital assessment are essential because timely treatment may reduce neurological damage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient admitted with severe pneumonia becomes increasingly confused, develops a respiratory rate of 32 breaths per minute and has a blood pressure of 86/54 mmHg. Which complication should the nurse be most concerned about?",
+"choices": [
+{"text": "Sepsis with possible septic shock", "is_correct": true},
+{"text": "Uncomplicated allergic rhinitis", "is_correct": false},
+{"text": "Chronic constipation", "is_correct": false},
+{"text": "Mild dehydration without circulatory compromise", "is_correct": false}
+],
+"rationale": "Altered mental status, tachypnoea and hypotension in a patient with infection are concerning signs of sepsis and possible septic shock. The nurse should urgently escalate care, initiate appropriate emergency assessment and support prompt sepsis management according to facility protocols.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with a history of asthma develops severe breathlessness, audible wheezing and difficulty speaking in complete sentences. Which intervention should the nurse prioritise?",
+"choices": [
+{"text": "Place the patient in a comfortable upright position, assess airway and breathing, and administer prescribed emergency bronchodilator treatment.", "is_correct": true},
+{"text": "Ask the patient to lie flat and rest.", "is_correct": false},
+{"text": "Encourage the patient to drink large amounts of water before treatment.", "is_correct": false},
+{"text": "Delay treatment until a chest X-ray is completed.", "is_correct": false}
+],
+"rationale": "Severe breathlessness and inability to speak in complete sentences may indicate a severe asthma exacerbation. Immediate respiratory assessment, appropriate bronchodilator therapy and urgent escalation are essential to prevent respiratory failure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient presents with severe central chest pain radiating to the left arm, sweating and nausea. What should the nurse suspect and prioritise?",
+"choices": [
+{"text": "Acute coronary syndrome requiring immediate assessment and emergency management", "is_correct": true},
+{"text": "Uncomplicated gastroenteritis requiring routine outpatient care", "is_correct": false},
+{"text": "Chronic dermatitis requiring topical treatment", "is_correct": false},
+{"text": "Simple muscle fatigue requiring rest only", "is_correct": false}
+],
+"rationale": "Central chest pain radiating to the arm with sweating and nausea is suggestive of acute coronary syndrome. The nurse should activate the emergency pathway, assess vital signs, obtain an ECG promptly and facilitate urgent clinical management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with chronic kidney disease develops facial puffiness, bilateral leg oedema, hypertension and reduced urine output. Which underlying physiological problem most likely explains these findings?",
+"choices": [
+{"text": "Excessive loss of sodium and water through the kidneys", "is_correct": false},
+{"text": "Impaired renal excretion causing fluid and sodium retention", "is_correct": true},
+{"text": "Increased insulin production", "is_correct": false},
+{"text": "Excessive loss of red blood cells through the urine", "is_correct": false}
+],
+"rationale": "Reduced renal function can impair the excretion of sodium and water, resulting in extracellular fluid accumulation. This may produce peripheral oedema, hypertension and reduced urine output, requiring careful fluid assessment and management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with suspected appendicitis presents with severe right lower quadrant abdominal pain, fever and vomiting. Which nursing intervention is most appropriate while awaiting surgical review?",
+"choices": [
+{"text": "Apply a hot water bottle directly to the abdomen.", "is_correct": false},
+{"text": "Keep the patient nil by mouth, monitor vital signs and prepare for further clinical assessment.", "is_correct": true},
+{"text": "Administer a laxative to empty the bowel.", "is_correct": false},
+{"text": "Encourage vigorous abdominal massage.", "is_correct": false}
+],
+"rationale": "Suspected appendicitis requires prompt medical and surgical assessment because of the risk of perforation and peritonitis. The nurse should monitor the patient's condition, maintain nil-by-mouth status when surgery may be required and avoid interventions that could increase complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient admitted with a severe infection suddenly becomes hypotensive, cold and clammy, with a weak rapid pulse and reduced urine output. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Septic shock", "is_correct": true},
+{"text": "Stable chronic hypertension", "is_correct": false},
+{"text": "Uncomplicated constipation", "is_correct": false},
+{"text": "Mild allergic rhinitis", "is_correct": false}
+],
+"rationale": "Hypotension, cold clammy skin, tachycardia and oliguria in a patient with infection suggest circulatory failure associated with septic shock. Immediate emergency escalation, resuscitation and treatment of the underlying infection are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with suspected pulmonary tuberculosis is admitted to a district hospital. Which infection prevention measure is most appropriate?",
+"choices": [
+{"text": "Place the patient in a well-ventilated area with appropriate airborne precautions and ensure healthcare workers use suitable respiratory protection.", "is_correct": true},
+{"text": "Use only standard surgical gloves when entering the patient's room.", "is_correct": false},
+{"text": "Allow unrestricted movement of the patient through crowded waiting areas.", "is_correct": false},
+{"text": "Place the patient in a room with poor ventilation.", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted through airborne infectious particles. Appropriate airborne precautions, adequate ventilation, patient masking when indicated and suitable respiratory protection for healthcare workers help reduce transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions",
+"question_text": "A patient with a history of peptic ulcer disease suddenly develops severe abdominal pain, a rigid abdomen and signs of circulatory instability. What complication should the nurse suspect?",
+"choices": [
+{"text": "Perforated peptic ulcer with possible peritonitis", "is_correct": true},
+{"text": "Uncomplicated constipation", "is_correct": false},
+{"text": "Mild gastro-oesophageal reflux", "is_correct": false},
+{"text": "Simple intestinal gas accumulation", "is_correct": false}
+],
+"rationale": "Sudden severe abdominal pain with abdominal rigidity in a patient with peptic ulcer disease suggests possible perforation and peritonitis. This is a surgical emergency requiring immediate assessment, stabilisation and urgent surgical referral.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
