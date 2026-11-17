@@ -1,0 +1,731 @@
+{
+"courses": [
+{
+"course_code": "CPA-122",
+"course_title": "Child Protection and Abuse",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Types of Child Abuse",
+"Signs and Symptoms of Abuse",
+"Risk Factors for Child Abuse",
+"Ghana Child Protection Laws and Policies",
+"Mandatory Reporting and Referral Pathways",
+"Nursing Role in Child Protection",
+"Child Trafficking and Child Labour",
+"Cultural Practices Affecting Children",
+"Psychological Impact of Abuse"
+],
+"questions": [
+{
+"topic": "Types of Child Abuse",
+"question_text": "Which statement best defines child abuse?",
+"choices": [
+{"text": "Any intentional or negligent act that causes or places a child at risk of physical, emotional or sexual harm", "is_correct": true},
+{"text": "Any disciplinary action taken by a parent to correct a child's behaviour", "is_correct": false},
+{"text": "Only physical injuries inflicted on a child by a stranger", "is_correct": false},
+{"text": "Any disagreement between a child and a parent", "is_correct": false}
+],
+"rationale": "Child abuse includes physical, sexual and emotional abuse, as well as neglect and exploitation. It may be perpetrated by parents, caregivers, relatives, authority figures or other individuals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "A nurse examines a child who has multiple bruises of different ages on the back and thighs. The caregiver gives inconsistent explanations for the injuries. Which form of abuse should the nurse suspect?",
+"choices": [
+{"text": "Emotional abuse", "is_correct": false},
+{"text": "Physical abuse", "is_correct": true},
+{"text": "Educational neglect", "is_correct": false},
+{"text": "Social exclusion", "is_correct": false}
+],
+"rationale": "Physical abuse involves the deliberate use of physical force that causes or may cause injury to a child. Multiple injuries at different stages of healing and inconsistent explanations are concerning findings that require further assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "A child is repeatedly told by a caregiver that they are worthless, unwanted and incapable of achieving anything. Which type of abuse is most clearly demonstrated?",
+"choices": [
+{"text": "Physical abuse", "is_correct": false},
+{"text": "Sexual abuse", "is_correct": false},
+{"text": "Emotional abuse", "is_correct": true},
+{"text": "Medical neglect", "is_correct": false}
+],
+"rationale": "Emotional abuse involves persistent behaviour that damages a child's emotional development, self-worth or psychological wellbeing. Repeated humiliation, rejection, threats and intimidation are examples.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "Which situation is the clearest example of child neglect?",
+"choices": [
+{"text": "A caregiver refuses to buy a child an expensive toy", "is_correct": false},
+{"text": "A caregiver repeatedly fails to provide adequate food, shelter, supervision and necessary medical care", "is_correct": true},
+{"text": "A parent establishes reasonable household rules", "is_correct": false},
+{"text": "A child is asked to complete age-appropriate household chores", "is_correct": false}
+],
+"rationale": "Neglect occurs when a person responsible for a child fails to provide essential care, supervision or protection. Persistent failure to meet basic needs can seriously affect the child's health, safety and development.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "A 13-year-old reports that an adult relative has been touching the child's genital area and threatening the child not to tell anyone. Which form of abuse does this indicate?",
+"choices": [
+{"text": "Emotional neglect", "is_correct": false},
+{"text": "Sexual abuse", "is_correct": true},
+{"text": "Educational exploitation", "is_correct": false},
+{"text": "Normal family interaction", "is_correct": false}
+],
+"rationale": "Sexual abuse includes involving a child in sexual activity or sexual contact that the child cannot legally or developmentally consent to. Threats and secrecy may be used by perpetrators to prevent disclosure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Child Abuse",
+"question_text": "A child is forced to sell goods late at night and is denied adequate sleep and school attendance. Which form of child maltreatment is most clearly demonstrated?",
+"choices": [
+{"text": "Child exploitation and neglect", "is_correct": true},
+{"text": "Positive discipline", "is_correct": false},
+{"text": "Normal socialisation", "is_correct": false},
+{"text": "Appropriate vocational education", "is_correct": false}
+],
+"rationale": "Exploitation occurs when a child is used for another person's benefit in ways that harm the child's welfare or development. Excessive work that interferes with education, rest and safety may constitute child labour and neglect.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "Which finding is a possible physical indicator of child sexual abuse?",
+"choices": [
+{"text": "Anogenital injury or unexplained genital bleeding", "is_correct": true},
+{"text": "A small bruise over the shin in an active toddler", "is_correct": false},
+{"text": "Temporary crying when separated from a caregiver", "is_correct": false},
+{"text": "Normal variation in appetite", "is_correct": false}
+],
+"rationale": "Anogenital injuries, unexplained bleeding, genital pain or sexually transmitted infections may raise concern for sexual abuse. However, many abused children have no visible physical signs, so absence of injury does not exclude abuse.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A nurse notices that a school-age child becomes extremely fearful whenever a particular caregiver approaches. The child avoids eye contact and appears withdrawn. What should the nurse consider?",
+"choices": [
+{"text": "Possible emotional abuse or another safeguarding concern", "is_correct": true},
+{"text": "Proof that the child has a personality disorder", "is_correct": false},
+{"text": "Evidence that the child is deliberately disobedient", "is_correct": false},
+{"text": "A normal response that never requires assessment", "is_correct": false}
+],
+"rationale": "Fearfulness, withdrawal and marked behavioural changes may be indicators of emotional abuse or other adverse experiences. These findings are not diagnostic on their own but require sensitive assessment and appropriate safeguarding action.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A child repeatedly attends a health facility with injuries, while the caregiver provides explanations that change between visits. Which finding is most concerning?",
+"choices": [
+{"text": "The caregiver's changing explanations and the recurring unexplained injuries", "is_correct": true},
+{"text": "The child's interest in playing with other children", "is_correct": false},
+{"text": "The child's normal appetite", "is_correct": false},
+{"text": "The caregiver's request for health education", "is_correct": false}
+],
+"rationale": "Repeated injuries with inconsistent or developmentally implausible explanations may indicate physical abuse. The nurse should document objective findings and follow the appropriate child protection referral pathway.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A child presents with severe malnutrition, poor hygiene and untreated skin infections. The caregiver reports that the child has not received adequate food or medical care for several months. Which form of maltreatment is most likely?",
+"choices": [
+{"text": "Neglect", "is_correct": true},
+{"text": "Peer pressure", "is_correct": false},
+{"text": "Normal childhood development", "is_correct": false},
+{"text": "Social conformity", "is_correct": false}
+],
+"rationale": "Persistent failure to provide adequate nutrition, hygiene and necessary healthcare may constitute neglect. The nurse must assess the child's immediate medical needs and determine whether the child is safe.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Signs and Symptoms of Abuse",
+"question_text": "A 10-year-old child suddenly develops nightmares, bedwetting and refusal to attend school after spending time with an adult relative. What is the most appropriate interpretation?",
+"choices": [
+{"text": "These changes may indicate psychological distress and require further safeguarding assessment", "is_correct": true},
+{"text": "They confirm that the child has epilepsy", "is_correct": false},
+{"text": "They are definite proof of sexual abuse", "is_correct": false},
+{"text": "They should be ignored because children commonly behave this way", "is_correct": false}
+],
+"rationale": "Nightmares, regression and school avoidance may occur following traumatic experiences, including abuse. They are not specific to abuse, so the nurse should explore concerns sensitively and follow safeguarding procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Risk Factors for Child Abuse",
+"question_text": "Which of the following is a recognised risk factor for child maltreatment?",
+"choices": [
+{"text": "Caregiver substance misuse and severe family stress", "is_correct": true},
+{"text": "Access to supportive parenting education", "is_correct": false},
+{"text": "Positive parent-child communication", "is_correct": false},
+{"text": "Availability of community child protection services", "is_correct": false}
+],
+"rationale": "Caregiver substance misuse, severe stress, social isolation and economic hardship may increase vulnerability to child maltreatment. These factors do not automatically mean abuse is occurring, but they may indicate a need for support and assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Risk Factors for Child Abuse",
+"question_text": "A nurse working in a rural CHPS zone identifies a child who is frequently left alone because the caregiver works long hours and has no support. What should the nurse do?",
+"choices": [
+{"text": "Assume that the caregiver is intentionally abusing the child", "is_correct": false},
+{"text": "Assess the child's safety and care arrangements and explore available family and community support", "is_correct": true},
+{"text": "Ignore the situation because it occurs in a rural community", "is_correct": false},
+{"text": "Immediately remove the child without assessment or referral", "is_correct": false}
+],
+"rationale": "Inadequate supervision may expose a child to harm, but the nurse should assess the actual circumstances rather than make assumptions. Appropriate family support and referral can address vulnerabilities while protecting the child.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Risk Factors for Child Abuse",
+"question_text": "Which child may be particularly vulnerable to neglect or abuse because of increased dependence on caregivers and communication difficulties?",
+"choices": [
+{"text": "A child with a disability", "is_correct": true},
+{"text": "A child who has access to supportive adults", "is_correct": false},
+{"text": "A child participating in supervised recreational activities", "is_correct": false},
+{"text": "A child attending regular health reviews", "is_correct": false}
+],
+"rationale": "Children with disabilities may face additional barriers to reporting abuse and accessing protection services. Their dependence on caregivers and communication challenges may increase vulnerability, although disability itself does not cause abuse.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Under the Children's Act, 1998 (Act 560), who is legally regarded as a child?",
+"choices": [
+{"text": "A person below 16 years", "is_correct": false},
+{"text": "A person below 18 years", "is_correct": true},
+{"text": "A person below 21 years", "is_correct": false},
+{"text": "A person below 14 years", "is_correct": false}
+],
+"rationale": "Section 1 of the Children's Act, 1998 (Act 560) defines a child as a person below the age of 18 years. This definition is fundamental to the application of child protection laws in Ghana.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Which principle is paramount in matters concerning children under the Children's Act, 1998 (Act 560)?",
+"choices": [
+{"text": "The financial interests of the caregiver", "is_correct": false},
+{"text": "The best interests of the child", "is_correct": true},
+{"text": "The wishes of the community regardless of the child's safety", "is_correct": false},
+{"text": "The reputation of the family", "is_correct": false}
+],
+"rationale": "Section 2 of Act 560 establishes the best interests of the child as the paramount consideration in matters concerning the child. Decisions about care, protection and welfare should therefore prioritise the child's safety and development.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Under section 17 of the Children's Act, 1998 (Act 560), what is expected of a person who has information about child abuse or a child in need of care and protection?",
+"choices": [
+{"text": "Keep the information confidential and take no action", "is_correct": false},
+{"text": "Report the matter to the Department responsible for social welfare", "is_correct": true},
+{"text": "Wait until the child reaches 18 years before reporting", "is_correct": false},
+{"text": "Investigate and punish the alleged perpetrator personally", "is_correct": false}
+],
+"rationale": "Section 17 requires any person with information about child abuse or a child in need of care and protection to report the matter to the Department. The reporting responsibility is not limited to healthcare professionals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Which institution has the statutory responsibility under section 16 of Act 560 to investigate cases involving contravention of children's rights at the district level?",
+"choices": [
+{"text": "The Social Welfare and Community Development Department of the District Assembly", "is_correct": true},
+{"text": "The National Health Insurance Authority", "is_correct": false},
+{"text": "The Ghana Revenue Authority", "is_correct": false},
+{"text": "The Electoral Commission", "is_correct": false}
+],
+"rationale": "Section 16 assigns the District Assembly responsibility for protecting children's welfare and promoting their rights. Its Social Welfare and Community Development Department investigates cases involving violations of children's rights.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "What is the primary purpose of the Juvenile Justice Act, 2003 (Act 653)?",
+"choices": [
+{"text": "To establish a juvenile justice system that protects the rights of children in conflict with the law", "is_correct": true},
+{"text": "To regulate the employment of adult workers", "is_correct": false},
+{"text": "To establish the National Health Insurance Scheme", "is_correct": false},
+{"text": "To regulate the professional conduct of nurses", "is_correct": false}
+],
+"rationale": "The Juvenile Justice Act, 2003 (Act 653) provides a separate justice framework for juveniles in conflict with the law. It emphasises the protection of their rights and an appropriate response to juvenile offending.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "A 15-year-old child is arrested for allegedly stealing food. Which legal approach is most consistent with Ghana's Juvenile Justice Act, 2003 (Act 653)?",
+"choices": [
+{"text": "Treat the child automatically as an adult offender", "is_correct": false},
+{"text": "Apply the juvenile justice process and protect the child's rights", "is_correct": true},
+{"text": "Publish the child's identity to discourage other children", "is_correct": false},
+{"text": "Deny the child access to legal assistance", "is_correct": false}
+],
+"rationale": "A person below 18 years who is in conflict with the law falls within the juvenile justice framework. The Act provides for a child-sensitive process that protects the juvenile's rights and promotes appropriate rehabilitation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ghana Child Protection Laws and Policies",
+"question_text": "Under the Children's Act, 1998 (Act 560), what is the minimum age for a child to enter into marriage?",
+"choices": [
+{"text": "16 years", "is_correct": false},
+{"text": "17 years", "is_correct": false},
+{"text": "18 years", "is_correct": true},
+{"text": "21 years", "is_correct": false}
+],
+"rationale": "Act 560 sets 18 years as the minimum age for marriage and protects children from forced betrothal and marriage. Child marriage violates children's rights and can expose them to serious physical, psychological and social harm.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A nurse suspects that a child attending a district hospital has been sexually abused. What is the most appropriate action?",
+"choices": [
+{"text": "Wait for the caregiver to admit the abuse before taking action", "is_correct": false},
+{"text": "Ensure immediate healthcare needs are addressed and report the concern through the appropriate child protection pathway", "is_correct": true},
+{"text": "Confront the suspected perpetrator in the ward", "is_correct": false},
+{"text": "Send the child home without documentation", "is_correct": false}
+],
+"rationale": "A nurse does not need to establish guilt before reporting a child protection concern. Immediate clinical care, objective documentation and referral to the Department of Social Welfare and appropriate law enforcement services are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "Which Ghana Police Service unit specifically handles cases involving domestic violence, child abuse and other vulnerable victims?",
+"choices": [
+{"text": "Criminal Investigation Department's Forensic Laboratory only", "is_correct": false},
+{"text": "Domestic Violence and Victim Support Unit (DOVVSU)", "is_correct": true},
+{"text": "Motor Traffic and Transport Department", "is_correct": false},
+{"text": "National Ambulance Service", "is_correct": false}
+],
+"rationale": "DOVVSU is a specialised unit of the Ghana Police Service that handles domestic violence, child abuse and cases involving vulnerable persons. It works with health services and social welfare agencies to support investigations and victim protection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A nurse receives a disclosure from a child that an uncle has sexually abused the child. The child asks the nurse not to tell anyone. What should the nurse say?",
+"choices": [
+{"text": "I will keep everything secret, even if you are unsafe", "is_correct": false},
+{"text": "I will listen and help protect you, but I may need to share this information with people responsible for keeping children safe", "is_correct": true},
+{"text": "You must confront your uncle before I can help", "is_correct": false},
+{"text": "I cannot help unless you provide physical evidence", "is_correct": false}
+],
+"rationale": "The nurse should explain the limits of confidentiality in an age-appropriate and reassuring manner. Child protection concerns must be shared with appropriate authorities so that the child can receive protection and support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A child suspected of physical abuse arrives at a health facility with active bleeding and reduced consciousness. What should the nurse prioritise?",
+"choices": [
+{"text": "Complete a detailed social history before providing treatment", "is_correct": false},
+{"text": "Stabilise the child's condition and arrange emergency medical management while ensuring safeguarding procedures are initiated", "is_correct": true},
+{"text": "Send the child to the police station before treatment", "is_correct": false},
+{"text": "Wait for the alleged perpetrator to explain the injuries", "is_correct": false}
+],
+"rationale": "A child with active bleeding and reduced consciousness requires immediate emergency assessment and stabilisation. Safeguarding referral and reporting should proceed without delaying life-saving clinical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A nurse suspects child abuse but has not personally witnessed the incident. What is the most appropriate response under Ghana's child protection framework?",
+"choices": [
+{"text": "Do not report because the nurse has no direct proof", "is_correct": false},
+{"text": "Document the concerns objectively and report the information to the appropriate social welfare authority", "is_correct": true},
+{"text": "Wait until the child develops more serious injuries", "is_correct": false},
+{"text": "Ask the suspected perpetrator to investigate the allegation", "is_correct": false}
+],
+"rationale": "Section 17 of Act 560 requires reporting by a person who has information about child abuse or a child in need of protection. The nurse should report reasonable concerns rather than attempt to conduct an independent criminal investigation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A child protection concern is reported to a social welfare officer, who identifies that the child is in immediate danger. Which action is consistent with the procedures under Act 560?",
+"choices": [
+{"text": "Leave the child in the unsafe environment until the next routine review", "is_correct": false},
+{"text": "Arrange appropriate protective intervention, including involvement of the police and removal to a place of safety when legally justified", "is_correct": true},
+{"text": "Require the child to negotiate directly with the alleged perpetrator", "is_correct": false},
+{"text": "Close the case because the child is unable to provide a written statement", "is_correct": false}
+],
+"rationale": "Act 560 provides for investigation and protective intervention where a child has been abused or needs immediate care and protection. Section 19 allows a child to be removed to a place of safety for a period not exceeding seven days under the statutory procedure.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mandatory Reporting and Referral Pathways",
+"question_text": "A child discloses sexual abuse during a nursing assessment. Which response is most appropriate when recording the disclosure?",
+"choices": [
+{"text": "Write the child's exact words where possible and document objective observations", "is_correct": true},
+{"text": "Rewrite the child's statement to make it sound more convincing", "is_correct": false},
+{"text": "Record personal assumptions about the alleged perpetrator's guilt", "is_correct": false},
+{"text": "Avoid documenting the disclosure to protect the facility", "is_correct": false}
+],
+"rationale": "Accurate, objective documentation is important for continuity of care and possible legal proceedings. The nurse should record the child's words as accurately as possible, distinguish observations from opinions and follow facility documentation procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Role in Child Protection",
+"question_text": "What is the primary responsibility of a nurse when a child protection concern is identified?",
+"choices": [
+{"text": "Diagnose the alleged perpetrator and determine the criminal sentence", "is_correct": false},
+{"text": "Protect the child's immediate safety, provide appropriate care, document findings and initiate referral", "is_correct": true},
+{"text": "Keep the case within the nursing team without notifying relevant authorities", "is_correct": false},
+{"text": "Question the child repeatedly until every detail is obtained", "is_correct": false}
+],
+"rationale": "The nurse's role includes recognising possible abuse, assessing immediate health needs, documenting findings and reporting concerns. Criminal investigation and determination of guilt are responsibilities of the appropriate authorities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Role in Child Protection",
+"question_text": "A child suspected of abuse is brought to a health facility by a caregiver who appears angry and intimidating. What should the nurse do?",
+"choices": [
+{"text": "Conduct the assessment in a safe setting and seek appropriate assistance to protect the child", "is_correct": true},
+{"text": "Allow the caregiver to control every part of the interview", "is_correct": false},
+{"text": "Discharge the child to avoid conflict with the caregiver", "is_correct": false},
+{"text": "Accuse the caregiver publicly before obtaining any information", "is_correct": false}
+],
+"rationale": "The nurse should prioritise safety and avoid actions that may expose the child or staff to further harm. Assessment should be conducted sensitively, with appropriate safeguarding personnel involved.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Role in Child Protection",
+"question_text": "When interviewing a child who may have experienced abuse, which communication approach is most appropriate?",
+"choices": [
+{"text": "Use leading questions that suggest the expected answer", "is_correct": false},
+{"text": "Use calm, age-appropriate, open-ended questions and allow the child to speak without pressure", "is_correct": true},
+{"text": "Threaten the child if the account appears inconsistent", "is_correct": false},
+{"text": "Ask several adults to question the child repeatedly", "is_correct": false}
+],
+"rationale": "A supportive, non-leading approach helps the child communicate without undue pressure or suggestion. Repeated or suggestive questioning may distress the child and affect the reliability of the account.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Role in Child Protection",
+"question_text": "A child who reports sexual abuse has no visible injuries during examination. What should the nurse conclude?",
+"choices": [
+{"text": "Abuse did not occur because there are no injuries", "is_correct": false},
+{"text": "The absence of visible injuries does not exclude sexual abuse, so appropriate assessment and referral remain necessary", "is_correct": true},
+{"text": "The child must be lying", "is_correct": false},
+{"text": "No documentation is required", "is_correct": false}
+],
+"rationale": "Many forms of sexual abuse do not cause visible injury, and some injuries heal before examination. The child's disclosure and overall clinical circumstances should be taken seriously and managed through appropriate safeguarding procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Role in Child Protection",
+"question_text": "A nurse is caring for a child who has disclosed sexual abuse that occurred recently. Which action is most appropriate?",
+"choices": [
+{"text": "Provide timely medical assessment and arrange referral to an appropriately trained clinician for indicated forensic and sexual health care", "is_correct": true},
+{"text": "Delay assessment until the alleged perpetrator is arrested", "is_correct": false},
+{"text": "Ask the child to wash all clothing before any assessment", "is_correct": false},
+{"text": "Conduct an invasive examination without consent or appropriate clinical indication", "is_correct": false}
+],
+"rationale": "Timely assessment may be important for treatment, prevention of pregnancy or sexually transmitted infections where indicated, and appropriate forensic documentation. Care must be sensitive, clinically justified and consistent with consent, safeguarding and facility protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Role in Child Protection",
+"question_text": "A child with suspected abuse is brought to the emergency unit with severe head injury. The caregiver insists that the nurse should not inform anyone. What should the nurse do FIRST?",
+"choices": [
+{"text": "Respect the caregiver's request and avoid reporting", "is_correct": false},
+{"text": "Initiate emergency assessment and treatment while ensuring the child protection concern is reported", "is_correct": true},
+{"text": "Wait until the child can independently make a formal complaint", "is_correct": false},
+{"text": "Discharge the child after giving pain relief", "is_correct": false}
+],
+"rationale": "The child's immediate medical needs and safety take priority. The caregiver cannot prevent the nurse from fulfilling the legal reporting responsibility under section 17 of Act 560.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Role in Child Protection",
+"question_text": "A child protection case involves suspected abuse by a family member, and the nurse is unsure about the next steps. Which approach is most appropriate?",
+"choices": [
+{"text": "Manage the case alone without informing other professionals", "is_correct": false},
+{"text": "Follow facility safeguarding procedures and coordinate with social welfare and appropriate police services", "is_correct": true},
+{"text": "Ask the family to settle the allegation privately", "is_correct": false},
+{"text": "Delay all action until the next staff meeting", "is_correct": false}
+],
+"rationale": "Child protection requires coordinated action among healthcare workers, social welfare officers and law enforcement where appropriate. Following established referral pathways helps ensure safety, continuity of care and accountability.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "Which statement best describes child trafficking?",
+"choices": [
+{"text": "The recruitment, transportation, transfer, harbouring or receipt of a child for the purpose of exploitation", "is_correct": true},
+{"text": "Any supervised movement of a child from one town to another", "is_correct": false},
+{"text": "A child's voluntary participation in age-appropriate school activities", "is_correct": false},
+{"text": "A family taking a child to visit relatives during holidays", "is_correct": false}
+],
+"rationale": "Child trafficking involves acts such as recruitment, transportation or harbouring for exploitation. A child victim's apparent agreement does not make exploitation lawful.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A 12-year-old child is taken from a rural community to work long hours in fishing, receives no wages and is prevented from attending school. What should the nurse suspect?",
+"choices": [
+{"text": "Child trafficking and exploitative child labour", "is_correct": true},
+{"text": "Appropriate vocational training", "is_correct": false},
+{"text": "Normal childhood recreation", "is_correct": false},
+{"text": "A lawful apprenticeship in every circumstance", "is_correct": false}
+],
+"rationale": "Exploitation of a child through hazardous work, deprivation of education and forced or coercive labour raises serious child protection concerns. The nurse should assess immediate safety and report the matter through the appropriate social welfare and law enforcement pathways.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "Under Ghana's Children's Act, 1998 (Act 560), what is the general minimum age for admission of a child to employment?",
+"choices": [
+{"text": "12 years", "is_correct": false},
+{"text": "13 years", "is_correct": false},
+{"text": "15 years", "is_correct": true},
+{"text": "18 years", "is_correct": false}
+],
+"rationale": "Act 560 generally sets 15 years as the minimum age for employment. The Act allows limited light work from age 13, while hazardous work is prohibited for persons below 18 years.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A 16-year-old child is engaged in hazardous work involving dangerous machinery and toxic chemicals. Which statement is correct under Ghana's child labour protections?",
+"choices": [
+{"text": "The work is acceptable if the child receives payment", "is_correct": false},
+{"text": "The work is prohibited because hazardous work is not permitted for children below 18 years", "is_correct": true},
+{"text": "The work is acceptable if the child's parents agree", "is_correct": false},
+{"text": "The work is acceptable if it takes place outside school hours", "is_correct": false}
+],
+"rationale": "Ghana's Children's Act prohibits hazardous work for persons below 18 years. Parental permission or payment does not make dangerous employment lawful.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A nurse identifies a child who has been trafficked for domestic servitude. The child is frightened and does not want to return to the person who brought them. What should the nurse do?",
+"choices": [
+{"text": "Return the child immediately to the accompanying adult", "is_correct": false},
+{"text": "Ensure the child's immediate safety and initiate referral to social welfare and appropriate law enforcement services", "is_correct": true},
+{"text": "Ask the child to settle the matter privately with the adult", "is_correct": false},
+{"text": "Discharge the child without recording the concern", "is_correct": false}
+],
+"rationale": "A suspected trafficking victim may face further exploitation if returned to the person accompanying them. The nurse should protect the child, avoid unsafe reunification and initiate appropriate safeguarding referrals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "Which legislation in Ghana specifically addresses human trafficking and related exploitation?",
+"choices": [
+{"text": "Human Trafficking Act, 2005 (Act 694)", "is_correct": true},
+{"text": "Juvenile Justice Act, 2003 (Act 653) only", "is_correct": false},
+{"text": "National Health Insurance Act", "is_correct": false},
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": false}
+],
+"rationale": "The Human Trafficking Act, 2005 (Act 694) provides the legal framework for preventing and addressing human trafficking in Ghana. It supports the protection of victims and action against trafficking-related exploitation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Child Trafficking and Child Labour",
+"question_text": "A child rescued from forced labour is physically exhausted, dehydrated and afraid of returning home because the family arranged the work. What should the nurse prioritise?",
+"choices": [
+{"text": "Provide immediate clinical assessment and treatment while ensuring a safe child protection referral", "is_correct": true},
+{"text": "Send the child home immediately because the family arranged the work", "is_correct": false},
+{"text": "Ask the child to return to work after resting", "is_correct": false},
+{"text": "Focus only on obtaining a police statement", "is_correct": false}
+],
+"rationale": "The child's immediate health needs, safety and protection from further exploitation must be addressed. Medical care should be coordinated with social welfare and law enforcement rather than replaced by investigation alone.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "The term Trokosi in the Ghanaian child protection context refers to a traditional system involving:",
+"choices": [
+{"text": "The dedication or servitude of a girl or woman to a traditional shrine", "is_correct": true},
+{"text": "A formal programme for training female nurses", "is_correct": false},
+{"text": "A community immunisation campaign", "is_correct": false},
+{"text": "A traditional system of child adoption regulated by the courts", "is_correct": false}
+],
+"rationale": "Trokosi has involved the dedication and servitude of girls or women to shrines, sometimes as compensation for alleged wrongdoing by family members. Such practices involving servitude and exploitation violate child protection principles and are prohibited under Ghanaian law.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A nurse learns that a 14-year-old girl has been sent to a shrine under a Trokosi arrangement. What is the most appropriate response?",
+"choices": [
+{"text": "Accept the arrangement because it is a traditional practice", "is_correct": false},
+{"text": "Assess the child's safety and report the suspected exploitation through appropriate child protection channels", "is_correct": true},
+{"text": "Ask the girl to remain at the shrine until her family changes its mind", "is_correct": false},
+{"text": "Ignore the matter unless the child develops a physical injury", "is_correct": false}
+],
+"rationale": "A child subjected to servitude or exploitation requires protection regardless of the cultural justification offered. The nurse should act in the child's best interests and refer the case to social welfare and appropriate law enforcement authorities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "Female genital mutilation (FGM) refers to:",
+"choices": [
+{"text": "Any procedure involving partial or total removal of external female genitalia or other injury to female genital organs for non-medical reasons", "is_correct": true},
+{"text": "A medically indicated procedure to treat an obstetric emergency", "is_correct": false},
+{"text": "Routine hygiene of the external genital area", "is_correct": false},
+{"text": "A normal stage of female puberty", "is_correct": false}
+],
+"rationale": "FGM involves procedures that intentionally alter or injure female genital organs for non-medical reasons. It has no health benefits and may cause severe physical, sexual, reproductive and psychological complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A 13-year-old girl is brought to a health facility with severe bleeding following FGM. What should the nurse do FIRST?",
+"choices": [
+{"text": "Discuss the cultural background before assessing the bleeding", "is_correct": false},
+{"text": "Initiate emergency assessment and management of haemorrhage and seek urgent medical assistance", "is_correct": true},
+{"text": "Discharge the child because the procedure has already been completed", "is_correct": false},
+{"text": "Ask the family to apply traditional substances to the wound", "is_correct": false}
+],
+"rationale": "Severe bleeding is a potentially life-threatening complication requiring immediate clinical management. The nurse should stabilise the child and initiate appropriate safeguarding and reporting procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "Which statement about child marriage in Ghana is correct?",
+"choices": [
+{"text": "Marriage is permitted at any age if both families agree", "is_correct": false},
+{"text": "The minimum legal age for marriage is 18 years", "is_correct": true},
+{"text": "A child may marry at 15 years with the approval of a traditional leader", "is_correct": false},
+{"text": "Only girls below 16 years are protected from child marriage", "is_correct": false}
+],
+"rationale": "Ghana's Children's Act sets 18 years as the minimum age for marriage. Family agreement, traditional approval or payment of a bride price does not override the legal protection of children.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A 15-year-old pregnant girl is brought to a CHPS compound after being forced into marriage. Her family insists that she should not receive antenatal care because the pregnancy is a private family matter. What should the nurse do?",
+"choices": [
+{"text": "Respect the family's decision and refuse care", "is_correct": false},
+{"text": "Provide appropriate maternal healthcare and initiate child protection referral because the girl is below 18 years", "is_correct": true},
+{"text": "Ask the girl to obtain permission from the traditional leader before receiving care", "is_correct": false},
+{"text": "Discharge her without assessment to avoid family conflict", "is_correct": false}
+],
+"rationale": "The girl remains a child under Act 560 and is entitled to appropriate healthcare and protection. The nurse should provide necessary care, assess for coercion and other risks, and refer the child protection concern through the appropriate channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Practices Affecting Children",
+"question_text": "A community leader argues that a harmful traditional practice should continue because it has existed for generations. Which response best reflects professional nursing ethics and child protection principles?",
+"choices": [
+{"text": "Accept the practice because cultural traditions cannot be questioned", "is_correct": false},
+{"text": "Respectfully engage the community while explaining the child's rights, health risks and applicable laws", "is_correct": true},
+{"text": "Insult the community leader and refuse further discussion", "is_correct": false},
+{"text": "Ignore the child's safety to preserve community relationships", "is_correct": false}
+],
+"rationale": "Cultural sensitivity does not require acceptance of practices that harm children or violate their rights. Nurses should use respectful community engagement and evidence-based education while ensuring that child protection laws are followed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "Which psychological condition may develop in a child following exposure to severe or repeated traumatic events?",
+"choices": [
+{"text": "Post-traumatic stress disorder", "is_correct": true},
+{"text": "Normal physical growth", "is_correct": false},
+{"text": "Myopia", "is_correct": false},
+{"text": "Iron-deficiency anaemia", "is_correct": false}
+],
+"rationale": "Post-traumatic stress disorder may develop after exposure to traumatic events and can involve intrusive memories, avoidance, negative mood changes and increased arousal. Not every child exposed to trauma develops PTSD, but all should be assessed for distress and support needs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child who has experienced repeated emotional abuse frequently says, 'I am useless and nobody loves me.' Which psychological effect is most evident?",
+"choices": [
+{"text": "Low self-esteem", "is_correct": true},
+{"text": "Improved self-efficacy", "is_correct": false},
+{"text": "Enhanced social confidence", "is_correct": false},
+{"text": "Increased academic motivation", "is_correct": false}
+],
+"rationale": "Repeated humiliation and rejection can damage a child's self-concept and self-esteem. The child may develop persistent feelings of worthlessness, shame and insecurity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child who experienced physical abuse becomes aggressive towards classmates and has difficulty trusting adults. Which explanation is most appropriate?",
+"choices": [
+{"text": "Traumatic experiences may affect emotional regulation, relationships and behaviour", "is_correct": true},
+{"text": "The child is necessarily born with a criminal personality", "is_correct": false},
+{"text": "Aggression proves that the child has no emotional needs", "is_correct": false},
+{"text": "Abuse has no possible relationship with later behaviour", "is_correct": false}
+],
+"rationale": "Exposure to abuse can affect a child's ability to regulate emotions and develop trusting relationships. Behavioural difficulties may represent responses to trauma and should be assessed rather than treated simply as deliberate misconduct.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child who has experienced sexual abuse becomes withdrawn, refuses to attend school and reports recurrent nightmares. What should the nurse prioritise?",
+"choices": [
+{"text": "Punish the child for refusing to attend school", "is_correct": false},
+{"text": "Assess psychological wellbeing and safety and arrange appropriate trauma-informed support", "is_correct": true},
+{"text": "Tell the child to forget the experience", "is_correct": false},
+{"text": "Force the child to describe the incident repeatedly", "is_correct": false}
+],
+"rationale": "Withdrawal, nightmares and school avoidance may indicate significant trauma-related distress. The nurse should provide a safe, supportive environment and arrange appropriate mental health and child protection referrals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A 9-year-old child who was previously toilet-trained begins bedwetting after an episode of suspected abuse. Which term best describes this behavioural change?",
+"choices": [
+{"text": "Regression", "is_correct": true},
+{"text": "Positive reinforcement", "is_correct": false},
+{"text": "Social facilitation", "is_correct": false},
+{"text": "Maturation", "is_correct": false}
+],
+"rationale": "Regression is the return to behaviours associated with an earlier developmental stage. It may occur in children experiencing stress or trauma and should prompt sensitive assessment of possible underlying causes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child discloses abuse and then says, 'It was my fault because I did not obey.' What is the most appropriate nursing response?",
+"choices": [
+{"text": "Tell the child that disobedient children deserve punishment", "is_correct": false},
+{"text": "Reassure the child that the abuse was not their fault and that adults are responsible for keeping children safe", "is_correct": true},
+{"text": "Ask the child to apologise to the alleged perpetrator", "is_correct": false},
+{"text": "Avoid responding to the child's statement", "is_correct": false}
+],
+"rationale": "Children who experience abuse may develop guilt, shame and self-blame. Reassurance that the abuse was not their fault supports emotional safety and helps establish a trusting therapeutic relationship.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child rescued from prolonged trafficking has nightmares, hypervigilance, poor concentration and avoids discussing the experience. Which nursing interpretation is most appropriate?",
+"choices": [
+{"text": "The child may be experiencing trauma-related symptoms requiring comprehensive assessment", "is_correct": true},
+{"text": "The child is deliberately refusing to cooperate with healthcare workers", "is_correct": false},
+{"text": "The symptoms prove that the child has an intellectual disability", "is_correct": false},
+{"text": "The child should be discharged because the trafficking has ended", "is_correct": false}
+],
+"rationale": "Nightmares, hypervigilance, avoidance and concentration difficulties may occur following prolonged trauma. The child needs a safe environment, medical and psychological assessment, and coordinated long-term support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A nurse is caring for a child who has disclosed abuse and is visibly distressed. Which action is most likely to promote psychological safety?",
+"choices": [
+{"text": "Provide a calm environment, listen without judgement and explain what will happen next", "is_correct": true},
+{"text": "Demand that the child recount every detail immediately", "is_correct": false},
+{"text": "Discuss the case loudly in front of other patients", "is_correct": false},
+{"text": "Tell the child that the matter is too serious to discuss", "is_correct": false}
+],
+"rationale": "Trauma-informed care prioritises safety, trust, choice and respectful communication. Explaining the next steps in an age-appropriate way can reduce fear and help the child feel supported.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child who has experienced abuse expresses thoughts of self-harm and says that life is no longer worth living. What should the nurse do FIRST?",
+"choices": [
+{"text": "Assume the child is seeking attention", "is_correct": false},
+{"text": "Maintain immediate safety, assess suicide risk and arrange urgent mental health assessment", "is_correct": true},
+{"text": "Promise not to tell anyone about the statement", "is_correct": false},
+{"text": "Leave the child alone to calm down", "is_correct": false}
+],
+"rationale": "Statements about self-harm or not wanting to live require immediate attention because children exposed to abuse may be at increased risk of psychological crisis. The nurse should maintain supervision appropriate to the risk, arrange urgent assessment and follow safeguarding procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Impact of Abuse",
+"question_text": "A child has experienced repeated abuse by a caregiver but continues to defend the caregiver and refuses to discuss the incidents. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The child may experience fear, loyalty conflicts or dependence that complicate disclosure", "is_correct": true},
+{"text": "The child's response proves that no abuse occurred", "is_correct": false},
+{"text": "The child must be punished for protecting the caregiver", "is_correct": false},
+{"text": "The child is responsible for stopping the abuse independently", "is_correct": false}
+],
+"rationale": "Children may have complex emotional attachments to caregivers, even when those caregivers are abusive. Fear, dependence, threats and loyalty conflicts can make disclosure difficult, so the nurse should avoid judgement and maintain protective support.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
