@@ -1,0 +1,742 @@
+{
+"courses": [
+{
+"course_code": "HAP-122",
+"course_title": "Human Anatomy & Physiology II",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Cardiovascular System",
+"Respiratory System",
+"Digestive System",
+"Urinary System",
+"Reproductive Systems",
+"Lymphatic and Immune Systems",
+"Fluid, Electrolyte and Acid-Base Balance",
+"Metabolism and Body Temperature Regulation"
+],
+"questions": [
+{
+"topic": "Cardiovascular System",
+"question_text": "Which chamber of the heart receives deoxygenated blood from the superior and inferior vena cava?",
+"choices": [
+{"text": "Left atrium", "is_correct": false},
+{"text": "Right atrium", "is_correct": true},
+{"text": "Left ventricle", "is_correct": false},
+{"text": "Right ventricle", "is_correct": false}
+],
+"rationale": "The right atrium receives deoxygenated blood returning from the systemic circulation through the superior and inferior vena cava. It subsequently passes this blood through the tricuspid valve into the right ventricle.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+"choices": [
+{"text": "Pulmonary artery", "is_correct": false},
+{"text": "Superior vena cava", "is_correct": false},
+{"text": "Pulmonary veins", "is_correct": true},
+{"text": "Aorta", "is_correct": false}
+],
+"rationale": "Pulmonary veins transport oxygenated blood from the lungs to the left atrium. They are an exception to the usual pattern because veins generally carry blood towards the heart, irrespective of its oxygen content.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "Which component of blood is primarily responsible for transporting oxygen?",
+"choices": [
+{"text": "Platelets", "is_correct": false},
+{"text": "Plasma", "is_correct": false},
+{"text": "Red blood cells", "is_correct": true},
+{"text": "White blood cells", "is_correct": false}
+],
+"rationale": "Red blood cells contain haemoglobin, a protein that binds oxygen in the lungs and transports it to body tissues. A reduction in red blood cell count or haemoglobin concentration can impair oxygen delivery, as occurs in anaemia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "Which blood component plays the primary role in blood clot formation?",
+"choices": [
+{"text": "Erythrocytes", "is_correct": false},
+{"text": "Platelets", "is_correct": true},
+{"text": "Lymphocytes", "is_correct": false},
+{"text": "Albumin", "is_correct": false}
+],
+"rationale": "Platelets adhere to damaged blood vessel walls and aggregate to form an initial platelet plug. They also support the coagulation process, which produces a fibrin clot to control bleeding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Respiratory System",
+"question_text": "Where does the exchange of oxygen and carbon dioxide primarily occur in the lungs?",
+"choices": [
+{"text": "Trachea", "is_correct": false},
+{"text": "Bronchi", "is_correct": false},
+{"text": "Alveoli", "is_correct": true},
+{"text": "Larynx", "is_correct": false}
+],
+"rationale": "Alveoli are small air sacs surrounded by pulmonary capillaries. Their thin walls and large surface area facilitate gaseous exchange by diffusion.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Respiratory System",
+"question_text": "Which muscle is primarily responsible for normal quiet inspiration?",
+"choices": [
+{"text": "Diaphragm", "is_correct": true},
+{"text": "Rectus abdominis", "is_correct": false},
+{"text": "Internal intercostal muscles", "is_correct": false},
+{"text": "Sternocleidomastoid", "is_correct": false}
+],
+"rationale": "During quiet inspiration, the diaphragm contracts and moves downwards, increasing the volume of the thoracic cavity. This reduces intrathoracic pressure and allows air to enter the lungs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Respiratory System",
+"question_text": "Which structure prevents food from entering the trachea during swallowing?",
+"choices": [
+{"text": "Uvula", "is_correct": false},
+{"text": "Epiglottis", "is_correct": true},
+{"text": "Vocal cords", "is_correct": false},
+{"text": "Nasal septum", "is_correct": false}
+],
+"rationale": "The epiglottis helps protect the airway during swallowing by directing food and liquid away from the laryngeal inlet. This reduces the risk of aspiration into the respiratory tract.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Digestive System",
+"question_text": "Which organ produces bile?",
+"choices": [
+{"text": "Pancreas", "is_correct": false},
+{"text": "Gallbladder", "is_correct": false},
+{"text": "Liver", "is_correct": true},
+{"text": "Stomach", "is_correct": false}
+],
+"rationale": "The liver produces bile, which contains bile salts that help emulsify dietary fats. The gallbladder stores and concentrates bile before releasing it into the small intestine.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Digestive System",
+"question_text": "In which part of the digestive tract does most nutrient absorption occur?",
+"choices": [
+{"text": "Oesophagus", "is_correct": false},
+{"text": "Stomach", "is_correct": false},
+{"text": "Small intestine", "is_correct": true},
+{"text": "Large intestine", "is_correct": false}
+],
+"rationale": "Most nutrient absorption occurs in the small intestine, particularly the jejunum and ileum. Its folds, villi and microvilli provide a large surface area for absorption.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Urinary System",
+"question_text": "What is the functional unit of the kidney?",
+"choices": [
+{"text": "Ureter", "is_correct": false},
+{"text": "Nephron", "is_correct": true},
+{"text": "Renal pelvis", "is_correct": false},
+{"text": "Urinary bladder", "is_correct": false}
+],
+"rationale": "The nephron is the structural and functional unit of the kidney. It performs filtration, reabsorption and secretion to regulate urine composition and maintain fluid and electrolyte balance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Urinary System",
+"question_text": "Which hormone increases water reabsorption in the kidney collecting ducts?",
+"choices": [
+{"text": "Insulin", "is_correct": false},
+{"text": "Thyroxine", "is_correct": false},
+{"text": "Antidiuretic hormone", "is_correct": true},
+{"text": "Glucagon", "is_correct": false}
+],
+"rationale": "Antidiuretic hormone (ADH), also called vasopressin, increases water permeability in the collecting ducts. This promotes water reabsorption and reduces urine volume.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Reproductive Systems",
+"question_text": "Which organ produces sperm cells in the male reproductive system?",
+"choices": [
+{"text": "Prostate gland", "is_correct": false},
+{"text": "Testes", "is_correct": true},
+{"text": "Seminal vesicles", "is_correct": false},
+{"text": "Epididymis", "is_correct": false}
+],
+"rationale": "Sperm cells are produced in the seminiferous tubules of the testes through spermatogenesis. The epididymis is responsible for sperm maturation and storage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Reproductive Systems",
+"question_text": "Where does fertilisation normally occur in the female reproductive system?",
+"choices": [
+{"text": "Uterine cavity", "is_correct": false},
+{"text": "Cervix", "is_correct": false},
+{"text": "Ampulla of the uterine tube", "is_correct": true},
+{"text": "Vagina", "is_correct": false}
+],
+"rationale": "Fertilisation normally occurs in the ampullary region of the uterine tube. The resulting zygote subsequently undergoes cell division as it moves towards the uterus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Lymphatic and Immune Systems",
+"question_text": "Which organ is primarily responsible for the maturation of T lymphocytes?",
+"choices": [
+{"text": "Spleen", "is_correct": false},
+{"text": "Thymus", "is_correct": true},
+{"text": "Liver", "is_correct": false},
+{"text": "Pancreas", "is_correct": false}
+],
+"rationale": "T lymphocytes mature in the thymus, a primary lymphoid organ located in the upper anterior mediastinum. Mature T cells participate in cell-mediated immunity and immune regulation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Lymphatic and Immune Systems",
+"question_text": "What is the main function of lymph nodes?",
+"choices": [
+{"text": "Production of digestive enzymes", "is_correct": false},
+{"text": "Filtration of lymph and initiation of immune responses", "is_correct": true},
+{"text": "Production of bile", "is_correct": false},
+{"text": "Regulation of blood glucose", "is_correct": false}
+],
+"rationale": "Lymph nodes filter lymph and contain immune cells, including lymphocytes and macrophages. They help identify and respond to pathogens and other foreign substances.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "Which electrolyte is the major cation in extracellular fluid?",
+"choices": [
+{"text": "Potassium", "is_correct": false},
+{"text": "Calcium", "is_correct": false},
+{"text": "Sodium", "is_correct": true},
+{"text": "Magnesium", "is_correct": false}
+],
+"rationale": "Sodium is the principal extracellular cation and plays a major role in maintaining extracellular fluid volume and osmolality. Abnormal sodium concentrations can affect neurological function.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "Which part of the brain acts as the principal thermoregulatory centre?",
+"choices": [
+{"text": "Cerebellum", "is_correct": false},
+{"text": "Medulla oblongata", "is_correct": false},
+{"text": "Hypothalamus", "is_correct": true},
+{"text": "Occipital lobe", "is_correct": false}
+],
+"rationale": "The hypothalamus regulates body temperature by coordinating heat production and heat loss mechanisms. These include sweating, shivering and changes in cutaneous blood flow.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A patient with anaemia has a reduced haemoglobin concentration. Which physiological function is most directly affected?",
+"choices": [
+{"text": "Transport of oxygen to body tissues", "is_correct": true},
+{"text": "Production of digestive enzymes", "is_correct": false},
+{"text": "Filtration of lymph", "is_correct": false},
+{"text": "Secretion of insulin", "is_correct": false}
+],
+"rationale": "Haemoglobin binds oxygen in the lungs and transports it to peripheral tissues. Reduced haemoglobin concentration decreases the oxygen-carrying capacity of blood and may cause fatigue, pallor and breathlessness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A patient has a heart rate of 90 beats per minute and a stroke volume of 70 mL. What is the patient's cardiac output?",
+"choices": [
+{"text": "1.3 L/min", "is_correct": false},
+{"text": "4.5 L/min", "is_correct": false},
+{"text": "6.3 L/min", "is_correct": true},
+{"text": "9.0 L/min", "is_correct": false}
+],
+"rationale": "Cardiac output is calculated by multiplying heart rate by stroke volume. Therefore, 90 × 70 mL equals 6,300 mL/min, or 6.3 L/min.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A patient with sickle cell disease develops severe pain in the limbs due to blockage of small blood vessels. Which physiological process explains this complication?",
+"choices": [
+{"text": "Increased platelet production causing excessive clotting", "is_correct": false},
+{"text": "Sickling of red blood cells obstructing microcirculation", "is_correct": true},
+{"text": "Excessive destruction of white blood cells", "is_correct": false},
+{"text": "Increased plasma protein production", "is_correct": false}
+],
+"rationale": "Deoxygenated haemoglobin S can polymerise, causing red blood cells to become rigid and sickle-shaped. These cells obstruct small blood vessels, producing vaso-occlusion, tissue ischaemia and severe pain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A nurse measures a patient's blood pressure as 150/95 mmHg. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The systolic pressure is 95 mmHg and diastolic pressure is 150 mmHg", "is_correct": false},
+{"text": "The systolic pressure is 150 mmHg and diastolic pressure is 95 mmHg", "is_correct": true},
+{"text": "The pulse pressure is 95 mmHg", "is_correct": false},
+{"text": "The mean arterial pressure is exactly 150 mmHg", "is_correct": false}
+],
+"rationale": "The first value represents systolic pressure, while the second represents diastolic pressure. The pulse pressure is 55 mmHg, calculated by subtracting 95 from 150.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A patient experiences persistent bleeding after a minor injury. Which blood component should the nurse recognise as particularly important in the initial formation of a haemostatic plug?",
+"choices": [
+{"text": "Platelets", "is_correct": true},
+{"text": "Neutrophils", "is_correct": false},
+{"text": "Eosinophils", "is_correct": false},
+{"text": "Albumin", "is_correct": false}
+],
+"rationale": "Platelets adhere to exposed collagen at an injured blood vessel and aggregate to form a temporary platelet plug. A low platelet count or impaired platelet function can therefore contribute to prolonged bleeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A patient develops swelling of both ankles due to fluid accumulation in the tissues. Which physiological term describes this condition?",
+"choices": [
+{"text": "Cyanosis", "is_correct": false},
+{"text": "Oedema", "is_correct": true},
+{"text": "Ischaemia", "is_correct": false},
+{"text": "Embolism", "is_correct": false}
+],
+"rationale": "Oedema is the abnormal accumulation of fluid in the interstitial spaces. It may result from increased capillary hydrostatic pressure, reduced plasma oncotic pressure or impaired lymphatic drainage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory System",
+"question_text": "A patient with pneumonia has difficulty exchanging oxygen across the alveolar-capillary membrane. Which physiological process is impaired?",
+"choices": [
+{"text": "Osmosis", "is_correct": false},
+{"text": "Diffusion", "is_correct": true},
+{"text": "Active transport", "is_correct": false},
+{"text": "Filtration", "is_correct": false}
+],
+"rationale": "Oxygen normally moves from alveolar air into pulmonary capillary blood by diffusion down its partial pressure gradient. In pneumonia, inflammation and fluid accumulation can impair this exchange.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory System",
+"question_text": "A patient is experiencing an acute asthma attack with wheezing and difficulty breathing. Which change is primarily responsible for the reduced airflow?",
+"choices": [
+{"text": "Dilation of the bronchioles", "is_correct": false},
+{"text": "Bronchoconstriction and airway inflammation", "is_correct": true},
+{"text": "Increased alveolar surface area", "is_correct": false},
+{"text": "Relaxation of the diaphragm", "is_correct": false}
+],
+"rationale": "Asthma involves reversible airway narrowing caused by bronchial smooth muscle constriction, inflammation and increased mucus production. These changes increase airway resistance and make expiration particularly difficult.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory System",
+"question_text": "A patient with severe malaria develops rapid breathing and signs of respiratory distress. Which observation should the nurse prioritise during the initial respiratory assessment?",
+"choices": [
+{"text": "Hair distribution", "is_correct": false},
+{"text": "Respiratory rate, effort and oxygen saturation", "is_correct": true},
+{"text": "Abdominal circumference", "is_correct": false},
+{"text": "Bowel movement frequency", "is_correct": false}
+],
+"rationale": "Respiratory rate, work of breathing and oxygen saturation provide important information about respiratory function and oxygenation. Abnormal findings may indicate serious complications requiring urgent assessment and intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory System",
+"question_text": "A patient with a suspected airway obstruction becomes unconscious and is not breathing normally. What should the nurse do first?",
+"choices": [
+{"text": "Give the patient oral fluids", "is_correct": false},
+{"text": "Activate emergency assistance and begin the appropriate resuscitation sequence", "is_correct": true},
+{"text": "Wait for spontaneous recovery", "is_correct": false},
+{"text": "Take a full medical history", "is_correct": false}
+],
+"rationale": "An unconscious patient who is not breathing normally requires immediate emergency assessment and resuscitation. The nurse should summon help, assess responsiveness and breathing, and initiate CPR and airway management according to current resuscitation guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Respiratory System",
+"question_text": "A patient with chronic obstructive pulmonary disease has difficulty exhaling air. Which respiratory change is most likely to contribute to this problem?",
+"choices": [
+{"text": "Increased airway resistance and loss of elastic recoil", "is_correct": true},
+{"text": "Increased alveolar elasticity", "is_correct": false},
+{"text": "Reduced pulmonary blood flow as the only abnormality", "is_correct": false},
+{"text": "Increased flexibility of the chest wall", "is_correct": false}
+],
+"rationale": "Obstructive lung disease increases airway resistance and may cause loss of elastic recoil, resulting in airflow limitation during expiration. Air trapping and lung hyperinflation can consequently develop.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digestive System",
+"question_text": "A patient with prolonged diarrhoea is at risk of dehydration. Which part of the digestive tract normally absorbs much of the remaining water and electrolytes from intestinal contents?",
+"choices": [
+{"text": "Oesophagus", "is_correct": false},
+{"text": "Large intestine", "is_correct": true},
+{"text": "Stomach", "is_correct": false},
+{"text": "Oral cavity", "is_correct": false}
+],
+"rationale": "The large intestine absorbs water and electrolytes from the intestinal contents and helps form faeces. Excessive fluid loss through diarrhoea can exceed the body's ability to maintain normal fluid balance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digestive System",
+"question_text": "A patient with pancreatic disease has difficulty digesting fats. Which pancreatic enzyme is primarily responsible for fat digestion?",
+"choices": [
+{"text": "Amylase", "is_correct": false},
+{"text": "Pepsin", "is_correct": false},
+{"text": "Lipase", "is_correct": true},
+{"text": "Trypsin inhibitor", "is_correct": false}
+],
+"rationale": "Pancreatic lipase breaks down dietary triglycerides into smaller molecules that can be absorbed in the small intestine. Insufficient pancreatic lipase can lead to fat malabsorption and fatty stools.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digestive System",
+"question_text": "A patient has a deficiency of intrinsic factor following damage to gastric parietal cells. Which nutritional deficiency is most likely to develop?",
+"choices": [
+{"text": "Vitamin C deficiency", "is_correct": false},
+{"text": "Vitamin B12 deficiency", "is_correct": true},
+{"text": "Vitamin D deficiency", "is_correct": false},
+{"text": "Vitamin K deficiency", "is_correct": false}
+],
+"rationale": "Intrinsic factor is produced by gastric parietal cells and is necessary for vitamin B12 absorption in the terminal ileum. Its deficiency can cause vitamin B12 deficiency and megaloblastic anaemia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digestive System",
+"question_text": "A patient reports burning epigastric pain associated with gastro-oesophageal reflux. Which anatomical structure normally helps prevent stomach contents from flowing back into the oesophagus?",
+"choices": [
+{"text": "Pyloric sphincter", "is_correct": false},
+{"text": "Lower oesophageal sphincter", "is_correct": true},
+{"text": "Ileocecal valve", "is_correct": false},
+{"text": "Anal sphincter", "is_correct": false}
+],
+"rationale": "The lower oesophageal sphincter helps prevent gastric contents from refluxing into the oesophagus. Reduced sphincter competence can allow acidic stomach contents to irritate the oesophageal lining.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Urinary System",
+"question_text": "A patient presents with reduced urine output after several episodes of vomiting and diarrhoea. Which physiological response is most likely to occur?",
+"choices": [
+{"text": "Reduced ADH secretion and increased urine output", "is_correct": false},
+{"text": "Increased ADH secretion and increased water reabsorption", "is_correct": true},
+{"text": "Complete cessation of renal filtration in all cases", "is_correct": false},
+{"text": "Increased glucose excretion as the primary response", "is_correct": false}
+],
+"rationale": "Fluid loss reduces circulating volume and stimulates ADH release, promoting water reabsorption by the kidneys. This helps conserve body water and reduces urine volume.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Urinary System",
+"question_text": "A patient with a urinary tract infection complains of painful urination and frequent urination. Which structure is commonly inflamed in uncomplicated cystitis?",
+"choices": [
+{"text": "Urinary bladder", "is_correct": true},
+{"text": "Renal cortex", "is_correct": false},
+{"text": "Adrenal gland", "is_correct": false},
+{"text": "Uterine tube", "is_correct": false}
+],
+"rationale": "Cystitis is inflammation of the urinary bladder, commonly caused by bacterial infection. Typical symptoms include dysuria, urinary frequency and urgency.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Urinary System",
+"question_text": "A patient has an elevated blood potassium level. Which organ is primarily responsible for regulating potassium excretion under normal physiological conditions?",
+"choices": [
+{"text": "Lungs", "is_correct": false},
+{"text": "Kidneys", "is_correct": true},
+{"text": "Stomach", "is_correct": false},
+{"text": "Spleen", "is_correct": false}
+],
+"rationale": "The kidneys regulate potassium balance by adjusting its secretion and reabsorption along the renal tubules. Impaired renal function can lead to hyperkalaemia, which may cause dangerous cardiac arrhythmias.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Urinary System",
+"question_text": "A patient with severe dehydration has concentrated urine. Which hormone contributes most directly to this response?",
+"choices": [
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Antidiuretic hormone", "is_correct": true},
+{"text": "Prolactin", "is_correct": false},
+{"text": "Calcitonin", "is_correct": false}
+],
+"rationale": "ADH increases water reabsorption in the collecting ducts, resulting in a smaller volume of more concentrated urine. This response helps maintain circulating fluid volume during dehydration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Reproductive Systems",
+"question_text": "A woman is assessed during the middle of a regular menstrual cycle. Which hormonal event is most directly responsible for triggering ovulation?",
+"choices": [
+{"text": "A sudden rise in luteinising hormone", "is_correct": true},
+{"text": "A fall in progesterone alone", "is_correct": false},
+{"text": "A rise in prolactin", "is_correct": false},
+{"text": "A fall in follicle-stimulating hormone to zero", "is_correct": false}
+],
+"rationale": "A surge in luteinising hormone triggers the release of the mature oocyte from the ovarian follicle. This event usually occurs around the middle of a regular menstrual cycle.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Reproductive Systems",
+"question_text": "A male patient has a blockage of the vas deferens. Which reproductive function is most directly affected?",
+"choices": [
+{"text": "Production of testosterone by Leydig cells", "is_correct": false},
+{"text": "Transport of sperm from the epididymis towards the ejaculatory ducts", "is_correct": true},
+{"text": "Production of seminal fluid by the prostate alone", "is_correct": false},
+{"text": "Secretion of gonadotropin-releasing hormone", "is_correct": false}
+],
+"rationale": "The vas deferens transports mature sperm from the epididymis towards the ejaculatory ducts. A blockage can prevent sperm from entering the semen, potentially causing obstructive infertility.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Reproductive Systems",
+"question_text": "A woman of reproductive age reports lower abdominal pain and vaginal bleeding. Pregnancy is confirmed, and an ectopic pregnancy is suspected. Which anatomical site is the most common location for an ectopic pregnancy?",
+"choices": [
+{"text": "Uterine cavity", "is_correct": false},
+{"text": "Fallopian tube", "is_correct": true},
+{"text": "Cervical canal", "is_correct": false},
+{"text": "Vagina", "is_correct": false}
+],
+"rationale": "Most ectopic pregnancies occur in a uterine tube, particularly the ampullary region. Tubal rupture can cause severe internal bleeding and is a life-threatening emergency.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Lymphatic and Immune Systems",
+"question_text": "A patient develops enlarged and tender lymph nodes in the neck during a throat infection. What does this finding most likely indicate?",
+"choices": [
+{"text": "Reduced lymphocyte activity", "is_correct": false},
+{"text": "An immune response involving the regional lymph nodes", "is_correct": true},
+{"text": "Failure of the kidneys to filter blood", "is_correct": false},
+{"text": "Increased production of digestive enzymes", "is_correct": false}
+],
+"rationale": "Lymph nodes may enlarge and become tender when immune cells respond to infection in the drainage area. Cervical lymphadenopathy can therefore occur during infections affecting the throat and upper respiratory tract.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Lymphatic and Immune Systems",
+"question_text": "A patient receives a vaccine against a communicable disease. Which immune mechanism is primarily stimulated by vaccination?",
+"choices": [
+{"text": "Passive natural immunity", "is_correct": false},
+{"text": "Artificial active immunity", "is_correct": true},
+{"text": "Innate immunity only", "is_correct": false},
+{"text": "Passive artificial immunity", "is_correct": false}
+],
+"rationale": "Vaccination exposes the immune system to an antigen in a controlled manner, stimulating an active immune response. This can produce immunological memory and a faster response to future exposure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Lymphatic and Immune Systems",
+"question_text": "A patient with advanced HIV infection has a markedly reduced CD4 T-lymphocyte count. Which function is most directly compromised?",
+"choices": [
+{"text": "Coordination of immune responses", "is_correct": true},
+{"text": "Production of bile salts", "is_correct": false},
+{"text": "Filtration of urine", "is_correct": false},
+{"text": "Transport of oxygen by haemoglobin", "is_correct": false}
+],
+"rationale": "CD4 T lymphocytes coordinate immune responses by activating and regulating other immune cells. Their depletion in advanced HIV infection increases susceptibility to opportunistic infections.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A patient with severe diarrhoea develops muscle weakness and an irregular heartbeat. Which electrolyte disturbance should the nurse suspect?",
+"choices": [
+{"text": "Hypokalaemia", "is_correct": true},
+{"text": "Hypercalcaemia", "is_correct": false},
+{"text": "Hypernatraemia", "is_correct": false},
+{"text": "Hypermagnesaemia", "is_correct": false}
+],
+"rationale": "Diarrhoea can cause substantial potassium loss, resulting in hypokalaemia. Low potassium levels can impair neuromuscular function and produce potentially dangerous cardiac arrhythmias.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A patient with persistent vomiting develops metabolic alkalosis. Which mechanism best explains this disturbance?",
+"choices": [
+{"text": "Excessive loss of gastric hydrochloric acid", "is_correct": true},
+{"text": "Excessive retention of carbon dioxide", "is_correct": false},
+{"text": "Increased production of lactic acid", "is_correct": false},
+{"text": "Excessive loss of bicarbonate through the kidneys", "is_correct": false}
+],
+"rationale": "Vomiting causes loss of hydrochloric acid from the stomach, reducing hydrogen ion concentration in the body. This can produce metabolic alkalosis, particularly when vomiting is prolonged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A patient has a serum sodium concentration of 122 mmol/L. Which term describes this electrolyte abnormality?",
+"choices": [
+{"text": "Hypernatraemia", "is_correct": false},
+{"text": "Hyponatraemia", "is_correct": true},
+{"text": "Hyperkalaemia", "is_correct": false},
+{"text": "Hypocalcaemia", "is_correct": false}
+],
+"rationale": "Hyponatraemia refers to a serum sodium concentration below the normal reference range, commonly below 135 mmol/L. Severe or rapidly developing hyponatraemia can cause cerebral oedema, confusion and seizures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A patient develops a fever during a malaria infection. Which physiological mechanism is responsible for the increase in body temperature?",
+"choices": [
+{"text": "A reduction in the hypothalamic temperature set point", "is_correct": false},
+{"text": "An increase in the hypothalamic temperature set point", "is_correct": true},
+{"text": "Permanent failure of sweat glands", "is_correct": false},
+{"text": "Complete cessation of cellular metabolism", "is_correct": false}
+],
+"rationale": "During fever, inflammatory mediators and prostaglandin E2 raise the hypothalamic temperature set point. The body responds by conserving and generating heat until the higher set point is reached.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A patient with severe heat exposure develops hot skin, confusion and a very high body temperature. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Hypothermia", "is_correct": false},
+{"text": "Heat stroke", "is_correct": true},
+{"text": "Mild dehydration only", "is_correct": false},
+{"text": "Physiological shivering", "is_correct": false}
+],
+"rationale": "Heat stroke is a life-threatening condition involving severe hyperthermia and central nervous system dysfunction. Confusion, seizures or reduced consciousness in a patient with heat exposure require immediate emergency management and active cooling.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "A patient with prolonged inadequate food intake loses weight and develops muscle wasting. Which metabolic process contributes directly to the breakdown of body proteins for energy?",
+"choices": [
+{"text": "Anabolism", "is_correct": false},
+{"text": "Catabolism", "is_correct": true},
+{"text": "Glycogenesis", "is_correct": false},
+{"text": "Lipogenesis", "is_correct": false}
+],
+"rationale": "Catabolism involves the breakdown of complex molecules into simpler substances, releasing energy. During prolonged inadequate energy intake, body proteins may be broken down, contributing to muscle wasting.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A patient with suspected acute heart failure is severely breathless, has an oxygen saturation of 82% on room air and is unable to lie flat. Which nursing action should receive the highest priority?",
+"choices": [
+{"text": "Offer a full meal", "is_correct": false},
+{"text": "Position the patient upright, assess airway and breathing, and initiate urgent oxygenation support according to protocol", "is_correct": true},
+{"text": "Encourage the patient to walk around", "is_correct": false},
+{"text": "Delay assessment until the next routine observation", "is_correct": false}
+],
+"rationale": "Severe breathlessness and hypoxaemia indicate an immediate threat to oxygenation. The nurse should prioritise airway and breathing, position the patient to ease ventilation and obtain urgent clinical assistance while providing oxygen according to the patient's clinical needs and local protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Respiratory System",
+"question_text": "A patient admitted with severe pneumonia has a respiratory rate of 36 breaths per minute, central cyanosis and reduced consciousness. Which action is the highest priority?",
+"choices": [
+{"text": "Document the findings and reassess after two hours", "is_correct": false},
+{"text": "Arrange immediate emergency assistance and support airway and breathing", "is_correct": true},
+{"text": "Offer oral fluids to relieve thirst", "is_correct": false},
+{"text": "Encourage the patient to sleep", "is_correct": false}
+],
+"rationale": "Central cyanosis, tachypnoea and reduced consciousness suggest severe respiratory compromise and possible hypoxaemia. Immediate emergency escalation and airway and breathing support take priority over routine care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Digestive System",
+"question_text": "A child presents with profuse watery diarrhoea, sunken eyes, lethargy and a weak pulse. Which finding most strongly suggests that the child may have severe dehydration requiring urgent intervention?",
+"choices": [
+{"text": "Normal skin turgor and normal activity", "is_correct": false},
+{"text": "Lethargy with a weak pulse and signs of poor circulation", "is_correct": true},
+{"text": "Mild thirst without other symptoms", "is_correct": false},
+{"text": "A normal urine output", "is_correct": false}
+],
+"rationale": "Lethargy and a weak pulse with other signs of fluid loss suggest severe dehydration and possible circulatory compromise. The child requires immediate clinical assessment and rehydration according to the applicable Ghana Health Service protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Urinary System",
+"question_text": "A patient with chronic kidney disease has a potassium level of 6.8 mmol/L and develops peaked T waves on an electrocardiogram. What is the most appropriate priority response?",
+"choices": [
+{"text": "Encourage the patient to eat potassium-rich fruits", "is_correct": false},
+{"text": "Treat the finding as an emergency and urgently escalate for hyperkalaemia management", "is_correct": true},
+{"text": "Wait for the next routine electrolyte test", "is_correct": false},
+{"text": "Encourage unrestricted fluid intake without assessment", "is_correct": false}
+],
+"rationale": "Severe hyperkalaemia with ECG changes indicates a risk of life-threatening cardiac arrhythmias. Immediate medical escalation and emergency treatment are required to stabilise the myocardium and reduce serum potassium.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Reproductive Systems",
+"question_text": "A pregnant woman presents with severe lower abdominal pain, vaginal bleeding, dizziness and signs of shock. An ectopic pregnancy is suspected. What should the nurse prioritise?",
+"choices": [
+{"text": "Arrange an outpatient review for the following week", "is_correct": false},
+{"text": "Initiate emergency assessment, obtain urgent assistance and support circulation", "is_correct": true},
+{"text": "Encourage the patient to walk to reduce abdominal discomfort", "is_correct": false},
+{"text": "Give oral fluids and discharge the patient", "is_correct": false}
+],
+"rationale": "The combination of abdominal pain, vaginal bleeding and shock in early pregnancy suggests possible ruptured ectopic pregnancy with internal haemorrhage. Immediate emergency management, assessment of circulation and urgent referral for definitive treatment are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Lymphatic and Immune Systems",
+"question_text": "A patient receiving an intravenous antibiotic suddenly develops facial swelling, wheezing, widespread urticaria and hypotension. Which condition is most likely, and what is the priority action?",
+"choices": [
+{"text": "Mild local allergy; continue the infusion", "is_correct": false},
+{"text": "Anaphylaxis; stop the suspected trigger, call for emergency assistance and administer intramuscular adrenaline according to protocol", "is_correct": true},
+{"text": "Simple fever; give oral fluids", "is_correct": false},
+{"text": "Localised infection; apply a warm compress", "is_correct": false}
+],
+"rationale": "Rapid onset of airway, breathing and circulatory compromise following drug exposure is characteristic of anaphylaxis. The suspected trigger should be stopped, emergency assistance activated and intramuscular adrenaline administered promptly according to current emergency guidance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid, Electrolyte and Acid-Base Balance",
+"question_text": "A patient with diabetes mellitus presents with deep, rapid breathing, dehydration and a fruity smell on the breath. Blood tests show hyperglycaemia, ketonaemia and metabolic acidosis. Which physiological disturbance best explains the breathing pattern?",
+"choices": [
+{"text": "Compensatory reduction in ventilation to retain carbon dioxide", "is_correct": false},
+{"text": "Compensatory increase in ventilation to reduce carbon dioxide", "is_correct": true},
+{"text": "Increased bicarbonate production by the lungs", "is_correct": false},
+{"text": "Suppression of the respiratory centre by excess oxygen", "is_correct": false}
+],
+"rationale": "The patient has features of diabetic ketoacidosis, in which accumulated ketoacids cause metabolic acidosis. Kussmaul breathing increases carbon dioxide elimination, helping compensate for the reduced blood pH.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Metabolism and Body Temperature Regulation",
+"question_text": "An elderly patient is found unconscious after prolonged exposure to cold weather. The body temperature is 33°C. Which interpretation and priority response are most appropriate?",
+"choices": [
+{"text": "The patient has hyperthermia and requires immediate cold-water immersion", "is_correct": false},
+{"text": "The patient has hypothermia and requires urgent assessment, gentle handling and controlled rewarming", "is_correct": true},
+{"text": "The temperature is normal for an elderly person", "is_correct": false},
+{"text": "The patient should be left outdoors until shivering begins", "is_correct": false}
+],
+"rationale": "A core temperature below 35°C indicates hypothermia, and unconsciousness suggests significant physiological impairment. The patient requires urgent medical assessment, careful handling and controlled rewarming while airway, breathing and circulation are monitored.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cardiovascular System",
+"question_text": "A patient with severe malaria has a haemoglobin concentration of 5 g/dL, marked pallor, tachycardia and breathlessness at rest. Which explanation best accounts for the patient's clinical condition?",
+"choices": [
+{"text": "Increased haemoglobin concentration causing excessive oxygen delivery", "is_correct": false},
+{"text": "Severe anaemia reducing the oxygen-carrying capacity of blood", "is_correct": true},
+{"text": "Excessive platelet production increasing blood viscosity", "is_correct": false},
+{"text": "Increased plasma volume improving tissue oxygenation", "is_correct": false}
+],
+"rationale": "Severe malaria can cause substantial destruction of red blood cells and contribute to severe anaemia. A haemoglobin concentration of 5 g/dL markedly reduces oxygen-carrying capacity and can cause compensatory tachycardia and breathlessness.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Respiratory System",
+"question_text": "A patient with suspected pulmonary embolism suddenly develops pleuritic chest pain, severe breathlessness, tachycardia and hypotension. Which physiological consequence is most likely responsible for the deterioration?",
+"choices": [
+{"text": "Increased blood flow through the obstructed pulmonary circulation", "is_correct": false},
+{"text": "Obstruction of pulmonary arterial blood flow causing impaired gas exchange and increased right ventricular strain", "is_correct": true},
+{"text": "Increased oxygen diffusion across all alveoli", "is_correct": false},
+{"text": "Increased digestive absorption of oxygen", "is_correct": false}
+],
+"rationale": "A pulmonary embolus obstructs blood flow through part of the pulmonary circulation, creating ventilation-perfusion mismatch. A large embolus can increase right ventricular afterload and cause acute circulatory collapse.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Digestive System",
+"question_text": "A patient with severe upper abdominal pain radiating to the back has persistent vomiting and markedly elevated serum lipase. Which organ is most likely inflamed, and what is the likely diagnosis?",
+"choices": [
+{"text": "Gallbladder; cystitis", "is_correct": false},
+{"text": "Pancreas; acute pancreatitis", "is_correct": true},
+{"text": "Large intestine; appendicitis", "is_correct": false},
+{"text": "Oesophagus; gastro-oesophageal reflux disease", "is_correct": false}
+],
+"rationale": "Acute pancreatitis commonly presents with severe epigastric pain that may radiate to the back, vomiting and elevated pancreatic enzymes. Serum lipase is an important laboratory marker used in its assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Urinary System",
+"question_text": "A patient with prolonged uncontrolled hypertension develops proteinuria, facial swelling and progressive reduction in urine output. Which explanation best links these findings?",
+"choices": [
+{"text": "Increased renal filtration efficiency causing excessive protein retention", "is_correct": false},
+{"text": "Damage to the glomerular filtration barrier and declining renal function", "is_correct": true},
+{"text": "Increased bile secretion causing fluid retention", "is_correct": false},
+{"text": "Increased insulin secretion causing urinary obstruction", "is_correct": false}
+],
+"rationale": "Long-standing hypertension can damage renal blood vessels and glomeruli, impairing kidney function. Glomerular injury can allow protein to enter the urine, while declining renal function contributes to fluid retention and reduced urine output.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
