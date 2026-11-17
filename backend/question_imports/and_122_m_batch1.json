@@ -1,0 +1,730 @@
+{
+"courses": [
+{
+"course_code": "AND-122-M",
+"course_title": "Advanced Nursing I",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Nursing Assessment in Midwifery",
+"Vital Signs and Monitoring in Pregnancy",
+"Hygiene and Comfort Measures",
+"Mobility and Positioning in Labour",
+"Wound Care Basics and Episiotomy",
+"Fluid and Electrolyte Balance in Pregnancy",
+"Pre- and Post-Operative Care in Obstetrics",
+"Common Medical-Surgical Conditions in Women"
+],
+"questions": [
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "What is the primary purpose of taking a comprehensive health history from a pregnant woman during her first antenatal visit?",
+"choices": [
+{"text": "To determine only the expected date of delivery.", "is_correct": false},
+{"text": "To identify her health status, obstetric history, risk factors and current healthcare needs.", "is_correct": true},
+{"text": "To establish whether she qualifies for admission to a hospital.", "is_correct": false},
+{"text": "To replace the need for physical examination.", "is_correct": false}
+],
+"rationale": "A comprehensive health history provides information about the woman's current health, previous pregnancies, medical conditions, medications and risk factors. This information guides individualised antenatal care and early identification of complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "Which information is most relevant when obtaining the obstetric history of a pregnant woman?",
+"choices": [
+{"text": "Her favourite foods and recreational activities only.", "is_correct": false},
+{"text": "Her previous pregnancies, deliveries, miscarriages and pregnancy complications.", "is_correct": true},
+{"text": "The occupations of all her neighbours.", "is_correct": false},
+{"text": "The names of all healthcare workers she has previously met.", "is_correct": false}
+],
+"rationale": "Obstetric history provides information about previous pregnancies and their outcomes, including complications such as pre-eclampsia, postpartum haemorrhage and preterm birth. These details help identify risks in the current pregnancy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "Which of the following is an example of subjective data obtained during a midwifery assessment?",
+"choices": [
+{"text": "Blood pressure of 150/100 mmHg.", "is_correct": false},
+{"text": "Fundal height of 28 cm.", "is_correct": false},
+{"text": "The woman's report of persistent headache.", "is_correct": true},
+{"text": "A measured temperature of 38.5°C.", "is_correct": false}
+],
+"rationale": "Subjective data consist of information reported by the patient, including symptoms, feelings and experiences. Objective data are obtained through observation, physical examination or measurement.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "Which of the following represents the normal resting adult pulse rate range commonly used in clinical assessment?",
+"choices": [
+{"text": "20–40 beats per minute.", "is_correct": false},
+{"text": "60–100 beats per minute.", "is_correct": true},
+{"text": "110–150 beats per minute.", "is_correct": false},
+{"text": "150–180 beats per minute.", "is_correct": false}
+],
+"rationale": "The commonly accepted normal resting pulse rate for adults is 60–100 beats per minute. Interpretation should also consider the patient's symptoms, pregnancy-related physiological changes and clinical condition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "Which blood pressure reading meets the commonly used threshold for hypertension in pregnancy?",
+"choices": [
+{"text": "100/60 mmHg.", "is_correct": false},
+{"text": "110/70 mmHg.", "is_correct": false},
+{"text": "120/80 mmHg.", "is_correct": false},
+{"text": "140/90 mmHg or higher.", "is_correct": true}
+],
+"rationale": "Hypertension in pregnancy is generally defined as a systolic blood pressure of at least 140 mmHg and/or a diastolic pressure of at least 90 mmHg on appropriate measurement. Further assessment is required to determine the cause and identify possible complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "What is the normal baseline fetal heart rate range generally accepted during labour?",
+"choices": [
+{"text": "60–90 beats per minute.", "is_correct": false},
+{"text": "80–100 beats per minute.", "is_correct": false},
+{"text": "110–160 beats per minute.", "is_correct": true},
+{"text": "170–210 beats per minute.", "is_correct": false}
+],
+"rationale": "The normal baseline fetal heart rate is generally 110–160 beats per minute. Persistent rates outside this range require clinical assessment and interpretation in relation to the overall fetal and maternal condition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "What is the principal purpose of hand hygiene in maternity care?",
+"choices": [
+{"text": "To prevent all pregnancy-related complications.", "is_correct": false},
+{"text": "To reduce the transmission of microorganisms and prevent healthcare-associated infections.", "is_correct": true},
+{"text": "To replace the use of personal protective equipment in every situation.", "is_correct": false},
+{"text": "To remove the need for cleaning clinical equipment.", "is_correct": false}
+],
+"rationale": "Hand hygiene reduces the transmission of pathogenic microorganisms between patients, healthcare workers and the environment. It is a fundamental component of infection prevention and control.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "Which practice is most appropriate when providing perineal hygiene to a woman after childbirth?",
+"choices": [
+{"text": "Clean the perineal area from the anus towards the urethra.", "is_correct": false},
+{"text": "Use the same cleaning material repeatedly without changing it.", "is_correct": false},
+{"text": "Clean from front to back using appropriate clean materials.", "is_correct": true},
+{"text": "Avoid perineal hygiene until the wound has completely healed.", "is_correct": false}
+],
+"rationale": "Cleaning from front to back helps prevent the transfer of microorganisms from the anal area towards the urinary and genital openings. Proper perineal hygiene also supports comfort and reduces infection risk.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mobility and Positioning in Labour",
+"question_text": "Which position may help a woman in uncomplicated labour maintain comfort and promote mobility?",
+"choices": [
+{"text": "A position that restricts all movement throughout labour.", "is_correct": false},
+{"text": "An upright or lateral position, according to her preference and clinical condition.", "is_correct": true},
+{"text": "A mandatory supine position throughout the first stage.", "is_correct": false},
+{"text": "A position that prevents access to clinical monitoring.", "is_correct": false}
+],
+"rationale": "Upright and lateral positions can improve maternal comfort and allow movement during labour. Positioning should be individualised according to maternal preference, fetal condition and clinical requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care Basics and Episiotomy",
+"question_text": "What is an episiotomy?",
+"choices": [
+{"text": "A surgical incision made in the perineum to enlarge the vaginal opening during childbirth.", "is_correct": true},
+{"text": "A surgical removal of the uterus after childbirth.", "is_correct": false},
+{"text": "A spontaneous tear involving the cervix during labour.", "is_correct": false},
+{"text": "An incision made in the abdominal wall during caesarean section.", "is_correct": false}
+],
+"rationale": "An episiotomy is a deliberate surgical incision of the perineum and vaginal wall to enlarge the vaginal opening when clinically indicated. It is not recommended as a routine procedure for every vaginal birth.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care Basics and Episiotomy",
+"question_text": "Which finding is most suggestive of infection in an episiotomy wound?",
+"choices": [
+{"text": "Mild discomfort that gradually improves.", "is_correct": false},
+{"text": "A clean wound with approximated edges.", "is_correct": false},
+{"text": "Increasing redness, swelling, pain and purulent discharge.", "is_correct": true},
+{"text": "Mild tenderness immediately after delivery.", "is_correct": false}
+],
+"rationale": "Increasing pain, redness, swelling and purulent discharge are common indicators of wound infection. The woman requires clinical assessment and appropriate treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance in Pregnancy",
+"question_text": "Which electrolyte is the principal extracellular cation and plays an important role in maintaining fluid balance?",
+"choices": [
+{"text": "Potassium.", "is_correct": false},
+{"text": "Sodium.", "is_correct": true},
+{"text": "Magnesium.", "is_correct": false},
+{"text": "Phosphate.", "is_correct": false}
+],
+"rationale": "Sodium is the major cation in extracellular fluid and contributes significantly to osmotic pressure and fluid distribution. Abnormal sodium levels can affect neurological and cardiovascular function.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance in Pregnancy",
+"question_text": "Which condition is commonly associated with persistent vomiting during pregnancy and may cause dehydration and electrolyte disturbances?",
+"choices": [
+{"text": "Hyperemesis gravidarum.", "is_correct": true},
+{"text": "Placenta praevia.", "is_correct": false},
+{"text": "Ectopic pregnancy in every case.", "is_correct": false},
+{"text": "Gestational diabetes mellitus.", "is_correct": false}
+],
+"rationale": "Hyperemesis gravidarum involves severe nausea and vomiting that may lead to dehydration, weight loss and electrolyte disturbances. Prompt assessment and appropriate management are necessary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "What is the primary purpose of obtaining informed consent before an elective caesarean section?",
+"choices": [
+{"text": "To transfer all responsibility for the operation to the patient.", "is_correct": false},
+{"text": "To ensure the woman voluntarily agrees after receiving relevant information about the procedure.", "is_correct": true},
+{"text": "To guarantee that no complications will occur.", "is_correct": false},
+{"text": "To allow the surgical team to avoid explaining the procedure.", "is_correct": false}
+],
+"rationale": "Informed consent requires an explanation of the proposed operation, its benefits, significant risks and reasonable alternatives. The woman must have the capacity to make the decision and give consent voluntarily.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "Which postoperative observation is particularly important after a caesarean section?",
+"choices": [
+{"text": "Hair growth around the incision.", "is_correct": false},
+{"text": "Maternal vital signs, vaginal bleeding, uterine tone, pain and wound condition.", "is_correct": true},
+{"text": "The patient's preferred television programme.", "is_correct": false},
+{"text": "The number of visitors alone.", "is_correct": false}
+],
+"rationale": "Postoperative monitoring helps identify haemorrhage, infection, respiratory problems and other complications. Assessment should include vital signs, uterine condition, vaginal blood loss, pain and the surgical wound.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "Which clinical feature is commonly associated with iron-deficiency anaemia in pregnancy?",
+"choices": [
+{"text": "Pallor, fatigue and reduced exercise tolerance.", "is_correct": true},
+{"text": "Persistent hypertension and proteinuria in every case.", "is_correct": false},
+{"text": "Increased visual acuity.", "is_correct": false},
+{"text": "Excessive fetal movements as the only symptom.", "is_correct": false}
+],
+"rationale": "Iron-deficiency anaemia reduces the oxygen-carrying capacity of blood and may cause pallor, fatigue, dizziness and breathlessness. Diagnosis requires appropriate clinical assessment and haemoglobin testing.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "A pregnant woman attends her first antenatal visit and reports that she does not remember the exact date of her last menstrual period. What should the midwife do?",
+"choices": [
+{"text": "Estimate the gestational age without collecting further information.", "is_correct": false},
+{"text": "Obtain relevant menstrual and pregnancy history and arrange appropriate assessment, including ultrasound when indicated and available.", "is_correct": true},
+{"text": "Assume that she is at 40 weeks of gestation.", "is_correct": false},
+{"text": "Refuse to register her for antenatal care.", "is_correct": false}
+],
+"rationale": "An uncertain last menstrual period makes gestational age estimation less reliable. The midwife should obtain the available history and use appropriate clinical assessment and ultrasound dating where indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "During antenatal history taking, a woman reports that she had a previous stillbirth. Which action is most appropriate?",
+"choices": [
+{"text": "Ignore the information because the current pregnancy is different.", "is_correct": false},
+{"text": "Explore the circumstances and available records of the previous pregnancy and identify the need for additional assessment or referral.", "is_correct": true},
+{"text": "Tell her that another stillbirth is inevitable.", "is_correct": false},
+{"text": "Advise her to avoid all antenatal visits.", "is_correct": false}
+],
+"rationale": "A previous stillbirth is an important obstetric risk factor that requires careful assessment. Understanding the previous outcome helps guide individualised antenatal surveillance and referral where necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "A pregnant woman reports painful urination and increased urinary frequency. Which assessment should the midwife consider?",
+"choices": [
+{"text": "Assessment for possible urinary tract infection.", "is_correct": true},
+{"text": "Assessment for placenta praevia only.", "is_correct": false},
+{"text": "Assessment for normal fetal presentation only.", "is_correct": false},
+{"text": "Assessment for episiotomy wound infection.", "is_correct": false}
+],
+"rationale": "Dysuria and urinary frequency may indicate a urinary tract infection, although urinary frequency can also occur in normal pregnancy. Appropriate history, examination and urine testing should be considered to establish the diagnosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "A pregnant woman at 32 weeks' gestation has a blood pressure of 150/100 mmHg and complains of a severe headache. What should the midwife do?",
+"choices": [
+{"text": "Reassure her that headaches are always normal in pregnancy.", "is_correct": false},
+{"text": "Arrange urgent assessment for possible pre-eclampsia and initiate appropriate escalation.", "is_correct": true},
+{"text": "Advise her to return after one week.", "is_correct": false},
+{"text": "Encourage strenuous exercise to reduce her blood pressure.", "is_correct": false}
+],
+"rationale": "Hypertension accompanied by a severe headache in pregnancy raises concern for pre-eclampsia with possible severe features. Urgent clinical assessment and appropriate management are necessary to reduce maternal and fetal risks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "A midwife measures a pregnant woman's temperature at 38.7°C. Which action is most appropriate?",
+"choices": [
+{"text": "Document the temperature and take no further action.", "is_correct": false},
+{"text": "Assess for possible infection, evaluate associated symptoms and arrange appropriate clinical review.", "is_correct": true},
+{"text": "Assume that the temperature is a normal physiological change of pregnancy.", "is_correct": false},
+{"text": "Restrict all oral fluids without assessing the woman.", "is_correct": false}
+],
+"rationale": "A temperature of 38.7°C indicates fever and may be associated with infection. The midwife should assess the woman, identify possible sources and escalate for appropriate investigation and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "A midwife is monitoring a woman in labour and records a fetal heart rate of 170 beats per minute on repeated assessments. What should she do?",
+"choices": [
+{"text": "Record the rate as normal and continue routine care.", "is_correct": false},
+{"text": "Assess the maternal and fetal condition, review possible causes and promptly escalate the persistent fetal tachycardia.", "is_correct": true},
+{"text": "Stop all maternal observations.", "is_correct": false},
+{"text": "Wait until the fetal heart rate exceeds 200 beats per minute before taking action.", "is_correct": false}
+],
+"rationale": "A persistent fetal heart rate above 160 beats per minute is outside the normal baseline range and requires assessment. Maternal fever, infection, dehydration and fetal compromise are among the possible causes that must be considered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A woman who has undergone a caesarean section requires assistance with bathing on the first postoperative day. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Encourage independent bathing even if she is dizzy and weak.", "is_correct": false},
+{"text": "Assess her ability to mobilise, provide assistance as required and protect the surgical wound according to care instructions.", "is_correct": true},
+{"text": "Avoid all hygiene activities until discharge.", "is_correct": false},
+{"text": "Remove the surgical dressing without following the wound-care instructions.", "is_correct": false}
+],
+"rationale": "Postoperative hygiene should promote comfort while preventing falls and protecting the surgical wound. The midwife should assess mobility and provide the level of assistance required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A woman in labour is sweating heavily and complains of feeling uncomfortable. Which intervention is most appropriate?",
+"choices": [
+{"text": "Provide appropriate personal hygiene, clean dry clothing and a comfortable environment.", "is_correct": true},
+{"text": "Restrict her access to drinking water without clinical reason.", "is_correct": false},
+{"text": "Prevent her from changing position.", "is_correct": false},
+{"text": "Apply strong disinfectant directly to her skin.", "is_correct": false}
+],
+"rationale": "Personal hygiene and a comfortable environment can reduce discomfort and promote dignity during labour. Care should be individualised while maintaining infection prevention measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A midwife is preparing to provide perineal care to a woman with an episiotomy wound. Which action should be performed before the procedure?",
+"choices": [
+{"text": "Perform hand hygiene and prepare the required clean equipment.", "is_correct": true},
+{"text": "Touch the wound before washing the hands.", "is_correct": false},
+{"text": "Reuse contaminated gloves if they appear clean.", "is_correct": false},
+{"text": "Place used dressing materials on the clean equipment tray.", "is_correct": false}
+],
+"rationale": "Hand hygiene and appropriate preparation of clean equipment reduce the risk of introducing microorganisms into the wound. Standard infection prevention precautions should be followed throughout the procedure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning in Labour",
+"question_text": "A woman in uncomplicated labour prefers to walk around the labour ward. Her condition and fetal assessment are reassuring. What should the midwife do?",
+"choices": [
+{"text": "Encourage appropriate mobility while maintaining observation and safety.", "is_correct": true},
+{"text": "Insist that she remain flat on her back throughout labour.", "is_correct": false},
+{"text": "Prevent movement because walking always causes fetal distress.", "is_correct": false},
+{"text": "Allow her to walk outside the facility without informing anyone.", "is_correct": false}
+],
+"rationale": "Mobility during uncomplicated labour can improve maternal comfort and support the woman's sense of control. The midwife should ensure that movement remains safe and consistent with maternal and fetal assessment findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning in Labour",
+"question_text": "A woman in advanced labour becomes dizzy and hypotensive while lying flat on her back. Which position should the midwife encourage?",
+"choices": [
+{"text": "Supine position with both legs elevated.", "is_correct": false},
+{"text": "Left lateral position.", "is_correct": true},
+{"text": "Prone position.", "is_correct": false},
+{"text": "Standing position without support.", "is_correct": false}
+],
+"rationale": "The left lateral position can reduce compression of the inferior vena cava by the gravid uterus and improve venous return. It may help relieve supine hypotensive symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics and Episiotomy",
+"question_text": "A woman complains of increasing pain around her episiotomy wound on the third day after delivery. What should the midwife do?",
+"choices": [
+{"text": "Assume that the pain is normal and provide no further assessment.", "is_correct": false},
+{"text": "Assess the wound for infection, haematoma, separation and other complications.", "is_correct": true},
+{"text": "Remove all sutures immediately without assessment.", "is_correct": false},
+{"text": "Advise the woman to avoid reporting the pain again.", "is_correct": false}
+],
+"rationale": "Increasing perineal pain may indicate infection, wound breakdown or a haematoma. Careful assessment is required to identify the cause and arrange appropriate management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics and Episiotomy",
+"question_text": "A midwife is changing the dressing on a caesarean section wound. Which action demonstrates appropriate wound-care practice?",
+"choices": [
+{"text": "Clean the wound using a contaminated dressing.", "is_correct": false},
+{"text": "Use aseptic technique and observe the wound for redness, swelling, discharge and separation.", "is_correct": true},
+{"text": "Touch the wound with bare hands after handling used dressings.", "is_correct": false},
+{"text": "Apply any available chemical substance to prevent infection.", "is_correct": false}
+],
+"rationale": "Aseptic wound-care technique reduces the risk of introducing microorganisms into the surgical site. Observation for infection and wound separation supports early detection of postoperative complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance in Pregnancy",
+"question_text": "A pregnant woman has persistent vomiting, dry mucous membranes and reduced urine output. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Assess hydration status, monitor fluid balance and arrange appropriate fluid replacement and clinical review.", "is_correct": true},
+{"text": "Restrict fluids until vomiting stops completely.", "is_correct": false},
+{"text": "Encourage prolonged fasting without assessment.", "is_correct": false},
+{"text": "Ignore the reduced urine output because it is expected in pregnancy.", "is_correct": false}
+],
+"rationale": "Dry mucous membranes and reduced urine output suggest dehydration. Assessment of fluid status, monitoring of intake and output, and appropriate replacement are necessary to prevent further deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance in Pregnancy",
+"question_text": "A woman receiving intravenous fluids after an obstetric procedure develops increasing breathlessness and bilateral lung crackles. What should the midwife suspect?",
+"choices": [
+{"text": "Fluid overload with possible pulmonary oedema.", "is_correct": true},
+{"text": "Improved hydration without complications.", "is_correct": false},
+{"text": "Normal postoperative wound healing.", "is_correct": false},
+{"text": "Isolated constipation.", "is_correct": false}
+],
+"rationale": "Breathlessness and bilateral lung crackles during intravenous fluid therapy may indicate fluid overload and pulmonary oedema. The midwife should promptly assess the woman, escalate the condition and follow emergency management protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance in Pregnancy",
+"question_text": "A pregnant woman has been vomiting repeatedly and is suspected of having hypokalaemia. Which clinical finding may be associated with this electrolyte disturbance?",
+"choices": [
+{"text": "Muscle weakness and cardiac rhythm disturbances.", "is_correct": true},
+{"text": "Improved muscle strength and increased reflexes in every case.", "is_correct": false},
+{"text": "Persistent hypertension as the only manifestation.", "is_correct": false},
+{"text": "Increased urine output in every affected patient.", "is_correct": false}
+],
+"rationale": "Hypokalaemia may cause muscle weakness, fatigue and potentially serious cardiac arrhythmias. Persistent vomiting can contribute to potassium loss and requires appropriate assessment and electrolyte monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "A woman is scheduled for an elective caesarean section. Which preoperative nursing action is most appropriate?",
+"choices": [
+{"text": "Confirm patient identity, review the preparation checklist, verify consent and ensure required assessments are completed.", "is_correct": true},
+{"text": "Allow the woman to eat a heavy meal immediately before surgery.", "is_correct": false},
+{"text": "Avoid checking allergies because the anaesthetist will do it later.", "is_correct": false},
+{"text": "Proceed without confirming the planned procedure.", "is_correct": false}
+],
+"rationale": "Preoperative preparation includes confirming the patient's identity and procedure, checking consent, reviewing allergies and completing relevant assessments. These measures reduce preventable surgical and anaesthetic risks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "A woman returns from theatre after a caesarean section. Which assessment should the midwife prioritise during the initial postoperative period?",
+"choices": [
+{"text": "Assessment of airway, breathing, circulation, consciousness and vital signs.", "is_correct": true},
+{"text": "Assessment of her ability to perform household activities.", "is_correct": false},
+{"text": "Assessment of her long-term exercise preferences.", "is_correct": false},
+{"text": "Assessment of her readiness to return to work.", "is_correct": false}
+],
+"rationale": "Initial postoperative assessment focuses on identifying immediate threats to life, including airway obstruction, respiratory compromise and circulatory instability. Continuous monitoring and escalation are essential during recovery from anaesthesia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "A woman who underwent caesarean section complains of pain when coughing or moving. Which intervention is most appropriate?",
+"choices": [
+{"text": "Advise her to avoid all movement until discharge.", "is_correct": false},
+{"text": "Assess her pain, provide prescribed analgesia and support safe movement and wound splinting when appropriate.", "is_correct": true},
+{"text": "Withhold all analgesia because pain is expected after surgery.", "is_correct": false},
+{"text": "Encourage her to cough forcefully without supporting the incision.", "is_correct": false}
+],
+"rationale": "Adequate pain management supports breathing, mobilisation and recovery after surgery. Supporting the incision during coughing and movement may improve comfort while reducing unnecessary strain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A pregnant woman in a malaria-endemic area presents with fever, chills and headache. What should the midwife do?",
+"choices": [
+{"text": "Assume that malaria is confirmed based on symptoms alone.", "is_correct": false},
+{"text": "Arrange prompt clinical assessment and appropriate malaria testing, while considering other possible causes of fever.", "is_correct": true},
+{"text": "Advise her to take any available antimalarial medication without assessment.", "is_correct": false},
+{"text": "Delay evaluation until the next antenatal appointment.", "is_correct": false}
+],
+"rationale": "Malaria is an important cause of illness in pregnancy in Ghana, but fever can also result from other infections. Prompt testing and appropriate treatment according to current national guidelines are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A pregnant woman with sickle cell disease reports severe pain in her limbs and back. Which action is most appropriate?",
+"choices": [
+{"text": "Assess the pain and vital signs, consider a vaso-occlusive crisis and arrange urgent clinical management.", "is_correct": true},
+{"text": "Tell her that severe pain is always normal during pregnancy.", "is_correct": false},
+{"text": "Encourage strenuous exercise to relieve the pain.", "is_correct": false},
+{"text": "Withhold all fluids and analgesia until delivery.", "is_correct": false}
+],
+"rationale": "Severe limb and back pain in a woman with sickle cell disease may indicate a vaso-occlusive crisis. Prompt assessment, appropriate pain management, hydration assessment and clinical review are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A woman with gestational diabetes mellitus is attending antenatal clinic. Which advice is most appropriate?",
+"choices": [
+{"text": "Avoid all physical activity and consume unrestricted sugary drinks.", "is_correct": false},
+{"text": "Follow the recommended nutrition plan, engage in appropriate physical activity and attend glucose monitoring and follow-up.", "is_correct": true},
+{"text": "Stop all antenatal visits once blood glucose improves.", "is_correct": false},
+{"text": "Use another patient's diabetes medication without prescription.", "is_correct": false}
+],
+"rationale": "Management of gestational diabetes involves appropriate nutrition, physical activity, glucose monitoring and medication when clinically indicated. Regular follow-up helps reduce maternal and fetal complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A woman with a history of hypertension attends antenatal clinic and reports blurred vision and severe headache. What should the midwife do?",
+"choices": [
+{"text": "Advise her to rest at home and return in one month.", "is_correct": false},
+{"text": "Arrange urgent assessment for possible severe hypertensive disease in pregnancy.", "is_correct": true},
+{"text": "Assume that the symptoms are caused by normal pregnancy changes.", "is_correct": false},
+{"text": "Recommend increasing salt intake without further assessment.", "is_correct": false}
+],
+"rationale": "Severe headache and visual disturbance in a pregnant woman with hypertension are warning signs of possible severe pre-eclampsia. Urgent assessment and appropriate management are necessary to prevent complications such as eclampsia and stroke.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "A woman in labour has a pulse rate of 124 beats per minute, a blood pressure of 88/56 mmHg and heavy vaginal bleeding. What should the midwife do?",
+"choices": [
+{"text": "Continue routine monitoring because an increased pulse rate is expected in labour.", "is_correct": false},
+{"text": "Recognise possible haemorrhagic shock, call for emergency assistance and initiate immediate management according to protocol.", "is_correct": true},
+{"text": "Encourage the woman to walk to improve circulation.", "is_correct": false},
+{"text": "Wait until the next scheduled observation before reporting the findings.", "is_correct": false}
+],
+"rationale": "Tachycardia, hypotension and heavy vaginal bleeding suggest significant blood loss and possible haemorrhagic shock. Immediate emergency response, resuscitation measures within competence and urgent escalation are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning in Labour",
+"question_text": "A woman in labour is receiving continuous fetal monitoring and asks whether she can change position. What should the midwife do?",
+"choices": [
+{"text": "Explain that movement is always prohibited during fetal monitoring.", "is_correct": false},
+{"text": "Assist her to adopt a safe alternative position while maintaining effective fetal monitoring.", "is_correct": true},
+{"text": "Disconnect the monitor permanently without clinical review.", "is_correct": false},
+{"text": "Insist that she remain in a supine position regardless of discomfort.", "is_correct": false}
+],
+"rationale": "Position changes may be possible during continuous fetal monitoring with appropriate adjustment of the monitoring equipment. Maternal comfort and safe fetal surveillance should both be considered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics and Episiotomy",
+"question_text": "A woman with an episiotomy wound reports that the stitches appear to have separated. What should the midwife do?",
+"choices": [
+{"text": "Assess the wound, identify possible infection or breakdown and arrange appropriate clinical review.", "is_correct": true},
+{"text": "Attempt to close the wound using ordinary adhesive tape.", "is_correct": false},
+{"text": "Tell her that wound separation never requires assessment.", "is_correct": false},
+{"text": "Advise her to remove the remaining sutures herself.", "is_correct": false}
+],
+"rationale": "Separation of an episiotomy wound may indicate wound breakdown and requires clinical assessment. Management depends on the extent of separation, presence of infection and the woman's overall condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance in Pregnancy",
+"question_text": "A pregnant woman with persistent vomiting has a urine output of 15 mL per hour. Which action is most appropriate?",
+"choices": [
+{"text": "Recognise possible significant dehydration or reduced renal perfusion and urgently escalate for assessment.", "is_correct": true},
+{"text": "Document the output as normal for all pregnant women.", "is_correct": false},
+{"text": "Restrict fluids further without a clinical indication.", "is_correct": false},
+{"text": "Ignore the finding if the woman has no abdominal pain.", "is_correct": false}
+],
+"rationale": "A urine output of 15 mL per hour is low for most adults and may indicate reduced circulating volume or impaired renal perfusion. The midwife should assess the woman and arrange prompt clinical review and appropriate fluid management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "A woman who had a caesarean section has not passed urine several hours after removal of her urinary catheter. What should the midwife do?",
+"choices": [
+{"text": "Ignore the finding because urinary retention is always harmless.", "is_correct": false},
+{"text": "Assess bladder function, review fluid intake and output, and report suspected urinary retention for appropriate management.", "is_correct": true},
+{"text": "Immediately insert a catheter without assessment or authorisation.", "is_correct": false},
+{"text": "Restrict all oral fluids until the next day.", "is_correct": false}
+],
+"rationale": "Failure to pass urine after catheter removal may indicate postoperative urinary retention. Assessment of bladder function and appropriate clinical review help prevent bladder overdistension and associated complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A pregnant woman reports painful swelling in one calf. The affected leg is warm and tender. What should the midwife suspect?",
+"choices": [
+{"text": "Deep vein thrombosis.", "is_correct": true},
+{"text": "Normal symmetrical pregnancy-related ankle oedema.", "is_correct": false},
+{"text": "Iron-deficiency anaemia.", "is_correct": false},
+{"text": "Hyperemesis gravidarum.", "is_correct": false}
+],
+"rationale": "Unilateral calf pain, swelling, warmth and tenderness may indicate deep vein thrombosis, which is a serious thromboembolic condition. The woman requires urgent assessment, and the affected leg should not be massaged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A woman with diabetes becomes confused, sweaty and shaky during antenatal admission. What should the midwife suspect?",
+"choices": [
+{"text": "Hypoglycaemia.", "is_correct": true},
+{"text": "Hypercalcaemia.", "is_correct": false},
+{"text": "Normal physiological changes in pregnancy.", "is_correct": false},
+{"text": "Iron-deficiency anaemia as the only possible cause.", "is_correct": false}
+],
+"rationale": "Sweating, shaking and confusion are common manifestations of hypoglycaemia. Blood glucose should be checked promptly, and treatment should follow the facility's hypoglycaemia protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "A woman at 36 weeks' gestation reports that fetal movements have significantly reduced compared with her usual pattern. What is the most appropriate action?",
+"choices": [
+{"text": "Reassure her that fetal movements normally stop near term.", "is_correct": false},
+{"text": "Arrange prompt assessment of fetal wellbeing according to the maternity unit's protocol.", "is_correct": true},
+{"text": "Advise her to wait until the next antenatal visit.", "is_correct": false},
+{"text": "Recommend strenuous exercise to increase fetal movement.", "is_correct": false}
+],
+"rationale": "A significant reduction in fetal movement may indicate fetal compromise and should never be dismissed as a normal feature of late pregnancy. Prompt assessment of fetal wellbeing is required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "A woman develops sudden chest pain, severe breathlessness and a rapid pulse on the second day after caesarean section. What is the priority action?",
+"choices": [
+{"text": "Encourage her to walk around the ward.", "is_correct": false},
+{"text": "Activate the emergency response, assess airway and breathing, and obtain urgent medical assistance.", "is_correct": true},
+{"text": "Administer oral fluids and reassess the following morning.", "is_correct": false},
+{"text": "Document the symptoms without notifying the clinical team.", "is_correct": false}
+],
+"rationale": "Sudden chest pain and breathlessness after surgery may indicate pulmonary embolism or another life-threatening cardiopulmonary emergency. Immediate emergency assessment and escalation are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "A pregnant woman presents with vaginal bleeding and severe lower abdominal pain. She appears pale and restless. What should the midwife do first?",
+"choices": [
+{"text": "Complete a detailed routine antenatal history before taking any action.", "is_correct": false},
+{"text": "Assess airway, breathing and circulation, recognise possible obstetric haemorrhage and activate emergency assistance.", "is_correct": true},
+{"text": "Perform a digital vaginal examination immediately.", "is_correct": false},
+{"text": "Advise the woman to walk around to reduce abdominal pain.", "is_correct": false}
+],
+"rationale": "Vaginal bleeding with severe abdominal pain and signs of circulatory compromise may indicate a serious obstetric emergency. Immediate maternal assessment and emergency escalation take priority over routine history taking, and digital vaginal examination should be avoided until placenta praevia has been excluded where relevant.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "A woman at 34 weeks' gestation has a blood pressure of 170/115 mmHg, severe headache and visual disturbances. Which condition is the greatest concern?",
+"choices": [
+{"text": "Uncomplicated gestational hypertension.", "is_correct": false},
+{"text": "Severe pre-eclampsia with risk of eclampsia.", "is_correct": true},
+{"text": "Physiological hypotension of pregnancy.", "is_correct": false},
+{"text": "Normal third-trimester discomfort.", "is_correct": false}
+],
+"rationale": "Severe-range hypertension accompanied by headache and visual disturbance is highly concerning for severe pre-eclampsia. The woman requires urgent specialist management to reduce the risk of seizures, stroke and other complications.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A postoperative woman has a surgical wound that is clean and dry, but she develops a temperature of 39°C and chills. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The absence of wound discharge excludes infection.", "is_correct": false},
+{"text": "A systemic infection may be present even if the surgical wound appears normal.", "is_correct": true},
+{"text": "The fever is necessarily caused by breastfeeding.", "is_correct": false},
+{"text": "The temperature can be ignored if the wound dressing is intact.", "is_correct": false}
+],
+"rationale": "Postoperative infection may arise from sources other than the surgical wound, including the urinary tract, respiratory system or genital tract. High fever and chills require prompt assessment for infection and possible sepsis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care Basics and Episiotomy",
+"question_text": "A woman develops severe perineal pain and a rapidly increasing swelling after an episiotomy. There is little visible external bleeding. What is the most likely complication?",
+"choices": [
+{"text": "Perineal haematoma.", "is_correct": true},
+{"text": "Normal uterine involution.", "is_correct": false},
+{"text": "Physiological breast engorgement.", "is_correct": false},
+{"text": "Uncomplicated lochia alba.", "is_correct": false}
+],
+"rationale": "A perineal haematoma may cause severe pain and swelling despite limited visible external bleeding because blood accumulates within the tissues. Urgent assessment and management are necessary to prevent further blood loss and complications.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance in Pregnancy",
+"question_text": "A woman with severe pre-eclampsia is receiving intravenous fluids. She develops increasing breathlessness, reduced oxygen saturation and bilateral lung crackles. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The woman is experiencing normal pregnancy-related breathlessness.", "is_correct": false},
+{"text": "She may have developed pulmonary oedema associated with fluid overload or severe pre-eclampsia.", "is_correct": true},
+{"text": "The findings confirm uncomplicated dehydration.", "is_correct": false},
+{"text": "The symptoms indicate normal uterine contractions.", "is_correct": false}
+],
+"rationale": "Pulmonary oedema is a serious complication that can occur in severe pre-eclampsia and may be worsened by excessive fluid administration. The woman requires urgent respiratory assessment, escalation and careful fluid management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "Thirty minutes after caesarean section, a woman becomes pale and restless. Her pulse is 132 beats per minute, blood pressure is 80/50 mmHg and the uterine fundus is soft. What is the priority action?",
+"choices": [
+{"text": "Encourage oral feeding and reassess after one hour.", "is_correct": false},
+{"text": "Recognise possible postpartum haemorrhage, call for emergency assistance and initiate immediate haemorrhage management according to protocol.", "is_correct": true},
+{"text": "Allow the woman to sleep because postoperative fatigue is expected.", "is_correct": false},
+{"text": "Remove the intravenous line to reduce discomfort.", "is_correct": false}
+],
+"rationale": "A soft uterus, tachycardia, hypotension and pallor strongly suggest postpartum haemorrhage with possible hypovolaemic shock. Immediate emergency management, including uterine assessment and appropriate resuscitation, is essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A pregnant woman with known sickle cell disease presents with severe pain, fever, chest discomfort and difficulty breathing. Which complication should the midwife urgently suspect?",
+"choices": [
+{"text": "Acute chest syndrome.", "is_correct": true},
+{"text": "Uncomplicated morning sickness.", "is_correct": false},
+{"text": "Physiological anaemia of pregnancy only.", "is_correct": false},
+{"text": "Normal musculoskeletal discomfort.", "is_correct": false}
+],
+"rationale": "Acute chest syndrome is a potentially life-threatening complication of sickle cell disease and may present with chest pain, fever and respiratory symptoms. Immediate hospital assessment and urgent specialist management are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions in Women",
+"question_text": "A woman with suspected severe malaria during pregnancy becomes confused and develops convulsions. What should the midwife do first?",
+"choices": [
+{"text": "Give oral fluids while waiting for the next routine review.", "is_correct": false},
+{"text": "Protect the airway, prevent injury, activate emergency assistance and arrange urgent treatment for possible severe malaria and other causes of seizures.", "is_correct": true},
+{"text": "Restrain her limbs forcefully to stop the convulsions.", "is_correct": false},
+{"text": "Delay intervention until a malaria test result is available.", "is_correct": false}
+],
+"rationale": "Convulsions and altered consciousness in a pregnant woman with suspected malaria indicate a life-threatening emergency. Immediate seizure and airway management, urgent clinical assessment and treatment must not be delayed while awaiting test results.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Assessment in Midwifery",
+"question_text": "A woman at 30 weeks' gestation presents with severe abdominal pain, vaginal bleeding and a rigid, tender uterus. Her blood pressure is falling. Which diagnosis is most likely?",
+"choices": [
+{"text": "Placental abruption.", "is_correct": true},
+{"text": "Uncomplicated Braxton Hicks contractions.", "is_correct": false},
+{"text": "Normal cervical dilatation.", "is_correct": false},
+{"text": "Physiological urinary frequency.", "is_correct": false}
+],
+"rationale": "Placental abruption commonly presents with abdominal pain, uterine tenderness or rigidity and vaginal bleeding, although bleeding may sometimes be concealed. Maternal shock and fetal compromise can develop rapidly, requiring urgent intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pre- and Post-Operative Care in Obstetrics",
+"question_text": "A woman on the first day after caesarean section has increasing abdominal pain, fever, tachycardia and foul-smelling lochia. Which complication should receive urgent consideration?",
+"choices": [
+{"text": "Postpartum infection, including possible endometritis or sepsis.", "is_correct": true},
+{"text": "Normal postoperative recovery without complications.", "is_correct": false},
+{"text": "Uncomplicated uterine involution.", "is_correct": false},
+{"text": "Normal lactation-related breast changes.", "is_correct": false}
+],
+"rationale": "Fever, tachycardia, increasing abdominal pain and foul-smelling lochia are concerning for postpartum genital tract infection and possible sepsis. Urgent assessment, escalation and appropriate antimicrobial management are necessary.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs and Monitoring in Pregnancy",
+"question_text": "A woman in labour has a fetal heart rate of 90 beats per minute that persists despite an initial change in maternal position. What should the midwife do?",
+"choices": [
+{"text": "Continue routine observations because fetal heart rates commonly fall below 100 during labour.", "is_correct": false},
+{"text": "Treat the finding as a possible fetal emergency, summon urgent obstetric assistance and initiate appropriate intrauterine resuscitative measures.", "is_correct": true},
+{"text": "Stop fetal monitoring and allow the woman to sleep.", "is_correct": false},
+{"text": "Wait until the next stage of labour before reporting the finding.", "is_correct": false}
+],
+"rationale": "A persistent fetal heart rate of 90 beats per minute represents significant fetal bradycardia and may indicate acute fetal compromise. Urgent assessment, escalation and appropriate interventions are required to prevent adverse fetal outcomes.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
