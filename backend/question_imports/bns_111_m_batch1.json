@@ -1,0 +1,792 @@
+{
+"courses": [
+{
+"course_code": "BNS-111-M",
+"course_title": "Basic Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Bed Making for Antenatal and Postnatal Wards",
+"Patient Positioning and Mobility in Labour",
+"Vital Signs Measurement",
+"Hygiene and Comfort Care",
+"Nutrition and Feeding in Pregnancy",
+"Elimination Needs and Catheterization",
+"Admission and Discharge Procedures",
+"Infection Prevention and Control",
+"Wound Care",
+"Patient Safety for Mothers and Newborns"
+],
+"questions": [
+{
+"topic": "Bed Making for Antenatal and Postnatal Wards",
+"question_text": "What is the primary purpose of making a hospital bed?",
+"choices": [
+{"text": "To provide a clean, comfortable and safe environment for the patient", "is_correct": true},
+{"text": "To reduce the number of nursing staff required", "is_correct": false},
+{"text": "To prevent patients from moving during admission", "is_correct": false},
+{"text": "To improve the appearance of the ward only", "is_correct": false}
+],
+"rationale": "Bed making promotes patient comfort, cleanliness, safety and infection prevention. A properly prepared bed also facilitates nursing procedures and patient mobility.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bed Making for Antenatal and Postnatal Wards",
+"question_text": "Which type of bed is prepared for a patient who is expected to return from surgery or a procedure?",
+"choices": [
+{"text": "Closed bed", "is_correct": false},
+{"text": "Occupied bed", "is_correct": false},
+{"text": "Post-operative bed", "is_correct": true},
+{"text": "Admission bed only", "is_correct": false}
+],
+"rationale": "A post-operative bed is prepared to receive a patient returning from surgery or a procedure. It is arranged to facilitate safe transfer, observation and immediate post-operative care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bed Making for Antenatal and Postnatal Wards",
+"question_text": "Which equipment is commonly used to protect a patient's mattress from moisture during bed making?",
+"choices": [
+{"text": "Mackintosh or waterproof mattress protector", "is_correct": true},
+{"text": "Pillowcase", "is_correct": false},
+{"text": "Blanket", "is_correct": false},
+{"text": "Bedside locker", "is_correct": false}
+],
+"rationale": "A mackintosh or waterproof mattress protector prevents body fluids and other moisture from reaching the mattress. It should be covered appropriately with linen to maintain patient comfort and hygiene.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Positioning and Mobility in Labour",
+"question_text": "Which position may help reduce pressure on the major abdominal blood vessels in a woman with advanced pregnancy who becomes dizzy while lying flat?",
+"choices": [
+{"text": "Supine position", "is_correct": false},
+{"text": "Left lateral position", "is_correct": true},
+{"text": "Prone position", "is_correct": false},
+{"text": "Lithotomy position", "is_correct": false}
+],
+"rationale": "The left lateral position reduces compression of the inferior vena cava by the gravid uterus. This can improve venous return and reduce symptoms associated with supine hypotensive syndrome.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "Which instrument is used to measure arterial blood pressure?",
+"choices": [
+{"text": "Thermometer", "is_correct": false},
+{"text": "Pulse oximeter", "is_correct": false},
+{"text": "Sphygmomanometer", "is_correct": true},
+{"text": "Stethoscope alone", "is_correct": false}
+],
+"rationale": "A sphygmomanometer is used to measure blood pressure, usually with a stethoscope when the auscultatory method is used. Correct cuff size and positioning are important for obtaining accurate readings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "Which of the following represents the normal resting pulse rate range for most healthy adults?",
+"choices": [
+{"text": "20–40 beats per minute", "is_correct": false},
+{"text": "60–100 beats per minute", "is_correct": true},
+{"text": "110–140 beats per minute", "is_correct": false},
+{"text": "150–180 beats per minute", "is_correct": false}
+],
+"rationale": "The usual resting pulse rate for a healthy adult is approximately 60–100 beats per minute. Pregnancy may cause a modest increase in maternal heart rate, so findings should be interpreted in the clinical context.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "Which instrument is commonly used to measure body temperature?",
+"choices": [
+{"text": "Clinical thermometer", "is_correct": true},
+{"text": "Sphygmomanometer", "is_correct": false},
+{"text": "Otoscope", "is_correct": false},
+{"text": "Stethoscope", "is_correct": false}
+],
+"rationale": "A clinical thermometer measures body temperature. Temperature monitoring helps identify fever, hypothermia and possible infection in pregnant and postpartum women.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "What is the main purpose of perineal hygiene after childbirth?",
+"choices": [
+{"text": "To prevent all postpartum vaginal discharge", "is_correct": false},
+{"text": "To reduce contamination and promote comfort and healing", "is_correct": true},
+{"text": "To stop uterine contractions", "is_correct": false},
+{"text": "To prevent breast milk production", "is_correct": false}
+],
+"rationale": "Perineal hygiene helps reduce contamination, maintain cleanliness and promote comfort, particularly when a woman has perineal trauma or an episiotomy. The area should be cleaned gently using appropriate technique and clean materials.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition and Feeding in Pregnancy",
+"question_text": "Which nutrient is particularly important during pregnancy for the formation of haemoglobin and prevention of iron-deficiency anaemia?",
+"choices": [
+{"text": "Iron", "is_correct": true},
+{"text": "Sodium", "is_correct": false},
+{"text": "Vitamin K", "is_correct": false},
+{"text": "Chloride", "is_correct": false}
+],
+"rationale": "Iron is required for haemoglobin synthesis and increased maternal red blood cell production during pregnancy. Adequate dietary iron and prescribed iron supplementation help prevent iron-deficiency anaemia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elimination Needs and Catheterization",
+"question_text": "What is the primary purpose of an indwelling urinary catheter?",
+"choices": [
+{"text": "To administer intravenous fluids", "is_correct": false},
+{"text": "To continuously drain urine from the bladder", "is_correct": true},
+{"text": "To measure blood pressure", "is_correct": false},
+{"text": "To prevent uterine contractions", "is_correct": false}
+],
+"rationale": "An indwelling urinary catheter drains urine from the bladder through a catheter that remains in place. It may be required for specific clinical indications, such as urinary retention or accurate monitoring of urine output in selected patients.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "Which document provides a formal record of a patient's assessment, treatment and nursing care during hospital admission?",
+"choices": [
+{"text": "Patient's personal diary", "is_correct": false},
+{"text": "Medical and nursing record", "is_correct": true},
+{"text": "Ward cleaning schedule", "is_correct": false},
+{"text": "Hospital visitor register", "is_correct": false}
+],
+"rationale": "The medical and nursing record documents the patient's condition, assessment findings, interventions and response to care. Accurate documentation supports continuity of care, communication and professional accountability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "What is the most effective routine measure for reducing the transmission of microorganisms during patient care?",
+"choices": [
+{"text": "Wearing gloves throughout the entire shift", "is_correct": false},
+{"text": "Performing appropriate hand hygiene", "is_correct": true},
+{"text": "Using antibiotics for every patient", "is_correct": false},
+{"text": "Keeping all ward windows closed", "is_correct": false}
+],
+"rationale": "Hand hygiene is one of the most effective measures for preventing healthcare-associated infections. It should be performed at the appropriate moments, including before and after patient contact and after exposure to body fluids.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "Which colour of personal protective equipment is most important when selecting protection against contact with blood and body fluids?",
+"choices": [
+{"text": "The colour of the uniform", "is_correct": false},
+{"text": "The appropriate protective function and level of exposure risk", "is_correct": true},
+{"text": "The colour preferred by the patient", "is_correct": false},
+{"text": "The colour used by the senior nurse", "is_correct": false}
+],
+"rationale": "Personal protective equipment is selected according to the anticipated exposure risk, not its colour. Gloves, gowns, masks and eye protection should be used as indicated by the task and standard precautions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care",
+"question_text": "What is an episiotomy?",
+"choices": [
+{"text": "A surgical incision made in the perineum to enlarge the vaginal opening during selected births", "is_correct": true},
+{"text": "A surgical incision made in the abdominal wall during caesarean section", "is_correct": false},
+{"text": "A procedure for removing the placenta manually", "is_correct": false},
+{"text": "A method of preventing uterine contractions", "is_correct": false}
+],
+"rationale": "An episiotomy is a surgical incision of the perineum and vaginal wall performed when clinically indicated to facilitate birth. It requires appropriate repair, pain management, hygiene and monitoring for complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care",
+"question_text": "Which of the following is a common sign of wound infection?",
+"choices": [
+{"text": "Increasing redness, warmth, swelling and purulent discharge", "is_correct": true},
+{"text": "A clean wound with improving tenderness", "is_correct": false},
+{"text": "Normal wound edges remaining approximated", "is_correct": false},
+{"text": "Gradual reduction in wound discomfort", "is_correct": false}
+],
+"rationale": "Increasing redness, warmth, swelling, pain and purulent discharge may indicate wound infection. The wound should be assessed and appropriate clinical management initiated.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "Which action is essential before administering medication to a postpartum woman?",
+"choices": [
+{"text": "Confirm the patient's identity and check the medication order", "is_correct": true},
+{"text": "Ask another patient whether the medicine is familiar", "is_correct": false},
+{"text": "Administer the medicine without checking its label", "is_correct": false},
+{"text": "Use the medication prescribed for the previous patient", "is_correct": false}
+],
+"rationale": "Correct patient identification and verification of the medication order are essential medication safety practices. The midwife should also check the medication, dose, route, time, allergies and relevant patient factors.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bed Making for Antenatal and Postnatal Wards",
+"question_text": "A postnatal woman has heavy lochia that has soiled her bed linen. What should the midwife do?",
+"choices": [
+{"text": "Leave the linen until the next routine bed-making round", "is_correct": false},
+{"text": "Change the soiled linen using appropriate infection prevention precautions", "is_correct": true},
+{"text": "Cover the soiled area with another blanket", "is_correct": false},
+{"text": "Ask the woman to sleep on the floor", "is_correct": false}
+],
+"rationale": "Soiled linen should be changed promptly to maintain hygiene, comfort and infection prevention. The midwife should use appropriate personal protective equipment and handle contaminated linen safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bed Making for Antenatal and Postnatal Wards",
+"question_text": "A pregnant woman with severe back discomfort is admitted to an antenatal ward. Which bed-making consideration is most appropriate?",
+"choices": [
+{"text": "Use clean, dry, smooth linen and ensure that the mattress provides adequate support", "is_correct": true},
+{"text": "Place several folded sheets beneath her back to create uneven pressure", "is_correct": false},
+{"text": "Leave the mattress uncovered to improve ventilation", "is_correct": false},
+{"text": "Use wet linen to reduce body temperature", "is_correct": false}
+],
+"rationale": "Clean, dry and smooth linen promotes comfort and reduces skin irritation and pressure-related injury. An adequately supportive mattress also helps the woman maintain a comfortable position.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility in Labour",
+"question_text": "A woman in the first stage of labour has no contraindication to mobilisation and wishes to walk. What should the midwife do?",
+"choices": [
+{"text": "Encourage safe mobilisation according to her condition and preference", "is_correct": true},
+{"text": "Insist that she remains flat on her back throughout labour", "is_correct": false},
+{"text": "Prevent her from changing position", "is_correct": false},
+{"text": "Require her to remain in lithotomy position", "is_correct": false}
+],
+"rationale": "For women without contraindications, mobility and upright positions during labour may improve comfort and support physiological labour. The midwife should assess maternal and fetal condition and provide assistance to prevent falls.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility in Labour",
+"question_text": "A woman in labour becomes dizzy and hypotensive while lying flat on her back. What should the midwife do first?",
+"choices": [
+{"text": "Turn her into a left lateral position", "is_correct": true},
+{"text": "Ask her to stand immediately without assistance", "is_correct": false},
+{"text": "Place her in a prone position", "is_correct": false},
+{"text": "Continue the procedure without changing her position", "is_correct": false}
+],
+"rationale": "The gravid uterus can compress the inferior vena cava when the woman lies supine, reducing venous return and cardiac output. Turning her laterally, preferably to the left, helps relieve this compression while further assessment is undertaken.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility in Labour",
+"question_text": "A woman who has received regional analgesia after childbirth wants to walk to the bathroom. What should the midwife do?",
+"choices": [
+{"text": "Allow her to walk independently because delivery is complete", "is_correct": false},
+{"text": "Assess her motor function, sensation and ability to stand safely before mobilisation", "is_correct": true},
+{"text": "Ask her to walk quickly to restore circulation", "is_correct": false},
+{"text": "Ignore the effects of the analgesia", "is_correct": false}
+],
+"rationale": "Regional analgesia may temporarily impair lower-limb strength and sensation, increasing the risk of falls. The midwife should assess recovery and provide assistance before the woman attempts to walk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A pregnant woman attends an antenatal clinic at a district hospital. Her blood pressure is 150/100 mmHg. What should the midwife do?",
+"choices": [
+{"text": "Ignore the reading because blood pressure normally rises in pregnancy", "is_correct": false},
+{"text": "Repeat the measurement using correct technique and promptly assess for hypertensive disease", "is_correct": true},
+{"text": "Advise her to return after delivery", "is_correct": false},
+{"text": "Give her an antihypertensive medicine without an authorised prescription or protocol", "is_correct": false}
+],
+"rationale": "A blood pressure of 150/100 mmHg is abnormal in pregnancy and requires prompt assessment for hypertensive disorders, including pre-eclampsia. The midwife should confirm the reading, assess symptoms and arrange appropriate clinical review and management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A postpartum woman has a pulse rate of 124 beats per minute and reports dizziness. What should the midwife do first?",
+"choices": [
+{"text": "Reassure her that a rapid pulse is always normal after childbirth", "is_correct": false},
+{"text": "Assess her immediately for possible haemorrhage or circulatory compromise and escalate care", "is_correct": true},
+{"text": "Encourage her to walk around the ward", "is_correct": false},
+{"text": "Delay assessment until the next routine observation", "is_correct": false}
+],
+"rationale": "Tachycardia with dizziness after childbirth may indicate postpartum haemorrhage, hypovolaemia or another serious complication. Immediate assessment of bleeding, circulation and other vital signs, with urgent escalation, is essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A woman in labour has a temperature of 38.5°C. Which action is most appropriate?",
+"choices": [
+{"text": "Record the temperature and assess for infection and other clinical causes of fever", "is_correct": true},
+{"text": "Assume the temperature is normal during labour", "is_correct": false},
+{"text": "Stop all maternal observations", "is_correct": false},
+{"text": "Cover her with several thick blankets without further assessment", "is_correct": false}
+],
+"rationale": "A temperature of 38.5°C indicates fever and may be associated with maternal infection or other causes requiring assessment. The midwife should review the clinical history, assess maternal and fetal wellbeing and escalate according to the facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A midwife is measuring the respiratory rate of a postpartum woman. Which technique is most appropriate?",
+"choices": [
+{"text": "Count chest movements discreetly for an appropriate timed interval", "is_correct": true},
+{"text": "Ask the woman to breathe rapidly while counting", "is_correct": false},
+{"text": "Estimate the rate from her blood pressure", "is_correct": false},
+{"text": "Count only when the woman is speaking", "is_correct": false}
+],
+"rationale": "Respiratory rate is assessed by observing chest or abdominal movements and counting breaths over a suitable timed interval. Counting discreetly helps avoid altering the patient's normal breathing pattern.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A postnatal woman has an episiotomy wound and asks how to maintain perineal hygiene. Which instruction is appropriate?",
+"choices": [
+{"text": "Clean the perineal area gently from front to back and keep it dry", "is_correct": true},
+{"text": "Wipe from the anus towards the vagina", "is_correct": false},
+{"text": "Avoid changing sanitary pads throughout the day", "is_correct": false},
+{"text": "Apply unprescribed substances directly to the wound", "is_correct": false}
+],
+"rationale": "Cleaning from front to back reduces the transfer of microorganisms from the anal area to the vagina and perineum. Regular pad changes and gentle hygiene help maintain cleanliness and support wound healing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A pregnant woman in her third trimester complains of difficulty reaching her feet and maintaining personal hygiene. What is the most appropriate nursing intervention?",
+"choices": [
+{"text": "Provide assistance with hygiene while preserving her privacy and independence", "is_correct": true},
+{"text": "Tell her that personal hygiene is no longer necessary", "is_correct": false},
+{"text": "Leave her without assistance because pregnancy is not an illness", "is_correct": false},
+{"text": "Perform all activities without explaining them to her", "is_correct": false}
+],
+"rationale": "Pregnancy-related physical changes may make some hygiene activities difficult. Appropriate assistance should promote comfort and safety while respecting dignity, privacy and the woman's ability to perform tasks independently.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A postpartum woman has heavy sweating and reports discomfort due to damp clothing and bed linen. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Assist her to wash, change into clean clothing and replace damp linen", "is_correct": true},
+{"text": "Restrict her fluid intake without clinical indication", "is_correct": false},
+{"text": "Apply powder over damp skin without cleaning it", "is_correct": false},
+{"text": "Prevent her from bathing during the entire puerperium", "is_correct": false}
+],
+"rationale": "Assisting the woman to maintain personal hygiene and changing damp clothing and linen improves comfort and reduces skin irritation. Fluid intake should be maintained according to her clinical needs rather than restricted without justification.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding in Pregnancy",
+"question_text": "A pregnant woman reports that she frequently skips meals because of nausea. Which advice is most appropriate?",
+"choices": [
+{"text": "Eat small, frequent meals and maintain adequate fluid intake", "is_correct": true},
+{"text": "Avoid all food until the nausea disappears", "is_correct": false},
+{"text": "Eat only one large meal each day", "is_correct": false},
+{"text": "Stop drinking water during pregnancy", "is_correct": false}
+],
+"rationale": "Small, frequent meals may help reduce pregnancy-related nausea while supporting adequate nutritional intake. The woman should also maintain hydration and seek assessment if vomiting is severe or persistent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding in Pregnancy",
+"question_text": "A pregnant woman in a rural Ghanaian community asks which locally available foods can contribute to her iron intake. Which recommendation is most appropriate?",
+"choices": [
+{"text": "Include foods such as beans, kontomire and lean meat where available", "is_correct": true},
+{"text": "Avoid all legumes and green leafy vegetables", "is_correct": false},
+{"text": "Eat only polished rice and cassava", "is_correct": false},
+{"text": "Replace iron-containing foods with sugary drinks", "is_correct": false}
+],
+"rationale": "Beans, green leafy vegetables such as kontomire and lean meat can contribute iron to the diet. Vitamin C-rich foods can improve the absorption of non-haem iron from plant sources.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding in Pregnancy",
+"question_text": "A pregnant woman with poor appetite is found to have inadequate dietary intake. What should the midwife do?",
+"choices": [
+{"text": "Assess her nutritional status and provide individualised dietary counselling", "is_correct": true},
+{"text": "Advise her to avoid all protein-containing foods", "is_correct": false},
+{"text": "Tell her that nutritional needs do not change during pregnancy", "is_correct": false},
+{"text": "Recommend that she take only fruit juice throughout the day", "is_correct": false}
+],
+"rationale": "Pregnancy increases nutritional requirements, and inadequate intake may affect maternal and fetal wellbeing. Individualised counselling should consider dietary habits, food availability, cultural preferences and any medical conditions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs and Catheterization",
+"question_text": "A woman who has undergone caesarean section has an indwelling urinary catheter. Which nursing action is appropriate?",
+"choices": [
+{"text": "Keep the drainage bag below bladder level and ensure unobstructed urine flow", "is_correct": true},
+{"text": "Place the drainage bag on the patient's abdomen", "is_correct": false},
+{"text": "Disconnect the catheter frequently to empty the bag", "is_correct": false},
+{"text": "Allow the drainage tubing to remain kinked", "is_correct": false}
+],
+"rationale": "Keeping the drainage bag below bladder level and maintaining a closed, unobstructed drainage system reduces backflow and infection risk. The midwife should monitor urine output and catheter function.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs and Catheterization",
+"question_text": "A postpartum woman has not passed urine several hours after delivery and complains of lower abdominal discomfort. What should the midwife do first?",
+"choices": [
+{"text": "Assess bladder distension and evaluate for urinary retention", "is_correct": true},
+{"text": "Assume that the condition is normal and discharge her", "is_correct": false},
+{"text": "Restrict all oral fluids", "is_correct": false},
+{"text": "Insert a urinary catheter without assessment or indication", "is_correct": false}
+],
+"rationale": "Failure to pass urine with lower abdominal discomfort may indicate postpartum urinary retention. The midwife should assess bladder fullness, review the woman's condition and follow the facility's management protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs and Catheterization",
+"question_text": "A midwife is preparing to perform urinary catheterization on a woman with a clinical indication. Which action is essential to reduce the risk of introducing infection?",
+"choices": [
+{"text": "Use aseptic technique and sterile equipment during insertion", "is_correct": true},
+{"text": "Reuse a catheter after rinsing it with tap water", "is_correct": false},
+{"text": "Touch the sterile catheter tip with ungloved hands", "is_correct": false},
+{"text": "Insert the catheter without cleaning the urethral area", "is_correct": false}
+],
+"rationale": "Aseptic technique and sterile equipment are essential during urinary catheter insertion to reduce the risk of introducing microorganisms into the urinary tract. Catheterization should be performed only when indicated and by appropriately trained personnel.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "A woman arrives at a district hospital in labour. Which action should the midwife perform first during admission?",
+"choices": [
+{"text": "Assess the woman's immediate condition and identify any emergency or danger signs", "is_correct": true},
+{"text": "Complete all administrative forms before assessing her", "is_correct": false},
+{"text": "Ask her relatives to leave before any assessment", "is_correct": false},
+{"text": "Assign a bed without checking her clinical condition", "is_correct": false}
+],
+"rationale": "Initial admission assessment must identify emergencies and determine the urgency of care. Administrative procedures should not delay assessment or treatment of a woman with potentially serious complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "A postpartum woman is being discharged from a maternity ward. Which instruction is most important for promoting safe care at home?",
+"choices": [
+{"text": "Explain danger signs, follow-up arrangements and when to seek urgent care", "is_correct": true},
+{"text": "Tell her that she does not need further postnatal assessment", "is_correct": false},
+{"text": "Advise her to ignore fever and excessive bleeding", "is_correct": false},
+{"text": "Provide instructions only to her relatives without involving her", "is_correct": false}
+],
+"rationale": "Discharge education should include maternal and newborn danger signs, medication instructions, feeding advice and follow-up arrangements. The woman should understand when and where to seek urgent care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "A pregnant woman is transferred from a CHPS compound to a regional hospital because of suspected severe pre-eclampsia. What information should accompany the referral?",
+"choices": [
+{"text": "Clinical findings, vital signs, treatment given and reason for referral", "is_correct": true},
+{"text": "Only the woman's name and age", "is_correct": false},
+{"text": "The personal opinions of the referring staff", "is_correct": false},
+{"text": "Only the date of her first antenatal visit", "is_correct": false}
+],
+"rationale": "A complete referral communicates the patient's condition, relevant assessment findings, interventions and reason for transfer. This information supports continuity of care and helps the receiving team prepare appropriate treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A midwife is assisting with the delivery of a baby and anticipates contact with blood and amniotic fluid. Which infection prevention measure is appropriate?",
+"choices": [
+{"text": "Use appropriate gloves and other personal protective equipment based on exposure risk", "is_correct": true},
+{"text": "Wear gloves only if the woman is known to have HIV", "is_correct": false},
+{"text": "Avoid hand hygiene when gloves are worn", "is_correct": false},
+{"text": "Use the same gloves for several deliveries", "is_correct": false}
+],
+"rationale": "Standard precautions apply to all patients, regardless of known infection status. Appropriate gloves and other protective equipment reduce occupational exposure to blood and body fluids, while hand hygiene remains necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A midwife sustains a needlestick injury after giving an injection in the maternity ward. What should she do first?",
+"choices": [
+{"text": "Wash the affected area with soap and running water and report the exposure promptly", "is_correct": true},
+{"text": "Squeeze the wound forcefully and apply bleach", "is_correct": false},
+{"text": "Ignore the injury if the patient appears healthy", "is_correct": false},
+{"text": "Wait until symptoms develop before reporting it", "is_correct": false}
+],
+"rationale": "The exposed area should be washed promptly with soap and running water, and the incident should be reported immediately. Timely assessment is necessary to determine the need for HIV post-exposure prophylaxis, hepatitis B prevention and appropriate follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A midwife has completed the dressing of a caesarean section wound. How should the used dressing materials be handled?",
+"choices": [
+{"text": "Dispose of them in the appropriate healthcare waste container according to facility policy", "is_correct": true},
+{"text": "Place them on the patient's bedside table", "is_correct": false},
+{"text": "Reuse them for another patient after drying", "is_correct": false},
+{"text": "Put all contaminated materials in an ordinary food container", "is_correct": false}
+],
+"rationale": "Used dressings contaminated with blood or body fluids should be disposed of according to healthcare waste segregation procedures. Correct disposal protects patients, healthcare workers, waste handlers and the environment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "A woman on the first day after caesarean section reports increasing pain around her incision. What should the midwife do?",
+"choices": [
+{"text": "Assess the wound and pain, observe for complications and report concerning findings", "is_correct": true},
+{"text": "Remove all sutures immediately", "is_correct": false},
+{"text": "Tell her that increasing pain always indicates normal healing", "is_correct": false},
+{"text": "Apply an unprescribed herbal preparation to the incision", "is_correct": false}
+],
+"rationale": "Increasing wound pain may be associated with infection, haematoma or another post-operative complication. The midwife should assess the incision, vital signs and associated symptoms and escalate abnormal findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "A postnatal woman with an episiotomy reports severe perineal pain and difficulty sitting. Which intervention is most appropriate?",
+"choices": [
+{"text": "Assess the perineum for swelling, haematoma or infection and provide prescribed pain relief", "is_correct": true},
+{"text": "Tell her that severe pain is expected and requires no assessment", "is_correct": false},
+{"text": "Encourage vigorous massage of the wound", "is_correct": false},
+{"text": "Advise her to avoid reporting further discomfort", "is_correct": false}
+],
+"rationale": "Severe perineal pain may indicate a haematoma, infection or wound complication and should not be dismissed. Assessment and appropriate analgesia are necessary, with escalation when abnormal findings are identified.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "When cleaning a surgical wound, which principle should guide the direction of cleaning?",
+"choices": [
+{"text": "Clean from the least contaminated area towards the more contaminated area using appropriate technique", "is_correct": true},
+{"text": "Move repeatedly from the surrounding skin into the wound with the same swab", "is_correct": false},
+{"text": "Use one swab for the entire wound regardless of contamination", "is_correct": false},
+{"text": "Clean the wound using any available household material", "is_correct": false}
+],
+"rationale": "Cleaning should minimise the transfer of microorganisms from contaminated areas to cleaner areas. Appropriate aseptic or clean technique should be selected according to the wound, procedure and facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "A postnatal woman becomes weak while attempting to get out of bed for the first time after delivery. What should the midwife do?",
+"choices": [
+{"text": "Assist her back to a safe position, assess her condition and prevent a fall", "is_correct": true},
+{"text": "Encourage her to continue walking without support", "is_correct": false},
+{"text": "Leave her standing while obtaining equipment", "is_correct": false},
+{"text": "Tell her to walk faster to overcome the weakness", "is_correct": false}
+],
+"rationale": "Weakness after delivery may result from blood loss, anaemia, hypotension or other causes and increases the risk of falling. The midwife should maintain safety, assess the woman and arrange further clinical review as indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "A newborn is placed beside the mother after delivery. Which practice best promotes newborn safety during routine postnatal care?",
+"choices": [
+{"text": "Place the baby supine on a firm, flat sleep surface without loose bedding", "is_correct": true},
+{"text": "Place the baby prone on a soft pillow for routine sleep", "is_correct": false},
+{"text": "Cover the baby's face with a blanket", "is_correct": false},
+{"text": "Allow the baby to sleep unattended on an adult bed near the edge", "is_correct": false}
+],
+"rationale": "Placing infants on their backs on a firm, flat sleep surface reduces the risk of sleep-related infant death. Loose bedding, pillows and unsafe sleeping arrangements can increase the risk of suffocation and accidental injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "A midwife is preparing to administer an injection to a pregnant woman. The medication label is unclear. What should the midwife do?",
+"choices": [
+{"text": "Administer the medication based on its appearance", "is_correct": false},
+{"text": "Withhold administration until the medication is correctly identified and verified", "is_correct": true},
+{"text": "Ask the patient to identify the medicine", "is_correct": false},
+{"text": "Use the medication because it was left on the treatment trolley", "is_correct": false}
+],
+"rationale": "An unclear medication label creates a risk of medication error. The midwife must not administer a medicine until its identity, prescription and relevant safety information have been verified.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "A newborn is due for transfer from the delivery room to the postnatal ward. Which action is most important to prevent accidental misidentification?",
+"choices": [
+{"text": "Use the approved identification system and verify the newborn's identity with the mother or authorised caregiver", "is_correct": true},
+{"text": "Identify the newborn by appearance alone", "is_correct": false},
+{"text": "Allow any available staff member to select a name tag", "is_correct": false},
+{"text": "Remove all identification before transfer", "is_correct": false}
+],
+"rationale": "A reliable identification system helps prevent newborn misidentification and incorrect transfer. Identification details should be checked according to facility policy before procedures, transfer and handover.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A midwife records a pregnant woman's blood pressure as 160/110 mmHg. The woman also complains of severe headache and blurred vision. What is the priority action?",
+"choices": [
+{"text": "Arrange urgent assessment and management for severe pre-eclampsia while monitoring maternal and fetal condition", "is_correct": true},
+{"text": "Advise her to rest at home and return in one week", "is_correct": false},
+{"text": "Give her a routine appointment for the next antenatal clinic", "is_correct": false},
+{"text": "Ask her to walk around the facility before repeating the reading", "is_correct": false}
+],
+"rationale": "Severe-range hypertension with headache and visual disturbance is a maternal emergency suggestive of severe pre-eclampsia. Urgent escalation, maternal stabilisation, appropriate treatment and fetal assessment are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A woman in labour has vomited and has soiled her clothing. She is also complaining of nausea. What should the midwife do first?",
+"choices": [
+{"text": "Ensure her immediate safety, assist with cleaning and assess her condition", "is_correct": true},
+{"text": "Leave her in the soiled clothing until delivery is completed", "is_correct": false},
+{"text": "Give her a large meal immediately", "is_correct": false},
+{"text": "Ignore the vomiting because it cannot affect labour care", "is_correct": false}
+],
+"rationale": "The woman should be assisted promptly to maintain hygiene, dignity and comfort while the cause and severity of vomiting are assessed. The midwife should also consider hydration and any associated clinical warning signs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A woman with suspected puerperal sepsis is admitted to a maternity ward. She has fever, lower abdominal pain and foul-smelling lochia. What is the priority nursing action?",
+"choices": [
+{"text": "Promptly escalate for clinical assessment and initiate infection management according to protocol", "is_correct": true},
+{"text": "Delay assessment until the next routine ward round", "is_correct": false},
+{"text": "Discharge her because fever is common after childbirth", "is_correct": false},
+{"text": "Treat only the foul smell with perfumed vaginal products", "is_correct": false}
+],
+"rationale": "Fever, lower abdominal pain and foul-smelling lochia are concerning for puerperal infection and possible sepsis. Prompt clinical assessment, appropriate investigations, timely antimicrobial treatment and monitoring are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility in Labour",
+"question_text": "A woman in the second stage of labour is conscious, stable and wishes to adopt an upright kneeling position. There is no clinical contraindication. What should the midwife do?",
+"choices": [
+{"text": "Support her preferred safe position and monitor maternal and fetal wellbeing", "is_correct": true},
+{"text": "Force her into lithotomy position in every case", "is_correct": false},
+{"text": "Prevent her from changing position", "is_correct": false},
+{"text": "Ask her to lie prone throughout the second stage", "is_correct": false}
+],
+"rationale": "Women with uncomplicated labour should generally be supported to use positions that are comfortable and safe for them. The midwife should provide appropriate assistance and continue monitoring maternal and fetal wellbeing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding in Pregnancy",
+"question_text": "A pregnant woman with persistent vomiting is unable to retain fluids and has reduced urine output. What should the midwife prioritise?",
+"choices": [
+{"text": "Assess for dehydration and arrange prompt clinical management", "is_correct": true},
+{"text": "Advise her to stop drinking fluids completely", "is_correct": false},
+{"text": "Reassure her that reduced urine output is always normal in pregnancy", "is_correct": false},
+{"text": "Recommend strenuous exercise to improve appetite", "is_correct": false}
+],
+"rationale": "Persistent vomiting with reduced urine output suggests possible dehydration and may indicate severe pregnancy-related vomiting. Prompt assessment of hydration, electrolyte status and the need for treatment is important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "A newborn in the postnatal ward is found lying alone on an adult bed with a pillow close to the face. What should the midwife do first?",
+"choices": [
+{"text": "Move the newborn to a safe sleep position and remove the pillow and loose bedding", "is_correct": true},
+{"text": "Leave the newborn because the mother may return shortly", "is_correct": false},
+{"text": "Cover the newborn's face to prevent exposure to cold", "is_correct": false},
+{"text": "Place additional pillows around the newborn", "is_correct": false}
+],
+"rationale": "An unattended newborn on an adult bed with pillows is at risk of suffocation and accidental injury. The midwife should immediately place the baby in a safe sleep environment and reinforce safe-sleep education with the mother.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "A woman who delivered two hours ago suddenly develops heavy vaginal bleeding, becomes pale and complains of dizziness. What should the midwife do first?",
+"choices": [
+{"text": "Activate the emergency response, call for help and begin immediate assessment and management of postpartum haemorrhage", "is_correct": true},
+{"text": "Wait for the next routine observation before intervening", "is_correct": false},
+{"text": "Assist her to walk to the bathroom", "is_correct": false},
+{"text": "Give her oral fluids and discharge her", "is_correct": false}
+],
+"rationale": "Heavy bleeding with pallor and dizziness after childbirth indicates possible postpartum haemorrhage with circulatory compromise. Immediate emergency response, assessment of the cause, uterine massage when atony is present, uterotonics and resuscitation according to protocol are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A pregnant woman has a blood pressure reading of 145/95 mmHg at an antenatal visit. She has no headache, visual disturbance or epigastric pain. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The reading is abnormal and requires confirmation and assessment for a hypertensive disorder of pregnancy", "is_correct": true},
+{"text": "The reading is normal because all pregnant women develop hypertension", "is_correct": false},
+{"text": "The woman has eclampsia because her blood pressure is elevated", "is_correct": false},
+{"text": "No further assessment is necessary without symptoms", "is_correct": false}
+],
+"rationale": "A blood pressure of 145/95 mmHg is above the diagnostic threshold used to identify hypertension in pregnancy and requires appropriate confirmation and evaluation. The absence of symptoms does not exclude pre-eclampsia or another hypertensive disorder.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care",
+"question_text": "On the third day after caesarean section, a woman develops increasing wound pain, fever and purulent discharge from the incision. Which conclusion and action are most appropriate?",
+"choices": [
+{"text": "The findings suggest a surgical site infection and require prompt clinical assessment and treatment", "is_correct": true},
+{"text": "The findings indicate normal wound healing and require no action", "is_correct": false},
+{"text": "The woman should remove the wound dressing and apply household powder", "is_correct": false},
+{"text": "The wound should be ignored unless the stitches fall out", "is_correct": false}
+],
+"rationale": "Fever, increasing pain and purulent discharge are strong indicators of a possible surgical site infection. The wound should be assessed promptly, with appropriate investigations and treatment arranged according to clinical findings.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Elimination Needs and Catheterization",
+"question_text": "A woman with severe pre-eclampsia has an indwelling urinary catheter. Her urine output is 15 mL per hour for two consecutive hours. What is the most appropriate interpretation and response?",
+"choices": [
+{"text": "The low output may indicate impaired renal perfusion and requires prompt assessment and escalation", "is_correct": true},
+{"text": "The output is adequate for every adult woman", "is_correct": false},
+{"text": "The catheter should be removed immediately without assessment", "is_correct": false},
+{"text": "The woman should be given unlimited intravenous fluid without clinical review", "is_correct": false}
+],
+"rationale": "Urine output of 15 mL per hour is concerning and may reflect reduced renal perfusion in severe pre-eclampsia. The midwife should check the drainage system and catheter patency, assess fluid balance and escalate promptly for clinical review.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A midwife is caring for a woman with suspected infectious diarrhoea. After removing gloves, she proceeds to attend another patient without performing hand hygiene. Which infection prevention principle has been breached?",
+"choices": [
+{"text": "Hand hygiene between patient-care activities", "is_correct": true},
+{"text": "The principle of patient positioning", "is_correct": false},
+{"text": "The principle of nutritional assessment", "is_correct": false},
+{"text": "The principle of safe bed making", "is_correct": false}
+],
+"rationale": "Gloves do not replace hand hygiene, and microorganisms may contaminate hands during glove removal. Hand hygiene must be performed between patient-care activities to prevent cross-transmission.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "A woman is being discharged after treatment for severe malaria during pregnancy. She reports that she still has fever and weakness, but her discharge documents have already been prepared. What should the midwife do?",
+"choices": [
+{"text": "Reassess her condition and notify the responsible clinician before discharge proceeds", "is_correct": true},
+{"text": "Proceed with discharge because the documents are complete", "is_correct": false},
+{"text": "Tell her to buy antimalarial medicines from any source without review", "is_correct": false},
+{"text": "Ask her relatives to decide whether further assessment is needed", "is_correct": false}
+],
+"rationale": "Persistent fever and weakness may indicate ongoing illness, complications or inadequate response to treatment. Discharge should be based on clinical stability and an appropriate review, not merely completion of administrative documents.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Positioning and Mobility in Labour",
+"question_text": "A woman in labour suddenly becomes breathless and dizzy while lying supine. Her blood pressure falls and her pulse increases. Which explanation and immediate response are most appropriate?",
+"choices": [
+{"text": "Supine hypotensive syndrome is possible; reposition her laterally and urgently reassess maternal and fetal condition", "is_correct": true},
+{"text": "The symptoms are normal and she should remain supine", "is_correct": false},
+{"text": "The woman is experiencing ordinary hunger and should be encouraged to walk", "is_correct": false},
+{"text": "The symptoms indicate that she should be placed prone and left unattended", "is_correct": false}
+],
+"rationale": "Compression of the inferior vena cava by the gravid uterus can reduce venous return and cause hypotension when a woman lies supine. Lateral repositioning is an immediate measure, but persistent symptoms require urgent assessment for other causes of maternal compromise.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutrition and Feeding in Pregnancy",
+"question_text": "A pregnant woman with known anaemia reports taking her prescribed iron tablets together with tea at every meal. Her haemoglobin level remains low. Which explanation is most appropriate?",
+"choices": [
+{"text": "Tea contains compounds that can reduce the absorption of non-haem iron", "is_correct": true},
+{"text": "Tea always increases iron absorption", "is_correct": false},
+{"text": "Iron is not required during pregnancy", "is_correct": false},
+{"text": "The low haemoglobin proves that she has no nutritional deficiency", "is_correct": false}
+],
+"rationale": "Polyphenols in tea can reduce the absorption of non-haem iron when consumed with iron-containing meals or supplements. The midwife should provide appropriate counselling and arrange review of the anaemia and treatment response.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "Two newborns are delivered within minutes of each other in a busy maternity unit. A staff member notices that their identification bands have been placed on the wrong babies. What should the midwife do?",
+"choices": [
+{"text": "Stop the transfer or procedure, verify both newborns' identities using the approved records and correct the identification safely", "is_correct": true},
+{"text": "Allow the babies to remain with the bands because their mothers can recognise them", "is_correct": false},
+{"text": "Exchange the babies between mothers without checking the records", "is_correct": false},
+{"text": "Remove both bands and leave the newborns unidentified", "is_correct": false}
+],
+"rationale": "Incorrect newborn identification creates a serious risk of wrong-patient procedures, medication errors and accidental separation. The discrepancy must be addressed immediately using the facility's formal identification and documentation procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A postpartum woman develops severe perineal swelling, intense pain and difficulty passing urine several hours after an episiotomy. Which complication should the midwife suspect?",
+"choices": [
+{"text": "Perineal haematoma", "is_correct": true},
+{"text": "Normal lochia", "is_correct": false},
+{"text": "Breast engorgement", "is_correct": false},
+{"text": "Physiological uterine involution", "is_correct": false}
+],
+"rationale": "Severe perineal pain and swelling after birth may indicate a haematoma caused by bleeding into the perineal tissues. This requires urgent clinical assessment because significant concealed blood loss may occur.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Safety for Mothers and Newborns",
+"question_text": "A woman who has recently delivered is found confused, pale and clammy. Her blood pressure is falling, and the maternity team suspects severe blood loss. Which nursing priority is most appropriate?",
+"choices": [
+{"text": "Recognise possible hypovolaemic shock, summon emergency assistance and support immediate resuscitation", "is_correct": true},
+{"text": "Complete the discharge summary before further assessment", "is_correct": false},
+{"text": "Encourage her to stand to improve circulation", "is_correct": false},
+{"text": "Provide reassurance only and repeat observations after two hours", "is_correct": false}
+],
+"rationale": "Confusion, pallor, clammy skin and falling blood pressure are signs of circulatory compromise and possible hypovolaemic shock. Immediate emergency escalation, airway and breathing assessment, circulatory support, haemorrhage control and treatment according to protocol are essential.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
