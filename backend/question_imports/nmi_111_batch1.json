@@ -1,0 +1,828 @@
+{
+"courses": [
+{
+"course_code": "NMI-111",
+"course_title": "Nursing Informatics",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Nursing Informatics",
+"Computer Hardware and Software Basics",
+"Electronic Health Records (EHR) and Electronic Medical Records (EMR)",
+"Health Information Systems in Ghana (DHIMS2)",
+"Data Privacy, Security, and Confidentiality",
+"Telehealth and Telemedicine",
+"Mobile Health (mHealth) Applications",
+"Clinical Decision Support Systems",
+"Nursing Documentation and Standardized Terminology (NANDA, NIC, NOC)",
+"Digital Literacy and Informatics Competencies"
+],
+"questions": [
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "Which statement best defines nursing informatics?",
+"choices": [
+{"text": "The use of nursing knowledge, information science and computer science to manage and communicate health information", "is_correct": true},
+{"text": "The study of computer programming without reference to healthcare", "is_correct": false},
+{"text": "The replacement of nurses with automated clinical machines", "is_correct": false},
+{"text": "The management of hospital finances using accounting software only", "is_correct": false}
+],
+"rationale": "Nursing informatics integrates nursing science with information and computer sciences to manage data, information and knowledge in nursing practice. It supports clinical decision-making, documentation, communication, education and improved patient outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "Which of the following best describes the relationship between data, information and knowledge in nursing?",
+"choices": [
+{"text": "Knowledge is collected before data are recorded", "is_correct": false},
+{"text": "Data are processed into information, which can contribute to knowledge", "is_correct": true},
+{"text": "Information and data have exactly the same meaning", "is_correct": false},
+{"text": "Knowledge consists only of figures stored in a computer", "is_correct": false}
+],
+"rationale": "Data are raw facts, such as a patient's temperature reading. When data are organised and interpreted, they become information that can contribute to professional knowledge and informed nursing decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "A nurse uses a computerised system to review a patient's previous admissions, medications and allergies before administering treatment. Which nursing informatics function is demonstrated?",
+"choices": [
+{"text": "Entertainment", "is_correct": false},
+{"text": "Clinical information management", "is_correct": true},
+{"text": "Computer hardware maintenance", "is_correct": false},
+{"text": "Hospital building management", "is_correct": false}
+],
+"rationale": "The nurse is retrieving and interpreting relevant patient information to support safe clinical care. Access to previous admissions, medications and allergies can help prevent errors and improve continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "A nurse records a patient's blood pressure in an electronic system, reviews the trend and identifies a possible deterioration. Which sequence best describes the informatics process?",
+"choices": [
+{"text": "Knowledge, hardware, entertainment", "is_correct": false},
+{"text": "Data collection, information processing and clinical interpretation", "is_correct": true},
+{"text": "Software installation, printing and filing", "is_correct": false},
+{"text": "Patient discharge, data deletion and system shutdown", "is_correct": false}
+],
+"rationale": "The blood pressure reading is data, while the organised trend provides information. Interpreting the trend using nursing knowledge supports clinical judgement and appropriate intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "A nurse notices that an electronic documentation system has reduced missing entries during shift handover. What is the most appropriate interpretation of this improvement?",
+"choices": [
+{"text": "Informatics can improve the completeness and continuity of nursing documentation", "is_correct": true},
+{"text": "Electronic documentation removes the need for clinical assessment", "is_correct": false},
+{"text": "Computerised systems make nurses fully responsible for software development", "is_correct": false},
+{"text": "Electronic records eliminate the need for communication between nurses", "is_correct": false}
+],
+"rationale": "Well-designed electronic documentation can improve record completeness, accessibility and continuity of care. However, nurses must still assess patients, communicate effectively and exercise professional judgement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "Which computer component is primarily responsible for processing instructions and performing calculations?",
+"choices": [
+{"text": "Monitor", "is_correct": false},
+{"text": "Central Processing Unit (CPU)", "is_correct": true},
+{"text": "Keyboard", "is_correct": false},
+{"text": "Printer", "is_correct": false}
+],
+"rationale": "The CPU executes program instructions and performs arithmetic and logical operations. It is commonly described as the main processing unit of a computer.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "Which of the following is an example of system software?",
+"choices": [
+{"text": "Microsoft Word", "is_correct": false},
+{"text": "Microsoft Excel", "is_correct": false},
+{"text": "Windows operating system", "is_correct": true},
+{"text": "A patient education presentation", "is_correct": false}
+],
+"rationale": "An operating system is system software that manages computer hardware and provides services for application programs. Microsoft Word and Excel are application software used to perform specific tasks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "A nurse enters a patient's name and vital signs into a computer using a keyboard. What type of computer device is the keyboard?",
+"choices": [
+{"text": "Output device", "is_correct": false},
+{"text": "Storage device", "is_correct": false},
+{"text": "Input device", "is_correct": true},
+{"text": "Processing device", "is_correct": false}
+],
+"rationale": "An input device allows users to enter data and instructions into a computer. A keyboard is an input device because it transfers typed information into the system.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "A nurse saves patient information temporarily while working on a computer. Which component primarily provides temporary working memory for active programs?",
+"choices": [
+{"text": "Random Access Memory (RAM)", "is_correct": true},
+{"text": "Read-only optical disc", "is_correct": false},
+{"text": "Printer", "is_correct": false},
+{"text": "Monitor", "is_correct": false}
+],
+"rationale": "RAM temporarily stores data and instructions that the computer is actively using. Unlike permanent storage, its contents are generally lost when power is switched off.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "A nurse cannot access the electronic patient record because the workstation has frozen. Which action should the nurse take first?",
+"choices": [
+{"text": "Repeatedly enter the patient's password", "is_correct": false},
+{"text": "Force repeated shutdowns without checking the system", "is_correct": false},
+{"text": "Assess the workstation, report the fault through the appropriate support channel and follow downtime procedures", "is_correct": true},
+{"text": "Use another staff member's login credentials", "is_correct": false}
+],
+"rationale": "The nurse should follow the facility's approved technical support and downtime procedures to maintain safe access to patient information. Sharing credentials or repeatedly attempting access may compromise security and worsen the problem.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Electronic Health Records (EHR) and Electronic Medical Records (EMR)",
+"question_text": "What is an electronic health record (EHR)?",
+"choices": [
+{"text": "A digital record containing health information intended to support care across different healthcare settings", "is_correct": true},
+{"text": "A handwritten record kept only in a nurse's pocket", "is_correct": false},
+{"text": "A computer program used exclusively for hospital payroll", "is_correct": false},
+{"text": "A digital document containing only a patient's payment history", "is_correct": false}
+],
+"rationale": "An EHR is a digital collection of patient health information designed to support continuity of care and, where systems are interoperable, information sharing across healthcare settings. It can include clinical history, diagnoses, medications, allergies, investigations and treatment information.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Electronic Health Records (EHR) and EMR",
+"question_text": "Which statement best distinguishes an electronic medical record (EMR) from an electronic health record (EHR)?",
+"choices": [
+{"text": "An EMR is always paper-based, while an EHR is always handwritten", "is_correct": false},
+{"text": "An EMR commonly focuses on a patient's record within one healthcare organisation, while an EHR is designed to support a broader longitudinal view of health information", "is_correct": true},
+{"text": "An EMR contains only financial information, while an EHR contains only laboratory results", "is_correct": false},
+{"text": "There is no difference in their intended scope", "is_correct": false}
+],
+"rationale": "An EMR generally represents the electronic patient record used within a particular practice or organisation. An EHR is intended to provide a more comprehensive longitudinal record and support information exchange across care settings when interoperability is available.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Electronic Health Records (EHR) and EMR",
+"question_text": "A nurse at a hospital opens a patient's electronic record and discovers that the recorded allergy information is missing. What should the nurse do?",
+"choices": [
+{"text": "Assume the patient has no allergies", "is_correct": false},
+{"text": "Administer the medication and check later", "is_correct": false},
+{"text": "Verify the allergy history with the patient or an appropriate source and document the findings according to policy", "is_correct": true},
+{"text": "Copy allergy information from another patient's record", "is_correct": false}
+],
+"rationale": "Missing allergy information must not be interpreted as confirmation that the patient has no allergies. The nurse should verify the information, document it accurately and communicate relevant findings before medication administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Electronic Health Records (EHR) and EMR",
+"question_text": "A nurse accidentally enters a medication administration under the wrong patient's electronic record. Which action is most appropriate?",
+"choices": [
+{"text": "Delete all records from the system", "is_correct": false},
+{"text": "Follow the approved correction procedure, notify the appropriate personnel and ensure the correct patient's record is accurate", "is_correct": true},
+{"text": "Leave the entry because the medication has already been administered", "is_correct": false},
+{"text": "Ask another nurse to change the entry using their login", "is_correct": false}
+],
+"rationale": "An incorrect entry must be corrected transparently using the facility's approved procedure so that the audit trail is preserved. The nurse should also communicate the error promptly to support patient safety and accurate documentation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Electronic Health Records (EHR) and EMR",
+"question_text": "A hospital introduces electronic records, but nurses continue to record observations on loose paper and do not transfer them into the approved system. What is the greatest risk?",
+"choices": [
+{"text": "Improved data consistency", "is_correct": false},
+{"text": "Fragmented documentation and incomplete patient information", "is_correct": true},
+{"text": "Automatic prevention of medication errors", "is_correct": false},
+{"text": "Improved interoperability between departments", "is_correct": false}
+],
+"rationale": "Keeping clinical information in disconnected paper records can create incomplete and fragmented patient records. Important observations may not be available to other members of the healthcare team when needed for clinical decisions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Information Systems in Ghana (DHIMS2)",
+"question_text": "What is the primary purpose of the District Health Information Management System 2 (DHIMS2) in Ghana?",
+"choices": [
+{"text": "To manage only the salaries of nurses", "is_correct": false},
+{"text": "To support the collection, management, analysis and reporting of routine health service data", "is_correct": true},
+{"text": "To replace all clinical examinations in hospitals", "is_correct": false},
+{"text": "To provide personal social media accounts for health workers", "is_correct": false}
+],
+"rationale": "DHIMS2 is used in Ghana's health information system to manage routine health service data and support reporting, monitoring and planning. It helps health managers and public health personnel use reported information for decision-making.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Information Systems in Ghana (DHIMS2)",
+"question_text": "A nurse at a CHPS compound submits monthly service statistics for inclusion in district health reports. Which system is commonly used in Ghana for routine health data reporting?",
+"choices": [
+{"text": "DHIMS2", "is_correct": true},
+{"text": "A graphics editing application", "is_correct": false},
+{"text": "A music streaming application", "is_correct": false},
+{"text": "A computer operating system alone", "is_correct": false}
+],
+"rationale": "DHIMS2 supports routine health information reporting within Ghana's health system. Data from health facilities and community-level services contribute to district-level monitoring and health planning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana (DHIMS2)",
+"question_text": "A district health information officer notices that a facility has reported more antenatal visits than the number recorded in its source register. What should be done first?",
+"choices": [
+{"text": "Accept the higher figure without checking", "is_correct": false},
+{"text": "Delete the entire month's report", "is_correct": false},
+{"text": "Verify the reported figures against the source documents and resolve the discrepancy", "is_correct": true},
+{"text": "Change the figures to match the previous month", "is_correct": false}
+],
+"rationale": "Routine health information should be validated against source records before it is accepted for reporting. Resolving discrepancies improves data accuracy, completeness and reliability for district-level decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana (DHIMS2)",
+"question_text": "A district manager observes that malaria cases reported by several facilities have increased over three consecutive months. What is the most appropriate use of this information?",
+"choices": [
+{"text": "Ignore the trend because the data are electronic", "is_correct": false},
+{"text": "Use the trend to guide further investigation, surveillance and appropriate public health action", "is_correct": true},
+{"text": "Assume that every reported case represents a confirmed death", "is_correct": false},
+{"text": "Remove the malaria indicator from the reporting system", "is_correct": false}
+],
+"rationale": "Trends in routine health data can help identify possible changes in disease patterns and guide public health responses. The increase should be interpreted alongside data quality checks, clinical information and relevant surveillance findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana (DHIMS2)",
+"question_text": "A facility consistently submits incomplete monthly reports, making district-level analysis unreliable. Which intervention should be prioritised?",
+"choices": [
+{"text": "Stop collecting health information", "is_correct": false},
+{"text": "Provide supportive supervision, strengthen staff training and improve routine data validation", "is_correct": true},
+{"text": "Enter estimated figures without checking source documents", "is_correct": false},
+{"text": "Allow each staff member to use a different reporting definition", "is_correct": false}
+],
+"rationale": "Incomplete reporting may result from inadequate training, weak documentation practices or poor data management processes. Supportive supervision, standardised procedures and regular validation can improve data completeness and reliability.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "Which Ghanaian legislation provides a framework for protecting personal data, including personal health information?",
+"choices": [
+{"text": "Data Protection Act, 2012 (Act 843)", "is_correct": true},
+{"text": "Road Traffic Act, 2004 (Act 683)", "is_correct": false},
+{"text": "Companies Act, 2019 (Act 992)", "is_correct": false},
+{"text": "Public Holidays Act, 2001 (Act 601)", "is_correct": false}
+],
+"rationale": "The Data Protection Act, 2012 (Act 843) establishes principles and requirements for the processing of personal data in Ghana. Health information is sensitive personal data and must be handled with appropriate safeguards and lawful authority.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "What does confidentiality mean in nursing informatics?",
+"choices": [
+{"text": "Making every patient's health information available to the public", "is_correct": false},
+{"text": "Protecting patient information from unauthorised disclosure", "is_correct": true},
+{"text": "Allowing all hospital workers to access every patient record", "is_correct": false},
+{"text": "Deleting all clinical information immediately after treatment", "is_correct": false}
+],
+"rationale": "Confidentiality is the professional and ethical duty to protect patient information from unauthorised access or disclosure. Nurses should only share information with persons who have a legitimate need and appropriate authority to receive it.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A nurse leaves a computer displaying a patient's medical record while going for a break. What should the nurse have done before leaving?",
+"choices": [
+{"text": "Leave the record open for other staff to use", "is_correct": false},
+{"text": "Lock or log out of the workstation according to facility policy", "is_correct": true},
+{"text": "Write the password on the monitor", "is_correct": false},
+{"text": "Share the login details with a colleague", "is_correct": false}
+],
+"rationale": "Locking or logging out of an unattended workstation helps prevent unauthorised access to confidential patient information. Staff should protect their login credentials and follow the facility's information security procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A nurse receives an email asking for the hospital's electronic health record password through an unfamiliar link. Which action should the nurse take first?",
+"choices": [
+{"text": "Open the link and enter the password", "is_correct": false},
+{"text": "Forward the email to patients", "is_correct": false},
+{"text": "Avoid clicking the link, do not disclose credentials and report the suspicious message through the approved channel", "is_correct": true},
+{"text": "Reply with the password to confirm the account", "is_correct": false}
+],
+"rationale": "The message may be a phishing attempt designed to steal login credentials. The nurse should not interact with the suspicious link or disclose sensitive information and should report the incident according to facility security procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A nurse wants to discuss a patient's diagnosis with a relative who is visiting the ward. What should guide the nurse's decision?",
+"choices": [
+{"text": "The relative's curiosity", "is_correct": false},
+{"text": "The patient's consent, applicable legal requirements and professional confidentiality obligations", "is_correct": true},
+{"text": "The relative's ability to pay hospital bills", "is_correct": false},
+{"text": "The nurse's personal relationship with the relative", "is_correct": false}
+],
+"rationale": "Patient health information should only be disclosed when there is an appropriate legal basis or valid authorisation. Nurses must respect patient confidentiality and follow professional and facility policies when communicating with relatives.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A nurse discovers that a colleague has accessed the electronic record of a well-known community member without any clinical responsibility for that patient. What is the most appropriate action?",
+"choices": [
+{"text": "Ignore the incident because the colleague is a healthcare worker", "is_correct": false},
+{"text": "Share the patient's information with other staff", "is_correct": false},
+{"text": "Report the suspected unauthorised access through the facility's established reporting process", "is_correct": true},
+{"text": "Delete the access history to protect the colleague", "is_correct": false}
+],
+"rationale": "Healthcare workers must access patient records only for legitimate professional purposes. Unauthorised access is a potential confidentiality and security breach and should be reported so that it can be investigated appropriately.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A facility experiences a suspected ransomware attack, and staff are unable to access electronic patient records. Which action should be prioritised?",
+"choices": [
+{"text": "Attempt to remove the malware by downloading unapproved software", "is_correct": false},
+{"text": "Continue using the affected system and enter more patient information", "is_correct": false},
+{"text": "Follow the facility's cybersecurity incident and clinical downtime procedures, and notify the designated technical personnel", "is_correct": true},
+{"text": "Share administrator passwords with all staff", "is_correct": false}
+],
+"rationale": "A suspected ransomware attack may compromise the confidentiality, integrity and availability of patient information. Staff should follow the incident response and downtime procedures, notify authorised personnel and maintain safe clinical care using approved alternative documentation processes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A nurse posts a photograph of a patient receiving treatment on a personal social media account without the patient's authorisation. Which professional concern is most significant?",
+"choices": [
+{"text": "The photograph may improve the hospital's reputation", "is_correct": false},
+{"text": "The nurse may have breached patient confidentiality and data protection requirements", "is_correct": true},
+{"text": "The photograph automatically becomes public health data", "is_correct": false},
+{"text": "The action is acceptable if the patient's name is not included", "is_correct": false}
+],
+"rationale": "Patient images can contain identifiable personal and health information even when a name is omitted. Sharing them without appropriate authorisation may violate confidentiality, professional standards and applicable data protection requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Telehealth and Telemedicine",
+"question_text": "What is telemedicine?",
+"choices": [
+{"text": "The use of information and communication technologies to provide clinical healthcare services remotely", "is_correct": true},
+{"text": "The use of computers exclusively for hospital accounting", "is_correct": false},
+{"text": "The physical transfer of all patients to specialist hospitals", "is_correct": false},
+{"text": "The replacement of all nurses with mobile phones", "is_correct": false}
+],
+"rationale": "Telemedicine uses information and communication technologies to support remote clinical consultation, assessment and management. It can improve access to healthcare services when appropriate clinical, privacy and technical safeguards are in place.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Telehealth and Telemedicine",
+"question_text": "A nurse at a rural CHPS compound uses a secure video consultation to discuss a patient's condition with a doctor at a district hospital. Which technology-supported service is being used?",
+"choices": [
+{"text": "Telemedicine", "is_correct": true},
+{"text": "Data destruction", "is_correct": false},
+{"text": "Computer-aided manufacturing", "is_correct": false},
+{"text": "Offline word processing", "is_correct": false}
+],
+"rationale": "The nurse and doctor are using communication technology to support a remote clinical consultation. This is an example of telemedicine that may improve access to clinical expertise for patients in rural communities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Telehealth and Telemedicine",
+"question_text": "During a remote consultation, a patient reports severe chest pain, difficulty breathing and sudden collapse. What should the nurse do first?",
+"choices": [
+{"text": "Continue the video consultation for another thirty minutes", "is_correct": false},
+{"text": "Advise the patient to send an email describing the symptoms", "is_correct": false},
+{"text": "Activate or arrange immediate emergency assistance and urgent referral according to the clinical situation", "is_correct": true},
+{"text": "Schedule a routine telemedicine appointment for the following week", "is_correct": false}
+],
+"rationale": "Severe chest pain, respiratory difficulty and collapse may indicate a life-threatening emergency requiring immediate assessment and intervention. Telemedicine must not delay emergency response, stabilisation or urgent referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Telehealth and Telemedicine",
+"question_text": "Which limitation should a nurse consider when conducting a remote clinical consultation?",
+"choices": [
+{"text": "Every clinical examination can be performed fully through a video call", "is_correct": false},
+{"text": "A remote consultation may limit physical examination and direct observation", "is_correct": true},
+{"text": "Telemedicine never requires patient identification", "is_correct": false},
+{"text": "Remote consultations do not require clinical documentation", "is_correct": false}
+],
+"rationale": "Telemedicine can improve access to care, but it may not allow the nurse or clinician to perform all physical examinations. The healthcare professional must recognise limitations and arrange an in-person assessment or referral when clinically necessary.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Telehealth and Telemedicine",
+"question_text": "A patient at a rural facility cannot hear the clinician clearly during a teleconsultation because of a poor internet connection. What should the nurse do?",
+"choices": [
+{"text": "Continue the consultation and assume the patient understands", "is_correct": false},
+{"text": "Confirm the communication problem, use an approved alternative communication method or reschedule safely, and document the limitation", "is_correct": true},
+{"text": "End the patient's treatment without explanation", "is_correct": false},
+{"text": "Ask an unrelated person to interpret confidential information", "is_correct": false}
+],
+"rationale": "Effective communication is essential for safe remote healthcare. The nurse should establish whether information has been understood, use an appropriate alternative channel and ensure that clinical decisions are not based on incomplete communication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobile Health (mHealth) Applications",
+"question_text": "What does mobile health (mHealth) refer to?",
+"choices": [
+{"text": "The use of mobile devices and wireless technologies to support health services and health information delivery", "is_correct": true},
+{"text": "The use of desktop computers only for hospital payroll", "is_correct": false},
+{"text": "The replacement of all healthcare facilities with mobile phones", "is_correct": false},
+{"text": "The use of mobile phones exclusively for entertainment", "is_correct": false}
+],
+"rationale": "mHealth involves using mobile technologies such as smartphones, tablets and mobile applications to support health promotion, communication, monitoring and healthcare delivery. It can be useful in community health activities and patient follow-up.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mobile Health (mHealth) Applications",
+"question_text": "A community health nurse uses a mobile application to send appointment reminders and maternal health education messages to pregnant women. Which application of mHealth is demonstrated?",
+"choices": [
+{"text": "Remote health communication and patient education", "is_correct": true},
+{"text": "Computer hardware replacement", "is_correct": false},
+{"text": "Hospital building maintenance", "is_correct": false},
+{"text": "Unauthorised access to patient records", "is_correct": false}
+],
+"rationale": "Mobile applications can support maternal health education, appointment reminders and communication between healthcare workers and patients. Such services may improve access to information and encourage appropriate use of antenatal care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobile Health (mHealth) Applications",
+"question_text": "A nurse uses a mobile application to record a patient's blood glucose readings during follow-up. Which practice is most important?",
+"choices": [
+{"text": "Enter readings without checking the patient's identity", "is_correct": false},
+{"text": "Ensure accurate data entry, protect patient information and use the application according to approved procedures", "is_correct": true},
+{"text": "Allow anyone with the phone to edit the patient's readings", "is_correct": false},
+{"text": "Delete abnormal readings to make the results appear normal", "is_correct": false}
+],
+"rationale": "Mobile health records must be accurate, attributable to the correct patient and protected against unauthorised access or alteration. Nurses should use approved applications and follow clinical documentation and data security requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobile Health (mHealth) Applications",
+"question_text": "A CHPS nurse relies on a mobile application for patient follow-up, but the community frequently experiences poor network coverage. Which response is most appropriate?",
+"choices": [
+{"text": "Stop providing follow-up services", "is_correct": false},
+{"text": "Use an approved offline or alternative documentation method and synchronise information securely when connectivity becomes available", "is_correct": true},
+{"text": "Enter all patient information into a public online document", "is_correct": false},
+{"text": "Use another person's private account to upload the information", "is_correct": false}
+],
+"rationale": "Poor connectivity can interrupt mobile health services, particularly in rural communities. Approved offline procedures and secure synchronisation can help maintain continuity while protecting the accuracy and confidentiality of patient information.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mobile Health (mHealth) Applications",
+"question_text": "A patient receives a text message from an unknown number requesting payment and personal health information to confirm a hospital appointment. What should the nurse advise the patient to do first?",
+"choices": [
+{"text": "Send the requested information immediately", "is_correct": false},
+{"text": "Forward the message to all contacts", "is_correct": false},
+{"text": "Avoid responding and verify the message through an official healthcare facility contact channel", "is_correct": true},
+{"text": "Provide a mobile money PIN to confirm the appointment", "is_correct": false}
+],
+"rationale": "The message may be fraudulent and could be intended to obtain personal information or money. Patients should verify appointment communications through official channels and should never disclose mobile money PINs or other authentication credentials.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "What is a clinical decision support system (CDSS)?",
+"choices": [
+{"text": "A system that provides healthcare professionals with patient-specific information, alerts or recommendations to support clinical decisions", "is_correct": true},
+{"text": "A system used only to calculate hospital electricity bills", "is_correct": false},
+{"text": "A device that independently replaces all clinical judgement", "is_correct": false},
+{"text": "A software application used exclusively for staff attendance", "is_correct": false}
+],
+"rationale": "A CDSS analyses clinical information and provides alerts, reminders or recommendations to assist healthcare professionals. It supports, rather than replaces, clinical judgement and professional responsibility.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A nurse enters a patient's medication into an electronic system, and an alert appears indicating a possible allergy interaction. What should the nurse do?",
+"choices": [
+{"text": "Ignore the alert because computer systems are always inaccurate", "is_correct": false},
+{"text": "Review the patient's allergy history and medication order, then seek appropriate clinical clarification before proceeding", "is_correct": true},
+{"text": "Disable all medication alerts permanently", "is_correct": false},
+{"text": "Administer the medication without further assessment", "is_correct": false}
+],
+"rationale": "A medication allergy alert may identify a potentially serious patient safety risk. The nurse should verify the clinical information and resolve the concern with the appropriate prescriber or authorised clinician before administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A CDSS repeatedly generates alerts that are not clinically relevant to the patients being treated. Staff begin ignoring all alerts, including important ones. What is the most likely problem?",
+"choices": [
+{"text": "Improved clinical decision-making", "is_correct": false},
+{"text": "Alert fatigue", "is_correct": true},
+{"text": "Increased data confidentiality", "is_correct": false},
+{"text": "Automatic improvement in patient identification", "is_correct": false}
+],
+"rationale": "Alert fatigue occurs when healthcare professionals are exposed to excessive or low-value alerts and become less responsive to them. This can result in important warnings being overlooked and may compromise patient safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A clinical decision support system recommends a medication dose, but the nurse notices that the patient's recorded weight is incorrect. What should the nurse do first?",
+"choices": [
+{"text": "Accept the recommended dose because the system generated it", "is_correct": false},
+{"text": "Correctly verify the patient's weight and relevant clinical information before relying on the recommendation", "is_correct": true},
+{"text": "Change the patient's identity to match the recommendation", "is_correct": false},
+{"text": "Ignore the patient's clinical condition", "is_correct": false}
+],
+"rationale": "CDSS recommendations depend on the quality and accuracy of the information entered into the system. Incorrect patient data can produce unsafe recommendations, so the nurse must verify the relevant information and apply clinical judgement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A nurse receives a high-priority electronic warning indicating that a patient's oxygen saturation is critically low. The patient is also visibly struggling to breathe. What should the nurse do first?",
+"choices": [
+{"text": "Close the warning and continue routine documentation", "is_correct": false},
+{"text": "Immediately assess the patient, initiate appropriate emergency interventions and summon assistance according to protocol", "is_correct": true},
+{"text": "Wait for the system to generate another warning", "is_correct": false},
+{"text": "Record the warning for discussion at the next staff meeting", "is_correct": false}
+],
+"rationale": "A critically low oxygen saturation accompanied by respiratory distress indicates possible life-threatening deterioration. Immediate clinical assessment, appropriate intervention and escalation take priority over routine documentation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A hospital's CDSS recommends a treatment based on an incorrect patient age entered during registration. Which conclusion is most appropriate?",
+"choices": [
+{"text": "Clinical decision support systems are always independent of input data", "is_correct": false},
+{"text": "Incorrect input data can produce inappropriate clinical recommendations", "is_correct": true},
+{"text": "Patient demographic information has no clinical relevance", "is_correct": false},
+{"text": "The nurse should accept every recommendation without verification", "is_correct": false}
+],
+"rationale": "Clinical decision support depends on accurate patient information and correctly configured clinical rules. Incorrect demographic or clinical data can affect recommendations, so information must be verified before clinical decisions are made.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "What is the primary purpose of nursing documentation?",
+"choices": [
+{"text": "To provide an accurate and timely record of nursing assessments, interventions and patient responses", "is_correct": true},
+{"text": "To replace direct communication with patients", "is_correct": false},
+{"text": "To record only the names of healthcare workers", "is_correct": false},
+{"text": "To provide personal opinions about patients", "is_correct": false}
+],
+"rationale": "Nursing documentation records relevant assessments, care provided, clinical decisions and patient responses. It supports continuity of care, communication, accountability, evaluation and legal documentation requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "Which statement correctly describes NANDA International (NANDA-I) in nursing practice?",
+"choices": [
+{"text": "It provides standardised nursing diagnoses", "is_correct": true},
+{"text": "It provides a classification of hospital buildings", "is_correct": false},
+{"text": "It is a system for calculating hospital revenue", "is_correct": false},
+{"text": "It provides a classification of computer hardware", "is_correct": false}
+],
+"rationale": "NANDA International provides a standardised classification of nursing diagnoses. These diagnoses describe human responses to health conditions and guide the development of appropriate nursing care plans.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "Which statement correctly identifies the purpose of the Nursing Interventions Classification (NIC)?",
+"choices": [
+{"text": "It classifies nursing interventions", "is_correct": true},
+{"text": "It classifies medical laboratory equipment", "is_correct": false},
+{"text": "It provides a list of hospital financial transactions", "is_correct": false},
+{"text": "It classifies computer operating systems", "is_correct": false}
+],
+"rationale": "The Nursing Interventions Classification (NIC) provides a standardised language for describing nursing interventions. It helps nurses identify and communicate the care activities used to achieve desired patient outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "Which statement correctly describes the Nursing Outcomes Classification (NOC)?",
+"choices": [
+{"text": "It provides standardised nursing-sensitive patient outcomes", "is_correct": true},
+{"text": "It provides a list of nursing uniforms", "is_correct": false},
+{"text": "It records only the cost of nursing procedures", "is_correct": false},
+{"text": "It replaces the need for nursing assessment", "is_correct": false}
+],
+"rationale": "The Nursing Outcomes Classification (NOC) provides standardised outcomes that can be used to evaluate changes in a patient's condition following nursing care. It supports the measurement and evaluation of nursing contributions to patient outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "A nurse identifies that a patient has impaired physical mobility following a stroke and develops a plan to assist the patient with safe movement. Which standardised terminology is most appropriate for identifying the nursing diagnosis?",
+"choices": [
+{"text": "NANDA-I", "is_correct": true},
+{"text": "NIC", "is_correct": false},
+{"text": "NOC", "is_correct": false},
+{"text": "DHIMS2", "is_correct": false}
+],
+"rationale": "NANDA-I is used to identify and classify nursing diagnoses, including impaired physical mobility. NIC can then be used to describe interventions, while NOC can help evaluate expected outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "A nurse plans to provide pressure injury prevention through regular repositioning and skin assessment. Which classification is most appropriate for documenting these nursing activities?",
+"choices": [
+{"text": "NANDA-I", "is_correct": false},
+{"text": "NIC", "is_correct": true},
+{"text": "NOC", "is_correct": false},
+{"text": "DHIMS2", "is_correct": false}
+],
+"rationale": "NIC classifies nursing interventions, including activities used to prevent pressure injuries. NANDA-I identifies nursing diagnoses, while NOC describes outcomes used to evaluate the effectiveness of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "A nurse evaluates whether a patient's pain has decreased after prescribed treatment and nursing interventions. Which classification is most appropriate for recording the expected patient outcome?",
+"choices": [
+{"text": "NANDA-I", "is_correct": false},
+{"text": "NIC", "is_correct": false},
+{"text": "NOC", "is_correct": true},
+{"text": "DHIMS2", "is_correct": false}
+],
+"rationale": "NOC provides standardised outcomes for evaluating patient responses to nursing care. A reduction in pain can be assessed using an appropriate outcome indicator and documented over time.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "A nurse documents that a patient is 'doing fine' without recording assessment findings, vital signs or the patient's response to treatment. What is the main weakness of this entry?",
+"choices": [
+{"text": "It contains excessive clinical detail", "is_correct": false},
+{"text": "It is vague and does not provide objective, clinically useful information", "is_correct": true},
+{"text": "It uses too many standardised nursing terms", "is_correct": false},
+{"text": "It provides a complete record of the patient's condition", "is_correct": false}
+],
+"rationale": "Terms such as 'doing fine' are subjective and do not adequately describe the patient's condition. Nursing documentation should be clear, accurate, timely and supported by relevant assessment findings and observations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "A nurse discovers that a previous nursing entry contains an incorrect vital sign reading. Which action is most appropriate?",
+"choices": [
+{"text": "Erase the original entry without leaving any record of the correction", "is_correct": false},
+{"text": "Follow the approved correction process, preserve the audit trail and enter the verified information", "is_correct": true},
+{"text": "Ask another nurse to use their account to change the record", "is_correct": false},
+{"text": "Leave the incorrect information because it has already been saved", "is_correct": false}
+],
+"rationale": "Clinical records must remain accurate and traceable. Corrections should follow approved documentation procedures, preserve the original entry or audit trail as required, and clearly identify the corrected information.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "What is digital literacy in nursing?",
+"choices": [
+{"text": "The ability to use digital technologies effectively, safely and appropriately to access, evaluate and communicate information", "is_correct": true},
+{"text": "The ability to repair every type of computer hardware", "is_correct": false},
+{"text": "The ability to use social media without understanding privacy", "is_correct": false},
+{"text": "The ability to memorise computer passwords only", "is_correct": false}
+],
+"rationale": "Digital literacy involves the knowledge and skills required to use digital tools effectively and responsibly. In nursing, it includes accessing health information, documenting care, communicating electronically and protecting patient data.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A nurse is unfamiliar with a newly introduced electronic health record system. Which action is most appropriate?",
+"choices": [
+{"text": "Enter information randomly until the system responds", "is_correct": false},
+{"text": "Seek approved training and supervised practice before independently using the system", "is_correct": true},
+{"text": "Allow an unauthorised person to enter patient information", "is_correct": false},
+{"text": "Avoid all electronic documentation permanently", "is_correct": false}
+],
+"rationale": "Training and supervised practice help nurses develop the competencies required to use electronic systems safely. Appropriate training reduces data entry errors and supports effective adoption of health information technology.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A nurse searches online for information about a new treatment and finds a social media post making unsupported medical claims. What should the nurse do?",
+"choices": [
+{"text": "Use the information immediately because it has many likes", "is_correct": false},
+{"text": "Assess the credibility of the source and verify the information using reliable clinical or official sources", "is_correct": true},
+{"text": "Share the post with patients without checking it", "is_correct": false},
+{"text": "Assume all online health information is accurate", "is_correct": false}
+],
+"rationale": "Digital literacy includes the ability to evaluate the quality and credibility of online information. Nurses should verify clinical claims using reliable evidence and authoritative sources before applying them to patient care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A nurse is using a computer in a busy ward when a pop-up requests installation of an unfamiliar program to improve system performance. What should the nurse do first?",
+"choices": [
+{"text": "Install the program immediately", "is_correct": false},
+{"text": "Ignore facility software policies and use personal administrator credentials", "is_correct": false},
+{"text": "Avoid installing the program and consult authorised technical support", "is_correct": true},
+{"text": "Disable the computer's security settings", "is_correct": false}
+],
+"rationale": "Unapproved software may introduce malware, compromise patient information or interfere with facility systems. Software installation should be controlled by authorised personnel in accordance with organisational security policies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A nurse is preparing a report using electronic patient data and notices that several records contain missing dates and inconsistent patient identifiers. What should the nurse do before analysing the data?",
+"choices": [
+{"text": "Ignore the missing information and proceed with the analysis", "is_correct": false},
+{"text": "Check the source records, resolve identifiable errors through approved procedures and document any remaining limitations", "is_correct": true},
+{"text": "Invent missing dates to complete the report", "is_correct": false},
+{"text": "Delete every record containing an incomplete field", "is_correct": false}
+],
+"rationale": "Data quality is essential for valid analysis and reliable reporting. Missing or inconsistent information should be investigated and corrected only when verified, while unresolved limitations should be acknowledged rather than concealed or replaced with invented data.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A nurse at a CHPS compound notices that a colleague frequently records patient information in the wrong electronic fields, resulting in inaccurate reports. Which action should be prioritised?",
+"choices": [
+{"text": "Allow the errors to continue because the system will correct them automatically", "is_correct": false},
+{"text": "Provide or arrange appropriate training, correct affected records through approved procedures and strengthen data quality checks", "is_correct": true},
+{"text": "Stop documenting patient care electronically", "is_correct": false},
+{"text": "Use another staff member's account to enter all future records", "is_correct": false}
+],
+"rationale": "Incorrect data entry can affect clinical records, routine reporting and health service planning. Training, appropriate correction of affected records and regular data quality checks address both the immediate errors and their underlying cause.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A nurse receives two different electronic reports showing conflicting numbers of immunisations administered by the same facility. Which action should be taken first?",
+"choices": [
+{"text": "Choose the report with the larger number", "is_correct": false},
+{"text": "Compare both reports with the original immunisation registers and verify the reporting period and definitions used", "is_correct": true},
+{"text": "Combine the figures without checking for duplication", "is_correct": false},
+{"text": "Submit both reports as accurate without investigation", "is_correct": false}
+],
+"rationale": "Conflicting reports may result from duplication, differences in reporting periods or errors in data entry. Verification against source documents and consistent indicator definitions is necessary before selecting figures for official reporting.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Electronic Health Records (EHR) and EMR",
+"question_text": "A nurse is attending to a patient who has suddenly become unconscious. The electronic health record is available, but accessing it would delay immediate emergency care. What should the nurse do first?",
+"choices": [
+{"text": "Spend several minutes reviewing the entire electronic record", "is_correct": false},
+{"text": "Prioritise immediate assessment and emergency management, while another team member retrieves relevant information if available", "is_correct": true},
+{"text": "Delay care until the electronic system has loaded", "is_correct": false},
+{"text": "Wait for the health information officer to authorise treatment", "is_correct": false}
+],
+"rationale": "Immediate patient assessment and emergency management take priority over routine electronic record review. Relevant clinical information can be retrieved concurrently when staffing allows, provided this does not delay life-saving interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A nurse notices that a colleague has accidentally sent a patient's laboratory results to the wrong email recipient. What should the nurse do first?",
+"choices": [
+{"text": "Ignore the incident because the email has already been sent", "is_correct": false},
+{"text": "Promptly report the disclosure through the facility's data breach procedure and follow instructions to contain and assess the incident", "is_correct": true},
+{"text": "Send the results to additional recipients to explain the mistake", "is_correct": false},
+{"text": "Delete the patient's entire electronic record", "is_correct": false}
+],
+"rationale": "Sending patient information to an unauthorised recipient may constitute a personal data breach. Prompt reporting allows the facility to assess the incident, take appropriate containment measures and fulfil applicable legal and organisational obligations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Telehealth and Telemedicine",
+"question_text": "During a telemedicine consultation, a nurse suspects that a patient is experiencing a stroke because of sudden facial weakness and difficulty speaking. What is the priority action?",
+"choices": [
+{"text": "Continue routine health education until the consultation ends", "is_correct": false},
+{"text": "Arrange immediate emergency referral and transport to an appropriate facility for urgent assessment", "is_correct": true},
+{"text": "Schedule another remote consultation in two days", "is_correct": false},
+{"text": "Ask the patient to monitor the symptoms for one week", "is_correct": false}
+],
+"rationale": "Sudden facial weakness and speech difficulty are warning signs of a possible acute stroke. Time-sensitive emergency assessment and referral are essential, and remote consultation must not delay access to appropriate emergency care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A nurse receives an electronic alert that a patient's recorded potassium level is critically elevated. The patient also reports palpitations. Which action should the nurse take first?",
+"choices": [
+{"text": "Ignore the alert because the patient is able to speak", "is_correct": false},
+{"text": "Promptly assess the patient, escalate the finding to the appropriate clinician and follow emergency management procedures", "is_correct": true},
+{"text": "Wait until the next routine ward round", "is_correct": false},
+{"text": "Delete the laboratory result from the electronic record", "is_correct": false}
+],
+"rationale": "Severe hyperkalaemia can cause life-threatening cardiac arrhythmias, and palpitations may indicate clinical deterioration. The nurse should promptly assess and escalate the finding so that urgent evaluation and treatment can be initiated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Documentation and Standardized Terminology",
+"question_text": "A nurse is completing documentation at the end of a shift and discovers that a patient's deterioration was not recorded when it occurred. What should the nurse do?",
+"choices": [
+{"text": "Create an entry and falsely record an earlier time", "is_correct": false},
+{"text": "Make a late entry according to documentation policy, clearly identifying the actual time of entry and the relevant event time", "is_correct": true},
+{"text": "Ask another nurse to document the event as if they witnessed it", "is_correct": false},
+{"text": "Leave the event undocumented to avoid questions", "is_correct": false}
+],
+"rationale": "Late documentation should be completed transparently and in accordance with facility policy. The entry must not be backdated or presented as though it was made at the time of the event, and it should accurately describe the care and observations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana (DHIMS2)",
+"question_text": "A district reports a sudden decline in the number of skilled deliveries recorded in DHIMS2, but nearby facilities report no corresponding change in service activity. Which explanation should be investigated first?",
+"choices": [
+{"text": "The decline must represent a real reduction in deliveries", "is_correct": false},
+{"text": "Possible reporting gaps, incomplete submissions, changes in indicator definitions or data entry errors", "is_correct": true},
+{"text": "The district no longer requires maternal health services", "is_correct": false},
+{"text": "All facility registers should be destroyed and replaced", "is_correct": false}
+],
+"rationale": "A sudden change in reported figures may reflect a data quality problem rather than a true change in service delivery. The district should examine source records, reporting completeness, indicator definitions and submission practices before drawing conclusions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A nurse is asked to enter patient information into an unfamiliar online platform using a personal smartphone. The platform has no clear privacy information and requests access to contacts and personal files. What is the most appropriate response?",
+"choices": [
+{"text": "Upload all patient information because the platform is online", "is_correct": false},
+{"text": "Avoid entering patient information until the platform has been assessed and authorised through the appropriate facility processes", "is_correct": true},
+{"text": "Give the platform access to all personal files to prevent errors", "is_correct": false},
+{"text": "Ask patients to upload their records to the nurse's personal account", "is_correct": false}
+],
+"rationale": "Patient information should only be entered into platforms that have been appropriately assessed and authorised for healthcare use. Unclear privacy practices and unnecessary permissions create risks to confidentiality, data security and compliance with applicable requirements.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
