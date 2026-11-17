@@ -1,0 +1,842 @@
+{
+"courses": [
+{
+"course_code": "BHS-122-M",
+"course_title": "Behavioral Sciences",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Psychology",
+"Developmental Psychology",
+"Personality Theories",
+"Learning and Conditioning",
+"Memory and Forgetting",
+"Motivation and Emotion",
+"Social Psychology",
+"Psychological Disorders Basics",
+"Stress and Coping",
+"Behavioral Change Theories",
+"Sociology in Midwifery",
+"Maternal Mental Health"
+],
+"questions": [
+{
+"topic": "Introduction to Psychology",
+"question_text": "Which statement best defines psychology?",
+"choices": [
+{"text": "The scientific study of human behaviour and mental processes", "is_correct": true},
+{"text": "The study of physical diseases and their treatment", "is_correct": false},
+{"text": "The study of the structure and functions of the human body", "is_correct": false},
+{"text": "The study of medicines and their effects on the body", "is_correct": false}
+],
+"rationale": "Psychology is the scientific study of behaviour and mental processes, including thinking, emotions, learning and motivation. It helps midwives understand how psychological factors influence maternal health and healthcare decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Psychology",
+"question_text": "Which of the following is an example of an observable behaviour?",
+"choices": [
+{"text": "A pregnant woman feeling anxious", "is_correct": false},
+{"text": "A woman worrying about childbirth", "is_correct": false},
+{"text": "A woman crying during an antenatal consultation", "is_correct": true},
+{"text": "A woman privately thinking about her pregnancy", "is_correct": false}
+],
+"rationale": "Observable behaviour refers to an action that can be directly seen or recorded. Crying is observable, whereas anxiety, worry and private thoughts are internal psychological experiences.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "Which developmental period begins at birth and continues until approximately two years of age?",
+"choices": [
+{"text": "Adolescence", "is_correct": false},
+{"text": "Infancy", "is_correct": true},
+{"text": "Early adulthood", "is_correct": false},
+{"text": "Middle adulthood", "is_correct": false}
+],
+"rationale": "Infancy is the developmental period from birth to approximately two years. It is characterised by rapid physical growth, sensory development, attachment formation and the beginning of language development.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "According to Erik Erikson, the major psychosocial conflict during infancy is:",
+"choices": [
+{"text": "Identity versus role confusion", "is_correct": false},
+{"text": "Trust versus mistrust", "is_correct": true},
+{"text": "Industry versus inferiority", "is_correct": false},
+{"text": "Intimacy versus isolation", "is_correct": false}
+],
+"rationale": "Erikson identified trust versus mistrust as the central psychosocial conflict of infancy. Consistent feeding, protection, warmth and responsive caregiving help infants develop a sense of security and trust.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "Which developmental stage is commonly associated with identity formation and increasing independence from parents?",
+"choices": [
+{"text": "Infancy", "is_correct": false},
+{"text": "Early childhood", "is_correct": false},
+{"text": "Adolescence", "is_correct": true},
+{"text": "Late adulthood", "is_correct": false}
+],
+"rationale": "Adolescence is associated with identity formation, emotional changes, peer influence and increasing independence. These changes can affect reproductive health decisions and relationships.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Personality Theories",
+"question_text": "Which psychologist is most closely associated with the psychoanalytic theory of personality?",
+"choices": [
+{"text": "Sigmund Freud", "is_correct": true},
+{"text": "Ivan Pavlov", "is_correct": false},
+{"text": "B. F. Skinner", "is_correct": false},
+{"text": "Abraham Maslow", "is_correct": false}
+],
+"rationale": "Sigmund Freud developed psychoanalytic theory, which emphasises unconscious processes, early childhood experiences and internal conflicts. His theory influenced the development of later approaches to personality and psychological functioning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Personality Theories",
+"question_text": "In Freud's structural model of personality, which component operates according to the pleasure principle?",
+"choices": [
+{"text": "Ego", "is_correct": false},
+{"text": "Superego", "is_correct": false},
+{"text": "Id", "is_correct": true},
+{"text": "Conscience", "is_correct": false}
+],
+"rationale": "The id operates according to the pleasure principle and seeks immediate satisfaction of basic urges. The ego considers reality, while the superego represents internalised moral standards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "Which type of learning occurs when an individual associates two previously unrelated stimuli?",
+"choices": [
+{"text": "Classical conditioning", "is_correct": true},
+{"text": "Operant conditioning", "is_correct": false},
+{"text": "Observational learning", "is_correct": false},
+{"text": "Insight learning", "is_correct": false}
+],
+"rationale": "Classical conditioning involves learning through association between stimuli. It was demonstrated by Ivan Pavlov through experiments in which dogs learned to associate a neutral stimulus with food.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "Who is most closely associated with operant conditioning?",
+"choices": [
+{"text": "Jean Piaget", "is_correct": false},
+{"text": "B. F. Skinner", "is_correct": true},
+{"text": "Sigmund Freud", "is_correct": false},
+{"text": "Erik Erikson", "is_correct": false}
+],
+"rationale": "B. F. Skinner developed important principles of operant conditioning. This theory explains how consequences, including reinforcement and punishment, influence the likelihood of behaviour being repeated.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "Which type of memory temporarily holds and processes information needed for an ongoing task?",
+"choices": [
+{"text": "Sensory memory", "is_correct": false},
+{"text": "Working memory", "is_correct": true},
+{"text": "Long-term memory", "is_correct": false},
+{"text": "Procedural memory", "is_correct": false}
+],
+"rationale": "Working memory temporarily holds and manipulates information during activities such as reasoning, comprehension and decision-making. It has limited capacity and duration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "In Maslow's hierarchy of needs, which category includes food, water, oxygen and sleep?",
+"choices": [
+{"text": "Esteem needs", "is_correct": false},
+{"text": "Safety needs", "is_correct": false},
+{"text": "Physiological needs", "is_correct": true},
+{"text": "Self-actualisation needs", "is_correct": false}
+],
+"rationale": "Physiological needs are the basic biological requirements for survival, including food, water, oxygen and sleep. Maslow placed these needs at the foundation of his hierarchy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Social Psychology",
+"question_text": "In social psychology, an attitude is best described as:",
+"choices": [
+{"text": "A person's relatively consistent evaluation of an object, person or issue", "is_correct": true},
+{"text": "A person's permanent physical characteristics", "is_correct": false},
+{"text": "A medical diagnosis made by a health professional", "is_correct": false},
+{"text": "A person's ability to remember information", "is_correct": false}
+],
+"rationale": "An attitude is a learned tendency to evaluate an object, person, group or issue positively or negatively. Attitudes may influence beliefs, feelings and behaviour toward healthcare services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Social Psychology",
+"question_text": "Which term refers to the shared beliefs, values, customs and practices of a group of people?",
+"choices": [
+{"text": "Personality", "is_correct": false},
+{"text": "Culture", "is_correct": true},
+{"text": "Intelligence", "is_correct": false},
+{"text": "Conditioning", "is_correct": false}
+],
+"rationale": "Culture consists of shared beliefs, values, customs, knowledge and practices transmitted within a social group. It can influence pregnancy beliefs, childbirth practices, family roles and healthcare-seeking behaviour.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "Which of the following is a common feature of a depressive disorder?",
+"choices": [
+{"text": "Persistent low mood or loss of interest in activities", "is_correct": true},
+{"text": "Occasional happiness after receiving good news", "is_correct": false},
+{"text": "Temporary nervousness before an examination", "is_correct": false},
+{"text": "Normal tiredness after physical exercise", "is_correct": false}
+],
+"rationale": "Depressive disorders commonly involve persistent low mood, loss of interest or pleasure, and other emotional, cognitive and physical symptoms. The symptoms cause significant distress or impairment and should not be confused with ordinary temporary sadness.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "Which statement best describes psychological stress?",
+"choices": [
+{"text": "A response that occurs when perceived demands challenge an individual's coping resources", "is_correct": true},
+{"text": "A condition that occurs only when a person has a psychiatric disorder", "is_correct": false},
+{"text": "A physical illness caused exclusively by infectious organisms", "is_correct": false},
+{"text": "A permanent inability to respond to environmental changes", "is_correct": false}
+],
+"rationale": "Psychological stress occurs when an individual perceives that environmental or internal demands exceed available coping resources. Stress may affect emotional wellbeing, physical health and health-related behaviour.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "According to the Transtheoretical Model, which stage occurs when an individual has not yet considered changing a particular behaviour?",
+"choices": [
+{"text": "Preparation", "is_correct": false},
+{"text": "Action", "is_correct": false},
+{"text": "Precontemplation", "is_correct": true},
+{"text": "Maintenance", "is_correct": false}
+],
+"rationale": "Precontemplation is the stage in which an individual is not intending to make a specific behavioural change in the foreseeable future. Health education at this stage should raise awareness and explore the person's beliefs without using judgment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "Which statement best describes postpartum depression?",
+"choices": [
+{"text": "A persistent depressive condition that may develop after childbirth", "is_correct": true},
+{"text": "A normal brief emotional reaction that always resolves within one day", "is_correct": false},
+{"text": "A condition characterised only by physical pain after delivery", "is_correct": false},
+{"text": "A condition that affects only women who have previously had psychiatric illness", "is_correct": false}
+],
+"rationale": "Postpartum depression is a depressive disorder that can develop after childbirth and may involve persistent sadness, loss of interest, guilt, fatigue and difficulty bonding with the baby. It requires appropriate assessment and support rather than being dismissed as ordinary adjustment to motherhood.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A midwife observes that a pregnant adolescent is strongly influenced by her friends when making decisions about antenatal attendance. Which developmental concept best explains this behaviour?",
+"choices": [
+{"text": "Peer influence during adolescence", "is_correct": true},
+{"text": "Loss of long-term memory", "is_correct": false},
+{"text": "Regression to infancy", "is_correct": false},
+{"text": "Sensory adaptation", "is_correct": false}
+],
+"rationale": "Peer influence is an important feature of adolescent social development. A midwife can use supportive counselling to help the adolescent evaluate peer advice and make informed decisions about antenatal care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A mother brings her six-month-old infant to a child welfare clinic. The infant cries when the mother leaves but becomes calm when she returns. Which developmental concept does this behaviour demonstrate?",
+"choices": [
+{"text": "Attachment", "is_correct": true},
+{"text": "Identity formation", "is_correct": false},
+{"text": "Moral reasoning", "is_correct": false},
+{"text": "Role confusion", "is_correct": false}
+],
+"rationale": "Attachment refers to the emotional bond that develops between an infant and a primary caregiver. The infant's response to separation and reunion is consistent with the development of attachment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A pregnant woman is worried about becoming a mother for the first time. According to Erikson's theory, which developmental conflict is most relevant to the establishment of close adult relationships?",
+"choices": [
+{"text": "Trust versus mistrust", "is_correct": false},
+{"text": "Intimacy versus isolation", "is_correct": true},
+{"text": "Industry versus inferiority", "is_correct": false},
+{"text": "Initiative versus guilt", "is_correct": false}
+],
+"rationale": "Intimacy versus isolation is Erikson's psychosocial conflict associated with early adulthood. Developing close and supportive relationships may help adults manage major life transitions, including pregnancy and parenthood.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Personality Theories",
+"question_text": "A pregnant woman repeatedly expresses guilt because she believes that her thoughts about pregnancy are morally wrong. According to Freud's structural model, which personality component is most associated with internalised moral standards?",
+"choices": [
+{"text": "Id", "is_correct": false},
+{"text": "Ego", "is_correct": false},
+{"text": "Superego", "is_correct": true},
+{"text": "Unconscious memory", "is_correct": false}
+],
+"rationale": "The superego represents internalised moral values, ideals and standards. In Freud's model, excessive conflict between the superego and other personality components may contribute to feelings of guilt.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Personality Theories",
+"question_text": "A midwife recognises that one pregnant woman is sociable and talkative, while another prefers quiet individual discussions. What is the most appropriate approach?",
+"choices": [
+{"text": "Use the same communication method with both women", "is_correct": false},
+{"text": "Adapt communication to their individual preferences", "is_correct": true},
+{"text": "Assume that the quiet woman is psychologically unwell", "is_correct": false},
+{"text": "Avoid communicating with women who are less talkative", "is_correct": false}
+],
+"rationale": "Personality differences influence how individuals communicate and interact with others. Adapting communication while maintaining professional standards supports individualised and respectful midwifery care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "A midwife praises a pregnant woman for consistently attending antenatal appointments. The woman becomes more likely to continue attending. Which learning principle is demonstrated?",
+"choices": [
+{"text": "Positive reinforcement", "is_correct": true},
+{"text": "Negative reinforcement", "is_correct": false},
+{"text": "Positive punishment", "is_correct": false},
+{"text": "Extinction", "is_correct": false}
+],
+"rationale": "Positive reinforcement occurs when a desirable consequence is introduced after a behaviour, increasing the likelihood that the behaviour will be repeated. Encouragement and appropriate praise can reinforce positive health behaviours.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "A woman becomes fearful whenever she enters a delivery room because she previously experienced severe pain during childbirth. Which learning process may explain this response?",
+"choices": [
+{"text": "Classical conditioning", "is_correct": true},
+{"text": "Operant conditioning", "is_correct": false},
+{"text": "Observational learning", "is_correct": false},
+{"text": "Positive reinforcement", "is_correct": false}
+],
+"rationale": "Classical conditioning can occur when a previously neutral stimulus becomes associated with an unpleasant experience. The delivery room may therefore trigger a fear response because of its association with previous childbirth pain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "A first-time mother learns correct breastfeeding positioning by watching a midwife demonstrate the technique. Which learning process is involved?",
+"choices": [
+{"text": "Observational learning", "is_correct": true},
+{"text": "Classical conditioning", "is_correct": false},
+{"text": "Trial-and-error punishment", "is_correct": false},
+{"text": "Spontaneous recovery", "is_correct": false}
+],
+"rationale": "Observational learning occurs when an individual acquires behaviour by watching and imitating another person. Demonstration is useful in maternal education because mothers can observe and practise appropriate techniques.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "A midwife explains danger signs in pregnancy to a woman and asks her to repeat the information in her own words. Which memory-related strategy is being used?",
+"choices": [
+{"text": "Retrieval practice", "is_correct": true},
+{"text": "Sensory adaptation", "is_correct": false},
+{"text": "Memory suppression", "is_correct": false},
+{"text": "Classical conditioning", "is_correct": false}
+],
+"rationale": "Retrieval practice involves recalling previously learned information without simply rereading it. Asking the woman to explain the danger signs helps the midwife assess understanding and identify information that needs clarification.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "A pregnant woman forgets the instructions given during an antenatal health talk because several people were speaking at the same time. Which factor most likely contributed to the difficulty?",
+"choices": [
+{"text": "Interference with attention and information encoding", "is_correct": true},
+{"text": "Improved long-term memory storage", "is_correct": false},
+{"text": "Increased procedural memory", "is_correct": false},
+{"text": "Permanent loss of intelligence", "is_correct": false}
+],
+"rationale": "Attention is important for encoding information into memory. Distractions and competing conversations can reduce the amount of information a person processes and later recalls.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "A pregnant woman attends antenatal care regularly because she wants to protect her own health and that of her unborn baby. Which type of motivation is most clearly demonstrated?",
+"choices": [
+{"text": "Intrinsic motivation", "is_correct": true},
+{"text": "Extrinsic motivation", "is_correct": false},
+{"text": "Negative punishment", "is_correct": false},
+{"text": "Emotional suppression", "is_correct": false}
+],
+"rationale": "Intrinsic motivation arises from personal values, interests or internal satisfaction rather than external rewards. The woman's desire to protect her health and her baby's wellbeing provides an internal reason for attending care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "A woman becomes visibly frightened after being told that her pregnancy may be high risk. What should the midwife do first to address her emotional response?",
+"choices": [
+{"text": "Tell her that fear is unnecessary", "is_correct": false},
+{"text": "Acknowledge her feelings and invite her to express her concerns", "is_correct": true},
+{"text": "Avoid discussing the pregnancy further", "is_correct": false},
+{"text": "Ask her relatives to make all decisions for her", "is_correct": false}
+],
+"rationale": "Acknowledging emotions and providing an opportunity for expression are important components of supportive communication. The midwife should then explain the clinical situation clearly and discuss appropriate care while respecting the woman's autonomy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A pregnant woman refuses a recommended hospital delivery because members of her community believe that childbirth should take place at home. Which social factor is most likely influencing her decision?",
+"choices": [
+{"text": "Cultural beliefs and social norms", "is_correct": true},
+{"text": "Sensory memory", "is_correct": false},
+{"text": "Genetic inheritance", "is_correct": false},
+{"text": "Operant extinction", "is_correct": false}
+],
+"rationale": "Cultural beliefs and social norms influence what members of a community consider acceptable behaviour. The midwife should explore the woman's concerns respectfully and explain the benefits of skilled birth attendance without insulting her community.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A woman in a Ghanaian extended family is accompanied to antenatal care by her mother-in-law, who answers questions on her behalf. What should the midwife do?",
+"choices": [
+{"text": "Direct all questions to the mother-in-law", "is_correct": false},
+{"text": "Politely include the mother-in-law while ensuring the woman can express her own views", "is_correct": true},
+{"text": "Refuse to provide care because a relative is present", "is_correct": false},
+{"text": "Allow the mother-in-law to provide consent for every procedure", "is_correct": false}
+],
+"rationale": "Extended family members may play important supportive roles in Ghanaian family structures, but the pregnant woman remains the central participant in decisions about her care. The midwife should respect family involvement while protecting the woman's autonomy, privacy and right to informed consent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "During a community health education session, several pregnant women begin adopting a recommended nutrition practice after observing respected women in their community using it. Which concept best explains this influence?",
+"choices": [
+{"text": "Social influence and modelling", "is_correct": true},
+{"text": "Memory decay", "is_correct": false},
+{"text": "Psychological regression", "is_correct": false},
+{"text": "Classical extinction", "is_correct": false}
+],
+"rationale": "Social influence occurs when individuals' attitudes or behaviours are affected by other people. Modelling by respected community members can encourage the adoption of beneficial health practices.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A pregnant woman reports persistent sadness, loss of interest in activities and difficulty sleeping for several weeks. What is the most appropriate response by the midwife?",
+"choices": [
+{"text": "Assume that these symptoms are a normal part of pregnancy", "is_correct": false},
+{"text": "Assess her mental health and arrange appropriate clinical evaluation", "is_correct": true},
+{"text": "Tell her to avoid discussing her feelings", "is_correct": false},
+{"text": "Recommend that she stop attending antenatal care", "is_correct": false}
+],
+"rationale": "Persistent sadness, loss of interest and sleep disturbance may indicate depression and require further assessment. The midwife should explore symptom duration, severity, functioning and safety, and facilitate appropriate referral or treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A woman attending a postnatal clinic reports hearing voices when nobody is present and believes that people are plotting to harm her. Which psychological symptom is most clearly indicated?",
+"choices": [
+{"text": "Hallucination", "is_correct": true},
+{"text": "Ordinary forgetfulness", "is_correct": false},
+{"text": "Positive reinforcement", "is_correct": false},
+{"text": "Normal separation anxiety", "is_correct": false}
+],
+"rationale": "A hallucination is a sensory perception that occurs without an external stimulus, such as hearing voices that are not present. The belief that others are plotting harm may represent a delusion and requires urgent mental health assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A pregnant woman feels overwhelmed by financial difficulties and pregnancy-related responsibilities. Which response represents problem-focused coping?",
+"choices": [
+{"text": "Identifying available financial support and developing a practical plan", "is_correct": true},
+{"text": "Avoiding all discussions about the difficulties", "is_correct": false},
+{"text": "Blaming herself continuously", "is_correct": false},
+{"text": "Using alcohol to escape from the situation", "is_correct": false}
+],
+"rationale": "Problem-focused coping involves taking practical steps to address the source of stress. Identifying resources and developing a plan may help reduce the financial and practical pressures affecting the woman.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A woman becomes anxious during labour. The midwife guides her through slow breathing and relaxation exercises. Which coping approach is being used?",
+"choices": [
+{"text": "Emotion-focused coping", "is_correct": true},
+{"text": "Avoidance of professional responsibility", "is_correct": false},
+{"text": "Negative punishment", "is_correct": false},
+{"text": "Cognitive impairment", "is_correct": false}
+],
+"rationale": "Emotion-focused coping aims to manage the emotional response to a stressful situation. Breathing and relaxation techniques can help reduce anxiety and improve the woman's ability to cope during labour.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A pregnant woman says she intends to stop smoking and has started planning how to avoid situations that trigger smoking. According to the Transtheoretical Model, which stage is she most likely experiencing?",
+"choices": [
+{"text": "Precontemplation", "is_correct": false},
+{"text": "Contemplation", "is_correct": false},
+{"text": "Preparation", "is_correct": true},
+{"text": "Maintenance", "is_correct": false}
+],
+"rationale": "The preparation stage involves a clear intention to change and taking initial steps towards the desired behaviour. Planning how to avoid smoking triggers indicates readiness to begin the change process.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A midwife wants to improve exclusive breastfeeding practices among mothers in a community. Which approach is most consistent with the Health Belief Model?",
+"choices": [
+{"text": "Explain the benefits of exclusive breastfeeding and address perceived barriers", "is_correct": true},
+{"text": "Assume that all mothers have identical beliefs", "is_correct": false},
+{"text": "Use punishment for mothers who do not breastfeed exclusively", "is_correct": false},
+{"text": "Provide information without considering mothers' perceptions", "is_correct": false}
+],
+"rationale": "The Health Belief Model considers perceived susceptibility, severity, benefits, barriers, cues to action and self-efficacy. Addressing perceived barriers while explaining benefits can support informed behavioural change.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sociology in Midwifery",
+"question_text": "A woman delays seeking skilled maternity care because her family first consults a traditional birth attendant. Which sociological factor should the midwife consider when planning health education?",
+"choices": [
+{"text": "The influence of family and community structures on healthcare decisions", "is_correct": true},
+{"text": "The woman's blood group alone", "is_correct": false},
+{"text": "The woman's visual acuity", "is_correct": false},
+{"text": "The number of chromosomes in her cells", "is_correct": false}
+],
+"rationale": "Family structures, community authority and traditional practices can influence healthcare-seeking behaviour. Understanding these influences helps midwives design culturally respectful education that encourages timely access to skilled maternity services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sociology in Midwifery",
+"question_text": "A pregnant woman from a rural community cannot attend antenatal care regularly because transport costs are high. Which social determinant of health is most directly affecting her access to care?",
+"choices": [
+{"text": "Economic circumstances", "is_correct": true},
+{"text": "Personality type", "is_correct": false},
+{"text": "Short-term memory", "is_correct": false},
+{"text": "Emotional intelligence", "is_correct": false}
+],
+"rationale": "Economic circumstances influence the ability to afford transport, healthcare-related expenses and other necessities. Midwives should recognise these barriers and help women identify appropriate community and health-system support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A mother reports feeling tearful and emotionally sensitive three days after delivery but remains able to care for her baby and has no thoughts of self-harm. Which condition is most consistent with this presentation?",
+"choices": [
+{"text": "Postpartum blues", "is_correct": true},
+{"text": "Postpartum psychosis", "is_correct": false},
+{"text": "Schizophrenia", "is_correct": false},
+{"text": "Bipolar mania", "is_correct": false}
+],
+"rationale": "Postpartum blues commonly involve mild mood changes, tearfulness and emotional sensitivity during the first days after childbirth. Symptoms are generally temporary, but persistent, severe or worsening symptoms require assessment for a more serious condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A postnatal mother tells the midwife that she feels unable to cope and has been thinking about ending her life. What should the midwife do first?",
+"choices": [
+{"text": "Reassure her that motherhood is difficult for everyone", "is_correct": false},
+{"text": "Immediately assess her safety, ensure she is not left alone and arrange urgent mental health care", "is_correct": true},
+{"text": "Advise her to return home and rest", "is_correct": false},
+{"text": "Ask her to discuss the matter only with family members", "is_correct": false}
+],
+"rationale": "Suicidal thoughts indicate a potentially life-threatening mental health emergency. The midwife must assess immediate risk, maintain safety, avoid leaving the woman alone when risk is present and arrange urgent clinical and mental health intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A woman with a history of depression becomes pregnant and is concerned about her mental health. Which action by the midwife is most appropriate?",
+"choices": [
+{"text": "Advise her to discontinue all prescribed psychiatric medication immediately", "is_correct": false},
+{"text": "Explore her mental health history and coordinate appropriate antenatal mental health care", "is_correct": true},
+{"text": "Tell her that depression cannot occur during pregnancy", "is_correct": false},
+{"text": "Avoid asking about her emotional wellbeing", "is_correct": false}
+],
+"rationale": "A history of depression may increase the risk of mental health difficulties during pregnancy and after childbirth. The midwife should assess current symptoms and coordinate care with appropriate clinicians rather than independently stopping or changing prescribed medication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A postnatal woman suddenly becomes extremely agitated, expresses bizarre beliefs about her newborn and reports hearing voices commanding her to harm the baby. What is the priority action?",
+"choices": [
+{"text": "Encourage her to sleep and review her at the next routine visit", "is_correct": false},
+{"text": "Ensure the immediate safety of the mother and baby and arrange emergency psychiatric assessment", "is_correct": true},
+{"text": "Tell the family to manage the situation using traditional remedies only", "is_correct": false},
+{"text": "Allow her to remain alone with the baby to strengthen bonding", "is_correct": false}
+],
+"rationale": "These symptoms suggest possible postpartum psychosis, a psychiatric emergency associated with serious risks to the mother and infant. Immediate safety measures and emergency specialist assessment are essential; the woman should not be left alone with the baby while the risk is being assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A pregnant woman says she is afraid to disclose her emotional difficulties because she believes health workers will judge her. Which action is most likely to encourage her to seek help?",
+"choices": [
+{"text": "Use non-judgmental communication and explain confidentiality and its limits", "is_correct": true},
+{"text": "Tell her that emotional problems are a sign of personal weakness", "is_correct": false},
+{"text": "Discuss her concerns publicly with other patients", "is_correct": false},
+{"text": "Ignore her concerns and continue the physical examination", "is_correct": false}
+],
+"rationale": "Non-judgmental communication helps reduce stigma and encourages honest disclosure of mental health concerns. Explaining confidentiality and its limits supports trust while ensuring that necessary safety actions can be taken when there is serious risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A pregnant woman believes that eating certain nutritious foods will cause her baby to become unusually large because this is a widely held belief in her community. What should the midwife do?",
+"choices": [
+{"text": "Mock the belief to discourage the practice", "is_correct": false},
+{"text": "Explore the belief respectfully and provide accurate nutrition education", "is_correct": true},
+{"text": "Accept the belief without discussing its health implications", "is_correct": false},
+{"text": "Refuse to provide further antenatal counselling", "is_correct": false}
+],
+"rationale": "Cultural beliefs can influence dietary practices during pregnancy. The midwife should use culturally sensitive communication to understand the belief and provide evidence-based information about balanced maternal nutrition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A midwife working in a busy maternity unit notices that she is becoming irritable, emotionally exhausted and less interested in her work. Which condition should she consider as a possible explanation?",
+"choices": [
+{"text": "Occupational burnout", "is_correct": true},
+{"text": "Classical conditioning", "is_correct": false},
+{"text": "Normal memory consolidation", "is_correct": false},
+{"text": "Identity achievement", "is_correct": false}
+],
+"rationale": "Burnout is an occupational phenomenon associated with chronic workplace stress that has not been successfully managed. It may involve emotional exhaustion, increased mental distance from work and reduced professional effectiveness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A pregnant woman aged 16 understands the information about antenatal care but struggles to consider the long-term consequences of refusing skilled delivery care. Which developmental consideration is most relevant?",
+"choices": [
+{"text": "Adolescent development may involve ongoing maturation of decision-making abilities", "is_correct": true},
+{"text": "All adolescents are incapable of understanding health information", "is_correct": false},
+{"text": "Adolescence is characterised by complete absence of emotional development", "is_correct": false},
+{"text": "Adolescents cannot develop independent opinions", "is_correct": false}
+],
+"rationale": "Adolescence is a period of continuing cognitive, emotional and social development, including maturation of planning and decision-making abilities. The midwife should provide clear information, assess understanding and support the adolescent's participation in decisions in accordance with applicable consent and safeguarding requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A pregnant woman reports repeated episodes of sudden intense fear accompanied by palpitations, sweating and breathlessness. The episodes occur unexpectedly and make her afraid of leaving home. Which condition should the midwife consider?",
+"choices": [
+{"text": "Panic disorder", "is_correct": true},
+{"text": "Dementia", "is_correct": false},
+{"text": "Specific learning disorder", "is_correct": false},
+{"text": "Postpartum blues", "is_correct": false}
+],
+"rationale": "Panic disorder involves recurrent unexpected panic attacks and persistent concern or behavioural changes related to further attacks. Physical symptoms must also be assessed clinically because some medical conditions can produce similar symptoms during pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A woman has attended antenatal care regularly and has maintained a healthy dietary change for eight months. According to the Transtheoretical Model, which stage best describes her current behaviour?",
+"choices": [
+{"text": "Precontemplation", "is_correct": false},
+{"text": "Contemplation", "is_correct": false},
+{"text": "Action", "is_correct": false},
+{"text": "Maintenance", "is_correct": true}
+],
+"rationale": "The maintenance stage involves sustaining a behavioural change over time and working to prevent relapse. Continuing a healthy dietary practice for several months is consistent with this stage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A woman refuses a blood transfusion because of her religious beliefs. She is conscious, understands the explanation and has decision-making capacity. What should the midwife do?",
+"choices": [
+{"text": "Force the transfusion because the midwife believes it is beneficial", "is_correct": false},
+{"text": "Respect her informed decision, communicate the clinical risks and escalate care appropriately", "is_correct": true},
+{"text": "Ask her relatives to override her decision automatically", "is_correct": false},
+{"text": "Discharge her immediately without further discussion", "is_correct": false}
+],
+"rationale": "Respect for autonomy requires healthcare professionals to take an informed decision made by an adult with decision-making capacity seriously. The midwife should explain the risks, explore acceptable alternatives, document the discussion and involve the appropriate clinical team.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A mother who delivered two weeks ago reports persistent hopelessness, severe guilt and inability to care for herself. She has also stopped eating regularly. What is the most appropriate next step?",
+"choices": [
+{"text": "Advise her that these feelings are always normal after childbirth", "is_correct": false},
+{"text": "Arrange prompt mental health assessment and evaluate her immediate safety", "is_correct": true},
+{"text": "Tell her to avoid contact with health workers", "is_correct": false},
+{"text": "Wait until the routine six-week postnatal visit before taking action", "is_correct": false}
+],
+"rationale": "Persistent hopelessness, severe guilt and impaired daily functioning may indicate significant postpartum depression or another serious mental health condition. Prompt assessment is necessary, including evaluation for suicidal thoughts, self-neglect and risks to the infant.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A woman in the postnatal period reports unwanted, distressing thoughts that she might accidentally harm her baby. She recognises that the thoughts are unwanted, has no intention of acting on them and is frightened by their presence. Which condition should the midwife consider?",
+"choices": [
+{"text": "Postpartum obsessive-compulsive symptoms", "is_correct": true},
+{"text": "Postpartum psychosis in every case", "is_correct": false},
+{"text": "Normal physical recovery after delivery", "is_correct": false},
+{"text": "Mania without further assessment", "is_correct": false}
+],
+"rationale": "Postpartum obsessive-compulsive symptoms may involve intrusive, unwanted thoughts that cause significant distress, often with preserved insight and no desire to act on them. The midwife should assess the nature of the thoughts, intent, associated compulsions and safety rather than assuming that intrusive thoughts automatically indicate psychosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A midwife is counselling a pregnant woman who is in late adulthood and is reflecting on her life experiences. According to Erikson, which psychosocial conflict is most associated with this stage?",
+"choices": [
+{"text": "Trust versus mistrust", "is_correct": false},
+{"text": "Identity versus role confusion", "is_correct": false},
+{"text": "Generativity versus stagnation", "is_correct": false},
+{"text": "Integrity versus despair", "is_correct": true}
+],
+"rationale": "Erikson associated late adulthood with integrity versus despair. Individuals may reflect on their lives with acceptance and a sense of meaning or experience regret and dissatisfaction.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sociology in Midwifery",
+"question_text": "A pregnant woman living in a household with limited income prioritises feeding other family members and eats very little herself. Which sociological concept is most relevant to understanding this situation?",
+"choices": [
+{"text": "Gender and household power relations", "is_correct": true},
+{"text": "Classical conditioning", "is_correct": false},
+{"text": "Sensory memory", "is_correct": false},
+{"text": "Personality inheritance", "is_correct": false}
+],
+"rationale": "Gender roles and household power relations can influence how food, money and other resources are distributed within families. The midwife should assess the woman's nutritional needs and explore practical support without making assumptions about her household.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A pregnant woman reports excessive worry about several aspects of her life on most days for many months. She experiences muscle tension, restlessness and difficulty concentrating. Which disorder should the midwife consider?",
+"choices": [
+{"text": "Generalised anxiety disorder", "is_correct": true},
+{"text": "Dissociative amnesia", "is_correct": false},
+{"text": "Schizophrenia", "is_correct": false},
+{"text": "Postpartum blues", "is_correct": false}
+],
+"rationale": "Generalised anxiety disorder is characterised by excessive, difficult-to-control worry across several areas of life, often accompanied by physical and cognitive symptoms. A clinical assessment is required to establish the diagnosis and exclude medical causes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A woman who delivered one week ago is confused, severely agitated and convinced that her baby has been replaced by an impostor. She has not slept for several nights. What is the most appropriate interpretation and response?",
+"choices": [
+{"text": "This is ordinary postpartum blues and requires reassurance only", "is_correct": false},
+{"text": "This may be postpartum psychosis and requires emergency assessment", "is_correct": true},
+{"text": "This is a normal response to breastfeeding difficulties", "is_correct": false},
+{"text": "This is simply a personality difference", "is_correct": false}
+],
+"rationale": "Severe confusion, delusional beliefs, agitation and profound sleep disturbance after childbirth are concerning for postpartum psychosis. This is an emergency requiring immediate safety measures and urgent specialist assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A six-year-old child accompanying his pregnant mother repeatedly asks whether the new baby will take his place in the family. The mother reports that he has become unusually demanding. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The child may be experiencing insecurity and difficulty adjusting to the expected family change", "is_correct": true},
+{"text": "The child has necessarily developed a severe psychiatric disorder", "is_correct": false},
+{"text": "The child's behaviour proves that he does not love his mother", "is_correct": false},
+{"text": "The behaviour indicates permanent loss of cognitive ability", "is_correct": false}
+],
+"rationale": "A new baby can create feelings of insecurity, jealousy or uncertainty in an older child. Reassurance, age-appropriate explanations and continued parental attention can support adjustment to the changing family structure.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "A midwife repeatedly uses frightening language when discussing childbirth complications. Pregnant women subsequently avoid asking questions during antenatal education sessions. Which explanation best accounts for this behaviour?",
+"choices": [
+{"text": "The midwife's communication may have created a negative association with participation", "is_correct": true},
+{"text": "The women have automatically lost their long-term memory", "is_correct": false},
+{"text": "The women have developed a permanent personality disorder", "is_correct": false},
+{"text": "The women are demonstrating positive reinforcement", "is_correct": false}
+],
+"rationale": "Repeated frightening experiences may create negative associations with antenatal education and reduce participation. A supportive, non-threatening teaching approach is more likely to encourage questions and improve learning.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "During an antenatal session, a midwife gives a woman twenty different instructions at once. The woman later recalls only a few of them. Which explanation best accounts for the poor recall?",
+"choices": [
+{"text": "Information overload may have exceeded the capacity of working memory", "is_correct": true},
+{"text": "The woman has necessarily developed dementia", "is_correct": false},
+{"text": "The woman has lost all sensory memory", "is_correct": false},
+{"text": "The woman has developed a personality disorder", "is_correct": false}
+],
+"rationale": "Working memory has limited capacity, and presenting too much information at once can reduce effective processing and recall. The midwife should break information into manageable sections, use clear language and check understanding.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "A pregnant woman attends antenatal care only when her husband threatens to withdraw financial support. She does not believe that the visits are personally beneficial. Which interpretation is most appropriate?",
+"choices": [
+{"text": "Her behaviour is influenced mainly by external pressure rather than internal motivation", "is_correct": true},
+{"text": "She has developed intrinsic motivation", "is_correct": false},
+{"text": "She is demonstrating self-actualisation", "is_correct": false},
+{"text": "Her behaviour proves that she has a memory disorder", "is_correct": false}
+],
+"rationale": "External pressure is a form of extrinsic influence and may produce compliance without genuine personal commitment. The midwife should explore the woman's beliefs, explain the benefits of antenatal care and support her informed participation in decisions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A community believes that a woman who experiences prolonged labour has been punished for disobeying traditional customs. Some family members therefore delay taking her to hospital. Which factor most directly contributes to this delay?",
+"choices": [
+{"text": "A cultural attribution of illness and childbirth complications", "is_correct": true},
+{"text": "The woman's procedural memory", "is_correct": false},
+{"text": "The husband's sensory adaptation", "is_correct": false},
+{"text": "The woman's level of formal education alone", "is_correct": false}
+],
+"rationale": "Cultural explanations of illness and complications can influence how families interpret symptoms and decide when to seek care. The midwife should address the belief respectfully while emphasising the danger of delaying skilled obstetric assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A pregnant woman reports hearing voices and behaving unusually. Her family says she has been affected by a spiritual problem and requests that she be taken only to a traditional healer. What is the most appropriate response by the midwife?",
+"choices": [
+{"text": "Dismiss the family's beliefs and refuse further communication", "is_correct": false},
+{"text": "Respectfully explore the family's concerns while arranging appropriate clinical and mental health assessment", "is_correct": true},
+{"text": "Assume that the symptoms are not medically important", "is_correct": false},
+{"text": "Allow the family to delay assessment until traditional treatment is completed", "is_correct": false}
+],
+"rationale": "Culturally sensitive care requires understanding the family's beliefs without neglecting potentially serious symptoms. Hallucinations and behavioural changes require clinical assessment to identify possible psychiatric, neurological, medical or substance-related causes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A midwife caring for several complicated deliveries begins making frequent documentation errors, becomes emotionally detached from patients and feels exhausted. Which interpretation best explains the situation?",
+"choices": [
+{"text": "Chronic occupational stress may be contributing to burnout and impaired work performance", "is_correct": true},
+{"text": "The midwife is demonstrating successful stress adaptation", "is_correct": false},
+{"text": "The midwife has necessarily developed a developmental disorder", "is_correct": false},
+{"text": "The situation is unrelated to the working environment", "is_correct": false}
+],
+"rationale": "Chronic workplace stress can contribute to burnout, emotional detachment and reduced professional effectiveness. The situation requires appropriate support, workload review and attention to patient safety and staff wellbeing.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A pregnant woman understands the benefits of skilled delivery but believes that complications are unlikely to happen to her. She therefore sees little reason to prepare for hospital delivery. Which Health Belief Model construct is most directly involved?",
+"choices": [
+{"text": "Low perceived susceptibility", "is_correct": true},
+{"text": "High perceived severity", "is_correct": false},
+{"text": "High perceived barriers", "is_correct": false},
+{"text": "High self-efficacy", "is_correct": false}
+],
+"rationale": "Perceived susceptibility refers to an individual's belief about the likelihood of experiencing a health problem. If the woman believes that complications cannot affect her, she may be less motivated to prepare for skilled delivery despite understanding its benefits.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sociology in Midwifery",
+"question_text": "A pregnant woman has no independent income and her husband refuses to allow her to attend antenatal care. She is also unable to arrange transport without his permission. Which sociological interpretation is most appropriate?",
+"choices": [
+{"text": "Gendered power relations and economic dependence are restricting her access to healthcare", "is_correct": true},
+{"text": "Her behaviour is explained only by classical conditioning", "is_correct": false},
+{"text": "Her situation is caused by poor sensory memory", "is_correct": false},
+{"text": "The problem is evidence of an inherited personality trait", "is_correct": false}
+],
+"rationale": "Gendered power relations and economic dependence can limit women's control over healthcare decisions and access to services. The midwife should assess the woman's safety, provide confidential support and explore appropriate ways to facilitate access to care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A postnatal mother has persistent low mood, loss of interest, poor appetite and difficulty bonding with her baby for several weeks. Her relatives insist that she is simply ungrateful because the baby is healthy. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The symptoms may indicate postpartum depression and require assessment", "is_correct": true},
+{"text": "The symptoms are sufficient evidence that she does not want the baby", "is_correct": false},
+{"text": "The symptoms are necessarily normal postpartum blues", "is_correct": false},
+{"text": "The symptoms indicate that she should be excluded from postnatal care", "is_correct": false}
+],
+"rationale": "Persistent low mood, loss of interest, appetite changes and impaired bonding may indicate postpartum depression. A healthy infant does not exclude maternal depression, and the mother should receive appropriate assessment, support and treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Maternal Mental Health",
+"question_text": "A woman who recently delivered reports severe headache, confusion and unusual behaviour. Her family believes that she is experiencing a spiritual attack. Which action should the midwife prioritise?",
+"choices": [
+{"text": "Assume that the behaviour is entirely psychological and arrange routine counselling", "is_correct": false},
+{"text": "Arrange urgent medical assessment to exclude physical and neurological causes while maintaining safety", "is_correct": true},
+{"text": "Advise the family to manage the situation without involving health professionals", "is_correct": false},
+{"text": "Wait several weeks to determine whether the symptoms resolve", "is_correct": false}
+],
+"rationale": "Confusion and severe headache after childbirth may indicate serious medical or neurological conditions, including hypertensive complications, as well as possible mental health problems. Urgent assessment is essential, and the midwife should not assume that unusual behaviour has a purely psychological or spiritual cause.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
