@@ -1,0 +1,887 @@
+{
+"courses": [
+{
+"course_code": "ADJ-111",
+"course_title": "Professional Adjustment in Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"History of Nursing in Ghana",
+"N&MC Regulations and Scope of Practice",
+"Professional Ethics and Code of Conduct",
+"Patient Rights and Advocacy",
+"Legal Issues in Nursing",
+"Professional Boundaries",
+"Nursing as a Profession",
+"Communication and Documentation Standards",
+"Health Care Delivery System in Ghana"
+],
+"questions": [
+{
+"topic": "History of Nursing in Ghana",
+"question_text": "Which of the following best describes the historical contribution of missionary organisations to the development of nursing in Ghana?",
+"choices": [
+{"text": "They established some of the earliest organised healthcare facilities and contributed to nursing education.", "is_correct": true},
+{"text": "They introduced the Nursing and Midwifery Council of Ghana in 2013.", "is_correct": false},
+{"text": "They were responsible for establishing the National Health Insurance Authority.", "is_correct": false},
+{"text": "They introduced compulsory university education for all nurses.", "is_correct": false}
+],
+"rationale": "Missionary organisations played an important role in the early development of organised healthcare in Ghana. Their hospitals and healthcare activities contributed to the development of formal nursing services and training.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Nursing in Ghana",
+"question_text": "Which institution is responsible for regulating nursing and midwifery education and professional practice in Ghana?",
+"choices": [
+{"text": "Ghana Health Service", "is_correct": false},
+{"text": "Ministry of Education", "is_correct": false},
+{"text": "Nursing and Midwifery Council of Ghana", "is_correct": true},
+{"text": "National Health Insurance Authority", "is_correct": false}
+],
+"rationale": "The Nursing and Midwifery Council of Ghana is the statutory regulatory body responsible for maintaining standards in nursing and midwifery education and practice. Its mandate includes registration, licensing, accreditation-related responsibilities and professional discipline.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Nursing in Ghana",
+"question_text": "The Nursing and Midwifery Council of Ghana celebrated its 50th anniversary in which year?",
+"choices": [
+{"text": "1960", "is_correct": false},
+{"text": "1970", "is_correct": true},
+{"text": "1980", "is_correct": false},
+{"text": "1990", "is_correct": false}
+],
+"rationale": "The Council celebrated its 50th anniversary in 2020, marking five decades of its regulatory history. The anniversary was also used to launch a historical textbook on nursing and midwifery in Ghana.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Nursing in Ghana",
+"question_text": "A nursing student is asked to explain how nursing education in Ghana has developed over time. Which statement provides the most appropriate explanation?",
+"choices": [
+{"text": "Nursing education has remained exclusively hospital-based since its introduction.", "is_correct": false},
+{"text": "Nursing education has evolved from earlier forms of practical training to structured programmes in recognised educational institutions.", "is_correct": true},
+{"text": "Nursing education developed only after the establishment of the NHIS.", "is_correct": false},
+{"text": "Nursing education has always been regulated by the Ghana Health Service.", "is_correct": false}
+],
+"rationale": "Nursing education in Ghana has evolved from early hospital-based training into structured professional programmes offered by accredited institutions. This development has strengthened theoretical knowledge, clinical competence and professional accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "History of Nursing in Ghana",
+"question_text": "Which historical development most directly contributed to the establishment of professional regulation in nursing and midwifery in Ghana?",
+"choices": [
+{"text": "The introduction of community health insurance schemes", "is_correct": false},
+{"text": "The establishment of professional regulatory legislation and the Nursing and Midwifery Council", "is_correct": true},
+{"text": "The introduction of private pharmacies", "is_correct": false},
+{"text": "The establishment of district assemblies", "is_correct": false}
+],
+"rationale": "Professional regulation developed through legislation establishing the regulatory framework for nursing and midwifery. The Council subsequently assumed responsibility for professional registration, standards and disciplinary oversight.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "Under which legislation is the current statutory mandate of the Nursing and Midwifery Council of Ghana derived?",
+"choices": [
+{"text": "Health Professions Regulatory Bodies Act, 2013 (Act 857)", "is_correct": true},
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": false},
+{"text": "Labour Act, 2003 (Act 651)", "is_correct": false},
+{"text": "National Health Insurance Act, 2012 (Act 852)", "is_correct": false}
+],
+"rationale": "The Nursing and Midwifery Council derives its current statutory mandate from Part III of the Health Professions Regulatory Bodies Act, 2013 (Act 857). The Act provides the regulatory framework for nursing and midwifery professional standards, registration and discipline.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "What is the primary purpose of professional registration with the Nursing and Midwifery Council of Ghana?",
+"choices": [
+{"text": "To guarantee employment in a government hospital", "is_correct": false},
+{"text": "To permit nurses to establish private hospitals without further requirements", "is_correct": false},
+{"text": "To demonstrate that a practitioner has met the regulatory requirements for professional practice", "is_correct": true},
+{"text": "To exempt nurses from continuing professional development", "is_correct": false}
+],
+"rationale": "Professional registration establishes that an individual has satisfied the applicable regulatory requirements for entry into the profession. It supports public protection by ensuring that nursing practice is undertaken by appropriately recognised practitioners.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A registered general nurse is instructed to perform a specialised procedure for which the nurse has not received appropriate training. What is the most appropriate professional response?",
+"choices": [
+{"text": "Perform the procedure because the instruction came from a senior nurse.", "is_correct": false},
+{"text": "Accept the responsibility to avoid disagreement with colleagues.", "is_correct": false},
+{"text": "Explain the limitation, seek appropriate supervision and arrange care by a competent practitioner.", "is_correct": true},
+{"text": "Ask an untrained colleague to perform the procedure instead.", "is_correct": false}
+],
+"rationale": "A nurse must practise within their competence and authorised scope of practice. Accepting responsibilities beyond one's competence may expose the patient to preventable harm and constitute professional misconduct or negligence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "Which of the following is a major responsibility of the Nursing and Midwifery Council of Ghana?",
+"choices": [
+{"text": "Determining the prices of medicines in all hospitals", "is_correct": false},
+{"text": "Registering practitioners and maintaining professional standards", "is_correct": true},
+{"text": "Recruiting all nurses into government employment", "is_correct": false},
+{"text": "Managing the daily operations of every CHPS compound", "is_correct": false}
+],
+"rationale": "The Council is responsible for registering nursing and midwifery practitioners and maintaining standards of professional education, conduct and practice. It also exercises disciplinary powers in accordance with its statutory mandate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A registered nurse working at a district hospital identifies a patient whose condition requires specialist management beyond the facility's available capacity. What should the nurse do?",
+"choices": [
+{"text": "Continue managing the patient independently until the condition resolves.", "is_correct": false},
+{"text": "Discharge the patient immediately.", "is_correct": false},
+{"text": "Arrange an appropriate referral while providing necessary stabilisation and continuity of care.", "is_correct": true},
+{"text": "Ask the patient's relatives to identify another hospital without providing clinical guidance.", "is_correct": false}
+],
+"rationale": "Appropriate referral is an essential professional responsibility when a patient's healthcare needs exceed the available resources or the nurse's competence. Necessary stabilisation, communication and documentation should accompany the referral to promote continuity and safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "Which of the following best describes the scope of nursing practice?",
+"choices": [
+{"text": "All clinical procedures that a nurse wishes to perform", "is_correct": false},
+{"text": "The range of professional activities a nurse is educated, competent and authorised to perform", "is_correct": true},
+{"text": "Only activities specifically requested by doctors", "is_correct": false},
+{"text": "All activities performed by healthcare assistants", "is_correct": false}
+],
+"rationale": "The scope of practice defines the professional activities and responsibilities a nurse is educated, competent and authorised to undertake. It is influenced by professional regulations, education, competence and applicable clinical guidelines.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A nurse administers a medication without checking the patient's identity, resulting in the medication being given to the wrong patient. Which professional principle has been most directly violated?",
+"choices": [
+{"text": "Professional accountability and patient safety", "is_correct": true},
+{"text": "Professional promotion", "is_correct": false},
+{"text": "Administrative delegation", "is_correct": false},
+{"text": "Interprofessional competition", "is_correct": false}
+],
+"rationale": "Nurses are accountable for ensuring that medication administration is performed safely and according to established standards. Patient identification is a fundamental medication safety measure, and failure to observe it creates preventable clinical risks.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A nurse repeatedly performs clinical duties without maintaining the required professional competence. Which regulatory concern is most relevant?",
+"choices": [
+{"text": "Failure to maintain professional standards and competence", "is_correct": true},
+{"text": "Failure to obtain employment promotion", "is_correct": false},
+{"text": "Failure to participate in hospital entertainment", "is_correct": false},
+{"text": "Failure to maintain personal friendships", "is_correct": false}
+],
+"rationale": "Nurses are expected to maintain competence through continuing professional development and lifelong learning. Practising without the necessary knowledge and skills can compromise patient safety and professional standards.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "Which ethical principle requires nurses to act in the best interests of their patients?",
+"choices": [
+{"text": "Justice", "is_correct": false},
+{"text": "Beneficence", "is_correct": true},
+{"text": "Autonomy", "is_correct": false},
+{"text": "Fidelity", "is_correct": false}
+],
+"rationale": "Beneficence refers to the ethical obligation to promote the wellbeing of patients and act in their best interests. Nurses demonstrate this principle by providing appropriate care and taking measures to improve patient outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A competent adult patient refuses a recommended surgical procedure after receiving adequate information. Which ethical principle should guide the nurse's response?",
+"choices": [
+{"text": "Justice", "is_correct": false},
+{"text": "Beneficence", "is_correct": false},
+{"text": "Autonomy", "is_correct": true},
+{"text": "Non-maleficence", "is_correct": false}
+],
+"rationale": "Autonomy recognises the patient's right to make informed decisions about their healthcare. A competent adult's informed refusal should generally be respected, documented and communicated to the appropriate healthcare team.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "Which ethical principle requires a nurse to avoid causing unnecessary harm to a patient?",
+"choices": [
+{"text": "Non-maleficence", "is_correct": true},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Justice", "is_correct": false},
+{"text": "Veracity", "is_correct": false}
+],
+"rationale": "Non-maleficence means the obligation to avoid causing harm. Nurses apply this principle by preventing unsafe interventions, identifying clinical risks and following appropriate patient safety procedures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse provides the same standard of respectful care to patients regardless of their ethnicity, religion, financial status or social background. Which ethical principle is being demonstrated?",
+"choices": [
+{"text": "Fidelity", "is_correct": false},
+{"text": "Justice", "is_correct": true},
+{"text": "Veracity", "is_correct": false},
+{"text": "Autonomy", "is_correct": false}
+],
+"rationale": "Justice requires fairness and equitable treatment in the distribution of healthcare resources and services. Nurses must avoid discrimination and ensure that patients receive appropriate care based on their needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse discovers that a colleague has documented a procedure that was never performed. What is the most appropriate professional action?",
+"choices": [
+{"text": "Ignore the incident to maintain workplace friendship.", "is_correct": false},
+{"text": "Alter the colleague's documentation without authorisation.", "is_correct": false},
+{"text": "Address the concern through appropriate reporting channels and maintain factual documentation.", "is_correct": true},
+{"text": "Discuss the incident publicly on social media.", "is_correct": false}
+],
+"rationale": "Falsification of clinical documentation is a serious breach of professional integrity and may endanger patients. The nurse should report the concern through established institutional and professional channels while maintaining confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse promises a patient that prescribed treatment will be administered at the agreed time and makes every reasonable effort to fulfil that commitment. Which ethical principle is most directly demonstrated?",
+"choices": [
+{"text": "Fidelity", "is_correct": true},
+{"text": "Justice", "is_correct": false},
+{"text": "Autonomy", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": false}
+],
+"rationale": "Fidelity refers to faithfulness, trustworthiness and keeping professional commitments. It supports the therapeutic relationship between nurses and patients.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A patient asks a nurse whether a laboratory result indicates a serious illness. The nurse explains the findings within their competence and refers the patient to the appropriate clinician for further interpretation. Which ethical principle is most closely associated with providing truthful information?",
+"choices": [
+{"text": "Veracity", "is_correct": true},
+{"text": "Justice", "is_correct": false},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Paternalism", "is_correct": false}
+],
+"rationale": "Veracity is the ethical principle of truthfulness and honesty in professional interactions. Nurses should provide accurate information within their competence and avoid misleading patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse is offered money by a patient's relative to move the patient ahead of other patients who require equally urgent attention. What is the most appropriate response?",
+"choices": [
+{"text": "Accept the money because the patient is willing to pay.", "is_correct": false},
+{"text": "Accept the money but treat the patient according to clinical urgency.", "is_correct": false},
+{"text": "Decline the payment and prioritise patients according to clinical need.", "is_correct": true},
+{"text": "Allow the relative to decide the order of treatment.", "is_correct": false}
+],
+"rationale": "Accepting improper payments compromises professional integrity and fairness. Clinical prioritisation must be based on urgency and patient need rather than personal financial benefit.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "Which Ghanaian legal instrument contains the Patient's Charter outlining important rights of patients receiving healthcare services?",
+"choices": [
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": true},
+{"text": "Labour Act, 2003 (Act 651)", "is_correct": false},
+{"text": "Companies Act, 2019 (Act 992)", "is_correct": false},
+{"text": "Education Act, 2008 (Act 778)", "is_correct": false}
+],
+"rationale": "The Patient's Charter is contained in the Sixth Schedule of the Public Health Act, 2012 (Act 851). It outlines important patient rights and responsibilities within the Ghanaian healthcare system.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A patient in a Ghanaian hospital requests information about their diagnosis, proposed treatment and possible complications. What should the nurse do?",
+"choices": [
+{"text": "Refuse to provide information because only relatives should receive it.", "is_correct": false},
+{"text": "Provide appropriate information within their competence and facilitate further explanation by the responsible clinician.", "is_correct": true},
+{"text": "Tell the patient that healthcare decisions are made exclusively by doctors.", "is_correct": false},
+{"text": "Advise the patient to search for the information online.", "is_correct": false}
+],
+"rationale": "Patients have the right to receive relevant information about their condition and management. Nurses should facilitate informed decision-making by communicating accurately and referring questions beyond their competence to the responsible clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A nurse is preparing a patient for a physical examination. Which action best demonstrates respect for the patient's right to privacy?",
+"choices": [
+{"text": "Allowing other patients to observe the examination", "is_correct": false},
+{"text": "Leaving the examination room door open", "is_correct": false},
+{"text": "Providing appropriate covering and ensuring that unnecessary persons are excluded.", "is_correct": true},
+{"text": "Discussing the patient's condition with visitors before the examination", "is_correct": false}
+],
+"rationale": "Privacy is a fundamental patient right under the Patient's Charter. Nurses should protect patients from unnecessary exposure and ensure that consultations and examinations are conducted in an appropriately private environment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A competent patient refuses a blood transfusion because of personal beliefs. What is the nurse's most appropriate initial action?",
+"choices": [
+{"text": "Force the patient to receive the transfusion.", "is_correct": false},
+{"text": "Respect the patient's decision, assess understanding and promptly communicate the refusal to the responsible clinician.", "is_correct": true},
+{"text": "Ask relatives to sign consent on behalf of the patient.", "is_correct": false},
+{"text": "Discharge the patient immediately.", "is_correct": false}
+],
+"rationale": "A competent adult generally has the right to make informed decisions, including refusing treatment. The nurse should ensure that the patient understands the relevant risks, communicate the decision and document the refusal appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A nurse notices that a patient with a physical disability is repeatedly excluded from health education activities because the venue is inaccessible. Which action best demonstrates patient advocacy?",
+"choices": [
+{"text": "Accept the situation because the patient has special needs.", "is_correct": false},
+{"text": "Recommend that the patient receive education only from relatives.", "is_correct": false},
+{"text": "Raise the concern and advocate for accessible arrangements that enable the patient to participate.", "is_correct": true},
+{"text": "Remove the patient from the health education programme.", "is_correct": false}
+],
+"rationale": "Patient advocacy involves protecting patients' rights and promoting equitable access to healthcare services. The nurse should identify barriers and work towards reasonable arrangements that support inclusion and participation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A nurse is caring for a patient whose relative demands access to the patient's medical records without the patient's permission. What is the most appropriate response?",
+"choices": [
+{"text": "Release the records because the person is a close relative.", "is_correct": false},
+{"text": "Refuse access unless the appropriate consent or lawful authority for disclosure exists.", "is_correct": true},
+{"text": "Provide the records if the relative promises confidentiality.", "is_correct": false},
+{"text": "Allow the relative to photograph the records.", "is_correct": false}
+],
+"rationale": "Patient information is confidential and should not be disclosed to unauthorised persons. The Patient's Charter recognises disclosure with appropriate consent or where disclosure is legally required or justified in the public interest.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A patient complains that a nurse spoke disrespectfully to them because they could not afford a particular treatment. What should the nurse in charge do first?",
+"choices": [
+{"text": "Dismiss the complaint because the patient cannot afford treatment.", "is_correct": false},
+{"text": "Investigate the concern respectfully and take appropriate steps to protect the patient's rights.", "is_correct": true},
+{"text": "Immediately transfer the patient to another facility without investigation.", "is_correct": false},
+{"text": "Ask the patient to withdraw the complaint.", "is_correct": false}
+],
+"rationale": "Patients have the right to respectful and non-discriminatory healthcare. The nurse in charge should take complaints seriously, establish the facts and ensure that appropriate corrective measures are implemented.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A patient attending a hospital in Ghana wants to know the identity and professional role of a student nurse participating in their care. Which response is most appropriate?",
+"choices": [
+{"text": "The patient has no right to ask about healthcare personnel.", "is_correct": false},
+{"text": "The student should identify themselves and explain their role in the patient's care.", "is_correct": true},
+{"text": "Only the hospital administrator can provide such information.", "is_correct": false},
+{"text": "The student should avoid answering to prevent unnecessary questions.", "is_correct": false}
+],
+"rationale": "The Patient's Charter recognises the patient's right to know the identity of caregivers, including students and trainees. Transparency promotes trust, informed participation and accountability in healthcare delivery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "Which of the following best defines negligence in nursing practice?",
+"choices": [
+{"text": "A deliberate attempt to injure a patient", "is_correct": false},
+{"text": "Failure to exercise the reasonable standard of care expected of a competent nurse, resulting in harm.", "is_correct": true},
+{"text": "A disagreement between two healthcare professionals", "is_correct": false},
+{"text": "Any unexpected outcome of medical treatment", "is_correct": false}
+],
+"rationale": "Negligence occurs when a healthcare professional fails to exercise the reasonable standard of care expected in the circumstances and this failure causes harm. An adverse outcome alone does not automatically establish negligence.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "A nurse leaves a dependent patient unattended despite knowing that the patient is at high risk of falling. The patient subsequently falls and sustains a fracture. Which legal concept is most applicable?",
+"choices": [
+{"text": "Negligence", "is_correct": true},
+{"text": "Defamation", "is_correct": false},
+{"text": "Battery", "is_correct": false},
+{"text": "False imprisonment", "is_correct": false}
+],
+"rationale": "The nurse may have breached the duty of care by failing to implement reasonable fall-prevention measures. The patient's injury may establish the damage component of a negligence claim if the required legal elements are proven.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "Which of the following is an essential element that must generally be established in a negligence claim?",
+"choices": [
+{"text": "The nurse must have intended to cause harm.", "is_correct": false},
+{"text": "A duty of care, breach of duty, causation and resulting damage.", "is_correct": true},
+{"text": "The patient must have been admitted for more than one week.", "is_correct": false},
+{"text": "The nurse must have received a written warning previously.", "is_correct": false}
+],
+"rationale": "A negligence claim generally requires proof of duty of care, breach, causation and legally recognised damage. These elements distinguish actionable negligence from an error that did not cause compensable harm.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "A nurse deliberately administers a medication to a patient despite the patient clearly refusing it and without any lawful justification. Which legal concept is most closely associated with this conduct?",
+"choices": [
+{"text": "Battery", "is_correct": true},
+{"text": "Defamation", "is_correct": false},
+{"text": "Negligent supervision", "is_correct": false},
+{"text": "Breach of contract", "is_correct": false}
+],
+"rationale": "Battery involves intentional and unlawful physical contact without valid consent or other lawful justification. Deliberately administering treatment against a competent patient's refusal may constitute battery, depending on the circumstances and applicable law.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "Before a patient undergoes an invasive procedure, the nurse confirms that the patient has received an explanation of the procedure, its risks and available alternatives. Which concept is being supported?",
+"choices": [
+{"text": "Informed consent", "is_correct": true},
+{"text": "Professional delegation", "is_correct": false},
+{"text": "Disciplinary action", "is_correct": false},
+{"text": "Institutional confidentiality", "is_correct": false}
+],
+"rationale": "Informed consent involves a voluntary decision made by a person with appropriate decision-making capacity after receiving relevant information. The nurse has an important role in verifying that consent has been addressed and raising concerns when the process is inadequate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "A nurse witnesses a colleague administer the wrong medication dose. The patient is currently stable. What is the nurse's priority action?",
+"choices": [
+{"text": "Wait until the next shift to report the incident.", "is_correct": false},
+{"text": "Prioritise immediate patient assessment, notify the appropriate clinician and initiate necessary safety measures.", "is_correct": true},
+{"text": "Delete the medication entry from the patient's records.", "is_correct": false},
+{"text": "Confront the colleague publicly before assessing the patient.", "is_correct": false}
+],
+"rationale": "The immediate priority is to assess the patient and prevent further harm. The incident must be escalated promptly, managed according to facility protocols and documented accurately through the appropriate reporting system.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "A competent adult patient is unconscious and requires immediate life-saving intervention. No authorised representative is available, and treatment cannot safely be delayed. Which legal principle may justify proceeding with necessary emergency treatment?",
+"choices": [
+{"text": "Implied consent in an emergency", "is_correct": true},
+{"text": "Informed refusal", "is_correct": false},
+{"text": "Professional confidentiality", "is_correct": false},
+{"text": "False imprisonment", "is_correct": false}
+],
+"rationale": "Emergency treatment may proceed under the doctrine of implied consent when an unconscious patient cannot provide consent, urgent intervention is necessary and no known valid refusal applies. The intervention should be limited to what is reasonably necessary to address the emergency.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "A nurse makes an incorrect entry in a patient's paper-based clinical record. What is the appropriate method of correcting the error?",
+"choices": [
+{"text": "Erase the incorrect entry completely.", "is_correct": false},
+{"text": "Use correction fluid to conceal the original information.", "is_correct": false},
+{"text": "Draw a single line through the error, enter the correct information and authenticate the correction according to facility policy.", "is_correct": true},
+{"text": "Remove the entire page from the patient's folder.", "is_correct": false}
+],
+"rationale": "Clinical records must remain accurate, transparent and legally defensible. Corrections should preserve the original entry, clearly identify the amendment and include the required authentication and date or time.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "A nurse restrains a patient who is attempting to leave the ward without assessing the situation or following the facility's restraint policy. Which legal concern may arise?",
+"choices": [
+{"text": "False imprisonment or unlawful restriction of liberty", "is_correct": true},
+{"text": "Professional promotion", "is_correct": false},
+{"text": "Defamation of character", "is_correct": false},
+{"text": "Copyright infringement", "is_correct": false}
+],
+"rationale": "Unjustified restriction of a person's freedom of movement may constitute false imprisonment. Restraint must only be considered when legally and clinically justified, using the least restrictive appropriate measures and following applicable safeguards.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Issues in Nursing",
+"question_text": "A patient develops a serious allergic reaction after receiving a medication that was administered without checking the documented allergy history. Which issue is most relevant when evaluating the nurse's conduct?",
+"choices": [
+{"text": "Possible breach of the professional standard of care", "is_correct": true},
+{"text": "Violation of the patient's right to vote", "is_correct": false},
+{"text": "Breach of professional boundaries through social interaction", "is_correct": false},
+{"text": "Failure to provide health insurance", "is_correct": false}
+],
+"rationale": "Checking allergy history before administering medication is an important patient safety responsibility. Failure to undertake this assessment may constitute a breach of the expected standard of care, particularly when it results in preventable harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "What is the primary purpose of maintaining professional boundaries in nursing?",
+"choices": [
+{"text": "To prevent all personal communication with patients", "is_correct": false},
+{"text": "To maintain a therapeutic relationship and protect patients from exploitation or inappropriate conduct", "is_correct": true},
+{"text": "To ensure that nurses never become emotionally concerned about patients", "is_correct": false},
+{"text": "To discourage patients from asking questions", "is_correct": false}
+],
+"rationale": "Professional boundaries establish appropriate limits within the nurse-patient relationship. They protect patients from exploitation, conflicts of interest and inappropriate personal or financial involvement.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse receives a friend request from a current patient on a personal social media account. What is the most appropriate response?",
+"choices": [
+{"text": "Accept the request and share personal photographs.", "is_correct": false},
+{"text": "Accept the request but avoid discussing treatment.", "is_correct": false},
+{"text": "Maintain professional boundaries and avoid inappropriate personal social media relationships.", "is_correct": true},
+{"text": "Share the patient's clinical information privately.", "is_correct": false}
+],
+"rationale": "Personal social media relationships with current patients can blur professional boundaries and create confidentiality risks. Nurses should maintain appropriate professional communication channels and comply with institutional policies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse is caring for a patient who offers an expensive gift in appreciation for the care received. What should the nurse do?",
+"choices": [
+{"text": "Accept the gift because refusing it may offend the patient.", "is_correct": false},
+{"text": "Politely decline the gift and explain the professional boundaries governing such situations.", "is_correct": true},
+{"text": "Accept the gift but keep it secret from colleagues.", "is_correct": false},
+{"text": "Ask the patient for an additional gift.", "is_correct": false}
+],
+"rationale": "Accepting expensive gifts may create conflicts of interest, expectations of preferential treatment or exploitation. The nurse should follow professional and institutional guidance and maintain an impartial therapeutic relationship.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse begins a romantic relationship with a current patient under their direct care. Which professional concern is most significant?",
+"choices": [
+{"text": "The relationship improves professional independence.", "is_correct": false},
+{"text": "The relationship may constitute a serious breach of professional boundaries because of the unequal therapeutic relationship.", "is_correct": true},
+{"text": "The relationship is acceptable if the patient pays for treatment.", "is_correct": false},
+{"text": "The relationship is acceptable whenever other nurses approve.", "is_correct": false}
+],
+"rationale": "The nurse-patient relationship involves professional responsibility and an inherent power imbalance. Romantic or sexual involvement with a current patient compromises therapeutic trust and may constitute professional misconduct.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A patient's relative offers a nurse money in exchange for confidential information about another patient on the ward. What should the nurse do?",
+"choices": [
+{"text": "Provide the information because the relative has promised secrecy.", "is_correct": false},
+{"text": "Provide only the patient's diagnosis.", "is_correct": false},
+{"text": "Refuse the request and protect the patient's confidential information.", "is_correct": true},
+{"text": "Ask another nurse to provide the information instead.", "is_correct": false}
+],
+"rationale": "Confidential patient information must not be disclosed to unauthorised individuals in exchange for money or any other benefit. The nurse must maintain confidentiality and professional integrity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing as a Profession",
+"question_text": "Which characteristic most clearly distinguishes nursing as a profession from an ordinary occupation?",
+"choices": [
+{"text": "The requirement to wear a uniform", "is_correct": false},
+{"text": "A specialised body of knowledge, formal education, professional ethics and accountability", "is_correct": true},
+{"text": "The opportunity to work night shifts", "is_correct": false},
+{"text": "The ability to work without supervision in every situation", "is_correct": false}
+],
+"rationale": "A profession is characterised by specialised knowledge, formal education, ethical standards, professional regulation and accountability. Nursing possesses these characteristics and has a recognised responsibility to society.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing as a Profession",
+"question_text": "Which statement best describes the primary purpose of nursing according to the contemporary professional understanding of the discipline?",
+"choices": [
+{"text": "To perform medical prescriptions without considering individual patient needs", "is_correct": false},
+{"text": "To promote health, prevent illness, restore health and alleviate suffering through professional care.", "is_correct": true},
+{"text": "To provide administrative services exclusively.", "is_correct": false},
+{"text": "To replace all other healthcare professionals.", "is_correct": false}
+],
+"rationale": "Nursing encompasses health promotion, illness prevention, restoration of health, alleviation of suffering and advocacy for individuals, families and communities. It involves independent and collaborative professional practice.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing as a Profession",
+"question_text": "A newly qualified nurse regularly attends professional development programmes to improve clinical competence. Which professional characteristic is demonstrated?",
+"choices": [
+{"text": "Lifelong learning", "is_correct": true},
+{"text": "Professional isolation", "is_correct": false},
+{"text": "Clinical negligence", "is_correct": false},
+{"text": "Role conflict", "is_correct": false}
+],
+"rationale": "Lifelong learning involves continuously updating professional knowledge and skills throughout one's career. Continuing professional development helps nurses maintain competence and respond to changes in healthcare practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing as a Profession",
+"question_text": "A nurse recognises that a patient requires coordinated input from a doctor, pharmacist, physiotherapist and nurse. Which professional approach should guide the management?",
+"choices": [
+{"text": "Independent practice without consultation", "is_correct": false},
+{"text": "Interprofessional collaboration", "is_correct": true},
+{"text": "Professional competition", "is_correct": false},
+{"text": "Delegation without accountability", "is_correct": false}
+],
+"rationale": "Interprofessional collaboration involves healthcare professionals working together to meet patients' complex needs. It improves communication, continuity of care and the quality of healthcare outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing as a Profession",
+"question_text": "Which activity best demonstrates professional accountability in nursing?",
+"choices": [
+{"text": "Blaming colleagues whenever an error occurs", "is_correct": false},
+{"text": "Accepting responsibility for one's actions and reporting clinical errors appropriately", "is_correct": true},
+{"text": "Performing procedures without following established guidelines", "is_correct": false},
+{"text": "Avoiding documentation to prevent criticism", "is_correct": false}
+],
+"rationale": "Professional accountability requires nurses to accept responsibility for their decisions, actions and omissions. It also involves practising according to professional standards and taking appropriate action when errors occur.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "Which of the following is the most important characteristic of effective clinical documentation?",
+"choices": [
+{"text": "It should contain personal opinions and assumptions.", "is_correct": false},
+{"text": "It should be accurate, objective, timely, complete and legible.", "is_correct": true},
+{"text": "It should be completed only at the end of the week.", "is_correct": false},
+{"text": "It should contain only information that supports the nurse's decisions.", "is_correct": false}
+],
+"rationale": "Clinical documentation provides a legal and professional record of patient assessment, interventions and outcomes. It must be accurate, objective, timely, complete and understandable to support continuity and safety of care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "During a nursing handover, which communication approach is most appropriate for transferring important patient information?",
+"choices": [
+{"text": "Informal discussion without a structured format", "is_correct": false},
+{"text": "Structured communication using SBAR (Situation, Background, Assessment, Recommendation)", "is_correct": true},
+{"text": "Providing only the patient's name and diagnosis", "is_correct": false},
+{"text": "Discussing personal opinions about the previous shift", "is_correct": false}
+],
+"rationale": "SBAR is a structured communication framework that improves the clarity and completeness of clinical handovers. It helps healthcare professionals communicate the patient's situation, relevant background, assessment and recommended actions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse notices that a patient is becoming increasingly breathless during routine observations. Which communication method is most appropriate?",
+"choices": [
+{"text": "Wait until the next scheduled ward meeting.", "is_correct": false},
+{"text": "Communicate the deterioration promptly to the appropriate clinician and provide relevant assessment findings.", "is_correct": true},
+{"text": "Record the observation without informing anyone.", "is_correct": false},
+{"text": "Ask the patient's relative to contact the doctor.", "is_correct": false}
+],
+"rationale": "Clinical deterioration requires prompt escalation to prevent further harm. The nurse should assess the patient, communicate objective findings using an appropriate escalation pathway and initiate emergency measures within their competence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse is documenting a patient's pain assessment. Which entry is most appropriate?",
+"choices": [
+{"text": "Patient is being difficult and complaining again.", "is_correct": false},
+{"text": "Patient appears normal.", "is_correct": false},
+{"text": "Patient reports abdominal pain rated 8/10, beginning two hours ago.", "is_correct": true},
+{"text": "Patient probably has a serious abdominal disease.", "is_correct": false}
+],
+"rationale": "Objective documentation should distinguish between observed findings and information reported by the patient. Recording the location, severity and onset of pain provides useful clinical information for assessment and management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse is preparing to communicate with an elderly patient who has difficulty hearing. Which action is most appropriate?",
+"choices": [
+{"text": "Speak rapidly to complete the conversation quickly.", "is_correct": false},
+{"text": "Shout directly into the patient's ear.", "is_correct": false},
+{"text": "Face the patient, speak clearly at an appropriate pace and confirm understanding.", "is_correct": true},
+{"text": "Communicate exclusively with the patient's relatives.", "is_correct": false}
+],
+"rationale": "Effective communication requires adaptation to the patient's individual needs. Facing the patient, speaking clearly and confirming understanding can improve communication while preserving dignity and participation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse receives a verbal medication order that is unclear. What should the nurse do?",
+"choices": [
+{"text": "Guess the intended medication dose.", "is_correct": false},
+{"text": "Ask the prescriber to clarify and confirm the order before administration.", "is_correct": true},
+{"text": "Ask another patient to interpret the order.", "is_correct": false},
+{"text": "Administer a smaller dose without consultation.", "is_correct": false}
+],
+"rationale": "Unclear medication orders create a risk of medication errors and patient harm. The nurse must seek clarification from the authorised prescriber and follow institutional requirements for verbal orders before administering the medication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse discusses a patient's HIV status loudly in a hospital corridor where other patients and visitors can hear. Which professional standard has been breached?",
+"choices": [
+{"text": "Confidentiality and privacy", "is_correct": true},
+{"text": "Professional punctuality", "is_correct": false},
+{"text": "Clinical delegation", "is_correct": false},
+{"text": "Continuing professional development", "is_correct": false}
+],
+"rationale": "A patient's HIV status is confidential health information and should only be accessed or disclosed for legitimate and authorised purposes. Discussing such information in a public area exposes the patient to unnecessary privacy violations and possible stigma.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "During documentation, a nurse records an intervention several hours after it was performed. Which practice is essential to maintain the integrity of the clinical record?",
+"choices": [
+{"text": "Backdate the entry to make it appear contemporaneous.", "is_correct": false},
+{"text": "Identify it clearly as a late entry, include the actual date and time and follow facility documentation policy.", "is_correct": true},
+{"text": "Ask another nurse to sign the entry.", "is_correct": false},
+{"text": "Leave the entry unsigned.", "is_correct": false}
+],
+"rationale": "Late entries must be clearly identified and authenticated according to institutional documentation requirements. Backdating or falsifying records undermines their legal reliability and professional integrity.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse is caring for a patient who speaks a language that the nurse does not understand. The patient needs information about a proposed procedure. What is the best communication approach?",
+"choices": [
+{"text": "Proceed without explaining the procedure.", "is_correct": false},
+{"text": "Use a qualified interpreter where available and confirm the patient's understanding.", "is_correct": true},
+{"text": "Assume the patient understands because they are smiling.", "is_correct": false},
+{"text": "Ask an unrelated patient to translate sensitive information.", "is_correct": false}
+],
+"rationale": "Language barriers can interfere with informed decision-making and safe healthcare delivery. A qualified interpreter helps ensure accurate communication while protecting privacy and patient autonomy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "Which of the following best describes the role of a Community-based Health Planning and Services (CHPS) compound in Ghana?",
+"choices": [
+{"text": "Providing only specialist surgical services", "is_correct": false},
+{"text": "Delivering community-level primary healthcare, preventive services and basic curative care.", "is_correct": true},
+{"text": "Providing tertiary intensive care services", "is_correct": false},
+{"text": "Regulating the professional conduct of nurses", "is_correct": false}
+],
+"rationale": "CHPS is a community-based primary healthcare strategy designed to improve access to essential healthcare services, particularly in underserved communities. Its activities include health promotion, disease prevention, basic treatment and community mobilisation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A community health nurse at a CHPS compound identifies a pregnant woman with severe vaginal bleeding. What should the nurse do first?",
+"choices": [
+{"text": "Schedule a routine antenatal appointment for the following week.", "is_correct": false},
+{"text": "Provide appropriate immediate emergency assessment and stabilisation while arranging urgent referral to a facility with the required obstetric capacity.", "is_correct": true},
+{"text": "Advise the woman to return home and rest.", "is_correct": false},
+{"text": "Wait for the next scheduled community outreach programme.", "is_correct": false}
+],
+"rationale": "Severe vaginal bleeding during pregnancy is an obstetric emergency that may indicate a life-threatening condition. Immediate assessment, appropriate stabilisation and urgent referral are essential to protect the mother and fetus.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "Which organisation is primarily responsible for implementing public health policies and delivering public healthcare services through its network of facilities in Ghana?",
+"choices": [
+{"text": "Ghana Health Service", "is_correct": true},
+{"text": "Nursing and Midwifery Council", "is_correct": false},
+{"text": "National Health Insurance Authority", "is_correct": false},
+{"text": "Ghana Medical Association", "is_correct": false}
+],
+"rationale": "The Ghana Health Service is responsible for implementing approved health policies and providing public healthcare services through its facilities and programmes. It operates within the policy direction of the Ministry of Health.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "Which healthcare level generally provides highly specialised services such as advanced neurosurgery, complex oncology care and specialised intensive care?",
+"choices": [
+{"text": "Primary healthcare level", "is_correct": false},
+{"text": "Community healthcare level", "is_correct": false},
+{"text": "Tertiary healthcare level", "is_correct": true},
+{"text": "Household healthcare level", "is_correct": false}
+],
+"rationale": "Tertiary healthcare provides highly specialised diagnostic and treatment services requiring advanced expertise, technology and facilities. Patients are commonly referred to this level when their conditions exceed the capacity of lower-level facilities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A patient with uncomplicated malaria initially attends a CHPS compound. After assessment, the nurse identifies signs suggesting severe malaria. What is the most appropriate action?",
+"choices": [
+{"text": "Continue routine outpatient management without further assessment.", "is_correct": false},
+{"text": "Refer the patient urgently to an appropriate higher-level facility while providing indicated immediate care.", "is_correct": true},
+{"text": "Advise the patient to purchase antimalarial medication from a chemical shop.", "is_correct": false},
+{"text": "Wait until the patient's NHIS membership expires before referring.", "is_correct": false}
+],
+"rationale": "Suspected severe malaria requires urgent assessment and management at a facility with appropriate resources. Referral should not be delayed because of administrative or insurance considerations when emergency care is needed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "What is the primary objective of the National Health Insurance Scheme (NHIS) in Ghana?",
+"choices": [
+{"text": "To replace all public hospitals with private hospitals", "is_correct": false},
+{"text": "To improve access to healthcare by reducing financial barriers through health insurance coverage.", "is_correct": true},
+{"text": "To regulate the professional licensing of nurses", "is_correct": false},
+{"text": "To provide free healthcare services for every possible medical condition without limitations.", "is_correct": false}
+],
+"rationale": "The NHIS was established to improve access to healthcare and reduce out-of-pocket financial barriers. Benefits are provided according to the applicable scheme arrangements and benefit package, rather than covering every possible service without limitation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A patient arrives at a hospital emergency department with severe chest pain and difficulty breathing but has an expired NHIS membership. What should the nurse prioritise?",
+"choices": [
+{"text": "Refuse assessment until the patient renews the NHIS membership.", "is_correct": false},
+{"text": "Prioritise emergency assessment and necessary stabilisation without delaying care for insurance administration.", "is_correct": true},
+{"text": "Ask the patient to return when the membership becomes active.", "is_correct": false},
+{"text": "Transfer the patient to the NHIA office before providing treatment.", "is_correct": false}
+],
+"rationale": "A patient presenting with potentially life-threatening symptoms requires prompt emergency assessment and stabilisation. Administrative and insurance issues must not delay necessary emergency care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "Which of the following best illustrates the referral system within Ghana's healthcare delivery structure?",
+"choices": [
+{"text": "A tertiary hospital referring all patients to CHPS compounds for specialist treatment", "is_correct": false},
+{"text": "A CHPS compound referring a patient with a complicated condition to a district or higher-level facility for further management.", "is_correct": true},
+{"text": "A patient independently changing facilities without any communication or documentation", "is_correct": false},
+{"text": "A district hospital transferring every patient directly to a pharmacy", "is_correct": false}
+],
+"rationale": "The referral system connects different levels of healthcare to ensure that patients receive appropriate services according to their clinical needs. Effective referral requires clinical communication, appropriate documentation and continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A district hospital experiences frequent delays because patients bypass nearby primary healthcare facilities and present directly for conditions that could be managed at the primary level. Which system improvement would best address this challenge?",
+"choices": [
+{"text": "Close all CHPS compounds in the district.", "is_correct": false},
+{"text": "Strengthen primary healthcare services, community education and appropriate referral coordination.", "is_correct": true},
+{"text": "Restrict access to district hospitals regardless of clinical condition.", "is_correct": false},
+{"text": "Transfer all primary healthcare responsibilities to tertiary hospitals.", "is_correct": false}
+],
+"rationale": "A strong primary healthcare system provides accessible first-contact care and reduces unnecessary pressure on higher-level facilities. Community education and functional referral arrangements promote appropriate utilisation of healthcare resources.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A nurse working in a rural Ghanaian community identifies an increase in suspected cases of a communicable disease. Which action best supports the public health surveillance system?",
+"choices": [
+{"text": "Keep the information within the CHPS compound until all cases are confirmed.", "is_correct": false},
+{"text": "Report suspected cases through the established disease surveillance and notification channels.", "is_correct": true},
+{"text": "Inform only community leaders without notifying the health authorities.", "is_correct": false},
+{"text": "Wait until the next annual health report before taking action.", "is_correct": false}
+],
+"rationale": "Disease surveillance depends on timely identification, documentation and reporting of suspected or confirmed cases according to applicable notification requirements. Early reporting supports investigation, outbreak control and appropriate public health interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A nurse working in a district hospital observes that patients from remote communities frequently miss follow-up appointments because of transportation difficulties. Which intervention best reflects the principles of primary healthcare?",
+"choices": [
+{"text": "Discontinue follow-up services for patients who live far away.", "is_correct": false},
+{"text": "Collaborate with community health workers and local stakeholders to improve access through appropriate community-based follow-up arrangements.", "is_correct": true},
+{"text": "Require every patient to attend the hospital daily.", "is_correct": false},
+{"text": "Transfer responsibility for all follow-up care to patients' relatives.", "is_correct": false}
+],
+"rationale": "Primary healthcare emphasises accessibility, community participation, equity and collaboration. Community-based follow-up arrangements can reduce geographical barriers and improve continuity of care for underserved populations.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse notices that an unconscious patient has no available relative and requires urgent intervention to prevent death. Another colleague insists that treatment must wait until a relative signs a consent form. What should the nurse do?",
+"choices": [
+{"text": "Delay all treatment until a relative arrives.", "is_correct": false},
+{"text": "Support necessary emergency intervention under the applicable emergency consent principles and institutional protocols.", "is_correct": true},
+{"text": "Discharge the patient because consent cannot be obtained.", "is_correct": false},
+{"text": "Allow the hospital security officer to decide whether treatment should begin.", "is_correct": false}
+],
+"rationale": "In an emergency where the patient cannot consent and delay threatens life or serious health, necessary treatment may proceed under applicable emergency consent principles. The nurse should ensure that interventions are appropriate, necessary and properly documented.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A patient complains that their NHIS-covered condition is being managed differently from that of a privately insured patient with the same clinical needs. What should the nurse do?",
+"choices": [
+{"text": "Ignore the complaint because insurance status determines the quality of nursing care.", "is_correct": false},
+{"text": "Advocate for equitable clinical care and report any suspected discriminatory practice through appropriate channels.", "is_correct": true},
+{"text": "Advise the patient to purchase private insurance immediately.", "is_correct": false},
+{"text": "Provide preferential treatment to the privately insured patient.", "is_correct": false}
+],
+"rationale": "The Patient's Charter protects patients against discrimination and recognises their entitlement to equitable healthcare. Clinical decisions should be based on patient needs and professional standards rather than unfair discrimination based on insurance or financial status.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A registered general nurse is assigned to a clinical unit where a patient suddenly develops signs of cardiac arrest. Which action best demonstrates professional accountability and appropriate prioritisation?",
+"choices": [
+{"text": "Complete routine documentation before responding.", "is_correct": false},
+{"text": "Immediately initiate the emergency response, begin cardiopulmonary resuscitation according to current training and protocols, and call for assistance.", "is_correct": true},
+{"text": "Wait for the attending doctor before taking any action.", "is_correct": false},
+{"text": "Ask the patient's relatives to provide emergency assistance.", "is_correct": false}
+],
+"rationale": "Cardiac arrest is an immediate life-threatening emergency requiring rapid intervention. A competent nurse should activate the emergency response system and initiate basic life support within their training and applicable protocols without unnecessary delay.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
