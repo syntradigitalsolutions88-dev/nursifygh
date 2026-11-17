@@ -1,0 +1,782 @@
+{
+"courses": [
+{
+"course_code": "FED-111-M",
+"course_title": "First Aid, Emergency & Disaster Management",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Basic First Aid Principles",
+"Cardiopulmonary Resuscitation",
+"Choking Management",
+"Bleeding Control and Wound Care",
+"Fractures and Immobilization",
+"Burns Management",
+"Poisoning and Overdose",
+"Environmental Emergencies",
+"Obstetric Emergencies",
+"Neonatal Resuscitation",
+"Disaster Preparedness and Response",
+"Emergency Transportation and Referral"
+],
+"questions": [
+{
+"topic": "Basic First Aid Principles",
+"question_text": "What is the primary purpose of first aid?",
+"choices": [
+{"text": "To provide definitive medical treatment for every injury", "is_correct": false},
+{"text": "To preserve life, prevent deterioration and promote recovery until further care is available", "is_correct": true},
+{"text": "To replace professional medical assessment", "is_correct": false},
+{"text": "To administer medication to every injured person", "is_correct": false}
+],
+"rationale": "First aid involves immediate assistance given to a person who is ill or injured before definitive medical care is available. Its main objectives are to preserve life, prevent further harm and promote recovery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "In the DRSABCD approach to first aid, what does the first letter, D, represent?",
+"choices": [
+{"text": "Diagnosis", "is_correct": false},
+{"text": "Danger", "is_correct": true},
+{"text": "Defibrillation", "is_correct": false},
+{"text": "Disability", "is_correct": false}
+],
+"rationale": "The first step is to assess the scene for danger to the rescuer, casualty and bystanders. Rescuers should not enter an unsafe environment without appropriate precautions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "Which sequence correctly represents the ABCDE approach to emergency assessment?",
+"choices": [
+{"text": "Airway, Breathing, Circulation, Disability, Exposure", "is_correct": true},
+{"text": "Assessment, Blood pressure, Consciousness, Drug administration, Examination", "is_correct": false},
+{"text": "Airway, Blood loss, Diagnosis, Disability, Evaluation", "is_correct": false},
+{"text": "Breathing, Circulation, Airway, Diagnosis, Exposure", "is_correct": false}
+],
+"rationale": "ABCDE is a systematic approach to identifying and managing life-threatening conditions. It prioritises airway, breathing and circulation before neurological assessment and full exposure.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "A midwife arrives at a roadside accident and finds an unconscious person lying beside a vehicle that is still leaking fuel. What should the midwife do first?",
+"choices": [
+{"text": "Immediately move the casualty without assessing the surroundings", "is_correct": false},
+{"text": "Check the casualty's pulse", "is_correct": false},
+{"text": "Assess the scene for danger and avoid entering the hazardous area", "is_correct": true},
+{"text": "Begin chest compressions beside the vehicle", "is_correct": false}
+],
+"rationale": "Scene safety must be established before approaching a casualty because leaking fuel presents a fire and explosion hazard. Emergency services should be alerted, and the casualty should only be approached when it is safe to do so.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "A pregnant woman collapses in the antenatal clinic. She is unresponsive and has no normal breathing. Which action should the midwife take first after confirming that the scene is safe?",
+"choices": [
+{"text": "Wait for the fetal heart rate to be assessed", "is_correct": false},
+{"text": "Activate the emergency response system and commence CPR", "is_correct": true},
+{"text": "Place the woman in a sitting position", "is_correct": false},
+{"text": "Administer oral glucose", "is_correct": false}
+],
+"rationale": "An unresponsive person who is not breathing normally should be treated as being in cardiac arrest. The midwife must activate emergency assistance and begin high-quality CPR without delaying for fetal assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "During an emergency assessment, a woman has a patent airway but is breathing rapidly and has severe external bleeding from a leg wound. Which assessment finding requires immediate intervention?",
+"choices": [
+{"text": "The presence of a minor skin abrasion", "is_correct": false},
+{"text": "The severe external bleeding", "is_correct": true},
+{"text": "The woman's history of previous pregnancy", "is_correct": false},
+{"text": "The presence of an old healed scar", "is_correct": false}
+],
+"rationale": "Severe haemorrhage can rapidly lead to hypovolaemic shock and death. Life-threatening bleeding should be controlled immediately while emergency assessment and resuscitation continue.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "What is the recommended chest compression rate for adult CPR?",
+"choices": [
+{"text": "40–60 compressions per minute", "is_correct": false},
+{"text": "60–80 compressions per minute", "is_correct": false},
+{"text": "100–120 compressions per minute", "is_correct": true},
+{"text": "140–160 compressions per minute", "is_correct": false}
+],
+"rationale": "Adult CPR requires chest compressions at a rate of 100–120 per minute. The recommended rate supports adequate circulation while allowing appropriate chest recoil between compressions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "What is the recommended compression-to-ventilation ratio for an adult in cardiac arrest when a single rescuer is providing conventional CPR?",
+"choices": [
+{"text": "15:2", "is_correct": false},
+{"text": "30:2", "is_correct": true},
+{"text": "5:1", "is_correct": false},
+{"text": "3:1", "is_correct": false}
+],
+"rationale": "For an adult without an advanced airway, conventional CPR uses 30 chest compressions followed by two ventilations. This ratio helps maintain circulation while providing oxygen to the lungs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A pregnant woman at 32 weeks' gestation suddenly becomes unresponsive and is found to have no normal breathing. Which modification should be made during CPR?",
+"choices": [
+{"text": "Reduce chest compression depth to protect the fetus", "is_correct": false},
+{"text": "Perform chest compressions only on the left side of the chest", "is_correct": false},
+{"text": "Use standard high-quality CPR with manual left uterine displacement", "is_correct": true},
+{"text": "Delay CPR until the fetus has been delivered", "is_correct": false}
+],
+"rationale": "Maternal cardiac arrest requires immediate standard high-quality CPR, including appropriate compression depth and rate. Manual left uterine displacement reduces aortocaval compression from the gravid uterus and improves venous return.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A midwife is performing CPR on a pregnant woman at 30 weeks' gestation. Which action is most appropriate to reduce compression of the major abdominal blood vessels?",
+"choices": [
+{"text": "Apply manual left uterine displacement while maintaining supine chest compressions", "is_correct": true},
+{"text": "Place the woman in a steep sitting position", "is_correct": false},
+{"text": "Stop chest compressions every minute to reposition the woman", "is_correct": false},
+{"text": "Apply firm pressure over the uterus", "is_correct": false}
+],
+"rationale": "Manual left uterine displacement moves the gravid uterus away from the inferior vena cava and aorta. This improves venous return without compromising the quality of chest compressions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A pregnant woman in cardiac arrest has not achieved return of spontaneous circulation despite ongoing resuscitation. Which intervention should the resuscitation team prepare for when indicated?",
+"choices": [
+{"text": "Routine induction of labour", "is_correct": false},
+{"text": "Resuscitative delivery, with preparation beginning immediately and the goal of completing delivery by five minutes if there is no return of spontaneous circulation", "is_correct": true},
+{"text": "Wait until the fetal heart rate becomes detectable", "is_correct": false},
+{"text": "Stop maternal CPR before considering delivery", "is_correct": false}
+],
+"rationale": "Resuscitative delivery may relieve aortocaval compression and improve the chance of maternal resuscitation while also offering the fetus a chance of survival. Preparation should begin immediately, with the goal of completing delivery by five minutes after cardiac arrest if there is no return of spontaneous circulation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A midwife is using an automated external defibrillator (AED) on a pregnant woman in cardiac arrest. Which action is correct?",
+"choices": [
+{"text": "Avoid defibrillation because the woman is pregnant", "is_correct": false},
+{"text": "Use the AED as indicated and follow its prompts without delaying defibrillation", "is_correct": true},
+{"text": "Wait until after delivery before attaching the AED", "is_correct": false},
+{"text": "Reduce the recommended energy level solely because of pregnancy", "is_correct": false}
+],
+"rationale": "Defibrillation should not be withheld because a woman is pregnant. Standard defibrillation indications and energy settings apply, as prompt treatment of maternal cardiac arrest is essential for both maternal and fetal survival.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Choking Management",
+"question_text": "A conscious pregnant woman suddenly develops severe choking and cannot speak, cough or breathe. What should the midwife do?",
+"choices": [
+{"text": "Give abdominal thrusts immediately", "is_correct": false},
+{"text": "Encourage her to drink water", "is_correct": false},
+{"text": "Give appropriate back blows followed by chest thrusts if the obstruction remains", "is_correct": true},
+{"text": "Ask her to lie flat and remain still", "is_correct": false}
+],
+"rationale": "Severe choking requires immediate action to relieve the airway obstruction. Chest thrusts are used instead of abdominal thrusts in late pregnancy because abdominal thrusts may injure the gravid uterus.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Choking Management",
+"question_text": "A pregnant woman with a mild airway obstruction is coughing forcefully and can speak. What is the most appropriate initial action?",
+"choices": [
+{"text": "Encourage her to continue coughing and observe closely", "is_correct": true},
+{"text": "Immediately perform chest thrusts", "is_correct": false},
+{"text": "Perform a blind finger sweep", "is_correct": false},
+{"text": "Give abdominal thrusts", "is_correct": false}
+],
+"rationale": "A person with an effective cough and partial airway obstruction should be encouraged to cough. Unnecessary physical interventions may worsen the obstruction or cause injury.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "Which first-aid technique is generally recommended to control severe external bleeding from a wound?",
+"choices": [
+{"text": "Apply direct pressure using a clean dressing", "is_correct": true},
+{"text": "Wash the wound continuously for 30 minutes before applying pressure", "is_correct": false},
+{"text": "Remove all blood clots from the wound", "is_correct": false},
+{"text": "Apply a hot compress", "is_correct": false}
+],
+"rationale": "Firm, direct pressure with a clean dressing is a first-line measure for controlling external bleeding. Severe bleeding may require additional interventions, such as a tourniquet for suitable limb injuries, while urgent medical care is arranged.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "A woman sustains a deep forearm wound in a road traffic accident, and blood is flowing continuously. What should the midwife do first?",
+"choices": [
+{"text": "Apply firm direct pressure over the wound with a clean dressing", "is_correct": true},
+{"text": "Remove any visible clots and inspect the wound repeatedly", "is_correct": false},
+{"text": "Apply an antiseptic solution before controlling the bleeding", "is_correct": false},
+{"text": "Allow the arm to hang downwards", "is_correct": false}
+],
+"rationale": "The immediate priority is to control the blood loss through firm direct pressure. Further wound assessment and definitive treatment should follow once the bleeding is controlled and the patient's circulation is assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "A woman has a deep wound with a large piece of glass embedded in it. Which action is most appropriate?",
+"choices": [
+{"text": "Remove the glass quickly to allow the wound to close", "is_correct": false},
+{"text": "Apply direct pressure directly over the glass", "is_correct": false},
+{"text": "Stabilise the embedded object with dressings and apply pressure around it", "is_correct": true},
+{"text": "Push the glass further into the wound to prevent movement", "is_correct": false}
+],
+"rationale": "An embedded object should not be removed during first aid because it may be limiting blood loss or may have damaged underlying structures. It should be stabilised with dressings, with pressure applied around rather than directly over it.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "A woman develops heavy vaginal bleeding immediately after delivery. Her uterus feels soft and enlarged. Which intervention should the midwife prioritise while activating the emergency response?",
+"choices": [
+{"text": "Encourage the woman to walk around", "is_correct": false},
+{"text": "Perform uterine massage and initiate the postpartum haemorrhage protocol", "is_correct": true},
+{"text": "Wait for laboratory results before intervening", "is_correct": false},
+{"text": "Apply an abdominal ice pack and observe", "is_correct": false}
+],
+"rationale": "A soft, enlarged uterus with heavy bleeding suggests uterine atony, a common cause of postpartum haemorrhage. Immediate uterine massage, activation of the PPH response and prompt implementation of the local management protocol are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "A woman with postpartum haemorrhage remains pale and confused despite initial management. Her pulse is rapid and weak, and her blood pressure is falling. Which condition best explains these findings?",
+"choices": [
+{"text": "Hypovolaemic shock", "is_correct": true},
+{"text": "Physiological postpartum fatigue", "is_correct": false},
+{"text": "Uncomplicated uterine involution", "is_correct": false},
+{"text": "Isolated urinary retention", "is_correct": false}
+],
+"rationale": "Heavy blood loss reduces circulating blood volume and compromises tissue perfusion, producing hypovolaemic shock. Tachycardia, hypotension, pallor and altered mental status are important warning signs requiring urgent resuscitation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fractures and Immobilization",
+"question_text": "What is the main purpose of immobilising a suspected fracture during first aid?",
+"choices": [
+{"text": "To restore the bone to its normal anatomical position", "is_correct": false},
+{"text": "To prevent further injury and reduce pain during movement", "is_correct": true},
+{"text": "To increase blood flow by repeatedly moving the limb", "is_correct": false},
+{"text": "To eliminate the need for medical assessment", "is_correct": false}
+],
+"rationale": "Immobilisation limits movement of the injured area and helps prevent additional damage to surrounding tissues, nerves and blood vessels. It also reduces pain while the casualty is prepared for definitive assessment and treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fractures and Immobilization",
+"question_text": "A pregnant woman falls and sustains a suspected fracture of the lower leg. What should the midwife do?",
+"choices": [
+{"text": "Attempt to straighten the fractured bone", "is_correct": false},
+{"text": "Immobilise the limb in the position found and arrange urgent medical assessment", "is_correct": true},
+{"text": "Ask the woman to walk to determine the severity", "is_correct": false},
+{"text": "Massage the injured area firmly", "is_correct": false}
+],
+"rationale": "A suspected fracture should be immobilised in the position found without attempting to realign the bone. The midwife should assess distal circulation, sensation and movement and arrange appropriate referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fractures and Immobilization",
+"question_text": "A woman with a suspected forearm fracture has a pale, cold hand and cannot feel her fingers. What should the midwife do first?",
+"choices": [
+{"text": "Tighten the bandage around the fracture", "is_correct": false},
+{"text": "Recognise possible neurovascular compromise and arrange immediate emergency assessment", "is_correct": true},
+{"text": "Apply vigorous massage to the fingers", "is_correct": false},
+{"text": "Encourage repeated finger exercises before referral", "is_correct": false}
+],
+"rationale": "A pale, cold hand with sensory loss may indicate impaired circulation or nerve injury distal to the fracture. This is a limb-threatening complication requiring urgent assessment and careful immobilisation without excessive constriction.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Burns Management",
+"question_text": "What is the recommended immediate first-aid action for a thermal burn?",
+"choices": [
+{"text": "Apply ice directly to the burned skin", "is_correct": false},
+{"text": "Cool the burn under cool running water for about 20 minutes", "is_correct": true},
+{"text": "Apply butter or cooking oil", "is_correct": false},
+{"text": "Break all blisters immediately", "is_correct": false}
+],
+"rationale": "Cooling a thermal burn with cool running water for approximately 20 minutes helps limit tissue damage and relieve pain. Ice, oils and household substances should not be applied because they may worsen tissue injury or interfere with treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Burns Management",
+"question_text": "A pregnant woman spills hot water over her forearm. The skin is red, painful and has developed blisters. What should the midwife do first?",
+"choices": [
+{"text": "Apply toothpaste to the affected area", "is_correct": false},
+{"text": "Cool the burn with cool running water and remove tight jewellery if safe", "is_correct": true},
+{"text": "Apply ice directly to the blisters", "is_correct": false},
+{"text": "Cover the burn immediately with cotton wool", "is_correct": false}
+],
+"rationale": "The immediate priority is to cool the burn with cool running water for approximately 20 minutes. Tight jewellery should be removed early if it can be done without damaging the skin, and the cooled burn should be covered with a clean, non-adherent dressing or suitable clean covering.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Burns Management",
+"question_text": "A woman sustains a burn to her face after a gas cylinder explosion. She has singed nasal hair, a hoarse voice and difficulty breathing. Which complication is the greatest immediate concern?",
+"choices": [
+{"text": "Dehydration from reduced fluid intake", "is_correct": false},
+{"text": "Inhalation injury with impending airway obstruction", "is_correct": true},
+{"text": "Delayed wound healing", "is_correct": false},
+{"text": "Local skin infection", "is_correct": false}
+],
+"rationale": "Facial burns, singed nasal hair and hoarseness suggest possible inhalation injury and progressive airway oedema. Airway assessment and urgent emergency support are priorities because airway obstruction can develop rapidly.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "Which action should generally be avoided when providing first aid to a person who has swallowed a poisonous substance?",
+"choices": [
+{"text": "Assessing airway, breathing and circulation", "is_correct": false},
+{"text": "Seeking urgent medical advice", "is_correct": false},
+{"text": "Inducing vomiting without specific medical instruction", "is_correct": true},
+{"text": "Keeping the container or label for identification", "is_correct": false}
+],
+"rationale": "Inducing vomiting can cause further injury, particularly when the substance is corrosive or when the person becomes unconscious. The rescuer should prioritise vital functions and obtain urgent professional advice while preserving information about the substance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "A pregnant woman is brought to the maternity unit after reportedly swallowing an unknown quantity of pesticide. She is drowsy and has excessive salivation. What should the midwife do first?",
+"choices": [
+{"text": "Give her milk to dilute the pesticide", "is_correct": false},
+{"text": "Assess and support her airway, breathing and circulation while activating emergency assistance", "is_correct": true},
+{"text": "Induce vomiting to remove the pesticide", "is_correct": false},
+{"text": "Wait for her to become fully conscious before assessment", "is_correct": false}
+],
+"rationale": "Drowsiness and excessive salivation following pesticide exposure may indicate serious poisoning with potential respiratory compromise. Immediate ABC assessment and supportive emergency care take priority over attempts to induce vomiting or administer oral substances.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "A woman is found unconscious after a suspected medication overdose. She is breathing normally and has no evidence of major trauma. What is the most appropriate immediate action while arranging emergency transfer?",
+"choices": [
+{"text": "Give her water to help remove the medication", "is_correct": false},
+{"text": "Place her in the recovery position and monitor her breathing", "is_correct": true},
+{"text": "Make her sit upright and walk", "is_correct": false},
+{"text": "Induce vomiting immediately", "is_correct": false}
+],
+"rationale": "An unconscious person who is breathing normally should generally be placed in the recovery position to help maintain airway patency and reduce aspiration risk. Breathing must be monitored continuously, and emergency medical assessment is required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "Which finding is most characteristic of heat stroke?",
+"choices": [
+{"text": "Severe hyperthermia with altered mental status", "is_correct": true},
+{"text": "Mild thirst with normal mental status", "is_correct": false},
+{"text": "Cold extremities after prolonged exposure to cold", "is_correct": false},
+{"text": "Localised pain following a minor skin injury", "is_correct": false}
+],
+"rationale": "Heat stroke is a life-threatening heat-related illness characterised by severe hyperthermia and central nervous system dysfunction, such as confusion, seizures or unconsciousness. Immediate cooling and emergency medical care are essential.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A pregnant woman collapses after working for several hours in extreme heat. She is confused and has a very high body temperature. What is the priority intervention?",
+"choices": [
+{"text": "Give her a hot drink", "is_correct": false},
+{"text": "Move her to a cooler environment and begin rapid cooling while arranging emergency care", "is_correct": true},
+{"text": "Cover her with thick blankets", "is_correct": false},
+{"text": "Allow her to sleep before reassessment", "is_correct": false}
+],
+"rationale": "Confusion and marked hyperthermia suggest heat stroke, which can rapidly cause organ damage. Rapid cooling and urgent transfer for medical management are necessary, while airway and circulation are monitored.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A woman rescued from a cold, flooded area is shivering, confused and has cold skin. Which action is most appropriate?",
+"choices": [
+{"text": "Rub her limbs vigorously to generate heat", "is_correct": false},
+{"text": "Remove wet clothing, insulate her and arrange urgent medical assessment", "is_correct": true},
+{"text": "Place her directly in very hot water", "is_correct": false},
+{"text": "Encourage her to run to increase body temperature", "is_correct": false}
+],
+"rationale": "These findings suggest hypothermia, which requires careful handling and gradual rewarming. Wet clothing should be removed, the woman insulated and urgent medical care arranged; vigorous rubbing and sudden intense heating should be avoided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "Which condition is defined as excessive bleeding following childbirth?",
+"choices": [
+{"text": "Postpartum haemorrhage", "is_correct": true},
+{"text": "Hyperemesis gravidarum", "is_correct": false},
+{"text": "Placenta praevia", "is_correct": false},
+{"text": "Ectopic pregnancy", "is_correct": false}
+],
+"rationale": "Postpartum haemorrhage is excessive bleeding after childbirth and is a major obstetric emergency. It requires prompt recognition, assessment and management to prevent maternal shock and death.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman develops convulsions at 36 weeks' gestation and has a blood pressure of 170/110 mmHg. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Gestational diabetes mellitus", "is_correct": false},
+{"text": "Eclampsia", "is_correct": true},
+{"text": "Placenta praevia", "is_correct": false},
+{"text": "Hyperemesis gravidarum", "is_correct": false}
+],
+"rationale": "Eclampsia is the occurrence of seizures in a woman with pre-eclampsia when another cause does not explain the convulsions. It is a life-threatening obstetric emergency requiring immediate maternal stabilisation and definitive management.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "During labour, the umbilical cord is seen protruding through the vagina before the presenting part of the fetus. What is this condition called?",
+"choices": [
+{"text": "Uterine inversion", "is_correct": false},
+{"text": "Cord prolapse", "is_correct": true},
+{"text": "Shoulder dystocia", "is_correct": false},
+{"text": "Placental abruption", "is_correct": false}
+],
+"rationale": "Umbilical cord prolapse occurs when the cord descends through the cervix alongside or past the presenting part after membrane rupture. Compression of the cord can interrupt fetal oxygen supply and requires immediate intervention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman develops a seizure in the labour ward and is suspected of having eclampsia. What should the midwife do first?",
+"choices": [
+{"text": "Insert a spoon into her mouth to prevent tongue biting", "is_correct": false},
+{"text": "Protect her from injury, maintain airway safety and call for emergency assistance", "is_correct": true},
+{"text": "Restrain her limbs firmly", "is_correct": false},
+{"text": "Give oral antihypertensive medication during the seizure", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, the immediate priority is to protect the woman from injury and maintain airway safety. The midwife should call for help, position her laterally when possible and prepare for emergency treatment, including magnesium sulphate according to protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman experiences shoulder dystocia during vaginal birth. The fetal head has delivered, but the shoulders remain impacted. Which action should the midwife take first?",
+"choices": [
+{"text": "Apply fundal pressure", "is_correct": false},
+{"text": "Call for additional help and initiate the shoulder dystocia manoeuvre sequence", "is_correct": true},
+{"text": "Apply strong traction to the fetal head", "is_correct": false},
+{"text": "Ask the woman to leave the delivery bed", "is_correct": false}
+],
+"rationale": "Shoulder dystocia is an obstetric emergency requiring immediate coordinated action. Help should be summoned, fundal pressure avoided, and appropriate manoeuvres such as McRoberts positioning and suprapubic pressure initiated according to training and protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman develops heavy bleeding after delivery. The uterus is firm, but bleeding continues. Which cause should the midwife particularly consider?",
+"choices": [
+{"text": "Uterine atony as the only possible cause", "is_correct": false},
+{"text": "Genital tract trauma, such as a cervical or vaginal tear", "is_correct": true},
+{"text": "Normal lochia", "is_correct": false},
+{"text": "Physiological uterine involution", "is_correct": false}
+],
+"rationale": "A firm uterus with persistent heavy bleeding suggests that causes other than uterine atony should be investigated, particularly genital tract trauma. The midwife should continue resuscitation and arrange prompt examination and definitive management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A midwife identifies a prolapsed umbilical cord after spontaneous rupture of membranes. The fetal heart rate is 80 beats per minute. Which action is the priority?",
+"choices": [
+{"text": "Attempt to push the cord back into the uterus", "is_correct": false},
+{"text": "Relieve pressure on the cord by elevating the presenting part and position the woman appropriately while arranging urgent birth", "is_correct": true},
+{"text": "Wait 30 minutes to see whether the fetal heart rate improves", "is_correct": false},
+{"text": "Apply fundal pressure to speed up delivery", "is_correct": false}
+],
+"rationale": "The fetal bradycardia suggests significant cord compression and compromised fetal oxygenation. The presenting part should be elevated manually, the woman placed in a knee-chest or suitable head-down lateral position, and urgent birth arranged without unnecessary manipulation of the cord.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman with postpartum haemorrhage has a blood pressure of 70/40 mmHg, a pulse of 140 beats per minute and reduced consciousness. Which action should the midwife prioritise?",
+"choices": [
+{"text": "Complete routine postpartum documentation", "is_correct": false},
+{"text": "Activate the emergency response, initiate resuscitation and arrange urgent definitive management", "is_correct": true},
+{"text": "Wait for the next scheduled observation", "is_correct": false},
+{"text": "Offer oral fluids and reassess after one hour", "is_correct": false}
+],
+"rationale": "The findings indicate severe haemorrhagic shock with threatened maternal life. Immediate emergency escalation, resuscitation, blood-loss control and urgent definitive management are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman with suspected eclampsia continues to convulse despite initial care. Which medication is the preferred anticonvulsant for preventing and treating eclamptic seizures?",
+"choices": [
+{"text": "Magnesium sulphate", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Misoprostol", "is_correct": false},
+{"text": "Oral iron", "is_correct": false}
+],
+"rationale": "Magnesium sulphate is the preferred anticonvulsant for the prevention and treatment of eclamptic seizures. It should be administered using the recommended regimen with appropriate monitoring for toxicity and respiratory depression.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman with postpartum haemorrhage has a soft uterus, heavy bleeding and a history of prolonged labour. Which underlying mechanism most likely explains the bleeding?",
+"choices": [
+{"text": "Failure of the myometrium to contract effectively and compress placental bed vessels", "is_correct": true},
+{"text": "Excessive contraction of the uterus", "is_correct": false},
+{"text": "Normal cervical dilatation after birth", "is_correct": false},
+{"text": "Reduced maternal blood volume before labour", "is_correct": false}
+],
+"rationale": "Uterine atony occurs when the myometrium fails to contract effectively after delivery. The placental bed vessels remain inadequately compressed, resulting in excessive bleeding.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Maternal Collapse",
+"question_text": "Which statement best describes maternal collapse?",
+"choices": [
+{"text": "A temporary feeling of tiredness after breastfeeding", "is_correct": false},
+{"text": "An acute event involving severe cardiorespiratory or neurological compromise during pregnancy, childbirth or the postpartum period", "is_correct": true},
+{"text": "A normal physiological reduction in blood pressure during pregnancy", "is_correct": false},
+{"text": "A routine episode of nausea during early pregnancy", "is_correct": false}
+],
+"rationale": "Maternal collapse is an acute, life-threatening event involving serious compromise of the mother's circulation, breathing or neurological function. It requires immediate systematic assessment and emergency management.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Maternal Collapse",
+"question_text": "A woman collapses shortly after delivery. She is pale, cold and clammy, with a rapid weak pulse and heavy vaginal bleeding. Which condition is the most likely cause?",
+"choices": [
+{"text": "Hypovolaemic shock due to postpartum haemorrhage", "is_correct": true},
+{"text": "Normal postpartum diuresis", "is_correct": false},
+{"text": "Mild dehydration from breastfeeding", "is_correct": false},
+{"text": "Physiological uterine contraction", "is_correct": false}
+],
+"rationale": "Heavy vaginal bleeding accompanied by signs of poor perfusion strongly suggests hypovolaemic shock from postpartum haemorrhage. Immediate haemorrhage control, resuscitation and emergency escalation are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal Collapse",
+"question_text": "A pregnant woman suddenly collapses and becomes unresponsive in the antenatal clinic. The midwife cannot identify normal breathing. Which action should take priority?",
+"choices": [
+{"text": "Assess fetal movement before providing maternal care", "is_correct": false},
+{"text": "Activate the emergency response and begin maternal CPR", "is_correct": true},
+{"text": "Obtain a urine sample", "is_correct": false},
+{"text": "Wait for the obstetrician before commencing resuscitation", "is_correct": false}
+],
+"rationale": "Maternal cardiac arrest is an immediate threat to both maternal and fetal survival. CPR and emergency activation must begin immediately rather than being delayed for fetal assessment or the arrival of a senior clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "Which three initial actions are routinely performed for a newborn who requires initial support immediately after birth?",
+"choices": [
+{"text": "Drying, warming and appropriate stimulation", "is_correct": true},
+{"text": "Immediate chest compressions, medication and suctioning", "is_correct": false},
+{"text": "Routine oxygen administration, feeding and bathing", "is_correct": false},
+{"text": "Immediate intubation, antibiotics and blood transfusion", "is_correct": false}
+],
+"rationale": "Initial newborn care includes providing warmth, drying and appropriate stimulation while assessing breathing and heart rate. These steps help prevent hypothermia and stimulate breathing in newborns who are slow to establish respiration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn is delivered at a district hospital. After drying and stimulation, the baby remains apnoeic and has a heart rate of 80 beats per minute. What should the midwife do?",
+"choices": [
+{"text": "Begin effective positive-pressure ventilation", "is_correct": true},
+{"text": "Wait for spontaneous breathing for another ten minutes", "is_correct": false},
+{"text": "Begin chest compressions immediately without ventilation", "is_correct": false},
+{"text": "Give oral glucose solution", "is_correct": false}
+],
+"rationale": "Apnoea and a heart rate below 100 beats per minute indicate the need for prompt positive-pressure ventilation. Effective ventilation is the most important intervention in neonatal resuscitation because most newborn bradycardia is related to inadequate oxygenation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "During neonatal resuscitation, the newborn's heart rate remains below 60 beats per minute despite at least 30 seconds of effective positive-pressure ventilation that visibly moves the chest. What should the midwife do next?",
+"choices": [
+{"text": "Stop ventilation and observe", "is_correct": false},
+{"text": "Start coordinated chest compressions and ventilation using a 3:1 ratio", "is_correct": true},
+{"text": "Give oral fluids", "is_correct": false},
+{"text": "Continue stimulation only", "is_correct": false}
+],
+"rationale": "A heart rate below 60 beats per minute despite at least 30 seconds of effective ventilation indicates the need for chest compressions. Neonatal resuscitation generally uses a 3:1 compression-to-ventilation ratio to provide coordinated cardiac and respiratory support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn is born through meconium-stained amniotic fluid but is breathing spontaneously with a good heart rate and muscle tone. What is the appropriate initial management?",
+"choices": [
+{"text": "Perform routine endotracheal suctioning before any other care", "is_correct": false},
+{"text": "Provide routine initial newborn care and assess breathing and heart rate", "is_correct": true},
+{"text": "Begin chest compressions immediately", "is_correct": false},
+{"text": "Withhold drying and warming", "is_correct": false}
+],
+"rationale": "Routine tracheal suctioning is not recommended solely because the amniotic fluid is meconium-stained. A vigorous newborn should receive routine care, including warmth, drying and ongoing assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn remains apnoeic after initial drying and stimulation. The midwife begins bag-mask ventilation, but the chest does not rise and the heart rate does not improve. What should the midwife do first?",
+"choices": [
+{"text": "Increase chest compression depth", "is_correct": false},
+{"text": "Correct the mask seal and airway position, then reassess ventilation effectiveness", "is_correct": true},
+{"text": "Stop all resuscitation attempts", "is_correct": false},
+{"text": "Give oral medication", "is_correct": false}
+],
+"rationale": "Failure of the chest to rise suggests ineffective ventilation, which may result from a poor mask seal, incorrect head position or airway obstruction. Ventilation corrective steps should be performed promptly before proceeding to further resuscitation interventions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neonatal Resuscitation",
+"question_text": "A newborn has a heart rate of 50 beats per minute after effective positive-pressure ventilation and coordinated chest compressions. Which action should the resuscitation team consider next?",
+"choices": [
+{"text": "Stop resuscitation because the heart rate is below 100", "is_correct": false},
+{"text": "Continue effective ventilation and compressions, ensure advanced support and administer epinephrine if indicated by the neonatal resuscitation protocol", "is_correct": true},
+{"text": "Begin breastfeeding", "is_correct": false},
+{"text": "Provide routine postnatal bathing", "is_correct": false}
+],
+"rationale": "A heart rate remaining below 60 beats per minute despite effective ventilation and coordinated compressions indicates severe ongoing compromise. The team should ensure ventilation and compressions are effective, establish appropriate advanced access and administer epinephrine according to the neonatal resuscitation protocol when indicated.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "Which organisation in Ghana is responsible for coordinating national disaster prevention, preparedness, response and recovery activities?",
+"choices": [
+{"text": "National Disaster Management Organisation (NADMO)", "is_correct": true},
+{"text": "National Health Insurance Authority (NHIA)", "is_correct": false},
+{"text": "Ghana Medical and Dental Council", "is_correct": false},
+{"text": "National Commission for Civic Education (NCCE)", "is_correct": false}
+],
+"rationale": "NADMO is Ghana's national organisation responsible for coordinating disaster management activities. Its work includes disaster risk reduction, preparedness, response and support for recovery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "What is the main purpose of triage during a mass-casualty incident?",
+"choices": [
+{"text": "To treat patients strictly in order of arrival", "is_correct": false},
+{"text": "To prioritise patients according to the urgency of their conditions and available resources", "is_correct": true},
+{"text": "To provide the same treatment to every casualty", "is_correct": false},
+{"text": "To transfer all casualties to the nearest hospital without assessment", "is_correct": false}
+],
+"rationale": "Triage is the process of sorting casualties according to clinical urgency and the resources available. Its purpose is to maximise the number of lives saved during situations where immediate resources may be insufficient for everyone.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A district hospital receives several casualties following a major road traffic accident. Which casualty should generally receive the highest priority for immediate assessment and treatment?",
+"choices": [
+{"text": "A patient with a minor superficial wound who is walking", "is_correct": false},
+{"text": "A patient with severe respiratory distress and signs of airway compromise", "is_correct": true},
+{"text": "A patient with a closed wrist fracture and stable vital signs", "is_correct": false},
+{"text": "A patient with minor bruising and normal breathing", "is_correct": false}
+],
+"rationale": "Airway compromise and severe respiratory distress are immediate threats to life. This casualty requires urgent intervention before patients with minor injuries or stable conditions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A maternity unit is preparing for a possible flood in its surrounding community. Which action is most appropriate as part of disaster preparedness?",
+"choices": [
+{"text": "Wait until flooding occurs before identifying evacuation routes", "is_correct": false},
+{"text": "Develop an emergency plan, identify evacuation routes and prepare essential supplies", "is_correct": true},
+{"text": "Store all emergency equipment in the basement", "is_correct": false},
+{"text": "Discontinue communication with local emergency services", "is_correct": false}
+],
+"rationale": "Disaster preparedness requires advance planning, resource availability, communication arrangements and clearly identified evacuation routes. These measures improve the safety of pregnant women, newborns, staff and other patients during an emergency.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "During a mass-casualty incident, a casualty is unconscious, not breathing and does not begin breathing after airway repositioning. Under a commonly used START triage approach, which category is generally assigned?",
+"choices": [
+{"text": "Immediate", "is_correct": false},
+{"text": "Delayed", "is_correct": false},
+{"text": "Minor", "is_correct": false},
+{"text": "Deceased or expectant, according to the applicable triage protocol", "is_correct": true}
+],
+"rationale": "In the commonly used START approach, an adult casualty who remains apnoeic after airway repositioning is categorised as deceased/black. Triage categories and local protocols must be applied by trained responders, with reassessment as circumstances and resources change.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A flood has displaced several pregnant women and newborns in a rural community. Which response best reflects effective coordination between health services and disaster management authorities?",
+"choices": [
+{"text": "The maternity unit should manage all evacuation activities without external support", "is_correct": false},
+{"text": "Coordinate with NADMO, local health authorities and emergency services to provide safe evacuation, triage and referral", "is_correct": true},
+{"text": "Delay evacuation until all medical records have been recovered", "is_correct": false},
+{"text": "Send all displaced people to the same facility regardless of its capacity", "is_correct": false}
+],
+"rationale": "Effective disaster response requires coordination between NADMO, health services and other emergency agencies. This supports organised evacuation, identification of vulnerable individuals, appropriate triage and referral to facilities with adequate capacity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A district hospital's maternity unit has limited oxygen supplies during a major emergency. Several patients require oxygen, including a woman with severe respiratory distress and another with mild breathlessness. What should guide the allocation of the available oxygen?",
+"choices": [
+{"text": "The order in which patients arrived at the hospital", "is_correct": false},
+{"text": "Clinical urgency, likelihood of benefit and the established emergency allocation protocol", "is_correct": true},
+{"text": "The social status of each patient", "is_correct": false},
+{"text": "The preference of the patient's relatives", "is_correct": false}
+],
+"rationale": "Scarce resources should be allocated using transparent clinical triage principles and established protocols. Patients with immediate life-threatening needs and a reasonable likelihood of benefit should be prioritised rather than allocation being based on arrival order or social status.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Transportation and Referral",
+"question_text": "Which information is most important to communicate when referring a woman with an obstetric emergency to a higher-level facility?",
+"choices": [
+{"text": "Only the woman's name and residential address", "is_correct": false},
+{"text": "Clinical condition, vital signs, treatment given, response to treatment and reason for referral", "is_correct": true},
+{"text": "Only the name of the referring midwife", "is_correct": false},
+{"text": "The woman's occupation and preferred delivery method only", "is_correct": false}
+],
+"rationale": "A safe referral requires clear communication of the patient's clinical condition, assessment findings, interventions and response to treatment. This enables the receiving team to prepare appropriate care and continue management without unnecessary delays.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Emergency Transportation and Referral",
+"question_text": "A pregnant woman at 34 weeks' gestation develops severe vaginal bleeding and dizziness at a CHPS compound. What should the midwife do?",
+"choices": [
+{"text": "Advise the woman to return home and rest", "is_correct": false},
+{"text": "Stabilise the woman within available capacity and arrange urgent referral to an appropriate hospital", "is_correct": true},
+{"text": "Wait for the next antenatal clinic day", "is_correct": false},
+{"text": "Perform a digital vaginal examination before arranging referral", "is_correct": false}
+],
+"rationale": "Severe antepartum bleeding is a potentially life-threatening obstetric emergency requiring urgent hospital assessment. The midwife should initiate appropriate stabilisation, avoid unnecessary digital vaginal examination when placenta praevia has not been excluded, and arrange safe emergency transfer.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Transportation and Referral",
+"question_text": "A woman with suspected eclampsia requires transfer from a health centre to a regional hospital. Which action is most appropriate during transportation?",
+"choices": [
+{"text": "Transfer her without monitoring to avoid disturbing her", "is_correct": false},
+{"text": "Ensure appropriate stabilisation, airway safety, monitoring and communication with the receiving facility", "is_correct": true},
+{"text": "Allow her to travel alone with a relative", "is_correct": false},
+{"text": "Stop all prescribed emergency treatment during transfer", "is_correct": false}
+],
+"rationale": "A woman with suspected eclampsia may deteriorate or experience further seizures during transfer. Appropriate stabilisation, airway precautions, monitoring, treatment according to protocol and communication with the receiving facility are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Transportation and Referral",
+"question_text": "A woman in labour develops a prolapsed umbilical cord at a rural maternity facility. The nearest referral hospital is 45 minutes away. Which transport arrangement is most appropriate?",
+"choices": [
+{"text": "Use any available private vehicle without informing the receiving facility", "is_correct": false},
+{"text": "Arrange urgent appropriately equipped transport, maintain pressure relief on the cord and alert the receiving facility", "is_correct": true},
+{"text": "Allow the woman to walk to the vehicle", "is_correct": false},
+{"text": "Delay transfer until the next routine ambulance journey", "is_correct": false}
+],
+"rationale": "Cord prolapse with a long transfer time presents a serious risk of fetal hypoxia and requires urgent coordinated management. The presenting part should remain elevated, the woman should be positioned to reduce cord compression, and the receiving facility should be alerted while emergency transport is arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Emergency Transportation and Referral",
+"question_text": "A woman with postpartum haemorrhage is being referred to a regional hospital. During transfer, her blood pressure falls further and she becomes increasingly drowsy. What should the accompanying midwife do?",
+"choices": [
+{"text": "Continue the journey without reassessment", "is_correct": false},
+{"text": "Reassess and support airway, breathing and circulation, alert the receiving facility and seek urgent additional assistance", "is_correct": true},
+{"text": "Give the woman oral fluids while she is drowsy", "is_correct": false},
+{"text": "Stop all resuscitation measures until arrival", "is_correct": false}
+],
+"rationale": "Worsening hypotension and reduced consciousness indicate deteriorating shock and require immediate reassessment and supportive management. The receiving facility must be informed so that appropriate resuscitation resources and personnel are ready on arrival.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Emergency Transportation and Referral",
+"question_text": "A midwife refers a woman with severe pre-eclampsia to a regional hospital. Which action best demonstrates continuity of care?",
+"choices": [
+{"text": "Sending the woman without a referral note because the receiving team can repeat all assessments", "is_correct": false},
+{"text": "Providing a structured handover, referral documentation and details of treatment and observations", "is_correct": true},
+{"text": "Withholding information about medication already administered", "is_correct": false},
+{"text": "Asking the woman to explain all clinical findings herself", "is_correct": false}
+],
+"rationale": "A structured handover and complete referral documentation support continuity and patient safety. Details of clinical findings, medication, treatment response and ongoing risks help the receiving team make timely decisions.",
+"difficulty": "KNOWLEDGE"
+}
+]
+}
+]
+}
