@@ -1,0 +1,756 @@
+{
+"courses": [
+{
+"course_code": "HAP-111",
+"course_title": "Human Anatomy & Physiology I",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Anatomy and Physiology",
+"Cell Structure and Function",
+"Tissues and Membranes",
+"The Integumentary System",
+"The Skeletal System",
+"The Muscular System",
+"The Nervous System",
+"The Special Senses",
+"The Endocrine System",
+"Homeostasis"
+],
+"questions": [
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "Which statement correctly distinguishes anatomy from physiology?",
+"choices": [
+{"text": "Anatomy studies body structures, while physiology studies their functions", "is_correct": true},
+{"text": "Anatomy studies body functions, while physiology studies body structures", "is_correct": false},
+{"text": "Both anatomy and physiology study only diseases", "is_correct": false},
+{"text": "Anatomy studies microorganisms, while physiology studies medications", "is_correct": false}
+],
+"rationale": "Anatomy is the scientific study of the structure and organisation of the body and its parts. Physiology examines how these structures function and interact to maintain life.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "Which level of structural organisation is formed when two or more different tissues work together to perform a specific function?",
+"choices": [
+{"text": "Cellular level", "is_correct": false},
+{"text": "Chemical level", "is_correct": false},
+{"text": "Organ level", "is_correct": true},
+{"text": "Organism level", "is_correct": false}
+],
+"rationale": "An organ consists of two or more tissue types organised to perform particular functions. The heart, stomach and kidneys are examples of organs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "A nurse documents that a patient has pain in the right upper quadrant of the abdomen. Which anatomical reference is being used?",
+"choices": [
+{"text": "Anatomical directional terminology", "is_correct": false},
+{"text": "Abdominal regional terminology", "is_correct": true},
+{"text": "Body cavity terminology", "is_correct": false},
+{"text": "Cellular terminology", "is_correct": false}
+],
+"rationale": "The abdomen is commonly divided into four quadrants to describe the location of organs, pain and clinical findings. The right upper quadrant contains structures including much of the liver and the gallbladder.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "During a physical examination, a nurse asks a patient to lie flat on the back with the face directed upwards. Which anatomical position is being described?",
+"choices": [
+{"text": "Prone position", "is_correct": false},
+{"text": "Lateral position", "is_correct": false},
+{"text": "Supine position", "is_correct": true},
+{"text": "Fowler's position", "is_correct": false}
+],
+"rationale": "The supine position describes a person lying on the back with the face directed upwards. It is commonly used during physical examinations and certain clinical procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "Which cell organelle is primarily responsible for producing most of the energy required for cellular activities in the form of ATP?",
+"choices": [
+{"text": "Ribosome", "is_correct": false},
+{"text": "Mitochondrion", "is_correct": true},
+{"text": "Lysosome", "is_correct": false},
+{"text": "Golgi apparatus", "is_correct": false}
+],
+"rationale": "Mitochondria are the major sites of aerobic cellular respiration and ATP production. ATP supplies energy for processes such as active transport, muscle contraction and cellular synthesis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "Which structure controls the movement of substances into and out of the cell?",
+"choices": [
+{"text": "Nucleus", "is_correct": false},
+{"text": "Cell membrane", "is_correct": true},
+{"text": "Nucleolus", "is_correct": false},
+{"text": "Centrosome", "is_correct": false}
+],
+"rationale": "The cell membrane is a selectively permeable phospholipid bilayer containing proteins that regulate the movement of substances. This helps maintain the internal environment of the cell.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A patient with severe dehydration has an increased concentration of solutes in the extracellular fluid. What is likely to happen to the patient's body cells if this condition persists?",
+"choices": [
+{"text": "Water enters the cells, causing them to swell", "is_correct": false},
+{"text": "Water leaves the cells, causing them to shrink", "is_correct": true},
+{"text": "The cells immediately divide", "is_correct": false},
+{"text": "The cell membranes become completely impermeable to water", "is_correct": false}
+],
+"rationale": "An increase in extracellular solute concentration creates a hypertonic environment relative to the cells. Water moves out of the cells by osmosis, causing cellular shrinkage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A nurse explains that oxygen moves from an area of higher concentration in the blood to an area of lower concentration in body tissues. Which transport process is involved?",
+"choices": [
+{"text": "Active transport", "is_correct": false},
+{"text": "Diffusion", "is_correct": true},
+{"text": "Endocytosis", "is_correct": false},
+{"text": "Exocytosis", "is_correct": false}
+],
+"rationale": "Diffusion is the passive movement of particles from an area of higher concentration to an area of lower concentration. Oxygen moves down its concentration gradient from blood into tissues without direct expenditure of cellular energy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A patient with severe malaria develops significant tissue hypoxia and impaired cellular energy production. Which cellular process is most directly affected when oxygen availability becomes inadequate?",
+"choices": [
+{"text": "Aerobic cellular respiration", "is_correct": true},
+{"text": "DNA storage in the nucleus", "is_correct": false},
+{"text": "Formation of the cell membrane", "is_correct": false},
+{"text": "Packaging of proteins by the Golgi apparatus", "is_correct": false}
+],
+"rationale": "Aerobic cellular respiration requires oxygen to support efficient ATP production in mitochondria. Severe malaria may cause anaemia and impaired tissue oxygen delivery, reducing aerobic energy production and contributing to cellular dysfunction.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A patient has a genetic disorder affecting the production of proteins. Which cell organelle is directly responsible for protein synthesis?",
+"choices": [
+{"text": "Ribosome", "is_correct": true},
+{"text": "Lysosome", "is_correct": false},
+{"text": "Mitochondrion", "is_correct": false},
+{"text": "Centrosome", "is_correct": false}
+],
+"rationale": "Ribosomes translate messenger RNA into polypeptide chains during protein synthesis. They may be free in the cytoplasm or attached to the rough endoplasmic reticulum.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "Which type of tissue covers body surfaces, lines internal cavities and forms many glands?",
+"choices": [
+{"text": "Connective tissue", "is_correct": false},
+{"text": "Muscle tissue", "is_correct": false},
+{"text": "Epithelial tissue", "is_correct": true},
+{"text": "Nervous tissue", "is_correct": false}
+],
+"rationale": "Epithelial tissue covers external surfaces, lines body cavities and forms the secretory portions of glands. Its functions include protection, absorption, secretion and filtration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "Which type of connective tissue is specialised for storing energy and providing insulation?",
+"choices": [
+{"text": "Adipose tissue", "is_correct": true},
+{"text": "Cartilage", "is_correct": false},
+{"text": "Dense regular connective tissue", "is_correct": false},
+{"text": "Blood", "is_correct": false}
+],
+"rationale": "Adipose tissue consists mainly of adipocytes that store triglycerides. It provides energy reserves, thermal insulation and cushioning around certain organs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "A patient sustains an injury that damages the epithelial lining of the skin. Which function is most directly compromised?",
+"choices": [
+{"text": "Protection against mechanical injury and entry of microorganisms", "is_correct": true},
+{"text": "Production of red blood cells in bone marrow", "is_correct": false},
+{"text": "Transmission of nerve impulses to the brain", "is_correct": false},
+{"text": "Contraction of skeletal muscles", "is_correct": false}
+],
+"rationale": "Epithelial tissue forms protective barriers that limit physical injury and the entry of pathogens. Damage to the skin epithelium increases the risk of infection and fluid loss.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "A patient develops inflammation of the pleura following a respiratory infection. Which statement best describes the pleura?",
+"choices": [
+{"text": "A membrane surrounding the lungs and lining the thoracic cavity", "is_correct": true},
+{"text": "A membrane lining the abdominal cavity and covering abdominal organs", "is_correct": false},
+{"text": "A membrane covering the surface of the brain", "is_correct": false},
+{"text": "A membrane lining the inner surface of the heart chambers", "is_correct": false}
+],
+"rationale": "The pleura is a serous membrane consisting of visceral and parietal layers. It surrounds the lungs, lines the thoracic cavity and reduces friction during breathing through pleural fluid.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "Which layer of the skin contains blood vessels, sensory receptors, sweat glands and hair follicles?",
+"choices": [
+{"text": "Epidermis", "is_correct": false},
+{"text": "Dermis", "is_correct": true},
+{"text": "Stratum corneum", "is_correct": false},
+{"text": "Basal lamina", "is_correct": false}
+],
+"rationale": "The dermis is the connective tissue layer beneath the epidermis. It contains blood vessels, nerves, sensory receptors, hair follicles and sweat and sebaceous glands.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "A patient working outdoors in the hot climate of northern Ghana begins sweating heavily. Which physiological response is primarily responsible for helping to lower body temperature?",
+"choices": [
+{"text": "Constriction of skin blood vessels and reduced sweat production", "is_correct": false},
+{"text": "Evaporation of sweat from the skin surface", "is_correct": true},
+{"text": "Increased production of melanin", "is_correct": false},
+{"text": "Increased thickness of the epidermis", "is_correct": false}
+],
+"rationale": "Evaporation of sweat removes heat from the body surface and contributes to thermoregulation. Sweating is especially important during exposure to high environmental temperatures and physical activity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "A bedridden patient develops persistent redness over the sacral region. The area is intact, and the redness does not disappear when pressure is relieved. What does this finding most likely indicate?",
+"choices": [
+{"text": "A normal skin response to bathing", "is_correct": false},
+{"text": "A stage 1 pressure injury", "is_correct": true},
+{"text": "A second-degree thermal burn", "is_correct": false},
+{"text": "A fungal infection of the skin", "is_correct": false}
+],
+"rationale": "A stage 1 pressure injury presents as intact skin with non-blanchable erythema over a pressure area. Early recognition and pressure relief are important to prevent progression to deeper tissue damage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "A patient with extensive burns develops increasing thirst, tachycardia and reduced urine output. Which physiological problem is the nurse most concerned about?",
+"choices": [
+{"text": "Excessive fluid retention", "is_correct": false},
+{"text": "Fluid loss through damaged skin leading to hypovolaemia", "is_correct": true},
+{"text": "Increased production of red blood cells", "is_correct": false},
+{"text": "Excessive calcium absorption", "is_correct": false}
+],
+"rationale": "Extensive burns damage the skin barrier and increase fluid loss through evaporation and movement of fluid into injured tissues. Tachycardia, thirst and reduced urine output may indicate developing hypovolaemia and require urgent assessment and fluid management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "Which of the following is a major function of the skeletal system?",
+"choices": [
+{"text": "Production of digestive enzymes", "is_correct": false},
+{"text": "Support, protection, movement and blood cell formation", "is_correct": true},
+{"text": "Regulation of breathing rate only", "is_correct": false},
+{"text": "Production of insulin", "is_correct": false}
+],
+"rationale": "The skeletal system supports the body, protects internal organs and provides attachment points for muscles. Red bone marrow also produces blood cells through haematopoiesis, while bones store minerals such as calcium and phosphate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "Which bone is the longest and strongest bone in the human body?",
+"choices": [
+{"text": "Humerus", "is_correct": false},
+{"text": "Femur", "is_correct": true},
+{"text": "Tibia", "is_correct": false},
+{"text": "Fibula", "is_correct": false}
+],
+"rationale": "The femur is the longest and one of the strongest bones in the body. It extends from the hip to the knee and transmits body weight during standing and movement.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A child presents with bowed legs and delayed growth. The nurse suspects rickets due to vitamin D deficiency. Which physiological process is most directly affected?",
+"choices": [
+{"text": "Mineralisation of growing bones", "is_correct": true},
+{"text": "Production of bile in the liver", "is_correct": false},
+{"text": "Transmission of impulses along motor neurons", "is_correct": false},
+{"text": "Contraction of cardiac muscle", "is_correct": false}
+],
+"rationale": "Vitamin D supports calcium and phosphate absorption, which are essential for normal bone mineralisation. Deficiency in children can cause rickets, characterised by poor mineralisation of growing bones and skeletal deformities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A patient sustains a fracture of the femur following a road traffic accident. Which complication should the nurse prioritise assessing for during the initial evaluation?",
+"choices": [
+{"text": "Severe internal blood loss and hypovolaemic shock", "is_correct": true},
+{"text": "Increased production of insulin", "is_correct": false},
+{"text": "Improved oxygen-carrying capacity", "is_correct": false},
+{"text": "Excessive secretion of thyroid hormones", "is_correct": false}
+],
+"rationale": "A femoral fracture can cause substantial blood loss into surrounding tissues, even when external bleeding is absent. The nurse should urgently assess circulation, vital signs and signs of shock while arranging appropriate emergency management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "Which type of joint allows the greatest range of movement and is found at the shoulder and hip?",
+"choices": [
+{"text": "Hinge joint", "is_correct": false},
+{"text": "Pivot joint", "is_correct": false},
+{"text": "Ball-and-socket joint", "is_correct": true},
+{"text": "Fixed fibrous joint", "is_correct": false}
+],
+"rationale": "Ball-and-socket joints allow movement in multiple directions, including flexion, extension, abduction, adduction and rotation. The shoulder and hip are examples, although the shoulder has a greater range of movement than the hip.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "An older adult reports severe pain and swelling around the knee joint, with stiffness after periods of inactivity. The nurse suspects osteoarthritis. Which structure is primarily affected in this condition?",
+"choices": [
+{"text": "Articular cartilage and other structures of the joint", "is_correct": true},
+{"text": "The epidermis of the knee", "is_correct": false},
+{"text": "The spinal cord", "is_correct": false},
+{"text": "The red bone marrow only", "is_correct": false}
+],
+"rationale": "Osteoarthritis is a degenerative joint disease involving progressive loss of articular cartilage and changes in underlying bone and other joint tissues. These changes can cause pain, stiffness and reduced joint function.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Muscular System",
+"question_text": "Which type of muscle tissue is under voluntary control and is attached mainly to bones?",
+"choices": [
+{"text": "Smooth muscle", "is_correct": false},
+{"text": "Cardiac muscle", "is_correct": false},
+{"text": "Skeletal muscle", "is_correct": true},
+{"text": "Visceral muscle only", "is_correct": false}
+],
+"rationale": "Skeletal muscle is generally under voluntary control and attaches to bones through tendons. Its contraction produces body movement, maintains posture and generates heat.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Muscular System",
+"question_text": "A nurse asks a patient to bend the elbow and bring the hand towards the shoulder. Which movement is being performed?",
+"choices": [
+{"text": "Extension", "is_correct": false},
+{"text": "Flexion", "is_correct": true},
+{"text": "Abduction", "is_correct": false},
+{"text": "Rotation", "is_correct": false}
+],
+"rationale": "Flexion decreases the angle between two body parts at a joint. Bending the elbow brings the forearm closer to the upper arm and is an example of flexion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Muscular System",
+"question_text": "A patient with severe muscle weakness has difficulty maintaining posture and performing voluntary movements. Which function of skeletal muscle is directly impaired?",
+"choices": [
+{"text": "Production of bile", "is_correct": false},
+{"text": "Movement and maintenance of posture", "is_correct": true},
+{"text": "Filtration of blood plasma", "is_correct": false},
+{"text": "Secretion of thyroid hormones", "is_correct": false}
+],
+"rationale": "Skeletal muscles produce voluntary movement by contracting and pulling on bones. They also maintain posture and stabilise joints during standing and other activities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Muscular System",
+"question_text": "A patient with severe malnutrition has reduced muscle mass and weakness. Which explanation best accounts for the loss of muscle tissue?",
+"choices": [
+{"text": "The body may break down muscle proteins to provide amino acids for essential functions", "is_correct": true},
+{"text": "Muscle cells are converted directly into red blood cells", "is_correct": false},
+{"text": "The body permanently stops producing ATP", "is_correct": false},
+{"text": "All skeletal muscles become involuntary", "is_correct": false}
+],
+"rationale": "Inadequate protein and energy intake can cause the body to break down skeletal muscle proteins to supply amino acids and energy. Prolonged malnutrition therefore contributes to muscle wasting, weakness and reduced physical function.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Nervous System",
+"question_text": "Which part of the central nervous system is primarily responsible for coordinating voluntary movement, posture and balance?",
+"choices": [
+{"text": "Cerebellum", "is_correct": true},
+{"text": "Hypothalamus", "is_correct": false},
+{"text": "Medulla oblongata", "is_correct": false},
+{"text": "Thalamus", "is_correct": false}
+],
+"rationale": "The cerebellum coordinates voluntary movements and helps maintain posture, balance and muscle tone. Damage to it may result in poor coordination and an unsteady gait.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Nervous System",
+"question_text": "Which structure forms the main communication pathway between the brain and much of the peripheral nervous system?",
+"choices": [
+{"text": "Spinal cord", "is_correct": true},
+{"text": "Pituitary gland", "is_correct": false},
+{"text": "Cerebellum", "is_correct": false},
+{"text": "Thyroid gland", "is_correct": false}
+],
+"rationale": "The spinal cord carries sensory information to the brain and motor commands from the brain to the body. It also coordinates certain reflex actions independently of conscious brain processing.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A patient accidentally touches a hot cooking pot and immediately withdraws the hand before consciously recognising the pain. Which mechanism is responsible for this rapid response?",
+"choices": [
+{"text": "Endocrine feedback mechanism", "is_correct": false},
+{"text": "Spinal reflex arc", "is_correct": true},
+{"text": "Voluntary motor planning in the cerebrum", "is_correct": false},
+{"text": "Visual accommodation reflex", "is_correct": false}
+],
+"rationale": "A withdrawal reflex is a rapid protective response coordinated through a reflex arc, commonly involving the spinal cord. Sensory information is processed through spinal pathways to activate motor neurons before conscious perception of pain is completed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A patient with suspected stroke suddenly develops weakness of the right arm and right leg. Which side of the brain is most likely affected in a typical cerebral hemisphere stroke?",
+"choices": [
+{"text": "Right cerebral hemisphere", "is_correct": false},
+{"text": "Left cerebral hemisphere", "is_correct": true},
+{"text": "Both cerebellar hemispheres in every case", "is_correct": false},
+{"text": "Spinal cord only", "is_correct": false}
+],
+"rationale": "Most motor pathways cross to the opposite side of the body, so a lesion in the left cerebral hemisphere commonly causes right-sided weakness. Stroke requires urgent assessment and treatment because early intervention can reduce brain injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A patient with severe malaria develops confusion, seizures and reduced consciousness. Which system is directly involved in these manifestations?",
+"choices": [
+{"text": "Integumentary system", "is_correct": false},
+{"text": "Central nervous system", "is_correct": true},
+{"text": "Musculoskeletal system only", "is_correct": false},
+{"text": "Reproductive system", "is_correct": false}
+],
+"rationale": "The brain and spinal cord form the central nervous system. Severe malaria can affect the brain, causing cerebral malaria with impaired consciousness, seizures and other neurological complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A nurse assesses a patient with a head injury who develops unequal pupils and progressively reduced consciousness. What is the most appropriate priority?",
+"choices": [
+{"text": "Allow the patient to sleep and reassess after several hours", "is_correct": false},
+{"text": "Recognise possible increased intracranial pressure and initiate urgent emergency assessment and referral", "is_correct": true},
+{"text": "Give the patient food and oral fluids", "is_correct": false},
+{"text": "Encourage the patient to walk to improve alertness", "is_correct": false}
+],
+"rationale": "Unequal pupils and deteriorating consciousness after head injury are serious warning signs of possible intracranial pathology, including increased intracranial pressure. Airway, breathing and circulation must be assessed immediately while urgent medical intervention is arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A patient has damage to the autonomic nervous system and experiences an inability to regulate heart rate, blood pressure and sweating appropriately. Which function is primarily affected?",
+"choices": [
+{"text": "Control of involuntary body activities", "is_correct": true},
+{"text": "Voluntary movement of skeletal muscles only", "is_correct": false},
+{"text": "Formation of bones", "is_correct": false},
+{"text": "Production of digestive enzymes by the pancreas only", "is_correct": false}
+],
+"rationale": "The autonomic nervous system regulates involuntary functions such as heart rate, blood vessel tone, digestion and sweating. It consists mainly of sympathetic and parasympathetic divisions that help maintain internal balance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Special Senses",
+"question_text": "Which part of the eye contains photoreceptors responsible for detecting light?",
+"choices": [
+{"text": "Cornea", "is_correct": false},
+{"text": "Retina", "is_correct": true},
+{"text": "Iris", "is_correct": false},
+{"text": "Sclera", "is_correct": false}
+],
+"rationale": "The retina is the light-sensitive layer at the back of the eye. It contains rods, which are important for dim-light vision, and cones, which are responsible for colour and detailed vision.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Special Senses",
+"question_text": "A patient complains of difficulty hearing conversations, especially in noisy environments. Which structure contains the sensory receptors responsible for hearing?",
+"choices": [
+{"text": "Cochlea", "is_correct": true},
+{"text": "Semicircular canals", "is_correct": false},
+{"text": "Eustachian tube", "is_correct": false},
+{"text": "Pinna", "is_correct": false}
+],
+"rationale": "The cochlea is a spiral-shaped structure in the inner ear that contains the organ of Corti, where sensory hair cells convert sound vibrations into nerve impulses. These impulses are transmitted to the brain through the cochlear branch of the vestibulocochlear nerve.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Special Senses",
+"question_text": "A patient has difficulty seeing distant objects clearly but can read a book held close to the eyes. Which refractive error is most likely present?",
+"choices": [
+{"text": "Hypermetropia", "is_correct": false},
+{"text": "Myopia", "is_correct": true},
+{"text": "Presbyopia", "is_correct": false},
+{"text": "Astigmatism", "is_correct": false}
+],
+"rationale": "Myopia, or short-sightedness, causes distant objects to appear blurred while near objects may remain clear. Light is focused in front of the retina, commonly because the eyeball is too long or the refractive power is too strong.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Special Senses",
+"question_text": "A patient experiences dizziness and loss of balance after an inner-ear disorder. Which structures are most directly associated with maintaining balance and detecting rotational movement?",
+"choices": [
+{"text": "Semicircular canals", "is_correct": true},
+{"text": "Ossicles", "is_correct": false},
+{"text": "Cochlear duct only", "is_correct": false},
+{"text": "External auditory canal", "is_correct": false}
+],
+"rationale": "The semicircular canals detect angular or rotational movements of the head. They form part of the vestibular apparatus, which contributes to balance and spatial orientation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Special Senses",
+"question_text": "A patient with long-standing diabetes mellitus reports blurred vision. Which complication should the nurse consider as a possible cause?",
+"choices": [
+{"text": "Diabetic retinopathy", "is_correct": true},
+{"text": "Otitis media", "is_correct": false},
+{"text": "Tonsillitis", "is_correct": false},
+{"text": "Osteoarthritis", "is_correct": false}
+],
+"rationale": "Diabetic retinopathy results from damage to the retinal blood vessels associated with prolonged hyperglycaemia. It can cause visual impairment and blindness if not detected and managed appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "Which endocrine gland produces insulin?",
+"choices": [
+{"text": "Thyroid gland", "is_correct": false},
+{"text": "Pancreas", "is_correct": true},
+{"text": "Adrenal gland", "is_correct": false},
+{"text": "Pituitary gland", "is_correct": false}
+],
+"rationale": "Insulin is produced by the beta cells of the pancreatic islets of Langerhans. It lowers blood glucose by promoting glucose uptake in insulin-sensitive tissues and supporting storage of glucose as glycogen.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A patient with diabetes mellitus has an elevated blood glucose level. Which hormone normally helps reduce blood glucose concentration?",
+"choices": [
+{"text": "Glucagon", "is_correct": false},
+{"text": "Insulin", "is_correct": true},
+{"text": "Adrenaline", "is_correct": false},
+{"text": "Cortisol", "is_correct": false}
+],
+"rationale": "Insulin promotes glucose uptake by skeletal muscle and adipose tissue and supports glycogen synthesis in the liver. Its overall effect is to reduce elevated blood glucose concentrations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A patient presents with weight loss despite increased appetite, heat intolerance, sweating and a rapid heartbeat. Which endocrine disorder is most likely?",
+"choices": [
+{"text": "Hypothyroidism", "is_correct": false},
+{"text": "Hyperthyroidism", "is_correct": true},
+{"text": "Hypoparathyroidism", "is_correct": false},
+{"text": "Diabetes insipidus", "is_correct": false}
+],
+"rationale": "Hyperthyroidism involves excessive thyroid hormone activity, which increases metabolic rate and may cause weight loss, heat intolerance, sweating and tachycardia. Further assessment, including thyroid function testing, is required to establish the diagnosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A patient with inadequate iodine intake develops enlargement of the thyroid gland. Which physiological explanation best accounts for this finding?",
+"choices": [
+{"text": "Iodine deficiency reduces thyroid hormone synthesis and may stimulate thyroid enlargement", "is_correct": true},
+{"text": "Iodine deficiency causes excessive insulin production", "is_correct": false},
+{"text": "Iodine deficiency directly increases red blood cell destruction", "is_correct": false},
+{"text": "Iodine deficiency prevents the kidneys from filtering blood", "is_correct": false}
+],
+"rationale": "Iodine is required for the synthesis of thyroid hormones T3 and T4. Inadequate iodine intake can reduce hormone production and increase thyroid-stimulating hormone activity, leading to thyroid enlargement or goitre.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A patient with diabetes mellitus becomes sweaty, tremulous and confused after taking insulin but missing a meal. What is the most likely immediate problem?",
+"choices": [
+{"text": "Hypercalcaemia", "is_correct": false},
+{"text": "Hypoglycaemia", "is_correct": true},
+{"text": "Hyperthyroidism", "is_correct": false},
+{"text": "Hypertension", "is_correct": false}
+],
+"rationale": "Insulin lowers blood glucose, and taking it without adequate food intake can cause hypoglycaemia. Sweating, tremor and confusion are warning signs that require immediate blood glucose assessment and appropriate treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A patient with untreated adrenal insufficiency presents with severe weakness, vomiting, hypotension and confusion. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Adrenal crisis", "is_correct": true},
+{"text": "Thyroid storm", "is_correct": false},
+{"text": "Simple seasonal allergy", "is_correct": false},
+{"text": "Uncomplicated hyperglycaemia", "is_correct": false}
+],
+"rationale": "Adrenal crisis is a life-threatening deficiency of cortisol, often accompanied by circulatory instability and sometimes severe electrolyte disturbances. Hypotension, vomiting, weakness and altered mental status require urgent emergency treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Homeostasis",
+"question_text": "What is meant by homeostasis?",
+"choices": [
+{"text": "The maintenance of a relatively stable internal environment despite external changes", "is_correct": true},
+{"text": "The permanent absence of disease in the body", "is_correct": false},
+{"text": "The production of all body cells in the bone marrow", "is_correct": false},
+{"text": "The complete prevention of changes in body temperature", "is_correct": false}
+],
+"rationale": "Homeostasis refers to the regulation of the internal environment within limits compatible with normal cellular function. It involves coordinated responses by the nervous, endocrine and other body systems.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A person develops an increased body temperature during a febrile illness. Which response normally helps the body lose heat when the temperature set point returns towards normal?",
+"choices": [
+{"text": "Vasoconstriction and shivering", "is_correct": false},
+{"text": "Sweating and dilation of skin blood vessels", "is_correct": true},
+{"text": "Increased muscle contraction and reduced sweating", "is_correct": false},
+{"text": "Reduced blood flow to the skin and increased heat production", "is_correct": false}
+],
+"rationale": "Sweating promotes evaporative heat loss, while dilation of skin blood vessels increases heat transfer to the environment. These responses help reduce body temperature when the hypothalamic temperature set point is no longer elevated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A patient loses a large volume of blood following an accident. The heart rate increases and blood vessels constrict to maintain blood pressure. Which homeostatic mechanism is primarily responsible?",
+"choices": [
+{"text": "Negative feedback", "is_correct": true},
+{"text": "Positive feedback", "is_correct": false},
+{"text": "Diffusion", "is_correct": false},
+{"text": "Osmosis", "is_correct": false}
+],
+"rationale": "Negative feedback produces responses that oppose a disturbance and help restore a regulated variable towards its normal range. Following blood loss, increased sympathetic activity raises heart rate and causes vasoconstriction to support blood pressure and tissue perfusion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A patient with severe diarrhoea develops dehydration and reduced blood pressure. Which hormonal response helps the kidneys conserve water?",
+"choices": [
+{"text": "Reduced secretion of antidiuretic hormone", "is_correct": false},
+{"text": "Increased secretion of antidiuretic hormone", "is_correct": true},
+{"text": "Increased secretion of insulin", "is_correct": false},
+{"text": "Reduced secretion of aldosterone", "is_correct": false}
+],
+"rationale": "Antidiuretic hormone increases water reabsorption in the kidney collecting ducts, helping reduce water loss in urine. Its secretion rises when plasma osmolality increases or when circulating blood volume falls significantly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A patient with sickle cell disease becomes severely dehydrated during an episode of fever. Which physiological effect of dehydration can worsen sickling?",
+"choices": [
+{"text": "Reduced blood viscosity and increased red cell flexibility", "is_correct": false},
+{"text": "Increased blood concentration and red cell dehydration, favouring sickling", "is_correct": true},
+{"text": "Complete prevention of haemoglobin polymerisation", "is_correct": false},
+{"text": "Increased production of normal adult haemoglobin in all red cells", "is_correct": false}
+],
+"rationale": "Dehydration can increase blood viscosity and reduce red blood cell water content, favouring haemoglobin S polymerisation under low-oxygen conditions. This promotes red cell sickling and may contribute to vaso-occlusive complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A patient with severe anaemia develops fatigue, dizziness and shortness of breath during mild activity. Which physiological disturbance best explains these symptoms?",
+"choices": [
+{"text": "Increased oxygen-carrying capacity of the blood", "is_correct": false},
+{"text": "Reduced oxygen delivery to body tissues due to decreased haemoglobin", "is_correct": true},
+{"text": "Excessive oxygen storage in skeletal muscles", "is_correct": false},
+{"text": "Increased production of thyroid hormones", "is_correct": false}
+],
+"rationale": "Haemoglobin in red blood cells transports oxygen from the lungs to body tissues. Severe anaemia reduces the oxygen-carrying capacity of blood, resulting in tissue hypoxia and symptoms such as fatigue, dizziness and exertional dyspnoea.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A patient with prolonged vomiting develops muscle weakness and an irregular heartbeat. Laboratory results show a low serum potassium concentration. Which physiological process is most directly affected by this electrolyte disturbance?",
+"choices": [
+{"text": "Normal electrical activity of nerve and muscle cells", "is_correct": true},
+{"text": "Production of melanin in the skin", "is_correct": false},
+{"text": "Formation of the lens in the eye", "is_correct": false},
+{"text": "Secretion of bile by the liver", "is_correct": false}
+],
+"rationale": "Potassium is essential for maintaining the resting membrane potential of nerve and muscle cells, including cardiac muscle. Hypokalaemia can impair neuromuscular function and cause dangerous cardiac arrhythmias, requiring prompt clinical assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A patient with severe malaria has a high fever, rapid breathing, confusion and reduced urine output. Which interpretation best explains the seriousness of these findings?",
+"choices": [
+{"text": "The patient is experiencing normal physiological adaptation that requires no intervention", "is_correct": false},
+{"text": "Multiple body systems may be affected, with possible impaired perfusion and organ dysfunction", "is_correct": true},
+{"text": "The symptoms indicate an isolated skin disorder", "is_correct": false},
+{"text": "The patient has increased kidney function and improved tissue oxygenation", "is_correct": false}
+],
+"rationale": "Severe malaria can cause systemic complications, including impaired tissue perfusion, respiratory distress, neurological dysfunction and acute kidney injury. These findings require urgent assessment, monitoring and treatment according to Ghana Health Service and facility protocols.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A patient with uncontrolled diabetes mellitus presents with excessive thirst, frequent urination, dehydration and reduced blood pressure. Which mechanism best explains the increased urine output?",
+"choices": [
+{"text": "Glucose in the renal filtrate causes osmotic diuresis", "is_correct": true},
+{"text": "Insulin causes complete closure of the renal tubules", "is_correct": false},
+{"text": "The kidneys stop filtering blood", "is_correct": false},
+{"text": "The body produces excessive red blood cells", "is_correct": false}
+],
+"rationale": "When blood glucose exceeds the renal threshold, glucose remains in the filtrate and increases its osmotic pressure, reducing water reabsorption. This produces osmotic diuresis, leading to polyuria, dehydration and increased thirst.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A nurse is caring for a patient with severe dehydration who has a rapid weak pulse, cold extremities and reduced urine output. Which action should receive the highest priority?",
+"choices": [
+{"text": "Provide routine health education before reassessment", "is_correct": false},
+{"text": "Recognise possible circulatory shock, assess ABCs and initiate urgent emergency management", "is_correct": true},
+{"text": "Encourage the patient to walk to improve circulation", "is_correct": false},
+{"text": "Delay intervention until the patient reports severe thirst", "is_correct": false}
+],
+"rationale": "A rapid weak pulse, cold extremities and oliguria suggest poor tissue perfusion and possible hypovolaemic shock. Immediate assessment and emergency management of circulation are priorities to prevent progression to organ failure.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A patient suddenly develops facial drooping, arm weakness and difficulty speaking. What should the nurse do first?",
+"choices": [
+{"text": "Arrange urgent stroke assessment and activate the facility's emergency response pathway", "is_correct": true},
+{"text": "Give the patient food and water to assess swallowing", "is_correct": false},
+{"text": "Ask the patient to sleep and reassess the next day", "is_correct": false},
+{"text": "Massage the weak arm to restore movement", "is_correct": false}
+],
+"rationale": "Sudden facial drooping, arm weakness and speech difficulty are recognised warning signs of stroke. The nurse should establish the time symptoms began, assess immediate physiological stability and arrange urgent referral for time-sensitive stroke care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A patient with diabetes mellitus is unconscious, and a bedside blood glucose test confirms severe hypoglycaemia. What is the most appropriate immediate response by a trained healthcare professional?",
+"choices": [
+{"text": "Give sugar water orally", "is_correct": false},
+{"text": "Administer an appropriate emergency glucose treatment by a suitable route according to protocol", "is_correct": true},
+{"text": "Give the patient's usual insulin dose", "is_correct": false},
+{"text": "Wait until the patient regains consciousness before treating", "is_correct": false}
+],
+"rationale": "Severe hypoglycaemia with unconsciousness is a medical emergency requiring prompt glucose replacement using an appropriate non-oral route. Oral food or fluids should not be given to an unconscious patient because of the risk of aspiration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A patient with chronic kidney disease develops bone pain and increased fracture risk. Which explanation best describes the relationship between kidney function and bone health?",
+"choices": [
+{"text": "The kidneys help regulate calcium, phosphate and vitamin D metabolism", "is_correct": true},
+{"text": "The kidneys produce all the collagen in bones", "is_correct": false},
+{"text": "The kidneys are responsible for voluntary muscle contraction", "is_correct": false},
+{"text": "The kidneys prevent all bone remodelling", "is_correct": false}
+],
+"rationale": "The kidneys activate vitamin D and regulate phosphate and calcium balance, all of which are important for bone health. Chronic kidney disease can disrupt mineral metabolism and contribute to renal bone disease.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "A patient with a large area of damaged skin following a burn is at increased risk of infection. Which normal function of the integumentary system has been compromised?",
+"choices": [
+{"text": "Formation of a protective physical barrier against microorganisms", "is_correct": true},
+{"text": "Production of cerebrospinal fluid", "is_correct": false},
+{"text": "Regulation of blood glucose by insulin", "is_correct": false},
+{"text": "Formation of red blood cells in the spleen", "is_correct": false}
+],
+"rationale": "Intact skin acts as the body's first line of defence against microbial entry and excessive fluid loss. Extensive burns disrupt this barrier, increasing the risk of infection and other complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Muscular System",
+"question_text": "A patient with a low serum calcium level develops muscle spasms and tingling around the mouth. Which physiological explanation is most appropriate?",
+"choices": [
+{"text": "Reduced calcium availability increases neuromuscular excitability", "is_correct": true},
+{"text": "Low calcium prevents all nerve impulses from being generated", "is_correct": false},
+{"text": "Calcium deficiency causes immediate paralysis of every skeletal muscle", "is_correct": false},
+{"text": "Low calcium increases the production of insulin", "is_correct": false}
+],
+"rationale": "Calcium contributes to the regulation of nerve and muscle excitability. Hypocalcaemia can increase neuromuscular irritability, causing paraesthesia, muscle cramps and, in severe cases, tetany.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
