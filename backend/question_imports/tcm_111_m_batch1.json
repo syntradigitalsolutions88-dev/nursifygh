@@ -1,0 +1,731 @@
+{
+"courses": [
+{
+"course_code": "TCM-111-M",
+"course_title": "Therapeutic Communication",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Therapeutic Communication in Midwifery",
+"Verbal and Non-Verbal Communication",
+"Active Listening and Empathy",
+"Therapeutic Communication Techniques",
+"Barriers to Effective Communication",
+"Communication with Special Populations",
+"Interprofessional Communication and SBAR",
+"Conflict Resolution in Maternity Care",
+"Cultural Sensitivity and Diversity"
+],
+"questions": [
+{
+"topic": "Introduction to Therapeutic Communication in Midwifery",
+"question_text": "What is the primary purpose of therapeutic communication in midwifery?",
+"choices": [
+{"text": "To establish a professional relationship that supports the woman's physical and emotional wellbeing", "is_correct": true},
+{"text": "To persuade every woman to accept the midwife's personal opinions", "is_correct": false},
+{"text": "To reduce the time spent interacting with women", "is_correct": false},
+{"text": "To prevent women from asking questions about their care", "is_correct": false}
+],
+"rationale": "Therapeutic communication is a purposeful, professional interaction that promotes trust, understanding and effective care. It enables the midwife to identify concerns, provide information and support informed decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Therapeutic Communication in Midwifery",
+"question_text": "Which of the following is a fundamental principle of therapeutic communication?",
+"choices": [
+{"text": "Judging the woman's decisions according to the midwife's beliefs", "is_correct": false},
+{"text": "Maintaining respect, empathy, confidentiality and professional boundaries", "is_correct": true},
+{"text": "Sharing the woman's personal information with anyone who requests it", "is_correct": false},
+{"text": "Avoiding discussions about sensitive health concerns", "is_correct": false}
+],
+"rationale": "Therapeutic communication requires respect for the woman's dignity, privacy and autonomy. Professional boundaries and confidentiality help establish a safe environment in which women can discuss sensitive concerns.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Communication",
+"question_text": "Which statement best describes verbal communication?",
+"choices": [
+{"text": "The use of spoken or written words to convey information", "is_correct": true},
+{"text": "The transmission of messages exclusively through facial expressions", "is_correct": false},
+{"text": "The use of body posture without words", "is_correct": false},
+{"text": "The interpretation of physical distance alone", "is_correct": false}
+],
+"rationale": "Verbal communication involves the use of words, whether spoken or written. In midwifery, it is used during interviews, health education, counselling and clinical documentation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Communication",
+"question_text": "Which of the following is an example of non-verbal communication?",
+"choices": [
+{"text": "Explaining the stages of labour", "is_correct": false},
+{"text": "Writing instructions on a discharge form", "is_correct": false},
+{"text": "Maintaining appropriate eye contact and using an encouraging facial expression", "is_correct": true},
+{"text": "Giving a verbal report to a doctor", "is_correct": false}
+],
+"rationale": "Non-verbal communication conveys meaning through facial expressions, gestures, posture, eye contact and other behaviours. These cues can communicate reassurance, interest or concern even when no words are spoken.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "What is active listening?",
+"choices": [
+{"text": "Listening while preparing an unrelated response", "is_correct": false},
+{"text": "Giving full attention, interpreting the message and responding appropriately", "is_correct": true},
+{"text": "Allowing the woman to speak without acknowledging her concerns", "is_correct": false},
+{"text": "Interrupting frequently to correct the woman's statements", "is_correct": false}
+],
+"rationale": "Active listening involves concentration, appropriate non-verbal responses and clarification of the speaker's meaning. It helps the midwife understand the woman's concerns and obtain accurate information.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "Which statement best demonstrates empathy in midwifery communication?",
+"choices": [
+{"text": "You should not be worried because childbirth is natural", "is_correct": false},
+{"text": "Other women experience worse pain than you", "is_correct": false},
+{"text": "I can see that you are worried about the delivery; would you like to tell me more?", "is_correct": true},
+{"text": "You are worrying unnecessarily", "is_correct": false}
+],
+"rationale": "Empathy involves recognizing and attempting to understand another person's feelings without dismissing them. The response acknowledges the woman's emotional experience and invites her to express herself further.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "Which communication technique encourages a woman to provide detailed information about her experiences?",
+"choices": [
+{"text": "Open-ended questioning", "is_correct": true},
+{"text": "Giving false reassurance", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false},
+{"text": "Making judgmental statements", "is_correct": false}
+],
+"rationale": "Open-ended questions allow women to explain their experiences in their own words. They are useful during antenatal interviews, labour assessment and postnatal counselling.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "What is the main purpose of paraphrasing during a therapeutic conversation?",
+"choices": [
+{"text": "To change the woman's meaning to suit the midwife", "is_correct": false},
+{"text": "To repeat the woman's message in different words to confirm understanding", "is_correct": true},
+{"text": "To discourage the woman from discussing emotional issues", "is_correct": false},
+{"text": "To provide an unrelated explanation", "is_correct": false}
+],
+"rationale": "Paraphrasing restates the essential meaning of a woman's message in the midwife's own words. It allows both parties to confirm that the information has been understood correctly.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "Which therapeutic communication technique involves allowing a brief period without speaking so that a woman can gather her thoughts?",
+"choices": [
+{"text": "Confrontation", "is_correct": false},
+{"text": "Changing the subject", "is_correct": false},
+{"text": "Therapeutic silence", "is_correct": true},
+{"text": "Giving advice", "is_correct": false}
+],
+"rationale": "Therapeutic silence gives the woman time to reflect, process emotions and decide what she wishes to communicate. The midwife should remain attentive and use appropriate non-verbal behaviour to show continued support.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "Which of the following is a physical barrier to effective communication in a maternity unit?",
+"choices": [
+{"text": "A midwife's personal prejudice", "is_correct": false},
+{"text": "Excessive noise from a crowded ward", "is_correct": true},
+{"text": "The woman's fear of childbirth", "is_correct": false},
+{"text": "Use of unfamiliar medical terminology", "is_correct": false}
+],
+"rationale": "Noise can interfere with hearing and understanding spoken messages. Crowded and noisy maternity environments may reduce privacy and make communication difficult.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "Which communication approach is most appropriate when providing care to an adolescent pregnant woman?",
+"choices": [
+{"text": "Use judgmental language to discourage early pregnancy", "is_correct": false},
+{"text": "Provide respectful, age-appropriate information and protect her privacy within applicable safeguarding requirements", "is_correct": true},
+{"text": "Discuss all her personal information with other patients", "is_correct": false},
+{"text": "Exclude her from decisions because of her age", "is_correct": false}
+],
+"rationale": "Adolescents require respectful, non-judgmental and developmentally appropriate communication. The midwife should encourage participation, explain confidentiality and follow applicable safeguarding and consent requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "What does the acronym SBAR represent in interprofessional communication?",
+"choices": [
+{"text": "Situation, Background, Assessment, Recommendation", "is_correct": true},
+{"text": "Symptoms, Behaviour, Action, Review", "is_correct": false},
+{"text": "Situation, Birth, Advice, Referral", "is_correct": false},
+{"text": "Summary, Background, Action, Response", "is_correct": false}
+],
+"rationale": "SBAR is a structured communication tool consisting of Situation, Background, Assessment and Recommendation. It helps healthcare professionals communicate important clinical information clearly and consistently.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Conflict Resolution in Maternity Care",
+"question_text": "Which approach is most appropriate when resolving a disagreement between a midwife and a woman's relative?",
+"choices": [
+{"text": "Shouting to establish professional authority", "is_correct": false},
+{"text": "Ignoring the relative throughout the woman's admission", "is_correct": false},
+{"text": "Listening respectfully, clarifying concerns and discussing acceptable solutions while respecting the woman's wishes", "is_correct": true},
+{"text": "Allowing the relative to make all clinical decisions", "is_correct": false}
+],
+"rationale": "Constructive conflict resolution requires respectful listening, clarification and collaborative problem-solving. The woman's autonomy and safety must remain central to decisions about her care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Sensitivity and Diversity",
+"question_text": "What is culturally sensitive communication in midwifery?",
+"choices": [
+{"text": "Assuming that every woman from a particular ethnic group has identical beliefs", "is_correct": false},
+{"text": "Respecting cultural differences while providing safe, evidence-based and individualized care", "is_correct": true},
+{"text": "Rejecting all traditional beliefs without discussion", "is_correct": false},
+{"text": "Allowing cultural practices to override every clinical safety requirement", "is_correct": false}
+],
+"rationale": "Culturally sensitive communication recognizes that beliefs, values and practices influence healthcare experiences. The midwife should explore individual preferences respectfully while maintaining professional standards and patient safety.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Communication",
+"question_text": "Which statement about non-verbal communication is correct?",
+"choices": [
+{"text": "It always has the same meaning across all cultures", "is_correct": false},
+{"text": "It includes posture, gestures, facial expressions, touch and eye contact", "is_correct": true},
+{"text": "It is unnecessary when spoken language is clear", "is_correct": false},
+{"text": "It can only be used by people who cannot speak", "is_correct": false}
+],
+"rationale": "Non-verbal communication includes several behaviours that may reinforce or contradict spoken messages. Their interpretation can vary across cultures, so midwives should avoid making assumptions about their meaning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "Which response demonstrates the use of clarification?",
+"choices": [
+{"text": "You should stop thinking about that", "is_correct": false},
+{"text": "Everything will be fine, so do not worry", "is_correct": false},
+{"text": "When you say you feel weak, do you mean you feel dizzy or physically tired?", "is_correct": true},
+{"text": "Let us discuss something else", "is_correct": false}
+],
+"rationale": "Clarification helps the midwife obtain a more precise understanding of an unclear statement. It reduces the risk of misunderstanding symptoms or concerns that may influence clinical decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A woman in active labour is crying and says, 'I am afraid I may die during childbirth.' Which response by the midwife best demonstrates therapeutic communication?",
+"choices": [
+{"text": "Stop crying because nothing bad will happen", "is_correct": false},
+{"text": "Many women deliver safely, so your fear is unnecessary", "is_correct": false},
+{"text": "You seem very frightened. Can you tell me what worries you most?", "is_correct": true},
+{"text": "You should not think about death during labour", "is_correct": false}
+],
+"rationale": "The response acknowledges the woman's emotion and invites her to explain the source of her fear. This approach promotes trust and allows the midwife to identify whether she needs further information, reassurance or psychological support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "During an antenatal interview, a woman says, 'I do not think my husband wants this pregnancy.' Which response is most appropriate?",
+"choices": [
+{"text": "Why did you become pregnant if your husband does not want a child?", "is_correct": false},
+{"text": "You should leave your husband immediately", "is_correct": false},
+{"text": "Can you tell me more about what has made you feel this way?", "is_correct": true},
+{"text": "Your husband will definitely change his mind", "is_correct": false}
+],
+"rationale": "An open-ended question encourages the woman to discuss her feelings and circumstances without being judged. It also helps the midwife assess her emotional wellbeing and identify any need for additional support or safeguarding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A woman in labour is explaining her discomfort, but the midwife repeatedly interrupts her to give instructions. What should the midwife do to improve communication?",
+"choices": [
+{"text": "Allow the woman to finish speaking, listen attentively and respond to her concerns", "is_correct": true},
+{"text": "Continue interrupting so that the assessment is completed quickly", "is_correct": false},
+{"text": "Avoid eye contact and leave the room", "is_correct": false},
+{"text": "Tell the woman that only the midwife is allowed to speak", "is_correct": false}
+],
+"rationale": "Active listening requires giving the speaker sufficient time to express concerns without unnecessary interruption. This improves rapport and may reveal important clinical or emotional information.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A postpartum woman says, 'I feel like I am failing because my baby does not latch properly.' Which response best uses reflection?",
+"choices": [
+{"text": "You should not feel that way because breastfeeding is easy", "is_correct": false},
+{"text": "You feel disappointed because breastfeeding has not gone as you expected", "is_correct": true},
+{"text": "Your baby will eventually learn without your assistance", "is_correct": false},
+{"text": "Let us stop discussing breastfeeding", "is_correct": false}
+],
+"rationale": "Reflection identifies and returns the emotional meaning of the woman's statement. It helps her recognize and explore her feelings while allowing the midwife to provide appropriate breastfeeding support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A pregnant woman attends a CHPS compound but speaks only Twi, while the midwife communicates mainly in English. What should the midwife do?",
+"choices": [
+{"text": "Continue speaking English loudly until the woman understands", "is_correct": false},
+{"text": "Use a suitable interpreter or a language the woman understands and confirm comprehension", "is_correct": true},
+{"text": "Assume the woman understands because she is attending antenatal clinic", "is_correct": false},
+{"text": "Ask another patient to explain the clinical information", "is_correct": false}
+],
+"rationale": "A language difference can prevent accurate communication and informed participation in care. The midwife should use an appropriate interpreter or mutually understood language and check that the woman has understood the information.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity",
+"question_text": "A pregnant woman explains that her family believes certain foods should be avoided during pregnancy. What is the most appropriate response?",
+"choices": [
+{"text": "Tell her that all traditional beliefs are foolish", "is_correct": false},
+{"text": "Respectfully explore the belief and discuss its possible nutritional or safety implications using accurate health information", "is_correct": true},
+{"text": "Insist that she follows every family instruction without discussion", "is_correct": false},
+{"text": "Refuse to provide further antenatal care", "is_correct": false}
+],
+"rationale": "The midwife should understand the woman's cultural context without judging her beliefs. Respectful discussion allows the midwife to identify potentially harmful dietary restrictions and provide appropriate nutrition education.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A pregnant adolescent tells the midwife that she is afraid her parents will discover the pregnancy. What should the midwife do?",
+"choices": [
+{"text": "Immediately disclose all information to her parents without considering confidentiality requirements", "is_correct": false},
+{"text": "Listen without judgment, explain confidentiality and its limits, and assess her safety and support needs", "is_correct": true},
+{"text": "Tell her that adolescents should not receive antenatal care", "is_correct": false},
+{"text": "Promise absolute secrecy regardless of any safeguarding concern", "is_correct": false}
+],
+"rationale": "Adolescents need a supportive environment in which they can discuss sensitive concerns. The midwife should explain the limits of confidentiality, assess safeguarding issues and follow applicable legal and professional requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A woman with hearing impairment attends antenatal clinic. Which communication method is most appropriate?",
+"choices": [
+{"text": "Speak while facing away from her", "is_correct": false},
+{"text": "Shout from across the consulting room", "is_correct": false},
+{"text": "Ask about her preferred communication method and provide suitable visual or sign-language support", "is_correct": true},
+{"text": "Communicate only with her companion without involving her", "is_correct": false}
+],
+"rationale": "Communication should be adapted to the woman's individual needs and preferences. Visual information, writing or qualified sign-language interpretation may improve understanding while preserving her direct participation in care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A pregnant woman with visual impairment attends a maternity clinic. How should the midwife provide information about a planned examination?",
+"choices": [
+{"text": "Explain the procedure verbally, describe relevant actions and obtain informed consent", "is_correct": true},
+{"text": "Assume that she cannot understand clinical information", "is_correct": false},
+{"text": "Ask her companion to consent on her behalf without assessing her capacity", "is_correct": false},
+{"text": "Perform the examination without explanation", "is_correct": false}
+],
+"rationale": "Visual impairment does not automatically affect a woman's ability to understand information or make decisions. The midwife should provide accessible explanations, allow questions and obtain consent directly from the woman.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A postpartum woman appears withdrawn, cries frequently and says that she feels unable to care for her baby. What should the midwife do FIRST?",
+"choices": [
+{"text": "Tell her that all mothers experience these feelings and she should ignore them", "is_correct": false},
+{"text": "Listen supportively, assess her emotional state and safety, including any thoughts of self-harm, and arrange appropriate help", "is_correct": true},
+{"text": "Discharge her immediately to reduce stress", "is_correct": false},
+{"text": "Tell her relatives that she is not a good mother", "is_correct": false}
+],
+"rationale": "Withdrawal, persistent crying and difficulty coping may indicate a postpartum mental health problem requiring assessment. The midwife should communicate empathetically, assess immediate safety and facilitate appropriate mental health support or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "A midwife needs to report a pregnant woman with severe hypertension to the doctor. Which information belongs in the Situation component of SBAR?",
+"choices": [
+{"text": "The woman's previous obstetric history", "is_correct": false},
+{"text": "The current problem: a pregnant woman with severe hypertension requiring urgent review", "is_correct": true},
+{"text": "The midwife's recommendation for long-term follow-up after discharge", "is_correct": false},
+{"text": "The full history of the maternity unit", "is_correct": false}
+],
+"rationale": "The Situation component briefly identifies the patient and the immediate reason for communication. Relevant history, clinical interpretation and recommendations are then presented in the other SBAR components.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "A midwife is handing over a woman in labour to another midwife at the end of a shift. Which practice best promotes continuity of care?",
+"choices": [
+{"text": "Provide a structured handover containing the woman's condition, relevant observations, interventions and outstanding care needs", "is_correct": true},
+{"text": "Give only the woman's name and bed number", "is_correct": false},
+{"text": "Discuss the woman's condition in a public area where visitors can hear", "is_correct": false},
+{"text": "Leave without communicating because the records are available", "is_correct": false}
+],
+"rationale": "A structured handover communicates essential information and outstanding clinical responsibilities. It reduces omissions and supports safe continuity of maternal and newborn care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "A midwife contacts a doctor because a woman in labour has an abnormal fetal heart rate. Which statement is most appropriate for the Recommendation component of SBAR?",
+"choices": [
+{"text": "The woman was admitted three hours ago", "is_correct": false},
+{"text": "Her antenatal history includes two previous pregnancies", "is_correct": false},
+{"text": "I recommend urgent assessment at the bedside and further management of possible fetal compromise", "is_correct": true},
+{"text": "I am working in the maternity unit today", "is_correct": false}
+],
+"rationale": "The Recommendation component communicates the action or response required from the receiving professional. A clear request for urgent bedside assessment helps ensure that the clinical concern is addressed promptly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Conflict Resolution in Maternity Care",
+"question_text": "A woman's husband insists that he should make all decisions about her delivery, but the woman is conscious and able to make her own decisions. What should the midwife do?",
+"choices": [
+{"text": "Allow the husband to make decisions without consulting the woman", "is_correct": false},
+{"text": "Respectfully explain that the woman is the primary decision-maker and involve her in discussions, with her consent for family participation", "is_correct": true},
+{"text": "Ask the husband to leave permanently without assessing the woman's wishes", "is_correct": false},
+{"text": "Ignore the woman and continue discussing the care plan with her husband", "is_correct": false}
+],
+"rationale": "A competent adult woman has the right to participate in and make decisions about her own healthcare. Family involvement should be guided by her wishes and must not replace her autonomy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity",
+"question_text": "A woman requests that her mother-in-law be present during childbirth because this is important in her family tradition. What should the midwife do?",
+"choices": [
+{"text": "Automatically refuse because relatives should never be present during childbirth", "is_correct": false},
+{"text": "Explore the woman's preference and facilitate appropriate support if it is safe and consistent with facility policy", "is_correct": true},
+{"text": "Allow the mother-in-law to make all clinical decisions", "is_correct": false},
+{"text": "Tell the woman that cultural preferences are irrelevant to maternity care", "is_correct": false}
+],
+"rationale": "Respectful maternity care recognizes the woman's preferences and the value of appropriate support during childbirth. The midwife should balance these preferences with privacy, infection prevention, safety and facility requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A midwife explains a complicated medical procedure using terms such as 'hypertension', 'haemorrhage' and 'foetal compromise' without explanation. The woman appears confused. What should the midwife do?",
+"choices": [
+{"text": "Repeat the same technical terms more loudly", "is_correct": false},
+{"text": "Use simple language, explain unfamiliar terms and ask the woman to describe her understanding", "is_correct": true},
+{"text": "Assume that the woman understands because she is attending hospital", "is_correct": false},
+{"text": "End the discussion to avoid further confusion", "is_correct": false}
+],
+"rationale": "Excessive medical terminology can create a communication barrier and reduce informed participation. Plain language and checking understanding help ensure that the woman receives and interprets information correctly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A woman tells the midwife, 'I am afraid my baby will be harmed because I have HIV.' Which response is most therapeutic?",
+"choices": [
+{"text": "You should not have become pregnant if you have HIV", "is_correct": false},
+{"text": "There is no reason to discuss this because you already know your status", "is_correct": false},
+{"text": "It sounds as though you are worried about your baby's health. Let us discuss the care and support available to reduce the risk of transmission", "is_correct": true},
+{"text": "You must tell everyone in your family immediately", "is_correct": false}
+],
+"rationale": "The response acknowledges the woman's fear and offers accurate, supportive discussion without stigma. Appropriate counselling can explain prevention of mother-to-child transmission and reinforce the importance of continuing recommended care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A woman in labour becomes silent after being informed that an emergency intervention may be necessary. Which response by the midwife is most appropriate?",
+"choices": [
+{"text": "Leave immediately because silence means she does not want assistance", "is_correct": false},
+{"text": "Allow a brief period of therapeutic silence, remain present and invite her to ask questions when ready", "is_correct": true},
+{"text": "Continue speaking rapidly until she responds", "is_correct": false},
+{"text": "Tell her that she has no right to question clinical decisions", "is_correct": false}
+],
+"rationale": "Therapeutic silence can provide time for a woman to process distressing information. The midwife should remain available, check understanding and support informed decision-making without unnecessary pressure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A woman with a history of severe mental illness is admitted in labour and appears frightened and suspicious of the healthcare team. Which approach is most appropriate?",
+"choices": [
+{"text": "Argue with her until she accepts the midwife's explanation", "is_correct": false},
+{"text": "Use calm, simple communication, maintain a non-threatening approach and assess her immediate needs and safety", "is_correct": true},
+{"text": "Ignore her because she has a psychiatric history", "is_correct": false},
+{"text": "Discuss her mental health history openly with other patients", "is_correct": false}
+],
+"rationale": "Calm, clear and non-threatening communication can reduce distress and help establish trust. The midwife should assess the woman's current mental state, physical condition and safety while involving appropriate mental health support when needed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Conflict Resolution in Maternity Care",
+"question_text": "A woman refuses a recommended vaginal examination during labour. Which response by the midwife is most appropriate?",
+"choices": [
+{"text": "Perform the examination because it is part of routine maternity care", "is_correct": false},
+{"text": "Explain the purpose, benefits and possible risks, explore her concerns and respect her informed decision", "is_correct": true},
+{"text": "Threaten to discontinue all maternity care", "is_correct": false},
+{"text": "Ask a relative to force her to accept the examination", "is_correct": false}
+],
+"rationale": "Informed consent is required before an examination, and a woman with decision-making capacity may refuse it. The midwife should provide clear information, explore concerns and discuss alternative approaches while continuing appropriate care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A pregnant woman with an intellectual disability attends antenatal clinic with a support person. Which communication approach is most appropriate?",
+"choices": [
+{"text": "Direct all questions to the support person and ignore the woman", "is_correct": false},
+{"text": "Use clear, simple language, allow extra time and address the woman directly while involving her support person with her consent", "is_correct": true},
+{"text": "Assume that she cannot make any healthcare decisions", "is_correct": false},
+{"text": "Avoid explaining procedures because she may not understand", "is_correct": false}
+],
+"rationale": "Communication should be adapted to the woman's needs without automatically removing her autonomy. Simple explanations, additional time and appropriate support promote understanding and participation in care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "A midwife notices that a doctor's verbal instruction about a medication dose is unclear. What should the midwife do before administering the medication?",
+"choices": [
+{"text": "Guess the intended dose based on previous experience", "is_correct": false},
+{"text": "Clarify and confirm the instruction with the prescribing professional before proceeding", "is_correct": true},
+{"text": "Ask another patient what dose is normally given", "is_correct": false},
+{"text": "Administer the largest possible dose to ensure effectiveness", "is_correct": false}
+],
+"rationale": "Unclear medication instructions create a risk of medication error and patient harm. The midwife must clarify and confirm the order through the appropriate communication process before administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Sensitivity and Diversity",
+"question_text": "A woman requests a traditional herbal preparation during pregnancy because her family believes it prevents difficult labour. What should the midwife do?",
+"choices": [
+{"text": "Approve its use without asking what the preparation contains", "is_correct": false},
+{"text": "Dismiss the woman and refuse to discuss traditional practices", "is_correct": false},
+{"text": "Explore what the preparation contains and explain potential risks using respectful, evidence-based communication", "is_correct": true},
+{"text": "Advise her to replace all prescribed antenatal medication with the preparation", "is_correct": false}
+],
+"rationale": "Some herbal preparations may have unknown ingredients, interactions or adverse effects during pregnancy. The midwife should discuss the practice without judgment and encourage the woman to avoid potentially harmful substances until their safety has been appropriately assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A woman tells the midwife that she experienced disrespectful treatment during a previous delivery and is afraid it will happen again. Which response is most appropriate?",
+"choices": [
+{"text": "That happened in the past, so you should forget about it", "is_correct": false},
+{"text": "You may be exaggerating what happened", "is_correct": false},
+{"text": "I am sorry that you had that experience. Can you tell me what would help you feel respected and supported during this birth?", "is_correct": true},
+{"text": "All maternity facilities treat women in the same way", "is_correct": false}
+],
+"rationale": "The response acknowledges the woman's previous experience and invites her to identify her current needs. This supports respectful maternity care and helps the midwife develop an individualized plan for communication and support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Therapeutic Communication in Midwifery",
+"question_text": "A woman attending antenatal clinic asks whether she can refuse a proposed procedure. Which response best supports therapeutic communication and informed decision-making?",
+"choices": [
+{"text": "You must accept every procedure recommended by the midwife", "is_correct": false},
+{"text": "I can explain why it is recommended, its benefits and risks, and any alternatives so you can make an informed decision", "is_correct": true},
+{"text": "Only your relatives are allowed to decide", "is_correct": false},
+{"text": "It is not necessary for you to understand the procedure", "is_correct": false}
+],
+"rationale": "Therapeutic communication supports informed consent by providing understandable information and allowing questions. A woman with decision-making capacity should be respected as an active participant in decisions about her care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A woman in labour has difficulty understanding instructions because she is experiencing severe pain and distress. What should the midwife do?",
+"choices": [
+{"text": "Give several complicated instructions at the same time", "is_correct": false},
+{"text": "Use short, clear instructions, speak calmly and check understanding while providing appropriate pain and emotional support", "is_correct": true},
+{"text": "Shout at her until she follows the instructions", "is_correct": false},
+{"text": "Stop communicating until the pain has completely disappeared", "is_correct": false}
+],
+"rationale": "Severe pain and distress can reduce a woman's ability to process complex information. Short, clear communication and supportive care help her understand essential instructions during labour.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A woman says, 'My baby has not moved much today, but perhaps I am just worrying.' Which response best demonstrates therapeutic clarification?",
+"choices": [
+{"text": "You are probably worrying for nothing", "is_correct": false},
+{"text": "When you say the baby has not moved much, can you describe how the movements have changed compared with usual?", "is_correct": true},
+{"text": "You should stop thinking about fetal movement", "is_correct": false},
+{"text": "All babies move less before delivery", "is_correct": false}
+],
+"rationale": "Clarification helps the midwife understand the nature and extent of the reported change in fetal movement. The information should then guide prompt clinical assessment rather than being dismissed as anxiety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A postpartum woman tells the midwife privately that her partner has threatened to harm her if she returns home. What should the midwife do FIRST?",
+"choices": [
+{"text": "Immediately confront the partner in front of the woman", "is_correct": false},
+{"text": "Listen in a private and supportive setting, assess immediate danger and follow safeguarding and referral procedures", "is_correct": true},
+{"text": "Tell the woman to return home and settle the disagreement", "is_correct": false},
+{"text": "Share the disclosure with other patients to obtain advice", "is_correct": false}
+],
+"rationale": "A disclosure of threats indicates a potential safety risk and requires sensitive assessment. The midwife should protect confidentiality, assess immediate danger and follow appropriate safeguarding, documentation and referral procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "A midwife gives an SBAR handover about a woman with suspected sepsis. Which information belongs in the Assessment component?",
+"choices": [
+{"text": "The woman's name and the immediate reason for the call", "is_correct": false},
+{"text": "Her relevant medical and obstetric history", "is_correct": false},
+{"text": "The midwife's clinical interpretation that the findings suggest possible sepsis, supported by observations", "is_correct": true},
+{"text": "The specific action requested from the receiving doctor", "is_correct": false}
+],
+"rationale": "The Assessment component communicates the midwife's clinical interpretation of the available findings. The Situation identifies the immediate concern, Background provides relevant history and Recommendation states the action required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Conflict Resolution in Maternity Care",
+"question_text": "A disagreement develops between two midwives about the care of a woman in labour. The disagreement is delaying an important clinical decision. What should happen FIRST?",
+"choices": [
+{"text": "Continue arguing until one midwife accepts the other's opinion", "is_correct": false},
+{"text": "Prioritize the woman's immediate safety, communicate the clinical concern clearly and obtain senior or appropriate clinical support", "is_correct": true},
+{"text": "Ignore the woman's condition until the disagreement is resolved", "is_correct": false},
+{"text": "Discuss the disagreement with patients in the waiting area", "is_correct": false}
+],
+"rationale": "The woman's safety must take priority over interpersonal disagreement. Clear communication and timely escalation to an appropriate senior professional help prevent delays in clinical care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A woman with a known history of depression tells the midwife, 'My family would be better off without me.' She appears distressed and avoids further discussion. What is the most appropriate immediate response?",
+"choices": [
+{"text": "Assume she is making an ordinary expression of sadness", "is_correct": false},
+{"text": "Prioritize a direct, sensitive assessment of possible suicidal thoughts and immediate safety, and obtain urgent mental health support", "is_correct": true},
+{"text": "Tell her that mothers should always be happy", "is_correct": false},
+{"text": "Leave her alone to prevent embarrassment", "is_correct": false}
+],
+"rationale": "The statement may indicate suicidal thinking and must not be dismissed. The midwife should assess immediate risk, maintain safety and urgently involve appropriate mental health professionals.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "A midwife calls a doctor using SBAR about a woman with heavy postpartum bleeding. The doctor does not respond immediately, and the woman's condition is deteriorating. What should the midwife do?",
+"choices": [
+{"text": "Wait indefinitely because the SBAR call has already been made", "is_correct": false},
+{"text": "Continue emergency management within her competence, activate the appropriate emergency response and escalate through the available chain of command", "is_correct": true},
+{"text": "Stop all interventions until the doctor arrives", "is_correct": false},
+{"text": "Document the unanswered call and leave the woman unattended", "is_correct": false}
+],
+"rationale": "SBAR supports communication but does not replace clinical action or escalation when a patient is deteriorating. The midwife must continue appropriate emergency care and seek timely assistance through available channels.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity and Diversity",
+"question_text": "A woman in labour refuses a recommended intervention because she believes it conflicts with her religious beliefs. The midwife believes that delaying the intervention may endanger the woman or baby. What is the best approach?",
+"choices": [
+{"text": "Force the intervention because clinical recommendations always remove the need for consent", "is_correct": false},
+{"text": "Dismiss the religious belief and end the discussion", "is_correct": false},
+{"text": "Explore her concerns respectfully, explain the clinical risks and alternatives, assess understanding and support an informed decision while escalating urgent concerns", "is_correct": true},
+{"text": "Allow relatives to make the decision without involving the woman", "is_correct": false}
+],
+"rationale": "The midwife should respect the woman's beliefs while clearly explaining the clinical implications of accepting or refusing the intervention. Informed decision-making, respectful dialogue and timely senior support are essential when maternal or fetal safety is at risk.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Barriers to Effective Communication",
+"question_text": "A midwife notices that a woman repeatedly agrees with the explanations given but later demonstrates that she has misunderstood the instructions. Which factor is the most likely communication problem?",
+"choices": [
+{"text": "The woman may be agreeing out of fear or deference rather than genuine understanding", "is_correct": true},
+{"text": "The woman has necessarily understood all the information", "is_correct": false},
+{"text": "Non-verbal communication is never relevant in clinical care", "is_correct": false},
+{"text": "The midwife should stop providing explanations", "is_correct": false}
+],
+"rationale": "Some women may agree because of power differences, fear or cultural expectations, even when they do not understand. The midwife should use open questions and teach-back to confirm comprehension rather than relying only on agreement.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Active Listening and Empathy",
+"question_text": "A woman reports severe abdominal pain during pregnancy. While listening, the midwife notices that the woman is pale, sweating and becoming increasingly restless. What should the midwife do FIRST?",
+"choices": [
+{"text": "Continue exploring her emotional concerns before assessing her condition", "is_correct": false},
+{"text": "Recognize possible clinical deterioration, initiate urgent assessment and summon appropriate assistance", "is_correct": true},
+{"text": "Tell her that anxiety can cause abdominal pain", "is_correct": false},
+{"text": "Ask her to return to the clinic the following day", "is_correct": false}
+],
+"rationale": "Pallor, sweating and increasing restlessness may indicate serious physiological compromise. Therapeutic communication must be integrated with clinical observation, and immediate assessment takes priority when danger signs appear.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Conflict Resolution in Maternity Care",
+"question_text": "A family insists that a woman with severe postpartum bleeding should first receive a traditional herbal preparation before hospital treatment. The woman is conscious but appears weak and hypotensive. What should the midwife do FIRST?",
+"choices": [
+{"text": "Agree to delay treatment to avoid offending the family", "is_correct": false},
+{"text": "Prioritize emergency management, explain the danger respectfully and arrange appropriate clinical intervention without delay", "is_correct": true},
+{"text": "Argue with the family about the superiority of modern medicine", "is_correct": false},
+{"text": "Allow the family to decide whether emergency treatment is necessary", "is_correct": false}
+],
+"rationale": "Severe postpartum bleeding with hypotension is a life-threatening emergency requiring immediate treatment. The midwife should communicate respectfully with the family while prioritizing the woman's safety and informed decision-making.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A woman with limited speech following a neurological condition is admitted for delivery. She appears distressed and cannot answer questions verbally. Which action should the midwife prioritize?",
+"choices": [
+{"text": "Assume that she cannot understand or participate in decisions", "is_correct": false},
+{"text": "Identify an appropriate alternative communication method, assess her needs and involve her directly in care decisions", "is_correct": true},
+{"text": "Ask relatives to make every decision without consulting her", "is_correct": false},
+{"text": "Avoid communicating with her until she can speak normally", "is_correct": false}
+],
+"rationale": "Difficulty speaking does not necessarily mean that a woman cannot understand information or make decisions. The midwife should identify suitable communication aids or methods and preserve the woman's participation and autonomy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "During a clinical handover, a midwife reports that a woman is stable, but the documented observations show a falling blood pressure, increasing pulse rate and heavy vaginal bleeding. What should the receiving midwife do?",
+"choices": [
+{"text": "Accept the verbal statement without reviewing the observations", "is_correct": false},
+{"text": "Recognize the inconsistency, immediately reassess the woman and clarify the clinical information with the handing-over midwife", "is_correct": true},
+{"text": "Wait until the next routine observation time", "is_correct": false},
+{"text": "Delete the observations because they conflict with the handover", "is_correct": false}
+],
+"rationale": "Conflicting verbal and written information may conceal serious deterioration. The receiving midwife should verify the woman's current condition immediately and clarify discrepancies to ensure safe continuity of care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Sensitivity and Diversity",
+"question_text": "A woman requests that her labour progress and medical condition be discussed only with her, while her relatives insist on receiving all information because of family customs. What should the midwife do?",
+"choices": [
+{"text": "Disclose the information to the relatives because family customs always take priority", "is_correct": false},
+{"text": "Respect the woman's confidentiality preferences and obtain her consent before sharing information, subject to applicable legal and safety requirements", "is_correct": true},
+{"text": "Refuse to communicate with the woman because her family disagrees", "is_correct": false},
+{"text": "Ask the relatives to decide whether confidentiality should apply", "is_correct": false}
+],
+"rationale": "The woman's privacy and autonomy should guide the sharing of her health information. Cultural sensitivity does not justify disclosing confidential information against her wishes unless a lawful or necessary safeguarding exception applies.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Communication Techniques",
+"question_text": "A woman says that she is experiencing severe pain, but her facial expression and body posture appear relaxed. The midwife suspects that she may be minimizing her symptoms. What is the best communication response?",
+"choices": [
+{"text": "Tell her that she cannot be in pain because she looks comfortable", "is_correct": false},
+{"text": "Explore the pain further using open-ended questions and appropriate pain assessment rather than relying on appearance alone", "is_correct": true},
+{"text": "Ignore her verbal report and document that she has no pain", "is_correct": false},
+{"text": "Assume that she is deliberately providing false information", "is_correct": false}
+],
+"rationale": "Non-verbal cues can provide additional information but do not invalidate a woman's verbal report of pain. A thorough assessment should explore pain characteristics and consider the woman's individual communication style and circumstances.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication with Special Populations",
+"question_text": "A woman in labour who has limited English proficiency is showing signs of possible obstetric emergency. Her preferred interpreter is not immediately available. What should the midwife do?",
+"choices": [
+{"text": "Delay all emergency assessment until the preferred interpreter arrives", "is_correct": false},
+{"text": "Use available appropriate communication support and clear methods to obtain essential information while initiating urgent clinical assessment and treatment", "is_correct": true},
+{"text": "Assume that the woman's silence means she has no symptoms", "is_correct": false},
+{"text": "Ask an unrelated patient to interpret sensitive clinical information", "is_correct": false}
+],
+"rationale": "Language barriers should be addressed, but they must not cause dangerous delays in emergency care. The midwife should use suitable available communication methods and obtain qualified interpretation as soon as possible while protecting privacy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Conflict Resolution in Maternity Care",
+"question_text": "A woman refuses a blood transfusion because of her religious beliefs. She is conscious, understands the explanation and has decision-making capacity. What should the midwife do?",
+"choices": [
+{"text": "Administer the transfusion without consent because the midwife believes it is beneficial", "is_correct": false},
+{"text": "Respect her informed refusal, communicate the clinical risks and alternatives, document the discussion and urgently involve the appropriate senior team", "is_correct": true},
+{"text": "Ask her relatives to override her decision", "is_correct": false},
+{"text": "Stop providing all other care because she refused transfusion", "is_correct": false}
+],
+"rationale": "A competent adult woman has the right to make informed decisions about her treatment, including refusing an intervention. The midwife should ensure that the refusal is informed, document the discussion and coordinate appropriate alternative management and senior review.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Interprofessional Communication",
+"question_text": "A midwife identifies that a woman referred from a CHPS compound has no accompanying clinical notes, and the referral reason is unclear. The woman is breathless and has low oxygen saturation. What should the receiving midwife do FIRST?",
+"choices": [
+{"text": "Wait for the referring facility to send the records before assessing her", "is_correct": false},
+{"text": "Prioritize immediate assessment and stabilization, obtain essential history from the woman or available sources and contact the referring facility for clarification", "is_correct": true},
+{"text": "Send the woman back because the referral documentation is incomplete", "is_correct": false},
+{"text": "Assume that the breathlessness is caused by anxiety", "is_correct": false}
+],
+"rationale": "A patient's immediate clinical condition takes priority over incomplete referral documentation. The receiving team should assess and stabilize the woman while obtaining missing information to support safe ongoing management.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
