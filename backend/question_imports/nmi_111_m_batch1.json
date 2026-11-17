@@ -1,0 +1,1488 @@
+{
+"courses": [
+{
+"course_code": "NMI-111-M",
+"course_title": "Nursing Informatics",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Nursing Informatics",
+"Computer Hardware and Software Basics",
+"Electronic Health Records and Electronic Medical Records",
+"Health Information Systems in Ghana",
+"Data Privacy, Security and Confidentiality",
+"Telehealth and Telemedicine in Midwifery",
+"Mobile Health Applications for Maternal Care",
+"Clinical Decision Support Systems",
+"Midwifery Documentation and Standardized Terminology",
+"Digital Literacy and Informatics Competencies"
+],
+"questions": [
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "Which statement best defines nursing informatics?",
+"choices": [
+{
+"text": "The integration of nursing science, computer science and information science to manage and communicate nursing information",
+"is_correct": true
+},
+{
+"text": "The use of computers exclusively for financial transactions in hospitals",
+"is_correct": false
+},
+{
+"text": "The replacement of nurses and midwives with automated machines",
+"is_correct": false
+},
+{
+"text": "The study of computer hardware without considering patient care",
+"is_correct": false
+}
+],
+"rationale": "Nursing informatics combines nursing science, computer science and information science to manage and communicate health information. Its purpose is to support clinical practice, education, administration and research, ultimately improving patient care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "What is the primary purpose of health information in midwifery practice?",
+"choices": [
+{
+"text": "To support informed clinical decisions, continuity of care and evaluation of maternal and newborn outcomes",
+"is_correct": true
+},
+{
+"text": "To increase the amount of paperwork completed by midwives",
+"is_correct": false
+},
+{
+"text": "To replace communication between healthcare professionals",
+"is_correct": false
+},
+{
+"text": "To make patient information available to every hospital visitor",
+"is_correct": false
+}
+],
+"rationale": "Accurate health information supports clinical decision-making, continuity of care and monitoring of maternal and newborn outcomes. It also assists healthcare facilities in planning services and evaluating the quality of care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Nursing Informatics",
+"question_text": "Which of the following best distinguishes data from information?",
+"choices": [
+{
+"text": "Data are raw facts, whereas information is data processed into a meaningful form",
+"is_correct": true
+},
+{
+"text": "Data are always accurate, whereas information is always inaccurate",
+"is_correct": false
+},
+{
+"text": "Information consists only of numerical values, whereas data consist only of words",
+"is_correct": false
+},
+{
+"text": "Data and information have exactly the same meaning in every context",
+"is_correct": false
+}
+],
+"rationale": "Data are raw observations or measurements that may not have meaning without interpretation. Information is produced when data are organized, processed and interpreted to support understanding or decision-making.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "Which computer component is primarily responsible for processing instructions and performing calculations?",
+"choices": [
+{
+"text": "Central Processing Unit",
+"is_correct": true
+},
+{
+"text": "Monitor",
+"is_correct": false
+},
+{
+"text": "Keyboard",
+"is_correct": false
+},
+{
+"text": "Printer",
+"is_correct": false
+}
+],
+"rationale": "The Central Processing Unit (CPU) executes program instructions and performs arithmetic and logical operations. It is commonly described as the main processing component of a computer.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "Which of the following is an example of system software?",
+"choices": [
+{
+"text": "Microsoft Windows",
+"is_correct": true
+},
+{
+"text": "Microsoft Word",
+"is_correct": false
+},
+{
+"text": "Microsoft Excel",
+"is_correct": false
+},
+{
+"text": "A hospital patient registration form",
+"is_correct": false
+}
+],
+"rationale": "An operating system such as Microsoft Windows is system software because it manages computer hardware and provides services for application programs. Microsoft Word and Excel are application software used to perform specific tasks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "Which computer device is primarily used to enter text and numerical data?",
+"choices": [
+{
+"text": "Keyboard",
+"is_correct": true
+},
+{
+"text": "Monitor",
+"is_correct": false
+},
+{
+"text": "Speaker",
+"is_correct": false
+},
+{
+"text": "Projector",
+"is_correct": false
+}
+],
+"rationale": "A keyboard is an input device that allows users to enter letters, numbers and commands into a computer. It is commonly used when entering patient details and clinical documentation into electronic health records.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "What is an Electronic Health Record (EHR)?",
+"choices": [
+{
+"text": "A digital record of patient health information designed to support care across healthcare settings",
+"is_correct": true
+},
+{
+"text": "A paper folder containing only laboratory results",
+"is_correct": false
+},
+{
+"text": "A computer program used exclusively for hospital payroll",
+"is_correct": false
+},
+{
+"text": "A digital record that can only contain a patient's financial information",
+"is_correct": false
+}
+],
+"rationale": "An EHR is a digital collection of patient health information that can support coordinated care across different healthcare settings. It may include medical history, diagnoses, medications, allergies, laboratory results and clinical notes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "Which statement best describes an Electronic Medical Record (EMR)?",
+"choices": [
+{
+"text": "A digital patient record primarily maintained within a particular healthcare provider or facility",
+"is_correct": true
+},
+{
+"text": "A national database containing only population census information",
+"is_correct": false
+},
+{
+"text": "A paper-based record that cannot be stored electronically",
+"is_correct": false
+},
+{
+"text": "A computer application used only to prepare staff duty rosters",
+"is_correct": false
+}
+],
+"rationale": "An EMR is an electronic version of a patient's clinical record used within a healthcare organization or provider setting. An EHR is generally designed to support a broader and more integrated view of patient information across care settings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "What is the main purpose of the District Health Information Management System 2 (DHIMS2) in Ghana?",
+"choices": [
+{
+"text": "To collect, manage, analyse and report routine health service data",
+"is_correct": true
+},
+{
+"text": "To replace all clinical examinations in hospitals",
+"is_correct": false
+},
+{
+"text": "To provide personal banking services to healthcare workers",
+"is_correct": false
+},
+{
+"text": "To store only the academic records of nursing students",
+"is_correct": false
+}
+],
+"rationale": "DHIMS2 is a health information platform used in Ghana to manage routine health service data and support reporting, analysis and planning. The information helps health managers monitor service delivery and population health indicators.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "Which Ghanaian legislation provides a framework for protecting personal data and regulating its processing?",
+"choices": [
+{
+"text": "Data Protection Act, 2012 (Act 843)",
+"is_correct": true
+},
+{
+"text": "Children's Act, 1998 (Act 560)",
+"is_correct": false
+},
+{
+"text": "Road Traffic Act, 2004 (Act 683)",
+"is_correct": false
+},
+{
+"text": "National Health Insurance Act, 2012 (Act 852)",
+"is_correct": false
+}
+],
+"rationale": "The Data Protection Act, 2012 (Act 843) establishes principles and requirements for the processing and protection of personal data in Ghana. Health information is particularly sensitive and must be handled with appropriate confidentiality and security safeguards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "What does confidentiality mean in midwifery documentation?",
+"choices": [
+{
+"text": "Protecting patient information from unauthorized access, disclosure or use",
+"is_correct": true
+},
+{
+"text": "Allowing every staff member to view all patient records",
+"is_correct": false
+},
+{
+"text": "Deleting patient records immediately after delivery",
+"is_correct": false
+},
+{
+"text": "Sharing patient information with friends for educational discussion without authorization",
+"is_correct": false
+}
+],
+"rationale": "Confidentiality requires healthcare professionals to protect patient information from unauthorized disclosure. Access and sharing should be limited to legitimate purposes and handled in accordance with professional duties and applicable law.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Telehealth and Telemedicine in Midwifery",
+"question_text": "Which statement best describes telemedicine?",
+"choices": [
+{
+"text": "The delivery of healthcare services using information and communication technologies when participants are geographically separated",
+"is_correct": true
+},
+{
+"text": "The physical transfer of every patient to a regional hospital",
+"is_correct": false
+},
+{
+"text": "The use of paper records without electronic communication",
+"is_correct": false
+},
+{
+"text": "The replacement of all clinical procedures with telephone calls",
+"is_correct": false
+}
+],
+"rationale": "Telemedicine uses information and communication technologies to support clinical services when healthcare professionals and patients are in different locations. It can improve access to consultation and specialist advice but does not replace in-person assessment when that is clinically necessary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mobile Health Applications for Maternal Care",
+"question_text": "What is mobile health (mHealth)?",
+"choices": [
+{
+"text": "The use of mobile devices and wireless technologies to support health services and health information delivery",
+"is_correct": true
+},
+{
+"text": "The use of hospital buildings to store medical equipment",
+"is_correct": false
+},
+{
+"text": "The treatment of all diseases using mobile phones alone",
+"is_correct": false
+},
+{
+"text": "The use of computers exclusively for hospital accounting",
+"is_correct": false
+}
+],
+"rationale": "mHealth involves using mobile technologies such as mobile phones, tablets and applications to support health-related activities. Examples include appointment reminders, health education, maternal health messages and remote follow-up.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "What is the main function of a Clinical Decision Support System (CDSS)?",
+"choices": [
+{
+"text": "To provide relevant patient-specific information and recommendations that support clinical decisions",
+"is_correct": true
+},
+{
+"text": "To make every clinical decision without healthcare professional involvement",
+"is_correct": false
+},
+{
+"text": "To replace the need for patient assessment",
+"is_correct": false
+},
+{
+"text": "To store hospital staff attendance records only",
+"is_correct": false
+}
+],
+"rationale": "A CDSS uses patient data, clinical knowledge and decision rules to provide alerts, reminders or recommendations. It supports clinical judgement but does not replace the professional responsibility of the midwife or other healthcare provider.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwifery Documentation and Standardized Terminology",
+"question_text": "Which characteristic is most important in effective midwifery documentation?",
+"choices": [
+{
+"text": "Accuracy, completeness, clarity and timely recording of care",
+"is_correct": true
+},
+{
+"text": "Using vague descriptions to save time",
+"is_correct": false
+},
+{
+"text": "Recording only abnormal findings",
+"is_correct": false
+},
+{
+"text": "Allowing another midwife to document care that was not provided",
+"is_correct": false
+}
+],
+"rationale": "Effective documentation provides an accurate and timely account of assessment, decisions, interventions and patient responses. Complete records support continuity of care, communication, accountability and clinical review.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "Which of the following best describes digital literacy in healthcare?",
+"choices": [
+{
+"text": "The ability to use digital technologies effectively, safely and critically to access, evaluate and communicate information",
+"is_correct": true
+},
+{
+"text": "The ability to repair every type of computer hardware",
+"is_correct": false
+},
+{
+"text": "The ability to memorize patient passwords",
+"is_correct": false
+},
+{
+"text": "The ability to use social media without considering privacy",
+"is_correct": false
+}
+],
+"rationale": "Digital literacy involves using digital tools to locate, assess, manage and communicate information appropriately. In healthcare, it also includes awareness of confidentiality, data security and the limitations of digital information.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "A midwife enters a patient's antenatal information into an electronic record using a desktop computer. Which component temporarily stores data and instructions currently being used by the computer?",
+"choices": [
+{
+"text": "Random Access Memory (RAM)",
+"is_correct": true
+},
+{
+"text": "Read-only optical disc",
+"is_correct": false
+},
+{
+"text": "Printer cartridge",
+"is_correct": false
+},
+{
+"text": "Monitor screen",
+"is_correct": false
+}
+],
+"rationale": "RAM is the computer's temporary working memory, holding data and instructions currently in use. Its contents are generally lost when the computer is switched off, unlike data stored on a hard drive or solid-state drive.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "A midwife needs to prepare a written report on maternal deaths for a departmental meeting. Which application software is most suitable for producing and formatting the report?",
+"choices": [
+{
+"text": "Microsoft Word",
+"is_correct": true
+},
+{
+"text": "Device Manager",
+"is_correct": false
+},
+{
+"text": "Disk Management",
+"is_correct": false
+},
+{
+"text": "Antivirus software",
+"is_correct": false
+}
+],
+"rationale": "Microsoft Word is word-processing software designed for creating, editing and formatting documents. It is suitable for preparing formal reports, letters and other written clinical or administrative documents.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Computer Hardware and Software Basics",
+"question_text": "A midwife is asked to calculate the monthly number of antenatal visits and prepare a summary table. Which software would be most appropriate?",
+"choices": [
+{
+"text": "Microsoft Excel",
+"is_correct": true
+},
+{
+"text": "Microsoft Paint",
+"is_correct": false
+},
+{
+"text": "Windows Media Player",
+"is_correct": false
+},
+{
+"text": "A presentation viewer only",
+"is_correct": false
+}
+],
+"rationale": "Microsoft Excel is spreadsheet software used to organize numerical data, perform calculations and create tables and charts. It can support the preparation and analysis of routine maternal health statistics.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "A pregnant woman attends a district hospital for antenatal care. The midwife retrieves her previous antenatal visits, medication history and laboratory results from the electronic record. What is the main benefit of this action?",
+"choices": [
+{
+"text": "It supports continuity of care and informed clinical decision-making",
+"is_correct": true
+},
+{
+"text": "It eliminates the need to assess the woman during the current visit",
+"is_correct": false
+},
+{
+"text": "It allows the midwife to disclose the woman's information to other patients",
+"is_correct": false
+},
+{
+"text": "It guarantees that every historical entry is correct without verification",
+"is_correct": false
+}
+],
+"rationale": "Reviewing previous records helps the midwife understand the patient's clinical history and identify relevant risks or ongoing treatment. The information should still be verified and combined with a current assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "A midwife accidentally enters a patient's blood group into the wrong field in an electronic health record. What should she do?",
+"choices": [
+{
+"text": "Correct the entry using the system's authorized amendment process while preserving the audit trail",
+"is_correct": true
+},
+{
+"text": "Delete the entire patient record and create a new one",
+"is_correct": false
+},
+{
+"text": "Ignore the error because electronic records cannot be corrected",
+"is_correct": false
+},
+{
+"text": "Change another patient's record to balance the error",
+"is_correct": false
+}
+],
+"rationale": "Clinical information must be corrected promptly to prevent errors from affecting patient care. Authorized amendments should preserve the original entry and audit trail so that the correction remains transparent and traceable.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "A midwife is reviewing an electronic record and notices that a patient's allergy information is missing. What should she do before administering a medication?",
+"choices": [
+{
+"text": "Ask the patient about known allergies, verify relevant history and document the findings",
+"is_correct": true
+},
+{
+"text": "Assume that the patient has no allergies because the field is blank",
+"is_correct": false
+},
+{
+"text": "Administer the medication immediately without further assessment",
+"is_correct": false
+},
+{
+"text": "Enter a random allergy status to complete the record",
+"is_correct": false
+}
+],
+"rationale": "A blank allergy field does not establish that a patient has no allergies. The midwife should obtain and verify the information, document it accurately and consider the findings before medication administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "A midwife at a CHPS compound records the number of antenatal clients, deliveries and postnatal visits for routine reporting. Which system may be used to submit and manage these routine health service data in Ghana?",
+"choices": [
+{
+"text": "DHIMS2",
+"is_correct": true
+},
+{
+"text": "A personal social media account",
+"is_correct": false
+},
+{
+"text": "A computer gaming application",
+"is_correct": false
+},
+{
+"text": "A personal email inbox without an approved reporting process",
+"is_correct": false
+}
+],
+"rationale": "DHIMS2 is used in Ghana to support routine health information reporting and management. Data from facilities and community-level services contribute to district, regional and national health monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "A district health information officer discovers that a CHPS compound has not submitted its monthly maternal health report. What should the officer do first?",
+"choices": [
+{
+"text": "Contact the facility to establish the reason for the missing report and facilitate accurate submission",
+"is_correct": true
+},
+{
+"text": "Enter estimated figures without contacting the facility",
+"is_correct": false
+},
+{
+"text": "Delete the facility from the district reporting system",
+"is_correct": false
+},
+{
+"text": "Copy the previous month's figures and submit them as current data",
+"is_correct": false
+}
+],
+"rationale": "Missing reports should be investigated to determine whether the problem involves data collection, connectivity, staffing or system access. The facility should submit verified information rather than fabricated or copied figures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "A district midwife reviews DHIMS2 reports and observes an unexpected increase in institutional maternal deaths. What is the most appropriate use of this information?",
+"choices": [
+{
+"text": "Investigate the data, identify possible contributing factors and support appropriate quality-improvement action",
+"is_correct": true
+},
+{
+"text": "Assume that the increase is caused by inaccurate data without verification",
+"is_correct": false
+},
+{
+"text": "Remove the maternal death figures to protect the facility's reputation",
+"is_correct": false
+},
+{
+"text": "Ignore the report because routine health data cannot guide service improvement",
+"is_correct": false
+}
+],
+"rationale": "Routine health information can reveal patterns that require further investigation and action. The data should be validated and reviewed alongside clinical and service information to identify possible causes and improve maternal care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife leaves her workstation while a patient's electronic record remains open. Which action should she take before leaving?",
+"choices": [
+{
+"text": "Lock or log out of the system to prevent unauthorized access",
+"is_correct": true
+},
+{
+"text": "Leave the record open because the workstation is inside the maternity ward",
+"is_correct": false
+},
+{
+"text": "Share her password with the next person using the computer",
+"is_correct": false
+},
+{
+"text": "Display the patient's record on the screen for other patients to read",
+"is_correct": false
+}
+],
+"rationale": "Locking or logging out of a workstation helps prevent unauthorized access to confidential patient information. Healthcare workers should protect their login credentials and avoid leaving clinical systems unattended while accessible.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife receives an email requesting her electronic health record password to update her account. The sender's address appears unfamiliar. What should she do?",
+"choices": [
+{
+"text": "Avoid responding, do not disclose her password and report the suspicious message through the appropriate channel",
+"is_correct": true
+},
+{
+"text": "Send her password immediately to avoid losing access",
+"is_correct": false
+},
+{
+"text": "Forward the message to all patients for confirmation",
+"is_correct": false
+},
+{
+"text": "Click every link in the message to determine whether it is genuine",
+"is_correct": false
+}
+],
+"rationale": "The message may be a phishing attempt designed to steal login credentials. Passwords should not be disclosed through unsolicited emails, and suspicious messages should be reported to the appropriate information technology or security personnel.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife needs to send a patient's laboratory result to an authorized specialist for continued care. Which approach is most appropriate?",
+"choices": [
+{
+"text": "Use an approved secure communication method and disclose only information necessary for the care purpose",
+"is_correct": true
+},
+{
+"text": "Post the result in a public social media group",
+"is_correct": false
+},
+{
+"text": "Send the result to an unrelated person for safekeeping",
+"is_correct": false
+},
+{
+"text": "Use an unprotected public computer and leave the file accessible",
+"is_correct": false
+}
+],
+"rationale": "Sharing information for legitimate care purposes should follow applicable confidentiality and data protection requirements. An approved secure channel and minimum-necessary disclosure reduce the risk of unauthorized access or exposure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife uses a shared computer in a maternity ward and is required to access an electronic patient record. Which security practice is most appropriate?",
+"choices": [
+{
+"text": "Use her own authorized login credentials and avoid sharing them with colleagues",
+"is_correct": true
+},
+{
+"text": "Use another midwife's credentials because they are already saved",
+"is_correct": false
+},
+{
+"text": "Use the same password for every staff member",
+"is_correct": false
+},
+{
+"text": "Write her password on the monitor for easy access",
+"is_correct": false
+}
+],
+"rationale": "Individual user accounts help establish accountability and allow access to be linked to the person performing an action. Sharing credentials undermines access control and makes it difficult to investigate inappropriate access or changes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Telehealth and Telemedicine in Midwifery",
+"question_text": "A pregnant woman in a remote community contacts a midwife by telephone to discuss a non-emergency concern. Which action is most appropriate?",
+"choices": [
+{
+"text": "Assess the concern through appropriate questions, provide suitable advice and arrange in-person review when indicated",
+"is_correct": true
+},
+{
+"text": "Diagnose every possible pregnancy complication by telephone without further assessment",
+"is_correct": false
+},
+{
+"text": "Tell her that telephone consultations are never useful",
+"is_correct": false
+},
+{
+"text": "Advise her to ignore any symptoms until her next scheduled visit",
+"is_correct": false
+}
+],
+"rationale": "Telehealth can support health education, follow-up and initial assessment when the patient's condition is suitable for remote consultation. The midwife must identify warning signs and arrange timely in-person assessment or emergency referral when necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Telehealth and Telemedicine in Midwifery",
+"question_text": "During a telemedicine consultation, a pregnant woman reports severe vaginal bleeding and dizziness. What should the midwife do first?",
+"choices": [
+{
+"text": "Arrange immediate emergency assessment and referral to an appropriate health facility",
+"is_correct": true
+},
+{
+"text": "Continue the routine telephone consultation until all questions are answered",
+"is_correct": false
+},
+{
+"text": "Advise her to wait until the next antenatal clinic",
+"is_correct": false
+},
+{
+"text": "Send a general nutrition message and end the call",
+"is_correct": false
+}
+],
+"rationale": "Severe vaginal bleeding with dizziness may indicate a life-threatening obstetric emergency. Immediate emergency referral and appropriate pre-referral instructions take priority over routine remote counselling.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Telehealth and Telemedicine in Midwifery",
+"question_text": "A midwife conducts a video consultation with a pregnant woman. Which practice is essential before discussing her confidential health information?",
+"choices": [
+{
+"text": "Verify the woman's identity and establish that the communication is sufficiently private",
+"is_correct": true
+},
+{
+"text": "Begin discussing her medical history while other people can hear without her agreement",
+"is_correct": false
+},
+{
+"text": "Record the consultation publicly for educational entertainment",
+"is_correct": false
+},
+{
+"text": "Assume that anyone using the woman's phone is authorized to receive her information",
+"is_correct": false
+}
+],
+"rationale": "Identity verification helps ensure that the midwife is communicating with the intended patient. Establishing privacy and explaining the consultation process helps protect confidentiality during remote care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobile Health Applications for Maternal Care",
+"question_text": "A pregnant woman receives mobile phone reminders about her antenatal appointments. What is the main potential benefit of this mHealth intervention?",
+"choices": [
+{
+"text": "Improved awareness of appointment dates and support for continuity of antenatal care",
+"is_correct": true
+},
+{
+"text": "Guaranteed prevention of all pregnancy complications",
+"is_correct": false
+},
+{
+"text": "Replacement of all physical antenatal examinations",
+"is_correct": false
+},
+{
+"text": "Elimination of the need for communication with healthcare professionals",
+"is_correct": false
+}
+],
+"rationale": "Appointment reminders can help women remember scheduled antenatal visits and maintain contact with health services. They support care engagement but do not replace clinical assessment or emergency care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobile Health Applications for Maternal Care",
+"question_text": "A midwife uses an approved mobile application to send pregnant women information about danger signs such as severe headache, vaginal bleeding and reduced fetal movement. What is the main purpose?",
+"choices": [
+{
+"text": "To improve maternal health education and encourage timely care-seeking",
+"is_correct": true
+},
+{
+"text": "To replace emergency obstetric services with automated messages",
+"is_correct": false
+},
+{
+"text": "To discourage pregnant women from attending antenatal clinics",
+"is_correct": false
+},
+{
+"text": "To provide a definitive diagnosis without clinical assessment",
+"is_correct": false
+}
+],
+"rationale": "Mobile health education can improve awareness of pregnancy danger signs and encourage prompt care-seeking. Women must still be directed to appropriate health facilities for assessment and management when warning signs occur.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "An electronic clinical system displays an alert indicating that a pregnant woman may have a documented allergy to a prescribed medication. What should the midwife do?",
+"choices": [
+{
+"text": "Review the allergy information and verify the safety of the medication before administration",
+"is_correct": true
+},
+{
+"text": "Ignore the alert because computer systems are always incorrect",
+"is_correct": false
+},
+{
+"text": "Administer the medication immediately without checking the patient's history",
+"is_correct": false
+},
+{
+"text": "Delete the allergy information to remove the alert",
+"is_correct": false
+}
+],
+"rationale": "A CDSS alert may identify a potential medication-related risk that requires clinical review. The midwife should verify the patient's allergy history and follow appropriate prescribing and medication-safety procedures before administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A clinical decision support system provides a reminder that a pregnant woman is due for a recommended antenatal investigation. What should the midwife do?",
+"choices": [
+{
+"text": "Review the woman's clinical history and determine whether the investigation is appropriate and due",
+"is_correct": true
+},
+{
+"text": "Automatically perform every test suggested by the system without assessment",
+"is_correct": false
+},
+{
+"text": "Delete the reminder without reviewing the patient's record",
+"is_correct": false
+},
+{
+"text": "Assume that the reminder is a confirmed diagnosis",
+"is_correct": false
+}
+],
+"rationale": "CDSS reminders help healthcare professionals identify recommended actions that may be due. The midwife must interpret the reminder in the context of the patient's history, current condition and applicable clinical guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Documentation and Standardized Terminology",
+"question_text": "A midwife assesses a woman in labour and records the fetal heart rate, cervical dilatation, contractions and maternal observations on the partograph. What is the main purpose of this documentation?",
+"choices": [
+{
+"text": "To monitor labour progress and identify maternal or fetal abnormalities requiring action",
+"is_correct": true
+},
+{
+"text": "To record only the mother's personal preferences",
+"is_correct": false
+},
+{
+"text": "To replace direct observation of the woman and fetus",
+"is_correct": false
+},
+{
+"text": "To provide a record that is used only for hospital billing",
+"is_correct": false
+}
+],
+"rationale": "The partograph or labour monitoring tool supports systematic monitoring of labour progress and maternal and fetal wellbeing. Accurate recording helps identify abnormalities early and supports timely clinical decisions and referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Documentation and Standardized Terminology",
+"question_text": "A midwife administers a prescribed medication to a woman after delivery. Which information should be included in the clinical record?",
+"choices": [
+{
+"text": "The medication, dose, route, time of administration and relevant patient response",
+"is_correct": true
+},
+{
+"text": "Only the name of the medication",
+"is_correct": false
+},
+{
+"text": "The medication details of another patient",
+"is_correct": false
+},
+{
+"text": "A statement that medication was given without identifying what was administered",
+"is_correct": false
+}
+],
+"rationale": "Medication documentation should provide a clear account of what was administered, including dose, route and time. Recording the patient's response and any relevant adverse effects supports continuity, safety and professional accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Documentation and Standardized Terminology",
+"question_text": "A midwife documents that a woman has a blood pressure of 160/110 mmHg during antenatal assessment. What should she do first?",
+"choices": [
+{
+"text": "Urgently assess the woman for severe hypertension and associated danger signs, and initiate appropriate escalation",
+"is_correct": true
+},
+{
+"text": "Enter the reading into the record and wait until the next routine visit",
+"is_correct": false
+},
+{
+"text": "Delete the reading because it is unusually high",
+"is_correct": false
+},
+{
+"text": "Advise the woman to manage the condition with diet alone",
+"is_correct": false
+}
+],
+"rationale": "A blood pressure of 160/110 mmHg is within the severe hypertension range in pregnancy and requires urgent clinical attention. The midwife should assess for complications, escalate care and document the findings and actions accurately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A midwife receives a health-related article through a messaging application claiming that a particular herbal mixture prevents all pregnancy complications. What should she do before sharing the information with patients?",
+"choices": [
+{
+"text": "Verify the information using reliable, evidence-based sources and relevant clinical guidance",
+"is_correct": true
+},
+{
+"text": "Share it immediately because it was sent by a colleague",
+"is_correct": false
+},
+{
+"text": "Assume that every health message on social media is scientifically valid",
+"is_correct": false
+},
+{
+"text": "Recommend the mixture to every pregnant woman without assessing safety",
+"is_correct": false
+}
+],
+"rationale": "Digital literacy includes the ability to evaluate the credibility and accuracy of online health information. Healthcare professionals should verify claims using reliable evidence and avoid sharing unsubstantiated advice that could harm patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A newly employed midwife is unfamiliar with the electronic health record system used at a district hospital. Which action is most appropriate?",
+"choices": [
+{
+"text": "Request appropriate training and supervised practice before independently using the system",
+"is_correct": true
+},
+{
+"text": "Use another staff member's login credentials until she becomes familiar with the system",
+"is_correct": false
+},
+{
+"text": "Enter information randomly to learn how the system works",
+"is_correct": false
+},
+{
+"text": "Avoid documenting patient care because the system is unfamiliar",
+"is_correct": false
+}
+],
+"rationale": "Appropriate training helps healthcare professionals use digital systems accurately, safely and efficiently. Supervised practice reduces documentation errors and supports compliance with facility procedures and data protection requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "A midwife at a CHPS compound has completed the monthly maternal health data collection but notices that the internet connection is unavailable. What should she do?",
+"choices": [
+{
+"text": "Follow the facility's approved downtime procedure, safeguard the records and enter or submit verified data when the system becomes available",
+"is_correct": true
+},
+{
+"text": "Discard the collected data because the system is offline",
+"is_correct": false
+},
+{
+"text": "Invent figures to meet the reporting deadline",
+"is_correct": false
+},
+{
+"text": "Use a public internet café account and leave patient information accessible",
+"is_correct": false
+}
+],
+"rationale": "Connectivity interruptions should be managed through approved downtime and data-recovery procedures. Information must be kept secure and entered accurately when the system becomes available, with checks to prevent duplicate or missing records.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife wants to use a real patient's clinical record for a classroom presentation. Which approach is most appropriate?",
+"choices": [
+{
+"text": "Use appropriately de-identified information and follow facility approval and applicable privacy requirements",
+"is_correct": true
+},
+{
+"text": "Display the patient's full name, address and diagnosis without authorization",
+"is_correct": false
+},
+{
+"text": "Upload the complete record to a public website",
+"is_correct": false
+},
+{
+"text": "Share the patient's login credentials with the class",
+"is_correct": false
+}
+],
+"rationale": "Patient information used for teaching should be handled in accordance with confidentiality, data protection and institutional requirements. De-identification reduces the risk of identifying the patient, but it does not remove the need for appropriate authorization and safeguards.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "A pregnant woman transfers from a CHPS compound to a district hospital. Which electronic record practice would best support continuity of her care?",
+"choices": [
+{
+"text": "Ensure that relevant clinical information is accurately transferred or made available through an authorized process",
+"is_correct": true
+},
+{
+"text": "Create a completely unrelated record without checking her previous history",
+"is_correct": false
+},
+{
+"text": "Send her information through an unrestricted public messaging group",
+"is_correct": false
+},
+{
+"text": "Withhold all previous clinical information from the receiving team",
+"is_correct": false
+}
+],
+"rationale": "Continuity of care requires the receiving team to have access to relevant clinical information, such as antenatal history, investigations, medications and identified risks. Information transfer must use authorized and secure procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobile Health Applications for Maternal Care",
+"question_text": "A pregnant woman receives maternal health messages on her mobile phone but cannot read them because they are written in a language she does not understand. What should the midwife do?",
+"choices": [
+{
+"text": "Provide understandable health information in an appropriate language and accessible format",
+"is_correct": true
+},
+{
+"text": "Continue sending the same messages without considering her understanding",
+"is_correct": false
+},
+{
+"text": "Assume that receiving a message means she understands it",
+"is_correct": false
+},
+{
+"text": "Tell her that she does not need maternal health education",
+"is_correct": false
+}
+],
+"rationale": "Health communication is effective only when the intended recipient can understand and use the information. Language, literacy and accessibility should be considered when selecting or delivering mHealth interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A CDSS generates an alert for possible sepsis in a woman who has recently delivered. She has fever, a rapid pulse and lower abdominal pain. What should the midwife do first?",
+"choices": [
+{
+"text": "Urgently assess the woman, initiate the appropriate sepsis response and escalate care",
+"is_correct": true
+},
+{
+"text": "Dismiss the alert because the woman has already delivered",
+"is_correct": false
+},
+{
+"text": "Wait until the system generates a second alert before taking action",
+"is_correct": false
+},
+{
+"text": "Give routine discharge advice and send the woman home",
+"is_correct": false
+}
+],
+"rationale": "Fever, tachycardia and lower abdominal pain after delivery may indicate puerperal infection or sepsis. Prompt clinical assessment, escalation and timely management are essential because maternal sepsis can deteriorate rapidly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery Documentation and Standardized Terminology",
+"question_text": "A midwife records that a newborn was assessed and found to have a respiratory rate of 72 breaths per minute. Which additional action is most appropriate?",
+"choices": [
+{
+"text": "Assess the newborn for respiratory distress and promptly escalate the abnormal finding",
+"is_correct": true
+},
+{
+"text": "Record the value without further assessment",
+"is_correct": false
+},
+{
+"text": "Change the recorded value to a normal rate",
+"is_correct": false
+},
+{
+"text": "Discharge the newborn without evaluating the breathing pattern",
+"is_correct": false
+}
+],
+"rationale": "A respiratory rate of 72 breaths per minute is above the usual newborn range and requires assessment for respiratory distress or other illness. Accurate documentation must be accompanied by appropriate clinical action and escalation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A midwife receives a computer file from an unknown source and is asked to open it on the maternity ward computer. What should she do first?",
+"choices": [
+{
+"text": "Verify the source and follow facility cybersecurity procedures before opening the file",
+"is_correct": true
+},
+{
+"text": "Open the file immediately because all attachments are safe",
+"is_correct": false
+},
+{
+"text": "Disable the computer's security software before opening it",
+"is_correct": false
+},
+{
+"text": "Copy the file to every computer in the facility",
+"is_correct": false
+}
+],
+"rationale": "Files from unknown sources may contain malware or other security threats. Verifying the source and following approved cybersecurity procedures help protect patient information and healthcare systems.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "A district hospital's monthly DHIMS2 report shows that the number of institutional deliveries is higher than the number recorded in the facility's delivery register. What should the health information officer do first?",
+"choices": [
+{
+"text": "Reconcile the report against the source register and investigate possible duplication or data-entry errors",
+"is_correct": true
+},
+{
+"text": "Accept the higher figure because electronic data are always correct",
+"is_correct": false
+},
+{
+"text": "Delete the delivery register to make the figures agree",
+"is_correct": false
+},
+{
+"text": "Reduce the reported figure without checking the source records",
+"is_correct": false
+}
+],
+"rationale": "Differences between source registers and reported data may result from duplication, incorrect aggregation or data-entry errors. Reconciliation and verification are necessary to maintain data quality and produce reliable health statistics.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife discovers that a colleague has accessed the electronic record of a well-known patient without any care-related reason. What should the midwife do first?",
+"choices": [
+{
+"text": "Report the suspected unauthorized access through the facility's established reporting procedure",
+"is_correct": true
+},
+{
+"text": "Share the patient's details with other staff to warn them",
+"is_correct": false
+},
+{
+"text": "Ignore the incident because both individuals work in the same hospital",
+"is_correct": false
+},
+{
+"text": "Delete the audit trail to protect the colleague",
+"is_correct": false
+}
+],
+"rationale": "Access to patient records should be based on legitimate professional duties and authorized purposes. Suspected inappropriate access should be reported through established procedures so that it can be investigated and addressed while preserving relevant audit evidence.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife accidentally sends a patient's antenatal record to the wrong recipient by email. What is the most appropriate immediate response?",
+"choices": [
+{
+"text": "Report the data breach promptly through the facility's established incident-response process and follow instructions to contain it",
+"is_correct": true
+},
+{
+"text": "Delete the sent message from her own mailbox and assume the breach is resolved",
+"is_correct": false
+},
+{
+"text": "Send the same record to more recipients to explain the mistake",
+"is_correct": false
+},
+{
+"text": "Hide the incident from the facility's management",
+"is_correct": false
+}
+],
+"rationale": "Sending personal health information to an unintended recipient may constitute a personal data breach. Prompt reporting allows the facility to assess the incident, take containment measures and fulfil applicable legal and institutional obligations.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "Two patients at a maternity unit have similar names and dates of birth. A midwife is about to enter a laboratory result into one of their electronic records. Which action should she prioritize?",
+"choices": [
+{
+"text": "Verify the patient's identity using the required identifiers before entering the result",
+"is_correct": true
+},
+{
+"text": "Select the first record displayed by the computer",
+"is_correct": false
+},
+{
+"text": "Use the patient's name alone without checking other identifiers",
+"is_correct": false
+},
+{
+"text": "Enter the result into both records to avoid delay",
+"is_correct": false
+}
+],
+"rationale": "Similar patient names increase the risk of wrong-patient documentation and clinical errors. The midwife should verify identity using the facility's approved identifiers before accessing or updating the record.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "A CHPS compound reports a sudden increase in antenatal attendance. However, the number of unique pregnant women registered has remained almost unchanged. Which explanation should the health information officer investigate?",
+"choices": [
+{
+"text": "The increase may reflect repeat visits, duplicate entries or a change in reporting practice rather than an increase in unique clients",
+"is_correct": true
+},
+{
+"text": "Every increase in attendance automatically means that more women have registered for the first time",
+"is_correct": false
+},
+{
+"text": "The number of unique clients is irrelevant to health service planning",
+"is_correct": false
+},
+{
+"text": "The attendance figures should be increased further to match the registration figures",
+"is_correct": false
+}
+],
+"rationale": "Attendance counts and the number of unique clients are different indicators because one client may attend several times. The data should be examined for repeat visits, duplication and changes in reporting definitions before conclusions are drawn.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Telehealth and Telemedicine in Midwifery",
+"question_text": "A pregnant woman contacts a midwife through a telemedicine platform and reports severe headache, blurred vision and upper abdominal pain. What should the midwife prioritize?",
+"choices": [
+{
+"text": "Arrange urgent in-person assessment and referral because the symptoms may indicate severe pre-eclampsia",
+"is_correct": true
+},
+{
+"text": "Send routine dietary advice and schedule a remote review in two weeks",
+"is_correct": false
+},
+{
+"text": "Reassure her that these symptoms are normal in late pregnancy",
+"is_correct": false
+},
+{
+"text": "Ask her to monitor the symptoms at home without contacting a health facility",
+"is_correct": false
+}
+],
+"rationale": "Severe headache, visual disturbance and upper abdominal pain are warning signs of severe pre-eclampsia. Remote consultation must not delay urgent in-person assessment and appropriate obstetric management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mobile Health Applications for Maternal Care",
+"question_text": "A maternal health application sends a woman an automated message stating that her pregnancy is low risk, although she reports vaginal bleeding. What should the midwife do?",
+"choices": [
+{
+"text": "Prioritize clinical assessment and emergency referral as indicated rather than relying on the automated risk message",
+"is_correct": true
+},
+{
+"text": "Accept the application's message as a definitive clinical diagnosis",
+"is_correct": false
+},
+{
+"text": "Tell the woman that bleeding is harmless because the application classified her as low risk",
+"is_correct": false
+},
+{
+"text": "Delete the woman's report from the application without further action",
+"is_correct": false
+}
+],
+"rationale": "Automated applications may not capture all relevant clinical information and cannot replace professional assessment. Vaginal bleeding during pregnancy requires appropriate evaluation regardless of an application's risk classification.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Clinical Decision Support Systems",
+"question_text": "A CDSS recommends a medication, but the midwife notices that the patient's current clinical condition and documented allergy history may make the recommendation unsafe. What should she do?",
+"choices": [
+{
+"text": "Withhold administration until the concern is clinically reviewed and clarified with the appropriate prescriber",
+"is_correct": true
+},
+{
+"text": "Follow the recommendation automatically because the system cannot make mistakes",
+"is_correct": false
+},
+{
+"text": "Delete the patient's allergy history and administer the medication",
+"is_correct": false
+},
+{
+"text": "Ask an unrelated patient to confirm whether the medication is safe",
+"is_correct": false
+}
+],
+"rationale": "Clinical decision support tools provide recommendations that must be interpreted in the context of the individual patient. A potential allergy or contraindication requires clinical review before the medication is administered.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Midwifery Documentation and Standardized Terminology",
+"question_text": "A midwife documents a newborn's condition as 'baby not looking good' without recording observations or specific findings. Why is this documentation inadequate?",
+"choices": [
+{
+"text": "It is vague and does not provide objective clinical information for continuity of care or decision-making",
+"is_correct": true
+},
+{
+"text": "It contains too many numerical measurements",
+"is_correct": false
+},
+{
+"text": "It provides more detail than is clinically necessary",
+"is_correct": false
+},
+{
+"text": "It is acceptable because clinical records do not require specific observations",
+"is_correct": false
+}
+],
+"rationale": "Clinical documentation should use clear, objective and specific descriptions rather than vague expressions. Relevant observations such as respiratory rate, temperature, colour, feeding behaviour and clinical interventions provide a more useful record.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Digital Literacy and Informatics Competencies",
+"question_text": "A hospital introduces a new electronic maternity record system. After implementation, staff report frequent errors, duplicated entries and delays in accessing patient information. What should management do first?",
+"choices": [
+{
+"text": "Assess the causes through user feedback, workflow review and system evaluation, then implement appropriate corrective measures",
+"is_correct": true
+},
+{
+"text": "Assume that staff are responsible for every problem and provide no further support",
+"is_correct": false
+},
+{
+"text": "Disable all security controls to make the system faster",
+"is_correct": false
+},
+{
+"text": "Stop all clinical documentation until the system improves",
+"is_correct": false
+}
+],
+"rationale": "System-related problems may arise from inadequate training, poor workflow design, technical faults or usability issues. A structured evaluation involving users and technical personnel helps identify the causes and guide improvements without compromising patient safety.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Electronic Health Records and Electronic Medical Records",
+"question_text": "A midwife reviews an electronic antenatal record and notices that the same woman's blood pressure has been entered twice, with different values and times. What is the most appropriate action?",
+"choices": [
+{
+"text": "Verify the original observations and timestamps, clarify the discrepancy and correct the record through the authorized process",
+"is_correct": true
+},
+{
+"text": "Delete both entries and enter an average value",
+"is_correct": false
+},
+{
+"text": "Choose the lower value because it is less likely to cause concern",
+"is_correct": false
+},
+{
+"text": "Leave the discrepancy unresolved because electronic records are automatically validated",
+"is_correct": false
+}
+],
+"rationale": "Conflicting observations may affect clinical decisions, especially when assessing hypertensive disorders in pregnancy. The original measurements and timing should be verified, and any correction must preserve the audit trail rather than replacing findings with an unsupported value.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Privacy, Security and Confidentiality",
+"question_text": "A midwife is asked by a patient's relative to provide the patient's HIV test result through a personal messaging application. The patient has not authorized disclosure. What should the midwife do?",
+"choices": [
+{
+"text": "Maintain confidentiality and disclose the result only through an authorized and lawful process",
+"is_correct": true
+},
+{
+"text": "Send the result because the person is a family member",
+"is_correct": false
+},
+{
+"text": "Post the result in the family messaging group",
+"is_correct": false
+},
+{
+"text": "Tell the relative the result verbally without verifying authorization",
+"is_correct": false
+}
+],
+"rationale": "HIV test results are sensitive personal health information and must be protected against unauthorized disclosure. A family relationship alone does not automatically provide authority to access the patient's confidential medical information.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Information Systems in Ghana",
+"question_text": "A district health director uses DHIMS2 data to compare antenatal attendance across several facilities. One facility reports unusually high attendance but has incomplete source registers. What should the director do before using the figures for resource allocation?",
+"choices": [
+{
+"text": "Validate the facility's source data and reporting process before drawing conclusions",
+"is_correct": true
+},
+{
+"text": "Allocate resources based only on the highest reported figure",
+"is_correct": false
+},
+{
+"text": "Assume that incomplete registers have no effect on data reliability",
+"is_correct": false
+},
+{
+"text": "Remove all data from the other facilities to make the comparison easier",
+"is_correct": false
+}
+],
+"rationale": "Reliable resource allocation depends on accurate, complete and comparable data. Incomplete source records reduce confidence in reported figures, so validation should precede interpretation and planning decisions.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
