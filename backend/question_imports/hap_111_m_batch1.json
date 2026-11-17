@@ -1,0 +1,720 @@
+{
+"courses": [
+{
+"course_code": "HAP-111-M",
+"course_title": "Human Anatomy & Physiology I",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Anatomy and Physiology",
+"Cell Structure and Function",
+"Tissues and Membranes",
+"The Integumentary System",
+"The Skeletal System",
+"The Muscular System",
+"The Nervous System",
+"The Special Senses",
+"The Endocrine System",
+"Homeostasis"
+],
+"questions": [
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "Which statement best distinguishes anatomy from physiology?",
+"choices": [
+{"text": "Anatomy studies body structures, while physiology studies how those structures function", "is_correct": true},
+{"text": "Anatomy studies body functions, while physiology studies body structures", "is_correct": false},
+{"text": "Both terms refer exclusively to the study of diseases", "is_correct": false},
+{"text": "Anatomy studies microorganisms, while physiology studies medications", "is_correct": false}
+],
+"rationale": "Anatomy is the scientific study of the structure and organisation of the body and its parts. Physiology examines how these structures perform their functions and maintain life.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "A midwife explains that the uterus is located within the pelvic cavity. Which anatomical term describes the relationship of the uterus to the urinary bladder?",
+"choices": [
+{"text": "Posterior", "is_correct": false},
+{"text": "Anterior", "is_correct": false},
+{"text": "Posterior to the urinary bladder", "is_correct": true},
+{"text": "Superior to the urinary bladder", "is_correct": false}
+],
+"rationale": "In the female pelvis, the uterus is generally located posterior to the urinary bladder and anterior to the rectum. These anatomical relationships are important during pelvic examination and obstetric procedures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "During an abdominal examination, a midwife identifies the umbilicus as a landmark. Which anatomical plane divides the body into right and left portions?",
+"choices": [
+{"text": "Transverse plane", "is_correct": false},
+{"text": "Sagittal plane", "is_correct": true},
+{"text": "Frontal plane", "is_correct": false},
+{"text": "Oblique plane", "is_correct": false}
+],
+"rationale": "The sagittal plane divides the body into right and left portions. The midsagittal plane produces equal right and left halves, while other sagittal planes produce unequal portions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "A pregnant woman develops malaria and subsequently experiences reduced oxygen delivery to her tissues because of anaemia. Which level of body organisation is most directly affected by the reduced oxygen availability?",
+"choices": [
+{"text": "Cellular level", "is_correct": true},
+{"text": "Organismal level only", "is_correct": false},
+{"text": "Organ system level only", "is_correct": false},
+{"text": "Organ level only", "is_correct": false}
+],
+"rationale": "Oxygen is required by cells for aerobic cellular respiration and efficient ATP production. Anaemia reduces the oxygen-carrying capacity of blood, potentially impairing cellular metabolism throughout the body.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Anatomy and Physiology",
+"question_text": "A midwife assesses a pregnant woman with severe anaemia who complains of fatigue and breathlessness. Which physiological function is most directly compromised by the reduced haemoglobin concentration?",
+"choices": [
+{"text": "Transport of oxygen to body tissues", "is_correct": true},
+{"text": "Production of bile by the liver", "is_correct": false},
+{"text": "Filtration of urine by the kidneys", "is_correct": false},
+{"text": "Transmission of sound waves through the ear", "is_correct": false}
+],
+"rationale": "Haemoglobin in red blood cells binds and transports oxygen from the lungs to body tissues. Reduced haemoglobin concentration decreases the oxygen-carrying capacity of blood, contributing to fatigue and breathlessness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "Which cell organelle is primarily responsible for producing most of the ATP required for cellular activities?",
+"choices": [
+{"text": "Ribosome", "is_correct": false},
+{"text": "Mitochondrion", "is_correct": true},
+{"text": "Lysosome", "is_correct": false},
+{"text": "Golgi apparatus", "is_correct": false}
+],
+"rationale": "Mitochondria are the principal sites of aerobic cellular respiration and oxidative phosphorylation. They generate most of the ATP used to power cellular processes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "Which structure controls the movement of substances into and out of a human cell?",
+"choices": [
+{"text": "Nucleus", "is_correct": false},
+{"text": "Plasma membrane", "is_correct": true},
+{"text": "Nucleolus", "is_correct": false},
+{"text": "Centrosome", "is_correct": false}
+],
+"rationale": "The plasma membrane is a selectively permeable barrier surrounding the cell. It regulates the movement of ions, nutrients, gases and waste products between the intracellular and extracellular environments.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A woman with severe diarrhoea becomes dehydrated. Water moves from her cells into the extracellular fluid because of a difference in solute concentration. Which process explains this movement?",
+"choices": [
+{"text": "Active transport", "is_correct": false},
+{"text": "Osmosis", "is_correct": true},
+{"text": "Phagocytosis", "is_correct": false},
+{"text": "Protein synthesis", "is_correct": false}
+],
+"rationale": "Osmosis is the movement of water across a selectively permeable membrane from a region of lower solute concentration to a region of higher solute concentration. Fluid shifts during dehydration can alter cell volume and normal cellular function.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A pregnant woman has sickle cell disease. Her red blood cells become rigid and sickle-shaped during periods of reduced oxygen availability. Which cellular component is primarily responsible for this abnormality?",
+"choices": [
+{"text": "Abnormal haemoglobin within the red blood cells", "is_correct": true},
+{"text": "Excessive production of plasma membrane cholesterol", "is_correct": false},
+{"text": "Absence of mitochondria in red blood cells", "is_correct": false},
+{"text": "Increased production of lysosomal enzymes", "is_correct": false}
+],
+"rationale": "Sickle cell disease results from an inherited mutation in the beta-globin gene that produces haemoglobin S. Under low-oxygen conditions, haemoglobin S polymerises, causing red blood cells to become rigid and sickle-shaped.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A cell requires glucose to enter against its concentration gradient. Which transport mechanism is most appropriate?",
+"choices": [
+{"text": "Simple diffusion", "is_correct": false},
+{"text": "Osmosis", "is_correct": false},
+{"text": "Active transport", "is_correct": true},
+{"text": "Passive filtration", "is_correct": false}
+],
+"rationale": "Active transport moves substances against their concentration or electrochemical gradients using energy, directly or indirectly. Simple diffusion and osmosis do not require cellular energy and occur down their respective gradients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A laboratory technician observes a cell with abundant rough endoplasmic reticulum and numerous ribosomes. Which function is this cell particularly adapted to perform?",
+"choices": [
+{"text": "Synthesis of proteins for secretion or membrane incorporation", "is_correct": true},
+{"text": "Storage of calcium exclusively", "is_correct": false},
+{"text": "Production of steroid hormones only", "is_correct": false},
+{"text": "Breakdown of worn-out organelles only", "is_correct": false}
+],
+"rationale": "Ribosomes attached to the rough endoplasmic reticulum synthesise proteins destined for secretion, membranes or certain organelles. Cells specialised for producing and exporting proteins therefore commonly have abundant rough endoplasmic reticulum.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cell Structure and Function",
+"question_text": "A woman with severe malaria develops tissue hypoxia. Which cellular process is most likely to become impaired when oxygen availability is markedly reduced?",
+"choices": [
+{"text": "Oxidative phosphorylation in mitochondria", "is_correct": true},
+{"text": "DNA storage in the nucleus", "is_correct": false},
+{"text": "Formation of the plasma membrane", "is_correct": false},
+{"text": "Movement of chromosomes during mitosis only", "is_correct": false}
+],
+"rationale": "Oxygen acts as the final electron acceptor in the mitochondrial electron transport chain. Severe oxygen deprivation reduces oxidative phosphorylation and ATP production, potentially causing cellular dysfunction.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "Which type of tissue covers body surfaces, lines internal cavities and forms many glands?",
+"choices": [
+{"text": "Muscular tissue", "is_correct": false},
+{"text": "Epithelial tissue", "is_correct": true},
+{"text": "Nervous tissue", "is_correct": false},
+{"text": "Connective tissue", "is_correct": false}
+],
+"rationale": "Epithelial tissue forms protective coverings and linings and contributes to glandular structures. Its functions include protection, absorption, secretion and filtration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "A midwife examines a pregnant woman with a wound that is healing slowly. Which tissue is primarily responsible for providing structural support and helping repair damaged tissues?",
+"choices": [
+{"text": "Connective tissue", "is_correct": true},
+{"text": "Epithelial tissue", "is_correct": false},
+{"text": "Nervous tissue", "is_correct": false},
+{"text": "Smooth muscle tissue", "is_correct": false}
+],
+"rationale": "Connective tissue supports, binds and protects other tissues and organs. Components such as fibroblasts, collagen fibres and extracellular matrix contribute to tissue repair and wound healing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "Which membrane lines body cavities that do not open directly to the exterior and covers organs within those cavities?",
+"choices": [
+{"text": "Mucous membrane", "is_correct": false},
+{"text": "Serous membrane", "is_correct": true},
+{"text": "Cutaneous membrane", "is_correct": false},
+{"text": "Synovial membrane", "is_correct": false}
+],
+"rationale": "Serous membranes line closed ventral body cavities and cover the organs within them. They secrete serous fluid, which reduces friction between moving organs and cavity walls.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Tissues and Membranes",
+"question_text": "A pregnant woman develops inflammation of the peritoneum following an abdominal infection. Which type of membrane is affected?",
+"choices": [
+{"text": "Mucous membrane", "is_correct": false},
+{"text": "Cutaneous membrane", "is_correct": false},
+{"text": "Serous membrane", "is_correct": true},
+{"text": "Synovial membrane", "is_correct": false}
+],
+"rationale": "The peritoneum is a serous membrane that lines the abdominal cavity and covers many abdominal organs. Inflammation of this membrane is known as peritonitis and can cause severe abdominal pain and systemic illness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "Which layer of the skin contains blood vessels, sensory receptors, sweat glands and hair follicles?",
+"choices": [
+{"text": "Epidermis", "is_correct": false},
+{"text": "Dermis", "is_correct": true},
+{"text": "Stratum corneum only", "is_correct": false},
+{"text": "Subcutaneous fat only", "is_correct": false}
+],
+"rationale": "The dermis contains connective tissue, blood vessels, nerves, sensory receptors, sweat glands and hair follicles. The epidermis is the outer epithelial layer and is avascular.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "A pregnant woman spends several hours in the sun and begins sweating. Which physiological process helps regulate her body temperature?",
+"choices": [
+{"text": "Evaporation of sweat from the skin surface", "is_correct": true},
+{"text": "Increased melanin production", "is_correct": false},
+{"text": "Increased keratin formation", "is_correct": false},
+{"text": "Reduced sensory nerve activity", "is_correct": false}
+],
+"rationale": "Evaporation of sweat removes heat from the skin surface and helps lower body temperature. Sweating is an important thermoregulatory response, particularly in hot environments.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "A woman with severe malnutrition develops dry, fragile skin and poor wound healing. Which skin function is most directly compromised by inadequate tissue repair?",
+"choices": [
+{"text": "Protection against mechanical injury and microbial entry", "is_correct": true},
+{"text": "Production of red blood cells in the skin", "is_correct": false},
+{"text": "Filtration of blood plasma", "is_correct": false},
+{"text": "Production of digestive enzymes", "is_correct": false}
+],
+"rationale": "The skin forms a physical barrier that protects underlying tissues against injury, pathogens and excessive water loss. Malnutrition can impair collagen synthesis and immune function, delaying wound healing and weakening this protective barrier.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Integumentary System",
+"question_text": "A pregnant woman has severe dehydration and reduced sweating during a period of high environmental temperature. Which consequence is most likely?",
+"choices": [
+{"text": "Improved heat loss through evaporation", "is_correct": false},
+{"text": "Increased risk of overheating because evaporative cooling is reduced", "is_correct": true},
+{"text": "Increased production of melanin", "is_correct": false},
+{"text": "Complete prevention of heat transfer through the skin", "is_correct": false}
+],
+"rationale": "Sweating followed by evaporation is an important mechanism of heat loss. Dehydration can reduce the body's ability to maintain adequate sweating, increasing the risk of heat-related illness.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "Which of the following is a major function of the skeletal system?",
+"choices": [
+{"text": "Production of digestive bile", "is_correct": false},
+{"text": "Support, protection, movement and blood cell formation", "is_correct": true},
+{"text": "Secretion of insulin", "is_correct": false},
+{"text": "Production of urine", "is_correct": false}
+],
+"rationale": "The skeletal system supports the body, protects internal organs and provides attachment points for muscles. Red bone marrow also performs haematopoiesis, the production of blood cells.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "Which bone forms the anterior portion of the pelvic girdle?",
+"choices": [
+{"text": "Ilium", "is_correct": false},
+{"text": "Ischium", "is_correct": false},
+{"text": "Pubis", "is_correct": true},
+{"text": "Sacrum", "is_correct": false}
+],
+"rationale": "The pubis forms the anterior portion of each hip bone and meets its opposite at the pubic symphysis. The two hip bones, sacrum and coccyx contribute to the bony pelvis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "During antenatal assessment, a midwife explains that the pelvic inlet is an important obstetric landmark. Which structure forms the posterior boundary of the pelvic inlet?",
+"choices": [
+{"text": "Pubic symphysis", "is_correct": false},
+{"text": "Sacral promontory", "is_correct": true},
+{"text": "Ischial tuberosity", "is_correct": false},
+{"text": "Obturator foramen", "is_correct": false}
+],
+"rationale": "The sacral promontory forms the posterior boundary of the pelvic inlet. Its relationship to the pubic symphysis is important when assessing pelvic dimensions in obstetric anatomy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A pregnant woman reports severe lower back pain after lifting a heavy object. The midwife explains that the vertebral column protects which important structure?",
+"choices": [
+{"text": "Spinal cord", "is_correct": true},
+{"text": "Urinary bladder", "is_correct": false},
+{"text": "Pancreas", "is_correct": false},
+{"text": "Ovaries", "is_correct": false}
+],
+"rationale": "The vertebral column surrounds and protects the spinal cord within the vertebral canal. It also supports the head and trunk and provides attachment points for muscles.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A pregnant woman has inadequate calcium and vitamin D intake. Which skeletal complication may develop if the deficiency is prolonged?",
+"choices": [
+{"text": "Reduced bone mineralisation and increased risk of bone weakness", "is_correct": true},
+{"text": "Excessive formation of red blood cells", "is_correct": false},
+{"text": "Increased cartilage production in all joints", "is_correct": false},
+{"text": "Permanent enlargement of the pelvic inlet", "is_correct": false}
+],
+"rationale": "Calcium is essential for bone mineralisation, while vitamin D supports intestinal calcium absorption. Prolonged deficiency can impair bone mineralisation and contribute to skeletal weakness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A woman with sickle cell disease presents with severe pain in her long bones during a vaso-occlusive crisis. Which mechanism best explains the pain?",
+"choices": [
+{"text": "Obstruction of small blood vessels by sickled red blood cells, causing tissue ischaemia", "is_correct": true},
+{"text": "Excessive calcium deposition in the bone marrow", "is_correct": false},
+{"text": "Increased production of synovial fluid", "is_correct": false},
+{"text": "Overproduction of cartilage cells", "is_correct": false}
+],
+"rationale": "Sickled red blood cells can obstruct small blood vessels, reducing blood flow and oxygen delivery to bone and other tissues. The resulting ischaemia and inflammation produce severe vaso-occlusive pain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A pregnant woman falls and sustains a suspected pelvic fracture. She is pale, has severe pelvic pain and shows signs of shock. What should the midwife prioritise?",
+"choices": [
+{"text": "Encourage her to stand to assess her ability to walk", "is_correct": false},
+{"text": "Minimise movement, assess and support circulation, and arrange emergency transfer", "is_correct": true},
+{"text": "Apply deep massage over the pelvis", "is_correct": false},
+{"text": "Attempt to realign the pelvic bones manually", "is_correct": false}
+],
+"rationale": "A pelvic fracture can cause severe internal haemorrhage and life-threatening shock. Movement should be minimised while emergency resuscitation and urgent transfer are arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Skeletal System",
+"question_text": "A woman has a fracture of the femur following a road traffic accident. She becomes increasingly pale, tachycardic and hypotensive, although there is little visible external bleeding. Which explanation is most likely?",
+"choices": [
+{"text": "The femoral fracture may be associated with substantial concealed blood loss", "is_correct": true},
+{"text": "The fracture causes immediate excessive insulin secretion", "is_correct": false},
+{"text": "The injury causes an increase in circulating blood volume", "is_correct": false},
+{"text": "The findings are normal consequences of bone healing", "is_correct": false}
+],
+"rationale": "A femoral fracture can cause substantial bleeding into surrounding tissues even when external bleeding is minimal. Tachycardia, pallor and hypotension suggest hypovolaemia and require urgent assessment and resuscitation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Muscular System",
+"question_text": "Which type of muscle tissue is responsible for voluntary movement of the limbs?",
+"choices": [
+{"text": "Smooth muscle", "is_correct": false},
+{"text": "Cardiac muscle", "is_correct": false},
+{"text": "Skeletal muscle", "is_correct": true},
+{"text": "Visceral muscle only", "is_correct": false}
+],
+"rationale": "Skeletal muscle is generally under voluntary control and attaches to bones through tendons. Its contraction produces body movement and helps maintain posture.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Muscular System",
+"question_text": "During labour, the uterus contracts rhythmically to help expel the fetus. Which type of muscle tissue is responsible for these contractions?",
+"choices": [
+{"text": "Skeletal muscle", "is_correct": false},
+{"text": "Smooth muscle", "is_correct": true},
+{"text": "Cardiac muscle", "is_correct": false},
+{"text": "Striated voluntary muscle", "is_correct": false}
+],
+"rationale": "The uterine wall contains smooth muscle tissue, particularly in the myometrium. Its involuntary contractions are essential for cervical dilatation, fetal delivery and postpartum uterine contraction.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Muscular System",
+"question_text": "A pregnant woman experiences muscle cramps and weakness. Which mineral is particularly important for normal muscle contraction and relaxation?",
+"choices": [
+{"text": "Calcium", "is_correct": true},
+{"text": "Iodine", "is_correct": false},
+{"text": "Fluoride", "is_correct": false},
+{"text": "Iron", "is_correct": false}
+],
+"rationale": "Calcium plays a central role in the regulation of muscle contraction by enabling interactions between contractile proteins. Normal muscle function also depends on appropriate levels of potassium, sodium and magnesium.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Muscular System",
+"question_text": "A woman in labour receives a medication that reduces uterine smooth muscle contraction. Which physiological consequence is most likely?",
+"choices": [
+{"text": "Reduced uterine contractility may delay labour progress", "is_correct": true},
+{"text": "Increased voluntary contraction of the uterus", "is_correct": false},
+{"text": "Immediate strengthening of the pelvic bones", "is_correct": false},
+{"text": "Increased skeletal muscle contraction in the limbs", "is_correct": false}
+],
+"rationale": "Effective uterine contractions are required for cervical dilatation and fetal descent during labour. A medication that suppresses myometrial activity may reduce contraction strength and frequency, potentially slowing labour progress.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Nervous System",
+"question_text": "Which part of the central nervous system is primarily responsible for coordinating balance and fine movements?",
+"choices": [
+{"text": "Cerebellum", "is_correct": true},
+{"text": "Medulla oblongata", "is_correct": false},
+{"text": "Hypothalamus", "is_correct": false},
+{"text": "Thalamus", "is_correct": false}
+],
+"rationale": "The cerebellum coordinates voluntary movement, posture, balance and muscle tone. Damage to it can result in poor coordination and difficulty maintaining balance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Nervous System",
+"question_text": "Which structure connects the brain with the peripheral nerves and conducts impulses between the brain and the rest of the body?",
+"choices": [
+{"text": "Spinal cord", "is_correct": true},
+{"text": "Cerebellum", "is_correct": false},
+{"text": "Pituitary gland", "is_correct": false},
+{"text": "Corpus luteum", "is_correct": false}
+],
+"rationale": "The spinal cord is a major component of the central nervous system. It transmits sensory information to the brain and carries motor commands from the brain to the body.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A pregnant woman touches a hot cooking pot and immediately withdraws her hand before consciously recognising the pain. Which mechanism explains this rapid response?",
+"choices": [
+{"text": "A spinal reflex arc", "is_correct": true},
+{"text": "A voluntary response initiated by the cerebral cortex only", "is_correct": false},
+{"text": "An endocrine reflex controlled by the thyroid gland", "is_correct": false},
+{"text": "A response generated by the cerebellum alone", "is_correct": false}
+],
+"rationale": "A spinal reflex arc allows a rapid, automatic response to a stimulus without requiring initial conscious processing by the brain. Sensory neurons transmit the impulse to the spinal cord, where it is relayed through interneurons to motor neurons.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A woman with severe malaria develops convulsions. Which part of the nervous system is directly involved in generating and coordinating the electrical activity responsible for seizures?",
+"choices": [
+{"text": "Central nervous system", "is_correct": true},
+{"text": "Integumentary system", "is_correct": false},
+{"text": "Skeletal system", "is_correct": false},
+{"text": "Lymphatic system", "is_correct": false}
+],
+"rationale": "The brain, which forms part of the central nervous system, contains networks of neurons responsible for electrical signalling. Abnormal excessive neuronal activity can produce seizures, including those associated with severe cerebral malaria.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A pregnant woman experiences a sudden fall in blood pressure when she stands up quickly. Which division of the autonomic nervous system normally helps restore blood pressure by increasing heart rate and vascular tone?",
+"choices": [
+{"text": "Parasympathetic division", "is_correct": false},
+{"text": "Sympathetic division", "is_correct": true},
+{"text": "Somatic sensory division", "is_correct": false},
+{"text": "Enteric division only", "is_correct": false}
+],
+"rationale": "The sympathetic nervous system increases heart rate and promotes vasoconstriction when blood pressure falls. These responses help maintain circulation and cerebral perfusion during postural changes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A woman develops weakness and loss of sensation in both legs following a severe spinal injury. Which structure is most likely affected?",
+"choices": [
+{"text": "Spinal cord pathways", "is_correct": true},
+{"text": "Optic nerve only", "is_correct": false},
+{"text": "Auditory ossicles", "is_correct": false},
+{"text": "Thyroid gland", "is_correct": false}
+],
+"rationale": "The spinal cord contains ascending sensory and descending motor pathways that connect the brain with the body. Injury can disrupt both sensation and voluntary movement below the affected level.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Nervous System",
+"question_text": "A woman with severe pre-eclampsia develops a generalised seizure. Which neurological mechanism best explains the seizure?",
+"choices": [
+{"text": "Abnormal excessive and synchronised electrical activity of neurons in the brain", "is_correct": true},
+{"text": "Increased secretion of sweat by the skin", "is_correct": false},
+{"text": "Reduced movement of synovial fluid in the joints", "is_correct": false},
+{"text": "Excessive contraction of skeletal muscle without nervous system involvement", "is_correct": false}
+],
+"rationale": "Seizures result from abnormal excessive or synchronised electrical activity within neuronal networks. In eclampsia, cerebral disturbances associated with severe hypertensive disease of pregnancy can precipitate convulsions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "The Special Senses",
+"question_text": "Which structure of the eye controls the amount of light entering through the pupil?",
+"choices": [
+{"text": "Retina", "is_correct": false},
+{"text": "Iris", "is_correct": true},
+{"text": "Cornea", "is_correct": false},
+{"text": "Optic nerve", "is_correct": false}
+],
+"rationale": "The iris contains smooth muscle that adjusts pupil diameter in response to light intensity. This regulates the amount of light entering the eye and reaching the retina.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Special Senses",
+"question_text": "A pregnant woman complains of blurred vision and flashing lights. Her blood pressure is markedly elevated. Which condition should the midwife urgently suspect?",
+"choices": [
+{"text": "Severe pre-eclampsia", "is_correct": true},
+{"text": "Normal visual adaptation to pregnancy", "is_correct": false},
+{"text": "Simple conjunctivitis", "is_correct": false},
+{"text": "Presbyopia", "is_correct": false}
+],
+"rationale": "Visual disturbances such as flashing lights, blurred vision and scotomata are warning features of severe pre-eclampsia. The woman requires urgent assessment and management because of the risk of eclampsia and other complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Special Senses",
+"question_text": "Which structure of the inner ear contains sensory receptors responsible for detecting head movement and maintaining balance?",
+"choices": [
+{"text": "Semicircular canals", "is_correct": true},
+{"text": "External auditory canal", "is_correct": false},
+{"text": "Tympanic membrane", "is_correct": false},
+{"text": "Auditory ossicles", "is_correct": false}
+],
+"rationale": "The semicircular canals contain receptors that detect rotational movements of the head. They contribute to balance by sending information to the brain about angular acceleration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Special Senses",
+"question_text": "A woman has damage to the optic nerve following a serious head injury. Which function is most directly affected?",
+"choices": [
+{"text": "Transmission of visual information from the retina to the brain", "is_correct": true},
+{"text": "Detection of sound vibrations", "is_correct": false},
+{"text": "Regulation of pupil diameter by the iris", "is_correct": false},
+{"text": "Maintenance of balance by the semicircular canals", "is_correct": false}
+],
+"rationale": "The optic nerve carries visual impulses from the retina to the brain for processing. Damage to this nerve can result in partial or complete visual impairment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "Which endocrine gland produces insulin?",
+"choices": [
+{"text": "Thyroid gland", "is_correct": false},
+{"text": "Pancreas", "is_correct": true},
+{"text": "Adrenal gland", "is_correct": false},
+{"text": "Pituitary gland", "is_correct": false}
+],
+"rationale": "Insulin is produced by beta cells in the pancreatic islets of Langerhans. It lowers blood glucose by promoting glucose uptake in insulin-sensitive tissues and supporting storage of nutrients.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "Which hormone is primarily responsible for maintaining the endometrium during early pregnancy before placental hormone production is fully established?",
+"choices": [
+{"text": "Progesterone", "is_correct": true},
+{"text": "Insulin", "is_correct": false},
+{"text": "Adrenaline", "is_correct": false},
+{"text": "Calcitonin", "is_correct": false}
+],
+"rationale": "Progesterone produced by the corpus luteum helps maintain the endometrium and supports early pregnancy. Human chorionic gonadotropin maintains the corpus luteum until placental steroid production becomes established.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A pregnant woman develops gestational diabetes mellitus. Which physiological change is most directly associated with this condition?",
+"choices": [
+{"text": "Increased insulin resistance associated with placental hormones", "is_correct": true},
+{"text": "Complete absence of placental hormone production", "is_correct": false},
+{"text": "Permanent destruction of all pancreatic alpha cells", "is_correct": false},
+{"text": "Reduced glucose production by the liver as the only cause", "is_correct": false}
+],
+"rationale": "Placental hormones and other pregnancy-related changes increase maternal insulin resistance, particularly during the second and third trimesters. When pancreatic insulin secretion cannot adequately compensate, maternal blood glucose rises and gestational diabetes may develop.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A pregnant woman has a low blood calcium concentration. Which hormone is released by the parathyroid glands to help increase blood calcium levels?",
+"choices": [
+{"text": "Parathyroid hormone", "is_correct": true},
+{"text": "Insulin", "is_correct": false},
+{"text": "Melatonin", "is_correct": false},
+{"text": "Oxytocin", "is_correct": false}
+],
+"rationale": "Parathyroid hormone increases blood calcium by acting on bone and kidneys and indirectly increasing intestinal calcium absorption through activation of vitamin D. This helps maintain calcium homeostasis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "During labour, stretching of the cervix stimulates the release of oxytocin, which increases uterine contractions. This is an example of which physiological mechanism?",
+"choices": [
+{"text": "Positive feedback", "is_correct": true},
+{"text": "Negative feedback", "is_correct": false},
+{"text": "Simple diffusion", "is_correct": false},
+{"text": "Passive filtration", "is_correct": false}
+],
+"rationale": "Oxytocin increases uterine contractions, which produce further cervical stretching and stimulate additional oxytocin release. This amplifying cycle is an example of positive feedback and continues until delivery interrupts the stimulus.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A pregnant woman has fatigue, weight gain and cold intolerance. Laboratory investigations reveal reduced thyroid hormone levels. Which physiological process is most likely affected?",
+"choices": [
+{"text": "Regulation of metabolic rate", "is_correct": true},
+{"text": "Transmission of visual impulses", "is_correct": false},
+{"text": "Production of synovial fluid", "is_correct": false},
+{"text": "Formation of the epidermal barrier only", "is_correct": false}
+],
+"rationale": "Thyroid hormones regulate metabolic activity, growth and development in many tissues. Reduced thyroid hormone levels can slow metabolic processes and produce fatigue, weight gain and cold intolerance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Endocrine System",
+"question_text": "A pregnant woman has prolonged vomiting and dehydration. Her blood glucose falls, stimulating the release of glucagon. Which physiological effect is expected?",
+"choices": [
+{"text": "Increased breakdown of liver glycogen and increased blood glucose", "is_correct": true},
+{"text": "Increased glucose uptake into skeletal muscle as the only effect", "is_correct": false},
+{"text": "Reduced breakdown of stored glycogen", "is_correct": false},
+{"text": "Increased secretion of insulin to lower blood glucose", "is_correct": false}
+],
+"rationale": "Glucagon is secreted by pancreatic alpha cells when blood glucose falls. It stimulates hepatic glycogenolysis and gluconeogenesis, helping restore circulating glucose concentrations.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Homeostasis",
+"question_text": "What is homeostasis?",
+"choices": [
+{"text": "The maintenance of a relatively stable internal environment despite external changes", "is_correct": true},
+{"text": "The permanent prevention of all changes in the body", "is_correct": false},
+{"text": "The production of hormones by the endocrine glands only", "is_correct": false},
+{"text": "The movement of muscles during physical activity", "is_correct": false}
+],
+"rationale": "Homeostasis is the body's ability to maintain relatively stable internal conditions within physiological limits. It involves coordinated nervous, endocrine and other regulatory mechanisms.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A pregnant woman has an elevated body temperature due to an infection. Which response normally helps return her temperature towards its normal range?",
+"choices": [
+{"text": "Increased sweating and dilation of cutaneous blood vessels", "is_correct": true},
+{"text": "Reduced sweating and constriction of cutaneous blood vessels", "is_correct": false},
+{"text": "Increased shivering and reduced heat loss", "is_correct": false},
+{"text": "Complete cessation of metabolic activity", "is_correct": false}
+],
+"rationale": "When body temperature rises, thermoregulatory mechanisms promote heat loss through sweating and vasodilation of skin blood vessels. These responses help lower body temperature towards the normal range.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A woman develops severe diarrhoea and loses large amounts of water and electrolytes. Which organ system plays the major role in regulating water and electrolyte balance over time?",
+"choices": [
+{"text": "Urinary system", "is_correct": true},
+{"text": "Integumentary system only", "is_correct": false},
+{"text": "Skeletal system", "is_correct": false},
+{"text": "Reproductive system", "is_correct": false}
+],
+"rationale": "The kidneys regulate water and electrolyte balance by adjusting the composition and volume of urine. Hormones such as antidiuretic hormone and aldosterone help coordinate these adjustments.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A pregnant woman has a blood glucose level that rises after a carbohydrate-rich meal. Which response normally helps restore blood glucose towards its normal range?",
+"choices": [
+{"text": "Increased insulin secretion from pancreatic beta cells", "is_correct": true},
+{"text": "Increased glucagon secretion as the dominant response", "is_correct": false},
+{"text": "Reduced glucose uptake by insulin-sensitive tissues", "is_correct": false},
+{"text": "Increased breakdown of liver glycogen", "is_correct": false}
+],
+"rationale": "An increase in blood glucose stimulates pancreatic beta cells to release insulin. Insulin promotes glucose uptake and storage, helping reduce blood glucose towards its normal range.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A woman with severe malaria develops high fever, rapid breathing and dehydration. Her body attempts to maintain normal internal conditions through several regulatory responses. Which statement best explains the role of negative feedback in this situation?",
+"choices": [
+{"text": "It produces responses that oppose a change and move a regulated variable towards its normal range", "is_correct": true},
+{"text": "It continuously amplifies the original disturbance", "is_correct": false},
+{"text": "It prevents the nervous and endocrine systems from communicating", "is_correct": false},
+{"text": "It permanently stops all physiological responses", "is_correct": false}
+],
+"rationale": "Negative feedback counteracts deviations from a physiological set point or normal range. For example, thermoregulatory responses to increased body temperature promote heat loss to restore temperature towards normal.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A pregnant woman has severe blood loss following delivery. Her blood pressure falls, and the body responds by increasing sympathetic activity and heart rate. If the blood loss continues, which explanation best describes the resulting risk?",
+"choices": [
+{"text": "Compensatory mechanisms may become insufficient, leading to reduced tissue perfusion and shock", "is_correct": true},
+{"text": "The increased heart rate guarantees normal oxygen delivery despite continued blood loss", "is_correct": false},
+{"text": "The body immediately replaces all lost red blood cells through the spleen", "is_correct": false},
+{"text": "Reduced blood volume automatically increases blood pressure", "is_correct": false}
+],
+"rationale": "Sympathetic activation increases heart rate and vascular tone to compensate for reduced circulating volume. Persistent haemorrhage can overwhelm these mechanisms, resulting in inadequate tissue perfusion, organ dysfunction and hypovolaemic shock.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A woman with severe vomiting during pregnancy develops dehydration and reduced blood pressure. Which hormonal response helps the kidneys conserve water?",
+"choices": [
+{"text": "Increased secretion of antidiuretic hormone", "is_correct": true},
+{"text": "Reduced secretion of antidiuretic hormone", "is_correct": false},
+{"text": "Increased secretion of insulin", "is_correct": false},
+{"text": "Reduced secretion of aldosterone", "is_correct": false}
+],
+"rationale": "Antidiuretic hormone increases water reabsorption in the kidney collecting ducts, reducing urine volume. Its secretion increases in response to increased plasma osmolality and significant reductions in circulating volume.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Homeostasis",
+"question_text": "A pregnant woman with severe anaemia develops tachycardia and breathlessness on minimal exertion. Which explanation best accounts for the cardiovascular response?",
+"choices": [
+{"text": "The heart increases cardiac output to help compensate for reduced oxygen-carrying capacity", "is_correct": true},
+{"text": "The heart reduces its rate to increase haemoglobin concentration", "is_correct": false},
+{"text": "The lungs produce additional red blood cells to restore oxygen transport", "is_correct": false},
+{"text": "The kidneys immediately convert plasma into haemoglobin", "is_correct": false}
+],
+"rationale": "Anaemia reduces the oxygen-carrying capacity of blood because haemoglobin concentration is low. Increased heart rate and cardiac output may partially compensate by delivering a greater volume of blood to tissues, although they do not correct the underlying anaemia.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
