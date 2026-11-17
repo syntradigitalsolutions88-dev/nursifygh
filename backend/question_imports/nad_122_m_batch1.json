@@ -1,0 +1,720 @@
+{
+"courses": [
+{
+"course_code": "NAD-122-M",
+"course_title": "Nutrition and Dietetics",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Nutrition and Dietetics",
+"Macronutrients",
+"Micronutrients",
+"Nutritional Assessment in Pregnancy",
+"Malnutrition in Pregnancy",
+"Therapeutic Diets",
+"Nutrition in Pregnancy and Lactation",
+"Infant and Young Child Feeding",
+"Food Safety and Hygiene",
+"Community Nutrition for Mothers and Children"
+],
+"questions": [
+{
+"topic": "Introduction to Nutrition and Dietetics",
+"question_text": "What is nutrition?",
+"choices": [
+{"text": "The process by which the body obtains and uses nutrients for growth, maintenance and health", "is_correct": true},
+{"text": "The preparation of food for commercial purposes only", "is_correct": false},
+{"text": "The treatment of diseases using medicines alone", "is_correct": false},
+{"text": "The process of removing waste products from the body", "is_correct": false}
+],
+"rationale": "Nutrition involves the intake, digestion, absorption, metabolism and utilization of nutrients by the body. Adequate nutrition supports growth, tissue repair, energy production and normal physiological functioning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Nutrition and Dietetics",
+"question_text": "Which statement best describes a balanced diet?",
+"choices": [
+{"text": "A diet containing all essential nutrients in appropriate amounts and proportions", "is_correct": true},
+{"text": "A diet consisting mainly of carbohydrates", "is_correct": false},
+{"text": "A diet that excludes all fats and oils", "is_correct": false},
+{"text": "A diet containing only foods of animal origin", "is_correct": false}
+],
+"rationale": "A balanced diet provides the energy and essential nutrients required by the body in suitable proportions. Its composition should reflect the person's age, physiological condition, activity level and health status.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "Which macronutrient is the body's main source of energy under normal physiological conditions?",
+"choices": [
+{"text": "Carbohydrates", "is_correct": true},
+{"text": "Vitamins", "is_correct": false},
+{"text": "Minerals", "is_correct": false},
+{"text": "Water", "is_correct": false}
+],
+"rationale": "Carbohydrates are the body's primary and readily available source of energy. They are broken down into simple sugars, particularly glucose, which is used by cells to produce energy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "Which of the following is a major function of dietary protein?",
+"choices": [
+{"text": "Growth and repair of body tissues", "is_correct": true},
+{"text": "Direct regulation of body temperature only", "is_correct": false},
+{"text": "Formation of dietary fibre", "is_correct": false},
+{"text": "Prevention of all infectious diseases", "is_correct": false}
+],
+"rationale": "Proteins supply amino acids required for the growth, maintenance and repair of body tissues. They are also needed to produce enzymes, hormones, antibodies and other important body substances.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "Which of the following is an important function of dietary fats?",
+"choices": [
+{"text": "Providing concentrated energy and aiding the absorption of fat-soluble vitamins", "is_correct": true},
+{"text": "Providing no energy to the body", "is_correct": false},
+{"text": "Preventing the digestion of all carbohydrates", "is_correct": false},
+{"text": "Replacing the need for water", "is_correct": false}
+],
+"rationale": "Dietary fats provide approximately 9 kilocalories per gram and are an important energy source. They also support cell membrane structure and the absorption of vitamins A, D, E and K.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Micronutrients",
+"question_text": "Which mineral is essential for the formation of haemoglobin?",
+"choices": [
+{"text": "Iron", "is_correct": true},
+{"text": "Calcium", "is_correct": false},
+{"text": "Sodium", "is_correct": false},
+{"text": "Potassium", "is_correct": false}
+],
+"rationale": "Iron is an essential component of haemoglobin, the protein in red blood cells responsible for transporting oxygen. Iron deficiency can result in iron-deficiency anaemia, which is particularly important during pregnancy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Micronutrients",
+"question_text": "Folate is particularly important during early pregnancy because it helps prevent which condition?",
+"choices": [
+{"text": "Neural tube defects", "is_correct": true},
+{"text": "Gestational hypertension", "is_correct": false},
+{"text": "Maternal malaria", "is_correct": false},
+{"text": "Postpartum haemorrhage", "is_correct": false}
+],
+"rationale": "Folate is required for DNA synthesis and normal cell division during embryonic development. Adequate folic acid intake before conception and during early pregnancy reduces the risk of neural tube defects such as spina bifida.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Micronutrients",
+"question_text": "Which vitamin promotes calcium absorption and supports bone health?",
+"choices": [
+{"text": "Vitamin D", "is_correct": true},
+{"text": "Vitamin C", "is_correct": false},
+{"text": "Vitamin B1", "is_correct": false},
+{"text": "Vitamin K", "is_correct": false}
+],
+"rationale": "Vitamin D promotes intestinal absorption of calcium and phosphate and supports normal bone mineralization. Deficiency can contribute to poor bone health in both mothers and children.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Micronutrients",
+"question_text": "Which vitamin is required for normal blood clotting?",
+"choices": [
+{"text": "Vitamin K", "is_correct": true},
+{"text": "Vitamin A", "is_correct": false},
+{"text": "Vitamin C", "is_correct": false},
+{"text": "Vitamin D", "is_correct": false}
+],
+"rationale": "Vitamin K is necessary for the synthesis of several blood-clotting factors, including factors II, VII, IX and X. Newborns receive vitamin K prophylaxis because they have limited stores and an increased risk of vitamin K deficiency bleeding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutritional Assessment in Pregnancy",
+"question_text": "Which measurement is commonly used to assess maternal nutritional status before pregnancy?",
+"choices": [
+{"text": "Body mass index", "is_correct": true},
+{"text": "Respiratory rate", "is_correct": false},
+{"text": "Body temperature", "is_correct": false},
+{"text": "Pulse pressure", "is_correct": false}
+],
+"rationale": "Body mass index is calculated by dividing weight in kilograms by height in metres squared. Pre-pregnancy BMI helps classify nutritional status and assess risks associated with underweight, overweight and obesity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition in Pregnancy",
+"question_text": "Which condition is commonly associated with inadequate iron intake during pregnancy?",
+"choices": [
+{"text": "Iron-deficiency anaemia", "is_correct": true},
+{"text": "Gestational diabetes mellitus", "is_correct": false},
+{"text": "Hyperthyroidism", "is_correct": false},
+{"text": "Vitamin D toxicity", "is_correct": false}
+],
+"rationale": "Inadequate iron intake can deplete maternal iron stores and reduce haemoglobin production. Iron-deficiency anaemia may cause fatigue, weakness and reduced oxygen-carrying capacity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "Which nutrient is particularly important for the development of fetal bones and teeth?",
+"choices": [
+{"text": "Calcium", "is_correct": true},
+{"text": "Vitamin C", "is_correct": false},
+{"text": "Sodium", "is_correct": false},
+{"text": "Vitamin B12", "is_correct": false}
+],
+"rationale": "Calcium is essential for fetal skeletal development and also supports maternal muscle contraction, nerve function and bone health. Adequate maternal calcium intake is especially important during pregnancy and lactation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "For how long is exclusive breastfeeding recommended for healthy infants?",
+"choices": [
+{"text": "The first six months of life", "is_correct": true},
+{"text": "The first two months of life", "is_correct": false},
+{"text": "The first nine months of life without complementary foods", "is_correct": false},
+{"text": "The first twelve months without any other foods", "is_correct": false}
+],
+"rationale": "Exclusive breastfeeding is recommended for the first six months of life. It provides the infant with essential nutrients and immune protection without the need for other foods or liquids, including water, except prescribed medicines or supplements when indicated.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "When should complementary feeding normally begin for an infant who has been exclusively breastfed?",
+"choices": [
+{"text": "At six months of age", "is_correct": true},
+{"text": "At two months of age", "is_correct": false},
+{"text": "At four weeks of age", "is_correct": false},
+{"text": "At twelve months of age", "is_correct": false}
+],
+"rationale": "Complementary foods should be introduced at six months while breastfeeding continues. At this stage, breast milk alone no longer meets all the infant's increasing nutritional requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "Which practice is most effective in reducing foodborne infection during pregnancy?",
+"choices": [
+{"text": "Thoroughly cooking food and maintaining proper food hygiene", "is_correct": true},
+{"text": "Eating raw meat to preserve its nutrients", "is_correct": false},
+{"text": "Storing cooked food at room temperature for several days", "is_correct": false},
+{"text": "Using the same unwashed chopping board for raw meat and vegetables", "is_correct": false}
+],
+"rationale": "Thorough cooking destroys many disease-causing microorganisms in food. Safe food handling, handwashing, clean utensils and appropriate storage temperatures further reduce the risk of foodborne illness.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Nutrition for Mothers and Children",
+"question_text": "Which Ghanaian food combination provides a useful source of both plant protein and carbohydrates?",
+"choices": [
+{"text": "Waakye with beans", "is_correct": true},
+{"text": "Plain sugar and water", "is_correct": false},
+{"text": "Cooking oil and salt", "is_correct": false},
+{"text": "Plain cassava starch only", "is_correct": false}
+],
+"rationale": "Waakye combines rice and beans, providing carbohydrates and plant-based protein. Its nutritional value can be improved by adding vegetables and an appropriate protein-rich accompaniment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "A pregnant woman frequently eats banku with okro stew but consumes very little fish, eggs, beans or meat. Which dietary component is she most likely to be consuming inadequately?",
+"choices": [
+{"text": "Protein", "is_correct": true},
+{"text": "Carbohydrate", "is_correct": false},
+{"text": "Dietary fibre", "is_correct": false},
+{"text": "Water", "is_correct": false}
+],
+"rationale": "Banku provides substantial carbohydrate, while okro contributes fibre and some micronutrients. The limited intake of fish, eggs, beans and meat may result in inadequate dietary protein, which is required for maternal and fetal tissue development.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Macronutrients",
+"question_text": "A pregnant woman reports that she eats mostly plain kenkey and drinks sweetened beverages. Which dietary advice would best improve the nutritional quality of her meals?",
+"choices": [
+{"text": "Add beans, fish, vegetables and fruit to improve protein and micronutrient intake", "is_correct": true},
+{"text": "Increase the amount of sweetened beverages consumed", "is_correct": false},
+{"text": "Avoid all protein-containing foods", "is_correct": false},
+{"text": "Eat only kenkey at every meal", "is_correct": false}
+],
+"rationale": "Kenkey is mainly a carbohydrate source and does not provide all the nutrients required during pregnancy. Adding fish or beans, vegetables and fruit improves protein, vitamin, mineral and fibre intake.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Macronutrients",
+"question_text": "A pregnant woman asks why she should include moderate amounts of healthy fats in her diet. Which response is most appropriate?",
+"choices": [
+{"text": "Dietary fats provide energy and help the body absorb vitamins A, D, E and K", "is_correct": true},
+{"text": "Dietary fats prevent the need for protein", "is_correct": false},
+{"text": "All dietary fats cause hypertension during pregnancy", "is_correct": false},
+{"text": "Dietary fats have no role in fetal development", "is_correct": false}
+],
+"rationale": "Dietary fats provide energy and essential fatty acids and support the absorption of fat-soluble vitamins. Appropriate sources include fish, nuts, seeds and suitable vegetable oils.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A pregnant woman is prescribed iron and folic acid supplements during antenatal care. What is the main purpose of this supplementation?",
+"choices": [
+{"text": "To prevent or reduce maternal anaemia and support normal fetal development", "is_correct": true},
+{"text": "To prevent every infectious disease during pregnancy", "is_correct": false},
+{"text": "To replace the need for a balanced diet", "is_correct": false},
+{"text": "To treat gestational diabetes mellitus", "is_correct": false}
+],
+"rationale": "Iron supports haemoglobin production and helps prevent iron-deficiency anaemia, while folic acid supports DNA synthesis and fetal neural tube development. Supplementation should be taken according to the recommended antenatal regimen.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A pregnant woman taking iron tablets complains of constipation. Which advice is most appropriate?",
+"choices": [
+{"text": "Increase dietary fibre and fluid intake and discuss persistent symptoms with the healthcare provider", "is_correct": true},
+{"text": "Stop the iron tablets permanently without consultation", "is_correct": false},
+{"text": "Take several extra iron tablets to overcome constipation", "is_correct": false},
+{"text": "Avoid fruits, vegetables and water", "is_correct": false}
+],
+"rationale": "Constipation is a common gastrointestinal adverse effect of oral iron supplementation. Adequate fluid intake, fibre-rich foods and physical activity may help, while persistent symptoms should be discussed with the healthcare provider.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A pregnant woman regularly eats beans and kontomire as sources of iron. Which food choice would help improve the absorption of non-haem iron from these meals?",
+"choices": [
+{"text": "Fresh orange or another vitamin C-rich fruit", "is_correct": true},
+{"text": "Strong tea taken with the meal", "is_correct": false},
+{"text": "Coffee taken immediately after the meal", "is_correct": false},
+{"text": "A large amount of bran taken with the meal", "is_correct": false}
+],
+"rationale": "Vitamin C enhances the absorption of non-haem iron found in plant foods such as beans and leafy vegetables. Tea and coffee contain polyphenols that can reduce non-haem iron absorption when consumed with meals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A pregnant woman avoids milk and other calcium-rich foods because she believes they will make the baby excessively large. Which advice should the midwife give?",
+"choices": [
+{"text": "Explain the importance of calcium and encourage appropriate calcium-rich foods", "is_correct": true},
+{"text": "Agree that all calcium-rich foods should be avoided during pregnancy", "is_correct": false},
+{"text": "Advise her to replace calcium-rich foods with sugary drinks", "is_correct": false},
+{"text": "Tell her that calcium is not required during pregnancy", "is_correct": false}
+],
+"rationale": "Calcium is essential for fetal skeletal development and normal maternal physiological functions. Avoiding calcium-rich foods without a medical reason may compromise nutritional adequacy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Assessment in Pregnancy",
+"question_text": "During an antenatal visit, a midwife measures a woman's weight and height to calculate her BMI. Which formula should she use?",
+"choices": [
+{"text": "Weight in kilograms divided by height in metres squared", "is_correct": true},
+{"text": "Height in metres divided by weight in kilograms", "is_correct": false},
+{"text": "Weight in kilograms multiplied by height in metres", "is_correct": false},
+{"text": "Weight in pounds divided by age in years", "is_correct": false}
+],
+"rationale": "BMI is calculated as weight in kilograms divided by height in metres squared. Pre-pregnancy BMI is particularly useful for assessing nutritional status because weight changes during pregnancy affect interpretation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Assessment in Pregnancy",
+"question_text": "A pregnant woman attends her first antenatal visit and appears pale and unusually tired. Which investigation is most useful for assessing whether she has anaemia?",
+"choices": [
+{"text": "Haemoglobin measurement or full blood count", "is_correct": true},
+{"text": "Urine pregnancy test", "is_correct": false},
+{"text": "Visual acuity test", "is_correct": false},
+{"text": "Electrocardiogram alone", "is_correct": false}
+],
+"rationale": "Haemoglobin measurement is used to identify anaemia, while a full blood count provides additional information about red blood cell indices. Further tests may be required to determine the cause of anaemia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Assessment in Pregnancy",
+"question_text": "A pregnant woman has gained very little weight over several antenatal visits. What should the midwife do?",
+"choices": [
+{"text": "Assess dietary intake, maternal health and fetal growth, then provide appropriate nutritional support or referral", "is_correct": true},
+{"text": "Assume that low weight gain is always normal", "is_correct": false},
+{"text": "Advise her to skip meals to reduce pregnancy discomfort", "is_correct": false},
+{"text": "Recommend weight-loss medication", "is_correct": false}
+],
+"rationale": "Inadequate gestational weight gain may indicate insufficient dietary intake, maternal illness or impaired fetal growth. A comprehensive assessment is necessary before individualized dietary advice or referral is provided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition in Pregnancy",
+"question_text": "A pregnant woman has a low BMI before conception. Which nutritional recommendation is most appropriate?",
+"choices": [
+{"text": "Encourage adequate energy and protein intake through a balanced, nutrient-dense diet", "is_correct": true},
+{"text": "Restrict carbohydrates and fats to prevent weight gain", "is_correct": false},
+{"text": "Advise her to eat only fruits throughout pregnancy", "is_correct": false},
+{"text": "Recommend prolonged fasting to improve metabolism", "is_correct": false}
+],
+"rationale": "A woman who is underweight before pregnancy may require individualized nutritional support to achieve appropriate gestational weight gain. Energy-dense and nutrient-rich foods, including protein sources, can help improve nutritional adequacy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition in Pregnancy",
+"question_text": "A pregnant woman has a haemoglobin level of 8.5 g/dL and reports dizziness and fatigue. Which action should the midwife take?",
+"choices": [
+{"text": "Arrange clinical assessment to determine the cause and severity of anaemia and ensure appropriate treatment", "is_correct": true},
+{"text": "Reassure her that this haemoglobin level is normal in pregnancy", "is_correct": false},
+{"text": "Advise her to stop eating iron-rich foods", "is_correct": false},
+{"text": "Ignore the result if she has no bleeding", "is_correct": false}
+],
+"rationale": "A haemoglobin level of 8.5 g/dL indicates significant anaemia and requires clinical assessment and management. The cause should be evaluated, and treatment may include iron supplementation and further intervention depending on the clinical findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition in Pregnancy",
+"question_text": "A pregnant woman with obesity asks how she can reduce pregnancy-related health risks. Which advice is most appropriate?",
+"choices": [
+{"text": "Encourage balanced nutrition, appropriate physical activity and recommended antenatal monitoring", "is_correct": true},
+{"text": "Recommend strict fasting to achieve rapid weight loss", "is_correct": false},
+{"text": "Advise her to avoid all carbohydrates", "is_correct": false},
+{"text": "Recommend weight-loss medication during pregnancy without specialist assessment", "is_correct": false}
+],
+"rationale": "Obesity increases the risk of complications such as gestational diabetes, hypertensive disorders and delivery complications. Healthy eating, appropriate physical activity and regular antenatal monitoring support maternal and fetal wellbeing without promoting intentional rapid weight loss.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A pregnant woman is diagnosed with gestational diabetes mellitus. Which dietary approach is most appropriate?",
+"choices": [
+{"text": "Use balanced meals with controlled carbohydrate portions, adequate fibre and appropriate meal timing", "is_correct": true},
+{"text": "Eliminate all carbohydrates from the diet", "is_correct": false},
+{"text": "Consume large quantities of sugary drinks between meals", "is_correct": false},
+{"text": "Eat only protein-rich foods and avoid vegetables", "is_correct": false}
+],
+"rationale": "Medical nutrition therapy is a key component of gestational diabetes management. It involves appropriate carbohydrate distribution, high-fibre foods, balanced meals and monitoring of blood glucose levels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A pregnant woman with gestational diabetes asks whether she can eat jollof rice. What is the best response?",
+"choices": [
+{"text": "She may eat an appropriate portion with vegetables and a protein source while monitoring blood glucose", "is_correct": true},
+{"text": "She must avoid all rice permanently", "is_correct": false},
+{"text": "She should eat unlimited portions because rice is a staple food", "is_correct": false},
+{"text": "She should replace jollof rice with sugary drinks", "is_correct": false}
+],
+"rationale": "Gestational diabetes does not automatically require complete elimination of rice or other carbohydrate-containing foods. Portion control, balanced meal composition and blood glucose monitoring help determine suitable dietary choices.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A pregnant woman with hypertension asks how she should modify her diet. Which advice is most appropriate?",
+"choices": [
+{"text": "Choose a balanced diet with vegetables, fruits and appropriate protein while avoiding excessive salt intake", "is_correct": true},
+{"text": "Add extra salt to every meal", "is_correct": false},
+{"text": "Stop drinking water to reduce blood pressure", "is_correct": false},
+{"text": "Eat only carbohydrate-rich foods", "is_correct": false}
+],
+"rationale": "A balanced diet containing vegetables, fruits and appropriate protein supports maternal health, while avoiding excessive sodium intake is sensible. Dietary modification does not replace clinical assessment, monitoring or prescribed treatment for hypertension in pregnancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A pregnant woman reports persistent nausea in the morning and difficulty eating large meals. Which advice may help her maintain adequate nutritional intake?",
+"choices": [
+{"text": "Eat small, frequent meals and choose foods that she tolerates", "is_correct": true},
+{"text": "Avoid eating throughout the day", "is_correct": false},
+{"text": "Eat one very large meal before sleeping", "is_correct": false},
+{"text": "Drink large quantities of sugary beverages instead of eating", "is_correct": false}
+],
+"rationale": "Small, frequent meals may help reduce nausea and improve food intake during pregnancy. The woman should maintain adequate hydration and seek assessment if vomiting is persistent or causes dehydration or weight loss.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A breastfeeding mother asks whether she needs to drink water whenever she breastfeeds. Which advice is most appropriate?",
+"choices": [
+{"text": "She should drink adequate fluids according to thirst and maintain a balanced diet", "is_correct": true},
+{"text": "She must drink several litres immediately after every feed", "is_correct": false},
+{"text": "She should avoid drinking water to concentrate breast milk", "is_correct": false},
+{"text": "Water intake has no relationship to maternal hydration", "is_correct": false}
+],
+"rationale": "Breastfeeding increases maternal fluid requirements, and drinking according to thirst generally supports adequate hydration. Excessive forced fluid intake does not reliably increase breast milk production.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A breastfeeding mother in Ghana eats mainly plain gari and drinks little water. She complains of fatigue and poor dietary intake. Which advice is most appropriate?",
+"choices": [
+{"text": "Encourage a varied diet containing protein, vegetables, fruits, energy-giving foods and adequate fluids", "is_correct": true},
+{"text": "Advise her to eat only gari because it is sufficient for lactation", "is_correct": false},
+{"text": "Recommend avoiding all fish, beans and eggs", "is_correct": false},
+{"text": "Tell her that maternal nutrition is unrelated to her health during breastfeeding", "is_correct": false}
+],
+"rationale": "A varied diet supports maternal nutritional needs during lactation and helps maintain maternal health. Gari provides energy but should be complemented with protein-rich foods, vegetables, fruits and adequate fluids.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother delivers a healthy term baby and asks when breastfeeding should begin. What should the midwife recommend?",
+"choices": [
+{"text": "Initiate breastfeeding within the first hour after birth when mother and baby are clinically stable", "is_correct": true},
+{"text": "Wait for at least 24 hours before offering breast milk", "is_correct": false},
+{"text": "Give glucose water before the first breastfeed", "is_correct": false},
+{"text": "Delay breastfeeding until the mother produces large quantities of mature milk", "is_correct": false}
+],
+"rationale": "Early initiation of breastfeeding within the first hour supports bonding and helps the newborn receive colostrum. Colostrum is rich in antibodies and other protective factors.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother believes that the yellowish milk produced during the first days after delivery should be discarded. What should the midwife explain?",
+"choices": [
+{"text": "Colostrum is nutritious and contains protective antibodies that benefit the newborn", "is_correct": true},
+{"text": "Colostrum is contaminated and should always be discarded", "is_correct": false},
+{"text": "Colostrum has no nutritional value", "is_correct": false},
+{"text": "Colostrum causes neonatal sepsis in healthy newborns", "is_correct": false}
+],
+"rationale": "Colostrum is the first breast milk and contains concentrated nutrients, immunoglobulins and other protective substances. It should be given to the newborn rather than discarded.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother reports that her six-month-old infant is still receiving only breast milk. Which advice should the midwife give?",
+"choices": [
+{"text": "Introduce safe, nutritious and age-appropriate complementary foods while continuing breastfeeding", "is_correct": true},
+{"text": "Stop breastfeeding immediately and use only adult family meals", "is_correct": false},
+{"text": "Continue exclusive breastfeeding until the child is two years old", "is_correct": false},
+{"text": "Give only fruit juice and water as complementary foods", "is_correct": false}
+],
+"rationale": "At six months, infants require complementary foods in addition to breast milk to meet increasing energy and nutrient needs. Breastfeeding should continue alongside appropriate complementary feeding up to two years and beyond.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother complains that her newborn cries frequently and assumes that her breast milk is insufficient. Which assessment is most useful before recommending formula feeding?",
+"choices": [
+{"text": "Assess positioning, attachment, feeding frequency and evidence of adequate milk transfer", "is_correct": true},
+{"text": "Recommend formula immediately without assessing breastfeeding", "is_correct": false},
+{"text": "Advise her to stop breastfeeding for two days", "is_correct": false},
+{"text": "Tell her to give water after every breastfeed", "is_correct": false}
+],
+"rationale": "Frequent crying alone does not establish inadequate breast milk intake. Assessment of attachment, feeding effectiveness, urine output and weight pattern helps determine whether breastfeeding support or further evaluation is needed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "A pregnant woman buys cooked rice from a roadside vendor and plans to eat the remaining portion the following evening. Which advice is safest?",
+"choices": [
+{"text": "Refrigerate leftovers promptly and reheat thoroughly before eating", "is_correct": true},
+{"text": "Leave the rice uncovered at room temperature overnight", "is_correct": false},
+{"text": "Mix the leftover rice with raw vegetables and eat it cold", "is_correct": false},
+{"text": "Store the rice beside raw meat to keep it fresh", "is_correct": false}
+],
+"rationale": "Cooked rice can support the growth of Bacillus cereus if it is kept at unsafe temperatures for prolonged periods. Prompt cooling, refrigeration and thorough reheating reduce the risk of foodborne illness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "A pregnant woman prepares kontomire stew using leafy vegetables collected from a market. Which practice should she follow before cooking?",
+"choices": [
+{"text": "Wash the vegetables thoroughly with safe water and remove visible dirt", "is_correct": true},
+{"text": "Use vegetables without washing because cooking is always sufficient", "is_correct": false},
+{"text": "Wash the vegetables with household bleach at an unmeasured concentration", "is_correct": false},
+{"text": "Place the vegetables on a surface used for raw meat without cleaning it", "is_correct": false}
+],
+"rationale": "Thorough washing with safe water removes soil and reduces microbial contamination on vegetables. Food preparation surfaces and utensils should also be kept clean to prevent cross-contamination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Nutrition for Mothers and Children",
+"question_text": "A community health nurse visits a CHPS compound and finds that several pregnant women regularly skip meals because of food taboos. What should the nurse do?",
+"choices": [
+{"text": "Provide culturally sensitive nutrition education and encourage safe, nutritious alternatives", "is_correct": true},
+{"text": "Ridicule the women for following traditional beliefs", "is_correct": false},
+{"text": "Advise all women to ignore every traditional practice without discussion", "is_correct": false},
+{"text": "Recommend fasting throughout pregnancy", "is_correct": false}
+],
+"rationale": "Culturally sensitive counselling helps identify harmful food restrictions while respecting the woman's beliefs. The nurse should explain nutritional needs and suggest acceptable alternatives that provide essential nutrients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Nutrition for Mothers and Children",
+"question_text": "A mother attending a child welfare clinic reports that her nine-month-old child receives mostly thin maize porridge. Which advice is most appropriate?",
+"choices": [
+{"text": "Enrich the porridge with suitable protein- and nutrient-rich foods and offer a varied complementary diet", "is_correct": true},
+{"text": "Continue giving only thin porridge until the child is two years old", "is_correct": false},
+{"text": "Replace all meals with sweetened fruit drinks", "is_correct": false},
+{"text": "Stop breastfeeding to encourage the child to eat porridge", "is_correct": false}
+],
+"rationale": "Thin maize porridge may provide insufficient energy and nutrients when it is the main complementary food. Adding suitable ingredients such as groundnut paste, beans, egg or other locally available nutritious foods can improve its nutrient density, while breastfeeding continues.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Nutrition for Mothers and Children",
+"question_text": "A pregnant woman in a rural Ghanaian community cannot afford expensive animal-source foods. Which recommendation would best support adequate protein intake?",
+"choices": [
+{"text": "Use affordable protein sources such as beans, cowpeas, groundnuts and locally available fish", "is_correct": true},
+{"text": "Avoid all legumes because they contain no protein", "is_correct": false},
+{"text": "Depend only on sugar and cassava for protein", "is_correct": false},
+{"text": "Skip meals until she can afford meat", "is_correct": false}
+],
+"rationale": "Beans, cowpeas, groundnuts and fish are accessible sources of protein in many Ghanaian communities. Combining different food groups helps improve overall dietary quality and nutrient intake.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A pregnant woman with gestational diabetes reports episodes of sweating, tremors and dizziness after taking her prescribed insulin but missing lunch. What should the midwife suspect?",
+"choices": [
+{"text": "Hypoglycaemia", "is_correct": true},
+{"text": "Hypercalcaemia", "is_correct": false},
+{"text": "Iron overload", "is_correct": false},
+{"text": "Vitamin D deficiency", "is_correct": false}
+],
+"rationale": "Insulin combined with a missed meal can cause blood glucose to fall below the normal range. Sweating, tremors and dizziness are common symptoms of hypoglycaemia and require prompt blood glucose assessment and appropriate management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition in Pregnancy",
+"question_text": "A pregnant woman reports eating mainly cassava and gari because these foods are affordable. She has swollen feet, fatigue and poor appetite. What should the midwife do first?",
+"choices": [
+{"text": "Assess her nutritional status and investigate possible medical causes of the swelling and fatigue", "is_correct": true},
+{"text": "Assume that all swelling in pregnancy is caused by protein deficiency", "is_correct": false},
+{"text": "Advise her to stop eating all carbohydrate-containing foods", "is_correct": false},
+{"text": "Prescribe high-dose protein supplements without assessment", "is_correct": false}
+],
+"rationale": "A diet dominated by cassava and gari may lack adequate protein and micronutrients, but oedema and fatigue can also indicate medical complications such as hypertensive disorders or anaemia. Assessment of blood pressure, nutritional intake and relevant clinical findings is necessary before deciding on management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutritional Assessment in Pregnancy",
+"question_text": "A pregnant woman has a low haemoglobin level despite reporting regular consumption of iron-rich foods. Which explanation should the midwife consider?",
+"choices": [
+{"text": "Anaemia may have causes other than inadequate dietary iron, requiring further investigation", "is_correct": true},
+{"text": "Eating iron-rich foods always guarantees normal haemoglobin", "is_correct": false},
+{"text": "Low haemoglobin is always a normal finding in pregnancy and needs no assessment", "is_correct": false},
+{"text": "Anaemia can only result from inadequate carbohydrate intake", "is_correct": false}
+],
+"rationale": "Anaemia may result from iron deficiency, folate or vitamin B12 deficiency, blood loss, infections, inherited conditions such as sickle cell disease or other chronic disorders. Further clinical and laboratory assessment is required to identify the cause and guide treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A pregnant woman with gestational diabetes records consistently high blood glucose levels after eating large portions of fufu with soup. Which dietary modification is most appropriate?",
+"choices": [
+{"text": "Review portion size, distribute carbohydrate intake across meals and include vegetables and suitable protein", "is_correct": true},
+{"text": "Remove all vegetables and increase the fufu portion", "is_correct": false},
+{"text": "Replace fufu with sweetened beverages", "is_correct": false},
+{"text": "Skip breakfast and lunch to compensate for the evening meal", "is_correct": false}
+],
+"rationale": "Large portions of carbohydrate-rich foods can contribute to post-meal hyperglycaemia in gestational diabetes. Individualized carbohydrate distribution, portion control and balanced meals can improve glycaemic control without unnecessary elimination of staple foods.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A pregnant woman with hypertension is advised by a relative to stop taking her prescribed medication and use only a low-salt diet. Which response by the midwife is most appropriate?",
+"choices": [
+{"text": "Explain that dietary measures support care but do not replace prescribed treatment and clinical monitoring", "is_correct": true},
+{"text": "Agree that diet alone is sufficient to treat all hypertensive disorders in pregnancy", "is_correct": false},
+{"text": "Advise her to stop antenatal visits if she reduces salt intake", "is_correct": false},
+{"text": "Recommend eliminating all fluids to lower blood pressure", "is_correct": false}
+],
+"rationale": "Hypertensive disorders in pregnancy can progress to serious complications, including eclampsia, and require appropriate medical management. A balanced diet and avoidance of excessive salt may support general health but cannot replace prescribed treatment or monitoring.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother gives her two-month-old infant water and herbal mixtures in addition to breast milk because she believes breast milk alone cannot satisfy the baby. Which concern should the midwife address first?",
+"choices": [
+{"text": "The additional substances may introduce infection and interfere with exclusive breastfeeding", "is_correct": true},
+{"text": "Water and herbal mixtures are necessary for every newborn", "is_correct": false},
+{"text": "Breast milk has no protective effect against infection", "is_correct": false},
+{"text": "Exclusive breastfeeding should begin only after six months", "is_correct": false}
+],
+"rationale": "Exclusive breastfeeding is recommended for the first six months, without additional water or herbal mixtures unless medically indicated. These substances may introduce pathogens, displace breast milk intake and expose the infant to harmful ingredients.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A six-month-old infant is given complementary foods, but the mother prepares one large quantity in the morning and leaves it uncovered throughout the day. What is the main nutritional and health concern?",
+"choices": [
+{"text": "Microbial contamination and multiplication may cause foodborne illness", "is_correct": true},
+{"text": "The food will automatically become more nutritious at room temperature", "is_correct": false},
+{"text": "Leaving food uncovered increases its vitamin content", "is_correct": false},
+{"text": "Food contamination cannot occur in cooked complementary foods", "is_correct": false}
+],
+"rationale": "Cooked complementary foods can become contaminated and support microbial growth when left uncovered at unsafe temperatures. Food should be prepared hygienically, stored safely and served using clean utensils.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Malnutrition in Pregnancy",
+"question_text": "A pregnant woman with severe anaemia reports breathlessness at rest, palpitations and extreme weakness. What should the midwife do first?",
+"choices": [
+{"text": "Arrange urgent clinical assessment and escalation because she may have severe symptomatic anaemia", "is_correct": true},
+{"text": "Advise her to take fruit juice and return in one month", "is_correct": false},
+{"text": "Reassure her that breathlessness at rest is always normal in pregnancy", "is_correct": false},
+{"text": "Recommend strenuous exercise to improve oxygen delivery", "is_correct": false}
+],
+"rationale": "Breathlessness at rest, palpitations and extreme weakness may indicate clinically significant anaemia and possible cardiovascular compromise. Urgent assessment is required to determine severity and provide appropriate treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A breastfeeding mother believes that eating more sugar will increase breast milk production. Which explanation should the midwife provide?",
+"choices": [
+{"text": "Milk production is mainly supported by effective and frequent milk removal, not by excessive sugar intake", "is_correct": true},
+{"text": "Sugar is the only nutrient required for breast milk production", "is_correct": false},
+{"text": "Excessive sugar intake guarantees increased breast milk volume", "is_correct": false},
+{"text": "Breast milk production is unrelated to infant suckling", "is_correct": false}
+],
+"rationale": "Frequent and effective breastfeeding stimulates prolactin and oxytocin responses that support milk production and milk ejection. A balanced diet is important for maternal health, but excessive sugar intake is not a method of increasing milk supply.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Nutrition for Mothers and Children",
+"question_text": "At a CHPS outreach clinic, several children under five years are found to have poor weight gain and recurrent diarrhoea. Which community-level intervention should receive priority?",
+"choices": [
+{"text": "Integrate growth monitoring, nutrition counselling, immunization and hygiene education", "is_correct": true},
+{"text": "Provide only sugary snacks to increase children's weight", "is_correct": false},
+{"text": "Stop breastfeeding in all children with diarrhoea", "is_correct": false},
+{"text": "Discontinue growth monitoring because it does not identify nutritional problems", "is_correct": false}
+],
+"rationale": "Poor weight gain and recurrent diarrhoea may reflect inadequate nutrition, infection and unsafe feeding or environmental practices. Integrated community interventions can identify growth problems early, improve feeding practices and reduce preventable infections.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "A pregnant woman develops severe vomiting and diarrhoea after eating improperly stored food. She is dizzy, has a dry mouth and passes very little urine. What should the midwife prioritize?",
+"choices": [
+{"text": "Urgent assessment and management of dehydration, including evaluation of maternal and fetal wellbeing", "is_correct": true},
+{"text": "Advise her to continue fasting until the diarrhoea stops", "is_correct": false},
+{"text": "Reassure her that reduced urine output is harmless during pregnancy", "is_correct": false},
+{"text": "Recommend taking an unprescribed antidiarrhoeal medicine without assessment", "is_correct": false}
+],
+"rationale": "Dizziness, dry mouth and reduced urine output suggest significant dehydration, which can compromise maternal circulation and pregnancy wellbeing. Urgent assessment and appropriate fluid replacement are necessary, with investigation and treatment of the underlying cause.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutritional Assessment in Pregnancy",
+"question_text": "A pregnant woman has a normal BMI but reports eating only one meal daily because of financial difficulties. Which conclusion is most appropriate?",
+"choices": [
+{"text": "A normal BMI does not exclude micronutrient deficiencies or inadequate dietary intake", "is_correct": true},
+{"text": "A normal BMI proves that her diet is nutritionally adequate", "is_correct": false},
+{"text": "Nutritional assessment is unnecessary when BMI is normal", "is_correct": false},
+{"text": "Eating one meal daily guarantees adequate fetal growth", "is_correct": false}
+],
+"rationale": "BMI provides information about body size but does not measure the quality or adequacy of nutrient intake. Dietary assessment, clinical evaluation and relevant investigations are needed to identify possible nutritional deficiencies.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A pregnant woman takes her iron tablet with strong tea at every meal. Her haemoglobin remains low despite reported adherence. Which explanation best accounts for this finding?",
+"choices": [
+{"text": "Polyphenols in tea may reduce the absorption of non-haem iron", "is_correct": true},
+{"text": "Tea converts iron into vitamin D", "is_correct": false},
+{"text": "Tea always increases intestinal iron absorption", "is_correct": false},
+{"text": "Iron absorption is completely independent of food and beverages", "is_correct": false}
+],
+"rationale": "Tea contains polyphenols that can inhibit the absorption of non-haem iron when consumed with meals or iron supplements. The woman should be advised to take iron as directed and separate it from tea or coffee.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Nutrition for Mothers and Children",
+"question_text": "A community nutrition assessment identifies pregnant women avoiding eggs, fish and groundnuts because of traditional food taboos. Which intervention is most appropriate?",
+"choices": [
+{"text": "Engage the women and community leaders in culturally appropriate education about safe nutrient-rich foods and alternatives", "is_correct": true},
+{"text": "Force the women to eat the restricted foods without discussion", "is_correct": false},
+{"text": "Dismiss all traditional beliefs as unimportant", "is_correct": false},
+{"text": "Recommend that pregnant women avoid all protein-rich foods", "is_correct": false}
+],
+"rationale": "Food taboos may reduce dietary diversity and contribute to inadequate nutrient intake during pregnancy. Participatory, culturally sensitive education can address misconceptions while identifying acceptable and affordable alternative sources of protein and micronutrients.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
