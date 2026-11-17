@@ -198,11 +198,16 @@ class PasswordResetRequestView(APIView):
         email = serializer.validated_data["email"].lower().strip()
 
         user = User.objects.filter(email__iexact=email, is_active=True).first()
+
         if user:
             try:
                 uid = urlsafe_base64_encode(force_bytes(user.pk))
                 token = default_token_generator.make_token(user)
-                reset_url = f"{settings.FRONTEND_ORIGIN}/reset-password?uid={uid}&token={token}"
+                
+                # FIX: Safe fallback for FRONTEND_ORIGIN
+                frontend_origin = getattr(settings, "FRONTEND_ORIGIN", "https://nursifygh.vercel.app").rstrip("/")
+                reset_url = f"{frontend_origin}/reset-password?uid={uid}&token={token}"
+
                 send_mail(
                     subject="Reset your NursifyGH password",
                     message=(
@@ -216,6 +221,7 @@ class PasswordResetRequestView(APIView):
                     fail_silently=False,
                 )
             except Exception as exc:
+                # FIX: Log the failure but DO NOT crash the API. The user will still see success.
                 logger.exception("Password reset email failed for %s: %s", email, exc)
 
         return Response({"detail": "If an account exists for that email, a reset link has been sent."})
@@ -473,18 +479,6 @@ class ClinicalLogbookExportView(APIView):
 
 class AmbassadorStatsView(APIView):
     """Return the ambassador's earnings, referred students, and payout status.
-
-    FIX: Two separate referral counters so the referrer sees activity
-    immediately, not just after 3 days:
-
-      • pending_referrals   = users who used this ambassador's code but
-                              have NOT paid yet (trial / lapsed)
-      • confirmed_referrals = users who used this ambassador's code AND
-                              have paid (commission earned)
-
-    `recent` now shows BOTH pending and confirmed in one timeline,
-    ordered by signup date. This solves the "referrer sees nothing during
-    the referred student's trial" confusion.
     """
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -493,7 +487,6 @@ class AmbassadorStatsView(APIView):
         if not user.is_ambassador:
             return Response({"error": "Not an ambassador"}, status=403)
 
-        # ── Confirmed side: commissions actually earned ──
         commissions = (
             AmbassadorCommission.objects
             .filter(ambassador=user)
@@ -505,9 +498,6 @@ class AmbassadorStatsView(APIView):
         pending_payout = sum(c.amount_ghs for c in commissions if not c.is_paid_out)
         paid_out = total_earned - pending_payout
 
-        # FIX: pending side — everyone who used this ambassador's code.
-        # NOTE: `referred_by` is a CharField on User, not a FK — hence the
-        # string comparison against user.referral_code.
         if user.referral_code:
             referred_users = (
                 User.objects
@@ -520,7 +510,6 @@ class AmbassadorStatsView(APIView):
         pending_referrals = referred_users.filter(has_paid=False).count()
         confirmed_referrals = referred_users.filter(has_paid=True).count()
 
-        # ── Payout timing (3-day fraud buffer, minimum GHS 10) ──
         min_payout = 10.00
         three_days_ago = timezone.now() - timedelta(days=3)
         cleared_commissions = commissions.filter(
@@ -539,8 +528,6 @@ class AmbassadorStatsView(APIView):
                 next_unlock = newest_unpaid.created_at + timedelta(days=3)
                 payout_date = next_unlock.isoformat()
 
-        # ── Unified timeline (pending + confirmed) ──
-        # Map student_id → commission for O(1) lookups in the loop below.
         commission_by_student = {
             c.referred_student_id: c
             for c in commissions
@@ -551,11 +538,8 @@ class AmbassadorStatsView(APIView):
         for r in referred_users.order_by("-date_joined")[:20]:
             comm = commission_by_student.get(r.id)
             recent.append({
-                # FIX: new keys are `email`, `full_name`, `status`, `joined`.
-                # Old frontend may still read `referred_email` — kept as a
-                # duplicate alias for backward compatibility.
                 "email": r.email,
-                "referred_email": r.email,      # alias for older frontend builds
+                "referred_email": r.email,
                 "full_name": r.full_name,
                 "joined": r.date_joined.isoformat(),
                 "date": (comm.created_at.isoformat() if comm else r.date_joined.isoformat()),
@@ -570,12 +554,9 @@ class AmbassadorStatsView(APIView):
             "total_earned": str(total_earned),
             "pending_payout": str(pending_payout),
             "paid_out": str(paid_out),
-            # FIX: new counters
             "pending_referrals": pending_referrals,
             "confirmed_referrals": confirmed_referrals,
             "total_referrals": pending_referrals + confirmed_referrals,
-            # Kept for backward compatibility with older frontend builds.
-            # NOTE: this now equals confirmed_referrals (paid referrals only).
             "referral_count": confirmed_referrals,
             "can_cash_out": can_cash_out,
             "cleared_amount": str(cleared_amount),
@@ -593,18 +574,14 @@ class BecomeAmbassadorView(APIView):
         if user.is_ambassador:
             return Response({"detail": "You are already an ambassador.", "code": user.referral_code})
 
-        # FIX: build a stable prefix from the user's first name, capped at 5 chars.
-        # Ensure at least 1 char even if full_name is empty / whitespace.
         prefix = (user.full_name.split(" ")[0] or "AMB").upper()[:5] or "AMB"
 
-        # FIX: try up to 5 times to find a non-colliding code.
         for _ in range(5):
             suffix = "".join(random.choices(string.ascii_uppercase + string.digits, k=4))
             code = f"{prefix}-{suffix}"
             if not User.objects.filter(referral_code=code).exists():
                 break
         else:
-            # All 5 attempts collided — extremely unlikely, but be safe.
             return Response(
                 {"error": "Could not generate a unique referral code. Please try again."},
                 status=500,

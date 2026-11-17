@@ -425,6 +425,8 @@ class WeakAreasView(APIView):
 
 # ─── Leaderboard ─────────────────────────────────────────────────────────────
 
+# ─── Leaderboard ─────────────────────────────────────────────────────────────
+
 class LeaderboardView(APIView):
     """Return the top 20 students in the user's program and level."""
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
@@ -432,8 +434,8 @@ class LeaderboardView(APIView):
     def get(self, request):
         User = get_user_model()
 
-        # Aggregate scores per student
-        leaderboard = (
+        # Base queryset: students in the same program/level with at least 3 completed quizzes
+        base_qs = (
             User.objects.filter(
                 program=request.user.program,
                 level=request.user.level,
@@ -444,44 +446,41 @@ class LeaderboardView(APIView):
                 average_score=Avg('quiz_attempts__score_percentage')
             )
             .filter(total_quizzes__gte=3)
-            .order_by('-average_score')[:20]
+            .order_by('-average_score', '-total_quizzes') # Tiebreaker: more quizzes wins
         )
 
-        # Find current user's rank
+        # Get top 20 for the leaderboard display
+        leaderboard_users = base_qs[:20]
+
+        # Calculate current user's rank
         user_rank = None
-        all_students = list(
-            User.objects.filter(
-                program=request.user.program,
-                level=request.user.level,
-                quiz_attempts__completed_at__isnull=False
-            )
-            .annotate(
-                total_quizzes=Count('quiz_attempts'),
-                average_score=Avg('quiz_attempts__score_percentage')
-            )
-            .filter(total_quizzes__gte=3)
-            .order_by('-average_score')
-            .values_list('id', flat=True)
-        )
+        user_score = 0.0
         
-        if request.user.id in all_students:
-            user_rank = all_students.index(request.user.id) + 1
+        # Get all user IDs in order to find the rank index
+        all_ranked_ids = list(base_qs.values_list('id', flat=True))
+        
+        if request.user.id in all_ranked_ids:
+            user_rank = all_ranked_ids.index(request.user.id) + 1
+            # Get the user's average score from the annotated queryset
+            current_user_entry = next((u for u in base_qs if u.id == request.user.id), None)
+            if current_user_entry:
+                user_score = round(current_user_entry.average_score, 1)
 
+        # Format the top 20 list
         data = [
             {
                 "rank": index + 1,
-                "name": f"{u.first_name} {u.last_name}",
+                # FIX: Changed u.first_name/u.last_name to u.full_name
+                "name": u.full_name, 
                 "average_score": round(u.average_score, 1),
                 "total_quizzes": u.total_quizzes,
                 "is_current_user": u.id == request.user.id
             }
-            for index, u in enumerate(leaderboard)
+            for index, u in enumerate(leaderboard_users)
         ]
-
-        user_score = request.user.quiz_attempts.aggregate(Avg('score_percentage'))['score_percentage__avg'] or 0
 
         return Response({
             "leaderboard": data,
             "my_rank": user_rank,
-            "my_score": round(user_score, 1)
+            "my_score": user_score
         })
