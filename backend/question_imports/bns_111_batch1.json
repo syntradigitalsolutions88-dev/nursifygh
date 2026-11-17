@@ -1,0 +1,708 @@
+{
+"courses": [
+{
+"course_code": "BNS-111",
+"course_title": "Basic Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Bed Making",
+"Patient Positioning and Mobility",
+"Vital Signs Measurement",
+"Hygiene and Comfort Care",
+"Nutrition and Feeding",
+"Elimination Needs",
+"Admission and Discharge Procedures",
+"Infection Prevention and Control",
+"Wound Care",
+"Patient Safety"
+],
+"questions": [
+{
+"topic": "Bed Making",
+"question_text": "What is the primary purpose of making a patient's bed?",
+"choices": [
+{"text": "To promote comfort, cleanliness and patient safety", "is_correct": true},
+{"text": "To prevent the patient from moving independently", "is_correct": false},
+{"text": "To reduce the need for nursing observation", "is_correct": false},
+{"text": "To make the ward appear attractive only", "is_correct": false}
+],
+"rationale": "Bed making promotes patient comfort, hygiene and a safe environment. It also helps prevent complications such as pressure injuries when combined with appropriate repositioning and skin care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bed Making",
+"question_text": "A nurse is preparing an occupied bed for a patient who cannot get out of bed. Which action is most important before beginning the procedure?",
+"choices": [
+{"text": "Explain the procedure, provide privacy and assess the patient's ability to assist", "is_correct": true},
+{"text": "Remove all bed linen while the patient is lying uncovered", "is_correct": false},
+{"text": "Ask the patient to stand beside the bed", "is_correct": false},
+{"text": "Raise the bed to its highest position and leave it there", "is_correct": false}
+],
+"rationale": "Explaining the procedure and maintaining privacy protect the patient's dignity and reduce anxiety. Assessing the patient's ability to assist helps the nurse plan safe movement and prevent injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bed Making",
+"question_text": "During occupied bed making, which technique helps prevent excessive strain on the nurse's back?",
+"choices": [
+{"text": "Bending from the waist while keeping the knees straight", "is_correct": false},
+{"text": "Keeping the back aligned, bending the knees and using leg muscles", "is_correct": true},
+{"text": "Reaching across the patient without changing position", "is_correct": false},
+{"text": "Twisting the trunk while pulling the mattress", "is_correct": false}
+],
+"rationale": "Correct body mechanics reduce musculoskeletal strain during nursing procedures. Nurses should maintain spinal alignment, bend their knees and avoid twisting while lifting or repositioning patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bed Making",
+"question_text": "A nurse is preparing an admission bed for a patient expected to arrive from the emergency department on a stretcher. Which type of bed is most appropriate?",
+"choices": [
+{"text": "Closed bed", "is_correct": false},
+{"text": "Open bed", "is_correct": false},
+{"text": "Postoperative bed", "is_correct": false},
+{"text": "Admission bed", "is_correct": true}
+],
+"rationale": "An admission bed is prepared to receive a newly admitted patient. It is arranged to allow safe and convenient transfer from a stretcher or wheelchair.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bed Making",
+"question_text": "While changing an occupied bed, the nurse discovers that the patient's bedsheet is wet with urine. What should the nurse do?",
+"choices": [
+{"text": "Cover the wet area with a dry towel and leave the sheet unchanged", "is_correct": false},
+{"text": "Replace the wet linen promptly while maintaining privacy and patient safety", "is_correct": true},
+{"text": "Wait until the next scheduled bed-making time", "is_correct": false},
+{"text": "Sprinkle disinfectant powder on the wet sheet", "is_correct": false}
+],
+"rationale": "Wet linen increases skin moisture and discomfort and may contribute to skin breakdown. The nurse should replace contaminated linen promptly using appropriate infection prevention measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "Which position is commonly used to facilitate examination of the anterior chest and abdomen?",
+"choices": [
+{"text": "Supine position", "is_correct": true},
+{"text": "Prone position", "is_correct": false},
+{"text": "Trendelenburg position", "is_correct": false},
+{"text": "Sims' position", "is_correct": false}
+],
+"rationale": "The supine position involves lying flat on the back and provides access to the anterior body surface. It is commonly used for general examination and some nursing procedures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A patient with difficulty breathing is admitted to a medical ward. Which position is most appropriate to help improve lung expansion while the nurse assesses the patient?",
+"choices": [
+{"text": "Prone position", "is_correct": false},
+{"text": "High Fowler's position", "is_correct": true},
+{"text": "Flat supine position", "is_correct": false},
+{"text": "Trendelenburg position", "is_correct": false}
+],
+"rationale": "High Fowler's position elevates the head of the bed substantially and can facilitate chest expansion. It may improve breathing comfort while urgent assessment and treatment are provided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A nurse is repositioning an immobile patient who is at risk of developing pressure injuries. Which intervention is most appropriate?",
+"choices": [
+{"text": "Reposition the patient according to an individualised schedule and assess the skin regularly", "is_correct": true},
+{"text": "Keep the patient in one comfortable position throughout the day", "is_correct": false},
+{"text": "Massage reddened bony prominences vigorously", "is_correct": false},
+{"text": "Place the patient directly on a hard surface to improve circulation", "is_correct": false}
+],
+"rationale": "Regular repositioning reduces prolonged pressure on vulnerable tissues, while skin assessment helps identify early damage. Repositioning frequency should be individualised according to the patient's condition, skin integrity and support surface.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A nurse is transferring a weak patient from the bed to a wheelchair. Which action should be performed FIRST?",
+"choices": [
+{"text": "Move the wheelchair away from the bedside", "is_correct": false},
+{"text": "Assess the patient's strength, balance and ability to follow instructions", "is_correct": true},
+{"text": "Ask the patient to stand without assistance", "is_correct": false},
+{"text": "Remove the patient's footwear", "is_correct": false}
+],
+"rationale": "Assessment determines the level of assistance and equipment needed for a safe transfer. The nurse should also explain the procedure, position the wheelchair appropriately and ensure its brakes are applied.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A patient who has been on prolonged bed rest suddenly complains of dizziness when standing. What should the nurse do FIRST?",
+"choices": [
+{"text": "Encourage the patient to continue walking", "is_correct": false},
+{"text": "Assist the patient to sit or lie down safely and assess vital signs", "is_correct": true},
+{"text": "Leave the patient standing while obtaining a wheelchair", "is_correct": false},
+{"text": "Give the patient a large meal immediately", "is_correct": false}
+],
+"rationale": "Dizziness on standing may indicate orthostatic hypotension and creates an immediate risk of falling. The nurse should prevent a fall, assess the patient's condition and report significant findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A patient recovering from a stroke has weakness on the right side. Which action is most appropriate when assisting the patient to move from the bed to a chair?",
+"choices": [
+{"text": "Pull the patient by the affected arm", "is_correct": false},
+{"text": "Follow the assessed transfer technique and support the affected side without pulling the arm", "is_correct": true},
+{"text": "Allow the patient to transfer without assistance", "is_correct": false},
+{"text": "Lift the patient by holding the neck and shoulders", "is_correct": false}
+],
+"rationale": "Stroke-related weakness may impair balance and increase the risk of falls or shoulder injury. Transfers should follow an individualised mobility assessment, with appropriate support and assistive devices.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "Which of the following is NOT traditionally classified as one of the four basic vital signs?",
+"choices": [
+{"text": "Temperature", "is_correct": false},
+{"text": "Pulse", "is_correct": false},
+{"text": "Blood pressure", "is_correct": false},
+{"text": "Body weight", "is_correct": true}
+],
+"rationale": "The four traditional vital signs are temperature, pulse, respiratory rate and blood pressure. Body weight is an important clinical measurement but is not one of the four basic vital signs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A nurse is measuring the radial pulse of an adult patient. Which technique is correct?",
+"choices": [
+{"text": "Use the thumb to press firmly over the radial artery", "is_correct": false},
+{"text": "Use the pads of the index and middle fingers to palpate the radial artery", "is_correct": true},
+{"text": "Use the palm of the hand to count the pulse", "is_correct": false},
+{"text": "Press both sides of the wrist simultaneously", "is_correct": false}
+],
+"rationale": "The index and middle fingers are used because the nurse's own thumb has a palpable pulse that may interfere with measurement. The radial pulse is assessed for rate, rhythm and volume.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "An adult patient's pulse is 118 beats per minute while resting. How should the nurse document this finding?",
+"choices": [
+{"text": "Bradycardia", "is_correct": false},
+{"text": "Tachycardia", "is_correct": true},
+{"text": "Normal resting pulse", "is_correct": false},
+{"text": "Pulse deficit", "is_correct": false}
+],
+"rationale": "Tachycardia refers to an adult resting heart rate above 100 beats per minute. The nurse should assess the patient for possible causes such as fever, pain, dehydration, anxiety or cardiovascular problems.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A patient admitted with suspected malaria has a temperature of 39.5°C. What is the nurse's priority action?",
+"choices": [
+{"text": "Record the temperature and wait until the next routine observation", "is_correct": false},
+{"text": "Assess the patient for signs of severe illness, report the fever and implement prescribed management", "is_correct": true},
+{"text": "Cover the patient with several thick blankets", "is_correct": false},
+{"text": "Give an antipyretic without checking the prescription or protocol", "is_correct": false}
+],
+"rationale": "A temperature of 39.5°C indicates significant fever and requires further assessment, particularly when malaria is suspected. The nurse should assess for danger signs, report the findings and follow prescribed or authorised fever management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "Which factor is most important when selecting a blood pressure cuff?",
+"choices": [
+{"text": "The patient's age only", "is_correct": false},
+{"text": "The cuff size must be appropriate for the patient's arm circumference", "is_correct": true},
+{"text": "The cuff must always be the smallest available size", "is_correct": false},
+{"text": "The cuff should be placed over thick clothing", "is_correct": false}
+],
+"rationale": "An incorrectly sized cuff can produce inaccurate blood pressure readings. The inflatable bladder should be appropriate for the patient's arm circumference and positioned correctly.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A nurse records a blood pressure of 170/105 mmHg in a patient who has no previous diagnosis of hypertension. What should the nurse do NEXT?",
+"choices": [
+{"text": "Ignore the reading because the patient has no symptoms", "is_correct": false},
+{"text": "Check the measurement technique, repeat the reading and assess the patient for concerning symptoms", "is_correct": true},
+{"text": "Immediately document that the patient has chronic hypertension", "is_correct": false},
+{"text": "Advise the patient to stop all physical activity permanently", "is_correct": false}
+],
+"rationale": "A markedly elevated reading should be verified using correct technique and followed by clinical assessment. A single measurement does not by itself establish a diagnosis of chronic hypertension, but severe symptoms require urgent escalation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A patient has a respiratory rate of 30 breaths per minute and is using accessory muscles to breathe. Which action should the nurse take FIRST?",
+"choices": [
+{"text": "Complete the patient's dietary assessment", "is_correct": false},
+{"text": "Assess airway and breathing, support the patient and urgently escalate the findings", "is_correct": true},
+{"text": "Ask the patient to walk around the ward", "is_correct": false},
+{"text": "Delay intervention until the next scheduled vital signs assessment", "is_correct": false}
+],
+"rationale": "Tachypnoea with accessory muscle use indicates respiratory distress and may signal a life-threatening condition. Airway and breathing assessment and urgent escalation take priority over routine nursing activities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "What is the main purpose of providing regular oral care to an unconscious patient?",
+"choices": [
+{"text": "To maintain oral hygiene and reduce the risk of oral infection and complications", "is_correct": true},
+{"text": "To stimulate the patient to swallow large amounts of water", "is_correct": false},
+{"text": "To replace the need for prescribed medication", "is_correct": false},
+{"text": "To prevent the patient from regaining consciousness", "is_correct": false}
+],
+"rationale": "Unconscious patients cannot maintain their own oral hygiene and may develop dryness, plaque accumulation and infection. Oral care should be provided with aspiration precautions and appropriate positioning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A nurse is giving a bed bath to a patient with limited mobility. Which action is most appropriate?",
+"choices": [
+{"text": "Expose the entire body throughout the procedure", "is_correct": false},
+{"text": "Maintain privacy, expose only the area being washed and assess the skin", "is_correct": true},
+{"text": "Use very hot water to remove all skin oils", "is_correct": false},
+{"text": "Wash from the dirtiest area to the cleanest area", "is_correct": false}
+],
+"rationale": "Maintaining privacy and exposing only the area being washed protects dignity and reduces unnecessary heat loss. Skin assessment during bathing can help identify pressure injuries, rashes and other abnormalities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "When providing perineal care to a female patient, in which direction should the nurse clean the perineal area?",
+"choices": [
+{"text": "From the anus towards the urethra", "is_correct": false},
+{"text": "From the urethral area towards the anus", "is_correct": true},
+{"text": "In a circular motion from the anus towards the vagina", "is_correct": false},
+{"text": "In any direction because the direction does not matter", "is_correct": false}
+],
+"rationale": "Cleaning from front to back reduces the transfer of microorganisms from the anal area towards the urethra and vagina. This helps reduce the risk of urinary and genital tract infections.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "An immobile patient has developed redness over the sacral area. The skin is intact and the redness does not blanch when pressed. What should the nurse suspect?",
+"choices": [
+{"text": "Stage 1 pressure injury", "is_correct": true},
+{"text": "Stage 3 pressure injury", "is_correct": false},
+{"text": "Stage 4 pressure injury", "is_correct": false},
+{"text": "A normal skin response to pressure", "is_correct": false}
+],
+"rationale": "Stage 1 pressure injury is characterised by intact skin with non-blanchable erythema over a pressure area. The nurse should relieve pressure, assess the skin and implement an appropriate prevention plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A patient with profuse diarrhoea has soiled the bed and has irritated perineal skin. What should the nurse prioritise?",
+"choices": [
+{"text": "Delay cleaning until the patient has finished all bowel movements", "is_correct": false},
+{"text": "Provide prompt cleansing, dry the skin gently and apply an appropriate barrier product", "is_correct": true},
+{"text": "Rub the affected skin vigorously with a rough towel", "is_correct": false},
+{"text": "Apply strongly perfumed products to mask the odour", "is_correct": false}
+],
+"rationale": "Prompt cleansing reduces prolonged contact with faeces and moisture, which can worsen skin irritation and breakdown. Gentle drying and an appropriate barrier product help protect the skin.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "Which position is generally recommended for a conscious patient who is receiving oral feeding?",
+"choices": [
+{"text": "Upright sitting position", "is_correct": true},
+{"text": "Flat supine position", "is_correct": false},
+{"text": "Trendelenburg position", "is_correct": false},
+{"text": "Prone position", "is_correct": false}
+],
+"rationale": "An upright position supports safer swallowing and reduces the risk of aspiration. The nurse should also assess the patient's swallowing ability and follow any prescribed dietary or swallowing precautions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A patient with a nasogastric tube is due for enteral feeding. What should the nurse do before administering the feed?",
+"choices": [
+{"text": "Assume the tube is correctly positioned because it was inserted yesterday", "is_correct": false},
+{"text": "Verify tube position using the approved local protocol and check the prescribed feeding instructions", "is_correct": true},
+{"text": "Push the feed quickly to reduce the time required", "is_correct": false},
+{"text": "Add water to the feed without checking the prescription", "is_correct": false}
+],
+"rationale": "Incorrect nasogastric tube placement can result in aspiration and serious respiratory complications. Tube position must be confirmed using an approved method, such as aspirate pH testing and radiographic confirmation when indicated, according to local protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A patient receiving nasogastric feeding begins coughing persistently and develops breathing difficulty. What should the nurse do FIRST?",
+"choices": [
+{"text": "Increase the feeding rate", "is_correct": false},
+{"text": "Stop the feed, assess airway and breathing, and seek urgent clinical assistance", "is_correct": true},
+{"text": "Flush the tube immediately with a large volume of water", "is_correct": false},
+{"text": "Place the patient flat and continue feeding", "is_correct": false}
+],
+"rationale": "Coughing and respiratory distress during feeding may indicate aspiration or tube displacement. The feed should be stopped immediately while the nurse assesses the airway and breathing and escalates care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A patient who has difficulty swallowing after a stroke is prescribed a modified-texture diet. What should the nurse do?",
+"choices": [
+{"text": "Offer ordinary solid food to test the patient's swallowing ability", "is_correct": false},
+{"text": "Follow the prescribed texture and swallowing precautions and monitor for aspiration", "is_correct": true},
+{"text": "Encourage the patient to drink rapidly through a straw", "is_correct": false},
+{"text": "Feed the patient while lying flat", "is_correct": false}
+],
+"rationale": "Stroke can impair swallowing and increase the risk of aspiration pneumonia. The nurse should follow the recommended diet consistency and swallowing plan, ensuring appropriate positioning and supervision.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A nurse is feeding an older patient who begins choking and cannot speak or cough effectively. What is the priority response?",
+"choices": [
+{"text": "Offer more water to help clear the throat", "is_correct": false},
+{"text": "Recognise severe airway obstruction and initiate the appropriate choking emergency response", "is_correct": true},
+{"text": "Continue feeding slowly", "is_correct": false},
+{"text": "Ask the patient to lie flat and rest", "is_correct": false}
+],
+"rationale": "Inability to speak or cough effectively suggests severe airway obstruction. The nurse must activate emergency assistance and initiate age-appropriate choking first aid according to current resuscitation guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "What is the main purpose of providing a bedpan to a patient who cannot walk to the toilet?",
+"choices": [
+{"text": "To assist the patient to eliminate urine or faeces safely while in bed", "is_correct": true},
+{"text": "To prevent the patient from passing urine", "is_correct": false},
+{"text": "To replace all forms of urinary catheterisation", "is_correct": false},
+{"text": "To measure the patient's blood pressure", "is_correct": false}
+],
+"rationale": "A bedpan enables patients with limited mobility to meet their elimination needs without walking to a toilet. Proper positioning, privacy and hygiene help maintain dignity and prevent complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "A nurse is assisting a male patient to use a urinal. Which action is most appropriate?",
+"choices": [
+{"text": "Provide privacy, position the urinal correctly and assist the patient as needed", "is_correct": true},
+{"text": "Leave the urinal on the floor beside the bed", "is_correct": false},
+{"text": "Ask the patient to stand even if he is unable to do so safely", "is_correct": false},
+{"text": "Avoid measuring urine output under all circumstances", "is_correct": false}
+],
+"rationale": "Correct positioning and privacy promote comfort and dignity during urination. The nurse should assess the patient's mobility and measure urine output when clinically indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "Which of the following is an appropriate indication for an indwelling urinary catheter?",
+"choices": [
+{"text": "Routine convenience for every admitted patient", "is_correct": false},
+{"text": "Acute urinary retention when clinically indicated", "is_correct": true},
+{"text": "Replacing all forms of toileting assistance", "is_correct": false},
+{"text": "Preventing the patient from needing to drink water", "is_correct": false}
+],
+"rationale": "An indwelling urinary catheter may be indicated for acute urinary retention or other specific clinical reasons. Unnecessary catheterisation increases the risk of catheter-associated urinary tract infection and should be avoided.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "A patient with an indwelling urinary catheter has a drainage bag that is lying on the floor. What should the nurse do?",
+"choices": [
+{"text": "Leave the bag on the floor if urine is draining", "is_correct": false},
+{"text": "Place the drainage bag below bladder level and off the floor", "is_correct": true},
+{"text": "Raise the drainage bag above bladder level", "is_correct": false},
+{"text": "Disconnect the catheter from the drainage system", "is_correct": false}
+],
+"rationale": "The drainage bag should remain below bladder level to reduce the risk of urine flowing back towards the bladder. Keeping it off the floor also reduces contamination risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "A catheterised patient develops fever, suprapubic discomfort and cloudy urine. What should the nurse do?",
+"choices": [
+{"text": "Ignore the symptoms because cloudy urine is always normal", "is_correct": false},
+{"text": "Assess the patient, report suspected infection and follow the appropriate clinical investigation and management plan", "is_correct": true},
+{"text": "Remove the catheter without an order or clinical assessment", "is_correct": false},
+{"text": "Restrict all oral fluids immediately", "is_correct": false}
+],
+"rationale": "Fever and suprapubic discomfort in a catheterised patient may indicate a catheter-associated urinary tract infection. The nurse should assess the patient, report the findings and follow the appropriate diagnostic and treatment plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "Which action is essential when receiving a newly admitted patient into a hospital ward?",
+"choices": [
+{"text": "Verify the patient's identity and assess the patient's immediate needs", "is_correct": true},
+{"text": "Leave the patient alone until the next nursing round", "is_correct": false},
+{"text": "Ask relatives to complete all assessments without involving the patient", "is_correct": false},
+{"text": "Delay documentation until the patient is discharged", "is_correct": false}
+],
+"rationale": "Correct patient identification and initial assessment are essential components of safe admission. They help identify urgent clinical needs, risks and required nursing interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "A patient is admitted to a district hospital with suspected cholera and profuse watery diarrhoea. What should the nurse prioritise during initial admission?",
+"choices": [
+{"text": "Complete the patient's social history before assessing the patient's condition", "is_correct": false},
+{"text": "Assess hydration and circulation, initiate appropriate urgent care and implement infection prevention precautions", "is_correct": true},
+{"text": "Allow the patient to use a shared toilet without precautions", "is_correct": false},
+{"text": "Delay assessment until laboratory results are available", "is_correct": false}
+],
+"rationale": "Cholera can cause rapid fluid loss, severe dehydration and circulatory shock. Immediate assessment and rehydration according to clinical protocols are priorities, together with appropriate infection prevention measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "Before discharging a patient with newly diagnosed hypertension, which nursing action is most important?",
+"choices": [
+{"text": "Provide education on prescribed medication, follow-up, lifestyle measures and warning signs", "is_correct": true},
+{"text": "Tell the patient that medication is no longer required once symptoms improve", "is_correct": false},
+{"text": "Avoid discussing follow-up appointments", "is_correct": false},
+{"text": "Ask the patient to rely only on traditional remedies", "is_correct": false}
+],
+"rationale": "Discharge education supports continuity of care and helps prevent complications. Patients should understand their medication regimen, lifestyle recommendations, follow-up arrangements and symptoms that require urgent review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "A patient is being transferred from a district hospital to a regional hospital for specialist management. Which information should be included in the referral documentation?",
+"choices": [
+{"text": "Only the patient's name and age", "is_correct": false},
+{"text": "Relevant history, assessment findings, treatment given, current condition and reason for referral", "is_correct": true},
+{"text": "Only the name of the receiving hospital", "is_correct": false},
+{"text": "Personal opinions about the patient's behaviour", "is_correct": false}
+],
+"rationale": "Complete referral documentation supports continuity and safety of care. It should communicate the clinical reason for transfer, relevant findings, treatment already provided and the patient's current status.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures",
+"question_text": "A patient is ready for discharge but cannot explain how to take the prescribed medication. What should the nurse do?",
+"choices": [
+{"text": "Proceed with discharge because the prescription is written down", "is_correct": false},
+{"text": "Reinforce medication education and use teach-back to confirm understanding", "is_correct": true},
+{"text": "Tell the patient to ask a neighbour to interpret the prescription", "is_correct": false},
+{"text": "Remove the medication instructions from the discharge documents", "is_correct": false}
+],
+"rationale": "Patients need to understand their medication instructions to use medicines safely after discharge. Teach-back allows the nurse to identify misunderstandings and provide further explanation before the patient leaves.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "What is the most effective routine measure for reducing the transmission of microorganisms in healthcare settings?",
+"choices": [
+{"text": "Appropriate hand hygiene", "is_correct": true},
+{"text": "Wearing gloves throughout the entire shift without changing them", "is_correct": false},
+{"text": "Keeping all ward windows closed", "is_correct": false},
+{"text": "Using antibiotics for every admitted patient", "is_correct": false}
+],
+"rationale": "Hand hygiene is one of the most effective measures for preventing healthcare-associated infections. It should be performed at the appropriate moments, including before and after patient contact and after exposure to body fluids.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A nurse is preparing to perform wound dressing for a patient. When should hand hygiene be performed?",
+"choices": [
+{"text": "Only after completing the dressing", "is_correct": false},
+{"text": "Before the aseptic procedure and after completing care or removing gloves", "is_correct": true},
+{"text": "Only when the hands appear visibly dirty", "is_correct": false},
+{"text": "Only before entering the hospital", "is_correct": false}
+],
+"rationale": "Hand hygiene is required before an aseptic procedure to protect the patient and after patient contact or exposure to body fluids to protect the healthcare worker and environment. Gloves do not replace hand hygiene.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A patient is admitted with suspected pulmonary tuberculosis and has a persistent cough. Which infection prevention measure is most appropriate?",
+"choices": [
+{"text": "Apply airborne precautions, including appropriate respiratory protection and ventilation measures", "is_correct": true},
+{"text": "Use only contact precautions", "is_correct": false},
+{"text": "Allow the patient to share a room without risk assessment", "is_correct": false},
+{"text": "Use sterile gloves whenever speaking to the patient", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted through airborne particles generated by an infectious person. Airborne precautions include appropriate respiratory protection, suitable ventilation and separation according to facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A nurse sustains a needlestick injury immediately after giving an injection. What should the nurse do FIRST?",
+"choices": [
+{"text": "Squeeze the wound forcefully until it bleeds", "is_correct": false},
+{"text": "Wash the area with soap and running water and report the exposure immediately", "is_correct": true},
+{"text": "Cover the injury and continue working without reporting it", "is_correct": false},
+{"text": "Apply bleach directly to the puncture wound", "is_correct": false}
+],
+"rationale": "The exposed area should be washed promptly with soap and running water, and the incident should be reported immediately. Urgent assessment is necessary to determine the need for post-exposure prophylaxis and appropriate follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A nurse removes gloves after cleaning a patient who has diarrhoea. What should the nurse do NEXT?",
+"choices": [
+{"text": "Perform hand hygiene immediately", "is_correct": true},
+{"text": "Put on another pair of gloves without cleaning the hands", "is_correct": false},
+{"text": "Touch the patient's clean equipment before washing the hands", "is_correct": false},
+{"text": "Wait until the end of the shift to wash the hands", "is_correct": false}
+],
+"rationale": "Hands may become contaminated during glove removal, especially when caring for patients with diarrhoeal illness. Hand hygiene should be performed immediately after glove removal.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control",
+"question_text": "A patient with suspected infectious diarrhoea is admitted to a CHPS-linked health facility. Several patients have developed similar symptoms. What should the nurse prioritise?",
+"choices": [
+{"text": "Continue routine care without informing anyone", "is_correct": false},
+{"text": "Implement appropriate infection prevention measures and promptly report the suspected cluster through the facility's public health reporting system", "is_correct": true},
+{"text": "Discharge all affected patients without assessment", "is_correct": false},
+{"text": "Allow patients to share drinking containers", "is_correct": false}
+],
+"rationale": "A cluster of similar diarrhoeal illness may indicate an outbreak requiring prompt public health attention. Infection prevention, appropriate clinical management and timely reporting through established Ghana Health Service channels are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care",
+"question_text": "What is the primary purpose of applying a sterile dressing to a wound?",
+"choices": [
+{"text": "To protect the wound from contamination and support the healing process", "is_correct": true},
+{"text": "To prevent all movement of the patient", "is_correct": false},
+{"text": "To stop the formation of new tissue", "is_correct": false},
+{"text": "To eliminate the need for wound assessment", "is_correct": false}
+],
+"rationale": "A sterile dressing protects the wound from external contamination and helps maintain an appropriate healing environment. Wounds still require regular assessment for healing and signs of infection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care",
+"question_text": "During wound dressing, which principle should guide the nurse when cleaning a clean surgical wound?",
+"choices": [
+{"text": "Clean from the least contaminated area towards the more contaminated area using appropriate technique", "is_correct": true},
+{"text": "Clean from the surrounding skin towards the wound using the same swab repeatedly", "is_correct": false},
+{"text": "Use the same swab for every part of the wound", "is_correct": false},
+{"text": "Touch the wound directly with unclean gloves", "is_correct": false}
+],
+"rationale": "Cleaning from the least contaminated area towards the more contaminated area helps minimise the transfer of microorganisms. A fresh sterile swab should be used for each stroke when required by the dressing technique.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "A patient with a surgical wound develops increasing redness, warmth, swelling and purulent discharge. What should the nurse suspect?",
+"choices": [
+{"text": "Normal wound healing without complications", "is_correct": false},
+{"text": "Wound infection", "is_correct": true},
+{"text": "Complete wound epithelialisation", "is_correct": false},
+{"text": "Normal scar maturation", "is_correct": false}
+],
+"rationale": "Increasing redness, warmth, swelling and purulent discharge are common signs of wound infection. The nurse should assess the wound, monitor the patient's general condition and report the findings for further management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "A patient who underwent abdominal surgery suddenly develops wound dehiscence, with abdominal organs visible through the wound. What should the nurse do FIRST?",
+"choices": [
+{"text": "Attempt to push the exposed organs back into the abdominal cavity", "is_correct": false},
+{"text": "Cover the exposed organs with sterile gauze moistened with sterile normal saline and seek urgent surgical assistance", "is_correct": true},
+{"text": "Apply a tight abdominal bandage directly over the organs", "is_correct": false},
+{"text": "Ask the patient to stand and walk to the treatment room", "is_correct": false}
+],
+"rationale": "Visible abdominal organs indicate wound evisceration, which is a surgical emergency. The nurse should not attempt to replace the organs but should protect them with sterile saline-moistened gauze, reduce strain on the wound and obtain urgent assistance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "A patient has a deep wound with persistent bleeding that is soaking through the dressing. What should the nurse prioritise?",
+"choices": [
+{"text": "Remove the dressing repeatedly to inspect the wound", "is_correct": false},
+{"text": "Apply firm direct pressure with an appropriate sterile dressing and seek urgent assistance", "is_correct": true},
+{"text": "Leave the wound exposed to air", "is_correct": false},
+{"text": "Encourage the patient to walk to improve circulation", "is_correct": false}
+],
+"rationale": "Persistent bleeding can lead to significant blood loss and requires prompt control. Direct pressure should be applied while the nurse assesses the patient's condition and escalates care for urgent treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "Which nursing intervention is most effective in reducing the risk of falls among hospitalised patients?",
+"choices": [
+{"text": "Assess fall risk and implement individualised safety measures", "is_correct": true},
+{"text": "Keep all patients on strict bed rest", "is_correct": false},
+{"text": "Leave walking aids outside the patient's reach", "is_correct": false},
+{"text": "Keep the bed at its highest position", "is_correct": false}
+],
+"rationale": "Fall prevention requires assessment of individual risk factors and appropriate interventions. These may include safe footwear, accessible call bells, suitable mobility assistance and a low bed position.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Safety",
+"question_text": "An older patient with a history of falls is admitted to a medical ward. Which action should the nurse take to reduce the risk of another fall?",
+"choices": [
+{"text": "Keep the call bell within reach and assist the patient when mobilising", "is_correct": true},
+{"text": "Keep the floor wet to make cleaning easier", "is_correct": false},
+{"text": "Encourage the patient to walk without assistance", "is_correct": false},
+{"text": "Place frequently used items far from the bedside", "is_correct": false}
+],
+"rationale": "Accessible call bells and appropriate assistance reduce the likelihood of unsafe unassisted movement. The nurse should also maintain a clutter-free environment and ensure adequate lighting and suitable footwear.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A patient becomes confused and repeatedly attempts to climb out of bed. What should the nurse do FIRST?",
+"choices": [
+{"text": "Apply physical restraints immediately", "is_correct": false},
+{"text": "Assess possible causes of confusion and immediate safety risks, then use the least restrictive appropriate interventions", "is_correct": true},
+{"text": "Ignore the behaviour because confusion is expected in hospitalised patients", "is_correct": false},
+{"text": "Tie the patient to the bed without documentation", "is_correct": false}
+],
+"rationale": "Sudden confusion may result from conditions such as infection, hypoxia, medication effects or metabolic disturbances and requires assessment. Restraints should not be the first response and must only be considered when clinically justified under applicable policy and safeguards.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A nurse discovers that a patient has fallen beside the bed. What is the FIRST appropriate action?",
+"choices": [
+{"text": "Immediately lift the patient back into bed", "is_correct": false},
+{"text": "Assess the patient's responsiveness, airway, breathing and possible injuries before moving them", "is_correct": true},
+{"text": "Ask the patient to stand to determine whether they can walk", "is_correct": false},
+{"text": "Leave the patient to find the ward manager", "is_correct": false}
+],
+"rationale": "A patient who has fallen may have sustained a serious injury, including a fracture or head injury. Initial assessment should identify immediate threats and determine whether movement is safe before further assistance is provided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A patient with severe hypoglycaemia is unconscious and has a blood glucose reading of 2.1 mmol/L. What should the nurse prioritise?",
+"choices": [
+{"text": "Give the patient a sweet drink by mouth", "is_correct": false},
+{"text": "Activate urgent assistance, assess airway and breathing, and administer prescribed emergency glucose treatment by an appropriate route", "is_correct": true},
+{"text": "Wait until the patient regains consciousness before treating", "is_correct": false},
+{"text": "Encourage the patient to walk around the ward", "is_correct": false}
+],
+"rationale": "Severe hypoglycaemia with unconsciousness is a medical emergency. Oral fluids or food must not be given because of aspiration risk; urgent glucose treatment should be administered according to protocol and the patient's clinical access and condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A nurse is preparing to administer medication to a patient. Which action is essential for safe medication administration?",
+"choices": [
+{"text": "Identify the patient using the required approved identifiers and check the medication order", "is_correct": true},
+{"text": "Identify the patient by bed number only", "is_correct": false},
+{"text": "Administer medication prepared by another person without checking it", "is_correct": false},
+{"text": "Give medication before checking for known allergies", "is_correct": false}
+],
+"rationale": "Correct patient identification and verification of the medication order are fundamental medication safety measures. The nurse should also check allergies, dose, route, timing and other applicable medication rights.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A patient receiving an intravenous infusion suddenly develops swelling, pain and coolness around the cannula site. What should the nurse do FIRST?",
+"choices": [
+{"text": "Increase the infusion rate", "is_correct": false},
+{"text": "Stop the infusion and assess the site for possible infiltration", "is_correct": true},
+{"text": "Massage the swollen area vigorously", "is_correct": false},
+{"text": "Ignore the symptoms if the patient has no fever", "is_correct": false}
+],
+"rationale": "Pain, swelling and coolness around an intravenous cannula may indicate infiltration of fluid into surrounding tissue. The infusion should be stopped and the site assessed, with further action guided by the type of fluid and facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A patient with suspected severe malaria becomes restless, confused and develops difficulty breathing. Which action should the nurse prioritise?",
+"choices": [
+{"text": "Continue routine observations and review the patient later", "is_correct": false},
+{"text": "Recognise possible severe illness, assess airway and breathing, and urgently escalate for emergency management", "is_correct": true},
+{"text": "Give oral fluids while the patient is confused and breathless", "is_correct": false},
+{"text": "Allow the patient to sleep without further assessment", "is_correct": false}
+],
+"rationale": "Confusion and respiratory difficulty in a patient with suspected malaria are danger signs that may indicate severe disease or another life-threatening complication. Immediate assessment, urgent escalation and treatment according to national and facility protocols are required.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
