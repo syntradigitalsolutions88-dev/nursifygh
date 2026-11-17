@@ -1,0 +1,720 @@
+{
+"courses": [
+{
+"course_code": "NAD-122",
+"course_title": "Nutrition and Dietetics",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Nutrition and Dietetics",
+"Macronutrients",
+"Micronutrients",
+"Nutritional Assessment",
+"Malnutrition and Micronutrient Deficiencies",
+"Therapeutic Diets",
+"Nutrition in Pregnancy and Lactation",
+"Infant and Young Child Feeding",
+"Food Safety and Hygiene",
+"Community Nutrition in Ghana"
+],
+"questions": [
+{
+"topic": "Introduction to Nutrition and Dietetics",
+"question_text": "Which statement best defines nutrition?",
+"choices": [
+{"text": "The study of food preparation and cooking methods only", "is_correct": false},
+{"text": "The process by which the body obtains and uses nutrients for growth, maintenance and health", "is_correct": true},
+{"text": "The administration of medicines to prevent diseases", "is_correct": false},
+{"text": "The study of microorganisms found in food", "is_correct": false}
+],
+"rationale": "Nutrition involves the intake, digestion, absorption, metabolism and utilisation of nutrients by the body. These processes support energy production, growth, tissue repair and maintenance of normal body functions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Nutrition and Dietetics",
+"question_text": "Which of the following is considered a balanced diet?",
+"choices": [
+{"text": "A diet consisting mainly of carbohydrates", "is_correct": false},
+{"text": "A diet containing adequate amounts of essential nutrients in appropriate proportions", "is_correct": true},
+{"text": "A diet containing only fruits and vegetables", "is_correct": false},
+{"text": "A diet that excludes all fats and proteins", "is_correct": false}
+],
+"rationale": "A balanced diet provides the energy and essential nutrients required by the body in appropriate amounts and proportions. Its composition should reflect an individual's age, physiological condition, activity level and health needs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "Which macronutrient is the body's primary and preferred source of energy under normal conditions?",
+"choices": [
+{"text": "Carbohydrates", "is_correct": true},
+{"text": "Vitamins", "is_correct": false},
+{"text": "Minerals", "is_correct": false},
+{"text": "Water", "is_correct": false}
+],
+"rationale": "Carbohydrates are broken down into simple sugars, including glucose, which cells use to produce energy. They provide approximately 4 kilocalories per gram.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "Which macronutrient is primarily required for growth and repair of body tissues?",
+"choices": [
+{"text": "Carbohydrates", "is_correct": false},
+{"text": "Proteins", "is_correct": true},
+{"text": "Fats", "is_correct": false},
+{"text": "Dietary fibre", "is_correct": false}
+],
+"rationale": "Proteins provide amino acids needed for the synthesis and repair of body tissues. They are also required for the production of enzymes, hormones and antibodies.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "Which of the following provides the highest amount of energy per gram?",
+"choices": [
+{"text": "Carbohydrates", "is_correct": false},
+{"text": "Proteins", "is_correct": false},
+{"text": "Fats", "is_correct": true},
+{"text": "Vitamins", "is_correct": false}
+],
+"rationale": "Fats provide approximately 9 kilocalories per gram, compared with about 4 kilocalories per gram from carbohydrates and proteins. They also support insulation, cell membrane structure and absorption of fat-soluble vitamins.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Micronutrients",
+"question_text": "Which vitamin is essential for normal blood clotting?",
+"choices": [
+{"text": "Vitamin A", "is_correct": false},
+{"text": "Vitamin C", "is_correct": false},
+{"text": "Vitamin K", "is_correct": true},
+{"text": "Vitamin B12", "is_correct": false}
+],
+"rationale": "Vitamin K is necessary for the synthesis of several blood-clotting factors in the liver. Deficiency can impair coagulation and increase the risk of bleeding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Micronutrients",
+"question_text": "Which mineral is an essential component of haemoglobin?",
+"choices": [
+{"text": "Calcium", "is_correct": false},
+{"text": "Iron", "is_correct": true},
+{"text": "Iodine", "is_correct": false},
+{"text": "Sodium", "is_correct": false}
+],
+"rationale": "Iron forms part of the haem group in haemoglobin, allowing red blood cells to transport oxygen. Inadequate iron intake or absorption can contribute to iron-deficiency anaemia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Micronutrients",
+"question_text": "Which vitamin is particularly important for calcium absorption and bone mineralisation?",
+"choices": [
+{"text": "Vitamin D", "is_correct": true},
+{"text": "Vitamin B1", "is_correct": false},
+{"text": "Vitamin C", "is_correct": false},
+{"text": "Vitamin K alone", "is_correct": false}
+],
+"rationale": "Vitamin D promotes intestinal absorption of calcium and phosphate, which are essential for bone mineralisation. Severe deficiency in children can cause rickets, while deficiency in adults can contribute to osteomalacia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutritional Assessment",
+"question_text": "Which measurement is commonly used to assess nutritional status in adults by relating body weight to height?",
+"choices": [
+{"text": "Body mass index", "is_correct": true},
+{"text": "Pulse pressure", "is_correct": false},
+{"text": "Respiratory rate", "is_correct": false},
+{"text": "Waist-to-chest ratio", "is_correct": false}
+],
+"rationale": "Body mass index (BMI) is calculated by dividing weight in kilograms by height in metres squared. It is a screening measure used to classify adult weight status, although it does not directly measure body fat or nutritional deficiencies.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "Which clinical feature is classically associated with kwashiorkor?",
+"choices": [
+{"text": "Bilateral pitting oedema", "is_correct": true},
+{"text": "Excessive muscle development", "is_correct": false},
+{"text": "Severe hypertension", "is_correct": false},
+{"text": "Increased subcutaneous fat", "is_correct": false}
+],
+"rationale": "Kwashiorkor is a form of severe acute malnutrition characterised by bilateral pitting oedema. Other features may include skin changes, hair changes, poor appetite and growth failure.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "Which feature is most characteristic of marasmus?",
+"choices": [
+{"text": "Generalised oedema as the defining feature", "is_correct": false},
+{"text": "Severe wasting with marked loss of muscle and subcutaneous fat", "is_correct": true},
+{"text": "Excessive accumulation of body fat", "is_correct": false},
+{"text": "Enlargement of the thyroid gland", "is_correct": false}
+],
+"rationale": "Marasmus is a form of severe acute malnutrition characterised by severe wasting and loss of muscle and subcutaneous fat. Unlike kwashiorkor, bilateral pitting oedema is not its defining feature.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "Which nutritional deficiency is the main cause of nutritional night blindness?",
+"choices": [
+{"text": "Vitamin A deficiency", "is_correct": true},
+{"text": "Vitamin C deficiency", "is_correct": false},
+{"text": "Vitamin B12 deficiency", "is_correct": false},
+{"text": "Vitamin K deficiency", "is_correct": false}
+],
+"rationale": "Vitamin A is required for the formation of visual pigments involved in vision under low-light conditions. Deficiency can cause night blindness and, in severe cases, xerophthalmia and corneal damage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "Which dietary modification is generally recommended for a patient with hypertension?",
+"choices": [
+{"text": "Increased intake of highly salted foods", "is_correct": false},
+{"text": "Reduced sodium intake and increased consumption of suitable fruits and vegetables", "is_correct": true},
+{"text": "Complete avoidance of all carbohydrates", "is_correct": false},
+{"text": "Increased consumption of processed meats", "is_correct": false}
+],
+"rationale": "Reducing dietary sodium can help lower blood pressure, while a balanced diet rich in fruits, vegetables and appropriate whole grains supports cardiovascular health. The DASH dietary approach is one recognised pattern for managing hypertension.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "Which dietary principle is important in the nutritional management of diabetes mellitus?",
+"choices": [
+{"text": "Consuming large quantities of refined sugar at each meal", "is_correct": false},
+{"text": "Consistent carbohydrate intake with appropriate portion control", "is_correct": true},
+{"text": "Avoiding all vegetables", "is_correct": false},
+{"text": "Replacing all meals with fruit juice", "is_correct": false}
+],
+"rationale": "Consistent carbohydrate intake and appropriate portion control help manage post-meal blood glucose levels. Meal planning should also consider total energy needs, fibre intake, medication and physical activity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "Which nutrient is particularly important before conception and during early pregnancy to reduce the risk of neural tube defects?",
+"choices": [
+{"text": "Folic acid", "is_correct": true},
+{"text": "Sodium", "is_correct": false},
+{"text": "Vitamin K", "is_correct": false},
+{"text": "Chloride", "is_correct": false}
+],
+"rationale": "Folic acid is essential for DNA synthesis and normal neural tube development in the early embryo. Women planning pregnancy are advised to take folic acid supplementation before conception and during early pregnancy according to national guidance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "For how long should an infant be exclusively breastfed, according to WHO and standard infant-feeding recommendations?",
+"choices": [
+{"text": "Two months", "is_correct": false},
+{"text": "Four months", "is_correct": false},
+{"text": "Six months", "is_correct": true},
+{"text": "Twelve months without complementary foods", "is_correct": false}
+],
+"rationale": "Exclusive breastfeeding is recommended for the first six months of life. At six months, safe and nutritionally adequate complementary foods should be introduced while breastfeeding continues.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "Which practice is most effective in reducing foodborne infection during food preparation?",
+"choices": [
+{"text": "Using the same unwashed knife for raw meat and cooked food", "is_correct": false},
+{"text": "Washing hands and preventing cross-contamination between raw and cooked foods", "is_correct": true},
+{"text": "Leaving cooked food uncovered overnight", "is_correct": false},
+{"text": "Storing raw meat above ready-to-eat foods", "is_correct": false}
+],
+"rationale": "Handwashing and separation of raw and cooked foods reduce the transfer of pathogenic microorganisms. Safe food storage, adequate cooking and clean utensils are also essential food safety practices.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Macronutrients",
+"question_text": "A student eats banku with okro soup and fish. Which component of the meal is the main source of carbohydrate?",
+"choices": [
+{"text": "Banku", "is_correct": true},
+{"text": "Fish", "is_correct": false},
+{"text": "Okro", "is_correct": false},
+{"text": "Cooking oil", "is_correct": false}
+],
+"rationale": "Banku is prepared mainly from fermented maize dough and provides substantial carbohydrate. Fish contributes protein and fat, while okro provides fibre, vitamins and minerals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Macronutrients",
+"question_text": "A patient recovering from surgery requires additional dietary protein to support wound healing. Which Ghanaian food combination would provide a useful source of protein?",
+"choices": [
+{"text": "Plain gari and sugar", "is_correct": false},
+{"text": "Boiled beans with fish", "is_correct": true},
+{"text": "Plain cassava and palm oil", "is_correct": false},
+{"text": "Sweetened soft drink and biscuits", "is_correct": false}
+],
+"rationale": "Beans and fish provide dietary protein containing amino acids required for tissue repair and wound healing. The patient's overall intake should also provide sufficient energy and micronutrients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Macronutrients",
+"question_text": "A nurse advises a patient to increase dietary fibre to help prevent constipation. Which food choice is most appropriate?",
+"choices": [
+{"text": "White bread and sugary drinks", "is_correct": false},
+{"text": "Whole grains, beans, fruits and vegetables", "is_correct": true},
+{"text": "Butter and margarine", "is_correct": false},
+{"text": "Processed meat and cheese", "is_correct": false}
+],
+"rationale": "Dietary fibre increases stool bulk and can improve bowel movement regularity. Whole grains, legumes, fruits and vegetables are useful sources of fibre, and adequate fluid intake is also important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Macronutrients",
+"question_text": "A patient frequently consumes large portions of fried foods and fatty meat. Which health risk may increase if this eating pattern contributes to excessive energy intake over time?",
+"choices": [
+{"text": "Underweight", "is_correct": false},
+{"text": "Overweight and obesity", "is_correct": true},
+{"text": "Vitamin C deficiency in every case", "is_correct": false},
+{"text": "Improved insulin sensitivity in every case", "is_correct": false}
+],
+"rationale": "Fats are energy-dense, providing approximately 9 kilocalories per gram. Regular consumption of excessive energy, including from fried foods, can contribute to weight gain and obesity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A pregnant woman is advised to consume iron-rich foods. Which food combination may improve the absorption of non-haem iron?",
+"choices": [
+{"text": "Beans eaten with orange or another vitamin C-rich fruit", "is_correct": true},
+{"text": "Tea taken with every meal", "is_correct": false},
+{"text": "Coffee consumed immediately after meals", "is_correct": false},
+{"text": "White sugar mixed with water", "is_correct": false}
+],
+"rationale": "Vitamin C enhances the absorption of non-haem iron found in plant foods such as beans. Tea and coffee contain polyphenols that can reduce non-haem iron absorption when consumed with meals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A child develops swollen gums and poor wound healing after a prolonged diet lacking fresh fruits and vegetables. Which deficiency is most likely?",
+"choices": [
+{"text": "Vitamin C deficiency", "is_correct": true},
+{"text": "Vitamin D deficiency", "is_correct": false},
+{"text": "Vitamin B12 deficiency", "is_correct": false},
+{"text": "Vitamin K deficiency", "is_correct": false}
+],
+"rationale": "Vitamin C is required for collagen synthesis and normal connective tissue formation. Deficiency can cause scurvy, characterised by bleeding gums, poor wound healing and easy bruising.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Micronutrients",
+"question_text": "A schoolchild has an enlarged thyroid gland and lives in an area where dietary iodine intake is low. Which deficiency is most likely responsible?",
+"choices": [
+{"text": "Iron deficiency", "is_correct": false},
+{"text": "Iodine deficiency", "is_correct": true},
+{"text": "Zinc deficiency", "is_correct": false},
+{"text": "Vitamin C deficiency", "is_correct": false}
+],
+"rationale": "Iodine is required for the synthesis of thyroid hormones. Inadequate iodine intake can cause thyroid enlargement (goitre) and impair growth and neurodevelopment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Assessment",
+"question_text": "A woman weighs 72 kg and is 1.60 metres tall. What is her approximate body mass index?",
+"choices": [
+{"text": "18.0 kg/m²", "is_correct": false},
+{"text": "22.5 kg/m²", "is_correct": false},
+{"text": "28.1 kg/m²", "is_correct": true},
+{"text": "35.5 kg/m²", "is_correct": false}
+],
+"rationale": "BMI is calculated as weight divided by height squared: 72 ÷ (1.60 × 1.60) = 28.1 kg/m². This falls within the adult overweight range of 25.0–29.9 kg/m².",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Assessment",
+"question_text": "A nurse is assessing the nutritional status of a child under five years at a CHPS compound. Which measurement is particularly useful for identifying acute malnutrition in children aged 6–59 months?",
+"choices": [
+{"text": "Mid-upper arm circumference", "is_correct": true},
+{"text": "Head circumference alone", "is_correct": false},
+{"text": "Adult body mass index", "is_correct": false},
+{"text": "Chest circumference alone", "is_correct": false}
+],
+"rationale": "Mid-upper arm circumference (MUAC) is a practical screening measurement for acute malnutrition in children aged 6–59 months. A MUAC below 115 mm indicates severe acute malnutrition, while 115 mm to less than 125 mm indicates moderate acute malnutrition under standard WHO classification.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Assessment",
+"question_text": "During nutritional assessment, a nurse asks a patient to describe all foods and drinks consumed during the previous 24 hours. Which assessment method is being used?",
+"choices": [
+{"text": "Food frequency questionnaire", "is_correct": false},
+{"text": "24-hour dietary recall", "is_correct": true},
+{"text": "Biochemical assessment", "is_correct": false},
+{"text": "Clinical examination", "is_correct": false}
+],
+"rationale": "A 24-hour dietary recall involves asking an individual to report all foods and drinks consumed during the preceding day. It helps assess dietary intake, although one day's recall may not represent usual eating patterns.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "A child presents with bilateral pitting oedema, sparse discoloured hair and skin lesions. Which nutritional condition is most likely?",
+"choices": [
+{"text": "Marasmus", "is_correct": false},
+{"text": "Kwashiorkor", "is_correct": true},
+{"text": "Obesity", "is_correct": false},
+{"text": "Vitamin D toxicity", "is_correct": false}
+],
+"rationale": "Bilateral pitting oedema is a key clinical feature of kwashiorkor and other forms of nutritional oedematous malnutrition. Hair and skin changes may also occur and require comprehensive nutritional and medical assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "A severely wasted child has visible ribs, marked loss of muscle and no bilateral pitting oedema. Which condition is most consistent with these findings?",
+"choices": [
+{"text": "Kwashiorkor", "is_correct": false},
+{"text": "Marasmus", "is_correct": true},
+{"text": "Obesity", "is_correct": false},
+{"text": "Rickets", "is_correct": false}
+],
+"rationale": "Marasmus is characterised by severe wasting due to a prolonged deficit of energy and nutrients. The child typically has marked loss of subcutaneous fat and muscle without the defining bilateral pitting oedema of kwashiorkor.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A patient with type 2 diabetes asks which meal is a more appropriate choice for blood glucose management. Which option should the nurse recommend?",
+"choices": [
+{"text": "A large portion of white rice with a sweetened soft drink", "is_correct": false},
+{"text": "A controlled portion of whole-grain food with vegetables and lean protein", "is_correct": true},
+{"text": "A meal consisting entirely of refined sugar", "is_correct": false},
+{"text": "Skipping all meals throughout the day", "is_correct": false}
+],
+"rationale": "A controlled portion of whole-grain carbohydrate combined with vegetables and lean protein can support more appropriate post-meal glucose control. Regular meal patterns and individualised carbohydrate planning are important for diabetes management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A patient with hypertension frequently eats salted fish, salted meat and heavily salted soups. What advice should the nurse provide?",
+"choices": [
+{"text": "Increase the amount of salt added during cooking", "is_correct": false},
+{"text": "Reduce salt and high-sodium foods and use herbs or spices for flavour", "is_correct": true},
+{"text": "Avoid drinking water", "is_correct": false},
+{"text": "Replace vegetables with processed snacks", "is_correct": false}
+],
+"rationale": "Reducing sodium intake helps manage blood pressure in many individuals. Limiting heavily salted foods and using herbs, spices and other low-sodium flavourings can support adherence to a healthier diet.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A patient with chronic kidney disease is advised to follow an individualised renal diet. Which dietary factor may require restriction depending on kidney function and laboratory results?",
+"choices": [
+{"text": "Potassium", "is_correct": true},
+{"text": "All carbohydrates", "is_correct": false},
+{"text": "All dietary fibre", "is_correct": false},
+{"text": "All sources of vitamin C", "is_correct": false}
+],
+"rationale": "Reduced kidney function can impair potassium excretion, resulting in hyperkalaemia. Potassium intake should be individualised according to renal function, serum potassium levels and the patient's treatment plan rather than restricted routinely in every patient.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A patient with liver cirrhosis and ascites is advised to modify dietary intake. Which dietary adjustment is commonly recommended to help manage fluid accumulation?",
+"choices": [
+{"text": "Increase sodium intake substantially", "is_correct": false},
+{"text": "Restrict dietary sodium according to the treatment plan", "is_correct": true},
+{"text": "Avoid all protein permanently", "is_correct": false},
+{"text": "Consume large amounts of salted foods", "is_correct": false}
+],
+"rationale": "Sodium restriction is commonly recommended in the management of cirrhosis with ascites because sodium retention contributes to fluid accumulation. Nutritional management should be individualised, and protein should not be routinely eliminated because malnutrition is common in cirrhosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A pregnant woman attending antenatal care asks why she has been prescribed iron and folic acid supplementation. Which explanation is most appropriate?",
+"choices": [
+{"text": "They prevent all infections during pregnancy", "is_correct": false},
+{"text": "They help prevent maternal anaemia and support normal fetal development", "is_correct": true},
+{"text": "They replace the need for a balanced diet", "is_correct": false},
+{"text": "They prevent all pregnancy complications", "is_correct": false}
+],
+"rationale": "Iron supports haemoglobin production and helps meet increased maternal iron requirements, while folic acid supports DNA synthesis and fetal neural tube development. Supplementation should be taken according to antenatal care and national recommendations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A breastfeeding mother asks whether she should stop eating fish because she is producing breast milk. What is the most appropriate advice?",
+"choices": [
+{"text": "Avoid all fish during lactation", "is_correct": false},
+{"text": "Eat a varied balanced diet and choose fish varieties with low mercury levels", "is_correct": true},
+{"text": "Eat only starchy foods until breastfeeding stops", "is_correct": false},
+{"text": "Avoid all protein-rich foods", "is_correct": false}
+],
+"rationale": "Fish provides protein and important nutrients, including omega-3 fatty acids, which can support maternal and infant health. Breastfeeding mothers should choose safe, low-mercury fish and follow food safety advice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother gives her two-month-old infant water in addition to breast milk because she believes the hot Ghanaian weather makes the baby thirsty. What should the nurse advise?",
+"choices": [
+{"text": "Give water after every breastfeeding session", "is_correct": false},
+{"text": "Continue exclusive breastfeeding because breast milk provides the infant's fluid requirements during the first six months", "is_correct": true},
+{"text": "Replace breast milk with fruit juice", "is_correct": false},
+{"text": "Introduce porridge immediately", "is_correct": false}
+],
+"rationale": "Breast milk provides sufficient water for healthy infants during the first six months, even in hot climates. Giving additional water can increase the risk of contamination and reduce breast milk intake.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother has a healthy six-month-old infant and asks when complementary feeding should begin. Which advice is correct?",
+"choices": [
+{"text": "Introduce safe, nutritious complementary foods while continuing breastfeeding", "is_correct": true},
+{"text": "Stop breastfeeding immediately", "is_correct": false},
+{"text": "Give only fruit juice until the child is one year old", "is_correct": false},
+{"text": "Continue exclusive breastfeeding without complementary foods until twelve months", "is_correct": false}
+],
+"rationale": "Complementary feeding should begin at six months because breast milk alone no longer meets all the infant's nutritional requirements. Breastfeeding should continue alongside adequate, safe and age-appropriate complementary foods.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A mother complains that her newborn frequently cries and believes that her breast milk is insufficient. Which practice would best support effective breastfeeding?",
+"choices": [
+{"text": "Limit breastfeeding to once every six hours", "is_correct": false},
+{"text": "Encourage responsive feeding and assess the infant's attachment and positioning", "is_correct": true},
+{"text": "Give sugar water after every feed", "is_correct": false},
+{"text": "Stop breastfeeding for several days", "is_correct": false}
+],
+"rationale": "Responsive feeding and effective attachment support milk transfer and stimulate milk production. The nurse should assess feeding technique, infant output and weight gain before concluding that breast milk is insufficient.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "A food vendor prepares waakye in the morning and intends to sell the remaining food throughout the day. Which practice best reduces the risk of foodborne illness?",
+"choices": [
+{"text": "Keep cooked food at unsafe room temperature throughout the day", "is_correct": false},
+{"text": "Maintain hot food at a safe hot-holding temperature or refrigerate it promptly", "is_correct": true},
+{"text": "Mix fresh food with old leftovers without reheating", "is_correct": false},
+{"text": "Leave food uncovered to cool in a dusty environment", "is_correct": false}
+],
+"rationale": "Cooked foods should not remain for prolonged periods at temperatures that permit rapid bacterial growth. Safe hot holding or prompt cooling and refrigeration helps reduce the risk of foodborne illness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "A patient develops vomiting and diarrhoea after eating food that was prepared under unhygienic conditions. Which explanation best describes the likely route of infection?",
+"choices": [
+{"text": "Faecal-oral transmission through contaminated food", "is_correct": true},
+{"text": "Transmission through mosquito bites", "is_correct": false},
+{"text": "Transmission through inhalation of pollen", "is_correct": false},
+{"text": "Transmission through inherited genetic material", "is_correct": false}
+],
+"rationale": "Poor food hygiene can allow pathogenic microorganisms to contaminate food, which may then be ingested. Safe preparation, handwashing, adequate cooking and proper storage reduce this risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Nutrition in Ghana",
+"question_text": "A community health nurse identifies children with poor dietary diversity in a rural community. Which intervention would best improve their nutritional intake using locally available foods?",
+"choices": [
+{"text": "Encourage families to depend on one staple food only", "is_correct": false},
+{"text": "Educate caregivers to combine staples with legumes, animal-source foods and fruits or vegetables", "is_correct": true},
+{"text": "Advise families to avoid all locally grown vegetables", "is_correct": false},
+{"text": "Recommend replacing meals with sweetened drinks", "is_correct": false}
+],
+"rationale": "Dietary diversity improves the likelihood that children receive a broad range of essential nutrients. Combining staples such as maize, cassava or rice with beans, fish, eggs, fruits and vegetables can improve nutritional quality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Nutrition in Ghana",
+"question_text": "A pregnant woman from a low-income household reports that she frequently skips meals because she cannot afford a variety of foods. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Advise her to stop attending antenatal care", "is_correct": false},
+{"text": "Provide practical nutrition education using affordable local foods and link her to available community support", "is_correct": true},
+{"text": "Recommend expensive imported foods as the only solution", "is_correct": false},
+{"text": "Tell her that nutrition has no effect on pregnancy outcomes", "is_correct": false}
+],
+"rationale": "Nutrition counselling should consider household income, food availability and cultural preferences. Affordable foods such as beans, eggs, groundnuts, seasonal vegetables and locally available fruits can improve dietary quality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Nutrition in Ghana",
+"question_text": "A child under five years is identified with moderate acute malnutrition during community screening. What should the community health nurse do?",
+"choices": [
+{"text": "Ignore the finding if the child has no fever", "is_correct": false},
+{"text": "Assess the child, provide appropriate nutritional counselling and arrange follow-up or referral according to the protocol", "is_correct": true},
+{"text": "Recommend that the child stop eating for one day", "is_correct": false},
+{"text": "Discharge the child without documenting the measurement", "is_correct": false}
+],
+"rationale": "Moderate acute malnutrition requires assessment, nutritional support, counselling and monitoring. The nurse should follow the applicable community-based management and referral procedures, especially if medical complications are present.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutritional Assessment",
+"question_text": "A nurse assesses an adult patient with a BMI of 16.5 kg/m². How should this result be classified?",
+"choices": [
+{"text": "Normal weight", "is_correct": false},
+{"text": "Overweight", "is_correct": false},
+{"text": "Underweight", "is_correct": true},
+{"text": "Obesity", "is_correct": false}
+],
+"rationale": "An adult BMI below 18.5 kg/m² is classified as underweight. A BMI of 16.5 kg/m² indicates moderate thinness and should prompt further nutritional assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "A child has bowed legs, delayed growth and bone deformities. The caregiver reports limited exposure to vitamin D-rich foods. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Scurvy", "is_correct": false},
+{"text": "Rickets", "is_correct": true},
+{"text": "Pellagra", "is_correct": false},
+{"text": "Beriberi", "is_correct": false}
+],
+"rationale": "Rickets is a disorder of bone mineralisation in growing children, commonly associated with vitamin D deficiency and inadequate calcium or phosphate availability. It can cause bone pain, growth impairment and deformities such as bowed legs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "A patient with a long history of poor dietary intake develops numbness in the hands and feet, weakness and megaloblastic anaemia. Which deficiency should be considered?",
+"choices": [
+{"text": "Vitamin B12 deficiency", "is_correct": true},
+{"text": "Vitamin A deficiency", "is_correct": false},
+{"text": "Vitamin K deficiency", "is_correct": false},
+{"text": "Vitamin E excess", "is_correct": false}
+],
+"rationale": "Vitamin B12 is required for normal red blood cell formation and neurological function. Deficiency can cause megaloblastic anaemia and neurological manifestations such as peripheral neuropathy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A patient with diabetes becomes pale, sweaty, confused and tremulous after taking insulin but missing a meal. What is the most likely nutritional and metabolic problem?",
+"choices": [
+{"text": "Hypercalcaemia", "is_correct": false},
+{"text": "Hypoglycaemia", "is_correct": true},
+{"text": "Hypernatraemia", "is_correct": false},
+{"text": "Vitamin D deficiency", "is_correct": false}
+],
+"rationale": "Insulin lowers blood glucose, and missing a meal after insulin administration can cause hypoglycaemia. The patient requires immediate blood glucose assessment and prompt treatment according to the facility's hypoglycaemia protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "A severely malnourished child is admitted with bilateral pitting oedema, poor appetite and lethargy. Which action should the nurse prioritise?",
+"choices": [
+{"text": "Immediately provide a large high-protein meal", "is_correct": false},
+{"text": "Assess for medical complications and initiate stabilisation according to the severe acute malnutrition protocol", "is_correct": true},
+{"text": "Restrict all fluids without clinical assessment", "is_correct": false},
+{"text": "Encourage vigorous physical exercise", "is_correct": false}
+],
+"rationale": "Severe acute malnutrition with oedema and lethargy can be associated with hypoglycaemia, hypothermia, infection and electrolyte disturbances. Initial management requires careful assessment and stabilisation, including cautious therapeutic feeding according to the appropriate protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Malnutrition and Micronutrient Deficiencies",
+"question_text": "A child with severe acute malnutrition is started on nutritional rehabilitation. The child develops sudden breathlessness, weakness and an irregular heartbeat. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Refeeding syndrome", "is_correct": true},
+{"text": "Vitamin A toxicity", "is_correct": false},
+{"text": "Simple constipation", "is_correct": false},
+{"text": "Iron overload", "is_correct": false}
+],
+"rationale": "Refeeding syndrome can occur when nutrition is reintroduced too rapidly after prolonged starvation, causing electrolyte shifts, particularly hypophosphataemia, hypokalaemia and hypomagnesaemia. These disturbances can cause cardiac, respiratory and neurological complications and require urgent assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A patient with chronic kidney disease presents with muscle weakness and a serum potassium level of 6.7 mmol/L. Which dietary advice is most appropriate while urgent medical management is arranged?",
+"choices": [
+{"text": "Encourage large servings of bananas, oranges and avocado", "is_correct": false},
+{"text": "Avoid high-potassium foods and follow an individualised renal diet plan", "is_correct": true},
+{"text": "Increase intake of potassium-containing salt substitutes", "is_correct": false},
+{"text": "Recommend unrestricted intake of dried fruits", "is_correct": false}
+],
+"rationale": "A potassium concentration of 6.7 mmol/L indicates significant hyperkalaemia, which can cause life-threatening cardiac arrhythmias. Dietary potassium restriction may be required, but urgent clinical assessment and treatment must not be delayed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A pregnant woman at 30 weeks' gestation presents with severe pallor, dizziness, breathlessness at rest and a very low haemoglobin concentration. What should the nurse prioritise?",
+"choices": [
+{"text": "Advise her to take fruit juice and return after one month", "is_correct": false},
+{"text": "Arrange urgent clinical assessment and management of severe anaemia", "is_correct": true},
+{"text": "Recommend stopping all iron-containing foods", "is_correct": false},
+{"text": "Reassure her that severe anaemia is a normal feature of pregnancy", "is_correct": false}
+],
+"rationale": "Severe anaemia during pregnancy can compromise maternal health and fetal oxygen delivery, particularly when accompanied by breathlessness and dizziness. Urgent assessment is required to determine the cause and appropriate treatment, including iron therapy or transfusion when clinically indicated.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infant and Young Child Feeding",
+"question_text": "A six-month-old infant is fed thin maize porridge diluted with large quantities of water and receives no other complementary foods. The infant is failing to gain weight. What is the most appropriate nursing intervention?",
+"choices": [
+{"text": "Advise the caregiver to continue the same feeding pattern until one year", "is_correct": false},
+{"text": "Educate the caregiver on age-appropriate, nutrient-dense complementary foods, adequate feeding frequency and continued breastfeeding", "is_correct": true},
+{"text": "Stop breastfeeding and provide water only", "is_correct": false},
+{"text": "Recommend that the infant eat only adult solid foods", "is_correct": false}
+],
+"rationale": "Thin, heavily diluted porridge may provide insufficient energy and nutrients for an infant's needs. Complementary foods should be thick, nutrient-dense, safe and age-appropriate, with breastfeeding continued.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Food Safety and Hygiene",
+"question_text": "Several people develop vomiting and diarrhoea after eating rice and stew that had been cooked the previous day and left at room temperature overnight. Which explanation is most likely?",
+"choices": [
+{"text": "Food contamination and bacterial multiplication or toxin production during unsafe storage", "is_correct": true},
+{"text": "The rice lost all its carbohydrates overnight", "is_correct": false},
+{"text": "Refrigeration caused the food to become infectious", "is_correct": false},
+{"text": "The food became contaminated because it contained protein", "is_correct": false}
+],
+"rationale": "Cooked rice left at room temperature can support the growth of Bacillus cereus, which may produce toxins associated with food poisoning. Prompt cooling, refrigeration and thorough reheating where appropriate reduce the risk, although some preformed toxins may resist reheating.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Nutrition in Ghana",
+"question_text": "A community nutrition survey identifies a high prevalence of anaemia among pregnant women. Which community-level intervention would most effectively address common nutritional causes while supporting maternal health?",
+"choices": [
+{"text": "Discourage pregnant women from attending antenatal clinics", "is_correct": false},
+{"text": "Strengthen antenatal nutrition education, iron-folic acid supplementation, screening and referral", "is_correct": true},
+{"text": "Advise all women to avoid legumes and green leafy vegetables", "is_correct": false},
+{"text": "Recommend tea with every meal to improve iron absorption", "is_correct": false}
+],
+"rationale": "Anaemia in pregnancy may result from iron deficiency, folate deficiency, infections and other causes. A combined approach involving screening, appropriate supplementation, dietary education and management of underlying conditions is more effective than dietary advice alone.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutritional Assessment",
+"question_text": "A child aged 18 months is brought to a CHPS compound with poor weight gain, visible wasting and a MUAC measurement of 110 mm. What is the most appropriate interpretation and action?",
+"choices": [
+{"text": "The measurement is normal; routine follow-up is sufficient", "is_correct": false},
+{"text": "The child has severe acute malnutrition and requires urgent assessment and management or referral", "is_correct": true},
+{"text": "The child is overweight and should reduce food intake", "is_correct": false},
+{"text": "The child has normal nutritional status because MUAC is only used in adults", "is_correct": false}
+],
+"rationale": "For children aged 6–59 months, a MUAC below 115 mm indicates severe acute malnutrition. The child requires prompt assessment for medical complications and management according to the relevant severe acute malnutrition protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Therapeutic Diets",
+"question_text": "A patient with hypertension and type 2 diabetes regularly consumes large portions of jollof rice, fried meat and sweetened drinks. Which dietary intervention is most appropriate?",
+"choices": [
+{"text": "Recommend eliminating all food groups immediately", "is_correct": false},
+{"text": "Develop an individualised meal plan with controlled portions, reduced sodium, limited added sugars and more vegetables", "is_correct": true},
+{"text": "Encourage larger portions to prevent low blood pressure", "is_correct": false},
+{"text": "Replace meals with sweetened fruit drinks", "is_correct": false}
+],
+"rationale": "The patient needs a sustainable dietary pattern that addresses both blood glucose and blood pressure. Portion control, reduced sodium, limited added sugars, appropriate carbohydrate choices and increased vegetable intake can support management of both conditions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutrition in Pregnancy and Lactation",
+"question_text": "A breastfeeding mother reports severe breast pain, fever and a swollen, red area on one breast. She wants to stop breastfeeding immediately. What is the most appropriate nursing advice?",
+"choices": [
+{"text": "Stop breastfeeding permanently without clinical assessment", "is_correct": false},
+{"text": "Arrange prompt assessment for mastitis and support continued breastfeeding or milk expression when appropriate", "is_correct": true},
+{"text": "Restrict all fluid intake until the fever resolves", "is_correct": false},
+{"text": "Apply unclean substances to the breast and avoid seeking care", "is_correct": false}
+],
+"rationale": "Fever, breast pain and localised redness may indicate mastitis, which requires prompt assessment and appropriate treatment. Continued breastfeeding or milk expression is generally encouraged when clinically appropriate because milk removal can support recovery.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Nutrition in Ghana",
+"question_text": "A caregiver refuses to give a child eggs and fish because of a cultural food taboo, despite the child having poor growth. What should the community health nurse do first?",
+"choices": [
+{"text": "Criticise the caregiver's beliefs and end the consultation", "is_correct": false},
+{"text": "Explore the caregiver's concerns respectfully and provide culturally appropriate nutrition education with acceptable alternatives", "is_correct": true},
+{"text": "Force the caregiver to feed the child the restricted foods", "is_correct": false},
+{"text": "Advise the caregiver to feed the child only maize porridge", "is_correct": false}
+],
+"rationale": "Food beliefs and taboos can influence dietary diversity and nutritional status. Respectful counselling should explore the reasons for avoidance and identify culturally acceptable alternatives that provide adequate protein and micronutrients.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
