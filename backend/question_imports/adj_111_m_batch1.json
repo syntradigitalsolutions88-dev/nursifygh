@@ -1,0 +1,899 @@
+{
+"courses": [
+{
+"course_code": "ADJ-111-M",
+"course_title": "Professional Adjustment in Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"History of Midwifery in Ghana",
+"N&MC Regulations and Scope of Practice for Midwives",
+"Professional Ethics and Code of Conduct",
+"Patient Rights and Advocacy",
+"Legal Issues in Midwifery",
+"Professional Boundaries",
+"Midwifery as a Profession",
+"Communication and Documentation Standards",
+"Health Care Delivery System in Ghana"
+],
+"questions": [
+{
+"topic": "History of Midwifery in Ghana",
+"question_text": "Which statement best describes the traditional role of birth attendants in Ghana before the widespread development of formal midwifery education?",
+"choices": [
+{"text": "They provided care during pregnancy, childbirth and the postnatal period using traditional knowledge and practices.", "is_correct": true},
+{"text": "They were responsible for regulating all health professionals in Ghana.", "is_correct": false},
+{"text": "They provided specialist surgical services in referral hospitals.", "is_correct": false},
+{"text": "They were responsible for developing national health insurance policies.", "is_correct": false}
+],
+"rationale": "Traditional birth attendants historically supported women during pregnancy, childbirth and the postnatal period using knowledge acquired through experience and cultural practices. Their role differed from that of formally trained and regulated midwives.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Midwifery in Ghana",
+"question_text": "What was a major purpose of introducing formal midwifery training in Ghana?",
+"choices": [
+{"text": "To replace all community-based maternal health services.", "is_correct": false},
+{"text": "To improve the safety and quality of maternal and newborn care through structured professional education.", "is_correct": true},
+{"text": "To restrict maternity services to urban hospitals.", "is_correct": false},
+{"text": "To transfer responsibility for childbirth entirely to medical doctors.", "is_correct": false}
+],
+"rationale": "Formal midwifery education developed to equip practitioners with scientific knowledge, clinical skills and professional standards. This contributes to safer pregnancy, childbirth and postnatal care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "Which institution is responsible for regulating the education, registration and professional practice of midwives in Ghana?",
+"choices": [
+{"text": "Ghana Health Service", "is_correct": false},
+{"text": "National Health Insurance Authority", "is_correct": false},
+{"text": "Nursing and Midwifery Council of Ghana", "is_correct": true},
+{"text": "National Ambulance Service", "is_correct": false}
+],
+"rationale": "The Nursing and Midwifery Council of Ghana regulates nursing and midwifery education and practice. Its responsibilities include registration, licensing and maintaining professional standards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "Which legislation provides the statutory framework for the regulation of health professional regulatory bodies, including the Nursing and Midwifery Council of Ghana?",
+"choices": [
+{"text": "Data Protection Act, 2012 (Act 843)", "is_correct": false},
+{"text": "Health Professions Regulatory Bodies Act, 2013 (Act 857)", "is_correct": true},
+{"text": "National Health Insurance Act, 2012 (Act 852)", "is_correct": false},
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": false}
+],
+"rationale": "The Health Professions Regulatory Bodies Act, 2013 (Act 857) provides the legal framework for specified health professional regulatory bodies in Ghana. The Nursing and Midwifery Council operates within this regulatory framework.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "What is the primary purpose of professional registration and licensing for midwives?",
+"choices": [
+{"text": "To guarantee employment in a public hospital.", "is_correct": false},
+{"text": "To allow midwives to practise without supervision in every clinical situation.", "is_correct": false},
+{"text": "To establish that a practitioner has met the required professional and regulatory conditions to practise.", "is_correct": true},
+{"text": "To exempt midwives from professional accountability.", "is_correct": false}
+],
+"rationale": "Registration and licensing provide formal recognition that a practitioner has met the applicable requirements for professional practice. They also support public protection and professional accountability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "Which ethical principle requires a midwife to respect a competent woman's right to make decisions about her own healthcare?",
+"choices": [
+{"text": "Autonomy", "is_correct": true},
+{"text": "Beneficence", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": false},
+{"text": "Justice", "is_correct": false}
+],
+"rationale": "Autonomy recognises the patient's right to make informed decisions about her healthcare. A midwife should respect those decisions while providing appropriate information and professional guidance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "Which ethical principle means that a midwife should avoid causing preventable harm to a patient?",
+"choices": [
+{"text": "Justice", "is_correct": false},
+{"text": "Confidentiality", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": true},
+{"text": "Autonomy", "is_correct": false}
+],
+"rationale": "Non-maleficence is the ethical obligation to avoid causing harm. In midwifery, it includes practising safely, recognising limitations and taking appropriate action when risks arise.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "What does confidentiality mean in professional midwifery practice?",
+"choices": [
+{"text": "Sharing patient information with anyone who requests it.", "is_correct": false},
+{"text": "Protecting patient information from unauthorised disclosure.", "is_correct": true},
+{"text": "Avoiding documentation of sensitive patient information.", "is_correct": false},
+{"text": "Discussing patient conditions in public places without mentioning names.", "is_correct": false}
+],
+"rationale": "Confidentiality requires midwives to protect information obtained during professional care. Disclosure should occur only with appropriate authorisation or when legally or professionally justified.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "Which of the following is a fundamental right of a woman receiving maternity care?",
+"choices": [
+{"text": "The right to receive treatment without any explanation.", "is_correct": false},
+{"text": "The right to refuse every recommended intervention without discussion.", "is_correct": false},
+{"text": "The right to respectful care, information and participation in healthcare decisions.", "is_correct": true},
+{"text": "The right to demand that healthcare professionals perform procedures outside their competence.", "is_correct": false}
+],
+"rationale": "Women receiving maternity care have the right to dignity, respectful treatment, relevant information and participation in decisions. These rights support informed and person-centred care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "In professional practice, what is informed consent?",
+"choices": [
+{"text": "A decision made by the midwife without consulting the patient.", "is_correct": false},
+{"text": "Permission given after receiving and understanding relevant information about a proposed intervention.", "is_correct": true},
+{"text": "A signature obtained before explaining a procedure.", "is_correct": false},
+{"text": "Permission given by a patient's relative in every clinical situation.", "is_correct": false}
+],
+"rationale": "Informed consent involves providing relevant information about the proposed intervention, including its purpose, significant risks, benefits and alternatives. The patient must have the capacity to decide and give consent voluntarily.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "Which statement best describes professional negligence?",
+"choices": [
+{"text": "Any disagreement between a patient and a midwife.", "is_correct": false},
+{"text": "A deliberate refusal by a patient to follow health advice.", "is_correct": false},
+{"text": "Failure to exercise the required standard of care, resulting in harm or legally recognised damage.", "is_correct": true},
+{"text": "A situation in which a patient develops a complication despite appropriate care.", "is_correct": false}
+],
+"rationale": "Negligence involves a failure to meet the applicable standard of care and the necessary legal connection between that failure and harm. An adverse outcome alone does not automatically establish negligence.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "Which action is an example of maintaining appropriate professional boundaries?",
+"choices": [
+{"text": "Accepting expensive gifts from a patient in exchange for special attention.", "is_correct": false},
+{"text": "Developing a personal romantic relationship with a woman under one's professional care.", "is_correct": false},
+{"text": "Maintaining a therapeutic relationship focused on the patient's healthcare needs.", "is_correct": true},
+{"text": "Sharing personal financial problems with patients to obtain assistance.", "is_correct": false}
+],
+"rationale": "Professional boundaries preserve the appropriate distinction between the midwife's professional responsibilities and personal interests. They protect patients from exploitation and maintain trust in the therapeutic relationship.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Midwifery as a Profession",
+"question_text": "Which characteristic distinguishes a profession from an occupation?",
+"choices": [
+{"text": "A profession requires no formal preparation.", "is_correct": false},
+{"text": "A profession is based on specialised knowledge, education, ethical standards and accountability.", "is_correct": true},
+{"text": "A profession allows practitioners to work without regulation.", "is_correct": false},
+{"text": "A profession is concerned only with earning income.", "is_correct": false}
+],
+"rationale": "A profession is characterised by specialised knowledge, formal preparation, ethical responsibilities and accountability to the public. Midwifery meets these characteristics through regulated education and professional practice.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "Which statement best describes an essential feature of professional clinical documentation?",
+"choices": [
+{"text": "Records should be accurate, objective, timely and legible.", "is_correct": true},
+{"text": "Records should contain personal opinions about patients.", "is_correct": false},
+{"text": "Records should be completed only when a complication occurs.", "is_correct": false},
+{"text": "Records should be altered whenever a colleague requests it.", "is_correct": false}
+],
+"rationale": "Accurate, objective, timely and legible documentation supports continuity of care and professional accountability. Clinical records should reflect the care provided and relevant patient findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "What is the main purpose of Community-based Health Planning and Services (CHPS) in Ghana?",
+"choices": [
+{"text": "To provide only specialist surgical services in regional hospitals.", "is_correct": false},
+{"text": "To bring essential primary healthcare services closer to communities.", "is_correct": true},
+{"text": "To replace all district and regional hospitals.", "is_correct": false},
+{"text": "To provide healthcare exclusively to insured urban residents.", "is_correct": false}
+],
+"rationale": "CHPS is a primary healthcare strategy designed to improve access to essential health services at community level. It supports preventive, promotive and basic curative healthcare through community-based service delivery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "Which institution is primarily responsible for implementing public health policies and delivering public healthcare services through its facilities in Ghana?",
+"choices": [
+{"text": "Ghana Health Service", "is_correct": true},
+{"text": "Nursing and Midwifery Council of Ghana", "is_correct": false},
+{"text": "National Health Insurance Authority", "is_correct": false},
+{"text": "Ghana Medical and Dental Council", "is_correct": false}
+],
+"rationale": "The Ghana Health Service is responsible for implementing approved health policies and providing public healthcare services through its service delivery structures. The Nursing and Midwifery Council regulates professional education and practice rather than operating as a healthcare delivery service.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "What is the primary purpose of the National Health Insurance Scheme (NHIS) in Ghana?",
+"choices": [
+{"text": "To regulate the professional conduct of midwives.", "is_correct": false},
+{"text": "To provide financial risk protection and improve access to covered healthcare services.", "is_correct": true},
+{"text": "To replace the need for clinical assessment before treatment.", "is_correct": false},
+{"text": "To provide free access to every possible medical intervention without limitations.", "is_correct": false}
+],
+"rationale": "The NHIS is intended to reduce financial barriers to accessing healthcare services covered under the scheme. Eligibility, benefits and applicable procedures are governed by the scheme's rules.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "A newly qualified midwife is assigned to provide care in a maternity unit. Which action best demonstrates professional adjustment to the clinical environment?",
+"choices": [
+{"text": "Performing every procedure independently to demonstrate confidence.", "is_correct": false},
+{"text": "Learning the facility's protocols, identifying available support and practising within her competence.", "is_correct": true},
+{"text": "Avoiding questions because asking for guidance indicates incompetence.", "is_correct": false},
+{"text": "Following the practices of senior staff even when they conflict with safe professional standards.", "is_correct": false}
+],
+"rationale": "A newly qualified midwife should become familiar with the facility's policies, reporting structure and available resources. Safe practice requires recognising limitations and seeking guidance when necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "A midwife working at a CHPS compound is asked to perform a procedure for which she has not been trained or assessed as competent. What is the most appropriate action?",
+"choices": [
+{"text": "Perform the procedure because the patient has already agreed.", "is_correct": false},
+{"text": "Ask an untrained colleague to perform it instead.", "is_correct": false},
+{"text": "Explain her limitation, arrange appropriate referral or assistance and continue safe care within her competence.", "is_correct": true},
+{"text": "Ignore the request without informing anyone.", "is_correct": false}
+],
+"rationale": "Midwives must practise within their authorised scope and demonstrated competence. When a required intervention exceeds their competence, they should seek appropriate assistance or arrange referral without abandoning the patient.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "A midwife notices that her professional licence has expired while preparing for duty. What should she do?",
+"choices": [
+{"text": "Continue practising because she has previous clinical experience.", "is_correct": false},
+{"text": "Use another midwife's licence number for documentation.", "is_correct": false},
+{"text": "Follow the applicable renewal requirements and avoid practising unlawfully until her registration or licence status is regularised.", "is_correct": true},
+{"text": "Change her professional title to avoid regulatory requirements.", "is_correct": false}
+],
+"rationale": "Professional practice must comply with the registration and licensing requirements of the Nursing and Midwifery Council. Previous experience does not remove the obligation to maintain the required professional status.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A pregnant woman declines a recommended examination after the midwife explains its purpose and possible consequences. The woman is assessed as having decision-making capacity. What should the midwife do?",
+"choices": [
+{"text": "Force the examination because it is part of routine maternity care.", "is_correct": false},
+{"text": "Respect the woman's decision, explore her concerns and explain available alternatives and risks.", "is_correct": true},
+{"text": "Discharge the woman immediately from the facility.", "is_correct": false},
+{"text": "Ask her relatives to make the decision against her wishes.", "is_correct": false}
+],
+"rationale": "A competent adult has the right to accept or refuse a proposed intervention. The midwife should respect the decision, provide further explanation where needed and document the discussion and outcome.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A midwife discovers that a colleague has disclosed a patient's HIV status to people who are not involved in her care. What is the most appropriate professional response?",
+"choices": [
+{"text": "Ignore the incident because the information is already known.", "is_correct": false},
+{"text": "Share the information with more colleagues to confirm what happened.", "is_correct": false},
+{"text": "Address the confidentiality breach through the appropriate reporting channels and protect the patient's privacy.", "is_correct": true},
+{"text": "Post a warning about the colleague on social media.", "is_correct": false}
+],
+"rationale": "Unauthorised disclosure of a patient's health information breaches confidentiality and professional standards. The incident should be managed through appropriate facility and professional reporting procedures while limiting further disclosure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A midwife is caring for a woman whose cultural beliefs influence her preferred childbirth practices. Which approach best demonstrates cultural sensitivity?",
+"choices": [
+{"text": "Dismiss the beliefs as unscientific without discussion.", "is_correct": false},
+{"text": "Respect the woman's beliefs while explaining any safety concerns and agreeing on an appropriate care plan.", "is_correct": true},
+{"text": "Allow every traditional practice even when it presents a serious clinical risk.", "is_correct": false},
+{"text": "Refuse to provide care until the woman abandons her beliefs.", "is_correct": false}
+],
+"rationale": "Culturally sensitive care recognises patients' beliefs and values without compromising clinical safety. The midwife should communicate respectfully and discuss safe alternatives when a practice may cause harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman in labour asks the midwife to explain why a vaginal examination is necessary. What should the midwife do?",
+"choices": [
+{"text": "Explain the purpose, benefits, possible discomforts and relevant risks before seeking consent.", "is_correct": true},
+{"text": "Tell the woman that explanations are unnecessary during labour.", "is_correct": false},
+{"text": "Ask a relative to approve the examination without consulting the woman.", "is_correct": false},
+{"text": "Perform the examination immediately to avoid delaying care.", "is_correct": false}
+],
+"rationale": "Patients have a right to understandable information about proposed interventions. Explaining the examination and obtaining consent supports autonomy, trust and respectful maternity care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman attending antenatal clinic cannot understand the language used by the midwife. What is the best communication approach?",
+"choices": [
+{"text": "Continue speaking loudly in the same language.", "is_correct": false},
+{"text": "Ask another patient to interpret sensitive medical information.", "is_correct": false},
+{"text": "Arrange an appropriate interpreter and confirm the woman's understanding.", "is_correct": true},
+{"text": "Provide treatment without explaining the procedure.", "is_correct": false}
+],
+"rationale": "Effective communication requires information to be provided in a language the patient understands. An appropriate interpreter can help preserve accuracy, confidentiality and informed decision-making.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman complains that staff members are discussing her pregnancy complications where other patients can hear. What should the midwife do?",
+"choices": [
+{"text": "Tell the woman that complaints about staff are not permitted.", "is_correct": false},
+{"text": "Move the discussion to an appropriate private setting and address the concern through the facility's complaint process.", "is_correct": true},
+{"text": "Ask other patients to leave the facility permanently.", "is_correct": false},
+{"text": "Ignore the complaint because the information is medically relevant.", "is_correct": false}
+],
+"rationale": "Patients are entitled to privacy and respectful communication. The midwife should protect the woman's confidentiality and ensure that her concern is handled through appropriate channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman who has been admitted for delivery says that she wants her chosen birth companion to remain with her. What should the midwife do?",
+"choices": [
+{"text": "Automatically refuse because birth companions are never permitted.", "is_correct": false},
+{"text": "Assess the request in relation to the woman's preferences, privacy, clinical circumstances and facility policy.", "is_correct": true},
+{"text": "Allow unlimited visitors into the delivery room regardless of safety.", "is_correct": false},
+{"text": "Ask the birth companion to make all clinical decisions.", "is_correct": false}
+],
+"rationale": "Respectful maternity care recognises the importance of support persons where appropriate. The midwife should consider the woman's preference while maintaining privacy, infection prevention and safe clinical practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A midwife prepares to administer a medication but discovers that the prescription is unclear. What should she do?",
+"choices": [
+{"text": "Guess the intended dose based on previous experience.", "is_correct": false},
+{"text": "Ask the patient to decide the dose.", "is_correct": false},
+{"text": "Clarify the prescription with the authorised prescriber before administration.", "is_correct": true},
+{"text": "Administer half of the suspected dose without consultation.", "is_correct": false}
+],
+"rationale": "An unclear prescription creates a medication safety risk. The midwife must clarify the order with the authorised prescriber before administering the medication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A woman refuses a recommended intervention after receiving appropriate information. Which documentation is most appropriate?",
+"choices": [
+{"text": "Record only that the woman was difficult.", "is_correct": false},
+{"text": "Document the information provided, the woman's decision, relevant assessment findings and the agreed plan.", "is_correct": true},
+{"text": "Leave the record blank to avoid legal responsibility.", "is_correct": false},
+{"text": "Record that the intervention was performed to prevent criticism.", "is_correct": false}
+],
+"rationale": "Accurate documentation should reflect the discussion, the patient's decision and the care plan. This supports continuity of care and demonstrates that the patient's right to make an informed decision was respected.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A midwife accidentally administers a medication at the wrong dose. What is the most appropriate initial response?",
+"choices": [
+{"text": "Hide the error to protect her professional reputation.", "is_correct": false},
+{"text": "Wait until the patient develops symptoms before informing anyone.", "is_correct": false},
+{"text": "Assess the patient, take appropriate immediate safety measures and promptly notify the responsible clinician according to protocol.", "is_correct": true},
+{"text": "Alter the medication record to show the correct prescribed dose.", "is_correct": false}
+],
+"rationale": "The patient's safety is the immediate priority after a medication error. Prompt assessment, appropriate intervention, escalation and accurate reporting help reduce harm and support transparent professional practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A patient offers a midwife an expensive gift in exchange for receiving preferential treatment. What should the midwife do?",
+"choices": [
+{"text": "Accept the gift because the patient offered it voluntarily.", "is_correct": false},
+{"text": "Accept it but promise not to disclose the arrangement.", "is_correct": false},
+{"text": "Politely decline the gift and explain that all patients must receive fair and professional care.", "is_correct": true},
+{"text": "Provide preferential treatment without accepting the gift.", "is_correct": false}
+],
+"rationale": "Accepting an expensive gift in exchange for preferential treatment creates a conflict of interest and violates professional boundaries. Midwives must provide fair care based on clinical need rather than personal benefit.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A midwife receives a friend request from a woman currently receiving maternity care and is asked to discuss her diagnosis through a personal social media account. What is the best response?",
+"choices": [
+{"text": "Discuss the diagnosis through private messages because the account is secure.", "is_correct": false},
+{"text": "Maintain professional boundaries and direct the woman to approved communication channels for clinical information.", "is_correct": true},
+{"text": "Share the woman's medical record through social media.", "is_correct": false},
+{"text": "Ask the woman to post her medical concerns publicly.", "is_correct": false}
+],
+"rationale": "Personal social media communication can compromise confidentiality and blur professional boundaries. Clinical information should be communicated through approved and secure channels in accordance with facility policy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery as a Profession",
+"question_text": "A newly qualified midwife is unsure how to manage a clinical situation she has not previously encountered. Which action best demonstrates professional accountability?",
+"choices": [
+{"text": "Pretend to understand the situation and proceed independently.", "is_correct": false},
+{"text": "Seek guidance from an appropriate experienced practitioner while ensuring the woman receives safe care.", "is_correct": true},
+{"text": "Leave the clinical area without informing anyone.", "is_correct": false},
+{"text": "Ask a patient to explain the correct clinical procedure.", "is_correct": false}
+],
+"rationale": "Professional accountability includes recognising personal limitations and seeking appropriate assistance. This protects patients and supports the midwife's continuing professional development.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery as a Profession",
+"question_text": "A midwife attends a continuing professional development session on the management of obstetric emergencies. How does this activity contribute to professional practice?",
+"choices": [
+{"text": "It replaces the need to maintain professional registration.", "is_correct": false},
+{"text": "It improves knowledge and skills needed to maintain and develop professional competence.", "is_correct": true},
+{"text": "It allows the midwife to perform every specialist procedure.", "is_correct": false},
+{"text": "It removes the need to follow facility protocols.", "is_correct": false}
+],
+"rationale": "Continuing professional development helps midwives update their knowledge, strengthen clinical skills and respond to changes in healthcare practice. It does not remove the need to practise within the authorised scope of practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "During a shift handover, a midwife is transferring responsibility for a woman with severe pre-eclampsia to another midwife. Which approach is most appropriate?",
+"choices": [
+{"text": "Provide a structured handover covering the woman's condition, observations, treatment and outstanding care needs.", "is_correct": true},
+{"text": "Mention only the woman's name and bed number.", "is_correct": false},
+{"text": "Leave the clinical notes for the next midwife to interpret independently.", "is_correct": false},
+{"text": "Discuss the patient's condition with visitors instead of the receiving midwife.", "is_correct": false}
+],
+"rationale": "Structured handover promotes continuity of care and reduces the risk of missed clinical information. Relevant details should include current assessment findings, interventions, response to treatment and pending actions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A midwife makes an incorrect entry in a patient's paper record. What should she do?",
+"choices": [
+{"text": "Erase the entry completely so that no error remains visible.", "is_correct": false},
+{"text": "Use correction fluid to cover the original information.", "is_correct": false},
+{"text": "Correct the entry according to documentation policy while preserving the original information and making the correction traceable.", "is_correct": true},
+{"text": "Ask another midwife to sign the record as if she made the correction.", "is_correct": false}
+],
+"rationale": "Corrections to clinical records must preserve the integrity and traceability of the original entry. The midwife should follow the facility's approved correction procedure and authenticate the amendment appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A midwife needs to communicate a patient's sudden deterioration to a medical officer. Which communication method is most appropriate for organising the information?",
+"choices": [
+{"text": "SOAP", "is_correct": false},
+{"text": "SBAR", "is_correct": true},
+{"text": "Kardex only", "is_correct": false},
+{"text": "An informal personal message", "is_correct": false}
+],
+"rationale": "SBAR stands for Situation, Background, Assessment and Recommendation. It provides a structured method for communicating urgent clinical information clearly and efficiently.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A midwife at a CHPS compound identifies a pregnant woman with signs of severe pre-eclampsia. The facility cannot provide the required definitive emergency obstetric care. What should the midwife do?",
+"choices": [
+{"text": "Keep the woman at the CHPS compound until her next routine antenatal appointment.", "is_correct": false},
+{"text": "Arrange urgent referral to an appropriate facility, initiate indicated stabilisation within her competence and communicate with the receiving facility.", "is_correct": true},
+{"text": "Send the woman home to arrange her own transport without further assessment.", "is_correct": false},
+{"text": "Wait until the woman develops convulsions before referring her.", "is_correct": false}
+],
+"rationale": "Severe pre-eclampsia can progress rapidly to life-threatening complications for both mother and fetus. The midwife should initiate appropriate emergency measures within her competence and arrange urgent referral for definitive care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A pregnant woman attending a public health facility presents her NHIS card and asks whether every service will automatically be free. What is the most appropriate response by the midwife?",
+"choices": [
+{"text": "Explain that coverage depends on the services and benefits included under the NHIS and applicable scheme rules.", "is_correct": true},
+{"text": "Tell her that every treatment in every facility is automatically free.", "is_correct": false},
+{"text": "Tell her that the NHIS never covers maternity-related services.", "is_correct": false},
+{"text": "Refuse to assess her until she makes a private payment.", "is_correct": false}
+],
+"rationale": "NHIS coverage is determined by the scheme's approved benefits and applicable rules. The midwife should provide accurate information and direct the patient to the appropriate administrative personnel when clarification is required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A midwife working in a district hospital identifies a newborn who requires specialist neonatal care that is unavailable at the facility. Which action is most appropriate?",
+"choices": [
+{"text": "Delay referral until the newborn's condition becomes critical.", "is_correct": false},
+{"text": "Arrange referral to an appropriate higher-level facility and provide necessary stabilisation and communication.", "is_correct": true},
+{"text": "Discharge the newborn because specialist care is unavailable.", "is_correct": false},
+{"text": "Refer the newborn without providing any clinical information.", "is_correct": false}
+],
+"rationale": "The health system relies on referral pathways to ensure patients receive care appropriate to their clinical needs. Timely referral, stabilisation and effective communication help reduce delays and improve neonatal outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "History of Midwifery in Ghana",
+"question_text": "During a community education session, a traditional birth attendant says that formal midwives are expected to replace all traditional birth attendants. Which response is most appropriate?",
+"choices": [
+{"text": "Explain that collaboration and appropriate referral can support maternal and newborn health while professional midwives provide regulated clinical care.", "is_correct": true},
+{"text": "Explain that traditional birth attendants should independently manage all obstetric emergencies.", "is_correct": false},
+{"text": "Tell the community that traditional birth attendants must never participate in health education.", "is_correct": false},
+{"text": "Encourage traditional birth attendants to perform procedures beyond their training.", "is_correct": false}
+],
+"rationale": "Community engagement can support early recognition of danger signs and timely referral. However, clinical care must be provided by appropriately trained and authorised professionals within their scope of practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman in labour is being mocked by staff because she is crying and expressing pain. What should the midwife do?",
+"choices": [
+{"text": "Join the staff because crying is a normal part of labour.", "is_correct": false},
+{"text": "Advocate for respectful treatment and provide appropriate emotional and clinical support.", "is_correct": true},
+{"text": "Tell the woman to remain silent to avoid disturbing other patients.", "is_correct": false},
+{"text": "Ignore the behaviour because the woman is not physically injured.", "is_correct": false}
+],
+"rationale": "Women are entitled to dignity, respect and freedom from verbal abuse during maternity care. The midwife should challenge disrespectful conduct through appropriate channels and support the woman's physical and emotional needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A woman arrives at a maternity facility unconscious with severe bleeding and requires immediate life-saving intervention. No relative is immediately available. What should the midwife do?",
+"choices": [
+{"text": "Delay all emergency care until a relative signs a consent form.", "is_correct": false},
+{"text": "Provide or facilitate urgently required emergency care within her competence in accordance with applicable emergency-care procedures.", "is_correct": true},
+{"text": "Send the woman home until she regains consciousness.", "is_correct": false},
+{"text": "Refuse care because written consent has not been obtained.", "is_correct": false}
+],
+"rationale": "In a life-threatening emergency where the patient lacks capacity and consent cannot be obtained in time, necessary emergency treatment may proceed under applicable legal and professional principles. The priority is to prevent serious harm while following facility procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A midwife notices that a patient is becoming emotionally dependent on her and repeatedly requests her personal telephone number. What is the best response?",
+"choices": [
+{"text": "Provide the number and encourage personal contact at any time.", "is_correct": false},
+{"text": "Maintain professional boundaries, explain appropriate communication channels and ensure the patient has access to necessary support.", "is_correct": true},
+{"text": "End the professional relationship without arranging continuity of care.", "is_correct": false},
+{"text": "Ask the patient to pay for private access to the midwife.", "is_correct": false}
+],
+"rationale": "Professional boundaries help prevent inappropriate dependency and protect both the patient and practitioner. The midwife should remain compassionate while keeping communication within approved professional channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Midwifery as a Profession",
+"question_text": "A midwife is assigned to a maternity unit where a new clinical guideline has been introduced. Which action demonstrates professional responsibility?",
+"choices": [
+{"text": "Continue using the old procedure without reviewing the new guideline.", "is_correct": false},
+{"text": "Review the guideline, seek clarification where necessary and apply it within her competence and facility policy.", "is_correct": true},
+{"text": "Ignore the guideline because professional experience is more important.", "is_correct": false},
+{"text": "Ask patients to decide which clinical guideline should be followed.", "is_correct": false}
+],
+"rationale": "Professional responsibility requires midwives to keep their practice aligned with current approved standards and clinical guidance. Clarification and appropriate training should be sought when a new guideline introduces unfamiliar procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A midwife at a CHPS compound identifies a woman who has missed several antenatal appointments. Which action best supports continuity of maternal healthcare?",
+"choices": [
+{"text": "Remove the woman from the antenatal register permanently.", "is_correct": false},
+{"text": "Explore the reasons for missed appointments, provide appropriate counselling and facilitate follow-up according to facility procedures.", "is_correct": true},
+{"text": "Assume that the woman no longer requires antenatal care.", "is_correct": false},
+{"text": "Wait until the woman presents in labour before offering further assistance.", "is_correct": false}
+],
+"rationale": "Missed antenatal appointments may result from transport difficulties, financial barriers, lack of information or other challenges. Appropriate follow-up and counselling can help improve access to essential maternal health services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A midwife receives a telephone instruction from an authorised prescriber concerning a patient's treatment. Which action is most appropriate?",
+"choices": [
+{"text": "Rely on memory and avoid documenting the instruction.", "is_correct": false},
+{"text": "Record the instruction according to facility policy, confirm its accuracy and obtain required authentication.", "is_correct": true},
+{"text": "Ask another patient to confirm the instruction.", "is_correct": false},
+{"text": "Change the instruction based on personal preference without clarification.", "is_correct": false}
+],
+"rationale": "Telephone instructions can create communication risks if they are misunderstood or inadequately documented. The midwife should use the facility's approved procedure for recording, confirming and authenticating such instructions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman tells the midwife that she is afraid to report mistreatment because she believes her care will be withheld. What is the most appropriate response?",
+"choices": [
+{"text": "Tell her that patients who complain may lose access to services.", "is_correct": false},
+{"text": "Listen without judgement, explain available complaint and support mechanisms, and reassure her that respectful care remains her right.", "is_correct": true},
+{"text": "Advise her to discuss the matter publicly on social media first.", "is_correct": false},
+{"text": "Ignore the concern unless she submits a written complaint.", "is_correct": false}
+],
+"rationale": "Patient advocacy includes supporting individuals to express concerns and access appropriate complaint mechanisms without intimidation. A patient's right to respectful care should not depend on whether she makes a complaint.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A midwife is asked by a colleague to sign a clinical record for care that the colleague provided, although the midwife did not witness or verify the care. What should she do?",
+"choices": [
+{"text": "Sign the record to maintain good working relationships.", "is_correct": false},
+{"text": "Refuse to authenticate information she cannot verify and explain the need for accurate documentation.", "is_correct": true},
+{"text": "Sign the record but remove the date.", "is_correct": false},
+{"text": "Ask another student midwife to sign it instead.", "is_correct": false}
+],
+"rationale": "A midwife must not authenticate clinical information that she cannot truthfully verify. Signing inaccurate records undermines documentation integrity and may expose patients and practitioners to harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A midwife performs an invasive procedure without obtaining consent from a competent patient, and no emergency justification exists. Which legal and ethical concern is most directly raised?",
+"choices": [
+{"text": "Possible violation of bodily autonomy and the patient's right to give or refuse consent.", "is_correct": true},
+{"text": "Failure to register the patient under the NHIS.", "is_correct": false},
+{"text": "Failure to provide continuing professional development.", "is_correct": false},
+{"text": "Breach of the referral system.", "is_correct": false}
+],
+"rationale": "A competent patient has the right to decide whether an intervention is performed on her body. Performing an invasive procedure without valid consent may constitute an unlawful interference with bodily integrity, depending on the circumstances.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "A midwife is asked to undertake a clinical intervention that is permitted within her professional role but for which she has not demonstrated current competence. What is the best professional decision?",
+"choices": [
+{"text": "Proceed because the intervention is generally included in midwifery practice.", "is_correct": false},
+{"text": "Decline to perform it independently, seek appropriate supervision or training and arrange safe care for the patient.", "is_correct": true},
+{"text": "Allow a student without supervision to perform it.", "is_correct": false},
+{"text": "Tell the patient that the intervention is unnecessary without assessing her condition.", "is_correct": false}
+],
+"rationale": "Being within the general professional scope does not automatically mean that an individual midwife is competent to perform every procedure. Practitioners must maintain competence and seek appropriate supervision or support when needed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A midwife notices that a colleague is repeatedly reporting for duty while impaired by alcohol. The colleague is about to provide care to women in labour. What should the midwife do?",
+"choices": [
+{"text": "Ignore the situation because the colleague is experienced.", "is_correct": false},
+{"text": "Allow the colleague to continue working but observe secretly.", "is_correct": false},
+{"text": "Take immediate steps to protect patients, notify the appropriate supervisor and follow professional reporting procedures.", "is_correct": true},
+{"text": "Discuss the colleague's behaviour with patients before taking action.", "is_correct": false}
+],
+"rationale": "Impairment can compromise clinical judgement and patient safety. The midwife should ensure that the colleague does not continue unsafe practice and report the concern through appropriate channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A midwife fails to recognise and escalate signs of severe postpartum haemorrhage despite clear clinical evidence, resulting in serious harm to the woman. Which professional concern is most significant?",
+"choices": [
+{"text": "A possible failure to meet the expected standard of clinical care.", "is_correct": true},
+{"text": "A routine disagreement about maternity ward duties.", "is_correct": false},
+{"text": "A patient's right to choose a birth companion.", "is_correct": false},
+{"text": "A failure to complete a professional development course.", "is_correct": false}
+],
+"rationale": "Failure to recognise and respond appropriately to a serious obstetric emergency may represent a breach of the expected standard of care. Whether it constitutes legal negligence depends on the evidence, applicable duty, breach, causation and damage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "A midwife at a district hospital is caring for a woman with obstructed labour. The woman requires operative intervention beyond the midwife's authority and competence. What is the most appropriate action?",
+"choices": [
+{"text": "Attempt the operation because the woman is at risk.", "is_correct": false},
+{"text": "Continue routine monitoring without informing the medical team.", "is_correct": false},
+{"text": "Recognise the emergency, initiate appropriate immediate care within competence and urgently escalate for the required intervention.", "is_correct": true},
+{"text": "Discharge the woman because the intervention is outside the midwife's scope.", "is_correct": false}
+],
+"rationale": "Obstructed labour requires urgent clinical assessment and may require operative delivery by an appropriately qualified practitioner. The midwife should provide immediate care within her competence and ensure timely escalation rather than attempting an unauthorised procedure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A midwife has a personal disagreement with a patient and begins providing less attentive care as a result. Which professional principle is being compromised?",
+"choices": [
+{"text": "Justice and fairness in the provision of healthcare.", "is_correct": true},
+{"text": "The principle of confidentiality only.", "is_correct": false},
+{"text": "The right to professional promotion.", "is_correct": false},
+{"text": "The principle of resource management only.", "is_correct": false}
+],
+"rationale": "Justice requires fair and non-discriminatory treatment of patients. Personal disagreements must not influence the quality or standard of professional care provided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A woman in a rural community develops complications during pregnancy and needs services unavailable at the CHPS compound. Which feature of Ghana's health delivery system should guide the midwife's action?",
+"choices": [
+{"text": "The referral system linking primary, secondary and tertiary levels of care.", "is_correct": true},
+{"text": "The requirement that all patients attend teaching hospitals first.", "is_correct": false},
+{"text": "The principle that CHPS compounds must manage every medical emergency independently.", "is_correct": false},
+{"text": "The policy that patients should select treatment levels without clinical advice.", "is_correct": false}
+],
+"rationale": "Ghana's healthcare delivery system uses referral pathways to connect patients with facilities capable of providing the required level of care. The midwife should identify the need for referral and facilitate timely transfer.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A midwife is asked to alter a patient's record to conceal a delay in recognising fetal distress. Which action is most appropriate?",
+"choices": [
+{"text": "Alter the record because the request came from a senior staff member.", "is_correct": false},
+{"text": "Refuse to falsify the record, preserve accurate documentation and report the concern through appropriate channels.", "is_correct": true},
+{"text": "Destroy the original record to prevent further investigation.", "is_correct": false},
+{"text": "Ask the patient's relative to approve the alteration.", "is_correct": false}
+],
+"rationale": "Falsifying a clinical record is a serious breach of professional and legal responsibilities. The midwife must preserve the accuracy of the record and report attempts to conceal unsafe practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A midwife begins borrowing money from a woman receiving antenatal care and promises to give her special attention in return. Which professional issue is most clearly demonstrated?",
+"choices": [
+{"text": "Appropriate therapeutic communication.", "is_correct": false},
+{"text": "A breach of professional boundaries and a potential conflict of interest.", "is_correct": true},
+{"text": "Continuing professional development.", "is_correct": false},
+{"text": "Effective clinical delegation.", "is_correct": false}
+],
+"rationale": "Financial relationships with patients can create exploitation, dependency and unequal treatment. Midwives should maintain professional boundaries and avoid using their position for personal benefit.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A competent woman refuses a blood transfusion because of her personal beliefs. Her condition is serious, but she understands the information provided. What should the midwife do?",
+"choices": [
+{"text": "Arrange for the transfusion to be administered secretly.", "is_correct": false},
+{"text": "Respect her informed decision, ensure appropriate senior clinical review, discuss alternatives and document the process.", "is_correct": true},
+{"text": "Ask relatives to sign consent on her behalf despite her capacity.", "is_correct": false},
+{"text": "Refuse to provide any further maternity care.", "is_correct": false}
+],
+"rationale": "A competent adult's informed refusal should be respected, even when the decision carries significant clinical risks. The midwife should ensure appropriate clinical escalation, discuss available alternatives and document the woman's decision and the information provided.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A woman develops a serious complication after delivery despite the midwife having followed appropriate assessment, monitoring, escalation and treatment procedures. Which conclusion is most professionally and legally appropriate?",
+"choices": [
+{"text": "The midwife is automatically negligent because the outcome was poor.", "is_correct": false},
+{"text": "The occurrence of a complication does not by itself establish negligence; the standard of care and relevant evidence must be examined.", "is_correct": true},
+{"text": "The midwife cannot be questioned because she followed a routine procedure.", "is_correct": false},
+{"text": "The patient is responsible for every complication that occurs after delivery.", "is_correct": false}
+],
+"rationale": "A poor clinical outcome does not automatically prove negligence. Assessment must consider the duty of care, whether the standard was breached, causation and legally recognised harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A midwife caring for a woman with a life-threatening obstetric complication is approached by a journalist requesting the woman's identity and medical details. The woman has not authorised disclosure. What should the midwife do?",
+"choices": [
+{"text": "Provide the details because the case is of public interest.", "is_correct": false},
+{"text": "Share the information if the journalist promises not to publish the woman's name.", "is_correct": false},
+{"text": "Decline to disclose identifiable patient information and refer media enquiries to the authorised facility representative.", "is_correct": true},
+{"text": "Allow the journalist to photograph the woman's clinical record.", "is_correct": false}
+],
+"rationale": "Confidentiality applies even when a case attracts public attention. Identifiable health information should not be disclosed without appropriate authorisation or a valid legal basis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "A midwife working in a rural facility is the only skilled maternity professional on duty when a woman presents with an emergency beyond the facility's capacity. She is concerned that referral may be delayed by transport difficulties. What should guide her decision?",
+"choices": [
+{"text": "Attempt every advanced procedure independently because no other professional is present.", "is_correct": false},
+{"text": "Wait for the next shift because emergency care is not possible without a specialist.", "is_correct": false},
+{"text": "Provide appropriate emergency stabilisation within her competence, activate referral arrangements and communicate the urgency to the receiving facility.", "is_correct": true},
+{"text": "Discharge the woman and advise her to find transport independently.", "is_correct": false}
+],
+"rationale": "The absence of a specialist does not remove the midwife's responsibility to provide appropriate care within her competence. Early stabilisation, escalation and activation of the referral system are essential to reduce delays in emergency obstetric care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman in labour is unable to communicate clearly because of severe pain. Her relative insists on making all decisions, although the woman remains conscious and appears able to understand questions. What should the midwife do?",
+"choices": [
+{"text": "Allow the relative to make all decisions because the woman is in labour.", "is_correct": false},
+{"text": "Assess the woman's decision-making capacity, communicate in a supportive manner and involve her in decisions to the extent possible.", "is_correct": true},
+{"text": "Exclude the woman from all discussions until after delivery.", "is_correct": false},
+{"text": "Ask the relative to sign consent for every procedure.", "is_correct": false}
+],
+"rationale": "Labour pain does not automatically remove a woman's decision-making capacity. The midwife should assess her ability to understand and decide, support communication and respect her autonomy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A senior midwife instructs a junior midwife to administer a medication that the junior believes is contraindicated based on the patient's documented allergy. Which action should the junior midwife take?",
+"choices": [
+{"text": "Administer the medication because senior staff instructions must always be followed.", "is_correct": false},
+{"text": "Refuse to administer it without explanation and leave the ward.", "is_correct": false},
+{"text": "Withhold the medication, immediately clarify the concern with the senior midwife or prescriber and ensure patient safety.", "is_correct": true},
+{"text": "Ask the patient to accept responsibility and administer the medication.", "is_correct": false}
+],
+"rationale": "A professional instruction does not remove the midwife's duty to identify and prevent foreseeable harm. The allergy must be clarified promptly, and the medication should not be administered until its safety has been established.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "During a handover, the outgoing midwife reports that a woman has stable vital signs, but the written record shows persistent severe hypertension and a worsening headache. What should the receiving midwife do first?",
+"choices": [
+{"text": "Accept the verbal handover because the outgoing midwife has more experience.", "is_correct": false},
+{"text": "Ignore the written record because it may be outdated.", "is_correct": false},
+{"text": "Immediately reassess the woman, verify the conflicting information and escalate suspected deterioration.", "is_correct": true},
+{"text": "Wait until the next routine observation time.", "is_correct": false}
+],
+"rationale": "Conflicting handover information and documented severe hypertension with headache may indicate a serious maternal complication. Immediate reassessment and escalation are necessary to establish the woman's current condition and prevent delay in treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A pregnant woman with severe bleeding is brought to a CHPS compound. The midwife knows that the nearest referral hospital is some distance away, but the woman is deteriorating. What is the priority action?",
+"choices": [
+{"text": "Complete routine registration and NHIS verification before providing care.", "is_correct": false},
+{"text": "Initiate immediate emergency assessment and stabilisation within competence while arranging urgent referral and transport.", "is_correct": true},
+{"text": "Wait for a relative to provide written permission before beginning emergency care.", "is_correct": false},
+{"text": "Ask the woman to return to the compound the following day.", "is_correct": false}
+],
+"rationale": "Severe bleeding in pregnancy or childbirth is a time-critical emergency. Immediate assessment, appropriate stabilisation and urgent referral take priority over routine administrative procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A midwife discovers that a colleague has been engaging in a romantic relationship with a current patient and has been using the patient's clinical information for personal conversations. What is the most appropriate response?",
+"choices": [
+{"text": "Treat the relationship as a private matter because both individuals are adults.", "is_correct": false},
+{"text": "Ignore the conduct unless the patient makes a formal complaint.", "is_correct": false},
+{"text": "Take steps to protect the patient, report the concern through appropriate professional and facility channels, and maintain confidentiality.", "is_correct": true},
+{"text": "Publicly expose the colleague and patient on social media.", "is_correct": false}
+],
+"rationale": "A romantic relationship with a current patient can constitute a serious breach of professional boundaries and create a risk of exploitation. The concern should be addressed through appropriate reporting procedures while protecting the patient's privacy and welfare.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Issues in Midwifery",
+"question_text": "A midwife notices that a patient record has been altered after a serious maternal complication. The alteration removes evidence of delayed escalation, and the midwife is asked to countersign it. What should she do first?",
+"choices": [
+{"text": "Countersign the record to avoid conflict with colleagues.", "is_correct": false},
+{"text": "Preserve the integrity of the record, refuse to authenticate an inaccurate entry and promptly report the suspected alteration through appropriate channels.", "is_correct": true},
+{"text": "Destroy the altered record and create a new one.", "is_correct": false},
+{"text": "Make an undocumented verbal agreement with the colleague.", "is_correct": false}
+],
+"rationale": "Unauthorised alteration of clinical records may conceal important evidence and compromise patient safety and professional accountability. The midwife should not authenticate false information and should follow the appropriate reporting and record-preservation procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A midwife is caring for two women. One is a close relative who requests priority treatment despite being clinically stable, while the other has signs of severe maternal deterioration. Which decision best reflects professional ethics?",
+"choices": [
+{"text": "Treat the relative first because family relationships create a special obligation.", "is_correct": false},
+{"text": "Prioritise the woman with severe deterioration according to clinical urgency and ensure both women receive appropriate care.", "is_correct": true},
+{"text": "Allow the women to decide who should receive treatment first.", "is_correct": false},
+{"text": "Delay care for both women until another midwife arrives.", "is_correct": false}
+],
+"rationale": "Justice requires fair allocation of care based on clinical need rather than personal relationships. A woman with signs of severe deterioration requires priority assessment and intervention, while the other patient must still receive appropriate care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A woman who has experienced a stillbirth asks the midwife not to disclose the outcome to certain relatives until she has spoken to them herself. A relative demands immediate information. What is the most appropriate response?",
+"choices": [
+{"text": "Disclose the information because relatives are automatically entitled to it.", "is_correct": false},
+{"text": "Respect the woman's confidentiality and wishes, unless a valid legal or other recognised basis requires disclosure.", "is_correct": true},
+{"text": "Tell the relative everything because the information is no longer sensitive after delivery.", "is_correct": false},
+{"text": "Ask another patient to explain the situation to the family.", "is_correct": false}
+],
+"rationale": "A patient's health information remains confidential regardless of the pregnancy outcome. The midwife should respect the woman's wishes and disclose information only where properly authorised or legally justified.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A woman develops sudden severe breathlessness and collapses shortly after delivery. The midwife must communicate with the emergency response team while initiating immediate care. Which action should receive priority?",
+"choices": [
+{"text": "Complete the routine postnatal documentation before contacting the emergency team.", "is_correct": false},
+{"text": "Activate the emergency response, assess and support the woman immediately, and communicate essential clinical information using a structured approach.", "is_correct": true},
+{"text": "Wait for the next scheduled ward round to report the event.", "is_correct": false},
+{"text": "Ask a relative to write down the woman's symptoms before calling for help.", "is_correct": false}
+],
+"rationale": "Sudden collapse and severe breathlessness after delivery may indicate a life-threatening emergency. Immediate emergency response and clinical support take priority, with structured communication and documentation following as the situation permits.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Care Delivery System in Ghana",
+"question_text": "A district hospital receives a referral from a CHPS compound for a woman with suspected obstructed labour. The referral note contains no vital signs, assessment findings or interventions given. Which conclusion best explains the main weakness in this referral?",
+"choices": [
+{"text": "The referral is unnecessary because CHPS compounds cannot identify obstetric emergencies.", "is_correct": false},
+{"text": "The lack of essential clinical information may delay assessment and compromise continuity of care at the receiving facility.", "is_correct": true},
+{"text": "The receiving facility must repeat all care because referral notes have no clinical value.", "is_correct": false},
+{"text": "The referral is invalid because all patients must travel without written documentation.", "is_correct": false}
+],
+"rationale": "Effective referral requires clear communication of the patient's condition, assessment findings, treatment and reason for transfer. Incomplete information can delay clinical decisions and increase risks during emergency obstetric care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice for Midwives",
+"question_text": "A midwife is working in a maternity unit when a senior practitioner instructs her to perform a procedure that is outside her authorised scope of practice. The patient is stable, and an appropriately qualified practitioner is available. What should the midwife do?",
+"choices": [
+{"text": "Perform the procedure because the instruction came from a senior practitioner.", "is_correct": false},
+{"text": "Politely explain the scope-of-practice concern and arrange for the appropriately qualified practitioner to perform the procedure.", "is_correct": true},
+{"text": "Ask the patient to accept responsibility for the midwife performing the procedure.", "is_correct": false},
+{"text": "Perform the procedure but avoid documenting it.", "is_correct": false}
+],
+"rationale": "A senior practitioner's instruction does not authorise a midwife to practise beyond her regulated scope. Where an appropriately qualified practitioner is available and the patient is stable, the procedure should be undertaken by that practitioner.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
