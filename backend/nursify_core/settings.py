@@ -171,6 +171,13 @@ CORS_ALLOWED_ORIGINS = [
     "https://nursifygh-frontend.vercel.app",
 ]
 
+# FIX: This regex allows ALL Vercel preview and production deployments
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^http://localhost:\d+$",
+    r"^http://127\.0\.0\.1:\d+$",
+    r"^https://.*\.vercel\.app$",
+]
+
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
     r"^http://127\.0\.0\.1:\d+$",
