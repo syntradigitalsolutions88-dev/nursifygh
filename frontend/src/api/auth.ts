@@ -26,6 +26,7 @@ export async function getCurrentUser(): Promise<User> {
 export function logout(): void {
     tokenStore.clear()
 }
+
 export async function requestPasswordReset(email: string): Promise<void> {
     await api.post("/accounts/password/reset/request/", { email })
 }

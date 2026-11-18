@@ -49,7 +49,7 @@ if os.environ.get("RENDER") is None:
 
 # Core
 SECRET_KEY = env("DJANGO_SECRET_KEY")
-DEBUG = True  # Changed from env("DJANGO_DEBUG") to True for local HTTP testing
+DEBUG = env("DJANGO_DEBUG")  # Automatically false in production
 ALLOWED_HOSTS = ["nursifygh-api.onrender.com", "127.0.0.1", "localhost"]
 CSRF_TRUSTED_ORIGINS = [
     "https://nursifygh.vercel.app",
