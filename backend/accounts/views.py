@@ -207,24 +207,42 @@ class PasswordResetRequestView(APIView):
                 uid = urlsafe_base64_encode(force_bytes(user.pk))
                 token = default_token_generator.make_token(user)
                 
-                # FIX: Safe fallback for FRONTEND_ORIGIN
                 frontend_origin = getattr(settings, "FRONTEND_ORIGIN", "https://nursifygh.vercel.app").rstrip("/")
                 reset_url = f"{frontend_origin}/reset-password?uid={uid}&token={token}"
 
-                send_mail(
-                    subject="Reset your NursifyGH password",
-                    message=(
-                        f"Hi {user.full_name},\n\n"
-                        "We received a request to reset your NursifyGH password.\n\n"
-                        f"Click here: {reset_url}\n\n"
-                        "This link expires in 60 minutes.\n\n— The NursifyGH team"
-                    ),
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[user.email],
-                    fail_silently=False,
-                )
+                # FIX: Use Resend API instead of SMTP
+                resend_key = getattr(settings, "RESEND_API_KEY", "")
+                if resend_key:
+                    requests.post(
+                        "https://api.resend.com/emails",
+                        headers={
+                            "Authorization": f"Bearer {resend_key}",
+                            "Content-Type": "application/json"
+                        },
+                        json={
+                            "from": "NursifyGH <onboarding@resend.dev>", # You can change this later if you have a custom domain
+                            "to": [user.email],
+                            "subject": "Reset your NursifyGH password",
+                            "text": f"Hi {user.full_name},\n\nWe received a request to reset your NursifyGH password.\n\nClick here to reset: {reset_url}\n\nThis link expires in 60 minutes.\n\n— The NursifyGH team",
+                        },
+                        timeout=10, # 10 seconds max, prevents server crash
+                    )
+                else:
+                    # Fallback to SMTP just in case Resend key is missing
+                    send_mail(
+                        subject="Reset your NursifyGH password",
+                        message=(
+                            f"Hi {user.full_name},\n\n"
+                            "We received a request to reset your NursifyGH password.\n\n"
+                            f"Click here: {reset_url}\n\n"
+                            "This link expires in 60 minutes.\n\n— The NursifyGH team"
+                        ),
+                        from_email=settings.DEFAULT_FROM_EMAIL,
+                        recipient_list=[user.email],
+                        fail_silently=False,
+                    )
             except Exception as exc:
-                # FIX: Log the failure but DO NOT crash the API. The user will still see success.
+                # Log the failure but DO NOT crash the API. The user will still see success.
                 logger.exception("Password reset email failed for %s: %s", email, exc)
 
         return Response({"detail": "If an account exists for that email, a reset link has been sent."})
