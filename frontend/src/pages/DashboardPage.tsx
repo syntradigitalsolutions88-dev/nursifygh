@@ -9,6 +9,26 @@ import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import ExamCountdown from "../components/ExamCountdown"
 import WeakAreasCard from "../components/WeakAreasCard"
+// Add this import at the top
+import PWAInstallPrompt from "../components/PWAInstallPrompt"
+
+// Then, place the component at the very top of your Dashboard content:
+export default function DashboardPage() {
+    return (
+        <AppShell>
+            <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+                {/* ADD THIS LINE */}
+                <PWAInstallPrompt />
+
+                {/* The rest of your dashboard content... */}
+                <header>
+                    <h1>Welcome back!</h1>
+                </header>
+                {/* ... */}
+            </div>
+        </AppShell>
+    )
+}
 
 function getGreeting(): string {
     const hour = new Date().getHours()
@@ -110,16 +130,14 @@ export default function DashboardPage() {
                         const isTrial = !user.has_paid
 
                         return (
-                            <div className={`rounded-xl border-2 p-5 ${
-                                isUrgent
+                            <div className={`rounded-xl border-2 p-5 ${isUrgent
                                     ? "border-red-400 bg-gradient-to-r from-red-50 to-orange-50"
                                     : "border-amber-400 bg-gradient-to-r from-amber-50 to-orange-50"
-                            }`}>
+                                }`}>
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                     <div className="flex items-start gap-3">
-                                        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
-                                            isUrgent ? "bg-red-100 text-red-700" : "bg-amber-100 text-amber-700"
-                                        }`}>
+                                        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${isUrgent ? "bg-red-100 text-red-700" : "bg-amber-100 text-amber-700"
+                                            }`}>
                                             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
@@ -140,11 +158,10 @@ export default function DashboardPage() {
                                         </div>
                                     </div>
                                     <Link to="/subscribe" className="shrink-0">
-                                        <Button size="md" className={`!text-white shadow-md ${
-                                            isUrgent
+                                        <Button size="md" className={`!text-white shadow-md ${isUrgent
                                                 ? "!bg-red-600 hover:!bg-red-700"
                                                 : "!bg-amber-600 hover:!bg-amber-700"
-                                        }`}>
+                                            }`}>
                                             {isTrial ? "Subscribe — GHS 30 →" : "Renew — GHS 30 →"}
                                         </Button>
                                     </Link>
