@@ -19,6 +19,7 @@ env = environ.Env(
         "http://localhost:5173",
         "https://nursifygh.vercel.app",
         "https://nursifygh-frontend.vercel.app",
+        "https://*.vercel.app",
     ]),
     DATABASE_URL=(str, f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
     JWT_ACCESS_LIFETIME_MINUTES=(int, 60),
@@ -51,11 +52,14 @@ if os.environ.get("RENDER") is None:
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env("DJANGO_DEBUG")  # Automatically false in production
 ALLOWED_HOSTS = ["nursifygh-api.onrender.com", "127.0.0.1", "localhost"]
+
+# FIX: Added wildcard to CSRF trusted origins so Vercel preview links work
 CSRF_TRUSTED_ORIGINS = [
     "https://nursifygh.vercel.app",
     "https://nursifygh-frontend.vercel.app",
     "http://127.0.0.1:5173",
     "http://localhost:5173",
+    "https://*.vercel.app",
 ]
 
 # Applications
@@ -171,13 +175,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://nursifygh-frontend.vercel.app",
 ]
 
-# FIX: This regex allows ALL Vercel preview and production deployments
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^http://localhost:\d+$",
-    r"^http://127\.0\.0\.1:\d+$",
-    r"^https://.*\.vercel\.app$",
-]
-
+# FIX: Removed the duplicate regex block. This one covers all Vercel URLs.
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
     r"^http://127\.0\.0\.1:\d+$",
