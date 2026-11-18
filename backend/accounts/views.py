@@ -19,6 +19,8 @@ from django.http import FileResponse
 from django.utils import timezone
 from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
@@ -189,6 +191,7 @@ class PasswordChangeView(APIView):
         return Response({"detail": "Password updated successfully."})
 
 
+@method_decorator(csrf_exempt, name='dispatch')
 class PasswordResetRequestView(APIView):
     permission_classes = (permissions.AllowAny,)
 

@@ -30,7 +30,13 @@ export const api = axios.create({
 // ---- Request interceptor: attach current access token to every request ----
 api.interceptors.request.use((config: InternalAxiosRequestConfig) => {
     const token = tokenStore.access
-    if (token) {
+    const url = config.url ?? ""
+
+    // FIX: Do NOT attach tokens to password reset or auth requests.
+    // This prevents the browser from sending a CORS preflight (OPTIONS) request.
+    const isPasswordReset = url.includes("/accounts/password/reset/")
+
+    if (token && !isPasswordReset) {
         config.headers.set("Authorization", `Bearer ${token}`)
     }
     return config
@@ -62,13 +68,12 @@ api.interceptors.response.use(
         const status = error.response?.status
         const url = original?.url ?? ""
 
-        // Don't try to refresh on login/register/refresh endpoints
-        // FIX: Don't try to refresh on auth endpoints OR password reset
+        // FIX: Don't try to refresh on auth or password reset endpoints
         const isAuthEndpoint =
             url.includes("/accounts/login/") ||
             url.includes("/accounts/register/") ||
             url.includes("/accounts/token/refresh/") ||
-            url.includes("/accounts/password/reset/") // <-- ADD THIS LINE
+            url.includes("/accounts/password/reset/")
 
         if (status === 401 && !original._retry && !isAuthEndpoint) {
             original._retry = true
