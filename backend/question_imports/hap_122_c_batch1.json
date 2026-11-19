@@ -1,0 +1,697 @@
+{
+"courses": [
+{
+"course_code": "HAP-122-C",
+"course_title": "Health Assessment & Physical Examination II",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Physical Examination Techniques",
+"HEENT Assessment",
+"Musculoskeletal Assessment",
+"Genitourinary and Reproductive Assessment",
+"Mental Health Assessment",
+"Assessment of the Older Adult",
+"Pediatric Assessment",
+"Assessment of the Pregnant Woman",
+"Interpreting Assessment Findings",
+"Documentation and Reporting in Community Care"
+],
+"questions": [
+{
+"topic": "Advanced Physical Examination Techniques",
+"question_text": "Which technique is used to assess the range of movement of a joint without assistance from the examiner?",
+"choices": [
+{"text": "Passive range of motion", "is_correct": false},
+{"text": "Active range of motion", "is_correct": true},
+{"text": "Deep palpation", "is_correct": false},
+{"text": "Percussion", "is_correct": false}
+],
+"rationale": "Active range of motion occurs when the client independently moves a joint through its available movement. It helps assess joint mobility, muscle function and movement-related discomfort.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "Which instrument is commonly used to examine the external auditory canal and tympanic membrane?",
+"choices": [
+{"text": "Ophthalmoscope", "is_correct": false},
+{"text": "Otoscope", "is_correct": true},
+{"text": "Laryngoscope", "is_correct": false},
+{"text": "Tuning fork", "is_correct": false}
+],
+"rationale": "An otoscope is used to inspect the external auditory canal and tympanic membrane. It helps identify abnormalities such as impacted cerumen, inflammation, discharge and tympanic membrane perforation."
+,
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "Which cranial nerve is primarily assessed when testing the ability to detect different smells?",
+"choices": [
+{"text": "Optic nerve", "is_correct": false},
+{"text": "Olfactory nerve", "is_correct": true},
+{"text": "Trigeminal nerve", "is_correct": false},
+{"text": "Facial nerve", "is_correct": false}
+],
+"rationale": "The olfactory nerve is cranial nerve I and is responsible for the sense of smell. Its function may be assessed using familiar, non-irritating odours presented separately to each nostril.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "Which structure is assessed when a nurse asks a client to protrude the tongue and move it from side to side?",
+"choices": [
+{"text": "Cranial nerve V", "is_correct": false},
+{"text": "Cranial nerve VII", "is_correct": false},
+{"text": "Cranial nerve IX", "is_correct": false},
+{"text": "Cranial nerve XII", "is_correct": true}
+],
+"rationale": "The hypoglossal nerve, cranial nerve XII, controls tongue movement. Asking the client to protrude and move the tongue helps assess its motor function and identify deviation or weakness.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Musculoskeletal Assessment",
+"question_text": "Which term describes a reduction in muscle strength?",
+"choices": [
+{"text": "Atrophy", "is_correct": false},
+{"text": "Weakness", "is_correct": true},
+{"text": "Hypertrophy", "is_correct": false},
+{"text": "Contracture", "is_correct": false}
+],
+"rationale": "Muscle weakness refers to reduced ability to generate normal muscular force. It may result from neurological disorders, muscle disease, injury, pain or general physical deconditioning.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Genitourinary and Reproductive Assessment",
+"question_text": "Which term describes painful or difficult urination?",
+"choices": [
+{"text": "Polyuria", "is_correct": false},
+{"text": "Dysuria", "is_correct": true},
+{"text": "Nocturia", "is_correct": false},
+{"text": "Anuria", "is_correct": false}
+],
+"rationale": "Dysuria refers to pain, burning or discomfort during urination. It may occur with urinary tract infections and other genitourinary conditions and requires further assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Assessment",
+"question_text": "Which component of the mental status examination assesses a client's awareness of their own identity, location and current date?",
+"choices": [
+{"text": "Orientation", "is_correct": true},
+{"text": "Judgement", "is_correct": false},
+{"text": "Insight", "is_correct": false},
+{"text": "Affect", "is_correct": false}
+],
+"rationale": "Orientation assesses awareness of person, place and time, and may also include the situation. Impaired orientation can occur in delirium, dementia and other neurological or psychiatric conditions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment of the Older Adult",
+"question_text": "Which age-related change commonly contributes to reduced visual acuity when focusing on nearby objects?",
+"choices": [
+{"text": "Presbyopia", "is_correct": true},
+{"text": "Glaucoma", "is_correct": false},
+{"text": "Conjunctivitis", "is_correct": false},
+{"text": "Retinal detachment", "is_correct": false}
+],
+"rationale": "Presbyopia is an age-related reduction in the eye's ability to accommodate for near vision. It commonly becomes noticeable in middle age and is associated with reduced elasticity of the lens.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pediatric Assessment",
+"question_text": "Which measurement is particularly important for monitoring growth and nutritional status in infants and young children?",
+"choices": [
+{"text": "Head circumference only", "is_correct": false},
+{"text": "Weight and length or height plotted on an appropriate growth chart", "is_correct": true},
+{"text": "Adult body mass index categories", "is_correct": false},
+{"text": "Chest circumference only", "is_correct": false}
+],
+"rationale": "Weight and length or height are essential measurements for monitoring child growth. Plotting measurements on appropriate growth charts helps identify growth faltering, undernutrition and excessive weight gain.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment of the Pregnant Woman",
+"question_text": "Which measurement is commonly used during antenatal care to monitor maternal blood pressure and screen for hypertensive disorders of pregnancy?",
+"choices": [
+{"text": "Blood pressure", "is_correct": true},
+{"text": "Head circumference", "is_correct": false},
+{"text": "Visual acuity only", "is_correct": false},
+{"text": "Chest circumference", "is_correct": false}
+],
+"rationale": "Blood pressure measurement is a routine component of antenatal assessment because hypertension may indicate a hypertensive disorder of pregnancy. It should be interpreted alongside symptoms, urine findings and other clinical assessments.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Interpreting Assessment Findings",
+"question_text": "Which finding is generally considered abnormal in an adult and requires further cardiovascular assessment?",
+"choices": [
+{"text": "Regular pulse of 76 beats per minute", "is_correct": false},
+{"text": "Respiratory rate of 16 breaths per minute", "is_correct": false},
+{"text": "Newly detected irregular pulse rhythm", "is_correct": true},
+{"text": "Warm skin with normal colour", "is_correct": false}
+],
+"rationale": "A newly detected irregular pulse may indicate an abnormal cardiac rhythm and requires further assessment. The nurse should assess the apical pulse, associated symptoms and other vital signs and report significant abnormalities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Documentation and Reporting in Community Care",
+"question_text": "Which principle is most important when documenting findings during a community health assessment?",
+"choices": [
+{"text": "Recording personal opinions about the client's behaviour", "is_correct": false},
+{"text": "Documenting accurate, objective and timely information", "is_correct": true},
+{"text": "Recording only abnormal findings and omitting normal observations", "is_correct": false},
+{"text": "Changing findings to make the client's condition appear less serious", "is_correct": false}
+],
+"rationale": "Clinical documentation should be accurate, objective, complete and timely. Reliable records support continuity of care, clinical decision-making, referral and accountability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Physical Examination Techniques",
+"question_text": "Which assessment technique involves comparing the length of both lower limbs to identify possible discrepancy?",
+"choices": [
+{"text": "Comparative measurement", "is_correct": true},
+{"text": "Auscultation", "is_correct": false},
+{"text": "Transillumination", "is_correct": false},
+{"text": "Percussion", "is_correct": false}
+],
+"rationale": "Comparative measurement involves measuring corresponding body structures on both sides to identify asymmetry or differences. Limb-length assessment may help identify musculoskeletal abnormalities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Assessment",
+"question_text": "In a mental status examination, what does affect primarily describe?",
+"choices": [
+{"text": "The client's observable emotional expression", "is_correct": true},
+{"text": "The client's ability to calculate numbers", "is_correct": false},
+{"text": "The client's long-term memory alone", "is_correct": false},
+{"text": "The client's awareness of personal identity", "is_correct": false}
+],
+"rationale": "Affect refers to the observable expression of emotion during an assessment. It may be described in terms of range, intensity, stability and appropriateness to the situation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pediatric Assessment",
+"question_text": "Which clinical sign is commonly assessed to identify respiratory distress in an infant?",
+"choices": [
+{"text": "Chest indrawing", "is_correct": true},
+{"text": "Increased hair growth", "is_correct": false},
+{"text": "Normal sucking reflex", "is_correct": false},
+{"text": "Symmetrical limb movement", "is_correct": false}
+],
+"rationale": "Chest indrawing indicates increased work of breathing and is an important sign of respiratory distress in infants and young children. It requires prompt assessment and management according to the child's overall clinical condition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment of the Older Adult",
+"question_text": "Which standardised tool is commonly used to assess functional independence in activities of daily living?",
+"choices": [
+{"text": "Barthel Index", "is_correct": true},
+{"text": "Glasgow Coma Scale", "is_correct": false},
+{"text": "Apgar Score", "is_correct": false},
+{"text": "Visual analogue scale", "is_correct": false}
+],
+"rationale": "The Barthel Index assesses a person's level of independence in activities such as feeding, bathing, dressing, toileting and mobility. It is useful when evaluating functional ability and care needs in older adults.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "During a home visit, a community health nurse examines an adult who complains of blurred vision. Which test is most appropriate for an initial assessment of distance visual acuity?",
+"choices": [
+{"text": "Snellen chart", "is_correct": true},
+{"text": "Rinne test", "is_correct": false},
+{"text": "Weber test", "is_correct": false},
+{"text": "Romberg test", "is_correct": false}
+],
+"rationale": "The Snellen chart is commonly used to assess distance visual acuity. Testing each eye separately helps identify reduced vision that may require further ophthalmic assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "A client reports ear pain and reduced hearing. On otoscopic examination, the nurse observes impacted cerumen obstructing the external auditory canal. What is the most appropriate action?",
+"choices": [
+{"text": "Insert a sharp instrument to remove the wax immediately", "is_correct": false},
+{"text": "Document the finding and arrange appropriate assessment or management by a trained healthcare professional", "is_correct": true},
+{"text": "Assume the client has permanent sensorineural hearing loss", "is_correct": false},
+{"text": "Apply an unprescribed chemical preparation into the ear", "is_correct": false}
+],
+"rationale": "Impacted cerumen can cause conductive hearing impairment and discomfort. Removal should be undertaken only by appropriately trained personnel using a safe method after considering contraindications such as suspected tympanic membrane perforation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "A child at a CHPS compound presents with sore throat, fever and enlarged tender anterior cervical lymph nodes. Which additional assessment is most appropriate?",
+"choices": [
+{"text": "Inspect the throat and tonsils for erythema, swelling and exudates", "is_correct": true},
+{"text": "Measure the child's lower limb length", "is_correct": false},
+{"text": "Assess the child's abdominal reflexes only", "is_correct": false},
+{"text": "Perform a visual field test without examining the throat", "is_correct": false}
+],
+"rationale": "Inspection of the oropharynx helps identify tonsillar enlargement, erythema and exudates that may accompany pharyngitis or tonsillitis. Clinical findings should guide further evaluation and appropriate treatment or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Musculoskeletal Assessment",
+"question_text": "A client complains of knee pain when walking. Which examination would best assess the functional mobility of the affected joint?",
+"choices": [
+{"text": "Assess active and passive range of motion and compare both knees", "is_correct": true},
+{"text": "Measure the client's pupil response to light", "is_correct": false},
+{"text": "Auscultate the client's bowel sounds", "is_correct": false},
+{"text": "Assess the client's ability to identify different smells", "is_correct": false}
+],
+"rationale": "Active and passive range-of-motion assessment helps identify restricted movement, pain and joint dysfunction. Comparing both knees provides a useful reference for identifying asymmetry.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Musculoskeletal Assessment",
+"question_text": "During a community screening, an older adult reports frequent falls and difficulty maintaining balance. Which assessment should the nurse perform?",
+"choices": [
+{"text": "Gait and balance assessment", "is_correct": true},
+{"text": "Abdominal percussion only", "is_correct": false},
+{"text": "Visual inspection of the scalp only", "is_correct": false},
+{"text": "Assessment of bowel sounds", "is_correct": false}
+],
+"rationale": "Gait and balance assessment helps identify mobility problems and fall risk. The nurse should also review vision, footwear, medications, environmental hazards and relevant neurological or musculoskeletal conditions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genitourinary and Reproductive Assessment",
+"question_text": "A woman attending a CHPS compound reports increased urinary frequency, urgency and burning during urination. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Urinary tract infection", "is_correct": true},
+{"text": "Chronic obstructive pulmonary disease", "is_correct": false},
+{"text": "Otitis media", "is_correct": false},
+{"text": "Osteoarthritis", "is_correct": false}
+],
+"rationale": "Dysuria, frequency and urgency are common symptoms of a lower urinary tract infection. The nurse should assess for fever, flank pain, pregnancy and other complications and arrange appropriate testing and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genitourinary and Reproductive Assessment",
+"question_text": "During a reproductive health consultation, a woman reports abnormal vaginal discharge with lower abdominal pain and fever. What should the nurse do?",
+"choices": [
+{"text": "Assume the discharge is physiological and provide no further assessment", "is_correct": false},
+{"text": "Assess the symptoms and arrange prompt clinical evaluation for possible pelvic inflammatory disease or another genital tract infection", "is_correct": true},
+{"text": "Recommend vaginal douching with concentrated antiseptic", "is_correct": false},
+{"text": "Advise the woman to use leftover antibiotics without assessment", "is_correct": false}
+],
+"rationale": "Abnormal vaginal discharge accompanied by lower abdominal pain and fever may indicate pelvic inflammatory disease or another significant infection. Prompt assessment and appropriate treatment are important to reduce complications such as infertility and chronic pelvic pain.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Assessment",
+"question_text": "During a home visit, an adult appears persistently sad, has lost interest in usual activities and reports poor sleep for several weeks. Which assessment is most appropriate?",
+"choices": [
+{"text": "Explore depressive symptoms, duration, functional impact and possible risk of self-harm", "is_correct": true},
+{"text": "Assume the client is simply unwilling to work", "is_correct": false},
+{"text": "Avoid discussing emotional wellbeing", "is_correct": false},
+{"text": "Conclude that the client has dementia without further assessment", "is_correct": false}
+],
+"rationale": "Persistent low mood, loss of interest and sleep disturbance may indicate depression and require further assessment. The nurse should explore functioning, relevant risk factors and suicidal thoughts in a sensitive and confidential manner.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Assessment",
+"question_text": "A client attending a district hospital reports hearing voices when nobody is present. Which component of the mental status examination is most directly relevant?",
+"choices": [
+{"text": "Assessment of perception", "is_correct": true},
+{"text": "Assessment of body mass index", "is_correct": false},
+{"text": "Assessment of joint range of motion", "is_correct": false},
+{"text": "Assessment of visual acuity", "is_correct": false}
+],
+"rationale": "Hearing voices without an external source is an auditory hallucination, which is an abnormal perceptual experience. The nurse should assess the content, frequency, associated distress and any commands to harm self or others.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of the Older Adult",
+"question_text": "An older adult living alone reports difficulty remembering recent events and managing daily medication. Which assessment is most appropriate?",
+"choices": [
+{"text": "Assess cognitive function and ability to perform activities of daily living", "is_correct": true},
+{"text": "Assess only the client's height", "is_correct": false},
+{"text": "Assume that memory loss is always a normal part of ageing", "is_correct": false},
+{"text": "Discontinue the client's medication without review", "is_correct": false}
+],
+"rationale": "Memory difficulties affecting medication management may indicate cognitive impairment and can compromise safety. Cognitive screening and functional assessment help identify support needs and possible reversible causes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of the Older Adult",
+"question_text": "An older adult becomes dizzy when standing from a sitting position. Which assessment would best help identify a possible cause?",
+"choices": [
+{"text": "Measure blood pressure and pulse in lying or sitting and standing positions", "is_correct": true},
+{"text": "Measure abdominal circumference only", "is_correct": false},
+{"text": "Assess colour vision only", "is_correct": false},
+{"text": "Measure the client's head circumference", "is_correct": false}
+],
+"rationale": "Postural or orthostatic hypotension may cause dizziness when a person stands up. Comparing blood pressure and pulse in different positions helps identify postural changes that may increase the risk of falls.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pediatric Assessment",
+"question_text": "A mother brings her 8-month-old infant to a CHPS compound because the child has diarrhoea. The infant is restless, has sunken eyes and drinks eagerly when offered fluids. How should the nurse interpret these findings?",
+"choices": [
+{"text": "They suggest some dehydration", "is_correct": true},
+{"text": "They indicate severe dehydration in every case", "is_correct": false},
+{"text": "They indicate normal hydration", "is_correct": false},
+{"text": "They confirm severe malnutrition", "is_correct": false}
+],
+"rationale": "Restlessness, sunken eyes and eager drinking are recognised signs used in assessing some dehydration in children. The nurse should classify the child's hydration status using the full clinical assessment and follow the appropriate diarrhoea management protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pediatric Assessment",
+"question_text": "A nurse is assessing a 2-year-old child during a growth-monitoring session. Which approach is most appropriate when measuring the child's length or height?",
+"choices": [
+{"text": "Measure standing height with the child upright and correctly positioned", "is_correct": true},
+{"text": "Estimate the child's height from the parent's height", "is_correct": false},
+{"text": "Measure the child while the knees are deliberately bent", "is_correct": false},
+{"text": "Use an adult weighing scale to estimate height", "is_correct": false}
+],
+"rationale": "Children aged 2 years and older are generally measured standing using a suitable height-measuring device, with correct positioning. Accurate measurements are important for plotting growth and identifying nutritional problems.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pediatric Assessment",
+"question_text": "A 4-month-old infant is brought to a CHPS compound with poor feeding, fever and lethargy. What should the nurse do first?",
+"choices": [
+{"text": "Assess for danger signs and arrange urgent clinical evaluation", "is_correct": true},
+{"text": "Advise the caregiver to wait one week", "is_correct": false},
+{"text": "Give solid foods to improve energy intake", "is_correct": false},
+{"text": "Ignore the fever because it is common in infants", "is_correct": false}
+],
+"rationale": "Poor feeding, fever and lethargy in a young infant may indicate serious illness. Immediate assessment and urgent referral are necessary because infants can deteriorate rapidly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of the Pregnant Woman",
+"question_text": "During an antenatal visit, a pregnant woman at 32 weeks' gestation reports that fetal movements have become noticeably reduced. What is the most appropriate action?",
+"choices": [
+{"text": "Reassure her that reduced fetal movement is always normal near term", "is_correct": false},
+{"text": "Arrange prompt obstetric assessment to evaluate fetal wellbeing", "is_correct": true},
+{"text": "Advise her to wait until the next scheduled antenatal appointment", "is_correct": false},
+{"text": "Recommend vigorous exercise to stimulate fetal movement", "is_correct": false}
+],
+"rationale": "A noticeable reduction in fetal movement may indicate fetal compromise and requires prompt assessment. The nurse should arrange appropriate obstetric evaluation rather than delay until the next routine visit.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of the Pregnant Woman",
+"question_text": "A pregnant woman at 28 weeks' gestation attends antenatal care with swelling of the face and hands, severe headache and visual disturbances. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Pre-eclampsia", "is_correct": true},
+{"text": "Uncomplicated morning sickness", "is_correct": false},
+{"text": "Normal physiological changes only", "is_correct": false},
+{"text": "Iron deficiency without complications", "is_correct": false}
+],
+"rationale": "Severe headache, visual disturbances and facial or hand swelling are concerning symptoms in pregnancy and may indicate pre-eclampsia. Immediate blood pressure assessment and urgent obstetric evaluation are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of the Pregnant Woman",
+"question_text": "During antenatal assessment, a nurse measures the symphysis-fundal height of a pregnant woman. What is the main purpose of this measurement?",
+"choices": [
+{"text": "To estimate uterine growth and assess whether fetal growth is appropriate for gestational age", "is_correct": true},
+{"text": "To determine the mother's visual acuity", "is_correct": false},
+{"text": "To measure the mother's lung capacity", "is_correct": false},
+{"text": "To establish the mother's blood group", "is_correct": false}
+],
+"rationale": "Symphysis-fundal height is used during pregnancy to monitor uterine growth and identify possible discrepancies in fetal growth. Measurements should be interpreted in relation to gestational age and clinical findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Interpreting Assessment Findings",
+"question_text": "A client presents with painful swelling of one leg, warmth and redness along the calf. Which abnormality should the nurse suspect?",
+"choices": [
+{"text": "Deep vein thrombosis", "is_correct": true},
+{"text": "Bilateral peripheral neuropathy", "is_correct": false},
+{"text": "Uncomplicated osteoarthritis", "is_correct": false},
+{"text": "Chronic allergic rhinitis", "is_correct": false}
+],
+"rationale": "Unilateral leg swelling, warmth and pain may indicate deep vein thrombosis. The client requires prompt clinical evaluation because a thrombus may dislodge and cause a potentially fatal pulmonary embolism.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Documentation and Reporting in Community Care",
+"question_text": "A community health nurse identifies a client with suspected pulmonary tuberculosis during a home visit. Which documentation is most appropriate?",
+"choices": [
+{"text": "Record the reported symptoms, observed findings, referral arrangements and relevant follow-up actions", "is_correct": true},
+{"text": "Record that the client is definitely infectious without diagnostic confirmation", "is_correct": false},
+{"text": "Avoid documenting the findings to protect the client's privacy", "is_correct": false},
+{"text": "Record only the client's name and omit the clinical findings", "is_correct": false}
+],
+"rationale": "Accurate documentation should distinguish reported symptoms from observed findings and suspected conditions from confirmed diagnoses. Recording referral and follow-up actions supports continuity of care while protecting confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "A client reports sudden severe eye pain, blurred vision, headache and nausea. The affected eye appears red. What is the priority nursing action?",
+"choices": [
+{"text": "Arrange immediate ophthalmic or emergency assessment", "is_correct": true},
+{"text": "Advise the client to use over-the-counter eye drops for several days", "is_correct": false},
+{"text": "Cover both eyes and review the client after one month", "is_correct": false},
+{"text": "Recommend reading in brighter light", "is_correct": false}
+],
+"rationale": "Sudden severe eye pain, redness, blurred vision and nausea may indicate acute angle-closure glaucoma or another sight-threatening condition. Immediate specialist assessment is essential to prevent permanent visual loss.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Musculoskeletal Assessment",
+"question_text": "A client falls from a height and presents with severe thigh pain, deformity and inability to bear weight. What should the nurse do first?",
+"choices": [
+{"text": "Immobilise the affected limb in the position found and arrange urgent referral", "is_correct": true},
+{"text": "Attempt to straighten the deformity forcefully", "is_correct": false},
+{"text": "Encourage the client to walk to assess the injury", "is_correct": false},
+{"text": "Massage the affected thigh vigorously", "is_correct": false}
+],
+"rationale": "Severe pain, deformity and inability to bear weight suggest a possible fracture. The limb should be immobilised without unnecessary movement, distal circulation and sensation assessed, and urgent referral arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Genitourinary and Reproductive Assessment",
+"question_text": "A man attending a community clinic reports difficulty initiating urination, a weak urinary stream and frequent urination at night. Which condition should the nurse consider?",
+"choices": [
+{"text": "Benign prostatic hyperplasia", "is_correct": true},
+{"text": "Acute otitis media", "is_correct": false},
+{"text": "Bronchial asthma", "is_correct": false},
+{"text": "Conjunctivitis", "is_correct": false}
+],
+"rationale": "Difficulty initiating urination, weak stream and nocturia are common lower urinary tract symptoms associated with benign prostatic hyperplasia. Further assessment is needed to exclude other causes, including urinary infection and prostate malignancy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Assessment",
+"question_text": "A client states, 'I feel hopeless and sometimes think my family would be better off without me.' What should the nurse do first?",
+"choices": [
+{"text": "Ask directly and sensitively about suicidal thoughts, plans and immediate safety", "is_correct": true},
+{"text": "Change the subject to avoid upsetting the client", "is_correct": false},
+{"text": "Tell the client that such thoughts are unacceptable", "is_correct": false},
+{"text": "Leave the client alone until the next appointment", "is_correct": false}
+],
+"rationale": "Expressions of hopelessness may indicate suicide risk and require direct assessment of suicidal thoughts, intent, plans and access to means. Immediate safety measures and urgent mental health support should be arranged according to the level of risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of the Older Adult",
+"question_text": "An older adult is admitted with confusion that developed over two days. The client has fluctuating attention and is unable to maintain a conversation. Which condition should the nurse consider first?",
+"choices": [
+{"text": "Delirium", "is_correct": true},
+{"text": "Normal ageing", "is_correct": false},
+{"text": "Stable personality variation", "is_correct": false},
+{"text": "Presbyopia", "is_correct": false}
+],
+"rationale": "Acute onset of confusion with fluctuating attention is characteristic of delirium rather than normal ageing. The nurse should urgently assess for underlying causes such as infection, medication effects, dehydration and metabolic disturbances.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pediatric Assessment",
+"question_text": "A 3-year-old child is brought to a district hospital with cough and difficulty breathing. The nurse observes lower chest wall indrawing and inability to drink. What is the priority action?",
+"choices": [
+{"text": "Recognise danger signs and arrange immediate emergency assessment and referral", "is_correct": true},
+{"text": "Advise the caregiver to give cough syrup and return after one week", "is_correct": false},
+{"text": "Continue routine growth monitoring before assessing breathing", "is_correct": false},
+{"text": "Ask the child to run to determine exercise tolerance", "is_correct": false}
+],
+"rationale": "Lower chest indrawing and inability to drink are danger signs in a child with respiratory illness. Immediate assessment and appropriate emergency management are necessary to prevent respiratory failure and other complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of the Pregnant Woman",
+"question_text": "A pregnant woman at 34 weeks' gestation presents with vaginal bleeding and abdominal pain. What should the community health nurse do first?",
+"choices": [
+{"text": "Arrange immediate emergency obstetric referral and assess maternal condition", "is_correct": true},
+{"text": "Perform repeated digital vaginal examinations at the CHPS compound", "is_correct": false},
+{"text": "Advise the woman to return the following week", "is_correct": false},
+{"text": "Encourage the woman to walk to reduce abdominal discomfort", "is_correct": false}
+],
+"rationale": "Vaginal bleeding with abdominal pain in late pregnancy may indicate serious complications such as placental abruption or placenta praevia. Immediate referral is required, and digital vaginal examination should be avoided until placenta praevia has been excluded by appropriate assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Physical Examination Techniques",
+"question_text": "A client complains of dizziness when standing. The nurse records a blood pressure of 126/78 mmHg while supine and 98/64 mmHg after standing. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The client has a significant postural blood pressure drop consistent with orthostatic hypotension", "is_correct": true},
+{"text": "The client has severe hypertension", "is_correct": false},
+{"text": "The client has a normal response that requires no consideration", "is_correct": false},
+{"text": "The client has isolated tachycardia", "is_correct": false}
+],
+"rationale": "The systolic blood pressure has fallen by 28 mmHg and the diastolic pressure by 14 mmHg after standing, exceeding the usual threshold for orthostatic hypotension. The nurse should assess symptoms, medication use, hydration and fall risk and arrange appropriate clinical review.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "HEENT Assessment",
+"question_text": "A child presents with fever, ear pain and purulent discharge from one ear. The caregiver reports that the child had a recent upper respiratory tract infection. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The child may have acute otitis media with tympanic membrane perforation", "is_correct": true},
+{"text": "The child has uncomplicated presbyopia", "is_correct": false},
+{"text": "The findings confirm chronic glaucoma", "is_correct": false},
+{"text": "The discharge is a normal finding in children", "is_correct": false}
+],
+"rationale": "Ear pain and purulent otorrhoea following a respiratory infection may indicate acute otitis media with tympanic membrane perforation. The child requires clinical assessment to determine the diagnosis and appropriate treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Musculoskeletal Assessment",
+"question_text": "An older adult reports progressive back pain, loss of height and a recent fracture after a minor fall. Which underlying condition should the nurse suspect?",
+"choices": [
+{"text": "Osteoporosis", "is_correct": true},
+{"text": "Acute appendicitis", "is_correct": false},
+{"text": "Rheumatic fever", "is_correct": false},
+{"text": "Carpal tunnel syndrome", "is_correct": false}
+],
+"rationale": "Osteoporosis reduces bone strength and increases the risk of fragility fractures after minor trauma. Progressive vertebral compression fractures may cause back pain and loss of height, requiring further assessment and management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Genitourinary and Reproductive Assessment",
+"question_text": "A woman of reproductive age presents with lower abdominal pain, vaginal bleeding and dizziness. She reports that her menstrual period is overdue. Which condition must the nurse consider urgently?",
+"choices": [
+{"text": "Ectopic pregnancy", "is_correct": true},
+{"text": "Uncomplicated dysmenorrhoea", "is_correct": false},
+{"text": "Simple vulvovaginal candidiasis", "is_correct": false},
+{"text": "Chronic urinary frequency", "is_correct": false}
+],
+"rationale": "A missed period with lower abdominal pain, vaginal bleeding and dizziness raises concern for ectopic pregnancy, which may rupture and cause life-threatening internal bleeding. Immediate emergency referral is required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Assessment",
+"question_text": "During a home visit, a client with a known mental health condition is restless, speaks rapidly, reports sleeping only two hours each night and expresses unrealistic beliefs about having exceptional powers. Which condition is most consistent with these findings?",
+"choices": [
+{"text": "A manic episode", "is_correct": true},
+{"text": "Uncomplicated grief", "is_correct": false},
+{"text": "Simple specific phobia", "is_correct": false},
+{"text": "Isolated short-term memory impairment", "is_correct": false}
+],
+"rationale": "Elevated or irritable mood, reduced need for sleep, pressured speech and grandiose beliefs are characteristic features of mania. The nurse should assess safety, risk-taking behaviour and possible psychosis and arrange urgent mental health evaluation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Assessment of the Older Adult",
+"question_text": "An older adult who was previously independent develops sudden confusion, fever and reduced oral intake. Which approach is most appropriate?",
+"choices": [
+{"text": "Investigate possible acute illness, particularly infection and dehydration, rather than attributing the change to ageing", "is_correct": true},
+{"text": "Assume the confusion is an unavoidable consequence of old age", "is_correct": false},
+{"text": "Discontinue all prescribed medicines without clinical review", "is_correct": false},
+{"text": "Avoid taking vital signs because the client is elderly", "is_correct": false}
+],
+"rationale": "Sudden confusion in an older adult is not a normal feature of ageing and may indicate delirium caused by infection, dehydration or other acute conditions. Prompt assessment and treatment of the underlying cause are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pediatric Assessment",
+"question_text": "A 10-month-old infant has severe wasting, bilateral pitting oedema of both feet and poor appetite. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The infant has signs consistent with severe acute malnutrition and requires urgent assessment", "is_correct": true},
+{"text": "The infant has normal nutritional status because oedema increases body weight", "is_correct": false},
+{"text": "The findings indicate uncomplicated overweight", "is_correct": false},
+{"text": "The infant only requires routine immunisation without further assessment", "is_correct": false}
+],
+"rationale": "Severe wasting and bilateral pitting oedema are important signs of severe acute malnutrition in children. The infant requires prompt assessment for medical complications and management according to national nutrition protocols.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Assessment of the Pregnant Woman",
+"question_text": "A pregnant woman at 30 weeks' gestation presents with blood pressure of 166/112 mmHg, severe headache and upper abdominal pain. Which interpretation and action are most appropriate?",
+"choices": [
+{"text": "Suspect severe pre-eclampsia and arrange immediate emergency obstetric management", "is_correct": true},
+{"text": "Diagnose uncomplicated pregnancy-related oedema and schedule routine follow-up", "is_correct": false},
+{"text": "Advise the woman to reduce physical activity and return in one month", "is_correct": false},
+{"text": "Assume the symptoms are caused by normal fetal growth", "is_correct": false}
+],
+"rationale": "Severe hypertension with headache and upper abdominal pain in pregnancy suggests severe pre-eclampsia and possible maternal or fetal complications. Immediate obstetric referral and emergency management are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Interpreting Assessment Findings",
+"question_text": "A client with fever, night sweats, weight loss and a persistent cough has a positive screening result for tuberculosis. Which conclusion is most appropriate?",
+"choices": [
+{"text": "The client requires further diagnostic evaluation and appropriate TB programme management", "is_correct": true},
+{"text": "The screening result alone establishes every detail of the diagnosis and disease severity", "is_correct": false},
+{"text": "The client should begin taking another person's TB medication", "is_correct": false},
+{"text": "The symptoms should be ignored because tuberculosis is uncommon in Ghana", "is_correct": false}
+],
+"rationale": "Symptoms and a positive screening result raise suspicion of tuberculosis but must be followed by appropriate diagnostic testing under the national TB programme. The nurse should support prompt evaluation, infection prevention and referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Documentation and Reporting in Community Care",
+"question_text": "A community health nurse identifies a client with suspected cholera who has profuse watery diarrhoea, vomiting and signs of severe dehydration. Which action best reflects appropriate clinical prioritisation and reporting?",
+"choices": [
+{"text": "Initiate urgent rehydration according to protocol, arrange emergency referral and promptly notify the appropriate public health authorities", "is_correct": true},
+{"text": "Wait for laboratory confirmation before providing any rehydration", "is_correct": false},
+{"text": "Record the case in the routine monthly report only", "is_correct": false},
+{"text": "Advise the client to remain at home without further assessment", "is_correct": false}
+],
+"rationale": "Suspected cholera with severe dehydration is a medical emergency requiring immediate rehydration and urgent referral. Prompt notification through established public health channels supports outbreak surveillance and control while treatment proceeds.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Assessment",
+"question_text": "A client with depression tells the community health nurse that they have selected a method to end their life and intend to act that evening. What is the nurse's highest priority?",
+"choices": [
+{"text": "Ensure immediate safety, do not leave the client alone and activate urgent mental health or emergency referral", "is_correct": true},
+{"text": "Schedule a routine appointment for the following month", "is_correct": false},
+{"text": "Tell the client to keep the thoughts private", "is_correct": false},
+{"text": "Advise the client to manage the situation through prayer alone", "is_correct": false}
+],
+"rationale": "A specific suicide plan with stated intent and an immediate timeframe indicates high and imminent risk. The nurse must prioritise safety, maintain appropriate supervision and arrange urgent emergency mental health intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Assessment of the Older Adult",
+"question_text": "An older adult taking several prescribed medicines experiences recurrent falls, dizziness and daytime drowsiness. Which assessment should receive priority?",
+"choices": [
+{"text": "Review medication use and assess for adverse effects, postural hypotension and other fall risks", "is_correct": true},
+{"text": "Assume the falls are unavoidable because of age", "is_correct": false},
+{"text": "Advise the client to stop all medicines immediately without consultation", "is_correct": false},
+{"text": "Assess only the client's dietary preferences", "is_correct": false}
+],
+"rationale": "Polypharmacy and adverse medication effects can contribute to dizziness, sedation and falls in older adults. A structured medication review, postural blood pressure assessment and evaluation of environmental risks can identify preventable causes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Interpreting Assessment Findings",
+"question_text": "A client living with HIV presents with persistent fever, chronic cough, weight loss and night sweats. Which clinical concern should guide the nurse's next action?",
+"choices": [
+{"text": "Possible active tuberculosis requiring prompt evaluation", "is_correct": true},
+{"text": "Normal findings associated with all people living with HIV", "is_correct": false},
+{"text": "Uncomplicated seasonal allergy", "is_correct": false},
+{"text": "Isolated musculoskeletal strain", "is_correct": false}
+],
+"rationale": "People living with HIV have an increased risk of developing active tuberculosis, and the reported symptoms are concerning for pulmonary TB. The nurse should arrange prompt TB evaluation, apply appropriate infection-prevention measures and maintain confidentiality.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Documentation and Reporting in Community Care",
+"question_text": "A community health nurse identifies a pregnant adolescent who reports sexual abuse and appears frightened of the alleged perpetrator. Which action is most appropriate?",
+"choices": [
+{"text": "Prioritise immediate safety, document objective findings and follow established child protection and referral procedures", "is_correct": true},
+{"text": "Confront the alleged perpetrator before ensuring the adolescent's safety", "is_correct": false},
+{"text": "Promise absolute secrecy and avoid reporting the concern", "is_correct": false},
+{"text": "Repeatedly question the adolescent in detail in front of family members", "is_correct": false}
+],
+"rationale": "The adolescent's immediate safety and access to appropriate clinical and psychosocial care must be prioritised. The nurse should document factual information, preserve confidentiality within safeguarding requirements and activate established child protection and referral pathways.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
