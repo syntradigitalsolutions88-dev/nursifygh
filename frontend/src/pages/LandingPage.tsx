@@ -4,6 +4,7 @@ import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import Logo from "../components/ui/Logo"
 import ChatWidget from "../components/support/ChatWidget"
+import PwaInstallPrompt from "../components/PwaInstallPrompt"
 
 const features = [
     {
@@ -312,6 +313,9 @@ export default function LandingPage() {
             </footer>
 
             <ChatWidget />
+
+            {/* PWA Install Prompt - Floating for Landing Page */}
+            <PwaInstallPrompt variant="floating" />
         </div>
     )
 }
