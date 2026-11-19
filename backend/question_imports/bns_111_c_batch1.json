@@ -1,0 +1,696 @@
+{
+"courses": [
+{
+"course_code": "BNS-111-C",
+"course_title": "Basic Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Bed Making in the Home",
+"Patient Positioning and Mobility",
+"Vital Signs Measurement",
+"Hygiene and Comfort Care",
+"Nutrition and Feeding",
+"Elimination Needs",
+"Admission and Discharge Procedures in Community Care",
+"Infection Prevention and Control at Home",
+"Wound Care",
+"Patient Safety"
+],
+"questions": [
+{
+"topic": "Bed Making in the Home",
+"question_text": "What is the primary purpose of bed making in nursing care?",
+"choices": [
+{"text": "To promote patient comfort, cleanliness and safety", "is_correct": true},
+{"text": "To prevent patients from moving independently", "is_correct": false},
+{"text": "To reduce the need for regular patient assessment", "is_correct": false},
+{"text": "To make the room appear attractive only", "is_correct": false}
+],
+"rationale": "Bed making promotes comfort, cleanliness and a safe environment for the patient. It also provides an opportunity to inspect the mattress and linen for moisture, contamination and other hazards.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bed Making in the Home",
+"question_text": "Which type of bed is prepared for a patient who is able to get out of bed independently?",
+"choices": [
+{"text": "Closed bed", "is_correct": false},
+{"text": "Open bed", "is_correct": true},
+{"text": "Occupied bed", "is_correct": false},
+{"text": "Post-operative bed", "is_correct": false}
+],
+"rationale": "An open bed is prepared to receive a patient who is ambulant or able to get into bed independently. The top linen is arranged to allow easy access.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "Which position is commonly used to facilitate examination of the anterior surface of the body?",
+"choices": [
+{"text": "Prone position", "is_correct": false},
+{"text": "Supine position", "is_correct": true},
+{"text": "Lithotomy position", "is_correct": false},
+{"text": "Sims' position", "is_correct": false}
+],
+"rationale": "The supine position involves lying flat on the back with the face directed upwards. It allows access to the anterior surface of the body for many physical examinations and procedures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "Which position is commonly used to facilitate rectal examination and some nursing procedures involving the perineal area?",
+"choices": [
+{"text": "Sims' position", "is_correct": true},
+{"text": "Supine position", "is_correct": false},
+{"text": "High Fowler's position", "is_correct": false},
+{"text": "Trendelenburg position", "is_correct": false}
+],
+"rationale": "Sims' position is a lateral position in which the patient lies partly on the side, usually with the upper leg flexed. It provides access to the rectal area for selected examinations and procedures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "Which of the following is generally considered a normal resting pulse rate for a healthy adult?",
+"choices": [
+{"text": "40–50 beats per minute", "is_correct": false},
+{"text": "60–100 beats per minute", "is_correct": true},
+{"text": "110–130 beats per minute", "is_correct": false},
+{"text": "140–160 beats per minute", "is_correct": false}
+],
+"rationale": "The normal resting heart rate for most healthy adults is approximately 60–100 beats per minute. Interpretation should also consider the patient's symptoms, physical condition and medications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "Which instrument is used to measure body temperature?",
+"choices": [
+{"text": "Sphygmomanometer", "is_correct": false},
+{"text": "Thermometer", "is_correct": true},
+{"text": "Stethoscope", "is_correct": false},
+{"text": "Pulse oximeter", "is_correct": false}
+],
+"rationale": "A thermometer measures body temperature. Different types include digital, tympanic and other clinical thermometers, each used according to the manufacturer's instructions and appropriate infection prevention measures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "What is the term for an abnormally rapid respiratory rate?",
+"choices": [
+{"text": "Bradypnoea", "is_correct": false},
+{"text": "Apnoea", "is_correct": false},
+{"text": "Tachypnoea", "is_correct": true},
+{"text": "Orthopnoea", "is_correct": false}
+],
+"rationale": "Tachypnoea refers to an abnormally increased respiratory rate. It may occur in conditions such as fever, pneumonia, pain, anxiety and respiratory distress.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "Which nursing procedure involves cleaning the entire body of a patient who cannot bathe independently?",
+"choices": [
+{"text": "Oral hygiene", "is_correct": false},
+{"text": "Bed bath", "is_correct": true},
+{"text": "Foot care", "is_correct": false},
+{"text": "Perineal care", "is_correct": false}
+],
+"rationale": "A bed bath is the process of bathing a patient who is unable to use a bathroom or bathe independently. It promotes cleanliness, comfort, skin integrity and observation of the patient's physical condition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "Which practice is most important before and after providing direct patient care?",
+"choices": [
+{"text": "Changing the patient's clothes", "is_correct": false},
+{"text": "Hand hygiene", "is_correct": true},
+{"text": "Opening all windows", "is_correct": false},
+{"text": "Measuring the patient's height", "is_correct": false}
+],
+"rationale": "Hand hygiene is a fundamental infection prevention measure that reduces the transmission of microorganisms. It should be performed at the appropriate moments before and after patient contact and after exposure to potentially infectious materials.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "What is the primary purpose of a nasogastric tube?",
+"choices": [
+{"text": "To provide access to the stomach for enteral feeding or medication administration when indicated", "is_correct": true},
+{"text": "To measure blood pressure continuously", "is_correct": false},
+{"text": "To drain urine from the bladder", "is_correct": false},
+{"text": "To administer oxygen directly into the lungs", "is_correct": false}
+],
+"rationale": "A nasogastric tube passes through the nose into the stomach and may be used for enteral feeding, medication administration or gastric decompression. Its use requires appropriate assessment and confirmation of tube position before feeding or medication administration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "Which device is commonly used to collect urine from a male patient who is unable to walk to the toilet but can urinate voluntarily?",
+"choices": [
+{"text": "Bedpan", "is_correct": false},
+{"text": "Urinal", "is_correct": true},
+{"text": "Nasogastric tube", "is_correct": false},
+{"text": "Suction catheter", "is_correct": false}
+],
+"rationale": "A urinal is designed to collect urine from a patient who can void voluntarily but cannot easily access a toilet. It supports comfort, privacy and monitoring of urine output.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "Which type of urinary catheter remains in the bladder for continuous drainage and is retained by an inflated balloon?",
+"choices": [
+{"text": "Intermittent catheter", "is_correct": false},
+{"text": "Indwelling catheter", "is_correct": true},
+{"text": "External male catheter", "is_correct": false},
+{"text": "Nasogastric catheter", "is_correct": false}
+],
+"rationale": "An indwelling urinary catheter is retained in the bladder by an inflated balloon and connected to a drainage system. It should be used only when clinically indicated because prolonged use increases the risk of catheter-associated urinary tract infection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Admission and Discharge Procedures in Community Care",
+"question_text": "Which document provides a formal summary of a patient's diagnosis, treatment and instructions when leaving a health facility?",
+"choices": [
+{"text": "Discharge summary", "is_correct": true},
+{"text": "Staff attendance register", "is_correct": false},
+{"text": "Ward duty roster", "is_correct": false},
+{"text": "Inventory register", "is_correct": false}
+],
+"rationale": "A discharge summary communicates important information about the patient's admission, diagnosis, treatment and continuing care needs. It supports continuity of care between the hospital, patient, family and community health services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Infection Prevention and Control at Home",
+"question_text": "Which term describes the destruction or removal of many pathogenic microorganisms on inanimate objects, although bacterial spores may remain?",
+"choices": [
+{"text": "Disinfection", "is_correct": true},
+{"text": "Sterilisation", "is_correct": false},
+{"text": "Nutrition", "is_correct": false},
+{"text": "Immunisation", "is_correct": false}
+],
+"rationale": "Disinfection reduces or eliminates many pathogenic microorganisms on inanimate objects and surfaces. Sterilisation is a more comprehensive process that destroys or removes all forms of microbial life, including bacterial spores.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care",
+"question_text": "Which term describes the process of tissue repair that occurs after a wound?",
+"choices": [
+{"text": "Wound healing", "is_correct": true},
+{"text": "Haemorrhage", "is_correct": false},
+{"text": "Necrosis", "is_correct": false},
+{"text": "Maceration", "is_correct": false}
+],
+"rationale": "Wound healing is the biological process through which damaged tissue is repaired. It involves overlapping phases of haemostasis, inflammation, proliferation and tissue remodelling.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Safety",
+"question_text": "Which action is most appropriate for preventing falls among patients with impaired mobility at home?",
+"choices": [
+{"text": "Keep walking areas clear and ensure adequate lighting", "is_correct": true},
+{"text": "Encourage patients to walk without assistance", "is_correct": false},
+{"text": "Place loose rugs near the patient's bed", "is_correct": false},
+{"text": "Keep frequently used items out of reach", "is_correct": false}
+],
+"rationale": "Clear walking areas and adequate lighting reduce environmental hazards that contribute to falls. Additional measures include appropriate footwear, mobility aids and assistance based on individual fall risk.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bed Making in the Home",
+"question_text": "A community health nurse is preparing an occupied bed for a patient who cannot get out of bed. Which action should the nurse take?",
+"choices": [
+{"text": "Remove all linen at once while leaving the patient uncovered", "is_correct": false},
+{"text": "Explain the procedure, maintain privacy and turn the patient safely to one side while changing the linen", "is_correct": true},
+{"text": "Ask the patient to stand regardless of their condition", "is_correct": false},
+{"text": "Place soiled linen on the floor before disposal", "is_correct": false}
+],
+"rationale": "An occupied bed is made while the patient remains in bed, requiring safe turning and careful handling of linen. Privacy, comfort, body alignment and prevention of contamination should be maintained throughout the procedure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bed Making in the Home",
+"question_text": "During a home visit, a nurse discovers that the bedsheets of a bedridden patient are wet with urine. What should the nurse do?",
+"choices": [
+{"text": "Allow the linen to dry while the patient remains on it", "is_correct": false},
+{"text": "Change the wet linen, clean and dry the skin, and assess for skin irritation", "is_correct": true},
+{"text": "Cover the wet area with another blanket", "is_correct": false},
+{"text": "Apply powder over the wet bedsheet", "is_correct": false}
+],
+"rationale": "Wet linen increases moisture exposure and the risk of skin irritation and pressure injury. Changing the linen and providing appropriate skin care help maintain skin integrity and comfort.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A patient with difficulty breathing is being cared for at home. Which position is most appropriate to help ease breathing?",
+"choices": [
+{"text": "Flat supine position", "is_correct": false},
+{"text": "High Fowler's position", "is_correct": true},
+{"text": "Trendelenburg position", "is_correct": false},
+{"text": "Prone position with the head turned downwards", "is_correct": false}
+],
+"rationale": "High Fowler's position places the patient in an upright sitting position and may improve lung expansion. Persistent or severe breathlessness requires prompt assessment and appropriate referral rather than positioning alone.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A nurse is assisting an older patient to move from a bed to a chair. Which action should be performed before the transfer?",
+"choices": [
+{"text": "Assess the patient's strength, balance and ability to follow instructions", "is_correct": true},
+{"text": "Pull the patient quickly by both arms", "is_correct": false},
+{"text": "Place the chair far from the bed", "is_correct": false},
+{"text": "Ask the patient to stand without assistance", "is_correct": false}
+],
+"rationale": "Assessment of strength, balance and mobility helps determine the safest transfer method and level of assistance required. The nurse should prepare the environment, secure the chair and use appropriate body mechanics or transfer equipment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A bedridden patient is at risk of developing pressure injuries. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Reposition the patient according to an individualised schedule and inspect pressure areas regularly", "is_correct": true},
+{"text": "Keep the patient in the same position throughout the day", "is_correct": false},
+{"text": "Massage reddened bony prominences vigorously", "is_correct": false},
+{"text": "Place the patient directly on hard surfaces", "is_correct": false}
+],
+"rationale": "Regular repositioning and skin inspection help reduce prolonged pressure and identify early tissue damage. Repositioning frequency should be individualised according to the patient's condition, skin response and support surface.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A nurse is measuring an adult patient's blood pressure manually. Which procedure helps improve the accuracy of the reading?",
+"choices": [
+{"text": "Use a cuff that is too small for the patient's arm", "is_correct": false},
+{"text": "Allow the patient to rest, support the arm at heart level and use an appropriately sized cuff", "is_correct": true},
+{"text": "Measure immediately after strenuous activity", "is_correct": false},
+{"text": "Place the cuff over thick clothing", "is_correct": false}
+],
+"rationale": "Correct positioning, adequate rest and appropriate cuff size are essential for accurate blood pressure measurement. Incorrect technique can produce misleading readings and affect clinical decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "During a home visit, a nurse records an adult patient's temperature as 38.8°C. What does this finding indicate?",
+"choices": [
+{"text": "Hypothermia", "is_correct": false},
+{"text": "Pyrexia", "is_correct": true},
+{"text": "Bradycardia", "is_correct": false},
+{"text": "Hypotension", "is_correct": false}
+],
+"rationale": "A temperature of 38.8°C indicates an elevated body temperature consistent with fever. The nurse should assess associated symptoms, other vital signs and possible causes, including common infections such as malaria.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A patient with suspected pneumonia has a respiratory rate of 32 breaths per minute and complains of severe breathlessness. What should the nurse do?",
+"choices": [
+{"text": "Advise the patient to sleep and return the next day", "is_correct": false},
+{"text": "Assess respiratory status immediately and arrange urgent referral", "is_correct": true},
+{"text": "Encourage the patient to walk around", "is_correct": false},
+{"text": "Give a large meal before further assessment", "is_correct": false}
+],
+"rationale": "Marked tachypnoea with severe breathlessness may indicate significant respiratory compromise. Immediate assessment of airway, breathing, oxygen saturation and other vital signs is necessary while arranging urgent clinical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A nurse is counting the respiratory rate of an adult patient. Which technique is most appropriate?",
+"choices": [
+{"text": "Ask the patient to breathe as quickly as possible", "is_correct": false},
+{"text": "Observe chest or abdominal movements and count respirations for an appropriate period", "is_correct": true},
+{"text": "Count only when the patient is speaking", "is_correct": false},
+{"text": "Estimate the respiratory rate from the patient's pulse", "is_correct": false}
+],
+"rationale": "Respiratory rate is assessed by observing the rise and fall of the chest or abdomen. The nurse should avoid unnecessarily drawing attention to the counting because this may alter the patient's breathing pattern.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A patient with limited mobility requires a bed bath. Which action should the nurse take to maintain the patient's dignity?",
+"choices": [
+{"text": "Expose the entire body throughout the procedure", "is_correct": false},
+{"text": "Explain the procedure, obtain consent and expose only the area being washed", "is_correct": true},
+{"text": "Allow other household members to observe without permission", "is_correct": false},
+{"text": "Complete the procedure without informing the patient", "is_correct": false}
+],
+"rationale": "Explaining the procedure and obtaining consent promote patient autonomy and cooperation. Maintaining privacy and covering areas not being washed preserve dignity and reduce unnecessary exposure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A caregiver asks how to provide oral care for a conscious patient who is unable to brush their teeth independently. Which instruction is most appropriate?",
+"choices": [
+{"text": "Assist with brushing using a soft toothbrush and appropriate positioning", "is_correct": true},
+{"text": "Avoid oral hygiene until the patient can brush independently", "is_correct": false},
+{"text": "Use sharp instruments to remove food particles", "is_correct": false},
+{"text": "Pour large amounts of water into the patient's mouth", "is_correct": false}
+],
+"rationale": "Assisted oral hygiene helps prevent dental disease, oral discomfort and accumulation of microorganisms. Safe positioning and attention to swallowing ability reduce the risk of aspiration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A bedridden patient has dry, cracked skin on the lower legs. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Apply an appropriate moisturising product after gentle cleansing", "is_correct": true},
+{"text": "Scrub the skin vigorously with a rough material", "is_correct": false},
+{"text": "Use concentrated disinfectant on the dry skin", "is_correct": false},
+{"text": "Avoid all skin assessment", "is_correct": false}
+],
+"rationale": "Gentle cleansing and appropriate moisturising help maintain skin hydration and reduce cracking. The nurse should also assess for wounds, infection and circulation problems, particularly in patients with diabetes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A patient with a prescribed nasogastric feeding regimen is about to receive a feed at home. Which action is essential before administering the feed?",
+"choices": [
+{"text": "Confirm correct tube position using the approved procedure and verify that feeding is prescribed", "is_correct": true},
+{"text": "Assume that the tube is correctly positioned because it was inserted previously", "is_correct": false},
+{"text": "Inject air and rely only on listening over the stomach for confirmation", "is_correct": false},
+{"text": "Administer the feed regardless of the patient's condition", "is_correct": false}
+],
+"rationale": "Incorrect nasogastric tube placement can result in feed entering the respiratory tract and causing serious harm. Tube position must be confirmed using an approved method, such as gastric aspirate pH testing or radiography when indicated, before feeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A patient with difficulty swallowing is being assisted with oral feeding. Which action best reduces the risk of aspiration?",
+"choices": [
+{"text": "Feed the patient while lying flat", "is_correct": false},
+{"text": "Position the patient upright and follow the recommended swallowing and feeding plan", "is_correct": true},
+{"text": "Give large mouthfuls to shorten feeding time", "is_correct": false},
+{"text": "Encourage the patient to talk continuously while swallowing", "is_correct": false}
+],
+"rationale": "Upright positioning and appropriate feeding techniques help reduce the risk of aspiration in patients with dysphagia. The nurse should follow the prescribed swallowing assessment and texture recommendations and stop feeding if signs of aspiration occur.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A patient receiving nasogastric feeding begins coughing and develops respiratory distress during administration. What should the nurse do first?",
+"choices": [
+{"text": "Increase the feeding rate", "is_correct": false},
+{"text": "Stop the feed immediately and assess the patient's airway and breathing", "is_correct": true},
+{"text": "Flush the tube with a large volume of water", "is_correct": false},
+{"text": "Continue feeding while asking the patient to cough", "is_correct": false}
+],
+"rationale": "Coughing and respiratory distress during feeding may indicate aspiration or tube displacement. The feed must be stopped immediately, airway and breathing assessed, and urgent clinical assistance obtained as required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "A female patient confined to bed requests assistance to pass urine. Which action should the nurse take?",
+"choices": [
+{"text": "Provide a suitable bedpan, maintain privacy and assist with positioning", "is_correct": true},
+{"text": "Ask the patient to walk to the toilet regardless of mobility", "is_correct": false},
+{"text": "Insert a urinary catheter without assessment", "is_correct": false},
+{"text": "Restrict fluids to prevent urination", "is_correct": false}
+],
+"rationale": "A bedpan allows a patient who cannot safely access a toilet to pass urine or stool while in bed. Privacy, correct positioning, hand hygiene and safe disposal of waste should be maintained.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "A patient has an indwelling urinary catheter connected to a drainage bag. Which nursing action helps prevent catheter-associated urinary tract infection?",
+"choices": [
+{"text": "Keep the drainage bag below bladder level and maintain a closed drainage system", "is_correct": true},
+{"text": "Disconnect the drainage tubing frequently", "is_correct": false},
+{"text": "Place the drainage bag on the patient's abdomen", "is_correct": false},
+{"text": "Allow the drainage outlet to touch the floor", "is_correct": false}
+],
+"rationale": "Keeping the drainage bag below bladder level helps prevent urine from flowing backwards into the bladder. Maintaining a closed drainage system and appropriate catheter hygiene reduces infection risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "A patient with an indwelling urinary catheter has had no urine output for three hours. What should the nurse do first?",
+"choices": [
+{"text": "Remove the catheter immediately without assessment", "is_correct": false},
+{"text": "Check for kinks, compression or obstruction in the drainage tubing and assess the patient", "is_correct": true},
+{"text": "Raise the drainage bag above bladder level", "is_correct": false},
+{"text": "Flush the catheter with any available fluid", "is_correct": false}
+],
+"rationale": "Absent urine output may result from kinked or obstructed tubing, catheter displacement or reduced urine production. The nurse should inspect the drainage system and assess the patient's condition before escalating for clinical review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures in Community Care",
+"question_text": "A patient is discharged from a district hospital after treatment for hypertension. Which action by the community health nurse best supports continuity of care?",
+"choices": [
+{"text": "Review the discharge instructions, medication plan and follow-up arrangements with the patient", "is_correct": true},
+{"text": "Tell the patient to stop medication when symptoms disappear", "is_correct": false},
+{"text": "Ignore the discharge summary", "is_correct": false},
+{"text": "Advise the patient to attend follow-up only when severe symptoms occur", "is_correct": false}
+],
+"rationale": "Reviewing the discharge plan helps ensure that the patient understands prescribed treatment, warning signs and follow-up requirements. This supports continuity between hospital-based and community-based healthcare.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Admission and Discharge Procedures in Community Care",
+"question_text": "During a home visit, a nurse receives a patient who has been referred from a CHPS compound to a district hospital. Which information is most important to review?",
+"choices": [
+{"text": "The patient's favourite recreational activity", "is_correct": false},
+{"text": "The reason for referral, assessment findings, treatment already given and relevant patient history", "is_correct": true},
+{"text": "The personal opinions of unrelated community members", "is_correct": false},
+{"text": "The patient's household entertainment preferences", "is_correct": false}
+],
+"rationale": "Referral information should communicate the clinical reason for transfer, relevant findings, interventions and patient history. Accurate information supports appropriate assessment and reduces unnecessary delays in care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control at Home",
+"question_text": "A community health nurse is caring for a patient with a draining wound at home. Which action is most appropriate when removing the used dressing?",
+"choices": [
+{"text": "Wear appropriate gloves, remove the dressing carefully and dispose of it safely", "is_correct": true},
+{"text": "Handle the contaminated dressing with bare hands", "is_correct": false},
+{"text": "Place the dressing on the patient's bed for later disposal", "is_correct": false},
+{"text": "Reuse the dressing if it is not completely soaked", "is_correct": false}
+],
+"rationale": "Used wound dressings may contain blood, body fluids and microorganisms, creating an infection risk. Appropriate personal protective equipment, hand hygiene and safe waste disposal reduce exposure and cross-contamination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control at Home",
+"question_text": "A caregiver accidentally sustains a needlestick injury while cleaning up after a patient's injection. What should the caregiver do immediately?",
+"choices": [
+{"text": "Wash the affected area with soap and running water and seek urgent occupational or clinical assessment", "is_correct": true},
+{"text": "Squeeze the wound aggressively and apply bleach", "is_correct": false},
+{"text": "Ignore the injury if there is no visible bleeding", "is_correct": false},
+{"text": "Cover the injury and wait several weeks before reporting it", "is_correct": false}
+],
+"rationale": "A needlestick injury may expose the individual to blood-borne pathogens such as hepatitis B, hepatitis C and HIV. Immediate washing and urgent assessment are necessary to determine exposure risk and whether post-exposure management is indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Infection Prevention and Control at Home",
+"question_text": "A family is caring for a relative with pulmonary tuberculosis at home. Which instruction is most appropriate?",
+"choices": [
+{"text": "Keep windows closed at all times", "is_correct": false},
+{"text": "Promote good ventilation, respiratory hygiene and adherence to prescribed tuberculosis treatment", "is_correct": true},
+{"text": "Share eating utensils without washing them", "is_correct": false},
+{"text": "Stop treatment once the cough improves", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted mainly through airborne particles, so good ventilation and respiratory hygiene are important. Adherence to effective treatment and guidance from the tuberculosis control programme help reduce transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "A patient has a minor superficial wound on the forearm. Which procedure is most appropriate during basic wound care?",
+"choices": [
+{"text": "Clean the wound using an appropriate technique and cover it with a suitable dressing", "is_correct": true},
+{"text": "Apply soil to encourage clotting", "is_correct": false},
+{"text": "Pour household bleach directly into the wound", "is_correct": false},
+{"text": "Leave the wound contaminated and uncovered", "is_correct": false}
+],
+"rationale": "Appropriate wound cleansing helps remove contaminants and reduce infection risk. A suitable dressing protects the wound while allowing the healing process to continue.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care",
+"question_text": "A nurse observes redness, warmth, swelling and purulent discharge around a patient's wound during a home visit. What should the nurse do?",
+"choices": [
+{"text": "Assess the wound and arrange prompt clinical evaluation", "is_correct": true},
+{"text": "Massage the wound vigorously", "is_correct": false},
+{"text": "Ignore the discharge if the patient has no pain", "is_correct": false},
+{"text": "Apply an unprescribed antibiotic and avoid referral", "is_correct": false}
+],
+"rationale": "Redness, warmth, swelling and purulent discharge are signs suggestive of wound infection. The patient requires clinical assessment to determine the severity and appropriate treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "An older patient reports dizziness when standing from bed. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Encourage the patient to stand quickly", "is_correct": false},
+{"text": "Assist the patient to sit at the bedside before standing and assess for postural hypotension", "is_correct": true},
+{"text": "Advise the patient to walk without support", "is_correct": false},
+{"text": "Keep the patient in a dark room", "is_correct": false}
+],
+"rationale": "Dizziness on standing may indicate postural hypotension and increases the risk of falls. Gradual position changes and assessment of blood pressure and symptoms improve safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A caregiver asks whether an older relative should be restrained to prevent wandering at home. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Recommend routine physical restraints for all older adults", "is_correct": false},
+{"text": "Explain that restraints should not be used routinely and safer alternatives should be assessed first", "is_correct": true},
+{"text": "Advise tying the patient to the bed whenever the caregiver leaves", "is_correct": false},
+{"text": "Use restraints without assessing the patient's condition", "is_correct": false}
+],
+"rationale": "Physical restraints can cause injury, psychological distress and loss of mobility. They should not be used routinely; individual assessment, environmental modifications, supervision and other less restrictive measures should be considered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A nurse notices that a patient's walking path at home is blocked by electrical cables and loose mats. What should the nurse recommend?",
+"choices": [
+{"text": "Leave the items in place because the patient is familiar with the room", "is_correct": false},
+{"text": "Remove or secure the hazards and provide a clear, well-lit walking path", "is_correct": true},
+{"text": "Encourage the patient to walk over the cables carefully", "is_correct": false},
+{"text": "Place additional loose mats along the path", "is_correct": false}
+],
+"rationale": "Loose mats and electrical cables are environmental hazards that increase the risk of falls. Removing or securing them and improving lighting help create a safer home environment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A patient with fever becomes confused and has a blood pressure of 84/50 mmHg, pulse rate of 128 beats per minute and respiratory rate of 30 breaths per minute. What should the nurse do first?",
+"choices": [
+{"text": "Provide routine health education and reassess the following day", "is_correct": false},
+{"text": "Recognise possible severe infection with circulatory compromise and arrange emergency referral", "is_correct": true},
+{"text": "Give the patient a large meal", "is_correct": false},
+{"text": "Allow the patient to walk around to improve circulation", "is_correct": false}
+],
+"rationale": "Hypotension, tachycardia, tachypnoea, fever and altered mental status are concerning for sepsis with possible circulatory compromise. Immediate emergency assessment and referral are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutrition and Feeding",
+"question_text": "A patient receiving nasogastric feeding suddenly develops coughing, cyanosis and difficulty breathing. Which complication should the nurse suspect first?",
+"choices": [
+{"text": "Aspiration of feed into the respiratory tract", "is_correct": true},
+{"text": "Improved gastric emptying", "is_correct": false},
+{"text": "Normal digestive activity", "is_correct": false},
+{"text": "Mild hunger", "is_correct": false}
+],
+"rationale": "Coughing, cyanosis and respiratory distress during nasogastric feeding are highly concerning for aspiration. Feeding should be stopped immediately and emergency airway and respiratory management initiated.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Elimination Needs",
+"question_text": "A patient with an indwelling urinary catheter develops fever, suprapubic discomfort and cloudy, foul-smelling urine. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Catheter-associated urinary tract infection", "is_correct": true},
+{"text": "Normal bladder function", "is_correct": false},
+{"text": "Hypoglycaemia", "is_correct": false},
+{"text": "Improved renal function", "is_correct": false}
+],
+"rationale": "Fever and suprapubic discomfort in a catheterised patient may indicate a urinary tract infection. Cloudy or foul-smelling urine alone is insufficient to establish the diagnosis, so clinical assessment and appropriate investigations are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care",
+"question_text": "A patient with diabetes has a foot wound with blackened tissue, foul-smelling discharge, fever and increasing pain. Which action should the nurse prioritise?",
+"choices": [
+{"text": "Continue routine dressing changes at home for several weeks", "is_correct": false},
+{"text": "Arrange urgent hospital referral for assessment of severe infection and possible tissue necrosis", "is_correct": true},
+{"text": "Encourage the patient to walk barefoot", "is_correct": false},
+{"text": "Apply herbal preparations and delay medical assessment", "is_correct": false}
+],
+"rationale": "Blackened tissue, foul discharge and fever may indicate tissue necrosis and severe infection, including possible diabetic foot complications. Urgent hospital assessment is required to prevent progression to sepsis or limb-threatening damage.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A community health nurse is attending to three patients at home. Patient A has a minor skin abrasion, Patient B has suddenly become unconscious, and Patient C requires assistance with bathing. Which patient should receive attention first?",
+"choices": [
+{"text": "Patient A", "is_correct": false},
+{"text": "Patient B", "is_correct": true},
+{"text": "Patient C", "is_correct": false},
+{"text": "All patients should receive attention in the order of arrival", "is_correct": false}
+],
+"rationale": "Sudden unconsciousness may indicate a life-threatening emergency involving airway, breathing or circulation. The nurse should assess and support the unconscious patient immediately while arranging emergency assistance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs Measurement",
+"question_text": "A patient has a pulse rate of 46 beats per minute, blood pressure of 88/56 mmHg and reports faintness. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The patient has symptomatic bradycardia with possible haemodynamic compromise", "is_correct": true},
+{"text": "The patient has normal cardiovascular findings", "is_correct": false},
+{"text": "The patient has isolated hypertension", "is_correct": false},
+{"text": "The patient has a normal response to standing", "is_correct": false}
+],
+"rationale": "Bradycardia accompanied by hypotension and faintness may indicate inadequate cardiac output and haemodynamic compromise. The patient requires urgent assessment and clinical intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Positioning and Mobility",
+"question_text": "A patient recovering from a stroke has right-sided weakness and attempts to walk without assistance. The patient begins to lose balance. What should the nurse do first?",
+"choices": [
+{"text": "Allow the patient to continue walking to improve confidence", "is_correct": false},
+{"text": "Support the patient to prevent a fall and reassess the need for assistance or mobility aids", "is_correct": true},
+{"text": "Pull the patient forcefully by the affected arm", "is_correct": false},
+{"text": "Ask the patient to move faster", "is_correct": false}
+],
+"rationale": "The immediate priority is to prevent a fall and further injury. The nurse should provide safe support, reassess mobility and use an appropriate transfer or walking aid based on the patient's abilities.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Infection Prevention and Control at Home",
+"question_text": "A caregiver is preparing to clean a wound and then prepare food for the family. Which practice is most important to prevent cross-contamination?",
+"choices": [
+{"text": "Perform hand hygiene and safely dispose of contaminated materials before handling food", "is_correct": true},
+{"text": "Use the same gloves for wound care and food preparation", "is_correct": false},
+{"text": "Place used wound dressings on the food preparation surface", "is_correct": false},
+{"text": "Rinse contaminated gloves with water and continue using them", "is_correct": false}
+],
+"rationale": "Wound exudate and used dressings may contain microorganisms that can contaminate food and surfaces. Hand hygiene, appropriate glove removal and safe waste disposal are essential before food handling.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Admission and Discharge Procedures in Community Care",
+"question_text": "A patient is discharged after treatment for heart failure. During a follow-up home visit, the nurse finds that the patient has worsening breathlessness, bilateral leg swelling and difficulty lying flat. What should the nurse do?",
+"choices": [
+{"text": "Continue routine home monitoring for another month", "is_correct": false},
+{"text": "Recognise possible worsening heart failure and arrange urgent clinical assessment", "is_correct": true},
+{"text": "Advise the patient to increase salt intake", "is_correct": false},
+{"text": "Recommend stopping all prescribed medication", "is_correct": false}
+],
+"rationale": "Worsening breathlessness, peripheral oedema and orthopnoea suggest possible fluid overload and deterioration of heart failure. Prompt clinical assessment is required to prevent further complications.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Safety",
+"question_text": "A confused older patient repeatedly attempts to leave the house at night. The caregiver asks the nurse to tie the patient to the bed. Which response is most appropriate?",
+"choices": [
+{"text": "Recommend tying the patient securely to prevent movement", "is_correct": false},
+{"text": "Assess the causes of wandering and introduce safer alternatives such as supervision and environmental modifications", "is_correct": true},
+{"text": "Advise the caregiver to lock the patient in a room without supervision", "is_correct": false},
+{"text": "Ignore the behaviour because it is expected in all older adults", "is_correct": false}
+],
+"rationale": "Restraining a confused patient can cause physical injury, psychological distress and further complications. Assessment for reversible causes and safer approaches, including supervision, identification and environmental modifications, should be prioritised.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care",
+"question_text": "A patient sustains a deep wound from a dirty metal object while working on a farm. The wound is contaminated with soil, and the patient's tetanus immunisation history is unknown. What should the nurse prioritise?",
+"choices": [
+{"text": "Apply a dressing and advise the patient to return only if pain develops", "is_correct": false},
+{"text": "Arrange prompt clinical assessment for wound management and tetanus prophylaxis", "is_correct": true},
+{"text": "Apply soil to the wound to stop bleeding", "is_correct": false},
+{"text": "Close the wound at home using ordinary adhesive tape", "is_correct": false}
+],
+"rationale": "A deep, contaminated wound presents a risk of tetanus, particularly when immunisation history is unknown. Prompt clinical assessment is necessary for appropriate wound management and assessment of tetanus vaccine and immunoglobulin requirements.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Hygiene and Comfort Care",
+"question_text": "A bedridden patient develops sudden severe pain and swelling in one calf. The caregiver reports that the patient has been immobile for several days. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Deep vein thrombosis", "is_correct": true},
+{"text": "Simple muscle relaxation", "is_correct": false},
+{"text": "Normal ageing", "is_correct": false},
+{"text": "Oral candidiasis", "is_correct": false}
+],
+"rationale": "Unilateral calf pain and swelling in an immobile patient may indicate deep vein thrombosis. The nurse should arrange urgent medical assessment and avoid massaging the affected leg because of the risk of embolisation.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
