@@ -1,0 +1,802 @@
+{
+"courses": [
+{
+"course_code": "AND-122-C",
+"course_title": "Advanced Nursing I",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Nursing Assessment in the Community",
+"Vital Signs and Monitoring",
+"Hygiene and Comfort Measures",
+"Mobility and Positioning",
+"Wound Care Basics in the Home",
+"Fluid and Electrolyte Balance",
+"Pre- and Post-Operative Care at Home",
+"Common Medical-Surgical Conditions in the Community"
+],
+"questions": [
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "Which statement best describes community nursing assessment?",
+"choices": [
+{"text": "A systematic collection of information about an individual's health and environmental conditions", "is_correct": true},
+{"text": "A process of prescribing medications to community members", "is_correct": false},
+{"text": "A procedure performed only when a patient is admitted to hospital", "is_correct": false},
+{"text": "A method of determining the financial status of a household", "is_correct": false}
+],
+"rationale": "Community nursing assessment involves systematic collection, validation and interpretation of health-related information. It considers individual, family, environmental and community factors that influence health.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "Which component of a patient's history provides information about previous illnesses, operations and hospital admissions?",
+"choices": [
+{"text": "Family history", "is_correct": false},
+{"text": "Past medical history", "is_correct": true},
+{"text": "Social history", "is_correct": false},
+{"text": "Presenting complaint", "is_correct": false}
+],
+"rationale": "Past medical history documents previous illnesses, surgical procedures, hospitalisations, allergies and relevant treatments. This information helps identify conditions that may influence current care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "Which technique involves using the hands to assess body structures, temperature, tenderness and texture?",
+"choices": [
+{"text": "Inspection", "is_correct": false},
+{"text": "Auscultation", "is_correct": false},
+{"text": "Palpation", "is_correct": true},
+{"text": "Percussion", "is_correct": false}
+],
+"rationale": "Palpation is a physical examination technique performed using the hands and fingers. It helps assess characteristics such as tenderness, temperature, texture, masses and organ enlargement.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "During a home visit, a community health nurse asks a client to describe the nature, location, duration and severity of abdominal pain. Which assessment approach is being used?",
+"choices": [
+{"text": "Physical examination only", "is_correct": false},
+{"text": "Focused history taking", "is_correct": true},
+{"text": "Community diagnosis", "is_correct": false},
+{"text": "Discharge planning", "is_correct": false}
+],
+"rationale": "Focused history taking explores a specific health problem and its characteristics. Information about the location, onset, duration, severity and associated symptoms helps guide further assessment and referral.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "Which of the following is a normal resting respiratory rate for a healthy adult?",
+"choices": [
+{"text": "6–10 breaths per minute", "is_correct": false},
+{"text": "12–20 breaths per minute", "is_correct": true},
+{"text": "22–30 breaths per minute", "is_correct": false},
+{"text": "32–40 breaths per minute", "is_correct": false}
+],
+"rationale": "The normal resting respiratory rate for most healthy adults is approximately 12–20 breaths per minute. Persistent values outside this range require assessment in relation to the patient's condition and other clinical findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "Which instrument is primarily used to measure arterial blood pressure?",
+"choices": [
+{"text": "Pulse oximeter", "is_correct": false},
+{"text": "Thermometer", "is_correct": false},
+{"text": "Sphygmomanometer", "is_correct": true},
+{"text": "Stethoscope alone", "is_correct": false}
+],
+"rationale": "A sphygmomanometer measures arterial blood pressure using an inflatable cuff and pressure-measuring mechanism. A stethoscope may be used with a manual sphygmomanometer to identify Korotkoff sounds.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "What is the clinical term for an abnormally elevated body temperature?",
+"choices": [
+{"text": "Hypothermia", "is_correct": false},
+{"text": "Pyrexia", "is_correct": true},
+{"text": "Bradycardia", "is_correct": false},
+{"text": "Hypotension", "is_correct": false}
+],
+"rationale": "Pyrexia refers to an elevated body temperature, commonly associated with infection or inflammation. The nurse should assess the temperature alongside other symptoms and clinical findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "Which term describes the practice of keeping the body and its surroundings clean to maintain health and prevent disease?",
+"choices": [
+{"text": "Hygiene", "is_correct": true},
+{"text": "Rehabilitation", "is_correct": false},
+{"text": "Immobilisation", "is_correct": false},
+{"text": "Isolation", "is_correct": false}
+],
+"rationale": "Hygiene refers to practices that promote cleanliness and prevent disease. Personal and environmental hygiene are important components of infection prevention in community-based care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "Which position involves placing a patient flat on the back with the face directed upwards?",
+"choices": [
+{"text": "Prone position", "is_correct": false},
+{"text": "Lateral position", "is_correct": false},
+{"text": "Supine position", "is_correct": true},
+{"text": "Sims' position", "is_correct": false}
+],
+"rationale": "The supine position involves lying horizontally on the back with the face facing upwards. It is commonly used during physical examinations and certain nursing procedures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Wound Care Basics in the Home",
+"question_text": "Which term describes the process by which microorganisms are destroyed or removed from an object or surface to reduce the risk of infection?",
+"choices": [
+{"text": "Nutrition", "is_correct": false},
+{"text": "Disinfection", "is_correct": true},
+{"text": "Mobilisation", "is_correct": false},
+{"text": "Hydration", "is_correct": false}
+],
+"rationale": "Disinfection reduces or eliminates many pathogenic microorganisms on inanimate objects and surfaces, although it may not destroy bacterial spores. It is distinct from sterilisation, which eliminates all forms of microbial life.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which electrolyte is the principal cation in extracellular fluid?",
+"choices": [
+{"text": "Potassium", "is_correct": false},
+{"text": "Calcium", "is_correct": false},
+{"text": "Sodium", "is_correct": true},
+{"text": "Magnesium", "is_correct": false}
+],
+"rationale": "Sodium is the principal extracellular cation and plays a major role in maintaining extracellular fluid volume and osmolality. Abnormal sodium levels can affect neurological and cardiovascular function.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which electrolyte is particularly important for normal cardiac muscle function and electrical conduction?",
+"choices": [
+{"text": "Potassium", "is_correct": true},
+{"text": "Chloride", "is_correct": false},
+{"text": "Phosphate", "is_correct": false},
+{"text": "Bicarbonate", "is_correct": false}
+],
+"rationale": "Potassium is essential for maintaining the resting membrane potential of cardiac and skeletal muscle cells. Abnormal potassium concentrations can cause dangerous cardiac arrhythmias.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre- and Post-Operative Care at Home",
+"question_text": "What is the primary purpose of pre-operative patient education?",
+"choices": [
+{"text": "To guarantee that surgery will be successful", "is_correct": false},
+{"text": "To prepare the patient psychologically and physically for surgery and recovery", "is_correct": true},
+{"text": "To replace the surgeon's explanation of the procedure", "is_correct": false},
+{"text": "To eliminate the need for post-operative monitoring", "is_correct": false}
+],
+"rationale": "Pre-operative education prepares patients for the procedure, expected recovery and relevant self-care activities. It can reduce anxiety and improve understanding, but it does not guarantee a successful surgical outcome.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "Which clinical condition is characterised by persistently elevated blood glucose due to impaired insulin secretion, insulin action or both?",
+"choices": [
+{"text": "Diabetes mellitus", "is_correct": true},
+{"text": "Bronchial asthma", "is_correct": false},
+{"text": "Peptic ulcer disease", "is_correct": false},
+{"text": "Osteoarthritis", "is_correct": false}
+],
+"rationale": "Diabetes mellitus is a metabolic disorder characterised by chronic hyperglycaemia resulting from defects in insulin secretion, insulin action or both. Community health nurses support screening, treatment adherence, lifestyle modification and complication prevention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "Which mosquito species is the principal vector responsible for transmitting human malaria in Ghana?",
+"choices": [
+{"text": "Aedes aegypti", "is_correct": false},
+{"text": "Anopheles mosquitoes", "is_correct": true},
+{"text": "Culex mosquitoes", "is_correct": false},
+{"text": "Simulium mosquitoes", "is_correct": false}
+],
+"rationale": "Female Anopheles mosquitoes transmit malaria parasites during blood feeding. Community malaria prevention includes insecticide-treated nets, environmental management, early testing and appropriate treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "Which of the following is an important reason for assessing the home environment during a community health visit?",
+"choices": [
+{"text": "To determine the family's political affiliation", "is_correct": false},
+{"text": "To identify environmental health risks affecting the patient's recovery", "is_correct": true},
+{"text": "To establish the patient's eligibility for all hospital procedures", "is_correct": false},
+{"text": "To replace the patient's medical history", "is_correct": false}
+],
+"rationale": "Assessment of the home environment helps identify hazards such as poor sanitation, overcrowding, unsafe water and barriers to mobility. These factors may contribute to illness or interfere with recovery and self-care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "Which measurement provides an estimate of the percentage of haemoglobin saturated with oxygen in peripheral arterial blood?",
+"choices": [
+{"text": "Respiratory rate", "is_correct": false},
+{"text": "Oxygen saturation", "is_correct": true},
+{"text": "Pulse pressure", "is_correct": false},
+{"text": "Body mass index", "is_correct": false}
+],
+"rationale": "Peripheral oxygen saturation, measured using pulse oximetry, estimates the proportion of haemoglobin carrying oxygen. Results should be interpreted alongside the patient's clinical condition because poor perfusion and other factors can affect accuracy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "A community health nurse visits a 58-year-old man who reports frequent urination, excessive thirst and unexplained weight loss. What should the nurse do first?",
+"choices": [
+{"text": "Advise him to stop eating all carbohydrate-containing foods", "is_correct": false},
+{"text": "Assess his symptoms and arrange blood glucose testing or referral for diagnostic evaluation", "is_correct": true},
+{"text": "Assume that he has diabetes and begin insulin administration", "is_correct": false},
+{"text": "Reassure him that the symptoms are normal with ageing", "is_correct": false}
+],
+"rationale": "Polyuria, polydipsia and unexplained weight loss are suggestive of hyperglycaemia and require prompt assessment. Blood glucose testing and appropriate referral are necessary before a diagnosis and treatment plan are established.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "During a home visit, a client reports severe abdominal pain that began suddenly two hours earlier. Which additional information is most important for the nurse to obtain?",
+"choices": [
+{"text": "The client's preferred television programme", "is_correct": false},
+{"text": "The onset, location, severity, associated symptoms and progression of the pain", "is_correct": true},
+{"text": "The client's preferred method of transport", "is_correct": false},
+{"text": "The number of visitors received during the previous week", "is_correct": false}
+],
+"rationale": "A focused pain history helps identify possible acute abdominal conditions requiring urgent medical assessment. Sudden severe abdominal pain, particularly when associated with vomiting, fever, abdominal rigidity or collapse, should not be managed through routine home observation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "A nurse conducting a home visit finds that an older adult has difficulty answering questions and appears confused. What is the most appropriate initial nursing action?",
+"choices": [
+{"text": "Assume that confusion is a normal consequence of ageing", "is_correct": false},
+{"text": "Assess the patient's airway, breathing, circulation, vital signs and level of consciousness", "is_correct": true},
+{"text": "Leave the patient alone to rest", "is_correct": false},
+{"text": "Ask the family to administer a sedative", "is_correct": false}
+],
+"rationale": "New or worsening confusion may indicate an acute condition such as hypoglycaemia, infection, stroke or hypoxia. Immediate assessment of physiological stability and urgent referral when indicated are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A community health nurse records an adult patient's blood pressure as 168/104 mmHg during a home visit. What is the most appropriate action?",
+"choices": [
+{"text": "Ignore the result because the patient has no headache", "is_correct": false},
+{"text": "Allow the patient to rest, repeat the measurement using the correct technique and arrange appropriate clinical assessment", "is_correct": true},
+{"text": "Immediately administer any available antihypertensive medication", "is_correct": false},
+{"text": "Advise the patient to drink more water and return after one month", "is_correct": false}
+],
+"rationale": "The recorded blood pressure is markedly elevated and should be confirmed using correct measurement technique after a period of rest. The nurse should assess for symptoms or signs of acute target-organ damage and arrange prompt referral or clinical review as appropriate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A patient with a suspected respiratory infection has a respiratory rate of 30 breaths per minute and complains of difficulty breathing. What should the community health nurse do?",
+"choices": [
+{"text": "Advise the patient to sleep and reassess the next day", "is_correct": false},
+{"text": "Provide immediate assessment of respiratory status and arrange urgent referral", "is_correct": true},
+{"text": "Give the patient a large meal to restore energy", "is_correct": false},
+{"text": "Ask the patient to walk around to improve breathing", "is_correct": false}
+],
+"rationale": "Tachypnoea accompanied by difficulty breathing may indicate significant respiratory compromise. The nurse should assess airway, breathing, oxygen saturation and other vital signs while arranging urgent clinical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A nurse measures a patient's pulse and finds it to be 48 beats per minute. The patient reports dizziness. Which action is most appropriate?",
+"choices": [
+{"text": "Document the finding and take no further action", "is_correct": false},
+{"text": "Assess the patient's circulation and other vital signs and arrange urgent clinical evaluation", "is_correct": true},
+{"text": "Encourage strenuous exercise to increase the pulse rate", "is_correct": false},
+{"text": "Give the patient an alcoholic beverage", "is_correct": false}
+],
+"rationale": "A pulse rate of 48 beats per minute with dizziness may indicate symptomatic bradycardia and impaired cardiac output. The patient requires prompt assessment and urgent medical evaluation rather than routine observation alone.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "During a home visit, a nurse uses a pulse oximeter on a patient whose fingers are cold. The reading is unexpectedly low. What should the nurse do before interpreting the result?",
+"choices": [
+{"text": "Accept the reading without further assessment", "is_correct": false},
+{"text": "Warm the hand, ensure correct probe placement and repeat the measurement", "is_correct": true},
+{"text": "Place the probe over the patient's clothing", "is_correct": false},
+{"text": "Ask the patient to hold their breath during measurement", "is_correct": false}
+],
+"rationale": "Cold extremities and poor peripheral perfusion can interfere with pulse oximeter readings. Correct probe placement, adequate perfusion and a stable signal should be ensured before interpreting the result, while clinical signs of hypoxia must still be assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A bedridden patient requires assistance with bathing at home. Which nursing action best promotes safety and dignity?",
+"choices": [
+{"text": "Expose the entire body throughout the procedure", "is_correct": false},
+{"text": "Explain the procedure, obtain consent, maintain privacy and expose only the area being washed", "is_correct": true},
+{"text": "Use very hot water to remove microorganisms", "is_correct": false},
+{"text": "Complete the bath without involving the patient", "is_correct": false}
+],
+"rationale": "Maintaining privacy, obtaining consent and explaining care respect the patient's dignity and autonomy. Appropriate water temperature and safe handling also reduce the risk of burns and injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A community health nurse teaches a family how to prevent pressure injuries in a bedridden relative. Which instruction is most appropriate?",
+"choices": [
+{"text": "Massage reddened bony areas vigorously every morning", "is_correct": false},
+{"text": "Reposition the patient regularly, inspect the skin and keep it clean and dry", "is_correct": true},
+{"text": "Keep the patient in one position to prevent discomfort", "is_correct": false},
+{"text": "Apply powder to all open wounds", "is_correct": false}
+],
+"rationale": "Regular repositioning, skin inspection and moisture management help reduce prolonged pressure and skin breakdown. Vigorous massage over reddened bony prominences can cause further tissue damage and should be avoided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A patient recovering from a stroke has difficulty performing oral hygiene independently. What should the nurse advise the caregiver to do?",
+"choices": [
+{"text": "Avoid oral care until the patient can perform it independently", "is_correct": false},
+{"text": "Assist with regular oral hygiene while ensuring safe positioning and assessing swallowing ability", "is_correct": true},
+{"text": "Give the patient large amounts of water to rinse the mouth without supervision", "is_correct": false},
+{"text": "Use sharp objects to remove food particles between the teeth", "is_correct": false}
+],
+"rationale": "Patients with stroke may have impaired swallowing and an increased risk of aspiration. Regular assisted oral hygiene is important, but positioning and the patient's ability to swallow safely must be considered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "A caregiver reports that an elderly patient has developed redness and moisture-related skin irritation around the perineal area. Which intervention is most appropriate?",
+"choices": [
+{"text": "Clean the area gently, dry it carefully and use an appropriate moisture-barrier product", "is_correct": true},
+{"text": "Scrub the area with strong disinfectant", "is_correct": false},
+{"text": "Apply concentrated antiseptic repeatedly without assessment", "is_correct": false},
+{"text": "Leave the area wet to prevent dryness", "is_correct": false}
+],
+"rationale": "Gentle cleansing and careful drying help protect skin integrity and reduce irritation associated with moisture and incontinence. A suitable barrier product can reduce further exposure to moisture and irritants.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A nurse is assisting a weak patient to move from a bed to a chair. Which action is most important before beginning the transfer?",
+"choices": [
+{"text": "Ask the patient to stand immediately", "is_correct": false},
+{"text": "Assess the patient's mobility, strength, balance and ability to follow instructions", "is_correct": true},
+{"text": "Place the chair far away from the bed", "is_correct": false},
+{"text": "Ask the patient to hold the nurse around the neck", "is_correct": false}
+],
+"rationale": "Assessing mobility, strength and balance helps determine the safest transfer method and the level of assistance required. The nurse should also prepare the environment, use appropriate equipment and avoid unsafe manual handling.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A patient who has been confined to bed for several days is at risk of developing venous thromboembolism. Which intervention may help reduce this risk when clinically appropriate?",
+"choices": [
+{"text": "Encourage prescribed early mobilisation and appropriate leg exercises", "is_correct": true},
+{"text": "Keep the patient completely immobile", "is_correct": false},
+{"text": "Restrict all oral fluids without a clinical indication", "is_correct": false},
+{"text": "Place pillows directly behind both knees for prolonged periods", "is_correct": false}
+],
+"rationale": "Early mobilisation and appropriate leg exercises promote venous circulation and reduce venous stasis. Additional prophylaxis may be required depending on the patient's individual risk and medical plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A caregiver is helping a patient with right-sided weakness to walk using a walking stick. On which side should the walking stick generally be held?",
+"choices": [
+{"text": "Right side, because it is the weaker side", "is_correct": false},
+{"text": "Left side, because it is the stronger side", "is_correct": true},
+{"text": "Either side without considering the weakness", "is_correct": false},
+{"text": "Behind the patient's back", "is_correct": false}
+],
+"rationale": "A walking stick is generally held on the stronger side to provide support opposite the weaker lower limb. The patient should receive instruction on the correct walking sequence and be assessed for safe use of the device.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics in the Home",
+"question_text": "A community health nurse is changing the dressing of a patient with a clean surgical wound at home. Which practice is most appropriate?",
+"choices": [
+{"text": "Use clean gloves only and touch the wound with bare fingers", "is_correct": false},
+{"text": "Perform hand hygiene and use aseptic technique with appropriate sterile supplies according to the wound-care plan", "is_correct": true},
+{"text": "Reuse the previous dressing if it appears dry", "is_correct": false},
+{"text": "Clean the wound with household bleach", "is_correct": false}
+],
+"rationale": "Hand hygiene and appropriate aseptic technique reduce the risk of introducing microorganisms into the wound. The dressing procedure should follow the clinical plan and the wound's condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics in the Home",
+"question_text": "During a home visit, a nurse observes that a patient's wound has increasing redness, warmth, swelling and purulent discharge. What is the most appropriate action?",
+"choices": [
+{"text": "Cover the wound and wait several weeks before reassessment", "is_correct": false},
+{"text": "Assess the wound and the patient's general condition and arrange prompt clinical review", "is_correct": true},
+{"text": "Apply an unprescribed topical antibiotic and continue routine care", "is_correct": false},
+{"text": "Massage the wound to improve circulation", "is_correct": false}
+],
+"rationale": "Increasing redness, warmth, swelling and purulent discharge suggest a possible wound infection. The patient requires clinical assessment to determine the severity and need for further treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics in the Home",
+"question_text": "A patient sustains a minor superficial cut while preparing food at home. Which initial action is appropriate?",
+"choices": [
+{"text": "Wash hands, apply gentle direct pressure if bleeding and clean the wound with clean running water", "is_correct": true},
+{"text": "Apply soil to stop the bleeding", "is_correct": false},
+{"text": "Pour concentrated bleach directly into the wound", "is_correct": false},
+{"text": "Leave the wound uncovered regardless of contamination", "is_correct": false}
+],
+"rationale": "Gentle direct pressure helps control bleeding, while clean running water helps remove surface contaminants. The wound should be assessed for depth, contamination and need for further treatment, including tetanus risk assessment where indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Wound Care Basics in the Home",
+"question_text": "A patient with diabetes has a small ulcer on the sole of the foot. Which advice is most appropriate?",
+"choices": [
+{"text": "Walk barefoot to allow the ulcer to receive air", "is_correct": false},
+{"text": "Avoid pressure on the affected area and seek prompt clinical assessment", "is_correct": true},
+{"text": "Cut away the surrounding skin using a razor blade", "is_correct": false},
+{"text": "Apply herbal preparations without informing the healthcare provider", "is_correct": false}
+],
+"rationale": "A diabetic foot ulcer can progress to serious infection and tissue loss, particularly when protective sensation and circulation are impaired. Pressure reduction, appropriate wound assessment and timely clinical management are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A child in a CHPS catchment area presents with diarrhoea but is alert and able to drink. Which intervention is most appropriate to prevent dehydration?",
+"choices": [
+{"text": "Stop all oral fluids until the diarrhoea resolves", "is_correct": false},
+{"text": "Give oral rehydration solution according to the recommended preparation and administration instructions", "is_correct": true},
+{"text": "Give only concentrated fruit juice", "is_correct": false},
+{"text": "Administer an adult dose of intravenous fluid at home", "is_correct": false}
+],
+"rationale": "Oral rehydration solution replaces water and electrolytes lost through diarrhoea and is appropriate for a child who can drink and does not have severe dehydration. Continued feeding and assessment for danger signs are also important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with persistent vomiting reports dizziness and reduced urine output. Which finding would most strongly suggest fluid volume depletion?",
+"choices": [
+{"text": "Moist mucous membranes and normal urine output", "is_correct": false},
+{"text": "Dry mucous membranes, postural dizziness and reduced urine output", "is_correct": true},
+{"text": "Increased urine output with ankle swelling", "is_correct": false},
+{"text": "Normal skin colour and increased appetite", "is_correct": false}
+],
+"rationale": "Vomiting can cause loss of water and electrolytes, resulting in fluid volume depletion. Dry mucous membranes, dizziness and oliguria are important findings that require assessment and appropriate rehydration or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A caregiver asks how to prepare oral rehydration solution from a standard sachet. What should the nurse emphasise?",
+"choices": [
+{"text": "Use any quantity of water depending on the child's thirst", "is_correct": false},
+{"text": "Dissolve the entire sachet in the exact volume of safe water stated on the packet", "is_correct": true},
+{"text": "Add extra salt to make the solution stronger", "is_correct": false},
+{"text": "Mix the sachet with concentrated fruit juice instead of water", "is_correct": false}
+],
+"rationale": "The correct water volume is essential to achieve the intended electrolyte and glucose concentrations. An incorrectly concentrated solution can cause harm, so caregivers should follow the packet instructions and use safe water.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient taking a prescribed diuretic reports muscle weakness and palpitations. Which action should the community health nurse take?",
+"choices": [
+{"text": "Assume the symptoms are harmless effects of ageing", "is_correct": false},
+{"text": "Assess the patient and arrange prompt clinical evaluation, including electrolyte assessment where indicated", "is_correct": true},
+{"text": "Advise the patient to double the diuretic dose", "is_correct": false},
+{"text": "Recommend stopping all prescribed medicines permanently", "is_correct": false}
+],
+"rationale": "Some diuretics can cause electrolyte disturbances, including hypokalaemia, which may produce muscle weakness and cardiac arrhythmias. Palpitations require prompt assessment rather than unsupervised changes to medication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care at Home",
+"question_text": "A patient is scheduled for elective surgery at a district hospital. During a pre-operative home visit, the nurse discovers that the patient is taking anticoagulant medication. What should the nurse do?",
+"choices": [
+{"text": "Tell the patient to stop the medication immediately without consultation", "is_correct": false},
+{"text": "Document the medication and promptly inform the surgical team for appropriate perioperative instructions", "is_correct": true},
+{"text": "Advise the patient to take an extra dose before surgery", "is_correct": false},
+{"text": "Ignore the medication because it is unrelated to surgery", "is_correct": false}
+],
+"rationale": "Anticoagulants can increase perioperative bleeding risk, but stopping them may also increase the risk of thrombosis. Decisions about withholding or adjusting treatment must be made by the responsible clinical team.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care at Home",
+"question_text": "A patient returns home after abdominal surgery. Which instruction is most appropriate for preventing complications during recovery?",
+"choices": [
+{"text": "Remain completely immobile until the wound has healed", "is_correct": false},
+{"text": "Follow the prescribed activity plan, mobilise as advised and observe the wound for signs of infection", "is_correct": true},
+{"text": "Remove all surgical dressings immediately without instructions", "is_correct": false},
+{"text": "Ignore increasing pain because it is always expected after surgery", "is_correct": false}
+],
+"rationale": "Appropriate early mobilisation can reduce complications such as venous thromboembolism and respiratory problems. Wound monitoring and adherence to discharge instructions help identify complications early.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care at Home",
+"question_text": "A patient who recently underwent surgery reports increasing abdominal pain, fever and discharge from the surgical wound. What should the nurse advise?",
+"choices": [
+{"text": "Continue routine home care and wait for the next scheduled appointment", "is_correct": false},
+{"text": "Seek prompt medical assessment at an appropriate health facility", "is_correct": true},
+{"text": "Apply traditional herbal preparations to the wound", "is_correct": false},
+{"text": "Stop all food and fluids for three days", "is_correct": false}
+],
+"rationale": "Increasing pain, fever and wound discharge may indicate a surgical site infection or another post-operative complication. Prompt clinical assessment is necessary to determine the cause and initiate appropriate management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre- and Post-Operative Care at Home",
+"question_text": "A caregiver asks how to support a patient recovering from surgery who has been prescribed oral analgesics. Which advice is most appropriate?",
+"choices": [
+{"text": "Administer the medication according to the prescription and monitor for adverse effects", "is_correct": true},
+{"text": "Double every dose whenever the patient reports pain", "is_correct": false},
+{"text": "Share the medication with other family members who have pain", "is_correct": false},
+{"text": "Stop the medication immediately when the patient becomes comfortable, regardless of instructions", "is_correct": false}
+],
+"rationale": "Prescribed analgesics should be administered according to the recommended dose and schedule. Monitoring for adverse effects and avoiding medication sharing help promote safe recovery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with known asthma develops wheezing and shortness of breath during a home visit. The patient has a prescribed reliever inhaler. What should the nurse do?",
+"choices": [
+{"text": "Assist the patient to use the prescribed reliever inhaler according to the asthma action plan and assess the response", "is_correct": true},
+{"text": "Advise the patient to lie flat and avoid all medication", "is_correct": false},
+{"text": "Give an unprescribed antibiotic", "is_correct": false},
+{"text": "Ask the patient to exercise to open the airways", "is_correct": false}
+],
+"rationale": "A prescribed reliever inhaler, commonly a short-acting bronchodilator, is used to relieve acute bronchoconstriction. The nurse must assess the response and arrange emergency care if symptoms are severe or fail to improve.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with hypertension tells a community health nurse that he has stopped taking his medication because he feels well. What is the best response?",
+"choices": [
+{"text": "Agree that medication is unnecessary when symptoms are absent", "is_correct": false},
+{"text": "Explain that hypertension may be asymptomatic and encourage adherence while arranging clinical review", "is_correct": true},
+{"text": "Advise him to take medication only when he develops a headache", "is_correct": false},
+{"text": "Recommend taking another person's antihypertensive medication", "is_correct": false}
+],
+"rationale": "Hypertension is frequently asymptomatic even when blood pressure remains elevated. Continued adherence to prescribed treatment and regular monitoring reduce the risk of stroke, heart disease and kidney damage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A child in a rural community presents with fever, chills and headache. Malaria is suspected. Which action is most appropriate?",
+"choices": [
+{"text": "Begin antimalarial treatment without assessment or testing in every case", "is_correct": false},
+{"text": "Assess for danger signs and arrange malaria testing using an approved diagnostic method", "is_correct": true},
+{"text": "Give an adult dose of antimalarial medication", "is_correct": false},
+{"text": "Advise the caregiver to wait until the fever has lasted one week", "is_correct": false}
+],
+"rationale": "Fever alone does not confirm malaria because other illnesses can produce similar symptoms. The child should be assessed for danger signs and tested using an approved diagnostic method, with urgent referral if severe illness is suspected.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A community health nurse visits a patient with pulmonary tuberculosis who has recently started treatment. Which instruction is most appropriate?",
+"choices": [
+{"text": "Stop treatment once the cough disappears", "is_correct": false},
+{"text": "Take anti-tuberculosis medicines as prescribed and attend scheduled follow-up appointments", "is_correct": true},
+{"text": "Share prescribed medicines with household members who are coughing", "is_correct": false},
+{"text": "Avoid all follow-up sputum or other recommended assessments", "is_correct": false}
+],
+"rationale": "Tuberculosis treatment requires adherence to the complete prescribed regimen and appropriate follow-up. Interrupting treatment can contribute to treatment failure, relapse and drug resistance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with heart failure reports increasing difficulty breathing when lying flat and swelling of both ankles. What should the community health nurse do?",
+"choices": [
+{"text": "Advise the patient to increase salt intake", "is_correct": false},
+{"text": "Assess respiratory status and arrange prompt medical evaluation for possible worsening heart failure", "is_correct": true},
+{"text": "Recommend stopping prescribed heart failure medicines", "is_correct": false},
+{"text": "Encourage the patient to drink large amounts of fluid immediately", "is_correct": false}
+],
+"rationale": "Orthopnoea and bilateral ankle oedema may indicate fluid accumulation and worsening heart failure. Prompt assessment is required to identify deterioration and guide treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with suspected stroke suddenly develops facial drooping, weakness of one arm and difficulty speaking. What is the priority nursing action?",
+"choices": [
+{"text": "Give the patient food and water before transport", "is_correct": false},
+{"text": "Recognise possible stroke and arrange immediate emergency transfer to an appropriate hospital", "is_correct": true},
+{"text": "Wait for the symptoms to disappear before taking action", "is_correct": false},
+{"text": "Ask the patient to walk around to assess muscle strength", "is_correct": false}
+],
+"rationale": "Sudden facial weakness, arm weakness and speech difficulty are recognised warning signs of stroke. Immediate emergency referral is essential because time-sensitive treatment may reduce disability and death; oral intake should be withheld until swallowing safety is assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with diabetes reports sweating, trembling, hunger and sudden confusion. The patient is conscious and able to swallow safely. What should the nurse do?",
+"choices": [
+{"text": "Give a fast-acting source of glucose and reassess the patient's condition", "is_correct": true},
+{"text": "Administer additional insulin immediately", "is_correct": false},
+{"text": "Restrict all food and fluids", "is_correct": false},
+{"text": "Encourage vigorous physical activity", "is_correct": false}
+],
+"rationale": "The symptoms are suggestive of hypoglycaemia, which requires prompt correction with fast-acting glucose when the patient is conscious and can swallow safely. Blood glucose should be checked where possible, and the patient should be reassessed and managed according to the applicable protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "During a home visit, a patient with chronic obstructive pulmonary disease becomes increasingly breathless. Which position may help ease breathing while the nurse arranges further assessment?",
+"choices": [
+{"text": "Flat supine position", "is_correct": false},
+{"text": "Upright sitting position, possibly leaning slightly forward with support", "is_correct": true},
+{"text": "Head-down position", "is_correct": false},
+{"text": "Prone position with the face pressed against the mattress", "is_correct": false}
+],
+"rationale": "An upright or supported forward-leaning position may improve respiratory mechanics and reduce the work of breathing in some patients with COPD. Worsening breathlessness still requires prompt assessment and appropriate clinical management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "A nurse visits a patient with fever and suspected malaria who becomes drowsy and develops repeated vomiting. Which action should take priority?",
+"choices": [
+{"text": "Continue routine health education and return the following day", "is_correct": false},
+{"text": "Arrange immediate emergency referral while assessing and supporting airway, breathing and circulation", "is_correct": true},
+{"text": "Give the patient a large meal", "is_correct": false},
+{"text": "Allow the patient to sleep without further observation", "is_correct": false}
+],
+"rationale": "Drowsiness and repeated vomiting in a patient with suspected malaria are danger signs that may indicate severe disease or another serious condition. Immediate referral and supportive assessment are required rather than routine home management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs and Monitoring",
+"question_text": "A nurse records the following observations in an adult patient: temperature 39.5°C, pulse 124 beats per minute, respiratory rate 28 breaths per minute and blood pressure 86/54 mmHg. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The patient is stable and requires only routine health education", "is_correct": false},
+{"text": "The patient may have severe systemic infection with circulatory compromise and requires emergency assessment", "is_correct": true},
+{"text": "The findings are normal physiological changes during sleep", "is_correct": false},
+{"text": "The patient has isolated hypertension", "is_correct": false}
+],
+"rationale": "Fever, tachycardia, tachypnoea and hypotension are concerning for severe infection with possible sepsis and circulatory compromise. Immediate emergency referral and appropriate initial supportive care are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Hygiene and Comfort Measures",
+"question_text": "An older patient with limited mobility has persistent non-blanching redness over the sacral area. The caregiver reports that the patient has been lying in the same position for most of the day. What is the most appropriate interpretation and response?",
+"choices": [
+{"text": "The redness is normal and requires no intervention", "is_correct": false},
+{"text": "The patient may have an early pressure injury and requires pressure relief, skin assessment and appropriate clinical review", "is_correct": true},
+{"text": "The area should be massaged firmly until the redness disappears", "is_correct": false},
+{"text": "The patient should remain in the same position to prevent further discomfort", "is_correct": false}
+],
+"rationale": "Non-blanching redness over a pressure area is consistent with a possible stage 1 pressure injury when the skin is intact. Immediate pressure relief, ongoing skin assessment and an individualised prevention plan are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mobility and Positioning",
+"question_text": "A caregiver attempts to transfer a patient with severe weakness from bed to chair without assistance. The patient begins to lose balance. What should the nurse identify as the most important safety concern?",
+"choices": [
+{"text": "The patient may become bored during the transfer", "is_correct": false},
+{"text": "The patient is at immediate risk of falling and sustaining injury", "is_correct": true},
+{"text": "The transfer may take longer than expected", "is_correct": false},
+{"text": "The patient may refuse future home visits", "is_correct": false}
+],
+"rationale": "Loss of balance during an unsupported transfer creates an immediate risk of falling and injury. The nurse should stop the unsafe transfer, secure the patient's position and reassess the level of assistance and equipment required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Wound Care Basics in the Home",
+"question_text": "A patient with a diabetic foot ulcer has increasing pain, foul-smelling discharge, spreading redness and fever. Which finding makes this situation particularly concerning?",
+"choices": [
+{"text": "The wound is located on the foot", "is_correct": false},
+{"text": "The combination of spreading inflammation and systemic fever suggests a potentially serious infection", "is_correct": true},
+{"text": "The patient is able to describe the wound", "is_correct": false},
+{"text": "The patient has a history of wearing shoes", "is_correct": false}
+],
+"rationale": "Spreading redness, foul discharge and fever suggest that a local wound infection may be progressing and could involve deeper tissues or cause systemic illness. Diabetes increases the risk of severe foot complications, so urgent medical assessment is required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A child with diarrhoea is assessed at a CHPS compound. The child is lethargic, has sunken eyes, drinks poorly and has a very slow skin pinch. Which conclusion and action are most appropriate?",
+"choices": [
+{"text": "The child has no dehydration and can be managed with routine observation", "is_correct": false},
+{"text": "The child has signs of severe dehydration and requires urgent referral for appropriate rehydration", "is_correct": true},
+{"text": "The child should receive only plain water at home", "is_correct": false},
+{"text": "The child should be given an antidiarrhoeal medicine and discharged", "is_correct": false}
+],
+"rationale": "Lethargy, poor drinking, sunken eyes and a very slow skin pinch are signs consistent with severe dehydration under standard diarrhoea assessment classifications. The child requires urgent treatment and referral for appropriate rehydration, with continued assessment during transfer.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient taking a potassium-wasting diuretic develops muscle weakness. Laboratory results show a serum potassium concentration of 2.7 mmol/L. Which complication is the nurse most concerned about?",
+"choices": [
+{"text": "Cardiac arrhythmias due to hypokalaemia", "is_correct": true},
+{"text": "Hyperglycaemia caused by excess potassium", "is_correct": false},
+{"text": "Improved cardiac electrical stability", "is_correct": false},
+{"text": "Increased bone density", "is_correct": false}
+],
+"rationale": "A potassium concentration of 2.7 mmol/L indicates significant hypokalaemia, which can impair neuromuscular function and cardiac electrical conduction. Prompt clinical assessment and appropriate correction are necessary because potentially serious arrhythmias may occur.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pre- and Post-Operative Care at Home",
+"question_text": "Two days after abdominal surgery, a patient suddenly develops chest pain, severe breathlessness and a rapid pulse. Which complication should the nurse urgently suspect?",
+"choices": [
+{"text": "Simple wound itching", "is_correct": false},
+{"text": "Pulmonary embolism", "is_correct": true},
+{"text": "Mild constipation", "is_correct": false},
+{"text": "Normal post-operative fatigue", "is_correct": false}
+],
+"rationale": "Sudden chest pain, acute breathlessness and tachycardia after surgery are concerning for pulmonary embolism, a potentially life-threatening complication of venous thromboembolism. Emergency medical assessment and transfer are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pre- and Post-Operative Care at Home",
+"question_text": "A patient recovering from surgery has not passed urine for eight hours and reports lower abdominal discomfort. Which explanation should the nurse consider most seriously?",
+"choices": [
+{"text": "Post-operative urinary retention", "is_correct": true},
+{"text": "Normal increase in kidney function", "is_correct": false},
+{"text": "Improved fluid balance", "is_correct": false},
+{"text": "Uncomplicated wound healing", "is_correct": false}
+],
+"rationale": "Failure to pass urine with lower abdominal discomfort after surgery may indicate urinary retention. The patient requires prompt assessment, including evaluation of bladder distension and possible contributing factors such as anaesthesia or medication.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A community health nurse assesses three patients during a home visit programme. Patient A has a mild chronic skin rash, Patient B has sudden facial drooping and slurred speech, and Patient C has controlled hypertension without symptoms. Which patient should be assessed first?",
+"choices": [
+{"text": "Patient A", "is_correct": false},
+{"text": "Patient B", "is_correct": true},
+{"text": "Patient C", "is_correct": false},
+{"text": "All patients can wait until the next routine visit", "is_correct": false}
+],
+"rationale": "Sudden facial drooping and slurred speech suggest an acute stroke, which requires immediate emergency assessment and time-sensitive intervention. The other conditions do not present the same immediate threat based on the information provided.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with known diabetes is found unconscious during a home visit. The glucometer reading is 2.1 mmol/L. What is the most appropriate immediate management?",
+"choices": [
+{"text": "Pour sweetened water into the patient's mouth", "is_correct": false},
+{"text": "Arrange emergency assistance, protect the airway and administer glucagon if available and within the nurse's authorised protocol", "is_correct": true},
+{"text": "Give the patient's usual insulin dose", "is_correct": false},
+{"text": "Wait for the patient to regain consciousness before taking action", "is_correct": false}
+],
+"rationale": "The patient has severe hypoglycaemia with impaired consciousness and requires emergency treatment. Oral fluids or food must not be given because of aspiration risk; glucagon or intravenous glucose should be provided by appropriately trained personnel according to the applicable protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with chronic kidney disease develops facial puffiness, bilateral leg oedema, increasing breathlessness and reduced urine output. Which interpretation best explains these findings?",
+"choices": [
+{"text": "The patient is experiencing fluid overload due to impaired renal function", "is_correct": true},
+{"text": "The patient has uncomplicated dehydration", "is_correct": false},
+{"text": "The patient has isolated skin irritation", "is_correct": false},
+{"text": "The patient is experiencing normal age-related changes", "is_correct": false}
+],
+"rationale": "Impaired renal function can reduce the body's ability to excrete sodium and water, resulting in fluid accumulation. Oedema, reduced urine output and breathlessness may indicate significant fluid overload requiring urgent clinical assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Medical-Surgical Conditions in the Community",
+"question_text": "A patient with a history of hypertension develops a sudden severe headache, vomiting, blurred vision and weakness on one side of the body. Which condition should the nurse prioritise in the differential assessment?",
+"choices": [
+{"text": "Acute cerebrovascular event", "is_correct": true},
+{"text": "Uncomplicated allergic rhinitis", "is_correct": false},
+{"text": "Mild nutritional deficiency", "is_correct": false},
+{"text": "Chronic osteoarthritis", "is_correct": false}
+],
+"rationale": "Sudden focal neurological weakness with severe headache and visual disturbance may indicate an acute stroke or intracranial haemorrhage. Immediate emergency referral is necessary, and the nurse should not delay transfer while attempting to establish a definitive diagnosis at home.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Assessment in the Community",
+"question_text": "A community health nurse reviews a patient's records and observes that the patient has repeatedly missed appointments, has uncontrolled hypertension and reports difficulty paying for transport to the district hospital. Which nursing response best addresses the underlying problem?",
+"choices": [
+{"text": "Discharge the patient from community follow-up because of non-adherence", "is_correct": false},
+{"text": "Explore the barriers, assess available support and coordinate an appropriate community-based follow-up plan", "is_correct": true},
+{"text": "Blame the patient for failing to attend appointments", "is_correct": false},
+{"text": "Advise the patient to stop antihypertensive medication until transport is available", "is_correct": false}
+],
+"rationale": "Transport costs are a potential social determinant affecting access to healthcare and continuity of treatment. The nurse should identify practical barriers and coordinate feasible follow-up, referral and support through available community and health-system resources.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
