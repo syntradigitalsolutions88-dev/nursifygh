@@ -9,26 +9,7 @@ import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import ExamCountdown from "../components/ExamCountdown"
 import WeakAreasCard from "../components/WeakAreasCard"
-// Add this import at the top
 import PWAInstallPrompt from "../components/PWAInstallPrompt"
-
-// Then, place the component at the very top of your Dashboard content:
-export default function DashboardPage() {
-    return (
-        <AppShell>
-            <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
-                {/* ADD THIS LINE */}
-                <PWAInstallPrompt />
-
-                {/* The rest of your dashboard content... */}
-                <header>
-                    <h1>Welcome back!</h1>
-                </header>
-                {/* ... */}
-            </div>
-        </AppShell>
-    )
-}
 
 function getGreeting(): string {
     const hour = new Date().getHours()
@@ -87,6 +68,10 @@ export default function DashboardPage() {
     return (
         <AppShell>
             <div className="space-y-6 max-w-6xl mx-auto pb-10">
+
+                {/* PWA Install Prompt */}
+                <PWAInstallPrompt />
+
                 {/* Hero with Edit Profile button */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 p-6 lg:p-8 text-white shadow-xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white/5 blur-3xl"></div>
@@ -131,8 +116,8 @@ export default function DashboardPage() {
 
                         return (
                             <div className={`rounded-xl border-2 p-5 ${isUrgent
-                                    ? "border-red-400 bg-gradient-to-r from-red-50 to-orange-50"
-                                    : "border-amber-400 bg-gradient-to-r from-amber-50 to-orange-50"
+                                ? "border-red-400 bg-gradient-to-r from-red-50 to-orange-50"
+                                : "border-amber-400 bg-gradient-to-r from-amber-50 to-orange-50"
                                 }`}>
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                     <div className="flex items-start gap-3">
@@ -159,8 +144,8 @@ export default function DashboardPage() {
                                     </div>
                                     <Link to="/subscribe" className="shrink-0">
                                         <Button size="md" className={`!text-white shadow-md ${isUrgent
-                                                ? "!bg-red-600 hover:!bg-red-700"
-                                                : "!bg-amber-600 hover:!bg-amber-700"
+                                            ? "!bg-red-600 hover:!bg-red-700"
+                                            : "!bg-amber-600 hover:!bg-amber-700"
                                             }`}>
                                             {isTrial ? "Subscribe — GHS 30 →" : "Renew — GHS 30 →"}
                                         </Button>
