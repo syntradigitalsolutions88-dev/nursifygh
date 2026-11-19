@@ -9,7 +9,8 @@ import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import ExamCountdown from "../components/ExamCountdown"
 import WeakAreasCard from "../components/WeakAreasCard"
-import PWAInstallPrompt from "../components/PWAInstallPrompt"
+// FIX: Corrected the casing to match the actual file name
+import PwaInstallPrompt from "../components/PwaInstallPrompt"
 
 function getGreeting(): string {
     const hour = new Date().getHours()
@@ -69,8 +70,8 @@ export default function DashboardPage() {
         <AppShell>
             <div className="space-y-6 max-w-6xl mx-auto pb-10">
 
-                {/* PWA Install Prompt */}
-                <PWAInstallPrompt />
+                {/* PWA Install Prompt (FIX: Corrected casing here too) */}
+                <PwaInstallPrompt />
 
                 {/* Hero with Edit Profile button */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 p-6 lg:p-8 text-white shadow-xl relative overflow-hidden">
