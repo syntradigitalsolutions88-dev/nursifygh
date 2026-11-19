@@ -1,0 +1,899 @@
+{
+"courses": [
+{
+"course_code": "HAP-111-C",
+"course_title": "Health Assessment & Physical Examination",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Health History Taking",
+"Physical Examination Techniques",
+"Head-to-Toe Assessment",
+"Assessment of Skin, Hair and Nails",
+"Cardiovascular and Respiratory Assessment",
+"Abdominal Assessment",
+"Neurological Assessment",
+"Vital Signs Interpretation",
+"Community Health Assessment and Documentation"
+],
+"questions": [
+{
+"topic": "Health History Taking",
+"question_text": "Which component of a health history describes the main reason a client seeks healthcare, preferably in the client's own words?",
+"choices": [
+{"text": "Past medical history", "is_correct": false},
+{"text": "Chief complaint", "is_correct": true},
+{"text": "Family history", "is_correct": false},
+{"text": "Social history", "is_correct": false}
+],
+"rationale": "The chief complaint is the primary concern or symptom that brings a client to seek healthcare. Recording it in the client's own words helps preserve the client's description of the problem.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health History Taking",
+"question_text": "Which information is primarily obtained when taking the history of present illness (HPI)?",
+"choices": [
+{"text": "The client's childhood immunisation history", "is_correct": false},
+{"text": "The health conditions affecting close relatives", "is_correct": false},
+{"text": "The onset, duration, location and characteristics of the current symptoms", "is_correct": true},
+{"text": "The client's occupation and household income", "is_correct": false}
+],
+"rationale": "The HPI provides a chronological and detailed account of the current health problem. It includes onset, duration, location, severity, characteristics, aggravating factors and relieving factors.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health History Taking",
+"question_text": "Which of the following belongs to a client's past medical history?",
+"choices": [
+{"text": "Current complaint of headache", "is_correct": false},
+{"text": "Previous diagnosis of pulmonary tuberculosis", "is_correct": true},
+{"text": "Recent disagreement with a family member", "is_correct": false},
+{"text": "The client's present occupation", "is_correct": false}
+],
+"rationale": "Past medical history includes previous illnesses, hospital admissions, operations, injuries, allergies and relevant treatments. A previous diagnosis of tuberculosis is therefore part of the client's past medical history.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health History Taking",
+"question_text": "What is the main purpose of obtaining a family health history?",
+"choices": [
+{"text": "To identify inherited conditions and familial disease patterns", "is_correct": true},
+{"text": "To determine the client's monthly expenditure", "is_correct": false},
+{"text": "To establish the client's educational qualification", "is_correct": false},
+{"text": "To identify the client's preferred healthcare facility", "is_correct": false}
+],
+"rationale": "Family history helps identify diseases that may have genetic or familial patterns, such as hypertension, diabetes mellitus and some cancers. It also helps the nurse recognise possible health risks among family members.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "Which physical examination technique involves observing the client's body for colour, shape, movement and abnormalities?",
+"choices": [
+{"text": "Palpation", "is_correct": false},
+{"text": "Percussion", "is_correct": false},
+{"text": "Inspection", "is_correct": true},
+{"text": "Auscultation", "is_correct": false}
+],
+"rationale": "Inspection involves systematic observation of the client's body using the sense of sight. It may reveal abnormalities such as pallor, cyanosis, swelling, deformities and abnormal movements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "Which technique involves using the hands and fingers to assess tenderness, temperature, texture and organ size?",
+"choices": [
+{"text": "Inspection", "is_correct": false},
+{"text": "Palpation", "is_correct": true},
+{"text": "Auscultation", "is_correct": false},
+{"text": "Percussion", "is_correct": false}
+],
+"rationale": "Palpation uses the hands and fingers to assess physical characteristics of body structures. It can identify tenderness, masses, temperature changes, moisture and texture.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "Which examination technique involves tapping the body surface to produce sounds that provide information about underlying structures?",
+"choices": [
+{"text": "Percussion", "is_correct": true},
+{"text": "Inspection", "is_correct": false},
+{"text": "Palpation", "is_correct": false},
+{"text": "Auscultation", "is_correct": false}
+],
+"rationale": "Percussion involves tapping the body surface to produce sounds and vibrations. The resulting sounds help the examiner assess the density and condition of underlying tissues and organs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "Which instrument is commonly used to listen to heart sounds, breath sounds and bowel sounds?",
+"choices": [
+{"text": "Sphygmomanometer", "is_correct": false},
+{"text": "Otoscope", "is_correct": false},
+{"text": "Stethoscope", "is_correct": true},
+{"text": "Thermometer", "is_correct": false}
+],
+"rationale": "A stethoscope is used for auscultation of internal body sounds, including cardiac, respiratory and gastrointestinal sounds. It is an essential instrument during routine physical examination.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "Which of the following represents the commonly accepted normal resting respiratory rate for a healthy adult?",
+"choices": [
+{"text": "6–10 breaths per minute", "is_correct": false},
+{"text": "12–20 breaths per minute", "is_correct": true},
+{"text": "22–30 breaths per minute", "is_correct": false},
+{"text": "30–40 breaths per minute", "is_correct": false}
+],
+"rationale": "The commonly accepted normal resting respiratory rate for an adult is approximately 12–20 breaths per minute. A rate outside this range requires assessment in relation to the client's condition and other clinical findings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "Which pulse site is commonly used when assessing the pulse rate of an adult during a routine physical examination?",
+"choices": [
+{"text": "Radial artery", "is_correct": true},
+{"text": "Femoral artery", "is_correct": false},
+{"text": "Carotid artery", "is_correct": false},
+{"text": "Popliteal artery", "is_correct": false}
+],
+"rationale": "The radial artery at the wrist is commonly used to assess an adult's peripheral pulse during routine examination. The carotid or femoral pulse may be assessed in emergencies or when peripheral pulses are difficult to detect.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Assessment of Skin, Hair and Nails",
+"question_text": "Which term describes a bluish discolouration of the skin and mucous membranes associated with reduced oxygenation of the blood?",
+"choices": [
+{"text": "Jaundice", "is_correct": false},
+{"text": "Pallor", "is_correct": false},
+{"text": "Cyanosis", "is_correct": true},
+{"text": "Erythema", "is_correct": false}
+],
+"rationale": "Cyanosis is a bluish discolouration of the skin or mucous membranes that may indicate inadequate oxygenation or abnormal haemoglobin. It requires prompt assessment, particularly when associated with respiratory distress.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "Which of the following is the normal range for a resting adult pulse rate?",
+"choices": [
+{"text": "30–50 beats per minute", "is_correct": false},
+{"text": "60–100 beats per minute", "is_correct": true},
+{"text": "110–140 beats per minute", "is_correct": false},
+{"text": "140–180 beats per minute", "is_correct": false}
+],
+"rationale": "A normal resting adult pulse rate is generally 60–100 beats per minute. Rates outside this range should be interpreted alongside rhythm, pulse volume, activity level and clinical condition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Abdominal Assessment",
+"question_text": "What is the correct sequence for examining the abdomen using the four basic physical examination techniques?",
+"choices": [
+{"text": "Inspection, palpation, percussion, auscultation", "is_correct": false},
+{"text": "Palpation, inspection, auscultation, percussion", "is_correct": false},
+{"text": "Inspection, auscultation, percussion, palpation", "is_correct": true},
+{"text": "Auscultation, palpation, inspection, percussion", "is_correct": false}
+],
+"rationale": "The correct abdominal examination sequence is inspection, auscultation, percussion and palpation. Auscultation is performed before percussion and palpation because physical manipulation may alter bowel sounds.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neurological Assessment",
+"question_text": "Which assessment is primarily used to evaluate a client's level of consciousness and neurological responsiveness?",
+"choices": [
+{"text": "Glasgow Coma Scale", "is_correct": true},
+{"text": "Braden Scale", "is_correct": false},
+{"text": "Apgar Score", "is_correct": false},
+{"text": "Body Mass Index", "is_correct": false}
+],
+"rationale": "The Glasgow Coma Scale assesses eye opening, verbal response and motor response. It is commonly used to evaluate and monitor the level of consciousness in clients with neurological impairment or head injury.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "Which of the following is the most appropriate description of community health assessment?",
+"choices": [
+{"text": "The diagnosis of diseases in individual hospitalised clients only", "is_correct": false},
+{"text": "The systematic collection and analysis of information about a community's health needs and resources", "is_correct": true},
+{"text": "The treatment of all community members without prior assessment", "is_correct": false},
+{"text": "The recording of hospital expenditure for a particular month", "is_correct": false}
+],
+"rationale": "Community health assessment is a systematic process of collecting, analysing and interpreting information about the health status, needs, resources and determinants of health in a defined population. It provides a basis for planning, implementing and evaluating community health interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "Which of the following is a commonly accepted normal range for adult oral body temperature?",
+"choices": [
+{"text": "34.0–35.0°C", "is_correct": false},
+{"text": "36.5–37.5°C", "is_correct": true},
+{"text": "38.5–39.5°C", "is_correct": false},
+{"text": "40.0–41.0°C", "is_correct": false}
+],
+"rationale": "Normal adult oral temperature is commonly around 36.5–37.5°C, although it varies with time of day, measurement site and individual factors. A temperature of 38°C or above generally indicates fever and requires clinical assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health History Taking",
+"question_text": "During a home visit in a CHPS zone, a client reports recurrent headaches. Which question best helps the community health nurse obtain information about the onset of the symptom?",
+"choices": [
+{"text": "Do other members of your family have headaches?", "is_correct": false},
+{"text": "When did the headaches first begin?", "is_correct": true},
+{"text": "What is your monthly household income?", "is_correct": false},
+{"text": "Have you ever been admitted to hospital for another illness?", "is_correct": false}
+],
+"rationale": "Asking when the headaches first began establishes the onset of the presenting symptom. This is an important part of the history of present illness and helps the nurse understand the progression of the problem.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health History Taking",
+"question_text": "A client attending a district hospital reports abdominal pain. Which question would best establish the location of the pain?",
+"choices": [
+{"text": "Does the pain occur every morning?", "is_correct": false},
+{"text": "How severe is the pain on a scale of 0 to 10?", "is_correct": false},
+{"text": "Can you point to where you feel the pain?", "is_correct": true},
+{"text": "What medication have you taken previously?", "is_correct": false}
+],
+"rationale": "Asking the client to identify the exact location of the pain helps establish its anatomical site. This information contributes to clinical reasoning and guides further examination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health History Taking",
+"question_text": "During a community assessment, a pregnant woman reports taking herbal preparations alongside prescribed medication. What should the community health nurse do?",
+"choices": [
+{"text": "Advise her to conceal the herbal preparation from the healthcare provider", "is_correct": false},
+{"text": "Record the information and explore the type, frequency and reason for using the preparations", "is_correct": true},
+{"text": "Immediately accuse her of refusing orthodox treatment", "is_correct": false},
+{"text": "Ignore the information because herbal preparations are not prescribed medicines", "is_correct": false}
+],
+"rationale": "The nurse should obtain a complete and non-judgemental medication history, including herbal preparations and other substances. Some preparations may interact with prescribed medicines or pose risks during pregnancy, making accurate documentation and referral important.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "A community health nurse observes swelling around a client's ankle during a home visit. Which technique should the nurse use to assess whether the swelling is pitting oedema?",
+"choices": [
+{"text": "Percussion over the ankle", "is_correct": false},
+{"text": "Firmly tapping the ankle with a reflex hammer", "is_correct": false},
+{"text": "Applying gentle pressure over the swollen area and observing for an indentation", "is_correct": true},
+{"text": "Listening over the ankle with a stethoscope", "is_correct": false}
+],
+"rationale": "Pitting oedema is assessed by applying sustained pressure over an appropriate area, commonly the shin or ankle, and observing whether an indentation remains. The nurse should document the location and degree of oedema and assess for possible underlying causes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "A nurse is preparing to auscultate the lungs of a client at a CHPS compound. Which action is most appropriate?",
+"choices": [
+{"text": "Place the stethoscope over the client's clothing", "is_correct": false},
+{"text": "Use the diaphragm of the stethoscope directly on the skin and compare corresponding areas on both sides", "is_correct": true},
+{"text": "Ask the client to hold their breath throughout the examination", "is_correct": false},
+{"text": "Auscultate only the anterior chest and ignore the posterior chest", "is_correct": false}
+],
+"rationale": "Lung auscultation should be performed with the diaphragm directly on the skin to minimise interference from clothing. Comparing corresponding areas on both sides helps identify differences in air entry and abnormal breath sounds.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Head-to-Toe Assessment",
+"question_text": "During a head-to-toe assessment, a nurse wants to examine a client's pupils. Which finding should be assessed?",
+"choices": [
+{"text": "Pupil size, equality and reaction to light", "is_correct": true},
+{"text": "The colour and thickness of the client's hair", "is_correct": false},
+{"text": "The client's abdominal bowel sounds", "is_correct": false},
+{"text": "The presence of ankle oedema", "is_correct": false}
+],
+"rationale": "Pupil assessment includes size, symmetry and reaction to light. Abnormal pupil findings may indicate neurological impairment and should be interpreted with other neurological observations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of Skin, Hair and Nails",
+"question_text": "A child attending a CHPS compound has pale conjunctivae and reports tiredness. Which condition should the community health nurse suspect and investigate?",
+"choices": [
+{"text": "Anaemia", "is_correct": true},
+{"text": "Jaundice", "is_correct": false},
+{"text": "Cyanosis", "is_correct": false},
+{"text": "Dermatitis", "is_correct": false}
+],
+"rationale": "Pallor of the conjunctivae may be a clinical sign of anaemia, particularly when accompanied by fatigue. The nurse should arrange appropriate assessment, including haemoglobin testing where available, and follow referral or treatment protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of Skin, Hair and Nails",
+"question_text": "During a physical examination, a nurse notices that a client's fingernails are rounded and the nail beds have increased curvature. This finding is most consistent with which condition?",
+"choices": [
+{"text": "Nail clubbing", "is_correct": true},
+{"text": "Koilonychia", "is_correct": false},
+{"text": "Paronychia", "is_correct": false},
+{"text": "Leukonychia", "is_correct": false}
+],
+"rationale": "Clubbing is characterised by increased curvature of the nails and changes in the nail bed angle. It may be associated with chronic pulmonary or cardiovascular conditions and requires further assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A client at a district hospital has a respiratory rate of 28 breaths per minute while resting. How should the nurse interpret this finding?",
+"choices": [
+{"text": "Normal adult respiratory rate", "is_correct": false},
+{"text": "Bradypnoea", "is_correct": false},
+{"text": "Tachypnoea", "is_correct": true},
+{"text": "Apnoea", "is_correct": false}
+],
+"rationale": "A resting adult respiratory rate of 28 breaths per minute is above the usual normal range of 12–20 breaths per minute and is described as tachypnoea. The nurse should assess for respiratory distress, fever, pain, infection and other possible causes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A nurse is assessing a client with suspected pneumonia. Which respiratory finding is most likely to indicate consolidation in the affected lung area?",
+"choices": [
+{"text": "Increased tactile vocal fremitus over the affected area", "is_correct": true},
+{"text": "Absent respiratory effort throughout the examination", "is_correct": false},
+{"text": "Reduced vocal resonance over every lung field", "is_correct": false},
+{"text": "Normal vesicular breath sounds in all lung fields", "is_correct": false}
+],
+"rationale": "Lung consolidation can increase transmission of vocal vibrations through the affected lung tissue, resulting in increased tactile vocal fremitus. Other findings may include bronchial breath sounds and crackles over the consolidated area.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "During a cardiovascular assessment, the nurse identifies an irregular radial pulse. What should the nurse do to obtain a more accurate assessment of the heart rate?",
+"choices": [
+{"text": "Count the radial pulse for 10 seconds and multiply by six", "is_correct": false},
+{"text": "Count the apical pulse for one full minute", "is_correct": true},
+{"text": "Estimate the heart rate by observing the client's breathing", "is_correct": false},
+{"text": "Record the pulse as normal because it is palpable", "is_correct": false}
+],
+"rationale": "An irregular pulse should be assessed for a full minute, and the apical pulse provides a more accurate measure of the heart rate. The nurse should document the rhythm and report significant abnormalities for further evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Abdominal Assessment",
+"question_text": "A nurse is examining a client who reports abdominal discomfort. Which position is most appropriate for a routine abdominal examination?",
+"choices": [
+{"text": "Prone with the arms above the head", "is_correct": false},
+{"text": "Supine with the abdomen exposed appropriately and knees slightly flexed if needed", "is_correct": true},
+{"text": "Standing with the trunk fully extended", "is_correct": false},
+{"text": "Sitting with the legs crossed tightly", "is_correct": false}
+],
+"rationale": "The supine position allows the abdominal muscles to relax and provides access to the abdominal regions. Slight flexion of the knees may further reduce muscle tension and improve the examination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Abdominal Assessment",
+"question_text": "A client presents with abdominal distension at a district hospital. Which examination technique should the nurse use to assess for tympany?",
+"choices": [
+{"text": "Auscultation", "is_correct": false},
+{"text": "Inspection", "is_correct": false},
+{"text": "Percussion", "is_correct": true},
+{"text": "Light palpation", "is_correct": false}
+],
+"rationale": "Percussion helps identify tympanic and dull sounds over different abdominal regions. Tympany is commonly heard over gas-filled bowel, while dullness may occur over solid organs, fluid or other dense structures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neurological Assessment",
+"question_text": "A client who recently experienced a fall is unable to respond verbally but opens the eyes when spoken to and withdraws from painful stimulation. Which action is most appropriate during neurological assessment?",
+"choices": [
+{"text": "Assess and document the Glasgow Coma Scale components", "is_correct": true},
+{"text": "Assume the client is sleeping and discontinue the assessment", "is_correct": false},
+{"text": "Assess only the client's body temperature", "is_correct": false},
+{"text": "Allow the client to return home without further assessment", "is_correct": false}
+],
+"rationale": "The client's responses indicate altered consciousness and require structured neurological assessment using the Glasgow Coma Scale. The nurse should also assess airway, breathing and circulation and arrange urgent medical evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neurological Assessment",
+"question_text": "During a neurological assessment, a nurse asks a client to smile, raise both arms and repeat a simple sentence. What is the main purpose of these actions?",
+"choices": [
+{"text": "To assess for possible signs of stroke", "is_correct": true},
+{"text": "To determine the client's nutritional status", "is_correct": false},
+{"text": "To assess abdominal muscle tone", "is_correct": false},
+{"text": "To measure the client's respiratory capacity", "is_correct": false}
+],
+"rationale": "Facial weakness, arm weakness and speech difficulty are important warning signs of stroke. Rapid recognition and urgent referral are essential because early medical treatment can reduce the risk of disability and death.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A community health nurse records a blood pressure of 150/96 mmHg in an adult during a routine home visit. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The blood pressure is within the normal range", "is_correct": false},
+{"text": "The reading is elevated and requires confirmation and clinical follow-up", "is_correct": true},
+{"text": "The client has hypotension", "is_correct": false},
+{"text": "The reading confirms shock", "is_correct": false}
+],
+"rationale": "A blood pressure of 150/96 mmHg is above the usual normal range and is a hypertensive-range reading. The nurse should ensure correct measurement technique, repeat the reading as appropriate and arrange clinical evaluation rather than making a diagnosis from a single measurement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A child attending a CHPS compound has a temperature of 39.2°C and a history of fever in a malaria-endemic community. What should the nurse do?",
+"choices": [
+{"text": "Assume the child has malaria without further assessment", "is_correct": false},
+{"text": "Assess the child for danger signs and arrange appropriate malaria testing and clinical management", "is_correct": true},
+{"text": "Advise the caregiver to give only herbal preparations", "is_correct": false},
+{"text": "Wait several days before assessing the child again", "is_correct": false}
+],
+"rationale": "Fever in a malaria-endemic area requires assessment for malaria and other possible causes of infection. The nurse should check for danger signs, perform or arrange appropriate testing and follow current GHS case-management and referral guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A nurse measures an adult client's blood pressure and obtains an unexpectedly high reading. Which action is most appropriate before interpreting the result?",
+"choices": [
+{"text": "Repeat the measurement after ensuring correct positioning and an appropriate cuff size", "is_correct": true},
+{"text": "Immediately record the reading as the client's permanent blood pressure", "is_correct": false},
+{"text": "Measure the client's temperature instead", "is_correct": false},
+{"text": "Ask the client to walk around before repeating the measurement", "is_correct": false}
+],
+"rationale": "Incorrect positioning, an unsuitable cuff size and inadequate rest can affect blood pressure readings. The nurse should ensure proper technique and repeat the measurement before making clinical decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "During a home visit, a community health nurse discovers that several children in a household have not completed their routine immunisations. What should the nurse do?",
+"choices": [
+{"text": "Record the findings, identify the children requiring vaccination and arrange follow-up according to the immunisation schedule", "is_correct": true},
+{"text": "Ignore the information because the children are not currently ill", "is_correct": false},
+{"text": "Advise the caregiver that immunisation is no longer necessary", "is_correct": false},
+{"text": "Record the children as fully immunised without checking their records", "is_correct": false}
+],
+"rationale": "The nurse should verify immunisation status using available records and identify missed or overdue doses. Appropriate counselling, vaccination arrangements and follow-up help reduce vaccine-preventable diseases in the community.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "A community health nurse is conducting a household assessment in a rural community. Which observation is most directly relevant to assessing environmental health risks?",
+"choices": [
+{"text": "The colour of the household members' clothing", "is_correct": false},
+{"text": "The presence of stagnant water and inadequate waste disposal around the home", "is_correct": true},
+{"text": "The number of mobile phones owned by the household", "is_correct": false},
+{"text": "The preferred radio station of the household head", "is_correct": false}
+],
+"rationale": "Stagnant water and poor waste disposal may encourage mosquito breeding and increase exposure to environmental health hazards. Identifying these conditions helps the nurse plan health education and community-level preventive interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health History Taking",
+"question_text": "A client reports recurrent episodes of dizziness. Which additional question would best help identify a possible relationship between the symptom and medication use?",
+"choices": [
+{"text": "What medicines, including over-the-counter preparations, are you currently taking?", "is_correct": true},
+{"text": "How many people live in your neighbourhood?", "is_correct": false},
+{"text": "What is your highest educational qualification?", "is_correct": false},
+{"text": "How many years have you lived in this community?", "is_correct": false}
+],
+"rationale": "Some medicines can cause dizziness through effects such as reduced blood pressure, sedation or changes in blood glucose. A complete medication history helps the nurse identify possible adverse effects and communicate relevant findings to the clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A client with a history of heart disease reports difficulty breathing when lying flat and relief when sitting upright. Which term describes this symptom?",
+"choices": [
+{"text": "Apnoea", "is_correct": false},
+{"text": "Orthopnoea", "is_correct": true},
+{"text": "Bradypnoea", "is_correct": false},
+{"text": "Haemoptysis", "is_correct": false}
+],
+"rationale": "Orthopnoea is breathlessness that occurs when lying flat and improves when the client sits or stands upright. It is commonly associated with heart failure and requires cardiovascular and respiratory assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Head-to-Toe Assessment",
+"question_text": "During a head-to-toe examination, a nurse assesses capillary refill in a client's fingernail beds. What does this assessment primarily help evaluate?",
+"choices": [
+{"text": "Peripheral tissue perfusion", "is_correct": true},
+{"text": "Hearing acuity", "is_correct": false},
+{"text": "Visual accommodation", "is_correct": false},
+{"text": "Abdominal organ size", "is_correct": false}
+],
+"rationale": "Capillary refill provides a simple indication of peripheral perfusion by assessing how quickly colour returns after pressure is released from the nail bed. Delayed refill may occur with poor perfusion, cold exposure or other circulatory problems and should be interpreted with other findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Abdominal Assessment",
+"question_text": "A nurse is assessing a client who complains of severe right lower abdominal pain. Which action is most appropriate during palpation?",
+"choices": [
+{"text": "Begin with deep palpation directly over the painful area", "is_correct": false},
+{"text": "Begin with gentle palpation away from the painful area and observe the client's response", "is_correct": true},
+{"text": "Apply repeated forceful pressure to determine the exact location", "is_correct": false},
+{"text": "Continue palpation even if the client develops severe pain", "is_correct": false}
+],
+"rationale": "Palpation should begin gently and away from the painful area to reduce discomfort and help assess for guarding or tenderness. Severe abdominal pain requires careful assessment and prompt medical evaluation, especially when an acute abdominal condition is suspected.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "An adult client at a CHPS compound has a pulse rate of 48 beats per minute and reports dizziness. What is the most appropriate nursing action?",
+"choices": [
+{"text": "Document the pulse as normal and discharge the client", "is_correct": false},
+{"text": "Assess the client's circulation and other vital signs and arrange urgent clinical evaluation", "is_correct": true},
+{"text": "Encourage vigorous exercise to increase the pulse rate", "is_correct": false},
+{"text": "Give the client an antihypertensive medicine", "is_correct": false}
+],
+"rationale": "A pulse rate of 48 beats per minute is bradycardia in an adult, and associated dizziness may indicate inadequate cardiac output or another significant problem. The nurse should assess the client promptly and arrange urgent evaluation rather than assuming the slow rate is harmless.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "During a home visit, a nurse identifies a household member with a persistent cough lasting several weeks, weight loss and night sweats. What is the most appropriate action?",
+"choices": [
+{"text": "Prescribe antibiotics without further assessment", "is_correct": false},
+{"text": "Suspect possible pulmonary tuberculosis and arrange prompt screening and referral according to the national TB programme", "is_correct": true},
+{"text": "Advise the client to avoid drinking water", "is_correct": false},
+{"text": "Wait until other household members develop similar symptoms", "is_correct": false}
+],
+"rationale": "A prolonged cough with weight loss and night sweats raises suspicion of pulmonary tuberculosis. The nurse should facilitate prompt testing and referral, provide appropriate infection-prevention advice and support contact screening according to established protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Head-to-Toe Assessment",
+"question_text": "A nurse is examining a client who reports difficulty hearing. Which action is appropriate when assessing the external ear?",
+"choices": [
+{"text": "Inspect the external ear for lesions, discharge and abnormalities", "is_correct": true},
+{"text": "Palpate the abdomen for organ enlargement", "is_correct": false},
+{"text": "Percuss the chest to assess lung resonance", "is_correct": false},
+{"text": "Measure the client's abdominal circumference", "is_correct": false}
+],
+"rationale": "Inspection of the external ear can identify abnormalities such as swelling, lesions and discharge. Further assessment, including otoscopic examination and hearing evaluation, may be required to investigate the client's complaint.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health History Taking",
+"question_text": "During history taking, a client appears uncomfortable discussing alcohol consumption. Which approach is most appropriate for the nurse?",
+"choices": [
+{"text": "Ask questions in a judgemental tone to obtain the truth", "is_correct": false},
+{"text": "Use respectful, non-judgemental and open-ended questions in a private setting", "is_correct": true},
+{"text": "Ask other household members to provide the information without the client's knowledge", "is_correct": false},
+{"text": "Exclude substance use from the health history", "is_correct": false}
+],
+"rationale": "A respectful and private approach encourages honest disclosure of sensitive information. Accurate information about alcohol and other substance use is important for identifying health risks and planning appropriate care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A client at a district hospital has a respiratory rate of 32 breaths per minute, uses accessory muscles and cannot complete sentences. What should the nurse do first?",
+"choices": [
+{"text": "Complete the client's family history", "is_correct": false},
+{"text": "Provide immediate assessment of airway and breathing, support oxygenation according to protocol and summon urgent clinical assistance", "is_correct": true},
+{"text": "Ask the client to walk around the ward", "is_correct": false},
+{"text": "Delay intervention until all routine observations are completed", "is_correct": false}
+],
+"rationale": "Severe tachypnoea, accessory muscle use and inability to speak in full sentences indicate significant respiratory distress. Airway and breathing take priority, and urgent assistance is required to prevent deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neurological Assessment",
+"question_text": "A client suddenly develops facial drooping and weakness of the right arm during a community health screening. Which information should the nurse establish urgently?",
+"choices": [
+{"text": "The exact time the client was last known to be well", "is_correct": true},
+{"text": "The client's preferred type of food", "is_correct": false},
+{"text": "The number of years the client has attended school", "is_correct": false},
+{"text": "The client's usual sleeping position", "is_correct": false}
+],
+"rationale": "The time the client was last known to be well is essential when assessing suspected acute stroke because it influences eligibility for time-dependent treatment. The nurse should activate emergency referral without delaying transport to obtain unnecessary information.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A client at a CHPS compound has a blood pressure of 86/54 mmHg, a pulse rate of 120 beats per minute and cold, clammy skin. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Hypertension", "is_correct": false},
+{"text": "Circulatory shock", "is_correct": true},
+{"text": "Normal physiological adaptation", "is_correct": false},
+{"text": "Isolated bradycardia", "is_correct": false}
+],
+"rationale": "Hypotension, tachycardia and cold, clammy skin are concerning signs of impaired tissue perfusion and possible shock. The nurse should initiate emergency management within their scope and arrange immediate referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "A community health nurse documents a client's assessment findings in the health record. Which entry is most appropriate?",
+"choices": [
+{"text": "Client looks very bad and seems careless about health", "is_correct": false},
+{"text": "Client is probably suffering from a serious disease", "is_correct": false},
+{"text": "Temperature 38.6°C, pulse 108 beats/min and client reports headache for two days", "is_correct": true},
+{"text": "Client is not cooperating and has a strange appearance", "is_correct": false}
+],
+"rationale": "Clinical documentation should be objective, accurate, relevant and based on observed or reported findings. Recording measurable observations and clearly attributed symptoms supports continuity of care and clinical decision-making.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health History Taking",
+"question_text": "A nurse is taking a health history from an older adult who has difficulty remembering the names of prescribed medicines. What is the best approach?",
+"choices": [
+{"text": "Assume the client is not taking any medication", "is_correct": false},
+{"text": "Ask the client or caregiver to provide available medication containers, prescriptions or treatment records", "is_correct": true},
+{"text": "Record any medication name the nurse considers likely", "is_correct": false},
+{"text": "Discontinue the history because the client cannot remember the names", "is_correct": false}
+],
+"rationale": "Medication containers, prescriptions and treatment records can help verify the client's medication history. With the client's consent, a caregiver may provide additional information while the nurse maintains confidentiality and checks the accuracy of the details.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A nurse observes that a client has distended neck veins while resting at approximately 45 degrees. Which clinical condition may be associated with this finding?",
+"choices": [
+{"text": "Raised central venous pressure", "is_correct": true},
+{"text": "Reduced blood glucose level", "is_correct": false},
+{"text": "Iron deficiency alone", "is_correct": false},
+{"text": "Localised skin infection", "is_correct": false}
+],
+"rationale": "Jugular venous distension may indicate increased right atrial pressure or elevated central venous pressure. It can occur in conditions such as right-sided heart failure and fluid overload and should be assessed alongside other cardiovascular findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Abdominal Assessment",
+"question_text": "A client presents with abdominal pain, vomiting and marked abdominal distension. The nurse suspects intestinal obstruction. Which additional finding would support this suspicion?",
+"choices": [
+{"text": "Abnormal or absent bowel sounds", "is_correct": true},
+{"text": "Normal appetite and regular bowel movements", "is_correct": false},
+{"text": "Improved abdominal comfort after eating", "is_correct": false},
+{"text": "Normal abdominal contour without tenderness", "is_correct": false}
+],
+"rationale": "Intestinal obstruction may present with abdominal distension, vomiting, pain and altered bowel sounds. Bowel sounds can vary depending on the stage and cause of obstruction, so the nurse should arrange urgent medical assessment rather than rely on one finding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A nurse measures the blood pressure of a client whose arm is unsupported and positioned below heart level. How may this affect the reading?",
+"choices": [
+{"text": "It may produce a falsely high reading", "is_correct": true},
+{"text": "It always produces a falsely low reading", "is_correct": false},
+{"text": "It has no effect on the measurement", "is_correct": false},
+{"text": "It measures the pulse rate instead of blood pressure", "is_correct": false}
+],
+"rationale": "When the arm is positioned below heart level, hydrostatic pressure can cause the measured blood pressure to be higher than the actual value at heart level. Correct positioning and support of the arm are therefore important for accurate measurement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "During a home visit, a nurse finds that a client with diabetes has an infected foot wound and reports fever. What is the priority action?",
+"choices": [
+{"text": "Advise the client to apply a household herbal preparation and return next month", "is_correct": false},
+{"text": "Assess the wound and the client's general condition, then arrange urgent clinical referral", "is_correct": true},
+{"text": "Recommend walking barefoot to improve circulation", "is_correct": false},
+{"text": "Ignore the fever because foot wounds are common in diabetes", "is_correct": false}
+],
+"rationale": "An infected foot wound accompanied by fever may indicate spreading infection and can progress rapidly in a person with diabetes. Prompt assessment and urgent referral are necessary to reduce the risk of severe complications, including tissue loss and sepsis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A nurse assessing an adult client finds that the oxygen saturation is 86% on room air. The client is breathless and has bluish lips. What should the nurse do first?",
+"choices": [
+{"text": "Record the result and continue with the routine examination", "is_correct": false},
+{"text": "Recognise severe hypoxaemia, assess airway and breathing, provide oxygen according to protocol and obtain urgent assistance", "is_correct": true},
+{"text": "Ask the client to perform vigorous exercise", "is_correct": false},
+{"text": "Wait 30 minutes before repeating the measurement without intervening", "is_correct": false}
+],
+"rationale": "An oxygen saturation of 86% with breathlessness and cyanosis indicates severe hypoxaemia requiring immediate intervention. The nurse should assess the airway and breathing, initiate appropriate support within their scope and arrange urgent clinical management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neurological Assessment",
+"question_text": "A client who sustained a head injury becomes increasingly drowsy and develops unequal pupils. Which action should the nurse take first?",
+"choices": [
+{"text": "Allow the client to sleep and reassess the following morning", "is_correct": false},
+{"text": "Recognise possible neurological deterioration and arrange immediate emergency assessment", "is_correct": true},
+{"text": "Give the client food and fluids", "is_correct": false},
+{"text": "Complete a routine nutritional assessment before reporting the findings", "is_correct": false}
+],
+"rationale": "Increasing drowsiness and unequal pupils after head injury may indicate serious neurological deterioration, including raised intracranial pressure. Immediate escalation and emergency assessment are required, with attention to airway, breathing and circulation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A community health nurse records a blood pressure of 180/120 mmHg in a client who also complains of severe headache and blurred vision. What is the priority action?",
+"choices": [
+{"text": "Advise the client to reduce salt intake and return in three months", "is_correct": false},
+{"text": "Arrange immediate emergency assessment because of possible acute target-organ damage", "is_correct": true},
+{"text": "Ask the client to exercise to lower the blood pressure", "is_correct": false},
+{"text": "Reassure the client that the reading is normal for older adults", "is_correct": false}
+],
+"rationale": "A markedly elevated blood pressure accompanied by severe headache and visual disturbance raises concern for a hypertensive emergency or other acute complication. The client requires immediate clinical assessment rather than routine follow-up alone.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health History Taking",
+"question_text": "A client reports chest pain during history taking. Which question is most important to help identify associated symptoms that may indicate a serious cardiovascular problem?",
+"choices": [
+{"text": "Have you experienced sweating, breathlessness, nausea or pain spreading to your arm or jaw?", "is_correct": true},
+{"text": "What is your favourite meal?", "is_correct": false},
+{"text": "How many visitors do you receive each week?", "is_correct": false},
+{"text": "What type of work do your neighbours perform?", "is_correct": false}
+],
+"rationale": "Chest pain associated with sweating, breathlessness, nausea or radiation to the arm or jaw may indicate acute coronary syndrome. The nurse should assess these symptoms promptly and activate urgent referral or emergency management when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "During examination of a client with abdominal pain, the nurse observes involuntary tightening of the abdominal muscles when the abdomen is touched. Which finding does this suggest?",
+"choices": [
+{"text": "Abdominal guarding", "is_correct": true},
+{"text": "Normal abdominal relaxation", "is_correct": false},
+{"text": "Peripheral cyanosis", "is_correct": false},
+{"text": "Nail clubbing", "is_correct": false}
+],
+"rationale": "Abdominal guarding is the involuntary contraction of abdominal muscles in response to irritation or inflammation within the abdomen. It may indicate peritoneal irritation and requires careful assessment and prompt medical review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Assessment of Skin, Hair and Nails",
+"question_text": "A child in a rural community has generalised itching, visible scratch marks and burrows between the fingers. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Scabies", "is_correct": true},
+{"text": "Vitiligo", "is_correct": false},
+{"text": "Psoriasis", "is_correct": false},
+{"text": "Jaundice", "is_correct": false}
+],
+"rationale": "Scabies commonly causes intense itching, often worse at night, with characteristic burrows in areas such as the finger webs. The nurse should facilitate appropriate treatment, household contact management and health education on preventing reinfestation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A nurse assesses a febrile adult with a temperature of 39.5°C, pulse rate of 124 beats per minute and respiratory rate of 26 breaths per minute. The client appears confused. Which action has the highest priority?",
+"choices": [
+{"text": "Arrange urgent clinical assessment for possible severe infection or sepsis", "is_correct": true},
+{"text": "Complete a routine social history before taking further action", "is_correct": false},
+{"text": "Advise the client to return home and drink more water", "is_correct": false},
+{"text": "Delay assessment until the fever resolves naturally", "is_correct": false}
+],
+"rationale": "Fever, tachycardia, tachypnoea and altered mental status are concerning features of possible severe infection or sepsis. Rapid assessment, stabilisation and referral are essential because deterioration can occur quickly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "A community health nurse is assessing two neighbouring communities and finds that one has a higher number of diarrhoeal disease cases. Which additional information would be most useful in identifying a possible environmental cause?",
+"choices": [
+{"text": "The communities' water sources, sanitation facilities and food-handling practices", "is_correct": true},
+{"text": "The preferred political candidates of residents", "is_correct": false},
+{"text": "The number of television sets in each household", "is_correct": false},
+{"text": "The types of entertainment preferred by community members", "is_correct": false}
+],
+"rationale": "Unsafe water, inadequate sanitation and poor food hygiene are important risk factors for diarrhoeal diseases. Comparing these environmental conditions can help identify possible sources of exposure and guide preventive interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A client with a history of chronic respiratory disease has diminished breath sounds on the right side and sudden onset of severe breathlessness. The right side of the chest also appears less mobile. Which condition should the nurse consider?",
+"choices": [
+{"text": "Right-sided pneumothorax", "is_correct": true},
+{"text": "Uncomplicated allergic rhinitis", "is_correct": false},
+{"text": "Iron deficiency anaemia", "is_correct": false},
+{"text": "Simple dehydration", "is_correct": false}
+],
+"rationale": "Sudden breathlessness with reduced chest movement and diminished breath sounds on one side may indicate pneumothorax. This is a potentially life-threatening condition requiring immediate emergency assessment and referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Abdominal Assessment",
+"question_text": "A client presents with severe abdominal pain. During examination, the nurse observes abdominal rigidity, involuntary guarding and marked tenderness. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The findings suggest possible peritoneal irritation and require urgent medical evaluation", "is_correct": true},
+{"text": "The findings are normal variations in abdominal muscle tone", "is_correct": false},
+{"text": "The client is most likely experiencing uncomplicated indigestion", "is_correct": false},
+{"text": "The findings indicate a primary skin disorder", "is_correct": false}
+],
+"rationale": "Rigidity, involuntary guarding and marked tenderness are concerning signs of peritoneal irritation, which may occur with conditions such as perforated abdominal organs or peritonitis. The client requires urgent assessment and should not undergo repeated forceful palpation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neurological Assessment",
+"question_text": "A client suddenly develops slurred speech, facial asymmetry and weakness of the left leg. The symptoms began approximately 30 minutes earlier. Which nursing decision is most appropriate?",
+"choices": [
+{"text": "Arrange immediate emergency transfer for suspected acute stroke and communicate the time last known well", "is_correct": true},
+{"text": "Schedule a routine review at the next monthly outreach clinic", "is_correct": false},
+{"text": "Give oral fluids and observe the client for several hours", "is_correct": false},
+{"text": "Assume the symptoms are caused by tiredness and allow the client to rest", "is_correct": false}
+],
+"rationale": "Sudden focal neurological deficits strongly suggest an acute stroke, and the short duration of symptoms makes rapid hospital assessment particularly important. The nurse should document the time last known well and arrange emergency transfer without unnecessary delay.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "During a home visit, a nurse assesses an adult who has a temperature of 38.9°C, pulse rate of 132 beats per minute, respiratory rate of 30 breaths per minute and blood pressure of 88/56 mmHg. The client is confused and has reduced urine output. Which conclusion best explains these findings?",
+"choices": [
+{"text": "The client may have sepsis with impaired tissue perfusion", "is_correct": true},
+{"text": "The client has uncomplicated mild fever", "is_correct": false},
+{"text": "The client is experiencing isolated chronic hypertension", "is_correct": false},
+{"text": "The findings are consistent with normal physiological responses to exercise", "is_correct": false}
+],
+"rationale": "Fever, tachycardia, tachypnoea, hypotension, confusion and reduced urine output suggest severe infection with possible organ dysfunction and impaired perfusion. This is an emergency requiring immediate referral and appropriate stabilisation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cardiovascular and Respiratory Assessment",
+"question_text": "A client with suspected heart failure has bilateral ankle oedema, distended neck veins and breathlessness when lying flat. Which interpretation best links these findings?",
+"choices": [
+{"text": "The findings suggest fluid overload and possible cardiac dysfunction", "is_correct": true},
+{"text": "The findings indicate isolated dehydration", "is_correct": false},
+{"text": "The findings are typical of uncomplicated skin allergy", "is_correct": false},
+{"text": "The findings indicate a primary neurological disorder", "is_correct": false}
+],
+"rationale": "Bilateral peripheral oedema, jugular venous distension and orthopnoea are consistent with fluid retention and possible heart failure. The client requires further cardiovascular assessment and appropriate clinical management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Assessment of Skin, Hair and Nails",
+"question_text": "A child presents with severe pallor of the palms and conjunctivae, fatigue and a history of poor dietary intake. Which interpretation and action are most appropriate?",
+"choices": [
+{"text": "Suspect significant anaemia and arrange prompt clinical assessment, including haemoglobin measurement", "is_correct": true},
+{"text": "Diagnose jaundice and advise the caregiver to avoid all protein foods", "is_correct": false},
+{"text": "Assume the findings are normal and provide no further assessment", "is_correct": false},
+{"text": "Treat the child for a fungal skin infection without further investigation", "is_correct": false}
+],
+"rationale": "Marked pallor and fatigue may indicate significant anaemia, which can result from nutritional deficiencies, malaria, parasitic infections or other conditions. Haemoglobin assessment and clinical evaluation are necessary to establish severity and determine appropriate management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health History Taking",
+"question_text": "A client reports recurrent episodes of fever, chills and sweating. The symptoms improve temporarily after taking antipyretics but return later. Which additional information is most important for the nurse to obtain when considering malaria and other tropical infections?",
+"choices": [
+{"text": "The pattern and duration of fever, previous malaria testing or treatment, travel and possible exposure history", "is_correct": true},
+{"text": "The client's favourite television programmes", "is_correct": false},
+{"text": "The colour of the client's household furniture", "is_correct": false},
+{"text": "The number of social events attended during the previous year", "is_correct": false}
+],
+"rationale": "A detailed symptom and exposure history helps identify possible infectious causes and guides appropriate testing. Temporary improvement after antipyretics does not confirm malaria or exclude other serious infections.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Health Assessment and Documentation",
+"question_text": "A community health nurse reviews household assessment records and notices that diarrhoeal disease cases are concentrated in households using an unprotected stream as their main source of drinking water. What is the best conclusion?",
+"choices": [
+{"text": "The pattern suggests a possible association between unsafe water use and diarrhoeal disease that requires further investigation", "is_correct": true},
+{"text": "The stream has been proven to be the only cause of all diarrhoeal cases", "is_correct": false},
+{"text": "The affected households should be excluded from community health services", "is_correct": false},
+{"text": "The findings show that household sanitation has no influence on diarrhoeal disease", "is_correct": false}
+],
+"rationale": "The concentration of cases among households using an unprotected water source suggests a possible environmental risk factor. Further investigation, water safety assessment and appropriate public health interventions are needed before confirming the source of infection.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Physical Examination Techniques",
+"question_text": "A nurse percusses the chest of a client and identifies a dull sound over the lower right lung field, where breath sounds are also reduced. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The findings may indicate fluid or consolidation in the underlying lung region", "is_correct": true},
+{"text": "The findings confirm normal air-filled lung tissue", "is_correct": false},
+{"text": "The findings indicate increased air in the pleural space in every case", "is_correct": false},
+{"text": "The findings are diagnostic of an abdominal disorder", "is_correct": false}
+],
+"rationale": "Dullness to percussion with reduced breath sounds may occur when normal air-filled lung tissue is replaced or compressed by fluid or consolidated tissue. Further respiratory assessment and appropriate investigations are needed to determine the cause.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Vital Signs Interpretation",
+"question_text": "A nurse obtains a blood pressure reading of 170/100 mmHg from a client immediately after the client has walked quickly to the CHPS compound. The client has no symptoms of acute illness. Which action is most appropriate?",
+"choices": [
+{"text": "Allow the client to rest quietly, ensure correct measurement technique and repeat the blood pressure", "is_correct": true},
+{"text": "Immediately diagnose chronic hypertension from this single reading", "is_correct": false},
+{"text": "Ask the client to perform further exercise before repeating the measurement", "is_correct": false},
+{"text": "Ignore the reading because physical activity always makes blood pressure inaccurate", "is_correct": false}
+],
+"rationale": "Recent physical activity can temporarily raise blood pressure, so the client should rest quietly before the measurement is repeated using correct technique. Persistent elevation requires appropriate follow-up and clinical assessment, while symptoms of acute target-organ damage would require emergency evaluation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neurological Assessment",
+"question_text": "A client with a recent head injury initially had a Glasgow Coma Scale score of 15 but now has a score of 11, with increasing drowsiness and vomiting. What is the best interpretation?",
+"choices": [
+{"text": "The declining score indicates neurological deterioration requiring immediate escalation", "is_correct": true},
+{"text": "The client is recovering because the score has decreased", "is_correct": false},
+{"text": "The change is expected and does not require further assessment", "is_correct": false},
+{"text": "The findings indicate an uncomplicated gastrointestinal infection only", "is_correct": false}
+],
+"rationale": "A reduction in Glasgow Coma Scale score indicates worsening level of consciousness, particularly when accompanied by vomiting and increasing drowsiness after head injury. The nurse should urgently escalate care and arrange emergency assessment for possible intracranial complications.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Head-to-Toe Assessment",
+"question_text": "During a head-to-toe assessment, a nurse finds that a client has a temperature of 38.8°C, a painful swollen calf on one side and sudden breathlessness. Which interpretation is most concerning?",
+"choices": [
+{"text": "Possible deep vein thrombosis with pulmonary embolism", "is_correct": true},
+{"text": "Uncomplicated muscle fatigue", "is_correct": false},
+{"text": "Simple allergic skin reaction", "is_correct": false},
+{"text": "Isolated nutritional deficiency", "is_correct": false}
+],
+"rationale": "Unilateral calf swelling and pain may indicate deep vein thrombosis, while sudden breathlessness raises concern for pulmonary embolism. This combination is potentially life-threatening and requires immediate emergency assessment.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
