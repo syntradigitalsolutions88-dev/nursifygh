@@ -1,0 +1,804 @@
+{
+"courses": [
+{
+"course_code": "NPN-122-C",
+"course_title": "Nursing Practice and Ethics",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Nursing Ethics",
+"N&MC Code of Professional Conduct",
+"Patients' Charter in Ghana",
+"Informed Consent",
+"Confidentiality and Privacy",
+"Legal Aspects of Nursing",
+"Advocacy and Patient Rights",
+"Ethical Dilemmas in Community Nursing",
+"Professional Boundaries",
+"Whistleblowing and Accountability"
+],
+"questions": [
+{
+"topic": "Nursing Ethics",
+"question_text": "Which ethical principle recognises a patient's right to make informed decisions about their own healthcare?",
+"choices": [
+{"text": "Beneficence", "is_correct": false},
+{"text": "Autonomy", "is_correct": true},
+{"text": "Justice", "is_correct": false},
+{"text": "Fidelity", "is_correct": false}
+],
+"rationale": "Autonomy is the ethical principle that respects an individual's right to make voluntary and informed decisions about personal healthcare. Nurses should provide appropriate information and respect a patient's competent choices.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "Which ethical principle requires a nurse to act in ways that promote the well-being of patients?",
+"choices": [
+{"text": "Beneficence", "is_correct": true},
+{"text": "Veracity", "is_correct": false},
+{"text": "Autonomy", "is_correct": false},
+{"text": "Confidentiality", "is_correct": false}
+],
+"rationale": "Beneficence refers to the duty to do good and promote the welfare of patients. It guides nurses to provide care that benefits patients and supports positive health outcomes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "The ethical principle of non-maleficence is best described as:",
+"choices": [
+{"text": "Treating every patient according to social status", "is_correct": false},
+{"text": "Avoiding actions that may cause unnecessary harm", "is_correct": true},
+{"text": "Keeping every promise made to colleagues", "is_correct": false},
+{"text": "Providing patients with all available information", "is_correct": false}
+],
+"rationale": "Non-maleficence means avoiding harm or preventing unnecessary injury to patients. Nurses apply this principle by practising safely, recognising risks and avoiding interventions that may cause preventable harm.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "Which ethical principle requires fair and equitable treatment of patients regardless of their background?",
+"choices": [
+{"text": "Fidelity", "is_correct": false},
+{"text": "Veracity", "is_correct": false},
+{"text": "Justice", "is_correct": true},
+{"text": "Autonomy", "is_correct": false}
+],
+"rationale": "Justice concerns fairness and equitable distribution of healthcare resources and services. Nurses should not discriminate against patients because of their ethnicity, religion, gender, disability or socioeconomic status.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "A nurse honestly explains a patient's diagnosis and treatment options without deliberately misleading the patient. Which ethical principle is demonstrated?",
+"choices": [
+{"text": "Veracity", "is_correct": true},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Justice", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": false}
+],
+"rationale": "Veracity is the ethical obligation to tell the truth and provide accurate information. It supports trust and enables patients to make informed decisions about their healthcare.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "Which ethical principle involves keeping professional promises and fulfilling commitments made to patients?",
+"choices": [
+{"text": "Autonomy", "is_correct": false},
+{"text": "Beneficence", "is_correct": false},
+{"text": "Fidelity", "is_correct": true},
+{"text": "Justice", "is_correct": false}
+],
+"rationale": "Fidelity refers to faithfulness, trustworthiness and keeping professional commitments. Nurses demonstrate fidelity by carrying out agreed responsibilities and maintaining trustworthy relationships with patients.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "What is the primary purpose of the Nursing and Midwifery Council's Code of Professional Conduct?",
+"choices": [
+{"text": "To establish standards of professional behaviour and practice", "is_correct": true},
+{"text": "To determine the financial charges of every health facility", "is_correct": false},
+{"text": "To replace all clinical guidelines used in hospitals", "is_correct": false},
+{"text": "To regulate the employment conditions of every public servant", "is_correct": false}
+],
+"rationale": "The N&MC Code of Professional Conduct provides standards that guide nurses' professional behaviour, ethical responsibilities and relationships with patients and colleagues. It supports public protection and professional accountability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patients' Charter in Ghana",
+"question_text": "Which of the following is a fundamental right recognised in the Patients' Charter in Ghana?",
+"choices": [
+{"text": "The right to demand any treatment regardless of clinical indication", "is_correct": false},
+{"text": "The right to receive information about one's health condition and proposed care", "is_correct": true},
+{"text": "The right to access another patient's medical records", "is_correct": false},
+{"text": "The right to refuse all facility rules without consequences", "is_correct": false}
+],
+"rationale": "The Patients' Charter recognises patients' rights to information about their health and the care being provided. Such information supports participation in healthcare decisions and informed consent.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Informed Consent",
+"question_text": "Which statement best defines informed consent in nursing practice?",
+"choices": [
+{"text": "Permission obtained from a patient without explaining the proposed procedure", "is_correct": false},
+{"text": "Voluntary agreement given after receiving relevant information and understanding the proposed intervention", "is_correct": true},
+{"text": "Permission automatically assumed whenever a patient enters a hospital", "is_correct": false},
+{"text": "Approval given by a nurse on behalf of every adult patient", "is_correct": false}
+],
+"rationale": "Informed consent requires adequate information, understanding, voluntariness and decision-making capacity. A patient's agreement should not be obtained through coercion, deception or improper pressure.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Confidentiality and Privacy",
+"question_text": "What is the meaning of confidentiality in nursing practice?",
+"choices": [
+{"text": "Keeping all health information secret even from professionals involved in necessary care", "is_correct": false},
+{"text": "Protecting patient information from unauthorised access, use or disclosure", "is_correct": true},
+{"text": "Allowing family members unrestricted access to patient records", "is_correct": false},
+{"text": "Avoiding documentation of sensitive health conditions", "is_correct": false}
+],
+"rationale": "Confidentiality is the professional duty to protect information obtained through the nurse-patient relationship. Information may be shared when properly authorised or when disclosure is legally justified or required.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "In nursing practice, negligence is best described as:",
+"choices": [
+{"text": "A deliberate refusal to follow a patient's personal preference", "is_correct": false},
+{"text": "Failure to exercise the reasonable standard of care expected, resulting in harm", "is_correct": true},
+{"text": "Any disagreement between a nurse and a patient", "is_correct": false},
+{"text": "A patient's refusal to follow health education advice", "is_correct": false}
+],
+"rationale": "Negligence involves a breach of a duty of care through failure to meet the required standard, causing harm or damage. Whether negligence has occurred depends on the relevant facts and applicable legal principles.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "Why can nursing documentation be important in legal proceedings?",
+"choices": [
+{"text": "It provides a contemporaneous record of assessments, decisions and care provided", "is_correct": true},
+{"text": "It automatically proves that every nursing action was correct", "is_correct": false},
+{"text": "It removes the need for nurses to explain their professional decisions", "is_correct": false},
+{"text": "It prevents patients from making complaints", "is_correct": false}
+],
+"rationale": "Patient records may provide evidence of the care delivered, observations made and decisions taken. Accurate and timely documentation supports accountability, continuity of care and legal review.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advocacy and Patient Rights",
+"question_text": "What is patient advocacy in nursing?",
+"choices": [
+{"text": "Making every healthcare decision without consulting the patient", "is_correct": false},
+{"text": "Supporting and protecting patients' rights, interests and informed choices", "is_correct": true},
+{"text": "Persuading patients to accept every proposed intervention", "is_correct": false},
+{"text": "Prioritising the convenience of healthcare workers over patient welfare", "is_correct": false}
+],
+"rationale": "Patient advocacy involves promoting patients' rights, safety, dignity and access to appropriate information and care. Nurses help patients express their concerns and participate in decisions affecting their health.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "What are professional boundaries in nursing?",
+"choices": [
+{"text": "Limits that maintain a safe and appropriate professional relationship with patients", "is_correct": true},
+{"text": "Rules preventing nurses from communicating with patients", "is_correct": false},
+{"text": "Personal preferences that allow nurses to choose which patients to treat", "is_correct": false},
+{"text": "Restrictions that apply only when nurses work in hospitals", "is_correct": false}
+],
+"rationale": "Professional boundaries define appropriate limits within the nurse-patient relationship. They protect patients from exploitation and help maintain trust, objectivity and professional integrity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Whistleblowing and Accountability",
+"question_text": "In nursing practice, whistleblowing refers to:",
+"choices": [
+{"text": "Reporting suspected wrongdoing or unsafe practice through appropriate channels", "is_correct": true},
+{"text": "Discussing colleagues' personal lives with patients", "is_correct": false},
+{"text": "Refusing to participate in any professional meeting", "is_correct": false},
+{"text": "Publishing confidential patient information to attract public attention", "is_correct": false}
+],
+"rationale": "Whistleblowing involves raising concerns about suspected misconduct, unsafe practice or wrongdoing through appropriate reporting mechanisms. It supports patient safety, professional accountability and organisational integrity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "A competent adult patient refuses a recommended treatment after receiving an adequate explanation. Which ethical principle most directly supports respecting this decision?",
+"choices": [
+{"text": "Autonomy", "is_correct": true},
+{"text": "Beneficence", "is_correct": false},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Justice", "is_correct": false}
+],
+"rationale": "Autonomy protects the right of a competent patient to make informed decisions, including refusing recommended treatment. The nurse should explore the patient's concerns, explain possible consequences and document the discussion appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "A nurse notices that a patient is at risk of falling and places the patient in a safer position while arranging assistance. Which ethical principle is primarily demonstrated?",
+"choices": [
+{"text": "Veracity", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": true},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Autonomy", "is_correct": false}
+],
+"rationale": "Non-maleficence requires nurses to take reasonable steps to prevent avoidable harm. Reducing a patient's risk of falling is an example of applying this principle in routine care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "Two patients require the same limited emergency resource. The nurse allocates it according to clinical urgency rather than wealth or social position. Which ethical principle guides this decision?",
+"choices": [
+{"text": "Justice", "is_correct": true},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Veracity", "is_correct": false},
+{"text": "Autonomy", "is_correct": false}
+],
+"rationale": "Justice requires fair allocation of healthcare resources based on relevant and ethically defensible criteria. Clinical urgency is an appropriate consideration, whereas wealth and social status should not determine access to care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "A nurse is asked to perform a clinical procedure for which the nurse has not received appropriate training. What should the nurse do?",
+"choices": [
+{"text": "Perform the procedure to avoid criticism from colleagues", "is_correct": false},
+{"text": "Explain the limitation and seek assistance from a suitably competent practitioner", "is_correct": true},
+{"text": "Ask a patient to guide the procedure", "is_correct": false},
+{"text": "Perform the procedure without supervision and avoid documenting it", "is_correct": false}
+],
+"rationale": "Nurses are expected to practise within their competence and professional scope. Seeking appropriate assistance protects patients and demonstrates professional accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "A nurse working at a CHPS compound notices that a colleague repeatedly arrives for duty while apparently impaired by alcohol. What is the most appropriate professional response?",
+"choices": [
+{"text": "Ignore the behaviour because the colleague is experienced", "is_correct": false},
+{"text": "Take immediate steps to protect patients and report the concern through the appropriate supervisory channels", "is_correct": true},
+{"text": "Allow the colleague to continue performing procedures without supervision", "is_correct": false},
+{"text": "Discuss the matter publicly with community members", "is_correct": false}
+],
+"rationale": "A practitioner whose fitness to practise may be impaired can place patients at risk. The nurse should prioritise patient safety and report the concern through appropriate professional and institutional channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter in Ghana",
+"question_text": "A patient at a district hospital complains that staff members discuss the patient's condition loudly where other patients can hear. Which patient right is most directly affected?",
+"choices": [
+{"text": "The right to privacy and confidentiality", "is_correct": true},
+{"text": "The right to choose the hospital's financial administrator", "is_correct": false},
+{"text": "The right to determine the duty roster", "is_correct": false},
+{"text": "The right to access another patient's information", "is_correct": false}
+],
+"rationale": "Patients have a right to privacy and protection of confidential health information. Discussing identifiable clinical details where unauthorised persons can hear may violate this right.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter in Ghana",
+"question_text": "A patient receiving care at a regional hospital asks the nurse to explain the purpose of a proposed diagnostic procedure. What should the nurse do?",
+"choices": [
+{"text": "Tell the patient that asking questions is not permitted", "is_correct": false},
+{"text": "Provide an appropriate explanation within the nurse's competence and facilitate further clarification from the responsible clinician when necessary", "is_correct": true},
+{"text": "Ask the patient to sign a form without an explanation", "is_correct": false},
+{"text": "Tell the patient that only relatives are entitled to information", "is_correct": false}
+],
+"rationale": "Patients have a right to understandable information about their care and proposed procedures. The nurse should answer within professional competence and refer questions requiring further clinical explanation to the responsible practitioner.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Informed Consent",
+"question_text": "A nurse is preparing a patient for a procedure, but the patient says that the explanation was not clear. What should the nurse do?",
+"choices": [
+{"text": "Proceed because the patient has already arrived at the hospital", "is_correct": false},
+{"text": "Pause the preparation and ensure that the patient receives an adequate explanation before consent is obtained", "is_correct": true},
+{"text": "Ask another patient to explain the procedure", "is_correct": false},
+{"text": "Sign the consent form on the patient's behalf", "is_correct": false}
+],
+"rationale": "Consent is valid only when the patient has received and understood relevant information and has agreed voluntarily. The nurse should address the patient's questions and ensure that the appropriate consent process is followed before a non-emergency procedure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Informed Consent",
+"question_text": "A competent adult patient refuses a blood transfusion for personal reasons after the risks and alternatives have been explained. What should the nurse do?",
+"choices": [
+{"text": "Force the transfusion because the nurse believes it is beneficial", "is_correct": false},
+{"text": "Respect the refusal, communicate with the responsible clinical team and document the discussion", "is_correct": true},
+{"text": "Ask relatives to sign consent against the patient's decision", "is_correct": false},
+{"text": "Discharge the patient immediately without further assessment", "is_correct": false}
+],
+"rationale": "A competent adult generally has the right to refuse treatment after receiving relevant information. The nurse should ensure that the refusal is understood, communicate the decision to the clinical team and document the process appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Privacy",
+"question_text": "During a home visit, a nurse learns that a woman is living with HIV. A neighbour asks the nurse whether the woman has the infection. What should the nurse say?",
+"choices": [
+{"text": "Confirm the diagnosis because the neighbour may be concerned", "is_correct": false},
+{"text": "Explain that the nurse cannot disclose another person's private health information", "is_correct": true},
+{"text": "Provide the diagnosis without mentioning the woman's name", "is_correct": false},
+{"text": "Share the information if the neighbour promises to keep it secret", "is_correct": false}
+],
+"rationale": "A person's HIV status is confidential health information and should not be disclosed to neighbours without appropriate authority or justification. The nurse should protect the patient's privacy and avoid contributing to stigma or discrimination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Privacy",
+"question_text": "A nurse needs to discuss a patient's clinical condition with another healthcare professional who is directly involved in the patient's care. Which action is appropriate?",
+"choices": [
+{"text": "Share relevant information through an appropriate confidential channel", "is_correct": true},
+{"text": "Discuss the case in a public market", "is_correct": false},
+{"text": "Post the patient's full record in a community WhatsApp group", "is_correct": false},
+{"text": "Share the information with anyone who asks about the patient", "is_correct": false}
+],
+"rationale": "Relevant information may be shared with authorised professionals for legitimate care purposes. The nurse should limit disclosure to what is necessary and use appropriate confidential communication channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "A nurse administers a medication and later realises that the wrong dose was given. What should the nurse do first?",
+"choices": [
+{"text": "Alter the medication record to hide the error", "is_correct": false},
+{"text": "Assess the patient promptly and initiate appropriate measures to reduce harm", "is_correct": true},
+{"text": "Wait until the next shift to inform anyone", "is_correct": false},
+{"text": "Blame the pharmacy without investigating the incident", "is_correct": false}
+],
+"rationale": "The immediate priority after a medication error is patient safety and assessment for potential harm. The nurse should promptly notify the appropriate clinician, follow incident-reporting procedures and document the facts accurately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "A nurse discovers that a colleague has entered observations in a patient's record without actually assessing the patient. What is the most appropriate response?",
+"choices": [
+{"text": "Ignore the entry because the patient appears comfortable", "is_correct": false},
+{"text": "Raise the concern through appropriate supervisory channels and ensure the patient's condition is properly assessed", "is_correct": true},
+{"text": "Copy the same observations into other patient records", "is_correct": false},
+{"text": "Destroy the patient's record to prevent further errors", "is_correct": false}
+],
+"rationale": "Recording observations that were not performed compromises the accuracy and integrity of the patient record. The concern should be addressed through appropriate channels while ensuring that the patient receives a genuine assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Patient Rights",
+"question_text": "A patient at a CHPS compound reports that a healthcare worker has repeatedly spoken to the patient in a humiliating manner. What should the community health nurse do?",
+"choices": [
+{"text": "Dismiss the complaint because the worker is senior", "is_correct": false},
+{"text": "Listen respectfully, protect the patient's dignity and guide the patient through the appropriate complaint process", "is_correct": true},
+{"text": "Tell the patient to stop attending the facility", "is_correct": false},
+{"text": "Publicly accuse the healthcare worker before establishing the facts", "is_correct": false}
+],
+"rationale": "Patient advocacy includes protecting dignity and supporting patients who raise concerns about their care. The nurse should listen objectively, explain available complaint channels and ensure that the concern is handled appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Patient Rights",
+"question_text": "A patient with a disability arrives at a district hospital and has difficulty accessing the consultation area. Which action best demonstrates patient advocacy?",
+"choices": [
+{"text": "Tell the patient to return when another person is available", "is_correct": false},
+{"text": "Help arrange reasonable access and appropriate assistance while respecting the patient's dignity", "is_correct": true},
+{"text": "Ask the patient to abandon the consultation", "is_correct": false},
+{"text": "Allow other patients to decide whether the patient should receive care", "is_correct": false}
+],
+"rationale": "Advocacy requires supporting equitable access to healthcare and protecting the dignity of people with disabilities. Reasonable assistance should be arranged without unnecessary discrimination or loss of patient autonomy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Dilemmas in Community Nursing",
+"question_text": "A community health nurse visits a household where a mother refuses immunisation for her eligible child because of misinformation. What is the most appropriate initial response?",
+"choices": [
+{"text": "Threaten the mother with punishment", "is_correct": false},
+{"text": "Listen to her concerns, provide accurate information and discuss the benefits and risks of immunisation", "is_correct": true},
+{"text": "Vaccinate the child secretly", "is_correct": false},
+{"text": "Record the child as immunised without administering the vaccine", "is_correct": false}
+],
+"rationale": "The nurse should use respectful communication and evidence-based health education to address the mother's concerns. Coercion, secret vaccination and falsification of records are inappropriate and undermine trust and ethical practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Dilemmas in Community Nursing",
+"question_text": "A nurse conducting a home visit finds that an older adult is being neglected by family members. Which action is most appropriate?",
+"choices": [
+{"text": "Ignore the situation because it occurs within a private household", "is_correct": false},
+{"text": "Assess the person's immediate safety and care needs, document objective findings and follow appropriate referral and reporting procedures", "is_correct": true},
+{"text": "Publicly shame the family in the community", "is_correct": false},
+{"text": "Remove the person from the household without following any procedure", "is_correct": false}
+],
+"rationale": "The nurse has a responsibility to identify risks to vulnerable people and respond appropriately. Assessment, objective documentation and referral through established channels help protect the person while respecting legal and professional procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A patient offers a nurse an expensive personal gift in appreciation for the care received. What is the most appropriate response?",
+"choices": [
+{"text": "Accept the gift secretly", "is_correct": false},
+{"text": "Politely decline or manage the offer according to professional and facility policies", "is_correct": true},
+{"text": "Demand a more expensive gift", "is_correct": false},
+{"text": "Promise preferential treatment in exchange for the gift", "is_correct": false}
+],
+"rationale": "Accepting expensive gifts may create conflicts of interest or the appearance of exploitation and preferential treatment. Nurses should maintain professional boundaries and follow applicable institutional guidance on gifts.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse becomes close to a patient during repeated home visits and begins requesting personal loans from the patient's family. Which professional concern does this raise?",
+"choices": [
+{"text": "Appropriate therapeutic communication", "is_correct": false},
+{"text": "A breach of professional boundaries", "is_correct": true},
+{"text": "Effective patient advocacy", "is_correct": false},
+{"text": "Appropriate delegation of responsibilities", "is_correct": false}
+],
+"rationale": "Requesting personal loans from patients or their relatives can exploit the professional relationship and create inappropriate financial dependence. Nurses must maintain clear boundaries and avoid using their position for personal benefit.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Whistleblowing and Accountability",
+"question_text": "A nurse observes that expired medicines are being kept for use at a CHPS compound. What should the nurse do?",
+"choices": [
+{"text": "Use the medicines before they are noticed", "is_correct": false},
+{"text": "Prevent their use, report the issue through appropriate channels and follow procedures for handling expired stock", "is_correct": true},
+{"text": "Mix the expired medicines with unexpired stock", "is_correct": false},
+{"text": "Sell the medicines to community members at a reduced price", "is_correct": false}
+],
+"rationale": "Expired medicines should not be administered because their quality, safety or effectiveness may no longer be assured. The nurse should protect patients and report the stock issue for appropriate disposal or management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "A nurse is documenting care provided during a home visit. Which entry is most appropriate?",
+"choices": [
+{"text": "Patient was difficult and refused to cooperate", "is_correct": false},
+{"text": "Patient reported dizziness on standing; blood pressure was assessed and findings communicated to the supervising clinician", "is_correct": true},
+{"text": "Patient is probably exaggerating symptoms", "is_correct": false},
+{"text": "Everything was fine during the visit", "is_correct": false}
+],
+"rationale": "The second entry records the patient's reported symptom, an assessment and the action taken in objective language. Professional documentation should avoid judgemental comments and vague statements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "A nurse is assigned to a community where the nurse's personal beliefs differ from those of some residents. How should the nurse approach care?",
+"choices": [
+{"text": "Refuse care to residents whose beliefs are different", "is_correct": false},
+{"text": "Provide respectful, non-discriminatory care while maintaining professional standards", "is_correct": true},
+{"text": "Attempt to force residents to adopt the nurse's beliefs", "is_correct": false},
+{"text": "Provide care only to people who share the nurse's beliefs", "is_correct": false}
+],
+"rationale": "Professional nursing practice requires respect for patients' dignity, beliefs and cultural backgrounds. Personal differences should not result in discrimination or denial of appropriate care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Informed Consent",
+"question_text": "A patient who is about to undergo a procedure appears confused and cannot explain the information provided. What should the nurse do?",
+"choices": [
+{"text": "Assume consent because the patient is physically present", "is_correct": false},
+{"text": "Raise concerns about the patient's understanding and ensure decision-making capacity and the consent process are appropriately assessed", "is_correct": true},
+{"text": "Ask another patient to sign the consent form", "is_correct": false},
+{"text": "Proceed because the procedure has already been scheduled", "is_correct": false}
+],
+"rationale": "Valid consent requires that the person has the capacity to make the particular decision and understands the relevant information. The nurse should alert the responsible clinician when there are concerns about understanding or decision-making capacity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Privacy",
+"question_text": "During a home visit, a nurse needs to assess a patient's private health concern. Which action best protects the patient's privacy?",
+"choices": [
+{"text": "Discuss the concern in front of all neighbours", "is_correct": false},
+{"text": "Ask to speak with the patient in a private and appropriate setting", "is_correct": true},
+{"text": "Share the information with the community leader without justification", "is_correct": false},
+{"text": "Discuss the patient's condition loudly at the household entrance", "is_correct": false}
+],
+"rationale": "Privacy involves protecting patients from unnecessary exposure during discussions, examinations and care. The nurse should make reasonable arrangements for a confidential conversation, taking account of the patient's preferences and safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Patient Rights",
+"question_text": "A patient complains that the patient cannot understand the language used during a clinical explanation. What should the nurse do?",
+"choices": [
+{"text": "Continue explaining in the same language", "is_correct": false},
+{"text": "Arrange appropriate language assistance so the patient can understand the information", "is_correct": true},
+{"text": "Ask the patient to sign the consent form without further explanation", "is_correct": false},
+{"text": "Tell the patient that language difficulties remove the right to information", "is_correct": false}
+],
+"rationale": "Patients should receive information in a form they can understand so they can participate meaningfully in care decisions. Appropriate language assistance supports communication, autonomy and informed consent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "A nurse gives the same respectful attention to patients with NHIS coverage and patients paying privately. Which ethical principle is demonstrated?",
+"choices": [
+{"text": "Justice", "is_correct": true},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Veracity", "is_correct": false},
+{"text": "Autonomy", "is_correct": false}
+],
+"rationale": "Justice requires fair and non-discriminatory treatment of patients. A person's insurance or payment arrangement should not be used as a reason to provide disrespectful or clinically inappropriate care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A community health nurse is conducting a routine home visit when a caregiver reports that a child has suddenly developed severe difficulty breathing and bluish lips. What should the nurse do first?",
+"choices": [
+{"text": "Complete the household assessment form", "is_correct": false},
+{"text": "Initiate an immediate emergency assessment and arrange urgent referral", "is_correct": true},
+{"text": "Advise the caregiver to bring the child to the next child welfare clinic", "is_correct": false},
+{"text": "Continue with the planned health education session", "is_correct": false}
+],
+"rationale": "Severe breathing difficulty and bluish lips suggest potentially life-threatening respiratory compromise. Immediate emergency assessment, appropriate initial care and urgent referral take priority over routine home-visit activities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "At a CHPS compound, a patient develops heavy bleeding from a wound while another patient requests a routine dressing change. What is the priority action?",
+"choices": [
+{"text": "Complete the routine dressing change first", "is_correct": false},
+{"text": "Attend immediately to the patient with heavy bleeding and initiate appropriate bleeding control", "is_correct": true},
+{"text": "Ask both patients to return the following day", "is_correct": false},
+{"text": "Complete the daily attendance register", "is_correct": false}
+],
+"rationale": "Heavy bleeding can rapidly lead to circulatory compromise and requires immediate intervention. Routine wound care should be delayed until the urgent threat has been addressed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "A nurse realises that an entry in a patient's record contains an incorrect date. What is the appropriate action?",
+"choices": [
+{"text": "Erase the entry completely", "is_correct": false},
+{"text": "Correct the error according to documentation policy while preserving the original entry and audit trail", "is_correct": true},
+{"text": "Remove the entire page from the patient's file", "is_correct": false},
+{"text": "Leave the error uncorrected because the clinical information is accurate", "is_correct": false}
+],
+"rationale": "Corrections should preserve the integrity and traceability of the original record. The nurse should follow the approved correction procedure, ensuring that the accurate information is clearly identifiable and authenticated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Dilemmas in Community Nursing",
+"question_text": "A community health nurse discovers that a patient cannot afford transport to a district hospital for a recommended referral. What is the most appropriate response?",
+"choices": [
+{"text": "Cancel the referral because the patient cannot pay for transport", "is_correct": false},
+{"text": "Explore available referral support and communicate with appropriate services while explaining the importance of timely care", "is_correct": true},
+{"text": "Tell the patient to borrow money from any available person without further assistance", "is_correct": false},
+{"text": "Record that the patient refused referral without discussing the barrier", "is_correct": false}
+],
+"rationale": "The nurse should recognise financial and transport barriers that may prevent access to necessary healthcare. Advocacy includes helping the patient explore available support and coordinating appropriate referral arrangements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A patient sends a nurse repeated personal messages late at night that are unrelated to healthcare. What should the nurse do?",
+"choices": [
+{"text": "Encourage a personal relationship with the patient", "is_correct": false},
+{"text": "Maintain professional boundaries and redirect communication to appropriate healthcare channels", "is_correct": true},
+{"text": "Share personal and intimate information to build trust", "is_correct": false},
+{"text": "Promise special treatment in exchange for continued communication", "is_correct": false}
+],
+"rationale": "Professional boundaries help keep the nurse-patient relationship focused on healthcare needs. The nurse should communicate respectfully while maintaining appropriate limits and using approved channels for clinical contact.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Whistleblowing and Accountability",
+"question_text": "A nurse observes that a colleague has been collecting unofficial payments from patients for services that should be provided through the facility's approved payment process. What should the nurse do?",
+"choices": [
+{"text": "Participate so that the nurse can receive a share", "is_correct": false},
+{"text": "Document relevant facts and report the suspected misconduct through appropriate institutional channels", "is_correct": true},
+{"text": "Ignore the matter because the colleague is senior", "is_correct": false},
+{"text": "Publicly publish the patients' names and payment details", "is_correct": false}
+],
+"rationale": "Unofficial collection of patient payments may constitute misconduct and can undermine trust and equitable access to care. The nurse should report the concern responsibly, provide factual information and protect patient confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "A nurse provides pain relief to a patient after assessing the patient's condition and checking the prescribed treatment. Which ethical principle is most directly demonstrated?",
+"choices": [
+{"text": "Beneficence", "is_correct": true},
+{"text": "Veracity", "is_correct": false},
+{"text": "Justice", "is_correct": false},
+{"text": "Fidelity", "is_correct": false}
+],
+"rationale": "Beneficence requires nurses to take actions that promote patient welfare and relieve suffering. Providing appropriate pain management after assessment is an example of promoting the patient's well-being.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter in Ghana",
+"question_text": "A patient at a regional hospital asks to know the name and professional role of the person providing nursing care. What is the most appropriate response?",
+"choices": [
+{"text": "Refuse because patients are not allowed to know who is caring for them", "is_correct": false},
+{"text": "Identify oneself and explain one's professional role appropriately", "is_correct": true},
+{"text": "Give another nurse's name to avoid questions", "is_correct": false},
+{"text": "Tell the patient that professional identification is a private matter", "is_correct": false}
+],
+"rationale": "Patients are entitled to respectful communication and relevant information about the healthcare professionals involved in their care. Identifying oneself promotes transparency, trust and professional accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A community health nurse is preparing to leave for scheduled home visits when the CHPS compound receives a report of a pregnant woman experiencing convulsions. What should the nurse do first?",
+"choices": [
+{"text": "Continue with the scheduled home visits", "is_correct": false},
+{"text": "Prioritise emergency response, arrange immediate assessment and urgent referral", "is_correct": true},
+{"text": "Wait for the next routine antenatal clinic", "is_correct": false},
+{"text": "Ask the family to monitor the woman without contacting a health facility", "is_correct": false}
+],
+"rationale": "Convulsions during pregnancy may indicate eclampsia, a life-threatening obstetric emergency. Immediate emergency response and urgent referral are required, and routine activities must be postponed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "A nurse is asked to sign a patient's record confirming that a wound dressing was performed, although the nurse did not perform or observe the procedure. What should the nurse do?",
+"choices": [
+{"text": "Sign because the colleague is trusted", "is_correct": false},
+{"text": "Refuse to authenticate an event that cannot be verified and follow the appropriate reporting procedure", "is_correct": true},
+{"text": "Sign and add a different date", "is_correct": false},
+{"text": "Ask another staff member to sign in the nurse's place", "is_correct": false}
+],
+"rationale": "Signing an entry without a proper basis may create a false or misleading patient record. Nurses should authenticate only documentation for which they can take professional responsibility and should raise concerns through appropriate channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Dilemmas in Community Nursing",
+"question_text": "A nurse learns during a home visit that a competent adult patient does not want the patient's diagnosis disclosed to relatives. The relatives later ask the nurse for details. What should the nurse do?",
+"choices": [
+{"text": "Disclose the diagnosis because relatives are entitled to all health information", "is_correct": false},
+{"text": "Respect the patient's confidentiality and explain that information cannot be disclosed without appropriate authorisation or legal justification", "is_correct": true},
+{"text": "Tell the relatives the diagnosis but ask them not to share it", "is_correct": false},
+{"text": "Give the relatives access to the patient's complete record", "is_correct": false}
+],
+"rationale": "A competent adult patient's confidentiality should be respected, including in relation to family members. Disclosure requires appropriate consent, legal authority or another recognised justification.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Informed Consent",
+"question_text": "A nurse explains a proposed procedure to a patient, but the patient appears frightened and agrees only after the nurse threatens to withhold all future care. Which conclusion is most appropriate?",
+"choices": [
+{"text": "The consent is valid because the patient verbally agreed", "is_correct": false},
+{"text": "The consent may not be valid because the patient's decision was influenced by coercion", "is_correct": true},
+{"text": "The consent is valid because the nurse is authorised to make the decision", "is_correct": false},
+{"text": "The consent is valid if another nurse witnesses the signature", "is_correct": false}
+],
+"rationale": "Valid informed consent must be voluntary and free from coercion or undue pressure. The nurse should stop the process, address the patient's concerns and ensure that the decision is made freely after adequate information is provided.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "A CHPS compound has one available bed and two patients require admission for observation. One patient has signs of shock, while the other is clinically stable. Which decision best reflects ethical and clinical prioritisation?",
+"choices": [
+{"text": "Admit the patient who arrived first regardless of clinical condition", "is_correct": false},
+{"text": "Prioritise the patient with signs of shock for immediate emergency management and arrange appropriate care for the stable patient", "is_correct": true},
+{"text": "Admit the patient who can pay more", "is_correct": false},
+{"text": "Allow the patients' relatives to decide who receives care", "is_correct": false}
+],
+"rationale": "The patient with signs of shock has an immediate threat to life and requires urgent intervention. Ethical resource allocation should consider clinical urgency and fairness rather than payment ability or social influence.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "A patient develops a pressure injury after prolonged immobility in a hospital. The record shows that risk assessments and repositioning were not documented. Which statement is the most appropriate legal and professional interpretation?",
+"choices": [
+{"text": "The absence of documentation automatically proves that negligence occurred", "is_correct": false},
+{"text": "The missing documentation raises concerns about whether appropriate preventive care was assessed, planned and provided", "is_correct": true},
+{"text": "The pressure injury cannot be related to nursing care", "is_correct": false},
+{"text": "The nurse is legally responsible for every pressure injury regardless of circumstances", "is_correct": false}
+],
+"rationale": "Missing documentation may make it difficult to establish what assessments and preventive interventions were performed. However, negligence must be determined from the full facts, including the duty of care, standard of care, breach and resulting harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Confidentiality and Privacy",
+"question_text": "A community health nurse stores identifiable patient information on a personal phone that has no password or other security protection. The phone is later lost. Which professional concern is most significant?",
+"choices": [
+{"text": "The nurse has improved access to patient information", "is_correct": false},
+{"text": "The loss may expose confidential patient information to unauthorised access", "is_correct": true},
+{"text": "The loss automatically transfers ownership of the records to the finder", "is_correct": false},
+{"text": "The incident has no significance if the nurse remembers the patients' names", "is_correct": false}
+],
+"rationale": "Unprotected storage of identifiable health information creates a risk of unauthorised disclosure when a device is lost. The nurse should report the incident promptly and follow applicable facility procedures for responding to information security breaches.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advocacy and Patient Rights",
+"question_text": "A patient with limited financial resources is repeatedly asked to delay an urgent assessment while patients who can pay privately are attended to first, despite having less urgent conditions. Which ethical concern is most evident?",
+"choices": [
+{"text": "Appropriate application of patient autonomy", "is_correct": false},
+{"text": "Potential discrimination and violation of the principle of justice", "is_correct": true},
+{"text": "Appropriate professional boundary management", "is_correct": false},
+{"text": "A normal application of fidelity", "is_correct": false}
+],
+"rationale": "Prioritising patients according to ability to pay rather than clinical need raises concerns about inequity and discrimination. The nurse should advocate for fair access and raise the concern through appropriate channels.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Dilemmas in Community Nursing",
+"question_text": "During a home visit, a nurse discovers that a child may be experiencing physical abuse. The caregiver asks the nurse not to tell anyone because the matter is a family issue. What should the nurse do?",
+"choices": [
+{"text": "Promise absolute secrecy and leave without assessing the child", "is_correct": false},
+{"text": "Prioritise the child's safety, document objective findings and follow applicable child protection reporting and referral procedures", "is_correct": true},
+{"text": "Confront the suspected perpetrator publicly without considering the child's safety", "is_correct": false},
+{"text": "Ignore the concern unless the child makes a formal written complaint", "is_correct": false}
+],
+"rationale": "A suspected child protection concern must be handled with the child's safety and best interests as central considerations. The nurse should avoid promising absolute secrecy and should use established reporting and referral pathways rather than conducting an unauthorised investigation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Whistleblowing and Accountability",
+"question_text": "A nurse reports a colleague's suspected unsafe practice to the supervisor using factual information. The colleague later accuses the nurse of disloyalty. Which professional judgement is most appropriate?",
+"choices": [
+{"text": "The nurse acted improperly because loyalty requires silence", "is_correct": false},
+{"text": "The nurse demonstrated professional accountability by raising a patient safety concern through an appropriate channel", "is_correct": true},
+{"text": "The nurse should withdraw the report to maintain friendship", "is_correct": false},
+{"text": "The nurse should publish the allegation on social media", "is_correct": false}
+],
+"rationale": "Professional accountability requires nurses to act when they identify credible risks to patient safety. Concerns should be raised honestly, objectively and through appropriate channels rather than concealed or publicised irresponsibly.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse provides repeated home visits to a patient and begins using the patient's personal information to obtain money from the patient's relatives. Which conclusion is most appropriate?",
+"choices": [
+{"text": "The nurse is demonstrating effective community mobilisation", "is_correct": false},
+{"text": "The nurse is exploiting the professional relationship and breaching professional boundaries", "is_correct": true},
+{"text": "The nurse is applying the principle of beneficence", "is_correct": false},
+{"text": "The nurse is appropriately advocating for the patient", "is_correct": false}
+],
+"rationale": "Using a patient's private information for personal financial gain is an abuse of professional trust. It violates confidentiality and professional boundaries and may constitute serious professional misconduct.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "At a district hospital, a nurse receives reports about four patients: one has sudden facial weakness and slurred speech, another requests routine medication advice, a third needs a dressing review, and a fourth is waiting for a health education session. Which patient requires the most immediate attention?",
+"choices": [
+{"text": "The patient with sudden facial weakness and slurred speech", "is_correct": true},
+{"text": "The patient requesting routine medication advice", "is_correct": false},
+{"text": "The patient waiting for a dressing review", "is_correct": false},
+{"text": "The patient waiting for health education", "is_correct": false}
+],
+"rationale": "Sudden facial weakness and slurred speech may indicate an acute stroke and require urgent assessment and escalation. Prompt intervention is important because delays may affect treatment options and patient outcomes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nursing Ethics",
+"question_text": "A nurse knows that a patient requires urgent referral, but the patient's family requests that the patient remain at home because they fear community criticism. The patient is competent and agrees to referral. What should the nurse do?",
+"choices": [
+{"text": "Follow the family's preference because relatives always make healthcare decisions", "is_correct": false},
+{"text": "Support the patient's informed decision, explain the urgency and facilitate appropriate referral", "is_correct": true},
+{"text": "Cancel the referral to avoid conflict with the family", "is_correct": false},
+{"text": "Disclose the patient's condition to community members to pressure the family", "is_correct": false}
+],
+"rationale": "A competent adult patient's informed decision should guide the care decision rather than an overriding family preference. The nurse should respect autonomy, address concerns sensitively and facilitate safe access to the recommended care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Aspects of Nursing",
+"question_text": "A nurse administers a medication without checking the patient's allergy history. The patient develops a serious allergic reaction. Which elements are most relevant when assessing possible negligence?",
+"choices": [
+{"text": "The nurse's age, length of service and personal beliefs", "is_correct": false},
+{"text": "The duty of care, expected standard of practice, possible breach, causation and resulting harm", "is_correct": true},
+{"text": "The patient's occupation and social status", "is_correct": false},
+{"text": "The number of patients waiting at the facility alone", "is_correct": false}
+],
+"rationale": "A negligence assessment considers whether a duty existed, whether the required standard was breached, and whether the breach caused legally recognised harm. Failure to check relevant allergy information may be significant, but the full circumstances must be examined.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patients' Charter in Ghana",
+"question_text": "A patient at a regional hospital asks for an explanation of the estimated cost of a proposed service and how the NHIS may apply. The nurse dismisses the request and tells the patient to pay without further discussion. Which response would better uphold the patient's rights?",
+"choices": [
+{"text": "Refuse to discuss any aspect of the patient's financial concern", "is_correct": false},
+{"text": "Direct the patient to the appropriate billing or NHIS personnel and facilitate clear information about applicable charges and coverage", "is_correct": true},
+{"text": "Promise that NHIS will cover every possible service", "is_correct": false},
+{"text": "Tell the patient to borrow money before asking further questions", "is_correct": false}
+],
+"rationale": "Patients should receive appropriate information about services and relevant financial arrangements. The nurse should avoid making unsupported promises about NHIS coverage and should help the patient obtain accurate information from the responsible personnel.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Dilemmas in Community Nursing",
+"question_text": "A community health nurse is caring for a competent adult with a serious infectious disease. The patient refuses to inform a close contact who may be at risk. Which response is most appropriate?",
+"choices": [
+{"text": "Immediately disclose all patient information to the community", "is_correct": false},
+{"text": "Encourage the patient to take appropriate steps to protect the contact, seek guidance through authorised public health procedures and disclose only where legally justified", "is_correct": true},
+{"text": "Ignore the possible risk to the contact under all circumstances", "is_correct": false},
+{"text": "Post the patient's diagnosis on a public noticeboard", "is_correct": false}
+],
+"rationale": "This situation requires balancing confidentiality with the duty to prevent serious harm and comply with applicable public health requirements. The nurse should seek appropriate professional guidance and avoid unnecessary disclosure beyond what is legally and ethically justified.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}

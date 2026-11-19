@@ -1,0 +1,1008 @@
+{
+"courses": [
+{
+"course_code": "NMI-111-C",
+"course_title": "Nursing Management and Informatics",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Principles of Nursing Management",
+"Leadership and Delegation in Nursing",
+"Time Management and Prioritization",
+"Patient Records and Documentation",
+"Introduction to Health Informatics",
+"Data Collection and Reporting in Community Health",
+"Confidentiality and Data Security",
+"Use of Technology in Community Nursing",
+"Quality Improvement and Audit",
+"Resource Management"
+],
+"questions": [
+{
+"topic": "Principles of Nursing Management",
+"question_text": "Which of the following best describes planning as a function of nursing management?",
+"choices": [
+{"text": "Assigning duties to staff members according to their roles", "is_correct": false},
+{"text": "Determining objectives and deciding in advance how to achieve them", "is_correct": true},
+{"text": "Evaluating staff performance against established standards", "is_correct": false},
+{"text": "Motivating staff to carry out assigned responsibilities", "is_correct": false}
+],
+"rationale": "Planning involves setting objectives, identifying priorities and determining the activities and resources required to achieve desired outcomes. It provides direction for other management functions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "Which management function involves grouping activities, assigning responsibilities and establishing working relationships?",
+"choices": [
+{"text": "Planning", "is_correct": false},
+{"text": "Organizing", "is_correct": true},
+{"text": "Controlling", "is_correct": false},
+{"text": "Evaluating", "is_correct": false}
+],
+"rationale": "Organizing involves arranging tasks, personnel and resources to accomplish established objectives. It clarifies responsibilities and reporting relationships within a health facility.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "In nursing management, directing primarily involves which activity?",
+"choices": [
+{"text": "Developing the annual budget", "is_correct": false},
+{"text": "Guiding, supervising and motivating staff", "is_correct": true},
+{"text": "Preparing monthly morbidity statistics", "is_correct": false},
+{"text": "Comparing expenditure with the approved budget", "is_correct": false}
+],
+"rationale": "Directing is the management function concerned with providing leadership, guidance, communication and motivation. It helps staff understand and perform their assigned responsibilities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "Which of the following best explains the controlling function of nursing management?",
+"choices": [
+{"text": "Recruiting additional health workers", "is_correct": false},
+{"text": "Setting the objectives of a community programme", "is_correct": false},
+{"text": "Monitoring performance and correcting deviations from standards", "is_correct": true},
+{"text": "Distributing duties among community health nurses", "is_correct": false}
+],
+"rationale": "Controlling involves measuring actual performance, comparing it with established standards and taking corrective action where necessary. It helps ensure that nursing activities achieve their intended objectives.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "Which leadership style encourages team members to participate in decision-making?",
+"choices": [
+{"text": "Autocratic leadership", "is_correct": false},
+{"text": "Democratic leadership", "is_correct": true},
+{"text": "Laissez-faire leadership", "is_correct": false},
+{"text": "Bureaucratic leadership", "is_correct": false}
+],
+"rationale": "Democratic leadership involves consultation and participation of team members in decision-making. It can improve staff commitment, communication and cooperation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "What is delegation in nursing?",
+"choices": [
+{"text": "Transferring all professional accountability to another worker", "is_correct": false},
+{"text": "Assigning a task to a competent person while retaining appropriate accountability", "is_correct": true},
+{"text": "Allowing every staff member to perform any clinical procedure", "is_correct": false},
+{"text": "Avoiding responsibility for activities performed by junior staff", "is_correct": false}
+],
+"rationale": "Delegation is the assignment of responsibility for performing a specific task to a person with the necessary competence. The nurse who delegates remains accountable for the appropriateness of the delegation and the required supervision.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "Which principle should guide a community health nurse when prioritizing competing patient-care activities?",
+"choices": [
+{"text": "Completing the easiest activity first", "is_correct": false},
+{"text": "Attending to patients according to clinical urgency and risk", "is_correct": true},
+{"text": "Serving patients in the order of their social status", "is_correct": false},
+{"text": "Performing administrative duties before urgent clinical care", "is_correct": false}
+],
+"rationale": "Clinical prioritization is based on the severity of a patient's condition, the risk of deterioration and the potential consequences of delay. Urgent threats to life and safety take precedence over routine activities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "What is the primary purpose of maintaining accurate patient records?",
+"choices": [
+{"text": "To provide evidence of care and support continuity of treatment", "is_correct": true},
+{"text": "To replace communication between healthcare professionals", "is_correct": false},
+{"text": "To prevent patients from accessing their health information", "is_correct": false},
+{"text": "To record only the financial transactions of the facility", "is_correct": false}
+],
+"rationale": "Patient records provide a documented account of assessment, care, treatment and outcomes. They support continuity of care, clinical communication, accountability, audit and appropriate decision-making.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "Which documentation practice is most appropriate when recording nursing care?",
+"choices": [
+{"text": "Recording care at the end of the month", "is_correct": false},
+{"text": "Using vague expressions to save time", "is_correct": false},
+{"text": "Making timely, accurate, objective and legible entries", "is_correct": true},
+{"text": "Documenting interventions before they are performed", "is_correct": false}
+],
+"rationale": "Nursing documentation should accurately reflect the care provided and the patient's response. Entries should be timely, objective, complete and attributable to the person making them.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "What is health informatics?",
+"choices": [
+{"text": "The study of hospital building design", "is_correct": false},
+{"text": "The application of information and communication technologies to health information and healthcare", "is_correct": true},
+{"text": "The process of diagnosing diseases without patient assessment", "is_correct": false},
+{"text": "The management of medical equipment without using information", "is_correct": false}
+],
+"rationale": "Health informatics combines health sciences, information science and technology to collect, manage, analyse and use health information. It supports clinical care, public health, administration and health-system decision-making.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "What does the abbreviation EHR represent in healthcare informatics?",
+"choices": [
+{"text": "Electronic Health Record", "is_correct": true},
+{"text": "Emergency Hospital Register", "is_correct": false},
+{"text": "External Health Referral", "is_correct": false},
+{"text": "Electronic Hospital Revenue", "is_correct": false}
+],
+"rationale": "An Electronic Health Record is a digital record of a patient's health information maintained for use by authorised healthcare professionals. It can support documentation, clinical decision-making and continuity of care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "In Ghana's health information system, what is the main purpose of DHIMS2?",
+"choices": [
+{"text": "To issue professional licences to nurses", "is_correct": false},
+{"text": "To manage the payroll of all health workers", "is_correct": false},
+{"text": "To collect, manage, analyse and report routine health-service data", "is_correct": true},
+{"text": "To replace all patient consultations with online services", "is_correct": false}
+],
+"rationale": "DHIMS2 is used for routine health information management, including the aggregation, analysis and reporting of health-service data. The information supports monitoring, planning and decision-making at different levels of the health system.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Data Collection and Reporting in Community Health",
+"question_text": "Which of the following is an example of primary data collection in community health nursing?",
+"choices": [
+{"text": "Reviewing a published national health report", "is_correct": false},
+{"text": "Interviewing a household during a community home visit", "is_correct": true},
+{"text": "Reading a previous district annual report", "is_correct": false},
+{"text": "Using an existing journal article on malaria", "is_correct": false}
+],
+"rationale": "Primary data are collected directly from original sources for a specific purpose. Interviewing a household during a home visit is a direct method of obtaining information from community members.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "What does confidentiality mean in the management of patient information?",
+"choices": [
+{"text": "Making all patient records available to the public", "is_correct": false},
+{"text": "Protecting patient information from unauthorised access or disclosure", "is_correct": true},
+{"text": "Allowing staff to discuss patient details in public places", "is_correct": false},
+{"text": "Deleting all patient records after every consultation", "is_correct": false}
+],
+"rationale": "Confidentiality is the duty to protect private patient information from inappropriate access, use or disclosure. Information should be shared only with authorised persons for legitimate purposes, subject to applicable legal and professional requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "What is a nursing audit?",
+"choices": [
+{"text": "A systematic examination of nursing practice or records against established standards", "is_correct": true},
+{"text": "A method of recruiting nurses for a health facility", "is_correct": false},
+{"text": "A process of issuing medicines to patients", "is_correct": false},
+{"text": "An informal discussion unrelated to care standards", "is_correct": false}
+],
+"rationale": "A nursing audit systematically evaluates the quality of nursing care by examining practice, documentation or outcomes against agreed standards. Findings can identify gaps and guide improvements in service delivery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Resource Management",
+"question_text": "Which of the following is an example of a material resource in a CHPS compound?",
+"choices": [
+{"text": "Community health nurse", "is_correct": false},
+{"text": "Monthly operational budget", "is_correct": false},
+{"text": "Blood pressure monitoring equipment", "is_correct": true},
+{"text": "Leadership and supervision", "is_correct": false}
+],
+"rationale": "Material resources are physical supplies and equipment used to deliver healthcare services. Examples include blood pressure monitors, weighing scales, vaccines, stationery and clinical consumables.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "A community health nurse in charge prepares a weekly duty roster and assigns specific responsibilities to team members. Which management function is being demonstrated?",
+"choices": [
+{"text": "Organizing", "is_correct": true},
+{"text": "Controlling", "is_correct": false},
+{"text": "Auditing", "is_correct": false},
+{"text": "Budgeting", "is_correct": false}
+],
+"rationale": "Preparing a duty roster and allocating responsibilities are organizing activities because they arrange personnel and tasks to achieve service objectives. Clear allocation of duties also helps prevent duplication and omissions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "A CHPS compound has recorded an increase in childhood malaria cases. The community health officer sets a target to reduce cases through health education and environmental sanitation activities. Which management function is primarily demonstrated?",
+"choices": [
+{"text": "Controlling", "is_correct": false},
+{"text": "Planning", "is_correct": true},
+{"text": "Directing", "is_correct": false},
+{"text": "Staff appraisal", "is_correct": false}
+],
+"rationale": "The officer is identifying a problem, setting an objective and determining interventions to achieve a desired outcome. These activities are central to the planning function of management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "During a monthly review, a community health officer discovers that only 60% of the planned home visits were completed. What should the officer do as part of the controlling function?",
+"choices": [
+{"text": "Ignore the difference because some visits were completed", "is_correct": false},
+{"text": "Compare performance with the target, identify causes and take corrective action", "is_correct": true},
+{"text": "Immediately dismiss the staff responsible", "is_correct": false},
+{"text": "Change the recorded target to match the completed visits", "is_correct": false}
+],
+"rationale": "Controlling requires comparing actual performance with planned standards and identifying reasons for any deviation. Appropriate corrective action should then be taken to improve performance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "A nurse in charge asks a trained community health nurse to conduct an approved health education session on malaria prevention while the officer attends a district meeting. Which action best demonstrates appropriate delegation?",
+"choices": [
+{"text": "Giving the task without explaining the expected outcome", "is_correct": false},
+{"text": "Confirming the staff member's competence, clarifying the task and arranging appropriate follow-up", "is_correct": true},
+{"text": "Transferring all responsibility for the CHPS compound to the staff member", "is_correct": false},
+{"text": "Asking an untrained volunteer to perform any clinical procedure required", "is_correct": false}
+],
+"rationale": "Appropriate delegation requires matching the task to the person's competence and scope of practice. The nurse should communicate expectations and provide supervision or follow-up appropriate to the task.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "A newly posted nurse is unfamiliar with the reporting procedure at a district hospital. Which leadership action by the supervisor is most appropriate?",
+"choices": [
+{"text": "Criticising the nurse for asking questions", "is_correct": false},
+{"text": "Providing orientation, guidance and opportunities to clarify the procedure", "is_correct": true},
+{"text": "Allowing the nurse to develop an independent reporting system", "is_correct": false},
+{"text": "Withholding all reporting responsibilities indefinitely", "is_correct": false}
+],
+"rationale": "Orientation and supportive supervision help newly posted staff understand workplace procedures and expected standards. This approach promotes competence, confidence and accurate reporting.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A community health nurse arrives at a household for a routine visit and finds a child who is unconscious and breathing abnormally. What should the nurse do first?",
+"choices": [
+{"text": "Complete the household registration form", "is_correct": false},
+{"text": "Assess the child's immediate condition, initiate appropriate emergency care and arrange urgent referral", "is_correct": true},
+{"text": "Continue the scheduled health education session", "is_correct": false},
+{"text": "Ask the caregiver to bring the child to the CHPS compound the following day", "is_correct": false}
+],
+"rationale": "Unconsciousness with abnormal breathing indicates a potentially life-threatening emergency requiring immediate assessment and intervention. Routine documentation and health education must be postponed while emergency care and urgent referral are arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A nurse at a CHPS compound has four activities to complete. Which activity should receive the highest priority?",
+"choices": [
+{"text": "Preparing the monthly summary report", "is_correct": false},
+{"text": "Rearranging the filing cabinet", "is_correct": false},
+{"text": "Assessing a patient with severe difficulty in breathing", "is_correct": true},
+{"text": "Preparing notices for an upcoming health education programme", "is_correct": false}
+],
+"rationale": "Severe difficulty in breathing may indicate an immediate threat to life and requires urgent clinical assessment and intervention. Administrative and organisational tasks can be completed after the patient's immediate needs are addressed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A community health nurse has several scheduled home visits but receives information that a pregnant woman in the community is experiencing heavy vaginal bleeding. What is the most appropriate action?",
+"choices": [
+{"text": "Complete the scheduled visits before responding", "is_correct": false},
+{"text": "Prioritise the emergency, assess the woman and arrange immediate referral to an appropriate facility", "is_correct": true},
+{"text": "Advise the woman to rest and report the bleeding at the next antenatal clinic", "is_correct": false},
+{"text": "Ask another household to monitor the woman without contacting a health facility", "is_correct": false}
+],
+"rationale": "Heavy vaginal bleeding during pregnancy is an obstetric danger sign that may threaten the life of the woman and fetus. The nurse should prioritise prompt assessment, emergency management within competence and urgent referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A nurse has to prepare a report, attend a routine meeting and provide care to a patient who suddenly develops signs of severe dehydration. Which activity should be performed first?",
+"choices": [
+{"text": "Attend the routine meeting", "is_correct": false},
+{"text": "Complete the report", "is_correct": false},
+{"text": "Assess and initiate appropriate management of the patient's condition", "is_correct": true},
+{"text": "Arrange the next week's duty roster", "is_correct": false}
+],
+"rationale": "Severe dehydration can rapidly progress to shock and requires prompt assessment and treatment. Routine administrative activities should be deferred until the patient's immediate clinical needs have been addressed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "During a home visit, a nurse assesses a client with hypertension and records the blood pressure, medication history and health education provided. Which documentation principle is being applied?",
+"choices": [
+{"text": "Completeness and accuracy", "is_correct": true},
+{"text": "Confidentiality through omission of clinical findings", "is_correct": false},
+{"text": "Retrospective documentation", "is_correct": false},
+{"text": "Informal verbal reporting", "is_correct": false}
+],
+"rationale": "Recording relevant assessment findings, medication history and interventions provides a complete account of the care delivered. Accurate documentation supports follow-up, continuity of care and clinical decision-making.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "A nurse makes an error while writing in a paper patient record. What is the appropriate way to correct the error?",
+"choices": [
+{"text": "Erase the incorrect entry completely", "is_correct": false},
+{"text": "Cover the error with correction fluid", "is_correct": false},
+{"text": "Draw a single line through the error, make the correct entry and authenticate the correction according to policy", "is_correct": true},
+{"text": "Remove the entire page from the patient's file", "is_correct": false}
+],
+"rationale": "A correction should preserve the original entry so that the record remains transparent and auditable. The correction should be clearly identified, dated or timed and authenticated in accordance with facility documentation policy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "A community health nurse refers a patient with suspected tuberculosis from a CHPS compound to a district hospital. Which information is most important to include in the referral documentation?",
+"choices": [
+{"text": "Only the patient's name and community", "is_correct": false},
+{"text": "Relevant history, assessment findings, reason for referral and care already provided", "is_correct": true},
+{"text": "The nurse's personal opinion about the patient's behaviour", "is_correct": false},
+{"text": "Only the date on which the patient first visited the CHPS compound", "is_correct": false}
+],
+"rationale": "A useful referral record communicates the clinical information needed for continued assessment and management. Relevant history, findings, interventions and the reason for referral support continuity and patient safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "A district hospital introduces an electronic health record system. Which activity is an appropriate use of the system by an authorised nurse?",
+"choices": [
+{"text": "Recording patient assessment findings and nursing interventions", "is_correct": true},
+{"text": "Allowing visitors to browse patient records", "is_correct": false},
+{"text": "Sharing the nurse's login credentials with colleagues", "is_correct": false},
+{"text": "Deleting a patient's history to create storage space", "is_correct": false}
+],
+"rationale": "An EHR allows authorised healthcare professionals to document and retrieve relevant patient information electronically. Access and use must follow professional responsibilities, facility procedures and information security requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "A community health nurse enters routine service statistics into DHIMS2 after checking the facility's source registers. Why is this verification important?",
+"choices": [
+{"text": "It makes the reporting process unnecessary", "is_correct": false},
+{"text": "It helps improve the accuracy and consistency of reported data", "is_correct": true},
+{"text": "It allows the nurse to estimate missing figures without documentation", "is_correct": false},
+{"text": "It prevents district health managers from reviewing the data", "is_correct": false}
+],
+"rationale": "Checking source registers before data entry helps identify omissions, inconsistencies and recording errors. Accurate data are essential for reliable analysis, planning and monitoring of health services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection and Reporting in Community Health",
+"question_text": "During a household survey, a community health nurse collects information on the number of children who have received routine immunisation. Which data collection method is most appropriate?",
+"choices": [
+{"text": "Structured interview using a standardised questionnaire", "is_correct": true},
+{"text": "Informal discussion without recording responses", "is_correct": false},
+{"text": "Guessing the number based on the size of the household", "is_correct": false},
+{"text": "Using unrelated hospital financial records", "is_correct": false}
+],
+"rationale": "A structured questionnaire provides a consistent method of collecting information from households. Standardised questions improve comparability and make the data easier to analyse.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection and Reporting in Community Health",
+"question_text": "A CHPS compound records 24 new malaria cases among children during a reporting month. What should the nurse do before submitting the monthly report?",
+"choices": [
+{"text": "Double the figure to account for unreported cases", "is_correct": false},
+{"text": "Check the source records and ensure that the reported figure is complete and accurate", "is_correct": true},
+{"text": "Remove cases that were treated successfully", "is_correct": false},
+{"text": "Replace the figure with the previous month's total", "is_correct": false}
+],
+"rationale": "Monthly reports should be based on verified source data and should accurately reflect the reporting period. Figures should not be altered through unsupported estimates or assumptions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "A nurse uses a computer to access an electronic patient record at a district hospital. What should the nurse do before leaving the workstation unattended?",
+"choices": [
+{"text": "Leave the patient record open for the next staff member", "is_correct": false},
+{"text": "Log out or lock the workstation", "is_correct": true},
+{"text": "Write the password on the computer monitor", "is_correct": false},
+{"text": "Allow other patients to use the active session", "is_correct": false}
+],
+"rationale": "Logging out or locking the workstation prevents unauthorised persons from accessing confidential patient information. Individual user accounts also support accountability by linking system activities to authorised users.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "A community health nurse is asked by a neighbour to disclose the HIV status of a person receiving care at the CHPS compound. What should the nurse do?",
+"choices": [
+{"text": "Disclose the information because the neighbour lives in the same community", "is_correct": false},
+{"text": "Refuse to disclose the information and protect the patient's confidentiality", "is_correct": true},
+{"text": "Confirm the diagnosis but avoid mentioning the patient's name", "is_correct": false},
+{"text": "Share the information if the neighbour promises not to tell anyone", "is_correct": false}
+],
+"rationale": "A patient's HIV status is confidential health information and should not be disclosed to an unauthorised person. Disclosure must follow applicable legal and professional requirements and should not be based on community curiosity or informal requests.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Use of Technology in Community Nursing",
+"question_text": "A community health nurse uses a mobile phone to send appointment reminders to clients who have agreed to receive them. Which benefit of mHealth is being demonstrated?",
+"choices": [
+{"text": "Improved communication and follow-up with clients", "is_correct": true},
+{"text": "Elimination of the need for clinical assessment", "is_correct": false},
+{"text": "Automatic replacement of all community health workers", "is_correct": false},
+{"text": "Removal of the need to protect personal information", "is_correct": false}
+],
+"rationale": "Mobile health technologies can support reminders, health education, communication and follow-up. Their use should respect consent, confidentiality and the limitations of mobile communication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Use of Technology in Community Nursing",
+"question_text": "A CHPS compound experiences an internet outage while the nurse is conducting a community health activity. Which action is most appropriate?",
+"choices": [
+{"text": "Stop all patient care until internet service returns", "is_correct": false},
+{"text": "Use approved downtime procedures and secure records for later entry or synchronisation", "is_correct": true},
+{"text": "Enter patient information into an unprotected public online form", "is_correct": false},
+{"text": "Discard all information collected during the outage", "is_correct": false}
+],
+"rationale": "Patient care should continue using approved alternative procedures when digital systems are unavailable. Information should be documented securely and entered or synchronised later according to facility policy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "A CHPS compound discovers that many children miss scheduled immunisation appointments. Which action is the best first step in a quality improvement process?",
+"choices": [
+{"text": "Immediately blame the vaccination staff", "is_correct": false},
+{"text": "Collect and review information to identify possible causes of missed appointments", "is_correct": true},
+{"text": "Stop providing immunisation services", "is_correct": false},
+{"text": "Change the immunisation schedule without reviewing the problem", "is_correct": false}
+],
+"rationale": "Quality improvement begins with understanding the problem and examining relevant evidence. Identifying causes, such as access barriers or ineffective reminders, helps the team select appropriate interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "A nurse in charge conducts an audit of patient records and finds that vital signs are frequently missing. What is the most appropriate response?",
+"choices": [
+{"text": "Ignore the omissions because the patients were discharged", "is_correct": false},
+{"text": "Provide feedback, reinforce documentation standards and re-audit practice", "is_correct": true},
+{"text": "Complete all missing entries using estimated values", "is_correct": false},
+{"text": "Destroy the records containing omissions", "is_correct": false}
+],
+"rationale": "Audit findings should be used to identify gaps and guide corrective action, such as staff education and supervision. Re-auditing helps determine whether the improvement measures have been effective.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Resource Management",
+"question_text": "A CHPS compound has a limited supply of gloves, disinfectant and wound dressings. Which management action is most appropriate?",
+"choices": [
+{"text": "Use supplies without recording their consumption", "is_correct": false},
+{"text": "Prioritise essential clinical needs, monitor stock and request replenishment through the appropriate channel", "is_correct": true},
+{"text": "Stop all services until the next annual budget", "is_correct": false},
+{"text": "Distribute supplies equally without considering clinical needs", "is_correct": false}
+],
+"rationale": "Effective resource management requires monitoring stock levels and allocating supplies according to service needs and safety requirements. Timely replenishment helps prevent stock-outs and interruptions in care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Resource Management",
+"question_text": "A community health officer is preparing a budget for a malaria prevention outreach programme. Which item should be included as a financial resource requirement?",
+"choices": [
+{"text": "The number of nurses assigned to the programme", "is_correct": false},
+{"text": "The cost of transport, educational materials and approved supplies", "is_correct": true},
+{"text": "The professional qualifications of the outreach team", "is_correct": false},
+{"text": "The number of households in the community", "is_correct": false}
+],
+"rationale": "A budget estimates the financial resources required to carry out planned activities. Costs such as transport, materials and supplies should be identified to support realistic programme implementation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Resource Management",
+"question_text": "A nurse in charge notices that a weighing scale at the CHPS compound is giving inconsistent readings. What should the nurse do?",
+"choices": [
+{"text": "Continue using it and record whichever reading appears first", "is_correct": false},
+{"text": "Remove it from clinical use until it has been checked, calibrated or repaired as appropriate", "is_correct": true},
+{"text": "Ask patients to estimate their own weight", "is_correct": false},
+{"text": "Adjust the readings manually without checking the equipment", "is_correct": false}
+],
+"rationale": "Inaccurate equipment can lead to incorrect clinical assessments and decisions. The scale should be checked and appropriately maintained before it is used for patient care again.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "During a community outreach programme, a nurse assigns a trained community health volunteer to guide residents to the registration point. Which consideration is most important when making this assignment?",
+"choices": [
+{"text": "Whether the volunteer can perform every nursing procedure", "is_correct": false},
+{"text": "Whether the assigned activity is appropriate to the volunteer's training and role", "is_correct": true},
+{"text": "Whether the volunteer has the longest period of service in the community", "is_correct": false},
+{"text": "Whether the volunteer can independently make clinical diagnoses", "is_correct": false}
+],
+"rationale": "Delegated activities must be appropriate to the person's competence, training and permitted role. Clinical assessment and interventions requiring professional nursing judgement must remain with appropriately qualified personnel.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection and Reporting in Community Health",
+"question_text": "A nurse is conducting a household survey on access to safe drinking water. Which practice will most improve the reliability of the collected information?",
+"choices": [
+{"text": "Asking different households completely different questions", "is_correct": false},
+{"text": "Using clear, standardised questions and recording responses consistently", "is_correct": true},
+{"text": "Recording only responses that support the nurse's expectations", "is_correct": false},
+{"text": "Completing questionnaires from memory several weeks later", "is_correct": false}
+],
+"rationale": "Standardised questions and consistent recording reduce variation introduced by the data collector. This improves the comparability and reliability of information obtained from different households.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "A district health director wants to compare malaria trends across several CHPS zones using DHIMS2 reports. Which use of the system best supports this activity?",
+"choices": [
+{"text": "Analysing aggregated routine health data across reporting locations and periods", "is_correct": true},
+{"text": "Accessing the private passwords of community health nurses", "is_correct": false},
+{"text": "Replacing all household visits with computer-generated estimates", "is_correct": false},
+{"text": "Deleting reports from facilities with low attendance", "is_correct": false}
+],
+"rationale": "DHIMS2 supports the aggregation and analysis of routine health-service information across facilities and reporting periods. Comparing these data can help identify trends and guide public health planning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "A nurse receives an email requesting the password used to access the hospital's electronic patient record system. The message claims to be from technical support. What should the nurse do?",
+"choices": [
+{"text": "Send the password immediately to avoid account suspension", "is_correct": false},
+{"text": "Avoid sharing the password and verify the request through an authorised support channel", "is_correct": true},
+{"text": "Forward the password to other nurses for confirmation", "is_correct": false},
+{"text": "Use the same password for all hospital systems", "is_correct": false}
+],
+"rationale": "Requests for passwords may be phishing attempts intended to obtain unauthorised access. Credentials should remain private, and suspicious requests should be verified and reported through approved channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A nurse has planned a community education session, but heavy rainfall has made the usual access road unsafe. What is the best time-management response?",
+"choices": [
+{"text": "Proceed regardless of the safety risk", "is_correct": false},
+{"text": "Reassess the situation, communicate changes and reschedule or use a safe alternative", "is_correct": true},
+{"text": "Cancel all future community education activities", "is_correct": false},
+{"text": "Travel alone through the unsafe route to avoid delay", "is_correct": false}
+],
+"rationale": "Effective time management includes adapting plans when circumstances change while maintaining safety and service objectives. Communicating and arranging a safe alternative prevents unnecessary risk and confusion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "A nurse receives a patient from another facility and notices that the referral note is incomplete. What should the nurse do?",
+"choices": [
+{"text": "Assume that all missing information is normal", "is_correct": false},
+{"text": "Assess the patient, obtain relevant information from appropriate sources and document the findings", "is_correct": true},
+{"text": "Refuse to provide care until a perfect referral note is received", "is_correct": false},
+{"text": "Invent missing clinical details to complete the record", "is_correct": false}
+],
+"rationale": "Patient assessment and safe continuity of care should not depend solely on the completeness of a referral note. The nurse should obtain and document relevant information without fabricating details.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "A CHPS team introduces a checklist to improve the completeness of antenatal care documentation. Which indicator would best measure the effectiveness of this intervention?",
+"choices": [
+{"text": "The number of chairs in the antenatal clinic", "is_correct": false},
+{"text": "The proportion of reviewed antenatal records with all required fields completed", "is_correct": true},
+{"text": "The number of staff who attended the last district meeting", "is_correct": false},
+{"text": "The distance between the CHPS compound and the district hospital", "is_correct": false}
+],
+"rationale": "The proportion of records with required fields completed directly measures documentation completeness. Comparing this indicator before and after the checklist intervention helps evaluate improvement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Use of Technology in Community Nursing",
+"question_text": "A community health nurse uses a mobile application to record household visits while working in an area with intermittent network coverage. Which approach is most appropriate?",
+"choices": [
+{"text": "Use an approved application with secure offline data capture and later synchronisation", "is_correct": true},
+{"text": "Store all patient details in an unrestricted social media account", "is_correct": false},
+{"text": "Share the device password with every household visited", "is_correct": false},
+{"text": "Delete the records whenever the network becomes unavailable", "is_correct": false}
+],
+"rationale": "Approved applications with secure offline functionality can support data collection in areas with unreliable connectivity. Data should be protected during storage and synchronised according to authorised procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Resource Management",
+"question_text": "A CHPS compound has only one functional blood pressure monitor, and several nurses need to use it during clinic hours. What is the most appropriate management action?",
+"choices": [
+{"text": "Allow staff to take the equipment home without recording it", "is_correct": false},
+{"text": "Coordinate its use, maintain an equipment register and report the need for additional equipment", "is_correct": true},
+{"text": "Prevent other nurses from providing services", "is_correct": false},
+{"text": "Purchase a replacement without following procurement procedures", "is_correct": false}
+],
+"rationale": "Coordinating equipment use helps maintain service delivery while ensuring that the available resource is accounted for. Reporting the shortage through appropriate channels supports procurement and resource planning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "A nurse in charge notices that staff members are unclear about who should submit the weekly community health report. What should the nurse do?",
+"choices": [
+{"text": "Allow every staff member to submit a separate report", "is_correct": false},
+{"text": "Clarify reporting responsibilities and establish a clear communication procedure", "is_correct": true},
+{"text": "Stop collecting community health data", "is_correct": false},
+{"text": "Wait until the district office complains about missing reports", "is_correct": false}
+],
+"rationale": "Clear allocation of responsibilities and communication procedures are essential for effective organisation and coordination. Clarifying who prepares, checks and submits reports reduces duplication and missed deadlines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "A nurse in charge asks a staff member to perform a procedure that the staff member has not been trained to undertake. What should the staff member do?",
+"choices": [
+{"text": "Perform the procedure to avoid displeasing the supervisor", "is_correct": false},
+{"text": "Explain the limitation, decline the unsafe assignment and seek an appropriately qualified practitioner", "is_correct": true},
+{"text": "Ask a patient to assist with the procedure", "is_correct": false},
+{"text": "Perform the procedure without supervision and document it as routine", "is_correct": false}
+],
+"rationale": "Nurses must practise within their competence and professional scope. An assignment that cannot be performed safely should be raised promptly so that appropriate care can be arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection and Reporting in Community Health",
+"question_text": "A nurse reviewing the CHPS monthly report finds that the number of immunisation visits is higher than the number recorded in the source register. What should the nurse do?",
+"choices": [
+{"text": "Submit the higher figure because it shows improved performance", "is_correct": false},
+{"text": "Reconcile the report with the source register and correct any verified discrepancy", "is_correct": true},
+{"text": "Delete the source register", "is_correct": false},
+{"text": "Use the average of the two figures without investigation", "is_correct": false}
+],
+"rationale": "Differences between summary reports and source records should be investigated before submission. Reconciliation helps maintain data accuracy and prevents misleading service statistics.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "A nurse wants to discuss a patient's clinical condition with another healthcare professional involved in the patient's care. Which action is appropriate?",
+"choices": [
+{"text": "Discuss the case in a public transport vehicle", "is_correct": false},
+{"text": "Share only relevant information through an appropriate confidential channel", "is_correct": true},
+{"text": "Post the patient's details in a general community WhatsApp group", "is_correct": false},
+{"text": "Send the entire patient file to an unrelated staff member", "is_correct": false}
+],
+"rationale": "Relevant patient information may be shared with authorised professionals when necessary for legitimate care purposes. The information should be limited to what is needed and communicated through secure, appropriate channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "During a community outreach programme, a nurse is informed that a child has developed convulsions. What should the nurse do first?",
+"choices": [
+{"text": "Continue registering other participants", "is_correct": false},
+{"text": "Ensure the child's immediate safety, assess the condition and arrange urgent emergency care", "is_correct": true},
+{"text": "Ask the caregiver to wait until the outreach programme ends", "is_correct": false},
+{"text": "Complete the outreach attendance report", "is_correct": false}
+],
+"rationale": "Convulsions in a child require immediate assessment and protection from injury, followed by appropriate emergency management and referral. Administrative activities must not delay urgent care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "A district hospital introduces a new patient identification procedure after an audit identifies frequent identification errors. Which action best supports implementation?",
+"choices": [
+{"text": "Assume that staff will understand the procedure without explanation", "is_correct": false},
+{"text": "Orient staff, monitor compliance and review incidents after implementation", "is_correct": true},
+{"text": "Remove patient identification checks during busy periods", "is_correct": false},
+{"text": "Evaluate the procedure only when another serious error occurs", "is_correct": false}
+],
+"rationale": "Effective implementation requires staff orientation, monitoring and evaluation of practice. Reviewing compliance and incidents helps determine whether the new procedure improves patient safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "A community health nurse uses a digital tool to calculate the proportion of children who completed their scheduled immunisation. Which informatics function is being demonstrated?",
+"choices": [
+{"text": "Data analysis", "is_correct": true},
+{"text": "Physical filing", "is_correct": false},
+{"text": "Clinical delegation", "is_correct": false},
+{"text": "Equipment maintenance", "is_correct": false}
+],
+"rationale": "Data analysis involves processing and interpreting collected information to produce meaningful indicators. Calculating immunisation coverage helps the team assess programme performance and identify service gaps.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "A community health officer is planning a home-visit programme for older adults with chronic conditions. Which approach best demonstrates effective planning?",
+"choices": [
+{"text": "Scheduling visits without considering staff availability or community needs", "is_correct": false},
+{"text": "Identifying the target population, setting objectives, allocating resources and preparing a schedule", "is_correct": true},
+{"text": "Waiting until all patients independently request a visit", "is_correct": false},
+{"text": "Assigning all visits to one nurse regardless of workload", "is_correct": false}
+],
+"rationale": "Effective planning considers the population's needs, programme objectives, available personnel and resources. A realistic schedule helps ensure that home visits are delivered systematically and equitably.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "A patient receiving treatment for hypertension tells the community health nurse that the prescribed medication causes dizziness. Which action should be documented?",
+"choices": [
+{"text": "Only the patient's name and date of visit", "is_correct": false},
+{"text": "The patient's report, relevant assessment findings, advice or intervention and follow-up plan", "is_correct": true},
+{"text": "The nurse's assumption that the patient is not taking medication", "is_correct": false},
+{"text": "A statement that the medication has been discontinued without an authorised decision", "is_correct": false}
+],
+"rationale": "The record should capture the patient's reported concern, relevant findings and actions taken. Accurate documentation supports clinical review, medication safety and continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "At a community clinic, a patient suddenly collapses while several clients are waiting for routine services. What should the nurse do first?",
+"choices": [
+{"text": "Continue serving clients according to the queue", "is_correct": false},
+{"text": "Assess responsiveness and breathing, call for assistance and initiate appropriate emergency care", "is_correct": true},
+{"text": "Ask the patient to wait until the consultation room is free", "is_correct": false},
+{"text": "Complete the daily attendance register", "is_correct": false}
+],
+"rationale": "A sudden collapse may indicate a life-threatening emergency and requires immediate assessment. Calling for assistance and initiating appropriate emergency care take priority over routine clinic activities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "A nurse uses a personal smartphone to take a photograph of a patient's wound for clinical consultation. Which action is most appropriate?",
+"choices": [
+{"text": "Take the photograph and upload it to a public social media account", "is_correct": false},
+{"text": "Follow facility policy, obtain appropriate consent and use an approved secure method for handling the image", "is_correct": true},
+{"text": "Send the photograph to several friends for their opinions", "is_correct": false},
+{"text": "Include the patient's name and contact details in an open online discussion", "is_correct": false}
+],
+"rationale": "Clinical photographs contain identifiable or sensitive health information and require appropriate safeguards. Consent, authorised clinical purpose, secure storage and approved communication procedures should be observed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "A community health team wants to determine whether health education has improved handwashing practices among households. Which evaluation method is most appropriate?",
+"choices": [
+{"text": "Assuming that attendance at the education session proves behaviour change", "is_correct": false},
+{"text": "Assessing handwashing knowledge and practices before and after the intervention", "is_correct": true},
+{"text": "Counting only the number of posters distributed", "is_correct": false},
+{"text": "Measuring the number of staff who prepared the session", "is_correct": false}
+],
+"rationale": "Evaluating knowledge and observed practices provides information about whether the intervention has influenced its intended outcomes. Attendance and materials distributed measure activities or outputs rather than actual behaviour change.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "Two nurses disagree about the allocation of duties during a busy immunisation session. What should the nurse in charge do?",
+"choices": [
+{"text": "Ignore the disagreement and allow the conflict to continue", "is_correct": false},
+{"text": "Listen to both nurses, clarify responsibilities and agree on a safe allocation of duties", "is_correct": true},
+{"text": "Publicly embarrass both nurses in front of patients", "is_correct": false},
+{"text": "Cancel the immunisation session immediately", "is_correct": false}
+],
+"rationale": "Constructive conflict management involves listening, clarifying expectations and finding a practical solution. Clear responsibilities help maintain teamwork and prevent disruption of patient care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "A nurse uses an electronic system to review a patient's previous consultations before providing care. Which benefit of an EHR is most directly demonstrated?",
+"choices": [
+{"text": "Improved access to relevant patient information for continuity of care", "is_correct": true},
+{"text": "Elimination of the need for patient consent in every situation", "is_correct": false},
+{"text": "Automatic prevention of all clinical errors", "is_correct": false},
+{"text": "Removal of the need for accurate documentation", "is_correct": false}
+],
+"rationale": "An EHR can make relevant patient information available to authorised healthcare professionals across encounters. This supports continuity and informed clinical decisions, although it does not eliminate the need for professional judgement or accurate records.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "A district nursing supervisor introduces a new reporting target but does not explain it to the community health team. Staff members submit reports using different formats. Which management function was inadequately performed?",
+"choices": [
+{"text": "Directing", "is_correct": true},
+{"text": "Controlling", "is_correct": false},
+{"text": "Budgeting", "is_correct": false},
+{"text": "Auditing", "is_correct": false}
+],
+"rationale": "Directing includes communicating instructions, providing guidance and ensuring that staff understand expected performance. The lack of explanation contributed to inconsistent implementation of the reporting requirement.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "A CHPS compound has a plan to conduct 100 household visits in a month. At the end of the month, only 45 visits have been completed. Staff report that the vehicle was unavailable for two weeks and the visit schedule was not adjusted. Which management weakness is most evident?",
+"choices": [
+{"text": "Failure to establish objectives", "is_correct": false},
+{"text": "Inadequate monitoring and adjustment of implementation", "is_correct": true},
+{"text": "Excessive delegation to qualified staff", "is_correct": false},
+{"text": "Overuse of electronic health records", "is_correct": false}
+],
+"rationale": "The target was established, but the programme was not adequately monitored or adjusted when a major resource constraint occurred. Effective management requires identifying implementation barriers and taking corrective action to keep activities on track.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "A nurse in charge delegates the preparation of a monthly health report to a junior nurse but does not explain the reporting requirements or check the final document. The report contains major errors. Which conclusion is most appropriate?",
+"choices": [
+{"text": "Delegation is inappropriate in all nursing situations", "is_correct": false},
+{"text": "The delegation process was incomplete because instructions and appropriate follow-up were lacking", "is_correct": true},
+{"text": "The junior nurse alone must be responsible for every aspect of the failure", "is_correct": false},
+{"text": "Monthly reports do not require verification", "is_correct": false}
+],
+"rationale": "Effective delegation requires clear instructions, an appropriate match between task and competence, and suitable supervision or review. The nurse in charge should ensure that the delegated task is completed to the required standard.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "At a CHPS compound, four patients arrive at the same time. Patient 1 has mild headache, Patient 2 has severe difficulty breathing, Patient 3 requires routine medication refill, and Patient 4 has a minor skin rash. Which patient should be assessed first?",
+"choices": [
+{"text": "Patient 1", "is_correct": false},
+{"text": "Patient 2", "is_correct": true},
+{"text": "Patient 3", "is_correct": false},
+{"text": "Patient 4", "is_correct": false}
+],
+"rationale": "Severe difficulty breathing indicates a potentially life-threatening problem requiring immediate assessment and intervention. The other patients have needs that appear less urgent based on the information provided.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A community health nurse is conducting a home visit when the caregiver reports that a child has had profuse watery diarrhoea and is now lethargic with sunken eyes. What is the priority action?",
+"choices": [
+{"text": "Complete the routine household health assessment before taking action", "is_correct": false},
+{"text": "Assess for severe dehydration, begin appropriate emergency rehydration within the nurse's competence and arrange urgent referral", "is_correct": true},
+{"text": "Advise the caregiver to stop giving the child fluids", "is_correct": false},
+{"text": "Schedule a follow-up visit for the next week", "is_correct": false}
+],
+"rationale": "Lethargy and sunken eyes in a child with profuse diarrhoea are concerning signs of dehydration that may be severe. Immediate assessment, appropriate rehydration and urgent referral are required rather than routine follow-up.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Records and Documentation",
+"question_text": "A nurse reviews a patient's record and discovers that a medication administration entry has been signed, although the patient states that the medication was not given. What is the most appropriate response?",
+"choices": [
+{"text": "Ignore the discrepancy because the record has already been signed", "is_correct": false},
+{"text": "Establish the facts promptly, assess the patient, report the discrepancy through the appropriate process and ensure accurate documentation", "is_correct": true},
+{"text": "Delete the signed entry without explanation", "is_correct": false},
+{"text": "Administer an additional dose immediately without checking the prescription or timing", "is_correct": false}
+],
+"rationale": "A discrepancy between the record and the patient's account may indicate a medication safety incident and requires prompt investigation. The nurse should assess potential harm, follow reporting procedures and ensure that the record accurately reflects verified facts.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Introduction to Health Informatics",
+"question_text": "A district hospital has both paper records and an EHR. A nurse finds that the patient's allergy information differs between the two systems. What should the nurse do?",
+"choices": [
+{"text": "Choose whichever record is easier to access", "is_correct": false},
+{"text": "Verify the allergy information with the patient and appropriate clinical sources, then follow the facility's correction and escalation procedure", "is_correct": true},
+{"text": "Delete the allergy information from both systems", "is_correct": false},
+{"text": "Ignore the discrepancy because allergies are not relevant to treatment", "is_correct": false}
+],
+"rationale": "Conflicting allergy information creates a potential patient safety risk, particularly when medicines are prescribed or administered. The nurse should verify the information and ensure that corrections are made through authorised procedures so that the record remains reliable.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Collection and Reporting in Community Health",
+"question_text": "A CHPS compound reports a sudden increase in malaria cases. However, the number of cases in the source register is much lower than the figure entered into DHIMS2. Which action should the nurse in charge take?",
+"choices": [
+{"text": "Accept the DHIMS2 figure because electronic data are always correct", "is_correct": false},
+{"text": "Investigate the discrepancy by checking source documents, reporting-period definitions and data-entry records before correcting the report", "is_correct": true},
+{"text": "Delete all malaria records from the reporting period", "is_correct": false},
+{"text": "Use the higher figure to attract additional resources without verification", "is_correct": false}
+],
+"rationale": "A difference between source records and reported data may result from duplicate entries, incorrect aggregation or data-entry errors. Verification is necessary before the information is used for surveillance, planning or resource allocation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "A community health nurse discovers that a colleague has posted a photograph of a patient record in a WhatsApp group containing people who are not involved in the patient's care. What is the most appropriate response?",
+"choices": [
+{"text": "Forward the photograph to other groups for awareness", "is_correct": false},
+{"text": "Take prompt steps through the appropriate reporting process to contain the disclosure and protect the patient's information", "is_correct": true},
+{"text": "Ignore the incident because the group is private", "is_correct": false},
+{"text": "Publicly identify the patient to explain why the disclosure is wrong", "is_correct": false}
+],
+"rationale": "Sharing identifiable patient information with unauthorised persons is a confidentiality breach, even when the platform is a private group. The incident should be reported through appropriate channels so that further disclosure can be limited and the patient's privacy protected.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "An audit at a district hospital shows that patient records frequently lack documentation of pain assessment. Staff receive training, but a second audit shows no improvement. What should the quality improvement team do next?",
+"choices": [
+{"text": "Conclude that documentation standards are unnecessary", "is_correct": false},
+{"text": "Investigate barriers to compliance and revise the improvement strategy based on the findings", "is_correct": true},
+{"text": "Stop auditing patient records", "is_correct": false},
+{"text": "Complete missing pain assessments retrospectively without assessing patients", "is_correct": false}
+],
+"rationale": "The absence of improvement suggests that training alone may not have addressed the underlying barriers. The team should investigate factors such as workflow, forms, workload and supervision before selecting further interventions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Resource Management",
+"question_text": "A CHPS compound repeatedly runs out of essential wound-care supplies before the end of each month. Stock records show that consumption is higher than the quantity requested during procurement. Which management response is most appropriate?",
+"choices": [
+{"text": "Continue requesting the same quantity because it was previously approved", "is_correct": false},
+{"text": "Review consumption patterns, check stock records and adjust future requests through approved procurement procedures", "is_correct": true},
+{"text": "Stop recording the use of wound-care materials", "is_correct": false},
+{"text": "Use expired supplies to avoid further stock-outs", "is_correct": false}
+],
+"rationale": "Repeated stock-outs indicate that procurement estimates may not reflect actual consumption or changing service needs. Reviewing reliable stock and usage data supports more accurate forecasting and responsible resource allocation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Leadership and Delegation in Nursing",
+"question_text": "A nurse in charge assigns a community health volunteer to independently assess pregnant women and decide which ones require emergency referral. The volunteer has received only basic community mobilisation training. Which judgement is most appropriate?",
+"choices": [
+{"text": "The assignment is appropriate because volunteers know the community", "is_correct": false},
+{"text": "The assignment is unsafe because it requires clinical assessment and judgement beyond the volunteer's competence", "is_correct": true},
+{"text": "The assignment is appropriate if the volunteer has completed secondary school", "is_correct": false},
+{"text": "The assignment is acceptable if the nurse reviews the cases at the end of the month", "is_correct": false}
+],
+"rationale": "Recognising obstetric complications and deciding on emergency referral require appropriate clinical competence. Community volunteers may support mobilisation and referral communication, but they should not be assigned independent clinical decisions beyond their training and role.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Time Management and Prioritization",
+"question_text": "A nurse at a community clinic must respond to four situations: a patient with severe chest pain and sweating, a client requesting a routine blood pressure check, a caregiver seeking a child welfare appointment and a staff member requesting help with filing. Which action should be prioritised?",
+"choices": [
+{"text": "Help the staff member complete filing", "is_correct": false},
+{"text": "Assess the patient with severe chest pain and sweating and activate urgent emergency care", "is_correct": true},
+{"text": "Arrange the child welfare appointment", "is_correct": false},
+{"text": "Perform the routine blood pressure check first", "is_correct": false}
+],
+"rationale": "Severe chest pain accompanied by sweating may indicate an acute coronary event or another serious emergency. Immediate assessment and urgent escalation take precedence over routine services and administrative work.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Collection and Reporting in Community Health",
+"question_text": "A district health team notices that one CHPS zone reports almost no maternal deaths, while another reports a sudden increase. The team suspects differences in case identification and reporting practices. What is the best analytical response?",
+"choices": [
+{"text": "Assume that the zone reporting fewer deaths has better maternal health services", "is_correct": false},
+{"text": "Review case definitions, reporting completeness and source records across both zones before comparing the figures", "is_correct": true},
+{"text": "Remove the zone with higher figures from the district report", "is_correct": false},
+{"text": "Average the two figures without examining their quality", "is_correct": false}
+],
+"rationale": "Differences in reporting completeness or case identification can distort comparisons between health zones. The team should assess data quality and consistency before drawing conclusions about actual maternal health outcomes.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Use of Technology in Community Nursing",
+"question_text": "A community health team uses a mobile application to collect household health information. During review, the supervisor discovers that several records were uploaded twice after network reconnection. What is the most appropriate response?",
+"choices": [
+{"text": "Delete all household records from the application", "is_correct": false},
+{"text": "Identify and reconcile duplicate records using approved procedures while preserving the accuracy and audit trail of the data", "is_correct": true},
+{"text": "Count duplicate records as additional households reached", "is_correct": false},
+{"text": "Ignore the duplicates because they do not affect data quality", "is_correct": false}
+],
+"rationale": "Duplicate records can inflate service statistics and produce inaccurate reports. The team should identify duplicates, reconcile them using authorised procedures and preserve appropriate records of corrections.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Principles of Nursing Management",
+"question_text": "A nurse in charge observes that staff attendance is satisfactory, but patient waiting times remain high and complaints are increasing. Which management response is most appropriate?",
+"choices": [
+{"text": "Assume that staff attendance alone proves that the service is effective", "is_correct": false},
+{"text": "Review patient flow, workload distribution and service processes to identify causes of delay", "is_correct": true},
+{"text": "Increase staff attendance requirements without examining service delivery", "is_correct": false},
+{"text": "Stop collecting patient feedback", "is_correct": false}
+],
+"rationale": "Staff attendance is only one aspect of service performance and does not establish that patient care is efficient. Reviewing workflow, workload and patient feedback can identify operational problems requiring corrective action.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Confidentiality and Data Security",
+"question_text": "A nurse accidentally sends a patient's laboratory result to the wrong recipient by email. Which response best addresses the incident?",
+"choices": [
+{"text": "Ignore the mistake because the email has already been sent", "is_correct": false},
+{"text": "Promptly report the incident through the appropriate channel, attempt to limit further disclosure and follow the facility's breach-response procedure", "is_correct": true},
+{"text": "Send the same result to several other recipients to correct the mistake", "is_correct": false},
+{"text": "Delete the patient's record from the hospital system", "is_correct": false}
+],
+"rationale": "Sending a patient's result to an unauthorised recipient is a potential confidentiality breach that requires prompt action. Reporting and following the facility's incident-response procedure help limit harm and support appropriate corrective measures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Quality Improvement and Audit",
+"question_text": "A CHPS compound introduces a new appointment reminder system. After three months, missed appointments decrease from 40% to 15%, but the team also finds that some clients receive reminders after their appointment dates. Which conclusion is most appropriate?",
+"choices": [
+{"text": "The intervention has failed completely and should be abandoned immediately", "is_correct": false},
+{"text": "The intervention appears to have improved attendance, but the reminder process requires further review and refinement", "is_correct": true},
+{"text": "The reduction in missed appointments proves that all clients received reminders correctly", "is_correct": false},
+{"text": "The team should stop monitoring appointment attendance", "is_correct": false}
+],
+"rationale": "The reduction in missed appointments suggests that the intervention has had a positive effect on attendance. However, delayed reminders indicate a process weakness that should be investigated and corrected through continued quality improvement.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
