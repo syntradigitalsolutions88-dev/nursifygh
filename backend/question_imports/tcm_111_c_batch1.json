@@ -1,0 +1,877 @@
+{
+"courses": [
+{
+"course_code": "TCM-111-C",
+"course_title": "Traditional and Complementary Medicine",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Traditional and Complementary Medicine",
+"Traditional Medicine Practice Act 2000 (Act 575)",
+"Ghana Traditional Medicine Practice Council",
+"Types of Traditional Healers",
+"Common Ghanaian Herbal Remedies",
+"Herbal Medicine Safety and Toxicity",
+"Drug-Herb Interactions",
+"Integration of Traditional Medicine with Modern Healthcare",
+"Referral and Collaboration with Traditional Healers",
+"Cultural Beliefs and Health-Seeking Behaviour",
+"Ethical and Legal Considerations in Traditional Medicine"
+],
+"questions": [
+{
+"topic": "Introduction to Traditional and Complementary Medicine",
+"question_text": "Traditional medicine is best described as healthcare practices based on which of the following?",
+"choices": [
+{"text": "Only laboratory investigations and pharmaceutical medicines", "is_correct": false},
+{"text": "Beliefs, knowledge and practices recognised by a community for maintaining health and managing illness", "is_correct": true},
+{"text": "Surgical procedures performed exclusively in teaching hospitals", "is_correct": false},
+{"text": "The use of antibiotics for every infectious disease", "is_correct": false}
+],
+"rationale": "Traditional medicine comprises health-related knowledge, skills and practices developed within different cultural settings. It may involve medicinal plants, natural substances, manual techniques and culturally based approaches to healthcare.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Traditional and Complementary Medicine",
+"question_text": "Which statement best distinguishes complementary medicine from alternative medicine?",
+"choices": [
+{"text": "Complementary medicine is used alongside conventional healthcare, while alternative medicine is used instead of it", "is_correct": true},
+{"text": "Complementary medicine is always harmful, while alternative medicine is always safe", "is_correct": false},
+{"text": "Alternative medicine is regulated only in rural communities", "is_correct": false},
+{"text": "Complementary medicine refers exclusively to spiritual healing", "is_correct": false}
+],
+"rationale": "Complementary medicine is used together with conventional medical care, whereas alternative medicine is used in place of conventional care. Neither term automatically establishes that a treatment is safe or effective.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "Which Ghanaian legislation provides the principal statutory framework for regulating traditional medicine practice?",
+"choices": [
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": false},
+{"text": "Mental Health Act, 2012 (Act 846)", "is_correct": false},
+{"text": "Traditional Medicine Practice Act, 2000 (Act 575)", "is_correct": true},
+{"text": "Children's Act, 1998 (Act 560)", "is_correct": false}
+],
+"rationale": "The Traditional Medicine Practice Act, 2000 (Act 575), establishes the legal framework for promoting, controlling and regulating traditional medicine practice in Ghana. It provides for practitioner registration and licensing of traditional medicine practice premises.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Traditional Medicine Practice Council",
+"question_text": "What is the principal objective of the Traditional Medicine Practice Council established under Act 575?",
+"choices": [
+{"text": "To replace all conventional healthcare facilities", "is_correct": false},
+{"text": "To prescribe antibiotics for patients attending herbal clinics", "is_correct": false},
+{"text": "To supervise only traditional birth attendants", "is_correct": false},
+{"text": "To promote, control and regulate traditional medicine practice", "is_correct": true}
+],
+"rationale": "Act 575 establishes the Traditional Medicine Practice Council to promote, control and regulate traditional medicine practice. Its responsibilities include setting practice standards, registering qualified practitioners and licensing practice premises.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "Under Act 575, which of the following is required of a person who intends to operate a traditional medicine practice?",
+"choices": [
+{"text": "Registration as a practitioner and a licence for the practice premises", "is_correct": true},
+{"text": "Membership of a political organisation", "is_correct": false},
+{"text": "Approval from every household in the district", "is_correct": false},
+{"text": "A nursing certificate issued by the Nursing and Midwifery Council", "is_correct": false}
+],
+"rationale": "Act 575 provides for registration of traditional medicine practitioners and licensing of practice premises. Registration of an individual practitioner and licensing of the premises are distinct regulatory requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Traditional Healers",
+"question_text": "A traditional healer whose practice mainly involves preparing and administering medicinal plant products is commonly known as a:",
+"choices": [
+{"text": "Bone setter", "is_correct": false},
+{"text": "Herbalist", "is_correct": true},
+{"text": "Traditional birth attendant", "is_correct": false},
+{"text": "Spiritual healer", "is_correct": false}
+],
+"rationale": "A herbalist uses medicinal plants and plant preparations as part of traditional healthcare practice. The safety and effectiveness of each preparation depend on its ingredients, preparation, dosage and appropriate use.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Traditional Healers",
+"question_text": "Which traditional healthcare provider is commonly associated with assisting women during pregnancy and childbirth outside formal health facilities?",
+"choices": [
+{"text": "Pharmacist", "is_correct": false},
+{"text": "Medical laboratory scientist", "is_correct": false},
+{"text": "Traditional birth attendant", "is_correct": true},
+{"text": "Physiotherapist", "is_correct": false}
+],
+"rationale": "Traditional birth attendants are community-based individuals who assist women during pregnancy and childbirth through customary practices. Their involvement does not replace skilled birth attendance or emergency obstetric care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Traditional Healers",
+"question_text": "A traditional practitioner who focuses mainly on the manipulation or treatment of suspected fractures and dislocations is commonly called a:",
+"choices": [
+{"text": "Spiritual healer", "is_correct": false},
+{"text": "Herbalist", "is_correct": false},
+{"text": "Traditional birth attendant", "is_correct": false},
+{"text": "Bone setter", "is_correct": true}
+],
+"rationale": "Bone setters traditionally manage musculoskeletal injuries, including suspected fractures and dislocations. However, improper manipulation can worsen tissue damage, nerve injury, vascular injury or displacement of a fracture.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies",
+"question_text": "Ginger is traditionally used in some Ghanaian households primarily to help relieve which symptom?",
+"choices": [
+{"text": "Nausea", "is_correct": true},
+{"text": "Severe blood loss", "is_correct": false},
+{"text": "A displaced fracture", "is_correct": false},
+{"text": "Acute appendicitis", "is_correct": false}
+],
+"rationale": "Ginger is traditionally used for digestive complaints, including nausea. It should not be considered a substitute for clinical assessment when nausea is persistent, severe or associated with other danger signs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "Which statement about herbal medicines is scientifically correct?",
+"choices": [
+{"text": "All herbal preparations are safe because they are natural", "is_correct": false},
+{"text": "Herbal medicines cannot cause adverse drug reactions", "is_correct": false},
+{"text": "Herbal preparations may cause toxicity, adverse effects and interactions with conventional medicines", "is_correct": true},
+{"text": "Herbal products do not require proper storage", "is_correct": false}
+],
+"rationale": "Natural origin does not guarantee safety. Herbal preparations may contain pharmacologically active substances, contaminants or incorrectly identified plants that can cause adverse effects and toxicity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Drug-Herb Interactions",
+"question_text": "A drug-herb interaction occurs when:",
+"choices": [
+{"text": "A patient takes two tablets of the same medicine at different times", "is_correct": false},
+{"text": "An herbal product changes the effect, absorption, metabolism or elimination of a conventional medicine", "is_correct": true},
+{"text": "A medicine is prescribed after a laboratory investigation", "is_correct": false},
+{"text": "A patient changes from one hospital to another", "is_correct": false}
+],
+"rationale": "Herbal products may influence the pharmacokinetics or pharmacodynamics of conventional medicines. This can increase toxicity, reduce therapeutic effectiveness or produce unexpected adverse effects.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Integration of Traditional Medicine with Modern Healthcare",
+"question_text": "What is an important objective of integrating traditional medicine into the national healthcare system?",
+"choices": [
+{"text": "To prevent patients from accessing conventional healthcare", "is_correct": false},
+{"text": "To allow every traditional remedy to be used without assessment", "is_correct": false},
+{"text": "To eliminate the need for healthcare regulation", "is_correct": false},
+{"text": "To promote appropriate collaboration, safety and coordinated healthcare delivery", "is_correct": true}
+],
+"rationale": "Appropriate integration aims to improve coordination between traditional and conventional healthcare while protecting patients. Regulation, evidence, referral systems and patient safety remain essential.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "In community health nursing, health-seeking behaviour refers to:",
+"choices": [
+{"text": "The actions and decisions people take when they perceive a health problem and seek care", "is_correct": true},
+{"text": "The number of medicines stored in a hospital pharmacy", "is_correct": false},
+{"text": "The process of registering healthcare workers", "is_correct": false},
+{"text": "The classification of diseases according to their causes", "is_correct": false}
+],
+"rationale": "Health-seeking behaviour includes how individuals recognise illness, choose a source of care and follow treatment recommendations. Culture, beliefs, cost, accessibility and previous experiences can influence these decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical and Legal Considerations in Traditional Medicine",
+"question_text": "Which ethical principle requires a healthcare provider to respect a patient's right to make informed decisions about their own care?",
+"choices": [
+{"text": "Justice", "is_correct": false},
+{"text": "Autonomy", "is_correct": true},
+{"text": "Non-maleficence", "is_correct": false},
+{"text": "Fidelity", "is_correct": false}
+],
+"rationale": "Autonomy recognises the patient's right to make voluntary and informed decisions about healthcare. Practitioners should provide understandable information and avoid coercion or misleading claims.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "Which body is responsible under Act 575 for maintaining the register of traditional medicine practitioners and licensed practices?",
+"choices": [
+{"text": "The Ghana Health Service", "is_correct": false},
+{"text": "The Nursing and Midwifery Council", "is_correct": false},
+{"text": "The Registrar of the Traditional Medicine Practice Council", "is_correct": true},
+{"text": "The District Assembly health committee", "is_correct": false}
+],
+"rationale": "Act 575 assigns the Registrar responsibility for maintaining records of registered practitioners and licensed practices. This supports regulatory oversight and identification of practitioners operating lawfully.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "Which term describes an unwanted and harmful response associated with the use of a medicinal product at an appropriate dose?",
+"choices": [
+{"text": "Therapeutic benefit", "is_correct": false},
+{"text": "Health promotion", "is_correct": false},
+{"text": "Immunisation", "is_correct": false},
+{"text": "Adverse reaction", "is_correct": true}
+],
+"rationale": "An adverse reaction is an unwanted harmful response associated with the use of a medicinal product. Herbal medicines can also cause adverse reactions and should be included in medication histories and safety monitoring.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "Which action best describes a referral in community healthcare?",
+"choices": [
+{"text": "Sending a patient to an appropriate health professional or facility for further assessment or management", "is_correct": true},
+{"text": "Giving a patient several unlabelled herbal preparations", "is_correct": false},
+{"text": "Allowing a patient to remain at home despite emergency danger signs", "is_correct": false},
+{"text": "Discouraging a patient from seeking further medical attention", "is_correct": false}
+],
+"rationale": "Referral connects a patient with a health professional or facility that can provide the required level of care. Effective referral should include relevant clinical information and appropriate communication between providers.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A community health nurse visits a patient who has been taking an herbal preparation together with prescribed antihypertensive medicine. What should the nurse do first?",
+"choices": [
+{"text": "Tell the patient to double the prescribed antihypertensive dose", "is_correct": false},
+{"text": "Advise the patient to stop all prescribed medicines immediately", "is_correct": false},
+{"text": "Assess the patient's condition, identify the herbal product and obtain details of its use", "is_correct": true},
+{"text": "Assure the patient that herbal products cannot affect blood pressure medicines", "is_correct": false}
+],
+"rationale": "The nurse should establish what product is being used, its dose, frequency and possible effects while assessing the patient's clinical condition. The information should guide appropriate consultation and management rather than unsupervised changes to prescribed treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "During a community visit, a nurse discovers that an individual is operating a traditional medicine practice without the required registration and premises licence. Which response is most appropriate?",
+"choices": [
+{"text": "Ignore the matter because traditional medicine is a private cultural activity", "is_correct": false},
+{"text": "Recognise the regulatory concern and direct the matter to the appropriate Traditional Medicine Practice Council channels", "is_correct": true},
+{"text": "Immediately issue a nursing licence to the practitioner", "is_correct": false},
+{"text": "Allow the practitioner to continue because community popularity replaces legal requirements", "is_correct": false}
+],
+"rationale": "Act 575 provides for practitioner registration and licensing of traditional medicine practice premises. A community health nurse should not issue licences but can direct regulatory concerns to the appropriate authority.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Traditional Healers",
+"question_text": "A pregnant woman in a rural community informs a CHN that she plans to deliver with a traditional birth attendant. Which response is most appropriate?",
+"choices": [
+{"text": "Insult the woman for following traditional practices", "is_correct": false},
+{"text": "Tell her that traditional birth attendants can manage every obstetric emergency", "is_correct": false},
+{"text": "Avoid discussing the planned delivery because it is a cultural matter", "is_correct": false},
+{"text": "Discuss the benefits of skilled birth attendance, danger signs and timely referral while communicating respectfully", "is_correct": true}
+],
+"rationale": "The nurse should provide respectful, evidence-informed counselling about skilled birth attendance and the risks of delayed obstetric care. Culturally sensitive communication can help the woman and her family make safer decisions without stigmatising their beliefs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A patient arrives at a CHPS compound with vomiting and abdominal pain after taking an unknown herbal mixture. What should the community health nurse do first?",
+"choices": [
+{"text": "Assess the patient's airway, breathing, circulation and level of consciousness", "is_correct": true},
+{"text": "Give another herbal preparation to neutralise the mixture", "is_correct": false},
+{"text": "Induce vomiting immediately", "is_correct": false},
+{"text": "Send the patient home to rest", "is_correct": false}
+],
+"rationale": "Possible poisoning requires immediate assessment of vital functions and the severity of the patient's condition. The nurse should arrange urgent medical evaluation when indicated and should not induce vomiting or administer an unverified antidote.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A family believes that a child's convulsions are caused by witchcraft and initially seeks help from a spiritual healer. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Dismiss the family as ignorant and end the discussion", "is_correct": false},
+{"text": "Confirm that witchcraft is the established medical cause of the convulsions", "is_correct": false},
+{"text": "Respectfully explore the family's beliefs while explaining the need for urgent clinical assessment", "is_correct": true},
+{"text": "Advise the family to avoid hospitals permanently", "is_correct": false}
+],
+"rationale": "Cultural beliefs can influence decisions about where and when people seek care. The nurse should communicate respectfully while explaining that convulsions may have serious medical causes requiring urgent assessment and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Drug-Herb Interactions",
+"question_text": "A patient receiving anticoagulant therapy tells the nurse that they have started using an herbal product. Which action is most appropriate?",
+"choices": [
+{"text": "Assume the herbal product cannot affect blood clotting", "is_correct": false},
+{"text": "Obtain the product details and arrange review by the prescriber or pharmacist because of possible interaction and bleeding risk", "is_correct": true},
+{"text": "Instruct the patient to increase the anticoagulant dose", "is_correct": false},
+{"text": "Tell the patient to conceal herbal use from the prescriber", "is_correct": false}
+],
+"rationale": "Some herbal products may influence coagulation or alter the effect of anticoagulants, potentially increasing bleeding risk or reducing therapeutic effectiveness. The nurse should obtain accurate information and facilitate a medication review by an appropriate professional.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies",
+"question_text": "A mother gives her child a homemade herbal preparation for diarrhoea and the child develops sunken eyes and lethargy. What is the priority nursing action?",
+"choices": [
+{"text": "Recommend continuing the herbal preparation for another two days", "is_correct": false},
+{"text": "Advise the mother to withhold all fluids", "is_correct": false},
+{"text": "Reassure the mother that sunken eyes are normal during diarrhoea", "is_correct": false},
+{"text": "Arrange urgent assessment and management for possible severe dehydration", "is_correct": true}
+],
+"rationale": "Sunken eyes and lethargy are danger signs that may indicate significant dehydration or severe illness. The child requires urgent assessment and appropriate rehydration and referral according to clinical protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "A traditional healer in a community agrees to refer patients with severe illness to the nearest health facility. What should the CHN do to strengthen this collaboration?",
+"choices": [
+{"text": "Establish clear referral communication and explain danger signs that require immediate facility-based care", "is_correct": true},
+{"text": "Encourage the healer to manage all emergencies independently", "is_correct": false},
+{"text": "Tell the healer not to communicate with health workers", "is_correct": false},
+{"text": "Allow referrals only when patients can pay privately", "is_correct": false}
+],
+"rationale": "Clear referral arrangements can reduce delays in accessing appropriate care. Traditional healers can support early recognition and referral, but should not be encouraged to manage conditions beyond their competence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "A patient asks how to determine whether a traditional medicine practitioner is registered in Ghana. Which advice is most appropriate?",
+"choices": [
+{"text": "Registration can be confirmed by the practitioner's number of social media followers", "is_correct": false},
+{"text": "A traditional ruler's approval alone proves that the practitioner is registered", "is_correct": false},
+{"text": "The patient should seek confirmation through the Traditional Medicine Practice Council or its authorised records", "is_correct": true},
+{"text": "Every person selling medicinal plants is automatically registered", "is_correct": false}
+],
+"rationale": "The Traditional Medicine Practice Council is responsible for registration and regulatory oversight under Act 575. Patients should use the Council's official verification channels rather than relying solely on informal endorsements or advertising.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "During a home visit, a nurse notices that a patient stores several herbal preparations in unlabelled reused bottles. What is the most appropriate advice?",
+"choices": [
+{"text": "Mix all the preparations together to reduce storage space", "is_correct": false},
+{"text": "Avoid using unidentified preparations and obtain products with clear identification, ingredients and appropriate labelling", "is_correct": true},
+{"text": "Store the bottles in direct sunlight to improve their potency", "is_correct": false},
+{"text": "Increase the dose whenever the liquid changes colour", "is_correct": false}
+],
+"rationale": "Unlabelled preparations create risks of mistaken identity, contamination, incorrect dosing and toxicity. Patients should avoid unidentified products and seek reliable information about ingredients, dosage, storage and expiry.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A community believes that a particular illness is caused by breaking an ancestral taboo. How should a CHN approach health education in this community?",
+"choices": [
+{"text": "Use respectful dialogue to understand the belief and explain relevant biomedical causes and prevention", "is_correct": true},
+{"text": "Demand that community members abandon their cultural identity", "is_correct": false},
+{"text": "Avoid providing health education because the belief is traditional", "is_correct": false},
+{"text": "Support the belief as a proven explanation for every case of the illness", "is_correct": false}
+],
+"rationale": "Culturally sensitive health education recognises community beliefs while communicating accurate health information. Respectful dialogue can improve trust, participation and acceptance of preventive measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Traditional Healers",
+"question_text": "A patient with a suspected closed fracture is taken to a traditional bone setter before attending a hospital. Which advice should the CHN give?",
+"choices": [
+{"text": "The bone should be forcefully manipulated before radiography", "is_correct": false},
+{"text": "The patient should walk on the injured limb to test the fracture", "is_correct": false},
+{"text": "The injury should be immobilised and assessed promptly at an appropriate health facility", "is_correct": true},
+{"text": "A tight rope should be tied around the injured limb for several hours", "is_correct": false}
+],
+"rationale": "Suspected fractures require appropriate assessment and immobilisation to reduce pain and prevent further injury. Forceful manipulation or tight constriction can worsen displacement and damage nerves, blood vessels or surrounding tissues.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integration of Traditional Medicine with Modern Healthcare",
+"question_text": "A patient receiving treatment at a district hospital wishes to continue a traditional herbal preparation. What should the nurse do?",
+"choices": [
+{"text": "Automatically approve the preparation because the patient prefers it", "is_correct": false},
+{"text": "Tell the patient that discussing traditional medicine is prohibited", "is_correct": false},
+{"text": "Advise the patient to stop prescribed medicines without consulting the prescriber", "is_correct": false},
+{"text": "Ask about the preparation, document relevant information and facilitate assessment of its safety with the healthcare team", "is_correct": true}
+],
+"rationale": "Open communication about traditional medicine use helps healthcare professionals identify possible interactions and safety concerns. Decisions should be based on the patient's condition, available evidence and coordinated clinical review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical and Legal Considerations in Traditional Medicine",
+"question_text": "A traditional practitioner tells a patient that a herbal product is guaranteed to cure HIV and advises the patient to stop antiretroviral therapy. What should the CHN do?",
+"choices": [
+{"text": "Support the advice because traditional products are always more effective", "is_correct": false},
+{"text": "Explain that the claim is unsafe, encourage continuation of prescribed antiretroviral therapy and arrange appropriate counselling", "is_correct": true},
+{"text": "Advise the patient to take antiretroviral medicines only when symptoms appear", "is_correct": false},
+{"text": "Tell the patient that HIV does not require ongoing treatment", "is_correct": false}
+],
+"rationale": "There is no basis for replacing effective antiretroviral therapy with an unverified herbal cure. Interrupting treatment can lead to viral rebound and other adverse outcomes, so the patient should receive accurate counselling and clinical support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Birth Attendants",
+"question_text": "A traditional birth attendant notices that a woman in labour has heavy vaginal bleeding. What should happen first?",
+"choices": [
+{"text": "Give the woman a herbal drink and wait for the bleeding to stop", "is_correct": false},
+{"text": "Encourage the woman to continue pushing without assessment", "is_correct": false},
+{"text": "Arrange immediate emergency referral to a health facility while supporting the woman's safety", "is_correct": true},
+{"text": "Ask the family to observe the woman overnight", "is_correct": false}
+],
+"rationale": "Heavy vaginal bleeding during labour or pregnancy may indicate a life-threatening obstetric emergency. Immediate referral and emergency obstetric assessment are essential because delay can result in maternal and fetal harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A patient develops facial swelling and difficulty breathing shortly after taking an herbal preparation. What is the priority action?",
+"choices": [
+{"text": "Treat the situation as a possible severe allergic reaction and activate emergency care immediately", "is_correct": true},
+{"text": "Advise the patient to drink more of the preparation", "is_correct": false},
+{"text": "Ask the patient to sleep until the swelling disappears", "is_correct": false},
+{"text": "Wait until the next routine clinic appointment", "is_correct": false}
+],
+"rationale": "Facial swelling with breathing difficulty may indicate anaphylaxis, which can rapidly become fatal. The patient needs immediate emergency management, including appropriate airway and circulatory support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Drug-Herb Interactions",
+"question_text": "A patient taking prescribed diabetes medication begins using an herbal product and later experiences sweating, tremors and confusion. Which complication should the nurse suspect first?",
+"choices": [
+{"text": "Hypercalcaemia", "is_correct": false},
+{"text": "Severe dehydration caused by excessive water intake", "is_correct": false},
+{"text": "Hypertension", "is_correct": false},
+{"text": "Hypoglycaemia", "is_correct": true}
+],
+"rationale": "Sweating, tremors and confusion are possible manifestations of hypoglycaemia. Some herbal products may alter blood glucose or interact with antidiabetic medicines, so urgent glucose assessment and appropriate treatment are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "A spiritual healer informs a CHN that several people in the community have developed similar symptoms after attending a local event. What should the nurse do?",
+"choices": [
+{"text": "Dismiss the information because it came from a spiritual healer", "is_correct": false},
+{"text": "Ask the healer to treat all affected people without further assessment", "is_correct": false},
+{"text": "Obtain relevant information, assess the possibility of a disease cluster and report through appropriate public health channels", "is_correct": true},
+{"text": "Publicly identify the affected individuals without their consent", "is_correct": false}
+],
+"rationale": "Community members and traditional healers can provide useful early information about unusual illness patterns. The nurse should assess the report and follow appropriate surveillance and notification procedures while protecting patient confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A woman refuses cervical cancer screening because she believes that the procedure violates a cultural taboo. Which nursing approach is most appropriate?",
+"choices": [
+{"text": "Force the woman to undergo screening because it is beneficial", "is_correct": false},
+{"text": "Explore her concerns respectfully, explain the procedure and benefits, and support an informed decision", "is_correct": true},
+{"text": "Record that the woman is uncooperative and end all future contact", "is_correct": false},
+{"text": "Tell her that cultural beliefs are always medically incorrect", "is_correct": false}
+],
+"rationale": "Respect for autonomy requires that screening decisions are voluntary and informed. Culturally sensitive counselling can address misconceptions and concerns without coercion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "A traditional medicine practitioner displays a valid practice licence in a visible area of the premises. What is the main purpose of this requirement?",
+"choices": [
+{"text": "To advertise the practitioner's personal wealth", "is_correct": false},
+{"text": "To replace the need for professional conduct", "is_correct": false},
+{"text": "To demonstrate that the practitioner has authority to prescribe every conventional medicine", "is_correct": false},
+{"text": "To make the licensing status of the practice accessible to patients and visitors", "is_correct": true}
+],
+"rationale": "Act 575 requires the licence for a traditional medicine practice to be displayed in a prominent place accessible to patients or prospective patients. Displaying the licence supports transparency and regulatory accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies",
+"question_text": "A community member uses moringa leaves as part of the household diet and claims that moringa alone can treat severe anaemia. Which response is most appropriate?",
+"choices": [
+{"text": "Agree that moringa is a guaranteed cure for all forms of anaemia", "is_correct": false},
+{"text": "Advise the person to stop all iron-containing foods", "is_correct": false},
+{"text": "Explain that moringa may contribute nutrients to the diet but suspected anaemia requires proper assessment and cause-specific management", "is_correct": true},
+{"text": "Recommend replacing prescribed treatment with moringa leaves", "is_correct": false}
+],
+"rationale": "Moringa leaves can contribute nutrients to the diet, but dietary use does not establish that they can treat severe anaemia. Anaemia has different causes and requires appropriate investigation and management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical and Legal Considerations in Traditional Medicine",
+"question_text": "A traditional healer asks a CHN to disclose the diagnosis of a patient who consulted the healer previously. The patient has not authorised disclosure. What should the nurse do?",
+"choices": [
+{"text": "Disclose the complete medical record because the healer is a community member", "is_correct": false},
+{"text": "Protect the patient's confidentiality and disclose information only when there is a valid legal basis or appropriate consent", "is_correct": true},
+{"text": "Publish the diagnosis on the community noticeboard", "is_correct": false},
+{"text": "Give the information to anyone who requests it verbally", "is_correct": false}
+],
+"rationale": "Patient information is confidential and should be shared only with appropriate consent or another valid legal justification. Collaboration with traditional practitioners does not remove the nurse's duty to protect patient privacy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A patient reports taking a herbal preparation of unknown ingredients for several weeks and now has yellowing of the eyes and dark urine. What should the nurse do first?",
+"choices": [
+{"text": "Recommend increasing the dose to complete the treatment", "is_correct": false},
+{"text": "Assure the patient that these symptoms are normal effects of herbal cleansing", "is_correct": false},
+{"text": "Advise the patient to take another herbal preparation to improve liver function", "is_correct": false},
+{"text": "Arrange prompt medical assessment for possible liver injury and obtain details of the product used", "is_correct": true}
+],
+"rationale": "Jaundice and dark urine may indicate liver dysfunction, including possible drug- or herb-induced liver injury. Prompt clinical assessment is necessary, and the suspected product should be identified and reported through appropriate channels where indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integration of Traditional Medicine with Modern Healthcare",
+"question_text": "A CHPS nurse is planning a community meeting with registered traditional medicine practitioners. Which subject should be prioritised?",
+"choices": [
+{"text": "How to discourage all patients from attending health facilities", "is_correct": false},
+{"text": "How to prescribe antibiotics without clinical assessment", "is_correct": false},
+{"text": "Early recognition of danger signs, safe practices and timely referral", "is_correct": true},
+{"text": "How to conceal adverse effects of herbal products", "is_correct": false}
+],
+"rationale": "Training and collaboration should strengthen patient safety and appropriate referral. Recognising danger signs and avoiding harmful practices can reduce delays in accessing effective healthcare.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Traditional Healers",
+"question_text": "A spiritual healer tells a patient with persistent severe headache and neck stiffness that the symptoms are caused by ancestral displeasure. What should the CHN recommend?",
+"choices": [
+{"text": "Urgent assessment at a health facility because the symptoms may indicate a serious medical condition", "is_correct": true},
+{"text": "Remaining at the spiritual centre until the symptoms disappear", "is_correct": false},
+{"text": "Avoiding all medical investigations", "is_correct": false},
+{"text": "Taking an unknown herbal mixture before seeking care", "is_correct": false}
+],
+"rationale": "Severe headache with neck stiffness may indicate meningitis or another serious condition requiring urgent assessment. Cultural explanations should be approached respectfully, but they must not delay emergency medical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Drug-Herb Interactions",
+"question_text": "A patient taking prescribed medication for hypertension says that an herbal product has made the medication unnecessary. What is the best nursing response?",
+"choices": [
+{"text": "Agree that prescribed medication should be stopped whenever an herbal product is available", "is_correct": false},
+{"text": "Explain the risks of stopping treatment without review and encourage consultation with the prescriber", "is_correct": true},
+{"text": "Advise the patient to take twice the usual dose of the herbal product", "is_correct": false},
+{"text": "Tell the patient that hypertension does not require long-term management", "is_correct": false}
+],
+"rationale": "Stopping antihypertensive treatment without clinical review may lead to uncontrolled blood pressure and complications. The patient should discuss all herbal products with the healthcare team before changing prescribed treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Birth Attendants",
+"question_text": "A traditional birth attendant identifies a pregnant woman with severe headache, visual disturbances and facial swelling. What is the priority action?",
+"choices": [
+{"text": "Advise the woman to wait until the next antenatal clinic", "is_correct": false},
+{"text": "Give an unlabelled herbal preparation to lower blood pressure", "is_correct": false},
+{"text": "Arrange immediate referral for assessment of possible pre-eclampsia", "is_correct": true},
+{"text": "Encourage the woman to undertake strenuous exercise", "is_correct": false}
+],
+"rationale": "Severe headache, visual disturbances and facial swelling in pregnancy may indicate pre-eclampsia, which can progress to eclampsia and other life-threatening complications. Immediate referral for skilled assessment and management is essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "A registered herbal practitioner refers a patient with persistent fever to a CHPS compound. Which action should the nurse take?",
+"choices": [
+{"text": "Reject the patient because the referral originated from a traditional practitioner", "is_correct": false},
+{"text": "Assume the patient has malaria without assessment", "is_correct": false},
+{"text": "Send the patient back without documenting the encounter", "is_correct": false},
+{"text": "Assess the patient, investigate according to clinical protocols and arrange further referral if indicated", "is_correct": true}
+],
+"rationale": "Patients should receive appropriate assessment regardless of the source of referral. Persistent fever may have several causes, so clinical evaluation and protocol-based management are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A family delays taking a child with severe malaria symptoms to hospital because they believe the illness is caused by witchcraft. Which intervention is most appropriate?",
+"choices": [
+{"text": "Use respectful family counselling to explain the danger signs and facilitate immediate referral", "is_correct": true},
+{"text": "Tell the family that their beliefs make them unsuitable for healthcare", "is_correct": false},
+{"text": "Wait until the family changes its beliefs before arranging care", "is_correct": false},
+{"text": "Encourage the family to use spiritual treatment instead of medical assessment", "is_correct": false}
+],
+"rationale": "Severe malaria can rapidly become life-threatening, making timely clinical assessment essential. Respectful counselling should address the family's concerns while prioritising the child's safety and urgent referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A patient brings a sealed herbal product to a CHPS compound and asks whether it is safe to use. Which information is most useful for an initial safety assessment?",
+"choices": [
+{"text": "The colour of the package alone", "is_correct": false},
+{"text": "The seller's popularity in the community", "is_correct": false},
+{"text": "The product's ingredients, manufacturer, registration or regulatory status, directions, expiry date and the patient's medical history", "is_correct": true},
+{"text": "The number of people who have shared the product on social media", "is_correct": false}
+],
+"rationale": "A safety assessment should consider product identity, ingredients, labelling, regulatory status and expiry information. The patient's conditions and concurrent medicines are also important because they may affect the risk of adverse effects or interactions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "A practitioner argues that because herbal medicine is part of Ghanaian culture, the preparation and sale of herbal products are exempt from all regulation. Which response is correct?",
+"choices": [
+{"text": "Cultural acceptance automatically removes all legal responsibilities", "is_correct": false},
+{"text": "Act 575 and applicable medicines regulation provide a framework for regulating traditional medicine practice and herbal products", "is_correct": true},
+{"text": "Only products imported into Ghana are subject to regulation", "is_correct": false},
+{"text": "Herbal medicines are regulated only when prescribed by nurses", "is_correct": false}
+],
+"rationale": "Traditional medicine practice is recognised within Ghana's legal framework, but cultural use does not remove regulatory requirements. Act 575 addresses practitioner registration, practice licensing and the regulation of herbal medicine, alongside applicable medicines legislation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical and Legal Considerations in Traditional Medicine",
+"question_text": "A traditional practitioner promises a patient complete recovery from cancer after purchasing an expensive herbal product. Which ethical concern is most evident?",
+"choices": [
+{"text": "Appropriate health education", "is_correct": false},
+{"text": "Respect for patient autonomy", "is_correct": false},
+{"text": "Accurate clinical documentation", "is_correct": false},
+{"text": "Misleading claims and possible exploitation of a vulnerable patient", "is_correct": true}
+],
+"rationale": "Guaranteeing a cancer cure without reliable evidence is misleading and may exploit a patient's vulnerability. Such claims can also delay effective treatment and expose patients to financial and physical harm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies",
+"question_text": "A community member says that neem preparations are traditionally used for several health complaints and therefore can safely replace prescribed malaria treatment. What should the CHN explain?",
+"choices": [
+{"text": "Traditional use does not establish that a preparation can safely or effectively replace recommended malaria treatment", "is_correct": true},
+{"text": "Neem preparations are proven substitutes for all antimalarial medicines", "is_correct": false},
+{"text": "Malaria does not require diagnostic testing or clinical assessment", "is_correct": false},
+{"text": "Any herbal preparation can cure severe malaria if taken frequently", "is_correct": false}
+],
+"rationale": "Traditional use alone does not establish the safety or efficacy of an herbal product as a replacement for recommended antimalarial treatment. Suspected malaria should be assessed and managed according to current clinical protocols, with urgent referral for danger signs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integration of Traditional Medicine with Modern Healthcare",
+"question_text": "A community health nurse is developing a referral partnership with traditional healers. Which activity would best support patient safety?",
+"choices": [
+{"text": "Allowing traditional healers to independently diagnose and treat all infectious diseases", "is_correct": false},
+{"text": "Agreeing that patients should never disclose traditional medicine use to clinicians", "is_correct": false},
+{"text": "Developing a clear communication pathway for danger signs, referrals and feedback while respecting professional boundaries", "is_correct": true},
+{"text": "Encouraging traditional healers to discourage immunisation", "is_correct": false}
+],
+"rationale": "Structured collaboration can support early referral, continuity of care and safer communication between providers. Each practitioner must work within their competence and legal scope, with patient welfare as the priority.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "A traditional medicine practitioner produces herbal medicine for sale but is not registered as required under Act 575. Which statement best describes the situation?",
+"choices": [
+{"text": "The activity is automatically lawful if the product is popular", "is_correct": false},
+{"text": "The practitioner may be operating contrary to the registration requirements of Act 575", "is_correct": true},
+{"text": "Registration is required only for practitioners working in hospitals", "is_correct": false},
+{"text": "The practitioner is exempt if the medicine is prepared from locally grown plants", "is_correct": false}
+],
+"rationale": "Act 575 provides that a person must be registered in accordance with the Act before operating as a practitioner or producing herbal medicine for sale. Local origin or popularity of a product does not remove the registration requirement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A patient taking an herbal preparation develops persistent vomiting, dizziness and reduced urine output. What should the nurse do first?",
+"choices": [
+{"text": "Advise the patient to increase the herbal dose", "is_correct": false},
+{"text": "Recommend waiting several days before seeking help", "is_correct": false},
+{"text": "Arrange prompt clinical assessment for possible toxicity, dehydration or organ injury", "is_correct": true},
+{"text": "Tell the patient that reduced urine output is an expected sign of recovery", "is_correct": false}
+],
+"rationale": "Persistent vomiting, dizziness and reduced urine output may indicate significant dehydration, toxicity or renal impairment. Prompt clinical assessment is necessary to identify complications and prevent deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A CHN learns that some community members avoid a health facility because they fear that healthcare workers will ridicule their traditional beliefs. Which intervention is most appropriate?",
+"choices": [
+{"text": "Avoid community engagement until the beliefs disappear", "is_correct": false},
+{"text": "Publicly identify and criticise people who use traditional medicine", "is_correct": false},
+{"text": "Restrict health education to people who already accept biomedical explanations", "is_correct": false},
+{"text": "Promote respectful, non-discriminatory communication and invite community participation in health activities", "is_correct": true}
+],
+"rationale": "Respectful and non-discriminatory care can reduce mistrust and improve access to health services. Community participation helps health workers understand local concerns and provide culturally appropriate health education.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Birth Attendants",
+"question_text": "A traditional birth attendant is assisting a woman whose labour has continued for many hours without progress. What should the CHN emphasise?",
+"choices": [
+{"text": "Prolonged or obstructed labour requires prompt assessment and referral to a facility with appropriate obstetric services", "is_correct": true},
+{"text": "The woman should remain at home until the following day", "is_correct": false},
+{"text": "The attendant should apply forceful abdominal pressure to speed delivery", "is_correct": false},
+{"text": "The woman should avoid referral unless the baby has already been delivered", "is_correct": false}
+],
+"rationale": "Prolonged or obstructed labour can cause maternal and fetal complications, including uterine rupture and fetal compromise. Prompt referral for skilled obstetric assessment is essential, and harmful abdominal pressure should be avoided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Drug-Herb Interactions",
+"question_text": "A patient taking antiretroviral medicines reports using several herbal mixtures but cannot remember their names. What should the nurse do?",
+"choices": [
+{"text": "Assume that all mixtures are harmless because they are traditional", "is_correct": false},
+{"text": "Advise the patient to stop antiretroviral therapy immediately", "is_correct": false},
+{"text": "Explore the products and their sources, document the information and arrange a medication review with the HIV care team", "is_correct": true},
+{"text": "Tell the patient not to mention herbal use during future clinic visits", "is_correct": false}
+],
+"rationale": "Some herbal products may alter the metabolism or effectiveness of antiretroviral medicines, creating a risk of treatment failure or toxicity. The patient should be encouraged to disclose all products used so the HIV care team can assess possible interactions without interrupting prescribed therapy independently.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "A registered traditional practitioner refers a patient with severe chest pain, sweating and difficulty breathing to a CHPS compound. What is the priority action?",
+"choices": [
+{"text": "Provide routine health education and ask the patient to return the next day", "is_correct": false},
+{"text": "Arrange immediate emergency referral and provide appropriate initial support within the nurse's competence", "is_correct": true},
+{"text": "Ask the patient to take an unknown herbal preparation before referral", "is_correct": false},
+{"text": "Delay referral until the traditional practitioner provides a written diagnosis", "is_correct": false}
+],
+"rationale": "Severe chest pain with sweating and breathing difficulty may indicate an acute coronary syndrome or another life-threatening emergency. Immediate emergency referral and appropriate initial assessment and support are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A community member collects medicinal plants from an area recently sprayed with agricultural chemicals. What is the most appropriate advice?",
+"choices": [
+{"text": "Use the plants immediately because pesticide residues improve medicinal potency", "is_correct": false},
+{"text": "Wash the plants briefly and assume all chemical hazards have been removed", "is_correct": false},
+{"text": "Mix the plants with other herbs to dilute possible contamination", "is_correct": false},
+{"text": "Avoid using the potentially contaminated plants because pesticide residues may cause harm", "is_correct": true}
+],
+"rationale": "Plants collected from chemically treated areas may contain pesticide residues or other contaminants. Washing may not reliably remove all residues, so potentially contaminated material should not be used medicinally or as food.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "A traditional medicine practice has a licence, but the practitioner is found to be using unsafe preparation and storage methods. Which interpretation is most appropriate?",
+"choices": [
+{"text": "A practice licence does not remove the practitioner's responsibility to comply with safety standards and applicable regulations", "is_correct": true},
+{"text": "A licence permits any preparation method, regardless of infection risk", "is_correct": false},
+{"text": "Safety standards apply only to conventional hospitals", "is_correct": false},
+{"text": "The practitioner is not responsible for the quality of products prepared at the premises", "is_correct": false}
+],
+"rationale": "Licensing does not exempt a traditional medicine practice from applicable safety, sanitary and professional requirements. Act 575 provides for standards and regulations concerning traditional medicine practice and the preparation and storage of herbal medicines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "A community health nurse is asked to explain the difference between the Traditional Medicine Practice Council and the Nursing and Midwifery Council. Which explanation is correct?",
+"choices": [
+{"text": "Both bodies regulate only the sale of herbal medicines", "is_correct": false},
+{"text": "The Traditional Medicine Practice Council regulates traditional medicine practice, while the Nursing and Midwifery Council regulates nursing and midwifery practice", "is_correct": true},
+{"text": "The Nursing and Midwifery Council registers all herbalists and bone setters", "is_correct": false},
+{"text": "The Traditional Medicine Practice Council licenses all nurses and midwives", "is_correct": false}
+],
+"rationale": "The two councils have different regulatory mandates. The Traditional Medicine Practice Council operates under Act 575, while the Nursing and Midwifery Council regulates the professional practice of nurses and midwives.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A patient with chronic kidney disease takes an unlabelled herbal mixture daily. The patient now has increasing weakness and reduced urine output. Which explanation best supports the need for urgent referral?",
+"choices": [
+{"text": "Herbal products cannot affect kidney function because they are plant-based", "is_correct": false},
+{"text": "Reduced urine output is always a harmless effect of traditional treatment", "is_correct": false},
+{"text": "Some herbal products may contain nephrotoxic substances or contaminants and may worsen existing renal impairment", "is_correct": true},
+{"text": "Patients with kidney disease do not require assessment when using traditional remedies", "is_correct": false}
+],
+"rationale": "Some herbal preparations may contain substances that damage the kidneys or interfere with medicines, and existing renal disease increases the potential risk. Reduced urine output and worsening weakness require urgent clinical assessment for possible acute deterioration.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Drug-Herb Interactions",
+"question_text": "A patient taking warfarin begins using an unidentified herbal product. Two weeks later, the patient presents with gum bleeding and extensive bruising. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The herbal product must have improved the anticoagulant effect safely", "is_correct": false},
+{"text": "The bleeding is unrelated to medication use because the patient is taking a plant product", "is_correct": false},
+{"text": "The patient should increase the warfarin dose to prevent clot formation", "is_correct": false},
+{"text": "A possible herb-warfarin interaction or excessive anticoagulation should be considered and urgently assessed", "is_correct": true}
+],
+"rationale": "Some herbal products may increase bleeding risk or alter warfarin metabolism and anticoagulant effect. The patient requires urgent clinical assessment, including appropriate coagulation monitoring and medication review.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A CHN observes that pregnant women in a community frequently delay antenatal care because elders believe pregnancy should remain private until late gestation. Which intervention is most likely to improve service uptake?",
+"choices": [
+{"text": "Develop respectful community dialogue involving women, families and influential elders to explain the benefits of early antenatal care", "is_correct": true},
+{"text": "Publicly shame families that follow the belief", "is_correct": false},
+{"text": "Stop offering antenatal services to women who attend late", "is_correct": false},
+{"text": "Ignore the belief and assume that access to a clinic alone will change behaviour", "is_correct": false}
+],
+"rationale": "The belief influences health-seeking behaviour and may delay detection of pregnancy-related risks. Community dialogue that respects local leadership while communicating the benefits of early antenatal care is more likely to build trust and improve uptake.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Traditional Birth Attendants",
+"question_text": "A traditional birth attendant reports that a newborn is not breathing normally after delivery and appears limp. Which action should be prioritised?",
+"choices": [
+{"text": "Give the newborn an herbal preparation to stimulate breathing", "is_correct": false},
+{"text": "Prioritise immediate newborn resuscitation by a trained provider and activate urgent referral or emergency support", "is_correct": true},
+{"text": "Wait for the placenta to be delivered before assessing the newborn", "is_correct": false},
+{"text": "Place the newborn in a separate room and observe for one hour", "is_correct": false}
+],
+"rationale": "A newborn who is limp and not breathing normally may require immediate resuscitation. Delaying ventilation and appropriate emergency support can result in severe hypoxic injury or death.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Integration of Traditional Medicine with Modern Healthcare",
+"question_text": "A district health team is evaluating a proposed collaboration with local traditional healers. Which finding would provide the strongest evidence that the collaboration is improving patient safety?",
+"choices": [
+{"text": "An increase in the number of patients who abandon prescribed treatment", "is_correct": false},
+{"text": "An increase in the number of unlabelled herbal preparations sold in the community", "is_correct": false},
+{"text": "Improved timely referral of patients with danger signs and better documentation of traditional medicine use", "is_correct": true},
+{"text": "A reduction in communication between traditional practitioners and health facilities", "is_correct": false}
+],
+"rationale": "Timely referral and accurate disclosure of traditional medicine use are measurable indicators of safer coordination. A successful collaboration should improve access to appropriate care without encouraging treatment delays or unsafe substitution.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical and Legal Considerations in Traditional Medicine",
+"question_text": "A patient with a treatable infection is told by a traditional practitioner that hospital treatment is unnecessary and that failure to follow a ritual will cause death. The patient becomes frightened and refuses referral. Which ethical concern should the CHN address most directly?",
+"choices": [
+{"text": "The patient's right to cultural participation is more important than all clinical considerations", "is_correct": false},
+{"text": "The nurse should threaten the patient to force acceptance of treatment", "is_correct": false},
+{"text": "The nurse should ignore the patient's fear because it is not medically relevant", "is_correct": false},
+{"text": "Fear-based coercion and misinformation may undermine voluntary informed decision-making and delay necessary care", "is_correct": true}
+],
+"rationale": "Threats and misleading claims can compromise a patient's ability to make a voluntary and informed decision. The nurse should address the patient's concerns respectfully, explain the risks and benefits of referral and support an informed choice.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "Several patients from one community develop similar symptoms after using the same locally prepared herbal mixture. Which action should the CHN prioritise?",
+"choices": [
+{"text": "Arrange assessment and referral of affected patients, identify the suspected product and notify the appropriate public health and regulatory authorities", "is_correct": true},
+{"text": "Encourage unaffected residents to use the same mixture to establish whether it is harmful", "is_correct": false},
+{"text": "Wait until every patient has developed severe complications before reporting", "is_correct": false},
+{"text": "Destroy all patient records to prevent public concern", "is_correct": false}
+],
+"rationale": "A cluster of similar adverse events associated with one product may indicate contamination, toxicity or another product-related safety problem. Prompt clinical care, documentation, product identification and appropriate notification can help prevent further harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "A traditional healer routinely refers patients with suspected tuberculosis to a CHPS compound but also advises them to continue sharing sleeping rooms with family members until symptoms resolve. What should the CHN address first?",
+"choices": [
+{"text": "The healer's choice of traditional clothing", "is_correct": false},
+{"text": "The need for prompt TB assessment, respiratory infection prevention and appropriate counselling on reducing transmission", "is_correct": true},
+{"text": "The need to prevent patients from informing household members about possible exposure", "is_correct": false},
+{"text": "The need to replace TB assessment with herbal treatment", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis can spread through airborne transmission, and delayed diagnosis or inadequate infection prevention can expose household contacts. The nurse should facilitate prompt assessment and provide appropriate infection prevention and contact-related counselling.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A community survey shows that people with mental health conditions are frequently taken to spiritual centres before being referred to health facilities. Some families report that they fear stigma at hospitals. Which strategy is most appropriate for the CHN?",
+"choices": [
+{"text": "Condemn all spiritual centres and refuse to engage with community leaders", "is_correct": false},
+{"text": "Encourage families to keep people with mental health conditions hidden", "is_correct": false},
+{"text": "Work with community leaders and relevant practitioners to reduce stigma, recognise danger signs and promote timely mental health referral", "is_correct": true},
+{"text": "Advise families that mental health conditions are always caused by witchcraft", "is_correct": false}
+],
+"rationale": "Stigma and cultural explanations can influence whether people access mental healthcare and how quickly they receive it. Community engagement should promote dignity, accurate information, early recognition and referral to appropriate mental health services.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "A registered traditional medicine practitioner operates from licensed premises but advertises an herbal product as a guaranteed cure for several unrelated diseases. Which conclusion is most appropriate?",
+"choices": [
+{"text": "Registration and premises licensing automatically validate every therapeutic claim made by the practitioner", "is_correct": false},
+{"text": "The advertisement is acceptable if the product is locally manufactured", "is_correct": false},
+{"text": "Only conventional medicines are subject to rules governing product claims and advertising", "is_correct": false},
+{"text": "Practitioner registration and premises licensing do not establish that every product claim is scientifically valid or legally acceptable", "is_correct": true}
+],
+"rationale": "Registration and licensing relate to the regulation of practitioners and practice premises; they do not prove the safety or efficacy of every product or advertising claim. Herbal medicines are also subject to applicable medicines regulation, including requirements concerning advertising and labelling.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Herbal Medicine Safety and Toxicity",
+"question_text": "A patient with chronic liver disease is using several herbal preparations and prescribed medicines. The patient develops worsening jaundice and confusion. Which nursing judgement is most appropriate?",
+"choices": [
+{"text": "The symptoms are evidence that the herbal preparations are successfully removing toxins", "is_correct": false},
+{"text": "The patient may have serious hepatic deterioration or hepatic encephalopathy and requires emergency assessment", "is_correct": true},
+{"text": "The patient should increase the number of herbal preparations to improve liver function", "is_correct": false},
+{"text": "The patient should stop attending the hospital because the condition is chronic", "is_correct": false}
+],
+"rationale": "Worsening jaundice with confusion in a person with chronic liver disease may indicate severe hepatic dysfunction or hepatic encephalopathy. This is a medical emergency requiring prompt assessment and management, including review of all medicines and herbal products.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
