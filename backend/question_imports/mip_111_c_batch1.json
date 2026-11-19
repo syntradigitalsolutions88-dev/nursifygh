@@ -1,0 +1,913 @@
+{
+"courses": [
+{
+"course_code": "MIP-111-C",
+"course_title": "Microbiology and Infection Prevention",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Microbiology",
+"Chain of Infection",
+"Hand Hygiene and Standard Precautions",
+"Personal Protective Equipment",
+"Sterilization and Disinfection",
+"Healthcare-Associated Infections",
+"Common Tropical Infections in Ghana",
+"Immunization and Vaccine Preventable Diseases",
+"Antimicrobial Resistance",
+"Outbreak Investigation and Community Infection Control",
+"Waste Management and Environmental Sanitation"
+],
+"questions": [
+{
+"topic": "Introduction to Microbiology",
+"question_text": "Which of the following microorganisms is classified as a bacterium?",
+"choices": [
+{"text": "Plasmodium falciparum", "is_correct": false},
+{"text": "Mycobacterium tuberculosis", "is_correct": true},
+{"text": "Human immunodeficiency virus", "is_correct": false},
+{"text": "Candida albicans", "is_correct": false}
+],
+"rationale": "Mycobacterium tuberculosis is a bacterium that causes tuberculosis. Plasmodium is a protozoan parasite, HIV is a virus, and Candida is a fungus.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Microbiology",
+"question_text": "Which characteristic distinguishes viruses from bacteria?",
+"choices": [
+{"text": "Viruses reproduce independently in nutrient media", "is_correct": false},
+{"text": "Viruses require living host cells for replication", "is_correct": true},
+{"text": "Viruses possess a cellular nucleus", "is_correct": false},
+{"text": "Viruses are always larger than bacteria", "is_correct": false}
+],
+"rationale": "Viruses are obligate intracellular agents and depend on host-cell machinery to replicate. Bacteria are cellular organisms that can reproduce independently under suitable conditions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Microbiology",
+"question_text": "Which microorganism causes malaria?",
+"choices": [
+{"text": "Salmonella Typhi", "is_correct": false},
+{"text": "Plasmodium species", "is_correct": true},
+{"text": "Vibrio cholerae", "is_correct": false},
+{"text": "Hepatitis B virus", "is_correct": false}
+],
+"rationale": "Malaria is caused by protozoan parasites belonging to the genus Plasmodium. In Ghana, Plasmodium falciparum is the predominant species responsible for severe malaria.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Microbiology",
+"question_text": "Which of the following is an example of a fungal pathogen?",
+"choices": [
+{"text": "Candida albicans", "is_correct": true},
+{"text": "Escherichia coli", "is_correct": false},
+{"text": "Hepatitis B virus", "is_correct": false},
+{"text": "Plasmodium falciparum", "is_correct": false}
+],
+"rationale": "Candida albicans is a yeast belonging to the kingdom Fungi and can cause infections such as oral and vaginal candidiasis. Escherichia coli is a bacterium, while hepatitis B virus and Plasmodium are different types of infectious agents.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Chain of Infection",
+"question_text": "Which of the following represents the correct sequence of the chain of infection?",
+"choices": [
+{"text": "Infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host", "is_correct": true},
+{"text": "Reservoir, susceptible host, infectious agent, portal of entry, portal of exit, transmission", "is_correct": false},
+{"text": "Portal of entry, infectious agent, reservoir, susceptible host, portal of exit, transmission", "is_correct": false},
+{"text": "Infectious agent, portal of entry, portal of exit, reservoir, transmission, susceptible host", "is_correct": false}
+],
+"rationale": "The six links are the infectious agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host. Infection prevention aims to interrupt one or more of these links.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Chain of Infection",
+"question_text": "In the chain of infection, what is a reservoir?",
+"choices": [
+{"text": "The route through which microorganisms enter a host", "is_correct": false},
+{"text": "The place where an infectious agent normally lives and multiplies", "is_correct": true},
+{"text": "The process by which an infection is diagnosed", "is_correct": false},
+{"text": "The medication used to destroy microorganisms", "is_correct": false}
+],
+"rationale": "A reservoir is the natural habitat in which an infectious agent lives, grows or multiplies. Examples include humans, animals, water, soil and contaminated materials.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Standard Precautions",
+"question_text": "What is the primary purpose of hand hygiene in healthcare settings?",
+"choices": [
+{"text": "To remove visible stains from healthcare workers' hands only", "is_correct": false},
+{"text": "To prevent the transmission of microorganisms", "is_correct": true},
+{"text": "To replace the use of personal protective equipment", "is_correct": false},
+{"text": "To sterilize the hands permanently", "is_correct": false}
+],
+"rationale": "Hand hygiene reduces transient microorganisms and helps prevent cross-transmission between patients, healthcare workers and the environment. It is a fundamental component of standard precautions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Standard Precautions",
+"question_text": "Which of the following is a standard precaution that should be applied to every patient?",
+"choices": [
+{"text": "Using gloves only when a patient is known to have HIV", "is_correct": false},
+{"text": "Performing hand hygiene according to recommended indications", "is_correct": true},
+{"text": "Isolating every patient in a separate room", "is_correct": false},
+{"text": "Administering antibiotics before every procedure", "is_correct": false}
+],
+"rationale": "Standard precautions apply to all patients, regardless of their suspected or confirmed infection status. Hand hygiene is required at appropriate moments during patient care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Personal Protective Equipment",
+"question_text": "Which item of personal protective equipment primarily protects the eyes from splashes of potentially infectious material?",
+"choices": [
+{"text": "Disposable apron", "is_correct": false},
+{"text": "Protective goggles", "is_correct": true},
+{"text": "Surgical cap", "is_correct": false},
+{"text": "Shoe cover", "is_correct": false}
+],
+"rationale": "Protective goggles provide a barrier against splashes reaching the eyes. Face shields may also protect the eyes and face when splash exposure is anticipated.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "What is the main difference between sterilization and disinfection?",
+"choices": [
+{"text": "Sterilization destroys all forms of microbial life, including bacterial spores, while disinfection reduces or eliminates many pathogenic microorganisms", "is_correct": true},
+{"text": "Disinfection always destroys bacterial spores, while sterilization destroys only viruses", "is_correct": false},
+{"text": "Sterilization is used only for floors, while disinfection is used only for surgical instruments", "is_correct": false},
+{"text": "Both processes have exactly the same meaning", "is_correct": false}
+],
+"rationale": "Sterilization eliminates all forms of microbial life, including bacterial spores, when properly performed. Disinfection reduces or eliminates many pathogenic microorganisms but does not necessarily destroy bacterial spores.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A healthcare-associated infection is best described as an infection that:",
+"choices": [
+{"text": "Is always present before a patient enters a health facility", "is_correct": false},
+{"text": "Is acquired during the process of receiving healthcare and was not present or incubating at the time of care", "is_correct": true},
+{"text": "Occurs only among healthcare workers", "is_correct": false},
+{"text": "Can only be caused by viruses", "is_correct": false}
+],
+"rationale": "Healthcare-associated infections are linked to the provision of healthcare and were not present or incubating when the relevant care began. They can affect patients and healthcare workers and may be caused by bacteria, viruses or fungi.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "Which bacterium is responsible for typhoid fever?",
+"choices": [
+{"text": "Vibrio cholerae", "is_correct": false},
+{"text": "Salmonella enterica serovar Typhi", "is_correct": true},
+{"text": "Mycobacterium leprae", "is_correct": false},
+{"text": "Clostridium tetani", "is_correct": false}
+],
+"rationale": "Typhoid fever is caused by Salmonella enterica serovar Typhi. It is commonly transmitted through food or water contaminated with faeces from an infected person or carrier.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "Which organism causes cholera?",
+"choices": [
+{"text": "Vibrio cholerae", "is_correct": true},
+{"text": "Salmonella Typhi", "is_correct": false},
+{"text": "Plasmodium falciparum", "is_correct": false},
+{"text": "Streptococcus pneumoniae", "is_correct": false}
+],
+"rationale": "Cholera is an acute diarrhoeal disease caused by toxigenic Vibrio cholerae, particularly serogroups O1 and O139. It spreads mainly through ingestion of contaminated food or water.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Immunization and Vaccine Preventable Diseases",
+"question_text": "What is the primary purpose of vaccination?",
+"choices": [
+{"text": "To produce immunity against specific infectious diseases", "is_correct": true},
+{"text": "To treat all existing bacterial infections", "is_correct": false},
+{"text": "To replace personal hygiene practices", "is_correct": false},
+{"text": "To guarantee that a vaccinated person will never become ill", "is_correct": false}
+],
+"rationale": "Vaccination stimulates the immune system to develop protection against specific pathogens or their toxins. It reduces the risk of disease and severe complications but does not guarantee complete protection in every individual.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antimicrobial Resistance",
+"question_text": "What does antimicrobial resistance mean?",
+"choices": [
+{"text": "The ability of the human body to destroy every microorganism", "is_correct": false},
+{"text": "The ability of microorganisms to survive or grow despite exposure to medicines that would normally inhibit or kill them", "is_correct": true},
+{"text": "The inability of antibiotics to treat viral infections", "is_correct": false},
+{"text": "The development of immunity after vaccination", "is_correct": false}
+],
+"rationale": "Antimicrobial resistance occurs when microorganisms develop mechanisms that reduce their susceptibility to antimicrobial medicines. Resistant infections can become more difficult to treat and may require alternative medicines.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Waste Management and Environmental Sanitation",
+"question_text": "Which waste category should used needles and other contaminated sharps be placed in?",
+"choices": [
+{"text": "General domestic waste", "is_correct": false},
+{"text": "A designated puncture-resistant sharps container", "is_correct": true},
+{"text": "An ordinary paper waste basket", "is_correct": false},
+{"text": "An open plastic bag", "is_correct": false}
+],
+"rationale": "Used needles and other sharps must be discarded immediately into a designated puncture-resistant sharps container. This reduces needlestick injuries and exposure to blood-borne pathogens.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "Which route is primarily responsible for the transmission of pulmonary tuberculosis?",
+"choices": [
+{"text": "Inhalation of infectious airborne particles released by a person with infectious pulmonary or laryngeal TB", "is_correct": true},
+{"text": "Sharing eating utensils with an infected person", "is_correct": false},
+{"text": "Mosquito bites", "is_correct": false},
+{"text": "Contact with contaminated soil through intact skin", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted through the air when a person with infectious pulmonary or laryngeal TB releases infectious particles, particularly while coughing or speaking. Prolonged or repeated exposure in poorly ventilated spaces increases the risk of transmission.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Hand Hygiene and Standard Precautions",
+"question_text": "A community health nurse is about to perform a wound dressing at a CHPS compound. The nurse's hands are visibly soiled with blood. What should the nurse do first?",
+"choices": [
+{"text": "Apply alcohol-based hand rub over the blood", "is_correct": false},
+{"text": "Wash the hands with soap and running water", "is_correct": true},
+{"text": "Put on gloves without cleaning the hands", "is_correct": false},
+{"text": "Wipe the hands on a clean towel", "is_correct": false}
+],
+"rationale": "Hands visibly soiled with blood or other body fluids should be washed with soap and running water. Gloves do not replace hand hygiene and should be put on after hand hygiene has been performed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Standard Precautions",
+"question_text": "After examining a patient with suspected cholera, a nurse is preparing to attend to another patient. Which action is most appropriate?",
+"choices": [
+{"text": "Change gloves only and immediately attend to the next patient", "is_correct": false},
+{"text": "Perform hand hygiene and use clean gloves when indicated for the next patient's care", "is_correct": true},
+{"text": "Wear the same apron and gloves for both patients", "is_correct": false},
+{"text": "Avoid hand hygiene because the nurse did not touch blood", "is_correct": false}
+],
+"rationale": "Hand hygiene must be performed after patient contact and after removing gloves. Gloves must be changed between patients, and appropriate protective clothing should be changed if contaminated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Personal Protective Equipment",
+"question_text": "A nurse is assisting with a procedure likely to produce splashes of blood and body fluids. Which combination of PPE provides the most appropriate protection?",
+"choices": [
+{"text": "Gloves only", "is_correct": false},
+{"text": "Gloves, gown or apron, mask and eye or face protection", "is_correct": true},
+{"text": "Surgical cap and shoe covers only", "is_correct": false},
+{"text": "Apron only", "is_correct": false}
+],
+"rationale": "The anticipated exposure requires protection for the hands, clothing, respiratory mucosa and eyes. PPE should be selected according to the risk assessment of the procedure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Personal Protective Equipment",
+"question_text": "A nurse has completed the care of a patient under contact precautions. Which action should be performed when removing contaminated gloves?",
+"choices": [
+{"text": "Touch the outside of the gloves with bare fingers", "is_correct": false},
+{"text": "Remove the gloves without touching their contaminated outer surfaces with bare skin", "is_correct": true},
+{"text": "Wash the gloves while wearing them for reuse", "is_correct": false},
+{"text": "Place the gloves in a pocket for later disposal", "is_correct": false}
+],
+"rationale": "Gloves should be removed carefully to avoid contaminating the hands with their outer surfaces. They should be discarded appropriately, followed by hand hygiene.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "A surgical instrument has been used on a patient and is intended for another invasive procedure. Which processing method is required before reuse?",
+"choices": [
+{"text": "Rinsing with clean water only", "is_correct": false},
+{"text": "Sterilization after appropriate cleaning and preparation", "is_correct": true},
+{"text": "Wiping with a dry cloth", "is_correct": false},
+{"text": "Low-level disinfection only", "is_correct": false}
+],
+"rationale": "Critical instruments that enter sterile tissue or the vascular system must be sterilized before reuse. Thorough cleaning is necessary before sterilization because organic material can interfere with the process.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "A CHPS nurse is preparing a reusable thermometer for use on another patient. Which action is most appropriate?",
+"choices": [
+{"text": "Use it immediately because thermometers do not transmit infection", "is_correct": false},
+{"text": "Clean and disinfect it according to the manufacturer's instructions and facility protocol", "is_correct": true},
+{"text": "Immerse it in any chemical solution for several hours", "is_correct": false},
+{"text": "Wipe it with a dry cloth only", "is_correct": false}
+],
+"rationale": "Reusable patient-care equipment must be appropriately cleaned and disinfected between patients. The selected product and contact time should be compatible with the equipment and the manufacturer's instructions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A patient develops redness, pain and discharge from a surgical wound several days after an operation in a district hospital. What should the nurse suspect?",
+"choices": [
+{"text": "A surgical site infection", "is_correct": true},
+{"text": "A vaccine reaction", "is_correct": false},
+{"text": "A normal stage of wound healing in every patient", "is_correct": false},
+{"text": "A fungal infection of the respiratory tract", "is_correct": false}
+],
+"rationale": "Increasing redness, pain and purulent discharge from a surgical wound are suggestive of a surgical site infection. The patient requires clinical assessment, appropriate documentation and management according to facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A nurse notices that several patients in a ward have developed diarrhoea after receiving care in the same facility. What should the nurse do?",
+"choices": [
+{"text": "Ignore the cases because diarrhoea is common", "is_correct": false},
+{"text": "Report the suspected cluster promptly to the facility infection prevention and control team", "is_correct": true},
+{"text": "Give all affected patients antibiotics without assessment", "is_correct": false},
+{"text": "Discharge the patients immediately without documentation", "is_correct": false}
+],
+"rationale": "A cluster of similar infections may indicate a healthcare-associated outbreak requiring investigation. Prompt reporting supports early case identification, infection control measures and appropriate laboratory investigation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A child attending a CHPS compound presents with fever, chills, headache and vomiting. Malaria is suspected. Which action is most appropriate?",
+"choices": [
+{"text": "Start antimalarial treatment without testing in every case", "is_correct": false},
+{"text": "Perform a malaria rapid diagnostic test or microscopy according to the applicable protocol", "is_correct": true},
+{"text": "Assume the child has typhoid fever and prescribe antibiotics", "is_correct": false},
+{"text": "Advise the caregiver to wait several days before seeking care", "is_correct": false}
+],
+"rationale": "Suspected malaria should be assessed using a recommended parasitological test, such as a rapid diagnostic test or microscopy. A positive result should be interpreted alongside the clinical assessment, and severe illness requires urgent management or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient at a district hospital has prolonged fever, abdominal discomfort and diarrhoea after drinking untreated water. Typhoid fever is suspected. Which investigation is most appropriate to confirm the diagnosis where available?",
+"choices": [
+{"text": "Blood culture", "is_correct": true},
+{"text": "Skin scraping", "is_correct": false},
+{"text": "Sputum acid-fast bacilli test", "is_correct": false},
+{"text": "Malaria rapid diagnostic test only", "is_correct": false}
+],
+"rationale": "Blood culture is an important diagnostic method for identifying Salmonella Typhi, particularly before antibiotics are started. Clinical features alone cannot reliably distinguish typhoid fever from other causes of prolonged fever.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient presents at a health facility with profuse watery diarrhoea, vomiting and signs of severe dehydration during a suspected cholera outbreak. What is the priority nursing action?",
+"choices": [
+{"text": "Delay treatment until the laboratory result is available", "is_correct": false},
+{"text": "Initiate urgent rehydration according to the severe dehydration protocol and arrange immediate clinical management", "is_correct": true},
+{"text": "Give antidiarrhoeal medication and send the patient home", "is_correct": false},
+{"text": "Restrict all oral and intravenous fluids", "is_correct": false}
+],
+"rationale": "Severe dehydration from suspected cholera is a medical emergency requiring immediate rehydration, commonly with intravenous fluids under the appropriate protocol. Treatment should not be delayed while awaiting laboratory confirmation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A community health nurse identifies a person with a persistent cough lasting more than two weeks, weight loss and night sweats. What should the nurse do?",
+"choices": [
+{"text": "Treat the person for malaria without further assessment", "is_correct": false},
+{"text": "Arrange prompt TB screening and diagnostic evaluation through the appropriate service", "is_correct": true},
+{"text": "Advise the person to avoid all health facilities", "is_correct": false},
+{"text": "Give antibiotics for a common cold and close the case", "is_correct": false}
+],
+"rationale": "A persistent cough with weight loss and night sweats raises suspicion of tuberculosis and requires prompt assessment. The nurse should facilitate appropriate sputum-based or other recommended diagnostic testing and apply respiratory infection control measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient newly diagnosed with pulmonary tuberculosis attends a CHPS compound for follow-up. Which advice is most appropriate to reduce transmission at home?",
+"choices": [
+{"text": "Keep all windows closed to prevent dust from entering", "is_correct": false},
+{"text": "Improve ventilation, practise cough etiquette and follow the prescribed TB treatment", "is_correct": true},
+{"text": "Share sleeping space in a poorly ventilated room with household members", "is_correct": false},
+{"text": "Stop treatment once the cough improves", "is_correct": false}
+],
+"rationale": "Good ventilation and cough etiquette reduce the concentration and spread of infectious airborne particles. Completing the prescribed TB regimen is essential for successful treatment and reducing the risk of drug resistance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A pregnant woman attends antenatal care and is found to have a positive HIV test result following the recommended testing process. What is the most appropriate action?",
+"choices": [
+{"text": "Disclose her status to all members of the community", "is_correct": false},
+{"text": "Link her promptly to HIV care and prevention of mother-to-child transmission services", "is_correct": true},
+{"text": "Advise her to discontinue antenatal care", "is_correct": false},
+{"text": "Tell her that transmission to the baby is inevitable", "is_correct": false}
+],
+"rationale": "Prompt linkage to HIV treatment and prevention of mother-to-child transmission services reduces the risk of HIV transmission to the infant. Counselling and management must respect confidentiality and national clinical guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A nurse sustains a needlestick injury from a needle recently used on a patient whose HIV status is unknown. What should the nurse do first?",
+"choices": [
+{"text": "Squeeze the wound forcefully and apply bleach", "is_correct": false},
+{"text": "Wash the affected area immediately with soap and running water", "is_correct": true},
+{"text": "Ignore the injury if there is no visible bleeding", "is_correct": false},
+{"text": "Wait until symptoms of HIV appear before reporting", "is_correct": false}
+],
+"rationale": "The exposed area should be washed promptly with soap and running water without squeezing or applying caustic substances. The exposure must be reported immediately for risk assessment, appropriate testing and consideration of HIV post-exposure prophylaxis as soon as possible.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A community health nurse is educating a household about preventing hepatitis B transmission. Which advice is correct?",
+"choices": [
+{"text": "Avoid sharing razors and toothbrushes and ensure eligible household members are vaccinated", "is_correct": true},
+{"text": "Share needles only with close relatives", "is_correct": false},
+{"text": "Avoid drinking boiled water", "is_correct": false},
+{"text": "Use antibiotics regularly to prevent hepatitis B", "is_correct": false}
+],
+"rationale": "Hepatitis B can be transmitted through infected blood and certain body fluids, including through shared contaminated sharp instruments. Vaccination and avoiding the sharing of razors, toothbrushes and needles are important preventive measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization and Vaccine Preventable Diseases",
+"question_text": "A caregiver brings an infant to a CHPS compound for routine immunization. The infant has a mild runny nose but is active and feeding normally. What should the nurse do?",
+"choices": [
+{"text": "Automatically postpone all vaccines for one month", "is_correct": false},
+{"text": "Assess the infant and proceed with vaccination if there is no valid contraindication", "is_correct": true},
+{"text": "Give double doses of all vaccines", "is_correct": false},
+{"text": "Tell the caregiver that mild illness permanently prevents vaccination", "is_correct": false}
+],
+"rationale": "A mild illness without significant systemic symptoms is generally not a contraindication to routine vaccination. The nurse should assess the child and follow the national immunization schedule and applicable vaccine guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization and Vaccine Preventable Diseases",
+"question_text": "A nurse discovers that the vaccine refrigerator at a CHPS compound has experienced a temperature excursion. What should the nurse do?",
+"choices": [
+{"text": "Discard every vaccine immediately without assessment", "is_correct": false},
+{"text": "Keep the affected vaccines appropriately stored, label or segregate them as directed, and report the excursion for assessment", "is_correct": true},
+{"text": "Use the vaccines quickly before anyone notices", "is_correct": false},
+{"text": "Place the vaccines in a household freezer", "is_correct": false}
+],
+"rationale": "A temperature excursion may affect vaccine potency and must be reported and assessed according to the cold-chain protocol. Vaccines should not be used or discarded until the appropriate authorised assessment has been made.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization and Vaccine Preventable Diseases",
+"question_text": "A mother reports that her infant missed a scheduled vaccination appointment. Which response by the community health nurse is most appropriate?",
+"choices": [
+{"text": "Restart the entire immunization schedule regardless of previous doses", "is_correct": false},
+{"text": "Review the immunization record and arrange catch-up vaccination according to the national schedule", "is_correct": true},
+{"text": "Tell the mother that the infant can no longer receive any vaccines", "is_correct": false},
+{"text": "Administer all available vaccines without checking the child's age or history", "is_correct": false}
+],
+"rationale": "Missed vaccinations should be addressed through an appropriate catch-up schedule based on the child's age and documented doses. In most circumstances, a delayed vaccine series does not need to be restarted.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antimicrobial Resistance",
+"question_text": "A patient with a common cold requests antibiotics from a community health nurse. Which response is most appropriate?",
+"choices": [
+{"text": "Provide antibiotics because all respiratory infections are bacterial", "is_correct": false},
+{"text": "Explain that common colds are usually viral and antibiotics are not routinely indicated", "is_correct": true},
+{"text": "Recommend taking leftover antibiotics from a relative", "is_correct": false},
+{"text": "Advise the patient to stop all prescribed medicines permanently", "is_correct": false}
+],
+"rationale": "Most common colds are caused by viruses, against which antibacterial medicines are ineffective. Unnecessary antibiotic use contributes to antimicrobial resistance and exposes patients to avoidable adverse effects.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antimicrobial Resistance",
+"question_text": "A patient receiving antibiotics for a confirmed bacterial infection reports feeling better after two days and wants to stop the medication. What should the nurse advise?",
+"choices": [
+{"text": "Stop the medication immediately once symptoms improve", "is_correct": false},
+{"text": "Follow the prescribed treatment plan and seek advice from the prescriber before making changes", "is_correct": true},
+{"text": "Share the remaining antibiotics with another patient", "is_correct": false},
+{"text": "Double the next dose to complete treatment faster", "is_correct": false}
+],
+"rationale": "Patients should take antibiotics according to the prescribed regimen and should not independently change or stop treatment. The prescriber should assess adverse effects or other concerns and determine whether treatment needs adjustment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Outbreak Investigation and Community Infection Control",
+"question_text": "Several residents in a community develop acute watery diarrhoea after attending the same public gathering. What should the community health nurse do first?",
+"choices": [
+{"text": "Wait until more residents become ill before taking action", "is_correct": false},
+{"text": "Promptly report the suspected outbreak through the established public health surveillance system", "is_correct": true},
+{"text": "Announce the names of affected residents publicly", "is_correct": false},
+{"text": "Prescribe antibiotics to every person who attended the gathering", "is_correct": false}
+],
+"rationale": "A cluster of acute watery diarrhoea may indicate a cholera or other diarrhoeal disease outbreak and requires prompt notification. Early reporting enables public health authorities to investigate, identify cases and implement control measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Outbreak Investigation and Community Infection Control",
+"question_text": "During a suspected cholera outbreak, a community health nurse visits households in an affected area. Which preventive measure should receive emphasis?",
+"choices": [
+{"text": "Drinking untreated water from streams", "is_correct": false},
+{"text": "Safe water treatment, handwashing with soap and hygienic food preparation", "is_correct": true},
+{"text": "Sharing unwashed eating utensils", "is_correct": false},
+{"text": "Disposing of faeces in open spaces", "is_correct": false}
+],
+"rationale": "Cholera spreads mainly through food and water contaminated with faecal matter. Safe water, sanitation, hand hygiene and hygienic food handling interrupt faecal-oral transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Waste Management and Environmental Sanitation",
+"question_text": "A community health nurse finds used injection needles mixed with ordinary refuse at a CHPS compound. What should the nurse do?",
+"choices": [
+{"text": "Use bare hands to separate the needles from the refuse", "is_correct": false},
+{"text": "Ensure safe handling by trained personnel using appropriate protective equipment and a designated sharps container", "is_correct": true},
+{"text": "Ask children in the community to collect the needles", "is_correct": false},
+{"text": "Burn the needles in an open public space", "is_correct": false}
+],
+"rationale": "Improperly discarded sharps create a risk of injury and transmission of blood-borne infections. They should be managed safely by trained personnel and placed in approved puncture-resistant containers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Waste Management and Environmental Sanitation",
+"question_text": "A nurse is cleaning a surface contaminated with blood at a health facility. Which approach is most appropriate?",
+"choices": [
+{"text": "Clean the spill using appropriate PPE and an approved disinfectant according to the facility protocol", "is_correct": true},
+{"text": "Wipe the spill with bare hands and a dry cloth", "is_correct": false},
+{"text": "Cover the spill with paper and leave it for the next shift", "is_correct": false},
+{"text": "Spray perfume over the contaminated area", "is_correct": false}
+],
+"rationale": "Blood spills should be managed promptly using appropriate PPE, cleaning procedures and an approved disinfectant at the recommended concentration and contact time. This reduces the risk of occupational exposure and environmental contamination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Chain of Infection",
+"question_text": "A patient with influenza coughs into their hands and then touches a door handle used by other patients. Which mode of transmission is illustrated?",
+"choices": [
+{"text": "Vector-borne transmission", "is_correct": false},
+{"text": "Indirect contact transmission through a contaminated object", "is_correct": true},
+{"text": "Vertical transmission", "is_correct": false},
+{"text": "Transmission through contaminated soil only", "is_correct": false}
+],
+"rationale": "The door handle acts as a contaminated inanimate object, known as a fomite. Other people may acquire the infection by touching it and subsequently touching their eyes, nose or mouth.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Chain of Infection",
+"question_text": "A community health nurse advises a household to use insecticide-treated mosquito nets to reduce malaria transmission. Which link in the chain of infection is primarily being interrupted?",
+"choices": [
+{"text": "Mode of transmission", "is_correct": true},
+{"text": "Infectious agent", "is_correct": false},
+{"text": "Portal of exit", "is_correct": false},
+{"text": "Reservoir", "is_correct": false}
+],
+"rationale": "Mosquito nets reduce contact between humans and infected mosquitoes, interrupting vector-borne transmission. This helps prevent the transfer of Plasmodium parasites from an infected mosquito to a human host.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Hand Hygiene and Standard Precautions",
+"question_text": "A nurse has just removed gloves after collecting a patient's blood sample. The nurse is about to document the procedure. What should the nurse do before touching the documentation equipment?",
+"choices": [
+{"text": "Perform hand hygiene", "is_correct": true},
+{"text": "Put on another pair of gloves without hand hygiene", "is_correct": false},
+{"text": "Wipe the gloves with a dry cloth", "is_correct": false},
+{"text": "Touch the computer first and wash the hands later", "is_correct": false}
+],
+"rationale": "Hand hygiene is required immediately after glove removal because hands may become contaminated during glove removal or through unnoticed glove defects. This also prevents contamination of shared equipment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Personal Protective Equipment",
+"question_text": "A nurse is caring for a patient with suspected pulmonary tuberculosis in a designated clinical area. Which respiratory protection is most appropriate for the nurse when entering the area?",
+"choices": [
+{"text": "A fit-tested particulate respirator such as an N95 or equivalent", "is_correct": true},
+{"text": "A cloth face covering only", "is_correct": false},
+{"text": "A disposable apron without respiratory protection", "is_correct": false},
+{"text": "Protective goggles only", "is_correct": false}
+],
+"rationale": "Pulmonary tuberculosis is transmitted through airborne infectious particles, so healthcare workers should use a properly fitted particulate respirator when indicated. Respiratory protection should be combined with ventilation and other recommended TB infection prevention measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization and Vaccine Preventable Diseases",
+"question_text": "A caregiver asks why a child should receive the recommended measles-containing vaccine even though the child appears healthy. Which explanation is most appropriate?",
+"choices": [
+{"text": "The vaccine prevents every possible childhood infection", "is_correct": false},
+{"text": "The vaccine helps the child's immune system develop protection against measles", "is_correct": true},
+{"text": "The vaccine treats measles after symptoms have developed", "is_correct": false},
+{"text": "The vaccine removes all microorganisms from the child's body", "is_correct": false}
+],
+"rationale": "Vaccination prepares the immune system to recognise and respond to the measles virus. Immunizing eligible children reduces the risk of measles and helps prevent community transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Outbreak Investigation and Community Infection Control",
+"question_text": "A community health nurse is investigating a suspected foodborne outbreak after several people develop vomiting and diarrhoea following a funeral meal. Which information is most useful to collect initially?",
+"choices": [
+{"text": "The names of people who attended unrelated events", "is_correct": false},
+{"text": "The symptoms, onset times, foods consumed and number of people affected", "is_correct": true},
+{"text": "Only the occupations of the affected individuals", "is_correct": false},
+{"text": "The political opinions of the food vendors", "is_correct": false}
+],
+"rationale": "Collecting clinical details, onset times, food exposures and the number of affected people helps establish whether cases are linked. This information supports development of a case definition and identification of possible common exposures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A patient with an indwelling urinary catheter develops fever and suprapubic discomfort. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Ignore the symptoms because catheterised patients always develop fever", "is_correct": false},
+{"text": "Arrange clinical assessment for a possible catheter-associated urinary tract infection", "is_correct": true},
+{"text": "Disconnect the drainage system unnecessarily", "is_correct": false},
+{"text": "Flush the catheter with unsterile water", "is_correct": false}
+],
+"rationale": "Fever and suprapubic discomfort in a catheterised patient may indicate a catheter-associated urinary tract infection and require prompt clinical assessment. Aseptic catheter care and avoidance of unnecessary catheterisation help reduce this risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antimicrobial Resistance",
+"question_text": "A patient at a district hospital has a serious bacterial infection that is not responding to initial antibiotic treatment. Which action best supports appropriate antimicrobial use?",
+"choices": [
+{"text": "Continue changing antibiotics without clinical review", "is_correct": false},
+{"text": "Request appropriate clinical reassessment and microbiological investigations, including culture and susceptibility testing where indicated", "is_correct": true},
+{"text": "Stop all infection prevention measures", "is_correct": false},
+{"text": "Give the patient antibiotics prescribed for another person", "is_correct": false}
+],
+"rationale": "Treatment failure may result from antimicrobial resistance, an incorrect diagnosis, inadequate drug exposure or other clinical factors. Culture and susceptibility testing, where indicated, can help guide targeted antimicrobial therapy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Waste Management and Environmental Sanitation",
+"question_text": "A CHPS nurse visits a household and observes stagnant water in discarded containers near the home. What should the nurse recommend to reduce the risk of malaria?",
+"choices": [
+{"text": "Leave the containers undisturbed throughout the rainy season", "is_correct": false},
+{"text": "Empty, remove or properly cover water-holding containers where appropriate", "is_correct": true},
+{"text": "Pour untreated drinking water into the containers", "is_correct": false},
+{"text": "Encourage children to play in the stagnant water", "is_correct": false}
+],
+"rationale": "Stagnant water in suitable containers can provide breeding sites for mosquitoes. Environmental management, including removing or covering water-holding containers, supports malaria prevention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient with suspected meningitis arrives at a district hospital with fever, severe headache, neck stiffness and altered consciousness. What is the priority nursing action?",
+"choices": [
+{"text": "Arrange urgent clinical assessment and emergency management while applying appropriate infection prevention precautions", "is_correct": true},
+{"text": "Send the patient home to rest", "is_correct": false},
+{"text": "Delay assessment until the next routine clinic day", "is_correct": false},
+{"text": "Give oral fluids only and observe for several days", "is_correct": false}
+],
+"rationale": "Suspected meningitis with altered consciousness is a medical emergency requiring urgent assessment and treatment. Appropriate precautions should be applied, including droplet precautions when meningococcal disease is suspected, according to facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Chain of Infection",
+"question_text": "A patient with infectious diarrhoea contaminates a shared toilet, and another person becomes infected after inadequate handwashing and food handling. Which portal of entry is most likely involved?",
+"choices": [
+{"text": "Respiratory tract", "is_correct": false},
+{"text": "Gastrointestinal tract", "is_correct": true},
+{"text": "Intact skin", "is_correct": false},
+{"text": "External ear canal", "is_correct": false}
+],
+"rationale": "The faecal-oral route allows pathogens to enter the body through the gastrointestinal tract after contaminated food, water or hands are ingested. Safe sanitation and hand hygiene interrupt this route of transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Microbiology",
+"question_text": "A patient with a suspected bacterial infection is prescribed an antibiotic. Which statement best explains how antibiotics act?",
+"choices": [
+{"text": "They may kill bacteria or inhibit bacterial growth", "is_correct": true},
+{"text": "They routinely destroy all viruses and parasites", "is_correct": false},
+{"text": "They stimulate mosquitoes to stop breeding", "is_correct": false},
+{"text": "They sterilize the patient's entire body", "is_correct": false}
+],
+"rationale": "Antibiotics act against susceptible bacteria through mechanisms such as inhibiting cell-wall synthesis or protein production. They do not treat viral infections such as the common cold or influenza.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient with hepatitis A asks how to prevent the infection from spreading to household members. Which advice is most appropriate?",
+"choices": [
+{"text": "Practise careful handwashing after using the toilet and before preparing or eating food", "is_correct": true},
+{"text": "Share food and drinking cups without washing them", "is_correct": false},
+{"text": "Avoid mosquito nets because hepatitis A is mosquito-borne", "is_correct": false},
+{"text": "Take antibiotics regularly as a preventive measure", "is_correct": false}
+],
+"rationale": "Hepatitis A is transmitted mainly through the faecal-oral route, often through contaminated food or water. Hand hygiene, safe water and sanitation are important preventive measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A community health nurse reviews a patient with suspected malaria who becomes confused, develops convulsions and is unable to take oral medication. What should the nurse do?",
+"choices": [
+{"text": "Continue routine home observation", "is_correct": false},
+{"text": "Arrange immediate emergency referral for severe malaria management", "is_correct": true},
+{"text": "Give only an oral antimalarial tablet and send the patient home", "is_correct": false},
+{"text": "Wait for the fever to resolve before referring", "is_correct": false}
+],
+"rationale": "Convulsions and altered consciousness are danger signs that may indicate severe malaria or another life-threatening condition. The patient requires immediate emergency assessment and appropriate treatment, including parenteral antimalarial therapy if severe malaria is confirmed or strongly suspected under protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A nurse caring for a patient with suspected pulmonary tuberculosis notices that the patient is coughing repeatedly in a crowded, poorly ventilated waiting area. What is the priority action?",
+"choices": [
+{"text": "Allow the patient to remain in the crowded area without precautions", "is_correct": false},
+{"text": "Provide a medical mask for the patient if tolerated, separate the patient and improve ventilation according to protocol", "is_correct": true},
+{"text": "Give the patient a shared drinking cup", "is_correct": false},
+{"text": "Ask other patients to sit closer to the patient", "is_correct": false}
+],
+"rationale": "Early separation, source control with a medical mask where appropriate and improved ventilation reduce exposure to infectious airborne particles. Healthcare workers should also use appropriate respiratory protection when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Outbreak Investigation and Community Infection Control",
+"question_text": "During a community outbreak investigation, the nurse identifies a person who meets the suspected case definition but has not yet received laboratory confirmation. How should the case be managed for surveillance purposes?",
+"choices": [
+{"text": "Exclude the person from all records until confirmation", "is_correct": false},
+{"text": "Record and report the person according to the suspected case classification and surveillance protocol", "is_correct": true},
+{"text": "Classify the person as confirmed without laboratory or epidemiological evidence", "is_correct": false},
+{"text": "Remove the person's details from the investigation", "is_correct": false}
+],
+"rationale": "Suspected cases are important for early outbreak detection and should be recorded and reported using the applicable surveillance definitions. Laboratory confirmation may later change the case classification.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A household member living with HIV develops fever, persistent cough and weight loss. What should the community health nurse prioritise?",
+"choices": [
+{"text": "Assume the symptoms are caused by HIV alone and provide no further assessment", "is_correct": false},
+{"text": "Facilitate prompt assessment for tuberculosis and other opportunistic infections", "is_correct": true},
+{"text": "Advise the person to stop antiretroviral therapy", "is_correct": false},
+{"text": "Tell the person to avoid all contact with healthcare workers", "is_correct": false}
+],
+"rationale": "People living with HIV have an increased risk of tuberculosis and other opportunistic infections. Prompt assessment and appropriate testing are essential, while prescribed antiretroviral treatment should not be stopped without clinical advice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient with suspected cholera is brought to a CHPS compound with lethargy, sunken eyes, weak pulse and inability to drink adequately. Which action should the nurse take first?",
+"choices": [
+{"text": "Provide routine health education and ask the patient to return tomorrow", "is_correct": false},
+{"text": "Initiate urgent emergency referral and begin appropriate rehydration without delay", "is_correct": true},
+{"text": "Give only an antipyretic medicine", "is_correct": false},
+{"text": "Withhold fluids until the stool culture result is ready", "is_correct": false}
+],
+"rationale": "These findings suggest severe dehydration and possible shock, which can rapidly become fatal. Immediate rehydration and urgent transfer for appropriate clinical management are priorities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Outbreak Investigation and Community Infection Control",
+"question_text": "A district health team identifies an increase in suspected cholera cases in several communities. Which activity is most important for determining the extent and pattern of the outbreak?",
+"choices": [
+{"text": "Collecting and analysing case data by person, place and time", "is_correct": true},
+{"text": "Counting only the number of health workers in the district", "is_correct": false},
+{"text": "Recording only the names of community leaders", "is_correct": false},
+{"text": "Stopping all routine health services indefinitely", "is_correct": false}
+],
+"rationale": "Descriptive epidemiology examines cases by person, place and time to identify patterns and guide public health action. This information helps health teams identify affected populations and possible sources of exposure.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Chain of Infection",
+"question_text": "A patient with pulmonary tuberculosis is placed in a well-ventilated room, wears a medical mask when appropriate, and receives effective treatment. Which explanation best describes how these measures reduce transmission?",
+"choices": [
+{"text": "They eliminate the need for all other infection prevention measures", "is_correct": false},
+{"text": "They reduce the release and concentration of infectious particles and help reduce infectiousness through effective treatment", "is_correct": true},
+{"text": "They prevent the patient from developing any other infection", "is_correct": false},
+{"text": "They destroy every microorganism in the patient's environment", "is_correct": false}
+],
+"rationale": "Source control, ventilation and effective treatment work together to reduce exposure to infectious airborne particles. These measures interrupt transmission but do not replace appropriate respiratory protection and other infection prevention practices.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A district hospital reports an increase in surgical site infections among patients operated on in the same theatre. Which finding would most strongly suggest a possible common source or shared infection prevention failure?",
+"choices": [
+{"text": "All affected patients have different surgical procedures and no shared exposure", "is_correct": false},
+{"text": "The affected patients underwent procedures using the same inadequately processed surgical instruments", "is_correct": true},
+{"text": "The patients attended different hospitals several years before surgery", "is_correct": false},
+{"text": "The patients have different blood groups", "is_correct": false}
+],
+"rationale": "Use of inadequately reprocessed instruments can expose multiple patients to the same infectious hazard. The infection prevention team should investigate instrument processing, sterilization records, environmental conditions and other possible common exposures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient presents with fever and abdominal pain and is diagnosed with typhoid fever based only on clinical symptoms. Several days later, the patient fails to improve after antibiotic treatment. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The diagnosis is definitely correct because fever confirms typhoid", "is_correct": false},
+{"text": "The diagnosis and treatment should be reassessed, with appropriate microbiological testing considered", "is_correct": true},
+{"text": "The patient should automatically receive several antibiotics together", "is_correct": false},
+{"text": "Treatment failure proves that the patient has malaria", "is_correct": false}
+],
+"rationale": "Fever and abdominal symptoms are not specific to typhoid fever, and other infections may produce similar presentations. Reassessment and appropriate diagnostic testing, including blood culture where available, can help clarify the diagnosis and guide treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A community health nurse investigates a suspected malaria case in a child who has fever and a positive malaria rapid diagnostic test. The child also has severe pallor and difficulty breathing. Which interpretation should guide the nurse's next action?",
+"choices": [
+{"text": "The positive test means the child can safely be managed at home", "is_correct": false},
+{"text": "The child has danger signs requiring urgent referral and assessment for severe malaria or other serious illness", "is_correct": true},
+{"text": "The severe pallor is unrelated to the child's condition", "is_correct": false},
+{"text": "The nurse should delay referral until the child completes oral medication", "is_correct": false}
+],
+"rationale": "Severe pallor and difficulty breathing are danger signs that require urgent clinical assessment regardless of the rapid test result. A positive malaria test does not exclude concurrent illness or determine the severity of the child's condition by itself.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Immunization and Vaccine Preventable Diseases",
+"question_text": "A CHPS compound records several cases of measles among children, including some who have no documented vaccination history. Which conclusion is most appropriate?",
+"choices": [
+{"text": "The outbreak proves that measles vaccination has no protective effect", "is_correct": false},
+{"text": "The cluster may indicate immunity gaps and requires surveillance, case management and public health response", "is_correct": true},
+{"text": "Only children with documented vaccination should be investigated", "is_correct": false},
+{"text": "Routine immunization should be stopped throughout the district", "is_correct": false}
+],
+"rationale": "Measles clusters may occur where susceptible individuals accumulate because of missed vaccination, incomplete coverage or other immunity gaps. Public health authorities should investigate cases, strengthen surveillance and implement appropriate outbreak response measures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Antimicrobial Resistance",
+"question_text": "A health facility observes that an increasing number of bacterial infections are not responding to commonly prescribed antibiotics. Which factor is most likely to contribute to this problem?",
+"choices": [
+{"text": "Appropriate use of antibiotics guided by culture results", "is_correct": false},
+{"text": "Frequent unnecessary antibiotic use and inappropriate prescribing practices", "is_correct": true},
+{"text": "Regular hand hygiene by healthcare workers", "is_correct": false},
+{"text": "Proper sterilization of reusable surgical instruments", "is_correct": false}
+],
+"rationale": "Unnecessary and inappropriate antimicrobial use creates selective pressure that favours resistant microorganisms. Antimicrobial stewardship, infection prevention and appropriate diagnostic testing help reduce the development and spread of resistance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Outbreak Investigation and Community Infection Control",
+"question_text": "A public health team identifies that most cholera cases in a community obtained drinking water from one contaminated borehole. Which intervention would most directly address the suspected source of the outbreak?",
+"choices": [
+{"text": "Provide health education without addressing the contaminated water source", "is_correct": false},
+{"text": "Arrange assessment and remediation of the water source and provide safe alternative drinking water", "is_correct": true},
+{"text": "Close all health facilities in the district", "is_correct": false},
+{"text": "Administer antibiotics to every resident regardless of symptoms", "is_correct": false}
+],
+"rationale": "The epidemiological link to a common water source suggests a possible point-source exposure. Ensuring safe alternative water and correcting the contamination source directly addresses the likely route of transmission.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Waste Management and Environmental Sanitation",
+"question_text": "A community health nurse observes that healthcare waste is being burned openly near homes, producing smoke and exposing residents to potentially hazardous emissions. Which response is most appropriate?",
+"choices": [
+{"text": "Encourage the practice because open burning is always the safest disposal method", "is_correct": false},
+{"text": "Report the unsafe practice and ensure waste is managed through approved segregation, treatment and disposal procedures", "is_correct": true},
+{"text": "Advise residents to burn their household waste beside the healthcare waste", "is_correct": false},
+{"text": "Mix all healthcare waste with food waste to reduce the volume", "is_correct": false}
+],
+"rationale": "Uncontrolled open burning can expose communities to harmful smoke and toxic emissions and may not adequately destroy infectious waste. Healthcare waste should be segregated, treated and disposed of using approved methods and applicable environmental and health regulations.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Personal Protective Equipment",
+"question_text": "During an outbreak response, a nurse enters a patient's care area wearing gloves but no eye protection. The patient suddenly vomits forcefully, splashing fluid towards the nurse's face. Which assessment best explains the infection prevention failure?",
+"choices": [
+{"text": "Gloves provide complete protection against all forms of exposure", "is_correct": false},
+{"text": "PPE selection did not adequately account for the anticipated splash risk to the face and eyes", "is_correct": true},
+{"text": "Eye protection is required only when handling dry materials", "is_correct": false},
+{"text": "The nurse should have worn shoe covers instead of gloves", "is_correct": false}
+],
+"rationale": "PPE must be selected through an exposure risk assessment and should protect all body sites likely to be exposed. Gloves alone do not protect the eyes, nose or mouth from splashes of infectious material.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sterilization and Disinfection",
+"question_text": "An infection prevention audit finds that reusable instruments are placed directly into an autoclave without adequate cleaning. Why does this practice increase the risk of infection?",
+"choices": [
+{"text": "Organic material and debris can interfere with effective sterilization", "is_correct": true},
+{"text": "Cleaning removes the need for sterilization", "is_correct": false},
+{"text": "Autoclaves are designed to remove visible dirt without cleaning", "is_correct": false},
+{"text": "Sterilization is effective only when instruments are visibly dirty", "is_correct": false}
+],
+"rationale": "Blood, tissue and other organic material can shield microorganisms and interfere with the effectiveness of sterilization. Instruments must be thoroughly cleaned, inspected and prepared before the sterilization cycle.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Tropical Infections in Ghana",
+"question_text": "A patient with chronic hepatitis B has been sharing a razor with household members. The nurse also discovers that some household members have not been vaccinated. Which intervention addresses the most important preventable risks?",
+"choices": [
+{"text": "Advise household members to share razors less frequently", "is_correct": false},
+{"text": "Stop sharing personal items that may be contaminated with blood and assess eligible household members for hepatitis B vaccination", "is_correct": true},
+{"text": "Recommend antibiotics for all household members", "is_correct": false},
+{"text": "Advise the infected patient to stop attending healthcare appointments", "is_correct": false}
+],
+"rationale": "Sharing razors can expose household members to infected blood, while vaccination provides effective protection against hepatitis B. Household contacts should receive appropriate counselling, testing and vaccination assessment according to clinical guidance.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Outbreak Investigation and Community Infection Control",
+"question_text": "A community health team records 40 cases of acute watery diarrhoea in one week, compared with an average of two similar cases per week in previous months. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The increase is likely to be a normal seasonal fluctuation and requires no action", "is_correct": false},
+{"text": "The marked increase above the expected baseline suggests a possible outbreak requiring immediate investigation", "is_correct": true},
+{"text": "An outbreak can only be declared after every case has a laboratory result", "is_correct": false},
+{"text": "The cases should be excluded from routine surveillance because they occurred in the community", "is_correct": false}
+],
+"rationale": "A substantial increase above the expected number of cases may indicate an outbreak and should trigger prompt public health investigation. Early action is important even before laboratory confirmation is available for every suspected case.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Healthcare-Associated Infections",
+"question_text": "A facility audit finds that healthcare workers frequently move between patients while wearing the same gloves. Which conclusion best explains the resulting infection risk?",
+"choices": [
+{"text": "The practice prevents cross-infection because gloves act as a permanent barrier", "is_correct": false},
+{"text": "Contaminated gloves can transfer microorganisms between patients and surfaces", "is_correct": true},
+{"text": "Gloves eliminate the need for cleaning shared equipment", "is_correct": false},
+{"text": "Cross-infection occurs only when healthcare workers do not wear uniforms", "is_correct": false}
+],
+"rationale": "Gloves can become contaminated during patient care and may transfer pathogens to other patients or environmental surfaces. Gloves must be changed between patients and hand hygiene performed at the appropriate moments.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
