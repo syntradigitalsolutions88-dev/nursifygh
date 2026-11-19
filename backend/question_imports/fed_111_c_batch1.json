@@ -1,0 +1,1561 @@
+{
+"courses": [
+{
+"course_code": "FED-111-C",
+"course_title": "First Aid, Emergency & Disaster Management",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Basic First Aid Principles",
+"Cardiopulmonary Resuscitation",
+"Choking Management",
+"Bleeding Control and Wound Care",
+"Fractures and Immobilization",
+"Burns Management",
+"Poisoning and Overdose",
+"Environmental Emergencies",
+"Snake Bites and Insect Stings",
+"Disaster Preparedness and Response",
+"Community Emergency Transportation and Referral"
+],
+"questions": [
+{
+"topic": "Basic First Aid Principles",
+"question_text": "What is the primary purpose of first aid?",
+"choices": [
+{
+"text": "To replace definitive medical treatment",
+"is_correct": false
+},
+{
+"text": "To preserve life, prevent further harm and promote recovery",
+"is_correct": true
+},
+{
+"text": "To provide medication for every injury",
+"is_correct": false
+},
+{
+"text": "To diagnose all medical conditions at the scene",
+"is_correct": false
+}
+],
+"rationale": "First aid involves immediate assistance provided to an injured or suddenly ill person before definitive medical care is available. Its main objectives are to preserve life, prevent deterioration and promote recovery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "In the DRSABCD first aid approach, what does the letter D represent?",
+"choices": [
+{
+"text": "Diagnosis",
+"is_correct": false
+},
+{
+"text": "Disability",
+"is_correct": false
+},
+{
+"text": "Danger",
+"is_correct": true
+},
+{
+"text": "Discharge",
+"is_correct": false
+}
+],
+"rationale": "The first D in DRSABCD represents Danger. The rescuer must assess the scene for hazards to themselves, the casualty and bystanders before approaching.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "Which sequence correctly represents the primary assessment approach in the ABCDE method?",
+"choices": [
+{
+"text": "Airway, Breathing, Circulation, Disability, Exposure",
+"is_correct": true
+},
+{
+"text": "Assessment, Bleeding, Consciousness, Diagnosis, Emergency",
+"is_correct": false
+},
+{
+"text": "Airway, Circulation, Diagnosis, Disability, Evaluation",
+"is_correct": false
+},
+{
+"text": "Breathing, Airway, Disability, Circulation, Exposure",
+"is_correct": false
+}
+],
+"rationale": "ABCDE stands for Airway, Breathing, Circulation, Disability and Exposure. It provides a systematic approach to identifying and managing life-threatening problems in an emergency.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "What is the recommended chest compression rate for adult cardiopulmonary resuscitation (CPR)?",
+"choices": [
+{
+"text": "40–60 compressions per minute",
+"is_correct": false
+},
+{
+"text": "60–80 compressions per minute",
+"is_correct": false
+},
+{
+"text": "80–90 compressions per minute",
+"is_correct": false
+},
+{
+"text": "100–120 compressions per minute",
+"is_correct": true
+}
+],
+"rationale": "Adult CPR requires chest compressions at a rate of 100–120 per minute. The correct rate supports blood circulation to vital organs while resuscitation is being performed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "What is the recommended compression-to-ventilation ratio for adult CPR when performed by a single rescuer?",
+"choices": [
+{
+"text": "5:1",
+"is_correct": false
+},
+{
+"text": "15:2",
+"is_correct": false
+},
+{
+"text": "30:2",
+"is_correct": true
+},
+{
+"text": "50:5",
+"is_correct": false
+}
+],
+"rationale": "For adult CPR, a single rescuer generally performs 30 chest compressions followed by 2 rescue breaths. This approach balances circulation and ventilation during resuscitation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Choking Management",
+"question_text": "Which sign is commonly associated with severe airway obstruction in a conscious adult?",
+"choices": [
+{
+"text": "Ability to speak clearly",
+"is_correct": false
+},
+{
+"text": "Effective coughing with normal breathing",
+"is_correct": false
+},
+{
+"text": "Inability to speak, breathe or cough effectively",
+"is_correct": true
+},
+{
+"text": "Mild throat irritation with normal airflow",
+"is_correct": false
+}
+],
+"rationale": "Severe airway obstruction prevents adequate movement of air and may cause inability to speak, breathe or cough effectively. It is a life-threatening emergency requiring immediate intervention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "Which first aid method is generally recommended initially for controlling external bleeding from a wound?",
+"choices": [
+{
+"text": "Applying direct pressure with a clean dressing",
+"is_correct": true
+},
+{
+"text": "Washing the wound continuously for one hour",
+"is_correct": false
+},
+{
+"text": "Applying soil to encourage clotting",
+"is_correct": false
+},
+{
+"text": "Removing any blood clot that forms",
+"is_correct": false
+}
+],
+"rationale": "Firm, direct pressure with a clean dressing is the initial method for controlling most external bleeding. Severe bleeding requires urgent emergency assistance and additional haemorrhage control measures where indicated.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fractures and Immobilization",
+"question_text": "What is the main purpose of immobilising a suspected fractured limb?",
+"choices": [
+{
+"text": "To straighten the broken bone immediately",
+"is_correct": false
+},
+{
+"text": "To prevent movement and reduce further injury",
+"is_correct": true
+},
+{
+"text": "To increase blood loss from the injury",
+"is_correct": false
+},
+{
+"text": "To restore normal movement before referral",
+"is_correct": false
+}
+],
+"rationale": "Immobilisation reduces movement at the injured site and helps prevent further damage to surrounding tissues, blood vessels and nerves. A suspected fracture should be supported in the position found and assessed at an appropriate health facility.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Burns Management",
+"question_text": "What is the recommended immediate first aid treatment for a thermal burn?",
+"choices": [
+{
+"text": "Apply butter or cooking oil",
+"is_correct": false
+},
+{
+"text": "Cover the burn with cotton wool immediately without cooling",
+"is_correct": false
+},
+{
+"text": "Apply ice directly to the burned area",
+"is_correct": false
+},
+{
+"text": "Cool the burn under cool running water for 20 minutes",
+"is_correct": true
+}
+],
+"rationale": "Cooling a thermal burn under cool running water for 20 minutes helps limit tissue damage and relieve pain. Ice, butter, toothpaste and other household substances should not be applied because they may worsen the injury or interfere with treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "Which action should generally be avoided when providing first aid to a person who has swallowed a suspected poison?",
+"choices": [
+{
+"text": "Seeking urgent medical advice",
+"is_correct": false
+},
+{
+"text": "Identifying the substance and its container if safe",
+"is_correct": false
+},
+{
+"text": "Inducing vomiting without professional instruction",
+"is_correct": true
+},
+{
+"text": "Monitoring the person's breathing and level of consciousness",
+"is_correct": false
+}
+],
+"rationale": "Inducing vomiting can cause additional injury, particularly when corrosive substances or petroleum products have been swallowed. The person should receive urgent professional assessment, and the substance involved should be identified where possible.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "Which feature is most characteristic of heat stroke?",
+"choices": [
+{
+"text": "Severe hypothermia with shivering",
+"is_correct": false
+},
+{
+"text": "Elevated body temperature with central nervous system dysfunction",
+"is_correct": true
+},
+{
+"text": "Mild thirst without other symptoms",
+"is_correct": false
+},
+{
+"text": "Localised skin irritation after insect contact",
+"is_correct": false
+}
+],
+"rationale": "Heat stroke is a life-threatening heat-related illness characterised by severe hyperthermia and central nervous system dysfunction, such as confusion, seizures or unconsciousness. Immediate cooling and emergency medical care are essential.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "What is the most important initial consideration when rescuing a person from drowning?",
+"choices": [
+{
+"text": "Entering deep water immediately without assessing personal safety",
+"is_correct": false
+},
+{
+"text": "Giving the casualty food before assessment",
+"is_correct": false
+},
+{
+"text": "Ensuring rescuer safety before attempting the rescue",
+"is_correct": true
+},
+{
+"text": "Waiting for the casualty to regain consciousness in the water",
+"is_correct": false
+}
+],
+"rationale": "Rescuer safety must be considered before attempting a water rescue because an unsafe rescue can create additional casualties. Use a reach-or-throw rescue method where possible and arrange emergency assistance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Snake Bites and Insect Stings",
+"question_text": "Which first aid action is recommended for a person bitten by a suspected venomous snake?",
+"choices": [
+{
+"text": "Cutting the wound to release the venom",
+"is_correct": false
+},
+{
+"text": "Applying a tight tourniquet above the bite",
+"is_correct": false
+},
+{
+"text": "Encouraging the person to walk to the hospital",
+"is_correct": false
+},
+{
+"text": "Keeping the person calm and the affected limb immobilised",
+"is_correct": true
+}
+],
+"rationale": "Keeping the casualty calm and immobilising the affected limb helps reduce movement and may limit the spread of venom. The person should be transported urgently to a health facility for assessment and appropriate treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "Which organisation in Ghana is primarily responsible for coordinating disaster management activities at the national level?",
+"choices": [
+{
+"text": "National Disaster Management Organisation (NADMO)",
+"is_correct": true
+},
+{
+"text": "National Health Insurance Authority",
+"is_correct": false
+},
+{
+"text": "National Commission for Civic Education",
+"is_correct": false
+},
+{
+"text": "Ghana Education Service",
+"is_correct": false
+}
+],
+"rationale": "NADMO coordinates disaster prevention, preparedness, response and recovery activities in Ghana. It works with relevant government institutions, local authorities and other stakeholders to manage disaster risks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "What is the primary purpose of triage during a mass casualty incident?",
+"choices": [
+{
+"text": "To treat casualties in the order in which they arrive",
+"is_correct": false
+},
+{
+"text": "To identify and prioritise casualties according to the urgency of their medical needs",
+"is_correct": true
+},
+{
+"text": "To provide the same treatment to every casualty",
+"is_correct": false
+},
+{
+"text": "To transport all casualties to the nearest hospital without assessment",
+"is_correct": false
+}
+],
+"rationale": "Triage is the process of sorting casualties according to the severity of their conditions and urgency of treatment. During mass casualty incidents, it helps allocate limited resources to achieve the greatest possible benefit.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Emergency Transportation and Referral",
+"question_text": "Which action is most appropriate when preparing an emergency patient for referral from a CHPS compound to a district hospital?",
+"choices": [
+{
+"text": "Allow the patient to travel without informing the receiving facility",
+"is_correct": false
+},
+{
+"text": "Send the patient without any clinical information",
+"is_correct": false
+},
+{
+"text": "Stabilise the patient as far as possible, arrange safe transport and communicate relevant clinical information",
+"is_correct": true
+},
+{
+"text": "Delay referral until all routine clinic activities are completed",
+"is_correct": false
+}
+],
+"rationale": "Effective emergency referral involves initial stabilisation, appropriate transport and communication with the receiving facility. A clear handover supports continuity of care and helps the receiving team prepare for the patient's arrival.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "A community health nurse arrives at the scene of a road traffic accident and finds an injured person lying near leaking fuel. What should the nurse do first?",
+"choices": [
+{
+"text": "Immediately approach the casualty and begin chest compressions",
+"is_correct": false
+},
+{
+"text": "Assess the danger and ensure the scene is safe before approaching",
+"is_correct": true
+},
+{
+"text": "Give the casualty water to drink",
+"is_correct": false
+},
+{
+"text": "Move all bystanders closer to the casualty",
+"is_correct": false
+}
+],
+"rationale": "Leaking fuel creates a risk of fire, explosion and injury to rescuers. The nurse should avoid entering an unsafe scene, alert emergency services and approach only when it is safe to do so.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A 55-year-old man suddenly collapses at a community gathering. He does not respond when spoken to and is not breathing normally. What should the first aider do?",
+"choices": [
+{
+"text": "Place him in a sitting position and wait",
+"is_correct": false
+},
+{
+"text": "Give him oral fluids",
+"is_correct": false
+},
+{
+"text": "Activate emergency help, obtain an AED if available and begin CPR",
+"is_correct": true
+},
+{
+"text": "Perform abdominal thrusts immediately",
+"is_correct": false
+}
+],
+"rationale": "An unresponsive person who is not breathing normally should be treated as being in cardiac arrest. Emergency help should be activated, an AED obtained and high-quality CPR started immediately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A trained community health nurse is performing adult CPR. Which technique is correct?",
+"choices": [
+{
+"text": "Compress the centre of the chest to a depth of approximately 5–6 cm and allow full recoil",
+"is_correct": true
+},
+{
+"text": "Compress the upper abdomen to a depth of 2 cm",
+"is_correct": false
+},
+{
+"text": "Compress the chest at a rate of 40–60 per minute",
+"is_correct": false
+},
+{
+"text": "Keep the chest continuously compressed without allowing recoil",
+"is_correct": false
+}
+],
+"rationale": "Adult chest compressions should be approximately 5–6 cm deep at a rate of 100–120 per minute. The chest must be allowed to recoil fully after each compression to support adequate cardiac filling.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A community health nurse is the only trained rescuer available when an infant becomes unresponsive and is not breathing normally. Which CPR compression technique is appropriate?",
+"choices": [
+{
+"text": "Use two fingers on the lower half of the sternum and compress approximately one-third of the chest's anterior-posterior diameter",
+"is_correct": true
+},
+{
+"text": "Use both palms over the infant's abdomen",
+"is_correct": false
+},
+{
+"text": "Compress the upper chest using the heel of one hand to a depth of 6 cm",
+"is_correct": false
+},
+{
+"text": "Apply pressure over the infant's ribs without allowing chest recoil",
+"is_correct": false
+}
+],
+"rationale": "For a single rescuer performing infant CPR, the two-finger technique on the lower half of the sternum is an accepted method. Compression depth should be approximately one-third of the chest's anterior-posterior diameter, about 4 cm.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "Two trained rescuers are performing CPR on a child who is in cardiac arrest. Which compression-to-ventilation ratio is generally recommended?",
+"choices": [
+{
+"text": "30:1",
+"is_correct": false
+},
+{
+"text": "15:2",
+"is_correct": true
+},
+{
+"text": "5:1",
+"is_correct": false
+},
+{
+"text": "50:2",
+"is_correct": false
+}
+],
+"rationale": "For paediatric CPR performed by two trained rescuers, a 15:2 compression-to-ventilation ratio is generally recommended. This provides more frequent ventilation than the adult single-rescuer ratio because respiratory causes are common in paediatric cardiac arrest.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Choking Management",
+"question_text": "A conscious adult suddenly begins choking while eating at a community meeting. The person cannot speak or cough effectively. What should the first aider do?",
+"choices": [
+{
+"text": "Give the person a glass of water",
+"is_correct": false
+},
+{
+"text": "Encourage the person to lie flat and sleep",
+"is_correct": false
+},
+{
+"text": "Give up to five back blows and, if unsuccessful, up to five abdominal thrusts",
+"is_correct": true
+},
+{
+"text": "Insert fingers blindly into the person's throat",
+"is_correct": false
+}
+],
+"rationale": "Severe choking in a conscious adult requires immediate intervention, beginning with up to five back blows and followed by up to five abdominal thrusts if necessary. The sequence should be repeated while help is arranged, and blind finger sweeps should be avoided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Choking Management",
+"question_text": "A 9-month-old infant suddenly develops severe choking while being fed. The infant is conscious but cannot cry or cough effectively. Which intervention is appropriate?",
+"choices": [
+{
+"text": "Perform abdominal thrusts using both fists",
+"is_correct": false
+},
+{
+"text": "Give alternating sets of five back blows and five chest thrusts",
+"is_correct": true
+},
+{
+"text": "Hang the infant upside down by the legs",
+"is_correct": false
+},
+{
+"text": "Give the infant water to swallow",
+"is_correct": false
+}
+],
+"rationale": "Severe choking in an infant requires alternating sets of five back blows and five chest thrusts. Abdominal thrusts are not recommended for infants because of the risk of internal injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "A farmer sustains a deep cut to the forearm from a sharp farming tool. Blood is flowing continuously from the wound. What should the first aider do?",
+"choices": [
+{
+"text": "Apply firm direct pressure using a clean dressing",
+"is_correct": true
+},
+{
+"text": "Wash the wound with soil and water",
+"is_correct": false
+},
+{
+"text": "Allow the wound to bleed until it stops naturally",
+"is_correct": false
+},
+{
+"text": "Apply hot water directly to the wound",
+"is_correct": false
+}
+],
+"rationale": "Firm direct pressure helps control external bleeding and should be applied promptly. Severe or uncontrolled bleeding requires urgent medical attention and may require additional haemorrhage control measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "A person sustains a deep puncture wound after stepping on a rusty nail. Which action is most appropriate after controlling any bleeding?",
+"choices": [
+{
+"text": "Close the wound tightly with household glue",
+"is_correct": false
+},
+{
+"text": "Pack the wound with soil to prevent further bleeding",
+"is_correct": false
+},
+{
+"text": "Arrange medical assessment for wound management and tetanus immunisation status",
+"is_correct": true
+},
+{
+"text": "Ignore the wound if the bleeding has stopped",
+"is_correct": false
+}
+],
+"rationale": "Puncture wounds can introduce bacteria deep into tissues and carry a risk of tetanus. The person requires appropriate wound assessment, cleaning, possible further treatment and review of tetanus immunisation and prophylaxis needs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fractures and Immobilization",
+"question_text": "A motorcyclist falls and sustains a suspected fracture of the lower leg. The injured limb appears deformed. What should the first aider do?",
+"choices": [
+{
+"text": "Attempt to straighten the limb immediately",
+"is_correct": false
+},
+{
+"text": "Massage the injured area to reduce swelling",
+"is_correct": false
+},
+{
+"text": "Ask the casualty to walk to test the injury",
+"is_correct": false
+},
+{
+"text": "Support and immobilise the limb in the position found",
+"is_correct": true
+}
+],
+"rationale": "A deformed limb should be supported and immobilised in the position found without attempting to realign the bone. This reduces pain and further tissue damage while urgent medical assessment is arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fractures and Immobilization",
+"question_text": "A child falls from a tree and complains of severe neck pain with tingling in both arms. What should the first aider do?",
+"choices": [
+{
+"text": "Ask the child to rotate the neck to identify the painful side",
+"is_correct": false
+},
+{
+"text": "Maintain spinal alignment, minimise movement and arrange urgent emergency referral",
+"is_correct": true
+},
+{
+"text": "Sit the child upright and massage the neck",
+"is_correct": false
+},
+{
+"text": "Allow the child to walk slowly to the nearest clinic",
+"is_correct": false
+}
+],
+"rationale": "Neck pain with tingling in both arms after a fall raises concern for cervical spine injury and possible spinal cord involvement. The child should be kept as still as possible with the head and neck supported while urgent emergency assistance is arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Burns Management",
+"question_text": "A child spills hot soup over the forearm. The caregiver wants to apply toothpaste to the burned skin. What should the nurse advise?",
+"choices": [
+{
+"text": "Apply toothpaste because it removes heat",
+"is_correct": false
+},
+{
+"text": "Apply cooking oil to prevent blistering",
+"is_correct": false
+},
+{
+"text": "Cool the burn with cool running water for 20 minutes and avoid household substances",
+"is_correct": true
+},
+{
+"text": "Rub the skin firmly to remove damaged tissue",
+"is_correct": false
+}
+],
+"rationale": "Cool running water for 20 minutes is the recommended immediate first aid for thermal burns. Toothpaste, oil and other household substances may contaminate the wound and interfere with appropriate treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Burns Management",
+"question_text": "A person working with a household cleaning chemical accidentally splashes the substance into the eyes. What should the first aider do immediately?",
+"choices": [
+{
+"text": "Rub the eyes to remove the chemical",
+"is_correct": false
+},
+{
+"text": "Apply an eye ointment before washing",
+"is_correct": false
+},
+{
+"text": "Cover both eyes tightly and wait",
+"is_correct": false
+},
+{
+"text": "Immediately irrigate the eyes with plenty of clean running water",
+"is_correct": true
+}
+],
+"rationale": "Immediate and continuous irrigation with clean running water helps dilute and remove the chemical from the eyes. The casualty requires urgent medical assessment, and contact lenses should be removed if this can be done easily during irrigation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "A toddler is found beside an open container of insecticide and begins vomiting. What should the caregiver do first?",
+"choices": [
+{
+"text": "Give the child salt water to induce further vomiting",
+"is_correct": false
+},
+{
+"text": "Seek emergency medical assistance and avoid inducing vomiting",
+"is_correct": true
+},
+{
+"text": "Give the child milk and allow the child to sleep",
+"is_correct": false
+},
+{
+"text": "Wait until the child develops convulsions",
+"is_correct": false
+}
+],
+"rationale": "Insecticide ingestion can cause serious poisoning and requires urgent medical assessment. Vomiting should not be induced, and the product container should be taken to the health facility if it can be transported safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "A person is found unconscious beside an empty packet of tablets. The person is breathing normally. What should the first aider do?",
+"choices": [
+{
+"text": "Give the person water to drink",
+"is_correct": false
+},
+{
+"text": "Force the person to vomit",
+"is_correct": false
+},
+{
+"text": "Place the person in the recovery position, monitor breathing and arrange emergency medical care",
+"is_correct": true
+},
+{
+"text": "Leave the person alone to recover",
+"is_correct": false
+}
+],
+"rationale": "An unconscious person who is breathing normally should be placed in the recovery position when appropriate to help maintain airway patency and reduce aspiration risk. Emergency medical assistance is required because a drug overdose may cause rapid deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A farmer working under the hot sun becomes confused, collapses and has very hot skin. What should the first aider do?",
+"choices": [
+{
+"text": "Give the farmer hot tea and allow continued work",
+"is_correct": false
+},
+{
+"text": "Cover the farmer with thick blankets",
+"is_correct": false
+},
+{
+"text": "Move the farmer to a cooler place, begin rapid cooling and arrange emergency medical care",
+"is_correct": true
+},
+{
+"text": "Encourage the farmer to walk around",
+"is_correct": false
+}
+],
+"rationale": "Confusion and collapse following heat exposure suggest possible heat stroke, which is a medical emergency. Rapid cooling should begin immediately while emergency medical assistance is arranged; oral fluids should not be given to a person with impaired consciousness.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A person is rescued from a river after nearly drowning. The person is unconscious but has started breathing normally. What should the first aider do?",
+"choices": [
+{
+"text": "Place the person in the recovery position, monitor breathing and arrange urgent medical assessment",
+"is_correct": true
+},
+{
+"text": "Hang the person upside down to drain water from the lungs",
+"is_correct": false
+},
+{
+"text": "Press firmly on the abdomen to remove swallowed water",
+"is_correct": false
+},
+{
+"text": "Give the person food immediately",
+"is_correct": false
+}
+],
+"rationale": "A drowning casualty who is unconscious but breathing normally should be placed in the recovery position while breathing is continuously monitored. Medical assessment is essential because respiratory complications may develop even after apparent recovery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A person is found outdoors during cold, rainy weather, shivering uncontrollably and becoming confused. Which first aid action is appropriate?",
+"choices": [
+{
+"text": "Rub the person's arms and legs vigorously",
+"is_correct": false
+},
+{
+"text": "Give the person alcohol to increase body warmth",
+"is_correct": false
+},
+{
+"text": "Remove wet clothing, insulate the person and arrange medical assessment",
+"is_correct": true
+},
+{
+"text": "Place the person directly into a very hot bath",
+"is_correct": false
+}
+],
+"rationale": "Shivering and confusion following cold exposure suggest hypothermia. The person should be moved to a warm environment, wet clothing removed and the body insulated while avoiding rough handling and arranging urgent medical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Snake Bites and Insect Stings",
+"question_text": "A farmer is bitten on the ankle by a snake while working on a farm. Which action should be avoided?",
+"choices": [
+{
+"text": "Keeping the casualty calm",
+"is_correct": false
+},
+{
+"text": "Immobilising the affected limb",
+"is_correct": false
+},
+{
+"text": "Arranging urgent transport to a health facility",
+"is_correct": false
+},
+{
+"text": "Cutting the bite site and attempting to suck out the venom",
+"is_correct": true
+}
+],
+"rationale": "Cutting the bite site and sucking venom do not remove venom effectively and may cause additional tissue injury or infection. The casualty should be kept still, the affected limb immobilised and urgent medical care arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Snake Bites and Insect Stings",
+"question_text": "A woman develops facial swelling, wheezing and difficulty breathing shortly after a bee sting. What should the first aider suspect?",
+"choices": [
+{
+"text": "Simple local inflammation",
+"is_correct": false
+},
+{
+"text": "Anaphylaxis",
+"is_correct": true
+},
+{
+"text": "Heat exhaustion",
+"is_correct": false
+},
+{
+"text": "Hypothermia",
+"is_correct": false
+}
+],
+"rationale": "Facial swelling and wheezing following an insect sting suggest anaphylaxis, a severe and potentially fatal allergic reaction. Emergency assistance should be activated, and an adrenaline auto-injector should be administered promptly if available and the rescuer is trained or authorised to use it.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A community near a river receives a warning of possible flooding from local authorities. Which action should the community health nurse encourage?",
+"choices": [
+{
+"text": "Ignore the warning until water enters houses",
+"is_correct": false
+},
+{
+"text": "Move essential supplies to a safe location and follow evacuation instructions",
+"is_correct": true
+},
+{
+"text": "Allow children to play near the rising river",
+"is_correct": false
+},
+{
+"text": "Block all access roads to prevent emergency vehicles from entering",
+"is_correct": false
+}
+],
+"rationale": "Early preparation and compliance with official evacuation instructions reduce injuries and deaths during flooding. Communities should identify safe locations, prepare essential supplies and support vulnerable people who may need assistance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "Following a road traffic accident involving several casualties, a first aider identifies one casualty who is not breathing normally and another who has a minor arm injury. Which casualty should receive immediate attention?",
+"choices": [
+{
+"text": "The casualty with the minor arm injury",
+"is_correct": false
+},
+{
+"text": "The casualty who is not breathing normally",
+"is_correct": true
+},
+{
+"text": "The casualty who is shouting for assistance",
+"is_correct": false
+},
+{
+"text": "The casualty who has no visible injury",
+"is_correct": false
+}
+],
+"rationale": "A casualty who is not breathing normally may be in cardiac arrest and requires immediate resuscitation. Life-threatening airway and breathing problems take priority over minor injuries during emergency assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Emergency Transportation and Referral",
+"question_text": "A patient with suspected internal bleeding is being referred from a CHPS compound to a district hospital. Which transport arrangement is most appropriate?",
+"choices": [
+{
+"text": "Allow the patient to travel alone on a motorcycle",
+"is_correct": false
+},
+{
+"text": "Arrange appropriate emergency transport with monitoring and a clinical handover",
+"is_correct": true
+},
+{
+"text": "Ask the patient to walk to the hospital",
+"is_correct": false
+},
+{
+"text": "Delay transport until the patient feels better",
+"is_correct": false
+}
+],
+"rationale": "Suspected internal bleeding can cause rapid circulatory deterioration and requires urgent hospital assessment. Appropriate emergency transport, monitoring and communication with the receiving facility support safer transfer.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Bleeding Control and Wound Care",
+"question_text": "A casualty sustains a severe wound to the thigh with life-threatening bleeding that is not controlled by direct pressure. A trained first aider has access to a commercial tourniquet. What should the first aider do?",
+"choices": [
+{
+"text": "Apply the tourniquet above the wound, avoiding a joint, and tighten until bleeding stops",
+"is_correct": true
+},
+{
+"text": "Apply the tourniquet loosely over the wound",
+"is_correct": false
+},
+{
+"text": "Remove the tourniquet every five minutes to check the wound",
+"is_correct": false
+},
+{
+"text": "Place the casualty in a standing position",
+"is_correct": false
+}
+],
+"rationale": "A commercial tourniquet is appropriate for life-threatening limb bleeding that cannot be controlled by direct pressure, when the rescuer is trained to use it. It should be placed above the wound, not over a joint, tightened until bleeding stops and left in place for medical personnel to manage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "A community health nurse arrives at an accident scene and finds a casualty who is responsive but has difficulty breathing. Which approach should guide the initial assessment?",
+"choices": [
+{
+"text": "Begin with a detailed family history",
+"is_correct": false
+},
+{
+"text": "Use the ABCDE approach and address life-threatening airway and breathing problems immediately",
+"is_correct": true
+},
+{
+"text": "Complete a full head-to-toe examination before addressing breathing",
+"is_correct": false
+},
+{
+"text": "Give oral medication before assessing the airway",
+"is_correct": false
+}
+],
+"rationale": "The ABCDE approach prioritises airway and breathing because failure in either can rapidly become fatal. Life-threatening abnormalities should be treated as they are identified before proceeding to less urgent assessments.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A nurse is performing CPR on an adult when another rescuer brings an automated external defibrillator (AED). What should happen next?",
+"choices": [
+{
+"text": "Stop all resuscitation permanently because the AED has arrived",
+"is_correct": false
+},
+{
+"text": "Continue CPR while the AED is prepared, attach the pads and follow its prompts",
+"is_correct": true
+},
+{
+"text": "Apply the AED pads over the casualty's clothing",
+"is_correct": false
+},
+{
+"text": "Deliver a shock without allowing the AED to analyse the rhythm",
+"is_correct": false
+}
+],
+"rationale": "An AED should be used as soon as it is available while minimising interruptions to chest compressions. Rescuers must follow the device's instructions and ensure nobody is touching the casualty during rhythm analysis and shock delivery.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A casualty is rescued from a river and is not breathing normally. Which action should the trained first aider prioritise after ensuring the casualty is out of the water and the scene is safe?",
+"choices": [
+{
+"text": "Begin CPR with rescue breaths according to the applicable resuscitation protocol",
+"is_correct": true
+},
+{
+"text": "Press the abdomen repeatedly to drain water",
+"is_correct": false
+},
+{
+"text": "Wait for the casualty to cough before providing assistance",
+"is_correct": false
+},
+{
+"text": "Give the casualty a warm drink",
+"is_correct": false
+}
+],
+"rationale": "Drowning causes respiratory impairment, making effective ventilation particularly important during resuscitation. CPR should be started promptly, including rescue breaths by a trained rescuer, while emergency assistance and an AED are arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A district experiences a cholera outbreak after flooding contaminates several community water sources. Which intervention should the community health nurse prioritise?",
+"choices": [
+{
+"text": "Encourage residents to drink untreated river water",
+"is_correct": false
+},
+{
+"text": "Promote safe water, hand hygiene, sanitation and early referral of suspected cases",
+"is_correct": true
+},
+{
+"text": "Advise residents to stop eating all food for several days",
+"is_correct": false
+},
+{
+"text": "Discourage reporting of diarrhoeal cases to avoid panic",
+"is_correct": false
+}
+],
+"rationale": "Cholera spreads mainly through food and water contaminated with infected faeces. Safe water, sanitation, hand hygiene, prompt recognition and referral of suspected cases are essential public health measures during an outbreak.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A community is developing a disaster preparedness plan with support from NADMO and the district health directorate. Which activity should be included?",
+"choices": [
+{
+"text": "Identifying evacuation routes, emergency contacts, safe shelters and vulnerable households",
+"is_correct": true
+},
+{
+"text": "Waiting until a disaster occurs before assigning responsibilities",
+"is_correct": false
+},
+{
+"text": "Keeping emergency information secret from community members",
+"is_correct": false
+},
+{
+"text": "Preventing local volunteers from participating in preparedness activities",
+"is_correct": false
+}
+],
+"rationale": "A disaster preparedness plan should identify hazards, evacuation routes, shelters, emergency contacts and people who may require additional assistance. Community participation and coordination with NADMO and health authorities improve readiness and response.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Emergency Transportation and Referral",
+"question_text": "A patient with severe chest pain, sweating and difficulty breathing is seen at a CHPS compound. What should the nurse do?",
+"choices": [
+{
+"text": "Advise the patient to return home and rest for two days",
+"is_correct": false
+},
+{
+"text": "Arrange urgent emergency referral and monitor the patient's condition while awaiting transport",
+"is_correct": true
+},
+{
+"text": "Encourage the patient to walk to the nearest pharmacy",
+"is_correct": false
+},
+{
+"text": "Give food and delay further assessment",
+"is_correct": false
+}
+],
+"rationale": "Severe chest pain with sweating and breathing difficulty may indicate acute coronary syndrome or another life-threatening condition. The patient requires urgent referral, monitoring and appropriate emergency care rather than delay at the community level.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "A community health nurse arrives at a scene where an adult is unconscious after a suspected road traffic accident. The casualty is breathing normally, but a neck injury is possible. Which action is most appropriate?",
+"choices": [
+{
+"text": "Move the casualty's neck repeatedly to test its range of motion",
+"is_correct": false
+},
+{
+"text": "Maintain the airway while minimising unnecessary movement of the head and neck",
+"is_correct": true
+},
+{
+"text": "Give the casualty oral fluids",
+"is_correct": false
+},
+{
+"text": "Sit the casualty upright and ask questions",
+"is_correct": false
+}
+],
+"rationale": "An unconscious trauma casualty may have a cervical spine injury, so unnecessary movement should be avoided. Airway and breathing must still be maintained because immediate survival takes priority over spinal precautions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "During a mass casualty incident, a triage officer identifies a casualty with severe airway obstruction who is not breathing. After an appropriate airway-opening manoeuvre, the casualty remains apnoeic. In a conventional mass casualty START triage system, how is this casualty generally classified?",
+"choices": [
+{
+"text": "Green — minor",
+"is_correct": false
+},
+{
+"text": "Yellow — delayed",
+"is_correct": false
+},
+{
+"text": "Red — immediate",
+"is_correct": false
+},
+{
+"text": "Black — deceased or expectant under the triage protocol",
+"is_correct": true
+}
+],
+"rationale": "In the conventional START system, if an adult casualty remains apnoeic after an airway-opening manoeuvre, the casualty is generally classified as black. Triage categories are used during mass casualty incidents to guide resource allocation and should be applied according to the system adopted by the responding team.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "A nurse is supervising two rescuers performing CPR on an adult. One rescuer compresses the chest at the correct rate but does not allow full recoil between compressions. What is the most likely consequence?",
+"choices": [
+{
+"text": "Improved venous return to the heart",
+"is_correct": false
+},
+{
+"text": "Reduced cardiac filling and decreased blood circulation during CPR",
+"is_correct": true
+},
+{
+"text": "Increased oxygen delivery to the brain",
+"is_correct": false
+},
+{
+"text": "Prevention of all rib injuries",
+"is_correct": false
+}
+],
+"rationale": "Full chest recoil allows the heart to refill with blood between compressions. Leaning on the chest reduces venous return and can decrease the effectiveness of CPR.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Choking Management",
+"question_text": "A conscious adult receives back blows and abdominal thrusts for severe choking. The object is expelled, but the casualty continues to complain of abdominal pain. What should the first aider recommend?",
+"choices": [
+{
+"text": "The casualty should receive medical assessment because abdominal thrusts can cause internal injury",
+"is_correct": true
+},
+{
+"text": "The casualty should immediately eat a large meal",
+"is_correct": false
+},
+{
+"text": "The casualty should repeat abdominal thrusts without an obstruction",
+"is_correct": false
+},
+{
+"text": "The casualty should ignore the pain because the object has been removed",
+"is_correct": false
+}
+],
+"rationale": "Persistent abdominal pain after abdominal thrusts may indicate an internal injury. Medical assessment is recommended after successful abdominal thrusts, even when the airway obstruction has resolved.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Burns Management",
+"question_text": "A person sustains extensive burns to the chest and arms after a cooking gas explosion. The clothing is partly melted and stuck to the skin. Which action is most appropriate?",
+"choices": [
+{
+"text": "Pull off all clothing, including material stuck to the burned skin",
+"is_correct": false
+},
+{
+"text": "Apply ice directly to all burned areas",
+"is_correct": false
+},
+{
+"text": "Activate emergency assistance, cool the burns with cool running water where feasible and avoid removing stuck material",
+"is_correct": true
+},
+{
+"text": "Apply cooking oil and cover the casualty with heavy blankets",
+"is_correct": false
+}
+],
+"rationale": "Extensive burns require urgent emergency care because of the risk of shock, fluid loss and other complications. Cooling should be started where feasible, but material stuck to the skin must not be pulled away, and care must be taken to prevent hypothermia.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "A child accidentally swallows a corrosive household cleaning product. The caregiver wants to induce vomiting to remove the chemical. Which response is most appropriate?",
+"choices": [
+{
+"text": "Induce vomiting immediately using salt water",
+"is_correct": false
+},
+{
+"text": "Give activated charcoal without professional advice",
+"is_correct": false
+},
+{
+"text": "Avoid inducing vomiting and arrange immediate emergency medical assessment",
+"is_correct": true
+},
+{
+"text": "Give the child solid food to absorb the chemical",
+"is_correct": false
+}
+],
+"rationale": "Corrosive substances can cause further damage to the oesophagus and mouth if vomiting occurs. The child requires urgent professional assessment, and nothing should be given orally unless advised by an appropriate medical professional.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A casualty rescued from a swimming pool is unconscious and not breathing normally. A bystander wants to spend several minutes trying to drain water from the lungs before starting CPR. What should the nurse advise?",
+"choices": [
+{
+"text": "Draining water is essential before any resuscitation can begin",
+"is_correct": false
+},
+{
+"text": "Begin CPR promptly, including rescue breaths where trained, without delaying for water drainage",
+"is_correct": true
+},
+{
+"text": "Wait until the casualty begins coughing",
+"is_correct": false
+},
+{
+"text": "Apply pressure to the abdomen until water comes out",
+"is_correct": false
+}
+],
+"rationale": "The major problem in drowning is respiratory impairment, and delaying resuscitation reduces the chance of survival. CPR with rescue breaths should begin promptly, and attempts to drain water from the lungs are ineffective and dangerous.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Snake Bites and Insect Stings",
+"question_text": "A farmer is bitten by a suspected venomous snake. A relative proposes applying a tight rope above the bite and making cuts in the wound. Which response is most appropriate?",
+"choices": [
+{
+"text": "Agree because both methods prevent venom from entering the bloodstream",
+"is_correct": false
+},
+{
+"text": "Recommend massage to distribute the venom evenly",
+"is_correct": false
+},
+{
+"text": "Reject these methods, immobilise the affected limb and arrange urgent medical referral",
+"is_correct": true
+},
+{
+"text": "Encourage the casualty to run to the nearest hospital",
+"is_correct": false
+}
+],
+"rationale": "Tight tourniquets, cutting and suction can cause additional tissue damage and are not recommended first aid for snakebite. The casualty should remain calm and still, the limb should be immobilised and urgent hospital assessment arranged.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "Following heavy rainfall, a community health nurse is informed that several houses have flooded and residents are reporting diarrhoea. Which response should receive priority?",
+"choices": [
+{
+"text": "Wait for laboratory confirmation before providing any public health advice",
+"is_correct": false
+},
+{
+"text": "Promote immediate safe water and hygiene measures, identify suspected cases and notify the appropriate health authorities",
+"is_correct": true
+},
+{
+"text": "Advise residents to drink untreated water to prevent dehydration",
+"is_correct": false
+},
+{
+"text": "Discourage residents from attending health facilities",
+"is_correct": false
+}
+],
+"rationale": "Flooding can contaminate water sources and increase the risk of cholera and other waterborne diseases. Immediate preventive measures, early case identification and prompt notification to the appropriate health authorities are essential to limit transmission.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Emergency Transportation and Referral",
+"question_text": "A community health nurse is managing three casualties after a road traffic accident. Casualty A has a minor ankle injury and is walking. Casualty B has severe external bleeding from the thigh. Casualty C is unconscious but breathing normally. Which casualty should receive immediate attention first?",
+"choices": [
+{
+"text": "Casualty A because the person is able to walk",
+"is_correct": false
+},
+{
+"text": "Casualty B because uncontrolled severe bleeding is immediately life-threatening",
+"is_correct": true
+},
+{
+"text": "Casualty C because unconsciousness always takes priority over all other injuries",
+"is_correct": false
+},
+{
+"text": "All three casualties should receive treatment at exactly the same time",
+"is_correct": false
+}
+],
+"rationale": "Uncontrolled severe haemorrhage can rapidly cause hypovolaemic shock and death, so immediate bleeding control is essential. Casualty C also requires urgent airway and breathing monitoring, while casualty A can generally wait for assessment after immediate threats are addressed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A community experiences a building collapse. Several casualties are trapped, and the available health team has limited supplies. Which principle should guide the initial allocation of emergency resources?",
+"choices": [
+{
+"text": "Treat casualties according to social status and occupation",
+"is_correct": false
+},
+{
+"text": "Provide resources only to people who arrive first",
+"is_correct": false
+},
+{
+"text": "Use an established triage system to prioritise casualties according to clinical urgency and likelihood of benefit",
+"is_correct": true
+},
+{
+"text": "Give every casualty identical treatment regardless of condition",
+"is_correct": false
+}
+],
+"rationale": "Triage during a mass casualty incident supports the fair and effective use of limited resources by prioritising casualties according to clinical urgency and expected benefit. Decisions should follow an established protocol rather than social status or arrival order.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Emergency Transportation and Referral",
+"question_text": "A patient with a suspected spinal injury must be transferred from a remote community to a district hospital. Which transport decision is safest?",
+"choices": [
+{
+"text": "Allow the patient to sit upright on a motorcycle",
+"is_correct": false
+},
+{
+"text": "Use an appropriate ambulance or suitable transport with trained assistance, spinal precautions and clinical handover",
+"is_correct": true
+},
+{
+"text": "Ask the patient to walk slowly while supported by relatives",
+"is_correct": false
+},
+{
+"text": "Transport the patient in the back of an open pickup without support",
+"is_correct": false
+}
+],
+"rationale": "A suspected spinal injury requires careful handling and minimisation of unnecessary movement during transfer. Appropriate transport, trained assistance and communication with the receiving facility reduce the risk of secondary injury and support continuity of care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Basic First Aid Principles",
+"question_text": "A community health nurse is the first responder at a scene where an adult is unconscious after an electrical shock. The electrical source may still be active. Which action should be taken first?",
+"choices": [
+{
+"text": "Touch the casualty immediately to check for a pulse",
+"is_correct": false
+},
+{
+"text": "Pour water over the electrical equipment",
+"is_correct": false
+},
+{
+"text": "Ensure the electrical supply is switched off or isolated before approaching the casualty",
+"is_correct": true
+},
+{
+"text": "Ask a bystander to hold the casualty's hand",
+"is_correct": false
+}
+],
+"rationale": "An active electrical source can continue to injure the casualty and may electrocute the rescuer. The electricity must be safely isolated before touching the casualty, after which emergency assessment and treatment can begin.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Cardiopulmonary Resuscitation",
+"question_text": "During adult CPR, a rescuer notices that chest compressions are frequently interrupted for long periods to provide rescue breaths. What is the most appropriate correction?",
+"choices": [
+{
+"text": "Increase the duration of each interruption",
+"is_correct": false
+},
+{
+"text": "Minimise interruptions and provide effective breaths without excessive ventilation",
+"is_correct": true
+},
+{
+"text": "Stop chest compressions whenever another rescuer enters the room",
+"is_correct": false
+},
+{
+"text": "Replace chest compressions with repeated abdominal thrusts",
+"is_correct": false
+}
+],
+"rationale": "Frequent or prolonged interruptions reduce blood flow to the heart and brain during CPR. Rescuers should minimise pauses, provide effective rescue breaths and maintain high-quality chest compressions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Burns Management",
+"question_text": "A child has sustained a burn involving the face, neck and upper chest after a fire incident. The child develops hoarseness and noisy breathing. What should the nurse prioritise?",
+"choices": [
+{
+"text": "Apply burn cream before assessing breathing",
+"is_correct": false
+},
+{
+"text": "Give the child food to reduce weakness",
+"is_correct": false
+},
+{
+"text": "Recognise possible inhalation injury, prioritise airway assessment and arrange emergency referral",
+"is_correct": true
+},
+{
+"text": "Cover the child's face tightly with a bandage",
+"is_correct": false
+}
+],
+"rationale": "Facial burns, hoarseness and noisy breathing may indicate inhalation injury and evolving airway obstruction. Airway assessment and urgent emergency referral are priorities because swelling can rapidly compromise breathing.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Poisoning and Overdose",
+"question_text": "A man is found unconscious after taking an unknown quantity of medication. He has slow, shallow breathing and a weak pulse. Which action should receive the highest priority?",
+"choices": [
+{
+"text": "Ask relatives to identify all the tablets before providing care",
+"is_correct": false
+},
+{
+"text": "Prioritise airway and breathing support, activate emergency assistance and arrange urgent transfer",
+"is_correct": true
+},
+{
+"text": "Give the man coffee to improve alertness",
+"is_correct": false
+},
+{
+"text": "Induce vomiting to remove the medication",
+"is_correct": false
+}
+],
+"rationale": "Slow, shallow breathing and a weak pulse indicate potentially life-threatening respiratory and circulatory compromise. Airway and breathing support must be prioritised while emergency assistance and urgent hospital transfer are arranged.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Environmental Emergencies",
+"question_text": "A casualty with suspected heat stroke is confused and unable to swallow safely. A bystander suggests giving large amounts of water orally. What should the nurse do?",
+"choices": [
+{
+"text": "Give water quickly to reduce the body temperature",
+"is_correct": false
+},
+{
+"text": "Avoid oral fluids, begin rapid external cooling and arrange emergency medical care",
+"is_correct": true
+},
+{
+"text": "Give a hot drink to prevent dehydration",
+"is_correct": false
+},
+{
+"text": "Allow the casualty to sleep in direct sunlight",
+"is_correct": false
+}
+],
+"rationale": "A confused casualty may be unable to swallow safely, creating a risk of aspiration if fluids are given orally. Rapid cooling and urgent medical care are essential in suspected heat stroke.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Disaster Preparedness and Response",
+"question_text": "A district hospital is overwhelmed after a major road traffic accident. Several casualties have minor injuries, while others have severe bleeding, breathing difficulties and altered consciousness. Which approach should guide the health team's response?",
+"choices": [
+{
+"text": "Treat casualties alphabetically according to their names",
+"is_correct": false
+},
+{
+"text": "Prioritise patients according to the severity of their conditions using an established triage protocol",
+"is_correct": true
+},
+{
+"text": "Treat only casualties who arrive with relatives",
+"is_correct": false
+},
+{
+"text": "Treat minor injuries before life-threatening conditions to reduce the waiting area",
+"is_correct": false
+}
+],
+"rationale": "An overwhelmed facility must use an established triage system to identify patients who need immediate life-saving interventions. Casualties with minor injuries can generally wait while resources are directed towards those with critical conditions.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
