@@ -1,0 +1,745 @@
+{
+"courses": [
+{
+"course_code": "BHS-122-C",
+"course_title": "Behavioral Sciences",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Introduction to Psychology",
+"Developmental Psychology",
+"Personality Theories",
+"Learning and Conditioning",
+"Memory and Forgetting",
+"Motivation and Emotion",
+"Social Psychology",
+"Psychological Disorders Basics",
+"Stress and Coping",
+"Behavioral Change Theories",
+"Sociology in Community Nursing"
+],
+"questions": [
+{
+"topic": "Introduction to Psychology",
+"question_text": "Which statement best defines psychology?",
+"choices": [
+{"text": "The scientific study of behaviour and mental processes", "is_correct": true},
+{"text": "The study of physical diseases and their treatment", "is_correct": false},
+{"text": "The study of the structure and functions of the human body", "is_correct": false},
+{"text": "The study of environmental sanitation and disease prevention only", "is_correct": false}
+],
+"rationale": "Psychology is the scientific study of behaviour and mental processes, including thoughts, emotions, perception and learning. It helps healthcare professionals understand how individuals respond to health conditions and healthcare interventions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Introduction to Psychology",
+"question_text": "Which branch of psychology focuses on changes in behaviour and mental processes throughout the lifespan?",
+"choices": [
+{"text": "Social psychology", "is_correct": false},
+{"text": "Developmental psychology", "is_correct": true},
+{"text": "Industrial psychology", "is_correct": false},
+{"text": "Experimental psychology", "is_correct": false}
+],
+"rationale": "Developmental psychology examines physical, cognitive, emotional and social changes throughout life. It helps nurses understand age-related needs and provide developmentally appropriate care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "According to Erik Erikson, which psychosocial conflict is associated with infancy?",
+"choices": [
+{"text": "Autonomy versus shame and doubt", "is_correct": false},
+{"text": "Trust versus mistrust", "is_correct": true},
+{"text": "Identity versus role confusion", "is_correct": false},
+{"text": "Initiative versus guilt", "is_correct": false}
+],
+"rationale": "Erikson identified trust versus mistrust as the primary psychosocial conflict during infancy. Consistent care, feeding, protection and emotional responsiveness help infants develop a sense of security and trust.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "Which developmental stage is primarily associated with the psychosocial conflict of identity versus role confusion?",
+"choices": [
+{"text": "Infancy", "is_correct": false},
+{"text": "Early childhood", "is_correct": false},
+{"text": "Adolescence", "is_correct": true},
+{"text": "Late adulthood", "is_correct": false}
+],
+"rationale": "According to Erikson, adolescence is characterised by identity versus role confusion. During this stage, individuals explore personal values, beliefs, roles and future goals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "According to Jean Piaget, during which cognitive developmental stage does a child begin to use symbols and develop language but still demonstrates egocentric thinking?",
+"choices": [
+{"text": "Sensorimotor stage", "is_correct": false},
+{"text": "Preoperational stage", "is_correct": true},
+{"text": "Concrete operational stage", "is_correct": false},
+{"text": "Formal operational stage", "is_correct": false}
+],
+"rationale": "The preoperational stage generally occurs between approximately two and seven years. Children develop symbolic thinking and language but may struggle with logical operations and understanding another person's perspective.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Personality Theories",
+"question_text": "Which component of Freud's structural model of personality operates according to the pleasure principle?",
+"choices": [
+{"text": "Ego", "is_correct": false},
+{"text": "Superego", "is_correct": false},
+{"text": "Id", "is_correct": true},
+{"text": "Conscience", "is_correct": false}
+],
+"rationale": "Freud described the id as the primitive component of personality that seeks immediate satisfaction of instinctual needs. It operates according to the pleasure principle and is largely unconscious.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Personality Theories",
+"question_text": "Which personality component, according to Freud, represents internalised moral standards and ideals?",
+"choices": [
+{"text": "Id", "is_correct": false},
+{"text": "Ego", "is_correct": false},
+{"text": "Superego", "is_correct": true},
+{"text": "Unconscious impulse", "is_correct": false}
+],
+"rationale": "The superego represents internalised moral values, social expectations and standards of right and wrong. It develops through socialisation and influences behaviour through conscience and ideals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "Which type of learning occurs when an individual acquires behaviour by observing and imitating another person?",
+"choices": [
+{"text": "Classical conditioning", "is_correct": false},
+{"text": "Observational learning", "is_correct": true},
+{"text": "Habituation", "is_correct": false},
+{"text": "Trial-and-error learning", "is_correct": false}
+],
+"rationale": "Observational learning involves acquiring behaviour by watching and imitating models. Albert Bandura demonstrated that individuals can learn behaviours by observing others and the consequences of their actions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "In classical conditioning, what is an unconditioned stimulus?",
+"choices": [
+{"text": "A stimulus that naturally produces a response without prior learning", "is_correct": true},
+{"text": "A stimulus that produces a response only after repeated punishment", "is_correct": false},
+{"text": "A behaviour that is strengthened by reward", "is_correct": false},
+{"text": "A stimulus that has no relationship with a response", "is_correct": false}
+],
+"rationale": "An unconditioned stimulus naturally and automatically produces an unconditioned response without requiring prior conditioning. In Pavlov's experiment, food naturally produced salivation in dogs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "Which type of memory temporarily holds a limited amount of information while a person actively processes it?",
+"choices": [
+{"text": "Long-term memory", "is_correct": false},
+{"text": "Working memory", "is_correct": true},
+{"text": "Procedural memory", "is_correct": false},
+{"text": "Episodic memory", "is_correct": false}
+],
+"rationale": "Working memory temporarily maintains and manipulates information during activities such as reasoning, comprehension and problem-solving. It is important when nurses interpret instructions and make clinical decisions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "Which term describes the process of transferring information into memory so that it can be retained?",
+"choices": [
+{"text": "Retrieval", "is_correct": false},
+{"text": "Encoding", "is_correct": true},
+{"text": "Forgetting", "is_correct": false},
+{"text": "Displacement", "is_correct": false}
+],
+"rationale": "Encoding is the process through which information is transformed into a form that can be stored in memory. Attention, understanding and meaningful association can improve encoding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "Which statement best describes intrinsic motivation?",
+"choices": [
+{"text": "Performing an activity because of an external reward", "is_correct": false},
+{"text": "Performing an activity because of personal interest or satisfaction", "is_correct": true},
+{"text": "Performing an activity only to avoid punishment", "is_correct": false},
+{"text": "Performing an activity because of pressure from other people", "is_correct": false}
+],
+"rationale": "Intrinsic motivation arises from internal interest, enjoyment or personal satisfaction. For example, a community member may adopt healthy eating habits because they personally value maintaining good health.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "According to Maslow's hierarchy of needs, which category includes food, water, oxygen and sleep?",
+"choices": [
+{"text": "Esteem needs", "is_correct": false},
+{"text": "Self-actualisation needs", "is_correct": false},
+{"text": "Physiological needs", "is_correct": true},
+{"text": "Belongingness needs", "is_correct": false}
+],
+"rationale": "Physiological needs are the basic biological requirements necessary for survival. They include food, water, oxygen, sleep and elimination.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Social Psychology",
+"question_text": "Which term refers to a learned tendency to evaluate a person, object or situation positively or negatively?",
+"choices": [
+{"text": "Attitude", "is_correct": true},
+{"text": "Reflex", "is_correct": false},
+{"text": "Instinct", "is_correct": false},
+{"text": "Sensation", "is_correct": false}
+],
+"rationale": "An attitude is a learned predisposition to evaluate an object, person or situation in a favourable or unfavourable way. Attitudes can influence health decisions, treatment acceptance and interactions with healthcare professionals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "Which of the following is a common feature of a depressive disorder?",
+"choices": [
+{"text": "Persistent depressed mood or loss of interest in activities", "is_correct": true},
+{"text": "A temporary increase in appetite after exercise", "is_correct": false},
+{"text": "Improved concentration in every situation", "is_correct": false},
+{"text": "A brief feeling of excitement after receiving good news", "is_correct": false}
+],
+"rationale": "Depressive disorders commonly involve persistent low mood, loss of interest or pleasure and other cognitive, emotional and physical symptoms. Diagnosis requires assessment of symptom duration, severity and functional impairment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "Which statement best defines stress in psychology?",
+"choices": [
+{"text": "A response that occurs only when a person has a physical illness", "is_correct": false},
+{"text": "A psychological and physiological response to demands perceived as challenging or threatening", "is_correct": true},
+{"text": "A permanent personality disorder", "is_correct": false},
+{"text": "A condition that affects only older adults", "is_correct": false}
+],
+"rationale": "Stress involves psychological and physiological responses to demands or situations perceived as challenging, threatening or exceeding available coping resources. Its effects vary according to the individual, circumstances and coping strategies.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "According to the Transtheoretical Model of Behaviour Change, which stage describes a person who has no intention of changing a behaviour in the foreseeable future?",
+"choices": [
+{"text": "Preparation", "is_correct": false},
+{"text": "Action", "is_correct": false},
+{"text": "Precontemplation", "is_correct": true},
+{"text": "Maintenance", "is_correct": false}
+],
+"rationale": "Precontemplation is the stage in which an individual is not intending to take action to change a behaviour in the near future. Health education at this stage may focus on increasing awareness and exploring beliefs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Sociology in Community Nursing",
+"question_text": "Which term describes the process through which individuals learn the values, norms and expected behaviours of their society?",
+"choices": [
+{"text": "Socialisation", "is_correct": true},
+{"text": "Stigmatisation", "is_correct": false},
+{"text": "Discrimination", "is_correct": false},
+{"text": "Urbanisation", "is_correct": false}
+],
+"rationale": "Socialisation is the lifelong process through which individuals acquire the cultural values, norms, beliefs and behaviours of their society. Family, schools, religious institutions and peer groups are important agents of socialisation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A community health nurse visits a family with a two-year-old child who insists on feeding independently and becomes upset when the caregiver takes away the spoon. Which Erikson psychosocial stage best explains this behaviour?",
+"choices": [
+{"text": "Trust versus mistrust", "is_correct": false},
+{"text": "Autonomy versus shame and doubt", "is_correct": true},
+{"text": "Industry versus inferiority", "is_correct": false},
+{"text": "Identity versus role confusion", "is_correct": false}
+],
+"rationale": "Erikson associated early childhood with autonomy versus shame and doubt. Allowing age-appropriate independence while providing safe guidance supports the child's developing sense of autonomy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A nurse is educating parents about the cognitive development of their four-year-old child. Which approach is most appropriate according to Piaget's theory?",
+"choices": [
+{"text": "Use abstract mathematical explanations", "is_correct": false},
+{"text": "Use pictures, simple language, play and concrete examples", "is_correct": true},
+{"text": "Expect the child to understand complex scientific reasoning", "is_correct": false},
+{"text": "Avoid play because it does not support learning", "is_correct": false}
+],
+"rationale": "A four-year-old is generally within Piaget's preoperational stage, during which symbolic thinking and language are developing. Pictures, play and concrete examples are appropriate ways to communicate concepts at this age.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "An adolescent in a Ghanaian community reports feeling pressured by friends to engage in alcohol consumption. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Condemn the adolescent and refuse further discussion", "is_correct": false},
+{"text": "Explore peer influences and strengthen the adolescent's decision-making and refusal skills", "is_correct": true},
+{"text": "Advise the adolescent to follow whatever friends recommend", "is_correct": false},
+{"text": "Inform the entire community about the adolescent's disclosure", "is_correct": false}
+],
+"rationale": "Peer influence is an important social factor during adolescence. Non-judgemental counselling and development of refusal and decision-making skills can help adolescents make healthier choices while preserving confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Personality Theories",
+"question_text": "A patient is angry because a relative has refused to provide financial assistance. Instead of expressing anger towards the relative, the patient becomes hostile towards the nurse. Which defence mechanism may explain this behaviour?",
+"choices": [
+{"text": "Displacement", "is_correct": true},
+{"text": "Sublimation", "is_correct": false},
+{"text": "Rationalisation", "is_correct": false},
+{"text": "Regression", "is_correct": false}
+],
+"rationale": "Displacement involves redirecting emotions or impulses from the original source towards a less threatening substitute. In this situation, the patient redirects anger from the relative towards the nurse.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Personality Theories",
+"question_text": "A community health nurse describes a patient as consistently sociable, talkative and energetic during group health activities. Which personality dimension in the Big Five model is most clearly demonstrated?",
+"choices": [
+{"text": "Neuroticism", "is_correct": false},
+{"text": "Agreeableness", "is_correct": false},
+{"text": "Extraversion", "is_correct": true},
+{"text": "Conscientiousness", "is_correct": false}
+],
+"rationale": "Extraversion is associated with sociability, assertiveness, talkativeness and positive engagement with social environments. These characteristics are descriptive personality tendencies rather than clinical diagnoses.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "A nurse praises a mother whenever she correctly demonstrates how to prepare oral rehydration solution. The mother becomes more likely to repeat the correct procedure. Which learning principle is demonstrated?",
+"choices": [
+{"text": "Positive reinforcement", "is_correct": true},
+{"text": "Negative punishment", "is_correct": false},
+{"text": "Classical extinction", "is_correct": false},
+{"text": "Stimulus generalisation", "is_correct": false}
+],
+"rationale": "Positive reinforcement involves presenting a desirable consequence after a behaviour, increasing the likelihood that the behaviour will recur. Praise can reinforce correct health practices and improve learning.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "A child becomes afraid of visiting a clinic after experiencing a painful injection. Later, the child becomes anxious whenever the clinic building is seen. Which learning process best explains this reaction?",
+"choices": [
+{"text": "Classical conditioning", "is_correct": true},
+{"text": "Operant conditioning", "is_correct": false},
+{"text": "Positive reinforcement", "is_correct": false},
+{"text": "Insight learning", "is_correct": false}
+],
+"rationale": "Classical conditioning occurs when a previously neutral stimulus becomes associated with a stimulus that naturally produces a response. The clinic building may become associated with the painful injection and subsequently trigger anxiety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "During a community health education session, a nurse demonstrates proper handwashing while participants observe and practise the steps. Which learning approach is primarily being used?",
+"choices": [
+{"text": "Observational learning and demonstration", "is_correct": true},
+{"text": "Punishment", "is_correct": false},
+{"text": "Classical extinction", "is_correct": false},
+{"text": "Negative reinforcement", "is_correct": false}
+],
+"rationale": "Demonstration allows participants to observe a behaviour and then practise it themselves. This uses observational learning and practical skills training to improve the acquisition of correct handwashing techniques.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "A patient forgets the instructions given during a health education session because several people were speaking at the same time. Which memory-related factor most likely contributed to this problem?",
+"choices": [
+{"text": "Inadequate attention during encoding", "is_correct": true},
+{"text": "Excessive procedural memory", "is_correct": false},
+{"text": "Improved retrieval", "is_correct": false},
+{"text": "Increased long-term storage capacity", "is_correct": false}
+],
+"rationale": "Attention is important for encoding information into memory. Distractions during health education can interfere with information processing and reduce the likelihood of successful retention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Memory and Forgetting",
+"question_text": "A community health nurse teaches a patient how to take prescribed medication and asks the patient to explain the instructions in their own words. What is the main purpose of this technique?",
+"choices": [
+{"text": "To assess understanding and strengthen retrieval of information", "is_correct": true},
+{"text": "To discourage the patient from asking questions", "is_correct": false},
+{"text": "To test the patient's intelligence", "is_correct": false},
+{"text": "To replace written medication instructions", "is_correct": false}
+],
+"rationale": "The teach-back method allows the nurse to evaluate whether information has been understood and can be recalled. It also identifies areas that require further explanation and correction.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "A mother consistently takes her child for scheduled immunisation because she believes vaccination protects the child from preventable diseases. Which type of motivation is most clearly demonstrated?",
+"choices": [
+{"text": "Intrinsic motivation", "is_correct": true},
+{"text": "Negative punishment", "is_correct": false},
+{"text": "External coercion", "is_correct": false},
+{"text": "Avoidance conditioning", "is_correct": false}
+],
+"rationale": "The mother is motivated by her personal belief in the value of protecting her child's health. This reflects internal motivation rather than an action performed solely for an external reward.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "A patient becomes visibly anxious before undergoing a minor surgical procedure. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Dismiss the patient's concerns as unnecessary", "is_correct": false},
+{"text": "Encourage the patient to express concerns and provide clear, accurate information", "is_correct": true},
+{"text": "Avoid discussing the procedure", "is_correct": false},
+{"text": "Promise that no complications can occur", "is_correct": false}
+],
+"rationale": "Therapeutic communication and accurate information can reduce uncertainty and support emotional coping. The nurse should acknowledge the patient's feelings without making unrealistic assurances.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "During a community meeting, several residents refuse tuberculosis screening because they believe that anyone tested for tuberculosis will be labelled as dangerous. Which social psychological factor is most likely influencing their decision?",
+"choices": [
+{"text": "Stigma and negative social attitudes", "is_correct": true},
+{"text": "Positive reinforcement", "is_correct": false},
+{"text": "Sensory adaptation", "is_correct": false},
+{"text": "Cognitive maturation", "is_correct": false}
+],
+"rationale": "Stigma involves negative beliefs, stereotypes and social disapproval associated with a particular condition or group. It can discourage people from seeking screening, treatment and social support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A community health nurse enters a village to introduce a malaria prevention programme. Which action should be undertaken to promote effective community entry?",
+"choices": [
+{"text": "Begin household inspections without informing local leaders", "is_correct": false},
+{"text": "Meet relevant community leaders, explain the programme and seek community participation", "is_correct": true},
+{"text": "Exclude traditional leaders from all discussions", "is_correct": false},
+{"text": "Implement the programme without considering local concerns", "is_correct": false}
+],
+"rationale": "Effective community entry involves engaging relevant leaders and stakeholders, explaining programme objectives and building trust. Community participation improves acceptance, ownership and sustainability of health interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A pregnant woman declines a recommended health intervention because members of her social group believe that it is culturally unacceptable. What should the community health nurse do?",
+"choices": [
+{"text": "Insult the woman's cultural beliefs", "is_correct": false},
+{"text": "Explore her concerns respectfully, provide evidence-based information and support informed decision-making", "is_correct": true},
+{"text": "Force the woman to accept the intervention", "is_correct": false},
+{"text": "End all contact with the woman", "is_correct": false}
+],
+"rationale": "Culturally sensitive care requires understanding the patient's beliefs while providing accurate health information. The nurse should respect autonomy, address misconceptions and support informed decisions without coercion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A patient reports persistent sadness, loss of interest, poor sleep and difficulty performing daily activities for several weeks. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Tell the patient to stop thinking negatively", "is_correct": false},
+{"text": "Conduct a sensitive mental health assessment and arrange appropriate clinical evaluation", "is_correct": true},
+{"text": "Assume that the patient is pretending to be ill", "is_correct": false},
+{"text": "Advise the patient to avoid all social contact", "is_correct": false}
+],
+"rationale": "Persistent low mood, loss of interest and functional impairment may indicate a depressive disorder. A proper assessment is required to evaluate symptoms, safety and the need for further mental healthcare.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A patient experiencing repeated episodes of intense fear reports palpitations, sweating, trembling and a feeling of impending death. Which condition should the nurse consider?",
+"choices": [
+{"text": "Panic attacks", "is_correct": true},
+{"text": "Dementia", "is_correct": false},
+{"text": "Obsessive-compulsive disorder", "is_correct": false},
+{"text": "Specific learning disorder", "is_correct": false}
+],
+"rationale": "Panic attacks involve sudden episodes of intense fear or discomfort accompanied by physical and cognitive symptoms. The nurse should assess the patient's condition and exclude relevant medical causes before attributing symptoms to a psychiatric condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A caregiver looking after a chronically ill relative reports exhaustion, irritability and difficulty sleeping. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Advise the caregiver to ignore the symptoms", "is_correct": false},
+{"text": "Assess caregiver stress and discuss respite support, social assistance and healthy coping strategies", "is_correct": true},
+{"text": "Tell the caregiver that exhaustion is unavoidable", "is_correct": false},
+{"text": "Recommend complete isolation from family members", "is_correct": false}
+],
+"rationale": "Caregiving responsibilities can produce physical and emotional strain. Assessing caregiver burden and identifying practical support, respite opportunities and coping strategies can protect caregiver wellbeing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A student becomes anxious before an examination and creates a timetable to organise revision. Which coping strategy is being used?",
+"choices": [
+{"text": "Problem-focused coping", "is_correct": true},
+{"text": "Avoidance coping", "is_correct": false},
+{"text": "Denial", "is_correct": false},
+{"text": "Displacement", "is_correct": false}
+],
+"rationale": "Problem-focused coping involves taking practical steps to manage or change the source of stress. Organising revision time addresses the examination preparation problem directly.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A patient who has recently received a chronic disease diagnosis reports feeling overwhelmed. Which intervention best demonstrates emotional support?",
+"choices": [
+{"text": "Listen actively, acknowledge the patient's feelings and explore available support systems", "is_correct": true},
+{"text": "Tell the patient that emotional reactions are unacceptable", "is_correct": false},
+{"text": "Avoid discussing the diagnosis", "is_correct": false},
+{"text": "Make decisions for the patient without consultation", "is_correct": false}
+],
+"rationale": "Emotional support involves empathy, active listening and recognition of the patient's feelings. Identifying supportive family members and community resources can strengthen coping and adjustment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A man who smokes cigarettes recognises the health risks and is considering quitting but has not yet selected a quit date. According to the Transtheoretical Model, which stage is most appropriate?",
+"choices": [
+{"text": "Precontemplation", "is_correct": false},
+{"text": "Contemplation", "is_correct": true},
+{"text": "Action", "is_correct": false},
+{"text": "Maintenance", "is_correct": false}
+],
+"rationale": "Contemplation involves recognising a problem and considering behavioural change, often within the next several months. The individual has not yet committed to a specific action plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A community health nurse wants to encourage households to use insecticide-treated mosquito nets. Which approach is most likely to improve adoption?",
+"choices": [
+{"text": "Provide information only and ignore practical barriers", "is_correct": false},
+{"text": "Explain the benefits, demonstrate correct use and address household concerns", "is_correct": true},
+{"text": "Threaten households that do not use mosquito nets", "is_correct": false},
+{"text": "Assume that every household already understands malaria prevention", "is_correct": false}
+],
+"rationale": "Effective behaviour change interventions combine health education, practical demonstration and attention to perceived barriers. Understanding household beliefs and circumstances improves the likelihood of sustained mosquito-net use.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sociology in Community Nursing",
+"question_text": "A community health nurse discovers that some households cannot afford transport to the district hospital. Which concept best explains how this factor influences health?",
+"choices": [
+{"text": "Social determinants of health", "is_correct": true},
+{"text": "Classical conditioning", "is_correct": false},
+{"text": "Genetic inheritance", "is_correct": false},
+{"text": "Sensory perception", "is_correct": false}
+],
+"rationale": "Social determinants of health are the conditions in which people are born, grow, live, work and age, together with wider forces shaping these conditions. Income and transport access can influence healthcare utilisation and health outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sociology in Community Nursing",
+"question_text": "A nurse learns that a household makes major healthcare decisions collectively, with the family head and older relatives playing influential roles. What should the nurse do when planning health education?",
+"choices": [
+{"text": "Ignore the family's decision-making structure", "is_correct": false},
+{"text": "Respectfully engage relevant family members while maintaining the patient's autonomy and confidentiality", "is_correct": true},
+{"text": "Allow the family head to make every healthcare decision regardless of the patient's wishes", "is_correct": false},
+{"text": "Refuse to provide education to the household", "is_correct": false}
+],
+"rationale": "Understanding family structures can improve communication and participation in community healthcare. However, family involvement must not override a competent patient's autonomy, consent or right to confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Social Psychology",
+"question_text": "During a community meeting, residents agree to participate in environmental sanitation activities because they observe that most other households are participating. Which social influence is most clearly demonstrated?",
+"choices": [
+{"text": "Conformity", "is_correct": true},
+{"text": "Regression", "is_correct": false},
+{"text": "Extinction", "is_correct": false},
+{"text": "Projection", "is_correct": false}
+],
+"rationale": "Conformity occurs when individuals adjust their behaviour or attitudes to align with group expectations or behaviour. Positive community participation can encourage others to adopt beneficial health practices.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A patient tells a community health nurse that voices are speaking to him when nobody is present. Which psychological symptom is being described?",
+"choices": [
+{"text": "Hallucination", "is_correct": true},
+{"text": "Delusion", "is_correct": false},
+{"text": "Compulsion", "is_correct": false},
+{"text": "Phobia", "is_correct": false}
+],
+"rationale": "A hallucination is a perception-like experience occurring without an external stimulus, such as hearing voices when no one is speaking. The nurse should assess the patient's mental state, safety and need for urgent clinical evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A patient repeatedly washes their hands because of intrusive fears of contamination, even after the hands are visibly clean. Which condition is most consistent with this behaviour?",
+"choices": [
+{"text": "Obsessive-compulsive disorder", "is_correct": true},
+{"text": "Specific phobia", "is_correct": false},
+{"text": "Bipolar disorder", "is_correct": false},
+{"text": "Dementia", "is_correct": false}
+],
+"rationale": "Obsessive-compulsive disorder involves obsessions, compulsions or both. Repetitive washing may be a compulsion performed to reduce distress associated with intrusive contamination fears.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A woman who has recently lost a close relative reports sadness, crying and difficulty concentrating. Which response by the community health nurse is most appropriate?",
+"choices": [
+{"text": "Tell her to forget the deceased person", "is_correct": false},
+{"text": "Provide compassionate support, allow expression of grief and assess for concerning symptoms", "is_correct": true},
+{"text": "Assume that she has a psychiatric disorder because she is crying", "is_correct": false},
+{"text": "Discourage her from seeking support from trusted people", "is_correct": false}
+],
+"rationale": "Grief is a common response to bereavement and may involve sadness, crying and temporary difficulty concentrating. The nurse should provide compassionate support while identifying signs of severe or prolonged distress that require further assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A patient believes that regular physical activity will reduce the risk of diabetes but doubts their ability to exercise consistently. According to the Health Belief Model, which factor should the nurse primarily address?",
+"choices": [
+{"text": "Self-efficacy", "is_correct": true},
+{"text": "Sensory adaptation", "is_correct": false},
+{"text": "Classical conditioning", "is_correct": false},
+{"text": "Social isolation", "is_correct": false}
+],
+"rationale": "Self-efficacy refers to an individual's confidence in their ability to perform a particular behaviour. The nurse can strengthen it by helping the patient set realistic goals and identify manageable physical activities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Sociology in Community Nursing",
+"question_text": "A community health nurse discovers that a family prefers consulting a traditional healer before attending a health facility. Which action best supports culturally competent care?",
+"choices": [
+{"text": "Ridicule the family's beliefs and refuse further care", "is_correct": false},
+{"text": "Explore the family's beliefs respectfully, identify potential health risks and encourage timely evidence-based care", "is_correct": true},
+{"text": "Assume that traditional practices are always safe", "is_correct": false},
+{"text": "Prevent the family from discussing its beliefs", "is_correct": false}
+],
+"rationale": "Cultural competence requires respectful engagement with patients' beliefs while maintaining professional and clinical standards. The nurse should identify harmful practices, correct misinformation and encourage appropriate healthcare without discrimination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "During a home visit, a patient tells the nurse, 'I feel hopeless and sometimes think my family would be better off if I were dead.' What should the nurse do first?",
+"choices": [
+{"text": "Change the topic to avoid making the patient uncomfortable", "is_correct": false},
+{"text": "Ask directly about suicidal thoughts, intent and immediate safety", "is_correct": true},
+{"text": "Tell the patient that suicide is morally unacceptable", "is_correct": false},
+{"text": "Leave the patient alone to think about the statement", "is_correct": false}
+],
+"rationale": "Expressions of hopelessness and wishing to be dead require direct suicide risk assessment. The nurse should establish immediate safety, avoid leaving a person at imminent risk alone and arrange urgent mental health evaluation and referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Psychological Disorders Basics",
+"question_text": "A patient with a known history of schizophrenia becomes increasingly agitated during a home visit and reports hearing voices commanding him to harm his neighbour. What is the nurse's priority?",
+"choices": [
+{"text": "Argue with the patient about whether the voices are real", "is_correct": false},
+{"text": "Assess immediate risk, maintain a safe environment and arrange urgent mental health intervention", "is_correct": true},
+{"text": "Ignore the statement because hallucinations are common in schizophrenia", "is_correct": false},
+{"text": "Ask the neighbour to confront the patient", "is_correct": false}
+],
+"rationale": "Command hallucinations involving harm to another person may indicate an immediate risk of violence. The nurse should assess intent and access to means, maintain safety and obtain urgent professional assistance without confrontation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A community health nurse observes that a mother caring for a child with severe disability has become socially withdrawn, frequently cries and reports being unable to cope. Which response should take priority?",
+"choices": [
+{"text": "Tell her that other mothers experience greater difficulties", "is_correct": false},
+{"text": "Assess her emotional wellbeing and immediate safety, including possible depression or self-harm risk", "is_correct": true},
+{"text": "Advise her to stop caring for the child immediately", "is_correct": false},
+{"text": "Assume that the behaviour is simply attention-seeking", "is_correct": false}
+],
+"rationale": "Social withdrawal, frequent crying and inability to cope may indicate significant psychological distress or depression. Assessment of safety and mental health needs should precede planning family support and referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Developmental Psychology",
+"question_text": "A nurse assesses two children of the same age. One child has limited speech, poor social interaction and difficulty performing tasks expected for the child's developmental stage. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The child is necessarily intellectually disabled", "is_correct": false},
+{"text": "The child may have a developmental delay and requires further developmental assessment", "is_correct": true},
+{"text": "The child's development is normal because all children develop at exactly the same rate", "is_correct": false},
+{"text": "The child should be excluded from social activities", "is_correct": false}
+],
+"rationale": "Developmental milestones provide general guidance, but individual children may vary in the timing of skill acquisition. Difficulties across communication and social interaction warrant further assessment and early intervention where indicated, rather than an immediate unsupported diagnosis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Social Psychology",
+"question_text": "A community refuses to allow a person recovering from mental illness to participate in local activities because residents believe mental illness is contagious. Which social phenomenon is best demonstrated?",
+"choices": [
+{"text": "Social stigma and discrimination", "is_correct": true},
+{"text": "Positive reinforcement", "is_correct": false},
+{"text": "Social facilitation", "is_correct": false},
+{"text": "Role modelling", "is_correct": false}
+],
+"rationale": "The community is applying a false negative stereotype and excluding an individual because of a mental health condition. Stigma and discrimination can undermine social inclusion, recovery and access to community support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Behavioral Change Theories",
+"question_text": "A community health nurse is planning an intervention to reduce open defecation. Initial assessment shows that some households lack latrines, others believe open defecation is acceptable and some residents cannot afford sanitation facilities. Which approach is most appropriate?",
+"choices": [
+{"text": "Provide health education only and assume that all households can build latrines", "is_correct": false},
+{"text": "Combine behaviour-change education, community participation and practical support to address sanitation barriers", "is_correct": true},
+{"text": "Punish every household without first assessing the circumstances", "is_correct": false},
+{"text": "Focus exclusively on individual knowledge and ignore environmental conditions", "is_correct": false}
+],
+"rationale": "Behaviour is influenced by knowledge, beliefs, social norms and access to resources. A comprehensive intervention should address both individual motivation and environmental barriers through community engagement and practical sanitation support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sociology in Community Nursing",
+"question_text": "A pregnant adolescent avoids antenatal care because she fears being criticised by healthcare workers and rejected by her family. Which factor most directly explains this barrier to healthcare utilisation?",
+"choices": [
+{"text": "Social stigma and fear of negative social judgement", "is_correct": true},
+{"text": "Increased sensory memory", "is_correct": false},
+{"text": "Positive reinforcement", "is_correct": false},
+{"text": "Biological maturation", "is_correct": false}
+],
+"rationale": "Fear of criticism and rejection reflects anticipated stigma, which can discourage adolescents from seeking healthcare. Confidential, respectful and adolescent-friendly services can reduce barriers and encourage timely antenatal care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Motivation and Emotion",
+"question_text": "During a community health programme, residents attend an educational session but do not adopt the recommended dietary changes. Interviews reveal that healthy foods are expensive and unavailable in the local market. Which interpretation best explains the outcome?",
+"choices": [
+{"text": "The residents lack intelligence and cannot understand health information", "is_correct": false},
+{"text": "Access and economic barriers are limiting the translation of motivation and knowledge into behaviour", "is_correct": true},
+{"text": "Health education always produces immediate behavioural change", "is_correct": false},
+{"text": "The residents have developed a psychological disorder", "is_correct": false}
+],
+"rationale": "Knowledge and motivation alone may be insufficient when people lack the resources or opportunities required to act. Effective community interventions must consider affordability, availability and other social determinants of dietary behaviour.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Personality Theories",
+"question_text": "A patient repeatedly blames healthcare workers for personal difficulties while refusing to acknowledge their own contribution to conflicts. Which defence mechanism may be operating?",
+"choices": [
+{"text": "Projection", "is_correct": true},
+{"text": "Sublimation", "is_correct": false},
+{"text": "Regression", "is_correct": false},
+{"text": "Displacement", "is_correct": false}
+],
+"rationale": "Projection involves attributing one's own unacceptable feelings, impulses or characteristics to another person. The behaviour described may reflect projection, although a nurse should avoid diagnosing a defence mechanism from a single observation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Learning and Conditioning",
+"question_text": "A community health programme gives households a small reward each month for consistently separating waste and maintaining clean surroundings. Participation increases after the rewards are introduced. Which explanation is most appropriate?",
+"choices": [
+{"text": "Positive reinforcement has increased the likelihood of the desired behaviour", "is_correct": true},
+{"text": "Classical conditioning has eliminated all environmental influences", "is_correct": false},
+{"text": "Punishment has reduced the behaviour", "is_correct": false},
+{"text": "Memory decay has increased participation", "is_correct": false}
+],
+"rationale": "The reward is a positive reinforcer because it follows the desired behaviour and increases the likelihood of its repetition. Long-term programme success should also encourage internal motivation and community ownership.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Stress and Coping",
+"question_text": "A nurse notices that a patient with hypertension frequently misses appointments, sleeps poorly and reports constant worry about unemployment. Which interpretation should guide the nursing plan?",
+"choices": [
+{"text": "The patient's behaviour is unrelated to health because unemployment is not a disease", "is_correct": false},
+{"text": "Psychosocial stress may be affecting the patient's wellbeing and ability to adhere to treatment", "is_correct": true},
+{"text": "The patient should be discharged from follow-up immediately", "is_correct": false},
+{"text": "The patient must have a personality disorder", "is_correct": false}
+],
+"rationale": "Unemployment and persistent worry can contribute to psychological stress, sleep disturbance and difficulty maintaining treatment routines. A holistic nursing plan should assess psychosocial needs and identify appropriate support while continuing hypertension management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Sociology in Community Nursing",
+"question_text": "During a home visit, a nurse learns that a patient has been denied access to family resources because of a chronic mental health condition. The family believes the condition brings shame to the household. Which nursing response should be prioritised?",
+"choices": [
+{"text": "Accept the family's decision because family beliefs must never be questioned", "is_correct": false},
+{"text": "Assess the patient's safety and unmet needs, address misconceptions and facilitate appropriate social and mental health support", "is_correct": true},
+{"text": "Publicly disclose the patient's diagnosis to the community", "is_correct": false},
+{"text": "Advise the patient to abandon all contact with healthcare services", "is_correct": false}
+],
+"rationale": "The situation involves stigma and possible neglect or social exclusion, which may threaten the patient's wellbeing and access to care. The nurse should assess immediate safety, protect confidentiality and coordinate appropriate clinical and social support.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
