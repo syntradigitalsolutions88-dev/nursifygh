@@ -1,0 +1,731 @@
+{
+"courses": [
+{
+"course_code": "ADJ-111-C",
+"course_title": "Professional Adjustment in Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"History of Community Health Nursing in Ghana",
+"N&MC Regulations and Scope of Practice",
+"Professional Ethics and Code of Conduct",
+"Patient Rights and Advocacy",
+"Legal Issues in Community Nursing",
+"Professional Boundaries",
+"Community Health Nursing as a Profession",
+"Communication and Documentation Standards",
+"Health Care Delivery System in Ghana and CHPS"
+],
+"questions": [
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "What is the primary purpose of Community Health Nursing?",
+"choices": [
+{"text": "To provide health services exclusively to patients admitted to hospitals", "is_correct": false},
+{"text": "To promote, protect and maintain the health of individuals, families and communities", "is_correct": true},
+{"text": "To provide specialist surgical services in urban hospitals", "is_correct": false},
+{"text": "To focus only on the treatment of communicable diseases", "is_correct": false}
+],
+"rationale": "Community Health Nursing emphasizes health promotion, disease prevention, early identification of health problems and appropriate care within communities. Its activities address individuals, families and populations rather than focusing exclusively on institutional treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "Which Ghanaian initiative is widely associated with the development and expansion of community-based primary healthcare delivery?",
+"choices": [
+{"text": "National Health Insurance Scheme", "is_correct": false},
+{"text": "Community-based Health Planning and Services (CHPS)", "is_correct": true},
+{"text": "National Ambulance Service", "is_correct": false},
+{"text": "National Blood Service", "is_correct": false}
+],
+"rationale": "CHPS was developed to bring essential primary healthcare services closer to households through community-based service delivery. Its development was informed by community health research and operational experience, including the Navrongo experiment. Ghana Health Service",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "The Navrongo Community Health and Family Planning Project, which contributed to the development of CHPS, was launched as an operations research project in which year?",
+"choices": [
+{"text": "1984", "is_correct": false},
+{"text": "1990", "is_correct": false},
+{"text": "1994", "is_correct": true},
+{"text": "2005", "is_correct": false}
+],
+"rationale": "The Navrongo experiment began in 1994 and examined different approaches to delivering community-based health and family planning services. Its findings contributed to the development of Ghana's CHPS strategy. Ghana Health Service",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "What is the primary statutory purpose of the Nursing and Midwifery Council of Ghana?",
+"choices": [
+{"text": "To manage all public hospitals in Ghana", "is_correct": false},
+{"text": "To secure the highest standards of nursing and midwifery training and practice in the public interest", "is_correct": true},
+{"text": "To determine the salaries of all healthcare workers", "is_correct": false},
+{"text": "To provide financial assistance to every nursing student", "is_correct": false}
+],
+"rationale": "The Nursing and Midwifery Council of Ghana is a statutory regulatory body established under the Health Professions Regulatory Bodies Act, 2013 (Act 857). Its mandate includes regulating professional education, registration, licensing, standards and conduct. NMC Ghana",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "Which legislation established the current statutory framework for the Nursing and Midwifery Council of Ghana?",
+"choices": [
+{"text": "Health Professions Regulatory Bodies Act, 2013 (Act 857)", "is_correct": true},
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": false},
+{"text": "Children's Act, 1998 (Act 560)", "is_correct": false},
+{"text": "National Health Insurance Act, 2012 (Act 852)", "is_correct": false}
+],
+"rationale": "The Health Professions Regulatory Bodies Act, 2013 (Act 857) provides the statutory framework for the Nursing and Midwifery Council. It establishes the Council's regulatory mandate over nursing and midwifery education and professional practice. NMC Ghana",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "Which statement best defines the professional scope of practice of a Community Health Nurse?",
+"choices": [
+{"text": "All activities that a nurse personally prefers to perform", "is_correct": false},
+{"text": "The roles and activities the nurse is educated, competent and authorized to perform", "is_correct": true},
+{"text": "Any procedure requested by a community member", "is_correct": false},
+{"text": "Only duties assigned by a traditional community leader", "is_correct": false}
+],
+"rationale": "Scope of practice defines the professional roles and activities a nurse is qualified and authorized to perform. A nurse must work within the limits of education, competence, applicable regulations and approved clinical protocols. NMC Ghana",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "Which ethical principle requires a Community Health Nurse to respect a client's right to make decisions about personal healthcare?",
+"choices": [
+{"text": "Autonomy", "is_correct": true},
+{"text": "Justice", "is_correct": false},
+{"text": "Beneficence", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": false}
+],
+"rationale": "Autonomy recognizes an individual's right to make informed decisions about personal healthcare. The nurse should provide relevant information, respect the client's choices and avoid coercion.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "Which ethical principle means that a nurse should act to promote the wellbeing of clients?",
+"choices": [
+{"text": "Fidelity", "is_correct": false},
+{"text": "Beneficence", "is_correct": true},
+{"text": "Confidentiality", "is_correct": false},
+{"text": "Veracity", "is_correct": false}
+],
+"rationale": "Beneficence is the ethical obligation to act for the benefit and wellbeing of clients. Community Health Nurses demonstrate this principle through appropriate health education, preventive interventions and patient-centred care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "What does the ethical principle of non-maleficence require of a Community Health Nurse?",
+"choices": [
+{"text": "To provide services only to clients who can pay", "is_correct": false},
+{"text": "To avoid causing preventable harm to clients", "is_correct": true},
+{"text": "To disclose all client information to community leaders", "is_correct": false},
+{"text": "To allow clients to determine the nurse's professional duties", "is_correct": false}
+],
+"rationale": "Non-maleficence means avoiding or minimizing harm. Nurses apply this principle by practising competently, following safety procedures and referring clients when their needs exceed the nurse's competence.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "Which of the following is a fundamental right of a person receiving healthcare?",
+"choices": [
+{"text": "The right to demand any treatment regardless of clinical appropriateness", "is_correct": false},
+{"text": "The right to receive respectful care and understandable information", "is_correct": true},
+{"text": "The right to access another patient's medical records", "is_correct": false},
+{"text": "The right to prevent healthcare workers from documenting care", "is_correct": false}
+],
+"rationale": "Patients are entitled to dignity, respectful treatment and information that supports informed decision-making. These rights must be balanced with applicable laws, clinical standards and the rights of others.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "In nursing practice, what is negligence?",
+"choices": [
+{"text": "A deliberate decision to promote a client's independence", "is_correct": false},
+{"text": "Failure to exercise the reasonable standard of care expected, resulting in harm or risk of harm", "is_correct": true},
+{"text": "The appropriate referral of a client to a higher-level facility", "is_correct": false},
+{"text": "The provision of health education during a home visit", "is_correct": false}
+],
+"rationale": "Negligence involves a failure to meet the required standard of reasonable care. In a legal claim, relevant issues generally include a duty of care, breach, causation and legally recognizable damage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "What is informed consent?",
+"choices": [
+{"text": "Permission obtained after a client receives relevant information and understands the proposed intervention", "is_correct": true},
+{"text": "Permission obtained from a relative for every adult client", "is_correct": false},
+{"text": "A nurse's decision to proceed without explaining a procedure", "is_correct": false},
+{"text": "A general agreement to receive all future treatments", "is_correct": false}
+],
+"rationale": "Informed consent requires adequate information, understanding and a voluntary decision by a person with decision-making capacity. The information should include the nature, benefits, material risks and reasonable alternatives to the proposed intervention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "What are professional boundaries in Community Health Nursing?",
+"choices": [
+{"text": "Rules that prevent nurses from communicating with clients", "is_correct": false},
+{"text": "Limits that maintain a safe, respectful and professional nurse-client relationship", "is_correct": true},
+{"text": "Restrictions that allow nurses to ignore community concerns", "is_correct": false},
+{"text": "Personal rules that clients must follow outside healthcare settings", "is_correct": false}
+],
+"rationale": "Professional boundaries define appropriate limits within the nurse-client relationship. They protect clients from exploitation and help maintain trust, objectivity and professional accountability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Health Nursing as a Profession",
+"question_text": "Which characteristic distinguishes nursing as a profession?",
+"choices": [
+{"text": "Practice based entirely on personal opinion", "is_correct": false},
+{"text": "Specialized knowledge, regulated practice, ethical standards and professional accountability", "is_correct": true},
+{"text": "Absence of formal education and professional supervision", "is_correct": false},
+{"text": "Freedom to perform any clinical procedure without authorization", "is_correct": false}
+],
+"rationale": "Nursing is a profession because it requires specialized education, defined competencies, ethical standards and accountability to a regulatory body. Professional practice also involves continuing development and evidence-based care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "Which statement best describes accurate nursing documentation?",
+"choices": [
+{"text": "Recording only unusual events at the end of the month", "is_correct": false},
+{"text": "Making timely, factual, complete and legible records of care provided", "is_correct": true},
+{"text": "Recording personal opinions as confirmed clinical findings", "is_correct": false},
+{"text": "Allowing another person to document care that was not observed or verified", "is_correct": false}
+],
+"rationale": "Accurate documentation provides a reliable account of assessment, decisions, interventions and outcomes. It supports continuity of care, professional accountability and communication among healthcare providers.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "What is the central aim of the Community-based Health Planning and Services (CHPS) strategy in Ghana?",
+"choices": [
+{"text": "To replace all district hospitals with community clinics", "is_correct": false},
+{"text": "To bring essential primary healthcare services closer to communities through community participation", "is_correct": true},
+{"text": "To provide specialist surgery in every community", "is_correct": false},
+{"text": "To restrict healthcare delivery to people registered with NHIS", "is_correct": false}
+],
+"rationale": "CHPS is designed to improve access to essential primary healthcare by delivering services close to where people live. Community participation, household engagement and collaboration with local structures are important elements of the strategy. Ministry Of Health",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "A Community Health Nurse is assigned to a rural CHPS zone where many children have incomplete immunization. Which professional role is most appropriate?",
+"choices": [
+{"text": "Wait for parents to bring every child to the district hospital", "is_correct": false},
+{"text": "Identify under-immunized children, engage caregivers and organize appropriate immunization follow-up", "is_correct": true},
+{"text": "Stop immunization activities until every household requests them", "is_correct": false},
+{"text": "Refer all children to a specialist hospital without assessment", "is_correct": false}
+],
+"rationale": "Community Health Nurses support immunization through outreach, caregiver education, follow-up and appropriate documentation. Identifying children who have missed scheduled vaccines helps improve coverage and prevent vaccine-preventable diseases.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A Community Health Nurse is asked by a community leader to perform a clinical procedure for which the nurse has not been trained or authorized. What should the nurse do?",
+"choices": [
+{"text": "Perform the procedure because the community leader has requested it", "is_correct": false},
+{"text": "Politely explain the limitation, seek assistance from a competent practitioner and arrange appropriate referral", "is_correct": true},
+{"text": "Attempt the procedure after reading a short online description", "is_correct": false},
+{"text": "Ask an untrained volunteer to perform the procedure", "is_correct": false}
+],
+"rationale": "A nurse must practise within the limits of competence and authorized scope of practice. When a client's needs exceed those limits, the nurse should obtain appropriate assistance or arrange referral rather than undertaking an unsafe intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A newly posted Community Health Nurse is unsure whether a particular intervention is within the nurse's authorized scope of practice. What is the most appropriate action?",
+"choices": [
+{"text": "Proceed because all nurses have identical authority to perform every procedure", "is_correct": false},
+{"text": "Consult the applicable N&MC scope of practice, facility protocols and an appropriate supervisor before proceeding", "is_correct": true},
+{"text": "Ask a community volunteer to decide whether the procedure is permitted", "is_correct": false},
+{"text": "Perform the procedure first and seek approval afterwards", "is_correct": false}
+],
+"rationale": "The N&MC scope of practice and applicable approved protocols guide professional responsibilities. Clarifying uncertainty before acting helps prevent unsafe practice and protects the nurse and client.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "During a home visit, a nurse discovers that a client cannot afford the prescribed treatment. Which action best demonstrates professional ethics?",
+"choices": [
+{"text": "Refuse to assess the client because payment is not available", "is_correct": false},
+{"text": "Assess the client's needs, explain available care options and facilitate appropriate support or referral", "is_correct": true},
+{"text": "Publicly announce the client's financial difficulties", "is_correct": false},
+{"text": "Advise the client to use another person's medication", "is_correct": false}
+],
+"rationale": "Ethical nursing practice requires fairness, respect and attention to barriers that affect access to care. The nurse should explore appropriate service options and referrals without compromising safety or confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse receives money from a client in exchange for placing the client's name ahead of others on a routine clinic list. Which professional obligation has been violated?",
+"choices": [
+{"text": "Professional integrity and fairness", "is_correct": true},
+{"text": "Continuing professional development", "is_correct": false},
+{"text": "Community participation", "is_correct": false},
+{"text": "Health education", "is_correct": false}
+],
+"rationale": "Accepting payment to provide unfair preferential treatment is an abuse of professional position. Nurses must act honestly, avoid improper personal gain and treat clients fairly according to legitimate clinical and service priorities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A competent adult client refuses a recommended screening test after the nurse has explained its purpose and possible consequences. What should the nurse do?",
+"choices": [
+{"text": "Force the client to undergo the test", "is_correct": false},
+{"text": "Respect the informed refusal, explore the client's concerns and document the discussion", "is_correct": true},
+{"text": "Threaten to withdraw all future healthcare", "is_correct": false},
+{"text": "Ask a relative to consent without the client's permission", "is_correct": false}
+],
+"rationale": "A competent adult has the right to make informed decisions, including refusing a proposed intervention. The nurse should ensure the client understands the relevant information, document the decision and continue appropriate care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A client complains that a health worker spoke disrespectfully to her during a clinic visit. What is the most appropriate response by the Community Health Nurse receiving the complaint?",
+"choices": [
+{"text": "Tell the client that health workers cannot be questioned", "is_correct": false},
+{"text": "Listen respectfully, clarify the complaint and explain the appropriate complaint or reporting process", "is_correct": true},
+{"text": "Dismiss the complaint because no physical injury occurred", "is_correct": false},
+{"text": "Share the complaint with other clients for discussion", "is_correct": false}
+],
+"rationale": "Patient advocacy includes listening to concerns and supporting clients to raise complaints through appropriate channels. Respectful handling of complaints promotes accountability and helps improve the quality of healthcare services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "A nurse administers a medication without checking the client's identity and gives it to the wrong person. What should the nurse do FIRST after recognizing the error?",
+"choices": [
+{"text": "Alter the documentation to conceal the mistake", "is_correct": false},
+{"text": "Assess the affected client immediately, seek appropriate clinical assistance and report the incident through the required procedure", "is_correct": true},
+{"text": "Wait until the client develops symptoms before taking action", "is_correct": false},
+{"text": "Blame the person who prepared the medication", "is_correct": false}
+],
+"rationale": "The immediate priority after a medication error is to assess and protect the affected client. The nurse must obtain appropriate clinical support, report the incident honestly and complete accurate documentation according to facility policy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "During a home visit, a nurse explains a proposed wound dressing procedure, its purpose and possible discomfort. The client understands and agrees. What should the nurse do before proceeding?",
+"choices": [
+{"text": "Obtain and document the client's consent according to applicable procedure and policy", "is_correct": true},
+{"text": "Seek permission from the client's neighbour", "is_correct": false},
+{"text": "Proceed without consent because the procedure is routine", "is_correct": false},
+{"text": "Ask the client to sign a blank consent form", "is_correct": false}
+],
+"rationale": "Consent should be obtained before providing care that requires the client's permission. The client should have sufficient information and freedom to accept or refuse the procedure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A Community Health Nurse is providing care to a client who offers an expensive personal gift in appreciation. What is the most appropriate action?",
+"choices": [
+{"text": "Accept the gift and promise preferential treatment", "is_correct": false},
+{"text": "Politely decline or follow the facility's gift policy and maintain professional boundaries", "is_correct": true},
+{"text": "Accept the gift in exchange for the client's confidential information", "is_correct": false},
+{"text": "Ask the client to provide gifts to other nurses as well", "is_correct": false}
+],
+"rationale": "Expensive gifts may create conflicts of interest, expectations of preferential treatment or inappropriate dependency. The nurse should follow professional and institutional guidance to preserve an objective therapeutic relationship.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse begins a romantic relationship with a current client receiving regular care at a CHPS compound. Which statement best describes this situation?",
+"choices": [
+{"text": "It is acceptable if the client initiates the relationship", "is_correct": false},
+{"text": "It breaches professional boundaries because of the nurse's position of trust and the therapeutic relationship", "is_correct": true},
+{"text": "It is acceptable if the nurse does not document the relationship", "is_correct": false},
+{"text": "It is acceptable if other community members approve", "is_correct": false}
+],
+"rationale": "A nurse-client relationship involves a professional responsibility and an inherent power imbalance. Romantic or sexual involvement with a current client is incompatible with maintaining appropriate professional boundaries.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Nursing as a Profession",
+"question_text": "A Community Health Nurse attends a professional workshop to update knowledge about childhood immunization. Which professional responsibility is being demonstrated?",
+"choices": [
+{"text": "Professional misconduct", "is_correct": false},
+{"text": "Continuing professional development", "is_correct": true},
+{"text": "Unauthorized delegation", "is_correct": false},
+{"text": "Breach of confidentiality", "is_correct": false}
+],
+"rationale": "Continuing professional development enables nurses to maintain and improve knowledge, skills and professional competence. It supports safe, evidence-based practice as healthcare needs and guidelines change.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Nursing as a Profession",
+"question_text": "A nurse notices that a colleague repeatedly fails to follow infection prevention procedures during wound care. What is the most appropriate professional response?",
+"choices": [
+{"text": "Ignore the practice because the colleague is experienced", "is_correct": false},
+{"text": "Address the immediate safety risk, remind the colleague of the required standards and report persistent concerns through appropriate channels", "is_correct": true},
+{"text": "Discuss the colleague's conduct publicly with community members", "is_correct": false},
+{"text": "Copy the unsafe practice to avoid conflict", "is_correct": false}
+],
+"rationale": "Nurses share responsibility for maintaining patient safety and professional standards. Immediate risks should be addressed, and persistent unsafe practice should be escalated through appropriate supervisory or reporting procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "During a home visit, a nurse finds that a child has a high temperature and poor feeding. Which documentation practice is most appropriate?",
+"choices": [
+{"text": "Record only that the child was unwell", "is_correct": false},
+{"text": "Document the assessment findings, relevant observations, advice, interventions, referrals and follow-up plan accurately", "is_correct": true},
+{"text": "Record the findings several weeks later from memory", "is_correct": false},
+{"text": "Document only the advice given to the caregiver", "is_correct": false}
+],
+"rationale": "Complete documentation should capture relevant findings, actions and plans in a timely manner. This information supports continuity of care, referral communication and accountability.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse realizes that an entry in a client's paper record contains an incorrect date. What is the appropriate way to correct the error?",
+"choices": [
+{"text": "Erase the original entry completely so that no correction is visible", "is_correct": false},
+{"text": "Correct it according to facility policy while preserving the original entry, and authenticate the correction", "is_correct": true},
+{"text": "Ask another person to rewrite the entire record without explanation", "is_correct": false},
+{"text": "Use correction fluid to cover the incorrect date", "is_correct": false}
+],
+"rationale": "Corrections to clinical records must preserve the integrity and traceability of the original documentation. The nurse should follow the approved record-correction procedure and authenticate the amendment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "A nurse is posted to a new CHPS zone and wants to begin providing effective community services. What should the nurse do before planning major health interventions?",
+"choices": [
+{"text": "Introduce services without consulting community members", "is_correct": false},
+{"text": "Conduct community entry, engage local stakeholders and assess the community's health needs", "is_correct": true},
+{"text": "Focus only on households that are close to the CHPS compound", "is_correct": false},
+{"text": "Wait for the district hospital to identify every health problem", "is_correct": false}
+],
+"rationale": "Community entry helps the nurse establish trust and build relationships with community leaders and residents. A community assessment then provides information for planning relevant and acceptable health interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "During community entry, a nurse is preparing to introduce a new health education programme. Which action is most appropriate?",
+"choices": [
+{"text": "Meet relevant community leaders, explain the programme and encourage participation", "is_correct": true},
+{"text": "Begin activities without informing the community", "is_correct": false},
+{"text": "Ask only one household to determine the needs of the entire community", "is_correct": false},
+{"text": "Require residents to participate before explaining the programme", "is_correct": false}
+],
+"rationale": "Engagement with community leaders and residents promotes trust, cooperation and local ownership. Explaining the purpose of the programme allows community members to contribute to planning and implementation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "A client at a CHPS compound presents with severe difficulty in breathing and low oxygen saturation. The condition is beyond the facility's available management capacity. What should the Community Health Nurse do FIRST?",
+"choices": [
+{"text": "Advise the client to return home and rest", "is_correct": false},
+{"text": "Provide appropriate immediate care within competence, arrange urgent referral and communicate with the receiving facility", "is_correct": true},
+{"text": "Wait until the next routine clinic session", "is_correct": false},
+{"text": "Ask the client to find transport without providing assistance", "is_correct": false}
+],
+"rationale": "Severe respiratory distress is a potentially life-threatening emergency requiring prompt assessment and stabilization. The nurse should provide appropriate care within competence and arrange urgent transfer to a facility with the required resources.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "A community member complains that the CHPS compound is too far from several households. Which action best reflects the community-oriented role of the nurse?",
+"choices": [
+{"text": "Dismiss the complaint because the facility location cannot be discussed", "is_correct": false},
+{"text": "Discuss access barriers with community members and stakeholders and explore appropriate outreach or service-delivery arrangements", "is_correct": true},
+{"text": "Stop providing services to households far from the compound", "is_correct": false},
+{"text": "Advise all residents to relocate closer to the facility", "is_correct": false}
+],
+"rationale": "Community Health Nursing seeks to improve equitable access to essential services. Working with local stakeholders to identify barriers and plan appropriate outreach can help address geographical and practical difficulties.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A client tells a nurse that she cannot afford transport to attend a scheduled follow-up appointment. What should the nurse do?",
+"choices": [
+{"text": "Remove the client from the follow-up register", "is_correct": false},
+{"text": "Explore the barrier and discuss feasible follow-up arrangements or available community support", "is_correct": true},
+{"text": "Tell the client that follow-up is not important", "is_correct": false},
+{"text": "Record that the client is unwilling to receive care", "is_correct": false}
+],
+"rationale": "Patient advocacy includes identifying barriers that prevent access to essential healthcare. The nurse should explore practical solutions, such as appropriate community follow-up, while maintaining continuity and safety of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse discovers that a colleague has disclosed a client's HIV status to community members without authorization. What should the nurse do?",
+"choices": [
+{"text": "Share the information with more people to confirm whether it is true", "is_correct": false},
+{"text": "Protect the client's privacy, support the client and report the breach through the appropriate professional and institutional process", "is_correct": true},
+{"text": "Ignore the incident because the information is already public", "is_correct": false},
+{"text": "Post a warning about the client on a community noticeboard", "is_correct": false}
+],
+"rationale": "A client's HIV status is confidential health information and should not be disclosed without lawful justification or appropriate consent. The nurse should protect the client and follow the facility's incident-reporting and confidentiality procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "A Community Health Nurse observes signs suggesting that a child may be experiencing physical abuse. What should the nurse do?",
+"choices": [
+{"text": "Ignore the findings unless the child makes a formal written complaint", "is_correct": false},
+{"text": "Assess immediate safety, document objective findings and follow applicable child-protection reporting and referral procedures", "is_correct": true},
+{"text": "Confront the suspected person publicly before assessing the child", "is_correct": false},
+{"text": "Promise the child that the information will never be shared with anyone", "is_correct": false}
+],
+"rationale": "Suspected child abuse requires a safety-focused and appropriately documented response. The nurse should follow Ghana's child-protection framework and relevant reporting and referral procedures rather than attempting to investigate or resolve the matter independently.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A Community Health Nurse delegates a routine task to a trained assistant. Which action remains the nurse's professional responsibility?",
+"choices": [
+{"text": "Assuming that delegation transfers all accountability to the assistant", "is_correct": false},
+{"text": "Ensuring that the task is appropriate, the assistant is competent and the required supervision is provided", "is_correct": true},
+{"text": "Allowing the assistant to independently change the clinical plan", "is_correct": false},
+{"text": "Avoiding follow-up because the task has been delegated", "is_correct": false}
+],
+"rationale": "Delegation requires the nurse to consider the task, the competence of the person receiving it and the level of supervision needed. Delegation does not remove the nurse's responsibility to ensure safe and appropriate care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse refers a child with severe dehydration from a CHPS compound to a district hospital. Which information is most important to include in the referral communication?",
+"choices": [
+{"text": "The nurse's personal opinion about the child's family", "is_correct": false},
+{"text": "The child's identification, assessment findings, relevant treatment given, response and reason for referral", "is_correct": true},
+{"text": "Only the name of the CHPS compound", "is_correct": false},
+{"text": "Unrelated information about other children in the community", "is_correct": false}
+],
+"rationale": "A referral should communicate the clinical information needed for safe continuation of care. Relevant assessment findings, interventions and the reason for transfer help the receiving team make timely decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse is asked by a client's family to disclose the client's diagnosis, but the client has not authorized the disclosure. What should the nurse do?",
+"choices": [
+{"text": "Disclose the diagnosis because relatives are automatically entitled to all health information", "is_correct": false},
+{"text": "Maintain confidentiality and seek the client's consent before sharing information, unless a lawful exception applies", "is_correct": true},
+{"text": "Give the family a copy of the entire medical record", "is_correct": false},
+{"text": "Discuss the diagnosis with neighbours instead", "is_correct": false}
+],
+"rationale": "Confidentiality requires nurses to protect personal health information from unauthorized disclosure. Information may be shared with family members when the client consents or when a lawful and appropriate exception applies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Health Nursing as a Profession",
+"question_text": "A Community Health Nurse identifies an increase in diarrhoeal disease cases in several households. Which professional action is most appropriate?",
+"choices": [
+{"text": "Keep the information private and take no action", "is_correct": false},
+{"text": "Document and report the suspected increase through appropriate surveillance channels and support relevant public health action", "is_correct": true},
+{"text": "Wait until the disease affects every household", "is_correct": false},
+{"text": "Announce the names of affected individuals publicly", "is_correct": false}
+],
+"rationale": "Community Health Nurses contribute to disease surveillance and the early identification of public health threats. Appropriate reporting supports timely investigation and prevention while protecting individual confidentiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "A client asks whether an active NHIS membership means that every medicine and service will be provided without restriction. What should the Community Health Nurse explain?",
+"choices": [
+{"text": "NHIS covers every possible treatment and medicine without exception", "is_correct": false},
+{"text": "NHIS provides access to services within its approved benefits package and applicable conditions", "is_correct": true},
+{"text": "NHIS is only available to people working in government institutions", "is_correct": false},
+{"text": "NHIS membership removes the need for clinical assessment", "is_correct": false}
+],
+"rationale": "The National Health Insurance Scheme provides financial protection for covered healthcare services under its approved benefits package. Membership does not mean that every medicine, procedure or service is automatically covered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A nurse is providing health education to a group of adults with different literacy levels. Which approach is most appropriate?",
+"choices": [
+{"text": "Use complex medical terminology to demonstrate professional knowledge", "is_correct": false},
+{"text": "Use clear language, practical examples and teach-back to assess understanding", "is_correct": true},
+{"text": "Provide information only to the most educated participant", "is_correct": false},
+{"text": "Avoid questions because they may delay the session", "is_correct": false}
+],
+"rationale": "Health information should be communicated in a way that the intended audience can understand and use. Simple language, demonstrations and teach-back help identify misunderstandings and improve health literacy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "A nurse is caring for an unconscious adult who requires immediate life-saving intervention, and no authorized representative is available. What is the most appropriate approach?",
+"choices": [
+{"text": "Delay all emergency care until a relative arrives", "is_correct": false},
+{"text": "Provide necessary emergency care in the client's best interests under applicable law and clinical protocols", "is_correct": true},
+{"text": "Assume that the client has refused all treatment", "is_correct": false},
+{"text": "Ask a neighbour to provide legal consent without authority", "is_correct": false}
+],
+"rationale": "In a genuine emergency, a delay in necessary treatment may cause serious harm. Care should be provided according to applicable emergency, consent and best-interests principles while the appropriate people are contacted when feasible.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse notices that a colleague has falsified a client's temperature record. What should the nurse do?",
+"choices": [
+{"text": "Ignore the falsification to protect the colleague", "is_correct": false},
+{"text": "Ensure the client's safety, preserve accurate information and report the concern through the appropriate supervisory process", "is_correct": true},
+{"text": "Alter other records to make the entries consistent", "is_correct": false},
+{"text": "Discuss the incident with unrelated community members", "is_correct": false}
+],
+"rationale": "Falsifying clinical records undermines patient safety, continuity of care and professional accountability. The concern should be reported through appropriate channels, and the clinical record must remain accurate and traceable.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "A CHPS zone has low attendance at child welfare clinics despite the availability of services. Which approach best reflects the community-participation principle underlying CHPS?",
+"choices": [
+{"text": "Close the clinic because residents are not attending", "is_correct": false},
+{"text": "Engage caregivers and community leaders to identify barriers and develop acceptable ways to improve attendance", "is_correct": true},
+{"text": "Blame parents for failing to understand healthcare", "is_correct": false},
+{"text": "Restrict services to children from households near the compound", "is_correct": false}
+],
+"rationale": "CHPS emphasizes community engagement and shared responsibility for improving health. Identifying local barriers with residents can help develop practical interventions that improve access and service utilization.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse working in a small community is approached by a local chief who requests the names of residents diagnosed with tuberculosis. What should the nurse do?",
+"choices": [
+{"text": "Provide the names because the chief is an important community leader", "is_correct": false},
+{"text": "Explain confidentiality obligations and share only information that is authorized or legally required for appropriate public health action", "is_correct": true},
+{"text": "Post the names publicly to encourage treatment", "is_correct": false},
+{"text": "Refuse all communication with the chief about tuberculosis prevention", "is_correct": false}
+],
+"rationale": "A client's diagnosis is confidential and should not be disclosed simply because a community leader requests it. The nurse may support public health action through authorized channels while limiting disclosure to what is necessary and legally permitted.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "N&MC Regulations and Scope of Practice",
+"question_text": "A Community Health Nurse is working in a resource-limited CHPS compound when a client presents with a condition requiring specialist management. The nurse has the basic skills to provide initial care but not definitive treatment. What is the best course of action?",
+"choices": [
+{"text": "Attempt definitive treatment to avoid using referral services", "is_correct": false},
+{"text": "Provide appropriate initial care within competence, arrange timely referral and communicate with the receiving facility", "is_correct": true},
+{"text": "Discharge the client because specialist services are unavailable locally", "is_correct": false},
+{"text": "Ask a volunteer to manage the condition independently", "is_correct": false}
+],
+"rationale": "Professional accountability requires the nurse to recognize the limits of local resources and personal competence. Appropriate initial management and timely referral help prevent avoidable deterioration while maintaining continuity of care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "A nurse leaves a client with severe hypoglycaemia unattended after recognizing the condition, and the client subsequently sustains serious harm. Which legal concern is most directly raised?",
+"choices": [
+{"text": "Breach of confidentiality", "is_correct": false},
+{"text": "Possible negligence through failure to provide reasonable care", "is_correct": true},
+{"text": "Appropriate delegation", "is_correct": false},
+{"text": "Professional development", "is_correct": false}
+],
+"rationale": "A nurse has a duty to respond appropriately to a recognized clinical emergency within their competence. Failure to take reasonable action may constitute a breach of the standard of care, particularly where it contributes to harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A competent adult woman refuses a proposed referral to a district hospital despite being informed that her condition may deteriorate. Her family demands that the nurse force her to go. What should the nurse do?",
+"choices": [
+{"text": "Force the woman into a vehicle because the family has requested it", "is_correct": false},
+{"text": "Reassess her understanding and decision-making capacity, explain the risks and alternatives, document her decision and seek appropriate senior guidance", "is_correct": true},
+{"text": "Discharge her without further discussion or documentation", "is_correct": false},
+{"text": "Allow the family to sign a form overriding her decision", "is_correct": false}
+],
+"rationale": "A competent adult generally retains the right to refuse recommended care or referral after receiving relevant information. The nurse should ensure that the decision is informed and voluntary, document the discussion and follow applicable procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Boundaries",
+"question_text": "A nurse regularly borrows money from a vulnerable client and threatens to withhold home visits if repayment is delayed. Which professional concern is most significant?",
+"choices": [
+{"text": "Appropriate therapeutic relationship", "is_correct": false},
+{"text": "Exploitation and serious breach of professional boundaries", "is_correct": true},
+{"text": "Effective community mobilization", "is_correct": false},
+{"text": "Acceptable professional delegation", "is_correct": false}
+],
+"rationale": "The nurse is using professional authority and the client's vulnerability for personal financial benefit. Such conduct is exploitative, undermines trust and may constitute serious professional misconduct.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communication and Documentation Standards",
+"question_text": "A nurse discovers that a colleague has documented that a child received a vaccine, but the immunization register and caregiver's account indicate that the vaccine was not administered. What should the nurse do FIRST?",
+"choices": [
+{"text": "Accept the documentation because the colleague is senior", "is_correct": false},
+{"text": "Verify the facts, protect the accuracy of the child's immunization record and report the discrepancy through the appropriate process", "is_correct": true},
+{"text": "Administer every vaccine again without checking the child's immunization history", "is_correct": false},
+{"text": "Delete the original entry without preserving an audit trail", "is_correct": false}
+],
+"rationale": "Inaccurate immunization records may result in missed or unnecessary doses and compromise public health data. The nurse should verify the facts, correct records according to policy and report suspected falsification or documentation errors.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "A CHPS zone records an increase in maternal complications, but the nurse's routine reports show very few antenatal contacts. Community discussions reveal that many pregnant women do not know that the CHPS compound provides maternal health services. What should the nurse prioritize?",
+"choices": [
+{"text": "Assume that pregnant women are deliberately avoiding healthcare", "is_correct": false},
+{"text": "Investigate access and awareness barriers with the community, strengthen health education and improve appropriate maternal service linkages", "is_correct": true},
+{"text": "Stop recording antenatal contacts until attendance improves", "is_correct": false},
+{"text": "Refer every pregnant woman directly to a teaching hospital", "is_correct": false}
+],
+"rationale": "The discrepancy suggests that limited awareness or access may be contributing to low service utilization. Community assessment and engagement can identify barriers and guide appropriate health promotion and referral arrangements.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse receives an instruction from a supervisor to record a health education session that never took place because the district requires a higher activity report. What should the nurse do?",
+"choices": [
+{"text": "Record the session because the instruction came from a supervisor", "is_correct": false},
+{"text": "Refuse to falsify the record, explain the concern and report the matter through appropriate channels", "is_correct": true},
+{"text": "Record the session but leave the attendance list blank", "is_correct": false},
+{"text": "Ask a community volunteer to sign the false report", "is_correct": false}
+],
+"rationale": "Professional accountability requires accurate reporting, even when a superior requests otherwise. Falsifying service data compromises public health planning and may constitute professional misconduct or a legal offence.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Issues in Community Nursing",
+"question_text": "A nurse is assessing an adult client who appears confused and is unable to understand the explanation of a proposed non-emergency procedure. A relative insists that the procedure should proceed immediately. What is the most appropriate action?",
+"choices": [
+{"text": "Proceed solely because the relative has requested it", "is_correct": false},
+{"text": "Pause the non-emergency procedure, assess decision-making capacity and follow applicable consent or lawful representative procedures", "is_correct": true},
+{"text": "Assume that confusion permanently removes the client's right to make decisions", "is_correct": false},
+{"text": "Ask another client to provide consent", "is_correct": false}
+],
+"rationale": "Decision-making capacity is specific to the decision and may fluctuate, so it should not be assumed absent merely because a client is confused. For non-emergency care, the nurse should establish the appropriate consent process before proceeding.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patient Rights and Advocacy",
+"question_text": "A client with a disability reports that clinic staff routinely discuss her condition with her caregiver instead of addressing her directly. What should the Community Health Nurse prioritize?",
+"choices": [
+{"text": "Continue communicating only with the caregiver because it is faster", "is_correct": false},
+{"text": "Advocate for accessible communication, address the client directly and involve the caregiver according to the client's wishes and applicable requirements", "is_correct": true},
+{"text": "Exclude the client from all healthcare decisions", "is_correct": false},
+{"text": "Advise the client to stop attending the clinic", "is_correct": false}
+],
+"rationale": "Disability does not automatically remove a person's right to participate in healthcare decisions. The nurse should promote accessible communication, respect the client's autonomy and involve support persons appropriately.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Health Care Delivery System in Ghana and CHPS",
+"question_text": "A CHPS compound has limited supplies, and a nurse identifies several children with danger signs requiring urgent assessment. Which action should take priority?",
+"choices": [
+{"text": "Complete routine administrative reports before attending to the children", "is_correct": false},
+{"text": "Triage the children according to clinical urgency, provide appropriate immediate care and arrange urgent referral where indicated", "is_correct": true},
+{"text": "Treat children in the order their caregivers arrived regardless of severity", "is_correct": false},
+{"text": "Ask caregivers to decide which child should be treated first", "is_correct": false}
+],
+"rationale": "Clinical urgency, not arrival order, should guide prioritization when several clients require attention. Triage and timely referral help ensure that children with life-threatening conditions receive prompt care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Ethics and Code of Conduct",
+"question_text": "A nurse learns that a colleague has been practising while visibly impaired by alcohol and is preparing to provide care to clients. What should the nurse do FIRST?",
+"choices": [
+{"text": "Ignore the situation to protect the colleague's reputation", "is_correct": false},
+{"text": "Protect clients from immediate risk by ensuring the colleague does not provide unsafe care and promptly notify the appropriate supervisor", "is_correct": true},
+{"text": "Allow the colleague to continue if the clinic is busy", "is_correct": false},
+{"text": "Post the colleague's condition on social media", "is_correct": false}
+],
+"rationale": "The immediate concern is the safety of clients who may receive care from an impaired practitioner. The nurse should take appropriate steps to prevent unsafe practice and report the concern through professional and institutional channels.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
