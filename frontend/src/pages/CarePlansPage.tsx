@@ -20,7 +20,7 @@ export default function CarePlansPage() {
     const [filter, setFilter] = useState<"all" | "draft" | "submitted" | "public">("all")
 
     // --- Queries ---
-    const { data: plans, isLoading: loadingPlans, error } = useQuery({
+    const { data: plans, isLoading: loadingPlans } = useQuery({
         queryKey: ["care-plans"],
         queryFn: listCarePlans,
         enabled: !!user && view === "my-plans",
