@@ -85,5 +85,64 @@ body {
   padding: 1.5rem;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   border: 1px solid #f3f4f6;
-}/* new */
-// v2
+}
+
+/* ---- PRINT STYLES (N&MC Format) ---- */
+@media print {
+
+  /* Force A4 margins to prevent printers from cutting off edges */
+  @page {
+    margin: 15mm;
+    size: A4 portrait;
+  }
+
+  /* Hide navigation, sidebars, PWA banners, buttons, and chat widget */
+  aside,
+  header,
+  nav,
+  .print\:hidden,
+  button.fixed,
+  [role="navigation"],
+  .fixed.bottom-4.left-4 {
+    /* Force hide floating install banners */
+    display: none !important;
+  }
+
+  /* Reset page margins */
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  /* Ensure the main content takes up the full page without padding */
+  main,
+  main>div {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* Strip shadows, borders, and background from the document canvas */
+  .document-canvas {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Ensure tables don't break awkwardly across pages */
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+}

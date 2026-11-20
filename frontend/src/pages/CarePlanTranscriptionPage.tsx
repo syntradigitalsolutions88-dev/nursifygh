@@ -1,225 +1,144 @@
 import { Link, useParams } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
-
 import { getCarePlan } from "../api/careplans"
 import AppShell from "../components/shell/AppShell"
 import Button from "../components/ui/Button"
 
 export default function CarePlanTranscriptionPage() {
     const { planId } = useParams<{ planId: string }>()
-
     const { data: plan, isLoading, error } = useQuery({
         queryKey: ["care-plan", planId],
         queryFn: () => getCarePlan(planId!),
         enabled: !!planId,
     })
 
-    if (isLoading) {
-        return (
-            <AppShell>
-                <div className="text-center py-12">
-                    <p className="text-on-surface-muted">Loading care plan…</p>
-                </div>
-            </AppShell>
-        )
-    }
-
-    if (error || !plan) {
-        return (
-            <AppShell>
-                <div className="border border-black bg-white p-8 text-center max-w-2xl mx-auto">
-                    <h1 className="text-lg font-bold text-danger-700">Care plan not found</h1>
-                    <Link to="/careplans" className="mt-4 inline-block">
-                        <Button variant="secondary" size="sm">← Back to care plans</Button>
-                    </Link>
-                </div>
-            </AppShell>
-        )
-    }
+    if (isLoading) return <AppShell><div className="text-center py-12 text-gray-500">Loading document...</div></AppShell>
+    if (error || !plan) return <AppShell><div className="text-center py-12 text-red-600">Care plan not found</div></AppShell>
 
     return (
         <AppShell>
-            {/* Action bar (hidden on print) */}
+            {/* Action Bar (Hidden on Print) */}
             <div className="print:hidden mb-6 max-w-5xl mx-auto space-y-4">
-                <Link
-                    to={`/careplans/${plan.id}`}
-                    className="inline-flex items-center gap-1 text-xs text-on-surface-muted hover:text-brand-700 font-medium"
-                >
-                    ← Back to plan
-                </Link>
-
+                <Link to={`/careplans/${plan.id}`} className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-brand-700 font-medium">← Back to builder</Link>
                 <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
                     <div>
-                        <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">
-                            Transcription View · N&amp;MC Format
-                        </p>
-                        <h1 className="mt-1 text-2xl font-bold text-on-surface">
-                            {plan.title}
-                        </h1>
-                        <p className="mt-1 text-sm text-on-surface-muted">
-                            Clean, print-ready view. Transcribe by hand into your official N&amp;MC booklet.
-                        </p>
+                        <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">N&MC Format</p>
+                        <h1 className="mt-1 text-2xl font-serif font-bold text-gray-900">{plan.title}</h1>
                     </div>
-                    <div className="flex gap-2 shrink-0">
-                        <Button variant="secondary" onClick={() => window.print()}>
-                            🖨 Print
-                        </Button>
-                        <Button
-                            variant="secondary"
-                            onClick={() => {
-                                navigator.clipboard.writeText(buildPlainText(plan))
-                                alert("Care plan copied as plain text — paste into any editor.")
-                            }}
-                        >
-                            📋 Copy as Text
-                        </Button>
+                    <div className="flex gap-2">
+                        <Button variant="secondary" onClick={() => window.print()}>🖨 Print</Button>
+                        <Button variant="secondary" onClick={() => {
+                            navigator.clipboard.writeText(buildPlainText(plan))
+                            alert("Copied as plain text!")
+                        }}>📋 Copy Text</Button>
                     </div>
-                </div>
-
-                <div className="rounded-lg border-l-4 border-amber-500 bg-amber-50 p-4">
-                    <p className="text-sm text-amber-900">
-                        <strong>⚠️ Privacy Reminder:</strong> Remove the patient's name, ID, and bed number before transcribing. Only initials should appear on the official N&amp;MC form.
-                    </p>
                 </div>
             </div>
 
             {/* Document Canvas */}
-            <div className="max-w-5xl mx-auto bg-white border-2 border-black print:border-0 print:max-w-none">
-                <div className="p-8 print:p-4">
+            <div className="document-canvas max-w-5xl mx-auto bg-white shadow-xl border border-gray-200 print:border-0 print:shadow-none">
+                <div className="p-8 sm:p-12 print:p-0">
 
-                    {/* Official Header */}
-                    <div className="text-center pb-6 mb-6 border-b-2 border-black">
-                        <p className="text-[11px] uppercase tracking-[0.2em] text-black font-bold">
-                            Nurses and Midwives Council of Ghana
-                        </p>
-                        <h1 className="text-2xl font-black uppercase tracking-wide mt-2 text-black">
-                            Nursing Care Plan
-                        </h1>
-                        <p className="text-xs text-black mt-1 font-medium">
-                            Licensure Examination Format
-                        </p>
+                    {/* Header */}
+                    <div className="text-center pb-8 mb-8 border-b-2 border-gray-800">
+                        <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold">Nurses and Midwives Council of Ghana</p>
+                        <h1 className="text-3xl font-serif font-black uppercase tracking-wider mt-2 text-gray-900">Nursing Care Plan</h1>
+                        <p className="text-xs text-gray-500 mt-1 font-medium">Licensure Examination Format</p>
                     </div>
 
-                    {/* Patient Info Bar */}
-                    <table className="w-full text-xs mb-6 border-2 border-black">
+                    {/* Patient Info Table */}
+                    <table className="w-full text-sm mb-8 border border-gray-300 rounded-lg overflow-hidden print:table-fixed">
                         <tbody>
-                            <tr>
-                                <td className="border-r-2 border-black px-3 py-2 font-bold w-1/4 bg-gray-50">Patient Initials:</td>
-                                <td className="border-r-2 border-black px-3 py-2 w-1/4">&nbsp;</td>
-                                <td className="border-r-2 border-black px-3 py-2 font-bold w-1/4 bg-gray-50">Age / Sex:</td>
-                                <td className="px-3 py-2 w-1/4">&nbsp;</td>
+                            <tr className="border-b border-gray-300">
+                                <td className="border-r border-gray-300 px-4 py-3 font-semibold text-gray-600 bg-gray-50 w-1/4 print:bg-transparent">Patient Initials</td>
+                                <td className="border-r border-gray-300 px-4 py-3 w-1/4"></td>
+                                <td className="border-r border-gray-300 px-4 py-3 font-semibold text-gray-600 bg-gray-50 w-1/4 print:bg-transparent">Age / Sex</td>
+                                <td className="px-4 py-3 w-1/4"></td>
                             </tr>
-                            <tr className="border-t-2 border-black">
-                                <td className="border-r-2 border-black px-3 py-2 font-bold bg-gray-50">Ward:</td>
-                                <td className="border-r-2 border-black px-3 py-2">&nbsp;</td>
-                                <td className="border-r-2 border-black px-3 py-2 font-bold bg-gray-50">Date:</td>
-                                <td className="px-3 py-2">{new Date(plan.created_at).toLocaleDateString("en-GB")}</td>
+                            <tr>
+                                <td className="border-r border-gray-300 px-4 py-3 font-semibold text-gray-600 bg-gray-50 print:bg-transparent">Ward</td>
+                                <td className="border-r border-gray-300 px-4 py-3"></td>
+                                <td className="border-r border-gray-300 px-4 py-3 font-semibold text-gray-600 bg-gray-50 print:bg-transparent">Date</td>
+                                <td className="px-4 py-3">{new Date(plan.created_at).toLocaleDateString("en-GB")}</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    {/* The 3-column N&MC Table */}
+                    {/* NMC Table - REMOVED minWidth so it fits A4 */}
                     <div className="overflow-x-auto print:overflow-visible">
-                        <table className="w-full text-xs border-collapse print:text-[10px]" style={{ minWidth: "800px" }}>
+                        <table className="w-full text-sm border border-gray-300 rounded-lg overflow-hidden print:table-fixed print:text-[11px]">
                             <colgroup>
                                 <col style={{ width: "25%" }} />
-                                <col style={{ width: "35%" }} />
-                                <col style={{ width: "40%" }} />
+                                <col style={{ width: "30%" }} />
+                                <col style={{ width: "45%" }} />
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th className="border-2 border-black px-3 py-3 text-left font-black uppercase tracking-wide bg-gray-100">
-                                        Nursing Diagnosis
-                                    </th>
-                                    <th className="border-2 border-black px-3 py-3 text-left font-black uppercase tracking-wide bg-gray-100">
-                                        Objective / Outcome Criteria
-                                    </th>
-                                    <th className="border-2 border-black px-3 py-3 text-left font-black uppercase tracking-wide bg-gray-100">
-                                        Nursing Orders
-                                    </th>
+                            <thead className="bg-gray-50 print:bg-transparent">
+                                <tr className="border-b border-gray-300">
+                                    <th className="px-4 py-3 text-left font-bold text-gray-800 uppercase text-xs tracking-wider border-r border-gray-300">Nursing Diagnosis</th>
+                                    <th className="px-4 py-3 text-left font-bold text-gray-800 uppercase text-xs tracking-wider border-r border-gray-300">Outcome Criteria</th>
+                                    <th className="px-4 py-3 text-left font-bold text-gray-800 uppercase text-xs tracking-wider">Nursing Orders</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr className="align-top">
-                                    {/* Column 1: Diagnosis */}
-                                    <td className="border-2 border-black px-3 py-3 leading-relaxed">
-                                        <p className="font-bold text-black">{plan.primary_diagnosis.label}</p>
+                            <tbody className="align-top">
+                                <tr>
+                                    {/* Col 1 */}
+                                    <td className="border-r border-gray-300 px-4 py-4 leading-relaxed text-gray-700 break-words">
+                                        <p className="font-bold text-gray-900">{plan.primary_diagnosis.label}</p>
                                         {plan.primary_diagnosis.related_factors && (
-                                            <p className="mt-2">
-                                                <span className="font-black">related to</span>{" "}
-                                                {plan.primary_diagnosis.related_factors}
-                                            </p>
+                                            <p className="mt-2 text-sm"><span className="font-semibold text-gray-500">related to</span> {plan.primary_diagnosis.related_factors}</p>
                                         )}
                                         {plan.primary_diagnosis.defining_characteristics && (
-                                            <p className="mt-2">
-                                                <span className="font-black">as evidenced by</span>{" "}
-                                                {plan.primary_diagnosis.defining_characteristics}
-                                            </p>
+                                            <p className="mt-2 text-sm"><span className="font-semibold text-gray-500">as evidenced by</span> {plan.primary_diagnosis.defining_characteristics}</p>
                                         )}
                                     </td>
 
-                                    {/* Column 2: Goals */}
-                                    <td className="border-2 border-black px-3 py-3 leading-relaxed">
-                                        {plan.goals.length === 0 ? (
-                                            <p className="text-gray-500 italic">No objective recorded</p>
-                                        ) : (
-                                            <ol className="space-y-2 list-decimal list-inside marker:font-bold">
-                                                {plan.goals.map((goal) => (
-                                                    <li key={goal.id}>{goal.specific}</li>
-                                                ))}
-                                            </ol>
-                                        )}
+                                    {/* Col 2 */}
+                                    <td className="border-r border-gray-300 px-4 py-4 leading-relaxed text-gray-700 break-words">
+                                        <ol className="space-y-3 list-decimal list-outside ml-4 marker:text-gray-400 marker:font-bold">
+                                            {plan.goals.map((goal: any) => (
+                                                <li key={goal.id} className="pl-2">{goal.specific}</li>
+                                            ))}
+                                        </ol>
                                     </td>
 
-                                    {/* Column 3: Interventions */}
-                                    <td className="border-2 border-black px-3 py-3 leading-relaxed">
-                                        {plan.interventions.length === 0 ? (
-                                            <p className="text-gray-500 italic">No nursing orders recorded</p>
-                                        ) : (
-                                            <ol className="space-y-4 list-decimal list-inside marker:font-bold">
-                                                {plan.interventions.map((iv) => (
-                                                    <li key={iv.id}>
-                                                        <p className="font-semibold text-black">{iv.action}</p>
-                                                        <div className="mt-1 pl-4 border-l-2 border-black">
-                                                            <p>
-                                                                <span className="font-black underline">Rationale:</span>{" "}
-                                                                {iv.rationale}
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                ))}
-                                            </ol>
-                                        )}
+                                    {/* Col 3 */}
+                                    <td className="px-4 py-4 leading-relaxed text-gray-700 break-words">
+                                        <ol className="space-y-5 list-decimal list-outside ml-4 marker:text-gray-400 marker:font-bold">
+                                            {plan.interventions.map((iv: any) => (
+                                                <li key={iv.id} className="pl-2">
+                                                    <p className="font-semibold text-gray-900">{iv.action}</p>
+                                                    <div className="mt-2 pl-3 border-l-2 border-brand-200 print:border-gray-400">
+                                                        <p className="text-sm text-gray-600 print:text-gray-800"><span className="font-bold text-gray-800 text-[10px] uppercase tracking-wider block mb-0.5">Rationale</span> {iv.rationale}</p>
+                                                    </div>
+                                                </li>
+                                            ))}
+                                        </ol>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    {/* Signature Block */}
-                    <table className="w-full text-xs mt-6 border-2 border-black">
+                    {/* Signatures */}
+                    <table className="w-full text-sm mt-8 border border-gray-300 rounded-lg overflow-hidden print:table-fixed">
                         <tbody>
-                            <tr>
-                                <td className="border-r-2 border-black px-3 py-3 font-bold w-1/3 bg-gray-50">Student Name:</td>
-                                <td className="border-r-2 border-black px-3 py-3 w-1/3">&nbsp;</td>
-                                <td className="px-3 py-3 font-bold w-1/3 bg-gray-50">Signature:</td>
+                            <tr className="border-b border-gray-300">
+                                <td className="border-r border-gray-300 px-4 py-3 font-semibold text-gray-600 bg-gray-50 w-1/3 print:bg-transparent">Student Name</td>
+                                <td className="border-r border-gray-300 px-4 py-3 w-1/3"></td>
+                                <td className="px-4 py-3 font-semibold text-gray-600 bg-gray-50 print:bg-transparent">Signature</td>
                             </tr>
-                            <tr className="border-t-2 border-black">
-                                <td className="border-r-2 border-black px-3 py-3 font-bold bg-gray-50">Supervisor:</td>
-                                <td className="border-r-2 border-black px-3 py-3">&nbsp;</td>
-                                <td className="px-3 py-3 font-bold bg-gray-50">Date Reviewed:</td>
+                            <tr>
+                                <td className="border-r border-gray-300 px-4 py-3 font-semibold text-gray-600 bg-gray-50 print:bg-transparent">Supervisor</td>
+                                <td className="border-r border-gray-300 px-4 py-3"></td>
+                                <td className="px-4 py-3 font-semibold text-gray-600 bg-gray-50 print:bg-transparent">Date Reviewed</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    {/* Footer */}
-                    <div className="mt-6 pt-4 border-t-2 border-black text-[10px] text-gray-800 text-center leading-relaxed">
-                        <p className="font-bold">
-                            NursifyGH is an independent study tool and is NOT affiliated with the N&amp;MC of Ghana.
-                        </p>
-                        <p className="mt-1">
-                            This care plan must be verified by a licensed clinical instructor before use in patient care. Transcribe onto the official N&amp;MC form.
-                        </p>
+                    {/* Footer / Legal Notice */}
+                    <div className="mt-10 pt-4 border-t border-gray-200 text-center text-[10px] text-gray-400 leading-relaxed max-w-xl mx-auto">
+                        <p className="font-bold text-gray-500 mb-1">Generated by NursifyGH</p>
+                        <p>This is a study tool and is NOT affiliated with the Nurses and Midwives Council of Ghana. Verify all clinical data with your instructor before transcribing to official documents.</p>
                     </div>
                 </div>
             </div>
@@ -248,6 +167,6 @@ function buildPlainText(plan: any): string {
     })
     lines.push("")
     lines.push("---")
-    lines.push("NursifyGH Study Tool — verify with clinical instructor before use.")
+    lines.push("Generated by NursifyGH Study Tool — verify with clinical instructor before use.")
     return lines.join("\n")
 }

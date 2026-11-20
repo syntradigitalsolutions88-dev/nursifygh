@@ -182,7 +182,10 @@ export default function App() {
         } />
       </Routes>
 
-      <PwaInstallPrompt />
+      {/* Hide PWA banner when printing */}
+      <div className="print:hidden">
+        <PwaInstallPrompt />
+      </div>
     </>
   )
-}// force rebuild
+}

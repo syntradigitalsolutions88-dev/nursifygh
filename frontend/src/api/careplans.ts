@@ -41,6 +41,14 @@ export async function listTemplates(params?: {
     return data.results
 }
 
+export async function forkTemplate(templateId: string): Promise<CarePlanDetail> {
+    const { data } = await api.post<CarePlanDetail>(
+        "/careplans/plans/fork-from-template/",
+        { template_id: templateId }
+    )
+    return data
+}
+
 // ---------------------------------------------------------------------------
 // Care plans (owner-scoped)
 // ---------------------------------------------------------------------------
@@ -121,7 +129,6 @@ export async function createShareLink(
 }
 
 export async function getSharedPlan(token: string): Promise<PublicCarePlan> {
-    // PUBLIC endpoint — no auth header needed but our interceptor is harmless
     const { data } = await api.get<PublicCarePlan>(
         `/careplans/shared/${token}/`,
     )

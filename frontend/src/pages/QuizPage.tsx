@@ -25,7 +25,7 @@ export default function QuizPage() {
     if (isLoading) {
         return (
             <AppShell>
-                <div className="rounded-xl border border-border bg-white p-8 text-center">
+                <div className="rounded-xl border border-border bg-white p-8 text-center animate-pulse">
                     <p className="text-on-surface-muted">Loading quiz…</p>
                 </div>
             </AppShell>
@@ -73,17 +73,17 @@ export default function QuizPage() {
             <div className="max-w-2xl mx-auto space-y-6">
                 <Link
                     to="/courses"
-                    className="inline-flex items-center gap-1 text-xs text-on-surface-muted hover:text-brand-700"
+                    className="inline-flex items-center gap-1 text-xs text-on-surface-muted hover:text-brand-700 font-medium"
                 >
                     ← Back to courses
                 </Link>
 
                 <div>
-                    <p className="text-caption text-brand-700 font-medium">Practice Quiz</p>
-                    <h1 className="mt-1 text-h2">
+                    <p className="text-[11px] font-bold text-brand-700 uppercase tracking-wider">Practice Quiz</p>
+                    <h1 className="mt-1 text-3xl font-serif font-bold text-gray-900">
                         {totalQuestions} question{totalQuestions === 1 ? "" : "s"} available
                     </h1>
-                    <p className="mt-2 text-body-sm text-on-surface-muted">
+                    <p className="mt-2 text-sm text-on-surface-muted">
                         Choose how many questions you want to practice. Questions will be randomly selected.
                     </p>
                 </div>
@@ -103,35 +103,40 @@ export default function QuizPage() {
                     </div>
                 </div>
 
-                <div className="rounded-xl border border-border bg-white p-6 space-y-5">
+                <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
                     <div>
-                        <p className="text-h4 text-on-surface">How many questions?</p>
-                        <p className="mt-1 text-xs text-on-surface-muted">
+                        <p className="text-lg font-bold text-gray-900">How many questions?</p>
+                        <p className="mt-1 text-xs text-gray-500">
                             Pick a quick preset or enter a custom number.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                        {uniquePresets.map((n) => (
-                            <button
-                                key={n}
-                                type="button"
-                                onClick={() => setQuestionCount(n === totalQuestions ? "all" : n)}
-                                className={`rounded-lg border p-3 text-center transition-all ${(n === totalQuestions ? questionCount === "all" : questionCount === n)
-                                    ? "border-brand-600 bg-brand-50 text-brand-800 shadow-sm"
-                                    : "border-border bg-white text-on-surface hover:border-brand-300"
-                                    }`}
-                            >
-                                <p className="text-h4">{n === totalQuestions ? "All" : n}</p>
-                                <p className="mt-0.5 text-[10px] text-on-surface-muted">
-                                    {n === totalQuestions ? "Every question" : "questions"}
-                                </p>
-                            </button>
-                        ))}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        {uniquePresets.map((n) => {
+                            const isActive = (n === totalQuestions ? questionCount === "all" : questionCount === n)
+                            return (
+                                <button
+                                    key={n}
+                                    type="button"
+                                    onClick={() => setQuestionCount(n === totalQuestions ? "all" : n)}
+                                    className={`rounded-xl border-2 p-4 text-center transition-all ${isActive
+                                        ? "border-brand-500 bg-brand-50 shadow-sm"
+                                        : "border-gray-200 bg-white hover:border-brand-300 hover:bg-gray-50"
+                                        }`}
+                                >
+                                    <p className={`text-xl font-bold ${isActive ? "text-brand-800" : "text-gray-700"}`}>
+                                        {n === totalQuestions ? "All" : n}
+                                    </p>
+                                    <p className={`mt-0.5 text-[10px] uppercase tracking-wider font-semibold ${isActive ? "text-brand-600" : "text-gray-400"}`}>
+                                        {n === totalQuestions ? "Every Q" : "questions"}
+                                    </p>
+                                </button>
+                            )
+                        })}
                     </div>
 
-                    <div className="pt-3 border-t border-border">
-                        <label className="text-xs font-medium text-on-surface-muted">
+                    <div className="pt-4 border-t border-gray-100">
+                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Or enter a custom amount (1-{totalQuestions}):
                         </label>
                         <input
@@ -145,20 +150,20 @@ export default function QuizPage() {
                                 const clamped = Math.max(1, Math.min(v, totalQuestions))
                                 setQuestionCount(clamped === totalQuestions ? "all" : clamped)
                             }}
-                            className="mt-2 w-full rounded-lg border border-border bg-surface-subtle px-3 py-2 text-base focus:outline-none focus:border-brand-500"
+                            className="mt-3 w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-lg font-semibold focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500"
                         />
                     </div>
                 </div>
 
-                <div className="rounded-xl border border-brand-200 bg-brand-50 p-5">
-                    <div className="flex items-center justify-between">
+                <div className="rounded-2xl border border-brand-200 bg-brand-50 p-6 shadow-sm">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                         <div>
-                            <p className="text-sm font-medium text-brand-900">Ready to practice?</p>
-                            <p className="mt-1 text-xs text-brand-800">
+                            <p className="text-base font-bold text-brand-900">Ready to practice?</p>
+                            <p className="mt-1 text-sm text-brand-800 font-medium">
                                 {selectedCount} question{selectedCount === 1 ? "" : "s"} · ~{Math.ceil(selectedCount * 1.2)} min
                             </p>
                         </div>
-                        <Button size="lg" onClick={() => setHasStarted(true)}>
+                        <Button size="lg" className="w-full sm:w-auto bg-brand-700 hover:bg-brand-800 text-white shadow-md shadow-brand-500/20" onClick={() => setHasStarted(true)}>
                             Start practice →
                         </Button>
                     </div>
@@ -177,6 +182,7 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
     const submitMutation = useMutation({
         mutationFn: submitQuiz,
         onSuccess: (result) => {
+            // Because the backend now returns { id: ... } instantly, this redirect is instant!
             navigate(`/quizzes/results/${result.id}`)
         },
         onError: (err: any) => {
@@ -214,7 +220,6 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
 
     function handleSubmit() {
         setSubmitError(null)
-
         const payload: QuizSubmitRequest = {
             course_id: courseId,
             answers: questions.map((q) => ({
@@ -222,94 +227,112 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
                 choice_id: answers[String(q.id)] ?? null,
             })),
         }
-
         submitMutation.mutate(payload)
     }
 
     return (
         <AppShell>
-            <div className="max-w-2xl mx-auto space-y-6">
-                <div>
-                    <div className="flex items-center justify-between text-xs text-on-surface-muted mb-2">
-                        <span>{answeredCount} of {totalQuestions} answered</span>
-                        <span>{submitMutation.isPending ? "Submitting…" : "In progress"}</span>
+            <div className="max-w-4xl mx-auto pb-32">
+
+                {/* Sticky Progress Header */}
+                <div className="sticky top-[60px] lg:top-[72px] z-20 bg-white/95 backdrop-blur-md border border-gray-200 py-3 px-4 mb-8 -mx-4 sm:mx-0 sm:rounded-xl sm:shadow-sm flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <Link to={`/courses`} className="text-gray-400 hover:text-gray-700 hidden sm:block">
+                            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                        </Link>
+                        <div>
+                            <p className="text-[10px] font-bold text-brand-600 uppercase tracking-wider">Practice Exam</p>
+                            <p className="text-sm font-bold text-gray-900">{answeredCount} of {totalQuestions} answered</p>
+                        </div>
                     </div>
-                    <div className="h-1.5 rounded-full bg-surface-subtle overflow-hidden">
+
+                    {/* Progress Bar */}
+                    <div className="w-32 sm:w-48 h-2.5 bg-gray-100 rounded-full overflow-hidden">
                         <div
-                            className="h-full bg-brand-600 transition-all"
+                            className="h-full bg-brand-500 transition-all duration-300"
                             style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
                         />
                     </div>
                 </div>
 
-                {questions.map((q, i) => {
-                    const choices = getChoices(q)
-                    const selectedChoiceId = answers[String(q.id)]
+                {/* Questions List */}
+                <div className="space-y-6">
+                    {questions.map((q, i) => {
+                        const choices = getChoices(q)
+                        const selectedChoiceId = answers[String(q.id)]
 
-                    return (
-                        <div key={String(q.id)} className="rounded-xl border border-border bg-white p-5">
-                            <div className="flex items-start gap-3">
-                                <span className="text-sm font-medium text-on-surface-muted">{i + 1}.</span>
-                                <p className="text-base text-on-surface font-medium">{getQuestionText(q)}</p>
-                            </div>
-                            <div className="mt-4 space-y-2">
-                                {choices.map((choice) => {
-                                    const isSelected = selectedChoiceId === choice.id
+                        return (
+                            <div key={String(q.id)} className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
+                                <div className="flex gap-4 mb-6">
+                                    <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-brand-50 text-brand-700 font-bold text-sm border border-brand-100">
+                                        {i + 1}
+                                    </span>
+                                    <h3 className="text-lg font-semibold text-gray-900 leading-relaxed mt-1">
+                                        {getQuestionText(q)}
+                                    </h3>
+                                </div>
 
-                                    return (
-                                        <button
-                                            key={choice.id}
-                                            type="button"
-                                            disabled={submitMutation.isPending}
-                                            onClick={() =>
-                                                setAnswers((prev) => ({ ...prev, [String(q.id)]: choice.id }))
-                                            }
-                                            className={`w-full rounded-lg border p-3 text-left text-sm transition-all ${isSelected
-                                                ? "border-brand-600 bg-brand-50"
-                                                : "border-border bg-white hover:border-brand-300"
-                                                }`}
-                                        >
-                                            <div className="flex items-center gap-2">
-                                                <div
-                                                    className={`h-4 w-4 shrink-0 rounded-full border-2 flex items-center justify-center ${isSelected ? "border-brand-600 bg-brand-600" : "border-border"
-                                                        }`}
-                                                >
-                                                    {isSelected && (
-                                                        <div className="h-1.5 w-1.5 rounded-full bg-white" />
-                                                    )}
+                                <div className="space-y-3 pl-0 sm:pl-12">
+                                    {choices.map((choice) => {
+                                        const isSelected = selectedChoiceId === choice.id
+                                        return (
+                                            <label
+                                                key={choice.id}
+                                                className={`flex items-start p-4 rounded-xl border-2 cursor-pointer transition-all duration-200 ${isSelected
+                                                    ? "border-brand-500 bg-brand-50/50 shadow-sm"
+                                                    : "border-gray-200 bg-white hover:border-brand-300 hover:bg-gray-50"
+                                                    }`}
+                                            >
+                                                <div className="flex items-center h-5 mt-0.5">
+                                                    <input
+                                                        type="radio"
+                                                        name={`question-${q.id}`}
+                                                        checked={isSelected}
+                                                        onChange={() => setAnswers((prev) => ({ ...prev, [String(q.id)]: choice.id }))}
+                                                        className="w-5 h-5 text-brand-600 border-gray-300 focus:ring-brand-500"
+                                                    />
                                                 </div>
-                                                <span className="text-on-surface">{choice.text}</span>
-                                            </div>
-                                        </button>
-                                    )
-                                })}
+                                                <span className={`ml-3 text-sm sm:text-base ${isSelected ? "text-brand-900 font-medium" : "text-gray-700"}`}>
+                                                    {choice.text}
+                                                </span>
+                                            </label>
+                                        )
+                                    })}
+                                </div>
                             </div>
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+                </div>
 
                 {submitError && (
-                    <div className="rounded-lg border border-red-200 bg-red-50 p-4">
-                        <p className="text-sm text-red-800">{submitError}</p>
+                    <div className="mt-6 rounded-xl border border-red-200 bg-red-50 p-4">
+                        <p className="text-sm font-medium text-red-800">{submitError}</p>
                     </div>
                 )}
 
-                <div className="rounded-xl border border-brand-200 bg-brand-50 p-5 flex items-center justify-between">
-                    <div>
-                        <p className="text-sm font-medium text-brand-900">
-                            {answeredCount === totalQuestions
-                                ? "All questions answered"
-                                : `${totalQuestions - answeredCount} remaining`}
-                        </p>
+                {/* Sticky Submit Bar */}
+                <div className="fixed bottom-0 inset-x-0 z-30 bg-white border-t border-gray-200 p-4 lg:pl-60 print:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
+                    <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div className="text-center sm:text-left">
+                            <p className="text-sm font-bold text-gray-900">
+                                {answeredCount === totalQuestions ? "All questions answered!" : `${totalQuestions - answeredCount} questions remaining`}
+                            </p>
+                            <p className="text-xs text-gray-500 hidden sm:block">
+                                {answeredCount === totalQuestions ? "Click submit to see your score and rationales." : "You can still change your answers."}
+                            </p>
+                        </div>
+
+                        <button
+                            onClick={handleSubmit}
+                            disabled={!canSubmit}
+                            className={`w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-sm shadow-sm transition-all ${canSubmit
+                                ? "bg-brand-700 hover:bg-brand-800 text-white shadow-brand-500/20 shadow-lg"
+                                : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                                }`}
+                        >
+                            {submitMutation.isPending ? "Submitting…" : "Submit quiz →"}
+                        </button>
                     </div>
-                    <Button
-                        size="lg"
-                        disabled={!canSubmit}
-                        loading={submitMutation.isPending}
-                        onClick={handleSubmit}
-                    >
-                        {submitMutation.isPending ? "Submitting…" : "Submit quiz →"}
-                    </Button>
                 </div>
             </div>
         </AppShell>
