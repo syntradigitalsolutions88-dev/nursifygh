@@ -133,7 +133,7 @@ export default function CarePlanTranscriptionPage() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {plan.goals.map((goal: any, i: number) => (
+                                {plan.goals.map((goal: any) => (
                                     <tr key={goal.id} className="align-top">
                                         <td className="border border-gray-300 px-3 py-2 text-gray-700">{goal.specific}</td>
                                         <td className="border border-gray-300 px-3 py-2 text-gray-500">
