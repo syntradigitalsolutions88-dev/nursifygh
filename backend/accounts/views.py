@@ -657,6 +657,8 @@ def ai_chat_proxy(request):
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
+@api_view(["POST"])
+@permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = request.data.get("scenario", "").strip()
     if len(scenario) < 20:
@@ -670,28 +672,40 @@ def ai_ncp_autofill(request):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": "llama-3.3-70b-versatile", # FIX: Using the newest, smartest Groq model
+                "model": "openai/gpt-oss-120b", # Using the exact model that works in your Chat Widget
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
                 ],
                 "temperature": 0.1,
+                "max_tokens": 4096, # Give it enough room to generate the complex JSON
                 "response_format": {"type": "json_object"},
             },
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-            timeout=60,
+            timeout=90, # Increased timeout for heavy JSON generation
         )
+        
         if r.status_code != 200:
-            # FIX: This will print the exact reason Groq rejected it to the Render logs
+            # If Groq rejects it, we will now send the exact error text to the frontend
             logger.error("Groq API error: %s - %s", r.status_code, r.text)
-            return Response({"error": "AI service error."}, status=500)
+            return Response({"error": f"Groq Error: {r.text}"}, status=500)
 
         content = r.json()["choices"][0]["message"]["content"]
-        content = content.strip().strip("`").replace("json\n", "", 1).strip()
+        
+        # Bulletproof JSON cleaning (in case the AI adds markdown blocks)
+        content = content.strip()
+        if content.startswith("```json"):
+            content = content[7:]
+        if content.startswith("```"):
+            content = content[3:]
+        if content.endswith("```"):
+            content = content[:-3]
+        content = content.strip()
+
         return Response(json.loads(content))
     except json.JSONDecodeError:
         logger.error("Groq returned invalid JSON: %s", content)
         return Response({"error": "AI returned invalid data. Please try again."}, status=500)
     except Exception as exc:
         logger.error("Groq exception: %s", exc)
-        return Response({"error": "AI is currently unavailable."}, status=500)
+        return Response({"error": f"AI is currently unavailable: {str(exc)}"}, status=500)
