@@ -4,6 +4,14 @@ import { getCarePlan } from "../api/careplans"
 import AppShell from "../components/shell/AppShell"
 import Button from "../components/ui/Button"
 
+function formatGoalSummary(goal: any): string {
+    const base = (goal?.specific || "").trim()
+    const extras: string[] = []
+    if (goal?.measurable) extras.push(`Target: ${goal.measurable}`)
+    if (goal?.time_bound) extras.push(`Timeframe: ${goal.time_bound}`)
+    return extras.length > 0 ? `${base} (${extras.join("; ")})` : base
+}
+
 export default function CarePlanTranscriptionPage() {
     const { planId } = useParams<{ planId: string }>()
     const { data: plan, isLoading, error } = useQuery({
@@ -14,6 +22,10 @@ export default function CarePlanTranscriptionPage() {
 
     if (isLoading) return <AppShell><div className="text-center py-12 text-gray-500">Loading document...</div></AppShell>
     if (error || !plan) return <AppShell><div className="text-center py-12 text-red-600">Care plan not found</div></AppShell>
+
+    const diag = plan.primary_diagnosis as any
+    const relatedFactors = diag?.related_factors || diag?.related_to
+    const definingCharacteristics = diag?.defining_characteristics || diag?.as_evidenced_by
 
     return (
         <AppShell>
@@ -84,11 +96,11 @@ export default function CarePlanTranscriptionPage() {
                                     {/* Col 1 */}
                                     <td className="border-r border-gray-300 px-4 py-4 leading-relaxed text-gray-700 break-words">
                                         <p className="font-bold text-gray-900">{plan.primary_diagnosis.label}</p>
-                                        {plan.primary_diagnosis.related_factors && (
-                                            <p className="mt-2 text-sm"><span className="font-semibold text-gray-500">related to</span> {plan.primary_diagnosis.related_factors}</p>
+                                        {relatedFactors && (
+                                            <p className="mt-2 text-sm"><span className="font-semibold text-gray-500">related to</span> {relatedFactors}</p>
                                         )}
-                                        {plan.primary_diagnosis.defining_characteristics && (
-                                            <p className="mt-2 text-sm"><span className="font-semibold text-gray-500">as evidenced by</span> {plan.primary_diagnosis.defining_characteristics}</p>
+                                        {definingCharacteristics && (
+                                            <p className="mt-2 text-sm"><span className="font-semibold text-gray-500">as evidenced by</span> {definingCharacteristics}</p>
                                         )}
                                     </td>
 
@@ -96,7 +108,7 @@ export default function CarePlanTranscriptionPage() {
                                     <td className="border-r border-gray-300 px-4 py-4 leading-relaxed text-gray-700 break-words">
                                         <ol className="space-y-3 list-decimal list-outside ml-4 marker:text-gray-400 marker:font-bold">
                                             {plan.goals.map((goal: any) => (
-                                                <li key={goal.id} className="pl-2">{goal.specific}</li>
+                                                <li key={goal.id} className="pl-2">{formatGoalSummary(goal)}</li>
                                             ))}
                                         </ol>
                                     </td>
@@ -127,7 +139,7 @@ export default function CarePlanTranscriptionPage() {
                         <table className="w-full text-xs border border-gray-300">
                             <thead>
                                 <tr className="bg-gray-50 print:bg-transparent">
-                                    <th className="border border-gray-300 px-3 py-2 text-left w-1/4 font-semibold text-gray-700">Outcome</th>
+                                    <th className="border border-gray-300 px-3 py-2 text-left w-1/3 font-semibold text-gray-700">Outcome</th>
                                     <th className="border border-gray-300 px-3 py-2 text-left w-1/4 font-semibold text-gray-700">Status</th>
                                     <th className="border border-gray-300 px-3 py-2 text-left font-semibold text-gray-700">Evidence / Data</th>
                                 </tr>
@@ -135,11 +147,11 @@ export default function CarePlanTranscriptionPage() {
                             <tbody>
                                 {plan.goals.map((goal: any) => (
                                     <tr key={goal.id} className="align-top">
-                                        <td className="border border-gray-300 px-3 py-2 text-gray-700">{goal.specific}</td>
-                                        <td className="border border-gray-300 px-3 py-2 text-gray-500">
+                                        <td className="border border-gray-300 px-3 py-3 text-gray-700">{formatGoalSummary(goal)}</td>
+                                        <td className="border border-gray-300 px-3 py-3 text-gray-500">
                                             ☐ Met  ☐ Partially met  ☐ Not met
                                         </td>
-                                        <td className="border border-gray-300 px-3 py-2 text-gray-400 italic min-h-[40px]">&nbsp;</td>
+                                        <td className="border border-gray-300 px-3 py-4 text-gray-400 italic min-h-[56px]">&nbsp;</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -178,17 +190,21 @@ export default function CarePlanTranscriptionPage() {
 
 function buildPlainText(plan: any): string {
     const lines: string[] = []
+    const diag = plan.primary_diagnosis as any
+    const relatedFactors = diag?.related_factors || diag?.related_to
+    const definingCharacteristics = diag?.defining_characteristics || diag?.as_evidenced_by
+
     lines.push("NURSIFYGH STUDY TOOL")
     lines.push("NURSING CARE PLAN (N&MC-Oriented Format)")
     lines.push("=".repeat(60))
     lines.push("")
     lines.push("NURSING DIAGNOSIS:")
     lines.push(plan.primary_diagnosis.label)
-    if (plan.primary_diagnosis.related_to) lines.push(`related to ${plan.primary_diagnosis.related_to}`)
-    if (plan.primary_diagnosis.as_evidenced_by) lines.push(`as evidenced by ${plan.primary_diagnosis.as_evidenced_by}`)
+    if (relatedFactors) lines.push(`related to ${relatedFactors}`)
+    if (definingCharacteristics) lines.push(`as evidenced by ${definingCharacteristics}`)
     lines.push("")
     lines.push("OBJECTIVE / OUTCOME CRITERIA:")
-    plan.goals.forEach((g: any, i: number) => lines.push(`${i + 1}. ${g.specific}`))
+    plan.goals.forEach((g: any, i: number) => lines.push(`${i + 1}. ${formatGoalSummary(g)}`))
     lines.push("")
     lines.push("NURSING ORDERS:")
     plan.interventions.forEach((iv: any, i: number) => {
@@ -198,7 +214,7 @@ function buildPlainText(plan: any): string {
     lines.push("")
     lines.push("EVALUATION (To be completed):")
     plan.goals.forEach((g: any, i: number) => {
-        lines.push(`${i + 1}. ${g.specific}`)
+        lines.push(`${i + 1}. ${formatGoalSummary(g)}`)
         lines.push(`   Status: [ ] Met  [ ] Partially met  [ ] Not met`)
         lines.push(`   Evidence: `)
     })

@@ -18,11 +18,24 @@ import type {
     CreateSmartGoalRequest,
 } from "../types/api"
 
+type EvaluationStatus = "MET" | "PARTIALLY_MET" | "NOT_MET"
+
+interface LocalEvaluationItem {
+    id: string
+    outcome: string
+    status: EvaluationStatus
+    evidence: string
+}
+
 export default function CarePlanDetailPage() {
     const { planId } = useParams<{ planId: string }>()
     const queryClient = useQueryClient()
     const [showGoalForm, setShowGoalForm] = useState(false)
     const [showInterventionForm, setShowInterventionForm] = useState(false)
+    const [evaluations, setEvaluations] = useState<LocalEvaluationItem[]>([])
+    const [evalOutcome, setEvalOutcome] = useState("")
+    const [evalStatus, setEvalStatus] = useState<EvaluationStatus>("PARTIALLY_MET")
+    const [evalEvidence, setEvalEvidence] = useState("")
 
     const { data: plan, isLoading, error } = useQuery({
         queryKey: ["care-plan", planId],
@@ -80,7 +93,6 @@ export default function CarePlanDetailPage() {
         )
     }
 
-    // FIXED: Strict completion validation
     const isScenarioValid = !!(plan.patient_scenario && plan.patient_scenario.trim().length > 20)
     const isGoalsValid = plan.goals.some((g: any) =>
         g.specific?.trim() && g.measurable?.trim() && g.time_bound?.trim()
@@ -92,6 +104,23 @@ export default function CarePlanDetailPage() {
     const completion = [isScenarioValid, isGoalsValid, isInterventionsValid]
     const completedSteps = completion.filter(Boolean).length
     const isComplete = completedSteps === 3
+
+    function handleAddEvaluation(e: React.FormEvent) {
+        e.preventDefault()
+        if (!evalOutcome.trim() || !evalEvidence.trim()) return
+        setEvaluations((prev) => [
+            ...prev,
+            {
+                id: `${Date.now()}-${prev.length}`,
+                outcome: evalOutcome.trim(),
+                status: evalStatus,
+                evidence: evalEvidence.trim(),
+            },
+        ])
+        setEvalOutcome("")
+        setEvalEvidence("")
+        setEvalStatus("PARTIALLY_MET")
+    }
 
     return (
         <AppShell>
@@ -170,10 +199,10 @@ export default function CarePlanDetailPage() {
                             "{plan.primary_diagnosis.definition}"
                         </p>
                         <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Labeled label="Defining Characteristics">
+                            <Labeled label="Defining Characteristics (As Evidenced By)">
                                 {plan.primary_diagnosis.defining_characteristics}
                             </Labeled>
-                            <Labeled label="Related Factors">
+                            <Labeled label="Related Factors (Related To)">
                                 {plan.primary_diagnosis.related_factors}
                             </Labeled>
                         </div>
@@ -274,13 +303,57 @@ export default function CarePlanDetailPage() {
                     )}
                 </Section>
 
-                {/* FIXED: Section 05 Evaluation */}
+                {/* Section 05 Evaluation */}
                 <Section number="05" title="Evaluation">
-                    <div className="rounded-xl border border-border bg-white p-5">
-                        <p className="text-sm text-on-surface-muted italic">
-                            Evaluation is completed after implementing the care plan in clinical practice.
-                            Transcribe your findings onto the printed document.
+                    <div className="rounded-xl border border-border bg-white p-5 space-y-4">
+                        <p className="text-sm text-on-surface-muted">
+                            Record reassessment findings against each outcome criterion after implementing care, or use Transcription View to prepare your printed sheet.
                         </p>
+
+                        {evaluations.length > 0 && (
+                            <div className="space-y-2">
+                                {evaluations.map((item) => (
+                                    <div key={item.id} className="rounded-lg border border-border bg-surface-subtle/40 p-3">
+                                        <div className="flex items-center justify-between gap-2 mb-1">
+                                            <span className="text-xs font-bold text-on-surface">{item.outcome}</span>
+                                            <span className="rounded bg-brand-100 text-brand-800 px-2 py-0.5 text-[10px] font-bold uppercase">
+                                                {item.status.replace("_", " ")}
+                                            </span>
+                                        </div>
+                                        <p className="text-xs text-on-surface-muted">{item.evidence}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        <form onSubmit={handleAddEvaluation} className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-t border-border">
+                            <input
+                                type="text"
+                                value={evalOutcome}
+                                onChange={(e) => setEvalOutcome(e.target.value)}
+                                placeholder="Outcome criterion evaluated"
+                                className="rounded-lg border border-border px-3 py-2 text-xs text-on-surface"
+                            />
+                            <select
+                                value={evalStatus}
+                                onChange={(e) => setEvalStatus(e.target.value as EvaluationStatus)}
+                                className="rounded-lg border border-border px-3 py-2 text-xs text-on-surface bg-white"
+                            >
+                                <option value="MET">Met</option>
+                                <option value="PARTIALLY_MET">Partially Met</option>
+                                <option value="NOT_MET">Not Met</option>
+                            </select>
+                            <div className="flex gap-2">
+                                <input
+                                    type="text"
+                                    value={evalEvidence}
+                                    onChange={(e) => setEvalEvidence(e.target.value)}
+                                    placeholder="Clinical findings / evidence"
+                                    className="flex-1 rounded-lg border border-border px-3 py-2 text-xs text-on-surface"
+                                />
+                                <Button type="submit" size="sm" variant="secondary">Add</Button>
+                            </div>
+                        </form>
                     </div>
                 </Section>
 
@@ -357,9 +430,16 @@ function GoalCard({ index, goal }: { index: number; goal: any }) {
                 <span className="shrink-0 inline-flex items-center justify-center h-6 w-6 rounded-full bg-brand-100 text-brand-800 text-xs font-bold">
                     {index}
                 </span>
-                <div>
-                    <p className="text-[10px] font-bold text-brand-700 uppercase tracking-wider mb-1">SMART Goal</p>
-                    <p className="text-sm text-on-surface leading-relaxed">{goal.specific}</p>
+                <div className="space-y-1.5">
+                    <p className="text-[10px] font-bold text-brand-700 uppercase tracking-wider">SMART Goal</p>
+                    <p className="text-sm font-medium text-on-surface leading-relaxed">{goal.specific}</p>
+                    {(goal.measurable || goal.time_bound) && (
+                        <p className="text-xs text-on-surface-muted">
+                            {goal.measurable && <span>Target: {goal.measurable}</span>}
+                            {goal.measurable && goal.time_bound && <span> · </span>}
+                            {goal.time_bound && <span>Timeframe: {goal.time_bound}</span>}
+                        </p>
+                    )}
                 </div>
             </div>
         </div>
