@@ -670,7 +670,7 @@ def ai_ncp_autofill(request):
         logger.error("GROQ_API_KEY is missing in settings")
         return Response({"error": "AI is not configured."}, status=500)
 
-    models_to_try = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+    models_to_try = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
     last_error = "AI is currently unavailable."
 
     for model_name in models_to_try:
