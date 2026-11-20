@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react"
+import { Link } from "react-router-dom"
 import { AxiosError } from "axios"
 
 import { useAuth } from "../contexts/AuthContext"
@@ -10,38 +11,44 @@ import Button from "../components/ui/Button"
 import Input from "../components/ui/Input"
 import api from "../api/client"
 
+function formatDateGB(value?: string | null): string {
+    if (!value) return "—"
+    const parsed = new Date(value)
+    return Number.isNaN(parsed.getTime()) ? "—" : parsed.toLocaleDateString("en-GB")
+}
+
 export default function ProfilePage() {
     const { user } = useAuth()
     if (!user) return null
 
     return (
         <AppShell>
-            <div className="max-w-2xl space-y-6">
+            <div className="max-w-2xl space-y-6 pb-20 sm:pb-6">
                 <div>
                     <h1 className="text-h1">Profile</h1>
                     <p className="mt-1 text-body-sm text-on-surface-muted">
-                        Your account and subscription details.
+                        Your account, training details, and subscription status.
                     </p>
                 </div>
 
                 {/* Account info card */}
-                <div className="rounded-xl border border-border bg-white p-6">
+                <div className="rounded-xl border border-border bg-white p-5 sm:p-6">
                     <div className="flex items-center gap-4">
                         <Avatar name={user.full_name} size="lg" />
-                        <div className="min-w-0">
+                        <div className="min-w-0 flex-1">
                             <h2 className="text-h3 truncate">{user.full_name}</h2>
                             <p className="text-body-sm text-on-surface-muted truncate">{user.email}</p>
                         </div>
                     </div>
 
-                    <dl className="mt-6 grid gap-4 sm:grid-cols-2 text-body-sm">
+                    <dl className="mt-6 grid gap-4 sm:grid-cols-2 text-body-sm border-t border-border pt-5">
                         <div>
                             <dt className="text-caption">Level</dt>
-                            <dd className="mt-1 font-medium text-on-surface">{user.level_display}</dd>
+                            <dd className="mt-1 font-medium text-on-surface">{user.level_display || "—"}</dd>
                         </div>
                         <div>
                             <dt className="text-caption">Program</dt>
-                            <dd className="mt-1 font-medium text-on-surface">{user.program_display}</dd>
+                            <dd className="mt-1 font-medium text-on-surface">{user.program_display || "—"}</dd>
                         </div>
                         <div>
                             <dt className="text-caption">Institution</dt>
@@ -55,24 +62,24 @@ export default function ProfilePage() {
                                 {user.phone_number || "—"}
                             </dd>
                         </div>
-                        <div>
+                        <div className="sm:col-span-2">
                             <dt className="text-caption">Member since</dt>
                             <dd className="mt-1 font-medium text-on-surface">
-                                {new Date(user.date_joined).toLocaleDateString()}
+                                {formatDateGB(user.date_joined)}
                             </dd>
                         </div>
                     </dl>
                 </div>
 
                 {/* Subscription card */}
-                <div className="rounded-xl border border-border bg-white p-6">
+                <div className="rounded-xl border border-border bg-white p-5 sm:p-6">
                     <div className="flex items-start justify-between gap-3">
                         <div>
                             <h2 className="text-h4">Subscription</h2>
                             <p className="mt-1 text-body-sm text-on-surface-muted">
                                 {user.has_active_subscription
-                                    ? "Your semester pass is active."
-                                    : "Subscribe for full access to all courses and care plans."}
+                                    ? "Your semester pass is active for study tools and care plans."
+                                    : "Activate a pass for full access to question banks, care plans, and study tools."}
                             </p>
                         </div>
                         {user.has_active_subscription ? (
@@ -82,14 +89,23 @@ export default function ProfilePage() {
                         )}
                     </div>
 
-                    {user.has_active_subscription && user.subscription_expires_at && (
+                    {user.has_active_subscription && user.subscription_expires_at ? (
                         <p className="mt-4 text-body-sm text-on-surface">
                             Expires{" "}
                             <span className="font-medium">
-                                {new Date(user.subscription_expires_at).toLocaleDateString()}
+                                {formatDateGB(user.subscription_expires_at)}
                             </span>
                         </p>
-                    )}
+                    ) : !user.has_active_subscription ? (
+                        <div className="mt-4">
+                            <Link
+                                to="/subscription"
+                                className="inline-flex items-center text-body-sm font-medium text-brand-700 hover:underline"
+                            >
+                                View subscription options →
+                            </Link>
+                        </div>
+                    ) : null}
                 </div>
 
                 {/* Change password card */}
@@ -112,8 +128,18 @@ function ChangePasswordCard() {
         setError(null)
         setSuccess(false)
 
+        if (next.length < 8) {
+            setError("New password must be at least 8 characters.")
+            return
+        }
+
         if (next !== confirm) {
             setError("New passwords do not match.")
+            return
+        }
+
+        if (current && next === current) {
+            setError("Choose a new password different from your current password.")
             return
         }
 
@@ -130,7 +156,6 @@ function ChangePasswordCard() {
         } catch (err) {
             if (err instanceof AxiosError && err.response?.data) {
                 const data = err.response.data as Record<string, unknown>
-                // DRF returns either {detail: ...} or {field: [errors]}
                 if (typeof data.detail === "string") {
                     setError(data.detail)
                 } else if (Array.isArray(data.current_password)) {
@@ -149,7 +174,7 @@ function ChangePasswordCard() {
     }
 
     return (
-        <div className="rounded-xl border border-border bg-white p-6">
+        <div className="rounded-xl border border-border bg-white p-5 sm:p-6">
             <h2 className="text-h4">Change password</h2>
             <p className="mt-1 text-body-sm text-on-surface-muted">
                 Enter your current password and choose a new one.
