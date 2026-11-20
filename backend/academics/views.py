@@ -33,7 +33,6 @@ logger = logging.getLogger(__name__)
 
 # ─── Course listing / detail ──────────────────────────────────────────────────
 
-
 class CourseListView(generics.ListAPIView):
     serializer_class = CourseListSerializer
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
@@ -41,7 +40,6 @@ class CourseListView(generics.ListAPIView):
 
     def get_queryset(self):
         user = self.request.user
-        
         if user.is_superuser:
             qs = Course.objects.filter(is_published=True)
         else:
@@ -74,7 +72,6 @@ class CourseDetailView(generics.RetrieveAPIView):
 
     def get_queryset(self):
         user = self.request.user
-        
         if user.is_superuser:
             qs = Course.objects.filter(is_published=True)
         else:
@@ -91,7 +88,6 @@ class CourseDetailView(generics.RetrieveAPIView):
 
 
 # ─── Quiz submit / history ────────────────────────────────────────────────────
-
 
 class QuizSubmitView(APIView):
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
@@ -110,12 +106,9 @@ class QuizSubmitView(APIView):
         except QuizGradingError as exc:
             return Response({"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST)
 
-        attempt = (
-            QuizAttempt.objects.select_related("course")
-            .prefetch_related("answers__question__choices", "answers__selected_choice")
-            .get(pk=attempt.pk)
-        )
-        return Response(QuizAttemptResultSerializer(attempt).data, status=status.HTTP_201_CREATED)
+        # FIX: Return ONLY the ID so the frontend redirects instantly. 
+        # The Results Page will fetch the detailed rationales on its own.
+        return Response({"id": str(attempt.id)}, status=status.HTTP_201_CREATED)
 
 
 class QuizHistoryView(generics.ListAPIView):
@@ -133,13 +126,11 @@ class QuizHistoryView(generics.ListAPIView):
 
 # ─── Mock exam ────────────────────────────────────────────────────────────────
 
-
 class MockExamView(APIView):
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def get(self, request):
         user = request.user
-        
         if user.is_superuser:
             courses = Course.objects.filter(is_published=True)
         else:
@@ -174,9 +165,7 @@ class MockExamSubmitView(APIView):
 
         if request.user.is_superuser:
             questions = Question.objects.filter(
-                id__in=question_ids,
-                is_published=True,
-                review_status="APPROVED",
+                id__in=question_ids, is_published=True, review_status="APPROVED"
             )
         else:
             questions = Question.objects.filter(
@@ -303,7 +292,6 @@ class PastPaperExtractView(APIView):
 
 class PastPaperSaveView(APIView):
     """Save extracted questions to a specific course, pending review."""
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def post(self, request):
@@ -376,10 +364,8 @@ class MySubmissionsView(APIView):
 
 # ─── Weak Areas ──────────────────────────────────────────────────────────────
 
-
 class WeakAreasView(APIView):
     """Return the student's weakest courses based on quiz accuracy."""
-
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def get(self, request):
@@ -425,8 +411,6 @@ class WeakAreasView(APIView):
 
 # ─── Leaderboard ─────────────────────────────────────────────────────────────
 
-# ─── Leaderboard ─────────────────────────────────────────────────────────────
-
 class LeaderboardView(APIView):
     """Return the top 20 students in the user's program and level."""
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
@@ -434,7 +418,6 @@ class LeaderboardView(APIView):
     def get(self, request):
         User = get_user_model()
 
-        # Base queryset: students in the same program/level with at least 3 completed quizzes
         base_qs = (
             User.objects.filter(
                 program=request.user.program,
@@ -446,31 +429,24 @@ class LeaderboardView(APIView):
                 average_score=Avg('quiz_attempts__score_percentage')
             )
             .filter(total_quizzes__gte=3)
-            .order_by('-average_score', '-total_quizzes') # Tiebreaker: more quizzes wins
+            .order_by('-average_score', '-total_quizzes')
         )
 
-        # Get top 20 for the leaderboard display
         leaderboard_users = base_qs[:20]
-
-        # Calculate current user's rank
         user_rank = None
         user_score = 0.0
         
-        # Get all user IDs in order to find the rank index
         all_ranked_ids = list(base_qs.values_list('id', flat=True))
         
         if request.user.id in all_ranked_ids:
             user_rank = all_ranked_ids.index(request.user.id) + 1
-            # Get the user's average score from the annotated queryset
             current_user_entry = next((u for u in base_qs if u.id == request.user.id), None)
             if current_user_entry:
                 user_score = round(current_user_entry.average_score, 1)
 
-        # Format the top 20 list
         data = [
             {
                 "rank": index + 1,
-                # FIX: Changed u.first_name/u.last_name to u.full_name
                 "name": u.full_name, 
                 "average_score": round(u.average_score, 1),
                 "total_quizzes": u.total_quizzes,

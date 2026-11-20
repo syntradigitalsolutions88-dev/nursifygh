@@ -25,6 +25,13 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         )
         read_only_fields = ("id",)
 
+    # FIX: Check if the email already exists before trying to save to the database.
+    # This prevents the 500 IntegrityError crash and returns a clean 400 error.
+    def validate_email(self, value):
+        if User.objects.filter(email__iexact=value).exists():
+            raise serializers.ValidationError("A user with this email already exists. Please log in instead.")
+        return value
+
     def validate(self, attrs: dict) -> dict:
         if attrs["password"] != attrs.pop("password_confirm"):
             raise serializers.ValidationError({"password_confirm": "Passwords do not match."})

@@ -11,8 +11,11 @@ import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Default DEBUG to True locally, but False on Render/production
+IS_LOCAL = os.environ.get("RENDER") is None
+
 env = environ.Env(
-    DJANGO_DEBUG=(bool, False),
+    DJANGO_DEBUG=(bool, IS_LOCAL),
     DJANGO_ALLOWED_HOSTS=(list, ["127.0.0.1", "localhost", "nursifygh-api.onrender.com"]),
     DJANGO_CSRF_TRUSTED_ORIGINS=(list, [
         "http://127.0.0.1:5173",
@@ -43,24 +46,18 @@ env = environ.Env(
 )
 
 # Load .env ONLY in development
-if os.environ.get("RENDER") is None:
+if IS_LOCAL:
     ENV_FILE = BASE_DIR / ".env"
     if ENV_FILE.exists():
         env.read_env(str(ENV_FILE))
 
 # Core
-SECRET_KEY = env("DJANGO_SECRET_KEY")
-DEBUG = env("DJANGO_DEBUG")  # Automatically false in production
-ALLOWED_HOSTS = ["nursifygh-api.onrender.com", "127.0.0.1", "localhost"]
+SECRET_KEY = env("DJANGO_SECRET_KEY", default="dev-secret-key-do-not-use-in-prod")
+DEBUG = env("DJANGO_DEBUG")
+ALLOWED_HOSTS = env("DJANGO_ALLOWED_HOSTS")
 
 # FIX: Added wildcard to CSRF trusted origins so Vercel preview links work
-CSRF_TRUSTED_ORIGINS = [
-    "https://nursifygh.vercel.app",
-    "https://nursifygh-frontend.vercel.app",
-    "http://127.0.0.1:5173",
-    "http://localhost:5173",
-    "https://*.vercel.app",
-]
+CSRF_TRUSTED_ORIGINS = env("DJANGO_CSRF_TRUSTED_ORIGINS")
 
 # Applications
 DJANGO_APPS = [
@@ -124,7 +121,8 @@ ASGI_APPLICATION = "nursify_core.asgi.application"
 
 # Database
 DATABASES = {"default": env.db("DATABASE_URL")}
-DATABASES["default"]["CONN_MAX_AGE"] = 60
+# FIX: Turn off persistent connections to prevent Supabase connection pool exhaustion
+DATABASES["default"]["CONN_MAX_AGE"] = 0 
 
 # Auth
 AUTH_USER_MODEL = "accounts.User"
@@ -175,7 +173,6 @@ CORS_ALLOWED_ORIGINS = [
     "https://nursifygh-frontend.vercel.app",
 ]
 
-# FIX: Removed the duplicate regex block. This one covers all Vercel URLs.
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
     r"^http://127\.0\.0\.1:\d+$",

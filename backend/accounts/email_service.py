@@ -54,7 +54,8 @@ def send_email(to: str, subject: str, html: str, text: str | None = None) -> boo
         logger.info("Email sent to %s via Resend (from=%s, id=%s)", to, sender_email, email.get("id"))
         return True
     except Exception as exc:
-        logger.exception("Failed to send email via Resend to %s (from=%s): %s", to, sender_email, exc)
+        # FIX: Indentation corrected here. Using logger.error to prevent massive tracebacks.
+        logger.error("Failed to send email via Resend to %s (from=%s): %s", to, sender_email, exc)
         return False
 
 
