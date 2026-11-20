@@ -657,8 +657,6 @@ def ai_chat_proxy(request):
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
-@api_view(["POST"])
-@permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = request.data.get("scenario", "").strip()
     if len(scenario) < 20:
@@ -668,31 +666,30 @@ def ai_ncp_autofill(request):
     if not api_key:
         return Response({"error": "AI is not configured."}, status=500)
 
+    content = ""
     try:
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": "openai/gpt-oss-120b", # Using the exact model that works in your Chat Widget
+                "model": "openai/gpt-oss-120b",
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
                 ],
                 "temperature": 0.1,
-                "max_tokens": 4096, # Give it enough room to generate the complex JSON
+                "max_tokens": 4096,
                 "response_format": {"type": "json_object"},
             },
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-            timeout=90, # Increased timeout for heavy JSON generation
+            timeout=90,
         )
         
         if r.status_code != 200:
-            # If Groq rejects it, we will now send the exact error text to the frontend
             logger.error("Groq API error: %s - %s", r.status_code, r.text)
             return Response({"error": f"Groq Error: {r.text}"}, status=500)
 
         content = r.json()["choices"][0]["message"]["content"]
         
-        # Bulletproof JSON cleaning (in case the AI adds markdown blocks)
         content = content.strip()
         if content.startswith("```json"):
             content = content[7:]
