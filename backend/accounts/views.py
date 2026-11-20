@@ -671,7 +671,7 @@ def ai_ncp_autofill(request):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": "llama-3.3-70b-versatile",
+                "model": "openai/gpt-oss-120b", # FIX: Changed to the model that works in your Chat Widget
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
