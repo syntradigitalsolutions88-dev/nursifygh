@@ -657,6 +657,8 @@ def ai_chat_proxy(request):
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
+@api_view(["POST"])
+@permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = request.data.get("scenario", "").strip()
     if len(scenario) < 20:
@@ -671,17 +673,18 @@ def ai_ncp_autofill(request):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": "openai/gpt-oss-120b", # FIX: Changed to the model that works in your Chat Widget
+                "model": "openai/gpt-oss-120b", 
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
                 ],
                 "temperature": 0.1,
-                "max_tokens": 2048,
-                "response_format": {"type": "json_object"},
+                "max_tokens": 4096, # INCREASED: Give it enough room to finish the complex JSON
+                # REMOVED: "response_format": {"type": "json_object"} 
+                # Groq's strict JSON validator fails on complex prompts. We will parse it manually.
             },
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-            timeout=60,
+            timeout=90, # INCREASED: Give it more time to generate
         )
         
         if r.status_code != 200:
@@ -690,6 +693,7 @@ def ai_ncp_autofill(request):
 
         content = r.json()["choices"][0]["message"]["content"]
         
+        # Bulletproof JSON cleaning (in case the AI adds markdown blocks)
         content = content.strip()
         if content.startswith("```json"):
             content = content[7:]
