@@ -657,8 +657,6 @@ def ai_chat_proxy(request):
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
-@api_view(["POST"])
-@permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = request.data.get("scenario", "").strip()
     if len(scenario) < 20:
@@ -673,7 +671,7 @@ def ai_ncp_autofill(request):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": "llama-3.3-70b-versatile", # FIX: The most reliable model for strict JSON
+                "model": "llama-3.3-70b-versatile",
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
