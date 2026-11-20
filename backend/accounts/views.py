@@ -657,8 +657,6 @@ def ai_chat_proxy(request):
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
-@api_view(["POST"])
-@permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = (request.data.get("scenario") or "").strip()
     if len(scenario) < 20:
