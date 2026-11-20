@@ -232,7 +232,7 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
 
     return (
         <AppShell>
-            <div className="max-w-4xl mx-auto pb-32">
+            <div className="max-w-4xl mx-auto pb-40">
 
                 {/* Sticky Progress Header */}
                 <div className="sticky top-[60px] lg:top-[72px] z-20 bg-white/95 backdrop-blur-md border border-gray-200 py-3 px-4 mb-8 -mx-4 sm:mx-0 sm:rounded-xl sm:shadow-sm flex items-center justify-between">
@@ -311,7 +311,7 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
                 )}
 
                 {/* Sticky Submit Bar */}
-                <div className="fixed bottom-0 inset-x-0 z-30 bg-white border-t border-gray-200 p-4 lg:pl-60 print:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
+                <div className="fixed bottom-16 lg:bottom-0 inset-x-0 z-30 bg-white border-t border-gray-200 p-4 lg:pl-60 print:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
                     <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
                         <div className="text-center sm:text-left">
                             <p className="text-sm font-bold text-gray-900">
