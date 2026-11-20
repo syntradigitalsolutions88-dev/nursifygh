@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-/* ---- Legacy component classes (plain CSS, no @layer wrapping) ---- */
+/* ---- Legacy component classes ---- */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -87,16 +87,14 @@ body {
   border: 1px solid #f3f4f6;
 }
 
-/* ---- PRINT STYLES (N&MC Format) ---- */
+/* ---- PRINT STYLES (FIXED A4 COMPRESSION) ---- */
 @media print {
-
-  /* Force A4 margins to prevent printers from cutting off edges */
   @page {
-    margin: 15mm;
+    margin: 12mm 12mm 15mm 12mm;
     size: A4 portrait;
   }
 
-  /* Hide navigation, sidebars, PWA banners, buttons, and chat widget */
+  /* Hide all UI chrome */
   aside,
   header,
   nav,
@@ -104,19 +102,17 @@ body {
   button.fixed,
   [role="navigation"],
   .fixed.bottom-4.left-4 {
-    /* Force hide floating install banners */
     display: none !important;
   }
 
-  /* Reset page margins */
   html,
   body {
     margin: 0 !important;
     padding: 0 !important;
     background: white !important;
+    font-size: 11pt !important;
   }
 
-  /* Ensure the main content takes up the full page without padding */
   main,
   main>div {
     margin: 0 !important;
@@ -126,7 +122,6 @@ body {
     overflow: visible !important;
   }
 
-  /* Strip shadows, borders, and background from the document canvas */
   .document-canvas {
     box-shadow: none !important;
     border: none !important;
@@ -134,15 +129,46 @@ body {
     padding: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
+    break-inside: avoid;
   }
 
-  /* Ensure tables don't break awkwardly across pages */
+  /* CRITICAL: Better table rendering to prevent cut-off text */
   table {
-    page-break-inside: auto;
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    page-break-inside: auto !important;
+    font-size: 10.5pt !important;
+  }
+
+  table td,
+  table th {
+    padding: 8pt 10pt !important;
+    vertical-align: top !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    line-height: 1.45 !important;
   }
 
   tr {
-    page-break-inside: avoid;
-    page-break-after: auto;
+    page-break-inside: avoid !important;
+    page-break-after: auto !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  .document-canvas>div {
+    break-after: avoid;
+  }
+
+  .bg-gray-50,
+  .bg-brand-50,
+  .bg-green-50,
+  .bg-red-50,
+  .bg-blue-50 {
+    background: transparent !important;
   }
 }

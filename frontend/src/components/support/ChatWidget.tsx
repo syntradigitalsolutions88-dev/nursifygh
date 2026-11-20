@@ -30,12 +30,10 @@ export default function ChatWidget() {
     const messagesEndRef = useRef<HTMLDivElement>(null)
     const inputRef = useRef<HTMLInputElement>(null)
 
-    // Auto-scroll to bottom
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
     }, [messages, isLoading])
 
-    // Initialize with greeting
     useEffect(() => {
         if (messages.length === 0) {
             setMessages([
@@ -50,14 +48,12 @@ export default function ChatWidget() {
         }
     }, [user, messages.length])
 
-    // Focus input when opened
     useEffect(() => {
         if (isOpen) {
             setTimeout(() => inputRef.current?.focus(), 100)
         }
     }, [isOpen])
 
-    // Speech-to-text setup
     const startListening = () => {
         const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
         if (!SpeechRecognition) {
@@ -138,10 +134,10 @@ export default function ChatWidget() {
 
     return (
         <>
-            {/* Chat Toggle Button */}
+            {/* FIXED: Moved button up to prevent overlapping form fields */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-20 right-4 lg:bottom-6 lg:right-6 z-50 h-14 w-14 rounded-full bg-brand-700 text-white shadow-xl hover:bg-brand-800 flex items-center justify-center transition-all hover:scale-105 active:scale-95"
+                className="fixed bottom-28 right-4 lg:bottom-8 lg:right-8 z-50 h-14 w-14 rounded-full bg-brand-700 text-white shadow-xl hover:bg-brand-800 flex items-center justify-center transition-all hover:scale-105 active:scale-95 print:hidden"
                 aria-label="Toggle Chat"
             >
                 {isOpen ? (
@@ -158,8 +154,8 @@ export default function ChatWidget() {
             {/* Chat Window */}
             {isOpen && (
                 <div
-                    className="fixed bottom-36 right-4 lg:bottom-24 lg:right-6 z-50 w-[calc(100vw-2rem)] max-w-md rounded-2xl border border-border bg-white shadow-2xl flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-200"
-                    style={{ height: "min(600px, calc(100vh - 10rem))" }}
+                    className="fixed bottom-44 right-4 lg:bottom-24 lg:right-8 z-50 w-[calc(100vw-2rem)] max-w-md rounded-2xl border border-border bg-white shadow-2xl flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-200 print:hidden"
+                    style={{ height: "min(600px, calc(100vh - 12rem))" }}
                 >
                     {/* Header */}
                     <div className="shrink-0 bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 px-4 py-3 text-white flex items-center justify-between shadow-sm z-10">
@@ -193,11 +189,10 @@ export default function ChatWidget() {
                         {messages.map((msg) => (
                             <div key={msg.id} className={`flex flex-col ${msg.role === "user" ? "items-end" : "items-start"}`}>
 
-                                {/* Message Bubble */}
                                 <div
                                     className={`max-w-[88%] rounded-2xl px-4 py-3 text-[15px] leading-relaxed break-words shadow-sm ${msg.role === "user"
-                                            ? "bg-brand-700 text-white rounded-br-sm whitespace-pre-wrap"
-                                            : "bg-white border border-border text-gray-800 rounded-bl-sm"
+                                        ? "bg-brand-700 text-white rounded-br-sm whitespace-pre-wrap"
+                                        : "bg-white border border-border text-gray-800 rounded-bl-sm"
                                         }`}
                                 >
                                     {msg.role === "user" ? (
@@ -217,7 +212,6 @@ export default function ChatWidget() {
                                     )}
                                 </div>
 
-                                {/* Actions (Only for AI messages) */}
                                 {msg.role === "ai" && msg.id !== "initial" && (
                                     <button
                                         onClick={() => copyToClipboard(msg.text, msg.id)}
@@ -239,7 +233,6 @@ export default function ChatWidget() {
                             </div>
                         ))}
 
-                        {/* Suggested Prompts (Only shows when chat is fresh) */}
                         {messages.length === 1 && !isLoading && (
                             <div className="pt-2">
                                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Try asking:</p>
@@ -257,7 +250,6 @@ export default function ChatWidget() {
                             </div>
                         )}
 
-                        {/* Typing Indicator */}
                         {isLoading && (
                             <div className="flex justify-start">
                                 <div className="bg-white border border-border rounded-2xl rounded-bl-sm px-4 py-3 shadow-sm flex gap-1.5 items-center h-11">
@@ -274,7 +266,6 @@ export default function ChatWidget() {
                     <form onSubmit={handleSend} className="shrink-0 border-t border-border p-3 bg-white">
                         <div className="flex items-end gap-2">
 
-                            {/* Voice Input Button */}
                             <button
                                 type="button"
                                 onClick={startListening}
@@ -287,7 +278,6 @@ export default function ChatWidget() {
                                 </svg>
                             </button>
 
-                            {/* Text Input */}
                             <input
                                 ref={inputRef}
                                 type="text"
@@ -297,7 +287,6 @@ export default function ChatWidget() {
                                 className="flex-1 rounded-xl border border-border bg-surface-subtle px-3.5 py-2.5 text-[15px] focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
                             />
 
-                            {/* Send Button */}
                             <button
                                 type="submit"
                                 disabled={!input.trim() || isLoading}

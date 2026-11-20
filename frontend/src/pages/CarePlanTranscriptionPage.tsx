@@ -22,11 +22,11 @@ export default function CarePlanTranscriptionPage() {
                 <Link to={`/careplans/${plan.id}`} className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-brand-700 font-medium">← Back to builder</Link>
                 <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
                     <div>
-                        <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">N&MC Format</p>
+                        <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">N&MC-Oriented Study Format</p>
                         <h1 className="mt-1 text-2xl font-serif font-bold text-gray-900">{plan.title}</h1>
                     </div>
                     <div className="flex gap-2">
-                        <Button variant="secondary" onClick={() => window.print()}>🖨 Print</Button>
+                        <Button variant="secondary" onClick={() => window.print()}>🖨 Print / Save PDF</Button>
                         <Button variant="secondary" onClick={() => {
                             navigator.clipboard.writeText(buildPlainText(plan))
                             alert("Copied as plain text!")
@@ -39,11 +39,11 @@ export default function CarePlanTranscriptionPage() {
             <div className="document-canvas max-w-5xl mx-auto bg-white shadow-xl border border-gray-200 print:border-0 print:shadow-none">
                 <div className="p-8 sm:p-12 print:p-0">
 
-                    {/* Header */}
+                    {/* Legal Header - FIXED */}
                     <div className="text-center pb-8 mb-8 border-b-2 border-gray-800">
-                        <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold">Nurses and Midwives Council of Ghana</p>
+                        <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold">NursifyGH Study Tool</p>
                         <h1 className="text-3xl font-serif font-black uppercase tracking-wider mt-2 text-gray-900">Nursing Care Plan</h1>
-                        <p className="text-xs text-gray-500 mt-1 font-medium">Licensure Examination Format</p>
+                        <p className="text-xs text-gray-500 mt-1 font-medium italic">N&MC-Oriented Format · Not an Official N&MC Document</p>
                     </div>
 
                     {/* Patient Info Table */}
@@ -64,7 +64,7 @@ export default function CarePlanTranscriptionPage() {
                         </tbody>
                     </table>
 
-                    {/* NMC Table - REMOVED minWidth so it fits A4 */}
+                    {/* NMC Table */}
                     <div className="overflow-x-auto print:overflow-visible">
                         <table className="w-full text-sm border border-gray-300 rounded-lg overflow-hidden print:table-fixed print:text-[11px]">
                             <colgroup>
@@ -119,6 +119,36 @@ export default function CarePlanTranscriptionPage() {
                         </table>
                     </div>
 
+                    {/* EVALUATION SECTION - FIXED */}
+                    <div className="mt-8 print:mt-6">
+                        <h3 className="text-xs font-bold text-gray-800 uppercase tracking-wider mb-2 border-b border-gray-300 pb-1">
+                            05 · Evaluation
+                        </h3>
+                        <table className="w-full text-xs border border-gray-300">
+                            <thead>
+                                <tr className="bg-gray-50 print:bg-transparent">
+                                    <th className="border border-gray-300 px-3 py-2 text-left w-1/4 font-semibold text-gray-700">Outcome</th>
+                                    <th className="border border-gray-300 px-3 py-2 text-left w-1/4 font-semibold text-gray-700">Status</th>
+                                    <th className="border border-gray-300 px-3 py-2 text-left font-semibold text-gray-700">Evidence / Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {plan.goals.map((goal: any, i: number) => (
+                                    <tr key={goal.id} className="align-top">
+                                        <td className="border border-gray-300 px-3 py-2 text-gray-700">{goal.specific}</td>
+                                        <td className="border border-gray-300 px-3 py-2 text-gray-500">
+                                            ☐ Met  ☐ Partially met  ☐ Not met
+                                        </td>
+                                        <td className="border border-gray-300 px-3 py-2 text-gray-400 italic min-h-[40px]">&nbsp;</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                        <p className="mt-2 text-[10px] text-gray-500 italic">
+                            To be completed by the student after implementing the plan in clinical practice.
+                        </p>
+                    </div>
+
                     {/* Signatures */}
                     <table className="w-full text-sm mt-8 border border-gray-300 rounded-lg overflow-hidden print:table-fixed">
                         <tbody>
@@ -148,14 +178,14 @@ export default function CarePlanTranscriptionPage() {
 
 function buildPlainText(plan: any): string {
     const lines: string[] = []
-    lines.push("NURSES AND MIDWIVES COUNCIL OF GHANA")
-    lines.push("NURSING CARE PLAN")
+    lines.push("NURSIFYGH STUDY TOOL")
+    lines.push("NURSING CARE PLAN (N&MC-Oriented Format)")
     lines.push("=".repeat(60))
     lines.push("")
     lines.push("NURSING DIAGNOSIS:")
     lines.push(plan.primary_diagnosis.label)
-    if (plan.primary_diagnosis.related_factors) lines.push(`related to ${plan.primary_diagnosis.related_factors}`)
-    if (plan.primary_diagnosis.defining_characteristics) lines.push(`as evidenced by ${plan.primary_diagnosis.defining_characteristics}`)
+    if (plan.primary_diagnosis.related_to) lines.push(`related to ${plan.primary_diagnosis.related_to}`)
+    if (plan.primary_diagnosis.as_evidenced_by) lines.push(`as evidenced by ${plan.primary_diagnosis.as_evidenced_by}`)
     lines.push("")
     lines.push("OBJECTIVE / OUTCOME CRITERIA:")
     plan.goals.forEach((g: any, i: number) => lines.push(`${i + 1}. ${g.specific}`))
@@ -164,6 +194,13 @@ function buildPlainText(plan: any): string {
     plan.interventions.forEach((iv: any, i: number) => {
         lines.push(`${i + 1}. ${iv.action}`)
         lines.push(`   Rationale: ${iv.rationale}`)
+    })
+    lines.push("")
+    lines.push("EVALUATION (To be completed):")
+    plan.goals.forEach((g: any, i: number) => {
+        lines.push(`${i + 1}. ${g.specific}`)
+        lines.push(`   Status: [ ] Met  [ ] Partially met  [ ] Not met`)
+        lines.push(`   Evidence: `)
     })
     lines.push("")
     lines.push("---")

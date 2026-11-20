@@ -80,17 +80,22 @@ export default function CarePlanDetailPage() {
         )
     }
 
-    const completion = [
-        !!plan.patient_scenario,
-        plan.goals.length > 0,
-        plan.interventions.length > 0,
-    ]
+    // FIXED: Strict completion validation
+    const isScenarioValid = !!(plan.patient_scenario && plan.patient_scenario.trim().length > 20)
+    const isGoalsValid = plan.goals.some((g: any) =>
+        g.specific?.trim() && g.measurable?.trim() && g.time_bound?.trim()
+    )
+    const isInterventionsValid = plan.interventions.some((iv: any) =>
+        iv.action?.trim() && iv.rationale?.trim() && iv.rationale.trim().length > 10
+    )
+
+    const completion = [isScenarioValid, isGoalsValid, isInterventionsValid]
     const completedSteps = completion.filter(Boolean).length
     const isComplete = completedSteps === 3
 
     return (
         <AppShell>
-            <div className="max-w-4xl mx-auto pb-24 px-4 sm:px-0">
+            <div className="max-w-4xl mx-auto pb-32 px-4 sm:px-0">
 
                 {/* Breadcrumb & Actions */}
                 <div className="flex items-center justify-between mb-6">
@@ -268,6 +273,27 @@ export default function CarePlanDetailPage() {
                         <Alert variant="danger">Failed to save intervention. Please try again.</Alert>
                     )}
                 </Section>
+
+                {/* FIXED: Section 05 Evaluation */}
+                <Section number="05" title="Evaluation">
+                    <div className="rounded-xl border border-border bg-white p-5">
+                        <p className="text-sm text-on-surface-muted italic">
+                            Evaluation is completed after implementing the care plan in clinical practice.
+                            Transcribe your findings onto the printed document.
+                        </p>
+                    </div>
+                </Section>
+
+                {/* Submit Guard */}
+                <div className="mt-8 flex justify-end">
+                    <Button
+                        disabled={!isComplete}
+                        className={!isComplete ? "opacity-50 cursor-not-allowed" : "bg-brand-700 text-white"}
+                        title={!isComplete ? "Complete all sections before submitting." : ""}
+                    >
+                        Submit Care Plan
+                    </Button>
+                </div>
 
                 {/* Footer */}
                 <footer className="mt-12 flex items-center justify-between text-[11px] text-on-surface-muted border-t border-border pt-4">
