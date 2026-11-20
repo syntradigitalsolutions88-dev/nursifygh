@@ -28,6 +28,7 @@ export default function CarePlanTranscriptionPage() {
     const diag = plan.primary_diagnosis as any
     const relatedFactors = diag?.related_factors || diag?.related_to
     const definingCharacteristics = diag?.defining_characteristics || diag?.as_evidenced_by
+    const formattedDate = new Date(plan.created_at).toLocaleDateString("en-GB")
 
     return (
         <AppShell>
@@ -50,10 +51,10 @@ export default function CarePlanTranscriptionPage() {
             </div>
 
             {/* Document Canvas */}
-            <div className="document-canvas max-w-5xl mx-auto bg-white shadow-xl border border-gray-200 print:border-0 print:shadow-none pb-24 sm:pb-0">
+            <div className="document-canvas max-w-5xl mx-auto bg-white shadow-xl border border-gray-200 print:border-0 print:shadow-none pb-28 sm:pb-0">
                 <div className="p-5 sm:p-12 print:p-0">
 
-                    {/* Legal Header - FIXED */}
+                    {/* Legal Header */}
                     <div className="text-center pb-6 sm:pb-8 mb-6 sm:mb-8 border-b-2 border-gray-800">
                         <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-bold">NursifyGH Study Tool</p>
                         <h1 className="text-2xl sm:text-3xl font-serif font-black uppercase tracking-wider mt-2 text-gray-900">Nursing Care Plan</h1>
@@ -73,16 +74,23 @@ export default function CarePlanTranscriptionPage() {
                                 <td className="border-r border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3 font-semibold text-gray-600 bg-gray-50 print:bg-transparent">Ward</td>
                                 <td className="border-r border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3"></td>
                                 <td className="border-r border-gray-300 px-3 sm:px-4 py-2.5 sm:py-3 font-semibold text-gray-600 bg-gray-50 print:bg-transparent">Date</td>
-                                <td className="px-3 sm:px-4 py-2.5 sm:py-3">{new Date(plan.created_at).toLocaleDateString("en-GB")}</td>
+                                <td className="px-3 sm:px-4 py-2.5 sm:py-3">{formattedDate}</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    {/* MOBILE VIEW (< 640px) */}
-                    <div className="sm:hidden print:hidden space-y-6">
-                        {/* Diagnosis Card */}
-                        <div className="rounded-lg border border-gray-300 p-4 space-y-2">
-                            <p className="text-[10px] font-bold uppercase tracking-wider text-brand-700">Nursing Diagnosis</p>
+                    {/* MOBILE STACKED TRANSCRIPTION VIEW (< 768px) */}
+                    <div className="md:hidden print:hidden space-y-5">
+                        {/* 1. Nursing Diagnosis */}
+                        <div className="rounded-xl border border-gray-300 bg-gray-50/40 p-4 space-y-2">
+                            <div className="flex items-center justify-between">
+                                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-700">01 · Nursing Diagnosis</span>
+                                {plan.primary_diagnosis?.code && (
+                                    <span className="font-mono text-[10px] text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">
+                                        {plan.primary_diagnosis.code}
+                                    </span>
+                                )}
+                            </div>
                             <p className="text-base font-bold text-gray-900">{plan.primary_diagnosis.label}</p>
                             {relatedFactors && (
                                 <p className="text-xs text-gray-700 leading-relaxed">
@@ -96,9 +104,9 @@ export default function CarePlanTranscriptionPage() {
                             )}
                         </div>
 
-                        {/* Outcome Criteria Card */}
-                        <div className="rounded-lg border border-gray-300 p-4 space-y-3">
-                            <p className="text-[10px] font-bold uppercase tracking-wider text-brand-700">Outcome Criteria</p>
+                        {/* 2. Outcome Criteria */}
+                        <div className="rounded-xl border border-gray-300 p-4 space-y-2.5">
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-brand-700">02 · Outcome Criteria</p>
                             <ol className="space-y-2.5 list-decimal list-outside ml-4 text-xs text-gray-800 leading-relaxed">
                                 {plan.goals.map((goal: any) => (
                                     <li key={goal.id} className="pl-1">{formatGoalSummary(goal)}</li>
@@ -106,14 +114,14 @@ export default function CarePlanTranscriptionPage() {
                             </ol>
                         </div>
 
-                        {/* Nursing Orders Card */}
-                        <div className="rounded-lg border border-gray-300 p-4 space-y-3">
-                            <p className="text-[10px] font-bold uppercase tracking-wider text-brand-700">Nursing Orders</p>
+                        {/* 3. Nursing Orders & Rationales */}
+                        <div className="rounded-xl border border-gray-300 p-4 space-y-3">
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-brand-700">03 · Nursing Orders</p>
                             <ol className="space-y-4 list-decimal list-outside ml-4 text-xs text-gray-800 leading-relaxed">
                                 {plan.interventions.map((iv: any) => (
                                     <li key={iv.id} className="pl-1">
                                         <p className="font-semibold text-gray-900">{iv.action}</p>
-                                        <div className="mt-1.5 pl-3 border-l-2 border-brand-200">
+                                        <div className="mt-1.5 pl-3 border-l-2 border-brand-300">
                                             <p className="text-xs text-gray-600">
                                                 <span className="font-bold text-gray-800 text-[10px] uppercase tracking-wider block mb-0.5">Rationale</span>
                                                 {iv.rationale}
@@ -124,13 +132,13 @@ export default function CarePlanTranscriptionPage() {
                             </ol>
                         </div>
 
-                        {/* Evaluation Cards */}
-                        <div className="space-y-3">
+                        {/* 4. Evaluation */}
+                        <div className="space-y-2.5">
                             <h3 className="text-xs font-bold text-gray-800 uppercase tracking-wider border-b border-gray-300 pb-1">
-                                05 · Evaluation
+                                04 · Evaluation
                             </h3>
                             {plan.goals.map((goal: any) => (
-                                <div key={goal.id} className="rounded-lg border border-gray-300 p-3.5 space-y-2 text-xs">
+                                <div key={goal.id} className="rounded-xl border border-gray-300 p-3.5 space-y-2 text-xs">
                                     <p className="font-medium text-gray-800 leading-relaxed">{formatGoalSummary(goal)}</p>
                                     <p className="text-gray-600">☐ Met &nbsp; ☐ Partially met &nbsp; ☐ Not met</p>
                                     <div className="pt-2 border-t border-dashed border-gray-300 text-[11px] text-gray-400 italic">
@@ -144,8 +152,8 @@ export default function CarePlanTranscriptionPage() {
                         </div>
                     </div>
 
-                    {/* TABLET / DESKTOP / PRINT VIEW */}
-                    <div className="hidden sm:block print:block">
+                    {/* TABLET / DESKTOP / PRINT VIEW (>= 768px or Print) */}
+                    <div className="hidden md:block print:block">
                         <div className="overflow-x-auto print:overflow-visible">
                             <table className="w-full text-sm border border-gray-300 rounded-lg overflow-hidden print:table-fixed print:text-[11px]">
                                 <colgroup>
@@ -263,9 +271,11 @@ function buildPlainText(plan: any): string {
     const diag = plan.primary_diagnosis as any
     const relatedFactors = diag?.related_factors || diag?.related_to
     const definingCharacteristics = diag?.defining_characteristics || diag?.as_evidenced_by
+    const formattedDate = new Date(plan.created_at).toLocaleDateString("en-GB")
 
     lines.push("NURSIFYGH STUDY TOOL")
     lines.push("NURSING CARE PLAN (N&MC-Oriented Format)")
+    lines.push(`Case: ${plan.title} | Date: ${formattedDate}`)
     lines.push("=".repeat(60))
     lines.push("")
     lines.push("NURSING DIAGNOSIS:")
