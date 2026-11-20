@@ -47,7 +47,7 @@ export default function QuizResultsPage() {
 
     return (
         <AppShell>
-            <div className="max-w-4xl mx-auto space-y-8 pb-20">
+            <div className="max-w-4xl mx-auto space-y-8 pb-36 sm:pb-20">
 
                 {/* Score Header Card */}
                 <div className="rounded-3xl bg-gradient-to-br from-brand-900 to-brand-700 p-8 sm:p-12 text-white shadow-xl relative overflow-hidden text-center">
@@ -70,7 +70,7 @@ export default function QuizResultsPage() {
                                 </Button>
                             </Link>
                             <Link to={isMockExam ? "/mock-exam" : `/quizzes/${attempt.course_id}`}>
-                                <Button className="bg-white text-brand-900 hover:bg-brand-50">
+                                <Button className="!bg-white !text-gray-900 hover:!bg-gray-100 whitespace-nowrap font-semibold">
                                     {isMockExam ? "Take another Mock Exam" : "Try again"}
                                 </Button>
                             </Link>
