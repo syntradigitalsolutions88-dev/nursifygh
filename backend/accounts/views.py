@@ -96,63 +96,70 @@ PROGRAM_SKILLS = {
     ]
 }
 
-NCP_SYSTEM_PROMPT = (
-    "You are a Registered Nurse (RGN) and clinical instructor in Ghana, writing a formal "
-    "Nursing Care Plan (NCP) for a nursing student's NMC/N&MC logbook.\n\n"
-    "CRITICAL: The 'diagnosis_code' MUST be a valid NANDA-I code (a 5-digit number like 00132, 00004, 00030, 00046, 00011). "
-    "DO NOT use ICD-10 codes (e.g., T81.4XXA, A09, J18.9). The code must match the NANDA-I 2021-2023 handbook.\n\n"
-    "Use one of these valid NANDA-I codes when applicable:\n"
-    "   - 00132 Acute Pain\n"
-    "   - 00004 Risk for Infection\n"
-    "   - 00030 Impaired Gas Exchange\n"
-    "   - 00011 Constipation\n"
-    "   - 00046 Impaired Skin Integrity\n"
-    "   - 00085 Impaired Physical Mobility\n"
-    "   - 00155 Risk for Falls\n"
-    "   - 00002 Imbalanced Nutrition: Less Than Body Requirements\n"
-    "   - 00126 Deficient Knowledge\n"
-    "   - 00016 Impaired Urinary Elimination\n"
-    "   - 00032 Ineffective Breathing Pattern\n"
-    "   - 00013 Diarrhea\n"
-    "   - 00026 Excess Fluid Volume\n"
-    "   - 00027 Deficient Fluid Volume\n"
-    "   - 00134 Nausea\n\n"
-    "ABSOLUTE RULES:\n"
-    "1. Generate EXACTLY 3 GOALS and EXACTLY 3 NURSING ORDERS (interventions).\n"
-    "   Each goal MUST correspond to exactly one intervention, so the student's form "
-    "   shows three objectives matched to three interventions (1:1).\n"
-    "2. Each GOAL must be ONE complete sentence containing all five SMART elements.\n"
-    "   Example: 'By the end of 48 hours, the patient will demonstrate three non-pharmacologic pain-relief techniques with a reported pain score ≤ 3/10 on the numeric rating scale.'\n"
-    "3. Each NURSING ORDER must start with a clinical verb (Assess, Administer, Monitor, Educate, Auscultate, Palpate, Elevate, Reposition, Encourage).\n"
-    "4. Each RATIONALE must cite a physiological or pathophysiological reason.\n"
-    "5. Never use filler words: 'various', 'helpful', 'good', 'some', 'just', 'try to'.\n"
-    "6. Be clinically accurate for the Ghanaian context.\n\n"
-    "Return ONLY valid JSON, no markdown, in this exact shape:\n"
-    "{\n"
-    '  "diagnosis_code": "00004",\n'
-    '  "diagnosis_label": "Risk for Infection",\n'
-    '  "goals": [\n'
-    '    "By the end of ...",\n'
-    '    "By the end of ...",\n'
-    '    "By the end of ..."\n'
-    "  ],\n"
-    '  "interventions": [\n'
-    '    {"action": "Assess ...", "rationale": "..."},\n'
-    '    {"action": "Administer ...", "rationale": "..."},\n'
-    '    {"action": "Monitor ...", "rationale": "..."}\n'
-    "  ]\n"
-    "}\n"
-    "The order of the goals MUST match the order of the interventions "
-    "(Goal 1 ↔ Intervention 1, Goal 2 ↔ Intervention 2, Goal 3 ↔ Intervention 3)."
-)
+NCP_SYSTEM_PROMPT = """
+You are a strict, senior nursing lecturer at the Nurses and Midwives Council of Ghana (N&MC), expert in NANDA-I (2021–2023) classifications, NIC (Nursing Interventions Classification), and the Ghana Essential Medicines List (EML).
 
+CLINICAL ACCURACY RULES (VIOLATION = FAILURE):
+
+1. NURSING DIAGNOSIS (NANDA-I)
+- Select ONE primary diagnosis with its code, label, domain, and definition.
+- "related_to" MUST list ONLY factors ACTUALLY PRESENT in the scenario.
+- "as_evidenced_by" MUST list ONLY signs/symptoms OBSERVED in the scenario.
+- DO NOT include textbook symptoms if they are not in the scenario.
+
+2. SMART OUTCOMES (Generate exactly 3)
+- Must be specific, measurable (e.g., "pain ≤3/10", "Hb ≥10 g/dL"), achievable, relevant, and time-bound (e.g., "within 30 min").
+- WRONG: "Bleeding is controlled"
+- CORRECT: "Lochia reduces to <1 pad/hour and fundus remains firm at umbilicus within 30 minutes"
+
+3. NURSING INTERVENTIONS (Generate exactly 5)
+- You MUST include the following types: "INDEPENDENT", "DEPENDENT", or "COLLABORATIVE".
+- EVERY intervention must have a physiological rationale (NOT "because it helps").
+- FOR EVERY MEDICATION, you MUST provide an object called "medication_details" with:
+  "drug", "dose", "route", "rate", "timing", "precautions".
+  Example: Tranexamic acid -> drug: "Tranexamic acid", dose: "1 g", route: "IV", rate: "over 10 minutes", timing: "within 3 hours of birth", precautions: "Do not delay uterotonics; monitor for thrombosis."
+- MANDATORY MIX: Include at least 1 ASSESSMENT/MONITORING intervention, at least 1 DOCUMENTATION intervention, and at least 1 PATIENT EDUCATION intervention.
+
+4. EVALUATION (Generate exactly 2)
+- "outcome": The goal being evaluated.
+- "status": "MET", "PARTIALLY_MET", or "NOT_MET".
+- "evidence": Specific clinical data (e.g., "BP 118/76, HR 88, lochia moderate at 0900h").
+
+5. ANTI-HALLUCINATION
+- If a detail is NOT in the scenario AND cannot be safely inferred, do not invent it. Write "Not documented in scenario".
+
+OUTPUT FORMAT: Return ONLY valid JSON matching this exact schema (no markdown, no explanation):
+
+{
+  "primary_diagnosis": {
+    "code": "00027",
+    "label": "Deficient Fluid Volume",
+    "domain": "5 Perfusion",
+    "definition": "...",
+    "related_to": "...",
+    "as_evidenced_by": "..."
+  },
+  "goals": [
+    { "specific": "...", "measurable": "...", "achievable": "...", "relevant": "...", "time_bound": "..." }
+  ],
+  "interventions": [
+    {
+      "action": "...",
+      "rationale": "...",
+      "type": "INDEPENDENT",
+      "medication_details": { "drug": "...", "dose": "...", "route": "...", "rate": "...", "timing": "...", "precautions": "..." }
+    }
+  ],
+  "evaluation": [
+    { "outcome": "...", "status": "MET", "evidence": "..." }
+  ]
+}
+"""
 
 # ─── Auth & Profile ────────────────────────────────────────────────────────────
 
-
 class RegistrationRateThrottle(AnonRateThrottle):
     scope = "registration"
-
 
 class RegisterView(generics.CreateAPIView):
     serializer_class = UserRegistrationSerializer
@@ -166,10 +173,8 @@ class RegisterView(generics.CreateAPIView):
         except Exception:
             logger.exception("Welcome email failed for %s", user.email)
 
-
 class LoginView(TokenObtainPairView):
     permission_classes = (permissions.AllowAny,)
-
 
 class ProfileView(generics.RetrieveUpdateAPIView):
     serializer_class = UserProfileSerializer
@@ -180,7 +185,6 @@ class ProfileView(generics.RetrieveUpdateAPIView):
         user.deactivate_expired_subscription()
         return user
 
-
 class PasswordChangeView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -189,7 +193,6 @@ class PasswordChangeView(APIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response({"detail": "Password updated successfully."})
-
 
 @method_decorator(csrf_exempt, name='dispatch')
 class PasswordResetRequestView(APIView):
@@ -210,7 +213,6 @@ class PasswordResetRequestView(APIView):
                 frontend_origin = getattr(settings, "FRONTEND_ORIGIN", "https://nursifygh.vercel.app").rstrip("/")
                 reset_url = f"{frontend_origin}/reset-password?uid={uid}&token={token}"
 
-                # FIX: Use Resend API instead of SMTP
                 resend_key = getattr(settings, "RESEND_API_KEY", "")
                 if resend_key:
                     requests.post(
@@ -220,15 +222,14 @@ class PasswordResetRequestView(APIView):
                             "Content-Type": "application/json"
                         },
                         json={
-                            "from": "NursifyGH <onboarding@resend.dev>", # You can change this later if you have a custom domain
+                            "from": "NursifyGH <onboarding@resend.dev>",
                             "to": [user.email],
                             "subject": "Reset your NursifyGH password",
                             "text": f"Hi {user.full_name},\n\nWe received a request to reset your NursifyGH password.\n\nClick here to reset: {reset_url}\n\nThis link expires in 60 minutes.\n\n— The NursifyGH team",
                         },
-                        timeout=10, # 10 seconds max, prevents server crash
+                        timeout=10,
                     )
                 else:
-                    # Fallback to SMTP just in case Resend key is missing
                     send_mail(
                         subject="Reset your NursifyGH password",
                         message=(
@@ -242,11 +243,9 @@ class PasswordResetRequestView(APIView):
                         fail_silently=False,
                     )
             except Exception as exc:
-                # Log the failure but DO NOT crash the API. The user will still see success.
                 logger.exception("Password reset email failed for %s: %s", email, exc)
 
         return Response({"detail": "If an account exists for that email, a reset link has been sent."})
-
 
 class PasswordResetConfirmView(APIView):
     permission_classes = (permissions.AllowAny,)
@@ -268,9 +267,7 @@ class PasswordResetConfirmView(APIView):
         user.save(update_fields=["password"])
         return Response({"detail": "Password has been reset. You can now log in."})
 
-
 # ─── Clinical Tracker ──────────────────────────────────────────────────────────
-
 
 class ClinicalSkillsView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
@@ -318,7 +315,6 @@ class ClinicalSkillsView(APIView):
         skill.save()
         return Response({"status": "success", "completed_count": skill.completed_count})
 
-
 class ClinicalLogsDetailView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -330,10 +326,7 @@ class ClinicalLogsDetailView(APIView):
 
         return Response(ClinicalLogSerializer(skill.logs.all(), many=True).data)
 
-
 class ClinicalLogDetailView(APIView):
-    """GET, PATCH, DELETE a single clinical log entry."""
-
     permission_classes = (permissions.IsAuthenticated,)
 
     def _get_object(self, request, log_id):
@@ -364,9 +357,7 @@ class ClinicalLogDetailView(APIView):
         skill.save()
         return Response({"status": "deleted", "completed_count": skill.completed_count})
 
-
 class ClinicalLogbookExportView(APIView):
-    """Generate an official N&MC PDF of the student's clinical logbook."""
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request):
@@ -494,13 +485,9 @@ class ClinicalLogbookExportView(APIView):
             content_type="application/pdf",
         )
 
-
 # ─── Ambassador Dashboard ──────────────────────────────────────────────────────
 
-
 class AmbassadorStatsView(APIView):
-    """Return the ambassador's earnings, referred students, and payout status.
-    """
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request):
@@ -585,9 +572,7 @@ class AmbassadorStatsView(APIView):
             "recent": recent,
         })
 
-
 class BecomeAmbassadorView(APIView):
-    """Allow a user to self-enroll as an an ambassador and get a referral code."""
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request):
@@ -617,9 +602,7 @@ class BecomeAmbassadorView(APIView):
             "code": code,
         })
 
-
 # ─── AI ────────────────────────────────────────────────────────────────────────
-
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
@@ -637,65 +620,16 @@ def ai_chat_proxy(request):
     if mode == "student":
         system_prompt = (
             "You are the NursifyGH Chief Clinical Examiner and Academic Tutor — a world-class Ghanaian nursing educator, "
-            "advanced practice clinician, and NMC exam coach. You hold a PhD in Nursing Science and a Master of Science in Nursing Education, "
-            "with 20+ years of experience teaching at Ghanaian Nursing and Midwifery Training Colleges and serving on NMC examination boards.\n\n"
-
-            "═══ CLINICAL EXPERTISE & KNOWLEDGE BASE ═══\n"
-            "You are an encyclopedia of nursing knowledge. You must provide clinically flawless, evidence-based answers drawn from:\n"
-            "1. Ghana Health Service (GHS) Standard Treatment Guidelines (STG).\n"
-            "2. WHO, CDC, and NICE clinical guidelines.\n"
-            "3. Advanced Pathophysiology, Pharmacology, and Anatomy.\n"
-            "4. NANDA-I Nursing Diagnoses (2021-2023) and NIC/NOC standards.\n"
-            "5. Ghanaian NMC Licensure Examination patterns and traps.\n\n"
-
-            "═══ ABOUT NURSIFYGH (Platform Knowledge) ═══\n"
-            "1. TRIAL: Every new student automatically receives a 3-day FREE TRIAL with full access to every feature.\n"
-            "2. PRICING: A Semester Pass costs GHS 30 and gives 120 days of unlimited access. Students may pay early during the trial — the 120 days stack on top of the remaining trial days.\n"
-            "3. PAYMENT METHODS: MTN MoMo, Telecel Cash, or AT Money. Students send payment to the MoMo number shown on the /subscribe page, then submit the transaction ID. An admin activates the subscription within 24 hours.\n"
-            "4. ACADEMIC CONTENT: The platform supports all four Ghanaian nursing programs — General Nursing (RGN), Midwifery (RM), Psychiatric Nursing (RPN), and Community Health Nursing (CHN) — at Levels 100, 200, and 300.\n"
-            "5. FEATURES: 2,113+ NMC-style practice questions, 60-minute mock exams, AI clinical logbook, NANDA care plan builder, and an Ambassador program (earn GHS 4.50 per referral).\n"
-            "6. LEGAL STATUS: NursifyGH is an independent study tool. It is NOT affiliated with the NMC of Ghana.\n\n"
-
-            "═══ STRICT CLINICAL RULES (DO NOT BREAK) ═══\n"
-            "1. NEVER hallucinate medical facts. If a question is outside standard nursing practice, state: 'This requires specialist medical review.'\n"
-            "2. Always prioritize ABCDE (Airway, Breathing, Circulation, Disability, Exposure) in emergencies.\n"
-            "3. When calculating drug dosages, ALWAYS show the formula: (Desired / Available) x Volume.\n"
-            "4. Use correct medical terminology (e.g., 'dyspnea' not 'trouble breathing', 'hypertension' not 'high blood').\n"
-            "5. For Ghana-specific questions, reference CHPS compounds, NHIS, EPI schedules, and traditional medicine interactions.\n\n"
-
-            "═══ COMMUNICATION STYLE (STRICT) ═══\n"
-            "1. Tone: Extremely formal, academic, precise, authoritative, yet encouraging — like a respected Professor.\n"
-            "2. Format: Plain text. NEVER use Markdown tables (no pipe | characters) or code blocks. Use bullet points and numbered lists.\n"
-            "3. Length: Comprehensive but concise. Under 250 words per response unless explaining a complex clinical procedure.\n"
-            "4. Structure for Clinical Questions:\n"
-            "   • **Definition / Pathophysiology**\n"
-            "   • **Clinical Manifestations**\n"
-            "   • **Priority Nursing Interventions (ABCDE)**\n"
-            "   • **Rationale / Evidence Base**\n"
-            "5. If a student asks about a platform feature, answer precisely.\n"
-            "6. If a student reports a technical issue, direct them to the Help & Support page.\n"
+            "advanced practice clinician, and NMC exam coach.\n\n"
+            "CLINICAL RULES: Provide evidence-based answers. Prioritize ABCDE. Show drug calculation formulas. Use medical terminology.\n"
+            "PLATFORM RULES: 3-day free trial. GHS 30 for 120 days. Manual MoMo activation. 4 programs (General, Midwifery, Psychiatric, Community).\n"
+            "TONE: Formal, precise, authoritative. Plain text. No markdown tables. Under 250 words."
         )
     else:
         system_prompt = (
-            "You are the NursifyGH Support Assistant — a professional, warm, and efficient onboarding guide for prospective nursing students in Ghana.\n\n"
-            "═══ ABOUT NURSIFYGH (full platform knowledge) ═══\n"
-            "1. WHAT IT IS: NursifyGH is an independent study platform designed specifically for Ghanaian nursing and midwifery students preparing for the N&MC licensure exams. It is NOT affiliated with the NMC of Ghana.\n"
-            "2. PROGRAMS SUPPORTED: General Nursing (RGN), Midwifery (RM), Psychiatric Nursing (RPN), and Community Health Nursing (CHN) — at Levels 100, 200, and 300.\n"
-            "3. TRIAL: Every new student receives a 3-day free trial upon registration, with full access to all features.\n"
-            "4. PRICING: A Semester Pass costs GHS 30 and gives 120 days of full access. Students can pay early to extend their access (the 120 days stack on top of any remaining trial days).\n"
-            "5. PAYMENT: MTN MoMo, Telecel Cash, or AT Money. The student sends payment to the MoMo number shown on the /subscribe page, submits the transaction ID, and an admin activates the account within 24 hours.\n"
-            "6. FEATURES: NMC-style practice questions with rationales, a 60-minute mock exam simulator, a program-aware clinical logbook with printable N&MC PDF export, a NANDA care plan builder, and a community care plan library.\n"
-            "7. AMBASSADOR PROGRAM: Students can earn GHS 4.50 (15%) commission for every paid referral. Commissions are paid out via Mobile Money 3 days after each successful referral. Minimum payout is GHS 10.\n"
-            "8. MOBILE APP: NursifyGH is installable as a Progressive Web App (PWA). Students can add it to their home screen from any modern browser.\n"
-            "9. WHERE TO REGISTER: nursifygh.vercel.app/register — registration takes less than 2 minutes.\n\n"
-            "═══ COMMUNICATION STYLE (strictly follow) ═══\n"
-            "1. Tone: Polite, clear, welcoming, and confident. You represent a serious Ghanaian tech product.\n"
-            "2. Format: Plain text. Short paragraphs. Bullet points when listing features. NEVER use raw Markdown tables or code blocks.\n"
-            "3. Length: Under 120 words per response unless explaining a complex feature.\n"
-            "4. Do NOT answer clinical or nursing questions. If asked, politely redirect: 'For clinical questions, please register and use our Academic Tutor — it's an expert nursing educator.'\n"
-            "5. Always mention the 3-day free trial when discussing getting started.\n"
-            "6. If a visitor is undecided, gently highlight the free trial and low one-time price (GHS 30 for 120 days).\n"
-            "7. Never claim NursifyGH is an official NMC platform. Always clarify it's an independent study tool.\n"
+            "You are the NursifyGH Support Assistant — a professional, warm, and efficient onboarding guide.\n\n"
+            "PLATFORM RULES: Independent study tool. 4 programs. 3-day free trial. GHS 30 for 120 days. Manual MoMo activation. Features: Mock exams, clinical logbook, AI care plans. Ambassador program (15% recurring).\n"
+            "TONE: Polite, clear, confident. Plain text. Under 120 words. Do NOT answer clinical questions."
         )
 
     try:
@@ -725,8 +659,8 @@ def ai_chat_proxy(request):
 @permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = request.data.get("scenario", "").strip()
-    if not scenario:
-        return Response({"error": "Please describe the patient scenario."}, status=400)
+    if len(scenario) < 20:
+        return Response({"error": "Please provide a detailed clinical scenario (at least 20 characters)."}, status=400)
 
     api_key = getattr(settings, "GROQ_API_KEY", None)
     if not api_key:
@@ -736,24 +670,28 @@ def ai_ncp_autofill(request):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": "openai/gpt-oss-120b",
+                "model": "llama-3.3-70b-versatile", # FIX: Using the newest, smartest Groq model
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
                 ],
-                "temperature": 0.2,
-                "max_tokens": 2000,
+                "temperature": 0.1,
+                "response_format": {"type": "json_object"},
             },
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
             timeout=60,
         )
         if r.status_code != 200:
+            # FIX: This will print the exact reason Groq rejected it to the Render logs
+            logger.error("Groq API error: %s - %s", r.status_code, r.text)
             return Response({"error": "AI service error."}, status=500)
 
         content = r.json()["choices"][0]["message"]["content"]
         content = content.strip().strip("`").replace("json\n", "", 1).strip()
         return Response(json.loads(content))
     except json.JSONDecodeError:
+        logger.error("Groq returned invalid JSON: %s", content)
         return Response({"error": "AI returned invalid data. Please try again."}, status=500)
-    except Exception:
+    except Exception as exc:
+        logger.error("Groq exception: %s", exc)
         return Response({"error": "AI is currently unavailable."}, status=500)
