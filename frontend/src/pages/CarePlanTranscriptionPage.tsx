@@ -5,10 +5,12 @@ import AppShell from "../components/shell/AppShell"
 import Button from "../components/ui/Button"
 
 function formatGoalSummary(goal: any): string {
-    const base = (goal?.specific || "").trim()
+    const base = (goal?.specific || "").trim().replace(/\.$/, "").replace(/>=/g, "≥")
+    const cleanMeasurable = (goal?.measurable || "").trim().replace(/\.$/, "").replace(/>=/g, "≥")
+    const cleanTimeBound = (goal?.time_bound || "").trim().replace(/\.$/, "").replace(/>=/g, "≥")
     const extras: string[] = []
-    if (goal?.measurable) extras.push(`Target: ${goal.measurable}`)
-    if (goal?.time_bound) extras.push(`Timeframe: ${goal.time_bound}`)
+    if (cleanMeasurable) extras.push(`Target: ${cleanMeasurable}`)
+    if (cleanTimeBound) extras.push(`Timeframe: ${cleanTimeBound}`)
     return extras.length > 0 ? `${base} (${extras.join("; ")})` : base
 }
 
