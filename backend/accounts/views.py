@@ -657,6 +657,8 @@ def ai_chat_proxy(request):
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
+@api_view(["POST"])
+@permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = (request.data.get("scenario") or "").strip()
     if len(scenario) < 20:
@@ -670,61 +672,56 @@ def ai_ncp_autofill(request):
         logger.error("GROQ_API_KEY is missing in settings")
         return Response({"error": "AI is not configured."}, status=500)
 
-    models_to_try = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
-    last_error = "AI is currently unavailable."
+    content = ""
+    try:
+        r = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            json={
+                "model": "llama-3.3-70b-versatile", # Groq's best model
+                "messages": [
+                    {"role": "system", "content": NCP_SYSTEM_PROMPT},
+                    {"role": "user", "content": f"Patient scenario: {scenario}"},
+                ],
+                "temperature": 0.1,
+                "max_tokens": 4096,
+                # REMOVED: "response_format": {"type": "json_object"} 
+                # Groq's validator is too strict and fails on complex prompts.
+            },
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            timeout=60,
+        )
 
-    for model_name in models_to_try:
-        content = ""
-        try:
-            r = requests.post(
-                "https://api.groq.com/openai/v1/chat/completions",
-                json={
-                    "model": model_name,
-                    "response_format": {"type": "json_object"},
-                    "messages": [
-                        {"role": "system", "content": NCP_SYSTEM_PROMPT},
-                        {"role": "user", "content": f"Patient scenario: {scenario}"},
-                    ],
-                    "temperature": 0.1,
-                    "max_tokens": 2500,
-                },
-                headers={
-                    "Authorization": f"Bearer {api_key}",
-                    "Content-Type": "application/json",
-                },
-                timeout=45,
-            )
+        if r.status_code != 200:
+            logger.error("Groq API error: %s - %s", r.status_code, r.text)
+            return Response({"error": f"Groq API error ({r.status_code}). Please try again."}, status=500)
 
-            if r.status_code != 200:
-                logger.error("Groq API error (%s): %s - %s", model_name, r.status_code, r.text)
-                last_error = f"Groq API error ({r.status_code})."
-                continue
+        content = (r.json()["choices"][0]["message"]["content"] or "").strip()
 
-            content = (r.json()["choices"][0]["message"]["content"] or "").strip()
+        # Bulletproof JSON cleaning
+        if content.startswith("```json"):
+            content = content[7:]
+        elif content.startswith("```"):
+            content = content[3:]
+        if content.endswith("```"):
+            content = content[:-3]
+        
+        content = content.strip()
 
-            # Strip markdown fences if present
-            if content.startswith("```json"):
-                content = content[7:]
-            elif content.startswith("```"):
-                content = content[3:]
-            if content.endswith("```"):
-                content = content[:-3]
-            content = content.strip()
+        # Extract outermost JSON object if extra text wraps it
+        start_idx = content.find("{")
+        end_idx = content.rfind("}")
+        if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+            content = content[start_idx : end_idx + 1]
 
-            # Extract outermost JSON object if extra text wraps it
-            start_idx = content.find("{")
-            end_idx = content.rfind("}")
-            if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
-                content = content[start_idx : end_idx + 1]
+        parsed = json.loads(content)
+        return Response(parsed)
 
-            parsed = json.loads(content)
-            return Response(parsed)
-
-        except json.JSONDecodeError:
-            logger.error("Groq returned invalid JSON (%s): %s", model_name, content)
-            last_error = "AI returned invalid formatting. Please try again."
-        except Exception as exc:
-            logger.exception("Groq exception (%s): %s", model_name, exc)
-            last_error = f"AI request failed: {str(exc)}"
-
-    return Response({"error": last_error}, status=500)
+    except json.JSONDecodeError:
+        logger.error("Groq returned invalid JSON: %s", content)
+        return Response({"error": "AI returned invalid formatting. Please try again."}, status=500)
+    except Exception as exc:
+        logger.exception("Groq exception: %s", exc)
+        return Response({"error": f"AI request failed: {str(exc)}"}, status=500)
