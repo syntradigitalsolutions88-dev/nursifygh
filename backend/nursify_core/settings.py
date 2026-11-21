@@ -122,7 +122,7 @@ ASGI_APPLICATION = "nursify_core.asgi.application"
 # Database
 DATABASES = {"default": env.db("DATABASE_URL")}
 # FIX: Turn off persistent connections to prevent Supabase connection pool exhaustion
-DATABASES["default"]["CONN_MAX_AGE"] = 0 
+DATABASES["default"]["CONN_MAX_AGE"] = 0
 
 # Auth
 AUTH_USER_MODEL = "accounts.User"
