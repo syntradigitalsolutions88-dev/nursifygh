@@ -1,0 +1,682 @@
+{
+"courses": [
+{
+"course_code": "GHN-211-M",
+"course_title": "Gerontology and Home Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"The Aging Process in Women",
+"Geriatric Midwifery Assessment",
+"Common Health Issues in the Elderly",
+"Home Nursing Care for the Elderly Woman",
+"Medication Management in Geriatrics",
+"Nutrition in the Elderly",
+"End-of-Life Care and Palliative Care at Home",
+"Elder Abuse and Neglect"
+],
+"questions": [
+{
+"topic": "The Aging Process in Women",
+"question_text": "Which term describes the permanent cessation of menstruation resulting from the loss of ovarian follicular activity?",
+"choices": [
+{"text": "Menarche", "is_correct": false},
+{"text": "Menopause", "is_correct": true},
+{"text": "Dysmenorrhoea", "is_correct": false},
+{"text": "Amenorrhoea of pregnancy", "is_correct": false}
+],
+"rationale": "Menopause is diagnosed retrospectively after 12 consecutive months without menstruation when there is no other pathological or physiological cause. It results from declining ovarian follicular activity and reduced oestrogen production.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process in Women",
+"question_text": "Which hormonal change is primarily responsible for the increased risk of osteoporosis in postmenopausal women?",
+"choices": [
+{"text": "Increased oestrogen production", "is_correct": false},
+{"text": "Reduced oestrogen production", "is_correct": true},
+{"text": "Increased progesterone production", "is_correct": false},
+{"text": "Increased insulin production", "is_correct": false}
+],
+"rationale": "Oestrogen helps regulate bone remodelling by limiting excessive bone resorption. Reduced oestrogen levels after menopause accelerate bone loss and increase the risk of osteoporosis and fragility fractures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process in Women",
+"question_text": "Which of the following is a common vasomotor symptom experienced during the menopausal transition?",
+"choices": [
+{"text": "Hot flushes", "is_correct": true},
+{"text": "Persistent vaginal bleeding", "is_correct": false},
+{"text": "Increased menstrual flow", "is_correct": false},
+{"text": "Increased fertility", "is_correct": false}
+],
+"rationale": "Hot flushes are common vasomotor symptoms associated with changes in thermoregulation during the menopausal transition. They may occur with night sweats, sleep disturbance and mood changes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process in Women",
+"question_text": "Which condition is characterised by reduced bone mass and deterioration of bone microarchitecture, resulting in increased fracture risk?",
+"choices": [
+{"text": "Osteoarthritis", "is_correct": false},
+{"text": "Osteoporosis", "is_correct": true},
+{"text": "Rheumatoid arthritis", "is_correct": false},
+{"text": "Osteomyelitis", "is_correct": false}
+],
+"rationale": "Osteoporosis is a skeletal disorder characterised by reduced bone strength and increased susceptibility to fractures. Fragility fractures commonly affect the hip, vertebrae and wrist.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "Which assessment tool is commonly used to screen older adults for possible cognitive impairment?",
+"choices": [
+{"text": "Mini-Mental State Examination (MMSE)", "is_correct": true},
+{"text": "Apgar score", "is_correct": false},
+{"text": "Bishop score", "is_correct": false},
+{"text": "Partograph", "is_correct": false}
+],
+"rationale": "The Mini-Mental State Examination is a structured screening tool that assesses areas such as orientation, memory, attention and language. It supports cognitive assessment but does not independently establish a diagnosis of dementia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "Which term refers to a sudden disturbance in attention and awareness that develops over a short period and often fluctuates?",
+"choices": [
+{"text": "Dementia", "is_correct": false},
+{"text": "Delirium", "is_correct": true},
+{"text": "Menopause", "is_correct": false},
+{"text": "Depression", "is_correct": false}
+],
+"rationale": "Delirium is an acute disturbance in attention, awareness and cognition that usually develops over hours or days. It may result from infection, medication effects, dehydration or metabolic disturbances and requires prompt assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which chronic disease is characterised by persistent elevation of arterial blood pressure?",
+"choices": [
+{"text": "Hypertension", "is_correct": true},
+{"text": "Hypoglycaemia", "is_correct": false},
+{"text": "Osteoporosis", "is_correct": false},
+{"text": "Urinary incontinence", "is_correct": false}
+],
+"rationale": "Hypertension is a chronic condition involving persistently elevated arterial blood pressure. If poorly controlled, it increases the risk of stroke, heart failure, kidney disease and other cardiovascular complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which type of diabetes mellitus is most commonly diagnosed in older adults?",
+"choices": [
+{"text": "Type 1 diabetes mellitus", "is_correct": false},
+{"text": "Type 2 diabetes mellitus", "is_correct": true},
+{"text": "Gestational diabetes mellitus", "is_correct": false},
+{"text": "Neonatal diabetes mellitus", "is_correct": false}
+],
+"rationale": "Type 2 diabetes mellitus is the most common form of diabetes in older adults. It is characterised by insulin resistance and progressive impairment of insulin secretion.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which condition is characterised by degeneration of articular cartilage and changes in the underlying bone?",
+"choices": [
+{"text": "Osteoarthritis", "is_correct": true},
+{"text": "Osteoporosis", "is_correct": false},
+{"text": "Gout only", "is_correct": false},
+{"text": "Septic arthritis", "is_correct": false}
+],
+"rationale": "Osteoarthritis is a degenerative joint disease involving cartilage loss and structural changes in the joint. It commonly causes pain, stiffness and reduced mobility, particularly in older adults.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which type of urinary incontinence is characterised by leakage of urine when coughing, sneezing or lifting heavy objects?",
+"choices": [
+{"text": "Urge incontinence", "is_correct": false},
+{"text": "Stress incontinence", "is_correct": true},
+{"text": "Overflow incontinence", "is_correct": false},
+{"text": "Functional incontinence", "is_correct": false}
+],
+"rationale": "Stress urinary incontinence occurs when increased intra-abdominal pressure causes involuntary urine leakage due to inadequate urethral support or sphincter function. Pelvic floor muscle weakness is a common contributing factor in older women.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which progressive neurological condition is a common cause of dementia in older adults?",
+"choices": [
+{"text": "Alzheimer's disease", "is_correct": true},
+{"text": "Osteoarthritis", "is_correct": false},
+{"text": "Hypertension", "is_correct": false},
+{"text": "Osteoporosis", "is_correct": false}
+],
+"rationale": "Alzheimer's disease is a progressive neurodegenerative disorder and a major cause of dementia. It commonly affects memory, thinking, behaviour and the ability to perform everyday activities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "What is the primary purpose of a home visit by a community health nurse caring for an elderly woman?",
+"choices": [
+{"text": "To replace all hospital services permanently", "is_correct": false},
+{"text": "To assess health needs and provide appropriate care, education and referral within the home environment", "is_correct": true},
+{"text": "To make decisions without involving the elderly woman", "is_correct": false},
+{"text": "To restrict the woman's contact with family members", "is_correct": false}
+],
+"rationale": "A home visit enables the health worker to assess the client's health, functional ability, living conditions and available support. It also provides an opportunity for health education, continuity of care and referral when necessary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "Which environmental modification is most effective in reducing falls among older women at home?",
+"choices": [
+{"text": "Keeping frequently used items on high shelves", "is_correct": false},
+{"text": "Removing loose rugs and improving lighting", "is_correct": true},
+{"text": "Applying polish to make floors slippery", "is_correct": false},
+{"text": "Encouraging walking in poorly lit areas", "is_correct": false}
+],
+"rationale": "Removing loose rugs, improving lighting and keeping walking areas clear reduce environmental hazards associated with falls. Other measures include installing grab rails and ensuring that footwear is secure and appropriate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "What is the term for the concurrent use of multiple medications by one patient, particularly when the number or combination may be inappropriate?",
+"choices": [
+{"text": "Monotherapy", "is_correct": false},
+{"text": "Polypharmacy", "is_correct": true},
+{"text": "Immunisation", "is_correct": false},
+{"text": "Pharmacovigilance", "is_correct": false}
+],
+"rationale": "Polypharmacy refers to the use of multiple medications, commonly five or more, although the clinical appropriateness of the combination is more important than the number alone. It can increase the risk of drug interactions, adverse effects and medication errors.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "Which nutrient is particularly important for maintaining bone health and reducing the risk of osteoporosis in older women?",
+"choices": [
+{"text": "Calcium", "is_correct": true},
+{"text": "Sodium", "is_correct": false},
+{"text": "Cholesterol", "is_correct": false},
+{"text": "Caffeine", "is_correct": false}
+],
+"rationale": "Calcium is essential for bone mineralisation and maintenance of skeletal strength. Adequate dietary calcium, together with sufficient vitamin D and appropriate physical activity, supports bone health in older women.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "What is the primary goal of palliative care for an elderly woman with an advanced life-limiting illness?",
+"choices": [
+{"text": "To cure every underlying disease", "is_correct": false},
+{"text": "To improve quality of life through relief of suffering and support for the patient and family", "is_correct": true},
+{"text": "To discontinue all forms of nursing care", "is_correct": false},
+{"text": "To prolong life regardless of the patient's wishes", "is_correct": false}
+],
+"rationale": "Palliative care focuses on improving quality of life through prevention and relief of physical, psychological, social and spiritual suffering. It supports both the patient and family and can be provided alongside disease-directed treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "Which of the following is an example of financial abuse of an older person?",
+"choices": [
+{"text": "Assisting an older woman to attend a clinic", "is_correct": false},
+{"text": "Taking an older woman's pension money without her consent", "is_correct": true},
+{"text": "Helping an older woman prepare meals", "is_correct": false},
+{"text": "Supporting an older woman to take prescribed medication", "is_correct": false}
+],
+"rationale": "Financial abuse involves the unauthorised or improper use of an older person's money, property or resources. Taking pension funds without consent or through coercion is an example of financial exploitation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process in Women",
+"question_text": "A 58-year-old woman tells a midwife at a CHPS compound that she has not menstruated for 14 months and experiences occasional hot flushes. Which explanation is most appropriate?",
+"choices": [
+{"text": "She is experiencing the normal postmenopausal stage", "is_correct": true},
+{"text": "She has entered the first stage of puberty", "is_correct": false},
+{"text": "She is experiencing menarche", "is_correct": false},
+{"text": "She has secondary amenorrhoea caused by pregnancy until proven otherwise", "is_correct": false}
+],
+"rationale": "Twelve consecutive months without menstruation in a woman of the typical menopausal age, in the absence of another cause, is consistent with menopause. Hot flushes are common symptoms associated with the menopausal transition and postmenopausal period.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Aging Process in Women",
+"question_text": "An elderly woman reports that she has become shorter over the past few years and experiences persistent back pain. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Osteoporosis with possible vertebral compression fractures", "is_correct": true},
+{"text": "Acute appendicitis", "is_correct": false},
+{"text": "Urinary tract infection", "is_correct": false},
+{"text": "Menorrhagia", "is_correct": false}
+],
+"rationale": "Loss of height and persistent back pain in an older woman may indicate vertebral compression fractures associated with osteoporosis. She requires clinical assessment and appropriate investigation rather than assuming that the symptoms are an inevitable part of ageing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Aging Process in Women",
+"question_text": "A 65-year-old woman asks how she can reduce her risk of osteoporosis. Which advice should the nurse provide?",
+"choices": [
+{"text": "Avoid all physical activity to prevent bone injury", "is_correct": false},
+{"text": "Maintain adequate calcium and vitamin D intake and participate in suitable weight-bearing exercise", "is_correct": true},
+{"text": "Replace all meals with fruit juice", "is_correct": false},
+{"text": "Increase alcohol consumption to strengthen the bones", "is_correct": false}
+],
+"rationale": "Adequate calcium and vitamin D intake, together with weight-bearing and muscle-strengthening exercise, supports bone health. Smoking cessation, limiting alcohol and assessing individual fracture risk are also important preventive measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "An 82-year-old woman attending a community clinic reports dizziness when standing from a chair. Her blood pressure falls significantly after standing. What condition should the nurse suspect?",
+"choices": [
+{"text": "Orthostatic hypotension", "is_correct": true},
+{"text": "Hyperglycaemia", "is_correct": false},
+{"text": "Osteoarthritis", "is_correct": false},
+{"text": "Menopause", "is_correct": false}
+],
+"rationale": "Orthostatic hypotension is a fall in blood pressure after moving from a lying or sitting position to standing. It can cause dizziness, fainting and falls, and may be associated with dehydration, autonomic dysfunction or medication effects.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "During a home visit, a midwife finds that an elderly woman has difficulty remembering recent events and managing her daily activities. What is the most appropriate initial nursing action?",
+"choices": [
+{"text": "Assume that the changes are a normal part of ageing", "is_correct": false},
+{"text": "Assess cognitive function, daily functioning, medication use and possible reversible causes", "is_correct": true},
+{"text": "Immediately diagnose Alzheimer's disease", "is_correct": false},
+{"text": "Advise the family to keep her isolated", "is_correct": false}
+],
+"rationale": "Memory problems and reduced ability to perform daily activities require structured assessment rather than automatic attribution to normal ageing. Assessment should consider dementia, delirium, depression, medication effects and potentially reversible medical conditions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "An elderly woman who recently started a new antihypertensive medication reports dizziness and has experienced two falls. What should the nurse assess first?",
+"choices": [
+{"text": "Her favourite type of food", "is_correct": false},
+{"text": "Blood pressure, including postural measurements, medication history and injury status", "is_correct": true},
+{"text": "Her previous occupation only", "is_correct": false},
+{"text": "Her clothing preferences", "is_correct": false}
+],
+"rationale": "Dizziness and falls following a medication change may indicate hypotension or an adverse drug effect. The nurse should assess for injuries, check blood pressure including postural changes and review the medication regimen with the prescriber.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "A 76-year-old woman becomes suddenly confused and disoriented over one day. Her daughter reports that she was mentally alert the previous week. What is the most appropriate interpretation?",
+"choices": [
+{"text": "Normal age-related memory loss", "is_correct": false},
+{"text": "Possible delirium requiring urgent assessment", "is_correct": true},
+{"text": "Confirmed Alzheimer's disease", "is_correct": false},
+{"text": "A normal effect of menopause", "is_correct": false}
+],
+"rationale": "Acute confusion developing over a short period is suggestive of delirium rather than ordinary age-related memory changes. The nurse should urgently assess for infection, medication toxicity, dehydration, metabolic abnormalities and other acute causes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly woman with hypertension attends a CHPS compound for a routine review. Her blood pressure remains above the target agreed with her clinician. Which advice is most appropriate?",
+"choices": [
+{"text": "Stop taking antihypertensive medication because she has no symptoms", "is_correct": false},
+{"text": "Continue prescribed medication, attend follow-up reviews and adopt appropriate lifestyle measures", "is_correct": true},
+{"text": "Double every dose without consulting a clinician", "is_correct": false},
+{"text": "Use only herbal preparations instead of prescribed treatment", "is_correct": false}
+],
+"rationale": "Hypertension is often asymptomatic, so regular treatment and monitoring remain important even when the patient feels well. Lifestyle measures, adherence to prescribed medication and timely review help reduce cardiovascular and renal complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "A 70-year-old woman with type 2 diabetes becomes sweaty, shaky and confused before lunch. What should the nurse suspect?",
+"choices": [
+{"text": "Hypoglycaemia", "is_correct": true},
+{"text": "Hypercalcaemia", "is_correct": false},
+{"text": "Osteoporosis", "is_correct": false},
+{"text": "Hypertension", "is_correct": false}
+],
+"rationale": "Sweating, tremor and confusion are common manifestations of hypoglycaemia. Blood glucose should be checked promptly, and treatment should follow the patient's level of consciousness and the relevant hypoglycaemia protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly woman with diabetes has a small ulcer on the sole of her foot. She says it is painless and has been present for two weeks. What should the nurse do?",
+"choices": [
+{"text": "Reassure her because painless ulcers are harmless", "is_correct": false},
+{"text": "Assess the ulcer, circulation and sensation, provide appropriate wound care and arrange timely clinical review", "is_correct": true},
+{"text": "Advise her to walk barefoot to improve circulation", "is_correct": false},
+{"text": "Apply a tight bandage without assessing the foot", "is_correct": false}
+],
+"rationale": "Diabetic peripheral neuropathy may reduce pain sensation, allowing foot injuries to progress unnoticed. The ulcer requires assessment for infection, impaired circulation and tissue damage, followed by appropriate wound management and referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "A 74-year-old woman complains of pain and stiffness in both knees, especially after periods of inactivity. The stiffness improves after she begins moving. Which condition is most likely?",
+"choices": [
+{"text": "Osteoarthritis", "is_correct": true},
+{"text": "Acute meningitis", "is_correct": false},
+{"text": "Eclampsia", "is_correct": false},
+{"text": "Pulmonary embolism", "is_correct": false}
+],
+"rationale": "Osteoarthritis commonly causes joint pain and brief stiffness after rest, particularly in weight-bearing joints such as the knees. Assessment should establish the severity, functional impact and need for pain management and mobility support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly woman reports involuntary urine leakage when coughing and laughing. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Teach appropriate pelvic floor muscle exercises and assess contributing factors", "is_correct": true},
+{"text": "Restrict all fluid intake permanently", "is_correct": false},
+{"text": "Insert an indwelling urinary catheter immediately", "is_correct": false},
+{"text": "Advise her to avoid all physical activity", "is_correct": false}
+],
+"rationale": "Pelvic floor muscle training is a first-line conservative intervention for stress urinary incontinence. The nurse should also assess symptoms, fluid habits, medications and other contributing conditions before recommending further management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "A woman with dementia repeatedly attempts to leave her home because she believes she must collect her children from school. Which response by the caregiver is most appropriate?",
+"choices": [
+{"text": "Shout at her until she accepts that her children are adults", "is_correct": false},
+{"text": "Respond calmly, provide reassurance and redirect her attention to a safe activity", "is_correct": true},
+{"text": "Lock her in a room without supervision", "is_correct": false},
+{"text": "Ignore her completely whenever she becomes confused", "is_correct": false}
+],
+"rationale": "Calm reassurance and redirection can reduce distress and support safety in a person with dementia. Caregivers should avoid confrontation and assess for triggers such as pain, fear, unmet needs or environmental confusion.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "During a home visit, a midwife finds that an elderly woman with arthritis cannot bathe independently. Which intervention best promotes independence and safety?",
+"choices": [
+{"text": "Perform every activity for her without involving her", "is_correct": false},
+{"text": "Provide suitable assistive devices, install grab rails where possible and encourage safe participation in self-care", "is_correct": true},
+{"text": "Advise her to stop bathing permanently", "is_correct": false},
+{"text": "Encourage her to use a slippery bathroom floor", "is_correct": false}
+],
+"rationale": "Assistive devices and environmental modifications can improve safety while preserving the woman's independence. The nurse should encourage participation according to her abilities and assess the need for caregiver support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "An elderly woman in a rural Ghanaian community has difficulty travelling to the district hospital for regular hypertension reviews. What is the most appropriate community-based response?",
+"choices": [
+{"text": "Discontinue her treatment because she cannot attend hospital regularly", "is_correct": false},
+{"text": "Link her with appropriate CHPS and community follow-up services while arranging referral when necessary", "is_correct": true},
+{"text": "Advise her to take medication only when she develops a headache", "is_correct": false},
+{"text": "Allow an untrained neighbour to change her medication doses", "is_correct": false}
+],
+"rationale": "CHPS and other community-based services can support follow-up, health education and continuity of care for people who face access barriers. Complications or conditions beyond the community service's capacity should be referred through the appropriate pathway.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "A midwife visits an elderly woman who is mostly bedbound following a stroke. Which nursing intervention is most important in preventing pressure injuries?",
+"choices": [
+{"text": "Reposition her regularly, inspect the skin and manage moisture and pressure", "is_correct": true},
+{"text": "Massage reddened bony areas vigorously", "is_correct": false},
+{"text": "Keep her in one position throughout the day", "is_correct": false},
+{"text": "Avoid checking the skin unless she complains of pain", "is_correct": false}
+],
+"rationale": "Regular repositioning, skin inspection and pressure redistribution reduce prolonged tissue pressure and the risk of pressure injuries. Moisture management, adequate nutrition and appropriate support surfaces are also important components of prevention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "An elderly woman living with her daughter has difficulty collecting her prescribed medication because of financial constraints. Which action is most appropriate for the community health nurse?",
+"choices": [
+{"text": "Tell her to stop all medication until she can afford it", "is_correct": false},
+{"text": "Assess her access to care and help her explore NHIS coverage, appropriate facility services and available social support", "is_correct": true},
+{"text": "Recommend buying medication from an unlicensed source", "is_correct": false},
+{"text": "Advise her to share medication with another family member", "is_correct": false}
+],
+"rationale": "The nurse should identify financial and access barriers and help the woman explore available NHIS benefits and appropriate health or social support services. Medication changes or substitutions must be discussed with an authorised prescriber or pharmacist.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "During a home visit, an elderly woman says she feels lonely because her children work in other regions and rarely visit. Which intervention is most appropriate?",
+"choices": [
+{"text": "Dismiss her concerns because loneliness is unavoidable in old age", "is_correct": false},
+{"text": "Assess her emotional wellbeing and help connect her with family, community groups and appropriate social support", "is_correct": true},
+{"text": "Advise her to remain indoors and avoid social contact", "is_correct": false},
+{"text": "Tell her that emotional support is not part of nursing care", "is_correct": false}
+],
+"rationale": "Social isolation and loneliness can negatively affect the physical and psychological wellbeing of older adults. The nurse should assess for depression and other concerns while supporting meaningful family contact and community participation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "An elderly woman takes several prescribed medicines from different facilities and cannot remember their names. What should the nurse do?",
+"choices": [
+{"text": "Advise her to stop all medicines immediately", "is_correct": false},
+{"text": "Conduct medication reconciliation and encourage review by an appropriate prescriber or pharmacist", "is_correct": true},
+{"text": "Add another medicine without reviewing the existing ones", "is_correct": false},
+{"text": "Ask her to take all tablets together regardless of instructions", "is_correct": false}
+],
+"rationale": "Medication reconciliation identifies all medicines being taken, including prescribed drugs, over-the-counter products and herbal preparations. It helps detect duplication, interactions, inappropriate prescriptions and adherence problems.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "An elderly woman taking insulin becomes confused, sweaty and weak. Her blood glucose is 2.8 mmol/L, and she is conscious and able to swallow. What should the nurse do?",
+"choices": [
+{"text": "Give a fast-acting oral carbohydrate according to the hypoglycaemia protocol and recheck glucose", "is_correct": true},
+{"text": "Administer an additional insulin dose", "is_correct": false},
+{"text": "Withhold all treatment until the next meal", "is_correct": false},
+{"text": "Give only plain water and allow her to sleep", "is_correct": false}
+],
+"rationale": "A blood glucose of 2.8 mmol/L indicates hypoglycaemia. If the patient is conscious and can swallow safely, a fast-acting oral carbohydrate should be given according to protocol, followed by repeat glucose assessment and further management as indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "An elderly woman taking warfarin reports black, tarry stools and dizziness. What should the nurse suspect?",
+"choices": [
+{"text": "Possible gastrointestinal bleeding", "is_correct": true},
+{"text": "Normal effect of ageing", "is_correct": false},
+{"text": "Improved blood clotting", "is_correct": false},
+{"text": "Osteoarthritis", "is_correct": false}
+],
+"rationale": "Black, tarry stools may indicate gastrointestinal bleeding, and warfarin increases the risk of serious haemorrhage. Dizziness may suggest blood loss, so the woman requires urgent medical assessment and review of anticoagulation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "An elderly woman has lost weight unintentionally and reports poor appetite. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Assess nutritional status, food intake, swallowing ability and possible underlying illness", "is_correct": true},
+{"text": "Assume weight loss is a normal and harmless part of ageing", "is_correct": false},
+{"text": "Restrict her food intake further", "is_correct": false},
+{"text": "Recommend replacing meals with tea", "is_correct": false}
+],
+"rationale": "Unintentional weight loss may indicate malnutrition, depression, swallowing difficulties, chronic disease or other underlying problems. A comprehensive nutritional assessment helps identify causes and guide appropriate intervention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "An elderly woman has difficulty chewing because she has lost several teeth. Which dietary advice is most appropriate?",
+"choices": [
+{"text": "Provide nutrient-dense foods with soft textures that are easier to chew", "is_correct": true},
+{"text": "Advise her to avoid protein-containing foods", "is_correct": false},
+{"text": "Recommend eating only dry foods", "is_correct": false},
+{"text": "Restrict all fruits and vegetables", "is_correct": false}
+],
+"rationale": "Soft, nutrient-dense foods can help an older person meet nutritional requirements when chewing is difficult. The nurse should also assess oral health and refer for dental care where available.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "An elderly woman with hypertension frequently eats salted fish, salted meat and heavily salted soups. Which dietary modification should the nurse recommend?",
+"choices": [
+{"text": "Reduce salt intake and use herbs and other suitable seasonings to improve flavour", "is_correct": true},
+{"text": "Increase salt intake to prevent dizziness", "is_correct": false},
+{"text": "Avoid all sources of dietary protein", "is_correct": false},
+{"text": "Replace drinking water with salted beverages", "is_correct": false}
+],
+"rationale": "Reducing dietary sodium can help improve blood pressure control in people with hypertension. The nurse should provide culturally appropriate advice on reducing salt in soups, processed foods and salted fish while maintaining a balanced diet.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "An elderly woman with advanced cancer is receiving palliative care at home and reports severe pain. What should the nurse do?",
+"choices": [
+{"text": "Assess the pain and support appropriate prescribed analgesia with ongoing monitoring", "is_correct": true},
+{"text": "Tell her that pain is unavoidable at the end of life", "is_correct": false},
+{"text": "Stop all medication because the illness is advanced", "is_correct": false},
+{"text": "Advise her family to use unprescribed sedatives", "is_correct": false}
+],
+"rationale": "Pain relief is a central component of palliative care, and pain should be assessed systematically and treated using an appropriate prescribed plan. The nurse should monitor response, adverse effects and the patient's comfort.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "A family caring for an elderly woman with advanced dementia asks how to manage her difficulty swallowing. Which advice is most appropriate?",
+"choices": [
+{"text": "Assess swallowing safety and seek appropriate clinical and nutritional review before changing feeding methods", "is_correct": true},
+{"text": "Force-feed her quickly to ensure adequate intake", "is_correct": false},
+{"text": "Give large amounts of water while she is lying flat", "is_correct": false},
+{"text": "Ignore coughing during meals", "is_correct": false}
+],
+"rationale": "Dysphagia increases the risk of choking, aspiration and malnutrition. Swallowing safety should be assessed, and feeding position, food consistency and other interventions should be guided by appropriate clinical evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "During a home visit, an elderly woman has poor personal hygiene, untreated pressure injuries and inadequate food. Her caregiver says there is no time to care for her. What should the nurse suspect?",
+"choices": [
+{"text": "Possible neglect", "is_correct": true},
+{"text": "Normal ageing", "is_correct": false},
+{"text": "Healthy independence", "is_correct": false},
+{"text": "Appropriate family care", "is_correct": false}
+],
+"rationale": "Neglect involves failure to provide necessary care, assistance or protection, resulting in harm or risk of harm. The nurse should assess the woman's immediate safety and needs, document objective findings and follow appropriate safeguarding and referral procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "An elderly woman tells a midwife privately that her grandson regularly threatens her and takes her pension money. What is the most appropriate response?",
+"choices": [
+{"text": "Dismiss the disclosure as a family disagreement", "is_correct": false},
+{"text": "Listen without judgement, assess immediate safety, document the disclosure and follow appropriate safeguarding and referral procedures", "is_correct": true},
+{"text": "Confront the grandson publicly without assessing the woman's safety", "is_correct": false},
+{"text": "Tell the woman that she must remain silent to protect the family", "is_correct": false}
+],
+"rationale": "Threats and unauthorised taking of pension money may constitute psychological and financial abuse. The nurse should respond sensitively, respect confidentiality within safeguarding and legal limits, assess immediate risk and involve appropriate support services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Aging Process in Women",
+"question_text": "An elderly woman with a history of menopause at age 45 has never undergone assessment for osteoporosis. She now presents with a low-trauma wrist fracture after a minor fall. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The fracture is likely to be unrelated to bone health", "is_correct": false},
+{"text": "The fracture may be a fragility fracture, and she requires assessment for osteoporosis and future fracture risk", "is_correct": true},
+{"text": "All fractures in older adults are caused by infection", "is_correct": false},
+{"text": "Early menopause protects women against osteoporosis", "is_correct": false}
+],
+"rationale": "A fracture following a minor fall suggests reduced bone strength and should prompt assessment for osteoporosis. Earlier menopause can increase the duration of oestrogen deficiency and contribute to greater bone loss.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "An 80-year-old woman with previously stable memory becomes confused over two days. She has fever, painful urination and reduced fluid intake. Which explanation is most likely?",
+"choices": [
+{"text": "Progressive Alzheimer's disease alone", "is_correct": false},
+{"text": "Acute delirium possibly triggered by a urinary tract infection and dehydration", "is_correct": true},
+{"text": "Normal age-related cognitive decline", "is_correct": false},
+{"text": "A normal menopausal symptom", "is_correct": false}
+],
+"rationale": "The sudden onset of confusion suggests delirium, and fever, urinary symptoms and reduced fluid intake indicate possible infection and dehydration as triggers. Prompt assessment and treatment of the underlying causes are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Geriatric Midwifery Assessment",
+"question_text": "A 78-year-old woman has fallen three times in two months. She takes several medications, has poor vision and reports dizziness when standing. Which approach best addresses her risk?",
+"choices": [
+{"text": "Advise her to remain in bed permanently", "is_correct": false},
+{"text": "Conduct a multifactorial falls assessment covering medications, vision, postural blood pressure, gait and home hazards", "is_correct": true},
+{"text": "Focus only on her age and make no further assessment", "is_correct": false},
+{"text": "Recommend stopping all prescribed medication without review", "is_correct": false}
+],
+"rationale": "Recurrent falls usually have multiple contributing factors, including medication effects, visual impairment, postural hypotension and environmental hazards. A multifactorial assessment supports targeted interventions that improve safety without unnecessarily restricting independence.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly woman with diabetes and hypertension develops sudden weakness on the right side of her body and difficulty speaking. What should the nurse suspect and do?",
+"choices": [
+{"text": "Osteoarthritis; arrange a routine clinic appointment", "is_correct": false},
+{"text": "Stroke; activate emergency referral and arrange urgent assessment", "is_correct": true},
+{"text": "Normal ageing; reassure the family", "is_correct": false},
+{"text": "Menopause; provide hormonal advice", "is_correct": false}
+],
+"rationale": "Sudden unilateral weakness and speech difficulty are classic warning signs of stroke. Immediate emergency referral is essential because timely assessment and treatment can reduce disability and mortality.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly woman with diabetes has a swollen, red and warm foot with a deep ulcer and fever. Which clinical concern should take priority?",
+"choices": [
+{"text": "A minor skin irritation that can be reviewed in one month", "is_correct": false},
+{"text": "A potentially serious diabetic foot infection with risk of systemic infection", "is_correct": true},
+{"text": "Normal age-related skin changes", "is_correct": false},
+{"text": "Uncomplicated osteoarthritis", "is_correct": false}
+],
+"rationale": "A deep diabetic foot ulcer accompanied by inflammation and fever raises concern for significant infection and possible sepsis. Urgent clinical assessment, appropriate antimicrobial treatment and evaluation of tissue perfusion are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home Nursing Care for the Elderly Woman",
+"question_text": "A community health nurse visits an elderly woman who lives alone. The woman has poor mobility, cannot prepare meals and has missed several clinic appointments. Which care plan is most appropriate?",
+"choices": [
+{"text": "Focus only on her blood pressure and ignore her living conditions", "is_correct": false},
+{"text": "Develop an individualised care plan involving the woman, available family or trusted caregivers, CHPS services and appropriate social support", "is_correct": true},
+{"text": "Transfer all decision-making to a neighbour without the woman's agreement", "is_correct": false},
+{"text": "Advise her to stop attending clinic because travelling is difficult", "is_correct": false}
+],
+"rationale": "The woman's needs involve health, mobility, nutrition, social support and access to services. An individualised plan should respect her preferences and coordinate family, community and health-system resources to support safe living at home.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "An elderly woman taking a diuretic, an antihypertensive and a sedative has recurrent falls. Her blood pressure falls on standing, and she reports daytime drowsiness. Which intervention is most appropriate?",
+"choices": [
+{"text": "Increase the doses of all three medications", "is_correct": false},
+{"text": "Arrange a comprehensive medication review to identify possible adverse effects and interactions", "is_correct": true},
+{"text": "Stop all medications permanently without clinical review", "is_correct": false},
+{"text": "Prescribe an additional sedative to improve sleep", "is_correct": false}
+],
+"rationale": "Diuretics, antihypertensives and sedatives may contribute to postural hypotension, dizziness and impaired alertness. A structured medication review can identify inappropriate combinations and guide safe changes by the authorised prescriber.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "An elderly woman with heart failure has poor appetite, ankle swelling and increasing breathlessness. Her family believes she needs to drink large amounts of water to improve her strength. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Encourage unrestricted fluid intake without assessing her condition", "is_correct": false},
+{"text": "Assess for fluid overload and nutritional problems, and reinforce the individualised fluid and dietary plan prescribed by her clinician", "is_correct": true},
+{"text": "Stop all food and fluid intake indefinitely", "is_correct": false},
+{"text": "Advise her to increase salt intake to improve appetite", "is_correct": false}
+],
+"rationale": "Ankle swelling and breathlessness may indicate fluid overload in a woman with heart failure. Fluid and sodium recommendations must be individualised, while poor appetite and nutritional status should also be assessed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "An elderly woman with advanced cancer is approaching the end of life. She has expressed a wish to remain at home, but her family is worried that they cannot manage her symptoms. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Ignore her preference and arrange hospital admission without discussion", "is_correct": false},
+{"text": "Assess her wishes and care needs, discuss a home palliative care plan with the family and coordinate professional support and referral when needed", "is_correct": true},
+{"text": "Tell the family that symptom management is no longer necessary", "is_correct": false},
+{"text": "Advise the family to manage all symptoms without professional guidance", "is_correct": false}
+],
+"rationale": "Palliative care should respect the patient's preferences while ensuring that symptoms and caregiver needs are adequately addressed. A coordinated plan may include pain management, nursing visits, caregiver education, emergency contacts and referral when symptoms cannot be safely managed at home.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "During a home visit, a midwife notices bruises on an elderly woman's arms. Her caregiver answers every question for her and refuses to allow the nurse to speak with her privately. What is the most appropriate next action?",
+"choices": [
+{"text": "Accept the caregiver's explanation without further assessment", "is_correct": false},
+{"text": "Seek an opportunity to speak with the woman privately, assess immediate safety and follow safeguarding procedures", "is_correct": true},
+{"text": "Accuse the caregiver publicly without obtaining further information", "is_correct": false},
+{"text": "Leave immediately and make no record of the visit", "is_correct": false}
+],
+"rationale": "Unexplained injuries and controlling caregiver behaviour may indicate physical abuse or coercion. A private, sensitive assessment allows the woman to disclose concerns more safely, while objective documentation and appropriate safeguarding action protect her welfare.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
