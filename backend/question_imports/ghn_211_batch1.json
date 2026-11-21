@@ -1,0 +1,802 @@
+{
+"courses": [
+{
+"course_code": "GHN-211",
+"course_title": "Gerontology and Home Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"The Aging Process: Physical and Psychological Changes",
+"Geriatric Assessment: Falls Risk and Cognitive Decline",
+"Common Health Issues in the Elderly",
+"Home Nursing Care for the Elderly",
+"Medication Management in Geriatrics",
+"Nutrition in the Elderly",
+"End-of-Life Care and Palliative Care at Home",
+"Elder Abuse and Neglect"
+],
+"questions": [
+{
+"topic": "The Aging Process",
+"question_text": "Which term refers to the scientific study of the biological, psychological and social aspects of ageing?",
+"choices": [
+{"text": "Paediatrics", "is_correct": false},
+{"text": "Gerontology", "is_correct": true},
+{"text": "Gynaecology", "is_correct": false},
+{"text": "Epidemiology", "is_correct": false}
+],
+"rationale": "Gerontology is the multidisciplinary study of ageing and the changes associated with growing older. It examines biological, psychological and social factors affecting older adults.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process",
+"question_text": "Which of the following is a common physiological change associated with normal ageing?",
+"choices": [
+{"text": "Increased skin elasticity", "is_correct": false},
+{"text": "Increased bone density", "is_correct": false},
+{"text": "Reduced elasticity of the skin", "is_correct": true},
+{"text": "Increased muscle mass", "is_correct": false}
+],
+"rationale": "Ageing is associated with reduced collagen and elastin, resulting in thinner, drier and less elastic skin. These changes increase susceptibility to skin tears, bruising and pressure injuries.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process",
+"question_text": "An elderly woman in a Ghanaian community reports difficulty reading small print and recognising objects at a distance. Which age-related condition is most likely responsible?",
+"choices": [
+{"text": "Presbyopia", "is_correct": true},
+{"text": "Presbycusis", "is_correct": false},
+{"text": "Osteoporosis", "is_correct": false},
+{"text": "Arthritis", "is_correct": false}
+],
+"rationale": "Presbyopia is the age-related reduction in the ability of the eye to focus on nearby objects due to reduced lens flexibility. Reading glasses or appropriate visual assessment may help improve the person's ability to perform daily activities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Aging Process",
+"question_text": "Which of the following best describes presbycusis?",
+"choices": [
+{"text": "Age-related loss of hearing", "is_correct": true},
+{"text": "Age-related loss of vision", "is_correct": false},
+{"text": "Age-related reduction in bone density", "is_correct": false},
+{"text": "Age-related loss of memory in every older adult", "is_correct": false}
+],
+"rationale": "Presbycusis is a gradual, usually bilateral sensorineural hearing loss associated with ageing. It commonly affects the ability to hear high-frequency sounds and understand speech, particularly in noisy environments.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process",
+"question_text": "A 75-year-old man in Kumasi reports feeling lonely after retirement because he no longer participates in his previous community activities. Which psychological or social issue is he most likely experiencing?",
+"choices": [
+{"text": "Social isolation", "is_correct": true},
+{"text": "Hyperactivity", "is_correct": false},
+{"text": "Increased sensory perception", "is_correct": false},
+{"text": "Improved social integration", "is_correct": false}
+],
+"rationale": "Retirement may reduce social interaction and contribute to loneliness and social isolation, particularly when an older person loses established social roles. Nurses should encourage meaningful social participation and connection with family and community support systems.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Aging Process",
+"question_text": "Which physiological change contributes to the increased risk of constipation among older adults?",
+"choices": [
+{"text": "Increased intestinal motility", "is_correct": false},
+{"text": "Reduced gastrointestinal motility", "is_correct": true},
+{"text": "Increased production of digestive enzymes in all older adults", "is_correct": false},
+{"text": "Increased absorption of dietary fibre", "is_correct": false}
+],
+"rationale": "Reduced gastrointestinal motility, inadequate fluid intake, limited physical activity and certain medications contribute to constipation in older adults. Adequate hydration, dietary fibre and appropriate physical activity can help promote bowel regularity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process",
+"question_text": "A 78-year-old woman becomes anxious because she has recently retired and feels that she is no longer useful to her family. What is the most appropriate nursing intervention?",
+"choices": [
+{"text": "Discourage her from participating in family decisions", "is_correct": false},
+{"text": "Encourage meaningful activities and continued participation in family and community life", "is_correct": true},
+{"text": "Advise her to avoid social interaction", "is_correct": false},
+{"text": "Tell her that such feelings are unavoidable in old age", "is_correct": false}
+],
+"rationale": "Meaningful activities and continued social participation help older adults maintain self-esteem, independence and psychological well-being. Nurses should recognise the individual's abilities and encourage opportunities for contribution within the family and community.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Aging Process",
+"question_text": "Which statement about ageing is most accurate?",
+"choices": [
+{"text": "Ageing always results in severe cognitive impairment", "is_correct": false},
+{"text": "Ageing is a universal biological process, but its effects vary among individuals", "is_correct": true},
+{"text": "All older adults develop chronic diseases", "is_correct": false},
+{"text": "Ageing inevitably results in complete dependence on caregivers", "is_correct": false}
+],
+"rationale": "Ageing is a normal biological process involving progressive changes in body structure and function. However, the rate and effects of ageing differ because of genetics, lifestyle, environmental exposure and healthcare access.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "The Aging Process",
+"question_text": "An elderly patient complains of feeling cold even when younger family members are comfortable with the room temperature. Which age-related change may explain this observation?",
+"choices": [
+{"text": "Increased subcutaneous fat", "is_correct": false},
+{"text": "Reduced subcutaneous fat and impaired thermoregulation", "is_correct": true},
+{"text": "Increased metabolic rate", "is_correct": false},
+{"text": "Increased sweat gland activity", "is_correct": false}
+],
+"rationale": "Older adults may have reduced subcutaneous fat and impaired physiological responses to temperature changes. These alterations increase susceptibility to hypothermia and other temperature-related complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "The Aging Process",
+"question_text": "A nurse observes that an elderly patient has gradually become slower when walking and has difficulty rising from a chair. The patient also has reduced muscle strength. Which age-related condition best explains these findings?",
+"choices": [
+{"text": "Sarcopenia", "is_correct": true},
+{"text": "Hyperthyroidism", "is_correct": false},
+{"text": "Polycythaemia", "is_correct": false},
+{"text": "Osteomalacia", "is_correct": false}
+],
+"rationale": "Sarcopenia is a progressive loss of skeletal muscle mass, strength and physical performance associated with ageing. It increases the risk of falls, functional dependence and reduced quality of life.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "Which assessment tool is commonly used to evaluate cognitive function in older adults?",
+"choices": [
+{"text": "Mini-Mental State Examination (MMSE)", "is_correct": true},
+{"text": "Braden Scale", "is_correct": false},
+{"text": "APGAR Score", "is_correct": false},
+{"text": "Apgar Neonatal Assessment", "is_correct": false}
+],
+"rationale": "The Mini-Mental State Examination assesses cognitive domains such as orientation, attention, memory, language and visuospatial ability. It supports cognitive screening but does not independently establish a diagnosis of dementia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "A 79-year-old man reports falling twice within the past three months. Which assessment should the nurse prioritise?",
+"choices": [
+{"text": "Assessment of fall risk, gait, balance and possible contributing factors", "is_correct": true},
+{"text": "Assessment of his educational background only", "is_correct": false},
+{"text": "Assessment of his appetite only", "is_correct": false},
+{"text": "Assessment of his ability to remember family names only", "is_correct": false}
+],
+"rationale": "A history of recurrent falls is a major indicator of increased future fall risk. Assessment should include gait, balance, muscle strength, vision, medication use, postural blood pressure and environmental hazards.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "Which of the following is an important component of a comprehensive geriatric assessment?",
+"choices": [
+{"text": "Physical health assessment only", "is_correct": false},
+{"text": "Assessment of physical, psychological, functional and social needs", "is_correct": true},
+{"text": "Assessment of financial status only", "is_correct": false},
+{"text": "Assessment of family history without examining current health", "is_correct": false}
+],
+"rationale": "Comprehensive geriatric assessment is a multidimensional evaluation of an older person's medical, psychological, functional and social needs. It helps develop an individualised care plan that promotes independence and quality of life.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "An elderly patient becomes dizzy when moving from a lying position to a standing position. What should the nurse suspect?",
+"choices": [
+{"text": "Orthostatic hypotension", "is_correct": true},
+{"text": "Hyperglycaemia", "is_correct": false},
+{"text": "Hyperthermia", "is_correct": false},
+{"text": "Increased intracranial pressure", "is_correct": false}
+],
+"rationale": "Orthostatic hypotension is a significant reduction in blood pressure following a change from lying or sitting to standing. It may cause dizziness, fainting and falls, particularly in older adults taking antihypertensive or diuretic medications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "Which assessment finding is most suggestive of delirium rather than chronic dementia?",
+"choices": [
+{"text": "Gradual memory deterioration over several years", "is_correct": false},
+{"text": "Acute onset of confusion with fluctuating attention and awareness", "is_correct": true},
+{"text": "Stable cognitive impairment over a prolonged period", "is_correct": false},
+{"text": "Long-standing difficulty recalling recent events", "is_correct": false}
+],
+"rationale": "Delirium is an acute disturbance of attention and awareness that usually develops over hours or days and often fluctuates. It may result from infection, dehydration, medication effects or metabolic disturbances and requires urgent assessment to identify the underlying cause.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "A 76-year-old woman who was previously independent becomes confused within 24 hours and develops fever and frequent urination. Which condition should the nurse suspect first?",
+"choices": [
+{"text": "Normal ageing", "is_correct": false},
+{"text": "Acute delirium associated with a possible urinary tract infection", "is_correct": true},
+{"text": "Alzheimer's disease", "is_correct": false},
+{"text": "Presbyopia", "is_correct": false}
+],
+"rationale": "The sudden onset of confusion in an older adult is suggestive of delirium rather than normal ageing or typical gradual dementia progression. Fever and urinary symptoms raise suspicion of infection, although other causes must also be investigated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "A nurse assesses an elderly patient who has fallen at home and now complains of severe hip pain. The affected leg appears shortened and externally rotated. What is the priority nursing action?",
+"choices": [
+{"text": "Encourage the patient to walk to assess mobility", "is_correct": false},
+{"text": "Immobilise the affected limb as appropriate and arrange urgent medical assessment", "is_correct": true},
+{"text": "Massage the hip to reduce discomfort", "is_correct": false},
+{"text": "Ask the patient to perform repeated hip movements", "is_correct": false}
+],
+"rationale": "A shortened, externally rotated leg with severe hip pain following a fall strongly suggests a hip fracture. The nurse should avoid unnecessary movement, assess neurovascular status, manage pain and arrange urgent transfer for medical evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "Which of the following best describes the purpose of assessing activities of daily living (ADLs) in an older adult?",
+"choices": [
+{"text": "To determine the person's ability to perform basic self-care activities", "is_correct": true},
+{"text": "To determine the person's political preferences", "is_correct": false},
+{"text": "To establish the person's blood group", "is_correct": false},
+{"text": "To determine the person's educational qualifications", "is_correct": false}
+],
+"rationale": "Activities of daily living include basic self-care activities such as bathing, dressing, toileting, feeding and transferring. Their assessment helps determine functional independence and the level of assistance required.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Geriatric Assessment",
+"question_text": "An older adult who lives alone has experienced repeated falls, reduced vision and difficulty remembering medication schedules. Which nursing assessment is most appropriate?",
+"choices": [
+{"text": "A comprehensive assessment of functional ability, cognition, vision, medication use and home safety", "is_correct": true},
+{"text": "Assessment of body temperature only", "is_correct": false},
+{"text": "Assessment of respiratory rate only", "is_correct": false},
+{"text": "Assessment of family size without evaluating the patient's health", "is_correct": false}
+],
+"rationale": "The patient has multiple interacting risk factors that may compromise safety and independent living. A comprehensive geriatric assessment can identify modifiable problems and guide an individualised home-care and referral plan.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which of the following is a major modifiable risk factor for hypertension in older adults?",
+"choices": [
+{"text": "Excessive dietary sodium intake", "is_correct": true},
+{"text": "Age-related reduction in skin elasticity", "is_correct": false},
+{"text": "Natural hair greying", "is_correct": false},
+{"text": "Reduced visual accommodation", "is_correct": false}
+],
+"rationale": "High dietary sodium intake contributes to increased blood pressure and cardiovascular risk. Lifestyle modifications, including salt reduction, physical activity, weight management and appropriate medication adherence, are important in hypertension management.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "A 72-year-old man with hypertension visits a CHPS compound for routine monitoring. Which practice is most appropriate when measuring his blood pressure?",
+"choices": [
+{"text": "Measure immediately after vigorous exercise", "is_correct": false},
+{"text": "Allow him to rest, use an appropriate cuff size and position his arm at heart level", "is_correct": true},
+{"text": "Use a cuff that is too small to obtain a faster reading", "is_correct": false},
+{"text": "Measure blood pressure over clothing", "is_correct": false}
+],
+"rationale": "Accurate blood pressure measurement requires adequate rest, correct cuff size, proper positioning and a supported arm at heart level. These measures reduce errors that may result in inappropriate clinical decisions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which type of diabetes mellitus is most commonly diagnosed in older adults?",
+"choices": [
+{"text": "Type 1 diabetes mellitus", "is_correct": false},
+{"text": "Type 2 diabetes mellitus", "is_correct": true},
+{"text": "Gestational diabetes mellitus", "is_correct": false},
+{"text": "Neonatal diabetes mellitus", "is_correct": false}
+],
+"rationale": "Type 2 diabetes mellitus is the most common form of diabetes in older adults. It is associated with insulin resistance and progressive impairment of pancreatic beta-cell function.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly diabetic patient taking insulin becomes sweaty, tremulous and confused before lunch. What should the nurse suspect?",
+"choices": [
+{"text": "Hyperglycaemia", "is_correct": false},
+{"text": "Hypoglycaemia", "is_correct": true},
+{"text": "Hypertension", "is_correct": false},
+{"text": "Hypernatraemia", "is_correct": false}
+],
+"rationale": "Sweating, tremors and confusion are common manifestations of hypoglycaemia. The nurse should check blood glucose immediately and provide appropriate glucose treatment based on the patient's consciousness and ability to swallow.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which of the following best describes osteoarthritis?",
+"choices": [
+{"text": "A degenerative joint disease involving progressive loss of articular cartilage", "is_correct": true},
+{"text": "An acute bacterial infection of the joints", "is_correct": false},
+{"text": "An autoimmune disease affecting only the skin", "is_correct": false},
+{"text": "A disorder caused exclusively by calcium deficiency", "is_correct": false}
+],
+"rationale": "Osteoarthritis is a degenerative joint disorder characterised by changes in articular cartilage, subchondral bone and other joint structures. It commonly causes joint pain, stiffness and reduced mobility, particularly in the knees, hips and hands.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "A 70-year-old woman with knee osteoarthritis reports severe stiffness after sitting for a long period. Which intervention is most appropriate?",
+"choices": [
+{"text": "Encourage appropriate low-impact exercises and prescribed pain management", "is_correct": true},
+{"text": "Advise complete bed rest for several weeks", "is_correct": false},
+{"text": "Discourage all joint movement", "is_correct": false},
+{"text": "Recommend excessive weight-bearing exercises during acute pain", "is_correct": false}
+],
+"rationale": "Regular low-impact physical activity helps maintain joint mobility, muscle strength and functional independence in people with osteoarthritis. Appropriate analgesia, weight management and physiotherapy can also improve symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which characteristic is most strongly associated with Alzheimer's disease?",
+"choices": [
+{"text": "Progressive deterioration in memory and other cognitive functions", "is_correct": true},
+{"text": "Sudden complete recovery of memory", "is_correct": false},
+{"text": "Acute fever with productive cough", "is_correct": false},
+{"text": "Temporary loss of hearing after exposure to loud noise", "is_correct": false}
+],
+"rationale": "Alzheimer's disease is a progressive neurodegenerative disorder that commonly begins with impairment of recent memory. It may subsequently affect language, reasoning, behaviour and the ability to perform daily activities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "A 78-year-old man with dementia repeatedly asks where his deceased wife is. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Scold him for repeatedly asking the same question", "is_correct": false},
+{"text": "Respond calmly, acknowledge his feelings and provide reassurance", "is_correct": true},
+{"text": "Ignore him completely", "is_correct": false},
+{"text": "Force him to remember the circumstances of her death", "is_correct": false}
+],
+"rationale": "People with dementia may have difficulty retaining information and may repeatedly ask the same questions. Calm reassurance, emotional support and respectful communication reduce distress and preserve dignity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "Which of the following is a common cause of urinary incontinence in older adults?",
+"choices": [
+{"text": "Overactive bladder and age-related changes in bladder function", "is_correct": true},
+{"text": "Increased bone density", "is_correct": false},
+{"text": "Improved pelvic floor muscle strength", "is_correct": false},
+{"text": "Increased kidney filtration in all older adults", "is_correct": false}
+],
+"rationale": "Urinary incontinence may result from detrusor overactivity, pelvic floor weakness, neurological disorders, mobility limitations or urinary tract pathology. It should not be considered an inevitable consequence of ageing, and potentially reversible causes must be assessed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly woman reports involuntary urine leakage whenever she coughs, sneezes or lifts heavy objects. Which type of urinary incontinence is most likely?",
+"choices": [
+{"text": "Urge incontinence", "is_correct": false},
+{"text": "Stress incontinence", "is_correct": true},
+{"text": "Overflow incontinence", "is_correct": false},
+{"text": "Functional incontinence", "is_correct": false}
+],
+"rationale": "Stress urinary incontinence occurs when increased intra-abdominal pressure causes involuntary leakage of urine. Pelvic floor muscle weakness is a common contributing factor, and pelvic floor exercises may help improve symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "An elderly patient with hypertension and diabetes suddenly develops facial drooping, weakness of the right arm and difficulty speaking. What should the nurse do first?",
+"choices": [
+{"text": "Allow the patient to sleep and reassess later", "is_correct": false},
+{"text": "Suspect acute stroke and arrange immediate emergency assessment and transfer", "is_correct": true},
+{"text": "Administer oral food and fluids", "is_correct": false},
+{"text": "Massage the affected arm and face", "is_correct": false}
+],
+"rationale": "Sudden facial weakness, arm weakness and speech disturbance are warning signs of an acute stroke. Immediate emergency referral is essential because time-sensitive assessment and treatment may reduce permanent neurological damage; oral intake should be withheld until swallowing safety is assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Health Issues in the Elderly",
+"question_text": "A 75-year-old man with dementia develops sudden confusion, fever, reduced food intake and general weakness. His family believes these changes are simply part of ageing. Which nursing interpretation is most appropriate?",
+"choices": [
+{"text": "The symptoms are normal consequences of dementia", "is_correct": false},
+{"text": "The patient may have an acute illness, such as infection, causing delirium superimposed on dementia", "is_correct": true},
+{"text": "The patient should immediately be given sedatives without assessment", "is_correct": false},
+{"text": "The patient no longer requires medical assessment", "is_correct": false}
+],
+"rationale": "An acute change in cognition and physical condition in a person with dementia should never automatically be attributed to ageing. Infection, dehydration, metabolic disturbances and medication effects may cause delirium and require prompt investigation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "What is the main objective of home nursing care for older adults?",
+"choices": [
+{"text": "To promote health, independence and quality of life within the home environment", "is_correct": true},
+{"text": "To eliminate the need for all hospital services", "is_correct": false},
+{"text": "To make every older person completely dependent on family members", "is_correct": false},
+{"text": "To provide treatment without involving the patient in decisions", "is_correct": false}
+],
+"rationale": "Home nursing care provides health services and support within the patient's home to promote recovery, disease management, independence and comfort. It also involves family education, prevention of complications and coordination with community health services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "A community health nurse visits an elderly man living with his extended family in a rural Ghanaian community. Which intervention best supports safe home nursing care?",
+"choices": [
+{"text": "Exclude family members from all aspects of care", "is_correct": false},
+{"text": "Assess the home environment, educate willing caregivers and develop an individualised care plan", "is_correct": true},
+{"text": "Encourage the family to discontinue prescribed medications", "is_correct": false},
+{"text": "Recommend hospital admission for every minor complaint", "is_correct": false}
+],
+"rationale": "Home nursing care should consider the patient's needs, living environment, available resources and family support structure. Educating willing caregivers and developing a person-centred care plan can improve safety, treatment adherence and continuity of care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "Which modification is most appropriate for preventing falls in an elderly person's home?",
+"choices": [
+{"text": "Keeping electrical cables across walking pathways", "is_correct": false},
+{"text": "Installing grab bars in the bathroom and improving lighting", "is_correct": true},
+{"text": "Using loose rugs on polished floors", "is_correct": false},
+{"text": "Encouraging the patient to walk in poorly illuminated areas", "is_correct": false}
+],
+"rationale": "Grab bars, adequate lighting, clear pathways and non-slip flooring reduce environmental fall hazards. Home modifications should be based on the individual's mobility, vision and functional abilities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "An elderly patient with limited mobility requires assistance with bathing at home. Which nursing practice best maintains the patient's dignity?",
+"choices": [
+{"text": "Expose the patient's body throughout the procedure", "is_correct": false},
+{"text": "Provide privacy, explain each procedure and encourage participation as much as possible", "is_correct": true},
+{"text": "Complete the bath without informing the patient", "is_correct": false},
+{"text": "Ignore the patient's personal preferences", "is_correct": false}
+],
+"rationale": "Personal care should respect privacy, autonomy, cultural preferences and dignity. Encouraging participation according to the patient's abilities also promotes independence and self-esteem.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "An elderly patient who is bedridden at home has developed redness over the sacral area. Which intervention should the nurse prioritise?",
+"choices": [
+{"text": "Massage the reddened area vigorously", "is_correct": false},
+{"text": "Relieve pressure, assess the skin and implement an individualised repositioning plan", "is_correct": true},
+{"text": "Keep the patient in the same position to avoid discomfort", "is_correct": false},
+{"text": "Apply powder and ignore further skin assessment", "is_correct": false}
+],
+"rationale": "Persistent redness over a pressure area may indicate an early pressure injury. Immediate pressure redistribution, regular skin assessment, moisture management and individualised repositioning help prevent further tissue damage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "Which action is most important when providing nursing care to an elderly patient from a Ghanaian community who believes that ageing-related illness is caused by spiritual forces?",
+"choices": [
+{"text": "Ridicule the patient's cultural beliefs", "is_correct": false},
+{"text": "Respectfully explore the beliefs while providing accurate health education and appropriate clinical care", "is_correct": true},
+{"text": "Encourage the patient to abandon all medical treatment", "is_correct": false},
+{"text": "Refuse to provide nursing care because of the patient's beliefs", "is_correct": false}
+],
+"rationale": "Culturally sensitive nursing care recognises that beliefs and traditional practices may influence health-seeking behaviour. Nurses should communicate respectfully, correct harmful misconceptions and encourage timely evidence-based healthcare without unnecessary confrontation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "A home-care nurse discovers that an elderly patient has stopped taking prescribed antihypertensive medication because the family cannot afford transportation to the hospital for review. What is the most appropriate action?",
+"choices": [
+{"text": "Advise the patient to discontinue treatment permanently", "is_correct": false},
+{"text": "Assess the patient's condition and help link the family with appropriate CHPS, district health services and available NHIS-supported care", "is_correct": true},
+{"text": "Recommend doubling the next medication dose", "is_correct": false},
+{"text": "Ignore the problem because it is financial", "is_correct": false}
+],
+"rationale": "Financial and transportation barriers can interrupt continuity of care and increase the risk of uncontrolled hypertension. Linking patients with community-based services and appropriate NHIS-supported healthcare can improve access, although NHIS coverage and individual service eligibility should be verified.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Home Nursing Care for the Elderly",
+"question_text": "An elderly man with limited mobility lives with his daughter, who provides most of his daily care. The daughter reports exhaustion, disturbed sleep and inability to continue managing all his needs. What should the nurse prioritise?",
+"choices": [
+{"text": "Tell the daughter that caregiving is entirely her responsibility", "is_correct": false},
+{"text": "Assess caregiver burden and help arrange additional family, community or professional support", "is_correct": true},
+{"text": "Advise the daughter to stop all caregiving immediately without an alternative plan", "is_correct": false},
+{"text": "Ignore the daughter's concerns and focus only on the patient", "is_correct": false}
+],
+"rationale": "Caregiver burden can lead to physical exhaustion, psychological distress and reduced quality of care. Assessment and appropriate support, including respite, family participation and community resources, are essential for sustainable home care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "What is meant by polypharmacy?",
+"choices": [
+{"text": "The use of multiple medications by one patient, often five or more", "is_correct": true},
+{"text": "The administration of only one medication", "is_correct": false},
+{"text": "The use of herbal medicines exclusively", "is_correct": false},
+{"text": "The complete avoidance of prescribed medications", "is_correct": false}
+],
+"rationale": "Polypharmacy commonly refers to the concurrent use of multiple medications, often defined as five or more. Although some patients require several medicines for appropriate disease management, unnecessary or inappropriate polypharmacy increases the risk of adverse drug events and interactions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "Why are older adults more vulnerable to adverse drug reactions?",
+"choices": [
+{"text": "Because ageing always increases kidney and liver function", "is_correct": false},
+{"text": "Because age-related changes in drug metabolism and excretion can alter medication effects", "is_correct": true},
+{"text": "Because older adults do not absorb medications", "is_correct": false},
+{"text": "Because all medications become ineffective after age 65", "is_correct": false}
+],
+"rationale": "Ageing may reduce renal clearance, alter hepatic metabolism and change body composition, affecting drug distribution and elimination. These physiological changes can increase drug accumulation and susceptibility to adverse reactions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "An elderly patient takes eight prescribed medications and several herbal preparations obtained from a local market. What should the nurse do?",
+"choices": [
+{"text": "Advise the patient to continue everything without review", "is_correct": false},
+{"text": "Obtain a complete medication history, including herbal preparations, and arrange medication review", "is_correct": true},
+{"text": "Immediately discontinue all prescribed medications", "is_correct": false},
+{"text": "Encourage the patient to increase the number of herbal preparations", "is_correct": false}
+],
+"rationale": "A comprehensive medication reconciliation should include prescription medicines, over-the-counter products and herbal preparations. Reviewing all substances helps identify potential interactions, duplication, inappropriate prescriptions and adverse effects.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "An elderly patient taking a benzodiazepine for insomnia becomes drowsy during the day and experiences repeated falls. Which medication-related problem should the nurse suspect?",
+"choices": [
+{"text": "An adverse drug effect associated with sedation", "is_correct": true},
+{"text": "Improved neurological function", "is_correct": false},
+{"text": "Increased muscle strength", "is_correct": false},
+{"text": "Normal effects of healthy ageing", "is_correct": false}
+],
+"rationale": "Benzodiazepines can cause sedation, impaired coordination and cognitive impairment, increasing fall risk in older adults. The nurse should report the findings for medication review and avoid abrupt discontinuation where dependence is possible.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "Which practice is most appropriate when educating an older adult who has difficulty remembering medication schedules?",
+"choices": [
+{"text": "Provide complicated instructions using medical terminology only", "is_correct": false},
+{"text": "Use a clear medication schedule, simple explanations and appropriate reminder aids", "is_correct": true},
+{"text": "Encourage the patient to take all medications whenever remembered", "is_correct": false},
+{"text": "Advise the patient to discontinue medications that are difficult to remember", "is_correct": false}
+],
+"rationale": "Simple medication schedules, written instructions, reminder systems and appropriate pill organisers can improve medication adherence. Education should be tailored to the patient's cognitive ability, literacy, vision and available caregiver support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Medication Management in Geriatrics",
+"question_text": "An 80-year-old patient with chronic kidney disease continues receiving the same dose of a medication that is primarily eliminated by the kidneys. The patient develops increasing confusion and muscle weakness. Which explanation is most appropriate?",
+"choices": [
+{"text": "The medication may have accumulated because of reduced renal clearance", "is_correct": true},
+{"text": "The medication has increased the patient's kidney filtration rate", "is_correct": false},
+{"text": "The patient has developed normal age-related memory loss", "is_correct": false},
+{"text": "The medication has necessarily improved the patient's renal function", "is_correct": false}
+],
+"rationale": "Reduced renal clearance can cause renally eliminated medications or their active metabolites to accumulate in the body. This may produce toxicity, requiring clinical assessment, renal function review and possible dose adjustment by the prescribing clinician.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "Which nutrient is particularly important for maintaining muscle mass and supporting tissue repair in older adults?",
+"choices": [
+{"text": "Protein", "is_correct": true},
+{"text": "Alcohol", "is_correct": false},
+{"text": "Excessive saturated fat", "is_correct": false},
+{"text": "Refined sugar", "is_correct": false}
+],
+"rationale": "Protein provides amino acids required for muscle maintenance, immune function and tissue repair. Adequate protein intake is particularly important because older adults are vulnerable to sarcopenia and malnutrition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "An elderly woman in a rural Ghanaian community has poor appetite, recent weight loss and general weakness. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Assess nutritional status and encourage balanced, nutrient-dense meals using locally available foods", "is_correct": true},
+{"text": "Recommend skipping meals to improve appetite", "is_correct": false},
+{"text": "Restrict protein intake without clinical indication", "is_correct": false},
+{"text": "Encourage the patient to consume only sugary drinks", "is_correct": false}
+],
+"rationale": "Unintentional weight loss and weakness may indicate malnutrition and require nutritional assessment. Locally available foods such as beans, eggs, fish, vegetables and appropriate whole grains can contribute to a balanced diet.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "Which vitamin is essential for calcium absorption and the maintenance of bone health in older adults?",
+"choices": [
+{"text": "Vitamin C", "is_correct": false},
+{"text": "Vitamin D", "is_correct": true},
+{"text": "Vitamin B12", "is_correct": false},
+{"text": "Vitamin K alone", "is_correct": false}
+],
+"rationale": "Vitamin D promotes intestinal calcium and phosphate absorption and contributes to bone mineralisation. Deficiency increases the risk of osteomalacia, muscle weakness and falls in older adults.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "An elderly patient coughs repeatedly when drinking water and reports that food sometimes feels stuck in the throat. What should the nurse suspect?",
+"choices": [
+{"text": "Dysphagia", "is_correct": true},
+{"text": "Polyphagia", "is_correct": false},
+{"text": "Polydipsia", "is_correct": false},
+{"text": "Anorexia nervosa", "is_correct": false}
+],
+"rationale": "Dysphagia is difficulty swallowing and may result from neurological disorders, structural abnormalities or age-associated disease. Coughing during swallowing raises concern about aspiration, requiring prompt swallowing assessment and appropriate feeding precautions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "A nurse visits an elderly man with hypertension who frequently consumes salted fish, salted meat and highly processed foods. Which dietary advice is most appropriate?",
+"choices": [
+{"text": "Increase consumption of highly salted foods", "is_correct": false},
+{"text": "Reduce sodium intake and encourage a balanced diet rich in fruits and vegetables", "is_correct": true},
+{"text": "Avoid all fruits and vegetables", "is_correct": false},
+{"text": "Replace meals with sugary beverages", "is_correct": false}
+],
+"rationale": "Excessive sodium intake contributes to elevated blood pressure and cardiovascular risk. Reducing added salt and limiting highly salted foods while increasing appropriate fruit, vegetable and whole-food consumption supports hypertension management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Nutrition in the Elderly",
+"question_text": "An elderly patient with diabetes mellitus frequently skips breakfast but takes the prescribed morning insulin. The patient later develops sweating, tremors and confusion. Which factor most likely contributed to this condition?",
+"choices": [
+{"text": "Excessive carbohydrate intake", "is_correct": false},
+{"text": "Mismatch between insulin administration and food intake", "is_correct": true},
+{"text": "Excessive vitamin D intake", "is_correct": false},
+{"text": "Increased dietary fibre intake", "is_correct": false}
+],
+"rationale": "Taking insulin without adequate food intake can cause blood glucose to fall below normal levels. Older adults with diabetes require coordinated medication administration, meal planning and blood glucose monitoring to prevent hypoglycaemia.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "What is the primary goal of palliative care?",
+"choices": [
+{"text": "To cure every terminal illness", "is_correct": false},
+{"text": "To improve quality of life by preventing and relieving suffering", "is_correct": true},
+{"text": "To prolong life regardless of the patient's wishes", "is_correct": false},
+{"text": "To discontinue all forms of nursing care", "is_correct": false}
+],
+"rationale": "Palliative care focuses on improving quality of life for patients and families facing life-threatening illness. It involves prevention and relief of suffering through early identification, assessment and treatment of physical, psychological, social and spiritual problems.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "A terminally ill elderly patient receiving home-based palliative care reports severe pain despite prescribed treatment. What should the nurse do?",
+"choices": [
+{"text": "Tell the patient that pain is unavoidable at the end of life", "is_correct": false},
+{"text": "Assess the pain, administer prescribed analgesia and evaluate the response", "is_correct": true},
+{"text": "Discontinue all analgesics", "is_correct": false},
+{"text": "Ignore the complaint because the patient is terminally ill", "is_correct": false}
+],
+"rationale": "Pain management is a fundamental component of palliative care, and terminal illness does not justify leaving pain untreated. Regular assessment, appropriate analgesia and reassessment are necessary to maintain comfort and dignity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "Which principle is most important when providing end-of-life care to an elderly patient at home?",
+"choices": [
+{"text": "Respecting the patient's dignity, preferences and expressed wishes", "is_correct": true},
+{"text": "Excluding the patient from all decisions", "is_correct": false},
+{"text": "Forcing treatment regardless of the patient's informed decisions", "is_correct": false},
+{"text": "Ignoring the emotional needs of family members", "is_correct": false}
+],
+"rationale": "End-of-life care should respect patient autonomy, dignity, cultural values and informed preferences. Care should be individualised and include appropriate support for family members and caregivers.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "A terminally ill patient develops increasing breathlessness while receiving home-based palliative care. What should the nurse do first?",
+"choices": [
+{"text": "Assess respiratory status, position the patient comfortably and initiate the prescribed symptom-management plan", "is_correct": true},
+{"text": "Force the patient to walk around the house", "is_correct": false},
+{"text": "Withhold all prescribed medications", "is_correct": false},
+{"text": "Ignore the breathlessness because it is expected in terminal illness", "is_correct": false}
+],
+"rationale": "Breathlessness is a distressing symptom that requires assessment and appropriate management, even in patients receiving end-of-life care. Comfortable positioning, airflow, prescribed oxygen when indicated and appropriate pharmacological treatment may relieve symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "The family of a terminally ill elderly woman requests that the nurse avoid discussing the prognosis with her, although the patient repeatedly asks about her condition. What is the most appropriate nursing response?",
+"choices": [
+{"text": "Automatically follow the family's request and withhold all information", "is_correct": false},
+{"text": "Explore the patient's preferences for information and communicate honestly and sensitively within the healthcare team's role", "is_correct": true},
+{"text": "Tell the patient that she will definitely recover", "is_correct": false},
+{"text": "Ignore the patient's questions", "is_correct": false}
+],
+"rationale": "Respect for autonomy requires consideration of the patient's own preferences regarding information and decision-making. Nurses should communicate sensitively, avoid false reassurance and coordinate with the healthcare team to ensure appropriate disclosure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "End-of-Life Care and Palliative Care at Home",
+"question_text": "An elderly patient receiving end-of-life care has reduced appetite and gradually takes less food. The family insists that the patient must be force-fed to prevent death. Which response is most appropriate?",
+"choices": [
+{"text": "Force the patient to consume large meals", "is_correct": false},
+{"text": "Explain changes in appetite near the end of life and provide comfort-focused nutritional support according to the patient's wishes", "is_correct": true},
+{"text": "Stop providing all mouth care", "is_correct": false},
+{"text": "Administer food rapidly to increase calorie intake", "is_correct": false}
+],
+"rationale": "Reduced appetite and food intake are common near the end of life as physiological needs change. Care should focus on comfort, mouth care and offering food or fluids according to the patient's tolerance, preferences and clinical needs rather than forcing intake.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "Which statement best defines elder abuse?",
+"choices": [
+{"text": "Any intentional or negligent act, or failure to act, that causes harm or distress to an older person within a relationship of trust", "is_correct": true},
+{"text": "The normal process of physical ageing", "is_correct": false},
+{"text": "The provision of assistance with daily activities", "is_correct": false},
+{"text": "The occasional disagreement between family members", "is_correct": false}
+],
+"rationale": "Elder abuse involves harmful acts or omissions within a relationship where trust is expected. It may take physical, psychological, sexual or financial forms, or involve neglect.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "A community health nurse visits an elderly woman and observes unexplained bruises, fearfulness around her caregiver and reluctance to speak. What should the nurse do?",
+"choices": [
+{"text": "Ignore the findings because family matters are private", "is_correct": false},
+{"text": "Assess the woman's immediate safety, speak with her privately and follow appropriate safeguarding and reporting procedures", "is_correct": true},
+{"text": "Immediately accuse the caregiver in front of the family", "is_correct": false},
+{"text": "Discharge the woman from community follow-up", "is_correct": false}
+],
+"rationale": "Unexplained injuries and fearfulness around a caregiver may indicate physical or psychological abuse. The nurse should prioritise immediate safety, conduct a sensitive assessment, document objective findings and follow applicable safeguarding and referral procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "An elderly man depends on his son for food and personal care. The son repeatedly withholds meals and fails to provide prescribed medication despite having the means to do so. Which form of elder abuse is most evident?",
+"choices": [
+{"text": "Neglect", "is_correct": true},
+{"text": "Presbyopia", "is_correct": false},
+{"text": "Normal ageing", "is_correct": false},
+{"text": "Social participation", "is_correct": false}
+],
+"rationale": "Neglect involves failure to provide necessary care, food, medication, hygiene or protection to a dependent older person. Withholding essential needs may result in malnutrition, deterioration of chronic diseases and other serious complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "An older woman reports that her grandson regularly takes her NHIS card and withdraws money from her mobile money account without her consent. Which type of elder abuse does this represent?",
+"choices": [
+{"text": "Physical abuse", "is_correct": false},
+{"text": "Financial abuse", "is_correct": true},
+{"text": "Sexual abuse", "is_correct": false},
+{"text": "Self-neglect", "is_correct": false}
+],
+"rationale": "Financial abuse involves the unauthorised use, theft or exploitation of an older person's money, property or financial resources. Taking money without consent and exploiting access to personal resources are recognised examples.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "Which of the following is a possible indicator of psychological or emotional abuse in an older adult?",
+"choices": [
+{"text": "Persistent fearfulness, withdrawal and unexplained anxiety around a caregiver", "is_correct": true},
+{"text": "Gradual greying of hair", "is_correct": false},
+{"text": "Reduced visual accommodation", "is_correct": false},
+{"text": "Normal age-related reduction in muscle mass", "is_correct": false}
+],
+"rationale": "Psychological abuse may involve threats, humiliation, intimidation, isolation and other behaviours that cause emotional distress. Fearfulness, withdrawal and anxiety may be warning signs, although further assessment is required to establish the cause.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "A nurse suspects that an elderly patient is being physically abused by a family caregiver. The patient denies abuse when the caregiver is present but appears frightened. What is the most appropriate next action?",
+"choices": [
+{"text": "Accept the denial without further assessment", "is_correct": false},
+{"text": "Arrange a safe private conversation with the patient and assess for abuse without confrontation", "is_correct": true},
+{"text": "Threaten the caregiver immediately", "is_correct": false},
+{"text": "Inform other patients about the suspected abuse", "is_correct": false}
+],
+"rationale": "A patient may be unwilling to disclose abuse in the presence of the suspected perpetrator because of fear, dependence or intimidation. A private, non-judgemental assessment provides a safer opportunity for disclosure and appropriate safeguarding action.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "A community nurse identifies an elderly man with severe pressure injuries, dehydration and poor hygiene. His caregiver states that the man is difficult to manage and has been left alone for several days. Which nursing action is the highest priority?",
+"choices": [
+{"text": "Provide immediate clinical assessment and arrange urgent treatment while addressing the patient's safety", "is_correct": true},
+{"text": "Wait for the next routine home visit", "is_correct": false},
+{"text": "Advise the caregiver to leave the patient alone permanently", "is_correct": false},
+{"text": "Concentrate only on educating the caregiver without treating the patient", "is_correct": false}
+],
+"rationale": "Severe pressure injuries and dehydration indicate potentially serious neglect and immediate health risks. The nurse must prioritise stabilisation, urgent referral when indicated, protection of the patient and appropriate safeguarding follow-up.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Elder Abuse and Neglect",
+"question_text": "An elderly woman with dementia lives with her extended family. During a home visit, the nurse discovers that she is frequently restrained to a chair, has untreated pressure injuries and is denied access to visitors. The family claims these measures are necessary because she is difficult to control. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The practices are acceptable because dementia removes the patient's rights", "is_correct": false},
+{"text": "The situation raises serious concerns about neglect, inappropriate restraint and possible psychological abuse requiring safeguarding intervention", "is_correct": true},
+{"text": "The family should be encouraged to increase the duration of restraint", "is_correct": false},
+{"text": "The nurse should ignore the situation because the patient lives with relatives", "is_correct": false}
+],
+"rationale": "Dementia does not remove a person's right to dignity, safety and appropriate care. Prolonged inappropriate restraint, untreated injuries and social isolation raise serious safeguarding concerns and require immediate assessment, intervention and appropriate referral.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
