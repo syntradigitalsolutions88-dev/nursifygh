@@ -1,0 +1,718 @@
+{
+"courses": [
+{
+"course_code": "PTP-211-C",
+"course_title": "Professional Trends in Nursing Practice",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"History of Community Health Nursing in Ghana",
+"N&MC Code of Professional Conduct for CHNs",
+"Ethical Principles in Community Care",
+"Legal Aspects of Community Nursing",
+"Patients' Charter",
+"Scope of Practice for Community Health Nurses",
+"Professional Boundaries in Home Visits",
+"Advocacy and Whistleblowing in the Community"
+],
+"questions": [
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "What is the primary focus of community health nursing?",
+"choices": [
+{"text": "Providing specialised surgical treatment to individual patients", "is_correct": false},
+{"text": "Promoting health and preventing illness among individuals, families and communities", "is_correct": true},
+{"text": "Managing only patients admitted to hospitals", "is_correct": false},
+{"text": "Providing medication without assessing community health needs", "is_correct": false}
+],
+"rationale": "Community health nursing focuses on health promotion, disease prevention, early identification of health problems and community-based care. Its approach considers the health needs of individuals, families and populations rather than concentrating exclusively on hospital treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "Which development significantly strengthened the delivery of primary healthcare services in Ghana through community participation?",
+"choices": [
+{"text": "The introduction of specialised surgical units", "is_correct": false},
+{"text": "The implementation of the Community-based Health Planning and Services programme", "is_correct": true},
+{"text": "The establishment of private pharmacies only", "is_correct": false},
+{"text": "The expansion of hospital-based specialist clinics", "is_correct": false}
+],
+"rationale": "The Community-based Health Planning and Services (CHPS) programme strengthened primary healthcare by bringing essential services closer to communities. It emphasises community participation, household-level care and collaboration between health workers and local structures.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "Which international declaration is historically associated with the global commitment to primary healthcare?",
+"choices": [
+{"text": "Declaration of Alma-Ata, 1978", "is_correct": true},
+{"text": "Geneva Convention, 1949", "is_correct": false},
+{"text": "Universal Declaration of Human Rights, 1948", "is_correct": false},
+{"text": "Ottawa Treaty, 1997", "is_correct": false}
+],
+"rationale": "The Alma-Ata Declaration of 1978 established primary healthcare as a key strategy for achieving health for all. It emphasised equitable access, community participation, intersectoral collaboration and appropriate technology.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "What is the main purpose of the Community-based Health Planning and Services (CHPS) initiative in Ghana?",
+"choices": [
+{"text": "To concentrate all healthcare services in regional hospitals", "is_correct": false},
+{"text": "To improve access to essential primary healthcare through community-based service delivery", "is_correct": true},
+{"text": "To replace all district hospitals with private clinics", "is_correct": false},
+{"text": "To provide healthcare exclusively to government employees", "is_correct": false}
+],
+"rationale": "CHPS is a Ghanaian primary healthcare strategy designed to improve geographical access to essential health services. It promotes community ownership, household visits, preventive care and collaboration with community volunteers and leaders.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "Which statutory body regulates the nursing and midwifery professions in Ghana?",
+"choices": [
+{"text": "Ghana Registered Nurses and Midwives Association", "is_correct": false},
+{"text": "Nursing and Midwifery Council of Ghana", "is_correct": true},
+{"text": "National Health Insurance Authority", "is_correct": false},
+{"text": "Ghana Medical Association", "is_correct": false}
+],
+"rationale": "The Nursing and Midwifery Council (N&MC) is the statutory regulatory body established under Part III of the Health Professions Regulatory Bodies Act, 2013 (Act 857). It regulates professional standards, registration, licensing and disciplinary matters relating to nursing and midwifery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "Which legislation establishes the Nursing and Midwifery Council as a statutory regulatory body in Ghana?",
+"choices": [
+{"text": "National Health Insurance Act, 2012 (Act 852)", "is_correct": false},
+{"text": "Health Professions Regulatory Bodies Act, 2013 (Act 857)", "is_correct": true},
+{"text": "Public Health Act, 2012 (Act 851)", "is_correct": false},
+{"text": "Local Governance Act, 2016 (Act 936)", "is_correct": false}
+],
+"rationale": "The Health Professions Regulatory Bodies Act, 2013 (Act 857) provides the statutory framework for the Nursing and Midwifery Council. Section 54 identifies the Council's object as securing the highest standards of nursing and midwifery training and practice in the public interest.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "Which professional obligation requires a community health nurse to protect information obtained from patients during care?",
+"choices": [
+{"text": "Confidentiality", "is_correct": true},
+{"text": "Delegation", "is_correct": false},
+{"text": "Advancement", "is_correct": false},
+{"text": "Competition", "is_correct": false}
+],
+"rationale": "Confidentiality requires nurses to protect patients' personal and health information from unauthorised disclosure. Information should only be shared with appropriate persons when there is consent, a lawful basis or another recognised professional justification.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "Which ethical principle recognises a patient's right to make informed decisions about personal healthcare?",
+"choices": [
+{"text": "Justice", "is_correct": false},
+{"text": "Autonomy", "is_correct": true},
+{"text": "Beneficence", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": false}
+],
+"rationale": "Autonomy recognises the individual's right to make voluntary and informed decisions about personal healthcare. Nurses should provide adequate information and respect competent patients' decisions, including decisions they may personally disagree with.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "The ethical principle of beneficence requires a community health nurse to:",
+"choices": [
+{"text": "Avoid all interactions with patients", "is_correct": false},
+{"text": "Act in ways that promote the wellbeing of patients and communities", "is_correct": true},
+{"text": "Provide services only to individuals who can pay", "is_correct": false},
+{"text": "Disclose every patient's health information publicly", "is_correct": false}
+],
+"rationale": "Beneficence means acting for the benefit of others and promoting their health and welfare. In community nursing, it includes health education, disease prevention, appropriate treatment and referral.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "Which ethical principle is primarily concerned with avoiding actions that cause unnecessary harm to patients?",
+"choices": [
+{"text": "Justice", "is_correct": false},
+{"text": "Autonomy", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": true},
+{"text": "Fidelity", "is_correct": false}
+],
+"rationale": "Non-maleficence means avoiding or minimising harm to patients. Nurses apply this principle by practising within their competence, following safety procedures and avoiding interventions that expose patients to unnecessary risks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "In community health nursing, the ethical principle of justice primarily requires:",
+"choices": [
+{"text": "Providing fair and equitable healthcare without unjust discrimination", "is_correct": true},
+{"text": "Giving priority to patients who are personally known to the nurse", "is_correct": false},
+{"text": "Providing services only to patients with private insurance", "is_correct": false},
+{"text": "Allowing community leaders to decide which patients deserve treatment", "is_correct": false}
+],
+"rationale": "Justice concerns fairness and equitable distribution of healthcare resources and services. Community health nurses should avoid discrimination based on factors such as ethnicity, religion, disability, gender or socioeconomic status.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "In nursing practice, negligence is best defined as:",
+"choices": [
+{"text": "A deliberate refusal to follow a patient's cultural beliefs", "is_correct": false},
+{"text": "Failure to exercise the reasonable standard of care expected in the circumstances, resulting in harm", "is_correct": true},
+{"text": "Any disagreement between a nurse and a patient", "is_correct": false},
+{"text": "The appropriate referral of a patient to a higher-level facility", "is_correct": false}
+],
+"rationale": "Negligence involves a failure to meet the applicable standard of reasonable care, resulting in foreseeable harm or injury. In a negligence claim, relevant issues include duty of care, breach, causation and damage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "What is informed consent in healthcare?",
+"choices": [
+{"text": "A patient's agreement obtained after receiving adequate information and understanding the proposed intervention", "is_correct": true},
+{"text": "A nurse's decision to perform a procedure without discussing it with the patient", "is_correct": false},
+{"text": "An agreement obtained through threats or intimidation", "is_correct": false},
+{"text": "A relative's automatic approval of every procedure for a competent adult", "is_correct": false}
+],
+"rationale": "Informed consent is a voluntary decision made by a person with decision-making capacity after receiving relevant information about a proposed intervention. The patient should understand the purpose, material risks, benefits and reasonable alternatives before agreeing.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "Which of the following is a recognised right under Ghana's Patients' Charter?",
+"choices": [
+{"text": "The right to receive care without any professional assessment", "is_correct": false},
+{"text": "The right to information about one's health condition and proposed treatment", "is_correct": true},
+{"text": "The right to demand any medication regardless of clinical indication", "is_correct": false},
+{"text": "The right to access another patient's medical records without permission", "is_correct": false}
+],
+"rationale": "The Patients' Charter recognises patients' rights to relevant information about their health and care. This supports informed decision-making, participation in treatment and respectful communication between patients and healthcare professionals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Scope of Practice for Community Health Nurses",
+"question_text": "Which activity is consistent with the scope of practice of a Community Health Nurse in Ghana?",
+"choices": [
+{"text": "Performing major surgery independently at a CHPS compound", "is_correct": false},
+{"text": "Conducting child welfare services, health education and appropriate referrals", "is_correct": true},
+{"text": "Prescribing every medicine without regard to professional authorisation", "is_correct": false},
+{"text": "Providing specialist treatment outside the nurse's competence", "is_correct": false}
+],
+"rationale": "Community Health Nurses contribute to preventive, promotive and basic community-based healthcare. Their activities include child welfare services, health education, household visits, early identification of illness and referral within their authorised scope.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Boundaries in Home Visits",
+"question_text": "What is the primary purpose of maintaining professional boundaries during community home visits?",
+"choices": [
+{"text": "To establish personal friendships with every household", "is_correct": false},
+{"text": "To maintain a safe, respectful and professionally appropriate relationship with clients", "is_correct": true},
+{"text": "To avoid communicating with family members", "is_correct": false},
+{"text": "To encourage patients to depend entirely on the nurse", "is_correct": false}
+],
+"rationale": "Professional boundaries define appropriate limits in the nurse-client relationship. They protect patients from exploitation, preserve professional judgement and help maintain trust in healthcare delivery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advocacy and Whistleblowing in the Community",
+"question_text": "What is patient advocacy in community health nursing?",
+"choices": [
+{"text": "Supporting and protecting patients' rights, interests and access to appropriate healthcare", "is_correct": true},
+{"text": "Making all healthcare decisions on behalf of patients", "is_correct": false},
+{"text": "Promoting the personal interests of the nurse", "is_correct": false},
+{"text": "Preventing patients from asking questions about their care", "is_correct": false}
+],
+"rationale": "Patient advocacy involves supporting patients to understand and exercise their rights and obtain appropriate care. It includes communicating concerns, promoting fair treatment and helping patients navigate healthcare services.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "A CHN is assigned to a rural community where many mothers do not attend child welfare clinics because of distance. Which action best reflects the historical and continuing primary healthcare approach in Ghana?",
+"choices": [
+{"text": "Wait until mothers independently arrange transport to the district hospital", "is_correct": false},
+{"text": "Organise community outreach and collaborate with local leaders to improve access to child welfare services", "is_correct": true},
+{"text": "Discontinue child welfare services in the community", "is_correct": false},
+{"text": "Restrict services to mothers who live near the health facility", "is_correct": false}
+],
+"rationale": "Community outreach is consistent with the primary healthcare approach and the objectives of CHPS. Working with local leaders and community structures helps reduce barriers to essential preventive services.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "A CHN is asked by a community leader to disclose the HIV status of a resident to encourage others to avoid contact with the person. What should the nurse do?",
+"choices": [
+{"text": "Disclose the person's HIV status because the leader requested it", "is_correct": false},
+{"text": "Protect the patient's confidentiality and provide general HIV education without identifying the individual", "is_correct": true},
+{"text": "Post the patient's status on the community noticeboard", "is_correct": false},
+{"text": "Discuss the patient's status with all household members without consent", "is_correct": false}
+],
+"rationale": "A patient's HIV status is confidential health information and must not be disclosed simply because a community leader requests it. The nurse can address stigma and transmission concerns through non-identifying health education while following applicable legal and public health requirements.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "During a home visit, a nurse realises that a clinical procedure requested by a family is beyond the nurse's competence and authorised scope of practice. What should the nurse do?",
+"choices": [
+{"text": "Perform the procedure to avoid disappointing the family", "is_correct": false},
+{"text": "Explain the limitation, seek appropriate professional assistance and arrange referral where necessary", "is_correct": true},
+{"text": "Ask an untrained family member to perform the procedure", "is_correct": false},
+{"text": "Perform the procedure without documenting it", "is_correct": false}
+],
+"rationale": "Nurses are accountable for practising within their competence and authorised scope. Seeking assistance and referring appropriately protects patient safety and prevents unauthorised practice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "A CHN discovers that a colleague has recorded a home visit that was never conducted. What is the most professionally appropriate response?",
+"choices": [
+{"text": "Ignore the matter because the colleague is experienced", "is_correct": false},
+{"text": "Follow the appropriate reporting procedures and ensure that records are accurate", "is_correct": true},
+{"text": "Alter the record to make it appear that the visit occurred", "is_correct": false},
+{"text": "Publicly insult the colleague in the community", "is_correct": false}
+],
+"rationale": "Falsifying clinical or service records undermines professional integrity and may compromise patient care and accountability. The nurse should document facts accurately and report the concern through the appropriate supervisory or institutional channels.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "A competent adult patient refuses a recommended treatment after the nurse has explained its benefits and risks. What should the nurse do?",
+"choices": [
+{"text": "Force the patient to accept treatment", "is_correct": false},
+{"text": "Respect the informed decision, document the discussion and explain available alternatives", "is_correct": true},
+{"text": "Threaten to withdraw all future healthcare services", "is_correct": false},
+{"text": "Ask a community leader to overrule the patient's decision", "is_correct": false}
+],
+"rationale": "A competent adult has the right to make informed decisions about personal healthcare, including refusing treatment. The nurse should respect autonomy, ensure that the patient understands the consequences and document the decision appropriately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "A CHN has limited quantities of essential health supplies for a community outreach programme. Which action best demonstrates the ethical principle of justice?",
+"choices": [
+{"text": "Reserve all supplies for families personally known to the nurse", "is_correct": false},
+{"text": "Allocate available supplies fairly according to clinical need and approved criteria", "is_correct": true},
+{"text": "Give supplies only to people who offer gifts", "is_correct": false},
+{"text": "Distribute supplies randomly without considering health needs", "is_correct": false}
+],
+"rationale": "Justice requires fair and equitable allocation of limited healthcare resources. Clinical need, vulnerability and approved service criteria should guide decisions rather than personal relationships or financial influence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "A nurse notices that a community volunteer is using an unsterilised instrument during wound care. Which ethical principle is most directly threatened?",
+"choices": [
+{"text": "Non-maleficence", "is_correct": true},
+{"text": "Autonomy", "is_correct": false},
+{"text": "Justice", "is_correct": false},
+{"text": "Fidelity", "is_correct": false}
+],
+"rationale": "Using unsterilised instruments can expose patients to infection and preventable harm. The nurse should intervene to stop the unsafe practice and ensure that wound care follows appropriate infection prevention procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A nurse administers the wrong medication to a patient during a home visit and immediately recognises the error. What should the nurse do first?",
+"choices": [
+{"text": "Hide the error to avoid disciplinary action", "is_correct": false},
+{"text": "Assess the patient, take immediate steps to minimise harm and seek appropriate clinical assistance", "is_correct": true},
+{"text": "Alter the medication record to show the correct medicine", "is_correct": false},
+{"text": "Wait until the next scheduled visit to assess the patient", "is_correct": false}
+],
+"rationale": "The immediate priority after a medication error is patient safety and the prevention of further harm. The nurse should obtain appropriate clinical assistance, report the incident through established procedures and document the facts accurately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A competent patient refuses to sign a consent form for a proposed procedure. The nurse believes the procedure is beneficial. What is the correct action?",
+"choices": [
+{"text": "Obtain the patient's thumbprint without permission", "is_correct": false},
+{"text": "Respect the refusal, explore the patient's concerns and inform the responsible clinician", "is_correct": true},
+{"text": "Ask a neighbour to sign on the patient's behalf", "is_correct": false},
+{"text": "Proceed because the nurse believes the procedure is necessary", "is_correct": false}
+],
+"rationale": "A competent patient's refusal must be respected, even when the healthcare professional believes treatment would be beneficial. The nurse should clarify concerns, provide relevant information and communicate the decision to the responsible clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "During a home visit, a nurse observes signs suggesting that a child may be experiencing physical abuse. What should the nurse do?",
+"choices": [
+{"text": "Ignore the findings because the matter is a private family issue", "is_correct": false},
+{"text": "Ensure the child's immediate safety, document objective findings and report through appropriate child protection channels", "is_correct": true},
+{"text": "Confront the suspected perpetrator violently", "is_correct": false},
+{"text": "Share the child's identity and allegations on social media", "is_correct": false}
+],
+"rationale": "Suspected child abuse requires a safeguarding response that prioritises the child's safety and follows applicable reporting procedures. Documentation should be factual and objective, and information should be shared only with appropriate authorities or professionals.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A nurse conducts a home visit and enters a patient's bedroom without permission, although the patient is conscious and able to decide. Which professional concern is most directly involved?",
+"choices": [
+{"text": "Violation of privacy and respect for the patient's dignity", "is_correct": true},
+{"text": "Appropriate delegation", "is_correct": false},
+{"text": "Improved interprofessional collaboration", "is_correct": false},
+{"text": "Continuing professional development", "is_correct": false}
+],
+"rationale": "Patients have a right to privacy and respectful treatment during healthcare encounters. A nurse should seek permission before entering private spaces or undertaking care, except where an emergency or other lawful justification applies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "A patient complains that a nurse spoke disrespectfully to her because she is unable to pay for a service immediately. Which right under the Patients' Charter is most relevant?",
+"choices": [
+{"text": "The right to respectful and non-discriminatory treatment", "is_correct": true},
+{"text": "The right to demand employment from the health facility", "is_correct": false},
+{"text": "The right to select the nurse's personal beliefs", "is_correct": false},
+{"text": "The right to access confidential information about other patients", "is_correct": false}
+],
+"rationale": "The Patients' Charter supports dignity, respect and equitable treatment in healthcare. A patient's financial circumstances should not justify humiliating or discriminatory conduct by a healthcare worker.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "A patient asks a CHN to explain the purpose and possible side effects of a prescribed medicine. What should the nurse do?",
+"choices": [
+{"text": "Tell the patient not to ask questions about prescribed treatment", "is_correct": false},
+{"text": "Provide accurate information within the nurse's competence and clarify any uncertainties with the prescriber", "is_correct": true},
+{"text": "Give the patient information obtained from an unrelated patient's record", "is_correct": false},
+{"text": "Refuse to explain because only doctors can communicate with patients", "is_correct": false}
+],
+"rationale": "Patients have a right to relevant information about their care and treatment. Nurses should communicate accurately within their competence and seek clarification when a question requires information beyond their professional knowledge.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Scope of Practice for Community Health Nurses",
+"question_text": "A CHN identifies a pregnant woman with severe headache, blurred vision and elevated blood pressure during a community visit. What should the nurse do?",
+"choices": [
+{"text": "Advise the woman to rest at home and return after one week", "is_correct": false},
+{"text": "Recognise possible severe pre-eclampsia and arrange urgent referral for appropriate assessment and management", "is_correct": true},
+{"text": "Recommend herbal treatment and avoid referral", "is_correct": false},
+{"text": "Wait for the next routine antenatal clinic before taking action", "is_correct": false}
+],
+"rationale": "Severe headache, visual disturbance and elevated blood pressure during pregnancy may indicate pre-eclampsia with severe features. The nurse should prioritise maternal and fetal safety and arrange urgent referral rather than attempting management beyond the nurse's authorised capacity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Scope of Practice for Community Health Nurses",
+"question_text": "A CHN identifies a patient with persistent chest pain and difficulty breathing at a community outreach session. Which action is most appropriate?",
+"choices": [
+{"text": "Provide routine health education and ask the patient to return next month", "is_correct": false},
+{"text": "Assess immediate danger, provide appropriate first aid within competence and arrange urgent referral", "is_correct": true},
+{"text": "Prescribe long-term cardiac medication without assessment", "is_correct": false},
+{"text": "Ask the patient to walk home for further observation", "is_correct": false}
+],
+"rationale": "Persistent chest pain with breathing difficulty may indicate a life-threatening emergency. The nurse should rapidly assess the patient, provide emergency support within competence and arrange prompt transfer to an appropriate facility.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Scope of Practice for Community Health Nurses",
+"question_text": "A community health nurse is organising a health education session on cholera prevention. Which activity best reflects the nurse's public health role?",
+"choices": [
+{"text": "Educating households on safe water, hand hygiene, food hygiene and early reporting of symptoms", "is_correct": true},
+{"text": "Treating all community members with antibiotics regardless of symptoms", "is_correct": false},
+{"text": "Advising residents to avoid reporting diarrhoeal illness", "is_correct": false},
+{"text": "Restricting health education to patients already admitted to hospital", "is_correct": false}
+],
+"rationale": "Community health nurses play an important role in preventing communicable diseases through health education and community mobilisation. Safe water, sanitation, hand hygiene and early identification of suspected cases help reduce cholera transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries in Home Visits",
+"question_text": "A family visited by a CHN offers the nurse an expensive gift in appreciation for providing routine healthcare. What is the most appropriate response?",
+"choices": [
+{"text": "Accept the gift because it is a sign of respect", "is_correct": false},
+{"text": "Politely decline the gift in accordance with professional and institutional rules", "is_correct": true},
+{"text": "Accept the gift and promise preferential treatment", "is_correct": false},
+{"text": "Demand a more expensive gift before continuing care", "is_correct": false}
+],
+"rationale": "Accepting expensive gifts may create conflicts of interest, expectations of preferential treatment or exploitation of the professional relationship. The nurse should follow institutional policy and maintain impartiality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries in Home Visits",
+"question_text": "A patient sends a CHN repeated personal messages on social media unrelated to healthcare. What should the nurse do?",
+"choices": [
+{"text": "Develop a romantic relationship with the patient", "is_correct": false},
+{"text": "Maintain professional communication boundaries and redirect necessary communication to approved channels", "is_correct": true},
+{"text": "Share the patient's messages publicly", "is_correct": false},
+{"text": "Provide the patient with personal financial information", "is_correct": false}
+],
+"rationale": "Professional boundaries apply to digital communication as well as face-to-face interactions. Nurses should use appropriate communication channels, protect confidentiality and avoid relationships that may compromise professional judgement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries in Home Visits",
+"question_text": "A CHN visits a household and is asked by the family to keep a large amount of money for safekeeping. What is the best response?",
+"choices": [
+{"text": "Accept the money as part of the home visit", "is_correct": false},
+{"text": "Politely decline and explain that handling the family's personal money is outside the professional role", "is_correct": true},
+{"text": "Accept the money and use it to purchase personal items", "is_correct": false},
+{"text": "Ask the family to pay the nurse for the visit", "is_correct": false}
+],
+"rationale": "Handling a patient's or family's money for personal safekeeping is outside the usual professional responsibilities of a community health nurse. Declining such arrangements helps prevent financial disputes, exploitation and conflicts of interest.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Whistleblowing in the Community",
+"question_text": "A CHN discovers that a child with a disability is repeatedly excluded from community health activities because of discrimination. What should the nurse do?",
+"choices": [
+{"text": "Accept the exclusion as a community tradition", "is_correct": false},
+{"text": "Advocate for inclusive access and work with caregivers and community leaders to address barriers", "is_correct": true},
+{"text": "Advise the family to stop using healthcare services", "is_correct": false},
+{"text": "Share the child's personal information publicly to attract attention", "is_correct": false}
+],
+"rationale": "Advocacy requires nurses to support equitable access to healthcare and challenge discriminatory practices. Working with families and community structures can improve inclusion while protecting the child's dignity and privacy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Whistleblowing in the Community",
+"question_text": "A nurse notices that a community health facility has no functioning handwashing station, creating an infection prevention risk. What should the nurse do?",
+"choices": [
+{"text": "Ignore the situation because facility resources are not a nursing concern", "is_correct": false},
+{"text": "Report the safety concern through appropriate channels and advocate for corrective action", "is_correct": true},
+{"text": "Continue all procedures without hand hygiene", "is_correct": false},
+{"text": "Blame patients for the facility's inadequate infrastructure", "is_correct": false}
+],
+"rationale": "Nurses have a professional responsibility to promote patient safety and identify preventable risks in healthcare environments. Reporting the problem and advocating for corrective action supports infection prevention and quality improvement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "History of Community Health Nursing in Ghana",
+"question_text": "A district health team wants to improve immunization coverage in a remote community where residents rarely visit the health facility. Which strategy best reflects the principles of CHPS?",
+"choices": [
+{"text": "Wait for residents to travel to the district hospital", "is_correct": false},
+{"text": "Engage community leaders, organise outreach services and involve community volunteers in mobilisation", "is_correct": true},
+{"text": "Restrict immunization to children whose parents are employed", "is_correct": false},
+{"text": "Stop immunization activities until a new hospital is constructed", "is_correct": false}
+],
+"rationale": "CHPS promotes community participation and delivery of essential services close to where people live. Community mobilisation and outreach can reduce geographical and social barriers to immunization.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A nurse conducts a home visit and documents that a patient has a fever, although the nurse did not measure the patient's temperature. What is the most appropriate professional concern?",
+"choices": [
+{"text": "The nurse has demonstrated accurate documentation", "is_correct": false},
+{"text": "The nurse has recorded an unverified finding as an objective measurement", "is_correct": true},
+{"text": "The nurse has appropriately delegated responsibility", "is_correct": false},
+{"text": "The nurse has protected the patient's confidentiality", "is_correct": false}
+],
+"rationale": "Professional documentation must be accurate, objective and based on observations or reliable information. The nurse should distinguish between measured findings, patient-reported symptoms and clinical interpretations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "A patient who is registered with the National Health Insurance Scheme is asked to pay an unauthorised fee for a covered service. The patient seeks assistance from the CHN. What should the nurse do?",
+"choices": [
+{"text": "Tell the patient to pay without asking questions", "is_correct": false},
+{"text": "Help the patient understand the appropriate complaint process and direct the concern to the responsible facility or NHIA channel", "is_correct": true},
+{"text": "Promise that every service is free regardless of NHIS benefit rules", "is_correct": false},
+{"text": "Advise the patient to stop using all health services", "is_correct": false}
+],
+"rationale": "Patient advocacy includes helping individuals understand their healthcare entitlements and seek clarification about disputed charges. The nurse should not make unsupported promises about coverage but should guide the patient to the appropriate facility or NHIA complaint process.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "A community health nurse is conducting an HIV education programme. A participant asks a question that reveals a misunderstanding about HIV transmission. Which response best demonstrates beneficence and respect for persons?",
+"choices": [
+{"text": "Ridicule the participant for having incorrect information", "is_correct": false},
+{"text": "Provide accurate, respectful information and allow participants to ask further questions", "is_correct": true},
+{"text": "Ignore the question to avoid embarrassment", "is_correct": false},
+{"text": "Identify people living with HIV in the community as examples", "is_correct": false}
+],
+"rationale": "Health education should promote wellbeing while respecting the dignity of participants. Accurate and non-judgemental communication helps correct misconceptions without exposing individuals to stigma or discrimination.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "A CHN is asked to sign a clinical record prepared by another worker, but the nurse has not verified the information. What should the nurse do?",
+"choices": [
+{"text": "Sign immediately because the other worker is trusted", "is_correct": false},
+{"text": "Review and verify the information before signing or decline to authenticate information that cannot be confirmed", "is_correct": true},
+{"text": "Sign using another nurse's name", "is_correct": false},
+{"text": "Destroy the record without reporting the concern", "is_correct": false}
+],
+"rationale": "A nurse is professionally accountable for information authenticated by their signature. Records should be checked for accuracy, and a nurse should not knowingly certify information that has not been verified.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Scope of Practice for Community Health Nurses",
+"question_text": "During a household visit, a CHN identifies a patient with signs of a possible stroke, including sudden facial weakness and difficulty speaking. What is the most appropriate action?",
+"choices": [
+{"text": "Advise the patient to sleep and review the condition the following day", "is_correct": false},
+{"text": "Recognise a possible stroke, assess immediate safety and arrange urgent transfer to an appropriate facility", "is_correct": true},
+{"text": "Provide a routine appointment at the next monthly outreach", "is_correct": false},
+{"text": "Give food and drink to test swallowing ability", "is_correct": false}
+],
+"rationale": "Sudden facial weakness and speech difficulty are warning signs of stroke, which requires urgent medical assessment. The nurse should avoid delaying referral and should not give oral food or fluids when swallowing may be impaired.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries in Home Visits",
+"question_text": "During a home visit, a nurse is invited to participate in a family dispute unrelated to the patient's care. What should the nurse do?",
+"choices": [
+{"text": "Take sides and use professional authority to threaten one family member", "is_correct": false},
+{"text": "Remain professionally neutral and redirect the discussion to the purpose of the visit or appropriate support services", "is_correct": true},
+{"text": "Use the disagreement to obtain personal information about the family", "is_correct": false},
+{"text": "Promise to resolve the dispute personally", "is_correct": false}
+],
+"rationale": "A home visit should maintain a clear professional purpose and appropriate boundaries. The nurse may identify health or safeguarding concerns and refer the family to suitable support services without becoming personally involved in the dispute.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Whistleblowing in the Community",
+"question_text": "A nurse witnesses a colleague demanding money from patients before providing a service that should be delivered without such payment. What should the nurse do?",
+"choices": [
+{"text": "Remain silent because the colleague is senior", "is_correct": false},
+{"text": "Document the concern objectively and report it through the appropriate institutional or regulatory channels", "is_correct": true},
+{"text": "Join the colleague to avoid conflict", "is_correct": false},
+{"text": "Publish unverified accusations on social media", "is_correct": false}
+],
+"rationale": "Demanding unauthorised payments may constitute professional misconduct and undermine equitable access to healthcare. Reporting through appropriate channels supports accountability while reducing the risks associated with public disclosure of unverified allegations.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A nurse is providing care to an unconscious adult who has no available representative, and immediate intervention is necessary to prevent serious harm. Which legal and ethical concept generally supports emergency care in this situation?",
+"choices": [
+{"text": "Implied consent in an emergency", "is_correct": true},
+{"text": "Financial consent", "is_correct": false},
+{"text": "Retrospective punishment", "is_correct": false},
+{"text": "Professional privilege", "is_correct": false}
+],
+"rationale": "When a patient lacks decision-making capacity and urgent treatment is necessary to prevent serious harm, emergency care may generally proceed under the principle of implied consent or emergency necessity. The intervention should be limited to what is reasonably necessary, with appropriate documentation and subsequent communication.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "A CHN is distributing a limited number of mosquito nets. A community leader insists that his relatives should receive the nets first, although several households have more vulnerable children. Which response best addresses the ethical dilemma?",
+"choices": [
+{"text": "Distribute the nets to the leader's relatives to maintain good relations", "is_correct": false},
+{"text": "Apply transparent, need-based criteria that prioritise vulnerable households", "is_correct": true},
+{"text": "Give all nets to the households closest to the CHPS compound", "is_correct": false},
+{"text": "Cancel the distribution programme", "is_correct": false}
+],
+"rationale": "The ethical principle of justice requires fair allocation based on relevant health needs rather than personal influence. Transparent criteria help protect vulnerable groups and maintain public trust in community health services.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "N&MC Code of Professional Conduct for CHNs",
+"question_text": "A CHN posts a photograph of a patient receiving treatment during a home visit on a personal social media account. The patient's face and address are visible, and no consent was obtained. Which professional obligation has been most clearly breached?",
+"choices": [
+{"text": "Confidentiality and protection of patient privacy", "is_correct": true},
+{"text": "Continuing professional development", "is_correct": false},
+{"text": "Appropriate delegation", "is_correct": false},
+{"text": "Community mobilisation", "is_correct": false}
+],
+"rationale": "The photograph reveals identifiable health and personal information without the patient's permission. Nurses must protect confidentiality and comply with professional and institutional rules governing patient images and digital communication.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A nurse fails to refer a patient with clear signs of severe respiratory distress despite recognising the seriousness of the condition. The patient subsequently suffers serious harm. Which elements would be particularly relevant in assessing a possible negligence claim?",
+"choices": [
+{"text": "Duty of care, breach of the required standard, causation and damage", "is_correct": true},
+{"text": "The patient's occupation and political affiliation only", "is_correct": false},
+{"text": "The nurse's popularity in the community", "is_correct": false},
+{"text": "Whether the patient's family agrees with the nurse personally", "is_correct": false}
+],
+"rationale": "A negligence claim generally examines whether a duty of care existed, whether the standard of care was breached, whether that breach caused the harm and whether legally recognised damage occurred. Failure to arrange an appropriate referral may be relevant to the breach and causation elements.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A 16-year-old patient tells a CHN that an adult has sexually abused them and begs the nurse not to tell anyone. What is the most appropriate response?",
+"choices": [
+{"text": "Promise absolute secrecy and take no further action", "is_correct": false},
+{"text": "Explain the limits of confidentiality, prioritise immediate safety and follow child protection reporting procedures", "is_correct": true},
+{"text": "Confront the alleged perpetrator without considering the child's safety", "is_correct": false},
+{"text": "Tell the child that the disclosure is not a healthcare concern", "is_correct": false}
+],
+"rationale": "A disclosure of sexual abuse involving a minor requires a safeguarding response and appropriate reporting through established child protection channels. The nurse should explain that confidentiality has limits where protection from abuse is required and should avoid actions that could expose the child to further harm.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "A competent patient refuses to allow a nurse to discuss the patient's diagnosis with relatives. The relatives insist that they must be informed because they provide financial support. What should the nurse do?",
+"choices": [
+{"text": "Disclose the diagnosis because relatives are paying for care", "is_correct": false},
+{"text": "Respect the patient's decision and maintain confidentiality unless a valid legal or other recognised exception applies", "is_correct": true},
+{"text": "Give the relatives access to the entire medical record", "is_correct": false},
+{"text": "Ask the community chief to decide whether disclosure is necessary", "is_correct": false}
+],
+"rationale": "A competent patient generally controls who receives personal health information. Financial support or family relationships do not automatically authorise disclosure, although lawful exceptions may apply in specific circumstances.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Scope of Practice for Community Health Nurses",
+"question_text": "A CHN is working at a CHPS compound when a patient develops a condition requiring specialist investigation and treatment unavailable at that level. The patient asks the nurse to manage the condition locally to avoid transport costs. What is the best professional decision?",
+"choices": [
+{"text": "Attempt specialist treatment despite lacking the necessary competence and resources", "is_correct": false},
+{"text": "Explain the need for higher-level care, provide appropriate stabilisation within competence and facilitate referral", "is_correct": true},
+{"text": "Discharge the patient without explanation", "is_correct": false},
+{"text": "Ask an unqualified volunteer to provide specialist treatment", "is_correct": false}
+],
+"rationale": "A CHN must recognise the limits of the facility's resources and the nurse's competence. Appropriate stabilisation and timely referral protect patient safety while maintaining continuity of care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Professional Boundaries in Home Visits",
+"question_text": "A CHN regularly visits a patient with a chronic illness. The patient begins relying on the nurse for personal financial assistance and asks the nurse to borrow money on the patient's behalf. What is the most appropriate response?",
+"choices": [
+{"text": "Borrow money for the patient to strengthen the relationship", "is_correct": false},
+{"text": "Maintain professional boundaries, explain the limits of the nursing relationship and refer the patient to appropriate social support", "is_correct": true},
+{"text": "Stop all nursing care immediately without arranging continuity", "is_correct": false},
+{"text": "Use the patient's situation to request money from other patients", "is_correct": false}
+],
+"rationale": "The nurse should not allow the therapeutic relationship to become a personal financial arrangement. Maintaining boundaries while connecting the patient with appropriate social support protects both the patient and the professional relationship.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advocacy and Whistleblowing in the Community",
+"question_text": "A nurse reports suspected diversion of essential medicines through the approved reporting channel. The nurse's supervisor threatens to transfer the nurse for raising the concern. What is the most appropriate next step?",
+"choices": [
+{"text": "Withdraw the report immediately to avoid disagreement", "is_correct": false},
+{"text": "Preserve relevant factual records and seek guidance through appropriate higher-level or protected reporting mechanisms", "is_correct": true},
+{"text": "Destroy all evidence to protect colleagues", "is_correct": false},
+{"text": "Publish patients' confidential records online to prove the allegation", "is_correct": false}
+],
+"rationale": "Whistleblowing involves reporting suspected wrongdoing or risks through appropriate channels in the public interest. The nurse should maintain factual documentation, protect confidential information and seek guidance on applicable reporting and protection procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Principles in Community Care",
+"question_text": "During an outbreak, a patient with a suspected highly infectious disease refuses recommended isolation. The patient is competent and insists on returning to a crowded household. Which response best balances autonomy and the duty to protect public health?",
+"choices": [
+{"text": "Physically restrain the patient without legal authority", "is_correct": false},
+{"text": "Explain the risks, explore voluntary measures and follow applicable public health procedures for managing the risk", "is_correct": true},
+{"text": "Ignore the risk because autonomy always overrides public health protection", "is_correct": false},
+{"text": "Publicly announce the patient's identity and diagnosis", "is_correct": false}
+],
+"rationale": "Autonomy is important, but it may be subject to lawful public health measures when an individual's actions create a serious risk to others. The nurse should use the least restrictive appropriate approach, provide clear information and follow applicable legal procedures.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Aspects of Community Nursing",
+"question_text": "A nurse is conducting a home visit when a family refuses entry because they believe the visit is unnecessary. There is no known emergency or legal authority permitting entry. What should the nurse do?",
+"choices": [
+{"text": "Force entry because the nurse has a professional identification card", "is_correct": false},
+{"text": "Respect the refusal, explain the purpose of the visit and arrange another suitable contact if appropriate", "is_correct": true},
+{"text": "Threaten the family with arrest", "is_correct": false},
+{"text": "Enter through another door without permission", "is_correct": false}
+],
+"rationale": "A routine home visit does not give a nurse automatic authority to enter a private residence against the occupants' wishes. The nurse should respect privacy, communicate professionally and follow appropriate procedures if a genuine safeguarding or emergency concern exists.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advocacy and Whistleblowing in the Community",
+"question_text": "A CHN identifies a community where children with disabilities are unable to access immunization because the outreach site has steps and no accessible route. What is the most appropriate advocacy response?",
+"choices": [
+{"text": "Accept the barrier because outreach services are not required to accommodate disability", "is_correct": false},
+{"text": "Raise the accessibility concern and work with the health team and community to provide an inclusive alternative", "is_correct": true},
+{"text": "Tell caregivers to stop bringing children for immunization", "is_correct": false},
+{"text": "Provide immunization only to children who can enter the site independently", "is_correct": false}
+],
+"rationale": "Equitable healthcare requires identifying and reducing barriers that exclude people with disabilities. Advocacy may involve modifying the outreach venue, arranging accessible services or providing an appropriate alternative delivery approach.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
