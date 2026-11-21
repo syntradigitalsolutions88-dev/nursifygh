@@ -657,8 +657,6 @@ def ai_chat_proxy(request):
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
-@api_view(["POST"])
-@permission_classes([AllowAny])
 def ai_ncp_autofill(request):
     scenario = (request.data.get("scenario") or "").strip()
     if len(scenario) < 20:
@@ -677,15 +675,14 @@ def ai_ncp_autofill(request):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": "llama-3.3-70b-versatile", # Groq's best model
+                "model": "openai/gpt-oss-120b", # Use the same model that works in your Chat Widget
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
                 ],
                 "temperature": 0.1,
-                "max_tokens": 4096,
-                # REMOVED: "response_format": {"type": "json_object"} 
-                # Groq's validator is too strict and fails on complex prompts.
+                "max_tokens": 4096, 
+                # REMOVED response_format: Groq's strict JSON validator is buggy and causes failures on complex prompts.
             },
             headers={
                 "Authorization": f"Bearer {api_key}",
