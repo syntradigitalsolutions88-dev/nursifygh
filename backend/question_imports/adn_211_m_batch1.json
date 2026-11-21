@@ -1,0 +1,790 @@
+{
+"courses": [
+{
+"course_code": "ADN-211-M",
+"course_title": "Advanced Nursing II",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Nursing Assessment in Midwifery",
+"Critical Care Basics for Midwives",
+"Advanced Wound Management",
+"Fluid and Electrolyte Balance",
+"Perioperative Nursing",
+"Pain Management in Labour",
+"Care of the Unconscious Patient",
+"Advanced Medication Administration in Midwifery"
+],
+"questions": [
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "Which maternal vital sign is most useful for detecting early circulatory compromise in a woman with suspected obstetric haemorrhage?",
+"choices": [
+{"text": "Body temperature", "is_correct": false},
+{"text": "Respiratory rate", "is_correct": false},
+{"text": "Pulse rate", "is_correct": true},
+{"text": "Height", "is_correct": false}
+],
+"rationale": "Tachycardia may be an early physiological response to blood loss and can occur before a significant fall in blood pressure. Maternal assessment should therefore include pulse rate, blood pressure, respiratory rate, mental status and peripheral perfusion.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "What is the normal resting respiratory rate for a healthy adult pregnant woman?",
+"choices": [
+{"text": "6–10 breaths per minute", "is_correct": false},
+{"text": "12–20 breaths per minute", "is_correct": true},
+{"text": "22–30 breaths per minute", "is_correct": false},
+{"text": "30–36 breaths per minute", "is_correct": false}
+],
+"rationale": "The usual resting respiratory rate for a healthy adult is approximately 12–20 breaths per minute. A respiratory rate outside this range, particularly when accompanied by respiratory distress or altered consciousness, requires further assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "Which clinical finding is most consistent with hypovolaemic shock in an obstetric patient?",
+"choices": [
+{"text": "Warm extremities and bounding pulse", "is_correct": false},
+{"text": "Bradycardia and hypertension", "is_correct": false},
+{"text": "Tachycardia, hypotension and cold clammy skin", "is_correct": true},
+{"text": "Normal pulse and increased urine output", "is_correct": false}
+],
+"rationale": "Hypovolaemic shock results from inadequate circulating blood volume, commonly due to severe obstetric haemorrhage. Tachycardia, hypotension, cool clammy skin, delayed capillary refill and reduced urine output are important warning signs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "Which measurement is used to calculate the obstetric shock index?",
+"choices": [
+{"text": "Systolic blood pressure divided by pulse rate", "is_correct": false},
+{"text": "Pulse rate divided by systolic blood pressure", "is_correct": true},
+{"text": "Diastolic blood pressure divided by respiratory rate", "is_correct": false},
+{"text": "Respiratory rate divided by pulse rate", "is_correct": false}
+],
+"rationale": "The shock index is calculated by dividing the heart rate by the systolic blood pressure. An elevated value may indicate haemodynamic compromise and should prompt urgent clinical assessment in a woman with suspected obstetric haemorrhage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care Basics for Midwives",
+"question_text": "In the initial assessment of a critically ill pregnant woman, what does the letter A in the ABC approach represent?",
+"choices": [
+{"text": "Assessment of circulation", "is_correct": false},
+{"text": "Airway assessment and maintenance", "is_correct": true},
+{"text": "Administration of medication", "is_correct": false},
+{"text": "Assessment of temperature", "is_correct": false}
+],
+"rationale": "A represents airway assessment and maintenance. The midwife must identify and manage airway obstruction before proceeding through breathing and circulation assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which term describes the separation of the edges of a previously closed surgical wound?",
+"choices": [
+{"text": "Wound dehiscence", "is_correct": true},
+{"text": "Wound epithelialisation", "is_correct": false},
+{"text": "Wound contraction", "is_correct": false},
+{"text": "Wound granulation", "is_correct": false}
+],
+"rationale": "Wound dehiscence is the partial or complete separation of previously approximated wound edges. It may occur following a caesarean section or episiotomy and requires prompt clinical assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which type of wound healing is expected in a clean surgical incision whose edges are accurately approximated with sutures?",
+"choices": [
+{"text": "Healing by secondary intention", "is_correct": false},
+{"text": "Healing by primary intention", "is_correct": true},
+{"text": "Healing by tertiary intention only", "is_correct": false},
+{"text": "Healing by tissue necrosis", "is_correct": false}
+],
+"rationale": "Primary intention occurs when clean wound edges are brought together using sutures, staples or another closure method. This generally promotes faster healing with less tissue loss and scarring than healing by secondary intention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which electrolyte plays a major role in neuromuscular function and cardiac electrical activity?",
+"choices": [
+{"text": "Potassium", "is_correct": true},
+{"text": "Chloride only", "is_correct": false},
+{"text": "Bicarbonate only", "is_correct": false},
+{"text": "Phosphate only", "is_correct": false}
+],
+"rationale": "Potassium is essential for normal nerve impulse transmission, skeletal muscle function and cardiac electrical activity. Significant abnormalities in serum potassium can cause dangerous cardiac arrhythmias.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which clinical measurement is particularly useful for monitoring renal perfusion in a critically ill obstetric patient?",
+"choices": [
+{"text": "Hair colour", "is_correct": false},
+{"text": "Urine output", "is_correct": true},
+{"text": "Fundal height alone", "is_correct": false},
+{"text": "Skin pigmentation", "is_correct": false}
+],
+"rationale": "Urine output provides useful information about renal perfusion and fluid balance. Reduced urine output may indicate hypovolaemia, renal impairment or other complications requiring investigation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "What is the primary purpose of obtaining informed consent before an elective caesarean section?",
+"choices": [
+{"text": "To transfer all responsibility to the patient", "is_correct": false},
+{"text": "To document the patient's voluntary agreement after receiving relevant information", "is_correct": true},
+{"text": "To guarantee that complications will not occur", "is_correct": false},
+{"text": "To allow the midwife to perform surgery independently", "is_correct": false}
+],
+"rationale": "Informed consent requires that the patient receives relevant information about the procedure, its benefits, risks and available alternatives, and agrees voluntarily. Consent must be obtained without coercion and in accordance with professional and legal requirements.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "Which phase of perioperative nursing care begins when the patient is received into the recovery area after surgery?",
+"choices": [
+{"text": "Preoperative phase", "is_correct": false},
+{"text": "Intraoperative phase", "is_correct": false},
+{"text": "Postoperative phase", "is_correct": true},
+{"text": "Preconception phase", "is_correct": false}
+],
+"rationale": "The postoperative phase begins after the surgical procedure and includes recovery monitoring and ongoing care. The midwife monitors airway, breathing, circulation, consciousness, pain, bleeding and wound condition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pain Management in Labour",
+"question_text": "Which hormone is primarily responsible for stimulating uterine contractions during labour?",
+"choices": [
+{"text": "Prolactin", "is_correct": false},
+{"text": "Oxytocin", "is_correct": true},
+{"text": "Insulin", "is_correct": false},
+{"text": "Thyroxine", "is_correct": false}
+],
+"rationale": "Oxytocin stimulates uterine smooth muscle contractions during labour. Its synthetic form may also be administered for specific obstetric indications under appropriate monitoring and clinical protocols.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pain Management in Labour",
+"question_text": "Which of the following is a non-pharmacological method of labour pain management?",
+"choices": [
+{"text": "Administration of pethidine", "is_correct": false},
+{"text": "Epidural analgesia", "is_correct": false},
+{"text": "Breathing and relaxation techniques", "is_correct": true},
+{"text": "Administration of intravenous opioids", "is_correct": false}
+],
+"rationale": "Breathing and relaxation techniques can help a woman cope with labour pain without medication. Other non-pharmacological approaches include massage, positioning, continuous support and water immersion where appropriate and available.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "Which medication is the standard anticonvulsant used for the prevention and treatment of eclamptic seizures?",
+"choices": [
+{"text": "Magnesium sulphate", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Ergometrine", "is_correct": false},
+{"text": "Ferrous sulphate", "is_correct": false}
+],
+"rationale": "Magnesium sulphate is the recommended anticonvulsant for the prevention and treatment of eclamptic seizures. It requires careful monitoring for toxicity, including respiratory depression, loss of deep tendon reflexes and reduced urine output.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "Which clinical finding is an important sign of magnesium sulphate toxicity?",
+"choices": [
+{"text": "Increased deep tendon reflexes", "is_correct": false},
+{"text": "Absent deep tendon reflexes", "is_correct": true},
+{"text": "Increased appetite", "is_correct": false},
+{"text": "Excessive fetal movement", "is_correct": false}
+],
+"rationale": "Loss of deep tendon reflexes is an important early clinical sign of magnesium sulphate toxicity. Respiratory rate and urine output must also be monitored, and the medication should be withheld while urgent clinical review is obtained if toxicity is suspected.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "Which uterotonic medication is commonly recommended as the first-line drug for prevention of postpartum haemorrhage during active management of the third stage of labour?",
+"choices": [
+{"text": "Oxytocin", "is_correct": true},
+{"text": "Diazepam", "is_correct": false},
+{"text": "Magnesium sulphate", "is_correct": false},
+{"text": "Hydralazine", "is_correct": false}
+],
+"rationale": "Oxytocin is the preferred first-line uterotonic for prevention of postpartum haemorrhage where it is available and appropriate. Its administration must follow the recommended dose, route and timing in the applicable national or facility protocol.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "Which antihypertensive medication may be used to manage severe hypertension in pregnancy?",
+"choices": [
+{"text": "Labetalol", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Misoprostol", "is_correct": false},
+{"text": "Ergometrine", "is_correct": false}
+],
+"rationale": "Labetalol is one of the medications used to treat severe hypertension in pregnancy. Other accepted options may include hydralazine and immediate-release oral nifedipine, depending on the clinical situation and applicable protocol.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "A woman at 36 weeks of gestation reports a severe headache and blurred vision. Her blood pressure is 170/115 mmHg. What is the most likely obstetric complication?",
+"choices": [
+{"text": "Gestational diabetes mellitus", "is_correct": false},
+{"text": "Severe pre-eclampsia", "is_correct": true},
+{"text": "Physiological pregnancy discomfort", "is_correct": false},
+{"text": "Iron-deficiency anaemia", "is_correct": false}
+],
+"rationale": "Severe hypertension accompanied by neurological symptoms such as headache and visual disturbance strongly suggests pre-eclampsia with severe features. The woman requires urgent assessment, treatment to control severe blood pressure and seizure prophylaxis according to protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "A woman develops heavy vaginal bleeding following delivery. Her pulse is 124 beats per minute, blood pressure is 85/55 mmHg and her skin is cold and clammy. Which condition should the midwife suspect?",
+"choices": [
+{"text": "Hypovolaemic shock secondary to postpartum haemorrhage", "is_correct": true},
+{"text": "Normal postpartum adaptation", "is_correct": false},
+{"text": "Mild dehydration without circulatory compromise", "is_correct": false},
+{"text": "Physiological postpartum fatigue", "is_correct": false}
+],
+"rationale": "Heavy postpartum bleeding accompanied by tachycardia, hypotension and cold clammy skin indicates probable hypovolaemic shock. Immediate haemorrhage management and resuscitation are required while the cause of bleeding is identified and treated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "A pregnant woman attending antenatal clinic has a blood pressure of 150/100 mmHg. Which additional assessment is particularly important when evaluating possible pre-eclampsia?",
+"choices": [
+{"text": "Assessment for proteinuria and symptoms of end-organ involvement", "is_correct": true},
+{"text": "Measurement of maternal shoe size", "is_correct": false},
+{"text": "Assessment of hair growth only", "is_correct": false},
+{"text": "Measurement of abdominal circumference only", "is_correct": false}
+],
+"rationale": "Evaluation for pre-eclampsia includes assessment of blood pressure, proteinuria and features of maternal organ dysfunction. Symptoms such as severe headache, visual disturbance and epigastric or right upper quadrant pain require particular attention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "A woman in labour becomes restless, pale and sweaty. Her pulse is increasing, although her blood pressure remains within the normal range. What should the midwife recognise?",
+"choices": [
+{"text": "There is no possibility of circulatory compromise because the blood pressure is normal", "is_correct": false},
+{"text": "Early shock may be developing and further assessment is required", "is_correct": true},
+{"text": "These findings confirm normal progress of labour", "is_correct": false},
+{"text": "The woman should be discharged from the labour ward", "is_correct": false}
+],
+"rationale": "Tachycardia, pallor, sweating and restlessness may indicate early circulatory compromise. Blood pressure can remain relatively preserved during the early stages of haemorrhagic shock, so the midwife must not rely on hypotension alone.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for Midwives",
+"question_text": "A woman collapses in the maternity ward and is unresponsive. What should the midwife do first?",
+"choices": [
+{"text": "Leave the woman to obtain her antenatal record", "is_correct": false},
+{"text": "Assess responsiveness, call for emergency assistance and begin the ABC assessment", "is_correct": true},
+{"text": "Administer oral fluids immediately", "is_correct": false},
+{"text": "Wait for the obstetrician before assessing her", "is_correct": false}
+],
+"rationale": "An unresponsive woman requires immediate emergency assessment and activation of the facility emergency response. The midwife should assess airway, breathing and circulation and initiate resuscitation in accordance with current basic life support and maternal resuscitation protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for Midwives",
+"question_text": "A midwife at a CHPS compound identifies a pregnant woman with severe vaginal bleeding and signs of shock. What is the most appropriate action?",
+"choices": [
+{"text": "Arrange urgent referral to an appropriate emergency obstetric facility while initiating stabilisation", "is_correct": true},
+{"text": "Ask the woman to return the following day", "is_correct": false},
+{"text": "Manage the bleeding at the CHPS compound without referral", "is_correct": false},
+{"text": "Give the woman oral iron tablets and discharge her", "is_correct": false}
+],
+"rationale": "Severe obstetric bleeding with shock is a life-threatening emergency that requires urgent transfer to a facility capable of comprehensive emergency obstetric care. Initial stabilisation, communication with the receiving facility and appropriate transport should occur without unnecessary delay.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for Midwives",
+"question_text": "A woman with severe pre-eclampsia is being prepared for transfer from a district hospital to a regional hospital. Which action is most appropriate before and during referral?",
+"choices": [
+{"text": "Delay treatment until the receiving hospital confirms acceptance", "is_correct": false},
+{"text": "Stabilise the woman as far as possible, communicate with the receiving facility and arrange monitored transfer", "is_correct": true},
+{"text": "Allow the woman to travel alone by public transport", "is_correct": false},
+{"text": "Discontinue all monitoring once the referral form is completed", "is_correct": false}
+],
+"rationale": "A woman with severe pre-eclampsia requires urgent treatment and monitored referral to a facility with the necessary obstetric and neonatal capabilities. Stabilisation, appropriate medication, documentation and direct communication help reduce preventable complications during transfer.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for Midwives",
+"question_text": "A woman in labour develops respiratory distress, with a respiratory rate of 32 breaths per minute and oxygen saturation of 88%. What is the most appropriate immediate response?",
+"choices": [
+{"text": "Reassure her that breathlessness is always normal in labour", "is_correct": false},
+{"text": "Assess and support airway and breathing, provide oxygen as indicated, and urgently escalate care", "is_correct": true},
+{"text": "Encourage her to walk around the ward", "is_correct": false},
+{"text": "Give her oral fluids and reassess the following morning", "is_correct": false}
+],
+"rationale": "Tachypnoea and oxygen saturation of 88% indicate significant hypoxaemia and require immediate intervention. The midwife should assess airway and breathing, provide oxygen as indicated, monitor the woman and urgently obtain advanced clinical support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman on the second day after caesarean section has increasing wound pain, redness, warmth and purulent discharge. What complication is most likely?",
+"choices": [
+{"text": "Normal wound healing", "is_correct": false},
+{"text": "Surgical site infection", "is_correct": true},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Physiological breast engorgement", "is_correct": false}
+],
+"rationale": "Increasing pain, erythema, warmth and purulent discharge are characteristic signs of a surgical site infection. The wound requires clinical assessment, appropriate investigation and treatment, including antibiotics when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman reports severe perineal pain after an episiotomy. On examination, the area is swollen and there is increasing bruising. Which complication should the midwife suspect?",
+"choices": [
+{"text": "Perineal haematoma", "is_correct": true},
+{"text": "Normal lochia", "is_correct": false},
+{"text": "Breast abscess", "is_correct": false},
+{"text": "Uterine inversion", "is_correct": false}
+],
+"rationale": "A perineal haematoma may present with severe or increasing perineal pain, swelling and bruising after childbirth. The midwife should assess the woman's condition, monitor for blood loss and obtain urgent obstetric review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman with a caesarean section wound asks how to reduce the risk of wound infection at home. Which advice is most appropriate?",
+"choices": [
+{"text": "Keep the wound clean and dry according to discharge instructions and report signs of infection", "is_correct": true},
+{"text": "Apply unprescribed herbal preparations to the wound daily", "is_correct": false},
+{"text": "Remove all wound closure materials immediately after discharge", "is_correct": false},
+{"text": "Ignore increasing pain unless fever develops", "is_correct": false}
+],
+"rationale": "Appropriate wound hygiene and adherence to the facility's wound-care instructions help reduce infection risk. The woman should seek assessment if she develops increasing pain, redness, swelling, discharge, fever or wound separation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "During a dressing change for a caesarean section wound, the midwife notices that the wound edges have separated and deeper tissue is visible. What should the midwife do?",
+"choices": [
+{"text": "Attempt to close the wound using ordinary adhesive tape", "is_correct": false},
+{"text": "Cover the wound with an appropriate sterile dressing and urgently obtain surgical review", "is_correct": true},
+{"text": "Apply powder directly into the wound", "is_correct": false},
+{"text": "Discharge the woman without further assessment", "is_correct": false}
+],
+"rationale": "Separation of a surgical wound with visible deeper tissue suggests significant wound dehiscence. The wound should be protected with an appropriate sterile dressing and urgently reviewed by the surgical or obstetric team.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A woman in labour has persistent vomiting, dry mucous membranes and reduced urine output. Which problem should the midwife suspect?",
+"choices": [
+{"text": "Fluid volume deficit", "is_correct": true},
+{"text": "Fluid volume excess", "is_correct": false},
+{"text": "Hypervolaemia", "is_correct": false},
+{"text": "Normal hydration status", "is_correct": false}
+],
+"rationale": "Vomiting, dry mucous membranes and reduced urine output are consistent with dehydration and possible fluid volume deficit. The midwife should assess the woman's circulation, fluid intake and losses, and arrange appropriate fluid replacement and monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A woman receiving intravenous fluids after caesarean section develops breathlessness, bilateral basal crackles and increasing oxygen requirements. What complication should the midwife suspect?",
+"choices": [
+{"text": "Pulmonary oedema or fluid overload", "is_correct": true},
+{"text": "Mild constipation", "is_correct": false},
+{"text": "Normal postoperative recovery", "is_correct": false},
+{"text": "Iron-deficiency anaemia only", "is_correct": false}
+],
+"rationale": "Breathlessness, crackles and increasing oxygen requirements may indicate pulmonary oedema, which can occur with fluid overload or other serious obstetric conditions. The midwife should urgently escalate care, assess respiratory status and review intravenous fluid administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A woman with severe pre-eclampsia is receiving intravenous fluids. Which nursing action is most important to reduce the risk of fluid-related complications?",
+"choices": [
+{"text": "Administer unrestricted intravenous fluids", "is_correct": false},
+{"text": "Monitor fluid input, urine output and respiratory status carefully", "is_correct": true},
+{"text": "Stop measuring urine output", "is_correct": false},
+{"text": "Encourage excessive oral fluid intake", "is_correct": false}
+],
+"rationale": "Women with severe pre-eclampsia are at increased risk of pulmonary oedema, so fluid administration requires careful control. Accurate fluid balance, urine output and respiratory monitoring are essential and should follow the prescribed management protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A woman receiving magnesium sulphate for severe pre-eclampsia has a urine output of 15 mL per hour. What is the most appropriate action by the midwife?",
+"choices": [
+{"text": "Continue the infusion without further assessment", "is_correct": false},
+{"text": "Withhold further magnesium sulphate pending urgent review and assess for toxicity", "is_correct": true},
+{"text": "Double the magnesium sulphate infusion rate", "is_correct": false},
+{"text": "Encourage the woman to walk to increase urine output", "is_correct": false}
+],
+"rationale": "Markedly reduced urine output may impair magnesium excretion and increase the risk of toxicity. The midwife should withhold further magnesium sulphate according to protocol, assess reflexes and respiratory rate, and urgently notify the responsible clinician.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A woman is scheduled for an elective caesarean section. Which preoperative action is essential before transfer to the operating theatre?",
+"choices": [
+{"text": "Confirm the patient's identity, procedure, consent and relevant preoperative checks", "is_correct": true},
+{"text": "Remove the patient's identification band", "is_correct": false},
+{"text": "Allow the woman to eat a full meal immediately before anaesthesia", "is_correct": false},
+{"text": "Disregard known medication allergies if the woman appears well", "is_correct": false}
+],
+"rationale": "Preoperative safety checks include confirming identity, planned procedure, informed consent, allergies and relevant clinical investigations. These checks reduce preventable errors and support safe surgical care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A woman is transferred to the recovery area following caesarean section under spinal anaesthesia. Which assessment should receive immediate attention?",
+"choices": [
+{"text": "Airway, breathing, circulation and level of consciousness", "is_correct": true},
+{"text": "Her preference for the baby's clothing", "is_correct": false},
+{"text": "The colour of her antenatal card", "is_correct": false},
+{"text": "Her preferred time for the next clinic appointment", "is_correct": false}
+],
+"rationale": "Immediate postoperative recovery requires assessment of airway, breathing, circulation and consciousness. The midwife should also monitor vital signs, bleeding, uterine tone, pain, sensory and motor recovery, and other complications of anaesthesia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A woman develops heavy vaginal bleeding and a soft, poorly contracted uterus shortly after caesarean section. What is the most likely cause?",
+"choices": [
+{"text": "Uterine atony", "is_correct": true},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Cervical dilatation", "is_correct": false},
+{"text": "Postoperative urinary retention only", "is_correct": false}
+],
+"rationale": "A soft, poorly contracted uterus accompanied by heavy bleeding is characteristic of uterine atony, a major cause of postpartum haemorrhage. Immediate management includes calling for help, uterine massage where appropriate, uterotonics and implementation of the facility's haemorrhage protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A woman who has undergone caesarean section complains of calf pain and swelling on one side. What complication should the midwife suspect?",
+"choices": [
+{"text": "Deep vein thrombosis", "is_correct": true},
+{"text": "Normal postoperative muscle relaxation", "is_correct": false},
+{"text": "Uterine atony", "is_correct": false},
+{"text": "Wound epithelialisation", "is_correct": false}
+],
+"rationale": "Unilateral calf pain and swelling may indicate deep vein thrombosis, and pregnancy and the postoperative period increase thromboembolic risk. The woman requires urgent clinical assessment, and the affected limb should not be massaged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management in Labour",
+"question_text": "A woman in the first stage of labour requests assistance with coping with contractions but does not want medication. Which intervention is appropriate?",
+"choices": [
+{"text": "Support breathing, relaxation, comfortable positioning and continuous reassurance", "is_correct": true},
+{"text": "Tell her that pain relief is not available", "is_correct": false},
+{"text": "Administer an opioid without discussing it with her", "is_correct": false},
+{"text": "Restrict all movement regardless of her condition", "is_correct": false}
+],
+"rationale": "Non-pharmacological approaches such as breathing, relaxation, position changes and continuous support can improve coping during labour. The midwife should respect the woman's preferences while continuing to assess maternal and fetal wellbeing.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management in Labour",
+"question_text": "A woman in labour receives an opioid analgesic and becomes unusually drowsy with a respiratory rate of 8 breaths per minute. What should the midwife do?",
+"choices": [
+{"text": "Administer another dose to improve pain relief", "is_correct": false},
+{"text": "Withhold further opioid medication, support breathing and urgently seek medical assistance", "is_correct": true},
+{"text": "Leave the woman alone to sleep", "is_correct": false},
+{"text": "Encourage her to drink water and continue labour without reassessment", "is_correct": false}
+],
+"rationale": "A respiratory rate of 8 breaths per minute with excessive drowsiness suggests opioid-induced respiratory depression. Further opioid administration must be withheld, and urgent airway and breathing support and clinical review are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management in Labour",
+"question_text": "A woman receiving epidural analgesia during labour develops hypotension and fetal heart rate abnormalities. Which action is most appropriate?",
+"choices": [
+{"text": "Ignore the findings because hypotension is expected", "is_correct": false},
+{"text": "Assess maternal condition, reposition appropriately, initiate prescribed measures and urgently inform the anaesthetic and obstetric teams", "is_correct": true},
+{"text": "Ask the woman to stand and walk unassisted", "is_correct": false},
+{"text": "Discontinue fetal monitoring permanently", "is_correct": false}
+],
+"rationale": "Maternal hypotension following epidural analgesia can reduce uteroplacental perfusion and contribute to fetal heart rate abnormalities. Prompt maternal assessment, appropriate positioning, prescribed treatment and escalation are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "A woman with eclampsia develops a generalised seizure in the labour ward. What should the midwife do first?",
+"choices": [
+{"text": "Place a spoon in her mouth to prevent tongue biting", "is_correct": false},
+{"text": "Protect her from injury, summon emergency assistance and maintain airway safety", "is_correct": true},
+{"text": "Restrain all her limbs firmly", "is_correct": false},
+{"text": "Give her oral medication during the seizure", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, the immediate priorities are preventing injury, summoning assistance and protecting the airway. The midwife must not restrain the woman or place objects in her mouth, and magnesium sulphate should be administered according to the emergency protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "A woman remains unconscious after an eclamptic seizure. Which position is most appropriate while the midwife assesses and supports her airway and breathing?",
+"choices": [
+{"text": "Supine with no head support", "is_correct": false},
+{"text": "Lateral recovery position, where clinically appropriate", "is_correct": true},
+{"text": "Prone with the face pressed into the mattress", "is_correct": false},
+{"text": "Sitting upright without support", "is_correct": false}
+],
+"rationale": "A lateral position helps reduce the risk of aspiration and supports airway drainage in an unconscious woman who is breathing. Airway and breathing must be continuously reassessed, and urgent advanced care is required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "A woman receiving magnesium sulphate for eclampsia develops absent patellar reflexes and a respiratory rate of 9 breaths per minute. Which medication should be prepared as the antidote for magnesium toxicity?",
+"choices": [
+{"text": "Calcium gluconate", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Hydralazine", "is_correct": false},
+{"text": "Misoprostol", "is_correct": false}
+],
+"rationale": "Calcium gluconate is the recognised antidote for magnesium sulphate toxicity. The magnesium infusion should be stopped, urgent medical assistance obtained and respiratory support provided while the antidote is administered according to protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "A woman becomes unconscious after severe postpartum haemorrhage. Her pulse is weak and rapid, and her blood pressure is very low. Which intervention is a priority alongside immediate emergency escalation?",
+"choices": [
+{"text": "Maintain airway and breathing, establish appropriate intravenous access and initiate haemorrhage resuscitation", "is_correct": true},
+{"text": "Give oral fluids while she is unconscious", "is_correct": false},
+{"text": "Wait until she regains consciousness before starting treatment", "is_correct": false},
+{"text": "Encourage her to sit upright and walk", "is_correct": false}
+],
+"rationale": "Unconsciousness with weak rapid pulse and severe hypotension suggests profound circulatory compromise. Airway and breathing support, rapid intravenous access, appropriate resuscitation and immediate control of the bleeding are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "A woman with postpartum haemorrhage due to uterine atony is prescribed oxytocin. Which action is most important during administration?",
+"choices": [
+{"text": "Administer it using the prescribed route and dose while monitoring uterine response and maternal vital signs", "is_correct": true},
+{"text": "Administer any dose available without checking the prescription", "is_correct": false},
+{"text": "Mix it with any medication without checking compatibility", "is_correct": false},
+{"text": "Stop monitoring once the medication has been started", "is_correct": false}
+],
+"rationale": "Oxytocin is used to stimulate uterine contraction and control atonic bleeding. Safe administration requires checking the prescription, correct dose, route and rate, while monitoring uterine tone, blood loss and maternal condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "A woman with severe pre-eclampsia is prescribed hydralazine for acute blood pressure control. Which parameter must the midwife monitor closely after administration?",
+"choices": [
+{"text": "Maternal blood pressure and pulse rate", "is_correct": true},
+{"text": "Hair growth and nail length", "is_correct": false},
+{"text": "Maternal height", "is_correct": false},
+{"text": "Abdominal skin pigmentation", "is_correct": false}
+],
+"rationale": "Hydralazine lowers blood pressure through vasodilation and may cause maternal hypotension and reflex tachycardia. Close monitoring of blood pressure, pulse and fetal wellbeing is important during treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "A woman with a history of bronchial asthma develops postpartum haemorrhage. Which uterotonic requires particular caution or avoidance because it may cause bronchospasm?",
+"choices": [
+{"text": "Carboprost", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Misoprostol", "is_correct": false},
+{"text": "Tranexamic acid", "is_correct": false}
+],
+"rationale": "Carboprost is a prostaglandin analogue that can cause bronchoconstriction and is generally avoided in women with asthma. The midwife should communicate the patient's history and support selection of an appropriate alternative under the haemorrhage protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "A woman with severe hypertension in pregnancy is prescribed an antihypertensive medication. Which medication should generally be avoided because it is contraindicated in pregnancy due to its effects on the fetal kidneys?",
+"choices": [
+{"text": "Labetalol", "is_correct": false},
+{"text": "Hydralazine", "is_correct": false},
+{"text": "Enalapril", "is_correct": true},
+{"text": "Nifedipine", "is_correct": false}
+],
+"rationale": "Enalapril is an angiotensin-converting enzyme inhibitor and is contraindicated during pregnancy because it can cause serious fetal renal and other developmental complications. Labetalol, hydralazine and nifedipine are among the medicines used for hypertension in pregnancy when clinically indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "Before administering magnesium sulphate to a woman with severe pre-eclampsia, which assessment is essential?",
+"choices": [
+{"text": "Respiratory rate, deep tendon reflexes and urine output", "is_correct": true},
+{"text": "Hair texture, height and shoe size", "is_correct": false},
+{"text": "Appetite and food preference only", "is_correct": false},
+{"text": "Visual acuity of the newborn", "is_correct": false}
+],
+"rationale": "Baseline respiratory rate, deep tendon reflexes and urine output help identify conditions that increase the risk of magnesium toxicity and provide parameters for ongoing monitoring. The midwife must follow the prescribed regimen and facility protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "A woman develops sudden severe abdominal pain, vaginal bleeding and signs of shock during labour. The uterus is tender and remains tense between contractions. Which complication is most likely?",
+"choices": [
+{"text": "Placental abruption", "is_correct": true},
+{"text": "Normal uterine activity", "is_correct": false},
+{"text": "Mild pregnancy-related backache", "is_correct": false},
+{"text": "Uncomplicated cervical dilatation", "is_correct": false}
+],
+"rationale": "Placental abruption may present with painful vaginal bleeding, uterine tenderness, increased uterine tone and maternal shock. The visible blood loss may underestimate the severity because bleeding can be concealed behind the placenta.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Nursing Assessment in Midwifery",
+"question_text": "A woman who has just delivered has a pulse of 118 beats per minute, blood pressure of 110/70 mmHg and ongoing vaginal bleeding. Her skin is pale and her urine output is falling. Which interpretation is most appropriate?",
+"choices": [
+{"text": "She is haemodynamically stable because her blood pressure is normal", "is_correct": false},
+{"text": "She may be developing compensated hypovolaemic shock despite a preserved blood pressure", "is_correct": true},
+{"text": "The findings indicate normal postpartum recovery", "is_correct": false},
+{"text": "The reduced urine output confirms adequate renal perfusion", "is_correct": false}
+],
+"rationale": "Tachycardia, pallor, ongoing bleeding and falling urine output suggest impaired circulating volume and possible compensated shock. A normal blood pressure does not exclude significant blood loss, so urgent haemorrhage assessment and treatment are necessary.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care Basics for Midwives",
+"question_text": "A woman with severe pre-eclampsia at a district hospital develops an eclamptic seizure. The facility has limited critical care capacity. Which management plan best addresses her immediate and ongoing needs?",
+"choices": [
+{"text": "Wait for the seizure to stop and discharge her if she becomes alert", "is_correct": false},
+{"text": "Protect her airway, administer magnesium sulphate according to protocol, control severe hypertension, assess mother and fetus, and arrange urgent specialist care", "is_correct": true},
+{"text": "Administer oxytocin immediately to stop the seizure", "is_correct": false},
+{"text": "Transfer her without initial stabilisation or communication with the receiving facility", "is_correct": false}
+],
+"rationale": "Eclampsia is a life-threatening obstetric emergency requiring seizure control, maternal stabilisation and management of severe hypertension. The district hospital should initiate emergency treatment and arrange timely referral to a facility with the appropriate obstetric, anaesthetic and neonatal capabilities.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care Basics for Midwives",
+"question_text": "A woman with postpartum haemorrhage continues to bleed despite initial uterine massage and administration of a uterotonic. Her blood pressure is falling and her pulse is rising. What is the most appropriate next response?",
+"choices": [
+{"text": "Continue observing because the first treatment has already been given", "is_correct": false},
+{"text": "Activate the major obstetric haemorrhage response, continue resuscitation and urgently escalate for definitive bleeding control", "is_correct": true},
+{"text": "Stop all intravenous fluids and wait for spontaneous recovery", "is_correct": false},
+{"text": "Transfer the woman to a general ward without monitoring", "is_correct": false}
+],
+"rationale": "Persistent bleeding with worsening haemodynamic signs indicates ongoing severe haemorrhage requiring escalation beyond initial measures. The team must continue resuscitation, identify the cause using a systematic approach and arrange definitive interventions, including blood products or surgery when indicated.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman presents five days after caesarean section with fever, worsening incisional pain, spreading redness and foul-smelling wound discharge. Which management approach is most appropriate?",
+"choices": [
+{"text": "Reassure her that these are expected features of wound healing", "is_correct": false},
+{"text": "Assess for surgical site infection and possible systemic involvement, obtain urgent clinical review and initiate treatment as prescribed", "is_correct": true},
+{"text": "Cover the wound with a dry cloth and advise her to return in two weeks", "is_correct": false},
+{"text": "Apply an unprescribed topical preparation and avoid further examination", "is_correct": false}
+],
+"rationale": "Fever, spreading erythema, worsening pain and foul discharge strongly suggest a surgical site infection with possible systemic involvement. Prompt assessment, appropriate investigations, wound management and antimicrobial treatment are required to prevent progression to sepsis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A woman with a repaired episiotomy reports severe perineal pain that is disproportionate to the visible wound. She is pale and tachycardic, but there is little external bleeding. Which explanation should the midwife consider?",
+"choices": [
+{"text": "A concealed perineal haematoma", "is_correct": true},
+{"text": "Normal healing without complications", "is_correct": false},
+{"text": "Mild uterine afterpains only", "is_correct": false},
+{"text": "Physiological breast engorgement", "is_correct": false}
+],
+"rationale": "A perineal haematoma can cause severe pain and concealed blood loss without substantial visible vaginal bleeding. Pallor and tachycardia increase concern for haemodynamic compromise and require urgent obstetric assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A woman with severe pre-eclampsia has reduced urine output and increasing breathlessness after receiving intravenous fluids. Chest auscultation reveals bilateral crackles. Which interpretation best explains the findings?",
+"choices": [
+{"text": "The woman is adequately hydrated and requires more intravenous fluid", "is_correct": false},
+{"text": "She may have developed pulmonary oedema associated with fluid overload and pre-eclampsia", "is_correct": true},
+{"text": "The findings are typical of uncomplicated labour", "is_correct": false},
+{"text": "Reduced urine output excludes a fluid-related complication", "is_correct": false}
+],
+"rationale": "Pre-eclampsia can impair fluid regulation and increase susceptibility to pulmonary oedema, particularly when intravenous fluids are administered excessively. The combination of oliguria, breathlessness and bilateral crackles requires urgent escalation, respiratory assessment and careful review of fluid therapy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A woman receiving magnesium sulphate has a falling urine output, absent knee reflexes and increasing respiratory difficulty. Which explanation best accounts for the combination of findings?",
+"choices": [
+{"text": "Magnesium accumulation due to impaired renal excretion, causing toxicity", "is_correct": true},
+{"text": "Expected therapeutic effects of magnesium sulphate", "is_correct": false},
+{"text": "Oxytocin-induced uterine hyperstimulation", "is_correct": false},
+{"text": "Normal physiological changes in the second stage of labour", "is_correct": false}
+],
+"rationale": "Magnesium is excreted primarily through the kidneys, so reduced renal excretion can lead to accumulation and toxicity. Absent reflexes and respiratory depression are serious warning signs requiring cessation of magnesium administration, urgent treatment and preparation of calcium gluconate according to protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A woman becomes hypotensive and nauseated shortly after spinal anaesthesia for caesarean section. The fetal heart rate also decreases. Which mechanism most likely explains the fetal compromise?",
+"choices": [
+{"text": "Maternal hypotension has reduced uteroplacental perfusion", "is_correct": true},
+{"text": "Spinal anaesthesia has increased maternal blood volume", "is_correct": false},
+{"text": "The fetus has developed neonatal jaundice before birth", "is_correct": false},
+{"text": "The woman's uterine involution is occurring too rapidly", "is_correct": false}
+],
+"rationale": "Spinal anaesthesia can cause sympathetic blockade and maternal hypotension, reducing blood flow to the uterus and placenta. Prompt correction of maternal hypotension and continuous assessment of fetal wellbeing are essential.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A woman is recovering after caesarean section. She suddenly develops chest pain, severe breathlessness, tachycardia and oxygen desaturation. Which complication should be considered urgently?",
+"choices": [
+{"text": "Pulmonary embolism", "is_correct": true},
+{"text": "Normal postoperative discomfort", "is_correct": false},
+{"text": "Uncomplicated uterine involution", "is_correct": false},
+{"text": "Mild postoperative constipation", "is_correct": false}
+],
+"rationale": "Sudden chest pain, breathlessness, tachycardia and hypoxaemia in the postoperative period are concerning for pulmonary embolism. This is a life-threatening emergency requiring immediate escalation, respiratory and circulatory support, and urgent medical assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pain Management in Labour",
+"question_text": "A woman in labour experiences severe continuous abdominal pain between contractions. The uterus is tender, vaginal bleeding is present and the fetal heart rate is abnormal. Which conclusion should the midwife reach?",
+"choices": [
+{"text": "The findings are consistent with uncomplicated labour pain", "is_correct": false},
+{"text": "An obstetric emergency such as placental abruption should be suspected", "is_correct": true},
+{"text": "The woman only requires stronger routine analgesia", "is_correct": false},
+{"text": "The fetal heart rate abnormality can be ignored until delivery", "is_correct": false}
+],
+"rationale": "Persistent abdominal pain between contractions, uterine tenderness, bleeding and fetal compromise suggest placental abruption or another serious obstetric complication. The midwife must prioritise maternal and fetal assessment and urgent obstetric intervention rather than treating the presentation as routine labour pain.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "A woman with eclampsia remains unconscious after a seizure. Her respiratory rate is 7 breaths per minute, oxygen saturation is 82% and she has noisy breathing. What is the most urgent priority?",
+"choices": [
+{"text": "Complete the routine antenatal history", "is_correct": false},
+{"text": "Restore and maintain airway patency and support ventilation while activating emergency assistance", "is_correct": true},
+{"text": "Administer oral antihypertensive medication", "is_correct": false},
+{"text": "Wait for spontaneous improvement before intervening", "is_correct": false}
+],
+"rationale": "Severely reduced respiratory rate, hypoxaemia and noisy breathing indicate an immediate threat to airway and ventilation. Airway management and respiratory support take priority while the emergency team continues treatment of eclampsia and its complications.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "A woman with severe pre-eclampsia has a blood pressure of 175/115 mmHg and is prescribed an antihypertensive medication. After administration, her blood pressure falls rapidly to 85/50 mmHg and the fetal heart rate becomes abnormal. What is the most appropriate interpretation and response?",
+"choices": [
+{"text": "The response is desirable and requires no further assessment", "is_correct": false},
+{"text": "Excessive maternal blood pressure reduction may compromise uteroplacental perfusion and requires urgent reassessment and escalation", "is_correct": true},
+{"text": "The fetal heart rate abnormality is unrelated to maternal blood pressure", "is_correct": false},
+{"text": "The woman should receive another dose immediately", "is_correct": false}
+],
+"rationale": "A rapid and excessive fall in maternal blood pressure can reduce uteroplacental perfusion and compromise fetal wellbeing. The midwife should urgently reassess the mother and fetus, withhold further antihypertensive doses pending review and notify the responsible clinician.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "A woman develops postpartum haemorrhage due to uterine atony. She also has a history of severe hypertension and pre-eclampsia. Which uterotonic should generally be avoided because it can cause marked vasoconstriction and worsen hypertension?",
+"choices": [
+{"text": "Ergometrine", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Misoprostol", "is_correct": false},
+{"text": "Tranexamic acid", "is_correct": false}
+],
+"rationale": "Ergometrine causes sustained uterine contraction and vasoconstriction, which can produce a dangerous rise in blood pressure. It is contraindicated in women with hypertension and pre-eclampsia, so an appropriate alternative should be selected according to the postpartum haemorrhage protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Medication Administration in Midwifery",
+"question_text": "A midwife is preparing to administer oxytocin to a woman after birth. The prescription specifies a dose and route, but the medication label on the ampoule appears different from the intended drug. What is the safest action?",
+"choices": [
+{"text": "Administer it because all uterotonic medications have the same effect", "is_correct": false},
+{"text": "Stop the administration process, verify the medication and prescription, and clarify any discrepancy before proceeding", "is_correct": true},
+{"text": "Ask the woman to confirm the medication name", "is_correct": false},
+{"text": "Administer half the prescribed dose to reduce the risk", "is_correct": false}
+],
+"rationale": "Medication discrepancies must be resolved before administration to prevent potentially serious drug errors. The midwife should apply medication safety checks, verify the drug with an appropriate authorised professional and document the intervention according to facility policy.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
