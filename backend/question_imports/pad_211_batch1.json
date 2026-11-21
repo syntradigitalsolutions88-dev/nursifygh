@@ -1,0 +1,1030 @@
+{
+"courses": [
+{
+"course_code": "PAD-211",
+"course_title": "Paediatric Nursing I",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Growth and Development",
+"Paediatric Assessment and Vital Signs",
+"EPI Immunization",
+"IMCI",
+"Malnutrition",
+"Common Paediatric Illnesses",
+"Neonatal Care",
+"Paediatric Medication Administration"
+],
+"questions": [
+{
+"topic": "Growth and Development",
+"question_text": "Which developmental principle states that a child generally gains control of the head and neck before gaining control of the trunk?",
+"choices": [
+{"text": "Proximodistal development", "is_correct": false},
+{"text": "Cephalocaudal development", "is_correct": true},
+{"text": "Differential development", "is_correct": false},
+{"text": "Sequential maturation", "is_correct": false}
+],
+"rationale": "Cephalocaudal development refers to growth and control progressing from the head towards the lower parts of the body. This explains why infants usually develop head control before sitting and standing.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Growth and Development",
+"question_text": "At which age does an infant typically regain their birth weight after the normal physiological weight loss that occurs shortly after birth?",
+"choices": [
+{"text": "By the third day", "is_correct": false},
+{"text": "By 7–10 days", "is_correct": true},
+{"text": "By 4 weeks", "is_correct": false},
+{"text": "By 6 weeks", "is_correct": false}
+],
+"rationale": "Most healthy newborns regain their birth weight within approximately 10–14 days, although many do so earlier. Failure to regain birth weight within this period requires assessment of feeding adequacy and possible illness.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Growth and Development",
+"question_text": "According to Erikson's psychosocial theory, the major developmental task during infancy is:",
+"choices": [
+{"text": "Autonomy versus shame and doubt", "is_correct": false},
+{"text": "Initiative versus guilt", "is_correct": false},
+{"text": "Trust versus mistrust", "is_correct": true},
+{"text": "Industry versus inferiority", "is_correct": false}
+],
+"rationale": "Trust versus mistrust is the primary psychosocial conflict during infancy. Consistent feeding, comfort, protection and responsive caregiving help the infant develop a sense of trust.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Growth and Development",
+"question_text": "Which developmental milestone is commonly expected in a healthy infant at approximately 6 months of age?",
+"choices": [
+{"text": "Walking independently", "is_correct": false},
+{"text": "Sitting with support", "is_correct": true},
+{"text": "Speaking in complete sentences", "is_correct": false},
+{"text": "Riding a tricycle", "is_correct": false}
+],
+"rationale": "Many infants can sit with support at approximately 6 months and are developing improved trunk control. Independent walking and complex language skills develop much later.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 2-year-old child is admitted to a district hospital. The mother reports that the child frequently says 'no' and insists on feeding independently. Which developmental stage best explains this behaviour?",
+"choices": [
+{"text": "Trust versus mistrust", "is_correct": false},
+{"text": "Autonomy versus shame and doubt", "is_correct": true},
+{"text": "Industry versus inferiority", "is_correct": false},
+{"text": "Identity versus role confusion", "is_correct": false}
+],
+"rationale": "Toddlers develop independence and attempt to perform activities such as feeding and dressing themselves. Nurses should encourage safe independence rather than unnecessarily restricting the child's efforts.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A nurse assesses a 9-month-old infant who does not respond to their name, does not babble and has poor head control. What is the most appropriate interpretation?",
+"choices": [
+{"text": "These findings are normal variations in all infants", "is_correct": false},
+{"text": "The infant has achieved advanced development", "is_correct": false},
+{"text": "The infant requires further developmental assessment", "is_correct": true},
+{"text": "The findings confirm intellectual disability", "is_correct": false}
+],
+"rationale": "Poor head control, absent babbling and failure to respond to their name may indicate developmental concerns. The nurse should assess the child further and arrange appropriate referral rather than making a definitive diagnosis from these findings alone.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A mother brings her 4-month-old infant to a child welfare clinic and asks how she can support the child's development. Which advice is most appropriate?",
+"choices": [
+{"text": "Keep the infant in a cot for most of the day", "is_correct": false},
+{"text": "Provide supervised tummy time and responsive interaction", "is_correct": true},
+{"text": "Introduce family foods immediately", "is_correct": false},
+{"text": "Discourage the infant from reaching for objects", "is_correct": false}
+],
+"rationale": "Supervised tummy time when the infant is awake helps strengthen neck, shoulder and trunk muscles. Talking, smiling and responding to the infant also support social, emotional and language development.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 13-year-old boy attending a district hospital expresses concern about rapid changes in his body, including deepening of his voice and increased body hair. What is the nurse's best response?",
+"choices": [
+{"text": "Explain that these are common changes associated with puberty", "is_correct": true},
+{"text": "Tell him that the changes indicate a serious disease", "is_correct": false},
+{"text": "Advise him to avoid physical activity until the changes stop", "is_correct": false},
+{"text": "Inform him that puberty should have ended by age 10", "is_correct": false}
+],
+"rationale": "Voice changes and increased body hair are common secondary sexual characteristics in boys during puberty. The nurse should provide accurate, age-appropriate information and allow the adolescent to discuss concerns privately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 7-year-old child is admitted to a hospital and repeatedly asks whether their illness is punishment for misbehaving. Which nursing response is most appropriate?",
+"choices": [
+{"text": "Ignore the child's questions because they are too young to understand", "is_correct": false},
+{"text": "Explain in simple terms that illness is not a punishment", "is_correct": true},
+{"text": "Tell the child that the illness resulted from bad behaviour", "is_correct": false},
+{"text": "Discuss the child's illness only with the parents", "is_correct": false}
+],
+"rationale": "School-age children may interpret illness through concrete thinking and may associate it with punishment. Clear, honest explanations help reduce guilt, fear and misunderstanding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 5-year-old child admitted to a regional hospital becomes distressed when separated from the mother. Which intervention is most appropriate?",
+"choices": [
+{"text": "Prevent the mother from visiting to encourage independence", "is_correct": false},
+{"text": "Allow parental presence and involve the child in age-appropriate play", "is_correct": true},
+{"text": "Use punishment whenever the child cries", "is_correct": false},
+{"text": "Keep the child isolated from other children throughout admission", "is_correct": false}
+],
+"rationale": "Parental presence provides emotional security and reduces separation anxiety during hospitalisation. Therapeutic play can help the child express feelings and understand unfamiliar procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 14-year-old adolescent refuses to discuss personal concerns in front of a parent. What should the nurse do?",
+"choices": [
+{"text": "Insist that the parent must hear every discussion", "is_correct": false},
+{"text": "Provide an opportunity for confidential discussion while explaining its limits", "is_correct": true},
+{"text": "Discontinue the assessment", "is_correct": false},
+{"text": "Assume the adolescent is hiding a serious illness", "is_correct": false}
+],
+"rationale": "Adolescents need privacy and respect when discussing sensitive health concerns. The nurse should explain confidentiality and its limits, particularly where there is a risk of harm or a safeguarding concern.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 10-month-old infant is unable to sit independently, does not transfer objects between hands and has not started babbling. What is the most appropriate nursing action?",
+"choices": [
+{"text": "Reassure the caregiver that all milestones are expected after 2 years", "is_correct": false},
+{"text": "Assess developmental history and arrange further developmental evaluation", "is_correct": true},
+{"text": "Recommend that the infant be kept in bed", "is_correct": false},
+{"text": "Diagnose cerebral palsy immediately", "is_correct": false}
+],
+"rationale": "The combination of delayed motor and communication milestones warrants further assessment. Developmental screening, examination and timely referral can help identify conditions requiring early intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Growth and Development",
+"question_text": "A 15-year-old girl tells the nurse that she feels uncomfortable because her physical development is slower than that of her classmates. Which response best supports healthy adolescent development?",
+"choices": [
+{"text": "Compare her body with those of other girls in the clinic", "is_correct": false},
+{"text": "Explain that pubertal development varies and assess for any concerning delay", "is_correct": true},
+{"text": "Tell her that delayed development always indicates infertility", "is_correct": false},
+{"text": "Advise her to take hormonal medication without assessment", "is_correct": false}
+],
+"rationale": "The timing and pace of puberty vary among individuals. The nurse should provide reassurance while assessing growth patterns, menstrual history and other clinical features that may indicate delayed puberty.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "Which approach is most appropriate when measuring the respiratory rate of an infant?",
+"choices": [
+{"text": "Count respirations for 15 seconds while the infant is crying", "is_correct": false},
+{"text": "Count respirations for a full minute while the infant is calm", "is_correct": true},
+{"text": "Estimate the respiratory rate from chest movement after feeding", "is_correct": false},
+{"text": "Count only the inspiratory movements", "is_correct": false}
+],
+"rationale": "Infants have irregular respiratory patterns, making a full one-minute count more reliable. The infant should be calm because crying and activity can increase the respiratory rate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "What is the recommended anatomical site for measuring the apical pulse in an infant?",
+"choices": [
+{"text": "Right second intercostal space", "is_correct": false},
+{"text": "Left fifth intercostal space at the midclavicular line", "is_correct": false},
+{"text": "Left fourth intercostal space near the midclavicular line", "is_correct": true},
+{"text": "Right fifth intercostal space at the midaxillary line", "is_correct": false}
+],
+"rationale": "In infants, the apical impulse is generally located around the fourth left intercostal space near the midclavicular line. The apical pulse is useful when assessing heart rate in young children.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "According to IMCI respiratory-rate thresholds, which respiratory rate indicates fast breathing in a child aged 2 months to less than 12 months?",
+"choices": [
+{"text": "40 breaths per minute or more", "is_correct": false},
+{"text": "50 breaths per minute or more", "is_correct": true},
+{"text": "60 breaths per minute or more", "is_correct": false},
+{"text": "70 breaths per minute or more", "is_correct": false}
+],
+"rationale": "For children aged 2 months to less than 12 months, fast breathing is defined as 50 breaths per minute or more under IMCI. The threshold for children aged 12 months to 5 years is 40 breaths per minute or more.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "A nurse is assessing a 3-year-old child with fever at a district hospital. Which assessment should be prioritised to identify possible respiratory compromise?",
+"choices": [
+{"text": "Assessment of hair texture", "is_correct": false},
+{"text": "Assessment of respiratory rate, chest indrawing and oxygen saturation", "is_correct": true},
+{"text": "Measurement of abdominal circumference only", "is_correct": false},
+{"text": "Assessment of the child's preferred food", "is_correct": false}
+],
+"rationale": "Respiratory rate, chest indrawing and oxygen saturation help identify respiratory distress and hypoxaemia. Early recognition allows prompt oxygen therapy, treatment and referral where indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "A 2-year-old child arrives at a health facility with severe pallor, lethargy and cold extremities. What should the nurse do first?",
+"choices": [
+{"text": "Obtain a detailed dietary history", "is_correct": false},
+{"text": "Prioritise assessment of airway, breathing and circulation and seek urgent assistance", "is_correct": true},
+{"text": "Ask the caregiver to return the following day", "is_correct": false},
+{"text": "Begin routine growth monitoring", "is_correct": false}
+],
+"rationale": "Lethargy, severe pallor and cold extremities may indicate severe illness, shock or severe anaemia. Immediate assessment and stabilisation take priority over routine history-taking.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "A nurse needs to assess the blood pressure of a 4-year-old child. Which factor is most important when selecting the cuff?",
+"choices": [
+{"text": "The child's age alone", "is_correct": false},
+{"text": "The cuff should be small enough to fit tightly around the wrist", "is_correct": false},
+{"text": "The bladder width and length should be appropriate for the child's arm circumference", "is_correct": true},
+{"text": "The cuff should cover the entire upper arm and shoulder", "is_correct": false}
+],
+"rationale": "An appropriately sized cuff is essential for accurate paediatric blood pressure measurement. A cuff that is too small may produce falsely high readings, while one that is too large may produce falsely low readings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "A 3-year-old child with diarrhoea is restless, has sunken eyes and drinks eagerly when offered water. According to IMCI, which classification is most consistent with these findings?",
+"choices": [
+{"text": "No dehydration", "is_correct": false},
+{"text": "Some dehydration", "is_correct": true},
+{"text": "Severe dehydration", "is_correct": false},
+{"text": "Severe acute malnutrition", "is_correct": false}
+],
+"rationale": "Restlessness or irritability, sunken eyes and eager drinking are signs consistent with some dehydration when the required combination of IMCI signs is present. The child should receive appropriate oral rehydration and continued assessment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "A 6-month-old infant is brought to the emergency unit with convulsions and a temperature of 39.5°C. What is the nurse's immediate priority?",
+"choices": [
+{"text": "Force oral antipyretic medication into the infant's mouth", "is_correct": false},
+{"text": "Protect the infant from injury, maintain airway safety and obtain urgent clinical assistance", "is_correct": true},
+{"text": "Restrain the infant's limbs firmly", "is_correct": false},
+{"text": "Give the infant solid food to restore energy", "is_correct": false}
+],
+"rationale": "During a convulsion, the priority is to protect the child from injury and maintain airway safety without restraining the limbs or placing anything in the mouth. Urgent assessment is required to identify the cause and manage the seizure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Assessment and Vital Signs",
+"question_text": "A 4-year-old child with pneumonia has an oxygen saturation of 86% on room air and marked chest indrawing. Which action should the nurse prioritise?",
+"choices": [
+{"text": "Encourage the child to walk around the ward", "is_correct": false},
+{"text": "Administer oxygen according to protocol and arrange urgent medical review", "is_correct": true},
+{"text": "Delay intervention until the next routine observation", "is_correct": false},
+{"text": "Give oral fluids and discharge the child", "is_correct": false}
+],
+"rationale": "An oxygen saturation of 86% indicates significant hypoxaemia, and chest indrawing suggests severe respiratory compromise. Oxygen and urgent clinical management are required to prevent deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "Which vaccine is routinely administered at birth under Ghana's Expanded Programme on Immunization?",
+"choices": [
+{"text": "BCG", "is_correct": true},
+{"text": "Measles-rubella", "is_correct": false},
+{"text": "Yellow fever", "is_correct": false},
+{"text": "Pentavalent vaccine", "is_correct": false}
+],
+"rationale": "BCG is administered at birth to protect against severe forms of childhood tuberculosis. The birth dose of oral polio vaccine is also included in Ghana's routine immunisation schedule.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "At which age is the first dose of the pentavalent vaccine routinely given to infants in Ghana?",
+"choices": [
+{"text": "At birth", "is_correct": false},
+{"text": "6 weeks", "is_correct": true},
+{"text": "9 months", "is_correct": false},
+{"text": "18 months", "is_correct": false}
+],
+"rationale": "The first pentavalent vaccine dose is routinely administered at 6 weeks of age. Subsequent doses are given at 10 and 14 weeks to complete the primary infant series.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "Which disease is prevented by the BCG vaccine?",
+"choices": [
+{"text": "Measles", "is_correct": false},
+{"text": "Tuberculosis", "is_correct": true},
+{"text": "Pertussis", "is_correct": false},
+{"text": "Hepatitis A", "is_correct": false}
+],
+"rationale": "BCG protects primarily against severe forms of tuberculosis in children, including tuberculous meningitis and disseminated tuberculosis. It does not provide complete protection against all forms of tuberculosis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A mother brings her 6-week-old infant to a child welfare clinic in Ghana. Which combination of vaccines is generally due at this visit?",
+"choices": [
+{"text": "BCG, measles-rubella and yellow fever", "is_correct": false},
+{"text": "Pentavalent 1, OPV 1, PCV 1 and rotavirus 1", "is_correct": true},
+{"text": "Pentavalent 3, OPV 3 and measles-rubella", "is_correct": false},
+{"text": "Yellow fever, measles-rubella and HPV", "is_correct": false}
+],
+"rationale": "At 6 weeks, the routine infant schedule includes the first pentavalent, oral polio, pneumococcal conjugate and rotavirus vaccine doses. The nurse should confirm the current national schedule and the child's immunisation record.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A 9-month-old infant attends a child welfare clinic in Ghana and has received all vaccines due at 6, 10 and 14 weeks. Which vaccines are generally scheduled at this visit?",
+"choices": [
+{"text": "BCG and OPV 0", "is_correct": false},
+{"text": "Pentavalent 1 and rotavirus 1", "is_correct": false},
+{"text": "Measles-rubella 1 and yellow fever", "is_correct": true},
+{"text": "Pentavalent 3 and PCV 3", "is_correct": false}
+],
+"rationale": "The routine Ghanaian immunisation schedule includes the first measles-rubella and yellow fever vaccines at 9 months. The nurse should verify the current EPI schedule and document all administered doses.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A caregiver reports that her 4-month-old infant missed the scheduled 10-week immunisation appointment. What should the nurse advise?",
+"choices": [
+{"text": "Restart the entire immunisation schedule", "is_correct": false},
+{"text": "Wait until the child is 9 months old", "is_correct": false},
+{"text": "Bring the child for catch-up vaccination according to the national schedule", "is_correct": true},
+{"text": "Avoid further vaccination because the schedule has been interrupted", "is_correct": false}
+],
+"rationale": "Missed vaccine appointments should be managed through catch-up vaccination rather than restarting the entire series. The nurse should review the child's vaccination history and follow the current national catch-up guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A child develops mild soreness and a low-grade fever after receiving routine immunisations. What should the nurse tell the caregiver?",
+"choices": [
+{"text": "These reactions are always signs of vaccine failure", "is_correct": false},
+{"text": "Mild local and systemic reactions can occur and should be monitored", "is_correct": true},
+{"text": "The child must never receive another vaccine", "is_correct": false},
+{"text": "The child requires antibiotics immediately", "is_correct": false}
+],
+"rationale": "Mild fever and local soreness are common reactions following some vaccines and usually resolve without specific treatment. Caregivers should be advised about comfort measures and danger signs that require medical attention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A nurse discovers that a vaccine vial has been exposed to temperatures outside the recommended cold-chain range. What is the most appropriate action?",
+"choices": [
+{"text": "Administer the vaccine immediately before it expires", "is_correct": false},
+{"text": "Mix it with a new vaccine vial", "is_correct": false},
+{"text": "Quarantine the affected vaccine and report the incident according to EPI procedures", "is_correct": true},
+{"text": "Place the vaccine in a domestic freezer", "is_correct": false}
+],
+"rationale": "Exposure to inappropriate temperatures may reduce vaccine potency and compromise immunisation effectiveness. The affected vaccines should be separated, labelled and managed according to national cold-chain procedures pending guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A caregiver refuses a scheduled vaccine because the child previously developed mild fever after immunisation. Which response is most appropriate?",
+"choices": [
+{"text": "Threaten to deny the child other health services", "is_correct": false},
+{"text": "Explain expected vaccine reactions, address concerns and encourage completion of immunisation", "is_correct": true},
+{"text": "Tell the caregiver that vaccines have no possible adverse effects", "is_correct": false},
+{"text": "Record the child as fully immunised without administering the vaccine", "is_correct": false}
+],
+"rationale": "Clear communication helps caregivers understand the benefits and possible adverse effects of vaccination. Mild fever alone is generally not a contraindication to subsequent doses, although the nurse should assess for any history of serious vaccine reactions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "EPI Immunization",
+"question_text": "A child with a documented history of anaphylaxis after a previous dose of a particular vaccine is brought for the next dose of the same vaccine. What should the nurse do?",
+"choices": [
+{"text": "Administer the vaccine routinely because all reactions are harmless", "is_correct": false},
+{"text": "Withhold the implicated vaccine and arrange appropriate clinical assessment", "is_correct": true},
+{"text": "Double the vaccine dose to improve protection", "is_correct": false},
+{"text": "Administer the vaccine without recording the previous reaction", "is_correct": false}
+],
+"rationale": "Anaphylaxis following a previous dose is a serious contraindication to routine administration of the same vaccine or a vaccine containing the implicated component. The child requires clinical review and guidance on future immunisation options.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "IMCI",
+"question_text": "What is the primary purpose of the Integrated Management of Childhood Illness strategy?",
+"choices": [
+{"text": "To treat only children admitted to intensive care units", "is_correct": false},
+{"text": "To improve the prevention and management of common childhood illnesses", "is_correct": true},
+{"text": "To replace all childhood immunisation programmes", "is_correct": false},
+{"text": "To focus exclusively on childhood nutritional disorders", "is_correct": false}
+],
+"rationale": "IMCI is an integrated approach designed to reduce childhood illness and death through improved assessment, classification, treatment and counselling. It addresses common conditions such as pneumonia, diarrhoea, malaria and malnutrition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "IMCI",
+"question_text": "Which of the following is a general danger sign in a child aged 2 months to 5 years under IMCI?",
+"choices": [
+{"text": "Mild cough", "is_correct": false},
+{"text": "Unable to drink or breastfeed", "is_correct": true},
+{"text": "Occasional sneezing", "is_correct": false},
+{"text": "Mild skin irritation", "is_correct": false}
+],
+"rationale": "Inability to drink or breastfeed is a general danger sign indicating possible severe illness. Other general danger signs include vomiting everything, convulsions and lethargy or unconsciousness.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "IMCI",
+"question_text": "Under IMCI, which respiratory rate indicates fast breathing in a child aged 12 months to 5 years?",
+"choices": [
+{"text": "30 breaths per minute or more", "is_correct": false},
+{"text": "35 breaths per minute or more", "is_correct": false},
+{"text": "40 breaths per minute or more", "is_correct": true},
+{"text": "60 breaths per minute or more", "is_correct": false}
+],
+"rationale": "For children aged 12 months to 5 years, fast breathing is defined as 40 breaths per minute or more. This threshold helps identify children who may have pneumonia and require further assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "IMCI",
+"question_text": "A 2-year-old child presents at a district hospital with cough and a respiratory rate of 46 breaths per minute. There is no chest indrawing, stridor or general danger sign. What is the most appropriate IMCI interpretation?",
+"choices": [
+{"text": "The child has fast breathing and should be assessed and managed for pneumonia", "is_correct": true},
+{"text": "The child has severe pneumonia requiring immediate surgery", "is_correct": false},
+{"text": "The child has no respiratory abnormality", "is_correct": false},
+{"text": "The child has severe dehydration", "is_correct": false}
+],
+"rationale": "A respiratory rate of 46 breaths per minute is above the IMCI fast-breathing threshold for a child aged 12 months to 5 years. The child should be classified and managed according to the current pneumonia treatment guidelines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A 3-year-old child with diarrhoea is lethargic, has sunken eyes and is unable to drink. What should the nurse do first?",
+"choices": [
+{"text": "Classify the child as having no dehydration and discharge", "is_correct": false},
+{"text": "Recognise possible severe dehydration, assess urgently and initiate appropriate emergency management", "is_correct": true},
+{"text": "Give solid food and observe for 24 hours", "is_correct": false},
+{"text": "Restrict all fluids until the diarrhoea stops", "is_correct": false}
+],
+"rationale": "Lethargy, sunken eyes and inability to drink are concerning signs of severe dehydration under IMCI when the required classification criteria are met. The child requires urgent treatment, including appropriate rehydration and referral or admission as indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A 10-month-old infant with diarrhoea is alert and able to drink. The nurse identifies some dehydration using IMCI classification. Which treatment is generally indicated?",
+"choices": [
+{"text": "Plan A home care only, without additional assessment", "is_correct": false},
+{"text": "Plan B oral rehydration therapy using ORS under observation", "is_correct": true},
+{"text": "Immediate restriction of oral fluids", "is_correct": false},
+{"text": "Routine intravenous fluids for every child", "is_correct": false}
+],
+"rationale": "Plan B is used for children classified as having some dehydration and involves supervised administration of oral rehydration solution. The child should be reassessed after rehydration and caregivers should receive advice on continued feeding and fluids.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A mother brings her 18-month-old child to a CHPS compound with fever. Malaria is common in the community. Which action is most appropriate before treating uncomplicated malaria?",
+"choices": [
+{"text": "Prescribe antimalarial medication based only on the presence of fever", "is_correct": false},
+{"text": "Perform a malaria rapid diagnostic test or microscopy according to protocol", "is_correct": true},
+{"text": "Assume that all childhood fevers are caused by malaria", "is_correct": false},
+{"text": "Give antibiotics to every febrile child", "is_correct": false}
+],
+"rationale": "Suspected malaria should be confirmed with an approved diagnostic test where testing is available and indicated by national guidelines. A child with a negative result still requires assessment for other causes of fever.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A 4-year-old child presents with cough, chest indrawing and inability to drink. Which action should the nurse prioritise?",
+"choices": [
+{"text": "Treat the child as having a mild upper respiratory infection", "is_correct": false},
+{"text": "Recognise severe illness, provide urgent pre-referral care and arrange emergency referral", "is_correct": true},
+{"text": "Advise the caregiver to give cough syrup at home", "is_correct": false},
+{"text": "Delay assessment until the child has eaten", "is_correct": false}
+],
+"rationale": "Chest indrawing together with a general danger sign indicates severe respiratory illness requiring urgent management. The nurse should stabilise the child as appropriate and arrange prompt referral to a facility capable of providing advanced care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A 2-year-old child has diarrhoea lasting 16 days, without visible blood in the stool. How should this condition be classified?",
+"choices": [
+{"text": "Acute watery diarrhoea", "is_correct": false},
+{"text": "Persistent diarrhoea", "is_correct": true},
+{"text": "Dysentery", "is_correct": false},
+{"text": "Chronic constipation", "is_correct": false}
+],
+"rationale": "Diarrhoea lasting 14 days or longer is classified as persistent diarrhoea. The child requires assessment for dehydration, nutritional complications and possible underlying causes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A 3-year-old child is brought to a regional hospital with fever, neck stiffness and reduced consciousness. What is the most appropriate nursing priority?",
+"choices": [
+{"text": "Provide routine outpatient malaria counselling only", "is_correct": false},
+{"text": "Recognise possible severe infection or meningitis and arrange urgent medical management", "is_correct": true},
+{"text": "Discharge the child because fever is common in childhood", "is_correct": false},
+{"text": "Give oral fluids and postpone examination", "is_correct": false}
+],
+"rationale": "Fever with neck stiffness and altered consciousness raises concern for meningitis or another severe infection. Immediate assessment, stabilisation and urgent treatment are essential to reduce the risk of serious complications.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A child with diarrhoea has visible blood in the stool. Which IMCI classification is most appropriate?",
+"choices": [
+{"text": "Dysentery", "is_correct": true},
+{"text": "No dehydration", "is_correct": false},
+{"text": "Persistent diarrhoea", "is_correct": false},
+{"text": "Acute respiratory infection", "is_correct": false}
+],
+"rationale": "Visible blood in the stool is a key feature used to classify dysentery under IMCI. The child requires appropriate assessment and treatment according to national guidelines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "IMCI",
+"question_text": "A 2-year-old child presents with cough, fast breathing and severe chest indrawing. The caregiver reports that the child has become unable to drink. Which finding most strongly indicates the need for urgent referral?",
+"choices": [
+{"text": "The presence of cough for one day", "is_correct": false},
+{"text": "The combination of chest indrawing and inability to drink", "is_correct": true},
+{"text": "The child's age being below 5 years", "is_correct": false},
+{"text": "The caregiver's report of reduced appetite yesterday", "is_correct": false}
+],
+"rationale": "Chest indrawing indicates significant respiratory distress, while inability to drink is a general danger sign. Together, these findings suggest severe illness requiring urgent pre-referral management and referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Malnutrition",
+"question_text": "Which clinical feature is most characteristic of kwashiorkor?",
+"choices": [
+{"text": "Bilateral pitting oedema", "is_correct": true},
+{"text": "Marked loss of subcutaneous fat without oedema", "is_correct": false},
+{"text": "Excessive muscle development", "is_correct": false},
+{"text": "Increased body fat distribution", "is_correct": false}
+],
+"rationale": "Bilateral pitting oedema is a defining clinical feature of kwashiorkor and is an important sign of severe acute malnutrition. Other features may include skin changes, hair changes and apathy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition",
+"question_text": "Which clinical appearance is most commonly associated with marasmus?",
+"choices": [
+{"text": "Generalised oedema and a moon-shaped face", "is_correct": false},
+{"text": "Severe wasting with loss of subcutaneous fat", "is_correct": true},
+{"text": "Excessive weight gain and abdominal fat", "is_correct": false},
+{"text": "Bilateral leg oedema with normal muscle mass", "is_correct": false}
+],
+"rationale": "Marasmus is characterised by severe wasting due to significant energy deficiency. The child typically has marked loss of fat and muscle, giving a very thin appearance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A 2-year-old child attending a nutrition clinic has bilateral pitting oedema of both feet. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Marasmus without complications", "is_correct": false},
+{"text": "Kwashiorkor or nutritional oedematous severe acute malnutrition", "is_correct": true},
+{"text": "Simple dehydration", "is_correct": false},
+{"text": "Obesity", "is_correct": false}
+],
+"rationale": "Bilateral pitting oedema in a child is a diagnostic feature of nutritional oedematous severe acute malnutrition after other causes are considered. The child requires urgent assessment and management under the severe acute malnutrition protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A 20-month-old child is assessed at a district hospital and has a mid-upper arm circumference of 10.8 cm. What does this measurement indicate?",
+"choices": [
+{"text": "Normal nutritional status", "is_correct": false},
+{"text": "Moderate acute malnutrition", "is_correct": false},
+{"text": "Severe acute malnutrition", "is_correct": true},
+{"text": "Overweight", "is_correct": false}
+],
+"rationale": "For children aged 6–59 months, a mid-upper arm circumference below 11.5 cm indicates severe acute malnutrition. The child requires prompt assessment for complications and appropriate nutritional management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A child with severe acute malnutrition is admitted with poor appetite, lethargy and bilateral pitting oedema. Which nursing action should be prioritised?",
+"choices": [
+{"text": "Begin unrestricted high-protein feeding immediately", "is_correct": false},
+{"text": "Assess for complications and initiate stabilisation according to the severe acute malnutrition protocol", "is_correct": true},
+{"text": "Encourage strenuous physical exercise", "is_correct": false},
+{"text": "Withhold all feeds until the oedema disappears", "is_correct": false}
+],
+"rationale": "Children with complicated severe acute malnutrition require careful stabilisation because they are at risk of hypoglycaemia, hypothermia, infection and electrolyte disturbances. Feeding and treatment must follow the recommended therapeutic protocol rather than unrestricted feeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A 3-year-old child with severe wasting is admitted to a district hospital. The child is cold to touch and has a low blood glucose level. Which problem should the nurse address urgently?",
+"choices": [
+{"text": "Hypoglycaemia and hypothermia", "is_correct": true},
+{"text": "Excessive weight gain", "is_correct": false},
+{"text": "Delayed permanent dentition", "is_correct": false},
+{"text": "Mild developmental variation", "is_correct": false}
+],
+"rationale": "Hypoglycaemia and hypothermia are life-threatening complications of severe acute malnutrition. Prompt correction and close monitoring are essential during the stabilisation phase.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Malnutrition",
+"question_text": "A child with severe acute malnutrition develops bilateral pitting oedema, recurrent infections and poor appetite. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The child is recovering normally because oedema indicates weight gain", "is_correct": false},
+{"text": "The child has complicated severe acute malnutrition requiring inpatient management", "is_correct": true},
+{"text": "The child has uncomplicated moderate malnutrition", "is_correct": false},
+{"text": "The child should be discharged for routine home feeding", "is_correct": false}
+],
+"rationale": "Oedema, poor appetite and infection are important complications in a child with severe acute malnutrition. These findings require inpatient assessment and stabilisation rather than routine outpatient management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "Which organism causes malaria in humans?",
+"choices": [
+{"text": "Plasmodium species", "is_correct": true},
+{"text": "Salmonella species", "is_correct": false},
+{"text": "Streptococcus species", "is_correct": false},
+{"text": "Entamoeba species", "is_correct": false}
+],
+"rationale": "Malaria is caused by protozoan parasites of the genus Plasmodium. In Ghana, Plasmodium falciparum is the predominant species responsible for severe malaria.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "Which intervention is most important in preventing dehydration in a child with acute diarrhoea?",
+"choices": [
+{"text": "Stopping all oral fluids", "is_correct": false},
+{"text": "Administering oral rehydration solution and continuing appropriate feeding", "is_correct": true},
+{"text": "Giving antibiotics to every child", "is_correct": false},
+{"text": "Withholding breastfeeding until the diarrhoea stops", "is_correct": false}
+],
+"rationale": "Oral rehydration solution replaces water and electrolytes lost through diarrhoea. Breastfeeding and age-appropriate feeding should continue to support nutrition and recovery.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "Which clinical sign is commonly associated with pneumonia in young children?",
+"choices": [
+{"text": "Fast breathing", "is_correct": true},
+{"text": "Increased urine output", "is_correct": false},
+{"text": "Slow hair growth", "is_correct": false},
+{"text": "Excessive salivation without respiratory symptoms", "is_correct": false}
+],
+"rationale": "Fast breathing is an important clinical sign used in identifying pneumonia in children under IMCI. Other concerning findings include chest indrawing, hypoxaemia and general danger signs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A 2-year-old child presents with fever, cough, red eyes and a widespread rash that started on the face and spread downwards. Which disease should the nurse suspect?",
+"choices": [
+{"text": "Chickenpox", "is_correct": false},
+{"text": "Measles", "is_correct": true},
+{"text": "Mumps", "is_correct": false},
+{"text": "Rubella", "is_correct": false}
+],
+"rationale": "Measles commonly presents with fever, cough, coryza, conjunctivitis and a maculopapular rash that spreads from the face downwards. Koplik spots may also be observed inside the mouth.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A 3-year-old child with suspected malaria presents with repeated vomiting, convulsions and reduced consciousness. What is the nurse's priority?",
+"choices": [
+{"text": "Give oral antimalarial medication and discharge the child", "is_correct": false},
+{"text": "Recognise possible severe malaria and arrange urgent emergency treatment", "is_correct": true},
+{"text": "Advise the caregiver to give fruit juice at home", "is_correct": false},
+{"text": "Wait for the fever to resolve before assessment", "is_correct": false}
+],
+"rationale": "Convulsions and reduced consciousness are danger signs that may indicate severe malaria or another life-threatening condition. The child requires immediate stabilisation, urgent diagnostic assessment and parenteral treatment according to national guidelines.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A mother brings her 8-month-old infant with diarrhoea to a CHPS compound. Which advice should the nurse provide to help prevent further dehydration?",
+"choices": [
+{"text": "Stop breastfeeding until the stool becomes normal", "is_correct": false},
+{"text": "Give ORS after each loose stool and continue breastfeeding", "is_correct": true},
+{"text": "Replace all feeds with carbonated soft drinks", "is_correct": false},
+{"text": "Restrict fluids to reduce stool frequency", "is_correct": false}
+],
+"rationale": "ORS replaces fluid and electrolyte losses, while continued breastfeeding provides nutrition and additional fluid. Caregivers should also be taught how to prepare ORS correctly and recognise danger signs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A 4-year-old child with pneumonia is restless, has nasal flaring and an oxygen saturation of 89%. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Encourage the child to lie flat without further assessment", "is_correct": false},
+{"text": "Provide oxygen according to protocol and seek urgent clinical review", "is_correct": true},
+{"text": "Administer cough syrup and observe at home", "is_correct": false},
+{"text": "Delay intervention until the next ward round", "is_correct": false}
+],
+"rationale": "An oxygen saturation of 89% with signs of respiratory distress indicates hypoxaemia requiring prompt intervention. Oxygen therapy and urgent clinical review are necessary to prevent respiratory deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A child diagnosed with measles is admitted to a regional hospital. Which nursing intervention is particularly important to reduce transmission to other patients?",
+"choices": [
+{"text": "Place the child in an appropriate isolation area and apply airborne precautions", "is_correct": true},
+{"text": "Allow the child to share toys with all ward patients", "is_correct": false},
+{"text": "Avoid hand hygiene because measles is not infectious", "is_correct": false},
+{"text": "Place the child in a crowded general waiting area", "is_correct": false}
+],
+"rationale": "Measles is highly contagious and spreads through airborne transmission. Appropriate airborne precautions, isolation and infection prevention measures are essential to protect other patients and healthcare workers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A 2-year-old child with fever and suspected malaria has a positive malaria rapid diagnostic test. The child is alert, drinking well and has no danger signs. What is the most appropriate management?",
+"choices": [
+{"text": "Manage as uncomplicated malaria using the recommended antimalarial regimen", "is_correct": true},
+{"text": "Treat as severe malaria with immediate intensive care", "is_correct": false},
+{"text": "Give antibiotics without assessing other conditions", "is_correct": false},
+{"text": "Discharge without treatment because the child is alert", "is_correct": false}
+],
+"rationale": "A positive malaria test in a child without signs of severe disease supports treatment for uncomplicated malaria using the nationally recommended regimen. The nurse should also assess for other causes of fever and provide follow-up advice.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A child with measles develops difficulty breathing, chest indrawing and persistent fever. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Pneumonia", "is_correct": true},
+{"text": "Simple constipation", "is_correct": false},
+{"text": "Otitis externa", "is_correct": false},
+{"text": "Dental caries", "is_correct": false}
+],
+"rationale": "Pneumonia is a serious complication of measles and may cause respiratory distress and persistent fever. The child requires urgent assessment and appropriate treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Paediatric Illnesses",
+"question_text": "A 3-year-old child with acute diarrhoea is passing frequent watery stools and has become lethargic, with cold extremities and a weak pulse. Which condition is the nurse most concerned about?",
+"choices": [
+{"text": "Mild dehydration", "is_correct": false},
+{"text": "Hypovolaemic shock due to severe fluid loss", "is_correct": true},
+{"text": "Uncomplicated measles", "is_correct": false},
+{"text": "Mild nutritional deficiency", "is_correct": false}
+],
+"rationale": "Lethargy, cold extremities and a weak pulse may indicate circulatory compromise from severe fluid loss. This is a medical emergency requiring immediate assessment and appropriate fluid resuscitation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "Which finding is most suggestive of pathological neonatal jaundice?",
+"choices": [
+{"text": "Jaundice appearing within the first 24 hours after birth", "is_correct": true},
+{"text": "Mild jaundice appearing after 72 hours in an otherwise well newborn", "is_correct": false},
+{"text": "Yellow discolouration resolving without treatment within the first few days", "is_correct": false},
+{"text": "Normal skin colour immediately after birth", "is_correct": false}
+],
+"rationale": "Jaundice appearing within the first 24 hours is abnormal and requires urgent investigation. It may be associated with haemolysis, infection or other serious neonatal conditions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "Which intervention is particularly important in preventing hypothermia in a healthy newborn immediately after delivery?",
+"choices": [
+{"text": "Bathing the newborn immediately", "is_correct": false},
+{"text": "Drying the newborn and initiating skin-to-skin contact with the mother", "is_correct": true},
+{"text": "Separating the newborn from the mother for several hours", "is_correct": false},
+{"text": "Leaving the newborn uncovered for observation", "is_correct": false}
+],
+"rationale": "Immediate drying and skin-to-skin contact reduce heat loss and help maintain the newborn's body temperature. Early breastfeeding also supports thermal stability and neonatal nutrition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "Which of the following is a common clinical sign of neonatal sepsis?",
+"choices": [
+{"text": "Poor feeding and temperature instability", "is_correct": true},
+{"text": "Consistent vigorous feeding and normal temperature", "is_correct": false},
+{"text": "Rapid weight gain without other symptoms", "is_correct": false},
+{"text": "Normal activity and stable breathing", "is_correct": false}
+],
+"rationale": "Neonatal sepsis may present with poor feeding, temperature instability, lethargy, respiratory distress and abnormal perfusion. The signs may be subtle, so early recognition and treatment are essential.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A newborn delivered at 32 weeks of gestation is classified as:",
+"choices": [
+{"text": "Post-term", "is_correct": false},
+{"text": "Term", "is_correct": false},
+{"text": "Preterm", "is_correct": true},
+{"text": "Post-mature", "is_correct": false}
+],
+"rationale": "A preterm infant is born before 37 completed weeks of gestation. Infants born at 32 weeks are at increased risk of respiratory, thermal, feeding and infectious complications.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A newborn develops yellow discolouration of the skin at 12 hours after birth. What should the nurse do?",
+"choices": [
+{"text": "Reassure the mother that this is always physiological jaundice", "is_correct": false},
+{"text": "Arrange urgent clinical assessment and bilirubin evaluation", "is_correct": true},
+{"text": "Advise exposure to direct sunlight as the only treatment", "is_correct": false},
+{"text": "Delay assessment until the seventh day", "is_correct": false}
+],
+"rationale": "Jaundice within the first 24 hours is a warning sign of possible pathological hyperbilirubinaemia. Urgent bilirubin assessment is necessary because severe unconjugated hyperbilirubinaemia can cause bilirubin encephalopathy and kernicterus.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A preterm infant weighing 1.6 kg is admitted to the neonatal unit. Which intervention is particularly beneficial for thermal regulation, breastfeeding and bonding when the infant is clinically stable?",
+"choices": [
+{"text": "Kangaroo mother care", "is_correct": true},
+{"text": "Routine separation from the mother", "is_correct": false},
+{"text": "Immediate unrestricted bathing", "is_correct": false},
+{"text": "Keeping the infant uncovered during feeding", "is_correct": false}
+],
+"rationale": "Kangaroo mother care involves prolonged skin-to-skin contact and support for breast milk feeding in eligible preterm or low-birth-weight infants. It helps maintain temperature, supports breastfeeding and improves maternal-infant bonding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A 5-day-old newborn presents with poor feeding, lethargy, a temperature of 38.2°C and fast breathing. What is the nurse's priority?",
+"choices": [
+{"text": "Advise the mother to return after three days", "is_correct": false},
+{"text": "Suspect neonatal sepsis and arrange urgent assessment and treatment", "is_correct": true},
+{"text": "Give oral glucose water and discharge the newborn", "is_correct": false},
+{"text": "Assume the symptoms are normal during the first week of life", "is_correct": false}
+],
+"rationale": "Fever, poor feeding, lethargy and fast breathing are concerning signs of possible neonatal sepsis. Neonatal infection can progress rapidly, requiring urgent clinical assessment and timely antimicrobial treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A newborn receiving phototherapy for significant unconjugated hyperbilirubinaemia is being nursed in the neonatal unit. Which intervention is essential?",
+"choices": [
+{"text": "Cover the newborn's eyes with appropriate protective eye shields and monitor temperature and hydration", "is_correct": true},
+{"text": "Apply oil to the entire body before every phototherapy session", "is_correct": false},
+{"text": "Keep the newborn fully clothed throughout treatment", "is_correct": false},
+{"text": "Stop all feeding until the bilirubin level becomes normal", "is_correct": false}
+],
+"rationale": "During conventional phototherapy, appropriate eye protection is used and the infant's temperature, hydration, feeding and bilirubin levels should be monitored. The infant should have adequate skin exposure to the therapeutic light while maintaining safety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A preterm newborn develops grunting, nasal flaring, chest retractions and central cyanosis shortly after birth. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Respiratory distress syndrome", "is_correct": true},
+{"text": "Physiological weight loss", "is_correct": false},
+{"text": "Normal neonatal transition", "is_correct": false},
+{"text": "Infantile colic", "is_correct": false}
+],
+"rationale": "Respiratory distress syndrome is common in preterm infants because of surfactant deficiency and immature lungs. Grunting, retractions and cyanosis indicate respiratory compromise requiring urgent neonatal support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A newborn with suspected sepsis develops respiratory distress, poor perfusion and reduced responsiveness. Which nursing action should take priority?",
+"choices": [
+{"text": "Complete routine discharge documentation", "is_correct": false},
+{"text": "Initiate urgent assessment and stabilisation of airway, breathing and circulation", "is_correct": true},
+{"text": "Delay treatment until the next feeding time", "is_correct": false},
+{"text": "Give oral feeds despite reduced responsiveness", "is_correct": false}
+],
+"rationale": "Respiratory distress, poor perfusion and reduced responsiveness suggest possible severe neonatal infection with circulatory or respiratory compromise. Immediate stabilisation and urgent medical management are necessary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Neonatal Care",
+"question_text": "A newborn has jaundice within 18 hours of birth. The mother is blood group O positive, while the infant is blood group A positive. The infant's bilirubin level is rising rapidly. Which underlying mechanism should the nurse suspect?",
+"choices": [
+{"text": "Physiological jaundice caused by normal neonatal adaptation", "is_correct": false},
+{"text": "Immune-mediated haemolysis due to ABO incompatibility", "is_correct": true},
+{"text": "Breast milk jaundice developing in the second week", "is_correct": false},
+{"text": "Normal breakdown of bilirubin without increased red cell destruction", "is_correct": false}
+],
+"rationale": "Maternal group O and infant group A or B can be associated with ABO incompatibility and immune-mediated haemolysis. Early-onset jaundice with a rapidly rising bilirubin level requires urgent investigation and management to prevent bilirubin neurotoxicity.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "Which information is essential before calculating a medication dose for a child?",
+"choices": [
+{"text": "The child's favourite food", "is_correct": false},
+{"text": "The child's current weight in kilograms", "is_correct": true},
+{"text": "The parent's occupation", "is_correct": false},
+{"text": "The child's birth month only", "is_correct": false}
+],
+"rationale": "Many paediatric medication doses are calculated according to body weight in kilograms. An accurate current weight helps reduce the risk of underdosing and medication toxicity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A prescribed medication dose for a child is expressed as 10 mg/kg. Which calculation should the nurse perform to determine the required dose?",
+"choices": [
+{"text": "Divide the child's weight by 10", "is_correct": false},
+{"text": "Multiply the child's weight in kilograms by 10 mg", "is_correct": true},
+{"text": "Multiply the child's age by 10 mg", "is_correct": false},
+{"text": "Divide the medication volume by the child's age", "is_correct": false}
+],
+"rationale": "A dose expressed as 10 mg/kg is calculated by multiplying the child's weight in kilograms by 10 mg. The nurse must then check the recommended dose range, maximum dose and formulation concentration before administration.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A child weighing 12 kg is prescribed paracetamol 15 mg/kg per dose. What is the correct dose for one administration?",
+"choices": [
+{"text": "80 mg", "is_correct": false},
+{"text": "120 mg", "is_correct": false},
+{"text": "180 mg", "is_correct": true},
+{"text": "240 mg", "is_correct": false}
+],
+"rationale": "The prescribed dose is calculated as 12 kg multiplied by 15 mg/kg, giving 180 mg per dose. The nurse must also verify the recommended dosing interval and maximum daily dose before administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A nurse is preparing to administer an oral medicine to a 2-year-old child who cannot swallow tablets. Which method is most appropriate?",
+"choices": [
+{"text": "Crush every tablet and mix it with a full bottle of milk", "is_correct": false},
+{"text": "Use an appropriate liquid formulation and measure the dose with an oral syringe", "is_correct": true},
+{"text": "Estimate the dose using a household teaspoon", "is_correct": false},
+{"text": "Mix the medicine with any available adult medication", "is_correct": false}
+],
+"rationale": "An appropriate liquid formulation and oral syringe allow more accurate measurement of paediatric doses. Not all tablets can be crushed, and household spoons are unreliable for measuring medication volumes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A child weighing 15 kg is prescribed an antibiotic at 30 mg/kg/day in two equally divided doses. How many milligrams should the child receive per dose?",
+"choices": [
+{"text": "150 mg", "is_correct": false},
+{"text": "225 mg", "is_correct_true": false},
+{"text": "300 mg", "is_correct": false},
+{"text": "450 mg", "is_correct": false}
+],
+"rationale": "The total daily dose is 15 kg multiplied by 30 mg/kg, which equals 450 mg per day. Dividing this into two equal doses gives 225 mg per dose; the prescription and formulation must be checked before administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A nurse is about to administer an oral medication to a child. The child vomits immediately after receiving the dose. What should the nurse do?",
+"choices": [
+{"text": "Automatically repeat the full dose", "is_correct": false},
+{"text": "Assess the situation, document the event and seek guidance before repeating the dose", "is_correct": true},
+{"text": "Double the next scheduled dose", "is_correct": false},
+{"text": "Ignore the vomiting and record the medication as retained", "is_correct": false}
+],
+"rationale": "The decision to repeat a dose depends on the medication, formulation, timing of vomiting and whether the medicine was visibly expelled. The nurse should not automatically repeat or double the dose because this may result in overdose.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A nurse is preparing an intravenous medication for a 6-month-old infant. Which action is most important to reduce medication errors?",
+"choices": [
+{"text": "Estimate the dose based on the infant's appearance", "is_correct": false},
+{"text": "Independently verify the weight-based calculation, prescribed dose and infusion rate according to facility policy", "is_correct": true},
+{"text": "Use the adult dose and reduce it by half", "is_correct": false},
+{"text": "Administer the medication without checking the prescription", "is_correct": false}
+],
+"rationale": "Infants are particularly vulnerable to medication errors because small calculation errors can cause significant harm. The nurse must verify the prescription, weight-based dose, dilution and administration rate according to policy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A child weighing 8 kg is prescribed a medicine at 20 mg/kg per dose. The available suspension contains 100 mg in 5 mL. What volume should the nurse administer for one dose?",
+"choices": [
+{"text": "2 mL", "is_correct": false},
+{"text": "4 mL", "is_correct": false},
+{"text": "8 mL", "is_correct": true},
+{"text": "10 mL", "is_correct": false}
+],
+"rationale": "The required dose is 8 kg multiplied by 20 mg/kg, which equals 160 mg. Since the suspension contains 20 mg per mL, the required volume is 8 mL; the nurse must verify the dose and maximum recommended amount before administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A nurse calculates a paediatric medication dose that exceeds the manufacturer's recommended maximum dose for the child's age and weight. What should the nurse do?",
+"choices": [
+{"text": "Administer the calculated dose because weight-based calculations are always correct", "is_correct": false},
+{"text": "Withhold administration temporarily and clarify the prescription with the prescriber or pharmacist", "is_correct": true},
+{"text": "Reduce the dose by an arbitrary amount", "is_correct": false},
+{"text": "Ask the caregiver to choose the dose", "is_correct": false}
+],
+"rationale": "Weight-based calculations must be checked against the recommended dose range and maximum dose. A dose that exceeds the safe limit should be clarified before administration to prevent medication toxicity.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A 5-year-old child is prescribed an oral medication. The nurse notices that the prescription is written in milligrams, but the available liquid medicine is labelled in milligrams per 5 mL. Which action is most appropriate before administration?",
+"choices": [
+{"text": "Administer 5 mL regardless of the prescribed dose", "is_correct": false},
+{"text": "Calculate the required volume from the prescribed dose and product concentration, then verify the calculation", "is_correct": true},
+{"text": "Use the child's age to estimate the volume", "is_correct": false},
+{"text": "Convert milligrams directly to millilitres without checking the concentration", "is_correct": false}
+],
+"rationale": "The prescribed dose in milligrams must be converted to a volume using the actual concentration of the liquid formulation. Accurate calculation and verification are essential because different products may have different concentrations.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Medication Administration",
+"question_text": "A nurse is preparing an oral medication for a child with a known history of allergy to the prescribed drug. What is the most appropriate action?",
+"choices": [
+{"text": "Administer the medication because the dose is small", "is_correct": false},
+{"text": "Withhold the medication and immediately clarify the prescription with the prescriber", "is_correct": true},
+{"text": "Administer half the prescribed dose", "is_correct": false},
+{"text": "Give the medication with food to prevent an allergic reaction", "is_correct": false}
+],
+"rationale": "A documented allergy to the prescribed medication creates a risk of an adverse allergic reaction, potentially including anaphylaxis. The nurse must withhold the medicine, verify the allergy history and obtain an appropriate alternative prescription.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
