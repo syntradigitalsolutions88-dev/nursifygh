@@ -1,0 +1,694 @@
+{
+"courses": [
+{
+"course_code": "OBN-211-C",
+"course_title": "Obstetric Nursing",
+"category": "MATERNAL",
+"semester": "S1",
+"topics": [
+"Antenatal Care at CHPS",
+"Labour and Delivery",
+"Postpartum Care",
+"Pre-eclampsia and Eclampsia",
+"Postpartum Haemorrhage",
+"Obstetric Emergencies",
+"Puerperal Sepsis",
+"Perinatal Mental Health"
+],
+"questions": [
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "What is the primary purpose of antenatal care?",
+"choices": [
+{"text": "To provide care only when complications develop", "is_correct": false},
+{"text": "To promote maternal and fetal health through prevention, early detection and management of complications", "is_correct": true},
+{"text": "To determine the exact date of delivery in every pregnancy", "is_correct": false},
+{"text": "To replace the need for skilled attendance during childbirth", "is_correct": false}
+],
+"rationale": "Antenatal care provides preventive, promotive and clinical interventions throughout pregnancy. It helps identify maternal and fetal complications early, supports healthy behaviours and prepares women and families for safe childbirth and postnatal care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "At what stage of pregnancy should a woman ideally initiate antenatal care?",
+"choices": [
+{"text": "During the first trimester, preferably before 12 weeks", "is_correct": true},
+{"text": "At 20 weeks of gestation", "is_correct": false},
+{"text": "Only when fetal movements begin", "is_correct": false},
+{"text": "During the final week before delivery", "is_correct": false}
+],
+"rationale": "Early antenatal booking, preferably within the first 12 weeks, allows timely assessment, screening, preventive interventions and identification of risk factors. It also provides an opportunity to establish an appropriate care plan and schedule subsequent contacts.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "Which investigation is routinely important during antenatal care to identify anaemia?",
+"choices": [
+{"text": "Haemoglobin estimation", "is_correct": true},
+{"text": "Electrocardiography", "is_correct": false},
+{"text": "Chest radiography", "is_correct": false},
+{"text": "Visual acuity testing only", "is_correct": false}
+],
+"rationale": "Haemoglobin estimation helps identify anaemia, which can increase the risk of maternal complications and poor pregnancy outcomes. Appropriate investigation and treatment should be arranged according to the woman's clinical condition and national guidelines.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "Which of the following is a major danger sign during pregnancy that requires urgent assessment?",
+"choices": [
+{"text": "Mild nausea during early pregnancy", "is_correct": false},
+{"text": "Severe vaginal bleeding", "is_correct": true},
+{"text": "Gradual abdominal enlargement", "is_correct": false},
+{"text": "Increased appetite", "is_correct": false}
+],
+"rationale": "Severe vaginal bleeding during pregnancy may indicate a life-threatening complication such as placenta praevia or placental abruption. Immediate assessment and referral to an appropriate health facility are essential.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "Which event marks the beginning of the first stage of labour?",
+"choices": [
+{"text": "Delivery of the placenta", "is_correct": false},
+{"text": "Onset of regular painful uterine contractions with progressive cervical dilatation", "is_correct": true},
+{"text": "Complete delivery of the fetus", "is_correct": false},
+{"text": "Appearance of the fetal head at the perineum", "is_correct": false}
+],
+"rationale": "The first stage of labour begins with the onset of regular uterine contractions that produce progressive cervical effacement and dilatation. It ends when the cervix is fully dilated.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "Which stage of labour involves the delivery of the placenta and membranes?",
+"choices": [
+{"text": "First stage", "is_correct": false},
+{"text": "Second stage", "is_correct": false},
+{"text": "Third stage", "is_correct": true},
+{"text": "Fourth stage", "is_correct": false}
+],
+"rationale": "The third stage of labour begins after the birth of the baby and ends with the delivery of the placenta and membranes. Active management of the third stage reduces the risk of postpartum haemorrhage.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "What is the main purpose of using a partograph during labour?",
+"choices": [
+{"text": "To determine the sex of the fetus", "is_correct": false},
+{"text": "To monitor labour progress and maternal and fetal well-being", "is_correct": true},
+{"text": "To estimate the mother's nutritional status", "is_correct": false},
+{"text": "To record only the time of delivery", "is_correct": false}
+],
+"rationale": "A partograph is a labour-monitoring tool used to document cervical dilatation, descent where applicable, uterine contractions, fetal condition and maternal observations. It supports early recognition of abnormal labour progress and timely clinical decision-making or referral.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "What is uterine involution?",
+"choices": [
+{"text": "The enlargement of the uterus during pregnancy", "is_correct": false},
+{"text": "The gradual return of the uterus towards its pre-pregnancy size after childbirth", "is_correct": true},
+{"text": "The separation of the placenta from the uterine wall", "is_correct": false},
+{"text": "The development of breast milk during pregnancy", "is_correct": false}
+],
+"rationale": "Uterine involution is the physiological process by which the uterus reduces in size after delivery. It occurs through contraction of uterine muscle fibres and other tissue changes during the puerperium.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "Which description best defines lochia rubra?",
+"choices": [
+{"text": "A yellowish-white vaginal discharge occurring several weeks after delivery", "is_correct": false},
+{"text": "A reddish vaginal discharge containing blood, mucus and decidual tissue during the early postpartum period", "is_correct": true},
+{"text": "A greenish discharge indicating normal uterine involution", "is_correct": false},
+{"text": "A clear discharge occurring only before labour", "is_correct": false}
+],
+"rationale": "Lochia rubra is the red vaginal discharge commonly present during the first few days after childbirth. It contains blood, mucus and decidual tissue, and its amount and character should be monitored for signs of abnormal bleeding or infection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Which clinical feature distinguishes eclampsia from pre-eclampsia?",
+"choices": [
+{"text": "Presence of mild ankle swelling", "is_correct": false},
+{"text": "Occurrence of seizures in a woman with pre-eclampsia", "is_correct": true},
+{"text": "Presence of nausea during early pregnancy", "is_correct": false},
+{"text": "Increased appetite during pregnancy", "is_correct": false}
+],
+"rationale": "Eclampsia is characterised by new-onset seizures in a woman with pre-eclampsia when another cause does not explain the seizures. It is a life-threatening obstetric emergency requiring immediate stabilisation and treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "Which medication is commonly used to prevent and control seizures in women with severe pre-eclampsia and eclampsia?",
+"choices": [
+{"text": "Magnesium sulphate", "is_correct": true},
+{"text": "Oxytocin", "is_correct": false},
+{"text": "Ferrous sulphate", "is_correct": false},
+{"text": "Oral glucose", "is_correct": false}
+],
+"rationale": "Magnesium sulphate is the recommended anticonvulsant for prevention and treatment of eclamptic seizures. It must be administered according to the prescribed regimen, with monitoring for respiratory depression, urine output and deep tendon reflexes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "Which statement best describes primary postpartum haemorrhage following vaginal birth?",
+"choices": [
+{"text": "Blood loss of at least 500 mL within 24 hours after birth, or bleeding causing clinical concern", "is_correct": true},
+{"text": "Any vaginal discharge occurring after six weeks", "is_correct": false},
+{"text": "Blood loss occurring only during the first stage of labour", "is_correct": false},
+{"text": "Bleeding that begins more than six months after delivery", "is_correct": false}
+],
+"rationale": "Primary postpartum haemorrhage traditionally refers to blood loss of at least 500 mL within 24 hours after birth, although clinically significant bleeding and maternal instability require action regardless of the measured volume. Early recognition and prompt treatment are essential to prevent maternal death.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "What is shoulder dystocia?",
+"choices": [
+{"text": "Failure of the placenta to separate after delivery", "is_correct": false},
+{"text": "A complication in which the fetal shoulders fail to deliver spontaneously after the head has been born", "is_correct": true},
+{"text": "Premature rupture of the fetal membranes", "is_correct": false},
+{"text": "Abnormal bleeding during early pregnancy", "is_correct": false}
+],
+"rationale": "Shoulder dystocia occurs when the fetal shoulders become impacted, commonly behind the maternal pubic symphysis, after delivery of the head. It requires immediate recognition and a coordinated sequence of obstetric manoeuvres.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "Which of the following is a major risk associated with umbilical cord prolapse?",
+"choices": [
+{"text": "Fetal hypoxia due to compression of the umbilical cord", "is_correct": true},
+{"text": "Maternal hyperglycaemia", "is_correct": false},
+{"text": "Increased fetal bone density", "is_correct": false},
+{"text": "Maternal anaemia caused directly by cord compression", "is_correct": false}
+],
+"rationale": "Umbilical cord prolapse can result in compression of the cord between the presenting part and the maternal pelvis. This may reduce fetal blood flow and oxygen delivery, causing acute fetal hypoxia and potentially death.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Puerperal Sepsis",
+"question_text": "Which finding is most suggestive of puerperal sepsis?",
+"choices": [
+{"text": "Fever accompanied by uterine tenderness and offensive lochia", "is_correct": true},
+{"text": "Mild breast fullness during lactation", "is_correct": false},
+{"text": "Gradual reduction in abdominal size after delivery", "is_correct": false},
+{"text": "Normal lochia without systemic symptoms", "is_correct": false}
+],
+"rationale": "Puerperal sepsis is an infection of the genital tract occurring after childbirth and may present with fever, pelvic or uterine tenderness and offensive vaginal discharge. It can progress to severe sepsis and requires prompt assessment and treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "Which feature is most characteristic of postpartum depression rather than transient postpartum blues?",
+"choices": [
+{"text": "Mild tearfulness that resolves within a few days", "is_correct": false},
+{"text": "Persistent low mood, loss of interest and impaired functioning lasting beyond the early postpartum adjustment period", "is_correct": true},
+{"text": "Brief emotional changes without functional impairment", "is_correct": false},
+{"text": "Temporary tiredness after a sleepless night", "is_correct": false}
+],
+"rationale": "Postpartum depression involves persistent depressive symptoms that affect the mother's functioning and may interfere with maternal-infant bonding. Postpartum blues are generally milder, begin in the first days after birth and resolve within approximately two weeks.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "A pregnant woman attends a CHPS compound for her first antenatal visit at 10 weeks of gestation. Which action should the community health nurse prioritise as part of the initial assessment?",
+"choices": [
+{"text": "Obtain a comprehensive obstetric and medical history and assess baseline maternal health", "is_correct": true},
+{"text": "Wait until 28 weeks before conducting any investigations", "is_correct": false},
+{"text": "Advise her to return only when fetal movements are felt", "is_correct": false},
+{"text": "Perform an immediate vaginal examination on every woman", "is_correct": false}
+],
+"rationale": "The first antenatal contact should establish the woman's medical, obstetric and social history and assess baseline health. Appropriate examinations, investigations, preventive interventions and risk assessment should then be undertaken according to GHS protocols and the level of care available.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "A pregnant woman at 32 weeks reports severe headache, blurred vision and pain in the upper abdomen. What should the CHPS nurse do?",
+"choices": [
+{"text": "Advise her to rest at home and return after one week", "is_correct": false},
+{"text": "Suspect severe pre-eclampsia and arrange urgent referral to an appropriate health facility", "is_correct": true},
+{"text": "Recommend increased salt intake", "is_correct": false},
+{"text": "Reassure her that these symptoms are normal in late pregnancy", "is_correct": false}
+],
+"rationale": "Severe headache, visual disturbance and epigastric or right upper quadrant pain are warning signs of severe pre-eclampsia. The woman requires urgent assessment and referral because of the risk of seizures, stroke, organ damage and maternal or fetal death.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "A pregnant woman attending a CHPS compound has a haemoglobin level of 8.5 g/dL. Which action is most appropriate?",
+"choices": [
+{"text": "Ignore the result because mild anaemia is expected in pregnancy", "is_correct": false},
+{"text": "Assess the woman, initiate or arrange appropriate management and refer according to the severity and local protocol", "is_correct": true},
+{"text": "Advise her to stop taking iron and folic acid", "is_correct": false},
+{"text": "Tell her to avoid iron-rich foods", "is_correct": false}
+],
+"rationale": "A haemoglobin level of 8.5 g/dL indicates significant anaemia in pregnancy and requires clinical assessment and appropriate management. The nurse should assess possible causes, reinforce prescribed iron and folic acid use, provide dietary counselling and arrange referral when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "A pregnant woman at 30 weeks reports that she has not felt fetal movements as frequently as usual since the previous day. What is the most appropriate action?",
+"choices": [
+{"text": "Advise her to wait until the next scheduled antenatal visit", "is_correct": false},
+{"text": "Arrange prompt assessment of fetal well-being at an appropriate health facility", "is_correct": true},
+{"text": "Tell her that reduced fetal movement is always normal near delivery", "is_correct": false},
+{"text": "Recommend vigorous abdominal massage", "is_correct": false}
+],
+"rationale": "A reduction or change in the usual pattern of fetal movements may indicate fetal compromise. Prompt assessment is required rather than waiting for the next routine visit or relying on unproven home interventions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "A pregnant woman at 28 weeks attends a CHPS compound and has not received the recommended malaria preventive treatment during pregnancy. Which intervention should the nurse consider?",
+"choices": [
+{"text": "Provide intermittent preventive treatment with sulfadoxine-pyrimethamine according to national guidelines and eligibility", "is_correct": true},
+{"text": "Give sulfadoxine-pyrimethamine during the first trimester", "is_correct": false},
+{"text": "Advise her to avoid all insecticide-treated nets", "is_correct": false},
+{"text": "Use antimalarial treatment doses routinely in every asymptomatic woman", "is_correct": false}
+],
+"rationale": "Intermittent preventive treatment in pregnancy with sulfadoxine-pyrimethamine is provided from the second trimester at recommended intervals, in accordance with national malaria guidelines. It should not be administered during the first trimester or to women with relevant contraindications, including certain sulfonamide allergies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman arrives at a CHPS compound with regular painful uterine contractions. Examination by an appropriately skilled provider confirms progressive cervical dilatation. Which observation is essential when monitoring her labour?",
+"choices": [
+{"text": "Fetal heart rate, uterine contractions, cervical dilatation and maternal condition", "is_correct": true},
+{"text": "Maternal height only", "is_correct": false},
+{"text": "The colour of the mother's clothing", "is_correct": false},
+{"text": "The number of visitors accompanying the woman", "is_correct": false}
+],
+"rationale": "Safe labour monitoring requires assessment of fetal well-being, uterine activity, labour progress and maternal condition. Findings should be documented accurately to identify abnormalities and guide timely intervention or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in labour has a fetal heart rate of 100 beats per minute on repeated assessment. What should the nurse do?",
+"choices": [
+{"text": "Continue routine monitoring without intervention", "is_correct": false},
+{"text": "Recognise possible fetal bradycardia, assess urgently and initiate appropriate measures while arranging urgent obstetric review or referral", "is_correct": true},
+{"text": "Encourage the woman to push immediately regardless of cervical dilatation", "is_correct": false},
+{"text": "Administer an oral sedative to the mother", "is_correct": false}
+],
+"rationale": "A persistent fetal heart rate below 110 beats per minute is abnormal and may indicate fetal compromise. The nurse should promptly reassess, identify possible reversible causes, summon skilled assistance and arrange urgent management or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in active labour has a partograph showing slow cervical dilatation and poor progress. What is the most appropriate response?",
+"choices": [
+{"text": "Ignore the findings because labour always progresses at the same rate", "is_correct": false},
+{"text": "Reassess maternal and fetal condition, identify possible causes and obtain timely skilled review or referral", "is_correct": true},
+{"text": "Immediately administer oxytocin without assessing the cause or confirming that it is appropriate", "is_correct": false},
+{"text": "Encourage the woman to push before full cervical dilatation", "is_correct": false}
+],
+"rationale": "Slow labour progress requires assessment of uterine activity, fetal position and descent, maternal condition and possible obstruction. Augmentation should never be undertaken blindly; clinical review and referral are necessary when the facility lacks the capacity to manage the complication.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman has delivered a healthy baby at a facility with a skilled birth attendant. Which intervention is a key component of active management of the third stage of labour?",
+"choices": [
+{"text": "Administration of a prophylactic uterotonic, preferably oxytocin 10 IU IM or IV according to protocol", "is_correct": true},
+{"text": "Routine administration of a sedative to the mother", "is_correct": false},
+{"text": "Immediate manual removal of the placenta in every delivery", "is_correct": false},
+{"text": "Routine application of fundal pressure to expel the placenta", "is_correct": false}
+],
+"rationale": "Administration of a prophylactic uterotonic, preferably oxytocin 10 IU IM or IV, is a key intervention in active management of the third stage. It promotes uterine contraction and reduces the risk of postpartum haemorrhage; other components include controlled cord traction by a trained provider where appropriate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman delivers at home unexpectedly before reaching the referral facility. The community health nurse arrives shortly after the birth. What should the nurse prioritise?",
+"choices": [
+{"text": "Assess the mother's bleeding and uterine tone, assess the newborn's breathing and warmth, and arrange skilled postnatal assessment", "is_correct": true},
+{"text": "Leave the mother and newborn unattended while completing paperwork", "is_correct": false},
+{"text": "Separate the newborn from the mother without a clinical reason", "is_correct": false},
+{"text": "Delay assessment until the following day", "is_correct": false}
+],
+"rationale": "An unplanned home delivery requires immediate assessment of both mother and newborn for life-threatening complications. The nurse should assess maternal bleeding and uterine contraction, support newborn breathing and thermal care, initiate appropriate care within competence and arrange prompt transfer or skilled postnatal review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in the second stage of labour is fully dilated and the fetal head is visible at the perineum. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Provide supportive care, monitor fetal and maternal condition, and assist a controlled birth by a skilled attendant", "is_correct": true},
+{"text": "Apply forceful fundal pressure to speed delivery", "is_correct": false},
+{"text": "Ask the woman to stop breathing throughout the contraction", "is_correct": false},
+{"text": "Leave the woman alone until the baby is delivered", "is_correct": false}
+],
+"rationale": "The second stage extends from full cervical dilatation to birth of the baby and requires continuous attention to maternal and fetal well-being. A skilled attendant should support effective pushing and controlled delivery while avoiding harmful practices such as fundal pressure.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A woman is two hours postpartum. The nurse finds that her uterus is soft and poorly contracted, and she is bleeding heavily. What should the nurse do first?",
+"choices": [
+{"text": "Massage the uterine fundus, call for help and initiate the postpartum haemorrhage response", "is_correct": true},
+{"text": "Encourage her to sleep and reassess in four hours", "is_correct": false},
+{"text": "Give her oral fluids only and wait for the bleeding to stop", "is_correct": false},
+{"text": "Discharge her because bleeding is expected after childbirth", "is_correct": false}
+],
+"rationale": "A soft, poorly contracted uterus with heavy bleeding suggests uterine atony, a major cause of postpartum haemorrhage. Immediate action includes calling for help, uterine massage, appropriate uterotonics and resuscitation according to the emergency protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A mother who delivered vaginally yesterday reports that her breasts are full and uncomfortable. She has no fever or localised breast redness. Which advice is most appropriate?",
+"choices": [
+{"text": "Encourage frequent effective breastfeeding and correct attachment and positioning", "is_correct": true},
+{"text": "Stop breastfeeding until the breast fullness disappears", "is_correct": false},
+{"text": "Restrict all oral fluids", "is_correct": false},
+{"text": "Bind the breasts tightly to prevent milk production", "is_correct": false}
+],
+"rationale": "Breast fullness and engorgement may occur as milk production increases after birth. Frequent effective breastfeeding, correct attachment and positioning, and expressing milk when necessary can improve milk removal and relieve discomfort.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A mother asks when she should begin breastfeeding her newborn. Which advice is correct?",
+"choices": [
+{"text": "Initiate breastfeeding within the first hour after birth, if mother and newborn are clinically stable", "is_correct": true},
+{"text": "Wait until the third day when mature milk is produced", "is_correct": false},
+{"text": "Give water before offering breast milk", "is_correct": false},
+{"text": "Delay breastfeeding until the umbilical cord falls off", "is_correct": false}
+],
+"rationale": "Early initiation of breastfeeding, ideally within the first hour after birth, supports bonding and helps the newborn receive colostrum. Exclusive breastfeeding is recommended for the first six months unless a medical contraindication exists.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A woman presents to a CHPS compound on the fifth day after delivery with fever, lower abdominal pain and offensive vaginal discharge. What should the nurse suspect?",
+"choices": [
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Puerperal infection or sepsis", "is_correct": true},
+{"text": "Normal lactation", "is_correct": false},
+{"text": "Physiological postpartum fatigue only", "is_correct": false}
+],
+"rationale": "Fever, lower abdominal pain and offensive lochia are concerning for puerperal infection. The nurse should assess for signs of systemic illness and arrange urgent referral for clinical evaluation and appropriate antimicrobial treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A breastfeeding mother asks about family planning options before resuming sexual activity. Which response is most appropriate?",
+"choices": [
+{"text": "Discuss suitable postpartum contraceptive methods, taking breastfeeding status and medical eligibility into account", "is_correct": true},
+{"text": "Tell her that breastfeeding guarantees protection against pregnancy in all circumstances", "is_correct": false},
+{"text": "Advise her that contraception is unnecessary during the first year after delivery", "is_correct": false},
+{"text": "Recommend that she use any hormonal method without assessment", "is_correct": false}
+],
+"rationale": "Postpartum family planning should be individualised according to the woman's preferences, breastfeeding status, medical eligibility and timing after delivery. The lactational amenorrhoea method is effective only when all three criteria are met: the mother is amenorrhoeic, exclusively or nearly exclusively breastfeeding, and less than six months postpartum.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A pregnant woman at 36 weeks presents with blood pressure of 170/115 mmHg and severe headache. What should the nurse prioritise?",
+"choices": [
+{"text": "Arrange urgent obstetric assessment and initiate emergency management according to protocol", "is_correct": true},
+{"text": "Advise her to return for routine review in one week", "is_correct": false},
+{"text": "Encourage vigorous exercise to reduce blood pressure", "is_correct": false},
+{"text": "Discharge her if she has no vaginal bleeding", "is_correct": false}
+],
+"rationale": "Severe-range hypertension with headache in pregnancy is a medical emergency because of the risk of stroke, eclampsia and organ injury. Urgent obstetric management includes appropriate antihypertensive treatment, seizure prophylaxis when indicated and assessment of maternal and fetal condition.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A woman with eclampsia begins convulsing at a health facility. Which action should the nurse take first?",
+"choices": [
+{"text": "Protect her from injury, position her to maintain airway safety and summon emergency assistance", "is_correct": true},
+{"text": "Insert a hard object into her mouth to prevent tongue biting", "is_correct": false},
+{"text": "Restrain all four limbs forcefully", "is_correct": false},
+{"text": "Give oral medication while she is convulsing", "is_correct": false}
+],
+"rationale": "During an eclamptic seizure, maternal safety and airway protection are immediate priorities. The nurse should prevent injury, position the woman laterally when feasible, provide oxygen and emergency support as indicated, and administer magnesium sulphate according to protocol once appropriate assistance is available.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pre-eclampsia and Eclampsia",
+"question_text": "A woman receiving magnesium sulphate for severe pre-eclampsia has a respiratory rate of 9 breaths per minute and absent patellar reflexes. What should the nurse suspect?",
+"choices": [
+{"text": "Magnesium sulphate toxicity", "is_correct": true},
+{"text": "Normal therapeutic response", "is_correct": false},
+{"text": "Iron deficiency anaemia", "is_correct": false},
+{"text": "Normal labour progression", "is_correct": false}
+],
+"rationale": "Respiratory depression and absent deep tendon reflexes are important signs of magnesium sulphate toxicity. The nurse should stop the infusion, summon urgent medical assistance, support respiration and prepare to administer calcium gluconate as the antidote according to protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops heavy vaginal bleeding immediately after delivery. Her uterus is firm and well contracted. Which cause should the nurse consider?",
+"choices": [
+{"text": "Genital tract trauma, such as a cervical or vaginal tear", "is_correct": true},
+{"text": "Uterine atony as the only possible cause", "is_correct": false},
+{"text": "Normal lochia alba", "is_correct": false},
+{"text": "Delayed uterine involution occurring weeks later", "is_correct": false}
+],
+"rationale": "Heavy bleeding despite a firm, contracted uterus suggests a cause other than uterine atony, particularly genital tract trauma. The nurse should urgently assess the woman, summon skilled assistance and ensure prompt examination and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman develops postpartum haemorrhage following delivery. Which combination of actions is most appropriate?",
+"choices": [
+{"text": "Call for help, assess the cause, establish intravenous access, begin resuscitation and administer appropriate uterotonics", "is_correct": true},
+{"text": "Wait for the bleeding to stop spontaneously before taking observations", "is_correct": false},
+{"text": "Give oral fluids only and avoid intravenous access", "is_correct": false},
+{"text": "Discharge the woman once the placenta has been delivered", "is_correct": false}
+],
+"rationale": "Postpartum haemorrhage requires a coordinated emergency response, including rapid assessment, resuscitation and treatment of the underlying cause. Uterotonics are used when indicated, while ongoing blood loss, maternal observations and the need for blood products or further intervention must be assessed urgently.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "During delivery, the fetal head is born but retracts tightly against the perineum, and the shoulders do not deliver with the next contraction. Which emergency should the nurse recognise?",
+"choices": [
+{"text": "Shoulder dystocia", "is_correct": true},
+{"text": "Cord prolapse", "is_correct": false},
+{"text": "Uterine inversion", "is_correct": false},
+{"text": "Placenta praevia", "is_correct": false}
+],
+"rationale": "Retraction of the fetal head against the perineum, known as the turtle sign, is a characteristic warning sign of shoulder dystocia. Immediate assistance and a coordinated sequence of manoeuvres are required to deliver the shoulders safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman in labour experiences sudden rupture of membranes. The fetal heart rate drops sharply, and the umbilical cord is visible at the vaginal opening. What should the nurse do?",
+"choices": [
+{"text": "Call for emergency assistance, relieve pressure on the cord by elevating the presenting part and arrange immediate delivery", "is_correct": true},
+{"text": "Attempt to push the cord back into the uterus and continue routine labour monitoring", "is_correct": false},
+{"text": "Apply fundal pressure to speed delivery", "is_correct": false},
+{"text": "Ask the woman to walk around to improve fetal circulation", "is_correct": false}
+],
+"rationale": "Visible umbilical cord with fetal heart rate abnormalities indicates cord prolapse with possible cord compression. The nurse should summon urgent obstetric assistance, reduce pressure on the cord by elevating the presenting part, position the woman appropriately and facilitate immediate birth, usually by emergency caesarean section when vaginal birth is not imminent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman in labour has severe abdominal pain, vaginal bleeding, maternal shock and cessation of previously strong contractions. The fetal presenting part is no longer easily palpable. Which complication should be suspected?",
+"choices": [
+{"text": "Uterine rupture", "is_correct": true},
+{"text": "Normal transition phase of labour", "is_correct": false},
+{"text": "Uncomplicated Braxton Hicks contractions", "is_correct": false},
+{"text": "Physiological uterine involution", "is_correct": false}
+],
+"rationale": "Severe abdominal pain, haemorrhage, maternal shock and loss of normal labour findings may indicate uterine rupture. This is a life-threatening emergency requiring immediate resuscitation, urgent surgical management and blood support where available.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman in prolonged labour has strong uterine contractions, severe maternal exhaustion and no descent of the presenting part despite adequate time and assessment. What should the nurse suspect?",
+"choices": [
+{"text": "Obstructed labour", "is_correct": true},
+{"text": "Normal first-stage labour", "is_correct": false},
+{"text": "Physiological postpartum recovery", "is_correct": false},
+{"text": "Normal fetal engagement", "is_correct": false}
+],
+"rationale": "Obstructed labour occurs when the fetus cannot progress through the birth canal despite adequate uterine contractions, often because of cephalopelvic disproportion or malpresentation. It requires urgent skilled obstetric assessment and timely intervention to prevent uterine rupture, haemorrhage, infection and fetal compromise.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Puerperal Sepsis",
+"question_text": "A woman who delivered at home three days ago presents with fever, chills, lower abdominal pain and foul-smelling vaginal discharge. What should the community health nurse do?",
+"choices": [
+{"text": "Arrange urgent referral for suspected puerperal sepsis and assess for signs of systemic deterioration", "is_correct": true},
+{"text": "Advise her to use vaginal herbal preparations", "is_correct": false},
+{"text": "Reassure her that foul-smelling lochia is normal", "is_correct": false},
+{"text": "Ask her to return after completing one week of bed rest", "is_correct": false}
+],
+"rationale": "Fever, chills, abdominal pain and offensive lochia following childbirth strongly suggest puerperal infection. The woman requires urgent clinical assessment and treatment because infection may progress rapidly to sepsis and organ dysfunction.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Puerperal Sepsis",
+"question_text": "A woman develops redness, warmth and severe pain in one breast during the second week of breastfeeding. She also has fever. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Lactational mastitis", "is_correct": true},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Placenta praevia", "is_correct": false},
+{"text": "Ectopic pregnancy", "is_correct": false}
+],
+"rationale": "Lactational mastitis commonly presents with a painful, red and warm area of the breast accompanied by fever and flu-like symptoms. Assessment and appropriate treatment are needed, with continued effective milk removal usually encouraged unless a specific clinical contraindication exists.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A mother two weeks after delivery reports persistent sadness, feelings of worthlessness, poor sleep even when the baby sleeps and difficulty bonding with her newborn. What should the nurse do?",
+"choices": [
+{"text": "Assess for postpartum depression and arrange appropriate mental health support", "is_correct": true},
+{"text": "Tell her that these feelings are always normal and require no attention", "is_correct": false},
+{"text": "Advise her to stop breastfeeding immediately", "is_correct": false},
+{"text": "Separate her permanently from the newborn", "is_correct": false}
+],
+"rationale": "Persistent low mood, worthlessness and impaired bonding may indicate postpartum depression rather than transient postpartum blues. The nurse should assess symptom severity, functioning and safety, including thoughts of self-harm, and arrange appropriate support and referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A mother presents at a CHPS compound one week after delivery and says she hears voices telling her to harm her baby. What is the most appropriate nursing action?",
+"choices": [
+{"text": "Recognise a possible postpartum psychiatric emergency, ensure immediate safety and arrange urgent specialist assessment", "is_correct": true},
+{"text": "Advise her to remain alone with the baby to improve bonding", "is_correct": false},
+{"text": "Reassure her that hearing voices is a normal part of breastfeeding", "is_correct": false},
+{"text": "Schedule a routine review in three months", "is_correct": false}
+],
+"rationale": "Hallucinations and thoughts of harming the baby may indicate postpartum psychosis, a psychiatric emergency associated with serious risks to mother and infant. Immediate safety measures, urgent medical and mental health assessment and appropriate supervision are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "A pregnant woman at 34 weeks has blood pressure of 150/100 mmHg and protein detected in her urine. She has no headache or visual symptoms. Which interpretation is most appropriate?",
+"choices": [
+{"text": "She may have pre-eclampsia and requires prompt assessment and referral according to protocol", "is_correct": true},
+{"text": "She has normal physiological changes that require no follow-up", "is_correct": false},
+{"text": "She has eclampsia because protein is present in the urine", "is_correct": false},
+{"text": "She has gestational diabetes", "is_correct": false}
+],
+"rationale": "New-onset hypertension after 20 weeks accompanied by proteinuria is consistent with pre-eclampsia, although diagnosis and severity assessment require clinical evaluation. Absence of symptoms does not exclude serious disease, so prompt referral and monitoring are necessary.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman in labour has a partograph showing increasing caput, severe moulding and failure of the presenting part to descend. Uterine contractions are strong. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The findings suggest possible cephalopelvic disproportion or obstructed labour", "is_correct": true},
+{"text": "The findings indicate normal progress requiring no further assessment", "is_correct": false},
+{"text": "The woman should immediately receive oxytocin without further evaluation", "is_correct": false},
+{"text": "The findings confirm that the placenta has separated", "is_correct": false}
+],
+"rationale": "Increasing caput and severe moulding with no descent despite strong contractions suggest mechanical difficulty, including possible cephalopelvic disproportion. Further augmentation without excluding obstruction may increase the risk of uterine rupture and fetal compromise; urgent obstetric review or referral is required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Haemorrhage",
+"question_text": "A woman has delivered vaginally and is bleeding heavily. Her uterus is firm, the placenta appears complete and there is a visible vaginal tear. Which cause of haemorrhage is most likely?",
+"choices": [
+{"text": "Trauma to the genital tract", "is_correct": true},
+{"text": "Uterine atony", "is_correct": false},
+{"text": "Retained placental tissue as the only possible cause", "is_correct": false},
+{"text": "Normal lochia rubra", "is_correct": false}
+],
+"rationale": "The firm uterine tone and visible vaginal tear suggest traumatic postpartum haemorrhage. The bleeding source must be identified and repaired by an appropriately skilled provider while resuscitation and ongoing monitoring are undertaken.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "During shoulder dystocia, a birth attendant applies strong fundal pressure in an attempt to deliver the baby. Why is this action inappropriate?",
+"choices": [
+{"text": "It may worsen shoulder impaction and increase the risk of maternal and fetal injury", "is_correct": true},
+{"text": "It always causes immediate placental separation", "is_correct": false},
+{"text": "It prevents uterine contractions from occurring", "is_correct": false},
+{"text": "It reduces the need for skilled obstetric assistance", "is_correct": false}
+],
+"rationale": "Fundal pressure is contraindicated in shoulder dystocia because it may force the impacted shoulder further against the maternal pelvis and increase the risk of injury. Appropriate manoeuvres include McRoberts positioning and suprapubic pressure, performed by trained personnel.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Obstetric Emergencies",
+"question_text": "A woman with suspected cord prolapse is awaiting emergency transfer. The fetal heart rate remains abnormal. Which positioning and intervention are most appropriate while preparing for definitive delivery?",
+"choices": [
+{"text": "Use a knee-chest or head-down lateral position as appropriate and maintain manual elevation of the presenting part by a trained provider", "is_correct": true},
+{"text": "Place her flat on her back and encourage pushing", "is_correct": false},
+{"text": "Ask her to walk around to reduce cord compression", "is_correct": false},
+{"text": "Attempt to pull the umbilical cord gently through the vagina", "is_correct": false}
+],
+"rationale": "Positioning to reduce pressure on the prolapsed cord and manual elevation of the presenting part can help preserve fetal blood flow while urgent delivery is arranged. The cord should not be handled unnecessarily or pushed back into the uterus, and transfer must not be delayed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Puerperal Sepsis",
+"question_text": "A woman four days postpartum has fever, a heart rate of 128 beats per minute, low blood pressure and confusion. Her lochia is offensive. Which condition should the nurse prioritise?",
+"choices": [
+{"text": "Maternal sepsis with possible septic shock", "is_correct": true},
+{"text": "Normal postpartum hormonal changes", "is_correct": false},
+{"text": "Uncomplicated breast engorgement", "is_correct": false},
+{"text": "Normal uterine involution", "is_correct": false}
+],
+"rationale": "Fever, tachycardia, hypotension and altered mental status in a postpartum woman with offensive lochia suggest severe infection with possible septic shock. This is a life-threatening emergency requiring immediate escalation, resuscitation and prompt antimicrobial treatment at an appropriate facility.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perinatal Mental Health",
+"question_text": "A mother three weeks postpartum says she feels hopeless and has been thinking about ending her life. She is alone with her newborn at home. What should the community health nurse prioritise?",
+"choices": [
+{"text": "Ensure immediate safety, assess suicide risk and arrange urgent mental health and medical intervention", "is_correct": true},
+{"text": "Advise her to ignore the thoughts because they will disappear", "is_correct": false},
+{"text": "Leave her alone to avoid increasing her anxiety", "is_correct": false},
+{"text": "Schedule a routine postnatal visit after six weeks", "is_correct": false}
+],
+"rationale": "Suicidal thoughts in the postpartum period indicate a potentially life-threatening mental health emergency. The nurse should not leave the mother unsupported, should ensure the newborn's immediate safety and should arrange urgent assessment and intervention through appropriate services.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A woman on the seventh day after delivery reports that her lochia had become lighter but has suddenly turned bright red and heavy, with large clots and dizziness. Which interpretation is most appropriate?",
+"choices": [
+{"text": "Possible secondary postpartum haemorrhage requiring urgent assessment", "is_correct": true},
+{"text": "Normal progression of lochia alba", "is_correct": false},
+{"text": "Normal breast engorgement", "is_correct": false},
+{"text": "Expected uterine involution without complications", "is_correct": false}
+],
+"rationale": "A sudden increase in bright red bleeding with clots and dizziness after the initial postpartum period may indicate secondary postpartum haemorrhage. Possible causes include retained placental tissue and infection, and urgent clinical assessment is required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Antenatal Care at CHPS",
+"question_text": "A pregnant woman with a history of a previous caesarean section presents to a CHPS compound at 38 weeks with regular contractions. She wishes to deliver at home because her previous birth was uncomplicated. What should the nurse do?",
+"choices": [
+{"text": "Arrange prompt referral to a facility with appropriate obstetric and emergency surgical capacity", "is_correct": true},
+{"text": "Encourage home delivery because the previous operation was uncomplicated", "is_correct": false},
+{"text": "Advise her to delay seeking care until the baby is visible", "is_correct": false},
+{"text": "Recommend that she deliver without skilled assistance", "is_correct": false}
+],
+"rationale": "A previous caesarean section increases the need for individualised intrapartum assessment because of the risk of uterine scar complications, including rupture. The woman should be referred promptly to an appropriately equipped facility where labour can be monitored and emergency intervention provided.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Labour and Delivery",
+"question_text": "A woman delivers at a community facility. The placenta has not been delivered after 30 minutes despite appropriate initial management, and bleeding is increasing. What should the nurse recognise?",
+"choices": [
+{"text": "Retained placenta with risk of postpartum haemorrhage", "is_correct": true},
+{"text": "Normal completion of the third stage", "is_correct": false},
+{"text": "Normal onset of the fourth stage", "is_correct": false},
+{"text": "Physiological lactogenesis", "is_correct": false}
+],
+"rationale": "Failure to deliver the placenta within the expected period, particularly with increasing bleeding, raises concern for retained placenta and postpartum haemorrhage. The nurse should summon skilled assistance, initiate appropriate emergency measures and arrange urgent management without attempting untrained manual removal.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Postpartum Care",
+"question_text": "A woman who delivered two days ago has a uterus that remains higher than expected and is tender on palpation. She also has fever and offensive lochia. Which condition best explains these findings?",
+"choices": [
+{"text": "Puerperal endometritis with possible subinvolution", "is_correct": true},
+{"text": "Normal uterine involution", "is_correct": false},
+{"text": "Uncomplicated lactation", "is_correct": false},
+{"text": "Normal postpartum diuresis", "is_correct": false}
+],
+"rationale": "Uterine tenderness, fever and offensive lochia suggest infection of the uterine lining, while delayed reduction in uterine size may indicate subinvolution. Prompt assessment and treatment are required to prevent progression to systemic infection and haemorrhage.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
