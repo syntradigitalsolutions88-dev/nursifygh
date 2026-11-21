@@ -1,0 +1,754 @@
+{
+"courses": [
+{
+"course_code": "ADN-211",
+"course_title": "Advanced Nursing II",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Nursing Assessment",
+"Critical Care Nursing Basics",
+"Advanced Wound Management",
+"Fluid and Electrolyte Balance",
+"Perioperative Nursing",
+"Pain Management",
+"Care of the Unconscious Patient",
+"Advanced Medication Administration"
+],
+"questions": [
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "Which of the following best describes the primary purpose of an advanced nursing assessment?",
+"choices": [
+{"text": "To establish a nursing diagnosis and identify actual or potential health problems", "is_correct": true},
+{"text": "To determine the patient's financial ability to pay for treatment", "is_correct": false},
+{"text": "To prescribe medications independently for all medical conditions", "is_correct": false},
+{"text": "To replace the medical history taken by the physician", "is_correct": false}
+],
+"rationale": "Advanced nursing assessment involves systematic collection and interpretation of subjective and objective patient data. It enables nurses to identify actual and potential health problems, establish nursing priorities and develop appropriate care plans.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A nurse at a regional hospital is assessing a patient admitted with suspected severe malaria. Which assessment finding requires the most immediate attention?",
+"choices": [
+{"text": "Loss of appetite", "is_correct": false},
+{"text": "Temperature of 38.5°C", "is_correct": false},
+{"text": "Altered level of consciousness", "is_correct": true},
+{"text": "Generalised body weakness", "is_correct": false}
+],
+"rationale": "Altered consciousness in a patient with suspected severe malaria may indicate cerebral malaria or another life-threatening complication. Immediate neurological assessment, airway evaluation and urgent intervention are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "Which of the following assessment methods involves tapping the body surface to determine the size, location and density of underlying organs?",
+"choices": [
+{"text": "Inspection", "is_correct": false},
+{"text": "Palpation", "is_correct": false},
+{"text": "Auscultation", "is_correct": false},
+{"text": "Percussion", "is_correct": true}
+],
+"rationale": "Percussion involves tapping the body surface to produce sounds that provide information about underlying structures. Different percussion notes, including resonance, dullness and tympany, help nurses assess organs and body cavities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A patient in a district hospital has a blood pressure of 82/50 mmHg, pulse rate of 126 beats/minute and cold clammy skin. Which condition should the nurse suspect?",
+"choices": [
+{"text": "Hypertension", "is_correct": false},
+{"text": "Hypovolaemic shock", "is_correct": true},
+{"text": "Normal physiological response", "is_correct": false},
+{"text": "Chronic venous insufficiency", "is_correct": false}
+],
+"rationale": "Hypotension, tachycardia and cold clammy skin are characteristic signs of circulatory compromise and may indicate hypovolaemic shock. The nurse should urgently assess the patient, activate the appropriate emergency response and prepare for fluid resuscitation as prescribed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "Which component of the Glasgow Coma Scale assesses the patient's ability to respond to verbal commands?",
+"choices": [
+{"text": "Eye opening", "is_correct": false},
+{"text": "Motor response", "is_correct": true},
+{"text": "Pupillary reaction", "is_correct": false},
+{"text": "Respiratory response", "is_correct": false}
+],
+"rationale": "The motor component of the Glasgow Coma Scale assesses the patient's ability to obey commands, localise pain, withdraw from pain and demonstrate other motor responses. The GCS consists of eye, verbal and motor responses, with a maximum score of 15.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A nurse assesses a patient with suspected diabetic ketoacidosis and observes deep, rapid breathing. How should this breathing pattern be documented?",
+"choices": [
+{"text": "Cheyne-Stokes respiration", "is_correct": false},
+{"text": "Biot's respiration", "is_correct": false},
+{"text": "Kussmaul respiration", "is_correct": true},
+{"text": "Apnoeic respiration", "is_correct": false}
+],
+"rationale": "Kussmaul respiration is characterised by deep, rapid breathing associated with metabolic acidosis. In diabetic ketoacidosis, this pattern represents a compensatory mechanism through which the body attempts to eliminate excess carbon dioxide.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A nurse assesses four patients during an evening shift. Which patient requires immediate assessment?",
+"choices": [
+{"text": "A patient with chronic arthritis reporting joint stiffness", "is_correct": false},
+{"text": "A patient with pneumonia whose oxygen saturation has fallen to 84%", "is_correct": true},
+{"text": "A patient recovering from surgery requesting assistance with feeding", "is_correct": false},
+{"text": "A patient with a healing wound reporting mild itching", "is_correct": false}
+],
+"rationale": "An oxygen saturation of 84% indicates significant hypoxaemia and possible respiratory failure. Using the ABC approach, compromised breathing takes priority over chronic discomfort, routine feeding assistance and minor wound symptoms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "Which of the following findings is most consistent with increased intracranial pressure?",
+"choices": [
+{"text": "Bradycardia, hypertension and irregular respirations", "is_correct": true},
+{"text": "Hypotension, tachycardia and increased appetite", "is_correct": false},
+{"text": "Hypothermia, polyuria and tachycardia", "is_correct": false},
+{"text": "Hypertension, tachycardia and regular respirations", "is_correct": false}
+],
+"rationale": "The combination of hypertension, bradycardia and irregular respirations is known as Cushing's triad. It is a late and serious clinical indicator of increased intracranial pressure and possible brainstem compression.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "A patient admitted with severe head injury initially has a GCS score of 14 but subsequently scores 9. What is the nurse's most appropriate interpretation?",
+"choices": [
+{"text": "The patient's neurological condition is improving", "is_correct": false},
+{"text": "The patient is demonstrating normal sleep patterns", "is_correct": false},
+{"text": "The patient has developed a significant deterioration in neurological status", "is_correct": true},
+{"text": "The patient's condition is stable because the score remains above 5", "is_correct": false}
+],
+"rationale": "A reduction in GCS from 14 to 9 represents significant neurological deterioration and may indicate expanding intracranial bleeding, cerebral oedema or worsening brain injury. The nurse must urgently escalate the findings, reassess airway protection and prepare for further medical intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Nursing Assessment",
+"question_text": "Which assessment technique is most appropriate for detecting peripheral oedema in a patient with congestive heart failure?",
+"choices": [
+{"text": "Percussing the abdomen", "is_correct": false},
+{"text": "Applying pressure over the shin or ankle to assess for pitting", "is_correct": true},
+{"text": "Auscultating the carotid arteries", "is_correct": false},
+{"text": "Inspecting the oral mucosa", "is_correct": false}
+],
+"rationale": "Pitting oedema is assessed by applying sustained pressure over a bony area, commonly the shin or ankle. The depth of the indentation and the time taken for the tissue to return to its normal appearance help determine the severity of oedema.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "What is the primary objective of critical care nursing?",
+"choices": [
+{"text": "To provide routine health education to stable patients only", "is_correct": false},
+{"text": "To provide specialised care to patients with life-threatening conditions", "is_correct": true},
+{"text": "To perform surgical procedures independently", "is_correct": false},
+{"text": "To reduce the number of hospital admissions", "is_correct": false}
+],
+"rationale": "Critical care nursing focuses on the comprehensive management of patients with actual or potentially life-threatening conditions. It involves continuous monitoring, advanced clinical assessment and timely interventions to maintain physiological stability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "A patient in the emergency unit suddenly becomes unresponsive and is not breathing normally. What should the nurse do first after confirming the situation?",
+"choices": [
+{"text": "Obtain a complete medical history", "is_correct": false},
+{"text": "Administer oral glucose", "is_correct": false},
+{"text": "Activate the emergency response system and commence CPR according to resuscitation guidelines", "is_correct": true},
+{"text": "Transfer the patient to the general ward", "is_correct": false}
+],
+"rationale": "An unresponsive patient who is not breathing normally should be treated as being in cardiac arrest while the nurse rapidly checks for a pulse according to the applicable resuscitation protocol. Emergency assistance should be activated immediately, and high-quality CPR should be initiated without unnecessary delay.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "Which oxygen delivery device is generally used when a critically ill patient requires a precise and controlled concentration of oxygen?",
+"choices": [
+{"text": "Simple face mask", "is_correct": false},
+{"text": "Venturi mask", "is_correct": true},
+{"text": "Nasal cannula", "is_correct": false},
+{"text": "Non-rebreather mask", "is_correct": false}
+],
+"rationale": "A Venturi mask delivers a controlled and relatively precise fraction of inspired oxygen (FiO2). It is particularly useful when accurate oxygen concentration is important, including in patients at risk of carbon dioxide retention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "A patient receiving oxygen therapy through a non-rebreather mask develops increasing respiratory distress and an oxygen saturation of 78%. What is the nurse's priority action?",
+"choices": [
+{"text": "Remove the oxygen mask and allow the patient to rest", "is_correct": false},
+{"text": "Immediately assess airway and breathing, call for emergency assistance and prepare for advanced respiratory support", "is_correct": true},
+{"text": "Encourage the patient to drink water", "is_correct": false},
+{"text": "Document the oxygen saturation and reassess after one hour", "is_correct": false}
+],
+"rationale": "Severe hypoxaemia despite high-concentration oxygen suggests potentially life-threatening respiratory failure. Immediate airway and breathing assessment, emergency escalation and preparation for advanced respiratory support are essential.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "Which of the following best describes the purpose of continuous cardiac monitoring in an intensive care unit?",
+"choices": [
+{"text": "To measure urine output continuously", "is_correct": false},
+{"text": "To monitor blood glucose concentration", "is_correct": false},
+{"text": "To detect cardiac rhythm abnormalities and changes in heart rate", "is_correct": true},
+{"text": "To measure body temperature only", "is_correct": false}
+],
+"rationale": "Continuous cardiac monitoring records the electrical activity of the heart and helps identify arrhythmias, conduction abnormalities and significant heart rate changes. Early recognition allows prompt assessment and intervention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "A patient with septic shock has a blood pressure of 76/42 mmHg, altered consciousness and a weak peripheral pulse. Which intervention should the nurse anticipate as part of the initial management?",
+"choices": [
+{"text": "Immediate administration of oral antihypertensive medication", "is_correct": false},
+{"text": "Rapid administration of appropriate intravenous crystalloids as prescribed, with frequent reassessment", "is_correct": true},
+{"text": "Restriction of all intravenous fluids", "is_correct": false},
+{"text": "Encouraging the patient to walk around the ward", "is_correct": false}
+],
+"rationale": "Septic shock causes circulatory failure and tissue hypoperfusion, requiring urgent haemodynamic support. Intravenous crystalloids are commonly administered initially, while the response is monitored and antimicrobial therapy and vasopressors are arranged according to the sepsis protocol.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "A patient receiving intravenous fluids suddenly develops crackles in both lung fields, increasing breathlessness and reduced oxygen saturation. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Hypovolaemia", "is_correct": false},
+{"text": "Fluid overload with pulmonary oedema", "is_correct": true},
+{"text": "Hypoglycaemia", "is_correct": false},
+{"text": "Peripheral neuropathy", "is_correct": false}
+],
+"rationale": "Crackles, dyspnoea and reduced oxygen saturation during fluid administration suggest pulmonary congestion caused by fluid overload. The nurse should urgently reassess the patient, stop or reduce the infusion as clinically indicated, escalate the condition and prepare for prescribed treatment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care Nursing Basics",
+"question_text": "Which clinical indicator is most useful for assessing tissue perfusion in a critically ill patient?",
+"choices": [
+{"text": "Hair distribution", "is_correct": false},
+{"text": "Urine output", "is_correct": true},
+{"text": "Nail length", "is_correct": false},
+{"text": "Appetite level", "is_correct": false}
+],
+"rationale": "Urine output provides an important indication of renal perfusion and overall circulatory status. In adults, urine output below approximately 0.5 mL/kg/hour may indicate inadequate renal perfusion and requires further assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which phase of wound healing is characterised by fibroblast proliferation, collagen deposition and formation of new capillaries?",
+"choices": [
+{"text": "Haemostasis", "is_correct": false},
+{"text": "Inflammatory phase", "is_correct": false},
+{"text": "Proliferative phase", "is_correct": true},
+{"text": "Maturation phase", "is_correct": false}
+],
+"rationale": "The proliferative phase involves granulation tissue formation, angiogenesis, fibroblast activity and collagen deposition. These processes help fill the wound defect and establish the foundation for subsequent tissue remodelling.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A patient with a diabetic foot ulcer presents at a CHPS compound with purulent discharge, surrounding erythema and a foul smell. What should the nurse do first?",
+"choices": [
+{"text": "Apply a dry dressing and discharge the patient", "is_correct": false},
+{"text": "Assess the wound and the patient's general condition, and arrange urgent referral for further management", "is_correct": true},
+{"text": "Encourage the patient to walk regularly to improve circulation", "is_correct": false},
+{"text": "Apply an unprescribed topical antibiotic and review after one month", "is_correct": false}
+],
+"rationale": "Purulent discharge, erythema and foul odour suggest wound infection, which can progress to deep tissue infection or sepsis, particularly in patients with diabetes. The nurse should assess for systemic involvement, provide appropriate initial wound care and arrange prompt referral for comprehensive evaluation and treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which dressing is most appropriate for a wound with moderate to heavy exudate?",
+"choices": [
+{"text": "Hydrocolloid dressing in every circumstance", "is_correct": false},
+{"text": "Alginate dressing", "is_correct": true},
+{"text": "Transparent film dressing", "is_correct": false},
+{"text": "Dry gauze without an absorbent layer", "is_correct": false}
+],
+"rationale": "Alginate dressings have high absorptive capacity and are useful for wounds producing moderate to heavy exudate. They form a gel when they come into contact with wound fluid and help maintain a suitable moist wound environment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A nurse is caring for a patient who has developed a pressure injury over the sacrum. The skin is intact but shows persistent non-blanchable redness. How should this injury be classified?",
+"choices": [
+{"text": "Stage 1 pressure injury", "is_correct": true},
+{"text": "Stage 2 pressure injury", "is_correct": false},
+{"text": "Stage 3 pressure injury", "is_correct": false},
+{"text": "Stage 4 pressure injury", "is_correct": false}
+],
+"rationale": "A Stage 1 pressure injury presents with intact skin and persistent non-blanchable erythema over a pressure area. Early identification and pressure redistribution are essential to prevent progression to deeper tissue damage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "Which nursing intervention is most effective in preventing pressure injuries in an immobile patient?",
+"choices": [
+{"text": "Massaging reddened bony prominences regularly", "is_correct": false},
+{"text": "Maintaining continuous pressure on the same body area", "is_correct": false},
+{"text": "Implementing an individualised repositioning schedule and pressure redistribution measures", "is_correct": true},
+{"text": "Restricting fluid intake to prevent skin moisture", "is_correct": false}
+],
+"rationale": "Regular repositioning and appropriate pressure redistribution reduce prolonged pressure and shear forces that compromise tissue perfusion. Skin assessment, moisture management, adequate nutrition and individual risk assessment should also form part of prevention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A postoperative patient develops wound dehiscence, with separation of the surgical incision. Which action should the nurse take?",
+"choices": [
+{"text": "Attempt to close the wound using adhesive tape without further assessment", "is_correct": false},
+{"text": "Cover the wound with a sterile dressing, assess the patient and notify the surgical team immediately", "is_correct": true},
+{"text": "Encourage the patient to cough forcefully", "is_correct": false},
+{"text": "Leave the wound exposed to allow rapid drying", "is_correct": false}
+],
+"rationale": "Wound dehiscence is a potentially serious postoperative complication that requires immediate clinical attention. The wound should be protected with an appropriate sterile dressing, and the patient should be assessed for further complications while urgent surgical review is arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A patient experiences sudden evisceration of abdominal contents following surgery. What is the priority nursing intervention?",
+"choices": [
+{"text": "Attempt to push the exposed organs back into the abdominal cavity", "is_correct": false},
+{"text": "Cover the exposed organs with sterile saline-moistened dressings and obtain immediate surgical assistance", "is_correct": true},
+{"text": "Apply a tight abdominal binder directly over the exposed organs", "is_correct": false},
+{"text": "Allow the patient to walk to reduce abdominal pressure", "is_correct": false}
+],
+"rationale": "Evisceration is a surgical emergency in which abdominal organs protrude through an opened incision. The exposed organs must be protected with sterile saline-moistened dressings, and immediate surgical intervention is required; the organs must never be manually pushed back.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management",
+"question_text": "A patient with a chronic lower-limb ulcer has increasing wound size, severe pain, surrounding warmth and purulent discharge. Despite regular dressing changes, the wound continues to deteriorate. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The wound is progressing normally through the maturation phase", "is_correct": false},
+{"text": "The wound may have an uncontrolled infection requiring reassessment and targeted treatment", "is_correct": true},
+{"text": "The patient requires less frequent wound assessment", "is_correct": false},
+{"text": "The wound should be left uncovered to accelerate healing", "is_correct": false}
+],
+"rationale": "Increasing wound size, pain, warmth and purulent discharge are concerning features of wound infection and possible tissue deterioration. Continued dressing changes without identifying the underlying cause may delay healing, so the wound requires comprehensive reassessment and appropriate clinical management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which electrolyte is primarily responsible for maintaining extracellular fluid osmolality and volume?",
+"choices": [
+{"text": "Potassium", "is_correct": false},
+{"text": "Sodium", "is_correct": true},
+{"text": "Magnesium", "is_correct": false},
+{"text": "Phosphate", "is_correct": false}
+],
+"rationale": "Sodium is the principal extracellular cation and plays a major role in regulating extracellular fluid volume and osmolality. Abnormal sodium concentrations can cause significant neurological manifestations due to changes in cellular water movement.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient admitted with acute diarrhoea at a district hospital presents with dry mucous membranes, sunken eyes, reduced urine output and tachycardia. Which condition is most likely?",
+"choices": [
+{"text": "Fluid volume excess", "is_correct": false},
+{"text": "Dehydration", "is_correct": true},
+{"text": "Hypervolaemia", "is_correct": false},
+{"text": "Pulmonary oedema", "is_correct": false}
+],
+"rationale": "Profuse diarrhoea causes excessive gastrointestinal fluid and electrolyte losses. Dry mucous membranes, sunken eyes, tachycardia and reduced urine output are common clinical indicators of dehydration and reduced circulating volume.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which electrocardiographic change is commonly associated with hyperkalaemia?",
+"choices": [
+{"text": "Peaked T waves", "is_correct": true},
+{"text": "Prominent U waves", "is_correct": false},
+{"text": "Prolonged QT interval as the characteristic early finding", "is_correct": false},
+{"text": "ST elevation in every patient", "is_correct": false}
+],
+"rationale": "Hyperkalaemia commonly produces tall, peaked T waves and may progress to PR prolongation, loss of P waves and QRS widening. Severe hyperkalaemia can cause life-threatening cardiac arrhythmias and requires urgent treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with severe vomiting has a serum potassium concentration of 2.8 mmol/L. Which clinical manifestation should the nurse expect?",
+"choices": [
+{"text": "Muscle weakness and cardiac dysrhythmias", "is_correct": true},
+{"text": "Increased deep tendon reflexes and muscle rigidity", "is_correct": false},
+{"text": "Peaked T waves as the typical finding", "is_correct": false},
+{"text": "Severe hypertension caused directly by potassium excess", "is_correct": false}
+],
+"rationale": "A potassium concentration of 2.8 mmol/L indicates hypokalaemia, which can cause skeletal muscle weakness, fatigue and cardiac dysrhythmias. Electrocardiographic changes may include flattened T waves, ST depression and prominent U waves.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which intravenous fluid is classified as an isotonic crystalloid solution?",
+"choices": [
+{"text": "0.45% sodium chloride", "is_correct": false},
+{"text": "0.9% sodium chloride", "is_correct": true},
+{"text": "3% sodium chloride", "is_correct": false},
+{"text": "Sterile water for injection", "is_correct": false}
+],
+"rationale": "Normal saline, containing 0.9% sodium chloride, is classified as an isotonic crystalloid solution. It is commonly used for extracellular fluid replacement and initial resuscitation when clinically indicated.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with chronic kidney disease has a serum potassium concentration of 6.7 mmol/L and develops ECG changes. Which intervention should the nurse anticipate as an immediate priority?",
+"choices": [
+{"text": "Administration of oral potassium supplements", "is_correct": false},
+{"text": "Urgent administration of intravenous calcium gluconate as prescribed to stabilise the cardiac membrane", "is_correct": true},
+{"text": "Encouraging the patient to consume potassium-rich foods", "is_correct": false},
+{"text": "Administering a potassium-containing intravenous solution", "is_correct": false}
+],
+"rationale": "Severe hyperkalaemia with ECG changes is a life-threatening emergency. Intravenous calcium gluconate stabilises the cardiac membrane, while additional measures such as insulin with glucose and potassium removal therapies are required to reduce serum potassium.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient receiving intravenous fluids develops increasing peripheral oedema, raised jugular venous pressure and bilateral basal crackles. Which explanation best accounts for these findings?",
+"choices": [
+{"text": "Reduced extracellular fluid volume", "is_correct": false},
+{"text": "Fluid volume excess resulting in increased intravascular and interstitial fluid", "is_correct": true},
+{"text": "Severe dehydration with reduced cardiac preload", "is_correct": false},
+{"text": "Isolated intracellular potassium depletion", "is_correct": false}
+],
+"rationale": "Peripheral oedema, elevated jugular venous pressure and pulmonary crackles are characteristic findings of fluid volume excess. The combination suggests increased circulating volume and pulmonary congestion, requiring prompt reassessment of fluid administration and cardiovascular status.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "Which of the following is the primary responsibility of the nurse during the preoperative phase?",
+"choices": [
+{"text": "To provide postoperative physiotherapy only", "is_correct": false},
+{"text": "To assess the patient's readiness for surgery and ensure appropriate preparation", "is_correct": true},
+{"text": "To independently determine the surgical procedure", "is_correct": false},
+{"text": "To administer all postoperative medications before surgery", "is_correct": false}
+],
+"rationale": "Preoperative nursing care involves assessing the patient's physical and psychological readiness for surgery. It includes verification of identity, consent, allergies, fasting status, investigations and appropriate patient education.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A patient scheduled for elective surgery informs the nurse that they ate a full meal two hours before the procedure. What should the nurse do?",
+"choices": [
+{"text": "Proceed with surgery because the patient has already arrived", "is_correct": false},
+{"text": "Inform the anaesthetic and surgical teams and follow their instructions regarding postponement or further management", "is_correct": true},
+{"text": "Induce vomiting to empty the stomach", "is_correct": false},
+{"text": "Administer oral fluids to dilute the stomach contents", "is_correct": false}
+],
+"rationale": "Recent food intake increases the risk of pulmonary aspiration during anaesthesia. The nurse must communicate the information to the anaesthetic and surgical teams so that the patient's aspiration risk and the appropriate timing of surgery can be assessed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "Which document provides evidence that a patient has received relevant information and voluntarily agreed to undergo a surgical procedure?",
+"choices": [
+{"text": "Nursing care plan", "is_correct": false},
+{"text": "Informed consent form", "is_correct": true},
+{"text": "Discharge summary", "is_correct": false},
+{"text": "Medication administration record", "is_correct": false}
+],
+"rationale": "An informed consent form documents the patient's voluntary agreement to a proposed procedure after receiving relevant information about its nature, benefits, risks and alternatives. The responsibility for explaining the procedure and obtaining consent rests with the appropriately authorised practitioner, while the nurse may witness the signature according to institutional policy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "During the intraoperative phase, which intervention is most important in preventing surgical site infection?",
+"choices": [
+{"text": "Maintaining strict aseptic technique", "is_correct": true},
+{"text": "Allowing unnecessary movement within the sterile field", "is_correct": false},
+{"text": "Reusing contaminated surgical instruments", "is_correct": false},
+{"text": "Leaving surgical wounds uncovered throughout the procedure", "is_correct": false}
+],
+"rationale": "Strict aseptic technique reduces the introduction of pathogenic microorganisms into the surgical wound. Sterile instruments, appropriate surgical hand antisepsis, sterile draping and controlled movement around the sterile field are essential infection prevention measures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A patient in the recovery room develops noisy breathing, falling oxygen saturation and reduced chest movement following general anaesthesia. What is the nurse's immediate priority?",
+"choices": [
+{"text": "Assess and maintain airway patency", "is_correct": true},
+{"text": "Offer the patient a meal", "is_correct": false},
+{"text": "Remove all monitoring equipment", "is_correct": false},
+{"text": "Encourage the patient to walk independently", "is_correct": false}
+],
+"rationale": "Noisy breathing and reduced oxygen saturation following anaesthesia may indicate upper airway obstruction caused by reduced muscle tone or retained secretions. Airway patency must be assessed and restored immediately while emergency assistance and further respiratory support are arranged.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A postoperative patient develops sudden tachycardia, hypotension, pallor and increasing drainage from the surgical wound. Which complication should the nurse suspect?",
+"choices": [
+{"text": "Postoperative haemorrhage", "is_correct": true},
+{"text": "Normal postoperative recovery", "is_correct": false},
+{"text": "Constipation", "is_correct": false},
+{"text": "Wound epithelialisation", "is_correct": false}
+],
+"rationale": "Tachycardia, hypotension, pallor and increased wound drainage may indicate significant postoperative blood loss. The nurse should urgently assess circulation, inspect the wound and drains, escalate the emergency and prepare for prescribed fluid or blood replacement.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing",
+"question_text": "A patient who underwent abdominal surgery complains of increasing abdominal pain and develops a rigid, distended abdomen with tachycardia. Which interpretation is most appropriate?",
+"choices": [
+{"text": "The patient is experiencing normal wound healing", "is_correct": false},
+{"text": "The patient may have developed an intra-abdominal complication requiring urgent assessment", "is_correct": true},
+{"text": "The patient is ready for discharge", "is_correct": false},
+{"text": "The symptoms indicate uncomplicated postoperative constipation", "is_correct": false}
+],
+"rationale": "Severe increasing abdominal pain, rigidity, distension and tachycardia are concerning for serious complications such as intra-abdominal haemorrhage, peritonitis or anastomotic leakage. Urgent surgical review and haemodynamic assessment are necessary rather than assuming the symptoms are part of normal recovery.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pain Management",
+"question_text": "Which of the following is regarded as the most reliable indicator of pain in a conscious patient who can communicate?",
+"choices": [
+{"text": "The patient's self-report of pain", "is_correct": true},
+{"text": "The patient's blood pressure alone", "is_correct": false},
+{"text": "The patient's facial appearance alone", "is_correct": false},
+{"text": "The nurse's personal judgement of the patient's discomfort", "is_correct": false}
+],
+"rationale": "Pain is a subjective experience, and the patient's self-report is the most reliable indicator when communication is possible. Physiological and behavioural indicators support assessment but cannot independently establish pain intensity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pain Management",
+"question_text": "A patient who underwent an appendicectomy reports pain intensity of 8/10 on a numerical rating scale. What should the nurse do?",
+"choices": [
+{"text": "Ignore the report because pain is expected after surgery", "is_correct": false},
+{"text": "Assess the pain further and administer the prescribed appropriate analgesic", "is_correct": true},
+{"text": "Encourage the patient to tolerate the pain without medication", "is_correct": false},
+{"text": "Withhold all analgesics until the next morning", "is_correct": false}
+],
+"rationale": "A pain score of 8/10 indicates severe pain requiring prompt assessment and intervention. The nurse should evaluate pain characteristics, administer appropriate prescribed analgesia, monitor the response and reassess pain intensity.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management",
+"question_text": "Which scale is commonly used to assess pain intensity in an adult patient who can communicate verbally?",
+"choices": [
+{"text": "Glasgow Coma Scale", "is_correct": false},
+{"text": "Numerical Rating Scale", "is_correct": true},
+{"text": "Braden Scale", "is_correct": false},
+{"text": "APGAR Score", "is_correct": false}
+],
+"rationale": "The Numerical Rating Scale allows patients to rate their pain, commonly from 0 to 10, where 0 represents no pain and 10 represents the worst imaginable pain. It is a simple and widely used method for assessing pain severity and monitoring treatment response.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pain Management",
+"question_text": "A patient with advanced cancer is receiving morphine for severe pain. Which adverse effect requires particular nursing monitoring?",
+"choices": [
+{"text": "Respiratory depression", "is_correct": true},
+{"text": "Increased appetite", "is_correct": false},
+{"text": "Hypertension", "is_correct": false},
+{"text": "Hyperactivity", "is_correct": false}
+],
+"rationale": "Morphine is an opioid analgesic that can cause respiratory depression, sedation, nausea and constipation. Respiratory rate, oxygenation and level of consciousness should be monitored, particularly after initiation or dose escalation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management",
+"question_text": "A patient with a painful diabetic foot ulcer reports severe pain despite receiving prescribed analgesia. Which nursing action is most appropriate?",
+"choices": [
+{"text": "Assume that the pain is psychological", "is_correct": false},
+{"text": "Reassess the pain, evaluate the response to treatment and report inadequate pain control for review", "is_correct": true},
+{"text": "Discontinue all wound care permanently", "is_correct": false},
+{"text": "Administer an additional opioid dose without checking the prescription", "is_correct": false}
+],
+"rationale": "Persistent severe pain may indicate inadequate analgesia, neuropathic pain or worsening tissue pathology. Comprehensive reassessment and communication with the healthcare team are necessary to optimise pain management safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management",
+"question_text": "Which non-pharmacological intervention may help reduce pain and anxiety in a patient undergoing a painful dressing change?",
+"choices": [
+{"text": "Guided relaxation and controlled breathing", "is_correct": true},
+{"text": "Increasing environmental noise", "is_correct": false},
+{"text": "Avoiding all communication with the patient", "is_correct": false},
+{"text": "Performing the procedure without warning", "is_correct": false}
+],
+"rationale": "Relaxation techniques and controlled breathing can reduce anxiety and improve the patient's ability to cope with procedural pain. These methods should complement, rather than replace, appropriate pharmacological analgesia when indicated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management",
+"question_text": "A postoperative patient receives intravenous morphine and subsequently becomes difficult to arouse, with a respiratory rate of 7 breaths/minute. What is the priority nursing action?",
+"choices": [
+{"text": "Allow the patient to sleep because this is an expected effect", "is_correct": false},
+{"text": "Stop further opioid administration, support airway and breathing, summon emergency assistance and prepare to administer naloxone as prescribed or under an approved emergency protocol", "is_correct": true},
+{"text": "Encourage the patient to take oral fluids", "is_correct": false},
+{"text": "Administer another dose of morphine to prevent pain", "is_correct": false}
+],
+"rationale": "Marked sedation and a respiratory rate of 7 breaths/minute indicate potentially life-threatening opioid-induced respiratory depression. Immediate airway and ventilatory support, emergency escalation and appropriate naloxone administration are required.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "What is the primary nursing priority when caring for an unconscious patient?",
+"choices": [
+{"text": "Maintaining airway patency", "is_correct": true},
+{"text": "Providing oral feeding", "is_correct": false},
+{"text": "Encouraging independent mobilisation", "is_correct": false},
+{"text": "Performing routine health education", "is_correct": false}
+],
+"rationale": "An unconscious patient may lose protective airway reflexes, placing them at risk of airway obstruction and aspiration. Airway assessment and maintenance are therefore the immediate priorities, followed by assessment of breathing and circulation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "A nurse is caring for an unconscious patient who is breathing spontaneously and has no suspected spinal injury. Which position is most appropriate to reduce the risk of aspiration?",
+"choices": [
+{"text": "Supine position with the head flat", "is_correct": false},
+{"text": "Lateral recovery position", "is_correct": true},
+{"text": "Trendelenburg position", "is_correct": false},
+{"text": "Prone position with the face pressed against the mattress", "is_correct": false}
+],
+"rationale": "The lateral recovery position helps maintain airway drainage and reduces the risk of aspiration in an unconscious patient who is breathing normally and has no contraindication to turning. If spinal injury is suspected, appropriate spinal precautions and a coordinated airway manoeuvre are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "Which nursing intervention is most important in preventing corneal injury in an unconscious patient?",
+"choices": [
+{"text": "Keeping the eyes continuously open", "is_correct": false},
+{"text": "Providing regular eye care and ensuring adequate corneal protection", "is_correct": true},
+{"text": "Applying alcohol-based antiseptic to the eyes", "is_correct": false},
+{"text": "Avoiding all eye assessment", "is_correct": false}
+],
+"rationale": "Unconscious patients may have reduced or absent blinking and incomplete eyelid closure, resulting in corneal drying and injury. Regular eye assessment, appropriate lubrication and protective measures help maintain corneal integrity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "An unconscious patient admitted following a road traffic accident has a GCS score of 6 and is unable to protect the airway. Which intervention should the nurse anticipate?",
+"choices": [
+{"text": "Oral administration of fluids", "is_correct": false},
+{"text": "Endotracheal intubation to secure and protect the airway", "is_correct": true},
+{"text": "Immediate oral feeding through a cup", "is_correct": false},
+{"text": "Discontinuation of oxygen therapy", "is_correct": false}
+],
+"rationale": "A GCS score of 8 or less generally indicates severe impairment of consciousness and raises significant concern about airway protection. Endotracheal intubation should be urgently considered by appropriately trained clinicians, with simultaneous management of oxygenation and possible cervical spine injury.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "Which intervention is most appropriate for preventing contractures in a patient who has remained unconscious for an extended period?",
+"choices": [
+{"text": "Maintaining the same body position throughout the day", "is_correct": false},
+{"text": "Performing appropriate passive range-of-motion exercises regularly", "is_correct": true},
+{"text": "Restricting all joint movement", "is_correct": false},
+{"text": "Keeping the limbs continuously extended without support", "is_correct": false}
+],
+"rationale": "Prolonged immobility can result in joint stiffness, muscle shortening and contracture formation. Regular passive range-of-motion exercises, appropriate positioning and physiotherapy help preserve joint mobility.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "An unconscious patient admitted with suspected hypoglycaemia has a blood glucose level of 2.1 mmol/L. Which intervention should the nurse anticipate?",
+"choices": [
+{"text": "Administering oral glucose immediately", "is_correct": false},
+{"text": "Administering intravenous dextrose according to the emergency protocol while maintaining airway protection", "is_correct": true},
+{"text": "Withholding all treatment until the patient regains consciousness", "is_correct": false},
+{"text": "Administering insulin to reduce blood glucose further", "is_correct": false}
+],
+"rationale": "Severe hypoglycaemia in an unconscious patient requires urgent glucose replacement, commonly with intravenous dextrose according to the applicable protocol. Oral glucose is contraindicated because the patient cannot protect the airway and may aspirate.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient",
+"question_text": "A patient with severe head injury develops unequal pupils, worsening bradycardia and irregular respirations. Which complication is the nurse most concerned about?",
+"choices": [
+{"text": "Uncomplicated dehydration", "is_correct": false},
+{"text": "Increasing intracranial pressure with possible brain herniation", "is_correct": true},
+{"text": "Mild postoperative nausea", "is_correct": false},
+{"text": "Peripheral muscle fatigue", "is_correct": false}
+],
+"rationale": "Unequal pupils, bradycardia and irregular respirations in a patient with severe head injury suggest serious neurological deterioration and possible brainstem compression. This is a life-threatening emergency requiring immediate escalation, airway support and urgent specialist management.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "Which of the following represents the correct principle of medication administration?",
+"choices": [
+{"text": "Administering medication based on the patient's appearance", "is_correct": false},
+{"text": "Following the rights of medication administration, including the right patient, medication, dose, route and time", "is_correct": true},
+{"text": "Administering medications without checking allergies", "is_correct": false},
+{"text": "Giving medication prescribed for another patient when necessary", "is_correct": false}
+],
+"rationale": "Safe medication administration requires systematic verification of the patient, medication, dose, route and timing, alongside other applicable medication safety rights. Nurses must also assess allergies, verify prescriptions and document administration accurately.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A nurse is preparing to administer intravenous potassium chloride to a patient with hypokalaemia. Which action is essential?",
+"choices": [
+{"text": "Administering potassium chloride as a rapid intravenous bolus", "is_correct": false},
+{"text": "Diluting the prescribed dose and administering it using an appropriate controlled infusion rate", "is_correct": true},
+{"text": "Mixing potassium chloride with any available intravenous medication", "is_correct": false},
+{"text": "Administering the medication without checking renal function", "is_correct": false}
+],
+"rationale": "Intravenous potassium chloride is a high-alert medication that must be appropriately diluted and administered at a controlled rate using an infusion pump where available. Rapid intravenous administration can cause fatal cardiac arrhythmias, and renal function and serum potassium require monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A nurse discovers that the wrong dose of an antihypertensive medication has been administered to a patient. What should the nurse do first?",
+"choices": [
+{"text": "Alter the medication chart to conceal the error", "is_correct": false},
+{"text": "Assess the patient immediately for adverse effects and initiate appropriate clinical management", "is_correct": true},
+{"text": "Wait until the next shift to inform the supervisor", "is_correct": false},
+{"text": "Discharge the patient before symptoms develop", "is_correct": false}
+],
+"rationale": "Patient safety is the immediate priority following a medication error. The nurse must assess the patient's condition, seek appropriate medical assistance, monitor for adverse effects and follow institutional procedures for reporting and documenting the incident.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "Which route of medication administration delivers a drug directly into the systemic circulation and produces an immediate bioavailability of 100%?",
+"choices": [
+{"text": "Oral route", "is_correct": false},
+{"text": "Subcutaneous route", "is_correct": false},
+{"text": "Intravenous route", "is_correct": true},
+{"text": "Intramuscular route", "is_correct": false}
+],
+"rationale": "Intravenous administration delivers medication directly into the bloodstream, providing 100% bioavailability. It produces rapid therapeutic effects but also increases the risk of immediate adverse reactions and requires careful monitoring.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A nurse is administering insulin to a patient with diabetes mellitus. Which practice is most important to prevent medication errors?",
+"choices": [
+{"text": "Estimating the insulin dose based on the patient's appetite", "is_correct": false},
+{"text": "Verifying the insulin type, prescribed dose, blood glucose level and administration instructions", "is_correct": true},
+{"text": "Using the same insulin syringe for multiple patients", "is_correct": false},
+{"text": "Administering insulin without checking the prescription", "is_correct": false}
+],
+"rationale": "Insulin is a high-alert medication because dosing errors can cause severe hypoglycaemia or hyperglycaemia. Verification of the insulin preparation, prescribed dose, blood glucose level and relevant meal timing is essential for safe administration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A patient receiving an intravenous antibiotic develops facial swelling, widespread urticaria, wheezing and hypotension shortly after the infusion begins. What is the most appropriate immediate nursing action?",
+"choices": [
+{"text": "Slow the infusion and continue observing the patient", "is_correct": false},
+{"text": "Stop the antibiotic infusion, summon emergency assistance and initiate anaphylaxis management according to protocol", "is_correct": true},
+{"text": "Administer the next antibiotic dose orally", "is_correct": false},
+{"text": "Encourage the patient to walk to improve circulation", "is_correct": false}
+],
+"rationale": "The combination of urticaria, facial swelling, wheezing and hypotension indicates anaphylaxis, a life-threatening systemic hypersensitivity reaction. The suspected medication must be stopped, emergency assistance activated and intramuscular adrenaline administered promptly according to the anaphylaxis protocol, alongside airway and circulatory support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A patient receiving warfarin for thromboembolic disease develops bleeding gums, haematuria and an unusually high international normalised ratio (INR). Which interpretation is most appropriate?",
+"choices": [
+{"text": "The patient is experiencing inadequate anticoagulation", "is_correct": false},
+{"text": "The patient may have excessive anticoagulation and an increased risk of haemorrhage", "is_correct": true},
+{"text": "The patient has developed hypoglycaemia", "is_correct": false},
+{"text": "The medication is producing its normal therapeutic effect without complications", "is_correct": false}
+],
+"rationale": "Warfarin increases anticoagulation by interfering with vitamin K-dependent clotting factor synthesis. A high INR accompanied by bleeding suggests excessive anticoagulant effect and requires urgent assessment, withholding further doses pending clinical review and appropriate management.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
