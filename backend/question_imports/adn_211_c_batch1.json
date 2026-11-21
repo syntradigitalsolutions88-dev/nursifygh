@@ -1,0 +1,718 @@
+{
+"courses": [
+{
+"course_code": "ADN-211-C",
+"course_title": "Advanced Nursing II",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"Advanced Nursing Assessment in the Community",
+"Critical Care Basics for CHNs (Stabilization and Referral)",
+"Advanced Wound Management in the Home",
+"Fluid and Electrolyte Balance",
+"Perioperative Nursing (Community Follow-up)",
+"Pain Management",
+"Care of the Unconscious Patient (Community Stabilization)",
+"Advanced Medication Administration"
+],
+"questions": [
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "What is the primary purpose of conducting a comprehensive nursing assessment during a community health visit?",
+"choices": [
+{"text": "To identify health needs, risk factors and existing conditions requiring intervention", "is_correct": true},
+{"text": "To establish a diagnosis without involving other healthcare professionals", "is_correct": false},
+{"text": "To determine the patient's ability to pay for healthcare", "is_correct": false},
+{"text": "To replace all investigations conducted at a health facility", "is_correct": false}
+],
+"rationale": "A comprehensive assessment helps the community health nurse identify the patient's health status, risk factors and care needs. The findings guide appropriate interventions, health education and referral where necessary.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "Which component of the primary survey is most directly concerned with identifying life-threatening respiratory problems?",
+"choices": [
+{"text": "Disability", "is_correct": false},
+{"text": "Airway", "is_correct": false},
+{"text": "Breathing", "is_correct": true},
+{"text": "Exposure", "is_correct": false}
+],
+"rationale": "The breathing component of the ABCDE assessment evaluates respiratory rate, effort, chest movement and oxygenation. It helps identify respiratory compromise requiring immediate intervention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "Which information is most important when assessing a patient's pain using a standard pain assessment tool?",
+"choices": [
+{"text": "The patient's occupation only", "is_correct": false},
+{"text": "Pain intensity, location, duration, character and aggravating or relieving factors", "is_correct": true},
+{"text": "The patient's preferred hospital", "is_correct": false},
+{"text": "The number of relatives accompanying the patient", "is_correct": false}
+],
+"rationale": "A structured pain assessment considers intensity, location, onset, duration, character and factors that worsen or relieve the pain. These details help guide appropriate treatment and evaluation of response.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "In the initial assessment of a critically ill patient, what does the acronym ABC primarily represent?",
+"choices": [
+{"text": "Assessment, Blood pressure and Circulation", "is_correct": false},
+{"text": "Airway, Breathing and Circulation", "is_correct": true},
+{"text": "Alertness, Behaviour and Consciousness", "is_correct": false},
+{"text": "Airway, Blood glucose and Communication", "is_correct": false}
+],
+"rationale": "ABC stands for Airway, Breathing and Circulation. These are immediate priorities because airway obstruction, respiratory failure and circulatory compromise can rapidly become fatal.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "Which finding is most suggestive of shock in a patient assessed at a CHPS compound?",
+"choices": [
+{"text": "Warm extremities and normal mental status", "is_correct": false},
+{"text": "Hypotension, weak rapid pulse and altered mental status", "is_correct": true},
+{"text": "Normal capillary refill and adequate urine output", "is_correct": false},
+{"text": "Mild thirst after physical activity", "is_correct": false}
+],
+"rationale": "Shock is a state of inadequate tissue perfusion and may present with hypotension, tachycardia, weak pulses, altered consciousness and reduced urine output. It requires urgent assessment, appropriate initial management and referral.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management in the Home",
+"question_text": "Which of the following is a cardinal local sign of wound infection?",
+"choices": [
+{"text": "Reduced wound temperature", "is_correct": false},
+{"text": "Increasing redness, warmth, swelling and purulent discharge", "is_correct": true},
+{"text": "Gradual reduction in wound size", "is_correct": false},
+{"text": "Formation of healthy granulation tissue", "is_correct": false}
+],
+"rationale": "Local wound infection commonly presents with increasing erythema, warmth, swelling, pain and purulent discharge. Delayed healing or wound breakdown may also indicate infection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Wound Management in the Home",
+"question_text": "Which wound-healing phase is characterised by the formation of new blood vessels and granulation tissue?",
+"choices": [
+{"text": "Haemostasis", "is_correct": false},
+{"text": "Inflammatory phase", "is_correct": false},
+{"text": "Proliferative phase", "is_correct": true},
+{"text": "Maturation phase", "is_correct": false}
+],
+"rationale": "The proliferative phase involves angiogenesis, fibroblast activity, collagen deposition and granulation tissue formation. These processes help fill the wound and support epithelialisation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which electrolyte is primarily responsible for maintaining the resting membrane potential and is especially important for cardiac rhythm?",
+"choices": [
+{"text": "Potassium", "is_correct": true},
+{"text": "Iron", "is_correct": false},
+{"text": "Iodine", "is_correct": false},
+{"text": "Phosphate only", "is_correct": false}
+],
+"rationale": "Potassium is the major intracellular cation and plays a central role in neuromuscular function and cardiac electrical activity. Abnormal potassium levels can cause serious cardiac arrhythmias.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "Which clinical sign is commonly associated with dehydration?",
+"choices": [
+{"text": "Moist mucous membranes and increased skin turgor", "is_correct": false},
+{"text": "Dry mucous membranes and reduced urine output", "is_correct": true},
+{"text": "Excessive peripheral oedema in every case", "is_correct": false},
+{"text": "Increased urine production with pale urine", "is_correct": false}
+],
+"rationale": "Dehydration may cause dry mucous membranes, thirst, reduced urine output, tachycardia and poor skin turgor. The severity of dehydration is determined by considering the overall clinical assessment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perioperative Nursing (Community Follow-up)",
+"question_text": "What is the main purpose of postoperative follow-up by a community health nurse?",
+"choices": [
+{"text": "To replace the surgeon's responsibility for postoperative review", "is_correct": false},
+{"text": "To monitor recovery, identify complications early and support continuity of care", "is_correct": true},
+{"text": "To remove all surgical sutures regardless of the prescribed schedule", "is_correct": false},
+{"text": "To discontinue prescribed medication once the patient returns home", "is_correct": false}
+],
+"rationale": "Postoperative community follow-up supports recovery through wound assessment, medication adherence, health education and early recognition of complications. Findings requiring specialist attention should be referred promptly.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Perioperative Nursing (Community Follow-up)",
+"question_text": "Which postoperative finding requires urgent clinical assessment?",
+"choices": [
+{"text": "Mild incisional discomfort that improves with prescribed analgesia", "is_correct": false},
+{"text": "Increasing wound redness, purulent discharge and fever", "is_correct": true},
+{"text": "Gradual improvement in mobility", "is_correct": false},
+{"text": "A small amount of expected bruising around the incision", "is_correct": false}
+],
+"rationale": "Increasing redness, purulent discharge and fever may indicate a surgical site infection. Prompt assessment and referral are important to prevent progression to serious infection or sepsis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Pain Management",
+"question_text": "Which principle should guide the selection of a pain management intervention?",
+"choices": [
+{"text": "All patients should receive the same analgesic dose", "is_correct": false},
+{"text": "Pain management should be individualised according to assessment findings and patient factors", "is_correct": true},
+{"text": "Pain should be treated only when it becomes unbearable", "is_correct": false},
+{"text": "Non-pharmacological interventions should never be used", "is_correct": false}
+],
+"rationale": "Pain management should be individualised according to pain severity, cause, patient history and available treatment options. Both pharmacological and appropriate non-pharmacological interventions may be used.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Unconscious Patient (Community Stabilization)",
+"question_text": "What is the most immediate concern when assessing an unconscious patient?",
+"choices": [
+{"text": "The patient's ability to communicate", "is_correct": false},
+{"text": "Airway patency and adequate breathing", "is_correct": true},
+{"text": "The patient's dietary preferences", "is_correct": false},
+{"text": "The patient's ability to walk independently", "is_correct": false}
+],
+"rationale": "An unconscious patient may lose protective airway reflexes and develop airway obstruction or aspiration. Airway and breathing must therefore be assessed and supported immediately.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Unconscious Patient (Community Stabilization)",
+"question_text": "Which position is generally appropriate for an unconscious patient who is breathing normally and has no suspected spinal injury?",
+"choices": [
+{"text": "Supine with the head flexed forward", "is_correct": false},
+{"text": "Recovery position with the airway maintained", "is_correct": true},
+{"text": "Prone with the face pressed against the surface", "is_correct": false},
+{"text": "Sitting upright without support", "is_correct": false}
+],
+"rationale": "The recovery position helps maintain airway patency and allows fluids to drain from the mouth in an unconscious patient who is breathing normally. Suspected spinal injury requires appropriate precautions and airway management without unnecessary movement.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "Which medication administration principle requires the nurse to verify that the medication is being given to the intended patient?",
+"choices": [
+{"text": "Right route", "is_correct": false},
+{"text": "Right patient", "is_correct": true},
+{"text": "Right documentation", "is_correct": false},
+{"text": "Right response", "is_correct": false}
+],
+"rationale": "The right patient principle requires reliable identification before medication administration. Nurses should use approved patient identifiers rather than relying solely on bed or room numbers.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "Which action is most appropriate when a nurse identifies an allergy to a prescribed medication?",
+"choices": [
+{"text": "Administer a reduced dose without consultation", "is_correct": false},
+{"text": "Withhold the medication, assess the patient and clarify the prescription with the prescriber", "is_correct": true},
+{"text": "Ask the patient to take the medication with food", "is_correct": false},
+{"text": "Ignore the allergy if the medication has been prescribed", "is_correct": false}
+],
+"rationale": "A known medication allergy creates a risk of an adverse reaction, including potentially life-threatening anaphylaxis. The nurse should not administer the medication until the allergy and prescription have been appropriately reviewed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "During a home visit, a nurse assesses an older adult who reports dizziness when standing. The patient takes several antihypertensive medications. What should the nurse assess first?",
+"choices": [
+{"text": "The patient's preferred sleeping position", "is_correct": false},
+{"text": "Blood pressure in appropriate positions, pulse and associated symptoms", "is_correct": true},
+{"text": "The patient's monthly household expenditure", "is_correct": false},
+{"text": "The patient's ability to prepare meals", "is_correct": false}
+],
+"rationale": "Postural dizziness in a patient taking antihypertensive medication may indicate orthostatic hypotension. Assessment of blood pressure changes, pulse, medication use and fall risk helps identify the cause and guide appropriate action.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "A CHN conducts a home visit and finds a pregnant woman with severe headache, blurred vision and facial swelling. What is the priority action?",
+"choices": [
+{"text": "Advise her to rest and return during the next routine antenatal visit", "is_correct": false},
+{"text": "Arrange urgent assessment and referral to an appropriate health facility for possible pre-eclampsia", "is_correct": true},
+{"text": "Recommend increased salt intake", "is_correct": false},
+{"text": "Provide only oral analgesics and end the visit", "is_correct": false}
+],
+"rationale": "Severe headache and visual disturbance during pregnancy may indicate severe pre-eclampsia, a potentially life-threatening condition. The nurse should arrange urgent referral and avoid delaying definitive assessment and management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "During a community assessment, a nurse finds that a child has lost weight over two consecutive visits. What is the most appropriate action?",
+"choices": [
+{"text": "Record the weight and wait until the next annual assessment", "is_correct": false},
+{"text": "Assess nutritional intake, illness history and growth measurements, then plan appropriate intervention or referral", "is_correct": true},
+{"text": "Immediately classify the child as having severe acute malnutrition without further assessment", "is_correct": false},
+{"text": "Advise the caregiver to stop breastfeeding", "is_correct": false}
+],
+"rationale": "Repeated weight loss may indicate growth faltering, inadequate nutrition or underlying illness. The nurse should assess the child's growth trend, feeding practices and clinical condition before planning management or referral.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A patient at a CHPS compound suddenly develops severe difficulty breathing, cyanosis and inability to speak in full sentences. What should the nurse do first?",
+"choices": [
+{"text": "Complete the patient's registration before providing care", "is_correct": false},
+{"text": "Assess and support the airway and breathing, provide oxygen if available and indicated, and arrange emergency referral", "is_correct": true},
+{"text": "Give oral fluids to improve circulation", "is_correct": false},
+{"text": "Ask the patient to walk around to improve ventilation", "is_correct": false}
+],
+"rationale": "Severe respiratory distress and cyanosis indicate potentially life-threatening respiratory compromise. Immediate airway and breathing support, appropriate oxygen therapy and urgent referral are priorities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A patient with suspected severe malaria arrives at a CHPS compound with altered consciousness and repeated convulsions. Which action is the priority?",
+"choices": [
+{"text": "Give oral antimalarial medication immediately while the patient is unconscious", "is_correct": false},
+{"text": "Protect the airway, manage the convulsions according to protocol and arrange urgent referral", "is_correct": true},
+{"text": "Allow the patient to sleep until the convulsions stop", "is_correct": false},
+{"text": "Send the patient home with oral fluids", "is_correct": false}
+],
+"rationale": "Altered consciousness and repeated convulsions are danger signs that may indicate severe malaria or another serious neurological condition. The nurse should provide immediate stabilisation, avoid oral medication in an unconscious patient and arrange urgent transfer for definitive management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A patient with profuse diarrhoea presents with lethargy, sunken eyes, inability to drink and a very slowly returning skin pinch. What is the most appropriate action?",
+"choices": [
+{"text": "Manage the patient at home with plain water only", "is_correct": false},
+{"text": "Recognise severe dehydration, initiate appropriate emergency rehydration according to protocol and arrange urgent referral", "is_correct": true},
+{"text": "Administer an antidiarrhoeal drug and observe for 24 hours", "is_correct": false},
+{"text": "Withhold all fluids until the diarrhoea stops", "is_correct": false}
+],
+"rationale": "The findings are consistent with severe dehydration and require urgent treatment. Appropriate intravenous rehydration and close monitoring should be initiated according to protocol, with urgent referral to a facility capable of providing definitive care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A patient collapses at a community health facility, is unresponsive and is not breathing normally. What should the nurse do?",
+"choices": [
+{"text": "Place the patient in the recovery position and leave to call a relative", "is_correct": false},
+{"text": "Activate emergency assistance, begin cardiopulmonary resuscitation and use an automated external defibrillator if available", "is_correct": true},
+{"text": "Give the patient oral glucose", "is_correct": false},
+{"text": "Wait for a clinician before starting any resuscitation", "is_correct": false}
+],
+"rationale": "An unresponsive patient who is not breathing normally should be treated as being in cardiac arrest. Prompt activation of emergency response, high-quality CPR and early defibrillation when available improve the chance of survival.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A patient sustains a deep cut to the forearm with continuous heavy bleeding during a home visit. What is the priority nursing action?",
+"choices": [
+{"text": "Wash the wound repeatedly before controlling the bleeding", "is_correct": false},
+{"text": "Apply firm direct pressure with an appropriate dressing and arrange urgent transfer if bleeding is severe or uncontrolled", "is_correct": true},
+{"text": "Apply herbal preparations to the wound", "is_correct": false},
+{"text": "Allow the wound to bleed to remove contaminants", "is_correct": false}
+],
+"rationale": "Severe external bleeding requires immediate haemorrhage control, usually through firm direct pressure with an appropriate dressing. Uncontrolled bleeding requires urgent referral and further emergency management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management in the Home",
+"question_text": "During a home visit, a nurse finds a patient with a pressure injury over the sacrum. The surrounding skin is intact, but the area is persistently red and does not blanch when pressed. How should this finding be interpreted?",
+"choices": [
+{"text": "Stage 1 pressure injury", "is_correct": true},
+{"text": "Stage 2 pressure injury", "is_correct": false},
+{"text": "Stage 3 pressure injury", "is_correct": false},
+{"text": "Unstageable pressure injury", "is_correct": false}
+],
+"rationale": "A Stage 1 pressure injury presents as intact skin with persistent non-blanchable erythema. Pressure relief, skin protection and regular reassessment are necessary to prevent deterioration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management in the Home",
+"question_text": "A CHN is changing a dressing for a patient with a chronic leg ulcer at home. Which action best reduces the risk of wound contamination?",
+"choices": [
+{"text": "Reuse the same dressing materials for several patients", "is_correct": false},
+{"text": "Perform hand hygiene and use appropriate aseptic technique and clean or sterile supplies as indicated", "is_correct": true},
+{"text": "Touch the wound bed with bare hands after removing the old dressing", "is_correct": false},
+{"text": "Place used dressing materials on the patient's bed", "is_correct": false}
+],
+"rationale": "Hand hygiene and appropriate aseptic wound-care technique reduce the risk of introducing microorganisms into the wound. Dressing selection and technique should reflect the wound type, clinical condition and available infection-prevention guidance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management in the Home",
+"question_text": "A patient with diabetes has a foot ulcer with foul-smelling discharge, surrounding redness and fever. What is the most appropriate action?",
+"choices": [
+{"text": "Continue routine home dressing changes without further assessment", "is_correct": false},
+{"text": "Arrange urgent clinical assessment and referral because of suspected wound infection", "is_correct": true},
+{"text": "Apply a tight bandage to prevent further discharge", "is_correct": false},
+{"text": "Advise the patient to walk more to improve circulation", "is_correct": false}
+],
+"rationale": "Fever, malodour and surrounding erythema suggest an infected diabetic foot ulcer, which can progress rapidly to serious complications. Urgent assessment is needed to evaluate infection severity, circulation and the need for antimicrobial or specialist treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Wound Management in the Home",
+"question_text": "A bedridden patient has a pressure injury and limited ability to reposition independently. Which intervention is most appropriate?",
+"choices": [
+{"text": "Massage the reddened bony areas vigorously", "is_correct": false},
+{"text": "Develop an individualised repositioning plan, use pressure-redistributing support and maintain skin hygiene", "is_correct": true},
+{"text": "Keep the patient in the same position to avoid discomfort", "is_correct": false},
+{"text": "Apply adhesive tape directly over the injured area", "is_correct": false}
+],
+"rationale": "Pressure injury prevention and management require pressure redistribution, regular repositioning and protection of the skin. Vigorous massage over pressure-damaged areas may cause further tissue injury and should be avoided.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with persistent vomiting reports weakness and muscle cramps. Which electrolyte disturbance should the nurse consider?",
+"choices": [
+{"text": "Hypokalaemia", "is_correct": true},
+{"text": "Hypercalcaemia only", "is_correct": false},
+{"text": "Hypernatraemia in every case", "is_correct": false},
+{"text": "Hypermagnesaemia only", "is_correct": false}
+],
+"rationale": "Persistent vomiting can contribute to potassium loss and hypokalaemia. Weakness, muscle cramps and cardiac rhythm abnormalities may occur, so clinical assessment and electrolyte testing may be required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with severe dehydration is receiving intravenous fluids at a district hospital. Which parameter is particularly useful for evaluating renal perfusion and response to fluid replacement?",
+"choices": [
+{"text": "Hair colour", "is_correct": false},
+{"text": "Urine output", "is_correct": true},
+{"text": "Nail length", "is_correct": false},
+{"text": "Appetite alone", "is_correct": false}
+],
+"rationale": "Urine output provides useful information about renal perfusion and fluid balance. It should be interpreted alongside blood pressure, pulse, mental status, fluid intake and other clinical findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with heart failure develops increasing bilateral leg oedema and breathlessness after receiving excessive intravenous fluids. What is the most appropriate nursing action?",
+"choices": [
+{"text": "Increase the infusion rate to improve circulation", "is_correct": false},
+{"text": "Assess respiratory status and fluid balance, promptly report suspected fluid overload and follow the prescribed management plan", "is_correct": true},
+{"text": "Encourage unlimited oral fluid intake", "is_correct": false},
+{"text": "Ignore the oedema because it is expected in all hospital patients", "is_correct": false}
+],
+"rationale": "Increasing oedema and breathlessness may indicate fluid overload and worsening heart failure. The nurse should assess for respiratory compromise, review fluid administration and promptly escalate the findings for clinical review.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with prolonged diarrhoea develops dizziness, dry mucous membranes and reduced urine output. Which intervention is most appropriate if the patient is alert and able to drink without severe dehydration?",
+"choices": [
+{"text": "Administer oral rehydration solution according to the recommended protocol and monitor the response", "is_correct": true},
+{"text": "Withhold all oral fluids until bowel movements stop", "is_correct": false},
+{"text": "Give concentrated salt water without measuring its composition", "is_correct": false},
+{"text": "Administer a diuretic to increase urine production", "is_correct": false}
+],
+"rationale": "Oral rehydration solution replaces water and electrolytes lost through diarrhoea and is appropriate for patients who can drink and do not have severe dehydration. The nurse should monitor hydration and refer if danger signs or deterioration occur.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing (Community Follow-up)",
+"question_text": "A patient discharged after abdominal surgery reports severe abdominal pain, persistent vomiting and increasing abdominal distension during a home visit. What should the nurse do?",
+"choices": [
+{"text": "Reassure the patient that these findings are always normal after surgery", "is_correct": false},
+{"text": "Arrange urgent assessment at an appropriate hospital because a serious postoperative complication may be present", "is_correct": true},
+{"text": "Recommend a heavy meal to stimulate bowel activity", "is_correct": false},
+{"text": "Advise the patient to stop all prescribed medication without consultation", "is_correct": false}
+],
+"rationale": "Severe abdominal pain, persistent vomiting and distension may indicate postoperative ileus, obstruction or another serious complication. Urgent hospital assessment is required rather than routine home management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing (Community Follow-up)",
+"question_text": "A patient who recently underwent surgery asks when the surgical wound dressing should be changed. What should the community health nurse do?",
+"choices": [
+{"text": "Change it every hour regardless of the wound condition", "is_correct": false},
+{"text": "Follow the discharge instructions and assess the wound, changing the dressing according to clinical need and applicable protocol", "is_correct": true},
+{"text": "Remove the dressing permanently to expose the wound to air", "is_correct": false},
+{"text": "Apply any available topical substance to keep the wound moist", "is_correct": false}
+],
+"rationale": "Postoperative dressing care should follow the surgical team's instructions and appropriate wound-care principles. The nurse should assess the wound and identify signs of infection, bleeding or dehiscence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Perioperative Nursing (Community Follow-up)",
+"question_text": "A patient who underwent lower-limb surgery is reluctant to perform prescribed mobility exercises because of fear of pain. What is the best nursing response?",
+"choices": [
+{"text": "Force the patient to walk without assessing the pain", "is_correct": false},
+{"text": "Assess the pain, explain the benefits of prescribed mobilisation and coordinate appropriate analgesia and support", "is_correct": true},
+{"text": "Advise complete bed rest until all pain disappears", "is_correct": false},
+{"text": "Discontinue the rehabilitation plan permanently", "is_correct": false}
+],
+"rationale": "Appropriate mobilisation can reduce postoperative complications and support recovery when clinically indicated. Pain should be assessed and managed so that the patient can participate safely in the prescribed rehabilitation plan.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management",
+"question_text": "A patient with chronic osteoarthritis reports persistent pain that interferes with sleep and daily activities. Which nursing intervention is most appropriate?",
+"choices": [
+{"text": "Assess pain and functional limitations, support the prescribed treatment plan and discuss suitable non-pharmacological measures", "is_correct": true},
+{"text": "Tell the patient that chronic pain is unavoidable and requires no management", "is_correct": false},
+{"text": "Recommend taking increasing doses of analgesics without clinical review", "is_correct": false},
+{"text": "Advise the patient to avoid all movement indefinitely", "is_correct": false}
+],
+"rationale": "Chronic pain management should address pain intensity, function, sleep and quality of life. A combination of prescribed medication, appropriate physical activity and other non-pharmacological strategies may improve outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management",
+"question_text": "A patient reports severe pain despite receiving the prescribed analgesic. What should the nurse do next?",
+"choices": [
+{"text": "Repeat the dose immediately without checking the prescription", "is_correct": false},
+{"text": "Reassess the pain, review the medication administration record and escalate for clinical review", "is_correct": true},
+{"text": "Tell the patient to tolerate the pain until the next appointment", "is_correct": false},
+{"text": "Administer another patient's analgesic", "is_correct": false}
+],
+"rationale": "Persistent severe pain requires reassessment of the cause, intensity and response to treatment. The nurse should check the prescribed dose and timing and seek clinical review rather than giving an unauthorised additional dose.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Pain Management",
+"question_text": "A CHN is caring for an older adult who has difficulty describing pain verbally. Which approach is most appropriate?",
+"choices": [
+{"text": "Assume that the patient has no pain because there is no verbal complaint", "is_correct": false},
+{"text": "Use an appropriate validated pain assessment tool and observe behavioural indicators", "is_correct": true},
+{"text": "Ask only the patient's neighbour to estimate the pain", "is_correct": false},
+{"text": "Administer a strong analgesic without assessment", "is_correct": false}
+],
+"rationale": "Patients who cannot communicate pain clearly may express it through facial expressions, guarding, agitation or changes in behaviour. An appropriate assessment tool and clinical observation help guide safe pain management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient (Community Stabilization)",
+"question_text": "During a home visit, a nurse finds an unconscious patient who is breathing spontaneously. The patient has no obvious signs of trauma. What should the nurse do?",
+"choices": [
+{"text": "Give the patient water to assess swallowing", "is_correct": false},
+{"text": "Maintain the airway, place the patient in the recovery position where appropriate, assess vital signs and arrange urgent referral", "is_correct": true},
+{"text": "Leave the patient alone while searching for medication", "is_correct": false},
+{"text": "Attempt to make the patient stand", "is_correct": false}
+],
+"rationale": "An unconscious patient requires immediate airway protection and assessment of breathing and circulation. Oral fluids must not be given because of aspiration risk, and urgent referral is required to identify and treat the cause.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient (Community Stabilization)",
+"question_text": "A patient with diabetes is found unconscious at home. A glucometer reading indicates severe hypoglycaemia. The patient cannot swallow safely. What should the nurse do?",
+"choices": [
+{"text": "Give sugar solution by mouth", "is_correct": false},
+{"text": "Protect the airway, administer an appropriate emergency glucose treatment through an authorised route if available and arrange urgent referral", "is_correct": true},
+{"text": "Wait until the patient regains consciousness before taking action", "is_correct": false},
+{"text": "Give the patient's usual insulin dose", "is_correct": false}
+],
+"rationale": "Severe hypoglycaemia in an unconscious patient is a medical emergency. Oral glucose is unsafe when swallowing is impaired; appropriate emergency treatment and urgent referral are required.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Unconscious Patient (Community Stabilization)",
+"question_text": "A nurse finds an unconscious patient after a road traffic accident. The patient is breathing, but a spinal injury is suspected. What is the most appropriate action?",
+"choices": [
+{"text": "Turn the patient's head sharply to one side", "is_correct": false},
+{"text": "Maintain airway patency while minimising spinal movement and arranging emergency transfer", "is_correct": true},
+{"text": "Sit the patient upright and encourage walking", "is_correct": false},
+{"text": "Remove any cervical support before assessment", "is_correct": false}
+],
+"rationale": "Suspected spinal injury requires careful airway management while minimising unnecessary movement of the head and neck. The patient needs urgent transfer for further assessment and definitive management.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A nurse is preparing an injectable medication for a child. The prescription is expressed in milligrams per kilogram, but the child's weight is recorded in pounds. What should the nurse do?",
+"choices": [
+{"text": "Use the numerical weight in pounds as if it were kilograms", "is_correct": false},
+{"text": "Convert the weight accurately into kilograms, calculate the dose and independently verify the calculation according to policy", "is_correct": true},
+{"text": "Estimate the dose based on the child's age alone", "is_correct": false},
+{"text": "Administer the standard adult dose divided by two", "is_correct": false}
+],
+"rationale": "Weight-based paediatric medication calculations require the patient's weight in kilograms. Accurate conversion, dose-range verification and appropriate independent checks reduce the risk of potentially serious medication errors.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A patient at a CHPS compound is prescribed an oral medication but vomits shortly after taking it. What should the nurse do?",
+"choices": [
+{"text": "Automatically repeat the full dose", "is_correct": false},
+{"text": "Assess the patient, establish the timing and circumstances of vomiting, and seek appropriate clinical guidance before repeating the dose", "is_correct": true},
+{"text": "Double the next scheduled dose", "is_correct": false},
+{"text": "Stop all medications permanently", "is_correct": false}
+],
+"rationale": "Whether a dose should be repeated depends on the medication, formulation, timing and clinical circumstances. Automatic redosing may cause overdose, so the nurse should seek appropriate guidance and document the event.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A nurse notices that a prescribed antibiotic dose appears higher than the recommended dose range for the patient. What should the nurse do?",
+"choices": [
+{"text": "Administer it because the prescriber is always correct", "is_correct": false},
+{"text": "Withhold the dose pending clarification with the authorised prescriber or pharmacist", "is_correct": true},
+{"text": "Reduce the dose independently without informing anyone", "is_correct": false},
+{"text": "Ask the patient to decide the dose", "is_correct": false}
+],
+"rationale": "A potentially excessive dose creates a risk of medication-related harm. The nurse should clarify the prescription before administration and follow medication safety procedures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A patient receiving an injectable medication develops facial swelling, wheezing and difficulty breathing. What is the priority nursing action?",
+"choices": [
+{"text": "Continue the medication slowly and observe", "is_correct": false},
+{"text": "Stop administration, activate emergency assistance and initiate anaphylaxis management according to protocol", "is_correct": true},
+{"text": "Give the patient oral fluids", "is_correct": false},
+{"text": "Ask the patient to return the following day", "is_correct": false}
+],
+"rationale": "Facial swelling and wheezing after medication administration suggest anaphylaxis, a life-threatening emergency. The suspected trigger should be stopped and emergency treatment, including intramuscular adrenaline according to protocol, should be initiated without delay.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "A nurse assesses a patient with fever, severe headache, neck stiffness and altered mental status at a community facility. What is the priority action?",
+"choices": [
+{"text": "Treat the patient as having a minor febrile illness and arrange routine review", "is_correct": false},
+{"text": "Recognise possible meningitis or another serious neurological infection and arrange urgent referral", "is_correct": true},
+{"text": "Advise the patient to sleep at home for several hours", "is_correct": false},
+{"text": "Administer oral fluids and discharge the patient", "is_correct": false}
+],
+"rationale": "Fever, neck stiffness, severe headache and altered mental status are concerning for meningitis or another serious neurological condition. Urgent assessment and referral are necessary because deterioration can be rapid.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A CHN assesses four patients at a community outreach point. Which patient should receive immediate attention?",
+"choices": [
+{"text": "A patient with a mild cough and normal breathing", "is_correct": false},
+{"text": "A patient with severe respiratory distress, cyanosis and reduced level of consciousness", "is_correct": true},
+{"text": "A patient with a small superficial wound and controlled bleeding", "is_correct": false},
+{"text": "A patient requesting a routine blood pressure check", "is_correct": false}
+],
+"rationale": "Severe respiratory distress, cyanosis and reduced consciousness indicate an immediate threat to life. Airway and breathing support, emergency response and urgent referral take priority over routine care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A patient with suspected sepsis at a CHPS compound has a high temperature, rapid breathing, hypotension and confusion. Which management approach is most appropriate?",
+"choices": [
+{"text": "Provide antipyretics and send the patient home", "is_correct": false},
+{"text": "Recognise possible sepsis with circulatory compromise, initiate appropriate stabilisation and arrange urgent hospital referral", "is_correct": true},
+{"text": "Wait for laboratory confirmation before taking any action", "is_correct": false},
+{"text": "Encourage the patient to walk to improve circulation", "is_correct": false}
+],
+"rationale": "The combination of suspected infection, hypotension, rapid breathing and confusion suggests possible sepsis with organ dysfunction. Emergency stabilisation and urgent referral are essential; treatment should not be delayed while waiting for laboratory confirmation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Wound Management in the Home",
+"question_text": "A patient with a chronic lower-limb ulcer has increasing pain, spreading redness, fever and rapidly worsening tissue damage. The family requests that the nurse continue the usual home dressing routine. What is the best decision?",
+"choices": [
+{"text": "Continue routine dressings because chronic wounds commonly become painful", "is_correct": false},
+{"text": "Arrange urgent hospital assessment because the findings suggest a spreading infection or serious complication", "is_correct": true},
+{"text": "Apply a tight compression bandage without assessing circulation", "is_correct": false},
+{"text": "Use leftover antibiotics from another household member", "is_correct": false}
+],
+"rationale": "Spreading erythema, fever, increasing pain and tissue deterioration suggest a potentially serious wound infection. Routine home care is insufficient, and urgent assessment is required to determine the need for systemic treatment or specialist intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with chronic kidney disease presents with muscle weakness and palpitations. The laboratory report shows markedly elevated serum potassium. Which complication is the nurse most concerned about?",
+"choices": [
+{"text": "Life-threatening cardiac arrhythmia", "is_correct": true},
+{"text": "Improved cardiac conduction", "is_correct": false},
+{"text": "Increased blood clotting due to low potassium", "is_correct": false},
+{"text": "Permanent improvement in renal function", "is_correct": false}
+],
+"rationale": "Severe hyperkalaemia can disrupt cardiac electrical conduction and cause life-threatening arrhythmias or cardiac arrest. The patient requires urgent clinical assessment, cardiac monitoring and treatment according to protocol.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Fluid and Electrolyte Balance",
+"question_text": "A patient with severe diarrhoea is receiving fluid replacement. The nurse observes increasing breathlessness, new crackles on lung auscultation and worsening peripheral oedema. What is the most appropriate interpretation?",
+"choices": [
+{"text": "The patient is responding normally to rehydration", "is_correct": false},
+{"text": "The patient may be developing fluid overload and requires immediate reassessment", "is_correct": true},
+{"text": "The findings confirm that more intravenous fluid is required", "is_correct": false},
+{"text": "The findings are unrelated to fluid administration", "is_correct": false}
+],
+"rationale": "New crackles, breathlessness and worsening oedema may indicate excessive fluid accumulation. The nurse should promptly reassess the patient, review fluid administration and escalate for urgent clinical review.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Perioperative Nursing (Community Follow-up)",
+"question_text": "During a postoperative home visit, a nurse finds that a patient's surgical wound has opened and abdominal tissue is visible. What should the nurse do?",
+"choices": [
+{"text": "Attempt to push the exposed tissue back into the wound", "is_correct": false},
+{"text": "Cover the area with sterile saline-moistened dressings, avoid pressure on the exposed tissue and arrange emergency transfer", "is_correct": true},
+{"text": "Apply antiseptic powder and close the wound with adhesive tape", "is_correct": false},
+{"text": "Ask the patient to walk to the nearest clinic", "is_correct": false}
+],
+"rationale": "This presentation suggests wound dehiscence with possible evisceration, which is a surgical emergency. The exposed tissue should be protected with sterile saline-moistened dressings, and the patient requires urgent surgical assessment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Pain Management",
+"question_text": "A patient with sickle cell disease reports severe pain consistent with a vaso-occlusive crisis. The family insists that the patient should receive only herbal preparations. What should the nurse do?",
+"choices": [
+{"text": "Accept the family's preference and withhold prescribed clinical care", "is_correct": false},
+{"text": "Assess the pain and clinical condition, explain the need for appropriate evidence-based management and arrange treatment according to protocol", "is_correct": true},
+{"text": "Dismiss the patient's pain because it is a recurrent condition", "is_correct": false},
+{"text": "Administer any available analgesic without checking the patient's treatment plan", "is_correct": false}
+],
+"rationale": "A vaso-occlusive crisis can cause severe pain and may be associated with serious complications. The nurse should assess the patient, provide or facilitate appropriate evidence-based pain management and identify danger signs requiring urgent referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care of the Unconscious Patient (Community Stabilization)",
+"question_text": "A CHN finds an unconscious patient after a suspected poisoning incident. The patient is breathing irregularly and has vomitus around the mouth. Which action is the highest priority?",
+"choices": [
+{"text": "Induce vomiting to remove the suspected poison", "is_correct": false},
+{"text": "Maintain airway patency, assess breathing, provide appropriate emergency support and arrange urgent referral", "is_correct": true},
+{"text": "Give milk to neutralise the poison", "is_correct": false},
+{"text": "Allow the patient to remain supine without monitoring", "is_correct": false}
+],
+"rationale": "Irregular breathing and vomitus in an unconscious patient indicate a high risk of airway obstruction and aspiration. The nurse should prioritise airway and breathing support, avoid inducing vomiting or giving oral substances, and arrange emergency referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A patient with hypertension reports taking the prescribed medication twice because the patient forgot that the first dose had already been taken. The patient now feels dizzy and weak. What should the nurse do?",
+"choices": [
+{"text": "Advise the patient to take another dose at the usual time without assessment", "is_correct": false},
+{"text": "Assess vital signs and symptoms, identify the medication and dose taken, and seek urgent clinical advice about possible overdose", "is_correct": true},
+{"text": "Tell the patient to induce vomiting", "is_correct": false},
+{"text": "Recommend stopping all medication permanently", "is_correct": false}
+],
+"rationale": "Taking an additional antihypertensive dose may cause hypotension, bradycardia or other medication-specific complications. The nurse should assess the patient, establish the exact medication and amount taken, and obtain appropriate clinical advice.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Medication Administration",
+"question_text": "A nurse at a CHPS compound is preparing to administer an injectable medication. The vial label is damaged, and the drug name and concentration cannot be read clearly. What is the safest decision?",
+"choices": [
+{"text": "Use the medication based on the colour of the vial", "is_correct": false},
+{"text": "Do not administer the medication and obtain a clearly identified, valid product", "is_correct": true},
+{"text": "Ask the patient to identify the medication", "is_correct": false},
+{"text": "Estimate the concentration from the volume remaining", "is_correct": false}
+],
+"rationale": "An unidentified medication cannot be administered safely because its identity, concentration and suitability are uncertain. The nurse should withhold it and obtain a correctly labelled product to prevent medication error.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advanced Nursing Assessment in the Community",
+"question_text": "A CHN visits a household and assesses an older adult with fever, confusion, reduced urine output and a history of diabetes. The family requests routine home treatment because transport to the district hospital is expensive. What should the nurse prioritise?",
+"choices": [
+{"text": "Provide routine health education and schedule another visit in one week", "is_correct": false},
+{"text": "Recognise possible serious infection or sepsis, initiate appropriate immediate assessment and arrange urgent referral", "is_correct": true},
+{"text": "Recommend increased oral sugar intake and leave the patient at home", "is_correct": false},
+{"text": "Treat the fever alone and disregard the reduced urine output", "is_correct": false}
+],
+"rationale": "Fever, confusion and reduced urine output in an older adult with diabetes may indicate serious infection and organ dysfunction. The nurse should prioritise urgent assessment and referral, while helping the family understand the risks of delaying care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Critical Care Basics for CHNs (Stabilization and Referral)",
+"question_text": "A CHN is assessing four patients at a community clinic. Which patient should be referred for emergency care first?",
+"choices": [
+{"text": "A patient with a mild headache and normal vital signs", "is_correct": false},
+{"text": "A pregnant woman experiencing heavy vaginal bleeding with dizziness and a weak rapid pulse", "is_correct": true},
+{"text": "A patient with a small superficial burn and no signs of infection", "is_correct": false},
+{"text": "A patient requesting routine medication refills", "is_correct": false}
+],
+"rationale": "Heavy vaginal bleeding with dizziness and a weak rapid pulse may indicate significant haemorrhage and hypovolaemic shock. Immediate stabilisation and emergency referral are necessary to protect the patient's life.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
