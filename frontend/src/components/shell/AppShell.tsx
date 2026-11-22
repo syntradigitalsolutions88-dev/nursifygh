@@ -31,6 +31,13 @@ const navItems: NavItem[] = [
     { label: "Dashboard", to: "/dashboard", icon: <DashboardIcon />, end: true },
     { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
     { label: "Leaderboard", to: "/leaderboard", icon: <TrophyIcon /> },
+{ label: "Revision", to: "/revision", icon: <CoursesIcon /> },
+{ label: "Clinical Cases", to: "/cases", icon: <ClinicalsIcon /> },
+{ label: "Pharmacology", to: "/pharmacology", icon: <CarePlansIcon /> },
+{ label: "Analytics", to: "/analytics", icon: <TrophyIcon /> },
+{ label: "Study Planner", to: "/study-planner", icon: <TrophyIcon /> },
+{ label: "CBT Simulator", to: "/cbt-simulator", icon: <TrophyIcon /> },
+{ label: "AI Tutor", to: "/ai-tutor", icon: <TrophyIcon /> },
     { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
     { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
     { label: "Library", to: "/library", icon: <LibraryIcon /> },
@@ -53,6 +60,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     const navigate = useNavigate()
     const location = useLocation()
     const [profileOpen, setProfileOpen] = useState(false)
+    const [moreOpen, setMoreOpen] = useState(false)
 
     if (!user) return null
 
@@ -216,7 +224,48 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </main>
             </div>
 
-            {/* MOBILE NAV - HIDDEN ON PRINT */}
+            {/* MOBILE NAV & STUDY TOOLS SHEET - HIDDEN ON PRINT */}
+            {moreOpen && (
+                <div className="lg:hidden fixed inset-0 z-40 print:hidden">
+                    <div className="fixed inset-0 bg-black/40" onClick={() => setMoreOpen(false)} />
+                    <div className="fixed bottom-14 inset-x-0 z-50 rounded-t-2xl border-t border-border bg-white p-4 shadow-2xl max-h-[75vh] overflow-y-auto">
+                        <div className="flex items-center justify-between pb-3 mb-3 border-b border-border">
+                            <p className="text-sm font-bold text-on-surface">Study &amp; Exam Tools</p>
+                            <button
+                                type="button"
+                                onClick={() => setMoreOpen(false)}
+                                className="rounded-lg px-2.5 py-1 text-xs font-semibold text-on-surface-muted hover:bg-surface-subtle"
+                            >
+                                Close
+                            </button>
+                        </div>
+                        <div className="grid grid-cols-2 gap-2">
+                            {[
+                                { label: "Smart Revision", to: "/revision" },
+                                { label: "Clinical Cases", to: "/cases" },
+                                { label: "Pharmacology", to: "/pharmacology" },
+                                { label: "Analytics", to: "/analytics" },
+                                { label: "Study Planner", to: "/study-planner" },
+                                { label: "CBT Simulator", to: "/cbt-simulator" },
+                                { label: "AI Tutor", to: "/ai-tutor" },
+                                { label: "Ambassador", to: "/ambassador" },
+                                { label: "My Submissions", to: "/my-submissions" },
+                                { label: "Profile", to: "/profile" },
+                            ].map((tool) => (
+                                <Link
+                                    key={tool.to}
+                                    to={tool.to}
+                                    onClick={() => setMoreOpen(false)}
+                                    className="rounded-xl border border-border bg-surface-subtle/60 px-3 py-2.5 text-xs font-semibold text-on-surface hover:bg-brand-50 hover:text-brand-800"
+                                >
+                                    {tool.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <nav className="lg:hidden fixed bottom-0 inset-x-0 z-30 border-t border-border bg-white print:hidden">
                 <div className="flex">
                     {mobileNavItems.map((item) => (
@@ -224,14 +273,25 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             key={item.to}
                             to={item.to}
                             end={item.end}
+                            onClick={() => setMoreOpen(false)}
                             className={({ isActive }) =>
-                                `flex-1 flex flex-col items-center justify-center gap-1 py-2 text-xs font-medium transition-colors ${isActive ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`
+                                `flex-1 flex flex-col items-center justify-center gap-1 py-2 text-[11px] font-medium transition-colors ${isActive && !moreOpen ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`
                             }
                         >
                             {item.icon}
                             <span>{item.label}</span>
                         </NavLink>
                     ))}
+                    <button
+                        type="button"
+                        onClick={() => setMoreOpen((prev) => !prev)}
+                        className={`flex-1 flex flex-col items-center justify-center gap-1 py-2 text-[11px] font-medium transition-colors ${moreOpen ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`}
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <span>More</span>
+                    </button>
                 </div>
             </nav>
 

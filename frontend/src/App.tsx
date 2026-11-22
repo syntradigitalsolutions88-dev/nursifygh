@@ -5,11 +5,16 @@ import PaywallGate from "./components/PaywallGate"
 import PwaInstallPrompt from "./components/PwaInstallPrompt"
 import AboutPage from "./pages/AboutPage"
 import AmbassadorPage from "./pages/AmbassadorPage"
+import AnalyticsPage from "./pages/AnalyticsPage"
+import StudyPlannerPage from "./pages/StudyPlannerPage"
+import CbtSimulatorPage from "./pages/CbtSimulatorPage"
+import AiTutorPage from "./pages/AiTutorPage"
 import AppContactPage from "./pages/AppContactPage"
 import AppHelpPage from "./pages/AppHelpPage"
 import CarePlanDetailPage from "./pages/CarePlanDetailPage"
 import CarePlanTranscriptionPage from "./pages/CarePlanTranscriptionPage"
 import CarePlansPage from "./pages/CarePlansPage"
+import CasesPage from "./pages/CasesPage"
 import CheckoutCallbackPage from "./pages/CheckoutCallbackPage"
 import ClinicalsPage from "./pages/ClinicalsPage"
 import ContactPage from "./pages/ContactPage"
@@ -25,6 +30,7 @@ import MockExamPage from "./pages/MockExamPage"
 import MySubmissionsPage from "./pages/MySubmissionsPage"
 import NcpBuilderPage from "./pages/NcpBuilderPage"
 import PastPaperUploadPage from "./pages/PastPaperUploadPage"
+import PharmacologyPage from "./pages/PharmacologyPage"
 import PrivacyPage from "./pages/PrivacyPage"
 import ProfilePage from "./pages/ProfilePage"
 import PublicLibraryPage from "./pages/PublicLibraryPage"
@@ -33,6 +39,7 @@ import QuizPage from "./pages/QuizPage"
 import QuizResultsPage from "./pages/QuizResultsPage"
 import RegisterPage from "./pages/RegisterPage"
 import ResetPasswordPage from "./pages/ResetPasswordPage"
+import RevisionPage from "./pages/RevisionPage"
 import SharedPlanPage from "./pages/SharedPlanPage"
 import SubscribePage from "./pages/SubscribePage"
 import TermsPage from "./pages/TermsPage"
@@ -70,6 +77,64 @@ export default function App() {
 
         {/* Ambassador Program */}
         <Route path="/ambassador" element={<ProtectedRoute><AmbassadorPage /></ProtectedRoute>} />
+
+        {/* Phase 2 Intelligent Learning Modules */}
+        <Route path="/analytics" element={
+          <ProtectedRoute>
+            <PaywallGate feature="Personal Performance Analytics" description="Track quiz scores, spaced-repetition recall, and clinical weak areas.">
+              <AnalyticsPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
+
+        <Route path="/study-planner" element={
+          <ProtectedRoute>
+            <PaywallGate feature="Smart Study Planner" description="Plan exam countdowns, ward/CHPS rotation prep, and daily study blocks.">
+              <StudyPlannerPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
+
+        <Route path="/cbt-simulator" element={
+          <ProtectedRoute>
+            <PaywallGate feature="CBT Examination Simulator" description="Timed nursing & midwifery CBT practice exams with flagging and rationales.">
+              <CbtSimulatorPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
+
+        <Route path="/ai-tutor" element={
+          <ProtectedRoute>
+            <PaywallGate feature="AI Nursing Tutor" description="Clinical reasoning coaching, NANDA care plan guidance, and exam explanations.">
+              <AiTutorPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
+
+        {/* Phase 1 Core Learning Modules */}
+        <Route path="/revision" element={
+          <ProtectedRoute>
+            <PaywallGate feature="Smart Revision Centre" description="Spaced-repetition flashcards, weak-topic drills, and daily revision streaks.">
+              <RevisionPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
+
+        <Route path="/cases" element={
+          <ProtectedRoute>
+            <PaywallGate feature="Clinical Case Studies" description="Progressive Ghanaian patient scenarios with vitals, clinical priorities, and rationales.">
+              <CasesPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
+
+        <Route path="/pharmacology" element={
+          <ProtectedRoute>
+            <PaywallGate feature="Pharmacology & Drug Calculations" description="Nursing drug monographs and deterministic dosage/IV drip calculations.">
+              <PharmacologyPage />
+            </PaywallGate>
+          </ProtectedRoute>
+        } />
 
         {/* Courses & Quizzes */}
         <Route path="/courses" element={
