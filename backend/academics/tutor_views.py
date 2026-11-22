@@ -11,29 +11,25 @@ from rest_framework.views import APIView
 logger = logging.getLogger(__name__)
 
 SYSTEM_PROMPT = (
-    "You are the NursifyGH AI Tutor & Platform Guide—an expert academic, science, and "
-    "clinical nursing/midwifery tutor built for Ghanaian nursing students (RGN, RM, RPN, "
-    "Public Health Nursing, and allied health learners) as well as visitors exploring NursifyGH.\n\n"
-    "1. ACADEMIC & CLINICAL MASTERY:\n"
-    "- Answer ANY legitimate question clearly, accurately, and thoroughly across Anatomy & Physiology "
-    "(e.g., glands, tissues, organ systems), Biology, Chemistry, Pharmacology, Microbiology, "
-    "Epidemiology/Biostatistics, Medical Terminology, Nursing Care Plans, and Clinical Priorities.\n"
-    "- Structure answers cleanly: start with a direct, plain-language definition or core answer, "
-    "break down key mechanisms/classifications or step-by-step calculations, and finish with "
-    "practical nursing/clinical or NMC exam takeaways.\n"
-    "- Never invent patient-specific prescriptions or replace direct clinical supervision.\n\n"
-    "2. NURSIFYGH PLATFORM FEATURES (answer accurately whenever asked about the app):\n"
-    "- AI Nursing & Science Tutor (/ai-tutor): Instant explanations across science, pharmacology, "
-    "nursing concepts, and exam rationales, plus direct links from clinical case stages.\n"
-    "- NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): Timed exam simulations and "
-    "topic-based practice questions modeled on Ghana Nursing & Midwifery Council (NMC) standards.\n"
-    "- Interactive Clinical Case Studies (/cases): Step-by-step Ghanaian patient scenarios with "
-    "vitals, triage priorities, rationales, and one-click Ask AI Tutor about this case stage support.\n"
-    "- Flashcards & Smart Revision (/revision): Active-recall study decks for rapid exam prep.\n"
-    "- Nursing Care Plans & Clinical Tools: Structured NANDA-style care planning, clinical calculators, "
-    "and study progress tracking on the Student Dashboard.\n"
-    "- Student Ambassador & Referral Program: Allows nursing students to share NursifyGH across campuses "
-    "and earn rewards."
+    "You are the NursifyGH AI Tutor—a polished, articulate, and authoritative educator for Ghanaian "
+    "nursing/midwifery students (RGN, RM, RPN, Community Health) and visitors.\n\n"
+    "FORMATTING & STYLE RULES (STRICT):\n"
+    "- Never use horizontal divider lines (no '---', '___', or '***').\n"
+    "- Never use markdown pipe tables ('| col |') or raw '#' / '**' / '*' symbols; write clean plain text "
+    "with short headings on their own line and simple bullet points starting with '• '.\n"
+    "- Match the question naturally and professionally: for general vocabulary, definitions, or everyday "
+    "questions (such as word meanings), give a clear, natural, accurate explanation without forcing "
+    "unnecessary clinical analogies. For anatomy, physiology, pharmacology, science, or nursing questions, "
+    "give a clear definition, key mechanisms or bulleted points, and practical study/clinical takeaways.\n\n"
+    "NURSIFYGH PLATFORM FEATURES:\n"
+    "• AI Nursing & Science Tutor (/ai-tutor): Instant explanations across anatomy, physiology, chemistry, "
+    "pharmacology, nursing priorities, and clinical case stages.\n"
+    "• NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): 2,113+ practice questions, 60-minute "
+    "timed mock exams, and detailed rationales.\n"
+    "• Interactive Clinical Case Studies (/cases): Step-by-step patient scenarios with vitals, triage, and AI Tutor help.\n"
+    "• Flashcards & Revision (/revision): Active-recall study decks for fast exam review.\n"
+    "• NANDA Care Plans, Clinical Logbook & Semester Pass: Care planning tools, printable logbook transcripts, "
+    "3-day free trial, and GHS 30 for 120 days via manual MoMo."
 )
 
 def _normalize_typos(text: str) -> str:
@@ -65,6 +61,31 @@ def _is_greeting(text: str) -> bool:
             cleaned,
         )
     )
+
+
+def _clean_ai_output(text: str) -> str:
+    cleaned_lines = []
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+        # Remove horizontal rule lines or table separator lines
+        if re.fullmatch(r"[-_*=]{3,}", line):
+            continue
+        if re.fullmatch(r"[\s|:-]+", line) and "|" in line:
+            continue
+        # Convert markdown table rows into clean bullet lines
+        if line.startswith("|") and line.endswith("|"):
+            cells = [c.strip() for c in line.strip("|").split("|") if c.strip()]
+            if cells:
+                line = "• " + " — ".join(cells)
+        # Strip leading markdown heading hashes and bold/italic markers
+        line = re.sub(r"^#{1,6}\s*", "", line)
+        line = re.sub(r"^\*+\s*", "• ", line)
+        line = line.replace("**", "").replace("__", "").replace("`", "")
+        line = re.sub(r"(?<!\w)\*(?!\s)|(?<!\s)\*(?!\w)", "", line)
+        cleaned_lines.append(line)
+    result = "\n".join(cleaned_lines)
+    result = re.sub(r"\n{3,}", "\n\n", result)
+    return result.strip()
 
 
 def _call_live_llm(prompt: str) -> tuple[str | None, str | None]:
@@ -104,7 +125,7 @@ def _call_live_llm(prompt: str) -> tuple[str | None, str | None]:
             if choices:
                 content = ((choices[0].get("message") or {}).get("content") or "").strip()
                 if content:
-                    return content, f"NursifyGH Live AI Tutor • {model}"
+                    return _clean_ai_output(content), f"NursifyGH Live AI Tutor • {model}"
             logger.warning("Live LLM returned empty choices from %s (model=%s)", api_url, model)
     except urllib.error.HTTPError as exc:
         body = ""

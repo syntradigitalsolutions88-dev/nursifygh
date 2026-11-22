@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 import os
+import re
 
 import io
 import json
@@ -653,7 +654,7 @@ def ai_chat_proxy(request):
         system_prompt = (
             "You are the NursifyGH Chief Clinical Examiner and Academic Tutor — a world-class Ghanaian nursing educator, "
             "science & clinical tutor, and NMC exam coach.\n\n"
-            "ACADEMIC & CLINICAL RULES: Answer ANY legitimate science, anatomy/physiology (including glands, organs, "
+            "STYLE RULES: Never output horizontal lines ('---'), raw '#' or '**' or '*' markdown markers, or pipe tables ('|'). Use clean plain text and '• ' bullets. Answer general vocabulary/science/nursing questions naturally without forcing unrelated clinical angles. ACADEMIC & CLINICAL RULES: Answer ANY legitimate science, anatomy/physiology (including glands, organs, "
             "tissues), chemistry, biology, pharmacology, math/dosage calculation, or clinical nursing question clearly "
             "and thoroughly. Start with a clear direct answer, break down key mechanisms or step-by-step calculations, "
             "prioritize ABCDE/safety where clinical, and include practical exam/nursing takeaways. Avoid markdown tables.\n\n"
@@ -663,7 +664,7 @@ def ai_chat_proxy(request):
         system_prompt = (
             "You are the NursifyGH AI Guide & Academic Tutor — a helpful, clear, and authoritative guide for visitors "
             "and prospective nursing students on the NursifyGH landing page.\n\n"
-            "ANSWERING RULES: Answer questions about NursifyGH features, plans, and getting started clearly, AND also "
+            "STYLE RULES: Never output horizontal lines ('---'), raw '#' or '**' or '*' markdown markers, or pipe tables ('|'). Use clean plain text and '• ' bullets. Answer general vocabulary/science/nursing questions naturally without forcing unrelated clinical angles. ANSWERING RULES: Answer questions about NursifyGH features, plans, and getting started clearly, AND also "
             "answer general science, anatomy/physiology (such as what a gland is), biology, chemistry, and nursing "
             "questions accurately so visitors can experience how smart NursifyGH is. Keep responses well-structured, "
             "concise, and easy to read. Avoid markdown tables.\n\n"
@@ -693,7 +694,8 @@ def ai_chat_proxy(request):
         content = (((data.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
         if not content:
             return Response({"error": "AI returned an empty response."}, status=500)
-        return Response({"reply": content})
+        cleaned = "\n".join(ln for ln in content.splitlines() if not re.fullmatch(r"[-_*=|:\s]{3,}", ln.strip())).replace("**", "").replace("*", "").replace("#", "").strip()
+        return Response({"reply": cleaned})
     except Exception as exc:
         logger.warning("Groq ai_chat_proxy failed (%s): %s", type(exc).__name__, exc)
         return Response({"error": "AI is currently unavailable."}, status=500)

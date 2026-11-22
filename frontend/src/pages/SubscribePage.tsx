@@ -12,12 +12,45 @@ import {
     submitManualPayment,
 } from "../api/payments"
 
+const INCLUDED_FEATURES = [
+    {
+        title: "2,113+ NMC Licensure Questions",
+        detail: "Practice across RGN, RM, RPN, and CHN with clear rationales for every option.",
+    },
+    {
+        title: "60-Minute Timed CBT Mock Exams",
+        detail: "Simulate exam conditions and build speed and confidence before licensure.",
+    },
+    {
+        title: "AI Nursing & Science Tutor",
+        detail: "Get clear explanations across anatomy, physiology, pharmacology, and clinical priorities.",
+    },
+    {
+        title: "Interactive Clinical Case Studies",
+        detail: "Work through realistic patient scenarios with vitals, triage steps, and stage guidance.",
+    },
+    {
+        title: "AI-Assisted NANDA Care Plans",
+        detail: "Structure nursing diagnoses, goals, interventions, and evaluations faster.",
+    },
+    {
+        title: "Clinical Logbook & NMC Transcript",
+        detail: "Log clinical procedures by program and export a printable transcript for submission.",
+    },
+    {
+        title: "Smart Revision & Study Decks",
+        detail: "Reinforce high-yield concepts and track your readiness across core courses.",
+    },
+    {
+        title: "120 Full Days of Unlimited Access",
+        detail: "One simple GHS 30 payment via Mobile Money with trial-stacking support.",
+    },
+]
+
 export default function SubscribePage() {
     const { user } = useAuth()
     const queryClient = useQueryClient()
 
-    // Fetch payment info even if user is on trial (has_active_subscription = true),
-    // as long as they haven't paid yet.
     const { data: info } = useQuery({
         queryKey: ["manual-payment-info"],
         queryFn: getManualPaymentInfo,
@@ -60,7 +93,6 @@ export default function SubscribePage() {
 
     if (!user) return null
 
-    // Only block if the user has ALREADY PAID and is currently active.
     if (user.has_active_subscription && user.has_paid) {
         return (
             <AppShell>
@@ -70,7 +102,7 @@ export default function SubscribePage() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h1 className="text-2xl font-bold text-success-900">You're fully subscribed</h1>
+                    <h1 className="text-2xl font-bold text-success-900">You&apos;re fully subscribed</h1>
                     <p className="mt-2 text-sm text-success-800">
                         Your Semester Pass is active until{" "}
                         <strong className="text-success-900">
@@ -90,7 +122,6 @@ export default function SubscribePage() {
         )
     }
 
-    // ─── PENDING REVIEW STATE ───────────────────────────────
     if (info?.pending) {
         return (
             <AppShell>
@@ -103,7 +134,7 @@ export default function SubscribePage() {
                         </div>
                         <h1 className="text-2xl font-bold text-amber-900">Payment received. Verifying...</h1>
                         <p className="mt-2 text-sm text-amber-800 max-w-md mx-auto">
-                            We've received your reference <strong className="text-amber-900 font-mono">{info.pending.manual_reference}</strong>. Our team is verifying your payment and will activate your subscription within 24 hours.
+                            We&apos;ve received your reference <strong className="text-amber-900 font-mono">{info.pending.manual_reference}</strong>. Our team is verifying your payment and will activate your subscription within 24 hours.
                         </p>
 
                         <div className="mt-6 bg-white rounded-xl border border-amber-200 p-4 text-left max-w-sm mx-auto">
@@ -111,7 +142,7 @@ export default function SubscribePage() {
                             <ol className="text-xs text-amber-800 space-y-1.5 list-decimal list-inside">
                                 <li>Admin verifies your MoMo reference</li>
                                 <li>Your account gets upgraded instantly</li>
-                                <li>You'll receive an email confirmation</li>
+                                <li>You&apos;ll receive an email confirmation</li>
                             </ol>
                         </div>
 
@@ -124,7 +155,6 @@ export default function SubscribePage() {
         )
     }
 
-    // Calculate new expiry date
     const newExpiryDate = user.subscription_expires_at
         ? new Date(new Date(user.subscription_expires_at).getTime() + 120 * 24 * 60 * 60 * 1000)
         : new Date(Date.now() + 120 * 24 * 60 * 60 * 1000)
@@ -133,7 +163,6 @@ export default function SubscribePage() {
         <AppShell>
             <div className="max-w-2xl mx-auto space-y-6">
 
-                {/* Header */}
                 <div className="text-center">
                     <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">
                         {user.is_on_trial ? "Upgrade from Trial" : "Subscribe Now"}
@@ -144,13 +173,13 @@ export default function SubscribePage() {
                     <p className="mt-2 text-body-sm text-on-surface-muted max-w-md mx-auto">
                         {user.is_on_trial
                             ? "You're on a 3-day free trial. Pay now to add 120 full days on top of your trial."
-                            : "One payment. Full access for the entire semester."}
+                            : "One payment. Full access to every study and clinical tool for the entire semester."}
                     </p>
                 </div>
 
-                {/* Pricing Card */}
-                <div className="rounded-2xl border border-border bg-white p-6 shadow-sm">
-                    <div className="flex items-start justify-between">
+                {/* Pricing & Full Feature Breakdown */}
+                <div className="rounded-2xl border border-border bg-white p-6 shadow-sm space-y-5">
+                    <div className="flex items-start justify-between gap-4">
                         <div>
                             <div className="flex items-center gap-2">
                                 <p className="text-h3">Semester Pass</p>
@@ -159,41 +188,45 @@ export default function SubscribePage() {
                                 </span>
                             </div>
                             <p className="mt-1 text-body-sm text-on-surface-muted">
-                                120 days of unlimited access
+                                120 days of unlimited access across your nursing program
                             </p>
                         </div>
-                        <div className="text-right">
+                        <div className="text-right shrink-0">
                             <p className="text-h1 text-brand-700">GHS 30</p>
                             <p className="text-xs text-on-surface-muted line-through">GHS 60</p>
                         </div>
                     </div>
 
-                    <div className="mt-4 grid grid-cols-2 gap-3 text-xs">
-                        <div className="flex items-center gap-1.5 text-on-surface-muted">
-                            <span className="text-brand-600">✓</span> 2,113+ NMC Questions
-                        </div>
-                        <div className="flex items-center gap-1.5 text-on-surface-muted">
-                            <span className="text-brand-600">✓</span> 60-min Mock Exams
-                        </div>
-                        <div className="flex items-center gap-1.5 text-on-surface-muted">
-                            <span className="text-brand-600">✓</span> AI Clinical Logbook
-                        </div>
-                        <div className="flex items-center gap-1.5 text-on-surface-muted">
-                            <span className="text-brand-600">✓</span> NANDA Care Plans
+                    <div className="border-t border-border pt-4">
+                        <p className="text-xs font-bold text-on-surface uppercase tracking-wider mb-3">
+                            Everything included in your Semester Pass
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                            {INCLUDED_FEATURES.map((item) => (
+                                <div key={item.title} className="rounded-xl bg-surface-subtle/70 border border-border/70 p-3">
+                                    <div className="flex items-start gap-2">
+                                        <span className="text-brand-600 font-bold mt-0.5">✓</span>
+                                        <div>
+                                            <p className="font-semibold text-on-surface">{item.title}</p>
+                                            <p className="text-on-surface-muted mt-0.5 leading-relaxed">{item.detail}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
                     {user.is_on_trial && user.subscription_expires_at && (
-                        <div className="mt-4 rounded-lg bg-brand-50 border border-brand-200 p-3">
+                        <div className="rounded-lg bg-brand-50 border border-brand-200 p-3">
                             <p className="text-xs font-medium text-brand-800">
-                                💡 <strong>Stacking bonus:</strong> Pay today and your access extends to{" "}
+                                <strong>Stacking bonus:</strong> Pay today and your access extends to{" "}
                                 <strong>{newExpiryDate.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</strong>
                             </p>
                         </div>
                     )}
                 </div>
 
-                {/* ─── STEP 1: INSTRUCTIONS ──────────────────────── */}
+                {/* STEP 1: INSTRUCTIONS */}
                 {step === "instructions" && (
                     <div className="rounded-2xl border border-border bg-white p-6 space-y-4 shadow-sm">
 
@@ -254,18 +287,18 @@ export default function SubscribePage() {
                                 initiateMutation.mutate()
                             }}
                         >
-                            I've sent GHS 30 — Submit Reference →
+                            I&apos;ve sent GHS 30 — Submit Reference →
                         </Button>
 
                         <div className="flex items-center justify-center gap-4 pt-1 text-xs text-on-surface-muted">
-                            <span className="flex items-center gap-1">🔒 100% Secure</span>
-                            <span className="flex items-center gap-1">⚡ 24hr Activation</span>
-                            <span className="flex items-center gap-1">💬 24/7 Support</span>
+                            <span className="flex items-center gap-1">100% Secure</span>
+                            <span className="flex items-center gap-1">24hr Activation</span>
+                            <span className="flex items-center gap-1">Student Support</span>
                         </div>
                     </div>
                 )}
 
-                {/* ─── STEP 2: SUBMIT REFERENCE ──────────────────── */}
+                {/* STEP 2: SUBMIT REFERENCE */}
                 {step === "submit" && (
                     <div className="rounded-2xl border border-border bg-white p-6 space-y-4 shadow-sm">
 
