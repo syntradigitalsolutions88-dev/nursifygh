@@ -1,3 +1,4 @@
+import os
 """Authentication, profile, clinical tracking, and AI endpoints."""
 
 from __future__ import annotations
@@ -607,53 +608,95 @@ class BecomeAmbassadorView(APIView):
 @api_view(["POST"])
 @permission_classes([AllowAny])
 def ai_chat_proxy(request):
-    message = request.data.get("message")
-    mode = request.data.get("mode", "public")
+    message = (request.data.get("message") or "").strip()
+    mode = (request.data.get("mode") or "public").strip().lower()
 
     if not message:
         return Response({"error": "Message is required"}, status=400)
 
-    api_key = getattr(settings, "GROQ_API_KEY", None)
+    api_key = (
+        getattr(settings, "GROQ_API_KEY", None)
+        or os.getenv("LLM_API_KEY")
+        or os.getenv("GROQ_API_KEY")
+        or ""
+    ).strip()
     if not api_key:
+        logger.error("GROQ_API_KEY / LLM_API_KEY is missing in ai_chat_proxy.")
         return Response({"error": "Server configuration error."}, status=500)
+
+    api_url = (
+        getattr(settings, "LLM_API_URL", None)
+        or os.getenv("LLM_API_URL")
+        or "https://api.groq.com/openai/v1/chat/completions"
+    ).strip()
+    model = (
+        getattr(settings, "LLM_MODEL", None)
+        or os.getenv("LLM_MODEL")
+        or "openai/gpt-oss-20b"
+    ).strip()
+
+    platform_knowledge = (
+        "NURSIFYGH PLATFORM & FEATURES (answer accurately whenever asked about NursifyGH):\n"
+        "- Programs: 4 nursing/midwifery tracks (General Nursing, Midwifery, Psychiatric Nursing, Community Health Nursing).\n"
+        "- Pricing & Access: 3-day free trial; GHS 30 for 120 days with manual MoMo activation.\n"
+        "- AI Nursing & Science Tutor (/ai-tutor): Instant explanations across anatomy & physiology, biology, chemistry, "
+        "pharmacology, nursing priorities, and exam rationales.\n"
+        "- NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): Timed exam simulations and topic practice.\n"
+        "- Interactive Clinical Case Studies (/cases): Ghanaian patient scenarios with vitals, triage priorities, "
+        "rationales, and one-click Ask AI Tutor about this case stage support.\n"
+        "- Flashcards & Revision (/revision): Active-recall study decks for rapid exam prep.\n"
+        "- AI Nursing Care Plans & Clinical Logbook: Structured NANDA-style care planning and clinical skills logging.\n"
+        "- Ambassador Program: 15% recurring referral commission for student ambassadors."
+    )
 
     if mode == "student":
         system_prompt = (
             "You are the NursifyGH Chief Clinical Examiner and Academic Tutor — a world-class Ghanaian nursing educator, "
-            "advanced practice clinician, and NMC exam coach.\n\n"
-            "CLINICAL RULES: Provide evidence-based answers. Prioritize ABCDE. Show drug calculation formulas. Use medical terminology.\n"
-            "PLATFORM RULES: 3-day free trial. GHS 30 for 120 days. Manual MoMo activation. 4 programs (General, Midwifery, Psychiatric, Community).\n"
-            "TONE: Formal, precise, authoritative. Plain text. No markdown tables. Under 250 words."
+            "science & clinical tutor, and NMC exam coach.\n\n"
+            "ACADEMIC & CLINICAL RULES: Answer ANY legitimate science, anatomy/physiology (including glands, organs, "
+            "tissues), chemistry, biology, pharmacology, math/dosage calculation, or clinical nursing question clearly "
+            "and thoroughly. Start with a clear direct answer, break down key mechanisms or step-by-step calculations, "
+            "prioritize ABCDE/safety where clinical, and include practical exam/nursing takeaways. Avoid markdown tables.\n\n"
+            f"{platform_knowledge}"
         )
     else:
         system_prompt = (
-            "You are the NursifyGH Support Assistant — a professional, warm, and efficient onboarding guide.\n\n"
-            "PLATFORM RULES: Independent study tool. 4 programs. 3-day free trial. GHS 30 for 120 days. Manual MoMo activation. Features: Mock exams, clinical logbook, AI care plans. Ambassador program (15% recurring).\n"
-            "TONE: Polite, clear, confident. Plain text. Under 120 words. Do NOT answer clinical questions."
+            "You are the NursifyGH AI Guide & Academic Tutor — a helpful, clear, and authoritative guide for visitors "
+            "and prospective nursing students on the NursifyGH landing page.\n\n"
+            "ANSWERING RULES: Answer questions about NursifyGH features, plans, and getting started clearly, AND also "
+            "answer general science, anatomy/physiology (such as what a gland is), biology, chemistry, and nursing "
+            "questions accurately so visitors can experience how smart NursifyGH is. Keep responses well-structured, "
+            "concise, and easy to read. Avoid markdown tables.\n\n"
+            f"{platform_knowledge}"
         )
 
     try:
         response = requests.post(
-            "https://api.groq.com/openai/v1/chat/completions",
+            api_url,
             json={
-                "model": "openai/gpt-oss-120b",
+                "model": model,
                 "messages": [
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": message},
                 ],
-                "temperature": 0.4,
-                "max_tokens": 800,
+                "temperature": 0.3,
+                "max_tokens": 1024,
             },
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
             timeout=45,
         )
         if response.status_code != 200:
+            logger.warning("Groq ai_chat_proxy HTTP %s: %s", response.status_code, response.text[:300])
             return Response({"error": "AI service rejected the request."}, status=500)
 
-        return Response({"reply": response.json()["choices"][0]["message"]["content"]})
-    except Exception:
+        data = response.json()
+        content = (((data.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
+        if not content:
+            return Response({"error": "AI returned an empty response."}, status=500)
+        return Response({"reply": content})
+    except Exception as exc:
+        logger.warning("Groq ai_chat_proxy failed (%s): %s", type(exc).__name__, exc)
         return Response({"error": "AI is currently unavailable."}, status=500)
-
 
 @api_view(["POST"])
 @permission_classes([AllowAny])

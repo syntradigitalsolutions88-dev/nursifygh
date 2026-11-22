@@ -58,7 +58,7 @@ class TutorCoachViewTests(APITestCase):
         res = self.client.post(self.ENDPOINT, {"prompt": "   "}, format="json")
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
-    @patch.dict("os.environ", {"LLM_API_KEY": ""}, clear=False)
+    @patch.dict("os.environ", {"LLM_API_KEY": "", "GROQ_API_KEY": ""}, clear=False)
     def test_fallback_chemistry_biology_and_typo_normalization(self):
         self.client.force_authenticate(user=self.user)
 

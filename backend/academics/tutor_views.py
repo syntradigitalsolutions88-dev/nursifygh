@@ -1,3 +1,4 @@
+import logging
 import json
 import os
 import re
@@ -7,15 +8,33 @@ from rest_framework import permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-SYSTEM_PROMPT = (
-    "You are the NursifyGH Academic, Science & Clinical Nursing Tutor supporting "
-    "nursing, midwifery, and health sciences students in Ghana. "
-    "Provide clear, accurate, well-structured explanations across chemistry, "
-    "biology, anatomy and physiology, pharmacology, epidemiology, and clinical "
-    "nursing/midwifery priorities. Include step-by-step mechanisms or calculations "
-    "and safety reminders where relevant. Never invent patient-specific orders."
-)
+logger = logging.getLogger(__name__)
 
+SYSTEM_PROMPT = (
+    "You are the NursifyGH AI Tutor & Platform Guide—an expert academic, science, and "
+    "clinical nursing/midwifery tutor built for Ghanaian nursing students (RGN, RM, RPN, "
+    "Public Health Nursing, and allied health learners) as well as visitors exploring NursifyGH.\n\n"
+    "1. ACADEMIC & CLINICAL MASTERY:\n"
+    "- Answer ANY legitimate question clearly, accurately, and thoroughly across Anatomy & Physiology "
+    "(e.g., glands, tissues, organ systems), Biology, Chemistry, Pharmacology, Microbiology, "
+    "Epidemiology/Biostatistics, Medical Terminology, Nursing Care Plans, and Clinical Priorities.\n"
+    "- Structure answers cleanly: start with a direct, plain-language definition or core answer, "
+    "break down key mechanisms/classifications or step-by-step calculations, and finish with "
+    "practical nursing/clinical or NMC exam takeaways.\n"
+    "- Never invent patient-specific prescriptions or replace direct clinical supervision.\n\n"
+    "2. NURSIFYGH PLATFORM FEATURES (answer accurately whenever asked about the app):\n"
+    "- AI Nursing & Science Tutor (/ai-tutor): Instant explanations across science, pharmacology, "
+    "nursing concepts, and exam rationales, plus direct links from clinical case stages.\n"
+    "- NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): Timed exam simulations and "
+    "topic-based practice questions modeled on Ghana Nursing & Midwifery Council (NMC) standards.\n"
+    "- Interactive Clinical Case Studies (/cases): Step-by-step Ghanaian patient scenarios with "
+    "vitals, triage priorities, rationales, and one-click Ask AI Tutor about this case stage support.\n"
+    "- Flashcards & Smart Revision (/revision): Active-recall study decks for rapid exam prep.\n"
+    "- Nursing Care Plans & Clinical Tools: Structured NANDA-style care planning, clinical calculators, "
+    "and study progress tracking on the Student Dashboard.\n"
+    "- Student Ambassador & Referral Program: Allows nursing students to share NursifyGH across campuses "
+    "and earn rewards."
+)
 
 def _normalize_typos(text: str) -> str:
     q = (text or "").lower()
@@ -49,16 +68,18 @@ def _is_greeting(text: str) -> bool:
 
 
 def _call_live_llm(prompt: str) -> tuple[str | None, str | None]:
-    api_key = os.getenv("LLM_API_KEY", "").strip()
-    api_url = os.getenv("LLM_API_URL", "https://api.openai.com/v1/chat/completions").strip()
-    model = os.getenv("LLM_MODEL", "gpt-4o-mini").strip()
+    api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
+    api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
+    model = os.getenv("LLM_MODEL", "openai/gpt-oss-20b").strip()
 
     if not api_key or not api_url:
+        logger.warning("Live LLM skipped: LLM_API_KEY/GROQ_API_KEY or LLM_API_URL is not configured.")
         return None, None
 
     payload = {
         "model": model,
-        "temperature": 0.3,
+        "temperature": 0.25,
+        "max_tokens": 1024,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": prompt},
@@ -71,23 +92,31 @@ def _call_live_llm(prompt: str) -> tuple[str | None, str | None]:
         headers={
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}",
+            "User-Agent": "NursifyGH-Tutor/1.0",
         },
         method="POST",
     )
 
     try:
-        with urllib.request.urlopen(req, timeout=20) as resp:
+        with urllib.request.urlopen(req, timeout=25) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             choices = data.get("choices") or []
             if choices:
                 content = ((choices[0].get("message") or {}).get("content") or "").strip()
                 if content:
                     return content, f"NursifyGH Live AI Tutor • {model}"
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError, KeyError, OSError):
-        pass
+            logger.warning("Live LLM returned empty choices from %s (model=%s)", api_url, model)
+    except urllib.error.HTTPError as exc:
+        body = ""
+        try:
+            body = exc.read().decode("utf-8", errors="ignore")[:300]
+        except Exception:
+            pass
+        logger.warning("Live LLM HTTPError %s from %s: %s", exc.code, api_url, body)
+    except (urllib.error.URLError, TimeoutError, ValueError, KeyError, OSError) as exc:
+        logger.warning("Live LLM request failed (%s): %s", type(exc).__name__, exc)
 
     return None, None
-
 
 def _generate_tutor_response(prompt_text: str) -> dict:
     trimmed = (prompt_text or "").strip()
@@ -183,6 +212,37 @@ def _generate_tutor_response(prompt_text: str) -> dict:
                 "1. Structure & Function: Identify the cellular, tissue, organ, or system structures involved and their homeostatic role.\n"
                 "2. Physiological / Biochemical Mechanism: Trace energy flow (e.g., ATP/cellular respiration), concentration/pressure gradients (e.g., diffusion, osmosis, blood flow/resistance), or feedback control.\n"
                 "3. Clinical & Exam Application: Link normal physiology to what happens during dysfunction, hypoxia, fluid/electrolyte shifts, or targeted therapy."
+            ),
+        }
+
+    if any(k in normalized for k in ["gland", "glands", "endocrine", "exocrine"]):
+        return {
+            "framework": "Anatomy & Physiology • Glandular System Guide",
+            "reply": (
+                "Core Definition: A gland is a specialized cell, group of cells, or organ that synthesizes and secretes "
+                "substances (such as hormones, enzymes, sweat, saliva, or mucus) needed by the body.\n"
+                "1. Two Main Classifications:\n"
+                "• Endocrine Glands (Ductless): Release hormones directly into the bloodstream to act on distant target organs "
+                "(e.g., pituitary, thyroid, parathyroid, adrenal glands, pancreas islets, ovaries/testes).\n"
+                "• Exocrine Glands (With Ducts): Secrete products through ducts onto an epithelial surface or body cavity "
+                "(e.g., salivary glands, sweat glands, sebaceous glands, mammary glands, exocrine pancreas).\n"
+                "2. Clinical & Nursing Takeaways: Endocrine disorders typically present with systemic hormonal imbalances "
+                "(such as hypothyroidism/hyperthyroidism or diabetes mellitus), whereas exocrine dysfunction affects local secretion "
+                "or duct patency (such as cystic fibrosis or sialadenitis)."
+            ),
+        }
+
+    if any(k in normalized for k in ["nursify", "feature", "features", "what can you do", "how does this app", "platform"]):
+        return {
+            "framework": "NursifyGH Platform & Study Ecosystem Guide",
+            "reply": (
+                "NursifyGH is an all-in-one nursing and health sciences learning platform built for Ghanaian students:\n"
+                "• AI Nursing & Science Tutor (/ai-tutor): Instant explanations across anatomy, physiology, chemistry, pharmacology, "
+                "and clinical priorities—including one-click case stage tutoring.\n"
+                "• CBT Licensure Simulator & Question Bank (/cbt-simulator): Timed NMC-style practice exams with instant rationales.\n"
+                "• Interactive Clinical Case Studies (/cases): Step-by-step Ghanaian patient scenarios with vitals and triage decisions.\n"
+                "• Flashcards & Revision Decks (/revision): Active-recall study cards for rapid exam preparation.\n"
+                "• Care Plans, Calculators & Progress Tracking: Tools to sharpen clinical judgment and track readiness."
             ),
         }
 
