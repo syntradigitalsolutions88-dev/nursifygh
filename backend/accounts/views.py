@@ -1,7 +1,7 @@
-import os
 """Authentication, profile, clinical tracking, and AI endpoints."""
 
 from __future__ import annotations
+import os
 
 import io
 import json
