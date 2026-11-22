@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import { buildAiTutorUrl } from "../utils/tutorPrompt"
 import { useEffect, useMemo, useState } from "react"
 import AppShell from "../components/shell/AppShell"
 import Alert from "../components/ui/Alert"
@@ -447,7 +449,7 @@ export default function RevisionPage() {
                                 Question / Prompt
                             </p>
                             <p className="text-base sm:text-lg font-medium text-on-surface leading-relaxed">
-                                {currentCard.front}
+                                {currentCard.front} <Link to={buildAiTutorUrl(`Explain this nursing revision flashcard clearly with exam key points and high-yield recall tips: ${currentCard.front}`)} className="ml-2 text-xs font-semibold text-brand-700 underline">Ask AI Tutor to explain this card →</Link>
                             </p>
 
                             {!isFlipped && (

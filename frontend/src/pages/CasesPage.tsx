@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import { buildAiTutorUrl } from "../utils/tutorPrompt"
 import { useMemo, useState } from "react"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import AppShell from "../components/shell/AppShell"
@@ -350,7 +352,7 @@ export default function CasesPage() {
                             <div className="border-t border-border pt-4 space-y-3">
                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                                     <h3 className="text-base font-bold text-on-surface">
-                                        {activeStage.step_number}. {activeStage.title}
+                                        {activeStage.step_number}. {activeStage.title} <Link to={buildAiTutorUrl(`Guide me through clinical reasoning, nursing priorities, and potential pitfalls for: ${activeStage.title}`)} className="ml-2 text-xs font-semibold text-brand-700 underline">Ask AI Tutor about this case stage →</Link>
                                     </h3>
                                     {activeStage.vitals_summary && (
                                         <span className="font-mono text-xs bg-emerald-50 text-emerald-900 border border-emerald-200 px-2.5 py-1 rounded-md">
