@@ -1,5 +1,20 @@
 from django.urls import path
 
+from .cases_views import (
+    ClinicalCaseDetailView,
+    ClinicalCaseListView,
+    SubmitCaseStageView,
+)
+
+from .tutor_views import TutorCoachView
+
+from .revision_views import (
+    FlashcardListCreateView,
+    FlashcardReviewUpdateView,
+    FlashcardStatsView,
+    SyncWeakQuizCardsView,
+)
+
 from .views import (
     CourseDetailView,
     CourseListView,
@@ -27,5 +42,13 @@ urlpatterns = [
     path("past-paper/save/", PastPaperSaveView.as_view(), name="past-paper-save"),
     path("my-submissions/", MySubmissionsView.as_view(), name="my-submissions"),
     path("weak-areas/", WeakAreasView.as_view(), name="weak-areas"),
-    path("leaderboard/", LeaderboardView.as_view(), name="leaderboard"), # <-- ADD THIS
+    path("leaderboard/", LeaderboardView.as_view(), name="leaderboard"),
+    path("flashcards/", FlashcardListCreateView.as_view(), name="flashcard-list-create"),
+    path("flashcards/review/", FlashcardReviewUpdateView.as_view(), name="flashcard-review"),
+    path("flashcards/sync-weak/", SyncWeakQuizCardsView.as_view(), name="flashcard-sync-weak"),
+    path("flashcards/stats/", FlashcardStatsView.as_view(), name="flashcard-stats"),
+    path("cases/", ClinicalCaseListView.as_view(), name="clinical-case-list"),
+    path("cases/<uuid:case_id>/", ClinicalCaseDetailView.as_view(), name="clinical-case-detail"),
+    path("cases/<uuid:case_id>/answer/", SubmitCaseStageView.as_view(), name="clinical-case-answer"),
+    path("tutor/", TutorCoachView.as_view(), name="tutor-coach"),
 ]

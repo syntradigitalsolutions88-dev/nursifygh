@@ -1,0 +1,222 @@
+import json
+import os
+import re
+import urllib.error
+import urllib.request
+from rest_framework import permissions, status
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
+SYSTEM_PROMPT = (
+    "You are the NursifyGH Academic, Science & Clinical Nursing Tutor supporting "
+    "nursing, midwifery, and health sciences students in Ghana. "
+    "Provide clear, accurate, well-structured explanations across chemistry, "
+    "biology, anatomy and physiology, pharmacology, epidemiology, and clinical "
+    "nursing/midwifery priorities. Include step-by-step mechanisms or calculations "
+    "and safety reminders where relevant. Never invent patient-specific orders."
+)
+
+
+def _normalize_typos(text: str) -> str:
+    q = (text or "").lower()
+    replacements = [
+        (r"\bcadio[a-z]*\b", "cardiovascular"),
+        (r"\bcardi[a-z]*\b", "cardiovascular"),
+        (r"\bmitocondr[a-z]*\b", "mitochondria"),
+        (r"\bosmos[a-z]*\b", "osmosis"),
+        (r"\bdifus[a-z]*\b", "diffusion"),
+        (r"\bchemistr[a-z]*\b", "chemistry"),
+        (r"\bbiol[a-z]*\b", "biology"),
+        (r"\banatom[a-z]*\b", "anatomy"),
+        (r"\bphysiolog[a-z]*\b", "physiology"),
+        (r"\bmegnesium\b", "magnesium"),
+        (r"\bpre-?eclam[a-z]*\b", "pre-eclampsia"),
+        (r"\bhaemorr[a-z]*|\bhemorr[a-z]*\b", "haemorrhage"),
+    ]
+    for pattern, target in replacements:
+        q = re.sub(pattern, target, q)
+    return q
+
+
+def _is_greeting(text: str) -> bool:
+    cleaned = re.sub(r"[^a-z\s]", "", (text or "").strip().lower())
+    return bool(
+        re.match(
+            r"^(hi|hello|hey|good morning|good afternoon|good evening|medaase|akwaba)(\s+(tutor|there|coach))?$",
+            cleaned,
+        )
+    )
+
+
+def _call_live_llm(prompt: str) -> tuple[str | None, str | None]:
+    api_key = os.getenv("LLM_API_KEY", "").strip()
+    api_url = os.getenv("LLM_API_URL", "https://api.openai.com/v1/chat/completions").strip()
+    model = os.getenv("LLM_MODEL", "gpt-4o-mini").strip()
+
+    if not api_key or not api_url:
+        return None, None
+
+    payload = {
+        "model": model,
+        "temperature": 0.3,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+    }
+
+    req = urllib.request.Request(
+        api_url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            choices = data.get("choices") or []
+            if choices:
+                content = ((choices[0].get("message") or {}).get("content") or "").strip()
+                if content:
+                    return content, f"NursifyGH Live AI Tutor • {model}"
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError, KeyError, OSError):
+        pass
+
+    return None, None
+
+
+def _generate_tutor_response(prompt_text: str) -> dict:
+    trimmed = (prompt_text or "").strip()
+    q = _normalize_typos(trimmed)
+
+    if _is_greeting(trimmed):
+        return {
+            "framework": "Academic Study Coach • Ready",
+            "reply": (
+                "Welcome. I am here to help you master coursework, science fundamentals, clinical reasoning, and exam rationales.\n"
+                "How would you like to study right now?\n"
+                "• Chemistry & Biology: Ask about chemical bonding, pH/buffers, stoichiometry, cell organelles, ATP/respiration, or osmosis.\n"
+                "• Clinical Priorities & Safety: Ask about emergencies, vitals red flags, or medication monitoring (such as MgSO4 or PPH).\n"
+                "• Care Plans & Exam Prep: Ask how to frame a NANDA-I diagnosis, SMART goal, or break down a multiple-choice question."
+            ),
+        }
+
+    if any(k in q for k in ("medical term", "terminology", "prefix", "suffix", "root word")):
+        return {
+            "framework": "Medical Terminology • Structural & Clinical Guide",
+            "reply": (
+                "Core Definition: Medical terminology is the standardized clinical language used to describe anatomy, pathology, diagnostic procedures, and interventions precisely across health teams and health records.\n"
+                "1. Word Components:\n"
+                "• Root Word: The core meaning of the term, usually referring to a body part, organ, or system (e.g., cardi/o = heart, hepat/o = liver, nephr/o = kidney).\n"
+                "• Prefix: Placed at the beginning to modify meaning—such as location, number, time, or status (e.g., tachy- = fast, brady- = slow, dys- = difficult/painful/abnormal).\n"
+                "• Suffix: Placed at the end to indicate a condition, process, procedure, or disorder (e.g., -itis = inflammation, -ectomy = surgical removal, -megaly = enlargement).\n"
+                "• Combining Vowel: Usually 'o' (sometimes 'i' or 'a'), used to link a root to a suffix starting with a consonant (e.g., hepat/o + -itis -> hepatitis; cardi/o + -megaly -> cardiomegaly).\n"
+                "2. Academic & Clinical Precision Tip: Decode the suffix first, then the prefix, then the root—and avoid unapproved abbreviations in formal clinical documentation."
+            ),
+        }
+
+    if any(k in q for k in ("magnesium", "mgso4", "pre-eclampsia", "eclampsia")):
+        return {
+            "framework": "Obstetric Safety & High-Alert Medication Protocol",
+            "reply": (
+                "1. Clinical Priority: Severe pre-eclampsia—especially with persistent headache, visual disturbances, or epigastric pain—carries seizure/eclampsia risk.\n"
+                "2. Essential Safety Monitoring: Prior to and during magnesium sulfate (MgSO4) therapy, verify respiratory rate (typically >= 12–16 breaths/min), deep tendon (patellar) reflexes, and hourly urine output (typically >= 30 mL/hr).\n"
+                "3. Toxicity Recognition & Response: Respiratory depression, absent patellar reflexes, or oliguria signals magnesium toxicity. Hold/stop the infusion immediately, support airway/oxygenation, escalate urgently, and keep 10% calcium gluconate ready as antidote.\n"
+                "4. Exam Reasoning Rule: Link physiological signs directly to toxicity and safety before selecting supportive interventions."
+            ),
+        }
+
+    if any(k in q for k in ("pph", "postpartum", "haemorrhage", "bleeding")):
+        return {
+            "framework": "ABCDE + Uterine Tone Clinical Priority",
+            "reply": (
+                "1. Immediate Escalation: Call for help promptly—primary postpartum haemorrhage can progress rapidly.\n"
+                "2. Focused Assessment: Assess ABCDE alongside uterine tone (firm vs. soft/boggy), bladder distension, and estimated blood loss.\n"
+                "3. Priority Interventions: Perform gentle fundal massage to stimulate contraction, support prescribed uterotonic therapy and IV fluid/blood resuscitation, and monitor BP, pulse, and SpO2 closely.\n"
+                "4. Exam Reasoning Rule: Prioritise uterine tone, team escalation, and haemodynamic monitoring."
+            ),
+        }
+
+    if any(k in q for k in ("incidence", "prevalence", "epidemiology", "biostatistics", "rate")):
+        return {
+            "framework": "Epidemiology & Biostatistics • Core Distinctions",
+            "reply": (
+                "1. Incidence vs. Prevalence:\n"
+                "• Incidence measures NEW cases of a disease developing in a population at risk over a specified time period.\n"
+                "• Prevalence measures ALL existing cases (new and pre-existing) in a defined population at a point or period in time.\n"
+                "2. Key Relationship: Prevalence rises when incidence increases or when illness duration lengthens.\n"
+                "3. Exam Tip: Identify 'new cases' for incidence versus 'all existing cases / burden' for prevalence."
+            ),
+        }
+
+    if any(k in q for k in ("care plan", "nanda", "smart")):
+        return {
+            "framework": "NANDA-I / NIC / NOC Structured Care Planning",
+            "reply": (
+                "1. Assessment: Combine subjective symptoms with objective signs, vitals, and diagnostic findings.\n"
+                "2. Nursing Diagnosis (PES Format): Problem + related-to (etiology) + as-evidenced-by (defining characteristics).\n"
+                "3. SMART Outcome / Goal: Write a Specific, Measurable, Achievable, Relevant, and Time-bound patient outcome.\n"
+                "4. Interventions & Evaluation: State clear nursing actions with rationales, then evaluate against the goal."
+            ),
+        }
+
+    if any(k in q for k in ("chemistry", "ph", "acid", "base", "buffer", "bond", "covalent", "ionic", "mole", "molarity")):
+        return {
+            "framework": "Chemistry & Biochemistry • Core Principles",
+            "reply": (
+                f'Topic Under Review: "{trimmed}"\n'
+                "1. Core Chemical Concept: Structure, bonding (ionic vs. covalent/hydrogen bonds), concentration/moles, and acid-base/buffer equilibrium govern how substances react and behave in solutions and living systems.\n"
+                "2. Step-by-Step Breakdown: Identify reactants/ions/species, convert units consistently (e.g., mL to L, g to mol), and track proton/electron transfer or equilibrium shifts.\n"
+                "3. Biological & Clinical Relevance: Connect chemical behavior (such as pH buffering, osmolarity, or drug ionization/solubility) to physiological stability and safe lab/clinical interpretation."
+            ),
+        }
+
+    if any(k in q for k in ("biology", "cell", "organelle", "mitochondria", "atp", "osmosis", "diffusion", "cardiovascular", "anatomy", "physiology")):
+        return {
+            "framework": "Biology, Anatomy & Physiology • Core Mechanisms",
+            "reply": (
+                f'Topic Under Review: "{trimmed}"\n'
+                "1. Structure & Function: Identify the cellular, tissue, organ, or system structures involved and their homeostatic role.\n"
+                "2. Physiological / Biochemical Mechanism: Trace energy flow (e.g., ATP/cellular respiration), concentration/pressure gradients (e.g., diffusion, osmosis, blood flow/resistance), or feedback control.\n"
+                "3. Clinical & Exam Application: Link normal physiology to what happens during dysfunction, hypoxia, fluid/electrolyte shifts, or targeted therapy."
+            ),
+        }
+
+    return {
+        "framework": "Structured Academic & Clinical Reasoning Framework",
+        "reply": (
+            f'Topic Under Review: "{trimmed}"\n'
+            "1. Formal Concept & Context: Define the core concept clearly and identify the scientific, clinical, or academic setting.\n"
+            "2. Key Mechanisms / Principles: Break down the underlying physiology, chemistry, protocol, or analytical rule step by step.\n"
+            "3. Nursing / Professional Application: Specify priority assessments, safe interventions, and red flags to avoid.\n"
+            "4. Exam & Practice Check: Reinforce recall with flashcards (/revision), clinical cases (/cases), or CBT questions (/cbt-simulator)."
+        ),
+    }
+
+
+class TutorCoachView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request):
+        prompt = str(request.data.get("prompt") or "").strip()
+        if not prompt:
+            return Response({"detail": "Please provide a clinical or study question."}, status=status.HTTP_400_BAD_REQUEST)
+
+        live_reply, live_framework = _call_live_llm(prompt)
+        if live_reply and live_framework:
+            return Response(
+                {
+                    "reply": live_reply,
+                    "framework": live_framework,
+                    "live_llm_used": True,
+                },
+                status=status.HTTP_200_OK,
+            )
+
+        payload = _generate_tutor_response(prompt)
+        payload["live_llm_used"] = False
+        return Response(payload, status=status.HTTP_200_OK)
