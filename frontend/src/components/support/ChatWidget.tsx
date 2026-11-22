@@ -11,11 +11,18 @@ interface Message {
     id: string
 }
 
-const SUGGESTED_PROMPTS = [
+const STUDENT_PROMPTS = [
     "What are the priority interventions for a patient with severe pre-eclampsia?",
     "Explain the mechanism of action of Metformin.",
     "Test my NMC knowledge on Maternal Health.",
-    "How do I use the Clinical Logbook?",
+    "What new study tools are available on NursifyGH?",
+]
+
+const PUBLIC_PROMPTS = [
+    "What features does NursifyGH offer for nursing students?",
+    "Explain what a gland is (endocrine vs. exocrine).",
+    "How do the Clinical Case Studies and AI Tutor work?",
+    "How much does NursifyGH cost and how do I start a free trial?",
 ]
 
 export default function ChatWidget() {
@@ -42,7 +49,7 @@ export default function ChatWidget() {
                     id: "initial",
                     text: user
                         ? "Greetings. I am your **NursifyGH Chief Clinical Examiner**. I can assist you with advanced pathophysiology, NMC exam preparation, drug calculations, and NANDA care plans. How may I assist you today?"
-                        : "Welcome to **NursifyGH**. I am here to help you understand our platform, pricing, or how to sign up. Ask me anything."
+                        : "Welcome to **NursifyGH**! Ask me about our **AI Nursing & Science Tutor**, **NMC CBT Simulator**, **Interactive Clinical Case Studies**, **Flashcards**, pricing, or test me with any science or nursing question."
                 }
             ])
         }
@@ -237,7 +244,7 @@ export default function ChatWidget() {
                             <div className="pt-2">
                                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Try asking:</p>
                                 <div className="flex flex-col gap-2">
-                                    {SUGGESTED_PROMPTS.map((prompt, i) => (
+                                    {(user ? STUDENT_PROMPTS : PUBLIC_PROMPTS).map((prompt, i) => (
                                         <button
                                             key={i}
                                             onClick={() => sendMessage(prompt)}
