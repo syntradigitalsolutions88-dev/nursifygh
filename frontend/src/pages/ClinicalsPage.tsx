@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import api from "../api/client"
 import AppShell from "../components/shell/AppShell"
@@ -42,8 +42,9 @@ export default function ClinicalsPage() {
     const [form, setForm] = useState(EMPTY_FORM)
     const [downloading, setDownloading] = useState(false)
     const [activeCategory, setActiveCategory] = useState<string | null>(null)
+    const [searchQuery, setSearchQuery] = useState("")
 
-    const { data: skills, isLoading } = useQuery({
+    const { data: skills, isLoading, isError, refetch } = useQuery({
         queryKey: ["clinical-skills"],
         queryFn: async () => {
             const res = await api.get("/accounts/clinical-skills/")
@@ -51,7 +52,7 @@ export default function ClinicalsPage() {
         },
     })
 
-    const { data: historyLogs } = useQuery({
+    const { data: historyLogs, isLoading: isLoadingHistory } = useQuery({
         queryKey: ["clinical-logs", historySkill?.id],
         queryFn: async () => {
             if (!historySkill) return []
@@ -83,7 +84,7 @@ export default function ClinicalsPage() {
             invalidateAll()
             setAddSkill(null)
             setForm(EMPTY_FORM)
-            showToast("Log saved ✓")
+            showToast("Log saved")
         },
         onError: () => showToast("Failed to save log.", "error"),
     })
@@ -96,7 +97,7 @@ export default function ClinicalsPage() {
             invalidateAll()
             setEditLog(null)
             setForm(EMPTY_FORM)
-            showToast("Log updated ✓")
+            showToast("Log updated")
         },
         onError: () => showToast("Failed to update log.", "error"),
     })
@@ -131,7 +132,7 @@ export default function ClinicalsPage() {
             link.click()
             link.parentNode?.removeChild(link)
             window.URL.revokeObjectURL(url)
-            showToast("Logbook downloaded successfully!")
+            showToast("Logbook downloaded successfully.")
         } catch {
             showToast("Failed to download PDF. Please try again.", "error")
         } finally {
@@ -140,7 +141,10 @@ export default function ClinicalsPage() {
     }
 
     function openAddModal(skill: ClinicalSkill) {
-        setForm(EMPTY_FORM)
+        setForm({
+            ...EMPTY_FORM,
+            date_performed: new Date().toISOString().slice(0, 10),
+        })
         setAddSkill(skill)
     }
 
@@ -155,7 +159,31 @@ export default function ClinicalsPage() {
         setEditLog({ log, skill })
     }
 
-    // Loading state
+    const categories = useMemo(() => {
+        return (skills ?? []).reduce((acc, skill) => {
+            if (!acc[skill.category]) acc[skill.category] = []
+            acc[skill.category].push(skill)
+            return acc
+        }, {} as Record<string, ClinicalSkill[]>)
+    }, [skills])
+
+    const filteredEntries = useMemo(() => {
+        const needle = searchQuery.trim().toLowerCase()
+        return Object.entries(categories)
+            .filter(([category]) => !activeCategory || activeCategory === category)
+            .map(([category, catSkills]) => {
+                const matchingSkills = needle
+                    ? catSkills.filter(
+                        (sk) =>
+                            sk.procedure_name.toLowerCase().includes(needle) ||
+                            sk.category.toLowerCase().includes(needle)
+                    )
+                    : catSkills
+                return [category, catSkills, matchingSkills] as const
+            })
+            .filter(([, , matchingSkills]) => matchingSkills.length > 0)
+    }, [categories, activeCategory, searchQuery])
+
     if (isLoading) {
         return (
             <AppShell>
@@ -173,16 +201,10 @@ export default function ClinicalsPage() {
         )
     }
 
-    const categories = skills?.reduce((acc, skill) => {
-        if (!acc[skill.category]) acc[skill.category] = []
-        acc[skill.category].push(skill)
-        return acc
-    }, {} as Record<string, ClinicalSkill[]>)
-
     const totalCompleted = skills?.reduce((sum, s) => sum + s.completed_count, 0) ?? 0
     const totalRequired = skills?.reduce((sum, s) => sum + s.required_count, 0) ?? 0
-    const overallPercent = totalRequired > 0 ? Math.round((totalCompleted / totalRequired) * 100) : 0
-    const completeSkills = skills?.filter(s => s.completed_count >= s.required_count).length ?? 0
+    const overallPercent = totalRequired > 0 ? Math.min(Math.round((totalCompleted / totalRequired) * 100), 100) : 0
+    const completeSkills = skills?.filter((s) => s.completed_count >= s.required_count).length ?? 0
     const totalSkills = skills?.length ?? 0
 
     return (
@@ -193,7 +215,7 @@ export default function ClinicalsPage() {
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                     <div>
                         <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Clinical Tracker</p>
-                        <h1 className="mt-1 text-h1">Your N&MC Logbook</h1>
+                        <h1 className="mt-1 text-h1">Your N&amp;MC Logbook</h1>
                         <p className="text-sm text-on-surface-muted mt-2 leading-relaxed max-w-2xl">
                             Log every procedure you perform during clinical rotations. Your logbook is tailored for the{" "}
                             <strong className="text-brand-700">{user?.program_display || "Nursing"}</strong> program.
@@ -209,100 +231,160 @@ export default function ClinicalsPage() {
                             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                             </svg>
-                            {downloading ? "Generating PDF…" : "Download PDF"}
+                            {downloading ? "Generating PDF..." : "Download PDF"}
                         </Button>
                     </div>
                 </div>
 
-                {/* Stat Cards */}
-                {skills && totalRequired > 0 && (
+                {isError ? (
+                    <div className="rounded-xl border border-red-200 bg-red-50 p-6 text-center space-y-3">
+                        <p className="text-sm font-semibold text-red-800">Unable to load your clinical skills right now.</p>
+                        <Button size="sm" variant="secondary" onClick={() => refetch()}>
+                            Try Again
+                        </Button>
+                    </div>
+                ) : totalSkills === 0 ? (
+                    <div className="rounded-xl border border-dashed border-border bg-white p-10 text-center">
+                        <p className="text-sm font-semibold text-on-surface">No clinical skills configured yet.</p>
+                        <p className="text-xs text-on-surface-muted mt-1">
+                            Check back once your program skills list is available.
+                        </p>
+                    </div>
+                ) : (
                     <>
+                        {/* Stat Cards */}
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                             <div className="rounded-xl border border-border bg-white p-4">
                                 <p className="text-[10px] font-bold text-on-surface-muted uppercase tracking-wider">Procedures</p>
-                                <p className="mt-1 text-2xl font-black text-on-surface">{totalCompleted} <span className="text-base font-medium text-on-surface-muted">/ {totalRequired}</span></p>
+                                <p className="mt-1 text-2xl font-black text-on-surface">
+                                    {totalCompleted}{" "}
+                                    <span className="text-base font-medium text-on-surface-muted">/ {totalRequired}</span>
+                                </p>
                                 <p className="text-xs text-on-surface-muted mt-0.5">{totalSkills} total skills</p>
                             </div>
                             <div className="rounded-xl border border-border bg-white p-4">
                                 <p className="text-[10px] font-bold text-on-surface-muted uppercase tracking-wider">Completed</p>
                                 <p className="mt-1 text-2xl font-black text-green-700">{completeSkills}</p>
-                                <p className="text-xs text-on-surface-muted mt-0.5">Fully logged</p>
+                                <p className="text-xs text-on-surface-muted mt-0.5">
+                                    of {totalSkills} skills at target
+                                </p>
                             </div>
                             <div className="rounded-xl border-2 border-brand-300 bg-gradient-to-br from-brand-50 to-white p-4 col-span-2 sm:col-span-1">
                                 <p className="text-[10px] font-bold text-brand-700 uppercase tracking-wider">Progress</p>
                                 <p className="mt-1 text-2xl font-black text-brand-700">{overallPercent}%</p>
                                 <div className="mt-2 h-1.5 bg-brand-100 rounded-full overflow-hidden">
-                                    <div className="h-full bg-brand-600 rounded-full transition-all" style={{ width: `${overallPercent}%` }} />
+                                    <div
+                                        className="h-full bg-brand-600 rounded-full transition-all"
+                                        style={{ width: `${overallPercent}%` }}
+                                    />
                                 </div>
                             </div>
                         </div>
 
-                        {/* Category Tabs */}
-                        <div className="border-b border-border overflow-x-auto">
-                            <div className="flex gap-1 min-w-max">
-                                <button
-                                    onClick={() => setActiveCategory(null)}
-                                    className={`relative px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === null
+                        {/* Search + Category Tabs */}
+                        <div className="space-y-3">
+                            <input
+                                type="search"
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                placeholder="Search procedures (e.g. wound dressing, IV cannulation, vital signs)..."
+                                className="w-full rounded-xl border border-border bg-white px-3.5 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                            />
+
+                            <div className="border-b border-border overflow-x-auto">
+                                <div className="flex gap-1 min-w-max">
+                                    <button
+                                        type="button"
+                                        onClick={() => setActiveCategory(null)}
+                                        className={`relative px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === null
                                             ? "text-brand-700"
                                             : "text-on-surface-muted hover:text-on-surface"
-                                        }`}
-                                >
-                                    All Categories
-                                    {activeCategory === null && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-700" />}
-                                </button>
-                                {Object.entries(categories || {}).map(([category, catSkills]) => {
-                                    const completed = catSkills.reduce((s, sk) => s + sk.completed_count, 0)
-                                    const required = catSkills.reduce((s, sk) => s + sk.required_count, 0)
-                                    return (
-                                        <button
-                                            key={category}
-                                            onClick={() => setActiveCategory(category)}
-                                            className={`relative px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === category
+                                            }`}
+                                    >
+                                        All Categories
+                                        {activeCategory === null && (
+                                            <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-700" />
+                                        )}
+                                    </button>
+                                    {Object.entries(categories).map(([category, catSkills]) => {
+                                        const completed = catSkills.reduce((s, sk) => s + sk.completed_count, 0)
+                                        const required = catSkills.reduce((s, sk) => s + sk.required_count, 0)
+                                        return (
+                                            <button
+                                                type="button"
+                                                key={category}
+                                                onClick={() => setActiveCategory(category)}
+                                                className={`relative px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === category
                                                     ? "text-brand-700"
                                                     : "text-on-surface-muted hover:text-on-surface"
-                                                }`}
-                                        >
-                                            {category}
-                                            <span className={`ml-2 rounded-full px-2 py-0.5 text-xs font-bold ${activeCategory === category ? "bg-brand-100 text-brand-700" : "bg-surface-subtle text-on-surface-muted"
-                                                }`}>
-                                                {completed}/{required}
-                                            </span>
-                                            {activeCategory === category && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-700" />}
-                                        </button>
-                                    )
-                                })}
+                                                    }`}
+                                            >
+                                                {category}
+                                                <span
+                                                    className={`ml-2 rounded-full px-2 py-0.5 text-xs font-bold ${activeCategory === category
+                                                        ? "bg-brand-100 text-brand-700"
+                                                        : "bg-surface-subtle text-on-surface-muted"
+                                                        }`}
+                                                >
+                                                    {completed}/{required}
+                                                </span>
+                                                {activeCategory === category && (
+                                                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-700" />
+                                                )}
+                                            </button>
+                                        )
+                                    })}
+                                </div>
                             </div>
                         </div>
+
+                        {/* Categories */}
+                        {filteredEntries.length > 0 ? (
+                            filteredEntries.map(([category, catSkills, matchingSkills]) => {
+                                const catCompleted = catSkills.reduce((s, sk) => s + sk.completed_count, 0)
+                                const catRequired = catSkills.reduce((s, sk) => s + sk.required_count, 0)
+                                return (
+                                    <div key={category} className="space-y-3">
+                                        <div className="flex items-end justify-between">
+                                            <div>
+                                                <h2 className="text-base font-bold text-on-surface">{category}</h2>
+                                                <p className="text-xs text-on-surface-muted">
+                                                    {catCompleted} of {catRequired} procedures completed
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="rounded-xl border border-border bg-white divide-y divide-border overflow-hidden shadow-sm">
+                                            {matchingSkills.map((skill) => (
+                                                <SkillRow
+                                                    key={skill.id}
+                                                    skill={skill}
+                                                    onAdd={() => openAddModal(skill)}
+                                                    onHistory={() => setHistorySkill(skill)}
+                                                />
+                                            ))}
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        ) : (
+                            <div className="rounded-xl border border-dashed border-border bg-white p-8 text-center">
+                                <p className="text-sm font-medium text-on-surface-muted">
+                                    No procedures match &ldquo;{searchQuery}&rdquo;.
+                                </p>
+                                <button
+                                    type="button"
+                                    onClick={() => {
+                                        setSearchQuery("")
+                                        setActiveCategory(null)
+                                    }}
+                                    className="mt-2 text-xs font-bold text-brand-700 hover:underline"
+                                >
+                                    Reset filters
+                                </button>
+                            </div>
+                        )}
                     </>
                 )}
-
-                {/* Categories */}
-                {Object.entries(categories || {})
-                    .filter(([category]) => !activeCategory || activeCategory === category)
-                    .map(([category, catSkills]) => {
-                        const catCompleted = catSkills.reduce((s, sk) => s + sk.completed_count, 0)
-                        const catRequired = catSkills.reduce((s, sk) => s + sk.required_count, 0)
-                        return (
-                            <div key={category} className="space-y-3">
-                                <div className="flex items-end justify-between">
-                                    <div>
-                                        <h2 className="text-base font-bold text-on-surface">{category}</h2>
-                                        <p className="text-xs text-on-surface-muted">{catCompleted} of {catRequired} procedures completed</p>
-                                    </div>
-                                </div>
-                                <div className="rounded-xl border border-border bg-white divide-y divide-border overflow-hidden shadow-sm">
-                                    {catSkills.map((skill) => (
-                                        <SkillRow
-                                            key={skill.id}
-                                            skill={skill}
-                                            onAdd={() => openAddModal(skill)}
-                                            onHistory={() => setHistorySkill(skill)}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        )
-                    })}
             </div>
 
             {/* Add / Edit Modal */}
@@ -310,7 +392,10 @@ export default function ClinicalsPage() {
                 <Modal
                     title={addSkill ? "Log Procedure" : "Edit Log Entry"}
                     subtitle={addSkill?.procedure_name || editLog?.skill.procedure_name}
-                    onClose={() => { setAddSkill(null); setEditLog(null) }}
+                    onClose={() => {
+                        setAddSkill(null)
+                        setEditLog(null)
+                    }}
                 >
                     <div className="space-y-4">
                         <Field label="Date Performed" required>
@@ -325,7 +410,7 @@ export default function ClinicalsPage() {
                         <Field label="Hospital / Facility" required>
                             <input
                                 type="text"
-                                placeholder="e.g. Korle Bu Teaching Hospital"
+                                placeholder="e.g. Holy Family Hospital, Berekum"
                                 value={form.hospital}
                                 onChange={(e) => setForm({ ...form, hospital: e.target.value })}
                                 className="w-full rounded-lg border border-border px-3 py-2.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
@@ -367,7 +452,10 @@ export default function ClinicalsPage() {
                         <Button
                             variant="secondary"
                             fullWidth
-                            onClick={() => { setAddSkill(null); setEditLog(null) }}
+                            onClick={() => {
+                                setAddSkill(null)
+                                setEditLog(null)
+                            }}
                         >
                             Cancel
                         </Button>
@@ -387,7 +475,7 @@ export default function ClinicalsPage() {
                                 !form.supervisor_name.trim()
                             }
                         >
-                            {createLog.isPending || updateLog.isPending ? "Saving…" : "Save Log"}
+                            {createLog.isPending || updateLog.isPending ? "Saving..." : "Save Log"}
                         </Button>
                     </div>
                 </Modal>
@@ -401,10 +489,15 @@ export default function ClinicalsPage() {
                     onClose={() => setHistorySkill(null)}
                     maxWidth="lg"
                 >
-                    {historyLogs && historyLogs.length > 0 ? (
+                    {isLoadingHistory ? (
+                        <div className="text-center py-10 text-sm text-on-surface-muted">Loading history...</div>
+                    ) : historyLogs && historyLogs.length > 0 ? (
                         <div className="space-y-2">
                             {historyLogs.map((log) => (
-                                <div key={log.id} className="rounded-lg border border-border bg-white p-4 hover:border-brand-300 transition-colors">
+                                <div
+                                    key={log.id}
+                                    className="rounded-lg border border-border bg-white p-4 hover:border-brand-300 transition-colors"
+                                >
                                     <div className="flex items-start justify-between gap-3">
                                         <div className="flex-1 min-w-0">
                                             <div className="flex items-center gap-2 mb-1">
@@ -413,27 +506,31 @@ export default function ClinicalsPage() {
                                                 </span>
                                             </div>
                                             <p className="text-sm font-medium text-on-surface mt-1">
-                                                {log.hospital}{log.ward ? ` · ${log.ward}` : ""}
+                                                {log.hospital}
+                                                {log.ward ? ` · ${log.ward}` : ""}
                                             </p>
                                             {log.supervisor_name && (
                                                 <p className="text-xs text-on-surface-muted mt-1">
-                                                    Supervisor: <strong className="text-on-surface">{log.supervisor_name}</strong>
+                                                    Supervisor:{" "}
+                                                    <strong className="text-on-surface">{log.supervisor_name}</strong>
                                                 </p>
                                             )}
                                             {log.notes && (
                                                 <p className="text-xs text-on-surface-muted mt-1.5 italic border-l-2 border-amber-300 pl-2">
-                                                    "{log.notes}"
+                                                    &ldquo;{log.notes}&rdquo;
                                                 </p>
                                             )}
                                         </div>
                                         <div className="flex items-center gap-1 shrink-0">
                                             <button
+                                                type="button"
                                                 onClick={() => openEditModal(log, historySkill)}
                                                 className="rounded-md px-2.5 py-1 text-xs font-bold text-brand-700 hover:bg-brand-50 transition-colors"
                                             >
                                                 Edit
                                             </button>
                                             <button
+                                                type="button"
                                                 onClick={() => setConfirmDelete({ log, skill: historySkill })}
                                                 className="rounded-md px-2.5 py-1 text-xs font-bold text-danger-700 hover:bg-danger-50 transition-colors"
                                             >
@@ -448,7 +545,11 @@ export default function ClinicalsPage() {
                         <div className="text-center py-12">
                             <p className="text-sm text-on-surface-muted">No logs recorded yet for this procedure.</p>
                             <button
-                                onClick={() => { setHistorySkill(null); openAddModal(historySkill) }}
+                                type="button"
+                                onClick={() => {
+                                    setHistorySkill(null)
+                                    openAddModal(historySkill)
+                                }}
                                 className="mt-3 text-xs font-bold text-brand-600 hover:underline"
                             >
                                 + Add your first log
@@ -463,7 +564,8 @@ export default function ClinicalsPage() {
                 <Modal title="Delete this log?" onClose={() => setConfirmDelete(null)} maxWidth="sm">
                     <div className="rounded-lg bg-red-50 border border-red-200 p-3 mb-4">
                         <p className="text-sm text-red-900 leading-relaxed">
-                            This will permanently remove the log from <strong>{formatDate(confirmDelete.log.date_performed)}</strong>. This action cannot be undone.
+                            This will permanently remove the log from{" "}
+                            <strong>{formatDate(confirmDelete.log.date_performed)}</strong>. This action cannot be undone.
                         </p>
                     </div>
                     <div className="flex gap-2">
@@ -476,7 +578,7 @@ export default function ClinicalsPage() {
                             disabled={deleteLog.isPending}
                             className="!bg-danger-600 hover:!bg-danger-700"
                         >
-                            {deleteLog.isPending ? "Deleting…" : "Delete Log"}
+                            {deleteLog.isPending ? "Deleting..." : "Delete Log"}
                         </Button>
                     </div>
                 </Modal>
@@ -484,8 +586,10 @@ export default function ClinicalsPage() {
 
             {/* Toast */}
             {toast && (
-                <div className={`fixed top-6 right-6 z-[60] rounded-lg px-4 py-3 shadow-xl text-sm font-medium text-white animate-in slide-in-from-top-4 duration-300 ${toast.type === "success" ? "bg-brand-700" : "bg-danger-600"
-                    }`}>
+                <div
+                    className={`fixed top-6 right-6 z-[60] rounded-lg px-4 py-3 shadow-xl text-sm font-medium text-white transition-all ${toast.type === "success" ? "bg-brand-700" : "bg-danger-600"
+                        }`}
+                >
                     {toast.message}
                 </div>
             )}
@@ -493,15 +597,22 @@ export default function ClinicalsPage() {
     )
 }
 
-// ─── Sub-components ────────────────────────────────────────────────────────────
+// Sub-components
 
-function SkillRow({ skill, onAdd, onHistory }: {
+function SkillRow({
+    skill,
+    onAdd,
+    onHistory,
+}: {
     skill: ClinicalSkill
     onAdd: () => void
     onHistory: () => void
 }) {
-    const isComplete = skill.completed_count >= skill.required_count
-    const percent = Math.min((skill.completed_count / skill.required_count) * 100, 100)
+    const isComplete = skill.required_count > 0 && skill.completed_count >= skill.required_count
+    const percent =
+        skill.required_count > 0
+            ? Math.min((skill.completed_count / skill.required_count) * 100, 100)
+            : 0
 
     return (
         <div className={`flex items-center justify-between gap-4 px-4 py-3.5 ${isComplete ? "bg-green-50/40" : ""}`}>
@@ -510,7 +621,7 @@ function SkillRow({ skill, onAdd, onHistory }: {
                     <p className="text-sm font-semibold text-on-surface">{skill.procedure_name}</p>
                     {isComplete && (
                         <span className="inline-flex items-center rounded-full bg-green-500 px-2 py-0.5 text-[10px] font-bold text-white">
-                            ✓ Complete
+                            Complete
                         </span>
                     )}
                 </div>
@@ -529,6 +640,7 @@ function SkillRow({ skill, onAdd, onHistory }: {
 
             <div className="flex items-center gap-2 shrink-0">
                 <button
+                    type="button"
                     onClick={onHistory}
                     disabled={skill.completed_count === 0}
                     className="text-xs font-bold text-brand-700 hover:underline disabled:opacity-40 disabled:no-underline"
@@ -536,6 +648,7 @@ function SkillRow({ skill, onAdd, onHistory }: {
                     History
                 </button>
                 <button
+                    type="button"
                     onClick={onAdd}
                     className="h-9 w-9 rounded-lg bg-brand-700 text-white hover:bg-brand-800 flex items-center justify-center text-lg font-bold transition-colors shadow-sm active:scale-95"
                     aria-label={`Add ${skill.procedure_name}`}
@@ -547,7 +660,13 @@ function SkillRow({ skill, onAdd, onHistory }: {
     )
 }
 
-function Modal({ title, subtitle, onClose, children, maxWidth = "md" }: {
+function Modal({
+    title,
+    subtitle,
+    onClose,
+    children,
+    maxWidth = "md",
+}: {
     title: string
     subtitle?: string
     onClose: () => void
@@ -566,7 +685,12 @@ function Modal({ title, subtitle, onClose, children, maxWidth = "md" }: {
                         <h2 className="text-lg font-bold text-on-surface">{title}</h2>
                         {subtitle && <p className="text-sm text-brand-700 mt-0.5 font-medium">{subtitle}</p>}
                     </div>
-                    <button onClick={onClose} className="text-on-surface-muted hover:text-on-surface text-2xl leading-none -mt-1" aria-label="Close">
+                    <button
+                        type="button"
+                        onClick={onClose}
+                        className="text-on-surface-muted hover:text-on-surface text-2xl leading-none -mt-1"
+                        aria-label="Close"
+                    >
                         ×
                     </button>
                 </div>
@@ -576,7 +700,12 @@ function Modal({ title, subtitle, onClose, children, maxWidth = "md" }: {
     )
 }
 
-function Field({ label, hint, required, children }: {
+function Field({
+    label,
+    hint,
+    required,
+    children,
+}: {
     label: string
     hint?: string
     required?: boolean
@@ -595,5 +724,10 @@ function Field({ label, hint, required, children }: {
 }
 
 function formatDate(dateStr: string) {
-    return new Date(dateStr).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })
+    const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(dateStr)
+    const parsed = match
+        ? new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]))
+        : new Date(dateStr)
+    if (Number.isNaN(parsed.getTime())) return dateStr
+    return parsed.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })
 }

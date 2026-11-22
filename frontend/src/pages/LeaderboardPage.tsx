@@ -11,6 +11,15 @@ interface LeaderboardEntry {
     is_current_user: boolean
 }
 
+function formatProgramLabel(program?: string, programDisplay?: string): string {
+    if (programDisplay) return programDisplay
+    if (program === "PSYCHIATRIC") return "Psychiatric Nursing (RPN)"
+    if (program === "MIDWIFERY") return "Midwifery (RM)"
+    if (program === "COMMUNITY") return "Community Health (CHN)"
+    if (program === "GENERAL") return "General Nursing (RGN)"
+    return "All Programs"
+}
+
 export default function LeaderboardPage() {
     const { user } = useAuth()
     const { data, isLoading, isError } = useQuery({
@@ -23,11 +32,13 @@ export default function LeaderboardPage() {
     })
 
     const leaderboard: LeaderboardEntry[] = data?.leaderboard || []
-    const myRank = data?.my_rank || null
-    const myScore = data?.my_score || 0
+    const myRank: number | null = data?.my_rank ?? null
+    const myScore: number = data?.my_score ?? 0
 
     const top3 = leaderboard.slice(0, 3)
     const rest = leaderboard.slice(3)
+
+    const programLabel = formatProgramLabel(user?.program, user?.program_display)
 
     return (
         <AppShell>
@@ -37,13 +48,14 @@ export default function LeaderboardPage() {
                 <header className="text-center space-y-2 pt-6">
                     <h1 className="text-3xl font-black text-gray-900 tracking-tight">Leaderboard</h1>
                     <p className="text-gray-500 font-medium text-sm">
-                        Top performers in {user?.program_display} • {user?.level_display}
+                        Top performers in {programLabel}
+                        {user?.level_display ? ` • ${user.level_display}` : ""}
                     </p>
                 </header>
 
                 {/* Your Personal Rank Card */}
                 {myRank && (
-                    <div className="bg-gray-900 rounded-2xl p-6 text-white shadow-xl flex items-center justify-between relative overflow-hidden">
+                    <div className="bg-gray-900 rounded-2xl p-6 text-white shadow-xl flex items-center justify-between gap-4 relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-brand-500 opacity-20 rounded-full blur-3xl -mr-20 -mt-20"></div>
                         <div className="relative z-10">
                             <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">Your Standing</p>
@@ -66,9 +78,9 @@ export default function LeaderboardPage() {
                         Failed to load leaderboard.
                     </div>
                 ) : leaderboard.length === 0 ? (
-                    <div className="text-center py-20 bg-gray-50 rounded-2xl border border-gray-200 border-dashed">
+                    <div className="text-center py-20 bg-gray-50 rounded-2xl border border-gray-200 border-dashed px-4">
                         <p className="text-lg font-bold text-gray-700">No rankings yet.</p>
-                        <p className="text-gray-500 mt-1 text-sm">Take at least 3 quizzes to secure your spot.</p>
+                        <p className="text-gray-500 mt-1 text-sm">Complete at least 3 quizzes to appear on the leaderboard.</p>
                     </div>
                 ) : (
                     <div className="space-y-6">
@@ -77,60 +89,85 @@ export default function LeaderboardPage() {
                         <div className="grid grid-cols-3 gap-2 sm:gap-4 items-end pt-8">
                             {/* 2nd Place */}
                             {top3[1] && (
-                                <div className="relative bg-white rounded-xl border border-gray-200 p-4 text-center shadow-sm">
+                                <div className={`relative rounded-xl border p-3 sm:p-4 text-center shadow-sm min-w-0 ${top3[1].is_current_user ? "bg-brand-50/60 border-brand-300" : "bg-white border-gray-200"}`}>
                                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gray-100 text-gray-600 font-bold text-[10px] px-2 py-1 rounded-full border border-gray-200">2ND</div>
-                                    <div className="w-12 h-12 mx-auto bg-gray-50 rounded-full flex items-center justify-center text-xl font-bold text-gray-400 mb-3 mt-1 border border-gray-100">2</div>
-                                    <h3 className="font-bold text-gray-900 text-sm truncate">{top3[1].name}</h3>
-                                    <p className="text-xs font-semibold text-gray-500 mt-1">{top3[1].average_score}%</p>
+                                    <div className="w-11 h-11 sm:w-12 sm:h-12 mx-auto bg-gray-50 rounded-full flex items-center justify-center text-lg sm:text-xl font-bold text-gray-400 mb-2 sm:mb-3 mt-1 border border-gray-100">2</div>
+                                    <h3 className="font-bold text-gray-900 text-xs sm:text-sm truncate">
+                                        {top3[1].name}
+                                    </h3>
+                                    {top3[1].is_current_user && (
+                                        <span className="inline-block mt-1 text-[10px] bg-brand-600 text-white px-1.5 py-0.5 rounded uppercase tracking-wider font-semibold">You</span>
+                                    )}
+                                    <p className="text-xs sm:text-sm font-bold text-gray-700 mt-1">{top3[1].average_score}%</p>
+                                    <p className="text-[11px] text-gray-400">{top3[1].total_quizzes} quizzes</p>
                                 </div>
                             )}
 
                             {/* 1st Place */}
                             {top3[0] && (
-                                <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl border border-gray-700 p-5 text-center shadow-lg transform sm:-translate-y-4">
+                                <div className={`relative bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl border p-3.5 sm:p-5 text-center shadow-lg transform sm:-translate-y-4 min-w-0 ${top3[0].is_current_user ? "border-brand-400 ring-2 ring-brand-400/40" : "border-gray-700"}`}>
                                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-500 text-white font-bold text-[10px] px-3 py-1 rounded-full shadow-sm">1ST</div>
-                                    <div className="w-16 h-16 mx-auto bg-gray-800 rounded-full flex items-center justify-center text-2xl font-black text-brand-400 mb-3 mt-1 border border-gray-700">1</div>
-                                    <h3 className="font-black text-white text-sm truncate">{top3[0].name}</h3>
-                                    <p className="text-xs font-bold text-brand-400 mt-1">{top3[0].average_score}%</p>
+                                    <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto bg-gray-800 rounded-full flex items-center justify-center text-xl sm:text-2xl font-black text-brand-400 mb-2 sm:mb-3 mt-1 border border-gray-700">1</div>
+                                    <h3 className="font-black text-white text-xs sm:text-sm truncate">
+                                        {top3[0].name}
+                                    </h3>
+                                    {top3[0].is_current_user && (
+                                        <span className="inline-block mt-1 text-[10px] bg-brand-500 text-white px-1.5 py-0.5 rounded uppercase tracking-wider font-semibold">You</span>
+                                    )}
+                                    <p className="text-xs sm:text-sm font-bold text-brand-400 mt-1">{top3[0].average_score}%</p>
+                                    <p className="text-[11px] text-gray-400">{top3[0].total_quizzes} quizzes</p>
                                 </div>
                             )}
 
                             {/* 3rd Place */}
                             {top3[2] && (
-                                <div className="relative bg-white rounded-xl border border-gray-200 p-4 text-center shadow-sm">
+                                <div className={`relative rounded-xl border p-3 sm:p-4 text-center shadow-sm min-w-0 ${top3[2].is_current_user ? "bg-brand-50/60 border-brand-300" : "bg-white border-gray-200"}`}>
                                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-50 text-orange-600 font-bold text-[10px] px-2 py-1 rounded-full border border-orange-100">3RD</div>
-                                    <div className="w-12 h-12 mx-auto bg-orange-50 rounded-full flex items-center justify-center text-xl font-bold text-orange-400 mb-3 mt-1 border border-orange-100">3</div>
-                                    <h3 className="font-bold text-gray-900 text-sm truncate">{top3[2].name}</h3>
-                                    <p className="text-xs font-semibold text-gray-500 mt-1">{top3[2].average_score}%</p>
+                                    <div className="w-11 h-11 sm:w-12 sm:h-12 mx-auto bg-orange-50 rounded-full flex items-center justify-center text-lg sm:text-xl font-bold text-orange-400 mb-2 sm:mb-3 mt-1 border border-orange-100">3</div>
+                                    <h3 className="font-bold text-gray-900 text-xs sm:text-sm truncate">
+                                        {top3[2].name}
+                                    </h3>
+                                    {top3[2].is_current_user && (
+                                        <span className="inline-block mt-1 text-[10px] bg-brand-600 text-white px-1.5 py-0.5 rounded uppercase tracking-wider font-semibold">You</span>
+                                    )}
+                                    <p className="text-xs sm:text-sm font-bold text-gray-700 mt-1">{top3[2].average_score}%</p>
+                                    <p className="text-[11px] text-gray-400">{top3[2].total_quizzes} quizzes</p>
                                 </div>
                             )}
                         </div>
 
                         {/* THE REST OF THE LIST */}
-                        <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-                            {rest.map((entry) => (
-                                <div
-                                    key={entry.rank}
-                                    className={`flex items-center justify-between p-4 border-b border-gray-100 last:border-0 transition-colors ${entry.is_current_user ? "bg-brand-50/50" : "hover:bg-gray-50"
-                                        }`}
-                                >
-                                    <div className="flex items-center gap-4">
-                                        <span className={`w-6 text-center font-bold text-sm ${entry.is_current_user ? "text-brand-700" : "text-gray-400"}`}>
-                                            {entry.rank}
-                                        </span>
-                                        <div>
-                                            <p className={`font-semibold text-sm ${entry.is_current_user ? "text-brand-900" : "text-gray-900"}`}>
-                                                {entry.name} {entry.is_current_user && <span className="ml-2 text-[10px] bg-brand-600 text-white px-1.5 py-0.5 rounded uppercase tracking-wider">You</span>}
-                                            </p>
-                                            <p className="text-xs text-gray-500 font-medium">{entry.total_quizzes} quizzes</p>
+                        {rest.length > 0 && (
+                            <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                                {rest.map((entry) => (
+                                    <div
+                                        key={entry.rank}
+                                        className={`flex items-center justify-between gap-3 p-4 border-b border-gray-100 last:border-0 transition-colors ${entry.is_current_user ? "bg-brand-50/50" : "hover:bg-gray-50"
+                                            }`}
+                                    >
+                                        <div className="flex items-center gap-4 min-w-0">
+                                            <span className={`w-6 shrink-0 text-center font-bold text-sm ${entry.is_current_user ? "text-brand-700" : "text-gray-400"}`}>
+                                                {entry.rank}
+                                            </span>
+                                            <div className="min-w-0">
+                                                <p className={`font-semibold text-sm truncate ${entry.is_current_user ? "text-brand-900" : "text-gray-900"}`}>
+                                                    {entry.name}
+                                                    {entry.is_current_user && (
+                                                        <span className="ml-2 text-[10px] bg-brand-600 text-white px-1.5 py-0.5 rounded uppercase tracking-wider align-middle">
+                                                            You
+                                                        </span>
+                                                    )}
+                                                </p>
+                                                <p className="text-xs text-gray-500 font-medium">{entry.total_quizzes} quizzes</p>
+                                            </div>
+                                        </div>
+                                        <div className={`shrink-0 font-bold text-sm ${entry.is_current_user ? "text-brand-700" : "text-gray-700"}`}>
+                                            {entry.average_score}%
                                         </div>
                                     </div>
-                                    <div className={`font-bold text-sm ${entry.is_current_user ? "text-brand-700" : "text-gray-700"}`}>
-                                        {entry.average_score}%
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 )}
             </div>
