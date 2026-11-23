@@ -315,6 +315,8 @@ export interface AmbassadorStats {
     recent: {
         amount: string
         referred_email: string
+        full_name?: string
+        status?: string
         is_paid_out: boolean
         date: string
     }[]
