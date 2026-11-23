@@ -1,3 +1,4 @@
+from django.core.cache import cache
 """Authentication, profile, clinical tracking, and AI endpoints."""
 
 from __future__ import annotations
@@ -608,6 +609,23 @@ class BecomeAmbassadorView(APIView):
 
 
 
+
+def _get_trashed_user_ids():
+    ids = cache.get("nursify_admin_trashed_user_ids", [])
+    return [int(x) for x in ids if str(x).isdigit()]
+
+def _set_trashed_user_ids(ids):
+    clean = []
+    for x in ids:
+        try:
+            val = int(x)
+            if val not in clean:
+                clean.append(val)
+        except (TypeError, ValueError):
+            pass
+    cache.set("nursify_admin_trashed_user_ids", clean, timeout=60 * 60 * 24 * 30)
+
+
 class AdminCommissionsOverviewView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -709,7 +727,9 @@ class AdminCommissionsOverviewView(APIView):
         ]
 
 
-        users_qs = User.objects.order_by("-date_joined")[:200]
+        trashed_ids = _get_trashed_user_ids()
+        users_qs = User.objects.exclude(id__in=trashed_ids).order_by("-date_joined")[:200]
+        trashed_users_qs = User.objects.filter(id__in=trashed_ids).order_by("-date_joined")[:100]
         user_rows = [
             {
                 "id": u.id,
@@ -730,9 +750,30 @@ class AdminCommissionsOverviewView(APIView):
             for u in users_qs
         ]
 
+        trashed_user_rows = [
+            {
+                "id": u.id,
+                "full_name": u.full_name or "",
+                "email": u.email,
+                "phone_number": u.phone_number or "",
+                "program": u.program or "",
+                "institution": getattr(u, "institution", "") or getattr(u, "school", "") or "",
+                "level": u.level,
+                "has_paid": bool(u.has_paid),
+                "is_subscribed": bool(u.is_subscribed),
+                "is_ambassador": bool(u.is_ambassador),
+                "referral_code": u.referral_code or "",
+                "referred_by": u.referred_by or "",
+                "is_staff": bool(u.is_staff or u.is_superuser),
+                "date_joined": (getattr(u, "date_joined", None) or getattr(u, "created_at", None) or now).isoformat(),
+            }
+            for u in trashed_users_qs
+        ]
+
         return Response({
             "generated_at": now.isoformat(),
             "users": user_rows,
+            "trashed_users": trashed_user_rows,
             "summary": {
                 "total_users": total_users,
                 "paid_users": paid_users,
@@ -923,7 +964,51 @@ class AdminCommissionsActionView(APIView):
                 target = User.objects.get(id=user_id)
             except User.DoesNotExist:
                 return Response({"error": "User not found."}, status=404)
+            trashed = _get_trashed_user_ids()
+            if target.id not in trashed:
+                trashed.append(target.id)
+                _set_trashed_user_ids(trashed)
+            target.is_active = False
+            target.save(update_fields=["is_active"])
+            return Response({"ok": True, "action": action, "user_id": target.id})
+
+        if action == "restore_user":
+            user_id = request.data.get("user_id")
+            if not user_id:
+                return Response({"error": "user_id is required."}, status=400)
+            try:
+                target = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                return Response({"error": "User not found."}, status=404)
+            trashed = [x for x in _get_trashed_user_ids() if int(x) != int(target.id)]
+            _set_trashed_user_ids(trashed)
+            target.is_active = True
+            target.save(update_fields=["is_active"])
+            return Response({"ok": True, "action": action, "user_id": target.id})
+
+        if action == "permanent_delete_user":
+            user_id = request.data.get("user_id")
+            if not user_id:
+                return Response({"error": "user_id is required."}, status=400)
+            if int(user_id) == int(request.user.id):
+                return Response({"error": "You cannot permanently delete your own currently logged-in admin account."}, status=400)
+            try:
+                target = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                return Response({"error": "User not found."}, status=404)
+            try:
+                from payments.models import PaymentTransaction
+                PaymentTransaction.objects.filter(student=target).delete()
+            except Exception:
+                pass
+            try:
+                AmbassadorCommission.objects.filter(ambassador=target).delete()
+                AmbassadorCommission.objects.filter(referred_student=target).delete()
+            except Exception:
+                pass
             target.delete()
+            trashed = [x for x in _get_trashed_user_ids() if int(x) != int(user_id)]
+            _set_trashed_user_ids(trashed)
             return Response({"ok": True, "action": action, "user_id": user_id})
 
         if action == "delete_payment":

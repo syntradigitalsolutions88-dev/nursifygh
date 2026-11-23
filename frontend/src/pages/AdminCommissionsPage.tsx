@@ -58,6 +58,7 @@ interface AdminPaymentRow {
 interface AdminOverviewResponse {
     generated_at: string
     users: AdminUserRow[]
+    trashed_users?: AdminUserRow[]
     summary: {
         total_users: number
         paid_users: number
@@ -148,7 +149,7 @@ function matchesDateFilter(
 export default function AdminCommissionsPage() {
     const { user } = useAuth()
     const queryClient = useQueryClient()
-    const [tab, setTab] = useState<"users" | "ambassadors" | "referrals" | "payments">("users")
+    const [tab, setTab] = useState<"users" | "ambassadors" | "referrals" | "payments" | "trash">("users")
     const [search, setSearch] = useState("")
     const [quickDate, setQuickDate] = useState<"all" | "today" | "month" | "year">("all")
     const [filterYear, setFilterYear] = useState("")
@@ -192,7 +193,9 @@ export default function AdminCommissionsPage() {
                     : "Disabled ambassador status.",
                 grant_pass: "Granted 120-day subscription pass to user.",
                 revoke_pass: "Revoked active subscription pass from user.",
-                delete_user: "User account deleted.",
+                delete_user: "Moved user to Trash. You can restore or permanently delete them in the Trash tab.",
+                restore_user: "Restored user account from Trash.",
+                permanent_delete_user: "Permanently deleted user account.",
                 delete_commission: "Commission record deleted.",
                 clear_referral: "Cleared referral code from student.",
             }
@@ -930,6 +933,66 @@ export default function AdminCommissionsPage() {
                                                 </td>
                                             </tr>
                                         ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+
+                        {tab === "trash" && (
+                            <div className="rounded-2xl border border-border bg-white shadow-sm overflow-x-auto">
+                                <table className="w-full text-left text-xs sm:text-sm">
+                                    <thead className="bg-surface-subtle text-on-surface-muted uppercase text-[11px]">
+                                        <tr>
+                                            <th className="px-4 py-3">Trashed User</th>
+                                            <th className="px-4 py-3">Program / School</th>
+                                            <th className="px-4 py-3">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-border">
+                                        {(data.trashed_users || []).length === 0 ? (
+                                            <tr>
+                                                <td colSpan={3} className="px-4 py-6 text-center text-on-surface-muted">
+                                                    Trash is empty. Deleted users appear here so you can restore or delete permanently.
+                                                </td>
+                                            </tr>
+                                        ) : (
+                                            (data.trashed_users || []).map((tu) => (
+                                                <tr key={tu.id} className="hover:bg-surface-subtle/40">
+                                                    <td className="px-4 py-3">
+                                                        <div className="font-bold text-on-surface">{tu.full_name || "—"}</div>
+                                                        <div className="text-xs text-on-surface-muted">
+                                                            {tu.email} {tu.phone_number ? `· ${tu.phone_number}` : ""}
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-4 py-3 text-xs">
+                                                        <div>{tu.program || "—"} {tu.level ? `· L${tu.level}` : ""}</div>
+                                                        <div className="text-on-surface-muted">{tu.institution || "School not set"}</div>
+                                                    </td>
+                                                    <td className="px-4 py-3">
+                                                        <div className="flex flex-wrap gap-2">
+                                                            <button
+                                                                disabled={actionMutation.isPending}
+                                                                onClick={() => actionMutation.mutate({ action: "restore_user", user_id: tu.id })}
+                                                                className="rounded-lg bg-brand-700 px-3 py-1.5 text-xs font-bold text-white hover:bg-brand-800 disabled:opacity-50"
+                                                            >
+                                                                Restore
+                                                            </button>
+                                                            <button
+                                                                disabled={actionMutation.isPending}
+                                                                onClick={() => {
+                                                                    if (window.confirm(`Permanently delete ${tu.email}? This cannot be undone.`)) {
+                                                                        actionMutation.mutate({ action: "permanent_delete_user", user_id: tu.id })
+                                                                    }
+                                                                }}
+                                                                className="rounded-lg border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-bold text-red-700 hover:bg-red-100 disabled:opacity-50"
+                                                            >
+                                                                Delete Forever
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            ))
+                                        )}
                                     </tbody>
                                 </table>
                             </div>
