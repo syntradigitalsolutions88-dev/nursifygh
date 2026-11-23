@@ -962,10 +962,14 @@ class AdminCommissionsActionView(APIView):
             return Response({"ok": True, "action": action, "user_id": target.id})
 
         if action == "delete_user":
-            user_id = request.data.get("user_id")
-            if not user_id:
+            raw_user_id = request.data.get("user_id")
+            if raw_user_id is None or str(raw_user_id).strip() == "":
                 return Response({"error": "user_id is required."}, status=400)
-            if int(user_id) == int(request.user.id):
+            try:
+                user_id = int(raw_user_id)
+            except (TypeError, ValueError):
+                return Response({"error": "Invalid user_id."}, status=400)
+            if user_id == int(request.user.id):
                 return Response({"error": "You cannot delete your own currently logged-in admin account."}, status=400)
             try:
                 target = User.objects.get(id=user_id)

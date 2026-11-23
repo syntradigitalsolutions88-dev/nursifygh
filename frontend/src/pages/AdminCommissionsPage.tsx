@@ -221,6 +221,21 @@ export default function AdminCommissionsPage() {
         }
         const lower = qText.toLowerCase()
 
+        if (lower.includes("trial") || lower.includes("unpaid user") || lower.includes("free user") || lower.includes("not paid")) {
+            setTab("users")
+            const trialUsers = data.users.filter((u) => !u.has_paid)
+            setAiReply(
+                trialUsers.length > 0
+                    ? `Trial / Unpaid Users (${trialUsers.length}): ` +
+                      trialUsers
+                          .slice(0, 10)
+                          .map((u) => `${u.full_name || u.email} (${u.school_name || "No school"}, joined ${formatDateTime(u.date_joined)})`)
+                          .join(" · ")
+                    : "All current users have an active paid pass."
+            )
+            return
+        }
+
         if (!lower || lower.includes("summary") || lower.includes("overview") || lower.includes("everything")) {
             const pendingCount = data.payments.filter((p) => p.status !== "SUCCESS" && p.status !== "FAILED").length
             const unpaidAmbs = data.ambassadors.filter((a) => parseFloat(a.unpaid_ghs) > 0)
@@ -502,8 +517,8 @@ export default function AdminCommissionsPage() {
                         </div>
 
                         {aiReply && (
-                            <div className="rounded-xl border border-brand-200 bg-white px-3.5 py-2.5 text-xs sm:text-sm text-on-surface flex items-start justify-between gap-3">
-                                <span>{aiReply}</span>
+                            <div className="rounded-2xl border border-brand-300 bg-white p-4 text-sm sm:text-base text-on-surface flex flex-col sm:flex-row sm:items-start justify-between gap-3 break-words">
+                                <span className="leading-relaxed break-words whitespace-pre-line flex-1">{aiReply}</span>
                                 <button
                                     type="button"
                                     onClick={() => setAiReply(null)}
