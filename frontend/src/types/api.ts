@@ -318,4 +318,7 @@ export interface AmbassadorStats {
         is_paid_out: boolean
         date: string
     }[]
+  pending_referrals?: number
+  confirmed_referrals?: number
+  total_referrals?: number
 }
