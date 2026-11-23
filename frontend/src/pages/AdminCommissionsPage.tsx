@@ -18,6 +18,40 @@ interface AdminUserRow {
     referral_code: string
     referred_by: string
     is_staff: boolean
+    date_joined?: string | null
+}
+
+interface AdminReferralRow {
+    student_id: number
+    student_name: string
+    student_email: string
+    student_phone: string
+    student_has_paid: boolean
+    joined_at: string
+    referral_code: string
+    ambassador_name: string
+    ambassador_email: string
+    ambassador_phone: string
+    commission_amount: string
+    is_paid_out: boolean
+    created_at?: string | null
+    paid_out_at?: string | null
+    payout_due_date?: string | null
+}
+
+interface AdminPaymentRow {
+    id: number
+    reference: string
+    manual_reference: string
+    student_name: string
+    student_email: string
+    student_phone: string
+    referred_by: string
+    amount_ghs: string
+    provider: string
+    status: string
+    initiated_at: string | null
+    completed_at?: string | null
 }
 
 interface AdminOverviewResponse {
@@ -44,33 +78,70 @@ interface AdminOverviewResponse {
         unpaid_ghs: string
         paid_out_ghs: string
     }[]
-    referrals: {
-        student_id: number
-        student_name: string
-        student_email: string
-        student_phone: string
-        student_has_paid: boolean
-        joined_at: string
-        referral_code: string
-        ambassador_name: string
-        ambassador_email: string
-        ambassador_phone: string
-        commission_amount: string
-        is_paid_out: boolean
-    }[]
-    payments: {
-        id: number
-        reference: string
-        manual_reference: string
-        student_name: string
-        student_email: string
-        student_phone: string
-        referred_by: string
-        amount_ghs: string
-        provider: string
-        status: string
-        initiated_at: string | null
-    }[]
+    referrals: AdminReferralRow[]
+    payments: AdminPaymentRow[]
+}
+
+function formatDateTime(iso?: string | null): string {
+    if (!iso) return "—"
+    const d = new Date(iso)
+    if (Number.isNaN(d.getTime())) return "—"
+    return d.toLocaleString("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+    })
+}
+
+function formatDateOnly(iso?: string | null): string {
+    if (!iso) return "—"
+    const d = new Date(iso)
+    if (Number.isNaN(d.getTime())) return "—"
+    return d.toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+    })
+}
+
+function matchesDateFilter(
+    iso: string | null | undefined,
+    quickPreset: "all" | "today" | "month" | "year",
+    selectedYear: string,
+    selectedMonth: string,
+    exactDate: string,
+): boolean {
+    const hasCustom = Boolean(selectedYear || selectedMonth || exactDate)
+    if (quickPreset === "all" && !hasCustom) return true
+    if (!iso) return false
+    const d = new Date(iso)
+    if (Number.isNaN(d.getTime())) return false
+
+    const now = new Date()
+    if (exactDate) {
+        const localYmd = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`
+        if (localYmd !== exactDate) return false
+    }
+    if (selectedYear && String(d.getFullYear()) !== selectedYear) return false
+    if (selectedMonth && String(d.getMonth() + 1).padStart(2, "0") !== selectedMonth) return false
+
+    if (quickPreset === "today") {
+        return (
+            d.getFullYear() === now.getFullYear() &&
+            d.getMonth() === now.getMonth() &&
+            d.getDate() === now.getDate()
+        )
+    }
+    if (quickPreset === "month") {
+        return d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth()
+    }
+    if (quickPreset === "year") {
+        return d.getFullYear() === now.getFullYear()
+    }
+    return true
 }
 
 export default function AdminCommissionsPage() {
@@ -78,6 +149,11 @@ export default function AdminCommissionsPage() {
     const queryClient = useQueryClient()
     const [tab, setTab] = useState<"users" | "ambassadors" | "referrals" | "payments">("users")
     const [search, setSearch] = useState("")
+    const [quickDate, setQuickDate] = useState<"all" | "today" | "month" | "year">("all")
+    const [filterYear, setFilterYear] = useState("")
+    const [filterMonth, setFilterMonth] = useState("")
+    const [exactDate, setExactDate] = useState("")
+    const [unpaidOnly, setUnpaidOnly] = useState(false)
     const [feedback, setFeedback] = useState<string | null>(null)
     const [promoteEmail, setPromoteEmail] = useState("")
     const [promoteCode, setPromoteCode] = useState("")
@@ -140,6 +216,14 @@ export default function AdminCommissionsPage() {
         })
     }
 
+    function resetDateFilters() {
+        setQuickDate("all")
+        setFilterYear("")
+        setFilterMonth("")
+        setExactDate("")
+        setUnpaidOnly(false)
+    }
+
     if (!isStaff) {
         return (
             <AppShell>
@@ -155,6 +239,7 @@ export default function AdminCommissionsPage() {
 
     const q = search.trim().toLowerCase()
     const filteredUsers = (data?.users || []).filter((u) => {
+        if (!matchesDateFilter(u.date_joined, quickDate, filterYear, filterMonth, exactDate)) return false
         if (!q) return true
         return (
             u.full_name.toLowerCase().includes(q) ||
@@ -162,6 +247,43 @@ export default function AdminCommissionsPage() {
             u.phone_number.toLowerCase().includes(q) ||
             u.referral_code.toLowerCase().includes(q) ||
             u.referred_by.toLowerCase().includes(q)
+        )
+    })
+
+    const filteredAmbassadors = (data?.ambassadors || []).filter((a) => {
+        if (unpaidOnly && parseFloat(a.unpaid_ghs) <= 0) return false
+        if (!q) return true
+        return (
+            a.full_name.toLowerCase().includes(q) ||
+            a.email.toLowerCase().includes(q) ||
+            a.phone_number.toLowerCase().includes(q) ||
+            a.referral_code.toLowerCase().includes(q)
+        )
+    })
+
+    const filteredReferrals = (data?.referrals || []).filter((r) => {
+        const refStamp = r.created_at || r.joined_at
+        if (!matchesDateFilter(refStamp, quickDate, filterYear, filterMonth, exactDate)) return false
+        if (unpaidOnly && (r.is_paid_out || parseFloat(r.commission_amount) <= 0)) return false
+        if (!q) return true
+        return (
+            r.student_name.toLowerCase().includes(q) ||
+            r.student_email.toLowerCase().includes(q) ||
+            r.ambassador_name.toLowerCase().includes(q) ||
+            r.referral_code.toLowerCase().includes(q)
+        )
+    })
+
+    const filteredPayments = (data?.payments || []).filter((p) => {
+        if (!matchesDateFilter(p.initiated_at, quickDate, filterYear, filterMonth, exactDate)) return false
+        if (unpaidOnly && p.status === "SUCCESS") return false
+        if (!q) return true
+        return (
+            p.student_name.toLowerCase().includes(q) ||
+            p.student_email.toLowerCase().includes(q) ||
+            p.reference.toLowerCase().includes(q) ||
+            p.manual_reference.toLowerCase().includes(q) ||
+            p.referred_by.toLowerCase().includes(q)
         )
     })
 
@@ -173,7 +295,7 @@ export default function AdminCommissionsPage() {
                         <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Admin Control Board</p>
                         <h1 className="text-3xl font-bold text-on-surface mt-1">Users, Commissions &amp; Payments</h1>
                         <p className="text-xs text-on-surface-muted mt-1">
-                            Full control over users, MoMo payouts, student payments, referrals, and ambassadors in one dashboard
+                            Filter by date, month, year, or today · View exact date &amp; time · Control payouts, approvals, and users
                         </p>
                     </div>
                     <button
@@ -215,37 +337,120 @@ export default function AdminCommissionsPage() {
                             />
                         </div>
 
-                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border pb-3">
-                            <div className="flex flex-wrap gap-2">
-                                {(
-                                    [
-                                        ["users", `All Users (${data.users.length})`],
-                                        ["ambassadors", `Ambassadors & Payouts (${data.ambassadors.length})`],
-                                        ["referrals", `Referral Ledger (${data.referrals.length})`],
-                                        ["payments", `Payments (${data.payments.length})`],
-                                    ] as const
-                                ).map(([key, label]) => (
+                        {/* Django-style Date, Month, Year & Today Filter Bar */}
+                        <div className="rounded-2xl border border-border bg-white p-4 shadow-sm space-y-3">
+                            <div className="flex flex-wrap items-center justify-between gap-2">
+                                <div className="flex flex-wrap items-center gap-1.5">
+                                    {(
+                                        [
+                                            ["all", "All Dates"],
+                                            ["today", "Today"],
+                                            ["month", "This Month"],
+                                            ["year", "This Year"],
+                                        ] as const
+                                    ).map(([k, lbl]) => (
+                                        <button
+                                            key={k}
+                                            type="button"
+                                            onClick={() => {
+                                                setQuickDate(k)
+                                                setExactDate("")
+                                            }}
+                                            className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-colors ${
+                                                quickDate === k && !exactDate
+                                                    ? "bg-brand-700 text-white"
+                                                    : "bg-surface-subtle text-on-surface-muted hover:text-on-surface"
+                                            }`}
+                                        >
+                                            {lbl}
+                                        </button>
+                                    ))}
                                     <button
-                                        key={key}
-                                        onClick={() => setTab(key)}
-                                        className={`rounded-xl px-4 py-2 text-xs font-bold transition-colors ${
-                                            tab === key ? "bg-brand-700 text-white" : "bg-surface-subtle text-on-surface-muted hover:text-on-surface"
+                                        type="button"
+                                        onClick={() => setUnpaidOnly((v) => !v)}
+                                        className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-colors ${
+                                            unpaidOnly
+                                                ? "bg-amber-600 text-white"
+                                                : "bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100"
                                         }`}
                                     >
-                                        {label}
+                                        {unpaidOnly ? "Showing Unpaid / Pending Only" : "Unpaid / Pending Only"}
                                     </button>
-                                ))}
+                                </div>
+                                <button
+                                    type="button"
+                                    onClick={resetDateFilters}
+                                    className="text-xs font-semibold text-on-surface-muted hover:text-on-surface underline"
+                                >
+                                    Reset Filters
+                                </button>
                             </div>
 
-                            {tab === "users" && (
+                            <div className="grid grid-cols-1 sm:grid-cols-4 gap-2.5">
                                 <input
                                     type="search"
                                     value={search}
                                     onChange={(e) => setSearch(e.target.value)}
                                     placeholder="Search name, email, phone, code…"
-                                    className="h-9 w-full sm:w-64 rounded-xl border border-border bg-white px-3 text-xs"
+                                    className="h-9 rounded-lg border border-border px-3 text-xs"
                                 />
-                            )}
+                                <select
+                                    value={filterYear}
+                                    onChange={(e) => setFilterYear(e.target.value)}
+                                    className="h-9 rounded-lg border border-border bg-white px-2.5 text-xs"
+                                >
+                                    <option value="">All Years</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                                <select
+                                    value={filterMonth}
+                                    onChange={(e) => setFilterMonth(e.target.value)}
+                                    className="h-9 rounded-lg border border-border bg-white px-2.5 text-xs"
+                                >
+                                    <option value="">All Months</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <input
+                                    type="date"
+                                    value={exactDate}
+                                    onChange={(e) => setExactDate(e.target.value)}
+                                    className="h-9 rounded-lg border border-border bg-white px-2.5 text-xs"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="flex flex-wrap gap-2 border-b border-border pb-3">
+                            {(
+                                [
+                                    ["users", `All Users (${filteredUsers.length})`],
+                                    ["ambassadors", `Ambassadors & Payouts (${filteredAmbassadors.length})`],
+                                    ["referrals", `Referral Ledger (${filteredReferrals.length})`],
+                                    ["payments", `Payments (${filteredPayments.length})`],
+                                ] as const
+                            ).map(([key, label]) => (
+                                <button
+                                    key={key}
+                                    onClick={() => setTab(key)}
+                                    className={`rounded-xl px-4 py-2 text-xs font-bold transition-colors ${
+                                        tab === key ? "bg-brand-700 text-white" : "bg-surface-subtle text-on-surface-muted hover:text-on-surface"
+                                    }`}
+                                >
+                                    {label}
+                                </button>
+                            ))}
                         </div>
 
                         {tab === "users" && (
@@ -254,6 +459,7 @@ export default function AdminCommissionsPage() {
                                     <thead className="bg-surface-subtle text-on-surface-muted uppercase text-[11px]">
                                         <tr>
                                             <th className="px-4 py-3">User</th>
+                                            <th className="px-4 py-3">Joined (Date &amp; Time)</th>
                                             <th className="px-4 py-3">Program / Ref</th>
                                             <th className="px-4 py-3">Pass Status</th>
                                             <th className="px-4 py-3">Role</th>
@@ -271,6 +477,7 @@ export default function AdminCommissionsPage() {
                                                             {u.email} {u.phone_number ? `· ${u.phone_number}` : ""}
                                                         </div>
                                                     </td>
+                                                    <td className="px-4 py-3 text-xs whitespace-nowrap">{formatDateTime(u.date_joined)}</td>
                                                     <td className="px-4 py-3 text-xs">
                                                         <div>{u.program || "—"} {u.level ? `· L${u.level}` : ""}</div>
                                                         <div className="font-mono text-on-surface-muted">
@@ -388,7 +595,7 @@ export default function AdminCommissionsPage() {
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-border">
-                                            {data.ambassadors.map((a) => {
+                                            {filteredAmbassadors.map((a) => {
                                                 const unpaidVal = parseFloat(a.unpaid_ghs)
                                                 const paidOutVal = parseFloat(a.paid_out_ghs)
                                                 return (
@@ -469,15 +676,15 @@ export default function AdminCommissionsPage() {
                                     <thead className="bg-surface-subtle text-on-surface-muted uppercase text-[11px]">
                                         <tr>
                                             <th className="px-4 py-3">Referred Student</th>
-                                            <th className="px-4 py-3">Ambassador Who Referred</th>
-                                            <th className="px-4 py-3">Code</th>
-                                            <th className="px-4 py-3">Commission</th>
+                                            <th className="px-4 py-3">Ambassador</th>
+                                            <th className="px-4 py-3">Date &amp; Time</th>
+                                            <th className="px-4 py-3">Commission / Due</th>
                                             <th className="px-4 py-3">Payout</th>
                                             <th className="px-4 py-3">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-border">
-                                        {data.referrals.map((r) => (
+                                        {filteredReferrals.map((r) => (
                                             <tr key={r.student_id} className="hover:bg-surface-subtle/40">
                                                 <td className="px-4 py-3">
                                                     <div className="font-bold text-on-surface">{r.student_name || "—"}</div>
@@ -487,11 +694,21 @@ export default function AdminCommissionsPage() {
                                                 </td>
                                                 <td className="px-4 py-3">
                                                     <div className="font-semibold text-on-surface">{r.ambassador_name}</div>
-                                                    <div className="text-xs text-on-surface-muted">{r.ambassador_email}</div>
+                                                    <div className="text-xs font-mono text-on-surface-muted">{r.referral_code}</div>
                                                 </td>
-                                                <td className="px-4 py-3 font-mono font-bold">{r.referral_code}</td>
-                                                <td className="px-4 py-3 font-bold text-brand-700">
-                                                    GHS {parseFloat(r.commission_amount).toFixed(2)}
+                                                <td className="px-4 py-3 text-xs whitespace-nowrap">
+                                                    <div>{formatDateTime(r.created_at || r.joined_at)}</div>
+                                                    {r.paid_out_at && (
+                                                        <div className="text-green-700">Paid: {formatDateTime(r.paid_out_at)}</div>
+                                                    )}
+                                                </td>
+                                                <td className="px-4 py-3 text-xs">
+                                                    <div className="font-bold text-brand-700">
+                                                        GHS {parseFloat(r.commission_amount).toFixed(2)}
+                                                    </div>
+                                                    {r.payout_due_date && !r.is_paid_out && (
+                                                        <div className="text-on-surface-muted">Due: {formatDateOnly(r.payout_due_date)}</div>
+                                                    )}
                                                 </td>
                                                 <td className="px-4 py-3">
                                                     <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${r.is_paid_out ? "bg-green-100 text-green-800" : "bg-amber-100 text-amber-800"}`}>
@@ -535,15 +752,14 @@ export default function AdminCommissionsPage() {
                                     <thead className="bg-surface-subtle text-on-surface-muted uppercase text-[11px]">
                                         <tr>
                                             <th className="px-4 py-3">Student</th>
-                                            <th className="px-4 py-3">Amount</th>
-                                            <th className="px-4 py-3">Provider / Ref</th>
-                                            <th className="px-4 py-3">Referred By</th>
+                                            <th className="px-4 py-3">Date &amp; Time</th>
+                                            <th className="px-4 py-3">Amount / Ref</th>
                                             <th className="px-4 py-3">Status</th>
                                             <th className="px-4 py-3">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-border">
-                                        {data.payments.map((p) => (
+                                        {filteredPayments.map((p) => (
                                             <tr key={p.id} className="hover:bg-surface-subtle/40">
                                                 <td className="px-4 py-3">
                                                     <div className="font-bold text-on-surface">{p.student_name || "—"}</div>
@@ -551,12 +767,13 @@ export default function AdminCommissionsPage() {
                                                         {p.student_email} {p.student_phone ? `· ${p.student_phone}` : ""}
                                                     </div>
                                                 </td>
-                                                <td className="px-4 py-3 font-bold">GHS {parseFloat(p.amount_ghs).toFixed(2)}</td>
+                                                <td className="px-4 py-3 text-xs whitespace-nowrap">{formatDateTime(p.initiated_at)}</td>
                                                 <td className="px-4 py-3 font-mono text-xs">
-                                                    <div>{p.provider}</div>
+                                                    <div className="font-sans font-bold text-on-surface">
+                                                        GHS {parseFloat(p.amount_ghs).toFixed(2)} · {p.provider}
+                                                    </div>
                                                     <div className="text-on-surface-muted">{p.manual_reference || p.reference}</div>
                                                 </td>
-                                                <td className="px-4 py-3 font-mono">{p.referred_by || "—"}</td>
                                                 <td className="px-4 py-3">
                                                     <span className="rounded-full bg-surface-subtle px-2.5 py-0.5 text-[10px] font-bold">
                                                         {p.status}
