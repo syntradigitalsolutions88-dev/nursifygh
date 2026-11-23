@@ -229,7 +229,7 @@ export default function AdminCommissionsPage() {
                     ? `Trial / Unpaid Users (${trialUsers.length}): ` +
                       trialUsers
                           .slice(0, 10)
-                          .map((u) => `${u.full_name || u.email} (${u.school_name || "No school"}, joined ${formatDateTime(u.date_joined)})`)
+                          .map((u) => `${u.full_name || u.email} (${u.institution || "School not set"}, joined ${formatDateTime(u.date_joined)})`)
                           .join(" · ")
                     : "All current users have an active paid pass."
             )
