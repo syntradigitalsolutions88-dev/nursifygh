@@ -156,7 +156,6 @@ export default function AdminCommissionsPage() {
     const [unpaidOnly, setUnpaidOnly] = useState(false)
     const [feedback, setFeedback] = useState<string | null>(null)
     const [promoteEmail, setPromoteEmail] = useState("")
-    const [promoteEmail, setPromoteEmail] = useState("")
     const [promoteCode, setPromoteCode] = useState("")
     const [aiPrompt, setAiPrompt] = useState("")
     const [aiReply, setAiReply] = useState<string | null>(null)
