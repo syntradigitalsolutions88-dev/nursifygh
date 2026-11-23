@@ -215,6 +215,18 @@ export default function AdminCommissionsPage() {
 
     function handleAdminAiCommand(rawQuery?: string) {
         const qText = String(rawQuery ?? aiPrompt ?? "").trim()
+        const isSameLocalDay = (iso?: string | null) => {
+            if (!iso) return false
+            const d = new Date(iso)
+            if (Number.isNaN(d.getTime())) return false
+            const now = new Date()
+            return (
+                d.getFullYear() === now.getFullYear() &&
+                d.getMonth() === now.getMonth() &&
+                d.getDate() === now.getDate()
+            )
+        }
+
         if (!data) {
             setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
             return
@@ -261,9 +273,9 @@ export default function AdminCommissionsPage() {
             lower.includes("manage") || lower.includes("strateg") || lower.includes("insight")
         ) {
             const topAmbs = [...data.ambassadors]
-                .sort((a, b) => (b.referral_count || 0) - (a.referral_count || 0))
+                .sort((a, b) => (b.total_referrals || 0) - (a.total_referrals || 0))
                 .slice(0, 3)
-                .map((a) => `${a.full_name || a.email} (${a.referral_count || 0} refs, GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)} unpaid)`)
+                .map((a) => `${a.full_name || a.email} (${a.total_referrals || 0} refs, GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)} unpaid)`)
             const schoolCounts: Record<string, number> = {}
             data.users.forEach((u) => {
                 const sc = (u.institution || "Unspecified School").trim()
@@ -338,7 +350,7 @@ export default function AdminCommissionsPage() {
             setSearch("")
             setUnpaidOnly(false)
             setTab("users")
-            const todayUsers = data.users.filter((u) => isToday(u.date_joined))
+            const todayUsers = data.users.filter((u) => isSameLocalDay(u.date_joined))
             setAiReply(
                 todayUsers.length > 0
                     ? `Today's Users (${todayUsers.length}): ${todayUsers.map((u) => `${u.full_name || u.email} (${u.institution || "School not set"}, ${formatDateTime(u.date_joined)})`).join(" · ")}.`
