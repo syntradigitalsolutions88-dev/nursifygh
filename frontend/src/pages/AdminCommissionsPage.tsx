@@ -60,7 +60,8 @@ export default function AdminCommissionsPage() {
     const { user } = useAuth()
     const [tab, setTab] = useState<"ambassadors" | "referrals" | "payments">("ambassadors")
 
-    const isStaff = Boolean(user?.is_staff || user?.is_superuser)
+    const authUser = user as (typeof user & { is_staff?: boolean; is_superuser?: boolean }) | null
+    const isStaff = Boolean(authUser?.is_staff || authUser?.is_superuser)
 
     const { data, isLoading, isError, refetch } = useQuery<AdminOverviewResponse>({
         queryKey: ["admin-commissions-overview"],

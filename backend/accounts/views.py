@@ -1,7 +1,8 @@
-from decimal import Decimal
 """Authentication, profile, clinical tracking, and AI endpoints."""
 
 from __future__ import annotations
+
+from decimal import Decimal
 import os
 import re
 
