@@ -123,15 +123,21 @@ export default function RegisterPage() {
             </div>
 
             {activeCode && (
-                <div className="mb-6 rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-xs sm:text-sm text-brand-900 flex items-center justify-between gap-3">
-                    <div>
-                        <span className="font-bold">Referral Code Applied:</span>{" "}
-                        <code className="rounded bg-white px-2 py-0.5 font-black text-brand-800 border border-brand-200">
-                            {activeCode}
-                        </code>
-                        <span className="ml-2 text-brand-700">
-                            {referralSource === "url" ? "(from invite link)" : "(saved referral)"}
-                        </span>
+                <div className="mb-6 rounded-xl border border-brand-200 bg-brand-50 p-4 text-brand-900 flex items-start justify-between gap-3">
+                    <div className="space-y-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                            <span className="inline-flex items-center rounded-full bg-brand-700 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
+                                Ambassador Invite Applied
+                            </span>
+                            <code className="rounded bg-white px-2.5 py-0.5 text-sm font-black text-brand-800 border border-brand-200">
+                                {activeCode}
+                            </code>
+                        </div>
+                        <p className="text-xs sm:text-sm text-brand-800">
+                            {referralSource === "url"
+                                ? `You opened an ambassador invite link with code ${activeCode}. It has been filled into the referral field below so your referring ambassador gets credit when you create your account.`
+                                : `Your saved ambassador referral code ${activeCode} has been filled into the referral field below.`}
+                        </p>
                     </div>
                     <button
                         type="button"
@@ -144,9 +150,9 @@ export default function RegisterPage() {
                                 // ignore
                             }
                         }}
-                        className="text-xs font-semibold text-brand-700 hover:underline shrink-0"
+                        className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-xs font-semibold text-brand-700 hover:bg-brand-100 shrink-0"
                     >
-                        Clear
+                        Remove
                     </button>
                 </div>
             )}

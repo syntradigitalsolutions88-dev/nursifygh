@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { useState } from "react"
 import api from "../api/client"
 import AppShell from "../components/shell/AppShell"
@@ -58,7 +58,9 @@ interface AdminOverviewResponse {
 
 export default function AdminCommissionsPage() {
     const { user } = useAuth()
+    const queryClient = useQueryClient()
     const [tab, setTab] = useState<"ambassadors" | "referrals" | "payments">("ambassadors")
+    const [feedback, setFeedback] = useState<string | null>(null)
 
     const authUser = user as (typeof user & { is_staff?: boolean; is_superuser?: boolean }) | null
     const isStaff = Boolean(authUser?.is_staff || authUser?.is_superuser)
@@ -70,6 +72,26 @@ export default function AdminCommissionsPage() {
             return res.data
         },
         enabled: isStaff,
+    })
+
+    const actionMutation = useMutation({
+        mutationFn: async (payload: Record<string, unknown>) => {
+            const res = await api.post("/accounts/admin/commissions-action/", payload)
+            return res.data
+        },
+        onSuccess: (res) => {
+            setFeedback(
+                res?.action === "mark_commission_paid"
+                    ? `Marked ${res.updated ?? 1} commission(s) as PAID OUT.`
+                    : res?.action === "approve_payment"
+                      ? "Payment approved and student subscription + commission activated."
+                      : "Action completed."
+            )
+            queryClient.invalidateQueries({ queryKey: ["admin-commissions-overview"] })
+        },
+        onError: () => {
+            setFeedback("Could not complete that action. Check your admin permissions and try again.")
+        },
     })
 
     if (!isStaff) {
@@ -91,14 +113,17 @@ export default function AdminCommissionsPage() {
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
                     <div>
                         <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Admin Control Board</p>
-                        <h1 className="text-3xl font-bold text-on-surface mt-1">Commissions, Referrals & Payments</h1>
+                        <h1 className="text-3xl font-bold text-on-surface mt-1">Commissions, Referrals &amp; Payments</h1>
                         <p className="text-xs text-on-surface-muted mt-1">
-                            Track every ambassador, who referred whom, referral counts, commissions, and payments
+                            Manage MoMo payouts, approve student payments, and track every ambassador and referral directly here
                         </p>
                     </div>
                     <div className="flex items-center gap-2">
                         <button
-                            onClick={() => refetch()}
+                            onClick={() => {
+                                setFeedback(null)
+                                refetch()
+                            }}
                             className="rounded-xl border border-border bg-white px-4 py-2 text-xs font-bold text-on-surface hover:bg-surface-subtle"
                         >
                             Refresh Data
@@ -107,12 +132,21 @@ export default function AdminCommissionsPage() {
                             href="/admin/"
                             target="_blank"
                             rel="noreferrer"
-                            className="rounded-xl bg-brand-700 px-4 py-2 text-xs font-bold text-white hover:bg-brand-800"
+                            className="rounded-xl border border-border bg-surface-subtle px-4 py-2 text-xs font-bold text-on-surface hover:bg-surface-inset"
                         >
                             Django Admin
                         </a>
                     </div>
                 </div>
+
+                {feedback && (
+                    <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-xs sm:text-sm font-medium text-brand-900 flex items-center justify-between gap-3">
+                        <span>{feedback}</span>
+                        <button onClick={() => setFeedback(null)} className="text-xs font-bold text-brand-700 hover:underline">
+                            Dismiss
+                        </button>
+                    </div>
+                )}
 
                 {isLoading && <div className="p-10 text-center text-on-surface-muted">Loading admin overview…</div>}
                 {isError && (
@@ -133,10 +167,10 @@ export default function AdminCommissionsPage() {
                             />
                         </div>
 
-                        <div className="flex gap-2 border-b border-border pb-3">
+                        <div className="flex flex-wrap gap-2 border-b border-border pb-3">
                             {(
                                 [
-                                    ["ambassadors", `Ambassadors (${data.ambassadors.length})`],
+                                    ["ambassadors", `Ambassadors & Payouts (${data.ambassadors.length})`],
                                     ["referrals", `Referral Ledger (${data.referrals.length})`],
                                     ["payments", `Payments (${data.payments.length})`],
                                 ] as const
@@ -164,30 +198,52 @@ export default function AdminCommissionsPage() {
                                             <th className="px-4 py-3">Referrals (Paid)</th>
                                             <th className="px-4 py-3">Unpaid GHS</th>
                                             <th className="px-4 py-3">Paid Out GHS</th>
+                                            <th className="px-4 py-3">Payout Action</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-border">
-                                        {data.ambassadors.map((a) => (
-                                            <tr key={a.id} className="hover:bg-surface-subtle/40">
-                                                <td className="px-4 py-3">
-                                                    <div className="font-bold text-on-surface">{a.full_name || "—"}</div>
-                                                    <div className="text-xs text-on-surface-muted">{a.email}</div>
-                                                </td>
-                                                <td className="px-4 py-3 font-mono">{a.phone_number || "—"}</td>
-                                                <td className="px-4 py-3">
-                                                    <code className="rounded bg-brand-50 px-2 py-0.5 font-bold text-brand-800">{a.referral_code}</code>
-                                                </td>
-                                                <td className="px-4 py-3 font-semibold">
-                                                    {a.total_referrals} ({a.paid_referrals} paid)
-                                                </td>
-                                                <td className="px-4 py-3 font-bold text-amber-700">
-                                                    GHS {parseFloat(a.unpaid_ghs).toFixed(2)}
-                                                </td>
-                                                <td className="px-4 py-3 font-bold text-green-700">
-                                                    GHS {parseFloat(a.paid_out_ghs).toFixed(2)}
-                                                </td>
-                                            </tr>
-                                        ))}
+                                        {data.ambassadors.map((a) => {
+                                            const unpaidVal = parseFloat(a.unpaid_ghs)
+                                            return (
+                                                <tr key={a.id} className="hover:bg-surface-subtle/40">
+                                                    <td className="px-4 py-3">
+                                                        <div className="font-bold text-on-surface">{a.full_name || "—"}</div>
+                                                        <div className="text-xs text-on-surface-muted">{a.email}</div>
+                                                    </td>
+                                                    <td className="px-4 py-3 font-mono">{a.phone_number || "—"}</td>
+                                                    <td className="px-4 py-3">
+                                                        <code className="rounded bg-brand-50 px-2 py-0.5 font-bold text-brand-800">{a.referral_code}</code>
+                                                    </td>
+                                                    <td className="px-4 py-3 font-semibold">
+                                                        {a.total_referrals} ({a.paid_referrals} paid)
+                                                    </td>
+                                                    <td className="px-4 py-3 font-bold text-amber-700">
+                                                        GHS {unpaidVal.toFixed(2)}
+                                                    </td>
+                                                    <td className="px-4 py-3 font-bold text-green-700">
+                                                        GHS {parseFloat(a.paid_out_ghs).toFixed(2)}
+                                                    </td>
+                                                    <td className="px-4 py-3">
+                                                        {unpaidVal > 0 ? (
+                                                            <button
+                                                                disabled={actionMutation.isPending}
+                                                                onClick={() =>
+                                                                    actionMutation.mutate({
+                                                                        action: "mark_commission_paid",
+                                                                        ambassador_id: a.id,
+                                                                    })
+                                                                }
+                                                                className="rounded-lg bg-brand-700 px-3 py-1.5 text-xs font-bold text-white hover:bg-brand-800 disabled:opacity-50"
+                                                            >
+                                                                Mark Paid
+                                                            </button>
+                                                        ) : (
+                                                            <span className="text-xs font-semibold text-on-surface-muted">Settled</span>
+                                                        )}
+                                                    </td>
+                                                </tr>
+                                            )
+                                        })}
                                     </tbody>
                                 </table>
                             </div>
@@ -250,6 +306,7 @@ export default function AdminCommissionsPage() {
                                             <th className="px-4 py-3">Provider / Ref</th>
                                             <th className="px-4 py-3">Referred By</th>
                                             <th className="px-4 py-3">Status</th>
+                                            <th className="px-4 py-3">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-border">
@@ -271,6 +328,24 @@ export default function AdminCommissionsPage() {
                                                     <span className="rounded-full bg-surface-subtle px-2.5 py-0.5 text-[10px] font-bold">
                                                         {p.status}
                                                     </span>
+                                                </td>
+                                                <td className="px-4 py-3">
+                                                    {p.status !== "SUCCESS" ? (
+                                                        <button
+                                                            disabled={actionMutation.isPending}
+                                                            onClick={() =>
+                                                                actionMutation.mutate({
+                                                                    action: "approve_payment",
+                                                                    payment_id: p.id,
+                                                                })
+                                                            }
+                                                            className="rounded-lg bg-brand-700 px-3 py-1.5 text-xs font-bold text-white hover:bg-brand-800 disabled:opacity-50"
+                                                        >
+                                                            Approve Payment
+                                                        </button>
+                                                    ) : (
+                                                        <span className="text-xs font-semibold text-green-700">Approved</span>
+                                                    )}
                                                 </td>
                                             </tr>
                                         ))}

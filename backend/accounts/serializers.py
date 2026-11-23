@@ -77,11 +77,13 @@ class UserProfileSerializer(serializers.ModelSerializer):
             "institution", "exam_date", "has_seen_tour",
             "is_subscribed", "has_paid", "is_on_trial", "subscription_expires_at",
             "has_active_subscription", "date_joined",
+            "is_staff", "is_superuser",
             "is_ambassador", "referral_code", "referred_by",
         )
         read_only_fields = (
             "id", "email", "is_subscribed", "has_paid", "is_on_trial",
             "subscription_expires_at", "has_active_subscription", "date_joined",
+            "is_staff", "is_superuser",
             "is_ambassador", "referral_code",
         )
 

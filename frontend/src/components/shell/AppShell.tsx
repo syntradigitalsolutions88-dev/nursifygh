@@ -64,6 +64,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
     if (!user) return null
 
+    const authUser = user as (typeof user & { is_staff?: boolean; is_superuser?: boolean })
+    const isStaff = Boolean(authUser.is_staff || authUser.is_superuser)
+
     const currentNav = navItems.find((item) =>
         item.end ? location.pathname === item.to : location.pathname.startsWith(item.to)
     )
@@ -97,6 +100,17 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             <span>{item.label}</span>
                         </NavLink>
                     ))}
+                    {isStaff && (
+                        <NavLink
+                            to="/admin-commissions"
+                            className={({ isActive }) =>
+                                `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isActive ? "bg-brand-100 text-brand-900" : "text-brand-800 bg-brand-50/70 hover:bg-brand-100"}`
+                            }
+                        >
+                            <AmbassadorIcon />
+                            <span>Commissions &amp; Payouts</span>
+                        </NavLink>
+                    )}
                 </nav>
 
                 <div className="px-3 pb-3">
@@ -196,6 +210,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                             <Link to="/ambassador" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
                                                 <AmbassadorIcon /> Ambassador Program
                                             </Link>
+                                            {isStaff && (
+                                                <Link to="/admin-commissions" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                    <AmbassadorIcon /> Commissions &amp; Payouts
+                                                </Link>
+                                            )}
                                             <Link to="/my-submissions" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
                                                 <SubmissionsIcon /> My Submissions
                                             </Link>
