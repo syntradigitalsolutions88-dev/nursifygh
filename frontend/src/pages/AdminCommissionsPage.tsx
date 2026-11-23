@@ -215,6 +215,11 @@ export default function AdminCommissionsPage() {
 
     function handleAdminAiCommand(rawQuery?: string) {
         const qText = String(rawQuery ?? aiPrompt ?? "").trim()
+        if (!data) {
+            setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
+            return
+        }
+        const lower = qText.toLowerCase()
         const isSameLocalDay = (iso?: string | null) => {
             if (!iso) return false
             const d = new Date(iso)
@@ -227,11 +232,6 @@ export default function AdminCommissionsPage() {
             )
         }
 
-        if (!data) {
-            setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
-            return
-        }
-        const lower = qText.toLowerCase()
         const totalUsers = data.users.length
         const paidUsersList = data.users.filter((u) => u.has_paid || u.is_subscribed)
         const trialUsersList = data.users.filter((u) => !(u.has_paid || u.is_subscribed))
@@ -240,6 +240,29 @@ export default function AdminCommissionsPage() {
         const unpaidTotal = parseFloat(data.summary.unpaid_ghs || "0") || 0
         const paidOutTotal = parseFloat(data.summary.paid_out_ghs || "0") || 0
         const pendingPaymentsList = data.payments.filter((p) => p.status !== "SUCCESS" && p.status !== "FAILED")
+        const unpaidAmbs = data.ambassadors.filter((a) => parseFloat(a.unpaid_ghs || "0") > 0)
+
+        const schoolCounts: Record<string, number> = {}
+        data.users.forEach((u) => {
+            const sc = (u.institution || "Unspecified School").trim()
+            schoolCounts[sc] = (schoolCounts[sc] || 0) + 1
+        })
+        const topSchools = Object.entries(schoolCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 4)
+            .map(([sc, cnt]) => `${sc} (${cnt})`)
+
+        const topAmbs = [...data.ambassadors]
+            .sort((a, b) => (b.total_referrals || 0) - (a.total_referrals || 0))
+            .slice(0, 4)
+            .map((a) => `${a.full_name || a.email} [${a.referral_code || "no code"}: ${a.total_referrals || 0} refs, GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)} unpaid]`)
+
+        if (lower === "help" || lower.includes("what can you do") || lower.includes("commands")) {
+            setAiReply(
+                `🤖 Admin AI Capabilities: I can inspect live platform metrics (${totalUsers} users, ${paidUsersList.length} paid, ${trialUsersList.length} trial, ${pendingPaymentsList.length} pending payments, GHS ${unpaidTotal.toFixed(2)} unpaid commissions), locate specific students/schools/codes, and give business management feedback, growth ideas, ambassador strategy, and operational recommendations. Ask me anything in plain English!`
+            )
+            return
+        }
 
         if (lower.includes("subscrib") || lower.includes("paid user") || lower.includes("who paid") || lower.includes("active pass")) {
             setTab("users")
@@ -270,36 +293,30 @@ export default function AdminCommissionsPage() {
         if (
             lower.includes("advis") || lower.includes("idea") || lower.includes("improv") ||
             lower.includes("analy") || lower.includes("evaluat") || lower.includes("grow") ||
-            lower.includes("manage") || lower.includes("strateg") || lower.includes("insight")
+            lower.includes("manage") || lower.includes("strateg") || lower.includes("insight") ||
+            lower.includes("feedback") || lower.includes("how are we") || lower.includes("fix") ||
+            lower.includes("market") || lower.includes("revenue") || lower.includes("business") ||
+            lower.includes("ambassador")
         ) {
-            const topAmbs = [...data.ambassadors]
-                .sort((a, b) => (b.total_referrals || 0) - (a.total_referrals || 0))
-                .slice(0, 3)
-                .map((a) => `${a.full_name || a.email} (${a.total_referrals || 0} refs, GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)} unpaid)`)
-            const schoolCounts: Record<string, number> = {}
-            data.users.forEach((u) => {
-                const sc = (u.institution || "Unspecified School").trim()
-                schoolCounts[sc] = (schoolCounts[sc] || 0) + 1
-            })
-            const topSchools = Object.entries(schoolCounts)
-                .sort((a, b) => b[1] - a[1])
-                .slice(0, 3)
-                .map(([sc, cnt]) => `${sc} (${cnt})`)
-
             setAiReply(
-                `📊 Evaluation & Management Analysis: ${totalUsers} total users (${paidUsersList.length} paid = ${conversionRate}% conversion; ${trialUsersList.length} trial/unpaid). ` +
-                `Referrals: ${data.referrals.length} (${referralRate}% of users). Commissions: GHS ${unpaidTotal.toFixed(2)} unpaid, GHS ${paidOutTotal.toFixed(2)} paid out, ${pendingPaymentsList.length} pending payment(s). ` +
-                `Top Schools: ${topSchools.join(", ") || "None yet"}. Top Ambassadors: ${topAmbs.join(" · ") || "None yet"}. ` +
-                `💡 Advisor & Growth Ideas: (1) Convert the ${trialUsersList.length} trial users with a timed exam-prep nudge & MoMo reminder before trial ends; ` +
-                `(2) Settle GHS ${unpaidTotal.toFixed(2)} unpaid commissions promptly to keep ambassadors motivated during exam season; ` +
-                `(3) Recruit campus ambassadors in colleges with high student counts but low paid conversion; ` +
-                `(4) Add weekly mock-exam leaderboards and nursing care-plan/past-question bundles to boost paid upgrades.`
+                `📌 Business Evaluation & Management Feedback:
+` +
+                `• Snapshot: ${totalUsers} total users | ${paidUsersList.length} paid (${conversionRate}% conversion) | ${trialUsersList.length} trial/unpaid | ${data.referrals.length} referrals (${referralRate}%).
+` +
+                `• Money & Approvals: GHS ${unpaidTotal.toFixed(2)} unpaid across ${unpaidAmbs.length} ambassador(s) | GHS ${paidOutTotal.toFixed(2)} paid out | ${pendingPaymentsList.length} pending payment(s).
+` +
+                `• Top Schools: ${topSchools.join(", ") || "None yet"}.
+` +
+                `• Top Ambassadors: ${topAmbs.join(" · ") || "None yet"}.
+` +
+                `• Management & Operations Feedback: Keep payment verification fast so students get immediate access; clear GHS ${unpaidTotal.toFixed(2)} owed payouts on a predictable schedule to build ambassador trust; periodically clean up duplicate or test accounts so conversion and user counts stay accurate.
+` +
+                `• Growth & Product Ideas: (1) Convert the ${trialUsersList.length} trial users with short WhatsApp/in-app reminders before trial expiry highlighting licensing exam readiness; (2) Reward top referrers with milestone bonuses or featured campus spots; (3) Offer structured study plans, care-plan walkthroughs, and timed mock tests so students see clear exam value before paying.`
             )
             return
         }
 
         if (!lower || lower.includes("summary") || lower.includes("overview") || lower.includes("everything")) {
-            const unpaidAmbs = data.ambassadors.filter((a) => parseFloat(a.unpaid_ghs) > 0)
             setAiReply(
                 `Dashboard Summary: ${totalUsers} total users (${paidUsersList.length} paid / ${conversionRate}%, ${trialUsersList.length} trial), ` +
                 `${data.summary.total_referrals} referrals across ${data.summary.ambassador_count} ambassadors. ` +
@@ -312,9 +329,9 @@ export default function AdminCommissionsPage() {
         if (lower.includes("unpaid") || lower.includes("payout") || lower.includes("who to pay") || lower.includes("pay out")) {
             setTab("ambassadors")
             setUnpaidOnly(true)
-            const oweList = data.ambassadors
-                .filter((a) => parseFloat(a.unpaid_ghs) > 0)
-                .map((a) => `${a.full_name || a.email} (${a.phone_number || "no phone"}): GHS ${parseFloat(a.unpaid_ghs).toFixed(2)}`)
+            const oweList = unpaidAmbs.map(
+                (a) => `${a.full_name || a.email} (${a.phone_number || "no phone"}): GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)}`
+            )
             setAiReply(
                 oweList.length > 0
                     ? `Switched to Ambassadors & Payouts (Unpaid Only). Owed payouts: ${oweList.join(" · ")}.`
@@ -327,7 +344,7 @@ export default function AdminCommissionsPage() {
             setTab("payments")
             setAiReply(
                 pendingPaymentsList.length > 0
-                    ? `Switched to Payments. ${pendingPaymentsList.length} payment(s) need attention: ${pendingPaymentsList.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs).toFixed(2)}, ${p.status})`).join(" · ")}.`
+                    ? `Switched to Payments. ${pendingPaymentsList.length} payment(s) need attention: ${pendingPaymentsList.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs || "0").toFixed(2)}, ${p.status})`).join(" · ")}.`
                     : `Switched to Payments. There are no pending or awaiting-review payments right now.`
             )
             return
@@ -340,7 +357,7 @@ export default function AdminCommissionsPage() {
             const recentPaid = data.payments.filter((p) => p.status === "SUCCESS").slice(0, 5)
             setAiReply(
                 recentPaid.length > 0
-                    ? `Switched to Payments (cleared search). Recent approved payments: ${recentPaid.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs).toFixed(2)}, ${formatDateTime(p.initiated_at)})`).join(" · ")}.`
+                    ? `Switched to Payments (cleared search). Recent approved payments: ${recentPaid.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs || "0").toFixed(2)}, ${formatDateTime(p.initiated_at)})`).join(" · ")}.`
                     : `Switched to Payments (cleared search). No approved payments found yet.`
             )
             return
@@ -373,14 +390,25 @@ export default function AdminCommissionsPage() {
                 (a.email || "").toLowerCase().includes(lower) ||
                 (a.referral_code || "").toLowerCase().includes(lower)
         )
+
+        if (matchedUsers.length > 0 || matchedAmbs.length > 0) {
+            setAiReply(
+                `Search for "${qText}": ${matchedUsers.length} user match(es), ${matchedAmbs.length} ambassador match(es). ` +
+                (matchedUsers.length > 0
+                    ? `Users: ${matchedUsers.slice(0, 6).map((u) => `${u.full_name || u.email} (${u.has_paid || u.is_subscribed ? "Paid" : "Trial"}, ${u.institution || "School not set"})`).join(" · ")}. `
+                    : "") +
+                (matchedAmbs.length > 0
+                    ? `Ambassadors: ${matchedAmbs.slice(0, 5).map((a) => `${a.full_name || a.email} [Code: ${a.referral_code}, Unpaid: GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)}]`).join(" · ")}.`
+                    : "")
+            )
+            return
+        }
+
         setAiReply(
-            `Search for "${qText}": ${matchedUsers.length} user match(es), ${matchedAmbs.length} ambassador match(es). ` +
-            (matchedUsers.length > 0
-                ? `Users: ${matchedUsers.slice(0, 6).map((u) => `${u.full_name || u.email} (${u.has_paid || u.is_subscribed ? "Paid" : "Trial"}, ${u.institution || "School not set"})`).join(" · ")}. `
-                : "") +
-            (matchedAmbs.length > 0
-                ? `Ambassadors: ${matchedAmbs.slice(0, 5).map((a) => `${a.full_name || a.email} [Code: ${a.referral_code}, Unpaid: GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)}]`).join(" · ")}.`
-                : "")
+            `💬 Admin AI Feedback on "${qText}": No exact user/code match for "${qText}", so here is a live management view: ` +
+            `You have ${totalUsers} users (${paidUsersList.length} paid / ${conversionRate}% conversion, ${trialUsersList.length} trial), ` +
+            `${pendingPaymentsList.length} pending payment(s), and GHS ${unpaidTotal.toFixed(2)} in unpaid commissions. ` +
+            `Try asking for "feedback", "growth ideas", "who subscribed", "trial users", "who to pay", or a student/school/code name.`
         )
     }
     function handlePromoteSubmit(e: FormEvent<HTMLFormElement>) {
