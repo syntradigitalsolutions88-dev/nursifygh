@@ -10,6 +10,7 @@ interface AdminUserRow {
     email: string
     phone_number: string
     program: string
+    institution?: string
     level: number | null
     has_paid: boolean
     is_subscribed: boolean
@@ -254,11 +255,29 @@ export default function AdminCommissionsPage() {
             return
         }
 
-        if (lower.includes("today") || lower.includes("joined")) {
+        if (lower.includes("who just paid") || lower.includes("recent payment") || lower.includes("paid today")) {
+            setSearch("")
+            setUnpaidOnly(false)
+            setTab("payments")
+            const recentPaid = data.payments.filter((p) => p.status === "SUCCESS").slice(0, 5)
+            setAiReply(
+                recentPaid.length > 0
+                    ? `Switched to Payments (cleared search). Recent approved payments: ${recentPaid.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs).toFixed(2)}, ${formatDateTime(p.initiated_at)})`).join(" · ")}.`
+                    : `Switched to Payments (cleared search). No approved payments found yet.`
+            )
+            return
+        }
+
+        if (lower.includes("today") || lower.includes("joined") || lower.includes("who just joined")) {
+            setSearch("")
+            setUnpaidOnly(false)
             setTab("users")
             setQuickDate("today")
             setExactDate("")
-            setAiReply(`Switched to All Users with the Today filter active (${filteredUsers.length} user(s) matched).`)
+            const todayCount = data.users.filter((u) =>
+                matchesDateFilter(u.date_joined, "today", "", "", "")
+            ).length
+            setAiReply(`Switched to All Users with Today active and search cleared (${todayCount} user(s) shown).`)
             return
         }
 
@@ -332,7 +351,8 @@ export default function AdminCommissionsPage() {
             u.email.toLowerCase().includes(q) ||
             u.phone_number.toLowerCase().includes(q) ||
             u.referral_code.toLowerCase().includes(q) ||
-            u.referred_by.toLowerCase().includes(q)
+            u.referred_by.toLowerCase().includes(q) ||
+            (u.institution || "").toLowerCase().includes(q)
         )
     })
 
@@ -648,6 +668,7 @@ export default function AdminCommissionsPage() {
                                                     <td className="px-4 py-3 text-xs whitespace-nowrap">{formatDateTime(u.date_joined)}</td>
                                                     <td className="px-4 py-3 text-xs">
                                                         <div>{u.program || "—"} {u.level ? `· L${u.level}` : ""}</div>
+                                                        <div className="text-on-surface-muted">{u.institution || "School not set"}</div>
                                                         <div className="font-mono text-on-surface-muted">
                                                             {u.referral_code ? `Code: ${u.referral_code}` : ""}{" "}
                                                             {u.referred_by ? `· Ref by: ${u.referred_by}` : ""}

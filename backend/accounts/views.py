@@ -717,6 +717,7 @@ class AdminCommissionsOverviewView(APIView):
                 "email": u.email,
                 "phone_number": u.phone_number or "",
                 "program": u.program or "",
+                "institution": getattr(u, "institution", "") or "",
                 "level": u.level,
                 "has_paid": bool(u.has_paid),
                 "is_subscribed": bool(u.is_subscribed),
