@@ -214,11 +214,12 @@ export default function AdminCommissionsPage() {
 
 
     function handleAdminAiCommand(rawQuery?: string) {
-        const qText = (rawQuery ?? aiPrompt).trim()
-        if (!data) {
-            setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
-            return
-        }
+        try {
+            const qText = String(rawQuery ?? aiPrompt ?? "").trim()
+            if (!data) {
+                setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
+                return
+            }
         const lower = qText.toLowerCase()
 
         if (!lower || lower.includes("summary") || lower.includes("overview") || lower.includes("everything")) {
@@ -495,7 +496,7 @@ export default function AdminCommissionsPage() {
                             <button
                                 type="button"
                                 onClick={() => handleAdminAiCommand()}
-                                className="h-10 rounded-xl bg-brand-700 px-4 text-xs font-bold text-white hover:bg-brand-800 shrink-0"
+                                type="button" className="min-h-[46px] w-full sm:w-auto rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-800 shrink-0"
                             >
                                 Ask Admin AI
                             </button>
