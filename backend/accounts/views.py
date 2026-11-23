@@ -611,8 +611,12 @@ class BecomeAmbassadorView(APIView):
 
 
 def _get_trashed_user_ids():
-    ids = cache.get("nursify_admin_trashed_user_ids", [])
-    return [int(x) for x in ids if str(x).isdigit()]
+    ids = cache.get("nursify_admin_trashed_user_ids")
+    if isinstance(ids, list):
+        return [int(x) for x in ids if str(x).isdigit()]
+    return list(
+        User.objects.filter(is_active=False, is_staff=False, is_superuser=False).values_list("id", flat=True)
+    )
 
 def _set_trashed_user_ids(ids):
     clean = []

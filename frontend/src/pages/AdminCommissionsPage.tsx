@@ -715,7 +715,7 @@ export default function AdminCommissionsPage() {
                                                                 <button
                                                                     disabled={actionMutation.isPending}
                                                                     onClick={() => {
-                                                                        if (window.confirm(`Delete user ${u.email}? This cannot be undone.`)) {
+                                                                        if (window.confirm(`Move ${u.email} to Trash? You can restore them or delete permanently from the Trash tab.`)) {
                                                                             actionMutation.mutate({ action: "delete_user", user_id: u.id })
                                                                         }
                                                                     }}
