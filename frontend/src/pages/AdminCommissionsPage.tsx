@@ -4,8 +4,25 @@ import api from "../api/client"
 import AppShell from "../components/shell/AppShell"
 import { useAuth } from "../contexts/AuthContext"
 
+interface AdminUserRow {
+    id: number
+    full_name: string
+    email: string
+    phone_number: string
+    program: string
+    level: number | null
+    has_paid: boolean
+    is_subscribed: boolean
+    subscription_expires_at: string | null
+    is_ambassador: boolean
+    referral_code: string
+    referred_by: string
+    is_staff: boolean
+}
+
 interface AdminOverviewResponse {
     generated_at: string
+    users: AdminUserRow[]
     summary: {
         total_users: number
         paid_users: number
@@ -56,21 +73,16 @@ interface AdminOverviewResponse {
     }[]
 }
 
-function getDjangoAdminUrl(): string {
-    const base = (api.defaults.baseURL || "http://127.0.0.1:8000/api").replace(/\/+$/, "")
-    const root = base.endsWith("/api") ? base.slice(0, -4) : base
-    return `${root}/admin/`
-}
-
 export default function AdminCommissionsPage() {
     const { user } = useAuth()
     const queryClient = useQueryClient()
-    const [tab, setTab] = useState<"ambassadors" | "referrals" | "payments">("ambassadors")
+    const [tab, setTab] = useState<"users" | "ambassadors" | "referrals" | "payments">("users")
+    const [search, setSearch] = useState("")
     const [feedback, setFeedback] = useState<string | null>(null)
     const [promoteEmail, setPromoteEmail] = useState("")
     const [promoteCode, setPromoteCode] = useState("")
 
-    const authUser = user as (typeof user & { is_staff?: boolean; is_superuser?: boolean }) | null
+    const authUser = user as (typeof user & { id?: number; is_staff?: boolean; is_superuser?: boolean }) | null
     const isStaff = Boolean(authUser?.is_staff || authUser?.is_superuser)
 
     const { data, isLoading, isError, refetch } = useQuery<AdminOverviewResponse>({
@@ -89,20 +101,26 @@ export default function AdminCommissionsPage() {
         },
         onSuccess: (res, vars) => {
             const act = String(vars.action || "")
-            if (act === "mark_commission_paid") {
-                setFeedback(`Marked ${res.updated ?? 1} commission(s) as PAID OUT.`)
-            } else if (act === "revert_commission_paid") {
-                setFeedback(`Reverted ${res.updated ?? 1} commission(s) back to UNPAID.`)
-            } else if (act === "approve_payment") {
-                setFeedback("Payment approved and student subscription + commission activated.")
-            } else if (act === "reject_payment") {
-                setFeedback("Payment marked as FAILED.")
-            } else if (act === "promote_ambassador") {
-                setFeedback(`Ambassador active with referral code ${res.referral_code}.`)
+            const messages: Record<string, string> = {
+                mark_commission_paid: `Marked ${res.updated ?? 1} commission(s) as PAID OUT.`,
+                revert_commission_paid: `Reverted ${res.updated ?? 1} commission(s) back to UNPAID.`,
+                approve_payment: "Payment approved and student 120-day pass + commission activated.",
+                reject_payment: "Payment marked as FAILED.",
+                delete_payment: "Payment record deleted.",
+                promote_ambassador: `Ambassador active with referral code ${res.referral_code}.`,
+                toggle_ambassador: res.is_ambassador
+                    ? `Enabled ambassador (${res.referral_code}).`
+                    : "Disabled ambassador status.",
+                grant_pass: "Granted 120-day subscription pass to user.",
+                revoke_pass: "Revoked active subscription pass from user.",
+                delete_user: "User account deleted.",
+                delete_commission: "Commission record deleted.",
+                clear_referral: "Cleared referral code from student.",
+            }
+            setFeedback(messages[act] || "Action completed.")
+            if (act === "promote_ambassador") {
                 setPromoteEmail("")
                 setPromoteCode("")
-            } else {
-                setFeedback("Action completed.")
             }
             queryClient.invalidateQueries({ queryKey: ["admin-commissions-overview"] })
         },
@@ -128,12 +146,24 @@ export default function AdminCommissionsPage() {
                 <div className="max-w-2xl mx-auto py-12 px-4 text-center">
                     <h1 className="text-xl font-bold text-on-surface">Admin Access Only</h1>
                     <p className="text-sm text-on-surface-muted mt-2">
-                        This commission, referral, and payment tracking board is restricted to staff/admin accounts.
+                        This control center is restricted to staff/admin accounts.
                     </p>
                 </div>
             </AppShell>
         )
     }
+
+    const q = search.trim().toLowerCase()
+    const filteredUsers = (data?.users || []).filter((u) => {
+        if (!q) return true
+        return (
+            u.full_name.toLowerCase().includes(q) ||
+            u.email.toLowerCase().includes(q) ||
+            u.phone_number.toLowerCase().includes(q) ||
+            u.referral_code.toLowerCase().includes(q) ||
+            u.referred_by.toLowerCase().includes(q)
+        )
+    })
 
     return (
         <AppShell>
@@ -141,30 +171,20 @@ export default function AdminCommissionsPage() {
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
                     <div>
                         <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Admin Control Board</p>
-                        <h1 className="text-3xl font-bold text-on-surface mt-1">Commissions, Referrals &amp; Payments</h1>
+                        <h1 className="text-3xl font-bold text-on-surface mt-1">Users, Commissions &amp; Payments</h1>
                         <p className="text-xs text-on-surface-muted mt-1">
-                            Pay out commissions, approve payments, add ambassadors, and track referrals directly here
+                            Full control over users, MoMo payouts, student payments, referrals, and ambassadors in one dashboard
                         </p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <button
-                            onClick={() => {
-                                setFeedback(null)
-                                refetch()
-                            }}
-                            className="rounded-xl border border-border bg-white px-4 py-2 text-xs font-bold text-on-surface hover:bg-surface-subtle"
-                        >
-                            Refresh Data
-                        </button>
-                        <a
-                            href={getDjangoAdminUrl()}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="rounded-xl border border-border bg-surface-subtle px-4 py-2 text-xs font-bold text-on-surface hover:bg-surface-inset"
-                        >
-                            Django Admin
-                        </a>
-                    </div>
+                    <button
+                        onClick={() => {
+                            setFeedback(null)
+                            refetch()
+                        }}
+                        className="rounded-xl border border-border bg-white px-4 py-2 text-xs font-bold text-on-surface hover:bg-surface-subtle self-start sm:self-auto"
+                    >
+                        Refresh Data
+                    </button>
                 </div>
 
                 {feedback && (
@@ -176,7 +196,7 @@ export default function AdminCommissionsPage() {
                     </div>
                 )}
 
-                {isLoading && <div className="p-10 text-center text-on-surface-muted">Loading admin overview…</div>}
+                {isLoading && <div className="p-10 text-center text-on-surface-muted">Loading admin data…</div>}
                 {isError && (
                     <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
                         Could not load admin overview. Make sure your account has staff/admin permissions.
@@ -186,7 +206,7 @@ export default function AdminCommissionsPage() {
                 {data && (
                     <>
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                            <KpiCard label="Total Earned" value={`GHS ${parseFloat(data.summary.total_earned).toFixed(2)}`} />
+                            <KpiCard label="Total Users" value={String(data.summary.total_users)} />
                             <KpiCard label="Unpaid Commissions" value={`GHS ${parseFloat(data.summary.unpaid_ghs).toFixed(2)}`} />
                             <KpiCard label="Paid Out" value={`GHS ${parseFloat(data.summary.paid_out_ghs).toFixed(2)}`} />
                             <KpiCard
@@ -195,25 +215,124 @@ export default function AdminCommissionsPage() {
                             />
                         </div>
 
-                        <div className="flex flex-wrap gap-2 border-b border-border pb-3">
-                            {(
-                                [
-                                    ["ambassadors", `Ambassadors & Payouts (${data.ambassadors.length})`],
-                                    ["referrals", `Referral Ledger (${data.referrals.length})`],
-                                    ["payments", `Payments (${data.payments.length})`],
-                                ] as const
-                            ).map(([key, label]) => (
-                                <button
-                                    key={key}
-                                    onClick={() => setTab(key)}
-                                    className={`rounded-xl px-4 py-2 text-xs font-bold transition-colors ${
-                                        tab === key ? "bg-brand-700 text-white" : "bg-surface-subtle text-on-surface-muted hover:text-on-surface"
-                                    }`}
-                                >
-                                    {label}
-                                </button>
-                            ))}
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border pb-3">
+                            <div className="flex flex-wrap gap-2">
+                                {(
+                                    [
+                                        ["users", `All Users (${data.users.length})`],
+                                        ["ambassadors", `Ambassadors & Payouts (${data.ambassadors.length})`],
+                                        ["referrals", `Referral Ledger (${data.referrals.length})`],
+                                        ["payments", `Payments (${data.payments.length})`],
+                                    ] as const
+                                ).map(([key, label]) => (
+                                    <button
+                                        key={key}
+                                        onClick={() => setTab(key)}
+                                        className={`rounded-xl px-4 py-2 text-xs font-bold transition-colors ${
+                                            tab === key ? "bg-brand-700 text-white" : "bg-surface-subtle text-on-surface-muted hover:text-on-surface"
+                                        }`}
+                                    >
+                                        {label}
+                                    </button>
+                                ))}
+                            </div>
+
+                            {tab === "users" && (
+                                <input
+                                    type="search"
+                                    value={search}
+                                    onChange={(e) => setSearch(e.target.value)}
+                                    placeholder="Search name, email, phone, code…"
+                                    className="h-9 w-full sm:w-64 rounded-xl border border-border bg-white px-3 text-xs"
+                                />
+                            )}
                         </div>
+
+                        {tab === "users" && (
+                            <div className="rounded-2xl border border-border bg-white shadow-sm overflow-x-auto">
+                                <table className="w-full text-left text-xs sm:text-sm">
+                                    <thead className="bg-surface-subtle text-on-surface-muted uppercase text-[11px]">
+                                        <tr>
+                                            <th className="px-4 py-3">User</th>
+                                            <th className="px-4 py-3">Program / Ref</th>
+                                            <th className="px-4 py-3">Pass Status</th>
+                                            <th className="px-4 py-3">Role</th>
+                                            <th className="px-4 py-3">Controls</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-border">
+                                        {filteredUsers.map((u) => {
+                                            const isSelf = authUser?.id === u.id
+                                            return (
+                                                <tr key={u.id} className="hover:bg-surface-subtle/40">
+                                                    <td className="px-4 py-3">
+                                                        <div className="font-bold text-on-surface">{u.full_name || "—"}</div>
+                                                        <div className="text-xs text-on-surface-muted">
+                                                            {u.email} {u.phone_number ? `· ${u.phone_number}` : ""}
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-4 py-3 text-xs">
+                                                        <div>{u.program || "—"} {u.level ? `· L${u.level}` : ""}</div>
+                                                        <div className="font-mono text-on-surface-muted">
+                                                            {u.referral_code ? `Code: ${u.referral_code}` : ""}{" "}
+                                                            {u.referred_by ? `· Ref by: ${u.referred_by}` : ""}
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-4 py-3">
+                                                        <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${u.has_paid || u.is_subscribed ? "bg-green-100 text-green-800" : "bg-amber-100 text-amber-800"}`}>
+                                                            {u.has_paid ? "PAID PASS" : u.is_subscribed ? "TRIAL/ACTIVE" : "FREE"}
+                                                        </span>
+                                                    </td>
+                                                    <td className="px-4 py-3 text-xs font-semibold">
+                                                        {u.is_staff ? "ADMIN" : u.is_ambassador ? "AMBASSADOR" : "STUDENT"}
+                                                    </td>
+                                                    <td className="px-4 py-3">
+                                                        <div className="flex flex-wrap gap-1.5">
+                                                            <button
+                                                                disabled={actionMutation.isPending}
+                                                                onClick={() => actionMutation.mutate({ action: "grant_pass", user_id: u.id })}
+                                                                className="rounded-lg bg-brand-700 px-2.5 py-1 text-[11px] font-bold text-white hover:bg-brand-800 disabled:opacity-50"
+                                                            >
+                                                                +120d Pass
+                                                            </button>
+                                                            {(u.has_paid || u.is_subscribed) && (
+                                                                <button
+                                                                    disabled={actionMutation.isPending}
+                                                                    onClick={() => actionMutation.mutate({ action: "revoke_pass", user_id: u.id })}
+                                                                    className="rounded-lg border border-border bg-white px-2.5 py-1 text-[11px] font-semibold text-on-surface-muted hover:text-on-surface disabled:opacity-50"
+                                                                >
+                                                                    Revoke
+                                                                </button>
+                                                            )}
+                                                            <button
+                                                                disabled={actionMutation.isPending}
+                                                                onClick={() => actionMutation.mutate({ action: "toggle_ambassador", user_id: u.id })}
+                                                                className="rounded-lg border border-border bg-white px-2.5 py-1 text-[11px] font-semibold text-on-surface hover:bg-surface-subtle disabled:opacity-50"
+                                                            >
+                                                                {u.is_ambassador ? "Unset Amb" : "Make Amb"}
+                                                            </button>
+                                                            {!isSelf && (
+                                                                <button
+                                                                    disabled={actionMutation.isPending}
+                                                                    onClick={() => {
+                                                                        if (window.confirm(`Delete user ${u.email}? This cannot be undone.`)) {
+                                                                            actionMutation.mutate({ action: "delete_user", user_id: u.id })
+                                                                        }
+                                                                    }}
+                                                                    className="rounded-lg border border-red-200 bg-red-50 px-2.5 py-1 text-[11px] font-bold text-red-700 hover:bg-red-100 disabled:opacity-50"
+                                                                >
+                                                                    Delete
+                                                                </button>
+                                                            )}
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            )
+                                        })}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
 
                         {tab === "ambassadors" && (
                             <div className="space-y-4">
@@ -321,9 +440,18 @@ export default function AdminCommissionsPage() {
                                                                         Mark Unpaid
                                                                     </button>
                                                                 )}
-                                                                {unpaidVal === 0 && paidOutVal === 0 && (
-                                                                    <span className="text-xs font-semibold text-on-surface-muted">No balance</span>
-                                                                )}
+                                                                <button
+                                                                    disabled={actionMutation.isPending}
+                                                                    onClick={() =>
+                                                                        actionMutation.mutate({
+                                                                            action: "toggle_ambassador",
+                                                                            user_id: a.id,
+                                                                        })
+                                                                    }
+                                                                    className="rounded-lg border border-red-200 bg-red-50 px-2.5 py-1.5 text-xs font-semibold text-red-700 hover:bg-red-100 disabled:opacity-50"
+                                                                >
+                                                                    Remove Amb
+                                                                </button>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -343,9 +471,9 @@ export default function AdminCommissionsPage() {
                                             <th className="px-4 py-3">Referred Student</th>
                                             <th className="px-4 py-3">Ambassador Who Referred</th>
                                             <th className="px-4 py-3">Code</th>
-                                            <th className="px-4 py-3">Subscription</th>
                                             <th className="px-4 py-3">Commission</th>
                                             <th className="px-4 py-3">Payout</th>
+                                            <th className="px-4 py-3">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-border">
@@ -362,11 +490,6 @@ export default function AdminCommissionsPage() {
                                                     <div className="text-xs text-on-surface-muted">{r.ambassador_email}</div>
                                                 </td>
                                                 <td className="px-4 py-3 font-mono font-bold">{r.referral_code}</td>
-                                                <td className="px-4 py-3">
-                                                    <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${r.student_has_paid ? "bg-green-100 text-green-800" : "bg-amber-100 text-amber-800"}`}>
-                                                        {r.student_has_paid ? "PAID" : "UNPAID"}
-                                                    </span>
-                                                </td>
                                                 <td className="px-4 py-3 font-bold text-brand-700">
                                                     GHS {parseFloat(r.commission_amount).toFixed(2)}
                                                 </td>
@@ -374,6 +497,30 @@ export default function AdminCommissionsPage() {
                                                     <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${r.is_paid_out ? "bg-green-100 text-green-800" : "bg-amber-100 text-amber-800"}`}>
                                                         {r.is_paid_out ? "PAID OUT" : "UNPAID"}
                                                     </span>
+                                                </td>
+                                                <td className="px-4 py-3">
+                                                    <div className="flex flex-wrap gap-1.5">
+                                                        <button
+                                                            disabled={actionMutation.isPending}
+                                                            onClick={() => actionMutation.mutate({ action: "clear_referral", student_id: r.student_id })}
+                                                            className="rounded-lg border border-border bg-white px-2.5 py-1 text-xs font-semibold text-on-surface-muted hover:text-on-surface disabled:opacity-50"
+                                                        >
+                                                            Clear Ref
+                                                        </button>
+                                                        {parseFloat(r.commission_amount) > 0 && (
+                                                            <button
+                                                                disabled={actionMutation.isPending}
+                                                                onClick={() => {
+                                                                    if (window.confirm("Delete this commission record?")) {
+                                                                        actionMutation.mutate({ action: "delete_commission", student_id: r.student_id })
+                                                                    }
+                                                                }}
+                                                                className="rounded-lg border border-red-200 bg-red-50 px-2.5 py-1 text-xs font-bold text-red-700 hover:bg-red-100 disabled:opacity-50"
+                                                            >
+                                                                Delete Comm
+                                                            </button>
+                                                        )}
+                                                    </div>
                                                 </td>
                                             </tr>
                                         ))}
@@ -416,8 +563,8 @@ export default function AdminCommissionsPage() {
                                                     </span>
                                                 </td>
                                                 <td className="px-4 py-3">
-                                                    {p.status !== "SUCCESS" ? (
-                                                        <div className="flex flex-wrap gap-2">
+                                                    <div className="flex flex-wrap gap-1.5">
+                                                        {p.status !== "SUCCESS" && (
                                                             <button
                                                                 disabled={actionMutation.isPending}
                                                                 onClick={() =>
@@ -430,24 +577,33 @@ export default function AdminCommissionsPage() {
                                                             >
                                                                 Approve
                                                             </button>
-                                                            {p.status !== "FAILED" && (
-                                                                <button
-                                                                    disabled={actionMutation.isPending}
-                                                                    onClick={() =>
-                                                                        actionMutation.mutate({
-                                                                            action: "reject_payment",
-                                                                            payment_id: p.id,
-                                                                        })
-                                                                    }
-                                                                    className="rounded-lg border border-border bg-white px-2.5 py-1.5 text-xs font-semibold text-on-surface-muted hover:text-on-surface disabled:opacity-50"
-                                                                >
-                                                                    Fail
-                                                                </button>
-                                                            )}
-                                                        </div>
-                                                    ) : (
-                                                        <span className="text-xs font-semibold text-green-700">Approved</span>
-                                                    )}
+                                                        )}
+                                                        {p.status !== "SUCCESS" && p.status !== "FAILED" && (
+                                                            <button
+                                                                disabled={actionMutation.isPending}
+                                                                onClick={() =>
+                                                                    actionMutation.mutate({
+                                                                        action: "reject_payment",
+                                                                        payment_id: p.id,
+                                                                    })
+                                                                }
+                                                                className="rounded-lg border border-border bg-white px-2.5 py-1.5 text-xs font-semibold text-on-surface-muted hover:text-on-surface disabled:opacity-50"
+                                                            >
+                                                                Reject
+                                                            </button>
+                                                        )}
+                                                        <button
+                                                            disabled={actionMutation.isPending}
+                                                            onClick={() => {
+                                                                if (window.confirm("Delete this payment record?")) {
+                                                                    actionMutation.mutate({ action: "delete_payment", payment_id: p.id })
+                                                                }
+                                                            }}
+                                                            className="rounded-lg border border-red-200 bg-red-50 px-2.5 py-1.5 text-xs font-bold text-red-700 hover:bg-red-100 disabled:opacity-50"
+                                                        >
+                                                            Delete
+                                                        </button>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         ))}

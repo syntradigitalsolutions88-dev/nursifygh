@@ -708,8 +708,30 @@ class AdminCommissionsOverviewView(APIView):
             for t in txns
         ]
 
+
+        users_qs = User.objects.order_by("-date_joined")[:200]
+        user_rows = [
+            {
+                "id": u.id,
+                "full_name": u.full_name or "",
+                "email": u.email,
+                "phone_number": u.phone_number or "",
+                "program": u.program or "",
+                "level": u.level,
+                "has_paid": bool(u.has_paid),
+                "is_subscribed": bool(u.is_subscribed),
+                "subscription_expires_at": u.subscription_expires_at.isoformat() if u.subscription_expires_at else None,
+                "is_ambassador": bool(u.is_ambassador),
+                "referral_code": u.referral_code or "",
+                "referred_by": u.referred_by or "",
+                "is_staff": bool(u.is_staff or u.is_superuser),
+            }
+            for u in users_qs
+        ]
+
         return Response({
             "generated_at": now.isoformat(),
+            "users": user_rows,
             "summary": {
                 "total_users": total_users,
                 "paid_users": paid_users,
@@ -863,6 +885,75 @@ class AdminCommissionsActionView(APIView):
                 "user_id": target.id,
                 "referral_code": target.referral_code,
             })
+
+
+        if action == "grant_pass":
+            user_id = request.data.get("user_id")
+            if not user_id:
+                return Response({"error": "user_id is required."}, status=400)
+            try:
+                target = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                return Response({"error": "User not found."}, status=404)
+            target.activate_subscription(days=120, reference=f"ADMIN-GRANT-{target.id}")
+            return Response({"ok": True, "action": action, "user_id": target.id})
+
+        if action == "revoke_pass":
+            user_id = request.data.get("user_id")
+            if not user_id:
+                return Response({"error": "user_id is required."}, status=400)
+            try:
+                target = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                return Response({"error": "User not found."}, status=404)
+            target.has_paid = False
+            target.is_subscribed = False
+            target.subscription_expires_at = timezone.now()
+            target.save(update_fields=["has_paid", "is_subscribed", "subscription_expires_at"])
+            return Response({"ok": True, "action": action, "user_id": target.id})
+
+        if action == "delete_user":
+            user_id = request.data.get("user_id")
+            if not user_id:
+                return Response({"error": "user_id is required."}, status=400)
+            if int(user_id) == int(request.user.id):
+                return Response({"error": "You cannot delete your own currently logged-in admin account."}, status=400)
+            try:
+                target = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                return Response({"error": "User not found."}, status=404)
+            target.delete()
+            return Response({"ok": True, "action": action, "user_id": user_id})
+
+        if action == "delete_payment":
+            payment_id = request.data.get("payment_id")
+            if not payment_id:
+                return Response({"error": "payment_id is required."}, status=400)
+            try:
+                txn = PaymentTransaction.objects.get(id=payment_id)
+            except PaymentTransaction.DoesNotExist:
+                return Response({"error": "Payment transaction not found."}, status=404)
+            txn.delete()
+            return Response({"ok": True, "action": action, "payment_id": payment_id})
+
+        if action == "delete_commission":
+            student_id = request.data.get("student_id")
+            if not student_id:
+                return Response({"error": "student_id is required."}, status=400)
+            deleted_count, _ = AmbassadorCommission.objects.filter(referred_student_id=student_id).delete()
+            return Response({"ok": True, "action": action, "deleted": deleted_count})
+
+        if action == "clear_referral":
+            student_id = request.data.get("student_id")
+            if not student_id:
+                return Response({"error": "student_id is required."}, status=400)
+            try:
+                student = User.objects.get(id=student_id)
+            except User.DoesNotExist:
+                return Response({"error": "Student not found."}, status=404)
+            student.referred_by = ""
+            student.save(update_fields=["referred_by"])
+            return Response({"ok": True, "action": action, "student_id": student.id})
 
         return Response({"error": "Unsupported action."}, status=400)
 
