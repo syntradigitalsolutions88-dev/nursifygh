@@ -513,6 +513,7 @@ export default function AdminCommissionsPage() {
                     >
                         Refresh Data
                     </button>
+                    <a href="https://nursifygh-api.onrender.com/admin/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-xs font-bold text-white hover:bg-slate-800 self-start sm:self-auto">Django Admin ↗</a>
                 </div>
 
                 {feedback && (
