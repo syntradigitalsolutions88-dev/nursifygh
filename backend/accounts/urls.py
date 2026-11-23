@@ -5,6 +5,7 @@ from rest_framework_simplejwt.views import TokenRefreshView
 
 from .views import (
     AmbassadorStatsView,
+    AdminCommissionsOverviewView,
     BecomeAmbassadorView,
     ClinicalLogDetailView,
     ClinicalLogsDetailView,
@@ -38,4 +39,5 @@ urlpatterns = [
     path("clinical-logs/<int:log_id>/", ClinicalLogDetailView.as_view(), name="clinical-log-detail"),
     path("ambassador/stats/", AmbassadorStatsView.as_view(), name="ambassador-stats"),
     path("ambassador/become/", BecomeAmbassadorView.as_view(), name="ambassador-become"),
+    path("admin/commissions-overview/", AdminCommissionsOverviewView.as_view(), name="admin-commissions-overview"),
 ]

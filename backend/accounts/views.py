@@ -1,3 +1,4 @@
+from decimal import Decimal
 """Authentication, profile, clinical tracking, and AI endpoints."""
 
 from __future__ import annotations
@@ -603,6 +604,125 @@ class BecomeAmbassadorView(APIView):
             "detail": "You are now an ambassador!",
             "code": code,
         })
+
+
+
+class AdminCommissionsOverviewView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        if not (request.user.is_staff or request.user.is_superuser):
+            return Response({"error": "Admin access required."}, status=403)
+
+        from payments.models import PaymentTransaction
+
+        now = timezone.now()
+        total_users = User.objects.count()
+        paid_users = User.objects.filter(has_paid=True).count()
+        referred_users_qs = (
+            User.objects.exclude(referred_by__isnull=True)
+            .exclude(referred_by="")
+            .order_by("-date_joined")
+        )
+
+        ambassadors = User.objects.filter(is_ambassador=True).order_by("-date_joined")
+        amb_by_code = {
+            (a.referral_code or "").strip().upper(): a
+            for a in ambassadors
+            if a.referral_code
+        }
+
+        commissions = list(
+            AmbassadorCommission.objects.select_related("ambassador", "referred_student").order_by("-created_at")
+        )
+        comm_by_student = {
+            c.referred_student_id: c
+            for c in commissions
+            if c.referred_student_id
+        }
+
+        total_earned = sum((c.amount_ghs for c in commissions), Decimal("0.00"))
+        unpaid_total = sum((c.amount_ghs for c in commissions if not c.is_paid_out), Decimal("0.00"))
+        paid_out_total = total_earned - unpaid_total
+
+        ambassador_rows = []
+        for amb in ambassadors:
+            code_key = (amb.referral_code or "").strip().upper()
+            refs = User.objects.filter(referred_by__iexact=amb.referral_code).exclude(id=amb.id) if amb.referral_code else User.objects.none()
+            amb_comms = [c for c in commissions if c.ambassador_id == amb.id]
+            amb_earned = sum((c.amount_ghs for c in amb_comms), Decimal("0.00"))
+            amb_unpaid = sum((c.amount_ghs for c in amb_comms if not c.is_paid_out), Decimal("0.00"))
+            amb_paid = amb_earned - amb_unpaid
+            ambassador_rows.append({
+                "id": amb.id,
+                "full_name": amb.full_name,
+                "email": amb.email,
+                "phone_number": amb.phone_number or "",
+                "referral_code": amb.referral_code or "",
+                "total_referrals": refs.count(),
+                "paid_referrals": refs.filter(has_paid=True).count(),
+                "total_earned": str(amb_earned),
+                "unpaid_ghs": str(amb_unpaid),
+                "paid_out_ghs": str(amb_paid),
+            })
+
+        referral_ledger = []
+        for student in referred_users_qs[:100]:
+            code_key = (student.referred_by or "").strip().upper()
+            amb = amb_by_code.get(code_key)
+            comm = comm_by_student.get(student.id)
+            referral_ledger.append({
+                "student_id": student.id,
+                "student_name": student.full_name,
+                "student_email": student.email,
+                "student_phone": student.phone_number or "",
+                "student_has_paid": student.has_paid,
+                "joined_at": student.date_joined.isoformat(),
+                "referral_code": student.referred_by,
+                "ambassador_name": amb.full_name if amb else "Unassigned / Code",
+                "ambassador_email": amb.email if amb else "",
+                "ambassador_phone": amb.phone_number if amb else "",
+                "commission_amount": str(comm.amount_ghs) if comm else "0.00",
+                "is_paid_out": comm.is_paid_out if comm else False,
+            })
+
+        txns = (
+            PaymentTransaction.objects.select_related("student")
+            .order_by("-initiated_at")[:50]
+        )
+        payment_rows = [
+            {
+                "id": t.id,
+                "reference": t.reference,
+                "manual_reference": t.manual_reference or "",
+                "student_name": t.student.full_name if t.student else "",
+                "student_email": t.student.email if t.student else "",
+                "student_phone": t.student.phone_number if t.student else "",
+                "referred_by": t.student.referred_by if t.student else "",
+                "amount_ghs": str(t.amount_ghs),
+                "provider": t.provider,
+                "status": t.status,
+                "initiated_at": t.initiated_at.isoformat() if t.initiated_at else None,
+            }
+            for t in txns
+        ]
+
+        return Response({
+            "generated_at": now.isoformat(),
+            "summary": {
+                "total_users": total_users,
+                "paid_users": paid_users,
+                "total_referrals": referred_users_qs.count(),
+                "ambassador_count": ambassadors.count(),
+                "total_earned": str(total_earned),
+                "unpaid_ghs": str(unpaid_total),
+                "paid_out_ghs": str(paid_out_total),
+            },
+            "ambassadors": ambassador_rows,
+            "referrals": referral_ledger,
+            "payments": payment_rows,
+        })
+
 
 # ─── AI ────────────────────────────────────────────────────────────────────────
 

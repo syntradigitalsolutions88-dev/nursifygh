@@ -1,5 +1,5 @@
-import { useState, type FormEvent } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { useEffect, useState, type FormEvent } from "react"
+import { Link, useNavigate, useSearchParams } from "react-router-dom"
 import { AxiosError } from "axios"
 
 import AuthLayout from "../components/shell/AuthLayout"
@@ -14,6 +14,7 @@ type FieldErrors = Record<string, string[]>
 export default function RegisterPage() {
     const { register } = useAuth()
     const navigate = useNavigate()
+    const [searchParams] = useSearchParams()
 
     const [form, setForm] = useState({
         email: "",
@@ -26,9 +27,34 @@ export default function RegisterPage() {
         password_confirm: "",
         referred_by: "",
     })
+    const [referralSource, setReferralSource] = useState<"url" | "saved" | null>(null)
     const [error, setError] = useState<string | null>(null)
     const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})
     const [submitting, setSubmitting] = useState(false)
+
+    useEffect(() => {
+        const paramCode = (searchParams.get("ref") || searchParams.get("code") || "").trim().toUpperCase()
+        if (paramCode) {
+            try {
+                localStorage.setItem("nursify_ref", paramCode)
+            } catch {
+                // ignore storage errors
+            }
+            setForm((prev) => ({ ...prev, referred_by: paramCode }))
+            setReferralSource("url")
+            return
+        }
+
+        try {
+            const savedCode = (localStorage.getItem("nursify_ref") || "").trim().toUpperCase()
+            if (savedCode) {
+                setForm((prev) => ({ ...prev, referred_by: prev.referred_by || savedCode }))
+                setReferralSource("saved")
+            }
+        } catch {
+            // ignore storage errors
+        }
+    }, [searchParams])
 
     function set<K extends keyof typeof form>(key: K, value: (typeof form)[K]) {
         setForm((f) => ({ ...f, [key]: value }))
@@ -42,6 +68,7 @@ export default function RegisterPage() {
         setFieldErrors({})
         setSubmitting(true)
         try {
+            const cleanRef = form.referred_by.trim().toUpperCase()
             await register({
                 email: form.email,
                 full_name: form.full_name,
@@ -51,8 +78,13 @@ export default function RegisterPage() {
                 institution: form.institution,
                 password: form.password,
                 password_confirm: form.password_confirm,
-                referred_by: form.referred_by.trim() || undefined,
+                referred_by: cleanRef || undefined,
             })
+            try {
+                localStorage.removeItem("nursify_ref")
+            } catch {
+                // ignore storage errors
+            }
             navigate("/dashboard", { replace: true })
         } catch (err) {
             if (err instanceof AxiosError) {
@@ -79,6 +111,8 @@ export default function RegisterPage() {
         return list && list.length > 0 ? list.join(" ") : undefined
     }
 
+    const activeCode = form.referred_by.trim().toUpperCase()
+
     return (
         <AuthLayout>
             <div className="mb-8">
@@ -87,6 +121,35 @@ export default function RegisterPage() {
                     Join thousands of nursing students in Ghana.
                 </p>
             </div>
+
+            {activeCode && (
+                <div className="mb-6 rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-xs sm:text-sm text-brand-900 flex items-center justify-between gap-3">
+                    <div>
+                        <span className="font-bold">Referral Code Applied:</span>{" "}
+                        <code className="rounded bg-white px-2 py-0.5 font-black text-brand-800 border border-brand-200">
+                            {activeCode}
+                        </code>
+                        <span className="ml-2 text-brand-700">
+                            {referralSource === "url" ? "(from invite link)" : "(saved referral)"}
+                        </span>
+                    </div>
+                    <button
+                        type="button"
+                        onClick={() => {
+                            set("referred_by", "")
+                            setReferralSource(null)
+                            try {
+                                localStorage.removeItem("nursify_ref")
+                            } catch {
+                                // ignore
+                            }
+                        }}
+                        className="text-xs font-semibold text-brand-700 hover:underline shrink-0"
+                    >
+                        Clear
+                    </button>
+                </div>
+            )}
 
             <form onSubmit={onSubmit} className="space-y-6">
                 <div className="space-y-4">
@@ -175,7 +238,7 @@ export default function RegisterPage() {
                         value={form.referred_by}
                         onChange={(e) => set("referred_by", e.target.value.toUpperCase())}
                         placeholder="e.g. SYNTRA-20"
-                        helper="If a friend invited you, enter their code so they get credit"
+                        helper="Auto-filled from an invite link, or enter a friend's referral code"
                         error={fieldError("referred_by")}
                         disabled={submitting}
                     />
