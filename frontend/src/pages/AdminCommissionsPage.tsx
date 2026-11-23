@@ -156,7 +156,10 @@ export default function AdminCommissionsPage() {
     const [unpaidOnly, setUnpaidOnly] = useState(false)
     const [feedback, setFeedback] = useState<string | null>(null)
     const [promoteEmail, setPromoteEmail] = useState("")
+    const [promoteEmail, setPromoteEmail] = useState("")
     const [promoteCode, setPromoteCode] = useState("")
+    const [aiPrompt, setAiPrompt] = useState("")
+    const [aiReply, setAiReply] = useState<string | null>(null)
 
     const authUser = user as (typeof user & { id?: number; is_staff?: boolean; is_superuser?: boolean }) | null
     const isStaff = Boolean(authUser?.is_staff || authUser?.is_superuser)
@@ -205,6 +208,90 @@ export default function AdminCommissionsPage() {
             setFeedback(maybeResp?.response?.data?.error || "Could not complete that action. Try again.")
         },
     })
+
+
+    function handleAdminAiCommand(rawQuery?: string) {
+        const qText = (rawQuery ?? aiPrompt).trim()
+        if (!data) {
+            setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
+            return
+        }
+        const lower = qText.toLowerCase()
+
+        if (!lower || lower.includes("summary") || lower.includes("overview") || lower.includes("everything")) {
+            const pendingCount = data.payments.filter((p) => p.status !== "SUCCESS" && p.status !== "FAILED").length
+            const unpaidAmbs = data.ambassadors.filter((a) => parseFloat(a.unpaid_ghs) > 0)
+            setAiReply(
+                `Dashboard Summary: ${data.summary.total_users} total users (${data.summary.paid_users} paid), ` +
+                `${data.summary.total_referrals} referrals across ${data.summary.ambassador_count} ambassadors. ` +
+                `Commissions: GHS ${parseFloat(data.summary.unpaid_ghs).toFixed(2)} unpaid (${unpaidAmbs.length} ambassador(s) to pay), ` +
+                `GHS ${parseFloat(data.summary.paid_out_ghs).toFixed(2)} paid out. Pending/review payments: ${pendingCount}.`
+            )
+            return
+        }
+
+        if (lower.includes("unpaid") || lower.includes("payout") || lower.includes("who to pay") || lower.includes("pay out")) {
+            setTab("ambassadors")
+            setUnpaidOnly(true)
+            const oweList = data.ambassadors
+                .filter((a) => parseFloat(a.unpaid_ghs) > 0)
+                .map((a) => `${a.full_name || a.email} (${a.phone_number || "no phone"}): GHS ${parseFloat(a.unpaid_ghs).toFixed(2)}`)
+            setAiReply(
+                oweList.length > 0
+                    ? `Switched to Ambassadors & Payouts (Unpaid Only). Owed payouts: ${oweList.join(" · ")}.`
+                    : `Switched to Ambassadors & Payouts. All commissions are currently settled (GHS 0.00 unpaid).`
+            )
+            return
+        }
+
+        if (lower.includes("pending") || lower.includes("payment") || lower.includes("approve")) {
+            setTab("payments")
+            const pending = data.payments.filter((p) => p.status !== "SUCCESS" && p.status !== "FAILED")
+            setAiReply(
+                pending.length > 0
+                    ? `Switched to Payments. ${pending.length} payment(s) need attention: ${pending.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs).toFixed(2)}, ${p.status})`).join(" · ")}.`
+                    : `Switched to Payments. There are no pending or awaiting-review payments right now.`
+            )
+            return
+        }
+
+        if (lower.includes("today") || lower.includes("joined")) {
+            setTab("users")
+            setQuickDate("today")
+            setExactDate("")
+            setAiReply(`Switched to All Users with the Today filter active (${filteredUsers.length} user(s) matched).`)
+            return
+        }
+
+        if (lower.includes("reset") || lower.includes("all dates") || lower.includes("clear filter")) {
+            resetDateFilters()
+            setSearch("")
+            setAiReply("Reset all date, unpaid, and search filters.")
+            return
+        }
+
+        const term = lower.replace(/^(find|search|who is|check|show)\s+/i, "").trim()
+        if (term) {
+            setSearch(term)
+            const matchedUsers = data.users.filter(
+                (u) =>
+                    u.full_name.toLowerCase().includes(term) ||
+                    u.email.toLowerCase().includes(term) ||
+                    u.phone_number.toLowerCase().includes(term) ||
+                    u.referral_code.toLowerCase().includes(term) ||
+                    u.referred_by.toLowerCase().includes(term)
+            )
+            const matchedAmbs = data.ambassadors.filter(
+                (a) =>
+                    a.full_name.toLowerCase().includes(term) ||
+                    a.email.toLowerCase().includes(term) ||
+                    a.referral_code.toLowerCase().includes(term)
+            )
+            setAiReply(
+                `Filtered by "${term}": ${matchedUsers.length} user match(es), ${matchedAmbs.length} ambassador match(es).`
+            )
+        }
+    }
 
     function handlePromoteSubmit(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
@@ -322,6 +409,88 @@ export default function AdminCommissionsPage() {
                 {isError && (
                     <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
                         Could not load admin overview. Make sure your account has staff/admin permissions.
+                    </div>
+                )}
+
+                {/* Strictly Admin-Only AI Assistant (never exposed to students/users) */}
+                {isStaff && (
+                    <div className="rounded-2xl border border-brand-200 bg-brand-50/50 p-4 shadow-sm space-y-3">
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                            <div>
+                                <p className="text-[11px] font-bold uppercase tracking-wider text-brand-800">
+                                    Admin-Only AI Assistant
+                                </p>
+                                <p className="text-xs text-on-surface-muted">
+                                    Ask for summaries, jump to unpaid payouts or pending payments, or search users &amp; codes
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap gap-1.5">
+                                <button
+                                    type="button"
+                                    onClick={() => handleAdminAiCommand("summary")}
+                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                >
+                                    Dashboard Summary
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleAdminAiCommand("unpaid payouts")}
+                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                >
+                                    Who to Pay
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleAdminAiCommand("pending payments")}
+                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                >
+                                    Pending Payments
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleAdminAiCommand("today")}
+                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                >
+                                    Today&apos;s Users
+                                </button>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row gap-2">
+                            <input
+                                type="text"
+                                value={aiPrompt}
+                                onChange={(e) => setAiPrompt(e.target.value)}
+                                onKeyDown={(e) => {
+                                    if (e.key === "Enter") {
+                                        e.preventDefault()
+                                        handleAdminAiCommand()
+                                    }
+                                }}
+                                placeholder="e.g. Who has unpaid payouts? or Find SYNTRA-20 or pending payments"
+                                className="h-10 flex-1 rounded-xl border border-border bg-white px-3 text-xs sm:text-sm"
+                            />
+                            <button
+                                type="button"
+                                onClick={() => handleAdminAiCommand()}
+                                className="h-10 rounded-xl bg-brand-700 px-4 text-xs font-bold text-white hover:bg-brand-800 shrink-0"
+                            >
+                                Ask Admin AI
+                            </button>
+                        </div>
+
+                        {aiReply && (
+                            <div className="rounded-xl border border-brand-200 bg-white px-3.5 py-2.5 text-xs sm:text-sm text-on-surface flex items-start justify-between gap-3">
+                                <span>{aiReply}</span>
+                                <button
+                                    type="button"
+                                    onClick={() => setAiReply(null)}
+                                    className="text-xs font-bold text-brand-700 hover:underline shrink-0"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        )}
                     </div>
                 )}
 
