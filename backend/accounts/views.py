@@ -862,6 +862,8 @@ class AdminCommissionsActionView(APIView):
                 target = User.objects.get(id=user_id)
             except User.DoesNotExist:
                 return Response({"error": "User not found."}, status=404)
+            if target.is_staff or target.is_superuser:
+                return Response({"error": "Staff or superuser admin accounts cannot be moved to Trash."}, status=400)
 
             target.is_ambassador = not bool(target.is_ambassador)
             if target.is_ambassador and not target.referral_code:
