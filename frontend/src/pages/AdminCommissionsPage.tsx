@@ -630,6 +630,7 @@ export default function AdminCommissionsPage() {
                                     ["ambassadors", `Ambassadors & Payouts (${filteredAmbassadors.length})`],
                                     ["referrals", `Referral Ledger (${filteredReferrals.length})`],
                                     ["payments", `Payments (${filteredPayments.length})`],
+                                    ["trash", `Trash (${(data.trashed_users || []).length})`],
                                 ] as const
                             ).map(([key, label]) => (
                                 <button

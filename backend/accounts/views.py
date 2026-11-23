@@ -746,6 +746,7 @@ class AdminCommissionsOverviewView(APIView):
                 "referral_code": u.referral_code or "",
                 "referred_by": u.referred_by or "",
                 "is_staff": bool(u.is_staff or u.is_superuser),
+                "date_joined": (getattr(u, "date_joined", None) or getattr(u, "created_at", None) or now).isoformat(),
             }
             for u in users_qs
         ]
