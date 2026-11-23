@@ -1,7 +1,7 @@
-from django.core.cache import cache
 """Authentication, profile, clinical tracking, and AI endpoints."""
 
 from __future__ import annotations
+from django.core.cache import cache
 
 from decimal import Decimal
 import os
