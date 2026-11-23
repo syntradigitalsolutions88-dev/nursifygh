@@ -807,6 +807,63 @@ class AdminCommissionsActionView(APIView):
                 "referral_code": target.referral_code,
             })
 
+
+        if action == "revert_commission_paid":
+            ambassador_id = request.data.get("ambassador_id")
+            if not ambassador_id:
+                return Response({"error": "ambassador_id is required."}, status=400)
+            qs = AmbassadorCommission.objects.filter(ambassador_id=ambassador_id, is_paid_out=True)
+            now = timezone.now()
+            updated = 0
+            for c in qs:
+                c.is_paid_out = False
+                if hasattr(c, "paid_out_at"):
+                    c.paid_out_at = None
+                    c.save(update_fields=["is_paid_out", "paid_out_at"])
+                else:
+                    c.save(update_fields=["is_paid_out"])
+                updated += 1
+            return Response({"ok": True, "action": action, "updated": updated})
+
+        if action == "reject_payment":
+            payment_id = request.data.get("payment_id")
+            if not payment_id:
+                return Response({"error": "payment_id is required."}, status=400)
+            try:
+                txn = PaymentTransaction.objects.select_related("student").get(id=payment_id)
+            except PaymentTransaction.DoesNotExist:
+                return Response({"error": "Payment transaction not found."}, status=404)
+            txn.mark_failed(provider_reference=txn.manual_reference or txn.reference or "")
+            if hasattr(txn, "reviewed_by"):
+                txn.reviewed_by = request.user
+                txn.reviewed_at = timezone.now()
+                txn.save(update_fields=["reviewed_by", "reviewed_at"])
+            return Response({"ok": True, "action": action, "payment_id": txn.id})
+
+        if action == "promote_ambassador":
+            email = (request.data.get("email") or "").strip().lower()
+            custom_code = (request.data.get("referral_code") or "").strip().upper()
+            if not email:
+                return Response({"error": "email is required."}, status=400)
+            try:
+                target = User.objects.get(email__iexact=email)
+            except User.DoesNotExist:
+                return Response({"error": "No user found with that email address."}, status=404)
+
+            target.is_ambassador = True
+            if custom_code:
+                target.referral_code = custom_code
+            elif not target.referral_code:
+                base = "".join(ch for ch in (target.full_name or "AMB").upper() if ch.isalnum())[:6] or "AMB"
+                target.referral_code = f"{base}-{target.id}"
+            target.save(update_fields=["is_ambassador", "referral_code"])
+            return Response({
+                "ok": True,
+                "action": action,
+                "user_id": target.id,
+                "referral_code": target.referral_code,
+            })
+
         return Response({"error": "Unsupported action."}, status=400)
 
 
