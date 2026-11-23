@@ -446,7 +446,7 @@ export default function AdminCommissionsPage() {
                                     Ask for summaries, jump to unpaid payouts or pending payments, or search users &amp; codes
                                 </p>
                             </div>
-                            <div className="flex flex-wrap gap-1.5">
+                            <div className="flex flex-wrap gap-1.5 min-w-[140px]">
                                 <button
                                     type="button"
                                     onClick={() => handleAdminAiCommand("summary")}
@@ -636,7 +636,7 @@ export default function AdminCommissionsPage() {
                                 <button
                                     key={key}
                                     onClick={() => setTab(key)}
-                                    className={`rounded-xl px-4 py-2 text-xs font-bold transition-colors ${
+                                    className={`shrink-0 whitespace-nowrap rounded-xl px-3.5 py-2 text-xs font-bold transition-colors ${
                                         tab === key ? "bg-brand-700 text-white" : "bg-surface-subtle text-on-surface-muted hover:text-on-surface"
                                     }`}
                                 >
@@ -687,7 +687,7 @@ export default function AdminCommissionsPage() {
                                                         {u.is_staff ? "ADMIN" : u.is_ambassador ? "AMBASSADOR" : "STUDENT"}
                                                     </td>
                                                     <td className="px-4 py-3">
-                                                        <div className="flex flex-wrap gap-1.5">
+                                                        <div className="flex flex-wrap gap-1.5 min-w-[140px]">
                                                             <button
                                                                 disabled={actionMutation.isPending}
                                                                 onClick={() => actionMutation.mutate({ action: "grant_pass", user_id: u.id })}
@@ -909,7 +909,7 @@ export default function AdminCommissionsPage() {
                                                     </span>
                                                 </td>
                                                 <td className="px-4 py-3">
-                                                    <div className="flex flex-wrap gap-1.5">
+                                                    <div className="flex flex-wrap gap-1.5 min-w-[140px]">
                                                         <button
                                                             disabled={actionMutation.isPending}
                                                             onClick={() => actionMutation.mutate({ action: "clear_referral", student_id: r.student_id })}
@@ -970,7 +970,7 @@ export default function AdminCommissionsPage() {
                                                         <div className="text-on-surface-muted">{tu.institution || "School not set"}</div>
                                                     </td>
                                                     <td className="px-4 py-3">
-                                                        <div className="flex flex-wrap gap-2">
+                                                        <div className="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1">
                                                             <button
                                                                 disabled={actionMutation.isPending}
                                                                 onClick={() => actionMutation.mutate({ action: "restore_user", user_id: tu.id })}
@@ -1033,7 +1033,7 @@ export default function AdminCommissionsPage() {
                                                     </span>
                                                 </td>
                                                 <td className="px-4 py-3">
-                                                    <div className="flex flex-wrap gap-1.5">
+                                                    <div className="flex flex-wrap gap-1.5 min-w-[140px]">
                                                         {p.status !== "SUCCESS" && (
                                                             <button
                                                                 disabled={actionMutation.isPending}
