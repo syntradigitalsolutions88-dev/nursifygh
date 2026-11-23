@@ -495,7 +495,7 @@ export default function AdminCommissionsPage() {
                             <button
                                 type="button"
                                 onClick={() => handleAdminAiCommand()}
-                                type="button" className="min-h-[46px] w-full sm:w-auto rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-800 shrink-0"
+                                className="min-h-[46px] w-full sm:w-auto rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-800 shrink-0"
                             >
                                 Ask Admin AI
                             </button>
