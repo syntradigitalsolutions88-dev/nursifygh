@@ -116,7 +116,7 @@ function matchesDateFilter(
 ): boolean {
     const hasCustom = Boolean(selectedYear || selectedMonth || exactDate)
     if (quickPreset === "all" && !hasCustom) return true
-    if (!iso) return false
+    if (!iso) return quickPreset === "today" && !hasCustom
     const d = new Date(iso)
     if (Number.isNaN(d.getTime())) return false
 
