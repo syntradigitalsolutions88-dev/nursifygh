@@ -214,12 +214,11 @@ export default function AdminCommissionsPage() {
 
 
     function handleAdminAiCommand(rawQuery?: string) {
-        try {
-            const qText = String(rawQuery ?? aiPrompt ?? "").trim()
-            if (!data) {
-                setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
-                return
-            }
+        const qText = String(rawQuery ?? aiPrompt ?? "").trim()
+        if (!data) {
+            setAiReply("Dashboard data is still loading. Click Refresh Data if needed.")
+            return
+        }
         const lower = qText.toLowerCase()
 
         if (!lower || lower.includes("summary") || lower.includes("overview") || lower.includes("everything")) {
@@ -491,7 +490,7 @@ export default function AdminCommissionsPage() {
                                     }
                                 }}
                                 placeholder="e.g. Who has unpaid payouts? or Find SYNTRA-20 or pending payments"
-                                className="h-10 flex-1 rounded-xl border border-border bg-white px-3 text-xs sm:text-sm"
+                                className="min-h-[46px] w-full flex-1 rounded-xl border border-border bg-white px-3.5 py-2.5 text-sm"
                             />
                             <button
                                 type="button"
