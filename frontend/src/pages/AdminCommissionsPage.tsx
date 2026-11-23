@@ -220,30 +220,79 @@ export default function AdminCommissionsPage() {
             return
         }
         const lower = qText.toLowerCase()
+        const totalUsers = data.users.length
+        const paidUsersList = data.users.filter((u) => u.has_paid || u.is_subscribed)
+        const trialUsersList = data.users.filter((u) => !(u.has_paid || u.is_subscribed))
+        const conversionRate = totalUsers > 0 ? ((paidUsersList.length / totalUsers) * 100).toFixed(1) : "0.0"
+        const referralRate = totalUsers > 0 ? ((data.referrals.length / totalUsers) * 100).toFixed(1) : "0.0"
+        const unpaidTotal = parseFloat(data.summary.unpaid_ghs || "0") || 0
+        const paidOutTotal = parseFloat(data.summary.paid_out_ghs || "0") || 0
+        const pendingPaymentsList = data.payments.filter((p) => p.status !== "SUCCESS" && p.status !== "FAILED")
+
+        if (lower.includes("subscrib") || lower.includes("paid user") || lower.includes("who paid") || lower.includes("active pass")) {
+            setTab("users")
+            setAiReply(
+                paidUsersList.length > 0
+                    ? `Paid / Subscribed Users (${paidUsersList.length} of ${totalUsers}, ${conversionRate}% conversion): ` +
+                      paidUsersList
+                          .map((u) => `${u.full_name || u.email} (${u.institution || "School not set"}${u.referral_code ? `, code ${u.referral_code}` : ""})`)
+                          .join(" · ")
+                    : "No paid/subscribed users found yet."
+            )
+            return
+        }
 
         if (lower.includes("trial") || lower.includes("unpaid user") || lower.includes("free user") || lower.includes("not paid")) {
             setTab("users")
-            const trialUsers = data.users.filter((u) => !u.has_paid)
             setAiReply(
-                trialUsers.length > 0
-                    ? `Trial / Unpaid Users (${trialUsers.length}): ` +
-                      trialUsers
-                          .slice(0, 10)
+                trialUsersList.length > 0
+                    ? `Trial / Unpaid Users (${trialUsersList.length} of ${totalUsers}): ` +
+                      trialUsersList
                           .map((u) => `${u.full_name || u.email} (${u.institution || "School not set"}, joined ${formatDateTime(u.date_joined)})`)
                           .join(" · ")
-                    : "All current users have an active paid pass."
+                    : "All current users have paid/active access."
+            )
+            return
+        }
+
+        if (
+            lower.includes("advis") || lower.includes("idea") || lower.includes("improv") ||
+            lower.includes("analy") || lower.includes("evaluat") || lower.includes("grow") ||
+            lower.includes("manage") || lower.includes("strateg") || lower.includes("insight")
+        ) {
+            const topAmbs = [...data.ambassadors]
+                .sort((a, b) => (b.referral_count || 0) - (a.referral_count || 0))
+                .slice(0, 3)
+                .map((a) => `${a.full_name || a.email} (${a.referral_count || 0} refs, GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)} unpaid)`)
+            const schoolCounts: Record<string, number> = {}
+            data.users.forEach((u) => {
+                const sc = (u.institution || "Unspecified School").trim()
+                schoolCounts[sc] = (schoolCounts[sc] || 0) + 1
+            })
+            const topSchools = Object.entries(schoolCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 3)
+                .map(([sc, cnt]) => `${sc} (${cnt})`)
+
+            setAiReply(
+                `📊 Evaluation & Management Analysis: ${totalUsers} total users (${paidUsersList.length} paid = ${conversionRate}% conversion; ${trialUsersList.length} trial/unpaid). ` +
+                `Referrals: ${data.referrals.length} (${referralRate}% of users). Commissions: GHS ${unpaidTotal.toFixed(2)} unpaid, GHS ${paidOutTotal.toFixed(2)} paid out, ${pendingPaymentsList.length} pending payment(s). ` +
+                `Top Schools: ${topSchools.join(", ") || "None yet"}. Top Ambassadors: ${topAmbs.join(" · ") || "None yet"}. ` +
+                `💡 Advisor & Growth Ideas: (1) Convert the ${trialUsersList.length} trial users with a timed exam-prep nudge & MoMo reminder before trial ends; ` +
+                `(2) Settle GHS ${unpaidTotal.toFixed(2)} unpaid commissions promptly to keep ambassadors motivated during exam season; ` +
+                `(3) Recruit campus ambassadors in colleges with high student counts but low paid conversion; ` +
+                `(4) Add weekly mock-exam leaderboards and nursing care-plan/past-question bundles to boost paid upgrades.`
             )
             return
         }
 
         if (!lower || lower.includes("summary") || lower.includes("overview") || lower.includes("everything")) {
-            const pendingCount = data.payments.filter((p) => p.status !== "SUCCESS" && p.status !== "FAILED").length
             const unpaidAmbs = data.ambassadors.filter((a) => parseFloat(a.unpaid_ghs) > 0)
             setAiReply(
-                `Dashboard Summary: ${data.summary.total_users} total users (${data.summary.paid_users} paid), ` +
+                `Dashboard Summary: ${totalUsers} total users (${paidUsersList.length} paid / ${conversionRate}%, ${trialUsersList.length} trial), ` +
                 `${data.summary.total_referrals} referrals across ${data.summary.ambassador_count} ambassadors. ` +
-                `Commissions: GHS ${parseFloat(data.summary.unpaid_ghs).toFixed(2)} unpaid (${unpaidAmbs.length} ambassador(s) to pay), ` +
-                `GHS ${parseFloat(data.summary.paid_out_ghs).toFixed(2)} paid out. Pending/review payments: ${pendingCount}.`
+                `Commissions: GHS ${unpaidTotal.toFixed(2)} unpaid (${unpaidAmbs.length} ambassador(s) to pay), ` +
+                `GHS ${paidOutTotal.toFixed(2)} paid out. Pending/review payments: ${pendingPaymentsList.length}.`
             )
             return
         }
@@ -264,10 +313,9 @@ export default function AdminCommissionsPage() {
 
         if (lower.includes("pending") || lower.includes("payment") || lower.includes("approve")) {
             setTab("payments")
-            const pending = data.payments.filter((p) => p.status !== "SUCCESS" && p.status !== "FAILED")
             setAiReply(
-                pending.length > 0
-                    ? `Switched to Payments. ${pending.length} payment(s) need attention: ${pending.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs).toFixed(2)}, ${p.status})`).join(" · ")}.`
+                pendingPaymentsList.length > 0
+                    ? `Switched to Payments. ${pendingPaymentsList.length} payment(s) need attention: ${pendingPaymentsList.map((p) => `${p.student_name || p.student_email} (GHS ${parseFloat(p.amount_ghs).toFixed(2)}, ${p.status})`).join(" · ")}.`
                     : `Switched to Payments. There are no pending or awaiting-review payments right now.`
             )
             return
@@ -290,45 +338,39 @@ export default function AdminCommissionsPage() {
             setSearch("")
             setUnpaidOnly(false)
             setTab("users")
-            setQuickDate("today")
-            setExactDate("")
-            const todayCount = data.users.filter((u) =>
-                matchesDateFilter(u.date_joined, "today", "", "", "")
-            ).length
-            setAiReply(`Switched to All Users with Today active and search cleared (${todayCount} user(s) shown).`)
-            return
-        }
-
-        if (lower.includes("reset") || lower.includes("all dates") || lower.includes("clear filter")) {
-            resetDateFilters()
-            setSearch("")
-            setAiReply("Reset all date, unpaid, and search filters.")
-            return
-        }
-
-        const term = lower.replace(/^(find|search|who is|check|show)\s+/i, "").trim()
-        if (term) {
-            setSearch(term)
-            const matchedUsers = data.users.filter(
-                (u) =>
-                    u.full_name.toLowerCase().includes(term) ||
-                    u.email.toLowerCase().includes(term) ||
-                    u.phone_number.toLowerCase().includes(term) ||
-                    u.referral_code.toLowerCase().includes(term) ||
-                    u.referred_by.toLowerCase().includes(term)
-            )
-            const matchedAmbs = data.ambassadors.filter(
-                (a) =>
-                    a.full_name.toLowerCase().includes(term) ||
-                    a.email.toLowerCase().includes(term) ||
-                    a.referral_code.toLowerCase().includes(term)
-            )
+            const todayUsers = data.users.filter((u) => isToday(u.date_joined))
             setAiReply(
-                `Filtered by "${term}": ${matchedUsers.length} user match(es), ${matchedAmbs.length} ambassador match(es).`
+                todayUsers.length > 0
+                    ? `Today's Users (${todayUsers.length}): ${todayUsers.map((u) => `${u.full_name || u.email} (${u.institution || "School not set"}, ${formatDateTime(u.date_joined)})`).join(" · ")}.`
+                    : `No new users joined today yet across ${totalUsers} total users.`
             )
+            return
         }
-    }
 
+        const matchedUsers = data.users.filter(
+            (u) =>
+                (u.full_name || "").toLowerCase().includes(lower) ||
+                (u.email || "").toLowerCase().includes(lower) ||
+                (u.phone_number || "").toLowerCase().includes(lower) ||
+                (u.institution || "").toLowerCase().includes(lower) ||
+                (u.referral_code || "").toLowerCase().includes(lower)
+        )
+        const matchedAmbs = data.ambassadors.filter(
+            (a) =>
+                (a.full_name || "").toLowerCase().includes(lower) ||
+                (a.email || "").toLowerCase().includes(lower) ||
+                (a.referral_code || "").toLowerCase().includes(lower)
+        )
+        setAiReply(
+            `Search for "${qText}": ${matchedUsers.length} user match(es), ${matchedAmbs.length} ambassador match(es). ` +
+            (matchedUsers.length > 0
+                ? `Users: ${matchedUsers.slice(0, 6).map((u) => `${u.full_name || u.email} (${u.has_paid || u.is_subscribed ? "Paid" : "Trial"}, ${u.institution || "School not set"})`).join(" · ")}. `
+                : "") +
+            (matchedAmbs.length > 0
+                ? `Ambassadors: ${matchedAmbs.slice(0, 5).map((a) => `${a.full_name || a.email} [Code: ${a.referral_code}, Unpaid: GHS ${parseFloat(a.unpaid_ghs || "0").toFixed(2)}]`).join(" · ")}.`
+                : "")
+        )
+    }
     function handlePromoteSubmit(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
         if (!promoteEmail.trim() || actionMutation.isPending) return
@@ -482,6 +524,20 @@ export default function AdminCommissionsPage() {
                                     className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
                                 >
                                     Pending Payments
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleAdminAiCommand("who subscribed")}
+                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                >
+                                    Paid / Subscribed
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleAdminAiCommand("advisor business ideas analysis")}
+                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                >
+                                    AI Advisor &amp; Ideas
                                 </button>
                                 <button
                                     type="button"

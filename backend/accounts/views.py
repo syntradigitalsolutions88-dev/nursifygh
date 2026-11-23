@@ -966,23 +966,24 @@ class AdminCommissionsActionView(APIView):
             if raw_user_id is None or str(raw_user_id).strip() == "":
                 return Response({"error": "user_id is required."}, status=400)
             try:
-                user_id = int(raw_user_id)
+                user_id = int(str(raw_user_id).strip())
             except (TypeError, ValueError):
                 return Response({"error": "Invalid user_id."}, status=400)
             if user_id == int(request.user.id):
-                return Response({"error": "You cannot delete your own currently logged-in admin account."}, status=400)
-            try:
-                target = User.objects.get(id=user_id)
-            except User.DoesNotExist:
+                return Response({"error": "You cannot move your own currently logged-in account to Trash."}, status=400)
+            target_user = User.objects.filter(id=user_id).first()
+            if not target_user:
                 return Response({"error": "User not found."}, status=404)
-            trashed = _get_trashed_user_ids()
-            if target.id not in trashed:
-                trashed.append(target.id)
-                _set_trashed_user_ids(trashed)
-            target.is_active = False
-            target.save(update_fields=["is_active"])
-            return Response({"ok": True, "action": action, "user_id": target.id})
-
+            target_user.is_active = False
+            if hasattr(target_user, "is_ambassador"):
+                target_user.is_ambassador = False
+            target_user.save(update_fields=[f for f in ["is_active", "is_ambassador"] if hasattr(target_user, f)])
+            return Response({
+                "ok": True,
+                "user_id": target_user.id,
+                "email": target_user.email,
+                "trashed": True,
+            })
         if action == "restore_user":
             user_id = request.data.get("user_id")
             if not user_id:
