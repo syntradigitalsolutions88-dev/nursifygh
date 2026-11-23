@@ -511,7 +511,7 @@ class AmbassadorStatsView(APIView):
         if user.referral_code:
             referred_users = (
                 User.objects
-                .filter(referred_by=user.referral_code)
+                .filter(referred_by__iexact=user.referral_code)
                 .exclude(id=user.id)
             )
         else:
@@ -533,9 +533,9 @@ class AmbassadorStatsView(APIView):
         if can_cash_out:
             payout_date = timezone.now().isoformat()
         elif pending_payout > 0:
-            newest_unpaid = commissions.filter(is_paid_out=False).first()
-            if newest_unpaid:
-                next_unlock = newest_unpaid.created_at + timedelta(days=3)
+            oldest_unpaid = commissions.filter(is_paid_out=False).order_by("created_at").first()
+            if oldest_unpaid:
+                next_unlock = oldest_unpaid.created_at + timedelta(days=3)
                 payout_date = next_unlock.isoformat()
 
         commission_by_student = {
