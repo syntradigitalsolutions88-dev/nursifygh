@@ -4,6 +4,7 @@ import logging
 
 from django.contrib import admin, messages
 from django.utils import timezone
+from django.utils.html import format_html
 
 from .models import (
     PaymentProvider,
@@ -20,17 +21,22 @@ class PaymentTransactionAdmin(admin.ModelAdmin):
     list_display = (
         "reference",
         "student_email",
+        "student_phone",
+        "referred_by_code",
         "provider",
         "amount_ghs",
-        "status",
+        "status_badge",
         "manual_reference",
         "initiated_at",
         "completed_at",
     )
-    list_filter = ("provider", "status", "initiated_at")
+    list_filter = ("status", "provider", "initiated_at")
     search_fields = (
         "reference",
         "student__email",
+        "student__full_name",
+        "student__phone_number",
+        "student__referred_by",
         "manual_reference",
         "provider_reference",
     )
@@ -47,11 +53,35 @@ class PaymentTransactionAdmin(admin.ModelAdmin):
     )
     actions = ["approve_selected_payments", "reject_selected_payments"]
 
+    @admin.display(description="Student", ordering="student__email")
     def student_email(self, obj):
         return obj.student.email
-    student_email.short_description = "Student"
 
-    @admin.action(description="✅ Approve selected manual payments")
+    @admin.display(description="Phone", ordering="student__phone_number")
+    def student_phone(self, obj):
+        return obj.student.phone_number or "—"
+
+    @admin.display(description="Ref Code", ordering="student__referred_by")
+    def referred_by_code(self, obj):
+        return obj.student.referred_by or "—"
+
+    @admin.display(description="Status", ordering="status")
+    def status_badge(self, obj):
+        colors = {
+            PaymentStatus.AWAITING_REVIEW: ("#d97706", "AWAITING REVIEW"),
+            PaymentStatus.SUCCESS: ("#059669", "SUCCESS"),
+            PaymentStatus.PENDING: ("#4b5563", "PENDING"),
+            PaymentStatus.FAILED: ("#dc2626", "FAILED"),
+            PaymentStatus.ABANDONED: ("#6b7280", "ABANDONED"),
+        }
+        bg, label = colors.get(obj.status, ("#374151", obj.status))
+        return format_html(
+            '<span style="background:{};color:white;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">{}</span>',
+            bg,
+            label,
+        )
+
+    @admin.action(description="Approve selected manual payments (+120d & commission)")
     def approve_selected_payments(self, request, queryset):
         from accounts.email_service import send_subscription_activated
 
@@ -73,7 +103,6 @@ class PaymentTransactionAdmin(admin.ModelAdmin):
                 days=txn.duration_days, reference=txn.reference
             )
 
-            # Send subscription-activated email
             try:
                 txn.student.refresh_from_db()
                 sent = send_subscription_activated(
@@ -92,12 +121,11 @@ class PaymentTransactionAdmin(admin.ModelAdmin):
 
         self.message_user(
             request,
-            f"✅ Approved {approved} payment(s). "
-            f"{emailed} confirmation email(s) sent.",
+            f"Approved {approved} payment(s). {emailed} confirmation email(s) sent.",
             messages.SUCCESS,
         )
 
-    @admin.action(description="❌ Reject selected manual payments")
+    @admin.action(description="Reject selected manual payments")
     def reject_selected_payments(self, request, queryset):
         rejected = 0
         for txn in queryset:

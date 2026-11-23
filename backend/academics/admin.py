@@ -3,7 +3,15 @@
 from django.contrib import admin, messages
 from django.utils import timezone
 
-from .models import Choice, Course, Question, QuizAnswer, QuizAttempt
+from .models import (
+    Choice,
+    Course,
+    Flashcard,
+    FlashcardReview,
+    Question,
+    QuizAnswer,
+    QuizAttempt,
+)
 
 
 class ChoiceInline(admin.TabularInline):
@@ -44,7 +52,7 @@ class QuestionAdmin(admin.ModelAdmin):
     def short_text(self, obj):
         return obj.text[:80]
 
-    @admin.action(description="✅ Approve selected questions")
+    @admin.action(description="Approve selected questions")
     def approve_questions(self, request, queryset):
         count = queryset.update(
             review_status="APPROVED",
@@ -53,9 +61,9 @@ class QuestionAdmin(admin.ModelAdmin):
             reviewed_at=timezone.now(),
             review_note="",
         )
-        self.message_user(request, f"✅ Approved {count} question(s).", messages.SUCCESS)
+        self.message_user(request, f"Approved {count} question(s).", messages.SUCCESS)
 
-    @admin.action(description="❌ Reject selected questions")
+    @admin.action(description="Reject selected questions")
     def reject_questions(self, request, queryset):
         count = queryset.update(
             review_status="REJECTED",
@@ -63,7 +71,7 @@ class QuestionAdmin(admin.ModelAdmin):
             reviewed_by=request.user,
             reviewed_at=timezone.now(),
         )
-        self.message_user(request, f"❌ Rejected {count} question(s).", messages.WARNING)
+        self.message_user(request, f"Rejected {count} question(s).", messages.WARNING)
 
 
 @admin.register(QuizAttempt)
@@ -78,3 +86,17 @@ class QuizAttemptAdmin(admin.ModelAdmin):
 class QuizAnswerAdmin(admin.ModelAdmin):
     list_display = ("attempt", "question", "selected_choice", "is_correct")
     list_filter = ("is_correct",)
+
+
+@admin.register(Flashcard)
+class FlashcardAdmin(admin.ModelAdmin):
+    list_display = ("course", "topic", "difficulty", "is_public", "created_at")
+    list_filter = ("difficulty", "is_public", "course")
+    search_fields = ("topic", "front", "back", "course__code")
+
+
+@admin.register(FlashcardReview)
+class FlashcardReviewAdmin(admin.ModelAdmin):
+    list_display = ("student", "flashcard", "is_bookmarked", "review_count", "next_review_at")
+    list_filter = ("is_bookmarked", "next_review_at")
+    search_fields = ("student__email", "flashcard__front")
