@@ -232,8 +232,10 @@ def dispatch_admin_message(
                 "wa_link": wa_res.get("wa_link", ""),
             })
 
+    from . import email_service
     return {
         "recipients_count": len(users),
+        "last_email_error": getattr(email_service, "LAST_EMAIL_ERROR", ""),
         "email_sent": email_sent,
         "email_failed": email_failed,
         "sms_sent": sms_sent,

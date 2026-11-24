@@ -443,7 +443,7 @@ export default function AdminCommissionsPage() {
             })
             const sum = res?.summary || {}
             setNotifResult({
-                text: `Dispatched to ${sum.recipients_count ?? 0} user(s) · Email sent: ${sum.email_sent ?? 0} (failed: ${sum.email_failed ?? 0}) · SMS sent: ${sum.sms_sent ?? 0} (unconfigured/no-phone: ${sum.sms_skipped ?? 0}).`,
+                text: `Dispatched to ${sum.recipients_count ?? 0} user(s) · Email sent: ${sum.email_sent ?? 0} (failed: ${sum.email_failed ?? 0}) · SMS sent: ${sum.sms_sent ?? 0} (unconfigured/no-phone: ${sum.sms_skipped ?? 0}).${sum.last_email_error ? ` Email error: ${sum.last_email_error}` : ""}`,
                 waLinks: Array.isArray(sum.whatsapp_links) ? sum.whatsapp_links : [],
             })
             setFeedback("Notification processed.")

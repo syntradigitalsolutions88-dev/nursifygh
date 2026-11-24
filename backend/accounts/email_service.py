@@ -9,6 +9,7 @@ import resend
 from django.conf import settings
 
 logger = logging.getLogger(__name__)
+LAST_EMAIL_ERROR: str = ""
 
 
 def _get_api_key() -> str | None:
@@ -32,7 +33,9 @@ def _get_sender() -> tuple[str, str]:
 
 def send_email(to: str, subject: str, html: str, text: str | None = None) -> bool:
     api_key = _get_api_key()
+    global LAST_EMAIL_ERROR
     if not api_key:
+        LAST_EMAIL_ERROR = "RESEND_API_KEY is missing on server"
         logger.warning("RESEND_API_KEY is missing — cannot send email to %s", to)
         return False
 
@@ -55,6 +58,7 @@ def send_email(to: str, subject: str, html: str, text: str | None = None) -> boo
         logger.info("Email sent to %s via Resend (from=%s, id=%s)", to, sender_email, msg_id)
         return True
     except Exception as exc:
+        LAST_EMAIL_ERROR = str(exc)
         logger.error("Failed to send email via Resend to %s (from=%s): %s", to, sender_email, exc)
         return False
 
