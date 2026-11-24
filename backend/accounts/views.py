@@ -1109,15 +1109,14 @@ def ai_chat_proxy(request):
     if not message:
         return Response({"error": "Message is required"}, status=400)
 
+    from academics.tutor_views import _clean_ai_output, _generate_tutor_response
+
     api_key = (
         getattr(settings, "GROQ_API_KEY", None)
         or os.getenv("LLM_API_KEY")
         or os.getenv("GROQ_API_KEY")
         or ""
     ).strip()
-    if not api_key:
-        logger.error("GROQ_API_KEY / LLM_API_KEY is missing in ai_chat_proxy.")
-        return Response({"error": "Server configuration error."}, status=500)
 
     api_url = (
         getattr(settings, "LLM_API_URL", None)
@@ -1136,7 +1135,8 @@ def ai_chat_proxy(request):
         "- Pricing & Access: 3-day free trial; GHS 30 for 120 days with manual MoMo activation.\n"
         "- AI Nursing & Science Tutor (/ai-tutor): Instant explanations across anatomy & physiology, biology, chemistry, "
         "pharmacology, nursing priorities, and exam rationales.\n"
-        "- NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): Timed exam simulations and topic practice.\n"
+        "- NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): 3,000+ practice questions across courses and "
+        "domains, 60-minute timed mock exams, and detailed rationales.\n"
         "- Interactive Clinical Case Studies (/cases): Ghanaian patient scenarios with vitals, triage priorities, "
         "rationales, and one-click Ask AI Tutor about this case stage support.\n"
         "- Flashcards & Revision (/revision): Active-recall study decks for rapid exam prep.\n"
@@ -1146,53 +1146,68 @@ def ai_chat_proxy(request):
 
     if mode == "student":
         system_prompt = (
-            "You are the NursifyGH Chief Clinical Examiner and Academic Tutor — a world-class Ghanaian nursing educator, "
-            "science & clinical tutor, and NMC exam coach.\n\n"
-            "STYLE RULES: Never output horizontal lines ('---'), raw '#' or '**' or '*' markdown markers, or pipe tables ('|'). Use clean plain text and '• ' bullets. Answer general vocabulary/science/nursing questions naturally without forcing unrelated clinical angles. ACADEMIC & CLINICAL RULES: Answer ANY legitimate science, anatomy/physiology (including glands, organs, "
-            "tissues), chemistry, biology, pharmacology, math/dosage calculation, or clinical nursing question clearly "
-            "and thoroughly. Start with a clear direct answer, break down key mechanisms or step-by-step calculations, "
-            "prioritize ABCDE/safety where clinical, and include practical exam/nursing takeaways. Avoid markdown tables.\n\n"
+            "You are the NursifyGH Chief Clinical Examiner and Academic Tutor — an authoritative, crystal-clear "
+            "Ghanaian nursing educator, science & clinical tutor, and NMC licensure coach.\n\n"
+            "STYLE RULES: Never output horizontal lines ('---'), raw '#' or '**' or '*' markdown markers, or pipe "
+            "tables ('|'). Write clean plain text with short line headings and '• ' bullets that read cleanly on a phone.\n"
+            "ACADEMIC & CLINICAL PRECISION RULES:\n"
+            "- Start with a direct, accurate answer upfront before breaking down details.\n"
+            "- Answer ANY legitimate science, anatomy/physiology, chemistry, biology, pharmacology, dosage math, or "
+            "nursing question thoroughly with step-by-step reasoning and ABCDE/safety priorities where clinical.\n"
+            "- For multiple-choice or case questions, explain why the best action wins AND why tempting distractors "
+            "or delays carry risk.\n"
+            "- Never invent unverified medication doses, infusion rates, or local protocols; state established clinical "
+            "principles clearly and remind students to verify exact orders against current facility/NMC guidelines.\n\n"
             f"{platform_knowledge}"
         )
     else:
         system_prompt = (
-            "You are the NursifyGH AI Guide & Academic Tutor — a helpful, clear, and authoritative guide for visitors "
-            "and prospective nursing students on the NursifyGH landing page.\n\n"
-            "STYLE RULES: Never output horizontal lines ('---'), raw '#' or '**' or '*' markdown markers, or pipe tables ('|'). Use clean plain text and '• ' bullets. Answer general vocabulary/science/nursing questions naturally without forcing unrelated clinical angles. ANSWERING RULES: Answer questions about NursifyGH features, plans, and getting started clearly, AND also "
-            "answer general science, anatomy/physiology (such as what a gland is), biology, chemistry, and nursing "
-            "questions accurately so visitors can experience how smart NursifyGH is. Keep responses well-structured, "
-            "concise, and easy to read. Avoid markdown tables.\n\n"
+            "You are the NursifyGH AI Guide & Academic Tutor — a clear, articulate, and authoritative guide for "
+            "visitors and prospective nursing students on NursifyGH.\n\n"
+            "STYLE RULES: Never output horizontal lines ('---'), raw '#' or '**' or '*' markdown markers, or pipe "
+            "tables ('|'). Write clean plain text with short line headings and '• ' bullets.\n"
+            "ANSWERING RULES: Answer questions about NursifyGH features, plans, and getting started clearly, AND "
+            "answer general science, anatomy/physiology, biology, chemistry, and nursing questions with crisp, "
+            "accurate explanations so visitors experience how smart NursifyGH is.\n\n"
             f"{platform_knowledge}"
         )
 
-    try:
-        response = requests.post(
-            api_url,
-            json={
-                "model": model,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": message},
-                ],
-                "temperature": 0.3,
-                "max_tokens": 1024,
-            },
-            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-            timeout=45,
-        )
-        if response.status_code != 200:
-            logger.warning("Groq ai_chat_proxy HTTP %s: %s", response.status_code, response.text[:300])
-            return Response({"error": "AI service rejected the request."}, status=500)
+    user_ctx = ""
+    if getattr(request, "user", None) and request.user.is_authenticated:
+        prog = getattr(request.user, "program", "") or ""
+        lvl = getattr(request.user, "level", "") or ""
+        parts = [x for x in [f"Level {lvl}" if lvl else "", prog] if x]
+        if parts:
+            user_ctx = f"[Student Profile: {' '.join(parts)}]\n"
 
-        data = response.json()
-        content = (((data.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
-        if not content:
-            return Response({"error": "AI returned an empty response."}, status=500)
-        cleaned = "\n".join(ln for ln in content.splitlines() if not re.fullmatch(r"[-_*=|:\s]{3,}", ln.strip())).replace("**", "").replace("*", "").replace("#", "").strip()
-        return Response({"reply": cleaned})
-    except Exception as exc:
-        logger.warning("Groq ai_chat_proxy failed (%s): %s", type(exc).__name__, exc)
-        return Response({"error": "AI is currently unavailable."}, status=500)
+    if api_key:
+        try:
+            response = requests.post(
+                api_url,
+                json={
+                    "model": model,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": f"{user_ctx}{message}"},
+                    ],
+                    "temperature": 0.2,
+                    "max_tokens": 1500,
+                },
+                headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+                timeout=45,
+            )
+            if response.status_code == 200:
+                data = response.json()
+                content = (((data.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
+                if content:
+                    return Response({"reply": _clean_ai_output(content)})
+            else:
+                logger.warning("Groq ai_chat_proxy HTTP %s: %s", response.status_code, response.text[:300])
+        except Exception as exc:
+            logger.warning("Groq ai_chat_proxy failed (%s): %s", type(exc).__name__, exc)
+
+    fallback = _generate_tutor_response(message)
+    return Response({"reply": fallback["reply"]})
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
