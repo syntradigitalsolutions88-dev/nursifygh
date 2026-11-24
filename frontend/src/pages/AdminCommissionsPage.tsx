@@ -162,17 +162,13 @@ export default function AdminCommissionsPage() {
     const [aiPrompt, setAiPrompt] = useState("")
     const [aiReply, setAiReply] = useState<string | null>(null)
 
-    const [notifAudience, setNotifAudience] = useState<"single" | "paid" | "trial" | "all">("single")
-    const [notifTargetEmail, setNotifTargetEmail] = useState("")
-    const [notifCategory, setNotifCategory] = useState("Technical Issue")
-    const [notifSubject, setNotifSubject] = useState("Temporary Service / Technical Update")
-    const [notifMessage, setNotifMessage] = useState("")
-    const [notifChannels, setNotifChannels] = useState<string[]>(["email", "whatsapp"])
-    const [notifSending, setNotifSending] = useState(false)
-    const [notifResult, setNotifResult] = useState<{
-        text: string
-        waLinks?: Array<{ name: string; phone: string; wa_link: string }>
-    } | null>(null)
+    const [manualGroupFilter, setManualGroupFilter] = useState<"all" | "paid" | "trial">("all")
+    const [manualSelectedUserId, setManualSelectedUserId] = useState<string>("")
+    const [manualSubject, setManualSubject] = useState("Payment Confirmed — Account Activated")
+    const [manualMessage, setManualMessage] = useState(
+        "Hello! Your payment on NursifyGH has been confirmed and your study account is now active. You can log in and start studying right away."
+    )
+    const [manualCopiedNote, setManualCopiedNote] = useState<string | null>(null)
 
     const authUser = user as (typeof user & { id?: number; is_staff?: boolean; is_superuser?: boolean }) | null
     const isStaff = Boolean(authUser?.is_staff || authUser?.is_superuser)
@@ -423,34 +419,50 @@ export default function AdminCommissionsPage() {
             `Try asking for "feedback", "growth ideas", "who subscribed", "trial users", "who to pay", or a student/school/code name.`
         )
     }
-    async function handleSendAdminNotification(e: React.FormEvent) {
-        e.preventDefault()
-        if (!notifMessage.trim()) {
-            setFeedback("Please enter a notification message before sending.")
-            return
+    function normalizeGhPhoneForWa(rawPhone?: string | null): string {
+        if (!rawPhone) return ""
+        const digits = String(rawPhone).replace(/\D/g, "")
+        if (!digits) return ""
+        if (digits.startsWith("0") && digits.length === 10) return "233" + digits.slice(1)
+        if (digits.length === 9) return "233" + digits
+        return digits
+    }
+
+    function applyManualPreset(presetKey: "welcome" | "payment" | "technical" | "renewal") {
+        const usersList = data?.users || []
+        const chosen = usersList.find((u) => String(u.id) === manualSelectedUserId) || usersList[0]
+        const firstName = (chosen?.full_name || "Student").trim().split(/\s+/)[0] || "Student"
+
+        if (presetKey === "welcome") {
+            setManualSubject(`Welcome to NursifyGH, ${firstName}`)
+            setManualMessage(
+                `Hi ${firstName}, welcome to NursifyGH! Your student account is ready. Log in to practice past questions, flashcards, and study notes.`
+            )
+        } else if (presetKey === "payment") {
+            setManualSubject("Payment Confirmed — NursifyGH Account Active")
+            setManualMessage(
+                `Hi ${firstName}, your payment has been confirmed and your NursifyGH account is now active. You can log in and continue studying.`
+            )
+        } else if (presetKey === "technical") {
+            setManualSubject("Technical Notice — NursifyGH Support")
+            setManualMessage(
+                `Hi ${firstName}, we are addressing a brief technical issue on NursifyGH so your study access stays smooth. Thank you for your patience.`
+            )
+        } else {
+            setManualSubject("NursifyGH Access Renewal Reminder")
+            setManualMessage(
+                `Hi ${firstName}, this is a quick reminder to renew your NursifyGH study pass so you keep uninterrupted access.`
+            )
         }
-        setNotifSending(true)
-        setNotifResult(null)
+        setManualCopiedNote(null)
+    }
+
+    async function copyTextToClipboard(text: string, label: string) {
         try {
-            const res = await actionMutation.mutateAsync({
-                action: "send_notification",
-                audience: notifAudience,
-                email: notifAudience === "single" ? notifTargetEmail.trim() : undefined,
-                channels: notifChannels.length > 0 ? notifChannels : ["email"],
-                category: notifCategory,
-                subject: notifSubject.trim() || `NursifyGH ${notifCategory}`,
-                message: notifMessage.trim(),
-            })
-            const sum = res?.summary || {}
-            setNotifResult({
-                text: `Dispatched to ${sum.recipients_count ?? 0} user(s) · Email sent: ${sum.email_sent ?? 0} (failed: ${sum.email_failed ?? 0}) · SMS sent: ${sum.sms_sent ?? 0} (unconfigured/no-phone: ${sum.sms_skipped ?? 0}).${sum.last_email_error ? ` Email error: ${sum.last_email_error}` : ""}`,
-                waLinks: Array.isArray(sum.whatsapp_links) ? sum.whatsapp_links : [],
-            })
-            setFeedback("Notification processed.")
-        } catch (err: any) {
-            setFeedback(err?.message || "Failed to send notification.")
-        } finally {
-            setNotifSending(false)
+            await navigator.clipboard.writeText(text)
+            setManualCopiedNote(`${label} copied!`)
+        } catch {
+            setManualCopiedNote(`Could not auto-copy ${label}. Select and copy manually.`)
         }
     }
 
@@ -669,165 +681,183 @@ export default function AdminCommissionsPage() {
                             </div>
                         )}
 
-                        <form
-                            onSubmit={handleSendAdminNotification}
-                            className="mt-3 rounded-2xl border border-brand-200 bg-white p-4 space-y-3"
-                        >
-                            <div className="flex flex-wrap items-center justify-between gap-2">
-                                <div>
-                                    <div className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
-                                        Send User Notification (Email · SMS · WhatsApp)
-                                    </div>
-                                    <p className="text-xs text-on-surface-muted">
-                                        Notify users after registration, payment updates, or technical issues. Automated emails also fire on registration &amp; successful payment.
-                                    </p>
-                                </div>
-                                <div className="flex flex-wrap gap-1.5">
-                                    <button
-                                        type="button"
-                                        onClick={() => {
-                                            setNotifCategory("Welcome")
-                                            setNotifSubject("Welcome to NursifyGH — Account Ready")
-                                            setNotifMessage("Welcome to NursifyGH! Your student account is active—log in to start practicing past questions, flashcards, and study notes.")
-                                        }}
-                                        className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-[11px] font-bold text-slate-800 hover:bg-slate-100"
-                                    >
-                                        Registration Ready
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => {
-                                            setNotifCategory("Payment Confirmed")
-                                            setNotifSubject("Payment Confirmed — Account Activated")
-                                            setNotifMessage("Your payment has been confirmed and your NursifyGH study access is now activated. You can log in and start studying right away.")
-                                        }}
-                                        className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                    >
-                                        Payment &amp; Activation Ready
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => {
-                                            setNotifCategory("Technical Issue")
-                                            setNotifSubject("Technical Notice — We're on It")
-                                            setNotifMessage("We experienced a brief technical issue and are resolving it promptly so your study access stays smooth.")
-                                        }}
-                                        className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[11px] font-bold text-amber-900 hover:bg-amber-100"
-                                    >
-                                        Technical Issue Ready
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => {
-                                            setNotifCategory("Access Reminder")
-                                            setNotifSubject("Study Pass & Subscription Reminder")
-                                            setNotifMessage("Reminder: Please complete or renew your NursifyGH pass to keep uninterrupted access to all study tools.")
-                                        }}
-                                        className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-bold text-sky-900 hover:bg-sky-100"
-                                    >
-                                        Renewal Reminder Ready
-                                    </button>
-                                </div>
-                            </div>
+                        <div className="mt-3 rounded-2xl border border-brand-200 bg-white p-4 space-y-3">
+                            {(() => {
+                                const allUsers = data?.users || []
+                                const filteredUsers = allUsers.filter((u) => {
+                                    if (manualGroupFilter === "paid") return Boolean(u.has_paid || u.is_subscribed)
+                                    if (manualGroupFilter === "trial") return !u.has_paid && !u.is_subscribed
+                                    return true
+                                })
+                                const selectedUser =
+                                    filteredUsers.find((u) => String(u.id) === manualSelectedUserId) ||
+                                    allUsers.find((u) => String(u.id) === manualSelectedUserId) ||
+                                    filteredUsers[0] ||
+                                    null
 
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-                                <select
-                                    value={notifAudience}
-                                    onChange={(e) => setNotifAudience(e.target.value as "single" | "paid" | "trial" | "all")}
-                                    className="rounded-xl border border-border bg-white px-3 py-2 text-xs font-medium text-on-surface"
-                                >
-                                    <option value="single">Single User (by Email)</option>
-                                    <option value="paid">Paid / Subscribed Users</option>
-                                    <option value="trial">Trial / Unpaid Users</option>
-                                    <option value="all">All Active Users</option>
-                                </select>
+                                const waDigits = normalizeGhPhoneForWa(selectedUser?.phone_number)
+                                const smsDigits = (selectedUser?.phone_number || "").replace(/[^\d+]/g, "")
+                                const recipientEmail = (selectedUser?.email || "").trim()
+                                const waHref = waDigits
+                                    ? `https://wa.me/${waDigits}?text=${encodeURIComponent(manualMessage)}`
+                                    : `https://wa.me/?text=${encodeURIComponent(manualMessage)}`
+                                const mailHref = `mailto:${encodeURIComponent(recipientEmail)}?subject=${encodeURIComponent(manualSubject)}&body=${encodeURIComponent(manualMessage)}`
+                                const smsHref = smsDigits
+                                    ? `sms:${smsDigits}?body=${encodeURIComponent(manualMessage)}`
+                                    : `sms:?body=${encodeURIComponent(manualMessage)}`
+                                const groupEmails = filteredUsers
+                                    .map((u) => (u.email || "").trim())
+                                    .filter(Boolean)
+                                    .join(", ")
 
-                                {notifAudience === "single" ? (
-                                    <input
-                                        type="email"
-                                        value={notifTargetEmail}
-                                        onChange={(e) => setNotifTargetEmail(e.target.value)}
-                                        placeholder="Student email (e.g. student@example.com)"
-                                        className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
-                                    />
-                                ) : (
-                                    <input
-                                        type="text"
-                                        value={notifCategory}
-                                        onChange={(e) => setNotifCategory(e.target.value)}
-                                        placeholder="Category (e.g. Technical Issue)"
-                                        className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
-                                    />
-                                )}
-
-                                <input
-                                    type="text"
-                                    value={notifSubject}
-                                    onChange={(e) => setNotifSubject(e.target.value)}
-                                    placeholder="Subject / Title"
-                                    className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
-                                />
-                            </div>
-
-                            <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-on-surface">
-                                {["email", "sms", "whatsapp"].map((ch) => {
-                                    const checked = notifChannels.includes(ch)
-                                    return (
-                                        <label key={ch} className="inline-flex items-center gap-1.5 cursor-pointer capitalize">
-                                            <input
-                                                type="checkbox"
-                                                checked={checked}
-                                                onChange={() =>
-                                                    setNotifChannels((prev) =>
-                                                        prev.includes(ch) ? prev.filter((x) => x !== ch) : [...prev, ch]
-                                                    )
-                                                }
-                                                className="rounded border-border"
-                                            />
-                                            <span>{ch}</span>
-                                        </label>
-                                    )
-                                })}
-                            </div>
-
-                            <div className="flex flex-col sm:flex-row gap-2.5">
-                                <textarea
-                                    rows={2}
-                                    value={notifMessage}
-                                    onChange={(e) => setNotifMessage(e.target.value)}
-                                    placeholder="Write your message for registration follow-up, payment confirmation, or technical issue alert..."
-                                    className="flex-1 rounded-xl border border-border bg-white px-3.5 py-2 text-xs text-on-surface"
-                                />
-                                <button
-                                    type="submit"
-                                    disabled={notifSending}
-                                    className="rounded-xl bg-brand-700 px-4 py-2.5 text-xs font-bold text-white hover:bg-brand-800 disabled:opacity-60 self-stretch sm:self-auto"
-                                >
-                                    {notifSending ? "Sending..." : "Send Notification"}
-                                </button>
-                            </div>
-
-                            {notifResult && (
-                                <div className="rounded-xl border border-brand-200 bg-brand-50/70 p-3 text-xs text-slate-800 space-y-2">
-                                    <div className="font-semibold">{notifResult.text}</div>
-                                    {notifResult.waLinks && notifResult.waLinks.length > 0 && (
-                                        <div className="flex flex-wrap gap-2">
-                                            {notifResult.waLinks.map((w, i) => (
-                                                <a
-                                                    key={i}
-                                                    href={w.wa_link}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="inline-flex items-center rounded-lg border border-emerald-300 bg-white px-2.5 py-1 text-[11px] font-bold text-emerald-800 hover:bg-emerald-50"
+                                return (
+                                    <>
+                                        <div className="flex flex-wrap items-center justify-between gap-2">
+                                            <div>
+                                                <div className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
+                                                    Free Manual Outreach Launcher (WhatsApp · Email · SMS)
+                                                </div>
+                                                <p className="text-xs text-on-surface-muted">
+                                                    Pick a ready-to-use message and launch WhatsApp, Email, or SMS directly—no paid domain or SMS API needed.
+                                                </p>
+                                            </div>
+                                            <div className="flex flex-wrap gap-1.5">
+                                                <button
+                                                    type="button"
+                                                    onClick={() => applyManualPreset("welcome")}
+                                                    className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-[11px] font-bold text-slate-800 hover:bg-slate-100"
                                                 >
-                                                    WhatsApp: {w.name} ({w.phone}) ↗
-                                                </a>
-                                            ))}
+                                                    Registration
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    onClick={() => applyManualPreset("payment")}
+                                                    className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                                >
+                                                    Payment &amp; Activated
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    onClick={() => applyManualPreset("technical")}
+                                                    className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[11px] font-bold text-amber-900 hover:bg-amber-100"
+                                                >
+                                                    Technical Issue
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    onClick={() => applyManualPreset("renewal")}
+                                                    className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-bold text-sky-900 hover:bg-sky-100"
+                                                >
+                                                    Renewal Reminder
+                                                </button>
+                                            </div>
                                         </div>
-                                    )}
-                                </div>
-                            )}
-                        </form>
+
+                                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                                            <select
+                                                value={manualGroupFilter}
+                                                onChange={(e) => {
+                                                    setManualGroupFilter(e.target.value as "all" | "paid" | "trial")
+                                                    setManualSelectedUserId("")
+                                                }}
+                                                className="rounded-xl border border-border bg-white px-3 py-2 text-xs font-medium text-on-surface"
+                                            >
+                                                <option value="all">All Users ({allUsers.length})</option>
+                                                <option value="paid">
+                                                    Paid Users ({allUsers.filter((u) => u.has_paid || u.is_subscribed).length})
+                                                </option>
+                                                <option value="trial">
+                                                    Trial / Unpaid ({allUsers.filter((u) => !u.has_paid && !u.is_subscribed).length})
+                                                </option>
+                                            </select>
+
+                                            <select
+                                                value={selectedUser ? String(selectedUser.id) : ""}
+                                                onChange={(e) => setManualSelectedUserId(e.target.value)}
+                                                className="rounded-xl border border-border bg-white px-3 py-2 text-xs font-medium text-on-surface sm:col-span-2"
+                                            >
+                                                {filteredUsers.length === 0 ? (
+                                                    <option value="">No users in selected group</option>
+                                                ) : (
+                                                    filteredUsers.map((u) => (
+                                                        <option key={u.id} value={String(u.id)}>
+                                                            {u.full_name || "Unnamed"} — {u.phone_number || "No phone"} · {u.email}
+                                                        </option>
+                                                    ))
+                                                )}
+                                            </select>
+                                        </div>
+
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                            <input
+                                                type="text"
+                                                value={manualSubject}
+                                                onChange={(e) => setManualSubject(e.target.value)}
+                                                placeholder="Email subject"
+                                                className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
+                                            />
+                                            <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs text-slate-700 flex items-center justify-between gap-2">
+                                                <span className="truncate">
+                                                    {selectedUser
+                                                        ? `${selectedUser.full_name || "User"} · ${selectedUser.phone_number || "No phone"}`
+                                                        : "No user selected"}
+                                                </span>
+                                                {groupEmails && (
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => copyTextToClipboard(groupEmails, `${filteredUsers.length} group emails`)}
+                                                        className="text-[11px] font-bold text-brand-700 hover:underline shrink-0"
+                                                    >
+                                                        Copy Group Emails
+                                                    </button>
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        <textarea
+                                            rows={2}
+                                            value={manualMessage}
+                                            onChange={(e) => setManualMessage(e.target.value)}
+                                            placeholder="Ready-to-send message text..."
+                                            className="w-full rounded-xl border border-border bg-white px-3.5 py-2 text-xs text-on-surface"
+                                        />
+
+                                        <div className="flex flex-wrap items-center gap-2">
+                                            <a
+                                                href={waHref}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center rounded-xl bg-emerald-600 px-3.5 py-2 text-xs font-bold text-white hover:bg-emerald-700"
+                                            >
+                                                WhatsApp {waDigits ? `(${waDigits})` : ""} ↗
+                                            </a>
+                                            <a
+                                                href={mailHref}
+                                                className="inline-flex items-center rounded-xl bg-slate-900 px-3.5 py-2 text-xs font-bold text-white hover:bg-slate-800"
+                                            >
+                                                Email ↗
+                                            </a>
+                                            <a
+                                                href={smsHref}
+                                                className="inline-flex items-center rounded-xl border border-border bg-white px-3.5 py-2 text-xs font-bold text-on-surface hover:bg-surface-subtle"
+                                            >
+                                                SMS ↗
+                                            </a>
+                                            <button
+                                                type="button"
+                                                onClick={() => copyTextToClipboard(manualMessage, "Message")}
+                                                className="inline-flex items-center rounded-xl border border-brand-200 bg-brand-50 px-3.5 py-2 text-xs font-bold text-brand-800 hover:bg-brand-100"
+                                            >
+                                                Copy Message
+                                            </button>
+                                            {manualCopiedNote && (
+                                                <span className="text-xs font-semibold text-brand-700">{manualCopiedNote}</span>
+                                            )}
+                                        </div>
+                                    </>
+                                )
+                            })()}
+                        </div>
                     </div>
                 )}
 
