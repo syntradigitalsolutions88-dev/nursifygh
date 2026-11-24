@@ -165,12 +165,20 @@ class PaymentTransaction(models.Model):
 
     # The only allowed mutations on a transaction:
     def mark_success(self, *, provider_reference: str = "") -> None:
-        """Mark as succeeded. Called by the webhook handler after signature verification."""
+        """Mark as succeeded and trigger payment confirmation notification once."""
+        was_already_success = self.status == PaymentStatus.SUCCESS
         self.status = PaymentStatus.SUCCESS
         self.completed_at = timezone.now()
         if provider_reference:
             self.provider_reference = provider_reference
         self.save(update_fields=["status", "completed_at", "provider_reference"])
+        if not was_already_success:
+            try:
+                from accounts.notifications import notify_payment_succeeded
+                notify_payment_succeeded(self)
+            except Exception:
+                import logging
+                logging.getLogger(__name__).exception("Failed to dispatch payment success notification for %s", self.id)
 
     def mark_failed(self, *, provider_reference: str = "") -> None:
         """Mark as failed. Called by webhook handler on charge.failed."""

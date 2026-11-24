@@ -162,6 +162,18 @@ export default function AdminCommissionsPage() {
     const [aiPrompt, setAiPrompt] = useState("")
     const [aiReply, setAiReply] = useState<string | null>(null)
 
+    const [notifAudience, setNotifAudience] = useState<"single" | "paid" | "trial" | "all">("single")
+    const [notifTargetEmail, setNotifTargetEmail] = useState("")
+    const [notifCategory, setNotifCategory] = useState("Technical Issue")
+    const [notifSubject, setNotifSubject] = useState("Temporary Service / Technical Update")
+    const [notifMessage, setNotifMessage] = useState("")
+    const [notifChannels, setNotifChannels] = useState<string[]>(["email", "whatsapp"])
+    const [notifSending, setNotifSending] = useState(false)
+    const [notifResult, setNotifResult] = useState<{
+        text: string
+        waLinks?: Array<{ name: string; phone: string; wa_link: string }>
+    } | null>(null)
+
     const authUser = user as (typeof user & { id?: number; is_staff?: boolean; is_superuser?: boolean }) | null
     const isStaff = Boolean(authUser?.is_staff || authUser?.is_superuser)
 
@@ -411,6 +423,37 @@ export default function AdminCommissionsPage() {
             `Try asking for "feedback", "growth ideas", "who subscribed", "trial users", "who to pay", or a student/school/code name.`
         )
     }
+    async function handleSendAdminNotification(e: React.FormEvent) {
+        e.preventDefault()
+        if (!notifMessage.trim()) {
+            setFeedback("Please enter a notification message before sending.")
+            return
+        }
+        setNotifSending(true)
+        setNotifResult(null)
+        try {
+            const res = await actionMutation.mutateAsync({
+                action: "send_notification",
+                audience: notifAudience,
+                email: notifAudience === "single" ? notifTargetEmail.trim() : undefined,
+                channels: notifChannels.length > 0 ? notifChannels : ["email"],
+                category: notifCategory,
+                subject: notifSubject.trim() || `NursifyGH ${notifCategory}`,
+                message: notifMessage.trim(),
+            })
+            const sum = res?.summary || {}
+            setNotifResult({
+                text: `Dispatched to ${sum.recipients_count ?? 0} user(s) · Email sent: ${sum.email_sent ?? 0} (failed: ${sum.email_failed ?? 0}) · SMS sent: ${sum.sms_sent ?? 0} (unconfigured/no-phone: ${sum.sms_skipped ?? 0}).`,
+                waLinks: Array.isArray(sum.whatsapp_links) ? sum.whatsapp_links : [],
+            })
+            setFeedback("Notification processed.")
+        } catch (err: any) {
+            setFeedback(err?.message || "Failed to send notification.")
+        } finally {
+            setNotifSending(false)
+        }
+    }
+
     function handlePromoteSubmit(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
         if (!promoteEmail.trim() || actionMutation.isPending) return
@@ -625,6 +668,144 @@ export default function AdminCommissionsPage() {
                                 </button>
                             </div>
                         )}
+
+                        <form
+                            onSubmit={handleSendAdminNotification}
+                            className="mt-3 rounded-2xl border border-brand-200 bg-white p-4 space-y-3"
+                        >
+                            <div className="flex flex-wrap items-center justify-between gap-2">
+                                <div>
+                                    <div className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
+                                        Send User Notification (Email · SMS · WhatsApp)
+                                    </div>
+                                    <p className="text-xs text-on-surface-muted">
+                                        Notify users after registration, payment updates, or technical issues. Automated emails also fire on registration &amp; successful payment.
+                                    </p>
+                                </div>
+                                <div className="flex flex-wrap gap-1.5">
+                                    <button
+                                        type="button"
+                                        onClick={() => {
+                                            setNotifCategory("Technical Issue")
+                                            setNotifSubject("Technical Notice — We're on It")
+                                            setNotifMessage("We experienced a brief technical issue and are resolving it promptly so your study access stays smooth.")
+                                        }}
+                                        className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[11px] font-bold text-amber-900 hover:bg-amber-100"
+                                    >
+                                        Technical Issue Preset
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={() => {
+                                            setNotifCategory("Payment & Access")
+                                            setNotifSubject("Payment & Subscription Update")
+                                            setNotifMessage("Your payment status and study pass access have been updated on NursifyGH.")
+                                        }}
+                                        className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                    >
+                                        Payment Update Preset
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                                <select
+                                    value={notifAudience}
+                                    onChange={(e) => setNotifAudience(e.target.value as "single" | "paid" | "trial" | "all")}
+                                    className="rounded-xl border border-border bg-white px-3 py-2 text-xs font-medium text-on-surface"
+                                >
+                                    <option value="single">Single User (by Email)</option>
+                                    <option value="paid">Paid / Subscribed Users</option>
+                                    <option value="trial">Trial / Unpaid Users</option>
+                                    <option value="all">All Active Users</option>
+                                </select>
+
+                                {notifAudience === "single" ? (
+                                    <input
+                                        type="email"
+                                        value={notifTargetEmail}
+                                        onChange={(e) => setNotifTargetEmail(e.target.value)}
+                                        placeholder="Student email (e.g. student@example.com)"
+                                        className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
+                                    />
+                                ) : (
+                                    <input
+                                        type="text"
+                                        value={notifCategory}
+                                        onChange={(e) => setNotifCategory(e.target.value)}
+                                        placeholder="Category (e.g. Technical Issue)"
+                                        className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
+                                    />
+                                )}
+
+                                <input
+                                    type="text"
+                                    value={notifSubject}
+                                    onChange={(e) => setNotifSubject(e.target.value)}
+                                    placeholder="Subject / Title"
+                                    className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
+                                />
+                            </div>
+
+                            <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-on-surface">
+                                {["email", "sms", "whatsapp"].map((ch) => {
+                                    const checked = notifChannels.includes(ch)
+                                    return (
+                                        <label key={ch} className="inline-flex items-center gap-1.5 cursor-pointer capitalize">
+                                            <input
+                                                type="checkbox"
+                                                checked={checked}
+                                                onChange={() =>
+                                                    setNotifChannels((prev) =>
+                                                        prev.includes(ch) ? prev.filter((x) => x !== ch) : [...prev, ch]
+                                                    )
+                                                }
+                                                className="rounded border-border"
+                                            />
+                                            <span>{ch}</span>
+                                        </label>
+                                    )
+                                })}
+                            </div>
+
+                            <div className="flex flex-col sm:flex-row gap-2.5">
+                                <textarea
+                                    rows={2}
+                                    value={notifMessage}
+                                    onChange={(e) => setNotifMessage(e.target.value)}
+                                    placeholder="Write your message for registration follow-up, payment confirmation, or technical issue alert..."
+                                    className="flex-1 rounded-xl border border-border bg-white px-3.5 py-2 text-xs text-on-surface"
+                                />
+                                <button
+                                    type="submit"
+                                    disabled={notifSending}
+                                    className="rounded-xl bg-brand-700 px-4 py-2.5 text-xs font-bold text-white hover:bg-brand-800 disabled:opacity-60 self-stretch sm:self-auto"
+                                >
+                                    {notifSending ? "Sending..." : "Send Notification"}
+                                </button>
+                            </div>
+
+                            {notifResult && (
+                                <div className="rounded-xl border border-brand-200 bg-brand-50/70 p-3 text-xs text-slate-800 space-y-2">
+                                    <div className="font-semibold">{notifResult.text}</div>
+                                    {notifResult.waLinks && notifResult.waLinks.length > 0 && (
+                                        <div className="flex flex-wrap gap-2">
+                                            {notifResult.waLinks.map((w, i) => (
+                                                <a
+                                                    key={i}
+                                                    href={w.wa_link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center rounded-lg border border-emerald-300 bg-white px-2.5 py-1 text-[11px] font-bold text-emerald-800 hover:bg-emerald-50"
+                                                >
+                                                    WhatsApp: {w.name} ({w.phone}) ↗
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </form>
                     </div>
                 )}
 

@@ -1023,6 +1023,48 @@ class AdminCommissionsActionView(APIView):
             _set_trashed_user_ids(trashed)
             return Response({"ok": True, "action": action, "user_id": user_id})
 
+        if action == "send_notification":
+            from accounts.notifications import dispatch_admin_message
+
+            audience = (request.data.get("audience") or "single").strip().lower()
+            target_email = (request.data.get("email") or "").strip().lower()
+            channels = request.data.get("channels") or ["email"]
+            if isinstance(channels, str):
+                channels = [c.strip() for c in channels.split(",") if c.strip()]
+            subject = (request.data.get("subject") or "NursifyGH Notification").strip()
+            message = (request.data.get("message") or "").strip()
+            category = (request.data.get("category") or "Update").strip()
+
+            if not message:
+                return Response({"error": "Message body is required."}, status=400)
+
+            qs = User.objects.filter(is_active=True)
+            if audience == "single":
+                if not target_email:
+                    return Response({"error": "Select a user or provide target email for single-user notification."}, status=400)
+                qs = qs.filter(email__iexact=target_email)
+            elif audience == "paid":
+                qs = qs.filter(models.Q(has_paid=True) | models.Q(is_subscribed=True))
+            elif audience == "trial":
+                qs = qs.filter(has_paid=False, is_subscribed=False)
+            elif audience == "all":
+                pass
+            else:
+                return Response({"error": f"Unknown audience: {audience}"}, status=400)
+
+            recipients = list(qs.distinct())
+            if not recipients:
+                return Response({"error": "No matching recipients found."}, status=404)
+
+            summary = dispatch_admin_message(
+                users=recipients,
+                channels=channels,
+                subject=subject,
+                message=message,
+                category=category,
+            )
+            return Response({"ok": True, "action": action, "summary": summary})
+
         if action == "delete_payment":
             payment_id = request.data.get("payment_id")
             if not payment_id:
