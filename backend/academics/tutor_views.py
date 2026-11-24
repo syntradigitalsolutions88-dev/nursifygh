@@ -24,14 +24,20 @@ SYSTEM_PROMPT = (
     "NURSIFYGH PLATFORM FEATURES:\n"
     "• AI Nursing & Science Tutor (/ai-tutor): Instant explanations across anatomy, physiology, chemistry, "
     "pharmacology, nursing priorities, and clinical case stages.\n"
-    "• NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): 2,113+ practice questions, 60-minute "
-    "timed mock exams, and detailed rationales.\n"
+    "• NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): 3,000+ practice questions across courses "
+    "and domains, timed mock exams, and detailed rationales.\n"
     "• Interactive Clinical Case Studies (/cases): Step-by-step patient scenarios with vitals, triage, and AI Tutor help.\n"
     "• Flashcards & Revision (/revision): Active-recall study decks for fast exam review.\n"
     "• NANDA Care Plans, Clinical Logbook & Semester Pass: Care planning tools, printable logbook transcripts, "
-    "3-day free trial, and GHS 30 for 120 days via manual MoMo."
+    "3-day free trial, and GHS 30 for 120 days via manual MoMo.\n\n"
+    "CLINICAL ACCURACY & EXAM INTELLIGENCE RULES:\n"
+    "- Lead with clear, direct reasoning: state the core definition or clinical priority upfront.\n"
+    "- For multiple-choice or scenario questions, explain why the priority choice is safest AND why common "
+    "distractors or delayed actions carry risk.\n"
+    "- Never guess or invent unverified drug doses, infusion rates, or local protocols; state established "
+    "principles clearly and advise verifying exact doses/orders against current clinical guidelines.\n"
+    "- Keep paragraphs concise and easy to read on mobile phones during ward shifts or study blocks.\n"
 )
-
 def _normalize_typos(text: str) -> str:
     q = (text or "").lower()
     replacements = [
@@ -236,7 +242,7 @@ def _generate_tutor_response(prompt_text: str) -> dict:
             ),
         }
 
-    if any(k in normalized for k in ["gland", "glands", "endocrine", "exocrine"]):
+    if any(k in q for k in ["gland", "glands", "endocrine", "exocrine"]):
         return {
             "framework": "Anatomy & Physiology • Glandular System Guide",
             "reply": (
@@ -253,7 +259,7 @@ def _generate_tutor_response(prompt_text: str) -> dict:
             ),
         }
 
-    if any(k in normalized for k in ["nursify", "feature", "features", "what can you do", "how does this app", "platform"]):
+    if any(k in q for k in ["nursify", "feature", "features", "what can you do", "how does this app", "platform"]):
         return {
             "framework": "NursifyGH Platform & Study Ecosystem Guide",
             "reply": (
@@ -287,7 +293,11 @@ class TutorCoachView(APIView):
         if not prompt:
             return Response({"detail": "Please provide a clinical or study question."}, status=status.HTTP_400_BAD_REQUEST)
 
-        live_reply, live_framework = _call_live_llm(prompt)
+        prog = getattr(request.user, "program", "") or ""
+        lvl = getattr(request.user, "level", "") or ""
+        ctx = " ".join(x for x in [f"Level {lvl}" if lvl else "", prog] if x)
+        enriched = f"[Student Profile: {ctx}]\n{prompt}" if ctx else prompt
+        live_reply, live_framework = _call_live_llm(enriched)
         if live_reply and live_framework:
             return Response(
                 {
