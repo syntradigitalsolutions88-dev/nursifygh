@@ -30,8 +30,8 @@ class UserAdmin(BaseUserAdmin):
         "phone_number",
         "level",
         "access_status",
+        "expiry_date_display",
         "has_paid",
-        "subscription_expires_at",
         "is_ambassador",
         "referral_code",
         "referred_by",
@@ -110,6 +110,13 @@ class UserAdmin(BaseUserAdmin):
                 f"{amount:.2f}",
             )
         return "GHS 0.00"
+
+
+    @admin.display(description="Expires On", ordering="subscription_expires_at")
+    def expiry_date_display(self, obj):
+        if not obj.subscription_expires_at:
+            return "—"
+        return timezone.localtime(obj.subscription_expires_at).strftime("%d %b %Y, %H:%M")
 
     @admin.display(description="Access Status")
     def access_status(self, obj):
