@@ -169,6 +169,7 @@ export default function AdminCommissionsPage() {
         "Hello! Your payment on NursifyGH has been confirmed and your study account is now active. You can log in and start studying right away."
     )
     const [manualCopiedNote, setManualCopiedNote] = useState<string | null>(null)
+    const [sentUserIds, setSentUserIds] = useState<string[]>([])
     const [manualSectionTab, setManualSectionTab] = useState<"ai" | "outreach">("outreach")
 
     const authUser = user as (typeof user & { id?: number; is_staff?: boolean; is_superuser?: boolean }) | null
@@ -478,6 +479,20 @@ export default function AdminCommissionsPage() {
         } catch {
             setManualCopiedNote(`Could not auto-copy ${label}. Select and copy manually.`)
         }
+    }
+
+    function toggleSingleUserSent(userId: string | number, userName?: string | null) {
+        const key = String(userId)
+        setSentUserIds((prev) => {
+            const exists = prev.includes(key)
+            const next = exists ? prev.filter((id) => id !== key) : [...prev, key]
+            setManualCopiedNote(
+                exists
+                    ? `Unmarked sent status for ${userName || "user"}.`
+                    : `Single user message marked as sent to ${userName || "user"}!`
+            )
+            return next
+        })
     }
 
     function handlePromoteSubmit(e: FormEvent<HTMLFormElement>) {
@@ -844,7 +859,7 @@ export default function AdminCommissionsPage() {
                                                 ) : (
                                                     filteredUsers.map((u) => (
                                                         <option key={u.id} value={String(u.id)}>
-                                                            {u.full_name || "Unnamed"} — {u.phone_number || "No phone"} · {u.email}
+                                                            {sentUserIds.includes(String(u.id)) ? "[SENT] " : ""}{u.full_name || "Unnamed"} — {u.phone_number || "No phone"} · {u.email}
                                                         </option>
                                                     ))
                                                 )}
@@ -930,6 +945,19 @@ export default function AdminCommissionsPage() {
                                             >
                                                 Copy Message
                                             </button>
+                                            {selectedUser && (
+                                                <button
+                                                    type="button"
+                                                    onClick={() => toggleSingleUserSent(selectedUser.id, selectedUser.full_name)}
+                                                    className={`inline-flex items-center justify-center rounded-xl border px-3 py-2.5 text-xs font-bold ${
+                                                        sentUserIds.includes(String(selectedUser.id))
+                                                            ? "border-emerald-400 bg-emerald-100 text-emerald-950"
+                                                            : "border-slate-300 bg-slate-50 text-slate-800 hover:bg-slate-100"
+                                                    }`}
+                                                >
+                                                    {sentUserIds.includes(String(selectedUser.id)) ? "Sent ✓" : "Mark Single Sent"}
+                                                </button>
+                                            )}
                                         </div>
 
                                         {manualCopiedNote && (
