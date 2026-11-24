@@ -169,6 +169,7 @@ export default function AdminCommissionsPage() {
         "Hello! Your payment on NursifyGH has been confirmed and your study account is now active. You can log in and start studying right away."
     )
     const [manualCopiedNote, setManualCopiedNote] = useState<string | null>(null)
+    const [manualSectionTab, setManualSectionTab] = useState<"ai" | "outreach">("outreach")
 
     const authUser = user as (typeof user & { id?: number; is_staff?: boolean; is_superuser?: boolean }) | null
     const isStaff = Boolean(authUser?.is_staff || authUser?.is_superuser)
@@ -431,30 +432,35 @@ export default function AdminCommissionsPage() {
         return digits
     }
 
-    function applyManualPreset(presetKey: "welcome" | "payment" | "technical" | "renewal") {
+    function applyManualPreset(presetKey: "welcome" | "push_sub" | "payment" | "technical" | "renewal") {
         const usersList = data?.users || []
         const chosen = usersList.find((u) => String(u.id) === manualSelectedUserId) || usersList[0]
         const firstName = (chosen?.full_name || "Student").trim().split(/\s+/)[0] || "Student"
 
         if (presetKey === "welcome") {
-            setManualSubject(`Welcome to NursifyGH, ${firstName} — Start & Unlock Full Access`)
+            setManualSubject(`Welcome to NursifyGH, ${firstName} — Subscribe & Install the App`)
             setManualMessage(
-                `Hi ${firstName}! Welcome to NursifyGH — your study companion for nursing exams. Log in to explore past questions, flashcards, and notes, and subscribe via ${SUBSCRIBE_PAYMENT_PHONE} to unlock full access.`
+                `Welcome to NursifyGH, ${firstName}! Your account is ready—install NursifyGH on your phone home screen for one-tap study anytime, and subscribe on the platform (payment number: ${SUBSCRIBE_PAYMENT_PHONE}) to unlock full past questions, flashcards, and exam tools.`
+            )
+        } else if (presetKey === "push_sub") {
+            setManualSubject(`Unlock Full NursifyGH Access & Install on Your Phone, ${firstName}`)
+            setManualMessage(
+                `Hi ${firstName}! Don't leave your exam prep half-done—install NursifyGH on your phone for quick daily revision and subscribe right on the platform via ${SUBSCRIBE_PAYMENT_PHONE} so you study without limits. Questions? Reach ${OUTREACH_SENDER_PHONE}.`
             )
         } else if (presetKey === "payment") {
-            setManualSubject("Payment Confirmed — NursifyGH Account Active")
+            setManualSubject("Payment Confirmed — Your NursifyGH Account Is Active!")
             setManualMessage(
-                `Hi ${firstName}, your payment to ${SUBSCRIBE_PAYMENT_PHONE} has been confirmed and your NursifyGH account is now active. Log in and start studying right away!`
+                `Hi ${firstName}, your payment to ${SUBSCRIBE_PAYMENT_PHONE} is confirmed and your NursifyGH account is now active! Log in to start practicing now, and install NursifyGH on your phone for instant access before every study session.`
             )
         } else if (presetKey === "technical") {
-            setManualSubject("Technical Notice — NursifyGH Support")
+            setManualSubject("Quick NursifyGH Update — We've Got You Covered")
             setManualMessage(
-                `Hi ${firstName}, we are resolving a brief technical issue on NursifyGH so your study experience stays smooth. For help, reach us on ${OUTREACH_SENDER_PHONE}.`
+                `Hi ${firstName}, we're smoothing out a brief technical issue on NursifyGH so your study sessions stay fast and reliable. Keep NursifyGH installed on your phone for quick access, and message ${OUTREACH_SENDER_PHONE} if you need help.`
             )
         } else {
-            setManualSubject("NursifyGH Subscription & Access Reminder")
+            setManualSubject("Keep Your NursifyGH Study Streak Going — Renew Today")
             setManualMessage(
-                `Hi ${firstName}, keep your NursifyGH study access active without interruption by subscribing/renewing via ${SUBSCRIBE_PAYMENT_PHONE}.`
+                `Hi ${firstName}, stay sharp for your exams without interruption! Renew your NursifyGH subscription on the platform via ${SUBSCRIBE_PAYMENT_PHONE} and keep the app installed on your phone for daily practice. Support: ${OUTREACH_SENDER_PHONE}.`
             )
         }
         setManualCopiedNote(null)
@@ -590,134 +596,107 @@ export default function AdminCommissionsPage() {
                     </div>
                 )}
 
-                {/* Strictly Admin-Only AI Assistant (never exposed to students/users) */}
-                {isStaff && (
-                    <div className="rounded-2xl border border-brand-200 bg-brand-50/50 p-4 shadow-sm space-y-3">
-                        <div className="flex flex-wrap items-center justify-between gap-2">
-                            <div>
-                                <p className="text-[11px] font-bold uppercase tracking-wider text-brand-800">
-                                    Admin-Only AI Assistant
-                                </p>
-                                <p className="text-xs text-on-surface-muted">
-                                    Ask for summaries, jump to unpaid payouts or pending payments, or search users &amp; codes
-                                </p>
+                {/* Dedicated Menu Switcher: Admin AI vs. Free Manual Outreach */}
+                <div className="rounded-2xl border border-border bg-white p-3.5 sm:p-4 shadow-sm space-y-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <div>
+                            <div className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
+                                Admin Workspace Menu
                             </div>
-                            <div className="flex flex-wrap gap-1.5 min-w-[140px]">
-                                <button
-                                    type="button"
-                                    onClick={() => handleAdminAiCommand("summary")}
-                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                >
-                                    Dashboard Summary
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => handleAdminAiCommand("unpaid payouts")}
-                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                >
-                                    Who to Pay
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => handleAdminAiCommand("pending payments")}
-                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                >
-                                    Pending Payments
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => handleAdminAiCommand("who subscribed")}
-                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                >
-                                    Paid / Subscribed
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => handleAdminAiCommand("advisor business ideas analysis")}
-                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                >
-                                    AI Advisor &amp; Ideas
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => handleAdminAiCommand("today")}
-                                    className="rounded-lg border border-brand-200 bg-white px-2.5 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                >
-                                    Today&apos;s Users
-                                </button>
-                            </div>
+                            <p className="text-xs text-on-surface-muted">
+                                Switch between Admin AI insights and the Free Manual Outreach menu.
+                            </p>
                         </div>
-
-                        <div className="flex flex-col sm:flex-row gap-2">
-                            <input
-                                type="text"
-                                value={aiPrompt}
-                                onChange={(e) => setAiPrompt(e.target.value)}
-                                onKeyDown={(e) => {
-                                    if (e.key === "Enter") {
-                                        e.preventDefault()
-                                        handleAdminAiCommand()
-                                    }
-                                }}
-                                placeholder="e.g. Who has unpaid payouts? or Find SYNTRA-20 or pending payments"
-                                className="min-h-[46px] w-full flex-1 rounded-xl border border-border bg-white px-3.5 py-2.5 text-sm"
-                            />
+                        <div className="grid grid-cols-2 sm:inline-flex rounded-xl border border-border bg-surface-subtle p-1 gap-1">
                             <button
                                 type="button"
-                                onClick={() => handleAdminAiCommand()}
-                                className="min-h-[46px] w-full sm:w-auto rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-800 shrink-0"
+                                onClick={() => setManualSectionTab("outreach")}
+                                className={`rounded-lg px-3 py-2 text-xs font-bold transition ${
+                                    manualSectionTab === "outreach"
+                                        ? "bg-brand-700 text-white shadow-xs"
+                                        : "text-on-surface hover:bg-white"
+                                }`}
                             >
-                                Ask Admin AI
+                                Manual Outreach
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => setManualSectionTab("ai")}
+                                className={`rounded-lg px-3 py-2 text-xs font-bold transition ${
+                                    manualSectionTab === "ai"
+                                        ? "bg-slate-900 text-white shadow-xs"
+                                        : "text-on-surface hover:bg-white"
+                                }`}
+                            >
+                                Admin AI Assistant
                             </button>
                         </div>
+                    </div>
 
-                        {aiReply && (
-                            <div className="rounded-2xl border border-brand-300 bg-white p-4 text-sm sm:text-base text-on-surface flex flex-col sm:flex-row sm:items-start justify-between gap-3 break-words">
-                                <span className="leading-relaxed break-words whitespace-pre-line flex-1">{aiReply}</span>
-                                <button
-                                    type="button"
-                                    onClick={() => setAiReply(null)}
-                                    className="text-xs font-bold text-brand-700 hover:underline shrink-0"
-                                >
-                                    Close
-                                </button>
+                    {manualSectionTab === "ai" ? (
+                        <div className="rounded-2xl border border-brand-200 bg-brand-50/50 p-3.5 sm:p-4 space-y-3">
+                            <div className="flex flex-wrap items-center justify-between gap-2">
+                                <div>
+                                    <div className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
+                                        Admin-Only AI Assistant
+                                    </div>
+                                    <p className="text-xs text-on-surface-muted">
+                                        Ask for summaries, jump to unpaid payouts or pending payments, or search users &amp; codes
+                                    </p>
+                                </div>
+                                <div className="flex flex-wrap gap-1.5">
+                                    {[
+                                        { label: "Dashboard Summary", q: "Give me a quick summary of total users, paid users, referrals, and unpaid commissions." },
+                                        { label: "Who to Pay", q: "Who has unpaid commissions right now and how much do they earn?" },
+                                        { label: "Pending Payments", q: "Are there any pending or unapproved student payments I should review?" },
+                                        { label: "Paid / Subscribed", q: "List the users who have paid or have an active subscription." },
+                                        { label: "AI Advisor & Ideas", q: "Give me 3 practical growth and retention ideas based on current users and referrals." },
+                                        { label: "Today's Users", q: "Show users who joined or had activity today." },
+                                    ].map((chip) => (
+                                        <button
+                                            key={chip.label}
+                                            type="button"
+                                            onClick={() => runAdminAi(chip.q)}
+                                            disabled={aiLoading}
+                                            className="rounded-full border border-brand-200 bg-white px-3 py-1 text-[11px] font-semibold text-brand-800 hover:bg-brand-100 disabled:opacity-50"
+                                        >
+                                            {chip.label}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
-                        )}
 
-                        <div className="mt-3 rounded-2xl border border-brand-200 bg-white p-3.5 sm:p-4 space-y-3">
-                            {(() => {
-                                const allUsers = data?.users || []
-                                const filteredUsers = allUsers.filter((u) => {
-                                    if (manualGroupFilter === "paid") return Boolean(u.has_paid || u.is_subscribed)
-                                    if (manualGroupFilter === "trial") return !u.has_paid && !u.is_subscribed
-                                    return true
-                                })
-                                const selectedUser =
-                                    filteredUsers.find((u) => String(u.id) === manualSelectedUserId) ||
-                                    allUsers.find((u) => String(u.id) === manualSelectedUserId) ||
-                                    filteredUsers[0] ||
-                                    null
+                            <form
+                                onSubmit={(e) => {
+                                    e.preventDefault()
+                                    runAdminAi(aiPrompt)
+                                }}
+                                className="flex flex-col sm:flex-row gap-2"
+                            >
+                                <input
+                                    type="text"
+                                    value={aiPrompt}
+                                    onChange={(e) => setAiPrompt(e.target.value)}
+                                    placeholder="e.g. Who has unpaid payouts? or Find SYNTRA-20 or pending payments"
+                                    className="flex-1 rounded-xl border border-border bg-white px-3.5 py-2.5 text-xs text-on-surface focus:border-brand-500 focus:outline-none"
+                                />
+                                <button
+                                    type="submit"
+                                    disabled={aiLoading}
+                                    className="rounded-xl bg-brand-700 px-4 py-2.5 text-xs font-bold text-white hover:bg-brand-800 disabled:opacity-60"
+                                >
+                                    {aiLoading ? "Thinking..." : "Ask Admin AI"}
+                                </button>
+                            </form>
 
-                                const waDigits = normalizeGhPhoneForWa(selectedUser?.phone_number)
-                                const smsDigits = (selectedUser?.phone_number || "").replace(/[^\d+]/g, "")
-                                const recipientEmail = (selectedUser?.email || "").trim()
-                                const waHref = waDigits
-                                    ? `https://wa.me/${waDigits}?text=${encodeURIComponent(manualMessage)}`
-                                    : `https://wa.me/?text=${encodeURIComponent(manualMessage)}`
-                                const mailHref = `mailto:${encodeURIComponent(recipientEmail)}?subject=${encodeURIComponent(manualSubject)}&body=${encodeURIComponent(manualMessage)}`
-                                const smsHref = smsDigits
-                                    ? `sms:${smsDigits}?body=${encodeURIComponent(manualMessage)}`
-                                    : `sms:?body=${encodeURIComponent(manualMessage)}`
-                                const groupEmails = filteredUsers
-                                    .map((u) => (u.email || "").trim())
-                                    .filter(Boolean)
-                                    .join(", ")
-
-                                return (
-                                    <>
-                                        <div className="space-y-2">
-                                            <div className="flex flex-col gap-1">
-                                                <div className="mt-3 rounded-2xl border border-brand-200 bg-white p-3.5 sm:p-4 space-y-3">
+                            {aiReply && (
+                                <div className="rounded-xl border border-brand-200 bg-white p-3.5 text-xs text-slate-800 whitespace-pre-wrap leading-relaxed">
+                                    {aiReply}
+                                </div>
+                            )}
+                        </div>
+                    ) : (
+                        <div className="rounded-2xl border border-brand-200 bg-brand-50/40 p-3.5 sm:p-4 space-y-3">
                             {(() => {
                                 const allUsers = data?.users || []
                                 const filteredUsers = allUsers.filter((u) => {
@@ -751,10 +730,10 @@ export default function AdminCommissionsPage() {
                                         <div className="space-y-2">
                                             <div className="flex flex-col gap-1">
                                                 <div className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
-                                                    Free Manual Outreach Launcher (WhatsApp · Email · SMS)
+                                                    Free Manual Outreach Menu (WhatsApp · Email · SMS)
                                                 </div>
                                                 <p className="text-xs text-on-surface-muted leading-snug">
-                                                    Outreach number: <strong className="text-on-surface">{OUTREACH_SENDER_PHONE}</strong> · Subscription number: <strong className="text-brand-800">{SUBSCRIBE_PAYMENT_PHONE}</strong>.
+                                                    Outreach sender: <strong className="text-on-surface">{OUTREACH_SENDER_PHONE}</strong> · Subscribe / payment line: <strong className="text-brand-800">{SUBSCRIBE_PAYMENT_PHONE}</strong>.
                                                 </p>
                                             </div>
                                             <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-1.5">
@@ -764,6 +743,13 @@ export default function AdminCommissionsPage() {
                                                     className="rounded-xl border border-brand-300 bg-brand-50 px-2.5 py-2 text-[11px] font-bold text-brand-900 hover:bg-brand-100 text-center"
                                                 >
                                                     Welcome &amp; Subscribe
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    onClick={() => applyManualPreset("push_sub")}
+                                                    className="rounded-xl border border-purple-300 bg-purple-50 px-2.5 py-2 text-[11px] font-bold text-purple-900 hover:bg-purple-100 text-center"
+                                                >
+                                                    Motivate Subscribe + App
                                                 </button>
                                                 <button
                                                     type="button"
@@ -782,7 +768,7 @@ export default function AdminCommissionsPage() {
                                                 <button
                                                     type="button"
                                                     onClick={() => applyManualPreset("renewal")}
-                                                    className="rounded-xl border border-sky-300 bg-sky-50 px-2.5 py-2 text-[11px] font-bold text-sky-900 hover:bg-sky-100 text-center"
+                                                    className="col-span-2 sm:col-span-1 rounded-xl border border-sky-300 bg-sky-50 px-2.5 py-2 text-[11px] font-bold text-sky-900 hover:bg-sky-100 text-center"
                                                 >
                                                     Renewal Reminder
                                                 </button>
@@ -895,149 +881,8 @@ export default function AdminCommissionsPage() {
                                 )
                             })()}
                         </div>
-                                                <p className="text-xs text-on-surface-muted">
-                                                    Pick a ready-to-use message and launch WhatsApp, Email, or SMS directly—no paid domain or SMS API needed.
-                                                </p>
-                                            </div>
-                                            <div className="flex flex-wrap gap-1.5">
-                                                <button
-                                                    type="button"
-                                                    onClick={() => applyManualPreset("welcome")}
-                                                    className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-[11px] font-bold text-slate-800 hover:bg-slate-100"
-                                                >
-                                                    Registration
-                                                </button>
-                                                <button
-                                                    type="button"
-                                                    onClick={() => applyManualPreset("payment")}
-                                                    className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
-                                                >
-                                                    Payment &amp; Activated
-                                                </button>
-                                                <button
-                                                    type="button"
-                                                    onClick={() => applyManualPreset("technical")}
-                                                    className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[11px] font-bold text-amber-900 hover:bg-amber-100"
-                                                >
-                                                    Technical Issue
-                                                </button>
-                                                <button
-                                                    type="button"
-                                                    onClick={() => applyManualPreset("renewal")}
-                                                    className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-bold text-sky-900 hover:bg-sky-100"
-                                                >
-                                                    Renewal Reminder
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-                                            <select
-                                                value={manualGroupFilter}
-                                                onChange={(e) => {
-                                                    setManualGroupFilter(e.target.value as "all" | "paid" | "trial")
-                                                    setManualSelectedUserId("")
-                                                }}
-                                                className="rounded-xl border border-border bg-white px-3 py-2 text-xs font-medium text-on-surface"
-                                            >
-                                                <option value="all">All Users ({allUsers.length})</option>
-                                                <option value="paid">
-                                                    Paid Users ({allUsers.filter((u) => u.has_paid || u.is_subscribed).length})
-                                                </option>
-                                                <option value="trial">
-                                                    Trial / Unpaid ({allUsers.filter((u) => !u.has_paid && !u.is_subscribed).length})
-                                                </option>
-                                            </select>
-
-                                            <select
-                                                value={selectedUser ? String(selectedUser.id) : ""}
-                                                onChange={(e) => setManualSelectedUserId(e.target.value)}
-                                                className="rounded-xl border border-border bg-white px-3 py-2 text-xs font-medium text-on-surface sm:col-span-2"
-                                            >
-                                                {filteredUsers.length === 0 ? (
-                                                    <option value="">No users in selected group</option>
-                                                ) : (
-                                                    filteredUsers.map((u) => (
-                                                        <option key={u.id} value={String(u.id)}>
-                                                            {u.full_name || "Unnamed"} — {u.phone_number || "No phone"} · {u.email}
-                                                        </option>
-                                                    ))
-                                                )}
-                                            </select>
-                                        </div>
-
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                                            <input
-                                                type="text"
-                                                value={manualSubject}
-                                                onChange={(e) => setManualSubject(e.target.value)}
-                                                placeholder="Email subject"
-                                                className="rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
-                                            />
-                                            <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs text-slate-700 flex items-center justify-between gap-2">
-                                                <span className="truncate">
-                                                    {selectedUser
-                                                        ? `${selectedUser.full_name || "User"} · ${selectedUser.phone_number || "No phone"}`
-                                                        : "No user selected"}
-                                                </span>
-                                                {groupEmails && (
-                                                    <button
-                                                        type="button"
-                                                        onClick={() => copyTextToClipboard(groupEmails, `${filteredUsers.length} group emails`)}
-                                                        className="text-[11px] font-bold text-brand-700 hover:underline shrink-0"
-                                                    >
-                                                        Copy Group Emails
-                                                    </button>
-                                                )}
-                                            </div>
-                                        </div>
-
-                                        <textarea
-                                            rows={2}
-                                            value={manualMessage}
-                                            onChange={(e) => setManualMessage(e.target.value)}
-                                            placeholder="Ready-to-send message text..."
-                                            className="w-full rounded-xl border border-border bg-white px-3.5 py-2 text-xs text-on-surface"
-                                        />
-
-                                        <div className="flex flex-wrap items-center gap-2">
-                                            <a
-                                                href={waHref}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center rounded-xl bg-emerald-600 px-3.5 py-2 text-xs font-bold text-white hover:bg-emerald-700"
-                                            >
-                                                WhatsApp {waDigits ? `(${waDigits})` : ""} ↗
-                                            </a>
-                                            <a
-                                                href={mailHref}
-                                                className="inline-flex items-center rounded-xl bg-slate-900 px-3.5 py-2 text-xs font-bold text-white hover:bg-slate-800"
-                                            >
-                                                Email ↗
-                                            </a>
-                                            <a
-                                                href={smsHref}
-                                                className="inline-flex items-center rounded-xl border border-border bg-white px-3.5 py-2 text-xs font-bold text-on-surface hover:bg-surface-subtle"
-                                            >
-                                                SMS ↗
-                                            </a>
-                                            <button
-                                                type="button"
-                                                onClick={() => copyTextToClipboard(manualMessage, "Message")}
-                                                className="inline-flex items-center rounded-xl border border-brand-200 bg-brand-50 px-3.5 py-2 text-xs font-bold text-brand-800 hover:bg-brand-100"
-                                            >
-                                                Copy Message
-                                            </button>
-                                            {manualCopiedNote && (
-                                                <span className="text-xs font-semibold text-brand-700">{manualCopiedNote}</span>
-                                            )}
-                                        </div>
-                                    </>
-                                )
-                            })()}
-                        </div>
-                    </div>
-                )}
+                    )}
+                </div>
 
                 {data && (
                     <>
