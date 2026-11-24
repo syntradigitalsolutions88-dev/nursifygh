@@ -162,7 +162,7 @@ export default function AdminCommissionsPage() {
     const [aiPrompt, setAiPrompt] = useState("")
     const [aiReply, setAiReply] = useState<string | null>(null)
 
-    const [manualGroupFilter, setManualGroupFilter] = useState<"all" | "paid" | "trial">("all")
+    const [manualGroupFilter, setManualGroupFilter] = useState<"all" | "paid" | "trial" | "ambassadors">("all")
     const [manualSelectedUserId, setManualSelectedUserId] = useState<string>("")
     const [manualSubject, setManualSubject] = useState("Payment Confirmed — Account Activated")
     const [manualMessage, setManualMessage] = useState(
@@ -432,7 +432,7 @@ export default function AdminCommissionsPage() {
         return digits
     }
 
-    function applyManualPreset(presetKey: "welcome" | "push_sub" | "payment" | "technical" | "renewal") {
+    function applyManualPreset(presetKey: "welcome" | "push_sub" | "ambassadors" | "payment" | "technical" | "renewal") {
         const usersList = data?.users || []
         const chosen = usersList.find((u) => String(u.id) === manualSelectedUserId) || usersList[0]
         const firstName = (chosen?.full_name || "Student").trim().split(/\s+/)[0] || "Student"
@@ -446,6 +446,11 @@ export default function AdminCommissionsPage() {
             setManualSubject(`Unlock Full NursifyGH Access & Install on Your Phone, ${firstName}`)
             setManualMessage(
                 `Hi ${firstName}! Don't leave your exam prep half-done—install NursifyGH on your phone for quick daily revision and subscribe right on the platform via ${SUBSCRIBE_PAYMENT_PHONE} so you study without limits. Questions? Reach ${OUTREACH_SENDER_PHONE}.`
+            )
+        } else if (presetKey === "ambassadors") {
+            setManualSubject(`NursifyGH Ambassador Boost — Drive Subscriptions & App Installs`)
+            setManualMessage(
+                `Hi ${firstName}! Keep pushing your NursifyGH referral code—encourage classmates to install the app on their phone for daily study and subscribe on the platform via ${SUBSCRIBE_PAYMENT_PHONE}. Need support? Message ${OUTREACH_SENDER_PHONE}.`
             )
         } else if (presetKey === "payment") {
             setManualSubject("Payment Confirmed — Your NursifyGH Account Is Active!")
@@ -699,9 +704,30 @@ export default function AdminCommissionsPage() {
                         <div className="rounded-2xl border border-brand-200 bg-brand-50/40 p-3.5 sm:p-4 space-y-3">
                             {(() => {
                                 const allUsers = data?.users || []
+                                const ambassadorEmails = new Set(
+                                    (data?.ambassadors || []).map((a) => (a.email || "").trim().toLowerCase()).filter(Boolean)
+                                )
+                                const ambassadorIds = new Set(
+                                    (data?.ambassadors || []).map((a) => String(a.id))
+                                )
+                                const isAmbassadorUser = (u: AdminUserRow) => {
+                                    const rowAny = u as AdminUserRow & { is_ambassador?: boolean; referral_code?: string | null }
+                                    return Boolean(
+                                        rowAny.is_ambassador ||
+                                        rowAny.referral_code ||
+                                        ambassadorIds.has(String(u.id)) ||
+                                        (u.email && ambassadorEmails.has(u.email.trim().toLowerCase()))
+                                    )
+                                }
+
+                                const paidCount = allUsers.filter((u) => u.has_paid || u.is_subscribed).length
+                                const trialCount = allUsers.filter((u) => !u.has_paid && !u.is_subscribed).length
+                                const ambassadorCount = allUsers.filter(isAmbassadorUser).length
+
                                 const filteredUsers = allUsers.filter((u) => {
                                     if (manualGroupFilter === "paid") return Boolean(u.has_paid || u.is_subscribed)
                                     if (manualGroupFilter === "trial") return !u.has_paid && !u.is_subscribed
+                                    if (manualGroupFilter === "ambassadors") return isAmbassadorUser(u)
                                     return true
                                 })
                                 const selectedUser =
@@ -720,10 +746,21 @@ export default function AdminCommissionsPage() {
                                 const smsHref = smsDigits
                                     ? `sms:${smsDigits}?body=${encodeURIComponent(manualMessage)}`
                                     : `sms:?body=${encodeURIComponent(manualMessage)}`
-                                const groupEmails = filteredUsers
+
+                                const groupEmailsList = filteredUsers
                                     .map((u) => (u.email || "").trim())
                                     .filter(Boolean)
-                                    .join(", ")
+                                const groupEmails = Array.from(new Set(groupEmailsList)).join(", ")
+                                const groupPhones = Array.from(
+                                    new Set(
+                                        filteredUsers
+                                            .map((u) => (u.phone_number || "").trim())
+                                            .filter(Boolean)
+                                    )
+                                ).join(", ")
+                                const bulkMailHref = groupEmails
+                                    ? `mailto:?bcc=${encodeURIComponent(groupEmails)}&subject=${encodeURIComponent(manualSubject)}&body=${encodeURIComponent(manualMessage)}`
+                                    : ""
 
                                 return (
                                     <>
@@ -733,7 +770,7 @@ export default function AdminCommissionsPage() {
                                                     Free Manual Outreach Menu (WhatsApp · Email · SMS)
                                                 </div>
                                                 <p className="text-xs text-on-surface-muted leading-snug">
-                                                    Outreach sender: <strong className="text-on-surface">{OUTREACH_SENDER_PHONE}</strong> · Subscribe / payment line: <strong className="text-brand-800">{SUBSCRIBE_PAYMENT_PHONE}</strong>.
+                                                    Best daily channel: <strong className="text-emerald-700">WhatsApp</strong> from <strong className="text-on-surface">{OUTREACH_SENDER_PHONE}</strong> · Subscribe / payment line: <strong className="text-brand-800">{SUBSCRIBE_PAYMENT_PHONE}</strong>.
                                                 </p>
                                             </div>
                                             <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-1.5">
@@ -753,6 +790,13 @@ export default function AdminCommissionsPage() {
                                                 </button>
                                                 <button
                                                     type="button"
+                                                    onClick={() => applyManualPreset("ambassadors")}
+                                                    className="rounded-xl border border-indigo-300 bg-indigo-50 px-2.5 py-2 text-[11px] font-bold text-indigo-900 hover:bg-indigo-100 text-center"
+                                                >
+                                                    Motivate Ambassadors
+                                                </button>
+                                                <button
+                                                    type="button"
                                                     onClick={() => applyManualPreset("payment")}
                                                     className="rounded-xl border border-emerald-300 bg-emerald-50 px-2.5 py-2 text-[11px] font-bold text-emerald-900 hover:bg-emerald-100 text-center"
                                                 >
@@ -768,7 +812,7 @@ export default function AdminCommissionsPage() {
                                                 <button
                                                     type="button"
                                                     onClick={() => applyManualPreset("renewal")}
-                                                    className="col-span-2 sm:col-span-1 rounded-xl border border-sky-300 bg-sky-50 px-2.5 py-2 text-[11px] font-bold text-sky-900 hover:bg-sky-100 text-center"
+                                                    className="rounded-xl border border-sky-300 bg-sky-50 px-2.5 py-2 text-[11px] font-bold text-sky-900 hover:bg-sky-100 text-center"
                                                 >
                                                     Renewal Reminder
                                                 </button>
@@ -779,18 +823,15 @@ export default function AdminCommissionsPage() {
                                             <select
                                                 value={manualGroupFilter}
                                                 onChange={(e) => {
-                                                    setManualGroupFilter(e.target.value as "all" | "paid" | "trial")
+                                                    setManualGroupFilter(e.target.value as "all" | "paid" | "trial" | "ambassadors")
                                                     setManualSelectedUserId("")
                                                 }}
                                                 className="w-full rounded-xl border border-border bg-white px-3 py-2.5 text-xs font-medium text-on-surface"
                                             >
                                                 <option value="all">All Users ({allUsers.length})</option>
-                                                <option value="paid">
-                                                    Paid Users ({allUsers.filter((u) => u.has_paid || u.is_subscribed).length})
-                                                </option>
-                                                <option value="trial">
-                                                    Trial / Unpaid ({allUsers.filter((u) => !u.has_paid && !u.is_subscribed).length})
-                                                </option>
+                                                <option value="paid">Paid Users ({paidCount})</option>
+                                                <option value="trial">Trial / Unpaid ({trialCount})</option>
+                                                <option value="ambassadors">Ambassadors ({ambassadorCount})</option>
                                             </select>
 
                                             <select
@@ -810,30 +851,47 @@ export default function AdminCommissionsPage() {
                                             </select>
                                         </div>
 
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                        <div className="rounded-xl border border-brand-200 bg-white p-2.5 space-y-2">
+                                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                                <div className="text-[11px] font-bold text-slate-800">
+                                                    Bulk Group Batch ({filteredUsers.length} {manualGroupFilter === "all" ? "total users" : `${manualGroupFilter} users`})
+                                                </div>
+                                                <div className="flex flex-wrap gap-1.5">
+                                                    {groupPhones && (
+                                                        <button
+                                                            type="button"
+                                                            onClick={() => copyTextToClipboard(groupPhones, `${filteredUsers.length} group phones`)}
+                                                            className="rounded-lg border border-emerald-300 bg-emerald-50 px-2.5 py-1 text-[11px] font-bold text-emerald-900 hover:bg-emerald-100"
+                                                        >
+                                                            Copy Group Phones
+                                                        </button>
+                                                    )}
+                                                    {groupEmails && (
+                                                        <button
+                                                            type="button"
+                                                            onClick={() => copyTextToClipboard(groupEmails, `${filteredUsers.length} group emails`)}
+                                                            className="rounded-lg border border-brand-300 bg-brand-50 px-2.5 py-1 text-[11px] font-bold text-brand-900 hover:bg-brand-100"
+                                                        >
+                                                            Copy Group Emails
+                                                        </button>
+                                                    )}
+                                                    {bulkMailHref && (
+                                                        <a
+                                                            href={bulkMailHref}
+                                                            className="rounded-lg bg-slate-900 px-2.5 py-1 text-[11px] font-bold text-white hover:bg-slate-800"
+                                                        >
+                                                            Bulk Email (BCC) ↗
+                                                        </a>
+                                                    )}
+                                                </div>
+                                            </div>
                                             <input
                                                 type="text"
                                                 value={manualSubject}
                                                 onChange={(e) => setManualSubject(e.target.value)}
                                                 placeholder="Email subject"
-                                                className="w-full rounded-xl border border-border bg-white px-3 py-2.5 text-xs text-on-surface"
+                                                className="w-full rounded-xl border border-border bg-white px-3 py-2 text-xs text-on-surface"
                                             />
-                                            <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs text-slate-700 flex items-center justify-between gap-2 min-h-[40px]">
-                                                <span className="truncate">
-                                                    {selectedUser
-                                                        ? `${selectedUser.full_name || "User"} · ${selectedUser.phone_number || "No phone"}`
-                                                        : "No user selected"}
-                                                </span>
-                                                {groupEmails && (
-                                                    <button
-                                                        type="button"
-                                                        onClick={() => copyTextToClipboard(groupEmails, `${filteredUsers.length} group emails`)}
-                                                        className="rounded-lg border border-brand-200 bg-white px-2 py-1 text-[11px] font-bold text-brand-700 hover:bg-brand-50 shrink-0"
-                                                    >
-                                                        Copy Emails
-                                                    </button>
-                                                )}
-                                            </div>
                                         </div>
 
                                         <textarea
@@ -879,7 +937,7 @@ export default function AdminCommissionsPage() {
                                         )}
                                     </>
                                 )
-                            })()}
+                            })()}})()}
                         </div>
                     )}
                 </div>
