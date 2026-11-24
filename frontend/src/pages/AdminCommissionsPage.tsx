@@ -656,8 +656,8 @@ export default function AdminCommissionsPage() {
                                         <button
                                             key={chip.label}
                                             type="button"
-                                            onClick={() => runAdminAi(chip.q)}
-                                            disabled={aiLoading}
+                                            onClick={() => handleAdminAiCommand(chip.q)}
+                                            disabled={false}
                                             className="rounded-full border border-brand-200 bg-white px-3 py-1 text-[11px] font-semibold text-brand-800 hover:bg-brand-100 disabled:opacity-50"
                                         >
                                             {chip.label}
@@ -669,7 +669,7 @@ export default function AdminCommissionsPage() {
                             <form
                                 onSubmit={(e) => {
                                     e.preventDefault()
-                                    runAdminAi(aiPrompt)
+                                    handleAdminAiCommand(aiPrompt)
                                 }}
                                 className="flex flex-col sm:flex-row gap-2"
                             >
@@ -682,10 +682,10 @@ export default function AdminCommissionsPage() {
                                 />
                                 <button
                                     type="submit"
-                                    disabled={aiLoading}
+                                    disabled={false}
                                     className="rounded-xl bg-brand-700 px-4 py-2.5 text-xs font-bold text-white hover:bg-brand-800 disabled:opacity-60"
                                 >
-                                    {aiLoading ? "Thinking..." : "Ask Admin AI"}
+                                    "Ask Admin AI"
                                 </button>
                             </form>
 
