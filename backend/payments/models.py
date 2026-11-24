@@ -174,11 +174,18 @@ class PaymentTransaction(models.Model):
         self.save(update_fields=["status", "completed_at", "provider_reference"])
         if not was_already_success:
             try:
-                from accounts.notifications import notify_payment_succeeded
-                notify_payment_succeeded(self)
+                from accounts.notifications import send_sms, normalize_gh_phone
+                student = getattr(self, "student", None)
+                phone = getattr(student, "phone_number", "") if student else ""
+                if phone:
+                    ref = self.provider_reference or self.reference
+                    send_sms(
+                        phone=phone,
+                        message=f"NursifyGH: Payment of GHS {self.amount_ghs} confirmed (Ref: {ref}). Your study account is active!",
+                    )
             except Exception:
                 import logging
-                logging.getLogger(__name__).exception("Failed to dispatch payment success notification for %s", self.id)
+                logging.getLogger(__name__).exception("Payment SMS failed for %s", self.id)
 
     def mark_failed(self, *, provider_reference: str = "") -> None:
         """Mark as failed. Called by webhook handler on charge.failed."""

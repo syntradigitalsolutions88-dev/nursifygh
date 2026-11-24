@@ -146,6 +146,20 @@ class User(AbstractBaseUser, PermissionsMixin):
         self.save(update_fields=[
             "is_subscribed", "has_paid", "subscription_expires_at", "last_payment_reference",
         ])
+        try:
+            from .email_service import send_subscription_activated
+            if self.email:
+                send_subscription_activated(
+                    to=self.email,
+                    full_name=self.full_name or "",
+                    expires_at=self.subscription_expires_at,
+                )
+        except Exception:
+            import logging
+            logging.getLogger(__name__).exception("Activation email failed for %s", self.email)
+        if False:
+            self.save(update_fields=[
+        ])
 
         # ── FIX: create the ambassador commission on the first paid activation ──
         if was_already_paid:

@@ -686,24 +686,46 @@ export default function AdminCommissionsPage() {
                                     <button
                                         type="button"
                                         onClick={() => {
+                                            setNotifCategory("Welcome")
+                                            setNotifSubject("Welcome to NursifyGH — Account Ready")
+                                            setNotifMessage("Welcome to NursifyGH! Your student account is active—log in to start practicing past questions, flashcards, and study notes.")
+                                        }}
+                                        className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-[11px] font-bold text-slate-800 hover:bg-slate-100"
+                                    >
+                                        Registration Ready
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={() => {
+                                            setNotifCategory("Payment Confirmed")
+                                            setNotifSubject("Payment Confirmed — Account Activated")
+                                            setNotifMessage("Your payment has been confirmed and your NursifyGH study access is now activated. You can log in and start studying right away.")
+                                        }}
+                                        className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                    >
+                                        Payment &amp; Activation Ready
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={() => {
                                             setNotifCategory("Technical Issue")
                                             setNotifSubject("Technical Notice — We're on It")
                                             setNotifMessage("We experienced a brief technical issue and are resolving it promptly so your study access stays smooth.")
                                         }}
                                         className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[11px] font-bold text-amber-900 hover:bg-amber-100"
                                     >
-                                        Technical Issue Preset
+                                        Technical Issue Ready
                                     </button>
                                     <button
                                         type="button"
                                         onClick={() => {
-                                            setNotifCategory("Payment & Access")
-                                            setNotifSubject("Payment & Subscription Update")
-                                            setNotifMessage("Your payment status and study pass access have been updated on NursifyGH.")
+                                            setNotifCategory("Access Reminder")
+                                            setNotifSubject("Study Pass & Subscription Reminder")
+                                            setNotifMessage("Reminder: Please complete or renew your NursifyGH pass to keep uninterrupted access to all study tools.")
                                         }}
-                                        className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-[11px] font-bold text-brand-800 hover:bg-brand-100"
+                                        className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-bold text-sky-900 hover:bg-sky-100"
                                     >
-                                        Payment Update Preset
+                                        Renewal Reminder Ready
                                     </button>
                                 </div>
                             </div>
