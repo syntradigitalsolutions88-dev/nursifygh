@@ -717,11 +717,44 @@ export default function AdminCommissionsPage() {
                                     <>
                                         <div className="space-y-2">
                                             <div className="flex flex-col gap-1">
+                                                <div className="mt-3 rounded-2xl border border-brand-200 bg-white p-3.5 sm:p-4 space-y-3">
+                            {(() => {
+                                const allUsers = data?.users || []
+                                const filteredUsers = allUsers.filter((u) => {
+                                    if (manualGroupFilter === "paid") return Boolean(u.has_paid || u.is_subscribed)
+                                    if (manualGroupFilter === "trial") return !u.has_paid && !u.is_subscribed
+                                    return true
+                                })
+                                const selectedUser =
+                                    filteredUsers.find((u) => String(u.id) === manualSelectedUserId) ||
+                                    allUsers.find((u) => String(u.id) === manualSelectedUserId) ||
+                                    filteredUsers[0] ||
+                                    null
+
+                                const waDigits = normalizeGhPhoneForWa(selectedUser?.phone_number)
+                                const smsDigits = (selectedUser?.phone_number || "").replace(/[^\d+]/g, "")
+                                const recipientEmail = (selectedUser?.email || "").trim()
+                                const waHref = waDigits
+                                    ? `https://wa.me/${waDigits}?text=${encodeURIComponent(manualMessage)}`
+                                    : `https://wa.me/?text=${encodeURIComponent(manualMessage)}`
+                                const mailHref = `mailto:${encodeURIComponent(recipientEmail)}?subject=${encodeURIComponent(manualSubject)}&body=${encodeURIComponent(manualMessage)}`
+                                const smsHref = smsDigits
+                                    ? `sms:${smsDigits}?body=${encodeURIComponent(manualMessage)}`
+                                    : `sms:?body=${encodeURIComponent(manualMessage)}`
+                                const groupEmails = filteredUsers
+                                    .map((u) => (u.email || "").trim())
+                                    .filter(Boolean)
+                                    .join(", ")
+
+                                return (
+                                    <>
+                                        <div className="space-y-2">
+                                            <div className="flex flex-col gap-1">
                                                 <div className="text-[11px] font-bold uppercase tracking-wider text-brand-700">
                                                     Free Manual Outreach Launcher (WhatsApp · Email · SMS)
                                                 </div>
                                                 <p className="text-xs text-on-surface-muted leading-snug">
-                                                    Sending from <strong className="text-on-surface">{OUTREACH_SENDER_PHONE}</strong> · Subscription payments: <strong className="text-brand-800">{SUBSCRIBE_PAYMENT_PHONE}</strong>.
+                                                    Outreach number: <strong className="text-on-surface">{OUTREACH_SENDER_PHONE}</strong> · Subscription number: <strong className="text-brand-800">{SUBSCRIBE_PAYMENT_PHONE}</strong>.
                                                 </p>
                                             </div>
                                             <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-1.5">
