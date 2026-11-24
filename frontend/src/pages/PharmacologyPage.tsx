@@ -93,6 +93,78 @@ const DRUG_MONOGRAPHS: DrugMonograph[] = [
         nursingCare: "Monitor renal function (creatinine/urine output), signs of hearing/balance changes, and exact infusion/injection timing.",
         patientTeaching: "Report ringing in the ears, dizziness/loss of balance, or reduced urine output right away.",
     },
+    {
+        id: "ceftriaxone",
+        name: "Ceftriaxone",
+        drugClass: "Third-Generation Cephalosporin Antibacterial",
+        routes: "IV / IM",
+        mechanism: "Binds penicillin-binding proteins to inhibit bacterial cell wall synthesis, offering broad Gram-positive and Gram-negative coverage including CNS penetration.",
+        indications: "Severe pneumonia, sepsis, meningitis, complicated typhoid/enteric or urinary infections per clinical protocol.",
+        contraindications: "Severe immediate hypersensitivity to ceftriaxone or cephalosporins; avoid calcium-containing IV solutions concurrently in neonates.",
+        adverseEffects: "Injection-site pain/phlebitis, diarrhoea, rash, biliary sludging/pseudolithiasis with prolonged high doses.",
+        nursingCare: "Verify allergies prior to administration, check line compatibility (never mix with calcium-containing IV fluids), and monitor infusion site and bowel habits.",
+        patientTeaching: "Report rash, itching, wheezing, or persistent/watery diarrhoea promptly and complete prescribed therapy.",
+    },
+    {
+        id: "hydralazine",
+        name: "Hydralazine",
+        drugClass: "Direct Arterial Vasodilator (Antihypertensive)",
+        routes: "IV / IM / PO",
+        mechanism: "Relaxes vascular smooth muscle directly—predominantly arterioles—lowering peripheral vascular resistance and blood pressure.",
+        indications: "Severe pregnancy-induced hypertension / severe pre-eclampsia when rapid blood pressure control is ordered alongside seizure prophylaxis.",
+        contraindications: "Coronary artery disease, mitral valvular rheumatic heart disease, dissecting aortic aneurysm, hypersensitivity.",
+        adverseEffects: "Reflex tachycardia, headache, flushing, palpitations, hypotension (especially if BP drops too abruptly).",
+        nursingCare: "Monitor BP and pulse frequently during IV titration, keep client supine/safe to prevent orthostatic drops, and monitor foetal heart rate in pregnancy.",
+        patientTeaching: "Report severe headache, racing heart, chest discomfort, or dizziness when changing posture.",
+    },
+    {
+        id: "misoprostol",
+        name: "Misoprostol",
+        drugClass: "Prostaglandin E1 Analogue (Uterotonic)",
+        routes: "PO / Sublingual / Rectal",
+        mechanism: "Binds myometrial prostaglandin receptors to stimulate strong uterine contractions and cervical softening.",
+        indications: "Prevention and treatment of postpartum haemorrhage (especially where oxytocin is unavailable or insufficient) and obstetric protocols per guidance.",
+        contraindications: "Do not confuse dosing/routes across indications; avoid inappropriate uterotonic use when contraindicated in pregnancy/labour.",
+        adverseEffects: "Shivering/rigors, transient fever, abdominal cramping, diarrhoea, nausea.",
+        nursingCare: "Confirm exact indication, dose, and route; monitor uterine tone, bleeding, temperature, and vital signs; distinguish brief drug-induced fever from infection.",
+        patientTeaching: "Expect mild cramping or temporary shivering/warmth if explained by care team, and report heavy bleeding or persistent severe pain.",
+    },
+    {
+        id: "salbutamol",
+        name: "Salbutamol (Albuterol)",
+        drugClass: "Short-Acting Beta-2 Adrenergic Agonist (Bronchodilator)",
+        routes: "Inhaled (MDI / Nebuliser) / PO / IV",
+        mechanism: "Stimulates beta-2 receptors in bronchial smooth muscle to increase cyclic AMP, causing bronchodilation and reduced airway resistance.",
+        indications: "Acute bronchospasm, asthma exacerbations, reversible airway obstruction.",
+        contraindications: "Hypersensitivity to salbutamol; caution in tachyarrhythmias, hyperthyroidism, or severe cardiovascular disease.",
+        adverseEffects: "Fine skeletal muscle tremor, tachycardia, palpitations, nervousness, mild hypokalaemia with high/frequent doses.",
+        nursingCare: "Assess respiratory rate, work of breathing, breath sounds, and SpO2 before and after treatment; teach proper spacer/inhaler technique.",
+        patientTeaching: "Use spacer with metered-dose inhaler for better lung delivery, rinse mouth if using concurrent inhaled corticosteroids, and seek urgent help if relief fails.",
+    },
+    {
+        id: "diazepam",
+        name: "Diazepam",
+        drugClass: "Benzodiazepine (Anticonvulsant / Anxiolytic / Sedative)",
+        routes: "IV / Rectal / PO",
+        mechanism: "Enhances gamma-aminobutyric acid (GABA-A) receptor activity in the CNS, increasing chloride influx and dampening neuronal excitability.",
+        indications: "Acute seizure termination, severe agitation/status management per protocol, procedural anxiety/sedation.",
+        contraindications: "Severe respiratory depression, acute narrow-angle glaucoma, myasthenia gravis, known hypersensitivity.",
+        adverseEffects: "Sedation/drowsiness, respiratory depression, hypotension, ataxia, dizziness (especially when combined with other CNS depressants).",
+        nursingCare: "Keep suction, oxygen, and airway equipment ready; monitor respiratory rate, SpO2, level of consciousness, and fall safety after administration.",
+        patientTeaching: "Avoid driving, operating machinery, or alcohol/unprescribed sedatives while sedated or drowsy.",
+    },
+    {
+        id: "ors-electrolytes",
+        name: "Oral Rehydration Salts (ORS)",
+        drugClass: "Electrolyte & Fluid Replacement Therapy",
+        routes: "PO",
+        mechanism: "Uses sodium-glucose coupled transport in the small intestine to promote absorption of sodium and water despite secretory or osmotic diarrhoea.",
+        indications: "Prevention and treatment of dehydration from acute watery diarrhoea in children and adults.",
+        contraindications: "Severe intractable vomiting preventing oral retention, paralytic ileus, intestinal obstruction, or severe shock requiring immediate IV resuscitation first.",
+        adverseEffects: "Mild vomiting if given too fast in large gulps; periorbital puffiness/hypernatraemia if over-concentrated or given without water access.",
+        nursingCare: "Mix powder in exact recommended volume of safe water, give small frequent sips/spoonfuls, reassess hydration status, and continue age-appropriate feeding.",
+        patientTeaching: "Prepare fresh solution daily, discard unused mixed solution after 24 hours, and return immediately for persistent vomiting, lethargy, or blood in stool.",
+    },
 ]
 
 type CalcMode =
@@ -223,6 +295,78 @@ const DRILL_PROBLEMS: DrillProblem[] = [
         unit: "mg/mL",
         solution: "80 mg ÷ 2 mL = 40 mg/mL.",
     },
+    {
+        id: "d13",
+        category: "IV Drip Rate",
+        prompt: "Infuse 240 mL over 2 hours using a 60 gtt/mL micro-drip set. What is the rate in gtt/min?",
+        answer: 120,
+        tolerance: 0.5,
+        unit: "gtt/min",
+        solution: "(240 mL × 60 gtt/mL) ÷ (2 × 60 = 120 min) = 14,400 ÷ 120 = 120 gtt/min.",
+    },
+    {
+        id: "d14",
+        category: "Paediatric mg/kg Dose",
+        prompt: "A 9 kg infant is ordered a single dose of 20 mg/kg. How many mg is the dose?",
+        answer: 180,
+        tolerance: 0.5,
+        unit: "mg",
+        solution: "9 kg × 20 mg/kg = 180 mg.",
+    },
+    {
+        id: "d15",
+        category: "Oral Liquid Dose",
+        prompt: "Ordered: 250 mg oral liquid. Stock bottle reads 125 mg per 5 mL. How many mL do you give?",
+        answer: 10,
+        tolerance: 0.1,
+        unit: "mL",
+        solution: "(250 mg ÷ 125 mg) × 5 mL = 2 × 5 = 10 mL.",
+    },
+    {
+        id: "d16",
+        category: "Reconstitution",
+        prompt: "A 1,000 mg vial is reconstituted to 10 mL. You need 750 mg. How many mL do you draw up?",
+        answer: 7.5,
+        tolerance: 0.1,
+        unit: "mL",
+        solution: "(750 mg ÷ 1,000 mg) × 10 mL = 0.75 × 10 = 7.5 mL.",
+    },
+    {
+        id: "d17",
+        category: "Oral / Solid Dose",
+        prompt: "Ordered: 0.5 g of a medication PO. Available tablets are 250 mg each. How many tablets do you administer?",
+        answer: 2,
+        tolerance: 0.01,
+        unit: "tablets",
+        solution: "Convert 0.5 g = 500 mg; 500 mg ÷ 250 mg = 2 tablets.",
+    },
+    {
+        id: "d18",
+        category: "IV Infusion Rate",
+        prompt: "Infuse 1,500 mL over 12 hours. What is the rate in mL/hr?",
+        answer: 125,
+        tolerance: 0.5,
+        unit: "mL/hr",
+        solution: "1,500 mL ÷ 12 hr = 125 mL/hr.",
+    },
+    {
+        id: "d19",
+        category: "Concentration",
+        prompt: "A solution contains 500 mg in 250 mL. What is the concentration in mg/mL?",
+        answer: 2,
+        tolerance: 0.1,
+        unit: "mg/mL",
+        solution: "500 mg ÷ 250 mL = 2 mg/mL.",
+    },
+    {
+        id: "d20",
+        category: "IV Drip Rate",
+        prompt: "Infuse 300 mL over 3 hours with a 20 gtt/mL giving set. What is the rate in gtt/min (nearest whole drop)?",
+        answer: 33,
+        tolerance: 0.5,
+        unit: "gtt/min",
+        solution: "(300 mL × 20 gtt/mL) ÷ (3 × 60 = 180 min) = 6,000 ÷ 180 = 33.33 → 33 gtt/min.",
+    },
 ]
 
 export default function PharmacologyPage() {
@@ -241,6 +385,7 @@ export default function PharmacologyPage() {
     const [dosePerKg, setDosePerKg] = useState("15")
 
     // Practice drill state
+    const [drillCategory, setDrillCategory] = useState("All")
     const [drillIdx, setDrillIdx] = useState(0)
     const [userAnswer, setUserAnswer] = useState("")
     const [solvedIds, setSolvedIds] = useState<string[]>([])
@@ -355,7 +500,16 @@ export default function PharmacologyPage() {
         }
     }, [calcMode, desiredDose, stockDose, stockVolume, totalVolumeMl, durationHours, dropFactor, weightKg, dosePerKg])
 
-    const activeDrill = DRILL_PROBLEMS[drillIdx]
+    const drillCategories = useMemo(
+        () => ["All", ...Array.from(new Set(DRILL_PROBLEMS.map((d) => d.category)))],
+        []
+    )
+    const visibleDrills = useMemo(
+        () => (drillCategory === "All" ? DRILL_PROBLEMS : DRILL_PROBLEMS.filter((d) => d.category === drillCategory)),
+        [drillCategory]
+    )
+    const safeDrillIdx = visibleDrills.length > 0 ? drillIdx % visibleDrills.length : 0
+    const activeDrill = visibleDrills[safeDrillIdx] || DRILL_PROBLEMS[0]
 
     function handleCheckDrill() {
         const numeric = parseFloat(userAnswer)
@@ -433,7 +587,17 @@ export default function PharmacologyPage() {
                                             <h2 className="text-h4 text-on-surface">{drug.name}</h2>
                                             <p className="text-xs text-on-surface-muted">Routes: {drug.routes}</p>
                                         </div>
-                                        <Badge variant="neutral">{drug.drugClass}</Badge>
+                                        <div className="flex flex-wrap items-center gap-2">
+                                            <Badge variant="neutral">{drug.drugClass}</Badge>
+                                            <Link
+                                                to={buildAiTutorUrl(
+                                                    `Give me a clinical nursing summary, priority safety checks, and exam tips for ${drug.name} (${drug.drugClass}).`
+                                                )}
+                                                className="text-xs font-semibold text-brand-700 underline"
+                                            >
+                                                Ask AI Tutor →
+                                            </Link>
+                                        </div>
                                     </div>
                                     <p className="text-xs sm:text-sm text-on-surface-muted">
                                         <span className="font-semibold text-on-surface">Mechanism: </span>
@@ -608,9 +772,29 @@ export default function PharmacologyPage() {
 
                 {tab === "drill" && (
                     <div className="rounded-2xl border border-border bg-white p-5 sm:p-6 space-y-4">
+                        <div className="flex flex-wrap gap-1.5">
+                            {drillCategories.map((cat) => (
+                                <button
+                                    key={cat}
+                                    type="button"
+                                    onClick={() => {
+                                        setDrillCategory(cat)
+                                        setDrillIdx(0)
+                                        setUserAnswer("")
+                                        setCheckedDrill(null)
+                                    }}
+                                    className={`rounded-full px-3 py-1 text-xs font-semibold transition ${drillCategory === cat
+                                            ? "bg-brand-700 text-white"
+                                            : "border border-border bg-gray-50 text-on-surface-muted hover:text-on-surface"
+                                        }`}
+                                >
+                                    {cat}
+                                </button>
+                            ))}
+                        </div>
                         <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-on-surface-muted">
                             <span className="font-semibold text-on-surface">
-                                Question {drillIdx + 1} of {DRILL_PROBLEMS.length} • {activeDrill.category}
+                                Question {safeDrillIdx + 1} of {visibleDrills.length} • {activeDrill.category}
                             </span>
                             <span>
                                 Mastered: {solvedIds.length}/{DRILL_PROBLEMS.length} • Unit: {activeDrill.unit}
@@ -645,7 +829,7 @@ export default function PharmacologyPage() {
                             <Button
                                 variant="secondary"
                                 onClick={() => {
-                                    setDrillIdx((i) => (i - 1 + DRILL_PROBLEMS.length) % DRILL_PROBLEMS.length)
+                                    setDrillIdx((i) => (i - 1 + visibleDrills.length) % visibleDrills.length)
                                     setUserAnswer("")
                                     setCheckedDrill(null)
                                 }}
@@ -655,7 +839,7 @@ export default function PharmacologyPage() {
                             <Button
                                 variant="secondary"
                                 onClick={() => {
-                                    setDrillIdx((i) => (i + 1) % DRILL_PROBLEMS.length)
+                                    setDrillIdx((i) => (i + 1) % visibleDrills.length)
                                     setUserAnswer("")
                                     setCheckedDrill(null)
                                 }}

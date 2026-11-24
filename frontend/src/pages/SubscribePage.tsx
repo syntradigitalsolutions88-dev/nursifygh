@@ -14,7 +14,7 @@ import {
 
 const INCLUDED_FEATURES = [
     {
-        title: "2,113+ NMC Licensure Questions",
+        title: "3,000+ Practice & Licensure Questions",
         detail: "Practice across RGN, RM, RPN, and CHN with clear rationales for every option.",
     },
     {
@@ -290,10 +290,19 @@ export default function SubscribePage() {
                             I&apos;ve sent GHS 30 — Submit Reference →
                         </Button>
 
-                        <div className="flex items-center justify-center gap-4 pt-1 text-xs text-on-surface-muted">
-                            <span className="flex items-center gap-1">100% Secure</span>
-                            <span className="flex items-center gap-1">24hr Activation</span>
-                            <span className="flex items-center gap-1">Student Support</span>
+                        <div className="flex flex-wrap items-center justify-center gap-4 pt-1 text-xs text-on-surface-muted">
+                            <span>100% Secure</span>
+                            <span>•</span>
+                            <span>Fast MoMo Activation</span>
+                            <span>•</span>
+                            <a
+                                href="https://wa.me/233556025785"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="font-semibold text-brand-700 underline"
+                            >
+                                WhatsApp Business Support (0556025785)
+                            </a>
                         </div>
                     </div>
                 )}

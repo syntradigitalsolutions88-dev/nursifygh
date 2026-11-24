@@ -44,6 +44,82 @@ interface RevisionStats {
 
 type FilterMode = "due" | "all" | "weak" | "bookmarked"
 
+const STARTER_FLASHCARDS: FlashcardItem[] = [
+    {
+        id: "starter-1",
+        course: null,
+        course_code: "OBN-311",
+        course_title: "Obstetric & Gynaecological Nursing",
+        topic: "Severe Pre-Eclampsia & MgSO4",
+        front: "What three bedside checks are essential before and during Magnesium Sulfate therapy, and what is the antidote for toxicity?",
+        back: "Check respiratory rate (typically >= 12-16/min), deep tendon (patellar) reflexes, and hourly urine output (>= 30 mL/hr). Antidote: 10% Calcium Gluconate ready at bedside; stop infusion immediately if toxicity signs appear.",
+        source_type: "starter",
+        is_bookmarked: false,
+        is_due: true,
+        ease_factor: 2.5,
+        interval_days: 1,
+        repetitions: 0,
+        times_reviewed: 0,
+        times_correct: 0,
+        recall_accuracy: 0,
+    },
+    {
+        id: "starter-2",
+        course: null,
+        course_code: "OBN-311",
+        course_title: "Obstetric & Gynaecological Nursing",
+        topic: "Postpartum Haemorrhage (PPH)",
+        front: "What is the most common cause of primary PPH, and what are the first priority nursing actions?",
+        back: "Uterine atony is the leading cause. Call for help promptly, assess ABCDE and uterine tone (firm vs. boggy), perform gentle fundal massage, check bladder distension, and support uterotonic and IV resuscitation.",
+        source_type: "starter",
+        is_bookmarked: false,
+        is_due: true,
+        ease_factor: 2.5,
+        interval_days: 1,
+        repetitions: 0,
+        times_reviewed: 0,
+        times_correct: 0,
+        recall_accuracy: 0,
+    },
+    {
+        id: "starter-3",
+        course: null,
+        course_code: "NPN-311",
+        course_title: "Paediatric Nursing",
+        topic: "Paediatric Danger Signs & Malaria",
+        front: "Which clinical signs in a child with suspected malaria require urgent escalation and parenteral antimalarial care?",
+        back: "Lethargy or altered consciousness, inability to drink/breastfeed or persistent vomiting, convulsions, respiratory distress, or severe anaemia/hypoglycaemia.",
+        source_type: "starter",
+        is_bookmarked: false,
+        is_due: true,
+        ease_factor: 2.5,
+        interval_days: 1,
+        repetitions: 0,
+        times_reviewed: 0,
+        times_correct: 0,
+        recall_accuracy: 0,
+    },
+    {
+        id: "starter-4",
+        course: null,
+        course_code: "SSN-311",
+        course_title: "Medical-Surgical Nursing",
+        topic: "Post-Operative Respiratory & Pain Care",
+        front: "Why should a post-laparotomy patient receive prescribed analgesia and splint the incision before deep breathing and coughing?",
+        back: "Pain relief and gentle incision splinting reduce splinting/shallow breaths, improving lung expansion, clearing secretions, and lowering atelectasis and pneumonia risk.",
+        source_type: "starter",
+        is_bookmarked: false,
+        is_due: true,
+        ease_factor: 2.5,
+        interval_days: 1,
+        repetitions: 0,
+        times_reviewed: 0,
+        times_correct: 0,
+        recall_accuracy: 0,
+    },
+]
+
+
 export default function RevisionPage() {
     const [cards, setCards] = useState<FlashcardItem[]>([])
     const [courses, setCourses] = useState<CourseOption[]>([])
@@ -412,6 +488,16 @@ export default function RevisionPage() {
                             Switch to &ldquo;All Cards&rdquo;, pull cards from your missed quiz questions, or create your own flashcard.
                         </p>
                         <div className="flex flex-wrap justify-center gap-2 pt-2">
+                            <Button
+                                variant="secondary"
+                                onClick={() => {
+                                    setCards(STARTER_FLASHCARDS)
+                                    setActiveIndex(0)
+                                    setIsFlipped(false)
+                                }}
+                            >
+                                Load Starter Deck (4)
+                            </Button>
                             <Button variant="secondary" onClick={() => setFilter("all")}>
                                 View All Cards
                             </Button>
@@ -449,7 +535,7 @@ export default function RevisionPage() {
                                 Question / Prompt
                             </p>
                             <p className="text-base sm:text-lg font-medium text-on-surface leading-relaxed">
-                                {currentCard.front} <Link to={buildAiTutorUrl(`Explain this nursing revision flashcard clearly with exam key points and high-yield recall tips: ${currentCard.front}`)} className="ml-2 text-xs font-semibold text-brand-700 underline">Ask AI Tutor to explain this card →</Link>
+                                {currentCard.front} <Link to={buildAiTutorUrl(`Topic: ${currentCard.topic} | Card Prompt: ${currentCard.front} | Reference Answer: ${currentCard.back} | Explain clearly with clinical priorities and exam tips.`)} className="ml-2 text-xs font-semibold text-brand-700 underline">Ask AI Tutor to explain this card →</Link>
                             </p>
 
                             {!isFlipped && (

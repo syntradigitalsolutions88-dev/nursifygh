@@ -1,4 +1,6 @@
 import { useMemo, useState } from "react"
+import { Link } from "react-router-dom"
+import { buildAiTutorUrl } from "../utils/tutorPrompt"
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import api from "../api/client"
 import AppShell from "../components/shell/AppShell"
@@ -80,7 +82,19 @@ export default function ClinicalsPage() {
                 ...payload.data,
             })
         },
-        onSuccess: () => {
+        onSuccess: (_data, vars) => {
+            try {
+                localStorage.setItem(
+                    "nursify_last_clinical_site_v1",
+                    JSON.stringify({
+                        hospital: vars.data.hospital,
+                        ward: vars.data.ward,
+                        supervisor_name: vars.data.supervisor_name,
+                    })
+                )
+            } catch {
+                // ignore
+            }
             invalidateAll()
             setAddSkill(null)
             setForm(EMPTY_FORM)
@@ -141,9 +155,19 @@ export default function ClinicalsPage() {
     }
 
     function openAddModal(skill: ClinicalSkill) {
+        let savedSite = { hospital: "", ward: "", supervisor_name: "" }
+        try {
+            const raw = localStorage.getItem("nursify_last_clinical_site_v1")
+            if (raw) savedSite = { ...savedSite, ...JSON.parse(raw) }
+        } catch {
+            // ignore
+        }
         setForm({
             ...EMPTY_FORM,
             date_performed: new Date().toISOString().slice(0, 10),
+            hospital: savedSite.hospital,
+            ward: savedSite.ward,
+            supervisor_name: savedSite.supervisor_name,
         })
         setAddSkill(skill)
     }
@@ -639,6 +663,14 @@ function SkillRow({
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
+                <Link
+                    to={buildAiTutorUrl(
+                        `Give me key clinical steps, safety checks, infection prevention, and pitfalls for performing this nursing procedure: ${skill.procedure_name} (${skill.category}).`
+                    )}
+                    className="hidden sm:inline text-xs font-semibold text-brand-700 hover:underline"
+                >
+                    AI Guide
+                </Link>
                 <button
                     type="button"
                     onClick={onHistory}

@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
+import { Link } from "react-router-dom"
+import { buildAiTutorUrl } from "../utils/tutorPrompt"
 import AppShell from "../components/shell/AppShell"
 import Alert from "../components/ui/Alert"
 import Badge from "../components/ui/Badge"
@@ -145,22 +147,38 @@ export default function AnalyticsPage() {
                     {loading ? (
                         <p className="text-sm text-on-surface-muted">Loading weak areas...</p>
                     ) : weakAreas.length === 0 ? (
-                        <p className="text-sm text-on-surface-muted">
-                            No weak topics flagged yet. Complete quizzes or clinical cases to generate targeted study priorities.
-                        </p>
+                        <div className="flex flex-wrap items-center justify-between gap-3">
+                            <p className="text-sm text-on-surface-muted">
+                                No weak topics flagged yet. Complete quizzes or clinical cases to generate targeted study priorities.
+                            </p>
+                            <Link to="/cbt-simulator" className="text-xs font-bold text-brand-700 underline">
+                                Start CBT Practice →
+                            </Link>
+                        </div>
                     ) : (
                         <div className="space-y-2.5">
                             {weakAreas.map((area, idx) => {
                                 const acc = typeof area.accuracy === "number" ? Math.max(0, Math.min(100, area.accuracy)) : 0
+                                const topicName = area.topic || area.course_title || area.course_code || `Topic ${idx + 1}`
                                 return (
                                     <div key={idx} className="rounded-xl border border-border p-3.5 space-y-1.5">
                                         <div className="flex flex-wrap items-center justify-between gap-2">
                                             <span className="text-sm font-semibold text-on-surface">
-                                                {area.topic || area.course_title || area.course_code || `Topic ${idx + 1}`}
+                                                {topicName}
                                             </span>
-                                            <span className="text-xs font-semibold text-on-surface-muted">
-                                                {acc}% accuracy
-                                            </span>
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-xs font-semibold text-on-surface-muted">
+                                                    {acc}% accuracy
+                                                </span>
+                                                <Link
+                                                    to={buildAiTutorUrl(
+                                                        `Help me improve in this weak clinical/exam area (${acc}% accuracy): ${topicName}. Give key concepts, priority actions, and 3 exam practice questions.`
+                                                    )}
+                                                    className="text-xs font-bold text-brand-700 underline"
+                                                >
+                                                    Drill with AI →
+                                                </Link>
+                                            </div>
                                         </div>
                                         <div className="h-2 w-full rounded-full bg-gray-100 overflow-hidden">
                                             <div
@@ -199,7 +217,15 @@ export default function AnalyticsPage() {
                                                 {item.course_title || item.course_code || "Assessment Attempt"}
                                             </p>
                                             {item.created_at && (
-                                                <p className="text-xs text-on-surface-muted">{item.created_at}</p>
+                                                <p className="text-xs text-on-surface-muted">
+                                                    {Number.isNaN(new Date(item.created_at).getTime())
+                                                        ? item.created_at
+                                                        : new Date(item.created_at).toLocaleDateString("en-GB", {
+                                                              day: "numeric",
+                                                              month: "short",
+                                                              year: "numeric",
+                                                          })}
+                                                </p>
                                             )}
                                         </div>
                                         <Badge variant={pct >= 70 ? "success" : "warning"}>{pct}%</Badge>

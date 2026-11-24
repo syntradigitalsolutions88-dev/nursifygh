@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import { buildAiTutorUrl } from "../utils/tutorPrompt"
 import { useEffect, useMemo, useState } from "react"
 import AppShell from "../components/shell/AppShell"
 import Alert from "../components/ui/Alert"
@@ -19,6 +21,36 @@ const STORAGE_KEY_BLOCKS = "nursify_study_planner_blocks_v1"
 const STORAGE_KEY_GOAL = "nursify_study_planner_goal_v1"
 
 const TEMPLATES: Record<string, Array<Omit<StudyBlock, "id" | "completed">>> = {
+    rgn300: [
+        {
+            title: "Surgical Nursing & Pre/Post-Op Priority Drill (SSN-311)",
+            courseOrTopic: "SSN-311 • Semester 1",
+            daySlot: "Morning (04:00 – 05:30)",
+            durationMinutes: 90,
+            track: "RGN",
+        },
+        {
+            title: "Obstetric Emergencies: Pre-Eclampsia & PPH (OBN-311)",
+            courseOrTopic: "OBN-311 • Semester 1",
+            daySlot: "Evening (20:00 – 21:00)",
+            durationMinutes: 60,
+            track: "RGN",
+        },
+        {
+            title: "Gerontological & Public Health Nursing Review (PAD-322 / GHN-322)",
+            courseOrTopic: "Semester 2 Core",
+            daySlot: "Evening (21:00 – 22:00)",
+            durationMinutes: 60,
+            track: "RGN",
+        },
+        {
+            title: "Timed 60-Question NMC CBT Mock Simulation",
+            courseOrTopic: "CBT Examination Simulator",
+            daySlot: "Weekend Morning (08:00 – 09:00)",
+            durationMinutes: 60,
+            track: "RGN",
+        },
+    ],
     sprint: [
         {
             title: "High-Yield Past Questions & Rationale Breakdown",
@@ -148,16 +180,21 @@ export default function StudyPlannerPage() {
         return blocks
     }, [blocks, filter])
 
-    function applyTemplate(key: "sprint" | "ward") {
+    function applyTemplate(key: "rgn300" | "sprint" | "ward") {
         const preset = TEMPLATES[key].map((b, idx) => ({
             ...b,
             id: `${key}-${Date.now()}-${idx}`,
             completed: false,
         }))
         setBlocks(preset)
+        const labels = {
+            rgn300: "Applied Level 300 RGN Semester study blocks.",
+            sprint: "Applied Exam Sprint study blocks.",
+            ward: "Applied Ward/CHPS Shift study blocks.",
+        }
         setNotice({
             variant: "info",
-            text: key === "sprint" ? "Applied Exam Sprint study blocks." : "Applied Ward/CHPS Shift study blocks.",
+            text: labels[key],
         })
     }
 
@@ -202,11 +239,14 @@ export default function StudyPlannerPage() {
                         </p>
                     </div>
                     <div className="flex flex-wrap gap-2">
+                        <Button variant="secondary" onClick={() => applyTemplate("rgn300")}>
+                            Level 300 RGN Plan
+                        </Button>
                         <Button variant="secondary" onClick={() => applyTemplate("sprint")}>
-                            Exam Sprint Template
+                            Exam Sprint
                         </Button>
                         <Button variant="secondary" onClick={() => applyTemplate("ward")}>
-                            Ward Shift Template
+                            Ward Shift
                         </Button>
                     </div>
                 </div>
@@ -360,7 +400,15 @@ export default function StudyPlannerPage() {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-2 self-end sm:self-center">
+                                    <div className="flex flex-wrap items-center gap-2 self-end sm:self-center">
+                                        <Link
+                                            to={buildAiTutorUrl(
+                                                `Create a focused high-yield study guide and 3 quick self-test questions for my study session: ${b.title} (${b.courseOrTopic}, ${b.track}).`
+                                            )}
+                                            className="text-xs font-semibold text-brand-700 underline"
+                                        >
+                                            Ask AI Tutor →
+                                        </Link>
                                         <Badge variant="neutral">{b.track}</Badge>
                                         <button
                                             type="button"
