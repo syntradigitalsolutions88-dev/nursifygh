@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
+import { buildAiTutorUrl } from "../utils/tutorPrompt"
 import { useEffect, useState } from "react"
 
 import { getQuizHistory } from "../api/courses"
@@ -96,6 +97,14 @@ export default function DashboardPage() {
                             >
                                 Edit Profile
                             </Link>
+                            {Boolean((user as { is_staff?: boolean }).is_staff) && (
+                                <Link
+                                    to="/admin-commissions"
+                                    className="inline-flex items-center gap-2 rounded-lg bg-amber-400/20 hover:bg-amber-400/30 border border-amber-300/40 px-4 py-2 text-sm font-bold text-amber-100 transition-colors"
+                                >
+                                    Admin &amp; Outreach →
+                                </Link>
+                            )}
                         </div>
                     </div>
                     <div className="relative z-10 flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-xl px-5 py-4 border border-white/20 shadow-inner">
@@ -218,9 +227,9 @@ export default function DashboardPage() {
                                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             </span>
                         </div>
-                        <p className="text-xs text-brand-800 mt-1 mb-3">Take a 60-minute, 50-question mixed mock exam.</p>
-                        <Link to="/mock-exam">
-                            <Button fullWidth size="sm">Start Mock Exam →</Button>
+                        <p className="text-xs text-brand-800 mt-1 mb-3">60 domain-balanced clinical judgment questions with timed simulation.</p>
+                        <Link to="/cbt-simulator">
+                            <Button fullWidth size="sm">Open CBT Simulator →</Button>
                         </Link>
                     </div>
 
@@ -266,22 +275,47 @@ export default function DashboardPage() {
                             </div>
                         )}
 
-                        <div className="grid sm:grid-cols-2 gap-4">
+                        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                             <Link to="/courses" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">All Courses &amp; Quizzes</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Practice past questions with rationales</p>
+                                <p className="text-xs text-on-surface-muted mt-1">Semester past questions &amp; rationales</p>
                             </Link>
                             <Link to="/cases" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Clinical Case Studies</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Patient scenarios, vitals &amp; AI Tutor help</p>
+                                <p className="text-xs text-on-surface-muted mt-1">Patient scenarios, vitals &amp; AI Tutor</p>
                             </Link>
-                            <Link to="/careplans" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
-                                <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Care Plans</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Build NANDA + SMART goals</p>
+                            <Link to="/pharmacology" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
+                                <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Pharmacology &amp; Dosage</h3>
+                                <p className="text-xs text-on-surface-muted mt-1">Drug monographs, calculator &amp; drills</p>
                             </Link>
                             <Link to="/revision" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Flashcards &amp; Revision</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Quick active-recall study decks</p>
+                                <p className="text-xs text-on-surface-muted mt-1">Spaced-repetition active recall</p>
+                            </Link>
+                            <Link to="/clinicals" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
+                                <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Clinical Logbook</h3>
+                                <p className="text-xs text-on-surface-muted mt-1">Track procedures &amp; export PDF</p>
+                            </Link>
+                            <Link to="/study-planner" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
+                                <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Study Planner &amp; Stats</h3>
+                                <p className="text-xs text-on-surface-muted mt-1">Exam countdown &amp; study blocks</p>
+                            </Link>
+                        </div>
+
+                        <div className="rounded-xl border border-brand-200 bg-brand-50/50 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <div>
+                                <p className="text-xs font-bold uppercase tracking-wider text-brand-700">Daily Clinical Pearl</p>
+                                <p className="text-sm font-medium text-on-surface mt-0.5">
+                                    In severe pre-eclampsia on Magnesium Sulfate, always check respiratory rate, patellar reflexes, and hourly urine output—and keep 10% calcium gluconate ready.
+                                </p>
+                            </div>
+                            <Link
+                                to={buildAiTutorUrl(
+                                    "Quiz me with 3 clinical-judgment questions on severe pre-eclampsia, Magnesium Sulfate monitoring, and postpartum haemorrhage priorities."
+                                )}
+                                className="shrink-0 text-xs font-bold text-brand-700 underline"
+                            >
+                                Drill with AI Tutor →
                             </Link>
                         </div>
                     </div>

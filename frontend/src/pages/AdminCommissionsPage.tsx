@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { useState, type FormEvent } from "react"
+import { useEffect, useState, type FormEvent } from "react"
 import api from "../api/client"
 import AppShell from "../components/shell/AppShell"
 import { useAuth } from "../contexts/AuthContext"
@@ -169,7 +169,23 @@ export default function AdminCommissionsPage() {
         "Hello! Your payment on NursifyGH has been confirmed and your study account is now active. You can log in and start studying right away."
     )
     const [manualCopiedNote, setManualCopiedNote] = useState<string | null>(null)
-    const [sentUserIds, setSentUserIds] = useState<string[]>([])
+    const [sentUserIds, setSentUserIds] = useState<string[]>(() => {
+        try {
+            const raw = localStorage.getItem("nursify_admin_sent_outreach_v1")
+            const parsed = raw ? JSON.parse(raw) : []
+            return Array.isArray(parsed) ? parsed.map(String) : []
+        } catch {
+            return []
+        }
+    })
+
+    useEffect(() => {
+        try {
+            localStorage.setItem("nursify_admin_sent_outreach_v1", JSON.stringify(sentUserIds))
+        } catch {
+            // ignore
+        }
+    }, [sentUserIds])
     const [manualSectionTab, setManualSectionTab] = useState<"ai" | "outreach">("outreach")
 
     const authUser = user as (typeof user & { id?: number; is_staff?: boolean; is_superuser?: boolean }) | null
@@ -433,7 +449,7 @@ export default function AdminCommissionsPage() {
         return digits
     }
 
-    function applyManualPreset(presetKey: "welcome" | "push_sub" | "ambassadors" | "payment" | "technical" | "renewal") {
+    function applyManualPreset(presetKey: "welcome" | "push_sub" | "rgn_trial" | "ambassadors" | "payment" | "technical" | "renewal") {
         const usersList = data?.users || []
         const chosen = usersList.find((u) => String(u.id) === manualSelectedUserId) || usersList[0]
         const firstName = (chosen?.full_name || "Student").trim().split(/\s+/)[0] || "Student"
@@ -447,6 +463,11 @@ export default function AdminCommissionsPage() {
             setManualSubject(`Unlock Full NursifyGH Access & Install on Your Phone, ${firstName}`)
             setManualMessage(
                 `Hi ${firstName}! Don't leave your exam prep half-done—install NursifyGH on your phone for quick daily revision and subscribe right on the platform via ${SUBSCRIBE_PAYMENT_PHONE} so you study without limits. Questions? Reach ${OUTREACH_SENDER_PHONE}.`
+            )
+        } else if (presetKey === "rgn_trial") {
+            setManualSubject(`Level 300 RGN Trial — Test NursifyGH on Your Phone, ${firstName}`)
+            setManualMessage(
+                `Hi ${firstName}! Your NursifyGH Level 300 RGN trial is live—test the courses, 60-question CBT simulator, clinical case studies, pharmacology drills, flashcards, and AI Tutor right on your phone! For trial/app support message ${OUTREACH_SENDER_PHONE}; for subscription/payment help message ${SUBSCRIBE_PAYMENT_PHONE}.`
             )
         } else if (presetKey === "ambassadors") {
             setManualSubject(`NursifyGH Ambassador Boost — Drive Subscriptions & App Installs`)
@@ -805,6 +826,13 @@ export default function AdminCommissionsPage() {
                                                 </button>
                                                 <button
                                                     type="button"
+                                                    onClick={() => applyManualPreset("rgn_trial")}
+                                                    className="rounded-xl border border-teal-300 bg-teal-50 px-2.5 py-2 text-[11px] font-bold text-teal-900 hover:bg-teal-100 text-center"
+                                                >
+                                                    Level 300 RGN Trial
+                                                </button>
+                                                <button
+                                                    type="button"
                                                     onClick={() => applyManualPreset("ambassadors")}
                                                     className="rounded-xl border border-indigo-300 bg-indigo-50 px-2.5 py-2 text-[11px] font-bold text-indigo-900 hover:bg-indigo-100 text-center"
                                                 >
@@ -972,15 +1000,119 @@ export default function AdminCommissionsPage() {
 
                 {data && (
                     <>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                            <KpiCard label="Total Users" value={String(data.summary.total_users)} />
-                            <KpiCard label="Unpaid Commissions" value={`GHS ${parseFloat(data.summary.unpaid_ghs).toFixed(2)}`} />
-                            <KpiCard label="Paid Out" value={`GHS ${parseFloat(data.summary.paid_out_ghs).toFixed(2)}`} />
-                            <KpiCard
-                                label="Referrals / Paid Users"
-                                value={`${data.summary.total_referrals} / ${data.summary.paid_users}`}
-                            />
-                        </div>
+                        {(() => {
+                            const pendingCount = (data.payments || []).filter(
+                                (p) => p.status !== "SUCCESS" && p.status !== "FAILED"
+                            ).length
+                            const unpaidAmbsCount = (data.ambassadors || []).filter(
+                                (a) => parseFloat(a.unpaid_ghs || "0") > 0
+                            ).length
+                            const exportCsv = () => {
+                                const rows = filteredUsers.map((u) => [
+                                    u.id,
+                                    u.full_name || "",
+                                    u.email || "",
+                                    u.phone_number || "",
+                                    u.program || "",
+                                    u.level ?? "",
+                                    u.institution || "",
+                                    u.has_paid || u.is_subscribed ? "ACTIVE" : "FREE_TRIAL",
+                                    u.referral_code || "",
+                                    u.referred_by || "",
+                                    u.date_joined || "",
+                                ])
+                                const headers = [
+                                    "ID",
+                                    "Full Name",
+                                    "Email",
+                                    "Phone",
+                                    "Program",
+                                    "Level",
+                                    "Institution",
+                                    "Status",
+                                    "Referral Code",
+                                    "Referred By",
+                                    "Date Joined",
+                                ]
+                                const esc = (v: unknown) => `"${String(v ?? "").replace(/"/g, '""')}"`
+                                const csv = [headers, ...rows].map((r) => r.map(esc).join(",")).join("\n")
+                                const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" })
+                                const url = URL.createObjectURL(blob)
+                                const a = document.createElement("a")
+                                a.href = url
+                                a.download = `nursifygh-users-${new Date().toISOString().slice(0, 10)}.csv`
+                                a.click()
+                                URL.revokeObjectURL(url)
+                                setFeedback(`Exported ${filteredUsers.length} user row(s) to CSV.`)
+                            }
+                            return (
+                                <>
+                                    {(pendingCount > 0 || unpaidAmbsCount > 0) && (
+                                        <div className="rounded-xl border border-amber-300 bg-amber-50/80 px-4 py-3 flex flex-wrap items-center justify-between gap-3 text-xs">
+                                            <div className="font-semibold text-amber-950">
+                                                Action Queue:{" "}
+                                                {pendingCount > 0 && (
+                                                    <span>{pendingCount} pending payment(s) to review</span>
+                                                )}
+                                                {pendingCount > 0 && unpaidAmbsCount > 0 && <span> · </span>}
+                                                {unpaidAmbsCount > 0 && (
+                                                    <span>
+                                                        {unpaidAmbsCount} ambassador(s) awaiting GHS{" "}
+                                                        {parseFloat(data.summary.unpaid_ghs || "0").toFixed(2)} payout
+                                                    </span>
+                                                )}
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                {pendingCount > 0 && (
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => setTab("payments")}
+                                                        className="rounded-lg bg-amber-600 px-3 py-1 font-bold text-white hover:bg-amber-700"
+                                                    >
+                                                        Review Payments
+                                                    </button>
+                                                )}
+                                                {unpaidAmbsCount > 0 && (
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => {
+                                                            setTab("ambassadors")
+                                                            setUnpaidOnly(true)
+                                                        }}
+                                                        className="rounded-lg bg-brand-700 px-3 py-1 font-bold text-white hover:bg-brand-800"
+                                                    >
+                                                        View Unpaid Payouts
+                                                    </button>
+                                                )}
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                                        <KpiCard label="Total Users" value={String(data.summary.total_users)} />
+                                        <KpiCard label="Unpaid Commissions" value={`GHS ${parseFloat(data.summary.unpaid_ghs).toFixed(2)}`} />
+                                        <KpiCard label="Paid Out" value={`GHS ${parseFloat(data.summary.paid_out_ghs).toFixed(2)}`} />
+                                        <KpiCard
+                                            label="Referrals / Paid Users"
+                                            value={`${data.summary.total_referrals} / ${data.summary.paid_users}`}
+                                        />
+                                    </div>
+
+                                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-on-surface-muted">
+                                        <span>
+                                            Outreach marked sent: <strong className="text-on-surface">{sentUserIds.length}</strong> user(s) · Filtered users: <strong className="text-on-surface">{filteredUsers.length}</strong>
+                                        </span>
+                                        <button
+                                            type="button"
+                                            onClick={exportCsv}
+                                            className="rounded-lg border border-border bg-white px-3 py-1.5 font-bold text-on-surface hover:bg-surface-subtle"
+                                        >
+                                            Export Users CSV ↓
+                                        </button>
+                                    </div>
+                                </>
+                            )
+                        })()}
 
                         {/* Django-style Date, Month, Year & Today Filter Bar */}
                         <div className="rounded-2xl border border-border bg-white p-4 shadow-sm space-y-3">
