@@ -50,22 +50,22 @@ export default function QuizResultsPage() {
             <div className="max-w-4xl mx-auto space-y-8 pb-36 sm:pb-20">
 
                 {/* Score Header Card */}
-                <div className="rounded-3xl bg-gradient-to-br from-brand-900 to-brand-700 p-8 sm:p-12 text-white shadow-xl relative overflow-hidden text-center">
+                <div className="rounded-3xl bg-[#064e3b] bg-gradient-to-br from-brand-900 to-brand-700 p-8 sm:p-12 !text-white shadow-xl relative overflow-hidden text-center">
                     <div className="relative z-10">
                         <p className="text-brand-200 font-bold tracking-wider uppercase text-xs sm:text-sm mb-2">{pageSubtitle}</p>
-                        <h1 className="text-2xl sm:text-3xl font-serif font-bold mb-6">{pageTitle}</h1>
+                        <h1 className="text-2xl sm:text-3xl font-serif font-bold !text-white mb-6">{pageTitle}</h1>
 
-                        <div className="inline-block rounded-2xl bg-white/10 border border-white/20 p-6 sm:p-8 backdrop-blur-sm">
-                            <p className="text-brand-100 text-sm font-medium mb-1">Your Score</p>
-                            <h2 className="text-6xl sm:text-7xl font-black mb-2">{attempt.score_percentage}%</h2>
-                            <p className="text-brand-50 text-sm">
+                        <div className="inline-block rounded-2xl bg-[#022c22]/90 border border-white/20 p-6 sm:p-8">
+                            <p className="text-emerald-100 !text-emerald-100 text-sm font-medium mb-1">Your Score</p>
+                            <h2 className="text-6xl sm:text-7xl font-black !text-white mb-2">{attempt.score_percentage}%</h2>
+                            <p className="text-emerald-50 !text-emerald-50 text-sm">
                                 <strong className="text-white">{attempt.correct_answers}</strong> out of <strong className="text-white">{attempt.total_questions}</strong> correct
                             </p>
                         </div>
 
                         <div className="mt-8 flex flex-wrap justify-center gap-3">
                             <Link to={isMockExam ? "/dashboard" : "/courses"}>
-                                <Button variant="secondary" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
+                                <Button variant="secondary" className="!bg-[#065f46] !text-white !border-white/30 hover:!bg-[#047857]">
                                     {isMockExam ? "Back to Dashboard" : "Back to courses"}
                                 </Button>
                             </Link>

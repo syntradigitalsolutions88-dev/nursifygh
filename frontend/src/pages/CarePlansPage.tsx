@@ -170,7 +170,7 @@ export default function CarePlansPage() {
 
                         {/* AI Callout Banner */}
                         {!loadingPlans && plans && plans.length < 3 && (
-                            <div className="rounded-2xl bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 p-6 text-white shadow-lg relative overflow-hidden">
+                            <div className="rounded-2xl bg-[#064e3b] bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 p-6 !text-white shadow-lg relative overflow-hidden">
                                 <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-brand-500/20 blur-3xl" />
                                 <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                                     <div className="flex items-start gap-4">
@@ -180,8 +180,8 @@ export default function CarePlansPage() {
                                             </svg>
                                         </div>
                                         <div>
-                                            <p className="text-lg font-bold">Generate a Care Plan in 30 seconds</p>
-                                            <p className="text-sm text-brand-100 mt-1">Describe the patient scenario. Our AI writes SMART goals and rationales instantly.</p>
+                                            <p className="text-lg font-bold !text-white">Generate a Care Plan in 30 seconds</p>
+                                            <p className="text-sm text-emerald-100 !text-emerald-100 mt-1">Describe the patient scenario. Our AI writes SMART goals and rationales instantly.</p>
                                         </div>
                                     </div>
                                     <Link to="/careplans/new" className="shrink-0">
