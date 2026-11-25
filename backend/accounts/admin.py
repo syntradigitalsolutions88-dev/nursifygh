@@ -1,6 +1,7 @@
 """Admin configuration for the accounts app."""
 
 import csv
+from urllib.parse import quote
 from datetime import timedelta
 from django import forms
 from django.contrib import admin, messages
@@ -31,7 +32,7 @@ class ExpiryWindowFilter(admin.SimpleListFilter):
     def lookups(self, request, model_admin):
         return [
             ("expiring_24h", "Expiring <= 24 Hours"),
-            ("expiring_7d", "Expiring <= 7 Days"),
+            ("expiring_3d", "Expiring <= 3 Days"),
             ("expired", "Expired"),
             ("active_paid", "Active Paid"),
             ("active_trial", "Active Trial"),
@@ -42,8 +43,8 @@ class ExpiryWindowFilter(admin.SimpleListFilter):
         val = self.value()
         if val == "expiring_24h":
             return queryset.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(hours=24))
-        if val == "expiring_7d":
-            return queryset.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(days=7))
+        if val == "expiring_3d":
+            return queryset.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(days=3))
         if val == "expired":
             return queryset.filter(is_subscribed=True, subscription_expires_at__lt=now)
         if val == "active_paid":
@@ -154,14 +155,32 @@ class UserAdmin(BaseUserAdmin):
             return "—"
         return timezone.localtime(obj.subscription_expires_at).strftime("%d %b %Y, %H:%M")
 
+    @staticmethod
+    def _wa_phone(raw_phone):
+        digits = "".join(ch for ch in (raw_phone or "") if ch.isdigit())
+        if not digits:
+            return ""
+        if digits.startswith("0") and len(digits) == 10:
+            return "233" + digits[1:]
+        return digits
+
     @admin.display(description="Quick Controls")
     def quick_controls(self, obj):
         act_url = reverse("admin:user-quick-activate", args=[obj.pk])
         trl_url = reverse("admin:user-quick-trial", args=[obj.pk])
+        rev_url = reverse("admin:user-quick-revoke", args=[obj.pk])
+        wa_num = self._wa_phone(obj.phone_number)
+        wa_btn = ""
+        if wa_num:
+            name = (obj.full_name or "Student").split()[0]
+            msg = quote(f"Hi {name}, your NursifyGH 3-day free trial is ending soon. Upgrade to the 120-day Semester Pass (GHS 30) via MoMo to keep full access to CBT questions, cases, and the AI Tutor.")
+            wa_btn = f'<a href="https://wa.me/{wa_num}?text={msg}" target="_blank" style="background:#0d9488;color:#fff;padding:3px 6px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;margin-right:3px;">WA</a>'
         return format_html(
-            '<a href="{}" style="background:#059669;color:#fff;padding:3px 7px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;margin-right:4px;">+120d</a>'
-            '<a href="{}" style="background:#2563eb;color:#fff;padding:3px 7px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;">+3d</a>',
-            act_url, trl_url,
+            '<a href="{}" style="background:#059669;color:#fff;padding:3px 6px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;margin-right:3px;">+120d</a>'
+            '<a href="{}" style="background:#2563eb;color:#fff;padding:3px 6px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;margin-right:3px;">+3d</a>'
+            '{}'
+            '<a href="{}" style="background:#dc2626;color:#fff;padding:3px 6px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;">Revoke</a>',
+            act_url, trl_url, format_html(wa_btn), rev_url,
         )
 
     def get_urls(self):
@@ -170,6 +189,7 @@ class UserAdmin(BaseUserAdmin):
             path("command-center/", self.admin_site.admin_view(self.command_center_view), name="nursify-command-center"),
             path("<uuid:user_id>/quick-activate/", self.admin_site.admin_view(self.quick_activate_view), name="user-quick-activate"),
             path("<uuid:user_id>/quick-trial/", self.admin_site.admin_view(self.quick_trial_view), name="user-quick-trial"),
+            path("<uuid:user_id>/quick-revoke/", self.admin_site.admin_view(self.quick_revoke_view), name="user-quick-revoke"),
         ]
         return custom + urls
 
@@ -179,7 +199,7 @@ class UserAdmin(BaseUserAdmin):
         return {
             "kpi_total": User.objects.count(),
             "kpi_exp_24h": User.objects.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(hours=24)).count(),
-            "kpi_exp_7d": User.objects.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(days=7)).count(),
+            "kpi_exp_3d": User.objects.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(days=3)).count(),
             "kpi_expired": User.objects.filter(is_subscribed=True, subscription_expires_at__lt=now).count(),
             "kpi_paid": User.objects.filter(is_subscribed=True, has_paid=True, subscription_expires_at__gte=now).count(),
             "kpi_trial": User.objects.filter(is_subscribed=True, has_paid=False, subscription_expires_at__gte=now).count(),
@@ -197,20 +217,69 @@ class UserAdmin(BaseUserAdmin):
         watchlist = User.objects.filter(
             is_subscribed=True,
             subscription_expires_at__gte=now,
-            subscription_expires_at__lte=now + timedelta(days=7),
+            subscription_expires_at__lte=now + timedelta(days=3),
         ).order_by("subscription_expires_at")[:50]
+        watchlist_rows = []
+        for u in watchlist:
+            delta = u.subscription_expires_at - now
+            days = delta.days
+            hours = int(delta.total_seconds() / 3600) % 24
+            wa_num = self._wa_phone(u.phone_number)
+            first = (u.full_name or "Student").split()[0]
+            exp_str = timezone.localtime(u.subscription_expires_at).strftime("%d %b %Y, %H:%M")
+            rem_msg = quote(f"Hi {first}, your NursifyGH 3-day free trial expires on {exp_str}. Upgrade to the 120-day Semester Pass (GHS 30) via MoMo to continue your NMC exam prep.")
+            rec_msg = quote(f"Hi {first}, your NursifyGH 120-day Semester Pass (GHS 30) is now active until {exp_str}. Happy studying!")
+            watchlist_rows.append({
+                "user": u,
+                "time_left": f"{days}d {hours}h left",
+                "wa_reminder_url": f"https://wa.me/{wa_num}?text={rem_msg}" if wa_num else "",
+                "wa_receipt_url": f"https://wa.me/{wa_num}?text={rec_msg}" if wa_num else "",
+            })
+        total_comm = AmbassadorCommission.objects.aggregate(s=Sum("amount_ghs"))["s"] or 0
+        paid_count = kpis["kpi_paid"]
+        total_u = kpis["kpi_total"]
+        gross_rev = paid_count * 30
+        net_rev = max(0, gross_rev - float(total_comm))
+        conv = round((paid_count / total_u) * 100, 1) if total_u else 0.0
+        program_stats = [
+            {"label": row["program"] or "Unspecified", "total": row["total"], "paid": row["paid"]}
+            for row in User.objects.values("program").annotate(total=Count("id"), paid=Count("id", filter=Q(has_paid=True))).order_by("-total")
+        ]
+        level_stats = [
+            {"label": row["level"] or "Unspecified", "total": row["total"], "paid": row["paid"]}
+            for row in User.objects.values("level").annotate(total=Count("id"), paid=Count("id", filter=Q(has_paid=True))).order_by("level")
+        ]
         ctx = {
             **self.admin_site.each_context(request),
             "title": "NursifyGH Command Center",
-            "total_users": kpis["kpi_total"],
-            "active_paid": kpis["kpi_paid"],
+            "total_users": total_u,
+            "active_paid": paid_count,
             "active_trials": kpis["kpi_trial"],
-            "expiring_7d_count": kpis["kpi_exp_7d"],
+            "expiring_3d_count": kpis["kpi_exp_3d"],
             "expired_count": kpis["kpi_expired"],
             "unpaid_commissions": kpis["kpi_unpaid_ghs"],
-            "watchlist": watchlist,
+            "gross_revenue_ghs": f"{gross_rev:.0f}",
+            "net_revenue_ghs": f"{net_rev:.0f}",
+            "conversion_rate": conv,
+            "watchlist_rows": watchlist_rows,
+            "program_stats": program_stats,
+            "level_stats": level_stats,
         }
         return render(request, "admin/command_center.html", ctx)
+
+    def quick_revoke_view(self, request, user_id):
+        student = get_object_or_404(User, pk=user_id)
+        student.is_subscribed = False
+        student.has_paid = False
+        student.subscription_expires_at = timezone.now()
+        student.save(update_fields=["is_subscribed", "has_paid", "subscription_expires_at"])
+        self.message_user(request, f"Access revoked for {student.email}.", messages.WARNING)
+        return HttpResponseRedirect(request.META.get("HTTP_REFERER") or reverse("admin:accounts_user_changelist"))
+
+    @admin.action(description="Revoke subscription / trial access")
+    def revoke_access(self, request, queryset):
+        updated = queryset.update(is_subscribed=False, has_paid=False, subscription_expires_at=timezone.now())
+        self.message_user(request, f"Revoked access for {updated} student(s).", messages.WARNING)
 
     def quick_activate_view(self, request, user_id):
         student = get_object_or_404(User, pk=user_id)
@@ -258,7 +327,7 @@ class UserAdmin(BaseUserAdmin):
             days, hours,
         )
 
-    actions = ["mark_as_paid_extend_120", "reset_to_trial", "promote_to_ambassador", "export_users_csv"]
+    actions = ["mark_as_paid_extend_120", "reset_to_trial", "revoke_access", "promote_to_ambassador", "export_users_csv"]
 
     @admin.action(description="Mark as PAID and extend by 120 days")
     def mark_as_paid_extend_120(self, request, queryset):
