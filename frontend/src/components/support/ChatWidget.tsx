@@ -98,6 +98,13 @@ export default function ChatWidget() {
                 body: JSON.stringify({
                     message: userMsg,
                     mode: user ? "student" : "public",
+                    history: messages
+                        .filter((m) => m.id !== "initial" && m.text.trim())
+                        .slice(-6)
+                        .map((m) => ({
+                            role: m.role === "ai" ? "assistant" : "user",
+                            content: m.text,
+                        })),
                 }),
             })
 

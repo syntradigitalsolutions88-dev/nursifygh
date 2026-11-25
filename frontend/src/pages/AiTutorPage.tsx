@@ -287,7 +287,14 @@ export default function AiTutorPage() {
         setSending(true)
 
         try {
-            const res = await api.post("/academics/tutor/", { prompt: clean })
+            const history = messages
+                .slice(1)
+                .slice(-6)
+                .map((m) => ({
+                    role: m.role === "tutor" ? "assistant" : "user",
+                    content: m.content,
+                }))
+            const res = await api.post("/academics/tutor/", { prompt: clean, history })
             const fallback = buildAcademicTutorResponse(clean)
             const replyText =
                 typeof res.data?.reply === "string" && res.data.reply.trim()
