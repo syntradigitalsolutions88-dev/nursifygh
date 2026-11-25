@@ -37,6 +37,8 @@ SYSTEM_PROMPT = (
     "- Never guess or invent unverified drug doses, infusion rates, or local protocols; state established "
     "principles clearly and advise verifying exact doses/orders against current clinical guidelines.\n"
     "- Keep paragraphs concise and easy to read on mobile phones during ward shifts or study blocks.\n"
+    "- ANTI-REPETITION & ACCURACY: Never repeat any term, suffix, root, definition, or Example/Takeaway block. When asked for N items (e.g., 50 suffixes), give distinct, accurate items with clear meanings and examples. When corrected by a student, acknowledge it directly and adjust immediately.\n"
+    "ACADEMIC MODES: NMC/MCQ questions -> lead with best answer/priority, why it wins, why distractors fail, and exam trap. Medical terminology -> prefix/root/suffix breakdown, literal/clinical meaning, one distinct example per item, zero repeats. Science/pharmacology -> crisp definition, step-by-step mechanism, nursing priorities, no guessed doses. Care plans -> Assessment, PES diagnosis, SMART goal, interventions with rationales, evaluation.\n"
 )
 def _normalize_typos(text: str) -> str:
     q = (text or "").lower()
@@ -89,15 +91,24 @@ def _clean_ai_output(text: str) -> str:
         line = line.replace("**", "").replace("__", "").replace("`", "")
         line = re.sub(r"(?<!\w)\*(?!\s)|(?<!\s)\*(?!\w)", "", line)
         cleaned_lines.append(line)
-    result = "\n".join(cleaned_lines)
+    deduped, seen = [], set()
+    for line in cleaned_lines:
+        norm = re.sub(r"^(?:\d+[.)]|[-•])\s*", "", line.strip()).lower()
+        norm = re.sub(r"\s+", " ", norm)
+        if len(norm) >= 14 and norm in seen:
+            continue
+        if len(norm) >= 14:
+            seen.add(norm)
+        deduped.append(line)
+    result = "\n".join(deduped)
     result = re.sub(r"\n{3,}", "\n\n", result)
     return result.strip()
 
 
-def _call_live_llm(prompt: str) -> tuple[str | None, str | None]:
+def _call_live_llm(prompt: str, history: list | None = None) -> tuple[str | None, str | None]:
     api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
     api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
-    model = os.getenv("LLM_MODEL", "openai/gpt-oss-20b").strip()
+    model = os.getenv("LLM_MODEL", "llama-3.3-70b-versatile").strip()
 
     if not api_key or not api_url:
         logger.warning("Live LLM skipped: LLM_API_KEY/GROQ_API_KEY or LLM_API_URL is not configured.")
@@ -105,10 +116,13 @@ def _call_live_llm(prompt: str) -> tuple[str | None, str | None]:
 
     payload = {
         "model": model,
-        "temperature": 0.25,
-        "max_tokens": 1024,
+        "temperature": 0.3,
+        "max_tokens": 2048,
+        "frequency_penalty": 0.45,
+        "presence_penalty": 0.25,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
+            *[{"role": ("assistant" if m.get("role") == "assistant" else "user"), "content": str(m.get("content") or "")[:1200]} for m in (history or [])[-6:] if str(m.get("content") or "").strip()],
             {"role": "user", "content": prompt},
         ],
     }
@@ -296,8 +310,10 @@ class TutorCoachView(APIView):
         prog = getattr(request.user, "program", "") or ""
         lvl = getattr(request.user, "level", "") or ""
         ctx = " ".join(x for x in [f"Level {lvl}" if lvl else "", prog] if x)
+        raw_h = request.data.get("history")
+        hist = raw_h if isinstance(raw_h, list) else []
         enriched = f"[Student Profile: {ctx}]\n{prompt}" if ctx else prompt
-        live_reply, live_framework = _call_live_llm(enriched)
+        live_reply, live_framework = _call_live_llm(enriched, history=hist)
         if live_reply and live_framework:
             return Response(
                 {

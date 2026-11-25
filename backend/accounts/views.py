@@ -1126,7 +1126,7 @@ def ai_chat_proxy(request):
     model = (
         getattr(settings, "LLM_MODEL", None)
         or os.getenv("LLM_MODEL")
-        or "openai/gpt-oss-20b"
+        or "llama-3.3-70b-versatile"
     ).strip()
 
     platform_knowledge = (
@@ -1158,6 +1158,7 @@ def ai_chat_proxy(request):
             "or delays carry risk.\n"
             "- Never invent unverified medication doses, infusion rates, or local protocols; state established clinical "
             "principles clearly and remind students to verify exact orders against current facility/NMC guidelines.\n\n"
+            "- Never repeat any term, suffix, definition, or repeated line; when asked for N items, give distinct entries. When corrected by a student, acknowledge directly and adjust immediately.\n\n"
             f"{platform_knowledge}"
         )
     else:
@@ -1188,10 +1189,13 @@ def ai_chat_proxy(request):
                     "model": model,
                     "messages": [
                         {"role": "system", "content": system_prompt},
+                        *[{"role": ("assistant" if m.get("role") == "assistant" else "user"), "content": str(m.get("content") or "")[:1200]} for m in (request.data.get("history") if isinstance(request.data.get("history"), list) else [])[-6:] if str(m.get("content") or "").strip()],
                         {"role": "user", "content": f"{user_ctx}{message}"},
                     ],
-                    "temperature": 0.2,
-                    "max_tokens": 1500,
+                    "temperature": 0.25,
+                    "max_tokens": 1800,
+                    "frequency_penalty": 0.45,
+                    "presence_penalty": 0.25,
                 },
                 headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
                 timeout=45,
