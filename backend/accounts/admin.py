@@ -1,7 +1,12 @@
 """Admin configuration for the accounts app."""
 
+import csv
+from datetime import timedelta
 from django import forms
 from django.contrib import admin, messages
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
+from django.urls import path, reverse
 from django.contrib.admin.forms import AdminAuthenticationForm
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.db.models import Count, Q, Sum
@@ -19,6 +24,35 @@ class EmailAuthenticationForm(AdminAuthenticationForm):
     )
 
 
+class ExpiryWindowFilter(admin.SimpleListFilter):
+    title = "Expiry Window"
+    parameter_name = "expiry_window"
+
+    def lookups(self, request, model_admin):
+        return [
+            ("expiring_24h", "Expiring <= 24 Hours"),
+            ("expiring_7d", "Expiring <= 7 Days"),
+            ("expired", "Expired"),
+            ("active_paid", "Active Paid"),
+            ("active_trial", "Active Trial"),
+        ]
+
+    def queryset(self, request, queryset):
+        now = timezone.now()
+        val = self.value()
+        if val == "expiring_24h":
+            return queryset.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(hours=24))
+        if val == "expiring_7d":
+            return queryset.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(days=7))
+        if val == "expired":
+            return queryset.filter(is_subscribed=True, subscription_expires_at__lt=now)
+        if val == "active_paid":
+            return queryset.filter(is_subscribed=True, has_paid=True, subscription_expires_at__gte=now)
+        if val == "active_trial":
+            return queryset.filter(is_subscribed=True, has_paid=False, subscription_expires_at__gte=now)
+        return queryset
+
+
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
     login_form = EmailAuthenticationForm
@@ -31,6 +65,7 @@ class UserAdmin(BaseUserAdmin):
         "level",
         "access_status",
         "expiry_date_display",
+        "quick_controls",
         "has_paid",
         "is_ambassador",
         "referral_code",
@@ -39,6 +74,7 @@ class UserAdmin(BaseUserAdmin):
         "is_active",
     )
     list_filter = (
+        ExpiryWindowFilter,
         "has_paid",
         "is_subscribed",
         "is_ambassador",
@@ -118,6 +154,87 @@ class UserAdmin(BaseUserAdmin):
             return "—"
         return timezone.localtime(obj.subscription_expires_at).strftime("%d %b %Y, %H:%M")
 
+    @admin.display(description="Quick Controls")
+    def quick_controls(self, obj):
+        act_url = reverse("admin:user-quick-activate", args=[obj.pk])
+        trl_url = reverse("admin:user-quick-trial", args=[obj.pk])
+        return format_html(
+            '<a href="{}" style="background:#059669;color:#fff;padding:3px 7px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;margin-right:4px;">+120d</a>'
+            '<a href="{}" style="background:#2563eb;color:#fff;padding:3px 7px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;">+3d</a>',
+            act_url, trl_url,
+        )
+
+    def get_urls(self):
+        urls = super().get_urls()
+        custom = [
+            path("command-center/", self.admin_site.admin_view(self.command_center_view), name="nursify-command-center"),
+            path("<uuid:user_id>/quick-activate/", self.admin_site.admin_view(self.quick_activate_view), name="user-quick-activate"),
+            path("<uuid:user_id>/quick-trial/", self.admin_site.admin_view(self.quick_trial_view), name="user-quick-trial"),
+        ]
+        return custom + urls
+
+    def _kpi_context(self):
+        now = timezone.now()
+        unpaid = AmbassadorCommission.objects.filter(is_paid_out=False).aggregate(s=Sum("amount_ghs"))["s"] or 0
+        return {
+            "kpi_total": User.objects.count(),
+            "kpi_exp_24h": User.objects.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(hours=24)).count(),
+            "kpi_exp_7d": User.objects.filter(is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(days=7)).count(),
+            "kpi_expired": User.objects.filter(is_subscribed=True, subscription_expires_at__lt=now).count(),
+            "kpi_paid": User.objects.filter(is_subscribed=True, has_paid=True, subscription_expires_at__gte=now).count(),
+            "kpi_trial": User.objects.filter(is_subscribed=True, has_paid=False, subscription_expires_at__gte=now).count(),
+            "kpi_ambassadors": User.objects.filter(is_ambassador=True).count(),
+            "kpi_unpaid_ghs": f"{unpaid:.2f}",
+        }
+
+    def changelist_view(self, request, extra_context=None):
+        extra_context = {**(extra_context or {}), **self._kpi_context()}
+        return super().changelist_view(request, extra_context=extra_context)
+
+    def command_center_view(self, request):
+        now = timezone.now()
+        kpis = self._kpi_context()
+        watchlist = User.objects.filter(
+            is_subscribed=True,
+            subscription_expires_at__gte=now,
+            subscription_expires_at__lte=now + timedelta(days=7),
+        ).order_by("subscription_expires_at")[:50]
+        ctx = {
+            **self.admin_site.each_context(request),
+            "title": "NursifyGH Command Center",
+            "total_users": kpis["kpi_total"],
+            "active_paid": kpis["kpi_paid"],
+            "active_trials": kpis["kpi_trial"],
+            "expiring_7d_count": kpis["kpi_exp_7d"],
+            "expired_count": kpis["kpi_expired"],
+            "unpaid_commissions": kpis["kpi_unpaid_ghs"],
+            "watchlist": watchlist,
+        }
+        return render(request, "admin/command_center.html", ctx)
+
+    def quick_activate_view(self, request, user_id):
+        student = get_object_or_404(User, pk=user_id)
+        student.activate_subscription(days=120)
+        self.message_user(request, f"{student.email} activated for 120 days (PAID).", messages.SUCCESS)
+        return HttpResponseRedirect(request.META.get("HTTP_REFERER") or reverse("admin:accounts_user_changelist"))
+
+    def quick_trial_view(self, request, user_id):
+        student = get_object_or_404(User, pk=user_id)
+        student.start_trial(days=3)
+        self.message_user(request, f"{student.email} extended with 3-day trial.", messages.INFO)
+        return HttpResponseRedirect(request.META.get("HTTP_REFERER") or reverse("admin:accounts_user_changelist"))
+
+    @admin.action(description="Export selected users to CSV")
+    def export_users_csv(self, request, queryset):
+        resp = HttpResponse(content_type="text/csv")
+        resp["Content-Disposition"] = 'attachment; filename="nursifygh_users.csv"'
+        writer = csv.writer(resp)
+        writer.writerow(["Email", "Full Name", "Phone", "Level", "Program", "Paid", "Subscribed", "Expires At", "Ambassador", "Referral Code"])
+        for u in queryset:
+            exp = timezone.localtime(u.subscription_expires_at).strftime("%Y-%m-%d %H:%M") if u.subscription_expires_at else ""
+            writer.writerow([u.email, u.full_name, u.phone_number, u.level, u.program, u.has_paid, u.is_subscribed, exp, u.is_ambassador, u.referral_code])
+        return resp
+
     @admin.display(description="Access Status")
     def access_status(self, obj):
         if not obj.is_subscribed or not obj.subscription_expires_at:
@@ -141,7 +258,7 @@ class UserAdmin(BaseUserAdmin):
             days, hours,
         )
 
-    actions = ["mark_as_paid_extend_120", "reset_to_trial", "promote_to_ambassador"]
+    actions = ["mark_as_paid_extend_120", "reset_to_trial", "promote_to_ambassador", "export_users_csv"]
 
     @admin.action(description="Mark as PAID and extend by 120 days")
     def mark_as_paid_extend_120(self, request, queryset):
