@@ -17,8 +17,8 @@ const features = [
         ),
     },
     {
-        title: "Timed Mock Exams",
-        description: "Simulate the real N&MC paper. 50 questions, 60 minutes, instant scoring, and a breakdown of your weakest areas.",
+        title: "Timed Semester & N&MC Mock Exams",
+        description: "Practice under real exam pressure for semester papers and N&MC exams—50 questions, 60 minutes, instant scoring, and weak-area breakdowns.",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-6 w-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -98,15 +98,15 @@ export default function LandingPage() {
                 <div className="container-page relative z-10 text-center">
                     <Badge variant="brand" className="mx-auto mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
                         <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
-                        Built for students across Ghana's Nursing &amp; Midwifery Training Colleges
+                        For Level 100, 200 &amp; 300 Nursing &amp; Midwifery Students in Ghana
                     </Badge>
 
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight max-w-4xl mx-auto leading-[1.1]">
-                        Pass your N&amp;MC exams with <span className="text-brand-400">confidence.</span>
+                        Ace every exam from <span className="text-brand-400">Level 100 to 300.</span>
                     </h1>
 
                     <p className="mt-6 max-w-2xl mx-auto text-lg text-brand-100/80 leading-relaxed">
-                        Practice NMC-style questions, simulate the real licensing exam, learn with the AI Tutor, and track your clinical logbook. Built for <strong className="text-white">all four nursing programs in Ghana</strong>: General Nursing (RGN), Midwifery (RM), Psychiatric Nursing (RPN), and Community Health Nursing (CHN).
+                        Whether you're tackling <strong className="text-white">Level 100 fundamentals, Level 200 clinicals, or Level 300 N&amp;MC licensing</strong>—master semester quizzes, timed mock exams, NANDA care plans, and your clinical logbook in one place. Built for <strong className="text-white">RGN, RM, RPN, and CHN</strong>.
                     </p>
 
                     <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -139,7 +139,8 @@ export default function LandingPage() {
                                     <div className="flex items-center justify-between mb-8">
                                         <div>
                                             <p className="text-sm font-medium text-gray-500">Good morning, Ama</p>
-                                            <p className="mt-1 text-2xl font-bold text-gray-900">Your Level 300 Dashboard</p>
+                                            <p className="mt-1 text-2xl font-bold text-gray-900">Level 100 – 300 Study Dashboard</p>
+                                            <p className="mt-1 text-xs font-semibold text-brand-700">Level 100 · Level 200 · Level 300 · RGN / RM / RPN / CHN</p>
                                         </div>
                                         <div className="h-10 w-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold">A</div>
                                     </div>
@@ -184,9 +185,9 @@ export default function LandingPage() {
             <section className="py-24 bg-white">
                 <div className="container-page">
                     <div className="text-center max-w-2xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Everything you need to pass.</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Built for every level, every semester.</h2>
                         <p className="mt-4 text-lg text-gray-600">
-                            Built for nursing and midwifery students across every program in Ghana.
+                            From your very first Level 100 quiz to Level 200 ward rotations and final N&MC licensing—everything you need in one place.
                         </p>
                     </div>
 
