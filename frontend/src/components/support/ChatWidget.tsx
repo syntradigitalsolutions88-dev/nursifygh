@@ -48,7 +48,7 @@ export default function ChatWidget() {
                     role: "ai",
                     id: "initial",
                     text: user
-                        ? "Greetings. I am your **NursifyGH Chief Clinical Examiner**. I can assist you with advanced pathophysiology, NMC exam preparation, drug calculations, and NANDA care plans. How may I assist you today?"
+                        ? "Greetings. I am your NursifyGH Chief Clinical Examiner. I can assist you with advanced pathophysiology, NMC exam preparation, drug calculations, and NANDA care plans. How may I assist you today?"
                         : "Welcome to **NursifyGH**! Ask me about our **AI Nursing & Science Tutor**, **NMC CBT Simulator**, **Interactive Clinical Case Studies**, **Flashcards**, pricing, or test me with any science or nursing question."
                 }
             ])

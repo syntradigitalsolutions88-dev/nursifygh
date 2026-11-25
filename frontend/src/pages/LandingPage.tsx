@@ -106,13 +106,13 @@ export default function LandingPage() {
                     </h1>
 
                     <p className="mt-6 max-w-2xl mx-auto text-lg text-brand-100/80 leading-relaxed">
-                        Practice NMC-style questions, simulate the real licensing exam, and track your clinical logbook. Built for <strong className="text-white">all four nursing programs in Ghana</strong>: General Nursing (RGN), Midwifery (RM), Psychiatric Nursing (RPN), and Community Health Nursing (CHN).
+                        Practice NMC-style questions, simulate the real licensing exam, learn with the AI Tutor, and track your clinical logbook. Built for <strong className="text-white">all four nursing programs in Ghana</strong>: General Nursing (RGN), Midwifery (RM), Psychiatric Nursing (RPN), and Community Health Nursing (CHN).
                     </p>
 
                     <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link to="/register">
                             <Button size="lg" className="!bg-brand-500 hover:!bg-brand-400 !text-brand-950 font-bold px-8 h-14 text-base shadow-lg shadow-brand-500/25">
-                                Start studying for free
+                                Start 3-Day Free Trial
                             </Button>
                         </Link>
                         <a
@@ -143,7 +143,7 @@ export default function LandingPage() {
                                         </div>
                                         <div className="h-10 w-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold">A</div>
                                     </div>
-                                    <div className="grid gap-4 sm:grid-cols-3">
+                                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                                         <div className="rounded-xl border border-border bg-surface p-5">
                                             <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">Exam Readiness</p>
                                             <p className="mt-2 text-3xl font-black text-brand-700">74%</p>
@@ -190,7 +190,7 @@ export default function LandingPage() {
                         </p>
                     </div>
 
-                    <div className="grid gap-8 sm:grid-cols-3">
+                    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                         {features.map((f) => (
                             <div key={f.title} className="rounded-2xl border border-border bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
                                 <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-700 mb-6">
@@ -233,6 +233,7 @@ export default function LandingPage() {
                                     "Unlimited 60-minute mock exams",
                                     "Program-specific Clinical Logbook",
                                     "AI-assisted NANDA Care Plans",
+                                      "24/7 AI Nursing & Science Tutor",
                                 ].map((item) => (
                                     <li key={item} className="flex items-start gap-3 text-sm font-medium text-gray-700">
                                         <div className="rounded-full bg-brand-100 p-1 mt-0.5">
@@ -292,6 +293,8 @@ export default function LandingPage() {
                         <div className="flex gap-6 text-sm font-medium text-brand-200">
                             <Link to="/login" className="hover:text-white transition-colors">Log in</Link>
                             <Link to="/register" className="hover:text-white transition-colors">Sign up</Link>
+                            <Link to="/about" className="hover:text-white transition-colors">About</Link>
+                            <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
                         </div>
                     </div>
                     <div className="pt-8 text-center md:text-left">
