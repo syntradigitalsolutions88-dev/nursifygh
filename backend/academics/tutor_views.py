@@ -108,7 +108,7 @@ def _clean_ai_output(text: str) -> str:
 def _call_live_llm(prompt: str, history: list | None = None) -> tuple[str | None, str | None]:
     api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
     api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
-    model = os.getenv("LLM_MODEL", "llama-3.3-70b-versatile").strip()
+    model = os.getenv("LLM_MODEL", "openai/gpt-oss-120b").strip()
 
     if not api_key or not api_url:
         logger.warning("Live LLM skipped: LLM_API_KEY/GROQ_API_KEY or LLM_API_URL is not configured.")

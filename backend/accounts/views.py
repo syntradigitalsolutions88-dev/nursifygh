@@ -1126,7 +1126,7 @@ def ai_chat_proxy(request):
     model = (
         getattr(settings, "LLM_MODEL", None)
         or os.getenv("LLM_MODEL")
-        or "llama-3.3-70b-versatile"
+        or "openai/gpt-oss-120b"
     ).strip()
 
     platform_knowledge = (
@@ -1186,7 +1186,7 @@ def ai_chat_proxy(request):
             response = requests.post(
                 api_url,
                 json={
-                    "model": model,
+                    "model": model or "openai/gpt-oss-120b",
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         *[{"role": ("assistant" if m.get("role") == "assistant" else "user"), "content": str(m.get("content") or "")[:1200]} for m in (request.data.get("history") if isinstance(request.data.get("history"), list) else [])[-6:] if str(m.get("content") or "").strip()],
@@ -1233,7 +1233,7 @@ def ai_ncp_autofill(request):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             json={
-                "model": model, # Use the same model that works in your Chat Widget
+                "model": model or "openai/gpt-oss-120b", # Use the same model that works in your Chat Widget
                 "messages": [
                     {"role": "system", "content": NCP_SYSTEM_PROMPT},
                     {"role": "user", "content": f"Patient scenario: {scenario}"},
