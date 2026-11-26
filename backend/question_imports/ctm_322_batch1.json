@@ -1,0 +1,565 @@
+{
+"courses": [
+{
+"course_code": "CTM-322",
+"course_title": "Complementary and Traditional Medicine",
+"category": "FUNDAMENTALS",
+"semester": "S2",
+"topics": [
+"Introduction to Complementary and Traditional Medicine (TCM)",
+"Traditional Medicine Practice Act 2000 (Act 575)",
+"Ghana Traditional Medicine Council",
+"Types of Traditional Healers (Herbalists, Spiritual Healers, Traditional Birth Attendants, Bone Setters)",
+"Common Ghanaian Herbal Remedies and Their Uses",
+"Safety and Toxicity of Herbal Medicines",
+"Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"Integration of TCM into Modern Healthcare",
+"Referral and Collaboration with Traditional Healers",
+"Cultural Beliefs and Health-Seeking Behaviour",
+"Ethical and Legal Considerations in TCM"
+],
+"questions": [
+{
+"topic": "Introduction to Complementary and Traditional Medicine (TCM)",
+"question_text": "During an outpatient nursing consultation at a municipal hospital in Ghana, a hypertensive patient states he takes prescribed lisinopril alongside locally brewed hibiscus (sobolo) tea and supervised acupuncture to manage stress. How is this clinical approach classified under WHO and Ghana Health Service terminology?",
+"choices": [
+{"text": "Complementary medicine", "is_correct": true},
+{"text": "Alternative medicine", "is_correct": false},
+{"text": "Allopathic monotherapy", "is_correct": false},
+{"text": "Palliative substitution", "is_correct": false}
+],
+"rationale": "Complementary medicine refers to non-mainstream health practices used together with conventional allopathic medicine. Alternative medicine, by contrast, is used in place of conventional medical treatment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Complementary and Traditional Medicine (TCM)",
+"question_text": "A Level 300 RGN student preparing a seminar on health-seeking behaviour in Ghana compares Traditional Medicine with Complementary and Alternative Medicine (CAM). Which defining characteristic distinguishes indigenous Ghanaian Traditional Medicine from imported CAM modalities like homeopathy or chiropractic?",
+"choices": [
+{"text": "It is rooted in the indigenous cultural beliefs, ecological biodiversity, and historical experiences passed across generations within Ghanaian communities", "is_correct": true},
+{"text": "It relies exclusively on synthetic pharmaceutical compounds manufactured in Europe", "is_correct": false},
+{"text": "It is completely unregulated by any statutory body in Ghana", "is_correct": false},
+{"text": "It rejects any spiritual or psychosocial dimension of illness", "is_correct": false}
+],
+"rationale": "WHO defines Traditional Medicine as the sum total of knowledge, skills, and practices based on the theories, beliefs, and experiences indigenous to different cultures, whereas CAM denotes non-indigenous or non-dominant practices outside a country's own tradition.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "Which Ghanaian legislation established the statutory framework for regulating traditional medicine practitioners, licensing herbal practices, and setting standards for traditional medicine premises?",
+"choices": [
+{"text": "Traditional Medicine Practice Act, 2000 (Act 575)", "is_correct": true},
+{"text": "Mental Health Act, 2012 (Act 846)", "is_correct": false},
+{"text": "Health Professions Regulatory Bodies Act, 2013 (Act 857)", "is_correct": false},
+{"text": "Persons with Disability Act, 2006 (Act 715)", "is_correct": false}
+],
+"rationale": "Act 575 was enacted in 2000 to establish the Traditional Medicine Practice Council, register practitioners, and regulate the safety, quality, and ethical practice of traditional medicine in Ghana.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "Under the Traditional Medicine Practice Act, 2000 (Act 575), a herbalist operating a clinic in Kumasi displays a signboard claiming his herbal mixture 'permanently cures HIV/AIDS, diabetes, and stage IV breast cancer within 7 days.' How does Act 575 address this conduct?",
+"choices": [
+{"text": "It constitutes a statutory offence because registered practitioners are prohibited from making false or unverified claims of curing chronic or terminal diseases", "is_correct": true},
+{"text": "It is legally permissible provided the herbalist pays an annual municipal tax", "is_correct": false},
+{"text": "It is encouraged by the Ministry of Health to promote herbal entrepreneurship", "is_correct": false},
+{"text": "Act 575 governs only imported Chinese herbs and excludes local Ghanaian herbalists", "is_correct": false}
+],
+"rationale": "Act 575 and Food and Drugs Authority (FDA) regulations strictly prohibit false advertising and unsubstantiated cure claims for serious conditions such as HIV/AIDS, cancer, and diabetes to protect the public from dangerous treatment delays.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Traditional Medicine Practice Act 2000 (Act 575)",
+"question_text": "According to Act 575, which requirement must a traditional medicine practitioner satisfy before lawfully operating a herbal treatment facility in Ghana?",
+"choices": [
+{"text": "Hold a valid registration certificate from the Traditional Medicine Practice Council and a separate premises license inspected for hygiene and safety", "is_correct": true},
+{"text": "Complete a 4-year surgical residency at Korle Bu Teaching Hospital", "is_correct": false},
+{"text": "Obtain endorsement solely from a local radio station", "is_correct": false},
+{"text": "Operate without any inspection provided the remedies are plant-based", "is_correct": false}
+],
+"rationale": "Act 575 separates practitioner registration from premises licensing; both the individual healer and the physical clinic/dispensary must meet Council standards before operation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Traditional Medicine Council",
+"question_text": "While working at a district hospital, an RGN is asked by a local herbalist how to get his newly formulated antimalarial herbal decoction scientifically evaluated for toxicity and efficacy in Ghana. Which national research institution established in Mampong-Akuapem conducts preclinical and clinical validation of Ghanaian medicinal plants?",
+"choices": [
+{"text": "Centre for Plant Medicine Research (CPMR)", "is_correct": true},
+{"text": "Noguchi Memorial Institute for Medical Research solely for viral vaccines", "is_correct": false},
+{"text": "Nursing and Midwifery Council of Ghana", "is_correct": false},
+{"text": "Ghana Standards Authority Mining Division", "is_correct": false}
+],
+"rationale": "The Centre for Plant Medicine Research (CPMR) at Mampong-Akuapem conducts scientific research, phytochemical standardization, toxicology testing, and clinical evaluation of traditional herbal medicines in Ghana.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Traditional Medicine Council",
+"question_text": "What is the primary statutory mandate of the Traditional Medicine Practice Council (TMPC) under the Ministry of Health in Ghana?",
+"choices": [
+{"text": "To register traditional medicine practitioners, enforce a code of ethics, license practice premises, and collaborate with the FDA on safety standards", "is_correct": true},
+{"text": "To issue practicing PINs to Registered General Nurses and Midwives", "is_correct": false},
+{"text": "To manage NHIS capitation payments for private surgical hospitals", "is_correct": false},
+{"text": "To arrest medical doctors who prescribe synthetic antihypertensives", "is_correct": false}
+],
+"rationale": "The TMPC regulates the profession and practice of traditional medicine in Ghana—analogous to how the N&MC regulates nursing—while the Food and Drugs Authority (FDA) registers commercial herbal products.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ghana Traditional Medicine Council",
+"question_text": "A patient brings an unlabelled plastic bottle containing a dark herbal concoction bought from an itinerant bus vendor to the outpatient clinic. Checking for regulatory approval in Ghana, which product registration prefix indicates that a herbal medicine has been evaluated for safety and quality by the Food and Drugs Authority (FDA)?",
+"choices": [
+{"text": "FDA/HD (Herbal Drug) registration number printed on a sealed, labelled container with batch number and expiry date", "is_correct": true},
+{"text": "A handwritten price tag on a reused water bottle", "is_correct": false},
+{"text": "An N&MC student index number", "is_correct": false},
+{"text": "A Ghana Revenue Authority vehicle sticker", "is_correct": false}
+],
+"rationale": "Legally marketed herbal medicines in Ghana must carry an FDA herbal product registration number, ingredient list, dosage instructions, manufacturing date, and expiry date.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Types of Traditional Healers (Herbalists, Spiritual Healers, Traditional Birth Attendants, Bone Setters)",
+"question_text": "A 19-year-old football player sustains a closed mid-shaft fracture of the right tibia and fibula. Instead of visiting the hospital, his family takes him to a traditional bone setter (TBS) who applies tightly bound bamboo splints and herbal poultices. Three days later, the youth presents to the district hospital emergency unit with severe throbbing pain unrelieved by analgesics, cold pale toes, absent dorsalis pedis pulse, and paresthesia. What complication has developed?",
+"choices": [
+{"text": "Acute compartment syndrome and limb-threatening vascular ischaemia", "is_correct": true},
+{"text": "Normal callus bone remodeling", "is_correct": false},
+{"text": "Mild superficial contact dermatitis", "is_correct": false},
+{"text": "Osteoarthritis of the ankle joint", "is_correct": false}
+],
+"rationale": "Circumferential rigid bamboo splinting applied over an acutely swelling fracture impairs venous and arterial perfusion, precipitating compartment syndrome and Volkmann's ischaemic contracture or gangrene if not immediately released.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Types of Traditional Healers (Herbalists, Spiritual Healers, Traditional Birth Attendants, Bone Setters)",
+"question_text": "Under current Ghana Health Service (GHS) maternal health policy, what is the defined role of Traditional Birth Attendants (TBAs) within rural communities served by CHPS zones?",
+"choices": [
+{"text": "TBAs are reoriented to serve as community maternal health promoters who counsel pregnant women, recognize danger signs, and escort mothers to skilled birth attendants at health facilities rather than conducting home deliveries", "is_correct": true},
+{"text": "TBAs are licensed to perform caesarean sections and manual vacuum aspiration at home", "is_correct": false},
+{"text": "TBAs independently administer intravenous oxytocin and magnesium sulphate during home births", "is_correct": false},
+{"text": "TBAs are banned from speaking to pregnant women in rural communities", "is_correct": false}
+],
+"rationale": "Because skilled birth attendance is critical to reducing maternal mortality, GHS policy transitioned TBAs from conducting unsupervised deliveries to acting as referral links and birth companions who accompany women to health facilities.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Types of Traditional Healers (Herbalists, Spiritual Healers, Traditional Birth Attendants, Bone Setters)",
+"question_text": "Which traditional practitioner category in Ghana diagnoses illness primarily through divination, ancestral consultation, or religious prayer rituals before prescribing spiritual cleansing alongside or without herbs?",
+"choices": [
+{"text": "Spiritual/faith healers (akomfo, mallams, or prayer camp prophets)", "is_correct": true},
+{"text": "Orthopedic physiotherapists", "is_correct": false},
+{"text": "Pure phytotherapists/herbalists who rely solely on empirical plant pharmacology", "is_correct": false},
+{"text": "Biomedical clinical pharmacists", "is_correct": false}
+],
+"rationale": "Spiritual healers interpret illness through metaphysical, ancestral, or spiritual causation and employ ritual, prayer, or exorcism, distinguishing them from empirical herbalists and traditional bone setters.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies and Their Uses",
+"question_text": "A postpartum mother in a rural clinic asks the nurse about drinking concentrated bitter leaf (Vernonia amygdalina) and mahogany bark (Khaya senegalensis) decoctions daily while exclusively breastfeeding her 2-week-old newborn. What is the nurse's most appropriate evidence-based advice?",
+"choices": [
+{"text": "Advise caution against concentrated unstandardized herbal decoctions during lactation because active alkaloids can pass into breast milk and cause neonatal hepatotoxicity or gastrointestinal distress, and encourage adequate hydration with safe nutritious foods", "is_correct": true},
+{"text": "Instruct her to replace breast milk entirely with bitter leaf decoction for the first 6 months", "is_correct": false},
+{"text": "Confirm that all traditional herbal bitters are completely safe for newborns in unlimited quantities", "is_correct": false},
+{"text": "Tell her to stop breastfeeding immediately if she has ever tasted herbal tea", "is_correct": false}
+],
+"rationale": "Many traditional bitter extracts contain potent phytochemicals and hepatotoxic compounds that transfer into breast milk; protecting exclusive breastfeeding while avoiding unstandardized herbal toxins safeguards neonatal liver and renal function.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies and Their Uses",
+"question_text": "In Ghana, standardized herbal preparations derived from Cryptolepis sanguinolenta (Nibima) researched by the Centre for Plant Medicine Research are clinically utilized primarily for which condition?",
+"choices": [
+{"text": "Uncomplicated malaria (due to the antimalarial alkaloid cryptolepine)", "is_correct": true},
+{"text": "Type 1 insulin-dependent diabetes mellitus", "is_correct": false},
+{"text": "Acute appendicitis", "is_correct": false},
+{"text": "Congenital heart block", "is_correct": false}
+],
+"rationale": "Cryptolepis sanguinolenta (locally known as Nibima) contains cryptolepine, which has demonstrated antiplasmodial activity and is formulated into standardized Ghanaian herbal antimalarial products like Phyto-Laria.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies and Their Uses",
+"question_text": "A patient with mild upper respiratory congestion uses steam inhalation containing eucalyptus and lemongrass (Cymbopogon citratus) leaves at home. While generally soothing for adults, what specific safety teaching must the nurse provide to prevent household injury?",
+"choices": [
+{"text": "Keep boiling water basins out of reach of young children, avoid leaning directly over scalding steam to prevent facial thermal burns, and never use menthol/eucalyptus inhalations in infants due to laryngospasm risk", "is_correct": true},
+{"text": "Instruct the patient to drink the boiling essential oil extract directly", "is_correct": false},
+{"text": "Place the steaming basin inside a closed mosquito net with a sleeping infant", "is_correct": false},
+{"text": "Add kerosene to the steam bowl to enhance bronchodilation", "is_correct": false}
+],
+"rationale": "Scald burns from overturned steam bowls and reflex glottic spasm in infants exposed to volatile terpenes are common preventable hazards associated with home steam inhalation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies and Their Uses",
+"question_text": "A pregnant woman at 38 weeks gestation presents to a district hospital labour ward with hypertonic uterine contractions occurring every 90 seconds, fetal bradycardia (95 bpm), and severe lower abdominal tenderness. History reveals she drank a local herbal oxytocic potion ('kalabule' / traditional labour-inducing root extract) 2 hours earlier. What is the nurse's PRIORITY action?",
+"choices": [
+{"text": "Position the mother in left lateral tilt, administer high-flow oxygen, establish wide-bore IV access for fluid resuscitation, and notify the obstetrician urgently for potential tocolysis or emergency caesarean delivery", "is_correct": true},
+{"text": "Start an intravenous oxytocin infusion to strengthen the contractions further", "is_correct": false},
+{"text": "Encourage vigorous bearing-down pushing at 4 cm cervical dilatation", "is_correct": false},
+{"text": "Administer a second dose of the herbal concoction to speed birth", "is_correct": false}
+],
+"rationale": "Traditional uterotonic herbs cause uncoordinated uterine tachysystole, uteroplacental hypoxia, and high risk of uterine rupture; immediate intrauterine resuscitation and urgent obstetric intervention take absolute priority.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Safety and Toxicity of Herbal Medicines",
+"question_text": "A 46-year-old man is admitted to a regional hospital medical ward with deep scleral icterus, dark tea-coloured urine, right upper quadrant pain, and markedly elevated liver transaminases (AST/ALT > 1,200 U/L) after taking an unlabelled 'blood cleanser' herbal mixture for 3 weeks. Which diagnosis should the nurse suspect?",
+"choices": [
+{"text": "Herb-induced liver injury (acute toxic hepatitis)", "is_correct": true},
+{"text": "Physiological neonatal jaundice", "is_correct": false},
+{"text": "Benign Gilbert's syndrome", "is_correct": false},
+{"text": "Iron-deficiency anaemia", "is_correct": false}
+],
+"rationale": "Concentrated unstandardized herbal mixtures containing pyrrolizidine alkaloids or hepatotoxic saponins are a leading cause of acute drug/herb-induced hepatotoxicity in Ghanaian medical wards.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Safety and Toxicity of Herbal Medicines",
+"question_text": "Which factor most frequently contributes to acute kidney injury and heavy metal poisoning among consumers of unregulated street-vended herbal preparations in Ghana?",
+"choices": [
+{"text": "Lack of dosage standardization, contamination with nephrotoxic aristolochic acids or heavy metals (lead, mercury), and intentional adulteration with undeclared orthodox NSAIDs or steroids", "is_correct": true},
+{"text": "Excessive vitamin C content in fresh fruits", "is_correct": false},
+{"text": "Sterile packaging in glass ampoules", "is_correct": false},
+{"text": "Low water content in bottled saline", "is_correct": false}
+],
+"rationale": "Unregulated herbal remedies frequently vary wildly in phytochemical concentration and may be contaminated by polluted soil heavy metals or illegally spiked with diclofenac/dexamethasone, causing acute tubular necrosis and gastrointestinal bleeding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Safety and Toxicity of Herbal Medicines",
+"question_text": "A chronic arthritis patient who has been taking an unlabelled 'miracle joint pain herbal capsule' daily for 6 months presents with a round 'moon face,' truncal obesity, proximal muscle weakness, hyperglycaemia, and acute upper gastrointestinal bleeding. What hidden adulterant in the herbal capsule best explains this clinical syndrome?",
+"choices": [
+{"text": "Undeclared corticosteroids (e.g., dexamethasone or prednisolone) combined with NSAIDs", "is_correct": true},
+{"text": "Pure ascorbic acid", "is_correct": false},
+{"text": "Oral rehydration salts", "is_correct": false},
+{"text": "Ferrous sulphate", "is_correct": false}
+],
+"rationale": "Cushingoid features, steroid-induced diabetes, and peptic ulcer haemorrhage in a patient taking unapproved herbal pain remedies strongly indicate covert adulteration with synthetic glucocorticoids and NSAIDs, requiring careful supervised steroid tapering to avoid adrenal crisis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"question_text": "A 55-year-old patient taking oral warfarin following mechanical mitral valve replacement starts consuming large daily amounts of garlic supplements, ginger extracts, and Ginkgo biloba alongside his anticoagulant. His INR rises from 2.6 to 5.8 and he develops epistaxis and bleeding gums. What is the pharmacological mechanism of this drug-herb interaction?",
+"choices": [
+{"text": "Additive antiplatelet and anticoagulant effects that potentiate warfarin and increase bleeding risk", "is_correct": true},
+{"text": "Enhanced hepatic synthesis of vitamin K-dependent clotting factors", "is_correct": false},
+{"text": "Complete blockage of warfarin absorption in the stomach", "is_correct": false},
+{"text": "Rapid renal excretion of platelets", "is_correct": false}
+],
+"rationale": "Garlic, ginger, and Ginkgo biloba inhibit platelet aggregation and thromboxane synthesis; when combined with warfarin, they synergistically impair haemostasis and markedly elevate haemorrhage risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"question_text": "A patient living with HIV on a dolutegravir/efavirenz-based antiretroviral therapy (ART) regimen begins taking St. John's Wort (Hypericum perforatum) purchased from a health shop for low mood. After 6 weeks, his viral load rebounds from undetectable to 18,000 copies/mL. Why did this interaction occur?",
+"choices": [
+{"text": "St. John's Wort strongly induces cytochrome P450 (CYP3A4) enzymes and P-glycoprotein, accelerating antiretroviral metabolism and causing subtherapeutic drug levels and treatment failure", "is_correct": true},
+{"text": "St. John's Wort destroys HIV antibodies directly in the bloodstream", "is_correct": false},
+{"text": "St. John's Wort causes renal retention of antiretrovirals to toxic levels", "is_correct": false},
+{"text": "Antiretrovirals convert St. John's Wort into active HIV virions", "is_correct": false}
+],
+"rationale": "St. John's Wort is a potent inducer of CYP3A4 and P-glycoprotein drug transporters, markedly reducing plasma concentrations of antiretrovirals, immunosuppressants, warfarin, and oral contraceptives.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"question_text": "A patient with Type 2 diabetes mellitus prescribed oral glibenclamide and metformin also drinks bitter melon (Momordica charantia) and moringa leaf extracts every morning before breakfast. He arrives at the clinic diaphoretic, tremulous, confused, with a random blood glucose of 2.3 mmol/L. What caused this acute emergency?",
+"choices": [
+{"text": "Pharmacodynamic additive hypoglycaemia caused by combining hypoglycaemic herbs with an insulin secretagogue (glibenclamide)", "is_correct": true},
+{"text": "Diabetic ketoacidosis triggered by moringa leaves", "is_correct": false},
+{"text": "Acute hypernatraemia from drinking water", "is_correct": false},
+{"text": "Allergic anaphylaxis to metformin", "is_correct": false}
+],
+"rationale": "Both Momordica charantia and Moringa oleifera exhibit glucose-lowering properties; taken concurrently with sulfonylureas like glibenclamide without dose adjustment, they precipitate severe hypoglycaemia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"question_text": "During preoperative nursing assessment 48 hours before an elective hysterectomy at a regional hospital, a patient reports taking high-dose ginseng, garlic capsules, and vitamin E daily. Why must the nurse report this immediately to the surgeon and anaesthetist?",
+"choices": [
+{"text": "These herbal supplements impair platelet aggregation and increase the risk of excessive intraoperative and postoperative haemorrhage, requiring discontinuation prior to surgery", "is_correct": true},
+{"text": "They cause permanent paralysis under spinal anaesthesia", "is_correct": false},
+{"text": "They neutralize surgical skin antiseptics", "is_correct": false},
+{"text": "They accelerate wound healing so rapidly that sutures cannot be removed", "is_correct": false}
+],
+"rationale": "Standard perioperative guidelines recommend stopping bleeding-risk herbs (garlic, ginkgo, ginseng) at least 7–14 days before surgery to prevent uncontrolled surgical haemorrhage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"question_text": "A patient taking digoxin and furosemide for congestive heart failure regularly consumes senna (Cassia acutifolia) herbal laxative tea for constipation. He presents with nausea, visual halos, and frequent premature ventricular contractions. How did the herbal remedy trigger digoxin toxicity?",
+"choices": [
+{"text": "Stimulant laxative-induced potassium loss (hypokalaemia) combined with furosemide sensitized the myocardium to digoxin toxicity", "is_correct": true},
+{"text": "Senna directly converted digoxin into intravenous potassium", "is_correct": false},
+{"text": "Senna caused severe hyperkalaemia that blocked digoxin binding", "is_correct": false},
+{"text": "Furosemide deactivated the laxative effect of senna", "is_correct": false}
+],
+"rationale": "Chronic senna use depletes serum potassium via gastrointestinal loss; compounded by loop diuretics, hypokalaemia increases digoxin binding to Na+/K+-ATPase pumps and precipitates life-threatening arrhythmias.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Integration of TCM into Modern Healthcare",
+"question_text": "In Ghana's integrated healthcare pilot model implemented across selected regional and municipal hospitals, how do Medical Herbalists operate alongside orthodox physicians and nurses?",
+"choices": [
+{"text": "Medical Herbalists trained at KNUST practice in designated hospital herbal clinics, prescribing FDA-approved standardized herbal medicines and cross-referring complex or surgical cases to orthodox specialists", "is_correct": true},
+{"text": "Medical Herbalists replace all hospital surgeons and ICU physicians", "is_correct": false},
+{"text": "Nurses mix raw unwashed tree bark in the hospital pharmacy sink", "is_correct": false},
+{"text": "Patients are forced to take herbal decoctions before receiving blood transfusions", "is_correct": false}
+],
+"rationale": "Ghana's Ministry of Health integrates BSc-trained Medical Herbalists into public hospitals to offer regulated, evidence-informed herbal care within a formal bidirectional referral system.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Integration of TCM into Modern Healthcare",
+"question_text": "When taking a medication history from an inpatient admitted to a Ghanaian hospital, which communication technique best encourages honest disclosure of herbal remedy use?",
+"choices": [
+{"text": "Ask open-ended, non-judgmental questions such as 'Many people in our community also use herbal teas, bitters, or spiritual remedies alongside hospital medicine—what remedies have you used recently?'", "is_correct": true},
+{"text": "Warn the patient harshly that taking any herbal medicine is primitive and illegal", "is_correct": false},
+{"text": "Skip asking about herbal use unless the patient brings bottles to the bedside", "is_correct": false},
+{"text": "Ridicule the patient's family in front of other ward patients for consulting a herbalist", "is_correct": false}
+],
+"rationale": "Patients frequently conceal traditional medicine use out of fear of reprimand by hospital staff; normalizing the question empathetically elicits vital safety information regarding toxicity and drug-herb interactions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "A Community Health Nurse at a CHPS compound notices that many local residents with febrile convulsions or snakebite visit a respected community herbalist first, resulting in delayed hospital arrival. What is the most constructive collaborative strategy?",
+"choices": [
+{"text": "Engage the herbalist respectfully through community leaders, conduct joint sensitization on emergency red-flag signs, and establish a rapid mutual referral pathway with simple referral slips", "is_correct": true},
+{"text": "Report the herbalist to the police for witchcraft without discussing clinical danger signs", "is_correct": false},
+{"text": "Refuse to treat any patient at the CHPS compound who previously visited a herbalist", "is_correct": false},
+{"text": "Give the herbalist hospital vials of anti-snake venom to inject unsupervised at home", "is_correct": false}
+],
+"rationale": "Training traditional healers to recognize life-threatening danger signs (such as coma, severe bleeding, or envenomation) and rewarding prompt referral bridges community trust and reduces preventable mortality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Referral and Collaboration with Traditional Healers",
+"question_text": "A traditional bone setter in a peri-urban district agrees to collaborate with the district hospital orthopedic clinic. Which boundary of practice ensures safe collaboration for patients with fractures?",
+"choices": [
+{"text": "Open fractures, neurovascular compromise, joint dislocations, and malunions are referred immediately to the hospital orthopedic team, while uncomplicated closed sprains receive non-constrictive follow-up", "is_correct": true},
+{"text": "The bone setter performs open internal fixation surgery inside the traditional shrine", "is_correct": false},
+{"text": "Hospital nurses apply tight unpadded bamboo splints to open compound fractures", "is_correct": false},
+{"text": "All patients with open fractures stay at the bone setter's compound for 3 months before X-ray", "is_correct": false}
+],
+"rationale": "Clear clinical triage criteria prevent osteomyelitis, tetanus, and compartment syndrome from open or neurovascularly compromised fractures while fostering respectful collaboration.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A mother brings her 2-year-old child with severe dehydration from acute watery diarrhoea to a health centre, explaining that the family initially withheld fluids and consulted a spiritualist because they believed the diarrhoea was caused by 'asram' (a traditional folk illness). How should the nurse respond?",
+"choices": [
+{"text": "Initiate oral/IV rehydration immediately to save the child's life, respect the mother's concern without mockery, and gently explain how fluid replacement restores strength alongside any harmless cultural prayers", "is_correct": true},
+{"text": "Scold the mother for her cultural beliefs and delay rehydration until she apologizes", "is_correct": false},
+{"text": "Confirm that fluids worsen 'asram' and withhold oral rehydration salts", "is_correct": false},
+{"text": "Discharge the dehydrated child back to the spiritualist without treatment", "is_correct": false}
+],
+"rationale": "Cultural humility requires prioritizing life-saving biomedical care while addressing folk illness concepts empathetically so mothers accept rehydration without feeling culturally alienated.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "Which socio-cultural and structural factors most commonly drive pluralistic health-seeking behaviour (simultaneous or sequential use of orthodox and traditional care) in Ghana?",
+"choices": [
+{"text": "Holistic beliefs linking chronic illness to spiritual or social disharmony, geographic proximity and flexible payment terms of traditional healers, and perceived empathy in healer-client communication", "is_correct": true},
+{"text": "Complete absence of hospitals in every regional capital of Ghana", "is_correct": false},
+{"text": "Legal prohibition against nurses speaking local Ghanaian languages", "is_correct": false},
+{"text": "Higher financial cost of herbal decoctions compared to private air ambulance evacuation", "is_correct": false}
+],
+"rationale": "Ghanaians frequently navigate both systems because traditional healers address perceived spiritual causation, offer accessible payment arrangements, and communicate within shared cultural idioms.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "In certain communities, pregnant women observe food taboos prohibiting eggs, snails, or protein-rich bushmeat out of fear that the child will develop drooling or behavioural traits resembling those animals. How should an antenatal nurse counsel a pregnant client with mild anaemia who observes these taboos?",
+"choices": [
+{"text": "Respect her cultural boundaries while identifying culturally acceptable, affordable local protein and iron-rich alternatives such as beans, groundnuts, kontomire (cocoyam leaves), and small fish (herrings/anchovies)", "is_correct": true},
+{"text": "Force her to eat boiled eggs in front of the clinic staff", "is_correct": false},
+{"text": "Tell her nutrition does not affect maternal anaemia or fetal growth", "is_correct": false},
+{"text": "Ridicule her elders' traditions during group antenatal education", "is_correct": false}
+],
+"rationale": "Substituting taboo foods with culturally acceptable, locally available iron and protein sources achieves nutritional goals without forcing the client to violate deeply held cultural norms.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical and Legal Considerations in TCM",
+"question_text": "A competent adult patient diagnosed with early-stage breast cancer at a teaching hospital declines recommended lumpectomy and chemotherapy, stating she prefers to pursue spiritual healing and registered herbal therapy first. Applying ethical principles and the GHS Patients' Charter, what is the nurse's appropriate action?",
+"choices": [
+{"text": "Ensure she has received clear, unbiased information about cancer progression risks and treatment benefits, respect her autonomous decision, document the informed refusal, and keep the door open for supportive follow-up", "is_correct": true},
+{"text": "Restrain the patient physically and force her into the operating theatre", "is_correct": false},
+{"text": "Refuse to ever readmit her to the hospital if she changes her mind later", "is_correct": false},
+{"text": "Tell her family she has lost legal sanity because she chose traditional care", "is_correct": false}
+],
+"rationale": "Respect for autonomy upholds a capacitated adult's right to refuse biomedical treatment after thorough disclosure, while non-abandonment ensures compassionate re-engagement whenever the patient seeks further care.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical and Legal Considerations in TCM",
+"question_text": "A 7-year-old child presents to a district hospital emergency unit with severe life-threatening malaria anaemia (Hb 3.8 g/dL) and cerebral malaria convulsions. The parents insist on taking the child immediately to a spiritual healer instead of allowing a life-saving blood transfusion and IV artesunate. What is the legal and ethical duty of the healthcare team in Ghana?",
+"choices": [
+{"text": "Invoke the best interests of the child under Ghana's Children's Act (Act 560) and emergency medical duty of care, notify the medical director/social welfare immediately, and administer life-saving treatment", "is_correct": true},
+{"text": "Allow the parents to remove the convulsing child to die without intervention", "is_correct": false},
+{"text": "Discharge the child with oral herbal bitters alone", "is_correct": false},
+{"text": "Wait 7 days for a non-urgent civil court hearing while withholding artesunate", "is_correct": false}
+],
+"rationale": "While competent adults may refuse care for themselves, parents cannot legally refuse life-saving emergency treatment for a minor child; Ghanaian child protection law prioritizes the child's right to life.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Safety and Toxicity of Herbal Medicines",
+"question_text": "An emergency nurse triages four patients who recently used traditional or complementary remedies. Which patient must be prioritized for IMMEDIATE life-saving intervention?",
+"choices": [
+{"text": "A 30-year-old man who ingested an unknown herbal root concoction 30 minutes ago and now presents with stridor, swollen tongue/lips, wheezing, and BP 78/44 mmHg", "is_correct": true},
+{"text": "A 50-year-old woman asking whether she can drink chamomile tea with her antihypertensive tablets", "is_correct": false},
+{"text": "A 22-year-old man with mild heartburn after drinking concentrated ginger water", "is_correct": false},
+{"text": "A 40-year-old woman requesting a referral letter to the hospital's Medical Herbalist clinic", "is_correct": false}
+],
+"rationale": "Stridor, angioedema, bronchospasm, and hypotension indicate severe anaphylactic shock triggered by the herbal ingestion, requiring immediate airway protection and intramuscular adrenaline (epinephrine).",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Types of Traditional Healers (Herbalists, Spiritual Healers, Traditional Birth Attendants, Bone Setters)",
+"question_text": "On a surgical triage shift, four patients arrive after seeking care from traditional practitioners. Which patient requires IMMEDIATE emergency surgical intervention first?",
+"choices": [
+{"text": "A 16-year-old boy with a tightly splinted forearm fracture from a bone setter exhibiting tense forearm swelling, excruciating pain on passive finger extension, and pulseless cold fingers", "is_correct": true},
+{"text": "A 45-year-old woman with chronic knee osteoarthritis seeking an X-ray after herbal massage", "is_correct": false},
+{"text": "A 28-year-old man with a healed closed clavicle fracture requesting physiotherapy exercises", "is_correct": false},
+{"text": "A 35-year-old woman with mild skin staining from topical herbal clay", "is_correct": false}
+],
+"rationale": "Acute compartment syndrome threatens irreversible muscle necrosis and limb loss within hours; immediate splint removal and urgent fasciotomy evaluation take absolute triage priority.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"question_text": "In an outpatient anticoagulation and chronic care clinic, an RPN reviews four patients reporting concurrent herbal use. Which patient requires IMMEDIATE priority assessment and physician notification?",
+"choices": [
+{"text": "A 60-year-old man on warfarin taking daily high-dose garlic and ginseng extracts who reports black tarry stools (melaena) and dizziness upon standing", "is_correct": true},
+{"text": "A 34-year-old woman on multivitamins who drinks occasional peppermint tea", "is_correct": false},
+{"text": "A 48-year-old man on atorvastatin who uses topical shea butter for dry skin", "is_correct": false},
+{"text": "A 29-year-old woman taking paracetamol who inhales eucalyptus steam for a mild cold", "is_correct": false}
+],
+"rationale": "Melaena and orthostatic dizziness in a warfarinized patient taking antiplatelet herbs signal active upper gastrointestinal haemorrhage requiring urgent INR testing, drug/herb cessation, and haemodynamic stabilization.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies and Their Uses",
+"question_text": "A rural health centre nurse receives four phone calls/walk-ins involving traditional remedies. Which situation must the nurse prioritize FIRST?",
+"choices": [
+{"text": "A grand multipara in active labour who ingested a traditional herbal oxytocic and now has continuous agonizing abdominal pain, absent fetal heart tones, and maternal tachycardia (136 bpm) with BP 84/50 mmHg", "is_correct": true},
+{"text": "A postpartum mother asking how to prepare nutritious moringa soup", "is_correct": false},
+{"text": "A local herbalist requesting dates for the next District Health Directorate stakeholder meeting", "is_correct": false},
+{"text": "A nursing student asking for the botanical name of neem tree (Azadirachta indica)", "is_correct": false}
+],
+"rationale": "Continuous pain, fetal demise, and haemorrhagic shock following herbal uterotonic ingestion strongly indicate uterine rupture, requiring immediate resuscitation and emergency ambulance transfer for laparotomy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Safety and Toxicity of Herbal Medicines",
+"question_text": "During a community health outreach, four residents ask questions about using local herbal preparations. Which intervention should the nurse prioritize to prevent acute paediatric poisoning?",
+"choices": [
+{"text": "Advise a mother not to administer concentrated herbal enemas ('bentoa') containing pepper, ginger, or caustic roots to her 6-month-old infant with fever", "is_correct": true},
+{"text": "Explain how to dry hibiscus petals cleanly in the sun", "is_correct": false},
+{"text": "Discuss the history of the Centre for Plant Medicine Research", "is_correct": false},
+{"text": "List the requirements for registering a commercial herbal pharmacy", "is_correct": false}
+],
+"rationale": "Traditional caustic herbal enemas in infants frequently cause severe chemical colitis, rectal necrosis, electrolyte derangement, and sepsis, making immediate harm-prevention counselling urgent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Integration of TCM into Modern Healthcare",
+"question_text": "A nurse manager in a municipal hospital is establishing safe clinical governance for patients co-managed by the orthodox medical unit and the hospital's integrated Medical Herbalist clinic. Which practice should be prioritized FIRST?",
+"choices": [
+{"text": "Mandate a unified shared medical record and mandatory medication reconciliation check so both orthodox prescribers and Medical Herbalists view all active drugs and herbal formulations to prevent duplicate therapy or interactions", "is_correct": true},
+{"text": "Prohibit orthodox doctors and Medical Herbalists from ever reading each other's clinical notes", "is_correct": false},
+{"text": "Allow patients to take unlabelled external street concoctions while admitted on the acute ward", "is_correct": false},
+{"text": "Eliminate vital sign monitoring for patients attending the herbal clinic", "is_correct": false}
+],
+"rationale": "Integrated documentation and medication reconciliation prevent dangerous overlapping toxicities (such as combined hepatotoxicity or additive hypotension) across parallel treatment streams.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Common Ghanaian Herbal Remedies and Their Uses",
+"question_text": "Neem tree (Azadirachta indica) leaves and bark are widely used in Ghanaian communities for fever and skin infections. Which safe nursing guidance should accompany education on neem use?",
+"choices": [
+{"text": "While topical neem preparations may soothe minor skin irritation, concentrated oral neem oil or bark decoctions can cause severe hepatotoxicity and Reye-like encephalopathy in young children and must never replace prompt malaria RDT testing and ACT treatment", "is_correct": true},
+{"text": "Infants with cerebral malaria should be given pure neem seed oil orally instead of artesunate", "is_correct": false},
+{"text": "Neem leaves sterilize surgical instruments completely when rubbed cold", "is_correct": false},
+{"text": "Pregnant women should drink concentrated neem bark daily to induce immunity", "is_correct": false}
+],
+"rationale": "Oral neem oil is toxic in children and pregnant women, and relying on unstandardized leaf decoctions for malaria delays curative artemisinin-based combination therapy (ACT).",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical and Legal Considerations in TCM",
+"question_text": "Under Ghana's Food and Drugs Authority (FDA) and Traditional Medicine Practice Council regulations, why is it illegal for a nurse to sell unapproved personal herbal mixtures to patients on a government hospital ward?",
+"choices": [
+{"text": "It violates N&MC conflict-of-interest rules, breaches hospital procurement regulations, and exposes vulnerable patients to unregulated products lacking FDA safety clearance", "is_correct": true},
+{"text": "Nurses are legally allowed to sell any unlabelled remedy on wards if they split profits with patients", "is_correct": false},
+{"text": "Only ward orderlies are permitted to sell herbal products to inpatients", "is_correct": false},
+{"text": "FDA approval is required only for imported cosmetics, never for oral medicines", "is_correct": false}
+],
+"rationale": "Selling unapproved remedies exploits the nurse-patient fiduciary relationship and breaches both N&MC ethical standards and statutory drug safety laws.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Cultural Beliefs and Health-Seeking Behaviour",
+"question_text": "A patient with newly diagnosed pulmonary tuberculosis tells the chest clinic nurse that his extended family believes a rival neighbour bewitched him, and they plan to take him to a distant prayer camp for 6 months without his anti-TB drugs. How can the nurse best promote adherence while respecting his faith?",
+"choices": [
+{"text": "Reassure him that prayer and spiritual support can continue alongside daily Directly Observed Treatment (DOTS), explain clearly how Mycobacterium tuberculosis is cured by the 6-month antibiotic regimen, and involve a trusted family supporter", "is_correct": true},
+{"text": "Tell him he must abandon his religious faith completely to receive TB tablets", "is_correct": false},
+{"text": "Give him all 6 months of rifampicin at once without follow-up", "is_correct": false},
+{"text": "Agree that antibiotics cannot cure tuberculosis caused by spiritual curses", "is_correct": false}
+],
+"rationale": "Integrating spiritual coping alongside uninterrupted DOTS therapy prevents treatment default, community transmission, and multidrug-resistant tuberculosis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Introduction to Complementary and Traditional Medicine (TCM)",
+"question_text": "Which non-pharmacological complementary therapy taught in holistic nursing practice uses guided slow diaphragmatic breathing and progressive muscle relaxation to lower sympathetic nervous system arousal in anxious preoperative patients?",
+"choices": [
+{"text": "Mind-body relaxation therapy", "is_correct": true},
+{"text": "Scarification and bloodletting", "is_correct": false},
+{"text": "High-dose heavy metal chelation", "is_correct": false},
+{"text": "Unmodified electroconvulsive shock", "is_correct": false}
+],
+"rationale": "Mind-body interventions such as guided imagery, meditation, and progressive muscle relaxation safely reduce cortisol, heart rate, and preoperative anxiety without drug interactions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Drug-Herb Interactions (e.g., Warfarin with herbal remedies)",
+"question_text": "A hypertensive patient stabilized on oral nifedipine (a calcium channel blocker) begins drinking large quantities of grapefruit juice and concentrated herbal bitters daily, and subsequently presents with dizziness, flushing, ankle oedema, and BP 88/54 mmHg. What caused this excessive hypotension?",
+"choices": [
+{"text": "Inhibition of intestinal CYP3A4 metabolism by furanocoumarins in grapefruit, markedly increasing nifedipine bioavailability and vasodilatory effect", "is_correct": true},
+{"text": "Rapid destruction of nifedipine in the urinary bladder", "is_correct": false},
+{"text": "Conversion of nifedipine into adrenaline", "is_correct": false},
+{"text": "Sudden increase in dietary sodium retention", "is_correct": false}
+],
+"rationale": "Grapefruit compounds irreversibly inhibit gut-wall CYP3A4 enzymes, preventing first-pass metabolism of dihydropyridine calcium channel blockers like nifedipine and causing toxic systemic drug accumulation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ghana Traditional Medicine Council",
+"question_text": "Which umbrella national association unites registered traditional medicine practitioners across Ghana and collaborates with the Ministry of Health and Traditional Medicine Practice Council on training and standards?",
+"choices": [
+{"text": "Ghana Federation of Traditional Medicine Practitioners Associations (GHAFTRAM)", "is_correct": true},
+{"text": "Ghana Registered Nurses and Midwives Association (GRNMA)", "is_correct": false},
+{"text": "Pharmaceutical Society of Ghana (PSGH)", "is_correct": false},
+{"text": "Ghana Medical Association (GMA)", "is_correct": false}
+],
+"rationale": "GHAFTRAM serves as the recognized umbrella body representing herbalists, traditional birth attendants, bone setters, and spiritual healers in policy dialogues with the Ministry of Health.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Safety and Toxicity of Herbal Medicines",
+"question_text": "When educating patients at a polyclinic on safe use of registered Ghanaian herbal medicines, which instruction is most important for preventing accidental overdose and toxicity?",
+"choices": [
+{"text": "Follow the exact measured dosage on the FDA-approved label using a calibrated spoon/cup rather than drinking directly from the bottle, and never mix multiple unlabelled herbal bitters together", "is_correct": true},
+{"text": "Double the dose whenever symptoms feel severe because plant products cannot cause toxicity", "is_correct": false},
+{"text": "Store liquid herbal decoctions in warm direct sunlight for several months after opening", "is_correct": false},
+{"text": "Share adult herbal mixtures freely with infants by estimating drops", "is_correct": false}
+],
+"rationale": "A common misconception is that 'natural means completely safe'; standardized dosing, proper storage to prevent fungal aflatoxin contamination, and avoiding poly-herbal mixing prevent acute organ toxicity.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
