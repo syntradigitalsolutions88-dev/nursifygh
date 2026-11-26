@@ -20,6 +20,7 @@ from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
+from django.db.models import Q
 from django.http import FileResponse
 from django.utils import timezone
 from django.utils.encoding import force_bytes, force_str
@@ -39,7 +40,14 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.views import TokenObtainPairView
 
 from .email_service import send_welcome_email
-from .models import AmbassadorCommission, ClinicalLog, ClinicalSkill
+from .models import (
+    AmbassadorCommission,
+    ClinicalLog,
+    ClinicalSkill,
+    UserNotification,
+    BroadcastNotification,
+    Feedback,
+)
 from .serializers import (
     AmbassadorCommissionSerializer,
     ClinicalLogSerializer,
@@ -49,6 +57,10 @@ from .serializers import (
     PasswordResetRequestSerializer,
     UserProfileSerializer,
     UserRegistrationSerializer,
+    UserNotificationSerializer,
+    BroadcastNotificationSerializer,
+    FeedbackSerializer,
+    FeedbackCreateSerializer,
 )
 
 User = get_user_model()
@@ -1280,3 +1292,513 @@ def ai_ncp_autofill(request):
     except Exception as exc:
         logger.exception("Groq exception: %s", exc)
         return Response({"error": f"AI request failed: {str(exc)}"}, status=500)
+
+
+
+# ─── Notifications & Feedback ──────────────────────────────────────
+
+
+class NotificationFeedView(APIView):
+    """Return combined feed: active broadcasts + personal unread notifications."""
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        user = request.user
+        now = timezone.now()
+
+        broadcasts = BroadcastNotification.objects.filter(is_active=True).filter(
+            Q(expires_at__isnull=True) | Q(expires_at__gt=now)
+        )
+        broadcasts = broadcasts.filter(
+            Q(target_program="") | Q(target_program=user.program)
+        )
+        broadcasts = broadcasts.filter(
+            Q(target_level__isnull=True) | Q(target_level=user.level)
+        )
+        broadcasts = broadcasts.filter(
+            Q(target_paid_only=False) | Q(target_paid_only=user.has_paid)
+        )
+
+        personal = UserNotification.objects.filter(user=user, is_read=False)[:20]
+
+        broadcast_count = broadcasts.count()
+        personal_unread = UserNotification.objects.filter(user=user, is_read=False).count()
+
+        return Response({
+            "broadcasts": BroadcastNotificationSerializer(broadcasts, many=True).data,
+            "personal": UserNotificationSerializer(personal, many=True).data,
+            "unread_count": broadcast_count + personal_unread,
+        })
+
+
+class MarkNotificationReadView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request, notification_id):
+        try:
+            n = UserNotification.objects.get(id=notification_id, user=request.user)
+        except UserNotification.DoesNotExist:
+            return Response({"error": "Not found"}, status=404)
+        n.is_read = True
+        n.save(update_fields=["is_read"])
+        return Response({"status": "ok"})
+
+
+class MarkAllNotificationsReadView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+        n = UserNotification.objects.filter(user=request.user, is_read=False).update(is_read=True)
+        return Response({"marked": n})
+
+
+class FeedbackListCreateView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        items = Feedback.objects.filter(user=request.user)[:20]
+        return Response(FeedbackSerializer(items, many=True).data)
+
+    def post(self, request):
+        serializer = FeedbackCreateSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        fb = serializer.save(user=request.user)
+        return Response(FeedbackSerializer(fb).data, status=status.HTTP_201_CREATED)
+        
+
+# ─── Admin Notification & Feedback API ──────────────────────────────
+
+
+class AdminNotificationsOverviewView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        if not (request.user.is_staff or request.user.is_superuser):
+            return Response({"error": "Admin access required."}, status=403)
+
+        now = timezone.now()
+
+        broadcasts = list(BroadcastNotification.objects.order_by("-created_at")[:50])
+        broadcast_rows = []
+        for b in broadcasts:
+            # Count matching users
+            target_qs = User.objects.filter(is_active=True)
+            if b.target_program:
+                target_qs = target_qs.filter(program=b.target_program)
+            if b.target_level:
+                target_qs = target_qs.filter(level=b.target_level)
+            if b.target_paid_only:
+                target_qs = target_qs.filter(has_paid=True)
+
+            status = "INACTIVE"
+            if b.is_active:
+                if b.expires_at and b.expires_at <= now:
+                    status = "EXPIRED"
+                else:
+                    status = "LIVE"
+
+            broadcast_rows.append({
+                "id": b.id,
+                "title": b.title,
+                "message": b.message,
+                "notification_type": b.notification_type,
+                "target_program": b.target_program or "",
+                "target_level": b.target_level,
+                "target_paid_only": b.target_paid_only,
+                "action_url": b.action_url,
+                "action_label": b.action_label,
+                "is_active": b.is_active,
+                "expires_at": b.expires_at.isoformat() if b.expires_at else None,
+                "created_at": b.created_at.isoformat(),
+                "status": status,
+                "audience_size": target_qs.count(),
+            })
+
+        recent_personal = list(
+            UserNotification.objects.filter(is_read=False)
+            .select_related("user")
+            .order_by("-created_at")[:20]
+        )
+        personal_rows = [
+            {
+                "id": n.id,
+                "user_email": n.user.email,
+                "user_name": n.user.full_name,
+                "title": n.title,
+                "message": n.message,
+                "notification_type": n.notification_type,
+                "created_at": n.created_at.isoformat(),
+            }
+            for n in recent_personal
+        ]
+
+        return Response({
+            "summary": {
+                "total_broadcasts": BroadcastNotification.objects.count(),
+                "live_broadcasts": BroadcastNotification.objects.filter(
+                    is_active=True
+                ).filter(Q(expires_at__isnull=True) | Q(expires_at__gt=now)).count(),
+                "total_personal": UserNotification.objects.count(),
+                "unread_personal": UserNotification.objects.filter(is_read=False).count(),
+            },
+            "broadcasts": broadcast_rows,
+            "personal": personal_rows,
+        })
+
+
+class AdminNotificationsActionView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+        if not (request.user.is_staff or request.user.is_superuser):
+            return Response({"error": "Admin access required."}, status=403)
+
+        action = (request.data.get("action") or "").strip()
+
+        if action == "create_broadcast":
+            title = (request.data.get("title") or "").strip()
+            message = (request.data.get("message") or "").strip()
+            if not title or not message:
+                return Response({"error": "Title and message required."}, status=400)
+
+            broadcast = BroadcastNotification.objects.create(
+                title=title,
+                message=message,
+                notification_type=request.data.get("notification_type") or "INFO",
+                action_url=request.data.get("action_url") or "",
+                action_label=request.data.get("action_label") or "",
+                target_program=request.data.get("target_program") or "",
+                target_level=request.data.get("target_level") or None,
+                target_paid_only=bool(request.data.get("target_paid_only")),
+                is_active=True,
+            )
+            return Response({"ok": True, "id": broadcast.id})
+
+        if action == "toggle_broadcast":
+            bid = request.data.get("broadcast_id")
+            try:
+                b = BroadcastNotification.objects.get(id=bid)
+            except BroadcastNotification.DoesNotExist:
+                return Response({"error": "Broadcast not found."}, status=404)
+            b.is_active = not b.is_active
+            b.save(update_fields=["is_active"])
+            return Response({"ok": True, "is_active": b.is_active})
+
+        if action == "delete_broadcast":
+            bid = request.data.get("broadcast_id")
+            BroadcastNotification.objects.filter(id=bid).delete()
+            return Response({"ok": True})
+
+        if action == "send_personal":
+            email = (request.data.get("email") or "").strip().lower()
+            title = (request.data.get("title") or "").strip()
+            message = (request.data.get("message") or "").strip()
+            if not (email and title and message):
+                return Response({"error": "Email, title, and message required."}, status=400)
+
+            try:
+                user = User.objects.get(email__iexact=email)
+            except User.DoesNotExist:
+                return Response({"error": f"No user with email {email}"}, status=404)
+
+            notif = UserNotification.objects.create(
+                user=user,
+                title=title,
+                message=message,
+                notification_type=request.data.get("notification_type") or "INFO",
+                action_url=request.data.get("action_url") or "",
+                action_label=request.data.get("action_label") or "",
+            )
+            return Response({"ok": True, "id": notif.id, "user": user.email})
+
+        return Response({"error": "Unknown action."}, status=400)
+
+
+class AdminFeedbackOverviewView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get(self, request):
+        if not (request.user.is_staff or request.user.is_superuser):
+            return Response({"error": "Admin access required."}, status=403)
+
+        status_filter = request.query_params.get("status") or "ALL"
+        type_filter = request.query_params.get("type") or "ALL"
+
+        qs = Feedback.objects.select_related("user").order_by("-created_at")
+        if status_filter != "ALL":
+            qs = qs.filter(status=status_filter)
+        if type_filter != "ALL":
+            qs = qs.filter(feedback_type=type_filter)
+
+        items = qs[:100]
+        rows = []
+        for f in items:
+            delta = timezone.now() - f.created_at
+            hours = int(delta.total_seconds() / 3600)
+            age = "just now" if hours < 1 else (f"{hours}h ago" if hours < 24 else f"{hours // 24}d ago")
+
+            rows.append({
+                "id": f.id,
+                "feedback_type": f.feedback_type,
+                "subject": f.subject,
+                "message": f.message,
+                "page_url": f.page_url,
+                "status": f.status,
+                "admin_response": f.admin_response,
+                "responded_at": f.responded_at.isoformat() if f.responded_at else None,
+                "user_email": f.user.email,
+                "user_name": f.user.full_name,
+                "created_at": f.created_at.isoformat(),
+                "age": age,
+            })
+
+        return Response({
+            "summary": {
+                "total": Feedback.objects.count(),
+                "open": Feedback.objects.filter(status="OPEN").count(),
+                "in_progress": Feedback.objects.filter(status="IN_PROGRESS").count(),
+                "resolved": Feedback.objects.filter(status="RESOLVED").count(),
+                "bugs": Feedback.objects.filter(feedback_type="BUG").count(),
+                "suggestions": Feedback.objects.filter(feedback_type="SUGGESTION").count(),
+            },
+            "items": rows,
+        })
+
+
+class AdminFeedbackActionView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+        if not (request.user.is_staff or request.user.is_superuser):
+            return Response({"error": "Admin access required."}, status=403)
+
+        action = (request.data.get("action") or "").strip()
+
+        if action == "reply":
+            fid = request.data.get("feedback_id")
+            response_text = (request.data.get("response") or "").strip()
+            if not response_text:
+                return Response({"error": "Response text required."}, status=400)
+
+            try:
+                fb = Feedback.objects.select_related("user").get(id=fid)
+            except Feedback.DoesNotExist:
+                return Response({"error": "Feedback not found."}, status=404)
+
+            fb.admin_response = response_text
+            fb.responded_at = timezone.now()
+            fb.status = "RESOLVED"
+            fb.save(update_fields=["admin_response", "responded_at", "status"])
+
+            # Also create a personal notification to alert the user
+            UserNotification.objects.create(
+                user=fb.user,
+                title=f"We responded to your {fb.feedback_type.lower()}: {fb.subject[:60]}",
+                message=response_text[:500],
+                notification_type="SUCCESS",
+            )
+            return Response({"ok": True})
+
+        if action == "update_status":
+            fid = request.data.get("feedback_id")
+            new_status = request.data.get("status") or ""
+            if new_status not in ("OPEN", "IN_PROGRESS", "RESOLVED"):
+                return Response({"error": "Invalid status."}, status=400)
+            Feedback.objects.filter(id=fid).update(status=new_status)
+            return Response({"ok": True})
+
+        if action == "delete":
+            fid = request.data.get("feedback_id")
+            Feedback.objects.filter(id=fid).delete()
+            return Response({"ok": True})
+
+        return Response({"error": "Unknown action."}, status=400)
+    
+
+# ─── Admin Broadcast: Templates + AI Generator ──────────────────────
+
+
+BROADCAST_TEMPLATES = [
+    {
+        "id": "bug_fix",
+        "category": "🐛 Bug Fix",
+        "title": "We fixed the quiz repeat bug — hundreds of new questions unlocked",
+        "message": "You told us the questions felt small. We found the bug — the quiz was only pulling a small subset of each course. That's now fixed. You have access to the full question bank. Thank you for your patience. 🙏",
+        "action_url": "/courses",
+        "action_label": "Try a fresh quiz",
+        "notification_type": "SUCCESS",
+    },
+    {
+        "id": "new_feature",
+        "category": "✨ New Feature",
+        "title": "New: CBT Simulator is live",
+        "message": "Take full-length, timed mock exams that match the NMC format. Real questions, real pressure, real feedback — the closest thing to exam day without being there.",
+        "action_url": "/cbt-simulator",
+        "action_label": "Try it now",
+        "notification_type": "FEATURE",
+    },
+    {
+        "id": "exam_reminder",
+        "category": "📅 Exam Reminder",
+        "title": "Your NMC exam is approaching — here's how to focus",
+        "message": "The final weeks before NMC are about smart revision, not more content. Focus on your weakest 3 courses, do 1 mock exam per week, and practice 20 questions daily. You've got this. 💪",
+        "action_url": "/analytics",
+        "action_label": "See my weak areas",
+        "notification_type": "EXAM",
+    },
+    {
+        "id": "trial_ending",
+        "category": "⏰ Trial Ending",
+        "title": "Your free trial ends in 2 days",
+        "message": "You've been making great progress. Keep going — upgrade to the Semester Pass (GHS 30 for 120 days) to continue unlimited access to all questions, mock exams, and care plans.",
+        "action_url": "/subscribe",
+        "action_label": "Continue for GHS 30",
+        "notification_type": "WARNING",
+    },
+    {
+        "id": "trial_extended",
+        "category": "🎁 Trial Extended",
+        "title": "We extended your free trial — 3 more days on us",
+        "message": "We noticed you're making real progress. As a thank you for studying consistently, we've added 3 free days to your trial. Use them well — your weakest topics won't fix themselves. 😊",
+        "action_url": "/dashboard",
+        "action_label": "Keep studying",
+        "notification_type": "SUCCESS",
+    },
+    {
+        "id": "content_update",
+        "category": "📚 Content Update",
+        "title": "New questions just added to your courses",
+        "message": "We've added fresh NMC-style questions across multiple courses, with updated rationales and clinical scenarios from current Ghana Health Service guidelines. Try a quiz today to see them.",
+        "action_url": "/courses",
+        "action_label": "Start a quiz",
+        "notification_type": "INFO",
+    },
+    {
+        "id": "thank_you",
+        "category": "🙏 Thank You",
+        "title": "Thank you for being an early supporter",
+        "message": "You're one of our first students, and I want you to know how much that means. Every quiz you take, every mock exam you finish, every care plan you build helps shape NursifyGH. Thank you. — Founder",
+        "action_url": "/dashboard",
+        "action_label": "Back to dashboard",
+        "notification_type": "SUCCESS",
+    },
+    {
+        "id": "maintenance",
+        "category": "🔧 Maintenance",
+        "title": "Scheduled maintenance this Sunday",
+        "message": "NursifyGH will be offline briefly for updates this Sunday from 2am–4am GMT. All your progress, care plans, and clinical logs are safely saved. We'll be back online at 4am sharp.",
+        "action_url": "",
+        "action_label": "",
+        "notification_type": "WARNING",
+    },
+    {
+        "id": "referral_push",
+        "category": "💰 Referral Push",
+        "title": "Earn GHS for every friend who joins",
+        "message": "Become a NursifyGH Ambassador and earn a commission for every paid signup you refer. Share your unique code with your classmates — it's a win for them, and a win for you.",
+        "action_url": "/ambassador",
+        "action_label": "Become an Ambassador",
+        "notification_type": "FEATURE",
+    },
+    {
+        "id": "milestone",
+        "category": "🎉 Milestone",
+        "title": "6,000+ NMC questions now available on NursifyGH",
+        "message": "We've crossed 6,000 exam-authentic questions across all 4 nursing programs. Every question has a clinical rationale, and every course covers the topics that actually appear in NMC exams.",
+        "action_url": "/courses",
+        "action_label": "Browse courses",
+        "notification_type": "SUCCESS",
+    },
+]
+
+
+@api_view(["GET"])
+@permission_classes([permissions.IsAuthenticated])
+def admin_broadcast_templates(request):
+    """Return pre-made broadcast templates for the admin console."""
+    if not (request.user.is_staff or request.user.is_superuser):
+        return Response({"error": "Admin access required."}, status=403)
+    return Response({"templates": BROADCAST_TEMPLATES})
+
+
+@api_view(["POST"])
+@permission_classes([permissions.IsAuthenticated])
+def admin_generate_broadcast(request):
+    """Use AI to generate a broadcast title + message from a topic hint."""
+    if not (request.user.is_staff or request.user.is_superuser):
+        return Response({"error": "Admin access required."}, status=403)
+
+    topic = (request.data.get("topic") or "").strip()
+    if len(topic) < 5:
+        return Response({"error": "Please describe what the message is about (5+ characters)."}, status=400)
+
+    api_key = getattr(settings, "GROQ_API_KEY", None)
+    if not api_key:
+        return Response({"error": "AI is not configured."}, status=500)
+
+    system_prompt = """You are writing a short in-app notification for Ghanaian nursing students using NursifyGH, an NMC exam-prep platform.
+
+TONE: Warm, direct, founder-speaking-to-student. Never corporate. Never robotic. Occasionally warm emoji (max 1-2).
+
+RULES:
+- Title: 5-10 words, punchy, specific
+- Message: 1-3 short sentences, under 280 characters total
+- Lead with the point — don't bury it
+- If relevant, include a specific action the student should take
+- Suggest an action URL ONLY if it makes sense (options: /courses, /dashboard, /cbt-simulator, /analytics, /revision, /careplans, /subscribe, /ambassador, /ai-tutor)
+- Do not invent features that don't exist
+
+Return ONLY valid JSON, no markdown:
+{
+  "title": "...",
+  "message": "...",
+  "suggested_action_url": "/courses or empty string",
+  "suggested_action_label": "short CTA or empty string",
+  "suggested_type": "INFO"
+}
+
+suggested_type must be one of: INFO, SUCCESS, WARNING, FEATURE, EXAM"""
+
+    try:
+        r = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            json={
+                "model": "llama-3.3-70b-versatile",
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": f"Topic for the broadcast: {topic}"},
+                ],
+                "temperature": 0.7,
+                "max_tokens": 500,
+                "response_format": {"type": "json_object"},
+            },
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            timeout=30,
+        )
+
+        if r.status_code != 200:
+            logger.error("Groq broadcast gen error: %s - %s", r.status_code, r.text[:300])
+            return Response({"error": f"AI error ({r.status_code})."}, status=500)
+
+        content = (r.json()["choices"][0]["message"]["content"] or "").strip()
+        if content.startswith("```json"):
+            content = content[7:]
+        if content.startswith("```"):
+            content = content[3:]
+        if content.endswith("```"):
+            content = content[:-3]
+        content = content.strip()
+
+        start = content.find("{")
+        end = content.rfind("}")
+        if start != -1 and end != -1:
+            content = content[start:end + 1]
+
+        parsed = json.loads(content)
+        return Response(parsed)
+
+    except json.JSONDecodeError:
+        return Response({"error": "AI returned invalid formatting. Try again."}, status=500)
+    except Exception as e:
+        logger.exception("Broadcast generation failed")
+        return Response({"error": f"AI error: {str(e)}"}, status=500)

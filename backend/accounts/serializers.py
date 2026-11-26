@@ -6,7 +6,14 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
 from rest_framework import serializers
 
-from .models import AmbassadorCommission, ClinicalLog, ClinicalSkill
+from .models import (
+    AmbassadorCommission,
+    ClinicalLog,
+    ClinicalSkill,
+    UserNotification,
+    BroadcastNotification,
+    Feedback,
+)
 
 User = get_user_model()
 
@@ -25,8 +32,6 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         )
         read_only_fields = ("id",)
 
-    # FIX: Check if the email already exists before trying to save to the database.
-    # This prevents the 500 IntegrityError crash and returns a clean 400 error.
     def validate_email(self, value):
         if User.objects.filter(email__iexact=value).exists():
             raise serializers.ValidationError("A user with this email already exists. Please log in instead.")
@@ -37,9 +42,6 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({"password_confirm": "Passwords do not match."})
         return attrs
 
-    # FIX: validate the referral code at signup. Only accept codes that belong
-    # to an actual ambassador. Blank / missing is fine (optional field).
-    # Normalise to upper-case so the DB lookup is deterministic.
     def validate_referred_by(self, value):
         if not value or not str(value).strip():
             return ""
@@ -52,13 +54,10 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data: dict) -> User:
         password = validated_data.pop("password")
-        # FIX: ensure a blank referred_by is stored as empty string, not None,
-        # so downstream code only needs to check `if self.referred_by:`.
         if not validated_data.get("referred_by"):
             validated_data["referred_by"] = ""
 
         user = User.objects.create_user(password=password, **validated_data)
-        # Grant a 3-day free trial
         user.start_trial(days=3)
         return user
 
@@ -132,3 +131,51 @@ class AmbassadorCommissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = AmbassadorCommission
         fields = ("id", "amount_ghs", "is_paid_out", "created_at", "referred_student_email")
+
+
+# ─── Notifications & Feedback ────────────────────────────────────
+
+
+class UserNotificationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserNotification
+        fields = (
+            "id", "title", "message", "notification_type",
+            "action_url", "action_label", "is_read", "created_at",
+        )
+        read_only_fields = ("id", "created_at")
+
+
+class BroadcastNotificationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BroadcastNotification
+        fields = (
+            "id", "title", "message", "notification_type",
+            "action_url", "action_label", "created_at",
+        )
+
+
+class FeedbackSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Feedback
+        fields = (
+            "id", "feedback_type", "subject", "message", "page_url",
+            "status", "admin_response", "responded_at", "created_at",
+        )
+        read_only_fields = ("id", "status", "admin_response", "responded_at", "created_at")
+
+
+class FeedbackCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Feedback
+        fields = ("feedback_type", "subject", "message", "page_url")
+
+    def validate_subject(self, value):
+        if len(value.strip()) < 5:
+            raise serializers.ValidationError("Subject must be at least 5 characters.")
+        return value.strip()
+
+    def validate_message(self, value):
+        if len(value.strip()) < 10:
+            raise serializers.ValidationError("Message must be at least 10 characters.")
+        return value.strip()

@@ -5,6 +5,7 @@ import PaywallGate from "./components/PaywallGate"
 import PwaInstallPrompt from "./components/PwaInstallPrompt"
 import AboutPage from "./pages/AboutPage"
 import AdminCommissionsPage from "./pages/AdminCommissionsPage"
+import AdminNotificationsPage from "./pages/AdminNotificationsPage"
 import AmbassadorPage from "./pages/AmbassadorPage"
 import AnalyticsPage from "./pages/AnalyticsPage"
 import StudyPlannerPage from "./pages/StudyPlannerPage"
@@ -78,7 +79,10 @@ export default function App() {
 
         {/* Ambassador Program */}
         <Route path="/ambassador" element={<ProtectedRoute><AmbassadorPage /></ProtectedRoute>} />
+
+        {/* Admin Console */}
         <Route path="/admin-commissions" element={<ProtectedRoute><AdminCommissionsPage /></ProtectedRoute>} />
+        <Route path="/admin-notifications" element={<ProtectedRoute><AdminNotificationsPage /></ProtectedRoute>} />
 
         {/* Phase 2 Intelligent Learning Modules */}
         <Route path="/analytics" element={

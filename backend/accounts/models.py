@@ -284,3 +284,106 @@ class AmbassadorCommission(models.Model):
     def payout_due_date(self):
         """Commission is paid out 3 days after it is earned."""
         return self.created_at + timedelta(days=3)
+    # ─── Notifications & Feedback ────────────────────────────────────
+
+
+class UserNotification(models.Model):
+    """A personal notification sent to a single user."""
+    TYPE_CHOICES = [
+        ('INFO', 'Info'),
+        ('SUCCESS', 'Success'),
+        ('WARNING', 'Warning'),
+        ('FEATURE', 'New Feature'),
+        ('EXAM', 'Exam Reminder'),
+    ]
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='notifications')
+    title = models.CharField(max_length=200)
+    message = models.TextField()
+    notification_type = models.CharField(max_length=20, choices=TYPE_CHOICES, default='INFO')
+    action_url = models.CharField(max_length=300, blank=True, help_text="e.g. /quizzes/abc123")
+    action_label = models.CharField(max_length=60, blank=True, help_text="e.g. Start now")
+
+    is_read = models.BooleanField(default=False, db_index=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ('-created_at',)
+        indexes = [
+            models.Index(fields=['user', 'is_read', '-created_at'], name='idx_notif_user_read'),
+        ]
+
+    def __str__(self):
+        return f"{self.user.email} - {self.title}"
+
+
+class BroadcastNotification(models.Model):
+    """Admin broadcast shown to matching users."""
+    TYPE_CHOICES = UserNotification.TYPE_CHOICES
+
+    title = models.CharField(max_length=200)
+    message = models.TextField()
+    notification_type = models.CharField(max_length=20, choices=TYPE_CHOICES, default='INFO')
+    action_url = models.CharField(max_length=300, blank=True)
+    action_label = models.CharField(max_length=60, blank=True)
+
+    # Targeting — all blank = everyone
+    target_program = models.CharField(
+        max_length=20, blank=True, choices=NursingProgram.choices,
+        help_text="Leave blank to send to all programs"
+    )
+    target_level = models.PositiveSmallIntegerField(
+        null=True, blank=True, choices=StudentLevel.choices,
+        help_text="Leave blank to send to all levels"
+    )
+    target_paid_only = models.BooleanField(
+        default=False,
+        help_text="If checked, only sends to users who have paid"
+    )
+
+    is_active = models.BooleanField(default=True, db_index=True)
+    expires_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ('-created_at',)
+
+    def __str__(self):
+        return f"[Broadcast] {self.title}"
+
+
+class Feedback(models.Model):
+    """User-submitted feedback, bug report, or suggestion."""
+    TYPE_CHOICES = [
+        ('SUGGESTION', 'Suggestion'),
+        ('BUG', 'Bug Report'),
+        ('QUESTION', 'Question'),
+        ('COMPLAINT', 'Complaint'),
+        ('PRAISE', 'Praise'),
+    ]
+    STATUS_CHOICES = [
+        ('OPEN', 'Open'),
+        ('IN_PROGRESS', 'In Progress'),
+        ('RESOLVED', 'Resolved'),
+    ]
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='feedback')
+    feedback_type = models.CharField(max_length=20, choices=TYPE_CHOICES)
+    subject = models.CharField(max_length=200)
+    message = models.TextField()
+    page_url = models.CharField(max_length=300, blank=True, help_text="Auto-captured from browser")
+
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='OPEN', db_index=True)
+    admin_response = models.TextField(blank=True)
+    responded_at = models.DateTimeField(null=True, blank=True)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ('-created_at',)
+        indexes = [
+            models.Index(fields=['user', 'status', '-created_at'], name='idx_feedback_user'),
+        ]
+
+    def __str__(self):
+        return f"[{self.feedback_type}] {self.subject} — {self.user.email}"

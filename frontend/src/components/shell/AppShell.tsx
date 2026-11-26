@@ -35,6 +35,7 @@ function AnalyticsIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="c
 function PlannerIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg> }
 function SimulatorIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> }
 function TutorIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg> }
+function BellIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg> }
 
 const navItems: NavItem[] = [
     { label: "Dashboard", to: "/dashboard", icon: <DashboardIcon />, end: true },
@@ -110,15 +111,26 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                         </NavLink>
                     ))}
                     {isStaff && (
-                        <NavLink
-                            to="/admin-commissions"
-                            className={({ isActive }) =>
-                                `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isActive ? "bg-brand-100 text-brand-900" : "text-brand-800 bg-brand-50/70 hover:bg-brand-100"}`
-                            }
-                        >
-                            <AmbassadorIcon />
-                            <span>Commissions &amp; Payouts</span>
-                        </NavLink>
+                        <>
+                            <NavLink
+                                to="/admin-commissions"
+                                className={({ isActive }) =>
+                                    `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isActive ? "bg-brand-100 text-brand-900" : "text-brand-800 bg-brand-50/70 hover:bg-brand-100"}`
+                                }
+                            >
+                                <AmbassadorIcon />
+                                <span>Commissions &amp; Payouts</span>
+                            </NavLink>
+                            <NavLink
+                                to="/admin-notifications"
+                                className={({ isActive }) =>
+                                    `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isActive ? "bg-brand-100 text-brand-900" : "text-brand-800 bg-brand-50/70 hover:bg-brand-100"}`
+                                }
+                            >
+                                <BellIcon />
+                                <span>Notifications &amp; Feedback</span>
+                            </NavLink>
+                        </>
                     )}
                 </nav>
 
@@ -187,7 +199,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                 </Link>
                             )}
 
-                            {/* NEW: Notification bell */}
+                            {/* Notification bell */}
                             <NotificationBell />
 
                             <Link to="/support" className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface" aria-label="Help & Support" title="Help & Support">
@@ -211,7 +223,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             {profileOpen && (
                                 <>
                                     <div className="fixed inset-0 z-40" onClick={() => setProfileOpen(false)} />
-                                    <div className="absolute right-0 top-14 z-50 w-60 rounded-xl border border-border bg-white shadow-xl py-1 overflow-hidden">
+                                    <div className="absolute right-0 top-14 z-50 w-64 rounded-xl border border-border bg-white shadow-xl py-1 overflow-hidden">
                                         <div className="px-4 py-3 border-b border-border bg-surface-subtle/50">
                                             <p className="text-sm font-bold text-on-surface truncate">{user.full_name}</p>
                                             <p className="text-xs text-on-surface-muted truncate">{user.email}</p>
@@ -224,9 +236,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                                 <AmbassadorIcon /> Ambassador Program
                                             </Link>
                                             {isStaff && (
-                                                <Link to="/admin-commissions" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
-                                                    <AmbassadorIcon /> Commissions &amp; Payouts
-                                                </Link>
+                                                <>
+                                                    <Link to="/admin-commissions" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                        <AmbassadorIcon /> Commissions &amp; Payouts
+                                                    </Link>
+                                                    <Link to="/admin-notifications" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                        <BellIcon /> Notifications &amp; Feedback
+                                                    </Link>
+                                                </>
                                             )}
                                             <Link to="/my-submissions" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
                                                 <SubmissionsIcon /> My Submissions
