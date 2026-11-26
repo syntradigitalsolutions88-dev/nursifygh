@@ -1,0 +1,658 @@
+{
+"courses": [
+{
+"course_code": "RMS-322",
+"course_title": "Research Methodology and Statistics",
+"category": "FUNDAMENTALS",
+"semester": "S2",
+"topics": [
+"Research Paradigms (Quantitative, Qualitative, Mixed Methods)",
+"Research Process (Problem statement, Literature review, Methodology)",
+"Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"Data Collection Methods and Sampling Techniques",
+"Ethical Principles in Research (Consent, Anonymity, Confidentiality)",
+"Descriptive Statistics (Mean, Median, Mode, Standard Deviation)",
+"Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"Evidence-Based Practice and Critical Appraisal"
+],
+"questions": [
+{
+"topic": "Research Paradigms (Quantitative, Qualitative, Mixed Methods)",
+"question_text": "A Level 300 RGN student at a Ghanaian Nurses' Training College wants to explore the lived emotional experiences and cultural coping strategies of mothers caring for children with sickle cell disease at Korle Bu Teaching Hospital. Which research paradigm is most appropriate for this inquiry?",
+"choices": [
+{"text": "Qualitative phenomenology", "is_correct": true},
+{"text": "Quantitative quasi-experimental design", "is_correct": false},
+{"text": "Retrospective cohort analysis", "is_correct": false},
+{"text": "Cross-sectional correlational survey", "is_correct": false}
+],
+"rationale": "Phenomenology is a qualitative approach designed to understand the essence of individuals' lived experiences and subjective meanings attached to a health phenomenon. Quantitative designs measure numerical variables rather than deep cultural narratives.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Research Paradigms (Quantitative, Qualitative, Mixed Methods)",
+"question_text": "A nursing research team in the Ashanti Region first extracts NHIS outpatient attendance registers to quantify hypertension clinic default rates, and subsequently conducts focus group discussions with defaulters to uncover barriers to follow-up. Which mixed-methods design does this represent?",
+"choices": [
+{"text": "Explanatory sequential design", "is_correct": true},
+{"text": "Exploratory sequential design", "is_correct": false},
+{"text": "Convergent parallel design", "is_correct": false},
+{"text": "Embedded experimental design", "is_correct": false}
+],
+"rationale": "An explanatory sequential mixed-methods design collects and analyzes quantitative data first (NHIS default rates) and then uses qualitative data (focus groups) to explain and contextualize those statistical findings.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Research Paradigms (Quantitative, Qualitative, Mixed Methods)",
+"question_text": "Which philosophical assumption underpins the positivist paradigm commonly used in clinical nursing trials evaluating blood pressure reduction after structured nurse-led counseling?",
+"choices": [
+{"text": "An objective reality exists independently of human perception and can be measured empirically using standardized instruments", "is_correct": true},
+{"text": "Reality is multiple, subjective, and socially constructed through researcher-participant interaction", "is_correct": false},
+{"text": "Truth is entirely relative to historical power structures within hospital wards", "is_correct": false},
+{"text": "Scientific knowledge cannot be generalized beyond a single individual narrative", "is_correct": false}
+],
+"rationale": "Positivism assumes a single, objective reality governed by cause-and-effect laws that can be observed, quantified, and statistically tested without researcher bias.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Research Paradigms (Quantitative, Qualitative, Mixed Methods)",
+"question_text": "While evaluating a qualitative study on midwives' experiences managing postpartum haemorrhage in rural CHPS compounds, which criterion replaces 'internal validity' to establish trustworthiness?",
+"choices": [
+{"text": "Credibility", "is_correct": true},
+{"text": "Statistical power", "is_correct": false},
+{"text": "Inter-rater kappa coefficient", "is_correct": false},
+{"text": "Cronbach's alpha", "is_correct": false}
+],
+"rationale": "In Lincoln and Guba's framework for qualitative trustworthiness, credibility parallels internal validity and is strengthened through member checking, prolonged engagement, and triangulation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Research Paradigms (Quantitative, Qualitative, Mixed Methods)",
+"question_text": "A nurse researcher plans to develop a culturally validated questionnaire measuring stigma toward tuberculosis patients in Northern Ghana, where no existing scale fits local idioms. Which mixed-methods sequence should the researcher prioritize first?",
+"choices": [
+{"text": "Conduct qualitative interviews first to identify local stigma themes before constructing and quantitatively testing the survey items", "is_correct": true},
+{"text": "Administer an unvalidated foreign questionnaire to 500 patients before interviewing anyone", "is_correct": false},
+{"text": "Calculate Pearson correlation coefficients before defining the study population", "is_correct": false},
+{"text": "Run an ANOVA test on hospital bed occupancy rates prior to literature review", "is_correct": false}
+],
+"rationale": "An exploratory sequential design prioritizes qualitative data collection first to discover culturally grounded variables and language, which then inform the creation of a quantitative measurement tool.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Research Process (Problem statement, Literature review, Methodology)",
+"question_text": "A Level 300 student drafts the following research question: 'Among adult diabetic patients attending Sunyani Teaching Hospital (P), does weekly SMS medication reminders (I) compared with standard clinic education (C) reduce HbA1c levels over 6 months (O)?' Which component of the PICOT framework is missing from this statement?",
+"choices": [
+{"text": "None; all five elements (Population, Intervention, Comparison, Outcome, and Timeframe) are explicitly stated", "is_correct": true},
+{"text": "The comparison group (C)", "is_correct": false},
+{"text": "The clinical outcome (O)", "is_correct": false},
+{"text": "The timeframe (T)", "is_correct": false}
+],
+"rationale": "The question clearly specifies Population (adult diabetic patients), Intervention (weekly SMS reminders), Comparison (standard education), Outcome (HbA1c reduction), and Timeframe (6 months), forming a complete clinical PICOT question.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Research Process (Problem statement, Literature review, Methodology)",
+"question_text": "In a study investigating whether nurse-to-patient ratio affects the incidence of surgical site infections on orthopedic wards in Ghana, how are the study variables classified?",
+"choices": [
+{"text": "Nurse-to-patient ratio is the independent variable; surgical site infection incidence is the dependent variable", "is_correct": true},
+{"text": "Surgical site infection is the independent variable; nurse-to-patient ratio is the dependent variable", "is_correct": false},
+{"text": "Both variables are extraneous confounding variables", "is_correct": false},
+{"text": "Nurse-to-patient ratio is the outcome variable; infection is the predictor", "is_correct": false}
+],
+"rationale": "The independent variable (nurse-to-patient ratio) is the presumed cause or influencing factor, whereas the dependent variable (surgical site infection incidence) is the outcome measured to determine the effect.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Research Process (Problem statement, Literature review, Methodology)",
+"question_text": "When conducting a systematic literature review on catheter-associated urinary tract infections (CAUTI) in Ghanaian intensive care units, which source represents primary literature?",
+"choices": [
+{"text": "An original peer-reviewed journal article reporting data collected directly from ICU patients at 37 Military Hospital", "is_correct": true},
+{"text": "A medical-surgical nursing textbook chapter summarizing infection prevention", "is_correct": false},
+{"text": "An encyclopedia entry defining urinary catheterization", "is_correct": false},
+{"text": "A student lecture handout compiling summaries from multiple reviews", "is_correct": false}
+],
+"rationale": "Primary literature consists of firsthand accounts of original empirical research written by the investigators who conducted the study, whereas textbooks and handouts are secondary or tertiary compilations.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Research Process (Problem statement, Literature review, Methodology)",
+"question_text": "Before rolling out a newly translated Twi questionnaire on postnatal depression across ten polyclinics in Greater Accra, a nurse researcher administers it to 20 mothers at a single clinic to check question clarity, completion time, and ambiguous wording. What is this step called?",
+"choices": [
+{"text": "Pilot testing (pre-testing) the instrument", "is_correct": true},
+{"text": "Meta-analysis", "is_correct": false},
+{"text": "Cluster randomization", "is_correct": false},
+{"text": "Post-hoc Bonferroni correction", "is_correct": false}
+],
+"rationale": "Pilot testing is a small-scale trial run of the research instrument conducted prior to the main study to detect flaws, refine wording, and verify feasibility in the local context.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Research Process (Problem statement, Literature review, Methodology)",
+"question_text": "A nursing student submitting a research proposal to the Ghana Health Service Ethics Review Committee has completed the introduction and literature review. Which methodological step must the student prioritize BEFORE collecting any patient data on the wards?",
+"choices": [
+{"text": "Obtain formal ethical clearance and institutional administrative permission from the hospital management", "is_correct": true},
+{"text": "Enter preliminary dummy data into SPSS to test graphing templates", "is_correct": false},
+{"text": "Distribute questionnaires informally to nurses during shift handover", "is_correct": false},
+{"text": "Publish the expected study conclusions in the college newsletter", "is_correct": false}
+],
+"rationale": "Ethical approval from an accredited Institutional Review Board (such as GHS-ERC) and formal gatekeeper permission are mandatory legal and ethical prerequisites before approaching any human participants or accessing clinical records.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Research Process (Problem statement, Literature review, Methodology)",
+"question_text": "A nurse researcher defines 'medication adherence' in a study protocol as 'taking at least 80% of prescribed antihypertensive doses over 30 days as verified by pill count and Morisky scale score.' What is this precise specification termed?",
+"choices": [
+{"text": "Operational definition", "is_correct": true},
+{"text": "Conceptual definition", "is_correct": false},
+{"text": "Null hypothesis", "is_correct": false},
+{"text": "Theoretical framework", "is_correct": false}
+],
+"rationale": "An operational definition specifies the exact procedures, observable criteria, and measurement tools used to quantify an abstract concept within a specific study.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"question_text": "In a municipal hospital in Ghana, researchers identify 80 neonates diagnosed with neonatal sepsis and match them with 80 healthy neonates born in the same week, then review maternal antenatal records backward to compare rates of prolonged rupture of membranes. Which study design is this?",
+"choices": [
+{"text": "Case-control study", "is_correct": true},
+{"text": "Randomized controlled trial", "is_correct": false},
+{"text": "Prospective cohort study", "is_correct": false},
+{"text": "Cross-sectional prevalence study", "is_correct": false}
+],
+"rationale": "A case-control study starts with the outcome (cases with neonatal sepsis vs. controls without sepsis) and looks retrospectively at past exposures (prolonged membrane rupture), making it efficient for studying rare outcomes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"question_text": "Public health nurses follow two groups of pregnant women attending antenatal clinics in the Bono Region—one group exposed to indoor biomass cooking smoke and an unexposed group—over 9 months to compare the incidence of low birth weight. Which study design is being used?",
+"choices": [
+{"text": "Prospective cohort study", "is_correct": true},
+{"text": "Case-control study", "is_correct": false},
+{"text": "Cross-sectional survey", "is_correct": false},
+{"text": "Single-case experimental design", "is_correct": false}
+],
+"rationale": "A prospective cohort study classifies disease-free participants by exposure status at baseline and follows them forward over time to measure the incidence of new outcomes, allowing calculation of relative risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"question_text": "To evaluate whether chlorhexidine gel cord care reduces omphalitis compared with dry cord care in rural districts, newborns are randomly assigned using computer-generated sealed envelopes to either intervention, and outcome assessors are blinded to group assignment. Why is this design considered the gold standard for causal inference?",
+"choices": [
+{"text": "Randomization balances both known and unknown confounding variables across groups, while blinding minimizes measurement bias", "is_correct": true},
+{"text": "It eliminates the need for informed parental consent", "is_correct": false},
+{"text": "It guarantees a 0% attrition rate throughout follow-up", "is_correct": false},
+{"text": "It is cheaper and faster than reviewing existing CHPS registers", "is_correct": false}
+],
+"rationale": "Randomized controlled trials (RCTs) provide the highest level of primary experimental evidence because random allocation distributes confounders equally between arms and blinding prevents observer or performance bias.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"question_text": "A student nurse conducts a survey during the first week of November across four outpatient clinics in Kumasi to determine the point prevalence of burnout among registered nurses and its association with shift length at that single point in time. Which design is this?",
+"choices": [
+{"text": "Descriptive/analytical cross-sectional study", "is_correct": true},
+{"text": "Longitudinal panel study", "is_correct": false},
+{"text": "Double-blind crossover trial", "is_correct": false},
+{"text": "Historical cohort study", "is_correct": false}
+],
+"rationale": "Cross-sectional studies collect exposure and outcome data simultaneously at a single point or brief window in time, providing a snapshot of prevalence though unable to establish temporal causality.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"question_text": "Which measure of association is directly calculated from a case-control study investigating the link between herbal uterotonic ingestion and uterine rupture?",
+"choices": [
+{"text": "Odds Ratio (OR)", "is_correct": true},
+{"text": "Incidence Rate Ratio (IRR)", "is_correct": false},
+{"text": "Number Needed to Treat (NNT)", "is_correct": false},
+{"text": "Attributable Risk Percent from population incidence", "is_correct": false}
+],
+"rationale": "Because case-control studies select participants based on disease status rather than following a defined population at risk, true incidence cannot be computed; therefore, the Odds Ratio is used to estimate relative risk.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"question_text": "A nurse researcher wishes to investigate the causal effect of severe maternal malnutrition during pregnancy on neonatal mortality. Why would a randomized controlled trial withholding nutritional support from pregnant women be rejected in favor of an observational cohort design?",
+"choices": [
+{"text": "Deliberately exposing pregnant women to malnutrition violates non-maleficence and ethical standards, making observational study mandatory", "is_correct": true},
+{"text": "RCTs cannot measure mortality outcomes statistically", "is_correct": false},
+{"text": "Observational studies always have higher internal validity than RCTs", "is_correct": false},
+{"text": "Sample sizes cannot be calculated for pregnant populations", "is_correct": false}
+],
+"rationale": "When an exposure is known or strongly suspected to be harmful, randomly assigning human subjects to that exposure is unethical; researchers must rely on observational cohort or case-control designs instead.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Collection Methods and Sampling Techniques",
+"question_text": "A hospital matron has a complete payroll roster of all 400 nurses working at Tamale Teaching Hospital and selects every 10th nurse after choosing a random starting number between 1 and 10. Which sampling technique is being utilized?",
+"choices": [
+{"text": "Systematic random sampling", "is_correct": true},
+{"text": "Snowball sampling", "is_correct": false},
+{"text": "Quota sampling", "is_correct": false},
+{"text": "Convenience sampling", "is_correct": false}
+],
+"rationale": "Systematic sampling selects elements from an ordered sampling frame at fixed intervals (k = N/n = 400/40 = 10) following a random start, ensuring probability-based representation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection Methods and Sampling Techniques",
+"question_text": "To ensure that findings on workplace violence reflect the exact proportions of Registered General Nurses (60%), Registered Midwives (25%), and Enrolled Nurses (15%) at a regional hospital, the researcher divides the staff list into these three cadres and randomly samples proportionally from each. Which method is this?",
+"choices": [
+{"text": "Proportionate stratified random sampling", "is_correct": true},
+{"text": "Purposive sampling", "is_correct": false},
+{"text": "Multistage cluster sampling", "is_correct": false},
+{"text": "Consecutive sampling", "is_correct": false}
+],
+"rationale": "Stratified random sampling partitions the population into mutually exclusive homogeneous strata (nursing cadres) before drawing random samples from each stratum to guarantee subgroup representation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection Methods and Sampling Techniques",
+"question_text": "A public health nurse researcher wants to interview commercial sex workers in an urban transit hub regarding barriers to accessing HIV pre-exposure prophylaxis (PrEP). Because no formal registry exists and the population is hidden, which non-probability sampling strategy is most effective?",
+"choices": [
+{"text": "Snowball (chain-referral) sampling", "is_correct": true},
+{"text": "Simple random sampling from voter registers", "is_correct": false},
+{"text": "Systematic sampling of outpatient folders", "is_correct": false},
+{"text": "Stratified hospital ward sampling", "is_correct": false}
+],
+"rationale": "Snowball sampling relies on initial participants to refer peers within hard-to-reach or stigmatized networks where no sampling frame exists.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection Methods and Sampling Techniques",
+"question_text": "While auditing hand-hygiene compliance among ward nurses using direct structured observation, the researcher notices that compliance spikes to 95% whenever the researcher stands at the nurses' station with a clipboard, but drops when unobtrusive cameras are reviewed. What phenomenon explains this distortion?",
+"choices": [
+{"text": "The Hawthorne effect (reactivity bias)", "is_correct": true},
+{"text": "Recall bias", "is_correct": false},
+{"text": "Attrition bias", "is_correct": false},
+{"text": "Lead-time bias", "is_correct": false}
+],
+"rationale": "The Hawthorne effect occurs when study participants alter their usual behaviour simply because they are aware they are being observed.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Data Collection Methods and Sampling Techniques",
+"question_text": "A nurse researcher develops a 15-item Likert scale to measure patient satisfaction with NHIS outpatient services and obtains a Cronbach's alpha coefficient of 0.86. How should the researcher interpret this metric?",
+"choices": [
+{"text": "The instrument demonstrates strong internal consistency reliability", "is_correct": true},
+{"text": "The study results are statistically significant at p < 0.05", "is_correct": false},
+{"text": "86% of the patients were dissatisfied with care", "is_correct": false},
+{"text": "The questionnaire lacks face and content validity", "is_correct": false}
+],
+"rationale": "Cronbach's alpha measures internal consistency (how closely related a set of items are as a group); values >= 0.70 (and especially >= 0.80) indicate good reliability.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Data Collection Methods and Sampling Techniques",
+"question_text": "Two research assistants independently score 30 neonates using the APGAR and Ballard maturation scales during a perinatal study in Cape Coast. Which statistical test should the principal investigator run to verify inter-rater reliability between the two nurses?",
+"choices": [
+{"text": "Cohen's kappa (or intraclass correlation coefficient)", "is_correct": true},
+{"text": "Chi-square goodness-of-fit test", "is_correct": false},
+{"text": "Kaplan-Meier survival curve", "is_correct": false},
+{"text": "One-sample t-test", "is_correct": false}
+],
+"rationale": "Cohen's kappa (for categorical ratings) and the intraclass correlation coefficient (for continuous ratings) quantify the degree of agreement between two or more raters beyond chance.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Principles in Research (Consent, Anonymity, Confidentiality)",
+"question_text": "A nurse educator conducting research on clinical competence invites her own Level 300 nursing students to participate in a study, stating that participation is voluntary while holding their end-of-semester practical grading sheets during recruitment. Which ethical principle is most directly compromised?",
+"choices": [
+{"text": "Respect for persons (voluntary informed consent free from coercion or undue influence)", "is_correct": true},
+{"text": "Scientific validity of statistical software", "is_correct": false},
+{"text": "Anonymity of hospital bed numbers", "is_correct": false},
+{"text": "Post-trial publication access", "is_correct": false}
+],
+"rationale": "Because students are in a dependent power relationship with their instructor, recruiting them directly while holding grading authority introduces undue influence and coercion, undermining truly voluntary consent.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Principles in Research (Consent, Anonymity, Confidentiality)",
+"question_text": "In a study examining HIV status and intimate partner violence among pregnant adolescents at a polyclinic, the researcher assigns each participant a unique alphanumeric code (e.g., P-014) and stores the master key linking codes to names in an encrypted, password-protected cabinet accessible only to the principal investigator. Which ethical safeguard is being practiced?",
+"choices": [
+{"text": "Confidentiality (rather than complete anonymity)", "is_correct": true},
+{"text": "Complete anonymity", "is_correct": false},
+{"text": "Deception", "is_correct": false},
+{"text": "Beneficence through public disclosure", "is_correct": false}
+],
+"rationale": "Confidentiality means the researcher can link data to an individual's identity via a secure code list but protects that link from unauthorized disclosure, whereas anonymity means not even the researcher can link responses to any participant.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Research (Consent, Anonymity, Confidentiality)",
+"question_text": "A nurse researcher plans to recruit non-literate rural mothers attending a CHPS child welfare clinic into a study on complementary feeding practices. According to Ghana Health Service Ethics Review Committee guidelines, how must informed consent be obtained?",
+"choices": [
+{"text": "Read and explain the consent form aloud in the mother's local language in the presence of an independent literate witness, followed by the participant's thumbprint and the witness's signature", "is_correct": true},
+{"text": "Have the nurse researcher sign the consent form on the mother's behalf without a witness", "is_correct": false},
+{"text": "Exclude all non-literate mothers from health research to avoid paperwork", "is_correct": false},
+{"text": "Obtain verbal agreement from the clinic security guard", "is_correct": false}
+],
+"rationale": "To uphold justice and autonomy for non-literate participants, ethical guidelines require verbal translation in a comprehensible language attested by an impartial witness alongside the participant's thumbprint.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Research (Consent, Anonymity, Confidentiality)",
+"question_text": "Under the Belmont Report principles applied in Ghanaian biomedical and nursing research, recruiting predominantly low-income public ward patients for risky experimental drug trials while reserving the proven benefits of the drug exclusively for private wealthy clinics violates which ethical principle?",
+"choices": [
+{"text": "Justice", "is_correct": true},
+{"text": "Fidelity", "is_correct": false},
+{"text": "Veracity", "is_correct": false},
+{"text": "Anonymity", "is_correct": false}
+],
+"rationale": "The principle of justice requires fair distribution of both the burdens and the benefits of research so that vulnerable or disadvantaged groups are not exploited.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Principles in Research (Consent, Anonymity, Confidentiality)",
+"question_text": "During data collection on a medical ward, a participant enrolled in a clinical trial on a new wound dressing develops severe localized allergic blistering and asks to withdraw from the study immediately. What is the researcher's priority action?",
+"choices": [
+{"text": "Honor the participant's withdrawal immediately without penalty, remove the experimental dressing, provide standard clinical wound care, and report the adverse event to the Ethics Review Committee", "is_correct": true},
+{"text": "Persuade the patient to stay until the end of the week so the sample size remains intact", "is_correct": false},
+{"text": "Inform the patient that withdrawing forfeits their right to routine hospital care", "is_correct": false},
+{"text": "Delete the adverse event record to protect the sponsor's product", "is_correct": false}
+],
+"rationale": "Respect for autonomy guarantees participants the unconditional right to withdraw at any time without loss of standard medical care, while non-maleficence mandates immediate treatment and reporting of adverse events.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Descriptive Statistics (Mean, Median, Mode, Standard Deviation)",
+"question_text": "A nursing researcher records the length of hospital stay (in days) for 9 patients admitted after emergency appendectomy: 3, 4, 4, 5, 5, 6, 6, 7, and 42 days (due to one patient developing severe pelvic sepsis). Which measure of central tendency best represents the typical length of stay for this group?",
+"choices": [
+{"text": "Median (5 days)", "is_correct": true},
+{"text": "Mean (9.1 days)", "is_correct": false},
+{"text": "Range (39 days)", "is_correct": false},
+{"text": "Standard deviation", "is_correct": false}
+],
+"rationale": "Because the extreme outlier of 42 days heavily skews the arithmetic mean upward to 9.1 days, the median (the middle value, 5 days) and interquartile range provide a far more accurate summary of skewed clinical data.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Descriptive Statistics (Mean, Median, Mode, Standard Deviation)",
+"question_text": "In a large antenatal screening dataset across Greater Accra, maternal haemoglobin levels are normally distributed with a mean of 11.2 g/dL and a standard deviation (SD) of 1.1 g/dL. Approximately what percentage of pregnant women in this sample have haemoglobin levels between 10.1 g/dL and 12.3 g/dL?",
+"choices": [
+{"text": "68%", "is_correct": true},
+{"text": "50%", "is_correct": false},
+{"text": "95%", "is_correct": false},
+{"text": "99.7%", "is_correct": false}
+],
+"rationale": "By the empirical rule for a normal (Gaussian) distribution, approximately 68% of observations fall within plus or minus 1 standard deviation of the mean (11.2 +/- 1.1 = 10.1 to 12.3 g/dL).",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Descriptive Statistics (Mean, Median, Mode, Standard Deviation)",
+"question_text": "In an electronic CHPS health register, variables are coded as follows: Patient Blood Group (A, B, AB, O), Triage Acuity Level (Non-urgent, Urgent, Emergent), and Axillary Temperature in degrees Celsius. Which sequence correctly identifies their levels of measurement?",
+"choices": [
+{"text": "Nominal, Ordinal, Interval", "is_correct": true},
+{"text": "Ordinal, Nominal, Ratio", "is_correct": false},
+{"text": "Ratio, Interval, Nominal", "is_correct": false},
+{"text": "Nominal, Ratio, Ordinal", "is_correct": false}
+],
+"rationale": "Blood group categorizes without rank order (nominal); triage acuity has ordered ranks without equal intervals (ordinal); and Celsius temperature has equal intervals with an arbitrary zero point (interval).",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Descriptive Statistics (Mean, Median, Mode, Standard Deviation)",
+"question_text": "Two surgical wards in a regional hospital both report a mean postoperative pain score of 4.5 out of 10. However, Ward A has a standard deviation of 0.6, whereas Ward B has a standard deviation of 2.8. What does this difference indicate clinically?",
+"choices": [
+{"text": "Pain control is consistent among patients on Ward A, whereas patients on Ward B experience wide variability ranging from very mild to severe pain", "is_correct": true},
+{"text": "Ward B has a significantly lower average pain score than Ward A", "is_correct": false},
+{"text": "Ward A has more outliers than Ward B", "is_correct": false},
+{"text": "Standard deviation cannot be computed for pain scores", "is_correct": false}
+],
+"rationale": "Standard deviation quantifies dispersion around the mean; a small SD indicates tightly clustered, uniform outcomes, while a large SD signals wide spread and inconsistent patient experiences.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Descriptive Statistics (Mean, Median, Mode, Standard Deviation)",
+"question_text": "When analyzing NHIS claims data for outpatient diagnoses at a district hospital, the records officer wants to identify the single most frequently occurring diagnosis during the quarter. Which statistical measure should be reported?",
+"choices": [
+{"text": "Mode", "is_correct": true},
+{"text": "Arithmetic mean", "is_correct": false},
+{"text": "Interquartile range", "is_correct": false},
+{"text": "Variance", "is_correct": false}
+],
+"rationale": "The mode identifies the most frequent category or value in a dataset and is the only measure of central tendency appropriate for nominal categorical variables like diagnosis names.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "A randomized clinical trial compares a new nurse-led discharge education protocol against usual care on 30-day heart failure readmissions in Accra. The study reports a relative risk of 0.62 (95% Confidence Interval: 0.44 to 0.87; p = 0.006). How should a nurse clinician interpret these results?",
+"choices": [
+{"text": "The protocol significantly reduced 30-day readmissions by 38%, because the p-value is less than 0.05 and the 95% CI does not cross 1.0", "is_correct": true},
+{"text": "The difference is due to chance alone because the confidence interval is below 1.0", "is_correct": false},
+{"text": "The intervention increased readmissions by 62%", "is_correct": false},
+{"text": "The findings are statistically non-significant and clinically useless", "is_correct": false}
+],
+"rationale": "A relative risk of 0.62 indicates a 38% reduction in risk, and because the entire 95% confidence interval (0.44–0.87) lies below the null value of 1.0 (consistent with p = 0.006 < 0.05), the protective effect is statistically significant.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "A nurse researcher compares mean systolic blood pressure between two independent groups of hypertensive patients (urban vs. rural clinic attendees) where data are normally distributed. Which inferential statistical test is most appropriate?",
+"choices": [
+{"text": "Independent-samples t-test", "is_correct": true},
+{"text": "Paired-samples t-test", "is_correct": false},
+{"text": "Chi-square test of independence", "is_correct": false},
+{"text": "McNemar's test", "is_correct": false}
+],
+"rationale": "An independent-samples t-test compares the means of a continuous, normally distributed variable between two unrelated groups.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "To examine whether there is a statistically significant association between NHIS active insurance status (Insured vs. Uninsured) and timely antenatal booking in the first trimester (Yes vs. No) among 300 pregnant women, which statistical test should the researcher select?",
+"choices": [
+{"text": "Chi-square test of independence", "is_correct": true},
+{"text": "One-way Analysis of Variance (ANOVA)", "is_correct": false},
+{"text": "Pearson product-moment correlation", "is_correct": false},
+{"text": "Linear regression", "is_correct": false}
+],
+"rationale": "The Chi-square test evaluates associations between two categorical (nominal) variables organized in a contingency table.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "A study testing a new antipyretic protocol concludes that the drug reduces fever faster than paracetamol (p = 0.03), when in truth there is no real difference between the two treatments in the population. What type of statistical error has occurred?",
+"choices": [
+{"text": "Type I error (false positive)", "is_correct": true},
+{"text": "Type II error (false negative)", "is_correct": false},
+{"text": "Sampling frame error", "is_correct": false},
+{"text": "Selection bias", "is_correct": false}
+],
+"rationale": "A Type I error (alpha) occurs when the researcher falsely rejects a true null hypothesis, claiming an effect exists when none actually exists.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "A small pilot study of 18 patients fails to find a statistically significant difference in wound healing time between honey dressings and saline dressings (p = 0.14), despite a clinically meaningful 5-day faster healing with honey. What is the most likely statistical explanation for the non-significant p-value?",
+"choices": [
+{"text": "Insufficient statistical power due to the small sample size, risking a Type II error", "is_correct": true},
+{"text": "A Type I error caused by excessive sample size", "is_correct": false},
+{"text": "Honey dressings are guaranteed to be completely ineffective", "is_correct": false},
+{"text": "The alpha level was set too high at 0.50", "is_correct": false}
+],
+"rationale": "Small sample sizes limit statistical power (1 - beta), making it difficult to detect true clinical differences and increasing the risk of a Type II (false-negative) error.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "A researcher investigates the strength and direction of the linear relationship between nurses' years of clinical experience (continuous) and their clinical triage accuracy score (continuous, normally distributed). Which statistic should be computed?",
+"choices": [
+{"text": "Pearson correlation coefficient (r)", "is_correct": true},
+{"text": "Odds ratio", "is_correct": false},
+{"text": "Chi-square statistic", "is_correct": false},
+{"text": "Median difference", "is_correct": false}
+],
+"rationale": "Pearson's r measures the strength and direction (-1.0 to +1.0) of a linear relationship between two continuous, normally distributed variables.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "A researcher compares mean patient waiting times across four different polyclinics in Greater Accra (Polyclinic A, B, C, and D) simultaneously. Which statistical test prevents the inflation of Type I error that would occur from running multiple separate t-tests?",
+"choices": [
+{"text": "One-way Analysis of Variance (ANOVA)", "is_correct": true},
+{"text": "Paired t-test", "is_correct": false},
+{"text": "Fisher's exact test", "is_correct": false},
+{"text": "Wilcoxon signed-rank test", "is_correct": false}
+],
+"rationale": "One-way ANOVA simultaneously compares the means of three or more independent groups while maintaining the overall family-wise Type I error rate at alpha = 0.05.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evidence-Based Practice and Critical Appraisal",
+"question_text": "According to the Evidence-Based Practice (EBP) hierarchy of evidence, which source provides the highest level of reliable evidence to guide clinical nursing protocols in a Ghanaian teaching hospital?",
+"choices": [
+{"text": "A systematic review and meta-analysis of multiple randomized controlled trials", "is_correct": true},
+{"text": "A single case report of an unusual patient recovery", "is_correct": false},
+{"text": "Expert opinion from a senior ward nurse based on tradition", "is_correct": false},
+{"text": "An uncontrolled cross-sectional student survey", "is_correct": false}
+],
+"rationale": "Systematic reviews and meta-analyses of RCTs sit at the apex of the evidence pyramid because they synthesize findings across multiple rigorous trials, increasing precision and reducing individual study bias.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Evidence-Based Practice and Critical Appraisal",
+"question_text": "When implementing Evidence-Based Practice (EBP) on a medical ward in Ghana, which three core pillars must the nurse integrate to make sound clinical decisions?",
+"choices": [
+{"text": "Best available scientific research evidence, clinician expertise, and patient values/preferences within local resource context", "is_correct": true},
+{"text": "Hospital tradition, pharmaceutical advertisements, and convenience", "is_correct": false},
+{"text": "P-values alone, senior physician preference, and textbook dates", "is_correct": false},
+{"text": "Random trial and error, patient demands, and administrative cost cutting", "is_correct": false}
+],
+"rationale": "True EBP integrates external scientific evidence with clinical judgment/expertise and the individual patient's cultural values, preferences, and clinical circumstances.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Evidence-Based Practice and Critical Appraisal",
+"question_text": "During a journal club at a regional hospital, nurses appraise an RCT evaluating a new pressure-ulcer prevention mattress. They discover that 38% of participants in the intervention group dropped out before the final assessment and were excluded from analysis. Which threat to internal validity should the nurses flag during critical appraisal?",
+"choices": [
+{"text": "Attrition (mortality) bias", "is_correct": true},
+{"text": "Recall bias", "is_correct": false},
+{"text": "Ecological fallacy", "is_correct": false},
+{"text": "Instrumentation calibration error", "is_correct": false}
+],
+"rationale": "High or differential participant dropout (> 20%) introduces attrition bias because those who leave the study often differ systematically in clinical severity or outcomes from those who remain.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Evidence-Based Practice and Critical Appraisal",
+"question_text": "A ward in-charge notices high rates of peripheral intravenous cannula phlebitis on her ward and wants to introduce an evidence-based cannula care bundle. Arrange the steps of the Evidence-Based Practice (EBP) process in the correct sequence of priority:\n1. Critically appraise the retrieved studies for validity and applicability\n2. Formulate a searchable clinical question using the PICOT format\n3. Integrate the evidence with clinical expertise and implement the change, then evaluate outcomes\n4. Search electronic databases (PubMed, CINAHL, Cochrane) for best evidence",
+"choices": [
+{"text": "2, 4, 1, 3", "is_correct": true},
+{"text": "4, 1, 2, 3", "is_correct": false},
+{"text": "3, 2, 4, 1", "is_correct": false},
+{"text": "1, 2, 3, 4", "is_correct": false}
+],
+"rationale": "The standard EBP workflow begins by asking a focused PICOT question (2), acquiring the best evidence via database search (4), appraising the evidence critically (1), and finally applying it in practice and evaluating patient outcomes (3).",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Data Collection Methods and Sampling Techniques",
+"question_text": "While supervising four student research assistants collecting CHPS household survey data in a rural district, the lead nurse discovers four data-quality issues. Which issue requires IMMEDIATE priority intervention before data collection continues?",
+"choices": [
+{"text": "One assistant is interviewing minors without parental consent and recording household members' full names alongside HIV test results on unencrypted sheets", "is_correct": true},
+{"text": "One assistant used blue ink instead of black ink on three demographic forms", "is_correct": false},
+{"text": "A completed batch of anonymized questionnaires was stapled at the top-right rather than top-left corner", "is_correct": false},
+{"text": "One assistant arrived 10 minutes late to the morning briefing", "is_correct": false}
+],
+"rationale": "Collecting identifiable sensitive health data without valid parental consent violates core ethical regulations and puts vulnerable participants at immediate risk of harm and stigma, requiring immediate cessation and remediation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Research Process (Problem statement, Literature review, Methodology)",
+"question_text": "A Level 300 nursing student has only 8 weeks to complete a dissertation and must prioritize her research planning tasks today. Which task must be finalized FIRST because all subsequent methodological decisions depend on it?",
+"choices": [
+{"text": "Clearly defining the research problem statement, objectives, and operational variables", "is_correct": true},
+{"text": "Designing the layout of the final summary tables for Chapter Four", "is_correct": false},
+{"text": "Selecting the color scheme for the PowerPoint defense slides", "is_correct": false},
+{"text": "Printing 200 copies of a blank questionnaire before reviewing the literature", "is_correct": false}
+],
+"rationale": "A clear, focused problem statement and measurable objectives govern the choice of study design, sampling strategy, data collection tool, and statistical tests; skipping this foundational step leads to misaligned methodology.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evidence-Based Practice and Critical Appraisal",
+"question_text": "A clinical nurse specialist reviews four potential practice changes for a busy medical ward in Ghana. Applying EBP prioritization principles (strength of evidence, patient safety impact, and feasibility), which intervention should be prioritized for immediate ward adoption?",
+"choices": [
+{"text": "Implementing a WHO-validated surgical safety and hand-hygiene checklist supported by multiple RCTs showing major reductions in sepsis at minimal cost", "is_correct": true},
+{"text": "Purchasing an expensive experimental robotic vital-signs monitor backed by a single manufacturer-sponsored case series", "is_correct": false},
+{"text": "Changing bedsheet folding styles based on a non-peer-reviewed blog post", "is_correct": false},
+{"text": "Discontinuing standard malaria rapid diagnostic testing based on one anecdotal complaint", "is_correct": false}
+],
+"rationale": "EBP prioritization favors interventions backed by high-level RCT/systematic review evidence that directly improve patient safety and are economically and operationally feasible within the local healthcare setting.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Inferential Statistics (P-values, Confidence Intervals, Hypothesis Testing)",
+"question_text": "During data analysis in SPSS, a student nurse encounters four data cleaning tasks before running inferential hypothesis tests on a maternal mortality dataset. Which task must be prioritized FIRST?",
+"choices": [
+{"text": "Screen for and resolve impossible/out-of-range values (e.g., maternal age recorded as 195 years) and missing data patterns", "is_correct": true},
+{"text": "Generate decorative 3D pie charts for the presentation", "is_correct": false},
+{"text": "Write the discussion and recommendations section before seeing the p-values", "is_correct": false},
+{"text": "Delete all outliers blindly without checking the original patient folders", "is_correct": false}
+],
+"rationale": "Data cleaning and validation against source records must occur prior to any statistical modeling because erroneous entries corrupt means, standard deviations, and p-values.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Study Designs (RCTs, Cohort, Case-Control, Cross-sectional)",
+"question_text": "In a randomized trial evaluating a new nurse-led diabetes self-management program, 15 patients assigned to the intervention group never attended the classes, yet the researchers analyzed their outcomes within their originally assigned group. What is this gold-standard analytical approach called?",
+"choices": [
+{"text": "Intention-to-treat (ITT) analysis", "is_correct": true},
+{"text": "Per-protocol analysis", "is_correct": false},
+{"text": "Subgroup post-hoc dredging", "is_correct": false},
+{"text": "Case-series attrition", "is_correct": false}
+],
+"rationale": "Intention-to-treat analysis preserves the benefits of randomization and reflects real-world clinical effectiveness by analyzing all participants in the groups to which they were originally randomized regardless of adherence.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Descriptive Statistics (Mean, Median, Mode, Standard Deviation)",
+"question_text": "A public health nurse reviews a forest plot from a meta-analysis examining zinc supplementation for childhood diarrhea in West Africa. The pooled odds ratio is 0.72 with a 95% confidence interval of 0.58 to 0.89. What does the width of the confidence interval indicate?",
+"choices": [
+{"text": "The precision of the estimated treatment effect; a narrower interval indicates higher statistical precision and a larger combined sample size", "is_correct": true},
+{"text": "The exact percentage of children who experienced vomiting", "is_correct": false},
+{"text": "That 72% of the included studies were fraudulent", "is_correct": false},
+{"text": "That the result is statistically insignificant", "is_correct": false}
+],
+"rationale": "Confidence intervals estimate the range within which the true population parameter lies with 95% certainty; narrower intervals signify greater precision and less random sampling error.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Research (Consent, Anonymity, Confidentiality)",
+"question_text": "A nurse researcher plans to analyze de-identified routine NHIS claims records from a municipal hospital to study seasonal malaria trends. Why is an expedited ethical review or waiver of individual written consent typically granted for retrospective studies using strictly anonymized secondary data?",
+"choices": [
+{"text": "The research poses minimal risk to participants, no direct contact occurs, and individual identities cannot be traced", "is_correct": true},
+{"text": "Retrospective hospital data are exempt from all ethical oversight in Ghana", "is_correct": false},
+{"text": "NHIS subscribers automatically waive all privacy rights upon registration", "is_correct": false},
+{"text": "Anonymized data never require institutional permission from hospital directors", "is_correct": false}
+],
+"rationale": "Ethics committees may approve expedited review and consent waivers when secondary data are fully de-identified, pose minimal risk, and obtaining individual consent from thousands of past records is impracticable.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Evidence-Based Practice and Critical Appraisal",
+"question_text": "When appraising a diagnostic accuracy study evaluating a rapid malaria antigen test used by CHPS nurses compared against microscopy (gold standard), which metric tells the nurse the probability that a patient with a POSITIVE rapid test truly has malaria?",
+"choices": [
+{"text": "Positive Predictive Value (PPV)", "is_correct": true},
+{"text": "Negative Predictive Value (NPV)", "is_correct": false},
+{"text": "Specificity", "is_correct": false},
+{"text": "Incidence density", "is_correct": false}
+],
+"rationale": "Positive Predictive Value (PPV) is the proportion of individuals with a positive screening/diagnostic test result who actually have the disease, which depends on both test sensitivity/specificity and local disease prevalence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Research Paradigms (Quantitative, Qualitative, Mixed Methods)",
+"question_text": "In a qualitative study interviewing psychiatric nurses about burnout in Accra, the researcher stops recruiting new participants after the 18th interview because consecutive interviews yield no new codes, themes, or insights. What methodological concept has been achieved?",
+"choices": [
+{"text": "Data saturation", "is_correct": true},
+{"text": "Statistical power of 0.80", "is_correct": false},
+{"text": "Randomization balance", "is_correct": false},
+{"text": "External generalizability", "is_correct": false}
+],
+"rationale": "Data saturation is the gold-standard criterion for determining sample size in qualitative research, reached when additional data collection no longer produces novel conceptual information.",
+"difficulty": "KNOWLEDGE"
+}
+]
+}
+]
+}
