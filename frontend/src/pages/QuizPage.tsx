@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { useQuery, useMutation } from "@tanstack/react-query"
 
-import { getQuizQuestions, submitQuiz } from "../api/courses"
+import { getSmartQuizQuestions, submitQuiz } from "../api/courses"
 import { useAuth } from "../contexts/AuthContext"
 import AppShell from "../components/shell/AppShell"
 import Button from "../components/ui/Button"
@@ -14,9 +14,9 @@ export default function QuizPage() {
     const [questionCount, setQuestionCount] = useState<number | "all">(10)
     const [hasStarted, setHasStarted] = useState(false)
 
-    const { data: questions, isLoading } = useQuery({
+    const { data: questionData, isLoading } = useQuery({
         queryKey: ["quiz-questions", courseId],
-        queryFn: () => getQuizQuestions(courseId!),
+        queryFn: () => getSmartQuizQuestions(courseId!),
         enabled: !!user?.has_active_subscription && !!courseId,
     })
 
@@ -31,6 +31,9 @@ export default function QuizPage() {
             </AppShell>
         )
     }
+
+    const questions = questionData?.questions ?? []
+    const unseenCount = questionData?.unseen_count ?? 0
 
     if (!questions || questions.length === 0) {
         return (
@@ -59,8 +62,8 @@ export default function QuizPage() {
     const selectedCount = questionCount === "all" ? totalQuestions : Math.min(questionCount, totalQuestions)
 
     if (hasStarted) {
-        const shuffled = [...questions].sort(() => Math.random() - 0.5)
-        const quizQuestions = shuffled.slice(0, selectedCount)
+        // Backend already prioritized unseen-first and shuffled
+        const quizQuestions = questions.slice(0, selectedCount)
         return <QuizInProgress questions={quizQuestions} courseId={courseId!} />
     }
 
@@ -84,9 +87,28 @@ export default function QuizPage() {
                         {totalQuestions} question{totalQuestions === 1 ? "" : "s"} available
                     </h1>
                     <p className="mt-2 text-sm text-on-surface-muted">
-                        Choose how many questions you want to practice. Questions will be randomly selected.
+                        Choose how many questions you want to practice. New questions are prioritized first.
                     </p>
                 </div>
+
+                {/* NEW: Unseen badge */}
+                {unseenCount > 0 && (
+                    <div className="rounded-xl border border-brand-200 bg-gradient-to-br from-brand-50 to-brand-100/50 p-4 flex items-start gap-3">
+                        <div className="flex-shrink-0 mt-0.5">
+                            <svg className="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p className="text-sm font-bold text-brand-900">
+                                {unseenCount} new question{unseenCount === 1 ? "" : "s"} waiting for you
+                            </p>
+                            <p className="text-xs text-brand-800 mt-0.5">
+                                We'll prioritize fresh questions so you never see repeats until you've covered them all.
+                            </p>
+                        </div>
+                    </div>
+                )}
 
                 {/* Past Paper Upload Card */}
                 <div className="rounded-xl border border-dashed border-border bg-surface-subtle p-4">
@@ -120,8 +142,8 @@ export default function QuizPage() {
                                     type="button"
                                     onClick={() => setQuestionCount(n === totalQuestions ? "all" : n)}
                                     className={`rounded-xl border-2 p-4 text-center transition-all ${isActive
-                                        ? "border-brand-500 bg-brand-50 shadow-sm"
-                                        : "border-gray-200 bg-white hover:border-brand-300 hover:bg-gray-50"
+                                            ? "border-brand-500 bg-brand-50 shadow-sm"
+                                            : "border-gray-200 bg-white hover:border-brand-300 hover:bg-gray-50"
                                         }`}
                                 >
                                     <p className={`text-xl font-bold ${isActive ? "text-brand-800" : "text-gray-700"}`}>
@@ -173,7 +195,7 @@ export default function QuizPage() {
     )
 }
 
-// The actual quiz-taking component — submits to the backend for grading
+// The actual quiz-taking component
 function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: string }) {
     const navigate = useNavigate()
     const [answers, setAnswers] = useState<Record<string, string>>({})
@@ -182,7 +204,6 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
     const submitMutation = useMutation({
         mutationFn: submitQuiz,
         onSuccess: (result) => {
-            // Because the backend now returns { id: ... } instantly, this redirect is instant!
             navigate(`/quizzes/results/${result.id}`)
         },
         onError: (err: any) => {
@@ -233,7 +254,6 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
     return (
         <AppShell>
             <div className="max-w-4xl mx-auto pb-40">
-
                 {/* Sticky Progress Header */}
                 <div className="sticky top-[60px] lg:top-[72px] z-20 bg-white/95 backdrop-blur-md border border-gray-200 py-3 px-4 mb-8 -mx-4 sm:mx-0 sm:rounded-xl sm:shadow-sm flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -279,8 +299,8 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
                                             <label
                                                 key={choice.id}
                                                 className={`flex items-start p-4 rounded-xl border-2 cursor-pointer transition-all duration-200 ${isSelected
-                                                    ? "border-brand-500 bg-brand-50/50 shadow-sm"
-                                                    : "border-gray-200 bg-white hover:border-brand-300 hover:bg-gray-50"
+                                                        ? "border-brand-500 bg-brand-50/50 shadow-sm"
+                                                        : "border-gray-200 bg-white hover:border-brand-300 hover:bg-gray-50"
                                                     }`}
                                             >
                                                 <div className="flex items-center h-5 mt-0.5">
@@ -326,8 +346,8 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
                             onClick={handleSubmit}
                             disabled={!canSubmit}
                             className={`w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-sm shadow-sm transition-all ${canSubmit
-                                ? "bg-brand-700 hover:bg-brand-800 text-white shadow-brand-500/20 shadow-lg"
-                                : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                                    ? "bg-brand-700 hover:bg-brand-800 text-white shadow-brand-500/20 shadow-lg"
+                                    : "bg-gray-200 text-gray-400 cursor-not-allowed"
                                 }`}
                         >
                             {submitMutation.isPending ? "Submitting…" : "Submit quiz →"}

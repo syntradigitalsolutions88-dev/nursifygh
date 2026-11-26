@@ -36,7 +36,6 @@ export async function getQuizHistory(): Promise<QuizAttemptResult[]> {
 }
 
 export async function getQuizAttempt(id: string): Promise<QuizAttemptResult> {
-    // There is no dedicated detail endpoint yet — list and find by ID.
     const attempts = await getQuizHistory()
     const found = attempts.find((a) => a.id === id)
     if (!found) {
@@ -44,10 +43,26 @@ export async function getQuizAttempt(id: string): Promise<QuizAttemptResult> {
     }
     return found
 }
-// Extracts questions from a course detail response.
-// The backend includes questions in the course detail payload.
+
+// ─── New smart quiz endpoint (unseen-first prioritization) ──────
+
+export interface SmartQuizResponse {
+    questions: any[]
+    total: number
+    unseen_count: number
+    seen_count: number
+}
+
+export async function getSmartQuizQuestions(courseId: string): Promise<SmartQuizResponse> {
+    const { data } = await api.get<SmartQuizResponse>(
+        `/academics/courses/${courseId}/questions/`,
+    )
+    return data
+}
+
+// ─── Legacy (kept for other pages that may still use it) ────────
+
 export async function getQuizQuestions(courseId: string): Promise<any[]> {
     const course = await getCourse(courseId)
-    // Try common field names — the backend should return `questions` on the course
     return (course as any).questions ?? []
 }

@@ -87,6 +87,64 @@ class CourseDetailView(generics.RetrieveAPIView):
         )
 
 
+class CourseQuestionsSmartView(APIView):
+    """
+    Return ALL approved questions for a course, prioritizing ones the student
+    has never answered. This fixes the 'questions are small' complaint caused
+    by pagination returning only 25 questions out of a 170-question bank.
+    """
+    permission_classes = (permissions.IsAuthenticated, IsSubscribed)
+
+    def get(self, request, course_id):
+        try:
+            course = Course.objects.get(id=course_id, is_published=True)
+        except Course.DoesNotExist:
+            return Response({"error": "Course not found"}, status=404)
+
+        # All approved questions for this course (no pagination)
+        questions = list(
+            Question.objects.filter(
+                course=course,
+                is_published=True,
+                review_status="APPROVED",
+            ).prefetch_related("choices")
+        )
+
+        if not questions:
+            return Response({
+                "questions": [],
+                "total": 0,
+                "unseen_count": 0,
+                "seen_count": 0,
+            })
+
+        # Which questions has this student already answered?
+        answered_ids = set(
+            QuizAnswer.objects.filter(
+                attempt__student=request.user,
+                question__course=course,
+            ).values_list("question_id", flat=True)
+        )
+
+        # Split and shuffle (using Python's `random` which IS properly random)
+        unseen = [q for q in questions if q.id not in answered_ids]
+        seen = [q for q in questions if q.id in answered_ids]
+
+        random.shuffle(unseen)
+        random.shuffle(seen)
+
+        # Unseen first, then seen — ensures new material comes first
+        prioritized = unseen + seen
+
+        serializer = QuestionPublicSerializer(prioritized, many=True)
+        return Response({
+            "questions": serializer.data,
+            "total": len(prioritized),
+            "unseen_count": len(unseen),
+            "seen_count": len(seen),
+        })
+
+
 # ─── Quiz submit / history ────────────────────────────────────────────────────
 
 class QuizSubmitView(APIView):
@@ -106,7 +164,7 @@ class QuizSubmitView(APIView):
         except QuizGradingError as exc:
             return Response({"detail": str(exc)}, status=status.HTTP_400_BAD_REQUEST)
 
-        # FIX: Return ONLY the ID so the frontend redirects instantly. 
+        # Return ONLY the ID so the frontend redirects instantly. 
         # The Results Page will fetch the detailed rationales on its own.
         return Response({"id": str(attempt.id)}, status=status.HTTP_201_CREATED)
 
@@ -447,7 +505,7 @@ class LeaderboardView(APIView):
         data = [
             {
                 "rank": index + 1,
-                "name": u.full_name, 
+                "name": u.full_name,
                 "average_score": round(u.average_score, 1),
                 "total_quizzes": u.total_quizzes,
                 "is_current_user": u.id == request.user.id

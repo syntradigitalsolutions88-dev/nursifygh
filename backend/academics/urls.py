@@ -18,6 +18,7 @@ from .revision_views import (
 from .views import (
     CourseDetailView,
     CourseListView,
+    CourseQuestionsSmartView,
     MockExamSubmitView,
     MockExamView,
     MySubmissionsView,
@@ -26,7 +27,7 @@ from .views import (
     QuizHistoryView,
     QuizSubmitView,
     WeakAreasView,
-    LeaderboardView, # <-- ADD THIS
+    LeaderboardView,
 )
 
 app_name = "academics"
@@ -34,6 +35,10 @@ app_name = "academics"
 urlpatterns = [
     path("courses/", CourseListView.as_view(), name="course-list"),
     path("courses/<uuid:id>/", CourseDetailView.as_view(), name="course-detail"),
+
+    # Smart question fetcher (unseen-first priority)
+    path("courses/<uuid:course_id>/questions/", CourseQuestionsSmartView.as_view(), name="course-questions-smart"),
+
     path("quizzes/submit/", QuizSubmitView.as_view(), name="quiz-submit"),
     path("quizzes/history/", QuizHistoryView.as_view(), name="quiz-history"),
     path("quizzes/mock-exam/", MockExamView.as_view(), name="mock-exam"),
