@@ -63,7 +63,7 @@ export default function CoursesPage() {
 
   return (
     <AppShell>
-      <div className="space-y-6 max-w-6xl mx-auto pb-10">
+      <div className="space-y-6 max-w-6xl mx-auto pb-10 w-full min-w-0 overflow-x-hidden">
         <header>
           <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">
             Your Curriculum
@@ -96,7 +96,7 @@ export default function CoursesPage() {
         )}
 
         {isLoading && (
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className="rounded-xl border border-border bg-white p-5 animate-pulse h-28" />
             ))}
@@ -178,7 +178,7 @@ export default function CoursesPage() {
                         {group.courses.length} courses · {group.courses.reduce((s, c) => s + c.question_count, 0).toLocaleString()} Questions
                       </span>
                     </div>
-                    <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       {group.courses.map((course) => (
                         <CourseCard
                           key={course.id}
@@ -222,7 +222,7 @@ function StatCard({
 
 function CourseCard({ course, isAdmin }: { course: Course; isAdmin?: boolean }) {
   const hasContent = course.question_count > 0
-  const className = `group block rounded-xl border p-5 transition-all ${
+  const className = `group block w-full min-w-0 rounded-xl border p-4 sm:p-5 transition-all ${
     hasContent
       ? "border-border bg-white hover:border-brand-400 hover:shadow-md cursor-pointer"
       : "border-dashed border-border bg-surface-subtle/50 cursor-default"
@@ -230,47 +230,41 @@ function CourseCard({ course, isAdmin }: { course: Course; isAdmin?: boolean }) 
 
   const inner = (
     <>
-      <div className="flex items-start justify-between gap-3">
-        <div className="flex-1 min-w-0">
-          <p className={`text-xs font-bold tracking-wide ${hasContent ? "text-brand-600" : "text-on-surface-muted"}`}>
-            {course.code}
-          </p>
-          <h3 className="mt-1 text-h4 truncate group-hover:text-brand-700 transition-colors">
-            {course.title}
-          </h3>
-          <p className="mt-1 text-xs text-on-surface-muted">{course.category_display}</p>
-          {isAdmin && (
-            <div className="mt-2 flex flex-wrap gap-1">
-              <span className="bg-gray-100 text-gray-700 text-[10px] px-1.5 py-0.5 rounded uppercase font-bold">
-                {course.program_display}
-              </span>
-              <span className="bg-gray-100 text-gray-700 text-[10px] px-1.5 py-0.5 rounded uppercase font-bold">
-                {course.level_display}
-              </span>
-            </div>
-          )}
-        </div>
-        <div className="text-right shrink-0">
-          {hasContent ? (
-            <span className="inline-flex items-center rounded-full bg-brand-50 border border-brand-200 px-2.5 py-1 text-xs font-bold text-brand-700">
-              {course.question_count} Questions
-            </span>
-          ) : (
-            <span className="inline-flex items-center rounded-full bg-amber-50 px-2.5 py-1 text-xs font-bold text-amber-700">
-              Soon
-            </span>
-          )}
-        </div>
+      <div className="flex flex-wrap items-center gap-2">
+        <span className={`text-xs font-bold tracking-wide ${hasContent ? "text-brand-600" : "text-on-surface-muted"}`}>
+          {course.code}
+        </span>
+        {hasContent ? (
+          <span className="inline-flex items-center rounded-full bg-brand-50 border border-brand-200 px-2.5 py-0.5 text-xs font-bold text-brand-700">
+            {course.question_count} Questions
+          </span>
+        ) : (
+          <span className="inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-bold text-amber-700">
+            Soon
+          </span>
+        )}
       </div>
-      {hasContent ? (
-        <div className="mt-4 flex items-center justify-between gap-2">
-          <p className="text-xs font-semibold text-brand-600 group-hover:text-brand-700">
-            Practice now -&gt;
-          </p>
-          <span className="text-xs font-semibold text-on-surface-muted">
-            {course.question_count} {course.question_count === 1 ? "question" : "questions"}
+
+      <h3 className="mt-1.5 text-h4 line-clamp-2 group-hover:text-brand-700 transition-colors">
+        {course.title}
+      </h3>
+      <p className="mt-1 text-xs text-on-surface-muted">{course.category_display}</p>
+
+      {isAdmin && (
+        <div className="mt-2 flex flex-wrap gap-1">
+          <span className="bg-gray-100 text-gray-700 text-[10px] px-1.5 py-0.5 rounded uppercase font-bold">
+            {course.program_display}
+          </span>
+          <span className="bg-gray-100 text-gray-700 text-[10px] px-1.5 py-0.5 rounded uppercase font-bold">
+            {course.level_display}
           </span>
         </div>
+      )}
+
+      {hasContent ? (
+        <p className="mt-4 text-xs font-semibold text-brand-600 group-hover:text-brand-700">
+          Practice now -&gt;
+        </p>
       ) : (
         <p className="mt-4 text-xs font-medium text-on-surface-muted">
           Content arriving this semester
