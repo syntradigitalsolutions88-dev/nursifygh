@@ -1,0 +1,601 @@
+{
+"courses": [
+{
+"course_code": "PHN-322",
+"course_title": "Public Health Nursing",
+"category": "COMMUNITY",
+"semester": "S2",
+"topics": [
+"Principles of Public Health Nursing",
+"Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"Outbreak Investigation and Response (Cholera, Measles, Lassa Fever, Yellow Fever)",
+"Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"Maternal and Child Health Programmes",
+"Communicable Disease Control (TB, HIV/AIDS, Hepatitis, STIs)",
+"Non-Communicable Disease Prevention (Hypertension, Diabetes, Cancer Screening)",
+"Environmental Health (Sanitation, Water Safety, Vector Control)",
+"Occupational Health Nursing",
+"Health Policy and Ghana Health Service Structure",
+"Community Health Education and Behaviour Change Communication"
+],
+"questions": [
+{
+"topic": "Principles of Public Health Nursing",
+"question_text": "A Public Health Nurse (PHN) posted to a sub-district in the Bono Region conducts a community diagnosis before designing annual health interventions. Which combination of activities defines primary prevention in public health nursing?",
+"choices": [
+{"text": "Administering pentavalent vaccines at child welfare clinics, distributing insecticide-treated nets, and promoting handwashing with soap", "is_correct": true},
+{"text": "Performing cervical visual inspection with acetic acid (VIA) to detect pre-cancerous lesions", "is_correct": false},
+{"text": "Providing physiotherapy and speech therapy to a resident recovering from a stroke", "is_correct": false},
+{"text": "Initiating Directly Observed Treatment Short-course (DOTS) for sputum-positive tuberculosis patients", "is_correct": false}
+],
+"rationale": "Primary prevention intervenes before disease onset in susceptible populations through immunization, health promotion, and environmental protection. Screening (VIA) and early treatment (DOTS) represent secondary prevention, while rehabilitation is tertiary prevention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of Public Health Nursing",
+"question_text": "In public health nursing practice within Ghana's district health system, how is the 'client' primarily defined compared with bedside acute hospital nursing?",
+"choices": [
+{"text": "The entire community or defined population aggregate, focusing on population-level health determinants, equity, and upstream prevention", "is_correct": true},
+{"text": "Exclusively individual paying inpatients admitted to surgical intensive care units", "is_correct": false},
+{"text": "Only private corporate employees holding commercial insurance policies", "is_correct": false},
+{"text": "Isolated pathogens cultured in regional reference laboratories", "is_correct": false}
+],
+"rationale": "Public health nursing synthesizes nursing practice and public health science to promote and protect the health of entire populations rather than focusing solely on episodic individual illness care.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Principles of Public Health Nursing",
+"question_text": "During a community health needs assessment in a peri-urban settlement, a PHN collects mortality statistics, maps unsafe refuse dumps, interviews opinion leaders, and reviews CHPS clinic morbidity registers. What is the primary purpose of this community diagnosis?",
+"choices": [
+{"text": "To identify priority community health problems, vulnerable groups, and local resources so interventions can be planned collaboratively with residents", "is_correct": true},
+{"text": "To assign legal blame to residents for poor sanitation", "is_correct": false},
+{"text": "To justify closing the local CHPS compound to save district funds", "is_correct": false},
+{"text": "To replace national census enumeration conducted by the Ghana Statistical Service", "is_correct": false}
+],
+"rationale": "Community diagnosis systematically quantifies health status and environmental/social determinants within a catchment area, enabling evidence-based prioritization and community ownership of solutions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Principles of Public Health Nursing",
+"question_text": "A PHN reviewing district health metrics notes that out of 4,000 pregnant women expected in the district this year, 3,200 attended at least one antenatal clinic visit, and 2,400 delivered with a skilled birth attendant. Which indicator is the nurse evaluating?",
+"choices": [
+{"text": "Service utilization and maternal health coverage rates", "is_correct": true},
+{"text": "Case fatality rate", "is_correct": false},
+{"text": "Attack rate", "is_correct": false},
+{"text": "Neonatal tetanus incidence density", "is_correct": false}
+],
+"rationale": "Comparing actual service users against the estimated target population denominator measures programme coverage and service utilization, highlighting access gaps across sub-districts.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"question_text": "Under the Ghana Health Service Integrated Disease Surveillance and Response (IDSR) technical guidelines, a Community Health Nurse at a CHPS compound sees a 4-year-old boy with sudden onset of fever, generalized maculopapular rash, cough, coryza, and conjunctivitis. Within what timeframe must this suspected measles case be reported to the District Health Directorate?",
+"choices": [
+{"text": "Immediately (within 24 hours) via telephone/SMS followed by completing the case-based surveillance form and collecting a serum specimen", "is_correct": true},
+{"text": "At the end of the calendar year in the annual district report", "is_correct": false},
+{"text": "Only after 10 other children in the village develop the same rash", "is_correct": false},
+{"text": "Within 30 days via routine monthly DHIMS2 summary tally", "is_correct": false}
+],
+"rationale": "Measles is an immediately notifiable epidemic-prone disease under Ghana's IDSR protocol; a single suspected case triggers immediate notification within 24 hours and laboratory IgM confirmation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"question_text": "Which group of diseases requires IMMEDIATE notification (within 24 hours) under the Ghana Health Service IDSR framework?",
+"choices": [
+{"text": "Cholera, Yellow Fever, Acute Flaccid Paralysis (Polio), Viral Haemorrhagic Fevers (Lassa/Ebola), Meningococcal Meningitis, and Maternal Deaths", "is_correct": true},
+{"text": "Hypertension, osteoarthritis, dental caries, and mild refractive errors", "is_correct": false},
+{"text": "Uncomplicated tinea capitis, peptic ulcer disease, and iron-deficiency anaemia", "is_correct": false},
+{"text": "Chronic low back pain, cataract, and benign prostatic hyperplasia", "is_correct": false}
+],
+"rationale": "Epidemic-prone diseases, diseases targeted for eradication/elimination (polio, neonatal tetanus, guinea worm), and maternal deaths require immediate IDSR notification to trigger rapid containment or death audit.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"question_text": "During an acute diarrhoeal outbreak in a coastal district of Ghana, 120 residents out of 600 who attended a funeral feast developed profuse rice-water stools within 48 hours, and 6 of those ill patients died. Calculate the Attack Rate and Case Fatality Rate (CFR), respectively.",
+"choices": [
+{"text": "Attack Rate = 20%; Case Fatality Rate = 5%", "is_correct": true},
+{"text": "Attack Rate = 5%; Case Fatality Rate = 20%", "is_correct": false},
+{"text": "Attack Rate = 1%; Case Fatality Rate = 12%", "is_correct": false},
+{"text": "Attack Rate = 50%; Case Fatality Rate = 2%", "is_correct": false}
+],
+"rationale": "Attack Rate = (120 ill / 600 exposed at the feast) x 100 = 20%. Case Fatality Rate = (6 deaths / 120 confirmed/probable cases) x 100 = 5%, indicating severe clinical lethality requiring urgent oral/IV rehydration treatment centres.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"question_text": "How does 'active surveillance' differ from 'passive surveillance' in Ghana's disease control system?",
+"choices": [
+{"text": "Active surveillance involves public health officers proactively visiting health facilities, laboratories, and communities to search for cases (e.g., AFP or guinea worm searches), whereas passive surveillance relies on facilities submitting routine weekly/monthly DHIMS2 reports", "is_correct": true},
+{"text": "Active surveillance is conducted only by patients diagnosing themselves at home", "is_correct": false},
+{"text": "Passive surveillance is used exclusively during Ebola outbreaks", "is_correct": false},
+{"text": "Active surveillance ignores laboratory confirmation completely", "is_correct": false}
+],
+"rationale": "Active surveillance overcomes underreporting for high-priority eradication or outbreak targets by having surveillance officers actively inspect registers and interview clinicians, whereas passive surveillance awaits routine facility submissions.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"question_text": "A district public health nurse tracks all children under 15 years presenting with sudden-onset floppy limb weakness (Acute Flaccid Paralysis - AFP) to ensure wild or vaccine-derived poliovirus is ruled out. Within how many days of paralysis onset must two stool specimens (collected 24–48 hours apart) reach the national polio laboratory?",
+"choices": [
+{"text": "Within 14 days of paralysis onset, transported under reverse cold chain (2–8°C)", "is_correct": true},
+{"text": "Within 60 days at room temperature", "is_correct": false},
+{"text": "Only after 6 months if paralysis persists", "is_correct": false},
+{"text": "Within 90 days stored in formalin", "is_correct": false}
+],
+"rationale": "Viral shedding in stool is highest during the first 2 weeks after paralysis onset; collecting two stool samples 24–48 hours apart within 14 days and transporting them at 2–8°C maximizes poliovirus isolation sensitivity.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Outbreak Investigation and Response (Cholera, Measles, Lassa Fever, Yellow Fever)",
+"question_text": "During a confirmed cholera outbreak in an urban municipality in Ghana, the District Health Management Team establishes a Cholera Treatment Centre (CTC). Which infection prevention and control protocol is essential at the CTC entrance and exit to prevent nosocomial and community spread?",
+"choices": [
+{"text": "Footbaths and handwashing stations with 0.05% chlorine solution for staff/visitors, 0.2% chlorine for surfaces/linens, and 2% chlorine disinfection of patients' vomitus and rice-water stools before disposal", "is_correct": true},
+{"text": "Using plain tap water without chlorine to wash soiled cholera bedding in the community stream", "is_correct": false},
+{"text": "Allowing unrestricted visitor entry into the acute rehydration ward without hand hygiene", "is_correct": false},
+{"text": "Discharging recovering cholera patients with untreated buckets of stool to take home", "is_correct": false}
+],
+"rationale": "Standard WHO/GHS cholera IPC protocols specify tiered chlorine concentrations—0.05% for living skin/hands, 0.2% for floors/beds/laundry, and 2% for excreta and corpses—to break faecal-oral transmission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Outbreak Investigation and Response (Cholera, Measles, Lassa Fever, Yellow Fever)",
+"question_text": "A 34-year-old farmer from a rural community presents to a district hospital with persistent high fever unresponsive to antimalarials, retrosternal chest pain, pharyngitis, facial oedema, and mucosal bleeding, raising suspicion of Lassa fever. What is the nurse's IMMEDIATE priority action?",
+"choices": [
+{"text": "Isolate the patient immediately in a single room, don full Viral Haemorrhagic Fever Personal Protective Equipment (gown, double gloves, N95/medical mask, face shield), restrict staff contact, and notify the District Disease Control Officer immediately", "is_correct": true},
+{"text": "Place the patient in the general open medical ward and draw blood with bare hands", "is_correct": false},
+{"text": "Administer intramuscular diclofenac and discharge home for herbal steam bath", "is_correct": false},
+{"text": "Wait 5 days to see if bleeding stops spontaneously before notifying anyone", "is_correct": false}
+],
+"rationale": "Lassa fever is transmitted via direct contact with rodent excreta and human body fluids; immediate strict isolation, barrier PPE, and urgent IDSR notification prevent fatal nosocomial transmission to healthcare workers.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Outbreak Investigation and Response (Cholera, Measles, Lassa Fever, Yellow Fever)",
+"question_text": "In a systematic epidemiological outbreak investigation conducted by a District Public Health Rapid Response Team in Ghana, what is the critical first step after receiving an alert of unusual clustering of acute jaundice and fever?",
+"choices": [
+{"text": "Verify the diagnosis and confirm the existence of an outbreak by reviewing clinical cases, taking laboratory specimens, and comparing current incidence with baseline surveillance data", "is_correct": true},
+{"text": "Immediately vaccinate the entire country before confirming the pathogen", "is_correct": false},
+{"text": "Close all markets permanently without investigating the source", "is_correct": false},
+{"text": "Write the final outbreak closure report before visiting the affected community", "is_correct": false}
+],
+"rationale": "Verifying clinical diagnoses and confirming that observed cases exceed expected baseline levels prevents false alarms from laboratory/reporting artifacts and guides targeted specimen collection.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Outbreak Investigation and Response (Cholera, Measles, Lassa Fever, Yellow Fever)",
+"question_text": "Following confirmation of two autochthonous cases of Yellow Fever in a savannah district of Ghana, which dual public health intervention must the District Health Directorate execute urgently?",
+"choices": [
+{"text": "Conduct a reactive mass Yellow Fever vaccination campaign targeting all eligible residents (>= 9 months) alongside intensive Aedes aegypti larval source reduction and adult vector control", "is_correct": true},
+{"text": "Distribute oral albendazole tablets to all households", "is_correct": false},
+{"text": "Quarantine all domestic cattle in the district", "is_correct": false},
+{"text": "Administer intravenous penicillin to everyone with a mosquito bite", "is_correct": false}
+],
+"rationale": "Yellow Fever is an arboviral haemorrhagic disease transmitted by Aedes mosquitoes; a single lifelong-protective vaccine dose halts human amplification while vector control eliminates breeding containers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"question_text": "During a morning cold-chain check at a sub-district health centre in Ghana, the PHN inspects the ILR (Ice-Lined Refrigerator) and finds the temperature reading at +10.5°C, and the Vaccine Vial Monitor (VVM) on a vial of Measles-Rubella (MR) vaccine shows the inner square is the exact same colour as the outer circle. What action must the nurse take?",
+"choices": [
+{"text": "Discard the MR vial immediately because it has reached its discard point, quarantine other heat-exposed vaccines, check power/refrigerator fault, and report to the District Cold Chain Officer", "is_correct": true},
+{"text": "Use the MR vial quickly before the inner square turns darker than the outer ring", "is_correct": false},
+{"text": "Place the MR vial in the deep freezer for 2 hours to restore its potency", "is_correct": false},
+{"text": "Administer double doses of the heat-damaged vaccine to ensure immunity", "is_correct": false}
+],
+"rationale": "When a VVM's inner square matches or is darker than the outer reference circle, cumulative heat exposure has destroyed vaccine potency; the vial must never be administered.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"question_text": "At what optimal temperature range must routine EPI vaccines (such as Pentavalent, PCV, Rotavirus, IPV, MR, and Yellow Fever) be stored inside peripheral health facility refrigerators in Ghana?",
+"choices": [
+{"text": "+2°C to +8°C", "is_correct": true},
+{"text": "-20°C to -15°C", "is_correct": false},
+{"text": "+12°C to +18°C", "is_correct": false},
+{"text": "-5°C to 0°C", "is_correct": false}
+],
+"rationale": "All routine EPI vaccines at health centre and CHPS levels must be maintained strictly between +2°C and +8°C; freezing destroys adsorbed vaccines like Pentavalent, PCV, HepB, and Td.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"question_text": "A PHN suspects that a batch of Pentavalent (DPT-HepB-Hib) vaccine stored near the cooling plate of a refrigerator was accidentally frozen overnight. Which bedside field test should the nurse perform to determine whether the vaccine is damaged or safe to use?",
+"choices": [
+{"text": "The Shake Test (comparing sedimentation rate of the suspected vial against a deliberately frozen-and-thawed control vial of the same batch)", "is_correct": true},
+{"text": "The Benedict's urine sugar test", "is_correct": false},
+{"text": "The Tourniquet capillary fragility test", "is_correct": false},
+{"text": "Administering the vaccine to one child and watching for fever", "is_correct": false}
+],
+"rationale": "Freezing breaks the aluminium adjuvant lattice in freeze-sensitive vaccines, causing rapid clumping and sedimentation; if the test vial settles at the same rate or faster than the frozen control vial, it must be discarded.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"question_text": "Under Ghana's Expanded Programme on Immunization (EPI) Multi-Dose Vial Policy (MDVP), once a lyophilized (freeze-dried) vial of BCG or Measles-Rubella vaccine is reconstituted with its diluent at a Child Welfare Clinic, within how many hours must any remaining doses be discarded?",
+"choices": [
+{"text": "Within 6 hours of reconstitution (or at the end of the immunization session, whichever comes first)", "is_correct": true},
+{"text": "Within 28 days if kept in the refrigerator", "is_correct": false},
+{"text": "Within 72 hours at room temperature", "is_correct": false},
+{"text": "Within 7 days inside a vaccine carrier", "is_correct": false}
+],
+"rationale": "Reconstituted BCG, Measles-Rubella, and Yellow Fever vaccines contain no preservatives; keeping them beyond 6 hours risks fatal bacterial contamination (toxic shock syndrome) and loss of potency.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"question_text": "Thirty minutes after receiving routine childhood immunizations at an outreach clinic, a 9-month-old infant develops generalized urticaria, wheezing, facial swelling, and pallor. Which Adverse Event Following Immunization (AEFI) has occurred, and what is the nurse's immediate intervention?",
+"choices": [
+{"text": "Severe anaphylaxis; lay the infant flat with legs elevated (or lateral if vomiting), administer intramuscular adrenaline (0.01 mg/kg of 1:1000 solution) into the anterolateral thigh immediately, give oxygen, and arrange urgent hospital transfer", "is_correct": true},
+{"text": "Normal mild local injection reaction; reassure the mother and send her home", "is_correct": false},
+{"text": "Administer oral paracetamol syrup and wait 2 hours", "is_correct": false},
+{"text": "Inject intravenous hydrocortisone as sole monotherapy without adrenaline", "is_correct": false}
+],
+"rationale": "Anaphylaxis is a rare, life-threatening acute allergic AEFI requiring immediate intramuscular adrenaline (epinephrine) as first-line life-saving treatment, followed by formal AEFI reporting to the FDA/GHS.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Maternal and Child Health Programmes",
+"question_text": "During a Child Welfare Clinic (CWC) growth monitoring session in Ghana, a PHN plots an 18-month-old toddler's weight-for-age curve on the Maternal and Child Health Record Book and observes that the growth line has remained completely flat (horizontal) for two consecutive months. How should the nurse interpret and act on this trajectory?",
+"choices": [
+{"text": "Growth faltering (early warning sign of malnutrition or underlying infection); conduct a thorough feeding and illness assessment, provide targeted nutrition counselling, screen with MUAC, and schedule close 2-week follow-up", "is_correct": true},
+{"text": "Normal growth pattern for toddlers after 1 year of age requiring no action", "is_correct": false},
+{"text": "Severe obesity requiring immediate calorie restriction", "is_correct": false},
+{"text": "Reassure the mother that height increases only every 6 months", "is_correct": false}
+],
+"rationale": "A flat or downward-trending growth curve signals growth faltering even before weight falls below the -2 Z-score line, allowing early community dietary and clinical intervention before severe acute malnutrition develops.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal and Child Health Programmes",
+"question_text": "A 20-month-old child brought to a CHPS compound has a Mid-Upper Arm Circumference (MUAC) of 11.1 cm, bilateral pitting pedal oedema (+), good appetite, and no medical complications (no fever, pneumonia, or dehydration). According to Ghana's Community-Based Management of Acute Malnutrition (CMAM) protocol, how should this child be managed?",
+"choices": [
+{"text": "Diagnose Severe Acute Malnutrition (SAM) without complications and enroll in the Outpatient Therapeutic Programme (OTP) with Ready-to-Use Therapeutic Food (RUTF), routine amoxicillin/vitamin A/deworming, and weekly clinic monitoring", "is_correct": true},
+{"text": "Advise the mother to feed diluted thin porridge only and return in 3 months", "is_correct": false},
+{"text": "Refer immediately to the surgical theatre for gastrostomy", "is_correct": false},
+{"text": "Classify as normal nutritional status because MUAC is above 10 cm", "is_correct": false}
+],
+"rationale": "MUAC < 11.5 cm or bilateral pitting oedema defines SAM; when the child passes the RUTF appetite test and lacks medical complications, CMAM protocols manage them safely at home via weekly OTP visits.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Maternal and Child Health Programmes",
+"question_text": "Under Ghana's Prevention of Mother-to-Child Transmission (PMTCT / Option B+) guidelines, a pregnant woman tests HIV-positive during her first antenatal visit at 14 weeks gestation. What antiretroviral regimen and infant prophylaxis plan should the nurse counsel her on?",
+"choices": [
+{"text": "Initiate lifelong triple antiretroviral therapy (TDF + 3TC + DTG) immediately regardless of CD4 count, deliver at a health facility, and give the HIV-exposed infant daily nevirapine/zidovudine prophylaxis from birth alongside exclusive breastfeeding", "is_correct": true},
+{"text": "Delay antiretroviral therapy until after she stops breastfeeding at 2 years", "is_correct": false},
+{"text": "Advise mixed feeding with infant formula and breast milk from day 1", "is_correct": false},
+{"text": "Take a single dose of nevirapine only during labour", "is_correct": false}
+],
+"rationale": "Option B+ initiates immediate lifelong ART for all HIV-positive pregnant and breastfeeding women to achieve maternal viral suppression, combined with infant antiretroviral prophylaxis and safe exclusive breastfeeding for 6 months.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicable Disease Control (TB, HIV/AIDS, Hepatitis, STIs)",
+"question_text": "A 40-year-old miner presents to a district chest clinic with a productive cough lasting 3 weeks, night sweats, weight loss, and evening fevers. Under Ghana's National Tuberculosis Control Programme (NTP) guidelines, which first-line diagnostic test is recommended to simultaneously detect Mycobacterium tuberculosis and rifampicin resistance?",
+"choices": [
+{"text": "GeneXpert MTB/RIF molecular assay on sputum", "is_correct": true},
+{"text": "Widal agglutination blood test", "is_correct": false},
+{"text": "Mantoux tuberculin skin test alone", "is_correct": false},
+{"text": "Stool microscopy for ova and cysts", "is_correct": false}
+],
+"rationale": "GeneXpert MTB/RIF is the WHO/NTP-recommended rapid nucleic acid amplification test that detects TB bacilli and rpoB gene mutations (rifampicin resistance) within 2 hours.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communicable Disease Control (TB, HIV/AIDS, Hepatitis, STIs)",
+"question_text": "A newly diagnosed smear-positive pulmonary tuberculosis patient is starting the standard 6-month Category I regimen (2RHZE / 4RH) under DOTS in Ghana. Which key medication side-effect counselling must the PHN provide before the patient leaves the clinic?",
+"choices": [
+{"text": "Reassure him that rifampicin harmlessly turns urine, sweat, and tears reddish-orange, give pyridoxine (vitamin B6) to prevent isoniazid neuropathy, and instruct him to report yellowing of eyes (hepatotoxicity) or visual changes (ethambutol optic neuritis) immediately", "is_correct": true},
+{"text": "Tell him to stop all TB drugs immediately if his urine turns orange", "is_correct": false},
+{"text": "Advise taking double doses on weekends so he can skip weekdays", "is_correct": false},
+{"text": "Confirm that anti-TB drugs are safe to combine with heavy daily alcohol intake", "is_correct": false}
+],
+"rationale": "Preparing patients for benign orange body-fluid discoloration prevents needless default, while educating on jaundice and visual acuity loss enables early detection of hepatotoxicity and optic neuritis.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicable Disease Control (TB, HIV/AIDS, Hepatitis, STIs)",
+"question_text": "During an antenatal screening clinic, a pregnant woman tests positive for Hepatitis B surface antigen (HBsAg) with high viral load. Beyond maternal care, what immediate neonatal immunoprophylaxis must be administered within 12–24 hours of birth to prevent vertical transmission?",
+"choices": [
+{"text": "Hepatitis B birth-dose monovalent vaccine AND Hepatitis B Immunoglobulin (HBIG) injected at separate anatomical sites (anterolateral thighs)", "is_correct": true},
+{"text": "BCG vaccine mixed in the same syringe with oral polio drops", "is_correct": false},
+{"text": "Wait until 6 weeks of age for the first Pentavalent dose without birth prophylaxis", "is_correct": false},
+{"text": "Withhold breastfeeding permanently for 12 months", "is_correct": false}
+],
+"rationale": "Administering active-passive immunoprophylaxis (HepB birth dose + HBIG at separate limbs within 12–24 hours) prevents perinatal Hepatitis B transmission in over 90–95% of exposed newborns, allowing safe breastfeeding.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Communicable Disease Control (TB, HIV/AIDS, Hepatitis, STIs)",
+"question_text": "In Ghana's Syndromic Management of Sexually Transmitted Infections (STIs) at primary health clinics, what are the 'Four Cs' that every nurse must deliver alongside antimicrobial therapy?",
+"choices": [
+{"text": "Compliance/adherence counselling, Condom promotion and provision, Contact tracing/partner treatment, and Confidentiality/counselling for HIV testing", "is_correct": true},
+{"text": "Cauterization, Circumcision, Caesarean section, and Chemotherapy", "is_correct": false},
+{"text": "Quarantine, Court prosecution, Contact isolation, and Cash fines", "is_correct": false},
+{"text": "Colposcopy, Cryotherapy, Catheterization, and Cast application", "is_correct": false}
+],
+"rationale": "Treating an index patient without partner notification, condom education, full regimen completion, and HIV screening results in rapid reinfection ('ping-pong' transmission).",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Non-Communicable Disease Prevention (Hypertension, Diabetes, Cancer Screening)",
+"question_text": "During a community wellness screening for adults in a Ghanaian market, a 44-year-old woman has a blood pressure of 154/96 mmHg on two seated readings 15 minutes apart, BMI of 31 kg/m2, and a family history of stroke. Which lifestyle and clinical referral plan aligns with Ghana's National NCD Control Programme?",
+"choices": [
+{"text": "Counsel on DASH dietary modifications (reducing salt/bouillon cubes, increasing fruits/vegetables), 150 minutes/week of brisk aerobic exercise, weight reduction, and refer to the district hospital hypertension clinic for diagnostic confirmation and management", "is_correct": true},
+{"text": "Diagnose malignant hypertension from a single market screening and give sublingual nifedipine immediately", "is_correct": false},
+{"text": "Reassure her that BP 154/96 mmHg is completely normal for women over 40", "is_correct": false},
+{"text": "Advise complete bed rest and increased dietary salt intake", "is_correct": false}
+],
+"rationale": "Community screening identifies elevated risk requiring structured lifestyle modification (salt reduction, physical activity, weight control) and formal medical evaluation to confirm hypertension and assess target-organ damage.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Non-Communicable Disease Prevention (Hypertension, Diabetes, Cancer Screening)",
+"question_text": "In Ghana's cervical cancer prevention strategy at district and regional reproductive health clinics, which low-cost, single-visit 'screen-and-treat' approach is widely utilized for women aged 25–49 years?",
+"choices": [
+{"text": "Visual Inspection with Acetic Acid (VIA) followed by immediate cryotherapy or thermal ablation for eligible acetowhite precancerous lesions", "is_correct": true},
+{"text": "Routine radical hysterectomy for all women over age 30", "is_correct": false},
+{"text": "Annual pelvic MRI scans at every CHPS compound", "is_correct": false},
+{"text": "Oral antibiotic therapy for human papillomavirus clearance", "is_correct": false}
+],
+"rationale": "VIA highlights dysplastic cervical epithelium with 3–5% acetic acid within one minute, allowing immediate ablative treatment in low-resource settings without waiting weeks for cytology lab turnaround.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Environmental Health (Sanitation, Water Safety, Vector Control)",
+"question_text": "During a household water safety inspection in a flood-prone village without piped water, the PHN teaches residents how to disinfect turbid river water using the 'three-pot system' and chlorine tablets (Aquatabs). Why must turbid water be settled and filtered through a clean cloth BEFORE adding chlorine?",
+"choices": [
+{"text": "Suspended organic matter and silt bind and neutralize free chlorine, preventing effective microbial disinfection", "is_correct": true},
+{"text": "Chlorine causes clear water to turn solid", "is_correct": false},
+{"text": "Cloth filtration removes dissolved heavy metals and salts completely", "is_correct": false},
+{"text": "Boiling water destroys the chemical structure of H2O", "is_correct": false}
+],
+"rationale": "Organic turbidity exerts high 'chlorine demand,' consuming available free chlorine before it can inactivate Vibrio cholerae, Salmonella, and enteric viruses; sedimentation/filtration followed by a 30-minute chlorine contact time ensures safe potable water.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Environmental Health (Sanitation, Water Safety, Vector Control)",
+"question_text": "Which community sanitation approach adopted across rural Ghana empowers communities to analyze their own open defecation practices, experience collective disgust/pride triggers, and construct household latrines using local materials without external hardware subsidies?",
+"choices": [
+{"text": "Community-Led Total Sanitation (CLTS) aimed at achieving Open Defecation Free (ODF) status", "is_correct": true},
+{"text": "Aerial insecticide fogging of residential bedrooms", "is_correct": false},
+{"text": "Mandatory construction of municipal sewage treatment plants in every hamlet", "is_correct": false},
+{"text": "Distribution of disposable plastic bags for waste disposal", "is_correct": false}
+],
+"rationale": "CLTS facilitates community self-appraisal of faecal-oral contamination pathways, mobilizing collective action to end open defecation and sustain ODF status.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Environmental Health (Sanitation, Water Safety, Vector Control)",
+"question_text": "To control Anopheles gambiae malaria vectors effectively in a Ghanaian district, which integrated vector management strategy targets both indoor night-biting adult mosquitoes and aquatic breeding sites?",
+"choices": [
+{"text": "Universal sleeping under Long-Lasting Insecticidal Nets (LLINs), Indoor Residual Spraying (IRS) in high-burden districts, and environmental drainage/larviciding of stagnant sunlit puddles", "is_correct": true},
+{"text": "Emptying clean covered household drinking water jars every morning only", "is_correct": false},
+{"text": "Spraying kerosene onto river rapids to kill Simulium blackflies", "is_correct": false},
+{"text": "Eliminating domestic dogs to stop Plasmodium transmission", "is_correct": false}
+],
+"rationale": "Anopheles mosquitoes bite predominantly indoors at night and breed in clean, sunlit stagnant water; combining LLINs, IRS, and larval habitat elimination interrupts transmission.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Occupational Health Nursing",
+"question_text": "An occupational health nurse conducting a workplace safety audit at a gold-processing and quarry plant in Ghana notes high noise levels (98 dBA) and silica dust exposure. According to the Occupational Health Hierarchy of Controls, which intervention is the MOST effective primary control compared with issuing ear muffs and dust masks alone?",
+"choices": [
+{"text": "Engineering controls such as enclosing noisy crushing machinery, installing wet-drilling dust suppression systems, and local exhaust ventilation", "is_correct": true},
+{"text": "Giving workers cough syrup at the end of every shift", "is_correct": false},
+{"text": "Relying solely on cotton wool earplugs without reducing source noise", "is_correct": false},
+{"text": "Transferring workers only after they develop irreversible silicosis and noise-induced deafness", "is_correct": false}
+],
+"rationale": "In the hierarchy of hazard controls (Elimination -> Substitution -> Engineering -> Administrative -> PPE), engineering controls isolate workers from the hazard at its source and do not depend on continuous individual PPE compliance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Occupational Health Nursing",
+"question_text": "A registered nurse working on a busy medical ward sustains a deep percutaneous needlestick injury from a hollow-bore needle used on a patient with unknown HIV and Hepatitis B status. What is the nurse's IMMEDIATE first-aid and post-exposure sequence?",
+"choices": [
+{"text": "Wash the puncture site immediately with soap and running water (without squeezing/bleaching), report immediately to the PEP focal person, check baseline HIV/HepB status of source and worker, and initiate HIV Post-Exposure Prophylaxis (PEP) within 2 hours (and no later than 72 hours)", "is_correct": true},
+{"text": "Squeeze the finger forcefully, soak in concentrated bleach, and wait 2 weeks before reporting", "is_correct": false},
+{"text": "Ignore the injury if the patient looks healthy", "is_correct": false},
+{"text": "Take a single dose of amoxicillin and continue the shift", "is_correct": false}
+],
+"rationale": "Gentle washing with soap and water removes blood without causing tissue trauma from squeezing/caustics, and initiating 28-day antiretroviral PEP within 1–2 hours dramatically reduces HIV seroconversion risk.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Health Policy and Ghana Health Service Structure",
+"question_text": "In Ghana's decentralized public health delivery pyramid, which level serves as the lowest operational unit delivering close-to-client primary health care, home visits, immunization, and basic maternal-child services directly within electoral areas?",
+"choices": [
+{"text": "Community-based Health Planning and Services (CHPS) zone/compound", "is_correct": true},
+{"text": "Quaternary national teaching hospital", "is_correct": false},
+{"text": "Regional medical stores", "is_correct": false},
+{"text": "Ministry of Health headquarters policy directorate", "is_correct": false}
+],
+"rationale": "The CHPS strategy operationalizes primary health care at the grassroots electoral-area level through resident Community Health Officers (CHOs) supported by Community Health Volunteers and Committees.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Policy and Ghana Health Service Structure",
+"question_text": "Under Ghana's Public Health Act, 2012 (Act 851), which legal authority is granted to public health officials during a declared public health emergency such as a viral haemorrhagic fever or cholera epidemic?",
+"choices": [
+{"text": "Authority to enforce mandatory disease notification, inspect and abate public sanitary nuisances, quarantine/isolate infected persons or contacts when necessary to protect public health, and regulate food/water safety", "is_correct": true},
+{"text": "Authority to abolish the Nursing and Midwifery Council", "is_correct": false},
+{"text": "Authority to suspend all childhood immunizations permanently", "is_correct": false},
+{"text": "Authority to exempt commercial food vendors from hygiene inspections", "is_correct": false}
+],
+"rationale": "Act 851 consolidates Ghana's public health statutes—covering communicable disease control, environmental sanitation, tobacco control, vaccination, and FDA regulation—providing legal backing for epidemic containment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Health Education and Behaviour Change Communication",
+"question_text": "A PHN designing a Behaviour Change Communication (BCC) campaign to improve exclusive breastfeeding in a rural district applies the Health Belief Model. A mother says, 'I know breast milk is good, but I feel helpless when my mother-in-law insists on giving water in hot weather.' Which construct of the Health Belief Model should the nurse strengthen?",
+"choices": [
+{"text": "Self-efficacy (confidence and practical skills to overcome social barriers, alongside engaging key family influencers like grandmothers)", "is_correct": true},
+{"text": "Perceived severity of dental caries", "is_correct": false},
+{"text": "Fear-based intimidation of the mother", "is_correct": false},
+{"text": "Elimination of cues to action", "is_correct": false}
+],
+"rationale": "Self-efficacy—an individual's confidence in their ability to execute a health behaviour despite social pressure—is strengthened through practical positioning coaching and peer/grandmother dialogue groups.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"question_text": "A District Public Health Nurse receives four surveillance alerts on Monday morning. Which alert requires IMMEDIATE priority field investigation and containment FIRST?",
+"choices": [
+{"text": "A 22-year-old trader returning from an endemic border area admitted with high fever, severe bleeding from gums/injection sites, and acute jaundice (suspected Viral Haemorrhagic Fever / Yellow Fever)", "is_correct": true},
+{"text": "An increase of 4 uncomplicated malaria cases compared with last week in a sub-district", "is_correct": false},
+{"text": "Three school children diagnosed with mild tinea corporis (ringworm)", "is_correct": false},
+{"text": "A request from a local school for a routine puberty health talk next month", "is_correct": false}
+],
+"rationale": "Suspected Viral Haemorrhagic Fever or Yellow Fever carries extreme epidemic potential and high case fatality, requiring immediate isolation, contact tracing, and laboratory confirmation ahead of endemic non-epidemic conditions.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Outbreak Investigation and Response (Cholera, Measles, Lassa Fever, Yellow Fever)",
+"question_text": "During an active cholera outbreak in a densely populated urban community, the PHN coordinates four response activities. Which intervention must be prioritized FIRST to prevent immediate deaths among newly presenting patients?",
+"choices": [
+{"text": "Establish functional Oral Rehydration Points (ORPs) and Cholera Treatment Centres with trained staff, ORS, and Ringer's Lactate for rapid triage and rehydration", "is_correct": true},
+{"text": "Conduct a retrospective 6-month economic cost analysis of the outbreak", "is_correct": false},
+{"text": "Organize an essay competition for secondary school students", "is_correct": false},
+{"text": "Repaint the exterior walls of the District Health Directorate", "is_correct": false}
+],
+"rationale": "Cholera can kill within hours via profound hypovolaemic shock; rapid case management with ORS and IV Ringer's Lactate reduces case fatality from > 30% to under 1% and takes immediate priority.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"question_text": "At a busy Child Welfare Clinic, a PHN faces four simultaneous issues. Which situation requires the nurse's IMMEDIATE priority action?",
+"choices": [
+{"text": "A 6-month-old infant develops stridor, generalized hives, and limpness 10 minutes after receiving Pentavalent and PCV vaccines", "is_correct": true},
+{"text": "A mother asks when her 14-week-old infant should return for the next scheduled visit", "is_correct": false},
+{"text": "A student nurse runs out of blue pens for tallying the immunization register", "is_correct": false},
+{"text": "A father requests a replacement Maternal and Child Health Record Book because his old one was torn", "is_correct": false}
+],
+"rationale": "Acute vaccine-induced anaphylaxis threatens immediate airway obstruction and cardiovascular collapse, requiring instant intramuscular adrenaline and resuscitation ahead of administrative tasks.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Environmental Health (Sanitation, Water Safety, Vector Control)",
+"question_text": "Following severe flash flooding in a district capital that submerged shallow wells and pit latrines, the Public Health Nurse prioritizes environmental interventions. Which intervention must be implemented FIRST to prevent a waterborne epidemic?",
+"choices": [
+{"text": "Provide emergency safe drinking water (water trucking, point-of-use chlorination tablets, and boiling advisories) while condemning contaminated shallow wells", "is_correct": true},
+{"text": "Plant ornamental shade trees along the flooded highway", "is_correct": false},
+{"text": "Conduct a survey on chronic osteoarthritis among elderly residents", "is_correct": false},
+{"text": "Distribute sunscreen lotion to flood-displaced families", "is_correct": false}
+],
+"rationale": "Floodwaters mix faecal sludge from overflowing latrines into shallow wells; securing safe chlorinated drinking water immediately prevents explosive outbreaks of cholera, typhoid, and shigellosis.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Maternal and Child Health Programmes",
+"question_text": "During a CHPS home-visiting day in a remote rural community, the Community Health Nurse encounters four households. Which client requires IMMEDIATE priority intervention and emergency referral?",
+"choices": [
+{"text": "A 3-day-old home-delivered newborn who is lethargic, refusing to breastfeed, hypothermic (35.2°C), with periumbilical redness and pus", "is_correct": true},
+{"text": "A healthy 6-week postpartum mother seeking routine family planning counselling", "is_correct": false},
+{"text": "A 24-week pregnant woman with normal vital signs asking about iron-folate tablets", "is_correct": false},
+{"text": "A 9-month-old infant due for routine Measles-Rubella 1 immunization", "is_correct": false}
+],
+"rationale": "Hypothermia, poor feeding, lethargy, and omphalitis are WHO danger signs of neonatal sepsis, which progresses rapidly to death without urgent pre-referral antibiotics and hospital admission.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Communicable Disease Control (TB, HIV/AIDS, Hepatitis, STIs)",
+"question_text": "A chest clinic nurse reviews four tuberculosis patients during morning clinic. Which patient must be prioritized FIRST for urgent medical evaluation and regimen adjustment?",
+"choices": [
+{"text": "A 38-year-old man on week 3 of RHZE therapy who presents with deep yellow sclerae, persistent vomiting, and right upper quadrant tenderness", "is_correct": true},
+{"text": "A 25-year-old woman reporting harmless reddish-orange discoloration of her urine", "is_correct": false},
+{"text": "A 45-year-old man completing month 6 of treatment with negative sputum smear", "is_correct": false},
+{"text": "A 30-year-old woman requesting a transfer letter to another DOTS centre next month", "is_correct": false}
+],
+"rationale": "Jaundice and persistent vomiting indicate drug-induced hepatotoxicity from isoniazid, rifampicin, or pyrazinamide; hepatotoxic drugs must be withheld immediately to prevent fulminant liver failure.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Epidemiology and Disease Surveillance (Notifiable Diseases in Ghana)",
+"question_text": "In epidemiological screening tests used in public health programmes, how is 'sensitivity' defined?",
+"choices": [
+{"text": "The ability of a screening test to correctly identify individuals who truly have the disease (true positive rate)", "is_correct": true},
+{"text": "The ability of a screening test to correctly identify individuals who do not have the disease (true negative rate)", "is_correct": false},
+{"text": "The total number of existing cases in a population at a given time", "is_correct": false},
+{"text": "The proportion of false-positive results among healthy persons", "is_correct": false}
+],
+"rationale": "High sensitivity minimizes false negatives, making sensitive tests ideal for initial public health screening so true cases of infectious or life-threatening conditions are not missed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Immunization Programmes (EPI, Cold Chain, Vaccine Safety)",
+"question_text": "According to Ghana's EPI immunization schedule, which vaccines are administered to a healthy infant at 6 weeks of age?",
+"choices": [
+{"text": "OPV 1, Pentavalent 1 (DPT-HepB-Hib), PCV 1, and Rotavirus 1", "is_correct": true},
+{"text": "BCG and OPV 0 only", "is_correct": false},
+{"text": "Measles-Rubella 1 and Yellow Fever", "is_correct": false},
+{"text": "Meningococcal A conjugate and Measles-Rubella 2", "is_correct": false}
+],
+"rationale": "At 6 weeks, Ghanaian infants receive their first primary series of Oral Polio (OPV 1), Pentavalent 1, Pneumococcal Conjugate (PCV 1), and Rotavirus 1 vaccines (repeated at 10 and 14 weeks, with IPV added at 14 weeks).",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Communicable Disease Control (TB, HIV/AIDS, Hepatitis, STIs)",
+"question_text": "Which public health principle explains why achieving >= 95% measles vaccination coverage in a Ghanaian district protects unvaccinated neonates who are too young to receive the vaccine?",
+"choices": [
+{"text": "Herd immunity (community immunity)", "is_correct": true},
+{"text": "Passive transplacental immunoglobulin transfer from neighbours", "is_correct": false},
+{"text": "Genetic mutation of the measles virus into a harmless bacterium", "is_correct": false},
+{"text": "Quarantine of all infants until age 5 years", "is_correct": false}
+],
+"rationale": "When a sufficiently high proportion of the population is immune, chains of person-to-person transmission are interrupted, indirectly shielding vulnerable individuals who cannot yet be immunized.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Non-Communicable Disease Prevention (Hypertension, Diabetes, Cancer Screening)",
+"question_text": "A 52-year-old woman with poorly controlled Type 2 diabetes attends a community diabetic support group led by a PHN. Which foot-care teaching prevents diabetic foot ulcers and lower-limb amputations?",
+"choices": [
+{"text": "Inspect both feet daily using a mirror for blisters, cracks, or redness; wash in lukewarm water and dry carefully between toes; wear well-fitting closed footwear; and never walk barefoot or cut calluses with razor blades", "is_correct": true},
+{"text": "Soak feet daily in hot water for 45 minutes and trim corns closely with a razor", "is_correct": false},
+{"text": "Walk barefoot on hot cement to toughen plantar skin", "is_correct": false},
+{"text": "Apply tight elastic bands around the ankles to reduce swelling", "is_correct": false}
+],
+"rationale": "Peripheral neuropathy masks painless mechanical or thermal trauma while peripheral vascular disease impairs healing; daily visual inspection and protective footwear prevent minor injuries from progressing to gangrene.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Occupational Health Nursing",
+"question_text": "Under Ghana's Labour Act, 2003 (Act 651) and Workmen's Compensation Law, what is a core statutory responsibility of an occupational health nurse in a manufacturing factory?",
+"choices": [
+{"text": "Conduct pre-placement and periodic medical surveillance, maintain confidential workplace injury/illness registers, inspect sanitation and ergonomic hazards, and provide first aid and health promotion", "is_correct": true},
+{"text": "Conceal workplace chemical poisonings from the Department of Factories Inspectorate", "is_correct": false},
+{"text": "Dismiss injured workers without medical evaluation or compensation reporting", "is_correct": false},
+{"text": "Replace protective ventilation with punitive salary deductions", "is_correct": false}
+],
+"rationale": "Occupational health nurses protect worker health by matching job demands to worker capacity, detecting occupational disease early via surveillance, and ensuring statutory injury reporting and hazard prevention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Health Policy and Ghana Health Service Structure",
+"question_text": "How does the National Health Insurance Scheme (NHIS) support public health and primary care utilization across Ghana's districts?",
+"choices": [
+{"text": "It removes point-of-service user fees ('cash-and-carry') for covered outpatient, inpatient, diagnostic, and essential medicine services, with free enrollment exemptions for pregnant women, children under 18, elderly (>= 70), and LEAP indigents", "is_correct": true},
+{"text": "It covers only cosmetic surgery in private clinics outside Ghana", "is_correct": false},
+{"text": "It charges double fees for pregnant women attending antenatal clinics", "is_correct": false},
+{"text": "It prohibits CHPS compounds from treating NHIS cardholders", "is_correct": false}
+],
+"rationale": "By eliminating out-of-pocket financial barriers and exempting vulnerable groups, NHIS promotes early care-seeking at CHPS compounds, health centres, and district hospitals.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Health Education and Behaviour Change Communication",
+"question_text": "When conducting a community health education session on cholera prevention in a market where many traders have low formal literacy, which teaching method is most effective for achieving sustained behaviour change?",
+"choices": [
+{"text": "Interactive demonstration of handwashing with soap/Tippy Tap construction in the local language, paired with visual picture charts and role-play", "is_correct": true},
+{"text": "Distributing dense 20-page English academic epidemiology papers", "is_correct": false},
+{"text": "Delivering a rapid 90-minute technical lecture using complex Latin terminology", "is_correct": false},
+{"text": "Threatening traders with imprisonment without showing practical hygiene alternatives", "is_correct": false}
+],
+"rationale": "Participatory demonstrations using local language and visual aids build practical motor skills and comprehension across all literacy levels far better than passive lectures or written handouts.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
