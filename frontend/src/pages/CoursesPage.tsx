@@ -172,10 +172,10 @@ export default function CoursesPage() {
               <div className="space-y-8">
                 {visibleGroups.map((group) => (
                   <section key={group.semester} className="space-y-3">
-                    <div className="flex items-center justify-between border-b border-border pb-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border pb-2">
                       <h2 className="text-base font-bold text-on-surface">{group.label}</h2>
-                      <span className="text-xs font-semibold text-on-surface-muted">
-                        {group.courses.length} courses
+                      <span className="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full shrink-0">
+                        {group.courses.length} courses · {group.courses.reduce((s, c) => s + c.question_count, 0).toLocaleString()} Questions
                       </span>
                     </div>
                     <div className="grid gap-4 sm:grid-cols-2">
@@ -252,8 +252,8 @@ function CourseCard({ course, isAdmin }: { course: Course; isAdmin?: boolean }) 
         </div>
         <div className="text-right shrink-0">
           {hasContent ? (
-            <span className="inline-flex items-center rounded-full bg-brand-50 px-2.5 py-1 text-xs font-bold text-brand-700">
-              {course.question_count} Q
+            <span className="inline-flex items-center rounded-full bg-brand-50 border border-brand-200 px-2.5 py-1 text-xs font-bold text-brand-700">
+              {course.question_count} Questions
             </span>
           ) : (
             <span className="inline-flex items-center rounded-full bg-amber-50 px-2.5 py-1 text-xs font-bold text-amber-700">
@@ -263,9 +263,14 @@ function CourseCard({ course, isAdmin }: { course: Course; isAdmin?: boolean }) 
         </div>
       </div>
       {hasContent ? (
-        <p className="mt-4 text-xs font-semibold text-brand-600 group-hover:text-brand-700">
-          Practice now -&gt;
-        </p>
+        <div className="mt-4 flex items-center justify-between gap-2">
+          <p className="text-xs font-semibold text-brand-600 group-hover:text-brand-700">
+            Practice now -&gt;
+          </p>
+          <span className="text-xs font-semibold text-on-surface-muted">
+            {course.question_count} {course.question_count === 1 ? "question" : "questions"}
+          </span>
+        </div>
       ) : (
         <p className="mt-4 text-xs font-medium text-on-surface-muted">
           Content arriving this semester
