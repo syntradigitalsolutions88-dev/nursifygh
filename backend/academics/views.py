@@ -469,6 +469,15 @@ class WeakAreasView(APIView):
 
 # ─── Leaderboard ─────────────────────────────────────────────────────────────
 
+def _mask_leaderboard_name(full_name: str) -> str:
+    parts = [p for p in (full_name or "").strip().split() if p]
+    if not parts:
+        return "Student"
+    if len(parts) == 1:
+        return parts[0]
+    return f"{parts[0]} {parts[-1][0].upper()}."
+
+
 class LeaderboardView(APIView):
     """Return the top 20 students in the user's program and level."""
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
@@ -490,13 +499,6 @@ class LeaderboardView(APIView):
             .order_by('-average_score', '-total_quizzes')
         )
 
-def _mask_leaderboard_name(full_name: str) -> str:
-    parts = [p for p in (full_name or "").strip().split() if p]
-    if not parts:
-        return "Student"
-    if len(parts) == 1:
-        return parts[0]
-    return f"{parts[0]} {parts[-1][0].upper()}."
         leaderboard_users = base_qs[:20]
         user_rank = None
         user_score = 0.0
