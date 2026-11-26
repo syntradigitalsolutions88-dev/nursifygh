@@ -109,7 +109,7 @@ export default function AdminNotificationsPage() {
         target_program: targetProgram,
         target_level: targetLevel ? Number(targetLevel) : null,
         target_paid_only: targetPaidOnly,
-        action_url: actionUrl.trim(),
+        action_url: actionUrl.trim() && !actionUrl.trim().startsWith("/") && !actionUrl.trim().startsWith("http") ? `/${actionUrl.trim()}` : actionUrl.trim(),
         action_label: actionLabel.trim(),
       })
       setTitle("")

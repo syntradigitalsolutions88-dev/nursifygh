@@ -34,7 +34,7 @@ export default function NotificationBell() {
         <div className="relative" ref={ref}>
             <button
                 onClick={() => setOpen(!open)}
-                className="relative h-9 w-9 rounded-full flex items-center justify-center text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface"
+                className={`relative h-9 w-9 rounded-full flex items-center justify-center transition-colors ${unread > 0 ? "bg-brand-50 text-brand-700 ring-2 ring-brand-200" : "text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface"}`}
                 aria-label="Notifications"
             >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
@@ -127,7 +127,7 @@ function NotificationItem({
             <p className="text-xs leading-relaxed mb-2">{message}</p>
             {actionUrl && actionLabel && (
                 <Link
-                    to={actionUrl}
+                    to={actionUrl.startsWith("/") || actionUrl.startsWith("http") ? actionUrl : `/${actionUrl}`}
                     onClick={onClick}
                     className="inline-block text-xs font-bold underline hover:no-underline"
                 >

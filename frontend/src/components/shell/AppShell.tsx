@@ -8,6 +8,7 @@ import Logo from "../ui/Logo"
 import ChatWidget from "../support/ChatWidget"
 import OnboardingTour from "../OnboardingTour"
 import NotificationBell from "../notifications/NotificationBell"
+import UnreadBroadcastBanner from "../notifications/UnreadBroadcastBanner"
 import FeedbackButton from "../feedback/FeedbackButton"
 
 interface NavItem {
@@ -266,6 +267,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </header>
 
                 {/* MAIN CONTENT - EXPANDS FULL WIDTH ON PRINT */}
+                <UnreadBroadcastBanner />
                 <main className="pb-40 lg:pb-24 print:pb-0">
                     <div className="max-w-5xl mx-auto px-4 py-6 lg:px-8 lg:py-8 print:max-w-none print:p-0 print:m-0">
                         {children}
