@@ -1,0 +1,671 @@
+{
+"courses": [
+{
+"course_code": "ADJ-111-P",
+"course_title": "Professional Adjustment in Nursing",
+"category": "FUNDAMENTALS",
+"semester": "S1",
+"topics": [
+"History of Psychiatric Nursing in Ghana",
+"Mental Health Act 2012 (Act 846)",
+"N&MC Code of Professional Conduct",
+"Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"Patients' Charter",
+"Scope of Practice for Psychiatric Nurses",
+"Professional Boundaries in Mental Health",
+"Advocacy and Whistleblowing"
+],
+"questions": [
+{
+"topic": "History of Psychiatric Nursing in Ghana",
+"question_text": "During a clinical orientation at Accra Psychiatric Hospital, a Level 100 RPN student asks about the legislative origin of institutional psychiatric care in the Gold Coast. Which historical ordinance established the first lunatic asylum in Accra in 1888?",
+"choices": [
+{"text": "The Lunatic Asylum Ordinance of 1888", "is_correct": true},
+{"text": "The Mental Health Decree of 1972 (NRCD 30)", "is_correct": false},
+{"text": "The Health Professions Regulatory Bodies Act, 2013 (Act 857)", "is_correct": false},
+{"text": "The Mental Health Act, 2012 (Act 846)", "is_correct": false}
+],
+"rationale": "Institutional mental health care in Ghana began under British colonial administration with the enactment of the Lunatic Asylum Ordinance of 1888, which led to the conversion of the High Street prison in Accra into a custodial asylum. This custodial model persisted until the opening of the current Accra Psychiatric Hospital in 1906 and subsequent legislative reforms.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Psychiatric Nursing in Ghana",
+"question_text": "A psychiatric nurse educator is comparing the 1972 Mental Health Decree (NRCD 30) with the Mental Health Act, 2012 (Act 846) during a seminar at Pantang Nurses' Training College. Which major paradigm shift defines Act 846 in the history of Ghanaian psychiatric nursing?",
+"choices": [
+{"text": "Transitioning from custodial institutionalization to human rights-based, decentralized community mental health care", "is_correct": true},
+{"text": "Centralizing all psychiatric admissions exclusively within Accra, Pantang, and Ankaful hospitals", "is_correct": false},
+{"text": "Abolishing the registration of Registered Mental Nurses under the Nursing and Midwifery Council", "is_correct": false},
+{"text": "Transferring all clinical psychiatric oversight to traditional prayer camps", "is_correct": false}
+],
+"rationale": "Act 846 replaced the outdated NRCD 30 by shifting Ghana's mental health system away from prolonged institutionalization toward decentralized, community-based services integrated into general hospitals. It explicitly protects the dignity, autonomy, and human rights of persons with mental disorders.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Psychiatric Nursing in Ghana",
+"question_text": "While tracing the evolution of psychiatric nurse training in Ghana, a student learns that early mental health attendants were trained primarily in custodial containment before formal nursing curricula were introduced. Which milestone marked the establishment of formal local training for Registered Mental Nurses (RMNs) in Ghana?",
+"choices": [
+{"text": "The opening of the Mental Health Nursing Training School at Ankaful and Accra in the 1950s–1960s", "is_correct": true},
+{"text": "The enactment of the National Health Insurance Act in 2003", "is_correct": false},
+{"text": "The establishment of the Korle Bu General Nursing School in 1928", "is_correct": false},
+{"text": "The passing of the Public Health Act, 2012 (Act 851)", "is_correct": false}
+],
+"rationale": "Formal local training of psychiatric nurses began in the post-independence era with the establishment of psychiatric nursing schools at Accra and Ankaful Psychiatric Hospitals, later expanded by Pantang Nurses' Training College. This ended reliance on foreign-trained expatriate nurses and local untrained ward attendants.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "History of Psychiatric Nursing in Ghana",
+"question_text": "A community psychiatric nurse (CPN) working in a district hospital explains to newly posted interns why Ghana established Community Psychiatric Nursing services in the 1970s. What was the primary clinical driver for introducing CPNs into the Ghanaian health system?",
+"choices": [
+{"text": "To reduce overcrowding in the three coastal psychiatric hospitals and prevent relapse through home-based follow-up", "is_correct": true},
+{"text": "To replace psychiatrists in prescribing controlled psychotropic medications independently", "is_correct": false},
+{"text": "To enforce mandatory lifelong confinement of patients in their family homes", "is_correct": false},
+{"text": "To eliminate outpatient psychiatric clinics at regional hospitals", "is_correct": false}
+],
+"rationale": "Community Psychiatric Nursing was pioneered in Ghana to decongest Accra, Pantang, and Ankaful psychiatric hospitals by providing continuity of care, medication supervision, and family psychoeducation within patients' communities. This significantly reduced revolving-door readmissions.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "History of Psychiatric Nursing in Ghana",
+"question_text": "During a clinical conference at Ankaful Psychiatric Hospital, a senior RPN highlights the historical contribution of Dr. E.F.B. Forster to Ghanaian psychiatry. Which achievement is directly associated with his pioneering work in the 1950s?",
+"choices": [
+{"text": "Becoming the first Ghanaian psychiatrist and introducing modern pharmacological and occupational therapy to replace purely custodial restraint", "is_correct": true},
+{"text": "Drafting the Health Professions Regulatory Bodies Act, 2013", "is_correct": false},
+{"text": "Founding the first private psychiatric hospital in Tamale in 1995", "is_correct": false},
+{"text": "Establishing the Nursing and Midwifery Council of Ghana in 1945", "is_correct": false}
+],
+"rationale": "Dr. E.F.B. Forster, Ghana's first indigenous psychiatrist, spearheaded the modernization of Accra Psychiatric Hospital in the 1950s by introducing chlorpromazine, electroconvulsive therapy, and occupational rehabilitation, transforming the facility from a custodial prison-like asylum into a therapeutic hospital.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "Under the Mental Health Act, 2012 (Act 846), a patient is brought to the emergency unit of Komfo Anokye Teaching Hospital in an acute manic state posing an immediate danger to himself. For what maximum duration may a patient be held under an emergency admission certificate before formal review or application for prolonged treatment?",
+"choices": [
+{"text": "72 hours", "is_correct": true},
+{"text": "14 days", "is_correct": false},
+{"text": "30 days", "is_correct": false},
+{"text": "6 months", "is_correct": false}
+],
+"rationale": "Section 42 of Act 846 stipulates that an emergency admission for urgent psychiatric assessment and stabilization shall not exceed 72 hours. Within this window, the patient must either be discharged, converted to voluntary status, or evaluated for a court-ordered prolonged treatment certificate.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "A family brings their 28-year-old son with acute paranoid schizophrenia to a regional hospital psychiatric unit requesting involuntary admission because he refuses oral antipsychotics. Under Act 846, which statutory body is mandated to review involuntary admissions, investigate patient complaints, and inspect mental health facilities across Ghana?",
+"choices": [
+{"text": "The Mental Health Review Tribunal", "is_correct": true},
+{"text": "The Nursing and Midwifery Council Disciplinary Committee", "is_correct": false},
+{"text": "The Food and Drugs Authority", "is_correct": false},
+{"text": "The Commission on Human Rights and Administrative Justice alone", "is_correct": false}
+],
+"rationale": "Act 846 establishes the Mental Health Review Tribunal as an independent quasi-judicial safeguard to review all involuntary admissions, hear appeals from patients or relatives, and conduct unannounced inspections of psychiatric wards and prayer camps to prevent unlawful detention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "While conducting community outreach in a peri-urban district, an RPN discovers an unaccredited healing centre where three clients with chronic psychosis are shackled to logs with iron chains and deprived of food. Applying Act 846, which action should the nurse prioritize first?",
+"choices": [
+{"text": "Ensure immediate medical assessment for physical injuries, document the human rights violations, and escalate urgently to the District Mental Health Sub-Committee and Mental Health Authority", "is_correct": true},
+{"text": "Ignore the chaining practices out of respect for traditional religious autonomy", "is_correct": false},
+{"text": "Administer intramuscular haloperidol without examining the clients and leave them shackled", "is_correct": false},
+{"text": "Arrest the facility proprietor personally without involving law enforcement or health authorities", "is_correct": false}
+],
+"rationale": "Act 846 explicitly prohibits mechanical chaining, shackling, starvation, and inhuman treatment in both orthodox and non-orthodox mental health facilities. The nurse must prioritize clinical triage of physical trauma while activating statutory reporting channels to the District Mental Health Sub-Committee and police for safe rescue.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "A 35-year-old voluntary patient admitted to Pantang Hospital for severe depressive disorder decides to sign out against medical advice (AMA) at 2:00 PM. During nursing assessment, he expresses active suicidal intent with a specific plan to jump off an overpass upon leaving. How should the RPN apply Act 846 in this situation?",
+"choices": [
+{"text": "Temporarily detain the patient under emergency holding powers and immediately notify the attending psychiatrist to initiate an involuntary assessment", "is_correct": true},
+{"text": "Allow him to leave immediately because voluntary patients have an absolute right to discharge at any time", "is_correct": false},
+{"text": "Lock him in a seclusion room indefinitely without informing the medical team", "is_correct": false},
+{"text": "Ask him to sign a liability waiver and escort him to the hospital gate", "is_correct": false}
+],
+"rationale": "Although voluntary patients generally retain the right to discharge themselves under Act 846, an imminent risk of suicide overrides immediate release. The nurse must invoke temporary emergency holding provisions to preserve life while arranging urgent psychiatric evaluation for involuntary certification.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "Under Act 846, a prolonged involuntary treatment order granted by a court following specialist psychiatric recommendations is valid for an initial period not exceeding how many months before mandatory judicial review?",
+"choices": [
+{"text": "12 months", "is_correct": true},
+{"text": "1 month", "is_correct": false},
+{"text": "36 months", "is_correct": false},
+{"text": "60 months", "is_correct": false}
+],
+"rationale": "Section 46 of the Mental Health Act, 2012 (Act 846) limits prolonged court-ordered involuntary treatment to a maximum period of 12 months. Any extension beyond one year requires a fresh application and review by the Mental Health Review Tribunal to prevent indefinite detention.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "A psychiatrist recommends electroconvulsive therapy (ECT) for a patient with severe catatonic stupor who lacks decision-making capacity. According to Act 846, what legal requirement must be satisfied before ECT can be administered?",
+"choices": [
+{"text": "Informed consent from the personal representative and approval from the Mental Health Review Tribunal or a second independent specialist opinion", "is_correct": true},
+{"text": "Verbal consent from the ward nurse in charge alone", "is_correct": false},
+{"text": "Administering unmodified ECT without anaesthesia if the family disagrees", "is_correct": false},
+{"text": "No consent is needed once the patient enters a psychiatric facility", "is_correct": false}
+],
+"rationale": "Act 846 classifies ECT as an intrusive/irreversible-risk treatment requiring strict procedural safeguards: it must always be modified (with general anaesthesia and muscle relaxants) and requires informed consent from the patient or personal representative plus independent review when capacity is absent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "During a busy morning shift on an acute admission ward, a newly qualified RPN realizes she accidentally administered 10 mg of haloperidol instead of the prescribed 5 mg to a client. According to the Nursing and Midwifery Council (N&MC) of Ghana Code of Professional Conduct, what is the nurse's primary ethical and professional obligation?",
+"choices": [
+{"text": "Assess the client's vital signs and extrapyramidal status immediately, notify the prescriber, and document the medication error honestly in the incident report", "is_correct": true},
+{"text": "Conceal the error in the medication chart to avoid disciplinary action by the N&MC", "is_correct": false},
+{"text": "Skip the evening dose silently without informing the medical officer or ward in-charge", "is_correct": false},
+{"text": "Blame the pharmacy technician for dispensing high-strength tablets", "is_correct": false}
+],
+"rationale": "The N&MC Code of Professional Conduct mandates candour, accountability, and patient safety above self-protection. Prompt clinical assessment protects the client from acute dystonia or neuroleptic toxicity, while transparent reporting enables timely medical intervention and systemic error prevention.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "A Registered Psychiatric Nurse working at a district hospital is invited by a local pharmaceutical representative to endorse an antipsychotic medication on a live radio talk show in exchange for a personal cash honorarium. How does the N&MC Code of Professional Conduct address this situation?",
+"choices": [
+{"text": "It is a violation because nurses must not use their professional title or registration to endorse commercial products for personal financial gain", "is_correct": true},
+{"text": "It is permissible provided the nurse wears full clinical uniform during the broadcast", "is_correct": false},
+{"text": "It is encouraged as part of community mental health sensitization", "is_correct": false},
+{"text": "It is allowed if the drug is listed on the National Health Insurance medicines list", "is_correct": false}
+],
+"rationale": "The N&MC Code prohibits nurses from exploiting their professional status for commercial endorsement or accepting inducements that compromise clinical impartiality. Public health education must remain objective, evidence-based, and free from commercial conflict of interest.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "Under the Health Professions Regulatory Bodies Act, 2013 (Act 857) and N&MC regulations, an RPN whose Personal Identification Number (PIN) has expired for 8 months continues to practice independently on a psychiatric ward. What legal consequence applies?",
+"choices": [
+{"text": "Practicing without a valid PIN constitutes unlawful practice and professional misconduct subject to N&MC disciplinary sanctions and statutory penalties", "is_correct": true},
+{"text": "The nurse is automatically granted a 2-year grace period without renewal requirements", "is_correct": false},
+{"text": "Only hospital administrators are held liable while the nurse faces no consequences", "is_correct": false},
+{"text": "Renewal is optional once a nurse completes national service", "is_correct": false}
+],
+"rationale": "Act 857 requires every practicing nurse in Ghana to maintain active registration and renew their PIN annually with required Continuing Professional Development (CPD) credits. Practicing with a lapsed PIN invalidates legal authorization to practice and exposes the nurse to disciplinary proceedings.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "While reviewing nursing notes during handover, an RPN notices a colleague recorded vital signs and mental state observations for a secluded patient at 04:00 AM without actually entering the room or assessing the client. What is the most appropriate professional action?",
+"choices": [
+{"text": "Assess the secluded patient immediately, address the falsification with the colleague, and report the breach of documentation integrity to the ward manager", "is_correct": true},
+{"text": "Countersign the colleague's entry to maintain team harmony on the ward", "is_correct": false},
+{"text": "Erase the fabricated entries using correction fluid without reporting", "is_correct": false},
+{"text": "Wait until the end of the month to mention it casually", "is_correct": false}
+],
+"rationale": "Falsifying clinical records violates the N&MC Code of Conduct and endangers a high-risk secluded patient who requires strict physical monitoring. Immediate patient verification followed by escalation through proper nursing leadership channels upholds patient safety and legal accountability.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "During a clinical placement, a Level 100 RPN student takes a selfie inside the psychiatric acute ward with a consenting recovering patient visible in the background and posts it on social media to celebrate Mental Health Awareness Day. Which N&MC ethical standard has been breached?",
+"choices": [
+{"text": "Protection of client confidentiality, privacy, and professional image on digital platforms", "is_correct": true},
+{"text": "Delegation of nursing tasks to auxiliary staff", "is_correct": false},
+{"text": "Informed consent for electroconvulsive therapy", "is_correct": false},
+{"text": "Safe disposal of clinical sharps", "is_correct": false}
+],
+"rationale": "Photographing patients inside a psychiatric facility and publishing images online exposes their mental health status to public stigma and breaches strict confidentiality rules under both the N&MC Code and Act 846, regardless of informal verbal permission.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"question_text": "A 42-year-old university lecturer admitted voluntarily with bipolar I disorder (currently euthymic and possessing full decision-making capacity) refuses lithium carbonate after learning about potential renal and thyroid side effects, requesting an alternative mood stabilizer. Respecting his request primarily upholds which ethical principle?",
+"choices": [
+{"text": "Autonomy", "is_correct": true},
+{"text": "Paternalism", "is_correct": false},
+{"text": "Veracity", "is_correct": false},
+{"text": "Fidelity", "is_correct": false}
+],
+"rationale": "Autonomy affirms the right of a capacitated individual to make informed decisions about their own medical treatment, including refusing a specific medication after weighing risks and benefits. Supporting collaborative alternatives respects self-determination while maintaining therapeutic alliance.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"question_text": "An acutely agitated patient with alcohol withdrawal delirium attempts to pull out his intravenous dextrose-thiamine line and strike staff. The RPN administers prescribed lorazepam and places padded side rails to prevent fall injury while monitoring respiration closely. Which combination of ethical principles primarily guides this intervention?",
+"choices": [
+{"text": "Beneficence and Non-maleficence", "is_correct": true},
+{"text": "Distributive Justice and Veracity", "is_correct": false},
+{"text": "Autonomy and Confidentiality", "is_correct": false},
+{"text": "Fidelity and Utility", "is_correct": false}
+],
+"rationale": "Beneficence requires acting in the patient's best medical interest (preventing Wernicke's encephalopathy and severe withdrawal seizures), while non-maleficence mandates preventing avoidable physical harm from falls or self-injury when acute delirium impairs judgment.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"question_text": "In a rural district hospital outpatient clinic, an RPN ensures that indigent clients covered only by basic NHIS receive the same thorough psychoeducation, counseling time, and access to available psychotropic medications as wealthy private-paying clients. Which ethical principle is demonstrated?",
+"choices": [
+{"text": "Justice", "is_correct": true},
+{"text": "Autonomy", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": false},
+{"text": "Veracity", "is_correct": false}
+],
+"rationale": "Justice in health care ethics demands fairness, equity, and non-discrimination in the allocation of clinical time, respect, and therapeutic resources regardless of socioeconomic status, ethnicity, or insurance tier.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"question_text": "A mother brings her 19-year-old son to the outpatient psychiatric clinic and privately asks the RPN to crush haloperidol tablets into his morning tea without telling him because he refuses treatment. Why does covert medication administration violate the ethical principle of veracity and Act 846 standards?",
+"choices": [
+{"text": "It involves deception, undermines therapeutic trust, and bypasses legal safeguards for assessing capacity and informed consent", "is_correct": true},
+{"text": "Crushing tablets always increases their pharmacokinetic bioavailability to lethal levels", "is_correct": false},
+{"text": "Nurses are legally permitted to deceive patients only on inpatient wards", "is_correct": false},
+{"text": "Veracity applies only to surgical patients and not psychiatric clients", "is_correct": false}
+],
+"rationale": "Veracity obligates nurses to be truthful and transparent with patients. Secretly administering antipsychotics erodes trust, causes unexplained extrapyramidal side effects, and circumvents lawful capacity assessment and involuntary treatment procedures outlined in Act 846.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"question_text": "An RPN promises a distressed newly admitted client that she will return in 20 minutes after completing medication rounds to discuss his concerns about family visitation. Despite a busy shift, she returns on time as promised. Which ethical principle is the nurse upholding?",
+"choices": [
+{"text": "Fidelity", "is_correct": true},
+{"text": "Justice", "is_correct": false},
+{"text": "Non-maleficence", "is_correct": false},
+{"text": "Paternalism", "is_correct": false}
+],
+"rationale": "Fidelity refers to faithfulness, keeping promises, and honoring professional commitments made to clients. In psychiatric nursing, reliability builds foundational trust with clients who may feel abandoned or suspicious.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"question_text": "A psychiatric nurse experiences moral distress when ordered by a senior clinician to place a calm, cooperative patient in seclusion simply because the ward is short-staffed during a night shift. Which ethical conflict does this scenario represent?",
+"choices": [
+{"text": "Violating non-maleficence and client dignity by using restrictive measures for staff convenience rather than imminent safety", "is_correct": true},
+{"text": "Upholding distributive justice to conserve nursing energy", "is_correct": false},
+{"text": "Exercising therapeutic beneficence to promote uninterrupted sleep", "is_correct": false},
+{"text": "Promoting patient autonomy through environmental isolation", "is_correct": false}
+],
+"rationale": "Under both ethical principles and Act 846, seclusion is strictly a last-resort safety measure for imminent violence and may never be used as punishment or a substitute for adequate staffing. Using it on a calm client inflicts psychological harm (maleficence).",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"question_text": "A client experiencing acute command hallucinations suddenly grabs a metal chair and attempts to strike another patient on the ward after verbal de-escalation fails. Physical restraint is applied as a last resort. According to Ghanaian psychiatric nursing standards and Act 846, how frequently must the restrained patient's physical condition, circulation, and vital signs be monitored and documented?",
+"choices": [
+{"text": "Every 15 minutes", "is_correct": true},
+{"text": "Every 2 hours", "is_correct": false},
+{"text": "Every 4 hours", "is_correct": false},
+{"text": "Once per 8-hour shift", "is_correct": false}
+],
+"rationale": "Mechanical or physical restraint carries high risks of asphyxiation, neurovascular compromise, rhabdomyolysis, and dehydration. Psychiatric nursing protocols require continuous observation with formal assessment and documentation of vital signs, limb perfusion, and restraint necessity every 15 minutes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"question_text": "During an individual psychotherapy session, an outpatient client with severe depressive disorder states clearly: 'I have bought rat poison and plan to kill myself tonight after my spouse leaves for night duty.' What is the RPN's legal and ethical obligation regarding confidentiality?",
+"choices": [
+{"text": "Breach confidentiality to the extent necessary to protect life by informing the attending psychiatrist, alerting the spouse, and ensuring immediate protective admission", "is_correct": true},
+{"text": "Maintain absolute confidentiality because all psychiatric disclosures are legally privileged without exception", "is_correct": false},
+{"text": "Post a warning on the clinic notice board to alert community members", "is_correct": false},
+{"text": "Schedule a routine follow-up appointment in two weeks without telling anyone", "is_correct": false}
+],
+"rationale": "While confidentiality is a cornerstone of psychiatric nursing under Act 846 and the Patients' Charter, it is legally overridden when there is an imminent, credible threat of suicide or serious harm to an identifiable third party (duty to protect). Information must be shared strictly on a need-to-know basis to preserve life.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"question_text": "A human resources officer from a bank calls the psychiatric ward asking whether one of their tellers is currently admitted for mental illness before confirming his promotion. How should the RPN respond?",
+"choices": [
+{"text": "Neither confirm nor deny the individual's admission status and explain that patient information cannot be disclosed without explicit written consent or a court order", "is_correct": true},
+{"text": "Confirm that the patient is admitted but reassure the caller that his condition is mild", "is_correct": false},
+{"text": "Transfer the call directly to the patient's bedside without asking the patient", "is_correct": false},
+{"text": "Fax a summary of the nursing care plan to the bank's medical unit", "is_correct": false}
+],
+"rationale": "Even acknowledging that a person is a patient in a psychiatric facility breaches confidentiality and exposes them to workplace stigma. Under Act 846, health records and admission status are strictly confidential unless authorized by the patient or a competent court.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"question_text": "Which clinical criterion is legally required under Section 46 of Act 846 for a court to grant an involuntary admission order?",
+"choices": [
+{"text": "The person has a severe mental disorder posing a serious likelihood of imminent harm to self or others, or risk of serious deterioration, and lacks capacity to consent", "is_correct": true},
+{"text": "The person holds unconventional political or religious beliefs that embarrass their family", "is_correct": false},
+{"text": "The person has a mild anxiety disorder and refuses herbal remedies", "is_correct": false},
+{"text": "The person's employer requests psychiatric confinement due to frequent lateness", "is_correct": false}
+],
+"rationale": "Act 846 explicitly states that non-conformity with moral, social, cultural, or political values shall never be grounds for diagnosing mental disorder or ordering involuntary detention. Strict clinical risk of harm or severe deterioration coupled with impaired capacity must be certified by specialists.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"question_text": "An RPN is reviewing the legal prerequisites for obtaining valid informed consent from a psychiatric inpatient prior to initiating a new long-acting injectable antipsychotic. Which combination of elements must be present for consent to be legally valid?",
+"choices": [
+{"text": "Decision-making capacity, adequate disclosure of risks/benefits/alternatives, comprehension, and voluntary choice free from coercion", "is_correct": true},
+{"text": "A signed thumbprint obtained while the patient is heavily sedated with chlorpromazine", "is_correct": false},
+{"text": "Verbal agreement from a neighbour accompanied by a police escort", "is_correct": false},
+{"text": "Written consent signed exclusively by the ward orderly", "is_correct": false}
+],
+"rationale": "Valid informed consent rests on four legal pillars: clinical capacity to understand and weigh information, full disclosure of material facts, comprehension by the client, and voluntariness without threat or coercion. Consent obtained under heavy sedation is legally invalid.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"question_text": "On an acute male psychiatric ward, a newly admitted manic client threatens to throw a chair at staff. Arrange the nurse's de-escalation and containment steps in order from least restrictive to most restrictive:\n1. Apply physical/mechanical restraint with medical authorization\n2. Offer oral PRN medication and a quiet low-stimulus space\n3. Use calm, non-provocative verbal de-escalation maintaining safe distance\n4. Utilize brief seclusion if agitation escalates to imminent violence",
+"choices": [
+{"text": "3, 2, 4, 1", "is_correct": true},
+{"text": "1, 4, 2, 3", "is_correct": false},
+{"text": "2, 3, 1, 4", "is_correct": false},
+{"text": "4, 1, 3, 2", "is_correct": false}
+],
+"rationale": "Act 846 and psychiatric nursing standards mandate the 'least restrictive alternative' principle: begin with verbal de-escalation (3), progress to environmental modification and voluntary PRN medication (2), and reserve seclusion (4) or physical restraint (1) strictly as last-resort interventions when imminent danger persists.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "According to the Ghana Health Service (GHS) Patients' Charter, a client admitted to a psychiatric unit has the right to know the identity and professional status of every healthcare provider attending to them. How should a Level 100 RPN student apply this right during clinical practicum?",
+"choices": [
+{"text": "Wear a visible institutional name tag, introduce oneself clearly as a student nurse, and seek the client's permission before conducting an assessment interview", "is_correct": true},
+{"text": "Introduce oneself as a licensed psychiatrist to increase the client's confidence", "is_correct": false},
+{"text": "Observe the client's therapy session silently from behind a curtain without introducing oneself", "is_correct": false},
+{"text": "Refuse to state one's name to maintain complete personal anonymity on the ward", "is_correct": false}
+],
+"rationale": "The GHS Patients' Charter guarantees the patient's right to full information regarding the identity and training status of care providers, as well as the right to decline participation in student training activities without compromising care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "A recovering psychiatric inpatient at a regional hospital wishes to obtain a second medical opinion regarding his diagnosis of schizoaffective disorder before starting clozapine. Which stance aligns with the GHS Patients' Charter?",
+"choices": [
+{"text": "Support the client's right to seek a second opinion and facilitate access to relevant clinical summaries through appropriate hospital channels", "is_correct": true},
+{"text": "Inform the client that requesting a second opinion is a symptom of paranoid resistance", "is_correct": false},
+{"text": "Threaten to discharge the client without medications if he questions the diagnosis", "is_correct": false},
+{"text": "Confiscate his personal phone so he cannot contact an external specialist", "is_correct": false}
+],
+"rationale": "The GHS Patients' Charter explicitly grants every patient the right to a second medical opinion at any stage of care. Labeling legitimate clinical inquiries as psychiatric pathology undermines patient empowerment and violates Charter rights.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "Under the GHS Patients' Charter, alongside patient rights, what corresponding responsibility is expected of a stable outpatient attending a community mental health clinic?",
+"choices": [
+{"text": "Providing accurate and complete clinical and medication history, keeping scheduled appointments, and respecting the rights of staff and other clients", "is_correct": true},
+{"text": "Diagnosing fellow patients in the waiting area to save nursing time", "is_correct": false},
+{"text": "Adjusting antipsychotic dosages independently without consulting the prescriber", "is_correct": false},
+{"text": "Paying informal tips to nurses before receiving NHIS-covered services", "is_correct": false}
+],
+"rationale": "The Patients' Charter pairs patient rights with specific responsibilities, including truthful disclosure of health information, adherence to mutually agreed treatment plans, and courteous conduct toward healthcare workers and fellow patients.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "A client who speaks only Dagbani is admitted to a psychiatric unit in Accra where most ward staff speak Twi and English. Applying the GHS Patients' Charter, what is the RPN's best action to ensure equitable care?",
+"choices": [
+{"text": "Arrange for a qualified, confidential medical interpreter to facilitate assessments, consent discussions, and psychoeducation", "is_correct": true},
+{"text": "Use loud English gestures and proceed with treatment without explaining the care plan", "is_correct": false},
+{"text": "Ask another acutely psychotic patient on the ward to translate personal medical history", "is_correct": false},
+{"text": "Delay all nursing assessments until a relative visits next week", "is_correct": false}
+],
+"rationale": "The Patients' Charter guarantees access to clear, understandable information in a language the patient comprehends. Utilizing an appropriate interpreter preserves confidentiality and prevents diagnostic errors caused by language barriers.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Scope of Practice for Psychiatric Nurses",
+"question_text": "A newly registered RPN is posted to a district hospital mental health unit where there is no resident psychiatrist. A medical officer asks the RPN to independently perform a lumbar puncture to rule out meningitis in a delirious patient. How should the RPN respond based on the N&MC Scope of Practice?",
+"choices": [
+{"text": "Politely decline performing the lumbar puncture as it is an invasive medical procedure outside the RPN scope of practice, and assist the medical officer in preparing the patient and equipment", "is_correct": true},
+{"text": "Perform the lumbar puncture immediately to demonstrate clinical competence", "is_correct": false},
+{"text": "Delegate the lumbar puncture to a senior enrolled nurse on the ward", "is_correct": false},
+{"text": "Refuse to provide any nursing care to the delirious patient", "is_correct": false}
+],
+"rationale": "Operating within the N&MC Scope of Practice protects patients from harm and shields the nurse from legal liability. Performing a lumbar puncture exceeds nursing boundaries; the RPN's role is neuro-psychiatric monitoring, patient preparation, and assisting the medical practitioner.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Scope of Practice for Psychiatric Nurses",
+"question_text": "Which clinical activity falls squarely within the autonomous Scope of Practice of a Registered Psychiatric Nurse (RPN) in Ghana?",
+"choices": [
+{"text": "Conducting comprehensive mental status examinations (MSE), formulating psychiatric nursing diagnoses, delivering psychoeducation, and implementing crisis de-escalation", "is_correct": true},
+{"text": "Performing surgical prefrontal lobotomies in district hospitals", "is_correct": false},
+{"text": "Issuing final High Court rulings on criminal insanity pleas", "is_correct": false},
+{"text": "Independently altering general anaesthesia protocols during surgery", "is_correct": false}
+],
+"rationale": "Under N&MC Ghana standards, RPNs are trained and licensed to perform holistic biopsychosocial assessments, Mental Status Examinations, therapeutic communication, crisis intervention, community follow-up, and administration/monitoring of psychotropic regimens.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Scope of Practice for Psychiatric Nurses",
+"question_text": "An RPN working as a Community Psychiatric Nurse in a sub-district health centre encounters a known client with stable schizophrenia who has run out of oral risperidone and lives 60 km from the nearest psychiatrist. Under Ghana Health Service task-shifting guidelines and Standard Treatment Guidelines, what is the nurse's appropriate scope of action?",
+"choices": [
+{"text": "Assess the client's mental state and side effects, dispense/renew maintenance refills within approved GHS task-shifting protocols, and document for medical review", "is_correct": true},
+{"text": "Discontinue all psychiatric medications permanently since no psychiatrist is present", "is_correct": false},
+{"text": "Initiate experimental unregistered herbal concoctions", "is_correct": false},
+{"text": "Instruct the client to buy random sedatives from an unlicensed chemical seller", "is_correct": false}
+],
+"rationale": "To bridge Ghana's mental health treatment gap, GHS Standard Treatment Guidelines and Act 846 authorize trained Community Psychiatric Nurses to conduct follow-up assessments and maintain stabilization prescriptions for uncomplicated chronic mental disorders according to established protocols.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Scope of Practice for Psychiatric Nurses",
+"question_text": "When delegating tasks to a Health Assistant Clinical (HAC) or nursing student on a psychiatric ward, which nursing responsibility can NEVER be delegated by the Registered Psychiatric Nurse?",
+"choices": [
+{"text": "Initial clinical assessment, formulation of the nursing care plan, and accountability for overall patient outcomes", "is_correct": true},
+{"text": "Assisting a stable client with morning personal hygiene and bed-making", "is_correct": false},
+{"text": "Accompanying a low-risk convalescent client to the occupational therapy workshop", "is_correct": false},
+{"text": "Serving meals and monitoring dietary intake on the ward", "is_correct": false}
+],
+"rationale": "While routine supportive activities may be safely delegated to auxiliary staff, the N&MC Scope of Practice dictates that core professional judgments—including initial assessment, risk stratification, care planning, and ultimate accountability—remain strictly with the registered nurse.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Boundaries in Mental Health",
+"question_text": "A 29-year-old client recovering from borderline personality disorder and depressive episodes offers an RPN her personal WhatsApp number and asks to meet at a local restaurant after discharge 'because you are the only person who truly understands me.' What is the most therapeutic and professional response by the nurse?",
+"choices": [
+{"text": "Explain kindly and clearly that professional nursing boundaries prohibit personal social relationships outside the clinical setting, and connect her with structured outpatient support", "is_correct": true},
+{"text": "Agree to meet for dinner once to boost her self-esteem and prevent relapse", "is_correct": false},
+{"text": "Give her the nurse's personal phone number for late-night social chatting", "is_correct": false},
+{"text": "Scold her harshly in front of other patients for acting inappropriately", "is_correct": false}
+],
+"rationale": "Maintaining firm, compassionate professional boundaries protects vulnerable psychiatric clients from role confusion and dependency. Redirecting the client to legitimate outpatient follow-up preserves therapeutic integrity without shaming the client.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries in Mental Health",
+"question_text": "Upon discharge from an inpatient psychiatric unit, a grateful family presents an RPN with an expensive smartphone and GHS 1,000 in cash as a personal thank-you gift. Which action complies with N&MC professional boundary standards?",
+"choices": [
+{"text": "Politely decline the personal cash and expensive gift, explaining hospital policy, and suggest expressing appreciation through a thank-you card or donation to the ward welfare fund", "is_correct": true},
+{"text": "Accept the cash quietly in the parking lot so other nurses do not become jealous", "is_correct": false},
+{"text": "Keep the smartphone and share the cash with the ward orderly", "is_correct": false},
+{"text": "Accept the gifts and promise to prioritize the family's relatives over other patients", "is_correct": false}
+],
+"rationale": "Accepting substantial monetary or high-value personal gifts creates a dual relationship, compromises clinical objectivity, and breeds perceptions of favoritism. Polite refusal preserves professional impartiality and public trust.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries in Mental Health",
+"question_text": "During a therapeutic group session on substance use recovery, a client asks the facilitating RPN whether the nurse has ever personally abused alcohol or cannabis. Which response demonstrates appropriate therapeutic self-disclosure?",
+"choices": [
+{"text": "Briefly redirect the focus back to the client's recovery goals and coping strategies without sharing personal substance history", "is_correct": true},
+{"text": "Spend 25 minutes recounting the nurse's own past drinking habits and family problems", "is_correct": false},
+{"text": "Become defensive and terminate the group session immediately", "is_correct": false},
+{"text": "Mock the client for asking personal questions", "is_correct": false}
+],
+"rationale": "In psychiatric nursing, self-disclosure should be minimal and used strictly when it serves the client's therapeutic benefit. Shifting attention away from the nurse back to the client's lived experience maintains a client-centered boundary.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Professional Boundaries in Mental Health",
+"question_text": "Which nursing behaviour on a psychiatric unit represents an unambiguous boundary violation that warrants immediate disciplinary action by the N&MC?",
+"choices": [
+{"text": "Entering into a romantic or sexual relationship with a current or recently discharged psychiatric patient", "is_correct": true},
+{"text": "Using active listening and empathy during a crisis intervention", "is_correct": false},
+{"text": "Collaborating with a client's family during discharge planning with client consent", "is_correct": false},
+{"text": "Documenting objective behavioural observations in the nursing progress notes", "is_correct": false}
+],
+"rationale": "Because of the inherent power imbalance and emotional vulnerability in psychiatric care, any romantic or sexual involvement with a patient constitutes severe professional misconduct and exploitation under the N&MC Code of Conduct.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advocacy and Whistleblowing",
+"question_text": "A Community Psychiatric Nurse discovers that an employer in the municipality summarily dismissed a competent clerk solely because the employee attended an outpatient psychiatric clinic for well-controlled bipolar disorder. Under Act 846, how should the nurse advocate for the client?",
+"choices": [
+{"text": "Educate the client on workplace anti-discrimination protections under Act 846, provide a confidential fitness-to-work medical report with client consent, and link the client to legal aid or the Mental Health Authority", "is_correct": true},
+{"text": "Advise the client to accept the dismissal silently because mental illness disqualifies people from formal employment", "is_correct": false},
+{"text": "Publish the employer's private phone number on social media", "is_correct": false},
+{"text": "Tell the client to stop taking medication so employers will not suspect a diagnosis", "is_correct": false}
+],
+"rationale": "Section 55 of Act 846 explicitly protects persons with mental disorders against workplace discrimination and wrongful termination. Nurse advocacy includes empowering clients with knowledge of their statutory rights and facilitating formal occupational protection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Whistleblowing",
+"question_text": "An RPN working on a chronic psychiatric ward observes a senior nurse repeatedly slapping a non-verbal, intellectually disabled resident during bathing and diverting the client's family-supplied provisions. Which sequence of actions reflects ethical whistleblowing?",
+"choices": [
+{"text": "Ensure the resident's immediate physical safety, document objective dates/injuries accurately, and report the abuse formally to the Nurse Manager/Hospital Director—escalating to the N&MC and Mental Health Review Tribunal if unaddressed", "is_correct": true},
+{"text": "Confront the senior nurse only on social media without reporting through hospital administration", "is_correct": false},
+{"text": "Ignore the abuse because reporting a senior colleague violates nursing collegiality", "is_correct": false},
+{"text": "Wait six months until transfer to another ward before mentioning the incidents", "is_correct": false}
+],
+"rationale": "Under the N&MC Code of Conduct, a nurse's primary duty is to safeguard vulnerable patients from abuse and neglect, overriding loyalty to colleagues. Structured internal reporting followed by external regulatory escalation if internal systems fail ensures accountability and whistleblower protection.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Advocacy and Whistleblowing",
+"question_text": "During a community durbar in a rural Bono Region town, traditional elders attribute mental illness exclusively to spiritual curses and advocate isolating affected youth from school. Which public health advocacy message by the RPN best reduces stigma while respecting cultural dialogue?",
+"choices": [
+{"text": "Explain in culturally respectful language that mental disorders are treatable medical conditions involving brain and psychosocial factors, and invite traditional leaders to partner in early referral to clinics", "is_correct": true},
+{"text": "Ridicule the elders' cultural beliefs publicly and threaten everyone with arrest", "is_correct": false},
+{"text": "Agree that mental illness is contagious and advise locking affected youth indoors", "is_correct": false},
+{"text": "State that psychiatric medications permanently cure every spiritual and social problem overnight", "is_correct": false}
+],
+"rationale": "Effective stigma reduction in Ghana combines scientific psychoeducation with respectful engagement of community gatekeepers. Framing mental illness as a treatable health condition while building referral partnerships with traditional and religious leaders improves early help-seeking.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "Under Act 846, a patient admitted involuntarily to a psychiatric hospital has the right to appoint a 'personal representative' to protect their interests. Who is legally disqualified from serving as a patient's personal representative?",
+"choices": [
+{"text": "A staff member of the psychiatric facility currently treating the patient, unless directly related and approved without conflict of interest", "is_correct": true},
+{"text": "An adult sibling chosen by the patient", "is_correct": false},
+{"text": "A trusted close friend designated by the patient while capacitated", "is_correct": false},
+{"text": "A spouse appointed with the patient's consent", "is_correct": false}
+],
+"rationale": "To prevent institutional conflict of interest, Act 846 bars employees of the treating mental health facility from acting as a patient's personal representative unless exempted by kinship rules, ensuring independent advocacy for the client.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "At the start of a busy afternoon shift in an acute psychiatric unit, an RPN must prioritize care among four newly handed-over clients. Which client requires the nurse's IMMEDIATE first assessment?",
+"choices": [
+{"text": "A client started on haloperidol 2 hours ago who now exhibits oculogyric crisis, severe neck stiffness (torticollis), and mild laryngeal stridor", "is_correct": true},
+{"text": "A stable client with chronic schizophrenia asking when his family will visit tomorrow", "is_correct": false},
+{"text": "A recovering depressive client requesting assistance to fill out an NHIS renewal form", "is_correct": false},
+{"text": "A client with generalized anxiety disorder practicing deep breathing exercises in the dayroom", "is_correct": false}
+],
+"rationale": "Acute dystonia involving laryngeal spasm/stridor is a life-threatening airway emergency triggered by high-potency antipsychotics like haloperidol. Using ABC (Airway, Breathing, Circulation) prioritization, the nurse must immediately assess airway patency and administer prescribed anticholinergic rescue (e.g., benztropine or biperiden).",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Ethical Principles in Psychiatric Care (Autonomy, Beneficence, Non-maleficence, Justice)",
+"question_text": "An RPN on night duty manages four concurrent ward situations. Applying ethical and clinical prioritization (preservation of life and non-maleficence), which situation must the nurse address FIRST?",
+"choices": [
+{"text": "A client with severe major depression found tying a bedsheet around a bathroom pipe", "is_correct": true},
+{"text": "A manic client loudly singing hymns in the corridor without threatening anyone", "is_correct": false},
+{"text": "A family member telephoning the nursing station to ask about visiting hours", "is_correct": false},
+{"text": "A client complaining that dinner was served 15 minutes late", "is_correct": false}
+],
+"rationale": "An active suicide attempt poses an immediate, lethal threat to human life. Prioritizing immediate physical intervention and ligature removal supersedes non-lethal behavioural disturbances, administrative inquiries, or routine comfort complaints.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Legal Aspects (Involuntary Admission, Restraint, Confidentiality)",
+"question_text": "During a handover audit at a regional hospital psychiatric unit, the charge RPN identifies four documentation discrepancies. Which issue poses the most urgent medico-legal risk requiring IMMEDIATE rectification?",
+"choices": [
+{"text": "A patient held involuntarily for 96 hours without an emergency certificate renewal or court-ordered prolonged treatment application under Act 846", "is_correct": true},
+{"text": "A minor spelling error in a voluntary client's home street address", "is_correct": false},
+{"text": "An unfiled recreational therapy attendance sheet from last week", "is_correct": false},
+{"text": "A missing serial number on a broken ward television set", "is_correct": false}
+],
+"rationale": "Detaining a patient beyond the statutory 72-hour emergency window without valid legal authorization constitutes unlawful detention (false imprisonment) under Act 846 and violates constitutional liberty rights, requiring immediate psychiatric and legal regularization.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Scope of Practice for Psychiatric Nurses",
+"question_text": "A newly posted RPN in an integrated general hospital ward receives four simultaneous requests. Which task should the RPN prioritize performing personally before delegating routine tasks to nursing assistants?",
+"choices": [
+{"text": "Performing a suicide risk and mental state assessment on a newly admitted client following a deliberate organophosphate self-poisoning attempt", "is_correct": true},
+{"text": "Distributing clean bed linens to convalescing clients", "is_correct": false},
+{"text": "Restocking stationery forms at the nurses' station", "is_correct": false},
+{"text": "Escorting a discharged client's relative to the hospital accounts office", "is_correct": false}
+],
+"rationale": "High-risk clinical and suicide assessment after medically stabilized self-harm requires specialized RPN judgment to determine observation levels and safety precautions, whereas linen distribution and errands are non-clinical tasks suitable for delegation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Patients' Charter",
+"question_text": "Under the GHS Patients' Charter and Act 846, when an inpatient psychiatric client dies unexpectedly on the ward, what right do the bereaved next-of-kin possess regarding the circumstances of death?",
+"choices": [
+{"text": "The right to a prompt, truthful explanation from the clinical team, transparent inquest/post-mortem procedures where indicated, and dignified handling of the body", "is_correct": true},
+{"text": "No right to any explanation because psychiatric ward deaths are classified state secrets", "is_correct": false},
+{"text": "Immediate burial by hospital staff within 2 hours without notifying relatives", "is_correct": false},
+{"text": "Automatic deletion of the patient's clinical chart to protect staff", "is_correct": false}
+],
+"rationale": "Both the Patients' Charter and Act 846 uphold transparency, accountability, and respect for the deceased and family, mandating timely notification, honest disclosure, and statutory coronial investigation for unexpected inpatient deaths.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Professional Boundaries in Mental Health",
+"question_text": "An RPN working in a community psychiatric clinic notices that she feels intense anger toward a client with alcohol use disorder because the nurse's own father struggled with alcoholism. What professional adjustment strategy should the nurse apply first?",
+"choices": [
+{"text": "Recognize the countertransference reaction, reflect objectively, and seek clinical supervision from a senior psychiatric nurse or mentor", "is_correct": true},
+{"text": "Lecture the client angrily about ruining his family's life", "is_correct": false},
+{"text": "Refuse to dispense the client's prescribed thiamine and folate", "is_correct": false},
+{"text": "Share the nurse's personal family trauma during the client's assessment", "is_correct": false}
+],
+"rationale": "Unresolved personal experiences can trigger countertransference—unconscious emotional reactions displaced onto a client. Self-awareness and structured clinical supervision enable the RPN to process feelings safely and maintain non-judgmental therapeutic care.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advocacy and Whistleblowing",
+"question_text": "During a budget review at a district hospital, the management team proposes cutting the mental health unit's essential psychotropic drug allocation to fund cosmetic renovations of the administration block. How can the unit's lead RPN most effectively advocate using Ghana's health policy framework?",
+"choices": [
+{"text": "Present data on relapse and readmission rates alongside Act 846 mandates and NHIS mental health coverage provisions to demonstrate that essential psychotropics are legally and clinically non-negotiable", "is_correct": true},
+{"text": "Encourage psychiatric patients to vandalize the administration block in protest", "is_correct": false},
+{"text": "Stop documenting patient visits until management reverses the decision", "is_correct": false},
+{"text": "Ask patients to buy street drugs to compensate for hospital stockouts", "is_correct": false}
+],
+"rationale": "Evidence-based administrative advocacy grounded in Act 846 provisions—which guarantee access to basic mental health care and essential psychotropic medicines—equips nurse leaders to protect vulnerable patient budgets constructively.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "History of Psychiatric Nursing in Ghana",
+"question_text": "Why did the Ghana Health Service introduce psychiatric wings within regional and district general hospitals following the passage of Act 846?",
+"choices": [
+{"text": "To integrate mental health into primary and secondary healthcare, reduce stigma associated with standalone asylums, and bring care closer to families", "is_correct": true},
+{"text": "To permanently close all community psychiatric clinics across the northern regions", "is_correct": false},
+{"text": "To separate physical healthcare completely from psychological care", "is_correct": false},
+{"text": "To restrict psychiatric nursing practice exclusively to military hospitals", "is_correct": false}
+],
+"rationale": "Integrating mental health units into general hospitals operationalizes Act 846's decentralization mandate, normalizing mental health alongside physical illnesses and improving geographic access across all regions of Ghana.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Mental Health Act 2012 (Act 846)",
+"question_text": "A 16-year-old senior high school student is brought to a psychiatric outpatient clinic by her parents for severe panic attacks and school refusal. Under Act 846, how is consent for assessment and treatment of a minor managed?",
+"choices": [
+{"text": "Consent is provided by the parents or legal guardian while involving the adolescent in age-appropriate explanation and assent", "is_correct": true},
+{"text": "Minors under 18 are legally barred from receiving any psychiatric care in Ghana", "is_correct": false},
+{"text": "Only a High Court judge can authorize outpatient counselling for an adolescent", "is_correct": false},
+{"text": "The school headmaster holds sole legal authority over the student's medical treatment", "is_correct": false}
+],
+"rationale": "Under Act 846 and Ghanaian child protection laws, parents or legal guardians hold legal authority to consent on behalf of minors under 18, while ethical psychiatric nursing incorporates the minor's voice through developmentally appropriate assent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "N&MC Code of Professional Conduct",
+"question_text": "Which statement best reflects the legal and professional status of a Level 100 student psychiatric nurse practicing on a clinical ward in Ghana?",
+"choices": [
+{"text": "The student must practice strictly under the direct supervision of a registered nurse/preceptor and is held to the standard of care appropriate to their level of training", "is_correct": true},
+{"text": "The student carries zero legal or ethical responsibility for careless acts that injure a patient", "is_correct": false},
+{"text": "The student is authorized to sign involuntary admission certificates independently", "is_correct": false},
+{"text": "The student is exempt from client confidentiality rules until graduation", "is_correct": false}
+],
+"rationale": "Student nurses in Ghana are bound by confidentiality and patient safety rules from day one, must never perform procedures for which they have not been taught and supervised, and share accountability if they act beyond their training level.",
+"difficulty": "KNOWLEDGE"
+}
+]
+}
+]
+}
