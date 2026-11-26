@@ -490,6 +490,13 @@ class LeaderboardView(APIView):
             .order_by('-average_score', '-total_quizzes')
         )
 
+def _mask_leaderboard_name(full_name: str) -> str:
+    parts = [p for p in (full_name or "").strip().split() if p]
+    if not parts:
+        return "Student"
+    if len(parts) == 1:
+        return parts[0]
+    return f"{parts[0]} {parts[-1][0].upper()}."
         leaderboard_users = base_qs[:20]
         user_rank = None
         user_score = 0.0
@@ -505,7 +512,7 @@ class LeaderboardView(APIView):
         data = [
             {
                 "rank": index + 1,
-                "name": u.full_name,
+                "name": _mask_leaderboard_name(u.full_name),
                 "average_score": round(u.average_score, 1),
                 "total_quizzes": u.total_quizzes,
                 "is_current_user": u.id == request.user.id
