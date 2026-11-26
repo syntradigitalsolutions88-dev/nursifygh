@@ -1,0 +1,659 @@
+{
+"courses": [
+{
+"course_code": "CBR-322",
+"course_title": "Community-Based Rehabilitation",
+"category": "FUNDAMENTALS",
+"semester": "S2",
+"topics": [
+"Principles of CBR",
+"Persons with Disability Act 2006 (Act 715)",
+"Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"Physiotherapy Basics and Mobility Aids",
+"Speech and Language Therapy Referrals",
+"Occupational Therapy and Activities of Daily Living (ADLs)",
+"Community Integration and Vocational Rehabilitation",
+"Family and Caregiver Training",
+"Stigma Reduction and Disability Awareness in the Community"
+],
+"questions": [
+{
+"topic": "Principles of CBR",
+"question_text": "According to the World Health Organization (WHO) and Ghana Health Service (GHS) Community-Based Rehabilitation (CBR) Matrix, which five core components structure holistic rehabilitation within Ghanaian communities?",
+"choices": [
+{"text": "Health, Education, Livelihood, Social, and Empowerment", "is_correct": true},
+{"text": "Surgery, Pharmacy, Institutionalization, Charity, and Isolation", "is_correct": false},
+{"text": "Diagnostics, Inpatient Care, Physiotherapy, NHIS Billing, and Discharge", "is_correct": false},
+{"text": "Orthotics, Prosthetics, Speech Therapy, Occupational Therapy, and Nursing", "is_correct": false}
+],
+"rationale": "The WHO/GHS CBR Matrix organizes community rehabilitation into five multisectoral pillars—Health, Education, Livelihood, Social, and Empowerment—to ensure persons with disabilities achieve full social inclusion rather than isolated medical treatment.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Principles of CBR",
+"question_text": "A Community Health Nurse and Registered General Nurse conducting home visits in a rural Bono Region sub-district collaborate with the District Assembly, local artisans, and the client's extended family to build a wooden ramp and adapt a pit latrine for a paraplegic farmer. Which fundamental principle of CBR does this exemplify?",
+"choices": [
+{"text": "Multisectoral collaboration, community ownership, and utilization of appropriate local technology", "is_correct": true},
+{"text": "Centralized tertiary hospital institutionalization", "is_correct": false},
+{"text": "Exclusive reliance on imported high-tech motorized equipment", "is_correct": false},
+{"text": "Passive charity-based medical paternalism", "is_correct": false}
+],
+"rationale": "CBR emphasizes mobilizing local resources, low-cost indigenous materials, family participation, and cross-sector partnerships so solutions remain sustainable and culturally adapted within the client's community.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of CBR",
+"question_text": "During a district health review, a nurse contrasts the traditional 'medical model' of disability with the 'social/rights-based model' promoted by Ghana's CBR programme. Which statement best reflects the social model of disability?",
+"choices": [
+{"text": "Disability arises primarily from environmental, attitudinal, and institutional barriers that restrict participation rather than solely from an individual's physical impairment", "is_correct": true},
+{"text": "Persons with physical or sensory impairments must be cured surgically before entering schools or workplaces", "is_correct": false},
+{"text": "Disability is an unchangeable personal tragedy requiring permanent segregation in special homes", "is_correct": false},
+{"text": "Rehabilitation is solely the responsibility of orthopedic surgeons at teaching hospitals", "is_correct": false}
+],
+"rationale": "The social model distinguishes biological impairment from societal disability, directing nursing and community interventions toward removing physical stairs, stigma, and exclusionary policies.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Principles of CBR",
+"question_text": "In Ghana's primary health care referral structure, a CHPS nurse identifies a 4-year-old child with congenital clubfoot (talipes equinovarus) during a home visit. What is the most appropriate referral pathway?",
+"choices": [
+{"text": "Refer through the sub-district health centre to the district/regional hospital orthopedic and physiotherapy unit for Ponseti serial casting while providing community follow-up", "is_correct": true},
+{"text": "Advise the parents to wait until the child reaches 18 years before seeking medical evaluation", "is_correct": false},
+{"text": "Attempt forceful manual manipulation of the infant's foot at the CHPS compound", "is_correct": false},
+{"text": "Recommend permanent bed rest to prevent weight-bearing deformity", "is_correct": false}
+],
+"rationale": "Early referral from CHPS to specialized orthopedic/physiotherapy units enables non-surgical Ponseti serial casting during infancy when tissues are pliable, followed by community nurse monitoring of brace adherence.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of CBR",
+"question_text": "Which nursing philosophy distinguishes tertiary rehabilitation from acute curative care on a medical-surgical ward?",
+"choices": [
+{"text": "Focusing on maximizing residual functional ability, preventing secondary complications, and restoring independent participation rather than curing the underlying permanent pathology", "is_correct": true},
+{"text": "Performing all self-care tasks for the patient to conserve their energy indefinitely", "is_correct": false},
+{"text": "Limiting care exclusively to administering intravenous antibiotics and analgesics", "is_correct": false},
+{"text": "Discharging patients without family involvement once vital signs stabilize", "is_correct": false}
+],
+"rationale": "Rehabilitation nursing shifts from doing for the patient to teaching and empowering the patient and family to optimize remaining capabilities and prevent secondary disabilities like contractures or pressure ulcers.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Persons with Disability Act 2006 (Act 715)",
+"question_text": "Under Ghana's Persons with Disability Act, 2006 (Act 715), what statutory obligation applies to owners and operators of public buildings, health facilities, and schools?",
+"choices": [
+{"text": "They must provide barrier-free physical access such as ramps, accessible washrooms, and clear signage for persons with disabilities", "is_correct": true},
+{"text": "They may bar wheelchair users from upper floors if no elevator is installed", "is_correct": false},
+{"text": "Accessibility modifications are optional unless funded entirely by the patient", "is_correct": false},
+{"text": "Only psychiatric hospitals are required to install wheelchair ramps", "is_correct": false}
+],
+"rationale": "Sections 6 and 7 of Act 715 mandate that public places and service facilities be made accessible to persons with disabilities, establishing a legal right to barrier-free entry.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Persons with Disability Act 2006 (Act 715)",
+"question_text": "A 32-year-old qualified accountant who uses bilateral axillary crutches following childhood poliomyelitis passes an aptitude test at a municipal assembly in Ghana, but the panel withdraws the job offer solely because of his mobility aid. Which provision of Act 715 has been violated?",
+"choices": [
+{"text": "Prohibition of employment discrimination against qualified persons with disabilities", "is_correct": true},
+{"text": "Mandatory institutionalization of unemployed persons with disabilities", "is_correct": false},
+{"text": "Exemption of public institutions from hiring persons with physical impairments", "is_correct": false},
+{"text": "Requirement that disabled employees pay double income tax", "is_correct": false}
+],
+"rationale": "Act 715 prohibits employers from discriminating against a prospective employee on the ground of disability if the person is qualified for the job, and provides tax incentives to employers who hire persons with disabilities.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Persons with Disability Act 2006 (Act 715)",
+"question_text": "During a community clinic visit, a visually impaired mother informs the RPN that a commercial driver refused to let her board a public trotro with her guide cane and charged double fare for her folding wheelchair. How should the nurse counsel her under Act 715?",
+"choices": [
+{"text": "Inform her that Act 715 prohibits transport operators from refusing service or charging extra fees for mobility aids, and connect her with the local Ghana Federation of Disability Organizations (GFD) and Department of Social Welfare", "is_correct": true},
+{"text": "Advise her to remain at home permanently to avoid public transport conflicts", "is_correct": false},
+{"text": "Tell her that commercial transport operators have full legal authority to charge extra for crutches and wheelchairs", "is_correct": false},
+{"text": "Recommend that she surrender her NHIS card to pay transport penalties", "is_correct": false}
+],
+"rationale": "Sections 23–25 of Act 715 guarantee persons with disabilities the right to use public transport without discrimination or additional charges for assistive devices, supported by statutory advocacy bodies.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Persons with Disability Act 2006 (Act 715)",
+"question_text": "Which statutory body was established under Act 715 to formulate policies, coordinate CBR programmes, and enforce the rights of persons with disabilities in Ghana?",
+"choices": [
+{"text": "The National Council on Persons with Disability (NCPD)", "is_correct": true},
+{"text": "The Nursing and Midwifery Council (N&MC)", "is_correct": false},
+{"text": "The Food and Drugs Authority (FDA)", "is_correct": false},
+{"text": "The Mental Health Review Tribunal", "is_correct": false}
+],
+"rationale": "Part VII of Act 715 establishes the National Council on Persons with Disability (NCPD) to oversee policy implementation, monitor compliance, and advise the Ministry responsible for Social Welfare.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Persons with Disability Act 2006 (Act 715)",
+"question_text": "A 10-year-old boy with mild cerebral palsy and intact cognitive ability is denied admission to a public primary school in his village because the headteacher claims 'disabled children belong only in special boarding schools.' Applying Act 715, what is the CBR nurse's best advocacy intervention?",
+"choices": [
+{"text": "Educate the headteacher and parents on Act 715's inclusive education mandate, liaise with the District Education Special Needs Coordinator, and support reasonable classroom accommodations", "is_correct": true},
+{"text": "Agree with the headteacher and advise the parents to keep the child at home permanently", "is_correct": false},
+{"text": "Prescribe sedatives so the child remains quiet at home during school hours", "is_correct": false},
+{"text": "Tell the parents that public schools are legally restricted to non-disabled children", "is_correct": false}
+],
+"rationale": "Act 715 prohibits refusing admission to a child because of disability and promotes inclusive education in mainstream schools wherever appropriate, backed by District Assembly Common Fund disability support.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "A 58-year-old man is admitted to a district hospital medical ward with left-sided hemiplegia following a right hemispheric ischaemic stroke. During acute positioning in bed, which nursing action best prevents shoulder subluxation and external rotation contracture of the affected hip?",
+"choices": [
+{"text": "Support the paretic left arm on a pillow with the shoulder slightly abducted and externally rotated, and place a trochanter roll along the lateral aspect of the left thigh", "is_correct": true},
+{"text": "Pull firmly on the patient's flaccid left arm when turning him in bed", "is_correct": false},
+{"text": "Keep the patient strictly supine for 14 days without turning", "is_correct": false},
+{"text": "Place a large pillow directly under the knees continuously to flex the hips", "is_correct": false}
+],
+"rationale": "Supporting the hemiplegic upper limb prevents gravity-induced glenohumeral subluxation, while a trochanter roll prevents external hip rotation; pulling on a flaccid arm or propping pillows under knees causes joint trauma and flexion contractures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "A 45-year-old farmer undergoes a right below-knee (transtibial) amputation due to severe diabetic foot gangrene at a regional hospital. During the first 48 hours postoperatively, how should the nurse position the residual limb (stump) to prevent a knee flexion contracture?",
+"choices": [
+{"text": "Keep the residual limb flat and extended on the mattress, avoiding prolonged pillow elevation under the knee after the first 24 hours, and encourage prone lying for 20–30 minutes three times daily", "is_correct": true},
+{"text": "Elevate the stump continuously on two thick pillows for two weeks", "is_correct": false},
+{"text": "Keep the knee flexed at 90 degrees over the side of the bed", "is_correct": false},
+{"text": "Bind the thigh tightly to the bed rail with adhesive tape", "is_correct": false}
+],
+"rationale": "Prolonged elevation of a transtibial or transfemoral residual limb on pillows promotes hip or knee flexion contractures that prevent proper prosthetic fitting; flat extension and scheduled prone positioning stretch the flexors.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "Two weeks after a left above-knee amputation, a client complains of severe burning and cramping pain perceived in his missing left foot. What is the nurse's best clinical response?",
+"choices": [
+{"text": "Validate that phantom limb pain is a real neuropathic phenomenon caused by central nervous system reorganization, assess pain intensity, and administer prescribed neuropathic analgesia (e.g., gabapentin) alongside mirror therapy", "is_correct": true},
+{"text": "Inform the patient that pain cannot exist in an amputated limb and withhold analgesics", "is_correct": false},
+{"text": "Tell the patient he is experiencing post-surgical psychosis", "is_correct": false},
+{"text": "Re-apply a tight tourniquet to the upper thigh", "is_correct": false}
+],
+"rationale": "Phantom limb pain affects up to 60–80% of amputees due to peripheral neuroma firing and cortical remapping; validating the symptom and initiating multimodal neuropathic therapy prevents chronic pain syndrome.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "A 24-year-old okada (commercial motorcycle) rider recovering from a moderate traumatic brain injury (TBI) exhibits restlessness, short attention span, impulsivity, and confusion (Rancho Los Amigos Level IV). Which environmental nursing strategy is most appropriate?",
+"choices": [
+{"text": "Maintain a calm, structured, low-stimulus room with consistent routines, clear simple instructions, and padded safety rails while avoiding physical restraints unless imminent harm exists", "is_correct": true},
+{"text": "Place him in a noisy open ward near the main entrance to stimulate alertness", "is_correct": false},
+{"text": "Give him complex multi-step verbal instructions rapidly", "is_correct": false},
+{"text": "Apply four-point leather restraints continuously throughout the day", "is_correct": false}
+],
+"rationale": "Patients in the confused-agitated stage of TBI recovery experience sensory overload and impaired executive filtering; a quiet, predictable environment with brief, calm redirection minimizes agitation and prevents falls.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "During post-stroke rehabilitation, a patient with a right parietal lobe lesion consistently ignores food on the left side of his meal tray, fails to wash the left side of his face, and bumps his wheelchair into doorways on his left. Which neurological deficit is present, and how should the nurse adapt care?",
+"choices": [
+{"text": "Unilateral spatial neglect (hemispatial neglect); initially place essential items on his right side while systematically cueing him to scan visually toward his left", "is_correct": true},
+{"text": "Broca's expressive aphasia; communicate exclusively via written flashcards", "is_correct": false},
+{"text": "Bilateral cataracts; apply dark sunglasses indoors", "is_correct": false},
+{"text": "Cerebellar ataxia; restrict all head turning", "is_correct": false}
+],
+"rationale": "Right hemisphere strokes commonly produce left hemispatial neglect, where the brain fails to attend to the contralesional field despite intact vision; progressive visual scanning training promotes safety and cortical compensation.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "A client with a T6 spinal cord injury undergoing community rehabilitation suddenly develops a pounding headache, profuse sweating above the nipple line, nasal congestion, flushed skin, and a blood pressure of 210/118 mmHg. What is the nurse's IMMEDIATE first action?",
+"choices": [
+{"text": "Elevate the head of the bed to 90 degrees (high Fowler's position), loosen tight clothing, and check immediately for a kinked urinary catheter or faecal impaction", "is_correct": true},
+{"text": "Place the patient flat in the Trendelenburg position to increase cerebral perfusion", "is_correct": false},
+{"text": "Administer intravenous normal saline bolus rapidly", "is_correct": false},
+{"text": "Leave the patient alone to sleep off the headache", "is_correct": false}
+],
+"rationale": "These are hallmark signs of autonomic dysreflexia, a life-threatening hypertensive emergency in injuries at or above T6 triggered by noxious stimuli below the lesion (most commonly bladder distension). Sitting the patient upright immediately lowers intracranial blood pressure via orthostasis while the trigger is removed.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "How should an elastic compression bandage be applied to a healing below-knee amputation stump to shape it for a future prosthesis?",
+"choices": [
+{"text": "Using a figure-of-eight wrapping technique with greater pressure distally than proximally, rewrapped every 4–6 hours", "is_correct": true},
+{"text": "Using tight circular turns around the upper thigh to restrict venous return", "is_correct": false},
+{"text": "Applying maximum tightness at the knee joint and loose wraps at the stump tip", "is_correct": false},
+{"text": "Leaving the bandage untouched for 7 days continuously", "is_correct": false}
+],
+"rationale": "A distal-to-proximal pressure gradient using figure-of-eight turns reduces oedema and moulds a conical residual limb without creating a proximal tourniquet effect that compromises circulation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physiotherapy Basics and Mobility Aids",
+"question_text": "A nurse fits a pair of wooden axillary crutches for a 175 cm tall patient recovering from a fractured femur at a district hospital. Which measurement confirms correct crutch fitting to prevent brachial plexus nerve palsy?",
+"choices": [
+{"text": "A clearance of 2–3 fingerbreadths (about 3–5 cm) between the axillary pad and the patient's axilla, with elbows flexed at 20–30 degrees when gripping the handpieces", "is_correct": true},
+{"text": "The axillary pad presses firmly into the armpit to support full body weight", "is_correct": false},
+{"text": "The elbows remain completely locked at 0 degrees extension while standing", "is_correct": false},
+{"text": "The crutch tips rest directly underneath the heels", "is_correct": false}
+],
+"rationale": "Weight must be borne through the hands with 20–30 degrees of elbow flexion, leaving a 2–3 fingerbreadth gap below the axilla so pressure does not compress the radial and brachial nerves ('crutch palsy').",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physiotherapy Basics and Mobility Aids",
+"question_text": "A patient with right-sided hemiparesis following a stroke is prescribed a single-point walking cane for ambulation in his home compound. In which hand should the nurse instruct the patient to hold the cane?",
+"choices": [
+{"text": "In the unaffected (strong) left hand, advancing the cane simultaneously with the weak right leg", "is_correct": true},
+{"text": "In the affected (weak) right hand, advancing it with the strong left leg", "is_correct": false},
+{"text": "Alternating hands every three steps", "is_correct": false},
+{"text": "Behind the back to encourage trunk extension", "is_correct": false}
+],
+"rationale": "Holding the cane on the unaffected side widens the base of support and mimics natural reciprocal gait while unloading weight from the weak contralateral leg.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physiotherapy Basics and Mobility Aids",
+"question_text": "When teaching a client with a non-weight-bearing left leg fracture how to ascend stairs safely using axillary crutches, which sequence should the nurse demonstrate?",
+"choices": [
+{"text": "Step up with the strong (unaffected) right leg first, then bring the crutches and the affected left leg up together ('Up with the good, down with the bad')", "is_correct": true},
+{"text": "Advance both crutches onto the upper step first, then hop up with the injured leg", "is_correct": false},
+{"text": "Step up with the non-weight-bearing left leg first while holding the crutches behind", "is_correct": false},
+{"text": "Turn around and climb the stairs backward on crutches", "is_correct": false}
+],
+"rationale": "Leading with the unaffected leg when ascending allows the strong quadriceps to lift body weight safely before bringing the crutches and injured limb up to the same step.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physiotherapy Basics and Mobility Aids",
+"question_text": "During passive range-of-motion (PROM) exercises performed by a nurse for a comatose patient post-TBI, which principle prevents joint capsule injury?",
+"choices": [
+{"text": "Support the limb above and below the joint, move slowly and smoothly through the pain-free arc, and stop immediately if spastic resistance or pain occurs", "is_correct": true},
+{"text": "Force the joint rapidly past resistance to break muscle spasms", "is_correct": false},
+{"text": "Hold the limb only by the fingers or toes while swinging the shoulder", "is_correct": false},
+{"text": "Perform PROM exercises only once every two weeks", "is_correct": false}
+],
+"rationale": "Supporting distal and proximal segments protects joint integrity, while stopping at the point of resistance prevents microtears, heterotopic ossification, and pain-induced reflex spasm.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Physiotherapy Basics and Mobility Aids",
+"question_text": "Which clinical distinction separates isometric exercises from isotonic exercises in rehabilitation nursing?",
+"choices": [
+{"text": "Isometric exercises involve static muscle contraction without joint movement (e.g., quadriceps setting), whereas isotonic exercises involve muscle shortening/lengthening with joint movement (e.g., lifting weights)", "is_correct": true},
+{"text": "Isometric exercises require underwater pools, whereas isotonic exercises are done only in sleep", "is_correct": false},
+{"text": "Isometric exercises are performed by a therapist while the patient is paralyzed", "is_correct": false},
+{"text": "Isotonic exercises cause no change in muscle length or joint angle", "is_correct": false}
+],
+"rationale": "Isometric contractions maintain muscle tone and strength in immobilized joints without moving the joint surface, whereas isotonic contractions move a load through a range of motion.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Speech and Language Therapy Referrals",
+"question_text": "A 62-year-old retired teacher recovering from a left middle cerebral artery stroke understands spoken instructions accurately and becomes visibly frustrated because he can only utter slow, effortful, telegraphic phrases like 'Water... drink... now.' Which communication disorder is present, and how should the nurse interact with him?",
+"choices": [
+{"text": "Expressive (Broca's) aphasia; speak in normal adult tone, allow extra time for responses, use yes/no questions and communication boards, and avoid finishing his sentences prematurely", "is_correct": true},
+{"text": "Receptive (Wernicke's) aphasia; shout loudly because he has sensorineural deafness", "is_correct": false},
+{"text": "Global cognitive dementia; treat him like a toddler", "is_correct": false},
+{"text": "Recurrent laryngeal nerve paralysis; restrict all oral hydration", "is_correct": false}
+],
+"rationale": "Broca's aphasia impairs speech production while preserving auditory comprehension; patient, unhurried communication using visual aids preserves dignity while awaiting speech and language therapy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Speech and Language Therapy Referrals",
+"question_text": "On day 2 after an acute brainstem stroke, a patient coughs weakly, exhibits a wet 'gurgly' voice quality after sipping water, and shows absent gag reflex during bedside assessment. What is the nurse's PRIORITY action before giving oral medications or food?",
+"choices": [
+{"text": "Keep the patient Nil Per Os (NPO), alert the medical officer for alternative medication routes, and refer urgently for formal dysphagia / speech and language therapy swallowing evaluation", "is_correct": true},
+{"text": "Give thin water through a drinking straw to test swallowing repeatedly", "is_correct": false},
+{"text": "Place the patient flat on his back while feeding mashed yam", "is_correct": false},
+{"text": "Crush enteric-coated tablets into thin fruit juice", "is_correct": false}
+],
+"rationale": "A wet voice and cough on thin liquids indicate silent or overt aspiration due to neurogenic dysphagia; maintaining NPO status until formal swallowing assessment prevents fatal aspiration pneumonia.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Speech and Language Therapy Referrals",
+"question_text": "A 3-year-old child brought to a CHPS compound in Ghana has a repaired cleft palate, speaks with marked hypernasality, and struggles to articulate consonant sounds clearly. Which specialist referral is most essential alongside community follow-up?",
+"choices": [
+{"text": "Speech and Language Therapist (SLT) at the regional or teaching hospital rehabilitation unit", "is_correct": true},
+{"text": "Cardiothoracic surgeon", "is_correct": false},
+{"text": "Optometrist", "is_correct": false},
+{"text": "Dermatologist", "is_correct": false}
+],
+"rationale": "Children post-cleft palate repair frequently exhibit velopharyngeal insufficiency and compensatory articulation errors requiring structured Speech and Language Therapy for intelligible speech development.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Speech and Language Therapy Referrals",
+"question_text": "How does dysarthria differ clinically from aphasia in a patient undergoing neurological rehabilitation?",
+"choices": [
+{"text": "Dysarthria is a motor speech disorder caused by weakness or incoordination of speech muscles (slurred speech), whereas aphasia is a cortical language processing impairment affecting comprehension, word-finding, reading, or writing", "is_correct": true},
+{"text": "Dysarthria affects only written spelling, whereas aphasia affects only hearing", "is_correct": false},
+{"text": "Dysarthria is caused by vocal cord polyps, whereas aphasia is caused by throat infection", "is_correct": false},
+{"text": "There is no clinical difference between dysarthria and aphasia", "is_correct": false}
+],
+"rationale": "In dysarthria, central language formulation and comprehension remain intact, but neuromuscular weakness impairs articulation, phonation, or breath support.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Occupational Therapy and Activities of Daily Living (ADLs)",
+"question_text": "An occupational therapist and rehabilitation nurse are assessing a post-stroke client's functional independence prior to home discharge in Ghana. Which group of activities represents Basic Activities of Daily Living (BADLs) rather than Instrumental Activities of Daily Living (IADLs)?",
+"choices": [
+{"text": "Bathing, dressing, toileting, transferring, and self-feeding", "is_correct": true},
+{"text": "Managing mobile money finances, shopping at the local market, and preparing family meals", "is_correct": false},
+{"text": "Using public transport, managing medication refills, and operating a telephone", "is_correct": false},
+{"text": "Farming cocoa, tailoring clothes, and attending community meetings", "is_correct": false}
+],
+"rationale": "Basic ADLs encompass fundamental personal self-care tasks required for daily bodily maintenance, whereas IADLs involve more complex cognitive and environmental tasks needed for independent community living.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Occupational Therapy and Activities of Daily Living (ADLs)",
+"question_text": "When teaching a client with right-sided hemiplegia how to put on a traditional loose-fitting shirt independently during occupational therapy training, which dressing sequence should the nurse reinforce?",
+"choices": [
+{"text": "Dress the affected (weak) right arm first, pull the shirt over the head, and then insert the unaffected (strong) left arm; reverse the order when undressing", "is_correct": true},
+{"text": "Dress the strong left arm first and force the weak right arm behind the back", "is_correct": false},
+{"text": "Have family members dress the patient completely every day to save time", "is_correct": false},
+{"text": "Avoid upper-body garments permanently", "is_correct": false}
+],
+"rationale": "Dressing the weak limb first requires minimal shoulder range of motion on the paretic side, whereas undressing the strong limb first allows easy slack to slip the garment off the affected arm safely.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Occupational Therapy and Activities of Daily Living (ADLs)",
+"question_text": "A woman with severe rheumatoid arthritis affecting her hands struggles to hold a standard thin spoon or toothbrush during morning self-care. Which low-cost occupational therapy adaptation should the CBR nurse recommend?",
+"choices": [
+{"text": "Enlarge the handles of utensils and toothbrushes using foam tubing, cloth wrapping, or locally carved wood to reduce tight pinch-grip strain", "is_correct": true},
+{"text": "Perform vigorous forceful finger-stretching exercises during acute joint inflammation", "is_correct": false},
+{"text": "Advise her to stop brushing her teeth and rely on family feeding", "is_correct": false},
+{"text": "Use heavier metal utensils with thinner handles", "is_correct": false}
+],
+"rationale": "Built-up handles decrease mechanical torque across inflamed metacarpophalangeal and interphalangeal joints, preserving independence and joint protection.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Occupational Therapy and Activities of Daily Living (ADLs)",
+"question_text": "Which standardized assessment scale is widely used by multidisciplinary rehabilitation teams in Ghana to measure a patient's baseline and progress across 10 Basic Activities of Daily Living and mobility?",
+"choices": [
+{"text": "The Barthel Index", "is_correct": true},
+{"text": "The Bishop Score", "is_correct": false},
+{"text": "The Glasgow Coma Scale", "is_correct": false},
+{"text": "The Apgar Score", "is_correct": false}
+],
+"rationale": "The Barthel Index scores performance from 0 to 100 across feeding, bathing, grooming, dressing, bowel/bladder control, toilet use, transfers, mobility, and stairs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Integration and Vocational Rehabilitation",
+"question_text": "A 27-year-old seamstress acquires bilateral lower-limb paraplegia following a road traffic accident and completes inpatient physical rehabilitation. She worries about how she will earn a living back in her district. Which community integration plan best supports her economic empowerment in Ghana?",
+"choices": [
+{"text": "Collaborate with the Department of Social Welfare and the District Assembly to access the District Assembly Common Fund (DACF) disability share, adapt a hand-operated sewing machine, and link her with local vocational cooperatives", "is_correct": true},
+{"text": "Advise her to sit at busy road junctions to solicit roadside alms", "is_correct": false},
+{"text": "Recommend permanent stay in an urban hospital ward", "is_correct": false},
+{"text": "Tell her that persons using wheelchairs cannot engage in income-generating trades", "is_correct": false}
+],
+"rationale": "In Ghana, 3% of the District Assembly Common Fund is earmarked for Persons with Disabilities to support income-generating ventures, assistive devices, and vocational re-tooling, promoting sustainable livelihoods.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Integration and Vocational Rehabilitation",
+"question_text": "Which intervention best exemplifies 'sheltered employment' versus 'competitive integrated employment' in vocational rehabilitation?",
+"choices": [
+{"text": "Sheltered workshops employ persons with severe disabilities in segregated, specially supervised settings, whereas competitive integrated employment places workers alongside non-disabled peers at prevailing wages with reasonable accommodations", "is_correct": true},
+{"text": "Sheltered employment pays higher executive salaries than competitive employment", "is_correct": false},
+{"text": "Competitive employment prohibits any workplace modifications", "is_correct": false},
+{"text": "Both terms refer exclusively to unpaid hospital occupational therapy", "is_correct": false}
+],
+"rationale": "Modern CBR prioritizes competitive integrated employment with reasonable workplace accommodations while utilizing supported or sheltered workshops as transitional skill-building pathways when needed.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Community Integration and Vocational Rehabilitation",
+"question_text": "Before discharging a wheelchair-dependent client back to a traditional compound house in a rural Ghanaian community, the CBR nurse conducts a home environmental assessment. Which modification has the highest impact on daily autonomy and safety?",
+"choices": [
+{"text": "Widening doorways to at least 80–90 cm, eliminating raised threshold steps with gentle ramps (1:12 slope), and installing grab bars in the bath/latrine area", "is_correct": true},
+{"text": "Placing thick loose scatter rugs across smooth cement floors", "is_correct": false},
+{"text": "Moving the client's bedroom to an upper floor accessible only by narrow stairs", "is_correct": false},
+{"text": "Keeping all furniture tightly clustered in the centre of the room", "is_correct": false}
+],
+"rationale": "Eliminating steps, widening doorways, and securing sanitary grab bars directly prevent falls and allow independent wheelchair navigation throughout the home.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family and Caregiver Training",
+"question_text": "While training the wife of a bedbound post-stroke client on pressure injury prevention at home, the nurse teaches her to reposition him every 2 hours. Which additional caregiver practice is equally critical to prevent sacral and heel pressure ulcers?",
+"choices": [
+{"text": "Use a draw sheet to lift rather than drag the patient across bed linens (avoiding shear), keep skin clean and dry, inspect bony prominences daily, and float heels off the mattress with a calf pillow", "is_correct": true},
+{"text": "Massage reddened bony prominences vigorously with alcohol", "is_correct": false},
+{"text": "Seat the patient on a hard circular rubber doughnut ring for 8 hours daily", "is_correct": false},
+{"text": "Restrict protein and fluid intake to reduce urinary output", "is_correct": false}
+],
+"rationale": "Lifting with a draw sheet prevents friction and shear forces, heel floating offloads vulnerable calcaneal tissue, and avoiding tissue massage or ring cushions prevents further capillary ischaemia.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Family and Caregiver Training",
+"question_text": "During a home visit, the nurse observes that the daughter caring full-time for her mother with advanced Alzheimer's dementia appears exhausted, tearful, irritable, and reports chronic insomnia and back pain. Which nursing intervention addresses caregiver role strain most effectively?",
+"choices": [
+{"text": "Assess caregiver burden empathetically, teach safe body mechanics for transfers, coordinate shared caregiving duties among extended family members, and link her with community respite/support groups", "is_correct": true},
+{"text": "Reprimand her for showing frustration toward her elderly mother", "is_correct": false},
+{"text": "Tell her that good caregivers never feel tired or stressed", "is_correct": false},
+{"text": "Discontinue home visits so she can manage independently", "is_correct": false}
+],
+"rationale": "Sustainable family-centred CBR requires protecting the caregiver's physical and mental health through ergonomic training, extended family task-sharing, and community respite networks.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family and Caregiver Training",
+"question_text": "A mother of a 5-year-old child with spastic diplegic cerebral palsy overprotects the child by carrying him everywhere and feeding him every meal, preventing him from attempting tasks he is capable of learning. How should the CBR nurse guide the mother?",
+"choices": [
+{"text": "Coach her to break tasks into small achievable steps, allow extra time for the child to practice self-feeding and assisted standing, and praise effort to build neurodevelopmental independence", "is_correct": true},
+{"text": "Confirm that children with cerebral palsy can never learn any self-care skills", "is_correct": false},
+{"text": "Instruct her to abruptly stop assisting the child with all activities without training", "is_correct": false},
+{"text": "Advise confining the child indoors so neighbours do not watch him struggle", "is_correct": false}
+],
+"rationale": "Overprotection leads to learned helplessness and secondary musculoskeletal contractures; graded task participation fosters motor learning and self-efficacy.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction and Disability Awareness in the Community",
+"question_text": "In a peri-urban community in Ghana, rumours circulate that a child born with hydrocephalus and spina bifida is a 'spirit child' whose condition is contagious to neighbouring children. Which public health intervention by the RPN best combats this stigma?",
+"choices": [
+{"text": "Organize community durbars involving chiefs, queen mothers, religious leaders, and successful persons with disabilities to provide accurate biomedical education on neural tube defects and folic acid prevention", "is_correct": true},
+{"text": "Advise the mother to hide the child inside a back room until adulthood", "is_correct": false},
+{"text": "Publicly shame community members who hold traditional beliefs without offering education", "is_correct": false},
+{"text": "Confirm that congenital anomalies are contagious through casual touch", "is_correct": false}
+],
+"rationale": "Partnering with respected traditional and religious authorities alongside visible peer role models dismantles harmful myths and promotes community acceptance and early care-seeking.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Stigma Reduction and Disability Awareness in the Community",
+"question_text": "Which communication practice by nurses and health educators promotes dignity and reduces stigma when documenting or speaking about clients in CBR programmes?",
+"choices": [
+{"text": "Using 'person-first' or respectful rights-based language (e.g., 'a person with paraplegia' or 'a child with epilepsy') rather than defining individuals by their diagnosis (e.g., 'a cripple' or 'an epileptic')", "is_correct": true},
+{"text": "Referring to wheelchair users as 'confined' or 'handicapped victims'", "is_correct": false},
+{"text": "Grouping all clients with sensory or physical impairments under the label 'invalids'", "is_correct": false},
+{"text": "Using local derogatory nicknames to make records memorable", "is_correct": false}
+],
+"rationale": "Person-first language affirms the individual's humanity before their impairment, countering internalized and societal stigma.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "During morning rounds on a rehabilitation unit, an RPN must prioritize care among four post-rehabilitation clients. Which client requires IMMEDIATE first assessment?",
+"choices": [
+{"text": "A T5 spinal cord injury client reporting sudden severe throbbing headache, blurred vision, and profuse facial sweating with BP 198/114 mmHg", "is_correct": true},
+{"text": "A post-stroke client asking for help to adjust his velcro shoe strap before physiotherapy", "is_correct": false},
+{"text": "A transtibial amputee requesting extra elastic bandages for evening stump wrapping", "is_correct": false},
+{"text": "A healed femur-fracture client waiting for routine crutch-walking discharge teaching", "is_correct": false}
+],
+"rationale": "Severe hypertension and headache in a high spinal cord injury indicate acute autonomic dysreflexia, which can rapidly cause haemorrhagic stroke or seizures if not treated immediately.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "A CBR nurse conducting home visits in a rural sub-district has four scheduled clients today. Which client must the nurse prioritize visiting FIRST?",
+"choices": [
+{"text": "A newly discharged dysphagic stroke patient whose family reports he has been coughing violently during meals and developed a fever of 38.9°C and fast breathing", "is_correct": true},
+{"text": "A stable congenital amputee needing renewal of his NHIS membership card next week", "is_correct": false},
+{"text": "A polio survivor requesting information on District Assembly Common Fund application dates", "is_correct": false},
+{"text": "A child with mild hearing loss awaiting routine school placement follow-up", "is_correct": false}
+],
+"rationale": "Fever, tachypnoea, and coughing during feeds in a dysphagic stroke patient signal acute aspiration pneumonia—an immediate life-threatening respiratory emergency requiring urgent triage and hospital referral.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Physiotherapy Basics and Mobility Aids",
+"question_text": "While supervising four clients practicing mobility and transfers in the rehabilitation gym, which situation requires the nurse's IMMEDIATE intervention to prevent severe injury?",
+"choices": [
+{"text": "A paraplegic client attempting to transfer from his wheelchair to a treatment plinth without locking the wheelchair brakes and with the footrests still down", "is_correct": true},
+{"text": "A client with a cane walking slowly along the parallel bars under a physiotherapist's watch", "is_correct": false},
+{"text": "A post-amputation client performing seated upper-limb dumbbell curls", "is_correct": false},
+{"text": "A client resting in a wheelchair with locked brakes between gait training sets", "is_correct": false}
+],
+"rationale": "Transferring without engaged wheelchair wheel locks and swung-away footrests creates an immediate high risk of the chair rolling backward and causing a catastrophic fall.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Family and Caregiver Training",
+"question_text": "During a home assessment of a bedbound spinal cord injury client, the CBR nurse discovers four care gaps. Which issue must be addressed FIRST to prevent rapid tissue necrosis and systemic sepsis?",
+"choices": [
+{"text": "A non-blanchable Stage II pressure ulcer over the sacrum soiled with urine from a leaking indwelling catheter", "is_correct": true},
+{"text": "Lack of a wall calendar in the client's bedroom", "is_correct": false},
+{"text": "A torn mosquito net window screen in the hallway", "is_correct": false},
+{"text": "Outdated magazines stacked beside the bed", "is_correct": false}
+],
+"rationale": "Ongoing moisture and pressure over broken sacral skin rapidly progress to deep Stage III/IV ulcers and osteomyelitis/sepsis; immediate pressure offloading, catheter care, and wound dressing take clinical priority.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Community Integration and Vocational Rehabilitation",
+"question_text": "A district CBR committee plans four community projects with limited initial funds. Applying CBR prioritization principles (greatest immediate impact on health, safety, and inclusion for the highest-risk residents), which action should be prioritized FIRST?",
+"choices": [
+{"text": "Constructing accessible ramps and handrails at the local CHPS compound, primary school, and community borehole while training village artisans to build low-cost mobility aids", "is_correct": true},
+{"text": "Printing glossy English-language brochures for a predominantly non-literate rural community", "is_correct": false},
+{"text": "Purchasing one luxury imported electric wheelchair unsuitable for unpaved rural paths", "is_correct": false},
+{"text": "Hosting an invitation-only banquet for district officials", "is_correct": false}
+],
+"rationale": "Removing physical barriers to essential health, education, and water infrastructure while building local artisan capacity creates broad, durable community access.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Principles of CBR",
+"question_text": "Which role does the National Health Insurance Scheme (NHIS) play in supporting rehabilitation access for persons with disabilities in Ghana?",
+"choices": [
+{"text": "Persons classified as indigents or persons with severe disabilities qualify for NHIS registration/renewal fee exemptions under the Ministry of Gender, Children and Social Protection LEAP/social welfare linkage, covering basic outpatient and inpatient consultations", "is_correct": true},
+{"text": "NHIS automatically pays for all custom imported myoelectric prostheses and home renovations", "is_correct": false},
+{"text": "Persons with disabilities are legally excluded from enrolling in NHIS", "is_correct": false},
+{"text": "NHIS requires persons with disabilities to pay triple annual premiums", "is_correct": false}
+],
+"rationale": "Indigent persons with disabilities qualify for premium exemptions to access core NHIS clinical services, though specialized assistive devices often require supplementary support from the DACF or NGOs.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Occupational Therapy and Activities of Daily Living (ADLs)",
+"question_text": "A client with Parkinson's disease undergoing community rehabilitation experiences 'freezing of gait' when walking through narrow doorways at home, increasing fall risk. Which occupational therapy cueing strategy should the nurse teach him?",
+"choices": [
+{"text": "Pause, stand tall, shift weight side-to-side, and step deliberately over a visual cue (such as a strip of coloured tape on the floor) or to a rhythmic verbal count ('one-two')", "is_correct": true},
+{"text": "Have caregivers pull him forward rapidly by his arms while his feet remain stuck", "is_correct": false},
+{"text": "Walk exclusively on his tiptoes with eyes closed", "is_correct": false},
+{"text": "Avoid all physical movement and stay in a recliner permanently", "is_correct": false}
+],
+"rationale": "External visual or auditory rhythmic cues bypass damaged basal ganglia automaticity pathways, safely initiating stepping without inducing forward falls.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "During bladder retraining for a patient recovering from an incomplete spinal cord injury with a neurogenic reflex bladder, which nursing intervention promotes scheduled voiding and prevents urinary tract infections?",
+"choices": [
+{"text": "Establish a regular 2–3 hourly voiding schedule using trigger techniques (such as light suprapubic tapping), ensure adequate daytime fluid intake (2–2.5 L/day), and perform clean intermittent catheterization to measure post-void residual", "is_correct": true},
+{"text": "Restrict fluids to 400 mL per day so the patient rarely urinates", "is_correct": false},
+{"text": "Leave an indwelling Foley catheter in place permanently for life without trial of voiding", "is_correct": false},
+{"text": "Apply forceful abdominal punching over a distended bladder", "is_correct": false}
+],
+"rationale": "Timed voiding, adequate hydration, and clean intermittent catheterization prevent urinary stasis, hydronephrosis, and catheter-associated infections.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Physiotherapy Basics and Mobility Aids",
+"question_text": "When inspecting a client's standard wheelchair before community discharge, which fitting check prevents pressure ulcers over the ischial tuberosities and popliteal fossa?",
+"choices": [
+{"text": "Ensure a pressure-redistributing cushion is placed on the seat and maintain a 2–3 fingerbreadth gap between the front edge of the seat and the back of the client's bent knees", "is_correct": true},
+{"text": "Ensure the front seat edge presses tightly into the back of the knees", "is_correct": false},
+{"text": "Remove the footrests completely so the feet drag along the ground", "is_correct": false},
+{"text": "Use a bare vinyl sling seat without any cushion for long-term sitting", "is_correct": false}
+],
+"rationale": "Proper seat depth avoids popliteal vascular compression, while a contoured pressure-relief cushion distributes weight away from bony ischial prominences.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Persons with Disability Act 2006 (Act 715)",
+"question_text": "Under Act 715, what right does a deaf patient have when seeking medical or rehabilitative care at a public health facility in Ghana?",
+"choices": [
+{"text": "The right to accessible communication, including Ghanaian Sign Language interpretation or written/visual aids, without discrimination", "is_correct": true},
+{"text": "No right to explanation unless accompanied by a paying employer", "is_correct": false},
+{"text": "Mandatory transfer to a psychiatric asylum for communication difficulty", "is_correct": false},
+{"text": "Exemption from informed consent procedures before surgery", "is_correct": false}
+],
+"rationale": "Act 715 guarantees equal access to health services and communication accessibility, requiring facilities to facilitate sign language or clear visual communication.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Stigma Reduction and Disability Awareness in the Community",
+"question_text": "A 14-year-old girl with well-controlled tonic-clonic epilepsy in a rural junior high school is barred from sitting near classmates because peers fear 'foaming saliva spreads epilepsy.' What key health education message should the school health/CBR nurse deliver?",
+"choices": [
+{"text": "Explain that epilepsy is a non-contagious neurological condition caused by transient electrical brain activity, and demonstrate safe seizure first aid (turning on the side, protecting the head, never putting objects in the mouth)", "is_correct": true},
+{"text": "Instruct students to force a metal spoon between the girl's teeth during a seizure", "is_correct": false},
+{"text": "Recommend isolating the student in a separate building", "is_correct": false},
+{"text": "Advise stopping antiepileptic drugs once she feels normal for one week", "is_correct": false}
+],
+"rationale": "Clarifying that epilepsy is non-infectious and teaching safe lateral recovery positioning eliminates harmful myths and prevents dental/airway injuries during seizures.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Community Integration and Vocational Rehabilitation",
+"question_text": "In Ghana's CBR structure, which grassroots community volunteers serve as the primary bridge between persons with disabilities in villages, CHPS nurses, and district rehabilitation teams?",
+"choices": [
+{"text": "Community-Based Rehabilitation Volunteers (CBRVs) and Community Health Management Committees (CHMCs)", "is_correct": true},
+{"text": "Hospital chief accountants", "is_correct": false},
+{"text": "Foreign surgical mission teams visiting once every five years", "is_correct": false},
+{"text": "High Court registrars", "is_correct": false}
+],
+"rationale": "Trained local CBRVs conduct early identification, basic home exercise follow-up, and stigma sensitization within their own villages in partnership with CHPS staff.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Rehabilitation of Patients Post-Stroke, Post-Amputation, Post-Traumatic Brain Injury",
+"question_text": "A client with lower-limb paraplegia using a wheelchair is being taught pressure-relief 'wheelchair push-ups' by the rehabilitation nurse. How frequently should the client perform a 15–30 second weight shift while seated?",
+"choices": [
+{"text": "Every 15 to 30 minutes", "is_correct": true},
+{"text": "Once every 6 hours", "is_correct": false},
+{"text": "Only at bedtime", "is_correct": false},
+{"text": "Once every 3 days", "is_correct": false}
+],
+"rationale": "Capillary perfusion over the ischial tuberosities becomes compromised within 30 minutes of unrelieved sitting; frequent 15–30 second push-ups or lateral leans restore tissue oxygenation.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Family and Caregiver Training",
+"question_text": "When training a family caregiver to transfer a hemi-paretic patient safely from bed to wheelchair, which body-mechanics principle protects the caregiver's lumbar spine?",
+"choices": [
+{"text": "Stand close to the patient with a wide base of support, bend at the hips and knees rather than the waist, keep the back straight, and pivot the feet instead of twisting the spine", "is_correct": true},
+{"text": "Keep knees locked straight and bend forward from the lower back while lifting", "is_correct": false},
+{"text": "Twist the torso sharply while holding the patient at arm's length", "is_correct": false},
+{"text": "Lift the patient by pulling under the patient's armpits alone", "is_correct": false}
+],
+"rationale": "Using leg muscles with a wide base of support and pivoting rather than spinal twisting minimizes shear forces on lumbar intervertebral discs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Principles of CBR",
+"question_text": "Which outcome best demonstrates that a Community-Based Rehabilitation programme in a Ghanaian district has achieved true empowerment rather than mere medical maintenance?",
+"choices": [
+{"text": "Persons with disabilities actively lead local Disabled People's Organizations (DPOs), participate in District Assembly planning, earn independent livelihoods, and advocate for their own rights", "is_correct": true},
+{"text": "All persons with disabilities remain dependent on monthly food handouts from visiting charities", "is_correct": false},
+{"text": "Clients stay permanently inside rehabilitation wards without family contact", "is_correct": false},
+{"text": "Community leaders make all decisions without consulting persons with disabilities", "is_correct": false}
+],
+"rationale": "Empowerment—the fifth pillar of the CBR matrix—culminates in self-representation, leadership in DPOs, economic self-reliance, and full civic participation.",
+"difficulty": "ANALYSIS"
+}
+]
+}
+]
+}
