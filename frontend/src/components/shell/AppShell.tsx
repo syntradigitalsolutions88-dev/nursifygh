@@ -87,7 +87,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     }
 
     return (
-        <div className="min-h-screen bg-surface">
+        <div className="min-h-screen bg-surface overflow-x-hidden">
             {/* SIDEBAR - HIDDEN ON PRINT */}
             <aside className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 lg:left-0 lg:w-60 border-r border-border bg-surface-subtle z-20 print:hidden">
                 <div className="px-5 py-5 border-b border-border">
@@ -310,6 +310,16 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                     {tool.label}
                                 </Link>
                             ))}
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setMoreOpen(false)
+                                    window.dispatchEvent(new Event("open-feedback-modal"))
+                                }}
+                                className="rounded-xl border border-brand-200 bg-brand-50/70 px-3 py-2.5 text-left text-xs font-semibold text-brand-800 hover:bg-brand-100"
+                            >
+                                Send Feedback
+                            </button>
                         </div>
                     </div>
                 </div>

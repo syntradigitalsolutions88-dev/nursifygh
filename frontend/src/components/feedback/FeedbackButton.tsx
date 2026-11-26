@@ -1,9 +1,14 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useMutation } from "@tanstack/react-query"
 import { submitFeedback } from "../../api/feedback"
 
 export default function FeedbackButton() {
     const [open, setOpen] = useState(false)
+    useEffect(() => {
+        const handler = () => setOpen(true)
+        window.addEventListener("open-feedback-modal", handler)
+        return () => window.removeEventListener("open-feedback-modal", handler)
+    }, [])
     const [type, setType] = useState("SUGGESTION")
     const [subject, setSubject] = useState("")
     const [message, setMessage] = useState("")
@@ -37,7 +42,7 @@ export default function FeedbackButton() {
         <>
             <button
                 onClick={() => setOpen(true)}
-                className="fixed bottom-40 right-4 lg:bottom-24 lg:right-8 z-40 h-12 w-12 rounded-full bg-white border border-border text-brand-700 shadow-lg hover:bg-brand-50 hover:border-brand-300 flex items-center justify-center transition-all hover:scale-105 print:hidden"
+                className="hidden lg:flex fixed bottom-24 right-8 z-40 h-12 w-12 rounded-full bg-white border border-border text-brand-700 shadow-lg hover:bg-brand-50 hover:border-brand-300 items-center justify-center transition-all hover:scale-105 print:hidden"
                 aria-label="Send feedback"
                 title="Send feedback"
             >
