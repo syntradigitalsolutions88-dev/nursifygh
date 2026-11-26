@@ -15,7 +15,15 @@ from django.utils import timezone
 from django.utils.html import format_html
 from django.utils.translation import gettext_lazy as _
 
-from .models import AmbassadorCommission, ClinicalLog, ClinicalSkill, User
+from .models import (
+    AmbassadorCommission,
+    ClinicalLog,
+    ClinicalSkill,
+    User,
+    UserNotification,
+    BroadcastNotification,
+    Feedback,
+)
 
 
 class EmailAuthenticationForm(AdminAuthenticationForm):
@@ -60,38 +68,16 @@ class UserAdmin(BaseUserAdmin):
     ordering = ("-date_joined",)
 
     list_display = (
-        "email",
-        "full_name",
-        "phone_number",
-        "level",
-        "access_status",
-        "expiry_date_display",
-        "quick_controls",
-        "has_paid",
-        "is_ambassador",
-        "referral_code",
-        "referred_by",
-        "unpaid_commission_display",
-        "is_active",
+        "email", "full_name", "phone_number", "level",
+        "access_status", "expiry_date_display", "quick_controls",
+        "has_paid", "is_ambassador", "referral_code", "referred_by",
+        "unpaid_commission_display", "is_active",
     )
     list_filter = (
-        ExpiryWindowFilter,
-        "has_paid",
-        "is_subscribed",
-        "is_ambassador",
-        "level",
-        "program",
-        "is_active",
-        "is_staff",
+        ExpiryWindowFilter, "has_paid", "is_subscribed", "is_ambassador",
+        "level", "program", "is_active", "is_staff",
     )
-    search_fields = (
-        "email",
-        "full_name",
-        "phone_number",
-        "institution",
-        "referral_code",
-        "referred_by",
-    )
+    search_fields = ("email", "full_name", "phone_number", "institution", "referral_code", "referred_by")
     readonly_fields = ("id", "date_joined", "last_login")
 
     fieldsets = (
@@ -99,40 +85,22 @@ class UserAdmin(BaseUserAdmin):
         (_("Personal info"), {"fields": ("full_name", "phone_number", "institution")}),
         (_("Academic"), {"fields": ("level", "program", "exam_date")}),
         (_("Subscription"), {
-            "fields": (
-                "is_subscribed",
-                "has_paid",
-                "subscription_expires_at",
-                "last_payment_reference",
-            ),
-            "description": (
-                "Students auto-start with a 3-day trial (has_paid=False). "
-                "When they pay via MoMo, approve via Payment Transactions or mark has_paid=True and extend by 120 days."
-            ),
+            "fields": ("is_subscribed", "has_paid", "subscription_expires_at", "last_payment_reference"),
+            "description": "Students auto-start with a 3-day trial. Approve payments via Payment Transactions.",
         }),
-        (_("Ambassador Program"), {
-            "fields": ("is_ambassador", "referral_code", "referred_by"),
-        }),
-        (_("Permissions"), {
-            "fields": ("is_active", "is_staff", "is_superuser", "groups", "user_permissions"),
-        }),
+        (_("Ambassador Program"), {"fields": ("is_ambassador", "referral_code", "referred_by")}),
+        (_("Permissions"), {"fields": ("is_active", "is_staff", "is_superuser", "groups", "user_permissions")}),
         (_("Important dates"), {"fields": ("last_login", "date_joined")}),
     )
 
     add_fieldsets = (
-        (None, {
-            "classes": ("wide",),
-            "fields": ("email", "full_name", "level", "password1", "password2"),
-        }),
+        (None, {"classes": ("wide",), "fields": ("email", "full_name", "level", "password1", "password2")}),
     )
 
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         return qs.annotate(
-            unpaid_total=Sum(
-                "commissions__amount_ghs",
-                filter=Q(commissions__is_paid_out=False),
-            ),
+            unpaid_total=Sum("commissions__amount_ghs", filter=Q(commissions__is_paid_out=False)),
             total_commissions_count=Count("commissions"),
         )
 
@@ -142,12 +110,8 @@ class UserAdmin(BaseUserAdmin):
             return "—"
         amount = obj.unpaid_total or 0
         if amount > 0:
-            return format_html(
-                '<span style="color: #b45309; font-weight: bold;">GHS {}</span>',
-                f"{amount:.2f}",
-            )
+            return format_html('<span style="color: #b45309; font-weight: bold;">GHS {}</span>', f"{amount:.2f}")
         return "GHS 0.00"
-
 
     @admin.display(description="Expires On", ordering="subscription_expires_at")
     def expiry_date_display(self, obj):
@@ -173,7 +137,7 @@ class UserAdmin(BaseUserAdmin):
         wa_btn = ""
         if wa_num:
             name = (obj.full_name or "Student").split()[0]
-            msg = quote(f"Hi {name}, your NursifyGH 3-day free trial is ending soon. Upgrade to the 120-day Semester Pass (GHS 30) via MoMo to keep full access to CBT questions, cases, and the AI Tutor.")
+            msg = quote(f"Hi {name}, your NursifyGH 3-day free trial is ending soon. Upgrade to the 120-day Semester Pass (GHS 30) via MoMo to keep full access.")
             wa_btn = f'<a href="https://wa.me/{wa_num}?text={msg}" target="_blank" style="background:#0d9488;color:#fff;padding:3px 6px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;margin-right:3px;">WA</a>'
         return format_html(
             '<a href="{}" style="background:#059669;color:#fff;padding:3px 6px;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none;margin-right:3px;">+120d</a>'
@@ -215,9 +179,7 @@ class UserAdmin(BaseUserAdmin):
         now = timezone.now()
         kpis = self._kpi_context()
         watchlist = User.objects.filter(
-            is_subscribed=True,
-            subscription_expires_at__gte=now,
-            subscription_expires_at__lte=now + timedelta(days=3),
+            is_subscribed=True, subscription_expires_at__gte=now, subscription_expires_at__lte=now + timedelta(days=3),
         ).order_by("subscription_expires_at")[:50]
         watchlist_rows = []
         for u in watchlist:
@@ -227,13 +189,11 @@ class UserAdmin(BaseUserAdmin):
             wa_num = self._wa_phone(u.phone_number)
             first = (u.full_name or "Student").split()[0]
             exp_str = timezone.localtime(u.subscription_expires_at).strftime("%d %b %Y, %H:%M")
-            rem_msg = quote(f"Hi {first}, your NursifyGH 3-day free trial expires on {exp_str}. Upgrade to the 120-day Semester Pass (GHS 30) via MoMo to continue your NMC exam prep.")
-            rec_msg = quote(f"Hi {first}, your NursifyGH 120-day Semester Pass (GHS 30) is now active until {exp_str}. Happy studying!")
+            rem_msg = quote(f"Hi {first}, your NursifyGH trial expires on {exp_str}. Upgrade to GHS 30 Semester Pass.")
             watchlist_rows.append({
                 "user": u,
                 "time_left": f"{days}d {hours}h left",
                 "wa_reminder_url": f"https://wa.me/{wa_num}?text={rem_msg}" if wa_num else "",
-                "wa_receipt_url": f"https://wa.me/{wa_num}?text={rec_msg}" if wa_num else "",
             })
         total_comm = AmbassadorCommission.objects.aggregate(s=Sum("amount_ghs"))["s"] or 0
         paid_count = kpis["kpi_paid"]
@@ -241,14 +201,6 @@ class UserAdmin(BaseUserAdmin):
         gross_rev = paid_count * 30
         net_rev = max(0, gross_rev - float(total_comm))
         conv = round((paid_count / total_u) * 100, 1) if total_u else 0.0
-        program_stats = [
-            {"label": row["program"] or "Unspecified", "total": row["total"], "paid": row["paid"]}
-            for row in User.objects.values("program").annotate(total=Count("id"), paid=Count("id", filter=Q(has_paid=True))).order_by("-total")
-        ]
-        level_stats = [
-            {"label": row["level"] or "Unspecified", "total": row["total"], "paid": row["paid"]}
-            for row in User.objects.values("level").annotate(total=Count("id"), paid=Count("id", filter=Q(has_paid=True))).order_by("level")
-        ]
         ctx = {
             **self.admin_site.each_context(request),
             "title": "NursifyGH Command Center",
@@ -262,8 +214,6 @@ class UserAdmin(BaseUserAdmin):
             "net_revenue_ghs": f"{net_rev:.0f}",
             "conversion_rate": conv,
             "watchlist_rows": watchlist_rows,
-            "program_stats": program_stats,
-            "level_stats": level_stats,
         }
         return render(request, "admin/command_center.html", ctx)
 
@@ -284,13 +234,13 @@ class UserAdmin(BaseUserAdmin):
     def quick_activate_view(self, request, user_id):
         student = get_object_or_404(User, pk=user_id)
         student.activate_subscription(days=120)
-        self.message_user(request, f"{student.email} activated for 120 days (PAID).", messages.SUCCESS)
+        self.message_user(request, f"{student.email} activated for 120 days.", messages.SUCCESS)
         return HttpResponseRedirect(request.META.get("HTTP_REFERER") or reverse("admin:accounts_user_changelist"))
 
     def quick_trial_view(self, request, user_id):
         student = get_object_or_404(User, pk=user_id)
         student.start_trial(days=3)
-        self.message_user(request, f"{student.email} extended with 3-day trial.", messages.INFO)
+        self.message_user(request, f"{student.email} extended 3-day trial.", messages.INFO)
         return HttpResponseRedirect(request.META.get("HTTP_REFERER") or reverse("admin:accounts_user_changelist"))
 
     @admin.action(description="Export selected users to CSV")
@@ -308,24 +258,15 @@ class UserAdmin(BaseUserAdmin):
     def access_status(self, obj):
         if not obj.is_subscribed or not obj.subscription_expires_at:
             return format_html('<span style="color: #6b7280; font-weight: bold;">None</span>')
-
         now = timezone.now()
         if obj.subscription_expires_at < now:
             return format_html('<span style="background: #dc2626; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">EXPIRED</span>')
-
         delta = obj.subscription_expires_at - now
         days = delta.days
         hours = int(delta.total_seconds() / 3600) % 24
-
         if obj.has_paid:
-            return format_html(
-                '<span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">PAID · {}d left</span>',
-                days,
-            )
-        return format_html(
-            '<span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">TRIAL · {}d {}h</span>',
-            days, hours,
-        )
+            return format_html('<span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">PAID · {}d left</span>', days)
+        return format_html('<span style="background: #f59e0b; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">TRIAL · {}d {}h</span>', days, hours)
 
     actions = ["mark_as_paid_extend_120", "reset_to_trial", "revoke_access", "promote_to_ambassador", "export_users_csv"]
 
@@ -335,7 +276,7 @@ class UserAdmin(BaseUserAdmin):
         for student in queryset:
             student.activate_subscription(days=120)
             count += 1
-        self.message_user(request, f"{count} student(s) marked as PAID and extended by 120 days.", messages.SUCCESS)
+        self.message_user(request, f"{count} student(s) marked PAID + 120 days.", messages.SUCCESS)
 
     @admin.action(description="Reset to 3-day trial")
     def reset_to_trial(self, request, queryset):
@@ -370,37 +311,13 @@ class UserAdmin(BaseUserAdmin):
 
 @admin.register(AmbassadorCommission)
 class AmbassadorCommissionAdmin(admin.ModelAdmin):
-    list_display = (
-        "ambassador_email",
-        "ambassador_phone",
-        "referred_student_email",
-        "amount_ghs",
-        "is_paid_out",
-        "created_at",
-        "payout_due_date",
-    )
+    list_display = ("ambassador_email", "ambassador_phone", "referred_student_email", "amount_ghs", "is_paid_out", "created_at", "payout_due_date")
     list_filter = ("is_paid_out", "created_at")
-    search_fields = (
-        "ambassador__email",
-        "ambassador__full_name",
-        "ambassador__phone_number",
-        "ambassador__referral_code",
-        "referred_student__email",
-    )
+    search_fields = ("ambassador__email", "ambassador__full_name", "ambassador__phone_number", "ambassador__referral_code", "referred_student__email")
     list_editable = ("is_paid_out",)
     readonly_fields = ("ambassador", "referred_student", "amount_ghs", "created_at", "payout_due_date")
     date_hierarchy = "created_at"
     actions = ["mark_commissions_paid_out", "mark_commissions_unpaid"]
-
-    fieldsets = (
-        (_("Commission Details"), {
-            "fields": ("ambassador", "referred_student", "amount_ghs", "created_at", "payout_due_date")
-        }),
-        (_("Payout"), {
-            "fields": ("is_paid_out",),
-            "description": "Tick 'is paid out' after you have sent the MoMo payment.",
-        }),
-    )
 
     @admin.display(description="Ambassador", ordering="ambassador__email")
     def ambassador_email(self, obj):
@@ -442,3 +359,41 @@ class ClinicalLogAdmin(admin.ModelAdmin):
     list_filter = ("date_performed", "hospital")
     search_fields = ("student__email", "skill__procedure_name", "hospital", "supervisor_name")
     date_hierarchy = "date_performed"
+
+
+# ─── Notifications & Feedback Admin ──────────────────────────────────
+
+
+@admin.register(BroadcastNotification)
+class BroadcastNotificationAdmin(admin.ModelAdmin):
+    list_display = ("title", "notification_type", "target_program", "target_level", "is_active", "created_at")
+    list_filter = ("is_active", "notification_type", "target_program", "target_level", "target_paid_only")
+    search_fields = ("title", "message")
+    fieldsets = (
+        ("Message", {"fields": ("title", "message", "notification_type")}),
+        ("Action", {"fields": ("action_url", "action_label")}),
+        ("Targeting", {
+            "fields": ("target_program", "target_level", "target_paid_only"),
+            "description": "Leave blank to send to everyone. Set specific fields to narrow the audience.",
+        }),
+        ("Status", {"fields": ("is_active", "expires_at")}),
+    )
+
+
+@admin.register(UserNotification)
+class UserNotificationAdmin(admin.ModelAdmin):
+    list_display = ("user", "title", "notification_type", "is_read", "created_at")
+    list_filter = ("is_read", "notification_type")
+    search_fields = ("user__email", "title", "message")
+
+
+@admin.register(Feedback)
+class FeedbackAdmin(admin.ModelAdmin):
+    list_display = ("subject", "feedback_type", "user", "status", "created_at")
+    list_filter = ("status", "feedback_type")
+    search_fields = ("subject", "message", "user__email")
+    readonly_fields = ("user", "feedback_type", "subject", "message", "page_url", "created_at")
+    fieldsets = (
+        ("Submission", {"fields": ("user", "feedback_type", "subject", "message", "page_url", "created_at")}),
+        ("Response", {"fields": ("status", "admin_response", "responded_at")}),
+    )
