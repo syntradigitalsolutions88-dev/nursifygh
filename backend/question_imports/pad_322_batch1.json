@@ -1,0 +1,636 @@
+{
+"courses": [
+{
+"course_code": "PAD-322",
+"course_title": "Paediatric Nursing II",
+"category": "MATERNAL",
+"semester": "S2",
+"topics": [
+"Advanced Paediatric Assessment (PICU monitoring, Glasgow Coma Scale, Paediatric Early Warning Scores)",
+"Care of the Critically Ill Child (Respiratory failure, Sepsis, Shock)",
+"Paediatric Cardiovascular Disorders (Congenital Heart Disease, Rheumatic Fever, Heart Failure in Children)",
+"Paediatric Neurological Disorders (Meningitis, Seizures, Cerebral Palsy)",
+"Paediatric Renal Disorders (Nephrotic Syndrome, Acute Kidney Injury)",
+"Paediatric Oncology (Leukaemia, Wilms Tumour, Burkitt Lymphoma)",
+"Congenital Anomalies (Cleft Lip/Palate, Neural Tube Defects, Hydrocephalus)",
+"Paediatric Surgical Nursing (Pre/Post-Op Care)",
+"Advanced Paediatric Medication Calculations",
+"Paediatric Palliative Care and Family Support"
+],
+"questions": [
+{
+"topic": "Advanced Paediatric Assessment (PICU monitoring, Glasgow Coma Scale, Paediatric Early Warning Scores)",
+"question_text": "A 14-month-old infant admitted to the paediatric high-dependency unit at Korle Bu Teaching Hospital with severe malaria opens his eyes only to painful sternal rub, cries inconsolably when stimulated, and withdraws his limbs from pain. Using the Modified Paediatric Glasgow Coma Scale, what is his total score?",
+"choices": [
+{"text": "9 out of 15", "is_correct": true},
+{"text": "6 out of 15", "is_correct": false},
+{"text": "11 out of 15", "is_correct": false},
+{"text": "13 out of 15", "is_correct": false}
+],
+"rationale": "On the Paediatric GCS, eye opening to pain scores 2, inconsolable crying/agitation scores 3 on the infant verbal scale, and withdrawal from pain scores 4 on the motor scale (2 + 3 + 4 = 9). A score of 9 indicates moderate-to-severe encephalopathy requiring close airway and intracranial monitoring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Paediatric Assessment (PICU monitoring, Glasgow Coma Scale, Paediatric Early Warning Scores)",
+"question_text": "During routine Paediatric Early Warning Score (PEWS) charting on a 3-year-old boy admitted with severe bronchopneumonia at a regional hospital, the nurse records: heart rate 168 bpm, respiratory rate 54 breaths/min with intercostal retractions, capillary refill time 4 seconds, and lethargy. How should the nurse interpret this assessment?",
+"choices": [
+{"text": "High PEWS score indicating impending cardiorespiratory decompensation requiring immediate medical review and escalation of care", "is_correct": true},
+{"text": "Normal physiological vital signs for a sleeping toddler requiring routine 4-hourly observation", "is_correct": false},
+{"text": "Isolated mild fever requiring only oral paracetamol and tepid sponging", "is_correct": false},
+{"text": "Compensated recovery phase permitting discharge to the outpatient clinic", "is_correct": false}
+],
+"rationale": "Tachycardia, marked tachypnoea with accessory muscle retractions, delayed capillary refill (> 2 seconds), and altered consciousness trigger a critical PEWS escalation threshold. Early recognition prevents progression from compensated distress to paediatric cardiopulmonary arrest.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Paediatric Assessment (PICU monitoring, Glasgow Coma Scale, Paediatric Early Warning Scores)",
+"question_text": "When assessing haemodynamic perfusion in a critically ill 2-year-old child in a Ghanaian district hospital emergency unit, why is hypotension considered a late and ominous clinical sign compared with adults?",
+"choices": [
+{"text": "Children maintain blood pressure through intense sympathetic vasoconstriction and tachycardia until up to 25–30% of circulating blood volume is lost, after which sudden precipitous collapse occurs", "is_correct": true},
+{"text": "Children have lower baseline peripheral vascular resistance that prevents vasoconstriction", "is_correct": false},
+{"text": "Systolic blood pressure in toddlers normally drops below 50 mmHg during mild dehydration", "is_correct": false},
+{"text": "Paediatric baroreceptors do not respond to hypovolaemia until adolescence", "is_correct": false}
+],
+"rationale": "Paediatric physiological compensation masks hypovolaemia behind tachycardia, mottled skin, cool extremities, and prolonged capillary refill; once systolic hypotension appears, decompensated shock and cardiac arrest are imminent.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Paediatric Assessment (PICU monitoring, Glasgow Coma Scale, Paediatric Early Warning Scores)",
+"question_text": "A 6-month-old infant on continuous pulse oximetry in the paediatric ward has an SpO2 reading of 86% with nasal flaring, subcostal recession, and expiratory grunting. Which anatomical difference makes infants significantly more vulnerable to rapid airway obstruction and respiratory fatigue than older children?",
+"choices": [
+{"text": "A proportionally larger tongue, narrower funnel-shaped airway at the cricoid ring, compliant chest wall, and high basal oxygen consumption", "is_correct": true},
+{"text": "Excessive rigid thoracic cartilage and oversized alveoli", "is_correct": false},
+{"text": "A lower resting metabolic rate and slower respiratory frequency", "is_correct": false},
+{"text": "Absence of diaphragmatic muscle fibres until age 2 years", "is_correct": false}
+],
+"rationale": "Because airway resistance is inversely proportional to the fourth power of the radius, minor mucosal oedema in an infant's narrow subglottic airway drastically increases work of breathing and rapidly exhausts diaphragmatic reserves.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Paediatric Assessment (PICU monitoring, Glasgow Coma Scale, Paediatric Early Warning Scores)",
+"question_text": "While monitoring a 4-year-old child with severe head trauma in the PICU, the nurse observes widening pulse pressure (BP 138/62 mmHg), bradycardia (heart rate 56 bpm), and irregular Cheyne-Stokes respirations. Which neurological emergency does this triad signify?",
+"choices": [
+{"text": "Cushing's triad indicating critically raised intracranial pressure (ICP) and impending brainstem herniation", "is_correct": true},
+{"text": "Hypovolaemic shock from occult intra-abdominal bleeding", "is_correct": false},
+{"text": "Acute anaphylactic reaction to intravenous antibiotics", "is_correct": false},
+{"text": "Benign vasovagal syncope during sleep", "is_correct": false}
+],
+"rationale": "Hypertension with widened pulse pressure, bradycardia, and irregular respirations constitute Cushing's triad, a late sign of severe intracranial hypertension requiring immediate neurosurgical and airway intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care of the Critically Ill Child (Respiratory failure, Sepsis, Shock)",
+"question_text": "A 2-year-old boy weighing 12 kg is brought to a municipal hospital emergency room with septic shock secondary to severe lobar pneumonia. He is lethargic, mottled, tachycardic (HR 180 bpm), with capillary refill of 5 seconds and BP 68/40 mmHg. Following WHO/GHS Paediatric Emergency Triage Assessment and Treatment (ETAT) guidelines, what is the appropriate initial intravenous fluid bolus?",
+"choices": [
+{"text": "10–20 mL/kg (120–240 mL) of isotonic crystalloid (0.9% Normal Saline or Ringer's Lactate) infused rapidly over 15–30 minutes with frequent reassessment for fluid overload", "is_correct": true},
+{"text": "50 mL/kg (600 mL) of 5% Dextrose in water given over 5 minutes", "is_correct": false},
+{"text": "2 mL/kg (24 mL) of oral rehydration salts via nasogastric tube over 4 hours", "is_correct": false},
+{"text": "Withhold all intravenous fluids until blood culture results return in 48 hours", "is_correct": false}
+],
+"rationale": "ETAT guidelines recommend cautious rapid boluses of 10–20 mL/kg isotonic crystalloid in paediatric septic shock while monitoring liver edge, lung bases, and heart rate after each bolus to restore perfusion without inducing pulmonary oedema.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Critically Ill Child (Respiratory failure, Sepsis, Shock)",
+"question_text": "During resuscitation of a 5-year-old child with severe septic shock, broad-spectrum intravenous antibiotics (ceftriaxone and gentamicin) are prescribed alongside fluid therapy. Within what timeframe should the nurse ensure the first dose of intravenous antibiotics is administered?",
+"choices": [
+{"text": "Within 1 hour of recognizing sepsis (after obtaining blood cultures if doing so does not delay administration)", "is_correct": true},
+{"text": "Within 12 hours after transferring the child to the general ward", "is_correct": false},
+{"text": "Only after the child's fever subsides with paracetamol", "is_correct": false},
+{"text": "24 hours after completing three fluid boluses", "is_correct": false}
+],
+"rationale": "Every hour of delay in administering effective antimicrobials in paediatric septic shock significantly increases mortality; the 'Golden Hour' sepsis bundle mandates IV antibiotics within 60 minutes.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Critically Ill Child (Respiratory failure, Sepsis, Shock)",
+"question_text": "A 3-year-old child admitted with severe acute asthma exacerbation initially had loud expiratory wheezing and a respiratory rate of 48 breaths/min. Thirty minutes later, the nurse auscultates a 'silent chest' with minimal air entry, cyanosis around the lips, and drowsiness. What does this clinical change indicate?",
+"choices": [
+{"text": "Critical life-threatening bronchospasm with near-zero airflow and impending respiratory arrest", "is_correct": true},
+{"text": "Resolution of bronchospasm following nebulized salbutamol", "is_correct": false},
+{"text": "Normal post-nebulization drowsiness requiring no further treatment", "is_correct": false},
+{"text": "Mild upper respiratory viral rhinitis", "is_correct": false}
+],
+"rationale": "Wheezing requires airflow; a silent chest coupled with cyanosis and exhaustion indicates severe airway obstruction where airflow is too minimal to generate wheezes, demanding immediate oxygen, continuous bronchodilators, IV hydrocortisone/magnesium, and ICU airway support.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Care of the Critically Ill Child (Respiratory failure, Sepsis, Shock)",
+"question_text": "Two attempts at peripheral intravenous cannulation fail in an unresponsive 10-month-old infant in hypovolaemic shock from severe cholera-like gastroenteritis at a district hospital. Which vascular access route should be established immediately?",
+"choices": [
+{"text": "Intraosseous (IO) cannulation into the proximal anteromedial tibia", "is_correct": true},
+{"text": "Subcutaneous infusion into the abdominal wall", "is_correct": false},
+{"text": "Radial arterial line insertion for rapid fluid bolus", "is_correct": false},
+{"text": "Oral rehydration via dropper while unconscious", "is_correct": false}
+],
+"rationale": "WHO ETAT and PALS guidelines recommend immediate intraosseous access if peripheral IV access is not achieved within 60–90 seconds or two attempts in a shocked child, providing a non-collapsible marrow plexus for fluids and resuscitation drugs.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Care of the Critically Ill Child (Respiratory failure, Sepsis, Shock)",
+"question_text": "A 4-year-old child with severe dengue-like viral haemorrhagic fever develops warm flushed extremities, bounding pulses, wide pulse pressure, and hypotension unresponsive to 40 mL/kg of isotonic crystalloids. Which vasoactive infusion is typically initiated first in fluid-refractory paediatric warm septic shock?",
+"choices": [
+{"text": "Noradrenaline (norepinephrine) or adrenaline (epinephrine) infusion via dedicated line with continuous cardiac monitoring", "is_correct": true},
+{"text": "Intravenous frusemide bolus", "is_correct": false},
+{"text": "Oral nifedipine tablets", "is_correct": false},
+{"text": "Intravenous potassium chloride bolus", "is_correct": false}
+],
+"rationale": "Fluid-refractory vasodilatory (warm) shock requires catecholamine vasopressor support such as norepinephrine or epinephrine to restore systemic vascular tone and end-organ perfusion pressure.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Cardiovascular Disorders (Congenital Heart Disease, Rheumatic Fever, Heart Failure in Children)",
+"question_text": "A 9-month-old infant with unrepaired Tetralogy of Fallot suddenly becomes intensely cyanotic, tachypnoeic, and irritable after crying vigorously during venepuncture, with oxygen saturation dropping to 62%. What is the nurse's IMMEDIATE priority action to manage this hypercyanotic ('Tet') spell?",
+"choices": [
+{"text": "Place the infant in the knee-chest (squatting) position, administer 100% high-flow oxygen, calm the infant, and prepare prescribed morphine and IV fluid bolus", "is_correct": true},
+{"text": "Place the infant flat in Trendelenburg position and administer intravenous frusemide", "is_correct": false},
+{"text": "Encourage vigorous crying to expand the lungs", "is_correct": false},
+{"text": "Administer oral digoxin immediately", "is_correct": false}
+],
+"rationale": "Flexing the knees onto the chest increases systemic vascular resistance by kinking the femoral arteries, which reduces right-to-left shunting across the ventricular septal defect and forces more blood through the pulmonary artery into the lungs.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Cardiovascular Disorders (Congenital Heart Disease, Rheumatic Fever, Heart Failure in Children)",
+"question_text": "Which four structural cardiac defects comprise Tetralogy of Fallot?",
+"choices": [
+{"text": "Ventricular septal defect (VSD), pulmonary stenosis, overriding aorta, and right ventricular hypertrophy", "is_correct": true},
+{"text": "Atrial septal defect, patent ductus arteriosus, coarctation of the aorta, and mitral stenosis", "is_correct": false},
+{"text": "Transposition of the great arteries, tricuspid atresia, aortic stenosis, and left ventricular hypertrophy", "is_correct": false},
+{"text": "Pulmonary atresia, Ebstein anomaly, mitral regurgitation, and dextrocardia", "is_correct": false}
+],
+"rationale": "Tetralogy of Fallot is the most common cyanotic congenital heart defect beyond infancy and is defined by VSD, right ventricular outflow tract (pulmonary) stenosis, an overriding aorta, and secondary right ventricular hypertrophy.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Cardiovascular Disorders (Congenital Heart Disease, Rheumatic Fever, Heart Failure in Children)",
+"question_text": "An 11-year-old girl from a peri-urban community in Ghana presents to a regional hospital with migratory polyarthritis of her knees and ankles, a new pansystolic apical murmur, subcutaneous nodules, and an elevated antistreptolysin O (ASO) titre 3 weeks after an untreated sore throat. Which diagnosis and long-term secondary prophylaxis are indicated?",
+"choices": [
+{"text": "Acute Rheumatic Fever; monthly intramuscular benzathine penicillin G injections for at least 10 years or until age 21 (or longer if carditis persists) to prevent rheumatic heart disease", "is_correct": true},
+{"text": "Kawasaki disease; single dose of oral albendazole", "is_correct": false},
+{"text": "Infective endocarditis; 3 days of oral amoxicillin only", "is_correct": false},
+{"text": "Juvenile idiopathic arthritis; lifelong high-dose chloroquine", "is_correct": false}
+],
+"rationale": "Meeting two major Jones criteria (polyarthritis, carditis, subcutaneous nodules) with evidence of antecedent Group A Streptococcus infection confirms acute rheumatic fever; regular benzathine penicillin G prophylaxis prevents recurrent attacks and severe valvular rheumatic heart disease.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Cardiovascular Disorders (Congenital Heart Disease, Rheumatic Fever, Heart Failure in Children)",
+"question_text": "A 4-month-old infant with a large ventricular septal defect (VSD) is admitted with congestive heart failure. Which clinical triad on nursing assessment indicates worsening right- and left-sided heart failure in an infant?",
+"choices": [
+{"text": "Tachypnoea with diaphoresis during feeding, hepatomegaly, and poor weight gain (failure to thrive)", "is_correct": true},
+{"text": "Bradycardia, sunken fontanelle, and polyuria", "is_correct": false},
+{"text": "Hypertension, jaundice, and hyperactive bowel sounds", "is_correct": false},
+{"text": "Hypothermia, dry mucous membranes, and bradypnoea", "is_correct": false}
+],
+"rationale": "Infants with heart failure exhibit pulmonary venous congestion (tachypnoea, feeding fatigue, forehead sweating) and systemic venous congestion (hepatomegaly), while high metabolic demand impairs weight gain.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Cardiovascular Disorders (Congenital Heart Disease, Rheumatic Fever, Heart Failure in Children)",
+"question_text": "Before administering a morning oral dose of digoxin to a 7-month-old infant with heart failure, the nurse auscultates an apical heart rate of 82 beats per minute and notes vomiting. What is the nurse's priority action?",
+"choices": [
+{"text": "Withhold the digoxin dose, check serum potassium and digoxin levels, and notify the paediatrician immediately for suspected digoxin toxicity", "is_correct": true},
+{"text": "Administer the digoxin dose mixed with expressed breast milk and recheck in 4 hours", "is_correct": false},
+{"text": "Give half the prescribed dose and administer oral potassium without a prescription", "is_correct": false},
+{"text": "Document the heart rate as normal for an infant and proceed with dosing", "is_correct": false}
+],
+"rationale": "In infants, an apical heart rate below 90–100 bpm accompanied by gastrointestinal symptoms (vomiting, poor feeding) signals potential digoxin toxicity; the dose must be held and evaluated immediately.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Neurological Disorders (Meningitis, Seizures, Cerebral Palsy)",
+"question_text": "A 7-year-old boy in the Northern Region of Ghana (within the African meningitis belt) presents during the dry Harmattan season with sudden high fever (39.8°C), severe headache, photophobia, nuchal rigidity, and positive Kernig's and Brudzinski's signs. Which immediate nursing and infection-control actions take priority?",
+"choices": [
+{"text": "Place the child on droplet isolation precautions, establish IV access, obtain blood cultures, administer urgent empirical IV ceftriaxone, and assist with diagnostic lumbar puncture once raised ICP is excluded", "is_correct": true},
+{"text": "Place the child in an open general ward without masks and wait 24 hours for CSF culture before giving antibiotics", "is_correct": false},
+{"text": "Administer oral antimalarials only and discharge home for observation", "is_correct": false},
+{"text": "Position the child in bright sunlight with the head flat", "is_correct": false}
+],
+"rationale": "Suspected meningococcal meningitis requires immediate droplet precautions to protect staff and other patients alongside rapid intravenous ceftriaxone to prevent fulminant septicaemia, deafness, or death.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Neurological Disorders (Meningitis, Seizures, Cerebral Palsy)",
+"question_text": "A 3-year-old child admitted with cerebral malaria experiences a generalized tonic-clonic seizure lasting more than 5 minutes (status epilepticus). Following Ghana Standard Treatment Guidelines, after positioning the child on their side and ensuring airway patency/oxygen, which first-line anticonvulsant regimen is indicated?",
+"choices": [
+{"text": "Intravenous diazepam (0.2–0.3 mg/kg slowly) or rectal diazepam (0.5 mg/kg) if IV access is not yet established, followed by IV phenobarbitone or phenytoin if seizures persist", "is_correct": true},
+{"text": "Oral paracetamol 250 mg crushed in water during active convulsions", "is_correct": false},
+{"text": "Intramuscular chloroquine bolus", "is_correct": false},
+{"text": "Forcing a wooden spatula between the clenched teeth while restraining all limbs", "is_correct": false}
+],
+"rationale": "Benzodiazepines (IV or rectal diazepam, or buccal/IM midazolam) rapidly terminate status epilepticus, followed by second-line loading with phenobarbitone or phenytoin if seizures continue beyond 5–10 minutes.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Neurological Disorders (Meningitis, Seizures, Cerebral Palsy)",
+"question_text": "A 4-year-old child with spastic quadriplegic cerebral palsy is hospitalized for severe pneumonia. During nursing care, which intervention best prevents aspiration and promotes adequate nutrition?",
+"choices": [
+{"text": "Position the child upright at 75–90 degrees with neck slightly flexed during small, frequent thickened feeds, and allow adequate time for swallowing", "is_correct": true},
+{"text": "Feed thin liquids rapidly while the child lies supine with neck hyperextended", "is_correct": false},
+{"text": "Withhold all nutrition until spasticity completely disappears", "is_correct": false},
+{"text": "Use a large syringe to squirt thin porridge toward the posterior pharynx", "is_correct": false}
+],
+"rationale": "Upright alignment with slight chin tuck protects the airway during swallowing, while thickened textures move more slowly, reducing aspiration risk in children with pseudobulbar motor impairment.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Neurological Disorders (Meningitis, Seizures, Cerebral Palsy)",
+"question_text": "When examining cerebrospinal fluid (CSF) obtained via lumbar puncture from a child with acute bacterial meningitis, which laboratory profile does the nurse expect?",
+"choices": [
+{"text": "Turbid/cloudy appearance, markedly elevated white blood cell count (> 1,000/mm3 with neutrophil predominance), elevated protein, and markedly reduced CSF glucose (< 40% of blood glucose)", "is_correct": true},
+{"text": "Crystal-clear fluid, zero white cells, normal protein, and elevated glucose", "is_correct": false},
+{"text": "Bright green fluid with normal glucose and low protein", "is_correct": false},
+{"text": "Clear fluid with predominantly eosinophils and normal glucose", "is_correct": false}
+],
+"rationale": "Bacterial proliferation and neutrophilic inflammation consume glucose and release protein, producing turbid CSF with hypoglycorrhachia, hyperproteinorrhachia, and polymorphonuclear pleocytosis.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Renal Disorders (Nephrotic Syndrome, Acute Kidney Injury)",
+"question_text": "A 5-year-old boy is admitted to a teaching hospital paediatric ward with generalized anasarca, severe periorbital oedema worse in the morning, ascites, +4 proteinuria, hypoalbuminaemia, and hyperlipidaemia (minimal change nephrotic syndrome). Which daily nursing assessment provides the most accurate measure of fluid retention and response to prednisolone therapy?",
+"choices": [
+{"text": "Weighing the child at the exact same time each morning on the same calibrated scale wearing minimal clothing, alongside strict intake-output charting and daily abdominal girth measurement", "is_correct": true},
+{"text": "Measuring mid-upper arm circumference once a week", "is_correct": false},
+{"text": "Estimating fluid balance solely by asking the mother if the child looks thinner", "is_correct": false},
+{"text": "Checking axillary temperature every 8 hours", "is_correct": false}
+],
+"rationale": "Daily standardized body weight is the most sensitive objective indicator of third-space fluid accumulation or diuresis in nephrotic syndrome (1 kg weight change equals approximately 1 litre of fluid).",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Renal Disorders (Nephrotic Syndrome, Acute Kidney Injury)",
+"question_text": "A child with nephrotic syndrome receiving high-dose oral prednisolone suddenly develops fever (38.8°C), diffuse severe abdominal pain, rebound tenderness, and guarding. Which life-threatening complication must the nurse suspect immediately?",
+"choices": [
+{"text": "Spontaneous bacterial peritonitis (most commonly caused by Streptococcus pneumoniae)", "is_correct": true},
+{"text": "Simple constipation from hospital diet", "is_correct": false},
+{"text": "Normal steroid-induced hunger pains", "is_correct": false},
+{"text": "Mild urinary tract discomfort", "is_correct": false}
+],
+"rationale": "Loss of immunoglobulins and complement factors in the urine combined with ascitic fluid and steroid immunosuppression predisposes nephrotic children to spontaneous bacterial peritonitis, requiring urgent blood/ascitic cultures and IV antibiotics.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Renal Disorders (Nephrotic Syndrome, Acute Kidney Injury)",
+"question_text": "A 6-year-old child develops oliguric acute kidney injury (AKI) following severe intravascular haemolysis from blackwater fever/severe malaria. Lab results show serum potassium of 6.9 mmol/L and peaked T waves on the ECG monitor. What is the nurse's PRIORITY action?",
+"choices": [
+{"text": "Alert the paediatrician immediately and prepare emergency cardioprotective IV 10% calcium gluconate, insulin-dextrose infusion, and nebulized salbutamol while stopping all potassium-containing fluids", "is_correct": true},
+{"text": "Administer oral potassium chloride syrup to normalize electrolytes", "is_correct": false},
+{"text": "Infuse potassium-rich Ringer's lactate rapidly", "is_correct": false},
+{"text": "Reassure the mother and recheck serum potassium next morning", "is_correct": false}
+],
+"rationale": "Severe hyperkalaemia (> 6.5 mmol/L) with ECG changes risks imminent ventricular fibrillation or asystole; IV calcium gluconate immediately stabilizes the myocardial membrane while insulin-glucose shifts potassium intracellularly.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Renal Disorders (Nephrotic Syndrome, Acute Kidney Injury)",
+"question_text": "How does acute post-streptococcal glomerulonephritis (APSGN) differ clinically from nephrotic syndrome in a school-aged child?",
+"choices": [
+{"text": "APSGN typically presents with cola-coloured (smoky) haematuria, hypertension, mild-to-moderate periorbital oedema, and oliguria 1–2 weeks after a streptococcal throat or skin infection, whereas nephrotic syndrome features massive proteinuria and severe generalized oedema with usually normal blood pressure", "is_correct": true},
+{"text": "APSGN causes massive chylous ascites and normal urine colour without hypertension", "is_correct": false},
+{"text": "Nephrotic syndrome always presents with gross frank blood clots in the urine", "is_correct": false},
+{"text": "Both conditions are caused by acute viral hepatitis A", "is_correct": false}
+],
+"rationale": "Nephritic syndrome (APSGN) is driven by glomerular immune-complex inflammation causing haematuria, salt/water retention, and hypertension, whereas nephrotic syndrome reflects podocyte permeability causing massive protein loss and hypoalbuminaemia.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Oncology (Leukaemia, Wilms Tumour, Burkitt Lymphoma)",
+"question_text": "An 8-year-old boy from a rural forest-belt community in Ghana presents to Komfo Anokye Teaching Hospital with a rapidly enlarging, painless unilateral jaw swelling, loosening of molar teeth, and bilateral abdominal masses. Biopsy confirms endemic Burkitt lymphoma. During initial chemotherapy induction, which metabolic emergency must the nurse closely monitor and prevent?",
+"choices": [
+{"text": "Tumour lysis syndrome (hyperuricaemia, hyperkalaemia, hyperphosphataemia, and hypocalcaemia causing acute renal failure)", "is_correct": true},
+{"text": "Hypothyroidism and weight gain", "is_correct": false},
+{"text": "Iron overload haemochromatosis", "is_correct": false},
+{"text": "Hypernatraemic diabetes insipidus", "is_correct": false}
+],
+"rationale": "Burkitt lymphoma has an extremely rapid cell-doubling time; chemotherapy triggers massive malignant cell lysis releasing intracellular potassium, phosphate, and nucleic acids (uric acid), requiring aggressive IV hyperhydration and allopurinol/rasburicase.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Oncology (Leukaemia, Wilms Tumour, Burkitt Lymphoma)",
+"question_text": "A 3-year-old girl is admitted to the paediatric surgical ward with a large, firm, smooth unilateral abdominal mass diagnosed as Wilms tumour (nephroblastoma) awaiting nephrectomy. Which bedside safety precaution is MANDATORY for all nurses and students?",
+"choices": [
+{"text": "Post a prominent sign above the bed stating 'DO NOT PALPATE ABDOMEN' and handle the child gently during bathing and transfers to prevent rupturing the fragile tumour capsule and seeding malignant cells", "is_correct": true},
+{"text": "Palpate the abdominal mass every shift to measure tumour shrinkage", "is_correct": false},
+{"text": "Position the child prone on hard pillows to compress the mass", "is_correct": false},
+{"text": "Administer vigorous deep abdominal massage before surgery", "is_correct": false}
+],
+"rationale": "Wilms tumour is encapsulated and vascular; inadvertent abdominal palpation can rupture the capsule, spilling cancer cells into the peritoneal cavity and upstaging the disease.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Oncology (Leukaemia, Wilms Tumour, Burkitt Lymphoma)",
+"question_text": "A 5-year-old child undergoing induction chemotherapy for acute lymphoblastic leukaemia (ALL) has an absolute neutrophil count (ANC) of 280 cells/mm3 and develops a single oral temperature spike of 38.4°C without an obvious focus. What is the nurse's PRIORITY action?",
+"choices": [
+{"text": "Treat as febrile neutropenia emergency: institute strict protective isolation, obtain peripheral/central blood cultures, and administer broad-spectrum IV antipseudomonal antibiotics immediately without waiting for lab results", "is_correct": true},
+{"text": "Give oral ibuprofen and wait 24 hours to see if the fever resolves", "is_correct": false},
+{"text": "Administer a live attenuated measles vaccine to boost immunity", "is_correct": false},
+{"text": "Measure rectal temperature every hour to confirm fever", "is_correct": false}
+],
+"rationale": "In severe neutropenia (ANC < 500/mm3), fever may be the sole sign of overwhelming bacterial sepsis; rectal thermometers/suppositories are contraindicated due to mucosal trauma, and immediate IV antibiotics are life-saving.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Oncology (Leukaemia, Wilms Tumour, Burkitt Lymphoma)",
+"question_text": "Which nursing intervention prevents haemorrhagic cystitis in a child receiving high-dose intravenous cyclophosphamide for Burkitt lymphoma?",
+"choices": [
+{"text": "Administer vigorous intravenous hyperhydration before, during, and after infusion, administer prescribed mesna, and encourage frequent voiding every 2 hours", "is_correct": true},
+{"text": "Restrict oral and intravenous fluids for 24 hours after chemotherapy", "is_correct": false},
+{"text": "Administer aspirin for mild bladder discomfort", "is_correct": false},
+{"text": "Clamp the urinary catheter for 6 hours to concentrate urine", "is_correct": false}
+],
+"rationale": "Cyclophosphamide metabolites (acrolein) irritate the bladder urothelium; hyperhydration, frequent bladder emptying, and uroprotective mesna neutralize acrolein and prevent severe mucosal bleeding.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Congenital Anomalies (Cleft Lip/Palate, Neural Tube Defects, Hydrocephalus)",
+"question_text": "A term newborn is delivered with a lumbar myelomeningocele with an intact translucent meningeal sac protruding over the lower spine. Prior to neurosurgical closure, how should the nurse position and protect the infant?",
+"choices": [
+{"text": "Place the infant prone (or lateral) with hips slightly flexed, cover the exposed sac with a sterile saline-moistened non-adherent dressing, and place a protective barrier below the sac to prevent faecal/urine contamination", "is_correct": true},
+{"text": "Place the infant supine directly on the exposed sac and cover with dry cotton wool", "is_correct": false},
+{"text": "Apply firm pressure to push the meningeal sac back into the spinal canal", "is_correct": false},
+{"text": "Use latex surgical gloves when handling the infant", "is_correct": false}
+],
+"rationale": "Prone positioning and sterile moist dressings prevent sac desiccation, rupture, and ascending bacterial meningitis, while latex-free precautions prevent early latex sensitization in neural tube defect patients.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Congenital Anomalies (Cleft Lip/Palate, Neural Tube Defects, Hydrocephalus)",
+"question_text": "Following surgical repair of a unilateral cleft lip (cheiloplasty) in a 4-month-old infant, which postoperative nursing intervention protects the suture line from mechanical tension and trauma?",
+"choices": [
+{"text": "Apply soft elbow restraints, position the infant supine or side-lying (never prone), cleanse the suture line gently with sterile normal saline after feeds, and feed using a soft syringe or specialized Haberman feeder rather than a hard spoon", "is_correct": true},
+{"text": "Place the infant prone on the abdomen to promote drainage", "is_correct": false},
+{"text": "Allow the infant to suck vigorously on a standard firm pacifier", "is_correct": false},
+{"text": "Leave elbow restraints on continuously for 24 hours without skin or neurovascular checks", "is_correct": false}
+],
+"rationale": "Preventing hand-to-mouth rubbing, prone friction, and hard objects against the upper lip preserves delicate suture approximation and minimizes scarring.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Congenital Anomalies (Cleft Lip/Palate, Neural Tube Defects, Hydrocephalus)",
+"question_text": "A 6-month-old infant with congenital hydrocephalus had a ventriculoperitoneal (VP) shunt inserted 10 days ago. The mother brings the infant back reporting high-pitched crying, projectile vomiting, bulging anterior fontanelle, lethargy, and downward deviation of the eyes ('sunsetting sign'). What complication is occurring?",
+"choices": [
+{"text": "VP shunt malfunction/obstruction causing acute raised intracranial pressure", "is_correct": true},
+{"text": "Normal post-shunt CSF over-drainage", "is_correct": false},
+{"text": "Simple teething discomfort", "is_correct": false},
+{"text": "Benign infantile colic", "is_correct": false}
+],
+"rationale": "Bulging fontanelle, projectile vomiting, sunsetting eyes, and irritability indicate blocked CSF drainage through the VP shunt and acute intracranial hypertension requiring urgent neurosurgical evaluation.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Congenital Anomalies (Cleft Lip/Palate, Neural Tube Defects, Hydrocephalus)",
+"question_text": "Before cleft palate surgery can be performed, a 2-month-old infant with an unrepaired cleft palate struggles to create negative suction during feeding, leading to nasal regurgitation and poor weight gain. Which feeding technique should the nurse teach the mother?",
+"choices": [
+{"text": "Hold the infant in an upright sitting position (60–80 degrees), direct the special soft squeezable bottle/Haberman feeder nipple toward the side/back of the intact cheek rather than the palatal defect, and burp frequently", "is_correct": true},
+{"text": "Lay the infant flat on her back while pouring milk rapidly into the centre of the mouth", "is_correct": false},
+{"text": "Restrict feeds to twice daily to reduce nasal regurgitation", "is_correct": false},
+{"text": "Insert a nasogastric tube permanently without attempting assisted oral feeding", "is_correct": false}
+],
+"rationale": "Upright positioning uses gravity to prevent nasal reflux, while directing milk against the buccal mucosa compensates for the infant's inability to generate intraoral vacuum and reduces swallowed air.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Surgical Nursing (Pre/Post-Op Care)",
+"question_text": "A 5-week-old male infant is admitted to a regional hospital surgical unit with forceful, non-bilious projectile vomiting immediately after every feed, visible left-to-right gastric peristaltic waves, and a palpable 'olive-shaped' mass in the right upper quadrant. Prior to pyloromyotomy surgery, which metabolic derangement must be corrected first?",
+"choices": [
+{"text": "Hypochloraemic, hypokalaemic metabolic alkalosis and dehydration via intravenous normal saline with potassium supplementation once urine output is established", "is_correct": true},
+{"text": "Hyperchloraemic metabolic acidosis with sodium bicarbonate bolus", "is_correct": false},
+{"text": "Severe hyperkalaemia with calcium gluconate", "is_correct": false},
+{"text": "Proceed immediately to general anaesthesia without IV fluid resuscitation", "is_correct": false}
+],
+"rationale": "Hypertrophic pyloric stenosis causes persistent loss of hydrochloric acid and potassium in gastric vomitus; correcting dehydration and hypochloraemic metabolic alkalosis preoperatively prevents postoperative apnoea under general anaesthesia.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Surgical Nursing (Pre/Post-Op Care)",
+"question_text": "A 9-month-old infant presents with sudden paroxysmal episodes of inconsolable screaming while drawing his knees up to his chest, followed by lethargy, vomiting, and passage of dark red mucoid 'currant jelly' stools. Which surgical emergency is suspected, and what is the primary diagnostic and therapeutic non-operative intervention if no peritonitis is present?",
+"choices": [
+{"text": "Intussusception; ultrasound-guided hydrostatic saline or pneumatic air enema reduction after IV fluid resuscitation and nasogastric decompression", "is_correct": true},
+{"text": "Hirschsprung disease; high-dose oral loperamide", "is_correct": false},
+{"text": "Viral gastroenteritis; immediate discharge with oral zinc alone", "is_correct": false},
+{"text": "Umbilical hernia; tight adhesive strapping", "is_correct": false}
+],
+"rationale": "Telescoping of the ileum into the colon (intussusception) compromises mesenteric blood flow, sloughing mucosa into 'currant jelly' stools; prompt hydrostatic/pneumatic enema reduces the bowel without laparotomy if perforation is absent.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Surgical Nursing (Pre/Post-Op Care)",
+"question_text": "A 2-day-old term neonate in the NICU has failed to pass meconium within 48 hours of birth, has progressive abdominal distension, bilious vomiting, and an explosive gush of foul-smelling liquid stool and gas upon gentle digital rectal examination. Which congenital condition does this presentation strongly suggest?",
+"choices": [
+{"text": "Hirschsprung disease (congenital aganglionic megacolon)", "is_correct": true},
+{"text": "Duodenal atresia", "is_correct": false},
+{"text": "Biliary atresia", "is_correct": false},
+{"text": "Tracheo-oesophageal fistula", "is_correct": false}
+],
+"rationale": "Absence of parasympathetic ganglion cells in the distal colon prevents peristaltic relaxation, causing functional bowel obstruction, delayed meconium passage, and the classic 'squirt sign' on rectal exam.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Advanced Paediatric Medication Calculations",
+"question_text": "A 3-year-old child weighing 15 kg is prescribed intravenous ceftriaxone at 80 mg/kg/day in two equally divided doses every 12 hours for severe bacterial meningitis. The vial contains 1 g (1,000 mg) of ceftriaxone reconstituted to a final volume of 10 mL (100 mg/mL). How many millilitres (mL) should the nurse administer for ONE single 12-hourly dose?",
+"choices": [
+{"text": "6 mL", "is_correct": true},
+{"text": "12 mL", "is_correct": false},
+{"text": "3 mL", "is_correct": false},
+{"text": "8 mL", "is_correct": false}
+],
+"rationale": "Total daily dose = 15 kg x 80 mg/kg/day = 1,200 mg/day. Divided into two 12-hourly doses = 600 mg per dose. At a concentration of 100 mg/mL, 600 mg / 100 mg/mL = 6 mL per dose.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Paediatric Medication Calculations",
+"question_text": "Using the Holliday-Segar (4-2-1) maintenance fluid formula, calculate the exact 24-hour maintenance intravenous fluid volume required for a 24 kg child admitted nil per os (NPO) before surgery.",
+"choices": [
+{"text": "1,580 mL/24 hours", "is_correct": true},
+{"text": "1,240 mL/24 hours", "is_correct": false},
+{"text": "2,400 mL/24 hours", "is_correct": false},
+{"text": "1,080 mL/24 hours", "is_correct": false}
+],
+"rationale": "By the Holliday-Segar rule: first 10 kg x 100 mL = 1,000 mL; next 10 kg x 50 mL = 500 mL; remaining 4 kg x 20 mL = 80 mL. Total = 1,000 + 500 + 80 = 1,580 mL over 24 hours.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Paediatric Medication Calculations",
+"question_text": "A 6-month-old infant weighing 8 kg with severe malaria is prescribed intravenous artesunate at 3.0 mg/kg per dose (for children < 20 kg per WHO/GHS guidelines). The artesunate vial (60 mg) is reconstituted with 1 mL sodium bicarbonate and diluted with 5 mL normal saline to yield 6 mL total volume (10 mg/mL). What volume must the nurse draw up for one dose?",
+"choices": [
+{"text": "2.4 mL", "is_correct": true},
+{"text": "1.9 mL", "is_correct": false},
+{"text": "4.8 mL", "is_correct": false},
+{"text": "0.8 mL", "is_correct": false}
+],
+"rationale": "For children weighing under 20 kg, the WHO/GHS dose is 3.0 mg/kg: 8 kg x 3.0 mg/kg = 24 mg. With a final concentration of 10 mg/mL (60 mg in 6 mL), 24 mg / 10 mg/mL = 2.4 mL.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Paediatric Medication Calculations",
+"question_text": "A 10 kg toddler is ordered 200 mL of Ringer's Lactate to infuse over 2 hours via a paediatric burette (microdrip) set calibrated at 60 drops/mL. At how many drops per minute should the nurse regulate the infusion?",
+"choices": [
+{"text": "100 drops/minute", "is_correct": true},
+{"text": "50 drops/minute", "is_correct": false},
+{"text": "33 drops/minute", "is_correct": false},
+{"text": "167 drops/minute", "is_correct": false}
+],
+"rationale": "Flow rate = (Total volume 200 mL x drop factor 60 gtts/mL) / 120 minutes = 12,000 / 120 = 100 drops per minute.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Palliative Care and Family Support",
+"question_text": "A 10-year-old boy with relapsed, refractory acute myeloid leukaemia in a Ghanaian teaching hospital transitions to palliative care while still receiving blood transfusions for symptomatic anaemia and oral morphine for bone pain. Which statement accurately describes paediatric palliative care?",
+"choices": [
+{"text": "It is holistic, family-centred care addressing physical pain, psychosocial distress, and spiritual needs from diagnosis alongside disease-directed or comfort therapies, supporting both the child and family", "is_correct": true},
+{"text": "It requires stopping all analgesics and abandoning the child once curative therapy ends", "is_correct": false},
+{"text": "It can only be initiated during the final 2 hours before death", "is_correct": false},
+{"text": "It excludes parents from decision-making to protect them from emotional stress", "is_correct": false}
+],
+"rationale": "Paediatric palliative care affirms life, relieves suffering through multimodal symptom control, and supports the child's developmental, educational, and family needs throughout life-limiting illness.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Paediatric Palliative Care and Family Support",
+"question_text": "When assessing severe cancer pain in a 4-year-old child who is shy and minimally verbal in the hospital ward, which validated self-report or observational tool should the nurse use?",
+"choices": [
+{"text": "The Wong-Baker FACES Pain Rating Scale or the FLACC (Face, Legs, Activity, Cry, Consolability) behavioural scale", "is_correct": true},
+{"text": "A 100-word written adult McGill Pain Questionnaire", "is_correct": false},
+{"text": "Estimating pain solely by asking the child's older sibling", "is_correct": false},
+{"text": "Assuming young children do not feel severe bone pain because their nerves are immature", "is_correct": false}
+],
+"rationale": "The Wong-Baker FACES scale allows preschoolers to point to facial expressions matching their pain, while the FLACC scale objectively scores behavioural cues when verbal self-report is limited.",
+"difficulty": "KNOWLEDGE"
+},
+{
+"topic": "Care of the Critically Ill Child (Respiratory failure, Sepsis, Shock)",
+"question_text": "At the start of a busy morning shift on a Ghanaian paediatric emergency ward, the nurse receives four newly admitted children. Which child must be prioritized FIRST for immediate resuscitation?",
+"choices": [
+{"text": "A 1-year-old infant with severe pneumonia exhibiting inspiratory stridor at rest, central cyanosis, SpO2 81%, and head bobbing", "is_correct": true},
+{"text": "A 6-year-old boy with nephrotic syndrome needing his morning weight and urine dipstick checked", "is_correct": false},
+{"text": "A 4-year-old girl recovering from typhoid fever awaiting routine oral amoxicillin", "is_correct": false},
+{"text": "An 8-year-old boy with well-controlled cerebral palsy scheduled for outpatient physiotherapy referral", "is_correct": false}
+],
+"rationale": "Following WHO ETAT ABCD prioritization, airway obstruction (stridor at rest) and severe hypoxaemia (SpO2 81%, central cyanosis) represent an immediate threat to life requiring instant airway positioning, oxygen, and emergency intervention.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Surgical Nursing (Pre/Post-Op Care)",
+"question_text": "During postoperative rounds on a paediatric surgical ward, an RPN assesses four children. Which child requires IMMEDIATE first intervention?",
+"choices": [
+{"text": "A 7-year-old boy 4 hours post-tonsillectomy who is swallowing frequently, restless, pale, and vomits 150 mL of bright red blood", "is_correct": true},
+{"text": "A 3-year-old boy 2 days post-herniotomy requesting juice from his mother", "is_correct": false},
+{"text": "A 5-year-old girl 3 days post-appendectomy with a clean dry dressing and temperature 37.1°C", "is_correct": false},
+{"text": "A 9-year-old boy 1 day post-circumcision reporting mild discomfort rated 2/10", "is_correct": false}
+],
+"rationale": "Frequent swallowing and bright red emesis post-tonsillectomy indicate active primary post-tonsillectomy haemorrhage, posing an immediate dual risk of airway aspiration and hypovolaemic shock.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Neurological Disorders (Meningitis, Seizures, Cerebral Palsy)",
+"question_text": "On an acute paediatric medical ward, four children require nursing attention simultaneously. Which child must the nurse attend to FIRST?",
+"choices": [
+{"text": "A 2-year-old child with bacterial meningitis having an active generalized seizure for 6 minutes with copious oral secretions", "is_correct": true},
+{"text": "A 5-year-old child with sickle cell vaso-occlusive crisis whose pain decreased from 8/10 to 3/10 after morphine", "is_correct": false},
+{"text": "A 10-year-old girl with rheumatic fever waiting for discharge counselling on monthly penicillin", "is_correct": false},
+{"text": "A 3-year-old boy with uncomplicated malaria whose temperature dropped from 38.5°C to 37.4°C", "is_correct": false}
+],
+"rationale": "Active status epilepticus (> 5 minutes) with pooled secretions threatens airway patency and causes hypoxic neuronal injury, requiring immediate lateral positioning, suctioning, oxygen, and rescue benzodiazepine administration.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Congenital Anomalies (Cleft Lip/Palate, Neural Tube Defects, Hydrocephalus)",
+"question_text": "A neonatal/paediatric nurse in a teaching hospital nursery prioritizes care among four infants with congenital anomalies. Which infant requires IMMEDIATE surgical and nursing stabilization first?",
+"choices": [
+{"text": "A newborn with gastroschisis whose exposed intestinal loops are protruding through an abdominal wall defect without a covering sac", "is_correct": true},
+{"text": "A 3-week-old infant with an isolated unilateral cleft lip feeding well with a special bottle", "is_correct": false},
+{"text": "A 2-month-old infant with mild positional plagiocephaly awaiting outpatient review", "is_correct": false},
+{"text": "A 1-month-old infant with an asymptomatic small umbilical hernia", "is_correct": false}
+],
+"rationale": "Exposed bowel in gastroschisis causes massive evaporative heat and fluid loss, bowel ischaemia, and sepsis; immediately wrapping the bowel in sterile warm saline-soaked gauze and a plastic bowel bag while starting IV fluids is life-saving.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Oncology (Leukaemia, Wilms Tumour, Burkitt Lymphoma)",
+"question_text": "During a busy shift on the paediatric oncology unit, four children present new clinical findings. Which child should the nurse prioritize assessing and escalating FIRST?",
+"choices": [
+{"text": "A 6-year-old boy receiving chemotherapy for ALL who is neutropenic (ANC 150/mm3) and now has a temperature of 38.6°C, rigors, and HR 156 bpm", "is_correct": true},
+{"text": "A 9-year-old girl with Burkitt lymphoma experiencing chemotherapy-induced alopecia and asking for a head scarf", "is_correct": false},
+{"text": "A 4-year-old boy post-Wilms tumour resection requesting a storybook from the play therapist", "is_correct": false},
+{"text": "A 7-year-old girl with mild oral mucositis waiting for routine saline mouthwash", "is_correct": false}
+],
+"rationale": "Fever and tachycardia in a profoundly neutropenic oncology patient signal impending septic shock that can become fatal within hours without immediate blood cultures and broad-spectrum IV antibiotics.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Paediatric Cardiovascular Disorders (Congenital Heart Disease, Rheumatic Fever, Heart Failure in Children)",
+"question_text": "A nurse on a paediatric cardiac ward receives four updates simultaneously. Which patient requires IMMEDIATE bedside intervention first?",
+"choices": [
+{"text": "An 8-month-old infant with Tetralogy of Fallot who suddenly became deeply blue, agitated, and dyspnoeic during a blood draw", "is_correct": true},
+{"text": "A 12-year-old girl with healed rheumatic carditis asking when she can resume school sports", "is_correct": false},
+{"text": "A 2-year-old boy post-VSD closure ready for routine suture removal", "is_correct": false},
+{"text": "A 5-year-old child with mild innocent systolic murmur awaiting echocardiography", "is_correct": false}
+],
+"rationale": "An acute hypercyanotic ('Tet') spell causes severe right-to-left shunting and profound cerebral hypoxia, demanding instant knee-chest positioning and oxygen therapy.",
+"difficulty": "ANALYSIS"
+},
+{
+"topic": "Congenital Anomalies (Cleft Lip/Palate, Neural Tube Defects, Hydrocephalus)",
+"question_text": "A newborn in the NICU exhibits excessive frothy salivation, choking, coughing, and cyanosis immediately upon attempting his first breastfeed, and a soft feeding tube coils at 10 cm from the lips without reaching the stomach. Which congenital anomaly is present, and what is the immediate nursing priority?",
+"choices": [
+{"text": "Oesophageal atresia with tracheo-oesophageal fistula; stop all oral feeds immediately (NPO), elevate the head of the cot 30–45 degrees, apply continuous low-pressure suction to the upper oesophageal pouch, and start IV fluids", "is_correct": true},
+{"text": "Pyloric stenosis; give 60 mL of expressed breast milk via syringe to clear the throat", "is_correct": false},
+{"text": "Cleft lip; place the infant flat prone and feed with a regular bottle", "is_correct": false},
+{"text": "Intussusception; administer a barium enema immediately", "is_correct": false}
+],
+"rationale": "Coiling of the catheter in a blind upper oesophageal pouch with choking on first feed confirms oesophageal atresia; keeping NPO, elevating the head, and aspirating pouch secretions prevent chemical aspiration pneumonitis prior to surgical repair.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Palliative Care and Family Support",
+"question_text": "The parents of a 7-year-old child dying from end-stage metastatic neuroblastoma in a Ghanaian regional hospital ask the nurse whether they should tell their child the truth or hide his prognosis, as the child keeps asking why he is not getting better. How should the nurse guide the family?",
+"choices": [
+{"text": "Explore the parents' fears empathetically, explain that children often sense serious illness and feel isolated by secrecy, and support honest, developmentally appropriate reassurance focused on comfort, love, and non-abandonment", "is_correct": true},
+{"text": "Tell the parents to lie and promise the child he will return to school tomorrow", "is_correct": false},
+{"text": "Inform the 7-year-old abruptly without the parents' presence or consent", "is_correct": false},
+{"text": "Advise the parents to stop visiting the hospital so the child does not ask questions", "is_correct": false}
+],
+"rationale": "Collaborative, culturally sensitive communication respects parental authority while helping families provide truthful, age-appropriate emotional reassurance that alleviates the child's unspoken anxiety.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Renal Disorders (Nephrotic Syndrome, Acute Kidney Injury)",
+"question_text": "A 7-year-old boy with steroid-sensitive nephrotic syndrome is being discharged home on tapering oral prednisolone. Which home-monitoring instruction is most important for the nurse to teach his mother?",
+"choices": [
+{"text": "Test first-morning urine daily with a protein dipstick and maintain a diary, report +3 or +4 proteinuria for 3 consecutive days (relapse) or fever, and never stop prednisolone abruptly", "is_correct": true},
+{"text": "Stop prednisolone immediately on the day facial swelling disappears", "is_correct": false},
+{"text": "Add extra table salt to all meals to replace urinary losses", "is_correct": false},
+{"text": "Take the child for live yellow fever and MMR vaccinations while on high-dose steroids", "is_correct": false}
+],
+"rationale": "Daily morning urine dipstick monitoring detects early relapse before massive oedema returns, while gradual steroid tapering prevents life-threatening acute adrenal insufficiency.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Paediatric Surgical Nursing (Pre/Post-Op Care)",
+"question_text": "A 4-year-old boy returns to the paediatric ward in a hip spica cast following closed reduction of developmental dysplasia of the hip. Which neurovascular assessment ('6 Ps') finding requires immediate surgical notification?",
+"choices": [
+{"text": "Toes on the casted leg are cool, pale/cyanotic, with capillary refill > 4 seconds and inability to wiggle toes accompanied by escalating pain", "is_correct": true},
+{"text": "Warm pink toes with brisk capillary refill < 2 seconds and intact sensation", "is_correct": false},
+{"text": "Mild itching underneath the cast edges without skin breakdown", "is_correct": false},
+{"text": "Damp exterior plaster surface 2 hours after application", "is_correct": false}
+],
+"rationale": "Coolness, pallor, delayed capillary refill, and motor/sensory loss distal to a circumferential cast indicate neurovascular compression or compartment syndrome requiring urgent cast bivalving.",
+"difficulty": "APPLICATION"
+},
+{
+"topic": "Advanced Paediatric Medication Calculations",
+"question_text": "A 20 kg child admitted with severe diabetic ketoacidosis (DKA) is prescribed a continuous regular insulin infusion at 0.1 units/kg/hour. The pharmacy prepares 50 units of regular insulin in 50 mL of 0.9% normal saline (1 unit/mL). At what rate (mL/hour) should the nurse program the syringe pump?",
+"choices": [
+{"text": "2 mL/hour", "is_correct": true},
+{"text": "0.2 mL/hour", "is_correct": false},
+{"text": "20 mL/hour", "is_correct": false},
+{"text": "5 mL/hour", "is_correct": false}
+],
+"rationale": "Required insulin dose = 20 kg x 0.1 units/kg/hour = 2 units/hour. Since the solution concentration is 1 unit/mL (50 units in 50 mL), the pump rate is 2 mL/hour.",
+"difficulty": "APPLICATION"
+}
+]
+}
+]
+}
