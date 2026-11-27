@@ -10,6 +10,8 @@ import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import ExamCountdown from "../components/ExamCountdown"
 import WeakAreasCard from "../components/WeakAreasCard"
+import DailyReviewQueueCard from "../components/DailyReviewQueueCard"
+import GhanaQuickRefDrawer from "../components/GhanaQuickRefDrawer"
 import PwaInstallPrompt from "../components/PwaInstallPrompt"
 
 function getGreeting(): string {
@@ -43,6 +45,7 @@ function getCountdownText(msLeft: number): string {
 
 export default function DashboardPage() {
     const { user } = useAuth()
+    const [quickRefOpen, setQuickRefOpen] = useState(false)
 
     const [, setTick] = useState(0)
     useEffect(() => {
@@ -91,6 +94,13 @@ export default function DashboardPage() {
                             >
                                 Ask AI Tutor
                             </Link>
+                            <button
+                                type="button"
+                                onClick={() => setQuickRefOpen(true)}
+                                className="inline-flex items-center gap-2 rounded-lg bg-emerald-400/20 hover:bg-emerald-400/30 border border-emerald-200/40 px-4 py-2 text-sm font-bold !text-white transition-colors"
+                            >
+                                Ghana Quick Reference
+                            </button>
                             <Link
                                 to="/profile"
                                 className="inline-flex items-center gap-2 rounded-lg bg-[#065f46] hover:bg-[#047857] border border-white/25 px-4 py-2 text-sm font-semibold !text-white transition-colors"
@@ -178,7 +188,7 @@ export default function DashboardPage() {
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                             <div>
                                 <Badge variant="brand">Semester Pass</Badge>
-                                <h2 className="mt-2 text-h3 text-brand-950">Unlock all 6,000+ NMC questions for GHS 30</h2>
+                                <h2 className="mt-2 text-h3 text-brand-950">Unlock all 11,900+ NMC questions for GHS 30</h2>
                                 <p className="mt-1 text-body-sm text-brand-800">120 full days of access to all courses, CBT mock exams, AI tutor, and care plan tools.</p>
                             </div>
                             <Link to="/subscribe" className="shrink-0">
@@ -235,6 +245,8 @@ export default function DashboardPage() {
 
                     <ExamCountdown />
                 </div>
+
+                <DailyReviewQueueCard onOpenQuickRef={() => setQuickRefOpen(true)} />
 
                 <WeakAreasCard />
 
@@ -354,6 +366,8 @@ export default function DashboardPage() {
                     </div>
                 </div>
             </div>
+
+            <GhanaQuickRefDrawer open={quickRefOpen} onClose={() => setQuickRefOpen(false)} />
         </AppShell>
     )
 }

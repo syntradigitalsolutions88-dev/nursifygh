@@ -9,6 +9,7 @@ from .cases_views import (
 from .tutor_views import TutorCoachView
 
 from .revision_views import (
+    DailyReviewQueueView,
     FlashcardListCreateView,
     FlashcardReviewUpdateView,
     FlashcardStatsView,
@@ -47,6 +48,7 @@ urlpatterns = [
     path("past-paper/save/", PastPaperSaveView.as_view(), name="past-paper-save"),
     path("my-submissions/", MySubmissionsView.as_view(), name="my-submissions"),
     path("weak-areas/", WeakAreasView.as_view(), name="weak-areas"),
+    path("daily-review-queue/", DailyReviewQueueView.as_view(), name="daily-review-queue"),
     path("leaderboard/", LeaderboardView.as_view(), name="leaderboard"),
     path("flashcards/", FlashcardListCreateView.as_view(), name="flashcard-list-create"),
     path("flashcards/review/", FlashcardReviewUpdateView.as_view(), name="flashcard-review"),

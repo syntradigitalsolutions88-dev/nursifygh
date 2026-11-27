@@ -89,19 +89,22 @@ class CourseDetailView(generics.RetrieveAPIView):
 
 class CourseQuestionsSmartView(APIView):
     """
-    Return ALL approved questions for a course, prioritizing ones the student
-    has never answered. This fixes the 'questions are small' complaint caused
-    by pagination returning only 25 questions out of a 170-question bank.
+    Return ALL approved questions for a course.
+    - Default mode: unseen questions first, then seen (shuffled).
+    - Review mode (?mode=review & optional ?focus_question=<uuid>):
+      focused missed question first, then other unmastered missed questions
+      ranked by miss frequency, followed by unseen and seen questions.
     """
     permission_classes = (permissions.IsAuthenticated, IsSubscribed)
 
     def get(self, request, course_id):
+        from collections import Counter
+
         try:
             course = Course.objects.get(id=course_id, is_published=True)
         except Course.DoesNotExist:
             return Response({"error": "Course not found"}, status=404)
 
-        # All approved questions for this course (no pagination)
         questions = list(
             Question.objects.filter(
                 course=course,
@@ -116,9 +119,12 @@ class CourseQuestionsSmartView(APIView):
                 "total": 0,
                 "unseen_count": 0,
                 "seen_count": 0,
+                "missed_count": 0,
             })
 
-        # Which questions has this student already answered?
+        mode = (request.query_params.get("mode") or "").strip().lower()
+        focus_question_id = (request.query_params.get("focus_question") or "").strip()
+
         answered_ids = set(
             QuizAnswer.objects.filter(
                 attempt__student=request.user,
@@ -126,22 +132,58 @@ class CourseQuestionsSmartView(APIView):
             ).values_list("question_id", flat=True)
         )
 
-        # Split and shuffle (using Python's `random` which IS properly random)
-        unseen = [q for q in questions if q.id not in answered_ids]
-        seen = [q for q in questions if q.id in answered_ids]
+        mastered_ids = set(
+            QuizAnswer.objects.filter(
+                attempt__student=request.user,
+                question__course=course,
+                is_correct=True,
+            ).values_list("question_id", flat=True)
+        )
 
-        random.shuffle(unseen)
-        random.shuffle(seen)
+        wrong_answers = (
+            QuizAnswer.objects.filter(
+                attempt__student=request.user,
+                question__course=course,
+                is_correct=False,
+            )
+            .exclude(question_id__in=mastered_ids)
+            .values_list("question_id", flat=True)
+        )
+        miss_counts = Counter(wrong_answers)
+        missed_ids = set(miss_counts.keys())
 
-        # Unseen first, then seen — ensures new material comes first
-        prioritized = unseen + seen
+        if mode == "review" or focus_question_id:
+            focused = [q for q in questions if focus_question_id and str(q.id) == focus_question_id]
+            focused_ids = {q.id for q in focused}
+
+            other_missed = [q for q in questions if q.id in missed_ids and q.id not in focused_ids]
+            random.shuffle(other_missed)
+            other_missed.sort(key=lambda q: miss_counts[q.id], reverse=True)
+
+            unseen = [q for q in questions if q.id not in answered_ids and q.id not in focused_ids]
+            seen_rest = [
+                q for q in questions
+                if q.id in answered_ids and q.id not in missed_ids and q.id not in focused_ids
+            ]
+
+            random.shuffle(unseen)
+            random.shuffle(seen_rest)
+            prioritized = focused + other_missed + unseen + seen_rest
+        else:
+            unseen = [q for q in questions if q.id not in answered_ids]
+            seen = [q for q in questions if q.id in answered_ids]
+
+            random.shuffle(unseen)
+            random.shuffle(seen)
+            prioritized = unseen + seen
 
         serializer = QuestionPublicSerializer(prioritized, many=True)
         return Response({
             "questions": serializer.data,
             "total": len(prioritized),
             "unseen_count": len(unseen),
-            "seen_count": len(seen),
+            "seen_count": sum(1 for q in questions if q.id in answered_ids),
+            "missed_count": len(missed_ids),
         })
 
 

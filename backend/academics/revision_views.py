@@ -1,12 +1,15 @@
 from __future__ import annotations
 
+from collections import Counter
+from datetime import timedelta
+
 from django.db.models import Q
 from django.utils import timezone
 from rest_framework import permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .models import Choice, Course, Flashcard, FlashcardReview, QuizAnswer
+from .models import Choice, Course, Flashcard, FlashcardReview, Question, QuizAnswer, QuizAttempt
 
 
 def _serialize_card(card: Flashcard, review: FlashcardReview | None, now) -> dict:
@@ -237,3 +240,92 @@ class FlashcardStatsView(APIView):
                 "weak_topics": weak_topics,
             }
         )
+
+
+class DailyReviewQueueView(APIView):
+    """Return unmastered missed quiz questions, due flashcards, and active study streak."""
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        now = timezone.now()
+        try:
+            limit = min(max(int(request.query_params.get("limit", 10)), 1), 30)
+        except (TypeError, ValueError):
+            limit = 10
+
+        mastered_q_ids = set(
+            QuizAnswer.objects.filter(
+                attempt__student=request.user,
+                is_correct=True,
+            ).values_list("question_id", flat=True)
+        )
+
+        wrong_answers = (
+            QuizAnswer.objects.filter(
+                attempt__student=request.user,
+                is_correct=False,
+            )
+            .exclude(question_id__in=mastered_q_ids)
+            .values_list("question_id", flat=True)
+        )
+
+        miss_counts = Counter(wrong_answers)
+        ordered_q_ids = [qid for qid, _ in miss_counts.most_common(limit)]
+
+        questions_map = {
+            q.id: q
+            for q in Question.objects.select_related("course").filter(
+                id__in=ordered_q_ids,
+                is_published=True,
+            )
+        }
+
+        queue_items = []
+        for qid in ordered_q_ids:
+            q = questions_map.get(qid)
+            if not q:
+                continue
+            queue_items.append({
+                "question_id": str(q.id),
+                "course_id": str(q.course_id),
+                "course_code": q.course.code,
+                "course_title": q.course.title,
+                "question_preview": q.text[:140] + ("..." if len(q.text) > 140 else ""),
+                "times_missed": miss_counts[qid],
+            })
+
+        due_flashcards_count = FlashcardReview.objects.filter(
+            student=request.user,
+            next_review_at__lte=now,
+        ).count()
+
+        quiz_dates = set(
+            QuizAttempt.objects.filter(
+                student=request.user,
+                completed_at__isnull=False,
+            ).values_list("completed_at__date", flat=True)
+        )
+        card_dates = set(
+            FlashcardReview.objects.filter(
+                student=request.user,
+                last_reviewed_at__isnull=False,
+            ).values_list("last_reviewed_at__date", flat=True)
+        )
+        active_dates = quiz_dates | card_dates
+
+        today = timezone.localdate()
+        cursor = today if today in active_dates else (today - timedelta(days=1))
+        streak_days = 0
+        while cursor in active_dates:
+            streak_days += 1
+            cursor -= timedelta(days=1)
+
+        return Response({
+            "due_count": len(miss_counts) + due_flashcards_count,
+            "missed_questions_count": len(miss_counts),
+            "due_flashcards_count": due_flashcards_count,
+            "streak_days": streak_days,
+            "recommended_course_id": queue_items[0]["course_id"] if queue_items else None,
+            "queue_items": queue_items,
+        })

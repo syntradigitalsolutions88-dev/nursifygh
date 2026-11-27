@@ -1,24 +1,41 @@
-import { useState } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom"
 import { useQuery, useMutation } from "@tanstack/react-query"
 
 import { getSmartQuizQuestions, submitQuiz } from "../api/courses"
 import { useAuth } from "../contexts/AuthContext"
 import AppShell from "../components/shell/AppShell"
+import GhanaQuickRefDrawer from "../components/GhanaQuickRefDrawer"
 import Button from "../components/ui/Button"
 import type { QuizSubmitRequest } from "../types/api"
 
 export default function QuizPage() {
     const { courseId } = useParams<{ courseId: string }>()
+    const [searchParams] = useSearchParams()
     const { user } = useAuth()
-    const [questionCount, setQuestionCount] = useState<number | "all">(10)
+
+    const mode = searchParams.get("mode") || undefined
+    const focusQuestion = searchParams.get("focus_question") || undefined
+    const limitParam = parseInt(searchParams.get("limit") || "", 10)
+    const isReviewMode = mode === "review" || Boolean(focusQuestion)
+
+    const [questionCount, setQuestionCount] = useState<number | "all">(
+        !isNaN(limitParam) && limitParam > 0 ? limitParam : 10
+    )
     const [hasStarted, setHasStarted] = useState(false)
 
     const { data: questionData, isLoading } = useQuery({
-        queryKey: ["quiz-questions", courseId],
-        queryFn: () => getSmartQuizQuestions(courseId!),
+        queryKey: ["quiz-questions", courseId, mode ?? "default", focusQuestion ?? "none"],
+        queryFn: () => getSmartQuizQuestions(courseId!, { mode, focusQuestion }),
         enabled: !!user?.has_active_subscription && !!courseId,
     })
+
+    useEffect(() => {
+        const total = questionData?.questions?.length ?? 0
+        if (total > 0 && !isNaN(limitParam) && limitParam > 0) {
+            setQuestionCount(limitParam >= total ? "all" : limitParam)
+        }
+    }, [questionData, limitParam])
 
     if (!user) return null
 
@@ -34,6 +51,7 @@ export default function QuizPage() {
 
     const questions = questionData?.questions ?? []
     const unseenCount = questionData?.unseen_count ?? 0
+    const missedCount = questionData?.missed_count ?? 0
 
     if (!questions || questions.length === 0) {
         return (
@@ -62,37 +80,66 @@ export default function QuizPage() {
     const selectedCount = questionCount === "all" ? totalQuestions : Math.min(questionCount, totalQuestions)
 
     if (hasStarted) {
-        // Backend already prioritized unseen-first and shuffled
         const quizQuestions = questions.slice(0, selectedCount)
-        return <QuizInProgress questions={quizQuestions} courseId={courseId!} />
+        return (
+            <QuizInProgress
+                questions={quizQuestions}
+                courseId={courseId!}
+                isReviewMode={isReviewMode}
+            />
+        )
     }
 
-    const presets = [10, 20, 30, 50].filter((n) => n < totalQuestions)
+    const presets = [5, 10, 20, 30, 50].filter((n) => n < totalQuestions)
     if (totalQuestions > 0) presets.push(totalQuestions === questionCount ? 0 : totalQuestions)
-    const uniquePresets = Array.from(new Set(presets)).filter((n) => n > 0)
+    const uniquePresets = Array.from(new Set(presets)).filter((n) => n > 0).slice(0, 4)
 
     return (
         <AppShell>
             <div className="max-w-2xl mx-auto space-y-6">
                 <Link
-                    to="/courses"
+                    to={isReviewMode ? "/dashboard" : "/courses"}
                     className="inline-flex items-center gap-1 text-xs text-on-surface-muted hover:text-brand-700 font-medium"
                 >
-                    ← Back to courses
+                    ← {isReviewMode ? "Back to dashboard" : "Back to courses"}
                 </Link>
 
                 <div>
-                    <p className="text-[11px] font-bold text-brand-700 uppercase tracking-wider">Practice Quiz</p>
+                    <p className="text-[11px] font-bold text-brand-700 uppercase tracking-wider">
+                        {isReviewMode ? "Daily Review Drill" : "Practice Quiz"}
+                    </p>
                     <h1 className="mt-1 text-3xl font-serif font-bold text-gray-900">
                         {totalQuestions} question{totalQuestions === 1 ? "" : "s"} available
                     </h1>
                     <p className="mt-2 text-sm text-on-surface-muted">
-                        Choose how many questions you want to practice. New questions are prioritized first.
+                        {isReviewMode
+                            ? "Your previously missed questions are queued first so you can turn weak spots into mastery."
+                            : "Choose how many questions you want to practice. New questions are prioritized first."}
                     </p>
                 </div>
 
-                {/* NEW: Unseen badge */}
-                {unseenCount > 0 && (
+                {isReviewMode && missedCount > 0 && (
+                    <div className="rounded-xl border border-amber-300 bg-amber-50/80 p-4 flex items-start gap-3">
+                        <div className="flex-shrink-0 mt-0.5 text-amber-700">
+                            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p className="text-sm font-bold text-amber-950">
+                                {missedCount} unmastered missed question{missedCount === 1 ? "" : "s"} queued first
+                            </p>
+                            <p className="text-xs text-amber-900 mt-0.5">
+                                {focusQuestion
+                                    ? "The question you selected from your Daily Review Queue is #1, followed by your remaining missed items."
+                                    : "Your most frequently missed items appear first, padded with fresh questions to complete your drill."}
+                            </p>
+                        </div>
+                    </div>
+                )}
+
+                {/* Unseen badge */}
+                {!isReviewMode && unseenCount > 0 && (
                     <div className="rounded-xl border border-brand-200 bg-gradient-to-br from-brand-50 to-brand-100/50 p-4 flex items-start gap-3">
                         <div className="flex-shrink-0 mt-0.5">
                             <svg className="w-5 h-5 text-brand-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -180,13 +227,19 @@ export default function QuizPage() {
                 <div className="rounded-2xl border border-brand-200 bg-brand-50 p-6 shadow-sm">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                         <div>
-                            <p className="text-base font-bold text-brand-900">Ready to practice?</p>
+                            <p className="text-base font-bold text-brand-900">
+                                {isReviewMode ? "Ready for your review drill?" : "Ready to practice?"}
+                            </p>
                             <p className="mt-1 text-sm text-brand-800 font-medium">
                                 {selectedCount} question{selectedCount === 1 ? "" : "s"} · ~{Math.ceil(selectedCount * 1.2)} min
                             </p>
                         </div>
-                        <Button size="lg" className="w-full sm:w-auto bg-brand-700 hover:bg-brand-800 text-white shadow-md shadow-brand-500/20" onClick={() => setHasStarted(true)}>
-                            Start practice →
+                        <Button
+                            size="lg"
+                            className="w-full sm:w-auto bg-brand-700 hover:bg-brand-800 text-white shadow-md shadow-brand-500/20"
+                            onClick={() => setHasStarted(true)}
+                        >
+                            {isReviewMode ? "Start review drill →" : "Start practice →"}
                         </Button>
                     </div>
                 </div>
@@ -196,10 +249,19 @@ export default function QuizPage() {
 }
 
 // The actual quiz-taking component
-function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: string }) {
+function QuizInProgress({
+    questions,
+    courseId,
+    isReviewMode,
+}: {
+    questions: any[]
+    courseId: string
+    isReviewMode: boolean
+}) {
     const navigate = useNavigate()
     const [answers, setAnswers] = useState<Record<string, string>>({})
     const [submitError, setSubmitError] = useState<string | null>(null)
+    const [quickRefOpen, setQuickRefOpen] = useState(false)
 
     const submitMutation = useMutation({
         mutationFn: submitQuiz,
@@ -255,23 +317,33 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
         <AppShell>
             <div className="max-w-4xl mx-auto pb-40">
                 {/* Sticky Progress Header */}
-                <div className="sticky top-[60px] lg:top-[72px] z-20 bg-white/95 backdrop-blur-md border border-gray-200 py-3 px-4 mb-8 -mx-4 sm:mx-0 sm:rounded-xl sm:shadow-sm flex items-center justify-between">
+                <div className="sticky top-[60px] lg:top-[72px] z-20 bg-white/95 backdrop-blur-md border border-gray-200 py-3 px-4 mb-8 -mx-4 sm:mx-0 sm:rounded-xl sm:shadow-sm flex items-center justify-between gap-3">
                     <div className="flex items-center gap-3">
-                        <Link to={`/courses`} className="text-gray-400 hover:text-gray-700 hidden sm:block">
+                        <Link to={isReviewMode ? "/dashboard" : "/courses"} className="text-gray-400 hover:text-gray-700 hidden sm:block">
                             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
                         </Link>
                         <div>
-                            <p className="text-[10px] font-bold text-brand-600 uppercase tracking-wider">Practice Exam</p>
+                            <p className="text-[10px] font-bold text-brand-600 uppercase tracking-wider">
+                                {isReviewMode ? "Missed-Question Review" : "Practice Exam"}
+                            </p>
                             <p className="text-sm font-bold text-gray-900">{answeredCount} of {totalQuestions} answered</p>
                         </div>
                     </div>
 
-                    {/* Progress Bar */}
-                    <div className="w-32 sm:w-48 h-2.5 bg-gray-100 rounded-full overflow-hidden">
-                        <div
-                            className="h-full bg-brand-500 transition-all duration-300"
-                            style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
-                        />
+                    <div className="flex items-center gap-3">
+                        <button
+                            type="button"
+                            onClick={() => setQuickRefOpen(true)}
+                            className="rounded-lg border border-brand-200 bg-brand-50 px-2.5 py-1.5 text-xs font-bold text-brand-800 hover:bg-brand-100 transition-colors"
+                        >
+                            Ghana Quick Ref
+                        </button>
+                        <div className="w-24 sm:w-44 h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                            <div
+                                className="h-full bg-brand-500 transition-all duration-300"
+                                style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -355,6 +427,8 @@ function QuizInProgress({ questions, courseId }: { questions: any[]; courseId: s
                     </div>
                 </div>
             </div>
+
+            <GhanaQuickRefDrawer open={quickRefOpen} onClose={() => setQuickRefOpen(false)} />
         </AppShell>
     )
 }
