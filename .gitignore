@@ -48,3 +48,4 @@ backend/question_imports/*.BACKUP.json
 /frontend/.env.*
 
 .vercel
+seed_batches/
