@@ -52,6 +52,8 @@ class Course(models.Model):
             ("MIDWIFERY", "Midwifery"),
             ("PSYCHIATRIC", "Psychiatric"),
             ("COMMUNITY", "Community Health"),
+            ("NAC", "Nurse Assistant Clinical (NAC)"),
+            ("NAP", "Nurse Assistant Preventive (NAP)"),
         ],
         default="GENERAL",
         db_index=True,

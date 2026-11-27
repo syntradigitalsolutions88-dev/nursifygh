@@ -57,7 +57,13 @@ export default function RegisterPage() {
     }, [searchParams])
 
     function set<K extends keyof typeof form>(key: K, value: (typeof form)[K]) {
-        setForm((f) => ({ ...f, [key]: value }))
+        setForm((f) => {
+            const updated = { ...f, [key]: value }
+            if (key === "program" && (value === "NAC" || value === "NAP") && f.level === "300") {
+                updated.level = "100"
+            }
+            return updated
+        })
     }
 
     async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -207,10 +213,12 @@ export default function RegisterPage() {
                                 disabled={submitting}
                                 className="block w-full h-11 rounded-lg border border-border bg-white px-3.5 text-sm text-on-surface focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:opacity-60"
                             >
-                                <option value="GENERAL">RGN (General)</option>
+                                <option value="GENERAL">RGN (General Nursing)</option>
                                 <option value="MIDWIFERY">RM (Midwifery)</option>
                                 <option value="PSYCHIATRIC">RPN (Psychiatric)</option>
-                                <option value="COMMUNITY">CHN (Community)</option>
+                                <option value="COMMUNITY">CHN (Community Health)</option>
+                                <option value="NAC">NAC (Nurse Assistant Clinical)</option>
+                                <option value="NAP">NAP (Nurse Assistant Preventive)</option>
                             </select>
                             {fieldError("program") && <p className="mt-1.5 text-sm text-danger-700">{fieldError("program")}</p>}
                         </div>
@@ -224,8 +232,13 @@ export default function RegisterPage() {
                             >
                                 <option value="100">Level 100</option>
                                 <option value="200">Level 200</option>
-                                <option value="300">Level 300</option>
+                                {form.program !== "NAC" && form.program !== "NAP" && (
+                                    <option value="300">Level 300</option>
+                                )}
                             </select>
+                            {(form.program === "NAC" || form.program === "NAP") && (
+                                <p className="mt-1 text-xs text-on-surface-muted">2-year N&amp;MC certificate (Level 100–200)</p>
+                            )}
                             {fieldError("level") && <p className="mt-1.5 text-sm text-danger-700">{fieldError("level")}</p>}
                         </div>
                     </div>

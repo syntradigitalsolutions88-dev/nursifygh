@@ -38,12 +38,17 @@ export default function QuizResultsPage() {
         )
     }
 
-    // 🔍 The Magic Rule: If it has 35+ questions, it was a Mock Exam
+    // If it has 35+ questions, it was a Mock Exam
     const isMockExam = attempt.total_questions >= 35
 
     const scoreNum = parseFloat(attempt.score_percentage)
     const pageTitle = isMockExam ? "Level Mock Exam Results" : attempt.course_title
     const pageSubtitle = isMockExam ? "Simulated Exam" : attempt.course_code
+
+    const missedAnswers = attempt.answers.filter((a) => !a.is_correct)
+    const missedCount = missedAnswers.length
+    const firstMissedQuestionId = missedAnswers[0]?.question?.id
+    const drillLimit = Math.max(missedCount, 5)
 
     return (
         <AppShell>
@@ -69,6 +74,13 @@ export default function QuizResultsPage() {
                                     {isMockExam ? "Back to Dashboard" : "Back to courses"}
                                 </Button>
                             </Link>
+                            {!isMockExam && missedCount > 0 && firstMissedQuestionId && (
+                                <Link to={`/quizzes/${attempt.course_id}?mode=review&focus_question=${firstMissedQuestionId}&limit=${drillLimit}`}>
+                                    <Button className="!bg-amber-400 !text-brand-950 hover:!bg-amber-300 whitespace-nowrap font-bold shadow-md">
+                                        Drill {missedCount} Missed Question{missedCount === 1 ? "" : "s"} →
+                                    </Button>
+                                </Link>
+                            )}
                             <Link to={isMockExam ? "/mock-exam" : `/quizzes/${attempt.course_id}`}>
                                 <Button className="!bg-white !text-gray-900 hover:!bg-gray-100 whitespace-nowrap font-semibold">
                                     {isMockExam ? "Take another Mock Exam" : "Try again"}
@@ -80,11 +92,21 @@ export default function QuizResultsPage() {
 
                 {/* Detailed Breakdown */}
                 <div className="space-y-6">
-                    <div className="flex items-center justify-between border-b pb-4">
-                        <h2 className="text-2xl font-serif font-bold text-gray-900">Review & Rationales</h2>
-                        <Badge variant={scoreNum >= 50 ? "success" : "danger"}>
-                            {scoreNum >= 50 ? "Passed" : "Needs Improvement"}
-                        </Badge>
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-b pb-4">
+                        <h2 className="text-2xl font-serif font-bold text-gray-900">Review &amp; Rationales</h2>
+                        <div className="flex items-center gap-3">
+                            {!isMockExam && missedCount > 0 && firstMissedQuestionId && (
+                                <Link
+                                    to={`/quizzes/${attempt.course_id}?mode=review&focus_question=${firstMissedQuestionId}&limit=${drillLimit}`}
+                                    className="text-xs font-bold text-brand-700 hover:underline"
+                                >
+                                    Practice {missedCount} missed →
+                                </Link>
+                            )}
+                            <Badge variant={scoreNum >= 50 ? "success" : "danger"}>
+                                {scoreNum >= 50 ? "Passed" : "Needs Improvement"}
+                            </Badge>
+                        </div>
                     </div>
 
                     {attempt.answers.map((answer, idx) => {

@@ -3,7 +3,7 @@
  */
 
 export type StudentLevel = 100 | 200 | 300
-export type NursingProgram = "GENERAL" | "MIDWIFERY" | "PSYCHIATRIC" | "COMMUNITY"
+export type NursingProgram = "GENERAL" | "MIDWIFERY" | "PSYCHIATRIC" | "COMMUNITY" | "NAC" | "NAP"
 
 export interface User {
     id: string

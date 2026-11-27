@@ -40,6 +40,10 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     def validate(self, attrs: dict) -> dict:
         if attrs["password"] != attrs.pop("password_confirm"):
             raise serializers.ValidationError({"password_confirm": "Passwords do not match."})
+        if attrs.get("program") in {"NAC", "NAP"} and attrs.get("level") not in {100, 200}:
+            raise serializers.ValidationError({
+                "level": "NAC and NAP are two-year certificate programs (Level 100 or Level 200)."
+            })
         return attrs
 
     def validate_referred_by(self, value):

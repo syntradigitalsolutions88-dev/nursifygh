@@ -30,6 +30,8 @@ function formatProgramLabel(program?: string, programDisplay?: string): string {
     if (program === "PSYCHIATRIC") return "Psychiatric Nursing (RPN)"
     if (program === "MIDWIFERY") return "Midwifery (RM)"
     if (program === "COMMUNITY") return "Community Health (CHN)"
+    if (program === "NAC") return "Nurse Assistant Clinical (NAC)"
+    if (program === "NAP") return "Nurse Assistant Preventive (NAP)"
     if (program === "GENERAL") return "General Nursing (RGN)"
     return "All Programs"
 }

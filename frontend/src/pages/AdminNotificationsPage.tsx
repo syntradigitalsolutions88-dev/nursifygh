@@ -223,6 +223,8 @@ export default function AdminNotificationsPage() {
                       <option value="MIDWIFERY">RM</option>
                       <option value="PSYCHIATRIC">RPN</option>
                       <option value="COMMUNITY">CHN</option>
+                      <option value="NAC">NAC</option>
+                      <option value="NAP">NAP</option>
                     </select>
                   </div>
                 </div>

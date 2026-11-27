@@ -25,6 +25,8 @@ function formatProgram(program: string) {
     if (program === 'PSYCHIATRIC') return 'Psychiatric Nursing (RPN)'
     if (program === 'MIDWIFERY') return 'Midwifery (RM)'
     if (program === 'COMMUNITY') return 'Community Health (CHN)'
+    if (program === 'NAC') return 'Nurse Assistant Clinical (NAC)'
+    if (program === 'NAP') return 'Nurse Assistant Preventive (NAP)'
     return 'General Nursing (RGN)'
 }
 

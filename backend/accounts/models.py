@@ -31,6 +31,8 @@ class NursingProgram(models.TextChoices):
     MIDWIFERY = "MIDWIFERY", _("Midwifery (RM)")
     PSYCHIATRIC = "PSYCHIATRIC", _("Psychiatric Nursing (RPN)")
     COMMUNITY = "COMMUNITY", _("Community Health Nursing (CHN)")
+    NAC = "NAC", _("Nurse Assistant Clinical (NAC)")
+    NAP = "NAP", _("Nurse Assistant Preventive (NAP)")
 
 
 GHANA_PHONE_REGEX = RegexValidator(

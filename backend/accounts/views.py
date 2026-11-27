@@ -110,7 +110,25 @@ PROGRAM_SKILLS = {
         ("Health Education", "Public Health", 10),
         ("Contact Tracing", "Public Health", 5),
         ("Family Planning Counseling", "Public Health", 5),
-    ]
+    ],
+    "NAC": [
+        ("Bed Making & Comfort Measures", "Basic Ward Care", 10),
+        ("Assisted Personal Hygiene", "Basic Ward Care", 10),
+        ("Simple Wound Dressing", "Clinical Assistance", 5),
+        ("Intake & Output Charting", "Clinical Assistance", 5),
+        ("Oxygen Therapy Monitoring", "Clinical Assistance", 5),
+        ("Specimen Collection (Urine/Stool/Sputum)", "Clinical Assistance", 5),
+        ("Pre & Post-Operative Assistance", "Clinical Assistance", 5),
+    ],
+    "NAP": [
+        ("Immunization & Cold Chain (EPI)", "Preventive & CHPS", 10),
+        ("Child Growth Monitoring (CWC)", "Preventive & CHPS", 10),
+        ("CHPS Home Visits", "Preventive & CHPS", 10),
+        ("Community Health Education", "Preventive & CHPS", 10),
+        ("ANC & Postnatal Counseling", "Reproductive & Child Health", 5),
+        ("Family Planning Counseling", "Reproductive & Child Health", 5),
+        ("Disease Surveillance & Contact Tracing", "Preventive & CHPS", 5),
+    ],
 }
 
 NCP_SYSTEM_PROMPT = """
