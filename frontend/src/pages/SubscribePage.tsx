@@ -69,7 +69,7 @@ const NETWORKS: Record<
 const INCLUDED_FEATURES = [
     {
         title: "6,000+ NMC Exam Questions",
-        detail: "Full question banks for RGN, RM, RPN, and CHN with clear clinical rationales.",
+        detail: "Full question banks for RGN, RM, RPN, CHN, NAC, and NAP with clear clinical rationales.",
         icon: (
             <svg className="h-5 w-5 text-brand-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

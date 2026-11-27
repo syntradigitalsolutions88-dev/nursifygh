@@ -27,7 +27,7 @@ export default function AboutPage() {
                     </p>
                     <p className="mt-3 text-body-sm text-on-surface-muted">
                         NursifyGH changes that. It mirrors the NMC-mandated diploma
-                        curriculum for RGN, RM, RPN, and CHN programs, with practice
+                        curriculum for RGN, RM, RPN, CHN, NAC, and NAP programs, with practice
                         questions modeled on the exact exams students sit for. Every
                         question includes a rationale explaining the answer — because
                         knowing "the answer is B" doesn't help you pass the next question.
