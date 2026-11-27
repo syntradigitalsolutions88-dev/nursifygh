@@ -130,9 +130,9 @@ export default function DashboardPage() {
                         const isTrial = !user.has_paid
 
                         return (
-                            <div className={`rounded-xl border-2 p-5 ${isUrgent
-                                ? "border-red-400 bg-gradient-to-r from-red-50 to-orange-50"
-                                : "border-amber-400 bg-gradient-to-r from-amber-50 to-orange-50"
+                            <div className={`rounded-xl border p-5 ${isUrgent
+                                ? "border-red-300 bg-red-50/70"
+                                : "border-amber-300 bg-amber-50/70"
                                 }`}>
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                     <div className="flex items-start gap-3">
@@ -145,20 +145,20 @@ export default function DashboardPage() {
                                         <div>
                                             <p className={`text-sm font-bold ${isUrgent ? "text-red-900" : "text-amber-900"}`}>
                                                 {isTrial
-                                                    ? `Your free trial ends in ${countdownText}!`
-                                                    : `Subscription active — ${countdownText} left`}
+                                                    ? `Your free trial ends in ${countdownText}`
+                                                    : `Semester Pass — ${countdownText} left`}
                                             </p>
                                             <p className={`text-xs mt-1 ${isUrgent ? "text-red-800" : "text-amber-800"}`}>
                                                 {isTrial ? (
-                                                    <>Subscribe now — we&apos;ll add <strong>120 days on top of your trial</strong>. Access until <strong>{expiry.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</strong>.</>
+                                                    <>Subscribe now and we&apos;ll add <strong>120 days on top of your trial</strong> until <strong>{expiry.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</strong>.</>
                                                 ) : (
-                                                    <>Your pass expires <strong>{expiry.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</strong>. Renew early to add another 120 days.</>
+                                                    <>Your pass expires <strong>{expiry.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</strong>. Renew early to add 120 days.</>
                                                 )}
                                             </p>
                                         </div>
                                     </div>
                                     <Link to="/subscribe" className="shrink-0">
-                                        <Button size="md" className={`!text-white shadow-md ${isUrgent
+                                        <Button size="md" className={`!text-white ${isUrgent
                                             ? "!bg-red-600 hover:!bg-red-700"
                                             : "!bg-amber-600 hover:!bg-amber-700"
                                             }`}>
@@ -174,12 +174,12 @@ export default function DashboardPage() {
 
                 {/* Subscription Banner — only when trial is fully expired */}
                 {!user.has_active_subscription && (
-                    <div className="rounded-xl border border-brand-200 bg-brand-50 p-5">
+                    <div className="rounded-xl border border-brand-200 bg-brand-50/70 p-5">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                             <div>
                                 <Badge variant="brand">Semester Pass</Badge>
-                                <h2 className="mt-2 text-h3 text-brand-900">Unlock everything for GHS 30</h2>
-                                <p className="mt-1 text-body-sm text-brand-800">120 days of access to all courses, quizzes, clinical cases, and care plan tools.</p>
+                                <h2 className="mt-2 text-h3 text-brand-950">Unlock all 6,000+ NMC questions for GHS 30</h2>
+                                <p className="mt-1 text-body-sm text-brand-800">120 full days of access to all courses, CBT mock exams, AI tutor, and care plan tools.</p>
                             </div>
                             <Link to="/subscribe" className="shrink-0">
                                 <Button size="lg">Subscribe now →</Button>

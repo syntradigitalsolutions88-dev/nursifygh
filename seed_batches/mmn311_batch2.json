@@ -1,0 +1,344 @@
+{
+  "questions": [
+    {
+      "text": "A 24-year-old man with known Sickle Cell Disease (HbSS) presents to the emergency unit in Berekum with severe pleuritic chest pain, fever of 38.9°C, productive cough, tachypnea (32 breaths/min), SpO2 of 86% on room air, and a new pulmonary infiltrate on chest radiograph. Which life-threatening complication is occurring?",
+      "rationale": "Acute Chest Syndrome (ACS) is characterized by fever, respiratory distress, chest pain, hypoxemia, and a new pulmonary infiltrate on chest X-ray in a patient with sickle cell disease, and is the leading cause of death in adult sickle cell patients.",
+      "choices": [
+        {"text": "Acute Chest Syndrome", "is_correct": true, "rationale": "ACS requires urgent supplemental oxygen, IV hydration, broad-spectrum antibiotics, analgesia, incentive spirometry, and simple or exchange blood transfusion."},
+        {"text": "Uncomplicated musculoskeletal vaso-occlusive crisis", "is_correct": false, "rationale": "Simple bone pain crisis lacks hypoxemia, tachypnea, and new pulmonary infiltrates."},
+        {"text": "Iron-deficiency anemia", "is_correct": false, "rationale": "Iron deficiency causes chronic microcytic anemia rather than acute febrile hypoxic lung infiltrates."},
+        {"text": "Aplastic crisis without pulmonary involvement", "is_correct": false, "rationale": "Aplastic crisis presents with profound reticulocytopenia and severe drop in hemoglobin without lung infiltrates."}
+      ]
+    },
+    {
+      "text": "When managing an adult patient admitted with an acute sickle cell vaso-occlusive pain crisis, which combination of nursing interventions is highest priority?",
+      "rationale": "Vaso-occlusion is driven by erythrocyte sickling, dehydration, hypoxia, and acidosis; aggressive intravenous/oral hydration, scheduled opioid analgesia, oxygen if hypoxic, and keeping the patient warm reverse sickling and relieve severe pain.",
+      "choices": [
+        {"text": "Administer vigorous IV/oral hydration, scheduled parenteral opioid analgesia, supplemental oxygen if hypoxic, and maintain warmth", "is_correct": true, "rationale": "Hydration lowers blood viscosity while timely analgesia controls severe ischemic bone pain."},
+        {"text": "Apply cold ice packs directly over painful joints and restrict fluids", "is_correct": false, "rationale": "Cold compresses and fluid restriction trigger vasoconstriction and worsen red blood cell sickling."},
+        {"text": "Administer routine oral iron supplements twice daily", "is_correct": false, "rationale": "Patients with sickle cell disease often have iron overload from transfusions, and iron does not treat vaso-occlusion."},
+        {"text": "Withhold analgesics until hemoglobin electrophoresis results return", "is_correct": false, "rationale": "Delaying analgesia in severe vaso-occlusive pain is unethical and increases sympathetic vasoconstriction."}
+      ]
+    },
+    {
+      "text": "A 38-year-old woman with Graves' disease who stopped taking carbimazole presents with temperature 40.4°C, heart rate 168 bpm (atrial fibrillation), extreme agitation, profuse diaphoresis, vomiting, and delirium after an acute urinary tract infection. Which endocrine emergency is present, and which medication must be avoided?",
+      "rationale": "Thyroid storm (thyrotoxic crisis) presents with hyperpyrexia, severe tachycardia, and CNS agitation/delirium; aspirin (salicylates) must be strictly avoided because it displaces thyroid hormone from thyroid-binding globulin and increases free T3/T4.",
+      "choices": [
+        {"text": "Thyroid storm; avoid aspirin (salicylates) because it displaces thyroid hormones from binding proteins and worsens thyrotoxicosis", "is_correct": true, "rationale": "Paracetamol and external cooling are used for fever alongside propranolol, propylthiouracil/methimazole, iodine (given 1 hour after antithyroid drug), and hydrocortisone."},
+        {"text": "Myxedema coma; avoid levothyroxine", "is_correct": false, "rationale": "Myxedema coma presents with hypothermia, bradycardia, and lethargy—the exact opposite of thyroid storm."},
+        {"text": "Addisonian crisis; avoid hydrocortisone", "is_correct": false, "rationale": "Addisonian crisis presents with hypotension, hyponatremia, and hyperkalemia rather than hyperpyrexia and 168 bpm tachycardia."},
+        {"text": "Diabetic ketoacidosis; avoid regular insulin", "is_correct": false, "rationale": "Hyperpyrexia of 40.4°C with extreme agitation in untreated Graves' disease indicates thyroid storm."}
+      ]
+    },
+    {
+      "text": "In the pharmacological sequence for treating Thyroid Storm, why must propylthiouracil (PTU) or methimazole be administered at least 1 hour BEFORE giving Lugol's iodine or potassium iodide?",
+      "rationale": "Thionamides (PTU/methimazole) block thyroid peroxidase-mediated organification; giving iodine first provides raw substrate for the hyperactive gland to synthesize and release even more thyroid hormone.",
+      "choices": [
+        {"text": "To block new thyroid hormone synthesis first so the iodine load is not used as fuel to produce more thyroid hormone", "is_correct": true, "rationale": "Blocking organification with PTU/methimazole before iodine administration allows iodine to safely inhibit hormone release (Wolff-Chaikoff effect)."},
+        {"text": "Because iodine neutralizes oral propranolol in the stomach", "is_correct": false, "rationale": "Iodine does not neutralize beta-blockers."},
+        {"text": "To prevent acute hypoglycemia caused by Lugol's solution", "is_correct": false, "rationale": "Lugol's iodine does not cause hypoglycemia."},
+        {"text": "Because PTU acts as an immediate antipyretic within 5 minutes", "is_correct": false, "rationale": "PTU blocks thyroid peroxidase, not hypothalamic thermoregulation."}
+      ]
+    },
+    {
+      "text": "A 62-year-old woman with long-standing untreated hypothyroidism is brought to the hospital in winter/harmattan season with stupor, core temperature 34.1°C, heart rate 44 bpm, respiratory rate 8 breaths/min, blood pressure 78/46 mmHg, and hyponatremia. What is the nurse's priority sequence of care?",
+      "rationale": "Myxedema coma is a life-threatening hypometabolic emergency; supporting airway and mechanical ventilation, passive rewarming with blankets (avoiding rapid active external heating that causes peripheral vasodilation shock), and administering IV hydrocortisone before IV levothyroxine are vital.",
+      "choices": [
+        {"text": "Support airway/ventilation, apply passive rewarming with blankets, and administer IV hydrocortisone followed by IV levothyroxine", "is_correct": true, "rationale": "Ventilatory support prevents hypercapnic arrest, passive rewarming prevents vasodilatory collapse, and hydrocortisone covers possible concurrent adrenal insufficiency."},
+        {"text": "Apply high-heat electric heating pads directly to the limbs to warm her rapidly within 15 minutes", "is_correct": false, "rationale": "Rapid active external warming causes sudden peripheral vasodilation and fatal hypotensive collapse."},
+        {"text": "Administer high-dose IV morphine for sedation and restrict airway suctioning", "is_correct": false, "rationale": "Sedatives/opioids are metabolized slowly in hypothyroidism and precipitate fatal respiratory arrest."},
+        {"text": "Give oral propranolol 80 mg to stabilize heart rate", "is_correct": false, "rationale": "Beta-blockers worsen severe bradycardia and hypotension in myxedema coma."}
+      ]
+    },
+    {
+      "text": "A 35-year-old woman with known Addison's disease (primary adrenal insufficiency) develops acute gastroenteritis, stops her oral prednisolone, and arrives in the emergency ward with BP 72/40 mmHg, pulse 132 bpm, severe abdominal pain, vomiting, serum sodium 124 mmol/L, potassium 6.3 mmol/L, and glucose 2.7 mmol/L. What is the immediate life-saving treatment?",
+      "rationale": "Adrenal (Addisonian) crisis requires immediate rapid intravenous 0.9% normal saline (with dextrose for hypoglycemia) and intravenous hydrocortisone 100 mg stat bolus.",
+      "choices": [
+        {"text": "Rapid IV 0.9% normal saline with dextrose infusion and intravenous hydrocortisone 100 mg stat", "is_correct": true, "rationale": "Fluid resuscitation restores intravascular volume while hydrocortisone replaces deficient cortisol and aldosterone activity."},
+        {"text": "Oral potassium supplements and IV furosemide", "is_correct": false, "rationale": "The patient already has life-threatening hyperkalemia (6.3 mmol/L) and severe hypovolemia."},
+        {"text": "Subcutaneous regular insulin 15 units stat", "is_correct": false, "rationale": "Insulin would worsen the patient's severe hypoglycemia (2.7 mmol/L)."},
+        {"text": "Fluid restriction to 500 mL/day for hyponatremia", "is_correct": false, "rationale": "Hyponatremia in Addisonian crisis is hypovolemic sodium wasting requiring aggressive isotonic saline, not fluid restriction."}
+      ]
+    },
+    {
+      "text": "A 21-year-old man with Type 1 Diabetes Mellitus is admitted with Diabetic Ketoacidosis (DKA): blood glucose 26.4 mmol/L, arterial pH 7.16, serum bicarbonate 10 mmol/L, positive ketones, and initial serum potassium 3.1 mmol/L. What is the nurse's critical priority before starting the continuous intravenous regular insulin infusion?",
+      "rationale": "Because insulin drives extracellular potassium into cells, starting IV insulin when serum potassium is <3.3 mmol/L can precipitate lethal hypokalemic cardiac arrhythmias; potassium must be replaced first until serum K+ is >=3.3 mmol/L.",
+      "choices": [
+        {"text": "Infuse IV fluids and replace potassium first until serum potassium is >=3.3 mmol/L before initiating the IV regular insulin infusion", "is_correct": true, "rationale": "Correcting hypokalemia (<3.3 mmol/L) prior to insulin prevents fatal ventricular arrhythmias and respiratory muscle paralysis."},
+        {"text": "Administer an immediate IV bolus of 30 units regular insulin before checking electrolytes", "is_correct": false, "rationale": "Giving insulin when serum K+ is 3.1 mmol/L drives potassium intracellularly and risks cardiac arrest."},
+        {"text": "Restrict all intravenous fluids until blood glucose drops below 10 mmol/L", "is_correct": false, "rationale": "Patients in DKA have a 4–6 liter fluid deficit requiring immediate isotonic saline resuscitation."},
+        {"text": "Switch immediately to long-acting subcutaneous insulin glargine alone", "is_correct": false, "rationale": "Acute DKA requires titratable continuous IV regular insulin until ketoacidosis resolves."}
+      ]
+    },
+    {
+      "text": "During treatment of Diabetic Ketoacidosis (DKA), the patient's blood glucose falls to 13.5 mmol/L, while the anion gap remains elevated and serum bicarbonate is still 13 mmol/L. Which adjustment in therapy is indicated?",
+      "rationale": "Glucose normalizes faster than ketosis clears; once blood glucose reaches ~11–14 mmol/L (200–250 mg/dL), 5% dextrose is added to the IV fluids while continuing the IV insulin infusion at a reduced rate until the anion gap closes and acidosis resolves.",
+      "choices": [
+        {"text": "Add 5% dextrose to the IV maintenance fluids and continue the IV insulin infusion until ketosis and acidosis resolve", "is_correct": true, "rationale": "Stopping insulin prematurely when glucose drops allows ketogenesis to rebound; dextrose prevents hypoglycemia while insulin clears ketones."},
+        {"text": "Stop the IV insulin infusion immediately and discharge the patient", "is_correct": false, "rationale": "Persistent acidosis (HCO3 13 mmol/L) means DKA has not resolved and halting insulin causes immediate relapse."},
+        {"text": "Administer oral glibenclamide and stop all IV fluids", "is_correct": false, "rationale": "Sulfonylureas do not treat Type 1 DKA."},
+        {"text": "Double the IV insulin rate without adding dextrose", "is_correct": false, "rationale": "Doubling insulin without dextrose when glucose is 13.5 mmol/L precipitates severe hypoglycemia and cerebral edema."}
+      ]
+    },
+    {
+      "text": "A 68-year-old man with Type 2 Diabetes Mellitus presents with severe dehydration, confusion, blood glucose of 44.2 mmol/L (795 mg/dL), serum osmolality of 348 mOsm/kg, arterial pH 7.36, and trace urinary ketones. Which diabetic emergency is present?",
+      "rationale": "Hyperosmolar Hyperglycemic State (HHS) occurs primarily in older adults with Type 2 diabetes and features extreme hyperglycemia (>33.3 mmol/L), severe hyperosmolality (>320 mOsm/kg), profound dehydration, and neurological obtundation WITHOUT significant ketoacidosis (pH >7.30).",
+      "choices": [
+        {"text": "Hyperosmolar Hyperglycemic State (HHS)", "is_correct": true, "rationale": "Residual endogenous insulin in Type 2 diabetes prevents lipolysis/ketogenesis, resulting in extreme hyperosmolar dehydration without severe acidosis."},
+        {"text": "Diabetic Ketoacidosis (DKA)", "is_correct": false, "rationale": "DKA presents with high-anion-gap metabolic acidosis (pH <7.30, HCO3 <18 mmol/L) and marked ketonemia."},
+        {"text": "Somogyi phenomenon", "is_correct": false, "rationale": "Somogyi phenomenon is rebound morning hyperglycemia following nocturnal hypoglycemia."},
+        {"text": "Acute insulinoma hypoglycemia", "is_correct": false, "rationale": "Insulinoma causes severe low blood glucose, not 44.2 mmol/L."}
+      ]
+    },
+    {
+      "text": "A 28-year-old man returning from a farming trip in northern Ghana presents with fever, chills, prostration, blood film showing Plasmodium falciparum parasitemia (8%), serum creatinine 310 µmol/L, hemoglobin 4.6 g/dL, and blood glucose 2.1 mmol/L. According to Ghana Standard Treatment Guidelines, what is the first-line antimalarial therapy?",
+      "rationale": "Parenteral Intravenous (or IM) Artesunate 2.4 mg/kg given at 0, 12, and 24 hours (then daily until able to tolerate a full 3-day oral ACT course) is the gold-standard treatment for severe falciparum malaria in Ghana, alongside immediate 10% dextrose for hypoglycemia.",
+      "choices": [
+        {"text": "Intravenous Artesunate (2.4 mg/kg at 0, 12, and 24 hours) plus immediate IV dextrose correction for hypoglycemia", "is_correct": true, "rationale": "IV artesunate clears ring-stage parasites rapidly and significantly lowers mortality compared to IV quinine, while hypoglycemia requires immediate correction."},
+        {"text": "Oral chloroquine tablets for 3 days", "is_correct": false, "rationale": "P. falciparum in Ghana is resistant to chloroquine, and severe malaria requires parenteral therapy."},
+        {"text": "Oral sulfadoxine-pyrimethamine single dose", "is_correct": false, "rationale": "SP is used only for antenatal intermittent preventive therapy (IPTp), never for acute severe malaria."},
+        {"text": "Oral artemether-lumefantrine alone without parenteral therapy or glucose correction", "is_correct": false, "rationale": "Severe malaria with organ dysfunction and hypoglycemia requires parenteral artesunate and immediate dextrose."}
+      ]
+    },
+    {
+      "text": "A 19-year-old university student is brought to the emergency ward with sudden high fever (39.6°C), severe headache, photophobia, nuchal rigidity (neck stiffness), petechial rash, and positive Kernig's and Brudzinski's signs. What is the nurse's priority sequence of care?",
+      "rationale": "In suspected acute bacterial meningitis, implementing droplet precautions, obtaining blood cultures, and administering empirical intravenous antibiotics (e.g., ceftriaxone + dexamethasone) immediately—without delaying treatment for lumbar puncture or CT imaging—prevents mortality and neurological sequelae.",
+      "choices": [
+        {"text": "Initiate droplet isolation precautions, obtain blood cultures, and administer prescribed empirical IV antibiotics immediately without delay", "is_correct": true, "rationale": "Every hour of delay in antibiotic administration increases mortality in acute bacterial meningitis."},
+        {"text": "Place the patient in a bright, noisy open ward without isolation and wait 12 hours for culture results before giving antibiotics", "is_correct": false, "rationale": "Neisseria meningitidis spreads via respiratory droplets and can be fatal within hours if untreated."},
+        {"text": "Encourage vigorous neck flexion exercises every hour to relieve stiffness", "is_correct": false, "rationale": "Meningeal irritation causes painful reflex spasm; forcing neck flexion is painful and harmful."},
+        {"text": "Administer oral paracetamol only and discharge for outpatient review", "is_correct": false, "rationale": "Bacterial meningitis is a life-threatening inpatient medical emergency."}
+      ]
+    },
+    {
+      "text": "A 34-year-old patient with advanced HIV infection (CD4 count 48 cells/µL) presents with a 2-week history of worsening subacute headache, nausea, low-grade fever, blurred vision, and elevated cerebrospinal fluid (CSF) opening pressure of 34 cm H2O with positive CSF cryptococcal antigen (CrAg). Which combination of interventions is essential?",
+      "rationale": "Cryptococcal meningitis requires induction antifungal therapy (amphotericin B + flucytosine or high-dose fluconazole per national protocol) AND serial therapeutic lumbar punctures to drain CSF and reduce dangerously elevated intracranial pressure.",
+      "choices": [
+        {"text": "Administer prescribed antifungal induction therapy (amphotericin B/fluconazole) and assist with serial therapeutic lumbar punctures to lower elevated intracranial pressure", "is_correct": true, "rationale": "Controlling intracranial hypertension via therapeutic CSF drainage is just as critical as antifungal therapy to prevent blindness and herniation."},
+        {"text": "Start high-dose oral corticosteroids alone without antifungals", "is_correct": false, "rationale": "Steroids without antifungals worsen fungal proliferation and mortality in cryptococcal meningitis."},
+        {"text": "Administer intravenous acyclovir for herpes simplex encephalitis only", "is_correct": false, "rationale": "Acyclovir is an antiviral and has zero activity against Cryptococcus neoformans."},
+        {"text": "Immediately initiate antiretroviral therapy (ART) on day 1 before starting antifungals", "is_correct": false, "rationale": "Starting ART before or within 2 weeks of cryptococcal meningitis treatment precipitates fatal Immune Reconstitution Inflammatory Syndrome (IRIS)."}
+      ]
+    },
+    {
+      "text": "A 31-year-old man newly diagnosed with HIV (CD4 count 92 cells/µL) presents with progressive exertional dyspnea, dry non-productive cough, low-grade fever, bilateral diffuse 'bat-wing' interstitial infiltrates on chest X-ray, and SpO2 dropping from 94% at rest to 83% on minimal walking. Which opportunistic infection and first-line drug are indicated?",
+      "rationale": "Pneumocystis jirovecii pneumonia (PCP) presents with subacute hypoxia, exertional desaturation, dry cough, and diffuse bilateral interstitial infiltrates in patients with CD4 <200 cells/µL; high-dose Trimethoprim-Sulfamethoxazole (Co-trimoxazole) plus adjunctive corticosteroids (if PaO2 <70 mmHg) is first-line.",
+      "choices": [
+        {"text": "Pneumocystis jirovecii pneumonia (PCP); treat with high-dose Trimethoprim-Sulfamethoxazole (Co-trimoxazole) and adjunctive prednisolone for hypoxemia", "is_correct": true, "rationale": "Co-trimoxazole is first-line for PCP, and adjunctive steroids prevent respiratory failure from inflammatory lung injury upon organism lysis."},
+        {"text": "Tuberculous pleural effusion; treat with oral metronidazole", "is_correct": false, "rationale": "Metronidazole treats anaerobic bacteria and protozoa, not TB or PCP."},
+        {"text": "Candidal esophagitis; treat with oral nystatin swish-and-swallow", "is_correct": false, "rationale": "Topical nystatin does not treat interstitial pneumonia."},
+        {"text": "Cerebral toxoplasmosis; treat with intravenous artesunate", "is_correct": false, "rationale": "Artesunate treats malaria, not PCP or toxoplasmosis."}
+      ]
+    },
+    {
+      "text": "A 27-year-old man in the second week of untreated typhoid fever suddenly develops severe generalized abdominal pain, board-like abdominal rigidity, absent bowel sounds, tachycardia of 136 bpm, and free air under the right hemidiaphragm on upright chest radiograph. What has occurred?",
+      "rationale": "Ulceration of Peyer's patches in the terminal ileum during week 2–3 of typhoid fever can cause intestinal perforation with pneumoperitoneum (free air under the diaphragm) and acute bacterial peritonitis requiring urgent surgical laparotomy, IV fluids, and broad-spectrum antibiotics.",
+      "choices": [
+        {"text": "Typhoid ileal perforation with acute generalized peritonitis", "is_correct": true, "rationale": "Free air under the diaphragm and a rigid silent abdomen in enteric fever confirm bowel perforation requiring emergency resuscitation and surgery."},
+        {"text": "Uncomplicated viral gastroenteritis", "is_correct": false, "rationale": "Viral gastroenteritis does not cause pneumoperitoneum or board-like peritonitis."},
+        {"text": "Mild constipation from bed rest", "is_correct": false, "rationale": "Constipation does not produce free intraperitoneal air under the diaphragm."},
+        {"text": "Cholelithiasis without inflammation", "is_correct": false, "rationale": "Uncomplicated gallstones do not cause bowel perforation."}
+      ]
+    },
+    {
+      "text": "A 45-year-old patient with Acute Myeloid Leukemia (AML) receives induction chemotherapy and 36 hours later develops hyperuricemia (uric acid 14.2 mg/dL), hyperkalemia (6.2 mmol/L), hyperphosphatemia (2.4 mmol/L), hypocalcemia (1.75 mmol/L), and rising serum creatinine. Which oncologic emergency has developed?",
+      "rationale": "Rapid destruction of malignant cells releases intracellular potassium, phosphate, and nucleic acids (metabolized to uric acid), causing Tumor Lysis Syndrome (TLS) with acute uric acid/calcium-phosphate nephropathy and arrhythmias.",
+      "choices": [
+        {"text": "Tumor Lysis Syndrome (TLS)", "is_correct": true, "rationale": "The metabolic triad of hyperuricemia, hyperkalemia, and hyperphosphatemia (with secondary hypocalcemia) after chemotherapy defines TLS."},
+        {"text": "Superior Vena Cava (SVC) syndrome", "is_correct": false, "rationale": "SVC syndrome presents with facial/neck plethora, jugular venous distension, and upper-extremity edema from mediastinal mass compression."},
+        {"text": "Syndrome of Inappropriate Antidiuretic Hormone (SIADH)", "is_correct": false, "rationale": "SIADH presents with euvolemic hyponatremia rather than hyperkalemia, hyperuricemia, and hyperphosphatemia."},
+        {"text": "Spinal cord compression", "is_correct": false, "rationale": "Spinal cord compression causes back pain, lower-limb weakness, and bowel/bladder dysfunction."}
+      ]
+    },
+    {
+      "text": "A 52-year-old woman receiving breast cancer chemotherapy presents to the emergency ward 9 days after treatment with an oral temperature of 38.4°C and an Absolute Neutrophil Count (ANC) of 320 cells/mm3, though she has no obvious cough, dysuria, or skin lesion. What is the nurse's immediate priority?",
+      "rationale": "Febrile neutropenia (temperature >=38.0°C for >1 hour or single >=38.3°C with ANC <500 cells/mm3) is an oncologic emergency; blood and urine cultures must be drawn immediately and broad-spectrum IV antipseudomonal antibiotics (e.g., cefepime or piperacillin-tazobactam) started within 60 minutes.",
+      "choices": [
+        {"text": "Obtain peripheral/central blood cultures immediately and administer prescribed broad-spectrum IV antibiotics within 1 hour under neutropenic precautions", "is_correct": true, "rationale": "Neutropenic patients cannot mount normal inflammatory pus/infiltrates and can progress to fatal septic shock within hours without rapid IV antibiotics."},
+        {"text": "Give oral paracetamol, send her home, and recheck her blood count in 1 week", "is_correct": false, "rationale": "Discharging a febrile neutropenic patient without IV antibiotics carries high mortality."},
+        {"text": "Check a rectal temperature every 2 hours and administer a rectal suppository", "is_correct": false, "rationale": "Rectal thermometers, enemas, and suppositories are strictly contraindicated in neutropenia because mucosal trauma introduces fatal enteric bacteremia."},
+        {"text": "Place fresh potted flowers and unwashed raw fruits in her room to boost morale", "is_correct": false, "rationale": "Standing flower water and unwashed raw produce harbor Pseudomonas and fungi dangerous to severely neutropenic patients."}
+      ]
+    },
+    {
+      "text": "A 49-year-old man with decompensated alcoholic liver cirrhosis is admitted with confusion, flapping tremor of outstretched hands (asterixis), slurred speech, fetor hepaticus, and sleep-wake reversal after an upper gastrointestinal bleed. Which medication is prescribed to trap ammonia in the gut and promote its excretion?",
+      "rationale": "Lactulose is a non-absorbable disaccharide broken down by colonic bacteria into lactic and acetic acids, acidifying the stool so diffusible ammonia (NH3) converts to non-absorbable ammonium (NH4+) and is expelled via 2–3 soft stools daily.",
+      "choices": [
+        {"text": "Lactulose (titrated to achieve 2 to 3 soft bowel movements daily)", "is_correct": true, "rationale": "Lactulose acidifies colonic contents to trap ammonium ions and accelerates fecal nitrogen excretion, resolving hepatic encephalopathy."},
+        {"text": "Intravenous morphine sulfate 10 mg every 4 hours", "is_correct": false, "rationale": "Opioids and sedatives are poorly cleared by a failing liver and precipitate deep hepatic coma."},
+        {"text": "Oral loperamide to stop all bowel movements", "is_correct": false, "rationale": "Constipation increases colonic ammonia absorption and worsens hepatic encephalopathy."},
+        {"text": "High-dose intravenous potassium chloride bolus", "is_correct": false, "rationale": "Rapid IV potassium bolus causes fatal cardiac arrest."}
+      ]
+    },
+    {
+      "text": "A 26-year-old woman presents with generalized anasarca (periorbital and lower-limb edema), frothy urine, 24-hour urine protein excretion of 5.2 g/day, serum albumin of 19 g/L, and hypercholesterolemia. Which renal syndrome is illustrated?",
+      "rationale": "Nephrotic syndrome is defined by heavy proteinuria (>3.5 g/day), hypoalbuminemia (<30 g/L), severe generalized edema, and hyperlipidemia due to glomerular basement membrane permeability.",
+      "choices": [
+        {"text": "Nephrotic syndrome", "is_correct": true, "rationale": "Massive urinary protein loss lowers plasma oncotic pressure, causing generalized edema and compensatory hepatic lipoprotein synthesis."},
+        {"text": "Acute pyelonephritis", "is_correct": false, "rationale": "Pyelonephritis presents with fever, flank pain, dysuria, and pyuria rather than 5.2 g/day proteinuria and anasarca."},
+        {"text": "Nephrolithiasis", "is_correct": false, "rationale": "Kidney stones cause colicky flank pain and hematuria without massive hypoalbuminemia."},
+        {"text": "Benign prostatic hyperplasia", "is_correct": false, "rationale": "BPH causes obstructive lower urinary tract symptoms in older men."}
+      ]
+    },
+    {
+      "text": "Patients with severe Nephrotic Syndrome are at significantly increased risk for renal vein thrombosis, deep vein thrombosis, and pulmonary embolism. What is the pathophysiological mechanism behind this hypercoagulable state?",
+      "rationale": "Glomerular protein leakage causes urinary loss of endogenous anticoagulant proteins—particularly Antithrombin III, Protein C, and Protein S—alongside increased hepatic synthesis of fibrinogen and procoagulant factors.",
+      "choices": [
+        {"text": "Urinary loss of natural anticoagulant proteins (such as Antithrombin III) combined with increased hepatic clotting factor synthesis", "is_correct": true, "rationale": "Depletion of Antithrombin III and hemoconcentration from edema create a potent prothrombotic state."},
+        {"text": "Excessive renal production of heparin", "is_correct": false, "rationale": "The kidneys do not produce excess heparin in nephrotic syndrome."},
+        {"text": "Severe thrombocytopenia below 10,000/mm3", "is_correct": false, "rationale": "Thrombocytosis—not severe thrombocytopenia—commonly accompanies nephrotic syndrome."},
+        {"text": "Chronic metabolic alkalosis from excessive bicarbonate retention", "is_correct": false, "rationale": "Bicarbonate retention does not explain nephrotic hypercoagulability."}
+      ]
+    },
+    {
+      "text": "A 29-year-old woman presents with a butterfly-shaped erythematous rash across the bridge of her nose and cheeks (malar rash), symmetrical arthralgia, oral ulcers, photosensitivity, proteinuria, and positive antinuclear antibodies (ANA) and anti-dsDNA antibodies. Which nursing teaching is essential for managing Systemic Lupus Erythematosus (SLE)?",
+      "rationale": "Ultraviolet light triggers keratinocyte apoptosis and severe cutaneous and systemic SLE flares; strict sun protection (broad-spectrum sunscreen SPF >=30, protective clothing, avoiding peak midday sun) and medication adherence (hydroxychloroquine) prevent flares and lupus nephritis progression.",
+      "choices": [
+        {"text": "Apply broad-spectrum sunscreen (SPF 30 or higher) daily, wear sun-protective clothing, avoid peak sunlight, and adhere strictly to prescribed hydroxychloroquine", "is_correct": true, "rationale": "Photoprotection prevents UV-induced autoimmune flares while hydroxychloroquine reduces organ damage and flare frequency."},
+        {"text": "Spend 2 hours daily in direct midday sun to boost vitamin D and cure the facial rash", "is_correct": false, "rationale": "Direct UV sunlight triggers severe SLE skin and systemic flares."},
+        {"text": "Stop all immunosuppressive drugs abruptly as soon as joint pain improves", "is_correct": false, "rationale": "Abrupt cessation of SLE therapy precipitates rebound lupus nephritis and vasculitis."},
+        {"text": "Ignore foamy urine or ankle swelling unless fever exceeds 40°C", "is_correct": false, "rationale": "Proteinuria and edema are early warning signs of lupus nephritis requiring prompt nephrology review."}
+      ]
+    },
+    {
+      "text": "Which clinical feature distinguishes Rheumatoid Arthritis (RA) from Osteoarthritis (OA) during nursing assessment?",
+      "rationale": "Rheumatoid arthritis is a systemic autoimmune synovitis causing symmetrical involvement of small joints (MCP, PIP, wrists—sparing DIPs), prolonged morning stiffness lasting >1 hour that improves with movement, and rheumatoid nodules, whereas OA causes asymmetric joint pain worsening with use and brief (<30 min) morning stiffness.",
+      "choices": [
+        {"text": "Symmetrical small-joint swelling with prolonged morning stiffness lasting more than 1 hour that improves with gentle activity", "is_correct": true, "rationale": "Inflammatory synovitis in RA causes prolonged gel-like morning stiffness (>60 minutes) and symmetrical joint inflammation."},
+        {"text": "Asymmetric weight-bearing knee pain that worsens at the end of the day and resolves with rest", "is_correct": false, "rationale": "Mechanical use-related pain relieved by rest characterizes osteoarthritis."},
+        {"text": "Isolated bony enlargement of the distal interphalangeal joints (Heberden's nodes) without systemic fatigue", "is_correct": false, "rationale": "Heberden's nodes at the DIP joints are classic for osteoarthritis; RA typically spares the DIP joints."},
+        {"text": "Acute monoarticular big-toe pain caused by monosodium urate crystals", "is_correct": false, "rationale": "Acute first metatarsophalangeal podagra describes gout."}
+      ]
+    },
+    {
+      "text": "A 54-year-old man wakes up with excruciating pain, erythema, warmth, and swelling in his right first metatarsophalangeal joint (podagra) after consuming red meat and beer. Arthrocentesis shows negatively birefringent needle-shaped monosodium urate crystals. Which medication is contraindicated to initiate DURING an acute gout flare?",
+      "rationale": "Initiating urate-lowering therapy (allopurinol or febuxostat) during an acute gout attack causes rapid shifts in serum uric acid that mobilize crystals and prolong/worsen the acute flare; NSAIDs, colchicine, or corticosteroids treat the acute inflammation first.",
+      "choices": [
+        {"text": "Initiating allopurinol for the first time during the acute flare", "is_correct": true, "rationale": "Acute flares are treated with NSAIDs (e.g., indomethacin/naproxen), colchicine, or prednisolone; allopurinol is started after the acute attack subsides (or continued without interruption if already established)."},
+        {"text": "Oral colchicine or NSAIDs", "is_correct": false, "rationale": "Colchicine and NSAIDs are first-line treatments for acute gouty inflammation."},
+        {"text": "Increasing oral water intake to >=2–3 liters daily", "is_correct": false, "rationale": "Hydration promotes renal uric acid excretion and helps prevent urate nephrolithiasis."},
+        {"text": "Elevating and resting the affected foot", "is_correct": false, "rationale": "Joint rest and elevation reduce local throbbing pain."}
+      ]
+    },
+    {
+      "text": "A 41-year-old man started on carbamazepine (or allopurinol/co-trimoxazole) 2 weeks ago develops fever, sore throat, painful oral and genital mucosal erosions, conjunctivitis, dusky erythematous macules that coalesce into flaccid blisters, and epidermal detachment over 25% of his body surface area with a positive Nikolsky sign. Which life-threatening reaction is occurring?",
+      "rationale": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis (SJS/TEN; >10–30% BSA detachment) is a severe drug-induced mucocutaneous necrolysis managed like a major thermal burn after immediate discontinuation of the offending drug.",
+      "choices": [
+        {"text": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis (SJS/TEN)", "is_correct": true, "rationale": "Immediate cessation of the culprit drug, burn-unit wound care, fluid/electrolyte replacement, ocular lubrication, and sepsis prevention are critical."},
+        {"text": "Mild contact dermatitis", "is_correct": false, "rationale": "Contact dermatitis does not cause hemorrhagic mucosal erosions, fever, and widespread epidermal sloughing."},
+        {"text": "Pityriasis rosea", "is_correct": false, "rationale": "Pityriasis rosea is a benign self-limiting rash without mucosal ulceration or epidermal detachment."},
+        {"text": "Tinea corporis", "is_correct": false, "rationale": "Tinea corporis is a superficial dermatophyte ringworm infection."}
+      ]
+    },
+    {
+      "text": "A 56-year-old woman presents with fatigue, pallor, glossitis (smooth beefy-red tongue), paresthesias (numbness and tingling in hands and feet), loss of vibration/proprioception sense, and macrocytic anemia (MCV 118 fL). Which deficiency explains both the megaloblastic anemia and the neurological deficits?",
+      "rationale": "Vitamin B12 (cobalamin) deficiency—such as in pernicious anemia—causes megaloblastic anemia AND subacute combined degeneration of the dorsal and lateral spinal columns (paresthesias, ataxia); folic acid deficiency causes megaloblastic anemia WITHOUT neurological deficits.",
+      "choices": [
+        {"text": "Vitamin B12 (cobalamin) deficiency", "is_correct": true, "rationale": "Vitamin B12 is required for myelin synthesis; treating B12 deficiency with folic acid alone corrects anemia while allowing irreversible spinal cord degeneration to progress."},
+        {"text": "Isolated folic acid deficiency", "is_correct": false, "rationale": "Folate deficiency causes macrocytic anemia and glossitis but never causes peripheral neuropathy or dorsal column demyelination."},
+        {"text": "Iron-deficiency anemia", "is_correct": false, "rationale": "Iron deficiency produces microcytic, hypochromic anemia (low MCV <80 fL), not macrocytic anemia."},
+        {"text": "Acute hemolytic anemia from G6PD deficiency", "is_correct": false, "rationale": "G6PD hemolysis causes acute jaundice and dark urine after oxidative stress rather than chronic macrocytic neuropathy."}
+      ]
+    },
+    {
+      "text": "A 42-year-old patient with severe Gram-negative urosepsis develops oozing of blood from venipuncture sites, petechiae, purpura, acrocyanosis, platelet count 32,000/mm3, prolonged PT and aPTT, markedly elevated D-dimer, and low fibrinogen (0.8 g/L). Which hematologic crisis has developed?",
+      "rationale": "Disseminated Intravascular Coagulation (DIC) involves widespread microvascular fibrin thrombosis consuming platelets and clotting factors, resulting in simultaneous thrombosis and severe hemorrhage with elevated D-dimer and low fibrinogen.",
+      "choices": [
+        {"text": "Disseminated Intravascular Coagulation (DIC)", "is_correct": true, "rationale": "Treating the underlying sepsis trigger immediately while supporting coagulation with platelets, fresh frozen plasma, and cryoprecipitate is essential."},
+        {"text": "Immune Thrombocytopenic Purpura (ITP)", "is_correct": false, "rationale": "ITP causes isolated thrombocytopenia with normal PT, aPTT, fibrinogen, and D-dimer."},
+        {"text": "Hemophilia A", "is_correct": false, "rationale": "Hemophilia A is an inherited Factor VIII deficiency with isolated prolonged aPTT and normal platelets/fibrinogen."},
+        {"text": "Polycythemia vera", "is_correct": false, "rationale": "Polycythemia vera involves elevated red blood cell mass rather than consumptive coagulopathy."}
+      ]
+    },
+    {
+      "text": "A 33-year-old man on treatment for pulmonary tuberculosis continues to have positive sputum AFB smears and GeneXpert MTB/RIF detects Mycobacterium tuberculosis with rifampicin resistance (RR-TB / MDR-TB). Which infection-control and management measure is required in Ghana?",
+      "rationale": "Multi-drug resistant TB (resistant to at least isoniazid and rifampicin) requires airborne isolation (negative-pressure/well-ventilated isolation room, N95/FFP2 respirators for staff, surgical mask on patient during transport) and enrollment on a standardized bedaquiline-based MDR-TB regimen under strict Directly Observed Therapy (DOT).",
+      "choices": [
+        {"text": "Implement strict airborne precautions (N95 respirators for staff, well-ventilated isolation) and transition to a specialized second-line MDR-TB regimen under DOT", "is_correct": true, "rationale": "Airborne precautions prevent nosocomial transmission of drug-resistant bacilli while second-line regimens achieve bacteriological cure."},
+        {"text": "Continue standard first-line rifampicin and isoniazid alone for another 6 months", "is_correct": false, "rationale": "Continuing drugs to which the bacillus is resistant fails clinically and amplifies further drug resistance."},
+        {"text": "Use standard surgical masks only for staff entering the patient's closed room", "is_correct": false, "rationale": "Standard surgical masks do not seal tightly or filter 1–5 micron airborne droplet nuclei; fit-tested N95/FFP2 respirators are required."},
+        {"text": "Discontinue all anti-TB medications for 3 months to let resistance fade", "is_correct": false, "rationale": "Stopping therapy allows unchecked cavitary lung destruction and community transmission."}
+      ]
+    },
+    {
+      "text": "A 47-year-old man who had been trapped under collapsed concrete for 8 hours is rescued and admitted with dark tea-colored urine, severe muscle swelling, serum creatine kinase (CK) of 48,000 U/L, potassium 6.1 mmol/L, and oliguria. Which complication is causing acute kidney injury?",
+      "rationale": "Crush injury releases massive amounts of myoglobin, potassium, and phosphate from damaged skeletal muscle (rhabdomyolysis); myoglobin precipitates in renal tubules and causes pigment-induced acute tubular necrosis, treated with aggressive isotonic IV saline diuresis and hyperkalemia management.",
+      "choices": [
+        {"text": "Rhabdomyolysis with myoglobin-induced acute tubular necrosis", "is_correct": true, "rationale": "Aggressive IV isotonic crystalloid resuscitation flushes myoglobin casts from renal tubules and prevents permanent kidney failure."},
+        {"text": "Acute streptococcal glomerulonephritis", "is_correct": false, "rationale": "Post-streptococcal GN follows pharyngitis/impetigo by 1–3 weeks, not acute crush trauma with CK 48,000 U/L."},
+        {"text": "Benign exercise-induced hematuria", "is_correct": false, "rationale": "CK 48,000 U/L and hyperkalemia indicate severe muscle necrosis, not benign hematuria."},
+        {"text": "Contrast-induced nephropathy", "is_correct": false, "rationale": "No radiocontrast dye was administered."}
+      ]
+    },
+    {
+      "text": "During an acute medical ward shift, a 60-year-old patient with End-Stage Renal Disease (ESRD) who missed two hemodialysis sessions has a serum potassium of 6.9 mmol/L and peaked tall T waves with widened QRS complexes on ECG. Which medication should the nurse prepare to administer FIRST to protect the heart immediately?",
+      "rationale": "When hyperkalemia produces ECG conduction abnormalities (peaked T waves, widened QRS), intravenous 10% Calcium Gluconate (10 mL over 2–5 minutes) is given first to antagonize cardiac membrane excitability within 1–3 minutes, followed by IV regular insulin + dextrose to shift potassium intracellularly.",
+      "choices": [
+        {"text": "Intravenous 10% Calcium Gluconate slow IV push", "is_correct": true, "rationale": "Calcium gluconate immediately stabilizes the myocardial cell membrane threshold against ventricular fibrillation while potassium-shifting/removing therapies take effect."},
+        {"text": "Oral sodium polystyrene sulfonate (Kayexalate) alone", "is_correct": false, "rationale": "Enteral potassium binders take hours to act and do not immediately protect against imminent cardiac arrest."},
+        {"text": "Intravenous potassium chloride 20 mmol", "is_correct": false, "rationale": "Giving potassium to a patient with K+ 6.9 mmol/L causes immediate fatal asystole."},
+        {"text": "Oral spironolactone 50 mg", "is_correct": false, "rationale": "Spironolactone is a potassium-sparing diuretic that worsens hyperkalemia."}
+      ]
+    },
+    {
+      "text": "A 36-year-old man presents with progressive ascending symmetrical weakness starting in his feet and legs over 4 days, absent deep tendon reflexes, mild paresthesias, and a history of Campylobacter jejuni gastroenteritis 2 weeks earlier. What is the nurse's highest priority ongoing assessment in Guillain-Barré Syndrome?",
+      "rationale": "Guillain-Barré Syndrome causes acute immune-mediated demyelination that can ascend rapidly to paralyze the diaphragm and intercostal muscles; frequent monitoring of respiratory rate, single-breath count, forced vital capacity (FVC), and bulbar swallowing/gag reflex is vital to anticipate intubation.",
+      "choices": [
+        {"text": "Serial respiratory function assessment (respiratory effort, single-breath count/vital capacity, SpO2) and swallowing/gag reflex to detect impending respiratory failure", "is_correct": true, "rationale": "Ascending paralysis of the phrenic nerve causes neuromuscular respiratory arrest before hypoxia appears on pulse oximetry."},
+        {"text": "Restricting all passive range-of-motion exercises for 4 weeks", "is_correct": false, "rationale": "Gentle passive ROM and DVT prophylaxis are essential to prevent contractures and thromboembolism."},
+        {"text": "Administering high-dose oral corticosteroids as primary curative therapy", "is_correct": false, "rationale": "Corticosteroids are ineffective in Guillain-Barré Syndrome; IV immunoglobulin (IVIG) or plasmapheresis is used."},
+        {"text": "Encouraging thin liquids rapidly even if the patient coughs during swallowing", "is_correct": false, "rationale": "Bulbar weakness causes silent aspiration; swallowing must be assessed before oral feeding."}
+      ]
+    },
+    {
+      "text": "A 28-year-old woman with Myasthenia Gravis is brought to the emergency department with severe generalized weakness, ptosis, dysphagia, weak cough, and shallow respirations. She has been taking high doses of pyridostigmine. How can the clinical team differentiate a 'Myasthenic Crisis' from a 'Cholinergic Crisis'?",
+      "rationale": "Myasthenic crisis (under-medication/infection causing severe acetylcholine receptor blockade) improves with an edrophonium/neostigmine test, whereas cholinergic crisis (anticholinesterase overdose causing excessive acetylcholine) presents with muscarinic SLUDGE signs (salivation, lacrimation, urination, diarrhea, GI cramps, emesis, miosis, bradycardia) and worsens with anticholinesterases; airway support comes first in both.",
+      "choices": [
+        {"text": "Secure airway/ventilation first, then assess for excessive muscarinic signs (profuse salivation, miosis, bradycardia, diarrhea) typical of cholinergic crisis versus improvement with a short-acting anticholinesterase test in myasthenic crisis", "is_correct": true, "rationale": "Supporting respiration is always step one, followed by distinguishing muscarinic excess (cholinergic) from receptor insufficiency (myasthenic)."},
+        {"text": "Administer triple the usual dose of pyridostigmine immediately without airway equipment", "is_correct": false, "rationale": "If the patient is in cholinergic crisis, extra pyridostigmine worsens depolarizing paralysis and bronchorrhea."},
+        {"text": "Administer intravenous magnesium sulfate 4 g", "is_correct": false, "rationale": "Magnesium blocks neuromuscular transmission and is strictly contraindicated in Myasthenia Gravis."},
+        {"text": "Administer intravenous gentamicin 240 mg stat", "is_correct": false, "rationale": "Aminoglycosides (gentamicin) impair neuromuscular junction acetylcholine release and precipitate severe myasthenic crisis."}
+      ]
+    },
+    {
+      "text": "A 50-year-old man with Type 2 Diabetes Mellitus is scheduled for an elective CT scan with intravenous iodinated contrast media. He takes metformin 1,000 mg twice daily. Which nursing and medical precaution prevents metformin-associated lactic acidosis?",
+      "rationale": "If iodinated contrast induces transient contrast-associated acute kidney injury, metformin accumulates and can trigger life-threatening lactic acidosis; metformin is held at the time of or prior to contrast administration and restarted 48 hours later after confirming normal renal function.",
+      "choices": [
+        {"text": "Hold metformin at the time of the contrast procedure, ensure adequate hydration, and recheck serum creatinine 48 hours later before restarting metformin", "is_correct": true, "rationale": "Verifying intact renal clearance 48 hours post-contrast prevents metformin accumulation and lactic acidosis."},
+        {"text": "Double the metformin dose on the morning of the CT scan", "is_correct": false, "rationale": "Doubling metformin before contrast markedly increases lactic acidosis risk."},
+        {"text": "Restrict all oral and IV fluids for 24 hours before the scan", "is_correct": false, "rationale": "Dehydration increases the risk of contrast-induced nephropathy."},
+        {"text": "Replace metformin permanently with sliding-scale potassium", "is_correct": false, "rationale": "Potassium is an electrolyte, not an antidiabetic medication."}
+      ]
+    },
+    {
+      "text": "A 44-year-old farmer in Ghana is bitten on the ankle by a saw-scaled viper (Echis ocellatus) 3 hours ago and arrives at the district hospital with progressive limb swelling, persistent bleeding from the fang marks and gums, and a 20-Minute Whole Blood Clotting Test (20WBCT) showing unclotted liquid blood at 20 minutes. What does the non-clotting 20WBCT confirm and what is the specific treatment?",
+      "rationale": "A positive 20-Minute Whole Blood Clotting Test (blood fails to clot after 20 minutes in a clean dry glass tube) confirms systemic venom-induced consumption coagulopathy, which is a primary indication for intravenous polyvalent Snake Antivenom (e.g., EchiTAb-Plus-ICP / polyvalent anti-snake venom) alongside tetanus prophylaxis.",
+      "choices": [
+        {"text": "Venom-induced consumption coagulopathy; administer intravenous polyvalent anti-snake venom (ASV) with anaphylaxis preparedness and tetanus prophylaxis", "is_correct": true, "rationale": "A non-clotting 20WBCT is the standard bedside diagnostic test in West Africa confirming systemic envenoming requiring antivenom."},
+        {"text": "Apply a tight arterial tourniquet above the knee and incise the fang marks with a razor blade", "is_correct": false, "rationale": "Tourniquets cause ischemic gangrene and cutting the wound causes severe hemorrhage in coagulopathic viper bites."},
+        {"text": "Reassure the patient that unclotted blood at 20 minutes is normal and discharge him", "is_correct": false, "rationale": "Unclotted blood at 20 minutes indicates severe systemic coagulopathy with risk of intracranial or gastrointestinal hemorrhage."},
+        {"text": "Administer high-dose aspirin and heparin to thin the blood", "is_correct": false, "rationale": "Antiplatelets and anticoagulants worsen fatal bleeding in viper envenoming."}
+      ]
+    },
+    {
+      "text": "A 39-year-old woman with primary hyperparathyroidism has a serum calcium level of 3.45 mmol/L (13.8 mg/dL), lethargy, constipation, polyuria, and shortened QT interval on ECG. What is the first-line initial emergency intervention for severe hypercalcemia?",
+      "rationale": "Aggressive intravenous hydration with 0.9% normal saline (200–300 mL/hour initially) restores intravascular volume and promotes renal calciuresis, followed by calcitonin and intravenous bisphosphonates (zoledronic acid).",
+      "choices": [
+        {"text": "Vigorous intravenous 0.9% normal saline hydration to restore volume and promote urinary calcium excretion", "is_correct": true, "rationale": "Hypercalcemia causes nephrogenic diabetes insipidus and dehydration; isotonic saline restores GFR and enhances renal sodium-linked calcium excretion."},
+        {"text": "Administer thiazide diuretics (hydrochlorothiazide) to increase calcium excretion", "is_correct": false, "rationale": "Thiazide diuretics enhance renal calcium reabsorption and worsen hypercalcemia."},
+        {"text": "Restrict all intravenous fluids and give oral calcium carbonate", "is_correct": false, "rationale": "Fluid restriction and calcium intake exacerbate severe hypercalcemic crisis."},
+        {"text": "Administer intravenous calcium gluconate", "is_correct": false, "rationale": "Calcium gluconate treats hypocalcemia and hyperkalemia, not hypercalcemia."}
+      ]
+    },
+    {
+      "text": "A 32-year-old woman undergoes total thyroidectomy for multinodular goiter. Six hours postoperatively, she complains of tingling around her mouth (circumoral paresthesia) and fingertips, and exhibits carpal spasm when the blood pressure cuff is inflated above systolic pressure for 3 minutes (Trousseau's sign). Which electrolyte disturbance has occurred?",
+      "rationale": "Inadvertent removal or ischemia of the parathyroid glands during thyroidectomy causes acute hypoparathyroidism and hypocalcemia, manifested by circumoral paresthesias, Chvostek's sign, Trousseau's sign, and risk of laryngospasm.",
+      "choices": [
+        {"text": "Acute hypocalcemia requiring intravenous calcium gluconate", "is_correct": true, "rationale": "Low ionized calcium increases neuronal membrane excitability, producing tetany, Trousseau's sign, and potentially fatal laryngospasm."},
+        {"text": "Hypernatremia", "is_correct": false, "rationale": "Hypernatremia causes thirst and neurological lethargy rather than Trousseau's carpal spasm."},
+        {"text": "Hypermagnesemia", "is_correct": false, "rationale": "Hypermagnesemia depresses neuromuscular reflexes rather than causing tetany."},
+        {"text": "Hyperkalemia", "is_correct": false, "rationale": "Hyperkalemia affects cardiac conduction rather than causing circumoral paresthesia and carpal spasm."}
+      ]
+    }
+  ]
+}

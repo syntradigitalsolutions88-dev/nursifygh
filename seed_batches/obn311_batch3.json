@@ -1,0 +1,344 @@
+{
+  "questions": [
+    {
+      "text": "A 33-year-old G4P3 woman at 37 weeks' gestation with dichorionic-diamniotic twin gestation delivers Twin A vaginally in vertex presentation. Five minutes later, abdominal palpation and bedside ultrasound reveal Twin B is in a transverse lie with fetal heart rate of 148 bpm and unruptured membranes. Which obstetric maneuver is indicated to enable vaginal delivery of Twin B?",
+      "rationale": "When Twin B lies transversely after delivery of Twin A with intact membranes and a reassuring FHR, External Cephalic Version (or internal podalic version with breech extraction by an experienced obstetrician) rotates Twin B into a longitudinal lie.",
+      "choices": [
+        {"text": "External cephalic version (or internal podalic version) to bring Twin B into a longitudinal lie before rupturing membranes", "is_correct": true, "rationale": "Converting a transverse second twin into a vertex or breech longitudinal lie allows safe vaginal delivery."},
+        {"text": "Immediate artificial rupture of Twin B's membranes while still in transverse lie", "is_correct": false, "rationale": "Rupturing membranes in a transverse lie causes cord prolapse and neglected shoulder presentation."},
+        {"text": "Administering intramuscular ergometrine 0.5 mg immediately after Twin A is born", "is_correct": false, "rationale": "Giving ergometrine before Twin B is delivered traps the second twin in a tetanic uterus."},
+        {"text": "Applying strong fundal pressure to push Twin B out sideways", "is_correct": false, "rationale": "A fetus cannot deliver vaginally in a transverse lie and fundal pressure risks uterine rupture."}
+      ]
+    },
+    {
+      "text": "A 29-year-old woman who delivered her third child 6 weeks ago presents with progressive dyspnea on exertion, orthopnea, paroxysmal nocturnal dyspnea, bilateral basal crackles, and +3 pitting edema, with no prior history of heart disease. Echocardiography shows left ventricular ejection fraction of 34%. Which condition should the nurse recognize?",
+      "rationale": "Peripartum cardiomyopathy (PPCM) is idiopathic left ventricular systolic heart failure (LVEF <45%) presenting toward the end of pregnancy or within the first 5 months postpartum in women without preexisting cardiac disease.",
+      "choices": [
+        {"text": "Peripartum cardiomyopathy", "is_correct": true, "rationale": "New-onset systolic heart failure in the last month of pregnancy or within 5 months postpartum defines peripartum cardiomyopathy."},
+        {"text": "Normal postpartum fluid mobilization", "is_correct": false, "rationale": "Physiological postpartum diuresis resolves within the first 1–2 weeks and never causes orthopnea or reduced LVEF."},
+        {"text": "Puerperal mastitis", "is_correct": false, "rationale": "Mastitis causes localized breast inflammation and fever rather than biventricular heart failure."},
+        {"text": "Physiological anemia of pregnancy", "is_correct": false, "rationale": "Physiological hemodilution resolves postpartum and does not depress left ventricular ejection fraction."}
+      ]
+    },
+    {
+      "text": "A primigravida at 42 weeks + 2 days' gestation presents for fetal surveillance. Ultrasound reveals an Amniotic Fluid Index (AFI) of 3.8 cm and a single deepest vertical pocket of 1.4 cm. Which intrapartum fetal heart rate deceleration pattern is most classically caused by umbilical cord compression in oligohydramnios?",
+      "rationale": "Oligohydramnios (AFI <5 cm) removes the protective fluid cushion around the umbilical cord, causing abrupt, V- or W-shaped variable decelerations due to intermittent cord compression.",
+      "choices": [
+        {"text": "Variable decelerations", "is_correct": true, "rationale": "Abrupt drops in FHR varying in onset and shape reflect mechanical umbilical cord compression from reduced amniotic fluid."},
+        {"text": "Early decelerations", "is_correct": false, "rationale": "Early decelerations are gradual, symmetrical drops mirroring contractions caused by fetal head compression."},
+        {"text": "Marked baseline accelerations", "is_correct": false, "rationale": "Accelerations are reassuring increases in FHR, not decelerations."},
+        {"text": "Sinusoidal tachycardia without decelerations", "is_correct": false, "rationale": "A sinusoidal pattern is associated with severe fetal anemia, not simple cord compression."}
+      ]
+    },
+    {
+      "text": "During labor of a woman with oligohydramnios and recurrent variable decelerations, the obstetrician orders amnioinfusion via an intrauterine pressure catheter (IUPC). What is the primary nursing assessment required while normal saline is infused into the uterine cavity?",
+      "rationale": "During amnioinfusion, the nurse must monitor uterine resting tone and verify that infused fluid drains freely from the vagina so overdistension and iatrogenic polyhydramnios/uterine rupture do not occur.",
+      "choices": [
+        {"text": "Monitor uterine resting tone and ensure fluid outflow matches inflow so the uterus does not become overdistended", "is_correct": true, "rationale": "Balanced outflow prevents excessive intrauterine pressure while cushioning the umbilical cord."},
+        {"text": "Clamp the vaginal introitus with gauze to retain 3 liters of saline inside the uterus", "is_correct": false, "rationale": "Obstructing outflow causes dangerous intrauterine hypertension and amniotic fluid embolism risk."},
+        {"text": "Infuse ice-cold sterile water rapidly over 5 minutes", "is_correct": false, "rationale": "Warm/room-temperature isotonic saline (0.9% NaCl or Ringer's lactate) is used—never cold hypotonic water."},
+        {"text": "Discontinue fetal heart rate monitoring during the infusion", "is_correct": false, "rationale": "Continuous FHR monitoring is essential to evaluate resolution of variable decelerations."}
+      ]
+    },
+    {
+      "text": "A 24-year-old woman who exclusively breastfeeds her 6-week-old infant asks about using the Lactational Amenorrhea Method (LAM) for family planning. Which three criteria must ALL be met for LAM to provide >98% contraceptive protection?",
+      "rationale": "LAM is effective only when: (1) the mother's menses have not returned (amenorrhea), (2) the infant is fully or nearly fully breastfed day and night without long intervals, and (3) the baby is less than 6 months old.",
+      "choices": [
+        {"text": "Exclusive/near-exclusive breastfeeding, persistent postpartum amenorrhea, and infant age under 6 months", "is_correct": true, "rationale": "Suckling suppresses GnRH and LH surges; once menses return, supplements start, or the baby reaches 6 months, backup contraception is needed."},
+        {"text": "Infant age under 12 months, mixed formula feeding, and irregular light spotting", "is_correct": false, "rationale": "Mixed feeding and return of bleeding allow ovulation to resume."},
+        {"text": "Exclusive breastfeeding for 2 hours daily with pacifier use at night", "is_correct": false, "rationale": "Long intervals between feeds (>4 hours daytime or >6 hours nighttime) lower prolactin and permit ovulation."},
+        {"text": "Normal menstrual cycles, infant age 9 months, and daytime breastfeeding only", "is_correct": false, "rationale": "Return of menses and age >6 months invalidate LAM reliability."}
+      ]
+    },
+    {
+      "text": "A breastfeeding mother at 4 weeks postpartum requests a hormonal contraceptive method at a Ghanaian family planning clinic. Which contraceptive option is safest to initiate at 4 weeks postpartum without reducing breast milk volume or increasing thromboembolism risk?",
+      "rationale": "Progestin-only methods (progestin-only pills, DMPA injectable, levonorgestrel implant, or copper/levonorgestrel IUD) do not suppress lactation or increase venous thromboembolism risk, whereas combined estrogen-progestin contraceptives are avoided early postpartum.",
+      "choices": [
+        {"text": "Progestin-only contraceptive (e.g., progestin-only pills, implant, or DMPA) or Copper IUD", "is_correct": true, "rationale": "Estrogen-free methods preserve milk production and avoid postpartum estrogen-induced VTE."},
+        {"text": "Combined oral contraceptive pills containing 35 mcg ethinyl estradiol", "is_correct": false, "rationale": "Estrogen-containing pills reduce breast milk supply and heighten VTE risk in the first 6 weeks postpartum."},
+        {"text": "Combined monthly estrogen-progestin injectable", "is_correct": false, "rationale": "Combined injectables contain estrogen and are contraindicated in early breastfeeding."},
+        {"text": "Transdermal estrogen contraceptive patch", "is_correct": false, "rationale": "Estrogen patches suppress lactation and increase clotting risk."}
+      ]
+    },
+    {
+      "text": "A 30-year-old woman at 38 weeks' gestation presents with severe itching (pruritus) on the palms of her hands and soles of her feet that worsens at night, without any primary skin rash. Laboratory tests reveal elevated total serum bile acids (62 µmol/L) and mildly elevated transaminases. Which condition is most likely?",
+      "rationale": "Intrahepatic Cholestasis of Pregnancy (ICP) presents in the late second or third trimester with intense palmar-plantar pruritus without rash and elevated serum bile acids, carrying an increased risk of sudden late-gestation stillbirth.",
+      "choices": [
+        {"text": "Intrahepatic Cholestasis of Pregnancy (ICP)", "is_correct": true, "rationale": "Elevated bile acids and nocturnal palmar-plantar pruritus without primary rash define ICP, treated with ursodeoxycholic acid and planned delivery around 37 weeks."},
+        {"text": "Pemphigoid gestationis", "is_correct": false, "rationale": "Pemphigoid gestationis presents with intensely pruritic urticarial plaques and tense blisters around the umbilicus."},
+        {"text": "Acute fatty liver of pregnancy", "is_correct": false, "rationale": "Acute fatty liver presents with vomiting, hypoglycemia, coagulopathy, and encephalopathy rather than isolated palmar pruritus."},
+        {"text": "Normal pregnancy stretch marks (striae gravidarum)", "is_correct": false, "rationale": "Striae cause mild abdominal skin stretching, not severe palmar-plantar pruritus with elevated bile acids."}
+      ]
+    },
+    {
+      "text": "During a Biophysical Profile (BPP) ultrasound assessment at 36 weeks' gestation, the sonographer evaluates fetal breathing movements, gross body movements, fetal tone, amniotic fluid volume, and a Non-Stress Test (NST). What is the maximum total BPP score and what does a score of 8/10 or 10/10 (with normal amniotic fluid) indicate?",
+      "rationale": "Each of the 5 BPP components is scored 0 or 2 points for a maximum of 10; a score of 8–10 with normal amniotic fluid volume is reassuring and indicates absence of acute fetal asphyxia.",
+      "choices": [
+        {"text": "Maximum score is 10; a score of 8–10 with normal amniotic fluid indicates reassuring fetal well-being", "is_correct": true, "rationale": "Normal biophysical activities confirm intact central nervous system oxygenation."},
+        {"text": "Maximum score is 10; a score of 10 requires immediate emergency cesarean section", "is_correct": false, "rationale": "A score of 10 is completely normal; scores <=4 indicate severe fetal compromise requiring urgent delivery."},
+        {"text": "Maximum score is 5; a score of 2 indicates normal fetal oxygenation", "is_correct": false, "rationale": "Each parameter scores 2 points (5 x 2 = 10 maximum)."},
+        {"text": "Maximum score is 15; oligohydramnios adds 5 bonus points", "is_correct": false, "rationale": "Oligohydramnios scores 0 points and warrants further evaluation even if total score is 8."}
+      ]
+    },
+    {
+      "text": "A 26-year-old woman at 35 weeks' gestation is involved in a motor vehicle collision and sustains blunt abdominal trauma. Even though she has no vaginal bleeding and normal initial vital signs, why must she be monitored continuously with cardiotocography (CTG) for at least 4 to 6 hours?",
+      "rationale": "Blunt maternal abdominal trauma causes shearing forces at the uteroplacental interface that can trigger concealed placental abruption or fetomaternal hemorrhage hours after impact.",
+      "choices": [
+        {"text": "To detect delayed or concealed placental abruption and fetal distress caused by uterine shearing forces", "is_correct": true, "rationale": "Concealed retroplacental bleeding may lack external vaginal blood loss initially while causing uterine irritability and late decelerations."},
+        {"text": "Because blunt trauma routinely causes immediate gestational diabetes", "is_correct": false, "rationale": "Trauma does not induce gestational diabetes."},
+        {"text": "To confirm whether the fetus has developed congenital anomalies from the collision", "is_correct": false, "rationale": "CTG monitors fetal heart rate and contractions, not structural anomalies."},
+        {"text": "Because maternal blood pressure always drops permanently after minor seat-belt pressure", "is_correct": false, "rationale": "Monitoring focuses on occult abruption and fetal oxygenation rather than permanent hypotension."}
+      ]
+    },
+    {
+      "text": "A Rh-negative pregnant woman experiences blunt abdominal trauma at 30 weeks' gestation. In addition to Anti-D immunoglobulin, which laboratory test quantifies the volume of fetal red blood cells that entered the maternal circulation so the exact Anti-D dose can be calculated?",
+      "rationale": "The Kleihauer-Betke acid elution test (or flow cytometry) measures fetal hemoglobin-containing erythrocytes in maternal blood to detect large fetomaternal hemorrhage requiring extra Anti-D doses.",
+      "choices": [
+        {"text": "Kleihauer-Betke test", "is_correct": true, "rationale": "One 300 mcg vial of Anti-D covers 30 mL of fetal whole blood; Kleihauer-Betke detects larger fetomaternal bleeds."},
+        {"text": "Oral glucose tolerance test", "is_correct": false, "rationale": "OGTT screens for gestational diabetes."},
+        {"text": "Fern test", "is_correct": false, "rationale": "The fern test detects crystallized amniotic fluid to confirm membrane rupture."},
+        {"text": "Nitrazine pH paper test", "is_correct": false, "rationale": "Nitrazine tests vaginal fluid alkalinity for ruptured membranes."}
+      ]
+    },
+    {
+      "text": "A pregnant woman at 36 weeks' gestation reports clear fluid leaking from her vagina. When a sample of posterior vaginal fornix fluid is placed on a glass slide and allowed to air-dry, the microscope reveals a delicate crystalline frond-like pattern. What does a positive 'ferning' test confirm?",
+      "rationale": "Estrogen and sodium chloride crystallization in amniotic fluid produces a characteristic arborization ('ferning') pattern on air-dried slides, confirming Rupture of Membranes (ROM).",
+      "choices": [
+        {"text": "Rupture of fetal membranes (presence of amniotic fluid)", "is_correct": true, "rationale": "Arborization/ferning combined with alkaline Nitrazine pH (7.0–7.5) confirms amniotic fluid leakage."},
+        {"text": "Bacterial vaginosis", "is_correct": false, "rationale": "Bacterial vaginosis shows clue cells on wet mount and a positive whiff test, not ferning."},
+        {"text": "Trichomonas vaginalis infection", "is_correct": false, "rationale": "Trichomoniasis shows motile flagellated protozoa."},
+        {"text": "Cervical incompetence without membrane rupture", "is_correct": false, "rationale": "Intact membranes do not leak amniotic fluid onto vaginal slides."}
+      ]
+    },
+    {
+      "text": "During a vaginal delivery, a woman sustains a perineal laceration that extends through the vaginal mucosa, perineal skin, perineal body muscles, and completely disrupts the external and internal anal sphincter muscles, while leaving the rectal mucosa intact. How is this tear classified?",
+      "rationale": "Perineal tear classification: 1st degree (skin/mucosa only), 2nd degree (perineal muscles), 3rd degree (anal sphincter complex—3a/3b/3c), and 4th degree (extends through the rectal mucosa into the anal/rectal lumen).",
+      "choices": [
+        {"text": "Third-degree perineal laceration", "is_correct": true, "rationale": "Involvement of the anal sphincter without breaching the rectal mucosa defines a third-degree tear requiring repair in theatre and post-op stool softeners."},
+        {"text": "First-degree perineal laceration", "is_correct": false, "rationale": "First-degree tears involve only superficial vaginal epithelium and perineal skin."},
+        {"text": "Second-degree perineal laceration", "is_correct": false, "rationale": "Second-degree tears involve perineal muscles but spare the anal sphincter."},
+        {"text": "Fourth-degree perineal laceration", "is_correct": false, "rationale": "Fourth-degree tears extend completely through the rectal mucosa."}
+      ]
+    },
+    {
+      "text": "Following surgical repair of a fourth-degree perineal laceration, which postoperative nursing intervention is essential to protect the suture line and prevent rectovaginal fistula?",
+      "rationale": "Administering prescribed stool softeners/osmotic laxatives, encouraging high-fiber diet and hydration, and strictly avoiding rectal thermometers, suppositories, or enemas prevent mechanical disruption of the rectal mucosal repair.",
+      "choices": [
+        {"text": "Administer prescribed stool softeners, encourage fluids/fiber, and strictly avoid rectal thermometers, suppositories, or enemas", "is_correct": true, "rationale": "Preventing constipation/straining and avoiding rectal instrumentation protect the anal sphincter and rectal mucosa repair."},
+        {"text": "Administer daily soapsuds enemas for 5 days to keep the rectum empty", "is_correct": false, "rationale": "Enema tips can perforate or disrupt fresh fourth-degree sutures."},
+        {"text": "Restrict oral fluids and fiber so the patient does not pass stool for 10 days", "is_correct": false, "rationale": "Hard impacted stool passed after 10 days will tear open the surgical repair."},
+        {"text": "Insert glycerin suppositories twice daily", "is_correct": false, "rationale": "All rectal insertions are contraindicated after 3rd/4th-degree perineal repairs."}
+      ]
+    },
+    {
+      "text": "A 22-year-old G1P0 woman at 14 weeks' gestation presents with painless cervical dilatation of 3 cm and bulging amniotic membranes into the vagina without uterine contractions, following two prior mid-trimester pregnancy losses. Which condition is most likely?",
+      "rationale": "Painless second-trimester cervical dilatation and membrane prolapse without labor contractions—especially with recurrent mid-trimester losses—defines cervical insufficiency (incompetent cervix), managed with cervical cerclage.",
+      "choices": [
+        {"text": "Cervical insufficiency (incompetent cervix)", "is_correct": true, "rationale": "Structural weakness of the cervix leads to painless mid-trimester dilatation and membrane bulging, typically treated with McDonald or Shirodkar cerclage."},
+        {"text": "Abruptio placentae", "is_correct": false, "rationale": "Abruptio placentae presents with painful bleeding and uterine hypertonicity."},
+        {"text": "Ectopic pregnancy", "is_correct": false, "rationale": "Ectopic pregnancy occurs outside the uterine cavity in the first trimester."},
+        {"text": "Hyperemesis gravidarum", "is_correct": false, "rationale": "Hyperemesis causes intractable vomiting rather than painless cervical dilatation."}
+      ]
+    },
+    {
+      "text": "When is a prophylactic cervical cerclage (McDonald suture) typically removed in an uncomplicated pregnancy?",
+      "rationale": "Elective removal of a cervical cerclage is performed at 36 to 37 weeks' gestation (or immediately if preterm labor, PPROM, or chorioamnionitis develops) to prevent cervical laceration during contractions.",
+      "choices": [
+        {"text": "At 36 to 37 weeks' gestation (or earlier if active labor or infection begins)", "is_correct": true, "rationale": "Removing the stitch at 36–37 weeks allows safe spontaneous vaginal delivery without cervical tearing."},
+        {"text": "At 20 weeks' gestation right after the anatomy ultrasound", "is_correct": false, "rationale": "Removing the cerclage at 20 weeks would expose the pregnancy to mid-trimester miscarriage/extreme prematurity."},
+        {"text": "Only after the baby's head crowns during vaginal birth", "is_correct": false, "rationale": "Leaving a cerclage in place during active labor causes severe cervical amputation/laceration."},
+        {"text": "At 6 weeks postpartum during the postnatal checkup", "is_correct": false, "rationale": "The suture must be removed before labor onset."}
+      ]
+    },
+    {
+      "text": "During an obstetric emergency drill, a student midwife asks why ergometrine (methylergonovine) is contraindicated in a woman with preeclampsia or chronic hypertension, even if she develops postpartum hemorrhage. What is the pharmacological reason?",
+      "rationale": "Ergot alkaloids stimulate alpha-adrenergic and serotonin receptors on vascular smooth muscle, causing generalized peripheral and cerebral vasoconstriction that can trigger hypertensive crisis, stroke, or eclampsia.",
+      "choices": [
+        {"text": "Ergometrine causes potent systemic vasoconstriction that can precipitate severe hypertensive crisis, intracerebral hemorrhage, or eclamptic seizures", "is_correct": true, "rationale": "In hypertensive women, oxytocin, misoprostol, or tranexamic acid are used instead of ergometrine."},
+        {"text": "Ergometrine relaxes the uterus and worsens uterine atony", "is_correct": false, "rationale": "Ergometrine causes strong sustained uterine contraction; its danger in preeclampsia is vascular hypertension."},
+        {"text": "Ergometrine causes severe maternal hypoglycemia", "is_correct": false, "rationale": "Ergometrine does not lower blood glucose."},
+        {"text": "Ergometrine blocks platelet aggregation and causes DIC", "is_correct": false, "rationale": "It causes vasoconstriction, not anticoagulation."}
+      ]
+    },
+    {
+      "text": "According to the WHO WOMAN trial and Ghana Health Service PPH protocol, within what timeframe after birth should intravenous Tranexamic Acid (TXA) 1 g be administered for postpartum hemorrhage?",
+      "rationale": "Tranexamic acid 1 g IV (over 10 minutes) reduces PPH bleeding mortality when given as soon as possible and within 3 hours of birth, alongside uterotonics and resuscitation.",
+      "choices": [
+        {"text": "As early as possible and within 3 hours of birth", "is_correct": true, "rationale": "TXA inhibits fibrinolysis and improves survival when administered within 3 hours of delivery; benefit disappears after 3 hours."},
+        {"text": "Only after 24 hours of continuous bleeding", "is_correct": false, "rationale": "Administering TXA >3 hours after birth provides no survival benefit."},
+        {"text": "Orally 2 weeks before the expected due date", "is_correct": false, "rationale": "TXA is given IV at the diagnosis of active PPH, not antenatally."},
+        {"text": "Intramuscularly into the newborn's thigh", "is_correct": false, "rationale": "TXA is an intravenous maternal antifibrinolytic therapy."}
+      ]
+    },
+    {
+      "text": "A 25-year-old woman in active labor at 8 cm dilatation receives intramuscular pethidine (meperidine) 100 mg for labor pain, and delivers unexpectedly 45 minutes later. At birth, the newborn is apneic with a heart rate of 90 bpm despite drying and stimulation. After establishing effective positive-pressure ventilation (PPV), which antidote may be required if neonatal respiratory depression persists due to recent maternal opioid administration?",
+      "rationale": "Opioids given within 1–4 hours before birth cross the placenta and depress the neonatal respiratory center; after airway and PPV stabilization, Naloxone (0.1 mg/kg IV/IM) reverses opioid-induced respiratory depression (except in infants of opioid-dependent mothers).",
+      "choices": [
+        {"text": "Naloxone (after initiating effective bag-and-mask ventilation)", "is_correct": true, "rationale": "Ventilation always comes first, followed by naloxone if opioid-induced respiratory depression persists."},
+        {"text": "Calcium gluconate 10%", "is_correct": false, "rationale": "Calcium gluconate reverses magnesium sulfate toxicity, not opioid sedation."},
+        {"text": "Vitamin K1 1 mg", "is_correct": false, "rationale": "Vitamin K prevents bleeding and does not reverse opioid receptors."},
+        {"text": "Flumazenil", "is_correct": false, "rationale": "Flumazenil is a benzodiazepine antagonist, not an opioid antagonist."}
+      ]
+    },
+    {
+      "text": "Which clinical sign on abdominal and vaginal examination differentiates a 'Face Presentation' from a 'Brow Presentation' during labor?",
+      "rationale": "In a face presentation, the fetal head is fully extended so the occiput touches the fetal back and the chin (mentum) is the denominator; in a brow presentation, the head is partially extended and the supraorbital ridges/anterior fontanelle are palpated.",
+      "choices": [
+        {"text": "In face presentation, the head is completely hyperextended with the chin (mentum) as the presenting denominator", "is_correct": true, "rationale": "Mentum anterior face presentations can deliver vaginally, whereas mentum posterior and persistent brow presentations require cesarean section."},
+        {"text": "In face presentation, the fetal head is tightly flexed with the posterior fontanelle central", "is_correct": false, "rationale": "Tight flexion with the posterior fontanelle central describes a normal vertex presentation."},
+        {"text": "In brow presentation, the fetal buttocks and sacrum are palpated at the pelvic inlet", "is_correct": false, "rationale": "Buttocks and sacrum define a breech presentation."},
+        {"text": "Face presentation can only occur after delivery of the placenta", "is_correct": false, "rationale": "Malpresentations occur during labor before delivery of the fetus."}
+      ]
+    },
+    {
+      "text": "A 34-year-old woman at 38 weeks' gestation presents with severe headache, blurred vision, BP 168/110 mmHg, and sudden generalized tonic-clonic convulsions on the antenatal ward. What is the nurse's immediate sequence of actions during the eclamptic fit?",
+      "rationale": "During an active eclamptic seizure, protecting the airway and preventing aspiration/trauma (left lateral recovery position, clearing airway secretions, oxygen, padded rails) while calling for help and administering MgSO4 loading dose takes immediate priority.",
+      "choices": [
+        {"text": "Turn the woman onto her left lateral side, protect her from injury, clear airway secretions, apply oxygen, call for help, and administer MgSO4 loading dose", "is_correct": true, "rationale": "Left lateral positioning prevents aspiration and aortocaval compression while MgSO4 terminates and prevents recurrent seizures."},
+        {"text": "Force a wooden tongue depressor or metal spoon tightly between her clenched teeth", "is_correct": false, "rationale": "Forcing objects into a seizing patient's mouth fractures teeth and causes severe airway trauma."},
+        {"text": "Restrain her limbs forcefully flat on her back until the convulsion stops", "is_correct": false, "rationale": "Supine restraint risks aspiration, vena caval compression, and musculoskeletal injury."},
+        {"text": "Transfer her immediately to the operating theatre for emergency cesarean section while still actively convulsing", "is_correct": false, "rationale": "Maternal airway, seizure control with MgSO4, and BP stabilization must be achieved BEFORE attempting delivery."}
+      ]
+    },
+    {
+      "text": "In the Pritchard regimen for eclampsia used widely in Ghanaian district hospitals, what is the standard loading dose of Magnesium Sulfate?",
+      "rationale": "The Pritchard loading regimen consists of 4 g MgSO4 (20% solution) slow IV over 5–15 minutes PLUS 10 g MgSO4 (50% solution) deep IM (5 g into each buttock with 1 mL of 2% lignocaine), followed by 5 g IM every 4 hours into alternate buttocks.",
+      "choices": [
+        {"text": "4 g slow IV over 5–15 minutes plus 10 g deep IM (5 g in each buttock), followed by 5 g IM every 4 hours", "is_correct": true, "rationale": "The combined IV + IM Pritchard loading dose achieves therapeutic serum magnesium levels immediately without requiring an infusion pump."},
+        {"text": "1 g oral tablet every 8 hours for 3 days", "is_correct": false, "rationale": "Oral magnesium is poorly absorbed and ineffective for eclampsia."},
+        {"text": "20 g rapid IV push over 30 seconds", "is_correct": false, "rationale": "Rapid IV push of high-dose magnesium causes immediate cardiac and respiratory arrest."},
+        {"text": "0.5 mg subcutaneous injection once daily", "is_correct": false, "rationale": "Subcutaneous micro-dosing has zero anticonvulsant effect."}
+      ]
+    },
+    {
+      "text": "Before administering each 4-hourly maintenance dose of Magnesium Sulfate (5 g IM), which three bedside clinical checks MUST the nurse verify as normal?",
+      "rationale": "Before every maintenance dose of MgSO4, the nurse must confirm: (1) patellar deep tendon reflexes are present, (2) respiratory rate is >=16 breaths/min (at least >12/min), and (3) urine output is >=30 mL/hour (or >=100 mL over the preceding 4 hours).",
+      "choices": [
+        {"text": "Presence of patellar reflexes, respiratory rate >=16 breaths/min, and urine output >=30 mL/hour", "is_correct": true, "rationale": "Since magnesium is excreted solely by the kidneys, oliguria leads to accumulation and loss of reflexes followed by respiratory arrest."},
+        {"text": "Fasting blood glucose, pupillary light reflex, and bowel sounds", "is_correct": false, "rationale": "These do not screen for hypermagnesemic neuromuscular toxicity."},
+        {"text": "Maternal temperature, hemoglobin level, and fundal height", "is_correct": false, "rationale": "These parameters do not assess magnesium clearance or toxicity."},
+        {"text": "White blood cell count, platelet count, and ankle edema", "is_correct": false, "rationale": "Lab counts do not substitute for bedside reflex, respiratory, and urine output checks prior to dosing."}
+      ]
+    },
+    {
+      "text": "A 29-year-old woman who delivered a healthy 3.4 kg baby 3 days ago calls the postnatal clinic crying intermittently, feeling overwhelmed, irritable, and anxious about caring for her newborn, though she is sleeping when the baby sleeps, eating well, and bonding affectionately with the infant. What is the nurse's best response?",
+      "rationale": "Mild tearfulness, mood lability, and emotional sensitivity peaking around days 3–5 postpartum without functional impairment or psychotic features represent 'postpartum blues' (baby blues), which resolves spontaneously within 2 weeks with reassurance and family support.",
+      "choices": [
+        {"text": "Reassure her that transient 'postpartum blues' is common around days 3–5 due to hormonal shifts, encourage rest and family support, and advise follow-up if symptoms persist beyond 2 weeks", "is_correct": true, "rationale": "Empathic normalization, practical support, and screening for persistence beyond 2 weeks distinguish self-limiting baby blues from postpartum depression."},
+        {"text": "Tell her she is developing severe postpartum psychosis and must be separated from her baby immediately", "is_correct": false, "rationale": "Normal bonding without delusions or hallucinations is not postpartum psychosis."},
+        {"text": "Instruct her to stop breastfeeding immediately so her hormones stabilize", "is_correct": false, "rationale": "Stopping breastfeeding disrupts oxytocin bonding and is unnecessary for postpartum blues."},
+        {"text": "Dismiss her feelings and tell her new mothers should never cry", "is_correct": false, "rationale": "Dismissing emotional distress prevents mothers from seeking help if symptoms worsen."}
+      ]
+    },
+    {
+      "text": "Which nursing intervention prevents nipple soreness and cracked nipples in a newly delivered mother initiating breastfeeding?",
+      "rationale": "Proper positioning and deep asymmetric latch—where the infant's mouth covers most of the lower areola with chin touching the breast and lips flanged outward—prevents friction trauma to the nipple tip.",
+      "choices": [
+        {"text": "Ensure the infant achieves a deep asymmetric latch covering a large portion of the areola rather than sucking only on the nipple tip", "is_correct": true, "rationale": "A deep latch places the nipple safely back near the soft palate and stimulates effective milk let-down."},
+        {"text": "Limit breastfeeding to 3 minutes per breast twice a day for the first week", "is_correct": false, "rationale": "Restricting feeding duration delays milk supply and causes painful engorgement."},
+        {"text": "Wash the nipples with harsh antiseptic soap and alcohol before every feed", "is_correct": false, "rationale": "Soap and alcohol strip protective natural Montgomery gland oils and cause cracking."},
+        {"text": "Pull the baby abruptly off the breast without breaking suction", "is_correct": false, "rationale": "Breaking suction gently by inserting a clean finger into the corner of the baby's mouth prevents nipple trauma."}
+      ]
+    },
+    {
+      "text": "A pregnant woman at 24 weeks' gestation asks why she is advised to sleep on her left side rather than flat on her back during the second half of pregnancy. Which physiological benefit should the nurse explain?",
+      "rationale": "Left lateral sleeping prevents compression of the inferior vena cava and aorta by the enlarged uterus, maximizing venous return, maternal cardiac output, and uteroplacental blood flow—which reduces stillbirth risk.",
+      "choices": [
+        {"text": "Sleeping on the left side prevents the heavy uterus from compressing major blood vessels, maximizing blood and oxygen flow to the placenta and baby", "is_correct": true, "rationale": "Avoiding supine aortocaval compression optimizes fetal oxygenation and maternal hemodynamic stability."},
+        {"text": "Sleeping on the back causes the umbilical cord to tie into true knots", "is_correct": false, "rationale": "Maternal sleeping position does not cause umbilical cord knots."},
+        {"text": "Sleeping on the right side causes immediate premature rupture of membranes", "is_correct": false, "rationale": "Either side (especially left) is safe; supine sleeping is what compresses the inferior vena cava."},
+        {"text": "Left-side sleeping prevents gestational diabetes", "is_correct": false, "rationale": "Sleeping position improves placental perfusion, not glucose metabolism."}
+      ]
+    },
+    {
+      "text": "During an antenatal clinic assessment, a woman at 30 weeks' gestation has a fundal height measuring 24 cm (6 cm smaller than gestational age). Which condition should be suspected and evaluated by ultrasound?",
+      "rationale": "A fundal height lagging >2–3 cm behind gestational age after 20 weeks suggests Intrauterine Growth Restriction (IUGR / Fetal Growth Restriction), oligohydramnios, transverse lie, or inaccurate dates.",
+      "choices": [
+        {"text": "Fetal Growth Restriction (IUGR) or oligohydramnios", "is_correct": true, "rationale": "Lagging symphysio-fundal height warrants ultrasound biometry, amniotic fluid assessment, and umbilical artery Doppler."},
+        {"text": "Undiagnosed twin gestation", "is_correct": false, "rationale": "Multiple gestation produces a fundal height larger than gestational dates, not smaller."},
+        {"text": "Polyhydramnios", "is_correct": false, "rationale": "Polyhydramnios causes an enlarged fundal height."},
+        {"text": "Fetal macrosomia", "is_correct": false, "rationale": "Macrosomia causes fundal height greater than expected for dates."}
+      ]
+    },
+    {
+      "text": "A 27-year-old woman at 39 weeks' gestation is admitted in active labor with HIV infection and a recent viral load of 18,000 copies/mL (unsuppressed viral load >1,000 copies/mL). Which delivery and intrapartum management plan best reduces mother-to-child HIV transmission?",
+      "rationale": "When maternal HIV viral load is >1,000 copies/mL near delivery, scheduled cesarean section before labor onset and before membrane rupture (or avoiding prolonged membrane rupture/invasive scalp electrodes if already in advanced labor) plus maternal IV zidovudine and infant dual/triple ARV prophylaxis minimizes perinatal transmission.",
+      "choices": [
+        {"text": "Avoid artificial rupture of membranes and invasive fetal scalp electrodes, maintain maternal ART/IV zidovudine per protocol, and administer infant ARV prophylaxis immediately after birth", "is_correct": true, "rationale": "Minimizing fetal exposure to maternal blood and cervicovaginal secretions with high viral load markedly lowers vertical HIV transmission."},
+        {"text": "Perform routine early amniotomy and apply a fetal scalp electrode at 3 cm dilatation", "is_correct": false, "rationale": "Early membrane rupture and fetal scalp trauma expose the fetus directly to maternal HIV virus."},
+        {"text": "Perform routine midline episiotomy for every HIV-positive woman", "is_correct": false, "rationale": "Routine episiotomy increases maternal blood exposure and vertical transmission risk."},
+        {"text": "Stop maternal antiretroviral tablets during labor", "is_correct": false, "rationale": "Maternal ART must continue uninterrupted throughout labor and postpartum."}
+      ]
+    },
+    {
+      "text": "Which clinical sign on vaginal examination during labor indicates 'Caput Succedaneum' rather than 'Cephalohematoma'?",
+      "rationale": "Caput succedaneum is edematous swelling of the fetal scalp soft tissues present at birth that crosses cranial suture lines and resolves within 24–48 hours, whereas cephalohematoma is a subperiosteal hemorrhage bounded by suture lines.",
+      "choices": [
+        {"text": "Soft edematous scalp swelling present at birth that crosses cranial suture lines", "is_correct": true, "rationale": "Because fluid lies above the periosteum in the subcutaneous scalp, caput succedaneum crosses suture lines freely."},
+        {"text": "Firm fluctuant blood collection appearing 24 hours after birth that never crosses suture lines", "is_correct": false, "rationale": "Subperiosteal bleeding confined strictly within one cranial bone's suture boundaries defines cephalohematoma."},
+        {"text": "Palpation of the fetal sacrum and external genitalia", "is_correct": false, "rationale": "Sacrum and genitalia are landmarks of breech presentation."},
+        {"text": "Prolapse of a pulsating loop of cord ahead of the head", "is_correct": false, "rationale": "That describes umbilical cord prolapse."}
+      ]
+    },
+    {
+      "text": "A 31-year-old G3P2 woman at 28 weeks' gestation presents with painless bright red vaginal bleeding and ultrasound confirms marginal placenta previa. Her hemoglobin is 9.6 g/dL, vital signs are stable, and bleeding stops completely. Which medication is indicated at 28 weeks to prepare for possible preterm delivery?",
+      "rationale": "Pregnant women between 24 and 34 weeks at risk for preterm birth (such as symptomatic placenta previa) should receive a course of antenatal corticosteroids (betamethasone 12 mg IM q24h x 2 doses or dexamethasone 6 mg IM q12h x 4 doses) to accelerate fetal lung maturity.",
+      "choices": [
+        {"text": "Antenatal corticosteroids (betamethasone or dexamethasone) for fetal lung maturation", "is_correct": true, "rationale": "Antenatal steroids reduce neonatal RDS if recurrent hemorrhage necessitates early cesarean delivery."},
+        {"text": "Intravenous oxytocin infusion", "is_correct": false, "rationale": "Oxytocin stimulates labor contractions and would trigger severe hemorrhage in placenta previa."},
+        {"text": "Oral misoprostol 400 mcg", "is_correct": false, "rationale": "Misoprostol induces uterine contractions and cervical ripening."},
+        {"text": "Intramuscular ergometrine 0.5 mg", "is_correct": false, "rationale": "Ergometrine is contraindicated during pregnancy."}
+      ]
+    },
+    {
+      "text": "During immediate newborn care, a nurse places a baby under a radiant warmer after resuscitation. Where should the skin temperature servo-control probe be attached on the newborn's body?",
+      "rationale": "The servo-control skin probe should be taped flat onto the newborn's abdomen (over the liver area in the right upper quadrant), away from bony prominences and brown fat pads, to accurately regulate warmer output and prevent overheating or underheating.",
+      "choices": [
+        {"text": "Flat on the skin of the upper abdomen (over the liver area), away from bony prominences", "is_correct": true, "rationale": "The upper abdomen reflects core thermal changes accurately without insulating brown fat distortion."},
+        {"text": "Underneath the baby's back between the mattress and the skin", "is_correct": false, "rationale": "Trapping the probe under the baby falsely elevates readings and causes the warmer to shut off prematurely."},
+        {"text": "On the sole of the baby's cold foot", "is_correct": false, "rationale": "Peripheral vasoconstriction cools extremities first, causing the radiant warmer to overheat the infant dangerously."},
+        {"text": "Over the anterior fontanelle on top of the head", "is_correct": false, "rationale": "The head is closest to the heating element and gives falsely high surface readings."}
+      ]
+    },
+    {
+      "text": "A 24-year-old woman who delivered vaginally 12 hours ago has a temperature of 37.8°C, firm midline fundus at the umbilicus, moderate lochia rubra, and white blood cell count of 18,500/mm3 without uterine tenderness, dysuria, or respiratory symptoms. How should the nurse interpret these findings?",
+      "rationale": "A mild transient temperature elevation up to 38.0°C during the first 24 hours postpartum (due to dehydration/exertion) and physiological leukocytosis (up to 20,000–25,000/mm3) without localizing infection signs are normal early puerperal adaptations; encouraging oral hydration and rechecking temperature is appropriate.",
+      "choices": [
+        {"text": "Normal early postpartum physiological response (mild dehydration and physiological leukocytosis); encourage oral hydration and continue routine vital sign monitoring", "is_correct": true, "rationale": "Transient low-grade temperature (<38°C) in the first 24 hours and benign postpartum leukocytosis resolve with hydration."},
+        {"text": "Severe septic shock requiring immediate emergency hysterectomy", "is_correct": false, "rationale": "Absence of fever >=38°C, uterine tenderness, foul lochia, or hypotension rules out septic shock."},
+        {"text": "Acute pulmonary embolism", "is_correct": false, "rationale": "There is no dyspnea, chest pain, or hypoxemia."},
+        {"text": "Puerperal mastitis", "is_correct": false, "rationale": "Mastitis typically occurs after day 7–10 with localized breast erythema and pain."}
+      ]
+    },
+    {
+      "text": "Which nursing instruction is most important when counseling a pregnant woman prescribed oral iron (ferrous sulfate) during antenatal care?",
+      "rationale": "Oral iron is absorbed best on an empty stomach (1 hour before or 2 hours after meals) with vitamin C (orange/citrus juice), separated by at least 2 hours from antacids, calcium, milk, or tea/coffee which block absorption, and commonly turns stools harmlessly dark green/black.",
+      "choices": [
+        {"text": "Take iron with vitamin C (citrus juice), avoid taking it at the same time as tea, coffee, milk, or antacids, and expect harmless dark-colored stools", "is_correct": true, "rationale": "Vitamin C enhances ferrous iron absorption while calcium/tannins block it; warning about dark stools prevents unnecessary alarm."},
+        {"text": "Take iron together with calcium tablets and hot black tea for maximum absorption", "is_correct": false, "rationale": "Calcium and tea tannins bind iron in the gut and prevent absorption."},
+        {"text": "Stop taking the tablets immediately if the stools turn dark greenish-black", "is_correct": false, "rationale": "Dark stools are a normal, expected effect of unabsorbed oral iron, not gastrointestinal bleeding."},
+        {"text": "Double the dose whenever a tablet is missed", "is_correct": false, "rationale": "Doubling iron doses worsens nausea, epigastric pain, and constipation."}
+      ]
+    },
+    {
+      "text": "A 29-year-old woman at 36 weeks' gestation presents with painless, profuse vaginal bleeding immediately following artificial rupture of membranes (amniotomy), accompanied by sudden severe fetal sinusoidal/bradycardic heart rate tracing while maternal blood pressure and pulse remain completely normal. Which rare obstetric emergency has occurred?",
+      "rationale": "Vasa previa occurs when unprotected fetal blood vessels traverse the fetal membranes over the internal cervical os; membrane rupture tears these fetal vessels, causing acute fetal exsanguination without maternal shock.",
+      "choices": [
+        {"text": "Vasa previa with ruptured fetal vessels", "is_correct": true, "rationale": "Bleeding in vasa previa is fetal blood—causing rapid fetal bradycardia/exsanguination despite stable maternal vital signs—and requires immediate emergency cesarean delivery."},
+        {"text": "Uterine atony", "is_correct": false, "rationale": "Uterine atony occurs after birth in the third/fourth stage and causes maternal hypovolemia."},
+        {"text": "Abruptio placentae with maternal DIC", "is_correct": false, "rationale": "Abruptio placentae presents with painful rigid uterus and maternal hemodynamic instability."},
+        {"text": "Normal bloody show", "is_correct": false, "rationale": "Bloody show is scant mucoid blood without profuse bleeding or acute fetal bradycardia."}
+      ]
+    },
+    {
+      "text": "What is the primary goal of Respectful Maternity Care (RMC) promoted by the World Health Organization and Ghana Health Service in labor and delivery wards?",
+      "rationale": "Respectful Maternity Care upholds every woman's fundamental human rights to dignity, privacy, confidentiality, freedom from verbal/physical abuse, informed choice, and continuous support during childbirth.",
+      "choices": [
+        {"text": "To ensure dignified, non-abusive, compassionate, and woman-centered care with informed consent and continuous companionship throughout childbirth", "is_correct": true, "rationale": "RMC eliminates mistreatment in facilities, encourages skilled birth attendance, and improves maternal and neonatal outcomes."},
+        {"text": "To allow laboring women to refuse all fetal heart rate monitoring and emergency life-saving care without counseling", "is_correct": false, "rationale": "RMC pairs clinical safety and thorough counseling with respect for informed choice."},
+        {"text": "To prohibit family birth companions from entering maternity wards", "is_correct": false, "rationale": "Supporting a woman's choice of birth companion is a core pillar of RMC."},
+        {"text": "To restrict pain relief options exclusively to private hospitals", "is_correct": false, "rationale": "Equitable access to comfort and pain management is a universal RMC standard."}
+      ]
+    }
+  ]
+}

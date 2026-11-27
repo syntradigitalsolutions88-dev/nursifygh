@@ -137,10 +137,10 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
                 <div className="px-3 pb-3">
                     {user.has_active_subscription ? (
-                        <div className="rounded-lg border border-border bg-white p-3">
+                        <div className="rounded-xl border border-border bg-white p-3">
                             <div className="flex items-center gap-2">
-                                <span className="h-1.5 w-1.5 rounded-full bg-success-500" />
-                                <p className="text-xs font-medium text-on-surface">Subscribed</p>
+                                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                                <p className="text-xs font-semibold text-on-surface">Semester Pass</p>
                             </div>
                             <p className="mt-1 text-xs text-on-surface-muted">
                                 {user.subscription_expires_at
@@ -149,10 +149,10 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             </p>
                         </div>
                     ) : (
-                        <Link to="/subscribe" className="block rounded-lg border border-brand-200 bg-brand-50 p-3 hover:bg-brand-100 transition-colors">
-                            <p className="text-xs font-semibold text-brand-800">Unlock everything</p>
-                            <p className="mt-1 text-xs text-brand-700">GHS 30 / semester</p>
-                            <p className="mt-2 text-xs font-medium text-brand-600">Subscribe →</p>
+                        <Link to="/subscribe" className="block rounded-xl border border-brand-200 bg-brand-50 p-3 hover:bg-brand-100/80 transition-colors">
+                            <p className="text-xs font-bold text-brand-900">Semester Pass</p>
+                            <p className="mt-0.5 text-xs text-brand-700">GHS 30 · 120 days</p>
+                            <p className="mt-2 text-xs font-semibold text-brand-700">Subscribe →</p>
                         </Link>
                     )}
                 </div>
