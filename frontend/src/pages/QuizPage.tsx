@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom"
-import { useQuery, useMutation } from "@tanstack/react-query"
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 
 import { getSmartQuizQuestions, submitQuiz } from "../api/courses"
 import { useAuth } from "../contexts/AuthContext"
@@ -259,13 +259,20 @@ function QuizInProgress({
     isReviewMode: boolean
 }) {
     const navigate = useNavigate()
+    const queryClient = useQueryClient()
     const [answers, setAnswers] = useState<Record<string, string>>({})
     const [submitError, setSubmitError] = useState<string | null>(null)
     const [quickRefOpen, setQuickRefOpen] = useState(false)
 
     const submitMutation = useMutation({
         mutationFn: submitQuiz,
-        onSuccess: (result) => {
+        onSuccess: async (result) => {
+            await Promise.all([
+                queryClient.invalidateQueries({ queryKey: ["daily-review-queue"] }),
+                queryClient.invalidateQueries({ queryKey: ["weak-areas"] }),
+                queryClient.invalidateQueries({ queryKey: ["quiz-history"] }),
+                queryClient.invalidateQueries({ queryKey: ["quiz-questions", courseId] }),
+            ])
             navigate(`/quizzes/results/${result.id}`)
         },
         onError: (err: any) => {
