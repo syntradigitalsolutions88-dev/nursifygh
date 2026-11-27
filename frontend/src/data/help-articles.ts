@@ -86,13 +86,13 @@ If you have any trouble, [contact support](/contact).`,
     {
         slug: "which-program",
         title: "Which nursing program should I choose?",
-        summary: "RGN, RM, RPN, or CHN — here is how to pick the right one.",
+        summary: "RGN, RM, RPN, CHN, NAC, or NAP — here is how to pick the right one.",
         category: "getting-started",
         content: `# Which nursing program should I choose?
 
 Your **program** determines which courses you see on NursifyGH. Choose the one that matches your current enrollment at your nursing college.
 
-## The four programs
+## The six programs
 
 ### General Nursing (RGN)
 The most common track. Leads to registration as a **Registered General Nurse**. You'll study medicine, surgery, maternal health, community health, and mental health across 3 years.
@@ -105,6 +105,12 @@ Focused on **mental health nursing**. Leads to registration as a **Registered Ps
 
 ### Community Health Nursing (CHN)
 Focused on **community and public health**. Leads to registration as a **Registered Community Nurse**. You'll take PHN-322 and CBR-322 with extra emphasis on community diagnosis.
+
+### Nurse Assistant Clinical (NAC)
+Focused on foundational bedside and clinical support across **Levels 100 and 200**. Leads to N&MC licensing as a **Nurse Assistant Clinical**, covering basic nursing care, vital signs, infection prevention, maternal/child support, and medical-surgical assistance.
+
+### Nurse Assistant Preventive (NAP)
+Focused on community outreach, disease prevention, and primary health promotion across **Levels 100 and 200**. Leads to N&MC licensing as a **Nurse Assistant Preventive**, covering epidemiology, environmental health, immunization/child welfare, nutrition, and communicable/non-communicable disease prevention.
 
 ## I'm not sure which one
 
