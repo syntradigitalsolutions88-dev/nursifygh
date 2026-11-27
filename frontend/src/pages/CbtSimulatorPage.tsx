@@ -867,7 +867,7 @@ const CBT_QUESTIONS: CbtQuestion[] = [
         correctKey: "C",
         rationale: 'In Fundamentals & Vital Signs, sleep & rest promotion requires prioritizing safe, timely nursing care: Reduce unnecessary noise and bright light at night and cluster non-urgent tasks when safe.',
     },
-]
+];
 
 const DOMAINS = [
     "All Domains",
@@ -878,6 +878,15 @@ const DOMAINS = [
     "Medical-Surgical & Infection Prevention",
     "Fundamentals & Vital Signs",
 ]
+
+function shuffleQuestions(list: CbtQuestion[]): CbtQuestion[] {
+    const copy = [...list]
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[copy[i], copy[j]] = [copy[j], copy[i]]
+    }
+    return copy
+}
 
 function formatClock(totalSeconds: number): string {
     const mins = Math.floor(Math.max(0, totalSeconds) / 60)
@@ -939,7 +948,7 @@ export default function CbtSimulatorPage() {
     }, [answers, activePool])
 
     function startExam(mins: number, customPool?: CbtQuestion[]) {
-        const pool = customPool && customPool.length > 0 ? customPool : configuredPool
+        const pool = customPool && customPool.length > 0 ? customPool : shuffleQuestions(domainPool).slice(0, Math.min(questionLimit, domainPool.length))
         setActivePool(pool)
         setDurationMinutes(mins)
         setSecondsLeft(mins * 60)
@@ -1012,7 +1021,7 @@ export default function CbtSimulatorPage() {
                                 Number of Questions
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {[4, 10, 24].map((count) => (
+                                {[10, 25, 50, domainPool.length].filter((v, idx, arr) => arr.indexOf(v) === idx).map((count) => (
                                     <button
                                         key={count}
                                         type="button"
@@ -1023,7 +1032,7 @@ export default function CbtSimulatorPage() {
                                                 : "border border-border bg-gray-50 text-on-surface"
                                         }`}
                                     >
-                                        {count === 24 ? `All (${domainPool.length})` : `Up to ${count}`}
+                                        {count === domainPool.length ? `All (${domainPool.length})` : `Up to ${count}`}
                                     </button>
                                 ))}
                             </div>

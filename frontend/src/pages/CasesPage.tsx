@@ -8,6 +8,7 @@ import Badge from "../components/ui/Badge"
 import Button from "../components/ui/Button"
 import {
     fetchClinicalCases,
+    resetCaseAttempt,
     submitCaseStageAnswer,
     type ClinicalCaseItem,
     type StageAnswerFeedback,
@@ -33,6 +34,8 @@ interface LocalClinicalCase extends ClinicalCaseItem {
 const FALLBACK_CASES: LocalClinicalCase[] = [
     {
         id: "case-malaria-paed",
+        program: "GENERAL",
+        program_label: "RGN • General Nursing",
         title: "Fever, Lethargy & Vomiting in a 3-Year-Old Child",
         condition_tag: "Paediatric Severe Malaria",
         difficulty: "INTERMEDIATE",
@@ -119,416 +122,12 @@ const FALLBACK_CASES: LocalClinicalCase[] = [
             },
         ],
     },
-    {
-        id: "case-preeclampsia-obs",
-        title: "Severe Pre-Eclampsia & Magnesium Sulfate Safety",
-        condition_tag: "Obstetric Safety • Pre-Eclampsia",
-        difficulty: "ADVANCED",
-        difficulty_display: "Advanced",
-        course_code: "OBN-311",
-        learning_objectives: "Recognise severe pre-eclampsia warning signs and monitor magnesium sulfate safety parameters accurately.",
-        stage_count: 2,
-        setting: "Antenatal / Obstetric High-Dependency Unit",
-        patient_summary:
-            "A 31-year-old gravida 2 para 1 at 35 weeks gestation presents with severe frontal headache, blurred vision, and elevated blood pressure.",
-        attempt: null,
-        stages: [
-            {
-                step_number: 1,
-                id: "stage-pe-1",
-                title: "Immediate Maternal & Fetal Stabilization",
-                vitals_summary: "BP 168/112 mmHg • P 96/min • RR 20/min • SpO2 98%",
-                clinical_update:
-                    "Urine dipstick shows significant proteinuria and the client reports epigastric discomfort.",
-                question_prompt: "What is the priority nursing action on admission?",
-                options: [
-                    { key: "A", text: "Ensure a calm safe environment, monitor BP, fetal heart rate, and neurological signs closely, and prepare ordered antihypertensive and magnesium sulfate therapy" },
-                    { key: "B", text: "Leave the client unmonitored in a bright noisy room" },
-                    { key: "C", text: "Delay blood pressure checks until discharge paperwork is completed" },
-                    { key: "D", text: "Encourage strenuous unsupervised walking" },
-                ],
-            },
-            {
-                step_number: 2,
-                id: "stage-pe-2",
-                title: "Magnesium Sulfate Toxicity Vigilance",
-                vitals_summary: "BP 154/100 mmHg • RR 10/min • Patellar reflexes absent",
-                clinical_update:
-                    "One hour into magnesium sulfate infusion, respiratory rate drops to 10 breaths/min and patellar reflexes are absent.",
-                question_prompt: "What must you do immediately?",
-                options: [
-                    { key: "A", text: "Stop the magnesium sulfate infusion immediately, support airway/oxygenation, notify the clinician urgently, and have 10% calcium gluconate ready" },
-                    { key: "B", text: "Increase the magnesium infusion rate to finish faster" },
-                    { key: "C", text: "Ignore the slow respiratory rate since blood pressure improved" },
-                    { key: "D", text: "Give oral paracetamol and wait 2 hours" },
-                ],
-            },
-        ],
-        local_stages: [
-            {
-                step_number: 1,
-                id: "stage-pe-l1",
-                title: "Immediate Maternal & Fetal Stabilization",
-                vitals_summary: "BP 168/112 mmHg • P 96/min • RR 20/min • SpO2 98%",
-                clinical_update:
-                    "Urine dipstick shows significant proteinuria and the client reports epigastric discomfort.",
-                question_prompt: "What is the priority nursing action on admission?",
-                options: [
-                    { key: "A", text: "Ensure a calm safe environment, monitor BP, fetal heart rate, and neurological signs closely, and prepare ordered antihypertensive and magnesium sulfate therapy" },
-                    { key: "B", text: "Leave the client unmonitored in a bright noisy room" },
-                    { key: "C", text: "Delay blood pressure checks until discharge paperwork is completed" },
-                    { key: "D", text: "Encourage strenuous unsupervised walking" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "Severe hypertension with headache, visual changes, or epigastric pain signals high seizure risk; rapid stabilization, monitoring, and seizure prophylaxis are critical.",
-                nursing_takeaway:
-                    "Headache, visual disturbance, and epigastric pain in pre-eclampsia are urgent warning signs.",
-            },
-            {
-                step_number: 2,
-                id: "stage-pe-l2",
-                title: "Magnesium Sulfate Toxicity Vigilance",
-                vitals_summary: "BP 154/100 mmHg • RR 10/min • Patellar reflexes absent",
-                clinical_update:
-                    "One hour into magnesium sulfate infusion, respiratory rate drops to 10 breaths/min and patellar reflexes are absent.",
-                question_prompt: "What must you do immediately?",
-                options: [
-                    { key: "A", text: "Stop the magnesium sulfate infusion immediately, support airway/oxygenation, notify the clinician urgently, and have 10% calcium gluconate ready" },
-                    { key: "B", text: "Increase the magnesium infusion rate to finish faster" },
-                    { key: "C", text: "Ignore the slow respiratory rate since blood pressure improved" },
-                    { key: "D", text: "Give oral paracetamol and wait 2 hours" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "Respiratory depression and loss of deep tendon reflexes indicate magnesium toxicity; stopping the infusion and preparing calcium gluconate protects breathing.",
-                nursing_takeaway:
-                    "Always check respiratory rate, reflexes, and urine output on clients receiving magnesium sulfate.",
-            },
-        ],
-    },
-    {
-        id: "case-pph-maternity",
-        title: "Heavy Post-Delivery Bleeding & Boggy Uterus",
-        condition_tag: "Obstetric Emergency • PPH",
-        difficulty: "INTERMEDIATE",
-        difficulty_display: "Intermediate",
-        course_code: "OBN-311",
-        learning_objectives: "Assess uterine tone and haemodynamic status in PPH and execute rapid escalation and resuscitation priorities.",
-        stage_count: 2,
-        setting: "Maternity / Labour & Delivery Unit",
-        patient_summary:
-            "A 28-year-old para 2 mother is 35 minutes post-vaginal delivery and reports soaking through pads rapidly with dizziness.",
-        attempt: null,
-        stages: [
-            {
-                step_number: 1,
-                id: "stage-5-1",
-                title: "Immediate Uterine & Haemodynamic Check",
-                vitals_summary: "BP 88/54 mmHg • P 118/min • RR 22/min • SpO2 97%",
-                clinical_update:
-                    "On abdominal palpation, the uterus feels soft and boggy above the level of the umbilicus with brisk vaginal bleeding.",
-                question_prompt: "What is the most critical immediate nursing sequence?",
-                options: [
-                    { key: "A", text: "Call for emergency help immediately, perform gentle fundal massage until firm, assess bladder distension, and support uterotonic & IV resuscitation" },
-                    { key: "B", text: "Reassure the mother that post-birth bleeding is always normal and recheck in 1 hour" },
-                    { key: "C", text: "Sit her upright immediately without checking blood pressure" },
-                    { key: "D", text: "Withhold IV access until bleeding stops on its own" },
-                ],
-            },
-            {
-                step_number: 2,
-                id: "stage-5-2",
-                title: "Ongoing Perfusion & Bladder Check",
-                vitals_summary: "BP 98/62 mmHg • P 104/min • Fundus firm at umbilicus",
-                clinical_update:
-                    "Uterotonic infusion and IV fluids are running; a full palpable bladder is noted on abdominal exam.",
-                question_prompt: "Which nursing action further supports uterine contraction and safety?",
-                options: [
-                    { key: "A", text: "Assist or ensure bladder emptying per protocol, continue monitoring vital signs and bleeding, and maintain clear team handover" },
-                    { key: "B", text: "Ignore bladder distension because the uterus was massaged once" },
-                    { key: "C", text: "Stop checking vital signs for 3 hours" },
-                    { key: "D", text: "Leave the mother alone while she feels dizzy" },
-                ],
-            },
-        ],
-        local_stages: [
-            {
-                step_number: 1,
-                id: "stage-6-1",
-                title: "Immediate Uterine & Haemodynamic Check",
-                vitals_summary: "BP 88/54 mmHg • P 118/min • RR 22/min • SpO2 97%",
-                clinical_update:
-                    "On abdominal palpation, the uterus feels soft and boggy above the level of the umbilicus with brisk vaginal bleeding.",
-                question_prompt: "What is the most critical immediate nursing sequence?",
-                options: [
-                    { key: "A", text: "Call for emergency help immediately, perform gentle fundal massage until firm, assess bladder distension, and support uterotonic & IV resuscitation" },
-                    { key: "B", text: "Reassure the mother that post-birth bleeding is always normal and recheck in 1 hour" },
-                    { key: "C", text: "Sit her upright immediately without checking blood pressure" },
-                    { key: "D", text: "Withhold IV access until bleeding stops on its own" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "Uterine atony is the leading cause of primary postpartum haemorrhage; rapid escalation, fundal massage, bladder check, and uterotonic/IV support are vital.",
-                nursing_takeaway:
-                    "In suspected PPH, assess uterine tone and vital signs together and escalate early.",
-            },
-            {
-                step_number: 2,
-                id: "stage-6-2",
-                title: "Ongoing Perfusion & Bladder Check",
-                vitals_summary: "BP 98/62 mmHg • P 104/min • Fundus firm at umbilicus",
-                clinical_update:
-                    "Uterotonic infusion and IV fluids are running; a full palpable bladder is noted on abdominal exam.",
-                question_prompt: "Which nursing action further supports uterine contraction and safety?",
-                options: [
-                    { key: "A", text: "Assist or ensure bladder emptying per protocol, continue monitoring vital signs and bleeding, and maintain clear team handover" },
-                    { key: "B", text: "Ignore bladder distension because the uterus was massaged once" },
-                    { key: "C", text: "Stop checking vital signs for 3 hours" },
-                    { key: "D", text: "Leave the mother alone while she feels dizzy" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "A distended bladder can prevent effective uterine contraction; emptying the bladder and tracking vitals/bleeding helps sustain safety.",
-                nursing_takeaway:
-                    "A full bladder is a classic hidden contributor to persistent uterine relaxation.",
-            },
-        ],
-    },
-    {
-        id: "case-postop-recovery",
-        title: "Day-2 Post-Laparotomy Pain & Shallow Breathing",
-        condition_tag: "Medical-Surgical Nursing",
-        difficulty: "BEGINNER",
-        difficulty_display: "Beginner",
-        course_code: "SSN-311",
-        learning_objectives: "Balance post-operative pain relief with deep breathing and prevent respiratory and mobility complications.",
-        stage_count: 2,
-        setting: "Surgical Ward",
-        patient_summary:
-            "A 41-year-old patient on day 2 after abdominal surgery avoids deep breaths and coughing because of abdominal incision pain.",
-        attempt: null,
-        stages: [
-            {
-                step_number: 1,
-                id: "stage-7-1",
-                title: "Respiratory & Pain Prioritisation",
-                vitals_summary: "BP 126/78 mmHg • P 92/min • RR 20/min • SpO2 95%",
-                clinical_update:
-                    "Breath sounds are slightly diminished at the lung bases; the patient rates incisional pain 7/10 on movement.",
-                question_prompt: "Which action best supports safe deep breathing and early recovery?",
-                options: [
-                    { key: "A", text: "Ensure prescribed analgesia is given, splint the incision gently during deep breathing/coughing, and assist gradual mobilisation" },
-                    { key: "B", text: "Keep the patient flat and motionless in bed for 48 more hours" },
-                    { key: "C", text: "Tell the patient to hold their breath whenever moving" },
-                    { key: "D", text: "Skip hand hygiene before wound inspection" },
-                ],
-            },
-            {
-                step_number: 2,
-                id: "stage-7-2",
-                title: "Wound & Mobility Safety Check",
-                vitals_summary: "BP 122/76 mmHg • P 84/min • RR 18/min • SpO2 98%",
-                clinical_update:
-                    "After analgesia and incision splinting, the patient takes deeper breaths comfortably and prepares to sit on the edge of the bed.",
-                question_prompt: "What should you check before assisting the patient to stand?",
-                options: [
-                    { key: "A", text: "Check for dizziness/orthostatic symptoms, secure lines and drains, lock bed wheels, and provide steady physical support" },
-                    { key: "B", text: "Pull on surgical drains or IV tubing to steady the patient" },
-                    { key: "C", text: "Leave bed wheels unlocked on a smooth floor" },
-                    { key: "D", text: "Rush the patient upright without checking balance" },
-                ],
-            },
-        ],
-        local_stages: [
-            {
-                step_number: 1,
-                id: "stage-8-1",
-                title: "Respiratory & Pain Prioritisation",
-                vitals_summary: "BP 126/78 mmHg • P 92/min • RR 20/min • SpO2 95%",
-                clinical_update:
-                    "Breath sounds are slightly diminished at the lung bases; the patient rates incisional pain 7/10 on movement.",
-                question_prompt: "Which action best supports safe deep breathing and early recovery?",
-                options: [
-                    { key: "A", text: "Ensure prescribed analgesia is given, splint the incision gently during deep breathing/coughing, and assist gradual mobilisation" },
-                    { key: "B", text: "Keep the patient flat and motionless in bed for 48 more hours" },
-                    { key: "C", text: "Tell the patient to hold their breath whenever moving" },
-                    { key: "D", text: "Skip hand hygiene before wound inspection" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "Effective analgesia and incision splinting allow deeper lung expansion, reducing atelectasis and supporting safe early ambulation.",
-                nursing_takeaway:
-                    "Pain control and respiratory exercises go hand in hand after abdominal surgery.",
-            },
-            {
-                step_number: 2,
-                id: "stage-8-2",
-                title: "Wound & Mobility Safety Check",
-                vitals_summary: "BP 122/76 mmHg • P 84/min • RR 18/min • SpO2 98%",
-                clinical_update:
-                    "After analgesia and incision splinting, the patient takes deeper breaths comfortably and prepares to sit on the edge of the bed.",
-                question_prompt: "What should you check before assisting the patient to stand?",
-                options: [
-                    { key: "A", text: "Check for dizziness/orthostatic symptoms, secure lines and drains, lock bed wheels, and provide steady physical support" },
-                    { key: "B", text: "Pull on surgical drains or IV tubing to steady the patient" },
-                    { key: "C", text: "Leave bed wheels unlocked on a smooth floor" },
-                    { key: "D", text: "Rush the patient upright without checking balance" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "Checking dizziness, locking equipment, and protecting lines/drains prevents falls and line dislodgement during early post-op mobilisation.",
-                nursing_takeaway:
-                    "Safe mobilisation protects both respiratory recovery and line/wound integrity.",
-            },
-        ],
-    },
-    {
-        id: "case-delirium-older-adult",
-        title: "Sudden Confusion & Fall Risk in an Older Adult",
-        condition_tag: "Gerontological Care & Safety",
-        difficulty: "INTERMEDIATE",
-        difficulty_display: "Intermediate",
-        course_code: "PAD-322",
-        learning_objectives: "Distinguish acute delirium triggers and implement safe, non-punitive fall and orientation support.",
-        stage_count: 2,
-        setting: "Medical / Geriatric Ward",
-        patient_summary:
-            "A 74-year-old patient admitted for a urinary infection becomes acutely restless and disoriented at night and tries to climb out of bed.",
-        attempt: null,
-        stages: [
-            {
-                step_number: 1,
-                id: "stage-del-1",
-                title: "Acute Delirium & Safety Assessment",
-                vitals_summary: "BP 138/82 mmHg • P 102/min • RR 22/min • T 38.2°C",
-                clinical_update:
-                    "Family reports the patient was oriented earlier in the day before becoming confused and agitated.",
-                question_prompt: "What is the priority nursing interpretation and action?",
-                options: [
-                    { key: "A", text: "Recognise possible acute delirium (infection, dehydration, hypoxia, pain, or medication effect), ensure a safe low-hazard environment, and notify the clinician" },
-                    { key: "B", text: "Dismiss the confusion as permanent dementia and tie down limbs immediately" },
-                    { key: "C", text: "Turn off all room lights and argue with the patient's statements" },
-                    { key: "D", text: "Ignore the fever and restlessness until morning" },
-                ],
-            },
-            {
-                step_number: 2,
-                id: "stage-del-2",
-                title: "Reorientation & Fall Prevention",
-                vitals_summary: "BP 132/78 mmHg • P 88/min • RR 18/min • T 37.6°C",
-                clinical_update:
-                    "Room lighting is adjusted safely, call bell is within reach, and hydration/infection care is underway.",
-                question_prompt: "Which approach best supports calm orientation and fall prevention?",
-                options: [
-                    { key: "A", text: "Use calm clear reorientation, keep essentials and pathways clear, encourage safe hydration if ordered, and monitor closely" },
-                    { key: "B", text: "Leave clutter and wet spots on the floor near the bed" },
-                    { key: "C", text: "Shout instructions rapidly when the patient looks confused" },
-                    { key: "D", text: "Place the call bell out of reach so the patient stays still" },
-                ],
-            },
-        ],
-        local_stages: [
-            {
-                step_number: 1,
-                id: "stage-del-l1",
-                title: "Acute Delirium & Safety Assessment",
-                vitals_summary: "BP 138/82 mmHg • P 102/min • RR 22/min • T 38.2°C",
-                clinical_update:
-                    "Family reports the patient was oriented earlier in the day before becoming confused and agitated.",
-                question_prompt: "What is the priority nursing interpretation and action?",
-                options: [
-                    { key: "A", text: "Recognise possible acute delirium (infection, dehydration, hypoxia, pain, or medication effect), ensure a safe low-hazard environment, and notify the clinician" },
-                    { key: "B", text: "Dismiss the confusion as permanent dementia and tie down limbs immediately" },
-                    { key: "C", text: "Turn off all room lights and argue with the patient's statements" },
-                    { key: "D", text: "Ignore the fever and restlessness until morning" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "Sudden-onset confusion in an older adult points toward acute delirium—often driven by infection, dehydration, hypoxia, or medications—requiring prompt evaluation and safe care.",
-                nursing_takeaway:
-                    "Acute confusion in older adults is a medical/nursing warning sign, not routine aging.",
-            },
-            {
-                step_number: 2,
-                id: "stage-del-l2",
-                title: "Reorientation & Fall Prevention",
-                vitals_summary: "BP 132/78 mmHg • P 88/min • RR 18/min • T 37.6°C",
-                clinical_update:
-                    "Room lighting is adjusted safely, call bell is within reach, and hydration/infection care is underway.",
-                question_prompt: "Which approach best supports calm orientation and fall prevention?",
-                options: [
-                    { key: "A", text: "Use calm clear reorientation, keep essentials and pathways clear, encourage safe hydration if ordered, and monitor closely" },
-                    { key: "B", text: "Leave clutter and wet spots on the floor near the bed" },
-                    { key: "C", text: "Shout instructions rapidly when the patient looks confused" },
-                    { key: "D", text: "Place the call bell out of reach so the patient stays still" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "Calm communication, clear walkways, accessible call bell, and hydration support reduce agitation and prevent falls.",
-                nursing_takeaway:
-                    "Environmental safety and calm reorientation protect older adults without increasing distress.",
-            },
-        ],
-    },
-    {
-        id: "case-dehydration-toddler",
-        title: "Acute Diarrhoea & Dehydration in a Toddler",
-        condition_tag: "Child Health • Fluid & Hydration",
-        difficulty: "BEGINNER",
-        difficulty_display: "Beginner",
-        course_code: "NPN-311",
-        learning_objectives: "Assess dehydration severity in a young child and support safe oral/IV rehydration and caregiver teaching.",
-        stage_count: 1,
-        setting: "Out-Patient / Paediatric Observation",
-        patient_summary:
-            "A 2-year-old child has had watery stools for 24 hours, drinks eagerly when offered fluids, and has dry lips.",
-        attempt: null,
-        stages: [
-            {
-                step_number: 1,
-                id: "stage-dehyd-1",
-                title: "Hydration Assessment & Rehydration Priority",
-                vitals_summary: "T 37.5°C • P 118/min • RR 26/min • Weight 11 kg",
-                clinical_update:
-                    "Child is alert and thirsty; skin pinch goes back slowly and caregiver asks what fluids to give.",
-                question_prompt: "What is the safest nursing priority?",
-                options: [
-                    { key: "A", text: "Assess hydration status and danger signs, administer oral rehydration solution (ORS) per protocol alongside continued feeding, and teach caregiver danger signs" },
-                    { key: "B", text: "Give undiluted sugary soft drinks and withhold all food" },
-                    { key: "C", text: "Give anti-diarrhoeal medication to a toddler without clinical orders/safety check" },
-                    { key: "D", text: "Send home with no fluid instructions" },
-                ],
-            },
-        ],
-        local_stages: [
-            {
-                step_number: 1,
-                id: "stage-dehyd-l1",
-                title: "Hydration Assessment & Rehydration Priority",
-                vitals_summary: "T 37.5°C • P 118/min • RR 26/min • Weight 11 kg",
-                clinical_update:
-                    "Child is alert and thirsty; skin pinch goes back slowly and caregiver asks what fluids to give.",
-                question_prompt: "What is the safest nursing priority?",
-                options: [
-                    { key: "A", text: "Assess hydration status and danger signs, administer oral rehydration solution (ORS) per protocol alongside continued feeding, and teach caregiver danger signs" },
-                    { key: "B", text: "Give undiluted sugary soft drinks and withhold all food" },
-                    { key: "C", text: "Give anti-diarrhoeal medication to a toddler without clinical orders/safety check" },
-                    { key: "D", text: "Send home with no fluid instructions" },
-                ],
-                correct_key: "A",
-                rationale:
-                    "ORS replaces water and electrolytes safely in diarrhoeal dehydration while continued feeding supports nutritional recovery.",
-                nursing_takeaway:
-                    "ORS plus ongoing feeding and caregiver danger-sign teaching are foundational in child diarrhoeal care.",
-            },
-        ],
-    },
 ]
 
 export default function CasesPage() {
     const queryClient = useQueryClient()
     const [difficulty, setDifficulty] = useState<string>("")
+    const [programFilter, setProgramFilter] = useState<string>("")
     const [activeCaseId, setActiveCaseId] = useState<string | null>(null)
     const [stepIndex, setStepIndex] = useState<number>(0)
     const [selectedKey, setSelectedKey] = useState<string>("")
@@ -536,18 +135,25 @@ export default function CasesPage() {
     const [localAnswers, setLocalAnswers] = useState<Record<string, Record<string, string>>>({})
 
     const { data: apiCases = [], isLoading, error } = useQuery({
-        queryKey: ["clinical-cases", difficulty],
-        queryFn: () => fetchClinicalCases(difficulty || undefined),
+        queryKey: ["clinical-cases", difficulty, programFilter],
+        queryFn: () =>
+            fetchClinicalCases({
+                difficulty: difficulty || undefined,
+                program: programFilter || undefined,
+            }),
         retry: 1,
     })
 
-    const usingFallback = Boolean(error) || (!isLoading && apiCases.length === 0)
+    const usingFallback = Boolean(error) || (!isLoading && apiCases.length === 0 && !programFilter && !difficulty)
 
     const cases: ClinicalCaseItem[] = useMemo(() => {
         const baseList: ClinicalCaseItem[] = usingFallback ? FALLBACK_CASES : apiCases
-        if (!difficulty) return baseList
-        return baseList.filter((c) => c.difficulty === difficulty)
-    }, [usingFallback, apiCases, difficulty])
+        return baseList.filter((c) => {
+            if (difficulty && c.difficulty !== difficulty) return false
+            if (programFilter && c.program !== programFilter) return false
+            return true
+        })
+    }, [usingFallback, apiCases, difficulty, programFilter])
 
     const activeCase: ClinicalCaseItem | undefined = cases.find((c) => c.id === activeCaseId)
     const activeStage = activeCase?.stages[stepIndex]
@@ -606,13 +212,29 @@ export default function CasesPage() {
         setFeedback(null)
     }
 
+    async function replayCase(c: ClinicalCaseItem) {
+        setStepIndex(0)
+        setSelectedKey("")
+        setFeedback(null)
+        if (usingFallback) {
+            setLocalAnswers((prev) => {
+                const copy = { ...prev }
+                delete copy[c.id]
+                return copy
+            })
+        } else {
+            await resetCaseAttempt(c.id)
+            queryClient.invalidateQueries({ queryKey: ["clinical-cases"] })
+        }
+    }
+
     return (
         <AppShell>
             <div className="max-w-3xl space-y-5 pb-24 sm:pb-8">
                 <div>
                     <h1 className="text-h1">Clinical Case Studies</h1>
                     <p className="mt-1 text-body-sm text-on-surface-muted">
-                        Step-by-step Ghanaian patient scenarios with vitals, priorities, and rationales.
+                        Step-by-step Ghanaian patient scenarios across RGN, RM, RPN, CHN, NAC, and NAP.
                     </p>
                 </div>
 
@@ -636,6 +258,7 @@ export default function CasesPage() {
 
                         <div className="rounded-2xl border border-border bg-white p-5 sm:p-6 space-y-4">
                             <div className="flex flex-wrap items-center gap-2">
+                                {activeCase.program_label && <Badge variant="neutral">{activeCase.program_label}</Badge>}
                                 <Badge variant="neutral">{activeCase.condition_tag}</Badge>
                                 <Badge variant="success">{activeCase.difficulty_display}</Badge>
                                 <span className="text-xs text-on-surface-muted">{activeCase.setting}</span>
@@ -651,7 +274,15 @@ export default function CasesPage() {
                             <div className="border-t border-border pt-4 space-y-3">
                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                                     <h3 className="text-base font-bold text-on-surface">
-                                        {activeStage.step_number}. {activeStage.title} <Link to={buildAiTutorUrl(`Case: ${activeCase.title} | Stage ${activeStage.step_number}: ${activeStage.title} | Vitals: ${activeStage.vitals_summary} | Update: ${activeStage.clinical_update} | Question: ${activeStage.question_prompt}`)} className="ml-2 inline-flex shrink-0 items-center whitespace-nowrap text-xs font-semibold text-brand-700 underline">Ask AI Tutor about this case stage →</Link>
+                                        {activeStage.step_number}. {activeStage.title}{" "}
+                                        <Link
+                                            to={buildAiTutorUrl(
+                                                `Case: ${activeCase.title} | Stage ${activeStage.step_number}: ${activeStage.title} | Vitals: ${activeStage.vitals_summary} | Update: ${activeStage.clinical_update} | Question: ${activeStage.question_prompt}`
+                                            )}
+                                            className="ml-2 inline-flex shrink-0 items-center whitespace-nowrap text-xs font-semibold text-brand-700 underline"
+                                        >
+                                            Ask AI Tutor about this case stage →
+                                        </Link>
                                     </h3>
                                     {activeStage.vitals_summary && (
                                         <span className="font-mono text-xs bg-emerald-50 text-emerald-900 border border-emerald-200 px-2.5 py-1 rounded-md">
@@ -746,13 +377,13 @@ export default function CasesPage() {
                                                         Case Completed — Score: {feedback.attempt.correct_steps}/{feedback.attempt.total_steps}
                                                     </p>
                                                     <p className="text-xs text-on-surface-muted">
-                                                        Review rationales above or return to explore more clinical scenarios.
+                                                        Review rationales above or reset to replay from Stage 1.
                                                     </p>
                                                 </div>
                                                 <div className="flex flex-wrap gap-2">
                                                     <Button
                                                         variant="secondary"
-                                                        onClick={() => openCase(activeCase)}
+                                                        onClick={() => replayCase(activeCase)}
                                                     >
                                                         Replay Case
                                                     </Button>
@@ -774,6 +405,31 @@ export default function CasesPage() {
                     </div>
                 ) : (
                     <>
+                        {/* Programme Filter */}
+                        <div className="flex flex-wrap gap-1.5">
+                            {[
+                                ["", "All Programmes"],
+                                ["GENERAL", "RGN (General)"],
+                                ["MIDWIFERY", "RM (Midwifery)"],
+                                ["PSYCHIATRIC", "RPN (Psychiatric)"],
+                                ["COMMUNITY", "CHN (Community)"],
+                                ["NAC", "NAC"],
+                                ["NAP", "NAP"],
+                            ].map(([val, label]) => (
+                                <button
+                                    key={val}
+                                    type="button"
+                                    onClick={() => setProgramFilter(val)}
+                                    className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${programFilter === val
+                                            ? "bg-brand-700 text-white"
+                                            : "border border-border bg-white text-on-surface-muted hover:text-on-surface"
+                                        }`}
+                                >
+                                    {label}
+                                </button>
+                            ))}
+                        </div>
+
                         {/* Difficulty Filter */}
                         <div className="flex flex-wrap gap-1.5">
                             {[
@@ -800,6 +456,10 @@ export default function CasesPage() {
                             <div className="rounded-xl border border-border bg-white p-10 text-center text-sm text-on-surface-muted">
                                 Loading clinical cases…
                             </div>
+                        ) : cases.length === 0 ? (
+                            <div className="rounded-xl border border-border bg-white p-8 text-center text-sm text-on-surface-muted">
+                                No clinical cases match the selected programme and difficulty filters.
+                            </div>
                         ) : (
                             <div className="space-y-3.5">
                                 {cases.map((c) => {
@@ -811,6 +471,7 @@ export default function CasesPage() {
                                         >
                                             <div className="space-y-1.5 min-w-0">
                                                 <div className="flex flex-wrap items-center gap-2">
+                                                    {c.program_label && <Badge variant="neutral">{c.program_label}</Badge>}
                                                     <Badge variant="neutral">{c.condition_tag}</Badge>
                                                     <Badge variant="success">{c.difficulty_display}</Badge>
                                                     {c.attempt?.completed_at && (

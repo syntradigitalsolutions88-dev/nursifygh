@@ -30,7 +30,7 @@ const DRUG_MONOGRAPHS: DrugMonograph[] = [
         indications: "Severe malaria (first-line parenteral therapy in adults and children when oral treatment is not tolerated).",
         contraindications: "Known severe hypersensitivity to artesunate or artemisinin derivatives.",
         adverseEffects: "Dizziness, nausea, delayed haemolytic anaemia (monitor post-treatment), mild transient transaminase elevation.",
-        nursingCare: "Reconstitute and dilute strictly per protocol immediately before use; monitor vital signs, blood glucose (hypoglycaemia risk), and urine output.",
+        nursingCare: "Reconstitute with 1 mL 5% sodium bicarbonate, then dilute with 5 mL NS for IV (10 mg/mL) or 2 mL NS for IM (20 mg/mL); monitor blood glucose and urine output.",
         patientTeaching: "Complete the full oral antimalarial follow-up course once able to swallow safely; sleep under a treated mosquito net and seek early care for fever.",
     },
     {
@@ -171,10 +171,31 @@ type CalcMode =
     | "iv_gtt_min"
     | "iv_ml_hr"
     | "weight_dose"
+    | "artesunate_stg"
+    | "oxytocin_titration"
+    | "peds_maintenance"
     | "reconstitution"
     | "oral_liquid"
     | "concentration"
+
 type ActiveTab = "guide" | "calculator" | "drill"
+type MassUnit = "mcg" | "mg" | "g"
+type FreqCode = "STAT" | "OD" | "BD" | "TDS" | "QID" | "Q4H"
+
+const MASS_TO_MG: Record<MassUnit, number> = {
+    mcg: 0.001,
+    mg: 1,
+    g: 1000,
+}
+
+const FREQ_DIVISOR: Record<FreqCode, number> = {
+    STAT: 1,
+    OD: 1,
+    BD: 2,
+    TDS: 3,
+    QID: 4,
+    Q4H: 6,
+}
 
 interface DrillProblem {
     id: string
@@ -186,7 +207,7 @@ interface DrillProblem {
     solution: string
 }
 
-const DRILL_PROBLEMS: DrillProblem[] = [
+const BASE_DRILL_PROBLEMS: DrillProblem[] = [
     {
         id: "d1",
         category: "Oral / Solid Dose",
@@ -279,21 +300,21 @@ const DRILL_PROBLEMS: DrillProblem[] = [
     },
     {
         id: "d11",
-        category: "IV Infusion Rate",
-        prompt: "Infuse 600 mL over 6 hours. How many mL/hr should the infusion run?",
-        answer: 100,
-        tolerance: 0.5,
-        unit: "mL/hr",
-        solution: "600 mL ÷ 6 hr = 100 mL/hr.",
+        category: "Ghana STG Protocol",
+        prompt: "A 14 kg child with severe malaria is prescribed IV Artesunate 3.0 mg/kg. After reconstituting the 60 mg vial to 10 mg/mL (6 mL total), how many mL do you withdraw?",
+        answer: 4.2,
+        tolerance: 0.1,
+        unit: "mL",
+        solution: "Dose = 14 kg × 3.0 mg/kg = 42 mg. Volume = 42 mg ÷ 10 mg/mL = 4.2 mL.",
     },
     {
         id: "d12",
-        category: "Concentration",
-        prompt: "An ampoule contains 80 mg in 2 mL. What is the strength in mg/mL?",
-        answer: 40,
+        category: "Obstetric Infusion",
+        prompt: "Oxytocin 10 IU is added to 1,000 mL Normal Saline (10 mU/mL). To deliver 4 mU/min using a 20 gtt/mL giving set, how many drops/min are required?",
+        answer: 8,
         tolerance: 0.5,
-        unit: "mg/mL",
-        solution: "80 mg ÷ 2 mL = 40 mg/mL.",
+        unit: "gtt/min",
+        solution: "4 mU/min ÷ 10 mU/mL = 0.4 mL/min. 0.4 mL/min × 20 gtt/mL = 8 gtt/min.",
     },
     {
         id: "d13",
@@ -307,11 +328,11 @@ const DRILL_PROBLEMS: DrillProblem[] = [
     {
         id: "d14",
         category: "Paediatric mg/kg Dose",
-        prompt: "A 9 kg infant is ordered a single dose of 20 mg/kg. How many mg is the dose?",
-        answer: 180,
+        prompt: "A 10 kg child is prescribed Amoxicillin 45 mg/kg/day divided TDS (every 8 hours). How many mg are given per single dose?",
+        answer: 150,
         tolerance: 0.5,
         unit: "mg",
-        solution: "9 kg × 20 mg/kg = 180 mg.",
+        solution: "Daily dose = 10 kg × 45 mg/kg/day = 450 mg/day. Divided TDS (÷ 3) = 150 mg/dose.",
     },
     {
         id: "d15",
@@ -334,20 +355,20 @@ const DRILL_PROBLEMS: DrillProblem[] = [
     {
         id: "d17",
         category: "Oral / Solid Dose",
-        prompt: "Ordered: 0.5 g of a medication PO. Available tablets are 250 mg each. How many tablets do you administer?",
+        prompt: "Ordered: Digoxin 0.25 mg PO. Available tablets are 125 mcg each. How many tablets do you administer?",
         answer: 2,
         tolerance: 0.01,
         unit: "tablets",
-        solution: "Convert 0.5 g = 500 mg; 500 mg ÷ 250 mg = 2 tablets.",
+        solution: "Convert 0.25 mg = 250 mcg; 250 mcg ÷ 125 mcg = 2 tablets.",
     },
     {
         id: "d18",
-        category: "IV Infusion Rate",
-        prompt: "Infuse 1,500 mL over 12 hours. What is the rate in mL/hr?",
-        answer: 125,
-        tolerance: 0.5,
-        unit: "mL/hr",
-        solution: "1,500 mL ÷ 12 hr = 125 mL/hr.",
+        category: "Ghana STG Protocol",
+        prompt: "An adult weighing 55 kg with severe malaria is prescribed IV Artesunate 2.4 mg/kg (reconstituted to 10 mg/mL). How many mL are required?",
+        answer: 13.2,
+        tolerance: 0.1,
+        unit: "mL",
+        solution: "Dose = 55 kg × 2.4 mg/kg = 132 mg. Volume = 132 mg ÷ 10 mg/mL = 13.2 mL (use 3 × 60 mg vials).",
     },
     {
         id: "d19",
@@ -369,6 +390,84 @@ const DRILL_PROBLEMS: DrillProblem[] = [
     },
 ]
 
+function buildRandomDrill(): DrillProblem {
+    const generators: Array<() => DrillProblem> = [
+        () => {
+            const vol = [250, 500, 1000, 1500][Math.floor(Math.random() * 4)]
+            const hrs = [3, 4, 6, 8, 12][Math.floor(Math.random() * 5)]
+            const df = Math.random() > 0.5 ? 20 : 15
+            const ans = Math.round((vol * df) / (hrs * 60))
+            return {
+                id: `gen-${Date.now()}`,
+                category: "IV Drip Rate",
+                prompt: `Infuse ${vol} mL of Ringer's Lactate over ${hrs} hours using a ${df} gtt/mL giving set. Calculate the drip rate in gtt/min (round to nearest whole drop).`,
+                answer: ans,
+                unit: "gtt/min",
+                tolerance: 0.5,
+                solution: `(${vol} mL × ${df} gtt/mL) ÷ (${hrs} × 60 = ${hrs * 60} min) = ${((vol * df) / (hrs * 60)).toFixed(2)} → ${ans} gtt/min.`,
+            }
+        },
+        () => {
+            const wt = [8, 11, 13, 15, 17, 19][Math.floor(Math.random() * 6)]
+            const ans = Number(((wt * 3.0) / 10).toFixed(1))
+            return {
+                id: `gen-${Date.now()}`,
+                category: "Ghana STG Protocol",
+                prompt: `A child weighing ${wt} kg presents with severe malaria. Per Ghana STG (3.0 mg/kg for < 20 kg), IV Artesunate is reconstituted to 10 mg/mL. How many mL should be drawn up for the stat dose?`,
+                answer: ans,
+                unit: "mL",
+                tolerance: 0.1,
+                solution: `${wt} kg × 3.0 mg/kg = ${(wt * 3).toFixed(1)} mg ÷ 10 mg/mL = ${ans} mL.`,
+            }
+        },
+        () => {
+            const wt = [10, 12, 14, 16, 18][Math.floor(Math.random() * 5)]
+            const mgKgDay = [30, 45, 60][Math.floor(Math.random() * 3)]
+            const singleMg = (wt * mgKgDay) / 3
+            const ans = Number(((singleMg / 125) * 5).toFixed(1))
+            return {
+                id: `gen-${Date.now()}`,
+                category: "Paediatric mg/kg Dose",
+                prompt: `A ${wt} kg child is ordered Amoxicillin ${mgKgDay} mg/kg/day divided TDS (every 8 hours). Suspension available is 125 mg/5 mL. How many mL do you give per single dose?`,
+                answer: ans,
+                unit: "mL",
+                tolerance: 0.1,
+                solution: `Daily = ${wt} × ${mgKgDay} = ${wt * mgKgDay} mg/day → Single dose (÷3) = ${singleMg} mg → (${singleMg} ÷ 125) × 5 mL = ${ans} mL.`,
+            }
+        },
+        () => {
+            const targetMu = [2, 4, 6, 8, 12][Math.floor(Math.random() * 5)]
+            const df = Math.random() > 0.5 ? 20 : 15
+            const mlPerMin = targetMu / 10
+            const ans = Math.round(mlPerMin * df)
+            return {
+                id: `gen-${Date.now()}`,
+                category: "Obstetric Infusion",
+                prompt: `Oxytocin 10 IU is mixed in 1,000 mL Normal Saline (10 mU/mL). You need to infuse ${targetMu} mU/min using a ${df} gtt/mL giving set. What is the drip rate in gtt/min?`,
+                answer: ans,
+                unit: "gtt/min",
+                tolerance: 0.5,
+                solution: `${targetMu} mU/min ÷ 10 mU/mL = ${mlPerMin} mL/min × ${df} gtt/mL = ${(mlPerMin * df).toFixed(1)} → ${ans} gtt/min.`,
+            }
+        },
+        () => {
+            const ordG = [0.5, 0.75, 1.0, 1.5][Math.floor(Math.random() * 4)]
+            const stockMg = 250
+            const ans = (ordG * 1000) / stockMg
+            return {
+                id: `gen-${Date.now()}`,
+                category: "Oral / Solid Dose",
+                prompt: `Prescribed: Ciprofloxacin ${ordG} g PO. Available tablets: ${stockMg} mg. How many tablets do you give per dose?`,
+                answer: ans,
+                unit: "tablets",
+                tolerance: 0.05,
+                solution: `${ordG} g = ${ordG * 1000} mg; ${ordG * 1000} mg ÷ ${stockMg} mg = ${ans} tablets.`,
+            }
+        },
+    ]
+    return generators[Math.floor(Math.random() * generators.length)]()
+}
+
 export default function PharmacologyPage() {
     const [tab, setTab] = useState<ActiveTab>("guide")
     const [search, setSearch] = useState("")
@@ -376,15 +475,31 @@ export default function PharmacologyPage() {
     // Calculator state
     const [calcMode, setCalcMode] = useState<CalcMode>("iv_gtt_min")
     const [desiredDose, setDesiredDose] = useState("500")
+    const [desiredUnit, setDesiredUnit] = useState<MassUnit>("mg")
     const [stockDose, setStockDose] = useState("250")
+    const [stockUnit, setStockUnit] = useState<MassUnit>("mg")
     const [stockVolume, setStockVolume] = useState("5")
-    const [totalVolumeMl, setTotalVolumeMl] = useState("500")
-    const [durationHours, setDurationHours] = useState("4")
+
+    const [totalVolumeMl, setTotalVolumeMl] = useState("1000")
+    const [durationValue, setDurationValue] = useState("8")
+    const [durationUnit, setDurationUnit] = useState<"hours" | "minutes">("hours")
     const [dropFactor, setDropFactor] = useState("20")
-    const [weightKg, setWeightKg] = useState("12")
-    const [dosePerKg, setDosePerKg] = useState("15")
+
+    const [weightKg, setWeightKg] = useState("14")
+    const [dosePerKg, setDosePerKg] = useState("45")
+    const [weightBasis, setWeightBasis] = useState<"per_dose" | "per_day">("per_day")
+    const [frequency, setFrequency] = useState<FreqCode>("TDS")
+    const [stockConcMgMl, setStockConcMgMl] = useState("25")
+    const [maxDailyMg, setMaxDailyMg] = useState("1500")
+
+    // Ghana STG Artesunate & Obstetric Oxytocin state
+    const [artesunateRoute, setArtesunateRoute] = useState<"IV" | "IM">("IV")
+    const [oxytocinUnits, setOxytocinUnits] = useState("10")
+    const [oxytocinBagMl, setOxytocinBagMl] = useState("1000")
+    const [oxytocinTargetMu, setOxytocinTargetMu] = useState("4")
 
     // Practice drill state
+    const [drillPool, setDrillPool] = useState<DrillProblem[]>(BASE_DRILL_PROBLEMS)
     const [drillCategory, setDrillCategory] = useState("All")
     const [drillIdx, setDrillIdx] = useState(0)
     const [userAnswer, setUserAnswer] = useState("")
@@ -404,112 +519,240 @@ export default function PharmacologyPage() {
         )
     }, [search])
 
+    function applyPreset(preset: "malaria_peds" | "oxytocin_pph" | "amox_peds" | "ringers_8h" | "ceftriaxone_1g") {
+        if (preset === "malaria_peds") {
+            setCalcMode("artesunate_stg")
+            setWeightKg("14")
+            setArtesunateRoute("IV")
+        } else if (preset === "oxytocin_pph") {
+            setCalcMode("oxytocin_titration")
+            setOxytocinUnits("10")
+            setOxytocinBagMl("1000")
+            setOxytocinTargetMu("4")
+            setDropFactor("20")
+        } else if (preset === "amox_peds") {
+            setCalcMode("weight_dose")
+            setWeightKg("12")
+            setDosePerKg("45")
+            setWeightBasis("per_day")
+            setFrequency("TDS")
+            setStockConcMgMl("25") // 125 mg / 5 mL = 25 mg/mL
+            setMaxDailyMg("1500")
+        } else if (preset === "ringers_8h") {
+            setCalcMode("iv_gtt_min")
+            setTotalVolumeMl("1000")
+            setDurationValue("8")
+            setDurationUnit("hours")
+            setDropFactor("20")
+        } else if (preset === "ceftriaxone_1g") {
+            setCalcMode("reconstitution")
+            setDesiredDose("1")
+            setDesiredUnit("g")
+            setStockDose("1000")
+            setStockUnit("mg")
+            setStockVolume("10")
+        }
+    }
+
     const calcResult = useMemo(() => {
         const n = (v: string) => {
             const parsed = parseFloat(v)
             return Number.isFinite(parsed) ? parsed : NaN
         }
 
-        if (calcMode === "oral_liquid") {
-            const d = n(desiredDose)
-            const s = n(stockDose)
+        if (calcMode === "oral_liquid" || calcMode === "reconstitution") {
+            const dRaw = n(desiredDose)
+            const sRaw = n(stockDose)
             const v = n(stockVolume)
-            if (d <= 0 || s <= 0 || v <= 0 || Number.isNaN(d + s + v)) {
-                return { error: "Enter positive numbers for desired dose, stock strength, and stock unit/volume." }
+            if (dRaw <= 0 || sRaw <= 0 || v <= 0 || Number.isNaN(dRaw + sRaw + v)) {
+                return { error: "Enter positive numbers for desired dose, available strength, and volume/unit." }
             }
-            const raw = (d / s) * v
+            const dMg = dRaw * MASS_TO_MG[desiredUnit]
+            const sMg = sRaw * MASS_TO_MG[stockUnit]
+            const raw = (dMg / sMg) * v
             const rounded = Math.round(raw * 100) / 100
+            const unitConvNote =
+                desiredUnit !== stockUnit
+                    ? `Unit conversion: ${dRaw} ${desiredUnit} = ${dMg} mg; ${sRaw} ${stockUnit} = ${sMg} mg. `
+                    : ""
+            const unitOut = calcMode === "reconstitution" ? "mL" : "mL / tablets"
             return {
-                headline: `${rounded} (units/mL)`,
-                steps: `(${d} ÷ ${s}) × ${v} = ${rounded}`,
-                safety: "Verify dose against patient weight/age and confirm unit consistency before administering.",
+                headline: `${rounded} ${unitOut}`,
+                steps: `${unitConvNote}(${dMg} mg ÷ ${sMg} mg) × ${v} = ${rounded} ${unitOut}`,
+                safety:
+                    calcMode === "reconstitution"
+                        ? "Label syringe immediately with drug name, concentration, date, and time; verify IV vs IM diluent."
+                        : "Confirm unit consistency (mcg vs mg vs g) and verify whether tablets are scored before splitting.",
             }
         }
 
         if (calcMode === "iv_ml_hr") {
             const vol = n(totalVolumeMl)
-            const hrs = n(durationHours)
-            if (vol <= 0 || hrs <= 0 || Number.isNaN(vol + hrs)) {
-                return { error: "Enter positive numbers for total volume (mL) and hours." }
+            const dur = n(durationValue)
+            if (vol <= 0 || dur <= 0 || Number.isNaN(vol + dur)) {
+                return { error: "Enter positive numbers for total volume (mL) and duration." }
             }
+            const hrs = durationUnit === "hours" ? dur : dur / 60
             const rate = Math.round((vol / hrs) * 10) / 10
             return {
                 headline: `${rate} mL/hr`,
-                steps: `${vol} mL ÷ ${hrs} hr = ${rate} mL/hr`,
-                safety: "Check pump/infusion line patency and monitor infusion site regularly.",
+                steps: `${vol} mL ÷ ${hrs.toFixed(2)} hr = ${rate} mL/hr`,
+                safety: "Inspect IV cannula site for phlebitis/infiltration and verify fluid balance chart every hour.",
             }
         }
 
         if (calcMode === "iv_gtt_min") {
             const vol = n(totalVolumeMl)
-            const hrs = n(durationHours)
+            const dur = n(durationValue)
             const factor = n(dropFactor)
-            if (vol <= 0 || hrs <= 0 || factor <= 0 || Number.isNaN(vol + hrs + factor)) {
-                return { error: "Enter positive numbers for volume (mL), hours, and drop factor (gtt/mL)." }
+            if (vol <= 0 || dur <= 0 || factor <= 0 || Number.isNaN(vol + dur + factor)) {
+                return { error: "Enter positive numbers for volume (mL), duration, and drop factor (gtt/mL)." }
             }
-            const minutes = hrs * 60
+            const minutes = durationUnit === "hours" ? dur * 60 : dur
             const exact = (vol * factor) / minutes
             const drops = Math.round(exact)
+            const mlHr = Math.round((vol / (minutes / 60)) * 10) / 10
+            const secPerDrop = drops > 0 ? (60 / drops).toFixed(1) : "—"
             return {
-                headline: `${drops} gtt/min (exact: ${exact.toFixed(2)})`,
-                steps: `(${vol} mL × ${factor} gtt/mL) ÷ (${hrs} × 60 = ${minutes} min) = ${exact.toFixed(2)} → ${drops} gtt/min`,
-                safety: "Count drops over a full 60 seconds and re-verify drop factor on the giving set packaging.",
+                headline: `${drops} gtt/min (${mlHr} mL/hr)`,
+                steps: `(${vol} mL × ${factor} gtt/mL) ÷ ${minutes} min = ${exact.toFixed(2)} → ${drops} gtt/min (1 drop every ${secPerDrop} sec)`,
+                safety: "Count drops over a full 60 seconds and confirm giving set drop factor (15, 20, or 60 gtt/mL) on packaging.",
             }
         }
 
         if (calcMode === "weight_dose") {
             const kg = n(weightKg)
             const perKg = n(dosePerKg)
+            const conc = n(stockConcMgMl)
+            const maxCap = n(maxDailyMg)
             if (kg <= 0 || perKg <= 0 || Number.isNaN(kg + perKg)) {
                 return { error: "Enter positive numbers for weight (kg) and dose per kg." }
             }
-            const total = Math.round(kg * perKg * 100) / 100
+            const totalBasis = kg * perKg
+            const divisor = weightBasis === "per_day" ? FREQ_DIVISOR[frequency] : 1
+            const singleMg = Math.round((totalBasis / divisor) * 100) / 100
+            const dailyMg =
+                weightBasis === "per_day"
+                    ? Math.round(totalBasis * 100) / 100
+                    : Math.round(totalBasis * FREQ_DIVISOR[frequency] * 100) / 100
+            const hasConc = Number.isFinite(conc) && conc > 0
+            const mlPerDose = hasConc ? Math.round((singleMg / conc) * 100) / 100 : null
+            const exceedsMax = Number.isFinite(maxCap) && maxCap > 0 && dailyMg > maxCap
+
             return {
-                headline: `${total} mg`,
-                steps: `${kg} kg × ${perKg} mg/kg = ${total} mg`,
-                safety: "Always verify maximum safe single/daily dose limits for paediatric or fragile patients.",
+                headline: mlPerDose !== null ? `${singleMg} mg (${mlPerDose} mL) / dose` : `${singleMg} mg / dose`,
+                steps:
+                    weightBasis === "per_day"
+                        ? `${kg} kg × ${perKg} mg/kg/day = ${dailyMg} mg/day ÷ ${divisor} (${frequency}) = ${singleMg} mg/dose${mlPerDose !== null ? ` → ${singleMg} mg ÷ ${conc} mg/mL = ${mlPerDose} mL` : ""}`
+                        : `${kg} kg × ${perKg} mg/kg = ${singleMg} mg/dose (${dailyMg} mg/day at ${frequency})${mlPerDose !== null ? ` → ${mlPerDose} mL` : ""}`,
+                safety: exceedsMax
+                    ? `ALERT: Calculated daily total (${dailyMg} mg/day) exceeds configured max daily limit (${maxCap} mg/day). Consult prescriber.`
+                    : `Total 24-hour dose: ${dailyMg} mg/day. Always verify weight in kg (never lbs) before paediatric dosing.`,
             }
         }
 
-        if (calcMode === "concentration") {
-            const s = n(stockDose)
-            const v = n(stockVolume)
-            if (s <= 0 || v <= 0 || Number.isNaN(s + v)) {
-                return { error: "Enter positive numbers for total drug amount (mg) and total volume (mL)." }
+        if (calcMode === "artesunate_stg") {
+            const kg = n(weightKg)
+            if (kg <= 0 || Number.isNaN(kg)) {
+                return { error: "Enter a valid patient weight in kg." }
             }
-            const conc = Math.round((s / v) * 100) / 100
+            const mgPerKg = kg < 20 ? 3.0 : 2.4
+            const doseMg = Math.round(kg * mgPerKg * 100) / 100
+            const conc = artesunateRoute === "IV" ? 10 : 20
+            const volMl = Math.round((doseMg / conc) * 100) / 100
+            const vials = Math.ceil(doseMg / 60)
             return {
-                headline: `${conc} mg/mL`,
-                steps: `${s} mg ÷ ${v} mL = ${conc} mg/mL`,
-                safety: "Double-check label concentration before drawing up high-alert or paediatric solutions.",
+                headline: `${volMl} mL ${artesunateRoute} (${doseMg} mg)`,
+                steps: `Ghana STG (${kg < 20 ? "< 20 kg → 3.0 mg/kg" : "≥ 20 kg → 2.4 mg/kg"}): ${kg} kg × ${mgPerKg} = ${doseMg} mg ÷ ${conc} mg/mL = ${volMl} mL (prepare ${vials} × 60 mg vial${vials > 1 ? "s" : ""})`,
+                safety:
+                    artesunateRoute === "IV"
+                        ? "Reconstitute each 60 mg vial with 1 mL 5% NaHCO3 + 5 mL Normal Saline (= 6 mL; 10 mg/mL). Give at 0 hr, 12 hr, and 24 hr."
+                        : "Reconstitute each 60 mg vial with 1 mL 5% NaHCO3 + 2 mL Normal Saline (= 3 mL; 20 mg/mL) for deep IM injection.",
             }
         }
 
-        // reconstitution
-        const d = n(desiredDose)
+        if (calcMode === "oxytocin_titration") {
+            const units = n(oxytocinUnits)
+            const bagMl = n(oxytocinBagMl)
+            const targetMu = n(oxytocinTargetMu)
+            const df = n(dropFactor)
+            if (units <= 0 || bagMl <= 0 || targetMu <= 0 || df <= 0 || Number.isNaN(units + bagMl + targetMu + df)) {
+                return { error: "Enter positive values for Oxytocin IU, bag volume, target mU/min, and drop factor." }
+            }
+            const muPerMl = (units * 1000) / bagMl
+            const mlPerMin = targetMu / muPerMl
+            const mlPerHr = Math.round(mlPerMin * 60 * 10) / 10
+            const gttMin = Math.round(mlPerMin * df)
+            return {
+                headline: `${gttMin} gtt/min (${mlPerHr} mL/hr)`,
+                steps: `Conc: ${units * 1000} mU ÷ ${bagMl} mL = ${muPerMl} mU/mL → ${targetMu} mU/min ÷ ${muPerMl} = ${mlPerMin.toFixed(3)} mL/min × ${df} gtt/mL = ${gttMin} gtt/min`,
+                safety: "Monitor FHR and uterine contractions every 15–30 min; stop infusion immediately if tachysystole (>5 contractions/10 min) or foetal distress occurs.",
+            }
+        }
+
+        if (calcMode === "peds_maintenance") {
+            const kg = n(weightKg)
+            if (kg <= 0 || Number.isNaN(kg)) {
+                return { error: "Enter child weight in kg." }
+            }
+            const first10 = Math.min(kg, 10) * 4
+            const second10 = Math.min(Math.max(kg - 10, 0), 10) * 2
+            const above20 = Math.max(kg - 20, 0) * 1
+            const mlHr = Math.round((first10 + second10 + above20) * 10) / 10
+            const ml24h = Math.round(mlHr * 24)
+            return {
+                headline: `${mlHr} mL/hr (${ml24h} mL / 24 hr)`,
+                steps: `Holliday-Segar 4-2-1 rule for ${kg} kg: (${first10} + ${second10} + ${above20}) = ${mlHr} mL/hr (${mlHr} micro-drops/min on 60 gtt/mL burette)`,
+                safety: "Use a paediatric burette chamber (60 gtt/mL) to prevent accidental fluid overload in children.",
+            }
+        }
+
+        // concentration
         const s = n(stockDose)
         const v = n(stockVolume)
-        if (d <= 0 || s <= 0 || v <= 0 || Number.isNaN(d + s + v)) {
-            return { error: "Enter positive numbers for desired dose, reconstituted strength, and volume (mL)." }
+        if (s <= 0 || v <= 0 || Number.isNaN(s + v)) {
+            return { error: "Enter positive numbers for total drug amount (mg) and total volume (mL)." }
         }
-        const ml = Math.round(((d / s) * v) * 100) / 100
+        const conc = Math.round((s / v) * 100) / 100
+        const percentWv = Math.round(((s / 1000) / v) * 100 * 1000) / 1000
         return {
-            headline: `${ml} mL`,
-            steps: `(${d} ÷ ${s}) × ${v} mL = ${ml} mL`,
-            safety: "Check final concentration after diluent addition and verify route (IV push vs. infusion vs. IM).",
+            headline: `${conc} mg/mL (${percentWv}% w/v)`,
+            steps: `${s} mg ÷ ${v} mL = ${conc} mg/mL (${conc * 1000} mcg/mL)`,
+            safety: "Double-check label concentration before drawing up high-alert or paediatric solutions.",
         }
-    }, [calcMode, desiredDose, stockDose, stockVolume, totalVolumeMl, durationHours, dropFactor, weightKg, dosePerKg])
+    }, [
+        calcMode,
+        desiredDose,
+        desiredUnit,
+        stockDose,
+        stockUnit,
+        stockVolume,
+        totalVolumeMl,
+        durationValue,
+        durationUnit,
+        dropFactor,
+        weightKg,
+        dosePerKg,
+        weightBasis,
+        frequency,
+        stockConcMgMl,
+        maxDailyMg,
+        artesunateRoute,
+        oxytocinUnits,
+        oxytocinBagMl,
+        oxytocinTargetMu,
+    ])
 
     const drillCategories = useMemo(
-        () => ["All", ...Array.from(new Set(DRILL_PROBLEMS.map((d) => d.category)))],
-        []
+        () => ["All", ...Array.from(new Set(drillPool.map((d) => d.category)))],
+        [drillPool]
     )
     const visibleDrills = useMemo(
-        () => (drillCategory === "All" ? DRILL_PROBLEMS : DRILL_PROBLEMS.filter((d) => d.category === drillCategory)),
-        [drillCategory]
+        () => (drillCategory === "All" ? drillPool : drillPool.filter((d) => d.category === drillCategory)),
+        [drillPool, drillCategory]
     )
     const safeDrillIdx = visibleDrills.length > 0 ? drillIdx % visibleDrills.length : 0
-    const activeDrill = visibleDrills[safeDrillIdx] || DRILL_PROBLEMS[0]
+    const activeDrill = visibleDrills[safeDrillIdx] || drillPool[0]
 
     function handleCheckDrill() {
         const numeric = parseFloat(userAnswer)
@@ -533,13 +776,22 @@ export default function PharmacologyPage() {
         })
     }
 
+    function handleGenerateRandomDrill() {
+        const nextProblem = buildRandomDrill()
+        setDrillPool((prev) => [nextProblem, ...prev])
+        setDrillCategory("All")
+        setDrillIdx(0)
+        setUserAnswer("")
+        setCheckedDrill(null)
+    }
+
     return (
         <AppShell>
             <div className="max-w-3xl space-y-5 pb-24 sm:pb-8">
                 <div>
                     <h1 className="text-h1">Pharmacology & Drug Calculations</h1>
                     <p className="mt-1 text-body-sm text-on-surface-muted">
-                        Ghanaian clinical drug monographs, deterministic dosage formulas, and exam calculation drills.
+                        Ghanaian clinical drug monographs, multi-step dosage & protocol calculators, and N&MC exam drills.
                     </p>
                 </div>
 
@@ -548,8 +800,8 @@ export default function PharmacologyPage() {
                     {(
                         [
                             ["guide", `Drug Guide (${DRUG_MONOGRAPHS.length})`],
-                            ["calculator", "Dosage Calculator"],
-                            ["drill", `Calculation Drill (${solvedIds.length}/${DRILL_PROBLEMS.length})`],
+                            ["calculator", "Clinical Calculator (9 Modes)"],
+                            ["drill", `Calculation Drill (${solvedIds.length}/${drillPool.length})`],
                         ] as Array<[ActiveTab, string]>
                     ).map(([key, label]) => (
                         <button
@@ -633,15 +885,44 @@ export default function PharmacologyPage() {
 
                 {tab === "calculator" && (
                     <div className="rounded-2xl border border-border bg-white p-5 sm:p-6 space-y-4">
-                        <div className="flex flex-wrap gap-1.5">
+                        {/* Quick Ghana Ward Presets */}
+                        <div className="space-y-1.5">
+                            <p className="text-xs font-semibold text-on-surface-muted">Quick Ward Scenarios:</p>
+                            <div className="flex flex-wrap gap-1.5">
+                                {(
+                                    [
+                                        ["malaria_peds", "Severe Malaria IV Artesunate (14 kg)"],
+                                        ["oxytocin_pph", "Oxytocin Titration (4 mU/min)"],
+                                        ["amox_peds", "Paed Amoxicillin mg/kg/day"],
+                                        ["ringers_8h", "Ringer's 1,000 mL / 8 hr"],
+                                        ["ceftriaxone_1g", "Ceftriaxone 1 g Vial"],
+                                    ] as const
+                                ).map(([key, label]) => (
+                                    <button
+                                        key={key}
+                                        type="button"
+                                        onClick={() => applyPreset(key)}
+                                        className="rounded-md border border-border bg-gray-50 px-2.5 py-1 text-xs font-medium text-on-surface hover:border-brand-700 hover:text-brand-700"
+                                    >
+                                        {label}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Calculator Mode Selector */}
+                        <div className="flex flex-wrap gap-1.5 pt-1 border-t border-border">
                             {(
                                 [
                                     ["iv_gtt_min", "IV gtt/min"],
                                     ["iv_ml_hr", "IV mL/hr"],
-                                    ["weight_dose", "mg/kg Dose"],
+                                    ["weight_dose", "mg/kg & Frequency"],
+                                    ["artesunate_stg", "Artesunate (Ghana STG)"],
+                                    ["oxytocin_titration", "Oxytocin mU/min"],
+                                    ["peds_maintenance", "4-2-1 Paed Fluids"],
                                     ["reconstitution", "Reconstitution"],
                                     ["oral_liquid", "Desired / Stock"],
-                                    ["concentration", "mg/mL Strength"],
+                                    ["concentration", "mg/mL & % Strength"],
                                 ] as Array<[CalcMode, string]>
                             ).map(([m, lbl]) => (
                                 <button
@@ -666,25 +947,116 @@ export default function PharmacologyPage() {
                                     value={totalVolumeMl}
                                     onChange={(e) => setTotalVolumeMl(e.target.value)}
                                 />
-                                <Input
-                                    label="Duration (hours)"
-                                    type="number"
-                                    step="any"
-                                    value={durationHours}
-                                    onChange={(e) => setDurationHours(e.target.value)}
-                                />
-                                {calcMode === "iv_gtt_min" && (
+                                <div className="space-y-1">
                                     <Input
-                                        label="Drop Factor (gtt/mL)"
+                                        label={`Duration (${durationUnit})`}
                                         type="number"
-                                        value={dropFactor}
-                                        onChange={(e) => setDropFactor(e.target.value)}
+                                        step="any"
+                                        value={durationValue}
+                                        onChange={(e) => setDurationValue(e.target.value)}
                                     />
+                                    <div className="flex gap-2 text-xs">
+                                        {(["hours", "minutes"] as const).map((u) => (
+                                            <button
+                                                key={u}
+                                                type="button"
+                                                onClick={() => setDurationUnit(u)}
+                                                className={`underline ${durationUnit === u ? "font-bold text-brand-700" : "text-on-surface-muted"}`}
+                                            >
+                                                {u}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                                {calcMode === "iv_gtt_min" && (
+                                    <div className="space-y-1">
+                                        <Input
+                                            label="Drop Factor (gtt/mL)"
+                                            type="number"
+                                            value={dropFactor}
+                                            onChange={(e) => setDropFactor(e.target.value)}
+                                        />
+                                        <div className="flex gap-2 text-xs text-on-surface-muted">
+                                            {["15", "20", "60"].map((df) => (
+                                                <button
+                                                    key={df}
+                                                    type="button"
+                                                    onClick={() => setDropFactor(df)}
+                                                    className="underline hover:text-brand-700"
+                                                >
+                                                    {df} gtt/mL
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
                                 )}
                             </div>
                         )}
 
                         {calcMode === "weight_dose" && (
+                            <div className="space-y-3">
+                                <div className="grid gap-4 sm:grid-cols-3">
+                                    <Input
+                                        label="Patient Weight (kg)"
+                                        type="number"
+                                        step="any"
+                                        value={weightKg}
+                                        onChange={(e) => setWeightKg(e.target.value)}
+                                    />
+                                    <Input
+                                        label={weightBasis === "per_day" ? "Dose (mg/kg/day)" : "Dose (mg/kg/dose)"}
+                                        type="number"
+                                        step="any"
+                                        value={dosePerKg}
+                                        onChange={(e) => setDosePerKg(e.target.value)}
+                                    />
+                                    <div className="space-y-1">
+                                        <label className="block text-xs font-semibold text-on-surface">Basis & Frequency</label>
+                                        <div className="flex gap-1.5">
+                                            <select
+                                                value={weightBasis}
+                                                onChange={(e) => setWeightBasis(e.target.value as "per_dose" | "per_day")}
+                                                className="w-full rounded-lg border border-border bg-white px-2.5 py-2 text-xs font-medium"
+                                            >
+                                                <option value="per_day">mg/kg/day (split)</option>
+                                                <option value="per_dose">mg/kg/dose (single)</option>
+                                            </select>
+                                            <select
+                                                value={frequency}
+                                                onChange={(e) => setFrequency(e.target.value as FreqCode)}
+                                                className="rounded-lg border border-border bg-white px-2.5 py-2 text-xs font-medium"
+                                            >
+                                                {(["STAT", "OD", "BD", "TDS", "QID", "Q4H"] as FreqCode[]).map((f) => (
+                                                    <option key={f} value={f}>
+                                                        {f}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="grid gap-4 sm:grid-cols-2">
+                                    <Input
+                                        label="Optional Stock Strength (mg/mL for mL volume)"
+                                        type="number"
+                                        step="any"
+                                        value={stockConcMgMl}
+                                        onChange={(e) => setStockConcMgMl(e.target.value)}
+                                        placeholder="e.g. 25 for 125mg/5mL"
+                                    />
+                                    <Input
+                                        label="Optional Max Safe Daily Dose (mg/day)"
+                                        type="number"
+                                        step="any"
+                                        value={maxDailyMg}
+                                        onChange={(e) => setMaxDailyMg(e.target.value)}
+                                        placeholder="e.g. 1500"
+                                    />
+                                </div>
+                            </div>
+                        )}
+
+                        {calcMode === "artesunate_stg" && (
                             <div className="grid gap-4 sm:grid-cols-2">
                                 <Input
                                     label="Patient Weight (kg)"
@@ -693,12 +1065,66 @@ export default function PharmacologyPage() {
                                     value={weightKg}
                                     onChange={(e) => setWeightKg(e.target.value)}
                                 />
+                                <div className="space-y-1">
+                                    <label className="block text-xs font-semibold text-on-surface">Administration Route</label>
+                                    <div className="flex gap-2">
+                                        {(["IV", "IM"] as const).map((r) => (
+                                            <button
+                                                key={r}
+                                                type="button"
+                                                onClick={() => setArtesunateRoute(r)}
+                                                className={`flex-1 rounded-lg border px-3 py-2 text-xs font-semibold ${artesunateRoute === r
+                                                        ? "border-brand-700 bg-brand-700 text-white"
+                                                        : "border-border bg-gray-50 text-on-surface"
+                                                    }`}
+                                            >
+                                                {r === "IV" ? "IV (10 mg/mL — 6 mL)" : "IM (20 mg/mL — 3 mL)"}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
+                        {calcMode === "oxytocin_titration" && (
+                            <div className="grid gap-4 sm:grid-cols-4">
                                 <Input
-                                    label="Ordered Dose (mg/kg)"
+                                    label="Oxytocin Added (IU)"
                                     type="number"
                                     step="any"
-                                    value={dosePerKg}
-                                    onChange={(e) => setDosePerKg(e.target.value)}
+                                    value={oxytocinUnits}
+                                    onChange={(e) => setOxytocinUnits(e.target.value)}
+                                />
+                                <Input
+                                    label="IV Bag Volume (mL)"
+                                    type="number"
+                                    value={oxytocinBagMl}
+                                    onChange={(e) => setOxytocinBagMl(e.target.value)}
+                                />
+                                <Input
+                                    label="Ordered Rate (mU/min)"
+                                    type="number"
+                                    step="any"
+                                    value={oxytocinTargetMu}
+                                    onChange={(e) => setOxytocinTargetMu(e.target.value)}
+                                />
+                                <Input
+                                    label="Drop Factor (gtt/mL)"
+                                    type="number"
+                                    value={dropFactor}
+                                    onChange={(e) => setDropFactor(e.target.value)}
+                                />
+                            </div>
+                        )}
+
+                        {calcMode === "peds_maintenance" && (
+                            <div className="max-w-xs">
+                                <Input
+                                    label="Child Weight (kg)"
+                                    type="number"
+                                    step="any"
+                                    value={weightKg}
+                                    onChange={(e) => setWeightKg(e.target.value)}
                                 />
                             </div>
                         )}
@@ -724,24 +1150,52 @@ export default function PharmacologyPage() {
 
                         {(calcMode === "oral_liquid" || calcMode === "reconstitution") && (
                             <div className="grid gap-4 sm:grid-cols-3">
-                                <Input
-                                    label="Desired Dose"
-                                    type="number"
-                                    step="any"
-                                    value={desiredDose}
-                                    onChange={(e) => setDesiredDose(e.target.value)}
-                                />
-                                <Input
-                                    label="Available Strength"
-                                    type="number"
-                                    step="any"
-                                    value={stockDose}
-                                    onChange={(e) => setStockDose(e.target.value)}
-                                />
+                                <div className="space-y-1">
+                                    <Input
+                                        label={`Desired Dose (${desiredUnit})`}
+                                        type="number"
+                                        step="any"
+                                        value={desiredDose}
+                                        onChange={(e) => setDesiredDose(e.target.value)}
+                                    />
+                                    <div className="flex gap-2 text-xs">
+                                        {(["mcg", "mg", "g"] as MassUnit[]).map((u) => (
+                                            <button
+                                                key={u}
+                                                type="button"
+                                                onClick={() => setDesiredUnit(u)}
+                                                className={`underline ${desiredUnit === u ? "font-bold text-brand-700" : "text-on-surface-muted"}`}
+                                            >
+                                                {u}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="space-y-1">
+                                    <Input
+                                        label={`Available Strength (${stockUnit})`}
+                                        type="number"
+                                        step="any"
+                                        value={stockDose}
+                                        onChange={(e) => setStockDose(e.target.value)}
+                                    />
+                                    <div className="flex gap-2 text-xs">
+                                        {(["mcg", "mg", "g"] as MassUnit[]).map((u) => (
+                                            <button
+                                                key={u}
+                                                type="button"
+                                                onClick={() => setStockUnit(u)}
+                                                className={`underline ${stockUnit === u ? "font-bold text-brand-700" : "text-on-surface-muted"}`}
+                                            >
+                                                {u}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
                                 <Input
                                     label={
                                         calcMode === "reconstitution"
-                                            ? "Diluent / Reconstituted Vol (mL)"
+                                            ? "Final Reconstituted Vol (mL)"
                                             : "Per Unit / Volume (mL or tab)"
                                     }
                                     type="number"
@@ -772,37 +1226,51 @@ export default function PharmacologyPage() {
 
                 {tab === "drill" && (
                     <div className="rounded-2xl border border-border bg-white p-5 sm:p-6 space-y-4">
-                        <div className="flex flex-wrap gap-1.5">
-                            {drillCategories.map((cat) => (
-                                <button
-                                    key={cat}
-                                    type="button"
-                                    onClick={() => {
-                                        setDrillCategory(cat)
-                                        setDrillIdx(0)
-                                        setUserAnswer("")
-                                        setCheckedDrill(null)
-                                    }}
-                                    className={`rounded-full px-3 py-1 text-xs font-semibold transition ${drillCategory === cat
-                                            ? "bg-brand-700 text-white"
-                                            : "border border-border bg-gray-50 text-on-surface-muted hover:text-on-surface"
-                                        }`}
-                                >
-                                    {cat}
-                                </button>
-                            ))}
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                            <div className="flex flex-wrap gap-1.5">
+                                {drillCategories.map((cat) => (
+                                    <button
+                                        key={cat}
+                                        type="button"
+                                        onClick={() => {
+                                            setDrillCategory(cat)
+                                            setDrillIdx(0)
+                                            setUserAnswer("")
+                                            setCheckedDrill(null)
+                                        }}
+                                        className={`rounded-full px-3 py-1 text-xs font-semibold transition ${drillCategory === cat
+                                                ? "bg-brand-700 text-white"
+                                                : "border border-border bg-gray-50 text-on-surface-muted hover:text-on-surface"
+                                            }`}
+                                    >
+                                        {cat}
+                                    </button>
+                                ))}
+                            </div>
+                            <Button variant="secondary" onClick={handleGenerateRandomDrill}>
+                                + New Random Problem
+                            </Button>
                         </div>
+
                         <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-on-surface-muted">
                             <span className="font-semibold text-on-surface">
                                 Question {safeDrillIdx + 1} of {visibleDrills.length} • {activeDrill.category}
                             </span>
                             <span>
-                                Mastered: {solvedIds.length}/{DRILL_PROBLEMS.length} • Unit: {activeDrill.unit}
+                                Mastered: {solvedIds.length}/{drillPool.length} • Unit: {activeDrill.unit}
                             </span>
                         </div>
 
                         <p className="text-sm sm:text-base font-medium text-on-surface leading-relaxed">
-                            {activeDrill.prompt} <Link to={buildAiTutorUrl(`Walk step-by-step through this pharmacology calculation (${activeDrill.category}): ${activeDrill.prompt}`)} className="ml-2 text-xs font-medium text-brand-700 underline">Ask AI Tutor to explain this calculation</Link>
+                            {activeDrill.prompt}{" "}
+                            <Link
+                                to={buildAiTutorUrl(
+                                    `Walk step-by-step through this pharmacology calculation (${activeDrill.category}): ${activeDrill.prompt}`
+                                )}
+                                className="ml-2 text-xs font-medium text-brand-700 underline"
+                            >
+                                Ask AI Tutor to explain this calculation
+                            </Link>
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-3 sm:items-end">

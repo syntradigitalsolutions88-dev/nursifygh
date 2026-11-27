@@ -17,6 +17,8 @@ export interface CaseStageItem {
 
 export interface ClinicalCaseItem {
     id: string
+    program?: string
+    program_label?: string
     course_code: string | null
     title: string
     condition_tag: string
@@ -45,11 +47,16 @@ export interface StageAnswerFeedback {
     attempt: NonNullable<ClinicalCaseItem["attempt"]>
 }
 
-export async function fetchClinicalCases(difficulty?: string) {
-    const res = await api.get<{ results: ClinicalCaseItem[] }>("/academics/cases/", {
-        params: difficulty ? { difficulty } : undefined,
+export async function fetchClinicalCases(params?: { difficulty?: string; program?: string }) {
+    const queryParams: Record<string, string> = {}
+    if (params?.difficulty) queryParams.difficulty = params.difficulty
+    if (params?.program) queryParams.program = params.program
+
+    const res = await api.get<{ results?: ClinicalCaseItem[] } | ClinicalCaseItem[]>("/academics/cases/", {
+        params: Object.keys(queryParams).length > 0 ? queryParams : undefined,
     })
-    return res.data.results
+    if (Array.isArray(res.data)) return res.data
+    return res.data.results ?? []
 }
 
 export async function submitCaseStageAnswer(caseId: string, stepNumber: number, selectedKey: string) {
@@ -57,5 +64,10 @@ export async function submitCaseStageAnswer(caseId: string, stepNumber: number, 
         step_number: stepNumber,
         selected_key: selectedKey,
     })
+    return res.data
+}
+
+export async function resetCaseAttempt(caseId: string) {
+    const res = await api.delete<{ reset: boolean }>(`/academics/cases/${caseId}/`)
     return res.data
 }

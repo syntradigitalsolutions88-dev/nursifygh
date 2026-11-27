@@ -292,6 +292,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                         </div>
                         <div className="grid grid-cols-2 gap-2">
                             {[
+                                { label: "Master Care Plans", to: "/library" },
                                 { label: "Smart Revision", to: "/revision" },
                                 { label: "Clinical Cases", to: "/cases" },
                                 { label: "Pharmacology", to: "/pharmacology" },
