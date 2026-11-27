@@ -123,7 +123,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                 <span>Commissions &amp; Payouts</span>
                             </NavLink>
                             <NavLink
-                                to="/admin-notifications"
+                                to="/admin-activity"
                                 className={({ isActive }) =>
                                     `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isActive ? "bg-brand-100 text-brand-900" : "text-brand-800 bg-brand-50/70 hover:bg-brand-100"}`
                                 }

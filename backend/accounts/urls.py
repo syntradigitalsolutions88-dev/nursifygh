@@ -1,3 +1,4 @@
+from .activity_tracker_view import AdminStudentActivityOverviewView
 """URL configuration for the accounts app."""
 
 from django.urls import path
@@ -35,6 +36,7 @@ from .views import (
 app_name = "accounts"
 
 urlpatterns = [
+    path("admin/student-activity/", AdminStudentActivityOverviewView.as_view(), name="admin-student-activity"),
     path("register/", RegisterView.as_view(), name="register"),
     path("login/", LoginView.as_view(), name="login"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token-refresh"),

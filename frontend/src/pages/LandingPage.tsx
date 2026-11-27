@@ -314,7 +314,14 @@ export default function LandingPage() {
                         </p>
                     </div>
                 </div>
-            </footer>
+            
+{/* NAC & NAP Certificate Tracks */}
+<div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-slate-600">
+  <span className="px-2.5 py-1 rounded-full bg-slate-100 font-medium text-slate-800">NAC — Nurse Assistant Clinical (L100–L200)</span>
+  <span className="px-2.5 py-1 rounded-full bg-slate-100 font-medium text-slate-800">NAP — Nurse Assistant Preventive (L100–L200)</span>
+</div>
+
+      </footer>
 
             <ChatWidget />
 

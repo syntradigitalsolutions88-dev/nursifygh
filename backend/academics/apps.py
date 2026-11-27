@@ -1,9 +1,10 @@
-"""App configuration for the academics app."""
-
 from django.apps import AppConfig
 
 
 class AcademicsConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
     name = "academics"
-    verbose_name = "Academics & Quizzes"
+
+    def ready(self):
+        from .admin_tracker import register_student_activity_tracker
+        register_student_activity_tracker()
