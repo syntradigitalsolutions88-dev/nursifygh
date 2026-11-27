@@ -21,8 +21,10 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument("--add", type=int, default=200, help="Number of NEW questions to add to each matching course (default: 200)")
+        parser.add_argument("--target", type=int, default=0, help="Optional total question target per course (skips courses already >= target)")
         parser.add_argument("--batch", type=int, default=12, help="Questions per LLM API call (default: 12)")
         parser.add_argument("--program", type=str, default="", help="Optional filter: GENERAL, COMMUNITY, MIDWIFERY, PSYCHIATRIC")
+        parser.add_argument("--model", type=str, default="", help="Override LLM model (e.g. llama-3.3-70b-versatile)")
 
     def _get_llm_config(self):
         api_key = (
@@ -45,7 +47,7 @@ class Command(BaseCommand):
     def _call_llm(self, api_key, base_url, model, course, count, existing_samples):
         avoid_block = ""
         if existing_samples:
-            avoid_block = "Avoid duplicating or rephrasing these existing stems:\n- " + "\n- ".join(existing_samples[:25])
+            avoid_block = "Avoid duplicating or rephrasing these existing stems:\n- " + "\n- ".join(existing_samples[:10])
 
         prompt = (
             f"Generate {count} unique, exam-standard Nursing & Midwifery Council (N&MC Ghana) multiple-choice questions "
@@ -67,7 +69,7 @@ class Command(BaseCommand):
         payload = json.dumps({
             "model": model,
             "temperature": 0.75,
-            "max_tokens": 4096,
+            "max_tokens": 2200,
             "response_format": {"type": "json_object"},
             "messages": [
                 {"role": "system", "content": "You are a senior Ghanaian Nursing & Midwifery Council (N&MC) exam item writer. Output strictly valid JSON only."},
@@ -93,7 +95,13 @@ class Command(BaseCommand):
         raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
         try:
             parsed = json.loads(raw)
-            return parsed.get("questions", [])
+            if isinstance(parsed, list):
+                return [x for x in parsed if isinstance(x, dict)]
+            if isinstance(parsed, dict):
+                for val in parsed.values():
+                    if isinstance(val, list):
+                        return [x for x in val if isinstance(x, dict)]
+            return []
         except json.JSONDecodeError:
             decoder = json.JSONDecoder()
             items = []
@@ -118,11 +126,18 @@ class Command(BaseCommand):
 
     def handle(self, *args, **opts):
         add_count = opts["add"]
+        target_total = opts["target"]
         batch_size = opts["batch"]
         prog_filter = opts["program"].strip().upper()
 
-        api_key, base_url, model = self._get_llm_config()
-        self.stdout.write(self.style.SUCCESS(f"Connected to {base_url} ({model}) | Adding +{add_count} Qs per priority course"))
+        api_key, base_url, default_model = self._get_llm_config()
+        model_pool = ["qwen/qwen3.8-27b", "openai/gpt-oss-safeguard-20b", "openai/gpt-oss-20b", "openai/gpt-oss-120b"]
+        if opts["model"].strip():
+            m_override = opts["model"].strip()
+            model_pool = [m_override] + [m for m in model_pool if m != m_override]
+        model_idx = 0
+        model = model_pool[model_idx]
+        self.stdout.write(self.style.SUCCESS(f"Connected to {base_url} | Model pool: {model_pool} | Adding +{add_count} Qs per priority course"))
 
         program_order = ["GENERAL", "MIDWIFERY", "COMMUNITY", "PSYCHIATRIC"]
         if prog_filter:
@@ -148,34 +163,58 @@ class Command(BaseCommand):
         for course in courses:
             close_old_connections()
             start_total = Question.objects.filter(course=course).count()
-            goal_total = start_total + add_count
+            if target_total > 0:
+                if start_total >= target_total:
+                    self.stdout.write(self.style.SUCCESS(f"[SKIP] {course.code} already at {start_total} (>= {target_total})"))
+                    continue
+                course_add = target_total - start_total
+                goal_total = target_total
+            else:
+                course_add = add_count
+                goal_total = start_total + add_count
             added_for_course = 0
 
             self.stdout.write(self.style.HTTP_INFO(
-                f"\n=== {course.code} | {course.title} ({course.program} L{course.level}) | Start: {start_total} -> Goal: {goal_total} (+{add_count}) ==="
+                f"\n=== {course.code} | {course.title} ({course.program} L{course.level}) | Start: {start_total} -> Goal: {goal_total} (+{course_add}) ==="
             ))
 
-            while added_for_course < add_count:
+            while added_for_course < course_add:
                 close_old_connections()
-                remaining = add_count - added_for_course
-                needed = min(batch_size, remaining)
+                remaining = course_add - added_for_course
+                needed = min(4 if "qwen" in model else batch_size, remaining)
 
                 existing_qs = list(
                     Question.objects.filter(course=course).order_by("-id").values_list("text", flat=True)
                 )
                 normalized_existing = {s.strip().lower() for s in existing_qs}
-                recent_samples = existing_qs[:30]
+                recent_samples = [s[:120] for s in existing_qs[:10]]
 
-                self.stdout.write(f"  [{course.code}: +{added_for_course}/{add_count}] Generating {needed} Qs...")
+                self.stdout.write(f"  [{course.code}: +{added_for_course}/{course_add}] Generating {needed} Qs...")
                 try:
                     items = self._call_llm(api_key, base_url, model, course, needed, recent_samples)
                 except urlerror.HTTPError as exc:
                     body = exc.read().decode("utf-8", errors="ignore")
-                    wait_sec = 15.0
+                    wait_sec = 20.0
                     m = re.search(r"try again in ([0-9.]+)s", body)
-                    if m:
+                    m_min = re.search(r"try again in ([0-9]+)m([0-9.]+)s", body)
+                    if m_min:
+                        wait_sec = int(m_min.group(1)) * 60 + float(m_min.group(2)) + 2.0
+                    elif m:
                         wait_sec = float(m.group(1)) + 2.0
-                    self.stdout.write(self.style.WARNING(f"  HTTP {exc.code}: waiting {wait_sec:.1f}s before retry..."))
+                    msg = ""
+                    try:
+                        msg = json.loads(body).get("error", {}).get("message", "")[:140]
+                    except Exception:
+                        pass
+                    self.stdout.write(self.style.WARNING(f"  HTTP {exc.code} [{model}] ({msg})"))
+                    if exc.code == 429 and ("tokens per day" in msg.lower() or "tpd" in msg.lower() or "request too large" in msg.lower() or wait_sec > 60):
+                        if len(model_pool) > 1:
+                            model_idx = (model_idx + 1) % len(model_pool)
+                            model = model_pool[model_idx]
+                            self.stdout.write(self.style.SUCCESS(f"  -> Switching to backup model: {model}"))
+                            time.sleep(2.0)
+                            continue
+                    self.stdout.write(self.style.WARNING(f"  -> Waiting {wait_sec:.1f}s before retry..."))
                     time.sleep(wait_sec)
                     continue
                 except Exception as exc:
@@ -185,7 +224,9 @@ class Command(BaseCommand):
 
                 saved = 0
                 for item in items:
-                    if added_for_course >= add_count:
+                    if not isinstance(item, dict):
+                        continue
+                    if added_for_course >= course_add:
                         break
                     q_text = (item.get("text") or "").strip()
                     choices = item.get("choices") or []
@@ -241,8 +282,8 @@ class Command(BaseCommand):
 
                 current_total = Question.objects.filter(course=course).count()
                 self.stdout.write(self.style.SUCCESS(
-                    f"  -> Saved {saved} new Qs ({course.code} now at {current_total} total | +{added_for_course}/{add_count})"
+                    f"  -> Saved {saved} new Qs ({course.code} now at {current_total} total | +{added_for_course}/{course_add})"
                 ))
-                time.sleep(3.5)
+                time.sleep(6.0)
 
         self.stdout.write(self.style.SUCCESS("\nAll priority courses boosted by +200 questions!"))
