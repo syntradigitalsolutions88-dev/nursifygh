@@ -228,7 +228,7 @@ export default function LandingPage() {
                             <ul className="mt-8 space-y-4">
                                 {[
                                     "All courses: Levels 100, 200, 300",
-                                    "All 4 programs: RGN, RM, RPN, CHN",
+                                    "All 6 programs: RGN, RM, RPN, CHN, NAC, NAP",
                                     "Thousands of NMC-style questions",
                                     "Detailed rationales for every answer",
                                     "Unlimited 60-minute mock exams",

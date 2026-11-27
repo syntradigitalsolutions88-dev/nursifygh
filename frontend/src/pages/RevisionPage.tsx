@@ -339,7 +339,7 @@ export default function RevisionPage() {
                     <div>
                         <h1 className="text-h1">Smart Revision Centre</h1>
                         <p className="mt-1 text-body-sm text-on-surface-muted">
-                            Spaced-repetition flashcards, weak-topic drills, and daily revision streaks for RGN, RM, RPN &amp; CHN.
+                            Spaced-repetition flashcards, weak-topic drills, and daily revision streaks for RGN, RM, RPN, CHN, NAC &amp; NAP.
                         </p>
                     </div>
                     <div className="flex flex-wrap gap-2">
