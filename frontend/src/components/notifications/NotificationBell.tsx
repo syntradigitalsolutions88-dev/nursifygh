@@ -2,10 +2,28 @@ import { useState, useRef, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 
-import { getNotifications, markAllRead } from "../../api/notifications"
+import { getNotifications, markRead, markAllRead } from "../../api/notifications"
+
+const DISMISSED_KEY = "dismissed_broadcasts"
+
+function getDismissedBroadcasts(): string[] {
+    try {
+        return JSON.parse(localStorage.getItem(DISMISSED_KEY) || "[]")
+    } catch {
+        return []
+    }
+}
+
+function saveDismissedBroadcasts(ids: string[]) {
+    try {
+        localStorage.setItem(DISMISSED_KEY, JSON.stringify(ids))
+        window.dispatchEvent(new Event("nursify:broadcasts-updated"))
+    } catch {}
+}
 
 export default function NotificationBell() {
     const [open, setOpen] = useState(false)
+    const [dismissedIds, setDismissedIds] = useState<string[]>(getDismissedBroadcasts)
     const ref = useRef<HTMLDivElement>(null)
     const queryClient = useQueryClient()
 
@@ -13,6 +31,21 @@ export default function NotificationBell() {
         queryKey: ["notifications"],
         queryFn: getNotifications,
         refetchInterval: 60000,
+    })
+
+    useEffect(() => {
+        const sync = () => setDismissedIds(getDismissedBroadcasts())
+        window.addEventListener("nursify:broadcasts-updated", sync)
+        window.addEventListener("storage", sync)
+        return () => {
+            window.removeEventListener("nursify:broadcasts-updated", sync)
+            window.removeEventListener("storage", sync)
+        }
+    }, [])
+
+    const markOneMutation = useMutation({
+        mutationFn: markRead,
+        onSuccess: () => queryClient.invalidateQueries({ queryKey: ["notifications"] }),
     })
 
     const markAllMutation = useMutation({
@@ -28,11 +61,35 @@ export default function NotificationBell() {
         return () => document.removeEventListener("mousedown", handleClick)
     }, [])
 
-    const unread = data?.unread_count ?? 0
+    const unreadBroadcasts = (data?.broadcasts || []).filter(
+        (b) => !dismissedIds.includes(String(b.id))
+    )
+    const unreadPersonal = data?.personal || []
+    const unread = unreadBroadcasts.length + unreadPersonal.length
+
+    function handleMarkBroadcastRead(id: string) {
+        const sid = String(id)
+        if (!dismissedIds.includes(sid)) {
+            const next = [...dismissedIds, sid]
+            setDismissedIds(next)
+            saveDismissedBroadcasts(next)
+        }
+    }
+
+    function handleMarkAllRead() {
+        const allBroadcastIds = (data?.broadcasts || []).map((b) => String(b.id))
+        if (allBroadcastIds.length > 0) {
+            const merged = Array.from(new Set([...dismissedIds, ...allBroadcastIds]))
+            setDismissedIds(merged)
+            saveDismissedBroadcasts(merged)
+        }
+        markAllMutation.mutate()
+    }
 
     return (
         <div className="relative" ref={ref}>
             <button
+                type="button"
                 onClick={() => setOpen(!open)}
                 className={`relative h-9 w-9 rounded-full flex items-center justify-center transition-colors ${unread > 0 ? "bg-brand-50 text-brand-700 ring-2 ring-brand-200" : "text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface"}`}
                 aria-label="Notifications"
@@ -53,18 +110,20 @@ export default function NotificationBell() {
                         <p className="text-sm font-bold text-on-surface">Notifications</p>
                         {unread > 0 && (
                             <button
-                                onClick={() => markAllMutation.mutate()}
-                                className="text-xs text-brand-600 font-semibold hover:underline"
+                                type="button"
+                                onClick={handleMarkAllRead}
+                                disabled={markAllMutation.isPending}
+                                className="text-xs text-brand-600 font-semibold hover:underline disabled:opacity-50"
                             >
-                                Mark all read
+                                {markAllMutation.isPending ? "Marking..." : "Mark all read"}
                             </button>
                         )}
                     </div>
 
                     <div className="max-h-96 overflow-y-auto">
-                        {data?.broadcasts && data.broadcasts.length > 0 && (
+                        {unreadBroadcasts.length > 0 && (
                             <div className="border-b border-border">
-                                {data.broadcasts.map((b) => (
+                                {unreadBroadcasts.map((b) => (
                                     <NotificationItem
                                         key={b.id}
                                         type={b.notification_type}
@@ -72,14 +131,18 @@ export default function NotificationBell() {
                                         message={b.message}
                                         actionUrl={b.action_url}
                                         actionLabel={b.action_label}
-                                        onClick={() => setOpen(false)}
+                                        onNavigate={() => {
+                                            handleMarkBroadcastRead(b.id)
+                                            setOpen(false)
+                                        }}
+                                        onMarkRead={() => handleMarkBroadcastRead(b.id)}
                                     />
                                 ))}
                             </div>
                         )}
 
-                        {data?.personal && data.personal.length > 0 ? (
-                            data.personal.map((n) => (
+                        {unreadPersonal.length > 0 ? (
+                            unreadPersonal.map((n) => (
                                 <NotificationItem
                                     key={n.id}
                                     type={n.notification_type}
@@ -87,11 +150,15 @@ export default function NotificationBell() {
                                     message={n.message}
                                     actionUrl={n.action_url}
                                     actionLabel={n.action_label}
-                                    onClick={() => setOpen(false)}
+                                    onNavigate={() => {
+                                        markOneMutation.mutate(n.id)
+                                        setOpen(false)
+                                    }}
+                                    onMarkRead={() => markOneMutation.mutate(n.id)}
                                 />
                             ))
                         ) : (
-                            data?.broadcasts?.length === 0 && (
+                            unreadBroadcasts.length === 0 && (
                                 <div className="py-12 text-center text-sm text-on-surface-muted">
                                     You're all caught up! 🎉
                                 </div>
@@ -105,14 +172,15 @@ export default function NotificationBell() {
 }
 
 function NotificationItem({
-    type, title, message, actionUrl, actionLabel, onClick,
+    type, title, message, actionUrl, actionLabel, onNavigate, onMarkRead,
 }: {
     type: string
     title: string
     message: string
     actionUrl: string
     actionLabel: string
-    onClick: () => void
+    onNavigate: () => void
+    onMarkRead: () => void
 }) {
     const colors: Record<string, string> = {
         INFO: "bg-blue-50 border-blue-200 text-blue-800",
@@ -125,15 +193,26 @@ function NotificationItem({
         <div className={`px-4 py-3 border-b border-border last:border-b-0 ${colors[type] || colors.INFO}`}>
             <p className="text-sm font-bold mb-1">{title}</p>
             <p className="text-xs leading-relaxed mb-2">{message}</p>
-            {actionUrl && actionLabel && (
-                <Link
-                    to={actionUrl.startsWith("/") || actionUrl.startsWith("http") ? actionUrl : `/${actionUrl}`}
-                    onClick={onClick}
-                    className="inline-block text-xs font-bold underline hover:no-underline"
+            <div className="flex items-center justify-between gap-2">
+                {actionUrl && actionLabel ? (
+                    <Link
+                        to={actionUrl.startsWith("/") || actionUrl.startsWith("http") ? actionUrl : `/${actionUrl}`}
+                        onClick={onNavigate}
+                        className="inline-block text-xs font-bold underline hover:no-underline"
+                    >
+                        {actionLabel} →
+                    </Link>
+                ) : (
+                    <span />
+                )}
+                <button
+                    type="button"
+                    onClick={onMarkRead}
+                    className="text-[11px] font-semibold opacity-80 hover:opacity-100 underline"
                 >
-                    {actionLabel} →
-                </Link>
-            )}
+                    Mark as read
+                </button>
+            </div>
         </div>
     )
 }

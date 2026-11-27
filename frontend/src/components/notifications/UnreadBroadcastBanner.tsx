@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
 import { getNotifications } from "../../api/notifications"
@@ -11,6 +11,20 @@ export default function UnreadBroadcastBanner() {
             return []
         }
     })
+
+    useEffect(() => {
+        const sync = () => {
+            try {
+                setDismissedIds(JSON.parse(localStorage.getItem("dismissed_broadcasts") || "[]"))
+            } catch {}
+        }
+        window.addEventListener("nursify:broadcasts-updated", sync)
+        window.addEventListener("storage", sync)
+        return () => {
+            window.removeEventListener("nursify:broadcasts-updated", sync)
+            window.removeEventListener("storage", sync)
+        }
+    }, [])
 
     const { data } = useQuery({
         queryKey: ["notifications"],
@@ -35,6 +49,7 @@ export default function UnreadBroadcastBanner() {
         setDismissedIds(next)
         try {
             localStorage.setItem("dismissed_broadcasts", JSON.stringify(next))
+            window.dispatchEvent(new Event("nursify:broadcasts-updated"))
         } catch {}
     }
 
