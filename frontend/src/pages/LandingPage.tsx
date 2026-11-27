@@ -9,7 +9,7 @@ import PwaInstallPrompt from "../components/PwaInstallPrompt"
 const features = [
     {
         title: "NMC-Style Questions for All 4 Programs",
-        description: "Practice real exam questions across RGN, RM, RPN, and CHN with detailed rationales for every option. You'll understand why an answer is correct.",
+        description: "Practice real exam questions across RGN, RM, RPN, CHN, NAC, and NAP with detailed rationales for every option. You'll understand why an answer is correct.",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-6 w-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -39,7 +39,7 @@ const features = [
 const faqs = [
     {
         q: "Who is NursifyGH for?",
-        a: "All nursing and midwifery students in Ghana — General Nursing (RGN), Midwifery (RM), Psychiatric Nursing (RPN), and Community Health Nursing (CHN) — at Levels 100, 200, and 300, including those preparing for NMC licensing exams.",
+        a: "All nursing and midwifery students in Ghana — General Nursing (RGN), Midwifery (RM), Psychiatric Nursing (RPN), Community Health Nursing (CHN), Nurse Assistant Clinical (NAC), and Nurse Assistant Preventive (NAP) — at Levels 100, 200, and 300 (Levels 100 and 200 for NAC & NAP), including those preparing for NMC licensing exams.",
     },
     {
         q: "What courses are available?",
