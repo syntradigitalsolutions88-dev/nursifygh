@@ -5,19 +5,17 @@
   <p>
     <strong>NAC &amp; NAP Courses:</strong> {{ nac_nap_course_count }} |
     <strong>NAC &amp; NAP Questions:</strong> {{ nac_nap_question_count }} |
-    <strong>Matching Students:</strong> {{ student_count }}
+    <strong>Tracked Students:</strong> {{ student_count }}
   </p>
 
   <form method="get" style="margin-bottom: 18px; display: flex; gap: 8px; flex-wrap: wrap;">
-    <input type="text" name="q" value="{{ search_q }}" placeholder="Search name, email, phone, school..." style="min-width: 240px;" />
+    <input type="text" name="q" value="{{ search_q }}" placeholder="Search student name, email, phone..." />
     <select name="program">
       <option value="">All Programs</option>
-      <option value="GENERAL" {% if program_filter == "GENERAL" %}selected{% endif %}>RGN (General)</option>
-      <option value="MIDWIFERY" {% if program_filter == "MIDWIFERY" %}selected{% endif %}>RM (Midwifery)</option>
-      <option value="PSYCHIATRIC" {% if program_filter == "PSYCHIATRIC" %}selected{% endif %}>RPN (Psychiatric)</option>
-      <option value="COMMUNITY" {% if program_filter == "COMMUNITY" %}selected{% endif %}>CHN (Community)</option>
-      <option value="NAC" {% if program_filter == "NAC" %}selected{% endif %}>NAC (Nurse Assistant Clinical)</option>
-      <option value="NAP" {% if program_filter == "NAP" %}selected{% endif %}>NAP (Nurse Assistant Preventive)</option>
+      <option value="NAC" {% if program_filter == "NAC" %}selected{% endif %}>NAC</option>
+      <option value="NAP" {% if program_filter == "NAP" %}selected{% endif %}>NAP</option>
+      <option value="RGN" {% if program_filter == "RGN" %}selected{% endif %}>RGN</option>
+      <option value="RPN" {% if program_filter == "RPN" %}selected{% endif %}>RPN</option>
     </select>
     <button type="submit" class="button">Filter Activity</button>
     <a href="/admin/" class="button">Back to Admin</a>
@@ -28,9 +26,8 @@
     <thead>
       <tr>
         <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Student</th>
-        <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Program</th>
         <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Course</th>
-        <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Score</th>
+        <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Score / Result</th>
         <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Timestamp</th>
       </tr>
     </thead>
@@ -38,18 +35,17 @@
       {% for row in recent_attempts %}
       <tr>
         <td style="padding:6px; border-bottom:1px solid #eee;">{{ row.student }}</td>
-        <td style="padding:6px; border-bottom:1px solid #eee;">{{ row.program }}</td>
         <td style="padding:6px; border-bottom:1px solid #eee;">{{ row.course }}</td>
         <td style="padding:6px; border-bottom:1px solid #eee;">{{ row.score }}</td>
         <td style="padding:6px; border-bottom:1px solid #eee;">{{ row.created_at }}</td>
       </tr>
       {% empty %}
-      <tr><td colspan="5" style="padding:8px;">No recent quiz attempts found for this filter.</td></tr>
+      <tr><td colspan="4" style="padding:8px;">No recent quiz/practice attempts recorded yet.</td></tr>
       {% endfor %}
     </tbody>
   </table>
 
-  <h2>Recent Ambassador Commissions &amp; Feedback</h2>
+  <h2>Recent Commissions &amp; Feedback</h2>
   <p>
     <strong>Recent Commissions:</strong> {{ recent_commissions|length }} shown |
     <strong>Recent Feedback Items:</strong> {{ recent_feedback|length }} shown

@@ -1,3 +1,4 @@
+from pathlib import Path
 from django.apps import apps
 from django.contrib import admin
 from django.core.management.base import BaseCommand
