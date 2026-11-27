@@ -106,7 +106,7 @@ export default function LandingPage() {
                     </h1>
 
                     <p className="mt-6 max-w-2xl mx-auto text-lg text-brand-100/80 leading-relaxed">
-                        Whether you're tackling <strong className="text-white">Level 100 fundamentals, Level 200 clinicals, or Level 300 N&amp;MC licensing</strong>—master semester quizzes, timed mock exams, NANDA care plans, and your clinical logbook in one place. Built for <strong className="text-white">RGN, RM, RPN, and CHN</strong>.
+                        Whether you're tackling <strong className="text-white">Level 100 fundamentals, Level 200 clinicals, or Level 300 N&amp;MC licensing</strong>—master semester quizzes, timed mock exams, NANDA care plans, and your clinical logbook in one place. Built for <strong className="text-white">RGN, RM, RPN, CHN, NAC, and NAP</strong>.
                     </p>
 
                     <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
