@@ -91,7 +91,12 @@ def _clean_ai_output(text: str) -> str:
     return result.strip()
 
 
-def _call_live_llm(prompt: str, history: list | None = None) -> tuple[str | None, str | None]:
+def _call_live_llm(
+    user_prompt: str,
+    history: list[dict] | None = None,
+    system_override: str | None = None,
+    max_tokens: int = 1600,
+) -> tuple[str | None, str | None]:
     api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
     api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
     model = os.getenv("LLM_MODEL", "openai/gpt-oss-120b").strip()
@@ -109,7 +114,7 @@ def _call_live_llm(prompt: str, history: list | None = None) -> tuple[str | None
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             *[{"role": ("assistant" if m.get("role") == "assistant" else "user"), "content": str(m.get("content") or "")[:1200]} for m in (history or [])[-6:] if str(m.get("content") or "").strip()],
-            {"role": "user", "content": prompt},
+            {"role": "user", "content": user_prompt},
         ],
     }
 
