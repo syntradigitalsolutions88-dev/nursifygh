@@ -304,57 +304,85 @@ def _generate_tutor_response(prompt_text: str) -> dict:
 def _call_vision_llm(user_prompt: str, image_data_url: str) -> tuple[str | None, str | None]:
     api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
     api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
-    vision_model = os.getenv("LLM_VISION_MODEL", "qwen/qwen3.8-27b").strip()
 
     if not api_key or not api_url or not image_data_url.startswith("data:image/"):
         return None, None
 
+    env_vision = (os.getenv("LLM_VISION_MODEL") or "").strip()
+    candidate_models = []
+    for m in [
+        env_vision,
+        "meta-llama/llama-4-scout-17b-16e-instruct",
+        "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "qwen/qwen3.8-27b",
+        "llama-3.2-90b-vision-preview",
+        "llama-3.2-11b-vision-preview",
+    ]:
+        if m and m not in candidate_models:
+            candidate_models.append(m)
+
     system_msg = (
-        "You are the NursifyGH Senior Clinical & Science Tutor for Ghanaian nursing and midwifery students "
-        "(RGN, RM, RPN, CHN, NAC, NAP). Examine the uploaded image carefully—whether it is a past exam question, "
-        "handwritten calculation, drug vial/leaflet, vital signs chart, partograph, ECG, or anatomy diagram. "
-        "Transcribe any visible text/numbers accurately, then provide a clear, step-by-step clinical explanation, "
-        "worked calculation, or N&MC exam rationale aligned with Ghana MoH/GHS/N&MC standards. Use clean Markdown."
+        "You are the NursifyGH Visual AI Assistant & Clinical Study Tutor. "
+        "Carefully examine the uploaded image and describe EVERYTHING visible in full detail—including all text, "
+        "headings, numbers, labels, diagrams, charts, tables, people, objects, and layout—even if the picture is "
+        "not a clinical case or standard exam question. "
+        "First provide a clear, accurate description and transcription of what is shown in the image; then, if it "
+        "contains a question, calculation, drug label, chart, or study concept, solve and explain it step by step. "
+        "Use clean Markdown headings and bullet points."
     )
 
-    payload = {
-        "model": vision_model,
-        "temperature": 0.25,
-        "max_tokens": 1600,
-        "messages": [
-            {"role": "system", "content": system_msg},
-            {
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": user_prompt},
-                    {"type": "image_url", "image_url": {"url": image_data_url}},
-                ],
+    for vision_model in candidate_models:
+        payload = {
+            "model": vision_model,
+            "temperature": 0.25,
+            "max_tokens": 1800,
+            "messages": [
+                {"role": "system", "content": system_msg},
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": user_prompt},
+                        {"type": "image_url", "image_url": {"url": image_data_url}},
+                    ],
+                },
+            ],
+        }
+
+        req = urllib.request.Request(
+            api_url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {api_key}",
+                "User-Agent": "NursifyGH-VisionTutor/1.1",
             },
-        ],
-    }
+            method="POST",
+        )
 
-    req = urllib.request.Request(
-        api_url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}",
-            "User-Agent": "NursifyGH-VisionTutor/1.0",
-        },
-        method="POST",
-    )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                choices = data.get("choices") or []
+                if not choices:
+                    continue
+                content = ((choices[0].get("message") or {}).get("content") or "").strip()
+                if content:
+                    return content, f"NursifyGH Visual AI • {vision_model}"
+        except Exception as exc:
+            err_detail = ""
+            if hasattr(exc, "read"):
+                try:
+                    err_detail = exc.read().decode("utf-8", errors="ignore")[:220]
+                except Exception:
+                    pass
+            logger.warning(
+                "Vision model %s skipped (%s): %s %s",
+                vision_model,
+                type(exc).__name__,
+                exc,
+                err_detail,
+            )
 
-    try:
-        with urllib.request.urlopen(req, timeout=28) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            choices = data.get("choices") or []
-            if not choices:
-                return None, None
-            content = ((choices[0].get("message") or {}).get("content") or "").strip()
-            if content:
-                return content, f"NursifyGH Visual Clinical Solver • {vision_model}"
-    except Exception as exc:
-        logger.warning("Vision LLM fallback triggered (%s): %s", type(exc).__name__, exc)
     return None, None
 
 

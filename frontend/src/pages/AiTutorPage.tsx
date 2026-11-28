@@ -317,7 +317,7 @@ const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
 
 const DEPT_ORDER: DepartmentId[] = ["RGN", "RM", "RPN", "CHN", "NAC", "NAP"]
 const LEVELS = ["All Levels", "Level 100", "Level 200", "Level 300"]
-const PEARLS_STORAGE_KEY = "nursify_ai_tutor_saved_pearls_v2"
+const PEARLS_STORAGE_KEY = "nursify_ai_tutor_saved_pearls_v3"
 
 async function compressImageToDataUrl(file: File): Promise<string> {
     return new Promise((resolve, reject) => {
@@ -372,6 +372,7 @@ export default function AiTutorPage() {
     const [sending, setSending] = useState(false)
     const [isListening, setIsListening] = useState(false)
     const [copiedId, setCopiedId] = useState<string | null>(null)
+    const [openNoteIds, setOpenNoteIds] = useState<Record<string, boolean>>({})
 
     const [savedPearls, setSavedPearls] = useState<SavedPearl[]>(() => {
         try {
@@ -385,13 +386,16 @@ export default function AiTutorPage() {
     const dept = DEPARTMENTS[activeDeptId]
     const activeTool = dept.tools.find((t) => t.id === selectedToolId) || dept.tools[0]
 
+    // Strict per-department saved notes: notes saved in NAC stay ONLY in NAC
+    const deptPearls = savedPearls.filter((p) => p.department === activeDeptId)
+
     const [messages, setMessages] = useState<TutorMessage[]>([
         {
             id: "welcome-1",
             role: "tutor",
             framework: "RGN General Nursing • AI Study Studio Ready",
             content:
-                "Select your **Department** at the top (**RGN, RM, RPN, CHN, NAC, or NAP**) to load specialized clinical tools and exam drills—or tap the **Camera / Photo** button below to snap a past question, drug label, or calculation for me to solve.",
+                "Select your **Department** at the top (**RGN, RM, RPN, CHN, NAC, or NAP**) to load specialized clinical tools and exam drills—or tap the **Camera / Photo** button below to upload any picture, past question, drug label, or chart for me to describe and solve.",
         },
     ])
 
@@ -418,7 +422,7 @@ export default function AiTutorPage() {
                         id: "welcome-1",
                         role: "tutor",
                         framework: `${cfg.badgeText} • Studio Ready`,
-                        content: `Switched to **${cfg.fullName} (${cfg.shortName})**. ${cfg.tagline} Choose a specialized tool above, ask a question, or upload a picture to solve.`,
+                        content: `Switched to **${cfg.fullName} (${cfg.shortName})**. ${cfg.tagline} Choose a specialized tool above, ask a question, or upload any picture to describe and solve.`,
                     },
                 ]
             }
@@ -447,18 +451,18 @@ export default function AiTutorPage() {
         if (sending) return
 
         const levelTag = selectedLevel !== "All Levels" ? ` • ${selectedLevel}` : ""
-        const deptBadge = `${dept.shortName}${levelTag} • ${activeTool.label}`
+        const deptBadge = imgToSend
+            ? `${dept.shortName}${levelTag} • Visual Analyzer`
+            : `${dept.shortName}${levelTag} • ${activeTool.label}`
 
         const userDisplayText =
-            cleanTopic || "Solve and explain the uploaded clinical / exam picture step by step."
+            cleanTopic || "Describe everything in this image and solve or explain what is shown."
 
         const prefix = overridePrefix ?? activeTool.promptPrefix
         const apiPrompt = imgToSend
-            ? `[Department: ${dept.fullName} (${dept.shortName})${levelTag}] ${
-                  cleanTopic
-                      ? `${prefix} ${cleanTopic} (Also analyze the attached image carefully.)`
-                      : "Analyze this uploaded clinical or exam image carefully, transcribe any question/numbers, and solve or explain it step by step for a Ghanaian N&MC student."
-              }`
+            ? cleanTopic
+                ? `Examine the uploaded image thoroughly. First describe everything visible in the image (all text, numbers, labels, diagrams, people, or visuals—even if it is not a clinical item), and also address this user request: "${cleanTopic}".`
+                : "Examine the uploaded image thoroughly and describe everything visible in full detail (all text, headings, numbers, labels, diagrams, people, objects, and layout—even if it is not a clinical item). If there is a question, calculation, or study topic in the image, solve and explain it step by step."
             : `${prefix} ${cleanTopic} (Curriculum context: Ghanaian N&MC ${dept.fullName} [${dept.shortName}]${levelTag}.)`
 
         const userMsg: TutorMessage = {
@@ -494,7 +498,7 @@ export default function AiTutorPage() {
             const replyText =
                 typeof res.data?.reply === "string" && res.data.reply.trim()
                     ? res.data.reply.trim()
-                    : `Here is a structured **${dept.shortName}** clinical breakdown for **${userDisplayText}**: focus on baseline assessment, Ghana MoH/GHS/N&MC standards, safety checks, and patient education.`
+                    : `Here is a structured **${dept.shortName}** breakdown for **${userDisplayText}**: focus on baseline assessment, Ghana MoH/GHS/N&MC standards, safety checks, and patient education.`
 
             const frameworkLabel =
                 typeof res.data?.framework === "string" && res.data.framework.trim()
@@ -508,7 +512,7 @@ export default function AiTutorPage() {
                     role: "tutor",
                     content: replyText,
                     framework: frameworkLabel,
-                    topicHint: cleanTopic || undefined,
+                    topicHint: cleanTopic || "Uploaded Image Analysis",
                 },
             ])
         } catch {
@@ -518,7 +522,7 @@ export default function AiTutorPage() {
                     id: `t-${Date.now() + 1}`,
                     role: "tutor",
                     content:
-                        "I could not reach the live AI server right now. Please check your internet connection and tap **Ask Tutor** again.",
+                        "I could not reach the live AI server right now. Please check your internet connection and tap **Ask** again.",
                     framework: `${dept.shortName} Offline Notice`,
                     topicHint: cleanTopic || undefined,
                 },
@@ -548,11 +552,12 @@ export default function AiTutorPage() {
     }
 
     function handleSavePearl(msg: TutorMessage) {
-        if (savedPearls.some((p) => p.content === msg.content)) return
+        if (deptPearls.some((p) => p.content === msg.content)) return
+        const newId = `pearl-${Date.now()}`
         setSavedPearls((prev) => [
             {
-                id: `pearl-${Date.now()}`,
-                department: dept.id,
+                id: newId,
+                department: activeDeptId,
                 title: msg.topicHint || msg.framework || `${dept.shortName} Study Note`,
                 content: msg.content,
                 savedAt: new Date().toLocaleDateString("en-GB", {
@@ -562,6 +567,11 @@ export default function AiTutorPage() {
             },
             ...prev,
         ])
+        setOpenNoteIds((prev) => ({ ...prev, [newId]: true }))
+    }
+
+    function toggleOpenNote(id: string) {
+        setOpenNoteIds((prev) => ({ ...prev, [id]: !prev[id] }))
     }
 
     function startVoiceDictation() {
@@ -681,7 +691,7 @@ export default function AiTutorPage() {
                     </div>
                 </div>
 
-                {/* Step 3: Organized Compact Workspace Tabs (Tools | Sample Questions | Saved Notes) */}
+                {/* Step 3: Organized Compact Workspace Tabs (Tools | Sample Questions | Department Saved Notes) */}
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs space-y-3">
                     <div className="flex items-center gap-1.5 border-b border-slate-200 pb-2.5">
                         <button
@@ -693,7 +703,7 @@ export default function AiTutorPage() {
                                     : "text-slate-700 hover:bg-slate-100"
                             }`}
                         >
-                            {dept.shortName} Specialized Tools (4)
+                            {dept.shortName} Tools (4)
                         </button>
                         <button
                             type="button"
@@ -704,7 +714,7 @@ export default function AiTutorPage() {
                                     : "text-slate-700 hover:bg-slate-100"
                             }`}
                         >
-                            {dept.shortName} Practice Topics
+                            {dept.shortName} Topics
                         </button>
                         <button
                             type="button"
@@ -715,7 +725,7 @@ export default function AiTutorPage() {
                                     : "text-slate-700 hover:bg-slate-100"
                             }`}
                         >
-                            Saved ({savedPearls.length})
+                            {dept.shortName} Saved ({deptPearls.length})
                         </button>
                     </div>
 
@@ -768,36 +778,96 @@ export default function AiTutorPage() {
                     )}
 
                     {workspaceTab === "notes" && (
-                        <div className="space-y-2">
-                            {savedPearls.length === 0 ? (
+                        <div className="space-y-2.5">
+                            <div className="flex items-center justify-between">
+                                <p className="text-xs font-semibold text-slate-600">
+                                    Showing notes saved specifically for <strong>{dept.fullName} ({dept.shortName})</strong>
+                                </p>
+                                {deptPearls.length > 0 && (
+                                    <button
+                                        type="button"
+                                        onClick={() =>
+                                            setSavedPearls((prev) =>
+                                                prev.filter((item) => item.department !== activeDeptId)
+                                            )
+                                        }
+                                        className="text-xs font-semibold text-red-700 hover:underline"
+                                    >
+                                        Clear {dept.shortName} Notes
+                                    </button>
+                                )}
+                            </div>
+
+                            {deptPearls.length === 0 ? (
                                 <p className="text-sm text-slate-600 py-2">
-                                    No saved notes yet. Tap <strong>Save Note</strong> under any answer to pin it here.
+                                    No saved notes in <strong>{dept.shortName}</strong> yet. Tap <strong>Save Note</strong> under any answer while in {dept.shortName} to keep it here.
                                 </p>
                             ) : (
-                                savedPearls.map((pearl) => (
-                                    <div
-                                        key={pearl.id}
-                                        className="rounded-xl border border-slate-200 bg-slate-50 p-3 space-y-1"
-                                    >
-                                        <div className="flex items-center justify-between gap-2">
-                                            <span className="text-xs font-bold text-slate-900">
-                                                [{pearl.department}] {pearl.title}
-                                            </span>
-                                            <button
-                                                type="button"
-                                                onClick={() =>
-                                                    setSavedPearls((prev) => prev.filter((x) => x.id !== pearl.id))
-                                                }
-                                                className="text-xs font-semibold text-red-600 hover:underline"
-                                            >
-                                                Remove
-                                            </button>
+                                deptPearls.map((pearl) => {
+                                    const isOpen = openNoteIds[pearl.id] ?? true
+                                    return (
+                                        <div
+                                            key={pearl.id}
+                                            className="rounded-xl border border-slate-200 bg-slate-50 p-3.5 space-y-2.5"
+                                        >
+                                            <div className="flex flex-wrap items-center justify-between gap-2">
+                                                <button
+                                                    type="button"
+                                                    onClick={() => toggleOpenNote(pearl.id)}
+                                                    className="text-left flex-1 min-w-0"
+                                                >
+                                                    <span className="text-sm font-bold text-slate-900">
+                                                        [{pearl.department}] {pearl.title}
+                                                    </span>
+                                                    <span className="ml-2 text-xs text-slate-500">
+                                                        {pearl.savedAt}
+                                                    </span>
+                                                </button>
+
+                                                <div className="flex items-center gap-2 shrink-0">
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => toggleOpenNote(pearl.id)}
+                                                        className="rounded-lg border border-slate-300 bg-white px-2.5 py-1 text-xs font-bold text-slate-800 hover:bg-slate-100"
+                                                    >
+                                                        {isOpen ? "Close Note" : "Open Note"}
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleCopy(pearl.id, pearl.content)}
+                                                        className="rounded-lg border border-slate-300 bg-white px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-100"
+                                                    >
+                                                        {copiedId === pearl.id ? "Copied ✓" : "Copy"}
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        onClick={() =>
+                                                            setSavedPearls((prev) =>
+                                                                prev.filter((x) => x.id !== pearl.id)
+                                                            )
+                                                        }
+                                                        className="text-xs font-semibold text-red-600 hover:underline px-1"
+                                                    >
+                                                        Remove
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            {isOpen && (
+                                                <div
+                                                    className="rounded-xl border border-slate-200 bg-white p-3.5 text-[15px] leading-relaxed text-slate-900
+                                                    [&_p]:mb-2.5 [&_p:last-child]:mb-0
+                                                    [&_strong]:font-bold [&_strong]:text-slate-950
+                                                    [&_ul]:list-disc [&_ul]:ml-5 [&_ul]:mb-2.5 [&_ul]:space-y-1
+                                                    [&_ol]:list-decimal [&_ol]:ml-5 [&_ol]:mb-2.5 [&_ol]:space-y-1
+                                                    [&_h1]:text-base [&_h2]:text-[15px] [&_h3]:text-[15px] [&_h1]:font-bold [&_h2]:font-bold [&_h3]:font-bold [&_h1]:mb-1.5 [&_h2]:mb-1.5 [&_h3]:mb-1"
+                                                >
+                                                    <ReactMarkdown>{pearl.content}</ReactMarkdown>
+                                                </div>
+                                            )}
                                         </div>
-                                        <p className="text-xs text-slate-700 line-clamp-3 whitespace-pre-line">
-                                            {pearl.content}
-                                        </p>
-                                    </div>
-                                ))
+                                    )
+                                })
                             )}
                         </div>
                     )}
@@ -807,7 +877,7 @@ export default function AiTutorPage() {
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 space-y-4 shadow-sm">
                     <div className="space-y-4">
                         {messages.map((m) => {
-                            const isSaved = savedPearls.some((p) => p.content === m.content)
+                            const isSaved = deptPearls.some((p) => p.content === m.content)
                             return (
                                 <div
                                     key={m.id}
@@ -836,7 +906,7 @@ export default function AiTutorPage() {
                                             <img
                                                 src={m.imageUrl}
                                                 alt="Uploaded study problem"
-                                                className="max-h-60 rounded-xl border border-white/20 object-contain bg-black/10"
+                                                className="max-h-64 rounded-xl border border-white/20 object-contain bg-black/10"
                                             />
                                         </div>
                                     )}
@@ -886,7 +956,7 @@ export default function AiTutorPage() {
                                                         : "border-slate-300 bg-white text-slate-700 hover:bg-slate-100"
                                                 }`}
                                             >
-                                                {isSaved ? "Saved ✓" : "Save Note"}
+                                                {isSaved ? `Saved in ${dept.shortName} ✓` : `Save to ${dept.shortName}`}
                                             </button>
 
                                             <button
@@ -916,7 +986,7 @@ export default function AiTutorPage() {
                                     />
                                 </div>
                                 <span className="text-sm font-medium text-slate-700">
-                                    Analyzing with {dept.shortName} Tutor...
+                                    Analyzing with {dept.shortName} AI Tutor...
                                 </span>
                             </div>
                         )}
@@ -939,9 +1009,9 @@ export default function AiTutorPage() {
                                         </p>
                                         <div className="flex flex-wrap gap-1.5 mt-1">
                                             {[
-                                                "Solve this exam question",
-                                                "Explain drug label & dose",
-                                                "Interpret this chart/diagram",
+                                                "Describe everything in this image",
+                                                "Solve & explain this question",
+                                                "Transcribe text & summarize",
                                             ].map((quickImgPrompt) => (
                                                 <button
                                                     key={quickImgPrompt}
@@ -970,9 +1040,13 @@ export default function AiTutorPage() {
 
                         <div className="flex items-center justify-between text-xs text-slate-600 px-0.5">
                             <span>
-                                Mode: <strong className="text-slate-900">{activeTool.label}</strong>
+                                {attachedImage ? (
+                                    <>Mode: <strong className="text-slate-900">Visual Description &amp; Solver</strong></>
+                                ) : (
+                                    <>Mode: <strong className="text-slate-900">{activeTool.label}</strong></>
+                                )}
                             </span>
-                            <span>Upload a photo or ask below</span>
+                            <span>Upload any photo or ask below</span>
                         </div>
 
                         <div className="flex items-stretch gap-2">
@@ -988,7 +1062,7 @@ export default function AiTutorPage() {
                             <button
                                 type="button"
                                 onClick={() => fileInputRef.current?.click()}
-                                title="Upload or take a photo of a question, drug label, or chart"
+                                title="Upload or take a photo of any question, poster, drug label, or chart"
                                 className="shrink-0 rounded-xl border border-slate-300 bg-slate-50 px-3 flex items-center justify-center text-slate-700 hover:border-brand-600 hover:text-brand-700 transition-colors"
                             >
                                 <svg
@@ -1041,12 +1115,12 @@ export default function AiTutorPage() {
                                 type="text"
                                 value={prompt}
                                 onChange={(e) => setPrompt(e.target.value)}
-                                placeholder={dept.placeholder}
+                                placeholder={attachedImage ? "Optional: ask a specific question about this picture..." : dept.placeholder}
                                 className="flex-1 min-w-0 rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-[15px] text-slate-900 placeholder:text-slate-500 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
                             />
 
                             <Button type="submit" disabled={sending || (!prompt.trim() && !attachedImage)}>
-                                {sending ? "Solving..." : "Ask"}
+                                {sending ? "Analyzing..." : "Ask"}
                             </Button>
                         </div>
                     </form>
