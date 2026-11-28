@@ -12,34 +12,19 @@ from rest_framework.views import APIView
 logger = logging.getLogger(__name__)
 
 SYSTEM_PROMPT = (
-    "You are the NursifyGH AI Tutor—a polished, articulate, and authoritative educator for Ghanaian "
-    "nursing/midwifery students (RGN, RM, RPN, Community Health) and visitors.\n\n"
-    "FORMATTING & STYLE RULES (STRICT):\n"
-    "- Never use horizontal divider lines (no '---', '___', or '***').\n"
-    "- Never use markdown pipe tables ('| col |') or raw '#' / '**' / '*' symbols; write clean plain text "
-    "with short headings on their own line and simple bullet points starting with '• '.\n"
-    "- Match the question naturally and professionally: for general vocabulary, definitions, or everyday "
-    "questions (such as word meanings), give a clear, natural, accurate explanation without forcing "
-    "unnecessary clinical analogies. For anatomy, physiology, pharmacology, science, or nursing questions, "
-    "give a clear definition, key mechanisms or bulleted points, and practical study/clinical takeaways.\n\n"
-    "NURSIFYGH PLATFORM FEATURES:\n"
-    "• AI Nursing & Science Tutor (/ai-tutor): Instant explanations across anatomy, physiology, chemistry, "
-    "pharmacology, nursing priorities, and clinical case stages.\n"
-    "• NMC Licensure Question Bank & CBT Simulator (/cbt-simulator): 3,000+ practice questions across courses "
-    "and domains, timed mock exams, and detailed rationales.\n"
-    "• Interactive Clinical Case Studies (/cases): Step-by-step patient scenarios with vitals, triage, and AI Tutor help.\n"
-    "• Flashcards & Revision (/revision): Active-recall study decks for fast exam review.\n"
-    "• NANDA Care Plans, Clinical Logbook & Semester Pass: Care planning tools, printable logbook transcripts, "
-    "3-day free trial, and GHS 30 for 120 days via manual MoMo.\n\n"
-    "CLINICAL ACCURACY & EXAM INTELLIGENCE RULES:\n"
-    "- Lead with clear, direct reasoning: state the core definition or clinical priority upfront.\n"
-    "- For multiple-choice or scenario questions, explain why the priority choice is safest AND why common "
-    "distractors or delayed actions carry risk.\n"
-    "- Never guess or invent unverified drug doses, infusion rates, or local protocols; state established "
-    "principles clearly and advise verifying exact doses/orders against current clinical guidelines.\n"
-    "- Keep paragraphs concise and easy to read on mobile phones during ward shifts or study blocks.\n"
-    "- ANTI-REPETITION & ACCURACY: Never repeat any term, suffix, root, definition, or Example/Takeaway block. When asked for N items (e.g., 50 suffixes), give distinct, accurate items with clear meanings and examples. When corrected by a student, acknowledge it directly and adjust immediately.\n"
-    "ACADEMIC MODES: NMC/MCQ questions -> lead with best answer/priority, why it wins, why distractors fail, and exam trap. Medical terminology -> prefix/root/suffix breakdown, literal/clinical meaning, one distinct example per item, zero repeats. Science/pharmacology -> crisp definition, step-by-step mechanism, nursing priorities, no guessed doses. Care plans -> Assessment, PES diagnosis, SMART goal, interventions with rationales, evaluation.\n"
+    "You are the NursifyGH AI Clinical & Academic Mentor supporting Ghanaian nursing and midwifery students "
+    "(RGN, RM, RPN, CHN, NAC, NAP). "
+    "First and foremost, listen carefully to what the student actually says and match their intent:\n"
+    "1) If the student greets you (e.g., 'Hello', 'Hi', 'Good afternoon') or shares a general feeling, exam worry, "
+    "or open-ended situation without asking a specific clinical question yet, reply warmly and naturally in 2-4 short "
+    "sentences like a supportive human mentor. Acknowledge what they said, ask 1-2 gentle clarifying questions to "
+    "understand what topic, ward task, or exam problem they need help with, and DO NOT dump an unrequested "
+    "pathophysiology lecture or ABCDE checklist.\n"
+    "2) When the student shares a specific problem, confusion, calculation, care plan, or past question, break it "
+    "down clearly step by step using Ghanaian MoH/GHS/N&MC standards, explain the 'why' in plain supportive language, "
+    "and end with a brief check-in or follow-up question to keep the conversation interactive.\n"
+    "3) Keep formatting clean (short paragraphs and bullet points—no markdown tables or horizontal rules) and never "
+    "invent unverified drug doses."
 )
 def _normalize_typos(text: str) -> str:
     q = (text or "").lower()
@@ -301,11 +286,57 @@ def _generate_tutor_response(prompt_text: str) -> dict:
 
 
 
+def _ocr_space_extract(image_data_url: str) -> str:
+    ocr_key = (os.getenv("OCR_SPACE_API_KEY") or "K87079186188957").strip()
+    if not ocr_key or not image_data_url.startswith("data:image/"):
+        return ""
+
+    boundary = "----NursifyGHOCRBoundary7MA4YWxkTrZu0gW"
+    fields = {
+        "apikey": ocr_key,
+        "language": "eng",
+        "isOverlayRequired": "false",
+        "OCREngine": "2",
+        "scale": "true",
+        "base64Image": image_data_url,
+    }
+    body_parts = []
+    for k, v in fields.items():
+        body_parts.append(f"--{boundary}\r\n".encode("utf-8"))
+        body_parts.append(f'Content-Disposition: form-data; name="{k}"\r\n\r\n'.encode("utf-8"))
+        body_parts.append(f"{v}\r\n".encode("utf-8"))
+    body_parts.append(f"--{boundary}--\r\n".encode("utf-8"))
+
+    req = urllib.request.Request(
+        "https://api.ocr.space/parse/image",
+        data=b"".join(body_parts),
+        headers={
+            "Content-Type": f"multipart/form-data; boundary={boundary}",
+            "User-Agent": "NursifyGH-OCR/1.0",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=22) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            parsed_results = data.get("ParsedResults") or []
+            texts = [
+                str(item.get("ParsedText") or "").strip()
+                for item in parsed_results
+                if str(item.get("ParsedText") or "").strip()
+            ]
+            return "\n".join(texts).strip()
+    except Exception as exc:
+        logger.warning("OCR.space fallback skipped (%s): %s", type(exc).__name__, exc)
+        return ""
+
+
 def _call_vision_llm(user_prompt: str, image_data_url: str) -> tuple[str | None, str | None]:
     api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
     api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
 
-    if not api_key or not api_url or not image_data_url.startswith("data:image/"):
+    if not image_data_url.startswith("data:image/"):
         return None, None
 
     env_vision = (os.getenv("LLM_VISION_MODEL") or "").strip()
@@ -314,7 +345,6 @@ def _call_vision_llm(user_prompt: str, image_data_url: str) -> tuple[str | None,
         env_vision,
         "meta-llama/llama-4-scout-17b-16e-instruct",
         "meta-llama/llama-4-maverick-17b-128e-instruct",
-        "qwen/qwen3.8-27b",
         "llama-3.2-90b-vision-preview",
         "llama-3.2-11b-vision-preview",
     ]:
@@ -322,66 +352,84 @@ def _call_vision_llm(user_prompt: str, image_data_url: str) -> tuple[str | None,
             candidate_models.append(m)
 
     system_msg = (
-        "You are the NursifyGH Visual AI Assistant & Clinical Study Tutor. "
-        "Carefully examine the uploaded image and describe EVERYTHING visible in full detail—including all text, "
-        "headings, numbers, labels, diagrams, charts, tables, people, objects, and layout—even if the picture is "
-        "not a clinical case or standard exam question. "
-        "First provide a clear, accurate description and transcription of what is shown in the image; then, if it "
-        "contains a question, calculation, drug label, chart, or study concept, solve and explain it step by step. "
-        "Use clean Markdown headings and bullet points."
+        "You are the NursifyGH Visual AI Assistant & Clinical Study Mentor. "
+        "Carefully examine the uploaded image and describe EVERYTHING visible in clear, thorough detail—including "
+        "all text, headings, numbers, prices, labels, diagrams, charts, people, and layout—even if the picture is "
+        "a flyer, poster, handwritten page, or non-clinical image. "
+        "First give an accurate transcription and description of what is in the picture; then, if it contains a study "
+        "question, drug label, calculation, or clinical scenario, solve and explain it step by step."
     )
 
-    for vision_model in candidate_models:
-        payload = {
-            "model": vision_model,
-            "temperature": 0.25,
-            "max_tokens": 1800,
-            "messages": [
-                {"role": "system", "content": system_msg},
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "text", "text": user_prompt},
-                        {"type": "image_url", "image_url": {"url": image_data_url}},
-                    ],
+    if api_key and api_url:
+        for vision_model in candidate_models:
+            payload = {
+                "model": vision_model,
+                "temperature": 0.25,
+                "max_tokens": 1800,
+                "messages": [
+                    {"role": "system", "content": system_msg},
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "text", "text": user_prompt},
+                            {"type": "image_url", "image_url": {"url": image_data_url}},
+                        ],
+                    },
+                ],
+            }
+
+            req = urllib.request.Request(
+                api_url,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {api_key}",
+                    "User-Agent": "NursifyGH-VisionTutor/1.3",
                 },
-            ],
-        }
-
-        req = urllib.request.Request(
-            api_url,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {api_key}",
-                "User-Agent": "NursifyGH-VisionTutor/1.1",
-            },
-            method="POST",
-        )
-
-        try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                choices = data.get("choices") or []
-                if not choices:
-                    continue
-                content = ((choices[0].get("message") or {}).get("content") or "").strip()
-                if content:
-                    return content, f"NursifyGH Visual AI • {vision_model}"
-        except Exception as exc:
-            err_detail = ""
-            if hasattr(exc, "read"):
-                try:
-                    err_detail = exc.read().decode("utf-8", errors="ignore")[:220]
-                except Exception:
-                    pass
-            logger.warning(
-                "Vision model %s skipped (%s): %s %s",
-                vision_model,
-                type(exc).__name__,
-                exc,
-                err_detail,
+                method="POST",
             )
+
+            try:
+                with urllib.request.urlopen(req, timeout=28) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    choices = data.get("choices") or []
+                    if not choices:
+                        continue
+                    content = ((choices[0].get("message") or {}).get("content") or "").strip()
+                    if content:
+                        return content, f"NursifyGH Visual AI • {vision_model}"
+            except Exception as exc:
+                err_detail = ""
+                if hasattr(exc, "read"):
+                    try:
+                        err_detail = exc.read().decode("utf-8", errors="ignore")[:220]
+                    except Exception:
+                        pass
+                logger.warning(
+                    "Vision model %s skipped (%s): %s %s",
+                    vision_model,
+                    type(exc).__name__,
+                    exc,
+                    err_detail,
+                )
+
+    extracted_text = _ocr_space_extract(image_data_url)
+    if extracted_text:
+        ocr_prompt = (
+            f"{user_prompt}\n\n"
+            "The student uploaded an image. Here is the exact text extracted from the image:\n"
+            f"--- START IMAGE TEXT ---\n{extracted_text}\n--- END IMAGE TEXT ---\n\n"
+            "Please describe and summarize everything shown in this image clearly based on the extracted text, "
+            "and if it contains any exam question, calculation, or clinical topic, solve and explain it step by step."
+        )
+        llm_reply, _ = _call_live_llm(ocr_prompt, history=[])
+        if llm_reply:
+            return llm_reply, "NursifyGH Visual Reader • OCR + AI"
+        return (
+            f"### Extracted Content from Image\n\n{extracted_text}\n\n"
+            "Tell me which part of this you would like me to explain or solve!",
+            "NursifyGH Visual Reader • OCR",
+        )
 
     return None, None
 
@@ -399,8 +447,8 @@ class TutorCoachView(APIView):
 
         if image_data_url and not prompt:
             prompt = (
-                "Examine this uploaded study or clinical picture, extract the question or clinical data shown, "
-                "and solve or explain it step by step with N&MC exam rationales."
+                "Examine this uploaded picture thoroughly, describe everything shown (all text, numbers, labels, "
+                "and visuals), and solve or explain any question or concept in it step by step."
             )
 
         prog = department or (getattr(request.user, "program", "") or "")
@@ -424,12 +472,10 @@ class TutorCoachView(APIView):
             return Response(
                 {
                     "reply": (
-                        "I received your image. Here is how to break down and solve visual clinical or exam items:\n\n"
-                        "1. **Identify the Core Data:** Note all vital signs, drug concentrations, lab values, or question stems visible in the picture.\n"
-                        "2. **Apply Clinical Priority (ABCDE / Rights of Medication):** Check safety thresholds first (e.g. RR >= 12–16/min, urine output >= 30 mL/hr, or exact mL/hr & drops/min formula).\n"
-                        "3. **Tip:** If your network is slow, type the key numbers or question text from the image below and I will compute and explain it immediately."
+                        "I received your picture, but the text was too faint to read clearly. "
+                        "Try uploading a sharper, closer photo—or tell me what is written on the page so we can work through it together."
                     ),
-                    "framework": "NursifyGH Visual Study Guide",
+                    "framework": "NursifyGH Visual Assistant",
                     "live_llm_used": False,
                 },
                 status=status.HTTP_200_OK,

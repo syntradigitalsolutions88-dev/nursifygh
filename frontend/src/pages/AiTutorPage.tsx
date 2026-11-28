@@ -58,8 +58,8 @@ const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
         accentBorder: "border-emerald-700",
         accentBg: "bg-emerald-50",
         accentText: "text-emerald-900",
-        tagline: "Med-surg pathophysiology, NANDA care plans, IV pharmacology calculations & N&MC licensure drills.",
-        placeholder: "e.g. DKA fluid & insulin sequence, heart failure nursing care, or IV drip calculation...",
+        tagline: "Talk through ward cases, med-surg pathophysiology, NANDA care plans, IV calculations & N&MC exam prep.",
+        placeholder: "Say hello, share what you're struggling with, or ask any RGN question...",
         tools: [
             {
                 id: "rgn-medsurg",
@@ -102,8 +102,8 @@ const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
         accentBorder: "border-rose-700",
         accentBg: "bg-rose-50",
         accentText: "text-rose-900",
-        tagline: "Obstetric emergencies, partograph interpretation, MgSO4 & PPH protocols, and newborn resuscitation.",
-        placeholder: "e.g. Severe pre-eclampsia MgSO4 protocol, partograph action line, or active management of 3rd stage...",
+        tagline: "Discuss obstetric emergencies, partograph interpretation, MgSO4 & PPH protocols, and newborn care.",
+        placeholder: "Say hello, share a labour ward question, or ask any Midwifery topic...",
         tools: [
             {
                 id: "rm-emergency",
@@ -146,8 +146,8 @@ const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
         accentBorder: "border-indigo-700",
         accentBg: "bg-indigo-50",
         accentText: "text-indigo-900",
-        tagline: "Mental Status Examination (MSE), psychopharmacology, therapeutic communication & Ghana Mental Health Act 846.",
-        placeholder: "e.g. Mental Status Exam components, haloperidol EPS & NMS signs, or therapeutic communication...",
+        tagline: "Explore Mental Status Exams (MSE), psychopharmacology, therapeutic communication & Mental Health Act 846.",
+        placeholder: "Say hello, talk through a psychiatric case, or ask any RPN question...",
         tools: [
             {
                 id: "rpn-mse",
@@ -190,8 +190,8 @@ const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
         accentBorder: "border-teal-700",
         accentBg: "bg-teal-50",
         accentText: "text-teal-900",
-        tagline: "Ghana EPI cold chain, CHPS home visits, IDSR outbreak response, RCH & biostatistics calculations.",
-        placeholder: "e.g. Ghana EPI vaccine cold chain temperatures, cholera IDSR response, or incidence vs prevalence...",
+        tagline: "Work through Ghana EPI cold chain, CHPS home visits, IDSR outbreak response & biostatistics.",
+        placeholder: "Say hello, share a public health topic, or ask any CHN question...",
         tools: [
             {
                 id: "chn-epi",
@@ -234,8 +234,8 @@ const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
         accentBorder: "border-blue-700",
         accentBg: "bg-blue-50",
         accentText: "text-blue-900",
-        tagline: "Vital signs & early warning signs, aseptic wound dressing, patient hygiene, and ward practical checklists.",
-        placeholder: "e.g. Aseptic wound dressing steps, normal adult vital signs & red flags, or bed bath procedure...",
+        tagline: "Practice vital signs, early warning signs, aseptic wound dressing & ward practical checklists.",
+        placeholder: "Say hello, share what you're practicing on the ward, or ask any NAC question...",
         tools: [
             {
                 id: "nac-osce",
@@ -278,8 +278,8 @@ const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
         accentBorder: "border-amber-700",
         accentBg: "bg-amber-50",
         accentText: "text-amber-900",
-        tagline: "IMNCI childhood illness, ORS Plan A/B/C, growth monitoring, exclusive breastfeeding & WASH health talks.",
-        placeholder: "e.g. IMNCI Plan A ORS & Zinc home care, MUAC malnutrition screening, or malaria LLIN counselling...",
+        tagline: "Master IMNCI childhood illness, ORS Plan A/B/C, growth monitoring & community health talks.",
+        placeholder: "Say hello, share a child welfare or IMNCI question, or ask any NAP topic...",
         tools: [
             {
                 id: "nap-imnci",
@@ -327,7 +327,7 @@ async function compressImageToDataUrl(file: File): Promise<string> {
             const img = new Image()
             img.onerror = () => reject(new Error("Invalid image format."))
             img.onload = () => {
-                const maxDim = 1280
+                const maxDim = 960
                 let { width, height } = img
                 if (width > maxDim || height > maxDim) {
                     if (width > height) {
@@ -347,12 +347,19 @@ async function compressImageToDataUrl(file: File): Promise<string> {
                     return
                 }
                 ctx.drawImage(img, 0, 0, width, height)
-                resolve(canvas.toDataURL("image/jpeg", 0.82))
+                resolve(canvas.toDataURL("image/jpeg", 0.78))
             }
             img.src = String(reader.result || "")
         }
         reader.readAsDataURL(file)
     })
+}
+
+function stripMarkdownForSpeech(md: string): string {
+    return md
+        .replace(/[#*_`>-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
 }
 
 export default function AiTutorPage() {
@@ -363,7 +370,7 @@ export default function AiTutorPage() {
 
     const [activeDeptId, setActiveDeptId] = useState<DepartmentId>("RGN")
     const [selectedLevel, setSelectedLevel] = useState<string>("All Levels")
-    const [selectedToolId, setSelectedToolId] = useState<string>("rgn-medsurg")
+    const [activeToolId, setActiveToolId] = useState<string | null>(null)
     const [workspaceTab, setWorkspaceTab] = useState<"tools" | "questions" | "notes">("tools")
 
     const [prompt, setPrompt] = useState("")
@@ -371,6 +378,8 @@ export default function AiTutorPage() {
     const [attachedImageName, setAttachedImageName] = useState<string>("")
     const [sending, setSending] = useState(false)
     const [isListening, setIsListening] = useState(false)
+    const [speakingMsgId, setSpeakingMsgId] = useState<string | null>(null)
+    const [autoSpeak, setAutoSpeak] = useState<boolean>(false)
     const [copiedId, setCopiedId] = useState<string | null>(null)
     const [openNoteIds, setOpenNoteIds] = useState<Record<string, boolean>>({})
 
@@ -384,18 +393,16 @@ export default function AiTutorPage() {
     })
 
     const dept = DEPARTMENTS[activeDeptId]
-    const activeTool = dept.tools.find((t) => t.id === selectedToolId) || dept.tools[0]
-
-    // Strict per-department saved notes: notes saved in NAC stay ONLY in NAC
+    const selectedTool = activeToolId ? dept.tools.find((t) => t.id === activeToolId) || null : null
     const deptPearls = savedPearls.filter((p) => p.department === activeDeptId)
 
     const [messages, setMessages] = useState<TutorMessage[]>([
         {
             id: "welcome-1",
             role: "tutor",
-            framework: "RGN General Nursing • AI Study Studio Ready",
+            framework: "RGN General Nursing • AI Mentor Listening",
             content:
-                "Select your **Department** at the top (**RGN, RM, RPN, CHN, NAC, or NAP**) to load specialized clinical tools and exam drills—or tap the **Camera / Photo** button below to upload any picture, past question, drug label, or chart for me to describe and solve.",
+                "Hello! I'm your **NursifyGH AI Clinical & Study Mentor**. Tell me what you're working on, what topic is giving you trouble, or tap the **Microphone** to talk to me—we'll solve it together step by step. You can also upload any picture with the **Camera** icon.",
         },
     ])
 
@@ -411,18 +418,41 @@ export default function AiTutorPage() {
         threadEndRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" })
     }, [messages, sending])
 
+    useEffect(() => {
+        return () => {
+            window.speechSynthesis?.cancel()
+        }
+    }, [])
+
+    function speakText(msgId: string, text: string) {
+        if (!("speechSynthesis" in window)) return
+        if (speakingMsgId === msgId) {
+            window.speechSynthesis.cancel()
+            setSpeakingMsgId(null)
+            return
+        }
+        window.speechSynthesis.cancel()
+        const utterance = new SpeechSynthesisUtterance(stripMarkdownForSpeech(text))
+        utterance.lang = "en-GB"
+        utterance.rate = 0.98
+        utterance.onstart = () => setSpeakingMsgId(msgId)
+        utterance.onend = () => setSpeakingMsgId(null)
+        utterance.onerror = () => setSpeakingMsgId(null)
+        window.speechSynthesis.speak(utterance)
+    }
+
     function handleSelectDepartment(newDept: DepartmentId) {
         setActiveDeptId(newDept)
+        setActiveToolId(null)
         const cfg = DEPARTMENTS[newDept]
-        setSelectedToolId(cfg.tools[0].id)
         setMessages((prev) => {
             if (prev.length === 1 && prev[0].id === "welcome-1") {
                 return [
                     {
                         id: "welcome-1",
                         role: "tutor",
-                        framework: `${cfg.badgeText} • Studio Ready`,
-                        content: `Switched to **${cfg.fullName} (${cfg.shortName})**. ${cfg.tagline} Choose a specialized tool above, ask a question, or upload any picture to describe and solve.`,
+                        framework: `${cfg.badgeText} • AI Mentor Listening`,
+                        content: `Welcome to **${cfg.fullName} (${cfg.shortName})**! Tell me what topic, procedure, or exam problem you want help with today—or tap the **Microphone** to speak or **Camera** to upload a picture.`,
                     },
                 ]
             }
@@ -451,19 +481,24 @@ export default function AiTutorPage() {
         if (sending) return
 
         const levelTag = selectedLevel !== "All Levels" ? ` • ${selectedLevel}` : ""
-        const deptBadge = imgToSend
-            ? `${dept.shortName}${levelTag} • Visual Analyzer`
-            : `${dept.shortName}${levelTag} • ${activeTool.label}`
+        const activePrefix = overridePrefix ?? selectedTool?.promptPrefix ?? ""
+        const modeName = imgToSend
+            ? "Visual Reader & Solver"
+            : selectedTool
+            ? selectedTool.label
+            : "Open Mentor Chat"
 
+        const deptBadge = `${dept.shortName}${levelTag} • ${modeName}`
         const userDisplayText =
-            cleanTopic || "Describe everything in this image and solve or explain what is shown."
+            cleanTopic || "Describe everything in this image and explain or solve what is shown."
 
-        const prefix = overridePrefix ?? activeTool.promptPrefix
         const apiPrompt = imgToSend
             ? cleanTopic
-                ? `Examine the uploaded image thoroughly. First describe everything visible in the image (all text, numbers, labels, diagrams, people, or visuals—even if it is not a clinical item), and also address this user request: "${cleanTopic}".`
+                ? `Examine the uploaded image thoroughly. First describe everything visible in the image (all text, numbers, labels, diagrams, people, or visuals—even if it is not a clinical item), and also address what the student said: "${cleanTopic}".`
                 : "Examine the uploaded image thoroughly and describe everything visible in full detail (all text, headings, numbers, labels, diagrams, people, objects, and layout—even if it is not a clinical item). If there is a question, calculation, or study topic in the image, solve and explain it step by step."
-            : `${prefix} ${cleanTopic} (Curriculum context: Ghanaian N&MC ${dept.fullName} [${dept.shortName}]${levelTag}.)`
+            : activePrefix
+            ? `${activePrefix} ${cleanTopic} (Curriculum context: Ghanaian N&MC ${dept.fullName} [${dept.shortName}]${levelTag}.)`
+            : cleanTopic
 
         const userMsg: TutorMessage = {
             id: `u-${Date.now()}`,
@@ -482,7 +517,7 @@ export default function AiTutorPage() {
         try {
             const history = messages
                 .slice(1)
-                .slice(-6)
+                .slice(-8)
                 .map((m) => ({
                     role: m.role === "tutor" ? "assistant" : "user",
                     content: m.content,
@@ -498,23 +533,28 @@ export default function AiTutorPage() {
             const replyText =
                 typeof res.data?.reply === "string" && res.data.reply.trim()
                     ? res.data.reply.trim()
-                    : `Here is a structured **${dept.shortName}** breakdown for **${userDisplayText}**: focus on baseline assessment, Ghana MoH/GHS/N&MC standards, safety checks, and patient education.`
+                    : `I'm here with you! Tell me a bit more about what you need help with in **${dept.fullName}**, and we will break it down step by step.`
 
             const frameworkLabel =
                 typeof res.data?.framework === "string" && res.data.framework.trim()
                     ? res.data.framework.trim()
                     : deptBadge
 
+            const replyId = `t-${Date.now() + 1}`
             setMessages((prev) => [
                 ...prev,
                 {
-                    id: `t-${Date.now() + 1}`,
+                    id: replyId,
                     role: "tutor",
                     content: replyText,
                     framework: frameworkLabel,
-                    topicHint: cleanTopic || "Uploaded Image Analysis",
+                    topicHint: cleanTopic.length > 4 ? cleanTopic : undefined,
                 },
             ])
+
+            if (autoSpeak) {
+                speakText(replyId, replyText)
+            }
         } catch {
             setMessages((prev) => [
                 ...prev,
@@ -522,9 +562,8 @@ export default function AiTutorPage() {
                     id: `t-${Date.now() + 1}`,
                     role: "tutor",
                     content:
-                        "I could not reach the live AI server right now. Please check your internet connection and tap **Ask** again.",
+                        "I could not reach the live AI server right now. Please check your internet connection and tap **Send** again.",
                     framework: `${dept.shortName} Offline Notice`,
-                    topicHint: cleanTopic || undefined,
                 },
             ])
         } finally {
@@ -672,26 +711,47 @@ export default function AiTutorPage() {
                                 {dept.badgeText}
                             </span>
                             <h1 className="text-xl sm:text-2xl font-bold text-white leading-snug">
-                                {dept.fullName} AI Clinical Tutor
+                                {dept.fullName} AI Clinical Mentor
                             </h1>
                             <p className="text-sm text-white/90 leading-relaxed">
                                 {dept.tagline}
                             </p>
                         </div>
 
-                        {messages.length > 1 && (
+                        <div className="flex items-center gap-2">
                             <button
                                 type="button"
-                                onClick={() => setMessages((prev) => prev.slice(0, 1))}
-                                className="rounded-xl bg-black/20 hover:bg-black/30 border border-white/20 px-3 py-1.5 text-xs font-semibold text-white transition-colors"
+                                onClick={() => {
+                                    const next = !autoSpeak
+                                    setAutoSpeak(next)
+                                    if (!next) {
+                                        window.speechSynthesis?.cancel()
+                                        setSpeakingMsgId(null)
+                                    }
+                                }}
+                                className={`rounded-xl border px-3 py-1.5 text-xs font-bold transition-colors ${
+                                    autoSpeak
+                                        ? "bg-white text-slate-900 border-white"
+                                        : "bg-black/20 hover:bg-black/30 border-white/20 text-white"
+                                }`}
                             >
-                                Clear Chat
+                                {autoSpeak ? "Voice Replies: ON" : "Voice Replies: OFF"}
                             </button>
-                        )}
+
+                            {messages.length > 1 && (
+                                <button
+                                    type="button"
+                                    onClick={() => setMessages((prev) => prev.slice(0, 1))}
+                                    className="rounded-xl bg-black/20 hover:bg-black/30 border border-white/20 px-3 py-1.5 text-xs font-semibold text-white transition-colors"
+                                >
+                                    Clear Chat
+                                </button>
+                            )}
+                        </div>
                     </div>
                 </div>
 
-                {/* Step 3: Organized Compact Workspace Tabs (Tools | Sample Questions | Department Saved Notes) */}
+                {/* Step 3: Organized Compact Workspace Tabs */}
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs space-y-3">
                     <div className="flex items-center gap-1.5 border-b border-slate-200 pb-2.5">
                         <button
@@ -703,7 +763,7 @@ export default function AiTutorPage() {
                                     : "text-slate-700 hover:bg-slate-100"
                             }`}
                         >
-                            {dept.shortName} Tools (4)
+                            {dept.shortName} Study Modes
                         </button>
                         <button
                             type="button"
@@ -731,13 +791,37 @@ export default function AiTutorPage() {
 
                     {workspaceTab === "tools" && (
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            <button
+                                type="button"
+                                onClick={() => setActiveToolId(null)}
+                                className={`rounded-xl border p-3 text-left transition-all sm:col-span-2 ${
+                                    activeToolId === null
+                                        ? `${dept.accentBorder} ${dept.accentBg}`
+                                        : "border-slate-200 bg-white hover:bg-slate-50"
+                                }`}
+                            >
+                                <div className="flex items-center justify-between gap-2">
+                                    <p className={`text-sm font-bold ${activeToolId === null ? dept.accentText : "text-slate-900"}`}>
+                                        Open Mentor Conversation (Listen &amp; Guide)
+                                    </p>
+                                    {activeToolId === null && (
+                                        <span className={`text-[11px] font-bold uppercase ${dept.accentText}`}>
+                                            Active
+                                        </span>
+                                    )}
+                                </div>
+                                <p className="text-xs text-slate-600 mt-0.5">
+                                    Talk naturally—tell the AI what you&apos;re studying or struggling with, and it will listen and guide you step by step.
+                                </p>
+                            </button>
+
                             {dept.tools.map((tool) => {
-                                const isSel = tool.id === activeTool.id
+                                const isSel = tool.id === activeToolId
                                 return (
                                     <button
                                         key={tool.id}
                                         type="button"
-                                        onClick={() => setSelectedToolId(tool.id)}
+                                        onClick={() => setActiveToolId(isSel ? null : tool.id)}
                                         className={`rounded-xl border p-3 text-left transition-all ${
                                             isSel
                                                 ? `${dept.accentBorder} ${dept.accentBg}`
@@ -800,7 +884,7 @@ export default function AiTutorPage() {
 
                             {deptPearls.length === 0 ? (
                                 <p className="text-sm text-slate-600 py-2">
-                                    No saved notes in <strong>{dept.shortName}</strong> yet. Tap <strong>Save Note</strong> under any answer while in {dept.shortName} to keep it here.
+                                    No saved notes in <strong>{dept.shortName}</strong> yet. Tap <strong>Save to {dept.shortName}</strong> under any answer to keep it here.
                                 </p>
                             ) : (
                                 deptPearls.map((pearl) => {
@@ -873,11 +957,12 @@ export default function AiTutorPage() {
                     )}
                 </div>
 
-                {/* Step 4: Conversation & Photo/Camera Problem Solver */}
+                {/* Step 4: Conversation, Voice & Photo/Camera Problem Solver */}
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 space-y-4 shadow-sm">
                     <div className="space-y-4">
                         {messages.map((m) => {
                             const isSaved = deptPearls.some((p) => p.content === m.content)
+                            const isSpeakingThis = speakingMsgId === m.id
                             return (
                                 <div
                                     key={m.id}
@@ -896,8 +981,19 @@ export default function AiTutorPage() {
                                     )}
 
                                     {m.role === "tutor" && m.framework && (
-                                        <div className="mb-2">
+                                        <div className="mb-2 flex items-center justify-between gap-2">
                                             <Badge variant="neutral">{m.framework}</Badge>
+                                            <button
+                                                type="button"
+                                                onClick={() => speakText(m.id, m.content)}
+                                                className={`rounded-lg border px-2.5 py-1 text-xs font-bold transition-colors ${
+                                                    isSpeakingThis
+                                                        ? "border-brand-600 bg-brand-50 text-brand-800"
+                                                        : "border-slate-300 bg-white text-slate-700 hover:bg-slate-100"
+                                                }`}
+                                            >
+                                                {isSpeakingThis ? "Stop Audio" : "Listen"}
+                                            </button>
                                         </div>
                                     )}
 
@@ -986,7 +1082,7 @@ export default function AiTutorPage() {
                                     />
                                 </div>
                                 <span className="text-sm font-medium text-slate-700">
-                                    Analyzing with {dept.shortName} AI Tutor...
+                                    {dept.shortName} Mentor is thinking...
                                 </span>
                             </div>
                         )}
@@ -1042,11 +1138,13 @@ export default function AiTutorPage() {
                             <span>
                                 {attachedImage ? (
                                     <>Mode: <strong className="text-slate-900">Visual Description &amp; Solver</strong></>
+                                ) : selectedTool ? (
+                                    <>Mode: <strong className="text-slate-900">{selectedTool.label}</strong></>
                                 ) : (
-                                    <>Mode: <strong className="text-slate-900">{activeTool.label}</strong></>
+                                    <>Mode: <strong className="text-slate-900">Open Mentor Conversation</strong></>
                                 )}
                             </span>
-                            <span>Upload any photo or ask below</span>
+                            <span>Speak, upload a photo, or type below</span>
                         </div>
 
                         <div className="flex items-stretch gap-2">
@@ -1089,7 +1187,7 @@ export default function AiTutorPage() {
                             <button
                                 type="button"
                                 onClick={startVoiceDictation}
-                                title="Speak your question"
+                                title="Speak to the AI Mentor"
                                 className={`shrink-0 rounded-xl border px-3 flex items-center justify-center transition-colors ${
                                     isListening
                                         ? "border-red-300 bg-red-50 text-red-700 animate-pulse"
@@ -1120,7 +1218,7 @@ export default function AiTutorPage() {
                             />
 
                             <Button type="submit" disabled={sending || (!prompt.trim() && !attachedImage)}>
-                                {sending ? "Analyzing..." : "Ask"}
+                                {sending ? "Thinking..." : "Send"}
                             </Button>
                         </div>
                     </form>
