@@ -76,7 +76,6 @@ export default function DashboardPage() {
 
     return (
         <AppShell>
-            <div className="max-w-5xl mx-auto px-3 sm:px-0 pt-3"><StudentNotificationInbox /></div>
             <div className="space-y-6 max-w-6xl mx-auto pb-10">
 
                 <PwaInstallPrompt />
@@ -137,6 +136,8 @@ export default function DashboardPage() {
                             <p className="text-2xl font-bold !text-white">{totalAttempts}</p>
                             <p className="text-xs text-emerald-100 !text-emerald-100 font-medium">Quizzes Completed</p>
                         </div>
+
+                <StudentNotificationInbox />
                     </div>
                 </div>
 
