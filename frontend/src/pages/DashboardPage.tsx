@@ -213,7 +213,7 @@ export default function DashboardPage() {
                     <div className="rounded-xl border border-border bg-white p-5 shadow-sm flex items-center justify-between">
                         <div>
                             <p className="text-sm font-bold text-on-surface">Exam Readiness</p>
-                            <p className="text-xs text-on-surface-muted mt-1">
+                            <p className="text-xs text-slate-600 mt-1">
                                 {totalAttempts > 0 ? "Based on your scores" : "Complete quizzes to build"}
                             </p>
                             <div className="mt-3 flex items-end gap-1">
@@ -237,7 +237,7 @@ export default function DashboardPage() {
                             </span>
                         </div>
                         <p className="mt-3 text-4xl font-black text-on-surface">{averageScore}%</p>
-                        <p className="text-xs text-on-surface-muted mt-1">Across {totalAttempts} quizzes</p>
+                        <p className="text-xs text-slate-600 mt-1">Across {totalAttempts} quizzes</p>
                     </div>
 
                     <div className="rounded-xl border border-brand-300 bg-gradient-to-br from-brand-50 to-white p-5 shadow-sm flex flex-col justify-between">
@@ -268,7 +268,7 @@ export default function DashboardPage() {
                                     <div>
                                         <Badge variant="brand" className="mb-2">Continue Learning</Badge>
                                         <h3 className="text-xl font-bold text-on-surface group-hover:text-brand-700 transition-colors">{lastAttempt.course_title}</h3>
-                                        <p className="text-sm text-on-surface-muted mt-1">{lastAttempt.course_code} • Last played {new Date(lastAttempt.started_at).toLocaleDateString()}</p>
+                                        <p className="text-sm text-slate-600 mt-1">{lastAttempt.course_code} • Last played {new Date(lastAttempt.started_at).toLocaleDateString()}</p>
                                     </div>
                                     <div className="h-14 w-14 rounded-full bg-brand-100 flex items-center justify-center text-brand-700">
                                         <svg className="h-6 w-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
@@ -292,7 +292,7 @@ export default function DashboardPage() {
                                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
                                 </div>
                                 <h3 className="text-lg font-bold text-on-surface">Start your first quiz</h3>
-                                <p className="text-sm text-on-surface-muted max-w-sm mt-1">Jump into your curriculum to practice questions and build your study streak.</p>
+                                <p className="text-sm text-slate-600 max-w-sm mt-1">Jump into your curriculum to practice questions and build your study streak.</p>
                                 <Link to="/courses" className="mt-4"><Button>Browse Courses</Button></Link>
                             </div>
                         )}
@@ -300,27 +300,27 @@ export default function DashboardPage() {
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                             <Link to="/courses" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">All Courses &amp; Quizzes</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Semester past questions &amp; rationales</p>
+                                <p className="text-xs text-slate-600 mt-1">Semester past questions &amp; rationales</p>
                             </Link>
                             <Link to="/cases" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Clinical Case Studies</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Patient scenarios, vitals &amp; AI Tutor</p>
+                                <p className="text-xs text-slate-600 mt-1">Patient scenarios, vitals &amp; AI Tutor</p>
                             </Link>
                             <Link to="/pharmacology" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Pharmacology &amp; Dosage</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Drug monographs, calculator &amp; drills</p>
+                                <p className="text-xs text-slate-600 mt-1">Drug monographs, calculator &amp; drills</p>
                             </Link>
                             <Link to="/revision" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Flashcards &amp; Revision</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Spaced-repetition active recall</p>
+                                <p className="text-xs text-slate-600 mt-1">Spaced-repetition active recall</p>
                             </Link>
                             <Link to="/clinicals" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Clinical Logbook</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Track procedures &amp; export PDF</p>
+                                <p className="text-xs text-slate-600 mt-1">Track procedures &amp; export PDF</p>
                             </Link>
                             <Link to="/study-planner" className="group rounded-xl border border-border bg-white p-5 hover:border-brand-300 hover:shadow-sm transition-all">
                                 <h3 className="font-semibold text-on-surface group-hover:text-brand-700">Study Planner &amp; Stats</h3>
-                                <p className="text-xs text-on-surface-muted mt-1">Exam countdown &amp; study blocks</p>
+                                <p className="text-xs text-slate-600 mt-1">Exam countdown &amp; study blocks</p>
                             </Link>
                         </div>
 
@@ -355,9 +355,9 @@ export default function DashboardPage() {
                                             <div key={attempt.id} className="relative pl-6">
                                                 <div className="absolute -left-1.5 top-1.5 h-3 w-3 rounded-full bg-brand-300 border-2 border-white ring-2 ring-brand-50"></div>
                                                 <div className="flex flex-col">
-                                                    <span className="text-xs font-medium text-on-surface-muted mb-1">{new Date(attempt.started_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span>
+                                                    <span className="text-xs font-medium text-slate-600 mb-1">{new Date(attempt.started_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span>
                                                     <span className="text-sm font-semibold text-on-surface leading-tight">{attempt.course_code}</span>
-                                                    <span className="text-xs text-on-surface-muted truncate">{attempt.course_title}</span>
+                                                    <span className="text-xs text-slate-600 truncate">{attempt.course_title}</span>
                                                     <span className={`text-xs font-bold mt-1 ${parseFloat(attempt.score_percentage) >= 50 ? 'text-green-600' : 'text-red-500'}`}>{attempt.score_percentage}% Score</span>
                                                 </div>
                                             </div>
@@ -365,7 +365,7 @@ export default function DashboardPage() {
                                     </div>
                                 ) : (
                                     <div className="flex flex-col items-center justify-center h-full text-center py-8">
-                                        <p className="text-sm text-on-surface-muted">No recent activity yet. Take a quiz to see your timeline!</p>
+                                        <p className="text-sm text-slate-600">No recent activity yet. Take a quiz to see your timeline!</p>
                                         <Link to="/courses" className="mt-4">
                                             <Button size="sm" variant="secondary">Start a Quiz</Button>
                                         </Link>

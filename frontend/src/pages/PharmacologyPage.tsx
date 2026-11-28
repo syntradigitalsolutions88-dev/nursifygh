@@ -808,7 +808,7 @@ export default function PharmacologyPage() {
                             key={key}
                             type="button"
                             onClick={() => setTab(key)}
-                            className={`rounded-full px-4 py-1.5 text-xs font-semibold transition ${tab === key
+                            className={`rounded-full px-4 py-1.5 text-sm font-semibold transition ${tab === key
                                     ? "bg-brand-700 text-white"
                                     : "border border-border bg-white text-on-surface-muted hover:text-on-surface"
                                 }`}
@@ -828,7 +828,7 @@ export default function PharmacologyPage() {
                         />
 
                         {filteredDrugs.length === 0 ? (
-                            <div className="rounded-xl border border-border bg-white p-6 text-center text-sm text-on-surface-muted">
+                            <div className="rounded-xl border border-border bg-white p-6 text-center text-[15px] text-slate-700">
                                 No matching drug monograph found for &ldquo;{search}&rdquo;.
                             </div>
                         ) : (
@@ -837,7 +837,7 @@ export default function PharmacologyPage() {
                                     <div className="flex flex-wrap items-center justify-between gap-2">
                                         <div>
                                             <h2 className="text-h4 text-on-surface">{drug.name}</h2>
-                                            <p className="text-xs text-on-surface-muted">Routes: {drug.routes}</p>
+                                            <p className="text-sm text-slate-700">Routes: {drug.routes}</p>
                                         </div>
                                         <div className="flex flex-wrap items-center gap-2">
                                             <Badge variant="neutral">{drug.drugClass}</Badge>
@@ -845,29 +845,29 @@ export default function PharmacologyPage() {
                                                 to={buildAiTutorUrl(
                                                     `Give me a clinical nursing summary, priority safety checks, and exam tips for ${drug.name} (${drug.drugClass}).`
                                                 )}
-                                                className="text-xs font-semibold text-brand-700 underline"
+                                                className="text-sm font-semibold text-brand-700 underline"
                                             >
                                                 Ask AI Tutor →
                                             </Link>
                                         </div>
                                     </div>
-                                    <p className="text-xs sm:text-sm text-on-surface-muted">
+                                    <p className="text-base text-on-surface-muted">
                                         <span className="font-semibold text-on-surface">Mechanism: </span>
                                         {drug.mechanism}
                                     </p>
-                                    <p className="text-xs sm:text-sm text-on-surface-muted">
+                                    <p className="text-base text-on-surface-muted">
                                         <span className="font-semibold text-on-surface">Indications: </span>
                                         {drug.indications}
                                     </p>
-                                    <p className="text-xs sm:text-sm text-on-surface-muted">
+                                    <p className="text-base text-on-surface-muted">
                                         <span className="font-semibold text-on-surface">Contraindications: </span>
                                         {drug.contraindications}
                                     </p>
-                                    <p className="text-xs sm:text-sm text-on-surface-muted">
+                                    <p className="text-base text-on-surface-muted">
                                         <span className="font-semibold text-on-surface">Adverse Effects: </span>
                                         {drug.adverseEffects}
                                     </p>
-                                    <div className="rounded-lg bg-gray-50 border border-border p-3 text-xs sm:text-sm text-on-surface space-y-1">
+                                    <div className="rounded-lg bg-gray-50 border border-border p-3 text-base text-on-surface space-y-1">
                                         <p>
                                             <span className="font-bold">Nursing Responsibilities: </span>
                                             {drug.nursingCare}
@@ -887,7 +887,7 @@ export default function PharmacologyPage() {
                     <div className="rounded-2xl border border-border bg-white p-5 sm:p-6 space-y-4">
                         {/* Quick Ghana Ward Presets */}
                         <div className="space-y-1.5">
-                            <p className="text-xs font-semibold text-on-surface-muted">Quick Ward Scenarios:</p>
+                            <p className="text-sm font-semibold text-on-surface-muted">Quick Ward Scenarios:</p>
                             <div className="flex flex-wrap gap-1.5">
                                 {(
                                     [
@@ -929,7 +929,7 @@ export default function PharmacologyPage() {
                                     key={m}
                                     type="button"
                                     onClick={() => setCalcMode(m)}
-                                    className={`rounded-lg px-3 py-1.5 text-xs font-semibold ${calcMode === m
+                                    className={`rounded-lg px-3 py-1.5 text-sm font-semibold ${calcMode === m
                                             ? "bg-brand-700 text-white"
                                             : "border border-border bg-gray-50 text-on-surface-muted"
                                         }`}
@@ -976,7 +976,7 @@ export default function PharmacologyPage() {
                                             value={dropFactor}
                                             onChange={(e) => setDropFactor(e.target.value)}
                                         />
-                                        <div className="flex gap-2 text-xs text-on-surface-muted">
+                                        <div className="flex gap-2 text-sm text-slate-700">
                                             {["15", "20", "60"].map((df) => (
                                                 <button
                                                     key={df}
@@ -1011,7 +1011,7 @@ export default function PharmacologyPage() {
                                         onChange={(e) => setDosePerKg(e.target.value)}
                                     />
                                     <div className="space-y-1">
-                                        <label className="block text-xs font-semibold text-on-surface">Basis & Frequency</label>
+                                        <label className="block text-sm font-semibold text-on-surface">Basis & Frequency</label>
                                         <div className="flex gap-1.5">
                                             <select
                                                 value={weightBasis}
@@ -1066,14 +1066,14 @@ export default function PharmacologyPage() {
                                     onChange={(e) => setWeightKg(e.target.value)}
                                 />
                                 <div className="space-y-1">
-                                    <label className="block text-xs font-semibold text-on-surface">Administration Route</label>
+                                    <label className="block text-sm font-semibold text-on-surface">Administration Route</label>
                                     <div className="flex gap-2">
                                         {(["IV", "IM"] as const).map((r) => (
                                             <button
                                                 key={r}
                                                 type="button"
                                                 onClick={() => setArtesunateRoute(r)}
-                                                className={`flex-1 rounded-lg border px-3 py-2 text-xs font-semibold ${artesunateRoute === r
+                                                className={`flex-1 rounded-lg border px-3 py-2 text-sm font-semibold ${artesunateRoute === r
                                                         ? "border-brand-700 bg-brand-700 text-white"
                                                         : "border-border bg-gray-50 text-on-surface"
                                                     }`}
@@ -1210,7 +1210,7 @@ export default function PharmacologyPage() {
                             <Alert variant="danger">{calcResult.error}</Alert>
                         ) : (
                             <div className="rounded-xl border border-emerald-200 bg-emerald-50/70 p-4 space-y-1.5">
-                                <p className="text-xs font-bold uppercase tracking-wider text-emerald-900">
+                                <p className="text-sm font-bold uppercase tracking-wider text-emerald-900">
                                     Calculated Result
                                 </p>
                                 <p className="text-xl font-bold text-emerald-950">{calcResult.headline}</p>
@@ -1238,7 +1238,7 @@ export default function PharmacologyPage() {
                                             setUserAnswer("")
                                             setCheckedDrill(null)
                                         }}
-                                        className={`rounded-full px-3 py-1 text-xs font-semibold transition ${drillCategory === cat
+                                        className={`rounded-full px-3 py-1 text-sm font-semibold transition ${drillCategory === cat
                                                 ? "bg-brand-700 text-white"
                                                 : "border border-border bg-gray-50 text-on-surface-muted hover:text-on-surface"
                                             }`}
@@ -1252,7 +1252,7 @@ export default function PharmacologyPage() {
                             </Button>
                         </div>
 
-                        <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-on-surface-muted">
+                        <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-slate-700">
                             <span className="font-semibold text-on-surface">
                                 Question {safeDrillIdx + 1} of {visibleDrills.length} • {activeDrill.category}
                             </span>
@@ -1261,7 +1261,7 @@ export default function PharmacologyPage() {
                             </span>
                         </div>
 
-                        <p className="text-sm sm:text-base font-medium text-on-surface leading-relaxed">
+                        <p className="text-base font-medium text-on-surface leading-relaxed">
                             {activeDrill.prompt}{" "}
                             <Link
                                 to={buildAiTutorUrl(

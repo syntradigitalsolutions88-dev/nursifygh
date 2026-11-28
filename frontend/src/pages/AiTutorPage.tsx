@@ -345,51 +345,92 @@ export default function AiTutorPage() {
 
     return (
         <AppShell>
-            <div className="max-w-4xl space-y-5 pb-24 sm:pb-8">
-                <div>
-                    <h1 className="text-h1">AI Nursing &amp; Science Tutor</h1>
-                    <p className="mt-1 text-body-sm text-on-surface-muted">
-                        Broad explanations across chemistry, biology, anatomy &amp; physiology, pharmacology, clinical nursing, and exam rationales.
-                    </p>
+            <div className="max-w-4xl mx-auto space-y-6 pb-28 sm:pb-10">
+                {/* Clean Clinical Tutor Banner */}
+                <div className="rounded-2xl bg-gradient-to-br from-[#064e3b] via-[#065f46] to-[#0f766e] p-5 sm:p-6 text-white shadow-md">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <div>
+                            <span className="inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100">
+                                NursifyGH AI Tutor
+                            </span>
+                            <h1 className="mt-2 text-2xl sm:text-3xl font-bold text-white leading-snug">
+                                AI Nursing &amp; Science Tutor
+                            </h1>
+                            <p className="mt-1.5 text-sm sm:text-base text-emerald-50/95 leading-relaxed">
+                                Clear breakdowns across chemistry, biology, anatomy &amp; physiology, pharmacology, clinical nursing, and N&amp;MC rationales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="mt-4 pt-4 border-t border-white/15 flex flex-wrap items-center gap-2">
+                        <span className="text-xs font-bold uppercase tracking-wider text-emerald-200 mr-1">
+                            Quick Focus:
+                        </span>
+                        {[
+                            { label: "Step-by-Step Breakdown", prefix: "Explain step by step in clear nursing terms: " },
+                            { label: "N&MC Exam Drill", prefix: "Give me 3 N&MC-style multiple-choice and clinical-judgment questions with rationales on: " },
+                            { label: "Safety & Drug Checks", prefix: "Highlight key nursing priorities, contraindications, and safety checks for: " },
+                        ].map((preset) => (
+                            <button
+                                key={preset.label}
+                                type="button"
+                                onClick={() =>
+                                    setPrompt((prev) =>
+                                        prev.trim() ? `${preset.prefix}${prev.trim()}` : preset.prefix
+                                    )
+                                }
+                                className="rounded-xl bg-white/15 hover:bg-white/25 border border-white/20 px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-white transition-colors"
+                            >
+                                {preset.label}
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Quick Prompt Chips */}
-                <div className="flex flex-wrap gap-2">
-                    {QUICK_PROMPTS.map((qp) => (
-                        <button
-                            key={qp}
-                            type="button"
-                            onClick={() => askTutor(qp)}
-                            className="rounded-full border border-border bg-white px-3.5 py-1.5 text-xs font-medium text-on-surface hover:bg-gray-50 text-left"
-                        >
-                            {qp}
-                        </button>
-                    ))}
+                <div className="space-y-2">
+                    <p className="text-xs font-bold uppercase tracking-wider text-slate-600">
+                        Popular Topics
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                        {QUICK_PROMPTS.map((qp) => (
+                            <button
+                                key={qp}
+                                type="button"
+                                onClick={() => askTutor(qp)}
+                                className="rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs sm:text-sm font-semibold text-slate-800 hover:border-brand-400 hover:bg-brand-50/60 transition-colors text-left shadow-2xs"
+                            >
+                                {qp}
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
-                {/* Conversation Thread */}
-                <div className="rounded-2xl border border-border bg-white p-4 sm:p-6 space-y-4">
-                    <div className="space-y-3">
+                {/* Conversation Thread & Composer */}
+                <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 space-y-5 shadow-sm">
+                    <div className="space-y-4">
                         {messages.map((m) => (
                             <div
                                 key={m.id}
-                                className={`rounded-xl p-4 ${
+                                className={`rounded-2xl p-4 sm:p-5 ${
                                     m.role === "user"
-                                        ? "bg-brand-700 text-white ml-auto max-w-2xl"
-                                        : "bg-gray-50 border border-border text-on-surface"
+                                        ? "bg-brand-700 text-white ml-auto max-w-2xl shadow-xs"
+                                        : "bg-slate-50 border border-slate-200 text-slate-900"
                                 }`}
                             >
                                 {m.role === "tutor" && m.framework && (
-                                    <div className="mb-2">
+                                    <div className="mb-2.5">
                                         <Badge variant="neutral">{m.framework}</Badge>
                                     </div>
                                 )}
-                                <p className="text-xs sm:text-sm leading-relaxed whitespace-pre-line">{m.content}</p>
+                                <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                                    {m.content}
+                                </p>
                             </div>
                         ))}
                     </div>
 
-                    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 pt-2 border-t border-border">
+                    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-slate-200">
                         <div className="flex-1">
                             <Input
                                 label="Ask anything in chemistry, biology, anatomy, pharmacology, or nursing"

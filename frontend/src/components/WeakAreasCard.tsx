@@ -34,7 +34,7 @@ export default function WeakAreasCard() {
                     </div>
                     <div>
                         <h2 className="text-base font-bold text-on-surface">Focus Areas</h2>
-                        <p className="text-xs text-on-surface-muted mt-0.5">
+                        <p className="text-xs text-slate-600 mt-0.5">
                             Improve your score by reviewing these courses
                         </p>
                     </div>
@@ -53,7 +53,7 @@ export default function WeakAreasCard() {
                                 <span className="text-sm font-bold text-on-surface truncate group-hover:text-brand-700 transition-colors">
                                     {area.course_code}
                                 </span>
-                                <span className="text-xs font-medium text-on-surface-muted truncate">
+                                <span className="text-xs font-medium text-slate-600 truncate">
                                     • {area.course_title}
                                 </span>
                             </div>
@@ -69,7 +69,7 @@ export default function WeakAreasCard() {
                                         style={{ width: `${area.accuracy}%` }}
                                     />
                                 </div>
-                                <span className="text-xs font-medium text-on-surface-muted">
+                                <span className="text-xs font-medium text-slate-600">
                                     {area.correct} / {area.total} correct
                                 </span>
                             </div>
@@ -84,7 +84,7 @@ export default function WeakAreasCard() {
                                     {area.accuracy}%
                                 </p>
                             </div>
-                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-50 text-gray-400 group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-50 text-slate-600 group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors">
                                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                                 </svg>

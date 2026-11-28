@@ -506,10 +506,10 @@ export default function TheoryPracticalPage() {
                     <div className="flex flex-wrap items-start justify-between gap-3">
                         <div className="max-w-2xl">
                             <div className="flex flex-wrap items-center gap-2">
-                                <span className="inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                                <span className="inline-block rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700">
                                     AI Semantic Examiner + N&amp;MC Rubric
                                 </span>
-                                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
+                                <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700">
                                     Completed: {statsSummary.completed}/{THEORY_PRACTICAL_BANK.length} • Passed:{" "}
                                     {statsSummary.passed}
                                 </span>
@@ -517,7 +517,7 @@ export default function TheoryPracticalPage() {
                             <h1 className="mt-2 text-xl font-bold text-slate-900 sm:text-2xl">
                                 Theory &amp; Practical Exam Simulator
                             </h1>
-                            <p className="mt-1 text-xs text-slate-600 sm:text-sm">
+                            <p className="mt-1 text-sm text-slate-700 sm:text-sm">
                                 Write full-sentence answers in your own words across RGN, RM, RPN, CHN, NAC, and NAP. Our AI Examiner recognizes clinical synonyms, awards partial credit, and shows the official N&amp;MC marking scheme.
                             </p>
                         </div>
@@ -525,7 +525,7 @@ export default function TheoryPracticalPage() {
                         {activeItem && (
                             <div className="flex flex-wrap items-center gap-2">
                                 <div
-                                    className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-bold ${
+                                    className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-sm font-bold ${
                                         secondsLeft <= 60
                                             ? "border-rose-300 bg-rose-50 text-rose-800"
                                             : secondsLeft <= 180
@@ -547,7 +547,7 @@ export default function TheoryPracticalPage() {
                                 <button
                                     type="button"
                                     onClick={() => setActiveItem(null)}
-                                    className="rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100"
+                                    className="rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
                                 >
                                     ← All Stations
                                 </button>
@@ -566,7 +566,7 @@ export default function TheoryPracticalPage() {
                                         key={p.code}
                                         type="button"
                                         onClick={() => setProgramFilter(p.code)}
-                                        className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
+                                        className={`rounded-full px-3.5 py-1.5 text-sm font-semibold transition ${
                                             programFilter === p.code
                                                 ? "bg-emerald-700 text-white"
                                                 : "bg-slate-100 text-slate-700 hover:bg-slate-200"
@@ -613,7 +613,7 @@ export default function TheoryPracticalPage() {
 
                         {/* Scenario Cards */}
                         {filteredItems.length === 0 ? (
-                            <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center text-xs text-slate-600">
+                            <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center text-sm text-slate-700">
                                 No matching Theory or Practical stations found. Try clearing your search filter.
                             </div>
                         ) : (
@@ -662,7 +662,7 @@ export default function TheoryPracticalPage() {
 
                                                 <h2 className="mt-2.5 text-base font-bold text-slate-900">{item.title}</h2>
                                                 <p className="mt-1 text-xs font-medium text-emerald-700">{item.courseTag}</p>
-                                                <p className="mt-2 line-clamp-3 text-xs text-slate-600">
+                                                <p className="mt-2 line-clamp-3 text-sm text-slate-700">
                                                     {item.examType === "THEORY" ? item.scenarioText : item.stationPrompt}
                                                 </p>
                                             </div>
@@ -670,7 +670,7 @@ export default function TheoryPracticalPage() {
                                             <button
                                                 type="button"
                                                 onClick={() => openScenario(item)}
-                                                className="mt-4 w-full rounded-xl bg-emerald-700 px-4 py-2.5 text-xs font-semibold text-white hover:bg-emerald-800"
+                                                className="mt-4 w-full rounded-xl bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-emerald-800"
                                             >
                                                 {item.examType === "THEORY"
                                                     ? saved
@@ -719,7 +719,7 @@ export default function TheoryPracticalPage() {
                                 <div className="flex flex-wrap items-center justify-between gap-2">
                                     <div>
                                         <div className="flex flex-wrap items-center gap-2">
-                                            <p className="text-xs font-bold uppercase tracking-wide">
+                                            <p className="text-sm font-bold uppercase tracking-wide">
                                                 Examiner Marking Summary (N&amp;MC 50% Pass Standard)
                                             </p>
                                             <span className="rounded-full bg-white/90 px-2.5 py-0.5 text-[11px] font-bold text-emerald-800">
@@ -737,13 +737,13 @@ export default function TheoryPracticalPage() {
                                         <button
                                             type="button"
                                             onClick={handleCopyRevisionScript}
-                                            className="rounded-xl border border-emerald-300 bg-white px-3.5 py-2 text-xs font-semibold text-slate-800 shadow-xs hover:bg-slate-50"
+                                            className="rounded-xl border border-emerald-300 bg-white px-3.5 py-2 text-sm font-semibold text-slate-800 shadow-xs hover:bg-slate-50"
                                         >
                                             {copiedScript ? "✓ Copied Revision Sheet" : "Copy Revision Script"}
                                         </button>
                                         <Link
                                             to={aiTutorLink}
-                                            className="rounded-xl bg-emerald-800 px-3.5 py-2 text-xs font-semibold text-white shadow-xs hover:bg-emerald-900"
+                                            className="rounded-xl bg-emerald-800 px-3.5 py-2 text-sm font-semibold text-white shadow-xs hover:bg-emerald-900"
                                         >
                                             Discuss With AI Tutor →
                                         </Link>
@@ -775,7 +775,7 @@ export default function TheoryPracticalPage() {
                                     <div className="flex flex-wrap items-center justify-between gap-2">
                                         <h3 className="text-sm font-bold text-slate-900">{sq.label}</h3>
                                         {gradedSection && (
-                                            <span className="rounded-full bg-slate-900 px-3 py-1 text-xs font-bold text-white">
+                                            <span className="rounded-full bg-slate-900 px-3 py-1 text-sm font-bold text-white">
                                                 Awarded: {gradedSection.earned} / {gradedSection.maxMarks} ({gradedSection.hits}/
                                                 {gradedSection.totalClusters} points)
                                             </span>
@@ -785,7 +785,7 @@ export default function TheoryPracticalPage() {
                                     <div className="space-y-2.5">
                                         {lines.map((val, idx) => (
                                             <div key={idx} className="flex items-start gap-2">
-                                                <span className="mt-2.5 text-xs font-bold text-slate-400">{idx + 1}.</span>
+                                                <span className="mt-2.5 text-sm font-bold text-slate-400">{idx + 1}.</span>
                                                 <textarea
                                                     rows={3}
                                                     disabled={isSubmittedTheory || isGrading}
@@ -834,7 +834,7 @@ export default function TheoryPracticalPage() {
                                     type="button"
                                     disabled={isGrading}
                                     onClick={handleSubmitTheory}
-                                    className="rounded-xl bg-emerald-700 px-5 py-3 text-xs font-bold text-white hover:bg-emerald-800 disabled:opacity-60 sm:text-sm"
+                                    className="rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-800 disabled:opacity-60 sm:text-sm"
                                 >
                                     {isGrading
                                         ? "AI Examiner Marking Script..."
@@ -844,7 +844,7 @@ export default function TheoryPracticalPage() {
                                 <button
                                     type="button"
                                     onClick={() => openScenario(activeItem)}
-                                    className="rounded-xl bg-slate-900 px-5 py-3 text-xs font-bold text-white hover:bg-slate-800 sm:text-sm"
+                                    className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800 sm:text-sm"
                                 >
                                     Retake This Theory Question
                                 </button>
@@ -865,7 +865,7 @@ export default function TheoryPracticalPage() {
                                     </span>
                                     <span className="text-slate-500">{activeItem.courseTag}</span>
                                 </div>
-                                <div className="flex rounded-xl border border-slate-200 bg-slate-100 p-1 text-xs font-semibold">
+                                <div className="flex rounded-xl border border-slate-200 bg-slate-100 p-1 text-sm font-semibold">
                                     <button
                                         type="button"
                                         disabled={isGrading}
@@ -917,7 +917,7 @@ export default function TheoryPracticalPage() {
                                 <div className="flex flex-wrap items-center justify-between gap-2">
                                     <div>
                                         <div className="flex flex-wrap items-center gap-2">
-                                            <p className="text-xs font-bold uppercase tracking-wide">OSCE Examiner Marking Result</p>
+                                            <p className="text-sm font-bold uppercase tracking-wide">OSCE Examiner Marking Result</p>
                                             {writtenPracticalResult && (
                                                 <span className="rounded-full bg-white/90 px-2.5 py-0.5 text-[11px] font-bold text-emerald-800">
                                                     {writtenPracticalResult.aiGraded
@@ -938,13 +938,13 @@ export default function TheoryPracticalPage() {
                                         <button
                                             type="button"
                                             onClick={handleCopyRevisionScript}
-                                            className="rounded-xl border border-emerald-300 bg-white px-3.5 py-2 text-xs font-semibold text-slate-800 shadow-xs hover:bg-slate-50"
+                                            className="rounded-xl border border-emerald-300 bg-white px-3.5 py-2 text-sm font-semibold text-slate-800 shadow-xs hover:bg-slate-50"
                                         >
                                             {copiedScript ? "✓ Copied Checklist" : "Copy OSCE Checklist"}
                                         </button>
                                         <Link
                                             to={aiTutorLink}
-                                            className="rounded-xl bg-emerald-800 px-3.5 py-2 text-xs font-semibold text-white shadow-xs hover:bg-emerald-900"
+                                            className="rounded-xl bg-emerald-800 px-3.5 py-2 text-sm font-semibold text-white shadow-xs hover:bg-emerald-900"
                                         >
                                             Discuss With AI Tutor →
                                         </Link>
@@ -1048,7 +1048,7 @@ export default function TheoryPracticalPage() {
                                                     !writtenPractical.post.trim())
                                             }
                                             onClick={handleSubmitWrittenPractical}
-                                            className="rounded-xl bg-emerald-700 px-5 py-3 text-xs font-bold text-white hover:bg-emerald-800 disabled:opacity-50 sm:text-sm"
+                                            className="rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-800 disabled:opacity-50 sm:text-sm"
                                         >
                                             {isGrading
                                                 ? "AI Examiner Marking Practical..."
@@ -1058,7 +1058,7 @@ export default function TheoryPracticalPage() {
                                         <button
                                             type="button"
                                             onClick={() => openScenario(activeItem)}
-                                            className="rounded-xl bg-slate-900 px-5 py-3 text-xs font-bold text-white hover:bg-slate-800 sm:text-sm"
+                                            className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800 sm:text-sm"
                                         >
                                             Retake Practical Question
                                         </button>
@@ -1164,7 +1164,7 @@ export default function TheoryPracticalPage() {
                                             type="button"
                                             disabled={selectedStepIds.length === 0}
                                             onClick={handleSubmitSequencePractical}
-                                            className="rounded-xl bg-emerald-700 px-5 py-3 text-xs font-bold text-white hover:bg-emerald-800 disabled:opacity-50 sm:text-sm"
+                                            className="rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-800 disabled:opacity-50 sm:text-sm"
                                         >
                                             Submit &amp; Auto-Mark Sequence (20 Marks)
                                         </button>
@@ -1172,7 +1172,7 @@ export default function TheoryPracticalPage() {
                                         <button
                                             type="button"
                                             onClick={() => openScenario(activeItem)}
-                                            className="rounded-xl bg-slate-900 px-5 py-3 text-xs font-bold text-white hover:bg-slate-800 sm:text-sm"
+                                            className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800 sm:text-sm"
                                         >
                                             Repeat Sequence Drill
                                         </button>

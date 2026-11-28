@@ -42,7 +42,7 @@ export default function DailyReviewQueueCard({ onOpenQuickRef }: Props) {
                                 ? `${dueCount} items ready for active recall (${missedCount} missed Qs · ${dueCardsCount} due flashcards)`
                                 : "You're caught up! Keep your streak alive with a quick drill"}
                     </h2>
-                    <p className="mt-1 text-xs text-on-surface-muted">
+                    <p className="mt-1 text-xs text-slate-600">
                         Previously missed questions stay in your queue until you answer them correctly.
                     </p>
                 </div>
@@ -84,7 +84,7 @@ export default function DailyReviewQueueCard({ onOpenQuickRef }: Props) {
                         >
                             <div className="flex items-center justify-between gap-2">
                                 <span className="text-xs font-bold text-brand-700">{item.course_code}</span>
-                                <span className="text-[11px] font-semibold text-red-600">
+                                <span className="text-xs font-semibold text-red-600">
                                     Missed {item.times_missed}×
                                 </span>
                             </div>

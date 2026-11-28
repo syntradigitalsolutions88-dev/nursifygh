@@ -82,7 +82,7 @@ export default function CarePlansPage() {
                 {/* Header */}
                 <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div>
-                        <p className="text-xs font-bold text-brand-700 uppercase tracking-wider">Care Plan Workspace</p>
+                        <p className="text-sm font-bold text-brand-700 uppercase tracking-wider">Care Plan Workspace</p>
                         <h1 className="mt-1 text-h1">My Care Plans</h1>
                         <p className="mt-1 text-body-sm text-on-surface-muted max-w-2xl">
                             Draft, refine, and master NANDA care plans with AI-generated SMART goals and evidence-based rationales.
@@ -138,7 +138,7 @@ export default function CarePlansPage() {
                                 <button
                                     key={f}
                                     onClick={() => setFilter(f)}
-                                    className={`px-3 py-1.5 text-xs font-bold rounded-md capitalize transition-colors ${filter === f ? "bg-white text-brand-700 shadow-sm" : "text-on-surface-muted hover:text-on-surface"}`}
+                                    className={`px-3 py-1.5 text-sm font-bold rounded-md capitalize transition-colors ${filter === f ? "bg-white text-brand-700 shadow-sm" : "text-on-surface-muted hover:text-on-surface"}`}
                                 >
                                     {f}
                                 </button>
@@ -154,15 +154,15 @@ export default function CarePlansPage() {
                         {!loadingPlans && plans && plans.length > 0 && (
                             <div className="grid grid-cols-3 gap-3">
                                 <div className="rounded-xl border border-border bg-white p-4">
-                                    <p className="text-xs font-semibold text-on-surface-muted uppercase tracking-wider">Total Plans</p>
+                                    <p className="text-sm font-semibold text-on-surface-muted uppercase tracking-wider">Total Plans</p>
                                     <p className="mt-1 text-2xl font-black text-brand-700">{totalCount}</p>
                                 </div>
                                 <div className="rounded-xl border border-border bg-white p-4">
-                                    <p className="text-xs font-semibold text-on-surface-muted uppercase tracking-wider">Submitted</p>
+                                    <p className="text-sm font-semibold text-on-surface-muted uppercase tracking-wider">Submitted</p>
                                     <p className="mt-1 text-2xl font-black text-green-700">{submittedCount}</p>
                                 </div>
                                 <div className="rounded-xl border border-border bg-white p-4">
-                                    <p className="text-xs font-semibold text-on-surface-muted uppercase tracking-wider">Public</p>
+                                    <p className="text-sm font-semibold text-on-surface-muted uppercase tracking-wider">Public</p>
                                     <p className="mt-1 text-2xl font-black text-blue-700">{publicCount}</p>
                                 </div>
                             </div>
@@ -301,12 +301,12 @@ function PlanRow({ plan }: { plan: any }) {
                         <p className="mt-0.5 text-body-sm text-on-surface-muted truncate">{plan.primary_diagnosis_label}</p>
                         <div className="mt-2 flex flex-wrap items-center gap-2">
                             {plan.is_submitted ? <Badge variant="success">✓ Submitted</Badge> : plan.is_public ? <Badge variant="brand">🌍 Public</Badge> : <Badge variant="brand">📝 Draft</Badge>}
-                            <span className="text-xs text-on-surface-muted">{plan.goal_count} goal{plan.goal_count === 1 ? "" : "s"} · {plan.intervention_count} intervention{plan.intervention_count === 1 ? "" : "s"}</span>
+                            <span className="text-sm text-slate-700">{plan.goal_count} goal{plan.goal_count === 1 ? "" : "s"} · {plan.intervention_count} intervention{plan.intervention_count === 1 ? "" : "s"}</span>
                         </div>
                     </div>
                 </div>
                 <div className="shrink-0 flex flex-col items-end gap-1">
-                    <p className="text-xs text-on-surface-muted whitespace-nowrap">{updatedAgo}</p>
+                    <p className="text-sm text-slate-700 whitespace-nowrap">{updatedAgo}</p>
                     <svg className="h-4 w-4 text-on-surface-subtle group-hover:text-brand-500 group-hover:translate-x-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>

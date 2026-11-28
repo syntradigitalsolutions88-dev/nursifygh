@@ -251,7 +251,7 @@ export default function CasesPage() {
                             >
                                 ← All Clinical Cases
                             </button>
-                            <span className="text-xs font-semibold text-on-surface-muted">
+                            <span className="text-sm font-semibold text-on-surface-muted">
                                 Stage {stepIndex + 1} of {activeCase.stages.length}
                             </span>
                         </div>
@@ -261,12 +261,12 @@ export default function CasesPage() {
                                 {activeCase.program_label && <Badge variant="neutral">{activeCase.program_label}</Badge>}
                                 <Badge variant="neutral">{activeCase.condition_tag}</Badge>
                                 <Badge variant="success">{activeCase.difficulty_display}</Badge>
-                                <span className="text-xs text-on-surface-muted">{activeCase.setting}</span>
+                                <span className="text-sm text-slate-700">{activeCase.setting}</span>
                             </div>
 
                             <h2 className="text-h2">{activeCase.title}</h2>
 
-                            <div className="rounded-xl bg-gray-50 border border-border p-3.5 text-xs sm:text-sm text-on-surface leading-relaxed">
+                            <div className="rounded-xl bg-gray-50 border border-border p-3.5 text-base text-on-surface leading-relaxed">
                                 <span className="font-bold text-on-surface">Presenting Scenario: </span>
                                 {activeCase.patient_summary}
                             </div>
@@ -279,7 +279,7 @@ export default function CasesPage() {
                                             to={buildAiTutorUrl(
                                                 `Case: ${activeCase.title} | Stage ${activeStage.step_number}: ${activeStage.title} | Vitals: ${activeStage.vitals_summary} | Update: ${activeStage.clinical_update} | Question: ${activeStage.question_prompt}`
                                             )}
-                                            className="ml-2 inline-flex shrink-0 items-center whitespace-nowrap text-xs font-semibold text-brand-700 underline"
+                                            className="ml-2 inline-flex shrink-0 items-center whitespace-nowrap text-sm font-semibold text-brand-700 underline"
                                         >
                                             Ask AI Tutor about this case stage →
                                         </Link>
@@ -291,7 +291,7 @@ export default function CasesPage() {
                                     )}
                                 </div>
 
-                                <p className="text-sm text-on-surface-muted leading-relaxed">
+                                <p className="text-[15px] text-slate-700 leading-relaxed">
                                     {activeStage.clinical_update}
                                 </p>
 
@@ -310,7 +310,7 @@ export default function CasesPage() {
                                                     setSelectedKey(opt.key)
                                                     setFeedback(null)
                                                 }}
-                                                className={`w-full text-left rounded-xl border p-3.5 text-xs sm:text-sm transition ${isSelected
+                                                className={`w-full text-left rounded-xl border p-3.5 text-base transition ${isSelected
                                                         ? "border-brand-700 bg-brand-50/50 font-medium text-on-surface"
                                                         : "border-border bg-white text-on-surface hover:bg-gray-50"
                                                     }`}
@@ -365,7 +365,7 @@ export default function CasesPage() {
                                             {feedback.rationale}
                                         </Alert>
                                         {feedback.nursing_takeaway && (
-                                            <p className="text-xs text-on-surface-muted px-1">
+                                            <p className="text-sm text-slate-700 px-1">
                                                 <span className="font-semibold text-on-surface">Key Takeaway: </span>
                                                 {feedback.nursing_takeaway}
                                             </p>
@@ -376,7 +376,7 @@ export default function CasesPage() {
                                                     <p className="text-sm font-bold text-on-surface">
                                                         Case Completed — Score: {feedback.attempt.correct_steps}/{feedback.attempt.total_steps}
                                                     </p>
-                                                    <p className="text-xs text-on-surface-muted">
+                                                    <p className="text-sm text-slate-700">
                                                         Review rationales above or reset to replay from Stage 1.
                                                     </p>
                                                 </div>
@@ -420,7 +420,7 @@ export default function CasesPage() {
                                     key={val}
                                     type="button"
                                     onClick={() => setProgramFilter(val)}
-                                    className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${programFilter === val
+                                    className={`rounded-full px-3.5 py-1.5 text-sm font-semibold transition ${programFilter === val
                                             ? "bg-brand-700 text-white"
                                             : "border border-border bg-white text-on-surface-muted hover:text-on-surface"
                                         }`}
@@ -442,7 +442,7 @@ export default function CasesPage() {
                                     key={val}
                                     type="button"
                                     onClick={() => setDifficulty(val)}
-                                    className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${difficulty === val
+                                    className={`rounded-full px-3.5 py-1.5 text-sm font-semibold transition ${difficulty === val
                                             ? "bg-brand-700 text-white"
                                             : "border border-border bg-white text-on-surface-muted hover:text-on-surface"
                                         }`}
@@ -453,11 +453,11 @@ export default function CasesPage() {
                         </div>
 
                         {isLoading ? (
-                            <div className="rounded-xl border border-border bg-white p-10 text-center text-sm text-on-surface-muted">
+                            <div className="rounded-xl border border-border bg-white p-10 text-center text-[15px] text-slate-700">
                                 Loading clinical cases…
                             </div>
                         ) : cases.length === 0 ? (
-                            <div className="rounded-xl border border-border bg-white p-8 text-center text-sm text-on-surface-muted">
+                            <div className="rounded-xl border border-border bg-white p-8 text-center text-[15px] text-slate-700">
                                 No clinical cases match the selected programme and difficulty filters.
                             </div>
                         ) : (
@@ -481,7 +481,7 @@ export default function CasesPage() {
                                                     )}
                                                 </div>
                                                 <h2 className="text-h4 text-on-surface">{c.title}</h2>
-                                                <p className="text-xs sm:text-sm text-on-surface-muted line-clamp-2">
+                                                <p className="text-base text-on-surface-muted line-clamp-2">
                                                     {c.patient_summary}
                                                 </p>
                                             </div>
