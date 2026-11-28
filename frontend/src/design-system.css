@@ -45,7 +45,7 @@
     --color-border-strong: #cfccc5;
 
     --color-on-surface: #1a1a1a;
-    --color-on-surface-muted: #1e293b;
+    --color-on-surface-muted: #334155;
     --color-on-surface-subtle: #334155;
 
     /* ---- Semantic ---- */
@@ -80,23 +80,23 @@
 @layer components {
     .text-display {
         font-family: var(--font-display);
-        font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
-        line-height: 1.05;
-        letter-spacing: -0.03em;
-        font-weight: 500;
-    }
-
-    .text-h1 {
-        font-size: clamp(2rem, 2.5vw + 1rem, 2.75rem);
+        font-size: clamp(1.65rem, 4vw + 0.85rem, 3.25rem);
         line-height: 1.15;
         letter-spacing: -0.025em;
         font-weight: 600;
     }
 
-    .text-h2 {
-        font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+    .text-h1 {
+        font-size: clamp(1.45rem, 2.5vw + 0.9rem, 2.25rem);
         line-height: 1.2;
         letter-spacing: -0.02em;
+        font-weight: 700;
+    }
+
+    .text-h2 {
+        font-size: clamp(1.2rem, 1.5vw + 0.85rem, 1.65rem);
+        line-height: 1.28;
+        letter-spacing: -0.015em;
         font-weight: 600;
     }
 
@@ -115,12 +115,12 @@
     }
 
     .text-body {
-        font-size: 1rem;
+        font-size: 0.9375rem;
         line-height: 1.6;
     }
 
     .text-body-sm {
-        font-size: 0.9375rem;
+        font-size: 0.875rem;
         line-height: 1.55;
     }
 

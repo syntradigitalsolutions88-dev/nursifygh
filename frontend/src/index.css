@@ -186,20 +186,20 @@ body {
 
 @layer utilities {
   .text-xs {
-    font-size: 0.8125rem !important;
-    line-height: 1.35rem !important;
+    font-size: 0.78rem !important;
+    line-height: 1.25rem !important;
   }
 
   .text-sm,
   .text-body-sm {
-    font-size: 0.9375rem !important;
-    line-height: 1.55rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.48rem !important;
   }
 
   .text-base,
   .text-body {
-    font-size: 1rem !important;
-    line-height: 1.625rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.58rem !important;
   }
 }
 
