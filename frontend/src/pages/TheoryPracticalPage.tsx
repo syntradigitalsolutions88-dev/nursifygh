@@ -566,7 +566,7 @@ export default function TheoryPracticalPage() {
                                         key={p.code}
                                         type="button"
                                         onClick={() => setProgramFilter(p.code)}
-                                        className={`rounded-full px-3.5 py-1.5 text-sm font-semibold transition ${
+                                        className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
                                             programFilter === p.code
                                                 ? "bg-emerald-700 text-white"
                                                 : "bg-slate-100 text-slate-700 hover:bg-slate-200"

@@ -420,7 +420,7 @@ export default function CasesPage() {
                                     key={val}
                                     type="button"
                                     onClick={() => setProgramFilter(val)}
-                                    className={`rounded-full px-3.5 py-1.5 text-sm font-semibold transition ${programFilter === val
+                                    className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${programFilter === val
                                             ? "bg-brand-700 text-white"
                                             : "border border-border bg-white text-on-surface-muted hover:text-on-surface"
                                         }`}
@@ -442,7 +442,7 @@ export default function CasesPage() {
                                     key={val}
                                     type="button"
                                     onClick={() => setDifficulty(val)}
-                                    className={`rounded-full px-3.5 py-1.5 text-sm font-semibold transition ${difficulty === val
+                                    className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${difficulty === val
                                             ? "bg-brand-700 text-white"
                                             : "border border-border bg-white text-on-surface-muted hover:text-on-surface"
                                         }`}

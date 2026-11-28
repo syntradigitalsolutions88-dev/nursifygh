@@ -173,38 +173,33 @@ body {
   }
 }
 
-/* ---- Comfortable Mobile & Reading Scale (Global High-Contrast) ---- */
+/* ---- Comfortable Mobile & Reading Scale (Uniform 15px Chief Examiner Parity) ---- */
 html {
-  font-size: 17px;
+  font-size: 16px;
 }
 
-@media (max-width: 639px) {
-  html {
-    font-size: 18px;
-  }
-
-  body {
-    line-height: 1.65;
-    color: #0f172a;
-  }
+body {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #0f172a;
 }
 
 @layer utilities {
   .text-xs {
-    font-size: 0.9rem !important;
-    line-height: 1.48rem !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.35rem !important;
   }
 
   .text-sm,
   .text-body-sm {
-    font-size: 1rem !important;
-    line-height: 1.62rem !important;
+    font-size: 0.9375rem !important;
+    line-height: 1.55rem !important;
   }
 
   .text-base,
   .text-body {
-    font-size: 1.08rem !important;
-    line-height: 1.7rem !important;
+    font-size: 1rem !important;
+    line-height: 1.625rem !important;
   }
 }
 
@@ -214,5 +209,5 @@ html {
 input,
 textarea,
 select {
-  font-size: 1rem !important;
+  font-size: 0.9375rem !important;
 }

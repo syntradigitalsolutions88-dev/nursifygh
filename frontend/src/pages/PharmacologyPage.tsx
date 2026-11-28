@@ -808,7 +808,7 @@ export default function PharmacologyPage() {
                             key={key}
                             type="button"
                             onClick={() => setTab(key)}
-                            className={`rounded-full px-4 py-1.5 text-sm font-semibold transition ${tab === key
+                            className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${tab === key
                                     ? "bg-brand-700 text-white"
                                     : "border border-border bg-white text-on-surface-muted hover:text-on-surface"
                                 }`}
@@ -929,7 +929,7 @@ export default function PharmacologyPage() {
                                     key={m}
                                     type="button"
                                     onClick={() => setCalcMode(m)}
-                                    className={`rounded-lg px-3 py-1.5 text-sm font-semibold ${calcMode === m
+                                    className={`rounded-lg px-3 py-1.5 text-xs font-semibold ${calcMode === m
                                             ? "bg-brand-700 text-white"
                                             : "border border-border bg-gray-50 text-on-surface-muted"
                                         }`}
@@ -1238,7 +1238,7 @@ export default function PharmacologyPage() {
                                             setUserAnswer("")
                                             setCheckedDrill(null)
                                         }}
-                                        className={`rounded-full px-3 py-1 text-sm font-semibold transition ${drillCategory === cat
+                                        className={`rounded-full px-3 py-1 text-xs font-semibold transition ${drillCategory === cat
                                                 ? "bg-brand-700 text-white"
                                                 : "border border-border bg-gray-50 text-on-surface-muted hover:text-on-surface"
                                             }`}
