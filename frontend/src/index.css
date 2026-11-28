@@ -173,14 +173,17 @@ body {
   }
 }
 
-/* ---- Comfortable Mobile & Reading Scale (High-Contrast Accessibility) ---- */
+/* ---- Comfortable Mobile & Reading Scale (Global High-Contrast) ---- */
+html {
+  font-size: 17px;
+}
+
 @media (max-width: 639px) {
   html {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   body {
-    font-size: 1rem;
     line-height: 1.65;
     color: #0f172a;
   }
@@ -202,14 +205,6 @@ body {
   .text-body {
     font-size: 1.08rem !important;
     line-height: 1.7rem !important;
-  }
-
-  .text-on-surface-muted {
-    color: #1e293b !important;
-  }
-
-  .text-on-surface-subtle {
-    color: #334155 !important;
   }
 }
 
