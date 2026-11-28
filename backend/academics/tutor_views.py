@@ -300,20 +300,113 @@ def _generate_tutor_response(prompt_text: str) -> dict:
     }
 
 
+
+def _call_vision_llm(user_prompt: str, image_data_url: str) -> tuple[str | None, str | None]:
+    api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
+    api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
+    vision_model = os.getenv("LLM_VISION_MODEL", "qwen/qwen3.8-27b").strip()
+
+    if not api_key or not api_url or not image_data_url.startswith("data:image/"):
+        return None, None
+
+    system_msg = (
+        "You are the NursifyGH Senior Clinical & Science Tutor for Ghanaian nursing and midwifery students "
+        "(RGN, RM, RPN, CHN, NAC, NAP). Examine the uploaded image carefully—whether it is a past exam question, "
+        "handwritten calculation, drug vial/leaflet, vital signs chart, partograph, ECG, or anatomy diagram. "
+        "Transcribe any visible text/numbers accurately, then provide a clear, step-by-step clinical explanation, "
+        "worked calculation, or N&MC exam rationale aligned with Ghana MoH/GHS/N&MC standards. Use clean Markdown."
+    )
+
+    payload = {
+        "model": vision_model,
+        "temperature": 0.25,
+        "max_tokens": 1600,
+        "messages": [
+            {"role": "system", "content": system_msg},
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": user_prompt},
+                    {"type": "image_url", "image_url": {"url": image_data_url}},
+                ],
+            },
+        ],
+    }
+
+    req = urllib.request.Request(
+        api_url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+            "User-Agent": "NursifyGH-VisionTutor/1.0",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=28) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            choices = data.get("choices") or []
+            if not choices:
+                return None, None
+            content = ((choices[0].get("message") or {}).get("content") or "").strip()
+            if content:
+                return content, f"NursifyGH Visual Clinical Solver • {vision_model}"
+    except Exception as exc:
+        logger.warning("Vision LLM fallback triggered (%s): %s", type(exc).__name__, exc)
+    return None, None
+
+
 class TutorCoachView(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
         prompt = str(request.data.get("prompt") or "").strip()
-        if not prompt:
-            return Response({"detail": "Please provide a clinical or study question."}, status=status.HTTP_400_BAD_REQUEST)
+        image_data_url = str(request.data.get("image_data_url") or "").strip()
+        department = str(request.data.get("department") or "").strip()
 
-        prog = getattr(request.user, "program", "") or ""
+        if not prompt and not image_data_url:
+            return Response({"detail": "Please provide a clinical or study question or upload an image."}, status=status.HTTP_400_BAD_REQUEST)
+
+        if image_data_url and not prompt:
+            prompt = (
+                "Examine this uploaded study or clinical picture, extract the question or clinical data shown, "
+                "and solve or explain it step by step with N&MC exam rationales."
+            )
+
+        prog = department or (getattr(request.user, "program", "") or "")
         lvl = getattr(request.user, "level", "") or ""
         ctx = " ".join(x for x in [f"Level {lvl}" if lvl else "", prog] if x)
         raw_h = request.data.get("history")
         hist = raw_h if isinstance(raw_h, list) else []
         enriched = f"[Student Profile: {ctx}]\n{prompt}" if ctx else prompt
+
+        if image_data_url.startswith("data:image/"):
+            vis_reply, vis_framework = _call_vision_llm(enriched, image_data_url)
+            if vis_reply and vis_framework:
+                return Response(
+                    {
+                        "reply": vis_reply,
+                        "framework": vis_framework,
+                        "live_llm_used": True,
+                    },
+                    status=status.HTTP_200_OK,
+                )
+            return Response(
+                {
+                    "reply": (
+                        "I received your image. Here is how to break down and solve visual clinical or exam items:\n\n"
+                        "1. **Identify the Core Data:** Note all vital signs, drug concentrations, lab values, or question stems visible in the picture.\n"
+                        "2. **Apply Clinical Priority (ABCDE / Rights of Medication):** Check safety thresholds first (e.g. RR >= 12–16/min, urine output >= 30 mL/hr, or exact mL/hr & drops/min formula).\n"
+                        "3. **Tip:** If your network is slow, type the key numbers or question text from the image below and I will compute and explain it immediately."
+                    ),
+                    "framework": "NursifyGH Visual Study Guide",
+                    "live_llm_used": False,
+                },
+                status=status.HTTP_200_OK,
+            )
+
         live_reply, live_framework = _call_live_llm(enriched, history=hist)
         if live_reply and live_framework:
             return Response(
