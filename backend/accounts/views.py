@@ -211,6 +211,46 @@ class RegisterView(generics.CreateAPIView):
 class LoginView(TokenObtainPairView):
     permission_classes = (permissions.AllowAny,)
 
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        if response.status_code == 200:
+            try:
+                from django.utils import timezone
+                from .models import UserActivityLog, UserLoginLog
+
+                raw_id = (
+                    request.data.get("email")
+                    or request.data.get("username")
+                    or ""
+                )
+                raw_id = str(raw_id).strip()
+                user_obj = None
+                if raw_id:
+                    user_obj = (
+                        User.objects.filter(email__iexact=raw_id).first()
+                        or User.objects.filter(username__iexact=raw_id).first()
+                    )
+                if user_obj:
+                    xff = request.META.get("HTTP_X_FORWARDED_FOR", "")
+                    ip = xff.split(",")[0].strip() if xff else request.META.get("REMOTE_ADDR", "")
+                    ua = str(request.META.get("HTTP_USER_AGENT", ""))[:240]
+                    now = timezone.now()
+                    User.objects.filter(pk=user_obj.pk).update(last_login=now)
+                    UserLoginLog.objects.create(
+                        user=user_obj,
+                        ip_address=ip[:64],
+                        user_agent=ua,
+                    )
+                    UserActivityLog.objects.create(
+                        user=user_obj,
+                        action_type="LOGIN",
+                        summary="Signed in to NursifyGH",
+                        program=str(getattr(user_obj, "program", "") or "")[:24],
+                    )
+            except Exception:
+                logger.exception("Failed to record login log entry")
+        return response
+
 class ProfileView(generics.RetrieveUpdateAPIView):
     serializer_class = UserProfileSerializer
     permission_classes = (permissions.IsAuthenticated,)

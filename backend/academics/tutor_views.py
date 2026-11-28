@@ -586,6 +586,16 @@ def _record_tp_attempt(user, data: dict, default_mode: str, score: float, total_
             passed=bool(int(pct) >= int(pass_pct)),
             ai_graded=bool(ai_graded),
         )
+        try:
+            from accounts.models import UserActivityLog
+            UserActivityLog.objects.create(
+                user=user,
+                action_type=str(data.get("mode") or default_mode)[:48],
+                summary=f"Completed {str(data.get('title') or 'Station')[:140]} ({score}/{total_marks} • {pct}%)",
+                program=str(data.get("program") or "RGN")[:24].upper(),
+            )
+        except Exception:
+            pass
     except Exception as exc:
         logger.warning("Failed to record T&P attempt log: %s", exc)
 

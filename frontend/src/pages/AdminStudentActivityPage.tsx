@@ -3,6 +3,25 @@ import { Link } from "react-router-dom"
 import AppShell from "../components/shell/AppShell"
 import api from "../api/client"
 
+interface LoginRow {
+  id: number
+  user_name: string
+  user_email: string
+  program: string
+  ip_address: string
+  logged_in_at: string | null
+}
+
+interface ActionRow {
+  id: number
+  user_name: string
+  user_email: string
+  program: string
+  action_type: string
+  summary: string
+  created_at: string | null
+}
+
 interface ActivityPayload {
   total_students: number
   filtered_students_count: number
@@ -39,24 +58,8 @@ interface ActivityPayload {
     score: number | string | null
     created_at: string | null
   }[]
-  recent_commissions: {
-    id: number
-    ambassador: string
-    referred_student: string
-    program: string
-    amount: string
-    status: string
-    created_at: string | null
-  }[]
-  recent_feedback: {
-    id: number
-    student: string
-    program: string
-    subject: string
-    message: string
-    status: string
-    created_at: string | null
-  }[]
+  login_history?: LoginRow[]
+  user_actions?: ActionRow[]
 }
 
 export default function AdminStudentActivityPage() {
@@ -88,17 +91,23 @@ export default function AdminStudentActivityPage() {
     loadActivity()
   }, [])
 
+  const logins = data?.login_history || []
+  const actions = data?.user_actions || []
+
   return (
     <AppShell>
       <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <h1 className="text-2xl font-bold text-slate-900">Student Activity Tracker</h1>
+            <h1 className="text-2xl font-bold text-slate-900">Student Activity &amp; Login Tracker</h1>
             <p className="text-sm text-slate-600">
-              Monitor student enrollments, quizzes, NAC/NAP banks, commissions, and feedback across all N&amp;MC tracks.
+              Monitor user logins, what students do across the platform, quizzes, and NAC/NAP tracks.
             </p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link to="/admin-control" className="px-3 py-2 text-sm font-semibold rounded-lg bg-brand-700 text-white hover:bg-brand-800">
+              Control Center
+            </Link>
             <Link to="/admin-commissions" className="px-3 py-2 text-sm font-medium rounded-lg border border-slate-300 hover:bg-slate-50">
               Commissions &amp; Payouts
             </Link>
@@ -149,14 +158,18 @@ export default function AdminStudentActivityPage() {
           <div className="p-6 text-sm text-slate-500">Loading student activity...</div>
         ) : data ? (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <div className="bg-white p-4 rounded-xl border border-slate-200">
-                <div className="text-xs font-medium text-slate-500 uppercase">Total Registered Students</div>
+                <div className="text-xs font-medium text-slate-500 uppercase">Registered Students</div>
                 <div className="text-2xl font-bold text-slate-900 mt-1">{data.total_students}</div>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-200">
-                <div className="text-xs font-medium text-slate-500 uppercase">NAC &amp; NAP Courses</div>
-                <div className="text-2xl font-bold text-slate-900 mt-1">{data.nac_nap_courses.length}</div>
+                <div className="text-xs font-medium text-slate-500 uppercase">Recorded Logins</div>
+                <div className="text-2xl font-bold text-emerald-700 mt-1">{logins.length}</div>
+              </div>
+              <div className="bg-white p-4 rounded-xl border border-slate-200">
+                <div className="text-xs font-medium text-slate-500 uppercase">User Actions</div>
+                <div className="text-2xl font-bold text-slate-900 mt-1">{actions.length}</div>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-200">
                 <div className="text-xs font-medium text-slate-500 uppercase">NAC &amp; NAP Questions</div>
@@ -164,6 +177,81 @@ export default function AdminStudentActivityPage() {
               </div>
             </div>
 
+            {/* Login History */}
+            <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
+              <div className="px-4 py-3 border-b border-slate-200 font-semibold text-slate-900">
+                Recent User Logins
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-slate-50 text-slate-600">
+                    <tr>
+                      <th className="py-2.5 px-4">User</th>
+                      <th className="py-2.5 px-4">Program</th>
+                      <th className="py-2.5 px-4">IP Address</th>
+                      <th className="py-2.5 px-4">Logged In At</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {logins.map((l) => (
+                      <tr key={l.id}>
+                        <td className="py-2.5 px-4">
+                          <div className="font-medium text-slate-900">{l.user_name}</div>
+                          <div className="text-xs text-slate-500">{l.user_email}</div>
+                        </td>
+                        <td className="py-2.5 px-4">{l.program || "-"}</td>
+                        <td className="py-2.5 px-4 text-xs text-slate-500">{l.ip_address || "-"}</td>
+                        <td className="py-2.5 px-4 text-xs text-slate-500">
+                          {l.logged_in_at ? new Date(l.logged_in_at).toLocaleString() : "-"}
+                        </td>
+                      </tr>
+                    ))}
+                    {logins.length === 0 && (
+                      <tr><td colSpan={4} className="py-4 px-4 text-slate-500">No login events recorded yet.</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* What Users Do */}
+            <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
+              <div className="px-4 py-3 border-b border-slate-200 font-semibold text-slate-900">
+                What Users Do (Activity Log)
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-slate-50 text-slate-600">
+                    <tr>
+                      <th className="py-2.5 px-4">User</th>
+                      <th className="py-2.5 px-4">Action</th>
+                      <th className="py-2.5 px-4">Details</th>
+                      <th className="py-2.5 px-4">When</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {actions.map((a) => (
+                      <tr key={a.id}>
+                        <td className="py-2.5 px-4">
+                          <div className="font-medium text-slate-900">{a.user_name}</div>
+                          <div className="text-xs text-slate-500">{a.program || "-"}</div>
+                        </td>
+                        <td className="py-2.5 px-4 text-xs font-semibold text-brand-800">{a.action_type}</td>
+                        <td className="py-2.5 px-4 text-slate-800">{a.summary}</td>
+                        <td className="py-2.5 px-4 text-xs text-slate-500">
+                          {a.created_at ? new Date(a.created_at).toLocaleString() : "-"}
+                        </td>
+                      </tr>
+                    ))}
+                    {actions.length === 0 && (
+                      <tr><td colSpan={4} className="py-4 px-4 text-slate-500">No user actions recorded yet.</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Registered Students */}
             <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
               <div className="px-4 py-3 border-b border-slate-200 font-semibold text-slate-900">
                 Registered Students ({data.filtered_students_count})
@@ -199,6 +287,7 @@ export default function AdminStudentActivityPage() {
               </div>
             </div>
 
+            {/* Recent Quiz Attempts */}
             <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
               <div className="px-4 py-3 border-b border-slate-200 font-semibold text-slate-900">
                 Recent Quiz Attempts

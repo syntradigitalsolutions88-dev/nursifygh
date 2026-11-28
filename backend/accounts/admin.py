@@ -397,3 +397,20 @@ class FeedbackAdmin(admin.ModelAdmin):
         ("Submission", {"fields": ("user", "feedback_type", "subject", "message", "page_url", "created_at")}),
         ("Response", {"fields": ("status", "admin_response", "responded_at")}),
     )
+
+from django.contrib import admin as _acc_admin
+from .models import UserActivityLog as _UserActivityLog, UserLoginLog as _UserLoginLog
+
+@_acc_admin.register(_UserLoginLog)
+class _UserLoginLogAdmin(_acc_admin.ModelAdmin):
+    list_display = ("user", "ip_address", "logged_in_at")
+    search_fields = ("user__email", "user__full_name", "ip_address")
+    list_filter = ("logged_in_at",)
+    readonly_fields = ("logged_in_at",)
+
+@_acc_admin.register(_UserActivityLog)
+class _UserActivityLogAdmin(_acc_admin.ModelAdmin):
+    list_display = ("user", "program", "action_type", "summary", "created_at")
+    list_filter = ("action_type", "program", "created_at")
+    search_fields = ("user__email", "user__full_name", "summary")
+    readonly_fields = ("created_at",)

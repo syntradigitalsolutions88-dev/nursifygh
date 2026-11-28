@@ -389,3 +389,39 @@ class Feedback(models.Model):
 
     def __str__(self):
         return f"[{self.feedback_type}] {self.subject} — {self.user.email}"
+
+class UserLoginLog(models.Model):
+    """Records every time a user logs into NursifyGH."""
+
+    user = models.ForeignKey(
+        "accounts.User",
+        on_delete=models.CASCADE,
+        related_name="login_logs",
+    )
+    ip_address = models.CharField(max_length=64, blank=True, default="")
+    user_agent = models.CharField(max_length=240, blank=True, default="")
+    logged_in_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-logged_in_at"]
+        verbose_name = "User Login Log"
+        verbose_name_plural = "User Login Logs"
+
+
+class UserActivityLog(models.Model):
+    """Records notable actions performed by users across the platform."""
+
+    user = models.ForeignKey(
+        "accounts.User",
+        on_delete=models.CASCADE,
+        related_name="activity_logs",
+    )
+    action_type = models.CharField(max_length=48, default="ACTIVITY")
+    summary = models.CharField(max_length=255)
+    program = models.CharField(max_length=24, blank=True, default="")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name = "User Activity Log"
+        verbose_name_plural = "User Activity Logs"
