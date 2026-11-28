@@ -11,6 +11,8 @@ from .models import (
     Question,
     QuizAnswer,
     QuizAttempt,
+    TheoryPracticalAttemptLog,
+    TheoryPracticalControlConfig,
 )
 
 
@@ -100,3 +102,67 @@ class FlashcardReviewAdmin(admin.ModelAdmin):
     list_display = ("student", "flashcard", "is_bookmarked", "review_count", "next_review_at")
     list_filter = ("is_bookmarked", "next_review_at")
     search_fields = ("student__email", "flashcard__front")
+
+
+@admin.register(TheoryPracticalControlConfig)
+class TheoryPracticalControlConfigAdmin(admin.ModelAdmin):
+    list_display = (
+        "id",
+        "simulator_enabled",
+        "ai_examiner_enabled",
+        "theory_mode_enabled",
+        "practical_mode_enabled",
+        "sequence_drill_enabled",
+        "default_theory_minutes",
+        "default_practical_minutes",
+        "pass_mark_percent",
+        "updated_at",
+    )
+    fieldsets = (
+        (
+            "Feature & AI Examiner Switches",
+            {
+                "fields": (
+                    "simulator_enabled",
+                    "ai_examiner_enabled",
+                    "theory_mode_enabled",
+                    "practical_mode_enabled",
+                    "sequence_drill_enabled",
+                )
+            },
+        ),
+        (
+            "Programmes, Timers & Pass Threshold",
+            {
+                "fields": (
+                    "enabled_programs",
+                    "default_theory_minutes",
+                    "default_practical_minutes",
+                    "pass_mark_percent",
+                    "announcement_banner",
+                )
+            },
+        ),
+    )
+
+    def has_add_permission(self, request):
+        return not TheoryPracticalControlConfig.objects.exists()
+
+
+@admin.register(TheoryPracticalAttemptLog)
+class TheoryPracticalAttemptLogAdmin(admin.ModelAdmin):
+    list_display = (
+        "user",
+        "program",
+        "scenario_title",
+        "mode",
+        "score",
+        "total_marks",
+        "percentage",
+        "passed",
+        "ai_graded",
+        "created_at",
+    )
+    list_filter = ("program", "mode", "passed", "ai_graded", "created_at")
+    search_fields = ("user__email", "user__full_name", "scenario_title", "scenario_id")
+    readonly_fields = ("created_at",)

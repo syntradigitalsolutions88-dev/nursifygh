@@ -23,6 +23,7 @@ function CoursesIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="cur
 function TrophyIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg> }
 function ClinicalsIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg> }
 function CarePlansIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" /></svg> }
+function TheoryOsceIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg> }
 function LibraryIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg> }
 function SubmissionsIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg> }
 function ProfileIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg> }
@@ -38,32 +39,50 @@ function SimulatorIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="c
 function TutorIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg> }
 function BellIcon() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg> }
 
-const navItems: NavItem[] = [
-    { label: "Dashboard", to: "/dashboard", icon: <DashboardIcon />, end: true },
-    { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
-    { label: "Leaderboard", to: "/leaderboard", icon: <TrophyIcon /> },
-    { label: "Revision", to: "/revision", icon: <RevisionIcon /> },
-    { label: "Clinical Cases", to: "/cases", icon: <CasesIcon /> },
-    { label: "Pharmacology", to: "/pharmacology", icon: <PharmaIcon /> },
-    { label: "Analytics", to: "/analytics", icon: <AnalyticsIcon /> },
-    { label: "Study Planner", to: "/study-planner", icon: <PlannerIcon /> },
-    { label: "CBT Simulator", to: "/cbt-simulator", icon: <SimulatorIcon /> },
-    { label: "AI Tutor", to: "/ai-tutor", icon: <TutorIcon /> },
-    { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
-    { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
-    { label: "Library", to: "/library", icon: <LibraryIcon /> },
-    { label: "My Submissions", to: "/my-submissions", icon: <SubmissionsIcon /> },
-    { label: "Ambassador", to: "/ambassador", icon: <AmbassadorIcon /> },
-    { label: "Profile", to: "/profile", icon: <ProfileIcon /> },
-    { label: "Help & Support", to: "/support", icon: <HelpIcon /> },
+const sidebarGroups: Array<{ title: string; items: NavItem[] }> = [
+    {
+        title: "Exam Prep",
+        items: [
+            { label: "Dashboard", to: "/dashboard", icon: <DashboardIcon />, end: true },
+            { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
+            { label: "CBT Simulator", to: "/cbt-simulator", icon: <SimulatorIcon /> },
+            { label: "Theory & Practical", to: "/theory-practical", icon: <TheoryOsceIcon /> },
+            { label: "AI Tutor", to: "/ai-tutor", icon: <TutorIcon /> },
+            { label: "Smart Revision", to: "/revision", icon: <RevisionIcon /> },
+        ],
+    },
+    {
+        title: "Clinical Practice",
+        items: [
+            { label: "Clinical Cases", to: "/cases", icon: <CasesIcon /> },
+            { label: "Clinicals Logbook", to: "/clinicals", icon: <ClinicalsIcon /> },
+            { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
+            { label: "Master Care Plans", to: "/library", icon: <LibraryIcon /> },
+            { label: "Pharmacology", to: "/pharmacology", icon: <PharmaIcon /> },
+        ],
+    },
+    {
+        title: "Progress & Account",
+        items: [
+            { label: "Analytics", to: "/analytics", icon: <AnalyticsIcon /> },
+            { label: "Study Planner", to: "/study-planner", icon: <PlannerIcon /> },
+            { label: "Leaderboard", to: "/leaderboard", icon: <TrophyIcon /> },
+            { label: "My Submissions", to: "/my-submissions", icon: <SubmissionsIcon /> },
+            { label: "Ambassador", to: "/ambassador", icon: <AmbassadorIcon /> },
+            { label: "Profile", to: "/profile", icon: <ProfileIcon /> },
+            { label: "Help & Support", to: "/support", icon: <HelpIcon /> },
+        ],
+    },
 ]
+
+const allNavItems: NavItem[] = sidebarGroups.flatMap((g) => g.items)
 
 const mobileNavItems: NavItem[] = [
     { label: "Home", to: "/dashboard", icon: <DashboardIcon />, end: true },
     { label: "Courses", to: "/courses", icon: <CoursesIcon /> },
-    { label: "Leaderboard", to: "/leaderboard", icon: <TrophyIcon /> },
-    { label: "Clinicals", to: "/clinicals", icon: <ClinicalsIcon /> },
-    { label: "Plans", to: "/careplans", icon: <CarePlansIcon /> },
+    { label: "CBT Exam", to: "/cbt-simulator", icon: <SimulatorIcon /> },
+    { label: "Theory/OSCE", to: "/theory-practical", icon: <TheoryOsceIcon /> },
+    { label: "AI Tutor", to: "/ai-tutor", icon: <TutorIcon /> },
 ]
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
@@ -78,7 +97,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     const authUser = user as (typeof user & { is_staff?: boolean; is_superuser?: boolean })
     const isStaff = Boolean(authUser.is_staff || authUser.is_superuser)
 
-    const currentNav = navItems.find((item) =>
+    const currentNav = allNavItems.find((item) =>
         item.end ? location.pathname === item.to : location.pathname.startsWith(item.to)
     )
 
@@ -97,22 +116,41 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                     </Link>
                 </div>
 
-                <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
-                    {navItems.map((item) => (
-                        <NavLink
-                            key={item.to}
-                            to={item.to}
-                            end={item.end}
-                            className={({ isActive }) =>
-                                `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${isActive ? "bg-brand-50 text-brand-800" : "text-on-surface-muted hover:text-on-surface hover:bg-surface-inset"}`
-                            }
-                        >
-                            {item.icon}
-                            <span>{item.label}</span>
-                        </NavLink>
+                <nav className="flex-1 px-3 py-4 space-y-5 overflow-y-auto">
+                    {sidebarGroups.map((group) => (
+                        <div key={group.title} className="space-y-1">
+                            <p className="px-3 text-[11px] font-bold uppercase tracking-wider text-on-surface-muted/80">
+                                {group.title}
+                            </p>
+                            {group.items.map((item) => (
+                                <NavLink
+                                    key={item.to}
+                                    to={item.to}
+                                    end={item.end}
+                                    className={({ isActive }) =>
+                                        `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${isActive ? "bg-brand-50 text-brand-800 font-semibold" : "text-on-surface-muted hover:text-on-surface hover:bg-surface-inset"}`
+                                    }
+                                >
+                                    {item.icon}
+                                    <span>{item.label}</span>
+                                </NavLink>
+                            ))}
+                        </div>
                     ))}
                     {isStaff && (
-                        <>
+                        <div className="space-y-1 pt-2 border-t border-border">
+                            <p className="px-3 text-[11px] font-bold uppercase tracking-wider text-brand-800">
+                                Control Center
+                            </p>
+                            <NavLink
+                                to="/admin-control"
+                                className={({ isActive }) =>
+                                    `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isActive ? "bg-brand-100 text-brand-900" : "text-brand-800 bg-brand-50/70 hover:bg-brand-100"}`
+                                }
+                            >
+                                <SimulatorIcon />
+                                <span>Control Center</span>
+                            </NavLink>
                             <NavLink
                                 to="/admin-commissions"
                                 className={({ isActive }) =>
@@ -129,9 +167,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                 }
                             >
                                 <BellIcon />
-                                <span>Notifications &amp; Feedback</span>
+                                <span>Student Activity</span>
                             </NavLink>
-                        </>
+                        </div>
                     )}
                 </nav>
 
@@ -200,7 +238,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                 </Link>
                             )}
 
-                            {/* Notification bell */}
                             <NotificationBell />
 
                             <Link to="/support" className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface-muted hover:bg-surface-subtle hover:text-on-surface" aria-label="Help & Support" title="Help & Support">
@@ -233,16 +270,22 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                                             <Link to="/profile" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
                                                 <ProfileIcon /> My Profile
                                             </Link>
+                                            <Link to="/leaderboard" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                <TrophyIcon /> Leaderboard
+                                            </Link>
                                             <Link to="/ambassador" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-brand-50 hover:text-brand-700 transition-colors" onClick={() => setProfileOpen(false)}>
                                                 <AmbassadorIcon /> Ambassador Program
                                             </Link>
                                             {isStaff && (
                                                 <>
+                                                    <Link to="/admin-control" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                        <SimulatorIcon /> Control Center
+                                                    </Link>
                                                     <Link to="/admin-commissions" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
                                                         <AmbassadorIcon /> Commissions &amp; Payouts
                                                     </Link>
-                                                    <Link to="/admin-notifications" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
-                                                        <BellIcon /> Notifications &amp; Feedback
+                                                    <Link to="/admin-activity" className="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50 transition-colors" onClick={() => setProfileOpen(false)}>
+                                                        <BellIcon /> Student Activity
                                                     </Link>
                                                 </>
                                             )}
@@ -275,61 +318,101 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 </main>
             </div>
 
-            {/* MOBILE NAV & STUDY TOOLS SHEET - HIDDEN ON PRINT */}
+            {/* MOBILE NAV & ORGANIZED STUDY TOOLS DRAWER - HIDDEN ON PRINT */}
             {moreOpen && (
                 <div className="lg:hidden fixed inset-0 z-40 print:hidden">
                     <div className="fixed inset-0 bg-black/40" onClick={() => setMoreOpen(false)} />
-                    <div className="fixed bottom-14 inset-x-0 z-50 rounded-t-2xl border-t border-border bg-white p-4 shadow-2xl max-h-[75vh] overflow-y-auto">
-                        <div className="flex items-center justify-between pb-3 mb-3 border-b border-border">
-                            <p className="text-sm font-bold text-on-surface">Study &amp; Exam Tools</p>
+                    <div className="fixed bottom-16 inset-x-0 z-50 rounded-t-2xl border-t border-border bg-white p-4 shadow-2xl max-h-[78vh] overflow-y-auto space-y-4">
+                        <div className="flex items-center justify-between pb-2.5 border-b border-border">
+                            <div>
+                                <p className="text-sm font-bold text-on-surface">Clinical &amp; Study Tools</p>
+                                <p className="text-[11px] text-on-surface-muted">Quick access to ward, revision &amp; progress features</p>
+                            </div>
                             <button
                                 type="button"
                                 onClick={() => setMoreOpen(false)}
-                                className="rounded-lg px-2.5 py-1 text-xs font-semibold text-on-surface-muted hover:bg-surface-subtle"
+                                className="rounded-lg bg-surface-subtle px-3 py-1.5 text-xs font-semibold text-on-surface-muted hover:text-on-surface"
                             >
                                 Close
                             </button>
                         </div>
-                        <div className="grid grid-cols-2 gap-2">
-                            {[
-                                { label: "Master Care Plans", to: "/library" },
-                                { label: "Smart Revision", to: "/revision" },
-                                { label: "Clinical Cases", to: "/cases" },
-                                { label: "Pharmacology", to: "/pharmacology" },
-                                { label: "Analytics", to: "/analytics" },
-                                { label: "Study Planner", to: "/study-planner" },
-                                { label: "CBT Simulator", to: "/cbt-simulator" },
-                                { label: "AI Tutor", to: "/ai-tutor" },
-                                { label: "Ambassador", to: "/ambassador" },
-                                { label: "My Submissions", to: "/my-submissions" },
-                                { label: "Profile", to: "/profile" },
-                            ].map((tool) => (
-                                <Link
-                                    key={tool.to}
-                                    to={tool.to}
-                                    onClick={() => setMoreOpen(false)}
-                                    className="rounded-xl border border-border bg-surface-subtle/60 px-3 py-2.5 text-xs font-semibold text-on-surface hover:bg-brand-50 hover:text-brand-800"
+
+                        <div>
+                            <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-brand-700">
+                                Clinical &amp; Ward Practice
+                            </p>
+                            <div className="grid grid-cols-2 gap-2">
+                                {[
+                                    { label: "Clinical Cases", to: "/cases", icon: <CasesIcon /> },
+                                    { label: "Clinicals Logbook", to: "/clinicals", icon: <ClinicalsIcon /> },
+                                    { label: "Care Plans", to: "/careplans", icon: <CarePlansIcon /> },
+                                    { label: "Master Care Plans", to: "/library", icon: <LibraryIcon /> },
+                                    { label: "Pharmacology", to: "/pharmacology", icon: <PharmaIcon /> },
+                                    { label: "Smart Revision", to: "/revision", icon: <RevisionIcon /> },
+                                ].map((tool) => (
+                                    <Link
+                                        key={tool.to}
+                                        to={tool.to}
+                                        onClick={() => setMoreOpen(false)}
+                                        className="flex items-center gap-2.5 rounded-xl border border-border bg-surface-subtle/60 px-3 py-2.5 text-xs font-semibold text-on-surface hover:bg-brand-50 hover:text-brand-800"
+                                    >
+                                        <span className="text-brand-700 shrink-0">{tool.icon}</span>
+                                        <span className="truncate">{tool.label}</span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div>
+                            <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-on-surface-muted">
+                                Progress, Community &amp; Account
+                            </p>
+                            <div className="grid grid-cols-2 gap-2">
+                                {[
+                                    { label: "Analytics", to: "/analytics", icon: <AnalyticsIcon /> },
+                                    { label: "Study Planner", to: "/study-planner", icon: <PlannerIcon /> },
+                                    { label: "Leaderboard", to: "/leaderboard", icon: <TrophyIcon /> },
+                                    { label: "My Submissions", to: "/my-submissions", icon: <SubmissionsIcon /> },
+                                    { label: "Ambassador", to: "/ambassador", icon: <AmbassadorIcon /> },
+                                    { label: "Profile", to: "/profile", icon: <ProfileIcon /> },
+                                ].map((tool) => (
+                                    <Link
+                                        key={tool.to}
+                                        to={tool.to}
+                                        onClick={() => setMoreOpen(false)}
+                                        className="flex items-center gap-2.5 rounded-xl border border-border bg-white px-3 py-2.5 text-xs font-semibold text-on-surface hover:bg-brand-50 hover:text-brand-800"
+                                    >
+                                        <span className="text-on-surface-muted shrink-0">{tool.icon}</span>
+                                        <span className="truncate">{tool.label}</span>
+                                    </Link>
+                                ))}
+                                {isStaff && (
+                                    <Link
+                                        to="/admin-control"
+                                        onClick={() => setMoreOpen(false)}
+                                        className="col-span-2 rounded-xl border border-brand-300 bg-brand-50 px-3 py-2.5 text-center text-xs font-bold text-brand-900 hover:bg-brand-100"
+                                    >
+                                        Open Control Center
+                                    </Link>
+                                )}
+                                <button
+                                    type="button"
+                                    onClick={() => {
+                                        setMoreOpen(false)
+                                        window.dispatchEvent(new Event("open-feedback-modal"))
+                                    }}
+                                    className="col-span-2 rounded-xl border border-brand-200 bg-brand-50/70 px-3 py-2.5 text-center text-xs font-semibold text-brand-800 hover:bg-brand-100"
                                 >
-                                    {tool.label}
-                                </Link>
-                            ))}
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    setMoreOpen(false)
-                                    window.dispatchEvent(new Event("open-feedback-modal"))
-                                }}
-                                className="rounded-xl border border-brand-200 bg-brand-50/70 px-3 py-2.5 text-left text-xs font-semibold text-brand-800 hover:bg-brand-100"
-                            >
-                                Send Feedback
-                            </button>
+                                    Send Suggestion or Feedback
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             )}
 
-            <nav className="lg:hidden fixed bottom-0 inset-x-0 z-30 border-t border-border bg-white print:hidden">
-                <div className="flex">
+            <nav className="lg:hidden fixed bottom-0 inset-x-0 z-30 border-t border-border bg-white/95 backdrop-blur-sm print:hidden">
+                <div className="grid grid-cols-6">
                     {mobileNavItems.map((item) => (
                         <NavLink
                             key={item.to}
@@ -337,20 +420,20 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                             end={item.end}
                             onClick={() => setMoreOpen(false)}
                             className={({ isActive }) =>
-                                `flex-1 flex flex-col items-center justify-center gap-1 py-2 text-[11px] font-medium transition-colors ${isActive && !moreOpen ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`
+                                `flex flex-col items-center justify-center gap-1 py-2 px-1 text-[10px] font-semibold transition-colors ${isActive && !moreOpen ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`
                             }
                         >
                             {item.icon}
-                            <span>{item.label}</span>
+                            <span className="truncate max-w-full">{item.label}</span>
                         </NavLink>
                     ))}
                     <button
                         type="button"
                         onClick={() => setMoreOpen((prev) => !prev)}
-                        className={`flex-1 flex flex-col items-center justify-center gap-1 py-2 text-[11px] font-medium transition-colors ${moreOpen ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`}
+                        className={`flex flex-col items-center justify-center gap-1 py-2 px-1 text-[10px] font-semibold transition-colors ${moreOpen ? "text-brand-700" : "text-on-surface-muted hover:text-on-surface"}`}
                     >
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="h-5 w-5">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                         <span>More</span>
                     </button>

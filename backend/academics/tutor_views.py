@@ -1,3 +1,4 @@
+from django.db import models
 import logging
 import json
 import os
@@ -327,3 +328,377 @@ class TutorCoachView(APIView):
         payload = _generate_tutor_response(prompt)
         payload["live_llm_used"] = False
         return Response(payload, status=status.HTTP_200_OK)
+
+
+EXAMINER_SYSTEM_PROMPT = (
+    "You are a senior Nursing and Midwifery Council (N&MC) of Ghana examiner grading student written scripts. "
+    "Evaluate answers fairly based on clinical meaning, safety, and Ghanaian MoH/GHS/N&MC standards—not rigid exact keywords. "
+    "Accept valid medical synonyms, paraphrased explanations, and equivalent clinical phrasing. "
+    "Award partial credit in 0.5-mark increments (e.g., 0.5, 1.0, 1.5) when an answer is partially correct or omits a requested rationale. "
+    "Award 0 marks for blank, irrelevant, or clinically unsafe statements. "
+    "Respond ONLY with valid JSON matching the requested schema—no markdown fences or extra commentary."
+)
+
+
+def _round_half(val, max_val):
+    try:
+        num = float(val)
+    except (TypeError, ValueError):
+        num = 0.0
+    num = max(0.0, min(float(max_val), num))
+    return round(num * 2.0) / 2.0
+
+
+def _call_examiner_llm(user_prompt: str) -> dict | None:
+    api_key = (os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or "").strip()
+    api_url = os.getenv("LLM_API_URL", "https://api.groq.com/openai/v1/chat/completions").strip()
+    model = os.getenv("LLM_MODEL", "openai/gpt-oss-120b").strip()
+
+    if not api_key or not api_url:
+        return None
+
+    payload = {
+        "model": model,
+        "temperature": 0.15,
+        "max_tokens": 1800,
+        "messages": [
+            {"role": "system", "content": EXAMINER_SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt},
+        ],
+    }
+
+    req = urllib.request.Request(
+        api_url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+            "User-Agent": "NursifyGH-Examiner/1.0",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=22) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            choices = data.get("choices") or []
+            if not choices:
+                return None
+            raw = ((choices[0].get("message") or {}).get("content") or "").strip()
+            match = re.search(r"\{[\s\S]*\}", raw)
+            if not match:
+                return None
+            parsed = json.loads(match.group(0))
+            if isinstance(parsed, dict):
+                parsed["_model"] = model
+                return parsed
+    except Exception as exc:
+        logger.warning("Examiner LLM grading fallback triggered (%s): %s", type(exc).__name__, exc)
+    return None
+
+
+class GradeScriptView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request):
+        exam_type = str(request.data.get("exam_type") or "").upper().strip()
+        program = str(request.data.get("program") or "RGN").upper().strip()
+        title = str(request.data.get("title") or "").strip()
+        scenario = str(request.data.get("scenario") or "").strip()
+        total_marks = float(request.data.get("total_marks") or 20)
+
+        if exam_type == "THEORY":
+            sections = request.data.get("sections") or []
+            if not isinstance(sections, list) or not sections:
+                return Response({"ai_graded": False, "reason": "No sections supplied."}, status=status.HTTP_200_OK)
+
+            prompt_lines = [
+                f"Programme: {program} | Topic: {title} | Total Marks: {total_marks}",
+                f"Clinical Scenario: {scenario}",
+                "",
+                "Grade each sub-question below against its Official Marking Scheme. Accept paraphrased/synonymous clinical answers and give 0.5-mark partial credit where warranted.",
+                "",
+            ]
+            for sec in sections:
+                sec_id = str(sec.get("id") or "")
+                label = str(sec.get("label") or "")
+                q_prompt = str(sec.get("prompt") or "")
+                max_m = float(sec.get("max_marks") or 0)
+                model_pts = sec.get("model_points") or []
+                ans_lines = [str(a).strip() for a in (sec.get("student_answers") or []) if str(a).strip()]
+                prompt_lines.append(f"--- Sub-question id='{sec_id}' | {label} | Max Marks: {max_m} ---")
+                prompt_lines.append(f"Question Demand: {q_prompt}")
+                prompt_lines.append("Official Marking Scheme Points:")
+                for idx, pt in enumerate(model_pts):
+                    prompt_lines.append(f"  [{idx}] {pt}")
+                prompt_lines.append("Student Written Answer:")
+                prompt_lines.append("  " + (" | ".join(ans_lines) if ans_lines else "[LEFT BLANK]"))
+                prompt_lines.append("")
+
+            prompt_lines.append(
+                'Return JSON strictly in this format: '
+                '{"overall_feedback": "2 concise sentences summarizing strengths and what to improve", '
+                '"sections": [{"id": "a", "earned": 3.5, "feedback": "1 concise sentence explaining mark awarded", '
+                '"covered_indices": [0, 1]}]}'
+            )
+
+            ai_data = _call_examiner_llm("\n".join(prompt_lines))
+            if not ai_data or not isinstance(ai_data.get("sections"), list):
+                return Response({"ai_graded": False}, status=status.HTTP_200_OK)
+
+            ai_sec_map = {str(s.get("id")): s for s in ai_data["sections"] if isinstance(s, dict)}
+            normalized_sections = []
+            total_earned = 0.0
+
+            for sec in sections:
+                sec_id = str(sec.get("id") or "")
+                max_m = float(sec.get("max_marks") or 0)
+                model_pts = sec.get("model_points") or []
+                ans_lines = [str(a).strip() for a in (sec.get("student_answers") or []) if str(a).strip()]
+                ai_sec = ai_sec_map.get(sec_id, {})
+
+                earned = 0.0 if not ans_lines else _round_half(ai_sec.get("earned", 0), max_m)
+                total_earned += earned
+                covered_set = set(ai_sec.get("covered_indices") or []) if ans_lines else set()
+                point_results = [
+                    {"point": pt, "matched": (idx in covered_set)}
+                    for idx, pt in enumerate(model_pts)
+                ]
+                normalized_sections.append({
+                    "id": sec_id,
+                    "label": str(sec.get("label") or ""),
+                    "maxMarks": max_m,
+                    "earned": earned,
+                    "feedback": str(ai_sec.get("feedback") or "").strip(),
+                    "hits": len(covered_set),
+                    "totalClusters": len(model_pts),
+                    "pointResults": point_results,
+                })
+
+            total_earned = _round_half(total_earned, total_marks)
+            pct = round((total_earned / total_marks) * 100) if total_marks > 0 else 0
+            _record_tp_attempt(request.user, request.data, "THEORY", total_earned, total_marks, pct, True)
+            return Response(
+                {
+                    "ai_graded": True,
+                    "model": ai_data.get("_model", ""),
+                    "earnedTotal": total_earned,
+                    "totalMarks": total_marks,
+                    "pct": pct,
+                    "overallFeedback": str(ai_data.get("overall_feedback") or "").strip(),
+                    "breakdown": normalized_sections,
+                },
+                status=status.HTTP_200_OK,
+            )
+
+        if exam_type == "PRACTICAL":
+            checklist = request.data.get("checklist") or []
+            student_sections = request.data.get("student_sections") or {}
+            prep = str(student_sections.get("prep") or "").strip()
+            exec_txt = str(student_sections.get("exec") or "").strip()
+            post = str(student_sections.get("post") or "").strip()
+
+            if not (prep or exec_txt or post) or not isinstance(checklist, list):
+                return Response({"ai_graded": False}, status=status.HTTP_200_OK)
+
+            prompt_lines = [
+                f"Programme: {program} | OSCE Station: {title} | Total Marks: {total_marks}",
+                f"Station Prompt: {scenario}",
+                "",
+                "Official OSCE Checklist Items:",
+            ]
+            for item in checklist:
+                prompt_lines.append(
+                    f"- id='{item.get('id')}' [{item.get('stage')}] ({item.get('marks')} marks): {item.get('text')}"
+                )
+            prompt_lines.extend([
+                "",
+                "Student Written Procedure:",
+                f"1. Preparation: {prep or '[Blank]'}",
+                f"2. Procedure Execution: {exec_txt or '[Blank]'}",
+                f"3. Post-Procedure Care: {post or '[Blank]'}",
+                "",
+                'Grade each checklist item semantically (accepting valid clinical phrasing and awarding 0.5-mark partial credit where partly demonstrated). '
+                'Return JSON strictly in this format: '
+                '{"overall_feedback": "2 concise sentences on clinical safety, sequence, and omissions", '
+                '"items": [{"id": "s1", "awarded": 2.0, "covered": true}]}',
+            ])
+
+            ai_data = _call_examiner_llm("\n".join(prompt_lines))
+            if not ai_data or not isinstance(ai_data.get("items"), list):
+                return Response({"ai_graded": False}, status=status.HTTP_200_OK)
+
+            ai_item_map = {str(it.get("id")): it for it in ai_data["items"] if isinstance(it, dict)}
+            normalized_items = []
+            final_score = 0.0
+
+            for item in checklist:
+                iid = str(item.get("id") or "")
+                max_m = float(item.get("marks") or 0)
+                ai_it = ai_item_map.get(iid, {})
+                awarded = _round_half(ai_it.get("awarded", 0), max_m)
+                final_score += awarded
+                normalized_items.append({
+                    "step": item,
+                    "covered": awarded >= (max_m * 0.5) and awarded > 0,
+                    "awarded": awarded,
+                })
+
+            final_score = _round_half(final_score, total_marks)
+            pct = round((final_score / total_marks) * 100) if total_marks > 0 else 0
+            _record_tp_attempt(request.user, request.data, "PRACTICAL_WRITE", final_score, total_marks, pct, True)
+            return Response(
+                {
+                    "ai_graded": True,
+                    "model": ai_data.get("_model", ""),
+                    "finalScore": final_score,
+                    "totalMarks": total_marks,
+                    "pct": pct,
+                    "overallFeedback": str(ai_data.get("overall_feedback") or "").strip(),
+                    "checklist": normalized_items,
+                },
+                status=status.HTTP_200_OK,
+            )
+
+        return Response({"ai_graded": False}, status=status.HTTP_200_OK)
+
+
+def _record_tp_attempt(user, data: dict, default_mode: str, score: float, total_marks: float, pct: int, ai_graded: bool):
+    if not user or not getattr(user, "is_authenticated", False):
+        return
+    try:
+        from .models import TheoryPracticalAttemptLog
+        pass_pct = 50
+        try:
+            from .models import TheoryPracticalControlConfig
+            pass_pct = TheoryPracticalControlConfig.get_solo().pass_mark_percent
+        except Exception:
+            pass
+        TheoryPracticalAttemptLog.objects.create(
+            user=user,
+            scenario_id=str(data.get("scenario_id") or "")[:64],
+            scenario_title=str(data.get("title") or "Untitled Station")[:200],
+            program=str(data.get("program") or "RGN")[:16].upper(),
+            mode=str(data.get("mode") or default_mode)[:32],
+            score=float(score),
+            total_marks=float(total_marks),
+            percentage=int(pct),
+            passed=bool(int(pct) >= int(pass_pct)),
+            ai_graded=bool(ai_graded),
+        )
+    except Exception as exc:
+        logger.warning("Failed to record T&P attempt log: %s", exc)
+
+
+class TheoryPracticalControlView(APIView):
+    """GET returns active T&P feature flags; POST updates settings (staff/admin only)."""
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        from .models import TheoryPracticalControlConfig
+        cfg = TheoryPracticalControlConfig.get_solo()
+        return Response(cfg.to_dict(), status=status.HTTP_200_OK)
+
+    def post(self, request):
+        if not (request.user.is_staff or request.user.is_superuser):
+            return Response({"detail": "Staff or administrator access required."}, status=status.HTTP_403_FORBIDDEN)
+
+        from .models import TheoryPracticalControlConfig
+        cfg = TheoryPracticalControlConfig.get_solo()
+        d = request.data or {}
+
+        for bool_field in (
+            "simulator_enabled",
+            "ai_examiner_enabled",
+            "theory_mode_enabled",
+            "practical_mode_enabled",
+            "sequence_drill_enabled",
+        ):
+            if bool_field in d:
+                setattr(cfg, bool_field, bool(d[bool_field]))
+
+        if "enabled_programs" in d:
+            raw_progs = d["enabled_programs"]
+            if isinstance(raw_progs, list):
+                cfg.enabled_programs = ",".join(str(x).strip().upper() for x in raw_progs if str(x).strip())
+            else:
+                cfg.enabled_programs = str(raw_progs).strip()
+
+        for int_field, min_v, max_v in (
+            ("default_theory_minutes", 5, 180),
+            ("default_practical_minutes", 3, 120),
+            ("pass_mark_percent", 1, 100),
+        ):
+            if int_field in d:
+                try:
+                    val = int(d[int_field])
+                    setattr(cfg, int_field, max(min_v, min(max_v, val)))
+                except (TypeError, ValueError):
+                    pass
+
+        if "announcement_banner" in d:
+            cfg.announcement_banner = str(d["announcement_banner"] or "").strip()[:240]
+
+        cfg.save()
+        return Response(cfg.to_dict(), status=status.HTTP_200_OK)
+
+
+class TheoryPracticalActivityAdminView(APIView):
+    """Staff/admin control center view of recent Theory & Practical student activity."""
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        if not (request.user.is_staff or request.user.is_superuser):
+            return Response({"detail": "Staff or administrator access required."}, status=status.HTTP_403_FORBIDDEN)
+
+        from django.contrib.auth import get_user_model
+        from django.db.models import Avg, Count
+        from .models import TheoryPracticalAttemptLog, TheoryPracticalControlConfig
+
+        User = get_user_model()
+        cfg = TheoryPracticalControlConfig.get_solo()
+        logs_qs = TheoryPracticalAttemptLog.objects.select_related("user")[:60]
+        agg = TheoryPracticalAttemptLog.objects.aggregate(
+            total_attempts=Count("id"),
+            avg_pct=Avg("percentage"),
+            ai_graded_count=Count("id", filter=models.Q(ai_graded=True)),
+        )
+        passed_count = TheoryPracticalAttemptLog.objects.filter(passed=True).count()
+        total_att = agg.get("total_attempts") or 0
+
+        recent_logs = [
+            {
+                "id": log.id,
+                "student_name": getattr(log.user, "full_name", "") or log.user.email,
+                "student_email": log.user.email,
+                "program": log.program,
+                "scenario_id": log.scenario_id,
+                "scenario_title": log.scenario_title,
+                "mode": log.mode,
+                "score": log.score,
+                "total_marks": log.total_marks,
+                "percentage": log.percentage,
+                "passed": log.passed,
+                "ai_graded": log.ai_graded,
+                "created_at": log.created_at.isoformat(),
+            }
+            for log in logs_qs
+        ]
+
+        return Response(
+            {
+                "config": cfg.to_dict(),
+                "stats": {
+                    "total_users": User.objects.count(),
+                    "total_attempts": total_att,
+                    "passed_attempts": passed_count,
+                    "pass_rate": round((passed_count / total_att) * 100) if total_att else 0,
+                    "avg_percentage": round(agg.get("avg_pct") or 0),
+                    "ai_graded_attempts": agg.get("ai_graded_count") or 0,
+                },
+                "recent_logs": recent_logs,
+            },
+            status=status.HTTP_200_OK,
+        )

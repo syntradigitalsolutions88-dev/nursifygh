@@ -476,3 +476,88 @@ class CaseAttempt(models.Model):
 
     def __str__(self) -> str:
         return f"{self.student.email} • {self.case.title} • {self.correct_steps}/{self.total_steps}"
+
+
+class TheoryPracticalControlConfig(models.Model):
+    """Singleton control configuration for Theory & Practical Simulator and AI Examiner."""
+
+    simulator_enabled = models.BooleanField(default=True)
+    ai_examiner_enabled = models.BooleanField(default=True)
+    theory_mode_enabled = models.BooleanField(default=True)
+    practical_mode_enabled = models.BooleanField(default=True)
+    sequence_drill_enabled = models.BooleanField(default=True)
+    enabled_programs = models.CharField(
+        max_length=64,
+        default="RGN,RM,RPN,CHN,NAC,NAP",
+        help_text="Comma-separated programme codes: RGN,RM,RPN,CHN,NAC,NAP",
+    )
+    default_theory_minutes = models.PositiveIntegerField(default=25)
+    default_practical_minutes = models.PositiveIntegerField(default=10)
+    pass_mark_percent = models.PositiveIntegerField(default=50)
+    announcement_banner = models.CharField(max_length=240, blank=True, default="")
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = "Theory & Practical Control Setting"
+        verbose_name_plural = "Theory & Practical Control Settings"
+
+    @classmethod
+    def get_solo(cls):
+        obj, _ = cls.objects.get_or_create(pk=1)
+        return obj
+
+    def programs_list(self):
+        valid = {"RGN", "RM", "RPN", "CHN", "NAC", "NAP"}
+        items = [p.strip().upper() for p in (self.enabled_programs or "").split(",") if p.strip()]
+        filtered = [p for p in items if p in valid]
+        return filtered or ["RGN", "RM", "RPN", "CHN", "NAC", "NAP"]
+
+    def to_dict(self):
+        return {
+            "simulator_enabled": self.simulator_enabled,
+            "ai_examiner_enabled": self.ai_examiner_enabled,
+            "theory_mode_enabled": self.theory_mode_enabled,
+            "practical_mode_enabled": self.practical_mode_enabled,
+            "sequence_drill_enabled": self.sequence_drill_enabled,
+            "enabled_programs": self.programs_list(),
+            "enabled_programs_csv": self.enabled_programs,
+            "default_theory_minutes": self.default_theory_minutes,
+            "default_practical_minutes": self.default_practical_minutes,
+            "pass_mark_percent": self.pass_mark_percent,
+            "announcement_banner": self.announcement_banner,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None,
+        }
+
+
+class TheoryPracticalAttemptLog(models.Model):
+    """Tracks student attempts and scores on Theory & Practical OSCE stations."""
+
+    MODE_THEORY = "THEORY"
+    MODE_PRACTICAL_WRITE = "PRACTICAL_WRITE"
+    MODE_PRACTICAL_SEQUENCE = "PRACTICAL_SEQUENCE"
+    MODE_CHOICES = [
+        (MODE_THEORY, "Theory"),
+        (MODE_PRACTICAL_WRITE, "Practical (Written)"),
+        (MODE_PRACTICAL_SEQUENCE, "Practical (Sequence)"),
+    ]
+
+    user = models.ForeignKey(
+        "accounts.User",
+        on_delete=models.CASCADE,
+        related_name="tp_attempt_logs",
+    )
+    scenario_id = models.CharField(max_length=64)
+    scenario_title = models.CharField(max_length=200)
+    program = models.CharField(max_length=16, default="RGN")
+    mode = models.CharField(max_length=32, choices=MODE_CHOICES, default=MODE_THEORY)
+    score = models.FloatField(default=0.0)
+    total_marks = models.FloatField(default=20.0)
+    percentage = models.IntegerField(default=0)
+    passed = models.BooleanField(default=False)
+    ai_graded = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name = "Theory & Practical Activity Log"
+        verbose_name_plural = "Theory & Practical Activity Logs"

@@ -110,12 +110,20 @@ export default function DashboardPage() {
                                 Edit Profile
                             </Link>
                             {Boolean((user as { is_staff?: boolean }).is_staff) && (
-                                <Link
-                                    to="/admin-commissions"
-                                    className="inline-flex items-center gap-2 rounded-lg bg-amber-400/20 hover:bg-amber-400/30 border border-amber-300/40 px-4 py-2 text-sm font-bold text-amber-100 transition-colors"
-                                >
-                                    Admin &amp; Outreach →
-                                </Link>
+                                <>
+                                    <Link
+                                        to="/admin-control"
+                                        className="inline-flex items-center gap-2 rounded-lg bg-emerald-300/20 hover:bg-emerald-300/30 border border-emerald-200/40 px-4 py-2 text-sm font-bold text-white transition-colors"
+                                    >
+                                        Control Center
+                                    </Link>
+                                    <Link
+                                        to="/admin-commissions"
+                                        className="inline-flex items-center gap-2 rounded-lg bg-amber-400/20 hover:bg-amber-400/30 border border-amber-300/40 px-4 py-2 text-sm font-bold text-amber-100 transition-colors"
+                                    >
+                                        Admin &amp; Outreach →
+                                    </Link>
+                                </>
                             )}
                         </div>
                     </div>

@@ -6,7 +6,7 @@ from .cases_views import (
     SubmitCaseStageView,
 )
 
-from .tutor_views import TutorCoachView
+from .tutor_views import GradeScriptView, TheoryPracticalActivityAdminView, TheoryPracticalControlView, TutorCoachView
 
 from .revision_views import (
     DailyReviewQueueView,
@@ -58,4 +58,7 @@ urlpatterns = [
     path("cases/<uuid:case_id>/", ClinicalCaseDetailView.as_view(), name="clinical-case-detail"),
     path("cases/<uuid:case_id>/answer/", SubmitCaseStageView.as_view(), name="clinical-case-answer"),
     path("tutor/", TutorCoachView.as_view(), name="tutor-coach"),
+    path("grade-script/", GradeScriptView.as_view(), name="grade-script"),
+    path("tp-control/", TheoryPracticalControlView.as_view(), name="tp-control"),
+    path("tp-admin-overview/", TheoryPracticalActivityAdminView.as_view(), name="tp-admin-overview"),
 ]

@@ -140,7 +140,7 @@ export default function LandingPage() {
                                         <div>
                                             <p className="text-sm font-medium text-gray-500">Good morning, Ama</p>
                                             <p className="mt-1 text-2xl font-bold text-gray-900">Level 100 – 300 Study Dashboard</p>
-                                            <p className="mt-1 text-xs font-semibold text-brand-700">Level 100 · Level 200 · Level 300 · RGN / RM / RPN / CHN</p>
+                                            <p className="mt-1 text-xs font-semibold text-brand-700">Level 100 – 300 · RGN · RM · RPN · CHN · NAC · NAP</p>
                                         </div>
                                         <div className="h-10 w-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold">A</div>
                                     </div>

@@ -7,10 +7,12 @@ import AboutPage from "./pages/AboutPage"
 import AdminCommissionsPage from "./pages/AdminCommissionsPage"
 import AdminNotificationsPage from "./pages/AdminNotificationsPage"
 import AdminStudentActivityPage from "./pages/AdminStudentActivityPage"
+import AdminControlCenterPage from "./pages/AdminControlCenterPage"
 import AmbassadorPage from "./pages/AmbassadorPage"
 import AnalyticsPage from "./pages/AnalyticsPage"
 import StudyPlannerPage from "./pages/StudyPlannerPage"
 import CbtSimulatorPage from "./pages/CbtSimulatorPage"
+import TheoryPracticalPage from "./pages/TheoryPracticalPage"
 import AiTutorPage from "./pages/AiTutorPage"
 import AppContactPage from "./pages/AppContactPage"
 import AppHelpPage from "./pages/AppHelpPage"
@@ -85,6 +87,7 @@ export default function App() {
         <Route path="/admin-commissions" element={<ProtectedRoute><AdminCommissionsPage /></ProtectedRoute>} />
         <Route path="/admin-notifications" element={<ProtectedRoute><AdminNotificationsPage /></ProtectedRoute>} />
         <Route path="/admin-activity" element={<ProtectedRoute><AdminStudentActivityPage /></ProtectedRoute>} />
+        <Route path="/admin-control" element={<ProtectedRoute><AdminControlCenterPage /></ProtectedRoute>} />
 
         {/* Phase 2 Intelligent Learning Modules */}
         <Route path="/analytics" element={
@@ -253,7 +256,8 @@ export default function App() {
             </PaywallGate>
           </ProtectedRoute>
         } />
-      </Routes>
+                      <Route path="/theory-practical" element={<TheoryPracticalPage />} />
+            </Routes>
 
       {/* Hide PWA banner when printing */}
       <div className="print:hidden">
