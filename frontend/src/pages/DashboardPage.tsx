@@ -1,3 +1,4 @@
+import StudentNotificationInbox from "../components/StudentNotificationInbox"
 import { Link } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
 import { buildAiTutorUrl } from "../utils/tutorPrompt"
@@ -75,6 +76,7 @@ export default function DashboardPage() {
 
     return (
         <AppShell>
+            <div className="max-w-5xl mx-auto px-3 sm:px-0 pt-3"><StudentNotificationInbox /></div>
             <div className="space-y-6 max-w-6xl mx-auto pb-10">
 
                 <PwaInstallPrompt />

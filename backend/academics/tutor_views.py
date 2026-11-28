@@ -441,22 +441,35 @@ class TutorCoachView(APIView):
         prompt = str(request.data.get("prompt") or "").strip()
         image_data_url = str(request.data.get("image_data_url") or "").strip()
         department = str(request.data.get("department") or "").strip()
+        requested_mode = str(request.data.get("mode") or "").strip().lower()
+
+        is_admin_user = bool(
+            getattr(request.user, "is_staff", False) or getattr(request.user, "is_superuser", False)
+        )
+        use_executive = is_admin_user and requested_mode == "executive_assistant"
 
         if not prompt and not image_data_url:
-            return Response({"detail": "Please provide a clinical or study question or upload an image."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"detail": "Please provide a question, task, or image."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
 
         if image_data_url and not prompt:
             prompt = (
-                "Examine this uploaded picture thoroughly, describe everything shown (all text, numbers, labels, "
-                "and visuals), and solve or explain any question or concept in it step by step."
+                "Examine this uploaded image thoroughly, describe and transcribe everything shown "
+                "(all text, code, errors, numbers, labels, and visuals), and solve or explain it step by step."
             )
 
-        prog = department or (getattr(request.user, "program", "") or "")
-        lvl = getattr(request.user, "level", "") or ""
-        ctx = " ".join(x for x in [f"Level {lvl}" if lvl else "", prog] if x)
         raw_h = request.data.get("history")
         hist = raw_h if isinstance(raw_h, list) else []
-        enriched = f"[Student Profile: {ctx}]\n{prompt}" if ctx else prompt
+
+        if use_executive:
+            enriched = prompt
+        else:
+            prog = department or (getattr(request.user, "program", "") or "")
+            lvl = getattr(request.user, "level", "") or ""
+            ctx = " ".join(x for x in [f"Level {lvl}" if lvl else "", prog] if x)
+            enriched = f"[Student Profile: {ctx}]\n{prompt}" if ctx else prompt
 
         if image_data_url.startswith("data:image/"):
             vis_reply, vis_framework = _call_vision_llm(enriched, image_data_url)
@@ -464,7 +477,11 @@ class TutorCoachView(APIView):
                 return Response(
                     {
                         "reply": vis_reply,
-                        "framework": vis_framework,
+                        "framework": (
+                            vis_framework.replace("NursifyGH Visual", "Executive Vision AI")
+                            if use_executive
+                            else vis_framework
+                        ),
                         "live_llm_used": True,
                     },
                     status=status.HTTP_200_OK,
@@ -472,14 +489,32 @@ class TutorCoachView(APIView):
             return Response(
                 {
                     "reply": (
-                        "I received your picture, but the text was too faint to read clearly. "
-                        "Try uploading a sharper, closer photo—or tell me what is written on the page so we can work through it together."
+                        "I received your image, but the text was too faint to extract clearly. "
+                        "Try uploading a sharper screenshot/photo or paste the details below."
                     ),
-                    "framework": "NursifyGH Visual Assistant",
+                    "framework": "Executive Vision AI" if use_executive else "NursifyGH Visual Assistant",
                     "live_llm_used": False,
                 },
                 status=status.HTTP_200_OK,
             )
+
+        if use_executive:
+            live_reply, live_framework = _call_live_llm(
+                enriched,
+                history=hist[-16:],
+                system_override=EXECUTIVE_ASSISTANT_PROMPT,
+                max_tokens=3200,
+            )
+            if live_reply:
+                model_tag = (live_framework or "").split("•")[-1].strip() or "Live AI"
+                return Response(
+                    {
+                        "reply": live_reply,
+                        "framework": f"Personal Executive AI • {model_tag}",
+                        "live_llm_used": True,
+                    },
+                    status=status.HTTP_200_OK,
+                )
 
         live_reply, live_framework = _call_live_llm(enriched, history=hist)
         if live_reply and live_framework:

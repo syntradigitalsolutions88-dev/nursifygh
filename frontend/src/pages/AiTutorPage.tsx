@@ -42,11 +42,55 @@ interface TutorMessage {
 
 interface SavedPearl {
     id: string
-    department: DepartmentId
+    department: string
     title: string
     content: string
     savedAt: string
 }
+
+const EXECUTIVE_TOOLS: DepartmentTool[] = [
+    {
+        id: "exec-all",
+        label: "All-Purpose Genius Mode",
+        hint: "Ask anything—coding, business, academics, life, or strategy",
+        promptPrefix: "",
+    },
+    {
+        id: "exec-code",
+        label: "Full-Stack Code & Debug",
+        hint: "Python, Django, React, TypeScript, SQL & Git Bash fixes",
+        promptPrefix:
+            "Act as my Principal Full-Stack Software Architect (Python, Django, React, TypeScript, PostgreSQL, Git Bash). Solve this cleanly with complete, production-ready code and exact commands:\n",
+    },
+    {
+        id: "exec-biz",
+        label: "Syntra & NursifyGH Growth",
+        hint: "WhatsApp/TikTok copy, proposals, pricing & client replies",
+        promptPrefix:
+            "Act as my Business & Marketing Strategist for Syntra Digital Solutions and NursifyGH in Ghana. Create sharp, high-converting copy and actionable strategy for:\n",
+    },
+    {
+        id: "exec-him",
+        label: "HIM, Biostat & Research",
+        hint: "Epidemiology, biostatistics, SPSS/Excel/SQL & academic writing",
+        promptPrefix:
+            "Act as a Senior Health Information Management (HIM) & Biostatistics Research Advisor. Provide a thorough, well-structured analysis and step-by-step solution for:\n",
+    },
+    {
+        id: "exec-nmc",
+        label: "N&MC Exam & Slide Builder",
+        hint: "Generate bulk N&MC MCQs, OSCE checklists & lecture outlines",
+        promptPrefix:
+            "Act as a Ghanaian Nursing & Midwifery Council (N&MC) Curriculum & Assessment Architect. Generate thorough, exam-standard questions/content with clear rationales for:\n",
+    },
+]
+
+const EXECUTIVE_STARTERS = [
+    "Write a high-converting WhatsApp Status & TikTok promo for NursifyGH and Syntra Digital Solutions",
+    "Help me design and debug a new Django + React feature step by step",
+    "Solve a Biostatistics / Epidemiology calculation or explain a study design for my HIM exams",
+    "Generate 5 N&MC licensure MCQs with full rationales on Obstetric Emergencies",
+]
 
 const DEPARTMENTS: Record<DepartmentId, DepartmentConfig> = {
     RGN: {
@@ -362,11 +406,32 @@ function stripMarkdownForSpeech(md: string): string {
         .trim()
 }
 
+function detectStoredAdminFlag(): boolean {
+    try {
+        for (let i = 0; i < localStorage.length; i++) {
+            const k = localStorage.key(i)
+            if (!k) continue
+            const raw = localStorage.getItem(k) || ""
+            if (raw.includes('"is_staff":true') || raw.includes('"is_superuser":true')) {
+                return true
+            }
+        }
+    } catch {
+        // ignore storage errors
+    }
+    return false
+}
+
 export default function AiTutorPage() {
     const [searchParams] = useSearchParams()
     const handledParamRef = useRef<string | null>(null)
     const threadEndRef = useRef<HTMLDivElement | null>(null)
     const fileInputRef = useRef<HTMLInputElement | null>(null)
+
+    const initialAdmin = detectStoredAdminFlag()
+    const [isAdminAccount, setIsAdminAccount] = useState<boolean>(initialAdmin)
+    const [executiveMode, setExecutiveMode] = useState<boolean>(initialAdmin)
+    const [activeExecToolId, setActiveExecToolId] = useState<string>("exec-all")
 
     const [activeDeptId, setActiveDeptId] = useState<DepartmentId>("RGN")
     const [selectedLevel, setSelectedLevel] = useState<string>("All Levels")
@@ -392,19 +457,76 @@ export default function AiTutorPage() {
         }
     })
 
-    const dept = DEPARTMENTS[activeDeptId]
-    const selectedTool = activeToolId ? dept.tools.find((t) => t.id === activeToolId) || null : null
-    const deptPearls = savedPearls.filter((p) => p.department === activeDeptId)
+    const [messages, setMessages] = useState<TutorMessage[]>(() =>
+        initialAdmin
+            ? [
+                  {
+                      id: "welcome-1",
+                      role: "tutor",
+                      framework: "Personal Executive AI • Unrestricted Super-Assistant",
+                      content:
+                          "Welcome back, **Divine**! Your **Personal Executive AI Super-Assistant** is active with full multi-domain power—use me for **coding & debugging**, **Syntra Digital Solutions & NursifyGH business/marketing**, **HIM & biostatistics**, **N&MC exam authoring**, **screenshot/document OCR analysis**, or **anything else** you need.",
+                  },
+              ]
+            : [
+                  {
+                      id: "welcome-1",
+                      role: "tutor",
+                      framework: "RGN General Nursing • AI Mentor Listening",
+                      content:
+                          "Hello! I'm your **NursifyGH AI Clinical & Study Mentor**. Tell me what you're working on, what topic is giving you trouble, or tap the **Microphone** to talk to me—we'll solve it together step by step. You can also upload any picture with the **Camera** icon.",
+                  },
+              ]
+    )
 
-    const [messages, setMessages] = useState<TutorMessage[]>([
-        {
-            id: "welcome-1",
-            role: "tutor",
-            framework: "RGN General Nursing • AI Mentor Listening",
-            content:
-                "Hello! I'm your **NursifyGH AI Clinical & Study Mentor**. Tell me what you're working on, what topic is giving you trouble, or tap the **Microphone** to talk to me—we'll solve it together step by step. You can also upload any picture with the **Camera** icon.",
-        },
-    ])
+    useEffect(() => {
+        let cancelled = false
+        async function checkAdminProfile() {
+            const profilePaths = ["/accounts/me/", "/accounts/profile/", "/auth/me/", "/users/me/"]
+            for (const p of profilePaths) {
+                try {
+                    const res = await api.get(p)
+                    const data = res.data || {}
+                    if (data.is_staff || data.is_superuser) {
+                        if (!cancelled) {
+                            setIsAdminAccount(true)
+                            setExecutiveMode(true)
+                            setMessages((prev) =>
+                                prev.length === 1 && prev[0].id === "welcome-1"
+                                    ? [
+                                          {
+                                              id: "welcome-1",
+                                              role: "tutor",
+                                              framework: "Personal Executive AI • Unrestricted Super-Assistant",
+                                              content:
+                                                  "Welcome back, **Divine**! Your **Personal Executive AI Super-Assistant** is active with full multi-domain power—use me for **coding & debugging**, **Syntra Digital Solutions & NursifyGH business/marketing**, **HIM & biostatistics**, **N&MC exam authoring**, **screenshot/document OCR analysis**, or **anything else** you need.",
+                                          },
+                                      ]
+                                    : prev
+                            )
+                        }
+                        return
+                    }
+                } catch {
+                    // try next path
+                }
+            }
+        }
+        checkAdminProfile()
+        return () => {
+            cancelled = true
+        }
+    }, [])
+
+    const dept = DEPARTMENTS[activeDeptId]
+    const activeScopeKey = executiveMode ? "EXEC" : activeDeptId
+    const selectedTool = executiveMode
+        ? EXECUTIVE_TOOLS.find((t) => t.id === activeExecToolId) || EXECUTIVE_TOOLS[0]
+        : activeToolId
+        ? dept.tools.find((t) => t.id === activeToolId) || null
+        : null
+
+    const deptPearls = savedPearls.filter((p) => p.department === activeScopeKey)
 
     useEffect(() => {
         try {
@@ -442,6 +564,7 @@ export default function AiTutorPage() {
     }
 
     function handleSelectDepartment(newDept: DepartmentId) {
+        setExecutiveMode(false)
         setActiveDeptId(newDept)
         setActiveToolId(null)
         const cfg = DEPARTMENTS[newDept]
@@ -480,24 +603,31 @@ export default function AiTutorPage() {
         if (!cleanTopic && !imgToSend) return
         if (sending) return
 
-        const levelTag = selectedLevel !== "All Levels" ? ` • ${selectedLevel}` : ""
+        const levelTag = !executiveMode && selectedLevel !== "All Levels" ? ` • ${selectedLevel}` : ""
         const activePrefix = overridePrefix ?? selectedTool?.promptPrefix ?? ""
         const modeName = imgToSend
             ? "Visual Reader & Solver"
             : selectedTool
             ? selectedTool.label
+            : executiveMode
+            ? "All-Purpose Genius Mode"
             : "Open Mentor Chat"
 
-        const deptBadge = `${dept.shortName}${levelTag} • ${modeName}`
+        const deptBadge = executiveMode
+            ? `EXECUTIVE AI • ${modeName}`
+            : `${dept.shortName}${levelTag} • ${modeName}`
+
         const userDisplayText =
             cleanTopic || "Describe everything in this image and explain or solve what is shown."
 
         const apiPrompt = imgToSend
             ? cleanTopic
-                ? `Examine the uploaded image thoroughly. First describe everything visible in the image (all text, numbers, labels, diagrams, people, or visuals—even if it is not a clinical item), and also address what the student said: "${cleanTopic}".`
-                : "Examine the uploaded image thoroughly and describe everything visible in full detail (all text, headings, numbers, labels, diagrams, people, objects, and layout—even if it is not a clinical item). If there is a question, calculation, or study topic in the image, solve and explain it step by step."
+                ? `Examine the uploaded image thoroughly. First describe everything visible in the image (all text, code, errors, numbers, labels, diagrams, people, or visuals), and also address this request: "${cleanTopic}".`
+                : "Examine the uploaded image thoroughly and describe everything visible in full detail (all text, headings, code, errors, numbers, labels, diagrams, people, objects, and layout). If there is a question, bug, calculation, or study topic in the image, solve and explain it step by step."
             : activePrefix
-            ? `${activePrefix} ${cleanTopic} (Curriculum context: Ghanaian N&MC ${dept.fullName} [${dept.shortName}]${levelTag}.)`
+            ? executiveMode
+                ? `${activePrefix}${cleanTopic}`
+                : `${activePrefix} ${cleanTopic} (Curriculum context: Ghanaian N&MC ${dept.fullName} [${dept.shortName}]${levelTag}.)`
             : cleanTopic
 
         const userMsg: TutorMessage = {
@@ -517,7 +647,7 @@ export default function AiTutorPage() {
         try {
             const history = messages
                 .slice(1)
-                .slice(-8)
+                .slice(executiveMode ? -16 : -8)
                 .map((m) => ({
                     role: m.role === "tutor" ? "assistant" : "user",
                     content: m.content,
@@ -525,7 +655,8 @@ export default function AiTutorPage() {
 
             const res = await api.post("/academics/tutor/", {
                 prompt: apiPrompt,
-                department: dept.shortName,
+                department: executiveMode ? "EXECUTIVE" : dept.shortName,
+                mode: executiveMode ? "executive_assistant" : "student_mentor",
                 image_data_url: imgToSend || undefined,
                 history,
             })
@@ -533,7 +664,7 @@ export default function AiTutorPage() {
             const replyText =
                 typeof res.data?.reply === "string" && res.data.reply.trim()
                     ? res.data.reply.trim()
-                    : `I'm here with you! Tell me a bit more about what you need help with in **${dept.fullName}**, and we will break it down step by step.`
+                    : `I'm ready! Share a bit more detail and we will solve it together.`
 
             const frameworkLabel =
                 typeof res.data?.framework === "string" && res.data.framework.trim()
@@ -563,7 +694,7 @@ export default function AiTutorPage() {
                     role: "tutor",
                     content:
                         "I could not reach the live AI server right now. Please check your internet connection and tap **Send** again.",
-                    framework: `${dept.shortName} Offline Notice`,
+                    framework: `${activeScopeKey} Offline Notice`,
                 },
             ])
         } finally {
@@ -596,8 +727,8 @@ export default function AiTutorPage() {
         setSavedPearls((prev) => [
             {
                 id: newId,
-                department: activeDeptId,
-                title: msg.topicHint || msg.framework || `${dept.shortName} Study Note`,
+                department: activeScopeKey,
+                title: msg.topicHint || msg.framework || `${activeScopeKey} Note`,
                 content: msg.content,
                 savedAt: new Date().toLocaleDateString("en-GB", {
                     day: "numeric",
@@ -656,34 +787,67 @@ export default function AiTutorPage() {
     return (
         <AppShell>
             <div className="max-w-4xl mx-auto space-y-4 pb-28 sm:pb-10">
-                {/* Step 1: Clean Department Switcher */}
+                {/* Admin-Only Personal Executive AI Bar */}
+                {isAdminAccount && (
+                    <div className="rounded-2xl border border-amber-300 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-3.5 text-white shadow-sm flex flex-wrap items-center justify-between gap-3">
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <span className="rounded-md bg-amber-400 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-slate-950">
+                                    Admin Private AI
+                                </span>
+                                <span className="text-sm font-bold text-white">
+                                    Divine&apos;s Personal Executive Super-Assistant
+                                </span>
+                            </div>
+                            <p className="text-xs text-slate-300 mt-0.5">
+                                Full-power AI for coding, Syntra Digital Solutions, NursifyGH, HIM academics &amp; everything else.
+                            </p>
+                        </div>
+
+                        <button
+                            type="button"
+                            onClick={() => setExecutiveMode((prev) => !prev)}
+                            className={`rounded-xl px-3.5 py-2 text-xs font-extrabold transition-all ${
+                                executiveMode
+                                    ? "bg-amber-400 text-slate-950 shadow-xs"
+                                    : "bg-white/15 text-white hover:bg-white/25"
+                            }`}
+                        >
+                            {executiveMode ? "Executive Mode: ACTIVE ★" : "Switch to Executive Mode"}
+                        </button>
+                    </div>
+                )}
+
+                {/* Department Switcher */}
                 <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-2xs">
                     <div className="flex items-center justify-between gap-2 mb-2 px-1">
                         <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
-                            Select Your Department
+                            {executiveMode ? "Or Preview Student Departments" : "Select Your Department"}
                         </span>
-                        <div className="flex items-center gap-1">
-                            {LEVELS.map((lvl) => (
-                                <button
-                                    key={lvl}
-                                    type="button"
-                                    onClick={() => setSelectedLevel(lvl)}
-                                    className={`rounded-md px-2 py-0.5 text-xs font-semibold transition-colors ${
-                                        selectedLevel === lvl
-                                            ? "bg-slate-900 text-white"
-                                            : "text-slate-600 hover:bg-slate-100"
-                                    }`}
-                                >
-                                    {lvl === "All Levels" ? "All" : lvl.replace("Level ", "L")}
-                                </button>
-                            ))}
-                        </div>
+                        {!executiveMode && (
+                            <div className="flex items-center gap-1">
+                                {LEVELS.map((lvl) => (
+                                    <button
+                                        key={lvl}
+                                        type="button"
+                                        onClick={() => setSelectedLevel(lvl)}
+                                        className={`rounded-md px-2 py-0.5 text-xs font-semibold transition-colors ${
+                                            selectedLevel === lvl
+                                                ? "bg-slate-900 text-white"
+                                                : "text-slate-600 hover:bg-slate-100"
+                                        }`}
+                                    >
+                                        {lvl === "All Levels" ? "All" : lvl.replace("Level ", "L")}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     <div className="grid grid-cols-3 sm:grid-cols-6 gap-1.5">
                         {DEPT_ORDER.map((id) => {
                             const item = DEPARTMENTS[id]
-                            const isActive = id === activeDeptId
+                            const isActive = !executiveMode && id === activeDeptId
                             return (
                                 <button
                                     key={id}
@@ -703,18 +867,30 @@ export default function AiTutorPage() {
                     </div>
                 </div>
 
-                {/* Step 2: Department-Specialized Banner */}
-                <div className={`rounded-2xl bg-gradient-to-br ${dept.bannerGradient} p-5 text-white shadow-sm`}>
+                {/* Hero Banner */}
+                <div
+                    className={`rounded-2xl bg-gradient-to-br ${
+                        executiveMode
+                            ? "from-slate-950 via-indigo-950 to-slate-900"
+                            : dept.bannerGradient
+                    } p-5 text-white shadow-sm`}
+                >
                     <div className="flex flex-wrap items-start justify-between gap-3">
                         <div className="space-y-1 max-w-2xl">
                             <span className="inline-block rounded-full bg-white/15 px-3 py-0.5 text-xs font-bold tracking-wide text-white">
-                                {dept.badgeText}
+                                {executiveMode
+                                    ? "EXECUTIVE AI • Code, Business, Academics, Vision & Everything"
+                                    : dept.badgeText}
                             </span>
                             <h1 className="text-xl sm:text-2xl font-bold text-white leading-snug">
-                                {dept.fullName} AI Clinical Mentor
+                                {executiveMode
+                                    ? "Personal Executive AI Super-Assistant"
+                                    : `${dept.fullName} AI Clinical Mentor`}
                             </h1>
                             <p className="text-sm text-white/90 leading-relaxed">
-                                {dept.tagline}
+                                {executiveMode
+                                    ? "Ask anything without restrictions—build & debug apps, write Syntra Digital Solutions & NursifyGH content, analyze data/HIM topics, generate N&MC questions, or upload any screenshot/document."
+                                    : dept.tagline}
                             </p>
                         </div>
 
@@ -751,7 +927,7 @@ export default function AiTutorPage() {
                     </div>
                 </div>
 
-                {/* Step 3: Organized Compact Workspace Tabs */}
+                {/* Workspace Tabs */}
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs space-y-3">
                     <div className="flex items-center gap-1.5 border-b border-slate-200 pb-2.5">
                         <button
@@ -763,7 +939,7 @@ export default function AiTutorPage() {
                                     : "text-slate-700 hover:bg-slate-100"
                             }`}
                         >
-                            {dept.shortName} Study Modes
+                            {executiveMode ? "Executive Modes" : `${dept.shortName} Study Modes`}
                         </button>
                         <button
                             type="button"
@@ -774,7 +950,7 @@ export default function AiTutorPage() {
                                     : "text-slate-700 hover:bg-slate-100"
                             }`}
                         >
-                            {dept.shortName} Topics
+                            {executiveMode ? "Quick Prompts" : `${dept.shortName} Topics`}
                         </button>
                         <button
                             type="button"
@@ -785,11 +961,43 @@ export default function AiTutorPage() {
                                     : "text-slate-700 hover:bg-slate-100"
                             }`}
                         >
-                            {dept.shortName} Saved ({deptPearls.length})
+                            {activeScopeKey} Saved ({deptPearls.length})
                         </button>
                     </div>
 
-                    {workspaceTab === "tools" && (
+                    {workspaceTab === "tools" && executiveMode && (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            {EXECUTIVE_TOOLS.map((tool, idx) => {
+                                const isSel = tool.id === activeExecToolId
+                                return (
+                                    <button
+                                        key={tool.id}
+                                        type="button"
+                                        onClick={() => setActiveExecToolId(tool.id)}
+                                        className={`rounded-xl border p-3 text-left transition-all ${
+                                            idx === 0 ? "sm:col-span-2" : ""
+                                        } ${
+                                            isSel
+                                                ? "border-indigo-700 bg-indigo-50 text-indigo-950"
+                                                : "border-slate-200 bg-white hover:bg-slate-50"
+                                        }`}
+                                    >
+                                        <div className="flex items-center justify-between gap-2">
+                                            <p className="text-sm font-bold">{tool.label}</p>
+                                            {isSel && (
+                                                <span className="text-[11px] font-bold uppercase text-indigo-800">
+                                                    Active
+                                                </span>
+                                            )}
+                                        </div>
+                                        <p className="text-xs text-slate-600 mt-0.5">{tool.hint}</p>
+                                    </button>
+                                )
+                            })}
+                        </div>
+                    )}
+
+                    {workspaceTab === "tools" && !executiveMode && (
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                             <button
                                 type="button"
@@ -847,7 +1055,7 @@ export default function AiTutorPage() {
 
                     {workspaceTab === "questions" && (
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {dept.sampleQuestions.map((q) => (
+                            {(executiveMode ? EXECUTIVE_STARTERS : dept.sampleQuestions).map((q) => (
                                 <button
                                     key={q}
                                     type="button"
@@ -865,26 +1073,26 @@ export default function AiTutorPage() {
                         <div className="space-y-2.5">
                             <div className="flex items-center justify-between">
                                 <p className="text-xs font-semibold text-slate-600">
-                                    Showing notes saved specifically for <strong>{dept.fullName} ({dept.shortName})</strong>
+                                    Showing notes saved specifically for <strong>{activeScopeKey}</strong>
                                 </p>
                                 {deptPearls.length > 0 && (
                                     <button
                                         type="button"
                                         onClick={() =>
                                             setSavedPearls((prev) =>
-                                                prev.filter((item) => item.department !== activeDeptId)
+                                                prev.filter((item) => item.department !== activeScopeKey)
                                             )
                                         }
                                         className="text-xs font-semibold text-red-700 hover:underline"
                                     >
-                                        Clear {dept.shortName} Notes
+                                        Clear {activeScopeKey} Notes
                                     </button>
                                 )}
                             </div>
 
                             {deptPearls.length === 0 ? (
                                 <p className="text-sm text-slate-600 py-2">
-                                    No saved notes in <strong>{dept.shortName}</strong> yet. Tap <strong>Save to {dept.shortName}</strong> under any answer to keep it here.
+                                    No saved notes in <strong>{activeScopeKey}</strong> yet. Tap <strong>Save to {activeScopeKey}</strong> under any answer to keep it here.
                                 </p>
                             ) : (
                                 deptPearls.map((pearl) => {
@@ -957,7 +1165,7 @@ export default function AiTutorPage() {
                     )}
                 </div>
 
-                {/* Step 4: Conversation, Voice & Photo/Camera Problem Solver */}
+                {/* Conversation Thread & Composer */}
                 <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 space-y-4 shadow-sm">
                     <div className="space-y-4">
                         {messages.map((m) => {
@@ -1001,7 +1209,7 @@ export default function AiTutorPage() {
                                         <div className="mb-2.5">
                                             <img
                                                 src={m.imageUrl}
-                                                alt="Uploaded study problem"
+                                                alt="Uploaded visual"
                                                 className="max-h-64 rounded-xl border border-white/20 object-contain bg-black/10"
                                             />
                                         </div>
@@ -1019,8 +1227,8 @@ export default function AiTutorPage() {
                                             [&_ul]:list-disc [&_ul]:ml-5 [&_ul]:mb-3 [&_ul]:space-y-1.5
                                             [&_ol]:list-decimal [&_ol]:ml-5 [&_ol]:mb-3 [&_ol]:space-y-1.5
                                             [&_li]:pl-1
-                                            [&_h1]:text-base [&_h2]:text-[15px] [&_h3]:text-[15px] [&_h1]:font-bold [&_h2]:font-bold [&_h3]:font-bold [&_h1]:mb-2 [&_h2]:mb-1.5 [&_h3]:mb-1 [&_h1]:mt-3 [&_h2]:mt-2.5 [&_h3]:mt-2
-                                            [&_code]:bg-slate-200/80 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-sm [&_code]:font-mono"
+                                            [&_pre]:bg-slate-900 [&_pre]:text-slate-100 [&_pre]:p-3 [&_pre]:rounded-xl [&_pre]:overflow-x-auto [&_pre]:text-xs [&_pre]:my-2.5
+                                            [&_code]:bg-slate-200/80 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-sm [&_code]:font-mono [&_pre_code]:bg-transparent [&_pre_code]:p-0 [&_pre_code]:text-slate-100"
                                         >
                                             <ReactMarkdown>{m.content}</ReactMarkdown>
                                         </div>
@@ -1028,7 +1236,7 @@ export default function AiTutorPage() {
 
                                     {m.role === "tutor" && m.id !== "welcome-1" && (
                                         <div className="mt-3.5 pt-2.5 border-t border-slate-200 flex flex-wrap items-center gap-2">
-                                            {m.topicHint && (
+                                            {!executiveMode && m.topicHint && (
                                                 <button
                                                     type="button"
                                                     onClick={() =>
@@ -1052,7 +1260,7 @@ export default function AiTutorPage() {
                                                         : "border-slate-300 bg-white text-slate-700 hover:bg-slate-100"
                                                 }`}
                                             >
-                                                {isSaved ? `Saved in ${dept.shortName} ✓` : `Save to ${dept.shortName}`}
+                                                {isSaved ? `Saved in ${activeScopeKey} ✓` : `Save to ${activeScopeKey}`}
                                             </button>
 
                                             <button
@@ -1082,14 +1290,16 @@ export default function AiTutorPage() {
                                     />
                                 </div>
                                 <span className="text-sm font-medium text-slate-700">
-                                    {dept.shortName} Mentor is thinking...
+                                    {executiveMode
+                                        ? "Executive AI is working on your request..."
+                                        : `${dept.shortName} Mentor is thinking...`}
                                 </span>
                             </div>
                         )}
                         <div ref={threadEndRef} />
                     </div>
 
-                    {/* Composer with Camera/Photo Upload + Voice Input */}
+                    {/* Composer */}
                     <form onSubmit={handleSubmit} className="pt-3 border-t border-slate-200 space-y-2.5">
                         {attachedImage && (
                             <div className="flex items-center justify-between gap-3 rounded-xl border border-brand-200 bg-brand-50/60 p-2.5">
@@ -1105,9 +1315,9 @@ export default function AiTutorPage() {
                                         </p>
                                         <div className="flex flex-wrap gap-1.5 mt-1">
                                             {[
-                                                "Describe everything in this image",
-                                                "Solve & explain this question",
-                                                "Transcribe text & summarize",
+                                                "Describe & transcribe everything",
+                                                "Solve & explain this",
+                                                "Debug / fix what is shown",
                                             ].map((quickImgPrompt) => (
                                                 <button
                                                     key={quickImgPrompt}
@@ -1144,7 +1354,7 @@ export default function AiTutorPage() {
                                     <>Mode: <strong className="text-slate-900">Open Mentor Conversation</strong></>
                                 )}
                             </span>
-                            <span>Speak, upload a photo, or type below</span>
+                            <span>Speak, upload a photo, or type anything</span>
                         </div>
 
                         <div className="flex items-stretch gap-2">
@@ -1156,11 +1366,10 @@ export default function AiTutorPage() {
                                 className="hidden"
                             />
 
-                            {/* Camera / Image Upload Button */}
                             <button
                                 type="button"
                                 onClick={() => fileInputRef.current?.click()}
-                                title="Upload or take a photo of any question, poster, drug label, or chart"
+                                title="Upload or snap any picture, screenshot, error, or document"
                                 className="shrink-0 rounded-xl border border-slate-300 bg-slate-50 px-3 flex items-center justify-center text-slate-700 hover:border-brand-600 hover:text-brand-700 transition-colors"
                             >
                                 <svg
@@ -1183,11 +1392,10 @@ export default function AiTutorPage() {
                                 </svg>
                             </button>
 
-                            {/* Voice Input Button */}
                             <button
                                 type="button"
                                 onClick={startVoiceDictation}
-                                title="Speak to the AI Mentor"
+                                title="Speak to your AI Assistant"
                                 className={`shrink-0 rounded-xl border px-3 flex items-center justify-center transition-colors ${
                                     isListening
                                         ? "border-red-300 bg-red-50 text-red-700 animate-pulse"
@@ -1213,12 +1421,18 @@ export default function AiTutorPage() {
                                 type="text"
                                 value={prompt}
                                 onChange={(e) => setPrompt(e.target.value)}
-                                placeholder={attachedImage ? "Optional: ask a specific question about this picture..." : dept.placeholder}
+                                placeholder={
+                                    attachedImage
+                                        ? "Optional: ask a specific question about this picture..."
+                                        : executiveMode
+                                        ? "Ask your Personal Executive AI anything (code, business, HIM, exams, writing)..."
+                                        : dept.placeholder
+                                }
                                 className="flex-1 min-w-0 rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-[15px] text-slate-900 placeholder:text-slate-500 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
                             />
 
                             <Button type="submit" disabled={sending || (!prompt.trim() && !attachedImage)}>
-                                {sending ? "Thinking..." : "Send"}
+                                {sending ? "Working..." : "Send"}
                             </Button>
                         </div>
                     </form>
